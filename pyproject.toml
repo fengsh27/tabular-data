@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "tabula-data"
+version = "0.1.0"
+description = "tabula data"
+authors = ["fengsh <shaohong.feng.78@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.0"
+requests = "^2.31.0"
+bioc = "^2.1"
+html5lib = "^1.1"
+fake-useragent = "^1.4.0"
+beautifulsoup4 = "^4.12.3"
+biopython = "^1.83"
+streamlit = "^1.31.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
