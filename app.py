@@ -21,6 +21,10 @@ def on_id_changed():
     tables = extract_tables_from_html(content)
     ss.tables = tables
 
+def escape_markdown(content: str) -> str:
+    content = content.replace("#", "\\#")
+    content = content.replace("*", "\\*")
+    return content
 
 st.title("Extract Tabula Data")
 st.text_input(
@@ -32,9 +36,9 @@ st.text_input(
 tables = ss.get("tables")
 for tbl in tables:
     if "caption" in tbl:
-        st.markdown(tbl["caption"])
+        st.markdown(escape_markdown(tbl["caption"]))
     if "table" in tbl:
         st.dataframe(tbl["table"])
     if "footnote" in tbl:
-        st.markdown(tbl["footnote"])
+        st.markdown(escape_markdown(tbl["footnote"]))
     st.divider()
