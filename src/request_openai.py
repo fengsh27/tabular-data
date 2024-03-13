@@ -3,6 +3,8 @@ from openai import AzureOpenAI, OpenAI
 import os
 import logging
 
+from src.article_stamper import Stamper
+
 logger = logging.getLogger(__name__)
 
 openai_type = os.environ.get("OPENAI_API_TYPE")
@@ -17,8 +19,9 @@ else:
     client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY", None))
     model = "gpt-3.5-turbo" # "gpt-4-1106-preview"
 
-def request_to_chatgpt(prompts: List[Any], question: str):
+def request_to_chatgpt(prompts: List[Any], question: str, stamper: Stamper):
     prompts.append({"role": "user", "content": question})
+    stamper.output_prompts(prompts)
     try:
         res = client.chat.completions.create(
             model=model, 
@@ -30,6 +33,10 @@ def request_to_chatgpt(prompts: List[Any], question: str):
             presence_penalty=0,
             stop=None
         )
+        try:
+            stamper.output_result(res.choices[0].message.content)
+        except Exception as e:
+            logger.warn(e)
         return (True, res.choices[0], res.usage)
     except Exception as e:
         logger.error(e)
