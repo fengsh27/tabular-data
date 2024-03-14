@@ -27,7 +27,7 @@ def request_to_chatgpt(prompts: List[Any], question: str, stamper: Stamper):
             model=model, 
             messages=prompts,
             temperature=0.7,
-            max_tokens=800,
+            # max_tokens=800,
             top_p=0.95,
             frequency_penalty=0,
             presence_penalty=0,

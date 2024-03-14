@@ -205,7 +205,7 @@ class PaperRetriver(object):
             print(e)
             return None
 
-    def remove_reference(self, text: str):
+    def remove_references(self, text: str):
         ix = text.lower().rfind("references")
         if ix < 0:
             logger.warn(f"Can't find 'References' in paper {self.stamper.pmid}")

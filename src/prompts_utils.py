@@ -27,4 +27,4 @@ def generate_paper_text_prompts(text: str):
     return f"Here is the paper:\n {text}"
 
 def generate_question(source: str):
-    return f"Now please extract information from {source}"
+    return f"Now please extract information from {source} and output to a table in markdown format"

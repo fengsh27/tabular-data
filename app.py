@@ -1,5 +1,6 @@
 from typing import Optional
 import streamlit as st
+import streamlit_antd_components as sac
 import logging
 from dotenv import load_dotenv
 load_dotenv()
@@ -46,7 +47,10 @@ Please act as a Medical Assistant, extract the following information from the pr
 8. Sample Size: Provide the sample size used in the study.
 9. drug names: What drugs mentioned in the paper, like "cefepime", "vancomycin", and so on.
 10. pregnancy stage, What pregnancy stages of patients mentioned in the paper, like "postpartum", "before pregnancy", "1st trimester" and so on. If not mentioned, please use 'N/A'.
+
+
 Please note: 
+
 1. Only output markdown table without any other characters and embed the text in code chunks, so it won't convert to HTML in the assistant.
 2. Ensure to extract all available information for each field without omitting any details.
 3. If the information not provided, please leave it empty 
@@ -56,27 +60,24 @@ Now, you don't need to response until I post the paper.
 ss = st.session_state
 ss.setdefault("tables", [])
 ss.setdefault("prompts", default_prompts)
-ss.setdefault("in_progress", False)
 ss.setdefault("disable_extractbtn", True)
 ss.setdefault("paper_text", "")
 ss.setdefault("extracted_result", None)
 
-def on_id_changed(pmid: Optional[str]=None):
-    v = pmid if pmid is not None else ss.get("id-input")
-    ss.in_progress = True
+def on_id_tabula_tab_input_changed(pmid: Optional[str]=None):
+    v = pmid if pmid is not None else ss.get("id-tabula-tab-input")
     ss.disable_extractbtn = True
     # (res, choice, code) = populate_paper_to_template(v, the_prompts)
     stamper = AricleStamper(v)
     retriever = FakePaperRetriver(stamper)
     res, html_content, code = retriever.request_paper(v)
-    ss.in_progress = False
     if not res:
         st.error(html_content)
         ss.tables = []
         return
     # stamper.output_html(html_content)
     ss.paper_text = retriever.convert_html_to_text(html_content)
-    ss.paper_text = retriever.remove_reference(ss.paper_text)
+    ss.paper_text = retriever.remove_references(ss.paper_text)
     ss.tables = retriever.extract_tables_from_html(html_content)
     ss.disable_extractbtn = False
     
@@ -132,9 +133,6 @@ def on_extract(pmid: str):
         st.error(e)
         return
 
-def on_table_selected():
-    pass
-
 def escape_markdown(content: str) -> str:
     content = content.replace("#", "\\#")
     content = content.replace("*", "\\*")
@@ -143,62 +141,96 @@ def escape_markdown(content: str) -> str:
 def on_prompts_change():
     v = ss.get("id-prompts")
 
+## Components
+
 st.set_page_config(layout="wide")
-st.title("Extract Tabula Data")
-main_panel, right_panel = st.columns([2, 1])
-with main_panel:
+
+tab1, tab2 = st.tabs(["Extract Tabula Data", "Extract html table"])
+
+with tab1:
+    st.title("Extract Tabula Data")
+    main_panel, right_panel = st.columns([2, 1])
+    with main_panel:
+        the_pmid = st.text_input(
+            label="PMID",
+            placeholder="Enter PMID",
+            key="id-tabula-tab-input",
+            on_change=on_id_tabula_tab_input_changed
+        )
+        btn = sac.buttons(
+            items=[
+                sac.ButtonsItem(label='Retrieve Article ...'),
+                sac.ButtonsItem(label='Extract ...', disabled=ss.disable_extractbtn)
+            ],
+            index=0,
+            format_func='title',
+            align='start',
+            direction='horizontal',
+            radius='lg',
+            return_index=False,
+        )
+    
+        if the_pmid and btn == 'Retrieve Article ...':
+            with st.spinner("Obtaining article ..."):
+                on_id_tabula_tab_input_changed(the_pmid)
+        if the_pmid and btn == 'Extract ...':
+            with st.spinner("Extracting data ..."):
+                on_extract(the_pmid)
+    
+        # if ss.in_progress:
+        #     st.spinner("Extracting data ...")
+    
+        if ss.extracted_result is not None:
+            st.header("Extracted Result:", divider="blue")
+            st.markdown(ss.extracted_result)
+            st.divider()
+        tables = ss.get("tables")
+        if len(tables) > 0:
+            st.subheader("Tables in article:")
+        for tbl in tables:
+            if "caption" in tbl:
+                st.markdown(escape_markdown(tbl["caption"]))
+            if "table" in tbl:
+                st.dataframe(tbl["table"])
+            if "footnote" in tbl:
+                st.markdown(escape_markdown(tbl["footnote"]))
+            st.divider()
+    with right_panel:
+        st.text_area(
+            "prompts", 
+            placeholder="Input prompts here", 
+            height=500,
+            value=ss.prompts,
+            on_change=on_prompts_change,
+            key="id-prompts"
+        )
+        tables = ss.get("tables")
+        if not ss.disable_extractbtn:
+            st.checkbox(
+                "article",
+                value=True,
+                key="article-text",
+            )
+        for ix in range(len(tables)):
+            st.checkbox(
+                f"table {ix+1}",  
+                key=f"tbl-check-{ix}",
+                on_change=on_table_selected
+            )
+
+with tab2:
+    # callbacks
+    def on_id_html_tab_input_changed(pmid: Optional[str]=None):
+        if pmid is None:
+            pmid = ss.get("id-html-tab-input")
+
+    st.title("Extract html table")
     the_pmid = st.text_input(
         label="PMID",
         placeholder="Enter PMID",
-        key="id-input",
-        on_change=on_id_changed
+        key="id-html-tab-input",
+        on_change=on_id_html_tab_input_changed
     )
-    obtained = st.button("Obtain article ...")
-    extracted = st.button("Extract ...", disabled=ss.disable_extractbtn)
-
-    if the_pmid and obtained:
-        with st.spinner("Obtaining article ..."):
-            on_id_changed(the_pmid)
-    if the_pmid and extracted:
-        with st.spinner("Extracting data ..."):
-            on_extract(the_pmid)
-
-    if ss.in_progress:
-        st.spinner("Extracting data ...")
-
-    if ss.extracted_result is not None:
-        st.header("Extracted Result:", divider="blue")
-        st.markdown(ss.extracted_result)
-
-    st.subheader("Tables in article:")
-    tables = ss.get("tables")
-    for tbl in tables:
-        if "caption" in tbl:
-            st.markdown(escape_markdown(tbl["caption"]))
-        if "table" in tbl:
-            st.dataframe(tbl["table"])
-        if "footnote" in tbl:
-            st.markdown(escape_markdown(tbl["footnote"]))
-        st.divider()
-with right_panel:
-    st.text_area(
-        "prompts", 
-        placeholder="Input prompts here", 
-        height=500,
-        value=ss.prompts,
-        on_change=on_prompts_change,
-        key="id-prompts"
-    )
-    tables = ss.get("tables")
-    if not ss.disable_extractbtn:
-        st.checkbox(
-            "article",
-            value=True,
-            key="article-text",
-        )
-    for ix in range(len(tables)):
-        st.checkbox(
-            f"table {ix+1}",  
-            key=f"tbl-check-{ix}",
-            on_change=on_table_selected
-        )
+    html_extract_btn = st.button("Extract Tables ...")
+    if html_extract_btn:
+        on_id_html_tab_input_changed()
