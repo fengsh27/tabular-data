@@ -16,6 +16,12 @@ fake-useragent = "^1.4.0"
 beautifulsoup4 = "^4.12.3"
 biopython = "^1.83"
 streamlit = "^1.31.1"
+openai = "^1.13.3"
+python-dotenv = "^1.0.1"
+pdfplumber = "^0.11.0"
+streamlit-antd-components = "^0.3.2"
+tenacity = "^8.2.3"
+ratelimit = "^2.2.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0.1"
