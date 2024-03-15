@@ -3,17 +3,22 @@ import streamlit as st
 import streamlit_antd_components as sac
 import logging
 from dotenv import load_dotenv
+from datetime import datetime
+
+from src.utils import convert_html_to_text, remove_references
 load_dotenv()
 
-from src.paper_analyzer import populate_paper_to_template
+# from src.paper_analyzer import populate_paper_to_template
 from src.request_paper import PaperRetriver, FakePaperRetriver
+from src.article_retriever import ArticleRetriver, FakeArticleRetriver
 from src.request_openai import request_to_chatgpt
-from src.article_stamper import AricleStamper
+from src.article_stamper import ArticleStamper
 from src.prompts_utils import (
     generate_paper_text_prompts,
     generate_tables_prompts,
     generate_question,
 )
+from src.html_table_extractor import HtmlTableExtractor
 
 def initialize():
     # prepare logger
@@ -63,31 +68,37 @@ ss.setdefault("prompts", default_prompts)
 ss.setdefault("disable_extractbtn", True)
 ss.setdefault("paper_text", "")
 ss.setdefault("extracted_result", None)
+ss.setdefault("tables_tab_tables", [])
+ss.setdefault("tables_tab_info", "")
 
 def on_id_tabula_tab_input_changed(pmid: Optional[str]=None):
-    v = pmid if pmid is not None else ss.get("id-tabula-tab-input")
+    if pmid is None:
+        pmid = ss.get("id-tabula-tab-input")
+    pmid = pmid.strip()
     ss.disable_extractbtn = True
-    # (res, choice, code) = populate_paper_to_template(v, the_prompts)
-    stamper = AricleStamper(v)
-    retriever = FakePaperRetriver(stamper)
-    res, html_content, code = retriever.request_paper(v)
+    ss.tables_tab_info = ""
+    stamper = ArticleStamper(pmid)
+    retriever = ArticleRetriver() # FakeArticleRetriver() #
+    res, html_content, code = retriever.request_article(pmid)
     if not res:
         st.error(html_content)
         ss.tables = []
         return
-    # stamper.output_html(html_content)
-    ss.paper_text = retriever.convert_html_to_text(html_content)
-    ss.paper_text = retriever.remove_references(ss.paper_text)
-    ss.tables = retriever.extract_tables_from_html(html_content)
+    stamper.output_html(html_content)
+    paper_text = convert_html_to_text(html_content)
+    paper_text = remove_references(paper_text)
+    ss.paper_text = paper_text
+    extractor = HtmlTableExtractor()
+    tables = extractor.extract_tables(html_content)
+    ss.tables = tables
     ss.disable_extractbtn = False
-    
-    #ss.extracted_content = choice.message.content
-    # tables = extract_tables_from_html(content)
-    # ss.tables = tables
+    tmp_info = 'no table found' if len(tables) == 0 else f'{len(tables)} tables found'
+    ss.tables_tab_info = f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Retrieving completed, {tmp_info}"
 
 def on_extract(pmid: str):
+    pmid = pmid.strip()
     ss.extracted_result = None
-    stamper = AricleStamper(pmid)
+    stamper = ArticleStamper(pmid)
     first_prompots = ss.get("id-prompts")
     first_prompots = \
         first_prompots if len(first_prompots) > 0 else default_prompts
@@ -122,11 +133,12 @@ def on_extract(pmid: str):
         return
     assert len(prompts_list) > 0
     try:
-        res, choice, code = request_to_chatgpt(
+        stamper.output_prompts(prompts_list)
+        res, choice, usage = request_to_chatgpt(
             prompts_list,
             generate_question(source),
-            stamper
         )
+        stamper.output_result(f"{choice.message.content}\n\nUsage: {str(usage) if usage is not None else ''}")
         ss.extracted_result = choice.message.content
     except Exception as e:
         logger.error(e)
@@ -154,8 +166,7 @@ with tab1:
         the_pmid = st.text_input(
             label="PMID",
             placeholder="Enter PMID",
-            key="id-tabula-tab-input",
-            on_change=on_id_tabula_tab_input_changed
+            key="id-tabula-tab-input",            
         )
         btn = sac.buttons(
             items=[
@@ -176,9 +187,9 @@ with tab1:
         if the_pmid and btn == 'Extract ...':
             with st.spinner("Extracting data ..."):
                 on_extract(the_pmid)
-    
-        # if ss.in_progress:
-        #     st.spinner("Extracting data ...")
+        
+        info = ss.get("tables_tab_info")
+        st.write(info)
     
         if ss.extracted_result is not None:
             st.header("Extracted Result:", divider="blue")
@@ -194,6 +205,9 @@ with tab1:
                 st.dataframe(tbl["table"])
             if "footnote" in tbl:
                 st.markdown(escape_markdown(tbl["footnote"]))
+            if "raw_tag" in tbl:
+                with st.expander("Html Table"):
+                    st.write(tbl["raw_tag"])
             st.divider()
     with right_panel:
         st.text_area(
@@ -214,8 +228,7 @@ with tab1:
         for ix in range(len(tables)):
             st.checkbox(
                 f"table {ix+1}",  
-                key=f"tbl-check-{ix}",
-                on_change=on_table_selected
+                key=f"tbl-check-{ix}"
             )
 
 with tab2:
@@ -223,6 +236,11 @@ with tab2:
     def on_id_html_tab_input_changed(pmid: Optional[str]=None):
         if pmid is None:
             pmid = ss.get("id-html-tab-input")
+        retriever = ArticleRetriver() # FakeArticleRetriver() # 
+        res, html_content, code = retriever.request_article(pmid)
+        extractor = HtmlTableExtractor()
+        tables = extractor.extract_tables(html_content)
+        ss.tables_tab_tables = tables
 
     st.title("Extract html table")
     the_pmid = st.text_input(
@@ -234,3 +252,18 @@ with tab2:
     html_extract_btn = st.button("Extract Tables ...")
     if html_extract_btn:
         on_id_html_tab_input_changed()
+
+    all_tables = ss.get("tables_tab_tables")
+    if len(all_tables) > 0:
+        st.subheader("Tables in article:")
+    ix = 1
+    for tbl in all_tables:
+        st.text(f"table {ix}")
+        ix += 1
+        if "caption" in tbl:
+            st.markdown(escape_markdown(tbl["caption"]))
+        if "table" in tbl:
+            st.dataframe(tbl["table"])
+        if "footnote" in tbl:
+            st.markdown(escape_markdown(tbl["footnote"]))
+        st.divider()

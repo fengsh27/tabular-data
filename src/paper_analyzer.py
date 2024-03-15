@@ -1,7 +1,7 @@
 
 import logging
 from typing import Optional
-from src.article_stamper import AricleStamper
+from src.article_stamper import ArticleStamper
 from src.prompts_utils import generate_tables_prompts
 from src.request_openai import request_to_chatgpt
 from src.request_paper import (
@@ -25,7 +25,7 @@ Now, you don't need to response until I post the paper.
 """
 
 def populate_paper_to_template(pmid: str, prompts: Optional[str] = None):
-    stamper = AricleStamper(pmid)
+    stamper = ArticleStamper(pmid)
     retriever = PaperRetriver(stamper)
     (res, html_content, code) = retriever.request_paper(pmid)
     if not res:

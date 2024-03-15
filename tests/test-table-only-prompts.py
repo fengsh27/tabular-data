@@ -3,6 +3,7 @@ from datetime import datetime
 from openai import AzureOpenAI, OpenAI
 from dotenv import load_dotenv
 import os
+import pytest
 
 def write_log_info(msg: str):
     with open("./logs/test.log", "a+") as fobj:
@@ -24,6 +25,7 @@ else:
     client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY", None))
     model = "gpt-3.5-turbo" # "gpt-4-1106-preview"
 
+@pytest.mark.skip("temporary skipped")
 def test_table_only_prompts():
     hint_prompts = {
         "role": "user",

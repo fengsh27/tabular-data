@@ -1,57 +1,22 @@
 from typing import List, Any, Tuple, Dict, Optional
 from fake_useragent import UserAgent
-import requests
 from bs4 import BeautifulSoup, Tag
 import pandas as pd
 import logging
-import urllib.parse
-import html
 import os
+import shortuuid
 
 from src.article_stamper import Stamper
-from src.make_request import make_get_request
+from src.make_request import make_article_request, make_get_request
+from src.constants import (
+    headers,
+    cookies,
+    FULL_TEXT_LENGTH_THRESHOLD,
+    MAX_FULL_TEXT_LENGTH,
+)
+from src.utils import decode_url
 
 logger = logging.getLogger(__name__)
-
-FULL_TEXT_LENGTH_THRESHOLD = 10000 # we assume the length of full-text paper should be 
-                                   # greater than 10000
-MAX_FULL_TEXT_LENGTH = 31 * 1024   # should not be greater than 31K
-cookies = {
-    'cookie_name': 'cookie_value'
-}
-headers = {
-    'authority': 'www.google.com',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9',
-    'cache-control': 'max-age=0',
-    'cookie': "SID=ZAjX93QUU1NMI2Ztt_dmL9YRSRW84IvHQwRrSe1lYhIZncwY4QYs0J60X1WvNumDBjmqCA.; __Secure-", 
-    #..,
-    'sec-ch-ua': '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"',
-    'sec-ch-ua-arch': '"x86"',
-    'sec-ch-ua-bitness': '"64"',
-    'sec-ch-ua-full-version': '"115.0.5790.110"',
-    'sec-ch-ua-full-version-list': '"Not/A)Brand";v="99.0.0.0", "Google Chrome";v="115.0.5790.110", "Chromium";v="115.0.5790.110"',
-    'sec-ch-ua-mobile': '?0',
-    'sec-ch-ua-model': '""',
-    'sec-ch-ua-platform': 'Windows',
-    'sec-ch-ua-platform-version': '15.0.0',
-    'sec-ch-ua-wow64': '?0',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'same-origin',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36',
-    'x-client-data': '#..',
-}
-
-def _decode_url(url_str: str) -> str:
-    str1 = html.unescape(url_str)
-    str2 = urllib.parse.unquote_plus(str1)
-    while str1 != str2:
-        str1 = str2
-        str2 = urllib.parse.unquote_plus(str1)
-    return str2
 
 class PaperRetriver(object):
     def __init__(self, stamper: Stamper):
@@ -96,7 +61,7 @@ class PaperRetriver(object):
             redirect_url = tag.get("value", None)
             if redirect_url is None:
                 return (False, "Can't accesss redirect url", -1)
-            redirect_url = _decode_url(redirect_url)
+            redirect_url = decode_url(redirect_url)
             print(f"redirected url is: {redirect_url}")
             r = make_get_request(redirect_url, headers=header, allow_redirects=True, cookies=cookies)
             if r.status_code != 200:
@@ -138,6 +103,22 @@ class PaperRetriver(object):
         (res, full_text, code) = self._request_from_full_text_url(full_text_url)
         return (res, full_text, code)
     
+    def _request_full_text_url(self, url: str, pmid: str):
+        fn = shortuuid.uuid()
+        folder = os.environ.get("TEMP_FOLDER", "/tmp")
+        fn = os.path.join(folder, fn)
+        res = make_article_request(url, fn)
+        return res.status_code == 200, res.text, res.status_code
+
+    def _request_pmc_full_text(self, pmid: str):
+        header = headers
+        header["User-Agent"] = str(ua.chrome)
+        url = f"https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/{pmid}/"
+        res = make_get_request(url, headers=header, allow_redirects=True, cookies=cookies)
+        if res.status_code == 200:
+            return True, res.text, res.status_code
+        return False, res.reason, res.status_code
+    
     def request_paper(self, pmid: str):
         pmid = pmid.strip()
         ua = UserAgent()
@@ -160,9 +141,6 @@ class PaperRetriver(object):
         logger.warn(f"{r.status_code}: {r.reason}")
         (res, text, code) = self._request_by_abstract_page(pmid)
     
-        # save text to temp.txt
-        # with open(f'./tmp/{pmid}.txt', "w") as fobj:
-        #     fobj.write(text)
         self.stamper.output_html(text) 
         return (res, text, code)
     

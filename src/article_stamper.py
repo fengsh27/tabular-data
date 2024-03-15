@@ -22,14 +22,14 @@ class Stamper(object):
     def output_result(self, result: str):
         pass
 
-class AricleStamper(Stamper):
+class ArticleStamper(Stamper):
     logs_file = "logs.log"
     
     def __init__(self, pmid: str, output_folder: Optional[str] = "./tmp"):
         super().__init__(pmid)
         self.enabled = os.environ.get("LOG_ARTICLE", "FALSE") == "TRUE"
         self.output_folder = output_folder
-        self.pmid_folder = path.join(self.output_folder, self.pmid)
+        self.name = self.pmid
         
         # make sure {pmid} folder exists
         self._mk_pmid_dir()
@@ -49,11 +49,22 @@ class AricleStamper(Stamper):
             return now.strftime("%Y.%m.%d_%H.%M.%S.%f") if include_ms else now.strftime("%Y.%m.%d_%H.%M.%S")
 
     def _log_message(self, level:str, msg: str):
-        tm_str = AricleStamper._now_string(True)
+        tm_str = ArticleStamper._now_string(True)
         msg = f"[{level}] {tm_str} = {msg}"
-        self._write_message(AricleStamper.logs_file, msg)
+        self._write_message(ArticleStamper.logs_file, msg)
 
     def _mk_pmid_dir(self):
+        name = self.pmid
+        if name.startswith("http://") or name.startswith("https://"):
+            # pmid is url
+            ix = name.rfind("/")
+            if ix > 0:
+                name = name[(ix+1):]
+            ix = name.find("?")
+            if ix > 0:
+                name = name[:ix]
+        self.name = name
+        self.pmid_folder = path.join(self.output_folder, name)
         try:
             if path.exists(self.pmid_folder):
                 return
@@ -75,14 +86,14 @@ class AricleStamper(Stamper):
             the_msg = f'["role": {prmpt["role"]}, "content": {prmpt["content"]}]'
             msg += the_msg
             msg += "\n"
-        now_str = AricleStamper._now_string(in_filename=True, include_ms=False)
-        self._write_message(f"{self.pmid}-{now_str}.prompts", msg, False)
+        now_str = ArticleStamper._now_string(in_filename=True, include_ms=False)
+        self._write_message(f"{self.name}-{now_str}.prompts", msg, False)
 
     def output_html(self, html_content: str):
-        now_str = AricleStamper._now_string(in_filename=True, include_ms=False)
-        self._write_message(f"{self.pmid}-{now_str}.html", html_content, False)
+        now_str = ArticleStamper._now_string(in_filename=True, include_ms=False)
+        self._write_message(f"{self.name}-{now_str}.html", html_content, False)
     
     def output_result(self, result: str):
-        now_str = AricleStamper._now_string(in_filename=True, include_ms=False)
-        self._write_message(f"{self.pmid}-{now_str}.result", result)
+        now_str = ArticleStamper._now_string(in_filename=True, include_ms=False)
+        self._write_message(f"{self.name}-{now_str}.result", result)
 

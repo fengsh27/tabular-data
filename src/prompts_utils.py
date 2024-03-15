@@ -3,6 +3,10 @@ from typing import Dict, Any, List
 from pandas import DataFrame
 
 def _generate_table_prompts(tbl: Dict[str, str | DataFrame]):
+    raw_tag = tbl.get("raw_tag", None)
+    if raw_tag is not None:
+        table_text = f"html table is:\n{raw_tag}"
+        return table_text
     caption = tbl.get("caption", None)
     table = tbl.get("table", None)
     footnote = tbl.get("footnote", None)
@@ -10,6 +14,7 @@ def _generate_table_prompts(tbl: Dict[str, str | DataFrame]):
     if caption is not None:
         table_text += f"table caption: {caption}\n"
     if table is not None:
+        table_text += "table is:\n"
         table_text += table.to_csv()
         table_text += "\n"
     if footnote is not None:
