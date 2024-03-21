@@ -30,7 +30,7 @@ def request_to_chatgpt(prompts: List[Any], question: str):
             presence_penalty=0,
             stop=None
         )
-        return (True, res.choices[0], res.usage)
+        return (True, res.choices[0].message.content, res.usage)
     except Exception as e:
         logger.error(e)
         return (False, str(e), None)

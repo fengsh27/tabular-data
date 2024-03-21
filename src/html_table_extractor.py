@@ -50,7 +50,7 @@ class HtmlTableParser(object):
     def _find_caption_and_footnote(self, table_tag: Tag):
         return self._find_caption_and_footnote_recursively(table_tag.parent, 1)
     def extract_tables(self, html: str):
-        soup = BeautifulSoup(html)
+        soup = BeautifulSoup(html, "html.parser")
         tags = soup.select("table")
         tables = []
         for tag in tags:
@@ -70,7 +70,7 @@ class PMCHtmlTableParser(object):
     def __init__(self):
         pass
     def extract_tables(self, html: str):
-        soup = BeautifulSoup(html)
+        soup = BeautifulSoup(html, "html.parser")
         tags = soup.select("div.table-wrap.anchored.whole_rhythm")
         tables = []
         for tag in tags:
@@ -82,7 +82,12 @@ class PMCHtmlTableParser(object):
             table = convert_table_to_dataframe(table)
             footnote = tbl_soup.select("div.tblwrap-foot")
             footnote = footnote[0].text if len(footnote) > 0 else ""
-            tables.append({"caption": caption, "table": table, "footnote": footnote})
+            tables.append({
+                "caption": caption, 
+                "table": table, 
+                "footnote": footnote,
+                "raw_tag": str(tag),
+            })
     
         return tables
 

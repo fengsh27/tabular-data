@@ -18,7 +18,7 @@ from src.utils import decode_url
 
 logger = logging.getLogger(__name__)
 
-class ArticleRetriver(object):
+class ArticleRetriever(object):
     def __init__(self):
         pass
 
@@ -90,20 +90,24 @@ class ArticleRetriver(object):
             return res, full_text_url, code
         return self._request_full_text_url(full_text_url)
 
-class FakeArticleRetriver(ArticleRetriver):
+class ExtendArticleRetriever(ArticleRetriever):
+    """
+    Comparing to ArticleRetriever, ExtendArticleRetriever will check if the article already exists first,
+    if yes, the existed article will be returned, otherwise, it will download the article.
+    """
     def __init__(self):
         super().__init__()
     
     def request_article(self, pmid: str):
         pmid_folder = f"./tmp/{pmid}"
         if not os.path.exists(pmid_folder):
-            return super().request_paper(pmid)
+            return super().request_article(pmid)
         for root, dirs, files in os.walk(pmid_folder):
             html_files = [f for f in files if f.endswith("html")]
             html_files.sort()
             break
         if len(html_files) == 0:
-            return super().request_paper(pmid)
+            return super().request_article(pmid)
         the_file = os.path.join(root, html_files[-1])
         with open(the_file, "r") as fobj:
             content = fobj.read()
