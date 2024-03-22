@@ -6,6 +6,8 @@ import html
 import urllib
 import logging
 import pandas as pd
+import csv
+from io import StringIO
 
 logger = logging.getLogger(__name__)
 
@@ -17,7 +19,7 @@ def decode_url(url_str: str) -> str:
         str2 = urllib.parse.unquote_plus(str1)
     return str2
 
-def convert_table_to_dataframe(table: str):
+def convert_html_table_to_dataframe(table: str):
     try:
         df = pd.read_html(table)
         return df[0]
@@ -26,6 +28,13 @@ def convert_table_to_dataframe(table: str):
         print(e)
         return None
     
+def convert_csv_table_to_dataframe(table: str):
+    try:
+        df = pd.read_csv(table)
+        return df[0]
+    except Exception as e:
+        logger.error(e)
+        return None
 
 def convert_html_to_text(html_content: str) -> str:
     '''
@@ -43,3 +52,17 @@ def remove_references(text: str):
         return text
     return text[:ix]
     
+def escape_markdown(content: str) -> str:
+    content = content.replace("#", "\\#")
+    content = content.replace("*", "\\*")
+    return content
+
+def is_valid_csv_table(tbl_str):
+    try:
+        csv_data = StringIO(tbl_str)
+        csv_reader = csv.reader(csv_data)
+        for row in csv_reader:
+            pass
+        return True
+    except csv.Error:
+        return False
