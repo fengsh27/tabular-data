@@ -3,8 +3,9 @@ import streamlit as st
 from datetime import datetime
 import logging
 
-from extractor.stampers import Stamper, ArticleStamper
-from extractor.article_retriever import ArticleRetriever, ExtendArticleRetriever
+from extractor.stampers import Stamper
+from extractor.article_retriever import ExtendArticleRetriever
+from extractor.request_openai import request_to_chatgpt
 from extractor.utils import (
     convert_csv_table_to_dataframe,
     convert_html_to_text,
@@ -106,7 +107,7 @@ def on_extract(pmid: str):
     # chat with LLM
     try:
         stamper.output_prompts(prompts_list)
-        res, content, usage = request_to_gemini(
+        res, content, usage = request_to_gemini( # request_to_gemini(
             prompts_list,
             generate_question(source),
         )

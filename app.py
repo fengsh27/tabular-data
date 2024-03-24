@@ -2,19 +2,21 @@ import streamlit as st
 import logging
 import os
 from dotenv import load_dotenv
+load_dotenv()
 
 from components.main_tab import main_tab
 from components.html_table_tab import html_tab
 from extractor.stampers import ArticleStamper
 
-load_dotenv()
 output_folder = os.environ.get("TMP_FOLDER", "./tmp")
 stamper_enabled = os.environ.get("LOG_ARTICLE", "FALSE") == "TRUE"
 stamper = ArticleStamper(output_folder, stamper_enabled)
 def initialize():
     # prepare logger
     logging.basicConfig(level=logging.INFO)
-    file_handler = logging.FileHandler("./logs/app.log")
+    logs_folder = os.environ.get("LOGS_FOLDER", "./logs")
+    logs_file = os.path.join(logs_folder, "app.log")
+    file_handler = logging.FileHandler(logs_file)
     file_handler.setLevel(logging.INFO)
     stream_handler = logging.StreamHandler()
     stream_handler.setLevel(logging.INFO)

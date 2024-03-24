@@ -30,8 +30,9 @@ def convert_html_table_to_dataframe(table: str):
     
 def convert_csv_table_to_dataframe(table: str):
     try:
-        df = pd.read_csv(table)
-        return df[0]
+        csv_data = StringIO(table)
+        df = pd.read_csv(csv_data)
+        return df
     except Exception as e:
         logger.error(e)
         return None

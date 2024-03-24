@@ -3,7 +3,7 @@ from typing import Dict, Any, List
 from pandas import DataFrame
 
 DEFAULT_PROMPTS = """
-Please act as a biomedical assistant, extract the following information from the provided biomedical paper and output as a table in markdown format:
+Please act as a biomedical assistant, extract the following information from the provided biomedical paper and output as a table in csv format:
 1. Drug name, the name of drug mentioned in the paper
 2. Specimen, what is the specimen, like "blood", "breast milk", "cord blood", and so on.
 3. Pregnancy Stage, pregnancy stage, What pregnancy stages of patients mentioned in the paper, like "postpartum", "before pregnancy", "1st trimester" and so on. If not mentioned, please label as "N/A",
@@ -19,9 +19,9 @@ Please act as a biomedical assistant, extract the following information from the
 
 Please note: 
 
-1. Only output markdown table without any other characters and embed the text in code chunks, so it won't convert to HTML in the assistant.
+1. Only output csv table without any other characters, no triple backticks ``` and no "csv".
 2. Ensure to extract all available information for each field without omitting any details.
-3. If the information that is not provided, please leave it empty 
+3. If the information that is not provided, please leave it empty.
 """
 
 def _generate_table_prompts(tbl: Dict[str, str | DataFrame]):
@@ -54,4 +54,4 @@ def generate_paper_text_prompts(text: str):
     return f"Here is the paper:\n {text}"
 
 def generate_question(source: str):
-    return f"Now please extract information from {source} and output to a table in markdown format"
+    return f"Now please extract information from {source} and output to a table string in csv format"
