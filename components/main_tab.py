@@ -4,7 +4,7 @@ from datetime import datetime
 import logging
 
 from extractor.stampers import Stamper
-from extractor.article_retriever import ExtendArticleRetriever
+from extractor.article_retriever import ExtendArticleRetriever, ArticleRetriever
 from extractor.request_openai import request_to_chatgpt
 from extractor.utils import (
     convert_csv_table_to_dataframe,
@@ -38,7 +38,7 @@ def on_input_change(pmid: Optional[str]=None):
     ss.main_info = ""
 
     # retrieve article
-    retriever = ExtendArticleRetriever() # ArticleRetriever() #
+    retriever = ArticleRetriever() # ExtendArticleRetriever() #
     res, html_content, code = retriever.request_article(pmid)
     if not res:
         error_msg = f"Failed to retrieve article. \n {html_content}"

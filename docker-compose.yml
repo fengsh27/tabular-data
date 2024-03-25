@@ -14,6 +14,8 @@ services:
     environment:
       - BASE_URL=http://nettoolkit:3000
       - LOGS_FOLDER=/app/logs
+      - TEMP_FOLDER=/tmp
+      - LOG_ARTICLE=TRUE
     depends_on:
       - nettoolkit
  
