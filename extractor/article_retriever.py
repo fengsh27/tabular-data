@@ -112,7 +112,7 @@ class ExtendArticleRetriever(ArticleRetriever):
         super().__init__()
     
     def request_article(self, pmid: str):
-        pmid_folder = os.environ.get("TMP_FOLDER", "./tmp")
+        pmid_folder = os.environ.get("TEMP_FOLDER", "./tmp")
         pmid_folder = os.path.join(pmid_folder, pmid)
         if not os.path.exists(pmid_folder):
             return super().request_article(pmid)

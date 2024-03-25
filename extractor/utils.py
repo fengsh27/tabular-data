@@ -49,7 +49,7 @@ def convert_html_to_text(html_content: str) -> str:
 def remove_references(text: str):
     ix = text.lower().rfind("references")
     if ix < 0:
-        logger.warn(f"Can't find 'References' in paper {self.stamper.pmid}")
+        logger.warn(f"Can't find 'References' in paper")
         return text
     return text[:ix]
     

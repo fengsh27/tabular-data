@@ -8,7 +8,7 @@ from components.main_tab import main_tab
 from components.html_table_tab import html_tab
 from extractor.stampers import ArticleStamper
 
-output_folder = os.environ.get("TMP_FOLDER", "./tmp")
+output_folder = os.environ.get("TEMP_FOLDER", "./tmp")
 stamper_enabled = os.environ.get("LOG_ARTICLE", "FALSE") == "TRUE"
 stamper = ArticleStamper(output_folder, stamper_enabled)
 def initialize():
