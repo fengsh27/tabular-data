@@ -7,14 +7,14 @@ import os
 import shortuuid
 from fake_useragent import UserAgent
 
-from src.make_request import make_article_request, make_get_request
-from src.constants import (
+from extractor.make_request import make_article_request, make_get_request
+from extractor.constants import (
     headers,
     cookies,
     FULL_TEXT_LENGTH_THRESHOLD,
     MAX_FULL_TEXT_LENGTH,
 )
-from src.utils import decode_url
+from extractor.utils import decode_url
 
 logger = logging.getLogger(__name__)
 
@@ -22,9 +22,12 @@ class ArticleRetriever(object):
     def __init__(self):
         pass
 
-    def _request_full_text_url(self, url: str):
+    def _request_full_text_from_url(self, url: str):
+        """
+        request full-text by url
+        """
         fn = shortuuid.uuid()
-        folder = os.environ.get("TEMP_FOLDER", "/tmp")
+        folder = os.environ.get("TEMP_FOLDER", "./tmp")
         fn = os.path.join(folder, fn)
         res = make_article_request(url, fn)
         if res.status_code == 200 and os.path.exists(fn):
@@ -41,6 +44,10 @@ class ArticleRetriever(object):
         )
 
     def _request_pmc_full_text(self, pmid: str):
+        """
+        request pmc full-text, its url is:
+        https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/{pmid}/
+        """
         header = headers
         ua = UserAgent()
         header["User-Agent"] = str(ua.chrome)
@@ -51,6 +58,9 @@ class ArticleRetriever(object):
         return False, res.reason, res.status_code
     
     def _extract_full_text_link(self, html_content: str) -> Tuple[bool, str, int]:
+        """
+        extract full-text link from html content
+        """
         soup = BeautifulSoup(html_content, "html.parser")
         tags = soup.select("div.full-view > div.full-text-links-list > a.link-item")
         if tags is None or len(tags) == 0:
@@ -62,6 +72,9 @@ class ArticleRetriever(object):
         return (True, full_text_url, 200)
     
     def _extract_full_text_url_from_abstract_page(self, pmid: str):
+        """
+        extract full-text url from pmc abstract page (https://pubmed.ncbi.nlm.nih.gov/{pmid}/)
+        """
         ua = UserAgent()
         header = headers
         header["User-Agent"] = str(ua.chrome)
@@ -79,7 +92,7 @@ class ArticleRetriever(object):
 
         # support full-text url directly
         if pmid.startswith("http"):
-            return self._request_full_text_url(pmid)
+            return self._request_full_text_from_url(pmid)
 
         res, pmc_article, code = self._request_pmc_full_text(pmid)
         if res:
@@ -88,7 +101,7 @@ class ArticleRetriever(object):
         if not res:
             logger.error(f"Can't extract full-text url from abstract page")
             return res, full_text_url, code
-        return self._request_full_text_url(full_text_url)
+        return self._request_full_text_from_url(full_text_url)
 
 class ExtendArticleRetriever(ArticleRetriever):
     """
@@ -99,9 +112,11 @@ class ExtendArticleRetriever(ArticleRetriever):
         super().__init__()
     
     def request_article(self, pmid: str):
-        pmid_folder = f"./tmp/{pmid}"
+        pmid_folder = os.environ.get("TEMP_FOLDER", "./tmp")
+        pmid_folder = os.path.join(pmid_folder, pmid)
         if not os.path.exists(pmid_folder):
             return super().request_article(pmid)
+        html_files = []
         for root, dirs, files in os.walk(pmid_folder):
             html_files = [f for f in files if f.endswith("html")]
             html_files.sort()

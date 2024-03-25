@@ -1,0 +1,33 @@
+version: "3.9"
+services:
+  tabular-data:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 8501:8501
+    env_file:
+      - .env
+    volumes:
+      - ./tmp:/tmp
+      - ./logs:/app/logs
+    environment:
+      - BASE_URL=http://nettoolkit:3000
+      - LOGS_FOLDER=/app/logs
+      - TEMP_FOLDER=/tmp
+      - LOG_ARTICLE=TRUE
+    depends_on:
+      - nettoolkit
+ 
+  nettoolkit:
+    container_name: nettoolkit
+    image: frankfeng78/nettoolkit:0.1.1
+    ports:
+      - 3000:3000
+    volumes:
+      - ./logs:/app/logs
+      - ./tmp:/tmp
+
+networks:
+  default:
+    name: tabular

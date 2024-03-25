@@ -1,7 +1,7 @@
 
 from bs4 import BeautifulSoup, Tag
 
-from src.utils import convert_table_to_dataframe
+from extractor.utils import convert_html_table_to_dataframe
 
 class HtmlTableParser(object):
     MAX_LEVEL = 3
@@ -55,7 +55,7 @@ class HtmlTableParser(object):
         tables = []
         for tag in tags:
             strTag = str(tag)
-            table = convert_table_to_dataframe(strTag)
+            table = convert_html_table_to_dataframe(strTag)
             caption, footnote, parent_tag = self._find_caption_and_footnote(tag)
             parent_tag = parent_tag if parent_tag is not None else tag
             tables.append({
@@ -79,7 +79,7 @@ class PMCHtmlTableParser(object):
             caption = caption[0].text if len(caption) > 0 else ""
             table = tbl_soup.select("div.xtable")
             table = str(table[0]) if len(table) > 0 else ""
-            table = convert_table_to_dataframe(table)
+            table = convert_html_table_to_dataframe(table)
             footnote = tbl_soup.select("div.tblwrap-foot")
             footnote = footnote[0].text if len(footnote) > 0 else ""
             tables.append({
