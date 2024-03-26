@@ -20,8 +20,9 @@ Please act as a biomedical assistant, extract the following information from the
 Please note: 
 
 1. Only output csv table without any other characters, no triple backticks ``` and no "csv".
-2. Ensure to extract all available information for each field without omitting any details.
-3. If the information that is not provided, please leave it empty.
+2. Ensure that each field is separated by a tab ('\t') in the CSV table
+3. Ensure to extract all available information for each field without omitting any details.
+4. If the information that is not provided, please leave it empty.
 """
 
 def _generate_table_prompts(tbl: Dict[str, str | DataFrame]):

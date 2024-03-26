@@ -137,8 +137,8 @@ def main_tab(stmpr: Stamper):
     extracted_panel, prompts_panel = st.columns([2, 1])
     with extracted_panel:
         the_pmid = st.text_input(
-            label="PMID",
-            placeholder="Enter PMID",
+            label="PMID/PMCID",
+            placeholder="Enter PMID or PMCID",
             key="main-id-input",            
         )
         retrieve_btn = st.button(
@@ -192,7 +192,7 @@ def main_tab(stmpr: Stamper):
         st.text_area(
             "Prompts",
             placeholder="Input prompts here",
-            height=600,
+            height=700,
             value=ss.main_prompts,
             key="main-id-prompts"
         )
