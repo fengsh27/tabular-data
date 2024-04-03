@@ -146,7 +146,7 @@ def main_tab(stmpr: Stamper):
             key='main-id-retrieve',
         )
         extract_btn = st.button(
-            'Extract ...',
+            'Extract Data...',
             key='main-id-extract',
         )
             
