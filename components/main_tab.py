@@ -15,10 +15,10 @@ from extractor.utils import (
 )
 from extractor.html_table_extractor import HtmlTableExtractor
 from extractor.prompts_utils import (
-    DEFAULT_PROMPTS,
     generate_paper_text_prompts,
     generate_tables_prompts,
     generate_question,
+    TableExtractionPromptsGenerator
 )
 from extractor.request_geminiai import request_to_gemini
 
@@ -70,22 +70,15 @@ def on_extract(pmid: str):
     ss.main_token_usage = None
 
     # prepare prompts including article prmpots and table prompts
-    first_prompots = ss.get("main-id-prompts")
-    first_prompots = \
-        first_prompots if first_prompots is not None else ""
-    include_article = ss.get("main-id-article-text")
+    prmpt_generator = TableExtractionPromptsGenerator()
+    first_prompots = prmpt_generator.generate_system_prompts()
+
     include_tables = []
     for ix in range(len(ss.main_retrieved_tables)):
         include_tbl = ss.get(f"main-id-tbl-check-{ix}")
         if include_tbl:
             include_tables.append(ss.main_retrieved_tables[ix])
     prompts_list = [{"role": "user", "content": first_prompots}]
-    if include_article:
-        text = ss.main_article_text
-        prompts_list.append({
-            "role": "user", 
-            "content": generate_paper_text_prompts(text),
-        })
     if len(include_tables) > 0:
         prompts_list.append({
             "role": "user",
@@ -93,14 +86,10 @@ def on_extract(pmid: str):
         })
         
     source = ""
-    if include_article and len(include_tables) > 0:
-        source = "article and tables"
-    elif include_article:
-        source = "article"
-    elif len(include_tables) > 0:
+    if len(include_tables) > 0:
         source = "tables"
     else:
-        st.error("Please select article or at least a table")
+        st.error("Please select at least one table")
         return
     assert len(prompts_list) > 0
     
@@ -128,13 +117,12 @@ def main_tab(stmpr: Stamper):
     ss.setdefault("main_extracted_result", None)
     ss.setdefault("main_token_usage", None)
     ss.setdefault("main_retrieved_tables", None)
-    ss.setdefault("main_prompts", DEFAULT_PROMPTS)
     ss.setdefault("main_extracted_btn_disabled", True)
 
     global stamper
     stamper = stmpr
     st.title("Extract Tabula Data")
-    extracted_panel, prompts_panel = st.columns([2, 1])
+    extracted_panel, prompts_panel = st.columns([5, 1])
     with extracted_panel:
         the_pmid = st.text_input(
             label="PMID/PMCID",
@@ -177,7 +165,9 @@ def main_tab(stmpr: Stamper):
             len(ss.main_retrieved_tables) > 0
         ):
             st.subheader("Tables in Article:")
-            for tbl in ss.main_retrieved_tables:
+            for ix in range(len(ss.main_retrieved_tables)):
+                tbl = ss.main_retrieved_tables[ix]
+                st.subheader(f"Table {ix+1}")
                 if "caption" in tbl:
                     st.markdown(escape_markdown(tbl["caption"]))
                 if "table" in tbl:
@@ -189,19 +179,7 @@ def main_tab(stmpr: Stamper):
                         st.write(tbl["raw_tag"])
                 st.divider()
     with prompts_panel:
-        st.text_area(
-            "Prompts",
-            placeholder="Input prompts here",
-            height=700,
-            value=ss.main_prompts,
-            key="main-id-prompts"
-        )
         if not ss.main_extracted_btn_disabled:
-            st.checkbox(
-                "article",
-                value=True,
-                key="main-id-article-text",
-            )
             tables = (
                 ss.main_retrieved_tables if ss.main_retrieved_tables is not None else []
             )

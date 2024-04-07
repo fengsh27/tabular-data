@@ -36,9 +36,10 @@ logger = logging.getLogger(__name__)
 ss = st.session_state
 st.set_page_config(layout="wide")
 
-tab1, tab2 = st.tabs(["Extract Tabula Data", "Extract html table"])
+tab1, tab2 = st.tabs(["Extract From Table Data", "Extract From The Full-text"])
 
 with tab1:
     main_tab(stamper)
 with tab2:
-    html_tab(stamper)
+    pass
+    # html_tab(stamper)
