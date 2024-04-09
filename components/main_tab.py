@@ -2,6 +2,8 @@ from typing import Optional
 import streamlit as st
 from datetime import datetime
 import logging
+from nanoid import generate
+from streamlit_modal import Modal
 
 from extractor.stampers import Stamper
 from extractor.article_retriever import ExtendArticleRetriever, ArticleRetriever
@@ -15,10 +17,10 @@ from extractor.utils import (
 )
 from extractor.html_table_extractor import HtmlTableExtractor
 from extractor.prompts_utils import (
-    DEFAULT_PROMPTS,
     generate_paper_text_prompts,
     generate_tables_prompts,
     generate_question,
+    TableExtractionPromptsGenerator,
 )
 from extractor.request_geminiai import request_to_gemini
 
@@ -28,7 +30,7 @@ stamper = None
 ss = st.session_state
 def on_input_change(pmid: Optional[str]=None):
     if pmid is None:
-        pmid = ss.get("main-id-input")
+        pmid = ss.get("w-pmid-input")
     pmid = pmid.strip()
     stamper.pmid = pmid
     # initialize
@@ -70,22 +72,15 @@ def on_extract(pmid: str):
     ss.main_token_usage = None
 
     # prepare prompts including article prmpots and table prompts
-    first_prompots = ss.get("main-id-prompts")
-    first_prompots = \
-        first_prompots if first_prompots is not None else ""
-    include_article = ss.get("main-id-article-text")
+    prmpt_generator = TableExtractionPromptsGenerator()
+    first_prompots = prmpt_generator.generate_system_prompts()
+
     include_tables = []
     for ix in range(len(ss.main_retrieved_tables)):
-        include_tbl = ss.get(f"main-id-tbl-check-{ix}")
+        include_tbl = ss.get(f"w-pmid-tbl-check-{ix}")
         if include_tbl:
             include_tables.append(ss.main_retrieved_tables[ix])
     prompts_list = [{"role": "user", "content": first_prompots}]
-    if include_article:
-        text = ss.main_article_text
-        prompts_list.append({
-            "role": "user", 
-            "content": generate_paper_text_prompts(text),
-        })
     if len(include_tables) > 0:
         prompts_list.append({
             "role": "user",
@@ -93,14 +88,10 @@ def on_extract(pmid: str):
         })
         
     source = ""
-    if include_article and len(include_tables) > 0:
-        source = "article and tables"
-    elif include_article:
-        source = "article"
-    elif len(include_tables) > 0:
+    if len(include_tables) > 0:
         source = "tables"
     else:
-        st.error("Please select article or at least a table")
+        st.error("Please select at least one table")
         return
     assert len(prompts_list) > 0
     
@@ -121,6 +112,35 @@ def on_extract(pmid: str):
         st.error(e)
         return
 
+def on_extract_from_html_table(html_table: str):
+    html_table = html_table.strip()
+    stamper.pmid = generate(size=10)
+    table_extractor = HtmlTableExtractor()
+    tables = table_extractor.extract_tables(html_table)
+    if len(tables) == 0:
+        tables = [{"caption": "", "footnote": "", "table": html_table, "raw_tag": html_table}]
+    prmpt_generator = TableExtractionPromptsGenerator()
+    first_prompts = prmpt_generator.generate_system_prompts()
+    prompts_list = [{"role": "user", "content": first_prompts}]
+    prompts_list.append({
+        "role": "user",
+        "content": generate_tables_prompts(tables)
+    })
+    try:
+        stamper.output_prompts(prompts_list)
+        res, content, usage = request_to_gemini(
+            prompts_list,
+            generate_question("table")
+        )
+        stamper.output_result(f"{content}\n\nUsage: {str(usage) if usage is not None else ''}")
+        ss.main_extracted_result = content
+        ss.main_token_usage = usage
+        ss.main_info = f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Extracting completed"
+    except Exception as e:
+        logger.error(e)
+        st.error(e)
+        return
+
 
 def main_tab(stmpr: Stamper):
     ss.setdefault("main_info", "")
@@ -128,35 +148,57 @@ def main_tab(stmpr: Stamper):
     ss.setdefault("main_extracted_result", None)
     ss.setdefault("main_token_usage", None)
     ss.setdefault("main_retrieved_tables", None)
-    ss.setdefault("main_prompts", DEFAULT_PROMPTS)
     ss.setdefault("main_extracted_btn_disabled", True)
 
+    modal = Modal(
+        "Prompts",
+        key="prompts-modal",
+        padding=10,
+        max_width=1200,
+    )
     global stamper
     stamper = stmpr
     st.title("Extract Tabula Data")
-    extracted_panel, prompts_panel = st.columns([2, 1])
+    extracted_panel, prompts_panel = st.columns([5, 1])
     with extracted_panel:
-        the_pmid = st.text_input(
-            label="PMID",
-            placeholder="Enter PMID",
-            key="main-id-input",            
-        )
-        retrieve_btn = st.button(
-            'Retrieve Article ...',
-            key='main-id-retrieve',
-        )
-        extract_btn = st.button(
-            'Extract ...',
-            key='main-id-extract',
-        )
+        with st.expander("Input PMID/PMCID"):
+            the_pmid = st.text_input(
+            # the_pmid = st.text_input(
+                label="PMID/PMCID",
+                placeholder="Enter PMID or PMCID",
+                key="w-pmid-input",            
+            )
+            pmid_retrieve_btn = st.button(
+            # retrieve_btn = st.button(
+                'Retrieve Article ...',
+                key='w-pmid-retrieve',
+            )
+            pmid_extract_btn = st.button(
+                'Extract Data...',
+                key='w-pmid-extract',
+            )
+                
+            if the_pmid and pmid_retrieve_btn:
+                with st.spinner("Obtaining article ..."):
+                    on_input_change(the_pmid)
+            if the_pmid and pmid_extract_btn:
+                with st.spinner("Extracting data ..."):
+                    on_extract(the_pmid)
+        with st.expander("Input Html table"):
+            html_table_input = st.text_area(
+                label="html table",
+                height=400
+            )
+            html_table_extract_btn = st.button(
+                "Extract Data ...",
+                key="w-html-table-extract",
+            )
+            if html_table_input and html_table_extract_btn:
+                with st.spinner("Extract data ..."):
+                    on_extract_from_html_table(html_table_input)              
+
+        open_modal = st.button("View Prompts ...")
             
-        if the_pmid and retrieve_btn:
-            with st.spinner("Obtaining article ..."):
-                on_input_change(the_pmid)
-        if the_pmid and extract_btn:
-            with st.spinner("Extracting data ..."):
-                on_extract(the_pmid)
-    
         if ss.main_info and len(ss.main_info) > 0:
             st.write(ss.main_info)
         if ss.main_extracted_result is not None:
@@ -177,7 +219,9 @@ def main_tab(stmpr: Stamper):
             len(ss.main_retrieved_tables) > 0
         ):
             st.subheader("Tables in Article:")
-            for tbl in ss.main_retrieved_tables:
+            for ix in range(len(ss.main_retrieved_tables)):
+                tbl = ss.main_retrieved_tables[ix]
+                st.subheader(f"Table {ix+1}")
                 if "caption" in tbl:
                     st.markdown(escape_markdown(tbl["caption"]))
                 if "table" in tbl:
@@ -189,25 +233,21 @@ def main_tab(stmpr: Stamper):
                         st.write(tbl["raw_tag"])
                 st.divider()
     with prompts_panel:
-        st.text_area(
-            "Prompts",
-            placeholder="Input prompts here",
-            height=600,
-            value=ss.main_prompts,
-            key="main-id-prompts"
-        )
         if not ss.main_extracted_btn_disabled:
-            st.checkbox(
-                "article",
-                value=True,
-                key="main-id-article-text",
-            )
             tables = (
                 ss.main_retrieved_tables if ss.main_retrieved_tables is not None else []
             )
             for ix in range(len(tables)):
                 st.checkbox(
                     f"table {ix+1}",
-                    key=f"main-id-tbl-check-{ix}"
+                    key=f"pmid-tbl-check-{ix}"
                 )
-
+    
+    if open_modal:
+        modal.open()
+    if modal.is_open():
+        generator = TableExtractionPromptsGenerator()
+        prmpts = generator.get_prompts_file_content()
+        prmpts += "\n\n\n"
+        with modal.container():
+            st.text(prmpts)

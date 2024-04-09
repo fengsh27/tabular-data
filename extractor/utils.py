@@ -31,7 +31,7 @@ def convert_html_table_to_dataframe(table: str):
 def convert_csv_table_to_dataframe(table: str):
     try:
         csv_data = StringIO(table)
-        df = pd.read_csv(csv_data)
+        df = pd.read_csv(csv_data, sep='\t')
         return df
     except Exception as e:
         logger.error(e)

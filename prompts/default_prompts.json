@@ -1,0 +1,26 @@
+{
+  "table_extraction_prompts": {
+    "role_description": "Please act as a biomedical assistant, help to extract the information from the provided source",
+    "source": "html table from biomedical article",
+    "output_columns": ["Drug name", "Specimen", "Pregnancy Stage", "Parameter type", "Value", "Unit", "Summary Statistics", "Interval type", "Lower limit", "High limit", "Population"],
+    "output_column_definitions": [
+      "the name of drug mentioned in the paper",
+      "what is the specimen, like 'blood', 'breast milk', 'cord blood', and so on.",
+      "pregnancy stage, What pregnancy stages of patients mentioned in the paper, like 'postpartum', 'before pregnancy', '1st trimester' and so on. If not mentioned, please label as 'N/A',",
+      "the type of parameter, like 'concentration after the first dose', 'concentration after the second dose', 'clearance', 'Total area under curve' and so on.",
+      "the value of parameter",
+      "the unit of the value",
+      "the statistics method to summary the data, like 'geometric mean', 'arithmetic mean'",
+      "specifies the type of interval that is being used to describe uncertainty or variability around a measure or estimate, like '95% CI', 'range' and so on.",
+      "the lower bounds of the interval",
+      "the higher bounds of the interval",
+      "Describe the patient age distribution, including categories such as 'pediatric,' 'adults,' 'old adults,' 'maternal,' 'fetal,' 'neonate,' etc."
+    ],
+    "output_notes": [
+      "1. Only output csv table without any other characters, no triple backticks ``` and no 'csv'.",
+      "2. Ensure that each field is separated by a tab ('\t') in the CSV table",
+      "3. Ensure to extract all available information for each field without omitting any details.",
+      "4. If the information that is not provided, please leave it empty."
+    ]
+  }
+}

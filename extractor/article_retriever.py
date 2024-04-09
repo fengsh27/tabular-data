@@ -31,6 +31,9 @@ class ArticleRetriever(object):
         fn = os.path.join(folder, fn)
         res = make_article_request(url, fn)
         if res.status_code == 200 and os.path.exists(fn):
+            # try to use make_request (it doesn't work to make_request(final_url))
+            # res_data = res.json()            
+            # final_url = res_data.get("final_url", None)
             fobj = open(fn, "r")
             text = fobj.read()
             fobj.close()
@@ -47,11 +50,17 @@ class ArticleRetriever(object):
         """
         request pmc full-text, its url is:
         https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/{pmid}/
+        or (for pmc id)
+        https://www.ncbi.nlm.nih.gov/pmc/articles/{pmid}
         """
+        if pmid.upper().startswith("PMC"):
+            pmid = pmid.upper()
+            url = f"https://www.ncbi.nlm.nih.gov/pmc/articles/{pmid}"
+        else:
+            url = f"https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/{pmid}/"
         header = headers
         ua = UserAgent()
         header["User-Agent"] = str(ua.chrome)
-        url = f"https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/{pmid}/"
         res = make_get_request(url, headers=header, allow_redirects=True, cookies=cookies)
         if res.status_code == 200:
             return True, res.text, res.status_code

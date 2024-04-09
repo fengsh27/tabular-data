@@ -1,10 +1,12 @@
 
 from bs4 import BeautifulSoup, Tag
-
+from typing import Optional
 from extractor.utils import convert_html_table_to_dataframe
 
 class HtmlTableParser(object):
     MAX_LEVEL = 3
+    CAPTION_CANDIDATES = ["caption", "captions", "title"]
+    FOOTNOTE_CANDIDATES = ["note", "legend", "description"]
     def __init__(self):
         pass
 
@@ -19,11 +21,30 @@ class HtmlTableParser(object):
             the_text = child.text
             text += the_text
         return text
-    def _find_caption_and_footnote_recursively(self, parent_tag: Tag, level: int):
+    @staticmethod
+    def _is_caption_in_text(text):
+        for cap in HtmlTableParser.CAPTION_CANDIDATES:
+            if cap in text:
+                return True
+        return False
+    @staticmethod
+    def _is_footnote_in_text(text):
+        for foot in HtmlTableParser.FOOTNOTE_CANDIDATES:
+            if foot in text:
+                return True
+        return False
+    def _find_caption_and_footnote_recursively(
+            self, 
+            parent_tag: Tag | None, 
+            level: int, 
+            found_caption: Optional[bool]=False,
+            found_footnote: Optional[bool]=False
+        ):
+        if parent_tag is None:
+            return "", "", None
         if level > HtmlTableParser.MAX_LEVEL:
             return "", "", None
         children = parent_tag.children
-        found = False
         caption = None
         footnote = None
         for child in children:
@@ -37,15 +58,30 @@ class HtmlTableParser(object):
                     classes = ' '.join(classes)
                 except:
                     continue
-            if 'caption' in classes or 'captions' in classes:
+            if not found_caption and HtmlTableParser._is_caption_in_text(classes):
                 caption = self._get_caption_or_footnote_text(child)
-                found = True
-            if 'note' in classes or 'legend' in classes:
+                found_caption = True
+            if not found_footnote and HtmlTableParser._is_footnote_in_text(classes):
                 footnote = self._get_caption_or_footnote_text(child)
-                found = True
-        if found:
+                found_footnote = True
+        if found_caption and found_footnote:
             return caption, footnote, parent_tag
-        return self._find_caption_and_footnote_recursively(parent_tag.parent, level+1)
+        if not found_caption and not found_footnote:
+            return self._find_caption_and_footnote_recursively(
+                parent_tag.parent, level+1, found_caption, found_footnote
+            )
+        if not found_caption:
+            caption, _, further_parent_tag = self._find_caption_and_footnote_recursively(
+                parent_tag.parent, level+1, found_caption, found_footnote
+            )
+            final_parent_tag = further_parent_tag if further_parent_tag is not None else parent_tag
+            return caption, footnote, final_parent_tag
+        if not found_footnote:
+            _, footnote, further_parent_tag = self._find_caption_and_footnote_recursively(
+                parent_tag.parent, level+1, found_caption, found_footnote
+            )
+            final_parent_tag = further_parent_tag if further_parent_tag is not None else parent_tag
+            return caption, footnote, final_parent_tag
 
     def _find_caption_and_footnote(self, table_tag: Tag):
         return self._find_caption_and_footnote_recursively(table_tag.parent, 1)

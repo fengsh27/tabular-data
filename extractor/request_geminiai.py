@@ -53,7 +53,8 @@ def request_to_gemini(messages: List[Any], question: str):
             messages,
             generation_config=genai.types.GenerationConfig(
                 candidate_count=1,
-                temperature=1.0
+                temperature=1.0,
+                max_output_tokens=10000,
             )
         )
         usage = (
