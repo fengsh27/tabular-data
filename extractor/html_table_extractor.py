@@ -35,11 +35,13 @@ class HtmlTableParser(object):
         return False
     def _find_caption_and_footnote_recursively(
             self, 
-            parent_tag: Tag, 
+            parent_tag: Tag | None, 
             level: int, 
             found_caption: Optional[bool]=False,
             found_footnote: Optional[bool]=False
         ):
+        if parent_tag is None:
+            return "", "", None
         if level > HtmlTableParser.MAX_LEVEL:
             return "", "", None
         children = parent_tag.children
@@ -78,6 +80,8 @@ class HtmlTableParser(object):
             _, footnote, further_parent_tag = self._find_caption_and_footnote_recursively(
                 parent_tag.parent, level+1, found_caption, found_footnote
             )
+            final_parent_tag = further_parent_tag if further_parent_tag is not None else parent_tag
+            return caption, footnote, final_parent_tag
 
     def _find_caption_and_footnote(self, table_tag: Tag):
         return self._find_caption_and_footnote_recursively(table_tag.parent, 1)

@@ -86,6 +86,19 @@ class TableExtractionPromptsGenerator(object):
             TABLE_OUTPUT_COLUMNS_DEFINITION,
             TABLE_OUTPUT_NOTES
         )
+    def get_prompts_file_content(self, json_beautifying=False):
+        try:
+            fobj = self._read_prompts_config_file()
+            if not json_beautifying:
+                return fobj.read()
+            else:
+                json_obj = json.load(fobj)
+                return json.dumps(json_obj, indent=4)
+        except Exception as e:
+            logger.error(e)
+            return f"Unknown error occurred: {e}"
+        finally:
+            fobj.close()
     def generate_system_prompts(self):
         try: 
             fobj = self._read_prompts_config_file()
