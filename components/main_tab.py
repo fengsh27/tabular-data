@@ -28,16 +28,22 @@ logger = logging.getLogger(__name__)
 
 stamper = None
 ss = st.session_state
+
+def clear_results(clear_retrieved_table=False):
+    ss.main_info = ""
+    if clear_retrieved_table:
+        ss.main_retrieved_tables=[]
+    ss.main_extracted_result = None
+    ss.main_token_usage = None
+
 def on_input_change(pmid: Optional[str]=None):
     if pmid is None:
         pmid = ss.get("w-pmid-input")
     pmid = pmid.strip()
     stamper.pmid = pmid
     # initialize
-    ss.main_extracted_result = None
-    ss.main_token_usage = None
+    clear_results(True)
     ss.main_extracted_btn_disabled = True
-    ss.main_info = ""
 
     # retrieve article
     retriever = ArticleRetriever() # ExtendArticleRetriever() #
@@ -68,8 +74,7 @@ def on_extract(pmid: str):
     # initialize
     pmid = pmid.strip()
     stamper.pmid = pmid
-    ss.main_extracted_result = None
-    ss.main_token_usage = None
+    clear_results()
 
     # prepare prompts including article prmpots and table prompts
     prmpt_generator = TableExtractionPromptsGenerator()
@@ -114,6 +119,9 @@ def on_extract(pmid: str):
 
 def on_extract_from_html_table(html_table: str):
     html_table = html_table.strip()
+    if len(html_table) == 0:
+        return
+    clear_results(True)
     stamper.pmid = generate(size=10)
     table_extractor = HtmlTableExtractor()
     tables = table_extractor.extract_tables(html_table)
@@ -240,7 +248,7 @@ def main_tab(stmpr: Stamper):
             for ix in range(len(tables)):
                 st.checkbox(
                     f"table {ix+1}",
-                    key=f"pmid-tbl-check-{ix}"
+                    key=f"w-pmid-tbl-check-{ix}"
                 )
     
     if open_modal:
