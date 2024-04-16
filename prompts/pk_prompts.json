@@ -18,9 +18,16 @@
     ],
     "output_notes": [
       "1. Only output csv table without any other characters, no triple backticks ``` and no 'csv'.",
-      "2. Ensure that each field is separated by a tab ('\t') in the CSV table",
+      "2. Ensure that each field is separated by a comma(,) in the CSV table",
       "3. Ensure to extract all available information for each field without omitting any details.",
       "4. If the information that is not provided, please leave it empty."
     ]
+  },
+  "full_text_prompts": {
+
   }
 }
+
+
+
+

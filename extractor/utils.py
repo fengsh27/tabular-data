@@ -8,6 +8,7 @@ import logging
 import pandas as pd
 import csv
 from io import StringIO
+import re
 
 logger = logging.getLogger(__name__)
 
@@ -30,8 +31,11 @@ def convert_html_table_to_dataframe(table: str):
     
 def convert_csv_table_to_dataframe(table: str):
     try:
-        csv_data = StringIO(table)
-        df = pd.read_csv(csv_data, sep='\t')
+        # first, let me handle the numbers which have commas in them
+        pattern = r'\b\d{1,3}(,\d{3})\b'
+        modified_str = re.sub(pattern, lambda match: f'"{match.group(0)}"', table)
+        csv_data = StringIO(modified_str)
+        df = pd.read_csv(csv_data, sep=',')
         return df
     except Exception as e:
         logger.error(e)

@@ -5,6 +5,11 @@ import logging
 from nanoid import generate
 from streamlit_modal import Modal
 
+from extractor.constants import ( 
+    PROMPTS_NAME_PK,
+    LLM_CHATGPT_35,
+    LLM_GERMINI_PRO,
+)
 from extractor.stampers import Stamper
 from extractor.article_retriever import ExtendArticleRetriever, ArticleRetriever
 from extractor.request_openai import request_to_chatgpt
@@ -78,7 +83,7 @@ def on_extract(pmid: str):
 
     # prepare prompts including article prmpots and table prompts
     prmpt_generator = TableExtractionPromptsGenerator()
-    first_prompots = prmpt_generator.generate_system_prompts()
+    first_prompots = prmpt_generator.generate_system_prompts(ss.main_prompts_option)
 
     include_tables = []
     for ix in range(len(ss.main_retrieved_tables)):
@@ -91,7 +96,14 @@ def on_extract(pmid: str):
             "role": "user",
             "content": generate_tables_prompts(include_tables)
         })
-        
+    
+    customized_prompts = ss.main_customized_prompts
+    if customized_prompts and len(customized_prompts) > 0:
+        prompts_list.append({
+            "role": "user",
+            "content": customized_prompts,
+        })
+
     source = ""
     if len(include_tables) > 0:
         source = "tables"
@@ -102,11 +114,18 @@ def on_extract(pmid: str):
     
     # chat with LLM
     try:
-        stamper.output_prompts(prompts_list)
-        res, content, usage = request_to_gemini( # request_to_gemini(
-            prompts_list,
-            generate_question(source),
-        )
+        tmp_prmpts_list = [*prompts_list, {"role": "user", "content": generate_question(source)}]
+        stamper.output_prompts(tmp_prmpts_list)
+        if ss.main_llm_option == LLM_GERMINI_PRO:
+            res, content, usage = request_to_gemini( # request_to_gemini(
+                prompts_list,
+                generate_question(source),
+            )
+        else:
+            res, content, usage = request_to_chatgpt(
+                prompts_list,
+                generate_question(source),
+            )
         stamper.output_result(f"{content}\n\nUsage: {str(usage) if usage is not None else ''}")
         ss.main_extracted_result = content
         ss.main_token_usage = usage
@@ -117,39 +136,27 @@ def on_extract(pmid: str):
         st.error(e)
         return
 
-def on_extract_from_html_table(html_table: str):
+def on_retrive_table_from_html_table(html_table: str):
     html_table = html_table.strip()
     if len(html_table) == 0:
         return
     clear_results(True)
-    stamper.pmid = generate(size=10)
-    table_extractor = HtmlTableExtractor()
-    tables = table_extractor.extract_tables(html_table)
-    if len(tables) == 0:
-        tables = [{"caption": "", "footnote": "", "table": html_table, "raw_tag": html_table}]
-    prmpt_generator = TableExtractionPromptsGenerator()
-    first_prompts = prmpt_generator.generate_system_prompts()
-    prompts_list = [{"role": "user", "content": first_prompts}]
-    prompts_list.append({
-        "role": "user",
-        "content": generate_tables_prompts(tables)
-    })
-    try:
-        stamper.output_prompts(prompts_list)
-        res, content, usage = request_to_gemini(
-            prompts_list,
-            generate_question("table")
-        )
-        stamper.output_result(f"{content}\n\nUsage: {str(usage) if usage is not None else ''}")
-        ss.main_extracted_result = content
-        ss.main_token_usage = usage
-        ss.main_info = f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Extracting completed"
-    except Exception as e:
-        logger.error(e)
-        st.error(e)
-        return
+    extractor = HtmlTableExtractor()
+    retrieved_tables = extractor.extract_tables(html_table)
+    ss.main_retrieved_tables = retrieved_tables
+    ss.main_extracted_btn_disabled = False
+    tmp_info = (
+        'no table found' 
+        if len(retrieved_tables) == 0 
+        else f'{len(retrieved_tables)} tables found'
+    )
+    ss.main_info = f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Retrieving completed, {tmp_info}"
 
-
+def on_extract_from_html_table():
+    pmid = generate(size=10)
+    stamper.pmid = pmid
+    on_extract(pmid)
+    
 def main_tab(stmpr: Stamper):
     ss.setdefault("main_info", "")
     ss.setdefault("main_article_text", "")
@@ -157,6 +164,9 @@ def main_tab(stmpr: Stamper):
     ss.setdefault("main_token_usage", None)
     ss.setdefault("main_retrieved_tables", None)
     ss.setdefault("main_extracted_btn_disabled", True)
+    ss.setdefault("main_prompts_option", PROMPTS_NAME_PK)
+    ss.setdefault("main_llm_option", LLM_GERMINI_PRO)
+    ss.setdefault("main_customized_prompts", "")
 
     modal = Modal(
         "Prompts",
@@ -167,7 +177,7 @@ def main_tab(stmpr: Stamper):
     global stamper
     stamper = stmpr
     st.title("Extract Tabula Data")
-    extracted_panel, prompts_panel = st.columns([5, 1])
+    extracted_panel, prompts_panel = st.columns([2, 1])
     with extracted_panel:
         with st.expander("Input PMID/PMCID"):
             the_pmid = st.text_input(
@@ -184,6 +194,7 @@ def main_tab(stmpr: Stamper):
             pmid_extract_btn = st.button(
                 'Extract Data...',
                 key='w-pmid-extract',
+                disabled=ss.main_extracted_btn_disabled
             )
                 
             if the_pmid and pmid_retrieve_btn:
@@ -192,20 +203,25 @@ def main_tab(stmpr: Stamper):
             if the_pmid and pmid_extract_btn:
                 with st.spinner("Extracting data ..."):
                     on_extract(the_pmid)
-        with st.expander("Input Html table"):
+        with st.expander("Input Html table or html article"):
             html_table_input = st.text_area(
-                label="html table",
-                height=400
+                label="html table or html article",
+                height=200
+            )
+            html_table_retrive_btn = st.button(
+                "Retrieve Tables ...",
+                key="w-html-table-retrieve",
             )
             html_table_extract_btn = st.button(
                 "Extract Data ...",
                 key="w-html-table-extract",
             )
+            if html_table_input and html_table_retrive_btn:
+                with st.spinner("Obtaining article ..."):
+                    on_retrive_table_from_html_table(html_table_input)
             if html_table_input and html_table_extract_btn:
                 with st.spinner("Extract data ..."):
-                    on_extract_from_html_table(html_table_input)              
-
-        open_modal = st.button("View Prompts ...")
+                    on_extract_from_html_table()
             
         if ss.main_info and len(ss.main_info) > 0:
             st.write(ss.main_info)
@@ -241,6 +257,16 @@ def main_tab(stmpr: Stamper):
                         st.write(tbl["raw_tag"])
                 st.divider()
     with prompts_panel:
+        llm_option = st.radio("What LLM would you like to use?", (LLM_GERMINI_PRO, LLM_CHATGPT_35), index=0)
+        ss.main_llm_option = llm_option
+        st.divider()
+        prompts_array = (PROMPTS_NAME_PK, )
+        option = st.selectbox("What type of prompts would you like to use?", prompts_array, index=0)
+        ss.main_prompts_option = option
+        open_modal = st.button("View Prompts ...")
+        st.divider()
+        customized_prompts = st.text_area("Customized Prompts (Optional):", height=40)
+        ss.main_customized_prompts = customized_prompts
         if not ss.main_extracted_btn_disabled:
             tables = (
                 ss.main_retrieved_tables if ss.main_retrieved_tables is not None else []
@@ -255,7 +281,8 @@ def main_tab(stmpr: Stamper):
         modal.open()
     if modal.is_open():
         generator = TableExtractionPromptsGenerator()
-        prmpts = generator.get_prompts_file_content()
+        prmpts = generator.get_prompts_file_content(ss.main_prompts_option)
         prmpts += "\n\n\n"
         with modal.container():
             st.text(prmpts)
+            st.divider()
