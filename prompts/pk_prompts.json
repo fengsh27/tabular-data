@@ -2,7 +2,19 @@
   "table_extraction_prompts": {
     "role_description": "Please act as a biomedical assistant, help to extract the information from the provided source",
     "source": "html table from biomedical article",
-    "output_columns": ["Drug name", "Specimen", "Pregnancy Stage", "Parameter type", "Value", "Unit", "Summary Statistics", "Interval type", "Lower limit", "High limit", "Population"],
+    "output_columns": [
+      "Drug name", 
+      "Specimen", 
+      "Pregnancy Stage", 
+      "Parameter type", 
+      "Value", 
+      "Unit", 
+      "Summary Statistics", 
+      "Interval type", 
+      "Lower limit", 
+      "High limit", 
+      "Population"
+    ],
     "output_column_definitions": [
       "the name of drug mentioned in the paper",
       "what is the specimen, like 'blood', 'breast milk', 'cord blood', and so on.",
