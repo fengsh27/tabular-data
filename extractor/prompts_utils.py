@@ -4,6 +4,8 @@ from pandas import DataFrame
 import json
 import logging
 
+from extractor.constants import PROMPTS_NAME_PK
+
 logger = logging.getLogger(__name__)
 
 TABLE_ROLE_PROMPTS = "Please act as a biomedical assistant, help to extract the information from the provided source"
@@ -33,8 +35,11 @@ class TableExtractionPromptsGenerator(object):
     def __init__(self):
         pass
 
-    def _read_prompts_config_file(self):
-        return open("./prompts/default_prompts.json", "r")
+    def _read_prompts_config_file(self, prompts_name):
+        if prompts_name == PROMPTS_NAME_PK:
+            return open("./prompts/pk_prompts.json", "r")
+        else:
+            return open("./prompts/pk_prompts.json", "r")
 
     @staticmethod
     def _prompts_to_str(prmpt: str | list[str], delimiter: Optional[str]="\n"):
@@ -86,9 +91,13 @@ class TableExtractionPromptsGenerator(object):
             TABLE_OUTPUT_COLUMNS_DEFINITION,
             TABLE_OUTPUT_NOTES
         )
-    def get_prompts_file_content(self, json_beautifying=False):
+    def get_prompts_file_content(
+        self, 
+        prompts_name: str,
+        json_beautifying: Optional[bool] = False
+    ):
         try:
-            fobj = self._read_prompts_config_file()
+            fobj = self._read_prompts_config_file(prompts_name)
             if not json_beautifying:
                 return fobj.read()
             else:
@@ -99,9 +108,9 @@ class TableExtractionPromptsGenerator(object):
             return f"Unknown error occurred: {e}"
         finally:
             fobj.close()
-    def generate_system_prompts(self):
+    def generate_system_prompts(self, prompts_name: str):
         try: 
-            fobj = self._read_prompts_config_file()
+            fobj = self._read_prompts_config_file(prompts_name)
             content = json.load(fobj)
             table_prompts: Optional[Dict] = content.get("table_extraction_prompts", None)
             if table_prompts is None:
@@ -134,7 +143,7 @@ def generate_system_prompts():
 def _generate_table_prompts(tbl: Dict[str, str | DataFrame]):
     raw_tag = tbl.get("raw_tag", None)
     if raw_tag is not None:
-        table_text = f"html table is:\n{raw_tag}"
+        table_text = f"html table is:\n```\n{raw_tag}```\n"
         return table_text
     caption = tbl.get("caption", None)
     table = tbl.get("table", None)
@@ -143,9 +152,9 @@ def _generate_table_prompts(tbl: Dict[str, str | DataFrame]):
     if caption is not None:
         table_text += f"table caption: {caption}\n"
     if table is not None:
-        table_text += "table is:\n"
+        table_text += "table is:\n```\n"
         table_text += table.to_csv()
-        table_text += "\n"
+        table_text += "\n```\n"
     if footnote is not None:
         table_text += f"table footnote: {footnote}\n"
     return table_text

@@ -34,3 +34,9 @@ MAX_FULL_TEXT_LENGTH = 31 * 1024   # should not be greater than 31K
 
 ERROR_UNKNOWN_ERROR = -1
 ERROR_OK = 5000
+
+PROMPTS_NAME_PK = "PK Prompts"
+PROMPTS_NAME_PE = "PE Prompts"
+
+LLM_CHATGPT_35 = "ChatGPT 3.5-turbo"
+LLM_GERMINI_PRO = "Germini 1.0 pro"
