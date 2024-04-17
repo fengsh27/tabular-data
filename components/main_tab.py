@@ -176,7 +176,7 @@ def main_tab(stmpr: Stamper):
     )
     global stamper
     stamper = stmpr
-    st.title("Extract Tabula Data")
+    st.title("Extract Tabular Data")
     extracted_panel, prompts_panel = st.columns([2, 1])
     with extracted_panel:
         with st.expander("Input PMID/PMCID"):
@@ -188,7 +188,7 @@ def main_tab(stmpr: Stamper):
             )
             pmid_retrieve_btn = st.button(
             # retrieve_btn = st.button(
-                'Retrieve Article ...',
+                'Retrieve Tables ...',
                 key='w-pmid-retrieve',
             )
             pmid_extract_btn = st.button(
@@ -215,6 +215,7 @@ def main_tab(stmpr: Stamper):
             html_table_extract_btn = st.button(
                 "Extract Data ...",
                 key="w-html-table-extract",
+                disabled=ss.main_extracted_btn_disabled
             )
             if html_table_input and html_table_retrive_btn:
                 with st.spinner("Obtaining article ..."):
