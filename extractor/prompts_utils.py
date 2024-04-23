@@ -39,7 +39,7 @@ class TableExtractionPromptsGenerator(object):
         if prompts_name == PROMPTS_NAME_PK:
             return open("./prompts/pk_prompts.json", "r")
         else:
-            return open("./prompts/pk_prompts.json", "r")
+            return open("./prompts/pe_prompts.json", "r")
 
     @staticmethod
     def _prompts_to_str(prmpt: str | list[str], delimiter: Optional[str]="\n"):
@@ -131,14 +131,6 @@ class TableExtractionPromptsGenerator(object):
             return self._generate_system_prompts_by_default()
         finally:
             fobj.close()
-
-def generate_system_prompts():
-    try:
-        with open("./prompts/default_prompts.json") as fobj:
-            content = json.load(fobj)
-
-    except Exception as e:
-        pass
 
 def _generate_table_prompts(tbl: Dict[str, str | DataFrame]):
     raw_tag = tbl.get("raw_tag", None)
