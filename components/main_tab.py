@@ -6,6 +6,7 @@ from nanoid import generate
 from streamlit_modal import Modal
 
 from extractor.constants import ( 
+    PROMPTS_NAME_PE,
     PROMPTS_NAME_PK,
     LLM_CHATGPT_35,
     LLM_GERMINI_PRO,
@@ -48,7 +49,7 @@ def on_input_change(pmid: Optional[str]=None):
     stamper.pmid = pmid
     # initialize
     clear_results(True)
-    ss.main_extracted_btn_disabled = True
+    ss.main_extracted_btn_disabled = False
 
     # retrieve article
     retriever = ArticleRetriever() # ExtendArticleRetriever() #
@@ -67,7 +68,7 @@ def on_input_change(pmid: Optional[str]=None):
     extractor = HtmlTableExtractor()
     retrieved_tables = extractor.extract_tables(html_content)
     ss.main_retrieved_tables = retrieved_tables
-    ss.main_extracted_btn_disabled = False
+    
     tmp_info = (
         'no table found' 
         if len(retrieved_tables) == 0 
@@ -194,7 +195,6 @@ def main_tab(stmpr: Stamper):
             pmid_extract_btn = st.button(
                 'Extract Data...',
                 key='w-pmid-extract',
-                disabled=ss.main_extracted_btn_disabled
             )
                 
             if the_pmid and pmid_retrieve_btn:
@@ -204,10 +204,21 @@ def main_tab(stmpr: Stamper):
                 with st.spinner("Extracting data ..."):
                     on_extract(the_pmid)
         with st.expander("Input Html table or html article"):
-            html_table_input = st.text_area(
-                label="html table or html article",
-                height=200
-            )
+            text_area, clear_area = st.columns([5, 1])
+            with text_area:
+                html_table_input = st.text_area(
+                    label="html table or html article",
+                    height=200,
+                    key="html_table_input",
+                )
+            with clear_area:
+                def on_clear_html_table_input():
+                    ss.html_table_input = ""
+                clear_btn = st.button(
+                    "clear", 
+                    help="Clear html table or html article", 
+                    on_click=on_clear_html_table_input
+                )
             html_table_retrive_btn = st.button(
                 "Retrieve Tables ...",
                 key="w-html-table-retrieve",
@@ -215,7 +226,6 @@ def main_tab(stmpr: Stamper):
             html_table_extract_btn = st.button(
                 "Extract Data ...",
                 key="w-html-table-extract",
-                disabled=ss.main_extracted_btn_disabled
             )
             if html_table_input and html_table_retrive_btn:
                 with st.spinner("Obtaining article ..."):
@@ -261,7 +271,7 @@ def main_tab(stmpr: Stamper):
         llm_option = st.radio("What LLM would you like to use?", (LLM_GERMINI_PRO, LLM_CHATGPT_35), index=0)
         ss.main_llm_option = llm_option
         st.divider()
-        prompts_array = (PROMPTS_NAME_PK, )
+        prompts_array = (PROMPTS_NAME_PK, PROMPTS_NAME_PE)
         option = st.selectbox("What type of prompts would you like to use?", prompts_array, index=0)
         ss.main_prompts_option = option
         open_modal = st.button("View Prompts ...")
