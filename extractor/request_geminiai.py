@@ -6,8 +6,8 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-genai.configure(api_key=os.environ.get("GEMINI_API_KEY", None))
-model =genai.GenerativeModel(os.environ.get("GEMINI_MODEL", "gemini-pro"))
+genai.configure(api_key=os.environ.get("GEMINI_15_API_KEY", None))
+model =genai.GenerativeModel(os.environ.get("GEMINI_15_MODEL", "gemini-pro"))
 
 def add_message_message_list(msgs: List[Any], msg: Dict[str, Any]):
     cnt = len(msgs)
@@ -55,7 +55,8 @@ def request_to_gemini(messages: List[Any], question: str):
                 candidate_count=1,
                 temperature=1.0,
                 max_output_tokens=10000,
-            )
+            ),
+            request_options={"timeout": 60000}
         )
         usage = (
             model.count_tokens(res.text).total_tokens + 
