@@ -21,6 +21,7 @@ from extractor.utils import (
     convert_csv_table_to_dataframe,
     convert_html_to_text,
     escape_markdown,
+    extract_table_title,
     is_valid_csv_table,
     remove_references,
 )
@@ -286,8 +287,11 @@ def main_tab(stmpr: Stamper):
                 ss.main_retrieved_tables if ss.main_retrieved_tables is not None else []
             )
             for ix in range(len(tables)):
+                tbl = tables[ix]
+                title = extract_table_title(tbl)
+                title = title if title is not None else f"table {ix + 1}"
                 st.checkbox(
-                    f"table {ix+1}",
+                    title,
                     key=f"w-pmid-tbl-check-{ix}"
                 )
     
