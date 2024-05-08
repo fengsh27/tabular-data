@@ -1,5 +1,5 @@
 
-from typing import Optional, Tuple
+from typing import Optional, Tuple, Dict
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 import html
@@ -71,3 +71,10 @@ def is_valid_csv_table(tbl_str):
         return True
     except csv.Error:
         return False
+    
+TITLE_MAX_LENGTH = 50
+def extract_table_title(table: Dict):
+    if not "caption" in table or len(table["caption"]) == 0:
+        return None
+    cap = table["caption"]
+    return cap if len(cap) < TITLE_MAX_LENGTH else cap[:TITLE_MAX_LENGTH-2] + " ..."
