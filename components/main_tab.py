@@ -9,11 +9,14 @@ from extractor.constants import (
     PROMPTS_NAME_PE,
     PROMPTS_NAME_PK,
     LLM_CHATGPT_35,
-    LLM_GERMINI_PRO,
+    LLM_CHATGPT_40,
 )
 from extractor.stampers import Stamper
 from extractor.article_retriever import ExtendArticleRetriever, ArticleRetriever
-from extractor.request_openai import request_to_chatgpt
+from extractor.request_openai import (
+    request_to_chatgpt_35,
+    request_to_chatgpt_40,
+)
 from extractor.utils import (
     convert_csv_table_to_dataframe,
     convert_html_to_text,
@@ -117,13 +120,13 @@ def on_extract(pmid: str):
     try:
         tmp_prmpts_list = [*prompts_list, {"role": "user", "content": generate_question(source)}]
         stamper.output_prompts(tmp_prmpts_list)
-        if ss.main_llm_option == LLM_GERMINI_PRO:
-            res, content, usage = request_to_gemini( # request_to_gemini(
+        if ss.main_llm_option == LLM_CHATGPT_40:
+            res, content, usage = request_to_chatgpt_40( # request_to_gemini(
                 prompts_list,
                 generate_question(source),
             )
         else:
-            res, content, usage = request_to_chatgpt(
+            res, content, usage = request_to_chatgpt_35(
                 prompts_list,
                 generate_question(source),
             )
@@ -166,7 +169,7 @@ def main_tab(stmpr: Stamper):
     ss.setdefault("main_retrieved_tables", None)
     ss.setdefault("main_extracted_btn_disabled", True)
     ss.setdefault("main_prompts_option", PROMPTS_NAME_PK)
-    ss.setdefault("main_llm_option", LLM_GERMINI_PRO)
+    ss.setdefault("main_llm_option", LLM_CHATGPT_40)
     ss.setdefault("main_customized_prompts", "")
 
     modal = Modal(
@@ -268,7 +271,7 @@ def main_tab(stmpr: Stamper):
                         st.write(tbl["raw_tag"])
                 st.divider()
     with prompts_panel:
-        llm_option = st.radio("What LLM would you like to use?", (LLM_GERMINI_PRO, LLM_CHATGPT_35), index=0)
+        llm_option = st.radio("What LLM would you like to use?", (LLM_CHATGPT_40, LLM_CHATGPT_35), index=0)
         ss.main_llm_option = llm_option
         st.divider()
         prompts_array = (PROMPTS_NAME_PK, PROMPTS_NAME_PE)
