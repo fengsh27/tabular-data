@@ -40,4 +40,5 @@ PROMPTS_NAME_PE = "PE Prompts"
 
 LLM_CHATGPT_35 = "ChatGPT 3.5-turbo"
 LLM_CHATGPT_40 = "ChatGPT 4"
-LLM_GERMINI_PRO = "Gemini 1.5 pro"
+LLM_GEMINI_PRO = "Gemini 1.5 pro"
+LLM_GEMINI_FLASH = "Gemini 1.5 flash"
