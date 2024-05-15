@@ -1,3 +1,4 @@
+import base64
 import streamlit as st
 import logging
 import os
@@ -34,8 +35,15 @@ initialize()
 logger = logging.getLogger(__name__)
 
 ss = st.session_state
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide", page_title="Curation Tool", page_icon="./images/favicon.png")
 
+st.markdown(
+    """ <a href="https://mprint.org/index.html"><img src="data:image/png;base64,{}" width="400px"></a> """.format(
+    base64.b64encode(open("./images/mprint-logo.png", "rb").read()).decode()),
+    unsafe_allow_html=True,
+)
+# st.markdown('[<img src="images/copper-logo.png">](https://mprint.org/index.html)')
+# st.image("./images/copper-logo.png", width=500)
 tab1, tab2 = st.tabs(["Extract From Table Data", "Extract From The Full-text"])
 
 with tab1:
