@@ -1,13 +1,15 @@
 from typing import List, Any, Dict
 # from openai import AzureOpenAI, OpenAI
 import google.generativeai as genai
+from google.generativeai import GenerativeModel
 import os
 import logging
 
 logger = logging.getLogger(__name__)
 
 genai.configure(api_key=os.environ.get("GEMINI_15_API_KEY", None))
-model =genai.GenerativeModel(os.environ.get("GEMINI_15_MODEL", "gemini-pro"))
+model_15_pro =genai.GenerativeModel(os.environ.get("GEMINI_15_MODEL", "gemini-pro"))
+model_15_flash = genai.GenerativeModel(os.environ.get("GEMINI_15_FLASH_MODEL", "gemini-1.5-flash-latest"))
 
 def add_message_message_list(msgs: List[Any], msg: Dict[str, Any]):
     cnt = len(msgs)
@@ -45,25 +47,37 @@ def messageDecor(func):
         return func(*args, **kwargs)
     return converter
 
+def request_to_gemini(model: GenerativeModel, messages: List[any]):
+    res = model.generate_content(
+        messages,
+        generation_config=genai.types.GenerationConfig(
+            candidate_count=1,
+            temperature=1.0,
+            max_output_tokens=10000,
+        ),
+        request_options={"timeout": 60000}
+    )
+    usage = (
+        model_15_pro.count_tokens(res.text).total_tokens + 
+        model_15_pro.count_tokens(messages).total_tokens
+        if res is not None and res.text is not None else 0
+    )
+    return (True, res.text, usage)
+
 @messageDecor
-def request_to_gemini(messages: List[Any], question: str):
+def request_to_gemini_15_pro(messages: List[Any], question: str):
     add_message_message_list(messages, {"role": "user", "parts": question})
     try:
-        res = model.generate_content(
-            messages,
-            generation_config=genai.types.GenerationConfig(
-                candidate_count=1,
-                temperature=1.0,
-                max_output_tokens=10000,
-            ),
-            request_options={"timeout": 60000}
-        )
-        usage = (
-            model.count_tokens(res.text).total_tokens + 
-            model.count_tokens(messages).total_tokens
-            if res is not None and res.text is not None else 0
-        )
-        return (True, res.text, usage)
+        return request_to_gemini(model_15_pro, messages)
+    except Exception as e:
+        logger.error(e)
+        return (False, str(e), None)
+    
+@messageDecor
+def request_to_gemini_15_flash(messages: List[Any], question: str):
+    add_message_message_list(messages, {"role": "user", "parts": question})
+    try:
+        return request_to_gemini(model_15_flash, messages)
     except Exception as e:
         logger.error(e)
         return (False, str(e), None)

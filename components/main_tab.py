@@ -10,6 +10,8 @@ from extractor.constants import (
     PROMPTS_NAME_PK,
     LLM_CHATGPT_35,
     LLM_CHATGPT_40,
+    LLM_GEMINI_FLASH,
+    LLM_GEMINI_PRO,
 )
 from extractor.stampers import Stamper
 from extractor.article_retriever import ExtendArticleRetriever, ArticleRetriever
@@ -32,7 +34,10 @@ from extractor.prompts_utils import (
     generate_question,
     TableExtractionPromptsGenerator,
 )
-from extractor.request_geminiai import request_to_gemini
+from extractor.request_geminiai import (
+    request_to_gemini_15_pro,
+    request_to_gemini_15_flash,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -126,8 +131,18 @@ def on_extract(pmid: str):
                 prompts_list,
                 generate_question(source),
             )
-        else:
+        elif ss.main_llm_option == LLM_CHATGPT_35:
             res, content, usage = request_to_chatgpt_35(
+                prompts_list,
+                generate_question(source),
+            )
+        elif ss.main_llm_option == LLM_GEMINI_FLASH:
+            res, content, usage = request_to_gemini_15_flash(
+                prompts_list,
+                generate_question(source),
+            )
+        else:
+            res, content, usage = request_to_gemini_15_pro(
                 prompts_list,
                 generate_question(source),
             )
@@ -272,7 +287,9 @@ def main_tab(stmpr: Stamper):
                         st.write(tbl["raw_tag"])
                 st.divider()
     with prompts_panel:
-        llm_option = st.radio("What LLM would you like to use?", (LLM_CHATGPT_40, LLM_CHATGPT_35), index=0)
+        llm_option = st.radio("What LLM would you like to use?", (
+            LLM_CHATGPT_40, LLM_CHATGPT_35, LLM_GEMINI_FLASH, LLM_GEMINI_PRO
+        ), index=0)
         ss.main_llm_option = llm_option
         st.divider()
         prompts_array = (PROMPTS_NAME_PK, PROMPTS_NAME_PE)
