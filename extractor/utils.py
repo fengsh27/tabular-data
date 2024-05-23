@@ -22,18 +22,46 @@ def decode_url(url_str: str) -> str:
 
 def convert_html_table_to_dataframe(table: str):
     try:
-        df = pd.read_html(table)
+        # remove unicode \xa0 (browser space) that can be recognized by streamlit.dataframe()
+        table = table.replace('\xa0', ' ')
+        table_io = StringIO(table)
+        df = pd.read_html(table_io)
         return df[0]
     except Exception as e:
         logger.error(e)
         print(e)
         return None
     
+def preprocess_csv_table_string(table: str):
+    try:
+        csv_data = StringIO(table)
+        csv_reader = csv.reader(csv_data)
+        ix = 0
+        item_count = 0
+        row_strs = []
+        # check if it need to process csv table string (remove redundant empty column at the end of row)
+        for row in csv_reader:
+            ix += 1
+            if ix == 1: # header
+                item_count = len(row)
+                row_strs.append(','.join(row))
+                continue
+            row_count = len(row)
+            if row_count > item_count and len(row[row_count-1].strip()) == 0:
+                row = row[:-1] # remove empty column at the end of row
+            row_strs.append(','.join(row))
+        return ('\n'.join(row_strs)) + '\n'
+    except csv.Error as e:
+        logger.error(str(e))
+        return table
+
 def convert_csv_table_to_dataframe(table: str):
     try:
         # first, let me handle the numbers which have commas in them
         pattern = r'\b\d{1,3}(,\d{3})\b'
         modified_str = re.sub(pattern, lambda match: f'"{match.group(0)}"', table)
+        # then, remove redudant comma at the end of row
+        modified_str = preprocess_csv_table_string(modified_str)
         csv_data = StringIO(modified_str)
         df = pd.read_csv(csv_data, sep=',')
         return df
@@ -76,5 +104,6 @@ TITLE_MAX_LENGTH = 50
 def extract_table_title(table: Dict):
     if not "caption" in table or len(table["caption"]) == 0:
         return None
-    cap = table["caption"]
+    cap: str = table["caption"]
+    cap = cap.strip()
     return cap if len(cap) < TITLE_MAX_LENGTH else cap[:TITLE_MAX_LENGTH-2] + " ..."

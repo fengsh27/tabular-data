@@ -1,0 +1,13 @@
+Drug name,Specimen,Pregnancy Stage,Parameter type,Value,Unit,Summary Statistics,Interval type,Lower limit,High limit,Population,Subject N,Variation type,Variation value,P value
+,,N/A,ABR thresholds on day 0 (Min–max),10–15,,median,range,10,15,,24,,,
+,,N/A,ABR thresholds on day 0 (Mean±SD),13.33,dB,arithmetic mean,,13.33,2.21,,12,SD,2.21,0.713
+,,N/A,ABR thresholds on day 0 (Min–max),10–20,,median,range,10,20,,24,,,
+,,N/A,ABR thresholds on day 0 (Mean±SD),13.12,dB,arithmetic mean,,13.12,3.39,,12,SD,3.39,0.713
+,,N/A,ABR thresholds at 4 weeks (Min–max),12.5–17.5,,median,range,12.5,17.5,,24,,,
+,,N/A,ABR thresholds at 4 weeks (Mean±SD),14.37,dB,arithmetic mean,,14.37,1.88,,12,SD,1.88,0.347
+,,N/A,ABR thresholds at 4 weeks (Min–max),10–15,,median,range,10,15,,24,,,
+,,N/A,ABR thresholds at 4 weeks (Mean±SD),13.33,dB,arithmetic mean,,13.33,1.94,,12,SD,1.94,0.347
+,,N/A,ABR thresholds at 8 weeks (Min–max),12.5–17.5,,median,range,12.5,17.5,,24,,,
+,,N/A,ABR thresholds at 8 weeks (Mean±SD),15.00,dB,arithmetic mean,,15.00,1.06,,12,SD,1.06,0.045
+,,N/A,ABR thresholds at 8 weeks (Min–max),10–15,,median,range,10,15,,24,,,
+,,N/A,ABR thresholds at 8 weeks (Mean±SD),13.12,dB,arithmetic mean,,13.12,2.16,,12,SD,2.16,0.045

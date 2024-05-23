@@ -1,0 +1,31 @@
+Drug name,Specimen,Pregnancy Stage,Parameter type,Value,Unit,Summary Statistics,Interval type,Lower limit,High limit,Population,Subject N,Variation type,Variation value,P value
+Indinavir,plasma,Antepartum,Total area under curve,341,μg · min/ml,geometric mean,95% CI,187,621,maternal,,,arithmetic mean,459,322
+Indinavir,plasma,Antepartum,Total area under curve,459,μg · min/ml,arithmetic mean,,,maternal,,,standard deviation,322,
+Indinavir,plasma,Antepartum,Clearance,2,354,ml/min,geometric mean,95% CI,1,290,4,297,maternal,,,arithmetic mean,3,558,3,796
+Indinavir,plasma,Antepartum,Clearance,3,558,ml/min,arithmetic mean,,,maternal,,,standard deviation,3,796,
+Indinavir,plasma,Antepartum,Clearance,29.6,ml/min/kg,geometric mean,95% CI,17.0,51.7,maternal,,,arithmetic mean,41.5,40.1
+Indinavir,plasma,Antepartum,Clearance,41.5,ml/min/kg,arithmetic mean,,,maternal,,,standard deviation,40.1,
+Indinavir,plasma,Antepartum,Maximum concentration,3.07,μg/ml,geometric mean,95% CI,1.53,6.16,maternal,,,arithmetic mean,4.37,2.77
+Indinavir,plasma,Antepartum,Maximum concentration,4.37,μg/ml,arithmetic mean,,,maternal,,,standard deviation,2.77,
+Indinavir,plasma,Antepartum,Time to maximum concentration,95,min,geometric mean,95% CI,65,138,maternal,,,arithmetic mean,111,72
+Indinavir,plasma,Antepartum,Time to maximum concentration,111,min,arithmetic mean,,,maternal,,,standard deviation,72,
+Indinavir,plasma,Antepartum,Minimum concentration,25.5,ng/ml,geometric mean,95% CI,4.4,149.1,maternal,,,arithmetic mean,128,127
+Indinavir,plasma,Antepartum,Minimum concentration,128,ng/ml,arithmetic mean,,,maternal,,,standard deviation,127,
+Indinavir,plasma,Postpartum,Total area under curve,1,285,μg · min/ml,geometric mean,95% CI,927,1,781,maternal,,,arithmetic mean,1,429,707
+Indinavir,plasma,Postpartum,Total area under curve,1,429,μg · min/ml,arithmetic mean,,,maternal,,,standard deviation,707,
+Indinavir,plasma,Postpartum,Clearance,624,ml/min,geometric mean,95% CI,450,864,maternal,,,arithmetic mean,697,369
+Indinavir,plasma,Postpartum,Clearance,697,ml/min,arithmetic mean,,,maternal,,,standard deviation,369,
+Indinavir,plasma,Postpartum,Clearance,8.6,ml/min/kg,geometric mean,95% CI,6.7,11.2,maternal,,,arithmetic mean,8.8,4.0
+Indinavir,plasma,Postpartum,Clearance,8.8,ml/min/kg,arithmetic mean,,,maternal,,,standard deviation,4.0,
+Indinavir,plasma,Postpartum,Maximum concentration,8.57,μg/ml,geometric mean,95% CI,6.49,11.33,maternal,,,arithmetic mean,9.27,3.81
+Indinavir,plasma,Postpartum,Maximum concentration,9.27,μg/ml,arithmetic mean,,,maternal,,,standard deviation,3.81,
+Indinavir,plasma,Postpartum,Time to maximum concentration,97,min,geometric mean,95% CI,69,136,maternal,,,arithmetic mean,113,87
+Indinavir,plasma,Postpartum,Time to maximum concentration,113,min,arithmetic mean,,,maternal,,,standard deviation,87,
+Indinavir,plasma,Postpartum,Minimum concentration,96.7,ng/ml,geometric mean,95% CI,13.8,675.5,maternal,,,arithmetic mean,806,1,548
+Indinavir,plasma,Postpartum,Minimum concentration,806,ng/ml,arithmetic mean,,,maternal,,,standard deviation,1,548,
+Indinavir,plasma,Postpartum: antepartum,Total area under curve ratio,3.77,,geometric mean,95% CI,1.95,7.28,maternal,,,,,
+Indinavir,plasma,Postpartum: antepartum,Clearance ratio,0.26,,geometric mean,95% CI,0.14,0.50,maternal,,,,,
+Indinavir,plasma,Postpartum: antepartum,Clearance ratio,0.29,,geometric mean,95% CI,0.16,0.54,maternal,,,,,
+Indinavir,plasma,Postpartum: antepartum,Maximum concentration ratio,2.79,,geometric mean,95% CI,1.29,6.04,maternal,,,,,
+Indinavir,plasma,Postpartum: antepartum,Time to maximum concentration ratio,1.02,,geometric mean,95% CI,0.60,1.75,maternal,,,,,
+Indinavir,plasma,Postpartum: antepartum,Minimum concentration ratio,3.80,,geometric mean,95% CI,1.03,13.99,maternal,,,,,
