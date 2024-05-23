@@ -38,6 +38,7 @@ ERROR_OK = 5000
 PROMPTS_NAME_PK = "PK Prompts"
 PROMPTS_NAME_PE = "PE Prompts"
 
+LLM_CHATGPT_4O = "ChatGPT 4o"
 LLM_CHATGPT_35 = "ChatGPT 3.5-turbo"
 LLM_CHATGPT_40 = "ChatGPT 4"
 LLM_GEMINI_PRO = "Gemini 1.5 pro"

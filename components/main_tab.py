@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, List, Dict, Callable
 import streamlit as st
 from datetime import datetime
 import logging
@@ -6,6 +6,7 @@ from nanoid import generate
 from streamlit_modal import Modal
 
 from extractor.constants import ( 
+    LLM_CHATGPT_4O,
     PROMPTS_NAME_PE,
     PROMPTS_NAME_PK,
     LLM_CHATGPT_35,
@@ -18,13 +19,16 @@ from extractor.article_retriever import ExtendArticleRetriever, ArticleRetriever
 from extractor.request_openai import (
     request_to_chatgpt_35,
     request_to_chatgpt_40,
+    request_to_chatgpt_4o,
 )
 from extractor.utils import (
     convert_csv_table_to_dataframe,
+    convert_html_table_to_dataframe,
     convert_html_to_text,
     escape_markdown,
     extract_table_title,
     is_valid_csv_table,
+    preprocess_csv_table_string,
     remove_references,
 )
 from extractor.html_table_extractor import HtmlTableExtractor
@@ -126,26 +130,23 @@ def on_extract(pmid: str):
     try:
         tmp_prmpts_list = [*prompts_list, {"role": "user", "content": generate_question(source)}]
         stamper.output_prompts(tmp_prmpts_list)
-        if ss.main_llm_option == LLM_CHATGPT_40:
-            res, content, usage = request_to_chatgpt_40( # request_to_gemini(
-                prompts_list,
-                generate_question(source),
-            )
+        request_llm: Optional[ Callable[[List[Dict[str, str], str], str]] ] = None
+        if ss.main_llm_option == LLM_CHATGPT_4O:
+            request_llm = request_to_chatgpt_4o
+        elif ss.main_llm_option == LLM_CHATGPT_40:
+            request_llm = request_to_chatgpt_40
         elif ss.main_llm_option == LLM_CHATGPT_35:
-            res, content, usage = request_to_chatgpt_35(
-                prompts_list,
-                generate_question(source),
-            )
+            request_llm = request_to_chatgpt_35
         elif ss.main_llm_option == LLM_GEMINI_FLASH:
-            res, content, usage = request_to_gemini_15_flash(
-                prompts_list,
-                generate_question(source),
-            )
+            request_llm = request_to_gemini_15_flash
         else:
-            res, content, usage = request_to_gemini_15_pro(
-                prompts_list,
-                generate_question(source),
-            )
+            request_llm = request_to_gemini_15_pro
+
+        res, content, usage = request_llm(
+            prompts_list,
+            generate_question(source),
+        )
+
         stamper.output_result(f"{content}\n\nUsage: {str(usage) if usage is not None else ''}")
         ss.main_extracted_result = content
         ss.main_token_usage = usage
@@ -259,6 +260,7 @@ def main_tab(stmpr: Stamper):
             usage = ss.main_token_usage
             st.header(f"Extracted Result {'' if usage is None else '(token: '+str(usage)+')'}", divider="blue")
             if is_valid_csv_table(ss.main_extracted_result):
+                preprocess_csv_table_string(ss.main_extracted_result)
                 df = convert_csv_table_to_dataframe(ss.main_extracted_result)
                 if df is not None:
                     st.dataframe(df)
@@ -279,7 +281,11 @@ def main_tab(stmpr: Stamper):
                 if "caption" in tbl:
                     st.markdown(escape_markdown(tbl["caption"]))
                 if "table" in tbl:
-                    st.dataframe(tbl["table"])
+                    try:
+                        st.dataframe(tbl["table"])
+                    except Exception as e:
+                        logger.error(str(e))
+                        print("[fengsh] dataframe(table) error")
                 if "footnote" in tbl:
                     st.markdown(escape_markdown(tbl["footnote"]))
                 if "raw_tag" in tbl:
@@ -288,7 +294,7 @@ def main_tab(stmpr: Stamper):
                 st.divider()
     with prompts_panel:
         llm_option = st.radio("What LLM would you like to use?", (
-            LLM_CHATGPT_40, LLM_CHATGPT_35, LLM_GEMINI_FLASH, LLM_GEMINI_PRO
+            LLM_CHATGPT_4O, LLM_CHATGPT_40, LLM_CHATGPT_35, LLM_GEMINI_FLASH, LLM_GEMINI_PRO
         ), index=0)
         ss.main_llm_option = llm_option
         st.divider()

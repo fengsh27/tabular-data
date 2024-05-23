@@ -11,12 +11,12 @@
       "Unit", 
       "Summary Statistics", 
       "Interval type", 
-      "Lower limit", 
+      "Lower limit",
+      "Population", 
       "High limit", 
-      "Population",
       "Subject N",
-      "Variation type",
       "Variation value",
+      "Variation type",
       "P value"
     ],
     "output_column_definitions": [
@@ -29,11 +29,11 @@
       "Summary Statistics: the statistics method to summary the data, like 'geometric mean', 'arithmetic mean'",
       "Interval type: specifies the type of interval that is being used to describe uncertainty or variability around a measure or estimate, like '95% CI', 'range' and so on.",
       "Lower limit: the lower bounds of the interval",
-      "High limit: the higher bounds of the interval",
       "Population: Describe the patient age distribution, including categories such as 'pediatric,' 'adults,' 'old adults,' 'maternal,' 'fetal,' 'neonate,' etc.",
+      "High limit: the higher bounds of the interval",
       "Subject N:  the number of subjects that correspond to the specific parameter. ",
-      "Variation type: the variability measure (describes how spread out the data is) associated with the specific parameter, e.g., standard deviation (SD), CV%.",
       "Variation value: the number that corresponds to the specific variation.", 
+      "Variation type: the variability measure (describes how spread out the data is) associated with the specific parameter, e.g., standard deviation (SD), CV%.",
       "P value: The p-value is a number, calculated from a statistical test, that describes the likelihood of a particular set of observations if the null hypothesis were true; varies depending on the study, and therefore it may not always be reported."
     ],
     "output_notes": [
