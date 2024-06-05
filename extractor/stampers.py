@@ -13,6 +13,7 @@ class Stamper(ABC):
         self.enabled = enabled
         self.output_folder = output_folder
         self._pmid = None
+        self.name = None
     @property
     def pmid(self):
         return self._pmid
@@ -43,6 +44,8 @@ class ArticleStamper(Stamper):
         super().__init__(output_folder, enabled)
 
     def output_prompts(self, prompts: List[Dict[str, str]]):
+        if self.name is None:
+            self.name = self.pmid
         msg = ""
         for prmpt in prompts:
             the_msg = f'["role": {prmpt["role"]}, "content": {prmpt["content"]}]'
@@ -52,14 +55,20 @@ class ArticleStamper(Stamper):
         self._write_message(f"{self.name}-{now_str}.prompts", msg, False)
 
     def output_html(self, html_content: str):
+        if self.name is None:
+            self.name = self.pmid
         now_str = ArticleStamper._now_string(in_filename=True, include_ms=False)
         self._write_message(f"{self.name}-{now_str}.html", html_content, False)
     
     def output_result(self, result: str):
+        if self.name is None:
+            self.name = self.pmid
         now_str = ArticleStamper._now_string(in_filename=True, include_ms=False)
         self._write_message(f"{self.name}-{now_str}.result", result)
 
     def output_screenshot(self, png: bytearray):
+        if self.name is None:
+            self.name = self.pmid
         now_str = ArticleStamper._now_string(in_filename=True, include_ms=False)
         self._write_binary_content(f"{self.name}-{now_str}.png", png)   
 

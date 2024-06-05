@@ -1,0 +1,9 @@
+,Drug name,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary Statistics,Variation type,Variation value,Interval type,Lower limit,High limit,P value
+0,Meropenem,blood,pediatric,,28,Cmid,19.9,mg/L,mean,,,95%CI,13.5,29.5,0.2
+1,Meropenem,blood,pediatric,,26,Cmid,14.8,mg/L,mean,,,95%CI,11.4,19.1,0.2
+2,Meropenem,blood,pediatric,,28,Ctrough,3.5,mg/L,mean,,,95%CI,2,6.1,0.04
+3,Meropenem,blood,pediatric,,26,Ctrough,1.6,mg/L,mean,,,95%CI,1,2.6,0.04
+4,Meropenem,blood,pediatric,,11,Cmid,4.9,mg/L,mean,,,95%CI,2.6,9.2,0.14
+5,Meropenem,blood,pediatric,,7,Cmid,1.9,mg/L,mean,,,95%CI,0.4,9.6,0.14
+6,Meropenem,blood,pediatric,,11,Ctrough,0.8,mg/L,mean,,,95%CI,0.4,1.6,0.85
+7,Meropenem,blood,pediatric,,7,Ctrough,0.9,mg/L,mean,,,95%CI,0.2,4.2,0.85
