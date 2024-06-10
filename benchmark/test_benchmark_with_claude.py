@@ -85,7 +85,7 @@ Please assess the above two tables.
     output_msg(msg.content[0].text)
     assert msg.content == "test"
 
-@pytest.mark.parametrize("pmid,expected", [("35489632", 80), ("30825333", 58), ("16143486", 67), ("22050870", 50)])
+@pytest.mark.parametrize("pmid,expected", [("35489632", 80), ("30825333", 58), ("16143486", 67), ("22050870", 50), ("17635501", 81)])
 def test_gpt_similarity(client, pmid, expected):
     with open(f"./benchmark/data/{pmid}-pk-summary-gpt4o.csv", "r") as fobj:
         table_gpt4o = fobj.read()

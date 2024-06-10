@@ -58,8 +58,8 @@ def request_to_gemini(model: GenerativeModel, messages: List[any]):
         request_options={"timeout": 60000}
     )
     usage = (
-        model_15_pro.count_tokens(res.text).total_tokens + 
-        model_15_pro.count_tokens(messages).total_tokens
+        model.count_tokens(res.text).total_tokens + 
+        model.count_tokens(messages).total_tokens
         if res is not None and res.text is not None else 0
     )
     return (True, res.text, usage)
