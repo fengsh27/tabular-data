@@ -14,6 +14,7 @@ class Stamper(ABC):
         self.output_folder = output_folder
         self._pmid = None
         self.name = None
+        self.pmid_folder = None
     @property
     def pmid(self):
         return self._pmid
@@ -44,8 +45,7 @@ class ArticleStamper(Stamper):
         super().__init__(output_folder, enabled)
 
     def output_prompts(self, prompts: List[Dict[str, str]]):
-        if self.name is None:
-            self.name = self.pmid
+        self._ensure_pmid_folder_exist()
         msg = ""
         for prmpt in prompts:
             the_msg = f'["role": {prmpt["role"]}, "content": {prmpt["content"]}]'
@@ -55,22 +55,31 @@ class ArticleStamper(Stamper):
         self._write_message(f"{self.name}-{now_str}.prompts", msg, False)
 
     def output_html(self, html_content: str):
-        if self.name is None:
-            self.name = self.pmid
+        self._ensure_pmid_folder_exist()
         now_str = ArticleStamper._now_string(in_filename=True, include_ms=False)
         self._write_message(f"{self.name}-{now_str}.html", html_content, False)
     
     def output_result(self, result: str):
-        if self.name is None:
-            self.name = self.pmid
+        self._ensure_pmid_folder_exist()
         now_str = ArticleStamper._now_string(in_filename=True, include_ms=False)
         self._write_message(f"{self.name}-{now_str}.result", result)
 
     def output_screenshot(self, png: bytearray):
-        if self.name is None:
-            self.name = self.pmid
+        self._ensure_pmid_folder_exist()
         now_str = ArticleStamper._now_string(in_filename=True, include_ms=False)
         self._write_binary_content(f"{self.name}-{now_str}.png", png)   
+
+    def _ensure_pmid_folder_exist(self):
+        if self.name is None:
+            self.name = self.pmid
+        if self.pmid_folder is None:
+            self.pmid_folder = path.join(self.output_folder, self.name)
+        try:
+            if path.exists(self.pmid_folder):
+                return
+            os.mkdir(self.pmid_folder)
+        except Exception as e:
+            logger.error(e)
 
     def _mk_pmid_dir(self):
         if not self.enabled:
@@ -86,17 +95,13 @@ class ArticleStamper(Stamper):
                 name = name[:ix]
         self.name = name
         self.pmid_folder = path.join(self.output_folder, name)
-        try:
-            if path.exists(self.pmid_folder):
-                return
-            os.mkdir(self.pmid_folder)
-        except Exception as e:
-            logger.error(e)
+        self._ensure_pmid_folder_exist()
 
     def _write_message(self, fn:str, msg: str, is_append=True):
         if not self.enabled:
             print(msg)
             return
+        self._ensure_pmid_folder_exist()
         file_path = path.join(self.pmid_folder, fn)
         with open(file_path, "a+" if is_append else "w+") as fobj:
             fobj.write(msg)
@@ -104,6 +109,7 @@ class ArticleStamper(Stamper):
     def _write_binary_content(self, fn: str, content: bytearray):
         if not self.enabled:
             return
+        self._ensure_pmid_folder_exist()
         file_path = path.join(self.pmid_folder, fn)
         with open(file_path, "wb") as fobj:
             fobj.write(content)
