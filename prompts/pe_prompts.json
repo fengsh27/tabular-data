@@ -14,7 +14,7 @@
         "Interval type", 
         "Interval low", 
         "Interval high", 
-        "P-value"
+        "P value"
       ],
       "output_column_definitions": [
         "Characteristic/risk factor describes the particular or general characteristics of the study population related to the study's outcomes.",
@@ -28,7 +28,7 @@
         "Interval type is a scale the examines the difference usually between two numbers (range, interquartile range, 95% confidence interval)",
         "Interval low is the lower end value reported based on the interval type. ",
         "INterval high is theupper end value reported based on the interval type.",
-        "P-value is a number, calculated from a statistical test, that describes the likelihood of a particular set of observations if the null hypothesis were true; varies depending on the study, and therefore it may not always be reported."
+        "P value is a number, calculated from a statistical test, that describes the likelihood of a particular set of observations if the null hypothesis were true; varies depending on the study, and therefore it may not always be reported."
       ],
       "output_notes": [
         "1. Only output csv table without any other characters, no triple backticks ``` and no 'csv'.",

@@ -1,0 +1,9 @@
+,Drug name,Specimen,Pregnancy Stage,Parameter type,Value,Unit,Summary Statistics,Interval type,Lower limit,Population,High limit,Subject N,Variation value,Variation type,P value
+0,Meropenem,Plasma,,EI,Cmid,mg/L,Geometric mean,95% CI,13.5,28,19.9,,,,
+1,Meropenem,Plasma,,EI,Cmid,mg/L,Geometric mean,95% CI,11.4,26,14.8,,,,
+2,Meropenem,Plasma,,EI,Ctrough,mg/L,Geometric mean,95% CI,2,28,3.5,,,,
+3,Meropenem,Plasma,,EI,Ctrough,mg/L,Geometric mean,95% CI,1,26,1.6,,,,
+4,Meropenem,Plasma,,IB,Cmid,mg/L,Geometric mean,95% CI,2.6,11,4.9,,,,
+5,Meropenem,Plasma,,IB,Cmid,mg/L,Geometric mean,95% CI,0.4,7,1.9,,,,
+6,Meropenem,Plasma,,IB,Ctrough,mg/L,Geometric mean,95% CI,0.4,11,0.8,,,,
+7,Meropenem,Plasma,,IB,Ctrough,mg/L,Geometric mean,95% CI,0.2,7,0.9,,,,

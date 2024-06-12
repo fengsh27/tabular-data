@@ -1,0 +1,9 @@
+,Drug name,Specimen,Pregnancy Stage,Parameter type,Value,Unit,Summary Statistics,Interval type,Lower limit,Population,High limit,Subject N,Variation value,Variation type,P value
+0,Meropenem,plasma,,Cmid,19.9,mg/L,geometric mean,95% CI,13.5,Patients without ARC,29.5,28,,,0.2
+1,Meropenem,plasma,,Ctrough,3.5,mg/L,geometric mean,95% CI,2,Patients without ARC,6.1,28,,,0.04
+2,Meropenem,plasma,,Cmid,4.9,mg/L,geometric mean,95% CI,2.6,Patients without ARC,9.2,11,,,0.14
+3,Meropenem,plasma,,Ctrough,0.8,mg/L,geometric mean,95% CI,0.4,Patients without ARC,1.6,11,,,0.85
+4,Meropenem,plasma,,Cmid,14.8,mg/L,geometric mean,95% CI,11.4,Patients with ARC,19.1,26,,,0.2
+5,Meropenem,plasma,,Ctrough,1.6,mg/L,geometric mean,95% CI,1,Patients with ARC,2.6,26,,,0.04
+6,Meropenem,plasma,,Cmid,1.9,mg/L,geometric mean,95% CI,0.4,Patients with ARC,9.6,7,,,0.14
+7,Meropenem,plasma,,Ctrough,0.9,mg/L,geometric mean,95% CI,0.2,Patients with ARC,4.2,7,,,0.85
