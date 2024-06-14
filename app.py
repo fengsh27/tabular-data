@@ -9,9 +9,6 @@ from components.main_tab import main_tab
 from components.html_table_tab import html_tab
 from extractor.stampers import ArticleStamper
 
-output_folder = os.environ.get("TEMP_FOLDER", "./tmp")
-stamper_enabled = os.environ.get("LOG_ARTICLE", "FALSE") == "TRUE"
-stamper = ArticleStamper(output_folder, stamper_enabled)
 def initialize():
     # prepare logger
     logging.basicConfig(level=logging.INFO)
@@ -47,7 +44,7 @@ st.markdown(
 tab1, tab2 = st.tabs(["Extract From Table Data", "Extract From The Full-text"])
 
 with tab1:
-    main_tab(stamper)
+    main_tab()
 with tab2:
     pass
-    # html_tab(stamper)
+    # html_tab()

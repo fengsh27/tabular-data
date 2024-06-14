@@ -1,14 +1,17 @@
 import logging
+import os
 from typing import Optional
 from datetime import datetime
 import streamlit as st
 
 from extractor.article_retriever import ExtendArticleRetriever
 from extractor.html_table_extractor import HtmlTableExtractor
-from extractor.stampers import Stamper
+from extractor.stampers import ArticleStamper, Stamper
 from extractor.utils import escape_markdown
 
-stamper = None
+output_folder = os.environ.get("TEMP_FOLDER", "./tmp")
+stamper_enabled = os.environ.get("LOG_ARTICLE", "FALSE") == "TRUE"
+stamper = ArticleStamper(output_folder, stamper_enabled)
 ss = st.session_state
 def on_input_changed(pmid: Optional[str]=None):
     if pmid is None:
@@ -38,9 +41,8 @@ def on_input_changed(pmid: Optional[str]=None):
     )
     ss.html_info = f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Retrieving completed, {tmp_info}"
 
-def html_tab(stmpr: Stamper):
+def html_tab():
     global stamper
-    stamper = stmpr
     ss.setdefault("html_retrieved_tables", None)
     ss.setdefault("html_info", "")
 
