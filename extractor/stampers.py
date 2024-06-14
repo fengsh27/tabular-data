@@ -72,14 +72,23 @@ class ArticleStamper(Stamper):
     def _ensure_pmid_folder_exist(self):
         if self.name is None:
             self.name = self.pmid
-        if self.pmid_folder is None:
-            self.pmid_folder = path.join(self.output_folder, self.name)
         try:
+            if self.pmid_folder is None:
+                self.pmid_folder = path.join(self.output_folder, self.name)
             if path.exists(self.pmid_folder):
                 return
             os.mkdir(self.pmid_folder)
         except Exception as e:
             logger.error(e)
+            logger.error(f"pmid: {self._pmid}, name: {self.name}, pmid_folder: {self.pmid_folder}, output_folder: {self.output_folder}")
+            if self.name is None:
+                self.name = "unknown"
+            if self.output_folder is None:
+                self.output_folder = "/tmp"
+            self.pmid_folder = "/tmp/unknown"
+            if not path.exists(self.pmid_folder):
+                os.mkdir(self.pmid_folder)
+
 
     def _mk_pmid_dir(self):
         if not self.enabled:

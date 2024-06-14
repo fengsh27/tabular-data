@@ -2,6 +2,7 @@ from typing import List, Any, Dict
 # from openai import AzureOpenAI, OpenAI
 import google.generativeai as genai
 from google.generativeai import GenerativeModel
+from google.generativeai.types import HarmCategory, HarmBlockThreshold
 import os
 import logging
 
@@ -55,6 +56,10 @@ def request_to_gemini(model: GenerativeModel, messages: List[any]):
             temperature=1.0,
             max_output_tokens=10000,
         ),
+        safety_settings={
+            HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
+            HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
+        },
         request_options={"timeout": 60000}
     )
     usage = (

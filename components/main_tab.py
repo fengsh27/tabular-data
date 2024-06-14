@@ -1,3 +1,4 @@
+import os
 from typing import Optional, List, Dict, Callable
 import streamlit as st
 from datetime import datetime
@@ -14,7 +15,7 @@ from extractor.constants import (
     LLM_GEMINI_FLASH,
     LLM_GEMINI_PRO,
 )
-from extractor.stampers import Stamper
+from extractor.stampers import ArticleStamper, Stamper
 from extractor.article_retriever import ExtendArticleRetriever, ArticleRetriever
 from extractor.request_openai import (
     request_to_chatgpt_35,
@@ -45,8 +46,14 @@ from extractor.request_geminiai import (
 
 logger = logging.getLogger(__name__)
 
-stamper = None
+output_folder = os.environ.get("TEMP_FOLDER", "./tmp")
+stamper_enabled = os.environ.get("LOG_ARTICLE", "FALSE") == "TRUE"
+stamper = ArticleStamper(output_folder, stamper_enabled)
 ss = st.session_state
+
+def set_stamper_pmid(pmid):
+    global stamper
+    stamper.pmid = pmid
 
 def clear_results(clear_retrieved_table=False):
     ss.main_info = ""
@@ -56,10 +63,11 @@ def clear_results(clear_retrieved_table=False):
     ss.main_token_usage = None
 
 def on_input_change(pmid: Optional[str]=None):
+    global stamper
     if pmid is None:
         pmid = ss.get("w-pmid-input")
     pmid = pmid.strip()
-    stamper.pmid = pmid
+    set_stamper_pmid(pmid)
     # initialize
     clear_results(True)
     ss.main_extracted_btn_disabled = False
@@ -92,7 +100,7 @@ def on_input_change(pmid: Optional[str]=None):
 def on_extract(pmid: str):
     # initialize
     pmid = pmid.strip()
-    stamper.pmid = pmid
+    set_stamper_pmid(pmid)
     clear_results()
 
     # prepare prompts including article prmpots and table prompts
@@ -127,6 +135,7 @@ def on_extract(pmid: str):
     assert len(prompts_list) > 0
     
     # chat with LLM
+    global stamper
     try:
         tmp_prmpts_list = [*prompts_list, {"role": "user", "content": generate_question(source)}]
         stamper.output_prompts(tmp_prmpts_list)
@@ -175,10 +184,10 @@ def on_retrive_table_from_html_table(html_table: str):
 
 def on_extract_from_html_table():
     pmid = generate(size=10)
-    stamper.pmid = pmid
+    set_stamper_pmid(pmid)
     on_extract(pmid)
     
-def main_tab(stmpr: Stamper):
+def main_tab():
     ss.setdefault("main_info", "")
     ss.setdefault("main_article_text", "")
     ss.setdefault("main_extracted_result", None)
@@ -196,7 +205,6 @@ def main_tab(stmpr: Stamper):
         max_width=1200,
     )
     global stamper
-    stamper = stmpr
     st.title("Extract Tabular Data")
     extracted_panel, prompts_panel = st.columns([2, 1])
     with extracted_panel:
