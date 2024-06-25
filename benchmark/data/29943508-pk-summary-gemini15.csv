@@ -1,0 +1,10 @@
+,Drug name,Analyte,Specimen,Pregnancy stage,Parameter type,Value,Unit,Summary statistics,Interval type,Lower limit,Population,High limit,Subject N,Variation value,Variation type,P value
+0,Adrenaline,Fentanyl,umbilical vein serum,N/A,Mean serum fentanyl concentration,0.162,nmol/L,mean,SD,N/A,maternal,N/A,16,0.090,SD,.67 
+1,Adrenaline,Fentanyl,maternal serum,N/A,Median maternal serum fentanyl concentration at birth,0.268,nmol/L,median,25th; 75th percentile,0.193,maternal,0.493,16,N/A,N/A,.66 
+2,Adrenaline,Fentanyl,maternal serum,N/A,Mean AUC 0-120 min for fentanyl in maternal serum,0.428,nmol h/L,mean,SD,N/A,maternal,N/A,18,0.162,SD,.015 
+3,Control,Fentanyl,umbilical vein serum,N/A,Mean serum fentanyl concentration,0.151,nmol/L,mean,SD,N/A,maternal,N/A,20,0.070,SD,.67 
+4,Control,Fentanyl,maternal serum,N/A,Median maternal serum fentanyl concentration at birth,0.291,nmol/L,median,25th; 75th percentile,0.212,maternal,0.502,19,N/A,N/A,.66 
+5,Control,Fentanyl,maternal serum,N/A,Mean AUC 0-120 min for fentanyl in maternal serum,0.590,nmol h/L,mean,SD,N/A,maternal,N/A,15,0.197,SD,.015 
+6,N/A,Fentanyl,umbilical vein serum,N/A,Mean serum fentanyl concentration,0.012,nmol/L,N/A,range,-0.042,maternal,0.065,N/A,N/A,N/A,.67 
+7,N/A,Fentanyl,maternal serum,N/A,Median maternal serum fentanyl concentration at birth,-0.061,nmol/L,N/A,range,-0.205,maternal,0.082,N/A,N/A,N/A,.66 
+8,N/A,Fentanyl,maternal serum,N/A,Mean AUC 0-120 min for fentanyl in maternal serum,-0.162,nmol h/L,N/A,range,-0.289,maternal,-0.034,N/A,N/A,N/A,.015

@@ -1,0 +1,26 @@
+﻿,Drug name,Analyte,Specimen,Pregnancy Stage,Parameter type,Value,Unit,Summary Statistics,Interval type,Lower limit,Population,High limit,Subject N,Variation value,Variation type,P value
+0,Vancomycin,Vancomycin,,,Vd,3.62,L,Mean,,,,,,,53,CV%
+1,Vancomycin,Vancomycin,,,Vd,0.7,L/kg,Mean,,,,,,,69,CV%
+2,Vancomycin,Vancomycin,,,CL,0.749,L/h,Mean,,,,,,,61,CV%
+3,Vancomycin,Vancomycin,,,CL,0.124,L/h/kg,Mean,,,,,,,42,CV%
+4,Vancomycin,Vancomycin,,,elimination half-life,4.3,h,Mean,,,,,,,61,CV%
+5,Vancomycin,Vancomycin,,,Vd,1.94,L,SD,,,,,,,,
+6,Vancomycin,Vancomycin,,,Vd,0.48,L/kg,SD,,,,,,,,
+7,Vancomycin,Vancomycin,,,CL,0.454,L/h,SD,,,,,,,,
+8,Vancomycin,Vancomycin,,,CL,0.052,L/h/kg,SD,,,,,,,,
+9,Vancomycin,Vancomycin,,,elimination half-life,2.6,h,SD,,,,,,,,
+10,Vancomycin,Vancomycin,,,Vd,3.5,L,Median,,,,,,,,
+11,Vancomycin,Vancomycin,,,Vd,0.5,L/kg,Median,,,,,,,,
+12,Vancomycin,Vancomycin,,,CL,0.737,L/h,Median,,,,,,,,
+13,Vancomycin,Vancomycin,,,CL,0.112,L/h/kg,Median,,,,,,,,
+14,Vancomycin,Vancomycin,,,elimination half-life,3.8,h,Median,,,,,,,,
+15,Vancomycin,Vancomycin,,,Vd,2.64,L,IQR,range,4.35,,,,,,
+16,Vancomycin,Vancomycin,,,Vd,0.39,L/kg,IQR,range,0.94,,,,,,
+17,Vancomycin,Vancomycin,,,CL,0.414,L/h,IQR,range,0.955,,,,,,
+18,Vancomycin,Vancomycin,,,CL,0.095,L/h/kg,IQR,range,0.133,,,,,,
+19,Vancomycin,Vancomycin,,,elimination half-life,2.5,h,IQR,range,5.4,,,,,,
+20,Vancomycin,Vancomycin,,,Vd,0.31,L,,range,8.88,,,,,,
+21,Vancomycin,Vancomycin,,,Vd,0.28,L/kg,,range,2.31,,,,,,
+22,Vancomycin,Vancomycin,,,CL,0.02,L/h,,range,1.82,,,,,,
+23,Vancomycin,Vancomycin,,,CL,0.025,L/h/kg,,range,0.268,,,,,,
+24,Vancomycin,Vancomycin,,,elimination half-life,1.5,h,,range,11.3,,,,,,

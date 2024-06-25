@@ -1,0 +1,5 @@
+﻿PMID,Drug name,Analyte,Specimen,Population,Pregnancy Stage ,Gestational/pediatric Age,Subjectsn,Parameter type,Time,Time unit,Value,Unit,Summary Statistics,variation type,Variation value,Interval type,Interval low,interval high,P-value,Notes
+35465728,Vancomycin ,Vancomycin ,blood,neonates,,,60,initial concentration,,,12.9,mg/L,median,,,25th-75th percentiles,11.3,17,<0.001,before-implementation group
+35465728,Vancomycin ,Vancomycin ,blood,neonates,,,59,initial concentration,,,20.3,mg/L,median,,,25th-75th percentiles,17,22.2,<0.001,after-implementation group
+35465728,Vancomycin ,Vancomycin ,blood,neonates,,,116,all concentration,,,13.1,mg/L,median,,,25th-75th percentiles,11.3,16.2,<0.001,before-implementation group
+35465728,Vancomycin ,Vancomycin ,blood,neonates,,,103,all concentration,,,19.8,mg/L,median,,,25th-75th percentiles,16.8,22.1,<0.001,after-implementation group

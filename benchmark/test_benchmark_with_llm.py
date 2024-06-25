@@ -7,6 +7,7 @@ from google.generativeai import GenerativeModel
 from dotenv import load_dotenv
 import anthropic
 from datetime import datetime
+from string import Template
 
 load_dotenv()
 
@@ -34,9 +35,26 @@ Variation value: the number that corresponds to the specific variation.,
 Variation type: the variability measure (describes how spread out the data is) associated with the specific parameter, e.g., standard deviation (SD), CV%.,
 P value: The p-value is a number, calculated from a statistical test, that describes the likelihood of a particular set of observations if the null hypothesis were true; varies depending on the study, and therefore it may not always be reported.
 
-Note:  Evaluate the similarity of the two tables regardless of their row order. And output similarity score in the format [[{score}]].
+Note:  Evaluate the similarity of the two tables regardless of their row order and column order. And output similarity score in the format [[{score}]].
 
 """
+
+table_prompt_template = Template("""
+table 1:
+$table_baseline
+
+table 2:
+$table_generated
+Please assess the above two tables using Table 1 as the standard.
+Note:
+1. Please use the Parameter type -Value-Unit-Summary Statistics-Variation type as an anchor to assess the similarity.
+2.If there are missing rows, you have to reduce the similarity score significantly based on the number of missing rows. e.g., the median and mean are different.
+3. Cells with NaN values will be considered as a blank cell.
+4. You should specify the difference between the two tables.
+5. Synonyms may exist in the tables, e.g., population, drug name, specimen, etc.
+6. The data should be mapped to the correct columns. If the cell contents do not comply with the column definition, this indicates the data is placed into the wrong cells. You should reduce the similarity score. For example, based on the column definition, summary statistics should not contain variation information.
+7. Ignore the lowercase and uppercase letters
+""")
 
 class ClaudeClient:
     def __init__(self):
@@ -105,7 +123,7 @@ class GeminiClient:
 
 @pytest.fixture
 def client():    
-    return GeminiClient() # GptClient, GeminiClient and ClaudeClient are available
+    return ClaudeClient() # GptClient, GeminiClient and ClaudeClient are available
 
 @pytest.mark.skip("just for test the feasible of claude api")
 def test_claude():
@@ -122,59 +140,85 @@ def test_claude():
     print(msg)
     assert msg is not None
 
-@pytest.mark.parametrize("pmid,expected", [("35489632", 80),])
-def test_gemini_similarity(client, pmid, expected):
+# @pytest.mark.skip("temporary skip")
+@pytest.mark.parametrize("pmid", [
+    "35489632",
+    #"35489632",
+    #"29943508",
+    #"30950674",
+    #"34114632",
+    #"35465728",
+])
+def test_gemini_similarity(client, pmid):
     with open(f"./benchmark/data/{pmid}-pk-summary-gemini-flash.csv", "r") as fobj:
         table_gpt4o = fobj.read()
     with open(f"./benchmark/data/{pmid}-pk-summary-baseline.csv", "r") as fobj:
         table_baseline = fobj.read()
     
-    user_message = f"""
-table 1:
-f{table_baseline}
-
-table 2:
-f{table_gpt4o}
-Please assess the above two tables using Table 1 as the standard.
-Note:
-1. Please use the Parameter type -Value-Unit-Summary Statistics-Variation type as an anchor to assess the similarity.
-2.If there are missing rows, you have to reduce the similarity score significantly based on the number of missing rows. e.g., the median and mean are different.
-3. Cells with NaN values will be considered as a blank cell.
-4. You should specify the difference between the two tables.
-5. Synonyms may exist in the tables, e.g., population, drug name, specimen, etc.
-6. The data should be mapped to the correct columns. If the cell contents do not comply with the column definition, this indicates the data is placed into the wrong cells. You should reduce the similarity score. For example, based on the column definition, summary statistics should not contain variation information.
-7. Ignore the lowercase and uppercase letters
-"""
+    user_message = user_message = table_prompt_template.substitute({
+        "table_baseline": table_baseline,
+        "table_generated": table_gpt4o,
+    })
     msg, usage = client.create(system_prompts,user_message)
     output_msg(f"pmid: {pmid}, gemini")
     output_msg(msg)
     assert msg is not None
 
-@pytest.mark.parametrize("pmid,expected", [("35489632", 80), ("30825333", 58), ("16143486", 67), ("22050870", 50), ("17635501", 81)])
-def test_gpt_similarity(client, pmid, expected):
+@pytest.mark.skip("temporary skip")
+@pytest.mark.parametrize("pmid", [
+    "35489632",
+    "30825333",
+    "16143486",
+    "22050870",
+    "17635501",
+
+])
+def test_gpt_similarity(client, pmid):
     with open(f"./benchmark/data/{pmid}-pk-summary-gpt4o.csv", "r") as fobj:
         table_gpt4o = fobj.read()
     with open(f"./benchmark/data/{pmid}-pk-summary-baseline.csv", "r") as fobj:
         table_baseline = fobj.read()
     
-    user_message = f"""
-table 1:
-f{table_baseline}
-
-table 2:
-f{table_gpt4o}
-Please assess the above two tables using Table 1 as the standard.
-Note:
-1. Please use the Parameter type -Value-Unit-Summary Statistics-Variation type as an anchor to assess the similarity.
-2.If there are missing rows, you have to reduce the similarity score significantly based on the number of missing rows. e.g., the median and mean are different.
-3. Cells with NaN values will be considered as a blank cell.
-4. You should specify the difference between the two tables.
-5. Synonyms may exist in the tables, e.g., population, drug name, specimen, etc.
-6. The data should be mapped to the correct columns. If the cell contents do not comply with the column definition, this indicates the data is placed into the wrong cells. You should reduce the similarity score. For example, based on the column definition, summary statistics should not contain variation information.
-7. Ignore the lowercase and uppercase letters
-"""
+    user_message = table_prompt_template.substitute({
+        "table_baseline": table_baseline,
+        "table_generated": table_gpt4o,
+    })
     msg, usage = client.create(system_prompts, user_message)
     output_msg("\n")
     output_msg(f"pmid: {pmid}, gpt")
     output_msg(msg)
     assert msg is not None
+
+@pytest.mark.skip()
+@pytest.mark.parametrize("pmid", [
+    "29943508",
+    "30950674",
+    "34114632",
+    "34183327",
+    "35465728",
+])
+def test_5_papers(client, pmid):
+    with open(f"./benchmark/data/{pmid}-pk-summary-gpt4o.csv", "r") as fobj:
+        table_gpt4o = fobj.read()
+    with open(f"./benchmark/data/{pmid}-pk-summary-baseline.csv", "r") as fobj:
+        table_baseline = fobj.read()
+    with open(f"./benchmark/data/{pmid}-pk-summary-gemini15.csv", "r") as fobj:
+        table_gemini = fobj.read()
+    
+    user_msg = table_prompt_template.substitute({
+        "table_baseline": table_baseline,
+        "table_generated": table_gpt4o,
+    })
+    msg, _ = client.create(system_prompts, user_msg)
+    output_msg("\n")
+    output_msg(f"pmid: {pmid}, gpt")
+    output_msg(msg)
+
+    user_msg = table_prompt_template.substitute({
+        "table_baseline": table_baseline,
+        "table_generated": table_gemini,
+    })
+    msg, _ = client.create(system_prompts, user_msg)
+    output_msg("\n")
+    output_msg(f"pmid: {pmid}, gemini")
+    output_msg(msg)

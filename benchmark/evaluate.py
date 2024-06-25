@@ -6,6 +6,9 @@ import pandas as pd
 from pandas import DataFrame, Series
 import math
 import functools
+import logging
+
+logger = logging.getLogger(__name__)
 
 """
 row count:      10/100
@@ -45,10 +48,9 @@ ANCHOR_COLUMNS = [
     VARIATION_VALUE,
     LOWER_LIMIT,
     HIGH_LIMIT,
+    P_VALUE,
 ]
-
-def compare_row(baseline: List[Any], target: List[Any]) -> int:
-    pass
+DELTA_VALUE = 0.000001
 
 def parse_value(val: Any) -> (int | float | None):
     if isinstance(val, (int, float)) and not math.isnan(val):
@@ -65,6 +67,8 @@ def parse_value(val: Any) -> (int | float | None):
         return None
 
 def anchor_row(row1: Series, row2: Series):
+    """
+    # locate row by sum value
     sum1 = 0
     for index, value in row1.items():
         if isinstance(index, str) and index.startswith("Unnamed"):
@@ -82,21 +86,43 @@ def anchor_row(row1: Series, row2: Series):
             continue
         sum2 += val
 
-    return abs(sum1 - sum2) < 0.000001
-
-"""
+    return abs(sum1 - sum2) < DELTA_VALUE
+    """
+    # locate row by ANCHOR_ROWS
     for c in ANCHOR_COLUMNS:
         v1 = row1[c]
         v2 = row2[c]
-        v1 = v1.strip() if isinstance(v1, str) else v1
-        v2 = v2.strip() if isinstance(v2, str) else v2
-        if v1 != v2:
-            if math.isnan(v1) and math.isnan(v1):
-                continue
-            return False
-        
+        if not compare_value(v1, v2):
+            return False        
     return True
-"""
+
+
+def compare_value(v1, v2) -> bool:
+    if v1 == v2:
+        return True
+    if isinstance(v1, str) and isinstance(v2, str):
+        return v1.strip().lower() == v2.strip().lower()
+    if not isinstance(v1, str) and not isinstance(v2, str):
+        if math.isnan(v1) and math.isnan(v2):
+            return True
+        fv1 = float(v1)
+        fv2 = float(v2)
+        return abs(fv1 - fv2) < DELTA_VALUE
+    
+    # One of the two values is str
+    sval = v1 if isinstance(v1, str) else v2
+    nsval = v1 if not isinstance(v1, str) else v2
+    if math.isnan(nsval) and len(sval.strip()) == 0:
+        return True
+
+    try:
+        fv1 = float(v1)
+        fv2 = float(v2)
+        return abs(fv1 - fv2) < DELTA_VALUE
+    except Exception as e:
+        logger.error(e)
+        return False
+        
 
 def anchor_row_from_dataframe(row: Series, df: DataFrame):
     for ix, r in df.iterrows():
@@ -109,15 +135,10 @@ def rate_row(row1: Series, row2: Series) -> int:
     for c in RATING_COLUMNS:
         v1 = row1[c]
         v2 = row2[c]
-        v1 = v1.strip() if isinstance(v1, str) else v1
-        v2 = v2.strip() if isinstance(v2, str) else v2
         
-        if v1 == v2:
-            sum +=1
-        elif isinstance(v1, str) or isinstance(v2, str):
-            continue
-        elif math.isnan(v1) and math.isnan(v2):
+        if compare_value(v1, v2):
             sum += 1
+
     return (int)(10.0 * sum / float(len(RATING_COLUMNS)))
 
 def rate_rows(baseline: DataFrame, target: DataFrame) -> int:
@@ -145,6 +166,5 @@ def rate_rows(baseline: DataFrame, target: DataFrame) -> int:
 
 def compare_tables(baseline:pd.DataFrame, target:pd.DataFrame) -> tuple[int, int]:
     return rate_rows(baseline, target)
-
 
 

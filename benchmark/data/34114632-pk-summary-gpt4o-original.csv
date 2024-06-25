@@ -1,0 +1,13 @@
+﻿,Drug name,Analyte,Specimen,Pregnancy Stage,Parameter type,Value,Unit,Summary Statistics,Interval type,Lower limit,Population,High limit,Subject N,Variation value,Variation type,P value
+0,Levetiracetam,Levetiracetam,Blood,,Cmax,19.19,µg/mL,arithmetic mean,,,maternal,,,4.12,SD,0.07
+1,Levetiracetam,Levetiracetam,Blood,,"AUC0-""12","167"".0",h*µg/mL,arithmetic mean,,,maternal,,,45.6,SD,0.26
+2,Levetiracetam,Levetiracetam,Blood,,Ctrough,9.99,µg/mL,arithmetic mean,,,maternal,,,3.86,SD,0.34
+3,Levetiracetam,Levetiracetam,Blood,,Tmax,1.5,h,median,range,1.5,maternal,2.5,,,,
+4,Levetiracetam,Levetiracetam,Blood,,Cmax,35.12,µg/mL,arithmetic mean,,,maternal,,,10.54,SD,0.001
+5,Levetiracetam,Levetiracetam,Blood,,"AUC0-""12","316"".5",h*µg/mL,arithmetic mean,,,maternal,,,108.4,SD,0.88
+6,Levetiracetam,Levetiracetam,Blood,,Ctrough,19.25,µg/mL,arithmetic mean,,,maternal,,,8.48,SD,0.22
+7,Levetiracetam,Levetiracetam,Blood,,Tmax,2.5,h,median,range,2,maternal,3.3,,,,
+8,Levetiracetam,Levetiracetam,Blood,,Cmax,36.11,µg/mL,median,range,27.58,maternal,44.64,,,,
+9,Levetiracetam,Levetiracetam,Blood,,"AUC0-""12","290"".9",h*µg/mL,median,range,176.14,maternal,405.59,,,,
+10,Levetiracetam,Levetiracetam,Blood,,Ctrough,13.03,µg/mL,median,range,2.98,maternal,23.07,,,,
+11,Levetiracetam,Levetiracetam,Blood,,Tmax,1.5,h,median,range,1.5,maternal,1.5,,,,

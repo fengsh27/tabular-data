@@ -1,0 +1,11 @@
+﻿PMID,Drug name,Analyte,Specimen,Population,Pregnancy Stage ,Gestational/pediatric Age,Subjectsn,Parameter type,Time,Time unit,Value,Unit,Summary Statistics,variation type,Variation value,Interval type,Interval low,interval high,P-value,Notes
+30950674,Vancomycin ,Vancomycin ,blood,infants,,,22,Vd,,,3.62,L,mean,SD,1.94,minmax,0.31,8.88,,
+30950674,Vancomycin ,Vancomycin ,blood,infants,,,22,Vd,,,3.5,L,median,CV%,53,IQR,2.64,4.35,,
+30950674,Vancomycin ,Vancomycin ,blood,infants,,,22,Vd,,,0.7,L/kg,mean,SD,0.48,IQR,0.39,0.94,,
+30950674,Vancomycin ,Vancomycin ,blood,infants,,,22,Vd,,,0.5,L/kg,median,CV%,69,minmax,0.28,2.31,,
+30950674,Vancomycin ,Vancomycin ,blood,infants,,,22,CL,,,0.749,L/h,mean,SD,0.454,IQR,0.414,0.955,,
+30950674,Vancomycin ,Vancomycin ,blood,infants,,,22,CL,,,0.737,L/h,median,CV%,61,minmax,0.02,1.82,,
+30950674,Vancomycin ,Vancomycin ,blood,infants,,,22,CL,,,0.124,L/h/kg,mean,SD,0.052,IQR,0.095,0.133,,
+30950674,Vancomycin ,Vancomycin ,blood,infants,,,22,CL,,,0.112,L/h/kg,median,CV%,42,minmax,0.025,0.268,,
+30950674,Vancomycin ,Vancomycin ,blood,infants,,,22,T1/2,,,4.3,h,mean,SD,2.6,IQR,2.5,5.4,,
+30950674,Vancomycin ,Vancomycin ,blood,infants,,,22,T1/2,,,3.8,h,median,CV%,61,minmax,1.5,11.3,,
