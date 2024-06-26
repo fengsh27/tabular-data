@@ -1,0 +1,31 @@
+﻿,Drug name,Analyte,Specimen,Pregnancy Stage,Parameter type,Value,Unit,Summary Statistics,Interval type,Lower limit,Population,High limit,Subject N,Variation value,Variation type,P value
+0,Isoniazid,Isoniazid,blood,,AUC0–24,18.5,h∙mg/L,geometric mean,range,5.1,pediatric,47.4,20,,,0.888
+1,Isoniazid,Isoniazid,blood,,AUC0–24,14.5,h∙mg/L,geometric mean,range,5.9,pediatric,44.2,12,,,0.888
+2,Isoniazid,Isoniazid,blood,,Cmax,4.6,mg/L,geometric mean,range,1,pediatric,10,20,,,0.366
+3,Isoniazid,Isoniazid,blood,,Cmax,4.7,mg/L,geometric mean,range,2.5,pediatric,13.6,12,,,0.366
+4,Isoniazid,Isoniazid,cerebrospinal fluid,,CCSF0–2,1.4,mg/L,geometric mean,range,0.5,pediatric,6.1,6,,,
+5,Isoniazid,Isoniazid,cerebrospinal fluid,,CCSF0–2,1.6,mg/L,geometric mean,range,1.2,pediatric,2.5,4,,,
+6,Isoniazid,Isoniazid,cerebrospinal fluid,,CCSF3–5,1.6,mg/L,geometric mean,range,0.3,pediatric,5,7,,,
+7,Isoniazid,Isoniazid,cerebrospinal fluid,,CCSF3–5,1.7,mg/L,geometric mean,range,0.6,pediatric,5,4,,,
+8,Isoniazid,Isoniazid,cerebrospinal fluid,,CCSF6–8,1.3,mg/L,geometric mean,range,1.2,pediatric,4.3,7,,,
+9,Isoniazid,Isoniazid,cerebrospinal fluid,,CCSF6–8,2.3,mg/L,geometric mean,range,1.9,pediatric,2.8,3,,,
+10,Rifampicin,Rifampicin,blood,,AUC0–24,66.9,h∙mg/L,geometric mean,range,21.7,pediatric,118.6,20,,,0.442
+11,Rifampicin,Rifampicin,blood,,AUC0–24,71.8,h∙mg/L,geometric mean,range,36.1,pediatric,116.5,12,,,0.442
+12,Rifampicin,Rifampicin,blood,,Cmax,9.4,mg/L,geometric mean,range,2.9,pediatric,23.7,20,,,0.499
+13,Rifampicin,Rifampicin,blood,,Cmax,10.4,mg/L,geometric mean,range,5.7,pediatric,23.3,12,,,0.499
+14,Rifampicin,Rifampicin,cerebrospinal fluid,,CCSF0–2,0.2,mg/L,geometric mean,range,0.1,pediatric,0.4,6,,,
+15,Rifampicin,Rifampicin,cerebrospinal fluid,,CCSF0–2,0.1,mg/L,geometric mean,range,0.1,pediatric,0.1,4,,,
+16,Rifampicin,Rifampicin,cerebrospinal fluid,,CCSF3–5,0.3,mg/L,geometric mean,range,0.1,pediatric,0.8,7,,,
+17,Rifampicin,Rifampicin,cerebrospinal fluid,,CCSF3–5,0.1,mg/L,geometric mean,range,0.1,pediatric,0.3,4,,,
+18,Rifampicin,Rifampicin,cerebrospinal fluid,,CCSF6–8,0.4,mg/L,geometric mean,range,0.1,pediatric,1.4,7,,,
+19,Rifampicin,Rifampicin,cerebrospinal fluid,,CCSF6–8,0.2,mg/L,geometric mean,range,0.1,pediatric,0.7,3,,,
+20,Pyrazinamide,Pyrazinamide,blood,,"AUC0–""24","315"".5",h∙mg/L,geometric mean,range,100.6,pediatric,599,20,,,0.482
+21,Pyrazinamide,Pyrazinamide,blood,,"AUC0–""24","328"".4",h∙mg/L,geometric mean,range,143.3,pediatric,1477.7,12,,,0.482
+22,Pyrazinamide,Pyrazinamide,blood,,Cmax,37.7,mg/L,geometric mean,range,15.9,pediatric,61.7,20,,,0.35
+23,Pyrazinamide,Pyrazinamide,blood,,Cmax,40.5,mg/L,geometric mean,range,22.7,pediatric,88.4,12,,,0.35
+24,Pyrazinamide,Pyrazinamide,cerebrospinal fluid,,CCSF0–2,24.4,mg/L,geometric mean,range,11.1,pediatric,54.9,6,,,
+25,Pyrazinamide,Pyrazinamide,cerebrospinal fluid,,CCSF0–2,25.6,mg/L,geometric mean,range,21.3,pediatric,37.1,4,,,
+26,Pyrazinamide,Pyrazinamide,cerebrospinal fluid,,CCSF3–5,30.0,mg/L,geometric mean,range,19.2,pediatric,43.3,7,,,
+27,Pyrazinamide,Pyrazinamide,cerebrospinal fluid,,CCSF3–5,24.7,mg/L,geometric mean,range,15.9,pediatric,38.1,4,,,
+28,Pyrazinamide,Pyrazinamide,cerebrospinal fluid,,CCSF6–8,19.6,mg/L,geometric mean,range,7.2,pediatric,37.7,7,,,
+29,Pyrazinamide,Pyrazinamide,cerebrospinal fluid,,CCSF6–8,39.4,mg/L,geometric mean,range,23.1,pediatric,70.8,3,,,

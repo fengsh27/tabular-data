@@ -1,0 +1,5 @@
+,Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation type,Variation value,Interval type,Lower limit,High limit,P value
+0,Vancomycin ,Vancomycin ,blood,neonates,,60,initial concentration,12.9,mg/L,median,,,25th-75th percentiles,11.3,17,<0.001
+1,Vancomycin ,Vancomycin ,blood,neonates,,59,initial concentration,20.3,mg/L,median,,,25th-75th percentiles,17,22.2,<0.001
+2,Vancomycin ,Vancomycin ,blood,neonates,,116,all concentration,13.1,mg/L,median,,,25th-75th percentiles,11.3,16.2,<0.001
+3,Vancomycin ,Vancomycin ,blood,neonates,,103,all concentration,19.8,mg/L,median,,,25th-75th percentiles,16.8,22.1,<0.001

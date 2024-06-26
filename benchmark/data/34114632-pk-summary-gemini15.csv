@@ -1,0 +1,25 @@
+,Drug name,Analyte,Specimen,Pregnancy stage,Parameter type,Value,Unit,Summary statistics,Interval type,Lower limit,Population,High limit,Subject N,Variation value,Variation type,P value
+0,Levetiracetam,Levetiracetam,plasma,,Cmax,24.8,µg/mL,arithmetic mean,±,8.3,,,,,SD,0.07
+1,Levetiracetam,Levetiracetam,plasma,,"AUC0–""12","145""",h*µg/mL,arithmetic mean,±,44,,,,,SD,0.26
+2,Levetiracetam,Levetiracetam,plasma,,Ctrough,8.4,µg/mL,arithmetic mean,±,3.8,,,,,SD,0.34
+3,Levetiracetam,Levetiracetam,plasma,,Tmax,0.5,h,median,range,0.25,3,,,,0.07,
+4,Levetiracetam,Levetiracetam,plasma,,Cmax,57.1,µg/mL,arithmetic mean,±,14.9,,,,,SD,0.001
+5,Levetiracetam,Levetiracetam,plasma,,"AUC0–""12","322""",h*µg/mL,arithmetic mean,±,71,,,,,SD,0.88
+6,Levetiracetam,Levetiracetam,plasma,,Ctrough,15.6,µg/mL,arithmetic mean,±,5.3,,,,,SD,0.22
+7,Levetiracetam,Levetiracetam,plasma,,Tmax,0.5,h,median,range,0.5,3,,,,0.001,
+8,Levetiracetam,Levetiracetam,plasma,,Cmax,73.2,µg/mL,arithmetic mean,±,19.2,,,,,SD,
+9,Levetiracetam,Levetiracetam,plasma,,"AUC0–""12","433""",h*µg/mL,arithmetic mean,±,94,,,,,SD,
+10,Levetiracetam,Levetiracetam,plasma,,Ctrough,20.6,µg/mL,arithmetic mean,±,5.8,,,,,SD,
+11,Levetiracetam,Levetiracetam,plasma,,Tmax,0.5,h,median,range,0.5,3,,,,,
+12,Levetiracetam,Levetiracetam,plasma,,Cmax,19.19,µg/mL,arithmetic mean,±,4.12,,,,,SD,
+13,Levetiracetam,Levetiracetam,plasma,,"AUC0–""12","167""",h*µg/mL,arithmetic mean,±,45.6,,,,,SD,
+14,Levetiracetam,Levetiracetam,plasma,,Ctrough,9.99,µg/mL,arithmetic mean,±,3.86,,,,,SD,
+15,Levetiracetam,Levetiracetam,plasma,,Tmax,1.5,h,median,range,1.5,2.5,,,,,
+16,Levetiracetam,Levetiracetam,plasma,,Cmax,35.12,µg/mL,arithmetic mean,±,10.54,,,,,SD,
+17,Levetiracetam,Levetiracetam,plasma,,"AUC0–""12","316"".5",h*µg/mL,arithmetic mean,±,108.4,,,,,SD,
+18,Levetiracetam,Levetiracetam,plasma,,Ctrough,19.25,µg/mL,arithmetic mean,±,8.48,,,,,SD,
+19,Levetiracetam,Levetiracetam,plasma,,Tmax,2.5,h,median,range,2,3.3,,,,,
+20,Levetiracetam,Levetiracetam,plasma,,Cmax,36.11,µg/mL,geometric mean,95% CI,27.58,,,44.64,,,
+21,Levetiracetam,Levetiracetam,plasma,,"AUC0–""12","290"".9",h*µg/mL,geometric mean,95% CI,176.14,,,405.59,,,
+22,Levetiracetam,Levetiracetam,plasma,,Ctrough,13.03,µg/mL,geometric mean,95% CI,2.98,,,23.07,,,
+23,Levetiracetam,Levetiracetam,plasma,,Tmax,1.5,h,median,,,1.5,,,,,

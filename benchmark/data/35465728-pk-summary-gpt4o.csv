@@ -1,0 +1,37 @@
+,Drug name,Analyte,Specimen,Pregnancy stage,Parameter type,Value,Unit,Summary statistics,Interval type,Lower limit,Population,High limit,Subject N,Variation value,Variation type,P value
+0,Vancomycin,Vancomycin,Blood,,Initial Cavg,,,,,,maternal,,60,,,
+1,Vancomycin,Vancomycin,Blood,,Initial Cavg,,,,,,maternal,,59,,,
+2,Vancomycin,Vancomycin,Blood,,Subtherapeutic,,,,,,maternal,,41,,%,<0.001
+3,Vancomycin,Vancomycin,Blood,,Subtherapeutic,,,,,,maternal,,6,,%,<0.001
+4,Vancomycin,Vancomycin,Blood,,Therapeutic,,,,,,maternal,,17,,%,<0.001
+5,Vancomycin,Vancomycin,Blood,,Therapeutic,,,,,,maternal,,44,,%,<0.001
+6,Vancomycin,Vancomycin,Blood,,Supra-therapeutic,,,,,,maternal,,2,,%,0.001
+7,Vancomycin,Vancomycin,Blood,,Supra-therapeutic,,,,,,maternal,,9,,%,0.001
+8,Vancomycin,Vancomycin,Blood,,Concentration,12.9,mg/L,,range,11.3,maternal,17,,<0.001,,
+9,Vancomycin,Vancomycin,Blood,,Concentration,20.3,mg/L,,range,17.0,maternal,22.2,,<0.001,,
+10,Vancomycin,Vancomycin,Blood,,All Cavg,,,,,,maternal,,116,,,
+11,Vancomycin,Vancomycin,Blood,,All Cavg,,,,,,maternal,,103,,,
+12,Vancomycin,Vancomycin,Blood,,Subtherapeutic,,,,,,maternal,,78,,%,<0.001
+13,Vancomycin,Vancomycin,Blood,,Subtherapeutic,,,,,,maternal,,13,,%,<0.001
+14,Vancomycin,Vancomycin,Blood,,Therapeutic,,,,,,maternal,,36,,%,<0.001
+15,Vancomycin,Vancomycin,Blood,,Therapeutic,,,,,,maternal,,77,,%,<0.001
+16,Vancomycin,Vancomycin,Blood,,Supra-therapeutic,,,,,,maternal,,2,,%,0.025
+17,Vancomycin,Vancomycin,Blood,,Supra-therapeutic,,,,,,maternal,,13,,%,0.025
+18,Vancomycin,Vancomycin,Blood,,Concentration,13.1,mg/L,,range,11.3,maternal,16.2,,<0.001,,
+19,Vancomycin,Vancomycin,Blood,,Concentration,19.8,mg/L,,range,16.8,maternal,22.1,,<0.001,,
+20,Vancomycin,Vancomycin,Blood,,Initial Cavg/MIC ratio,,,,,,maternal,,22,,,
+21,Vancomycin,Vancomycin,Blood,,Initial Cavg/MIC ratio,,,,,,maternal,,17,,,
+22,Vancomycin,Vancomycin,Blood,,<8,,,,,,maternal,,10,,%,0.02
+23,Vancomycin,Vancomycin,Blood,,<8,,,,,,maternal,,2,,%,0.02
+24,Vancomycin,Vancomycin,Blood,,≥8,,,,,,maternal,,12,,%,
+25,Vancomycin,Vancomycin,Blood,,≥8,,,,,,maternal,,15,,%,
+26,Vancomycin,Vancomycin,Blood,,Cavg/MIC ratio,8.8,,range,6.2,maternal,11.5,,0.004,,,
+27,Vancomycin,Vancomycin,Blood,,Cavg/MIC ratio,12.8,,range,10.9,maternal,20.9,,0.004,,,
+28,Vancomycin,Vancomycin,Blood,,Initial AUC/MIC ratio,,,,,,maternal,,22,,,
+29,Vancomycin,Vancomycin,Blood,,Initial AUC/MIC ratio,,,,,,maternal,,17,,,
+30,Vancomycin,Vancomycin,Blood,,<400,,,,,,maternal,,20,,%,0.02
+31,Vancomycin,Vancomycin,Blood,,<400,,,,,,maternal,,10,,%,0.02
+32,Vancomycin,Vancomycin,Blood,,≥400,,,,,,maternal,,2,,%,
+33,Vancomycin,Vancomycin,Blood,,≥400,,,,,,maternal,,7,,%,
+34,Vancomycin,Vancomycin,Blood,,AUC/MIC ratio,211,,range,149,maternal,275,,0.006,,,
+35,Vancomycin,Vancomycin,Blood,,AUC/MIC ratio,307,,range,262,maternal,502,,0.006,,,

@@ -6,18 +6,18 @@
       "Drug name",
       "Analyte",
       "Specimen", 
+      "Population", 
       "Pregnancy Stage", 
+      "Subject N",
       "Parameter type", 
       "Value", 
       "Unit", 
       "Summary Statistics", 
+      "Variation type",
+      "Variation value",
       "Interval type", 
       "Lower limit",
-      "Population", 
       "High limit", 
-      "Subject N",
-      "Variation value",
-      "Variation type",
       "P value"
     ],
     "output_column_definitions": [
@@ -40,7 +40,7 @@
     ],
     "output_notes": [
       "1. Only output csv table without any other characters, no triple backticks ``` and no 'csv'.",
-      "2. Ensure that each field is separated by a comma(,) in the CSV table",
+      "2. Ensure that each field is separated by a comma followed by a space(, ) in the CSV table",
       "3. Ensure to extract all available information for each field without omitting any details.",
       "4. If the information that is not provided, please leave it empty."
     ]
