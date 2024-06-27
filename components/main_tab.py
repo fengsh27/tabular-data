@@ -37,7 +37,8 @@ from extractor.prompts_utils import (
     generate_paper_text_prompts,
     generate_tables_prompts,
     generate_question,
-    TableExtractionPromptsGenerator,
+    TableExtractionPKSummaryPromptsGenerator,
+    GeneratedTableProcessor,
 )
 from extractor.request_geminiai import (
     request_to_gemini_15_pro,
@@ -104,7 +105,7 @@ def on_extract(pmid: str):
     clear_results()
 
     # prepare prompts including article prmpots and table prompts
-    prmpt_generator = TableExtractionPromptsGenerator()
+    prmpt_generator = TableExtractionPKSummaryPromptsGenerator()
     first_prompots = prmpt_generator.generate_system_prompts(ss.main_prompts_option)
 
     include_tables = []
@@ -156,8 +157,11 @@ def on_extract(pmid: str):
             generate_question(source),
         )
 
+
         stamper.output_result(f"{content}\n\nUsage: {str(usage) if usage is not None else ''}")
-        ss.main_extracted_result = content
+        processor = GeneratedTableProcessor()
+        csv_str = processor.process_content(content)
+        ss.main_extracted_result = csv_str
         ss.main_token_usage = usage
         
         ss.main_info = f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Extracting completed"
@@ -329,7 +333,7 @@ def main_tab():
     if open_modal:
         modal.open()
     if modal.is_open():
-        generator = TableExtractionPromptsGenerator()
+        generator = TableExtractionPKSummaryPromptsGenerator()
         prmpts = generator.get_prompts_file_content(ss.main_prompts_option)
         prmpts += "\n\n\n"
         with modal.container():
