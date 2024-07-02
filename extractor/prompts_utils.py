@@ -4,34 +4,18 @@ from pandas import DataFrame
 import json
 import logging
 
-from extractor.constants import PROMPTS_NAME_PK
+from extractor.constants import (
+    PKSUMMARY_TABLE_OUTPUT_COLUMNS, 
+    PKSUMMARY_TABLE_OUTPUT_COLUMNS_DEFINITION, 
+    PKSUMMARY_TABLE_OUTPUT_NOTES, 
+    PKSUMMARY_TABLE_ROLE_PROMPTS, 
+    PKSUMMARY_TABLE_SOURCE_PROMPTS, 
+    PROMPTS_NAME_PK,
+)
 
 logger = logging.getLogger(__name__)
 
-TABLE_ROLE_PROMPTS = "Please act as a biomedical assistant, help to extract the information from the provided source"
-TABLE_SOURCE_PROMPTS = "html table from biomedical article"
-TABLE_OUTPUT_COLUMNS = ["Drug name", "Specimen", "Pregnancy Stage", "Parameter type", "Value", "Unit", "Summary Statistics", "Interval type", "Lower limit", "High limit", "Population"]
-TABLE_OUTPUT_COLUMNS_DEFINITION = [
-    "the name of drug mentioned in the paper",
-    "what is the specimen, like 'blood', 'breast milk', 'cord blood', and so on.",
-    "pregnancy stage, What pregnancy stages of patients mentioned in the paper, like 'postpartum', 'before pregnancy', '1st trimester' and so on. If not mentioned, please label as 'N/A',",
-    "the type of parameter, like 'concentration after the first dose', 'concentration after the second dose', 'clearance', 'Total area under curve' and so on.",
-    "the value of parameter",
-    "the unit of the value",
-    "the statistics method to summary the data, like 'geometric mean', 'arithmetic mean'",
-    "specifies the type of interval that is being used to describe uncertainty or variability around a measure or estimate, like '95% CI', 'range' and so on.",
-    "the lower bounds of the interval",
-    "the higher bounds of the interval",
-    "Describe the patient age distribution, including categories such as 'pediatric,' 'adults,' 'old adults,' 'maternal,' 'fetal,' 'neonate,' etc."
-]
-TABLE_OUTPUT_NOTES = [
-    "1. Only output csv table without any other characters, no triple backticks ``` and no 'csv'.",
-    "2. Ensure that each field is separated by a tab ('\t') in the CSV table",
-    "3. Ensure to extract all available information for each field without omitting any details.",
-    "4. If the information that is not provided, please leave it empty."
-]
-
-class TableExtractionPromptsGenerator(object):
+class TableExtractionPKSummaryPromptsGenerator(object):
     def __init__(self):
         pass
 
@@ -69,11 +53,11 @@ class TableExtractionPromptsGenerator(object):
                     output_columns_def[ix] = f"{name}: {output_columns_def[ix]}"
 
         output_columns = \
-            TableExtractionPromptsGenerator._prompts_to_str(output_columns, delimiter=',')
+            TableExtractionPKSummaryPromptsGenerator._prompts_to_str(output_columns, delimiter=',')
         output_columns_def = \
-            TableExtractionPromptsGenerator._prompts_to_str(output_columns_def)
+            TableExtractionPKSummaryPromptsGenerator._prompts_to_str(output_columns_def)
         output_notes = \
-            TableExtractionPromptsGenerator._prompts_to_str(output_notes)
+            TableExtractionPKSummaryPromptsGenerator._prompts_to_str(output_notes)
         return "\n".join([
             f"{role}\nThe source is {source}.",
             f"Here is desired output columns:{output_columns}",
@@ -84,12 +68,12 @@ class TableExtractionPromptsGenerator(object):
 
     @staticmethod
     def _generate_system_prompts_by_default():
-        return TableExtractionPromptsGenerator._generate_prompts(
-            TABLE_ROLE_PROMPTS,
-            TABLE_SOURCE_PROMPTS,
-            TABLE_OUTPUT_COLUMNS,
-            TABLE_OUTPUT_COLUMNS_DEFINITION,
-            TABLE_OUTPUT_NOTES
+        return TableExtractionPKSummaryPromptsGenerator._generate_prompts(
+            PKSUMMARY_TABLE_ROLE_PROMPTS,
+            PKSUMMARY_TABLE_SOURCE_PROMPTS,
+            PKSUMMARY_TABLE_OUTPUT_COLUMNS,
+            PKSUMMARY_TABLE_OUTPUT_COLUMNS_DEFINITION,
+            PKSUMMARY_TABLE_OUTPUT_NOTES
         )
     def get_prompts_file_content(
         self, 
@@ -114,16 +98,16 @@ class TableExtractionPromptsGenerator(object):
             content = json.load(fobj)
             table_prompts: Optional[Dict] = content.get("table_extraction_prompts", None)
             if table_prompts is None:
-                return TableExtractionPromptsGenerator._generate_system_prompts_by_default()
-            role = table_prompts.get("role_description", TABLE_ROLE_PROMPTS)
-            source = table_prompts.get("source", TABLE_SOURCE_PROMPTS)
-            output_columns = table_prompts.get("output_columns", TABLE_OUTPUT_COLUMNS)
+                return TableExtractionPKSummaryPromptsGenerator._generate_system_prompts_by_default()
+            role = table_prompts.get("role_description", PKSUMMARY_TABLE_ROLE_PROMPTS)
+            source = table_prompts.get("source", PKSUMMARY_TABLE_SOURCE_PROMPTS)
+            output_columns = table_prompts.get("output_columns", PKSUMMARY_TABLE_OUTPUT_COLUMNS)
             output_columns_def = table_prompts.get(
                 "output_column_definitions", 
-                TABLE_OUTPUT_COLUMNS_DEFINITION
+                PKSUMMARY_TABLE_OUTPUT_COLUMNS_DEFINITION
             )
-            output_notes = table_prompts.get("output_notes", TABLE_OUTPUT_NOTES)
-            return TableExtractionPromptsGenerator._generate_prompts(
+            output_notes = table_prompts.get("output_notes", PKSUMMARY_TABLE_OUTPUT_NOTES)
+            return TableExtractionPKSummaryPromptsGenerator._generate_prompts(
                 role, source, output_columns, output_columns_def, output_notes
             )
         except Exception as e:
@@ -162,4 +146,5 @@ def generate_paper_text_prompts(text: str):
     return f"Here is the paper:\n {text}"
 
 def generate_question(source: str):
-    return f"Now please extract information from {source} and output to a table string in csv format"
+    return f"Now please extract information from {source} and output to a table string in compact json format"
+

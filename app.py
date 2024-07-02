@@ -9,6 +9,8 @@ from components.main_tab import main_tab
 from components.html_table_tab import html_tab
 from extractor.stampers import ArticleStamper
 
+__version__ = "0.1.31"
+
 def initialize():
     # prepare logger
     logging.basicConfig(level=logging.INFO)
@@ -35,10 +37,11 @@ ss = st.session_state
 st.set_page_config(layout="wide", page_title="Curation Tool", page_icon="./images/favicon.png")
 
 st.markdown(
-    """ <a href="https://mprint.org/index.html"><img src="data:image/png;base64,{}" width="400px"></a> """.format(
-    base64.b64encode(open("./images/mprint-logo.png", "rb").read()).decode()),
+    """<div style="display: flex;flex-direction: row; align-items: flex-end"><a href="https://mprint.org/index.html"><img src="data:image/png;base64,{}" width="400px"></a><p>Curation Tool v{}</p></div> """.format(
+    base64.b64encode(open("./images/mprint-logo.png", "rb").read()).decode(), __version__),
     unsafe_allow_html=True,
 )
+
 # st.markdown('[<img src="images/copper-logo.png">](https://mprint.org/index.html)')
 # st.image("./images/copper-logo.png", width=500)
 tab1, tab2 = st.tabs(["Extract From Table Data", "Extract From The Full-text"])

@@ -43,3 +43,48 @@ LLM_CHATGPT_35 = "ChatGPT 3.5-turbo"
 LLM_CHATGPT_40 = "ChatGPT 4"
 LLM_GEMINI_PRO = "Gemini 1.5 pro"
 LLM_GEMINI_FLASH = "Gemini 1.5 flash"
+
+
+PKSUMMARY_TABLE_ROLE_PROMPTS = "Please act as a biomedical assistant, help to extract the information from the provided source"
+PKSUMMARY_TABLE_SOURCE_PROMPTS = "html table from biomedical article"
+PKSUMMARY_TABLE_OUTPUT_COLUMNS = [
+    "DN",
+    "Ana",
+    "Sp", 
+    "Pop", 
+    "PS", 
+    "SN",
+    "PT", 
+    "V", 
+    "U", 
+    "SS", 
+    "VT",
+    "VV",
+    "IT", 
+    "LL",
+    "HL", 
+    "PV",
+]
+PKSUMMARY_TABLE_OUTPUT_COLUMNS_DEFINITION = [
+    "Drug name: is text, the name of drug mentioned in the paper",
+    "Analyte: is text, either the primary drug, its metabolite, or another drug on which the primary drug acts.",
+    "Specimen: is text, what is the specimen, like 'blood', 'breast milk', 'cord blood', and so on.",
+    "Pregnancy stage: is text, What pregnancy stages of patients mentioned in the paper, like 'postpartum', 'before pregnancy', '1st trimester' and so on. If not mentioned, please label as 'N/A',",
+    "Parameter type: is text, the type of parameter, like 'concentration after the first dose', 'concentration after the second dose', 'clearance', 'Total area under curve' and so on.",
+    "Value: is a number, the value of parameter",
+    "Unit: the unit of the value",
+    "Summary statistics: the statistics method to summary the data, like 'geometric mean', 'arithmetic mean'",
+    "Interval type: is text, specifies the type of interval that is being used to describe uncertainty or variability around a measure or estimate, like '95% CI', 'range' and so on.",
+    "Lower limit: is a number, the lower bounds of the interval",
+    "Population: Describe the patient age distribution, including categories such as 'pediatric,' 'adults,' 'old adults,' 'maternal,' 'fetal,' 'neonate,' etc.",
+    "High limit: is a number, the higher bounds of the interval",
+    "Subject N:  the number of subjects that correspond to the specific parameter. ",
+    "Variation value: is a number, the number that corresponds to the specific variation.", 
+    "Variation type: the variability measure (describes how spread out the data is) associated with the specific parameter, e.g., standard deviation (SD), CV%.",
+    "P value: The p-value is a number, calculated from a statistical test, that describes the likelihood of a particular set of observations if the null hypothesis were true; varies depending on the study, and therefore it may not always be reported."
+]
+PKSUMMARY_TABLE_OUTPUT_NOTES = [
+    "1. Only output table in json format without any other characters, no triple backticks ``` and no 'json'.",
+    "2. Ensure to extract all available information for each field without omitting any details.",
+    "3. If the information that is not provided, please leave it with empty string."
+]
