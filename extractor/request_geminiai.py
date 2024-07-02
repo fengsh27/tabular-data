@@ -53,12 +53,14 @@ def request_to_gemini(model: GenerativeModel, messages: List[any]):
         messages,
         generation_config=genai.types.GenerationConfig(
             candidate_count=1,
-            temperature=1.0,
-            max_output_tokens=10000,
+            temperature=0,
+            # max_output_tokens=10000,
         ),
         safety_settings={
             HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
             HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
+            HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: HarmBlockThreshold.BLOCK_NONE,
+            HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE,
         },
         request_options={"timeout": 60000}
     )

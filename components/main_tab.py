@@ -38,8 +38,8 @@ from extractor.prompts_utils import (
     generate_tables_prompts,
     generate_question,
     TableExtractionPKSummaryPromptsGenerator,
-    GeneratedTableProcessor,
 )
+from extractor.generated_table_processor import GeneratedPKSummaryTableProcessor
 from extractor.request_geminiai import (
     request_to_gemini_15_pro,
     request_to_gemini_15_flash,
@@ -159,7 +159,7 @@ def on_extract(pmid: str):
 
 
         stamper.output_result(f"{content}\n\nUsage: {str(usage) if usage is not None else ''}")
-        processor = GeneratedTableProcessor()
+        processor = GeneratedPKSummaryTableProcessor()
         csv_str = processor.process_content(content)
         ss.main_extracted_result = csv_str
         ss.main_token_usage = usage

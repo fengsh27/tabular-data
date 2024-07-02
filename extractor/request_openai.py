@@ -40,7 +40,7 @@ def request_to_chatgpt_35(prompts: List[Any], question: str):
         res = client_35.chat.completions.create(
             model=model_35, 
             messages=prompts,
-            temperature=0.1,
+            temperature=0,
             # max_tokens=800,
             top_p=0.95,
             frequency_penalty=0,
@@ -59,7 +59,7 @@ def request_to_chatgpt_40(prompts: List[Any], question: str):
         res = client_40.chat.completions.create(
             model=model_40,
             messages=prompts,
-            temperature=0.1,
+            temperature=0,
             max_tokens=20000,
             top_p=0.95,
             frequency_penalty=0,
@@ -78,7 +78,7 @@ def request_to_chatgpt_4o(prompts: List[Any], question: str):
         res = client_4o.chat.completions.create(
             model=model_4o,
             messages=prompts,
-            temperature=0.1,
+            temperature=0,
             max_tokens=4096,
             top_p=0.95,
             frequency_penalty=0,
