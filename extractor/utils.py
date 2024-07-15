@@ -54,12 +54,20 @@ def preprocess_csv_table_string(table: str):
     except csv.Error as e:
         logger.error(str(e))
         return table
+    
+def convert_digit_with_comma_to_digit(val: str):
+    def replace_matched(match):
+        matched = match.group(0)
+        replace = matched.replace(',', '')
+        return replace
+    pattern = r'\b\d{1,3}(,\d{3})\b'
+    modified_str = re.sub(pattern, replace_matched, val)
+    return modified_str
 
 def convert_csv_table_to_dataframe(table: str):
     try:
         # first, let me handle the numbers which have commas in them
-        pattern = r'\b\d{1,3}(,\d{3})\b'
-        modified_str = re.sub(pattern, lambda match: f'"{match.group(0)}"', table)
+        modified_str = convert_digit_with_comma_to_digit(table)
         # then, remove redudant comma at the end of row
         modified_str = preprocess_csv_table_string(modified_str)
         csv_data = StringIO(modified_str)

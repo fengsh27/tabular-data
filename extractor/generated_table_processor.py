@@ -7,7 +7,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 from extractor.constants import PKSUMMARY_TABLE_OUTPUT_COLUMNS
-
+from extractor.utils import convert_digit_with_comma_to_digit
 
 class GeneratedPKSummaryTableProcessor(object):
     """
@@ -26,6 +26,7 @@ class GeneratedPKSummaryTableProcessor(object):
         self.columns_dict = temp_columns_dict
 
     def process_content(self, content: str) -> str:
+        content = self._strip_table_content(content)
         if self._check_content_format(content) == "json":
             content = self._validate_json_content(content)
             return self._convert_json_to_csv(content)
@@ -55,7 +56,12 @@ class GeneratedPKSummaryTableProcessor(object):
         col_cnt = len(self.lower_columns)
         for ix, col in enumerate(self.lower_columns):
             if col in lower_key_row:
-                vals += f"{lower_key_row[col]}"
+                the_val = lower_key_row[col]
+                the_val = f"{the_val}"
+                the_val = convert_digit_with_comma_to_digit(the_val)
+                if isinstance(the_val, str) and "," in the_val:
+                    the_val = the_val.replace(',', ' ')
+                vals += the_val
             vals += self.delimiter
         vals = vals[:-2] # remove the last delimiter
         return vals
@@ -76,6 +82,19 @@ class GeneratedPKSummaryTableProcessor(object):
         except Exception as e:
             logger.error(e)
             return None
+    def _strip_table_content(self, content: str) -> str:
+        """
+        This function is to remove redundant characters, like white spaces, 
+        ```json ... ``` or ```csv ... ```
+        """
+        strp_content = content.strip()
+        if strp_content.startswith("```json"):
+            strp_content = strp_content[7:]
+        if strp_content.startswith("```csv"):
+            strp_content = strp_content[6:]
+        if strp_content.endswith("```"):
+            strp_content = strp_content[:-3]
+        return strp_content.strip()
     def _validate_json_content(self, content: str) -> str:
         if content.endswith("```"):
             return content[:-3]
