@@ -74,9 +74,17 @@ def test_strip_table_content():
     res = processor._strip_table_content(str12)
     assert res == "balahbalah ..."
 
-    str2 = "    balahbalah \n balahbalah "
-    res = processor._strip_table_content(str2)
+    str3 = "    balahbalah \n balahbalah "
+    res = processor._strip_table_content(str3)
     assert res == "balahbalah \n balahbalah"
+
+    str4 = "Here is the table in json format.\n```json balahbalahbalahbalah ```"
+    res = processor._strip_table_content(str4)
+    assert res == "balahbalahbalahbalah"
+
+    str5 = "balahbalahbalahbalah \n balahbalahbalahbalah"
+    res = processor._strip_table_content(str5)
+    assert res == "balahbalahbalahbalah \n balahbalahbalahbalah"
 
 
 

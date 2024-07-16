@@ -33,7 +33,6 @@ class GeneratedPKSummaryTableProcessor(object):
     def process_content(self, content: str) -> str:
         content = self._strip_table_content(content)
         if self._check_content_format(content) == "json":
-            content = self._validate_json_content(content)
             return self._convert_json_to_csv(content)
         else:
             return content
@@ -93,17 +92,15 @@ class GeneratedPKSummaryTableProcessor(object):
         ```json ... ``` or ```csv ... ```
         """
         strp_content = content.strip()
-        if strp_content.startswith("```json"):
-            strp_content = strp_content[7:]
-        if strp_content.startswith("```csv"):
-            strp_content = strp_content[6:]
+        ix = strp_content.find("```json")
+        if ix >= 0:
+            strp_content = strp_content[ix+7:]
+        ix = strp_content.find("```csv")
+        if ix >= 0:
+            strp_content = strp_content[ix+6:]
         if strp_content.endswith("```"):
             strp_content = strp_content[:-3]
         return strp_content.strip()
-    def _validate_json_content(self, content: str) -> str:
-        if content.endswith("```"):
-            return content[:-3]
-        return content
     def _check_content_format(self, content: str) -> str:
         stripped_content = content.strip()
         if stripped_content.startswith('[') or stripped_content.startswith('{'):
