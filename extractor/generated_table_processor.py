@@ -1,13 +1,18 @@
 
 
 import json
+import re
 from typing import Any, Dict, List, Optional
 import logging
+
+from extractor.utils import (
+    remove_comma_in_number_string, 
+    remove_comma_in_string,
+)
 
 logger = logging.getLogger(__name__)
 
 from extractor.constants import PKSUMMARY_TABLE_OUTPUT_COLUMNS
-from extractor.utils import convert_digit_with_comma_to_digit
 
 class GeneratedPKSummaryTableProcessor(object):
     """
@@ -46,7 +51,7 @@ class GeneratedPKSummaryTableProcessor(object):
     def _convert_to_csv_header(self) -> str:
         headers = self._get_fullname_headers()
         csv_headers = self.delimiter.join(headers)
-        return csv_headers
+        return csv_headers  
     
     def _convert_to_csv_row(self, row: Dict[str, Any]) -> str:
         lower_key_row = {}
@@ -57,10 +62,9 @@ class GeneratedPKSummaryTableProcessor(object):
         for ix, col in enumerate(self.lower_columns):
             if col in lower_key_row:
                 the_val = lower_key_row[col]
-                the_val = f"{the_val}"
-                the_val = convert_digit_with_comma_to_digit(the_val)
-                if isinstance(the_val, str) and "," in the_val:
-                    the_val = the_val.replace(',', ' ')
+                the_val = f"{the_val}"                
+                the_val = remove_comma_in_number_string(the_val)
+                the_val = remove_comma_in_string(the_val)
                 vals += the_val
             vals += self.delimiter
         vals = vals[:-2] # remove the last delimiter
@@ -76,7 +80,8 @@ class GeneratedPKSummaryTableProcessor(object):
             csv_str += "\n"
             rows: List = json_obj["content"]
             for ix, row in enumerate(rows):
-                csv_str += self._convert_to_csv_row(row)
+                val = self._convert_to_csv_row(row)
+                csv_str += val
                 csv_str += "\n"
             return csv_str
         except Exception as e:

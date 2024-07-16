@@ -3,7 +3,7 @@ import pytest
 
 from extractor.utils import (
     preprocess_csv_table_string,
-    convert_csv_table_to_dataframe,
+    remove_comma_in_number_string,
 )
 
 def test_preprocess_csv_table_string():
@@ -20,7 +20,14 @@ def test_preprocess_csv_table_string():
         processed_length = len(out_str)
         assert cur_length == processed_length
 
-    with open("./tests/17158945-result-1.txt", "r") as fobj:
-        csv_str = fobj.read()
-        table = convert_csv_table_to_dataframe(csv_str)
-        assert table is not None
+@pytest.mark.parametrize("content, expected", [
+    ("1,234.567", "1234.567"),
+    ("-123,456.789", "-123456.789"),
+    ("+123,456.789", "+123456.789"),
+    (",123456", ",123456"),
+    (",123,456", ",123456"),
+])
+def test_process_number_string(content, expected):
+    processed_content = remove_comma_in_number_string(content)
+    assert processed_content == expected
+
