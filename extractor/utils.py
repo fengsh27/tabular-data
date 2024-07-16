@@ -65,7 +65,7 @@ def preprocess_csv_table_string(table: str):
 def convert_csv_table_to_dataframe(table: str):    
     try:
         # remove redudant comma at the end of row
-        modified_str = preprocess_csv_table_string(modified_str)
+        modified_str = preprocess_csv_table_string(table)
         csv_data = StringIO(modified_str)
         df = pd.read_csv(csv_data, sep=',')
         return df
