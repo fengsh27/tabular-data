@@ -33,6 +33,12 @@ def convert_html_table_to_dataframe(table: str):
         return None
     
 def preprocess_csv_table_string(table: str):
+    """
+    This function is to pre-process csv table string to make it able to be read
+    as DataFrame.
+    1). Check if there are redundant comma at the end of each row, if yes, remove
+    the comma
+    """
     try:
         csv_data = StringIO(table)
         csv_reader = csv.reader(csv_data)
@@ -55,13 +61,11 @@ def preprocess_csv_table_string(table: str):
         logger.error(str(e))
         return table
 
-def convert_csv_table_to_dataframe(table: str):
+
+def convert_csv_table_to_dataframe(table: str):    
     try:
-        # first, let me handle the numbers which have commas in them
-        pattern = r'\b\d{1,3}(,\d{3})\b'
-        modified_str = re.sub(pattern, lambda match: f'"{match.group(0)}"', table)
-        # then, remove redudant comma at the end of row
-        modified_str = preprocess_csv_table_string(modified_str)
+        # remove redudant comma at the end of row
+        modified_str = preprocess_csv_table_string(table)
         csv_data = StringIO(modified_str)
         df = pd.read_csv(csv_data, sep=',')
         return df
@@ -107,3 +111,27 @@ def extract_table_title(table: Dict):
     cap: str = table["caption"]
     cap = cap.strip()
     return cap if len(cap) < TITLE_MAX_LENGTH else cap[:TITLE_MAX_LENGTH-2] + " ..."
+
+NUMBER_RE_PATTERN = r'^[-+]?\d{0,3}(,\d{3})*(\.\d+)?$'
+def remove_comma_in_number_string(content: str)->str:
+    """
+    This function is to remove comma in number, like 1,234 -> 1234
+    """
+    content = content.strip()
+    # regular expression for number
+    if content.startswith(','):
+        return ',' + remove_comma_in_number_string(content[1:])
+    pattern = NUMBER_RE_PATTERN
+    if re.match(pattern, content):
+        return content.replace(",", "")
+    else:
+        return content
+    
+def remove_comma_in_string(content: str, repl: Optional[str]=' ')->str:
+    """
+    This function is to remove comman in string, which will make it failed to
+    read csv string
+    """
+    if ',' in content:
+        return content.replace(',', repl)
+    return content

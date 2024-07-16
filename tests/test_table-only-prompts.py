@@ -5,6 +5,10 @@ from dotenv import load_dotenv
 import os
 import pytest
 
+pytest.skip(
+    reason="skip due to dependence on OpenAI key", allow_module_level=True
+)
+
 def write_log_info(msg: str):
     with open("./logs/test.log", "a+") as fobj:
         now = datetime.now()

@@ -1,13 +1,18 @@
 
 
 import json
+import re
 from typing import Any, Dict, List, Optional
 import logging
+
+from extractor.utils import (
+    remove_comma_in_number_string, 
+    remove_comma_in_string,
+)
 
 logger = logging.getLogger(__name__)
 
 from extractor.constants import PKSUMMARY_TABLE_OUTPUT_COLUMNS
-
 
 class GeneratedPKSummaryTableProcessor(object):
     """
@@ -26,6 +31,7 @@ class GeneratedPKSummaryTableProcessor(object):
         self.columns_dict = temp_columns_dict
 
     def process_content(self, content: str) -> str:
+        content = self._strip_table_content(content)
         if self._check_content_format(content) == "json":
             content = self._validate_json_content(content)
             return self._convert_json_to_csv(content)
@@ -45,7 +51,7 @@ class GeneratedPKSummaryTableProcessor(object):
     def _convert_to_csv_header(self) -> str:
         headers = self._get_fullname_headers()
         csv_headers = self.delimiter.join(headers)
-        return csv_headers
+        return csv_headers  
     
     def _convert_to_csv_row(self, row: Dict[str, Any]) -> str:
         lower_key_row = {}
@@ -55,7 +61,11 @@ class GeneratedPKSummaryTableProcessor(object):
         col_cnt = len(self.lower_columns)
         for ix, col in enumerate(self.lower_columns):
             if col in lower_key_row:
-                vals += f"{lower_key_row[col]}"
+                the_val = lower_key_row[col]
+                the_val = f"{the_val}"                
+                the_val = remove_comma_in_number_string(the_val)
+                the_val = remove_comma_in_string(the_val)
+                vals += the_val
             vals += self.delimiter
         vals = vals[:-2] # remove the last delimiter
         return vals
@@ -70,12 +80,26 @@ class GeneratedPKSummaryTableProcessor(object):
             csv_str += "\n"
             rows: List = json_obj["content"]
             for ix, row in enumerate(rows):
-                csv_str += self._convert_to_csv_row(row)
+                val = self._convert_to_csv_row(row)
+                csv_str += val
                 csv_str += "\n"
             return csv_str
         except Exception as e:
             logger.error(e)
             return None
+    def _strip_table_content(self, content: str) -> str:
+        """
+        This function is to remove redundant characters, like white spaces, 
+        ```json ... ``` or ```csv ... ```
+        """
+        strp_content = content.strip()
+        if strp_content.startswith("```json"):
+            strp_content = strp_content[7:]
+        if strp_content.startswith("```csv"):
+            strp_content = strp_content[6:]
+        if strp_content.endswith("```"):
+            strp_content = strp_content[:-3]
+        return strp_content.strip()
     def _validate_json_content(self, content: str) -> str:
         if content.endswith("```"):
             return content[:-3]

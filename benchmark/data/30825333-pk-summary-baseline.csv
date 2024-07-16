@@ -1,4 +1,4 @@
-,Drug name,Analyte,Specimen,Pregnancy Stage,Parameter type,Value,Unit,Summary Statistics,Interval type,Lower limit,Population,High limit,Subject N,Variation type,Variation value,P value
+,Drug name,Analyte,Specimen,Pregnancy stage,Parameter type,Value,Unit,Summary statistics,Interval type,Lower limit,Population,High limit,Subject N,Variation type,Variation value,P value
 0,Ketamine,Ketamine,blood,,concentration,485,ug/l,mean,,,child,,,SD,549,
 1,Ketamine,Ketamine,blood,,Total area under curve,91,Mg/min/L,mean,,,child,,,SD,30,
 2,Ketamine,Ketamine,blood,,Maximum concentration,1.6,mg/L,mean,,,child,,,SD,0.68,
