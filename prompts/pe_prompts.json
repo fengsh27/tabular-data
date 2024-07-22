@@ -1,40 +1,53 @@
 {
     "table_extraction_prompts": {
-      "role_description": "You are a helpful biocuration assistant. Your job is to read the following table caption and table in HTML format and convert this table to a plain table format. You should restructure the table by stacking similar elements.",
+      "role_description": "Please act as a biomedical assistant, help to extract the information from the provided source",
       "source": "html table from biomedical article",
       "output_columns": [
-        "Characteristic/risk factor", 
-        "Exposure", 
-        "Outcomes", 
-        "Statistic", 
-        "Value", 
-        "Unit", 
-        "Variability statistic", 
-        "Variability value", 
-        "Interval type", 
-        "Interval low", 
-        "Interval high", 
-        "P value"
+        "C/R",
+        "EX",
+        "OU",
+        "ST",
+        "V",
+        "U",
+        "VS",
+        "VV",
+        "IT",
+        "IL",
+        "IH",
+        "PV"
+      ],
+      "output_columns_map": [
+        ["C/R", "Characteristic/risk factor"],
+        ["EX", "Exposure"],
+        ["OU", "Outcomes"],
+        ["ST", "Statistic"],
+        ["V", "Value"],
+        ["U", "Unit"],
+        ["VS", "Variability statistic"],
+        ["VV", "Variability value"],
+        ["IT", "Interval type"],
+        ["IL", "Interval low"],
+        ["IH", "Interval high"],
+        ["PV", "P value"]
       ],
       "output_column_definitions": [
-        "Characteristic/risk factor describes the particular or general characteristics of the study population related to the study's outcomes.",
-        "Exposure refers to Any factor that may be associated with an outcome of interest (drugs, medical conditions, medications etc.)",
-        "Outcomes is A measure(s) of interest that an investigator(s) considers to be the most important among the many outcomes that are to be examined in the study; however, in the study outcomes sheet, this is where all measures as outlined in the article must be well elaborated to include their reported statistics.",
-        "Statistics is the measure used to describe numerical values (ex: adjusted odds ratio, multivariate, hazard ratio, risk ratio, incident rate, frequency, occurrence)",
-        "Value",
-        "Unit",
-        "Variablility statistic means how spread out the data is, based on the study type (ex: standard deviation)",
-        "Variablility value",
-        "Interval type is a scale the examines the difference usually between two numbers (range, interquartile range, 95% confidence interval)",
-        "Interval low is the lower end value reported based on the interval type. ",
-        "INterval high is theupper end value reported based on the interval type.",
-        "P value is a number, calculated from a statistical test, that describes the likelihood of a particular set of observations if the null hypothesis were true; varies depending on the study, and therefore it may not always be reported."
+        "C/R: Characteristic/risk factor describes the particular or general characteristics of the study population related to the study's outcomes.",
+        "EX: Exposure refers to Any factor that may be associated with an outcome of interest (drugs, medical conditions, medications etc.)",
+        "OU: Outcomes is A measure(s) of interest that an investigator(s) considers to be the most important among the many outcomes that are to be examined in the study; however, in the study outcomes sheet, this is where all measures as outlined in the article must be well elaborated to include their reported statistics.",
+        "ST: Statistics is the measure used to describe numerical values (ex: adjusted odds ratio, multivariate, hazard ratio, risk ratio, incident rate, frequency, occurrence)",
+        "V: Value",
+        "U: Unit",
+        "VS: Variablility statistic means how spread out the data is, based on the study type (ex: standard deviation)",
+        "VV: Variablility value",
+        "IT: Interval type is a scale the examines the difference usually between two numbers (range, interquartile range, 95% confidence interval)",
+        "IL: Interval low is the lower end value reported based on the interval type. ",
+        "IH: Interval high is theupper end value reported based on the interval type.",
+        "PV: P value is a number, calculated from a statistical test, that describes the likelihood of a particular set of observations if the null hypothesis were true; varies depending on the study, and therefore it may not always be reported."
       ],
       "output_notes": [
-        "1. Only output csv table without any other characters, no triple backticks ``` and no 'csv'.",
-        "2. Ensure that each field is separated by a comma(,) in the CSV table",
-        "3. Ensure to extract all available information for each field without omitting any details.",
-        "4. If the information that is not provided, please leave it empty."
+        "1. Only output table in compact json format without any other characters, no space, no newline, no triple backticks ``` and no 'json'.",
+        "2. Ensure to extract all available information for each field without omitting any details.",
+        "3. If the information that is not provided, please leave it with empty string."
       ]
     },
     "full_text_prompts": {

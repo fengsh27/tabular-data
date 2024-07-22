@@ -6,7 +6,11 @@ import pandas as pd
 import csv
 
 from extractor.utils import convert_csv_table_to_dataframe
-from extractor.constants import PKSUMMARY_TABLE_OUTPUT_COLUMNS
+from extractor.constants import (
+    PKSUMMARY_TABLE_OUTPUT_COLUMNS, 
+    PROMPTS_NAME_PE, 
+    PROMPTS_NAME_PK,
+)
 
 @pytest.mark.skip("csv parser can't handle comma in value correctly (have tried many ways)")
 def test_pandas_read_csv():
@@ -27,11 +31,13 @@ def test_pandas_read_csv():
     ("34183327", (30, 16)),
     ("30950674_gemini", (30, 16)),
     ("34114632", (24, 16)),
+    ("24132975_pe", (44, 12)),
 ])
 def test_converter(pmid, expected):
     with open(f"./tests/{pmid}_result.json", "r") as fobj:
         res_str = fobj.read()
-        processor = GeneratedPKSummaryTableProcessor()
+        prompts_type = PROMPTS_NAME_PE if "_pe" in pmid else PROMPTS_NAME_PK
+        processor = GeneratedPKSummaryTableProcessor(prompts_type=prompts_type)
         csv_str = processor.process_content(res_str)
         buf = StringIO(csv_str)
         df = pd.read_csv(buf)

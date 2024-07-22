@@ -45,8 +45,8 @@ LLM_GEMINI_PRO = "Gemini 1.5 pro"
 LLM_GEMINI_FLASH = "Gemini 1.5 flash"
 
 
-PKSUMMARY_TABLE_ROLE_PROMPTS = "Please act as a biomedical assistant, help to extract the information from the provided source"
-PKSUMMARY_TABLE_SOURCE_PROMPTS = "html table from biomedical article"
+TABLE_ROLE_PROMPTS = "Please act as a biomedical assistant, help to extract the information from the provided source"
+TABLE_SOURCE_PROMPTS = "html table from biomedical article"
 PKSUMMARY_TABLE_OUTPUT_COLUMNS = [
     "DN",
     "Ana",
@@ -83,7 +83,7 @@ PKSUMMARY_TABLE_OUTPUT_COLUMNS_DEFINITION = [
     "Variation type: the variability measure (describes how spread out the data is) associated with the specific parameter, e.g., standard deviation (SD), CV%.",
     "P value: The p-value is a number, calculated from a statistical test, that describes the likelihood of a particular set of observations if the null hypothesis were true; varies depending on the study, and therefore it may not always be reported."
 ]
-PKSUMMARY_TABLE_OUTPUT_NOTES = [
+TABLE_OUTPUT_NOTES = [
     "1. Only output table in json format without any other characters, no triple backticks ``` and no 'json'.",
     "2. Ensure to extract all available information for each field without omitting any details.",
     "3. If the information that is not provided, please leave it with empty string."

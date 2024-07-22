@@ -12,7 +12,7 @@ from extractor.utils import (
 
 logger = logging.getLogger(__name__)
 
-from extractor.constants import PKSUMMARY_TABLE_OUTPUT_COLUMNS
+from extractor.constants import PKSUMMARY_TABLE_OUTPUT_COLUMNS, PROMPTS_NAME_PK, PROMPTS_NAME_PE
 
 class GeneratedPKSummaryTableProcessor(object):
     """
@@ -22,8 +22,10 @@ class GeneratedPKSummaryTableProcessor(object):
     """
     def __init__(
         self, 
+        prompts_type: Optional[str]=PROMPTS_NAME_PK,
         delimiter: Optional[str] = ', ', 
     ):
+        self.prompt_type = prompts_type
         self.delimiter = delimiter
         temp_columns, temp_columns_dict = self._get_prompts_columns_and_columns_dict()
         self.columns = temp_columns
@@ -38,7 +40,10 @@ class GeneratedPKSummaryTableProcessor(object):
             return content
         
     def _get_prompts_columns_and_columns_dict(self):
-          with open("./prompts/pk_prompts.json", "r") as fobj:
+          fn = ("./prompts/pk_prompts.json"
+                if self.prompt_type == PROMPTS_NAME_PK 
+                else "./prompts/pe_prompts.json")
+          with open(fn, "r") as fobj:
               json_obj = json.load(fobj)
               return (
                   json_obj["table_extraction_prompts"]["output_columns"], 
