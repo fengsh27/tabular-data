@@ -37,7 +37,7 @@ from extractor.prompts_utils import (
     generate_paper_text_prompts,
     generate_tables_prompts,
     generate_question,
-    TableExtractionPKSummaryPromptsGenerator,
+    TableExtractionPromptsGenerator,
 )
 from extractor.generated_table_processor import GeneratedPKSummaryTableProcessor
 from extractor.request_geminiai import (
@@ -105,8 +105,8 @@ def on_extract(pmid: str):
     clear_results()
 
     # prepare prompts including article prmpots and table prompts
-    prmpt_generator = TableExtractionPKSummaryPromptsGenerator()
-    first_prompots = prmpt_generator.generate_system_prompts(ss.main_prompts_option)
+    prmpt_generator = TableExtractionPromptsGenerator(ss.main_prompts_option)
+    first_prompots = prmpt_generator.generate_system_prompts()
 
     include_tables = []
     for ix in range(len(ss.main_retrieved_tables)):
@@ -159,7 +159,7 @@ def on_extract(pmid: str):
 
 
         stamper.output_result(f"{content}\n\nUsage: {str(usage) if usage is not None else ''}")
-        processor = GeneratedPKSummaryTableProcessor()
+        processor = GeneratedPKSummaryTableProcessor(ss.main_prompts_option)
         csv_str = processor.process_content(content)
         ss.main_extracted_result = csv_str
         ss.main_token_usage = usage
@@ -333,8 +333,8 @@ def main_tab():
     if open_modal:
         modal.open()
     if modal.is_open():
-        generator = TableExtractionPKSummaryPromptsGenerator()
-        prmpts = generator.get_prompts_file_content(ss.main_prompts_option)
+        generator = TableExtractionPromptsGenerator(ss.main_prompts_option)
+        prmpts = generator.get_prompts_file_content()
         prmpts += "\n\n\n"
         with modal.container():
             st.text(prmpts)

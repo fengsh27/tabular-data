@@ -7,20 +7,21 @@ import logging
 from extractor.constants import (
     PKSUMMARY_TABLE_OUTPUT_COLUMNS, 
     PKSUMMARY_TABLE_OUTPUT_COLUMNS_DEFINITION, 
-    PKSUMMARY_TABLE_OUTPUT_NOTES, 
-    PKSUMMARY_TABLE_ROLE_PROMPTS, 
-    PKSUMMARY_TABLE_SOURCE_PROMPTS, 
+    TABLE_OUTPUT_NOTES, 
+    TABLE_ROLE_PROMPTS, 
+    TABLE_SOURCE_PROMPTS, 
     PROMPTS_NAME_PK,
+    PROMPTS_NAME_PE,
 )
 
 logger = logging.getLogger(__name__)
 
-class TableExtractionPKSummaryPromptsGenerator(object):
-    def __init__(self):
-        pass
+class TableExtractionPromptsGenerator(object):
+    def __init__(self, prompt_type: str):
+        self.prompt_type = prompt_type if prompt_type == PROMPTS_NAME_PK else PROMPTS_NAME_PE
 
-    def _read_prompts_config_file(self, prompts_name):
-        if prompts_name == PROMPTS_NAME_PK:
+    def _read_prompts_config_file(self):
+        if self.prompt_type == PROMPTS_NAME_PK:
             return open("./prompts/pk_prompts.json", "r")
         else:
             return open("./prompts/pe_prompts.json", "r")
@@ -53,11 +54,11 @@ class TableExtractionPKSummaryPromptsGenerator(object):
                     output_columns_def[ix] = f"{name}: {output_columns_def[ix]}"
 
         output_columns = \
-            TableExtractionPKSummaryPromptsGenerator._prompts_to_str(output_columns, delimiter=',')
+            TableExtractionPromptsGenerator._prompts_to_str(output_columns, delimiter=',')
         output_columns_def = \
-            TableExtractionPKSummaryPromptsGenerator._prompts_to_str(output_columns_def)
+            TableExtractionPromptsGenerator._prompts_to_str(output_columns_def)
         output_notes = \
-            TableExtractionPKSummaryPromptsGenerator._prompts_to_str(output_notes)
+            TableExtractionPromptsGenerator._prompts_to_str(output_notes)
         return "\n".join([
             f"{role}\nThe source is {source}.",
             f"Here is desired output columns:{output_columns}",
@@ -68,20 +69,19 @@ class TableExtractionPKSummaryPromptsGenerator(object):
 
     @staticmethod
     def _generate_system_prompts_by_default():
-        return TableExtractionPKSummaryPromptsGenerator._generate_prompts(
-            PKSUMMARY_TABLE_ROLE_PROMPTS,
-            PKSUMMARY_TABLE_SOURCE_PROMPTS,
+        return TableExtractionPromptsGenerator._generate_prompts(
+            TABLE_ROLE_PROMPTS,
+            TABLE_SOURCE_PROMPTS,
             PKSUMMARY_TABLE_OUTPUT_COLUMNS,
             PKSUMMARY_TABLE_OUTPUT_COLUMNS_DEFINITION,
-            PKSUMMARY_TABLE_OUTPUT_NOTES
+            TABLE_OUTPUT_NOTES
         )
     def get_prompts_file_content(
         self, 
-        prompts_name: str,
         json_beautifying: Optional[bool] = False
     ):
         try:
-            fobj = self._read_prompts_config_file(prompts_name)
+            fobj = self._read_prompts_config_file()
             if not json_beautifying:
                 return fobj.read()
             else:
@@ -92,29 +92,31 @@ class TableExtractionPKSummaryPromptsGenerator(object):
             return f"Unknown error occurred: {e}"
         finally:
             fobj.close()
-    def generate_system_prompts(self, prompts_name: str):
+    def generate_system_prompts(self):
+        fobj = None
         try: 
-            fobj = self._read_prompts_config_file(prompts_name)
+            fobj = self._read_prompts_config_file()
             content = json.load(fobj)
             table_prompts: Optional[Dict] = content.get("table_extraction_prompts", None)
             if table_prompts is None:
-                return TableExtractionPKSummaryPromptsGenerator._generate_system_prompts_by_default()
-            role = table_prompts.get("role_description", PKSUMMARY_TABLE_ROLE_PROMPTS)
-            source = table_prompts.get("source", PKSUMMARY_TABLE_SOURCE_PROMPTS)
+                return TableExtractionPromptsGenerator._generate_system_prompts_by_default()
+            role = table_prompts.get("role_description", TABLE_ROLE_PROMPTS)
+            source = table_prompts.get("source", TABLE_SOURCE_PROMPTS)
             output_columns = table_prompts.get("output_columns", PKSUMMARY_TABLE_OUTPUT_COLUMNS)
             output_columns_def = table_prompts.get(
                 "output_column_definitions", 
                 PKSUMMARY_TABLE_OUTPUT_COLUMNS_DEFINITION
             )
-            output_notes = table_prompts.get("output_notes", PKSUMMARY_TABLE_OUTPUT_NOTES)
-            return TableExtractionPKSummaryPromptsGenerator._generate_prompts(
+            output_notes = table_prompts.get("output_notes", TABLE_OUTPUT_NOTES)
+            return TableExtractionPromptsGenerator._generate_prompts(
                 role, source, output_columns, output_columns_def, output_notes
             )
         except Exception as e:
             logger.error(e)
             return self._generate_system_prompts_by_default()
         finally:
-            fobj.close()
+            if fobj is not None:
+                fobj.close()
 
 def _generate_table_prompts(tbl: Dict[str, str | DataFrame]):
     raw_tag = tbl.get("raw_tag", None)
