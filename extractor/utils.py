@@ -1,7 +1,9 @@
 
-from typing import Optional, Tuple, Dict
+import json
+from typing import Optional, Tuple, Dict, List, Callable
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
+import functools
 import html
 import urllib
 import logging
@@ -135,3 +137,98 @@ def remove_comma_in_string(content: str, repl: Optional[str]=' ')->str:
     if ',' in content:
         return content.replace(',', repl)
     return content
+
+def _find_comma_and_right_brace(content: str, ix: int):
+    length = len(content)
+    found = False
+    while ix >= 0:
+        if content[ix] == ',':
+            jx = ix - 1
+            while jx >= 0:
+                if content[jx] == '}':
+                    found = True
+                    break
+                elif content[jx] != ' ':
+                    break
+                jx -= 1
+            return found
+        elif content[ix] == ' ':
+            ix -= 1
+            continue
+        else:
+            break
+    
+    return found
+
+
+def _truncate_json_content(content: str):
+    """
+    This function is to remove imcompleted json object, like this:
+    '[{"a": "...", "b": "...", "c": "..."}, {"a": "...",' will be truncated to
+    '[{"a": "...", "b": "...", "c": "..."},'
+    """
+    length = len(content)
+    found = False
+    for rev_ix in range(length):
+        ix = length - rev_ix -1
+        if content[ix] == "{":
+            found = _find_comma_and_right_brace(content, ix-1)
+            if found:
+                break
+        
+    return (content[:ix], found) if found else (content, found)
+
+def _strip_contents(contents: List[str]):
+    for ix in range(len(contents)):
+        contents[ix] = contents[ix].strip()
+        if contents[ix].startswith("```json"):
+            contents[ix] = contents[ix][7:]
+            contents[ix] = contents[ix].strip()
+        if contents[ix].endswith("```"):
+            contents[ix] = contents[ix][:-3]
+    return contents
+
+def concate_llm_contents(contents: List[str], usages: List[int]):
+    contents = _strip_contents(contents)
+    
+    truncated = False
+    for ix in range(len(contents)):
+        if ix == 0:
+            continue
+        if contents[ix].startswith("[{"):
+            contents[ix-1], truncated = _truncate_json_content(contents[ix-1])
+            contents[ix] = contents[ix][1:] # remove '['
+    
+    all_usages = functools.reduce(lambda a, b: a + b, usages)
+    
+    all_contents = ''.join(contents)
+    MAX_RETRIES = 5
+    retries = 0
+    while retries < MAX_RETRIES:
+        try:
+            json.loads(all_contents)
+            break
+        except json.JSONDecodeError as e:
+            col = e.colno
+            length = 0
+            for ix in range(len(contents)-1):
+                cont = contents[ix]
+                length += len(cont)
+                if col >= length and col < length + 20:
+                    # process the {ix}th content
+                    contents[ix], truncated = _truncate_json_content(contents[ix])
+                    
+                    # process the {ix+1}the content,
+                    left_brace_ix = contents[ix+1].find('{')
+                    contents[ix+1] = contents[ix+1][left_brace_ix:]
+                    truncated = True
+                    break
+            all_contents = ''.join(contents)
+        except Exception as e:
+            break
+    
+    return all_contents, all_usages, truncated
+
+
+
+

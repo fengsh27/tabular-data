@@ -77,9 +77,9 @@ class GeneratedPKSummaryTableProcessor(object):
     def _convert_json_to_csv(self, content: str) -> str | None:
         stripped_content = content.strip()
         if stripped_content.startswith('['):
-            stripped_content = '{' + f'"content": {stripped_content}' + '}'
+            json_content = '{' + f'"content": {stripped_content}' + '}'
         try:
-            json_obj = json.loads(stripped_content)
+            json_obj = json.loads(json_content)
             csv_str = self._convert_to_csv_header()
             csv_str += "\n"
             rows: List = json_obj["content"]
@@ -90,7 +90,18 @@ class GeneratedPKSummaryTableProcessor(object):
             return csv_str
         except Exception as e:
             logger.error(e)
-            return None
+            raise e
+    """
+    def _try_to_convert_incompleted_json_to_csv(self, content):
+        processing = []
+        processed = []
+        for ix in range(len(content)):
+            char = content[ix]
+            if char == "{":
+                prev = processing[-1]
+                level = prev[1] + 1 if prev[0] == '{' else 0
+                processing.append([char, level, ix])
+    """
     def _strip_table_content(self, content: str) -> str:
         """
         This function is to remove redundant characters, like white spaces, 

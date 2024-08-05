@@ -69,7 +69,7 @@ def request_to_gemini(model: GenerativeModel, messages: List[any]):
         model.count_tokens(messages).total_tokens
         if res is not None and res.text is not None else 0
     )
-    return (True, res.text, usage)
+    return (True, res.text, usage, False)
 
 @messageDecor
 def request_to_gemini_15_pro(messages: List[Any], question: str):

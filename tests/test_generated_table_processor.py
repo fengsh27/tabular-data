@@ -1,4 +1,4 @@
-
+import json
 import pytest
 from extractor.generated_table_processor import GeneratedPKSummaryTableProcessor
 from io import StringIO
@@ -92,5 +92,18 @@ def test_strip_table_content():
     res = processor._strip_table_content(str5)
     assert res == "balahbalahbalahbalah \n balahbalahbalahbalah"
 
-
+def test_36396314_gpt_4o_error_result_json_1():
+    with open("./tests/36396314_gpt_4o_error_result.txt", "r") as fobj:
+        res_str = fobj.read()
+        processor = GeneratedPKSummaryTableProcessor()
+        try:
+            csv_str = processor.process_content(res_str)
+        except json.JSONDecodeError as e:
+            # expected error
+            print(str(e))
+            return
+        buf = StringIO(csv_str)
+        df = pd.read_csv(buf)
+        assert df is not None
+        assert tuple(df.shape) == (30, 16)
 
