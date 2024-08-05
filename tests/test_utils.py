@@ -1,4 +1,4 @@
-
+import json
 import pytest
 
 from extractor.utils import (
@@ -31,3 +31,11 @@ def test_process_number_string(content, expected):
     processed_content = remove_comma_in_number_string(content)
     assert processed_content == expected
 
+
+def test_json_loads():
+    str1 = '[{"aaa": "...", "bbb": "...", "ccc": "..."}, {"aaa": "...", "bbb": '
+    try:
+        obj1 = json.loads(str1)
+        print(obj1)
+    except json.JSONDecodeError as e:
+        print(e)

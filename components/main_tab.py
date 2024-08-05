@@ -143,20 +143,13 @@ def on_extract(pmid: str):
         request_llm: Optional[ Callable[[List[Dict[str, str], str], str]] ] = None
         if ss.main_llm_option == LLM_CHATGPT_4O:
             request_llm = request_to_chatgpt_4o
-        elif ss.main_llm_option == LLM_CHATGPT_40:
-            request_llm = request_to_chatgpt_40
-        elif ss.main_llm_option == LLM_CHATGPT_35:
-            request_llm = request_to_chatgpt_35
-        elif ss.main_llm_option == LLM_GEMINI_FLASH:
-            request_llm = request_to_gemini_15_flash
         else:
             request_llm = request_to_gemini_15_pro
 
-        res, content, usage = request_llm(
+        res, content, usage, truncated = request_llm(
             prompts_list,
             generate_question(source),
         )
-
 
         stamper.output_result(f"{content}\n\nUsage: {str(usage) if usage is not None else ''}")
         processor = GeneratedPKSummaryTableProcessor(ss.main_prompts_option)
@@ -164,7 +157,7 @@ def on_extract(pmid: str):
         ss.main_extracted_result = csv_str
         ss.main_token_usage = usage
         
-        ss.main_info = f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Extracting completed"
+        ss.main_info = f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Extracting completed. {'***The result includes truncated contents.***' if truncated is True else ''}"
     except Exception as e:
         logger.error(e)
         st.error(e)
@@ -270,14 +263,18 @@ def main_tab():
             st.write(ss.main_info)
         if ss.main_extracted_result is not None:
             usage = ss.main_token_usage
-            st.header(f"Extracted Result {'' if usage is None else '(token: '+str(usage)+')'}", divider="blue")
+            st.header(f"Extracted Result {'' if usage is None else '(token: '+str(usage)+')'}.",
+                      divider="blue")
             if is_valid_csv_table(ss.main_extracted_result):
                 preprocess_csv_table_string(ss.main_extracted_result)
-                df = convert_csv_table_to_dataframe(ss.main_extracted_result)
-                if df is not None:
-                    st.dataframe(df)
-                else:
-                    st.markdown(ss.main_extracted_result)
+                try:
+                    df = convert_csv_table_to_dataframe(ss.main_extracted_result)
+                    if df is not None:
+                        st.dataframe(df)
+                    else:
+                        st.markdown(ss.main_extracted_result)
+                except Exception as e:
+                    st.markdown(str(e))
             else:
                 st.markdown(ss.main_extracted_result)
             # st.markdown(ss.main_extracted_result)
@@ -306,7 +303,7 @@ def main_tab():
                 st.divider()
     with prompts_panel:
         llm_option = st.radio("What LLM would you like to use?", (
-            LLM_CHATGPT_4O, LLM_CHATGPT_40, LLM_CHATGPT_35, LLM_GEMINI_FLASH, LLM_GEMINI_PRO
+            LLM_CHATGPT_4O, LLM_GEMINI_PRO
         ), index=0)
         ss.main_llm_option = llm_option
         st.divider()
