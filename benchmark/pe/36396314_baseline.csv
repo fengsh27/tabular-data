@@ -1,0 +1,49 @@
+﻿PMID,Characteristic/Risk Factor,Exposure,Outcomes,Statistic,Value,Unit,Variability Statistic,Variability Value,Interval Type,Interval Low Bound,Intervale High Bound,p-Value
+36396314,NA,Prednisolone,Apgar 5 mins</= 5,frequency,115,number of patients,%,23,NA,NA,NA,NA
+36396314,NA,Prednisolone,Apgar 5 mins > 5,frequency,291,number of patients,%,58,NA,NA,NA,NA
+36396314,NA,Prednisolone,Apgar 5 mins missing,frequency,94,number of patients,%,19,NA,NA,NA,NA
+36396314,NA,Prednisolone,Cardiac massage at delivery,frequency,31,number of patients,%,6,NA,NA,NA,NA
+36396314,NA,Prednisolone,Dugs for resuscitation at delivery,frequency,50,number of patients,%,10,NA,NA,NA,NA
+36396314,NA,Prednisolone,Intubation at delivery,frequency,448,number of patients,%,90,NA,NA,NA,NA
+36396314,NA,Prednisolone,Postnatal age at initiation of postnatal corticosteroid,median,86,days,NA,NA,IQR,73,101,NA
+36396314,NA,Prednisolone,Duration,median,9,days,NA,NA,IQR,8,30,NA
+36396314,NA,Prednisolone,Respiratory support at time of steroid initiation,frequency,372,number of patients,%,74,NA,NA,NA,NA
+36396314,NA,Prednisolone,Invasive ventilation,frequency,86,number of patients,%,17,NA,NA,NA,NA
+36396314,NA,Prednisolone,Non-invasive support,frequency,42,number of patients,%,8,NA,NA,NA,NA
+36396314,NA,Methyl-prednisolone,Apgar 5 mins</= 5,frequency,9,number of patients,%,28,NA,NA,NA,NA
+36396314,NA,Methyl-prednisolone,Apgar 5 mins > 5,frequency,20,number of patients,%,63,NA,NA,NA,NA
+36396314,NA,Methyl-prednisolone,Apgar 5 mins missing,frequency,3,number of patients,%,9,NA,NA,NA,NA
+36396314,NA,Methyl-prednisolone,Cardiac massage at delivery,frequency,3,number of patients,%,9,NA,NA,NA,NA
+36396314,NA,Methyl-prednisolone,Dugs for resuscitation at delivery,frequency,2,number of patients,%,6,NA,NA,NA,NA
+36396314,NA,Methyl-prednisolone,Intubation at delivery,frequency,28,number of patients,%,88,NA,NA,NA,NA
+36396314,NA,Methyl-prednisolone,Postnatal age at initiation of postnatal corticosteroid,median,116,days,NA,NA,IQR,90,155,NA
+36396314,NA,Methyl-prednisolone,Duration,median,7,days,NA,NA,IQR,4,11,NA
+36396314,NA,Methyl-prednisolone,Respiratory support at time of steroid initiation,frequency,26,number of patients,%,81,NA,NA,NA,NA
+36396314,NA,Methyl-prednisolone,Invasive ventilation,frequency,4,number of patients,%,13,NA,NA,NA,NA
+36396314,NA,Methyl-prednisolone,Non-invasive support,frequency,2,number of patients,%,6,NA,NA,NA,NA
+36396314,< 32 weeks gestation,Late Hydrocortisone,None Antenatal Costicosteroids,Frequency,43,number of patients,%,5,NA,NA,NA,NA
+36396314,< 32 weeks gestation,Late Hydrocortisone,Completed Antenatal Costicosteroids,Frequency,677,number of patients,%,71,NA,NA,NA,NA
+36396314,< 32 weeks gestation,Late Hydrocortisone,Incomplete Antenatal Costicosteroids,Frequency,165,number of patients,%,17,NA,NA,NA,NA
+36396314,< 32 weeks gestation,Late Hydrocortisone,Missing Antenatal Costicosteroids,Frequency,667,number of patients,%,7,NA,NA,NA,NA
+36396314,< 32 weeks gestation,Late Hydrocortisone,Apgar 5 mins </= 5,Frequency,231,number of patients,%,24,NA,NA,NA,NA
+36396314,< 32 weeks gestation,Late Hydrocortisone,Apgar 5 mins >5,Frequency,602,number of patients,%,63,NA,NA,NA,NA
+36396314,< 32 weeks gestation,Late Hydrocortisone,Drugs for resusciation at delivery,Frequency,72,number of patients,%,8,NA,NA,NA,NA
+36396314,< 32 weeks gestation,Late Hydrocortisone,Intubation at delivery,Frequency,838,number of patients,%,88,NA,NA,NA,NA
+36396314,< 32 weeks gestation,Late Hydrocortisone,Postnatal Age aat initiation of postnatal corticosteroid,Median,19,days,NA,NA,IQR,8,40,NA
+36396314,< 32 weeks gestation,Late Hydrocortisone,Duration,Median,20,days,NA,NA,IQR,11,38,NA
+36396314,< 32 weeks gestation,Late Hydrocortisone,Repiratory support at time of steroid initiation,Frequency,718,number of patients,%,75,NA,NA,NA,NA
+36396314,< 32 weeks gestation,Late Hydrocortisone,Invasive Ventilation,Frequency,145,number of patients,%,18,NA,NA,NA,NA
+36396314,< 32 weeks gestation,Late Hydrocortisone,Non-invasive support,Frequency,90,number of patients,%,9,NA,NA,NA,NA
+36396314,< 32 weeks gestation,Early Hydrocortisone,None Antenatal Costicosteroids,Frequency,3,number of patients,%,3,NA,NA,NA,NA
+36396314,< 32 weeks gestation,Early Hydrocortisone,Completed Antenatal Costicosteroids,Frequency,124,number of patients,%,67,NA,NA,NA,NA
+36396314,< 32 weeks gestation,Early Hydrocortisone,Incomplete Antenatal Costicosteroids,Frequency,37,number of patients,%,32,NA,NA,NA,NA
+36396314,< 32 weeks gestation,Early Hydrocortisone,Missing Antenatal Costicosteroids,Frequency,0,number of patients,%,0,NA,NA,NA,NA
+36396314,< 32 weeks gestation,Early Hydrocortisone,Apgar 5 mins </= 5,Frequency,61,number of patients,%,33,NA,NA,NA,NA
+36396314,< 32 weeks gestation,Early Hydrocortisone,Apgar 5 mins >5,Frequency,100,number of patients,%,54,NA,NA,NA,NA
+36396314,< 32 weeks gestation,Early Hydrocortisone,Drugs for resusciation at delivery,Frequency,20,number of patients,%,11,NA,NA,NA,NA
+36396314,< 32 weeks gestation,Early Hydrocortisone,Intubation at delivery,Frequency,162,number of patients,%,88,NA,NA,NA,NA
+36396314,< 32 weeks gestation,Early Hydrocortisone,Postnatal Age aat initiation of postnatal corticosteroid,Median,1,days,NA,NA,IQR,1,2,NA
+36396314,< 32 weeks gestation,Early Hydrocortisone,Duration,Median,11,days,NA,NA,IQR,10,14,NA
+36396314,< 32 weeks gestation,Early Hydrocortisone,Repiratory support at time of steroid initiation,Frequency,171,number of patients,%,93,NA,NA,NA,NA
+36396314,< 32 weeks gestation,Early Hydrocortisone,Invasive Ventilation,Frequency,12,number of patients,%,7,NA,NA,NA,NA
+36396314,< 32 weeks gestation,Early Hydrocortisone,Non-invasive support,Frequency,1,number of patients,%,0.5,NA,NA,NA,NA
