@@ -1,0 +1,6 @@
+﻿PMID,Characteristic/Risk Factor,Exposure,Outcomes,Statistic,Value,Unit,Variability Statistic,Variability Value,Interval Type,Interval Low Bound,Intervale High Bound,p-Value
+35997979,Children,Azithromycin,Trachomatous inflammation - follicular prevalence at baseline,Percent,1.9,N/A,,,95% confidence interval,0.5,3.5,
+35997979,Children,Placebo,Trachomatous inflammation - follicular prevalence at baseline,Percent,0.9,N/A,,,95% confidence interval,0,1.9,
+35997979,Children,Azithromycin,Trachomatous inflammation - follicular prevalence at 24 months,Percent,0.2,N/A,,,95% confidence interval,0,0.5,
+35997979,Children,Placebo,Trachomatous inflammation - follicular prevalence at 24 months,Percent,0.8,N/A,,,95% confidence interval,0.2,1.6,
+35997979,Children,Azithromycin vs placebo,Trachomatous inflammation - follicular prevalence at 24 months,Incidence rate ratio,0.18,N/A,,,95% confidence interval,0.01,1.2,

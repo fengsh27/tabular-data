@@ -1,0 +1,111 @@
+﻿PMID,Characteristic/Risk Factor,Exposure,Outcomes,Statistic,Value,Unit,Variability Statistic,Variability Value,Interval Type,Interval Low Bound,Intervale High Bound,p-Value
+15930210,NA,Dopamine,Failure (nonresponders),Frequency,1,Number,%,3.7,NA,NA,NA,NA
+15930210,NA,Dopamine,Success T1,Frequency,6,Number,%,22.2,NA,NA,NA,NA
+15930210,NA,Dopamine,Success T2,Frequency,9,Number,%,33.3,NA,NA,NA,NA
+15930210,NA,Dopamine,Success T3,Frequency,7,Number,%,25.9,NA,NA,NA,NA
+15930210,NA,Dopamine,Success T4,Frequency,4,Number,%,14.8,NA,NA,NA,NA
+15930210,NA,Dopamine,Delayed Failure,Frequency,8,Number,%,29.6,NA,NA,NA,NA
+15930210,NA,Dopamine,Total Treatment Failure,Frequency,9,Number,%,33.3,NA,NA,NA,NA
+15930210,NA,Epinephrine,Failure (nonresponders),Frequency,2,Number,%,6.3,NA,NA,NA,NA
+15930210,NA,Epinephrine,Success T1,Frequency,6,Number,%,18.8,NA,NA,NA,NA
+15930210,NA,Epinephrine,Success T2,Frequency,9,Number,%,28.1,NA,NA,NA,NA
+15930210,NA,Epinephrine,Success T3,Frequency,6,Number,%,18.8,NA,NA,NA,NA
+15930210,NA,Epinephrine,Success T4,Frequency,9,Number,%,28.1,NA,NA,NA,NA
+15930210,NA,Epinephrine,Delayed Failure,Frequency,10,Number,%,31.2,NA,NA,NA,NA
+15930210,NA,Epinephrine,Total Treatment Failure,Frequency,12,Number,%,37.5,NA,NA,NA,NA
+15930210,NA,Dopamine,MBP at Baseline,Mean,25,mm Hg,SD,3,NA,NA,NA,NA
+15930210,NA,Epinephrine,MBP at Baseline,Mean,26,mm Hg,SD,3,NA,NA,NA,NA
+15930210,NA,Dopamine,Heart Rate at Baseline,Mean,141,Beats per min,SD,12,NA,NA,NA,NA
+15930210,NA,Epinephrine,Heart Rate at Baseline,Mean,141,Beats per min,SD,14,NA,NA,NA,NA
+15930210,NA,Dopamine,Change in CBV at Baseline,Mean,0,mL/100g,SD,0,NA,NA,NA,NA
+15930210,NA,Epinephrine,Change in CBV at Baseline,Mean,0,mL/100g,SD,0,NA,NA,NA,NA
+15930210,NA,Dopamine,Change in HbD at Baseline,Mean,0,micro-mol/L,SD,0,NA,NA,NA,NA
+15930210,NA,Epinephrine,Change in HbD at Baseline,Mean,0,micro-mol/L,SD,0,NA,NA,NA,NA
+15930210,NA,Dopamine,Transcutaneous PCO2 at Baseline,Mean,45,mm Hg,SD,6,NA,NA,NA,NA
+15930210,NA,Epinephrine,Transcutaneous PCO2 at Baseline,Mean,48,mm Hg,SD,8,NA,NA,NA,NA
+15930210,NA,Dopamine,Transcutaneous PO2 at Baseline,Mean,73,mm Hg,SD,22,NA,NA,NA,NA
+15930210,NA,Epinephrine,Transcutaneous PCO2 at Baseline,Mean,70,mm Hg,SD,18,NA,NA,NA,NA
+15930210,NA,Dopamine,MBP at T1,Mean,30,mm Hg,SD,7,NA,NA,NA,NA
+15930210,NA,Epinephrine,MBP at T1,Mean,29,mm Hg,SD,6,NA,NA,NA,NA
+15930210,NA,Dopamine,Heart Rate at T1,Mean,149,Beats per min,SD,17,NA,NA,NA,NA
+15930210,NA,Epinephrine,Heart Rate at T1,Mean,153,Beats per min,SD,19,NA,NA,NA,NA
+15930210,NA,Dopamine,Change in CBV at T1,Mean,0.27,mL/100g,SD,0.4,NA,NA,NA,NA
+15930210,NA,Epinephrine,Change in CBV at T1,Mean,0.17,mL/100g,SD,0.68,NA,NA,NA,NA
+15930210,NA,Dopamine,Change in HbD at T1,Mean,3.51,micro-mol/L,SD,13.9,NA,NA,NA,NA
+15930210,NA,Epinephrine,Change in HbD at T1,Mean,1.82,micro-mol/L,SD,8.4,NA,NA,NA,NA
+15930210,NA,Dopamine,Transcutaneous PCO2 at T1,Mean,45,mm Hg,SD,7,NA,NA,NA,NA
+15930210,NA,Epinephrine,Transcutaneous PCO2 at T1,Mean,49,mm Hg,SD,8,NA,NA,NA,NA
+15930210,NA,Dopamine,Transcutaneous PO2 at T1,Mean,77,mm Hg,SD,22,NA,NA,NA,NA
+15930210,NA,Epinephrine,Transcutaneous PCO2 at T1,Mean,77,mm Hg,SD,16,NA,NA,NA,NA
+15930210,NA,Dopamine,MBP at BM,Mean,39,mm Hg,SD,6,NA,NA,NA,NA
+15930210,NA,Epinephrine,MBP,Mean,36,mm Hg,SD,4,NA,NA,NA,NA
+15930210,NA,Dopamine,Heart Rate,Mean,157,Beats per min,SD,19,NA,NA,NA,NA
+15930210,NA,Epinephrine,Heart Rate,Mean,169,Beats per min,SD,19,NA,NA,NA,NA
+15930210,NA,Dopamine,Change in CBV,Mean,0.36,mL/100g,SD,0.5,NA,NA,NA,NA
+15930210,NA,Epinephrine,Change in CBV,Mean,0.39,mL/100g,SD,0.91,NA,NA,NA,NA
+15930210,NA,Dopamine,Change in HbD,Mean,7.99,micro-mol/L,SD,15.4,NA,NA,NA,NA
+15930210,NA,Epinephrine,Change in HbD,Mean,4.52,micro-mol/L,SD,10.3,NA,NA,NA,NA
+15930210,NA,Dopamine,Transcutaneous PCO2,Mean,46,mm Hg,SD,7,NA,NA,NA,NA
+15930210,NA,Epinephrine,Transcutaneous PCO2,Mean,48,mm Hg,SD,8,NA,NA,NA,NA
+15930210,NA,Dopamine,Transcutaneous PO2,Mean,77,mm Hg,SD,16,NA,NA,NA,NA
+15930210,NA,Epinephrine,Transcutaneous PCO2,Mean,77,mm Hg,SD,17,NA,NA,NA,NA
+15930210,NA,Dopamine,MBP,Mean,37,mm Hg,SD,5,NA,NA,NA,NA
+15930210,NA,Epinephrine,MBP,Mean,36,mm Hg,SD,5,NA,NA,NA,<0.001
+15930210,NA,Dopamine,Heart Rate,Mean,162,Beats per min,SD,17,NA,NA,NA,NA
+15930210,NA,Epinephrine,Heart Rate,Mean,174,Beats per min,SD,16,NA,NA,NA,<0.001
+15930210,NA,Dopamine,Change in CBV,Mean,0.51,mL/100g,SD,0.61,NA,NA,NA,NA
+15930210,NA,Epinephrine,Change in CBV,Mean,0.79,mL/100g,SD,1.13,NA,NA,NA,<0.001
+15930210,NA,Dopamine,Change in HbD,Mean,8.46,micro-mol/L,SD,15.6,NA,NA,NA,NA
+15930210,NA,Epinephrine,Change in HbD,Mean,8.05,micro-mol/L,SD,8.1,NA,NA,NA,<0.001
+15930210,NA,Dopamine,Transcutaneous PCO2,Mean,46,mm Hg,SD,7,NA,NA,NA,NA
+15930210,NA,Epinephrine,Transcutaneous PCO2,Mean,48,mm Hg,SD,10,NA,NA,NA,NA
+15930210,NA,Dopamine,Transcutaneous PO2,Mean,75,mm Hg,SD,17,NA,NA,NA,NA
+15930210,NA,Epinephrine,Transcutaneous PCO2,Mean,77,mm Hg,SD,20,NA,NA,NA,NA
+15930210,NA,Dopamine,PaO2 at Baseline,Mean,69,mm Hg,SD,29,NA,NA,NA,NA
+15930210,NA,Dopamine,PaCO2 at Baseline,Mean,42,mm Hg,SD,8,NA,NA,NA,NA
+15930210,NA,Dopamine,pH at Baseline,Mean,7.34,Number,SD,7.00E-02,NA,NA,NA,NA
+15930210,NA,Dopamine,Base Exess at Baseline,Mean,-3.4,Number,SD,3.2,NA,NA,NA,NA
+15930210,NA,Dopamine,Lactate at Baseline,Mean,4.5,mmol/L,SD,4.3,NA,NA,NA,NA
+15930210,NA,Dopamine,Glucose at Baseline,Mean,106,mg/dL,SD,67,NA,NA,NA,NA
+15930210,NA,Dopamine,Hematocrit at Baseline,Mean,42,%,SD,6,NA,NA,NA,NA
+15930210,NA,Dopamine,SCVO2 at Baseline,Mean,67,%,SD,11,NA,NA,NA,NA
+15930210,NA,Epinephrine,PaO2 at Baseline,Mean,67,mm Hg,SD,21,NA,NA,NA,NA
+15930210,NA,Epinephrine,PaCO2 at Baseline,Mean,44,mm Hg,SD,8,NA,NA,NA,NA
+15930210,NA,Epinephrine,pH at Baseline,Mean,4.32,Number,SD,7.00E-02,NA,NA,NA,NA
+15930210,NA,Epinephrine,Base Exess at Baseline,Mean,-3.9,Number,SD,4.2,NA,NA,NA,NA
+15930210,NA,Epinephrine,Lactate at Baseline,Mean,3.4,mmol/L,SD,2.5,NA,NA,NA,NA
+15930210,NA,Epinephrine,Glucose at Baseline,Mean,86,mg/dL,SD,37,NA,NA,NA,NA
+15930210,NA,Epinephrine,Hematocrit at Baseline,Mean,41,%,SD,7,NA,NA,NA,NA
+15930210,NA,Epinephrine,SCVO2 at Baseline,Mean,70,%,SD,12,NA,NA,NA,NA
+15930210,NA,Dopamine,PaO2,Mean,64,mm Hg,SD,14,NA,NA,NA,NA
+15930210,NA,Dopamine,PaCO2,Mean,44,mm Hg,SD,6,NA,NA,NA,NA
+15930210,NA,Dopamine,pH,Mean,7.33,Number,SD,0.05,NA,NA,NA,NA
+15930210,NA,Dopamine,Base Exess,Mean,-3.2,Number,SD,2.9,NA,NA,NA,NA
+15930210,NA,Dopamine,Lactate,Mean,3.3,mmol/L,SD,2.3,NA,NA,NA,NA
+15930210,NA,Dopamine,Glucose,Mean,140,mg/dL,SD,77,NA,NA,NA,NA
+15930210,NA,Dopamine,Hematocrit,Mean,44,%,SD,7,NA,NA,NA,NA
+15930210,NA,Dopamine,SCVO2,Mean,71,%,SD,13,NA,NA,NA,NA
+15930210,NA,Epinephrine,PaO2,Mean,67,mm Hg,SD,13,NA,NA,NA,NA
+15930210,NA,Epinephrine,PaCO2,Mean,42,mm Hg,SD,7,NA,NA,NA,NA
+15930210,NA,Epinephrine,pH,Mean,7.3,Number,SD,0.06,NA,NA,NA,NA
+15930210,NA,Epinephrine,Base Exess,Mean,-5.4,Number,SD,3.5,NA,NA,NA,NA
+15930210,NA,Epinephrine,Lactate,Mean,5.2,mmol/L,SD,2.7,NA,NA,NA,NA
+15930210,NA,Epinephrine,Glucose,Mean,192,mg/dL,SD,69,NA,NA,NA,NA
+15930210,NA,Epinephrine,Hematocrit,Mean,41,%,SD,8,NA,NA,NA,NA
+15930210,NA,Epinephrine,SCVO2,Mean,72,%,SD,12,NA,NA,NA,NA
+15930210,NA,Dopamine,Cerebral Ultrasound Normal at Initial,Frequency,8,Number of patients,NA,NA,NA,NA,NA,NA
+15930210,NA,Dopamine,Cerebral Ultrasound Grade 1 or 2 IVH at Initial,Frequency,5,Number of patients,NA,NA,NA,NA,NA,NA
+15930210,NA,Dopamine,Cerebral Ultrasound Moderate/Severe PVE at Initial,Frequency,6,Number of patients,NA,NA,NA,NA,NA,NA
+15930210,NA,Epinephrine,Cerebral Ultrasound Normal at Initial,Frequency,13,Number of patients,NA,NA,NA,NA,NA,NA
+15930210,NA,Epinephrine,Cerebral Ultrasound Grade 1 or 2 IVH at Initial,Frequency,4,Number of patients,NA,NA,NA,NA,NA,NA
+15930210,NA,Epinephrine,Cerebral Ultrasound Moderate/Severe PVE at Initial,Frequency,4,Number of patients,NA,NA,NA,NA,NA,NA
+15930210,NA,Dopamine,Cerebral Ultrasound Normal at Final,Frequency,7,Number of patients,NA,NA,NA,NA,NA,NA
+15930210,NA,Dopamine,Cerebral Ultrasound Grade 1  at Finalor 2 IVH,Frequency,6,Number of patients,NA,NA,NA,NA,NA,NA
+15930210,NA,Dopamine,Cerebral Ultrasound Grade 3 IVH at Final,Frequency,3,Number of patients,NA,NA,NA,NA,NA,NA
+15930210,NA,Dopamine,Cerebral Ultrasound PVHI at Final,Frequency,1,Number of patients,NA,NA,NA,NA,NA,NA
+15930210,NA,Dopamine,Cerebral Ultrasound PVE at Final,Frequency,5,Number of patients,NA,NA,NA,NA,NA,NA
+15930210,NA,Dopamine,Cerebral Ultrasound Posthemorrhagic at Final,Frequency,3,Number of patients,NA,NA,NA,NA,NA,NA
+15930210,NA,Epinephrine,Cerebral Ultrasound Normal at Final,Frequency,11,Number of patients,NA,NA,NA,NA,NA,NA
+15930210,NA,Epinephrine,Cerebral Ultrasound Grade 1  at Finalor 2 IVH,Frequency,6,Number of patients,NA,NA,NA,NA,NA,NA
+15930210,NA,Epinephrine,Cerebral Ultrasound PVE at Final,Frequency,3,Number of patients,NA,NA,NA,NA,NA,NA
+15930210,NA,Epinephrine,Cerebral Ultrasound Posthemorrhagic at Final,Frequency,2,Number of patients,NA,NA,NA,NA,NA,NA

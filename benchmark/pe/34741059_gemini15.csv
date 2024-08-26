@@ -1,0 +1,10 @@
+,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Interval low,Interval high,P value
+0,Age, , Progression risk factor for spherical equivalent more than − 0.50 diopters, Odds ratio,0.87, , Residual,0.1, , , ,0.14
+1,Gender, Female, Progression risk factor for spherical equivalent more than − 0.50 diopters, Odds ratio,1.08, , Residual,0.1, , , ,0.14
+2,Iris color, Medium, Progression risk factor for spherical equivalent more than − 0.50 diopters, Odds ratio,2.12, , Residual,0.33, , , ,0.81
+3,Iris color, Light, Progression risk factor for spherical equivalent more than − 0.50 diopters, Odds ratio,0.3, , Residual,0.74, , , ,0.1
+4,Previous year progression, , Progression risk factor for spherical equivalent more than − 0.50 diopters, Odds ratio,0.54, , Residual,0.4, , , ,0.12
+5,Spheric equivalent, , Progression risk factor for spherical equivalent more than − 0.50 diopters, Odds ratio,1.51, , Residual,0.36, , , ,0.25
+6,Axial length, , Progression risk factor for spherical equivalent more than − 0.50 diopters, Odds ratio,1.22, , Residual,0.24, , , ,0.4
+7,Anterior chamber, , Progression risk factor for spherical equivalent more than − 0.50 diopters, Odds ratio,0.84, , Residual,0.43, , , ,0.67
+8,Pupil size, , Progression risk factor for spherical equivalent more than − 0.50 diopters, Odds ratio,1.09, , Residual,0.1, , , ,0.38

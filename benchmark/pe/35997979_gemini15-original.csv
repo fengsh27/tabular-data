@@ -1,0 +1,23 @@
+﻿,Characteristic/risk factor, Exposure, Outcomes, Statistic, Value, Unit, Variability statistic, Variability value, Interval type, Interval low, Interval high, P value
+0,No. of children aged 1-59 mo, Placebo communities, None, mean,202, None, SD,119, None, None, None, None
+1,No. of children aged 1-59 mo, Azithromycin communities, None, mean,113, None, SD,89, None, None, None, None
+2,Age distribution, Placebo communities, 0 y, mean,14.6, %, SD,4.8, None, None, None, None
+3,Age distribution, Azithromycin communities, 0 y, mean,13.8, %, SD,4.6, None, None, None, None
+4,Age distribution, Placebo communities, 1 y, mean,14.4, %, SD,3.9, None, None, None, None
+5,Age distribution, Azithromycin communities, 1 y, mean,15.2, %, SD,5.1, None, None, None, None
+6,Age distribution, Placebo communities, 2 y, mean,19.3, %, SD,3.2, None, None, None, None
+7,Age distribution, Azithromycin communities, 2 y, mean,18.8, %, SD,5, None, None, None, None
+8,Age distribution, Placebo communities, 3 y, mean,23.8, %, SD,4.4, None, None, None, None
+9,Age distribution, Azithromycin communities, 3 y, mean,24.6, %, SD,5.2, None, None, None, None
+10,Age distribution, Placebo communities, 4 y, mean,27.9, %, SD,6.9, None, None, None, None
+11,Age distribution, Azithromycin communities, 4 y, mean,27.5, %, SD,5.8, None, None, None, None
+12,Sex, Placebo communities, Girls, mean,48, %, SD,4.2, None, None, None, None
+13,Sex, Azithromycin communities, Girls, mean,48.2, %, SD,4.7, None, None, None, None
+14,Sex, Placebo communities, Boys, mean,52, %, SD,4.2, None, None, None, None
+15,Sex, Azithromycin communities, Boys, mean,51.8, %, SD,4.7, None, None, None, None
+16,Distance to nearest paved road, Placebo communities, None, mean,41.7, km, SD,27.1, None, None, None, None
+17,Distance to nearest paved road, Azithromycin communities, None, mean,42.8, km, SD,18.9, None, None, None, None
+18,Distance to department capital, Placebo communities, None, mean,39.3, km, SD,22.7, None, None, None, None
+19,Distance to department capital, Azithromycin communities, None, mean,34.1, km, SD,18.8, None, None, None, None
+20,Elevation of community, Placebo communities, None, mean,203, m, SD,26, None, None, None, None
+21,Elevation of community, Azithromycin communities, None, mean,210, m, SD,27, None, None, None, None

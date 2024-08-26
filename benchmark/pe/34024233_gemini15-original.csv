@@ -1,0 +1,35 @@
+﻿Characteristic/risk factor, Exposure, Outcomes, Statistic, Value, Unit, Variability statistic, Variability value, Interval type, Interval low, Interval high, P value
+Blood loss (mL), , , mean±SD,208.81, mL, SD,15.68, , , ,0.033
+Blood loss (mL), , , mean±SD,250.74, mL, SD,14.73, , , ,0.033
+Need to uterotonic agents, No, , n (%),97,-93.30%, , , , , ,0.187
+Need to uterotonic agents, No, , n (%),95,-92.20%, , , , , ,0.187
+Need to uterotonic agents, Misoprostol, , n (%),0, , , , , , ,0
+Need to uterotonic agents, Misoprostol, , n (%),3,-2.90%, , , , , ,0
+Need to uterotonic agents, Oxytocin, , n (%),7,-6.70%, , , , , ,0.685
+Need to uterotonic agents, Oxytocin, , n (%),5,-4.90%, , , , , ,0.685
+Hb 6 h after delivery, , , mean±SD,12.67, , SD,1.44, , , ,0
+Hb 6 h after delivery, , , mean±SD,11.37, , SD,1.7, , , ,0
+Difference between Hb levels before and 6 h after delivery, , , mean±SD,1.21, , SD,3.41, , , ,0.029
+Difference between Hb levels before and 6 h after delivery, , , mean±SD,2, , SD,1.19, , , ,0.029
+BP 1 h after delivery, , , mean±SD,82.52, mmHg, SD,5.06, , , ,0.017
+BP 1 h after delivery, , , mean±SD,80.88, mmHg, SD,4.75, , , ,0.017
+PR 1 h after delivery, , , mean±SD,86.44, , SD,5.45, , , ,0.23
+PR 1 h after delivery, , , mean±SD,85.47, , SD,6.09, , , ,0.23
+Drug side effect during the first 24 h<br>  No, TXA group, None, Frequency,96,-92.30%, None, None, None, None, None,0.089
+Drug side effect during the first 24 h<br>  No, Control group, None, Frequency,102,-99.00%, None, None, None, None, None,0.089
+Drug side effect during the first 24 h<br>  Diarrhea, TXA group, None, Frequency,5,-4.80%, None, None, None, None, None, .000*
+Drug side effect during the first 24 h<br>  Diarrhea, Control group, None, Frequency,0, None, None, None, None, None, None, .000*
+Drug side effect during the first 24 h<br>  Headache, TXA group, None, Frequency,2,-1.90%, None, None, None, None, None, .000*
+Drug side effect during the first 24 h<br>  Headache, Control group, None, Frequency,1,-1.00%, None, None, None, None, None, .000*
+Drug side effect during the first 24 h<br>  Musculoskeletal pain, TXA group, None, Frequency,1,-1.00%, None, None, None, None, None, .000*
+Drug side effect during the first 24 h<br>  Musculoskeletal pain, Control group, None, Frequency,0, None, None, None, None, None, None, .000*
+Drug side effect during the first week<br>  Headache, TXA group, None, Frequency,0, None, None, None, None, None, None, .000*
+Drug side effect during the first week<br>  Headache, Control group, None, Frequency,1,-1.00%, None, None, None, None, None, .000*
+Drug side effect during the first week<br>  Musculoskeletal pain, TXA group, None, Frequency,21,-20.20%, None, None, None, None, None, .000*
+Drug side effect during the first week<br>  Musculoskeletal pain, Control group, None, Frequency,6,-5.80%, None, None, None, None, None, .000*
+Drug side effect during the first week<br>  Dizziness, TXA group, None, Frequency,12,-11.70%, None, None, None, None, None, .000*
+Drug side effect during the first week<br>  Dizziness, Control group, None, Frequency,1,-1.00%, None, None, None, None, None, .000*
+Drug side effect during the second week<br>  Musculoskeletal pain, TXA group, None, Frequency,2,-1.90%, None, None, None, None, None,0.157
+Drug side effect during the second week<br>  Musculoskeletal pain, Control group, None, Frequency,0, None, None, None, None, None, None,0.157
+Drug side effect during the third week<br>  Dizziness, TXA group, None, Frequency,2,-1.90%, None, None, None, None, None,0.157
+Drug side effect during the third week<br>  Dizziness, Control group, None, Frequency,0, None, None, None, None, None, None,0.157
