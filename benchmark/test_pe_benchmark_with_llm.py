@@ -4,14 +4,15 @@ from datetime import datetime
 from string import Template
 
 from .utils import generate_columns_definition
+from .common import ResponderWithRetries
 
 def output_msg(msg: str):
     with open("./benchmark-result.log", "a+") as fobj:
         fobj.write(f"{datetime.now().isoformat()}: \n{msg}\n")
 
 system_prompts_template = Template("""
-Please act as a biomedial expert to assess the similarities and differences between two biomedical tables. Provide a similarity rating
-on a scale of 0 to 100, where 100 indicates identical tables and 0 indicates completely different tables.
+Please act as a biomedial expert to assess the similarities and differences between two biomedical tables, one is baseline table, the other is extracted table. 
+Provide a similarity rating on a scale of 0 to 100, where 100 indicates identical tables and 0 indicates completely different tables.
 The tables contains the following columns:
 $columns_definition
 
@@ -20,10 +21,10 @@ Note:  Evaluate the similarity of the two tables regardless of their row order a
 """)
 
 table_prompt_template = Template("""
-table 1:
+baseline table :
 $table_baseline
 
-table 2:
+extracted table:
 $table_generated
 Please assess the above two tables using Table 1 as the standard.
 Note:
@@ -48,9 +49,18 @@ def test_claude(client):
     print(msg)
     assert msg is not None
 
-# @pytest.mark.skip("temporary skip")
+@pytest.mark.skip("temporary skip")
 @pytest.mark.parametrize("pmid", [
-    "15930210",
+    # "15930210",
+    "18782787",
+    "30308427",
+    "33864754",
+    "34024233",
+    "34083820",
+    "34741059",
+    "35296792",
+    "35997979",
+    "36396314",
 ])
 def test_gemini_similarity(client, pmid):
     with open(f"./benchmark/pe/{pmid}_gemini15.csv", "r") as fobj:
@@ -71,19 +81,22 @@ def test_gemini_similarity(client, pmid):
     output_msg(msg)
     assert msg is not None
 
-@pytest.mark.skip("temporary skip")
 @pytest.mark.parametrize("pmid", [
-    "35489632",
-    "30825333",
-    "16143486",
-    "22050870",
-    "17635501",
-
+    # "15930210",
+    # "18782787",
+    # "30308427",
+    "33864754", #
+    # "34024233",
+    # "34083820",
+    # "34741059",
+    # "35296792",
+    # "35997979",
+    # "36396314",
 ])
 def test_gpt_similarity(client, pmid):
-    with open(f"./benchmark/data/{pmid}-pk-summary-gpt4o.csv", "r") as fobj:
+    with open(f"./benchmark/pe/{pmid}_gpt4o.csv", "r") as fobj:
         table_gpt4o = fobj.read()
-    with open(f"./benchmark/data/{pmid}-pk-summary-baseline.csv", "r") as fobj:
+    with open(f"./benchmark/pe/{pmid}_baseline.csv", "r") as fobj:
         table_baseline = fobj.read()
     
     user_message = table_prompt_template.substitute({
@@ -94,50 +107,10 @@ def test_gpt_similarity(client, pmid):
     system_prompts = system_prompts_template.substitute({
         "columns_definition": cols_definition
     })
-    msg, usage = client.create(system_prompts, user_message)
+    
+    responder = ResponderWithRetries(lambda args: client.create(args[0], args[1]))
+    msg, usage = responder.respond([system_prompts, user_message])
     output_msg("\n")
     output_msg(f"pmid: {pmid}, gpt")
     output_msg(msg)
     assert msg is not None
-
-@pytest.mark.skip()
-@pytest.mark.parametrize("pmid", [
-    "29943508",
-    "30950674",
-    "34114632",
-    "34183327",
-    "35465728",
-])
-def test_5_papers(client, pmid):
-    with open(f"./benchmark/data/{pmid}-pk-summary-gpt4o.csv", "r") as fobj:
-        table_gpt4o = fobj.read()
-    with open(f"./benchmark/data/{pmid}-pk-summary-baseline.csv", "r") as fobj:
-        table_baseline = fobj.read()
-    with open(f"./benchmark/data/{pmid}-pk-summary-gemini15.csv", "r") as fobj:
-        table_gemini = fobj.read()
-    
-    user_msg = table_prompt_template.substitute({
-        "table_baseline": table_baseline,
-        "table_generated": table_gpt4o,
-    })
-    cols_definition = generate_columns_definition("pk")
-    system_prompts = system_prompts_template.substitute({
-        "columns_definition": cols_definition
-    })
-    msg, _ = client.create(system_prompts, user_msg)
-    output_msg("\n")
-    output_msg(f"pmid: {pmid}, gpt")
-    output_msg(msg)
-
-    user_msg = table_prompt_template.substitute({
-        "table_baseline": table_baseline,
-        "table_generated": table_gemini,
-    })
-    cols_definition = generate_columns_definition("pk")
-    system_prompts = system_prompts_template.substitute({
-        "columns_definition": cols_definition
-    })
-    msg, _ = client.create(system_prompts, user_msg)
-    output_msg("\n")
-    output_msg(f"pmid: {pmid}, gemini")
-    output_msg(msg)
