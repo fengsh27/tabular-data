@@ -1,0 +1,32 @@
+﻿,Characteristic/risk factor, Exposure, Outcomes, Statistic, Value, Unit, Variability statistic, Variability value, Interval type, Interval low, Interval high, P value
+0,Gestational age at birth  weeks, , , mean,38.9, weeks, standard deviation,1.2, , , , 0.04
+1,Female sex, , , number,52, %, ,40, , , , 0.22
+2,Race - White, , , number,87, %, ,67, , , , 0.60
+3,Race - Black, , , number,31, %, ,24, , , , 
+4,Race - Asian, , , number,2, %, ,2, , , , 
+5,Race - American Indian or Alaska Native, , , number,1, %, ,1, , , , 
+6,Race - Other, , , number,8, %, ,6, , , , 
+7,Ethnicity Hispanic, , , number,8, %, ,6, , , , 0.55
+8,Corrective, , , number,83, %, ,64, , , , 0.93
+9,Transposition of the great arteries, , , number,38, %, ,29, , , , 
+10,Aortic arch hypoplasia with VSD, , , number,21, %, ,16, , , , 
+11,Truncus arteriosus, , , number,7, %, ,5, , , , 
+12,Tetralogy of Fallot, , , number,0, %, ,0, , , , 
+13,Other, , , number,17, %, ,13, , , , 
+14,Palliative, , , number,46, %, ,36, , , , 
+15,Hypoplastic left heart syndrome, , , number,19, %, ,15, , , , 
+16,Other single ventricle lesions, , , number,19, %, ,15, , , , 
+17,Tetralogy of Fallot with PA, , , number,5, %, ,4, , , , 
+18,Other, , , number,3, %, ,2, , , , 
+19,Age at surgery  days, , , mean,9, days, standard deviation,5.5, , , , 0.50
+20,Weight at surgery  kg, , , mean,3.3, kg, standard deviation,0.5, , , , 0.10
+21,STAT mortality risk category - 1, , , number,1, %, ,1, , , , 0.49
+22,STAT mortality risk category - 2, , , number,2, %, ,2, , , , 
+23,STAT mortality risk category - 3, , , number,30, %, ,23, , , , 
+24,STAT mortality risk category - 4, , , number,67, %, ,52, , , , 
+25,STAT mortality risk category - 5, , , number,29, %, ,22, , , , 
+26,CPB duration  min, , , mean,182, min, standard deviation,63.6, , , , 0.57
+27,Aortic cross clamp duration  min, , , mean,83, min, standard deviation,37.1, , , , 0.58
+28,Use of DHCA, , , number,28, %, ,22, , , , 0.92
+29,DCHA duration  min, , , mean,15, min, standard deviation,17.7, , , , 0.10
+30,Modified ultrafiltration, , , number,127, %, ,98, , , , 0.18

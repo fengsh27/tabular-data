@@ -1,106 +1,106 @@
-﻿Characteristic/risk factor, Exposure, Outcomes, Statistic, Value, Unit, Variability statistic, Variability value, Interval type, Interval low, Interval high, P value
-Failure (nonresponders),,,,,,,,,,,
-*Fisher's exact test (not significant)., DP, Rate of MBP Response to Vasopressor Therapy, frequency,1,-3.7, , , , , , 
-Failure (nonresponders),,,,,,,,,,,
-*Fisher's exact test (not significant)., EP, Rate of MBP Response to Vasopressor Therapy, frequency,2,-6.3, , , , , , 
-Success  MBP-OP at,,,,,,,,,,,
-†Success was attainment of MBP-OP by groups at different time points (T1–T4) with dose escalation (20 minutes after each increase in dose).,,,,,,,,,,,
-‡χ2 analysis (not significant)., DP, Rate of MBP Response to Vasopressor Therapy, frequency,6,-22.2, , , , , , 
-Success  MBP-OP at,,,,,,,,,,,
-†Success was attainment of MBP-OP by groups at different time points (T1–T4) with dose escalation (20 minutes after each increase in dose).,,,,,,,,,,,
-‡χ2 analysis (not significant)., EP, Rate of MBP Response to Vasopressor Therapy, frequency,6,-18.8, , , , , , 
-Success  MBP-OP at,,,,,,,,,,,
-†Success was attainment of MBP-OP by groups at different time points (T1–T4) with dose escalation (20 minutes after each increase in dose).,,,,,,,,,,,
-‡χ2 analysis (not significant)., DP, Rate of MBP Response to Vasopressor Therapy, frequency,9,-33.3, , , , , , 
-Success  MBP-OP at,,,,,,,,,,,
-†Success was attainment of MBP-OP by groups at different time points (T1–T4) with dose escalation (20 minutes after each increase in dose).,,,,,,,,,,,
-‡χ2 analysis (not significant)., EP, Rate of MBP Response to Vasopressor Therapy, frequency,9,-28.1, , , , , , 
-Success  MBP-OP at,,,,,,,,,,,
-†Success was attainment of MBP-OP by groups at different time points (T1–T4) with dose escalation (20 minutes after each increase in dose).,,,,,,,,,,,
-‡χ2 analysis (not significant)., DP, Rate of MBP Response to Vasopressor Therapy, frequency,7,-25.9, , , , , , 
-Success  MBP-OP at,,,,,,,,,,,
-†Success was attainment of MBP-OP by groups at different time points (T1–T4) with dose escalation (20 minutes after each increase in dose).,,,,,,,,,,,
-‡χ2 analysis (not significant)., EP, Rate of MBP Response to Vasopressor Therapy, frequency,6,-18.8, , , , , , 
-Success  MBP-OP at,,,,,,,,,,,
-†Success was attainment of MBP-OP by groups at different time points (T1–T4) with dose escalation (20 minutes after each increase in dose).,,,,,,,,,,,
-‡χ2 analysis (not significant)., DP, Rate of MBP Response to Vasopressor Therapy, frequency,4,-14.8, , , , , , 
-Success  MBP-OP at,,,,,,,,,,,
-†Success was attainment of MBP-OP by groups at different time points (T1–T4) with dose escalation (20 minutes after each increase in dose).,,,,,,,,,,,
-‡χ2 analysis (not significant)., EP, Rate of MBP Response to Vasopressor Therapy, frequency,9,-28.1, , , , , , 
-Delayed failure,,,,,,,,,,,
-*Fisher's exact test (not significant).,,,,,,,,,,,
-§Delayed failure was noted when patients reached MBP-OP initially but decreased below the desired MBP after the study was completed., DP, Rate of MBP Response to Vasopressor Therapy, frequency,8,-29.6, , , , , , 
-Delayed failure,,,,,,,,,,,
-*Fisher's exact test (not significant).,,,,,,,,,,,
-§Delayed failure was noted when patients reached MBP-OP initially but decreased below the desired MBP after the study was completed., EP, Rate of MBP Response to Vasopressor Therapy, frequency,10,-31.2, , , , , , 
-Total treatment failure,,,,,,,,,,,
-*Fisher's exact test (not significant)., DP, Rate of MBP Response to Vasopressor Therapy, frequency,9,-33.3, , , , , , 
-Total treatment failure,,,,,,,,,,,
-*Fisher's exact test (not significant)., EP, Rate of MBP Response to Vasopressor Therapy, frequency,12,-37.5, , , , , , 
-MBP  mm Hg,,,,,,,,,,,
-DP, , MBP, mean,25, mm Hg, SD,3, , , , 
-MBP  mm Hg,,,,,,,,,,,
-DP, , MBP, mean,30, mm Hg, SD,7, , , , <0.05
-MBP  mm Hg,,,,,,,,,,,
-DP, , MBP, mean,39, mm Hg, SD,6, , , , <0.05
-MBP  mm Hg,,,,,,,,,,,
-DP, , MBP, mean,37, mm Hg, SD,5, , , , <0.05
-MBP  mm Hg,,,,,,,,,,,
-EP, , MBP, mean,26, mm Hg, SD,3, , , , 
-MBP  mm Hg,,,,,,,,,,,
-EP, , MBP, mean,29, mm Hg, SD,6, , , , <0.05
-MBP  mm Hg,,,,,,,,,,,
-EP, , MBP, mean,36, mm Hg, SD,4, , , , <0.05
-MBP  mm Hg,,,,,,,,,,,
-EP, , MBP, mean,36, mm Hg, SD,5, , , , <0.05
-MBP  mm Hg,,,,,,,,,,,
-Total, , MBP, mean,26, mm Hg, SD,3, , , , 
-MBP  mm Hg,,,,,,,,,,,
-Total, , MBP, mean,30, mm Hg, SD,6, , , , 
-MBP  mm Hg,,,,,,,,,,,
-Total, , MBP, mean,37, mm Hg, SD,5, , , , 
-MBP  mm Hg,,,,,,,,,,,
-Total, , MBP, mean,37, mm Hg, SD,5, , , , <0.001
-Heart rate  beats per min,,,,,,,,,,,
-DP, , Heart rate, mean,141, beats per min, SD,12, , , , 
-Heart rate  beats per min,,,,,,,,,,,
-DP, , Heart rate, mean,149, beats per min, SD,17, , , , 
-Heart rate  beats per min,,,,,,,,,,,
-DP, , Heart rate, mean,157, beats per min, SD,19, , , , <0.05
-Heart rate  beats per min,,,,,,,,,,,
-DP, , Heart rate, mean,162, beats per min, SD,17, , , , <0.05
-Heart rate  beats per min,,,,,,,,,,,
-EP, , Heart rate, mean,141, beats per min, SD,14, , , , 
-Heart rate  beats per min,,,,,,,,,,,
-EP, , Heart rate, mean,153, beats per min, SD,19, , , , <0.05
-Heart rate  beats per min,,,,,,,,,,,
-EP, , Heart rate, mean,169, beats per min, SD,19, , , , <0.05
-Heart rate  beats per min,,,,,,,,,,,
-EP, , Heart rate, mean,174, beats per min, SD,16, , , , <0.05
-Heart rate  beats per min,,,,,,,,,,,
-Total, , Heart rate, mean,141, beats per min, SD,13, , , , 
-Heart rate  beats per min,,,,,,,,,,,
-Total, , Heart rate, mean,151, beats per min, SD,18, , , , 
-Heart rate  beats per min,,,,,,,,,,,
-Total, , Heart rate, mean,164, beats per min, SD,19, , , , 
-Heart rate  beats per min,,,,,,,,,,,
-Total, , Heart rate, mean,168, beats per min, SD,18, , , , <0.001
-Inotrope group, Change in variable with respect to baseline, Base excess, Two-way analysis of variance for repeated measurements, None, None, None, None, P, <,0.05, None
-Inotrope group, Change in variable with respect to baseline, Glucose, Two-way analysis of variance for repeated measurements, None, None, None, None, P, <,0.05, None
-Inotrope group, Change in variable with respect to baseline, Hematocrit, Two-way analysis of variance for repeated measurements, None, None, None, None, P, <,0.05, None
-Normal, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
-Normal, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
-Grade 1 or 2 IVH, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
-Grade 1 or 2 IVH, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
-Grade 3 IVH, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
-Grade 3 IVH, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
-PVHI, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
-PVHI, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
-Moderate/severe PVE, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
-Moderate/severe PVE, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
-Persistent PVE, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
-Persistent PVE, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
-Cystic PVL, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
-Cystic PVL, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
-Posthemorrhagic hydrocephalus, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
-Posthemorrhagic hydrocephalus, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
+,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Lower limit,High limit,P value
+0,Failure (nonresponders),,,,,,,,,,,
+1,*Fisher's exact test (not significant)., DP, Rate of MBP Response to Vasopressor Therapy, frequency,1,-3.7, , , , , , 
+2,Failure (nonresponders),,,,,,,,,,,
+3,*Fisher's exact test (not significant)., EP, Rate of MBP Response to Vasopressor Therapy, frequency,2,-6.3, , , , , , 
+4,Success  MBP-OP at,,,,,,,,,,,
+5,†Success was attainment of MBP-OP by groups at different time points (T1–T4) with dose escalation (20 minutes after each increase in dose).,,,,,,,,,,,
+6,‡χ2 analysis (not significant)., DP, Rate of MBP Response to Vasopressor Therapy, frequency,6,-22.2, , , , , , 
+7,Success  MBP-OP at,,,,,,,,,,,
+8,†Success was attainment of MBP-OP by groups at different time points (T1–T4) with dose escalation (20 minutes after each increase in dose).,,,,,,,,,,,
+9,‡χ2 analysis (not significant)., EP, Rate of MBP Response to Vasopressor Therapy, frequency,6,-18.8, , , , , , 
+10,Success  MBP-OP at,,,,,,,,,,,
+11,†Success was attainment of MBP-OP by groups at different time points (T1–T4) with dose escalation (20 minutes after each increase in dose).,,,,,,,,,,,
+12,‡χ2 analysis (not significant)., DP, Rate of MBP Response to Vasopressor Therapy, frequency,9,-33.3, , , , , , 
+13,Success  MBP-OP at,,,,,,,,,,,
+14,†Success was attainment of MBP-OP by groups at different time points (T1–T4) with dose escalation (20 minutes after each increase in dose).,,,,,,,,,,,
+15,‡χ2 analysis (not significant)., EP, Rate of MBP Response to Vasopressor Therapy, frequency,9,-28.1, , , , , , 
+16,Success  MBP-OP at,,,,,,,,,,,
+17,†Success was attainment of MBP-OP by groups at different time points (T1–T4) with dose escalation (20 minutes after each increase in dose).,,,,,,,,,,,
+18,‡χ2 analysis (not significant)., DP, Rate of MBP Response to Vasopressor Therapy, frequency,7,-25.9, , , , , , 
+19,Success  MBP-OP at,,,,,,,,,,,
+20,†Success was attainment of MBP-OP by groups at different time points (T1–T4) with dose escalation (20 minutes after each increase in dose).,,,,,,,,,,,
+21,‡χ2 analysis (not significant)., EP, Rate of MBP Response to Vasopressor Therapy, frequency,6,-18.8, , , , , , 
+22,Success  MBP-OP at,,,,,,,,,,,
+23,†Success was attainment of MBP-OP by groups at different time points (T1–T4) with dose escalation (20 minutes after each increase in dose).,,,,,,,,,,,
+24,‡χ2 analysis (not significant)., DP, Rate of MBP Response to Vasopressor Therapy, frequency,4,-14.8, , , , , , 
+25,Success  MBP-OP at,,,,,,,,,,,
+26,†Success was attainment of MBP-OP by groups at different time points (T1–T4) with dose escalation (20 minutes after each increase in dose).,,,,,,,,,,,
+27,‡χ2 analysis (not significant)., EP, Rate of MBP Response to Vasopressor Therapy, frequency,9,-28.1, , , , , , 
+28,Delayed failure,,,,,,,,,,,
+29,*Fisher's exact test (not significant).,,,,,,,,,,,
+30,§Delayed failure was noted when patients reached MBP-OP initially but decreased below the desired MBP after the study was completed., DP, Rate of MBP Response to Vasopressor Therapy, frequency,8,-29.6, , , , , , 
+31,Delayed failure,,,,,,,,,,,
+32,*Fisher's exact test (not significant).,,,,,,,,,,,
+33,§Delayed failure was noted when patients reached MBP-OP initially but decreased below the desired MBP after the study was completed., EP, Rate of MBP Response to Vasopressor Therapy, frequency,10,-31.2, , , , , , 
+34,Total treatment failure,,,,,,,,,,,
+35,*Fisher's exact test (not significant)., DP, Rate of MBP Response to Vasopressor Therapy, frequency,9,-33.3, , , , , , 
+36,Total treatment failure,,,,,,,,,,,
+37,*Fisher's exact test (not significant)., EP, Rate of MBP Response to Vasopressor Therapy, frequency,12,-37.5, , , , , , 
+38,MBP  mm Hg,,,,,,,,,,,
+39,DP, , MBP, mean,25, mm Hg, SD,3, , , , 
+40,MBP  mm Hg,,,,,,,,,,,
+41,DP, , MBP, mean,30, mm Hg, SD,7, , , , <0.05
+42,MBP  mm Hg,,,,,,,,,,,
+43,DP, , MBP, mean,39, mm Hg, SD,6, , , , <0.05
+44,MBP  mm Hg,,,,,,,,,,,
+45,DP, , MBP, mean,37, mm Hg, SD,5, , , , <0.05
+46,MBP  mm Hg,,,,,,,,,,,
+47,EP, , MBP, mean,26, mm Hg, SD,3, , , , 
+48,MBP  mm Hg,,,,,,,,,,,
+49,EP, , MBP, mean,29, mm Hg, SD,6, , , , <0.05
+50,MBP  mm Hg,,,,,,,,,,,
+51,EP, , MBP, mean,36, mm Hg, SD,4, , , , <0.05
+52,MBP  mm Hg,,,,,,,,,,,
+53,EP, , MBP, mean,36, mm Hg, SD,5, , , , <0.05
+54,MBP  mm Hg,,,,,,,,,,,
+55,Total, , MBP, mean,26, mm Hg, SD,3, , , , 
+56,MBP  mm Hg,,,,,,,,,,,
+57,Total, , MBP, mean,30, mm Hg, SD,6, , , , 
+58,MBP  mm Hg,,,,,,,,,,,
+59,Total, , MBP, mean,37, mm Hg, SD,5, , , , 
+60,MBP  mm Hg,,,,,,,,,,,
+61,Total, , MBP, mean,37, mm Hg, SD,5, , , , <0.001
+62,Heart rate  beats per min,,,,,,,,,,,
+63,DP, , Heart rate, mean,141, beats per min, SD,12, , , , 
+64,Heart rate  beats per min,,,,,,,,,,,
+65,DP, , Heart rate, mean,149, beats per min, SD,17, , , , 
+66,Heart rate  beats per min,,,,,,,,,,,
+67,DP, , Heart rate, mean,157, beats per min, SD,19, , , , <0.05
+68,Heart rate  beats per min,,,,,,,,,,,
+69,DP, , Heart rate, mean,162, beats per min, SD,17, , , , <0.05
+70,Heart rate  beats per min,,,,,,,,,,,
+71,EP, , Heart rate, mean,141, beats per min, SD,14, , , , 
+72,Heart rate  beats per min,,,,,,,,,,,
+73,EP, , Heart rate, mean,153, beats per min, SD,19, , , , <0.05
+74,Heart rate  beats per min,,,,,,,,,,,
+75,EP, , Heart rate, mean,169, beats per min, SD,19, , , , <0.05
+76,Heart rate  beats per min,,,,,,,,,,,
+77,EP, , Heart rate, mean,174, beats per min, SD,16, , , , <0.05
+78,Heart rate  beats per min,,,,,,,,,,,
+79,Total, , Heart rate, mean,141, beats per min, SD,13, , , , 
+80,Heart rate  beats per min,,,,,,,,,,,
+81,Total, , Heart rate, mean,151, beats per min, SD,18, , , , 
+82,Heart rate  beats per min,,,,,,,,,,,
+83,Total, , Heart rate, mean,164, beats per min, SD,19, , , , 
+84,Heart rate  beats per min,,,,,,,,,,,
+85,Total, , Heart rate, mean,168, beats per min, SD,18, , , , <0.001
+86,Inotrope group, Change in variable with respect to baseline, Base excess, Two-way analysis of variance for repeated measurements, None, None, None, None, P, <,0.05, None
+87,Inotrope group, Change in variable with respect to baseline, Glucose, Two-way analysis of variance for repeated measurements, None, None, None, None, P, <,0.05, None
+88,Inotrope group, Change in variable with respect to baseline, Hematocrit, Two-way analysis of variance for repeated measurements, None, None, None, None, P, <,0.05, None
+89,Normal, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
+90,Normal, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
+91,Grade 1 or 2 IVH, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
+92,Grade 1 or 2 IVH, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
+93,Grade 3 IVH, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
+94,Grade 3 IVH, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
+95,PVHI, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
+96,PVHI, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
+97,Moderate/severe PVE, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
+98,Moderate/severe PVE, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
+99,Persistent PVE, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
+100,Persistent PVE, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
+101,Cystic PVL, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
+102,Cystic PVL, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
+103,Posthemorrhagic hydrocephalus, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant
+104,Posthemorrhagic hydrocephalus, Success, None, Fisher's exact test, None, None, None, None, None, None, None, not significant

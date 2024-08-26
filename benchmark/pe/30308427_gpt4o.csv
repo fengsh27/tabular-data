@@ -1,25 +1,25 @@
-﻿Characteristic/risk factor, Exposure, Outcomes, Statistic, Value, Unit, Variability statistic, Variability value, Interval type, Interval low, Interval high, P value
-Seizure response, CBZ, Seizure-free, Frequency,61, %, ,68.5, , , , 
-Seizure response, VPA, Seizure-free, Frequency,54, %, ,74, , , , 
-Seizure response, LEV, Seizure-free, Frequency,30, %, ,85.7, , , , LEV vs CBZ; 0.07 LEV vs VPA; 0.22
-Seizure response, CBZ, 50% reduction of seizures, Frequency,4, %, ,2.2, , , , 
-Seizure response, VPA, 50% reduction of seizures, Frequency,3, %, ,3.3, , , , 
-Seizure response, LEV, 50% reduction of seizures, Frequency,1, %, ,2.9, , , , LEV vs CBZ; 0.99 LEV vs VPA; 0.99
-Seizure response, CBZ, Total responder, Frequency,65, %, ,73, , , , 
-Seizure response, VPA, Total responder, Frequency,57, %, ,78.1, , , , 
-Seizure response, LEV, Total responder, Frequency,31, %, ,88.6, , , , LEV vs CBZ; 0.09 LEV vs VPA; 0.29
-Complete disappearance, CBZ, Complete disappearance, frequency,0, %, , , , , , 
-Complete disappearance, VPA, Complete disappearance, frequency,24.7, %, , , , , , 
-Complete disappearance, LEV, Complete disappearance, frequency,42.9, %, , , , , , LEV vs CBZ: <0.01  LEV vs VPA: 0.07
-Responder, CBZ, Responder, frequency,11.2, %, , , , , , 
-Responder, VPA, Responder, frequency,31.5, %, , , , , , 
-Responder, LEV, Responder, frequency,28.6, %, , , , , , LEV vs CBZ: 0.03  LEV vs VPA: 0.83
-Total responder, CBZ, Total responder, frequency,11.2, %, , , , , , 
-Total responder, VPA, Total responder, frequency,56.2, %, , , , , , 
-Total responder, LEV, Total responder, frequency,71.4, %, , , , , , LEV vs CBZ: <0.01  LEV vs VPA: 0.14
-Exacerbation, CBZ, Exacerbation, frequency,9, %, , , , , , 
-Exacerbation, VPA, Exacerbation, frequency,0, %, , , , , , 
-Exacerbation, LEV, Exacerbation, frequency,0, %, , , , , , 
-Duration of response in EEG responder, CBZ, Duration of response in EEG responder, mean,36.3, months, , , , , , LEV vs CBZ: <0.001
-Duration of response in EEG responder, VPA, Duration of response in EEG responder, mean,23.1, months, , , , , , LEV vs VPA: <0.005
-Duration of response in EEG responder, LEV, Duration of response in EEG responder, mean,14.7, months, , , , , , 
+,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Lower limit,High limit,P value
+0,Seizure response, CBZ, Seizure-free, Frequency,61, %, ,68.5, , , , 
+1,Seizure response, VPA, Seizure-free, Frequency,54, %, ,74, , , , 
+2,Seizure response, LEV, Seizure-free, Frequency,30, %, ,85.7, , , , LEV vs CBZ; 0.07 LEV vs VPA; 0.22
+3,Seizure response, CBZ, 50% reduction of seizures, Frequency,4, %, ,2.2, , , , 
+4,Seizure response, VPA, 50% reduction of seizures, Frequency,3, %, ,3.3, , , , 
+5,Seizure response, LEV, 50% reduction of seizures, Frequency,1, %, ,2.9, , , , LEV vs CBZ; 0.99 LEV vs VPA; 0.99
+6,Seizure response, CBZ, Total responder, Frequency,65, %, ,73, , , , 
+7,Seizure response, VPA, Total responder, Frequency,57, %, ,78.1, , , , 
+8,Seizure response, LEV, Total responder, Frequency,31, %, ,88.6, , , , LEV vs CBZ; 0.09 LEV vs VPA; 0.29
+9,Complete disappearance, CBZ, Complete disappearance, frequency,0, %, , , , , , 
+10,Complete disappearance, VPA, Complete disappearance, frequency,24.7, %, , , , , , 
+11,Complete disappearance, LEV, Complete disappearance, frequency,42.9, %, , , , , , LEV vs CBZ: <0.01  LEV vs VPA: 0.07
+12,Responder, CBZ, Responder, frequency,11.2, %, , , , , , 
+13,Responder, VPA, Responder, frequency,31.5, %, , , , , , 
+14,Responder, LEV, Responder, frequency,28.6, %, , , , , , LEV vs CBZ: 0.03  LEV vs VPA: 0.83
+15,Total responder, CBZ, Total responder, frequency,11.2, %, , , , , , 
+16,Total responder, VPA, Total responder, frequency,56.2, %, , , , , , 
+17,Total responder, LEV, Total responder, frequency,71.4, %, , , , , , LEV vs CBZ: <0.01  LEV vs VPA: 0.14
+18,Exacerbation, CBZ, Exacerbation, frequency,9, %, , , , , , 
+19,Exacerbation, VPA, Exacerbation, frequency,0, %, , , , , , 
+20,Exacerbation, LEV, Exacerbation, frequency,0, %, , , , , , 
+21,Duration of response in EEG responder, CBZ, Duration of response in EEG responder, mean,36.3, months, , , , , , LEV vs CBZ: <0.001
+22,Duration of response in EEG responder, VPA, Duration of response in EEG responder, mean,23.1, months, , , , , , LEV vs VPA: <0.005
+23,Duration of response in EEG responder, LEV, Duration of response in EEG responder, mean,14.7, months, , , , , , 

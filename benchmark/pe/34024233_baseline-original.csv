@@ -1,0 +1,53 @@
+﻿PMID,Characteristic/Risk Factor,Exposure,Outcomes,Statistic,Value,Unit,Variability Statistic,Variability Value,Interval Type,Interval Low Bound,Intervale High Bound,p-Value
+34024233,NA,tranexamic acid,Abortion,Frequency,11,Number of patients,%,10.6,NA,NA,NA,0.153
+34024233,NA,tranexamic acid,Duration of the third stage of labor,mean,7.15,min,SD,3.88,NA,NA,NA,0.224
+34024233,NA,tranexamic acid,BP before delivery,mean,82.96,mmHg,SD,6.18,NA,NA,NA,0.615
+34024233,NA,tranexamic acid,PR before delivery,mean,85.64,Number,SD,6.82,NA,NA,NA,9.50E-02
+34024233,NA,tranexamic acid,Hb before delivery,mean,13.89,Number,SD,2.77,NA,NA,NA,8.20E-02
+34024233,NA,control,Abortion,Frequency,18,Number of patients,%,17.5,NA,NA,NA,0.153
+34024233,NA,control,Duration of the third stage of labor,mean,7.95,min,SD,5.4,NA,NA,NA,0.224
+34024233,NA,control,BP before delivery,mean,83.4,mmHg,SD,6.28,NA,NA,NA,0.615
+34024233,NA,control,PR before delivery,mean,87.12,Number,SD,5.74,NA,NA,NA,9.50E-02
+34024233,NA,control,Hb before delivery,mean,13.37,Number,SD,1.23,NA,NA,NA,8.20E-02
+34024233,NA,tranexamic acid,Blood Loss,mean,208.81,mL,SD,15.68,NA,NA,NA,3.30E-02
+34024233,NA,tranexamic acid,No Need to uterotonic agents,Frequency,97,Number of patients,%,93.3,NA,NA,NA,0.187
+34024233,NA,tranexamic acid,Misoprostol Need to uterotonic agents,Frequency,0,Number of patients,%,0,NA,NA,NA,0
+34024233,NA,tranexamic acid,Oxytocin Need to uterotonic agents,Frequency,7,Number of patients,%,6.7,NA,NA,NA,0.685
+34024233,NA,tranexamic acid,Hb 6 h after delivery,mean,12.67,Number,SD,1.44,NA,NA,NA,0
+34024233,NA,tranexamic acid,Difference between Hb levels before and 6 h after delivery,mean,1.21,Number,SD,3.71,NA,NA,NA,2.90E-02
+34024233,NA,tranexamic acid,BP 1 h after delivery,mean,82.52,mmHg,SD,5.06,NA,NA,NA,1.70E-02
+34024233,NA,tranexamic acid,PR 1 h after delivery,mean,86.44,Number,SD,5.45,NA,NA,NA,0.23
+34024233,NA,control,Blood Loss,mean,250.74,mL,SD,14.73,NA,NA,NA,3.30E-02
+34024233,NA,control,No Need to uterotonic agents,Frequency,95,Number of patients,%,92.2,NA,NA,NA,0.187
+34024233,NA,control,Misoprostol Need to uterotonic agents,Frequency,3,Number of patients,%,2.9,NA,NA,NA,0
+34024233,NA,control,Oxytocin Need to uterotonic agents,Frequency,5,Number of patients,%,4.9,NA,NA,NA,0.685
+34024233,NA,control,Hb 6 h after delivery,mean,11.37,Number,SD,1.7,NA,NA,NA,0
+34024233,NA,control,Difference between Hb levels before and 6 h after delivery,mean,2,Number,SD,1.17,NA,NA,NA,2.90E-02
+34024233,NA,control,BP 1 h after delivery,mean,80.88,mmHg,SD,4.75,NA,NA,NA,1.70E-02
+34024233,NA,control,PR 1 h after delivery,mean,85.47,Number,SD,6.09,NA,NA,NA,0.23
+34024233,NA,tranexamic acid,"
+No Drug side effect during the first 24 h",Frequency,96,Number of patients,%,92.3,NA,NA,NA,8.90E-02
+34024233,NA,tranexamic acid,"
+Drug side effect during the first 24 h: Diarrhea",Frequency,5,Number of patients,%,4.8,NA,NA,NA,0
+34024233,NA,tranexamic acid,"
+Drug side effect during the first 24 h: Headache",Frequency,2,Number of patients,%,1.9,NA,NA,NA,0
+34024233,NA,tranexamic acid,"
+Drug side effect during the first 24 h: Musculoskeletal Pain",Frequency,1,Number of patients,%,1,NA,NA,NA,0
+34024233,NA,tranexamic acid,Drug side effect during  the first week: Headache,Frequency,0,Number of patients,%,0,NA,NA,NA,0
+34024233,NA,tranexamic acid,Drug side effect during  the first week: Musculosketelal Pain,Frequency,21,Number of patients,%,20,NA,NA,NA,0
+34024233,NA,tranexamic acid,Drug side effect during  the first week: Dizziness,Frequency,12,Number of patients,%,11.7,NA,NA,NA,0
+34024233,NA,tranexamic acid,Drug Side Effect during the second week: Musculoskeletal pain,Frequency,2,Number of patients,%,1.9,NA,NA,NA,0.157
+34024233,NA,tranexamic acid,Drug Side Effect during the third week: Dizziness,Frequency,2,Number of patients,%,1.9,NA,NA,NA,0.157
+34024233,NA,control,"
+No Drug side effect during the first 24 h",Frequency,102,Number of patients,%,99,NA,NA,NA,8.90E-02
+34024233,NA,control,"
+Drug side effect during the first 24 h: Diarrhea",Frequency,0,Number of patients,%,0,NA,NA,NA,0
+34024233,NA,control,"
+Drug side effect during the first 24 h: Headache",Frequency,1,Number of patients,%,1,NA,NA,NA,0
+34024233,NA,control,"
+Drug side effect during the first 24 h: Musculoskeletal Pain",Frequency,0,Number of patients,%,0,NA,NA,NA,0
+34024233,NA,control,Drug side effect during  the first week: Headache,Frequency,1,Number of patients,%,1,NA,NA,NA,0
+34024233,NA,control,Drug side effect during  the first week: Musculosketelal Pain,Frequency,6,Number of patients,%,5.8,NA,NA,NA,0
+34024233,NA,control,Drug side effect during  the first week: Dizziness,Frequency,1,Number of patients,%,1,NA,NA,NA,0
+34024233,NA,control,Drug Side Effect during the second week: Musculoskeletal pain,Frequency,0,Number of patients,%,0,NA,NA,NA,0.157
+34024233,NA,control,Drug Side Effect during the third week: Dizziness,Frequency,0,Number of patients,%,0,NA,NA,NA,0.157

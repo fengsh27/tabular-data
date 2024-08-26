@@ -1,3 +1,3 @@
-﻿PMID,Characteristic/Risk Factor,Exposure,Outcomes,Statistic,Value,Unit,Variability Statistic,Variability Value,Interval Type,Interval Low Bound,Intervale High Bound,p-Value
-34083820,NA,Quetiapine,Exposed while breast feeding,Frequency,2,number of patients,NA,NA,NA,NA,NA,NA
-34083820,NA,Quetiapine,Delay in both motor and mental milestones,Frequency,1,number of patients,NA,NA,NA,NA,NA,NA
+,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Lower limit,High limit,P value
+0,NA,Quetiapine,Exposed while breast feeding,Frequency,2,number of patients,NA,NA,NA,NA,NA,NA
+1,NA,Quetiapine,Delay in both motor and mental milestones,Frequency,1,number of patients,NA,NA,NA,NA,NA,NA

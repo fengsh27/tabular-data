@@ -1,69 +1,69 @@
-﻿Characteristic/risk factor, Exposure, Outcomes, Statistic, Value, Unit, Variability statistic, Variability value, Interval type, Interval low, Interval high, P value
-White matter score - Cystic lesions, Exposure to morphine in the first 7 days of life, Cystic lesions, Median (IQR),0, , IQR, 0-3, IQR,0,3,0.13
-White matter score - Focal signal abnormality, Exposure to morphine in the first 7 days of life, Focal signal abnormality, Median (IQR),0, , IQR, 0-2, IQR,0,2,0.02
-White matter score - Myelination delay, Exposure to morphine in the first 7 days of life, Myelination delay, Median (IQR),1, , IQR, 1-2, IQR,1,2,0.06
-White matter score - Thinning of the corpus callosum, Exposure to morphine in the first 7 days of life, Thinning of the corpus callosum, Median (IQR),0, , IQR, 0-2, IQR,0,2,0.009
-White matter score - Dilated lateral ventricles, Exposure to morphine in the first 7 days of life, Dilated lateral ventricles, Median (IQR),2, , IQR, 0-3, IQR,0,3,0.004
-White matter score - Volume reduction, Exposure to morphine in the first 7 days of life, Volume reduction, Median (IQR),2, , IQR, 1-2, IQR,1,2,0.14
-White matter score - Total white matter score, Exposure to morphine in the first 7 days of life, Total white matter score, Median (IQR),7, , IQR, 4-11, IQR,4,11, <0.001
-Cortical gray matter score - Signal abnormality, Exposure to morphine in the first 7 days of life, Signal abnormality, Median (IQR),0, , IQR, 0-0, IQR,0,0,0.38
-Cortical gray matter score - Gyral maturation, Exposure to morphine in the first 7 days of life, Gyral maturation, Median (IQR),0, , IQR, 0-0, IQR,0,0,0.71
-Cortical gray matter score - Increased extracerebral space, Exposure to morphine in the first 7 days of life, Increased extracerebral space, Median (IQR),0, , IQR, 0-0, IQR,0,0,0.09
-Cortical gray matter score - Total cortical gray matter score, Exposure to morphine in the first 7 days of life, Total cortical gray matter score, Median (IQR),0, , IQR, 0-1, IQR,0,1,0.59
-Deep gray matter score - Signal abnormality, Exposure to morphine in the first 7 days of life, Signal abnormality, Median (IQR),0, , IQR, 0-1, IQR,0,1,0.06
-Deep gray matter score - Volume reduction, Exposure to morphine in the first 7 days of life, Volume reduction, Median (IQR),0, , IQR, 0-2, IQR,0,2,0.01
-Deep gray matter score - Total deep gray matter score, Exposure to morphine in the first 7 days of life, Total deep gray matter score, Median (IQR),0, , IQR, 0-3, IQR,0,3,0.01
-Cerebellum score - Signal abnormality, Exposure to morphine in the first 7 days of life, Signal abnormality, Median (IQR),0.5, , IQR, 0-3, IQR,0,3,0.001
-Cerebellum score - Volume reduction, Exposure to morphine in the first 7 days of life, Volume reduction, Median (IQR),3, , IQR, 1-3, IQR,1,3, <0.001
-Cerebellum score - Total cerebellar score, Exposure to morphine in the first 7 days of life, Total cerebellar score, Median (IQR),3, , IQR, 2-5, IQR,2,5, <0.001
-Global brain abnormality score, Exposure to morphine in the first 7 days of life, Global brain abnormality score, Median (IQR),11.5, , IQR, 8-19, IQR,8,19, <0.001
-White matter score, Morphine exposure in first week of life, Focal signal abnormality, aRR,0.68, , 95% CI, 0.31–1.49, 95% confidence interval,0.31,1.49,0.33
-White matter score, Morphine exposure in first week of life, Thinning of the corpus callosum, aRR,1.1, , 95% CI, 0.52–2.31, 95% confidence interval,0.52,2.31,0.79
-White matter score, Morphine exposure in first week of life, Dilated lateral ventricles, aRR,1.01, , 95% CI, 0.6–1.71, 95% confidence interval,0.6,1.71,0.95
-White matter score, Morphine exposure in first week of life, Total white matter score, aRR,1.32, , 95% CI, 1.01–1.72, 95% confidence interval,1.01,1.72,0.03
-Deep gray matter score, Morphine exposure in first week of life, Volume reduction, aRR,0.91, , 95% CI, 0.42–1.94, 95% confidence interval,0.42,1.94,0.79
-Deep gray matter score, Morphine exposure in first week of life, Total deep gray matter score, aRR,1.11, , 95% CI, 0.48–2.58, 95% confidence interval,0.48,2.58,0.8
-Cerebellum score, Morphine exposure in first week of life, Signal abnormality, aRR,1.19, , 95% CI, 0.51–2.79, 95% confidence interval,0.51,2.79,0.67
-Cerebellum score, Morphine exposure in first week of life, Volume reduction, aRR,1.28, , 95% CI, 1.02–1.61, 95% confidence interval,1.02,1.61,0.02
-Cerebellum score, Morphine exposure in first week of life, Total cerebellar score, aRR,1.36, , 95% CI, 1.03–1.81, 95% confidence interval,1.03,1.81,0.02
-Global brain abnormality score, Morphine exposure in first week of life, Global brain abnormality score, aRR,1.31, , 95% CI, 0.99–1.74, 95% confidence interval,0.99,1.74,0.06
-GA, Exposure to morphine in the first 7 days of life, Global brain abnormalities score on TEA-MRI, Median,30, , IQR, 28-32, Range,28,32,0.26
-GA, Exposure to morphine in the first 7 days of life, Global brain abnormalities score on TEA-MRI, Median,29, , IQR, 27-31, Range,27,31,0.26
-BW, Exposure to morphine in the first 7 days of life, Global brain abnormalities score on TEA-MRI, Median,1170, , IQR, 965-1317.5, Range,965,1317.5,0.21
-BW, Exposure to morphine in the first 7 days of life, Global brain abnormalities score on TEA-MRI, Median,1080, , IQR, 922.5-1285, Range,922.5,1285,0.21
-Cystic lesions, Exposure to morphine in the first 7 days of life, White matter score, Median,0, , IQR, 0-3, Range,0,3,0.13
-Cystic lesions, Exposure to morphine in the first 7 days of life, White matter score, Median,0.5, , IQR, 0-4, Range,0,4,0.13
-Focal signal abnormality, Exposure to morphine in the first 7 days of life, White matter score, Median,0, , IQR, 0-0.25, Range,0,0.25,0.06
-Focal signal abnormality, Exposure to morphine in the first 7 days of life, White matter score, Median,0, , IQR, 0-2, Range,0,2,0.06
-Myelination delay, Exposure to morphine in the first 7 days of life, White matter score, Median,1, , IQR, 1-1, Range,1,1,0.02
-Myelination delay, Exposure to morphine in the first 7 days of life, White matter score, Median,1, , IQR, 1-2, Range,1,2,0.02
-Thinning of the corpus callosum, Exposure to morphine in the first 7 days of life, White matter score, Median,0, , IQR, 0-0.25, Range,0,0.25,0.002
-Thinning of the corpus callosum, Exposure to morphine in the first 7 days of life, White matter score, Median,1.5, , IQR, 0-2, Range,0,2,0.002
-Dilated lateral ventricles, Exposure to morphine in the first 7 days of life, White matter score, Median,0, , IQR, 0-1, Range,0,1,0.03
-Dilated lateral ventricles, Exposure to morphine in the first 7 days of life, White matter score, Median,1.5, , IQR, 0-3, Range,0,3,0.03
-Volume reduction, Exposure to morphine in the first 7 days of life, White matter score, Median,1, , IQR, 1-2, Range,1,2,0.27
-Volume reduction, Exposure to morphine in the first 7 days of life, White matter score, Median,2, , IQR, 1-2.25, Range,1,2.25,0.27
-Total white matter score, Exposure to morphine in the first 7 days of life, White matter score, Median,3, , IQR, 2-8, Range,2,8,0.003
-Total white matter score, Exposure to morphine in the first 7 days of life, White matter score, Median,7.5, , IQR, 4-12.25, Range,4,12.25,0.003
-Signal abnormality, Exposure to morphine in the first 7 days of life, Cortical gray matter score, Median,0, , IQR, 0-0, Range,0,0,0.89
-Signal abnormality, Exposure to morphine in the first 7 days of life, Cortical gray matter score, Median,0, , IQR, 0-0, Range,0,0,0.89
-Gray maturation, Exposure to morphine in the first 7 days of life, Cortical gray matter score, Median,0, , IQR, 0-0, Range,0,0,0.3
-Gray maturation, Exposure to morphine in the first 7 days of life, Cortical gray matter score, Median,0, , IQR, 0-0, Range,0,0,0.3
-Increased extracerebral space, Exposure to morphine in the first 7 days of life, Cortical gray matter score, Median,0, , IQR, 0-0, Range,0,0,0.16
-Increased extracerebral space, Exposure to morphine in the first 7 days of life, Cortical gray matter score, Median,0, , IQR, 0-0, Range,0,0,0.16
-Total cortical deep gray score, Exposure to morphine in the first 7 days of life, Cortical gray matter score, Median,0, , IQR, 0-0.25, Range,0,0.25,0.23
-Total cortical deep gray score, Exposure to morphine in the first 7 days of life, Cortical gray matter score, Median,0, , IQR, 0-1.25, Range,0,1.25,0.23
-Signal abnormality, Exposure to morphine in the first 7 days of life, Deep gray matter score, Median,0, , IQR, 0-0, Range,0,0,0.01
-Signal abnormality, Exposure to morphine in the first 7 days of life, Deep gray matter score, Median,0, , IQR, 0-1, Range,0,1,0.01
-Volume reduction, Exposure to morphine in the first 7 days of life, Deep gray matter score, Median,0, , IQR, 0-0, Range,0,0,0.008
-Volume reduction, Exposure to morphine in the first 7 days of life, Deep gray matter score, Median,0.5, , IQR, 0-3, Range,0,3,0.008
-Total deep gray score, Exposure to morphine in the first 7 days of life, Deep gray matter score, Median,0, , IQR, 0-0.25, Range,0,0.25,0.01
-Total deep gray score, Exposure to morphine in the first 7 days of life, Deep gray matter score, Median,0.5, , IQR, 0-4, Range,0,4,0.01
-Signal abnormality, Exposure to morphine in the first 7 days of life, Cerebellum score, Median,0, , IQR, 0-0, Range,0,0, <0.001
-Signal abnormality, Exposure to morphine in the first 7 days of life, Cerebellum score, Median,1, , IQR, 0-4, Range,0,4, <0.001
-Volume reduction, Exposure to morphine in the first 7 days of life, Cerebellum score, Median,1, , IQR, 1-2, Range,1,2,0.001
-Volume reduction, Exposure to morphine in the first 7 days of life, Cerebellum score, Median,2, , IQR, 1-3, Range,1,3,0.001
-Total cerebellar score, Exposure to morphine in the first 7 days of life, Cerebellum score, Median,1, , IQR, 1-2.25, Range,1,2.25, <0.001
-Total cerebellar score, Exposure to morphine in the first 7 days of life, Cerebellum score, Median,3, , IQR, 2-7, Range,2,7, <0.001
-Global brain abnormality score, Exposure to morphine in the first 7 days of life, Global brain abnormalities score on TEA-MRI, Median,5, , IQR, 3-14, Range,3,14,0.001
-Global brain abnormality score, Exposure to morphine in the first 7 days of life, Global brain abnormalities score on TEA-MRI, Median,14.5, , IQR, 6.75-22, Range,6.75,22,0.001
+,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Lower limit,High limit,P value
+0,White matter score - Cystic lesions, Exposure to morphine in the first 7 days of life, Cystic lesions, Median (IQR),0, , IQR, 0-3, IQR,0,3,0.13
+1,White matter score - Focal signal abnormality, Exposure to morphine in the first 7 days of life, Focal signal abnormality, Median (IQR),0, , IQR, 0-2, IQR,0,2,0.02
+2,White matter score - Myelination delay, Exposure to morphine in the first 7 days of life, Myelination delay, Median (IQR),1, , IQR, 1-2, IQR,1,2,0.06
+3,White matter score - Thinning of the corpus callosum, Exposure to morphine in the first 7 days of life, Thinning of the corpus callosum, Median (IQR),0, , IQR, 0-2, IQR,0,2,0.009
+4,White matter score - Dilated lateral ventricles, Exposure to morphine in the first 7 days of life, Dilated lateral ventricles, Median (IQR),2, , IQR, 0-3, IQR,0,3,0.004
+5,White matter score - Volume reduction, Exposure to morphine in the first 7 days of life, Volume reduction, Median (IQR),2, , IQR, 1-2, IQR,1,2,0.14
+6,White matter score - Total white matter score, Exposure to morphine in the first 7 days of life, Total white matter score, Median (IQR),7, , IQR, 4-11, IQR,4,11, <0.001
+7,Cortical gray matter score - Signal abnormality, Exposure to morphine in the first 7 days of life, Signal abnormality, Median (IQR),0, , IQR, 0-0, IQR,0,0,0.38
+8,Cortical gray matter score - Gyral maturation, Exposure to morphine in the first 7 days of life, Gyral maturation, Median (IQR),0, , IQR, 0-0, IQR,0,0,0.71
+9,Cortical gray matter score - Increased extracerebral space, Exposure to morphine in the first 7 days of life, Increased extracerebral space, Median (IQR),0, , IQR, 0-0, IQR,0,0,0.09
+10,Cortical gray matter score - Total cortical gray matter score, Exposure to morphine in the first 7 days of life, Total cortical gray matter score, Median (IQR),0, , IQR, 0-1, IQR,0,1,0.59
+11,Deep gray matter score - Signal abnormality, Exposure to morphine in the first 7 days of life, Signal abnormality, Median (IQR),0, , IQR, 0-1, IQR,0,1,0.06
+12,Deep gray matter score - Volume reduction, Exposure to morphine in the first 7 days of life, Volume reduction, Median (IQR),0, , IQR, 0-2, IQR,0,2,0.01
+13,Deep gray matter score - Total deep gray matter score, Exposure to morphine in the first 7 days of life, Total deep gray matter score, Median (IQR),0, , IQR, 0-3, IQR,0,3,0.01
+14,Cerebellum score - Signal abnormality, Exposure to morphine in the first 7 days of life, Signal abnormality, Median (IQR),0.5, , IQR, 0-3, IQR,0,3,0.001
+15,Cerebellum score - Volume reduction, Exposure to morphine in the first 7 days of life, Volume reduction, Median (IQR),3, , IQR, 1-3, IQR,1,3, <0.001
+16,Cerebellum score - Total cerebellar score, Exposure to morphine in the first 7 days of life, Total cerebellar score, Median (IQR),3, , IQR, 2-5, IQR,2,5, <0.001
+17,Global brain abnormality score, Exposure to morphine in the first 7 days of life, Global brain abnormality score, Median (IQR),11.5, , IQR, 8-19, IQR,8,19, <0.001
+18,White matter score, Morphine exposure in first week of life, Focal signal abnormality, aRR,0.68, , 95% CI, 0.31–1.49, 95% confidence interval,0.31,1.49,0.33
+19,White matter score, Morphine exposure in first week of life, Thinning of the corpus callosum, aRR,1.1, , 95% CI, 0.52–2.31, 95% confidence interval,0.52,2.31,0.79
+20,White matter score, Morphine exposure in first week of life, Dilated lateral ventricles, aRR,1.01, , 95% CI, 0.6–1.71, 95% confidence interval,0.6,1.71,0.95
+21,White matter score, Morphine exposure in first week of life, Total white matter score, aRR,1.32, , 95% CI, 1.01–1.72, 95% confidence interval,1.01,1.72,0.03
+22,Deep gray matter score, Morphine exposure in first week of life, Volume reduction, aRR,0.91, , 95% CI, 0.42–1.94, 95% confidence interval,0.42,1.94,0.79
+23,Deep gray matter score, Morphine exposure in first week of life, Total deep gray matter score, aRR,1.11, , 95% CI, 0.48–2.58, 95% confidence interval,0.48,2.58,0.8
+24,Cerebellum score, Morphine exposure in first week of life, Signal abnormality, aRR,1.19, , 95% CI, 0.51–2.79, 95% confidence interval,0.51,2.79,0.67
+25,Cerebellum score, Morphine exposure in first week of life, Volume reduction, aRR,1.28, , 95% CI, 1.02–1.61, 95% confidence interval,1.02,1.61,0.02
+26,Cerebellum score, Morphine exposure in first week of life, Total cerebellar score, aRR,1.36, , 95% CI, 1.03–1.81, 95% confidence interval,1.03,1.81,0.02
+27,Global brain abnormality score, Morphine exposure in first week of life, Global brain abnormality score, aRR,1.31, , 95% CI, 0.99–1.74, 95% confidence interval,0.99,1.74,0.06
+28,GA, Exposure to morphine in the first 7 days of life, Global brain abnormalities score on TEA-MRI, Median,30, , IQR, 28-32, Range,28,32,0.26
+29,GA, Exposure to morphine in the first 7 days of life, Global brain abnormalities score on TEA-MRI, Median,29, , IQR, 27-31, Range,27,31,0.26
+30,BW, Exposure to morphine in the first 7 days of life, Global brain abnormalities score on TEA-MRI, Median,1170, , IQR, 965-1317.5, Range,965,1317.5,0.21
+31,BW, Exposure to morphine in the first 7 days of life, Global brain abnormalities score on TEA-MRI, Median,1080, , IQR, 922.5-1285, Range,922.5,1285,0.21
+32,Cystic lesions, Exposure to morphine in the first 7 days of life, White matter score, Median,0, , IQR, 0-3, Range,0,3,0.13
+33,Cystic lesions, Exposure to morphine in the first 7 days of life, White matter score, Median,0.5, , IQR, 0-4, Range,0,4,0.13
+34,Focal signal abnormality, Exposure to morphine in the first 7 days of life, White matter score, Median,0, , IQR, 0-0.25, Range,0,0.25,0.06
+35,Focal signal abnormality, Exposure to morphine in the first 7 days of life, White matter score, Median,0, , IQR, 0-2, Range,0,2,0.06
+36,Myelination delay, Exposure to morphine in the first 7 days of life, White matter score, Median,1, , IQR, 1-1, Range,1,1,0.02
+37,Myelination delay, Exposure to morphine in the first 7 days of life, White matter score, Median,1, , IQR, 1-2, Range,1,2,0.02
+38,Thinning of the corpus callosum, Exposure to morphine in the first 7 days of life, White matter score, Median,0, , IQR, 0-0.25, Range,0,0.25,0.002
+39,Thinning of the corpus callosum, Exposure to morphine in the first 7 days of life, White matter score, Median,1.5, , IQR, 0-2, Range,0,2,0.002
+40,Dilated lateral ventricles, Exposure to morphine in the first 7 days of life, White matter score, Median,0, , IQR, 0-1, Range,0,1,0.03
+41,Dilated lateral ventricles, Exposure to morphine in the first 7 days of life, White matter score, Median,1.5, , IQR, 0-3, Range,0,3,0.03
+42,Volume reduction, Exposure to morphine in the first 7 days of life, White matter score, Median,1, , IQR, 1-2, Range,1,2,0.27
+43,Volume reduction, Exposure to morphine in the first 7 days of life, White matter score, Median,2, , IQR, 1-2.25, Range,1,2.25,0.27
+44,Total white matter score, Exposure to morphine in the first 7 days of life, White matter score, Median,3, , IQR, 2-8, Range,2,8,0.003
+45,Total white matter score, Exposure to morphine in the first 7 days of life, White matter score, Median,7.5, , IQR, 4-12.25, Range,4,12.25,0.003
+46,Signal abnormality, Exposure to morphine in the first 7 days of life, Cortical gray matter score, Median,0, , IQR, 0-0, Range,0,0,0.89
+47,Signal abnormality, Exposure to morphine in the first 7 days of life, Cortical gray matter score, Median,0, , IQR, 0-0, Range,0,0,0.89
+48,Gray maturation, Exposure to morphine in the first 7 days of life, Cortical gray matter score, Median,0, , IQR, 0-0, Range,0,0,0.3
+49,Gray maturation, Exposure to morphine in the first 7 days of life, Cortical gray matter score, Median,0, , IQR, 0-0, Range,0,0,0.3
+50,Increased extracerebral space, Exposure to morphine in the first 7 days of life, Cortical gray matter score, Median,0, , IQR, 0-0, Range,0,0,0.16
+51,Increased extracerebral space, Exposure to morphine in the first 7 days of life, Cortical gray matter score, Median,0, , IQR, 0-0, Range,0,0,0.16
+52,Total cortical deep gray score, Exposure to morphine in the first 7 days of life, Cortical gray matter score, Median,0, , IQR, 0-0.25, Range,0,0.25,0.23
+53,Total cortical deep gray score, Exposure to morphine in the first 7 days of life, Cortical gray matter score, Median,0, , IQR, 0-1.25, Range,0,1.25,0.23
+54,Signal abnormality, Exposure to morphine in the first 7 days of life, Deep gray matter score, Median,0, , IQR, 0-0, Range,0,0,0.01
+55,Signal abnormality, Exposure to morphine in the first 7 days of life, Deep gray matter score, Median,0, , IQR, 0-1, Range,0,1,0.01
+56,Volume reduction, Exposure to morphine in the first 7 days of life, Deep gray matter score, Median,0, , IQR, 0-0, Range,0,0,0.008
+57,Volume reduction, Exposure to morphine in the first 7 days of life, Deep gray matter score, Median,0.5, , IQR, 0-3, Range,0,3,0.008
+58,Total deep gray score, Exposure to morphine in the first 7 days of life, Deep gray matter score, Median,0, , IQR, 0-0.25, Range,0,0.25,0.01
+59,Total deep gray score, Exposure to morphine in the first 7 days of life, Deep gray matter score, Median,0.5, , IQR, 0-4, Range,0,4,0.01
+60,Signal abnormality, Exposure to morphine in the first 7 days of life, Cerebellum score, Median,0, , IQR, 0-0, Range,0,0, <0.001
+61,Signal abnormality, Exposure to morphine in the first 7 days of life, Cerebellum score, Median,1, , IQR, 0-4, Range,0,4, <0.001
+62,Volume reduction, Exposure to morphine in the first 7 days of life, Cerebellum score, Median,1, , IQR, 1-2, Range,1,2,0.001
+63,Volume reduction, Exposure to morphine in the first 7 days of life, Cerebellum score, Median,2, , IQR, 1-3, Range,1,3,0.001
+64,Total cerebellar score, Exposure to morphine in the first 7 days of life, Cerebellum score, Median,1, , IQR, 1-2.25, Range,1,2.25, <0.001
+65,Total cerebellar score, Exposure to morphine in the first 7 days of life, Cerebellum score, Median,3, , IQR, 2-7, Range,2,7, <0.001
+66,Global brain abnormality score, Exposure to morphine in the first 7 days of life, Global brain abnormalities score on TEA-MRI, Median,5, , IQR, 3-14, Range,3,14,0.001
+67,Global brain abnormality score, Exposure to morphine in the first 7 days of life, Global brain abnormalities score on TEA-MRI, Median,14.5, , IQR, 6.75-22, Range,6.75,22,0.001

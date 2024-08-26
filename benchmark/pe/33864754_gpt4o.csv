@@ -1,4 +1,4 @@
-﻿,Characteristic/risk factor, Exposure, Outcomes, Statistic, Value, Unit, Variability statistic, Variability value, Interval type, Interval low, Interval high, P value
+,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Lower limit,High limit,P value
 0,Gestational age at birth  weeks, , , mean,38.9, weeks, standard deviation,1.2, , , , 0.04
 1,Female sex, , , number,52, %, ,40, , , , 0.22
 2,Race - White, , , number,87, %, ,67, , , , 0.60

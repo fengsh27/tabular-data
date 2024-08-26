@@ -1,4 +1,4 @@
-﻿,Characteristic/risk factor, Exposure, Outcomes, Statistic, Value, Unit, Variability statistic, Variability value, Interval type, Interval low, Interval high, P value
+,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Lower limit,High limit,P value
 0,Gestational age at birth, , , mean,38.9, weeks, standard deviation, 1.2, , , , 
 1,Gestational age at birth, Methylprednisolone, , mean,38.6, weeks, standard deviation, 1.3, , , , 0.04
 2,Gestational age at birth, Placebo, , mean,39.1, weeks, standard deviation, 1.1, , , , 

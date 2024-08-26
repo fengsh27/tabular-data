@@ -1,0 +1,17 @@
+﻿PMID,Characteristic/Risk Factor,Exposure,Outcomes,Statistic,Value,Unit,Variability Statistic,Variability Value,Interval Type,Interval Low Bound,Intervale High Bound,p-Value
+30308427,Children with rolandic epilepsy,Levetiracetam,Seizure free,Percent,85.7,N/A,,,,,,"0.07, 0.22"
+30308427,Children with rolandic epilepsy,Levetiracetam,50% reduction of seizures,Percent,2.9,N/A,,,,,,"0.99, 0.99"
+30308427,Children with rolandic epilepsy,Levetiracetam,Total responder,Percent,88.6,N/A,,,,,,"0.09, 0.29"
+30308427,Children with rolandic epilepsy,Levetiracetam,EEG response - complete disappearance,Percent,42.9,N/A,,,,,,"<0.01, 0.07"
+30308427,Children with rolandic epilepsy,Levetiracetam,EEG response - responder,Percent,48.6,N/A,,,,,,"0.03, 0.83"
+30308427,Children with rolandic epilepsy,Levetiracetam,EEG response - total responder,Percent,71.4,N/A,,,,,,"<0.01, 0.14"
+30308427,Children with rolandic epilepsy,Levetiracetam,EEG response - exacerbation,Percent,0,N/A,,,,,,
+30308427,Children with rolandic epilepsy,Levetiracetam,Duration of response in EEG responders,Mean,14.7,Months,,,,,,"<0.001, <0.005"
+30308427,Children with rolandic epilepsy,Valproate,Seizure free,Percent,74,N/A,,,,,,
+30308427,Children with rolandic epilepsy,Valproate,50% reduction of seizures,Percent,3.3,N/A,,,,,,
+30308427,Children with rolandic epilepsy,Valproate,Total responder,Percent,78.1,N/A,,,,,,
+30308427,Children with rolandic epilepsy,Valproate,EEG response - complete disappearance,Percent,24.7,N/A,,,,,,
+30308427,Children with rolandic epilepsy,Valproate,EEG response - responder,Percent,31.5,N/A,,,,,,
+30308427,Children with rolandic epilepsy,Valproate,EEG response - total responder,Percent,56.2,N/A,,,,,,
+30308427,Children with rolandic epilepsy,Valproate,EEG response - exacerbation,Percent,0,N/A,,,,,,
+30308427,Children with rolandic epilepsy,Valproate,Duration of response in EEG responders,Mean,23.1,Months,,,,,,
