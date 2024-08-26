@@ -490,3 +490,45 @@ Given the substantial differences in table structure, column definitions, and ro
 [[20]]
 
 The extracted table appears to contain data from a different domain (patient characteristics and surgical outcomes) compared to what is expected in the baseline table (pharmacokinetic parameters related to drugs).
+
+
+2024-08-26T14:03:30.601691: 
+15930210 gemini score: 3
+2024-08-26T14:03:30.766965: 
+18782787 gemini score: 0
+2024-08-26T14:03:30.790553: 
+30308427 gemini score: 2
+2024-08-26T14:03:30.844885: 
+33864754 gemini score: 1
+2024-08-26T14:03:30.885818: 
+34024233 gemini score: 5
+2024-08-26T14:03:30.891097: 
+34083820 gemini score: 3
+2024-08-26T14:03:30.909833: 
+34741059 gemini score: 0
+2024-08-26T14:03:31.051652: 
+35296792 gemini score: 0
+2024-08-26T14:03:31.058819: 
+35997979 gemini score: 0
+2024-08-26T14:03:31.204722: 
+36396314 gemini score: 0
+2024-08-26T14:03:31.441018: 
+15930210 gpt4o score: 18
+2024-08-26T14:03:31.532201: 
+18782787 gpt4o score: 0
+2024-08-26T14:03:31.545973: 
+30308427 gpt4o score: 4
+2024-08-26T14:03:31.572625: 
+33864754 gpt4o score: 0
+2024-08-26T14:03:31.602852: 
+34024233 gpt4o score: 10
+2024-08-26T14:03:31.615178: 
+34083820 gpt4o score: 0
+2024-08-26T14:03:31.630956: 
+34741059 gpt4o score: 0
+2024-08-26T14:03:31.726629: 
+35296792 gpt4o score: 0
+2024-08-26T14:03:31.733608: 
+35997979 gpt4o score: 0
+2024-08-26T14:03:31.851785: 
+36396314 gpt4o score: 6
