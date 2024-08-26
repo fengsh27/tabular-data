@@ -1,4 +1,4 @@
-,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Interval low,Interval high,P value
+,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Lower limit,High limit,P value
 0,Failure (nonresponders),,,,,,,,,,,
 1,*Fisher's exact test (not significant)., DP, Rate of MBP Response to Vasopressor Therapy, frequency,1,-3.7, , , , , , 
 2,Failure (nonresponders),,,,,,,,,,,

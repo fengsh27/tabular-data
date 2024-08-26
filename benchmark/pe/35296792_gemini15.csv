@@ -1,4 +1,4 @@
-,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Interval low,Interval high,P value
+,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Lower limit,High limit,P value
 0,, Exposure to morphine in the first 7 days of life  No, Cystic lesions, None,0, None, IQR, 0-3, None, None, None,0.13
 1,, Exposure to morphine in the first 7 days of life  Yes, Cystic lesions, None,0, None, IQR, 0-3, None, None, None,0.13
 2,, Exposure to morphine in the first 7 days of life  No, Focal signal abnormality, None,0, None, IQR, 0-0.25, None, None, None,0.02

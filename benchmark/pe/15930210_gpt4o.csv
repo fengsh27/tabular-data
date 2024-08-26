@@ -1,4 +1,4 @@
-,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Interval low,Interval high,P value
+,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Lower limit,High limit,P value
 0,Failure (nonresponders), Vasopressor Therapy, Rate of MBP Response, n (%),1, , , , , , , 
 1,Failure (nonresponders), Vasopressor Therapy, Rate of MBP Response, n (%),2, , , , , , , 
 2,Success  MBP-OP at T1, Vasopressor Therapy, Rate of MBP Response, n (%),6, , , , , , , 

@@ -1,4 +1,4 @@
-,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Interval low,Interval high,P value
+,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Lower limit,High limit,P value
 0,Blood loss, TXA group, Blood loss, mean±SD,208.81, mL, SD,15.68, , , ,0.033
 1,Blood loss, Control group, Blood loss, mean±SD,250.74, mL, SD,14.73, , , ,0.033
 2,Need to uterotonic agents, TXA group, No, n (%),97, %, ,93.3, , , ,0.187

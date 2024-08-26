@@ -1,4 +1,4 @@
-,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Interval low,Interval high,P value
+,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Lower limit,High limit,P value
 0,Age, , , Odds ratio,0.87, , Residual,0.1, , , ,0.14
 1,Gender, Female, , Odds ratio,1.08, , Residual,0.1, , , ,0.14
 2,Iris color, Medium, , Odds ratio,2.12, , Residual,0.33, , , ,0.81

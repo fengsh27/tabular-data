@@ -1,4 +1,4 @@
-,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Interval low,Interval high,P value
+,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Lower limit,High limit,P value
 0,Gestational age in weeks, , Dexamethasone, median,25.1, weeks, IQR, 24.3–26.6, , , , 
 1,Gestational age in weeks, , Late hydrocortisone, median,25.4, weeks, IQR, 24.3–27.6, , , , 
 2,Gestational age in weeks, , Prednisolone, median,25.4, weeks, IQR, 24.5–26.7, , , , 

@@ -19,15 +19,17 @@ PE_COLUMNS = [
     "Variability statistic",
     "Variability value",
     "Interval type",
-    "Interval low",
-    "Interval high",
+    "Lower limit",
+    "High limit",
     "P value",
 ]
 PK_COLUMNS_MAP = [
     ("P-value", "P value"),
     ("Interval Low Bound", "Lower limit"),
+    ("Interval Low", "Lower limit"),
     ("Interval High Bound", "High limit"),
     ("Intervale High Bound", "High limit"),
+    ("Interval High", "High limit"),
 ]
 
 def get_lower_column_name():
@@ -126,7 +128,8 @@ def preprocess_PK_csv_file(pk_csv_file: str):
     bn, extname = path.splitext(pk_csv_file)
     orig_file = f"{bn}-original{extname}"
     try:
-        shutil.copyfile(pk_csv_file, orig_file)
+        if not os.path.exists(orig_file):
+            shutil.copyfile(pk_csv_file, orig_file)
     except Exception as e:
         print(str(e))
         return False
@@ -184,6 +187,6 @@ def process_single_files():
         
 
 if __name__ == "__main__":
-    process_single_files()
+    process_triple_files()
     
 

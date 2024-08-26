@@ -1,4 +1,4 @@
-,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Interval low,Interval high,P value
+,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Lower limit,High limit,P value
 0,Age, , , median,15, days, interquartile range, 7–21, range,7,21,0.15
 1,Age, , , median,20, days, interquartile range, 6–25, range,6,25,0.15
 2,Weight, , , median,3.2, kg, interquartile range, 2.9–3.5, range,2.9,3.5,0.65

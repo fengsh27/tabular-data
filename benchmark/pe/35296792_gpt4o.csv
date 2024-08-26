@@ -1,4 +1,4 @@
-,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Interval low,Interval high,P value
+,Characteristic/risk factor,Exposure,Outcomes,Statistic,Value,Unit,Variability statistic,Variability value,Interval type,Lower limit,High limit,P value
 0,White matter score - Cystic lesions, Exposure to morphine in the first 7 days of life, Cystic lesions, Median (IQR),0, , IQR, 0-3, IQR,0,3,0.13
 1,White matter score - Focal signal abnormality, Exposure to morphine in the first 7 days of life, Focal signal abnormality, Median (IQR),0, , IQR, 0-2, IQR,0,2,0.02
 2,White matter score - Myelination delay, Exposure to morphine in the first 7 days of life, Myelination delay, Median (IQR),1, , IQR, 1-2, IQR,1,2,0.06
