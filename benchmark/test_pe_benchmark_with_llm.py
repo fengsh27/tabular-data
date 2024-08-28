@@ -51,7 +51,7 @@ def test_claude(client):
 
 @pytest.mark.skip("temporary skip")
 @pytest.mark.parametrize("pmid", [
-    # "15930210",
+    "15930210",
     "18782787",
     "30308427",
     "33864754",
@@ -82,16 +82,16 @@ def test_gemini_similarity(client, pmid):
     assert msg is not None
 
 @pytest.mark.parametrize("pmid", [
-    # "15930210",
-    # "18782787",
-    # "30308427",
+    "15930210",
+    "18782787",
+    "30308427",
     "33864754", #
-    # "34024233",
-    # "34083820",
-    # "34741059",
-    # "35296792",
-    # "35997979",
-    # "36396314",
+    "34024233",
+    "34083820",
+    "34741059",
+    "35296792",
+    "35997979",
+    "36396314",
 ])
 def test_gpt_similarity(client, pmid):
     with open(f"./benchmark/pe/{pmid}_gpt4o.csv", "r") as fobj:
@@ -103,7 +103,7 @@ def test_gpt_similarity(client, pmid):
         "table_baseline": table_baseline,
         "table_generated": table_gpt4o,
     })
-    cols_definition = generate_columns_definition("pk")
+    cols_definition = generate_columns_definition("pe")
     system_prompts = system_prompts_template.substitute({
         "columns_definition": cols_definition
     })

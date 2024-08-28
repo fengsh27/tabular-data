@@ -79,9 +79,14 @@ class TablesEvaluator:
         # One of the two values is str
         sval = v1.strip() if isinstance(v1, str) else v2
         nsval = v1 if not isinstance(v1, str) else v2
-        if math.isnan(nsval) and len(sval.strip()) == 0:
-            return True
-    
+        if math.isnan(nsval):
+            sval = sval.strip()
+            if len(sval) == 0:
+                return True
+            try:
+                tmp = float(sval)
+            except ValueError:
+                return True    
         try:
             fv1 = float(sval) if len(sval) > 0 else math.nan
             fv2 = float(v2)
@@ -116,7 +121,7 @@ class TablesEvaluator:
             scores.append(self.rate_row(row, much_row))
         sum = functools.reduce(lambda a, b: a+b, scores)
         
-        return (int)(100.0 * (sum / (10.0 * much_row_num)))
+        return (int)(100.0 * (sum / (10.0 * less_row_num + 1 * (much_row_num-less_row_num))))
         
     
     def compare_tables(self, baseline:pd.DataFrame, target:pd.DataFrame) -> tuple[int, int]:
