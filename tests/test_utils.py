@@ -2,6 +2,7 @@ import json
 import pytest
 
 from extractor.utils import (
+    extract_float_value,
     preprocess_csv_table_string,
     remove_comma_in_number_string,
 )
@@ -39,3 +40,21 @@ def test_json_loads():
         print(obj1)
     except json.JSONDecodeError as e:
         print(e)
+
+def test_extract_float_value():
+    str1 = "*1.234"
+    str2 = "*-1.234"
+    str3 = "1.234*"
+    str4 = "-1.234*"
+    str5 = "1.234"
+    v1 = extract_float_value(str1)
+    assert v1 == 1.234
+    v2 = extract_float_value(str2)
+    assert v2 == -1.234
+    v3 = extract_float_value(str3)
+    assert v3 == 1.234
+    v4 = extract_float_value(str4)
+    assert v4 == -1.234
+    v5 = extract_float_value(str5)
+    assert v5 == 1.234
+

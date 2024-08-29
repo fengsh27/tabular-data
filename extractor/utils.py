@@ -230,5 +230,13 @@ def concate_llm_contents(contents: List[str], usages: List[int]):
     return all_contents, all_usages, truncated
 
 
-
+import re
+def extract_float_value(s):
+    pattern = r'[-+]?[0-9]*\.?[0-9]+'
+    match = re.search(pattern, s)
+    
+    if match:
+        return float(match.group())
+    else:
+        return None
 

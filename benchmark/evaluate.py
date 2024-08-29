@@ -8,6 +8,8 @@ import math
 import functools
 import logging
 
+from extractor.utils import extract_float_value
+
 logger = logging.getLogger(__name__)
 
 """
@@ -77,7 +79,7 @@ class TablesEvaluator:
             return abs(fv1 - fv2) < DELTA_VALUE
         
         # One of the two values is str
-        sval = v1.strip() if isinstance(v1, str) else v2
+        sval = v1.strip() if isinstance(v1, str) else v2.strip()
         nsval = v1 if not isinstance(v1, str) else v2
         if math.isnan(nsval):
             sval = sval.strip()
@@ -86,10 +88,10 @@ class TablesEvaluator:
             try:
                 tmp = float(sval)
             except ValueError:
-                return True    
+                return True
         try:
-            fv1 = float(sval) if len(sval) > 0 else math.nan
-            fv2 = float(v2)
+            fv1 = extract_float_value(sval) if len(sval) > 0 else math.nan
+            fv2 = float(nsval)
             return abs(fv1 - fv2) < DELTA_VALUE
         except Exception as e:
             logger.error(e)
