@@ -26,9 +26,9 @@ $table_baseline
 
 extracted table:
 $table_generated
-Please assess the above two tables using Table 1 as the standard.
+Please assess the above two tables using baseline table as the standard.
 Note:
-1. Please use the Parameter type -Value-Unit-Summary Statistics-Variation type as an anchor to assess the similarity.
+1. Please use the Parameter type -Value-Unit-P Value-Outcomes-Exposure as an anchor to assess the similarity.
 2.If there are missing rows, you have to reduce the similarity score significantly based on the number of missing rows. e.g., the median and mean are different.
 3. Cells with NaN values will be considered as a blank cell.
 4. You should specify the difference between the two tables.

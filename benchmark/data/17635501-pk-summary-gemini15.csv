@@ -1,0 +1,16 @@
+,Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation type,Variation value,Interval type,Lower limit,High limit,P value
+0,lorazepam, LZP, blood, pediatric, N/A,11, Cmax,65.1, ng ml-1, mean, None, None, 95% CI, 47.5, 86, None
+1,lorazepam, LZP, blood, pediatric, N/A,11, Tmax,0.5, h, median, None, None, range, 0.167, 0.67, None
+2,lorazepam, LZP, blood, pediatric, N/A,9, t1/2 (elimination),23.7, h, median, None, None, range, 9.8, 37.6, None
+3,lorazepam, LZP, blood, pediatric, N/A,9, AUC0-∞,2062.5, ng ml-1 h-1, median, None, None, range, 600.6, 3771.4, None
+4,lorazepam, LZP, blood, pediatric, N/A,9, CL,0.64, l h-1, median, None, None, range, 0.36, 0.92, None
+5,lorazepam, LZP, blood, pediatric, N/A,9, Vc,1.67, l kg-1, median, None, None, range, 1.25, 2.10, None
+6,lorazepam, LZP, blood, pediatric, N/A,9, Vss,2.59, l kg-1, median, None, None, range, 1.56, 3.62, None
+7,lorazepam, LZP, blood, pediatric, N/A,9, Bioavailability,100, %, None, None, None, None, None, None, None
+8,lorazepam, LZP, blood, pediatric, N/A,10, Cmax,45.3, ng ml-1, mean, None, None, 95% CI, 29.6, 66.3, None
+9,lorazepam, LZP, blood, pediatric, N/A,10, Tmax,0.42, h, median, None, None, range, 0.167, 1.0, None
+10,lorazepam, LZP, blood, pediatric, N/A,5, t1/2 (elimination),36.9, h, median, None, None, range, -1.5, 75.5, None
+11,lorazepam, LZP, blood, pediatric, N/A,5, AUC0-∞,1843.6, ng ml-1 h-1, median, None, None, range, 296.7, 3390.5, None
+12,lorazepam, LZP, blood, pediatric, N/A,6, ka,9.8, h-1, median, None, None, range, 0.033, 22.8, None
+13,lorazepam, LZP, blood, pediatric, N/A,6, t1/2 (absorption),0.035, h, median, None, None, range, 0.01, 0.071, None
+14,lorazepam, LZP, blood, pediatric, N/A,6, Bioavailability,89.4, %, None, None, None, None, None, None, None
