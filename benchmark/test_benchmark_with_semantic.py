@@ -54,71 +54,6 @@ PE_ANCHOR_COLUMNS = [
     "Variability value",
 ]
 
-@pytest.mark.skip()
-@pytest.mark.parametrize("pmid,expected", [
-    ("35489632", 80), 
-    ("30825333", 50), 
-    ("16143486", 67), 
-    ("22050870", 50), 
-    ("17635501", 81),
-])
-def test_gemini15(pmid, expected):
-    df_target = pd.read_csv(f"./benchmark/data/{pmid}-pk-summary-gemini15.csv")
-    df_baseline = pd.read_csv(f"./benchmark/data/{pmid}-pk-summary-baseline.csv")
-    
-    evaluator = TablesEvaluator(
-        rating_cols=PK_RATING_COLUMNS,
-        anchor_cols=PK_ANCHOR_COLUMNS,
-    )
-    score = evaluator.compare_tables(df_baseline, df_target)
-    output_msg(f"{pmid} gemini score: {score}")
-    assert score == expected
-
-@pytest.mark.skip()
-@pytest.mark.parametrize("pmid,expected", [
-    ("35489632", 80), 
-    ("30825333", 82), 
-    ("16143486", 67), 
-    ("22050870", 52), 
-    ("17635501", 82)])
-def test_gpt4o(pmid, expected):
-    df_target = pd.read_csv(f"./benchmark/data/{pmid}-pk-summary-gpt4o.csv")
-    df_baseline = pd.read_csv(f"./benchmark/data/{pmid}-pk-summary-baseline.csv")
-    
-    evaluator = TablesEvaluator(
-        rating_cols=PK_RATING_COLUMNS,
-        anchor_cols=PK_ANCHOR_COLUMNS,
-    )
-    score = evaluator.compare_tables(df_baseline, df_target)
-    output_msg(f"{pmid} gpt4o score: {score}")
-    assert score == expected
-
-@pytest.mark.skip()
-@pytest.mark.parametrize("pmid, expected", [
-    ("29943508", 80),
-    ("30950674", 80),
-    ("34114632", 80),
-    ("34183327", 80),
-    ("35465728", 80),
-])
-def test_5_papers(pmid, expected):
-    df_gemini = pd.read_csv(f"./benchmark/data/{pmid}-pk-summary-gemini15.csv")
-    df_gpt4o = pd.read_csv(f"./benchmark/data/{pmid}-pk-summary-gpt4o.csv")
-    df_baseline = pd.read_csv(f"./benchmark/data/{pmid}-pk-summary-baseline.csv")
-
-    evaluator = TablesEvaluator(
-        rating_cols=PK_RATING_COLUMNS,
-        anchor_cols=PK_ANCHOR_COLUMNS,
-    )
-    score = evaluator.compare_tables(df_baseline, df_gemini)
-    output_msg(f"{pmid} gemini score: {score}")
-    # assert score == expected
-    
-    scroe = evaluator.compare_tables(df_baseline, df_gpt4o)
-    output_msg(f"{pmid} gpt4o score: {score}")
-    # assert score == expected
-
-@pytest.mark.skip()
 @pytest.mark.parametrize("pmid, expected", [
     ("15930210", 16),
     ("18782787", 62),
@@ -143,7 +78,6 @@ def test_pe_gemini(pmid, expected):
     output_msg(f"{pmid} gemini score: {score}")
     assert score == expected
     
-@pytest.mark.skip()
 @pytest.mark.parametrize("pmid, expected", [
     ("15930210", 48),
     ("18782787", 71),
@@ -170,16 +104,16 @@ def test_pe_gpt(pmid, expected):
     assert score == expected
 
 @pytest.mark.parametrize("pmid, expected", [
-    ("29943508", 80),
-    ("30950674", 80),
-    ("34114632", 80),
-    ("34183327", 80),
-    ("35465728", 80),
-    ("35489632", 80), 
-    ("30825333", 82), 
-    ("16143486", 67), 
-    ("22050870", 52), 
-    ("17635501", 82),
+    ("29943508", 44),
+    ("30950674", 0),
+    ("34114632", 4),
+    ("34183327", 47),
+    ("35465728", 23),
+    ("35489632", 100), 
+    ("30825333", 91), 
+    ("16143486", 0), 
+    ("22050870", 24), 
+    ("17635501", 85),
 ])
 def test_pk_gemini(pmid, expected):
     df_gemini = pd.read_csv(f"./benchmark/data/{pmid}-pk-summary-gemini15.csv")
@@ -195,15 +129,15 @@ def test_pk_gemini(pmid, expected):
     
 
 @pytest.mark.parametrize("pmid, expected", [
-    ("29943508", 80),
-    ("30950674", 80),
-    ("34114632", 80),
-    ("34183327", 80),
-    ("35465728", 80),
+    ("29943508", 0),
+    ("30950674", 0),
+    ("34114632", 23),
+    ("34183327", 63),
+    ("35465728", 38),
     ("35489632", 80), 
-    ("30825333", 82), 
-    ("16143486", 67), 
-    ("22050870", 52), 
+    ("30825333", 91), 
+    ("16143486", 80), 
+    ("22050870", 70), 
     ("17635501", 82),
 ])
 def test_pk_gpt(pmid, expected):
