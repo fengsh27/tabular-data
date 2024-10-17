@@ -1,12 +1,12 @@
 ,Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation type,Variation value,Interval type,Lower limit,High limit,P value
-0,Levetiracetam,Levetiracetam,blood,neonate,,8,Cmax,19.19,ug/mL,mean,SD,4.12,,,,
-1,Levetiracetam,Levetiracetam,blood,neonate,,9,Cmax,35.12,ug/mL,mean,SD,10.54,,,,
+0,Levetiracetam,Levetiracetam,blood,neonate,,8,Cmax,19.19,ug/mL,mean,SD,4.12,,,,0.07
+1,Levetiracetam,Levetiracetam,blood,neonate,,9,Cmax,35.12,ug/mL,mean,SD,10.54,,,,0.001
 2,Levetiracetam,Levetiracetam,blood,neonate,,2,Cmax,36.11,ug/mL,median,,,minmax,27.58,44.64,
-3,Levetiracetam,Levetiracetam,blood,neonate,,8,AUC0-12,167,h ug/ml,mean,SD,45.6,,,,
-4,Levetiracetam,Levetiracetam,blood,neonate,,9,AUC0-12,316.5,h ug/ml,mean,SD,108.4,,,,
+3,Levetiracetam,Levetiracetam,blood,neonate,,8,AUC0-12,167,h ug/ml,mean,SD,45.6,,,,0.26
+4,Levetiracetam,Levetiracetam,blood,neonate,,9,AUC0-12,316.5,h ug/ml,mean,SD,108.4,,,,0.88
 5,Levetiracetam,Levetiracetam,blood,neonate,,2,AUC0-12,290.9,h ug/ml,median,,,minmax,176.14,405.59,
-6,Levetiracetam,Levetiracetam,blood,neonate,,8,Ctrough,9.99,ug/mL,mean,SD,3.86,,,,
-7,Levetiracetam,Levetiracetam,blood,neonate,,9,Ctrough,19.25,ug/mL,mean,SD,8.48,,,,
+6,Levetiracetam,Levetiracetam,blood,neonate,,8,Ctrough,9.99,ug/mL,mean,SD,3.86,,,,0.34
+7,Levetiracetam,Levetiracetam,blood,neonate,,9,Ctrough,19.25,ug/mL,mean,SD,8.48,,,,0.22
 8,Levetiracetam,Levetiracetam,blood,neonate,,2,Ctrough,13.03,ug/mL,median,,,minmax,2.98,23.07,
 9,Levetiracetam,Levetiracetam,blood,neonate,,8,Tmax,1.5,h,median,,,minmax,1.5,2.5,
 10,Levetiracetam,Levetiracetam,blood,neonate,,9,Tmax,2.5,h,median,,,minmax,2,3.3,
