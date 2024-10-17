@@ -10,8 +10,8 @@ def output_msg(msg: str):
         fobj.write(f"{datetime.now().isoformat()}: \n{msg}\n")
 
 system_prompts_template = Template("""
-Please act as a biomedial expert to assess the similarities and differences between two biomedical tables. Provide a similarity rating
-on a scale of 0 to 100, where 100 indicates identical tables and 0 indicates completely different tables.
+Please act as a biomedial expert to assess the similarities and differences between two biomedical tables, one is baseline table, the other is extracted table. 
+Provide a similarity rating on a scale of 0 to 100, where 100 indicates identical tables and 0 indicates completely different tables.
 The tables contains the following columns:
 $columns_definition
 
@@ -20,12 +20,12 @@ Note:  Evaluate the similarity of the two tables regardless of their row order a
 """)
 
 table_prompt_template = Template("""
-table 1:
+baseline table:
 $table_baseline
 
-table 2:
+extracted table:
 $table_generated
-Please assess the above two tables using Table 1 as the standard.
+Please assess the above two tables using baseline table as the standard.
 Note:
 1. Please use the Parameter type -Value-Unit-Summary Statistics-Variation type as an anchor to assess the similarity.
 2.If there are missing rows, you have to reduce the similarity score significantly based on the number of missing rows. e.g., the median and mean are different.
@@ -38,7 +38,7 @@ Note:
 
 
 
-# @pytest.mark.skip("just for test the feasible of claude api")
+@pytest.mark.skip("just for test the feasible of claude api")
 def test_claude(client):
     msg, useage = client.create(
         model="claude-3-opus-20240229",
@@ -53,14 +53,18 @@ def test_claude(client):
     print(msg)
     assert msg is not None
 
-# @pytest.mark.skip("temporary skip")
+@pytest.mark.skip("skip")
 @pytest.mark.parametrize("pmid", [
+    "16143486",
+    "17635501",
+    "22050870",
+    "29943508",
+    "30825333",
+    "30950674",
+    "34114632",
+    "34183327",
+    "35465728",
     "35489632",
-    #"35489632",
-    #"29943508",
-    #"30950674",
-    #"34114632",
-    #"35465728",
 ])
 def test_gemini_similarity(client, pmid):
     with open(f"./benchmark/data/{pmid}-pk-summary-gemini-flash.csv", "r") as fobj:
@@ -81,14 +85,18 @@ def test_gemini_similarity(client, pmid):
     output_msg(msg)
     assert msg is not None
 
-@pytest.mark.skip("temporary skip")
+@pytest.mark.skip("skip")
 @pytest.mark.parametrize("pmid", [
-    "35489632",
-    "30825333",
     "16143486",
-    "22050870",
     "17635501",
-
+    "22050870",
+    "29943508",
+    "30825333",
+    "30950674",
+    "34114632",
+    "34183327",
+    "35465728",
+    "35489632",
 ])
 def test_gpt_similarity(client, pmid):
     with open(f"./benchmark/data/{pmid}-pk-summary-gpt4o.csv", "r") as fobj:
@@ -110,15 +118,20 @@ def test_gpt_similarity(client, pmid):
     output_msg(msg)
     assert msg is not None
 
-@pytest.mark.skip()
+# @pytest.mark.skip()
 @pytest.mark.parametrize("pmid", [
+    "16143486",
+    "17635501",
+    "22050870",
     "29943508",
+    "30825333",
     "30950674",
     "34114632",
     "34183327",
     "35465728",
+    "35489632",
 ])
-def test_5_papers(client, pmid):
+def test_10_papers(client, pmid):
     with open(f"./benchmark/data/{pmid}-pk-summary-gpt4o.csv", "r") as fobj:
         table_gpt4o = fobj.read()
     with open(f"./benchmark/data/{pmid}-pk-summary-baseline.csv", "r") as fobj:

@@ -1,0 +1,9 @@
+,Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation type,Variation value,Interval type,Lower limit,High limit,P value
+0,ketamine, ketamine, , pediatric, N/A, , Total area under curve,91, Mg/min/L, arithmetic mean, SD,30, , , , 
+1,ketamine, ketamine, , pediatric, N/A, , Maximum concentration,1.6, mg/L, arithmetic mean, SD,0.68, , , , 
+2,ketamine, ketamine, , pediatric, N/A, , Total body clearance,0.52, L/min, arithmetic mean, SD,0.26, , , , 
+3,ketamine, ketamine, , pediatric, N/A, , Body weight normalized clearance,0.025, L/kg/min, arithmetic mean, SD,0.008, , , , 
+4,ketamine, ketamine, , pediatric, N/A, , Mean residence time,2.3, hr, arithmetic mean, SD,0.64, , , , 
+5,ketamine, ketamine, , pediatric, N/A, , Distribution volume at steady state,69, L, arithmetic mean, SD,39, , , , 
+6,ketamine, ketamine, , pediatric, N/A, , Body weight normalized distribution volume,3.3, L/kg, arithmetic mean, SD,1.3, , , , 
+7,ketamine, ketamine, , pediatric, N/A, , Elimination half-life,2.6, hr, arithmetic mean, SD,1, , , , 

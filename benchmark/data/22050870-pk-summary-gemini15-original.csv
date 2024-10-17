@@ -1,0 +1,73 @@
+﻿,Drug name, Analyte, Specimen, Population, Pregnancy stage, Subject N, Parameter type, Value, Unit, Summary statistics, Variation type, Variation value, Interval type, Lower limit, High limit, P value
+0,, N/A, N/A, adults, N/A,15, maximum concentration,29.3, ng/mL, range, N/A, 209.6, N/A, N/A, N/A, N/A
+1,, N/A, N/A, adults, N/A,15, maximum concentration,56.1, ng/mL, arithmetic mean, s.d., 44.9, N/A, N/A, N/A, N/A
+2,, N/A, N/A, adults, N/A,15, maximum concentration,42.2, ng/mL, median, N/A, N/A, N/A, N/A, N/A, N/A
+3,, N/A, N/A, adults, N/A,15, area-under-the-curve to infinity,253.3, N/A, range, N/A, 3202.5, N/A, N/A, N/A, N/A
+4,, N/A, N/A, adults, N/A,15, area-under-the-curve to infinity,822.5, N/A, arithmetic mean, s.d., 706.1, N/A, N/A, N/A, N/A
+5,, N/A, N/A, adults, N/A,15, area-under-the-curve to infinity,601.5, N/A, median, N/A, N/A, N/A, N/A, N/A, N/A
+6,, N/A, N/A, adults, N/A,15, clearance,3.33, mL/min/kg, range, N/A, 131.5, N/A, N/A, N/A, N/A
+7,, N/A, N/A, adults, N/A,15, clearance,49.33, mL/min/kg, arithmetic mean, s.d., 30.83, N/A, N/A, N/A, N/A
+8,, N/A, N/A, adults, N/A,15, clearance,41.5, mL/min/kg, median, N/A, N/A, N/A, N/A, N/A, N/A
+9,, N/A, N/A, adults, N/A,15, clearance,5.5, mL/min/m^2, range, N/A, 67.5, N/A, N/A, N/A, N/A
+10,, N/A, N/A, adults, N/A,15, clearance,31.95, mL/min/m^2, arithmetic mean, s.d., 13.99, N/A, N/A, N/A, N/A
+11,, N/A, N/A, adults, N/A,15, clearance,32.34, mL/min/m^2, median, N/A, N/A, N/A, N/A, N/A, N/A
+12,, N/A, N/A, adults, N/A,15, apparent volume of distribution,0.33, L/kg, range, N/A, 4.05, N/A, N/A, N/A, N/A
+13,, N/A, N/A, adults, N/A,15, apparent volume of distribution,1.92, L/kg, arithmetic mean, s.d., 0.84, N/A, N/A, N/A, N/A
+14,, N/A, N/A, adults, N/A,15, apparent volume of distribution,1.94, L/kg, median, N/A, N/A, N/A, N/A, N/A, N/A
+15,, N/A, N/A, adults, N/A,15, half-life,9.5, hr, range, N/A, 47, N/A, N/A, N/A, N/A
+16,, N/A, N/A, adults, N/A,15, half-life,20.5, hr, arithmetic mean, s.d., 10.2, N/A, N/A, N/A, N/A
+17,, N/A, N/A, adults, N/A,15, half-life,18.1, hr, median, N/A, N/A, N/A, N/A, N/A, N/A
+18,, N/A, N/A, adults, N/A,61, Free Fraction,0.07, N/A, range, N/A, 0.48, N/A, N/A, N/A, N/A
+19,, N/A, N/A, adults, N/A,61, Free Fraction,0.1, N/A, arithmetic mean, s.d., 0.05, N/A, N/A, N/A, N/A
+20,, N/A, N/A, adults, N/A,61, Free Fraction,0.09, N/A, median, N/A, N/A, N/A, N/A, N/A, N/A
+21,, N/A, N/A, adults, N/A,63, clearance,0.3, mL/min/kg, range, N/A, 7.75, N/A, N/A, N/A, N/A
+22,, N/A, N/A, adults, N/A,63, clearance,1.2, mL/min/kg, arithmetic mean, s.d., 0.93, N/A, N/A, N/A, N/A
+23,, N/A, N/A, adults, N/A,63, clearance,1.08, mL/min/kg, median, N/A, N/A, N/A, N/A, N/A, N/A
+24,, N/A, N/A, adults, N/A,63, clearance,6.5, mL/min/m^2, range, N/A, 147.17, N/A, N/A, N/A, N/A
+25,, N/A, N/A, adults, N/A,63, clearance,33.33, mL/min/m^2, arithmetic mean, s.d., 19.33, N/A, N/A, N/A, N/A
+26,, N/A, N/A, adults, N/A,63, clearance,29, mL/min/m^2, median, N/A, N/A, N/A, N/A, N/A, N/A
+27,, N/A, N/A, adults, N/A,63, volume of distribution at steady state,0.49, L/kg, range, N/A, 3.4, N/A, N/A, N/A, N/A
+28,, N/A, N/A, adults, N/A,63, volume of distribution at steady state,1.48, L/kg, arithmetic mean, s.d., 0.54, N/A, N/A, N/A, N/A
+29,, N/A, N/A, adults, N/A,63, volume of distribution at steady state,1.37, L/kg, median, N/A, N/A, N/A, N/A, N/A, N/A
+30,, N/A, N/A, adults, N/A,63, the terminal slope of the log concentration versus time profile,0.017, hr^-1, range, N/A, 0.118, N/A, N/A, N/A, N/A
+31,, N/A, N/A, adults, N/A,63, the terminal slope of the log concentration versus time profile,0.048, hr^-1, arithmetic mean, s.d., 0.02, N/A, N/A, N/A, N/A
+32,, N/A, N/A, adults, N/A,63, the terminal slope of the log concentration versus time profile,0.046, hr^-1, median, N/A, N/A, N/A, N/A, N/A, N/A
+33,, N/A, N/A, adults, N/A,63, elimination half-life,5.9, hr, range, N/A, 42, N/A, N/A, N/A, N/A
+34,, N/A, N/A, adults, N/A,63, elimination half-life,16.8, hr, arithmetic mean, s.d., 7.1, N/A, N/A, N/A, N/A
+35,, N/A, N/A, adults, N/A,63, elimination half-life,15.1, hr, median, N/A, N/A, N/A, N/A, N/A, N/A
+36,, N/A, N/A, pediatric, N/A,17, Free Fraction,0.07, N/A, range, N/A, 0.48, N/A, N/A, N/A, N/A
+37,, N/A, N/A, pediatric, N/A,17, Free Fraction,0.11, N/A, arithmetic mean, s.d., 0.1, N/A, N/A, N/A, N/A
+38,, N/A, N/A, pediatric, N/A,18, clearance,0.63, mL/min/kg, range, N/A, 7.75, N/A, N/A, N/A, N/A
+39,, N/A, N/A, pediatric, N/A,18, clearance,1.57, mL/min/kg, arithmetic mean, s.d., 1.62, N/A, N/A, N/A, N/A
+40,, N/A, N/A, pediatric, N/A,18, clearance,12.83, mL/min/m^2, range, N/A, 147.17, N/A, N/A, N/A, N/A
+41,, N/A, N/A, pediatric, N/A,18, clearance,32.83, mL/min/m^2, arithmetic mean, s.d., 30.17, N/A, N/A, N/A, N/A
+42,, N/A, N/A, pediatric, N/A,18, volume of distribution at steady state,0.67, L/kg, range, N/A, 3.4, N/A, N/A, N/A, N/A
+43,, N/A, N/A, pediatric, N/A,18, volume of distribution at steady state,1.62, L/kg, arithmetic mean, s.d., 0.59, N/A, N/A, N/A, N/A
+44,, N/A, N/A, pediatric, N/A,18, the terminal slope of the log concentration versus time profile,0.024, hr^-1, range, N/A, 0.118, N/A, N/A, N/A, N/A
+45,, N/A, N/A, pediatric, N/A,18, the terminal slope of the log concentration versus time profile,0.053, hr^-1, arithmetic mean, s.d., 0.027, N/A, N/A, N/A, N/A
+46,, N/A, N/A, pediatric, N/A,18, elimination half-life,5.9, hr, range, N/A, 28.4, N/A, N/A, N/A, N/A
+47,, N/A, N/A, pediatric, N/A,18, elimination half-life,15.8, hr, arithmetic mean, s.d., 6.5, N/A, N/A, N/A, N/A
+48,, N/A, N/A, pediatric, N/A,28, Free Fraction,0.07, N/A, range, N/A, 0.17, N/A, N/A, N/A, N/A
+49,, N/A, N/A, pediatric, N/A,28, Free Fraction,0.1, N/A, arithmetic mean, s.d., 0.02, N/A, N/A, N/A, N/A
+50,, N/A, N/A, pediatric, N/A,29, clearance,0.3, mL/min/kg, range, N/A, 1.82, N/A, N/A, N/A, N/A
+51,, N/A, N/A, pediatric, N/A,29, clearance,1.12, mL/min/kg, arithmetic mean, s.d., 0.4, N/A, N/A, N/A, N/A
+52,, N/A, N/A, pediatric, N/A,29, clearance,6.5, mL/min/m^2, range, N/A, 69.17, N/A, N/A, N/A, N/A
+53,, N/A, N/A, pediatric, N/A,29, clearance,31.83, mL/min/m^2, arithmetic mean, s.d., 13.83, N/A, N/A, N/A, N/A
+54,, N/A, N/A, pediatric, N/A,29, volume of distribution at steady state,0.49, L/kg, range, N/A, 3, N/A, N/A, N/A, N/A
+55,, N/A, N/A, pediatric, N/A,29, volume of distribution at steady state,1.5, L/kg, arithmetic mean, s.d., 0.61, N/A, N/A, N/A, N/A
+56,, N/A, N/A, pediatric, N/A,29, the terminal slope of the log concentration versus time profile,0.017, hr^-1, range, N/A, 0.092, N/A, N/A, N/A, N/A
+57,, N/A, N/A, pediatric, N/A,29, the terminal slope of the log concentration versus time profile,0.048, hr^-1, arithmetic mean, s.d., 0.017, N/A, N/A, N/A, N/A
+58,, N/A, N/A, pediatric, N/A,29, elimination half-life,7.5, hr, range, N/A, 40.6, N/A, N/A, N/A, N/A
+59,, N/A, N/A, pediatric, N/A,29, elimination half-life,16.9, hr, arithmetic mean, s.d., 7.4, N/A, N/A, N/A, N/A
+60,, N/A, N/A, pediatric, N/A,16, Free Fraction,0.07, N/A, range, N/A, 0.15, N/A, N/A, N/A, N/A
+61,, N/A, N/A, pediatric, N/A,16, Free Fraction,0.09, N/A, arithmetic mean, s.d., 0.02, N/A, N/A, N/A, N/A
+62,, N/A, N/A, pediatric, N/A,16, clearance,0.43, mL/min/kg, range, N/A, 1.58, N/A, N/A, N/A, N/A
+63,, N/A, N/A, pediatric, N/A,16, clearance,0.95, mL/min/kg, arithmetic mean, s.d., 0.32, N/A, N/A, N/A, N/A
+64,, N/A, N/A, pediatric, N/A,16, clearance,16.33, mL/min/m^2, range, N/A, 60, N/A, N/A, N/A, N/A
+65,, N/A, N/A, pediatric, N/A,16, clearance,36.67, mL/min/m^2, arithmetic mean, s.d., 12, N/A, N/A, N/A, N/A
+66,, N/A, N/A, pediatric, N/A,16, volume of distribution at steady state,1, L/kg, range, N/A, 1.54, N/A, N/A, N/A, N/A
+67,, N/A, N/A, pediatric, N/A,16, volume of distribution at steady state,1.27, L/kg, arithmetic mean, s.d., 0.17, N/A, N/A, N/A, N/A
+68,, N/A, N/A, pediatric, N/A,16, the terminal slope of the log concentration versus time profile,0.017, hr^-1, range, N/A, 0.084, N/A, N/A, N/A, N/A
+69,, N/A, N/A, pediatric, N/A,16, the terminal slope of the log concentration versus time profile,0.044, hr^-1, arithmetic mean, s.d., 0.016, N/A, N/A, N/A, N/A
+70,, N/A, N/A, pediatric, N/A,16, elimination half-life,8.2, hr, range, N/A, 42, N/A, N/A, N/A, N/A
+71,, N/A, N/A, pediatric, N/A,16, elimination half-life,17.8, hr, arithmetic mean, s.d., 7.7, N/A, N/A, N/A, N/A

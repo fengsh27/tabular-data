@@ -1,4 +1,5 @@
 import os
+import shutil
 from typing import List, Optional
 import os.path as path
 import csv
@@ -138,7 +139,8 @@ def preprocess_PK_csv_file(pk_csv_file: str):
     bn, extname = path.splitext(pk_csv_file)
     orig_file = f"{bn}-original{extname}"
     try:
-        os.rename(pk_csv_file, orig_file)
+        if not os.path.exists(orig_file):
+            shutil.copyfile(pk_csv_file, orig_file)
     except Exception as e:
         print(str(e))
         return False
@@ -157,18 +159,20 @@ def preprocess_PK_csv_files(pk_csv_files: List[str]):
             print(f"Failed to pre-process file: {f}")
 
 PK_PMIDs = [
-    "30825333",
+    "17635501",
+    # "22050870",
+    # "30825333",
 ]
 
 if __name__ == "__main__":
     pk_files = []
     for pk_id in PK_PMIDs:
-        baseline = f"./benchmark/data/{pk_id}-pk-summary-baseline.csv"
-        if path.exists(baseline):
-            pk_files.append(baseline)
-        gpt4o = f"./benchmark/data/{pk_id}-pk-summary-gpt4o.csv"
-        if path.exists(gpt4o):
-            pk_files.append(gpt4o)
+        # baseline = f"./benchmark/data/{pk_id}-pk-summary-baseline.csv"
+        # if path.exists(baseline):
+        #     pk_files.append(baseline)
+        # gpt4o = f"./benchmark/data/{pk_id}-pk-summary-gpt4o.csv"
+        # if path.exists(gpt4o):
+        #     pk_files.append(gpt4o)
         gemini = f"./benchmark/data/{pk_id}-pk-summary-gemini15.csv"
         if path.exists(gemini):
             pk_files.append(gemini)
