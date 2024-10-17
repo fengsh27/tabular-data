@@ -1,37 +1,35 @@
 ,Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation type,Variation value,Interval type,Lower limit,High limit,P value
 0,Vancomycin, , , , , 60, Initial Cavg, , , , , , , , , 
 1,Vancomycin, , , , , 59, Initial Cavg, , , , , , , , , 
-2,Vancomycin, , , , , , Subtherapeutic, 41, , percentage, , 68.3, , , , <0.001
-3,Vancomycin, , , , , , Subtherapeutic, 6, , percentage, , 10.2, , , , <0.001
-4,Vancomycin, , , , , , Therapeutic, 17, , percentage, , 28.3, , , , <0.001
-5,Vancomycin, , , , , , Therapeutic, 44, , percentage, , 74.6, , , , <0.001
-6,Vancomycin, , , , , , Supra-therapeutic, 2, , percentage, , 3.3, , , , 0.001
-7,Vancomycin, , , , , , Supra-therapeutic, 9, , percentage, , 15.3, , , , 0.001
+2,Vancomycin, , , , , , Subtherapeutic, 68.3, %, , , 41, , , , <0.001
+3,Vancomycin, , , , , , Subtherapeutic, 10.2, %, , , 6, , , , <0.001
+4,Vancomycin, , , , , , Therapeutic, 28.3, %, , , 17, , , , <0.001
+5,Vancomycin, , , , , , Therapeutic, 74.6, %, , , 44, , , , <0.001
+6,Vancomycin, , , , , , Supra-therapeutic, 3.3, %, , , 2, , , , 0.001
+7,Vancomycin, , , , , , Supra-therapeutic, 15.3, %, , , 9, , , , 0.001
 8,Vancomycin, , , , , , Concentration, 12.9, mg/L, median, , , [25th to 75th percentiles], 11.3, 17.0, <0.001
 9,Vancomycin, , , , , , Concentration, 20.3, mg/L, median, , , [25th to 75th percentiles], 17.0, 22.2, <0.001
 10,Vancomycin, , , , , 116, All Cavg, , , , , , , , , 
 11,Vancomycin, , , , , 103, All Cavg, , , , , , , , , 
-12,Vancomycin, , , , , , Subtherapeutic, 78, , percentage, , 67.2, , , , <0.001
-13,Vancomycin, , , , , , Subtherapeutic, 13, , percentage, , 12.6, , , , <0.001
-14,Vancomycin, , , , , , Therapeutic, 36, , percentage, , 31.0, , , , <0.001
-15,Vancomycin, , , , , , Therapeutic, 77, , percentage, , 74.8, , , , <0.001
-16,Vancomycin, , , , , , Supra-therapeutic, 2, , percentage, , 1.7, , , , 0.025
-17,Vancomycin, , , , , , Supra-therapeutic, 13, , percentage, , 12.6, , , , 0.025
+12,Vancomycin, , , , , , Subtherapeutic, 67.2, %, , , 78, , , , <0.001
+13,Vancomycin, , , , , , Subtherapeutic, 12.6, %, , , 13, , , , <0.001
+14,Vancomycin, , , , , , Therapeutic, 31.0, %, , , 36, , , , <0.001
+15,Vancomycin, , , , , , Therapeutic, 74.8, %, , , 77, , , , <0.001
+16,Vancomycin, , , , , , Supra-therapeutic, 1.7, %, , , 2, , , , 0.025
+17,Vancomycin, , , , , , Supra-therapeutic, 12.6, %, , , 13, , , , 0.025
 18,Vancomycin, , , , , , Concentration, 13.1, mg/L, median, , , [25th to 75th percentiles], 11.3, 16.2, <0.001
 19,Vancomycin, , , , , , Concentration, 19.8, mg/L, median, , , [25th to 75th percentiles], 16.8, 22.1, <0.001
 20,Vancomycin, , , , , 22, Initial Cavg/MIC ratio, , , , , , , , , 
 21,Vancomycin, , , , , 17, Initial Cavg/MIC ratio, , , , , , , , , 
-22,Vancomycin, , , , , , <8, 10, , percentage, , 45.5, , , , 0.02
-23,Vancomycin, , , , , , <8, 2, , percentage, , 11.8, , , , 0.02
-24,Vancomycin, , , , , , ≥8, 12, , percentage, , 54.5, , , , 
-25,Vancomycin, , , , , , ≥8, 15, , percentage, , 88.2, , , , 
-26,Vancomycin, , , , , , Cavg/MIC ratio, 8.8, , median, , , [25th to 75th percentiles], 6.2, 11.5, 0.004
-27,Vancomycin, , , , , , Cavg/MIC ratio, 12.8, , median, , , [25th to 75th percentiles], 10.9, 20.9, 0.004
-28,Vancomycin, , , , , 22, Initial AUC/MIC ratio, , , , , , , , , 
-29,Vancomycin, , , , , 17, Initial AUC/MIC ratio, , , , , , , , , 
-30,Vancomycin, , , , , , <400, 20/22, , percentage, , 90.9, , , , 0.02
-31,Vancomycin, , , , , , <400, 10/17, , percentage, , 58.8, , , , 0.02
-32,Vancomycin, , , , , , ≥400, 2/22, , percentage, , 9.1, , , , 
-33,Vancomycin, , , , , , ≥400, 7/17, , percentage, , 41.2, , , , 
-34,Vancomycin, , , , , , AUC/MIC ratio, 211, , median, , , [25th to 75th percentiles], 149, 275, 0.006
-35,Vancomycin, , , , , , AUC/MIC ratio, 307, , median, , , [25th to 75th percentiles], 262, 502, 0.006
+22,Vancomycin, , , , , , <8, 45.5, %, , , 10, , , , 0.02
+23,Vancomycin, , , , , , >=8, 54.5, %, , , 12, , , , 
+24,Vancomycin, , , , , , >=8, 88.2, %, , , 15, , , , 
+25,Vancomycin, , , , , , Cavg/MIC ratio, 8.8, , median, , , [25th to 75th percentiles], 6.2, 11.5, 0.004
+26,Vancomycin, , , , , , Cavg/MIC ratio, 12.8, , median, , , [25th to 75th percentiles], 10.9, 20.9, 0.004
+27,Vancomycin, , , , , 22, Initial AUC/MIC ratio, , , , , , , , , 
+28,Vancomycin, , , , , 17, Initial AUC/MIC ratio, , , , , , , , , 
+29,Vancomycin, , , , , , <400, 90.9, %, , , 20/22, , , , 0.02
+30,Vancomycin, , , , , , >=400, 9.1, %, , , 2/22, , , , 
+31,Vancomycin, , , , , , >=400, 41.2, %, , , 7/17, , , , 
+32,Vancomycin, , , , , , AUC/MIC ratio, 211, , median, , , [25th to 75th percentiles], 149, 275, 0.006
+33,Vancomycin, , , , , , AUC/MIC ratio, 307, , median, , , [25th to 75th percentiles], 262, 502, 0.006

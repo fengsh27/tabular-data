@@ -179,14 +179,18 @@ def _truncate_json_content(content: str):
     return (content[:ix], found) if found else (content, found)
 
 def _strip_contents(contents: List[str]):
+    res = []
     for ix in range(len(contents)):
-        contents[ix] = contents[ix].strip()
-        if contents[ix].startswith("```json"):
-            contents[ix] = contents[ix][7:]
-            contents[ix] = contents[ix].strip()
-        if contents[ix].endswith("```"):
-            contents[ix] = contents[ix][:-3]
-    return contents
+        if contents[ix] is None:
+            continue
+        cont = contents[ix].strip()
+        if cont.startswith("```json"):
+            cont = cont[7:]
+            cont = cont.strip()
+        if cont.endswith("```"):
+            cont = cont[:-3]
+        res.append(cont)
+    return res
 
 def concate_llm_contents(contents: List[str], usages: List[int]):
     contents = _strip_contents(contents)
@@ -211,19 +215,30 @@ def concate_llm_contents(contents: List[str], usages: List[int]):
         except json.JSONDecodeError as e:
             col = e.colno
             length = 0
-            for ix in range(len(contents)-1):
-                cont = contents[ix]
-                length += len(cont)
-                if col >= length and col < length + 20:
-                    # process the {ix}th content
-                    contents[ix], truncated = _truncate_json_content(contents[ix])
+            if len(contents) == 1:
+                all_contents, truncated = _truncate_json_content(contents[0])
+                all_contents = all_contents.strip()
+                if all_contents[-1] == ',':
+                    all_contents = all_contents[:-1]
+                if all_contents[-1] != ']':
+                    all_contents = all_contents + ']'
+            else:
+                for ix in range(len(contents)-1):
+                    cont = contents[ix]
+                    length += len(cont)
+                    next_length = len(contents[ix+1])
+                    if col >= length and col < length + next_length:
+                        # process the {ix}th content
+                        contents[ix], truncated = _truncate_json_content(contents[ix])
                     
-                    # process the {ix+1}the content,
-                    left_brace_ix = contents[ix+1].find('{')
-                    contents[ix+1] = contents[ix+1][left_brace_ix:]
-                    truncated = True
-                    break
-            all_contents = ''.join(contents)
+                        # process the {ix+1}the content,
+                        left_brace_ix = contents[ix+1].find('{')
+                        contents[ix+1] = contents[ix+1][left_brace_ix:]
+                        if left_brace_ix == -1 and contents[ix] is not None and contents[ix][-1] == ',':
+                            contents[ix] = contents[ix][:-1]
+                        truncated = True
+                        break
+                all_contents = ''.join(contents)
         except Exception as e:
             break
     
