@@ -20,18 +20,18 @@ pk_cols_definition = (
     "P value, The p-value is a number, calculated from a statistical test, that describes the likelihood of a particular set of observations if the null hypothesis were true; varies depending on the study, and therefore it may not always be reported."
 )
 pe_cols_definition = (
-    "Characteristic/risk factor describes the particular or general characteristics of the study population related to the study's outcomes..\n "
-    "Exposure refers to Any factor that may be associated with an outcome of interest (drugs, medical conditions, medications etc.).\n "
-    "Outcomes is A measure(s) of interest that an investigator(s) considers to be the most important among the many outcomes that are to be examined in the study; however, in the study outcomes sheet, this is where all measures as outlined in the article must be well elaborated to include their reported statistics..\n "
-    "Statistics is the measure used to describe numerical values (ex: adjusted odds ratio, multivariate, hazard ratio, risk ratio, incident rate, frequency, occurrence).\n "
-    "Value.\n "
-    "Unit.\n "
-    "Variablility statistic means how spread out the data is, based on the study type (ex: standard deviation).\n "
-    "Variablility value.\n "
-    "Interval type is a scale the examines the difference usually between two numbers (range, interquartile range, 95% confidence interval).\n "
+    "Characteristic/risk factor lists the characteristics or risk factors associated with the outcomes in the study population, for example, age, race, year or time interval of interest, location etc..\n "
+    "Exposure lists the main exposure of interest associated with the outcomes, which will primarily be the drug name, treatment, or therapy that is studied in the paper..\n "
+    "Outcomes is A measure(s) of interest that is correlated with the exposure and is reported as the primary or secondary outcome(s) in the PE papers. These could be pregnancy, obstetric or birth related outcomes that are associated with the drug or exposure of interest. They could also include general disease or health conditions, health related events, or deaths..\n "
+    "Statistics is the measure used to describe numerical values (ex: mean with standard deviations (SD), or median with range or interquartile range (IQR), absolute/relative risks, risk ratios, odds ratios, hazard ratios etc.).\n "
+    "Value includes the numerical value(s) associated with their respective PE outcomes.\n "
+    "Unit will includes the unit of measurement associated with the values of the PE outcomes, for example, grams, weeks, days etc..\n "
+    "Variablility statistic lists the name of the statistic used to indicate the spread of data and is related to the main statistical method used for reporting (Column E), for example, standard deviations (SD), or range or interquartile range (IQR)..\n "
+    "Variablility value includes the numerical value(s) reported for the variability statistic. .\n "
+    "Interval type list the name of the interval which is expected to typically contain the parameter being estimated, for example, range, IQR, confidence intervals etc..\n "
     "Interval low is the lower end value reported based on the interval type. .\n "
     "Interval high is theupper end value reported based on the interval type..\n "
-    "P value is a number, calculated from a statistical test, that describes the likelihood of a particular set of observations if the null hypothesis were true; varies depending on the study, and therefore it may not always be reported."
+    "P value includes the numerical value associated with the outcomes and the statistical test conducted. Not always reported in the studies."
 )
 
 def test_generate_pk():
