@@ -9,7 +9,7 @@ from components.main_tab import main_tab
 from components.html_table_tab import html_tab
 from extractor.stampers import ArticleStamper
 
-__version__ = "0.1.38"
+__version__ = "0.1.39"
 
 def initialize():
     # prepare logger

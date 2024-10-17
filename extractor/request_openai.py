@@ -1,4 +1,4 @@
-from typing import List, Any
+from typing import List, Any, Optional
 from openai import AzureOpenAI, OpenAI
 import os
 import logging
@@ -83,7 +83,6 @@ def request_to_chatgpt_4o(prompts: List[Any], question: str):
             model=model_4o,
             messages=prompts,
             temperature=0,
-            max_tokens=4096,
             top_p=0.95,
             frequency_penalty=0,
             presence_penalty=0,
@@ -99,8 +98,10 @@ def request_to_chatgpt_4o(prompts: List[Any], question: str):
         contents = [content]
         usages = [usage]
         loops = 0
-        while _is_incompleted_response(content) and loops < 2:
-            prompts.append({"role": "assistant", "content": content})
+        MAX_LOOP = 5
+        while _is_incompleted_response(content) and loops < MAX_LOOP:
+            if content is not None:
+                prompts.append({"role": "assistant", "content": content})
             prompts.append({"role": "user", "content": "the output json table is not completed, please continue to generate the json table without any other text."})
             res = client_4o.chat.completions.create(
                 model=model_4o,
@@ -125,7 +126,9 @@ def request_to_chatgpt_4o(prompts: List[Any], question: str):
         logger.error(e)
         return (False, str(e), None, False)
     
-def _is_incompleted_response(content: str):
+def _is_incompleted_response(content: Optional[str] = None):
+    if content is None:
+        return False
     stripped_content = content.strip()
     if not stripped_content.endswith("}]") \
        and not stripped_content.endswith("```"):
