@@ -35,7 +35,7 @@ class TablesEvaluator:
         for c in self.anchor_cols:
             v1 = row1[c]
             v2 = row2[c]
-            if not TablesEvaluator.compare_value(v1, v2):
+            if not TablesEvaluator.is_equal(v1, v2):
                 return False        
         return True
 
@@ -45,7 +45,7 @@ class TablesEvaluator:
             v1 = row1[c]
             v2 = row2[c]
             
-            if TablesEvaluator.compare_value(v1, v2):
+            if TablesEvaluator.is_equal(v1, v2):
                 sum += 1
     
         return (int)(10.0 * sum / float(len(self.rating_cols)))
@@ -66,7 +66,7 @@ class TablesEvaluator:
             return None
 
     @staticmethod
-    def compare_value(v1, v2) -> bool:
+    def is_equal(v1, v2) -> bool:
         if v1 == v2:
             return True
         if isinstance(v1, str) and isinstance(v2, str):
@@ -92,11 +92,36 @@ class TablesEvaluator:
         try:
             fv1 = extract_float_value(sval) if len(sval) > 0 else math.nan
             fv2 = float(nsval)
+            if fv1 is None:
+                return False if not math.isnan(fv2) else True
             return abs(fv1 - fv2) < DELTA_VALUE
         except Exception as e:
             logger.error(e)
             return False
             
+    def anchor_row_from_rows(self, row: Series, rows: List[Series]):
+        candidate_rows = rows
+        similar_rows = []
+        for c in self.anchor_cols:
+            v = row[c]
+            if v is None:
+                continue
+            v = v.strip() if isinstance(v, str) else v
+            if isinstance(v, str) and len(v) == 0:
+                continue
+            similar_rows = []
+            for r in candidate_rows:
+                if TablesEvaluator.is_equal(v, r[c]):
+                    similar_rows.append(r)
+            if len(similar_rows) == 0:
+                candidate_rows = rows
+            elif len(similar_rows) == 1:
+                return similar_rows[0]
+            else:
+                candidate_rows = similar_rows
+        return None if len(similar_rows) == 0 else similar_rows[0]
+
+
     def anchor_row_from_dataframe(self, row: Series, df: DataFrame):
         for ix, r in df.iterrows():
             if self.anchor_row(r, row):
@@ -115,8 +140,9 @@ class TablesEvaluator:
         much_row_num = much.shape[0]
         scores = []
         sum = 0
+        much_rows = much.to_dict('records')
         for index, row in less.iterrows():
-            much_row = self.anchor_row_from_dataframe(row, much)
+            much_row = self.anchor_row_from_rows(row, much_rows)
             if much_row is None:
                 scores.append(0)
                 continue
