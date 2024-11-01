@@ -246,12 +246,22 @@ def concate_llm_contents(contents: List[str], usages: List[int]):
 
 
 import re
-def extract_float_value(s):
-    pattern = r'[-+]?[0-9]*\.?[0-9]+'
+def extract_float_value(s)->float:
+    pattern = r'([-+]?[0-9]*\.?[0-9]+)'
     match = re.search(pattern, s)
-    
     if match:
         return float(match.group())
+    else:
+        return None
+
+def extract_float_values(s)->List[float]:
+    pattern = r'([-+]?[0-9]*\.?[0-9]+)'
+    match = re.findall(pattern, s)
+    if match:
+        ret_arr = []
+        for val in match:
+            ret_arr.append(float(val))
+        return ret_arr
     else:
         return None
 

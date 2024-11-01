@@ -12,7 +12,32 @@ from extractor.utils import (
 
 logger = logging.getLogger(__name__)
 
-from extractor.constants import PKSUMMARY_TABLE_OUTPUT_COLUMNS, PROMPTS_NAME_PK, PROMPTS_NAME_PE
+from extractor.constants import (
+    PROMPTS_NAME_PK,
+    PROMPTS_NAME_PE,
+)
+
+class JsonEnclosePropertyNameInQuotesPlugin:
+    """
+    This plugin is to ensure in json, the property names are enclosed in quotes ""
+    """
+    def __init__(self, prompts_type: str=PROMPTS_NAME_PK) -> None:
+        self.prompts_type = prompts_type
+        with open("./prompts/pk_prompts.json", "r") as pk_obj:
+            pk_str = pk_obj.read()
+            self.pk_prompts = json.loads(pk_str)
+        with open("./prompts/pe_prompts.json", "r") as pe_obj:
+            pe_str = pe_obj.read()
+            self.pe_prompts = json.loads(pe_str)
+    
+    def process(self, json_str: str):
+        prompts = self.pk_prompts if self.prompts_type == PROMPTS_NAME_PK else self.pe_prompts
+        column_names = prompts["table_extraction_prompts"]["output_columns"]
+        for cn in column_names:
+            json_str = re.sub(rf"(?<![a-zA-Z0-9]){cn}:", f'"{cn}":', json_str)
+        
+        return json_str
+        
 
 class GeneratedPKSummaryTableProcessor(object):
     """
@@ -31,9 +56,14 @@ class GeneratedPKSummaryTableProcessor(object):
         self.columns = temp_columns
         self.lower_columns = list(map(lambda x: x.lower(), self.columns))
         self.columns_dict = temp_columns_dict
+        self.plugins = [JsonEnclosePropertyNameInQuotesPlugin(prompts_type=prompts_type)]
 
     def process_content(self, content: str) -> str:
         content = self._strip_table_content(content)
+        
+        for preprocessor in self.plugins:
+            content = preprocessor.process(content)
+
         if self._check_content_format(content) == "json":
             return self._convert_json_to_csv(content)
         else:
@@ -117,6 +147,7 @@ class GeneratedPKSummaryTableProcessor(object):
         if strp_content.endswith("```"):
             strp_content = strp_content[:-3]
         return strp_content.strip()
+    
     def _check_content_format(self, content: str) -> str:
         stripped_content = content.strip()
         if stripped_content.startswith('[') or stripped_content.startswith('{'):
