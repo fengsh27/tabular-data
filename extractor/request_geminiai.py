@@ -8,9 +8,22 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-genai.configure(api_key=os.environ.get("GEMINI_15_API_KEY", None))
-model_15_pro =genai.GenerativeModel(os.environ.get("GEMINI_15_MODEL", "gemini-pro"))
-model_15_flash = genai.GenerativeModel(os.environ.get("GEMINI_15_FLASH_MODEL", "gemini-1.5-flash-latest"))
+if "GEMINI_15_API_KEY" in os.environ:
+    genai.configure(api_key=os.environ.get("GEMINI_15_API_KEY", None))
+
+def get_client():
+    try:
+        model_15_pro = genai.GenerativeModel(
+            os.environ.get("GEMINI_15_MODEL", "gemini-pro")
+            ) \
+            if "GEMINI_15_MODEL" in os.environ else None
+        model_15_flash = genai.GenerativeModel(
+            os.environ.get("GEMINI_15_FLASH_MODEL", "gemini-1.5-flash-latest")
+            ) \
+            if "GEMINI_15_FLASH_MODEL" in os.environ else None
+        return (model_15_pro, model_15_flash)
+    except Exception:
+        return (None, None)
 
 def add_message_message_list(msgs: List[Any], msg: Dict[str, Any]):
     cnt = len(msgs)
@@ -75,6 +88,7 @@ def request_to_gemini(model: GenerativeModel, messages: List[any]):
 def request_to_gemini_15_pro(messages: List[Any], question: str):
     add_message_message_list(messages, {"role": "user", "parts": question})
     try:
+        model_15_pro, _ = get_client()
         return request_to_gemini(model_15_pro, messages)
     except Exception as e:
         logger.error(e)
@@ -84,6 +98,7 @@ def request_to_gemini_15_pro(messages: List[Any], question: str):
 def request_to_gemini_15_flash(messages: List[Any], question: str):
     add_message_message_list(messages, {"role": "user", "parts": question})
     try:
+        _, model_15_flash = get_client()
         return request_to_gemini(model_15_flash, messages)
     except Exception as e:
         logger.error(e)
