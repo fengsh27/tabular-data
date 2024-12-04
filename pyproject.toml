@@ -10,7 +10,6 @@ readme = "README.md"
 python = "^3.10"
 pandas = "^2.2.0"
 requests = "^2.31.0"
-bioc = "^2.1"
 html5lib = "^1.1"
 fake-useragent = "^1.4.0"
 beautifulsoup4 = "^4.12.3"
@@ -18,7 +17,6 @@ biopython = "^1.83"
 streamlit = "^1.31.1"
 openai = "^1.13.3"
 python-dotenv = "^1.0.1"
-pdfplumber = "^0.11.0"
 streamlit-antd-components = "^0.3.2"
 tenacity = "^8.2.3"
 ratelimit = "^2.2.1"
@@ -26,8 +24,12 @@ shortuuid = "^1.0.13"
 google-generativeai = "^0.4.1"
 nanoid = "^2.0.0"
 streamlit-modal = "^0.1.2"
-anthropic = "^0.26.1"
-sentence-transformers = "^3.2.1"
+anthropic = {version = "^0.26.1", optional = true}
+sentence-transformers = {version = "^3.2.1", optional = true}
+
+[tool.poetry.extras]
+semantic = ["sentence-transformers"]
+claude = ["anthropic"]
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0.1"
