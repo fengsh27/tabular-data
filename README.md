@@ -4,7 +4,7 @@
 We use [Poetry](https://python-poetry.org) for dependency management. Please make sure that you have installed Poetry and set up the environment correctly before starting development.
 
 ### setup environment
-- Install dependencies from the lock file: `poetry install`
+- Install dependencies from the lock file: `poetry install -E semantic -E claude`
 
 - Use the environment: You can either run commands directly with `poetry run
 <command>` or open a shell with `poetry shell` and then run commands directly.
