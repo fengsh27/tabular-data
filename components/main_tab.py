@@ -312,7 +312,7 @@ def main_tab():
         ss.main_prompts_option = option
         open_modal = st.button("View Prompts ...")
         st.divider()
-        customized_prompts = st.text_area("Customized Prompts (Optional):", height=40)
+        customized_prompts = st.text_area("Customized Prompts (Optional):", height=70)
         ss.main_customized_prompts = customized_prompts
         if not ss.main_extracted_btn_disabled:
             tables = (
