@@ -26,9 +26,12 @@ class ArticleRetriever(object):
         """
         request full-text by url
         """
+        # img_fn = shortuuid.uuid()
         fn = shortuuid.uuid()
         folder = os.environ.get("TEMP_FOLDER", "./tmp")
         fn = os.path.join(folder, fn)
+        # img_fn = os.path.join(folder, img_fn)
+        # res = make_article_request(url, fn, img_fn) # capture image
         res = make_article_request(url, fn)
         if res.status_code == 200 and os.path.exists(fn):
             # try to use make_request (it doesn't work to make_request(final_url))
