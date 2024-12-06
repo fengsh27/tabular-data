@@ -33,6 +33,6 @@ After benchmark completed, we can find the results in `benchmark-result.log`
 ## bump version
 This package employs bump2version to bump version
 ```
-bump2version --current-version {current version} {major, minor or patch} version.py pyproject.toml
+bump2version {major, minor or patch}
 ```
 
