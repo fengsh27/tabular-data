@@ -210,6 +210,6 @@ class TablesEvaluator:
         return (int)(100.0 * (sum / (10.0 * less_row_num + 1 * (much_row_num-less_row_num))))
         
     
-    def compare_tables(self, baseline:pd.DataFrame, target:pd.DataFrame) -> tuple[int, int]:
+    def compare_tables(self, baseline:pd.DataFrame, target:pd.DataFrame) -> int:
         return self.rate_rows(baseline, target)
 
