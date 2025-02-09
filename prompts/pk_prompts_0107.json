@@ -1,24 +1,24 @@
 {
-  "version": "250117-yichuan-update",
+  "version": "250107-default",
   "table_extraction_prompts": {
     "role_description": "Please act as a biomedical assistant, help to extract the information from the provided source",
     "source": "html table from biomedical article",
     "output_columns": [
       "DN",
       "Ana",
-      "Sp",
-      "Pop",
-      "PS",
+      "Sp", 
+      "Pop", 
+      "PS", 
       "SN",
-      "PT",
-      "V",
-      "U",
-      "SS",
+      "PT", 
+      "V", 
+      "U", 
+      "SS", 
       "VT",
       "VV",
-      "IT",
+      "IT", 
       "LL",
-      "HL",
+      "HL", 
       "PV"
     ],
     "output_columns_map": [
@@ -50,19 +50,17 @@
       "V: Value, is a number, the value of parameter",
       "U: Unit, the unit of the value",
       "SS: Summary statistics, the statistics method to summary the data, like 'geometric mean', 'arithmetic mean'",
-      "VV: Variation value, is a number, the number that corresponds to the specific variation.",
+      "VV: Variation value, is a number, the number that corresponds to the specific variation.", 
       "VT: Variation type, the variability measure (describes how spread out the data is) associated with the specific parameter, e.g., standard deviation (SD), CV%.",
       "IT: Interval type, is text, specifies the type of interval that is being used to describe uncertainty or variability around a measure or estimate, like '95% CI', 'range' and so on.",
       "LL: Lower limit, is a number, the lower bounds of the interval",
-      "HL: High limit, is a number, the higher bounds of the interval",
+      "HL: High limit, is a number, the higher bounds of the interval",      
       "PV: P value, The p-value is a number, calculated from a statistical test, that describes the likelihood of a particular set of observations if the null hypothesis were true; varies depending on the study, and therefore it may not always be reported."
     ],
     "output_notes": [
       "1. Only output table in compact json format without any other characters, no space, no newline, no triple backticks ``` and no 'json'.",
       "2. Ensure to extract all available information for each field without omitting any details.",
-      "3. If the information that is not provided, please leave it with empty string.",
-      "4. If the study's analyte is the primary drug itself (i.e., directly measuring the drug's concentration, pharmacokinetic parameters, etc.), then the analyte should be the drug name itself, rather than being left blank.",
-      "5. Ensure all rows are extracted with every possible SN value, even if not explicitly stated."
+      "3. If the information that is not provided, please leave it with empty string."
     ]
   },
   "full_text_prompts": {

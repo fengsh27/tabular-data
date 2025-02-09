@@ -311,8 +311,14 @@ def on_extract(pmid: str):
         return
 
     # prepare prompts including article prmpots and table prompts
-    prmpt_generator = TableExtractionPromptsGenerator(ss.main_prompts_option)
+    prompt_option = PROMPTS_NAME_PK if ss.main_prompts_option == PROMPTS_NAME_PK_COT else ss.main_prompts_option
+    prmpt_generator = TableExtractionPromptsGenerator(prompt_option)
     first_prompots = prmpt_generator.generate_system_prompts()
+
+    if ss.main_prompts_option == PROMPTS_NAME_PK_COT:
+        with open(f"./prompts/cot_examples/0119_shot29943508.txt", "r") as file:
+            cot_example = file.read()
+        first_prompots += cot_example
 
     include_tables = []
     for ix in range(len(ss.main_retrieved_tables)):

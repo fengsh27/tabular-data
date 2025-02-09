@@ -1,0 +1,468 @@
+Before officially starting the task, There is an example to help you understand your workflow.
+Below are all the tables from the article.
+
+html table is:
+```
+<section class="tw xbox font-sm" id="aas13175-tbl-0002" lang="en"><h4 class="obj_head">Table 2.</h4>
+<div class="caption p"><p>Fentanyl concentrations in umbilical vein and maternal serum. Data are presented as mean (SD) or median [interquartile range] as appropriate</p></div>
+<div class="tbl-box p" tabindex="0"><table class="content" frame="hsides" rules="groups">
+<col span="1" style="border-right:solid 1px #000000"/>
+<col span="1" style="border-right:solid 1px #000000"/>
+<col span="1" style="border-right:solid 1px #000000"/>
+<col span="1" style="border-right:solid 1px #000000"/>
+<col span="1" style="border-right:solid 1px #000000"/>
+<thead valign="top"><tr style="border-bottom:solid 1px #000000">
+<th align="left" colspan="1" rowspan="1" valign="top">Variable</th>
+<th align="center" colspan="1" rowspan="1" valign="top">Adrenaline group (n = 19)</th>
+<th align="center" colspan="1" rowspan="1" valign="top">Control group (n = 20)</th>
+<th align="center" colspan="1" rowspan="1" valign="top">Mean difference</th>
+<th align="center" colspan="1" rowspan="1" valign="top">
+<em>P</em>‐value</th>
+</tr></thead>
+<tbody>
+<tr>
+<td align="left" colspan="1" rowspan="1">Mean serum fentanyl concentration, umbilical vein (nmol/L)</td>
+<td align="center" colspan="1" rowspan="1">0.162 (0.090) (n = 16)</td>
+<td align="center" colspan="1" rowspan="1">0.151 (0.070) (n = 20)</td>
+<td align="center" colspan="1" rowspan="1">0.012 [−0.042; 0.065],</td>
+<td align="center" colspan="1" rowspan="1">.67</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Median maternal serum fentanyl concentration at birth (nmol/L)</td>
+<td align="center" colspan="1" rowspan="1">0.268 [0.193; 0.493]<a class="usa-link" href="#aas13175-note-0005"><sup>a</sup></a> (n = 16)</td>
+<td align="center" colspan="1" rowspan="1">0.291 [0.212; 0.502]<a class="usa-link" href="#aas13175-note-0005"><sup>a</sup></a> (n = 19)</td>
+<td align="center" colspan="1" rowspan="1">−0.061 [−0.205; 0.082]</td>
+<td align="center" colspan="1" rowspan="1">.66<a class="usa-link" href="#aas13175-note-0005"><sup>a</sup></a>
+</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Mean AUC 0‐120 min for fentanyl in maternal serum (nmol h/L)</td>
+<td align="center" colspan="1" rowspan="1">0.428 (0.162) (n = 18)</td>
+<td align="center" colspan="1" rowspan="1">0.590 (0.197) (n = 15)<a class="usa-link" href="#aas13175-note-0006"><sup>b</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">−0.162 [−0.289; −0.034]</td>
+<td align="center" colspan="1" rowspan="1">.015</td>
+</tr>
+</tbody>
+</table></div>
+<div class="p text-right font-secondary"><a class="usa-link" href="table/aas13175-tbl-0002/" rel="noopener noreferrer" target="_blank">Open in a new tab</a></div>
+<div class="tw-foot p">
+<div class="fn" id="aas13175-note-0004"><p>AUC, Area under the curve. Student's <em>t</em> test was used to calculate <em>P</em>‐values unless otherwise specified. Complete case analysis, numbers in some cells lower than the total numbers of patients included due to missing data (hemolysis of samples, technical laboratory difficulties).</p></div>
+<div class="fn" id="aas13175-note-0005">
+<sup>a</sup><p class="display-inline">Mann–Whitney <em>U</em> test used. Data presented as median [25th; 75th percentile].</p>
+</div>
+<div class="fn" id="aas13175-note-0006">
+<sup>b</sup><p class="display-inline">Two cases with missing data due to birth prior to 120 min sample.</p>
+</div>
+</div></section>```
+
+html table is:
+```
+<section class="tw xbox font-sm" id="aas13175-tbl-0001" lang="en"><h3 class="obj_head">Table 1.</h3>
+<div class="caption p"><p>Baseline maternal characteristics. Data are presented as mean (standard deviation) unless otherwise stated. BMI, Body mass index</p></div>
+<div class="tbl-box p" tabindex="0"><table class="content" frame="hsides" rules="groups">
+<col span="1" style="border-right:solid 1px #000000"/>
+<col span="1" style="border-right:solid 1px #000000"/>
+<col span="1" style="border-right:solid 1px #000000"/>
+<thead valign="top"><tr style="border-bottom:solid 1px #000000">
+<th align="left" colspan="1" rowspan="1" valign="top">Variable</th>
+<th align="center" colspan="1" rowspan="1" valign="top">Adrenaline group (n = 19)</th>
+<th align="center" colspan="1" rowspan="1" valign="top">Control group (n = 20)</th>
+</tr></thead>
+<tbody>
+<tr>
+<td align="left" colspan="1" rowspan="1">Age (years)</td>
+<td align="center" colspan="1" rowspan="1">28 (5)</td>
+<td align="center" colspan="1" rowspan="1">29 (4)</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Weight (kg)</td>
+<td align="center" colspan="1" rowspan="1">89 [68; 99]<a class="usa-link" href="#aas13175-note-0002"><sup>a</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">78 [71; 85]<a class="usa-link" href="#aas13175-note-0002"><sup>a</sup></a>
+</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Height (cm)</td>
+<td align="center" colspan="1" rowspan="1">168 (7)</td>
+<td align="center" colspan="1" rowspan="1">166 (6)</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Gestational age (wk/d)<a class="usa-link" href="#aas13175-note-0003"><sup>b</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">40/0 (1.3)<a class="usa-link" href="#aas13175-note-0003"><sup>b</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">40/1 (1.4)<a class="usa-link" href="#aas13175-note-0003"><sup>b</sup></a>
+</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Pre‐gestational BMI (kg/m<sup>2</sup>)</td>
+<td align="center" colspan="1" rowspan="1">24.1 (4.4)</td>
+<td align="center" colspan="1" rowspan="1">22.6 (3.0)</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Cervical dilatation at epidural placement (cm)</td>
+<td align="center" colspan="1" rowspan="1">4.7 (1.3)</td>
+<td align="center" colspan="1" rowspan="1">5.0 (1.5)</td>
+</tr>
+</tbody>
+</table></div>
+<div class="p text-right font-secondary"><a class="usa-link" href="table/aas13175-tbl-0001/" rel="noopener noreferrer" target="_blank">Open in a new tab</a></div>
+<div class="tw-foot p">
+<div class="fn" id="aas13175-note-0002">
+<sup>a</sup><p class="display-inline">Data presented as median [25th; 75th percentile].</p>
+</div>
+<div class="fn" id="aas13175-note-0003">
+<sup>b</sup><p class="display-inline">Standard deviation in weeks.</p>
+</div>
+</div></section>```
+
+html table is:
+```
+<section class="tw xbox font-sm" id="aas13175-tbl-0003" lang="en"><h3 class="obj_head">Table 3.</h3>
+<div class="caption p"><p>Obstetrical and epidural outcomes. Data are presented as mean (SD) unless otherwise stated. Student's <em>t</em> test was used to calculate <em>P</em>‐values unless otherwise specified</p></div>
+<div class="tbl-box p" tabindex="0"><table class="content" frame="hsides" rules="groups">
+<col span="1" style="border-right:solid 1px #000000"/>
+<col span="1" style="border-right:solid 1px #000000"/>
+<col span="1" style="border-right:solid 1px #000000"/>
+<col span="1" style="border-right:solid 1px #000000"/>
+<thead valign="top"><tr style="border-bottom:solid 1px #000000">
+<th align="left" colspan="1" rowspan="1" valign="top">Variable</th>
+<th align="center" colspan="1" rowspan="1" valign="top">Adrenaline group (n = 19)</th>
+<th align="center" colspan="1" rowspan="1" valign="top">Control group (n = 20)</th>
+<th align="center" colspan="1" rowspan="1" valign="top">
+<em>P</em>‐value</th>
+</tr></thead>
+<tbody>
+<tr>
+<td align="left" colspan="1" rowspan="1">Time from epidural placement to birth (min)</td>
+<td align="center" colspan="1" rowspan="1">311 [227; 491]<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">348 [268; 486]<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">.81<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Birth weight (g)</td>
+<td align="center" colspan="1" rowspan="1">3520 [3200; 3760]<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">3602 [3384; 3809]<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">.63<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Apgar‐score at 1 min</td>
+<td align="center" colspan="1" rowspan="1">9 [9; 9]<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">9 [8.25; 9]<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">.942<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Apgar‐score at 5 min</td>
+<td align="center" colspan="1" rowspan="1">10 [10; 10]<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">10 [9; 10]<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">.35<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Apgar‐score at 10 min</td>
+<td align="center" colspan="1" rowspan="1">10 [10; 10]<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">10 [9; 10]<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">.71<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">pH umbilical vein at birth</td>
+<td align="center" colspan="1" rowspan="1">7.33 [7.30; 7.35]<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">7.35 [7.30; 7.39]<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">.32<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Base excess umbilical vein at birth</td>
+<td align="center" colspan="1" rowspan="1">−4.5 (1.8)</td>
+<td align="center" colspan="1" rowspan="1">−4.9 (1.6)</td>
+<td align="center" colspan="1" rowspan="1">.48</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Total dose of epidural solution administered (mL)</td>
+<td align="center" colspan="1" rowspan="1">36 [33; 66]<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">47 [36; 69]<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">.59<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Total number of boluses administered epidurally</td>
+<td align="center" colspan="1" rowspan="1">2.8 (2.6)</td>
+<td align="center" colspan="1" rowspan="1">3.4 (2.9)</td>
+<td align="center" colspan="1" rowspan="1">.52</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">Modified Bromage‐score at 60 min</td>
+<td align="center" colspan="1" rowspan="1">0 [0; 0]<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">0 [0, 0]<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+<sup>,</sup>
+<a class="usa-link" href="#aas13175-note-0008"><sup>b</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">.55<a class="usa-link" href="#aas13175-note-0007"><sup>a</sup></a>
+</td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">No. of mechanically assisted deliveries</td>
+<td align="center" colspan="1" rowspan="1">3 (16%)<a class="usa-link" href="#aas13175-note-0009"><sup>c</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">8 (40%)<a class="usa-link" href="#aas13175-note-0009"><sup>c</sup></a>
+</td>
+<td align="left" colspan="1" rowspan="1"></td>
+</tr>
+<tr>
+<td align="left" colspan="1" rowspan="1">No. of cesarean deliveries</td>
+<td align="center" colspan="1" rowspan="1">1 (5%)<a class="usa-link" href="#aas13175-note-0009"><sup>c</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">2 (10%)<a class="usa-link" href="#aas13175-note-0009"><sup>c</sup></a>
+</td>
+<td align="center" colspan="1" rowspan="1">.17<a class="usa-link" href="#aas13175-note-0009"><sup>c</sup></a>
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class="p text-right font-secondary"><a class="usa-link" href="table/aas13175-tbl-0003/" rel="noopener noreferrer" target="_blank">Open in a new tab</a></div>
+<div class="tw-foot p">
+<div class="fn" id="aas13175-note-0007">
+<sup>a</sup><p class="display-inline">Mann–Whitney <em>U</em> test used. Data presented as median [25th; 75th percentile].</p>
+</div>
+<div class="fn" id="aas13175-note-0008">
+<sup>b</sup><p class="display-inline">All patients in this subgroup had a Bromage score of 0.</p>
+</div>
+<div class="fn" id="aas13175-note-0009">
+<sup>c</sup><p class="display-inline">Data presented as numbers (percentage of subgroup). Fisher's exact test was used to calculate <em>P</em>‐value for both mechanical deliveries and cesarean deliveries in a 2 × 2 table.</p>
+</div>
+</div></section>```
+
+Next, perform information extraction.
+Below is a step-by-step explanation of how to accurately extract and map data from the aforementioned tables into the specified PK parameter table
+(DN, Ana, Sp, Pop, PS, SN, PT, V, U, SS, VT, VV, IT, LL, HL, PV).
+This process can be broken down into three main stages—'Identify – Extract – Assemble'—to clarify how each piece of information is handled and mapped.
+
+---
+
+### Step 1: Identify the "Study Subject" and "Variable Meaning"
+
+1. **Identify the name of the drug being studied (DN, Drug name)**
+   - From the table titles or descriptive text, we ascertain that the measured primary drug is “Fentanyl.” Therefore, for any pharmacokinetic results related to fentanyl concentrations, PK parameters, etc., DN (Drug name) is set to “Fentanyl.”
+   - According to the instructions, if the analyte measured is indeed fentanyl itself (whether in plasma, maternal serum, or AUC values), then the Analyte (Ana) should also be entered as “Fentanyl.”
+
+2. **Differentiate table types to locate PK data**
+   - PK-related information (e.g., concentrations, AUC, half-life) is typically found in “Table 2” or tables explicitly mentioning “concentration” or “pharmacokinetic” parameters.
+   - In this case, **Table 1** and **Table 3** mostly feature baseline demographic data (age, weight, height) and obstetric/neonatal outcomes (Apgar scores, pH, base excess), which are not PK parameters. Only **Table 2** prominently includes fentanyl concentrations and AUC, which are directly relevant. Therefore, the PK data of interest come exclusively from Table 2.
+
+3. **Clarify the meaning of each field and its corresponding table column**
+   - **DN (Drug name):** Here, “Fentanyl.”
+   - **Ana (Analyte):** If the text mentions measurements for fentanyl or its metabolite, specify “Fentanyl.”
+   - **Sp (Specimen):** Determine the biological matrix from the row or column heading (e.g., “umbilical vein,” “maternal serum”). In this example, you can label them collectively as “blood,” while adding details in the PT (Parameter type) to specify location (umbilical vein, maternal serum).
+   - **Pop (Population):** Check whether the subjects are maternal, neonate, pediatric, etc. In this example, it is “maternal.”
+   - **PS (Pregnancy stage):** For instance, if it is explicitly measured during birth or postpartum, label as “post-partum.” If no exact stage is stated, leave it blank.
+   - **SN (Subject N):** Extract the (n=XX) count for each column (Adrenaline group, Control group). For example, if a row says “(n=16)” or “(n=20),” enter “16” or “20” here.
+   - **PT (Parameter type):** A short description of the measured parameter, such as “concentration, umbilical vein,” “maternal serum concentration,” or “AUC 0-120 min.”
+   - **V (Value):** The actual numeric value (e.g., 0.162, 0.428). This could be the mean or median.
+   - **U (Unit):** The unit of measurement, such as nmol/L or nmol h/L.
+   - **SS (Summary statistics):** “mean,” “median,” etc.
+   - **VT (Variation type):** “SD,” “IQR,” “CV%,” etc.
+   - **VV (Variation value):** The numerical value corresponding to the variation type (e.g., an SD of 0.09). If the data is an interval like [min; max] or [25th; 75th percentile], use IT, LL, HL below.
+   - **IT (Interval type):** If it’s “95% CI,” “25th; 75th percentile,” etc., place that here.
+   - **LL (Lower limit)** and **HL (High limit):** The lower and upper bounds, respectively, for intervals like “0.193; 0.493.”
+   - **PV (P value):** If the row reports a p-value (e.g., .67, .015), put it here. Otherwise, leave this blank.
+
+---
+
+### Step 2: Extract PK Data Specifically from "Table 2"
+
+Since Table 2 is the relevant PK table, read each of the three listed rows and both columns (Adrenaline group, Control group) to gather the data needed. The details are as follows:
+
+#### (1) First row
+
+- Text: `Mean serum fentanyl concentration, umbilical vein (nmol/L)`
+  - Parameter type: “concentration, umbilical vein”
+  - Unit: “nmol/L”
+  - Summary statistics: described as “Mean (SD),” so SS = “mean,” VT = “SD”
+
+- Adrenaline group (n=19), effectively (n=16) with valid data
+  - Value: 0.162
+  - SD: 0.090
+  - p-value when compared with the control: 0.67
+  - Final entry:
+    - DN = “Fentanyl”
+    - Ana = “Fentanyl”
+    - Sp = “blood”
+    - Pop = “maternal”
+    - PS = “post-partum”
+    - SN = “16”
+    - PT = “concentration,umbilical vein”
+    - V = “0.162”
+    - U = “nmol/L”
+    - SS = “mean”
+    - VT = “SD”
+    - VV = “0.09”
+    - IT = “”
+    - LL = “”
+    - HL = “”
+    - PV = “0.67”
+
+- Control group (n=20)
+  - Value: 0.151
+  - SD: 0.070
+  - Same row p = 0.67
+  - Final entry:
+    - DN = “Fentanyl”
+    - Ana = “Fentanyl”
+    - Sp = “blood”
+    - Pop = “maternal”
+    - PS = “post-partum”
+    - SN = “20”
+    - PT = “concentration,umbilical vein”
+    - V = “0.151”
+    - U = “nmol/L”
+    - SS = “mean”
+    - VT = “SD”
+    - VV = “0.07”
+    - IT = “”
+    - LL = “”
+    - HL = “”
+    - PV = “0.67”
+
+#### (2) Second row
+
+- Text: `Median maternal serum fentanyl concentration at birth (nmol/L)`
+  - Parameter type: “maternal serum concentration”
+  - Unit: “nmol/L”
+  - Summary statistics: “Median” (Mann–Whitney U test, IQR)
+
+- Adrenaline group → (n=16)
+  - Value: 0.268
+  - 25th, 75th percentiles: [0.193; 0.493]
+  - p = 0.66
+  - Final entry:
+    - DN = “Fentanyl”
+    - Ana = “Fentanyl”
+    - Sp = “blood”
+    - Pop = “maternal”
+    - PS = “post-partum”
+    - SN = “16”
+    - PT = “maternal serum concentration”
+    - V = “0.268”
+    - U = “nmol/L”
+    - SS = “median”
+    - VT = “”  (no explicit SD or CV% here)
+    - VV = “”
+    - IT = “25th; 75th percentile”
+    - LL = “0.193”
+    - HL = “0.493”
+    - PV = “0.66”
+
+- Control group → (n=19)
+  - Value: 0.291
+  - 25th, 75th percentiles: [0.212; 0.502]
+  - p = 0.66
+  - Final entry:
+    - DN = “Fentanyl”
+    - Ana = “Fentanyl”
+    - Sp = “blood”
+    - Pop = “maternal”
+    - PS = “post-partum”
+    - SN = “19”
+    - PT = “maternal serum concentration”
+    - V = “0.291”
+    - U = “nmol/L”
+    - SS = “median”
+    - VT = “”
+    - VV = “”
+    - IT = “25th; 75th percentile”
+    - LL = “0.212”
+    - HL = “0.502”
+    - PV = “0.66”
+
+#### (3) Third row
+
+- Text: `Mean AUC 0-120 min for fentanyl in maternal serum (nmol h/L)`
+  - Parameter type: “AUC 0-120 min”
+  - Unit: “nmol h/L”
+  - Summary statistics: “Mean” (SD)
+
+- Adrenaline group → (n=18)
+  - Value: 0.428
+  - SD: 0.162
+  - p = 0.015
+  - Final entry:
+    - DN = “Fentanyl”
+    - Ana = “Fentanyl”
+    - Sp = “blood”
+    - Pop = “maternal”
+    - PS = “post-partum”
+    - SN = “18”
+    - PT = “AUC 0-120 min”
+    - V = “0.428”
+    - U = “nmol h/L”
+    - SS = “mean”
+    - VT = “SD”
+    - VV = “0.162”
+    - IT = “”
+    - LL = “”
+    - HL = “”
+    - PV = “0.015”
+
+- Control group → (n=15)
+  - Value: 0.59
+  - SD: 0.197
+  - Same row p = 0.015
+  - Final entry:
+    - DN = “Fentanyl”
+    - Ana = “Fentanyl”
+    - Sp = “blood”
+    - Pop = “maternal”
+    - PS = “post-partum”
+    - SN = “15”
+    - PT = “AUC 0-120 min”
+    - V = “0.59”
+    - U = “nmol h/L”
+    - SS = “mean”
+    - VT = “SD”
+    - VV = “0.197”
+    - IT = “”
+    - LL = “”
+    - HL = “”
+    - PV = “0.015”
+
+---
+
+### Step 3: Assemble the Standard Answer
+
+Putting all the gathered fields (in the order `DN, Ana, Sp, Pop, PS, SN, PT, V, U, SS, VT, VV, IT, LL, HL, PV`) together for the six resulting rows, we get (for example):
+
+JSON format is required, with each row turned into a key-value object, and all objects included in a single JSON array.
+
+The final result is:
+```
+[{"DN":"Fentanyl","Ana":"Fentanyl","Sp":"blood","Pop":"maternal","PS":"post-partum","SN":16,"PT":"concentration,umbilical vein","V":0.162,"U":"nmol/L","SS":"mean","VT":"SD","VV":0.09,"IT":"","LL":"","HL":"","PV":0.67},
+{"DN":"Fentanyl","Ana":"Fentanyl","Sp":"blood","Pop":"maternal","PS":"post-partum","SN":20,"PT":"concentration,umbilical vein","V":0.151,"U":"nmol/L","SS":"mean","VT":"SD","VV":0.07,"IT":"","LL":"","HL":"","PV":0.67},
+{"DN":"Fentanyl","Ana":"Fentanyl","Sp":"blood","Pop":"maternal","PS":"post-partum","SN":16,"PT":"maternal serum concentration","V":0.268,"U":"nmol/L","SS":"median","VT":"","VV":"","IT":"25th; 75th percentile","LL":0.193,"HL":0.493,"PV":0.66},
+{"DN":"Fentanyl","Ana":"Fentanyl","Sp":"blood","Pop":"maternal","PS":"post-partum","SN":19,"PT":"maternal serum concentration","V":0.291,"U":"nmol/L","SS":"median","VT":"","VV":"","IT":"25th; 75th percentile","LL":0.212,"HL":0.502,"PV":0.66},
+{"DN":"Fentanyl","Ana":"Fentanyl","Sp":"blood","Pop":"maternal","PS":"post-partum","SN":18,"PT":"AUC 0-120 min","V":0.428,"U":"nmol h/L","SS":"mean","VT":"SD","VV":0.162,"IT":"","LL":"","HL":"","PV":0.015},
+{"DN":"Fentanyl","Ana":"Fentanyl","Sp":"blood","Pop":"maternal","PS":"post-partum","SN":15,"PT":"AUC 0-120 min","V":0.59,"U":"nmol h/L","SS":"mean","VT":"SD","VV":0.197,"IT":"","LL":"","HL":"","PV":0.015}]
+```
+---
+
+The task begins now.
+
