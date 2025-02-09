@@ -244,7 +244,7 @@ def on_extract(pmid: str):
         # table_sections = {'Table II': None, 'Table III': ["Overall", "3 Month to < 3 Years", "3 to < 13 Years", "13 to < 18 Years"]}
         # table_sections = {'Table II': None, 'Table III': ["Overall", "3 Month to < 3 Years"]}
         # table_sections = {'Table II': None}
-        time.sleep(5)
+        time.sleep(10)
 
         table_section_name_list = []
 
@@ -296,7 +296,7 @@ def on_extract(pmid: str):
                 except Exception as e:
                     logging.error(f"{table_section_name}, attempt {attempt + 1} failed: {e}")
                     st.error(f"{table_section_name}, attempt {attempt + 1} failed: {e}")
-                    time.sleep(5)
+                    time.sleep(10)
         final_csv_str = ''
         final_csv_str += final_csv_list[0]
         header = ",Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation type,Variation value,Interval type,Lower limit,High limit,P value"
