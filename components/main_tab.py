@@ -190,6 +190,7 @@ def on_extract(pmid: str):
         step2_usage_list = []
 
         for table_name in step1_content:
+            time.sleep(30)
             step2_content: Optional[Dict] = json_content.get("step2", None)
             step2_further_divide_the_table = step2_content.get('further_divide_the_table', None)
             step2_further_divide_the_table = step2_further_divide_the_table.replace('TABLE_NAME', table_name)
@@ -296,7 +297,7 @@ def on_extract(pmid: str):
                 except Exception as e:
                     logging.error(f"{table_section_name}, attempt {attempt + 1} failed: {e}")
                     st.error(f"{table_section_name}, attempt {attempt + 1} failed: {e}")
-                    time.sleep(30)
+                    time.sleep(60*(attempt + 1))
         final_csv_str = ''
         final_csv_str += final_csv_list[0]
         header = ",Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation type,Variation value,Interval type,Lower limit,High limit,P value"
