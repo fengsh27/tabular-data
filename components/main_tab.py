@@ -311,6 +311,11 @@ def on_extract(pmid: str):
         return
 
     # prepare prompts including article prmpots and table prompts
+    """
+        PK CoT is modified based on the original PK prompt. 
+        TableExtractionPromptsGenerator and GeneratedPKSummaryTableProcessor 
+        are still initialized with PROMPTS_NAME_PK to minimize code changes.
+    """
     prompt_option = PROMPTS_NAME_PK if ss.main_prompts_option == PROMPTS_NAME_PK_COT else ss.main_prompts_option
     prmpt_generator = TableExtractionPromptsGenerator(prompt_option)
     first_prompots = prmpt_generator.generate_system_prompts()
@@ -364,7 +369,7 @@ def on_extract(pmid: str):
         )
 
         stamper.output_result(f"{content}\n\nUsage: {str(usage) if usage is not None else ''}")
-        processor = GeneratedPKSummaryTableProcessor(ss.main_prompts_option)
+        processor = GeneratedPKSummaryTableProcessor(prompt_option)
         csv_str = processor.process_content(content)
         ss.main_extracted_result = csv_str
         ss.main_token_usage = usage
