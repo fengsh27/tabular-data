@@ -1,0 +1,19 @@
+Here are the key differences between the two tables:
+
+1. The extracted table is missing rows for isoniazid Cmax values in blood and CSF concentrations at different time points (CCSF0-2, CCSF3-5, CCSF6-8).
+
+2. The extracted table has additional rows for rifampicin and pyrazinamide AUC0-24 values that are not present in the baseline table.
+
+3. The summary statistics in the baseline table use median, while the extracted table uses geometric mean. These are different measures of central tendency.
+
+4. The specimen for isoniazid PK parameters is listed as "blood" in the baseline table but "plasma" in the extracted table. While plasma is a component of blood, they are not identical.
+
+5. The baseline table provides IQR as the interval type for the variation, while the extracted table lists this as "range". IQR and range are different measures of variability.
+
+6. The unit for AUC0-24 is "mg h/L" in the baseline table but "h·mg/L" in the extracted table. While equivalent, the formatting differs.
+
+Given the missing rows, different summary statistics used, and discrepancies in specimen and variability measures reported, I would assign a similarity score of:
+
+[[55]]
+
+The tables have some overlapping information, but there are significant differences that limit their overall similarity. The extracted table is missing key PK parameters for isoniazid that are present in the baseline table.

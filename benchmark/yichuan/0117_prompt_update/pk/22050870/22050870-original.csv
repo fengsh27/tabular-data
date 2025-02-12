@@ -1,0 +1,13 @@
+Drug name, Analyte, Specimen, Population, Pregnancy stage, Subject N, Parameter type, Value, Unit, Summary statistics, Variation type, Variation value, Interval type, Lower limit, High limit, P value
+Lorazepam, Lorazepam, , Pediatric, , 15, Cmax, 56.1, ng/mL, Mean ± s.d., s.d., 44.9, , , , 
+Lorazepam, Lorazepam, , Pediatric, , 15, AUC0–∞, 822.5, ng*hr/mL, Mean ± s.d., s.d., 706.1, , , , 
+Lorazepam, Lorazepam, , Pediatric, , 15, CL, 49.33, mL/min/kg, Mean ± s.d., s.d., 30.83, , , , 
+Lorazepam, Lorazepam, , Pediatric, , 15, CL, 31.95, mL/min/m^2, Mean ± s.d., s.d., 13.99, , , , 
+Lorazepam, Lorazepam, , Pediatric, , 15, Vdz, 1.92, L/kg, Mean ± s.d., s.d., 0.84, , , , 
+Lorazepam, Lorazepam, , Pediatric, , 15, T1/2, 20.5, hr, Mean ± s.d., s.d., 10.2, , , , 
+Lorazepam, Lorazepam, , Pediatric, , 61, Free Fraction, 0.10, , Mean ± s.d., s.d., 0.05, , , , 
+Lorazepam, Lorazepam, , Pediatric, , 63, CL, 1.2, mL/min/kg, Mean ± s.d., s.d., 0.93, , , , 
+Lorazepam, Lorazepam, , Pediatric, , 63, CL, 33.33, mL/min/m^2, Mean ± s.d., s.d., 19.33, , , , 
+Lorazepam, Lorazepam, , Pediatric, , 63, Vdss, 1.48, L/kg, Mean ± s.d., s.d., 0.54, , , , 
+Lorazepam, Lorazepam, , Pediatric, , 63, Beta, 0.048, hr^-1, Mean ± s.d., s.d., 0.020, , , , 
+Lorazepam, Lorazepam, , Pediatric, , 63, T1/2 Beta, 16.8, hr, Mean ± s.d., s.d., 7.1, , , ,

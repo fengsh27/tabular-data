@@ -1,0 +1,21 @@
+Here are the key differences between the baseline and extracted tables:
+
+1. In the "Parameter type" column, the extracted table is missing commas after "concentration" in rows 0 and 1. This impacts readability but not the core information.
+
+2. The extracted table has extra spaces after commas in many cells. While this doesn't affect the data itself, it reduces consistency compared to the baseline.
+
+3. In the "Variation value" and "Interval type" columns, the extracted table has some empty cells where the baseline has ",,". However, per the instructions, blank/empty cells are treated the same as NaNs so this is not a substantive difference. 
+
+4. The data types, units, and core values all match between the two tables. The data also appears to be mapped to the correct columns based on the provided definitions.
+
+5. The row and column orders match exactly between the tables.
+
+6. No synonyms were found in key columns like specimen, drug name, or population. The tables use consistent terminology.
+
+Overall, while there are some minor formatting and punctuation differences, the core scientific data and structure of the tables is virtually identical. The parameter type, values, units, p-values, and overall table structure all match.
+
+Given the extremely high degree of matching on the most important data elements, I would assess the similarity of these tables as:
+
+[[95]]
+
+The 5 point deduction accounts for the minor inconsistencies in commas and cell spacing, but the tables are substantively the same.

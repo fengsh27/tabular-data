@@ -1,0 +1,10 @@
+,Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation type,Variation value,Interval type,Lower limit,High limit,P value
+0,Ketamine, Ketamine, Plasma, Pediatric, N/A, 19, Concentration, 485, μg/L, Mean, SD, 549, , , , 
+1,Ketamine, Ketamine, Plasma, Pediatric, N/A, 19, Total area under curve, 91, Mg/min/L, Mean, SD, 30, , , , 
+2,Ketamine, Ketamine, Plasma, Pediatric, N/A, 19, Maximum concentration, 1.6, mg/L, Mean, SD, 0.68, , , , 
+3,Ketamine, Ketamine, Plasma, Pediatric, N/A, 19, Total body clearance, 0.52, L/min, Mean, SD, 0.26, , , , 
+4,Ketamine, Ketamine, Plasma, Pediatric, N/A, 19, Body weight normalized clearance, 0.025, L/kg/min, Mean, SD, 0.008, , , , 
+5,Ketamine, Ketamine, Plasma, Pediatric, N/A, 19, Mean residence time, 2.3, hr, Mean, SD, 0.64, , , , 
+6,Ketamine, Ketamine, Plasma, Pediatric, N/A, 19, Distribution volume at steady state, 69, L, Mean, SD, 39, , , , 
+7,Ketamine, Ketamine, Plasma, Pediatric, N/A, 19, Body weight normalized distribution volume, 3.3, L/kg, Mean, SD, 1.3, , , , 
+8,Ketamine, Ketamine, Plasma, Pediatric, N/A, 19, Elimination half-life, 2.6, hr, Mean, SD, 1, , , ,

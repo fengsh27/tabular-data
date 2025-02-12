@@ -1,0 +1,9 @@
+Drug name, Analyte, Specimen, Population, Pregnancy stage, Subject N, Parameter type, Value, Unit, Summary statistics, Variation type, Variation value, Interval type, Lower limit, High limit, P value
+Vancomycin, Vancomycin, Blood, Neonate, N/A, 60, Initial Cavg Concentration, 12.9, mg/L, Median, Range, [11.3–17.0], 25th to 75th percentile, 11.3, 17.0, <0.001
+Vancomycin, Vancomycin, Blood, Neonate, N/A, 59, Initial Cavg Concentration, 20.3, mg/L, Median, Range, [17.0–22.2], 25th to 75th percentile, 17.0, 22.2, <0.001
+Vancomycin, Vancomycin, Blood, Neonate, N/A, 116, Concentration, 13.1, mg/L, Median, , , Range, 11.3, 16.2, <0.001
+Vancomycin, Vancomycin, Blood, Neonate, N/A, 103, Concentration, 19.8, mg/L, Median, , , Range, 16.8, 22.1, <0.001
+Vancomycin, Vancomycin, Blood, Neonate, N/A, 22, Cavg/MIC ratio, 8.8, , Median, Range, 6.2–11.5, Range, 6.2, 11.5, 0.004
+Vancomycin, Vancomycin, Blood, Neonate, N/A, 17, Cavg/MIC ratio, 12.8, , Median, Range, 10.9–20.9, Range, 10.9, 20.9, 0.004
+Vancomycin, Vancomycin, Blood, Neonate, N/A, 22, AUC/MIC ratio, 211, , Median, Range, 149–275, Range, 149, 275, 0.006
+Vancomycin, Vancomycin, Blood, Neonate, N/A, 17, AUC/MIC ratio, 307, , Median, Range, 262–502, Range, 262, 502, 0.006

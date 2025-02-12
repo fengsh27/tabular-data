@@ -1,0 +1,19 @@
+Drug name, Analyte, Specimen, Population, Pregnancy stage, Subject N, Parameter type, Value, Unit, Summary statistics, Variation type, Variation value, Interval type, Lower limit, High limit, P value
+, , , , , 60, Birth weight, 928, g, median, range, , [25th–75th percentile], 678, 2320, 0.53
+, , , , , 59, Birth weight, 970, g, median, range, , [25th–75th percentile], 785, 2373, 0.53
+, , , , , 60, Weight at initiation of treatment, 1590, g, median, range, , [25th–75th percentile], 908, 2853, 0.44
+, , , , , 59, Weight at initiation of treatment, 1300, g, median, range, , [25th–75th percentile], 930, 2725, 0.44
+, , , , , 60, Plasma creatinine level before treatment, 39.0, μmol/L, median, range, , [25th–75th percentile], 25.8, 59.8, 0.88
+, , , , , 59, Plasma creatinine level before treatment, 38.0, μmol/L, median, range, , [25th–75th percentile], 27.5, 54.0, 0.88
+, , , , , 60, Postnatal age at initiation of treatment, 15.5, days, median, range, , [25th–75th percentile], 7.0, 30.3, 0.066
+, , , , , 59, Postnatal age at initiation of treatment, 11.0, days, median, range, , [25th–75th percentile], 5.5, 18.8, 0.066
+Vancomycin, , , , , 60, Initial Cavg, , , , , , , , , 
+Vancomycin, , , , , 59, Initial Cavg, , , , , , , , , 
+Vancomycin, , , , , 60, Subtherapeutic Cavg, 68.3, %, proportion, , , , , , <0.001
+Vancomycin, , , , , 59, Subtherapeutic Cavg, 10.2, %, proportion, , , , , , <0.001
+Vancomycin, , , , , 60, Therapeutic Cavg, 28.3, %, proportion, , , , , , <0.001
+Vancomycin, , , , , 59, Therapeutic Cavg, 74.6, %, proportion, , , , , , <0.001
+Vancomycin, , , , , 60, Supra-therapeutic Cavg, 3.3, %, proportion, , , , , , 0.001
+Vancomycin, , , , , 59, Supra-therapeutic Cavg, 15.3, %, proportion, , , , , , 0.001
+Vancomycin, , , , , 60, Concentration, 12.9, mg/L, median, range, , [25th–75th percentile], 11.3, 17.0, <0.001
+Vancomycin, , , , , 59, Concentration, 20.3, mg/L, median, range, , [25th–75th percentile], 17.0, 22.2, <0.001

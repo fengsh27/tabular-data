@@ -1,0 +1,13 @@
+,Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation type,Variation value,Interval type,Lower limit,High limit,P value
+0,Levetiracetam, , , neonate, N/A, 14/19, AUC0–12, 220, h*μg/mL, median, IQR, 197.9, , 157.5, 355.4, 0.90
+1,Levetiracetam, , , neonate, N/A, 14/19, Cmax, 23.8, μg/mL, median, IQR, 22.5, , 18.8, 41.3, 0.84
+2,Levetiracetam, , , neonate, N/A, 14/19, Tmax, 1.5, h, median, IQR, 1, , 1.5, 2.5, 0.46
+3,Levetiracetam, , , neonate, N/A, 5/19, AUC0–12, 213.8, h*μg/mL, median, IQR, 194.8, , 154.0, 348.8, 0.90
+4,Levetiracetam, , , neonate, N/A, 5/19, Cmax, 26.4, μg/mL, median, IQR, 14.9, , 19.3, 34.2, 0.84
+5,Levetiracetam, , , neonate, N/A, 5/19, Tmax, 2.5, h, median, IQR, 1.4, , 1.5, 2.9, 0.46
+6,Levetiracetam, , , neonate, N/A, , Cmax, 19.19, μg/mL, mean, SD, 4.12, , , , 0.07
+7,Levetiracetam, , , neonate, N/A, , AUC0–12, 167.0, h*μg/mL, mean, SD, 45.6, , , , 0.26
+8,Levetiracetam, , , neonate, N/A, , Cmax, 35.12, μg/mL, mean, SD, 10.54, , , , 0.001
+9,Levetiracetam, , , neonate, N/A, , AUC0–12, 316.5, h*μg/mL, mean, SD, 108.4, , , , 0.88
+10,Levetiracetam, , , neonate, N/A, , Cmax, 36.11, μg/mL, median, Range, , , 27.58, 44.64, 
+11,Levetiracetam, , , neonate, N/A, , AUC0–12, 290.9, h*μg/mL, median, Range, , , 176.14, 405.59,

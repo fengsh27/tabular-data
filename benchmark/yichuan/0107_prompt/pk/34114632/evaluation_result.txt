@@ -1,0 +1,22 @@
+Here is my assessment of the similarity between the two tables:
+
+[[{score}]]85
+
+The two tables are fairly similar, with most of the key information matching between them. However, there are a few differences that reduce the similarity score:
+
+1. The extracted table is missing values in the Analyte and Specimen columns that are present in the baseline table. This accounts for the biggest reduction in similarity score. 
+
+2. The extracted table uses different notation for some units and parameters compared to the baseline table:
+- "AUC0-12" in the baseline table vs "AUC0–12" in the extracted table 
+- "ug/mL" and "h ug/ml" in baseline vs "μg/mL" and "h*μg/mL" in extracted
+However, these represent the same underlying values.
+
+3. The Subject N column in the extracted table uses values like "14/19" while the baseline table just has single numbers. It seems the extracted table is providing both the N for that specific row and total N.
+
+4. The extracted table is missing a few rows compared to the baseline table, like the Ctrough and some of the Tmax rows. 
+
+5. The Variation type column is labeled as "Range" for a couple rows in the extracted table when the baseline table leaves that blank and puts the range in the Interval type column instead.
+
+6. P values are missing for some rows in the extracted table.
+
+So in summary, while the core data is quite consistent between the tables, the missing values in some columns, absent rows, and some inconsistencies in how the data is notated and structured account for the 85 similarity score versus a perfect 100. Let me know if you need any clarification or have additional questions!

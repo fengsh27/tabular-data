@@ -1,0 +1,11 @@
+Drug name, Analyte, Specimen, Population, Pregnancy stage, Subject N, Parameter type, Value, Unit, Summary statistics, Variation type, Variation value, Interval type, Lower limit, High limit, P value
+Levetiracetam, Levetiracetam, Blood, Neonate, , 19, Cmax, 19.19, µg/mL, Mean, SD, 4.12, , , , 0.07
+Levetiracetam, Levetiracetam, Blood, Neonate, , 19, AUC0–12, 167.0, h*µg/mL, Mean, SD, 45.6, , , , 0.26
+Levetiracetam, Levetiracetam, Blood, Neonate, , 19, Ctrough, 9.99, µg/mL, Mean, SD, 3.86, , , , 0.34
+Levetiracetam, Levetiracetam, Blood, Neonate, , 19, Tmax, , h, Median, Range, , , 1.5, 2.5, 
+Levetiracetam, Levetiracetam, Blood, Neonate, Postpartum, 14, AUC0–12, 220, h*µg/mL, Median, IQR, , Range, 157.5, 355.4, 0.90
+Levetiracetam, Levetiracetam, Blood, Neonate, Postpartum, 5, AUC0–12, 213.8, h*µg/mL, Median, IQR, , Range, 154.0, 348.8, 0.90
+Levetiracetam, Levetiracetam, Blood, Neonate, Postpartum, 14, Cmax, 23.8, µg/mL, Median, IQR, , Range, 18.8, 41.3, 0.84
+Levetiracetam, Levetiracetam, Blood, Neonate, Postpartum, 5, Cmax, 26.4, µg/mL, Median, IQR, , Range, 19.3, 34.2, 0.84
+Levetiracetam, Levetiracetam, Blood, Neonate, Postpartum, 14, Tmax, 1.5, h, Median, IQR, , Range, 1.5, 2.5, 0.46
+Levetiracetam, Levetiracetam, Blood, Neonate, Postpartum, 5, Tmax, 2.5, h, Median, IQR, , Range, 1.5, 2.9, 0.46

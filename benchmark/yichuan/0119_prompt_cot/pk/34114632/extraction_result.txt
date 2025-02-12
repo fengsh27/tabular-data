@@ -1,0 +1,12 @@
+```json
+[{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"blood","Pop":"neonate","PS":"post-natal","SN":19,"PT":"Cmax","V":19.19,"U":"µg/mL","SS":"mean","VT":"SD","VV":4.12,"IT":"","LL":"","HL":"","PV":0.07},
+{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"blood","Pop":"neonate","PS":"post-natal","SN":19,"PT":"AUC0–12","V":167.0,"U":"h*µg/mL","SS":"mean","VT":"SD","VV":45.6,"IT":"","LL":"","HL":"","PV":0.26},
+{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"blood","Pop":"neonate","PS":"post-natal","SN":19,"PT":"Ctrough","V":9.99,"U":"µg/mL","SS":"mean","VT":"SD","VV":3.86,"IT":"","LL":"","HL":"","PV":0.34},
+{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"blood","Pop":"neonate","PS":"post-natal","SN":19,"PT":"Tmax","V":"","U":"h","SS":"median","VT":"","VV":"","IT":"range","LL":1.5,"HL":2.5,"PV":""},
+{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"blood","Pop":"neonate","PS":"post-natal","SN":14,"PT":"AUC0–12","V":220,"U":"h*µg/mL","SS":"median","VT":"","VV":"","IT":"IQR","LL":157.5,"HL":355.4,"PV":0.90},
+{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"blood","Pop":"neonate","PS":"post-natal","SN":5,"PT":"AUC0–12","V":213.8,"U":"h*µg/mL","SS":"median","VT":"","VV":"","IT":"IQR","LL":154.0,"HL":348.8,"PV":0.90},
+{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"blood","Pop":"neonate","PS":"post-natal","SN":14,"PT":"Cmax","V":23.8,"U":"µg/mL","SS":"median","VT":"","VV":"","IT":"IQR","LL":18.8,"HL":41.3,"PV":0.84},
+{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"blood","Pop":"neonate","PS":"post-natal","SN":5,"PT":"Cmax","V":26.4,"U":"µg/mL","SS":"median","VT":"","VV":"","IT":"IQR","LL":19.3,"HL":34.2,"PV":0.84},
+{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"blood","Pop":"neonate","PS":"post-natal","SN":14,"PT":"Tmax","V":"","U":"h","SS":"median","VT":"","VV":"","IT":"IQR","LL":1.5,"HL":2.5,"PV":0.46},
+{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"blood","Pop":"neonate","PS":"post-natal","SN":5,"PT":"Tmax","V":"","U":"h","SS":"median","VT":"","VV":"","IT":"IQR","LL":1.5,"HL":2.9,"PV":0.46}]
+```

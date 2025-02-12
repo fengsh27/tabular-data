@@ -1,0 +1,27 @@
+Here is my assessment of the similarity between the baseline and extracted tables:
+
+Similarity Score: [[65]]
+
+Key Differences:
+1. The extracted table is missing several rows compared to the baseline table. The baseline has 31 rows while the extracted table only has 15 rows. This significantly reduces the similarity score.
+
+2. Some parameter types are written differently between the tables:
+- "Ae total" in baseline vs "A<sub>e</sub> total" in extracted 
+- "ClR" in baseline vs "Cl<sub>R</sub>" in extracted
+- "t1/2" in baseline vs "t<sub>1/2</sub>" in extracted
+
+3. Units for ClR are written as "ml/min/kg" in the baseline but "ml/(min kg)" in the extracted table.
+
+4. The extracted table includes HTML tags like <sub> and <sup> in some cells which are not present in the baseline table.
+
+5. The variation type is labeled as "CI 95%" in the extracted table but the baseline uses "95% CI" in the interval type column instead. The extracted table does not use a separate interval type column.
+
+6. The extracted table is missing the tmax, t1/2à, Ka, ?, AUC0-ì, ClT/F, Vd/F, and transplacental distribution parameters that are in the baseline table.
+
+7. Subject N, variation value, and P value columns are empty in the extracted table but contain some data in the baseline.
+
+8. Rows for collection time data are missing from the extracted table.
+
+9. Pregnancy stage is listed as "postpartum" for most rows in extracted table but "delivery" in baseline table.
+
+In summary, while the core drug, analyte and specimen information aligns between the tables, there are significant differences in the included PK parameters, row counts, and formatting that reduce the similarity substantially from being identical tables. Let me know if you need any clarification or have additional questions!

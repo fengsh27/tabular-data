@@ -1,0 +1,24 @@
+Here is my assessment of the similarity between the baseline and extracted tables:
+
+[[83.5]]
+
+The two tables have very similar content and structure, with a few key differences:
+
+1. The extracted table is missing many rows compared to the baseline table (42 rows in baseline vs 13 rows in extracted). This significantly reduces the similarity score.
+
+2. The extracted table is missing the "CL (mL/min/m2)", "Free fraction", and "Beta (h-1)" parameter types that are present in the baseline table. 
+
+3. The extracted table uses some different units and abbreviations compared to the baseline:
+- "ng/ml" in baseline vs "ng/mL" in extracted 
+- No unit for AUC in baseline vs "ng*hr/mL" in extracted
+- "h" for half-life in baseline vs "hr" in extracted
+
+4. The extracted table includes range values in the "Interval type", "Lower limit", and "High limit" columns for the median rows, while the baseline leaves these blank for medians.
+
+5. The extracted table is missing the "Summary statistics" column header (it has "Summary statistics" instead).
+
+6. Column order is slightly different between the tables.
+
+However, the core information around drug/analyte names, specimens, populations, subject counts, parameter types, values, and units largely aligns between the two tables when comparing row by row. The Parameter type, Value, and Unit are generally consistent when assessed as a group between matching rows.
+
+So in summary, while the extracted table is clearly incomplete compared to the baseline, the data that is there mostly matches the content and format of the baseline table, resulting in a moderately high similarity score in the 80-85% range. Let me know if you have any other questions!
