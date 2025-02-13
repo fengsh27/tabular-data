@@ -1,0 +1,19 @@
+,Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation type,Variation value,Interval type,Lower limit,High limit,P value
+0,Levetiracetam, Levetiracetam, Blood, Neonate, N/A, 8, Cmax, 19.19, µg/mL, Mean, SD, 4.12, , , , 0.07
+1,Levetiracetam, Levetiracetam, Blood, Neonate, N/A, 8, AUC0–12, 167.0, h*µg/mL, Mean, SD, 45.6, , , , 0.26
+2,Levetiracetam, Levetiracetam, Blood, Neonate, N/A, 8, Ctrough, 9.99, µg/mL, Mean, SD, 3.86, , , , 0.34
+3,Levetiracetam, Levetiracetam, Blood, Neonate, N/A, 8, Tmax, 1.5, h, Median, , , Range, 1.5, 2.5, 
+4,Levetiracetam, Levetiracetam, Blood, Neonate, N/A, 9, Cmax, 35.12, µg/mL, Mean, SD, 10.54, , , , 0.001
+5,Levetiracetam, Levetiracetam, Blood, Neonate, N/A, 9, AUC0-12, 316.5, h*µg/mL, Mean, SD, 108.4, , , , 0.88
+6,Levetiracetam, Levetiracetam, Blood, Neonate, N/A, 9, Ctrough, 19.25, µg/mL, Mean, SD, 8.48, , , , 0.22
+7,Levetiracetam, Levetiracetam, Blood, Neonate, N/A, 9, Tmax, , h, Median, , , Range, 2.0, 3.3, 
+8,Levetiracetam, Levetiracetam, Blood, Neonate, N/A, 2, Cmax, 36.11, µg/mL, Median, , , , 27.58, 44.64, 
+9,Levetiracetam, Levetiracetam, Blood, Neonate, N/A, 2, AUC0–12, 290.9, h*µg/mL, Median, , , , 176.14, 405.59, 
+10,Levetiracetam, Levetiracetam, Blood, Neonate, N/A, 2, Ctrough, 13.03, µg/mL, Median, , , , 2.98, 23.07, 
+11,Levetiracetam, Levetiracetam, Blood, Neonate, N/A, 2, Tmax, 1.5, h, Median, , , , 1.5, , 
+12,Levetiracetam, Levetiracetam, Blood, Neonate, N/A, 14, Total area under curve, 220, h*μg/mL, Median, , , IQR, 157.5, 355.4, 0.90
+13,Levetiracetam, Levetiracetam, Blood, Neonate, N/A, 5, Total area under curve, 213.8, h*μg/mL, Median, , , IQR, 154.0, 348.8, 0.90
+14,Levetiracetam, Levetiracetam, Blood, Neonate, N/A, 14, Maximum plasma concentration, 23.8, μg/mL, Median, , , IQR, 18.8, 41.3, 0.84
+15,Levetiracetam, Levetiracetam, Blood, Neonate, N/A, 5, Maximum plasma concentration, 26.4, μg/mL, Median, , , IQR, 19.3, 34.2, 0.84
+16,Levetiracetam, Levetiracetam, Blood, Neonate, N/A, 14, Time to maximum concentration, 1.5, h, Median, , , IQR, 1.5, 2.5, 0.46
+17,Levetiracetam, Levetiracetam, Blood, Neonate, N/A, 5, Time to maximum concentration, 2.5, h, Median, , , IQR, 1.5, 2.9, 0.46
