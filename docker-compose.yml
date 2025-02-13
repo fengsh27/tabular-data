@@ -20,7 +20,7 @@ services:
  
   nettoolkit:
     container_name: nettoolkit
-    image: frankfeng78/nettoolkit:0.1.5
+    image: frankfeng78/nettoolkit:0.1.7
     ports:
       - 3000:3000
     volumes:

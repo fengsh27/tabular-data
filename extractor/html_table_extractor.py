@@ -5,8 +5,9 @@ from extractor.utils import convert_html_table_to_dataframe
 
 class HtmlTableParser(object):
     MAX_LEVEL = 3
-    CAPTION_CANDIDATES = ["caption", "captions", "title"]
-    FOOTNOTE_CANDIDATES = ["note", "legend", "description", "foot"]
+    CAPTION_TAG_CANDIDATES = ["figcaption"]
+    CAPTION_CLASS_CANDIDATES = ["caption", "captions", "title"]
+    FOOTNOTE_CLASS_CANDIDATES = ["note", "legend", "description", "foot", "notes"]
     def __init__(self):
         pass
 
@@ -22,14 +23,17 @@ class HtmlTableParser(object):
             text += the_text
         return text
     @staticmethod
-    def _is_caption_in_text(text):
-        for cap in HtmlTableParser.CAPTION_CANDIDATES:
-            if cap in text:
+    def _is_caption_by_tagname(tagname: str) -> bool:
+        return tagname in HtmlTableParser.CAPTION_TAG_CANDIDATES
+    @staticmethod
+    def _is_caption_by_class(classnames):
+        for cap in HtmlTableParser.CAPTION_CLASS_CANDIDATES:
+            if cap in classnames:
                 return True
         return False
     @staticmethod
     def _is_footnote_in_text(text):
-        for foot in HtmlTableParser.FOOTNOTE_CANDIDATES:
+        for foot in HtmlTableParser.FOOTNOTE_CLASS_CANDIDATES:
             if foot in text:
                 return True
         return False
@@ -50,6 +54,10 @@ class HtmlTableParser(object):
         for child in children:
             if not hasattr(child, "attrs"):
                 continue
+            if hasattr(child, "name") and HtmlTableParser._is_caption_by_tagname(tagname=child.name):
+                caption = self._get_caption_or_footnote_text(child)
+                found_caption = True
+                continue
             classes = child.attrs.get("class")
             if classes is None:
                 continue
@@ -58,7 +66,7 @@ class HtmlTableParser(object):
                     classes = ' '.join(classes)
                 except:
                     continue
-            if not found_caption and HtmlTableParser._is_caption_in_text(classes):
+            if not found_caption and HtmlTableParser._is_caption_by_class(classes):
                 caption = self._get_caption_or_footnote_text(child)
                 found_caption = True
             if not found_footnote and HtmlTableParser._is_footnote_in_text(classes):
@@ -85,7 +93,8 @@ class HtmlTableParser(object):
 
     def _find_caption_and_footnote(self, table_tag: Tag):
         return self._find_caption_and_footnote_recursively(table_tag.parent, 1)
-    def extract_tables(self, html: str):
+    
+    def extract_tables(self, html: str) -> list[dict]:
         soup = BeautifulSoup(html, "html.parser")
         tags = soup.select("table")
         tables = []
@@ -101,6 +110,27 @@ class HtmlTableParser(object):
                 "raw_tag": str(parent_tag),
             })
         return tables
+    
+    def extract_tables_and_remove_from_html(self, html: str) -> tuple[list[dict], str]:
+        soup = BeautifulSoup(html, "html.parser")
+        tags = soup.select("table")
+        tables = []
+        tags_to_decompose: list[Tag] = []
+        for tag in tags:
+            strTag = str(tag)
+            table = convert_html_table_to_dataframe(strTag)
+            caption, footnote, parent_tag = self._find_caption_and_footnote(tag)
+            parent_tag = parent_tag if parent_tag is not None else tag
+            tables.append({
+                "caption": caption if caption is not None else "",
+                "footnote": footnote if footnote is not None else "",
+                "table": table,
+                "raw_tag": str(parent_tag),
+            })
+            tags_to_decompose.append(parent_tag)
+        for tag_to_dec in tags_to_decompose:
+            tag_to_dec.decompose()
+        return tables, str(soup)
 
 class PMCHtmlTableParser(object):
     def __init__(self):
@@ -126,6 +156,29 @@ class PMCHtmlTableParser(object):
             })
     
         return tables
+    
+    def extract_tables_and_remove_from_html(self, html: str):
+        soup = BeautifulSoup(html, "html.parser")
+        tags = soup.select("div.table-wrap.anchored.whole_rhythm")
+        tables = []
+        for tag in tags:
+            tbl_soup = BeautifulSoup(str(tag), "html.parser")
+            caption = tbl_soup.select("div.caption")
+            caption = caption[0].text if len(caption) > 0 else ""
+            table = tbl_soup.select("div.xtable")
+            table = str(table[0]) if len(table) > 0 else ""
+            table = convert_html_table_to_dataframe(table)
+            footnote = tbl_soup.select("div.tblwrap-foot")
+            footnote = footnote[0].text if len(footnote) > 0 else ""
+            tables.append({
+                "caption": caption, 
+                "table": table, 
+                "footnote": footnote,
+                "raw_tag": str(tag),
+            })
+            tag.decompose()
+    
+        return tables, str(soup)
 
 class HtmlTableExtractor(object):
     def __init__(self):
@@ -140,4 +193,11 @@ class HtmlTableExtractor(object):
             if tables and len(tables) > 0:
                 return tables
         return []
+    
+    def extract_tables_and_remove_from_html(self, html: str) -> tuple[list[dict], str]:
+        for parser in self.parsers:
+            tables, html_new = parser.extract_tables_and_remove_from_html(html)
+            if tables and len(tables) > 0:
+                return tables, html_new
+        return [], None
 

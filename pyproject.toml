@@ -27,6 +27,11 @@ streamlit-modal = "^0.1.2"
 anthropic = {version = "^0.26.1", optional = true}
 sentence-transformers = {version = "^3.2.1", optional = true}
 lxml = "^5.3.0"
+langchain-community = "0.3.16"
+langchain-text-splitters = "^0.3.5"
+langchain-openai = "^0.3.3"
+pymilvus = "2.2.8"
+langchain = "^0.3.18"
 
 [tool.poetry.extras]
 semantic = ["sentence-transformers"]
