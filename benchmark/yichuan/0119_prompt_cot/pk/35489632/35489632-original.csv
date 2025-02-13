@@ -1,0 +1,9 @@
+Drug name, Analyte, Specimen, Population, Pregnancy stage, Subject N, Parameter type, Value, Unit, Summary statistics, Variation type, Variation value, Interval type, Lower limit, High limit, P value
+Meropenem, Meropenem, plasma, pediatric, , 28, Cmid extended infusion, 19.9, mg/L, geometric mean, 95% CI, , 95% CI, 13.5, 29.5, 0.2
+Meropenem, Meropenem, plasma, pediatric, , 26, Cmid extended infusion, 14.8, mg/L, geometric mean, 95% CI, , 95% CI, 11.4, 19.1, 0.2
+Meropenem, Meropenem, plasma, pediatric, , 28, Ctrough extended infusion, 3.5, mg/L, geometric mean, 95% CI, , 95% CI, 2.0, 6.1, 0.04
+Meropenem, Meropenem, plasma, pediatric, , 26, Ctrough extended infusion, 1.6, mg/L, geometric mean, 95% CI, , 95% CI, 1.0, 2.6, 0.04
+Meropenem, Meropenem, plasma, pediatric, , 11, Cmid intermittent bolus, 4.9, mg/L, geometric mean, 95% CI, , 95% CI, 2.6, 9.2, 0.14
+Meropenem, Meropenem, plasma, pediatric, , 7, Cmid intermittent bolus, 1.9, mg/L, geometric mean, 95% CI, , 95% CI, 0.4, 9.6, 0.14
+Meropenem, Meropenem, plasma, pediatric, , 11, Ctrough intermittent bolus, 0.8, mg/L, geometric mean, 95% CI, , 95% CI, 0.4, 1.6, 0.85
+Meropenem, Meropenem, plasma, pediatric, , 7, Ctrough intermittent bolus, 0.9, mg/L, geometric mean, 95% CI, , 95% CI, 0.2, 4.2, 0.85

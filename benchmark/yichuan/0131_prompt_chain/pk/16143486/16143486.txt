@@ -1,0 +1,35 @@
+["Table 2", "Table 3"]
+
+["Lorazepam isomeric mixture", "Lorazepam-glucuronide isomeric mixture"]
+
+['Lorazepam isomeric mixture', 'Lorazepam-glucuronide isomeric mixture']
+
+[{"DN":"Lorazepam isomeric mixture","Ana":"Lorazepam isomeric mixture","Sp":"blood","Pop":"maternal","PS":"N/A","SN":"10","PT":"Cmax","V":"12.96","U":"ng/ml","SS":"mean","VV":"9.42–16.49","VT":"95% CI","IT":"95% CI","LL":"9.42","HL":"16.49","PV":""},
+{"DN":"Lorazepam isomeric mixture","Ana":"Lorazepam isomeric mixture","Sp":"blood","Pop":"maternal","PS":"N/A","SN":"10","PT":"tmax","V":"3.10","U":"h","SS":"mean","VV":"2.57–3.63","VT":"95% CI","IT":"95% CI","LL":"2.57","HL":"3.63","PV":""},
+{"DN":"Lorazepam isomeric mixture","Ana":"Lorazepam isomeric mixture","Sp":"blood","Pop":"maternal","PS":"N/A","SN":"10","PT":"t1/2a","V":"3.16","U":"h","SS":"mean","VV":"2.62–3.68","VT":"95% CI","IT":"95% CI","LL":"2.62","HL":"3.68","PV":""},
+{"DN":"Lorazepam isomeric mixture","Ana":"Lorazepam isomeric mixture","Sp":"blood","Pop":"maternal","PS":"N/A","SN":"10","PT":"Ka","V":"0.23","U":"h^-1","SS":"mean","VV":"0.19–0.28","VT":"95% CI","IT":"95% CI","LL":"0.19","HL":"0.28","PV":""},
+{"DN":"Lorazepam isomeric mixture","Ana":"Lorazepam isomeric mixture","Sp":"blood","Pop":"maternal","PS":"N/A","SN":"10","PT":"t1/2β","V":"10.35","U":"h","SS":"mean","VV":"9.39–11.32","VT":"95% CI","IT":"95% CI","LL":"9.39","HL":"11.32","PV":""},
+{"DN":"Lorazepam isomeric mixture","Ana":"Lorazepam isomeric mixture","Sp":"blood","Pop":"maternal","PS":"N/A","SN":"10","PT":"β","V":"0.068","U":"h^-1","SS":"mean","VV":"0.061–0.075","VT":"95% CI","IT":"95% CI","LL":"0.061","HL":"0.075","PV":""},
+{"DN":"Lorazepam isomeric mixture","Ana":"Lorazepam isomeric mixture","Sp":"blood","Pop":"maternal","PS":"N/A","SN":"10","PT":"AUC0–∞","V":"175.25","U":"(ng h)/ml","SS":"mean","VV":"145.74–204.75","VT":"95% CI","IT":"95% CI","LL":"145.74","HL":"204.75","PV":""},
+{"DN":"Lorazepam isomeric mixture","Ana":"Lorazepam isomeric mixture","Sp":"blood","Pop":"maternal","PS":"N/A","SN":"10","PT":"ClT/F","V":"2.61","U":"ml/(min kg)","SS":"mean","VV":"2.34–2.88","VT":"95% CI","IT":"95% CI","LL":"2.34","HL":"2.88","PV":""},
+{"DN":"Lorazepam isomeric mixture","Ana":"Lorazepam isomeric mixture","Sp":"blood","Pop":"maternal","PS":"N/A","SN":"10","PT":"Vd/F","V":"178.78","U":"l","SS":"mean","VV":"146.46–211.10","VT":"95% CI","IT":"95% CI","LL":"146.46","HL":"211.10","PV":""},
+
+{"DN":"Lorazepam","Ana":"Lorazepam-glucuronide isomeric mixture","Sp":"blood","Pop":"maternal","PS":"N/A","SN":"10","PT":"Cmax","V":"35.55","U":"ng/ml","SS":"mean","VV":"8.27–62.83","VT":"95% CI","IT":"95% CI","LL":"8.27","HL":"62.83","PV":""},
+{"DN":"Lorazepam","Ana":"Lorazepam-glucuronide isomeric mixture","Sp":"blood","Pop":"maternal","PS":"N/A","SN":"10","PT":"tmax","V":"4.33","U":"h","SS":"mean","VV":"2.90–5.77","VT":"95% CI","IT":"95% CI","LL":"2.90","HL":"5.77","PV":""},
+{"DN":"Lorazepam","Ana":"Lorazepam-glucuronide isomeric mixture","Sp":"blood","Pop":"maternal","PS":"N/A","SN":"10","PT":"t1/2a","V":"1.37","U":"h","SS":"mean","VV":"1.15–1.58","VT":"95% CI","IT":"95% CI","LL":"1.15","HL":"1.58","PV":""},
+{"DN":"Lorazepam","Ana":"Lorazepam-glucuronide isomeric mixture","Sp":"blood","Pop":"maternal","PS":"N/A","SN":"10","PT":"Ka","V":"0.52","U":"h−1","SS":"mean","VV":"0.44–0.59","VT":"95% CI","IT":"95% CI","LL":"0.44","HL":"0.59","PV":""},
+{"DN":"Lorazepam","Ana":"Lorazepam-glucuronide isomeric mixture","Sp":"blood","Pop":"maternal","PS":"N/A","SN":"10","PT":"t1/2β","V":"18.17","U":"h","SS":"mean","VV":"14.10–22.23","VT":"95% CI","IT":"95% CI","LL":"14.10","HL":"22.23","PV":""},
+{"DN":"Lorazepam","Ana":"Lorazepam-glucuronide isomeric mixture","Sp":"blood","Pop":"maternal","PS":"N/A","SN":"10","PT":"β","V":"0.039","U":"h−1","SS":"mean","VV":"0.032–0.047","VT":"95% CI","IT":"95% CI","LL":"0.032","HL":"0.047","PV":""},
+{"DN":"Lorazepam","Ana":"Lorazepam-glucuronide isomeric mixture","Sp":"blood","Pop":"maternal","PS":"N/A","SN":"10","PT":"AUC0–∞","V":"481.19","U":"(ng h)/ml","SS":"mean","VV":"252.87–709.51","VT":"95% CI","IT":"95% CI","LL":"252.87","HL":"709.51","PV":""},
+
+{"DN":"Lorazepam isomeric mixture","Ana":"Lorazepam isomeric mixture","Sp":"urine","Pop":"maternal","PS":"N/A","SN":"10","PT":"Total amount excreted","V":"8.18","U":"μg","SS":"mean","VV":"2.67–13.70","VT":"95% CI","IT":"95% CI","LL":"2.67","HL":"13.70","PV":""},
+{"DN":"Lorazepam isomeric mixture","Ana":"Lorazepam isomeric mixture","Sp":"urine","Pop":"maternal","PS":"N/A","SN":"10","PT":"Fraction excreted","V":"0.29","U":"%","SS":"mean","VV":"0.12–0.45","VT":"95% CI","IT":"95% CI","LL":"0.12","HL":"0.45","PV":""},
+{"DN":"Lorazepam isomeric mixture","Ana":"Lorazepam isomeric mixture","Sp":"urine","Pop":"maternal","PS":"N/A","SN":"10","PT":"Renal clearance","V":"0.0099","U":"ml/(min kg)","SS":"mean","VV":"0.0049–0.015","VT":"95% CI","IT":"95% CI","LL":"0.0049","HL":"0.015","PV":""},
+{"DN":"Lorazepam isomeric mixture","Ana":"Lorazepam isomeric mixture","Sp":"urine","Pop":"maternal","PS":"N/A","SN":"10","PT":"Elimination half-life","V":"12.75","U":"h","SS":"mean","VV":"10.71–14.79","VT":"95% CI","IT":"95% CI","LL":"10.71","HL":"14.79","PV":""},
+{"DN":"Lorazepam isomeric mixture","Ana":"Lorazepam isomeric mixture","Sp":"urine","Pop":"maternal","PS":"N/A","SN":"10","PT":"Elimination rate constant","V":"0.057","U":"h⁻¹","SS":"mean","VV":"0.048–0.065","VT":"95% CI","IT":"95% CI","LL":"0.048","HL":"0.065","PV":""},
+
+{"DN":"Lorazepam","Ana":"Lorazepam-glucuronide isomeric mixture","Sp":"urine","Pop":"maternal","PS":"","SN":"10","PT":"Ae total","V":"899.77","U":"μg","SS":"mean","VV":"730.42","VT":"95% CI","IT":"95% CI","LL":"534.58","HL":"1265.0","PV":""},{"DN":"Lorazepam","Ana":"Lorazepam-glucuronide isomeric mixture","Sp":"urine","Pop":"maternal","PS":"","SN":"10","PT":"Fel","V":"44.97","U":"%","SS":"mean","VV":"36.64","VT":"95% CI","IT":"95% CI","LL":"26.65","HL":"63.29","PV":""},{"DN":"Lorazepam","Ana":"Lorazepam-glucuronide isomeric mixture","Sp":"urine","Pop":"maternal","PS":"","SN":"10","PT":"ClR","V":"1.12","U":"ml/(min kg)","SS":"mean","VV":"0.86","VT":"95% CI","IT":"95% CI","LL":"0.69","HL":"1.55","PV":""},{"DN":"Lorazepam","Ana":"Lorazepam-glucuronide isomeric mixture","Sp":"urine","Pop":"maternal","PS":"","SN":"10","PT":"t1/2","V":"11.5","U":"h","SS":"mean","VV":"10.72","VT":"95% CI","IT":"95% CI","LL":"6.14","HL":"16.86","PV":""},{"DN":"Lorazepam","Ana":"Lorazepam-glucuronide isomeric mixture","Sp":"urine","Pop":"maternal","PS":"","SN":"10","PT":"Kel","V":"0.066","U":"h⁻¹","SS":"mean","VV":"0.053","VT":"95% CI","IT":"95% CI","LL":"0.040","HL":"0.093","PV":""}]
+
+
+
+

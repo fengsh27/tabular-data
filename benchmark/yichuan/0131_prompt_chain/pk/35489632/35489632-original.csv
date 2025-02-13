@@ -1,0 +1,9 @@
+Drug name, Analyte, Specimen, Population, Pregnancy stage, Subject N, Parameter type, Value, Unit, Summary statistics, Variation type, Variation value, Interval type, Lower limit, High limit, P value
+Meropenem, Meropenem, Plasma, Pediatric, N/A, 28, Cmid, 19.9, mg/L, GM, 95% CI, 13.5-29.5, 95% CI, 13.5, 29.5, 0.20
+Meropenem, Meropenem, Plasma, Pediatric, N/A, 26, Cmid, 14.8, mg/L, GM, 95% CI, 11.4-19.1, 95% CI, 11.4, 19.1, 0.20
+Meropenem, Meropenem, Plasma, Pediatric, N/A, 28, Ctrough, 3.5, mg/L, GM, 95% CI, 2.0-6.1, 95% CI, 2.0, 6.1, 0.04
+Meropenem, Meropenem, Plasma, Pediatric, N/A, 26, Ctrough, 1.6, mg/L, GM, 95% CI, 1.0-2.6, 95% CI, 1.0, 2.6, 0.04
+Meropenem, Meropenem, Plasma, Pediatric, N/A, 11, C_mid, 4.9, mg/L, Geometric mean, 95% CI, 2.6-9.2, 95% CI, 2.6, 9.2, 0.14
+Meropenem, Meropenem, Plasma, Pediatric, N/A, 7, C_mid, 1.9, mg/L, Geometric mean, 95% CI, 0.4-9.6, 95% CI, 0.4, 9.6, 0.14
+Meropenem, Meropenem, Plasma, Pediatric, N/A, 11, C_trough, 0.8, mg/L, Geometric mean, 95% CI, 0.4-1.6, 95% CI, 0.4, 1.6, 0.85
+Meropenem, Meropenem, Plasma, Pediatric, N/A, 7, C_trough, 0.9, mg/L, Geometric mean, 95% CI, 0.2-4.2, 95% CI, 0.2, 4.2, 0.85

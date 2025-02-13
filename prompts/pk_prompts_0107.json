@@ -1,0 +1,73 @@
+{
+  "version": "250107-default",
+  "table_extraction_prompts": {
+    "role_description": "Please act as a biomedical assistant, help to extract the information from the provided source",
+    "source": "html table from biomedical article",
+    "output_columns": [
+      "DN",
+      "Ana",
+      "Sp", 
+      "Pop", 
+      "PS", 
+      "SN",
+      "PT", 
+      "V", 
+      "U", 
+      "SS", 
+      "VT",
+      "VV",
+      "IT", 
+      "LL",
+      "HL", 
+      "PV"
+    ],
+    "output_columns_map": [
+      ["DN", "Drug name"],
+      ["Ana", "Analyte"],
+      ["Sp", "Specimen"],
+      ["Pop", "Population"],
+      ["PS", "Pregnancy stage"],
+      ["SN", "Subject N"],
+      ["PT", "Parameter type"],
+      ["V", "Value"],
+      ["U", "Unit"],
+      ["SS", "Summary statistics"],
+      ["VT", "Variation type"],
+      ["VV", "Variation value"],
+      ["IT", "Interval type"],
+      ["LL", "Lower limit"],
+      ["HL", "High limit"],
+      ["PV", "P value"]
+    ],
+    "output_column_definitions": [
+      "DN: Drug name, is text, the name of drug mentioned in the paper",
+      "Ana: Analyte, is text, either the primary drug, its metabolite, or another drug on which the primary drug acts.",
+      "Sp: Specimen, is text, what is the specimen, like 'blood', 'breast milk', 'cord blood', and so on.",
+      "Pop: Population, Describe the patient age distribution, including categories such as 'pediatric,' 'adults,' 'old adults,' 'maternal,' 'fetal,' 'neonate,' etc.",
+      "PS: Pregnancy stage, is text, What pregnancy stages of patients mentioned in the paper, like 'postpartum', 'before pregnancy', '1st trimester' and so on. If not mentioned, please label as 'N/A',",
+      "SN: Subject N,  the number of subjects that correspond to the specific parameter. ",
+      "PT: Parameter type, is text, the type of parameter, like 'concentration after the first dose', 'concentration after the second dose', 'clearance', 'Total area under curve' and so on.",
+      "V: Value, is a number, the value of parameter",
+      "U: Unit, the unit of the value",
+      "SS: Summary statistics, the statistics method to summary the data, like 'geometric mean', 'arithmetic mean'",
+      "VV: Variation value, is a number, the number that corresponds to the specific variation.", 
+      "VT: Variation type, the variability measure (describes how spread out the data is) associated with the specific parameter, e.g., standard deviation (SD), CV%.",
+      "IT: Interval type, is text, specifies the type of interval that is being used to describe uncertainty or variability around a measure or estimate, like '95% CI', 'range' and so on.",
+      "LL: Lower limit, is a number, the lower bounds of the interval",
+      "HL: High limit, is a number, the higher bounds of the interval",      
+      "PV: P value, The p-value is a number, calculated from a statistical test, that describes the likelihood of a particular set of observations if the null hypothesis were true; varies depending on the study, and therefore it may not always be reported."
+    ],
+    "output_notes": [
+      "1. Only output table in compact json format without any other characters, no space, no newline, no triple backticks ``` and no 'json'.",
+      "2. Ensure to extract all available information for each field without omitting any details.",
+      "3. If the information that is not provided, please leave it with empty string."
+    ]
+  },
+  "full_text_prompts": {
+
+  }
+}
+
+
+
+

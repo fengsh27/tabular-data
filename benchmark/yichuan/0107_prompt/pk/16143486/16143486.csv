@@ -1,0 +1,9 @@
+,Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation type,Variation value,Interval type,Lower limit,High limit,P value
+0,Lorazepam, Lorazepam isomeric mixture, Maternal urine, Maternal, , 8, Urinary excretion rate, 8.18, μg, Mean, CI 95%, 2.67–13.70, Range, 2.67, 13.70, 
+1,Lorazepam, Lorazepam-glucuronide isomeric mixture, Maternal urine, Maternal, , 8, Urinary excretion rate, 899.77, μg, Mean, CI 95%, 534.58–1265.0, Range, 534.58, 1265.0, 
+2,Lorazepam, Lorazepam isomeric mixture, Maternal blood, Maternal, , 8, Cmax, 12.96, ng/ml, Mean, CI 95%, 9.42–16.49, Range, 9.42, 16.49, 
+3,Lorazepam, Lorazepam-glucuronide isomeric mixture, Maternal blood, Maternal, , 8, Cmax, 35.55, ng/ml, Mean, CI 95%, 8.27–62.83, Range, 8.27, 62.83, 
+4,Lorazepam, Lorazepam isomeric mixture, Cord blood, Maternal, , 8, Concentration at delivery, 6.78, ng/ml, Mean, CI 95%, 5.39–8.17, Range, 5.39, 8.17, 
+5,Lorazepam, Lorazepam-glucuronide isomeric mixture, Cord blood, Maternal, , 8, Concentration at delivery, 9.91, ng/ml, Mean, CI 95%, 7.68–12.14, Range, 7.68, 12.14, 
+6,Lorazepam, Lorazepam isomeric mixture, Maternal blood, Maternal, , 8, AUC0-∞, 175.25, (ng h)/ml, Mean, CI 95%, 145.74–204.75, Range, 145.74, 204.75, 
+7,Lorazepam, Lorazepam-glucuronide isomeric mixture, Maternal blood, Maternal, , 8, AUC0-∞, 481.19, (ng h)/ml, Mean, CI 95%, 252.87–709.51, Range, 252.87, 709.51,

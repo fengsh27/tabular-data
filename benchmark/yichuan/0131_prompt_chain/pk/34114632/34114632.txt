@@ -1,0 +1,26 @@
+["Table 2", "Table 3"]
+
+["Dose range 1 (5–15 mg/kg/12 h)", "Dose range 2 (15–25 mg/kg/12 h)", "Dose range 3 (25–35 mg/kg/12 h)"]
+
+False
+
+
+[{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"Blood","Pop":"Neonate","PS":"N/A","SN":"8","PT":"Cmax","V":"19.19","U":"µg/mL","SS":"Mean","VV":"4.12","VT":"SD","IT":"","LL":"","HL":"","PV":"0.07"},{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"Blood","Pop":"Neonate","PS":"N/A","SN":"8","PT":"AUC0–12","V":"167.0","U":"h*µg/mL","SS":"Mean","VV":"45.6","VT":"SD","IT":"","LL":"","HL":"","PV":"0.26"},{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"Blood","Pop":"Neonate","PS":"N/A","SN":"8","PT":"Ctrough","V":"9.99","U":"µg/mL","SS":"Mean","VV":"3.86","VT":"SD","IT":"","LL":"","HL":"","PV":"0.34"},{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"Blood","Pop":"Neonate","PS":"N/A","SN":"8","PT":"Tmax","V":"1.5","U":"h","SS":"Median","VV":"","VT":"Range","IT":"Range","LL":"1.5","HL":"2.5","PV":""},
+
+{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"Blood","Pop":"Neonate","PS":"N/A","SN":"9","PT":"Cmax","V":"35.12","U":"µg/mL","SS":"Mean","VV":"10.54","VT":"SD","IT":"","LL":"","HL":"","PV":"0.001"},{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"Blood","Pop":"Neonate","PS":"N/A","SN":"9","PT":"AUC0–12","V":"316.5","U":"h*µg/mL","SS":"Mean","VV":"108.4","VT":"SD","IT":"","LL":"","HL":"","PV":"0.88"},{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"Blood","Pop":"Neonate","PS":"N/A","SN":"9","PT":"Ctrough","V":"19.25","U":"µg/mL","SS":"Mean","VV":"8.48","VT":"SD","IT":"","LL":"","HL":"","PV":"0.22"},{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"Blood","Pop":"Neonate","PS":"N/A","SN":"9","PT":"Tmax","V":"2.5","U":"h","SS":"Median","VV":"","VT":"","IT":"Range","LL":"2.0","HL":"3.3","PV":""},
+
+
+{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"Blood","Pop":"Neonate","PS":"N/A","SN":"2","PT":"Cmax","V":"36.11","U":"µg/mL","SS":"Median","VV":"27.58–44.64","VT":"Range","IT":"Range","LL":"27.58","HL":"44.64","PV":""},
+{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"Blood","Pop":"Neonate","PS":"N/A","SN":"2","PT":"AUC0–12","V":"290.9","U":"h*µg/mL","SS":"Median","VV":"176.14–405.59","VT":"Range","IT":"Range","LL":"176.14","HL":"405.59","PV":""},
+{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"Blood","Pop":"Neonate","PS":"N/A","SN":"2","PT":"Ctrough","V":"13.03","U":"µg/mL","SS":"Median","VV":"2.98–23.07","VT":"Range","IT":"Range","LL":"2.98","HL":"23.07","PV":""},
+{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"Blood","Pop":"Neonate","PS":"N/A","SN":"2","PT":"Tmax","V":"1.5","U":"h","SS":"Median","VV":"1.5","VT":"Range","IT":"Range","LL":"1.5","HL":"1.5","PV":""},
+
+{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"Plasma","Pop":"Neonate","PS":"N/A","SN":"14","PT":"Total area under curve (AUC0-12)","V":"220","U":"h*μg/mL","SS":"Median","VV":"(157.5–355.4)","VT":"IQR","IT":"Range","LL":"157.5","HL":"355.4","PV":"0.90"},{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"Plasma","Pop":"Neonate","PS":"N/A","SN":"5","PT":"Total area under curve (AUC0-12)","V":"213.8","U":"h*μg/mL","SS":"Median","VV":"(154.0–348.8)","VT":"IQR","IT":"Range","LL":"154.0","HL":"348.8","PV":"0.90"},{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"Plasma","Pop":"Neonate","PS":"N/A","SN":"14","PT":"Maximum plasma concentration (Cmax)","V":"23.8","U":"μg/mL","SS":"Median","VV":"(18.8–41.3)","VT":"IQR","IT":"Range","LL":"18.8","HL":"41.3","PV":"0.84"},{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"Plasma","Pop":"Neonate","PS":"N/A","SN":"5","PT":"Maximum plasma concentration (Cmax)","V":"26.4","U":"μg/mL","SS":"Median","VV":"(19.3–34.2)","VT":"IQR","IT":"Range","LL":"19.3","HL":"34.2","PV":"0.84"},{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"Plasma","Pop":"Neonate","PS":"N/A","SN":"14","PT":"Time to maximum plasma concentration (Tmax)","V":"1.5","U":"h","SS":"Median","VV":"(1.5–2.5)","VT":"IQR","IT":"Range","LL":"1.5","HL":"2.5","PV":"0.46"},{"DN":"Levetiracetam","Ana":"Levetiracetam","Sp":"Plasma","Pop":"Neonate","PS":"N/A","SN":"5","PT":"Time to maximum plasma concentration (Tmax)","V":"2.5","U":"h","SS":"Median","VV":"(1.5–2.9)","VT":"IQR","IT":"Range","LL":"1.5","HL":"2.9","PV":"0.46"}]
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+,Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation type,Variation value,Interval type,Lower limit,High limit,P value
+0,Fentanyl, Fentanyl, Umbilical vein, Neonate, N/A, 16, Mean serum concentration, 0.162, nmol/L, Mean, SD, 0.090, , , , .67
+1,Fentanyl, Fentanyl, Umbilical vein, Neonate, N/A, 20, Mean serum concentration, 0.151, nmol/L, Mean, SD, 0.070, , , , .67
+2,Fentanyl, Fentanyl, Maternal serum, Maternal, At birth, 16, Median serum concentration, 0.268, nmol/L, Median, , , Interquartile range, 0.193, 0.493, .66
+3,Fentanyl, Fentanyl, Maternal serum, Maternal, At birth, 19, Median serum concentration, 0.291, nmol/L, Median, , , Interquartile range, 0.212, 0.502, .66
+4,Fentanyl, Fentanyl, Maternal serum, Maternal, N/A, 18, Mean AUC 0-120 min, 0.428, nmol h/L, Mean, SD, 0.162, , , , .015
+5,Fentanyl, Fentanyl, Maternal serum, Maternal, N/A, 15, Mean AUC 0-120 min, 0.590, nmol h/L, Mean, SD, 0.197, , , , .015

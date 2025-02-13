@@ -1,0 +1,10 @@
+Drug name, Analyte, Specimen, Population, Pregnancy stage, Subject N, Parameter type, Value, Unit, Summary statistics, Variation type, Variation value, Interval type, Lower limit, High limit, P value
+Lorazepam, , , Pediatric, N/A, 15, Maximum concentration (Cmax), 56.1, ng/mL, Mean ± SD, SD, 44.9, Range, 29.3, 209.6, 
+Lorazepam, , , Pediatric, N/A, 15, Area under the curve to infinity (AUC0−∞), 822.5, ng*hr/mL, Mean ± SD, SD, 706.1, Range, 253.3, 3202.5, 
+Lorazepam, , , Pediatric, N/A, 15, Clearance (CL  mL/min/kg), 49.33, mL/min/kg, Mean ± SD, SD, 30.83, Range, 3.33, 131.50, 
+Lorazepam, , , Pediatric, N/A, 15, Clearance (CL  mL/min/m2), 31.95, mL/min/m2, Mean ± SD, SD, 13.99, Range, 5.5, 67.5, 
+Lorazepam, , , Pediatric, N/A, 15, Apparent volume of distribution (Vdz  L/kg), 1.92, L/kg, Mean ± SD, SD, 0.84, Range, 0.33, 4.05, 
+Lorazepam, , , Pediatric, N/A, 15, Half-life (T1/2), 20.5, hr, Mean ± SD, SD, 10.2, Range, 9.5, 47.0, 
+Lorazepam, , , Pediatric, N/A, 63, Clearance (CL), 1.2, mL/min/kg, Mean ± SD, SD, 0.93, Range, 0.3, 7.75, 
+Lorazepam, , , Pediatric, N/A, 63, Volume of distribution at steady state (Vdss), 1.48, L/kg, Mean ± SD, SD, 0.54, Range, 0.49, 3.40, 
+Lorazepam, , , Pediatric, N/A, 63, Elimination half-life (T½ Beta), 16.8, hr, Mean ± SD, SD, 7.1, Range, 5.9, 42.0,

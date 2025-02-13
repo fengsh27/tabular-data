@@ -1,0 +1,25 @@
+Here is my assessment of the similarity between the baseline and extracted tables:
+
+The two tables are quite similar in terms of the drug (lorazepam), analyte (lorazepam), specimen (blood), and population (pediatric/child) studied. Many of the same pharmacokinetic parameters are reported, such as Cmax, tmax, t1/2, AUC, CL, Vc, and Vss.
+
+However, there are several key differences:
+
+1. The extracted table contains additional demographic information in the first 7 rows that is not present in the baseline table, such as number of subjects, sex, age, weight, temperature, hemoglobin, RBC and WBC counts. 
+
+2. The baseline table has separate rows for a second set of Cmax and tmax values in a different number of subjects (rows 8-9), which are not captured in the extracted table.
+
+3. The extracted table is missing the Ka and associated t1/2 values that are present in rows 12-13 of the baseline table.
+
+4. The bioavailability is reported as a percentage without a value in the extracted table, while the baseline table provides the value of 89.4%.
+
+5. The extracted table uses different unit abbreviations in some cases, like "ng ml−1" instead of "ng/ml" and "l h−1" instead of "L/h". The baseline table also uses the infinity symbol while the extracted table spells out "infinity".
+
+6. The p-value column is completely blank in both tables.
+
+7. The extracted table has the interval type information in the variation type column in some cases (e.g. 95% CI) when it should be in a separate column per the definitions provided.
+
+Given the extra information in the extracted table that is missing key PK parameters from the baseline, the inconsistent units, and the incorrect placement of some data, I would estimate the overall similarity of the extracted table compared to the baseline at:
+
+[[70]]
+
+The core PK data is largely overlapping, but the additional demographic data, missing parameters, and formatting inconsistencies bring down the score. Let me know if you need any clarification or have additional questions!

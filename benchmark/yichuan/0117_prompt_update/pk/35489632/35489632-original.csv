@@ -1,0 +1,9 @@
+Drug name, Analyte, Specimen, Population, Pregnancy stage, Subject N, Parameter type, Value, Unit, Summary statistics, Variation type, Variation value, Interval type, Lower limit, High limit, P value
+Meropenem, Meropenem, Plasma, Pediatric, , 28, Unbound plasma concentration at mid-dosing intervals, 19.9, mg/L, Geometric mean, Range, 13.5−29.5, 95% CI, 13.5, 29.5, 
+Meropenem, Meropenem, Plasma, Pediatric, , 26, Unbound plasma concentration at mid-dosing intervals, 14.8, mg/L, Geometric mean, Range, 11.4−19.1, 95% CI, 11.4, 19.1, 
+Meropenem, Meropenem, Plasma, Pediatric, , 28, Unbound plasma concentration at end-dosing intervals, 3.5, mg/L, Geometric mean, Range, 2.0−6.1, 95% CI, 2.0, 6.1, 0.04
+Meropenem, Meropenem, Plasma, Pediatric, , 26, Unbound plasma concentration at end-dosing intervals, 1.6, mg/L, Geometric mean, Range, 1.0−2.6, 95% CI, 1.0, 2.6, 0.04
+Meropenem, Meropenem, Plasma, Pediatric, , 11, Unbound plasma concentration at mid-dosing intervals, 4.9, mg/L, Geometric mean, Range, 2.6−9.2, 95% CI, 2.6, 9.2, 
+Meropenem, Meropenem, Plasma, Pediatric, , 7, Unbound plasma concentration at mid-dosing intervals, 1.9, mg/L, Geometric mean, Range, 0.4−9.6, 95% CI, 0.4, 9.6, 
+Meropenem, Meropenem, Plasma, Pediatric, , 11, Unbound plasma concentration at end-dosing intervals, 0.8, mg/L, Geometric mean, Range, 0.4−1.6, 95% CI, 0.4, 1.6, 
+Meropenem, Meropenem, Plasma, Pediatric, , 7, Unbound plasma concentration at end-dosing intervals, 0.9, mg/L, Geometric mean, Range, 0.2−4.2, 95% CI, 0.2, 4.2,
