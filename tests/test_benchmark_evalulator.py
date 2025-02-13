@@ -7,6 +7,7 @@ from benchmark.test_benchmark_with_semantic import (
     PK_RATING_COLUMNS
 )
 
+@pytest.mark.skip("skip current due to expensive transformer installation")
 def test_anchro_row_from_rows():
     pmid = "30950674"
     target = pd.read_csv(f"./benchmark/data/{pmid}-pk-summary-gpt4o.csv")
