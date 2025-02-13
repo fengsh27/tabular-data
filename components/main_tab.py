@@ -187,10 +187,11 @@ def on_extract(pmid: str):
 
         table_sections = dict()  # table_name -> subsections
 
+        time.sleep(60)
+
         step2_usage_list = []
 
         for table_name in step1_content:
-            time.sleep(30)
             step2_content: Optional[Dict] = json_content.get("step2", None)
             step2_further_divide_the_table = step2_content.get('further_divide_the_table', None)
             step2_further_divide_the_table = step2_further_divide_the_table.replace('TABLE_NAME', table_name)
@@ -199,40 +200,41 @@ def on_extract(pmid: str):
             step2_prompt_list = [{"role": "user", "content": step2_further_divide_the_table},
                                  {"role": "user", "content": shared_table_content},
                                  {"role": "user", "content": step2_format}]
-            try:
-                stamper.output_prompts(step2_prompt_list)
-                request_llm: Optional[Callable[[List[Dict[str,str],str],str]]] = None
-                if ss.main_llm_option == LLM_CHATGPT_4O:
-                    request_llm = request_to_chatgpt_4o
-                else:
-                    request_llm = request_to_gemini_15_pro
-                step2_res, step2_content, step2_usage, step2_truncated = request_llm(
-                    step2_prompt_list,
-                    step2_format,
-                )
-                step2_usage_list.append(step2_usage)
-                if '[' in step2_content and ']' in step2_content:
-                    start = step2_content.find("[")
-                    end = step2_content.rfind("]")
-                    if start != -1 and end != -1:
-                        step2_content = step2_content[start:end + 1]
-                    step2_content = ast.literal_eval(str(step2_content))  # Convert to a real Python list
-                    table_sections[table_name] = step2_content
-                    notification = f"{table_name} can be split into the following sections: "
-                    for sn in step2_content:
-                        notification += sn
-                        notification += ", "
-                    st.write(notification)
-                # elif 'False' in step2_content:
-                else:
+            for attempt in range(5):
+                try:
+                    stamper.output_prompts(step2_prompt_list)
+                    request_llm: Optional[Callable[[List[Dict[str,str],str],str]]] = None
+                    if ss.main_llm_option == LLM_CHATGPT_4O:
+                        request_llm = request_to_chatgpt_4o
+                    else:
+                        request_llm = request_to_gemini_15_pro
+                    step2_res, step2_content, step2_usage, step2_truncated = request_llm(
+                        step2_prompt_list,
+                        step2_format,
+                    )
+                    step2_usage_list.append(step2_usage)
+                    if '[' in step2_content and ']' in step2_content:
+                        start = step2_content.find("[")
+                        end = step2_content.rfind("]")
+                        if start != -1 and end != -1:
+                            step2_content = step2_content[start:end + 1]
+                        step2_content = ast.literal_eval(str(step2_content))  # Convert to a real Python list
+                        table_sections[table_name] = step2_content
+                        notification = f"{table_name} can be split into the following sections: "
+                        for sn in step2_content:
+                            notification += sn
+                            notification += ", "
+                        st.write(notification)
+                    # elif 'False' in step2_content:
+                    else:
+                        table_sections[table_name] = None
+                        st.write(f"{table_name} cannot be further split.")
+                    break
+                except Exception as e:
+                    logging.error(f"Split {table_name}, attempt {attempt + 1} failed: {e}")
+                    st.error(f"Split {table_name}, attempt {attempt + 1} failed: {e}")
+                    time.sleep(60 * (attempt + 1))
                     table_sections[table_name] = None
-                    st.write(f"{table_name} cannot be further split.")
-
-            except Exception as e:
-                logger.error(e)
-                st.error(e)
-                table_sections[table_name] = None
-                pass
 
         st.write("Step 2 completed, token usage:", str(sum(step2_usage_list)))
 
