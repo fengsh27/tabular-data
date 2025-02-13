@@ -58,14 +58,14 @@ class GeneratedPKSummaryTableProcessor(object):
         self.columns_dict = temp_columns_dict
         self.plugins = [JsonEnclosePropertyNameInQuotesPlugin(prompts_type=prompts_type)]
 
-    def process_content(self, content: str) -> str:
+    def process_content(self, content: str, has_header=True) -> str:
         content = self._strip_table_content(content)
         
         for preprocessor in self.plugins:
             content = preprocessor.process(content)
 
         if self._check_content_format(content) == "json":
-            return self._convert_json_to_csv(content)
+            return self._convert_json_to_csv(content, has_header)
         else:
             return content
         
@@ -104,14 +104,13 @@ class GeneratedPKSummaryTableProcessor(object):
         vals = vals[:-2] # remove the last delimiter
         return vals
     
-    def _convert_json_to_csv(self, content: str) -> str | None:
+    def _convert_json_to_csv(self, content: str, has_header=True) -> str | None:
         stripped_content = content.strip()
         if stripped_content.startswith('['):
             json_content = '{' + f'"content": {stripped_content}' + '}'
         try:
             json_obj = json.loads(json_content)
-            csv_str = self._convert_to_csv_header()
-            csv_str += "\n"
+            csv_str = self._convert_to_csv_header() + "\n" if has_header else ''
             rows: List = json_obj["content"]
             for ix, row in enumerate(rows):
                 val = self._convert_to_csv_row(row)

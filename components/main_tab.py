@@ -290,7 +290,8 @@ def on_extract(pmid: str):
                         if start != -1 and end != -1:
                             st.write(f"Processing {table_section_name}")
                             processor = GeneratedPKSummaryTableProcessor(PROMPTS_NAME_PK)
-                            csv_str = processor.process_content(step3_content[start:end + 1])
+                            has_header = table_section_name == table_section_name_list[0]
+                            csv_str = processor.process_content(step3_content[start:end + 1], has_header)
                             # st.write(csv_str)
                             final_csv_list.append(csv_str)
                     break
@@ -298,12 +299,7 @@ def on_extract(pmid: str):
                     logging.error(f"{table_section_name}, attempt {attempt + 1} failed: {e}")
                     st.error(f"{table_section_name}, attempt {attempt + 1} failed: {e}")
                     time.sleep(60*(attempt + 1))
-        final_csv_str = ''
-        final_csv_str += final_csv_list[0]
-        header = ",Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation type,Variation value,Interval type,Lower limit,High limit,P value"
-        for i in range(1, len(final_csv_list)):
-            final_csv_str += final_csv_list[i].replace(header, '')
-
+        final_csv_str = ''.join(final_csv_list)
         st.write("Step 3 completed, token usage:", str(sum(step3_usage_list)))
 
         ss.main_extracted_result = final_csv_str
