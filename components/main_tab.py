@@ -218,9 +218,15 @@ def on_extract(pmid: str):
                         step2_content = step2_content[start:end + 1]
                     step2_content = ast.literal_eval(str(step2_content))  # Convert to a real Python list
                     table_sections[table_name] = step2_content
+                    notification = f"{tn} can be split into the following sections: "
+                    for sn in step2_content:
+                        notification += sn
+                        notification += ", "
+                    st.write(notification)
                 # elif 'False' in step2_content:
                 else:
                     table_sections[table_name] = None
+                    st.write(f"{tn} cannot be further split.")
 
             except Exception as e:
                 logger.error(e)
@@ -228,15 +234,6 @@ def on_extract(pmid: str):
                 table_sections[table_name] = None
                 pass
 
-        for tn in table_sections.keys():
-            if table_sections[tn] is None:
-                st.write(f"{tn} cannot be further split.")
-            else:
-                notification = f"{tn} can be split into the following sections: "
-                for sn in table_sections[tn]:
-                    notification += sn
-                    notification += ", "
-                st.write(notification)
         st.write("Step 2 completed, token usage:", str(sum(step2_usage_list)))
 
         """ Step 3 - Extract from Each Table Section """
