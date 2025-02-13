@@ -1,0 +1,11 @@
+["Table 2"]
+
+False
+
+[{"DN":"Fentanyl","Ana":"Fentanyl","Sp":"Umbilical vein","Pop":"Neonate","PS":"N/A","SN":"16","PT":"Mean serum concentration","V":"0.162","U":"nmol/L","SS":"Mean","VV":"0.090","VT":"SD","IT":"","LL":"","HL":"","PV":".67"},{"DN":"Fentanyl","Ana":"Fentanyl","Sp":"Umbilical vein","Pop":"Neonate","PS":"N/A","SN":"20","PT":"Mean serum concentration","V":"0.151","U":"nmol/L","SS":"Mean","VV":"0.070","VT":"SD","IT":"","LL":"","HL":"","PV":".67"},{"DN":"Fentanyl","Ana":"Fentanyl","Sp":"Maternal serum","Pop":"Maternal","PS":"At birth","SN":"16","PT":"Median serum concentration","V":"0.268","U":"nmol/L","SS":"Median","VV":"","VT":"","IT":"IQR","LL":"0.193","HL":"0.493","PV":".66"},{"DN":"Fentanyl","Ana":"Fentanyl","Sp":"Maternal serum","Pop":"Maternal","PS":"At birth","SN":"19","PT":"Median serum concentration","V":"0.291","U":"nmol/L","SS":"Median","VV":"","VT":"","IT":"IQR","LL":"0.212","HL":"0.502","PV":".66"},{"DN":"Fentanyl","Ana":"Fentanyl","Sp":"Maternal serum","Pop":"Maternal","PS":"N/A","SN":"18","PT":"Mean AUC 0-120 min","V":"0.428","U":"nmol h/L","SS":"Mean","VV":"0.162","VT":"SD","IT":"","LL":"","HL":"","PV":".015"},{"DN":"Fentanyl","Ana":"Fentanyl","Sp":"Maternal serum","Pop":"Maternal","PS":"N/A","SN":"15","PT":"Mean AUC 0-120 min","V":"0.590","U":"nmol h/L","SS":"Mean","VV":"0.197","VT":"SD","IT":"","LL":"","HL":"","PV":".015"}]
+
+
+
+
+
+

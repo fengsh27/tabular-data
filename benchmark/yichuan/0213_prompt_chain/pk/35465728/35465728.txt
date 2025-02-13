@@ -1,0 +1,25 @@
+[
+  "TABLE 2: Vancomycin exposure before and after implementation of the vancomycin dose-optimization protocol"
+]
+
+
+[
+    "Initial Cavg",
+    "All Cavg",
+    "Initial Cavg/MIC ratio",
+    "Initial AUC/MIC ratio"
+]
+
+[{"DN":"Vancomycin","Ana":"Vancomycin","Sp":"Blood","Pop":"Neonate","PS":"N/A","SN":"60","PT":"Concentration","V":"12.9","U":"mg/L","SS":"Median","VV":"","VT":"","IT":"25th to 75th percentile","LL":"11.3","HL":"17.0","PV":"<0.001"},{"DN":"Vancomycin","Ana":"Vancomycin","Sp":"Blood","Pop":"Neonate","PS":"N/A","SN":"59","PT":"Concentration","V":"20.3","U":"mg/L","SS":"Median","VV":"","VT":"","IT":"25th to 75th percentile","LL":"17.0","HL":"22.2","PV":"<0.001"},
+
+{"DN":"Vancomycin","Ana":"Vancomycin","Sp":"Blood","Pop":"Neonate","PS":"N/A","SN":"116","PT":"Concentration","V":"13.1","U":"mg/L","SS":"Median","VV":"","VT":"","IT":"25th to 75th percentile","LL":"11.3","HL":"16.2","PV":"<0.001"},{"DN":"Vancomycin","Ana":"Vancomycin","Sp":"Blood","Pop":"Neonate","PS":"N/A","SN":"103","PT":"Concentration","V":"19.8","U":"mg/L","SS":"Median","VV":"","VT":"","IT":"25th to 75th percentile","LL":"16.8","HL":"22.1","PV":"<0.001"},
+
+{"DN":"Vancomycin","Ana":"Vancomycin","Sp":"Blood","Pop":"Neonate","PS":"N/A","SN":"22","PT":"Cavg/MIC ratio","V":"8.8","U":"","SS":"Median","VV":"","VT":"","IT":"25th-75th percentile","LL":"6.2","HL":"11.5","PV":"0.004"},{"DN":"Vancomycin","Ana":"Vancomycin","Sp":"Blood","Pop":"Neonate","PS":"N/A","SN":"17","PT":"Cavg/MIC ratio","V":"12.8","U":"","SS":"Median","VV":"","VT":"","IT":"25th-75th percentile","LL":"10.9","HL":"20.9","PV":"0.004"},
+
+{"DN":"Vancomycin","Ana":"Vancomycin","Sp":"Blood","Pop":"Neonate","PS":"N/A","SN":"22","PT":"AUC/MIC ratio","V":"211","U":"","SS":"Median","VV":"","VT":"","IT":"25th-75th percentile","LL":"149","HL":"275","PV":"0.006"},{"DN":"Vancomycin","Ana":"Vancomycin","Sp":"Blood","Pop":"Neonate","PS":"N/A","SN":"17","PT":"AUC/MIC ratio","V":"307","U":"","SS":"Median","VV":"","VT":"","IT":"25th-75th percentile","LL":"262","HL":"502","PV":"0.006"}]
+
+
+
+
+
+
