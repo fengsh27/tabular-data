@@ -218,7 +218,7 @@ def on_extract(pmid: str):
                         step2_content = step2_content[start:end + 1]
                     step2_content = ast.literal_eval(str(step2_content))  # Convert to a real Python list
                     table_sections[table_name] = step2_content
-                    notification = f"{tn} can be split into the following sections: "
+                    notification = f"{table_name} can be split into the following sections: "
                     for sn in step2_content:
                         notification += sn
                         notification += ", "
@@ -226,7 +226,7 @@ def on_extract(pmid: str):
                 # elif 'False' in step2_content:
                 else:
                     table_sections[table_name] = None
-                    st.write(f"{tn} cannot be further split.")
+                    st.write(f"{table_name} cannot be further split.")
 
             except Exception as e:
                 logger.error(e)
