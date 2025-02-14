@@ -1,5 +1,5 @@
 {
-  "version": "250117-yichuan-update",
+  "version": "250117-update",
   "table_extraction_prompts": {
     "role_description": "Please act as a biomedical assistant, help to extract the information from the provided source",
     "source": "html table from biomedical article",

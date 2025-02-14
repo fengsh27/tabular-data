@@ -1,5 +1,5 @@
 {
-  "version": "20250131",
+  "version": "250131-chain",
   "step1": {
     "seek_for_pk_table": "Which table(s) are related to PK (pharmacokinetics)?\nPlease return a list of strings directly.\n",
     "format": "Please only return the Python string list:\n"
