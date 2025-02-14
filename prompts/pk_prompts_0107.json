@@ -1,5 +1,5 @@
 {
-  "version": "250107-default",
+  "version": "250107-old",
   "table_extraction_prompts": {
     "role_description": "Please act as a biomedical assistant, help to extract the information from the provided source",
     "source": "html table from biomedical article",
