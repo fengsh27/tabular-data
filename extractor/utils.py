@@ -213,6 +213,7 @@ def concate_llm_contents(contents: List[str], usages: List[int]):
             json.loads(all_contents)
             break
         except json.JSONDecodeError as e:
+            retries += 1
             col = e.colno
             length = 0
             if len(contents) == 1:
