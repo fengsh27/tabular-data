@@ -172,7 +172,6 @@ def on_extract(pmid: str):
                 notification += tn
                 notification += ", "
             st.write(notification)
-            st.write("Please note that there is a bug causing the selected table to include HTML data from other tables.")
             st.write("Step 1 completed, token usage:", str(step1_usage))
 
         except Exception as e:
