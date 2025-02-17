@@ -94,6 +94,8 @@ class HtmlTableParser(object):
         for tag in tags:
             strTag = str(tag)
             table = convert_html_table_to_dataframe(strTag)
+            if table is None:
+                continue
             caption, footnote, parent_tag = self._find_caption_and_footnote(tag)
             parent_tag = parent_tag if parent_tag is not None else tag
             tables.append({
