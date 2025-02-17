@@ -37,6 +37,26 @@ class JsonEnclosePropertyNameInQuotesPlugin:
             json_str = re.sub(rf"(?<![a-zA-Z0-9]){cn}:", f'"{cn}":', json_str)
         
         return json_str
+
+class JsonFieldValidatePlugin:
+    """
+    This plugin is to eliminate invalid fields like the following:
+    {"DN":"lorazepam","Ana":"lorazepam","Sp":"cord blood","Pop":"fetal","PS":"N/A","SN":"1","PT":"concentration",
+    "V":5.77,"U":"ng/ml","","","","","","","",""}
+    """
+    def __init__(self):
+        pass
+
+    @staticmethod
+    def _clean_json_string(json_str: str) -> str:
+        cleaned_json_str = re.sub(r',\s*""\s*', '', json_str)
+        cleaned_json_str = re.sub(r'{\s*""\s*,', '{', cleaned_json_str)
+        cleaned_json_str = re.sub(r',\s*""\s*}', '}', cleaned_json_str)
+        
+        return cleaned_json_str
+
+    def process(self, json_str: str):
+        return JsonFieldValidatePlugin._clean_json_string(json_str)
         
 
 class GeneratedPKSummaryTableProcessor(object):
@@ -56,7 +76,10 @@ class GeneratedPKSummaryTableProcessor(object):
         self.columns = temp_columns
         self.lower_columns = list(map(lambda x: x.lower(), self.columns))
         self.columns_dict = temp_columns_dict
-        self.plugins = [JsonEnclosePropertyNameInQuotesPlugin(prompts_type=prompts_type)]
+        self.plugins = [
+            JsonEnclosePropertyNameInQuotesPlugin(prompts_type=prompts_type),
+            JsonFieldValidatePlugin(),
+        ]
 
     def process_content(self, content: str, has_header=True) -> str:
         content = self._strip_table_content(content)

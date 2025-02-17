@@ -39,7 +39,7 @@ class HtmlTableParser(object):
             level: int, 
             found_caption: Optional[bool]=False,
             found_footnote: Optional[bool]=False
-        ):
+        )->tuple[str, str, Tag | None]:
         if parent_tag is None:
             return "", "", None
         if level > HtmlTableParser.MAX_LEVEL:
@@ -74,13 +74,15 @@ class HtmlTableParser(object):
             caption, _, further_parent_tag = self._find_caption_and_footnote_recursively(
                 parent_tag.parent, level+1, found_caption, found_footnote
             )
-            final_parent_tag = further_parent_tag if further_parent_tag is not None else parent_tag
+            final_parent_tag = further_parent_tag if further_parent_tag is not None \
+                and (caption is not None and len(caption) > 0) else parent_tag
             return caption, footnote, final_parent_tag
         if not found_footnote:
             _, footnote, further_parent_tag = self._find_caption_and_footnote_recursively(
                 parent_tag.parent, level+1, found_caption, found_footnote
             )
-            final_parent_tag = further_parent_tag if further_parent_tag is not None else parent_tag
+            final_parent_tag = further_parent_tag if further_parent_tag is not None \
+                and (footnote is not None and len(footnote) > 0) else parent_tag
             return caption, footnote, final_parent_tag
 
     def _find_caption_and_footnote(self, table_tag: Tag):
@@ -92,6 +94,8 @@ class HtmlTableParser(object):
         for tag in tags:
             strTag = str(tag)
             table = convert_html_table_to_dataframe(strTag)
+            if table is None:
+                continue
             caption, footnote, parent_tag = self._find_caption_and_footnote(tag)
             parent_tag = parent_tag if parent_tag is not None else tag
             tables.append({
