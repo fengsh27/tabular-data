@@ -1,0 +1,9 @@
+,Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation type,Variation value,Interval type,Lower limit,High limit,P value
+0,Lorazepam, Lorazepam, blood, pediatric, , 11, Cmax, 45.3, ng/ml, median, , , range, 29.6, 66.3, 
+1,Lorazepam, Lorazepam, blood, pediatric, , 10, tmax, 0.42, h, median, , , range, 0.167, 1.0, 
+2,Lorazepam, Lorazepam, blood, pediatric, , 5, t1/2 (elimination), 36.9, h, mean, , , range, -1.5, 75.5, 
+3,Lorazepam, Lorazepam, blood, pediatric, , 5, AUC0-∞, 1843.6, ng/ml*h, mean, , , range, 296.7, 3390.5, 
+4,Lorazepam, Lorazepam, blood, pediatric, , 6, ka, 9.8, h^-1, mean, , , range, 0.033, 22.8, 
+5,Lorazepam, Lorazepam, blood, pediatric, , 6, t1/2 (absorption), 0.035, h, mean, , , range, 0.01, 0.071, 
+6,Lorazepam, Lorazepam, blood, pediatric, , 9, CL, 0.64, l/h, mean, 95% CI, , 95% CI, 0.36, 0.92, 
+7,Lorazepam, Lorazepam, blood, pediatric, , 9, Vss, 2.59, l/kg, mean, 95% CI, , 95% CI, 1.56, 3.62,

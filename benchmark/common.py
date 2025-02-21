@@ -150,7 +150,10 @@ def walk_benchmark_data_directory(dir_path: str) -> list[str, str, LLModelType]:
             if len(files) == 0:
                 return benchmark_type
             for f in files:
-                pmid, model = _get_pmid_and_llmodel(f)                
+                pmid, model = _get_pmid_and_llmodel(f)
+                if model == LLModelType.UNKNOWN:
+                    # unknown model type, ignore it
+                    continue             
                 pmids.append((pmid, path.join(r, f), model))
         
         return benchmark_type, pmids

@@ -37,7 +37,7 @@ The files in target directory should adhere to the following naming convention:
 12345678_gemini15.csv
 """
 
-target = os.environ.get("TARGET", "2025-02-20")
+target = os.environ.get("TARGET", "yichuan/0213_prompt_chain")
 baseline_dir = os.path.join("./benchmark/data/pk-summary", BASELINE)
 target_dir = os.path.join("./benchmark/data/pk-summary", target)
 result_dir = os.path.join("./benchmark/result/pk-summary", target)
@@ -65,7 +65,7 @@ def setup_module():
 
 @pytest.fixture
 def single_pmid():
-    return "35489632"
+    return "29943508"
 
 def test_single_pmid_gpt4o_benchmark(setup_module, single_pmid):
     result_dir = ensure_target_result_directory_existed(
@@ -90,6 +90,35 @@ def test_single_pmid_gpt4o_benchmark(setup_module, single_pmid):
         )        
         write_semantic_score(
             output_fn=result_path,
+            model=LLModelType.GPT4O.value,
+            pmid=id,
+            score=score,
+        )
+
+def test_single_pmid_gemini15_benchmark(setup_module, single_pmid):
+    result_dir = ensure_target_result_directory_existed(
+        target=target,
+        benchmark_type=BenchmarkType.PK_SUMMARY,
+    )
+    result_path = os.path.join(result_dir, "result.log")
+    for id in dataset:
+        if id != single_pmid:
+            continue
+        the_dict = dataset[id]
+        if not LLModelType.GEMINI15.value in the_dict:
+            # no gpt-4o table
+            continue
+        baseline = the_dict['baseline']
+        gpt4o = the_dict[LLModelType.GEMINI15.value]
+        df_baseline = pd.read_csv(baseline)
+        df_target = preprocess_table(gpt4o)
+        score = pk_summary_evaluate_dataframe(
+            df_baseline=df_baseline,
+            df_pk_summary=df_target,
+        )        
+        write_semantic_score(
+            output_fn=result_path,
+            model=LLModelType.GEMINI15.value,
             pmid=id,
             score=score,
         )
