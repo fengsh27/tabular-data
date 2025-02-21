@@ -1,0 +1,42 @@
+﻿,Drug name, Analyte, Specimen, Population, Pregnancy stage, Subject N, Parameter type, Value, Unit, Summary statistics, Variation type, Variation value, Interval type, Lower limit, High limit, P value
+0,Vancomycin, Vancomycin, , , , , volume of distribution, 3.62, L, Mean, SD, 1.94, , , , 
+1,Vancomycin, Vancomycin, , , , , volume of distribution, 0.7, L/kg, Mean, SD, 0.48, , , , 
+2,Vancomycin, Vancomycin, , , , , clearance, 0.749, L/h, Mean, SD, 0.454, , , , 
+3,Vancomycin, Vancomycin, , , , , clearance, 0.124, L/h/kg, Mean, SD, 0.052, , , , 
+4,Vancomycin, Vancomycin, , , , , elimination half-life, 4.3, h, Mean, SD, 2.6, , , , 
+5,Vancomycin, Vancomycin, , , , , volume of distribution, 3.5, L, Median, , , IQR, 2.64, 4.35, 
+6,Vancomycin, Vancomycin, , , , , volume of distribution, 0.5, L/kg, Median, , , IQR, 0.39, 0.94, 
+7,Vancomycin, Vancomycin, , , , , clearance, 0.737, L/h, Median, , , IQR, 0.414, 0.955, 
+8,Vancomycin, Vancomycin, , , , , clearance, 0.112, L/h/kg, Median, , , IQR, 0.095, 0.133, 
+9,Vancomycin, Vancomycin, , , , , elimination half-life, 3.8, h, Median, , , IQR, 2.5, 5.4, 
+10,Vancomycin, Vancomycin, , , , , volume of distribution, 0.31, L, Min–Max, , , range, 0.31, 8.88, 
+11,Vancomycin, Vancomycin, , , , , volume of distribution, 0.28, L/kg, Min–Max, , , range, 0.28, 2.31, 
+12,Vancomycin, Vancomycin, , , , , clearance, 0.02, L/h, Min–Max, , , range, 0.02, 1.82, 
+13,Vancomycin, Vancomycin, , , , , clearance, 0.025, L/h/kg, Min–Max, , , range, 0.025, 0.268, 
+14,Vancomycin, Vancomycin, , , , , elimination half-life, 1.5, h, Min–Max, , , range, 1.5, 11.3, 
+15,Vancomycin, Vancomycin, , , , , clearance, , , , CV%, 53, , , , 
+16,Vancomycin, Vancomycin, , , , , volume of distribution, , , , CV%, 69, , , , 
+17,Vancomycin, Vancomycin, , , , , clearance, , , , CV%, 61, , , , 
+18,Vancomycin, Vancomycin, , , , , clearance, , , , CV%, 42, , , , 
+19,Vancomycin, Vancomycin, , , , , elimination half-life, , , , CV%, 61, , , , 
+20,Vancomycin, Vancomycin, , , , , clearance, 0.6771, , r^2, , , , , , <.0001
+21,Vancomycin, Vancomycin, , , , , clearance, 0.1412, , Slope, , , 95% CI, 0.0958, 0.1867, 
+22,Vancomycin, Vancomycin, , , , , clearance, -0.0769, , Y-intercept, , , 95% CI, -0.3676, 0.2139, 
+23,Vancomycin, Vancomycin, , , , , clearance, 0.5447, , r^2, , , , , , <.0001
+24,Vancomycin, Vancomycin, , , , , clearance, 0.0317, , Slope, , , 95% CI, 0.0182, 0.0453, 
+25,Vancomycin, Vancomycin, , , , , clearance, -1.21, , Y-intercept, , , 95% CI, -2.056, 0.3629, 
+26,Vancomycin, Vancomycin, , , , , clearance, 0.662, , r^2, , , , , , <.0001
+27,Vancomycin, Vancomycin, , , , , clearance, 3.57, , Slope, , , 95% CI, 2.38, 4.759, 
+28,Vancomycin, Vancomycin, , , , , clearance, -0.3627, , Y-intercept, , , 95% CI, -0.7522, 0.0268, 
+29,Vancomycin, Vancomycin, , , , , clearance, 0.3822, , r^2, , , , , , .0022
+30,Vancomycin, Vancomycin, , , , , clearance, 0.0473, , Slope, , , 95% CI, 0.0192, 0.0753, 
+31,Vancomycin, Vancomycin, , , , , clearance, -0.9317, , Y-intercept, , , 95% CI, -1.941, 0.078, 
+32,Vancomycin, Vancomycin, , , , , clearance, 0.5168, , r^2, , , , , , .0002
+33,Vancomycin, Vancomycin, , , , , clearance, 0.0227, , Slope, , , 95% CI, 0.0125, 0.033, 
+34,Vancomycin, Vancomycin, , , , , clearance, 0.196, , Y-intercept, , , 95% CI, -0.0918, 0.4838, 
+35,Vancomycin, Vancomycin, , , , , clearance, 0.6036, , r^2, , , , , , <.0001
+36,Vancomycin, Vancomycin, , , , , clearance, 0.0196, , Slope, , , 95% CI, 0.0122, 0.0271, 
+37,Vancomycin, Vancomycin, , , , , clearance, -0.4307, , Y-intercept, , , 95% CI, -0.8951, 0.0338, 
+38,Vancomycin, Vancomycin, , , , , clearance, 0.5271, , r^2, , , , , , .0001
+39,Vancomycin, Vancomycin, , , , , clearance, 1.665, , Slope, , , 95% CI, 0.9294, 2.401, 
+40,Vancomycin, Vancomycin, , , , , clearance, 0.1498, , Y-intercept, , , 95% CI, -0.1506, 0.4502, 

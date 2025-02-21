@@ -1,9 +1,0 @@
-,Drug name,Specimen,Pregnancy Stage,Parameter type,Value,Unit,Summary Statistics,Interval type,Lower limit,Population,High limit,Subject N,Variation value,Variation type,P value
-Meropenem,Plasma,,Concentration at mid-dosing intervals,19.9,mg/L,geometric mean,95% CI,13.5,,29.5,28,,,,,0.2
-Meropenem,Plasma,,Concentration at end-dosing intervals,3.5,mg/L,geometric mean,95% CI,2,,6.1,28,,,,,0.04
-Meropenem,Plasma,,Concentration at mid-dosing intervals,14.8,mg/L,geometric mean,95% CI,11.4,,19.1,26,,,,,0.2
-Meropenem,Plasma,,Concentration at end-dosing intervals,1.6,mg/L,geometric mean,95% CI,1,,2.6,26,,,,,0.04
-Meropenem,Plasma,,Concentration at mid-dosing intervals,4.9,mg/L,geometric mean,95% CI,2.6,,9.2,11,,,,,0.14
-Meropenem,Plasma,,Concentration at end-dosing intervals,0.8,mg/L,geometric mean,95% CI,0.4,,1.6,11,,,,,0.85
-Meropenem,Plasma,,Concentration at mid-dosing intervals,1.9,mg/L,geometric mean,95% CI,0.4,,9.6,7,,,,,0.14
-Meropenem,Plasma,,Concentration at end-dosing intervals,0.9,mg/L,geometric mean,95% CI,0.2,,4.2,7,,,,,0.85

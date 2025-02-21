@@ -1,15 +1,12 @@
 
 import os
-from openai import AzureOpenAI
-import google.generativeai as genai
-from google.generativeai import GenerativeModel
-import anthropic
 import pytest
 from dotenv import load_dotenv
 load_dotenv()
 
 class ClaudeClient:
     def __init__(self):
+        import anthropic
         self.client = anthropic.Anthropic(api_key=os.environ.get("CLAUDE_API_KEY"))
         
     def create(self, system_prompts: str, user_prompts: str):
@@ -26,6 +23,7 @@ class ClaudeClient:
     
 class GptClient:
     def __init__(self):
+        from openai import AzureOpenAI
         self.client = AzureOpenAI(
             azure_endpoint=os.environ.get("AZURE_OPENAI_4O_ENDPOINT", None),
             api_key=os.environ.get("OPENAI_4O_API_KEY", None),
@@ -51,6 +49,7 @@ class GptClient:
 
 class GeminiClient:
     def __init__(self):
+        import google.generativeai as genai
         genai.configure(api_key=os.environ.get("GEMINI_15_API_KEY", None))
         self.client =genai.GenerativeModel(os.environ.get("GEMINI_15_MODEL", "gemini-pro"))
 

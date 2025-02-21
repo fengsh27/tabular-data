@@ -1,0 +1,31 @@
+﻿,Drug name, Analyte, Specimen, Population, Pregnancy stage, Subject N, Parameter type, Value, Unit, Summary statistics, Variation type, Variation value, Interval type, Lower limit, High limit, P value
+0,levetiracetam, levetiracetam, , , , , Cmax,24.8, µg/mL, arithmetic mean, SD, 8.3, , , , 
+1,levetiracetam, levetiracetam, , , , , Cmax,19.19, µg/mL, arithmetic mean, SD, 4.12, , , , 0.07
+2,levetiracetam, levetiracetam, , , , , Cmax,57.1, µg/mL, arithmetic mean, SD, 14.9, , , , 0.001
+3,levetiracetam, levetiracetam, , , , , Cmax,35.12, µg/mL, arithmetic mean, SD, 10.54, , , , 0.001
+4,levetiracetam, levetiracetam, , , , , Cmax,73.2, µg/mL, arithmetic mean, SD, 19.2, , , , 
+5,levetiracetam, levetiracetam, , , , , Cmax,36.11, µg/mL, median, , , range, 27.58, 44.64, 
+6,levetiracetam, levetiracetam, , , , , AUC0–12,145, h*µg/mL, arithmetic mean, SD, 44, , , , 
+7,levetiracetam, levetiracetam, , , , , AUC0–12,167, h*µg/mL, arithmetic mean, SD, 45.6, , , , 0.26
+8,levetiracetam, levetiracetam, , , , , AUC0–12,322, h*µg/mL, arithmetic mean, SD, 71, , , , 0.88
+9,levetiracetam, levetiracetam, , , , , AUC0–12,316.5, h*µg/mL, arithmetic mean, SD, 108.4, , , , 0.88
+10,levetiracetam, levetiracetam, , , , , AUC0–12,433, h*µg/mL, arithmetic mean, SD, 94, , , , 
+11,levetiracetam, levetiracetam, , , , , AUC0–12,290.9, h*µg/mL, median, , , range, 176.14, 405.59, 
+12,levetiracetam, levetiracetam, , , , , Ctrough,8.4, µg/mL, arithmetic mean, SD, 3.8, , , , 
+13,levetiracetam, levetiracetam, , , , , Ctrough,9.99, µg/mL, arithmetic mean, SD, 3.86, , , , 0.34
+14,levetiracetam, levetiracetam, , , , , Ctrough,15.6, µg/mL, arithmetic mean, SD, 5.3, , , , 0.22
+15,levetiracetam, levetiracetam, , , , , Ctrough,19.25, µg/mL, arithmetic mean, SD, 8.48, , , , 0.22
+16,levetiracetam, levetiracetam, , , , , Ctrough,20.6, µg/mL, arithmetic mean, SD, 5.8, , , , 
+17,levetiracetam, levetiracetam, , , , , Ctrough,13.03, µg/mL, median, , , range, 2.98, 23.07, 
+18,levetiracetam, levetiracetam, , , , , Tmax,0.5, h, median, , , range, 0.25, 3.0, 
+19,levetiracetam, levetiracetam, , , , , Tmax,1.5, h, median, , , range, 1.5, 2.5, 
+20,levetiracetam, levetiracetam, , , , , Tmax,0.5, h, median, , , range, 0.5, 3.0, 
+21,levetiracetam, levetiracetam, , , , , Tmax,2.5, h, median, , , range, 2.0, 3.3, 
+22,levetiracetam, levetiracetam, , , , , Tmax,0.5, h, median, , , range, 0.5, 3.0, 
+23,levetiracetam, levetiracetam, , , , , Tmax,1.5, h, median, , , range, 1.5, 1.5, 
+24,levetiracetam, levetiracetam, , , , 14, AUC0–12,220, h*µg/mL, median, , , range, 157.5, 355.4, 0.90
+25,levetiracetam, levetiracetam, , , , 5, AUC0–12,213.8, h*µg/mL, median, , , range, 154.0, 348.8, 0.90
+26,levetiracetam, levetiracetam, , , , 14, Cmax,23.8, µg/mL, median, , , range, 18.8, 41.3, 0.84
+27,levetiracetam, levetiracetam, , , , 5, Cmax,26.4, µg/mL, median, , , range, 19.3, 34.2, 0.84
+28,levetiracetam, levetiracetam, , , , 14, Tmax,1.5, h, median, , , range, 1.5, 2.5, 0.46
+29,levetiracetam, levetiracetam, , , , 5, Tmax,2.5, h, median, , , range, 1.5, 2.9, 0.46
