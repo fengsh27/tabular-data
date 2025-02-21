@@ -2,7 +2,7 @@ import pytest
 import pandas as pd
 
 from benchmark.evaluate import TablesEvaluator
-from benchmark.test_benchmark_with_semantic import (
+from benchmark.pk_summary_benchmark_with_semantic import (
     PK_ANCHOR_COLUMNS, 
     PK_RATING_COLUMNS
 )

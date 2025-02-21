@@ -2,7 +2,7 @@ version: "3.9"
 services:
   tabular-data:
     container_name: tabular-data
-    image: frankfeng78/tabula-data:0.1.41
+    image: frankfeng78/tabula-data:0.1.43
     ports:
       - 9092:8501
     volumes:
@@ -20,7 +20,7 @@ services:
  
   nettoolkit:
     container_name: nettoolkit
-    image: frankfeng78/nettoolkit:0.1.5
+    image: frankfeng78/nettoolkit:0.1.7
     ports:
       - 3000:3000
     volumes:

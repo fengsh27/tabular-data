@@ -1,9 +1,0 @@
-,Drug name,Specimen,Pregnancy Stage,Parameter type,Value,Unit,Summary Statistics,Interval type,Lower limit,Population,High limit,Subject N,Variation value,Variation type,P value
-0,Meropenem,plasma,,unbound plasma meropenem concentrations at mid-dosing intervals (Cmid),19.9,mg/L,geometric mean,95% CI,13.5,adults,29.5,28,,,0.2
-1,Meropenem,plasma,,unbound plasma meropenem concentrations at mid-dosing intervals (Cmid),14.8,mg/L,geometric mean,95% CI,11.4,adults,19.1,26,,,0.2
-2,Meropenem,plasma,,unbound plasma meropenem concentrations at end-dosing intervals (Ctrough),3.5,mg/L,geometric mean,95% CI,2,adults,6.1,28,,,0.04
-3,Meropenem,plasma,,unbound plasma meropenem concentrations at end-dosing intervals (Ctrough),1.6,mg/L,geometric mean,95% CI,1,adults,2.6,26,,,0.04
-4,Meropenem,plasma,,unbound plasma meropenem concentrations at mid-dosing intervals (Cmid),4.9,mg/L,geometric mean,95% CI,2.6,adults,9.2,11,,,0.14
-5,Meropenem,plasma,,unbound plasma meropenem concentrations at mid-dosing intervals (Cmid),1.9,mg/L,geometric mean,95% CI,0.4,adults,9.6,7,,,0.14
-6,Meropenem,plasma,,unbound plasma meropenem concentrations at end-dosing intervals (Ctrough),0.8,mg/L,geometric mean,95% CI,0.4,adults,1.6,11,,,0.85
-7,Meropenem,plasma,,unbound plasma meropenem concentrations at end-dosing intervals (Ctrough),0.9,mg/L,geometric mean,95% CI,0.2,adults,4.2,7,,,0.85
