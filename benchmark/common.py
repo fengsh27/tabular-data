@@ -163,12 +163,12 @@ def ensure_target_result_directory_existed(target: str, benchmark_type: Benchmar
     if os.path.isdir(dir_path):
         return dir_path
     try:
-        os.mkdir(dir_path)
+        os.makedirs(dir_path, exist_ok=True)
         return dir_path
     except Exception as e:
         logger.error(e)
         raise e
 
-def write_semantic_score(output_fn: str, pmid: str, score: int):
+def write_semantic_score(output_fn: str, model: str, pmid: str, score: int):
     with open(output_fn, "a+") as fobj:
-        fobj.write(f"{pmid}, {score}\n")
+        fobj.write(f"{model}, {pmid}, {score}\n")
