@@ -5,6 +5,7 @@ from string import Template
 
 from .utils import generate_columns_definition
 from .common import ResponderWithRetries
+from .constant import BenchmarkType
 
 def output_msg(msg: str):
     with open("./benchmark-result.log", "a+") as fobj:
@@ -72,7 +73,7 @@ def test_gemini_similarity(client, pmid):
         "table_baseline": table_baseline,
         "table_generated": table_gpt4o,
     })
-    cols_definition = generate_columns_definition("pe")
+    cols_definition = generate_columns_definition(BenchmarkType.PE)
     system_prompts = system_prompts_template.substitute({
         "columns_definition": cols_definition
     })
@@ -103,7 +104,7 @@ def test_gpt_similarity(client, pmid):
         "table_baseline": table_baseline,
         "table_generated": table_gpt4o,
     })
-    cols_definition = generate_columns_definition("pe")
+    cols_definition = generate_columns_definition(BenchmarkType.PE)
     system_prompts = system_prompts_template.substitute({
         "columns_definition": cols_definition
     })

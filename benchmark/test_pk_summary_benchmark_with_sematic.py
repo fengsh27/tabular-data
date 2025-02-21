@@ -9,6 +9,7 @@ from benchmark.common import (
     walk_benchmark_data_directory,
     ensure_target_result_directory_existed,
     write_semantic_score,
+    prepare_dataset_for_benchmark,
 )
 from benchmark.constant import (
     BASELINE,
@@ -41,33 +42,22 @@ baseline_dir = os.path.join("./benchmark/data/pk-summary", BASELINE)
 target_dir = os.path.join("./benchmark/data/pk-summary", target)
 result_dir = os.path.join("./benchmark/result/pk-summary", target)
 
-dataset = {}
-
 @pytest.fixture(scope="module")
-def setup_module():
-    baseline_type, baseline_pmids = walk_benchmark_data_directory(baseline_dir)
-    assert baseline_type == BenchmarkType.PK_SUMMARY_BASELINE
-    target_type, target_pmids = walk_benchmark_data_directory(target_dir)
-    assert target_type == BenchmarkType.PK_SUMMARY
+def prepared_dataset():
+    dataset = prepare_dataset_for_benchmark(
+        baseline_dir=baseline_dir,
+        target_dir=target_dir,
+        benchmark_type=BenchmarkType.PK_SUMMARY,
+    )
+    return dataset
 
-    for pmid in baseline_pmids:
-        id, fn, _ = pmid
-        dataset[id] = {"baseline": fn}
-    for pmid in target_pmids:
-        id, fn, model = pmid
-        if model == LLModelType.UNKNOWN:
-            continue
-        if not id in dataset:
-            logger.error(f"no baseline for pmid {id}")
-            continue
-        dataset[id][model.value] = fn
-
-def test_gpt4o_benchmark(setup_module):
+def test_gpt4o_benchmark(prepared_dataset):
     result_dir = ensure_target_result_directory_existed(
         target=target,
         benchmark_type=BenchmarkType.PK_SUMMARY,
     )
     result_path = os.path.join(result_dir, "result.log")
+    dataset = prepared_dataset
     for id in dataset:
         the_dict = dataset[id]
         if not LLModelType.GPT4O.value in the_dict:
@@ -88,12 +78,13 @@ def test_gpt4o_benchmark(setup_module):
             score=score,
         )
 
-def test_gemini_benchmark(setup_module):
+def test_gemini_benchmark(prepared_dataset):
     result_dir = ensure_target_result_directory_existed(
         target=target,
         benchmark_type=BenchmarkType.PK_SUMMARY,
     )
     result_path = os.path.join(result_dir, "result.log")
+    dataset = prepared_dataset
     for id in dataset:
         the_dict = dataset[id]
         if not LLModelType.GEMINI15.value in the_dict:

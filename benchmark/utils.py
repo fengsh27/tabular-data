@@ -1,8 +1,13 @@
 import json
+from typing import Union
 
-def generate_columns_definition(pk_or_pe: str) -> str:
-    assert pk_or_pe.lower() == 'pk' or pk_or_pe.lower() == 'pe'
-    k = pk_or_pe.lower()
+from .constant import BenchmarkType
+
+def generate_columns_definition(
+    pk_or_pe: Union[BenchmarkType.PE, BenchmarkType.PK_SUMMARY]
+) -> str:
+    assert pk_or_pe == BenchmarkType.PE or pk_or_pe == BenchmarkType.PK_SUMMARY
+    k = "pk" if pk_or_pe == BenchmarkType.PK_SUMMARY else "pe"
     fn = f"./prompts/{k}_prompts.json"
     with open(fn, "r") as fobj:
         json_str = fobj.read()

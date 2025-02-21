@@ -24,8 +24,6 @@ from extractor.constants import (
 from extractor.stampers import ArticleStamper, Stamper
 from extractor.article_retriever import ExtendArticleRetriever, ArticleRetriever
 from extractor.request_openai import (
-    request_to_chatgpt_35,
-    request_to_chatgpt_40,
     request_to_chatgpt_4o,
 )
 from extractor.utils import (
