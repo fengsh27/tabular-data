@@ -1,15 +1,19 @@
 import pytest
-
+import os
 from datetime import datetime
 from string import Template
 
 from .utils import generate_columns_definition
-from .common import ResponderWithRetries
-from .constant import BenchmarkType
-
-def output_msg(msg: str):
-    with open("./benchmark-result.log", "a+") as fobj:
-        fobj.write(f"{datetime.now().isoformat()}: \n{msg}\n")
+from .common import (
+    ensure_target_result_directory_existed, 
+    prepare_dataset_for_benchmark,
+    write_LLM_score,
+)
+from .constant import (
+    BASELINE,
+    BenchmarkType,
+    LLModelType
+)
 
 system_prompts_template = Template("""
 Please act as a biomedial expert to assess the similarities and differences between two biomedical tables, one is baseline table, the other is extracted table. 
@@ -38,8 +42,6 @@ Note:
 7. Ignore the lowercase and uppercase letters
 """)
 
-
-
 @pytest.mark.skip("just for test the feasible of claude api")
 def test_claude(client):
     msg, useage = client.create(
@@ -50,68 +52,81 @@ def test_claude(client):
     print(msg)
     assert msg is not None
 
-@pytest.mark.skip("temporary skip")
-@pytest.mark.parametrize("pmid", [
-    "15930210",
-    "18782787",
-    "30308427",
-    "33864754",
-    "34024233",
-    "34083820",
-    "34741059",
-    "35296792",
-    "35997979",
-    "36396314",
-])
-def test_gemini_similarity(client, pmid):
-    with open(f"./benchmark/pe/{pmid}_gemini15.csv", "r") as fobj:
-        table_gpt4o = fobj.read()
-    with open(f"./benchmark/pe/{pmid}_baseline.csv", "r") as fobj:
-        table_baseline = fobj.read()
-    
-    user_message = user_message = table_prompt_template.substitute({
-        "table_baseline": table_baseline,
-        "table_generated": table_gpt4o,
-    })
-    cols_definition = generate_columns_definition(BenchmarkType.PE)
-    system_prompts = system_prompts_template.substitute({
-        "columns_definition": cols_definition
-    })
-    msg, usage = client.create(system_prompts,user_message)
-    output_msg(f"pmid: {pmid}, gemini")
-    output_msg(msg)
-    assert msg is not None
 
-@pytest.mark.parametrize("pmid", [
-    "15930210",
-    "18782787",
-    "30308427",
-    "33864754", #
-    "34024233",
-    "34083820",
-    "34741059",
-    "35296792",
-    "35997979",
-    "36396314",
-])
-def test_gpt_similarity(client, pmid):
-    with open(f"./benchmark/pe/{pmid}_gpt4o.csv", "r") as fobj:
-        table_gpt4o = fobj.read()
-    with open(f"./benchmark/pe/{pmid}_baseline.csv", "r") as fobj:
-        table_baseline = fobj.read()
-    
-    user_message = table_prompt_template.substitute({
-        "table_baseline": table_baseline,
-        "table_generated": table_gpt4o,
-    })
-    cols_definition = generate_columns_definition(BenchmarkType.PE)
-    system_prompts = system_prompts_template.substitute({
-        "columns_definition": cols_definition
-    })
-    
-    responder = ResponderWithRetries(lambda args: client.create(args[0], args[1]))
-    msg, usage = responder.respond([system_prompts, user_message])
-    output_msg("\n")
-    output_msg(f"pmid: {pmid}, gpt")
-    output_msg(msg)
-    assert msg is not None
+target = os.environ.get("TARGET", "2024-08-12")
+baseline_dir = os.path.join("./benchmark/data/pe", BASELINE)
+target_dir = os.path.join("./benchmark/data/pe", target)
+result_dir = os.path.join("./benchmark/result/pe", target)
+
+@pytest.fixture(scope="module")
+def prepared_dataset():
+    return prepare_dataset_for_benchmark(
+        baseline_dir=baseline_dir,
+        target_dir=target_dir,
+        benchmark_type=BenchmarkType.PE,
+    )
+
+@pytest.fixture(scope="module")
+def ensured_result_path():
+    result_dir = ensure_target_result_directory_existed(
+        target=target,
+        benchmark_type=BenchmarkType.PE,
+    )
+    return os.path.join(result_dir, "result.log")
+
+def test_gpt4o_benchmark(client, prepared_dataset, ensured_result_path):
+    for id in prepared_dataset:
+        the_dict = prepared_dataset[id]
+        baseline = the_dict["baseline"]
+        if not LLModelType.GPT4O.value in the_dict:
+            continue
+        gpt4o = the_dict[LLModelType.GPT4O.value]
+        with open(baseline, "r") as fobj:
+            table_baseline = fobj.read()
+        with open(gpt4o, "r") as fobj:
+            table_gpt4o = fobj.read()
+        user_message = user_message = table_prompt_template.substitute({
+            "table_baseline": table_baseline,
+            "table_generated": table_gpt4o,
+        })
+        cols_definition = generate_columns_definition(BenchmarkType.PE)
+        system_prompts = system_prompts_template.substitute({
+            "columns_definition": cols_definition
+        })
+        msg, usage = client.create(system_prompts,user_message)
+        write_LLM_score(
+            output_fn=ensured_result_path,
+            model=LLModelType.GPT4O.value,
+            pmid=id,
+            score=msg,
+            token_usage = usage,
+        )
+
+def test_gemini15_benchmark(client, prepared_dataset, ensured_result_path):
+    for id in prepared_dataset:
+        the_dict = prepared_dataset[id]
+        baseline = the_dict["baseline"]
+        if not LLModelType.GEMINI15.value in the_dict:
+            continue
+        gemini15 = the_dict[LLModelType.GEMINI15.value]
+        with open(baseline, "r") as fobj:
+            table_baseline = fobj.read()
+        with open(gemini15, "r") as fobj:
+            table_gemini15 = fobj.read()
+        user_message = user_message = table_prompt_template.substitute({
+            "table_baseline": table_baseline,
+            "table_generated": table_gemini15,
+        })
+        cols_definition = generate_columns_definition(BenchmarkType.PE)
+        system_prompts = system_prompts_template.substitute({
+            "columns_definition": cols_definition
+        })
+        msg, usage = client.create(system_prompts,user_message)
+        write_LLM_score(
+            output_fn=ensured_result_path,
+            model=LLModelType.GEMINI15.value,
+            pmid=id,
+            score=msg,
+            token_usage = usage,
+        )
+

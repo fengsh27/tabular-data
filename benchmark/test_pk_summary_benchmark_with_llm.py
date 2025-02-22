@@ -15,10 +15,6 @@ from .constant import (
     LLModelType
 )
 
-def output_msg(msg: str):
-    with open("./benchmark-result.log", "a+") as fobj:
-        fobj.write(f"{datetime.now().isoformat()}: \n{msg}\n")
-
 system_prompts_template = Template("""
 Please act as a biomedial expert to assess the similarities and differences between two biomedical tables, one is baseline table, the other is extracted table. 
 Provide a similarity rating on a scale of 0 to 100, where 100 indicates identical tables and 0 indicates completely different tables.
