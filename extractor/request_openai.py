@@ -39,6 +39,12 @@ def get_client_and_model():
             api_version=os.environ.get("OPENAI_4O_API_VERSION", None),
             azure_deployment=os.environ.get("OPENAI_4O_DEPLOYMENT_NAME", None),
             model=os.environ.get("OPENAI_4O_MODEL", None),
+            max_retries=5,
+            temperature=0.0,
+            max_tokens=20*1024,
+            top_p=0.95,
+            frequency_penalty=0,
+            presence_penalty=0,
         )
         model_4o = os.environ.get("OPENAI_4O_DEPLOYMENT_NAME", None)
         return (client_4o, model_4o, None, None, None, None)
@@ -56,49 +62,6 @@ def get_client_and_model():
         return (client_4o, model_4o, None, None, None, None)
 
 
-
-def request_to_chatgpt_35(prompts: List[Any], question: str):
-    prompts.append({"role": "user", "content": question})
-    try:
-        _, _, client_35, model_35, _, _ = get_client_and_model()
-        res = client_35.chat.completions.create(
-            model=model_35, 
-            messages=prompts,
-            temperature=0,
-            # max_tokens=800,
-            top_p=0.95,
-            frequency_penalty=0,
-            presence_penalty=0,
-            stop=None,
-            timeout=600,
-        )
-        usage = res.usage.total_tokens
-        return (True, res.choices[0].message.content, usage, False)
-    except Exception as e:
-        logger.error(e)
-        return (False, str(e), None, False)
-
-def request_to_chatgpt_40(prompts: List[Any], question: str):
-    prompts.append({"role": "user", "content": question})
-    try:
-        _, _, _, _, client_40, model_40 = get_client_and_model()
-        res = client_40.chat.completions.create(
-            model=model_40,
-            messages=prompts,
-            temperature=0,
-            max_tokens=20000,
-            top_p=0.95,
-            frequency_penalty=0,
-            presence_penalty=0,
-            stop=None,
-            timeout=600, # in seconds, 10 mins
-        )
-        usage = res.usage.total_tokens
-        return (True, res.choices[0].message.content, usage, False)
-    except Exception as e:
-        logger.error(e)
-        return (False, str(e), None, False)
-    
 def request_to_chatgpt_4o(prompts: List[Any], question: str):
     prompts.append({"role": "user", "content": question})
     try:

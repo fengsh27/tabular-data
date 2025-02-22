@@ -1,13 +1,26 @@
-from typing import Any, Callable, List, Optional
+from typing import Any, Callable, List, Optional, Union
 from datetime import datetime
 import os
 from os import path
 import logging
+import pandas as pd
 
-from benchmark.constant import (
+from .constant import (
     BASELINE,
     BenchmarkType,
     LLModelType,
+)
+from .pk_preprocess import (
+    preprocess_table as pk_preprocess_table,
+)
+from .pe_preprocess import (
+    preprocess_table as pe_proprocess_table,
+)
+from .pk_summary_benchmark_with_semantic import (
+    pk_summary_evaluate_dataframe
+)
+from .pe_benchmark_with_semantic import (
+    pe_summary_evaluate_dataframe
 )
 
 logger = logging.getLogger(__name__)
@@ -108,7 +121,7 @@ def _get_benchmark_type(dir_path: str) -> BenchmarkType | None:
     return BenchmarkType.UNKNOWN
 
 
-def walk_benchmark_data_directory(dir_path: str) -> list[str, str, LLModelType]:
+def walk_benchmark_data_directory(dir_path: str) -> tuple[BenchmarkType, list[str, str, LLModelType]]:
     """
     Walks through the directory `dir_path` to identify all PMID table files (.csv) and their associated benchmark type.
 
@@ -161,6 +174,49 @@ def walk_benchmark_data_directory(dir_path: str) -> list[str, str, LLModelType]:
         print(e)
         raise e
 
+def prepare_dataset_for_benchmark(
+    baseline_dir: str, 
+    target_dir: str, 
+    benchmark_type: Union[BenchmarkType.PK_SUMMARY, BenchmarkType.PE],
+):
+    """
+    This function is to prepare dataset for benchmark. It will walk through 
+    `{baseline_dir}` and `{target_dir}` to populate returned {dataset}:
+    {
+        `{pmid}`: {
+            "baseline": `{pmid_baseline_path}`, 
+            "gpt4o": `{pmid_gpt4o_path}`,
+            "gemini15": `{pmid_gemini15_path}`,
+        },
+        ...
+    }
+
+    Args:
+    baseline_dir str: baseline directory path
+    target_dir str: target directory path
+    benchmark_type BenchmarkType: benchmark type (pk-summary or pe)
+    """
+    benchmark_type = benchmark_type or BenchmarkType.PK_SUMMARY
+    dataset = {}
+    baseline_type, baseline_pmids = walk_benchmark_data_directory(baseline_dir)
+    assert baseline_type.value == benchmark_type.value + "-" + BASELINE
+    target_type, target_pmids = walk_benchmark_data_directory(target_dir)
+    assert target_type == benchmark_type
+
+    for pmid in baseline_pmids:
+        id, fn, _ = pmid
+        dataset[id] = {"baseline": fn}
+    for pmid in target_pmids:
+        id, fn, model = pmid
+        if model == LLModelType.UNKNOWN:
+            continue
+        if not id in dataset:
+            logger.error(f"no baseline for pmid {id}")
+            continue
+        dataset[id][model.value] = fn
+    
+    return dataset
+
 def ensure_target_result_directory_existed(target: str, benchmark_type: BenchmarkType):
     dir_path = path.join("./benchmark/result", benchmark_type.value, target)
     if os.path.isdir(dir_path):
@@ -175,3 +231,46 @@ def ensure_target_result_directory_existed(target: str, benchmark_type: Benchmar
 def write_semantic_score(output_fn: str, model: str, pmid: str, score: int):
     with open(output_fn, "a+") as fobj:
         fobj.write(f"{model}, {pmid}, {score}\n")
+
+def write_LLM_score(
+    output_fn: str,
+    model: str,
+    pmid: str,
+    score: str,
+    token_usage: str,
+):
+    with open(output_fn, "a+") as fobj:
+        fobj.write("\n" + "=" * 81 + "\n")
+        fobj.write(f"pmid: {pmid}, model: {model}\n")
+        fobj.write(score)
+        fobj.write("\n")
+        fobj.write(f"token usage: {token_usage}\n")
+
+
+def run_semantic_benchmark(
+    dataset: dict,
+    benchmark_type: Union[BenchmarkType.PE, BenchmarkType.PK_SUMMARY],
+    model: Union[LLModelType.GEMINI15, LLModelType.GPT4O],
+    result_file: str,
+):
+    preprocess_table, evaluate_dataframe = (pk_preprocess_table, pk_summary_evaluate_dataframe) \
+        if benchmark_type == BenchmarkType.PK_SUMMARY \
+        else (pe_proprocess_table, pe_summary_evaluate_dataframe)
+    for id in dataset:
+        the_dict = dataset[id]
+        if not model.value in the_dict:
+            continue
+        baseline = the_dict[BASELINE]
+        target = the_dict[model.value]
+        df_baseline = pd.read_csv(baseline)
+        df_target = preprocess_table(target)
+        score = evaluate_dataframe(
+            df_baseline=df_baseline,
+            df_pk_summary=df_target,
+        )        
+        write_semantic_score(
+            output_fn=result_file,
+            model=model.value,
+            pmid=id,
+            score=score,
+        )

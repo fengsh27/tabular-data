@@ -23,29 +23,35 @@ class ClaudeClient:
     
 class GptClient:
     def __init__(self):
-        from openai import AzureOpenAI
-        self.client = AzureOpenAI(
+        # from openai import AzureOpenAI
+        from langchain_openai import AzureChatOpenAI
+        self.client = AzureChatOpenAI(
             azure_endpoint=os.environ.get("AZURE_OPENAI_4O_ENDPOINT", None),
             api_key=os.environ.get("OPENAI_4O_API_KEY", None),
             api_version=os.environ.get("OPENAI_4O_API_VERSION", None),
-        )
-        self.model_4o = os.environ.get("OPENAI_4O_DEPLOYMENT_NAME", None)
-    def create(self, system_prompts: str, user_prompts: str):
-        prompts = [
-            {"role": "system", "content": system_prompts},
-            {"role": "user", "content": user_prompts},
-        ]
-        res = self.client.chat.completions.create(
-            model=self.model_4o,
+            azure_deployment=os.environ.get("OPENAI_4O_DEPLOYMENT_NAME", None),
+            model=os.environ.get("OPENAI_4O_MODEL", None),
+
             temperature=0.0,
             max_tokens=4096,
             top_p=0.95,
             frequency_penalty=0,
             presence_penalty=0,
             stop=None,
-            messages=prompts,
         )
-        return (res.choices[0].message.content, res.usage.total_tokens)
+        
+    def create(self, system_prompts: str, user_prompts: str):
+        prompts = [
+            {"role": "system", "content": system_prompts},
+            {"role": "user", "content": user_prompts},
+        ]
+        response = self.client.generate(
+            messages=[prompts],
+        )
+        msg = response.generations[0][0].text
+        token_usage = response.llm_output.get("token_usage")
+        total_usage = token_usage.get("total_tokens", 0)
+        return (msg, total_usage)
 
 class GeminiClient:
     def __init__(self):
@@ -74,5 +80,5 @@ class GeminiClient:
 
 @pytest.fixture(scope="module")
 def client():    
-    return ClaudeClient() # GptClient, GeminiClient and ClaudeClient are available
+    return GptClient() # GptClient, GeminiClient and ClaudeClient are available
 

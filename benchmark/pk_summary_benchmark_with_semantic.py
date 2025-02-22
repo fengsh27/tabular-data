@@ -33,24 +33,6 @@ PK_ANCHOR_COLUMNS = [
     HIGH_LIMIT,
     P_VALUE,
 ]
-PE_RATING_COLUMNS = [
-    # "Characteristic/risk factor",
-    "Exposure",
-    "Outcomes",
-    "Statistic",
-    "Value",
-    "Unit",
-    "Variability value",
-    LOWER_LIMIT,
-    HIGH_LIMIT,
-]
-PE_ANCHOR_COLUMNS = [
-    VALUE,
-    LOWER_LIMIT,
-    HIGH_LIMIT,
-    P_VALUE,
-    "Variability value",
-]
 
 def pk_summary_evaluate_dataframe(df_baseline: pd.DataFrame, df_pk_summary: pd.DataFrame) -> int:
     evaluator = TablesEvaluator(
