@@ -2,10 +2,14 @@
 import os
 import pytest
 from dotenv import load_dotenv
+
+from .common import LLMClient
+
 load_dotenv()
 
-class ClaudeClient:
+class ClaudeClient(LLMClient):    
     def __init__(self):
+        super().__init__()
         import anthropic
         self.client = anthropic.Anthropic(api_key=os.environ.get("CLAUDE_API_KEY"))
         
@@ -21,8 +25,9 @@ class ClaudeClient:
         )
         return (res.content[0].text, 0)
     
-class GptClient:
+class GptClient(LLMClient):
     def __init__(self):
+        super().__init__()
         # from openai import AzureOpenAI
         from langchain_openai import AzureChatOpenAI
         self.client = AzureChatOpenAI(
@@ -53,8 +58,9 @@ class GptClient:
         total_usage = token_usage.get("total_tokens", 0)
         return (msg, total_usage)
 
-class GeminiClient:
+class GeminiClient(LLMClient):
     def __init__(self):
+        super().__init__()
         import google.generativeai as genai
         genai.configure(api_key=os.environ.get("GEMINI_15_API_KEY", None))
         self.client =genai.GenerativeModel(os.environ.get("GEMINI_15_MODEL", "gemini-pro"))

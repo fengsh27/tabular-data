@@ -6,9 +6,11 @@ import pandas as pd
 import logging
 
 from benchmark.common import (
-    run_semantic_benchmark,
     ensure_target_result_directory_existed,
     prepare_dataset_for_benchmark,
+)
+from benchmark.comm_semantic import (
+    run_semantic_benchmark,
 )
 from benchmark.constant import (
     BASELINE,
