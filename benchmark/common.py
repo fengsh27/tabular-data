@@ -1,3 +1,4 @@
+from abc import ABC, abstractmethod
 from typing import Any, Callable, List, Optional, Union
 from datetime import datetime
 import os
@@ -10,18 +11,8 @@ from .constant import (
     BenchmarkType,
     LLModelType,
 )
-from .pk_preprocess import (
-    preprocess_table as pk_preprocess_table,
-)
-from .pe_preprocess import (
-    preprocess_table as pe_proprocess_table,
-)
-from .pk_summary_benchmark_with_semantic import (
-    pk_summary_evaluate_dataframe
-)
-from .pe_benchmark_with_semantic import (
-    pe_summary_evaluate_dataframe
-)
+
+
 
 logger = logging.getLogger(__name__)
 
@@ -55,6 +46,14 @@ class ResponderWithRetries:
                 print(str(e))
         return response
     
+class LLMClient(ABC):
+    def __init__(self):
+        pass
+
+    @abstractmethod
+    def create(self, systemp_prompts: str, user_prompts: str):
+        """query"""
+
 def _get_pmid_and_llmodel(fn: str) -> tuple[str, LLModelType | None] | None:
     """
     This function is to identify the pmid and llm model based on file name, which must adhere to the following naming convention:
@@ -228,49 +227,5 @@ def ensure_target_result_directory_existed(target: str, benchmark_type: Benchmar
         logger.error(e)
         raise e
 
-def write_semantic_score(output_fn: str, model: str, pmid: str, score: int):
-    with open(output_fn, "a+") as fobj:
-        fobj.write(f"{model}, {pmid}, {score}\n")
-
-def write_LLM_score(
-    output_fn: str,
-    model: str,
-    pmid: str,
-    score: str,
-    token_usage: str,
-):
-    with open(output_fn, "a+") as fobj:
-        fobj.write("\n" + "=" * 81 + "\n")
-        fobj.write(f"pmid: {pmid}, model: {model}\n")
-        fobj.write(score)
-        fobj.write("\n")
-        fobj.write(f"token usage: {token_usage}\n")
 
 
-def run_semantic_benchmark(
-    dataset: dict,
-    benchmark_type: Union[BenchmarkType.PE, BenchmarkType.PK_SUMMARY],
-    model: Union[LLModelType.GEMINI15, LLModelType.GPT4O],
-    result_file: str,
-):
-    preprocess_table, evaluate_dataframe = (pk_preprocess_table, pk_summary_evaluate_dataframe) \
-        if benchmark_type == BenchmarkType.PK_SUMMARY \
-        else (pe_proprocess_table, pe_summary_evaluate_dataframe)
-    for id in dataset:
-        the_dict = dataset[id]
-        if not model.value in the_dict:
-            continue
-        baseline = the_dict[BASELINE]
-        target = the_dict[model.value]
-        df_baseline = pd.read_csv(baseline)
-        df_target = preprocess_table(target)
-        score = evaluate_dataframe(
-            df_baseline=df_baseline,
-            df_pk_summary=df_target,
-        )        
-        write_semantic_score(
-            output_fn=result_file,
-            model=model.value,
-            pmid=id,
-            score=score,
-        )
