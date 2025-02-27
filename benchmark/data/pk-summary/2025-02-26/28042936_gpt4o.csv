@@ -1,0 +1,23 @@
+,Drug name, Analyte, Specimen, Population, Pregnancy stage, Subject N, Parameter type, Value, Unit, Summary statistics, Variation type, Variation value, Interval type, Lower limit, High limit, P value
+0,Nifedipine, Nifedipine, blood, maternal, ,12, Cmax,26.41, ng·ml^−1, median, range,2.91, 25th–75th percentile,23.98,29.88,0.23
+1,Nifedipine, Nifedipine, blood, maternal, ,10, Cmax,23.52, ng·ml^−1, median, range,6.66, 25th–75th percentile,21.21,27.87,0.23
+2,Nifedipine, Nifedipine, blood, maternal, ,12, Tmax,1.79, h, median, range,0.72, 25th–75th percentile,1.24,1.96,0.46
+3,Nifedipine, Nifedipine, blood, maternal, ,10, Tmax,1.48, h, median, range,0.7, 25th–75th percentile,1.03,1.73,0.46
+4,Nifedipine, Nifedipine, blood, maternal, ,12, AUC0–12,235.99, ng·h·ml^−1, median, range,58.25, 25th–75th percentile,203.72,261.97,0.38
+5,Nifedipine, Nifedipine, blood, maternal, ,10, AUC0–12,202.23, ng·h·ml^−1, median, range,49.98, 25th–75th percentile,185.54,235.52,0.38
+6,Nifedipine, Nifedipine, blood, maternal, ,12, Kel,0.16, h^−1, median, range,0.03, 25th–75th percentile,0.15,0.18,0.72
+7,Nifedipine, Nifedipine, blood, maternal, ,10, Kel,0.14, h^−1, median, range,0.12, 25th–75th percentile,0.13,0.25,0.72
+8,Nifedipine, Nifedipine, blood, maternal, ,12, t½,4.34, h, median, range,0.77, 25th–75th percentile,3.87,4.64,0.28
+9,Nifedipine, Nifedipine, blood, maternal, ,10, t½,5, h, median, range,1.39, 25th–75th percentile,4.45,5.84,0.28
+10,Nifedipine, Nifedipine, blood, maternal, ,12, Vd/F,560.96, l, median, range,213.46, 25th–75th percentile,506.85,720.31,0.87
+11,Nifedipine, Nifedipine, blood, maternal, ,10, Vd/F,609.4, l, median, range,384.77, 25th–75th percentile,357.28,742.05,0.87
+12,Nifedipine, Nifedipine, blood, maternal, ,12, ClT/F,84.77, l·h^−1, median, range,21.87, 25th–75th percentile,76.37,98.24,0.38
+13,Nifedipine, Nifedipine, blood, maternal, ,10, ClT/F,98.94, l·h^−1, median, range,22.65, 25th–75th percentile,85.14,107.79,0.38
+14,Nifedipine, Nifedipine, umbilical vein/maternal vein, fetal, postpartum,12, ratio,0.53, , median, range,0.39, 25th–75th percentile,0.35,0.74,0.5
+15,Nifedipine, Nifedipine, umbilical vein/maternal vein, fetal, postpartum,10, ratio,0.44, , median, range,0.2, 25th–75th percentile,0.36,0.56,0.5
+16,Nifedipine, Nifedipine, intervillous space/maternal vein, fetal, postpartum,12, ratio,0.78, , median, range,0.37, 25th–75th percentile,0.62,0.99,0.97
+17,Nifedipine, Nifedipine, intervillous space/maternal vein, fetal, postpartum,10, ratio,0.87, , median, range,0.29, 25th–75th percentile,0.63,0.92,0.97
+18,Nifedipine, Nifedipine, umbilical artery/umbilical vein, fetal, postpartum,12, ratio,0.82, , median, range,0.52, 25th–75th percentile,0.66,1.18,0.67
+19,Nifedipine, Nifedipine, umbilical artery/umbilical vein, fetal, postpartum,10, ratio,0.88, , median, range,0.64, 25th–75th percentile,0.48,1.12,0.67
+20,Nifedipine, Nifedipine, amniotic fluid/maternal vein, fetal, postpartum,12, ratio,0.05, , median, range,0.06, 25th–75th percentile,0.02,0.08,0.79
+21,Nifedipine, Nifedipine, amniotic fluid/maternal vein, fetal, postpartum,8, ratio,0.05, , median, range,0.04, 25th–75th percentile,0.04,0.08,0.79

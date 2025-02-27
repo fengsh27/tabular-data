@@ -1,0 +1,23 @@
+,Drug name, Analyte, Specimen, Population, Pregnancy stage, Subject N, Parameter type, Value, Unit, Summary statistics, Variation type, Variation value, Interval type, Lower limit, High limit, P value
+0,Nifedipine, Nifedipine, Plasma, Pregnant women, N/A,12, Cmax,26.41, ng/ml, Median, 25th percentile,23.98, 25th-75th percentile,23.98,29.88,0.23
+1,Nifedipine, Nifedipine, Plasma, Pregnant women with T2DM, N/A,10, Cmax,23.52, ng/ml, Median, 25th percentile,21.21, 25th-75th percentile,21.21,27.87,0.23
+2,Nifedipine, Nifedipine, Plasma, Pregnant women, N/A,12, Tmax,1.79, h, Median, 25th percentile,1.24, 25th-75th percentile,1.24,1.96,0.46
+3,Nifedipine, Nifedipine, Plasma, Pregnant women with T2DM, N/A,10, Tmax,1.48, h, Median, 25th percentile,1.03, 25th-75th percentile,1.03,1.73,0.46
+4,Nifedipine, Nifedipine, Plasma, Pregnant women, N/A,12, AUC0-12,235.99, ng.h/ml, Median, 25th percentile,203.72, 25th-75th percentile,203.72,261.97,0.38
+5,Nifedipine, Nifedipine, Plasma, Pregnant women with T2DM, N/A,10, AUC0-12,202.23, ng.h/ml, Median, 25th percentile,185.54, 25th-75th percentile,185.54,235.52,0.38
+6,Nifedipine, Nifedipine, Plasma, Pregnant women, N/A,12, Kel,0.16, h^-1, Median, 25th percentile,0.15, 25th-75th percentile,0.15,0.18,0.72
+7,Nifedipine, Nifedipine, Plasma, Pregnant women with T2DM, N/A,10, Kel,0.14, h^-1, Median, 25th percentile,0.13, 25th-75th percentile,0.13,0.25,0.72
+8,Nifedipine, Nifedipine, Plasma, Pregnant women, N/A,12, t1/2,4.34, h, Median, 25th percentile,3.87, 25th-75th percentile,3.87,4.64,0.28
+9,Nifedipine, Nifedipine, Plasma, Pregnant women with T2DM, N/A,10, t1/2,5, h, Median, 25th percentile,4.45, 25th-75th percentile,4.45,5.84,0.28
+10,Nifedipine, Nifedipine, Plasma, Pregnant women, N/A,12, Vd/F,560.96, l, Median, 25th percentile,506.85, 25th-75th percentile,506.85,720.31,0.87
+11,Nifedipine, Nifedipine, Plasma, Pregnant women with T2DM, N/A,10, Vd/F,609.4, l, Median, 25th percentile,357.28, 25th-75th percentile,357.28,742.05,0.87
+12,Nifedipine, Nifedipine, Plasma, Pregnant women, N/A,12, ClT/F,84.77, l/h, Median, 25th percentile,76.37, 25th-75th percentile,76.37,98.24,0.38
+13,Nifedipine, Nifedipine, Plasma, Pregnant women with T2DM, N/A,10, ClT/F,98.94, l/h, Median, 25th percentile,85.14, 25th-75th percentile,85.14,107.79,0.38
+14,Nifedipine, Nifedipine, Umbilical vein  Maternal vein, Pregnant women, N/A,12, Umbilical vein/maternal vein ratio,0.53, , Median, 25th percentile,0.35, 25th-75th percentile,0.35,0.74,0.5
+15,Nifedipine, Nifedipine, Umbilical vein  Maternal vein, Pregnant women with T2DM, N/A,10, Umbilical vein/maternal vein ratio,0.44, , Median, 25th percentile,0.36, 25th-75th percentile,0.36,0.56,0.5
+16,Nifedipine, Nifedipine, Intervillous space  Maternal vein, Pregnant women, N/A,12, Intervillous space/maternal vein ratio,0.78, , Median, 25th percentile,0.62, 25th-75th percentile,0.62,0.99,0.97
+17,Nifedipine, Nifedipine, Intervillous space  Maternal vein, Pregnant women with T2DM, N/A,10, Intervillous space/maternal vein ratio,0.87, , Median, 25th percentile,0.63, 25th-75th percentile,0.63,0.92,0.97
+18,Nifedipine, Nifedipine, Umbilical artery  Umbilical vein, Pregnant women, N/A,12, Umbilical artery/umbilical vein ratio,0.82, , Median, 25th percentile,0.66, 25th-75th percentile,0.66,1.18,0.67
+19,Nifedipine, Nifedipine, Umbilical artery  Umbilical vein, Pregnant women with T2DM, N/A,10, Umbilical artery/umbilical vein ratio,0.88, , Median, 25th percentile,0.48, 25th-75th percentile,0.48,1.12,0.67
+20,Nifedipine, Nifedipine, Amniotic fluid  Maternal vein, Pregnant women, N/A,12, Amniotic fluid/maternal vein ratio,0.05, , Median, 25th percentile,0.02, 25th-75th percentile,0.02,0.08,0.79
+21,Nifedipine, Nifedipine, Amniotic fluid  Maternal vein, Pregnant women with T2DM, N/A,8, Amniotic fluid/maternal vein ratio,0.05, , Median, 25th percentile,0.04, 25th-75th percentile,0.04,0.08,0.79
