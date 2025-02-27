@@ -31,10 +31,10 @@ def test_claude(client):
     print(msg)
     assert msg is not None
 
+baseline = os.environ.get("BASELINE", BASELINE)
 target = os.environ.get("TARGET", "yichuan/0213_prompt_chain")
-baseline_dir = os.path.join("./benchmark/data/pk-summary", BASELINE)
+baseline_dir = os.path.join("./benchmark/data/pk-summary", baseline)
 target_dir = os.path.join("./benchmark/data/pk-summary", target)
-result_dir = os.path.join("./benchmark/result/pk-summary", target)
 
 @pytest.fixture(scope="module")
 def prepared_dataset():
@@ -47,6 +47,7 @@ def prepared_dataset():
 @pytest.fixture(scope="module")
 def ensured_result_path():
     result_dir = ensure_target_result_directory_existed(
+        baseline=baseline,
         target=target,
         benchmark_type=BenchmarkType.PK_SUMMARY,
     )

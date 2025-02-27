@@ -49,8 +49,11 @@ LOWER_PK_COLUMNS = [
 PK_COLUMNS_MAP = [
     ("P-value", "P value"),
     ("Subjectsn", "Subject N"),
+    ("Subjects n", "Subject N"),
     ("Interval low", "Lower limit"),
     ("interval high", "High limit"),
+    ("Variability statistic", "Variation type"),
+    ('Summary Statistic', "Summary Statistics"),
 ]
 
 def process_1st_column(rows: List[List[str]]):
@@ -150,7 +153,11 @@ def preprocess_PK_csv_file(pk_csv_file: str):
 
     dst_file = pk_csv_file
     output_df = preprocess_table(orig_file)
+
+    # before write to csv file, remove the first column,
+    output_df = output_df.iloc[:, 1:]
     output_df.to_csv(dst_file, sep=',')
+    return True
 
 def preprocess_PK_csv_files(pk_csv_files: List[str]):
     for f in pk_csv_files:
@@ -158,24 +165,26 @@ def preprocess_PK_csv_files(pk_csv_files: List[str]):
         if not res:
             print(f"Failed to pre-process file: {f}")
 
-PK_PMIDs = [
-    "17635501",
-    # "22050870",
-    # "30825333",
-]
+def process_single_file():
+    import argparse
+    from os import path
+    parser = argparse.ArgumentParser()
+    parser.add_argument("csv_file", help="csv file path to be pre-processed")
+    args = vars(parser.parse_args())
+    print(args)
+    preprocess_PK_csv_file(args["csv_file"])
+    return
 
-if __name__ == "__main__":
-    pk_files = []
-    for pk_id in PK_PMIDs:
-        # baseline = f"./benchmark/data/{pk_id}-pk-summary-baseline.csv"
-        # if path.exists(baseline):
-        #     pk_files.append(baseline)
-        # gpt4o = f"./benchmark/data/{pk_id}-pk-summary-gpt4o.csv"
-        # if path.exists(gpt4o):
-        #     pk_files.append(gpt4o)
-        gemini = f"./benchmark/data/{pk_id}-pk-summary-gemini15.csv"
-        if path.exists(gemini):
-            pk_files.append(gemini)
+
+def process_multiple_files():
+    import argparse
+    from os import path
+    
+    pk_files = [
+        "./benchmark/data/pk-summary/baseline/A/18394772_baseline.csv",
+    ]
     preprocess_PK_csv_files(pk_files)
     
+if __name__ == "__main__":
+    process_single_file()
 

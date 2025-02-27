@@ -27,11 +27,10 @@ def test_claude(client):
     print(msg)
     assert msg is not None
 
-
+baseline = os.environ.get("BASELINE", BASELINE)
 target = os.environ.get("TARGET", "2024-08-12")
-baseline_dir = os.path.join("./benchmark/data/pe", BASELINE)
+baseline_dir = os.path.join("./benchmark/data/pe", baseline)
 target_dir = os.path.join("./benchmark/data/pe", target)
-result_dir = os.path.join("./benchmark/result/pe", target)
 
 @pytest.fixture(scope="module")
 def prepared_dataset():
@@ -44,6 +43,7 @@ def prepared_dataset():
 @pytest.fixture(scope="module")
 def ensured_result_path():
     result_dir = ensure_target_result_directory_existed(
+        baseline=baseline,
         target=target,
         benchmark_type=BenchmarkType.PE,
     )
