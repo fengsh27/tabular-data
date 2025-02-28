@@ -41,7 +41,7 @@ def get_client_and_model():
             model=os.environ.get("OPENAI_4O_MODEL", None),
             max_retries=5,
             temperature=0.0,
-            max_tokens=20*1024,
+            max_tokens=4096,
             top_p=0.95,
             frequency_penalty=0,
             presence_penalty=0,
