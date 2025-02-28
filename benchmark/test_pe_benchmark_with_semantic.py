@@ -30,10 +30,10 @@ The files in target directory should adhere to the following naming convention:
 12345678_gemini15.csv
 """
 
+baseline = os.environ.get("BASELINE", BASELINE)
 target = os.environ.get("TARGET", "2024-08-12")
-baseline_dir = os.path.join("./benchmark/data/pe", BASELINE)
+baseline_dir = os.path.join("./benchmark/data/pe", baseline)
 target_dir = os.path.join("./benchmark/data/pe", target)
-result_dir = os.path.join("./benchmark/result/pe", target)
 
 @pytest.fixture(scope="module")
 def prepared_dataset():
@@ -46,6 +46,7 @@ def prepared_dataset():
 
 def test_gpt4o_benchmark(prepared_dataset):
     result_dir = ensure_target_result_directory_existed(
+        baseline=baseline
         target=target,
         benchmark_type=BenchmarkType.PE,
     )
@@ -59,6 +60,7 @@ def test_gpt4o_benchmark(prepared_dataset):
 
 def test_gemini_benchmark(prepared_dataset):
     result_dir = ensure_target_result_directory_existed(
+        baseline=baseline,
         target=target,
         benchmark_type=BenchmarkType.PE,
     )

@@ -102,17 +102,21 @@ def _get_benchmark_type(dir_path: str) -> BenchmarkType | None:
     if len(dir_path) == 0:
         return None
     dir_path = dir_path.replace("\\", "/")
-    if dir_path[-1] == "/":
-        dir_path = dir_path[:-1]
-    if "/"+BenchmarkType.PK_SUMMARY.value+"/" in dir_path:
-        basename = os.path.basename(dir_path)
-        if basename == BASELINE:
+    if dir_path[-1] != "/":
+        dir_path += "/"
+    pk_summary_str = "/"+BenchmarkType.PK_SUMMARY.value+"/"
+    pe_str = "/"+BenchmarkType.PE.value+"/"
+    if pk_summary_str in dir_path:
+        ix = dir_path.find(pk_summary_str)
+        baseline_path = dir_path[ix+len(pk_summary_str):]
+        if baseline_path.startswith(BASELINE+"/"):
             return BenchmarkType.PK_SUMMARY_BASELINE
         else:
             return BenchmarkType.PK_SUMMARY
-    if "/"+BenchmarkType.PE.value+"/" in dir_path:
-        basename = os.path.basename(dir_path)
-        if basename == BASELINE:
+    if pe_str in dir_path:
+        ix = dir_path.find(pe_str)
+        baseline_path = dir_path[ix+len(pe_str):]
+        if baseline_path.startswith(BASELINE+"/"):
             return BenchmarkType.PE_BASELINE
         else:
             return BenchmarkType.PE
@@ -216,8 +220,17 @@ def prepare_dataset_for_benchmark(
     
     return dataset
 
-def ensure_target_result_directory_existed(target: str, benchmark_type: BenchmarkType):
-    dir_path = path.join("./benchmark/result", benchmark_type.value, target)
+def ensure_target_result_directory_existed(
+    baseline: str,
+    target: str,
+    benchmark_type: BenchmarkType,
+):
+    baseline_name = baseline.replace("/", "_")
+    baseline_name = baseline_name.replace("\\", "_")
+    target_name = target.replace("/", "_")
+    target_name = target_name.replace("\\", "_")
+    # result_dir = os.path.join("./benchmark/result/pk-summary", f"{target_name}-{baseline_name}")
+    dir_path = path.join("./benchmark/result", benchmark_type.value, f"{target_name}-{baseline_name}")
     if os.path.isdir(dir_path):
         return dir_path
     try:

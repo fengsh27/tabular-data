@@ -62,7 +62,8 @@
       "2. Ensure to extract all available information for each field without omitting any details.",
       "3. If the information that is not provided, please leave it with empty string.",
       "4. If the study's analyte is the primary drug itself (i.e., directly measuring the drug's concentration, pharmacokinetic parameters, etc.), then the analyte should be the drug name itself, rather than being left blank.",
-      "5. Ensure all rows are extracted with every possible SN value, even if not explicitly stated."
+      "5. Ensure all rows are extracted with every possible SN value, even if not explicitly stated.",
+      "6. Do not generate any fabricated information, especially avoid making up 'Variation value' or any numerical data."
     ]
   },
   "full_text_prompts": {

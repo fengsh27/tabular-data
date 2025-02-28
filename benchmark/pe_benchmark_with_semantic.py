@@ -9,15 +9,19 @@ UNIT="Unit"
 P_VALUE="P value"
 LOWER_LIMIT="Lower limit"
 HIGH_LIMIT="High limit"
+EXPOSURE="Exposure"
+OUTCOMES="Outcomes"
+STATISTIC="Statistic"
+VARIABILITY_VALUE="Variability value"
 
 PE_RATING_COLUMNS = [
     # "Characteristic/risk factor",
-    "Exposure",
-    "Outcomes",
-    "Statistic",
+    EXPOSURE,
+    OUTCOMES,
+    STATISTIC,
     VALUE,
     UNIT,
-    "Variability value",
+    VARIABILITY_VALUE,
     LOWER_LIMIT,
     HIGH_LIMIT,
 ]
@@ -26,7 +30,7 @@ PE_ANCHOR_COLUMNS = [
     LOWER_LIMIT,
     HIGH_LIMIT,
     P_VALUE,
-    "Variability value",
+    VARIABILITY_VALUE,
 ]
 
 def pe_summary_evaluate_dataframe(df_baseline: pd.DataFrame, df_pk_summary: pd.DataFrame) -> int:

@@ -131,6 +131,7 @@ venv.bak/
 
 # logs
 logs/*.log
+benchmark/logs/*.log
 
 # Spyder project settings
 .spyderproject

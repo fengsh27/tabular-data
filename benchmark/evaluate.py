@@ -205,8 +205,10 @@ class TablesEvaluator:
                 scores.append(0)
                 continue
             scores.append(self.rate_row(row, much_row))
+                
         sum = functools.reduce(lambda a, b: a+b, scores)
-        
+        logger.info(f"scores: {scores}")
+        logger.info(f"less row number: {less_row_num}, much row number: {much_row_num}")
         return (int)(100.0 * (sum / (10.0 * less_row_num + 1 * (much_row_num-less_row_num))))
         
     

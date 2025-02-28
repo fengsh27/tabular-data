@@ -1,0 +1,23 @@
+PMID,Drug name,Analyte,Specimen,Population,Pregnancy Stage,Subjects n,Parameter type,Summary Statistic,Value,Unit,Variability statistic,Variation value,Interval type,Interval low,interval high,P-value
+28042936,Nifedipine, Nifedipine,plasma,hypertensive pregnant women,3rd trimester,12, Cmax, median,26.41, ng ml?1, 25th?75th percentiles, , 25th?75th percentiles,23.98,29.88,0.23
+28042936,Nifedipine, Nifedipine,plasma,hypertensive and diabetic pregnant women,3rd trimester,10, Cmax, median,23.52, ng ml?1, 25th?75th percentiles, , 25th?75th percentiles,21.21,27.87,0.23
+28042936,Nifedipine, Nifedipine,plasma,hypertensive pregnant women,3rd trimester,12, tmax, median,1.79, h, 25th?75th percentiles, , 25th?75th percentiles,1.24,1.96,0.46
+28042936,Nifedipine, Nifedipine,plasma,hypertensive and diabetic pregnant women,3rd trimester,10, tmax, median,1.48, h, 25th?75th percentiles, , 25th?75th percentiles,1.03,1.73,0.46
+28042936,Nifedipine, Nifedipine,plasma,hypertensive pregnant women,3rd trimester,12, AUC0?12, median,235.99, ng.h ml?1, 25th?75th percentiles, , 25th?75th percentiles,203.72,261.97,0.38
+28042936,Nifedipine, Nifedipine,plasma,hypertensive and diabetic pregnant women,3rd trimester,10, AUC0?12, median,202.23, ng.h ml?1, 25th?75th percentiles, , 25th?75th percentiles,185.54,235.52,0.38
+28042936,Nifedipine, Nifedipine,plasma,hypertensive pregnant women,3rd trimester,12, Kel, median,0.16, h?1, 25th?75th percentiles, , 25th?75th percentiles,0.15,0.18,0.72
+28042936,Nifedipine, Nifedipine,plasma,hypertensive and diabetic pregnant women,3rd trimester,10, Kel, median,0.14, h?1, 25th?75th percentiles, , 25th?75th percentiles,0.13,0.25,0.72
+28042936,Nifedipine, Nifedipine,plasma,hypertensive pregnant women,3rd trimester,12, t«, median,4.34, h, 25th?75th percentiles, , 25th?75th percentiles,3.87,4.64,0.28
+28042936,Nifedipine, Nifedipine,plasma,hypertensive and diabetic pregnant women,3rd trimester,10, t«, median,5, h, 25th?75th percentiles, , 25th?75th percentiles,4.45,5.84,0.28
+28042936,Nifedipine, Nifedipine,plasma,hypertensive pregnant women,3rd trimester,12, Vd/F, median,560.96, l, 25th?75th percentiles, , 25th?75th percentiles,506.85,720.31,0.87
+28042936,Nifedipine, Nifedipine,plasma,hypertensive and diabetic pregnant women,3rd trimester,10, Vd/F, median,609.4, l, 25th?75th percentiles, , 25th?75th percentiles,357.28,742.05,0.87
+28042936,Nifedipine, Nifedipine,plasma,hypertensive pregnant women,3rd trimester,12, ClT/F, median,84.77, l h?1, 25th?75th percentiles, , 25th?75th percentiles,76.37,98.24,0.38
+28042936,Nifedipine, Nifedipine,plasma,hypertensive and diabetic pregnant women,3rd trimester,10, ClT/F, median,98.94, l h?1, 25th?75th percentiles, , 25th?75th percentiles,85.14,107.79,0.38
+28042936,Nifedipine, Nifedipine, Umbilical vein/maternal vein,hypertensive pregnant women,delivery,12, ratio, median,0.53, , 25th?75th percentiles,, 25th?75th percentiles,0.35,0.74,0.5
+28042936,Nifedipine, Nifedipine, Umbilical vein/maternal vein,hypertensive and diabetic pregnant women,delivery,10, ratio, median,0.44, , 25th?75th percentiles,, 25th?75th percentiles,0.36,0.56,0.5
+28042936,Nifedipine, Nifedipine, Intervillous space/maternal vein,hypertensive pregnant women,delivery,12, ratio, median,0.78, , 25th?75th percentiles,, 25th?75th percentiles,0.62,0.99,0.97
+28042936,Nifedipine, Nifedipine, Intervillous space/maternal vein,hypertensive and diabetic pregnant women,delivery,10, ratio, median,0.87, , 25th?75th percentiles,, 25th?75th percentiles,0.63,0.92,0.97
+28042936,Nifedipine, Nifedipine, Umbilical artery/umbilical vein,hypertensive pregnant women,delivery,12, ratio, median,0.82, , 25th?75th percentiles,, 25th?75th percentiles,0.66,1.18,0.67
+28042936,Nifedipine, Nifedipine, Umbilical artery/umbilical vein,hypertensive and diabetic pregnant women,delivery,10, ratio, median,0.88, , 25th?75th percentiles,, 25th?75th percentiles,0.48,1.12,0.67
+28042936,Nifedipine, Nifedipine, Amniotic fluid/maternal vein,hypertensive pregnant women,delivery,12, ratio, median,0.05, , 25th?75th percentiles,, 25th?75th percentiles,0.02,0.08,0.79
+28042936,Nifedipine, Nifedipine, Amniotic fluid/maternal vein,hypertensive and diabetic pregnant women,delivery,8, ratio, median,0.05, , 25th?75th percentiles,, 25th?75th percentiles,0.04,0.08,0.79
