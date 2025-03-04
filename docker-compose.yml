@@ -2,7 +2,7 @@ version: "3.9"
 services:
   tabular-data:
     container_name: tabular-data
-    image: frankfeng78/tabula-data:0.1.43
+    image: frankfeng78/tabula-data:0.1.46-subpath
     ports:
       - 9092:8501
     volumes:
