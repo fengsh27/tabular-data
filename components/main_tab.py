@@ -184,7 +184,7 @@ def on_extract(pmid: str):
 
         table_sections = dict()  # table_name -> subsections
 
-        time.sleep(60)
+        time.sleep(0.1)
 
         step2_usage_list = []
 
@@ -230,7 +230,7 @@ def on_extract(pmid: str):
                 except Exception as e:
                     logging.error(f"Split {table_name}, attempt {attempt + 1} failed: {e}")
                     st.error(f"Split {table_name}, attempt {attempt + 1} failed: {e}")
-                    time.sleep(60 * (attempt + 1))
+                    time.sleep(0.1 * (attempt + 1))
                     table_sections[table_name] = None
 
         st.write("Step 2 completed, token usage:", str(sum(step2_usage_list)))
@@ -241,7 +241,7 @@ def on_extract(pmid: str):
         # table_sections = {'Table II': None, 'Table III': ["Overall", "3 Month to < 3 Years", "3 to < 13 Years", "13 to < 18 Years"]}
         # table_sections = {'Table II': None, 'Table III': ["Overall", "3 Month to < 3 Years"]}
         # table_sections = {'Table II': None}
-        time.sleep(60)
+        time.sleep(0.1)
 
         table_section_name_list = []
 
@@ -294,7 +294,7 @@ def on_extract(pmid: str):
                 except Exception as e:
                     logging.error(f"{table_section_name}, attempt {attempt + 1} failed: {e}")
                     st.error(f"{table_section_name}, attempt {attempt + 1} failed: {e}")
-                    time.sleep(60*(attempt + 1))
+                    time.sleep(0.1*(attempt + 1))
         final_csv_str = ''.join(final_csv_list)
         st.write("Step 3 completed, token usage:", str(sum(step3_usage_list)))
 
