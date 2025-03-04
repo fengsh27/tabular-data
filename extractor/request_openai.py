@@ -41,7 +41,7 @@ def get_client_and_model():
             model=os.environ.get("OPENAI_4O_MODEL", None),
             max_retries=5,
             temperature=0.0,
-            max_tokens=4096,
+            max_tokens=os.environ.get("OPENAI_MAX_OUTPUT_TOKENS", 4096),
             top_p=0.95,
             frequency_penalty=0,
             presence_penalty=0,
@@ -121,8 +121,10 @@ def request_to_chatgpt_4o(prompts: List[Any], question: str):
 def _is_incompleted_response(content: Optional[str] = None):
     if content is None:
         return False
+    max_tokens = int(os.environ.get("OPENAI_MAX_OUTPUT_TOKENS", 4096)) - 10
     stripped_content = content.strip()
-    if not stripped_content.endswith("}]") \
-       and not stripped_content.endswith("```"):
+    if len(content) > max_tokens and \
+        not stripped_content.endswith("}]") \
+        and not stripped_content.endswith("```"):
         return True
     return False
