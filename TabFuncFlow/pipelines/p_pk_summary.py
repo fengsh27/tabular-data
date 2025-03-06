@@ -18,11 +18,20 @@ def clean_llm_reasoning(text: str) -> str:
     Cleans the LLM inference string by removing content after the last occurrence
     of '<<' or '[[END]]', keeping only the portion up to the last preceding period.
     If the last period is too close to the previous newline, truncate at the newline instead.
+    Additionally, if the text contains two occurrences of '```', truncate before the first occurrence.
     Ensures the output ends with a newline.
 
     :param text: The input inference string.
     :return: The cleaned inference string, ensuring it ends with a newline.
     """
+    # Check for two occurrences of '```'
+    first_triple_backtick = text.find("```")
+    second_triple_backtick = text.find("```", first_triple_backtick + 3)
+
+    if first_triple_backtick != -1 and second_triple_backtick != -1:
+        result = text[:first_triple_backtick]
+        return result if result.endswith("\n") else result + "\n"
+
     # Try finding '<<' first
     last_double_angle = text.rfind("<<")
 
