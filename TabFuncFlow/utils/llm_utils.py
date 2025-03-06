@@ -9,12 +9,7 @@ from extractor.request_geminiai import (
     request_to_gemini_15_flash,
 )
 from dotenv import load_dotenv
-import os
-import google.generativeai as genai
-
 load_dotenv()
-if "GEMINI_15_API_KEY" in os.environ:
-    genai.configure(api_key=os.environ.get("GEMINI_15_API_KEY", None))
 
 
 def get_llm_response(messages, question, model="gemini_15_pro"):

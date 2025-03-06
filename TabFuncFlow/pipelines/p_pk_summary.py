@@ -102,7 +102,7 @@ def run_with_retry(func, *args, max_retries=5, base_delay=5, **kwargs):
     return None
 
 
-def p_pk_summary(md_table, description, llm="gemini_15_pro", max_retries=5, base_delay=1, use_color=True, clean_reasoning=True):
+def p_pk_summary(md_table, description, llm="gemini_15_pro", max_retries=5, base_delay=1, use_color=True, clean_reasoning=False):
     """
     PK Summary Pipeline 250227
     Summarizes pharmacokinetic (PK) data from a given markdown table.
