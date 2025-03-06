@@ -8,8 +8,8 @@ from extractor.request_geminiai import (
     request_to_gemini_15_pro,
     request_to_gemini_15_flash,
 )
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 
 def get_llm_response(messages, question, model="gemini_15_pro"):
