@@ -1,7 +1,7 @@
 from typing import Optional, List, Dict, Callable
 from extractor.request_openai import (
-    request_to_chatgpt_35,
-    request_to_chatgpt_40,
+    # request_to_chatgpt_35,
+    # request_to_chatgpt_40,
     request_to_chatgpt_4o,
 )
 from extractor.request_geminiai import (
