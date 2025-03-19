@@ -4,7 +4,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from pydantic import Field
 import pandas as pd
 
-from TabFuncFlow.utils.table_utils import dataframe_to_markdown
+from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
 from extractor.agents.pk_sum_common_agent import PKSumCommonAgentResult
 
@@ -66,12 +66,22 @@ class ParameterValueResult(PKSumCommonAgentResult):
 
 def post_process_matched_list(
     res: ParameterValueResult,
+    expected_rows: int,
 ):
     matched_values = res.extracted_param_values
+
+    # validation
+    if not matched_values:
+        raise ValueError("Parameter value extraction failed: No valid values found.")
+
     df_table = pd.DataFrame(matched_values, columns=[
         'Main value', 'Statistics type', 'Variation type', 'Variation value',
         'Interval type', 'Lower bound', 'Upper bound', 'P value'
-    ])
+    ])    
+    if df_table.shape[0] != expected_rows:
+        raise ValueError(
+            f"Mismatch: Expected {expected_rows} rows, but got {df_table.shape[0]} extracted values.", f"\n{content}", f"\n<<{usage}>>"
+        )
     return dataframe_to_markdown(df_table)
 
 

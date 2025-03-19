@@ -44,7 +44,7 @@ from extractor.agents.pk_sum_param_value_agent import (
 
 from extractor.agents.pk_sum_common_agent import PKSumCommonAgent
 from extractor.agents.agent_utils import display_md_table
-from TabFuncFlow.utils.table_utils import single_html_table_to_markdown
+from TabFuncFlow.utils.table_utils import markdown_to_dataframe, single_html_table_to_markdown
 from TabFuncFlow.pipelines.p_pk_summary import p_pk_summary
 from TabFuncFlow.steps_pk_summary.s_pk_get_col_mapping import s_pk_get_col_mapping
 from TabFuncFlow.steps_pk_summary.s_pk_extract_patient_info import extract_integers
@@ -311,6 +311,7 @@ def test_PKSumCommonAgent_param_value_extraction():
             instruction_prompt=INSTRUCTION_PROMPT,
             schema=ParameterValueResult,
             post_process=post_process_matched_list,
+            expected_rows=markdown_to_dataframe(md).shape[0],
         )
         print(res)
 
