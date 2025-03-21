@@ -2,6 +2,7 @@
 from typing import Any, Callable, List, Optional
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai.chat_models.base import BaseChatOpenAI
+from langchain_community.callbacks.openai_info import OpenAICallbackHandler
 from pydantic import BaseModel, Field
 from tenacity import (
     retry, stop_after_attempt, wait_incrementing
@@ -20,6 +21,7 @@ class PKSumCommonAgent:
     def __init__(self, llm: BaseChatOpenAI):
         self.llm = llm
         self.exception: RetryException | None = None
+        self.token_usage: dict | None = None
 
     def go(
         self, 
@@ -40,7 +42,7 @@ class PKSumCommonAgent:
         Return:
         (drug_combination list[list[str]], reasoning_thoughts str)
         """
-        self.exception = None
+        self._initialize()
         if pre_process is not None:
             is_OK = pre_process(**kwargs)
             if not is_OK: # skip
@@ -58,14 +60,30 @@ class PKSumCommonAgent:
         )
         return res
     
+    def _initialize(self):
+        self.exception = None
+        self.token_usage = None
+    
     def _process_retryexception_message(self, prompt: ChatPromptTemplate) -> ChatPromptTemplate:
         if self.exception is None:
             return prompt
         
         existing_messages = prompt.messages
         updated_messages = existing_messages + [("user", str(self.exception))]
+        self.exception = None
         updated_prompt = ChatPromptTemplate.from_messages(updated_messages)
         return updated_prompt
+    
+    def _incre_token_usage(self, token_usage):
+        if self.token_usage is None:
+            self.token_usage = {
+                "total_tokens": 0,
+                "completion_tokens": 0,
+                "prompt_tokens": 0,
+            }
+        self.token_usage["total_tokens"] += token_usage.total_tokens
+        self.token_usage["completion_tokens"] += token_usage.completion_tokens
+        self.token_usage["prompt_tokens"] += token_usage.prompt_tokens
     
     @retry(stop=stop_after_attempt(3), wait=wait_incrementing())
     def _invoke_agent(
@@ -75,9 +93,18 @@ class PKSumCommonAgent:
         post_process: Optional[Callable]=None,
         **kwargs: Optional[Any],
     ):
+        # Initialize the callback handler
+        callback_handler = OpenAICallbackHandler()
+
         updated_prompt = self._process_retryexception_message(prompt)
         agent = updated_prompt | self.llm.with_structured_output(schema)
-        res = agent.invoke(input={})
+        res = agent.invoke(
+            input={},
+            config={
+                "callbacks": [callback_handler],
+            },
+        )
+        self._incre_token_usage(callback_handler)
         processed_res = None
         if post_process is not None:
             try:
@@ -85,7 +112,7 @@ class PKSumCommonAgent:
             except RetryException as e:
                 self.exception = e
                 raise e
-        return res, processed_res
+        return res, processed_res, self.token_usage
     
 
     

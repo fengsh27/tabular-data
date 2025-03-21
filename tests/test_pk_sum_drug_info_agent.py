@@ -227,7 +227,7 @@ def test_PKSumCommonAgent_patient_info():
     int_list = extract_integers(md_table + caption_and_footnote)
     llm = get_openai()
     agent = PKSumCommonAgent(llm=llm)
-    res, processed_res = agent.go(
+    res, processed_res, token_usage = agent.go(
         system_prompt=PATIENT_INFO_PROMPT.format(
             processed_md_table=display_md_table(md_table),
             caption=caption_and_footnote,
@@ -248,7 +248,7 @@ def test_PKSumCommonAgent_drug_info():
     md_table = single_html_table_to_markdown(html_content=html_content)
     llm = get_openai()
     agent = PKSumCommonAgent(llm=llm)
-    res, processed_res = agent.go(
+    res, processed_res, token_usage = agent.go(
         system_prompt=DRUG_INFO_PROMPT.format(
             processed_md_table=display_md_table(md_table), 
             caption=caption_and_footnote
@@ -264,7 +264,7 @@ def test_PKSumCommonAgent_ind_data_del():
     md_table = single_html_table_to_markdown(html_content)
     llm = get_openai()
     agent = PKSumCommonAgent(llm=llm)
-    res, processed_res = agent.go(
+    res, processed_res, token_usage = agent.go(
         system_prompt=INDIVIDUAL_DATA_DEL_PROMPT.format(
             processed_md_table=display_md_table(md_table),
         ),
@@ -281,7 +281,7 @@ def test_PKSumCommonAgent_param_type_align():
     md_table = single_html_table_to_markdown(html_content)
     llm = get_openai()
     agent = PKSumCommonAgent(llm=llm)
-    res, processed_res = agent.go(
+    res, processed_res, token_usage = agent.go(
         system_prompt=PARAMETER_TYPE_ALIGN_PROMPT.format(
             md_table_summary=md_table,
         ),
@@ -297,7 +297,7 @@ def test_PKSumCommonAgent_param_type_align():
 def test_PKSumCommonAgent_header_categorize():
     llm = get_openai()
     agent = PKSumCommonAgent(llm=llm)
-    res, processed_res = agent.go(
+    res, processed_res, token_usage = agent.go(
         system_prompt=get_header_categorize_prompt(md_table_aligned),
         instruction_prompt=INSTRUCTION_PROMPT,
         schema=HeaderCategorizeJsonSchema, # HeaderCategorizeResult,
@@ -315,7 +315,7 @@ def test_PKSumCommonAgent_unit_extraction():
 
     llm = get_openai()
     agent = PKSumCommonAgent(llm=llm)
-    res, processed_res = agent.go(
+    res, processed_res, token_usage = agent.go(
         system_prompt=get_param_type_unit_extraction_prompt(
             md_table_aligned=md_table_aligned,
             md_sub_table=md_table_list[0],
@@ -341,7 +341,7 @@ def test_PKSumCommonAgent_param_value_extraction():
     llm = get_openai()
     agent = PKSumCommonAgent(llm=llm)
     for md in md_table_list:
-        res, processed_res = agent.go(
+        res, processed_res, token_usage = agent.go(
             system_prompt=get_parameter_value_prompt(
                 md_table_aligned=md_table_aligned,
                 md_table_aligned_with_1_param_type_and_value=md,
@@ -355,10 +355,11 @@ def test_PKSumCommonAgent_param_value_extraction():
         assert isinstance(res, ParameterValueResult)
         assert type(processed_res) == str
 
+# @pytest.mark.skip()
 def test_PKSumCommonAgent_time_and_unit_extraction():
     llm = get_openai()
     agent = PKSumCommonAgent(llm=llm)
-    res, processed_res = agent.go(
+    res, processed_res, token_usage = agent.go(
         system_prompt=get_time_and_unit_prompt(
             md_table_aligned=md_table_aligned,
             md_table_post_processed=md_table_post_processed,
@@ -371,6 +372,7 @@ def test_PKSumCommonAgent_time_and_unit_extraction():
     )
     assert isinstance(res, TimeAndUnitResult)
     assert type(processed_res) == str
+    assert token_usage["total_tokens"] > 0
 
 @pytest.mark.skip()
 def test_p_pk_summary_drug_info():
