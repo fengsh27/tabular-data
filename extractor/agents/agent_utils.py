@@ -1,4 +1,5 @@
 import re
+from typing import Optional
 
 def display_md_table(md_table):
     """
@@ -25,3 +26,21 @@ def display_md_table(md_table):
             labeled_lines.append(f"row {i - 2}: {line}")
 
     return '\n'.join(labeled_lines)
+
+DEFAULT_TOKEN_USAGE = {
+    "total_tokens": 0,
+    "completion_tokens": 0,
+    "prompt_tokens": 0,
+}
+
+def increase_token_usage(
+    token_usage: Optional[dict]=None, 
+    incremental: dict={**DEFAULT_TOKEN_USAGE},
+):
+    if token_usage is None:
+        token_usage = {**DEFAULT_TOKEN_USAGE}
+    token_usage["total_tokens"] += incremental["total_tokens"]
+    token_usage["completion_tokens"] += incremental["completion_tokens"]
+    token_usage["prompt_tokens"] += incremental["prompt_tokens"]
+
+    return token_usage

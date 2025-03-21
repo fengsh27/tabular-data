@@ -8,7 +8,10 @@ from tenacity import (
     retry, stop_after_attempt, wait_incrementing
 )
 
-from extractor.agents.agent_utils import display_md_table
+from extractor.agents.agent_utils import (
+    display_md_table,
+    increase_token_usage,
+)
 
 class RetryException(Exception):
     """ Exception need to retry """
@@ -38,9 +41,13 @@ class PKSumCommonAgent:
         Args:
         system_prompt str: system prompt
         instruction_prompt str: user prompt to guide how llm execute agent
+        schema pydantic.BaseModel or json schema: llm output result schema
+        pre_process Callable or None: pre-processor that would be executed before llm.invoke
+        post_process Callable or None: post-processor that would be executed after llm.invoke
+        kwargs None or dict: args for pre_proces and post_process
 
         Return:
-        (drug_combination list[list[str]], reasoning_thoughts str)
+        (output that comply with input args `schema`)
         """
         self._initialize()
         if pre_process is not None:
@@ -52,13 +59,12 @@ class PKSumCommonAgent:
             ("user", instruction_prompt),
         ])
                 
-        res = self._invoke_agent(
+        return self._invoke_agent(
             prompt,
             schema,
             post_process,
             **kwargs,
         )
-        return res
     
     def _initialize(self):
         self.exception = None
@@ -75,15 +81,14 @@ class PKSumCommonAgent:
         return updated_prompt
     
     def _incre_token_usage(self, token_usage):
-        if self.token_usage is None:
-            self.token_usage = {
-                "total_tokens": 0,
-                "completion_tokens": 0,
-                "prompt_tokens": 0,
+        self.token_usage = increase_token_usage(
+            self.token_usage,
+            {
+                "total_tokens": token_usage.total_tokens,
+                "completion_tokens": token_usage.completion_tokens,
+                "prompt_tokens": token_usage.prompt_tokens,
             }
-        self.token_usage["total_tokens"] += token_usage.total_tokens
-        self.token_usage["completion_tokens"] += token_usage.completion_tokens
-        self.token_usage["prompt_tokens"] += token_usage.prompt_tokens
+        )
     
     @retry(stop=stop_after_attempt(3), wait=wait_incrementing())
     def _invoke_agent(

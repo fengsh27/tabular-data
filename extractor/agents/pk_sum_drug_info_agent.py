@@ -3,7 +3,9 @@ from typing import List
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai.chat_models.base import BaseChatOpenAI
 from pydantic import BaseModel, Field
+import pandas as pd
 
+from TabFuncFlow.utils.table_utils import dataframe_to_markdown
 from extractor.agents.agent_utils import display_md_table
 from extractor.agents.pk_sum_common_agent import (
     PKSumCommonAgentResult,
@@ -32,5 +34,12 @@ class DrugInfoResult(PKSumCommonAgentResult):
     drug_combinations: List[List[str]] = Field(description="a list of lists of unique combinations [Drug name, Analyte, Specimen]")
  
 
+def post_process_drug_info(
+    res: DrugInfoResult,
+):
+    if res.drug_combinations is None:
+        raise ValueError("Empty drug combinations")
     
+    df_table = pd.DataFrame(res.drug_combinations, columns=["Drug name", "Analyte", "Specimen"])
+    return dataframe_to_markdown(df_table)
 

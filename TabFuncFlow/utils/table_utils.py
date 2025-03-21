@@ -244,7 +244,7 @@ def fill_empty_headers(md_table):
     return '\n'.join([filled_header_line, separator] + lines[2:])
 
 
-def deduplicate_headers(md_table):
+def deduplicate_headers(md_table: str) -> str:
     """
     Detects duplicate column headers in a Markdown table and renames them with _0, _1, _2... suffixes.
 
