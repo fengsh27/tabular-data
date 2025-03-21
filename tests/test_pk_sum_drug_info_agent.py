@@ -3,9 +3,9 @@ import pytest
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI, AzureChatOpenAI
 from langchain_deepseek import ChatDeepSeek
+from langchain_core.prompts import ChatPromptTemplate
 
 from extractor.agents.pk_sum_drug_info_agent import (
-    PKSumDrugInfoAgent, 
     DrugInfoResult,
     DRUG_INFO_PROMPT,
     INSTRUCTION_PROMPT,
@@ -13,6 +13,7 @@ from extractor.agents.pk_sum_drug_info_agent import (
 from extractor.agents.pk_sum_patient_info_agent import (
     PATIENT_INFO_PROMPT,
     PatientInfoResult,
+    post_process_convert_patient_info_to_md_table
 )
 from extractor.agents.pk_sum_param_type_align_agent import (
     PARAMETER_TYPE_ALIGN_PROMPT,
@@ -31,10 +32,11 @@ from extractor.agents.pk_sum_header_categorize_agent import (
     post_process_validate_categorized_result,
     get_header_categorize_prompt,
 )
-from extractor.agents.pk_sum_unit_extract_agent import (
-    get_unit_extraction_prompt,
+from extractor.agents.pk_sum_param_type_unit_extract_agent import (
+    get_param_type_unit_extraction_prompt,
+    pre_process_param_type_unit,
     post_process_validate_matched_tuple,
-    UnitExtractionResult,
+    ParamTypeUnitExtractionResult,
 )
 from extractor.agents.pk_sum_param_value_agent import (
     ParameterValueResult,
@@ -42,7 +44,16 @@ from extractor.agents.pk_sum_param_value_agent import (
     post_process_matched_list,
 )
 
-from extractor.agents.pk_sum_common_agent import PKSumCommonAgent
+from extractor.agents.pk_sum_time_unit_agent import (
+    TimeAndUnitResult,
+    get_time_and_unit_prompt,
+    post_process_time_and_unit,
+)
+
+from extractor.agents.pk_sum_common_agent import (
+    PKSumCommonAgent,
+    RetryException,
+)
 from extractor.agents.agent_utils import display_md_table
 from TabFuncFlow.utils.table_utils import markdown_to_dataframe, single_html_table_to_markdown
 from TabFuncFlow.pipelines.p_pk_summary import p_pk_summary
@@ -163,6 +174,23 @@ CL(mL/min/kg) | 41.50 |
 CL(mL/min/m) | 32.34 |
 Vdz(L/kg) | 1.94 |
 """]
+md_table_post_processed = """
+"Drug name" | "Analyte" | "Specimen" | "Population" | "Pregnancy stage" | "Subject N" | "Parameter type" | "Unit" | "Value" | "Summary Statistics" | "Variation type" | "Variation value" | "Interval type" | "Lower limit" | "High limit" | "P value" |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+N/A | N/A | Plasma | N/A | N/A | 15 | Apparent volume of distribution (Vdz) | L/kg | 1.92 | Mean | Standard Deviation (SD) | 0.84 | Range | 0.33 | 4.05 | N/A |
+N/A | N/A | Plasma | N/A | N/A | 15 | Apparent volume of distribution (Vdz) | L/kg | 1.94 | Median | N/A | N/A | N/A | N/A | N/A | N/A |
+N/A | N/A | Plasma | N/A | N/A | 15 | Area-under-the-curve to infinity (AUC0−∞) | ng/mL*hr | 822.5 | Mean | Standard Deviation (SD) | 706.1 | Range | 253.3 | 3202.5 | N/A |
+N/A | N/A | Plasma | N/A | N/A | 15 | Area-under-the-curve to infinity (AUC0−∞) | ng/mL*hr | 601.5 | Median | N/A | N/A | N/A | N/A | N/A | N/A |
+N/A | N/A | Plasma | N/A | N/A | 15 | Clearance (CL) | mL/min/kg | 49.33 | Mean | Standard Deviation (SD) | 30.83 | Range | 3.33 | 131.50 | N/A |
+N/A | N/A | Plasma | N/A | N/A | 15 | Clearance (CL) | mL/min/kg | 41.50 | Median | N/A | N/A | N/A | N/A | N/A | N/A |
+N/A | N/A | Plasma | N/A | N/A | 15 | Clearance (CL) | mL/min/m | 31.95 | Mean | Standard Deviation (SD) | 13.99 | Range | 5.5 | 67.5 | N/A |
+N/A | N/A | Plasma | N/A | N/A | 15 | Clearance (CL) | mL/min/m | 32.34 | Median | N/A | N/A | N/A | N/A | N/A | N/A |
+N/A | N/A | Plasma | N/A | N/A | 15 | Half-life (T1/2) | hr | 20.5 | Mean | Standard Deviation (SD) | 10.2 | Range | 9.5 | 47.0 | N/A |
+N/A | N/A | Plasma | N/A | N/A | 15 | Half-life (T1/2) | hr | 18.1 | Median | N/A | N/A | N/A | N/A | N/A | N/A |
+N/A | N/A | Plasma | N/A | N/A | 15 | Maximum concentration (Cmax) | ng/mL | 56.1 | Mean | Standard Deviation (SD) | 44.9 | Range | 29.3 | 209.6 | N/A |
+N/A | N/A | Plasma | N/A | N/A | 15 | Maximum concentration (Cmax) | ng/mL | 42.2 | Median | N/A | N/A | N/A | N/A | N/A | N/A |
+"""
+
 
 def get_openai():
     return ChatOpenAI(
@@ -199,7 +227,7 @@ def test_PKSumCommonAgent_patient_info():
     int_list = extract_integers(md_table + caption_and_footnote)
     llm = get_openai()
     agent = PKSumCommonAgent(llm=llm)
-    res = agent.go(
+    res, processed_res = agent.go(
         system_prompt=PATIENT_INFO_PROMPT.format(
             processed_md_table=display_md_table(md_table),
             caption=caption_and_footnote,
@@ -207,18 +235,20 @@ def test_PKSumCommonAgent_patient_info():
         ),
         instruction_prompt=INSTRUCTION_PROMPT,
         schema=PatientInfoResult,
+        post_process=post_process_convert_patient_info_to_md_table,
     )
-    print(res)
+    assert isinstance(res, PatientInfoResult)
+    assert type(processed_res) == str
 
 @pytest.mark.skip()
 def test_PKSumCommonAgent_drug_info():
     the_obj = DrugInfoResult.model_json_schema()
     print(the_obj)
-
+    
     md_table = single_html_table_to_markdown(html_content=html_content)
     llm = get_openai()
     agent = PKSumCommonAgent(llm=llm)
-    res = agent.go(
+    res, processed_res = agent.go(
         system_prompt=DRUG_INFO_PROMPT.format(
             processed_md_table=display_md_table(md_table), 
             caption=caption_and_footnote
@@ -226,14 +256,15 @@ def test_PKSumCommonAgent_drug_info():
          instruction_prompt=INSTRUCTION_PROMPT,
          schema=DrugInfoResult,
     )
-    print(res)
+    assert isinstance(res, DrugInfoResult)
+    assert processed_res is None
 
 @pytest.mark.skip()
 def test_PKSumCommonAgent_ind_data_del():
     md_table = single_html_table_to_markdown(html_content)
     llm = get_openai()
     agent = PKSumCommonAgent(llm=llm)
-    res = agent.go(
+    res, processed_res = agent.go(
         system_prompt=INDIVIDUAL_DATA_DEL_PROMPT.format(
             processed_md_table=display_md_table(md_table),
         ),
@@ -242,14 +273,15 @@ def test_PKSumCommonAgent_ind_data_del():
         post_process=post_process_individual_del_result,
         md_table=md_table,
     )
-    print(res)
+    assert isinstance(res, IndividualDataDelResult)
+    assert type(processed_res) == str
 
 @pytest.mark.skip()
 def test_PKSumCommonAgent_param_type_align():
     md_table = single_html_table_to_markdown(html_content)
     llm = get_openai()
     agent = PKSumCommonAgent(llm=llm)
-    res = agent.go(
+    res, processed_res = agent.go(
         system_prompt=PARAMETER_TYPE_ALIGN_PROMPT.format(
             md_table_summary=md_table,
         ),
@@ -258,43 +290,50 @@ def test_PKSumCommonAgent_param_type_align():
         post_process=post_process_parameter_type_align,
         md_table=md_table,
     )
-    print(res)
+    assert isinstance(res, ParameterTypeAlignResult)
+    assert type(processed_res) == str
 
 @pytest.mark.skip()
 def test_PKSumCommonAgent_header_categorize():
     llm = get_openai()
     agent = PKSumCommonAgent(llm=llm)
-    res = agent.go(
+    res, processed_res = agent.go(
         system_prompt=get_header_categorize_prompt(md_table_aligned),
         instruction_prompt=INSTRUCTION_PROMPT,
         schema=HeaderCategorizeJsonSchema, # HeaderCategorizeResult,
         post_process=post_process_validate_categorized_result,
         md_table=md_table_aligned,
     )
-    print(res)
+    assert isinstance(res, dict)
+    assert processed_res is None
 
 @pytest.mark.skip()
 def test_PKSumCommonAgent_unit_extraction():
     # test schema
-    schema_obj = UnitExtractionResult.model_json_schema()
+    schema_obj = ParamTypeUnitExtractionResult.model_json_schema()
     print(schema_obj)
 
     llm = get_openai()
     agent = PKSumCommonAgent(llm=llm)
-    res = agent.go(
-        system_prompt=get_unit_extraction_prompt(
+    res, processed_res = agent.go(
+        system_prompt=get_param_type_unit_extraction_prompt(
             md_table_aligned=md_table_aligned,
             md_sub_table=md_table_list[0],
             col_mapping=col_mapping,
             caption=caption_and_footnote,
         ),
         instruction_prompt=INSTRUCTION_PROMPT,
-        schema=UnitExtractionResult,
+        schema=ParamTypeUnitExtractionResult,
+        pre_process=pre_process_param_type_unit,
         post_process=post_process_validate_matched_tuple,
         md_table=md_table_list[0],
+        col_mapping=col_mapping,
     )
-    assert len(res) == 2 # matched tuple (parameter types list, parameter valus list)
+    assert isinstance(res, ParamTypeUnitExtractionResult)
+    assert type(processed_res) == tuple
+    assert len(processed_res) == 2 # matched tuple (parameter types list, parameter valus list)
 
+@pytest.mark.skip()
 def test_PKSumCommonAgent_param_value_extraction():
     schema_obj = ParameterValueResult.model_json_schema()
     print(schema_obj)
@@ -302,7 +341,7 @@ def test_PKSumCommonAgent_param_value_extraction():
     llm = get_openai()
     agent = PKSumCommonAgent(llm=llm)
     for md in md_table_list:
-        res = agent.go(
+        res, processed_res = agent.go(
             system_prompt=get_parameter_value_prompt(
                 md_table_aligned=md_table_aligned,
                 md_table_aligned_with_1_param_type_and_value=md,
@@ -313,7 +352,25 @@ def test_PKSumCommonAgent_param_value_extraction():
             post_process=post_process_matched_list,
             expected_rows=markdown_to_dataframe(md).shape[0],
         )
-        print(res)
+        assert isinstance(res, ParameterValueResult)
+        assert type(processed_res) == str
+
+def test_PKSumCommonAgent_time_and_unit_extraction():
+    llm = get_openai()
+    agent = PKSumCommonAgent(llm=llm)
+    res, processed_res = agent.go(
+        system_prompt=get_time_and_unit_prompt(
+            md_table_aligned=md_table_aligned,
+            md_table_post_processed=md_table_post_processed,
+            caption=caption_and_footnote,
+        ),
+        instruction_prompt=INSTRUCTION_PROMPT,
+        schema=TimeAndUnitResult,
+        post_process=post_process_time_and_unit,
+        md_table_post_processed=md_table_post_processed,
+    )
+    assert isinstance(res, TimeAndUnitResult)
+    assert type(processed_res) == str
 
 @pytest.mark.skip()
 def test_p_pk_summary_drug_info():

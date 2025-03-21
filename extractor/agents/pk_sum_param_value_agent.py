@@ -6,7 +6,7 @@ import pandas as pd
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
-from extractor.agents.pk_sum_common_agent import PKSumCommonAgentResult
+from extractor.agents.pk_sum_common_agent import PKSumCommonAgentResult, RetryException
 
 PARAMETER_VALUE_PROMPT = ChatPromptTemplate.from_template("""
 The following main table contains pharmacokinetics (PK) data:  
@@ -34,6 +34,9 @@ P value: P-value.
 Please Note:
 (1) An interval consisting of two numbers must be placed separately into the Low limit and High limit fields; it is prohibited to place it in the Variation value field.
 (2) For values that do not need to be filled, enter "N/A".
+(3) Strictly ensure that you process only rows 0 to {md_table_aligned_with_1_param_type_and_value_max_row_index} from the Subtable 1 (which has {md_table_aligned_with_1_param_type_and_value_rows} rows in total). 
+    - The number of processed rows must **exactly match** the number of rows in the Subtable 1—no more, no less.  
+(4) For rows in Subtable 1 that can not be extracted, enter "N/A" for the entire row.
 (3) **Important:** Please return Subtable 2 as a list of lists, excluding the headers. Ensure all values are converted to strings.
 (4) **Absolutely no calculations are allowed—every value must be taken directly from Subtable 1 without any modifications.**  
 (5) The final list should be like this:
@@ -49,7 +52,7 @@ def get_parameter_value_prompt(
     first_line = md_table_aligned_with_1_param_type_and_value.strip().split("\n")[0]
     headers = [col.strip() for col in first_line.split("|") if col.strip()]
     extracted_param_types = f""" "{'", "'.join(headers)}" """
-
+    rows_num = markdown_to_dataframe(md_table_aligned_with_1_param_type_and_value)
     return PARAMETER_VALUE_PROMPT.format(
         processed_md_table_aligned=display_md_table(md_table_aligned),
         caption=caption,
@@ -57,6 +60,8 @@ def get_parameter_value_prompt(
         processed_md_table_aligned_with_1_param_type_and_value=display_md_table(
             md_table_aligned_with_1_param_type_and_value
         ),
+        md_table_aligned_with_1_param_type_and_value_max_row_index=rows_num-1,
+        md_table_aligned_with_1_param_type_and_value_rows=rows_num,
     )
 
 class ParameterValueResult(PKSumCommonAgentResult):
@@ -67,7 +72,7 @@ class ParameterValueResult(PKSumCommonAgentResult):
 def post_process_matched_list(
     res: ParameterValueResult,
     expected_rows: int,
-):
+) -> str:
     matched_values = res.extracted_param_values
 
     # validation
@@ -79,8 +84,8 @@ def post_process_matched_list(
         'Interval type', 'Lower bound', 'Upper bound', 'P value'
     ])    
     if df_table.shape[0] != expected_rows:
-        raise ValueError(
-            f"Mismatch: Expected {expected_rows} rows, but got {df_table.shape[0]} extracted values.", f"\n{content}", f"\n<<{usage}>>"
+        raise RetryException(
+            "Wrong answer example:\n" + str(res.extracted_param_values) + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {df_table.shape[0]} extracted values."
         )
     return dataframe_to_markdown(df_table)
 

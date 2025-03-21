@@ -5,7 +5,7 @@ from pydantic import BaseModel, Field
 
 from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
-from extractor.agents.pk_sum_common_agent import PKSumCommonAgentResult
+from extractor.agents.pk_sum_common_agent import PKSumCommonAgentResult, RetryException
 
 MATCHING_DRUG_PROMPT = ChatPromptTemplate.from_template("""
 The following main table contains pharmacokinetics (PK) data:  
@@ -53,4 +53,15 @@ class MatchedDrugResult(PKSumCommonAgentResult):
     matched_row_indices: List[int] = Field(description="a list of matched row indices")
 
 
+def post_process_validate_matched_rows(
+    res: MatchedDrugResult,
+    md_table: str,
+):
+    match_list = res.matched_row_indices
+    expected_rows = markdown_to_dataframe(md_table).shape[0]
+    if len(match_list) != expected_rows:
+        raise RetryException(
+            f"Mismatch: Expected {expected_rows} rows, but got {len(match_list)} extracted matches."
+        )
+    return res
 

@@ -5,7 +5,7 @@ from pydantic import Field
 
 from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
-from extractor.agents.pk_sum_common_agent import PKSumCommonAgentResult
+from extractor.agents.pk_sum_common_agent import PKSumCommonAgentResult, RetryException
 
 
 MATCHING_PATIENT_PROMPT=ChatPromptTemplate.from_template("""
@@ -54,3 +54,13 @@ def get_matching_patient_prompt(
 class MatchedPatientResult(PKSumCommonAgentResult):
     """ Matched Patients Result """
     matched_row_indices: List[int] = Field(description="a list of matched row indices")
+
+def post_process_validate_matched_patients(
+    res: MatchedPatientResult,
+    md_table: str,
+):
+    match_list = res.matched_row_indices
+    expected_rows = markdown_to_dataframe(md_table).shape[0]
+    if len(match_list) != expected_rows:
+        raise RetryException("Wrong answer example:\n" + str(match_list) + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {len(match_list)} extracted matches.")
+    

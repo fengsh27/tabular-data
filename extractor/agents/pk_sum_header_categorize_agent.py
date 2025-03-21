@@ -87,7 +87,7 @@ def post_process_validate_categorized_result(
     if parameter_type_count != 1:
         raise ValueError(f"Invalid mapping: Expected 1 'Parameter type' column, but found {parameter_type_count}.")
     
-    return result
+    return None
 
 
 

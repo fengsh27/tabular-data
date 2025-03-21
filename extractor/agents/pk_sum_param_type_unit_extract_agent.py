@@ -22,20 +22,21 @@ Carefully analyze the table and follow these steps:
     - The first list should contain the extracted "Parameter type" values.  
     - The second list should contain the corresponding "Parameter unit" values.  
 (3) **Strictly ensure that you process only rows 0 to {row_max_index} from the column "{key_with_parameter_type}".**  
-    - The number of processed rows must **exactly match** the number of rows in the Subtable 1—no more, no less.  
-(4) The returned list should be like this:  
+    - The number of processed rows must **exactly match** the number of rows in the Subtable 1—no more, no less. 
+(4) For rows in Subtable 1 that can not be extracted, enter "N/A" for the entire row. 
+(5) The returned list should be like this:  
     (["Parameter type 1", "Parameter type 2", ...], ["Unit 1", "Unit 2", ...])>>  
 """)
 
-class ExtractedParamUnits(BaseModel):
+class ExtractedParamTypeUnits(BaseModel):
     parameter_types: List[str] = Field(description="Extracted 'Parameter type' values.")
     parameter_units: List[str] = Field(description="Corresponding 'Parameter unit' values.")
 
-class UnitExtractionResult(PKSumCommonAgentResult):
+class ParamTypeUnitExtractionResult(PKSumCommonAgentResult):
     """ Unit Extraction Result """
-    extracted_param_units: ExtractedParamUnits = Field(description="An object with lists of extracted parameter types and their corresponding units.")
+    extracted_param_units: ExtractedParamTypeUnits = Field(description="An object with lists of extracted parameter types and their corresponding units.")
 
-def get_unit_extraction_prompt(
+def get_param_type_unit_extraction_prompt(
     md_table_aligned: str, 
     md_sub_table: str, 
     col_mapping: dict,
@@ -53,10 +54,18 @@ def get_unit_extraction_prompt(
             row_max_index=markdown_to_dataframe(md_sub_table).shape[0] - 1
         )
     return None
+
+def pre_process_param_type_unit(md_table: str, col_mapping: dict):
+    parameter_type_count = list(col_mapping.values()).count("Parameter type")
+    parameter_unit_count = list(col_mapping.values()).count("Parameter unit")
+    if parameter_type_count == 1 and parameter_unit_count == 0:
+        return True
+    return False
     
 def post_process_validate_matched_tuple(
-    res: UnitExtractionResult,
-    md_table: str
+    res: ParamTypeUnitExtractionResult,
+    md_table: str,
+    col_mapping: dict,
 ):
     matched_tuple = (res.extracted_param_units.parameter_types, res.extracted_param_units.parameter_units)
     expected_rows = markdown_to_dataframe(md_table).shape[0]

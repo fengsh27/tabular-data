@@ -23,7 +23,6 @@ Specimen is the type of sample.
    <<[["Lorazepam", "Lorazepam", "Plasma"], ["Lorazepam", "Lorazepam", "Urine"]]>> (example)  
 (3) Verify the source of each [Drug Name, Analyte, Specimen] combination before including it in your answer.  
 (4) If any information is missing, first try to infer it from the available data (e.g., using context, related entries, or common pharmacokinetic knowledge). Only use "N/A" as a last resort if the information cannot be reasonably inferred.
-
 """)
 
 INSTRUCTION_PROMPT = "Do not give the final result immediately. First, explain your thought process, then provide the answer."
@@ -31,21 +30,7 @@ INSTRUCTION_PROMPT = "Do not give the final result immediately. First, explain y
 class DrugInfoResult(PKSumCommonAgentResult):
     """ Drug Information Result """
     drug_combinations: List[List[str]] = Field(description="a list of lists of unique combinations [Drug name, Analyte, Specimen]")
-    
-class PKSumDrugInfoAgent:
-    def __init__(self, llm: BaseChatOpenAI):
-        self.llm = llm
-
-    def go(self, md_table, description, schema):
-        prompt = ChatPromptTemplate.from_messages([
-            ("system", DRUG_INFO_PROMPT.format(
-                processed_md_table=display_md_table(md_table), caption=description
-            )),
-            ("placeholder", "{messages}")
-        ])
-        agent = prompt | self.llm.with_structured_output(schema)
-        res = agent.invoke(input={"messages": [("user", INSTRUCTION_PROMPT)]})
-        return res
+ 
 
     
 
