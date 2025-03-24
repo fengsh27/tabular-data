@@ -34,7 +34,7 @@ class ExtractParamTypeAndUnitStep(PKSumCommonStep):
         md_table_list = state["md_table_list"]
         col_mapping = state["col_mapping"]
         type_unit_list: list[str] = []
-        type_unit_cache: list[str] = []
+        type_unit_cache: dict = {}
         round = 0
         total_token_usage = DEFAULT_TOKEN_USAGE
         for md in md_table_list:
@@ -64,7 +64,7 @@ class ExtractParamTypeAndUnitStep(PKSumCommonStep):
                     caption = state["caption"]
                     schema = self.get_schema()
                     system_prompt = get_param_type_unit_extraction_prompt(md_table_aligned, md, col_mapping, caption)
-                    instruction_prompt = self.get_instruction_prompt()
+                    instruction_prompt = self.get_instruction_prompt(state)
                     agent = PKSumCommonAgent(llm=llm)
                     res, processed_res, token_usage = agent.go(
                         system_prompt=system_prompt,

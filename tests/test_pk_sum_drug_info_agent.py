@@ -74,123 +74,6 @@ from TabFuncFlow.steps_pk_summary.s_pk_extract_patient_info import extract_integ
 
 load_dotenv()
 
-html_content = """
-<section id="S8">
-   <h3 class="pmc_sec_title">Pharmacokinetics</h3>
-   <p id="P25"><a class="usa-link" href="#T2">Table II</a> summarizes the noncompartmental PK evaluation for the Elective Cohort. Eight pharmacokinetic samples (0.3%) were excluded, seven due to suspected contamination from the infused drug and one due to collection during the lorazepam infusion. Overall, the mean area-under-the-curve (AUC<sub>0-∞</sub>) was 822.5 ng*hr/mL and the median AUC<sub>0-∞</sub> was 601.5 ng*hr/mL with an average dose of 0.04 mg/kg. The overall fit of the population PK model was good over the wide range of individuals in the population. There were no covariates meeting criteria for inclusion into the model. Thirty three subjects (23 Status Cohort, 10 Elective Cohort) had received, at baseline, at least one agent that can induce drug metabolizing enzymes. The calculated value for terminal (beta) half-life was 16 hours for a typical 24 kg child. The empiric Bayesian estimated parameters from the post-hoc analysis are summarized in <a class="usa-link" href="#T3">Table III</a>. The model demonstrated good model prediction of observed concentrations even when applied to the patients exhibiting the highest and lowest individual clearances, and in a patient who received a total of 9 doses of lorazepam during the PK sampling interval.</p>
-   <section class="tw xbox font-sm" id="T2">
-      <h4 class="obj_head">Table 2.</h4>
-      <div class="caption p">
-         <p id="P40">Non-compartmental pharmacokinetics parameters from Elective Cohort patients. C<sub>max</sub> is maximum concentration. AUC<sub>0-∞</sub> is area-under-the-curve to infinity. CL is clearance. Vdz is apparent volume of distribution. T<sub>1/2</sub> is half-life.</p>
-      </div>
-      <div class="tbl-box p" tabindex="0">
-         <table class="content" frame="hsides" rules="groups">
-            <thead>
-               <tr>
-                  <th align="left" colspan="1" rowspan="1"></th>
-                  <th align="center" colspan="1" rowspan="1">C<sub>max</sub><br/>(ng/mL)</th>
-                  <th align="center" colspan="1" rowspan="1" valign="top">AUC<sub>0-∞</sub> </th>
-                  <th align="center" colspan="1" rowspan="1">CL<br/>(mL/min/kg)</th>
-                  <th align="center" colspan="1" rowspan="1">CL<br/>(mL/min/m<sup>2</sup>)</th>
-                  <th align="center" colspan="1" rowspan="1">Vdz<br/>(L/kg)</th>
-                  <th align="center" colspan="1" rowspan="1">T<sub>1/2</sub><br/>(hr)</th>
-               </tr>
-            </thead>
-            <tbody>
-               <tr>
-                  <td align="left" colspan="1" rowspan="1">N</td>
-                  <td align="center" colspan="1" rowspan="1">15</td>
-                  <td align="center" colspan="1" rowspan="1">15</td>
-                  <td align="center" colspan="1" rowspan="1">15</td>
-                  <td align="center" colspan="1" rowspan="1">15</td>
-                  <td align="center" colspan="1" rowspan="1">15</td>
-                  <td align="center" colspan="1" rowspan="1">15</td>
-               </tr>
-               <tr>
-                  <td align="left" colspan="1" rowspan="1" valign="top">Range</td>
-                  <td align="center" colspan="1" rowspan="1" valign="top">29.3–209.6</td>
-                  <td align="center" colspan="1" rowspan="1">253.3–3202.5</td>
-                  <td align="center" colspan="1" rowspan="1" valign="top">3.33–131.50</td>
-                  <td align="center" colspan="1" rowspan="1" valign="top">5.5–67.5</td>
-                  <td align="center" colspan="1" rowspan="1" valign="top">0.33–4.05</td>
-                  <td align="center" colspan="1" rowspan="1" valign="top">9.5–47.0</td>
-               </tr>
-               <tr>
-                  <td align="left" colspan="1" rowspan="1">Mean ± s.d.</td>
-                  <td align="center" colspan="1" rowspan="1" valign="top">56.1 ± 44.9</td>
-                  <td align="center" colspan="1" rowspan="1">822.5 ± 706.1</td>
-                  <td align="center" colspan="1" rowspan="1">49.33 ± 30.83</td>
-                  <td align="center" colspan="1" rowspan="1" valign="top">31.95 ± 13.99</td>
-                  <td align="center" colspan="1" rowspan="1">1.92 ± 0.84</td>
-                  <td align="center" colspan="1" rowspan="1">20.5 ± 10.2</td>
-               </tr>
-               <tr>
-                  <td align="left" colspan="1" rowspan="1">Median</td>
-                  <td align="center" colspan="1" rowspan="1">42.2</td>
-                  <td align="center" colspan="1" rowspan="1">601.5</td>
-                  <td align="center" colspan="1" rowspan="1">41.50</td>
-                  <td align="center" colspan="1" rowspan="1">32.34</td>
-                  <td align="center" colspan="1" rowspan="1">1.94</td>
-                  <td align="center" colspan="1" rowspan="1">18.1</td>
-               </tr>
-            </tbody>
-         </table>
-      </div>
-      <div class="p text-right font-secondary"><a class="usa-link" href="table/T2/" rel="noopener noreferrer" target="_blank">Open in a new tab</a></div>
-   </section>
-</section>
-"""
-md_table = single_html_table_to_markdown(html_content)
-caption_and_footnote = "Non-compartmental pharmacokinetics parameters from Elective Cohort patients. C<sub>max</sub> is maximum concentration. AUC<sub>0-∞</sub> is area-under-the-curve to infinity. CL is clearance. Vdz is apparent volume of distribution. T<sub>1/2</sub> is half-life."
-md_table_patient="""
-| Population | Pregnancy stage | Subject N |
-| --- | --- | --- |
-| N/A | N/A | 15 |
-"""
-md_table_aligned="""
-| Parameter type | N | Range | Mean ± s.d. | Median |
-| --- | --- | --- | --- | --- |
-| Cmax(ng/mL) | 15 | 29.3–209.6 | 56.1 ± 44.9 | 42.2 |
-| AUC0−∞ | 15 | 253.3–3202.5 | 822.5 ± 706.1 | 601.5 |
-| CL(mL/min/kg) | 15 | 3.33–131.50 | 49.33 ± 30.83 | 41.50 |
-| CL(mL/min/m) | 15 | 5.5–67.5 | 31.95 ± 13.99 | 32.34 |
-| Vdz(L/kg) | 15 | 0.33–4.05 | 1.92 ± 0.84 | 1.94 |
-| T1/2(hr) | 15 | 9.5–47.0 | 20.5 ± 10.2 | 18.1 |
-"""
-col_mapping = {
-    "Parameter type": "Parameter type",
-    "N": "Uncategorized",
-    "Range": "Parameter value",
-    "Mean ± s.d.": "Parameter value",
-    "Median": "Parameter value"
-}
-md_table_list = ["""
-"Parameter type" | "Range" |
-| --- | --- |
-Cmax(ng/mL) | 29.3–209.6 |
-AUC0−∞ | 253.3–3202.5 |
-CL(mL/min/kg) | 3.33–131.50 |
-CL(mL/min/m) | 5.5–67.5 |
-Vdz(L/kg) | 0.33–4.05 |
-T1/2(hr) | 9.5–47.0 |
-""", """
-"Parameter type" | "Mean ± s.d." |
-| --- | --- |
-Cmax(ng/mL) | 56.1 ± 44.9 |
-AUC0−∞ | 822.5 ± 706.1 |
-CL(mL/min/kg) | 49.33 ± 30.83 |
-CL(mL/min/m) | 31.95 ± 13.99 |
-Vdz(L/kg) | 1.92 ± 0.84 |
-T1/2(hr) | 20.5 ± 10.2 |
-""", """
-"Parameter type" | "Median" |
-| --- | --- |
-Cmax(ng/mL) | 42.2 |
-AUC0−∞ | 601.5 |
-CL(mL/min/kg) | 41.50 |
-CL(mL/min/m) | 32.34 |
-Vdz(L/kg) | 1.94 |
-"""]
 md_table_post_processed = """
 | Drug name | Analyte | Specimen | Population | Pregnancy stage | Subject N | Parameter type | Unit | Value | Summary Statistics | Variation type | Variation value | Interval type | Lower limit | High limit | P value |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -209,13 +92,13 @@ md_table_post_processed = """
 """
 
 @pytest.mark.skip()
-def test_PKSumCommonAgent_patient_info(llm):
-    int_list = extract_integers(md_table + caption_and_footnote)
+def test_PKSumCommonAgent_patient_info(llm, md_table, caption):
+    int_list = extract_integers(md_table + caption)
     agent = PKSumCommonAgent(llm=llm)
     res, processed_res, token_usage = agent.go(
         system_prompt=PATIENT_INFO_PROMPT.format(
             processed_md_table=display_md_table(md_table),
-            caption=caption_and_footnote,
+            caption=caption,
             int_list=int_list,
         ),
         instruction_prompt=INSTRUCTION_PROMPT,
@@ -226,12 +109,12 @@ def test_PKSumCommonAgent_patient_info(llm):
     assert type(processed_res) == str
 
 @pytest.mark.skip()
-def test_PKSumCommonAgent_patient_info_refine(llm):
-    int_list = extract_integers(md_table_patient + caption_and_footnote)
+def test_PKSumCommonAgent_patient_info_refine(llm, md_table, md_table_patient, caption):
+    int_list = extract_integers(md_table_patient + caption)
     agent = PKSumCommonAgent(llm=llm)
     res, process_res, token_usage = agent.go(
         system_prompt=get_patient_info_refine_prompt(
-            md_table, md_table_patient, caption_and_footnote,
+            md_table, md_table_patient, caption,
         ),
         instruction_prompt=INSTRUCTION_PROMPT,
         schema=PatientInfoRefinedResult,
@@ -242,16 +125,14 @@ def test_PKSumCommonAgent_patient_info_refine(llm):
     assert type(process_res) == str
 
 @pytest.mark.skip()
-def test_PKSumCommonAgent_drug_info(llm):
+def test_PKSumCommonAgent_drug_info(llm, md_table, caption):
     the_obj = DrugInfoResult.model_json_schema()
     print(the_obj)
-    
-    md_table = single_html_table_to_markdown(html_content=html_content)
     agent = PKSumCommonAgent(llm=llm)
     res, processed_res, token_usage = agent.go(
         system_prompt=DRUG_INFO_PROMPT.format(
             processed_md_table=display_md_table(md_table), 
-            caption=caption_and_footnote
+            caption=caption,
          ),
          instruction_prompt=INSTRUCTION_PROMPT,
          schema=DrugInfoResult,
@@ -260,8 +141,7 @@ def test_PKSumCommonAgent_drug_info(llm):
     assert processed_res is None
 
 @pytest.mark.skip()
-def test_PKSumCommonAgent_ind_data_del(llm):
-    md_table = single_html_table_to_markdown(html_content)
+def test_PKSumCommonAgent_ind_data_del(llm, md_table):
     agent = PKSumCommonAgent(llm=llm)
     res, processed_res, token_usage = agent.go(
         system_prompt=INDIVIDUAL_DATA_DEL_PROMPT.format(
@@ -276,8 +156,7 @@ def test_PKSumCommonAgent_ind_data_del(llm):
     assert type(processed_res) == str
 
 @pytest.mark.skip()
-def test_PKSumCommonAgent_param_type_align(llm):
-    md_table = single_html_table_to_markdown(html_content)
+def test_PKSumCommonAgent_param_type_align(llm, md_table):
     agent = PKSumCommonAgent(llm=llm)
     res, processed_res, token_usage = agent.go(
         system_prompt=PARAMETER_TYPE_ALIGN_PROMPT.format(
@@ -292,7 +171,7 @@ def test_PKSumCommonAgent_param_type_align(llm):
     assert type(processed_res) == str
 
 @pytest.mark.skip()
-def test_PKSumCommonAgent_header_categorize(llm):
+def test_PKSumCommonAgent_header_categorize(llm, md_table_aligned):
     agent = PKSumCommonAgent(llm=llm)
     res, processed_res, token_usage = agent.go(
         system_prompt=get_header_categorize_prompt(md_table_aligned),
@@ -305,7 +184,7 @@ def test_PKSumCommonAgent_header_categorize(llm):
     assert isinstance(processed_res, HeaderCategorizeResult)
 
 @pytest.mark.skip()
-def test_PKSumCommonAgent_unit_extraction(llm):
+def test_PKSumCommonAgent_unit_extraction(llm, md_table_aligned, md_table_list, col_mapping, caption):
     # test schema
     schema_obj = ParamTypeUnitExtractionResult.model_json_schema()
     print(schema_obj)
@@ -316,7 +195,7 @@ def test_PKSumCommonAgent_unit_extraction(llm):
             md_table_aligned=md_table_aligned,
             md_sub_table=md_table_list[0],
             col_mapping=col_mapping,
-            caption=caption_and_footnote,
+            caption=caption,
         ),
         instruction_prompt=INSTRUCTION_PROMPT,
         schema=ParamTypeUnitExtractionResult,
@@ -330,7 +209,7 @@ def test_PKSumCommonAgent_unit_extraction(llm):
     assert len(processed_res) == 2 # matched tuple (parameter types list, parameter valus list)
 
 @pytest.mark.skip()
-def test_PKSumCommonAgent_param_value_extraction(llm):
+def test_PKSumCommonAgent_param_value_extraction(llm, md_table_aligned, caption, md_table_list):
     schema_obj = ParameterValueResult.model_json_schema()
     print(schema_obj)
 
@@ -340,7 +219,7 @@ def test_PKSumCommonAgent_param_value_extraction(llm):
             system_prompt=get_parameter_value_prompt(
                 md_table_aligned=md_table_aligned,
                 md_table_aligned_with_1_param_type_and_value=md,
-                caption=caption_and_footnote,
+                caption=caption,
             ),
             instruction_prompt=INSTRUCTION_PROMPT,
             schema=ParameterValueResult,
@@ -351,13 +230,13 @@ def test_PKSumCommonAgent_param_value_extraction(llm):
         assert type(processed_res) == str
 
 @pytest.mark.skip()
-def test_PKSumCommonAgent_time_and_unit_extraction(llm):
+def test_PKSumCommonAgent_time_and_unit_extraction(llm, md_table_aligned, caption):
     agent = PKSumCommonAgent(llm=llm)
     res, processed_res, token_usage = agent.go(
         system_prompt=get_time_and_unit_prompt(
             md_table_aligned=md_table_aligned,
             md_table_post_processed=md_table_post_processed,
-            caption=caption_and_footnote,
+            caption=caption,
         ),
         instruction_prompt=INSTRUCTION_PROMPT,
         schema=TimeAndUnitResult,
@@ -369,7 +248,7 @@ def test_PKSumCommonAgent_time_and_unit_extraction(llm):
     assert token_usage["total_tokens"] > 0
 
 # @pytest.mark.skip()
-def test_PKSumCommonAgent_split_by_col(llm):
+def test_PKSumCommonAgent_split_by_col(llm, col_mapping, md_table_aligned):
     agent = PKSumCommonAgent(llm=llm)
     res, processed_res, token_usage = agent.go(
         system_prompt=get_split_by_columns_prompt(
@@ -383,21 +262,20 @@ def test_PKSumCommonAgent_split_by_col(llm):
     assert isinstance(res, SplitByColumnsResult)
 
 @pytest.mark.skip()
-def test_p_pk_summary_drug_info():
+def test_p_pk_summary_drug_info(md_table_aligned):
     # md_table = single_html_table_to_markdown(html_content)
     # drug_info = p_pk_summary(
     #     md_table=md_table,
-    #     description=caption_and_footnote,
+    #     description=caption,
     #     llm="chatgpt_4o",
     # )
     # print(drug_info)
 
-    md_table_aligned = "| Parameter type | N | Range | Mean ± s.d. | Median |\n| --- | --- | --- | --- | --- |\n| Cmax(ng/mL) | 15 | 29.3-209.6 | 56.1 ± 44.9 | 42.2 |\n| AUC0-∞ | 15 | 253.3-3202.5 | 822.5 ± 706.1 | 601.5 |\n| CL(mL/min/kg) | 15 | 3.33-131.50 | 49.33 ± 30.83 | 41.50 |\n| CL(mL/min/m) | 15 | 5.5-67.5 | 31.95 ± 13.99 | 32.34 |\n| Vdz(L/kg) | 15 | 0.33-4.05 | 1.92 ± 0.84 | 1.94 |\n| T1/2(hr) | 15 | 9.5-47.0 | 20.5 ± 10.2 | 18.1 |"
     res = s_pk_get_col_mapping(md_table_aligned, model_name="chatgpt_4o")
     print(res)
 
 @pytest.mark.skip()
-def test_post_process_split_by_columns():
+def test_post_process_split_by_columns(md_table_aligned):
     col_groups = [['Parameter type', 'N', 'Range', 'Mean ± s.d.', 'Median']]
     processed_col_groups = [[fix_col_name(item, md_table_aligned) for item in group] for group in col_groups]
     df_table = f_split_by_cols(processed_col_groups, markdown_to_dataframe(md_table_aligned))
