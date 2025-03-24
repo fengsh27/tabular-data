@@ -10,11 +10,11 @@ from TabFuncFlow.utils.table_utils import (
     fix_col_name, 
     markdown_to_dataframe,
 )
-from extractor.agents.pk_sum_common_agent import PKSumCommonAgentResult
+from extractor.agents.pk_summary.pk_sum_common_agent import PKSumCommonAgentResult
 
-from .agent_utils import display_md_table
+from extractor.agents.agent_utils import display_md_table
 
-from .agent_prompt_utils import INSTRUCTION_PROMPT
+from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
 
 INDIVIDUAL_DATA_DEL_PROMPT = ChatPromptTemplate.from_template("""
 There is now a table related to pharmacokinetics (PK). 

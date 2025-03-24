@@ -6,7 +6,10 @@ import pandas as pd
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
-from extractor.agents.pk_sum_common_agent import PKSumCommonAgentResult, RetryException
+from extractor.agents.pk_summary.pk_sum_common_agent import (
+    PKSumCommonAgentResult, 
+    RetryException,
+)
 
 TIME_AND_UNIT_PROMPT =  ChatPromptTemplate.from_template("""
 The following table contains pharmacokinetics (PK) data:  

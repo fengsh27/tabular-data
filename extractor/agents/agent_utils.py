@@ -1,5 +1,16 @@
 import re
-from typing import Optional
+from typing import Optional, Protocol
+
+class StepCallback(Protocol):
+    def __call__(
+        self, 
+        step_name: Optional[str]=None, 
+        step_description: Optional[str]=None,
+        step_output: Optional[str]=None,
+        step_reasoning_process: Optional[str]=None,
+        token_usage: Optional[dict]=None,
+    ) -> None:
+        ...
 
 def display_md_table(md_table):
     """
@@ -44,3 +55,26 @@ def increase_token_usage(
     token_usage["prompt_tokens"] += incremental["prompt_tokens"]
 
     return token_usage
+
+def extract_integers(text):
+    """
+    Extract only "pure integers":
+    - Skip numbers with decimal points (including forms like 3.14, 1.0, .99, etc.)
+    - Skip numbers immediately followed (possibly with spaces) by '%' or '％' (e.g., 8%, 8 %)
+    - Keep only integers like 42, 100, etc.
+    - Remove duplicates and exclude 0
+    """
+    # 1) (?<![\d.]) ensures that the left side is not a digit or a dot.
+    # 2) (\d+) matches a sequence of digits.
+    # 3) (?![\d.]| *[%％]) ensures that the right side is not a digit, a dot,
+    #    or zero or more spaces followed by '%' or '％'.
+    pattern = r'(?<![\d.])(\d+)(?![\d.]| *[%％])'
+
+    # Convert matched digit-strings to integers, use a set to remove duplicates,
+    # then remove 0 if present
+    return list(
+        set(
+            int(num_str)
+            for num_str in re.findall(pattern, text)
+        ) - {0}
+    )

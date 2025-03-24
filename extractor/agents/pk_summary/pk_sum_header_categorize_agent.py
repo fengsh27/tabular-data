@@ -6,7 +6,7 @@ import logging
 
 from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
-from extractor.agents.pk_sum_common_agent import PKSumCommonAgentResult
+from extractor.agents.pk_summary.pk_sum_common_agent import PKSumCommonAgentResult
 
 logger = logging.getLogger(__name__)
 
@@ -68,17 +68,17 @@ HeaderCategorizeJsonSchema = {
     
 def post_process_validate_categorized_result(
     result: HeaderCategorizeResult | dict,
-    md_table: str,
-):
+    md_table_aligned: str,
+) -> HeaderCategorizeResult:
     if isinstance(result, dict):
         try:
-            result = HeaderCategorizeResult(**result)
+            res = HeaderCategorizeResult(**result)
         except ValidationError as e:
             logger.error(e)
             raise e
     # Ensure column count matches the table
-    expected_columns = markdown_to_dataframe(md_table).shape[1]
-    match_dict = result.categorized_headers
+    expected_columns = markdown_to_dataframe(md_table_aligned).shape[1]
+    match_dict = res.categorized_headers
     if len(match_dict.keys()) != expected_columns:
         raise ValueError(f"Mismatch: Expected {expected_columns} columns, but got {len(match_dict.keys())} in match_dict.")
 
@@ -87,7 +87,7 @@ def post_process_validate_categorized_result(
     if parameter_type_count != 1:
         raise ValueError(f"Invalid mapping: Expected 1 'Parameter type' column, but found {parameter_type_count}.")
     
-    return None
+    return res
 
 
 

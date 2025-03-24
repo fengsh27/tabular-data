@@ -7,7 +7,7 @@ import pandas as pd
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown
 from extractor.agents.agent_utils import display_md_table
-from extractor.agents.pk_sum_common_agent import (
+from extractor.agents.pk_summary.pk_sum_common_agent import (
     PKSumCommonAgentResult,
 )
 

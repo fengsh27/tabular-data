@@ -5,7 +5,7 @@ from pydantic import BaseModel, Field
 from TabFuncFlow.operations.f_split_by_cols import f_split_by_cols
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, fix_col_name, markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
-from extractor.agents.pk_sum_common_agent import PKSumCommonAgentResult
+from extractor.agents.pk_summary.pk_sum_common_agent import PKSumCommonAgentResult
 
 SPLIT_BY_COLUMNS_PROMPT = ChatPromptTemplate.from_template("""
 There is a table related to pharmacokinetics (PK):
@@ -64,7 +64,7 @@ class SplitByColumnsResult(PKSumCommonAgentResult):
 
 def post_process_split_by_columns(
     res: SplitByColumnsResult,
-    md_table: str,
+    md_table_aligned: str,
 ) -> list[str]:
     """
     split table to sub-tables according res.sub_tables_columns
@@ -74,9 +74,9 @@ def post_process_split_by_columns(
     """
     col_groups = res.sub_tables_columns
     # Fix column names before using them
-    col_groups = [[fix_col_name(item, md_table) for item in group] for group in col_groups]
+    col_groups = [[fix_col_name(item, md_table_aligned) for item in group] for group in col_groups]
     # Perform the actual column splitting
-    df_table = f_split_by_cols(col_groups, markdown_to_dataframe(md_table))
+    df_table = f_split_by_cols(col_groups, markdown_to_dataframe(md_table_aligned))
 
     # Convert the resulting DataFrames to markdown
     return_md_table_list = [dataframe_to_markdown(d) for d in df_table]
