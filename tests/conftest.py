@@ -117,6 +117,14 @@ def caption():
     return "Non-compartmental pharmacokinetics parameters from Elective Cohort patients. C<sub>max</sub> is maximum concentration. AUC<sub>0-∞</sub> is area-under-the-curve to infinity. CL is clearance. Vdz is apparent volume of distribution. T<sub>1/2</sub> is half-life."
 
 @pytest.fixture(scope="module")
+def md_table_drug():
+    return """
+| Drug name | Analyte | Specimen |
+| --- | --- | --- |
+| N/A | N/A | Plasma |
+"""
+
+@pytest.fixture(scope="module")
 def md_table_patient():
     return """
 | Population | Pregnancy stage | Subject N |

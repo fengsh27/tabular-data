@@ -18,6 +18,10 @@ class PKSumWorkflowState(TypedDict):
     md_table_aligned: Optional[str] = None
     md_table_list: Optional[list[str]] = None
     type_unit_list: Optional[list[str]] = None
+    drug_list: Optional[list[str]] = None
+    patient_list: Optional[list[str]] = None
+    value_list: Optional[list[str]] = None # value table list
+
     step_callback: Optional[StepCallback] = None
   
 

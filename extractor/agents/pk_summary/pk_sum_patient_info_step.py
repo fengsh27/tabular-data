@@ -4,7 +4,7 @@ from extractor.agents.agent_utils import (
     display_md_table, 
     extract_integers,
 )
-from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonStep
+from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonAgentStep
 from extractor.agents.pk_summary.pk_sum_workflow_utils import (
     pk_sum_enter_step,
     pk_sum_leave_step,
@@ -43,7 +43,7 @@ def extract_patient_info(state: PKSumWorkflowState):
         token_usage,
     )
 
-class PatientInfoExtractionStep(PKSumCommonStep):
+class PatientInfoExtractionStep(PKSumCommonAgentStep):
     """ Step to Extract Patient Information """
     def __init__(self):
         super().__init__()

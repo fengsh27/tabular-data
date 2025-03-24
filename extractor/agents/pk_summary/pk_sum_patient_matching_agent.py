@@ -67,3 +67,4 @@ def post_process_validate_matched_patients(
     if len(match_list) != expected_rows:
         raise RetryException("Wrong answer example:\n" + str(match_list) + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {len(match_list)} extracted matches.")
     
+    return match_list

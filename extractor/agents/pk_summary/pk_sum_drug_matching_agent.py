@@ -63,5 +63,5 @@ def post_process_validate_matched_rows(
         raise RetryException(
             f"Mismatch: Expected {expected_rows} rows, but got {len(match_list)} extracted matches."
         )
-    return res
+    return match_list
 

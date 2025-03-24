@@ -21,14 +21,6 @@ class PKSumCommonStep(ABC):
         self.start_descp = ""
         self.end_title = ""
 
-    @abstractmethod
-    def get_system_prompt(self, state: PKSumWorkflowState):
-        """get system prompt"""
-
-    def get_instruction_prompt(self, state: PKSumWorkflowState):
-        """ get instruction prompt """
-        return INSTRUCTION_PROMPT
-    
     def enter_step(self, state: PKSumWorkflowState):
         pk_sum_enter_step(state, self.start_title, self.start_descp)
 
@@ -41,6 +33,32 @@ class PKSumCommonStep(ABC):
     ):
         pk_sum_leave_step(state, self.end_title, res.reasoning_process, token_usage)
 
+    def execute(self, state: PKSumWorkflowState):
+        self.enter_step(state)
+        res, processed_res, token_usage = self.execute_directly(state)
+        self.leave_step(state, res, processed_res, token_usage)
+
+    @abstractmethod
+    def execute_directly(self,  state: PKSumWorkflowState,) -> Tuple[
+        PKSumCommonAgentResult, 
+        Any | None, 
+        dict | None
+    ]:
+        """ execute directly """
+
+
+class PKSumCommonAgentStep(PKSumCommonStep):
+    def __init__(self):
+        super().__init__()
+
+    @abstractmethod
+    def get_system_prompt(self, state: PKSumWorkflowState):
+        """get system prompt"""
+
+    def get_instruction_prompt(self, state: PKSumWorkflowState):
+        """ get instruction prompt """
+        return INSTRUCTION_PROMPT
+    
     @abstractmethod
     def get_schema(self) -> PKSumCommonAgentResult | dict:
         """ get result schema (pydantic BaseModel or json schema)"""
@@ -51,12 +69,6 @@ class PKSumCommonStep(ABC):
         dict | None,
     ]:
         """ get post_processor and its kwargs """
-
-
-    def execute(self, state: PKSumWorkflowState):
-        self.enter_step(state)
-        res, processed_res, token_usage = self.execute_directly(state)
-        self.leave_step(state, res, processed_res, token_usage)
 
     def execute_directly(self, state: PKSumWorkflowState) -> Tuple[
         PKSumCommonAgentResult,
@@ -86,6 +98,5 @@ class PKSumCommonStep(ABC):
                 post_process=post_process,
             )
         
-
 
 

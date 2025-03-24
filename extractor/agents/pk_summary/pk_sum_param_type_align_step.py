@@ -1,12 +1,12 @@
 
-from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonStep
+from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonAgentStep
 from extractor.agents.pk_summary.pk_sum_param_type_align_agent import (
     ParameterTypeAlignResult,
     PARAMETER_TYPE_ALIGN_PROMPT,
     post_process_parameter_type_align
 )
 
-class ParametertypeAlignStep(PKSumCommonStep):
+class ParametertypeAlignStep(PKSumCommonAgentStep):
     def __init__(self):
         super().__init__()
         self.start_title = "Aligning Parameter Type"

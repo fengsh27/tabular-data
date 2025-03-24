@@ -5,7 +5,7 @@ import pandas as pd
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
 from extractor.agents.pk_summary.pk_sum_common_agent import PKSumCommonAgent
-from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonStep
+from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonAgentStep
 from extractor.agents.pk_summary.pk_sum_param_type_unit_extract_agent import (
     ExtractedParamTypeUnits,
     get_param_type_unit_extraction_prompt,
@@ -13,7 +13,7 @@ from extractor.agents.pk_summary.pk_sum_param_type_unit_extract_agent import (
     post_process_validate_matched_tuple,
 )
 
-class ExtractParamTypeAndUnitStep(PKSumCommonStep):
+class ExtractParamTypeAndUnitStep(PKSumCommonAgentStep):
     def __init__(self):
         super().__init__()
         self.start_title = "Parameter Type and Unit Extraction"

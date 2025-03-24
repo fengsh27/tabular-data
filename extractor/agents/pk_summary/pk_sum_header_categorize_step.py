@@ -1,5 +1,5 @@
 
-from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonStep
+from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonAgentStep
 from extractor.agents.pk_summary.pk_sum_header_categorize_agent import (
     HeaderCategorizeResult,
     get_header_categorize_prompt,
@@ -7,7 +7,7 @@ from extractor.agents.pk_summary.pk_sum_header_categorize_agent import (
     post_process_validate_categorized_result,
 )
 
-class HeaderCategorizeStep(PKSumCommonStep):
+class HeaderCategorizeStep(PKSumCommonAgentStep):
     def __init__(self):
         super().__init__()
 

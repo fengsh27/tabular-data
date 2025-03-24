@@ -1,13 +1,13 @@
 
 from extractor.agents.agent_utils import display_md_table
-from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonStep
+from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonAgentStep
 from extractor.agents.pk_summary.pk_sum_individual_data_del_agent import (
     INDIVIDUAL_DATA_DEL_PROMPT,
     IndividualDataDelResult,
     post_process_individual_del_result,
 )
 
-class IndividualDataDelStep(PKSumCommonStep):
+class IndividualDataDelStep(PKSumCommonAgentStep):
     """ The step to delete individual data """
     def __init__(self):
         super().__init__()

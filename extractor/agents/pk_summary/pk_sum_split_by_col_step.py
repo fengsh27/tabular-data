@@ -1,14 +1,14 @@
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE
-from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonStep
+from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonAgentStep
 from extractor.agents.pk_summary.pk_sum_split_by_col_agent import (
     get_split_by_columns_prompt,
     SplitByColumnsResult,
     post_process_split_by_columns,
 )
 
-class SplitByColumnsStep(PKSumCommonStep):
+class SplitByColumnsStep(PKSumCommonAgentStep):
     def __init__(self):
         super().__init__()
         self.start_title = "Sub-table Creation"

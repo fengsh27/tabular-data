@@ -1,6 +1,6 @@
 
 from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
-from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonStep
+from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonAgentStep
 from extractor.agents.pk_summary.pk_sum_workflow_utils import (
     pk_sum_enter_step,
     pk_sum_leave_step,
@@ -18,7 +18,7 @@ from extractor.agents.pk_summary.pk_sum_patient_info_refine_agent import (
     post_process_refined_patient_info,
 )
     
-class PatientInfoRefinementStep(PKSumCommonStep):
+class PatientInfoRefinementStep(PKSumCommonAgentStep):
     def __init__(self):
         super().__init__()
         self.start_title = "Refining Population Information"

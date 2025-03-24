@@ -4,7 +4,7 @@ from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
 from extractor.agents.agent_utils import (
     display_md_table, 
 )
-from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonStep
+from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonAgentStep
 from extractor.agents.pk_summary.pk_sum_common_agent import (
     PKSumCommonAgentResult,
 )
@@ -15,7 +15,7 @@ from extractor.agents.pk_summary.pk_sum_drug_info_agent import (
 )
 from extractor.agents.pk_summary.pk_sum_workflow_utils import PKSumWorkflowState
 
-class DrugInfoExtractionStep(PKSumCommonStep):
+class DrugInfoExtractionStep(PKSumCommonAgentStep):
     def __init__(self):
         super().__init__()
         self.start_title = "Extraacting Drug Information"
