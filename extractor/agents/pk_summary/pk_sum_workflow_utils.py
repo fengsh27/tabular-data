@@ -1,7 +1,8 @@
 
 
-from typing import Optional, TypedDict
+from typing import Callable, Optional, TypedDict
 from langchain_openai.chat_models.base import BaseChatOpenAI
+import pandas as pd
 
 from extractor.agents.agent_utils import StepCallback
 
@@ -10,19 +11,20 @@ class PKSumWorkflowState(TypedDict):
     llm: BaseChatOpenAI
     md_table: str
     caption: str
-    col_mapping: Optional[dict] = None
-    md_table_drug: Optional[str] = None
-    md_table_patient: Optional[str] = None
-    md_table_patient_refined: Optional[str] = None
-    md_table_summary: Optional[str] = None
-    md_table_aligned: Optional[str] = None
-    md_table_list: Optional[list[str]] = None
-    type_unit_list: Optional[list[str]] = None
-    drug_list: Optional[list[str]] = None
-    patient_list: Optional[list[str]] = None
-    value_list: Optional[list[str]] = None # value table list
+    col_mapping: Optional[dict]
+    md_table_drug: Optional[str]
+    md_table_patient: Optional[str]
+    md_table_patient_refined: Optional[str]
+    md_table_summary: Optional[str]
+    md_table_aligned: Optional[str]
+    md_table_list: Optional[list[str]]
+    type_unit_list: Optional[list[str]]
+    drug_list: Optional[list[str]]
+    patient_list: Optional[list[str]]
+    value_list: Optional[list[str]] # value table list
+    df_combined: Optional[pd.DataFrame]
 
-    step_callback: Optional[StepCallback] = None
+    step_callback: Optional[Callable] # StepCallback
   
 
 def pk_sum_enter_step(

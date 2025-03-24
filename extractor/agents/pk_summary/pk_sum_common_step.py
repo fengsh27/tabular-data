@@ -27,11 +27,16 @@ class PKSumCommonStep(ABC):
     def leave_step(
         self, 
         state: PKSumWorkflowState,
-        res: PKSumCommonAgentResult,
+        res: PKSumCommonAgentResult | None = None,
         processed_res: Any | None = None,
         token_usage: dict | None = None,
     ):
-        pk_sum_leave_step(state, self.end_title, res.reasoning_process, token_usage)
+        pk_sum_leave_step(
+            state=state,
+            step_output=self.end_title,
+            step_reasoning_process=res.reasoning_process if res is not None else None,
+            token_usage=token_usage
+        )
 
     def execute(self, state: PKSumWorkflowState):
         self.enter_step(state)

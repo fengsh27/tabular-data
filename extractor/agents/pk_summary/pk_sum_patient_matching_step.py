@@ -33,12 +33,11 @@ class PatientMatchingAutomaticStep(PKSumCommonStep):
             df_expanded = pd.concat([markdown_to_dataframe(md_table_patient_refined)] * row_num, ignore_index=True)  # 这
             patient_list.append(dataframe_to_markdown(df_expanded))
 
-        return MatchedPatientResult(
-            reasoning_process="",
-            matched_row_indices=[],
-        ), patient_list, DEFAULT_TOKEN_USAGE
+        return None, patient_list, DEFAULT_TOKEN_USAGE
 
     def leave_step(self, state, res, processed_res = None, token_usage = None):
+        if processed_res is not None:
+            state['patient_list'] = processed_res
         return super().leave_step(state, res, processed_res, token_usage)
 
 class PatientMatchingAgentStep(PKSumCommonStep):

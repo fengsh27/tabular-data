@@ -2,7 +2,7 @@
 import pytest
 
 from TabFuncFlow.utils.table_utils import single_html_table_to_markdown
-from extractor.agents.pk_summary.pk_sum_workflow import (
+from extractor.agents.pk_summary.pk_sum_workflow_utils import (
     PKSumWorkflowState
 )
 from extractor.agents.pk_summary.pk_sum_patient_info_refine_step import (
