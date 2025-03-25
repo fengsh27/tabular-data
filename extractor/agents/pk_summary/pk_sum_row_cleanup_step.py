@@ -2,6 +2,7 @@
 from difflib import get_close_matches
 import itertools
 import pandas as pd
+import re
 
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE
 from extractor.agents.pk_summary.pk_sum_common_agent import PKSumCommonAgentResult
@@ -16,6 +17,7 @@ class RowCleanupStep(PKSumCommonStep):
 
     def execute_directly(self, state):
         df_combined = state['df_combined']
+        df_combined["original_index"] = df_combined.index
         expected_columns = ["Drug name", "Analyte", "Specimen", "Population", "Pregnancy stage", "Pediatric/Gestational age", "Subject N", "Parameter type", "Parameter unit", "Main value", "Statistics type", "Variation type", "Variation value", "Interval type", "Lower bound", "Upper bound", "P value"]
 
         def rename_columns(df, expected_columns):

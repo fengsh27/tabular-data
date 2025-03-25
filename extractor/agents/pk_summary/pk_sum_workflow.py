@@ -1,5 +1,5 @@
 
-from typing import Optional
+from typing import Callable, Optional
 from langchain_openai.chat_models.base import BaseChatOpenAI
 from langgraph.graph import StateGraph, START
 import logging
@@ -112,10 +112,15 @@ class PKSumWorkflow:
 
         self.graph = graph.compile()
         # display(Image(self.graph.get_graph().draw_mermaid_png()))            
-        logger.info(self.graph.get_graph().draw_ascii())
-        print(self.graph.get_graph().draw_ascii())
+        # logger.info(self.graph.get_graph().draw_ascii())
+        # print(self.graph.get_graph().draw_ascii())
 
-    def go(self, html_content: str, caption_and_footnote: str):
+    def go(
+        self, 
+        html_content: str, 
+        caption_and_footnote: str, 
+        step_callback: Callable | None = None
+    ):
         md_table = single_html_table_to_markdown(html_content)
         config = {"recursion_limit": 500}
 
@@ -123,7 +128,8 @@ class PKSumWorkflow:
             input={
                 "md_table": md_table,
                 "caption": caption_and_footnote,
-                "llm": self.llm
+                "llm": self.llm,
+                "step_callback": step_callback,
             }, 
             config=config,
             stream_mode="values",

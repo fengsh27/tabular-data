@@ -34,7 +34,7 @@ class PKSumCommonStep(ABC):
         pk_sum_leave_step(
             state=state,
             step_output=self.end_title,
-            step_reasoning_process=res.reasoning_process if res is not None else None,
+            step_reasoning_process=res['reasoning_process'] if res is not None and 'reasoning_process' in res else None,
             token_usage=token_usage
         )
 
@@ -42,6 +42,8 @@ class PKSumCommonStep(ABC):
         self.enter_step(state)
         res, processed_res, token_usage = self.execute_directly(state)
         self.leave_step(state, res, processed_res, token_usage)
+
+        return state
 
     @abstractmethod
     def execute_directly(self,  state: PKSumWorkflowState,) -> Tuple[

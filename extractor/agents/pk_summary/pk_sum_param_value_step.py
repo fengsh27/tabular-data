@@ -26,7 +26,7 @@ class ParameterValueExtractionStep(PKSumCommonStep):
         round = 0
         total_token_usage = DEFAULT_TOKEN_USAGE
         for md in md_table_list:
-            rount += 1
+            round += 1
             system_prompt = get_parameter_value_prompt(md_table_aligned, md, caption)
             agent = PKSumCommonAgent(llm=llm)
             res, processed_res, token_usage = agent.go(
@@ -36,7 +36,7 @@ class ParameterValueExtractionStep(PKSumCommonStep):
                 post_process=post_process_matched_list,
                 expected_rows=markdown_to_dataframe(md).shape[0]
             )
-            value_list += processed_res
+            value_list.append(processed_res)
             total_token_usage = increase_token_usage(token_usage)
 
         return ParameterValueResult(

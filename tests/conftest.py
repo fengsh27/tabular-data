@@ -43,7 +43,7 @@ def get_deepseek():
 def llm():    
     return get_openai()
 
-html_content = """
+ghtml_content = """
 <section id="S8">
    <h3 class="pmc_sec_title">Pharmacokinetics</h3>
    <p id="P25"><a class="usa-link" href="#T2">Table II</a> summarizes the noncompartmental PK evaluation for the Elective Cohort. Eight pharmacokinetic samples (0.3%) were excluded, seven due to suspected contamination from the infused drug and one due to collection during the lorazepam infusion. Overall, the mean area-under-the-curve (AUC<sub>0-∞</sub>) was 822.5 ng*hr/mL and the median AUC<sub>0-∞</sub> was 601.5 ng*hr/mL with an average dose of 0.04 mg/kg. The overall fit of the population PK model was good over the wide range of individuals in the population. There were no covariates meeting criteria for inclusion into the model. Thirty three subjects (23 Status Cohort, 10 Elective Cohort) had received, at baseline, at least one agent that can induce drug metabolizing enzymes. The calculated value for terminal (beta) half-life was 16 hours for a typical 24 kg child. The empiric Bayesian estimated parameters from the post-hoc analysis are summarized in <a class="usa-link" href="#T3">Table III</a>. The model demonstrated good model prediction of observed concentrations even when applied to the patients exhibiting the highest and lowest individual clearances, and in a patient who received a total of 9 doses of lorazepam during the PK sampling interval.</p>
@@ -112,11 +112,11 @@ html_content = """
 
 @pytest.fixture(scope="module")
 def html_content():
-    return html_content
+    return ghtml_content
 
 @pytest.fixture(scope="module")
 def md_table():
-    return single_html_table_to_markdown(html_content)
+    return single_html_table_to_markdown(ghtml_content)
 
 @pytest.fixture(scope="module")
 def caption():

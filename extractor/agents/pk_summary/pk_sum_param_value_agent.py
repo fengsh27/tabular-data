@@ -55,7 +55,7 @@ def get_parameter_value_prompt(
     first_line = md_table_aligned_with_1_param_type_and_value.strip().split("\n")[0]
     headers = [col.strip() for col in first_line.split("|") if col.strip()]
     extracted_param_types = f""" "{'", "'.join(headers)}" """
-    rows_num = markdown_to_dataframe(md_table_aligned_with_1_param_type_and_value)
+    rows_num = markdown_to_dataframe(md_table_aligned_with_1_param_type_and_value).shape[0]
     return PARAMETER_VALUE_PROMPT.format(
         processed_md_table_aligned=display_md_table(md_table_aligned),
         caption=caption,

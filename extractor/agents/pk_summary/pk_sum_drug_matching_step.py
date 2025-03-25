@@ -3,6 +3,7 @@ from typing import List
 import pandas as pd
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
+from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
 from extractor.agents.pk_summary.pk_sum_common_agent import PKSumCommonAgent
 from extractor.agents.pk_summary.pk_sum_common_step import (
@@ -42,7 +43,7 @@ class DrugMatchingAgentStep(PKSumCommonStep):
     def __init__(self):
         super().__init__()
         self.start_title = "Drug Matching (Agent)"
-        self.start_title = "Completed Drug Matching"
+        self.end_title_title = "Completed Drug Matching"
 
     def execute_directly(self, state):
         drug_list = []
@@ -58,11 +59,10 @@ class DrugMatchingAgentStep(PKSumCommonStep):
             system_prompt = get_matching_drug_prompt(
                 md_table_aligned, md, md_table_drug, caption
             )
-            instruction_prompt = self.get_instruction_prompt(state)
             agent = PKSumCommonAgent(llm=llm)
             res, processed_res, token_usage = agent.go(
                 system_prompt=system_prompt,
-                instruction_prompt=instruction_prompt,
+                instruction_prompt=INSTRUCTION_PROMPT,
                 schema=MatchedDrugResult,
                 post_process=post_process_validate_matched_rows,
                 md_table=md,
