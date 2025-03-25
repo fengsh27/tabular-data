@@ -224,7 +224,7 @@ class RowCleanupStep(PKSumCommonStep):
         df_combined.drop(columns=["original_index"], inplace=True)
         df_combined.reset_index(drop=True, inplace=True)
 
-        return None, df_combined, DEFAULT_TOKEN_USAGE
+        return None, df_combined, {**DEFAULT_TOKEN_USAGE}
     
     def leave_step(self, state, res, processed_res = None, token_usage = None):
         if processed_res is not None:

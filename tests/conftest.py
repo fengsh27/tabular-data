@@ -1,5 +1,6 @@
 
 import os
+from typing import Optional
 from langchain_deepseek import ChatDeepSeek
 from langchain_openai import AzureChatOpenAI, ChatOpenAI
 import pytest
@@ -7,6 +8,7 @@ from dotenv import load_dotenv
 import logging
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe, single_html_table_to_markdown
+from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
 
 load_dotenv()
 
@@ -15,8 +17,7 @@ def get_openai():
         api_key=os.getenv("OPENAI_API_KEY"),
         model=os.getenv("OPENAI_MODEL_NAME"),
     )
-def get_azure_openai():
-    
+def get_azure_openai():    
     return AzureChatOpenAI(
         api_key=os.environ.get("OPENAI_4O_API_KEY", None),
         azure_endpoint=os.environ.get("AZURE_OPENAI_4O_ENDPOINT", None),
@@ -41,7 +42,7 @@ def get_deepseek():
 
 @pytest.fixture(scope="module")
 def llm():    
-    return get_openai()
+    return get_azure_openai()
 
 ghtml_content = """
 <section id="S8">
@@ -234,3 +235,35 @@ def prepare_logging():
     root_logger.setLevel(level)
     root_logger.addHandler(file_handler)
     root_logger.addHandler(stream_handler)
+
+@pytest.fixture(scope="module")
+def step_callback():
+    total_tokens = {**DEFAULT_TOKEN_USAGE}
+    def print_step(
+        step_name: Optional[str]=None, 
+        step_description: Optional[str]=None,
+        step_output: Optional[str]=None,
+        step_reasoning_process: Optional[str]=None,
+        token_usage: Optional[dict]=None,
+    ):
+        nonlocal total_tokens
+        logger = logging.getLogger(__name__)
+        if step_name is not None:
+            logger.info("=" * 64)
+            logger.info(step_name)
+        if step_description is not None:
+            logger.info(step_description)
+        if token_usage is not None:
+            logger.info(
+                f"step total tokens: {token_usage['total_tokens']}, step prompt tokens: {token_usage['prompt_tokens']}, step completion tokens: {token_usage['completion_tokens']}"
+            )
+            total_tokens = increase_token_usage(total_tokens, token_usage)
+            logger.info(
+                f"overall total tokens: {total_tokens['total_tokens']}, overall prompt tokens: {total_tokens['prompt_tokens']}, overall completion tokens: {total_tokens['completion_tokens']}"
+            )
+        if step_reasoning_process is not None:
+            logger.info(f"\n\n{step_reasoning_process}\n\n")
+        if step_output is not None:
+            logger.info(step_output)
+    return print_step
+

@@ -19,7 +19,7 @@ class DrugMatchingAutomaticStep(PKSumCommonStep):
     def __init__(self):
         super().__init__()
         self.start_title = "Drug Matching (Automatic)"
-        self.start_title = "Completed Drug Matching"
+        self.end_title = "Completed Drug Matching"
 
     def execute_directly(self, state):
         drug_list = []
@@ -31,7 +31,7 @@ class DrugMatchingAutomaticStep(PKSumCommonStep):
             df_expanded = pd.concat([markdown_to_dataframe(md_table_drug)] * row_num, ignore_index=True)
             drug_list.append(dataframe_to_markdown(df_expanded))
         
-        return None, drug_list, DEFAULT_TOKEN_USAGE
+        return None, drug_list, {**DEFAULT_TOKEN_USAGE}
     
     def leave_step(self, state, res, processed_res = None, token_usage = None):
         if processed_res is not None:
@@ -43,14 +43,14 @@ class DrugMatchingAgentStep(PKSumCommonStep):
     def __init__(self):
         super().__init__()
         self.start_title = "Drug Matching (Agent)"
-        self.end_title_title = "Completed Drug Matching"
+        self.end_title = "Completed Drug Matching"
 
     def execute_directly(self, state):
         drug_list = []
         round = 0
         md_table_drug = state['md_table_drug']
         md_table_list = state['md_table_list']
-        total_token_usage = DEFAULT_TOKEN_USAGE
+        total_token_usage = {**DEFAULT_TOKEN_USAGE}
         llm = state['llm']
         caption = state['caption']
         md_table_aligned = state['md_table_aligned']

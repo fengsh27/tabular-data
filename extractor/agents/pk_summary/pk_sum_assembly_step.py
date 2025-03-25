@@ -33,7 +33,7 @@ class AssemblyStep(PKSumCommonStep):
 
         return PKSumCommonAgentResult(
             reasoning_process=""
-        ), df_combined, DEFAULT_TOKEN_USAGE
+        ), df_combined, {**DEFAULT_TOKEN_USAGE}
     
     def leave_step(self, state, res, processed_res = None, token_usage = None):
         if processed_res is not None:

@@ -24,7 +24,7 @@ class ParameterValueExtractionStep(PKSumCommonStep):
 
         value_list = []
         round = 0
-        total_token_usage = DEFAULT_TOKEN_USAGE
+        total_token_usage = {**DEFAULT_TOKEN_USAGE}
         for md in md_table_list:
             round += 1
             system_prompt = get_parameter_value_prompt(md_table_aligned, md, caption)

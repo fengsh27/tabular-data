@@ -3,6 +3,7 @@ from typing import List
 from langchain_core.prompts import ChatPromptTemplate
 from pydantic import Field
 import pandas as pd
+import logging
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
@@ -10,6 +11,8 @@ from extractor.agents.pk_summary.pk_sum_common_agent import (
     PKSumCommonAgentResult, 
     RetryException,
 )
+
+logger = logging.getLogger(__name__)
 
 PARAMETER_VALUE_PROMPT = ChatPromptTemplate.from_template("""
 The following main table contains pharmacokinetics (PK) data:  
@@ -80,6 +83,7 @@ def post_process_matched_list(
 
     # validation
     if not matched_values:
+        logger.error("Parameter value extraction failed: No valid values found.")
         raise ValueError("Parameter value extraction failed: No valid values found.")
 
     df_table = pd.DataFrame(matched_values, columns=[
@@ -87,6 +91,9 @@ def post_process_matched_list(
         'Interval type', 'Lower bound', 'Upper bound', 'P value'
     ])    
     if df_table.shape[0] != expected_rows:
+        logger.error(
+            "Wrong answer example:\n" + str(res.extracted_param_values) + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {df_table.shape[0]} extracted values."
+        )
         raise RetryException(
             "Wrong answer example:\n" + str(res.extracted_param_values) + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {df_table.shape[0]} extracted values."
         )

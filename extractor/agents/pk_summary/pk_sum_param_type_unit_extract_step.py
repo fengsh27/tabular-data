@@ -36,7 +36,7 @@ class ExtractParamTypeAndUnitStep(PKSumCommonAgentStep):
         type_unit_list: list[str] = []
         type_unit_cache: dict = {}
         round = 0
-        total_token_usage = DEFAULT_TOKEN_USAGE
+        total_token_usage = {**DEFAULT_TOKEN_USAGE}
         for md in md_table_list:
             df = markdown_to_dataframe(md)
             col_name_of_parameter_type = [col for col in df.columns if col_mapping.get(col) == "Parameter type"][0]

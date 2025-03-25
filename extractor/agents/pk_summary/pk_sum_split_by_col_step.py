@@ -64,6 +64,6 @@ class SplitByColumnsStep(PKSumCommonAgentStep):
                 sub_tables_columns=[[]],
             )
             processed_res = [md_table_aligned,]
-            return res, processed_res, DEFAULT_TOKEN_USAGE
+            return res, processed_res, {**DEFAULT_TOKEN_USAGE}
 
 
