@@ -11,6 +11,11 @@ logger = logging.getLogger(__name__)
 if "GEMINI_15_API_KEY" in os.environ:
     genai.configure(api_key=os.environ.get("GEMINI_15_API_KEY", None))
 
+def get_gemini():
+    return genai.GenerativeModel(
+        os.environ.get("GEMINI_15_MODEL", "gemini-pro")
+    )
+
 def get_client():
     try:
         model_15_pro = genai.GenerativeModel(

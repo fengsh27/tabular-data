@@ -118,15 +118,16 @@ class TableExtractionPromptsGenerator(object):
             if fobj is not None:
                 fobj.close()
 
-def _generate_table_prompts(tbl: Dict[str, str | DataFrame]):
+def _generate_table_prompts(tbl: Dict[str, str | DataFrame], id: str | None = None):
     raw_tag = tbl.get("raw_tag", None)
+    id_str = "" if id is None else f"(table index is {id})"
     if raw_tag is not None:
-        table_text = f"html table is:\n```\n{raw_tag}```\n"
+        table_text = f"html table {id_str} is:\n```\n{raw_tag}```\n"
         return table_text
     caption = tbl.get("caption", None)
     table = tbl.get("table", None)
     footnote = tbl.get("footnote", None)
-    table_text = ""
+    table_text = f"table {id_str} including caption and footnote is:\n"
     if caption is not None:
         table_text += f"table caption: {caption}\n"
     if table is not None:
@@ -137,10 +138,13 @@ def _generate_table_prompts(tbl: Dict[str, str | DataFrame]):
         table_text += f"table footnote: {footnote}\n"
     return table_text
 
-def generate_tables_prompts(tables: List[Dict[str, str|DataFrame]]):
+def generate_tables_prompts(tables: List[Dict[str, str|DataFrame]], add_table_index=False):
     prompts = "Here are the tables in the paper (including their caption and footnote)\n"
-    for table in tables:
-        prompts += _generate_table_prompts(table)
+    for i in range(len(tables)):
+        table = tables[i]
+        prompts += _generate_table_prompts(
+            table, str(i) if add_table_index is not None else None
+        )
         prompts += "\n"
     return prompts
 

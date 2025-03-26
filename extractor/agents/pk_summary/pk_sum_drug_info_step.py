@@ -18,7 +18,7 @@ from extractor.agents.pk_summary.pk_sum_workflow_utils import PKSumWorkflowState
 class DrugInfoExtractionStep(PKSumCommonAgentStep):
     def __init__(self):
         super().__init__()
-        self.start_title = "Extraacting Drug Information"
+        self.start_title = "Extracting Drug Information"
         self.end_title = "Completed to Extract Drug Information"
 
     def get_system_prompt(self, state):

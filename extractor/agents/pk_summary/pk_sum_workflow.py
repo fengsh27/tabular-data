@@ -1,4 +1,5 @@
 
+import time
 from typing import Callable, Optional
 from langchain_openai.chat_models.base import BaseChatOpenAI
 from langgraph.graph import StateGraph, START
@@ -119,7 +120,8 @@ class PKSumWorkflow:
         self, 
         html_content: str, 
         caption_and_footnote: str, 
-        step_callback: Callable | None = None
+        step_callback: Callable | None = None,
+        sleep_time: float | None = None,
     ):
         md_table = single_html_table_to_markdown(html_content)
         config = {"recursion_limit": 500}
@@ -134,9 +136,19 @@ class PKSumWorkflow:
             config=config,
             stream_mode="values",
         ):
+            if sleep_time is not None:
+                time.sleep(sleep_time)
             print(s)
 
-        return s['df_combined']
+        df_combined = s['df_combined']
+        column_mapping = {
+            "Main value": "Parameter value",
+            "Statistics type": "Parameter statistic",
+            "Lower bound": "Lower limit",
+            "Upper bound": "High limit",
+        }
+        df_combined = df_combined.rename(columns=column_mapping)
+        return df_combined
 
         
 

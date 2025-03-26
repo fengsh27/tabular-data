@@ -5,11 +5,16 @@ from datetime import datetime
 import logging
 from nanoid import generate
 from streamlit_modal import Modal
+import pandas as pd
 
 import ast
 import json
 import time
 
+from TabFuncFlow.utils.table_utils import single_html_table_to_markdown
+from components.table_utils import select_pk_tables
+from extractor.agents.agent_utils import increase_token_usage
+from extractor.agents.pk_summary.pk_sum_workflow import PKSumWorkflow
 from extractor.constants import ( 
     LLM_CHATGPT_4O,
     PROMPTS_NAME_PE,
@@ -24,6 +29,7 @@ from extractor.constants import (
 from extractor.stampers import ArticleStamper, Stamper
 from extractor.article_retriever import ExtendArticleRetriever, ArticleRetriever
 from extractor.request_openai import (
+    get_openai,
     request_to_chatgpt_4o,
 )
 from extractor.utils import (
@@ -45,6 +51,7 @@ from extractor.prompts_utils import (
 )
 from extractor.generated_table_processor import GeneratedPKSummaryTableProcessor
 from extractor.request_geminiai import (
+    get_gemini,
     request_to_gemini_15_pro,
     request_to_gemini_15_flash,
 )
@@ -66,8 +73,50 @@ def clear_results(clear_retrieved_table=False):
         ss.main_retrieved_tables=[]
     ss.main_extracted_result = None
     ss.main_token_usage = None
+    ss.token_usage = None
+    ss.logs = ""
 
+# Define the scroll operation as a function and pass in something unique for each
+# page load that it needs to re-evaluate where "bottom" is
+def output_info(msg: str):
+    ss.logs += "\n" + msg
+    ss.logs_input = ss.logs
+    logger.info(msg)
+
+def clear_info(msg: str):
+    ss.logs = ""
+    ss.logs_input = ss.logs
+
+def output_step(
+    step_name: Optional[str]=None, 
+    step_description: Optional[str]=None,
+    step_output: Optional[str]=None,
+    step_reasoning_process: Optional[str]=None,
+    token_usage: Optional[dict]=None,
+):
+    if step_name is not None:
+        output_info("=" * 64)
+        output_info(step_name)
+    if step_description is not None:
+        output_info(step_description)
+    if token_usage is not None:
+        usage_str = f"step total tokens: {token_usage['total_tokens']}, step prompt tokens: {token_usage['prompt_tokens']}, step completion tokens: {token_usage['completion_tokens']}"
+        output_info(
+            usage_str
+        )
+        ss.token_usage = increase_token_usage(ss.token_usage, token_usage)
+        usage_str = f"overall total tokens: {ss.token_usage['total_tokens']}, overall prompt tokens: {ss.token_usage['prompt_tokens']}, overall completion tokens: {ss.token_usage['completion_tokens']}"
+        output_info(
+            usage_str
+        )
+    if step_reasoning_process is not None:
+        output_info(f"\n\n{step_reasoning_process}\n\n")
+    if step_output is not None:
+        output_info(step_output)
+    
 def on_input_change(pmid: Optional[str]=None):
+    output_info("Retrieving tables from article ...")
+
     global stamper
     if pmid is None:
         pmid = ss.get("w-pmid-input")
@@ -102,7 +151,6 @@ def on_input_change(pmid: Optional[str]=None):
     )
     ss.main_info = f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Retrieving completed, {tmp_info}"
 
-
 def on_extract(pmid: str):
     global stamper
 
@@ -111,66 +159,29 @@ def on_extract(pmid: str):
     set_stamper_pmid(pmid)
     clear_results()
 
+    llm = get_openai() if ss.main_llm_option == LLM_CHATGPT_4O else get_gemini()
+    ss.token_usage = None
+    ss.logs = ""
     if ss.main_prompts_option == PROMPTS_NAME_PK_CHAIN:
-        include_tables = []
-        for ix in range(len(ss.main_retrieved_tables)):
-            include_tbl = ss.get(f"w-pmid-tbl-check-{ix}")
-            if include_tbl:
-                include_tables.append(ss.main_retrieved_tables[ix])
-        if len(include_tables) > 0:
-            shared_table_content = generate_tables_prompts(include_tables)
-
-        customized_prompts = ss.main_customized_prompts
-        if customized_prompts and len(customized_prompts) > 0:
-            st.error("Customization is not permitted for prompt chaining.")
-            return
-
-        if len(include_tables) <= 0:
-            st.error("Please select at least one table")
-            return
-
-        try:
-            fobj = open("./prompts/chainprompts/pk_prompt_chain.json", "r")
-        except Exception as e:
-            logger.error(e)
-            st.error(e)
-
-        json_content = json.load(fobj)
+        include_tables = ss.main_retrieved_tables
+        
+        output_info("We are going to select pk summary tables")
 
         """ Step 1 - Identify PK Tables """
         """ Analyze the given HTML to determine which tables are about PK. """
         """ Example response: ["Table 1", "Table 2"] """
+        selected_tables, indexes, token_usage = select_pk_tables(include_tables, llm)
+        table_no = []
+        for ix in indexes:
+            table_no.append(f"Table {int(ix)+1}")
 
-        step1_content: Optional[Dict] = json_content.get("step1", None)
-        step1_seek_for_pk_table = step1_content.get('seek_for_pk_table', None)
-        step1_format = step1_content.get('format', None)
-        step1_prompt_list = [{"role": "user", "content": step1_seek_for_pk_table},
-                             {"role": "user", "content": shared_table_content},
-                             {"role": "user", "content": step1_format}]
-
-        try:
-            stamper.output_prompts(step1_prompt_list)
-            request_llm: Optional[Callable[[List[Dict[str,str],str],str]]] = None
-            if ss.main_llm_option == LLM_CHATGPT_4O:
-                request_llm = request_to_chatgpt_4o
-            else:
-                request_llm = request_to_gemini_15_pro
-            step1_res, step1_content, step1_usage, step1_truncated = request_llm(
-                step1_prompt_list,
-                step1_format,
-            )
-            start = step1_content.find("[")
-            end = step1_content.rfind("]")
-            if start != -1 and end != -1:
-                step1_content = step1_content[start:end + 1]
-            step1_content = ast.literal_eval(str(step1_content))  # Convert to a real Python list
-
-            notification = "From the HTML you selected, the following table(s) are related to PK (Pharmacokinetics): "
-            for tn in step1_content:
-                notification += tn
-                notification += ", "
+        try:            
+            notification = f"From the HTML you selected, the following table(s) are related to PK (Pharmacokinetics): {table_no}"
+            
+            output_info(notification)
+            output_info("Step 1 completed, token usage: " + str(token_usage['total_tokens']))
             st.write(notification)
-            st.write("Step 1 completed, token usage:", str(step1_usage))
+            st.write(f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Step 1 completed, token usage: {token_usage['total_tokens']}")
 
         except Exception as e:
             logger.error(e)
@@ -178,128 +189,29 @@ def on_extract(pmid: str):
             return
 
         """ Step 2 - Further Divide Each Table """
-        """ Divide each PK table into subsections. """
-        """ Example response: ["Overall", "3 Month to < 3 Years", "3 to < 13 Years", "13 to < 18 Years"] or simply False """
         # step1_content = ['Table II', 'Table III']
 
-        table_sections = dict()  # table_name -> subsections
-
         time.sleep(0.1)
 
-        step2_usage_list = []
+        dfs = []
+        for table in selected_tables:
+            html_table = table["raw_tag"]
+            caption = "\n".join([table["caption"], table["footnote"]])
+            workflow = PKSumWorkflow(llm=llm)
+            workflow.build()
+            df = workflow.go(
+                html_content=html_table, 
+                caption_and_footnote=caption, 
+                step_callback=output_step,
+            )
+            dfs.append(df)
+        df_combined = pd.concat(dfs, axis=0)
 
-        for table_name in step1_content:
-            step2_content: Optional[Dict] = json_content.get("step2", None)
-            step2_further_divide_the_table = step2_content.get('further_divide_the_table', None)
-            step2_further_divide_the_table = step2_further_divide_the_table.replace('TABLE_NAME', table_name)
-            step2_format = step2_content.get('format', None)
-            step2_format = step2_format.replace('TABLE_NAME', table_name)
-            step2_prompt_list = [{"role": "user", "content": step2_further_divide_the_table},
-                                 {"role": "user", "content": shared_table_content},
-                                 {"role": "user", "content": step2_format}]
-            for attempt in range(5):
-                try:
-                    stamper.output_prompts(step2_prompt_list)
-                    request_llm: Optional[Callable[[List[Dict[str,str],str],str]]] = None
-                    if ss.main_llm_option == LLM_CHATGPT_4O:
-                        request_llm = request_to_chatgpt_4o
-                    else:
-                        request_llm = request_to_gemini_15_pro
-                    step2_res, step2_content, step2_usage, step2_truncated = request_llm(
-                        step2_prompt_list,
-                        step2_format,
-                    )
-                    step2_usage_list.append(step2_usage)
-                    if '[' in step2_content and ']' in step2_content:
-                        start = step2_content.find("[")
-                        end = step2_content.rfind("]")
-                        if start != -1 and end != -1:
-                            step2_content = step2_content[start:end + 1]
-                        step2_content = ast.literal_eval(str(step2_content))  # Convert to a real Python list
-                        table_sections[table_name] = step2_content
-                        notification = f"{table_name} can be split into the following sections: "
-                        for sn in step2_content:
-                            notification += sn
-                            notification += ", "
-                        st.write(notification)
-                    # elif 'False' in step2_content:
-                    else:
-                        table_sections[table_name] = None
-                        st.write(f"{table_name} cannot be further split.")
-                    break
-                except Exception as e:
-                    logging.error(f"Split {table_name}, attempt {attempt + 1} failed: {e}")
-                    st.error(f"Split {table_name}, attempt {attempt + 1} failed: {e}")
-                    time.sleep(0.1 * (attempt + 1))
-                    table_sections[table_name] = None
+        output_info(f"Extracting tabular data completed, token usage: {ss.token_usage['total_tokens']}")
+        st.write(f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Extracting tabular data completed, token usage: {ss.token_usage['total_tokens']}")
 
-        st.write("Step 2 completed, token usage:", str(sum(step2_usage_list)))
-
-        """ Step 3 - Extract from Each Table Section """
-        """ Extract the information from each section of each table. """
-
-        # table_sections = {'Table II': None, 'Table III': ["Overall", "3 Month to < 3 Years", "3 to < 13 Years", "13 to < 18 Years"]}
-        # table_sections = {'Table II': None, 'Table III': ["Overall", "3 Month to < 3 Years"]}
-        # table_sections = {'Table II': None}
-        time.sleep(0.1)
-
-        table_section_name_list = []
-
-        for tn in table_sections.keys():
-            if table_sections[tn] is None:
-                table_section_name_list.append(tn)
-            else:
-                for sn in table_sections[tn]:
-                    table_section_name_list.append(f"`{sn}` part of {tn}")
-
-        # st.write(table_section_name_list)
-        step3_usage_list = []
-        final_csv_list = []
-
-        for table_section_name in table_section_name_list:
-            step3_content: Optional[Dict] = json_content.get("step3", None)
-            step3_extract_from_each_table_section = step3_content.get('extract_from_each_table_section', None)
-            step3_extract_from_each_table_section = step3_extract_from_each_table_section.replace('TABLE_SECTION_NAME', table_section_name)
-            step3_format = step3_content.get('format', None)
-            step3_format = step3_format.replace('TABLE_SECTION_NAME', table_section_name)
-            step3_prompt_list = [
-                {"role": "user", "content": step3_extract_from_each_table_section},
-                {"role": "user", "content": shared_table_content},
-                {"role": "user", "content": step3_format}]
-
-            for attempt in range(5):
-                try:
-                    stamper.output_prompts(step3_prompt_list)
-                    request_llm: Optional[Callable[[List[Dict[str, str]], str], str]] = None
-                    if ss.main_llm_option == LLM_CHATGPT_4O:
-                        request_llm = request_to_chatgpt_4o
-                    else:
-                        request_llm = request_to_gemini_15_pro
-                    step3_res, step3_content, step3_usage, step3_truncated = request_llm(
-                        step3_prompt_list,
-                        step3_format,
-                    )
-                    step3_usage_list.append(step3_usage)
-                    if '[' in step3_content and ']' in step3_content:
-                        start = step3_content.find("[")
-                        end = step3_content.rfind("]")
-                        if start != -1 and end != -1:
-                            st.write(f"Processing {table_section_name}")
-                            processor = GeneratedPKSummaryTableProcessor(PROMPTS_NAME_PK)
-                            has_header = table_section_name == table_section_name_list[0]
-                            csv_str = processor.process_content(step3_content[start:end + 1], has_header)
-                            # st.write(csv_str)
-                            final_csv_list.append(csv_str)
-                    break
-                except Exception as e:
-                    logging.error(f"{table_section_name}, attempt {attempt + 1} failed: {e}")
-                    st.error(f"{table_section_name}, attempt {attempt + 1} failed: {e}")
-                    time.sleep(0.1*(attempt + 1))
-        final_csv_str = ''.join(final_csv_list)
-        st.write("Step 3 completed, token usage:", str(sum(step3_usage_list)))
-
-        ss.main_extracted_result = final_csv_str
-        ss.main_token_usage = step1_usage + sum(step2_usage_list) + sum(step3_usage_list)
+        ss.main_extracted_result = df_combined.to_csv()
+        ss.main_token_usage = ss.token_usage
         # ss.main_token_usage = sum(step3_usage_list)
         return
 
@@ -328,13 +240,6 @@ def on_extract(pmid: str):
         prompts_list.append({
             "role": "user",
             "content": generate_tables_prompts(include_tables)
-        })
-
-    customized_prompts = ss.main_customized_prompts
-    if customized_prompts and len(customized_prompts) > 0:
-        prompts_list.append({
-            "role": "user",
-            "content": customized_prompts,
         })
 
     source = ""
@@ -403,8 +308,9 @@ def main_tab():
     ss.setdefault("main_extracted_btn_disabled", True)
     ss.setdefault("main_prompts_option", PROMPTS_NAME_PK)
     ss.setdefault("main_llm_option", LLM_CHATGPT_40)
-    ss.setdefault("main_customized_prompts", "")
-
+    ss.setdefault("logs", "")
+    ss.setdefault('token_usage', None)
+    
     modal = Modal(
         "Prompts",
         key="prompts-modal",
@@ -461,18 +367,18 @@ def main_tab():
             html_table_extract_btn = st.button(
                 "Extract Data ...",
                 key="w-html-table-extract",
-            )
+            )            
             if html_table_input and html_table_retrive_btn:
                 with st.spinner("Obtaining article ..."):
                     on_retrive_table_from_html_table(html_table_input)
             if html_table_input and html_table_extract_btn:
                 with st.spinner("Extract data ..."):
                     on_extract_from_html_table()
-            
+        
         if ss.main_info and len(ss.main_info) > 0:
             st.write(ss.main_info)
         if ss.main_extracted_result is not None:
-            usage = ss.main_token_usage
+            usage = ss.main_token_usage["total_tokens"]
             st.header(f"Extracted Result {'' if usage is None else '(token: '+str(usage)+')'}.",
                       divider="blue")
             if is_valid_csv_table(ss.main_extracted_result):
@@ -517,13 +423,12 @@ def main_tab():
         ), index=0)
         ss.main_llm_option = llm_option
         st.divider()
-        prompts_array = (PROMPTS_NAME_PK, PROMPTS_NAME_PE, PROMPTS_NAME_PK_COT, PROMPTS_NAME_PK_CHAIN)
+        prompts_array = (PROMPTS_NAME_PK_CHAIN, PROMPTS_NAME_PK, PROMPTS_NAME_PK_COT, PROMPTS_NAME_PE)
         option = st.selectbox("What type of prompts would you like to use?", prompts_array, index=0)
         ss.main_prompts_option = option
         open_modal = st.button("View Prompts ...")
+        logs_input = st.text_area("Logs", key="logs_input", height=140)
         st.divider()
-        customized_prompts = st.text_area("Customized Prompts (Optional):", height=70)
-        ss.main_customized_prompts = customized_prompts
         if not ss.main_extracted_btn_disabled:
             tables = (
                 ss.main_retrieved_tables if ss.main_retrieved_tables is not None else []
@@ -546,3 +451,17 @@ def main_tab():
         with modal.container():
             st.text(prmpts)
             st.divider()
+    
+    js = f"""
+<script>
+    function scroll(dummy_var_to_force_repeat_execution){{
+        var textAreas = parent.document.querySelectorAll('.stTextArea textarea'); // document.getElementById("logs_input"); // 
+        for (let index = 0; index < textAreas.length; index++) {{
+            // textAreas[index].style.color = 'red'
+            textAreas[index].scrollTop = textAreas[index].scrollHeight;
+        }}
+    }}
+    scroll({len(ss.logs_input)})
+</script>
+"""
+    st.components.v1.html(js)

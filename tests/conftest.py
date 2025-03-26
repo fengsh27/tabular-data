@@ -111,6 +111,9 @@ ghtml_content = """
 </section>
 """
 
+ghtml_content1 = """
+<section class="tw xbox font-sm" id="T3"><h4 class="obj_head">Table 3.</h4>\n<div class="caption p"><p id="P41">Bayesian pharmacokinetics parameters (all subjects). CL is clearance. Vdss is volume of distribution at steady state. Beta is the terminal slope of the log concentration versus time profile. T<sub>½</sub> Beta is the elimination half-life.</p></div>\n<div class="tbl-box p" tabindex="0"><table class="content" frame="hsides" rules="groups">\n<thead><tr>\n<th align="left" colspan="1" rowspan="1"></th>\n<th align="center" colspan="1" rowspan="1" valign="top">Free Fraction</th>\n<th align="center" colspan="1" rowspan="1">CL<br/>(mL/min/kg)</th>\n<th align="center" colspan="1" rowspan="1">CL<br/>mL/min/m<sup>2</sup>)</th>\n<th align="center" colspan="1" rowspan="1">Vdss<br/>(L/kg)</th>\n<th align="center" colspan="1" rowspan="1">Beta<br/>(hr<sup>−1</sup>)</th>\n<th align="center" colspan="1" rowspan="1">T<sub>½</sub> Beta<br/>(hr)</th>\n</tr></thead>\n<tbody>\n<tr>\n<td align="left" colspan="1" rowspan="1"><strong>Overall</strong></td>\n<td align="center" colspan="1" rowspan="1"></td>\n<td align="center" colspan="1" rowspan="1"></td>\n<td align="center" colspan="1" rowspan="1"></td>\n<td align="center" colspan="1" rowspan="1"></td>\n<td align="center" colspan="1" rowspan="1"></td>\n<td align="center" colspan="1" rowspan="1"></td>\n</tr>\n<tr>\n<td align="left" colspan="1" rowspan="1">N</td>\n<td align="center" colspan="1" rowspan="1">61</td>\n<td align="center" colspan="1" rowspan="1">63</td>\n<td align="center" colspan="1" rowspan="1">63</td>\n<td align="center" colspan="1" rowspan="1">63</td>\n<td align="center" colspan="1" rowspan="1">63</td>\n<td align="center" colspan="1" rowspan="1">63</td>\n</tr>\n<tr>\n<td align="left" colspan="1" rowspan="1">Range</td>\n<td align="center" colspan="1" rowspan="1">0.07–0.48</td>\n<td align="center" colspan="1" rowspan="1">0.3–7.75</td>\n<td align="center" colspan="1" rowspan="1">6.50–147.17</td>\n<td align="center" colspan="1" rowspan="1">0.49–3.40</td>\n<td align="center" colspan="1" rowspan="1">0.017–0.118</td>\n<td align="center" colspan="1" rowspan="1">5.9–42.0</td>\n</tr>\n<tr>\n<td align="left" colspan="1" rowspan="1">Mean ± s.d.</td>\n<td align="center" colspan="1" rowspan="1">0.10 ± 0.05</td>\n<td align="center" colspan="1" rowspan="1">1.2 ± 0.93</td>\n<td align="center" colspan="1" rowspan="1">33.33 ± 19.33</td>\n<td align="center" colspan="1" rowspan="1">1.48 ± 0.54</td>\n<td align="center" colspan="1" rowspan="1">0.048 ± 0.020</td>\n<td align="center" colspan="1" rowspan="1">16.8 ± 7.1</td>\n</tr>\n<tr>\n<td align="left" colspan="1" rowspan="1">Median</td>\n<td align="center" colspan="1" rowspan="1">0.09</td>\n<td align="center" colspan="1" rowspan="1">1.08</td>\n<td align="center" colspan="1" rowspan="1">29.00</td>\n<td align="center" colspan="1" rowspan="1">1.37</td>\n<td align="center" colspan="1" rowspan="1">0.046</td>\n<td align="center" colspan="1" rowspan="1">15.1</td>\n</tr>\n<tr>\n<td align="left" colspan="1" rowspan="1"><strong>3 Month to &lt; 3 Years</strong></td>\n<td align="center" colspan="1" rowspan="1"></td>\n<td align="center" colspan="1" rowspan="1"></td>\n<td align="center" colspan="1" rowspan="1"></td>\n<td align="center" colspan="1" rowspan="1"></td>\n<td align="center" colspan="1" rowspan="1"></td>\n<td align="center" colspan="1" rowspan="1"></td>\n</tr>\n<tr>\n<td align="left" colspan="1" rowspan="1">N</td>\n<td align="center" colspan="1" rowspan="1">17</td>\n<td align="center" colspan="1" rowspan="1">18</td>\n<td align="center" colspan="1" rowspan="1">18</td>\n<td align="center" colspan="1" rowspan="1">18</td>\n<td align="center" colspan="1" rowspan="1">18</td>\n<td align="center" colspan="1" rowspan="1">18</td>\n</tr>\n<tr>\n<td align="left" colspan="1" rowspan="1">Range</td>\n<td align="center" colspan="1" rowspan="1">0.07–0.48</td>\n<td align="center" colspan="1" rowspan="1">0.63–7.75</td>\n<td align="center" colspan="1" rowspan="1">12.83–147.17</td>\n<td align="center" colspan="1" rowspan="1">0.67–3.40</td>\n<td align="center" colspan="1" rowspan="1">0.024–0.118</td>\n<td align="center" colspan="1" rowspan="1">5.9–28.4</td>\n</tr>\n<tr>\n<td align="left" colspan="1" rowspan="1">Mean ± s.d.</td>\n<td align="center" colspan="1" rowspan="1">0.11 ± 0.10</td>\n<td align="center" colspan="1" rowspan="1">1.57 ± 1.62</td>\n<td align="center" colspan="1" rowspan="1">32.83 ± 30.17</td>\n<td align="center" colspan="1" rowspan="1">1.62 ± 0.59</td>\n<td align="center" colspan="1" rowspan="1">0.053 ± 0.027</td>\n<td align="center" colspan="1" rowspan="1">15.8 ± 6.5</td>\n</tr>\n<tr>\n<td align="left" colspan="1" rowspan="1"><strong>3 to &lt; 13 Years</strong></td>\n<td align="center" colspan="1" rowspan="1"></td>\n<td align="center" colspan="1" rowspan="1"></td>\n<td align="center" colspan="1" rowspan="1"></td>\n<td align="center" colspan="1" rowspan="1"></td>\n<td align="center" colspan="1" rowspan="1"></td>\n<td align="center" colspan="1" rowspan="1"></td>\n</tr>\n<tr>\n<td align="left" colspan="1" rowspan="1">N</td>\n<td align="center" colspan="1" rowspan="1">28</td>\n<td align="center" colspan="1" rowspan="1">29</td>\n<td align="center" colspan="1" rowspan="1">29</td>\n<td align="center" colspan="1" rowspan="1">29</td>\n<td align="center" colspan="1" rowspan="1">29</td>\n<td align="center" colspan="1" rowspan="1">29</td>\n</tr>\n<tr>\n<td align="left" colspan="1" rowspan="1">Range</td>\n<td align="center" colspan="1" rowspan="1">0.07–0.17</td>\n<td align="center" colspan="1" rowspan="1">0.30–1.82</td>\n<td align="center" colspan="1" rowspan="1">6.50–69.17</td>\n<td align="center" colspan="1" rowspan="1">0.49–3.00</td>\n<td align="center" colspan="1" rowspan="1">0.017–0.092</td>\n<td align="center" colspan="1" rowspan="1">7.5–40.6</td>\n</tr>\n<tr>\n<td align="left" colspan="1" rowspan="1">Mean ± s.d.</td>\n<td align="center" colspan="1" rowspan="1">0.10 ± 0.02</td>\n<td align="center" colspan="1" rowspan="1">1.12 ± 0.40</td>\n<td align="center" colspan="1" rowspan="1">31.83 ± 13.83</td>\n<td align="center" colspan="1" rowspan="1">1.50 ± 0.61</td>\n<td align="center" colspan="1" rowspan="1">0.048 ± 0.017</td>\n<td align="center" colspan="1" rowspan="1">16.9 ± 7.4</td>\n</tr>\n<tr>\n<td align="left" colspan="1" rowspan="1"><strong>13 to &lt; 18 Years</strong></td>\n<td align="center" colspan="1" rowspan="1"></td>\n<td align="center" colspan="1" rowspan="1"></td>\n<td align="center" colspan="1" rowspan="1"></td>\n<td align="center" colspan="1" rowspan="1"></td>\n<td align="center" colspan="1" rowspan="1"></td>\n<td align="center" colspan="1" rowspan="1"></td>\n</tr>\n<tr>\n<td align="left" colspan="1" rowspan="1">N</td>\n<td align="center" colspan="1" rowspan="1">16</td>\n<td align="center" colspan="1" rowspan="1">16</td>\n<td align="center" colspan="1" rowspan="1">16</td>\n<td align="center" colspan="1" rowspan="1">16</td>\n<td align="center" colspan="1" rowspan="1">16</td>\n<td align="center" colspan="1" rowspan="1">16</td>\n</tr>\n<tr>\n<td align="left" colspan="1" rowspan="1">Range</td>\n<td align="center" colspan="1" rowspan="1">0.07–0.15</td>\n<td align="center" colspan="1" rowspan="1">0.43–1.58</td>\n<td align="center" colspan="1" rowspan="1">16.33–60.00</td>\n<td align="center" colspan="1" rowspan="1">1.00–1.54</td>\n<td align="center" colspan="1" rowspan="1">0.017–0.084</td>\n<td align="center" colspan="1" rowspan="1">8.2–42.0</td>\n</tr>\n<tr>\n<td align="left" colspan="1" rowspan="1">Mean ± s.d.</td>\n<td align="center" colspan="1" rowspan="1">0.09 ± 0.02</td>\n<td align="center" colspan="1" rowspan="1">0.95 ± 0.32</td>\n<td align="center" colspan="1" rowspan="1">36.67 ± 12.00</td>\n<td align="center" colspan="1" rowspan="1">1.27 ± 0.17</td>\n<td align="center" colspan="1" rowspan="1">0.044 ± 0.016</td>\n<td align="center" colspan="1" rowspan="1">17.8 ± 7.7</td>\n</tr>\n</tbody>\n</table></div>\n<div class="p text-right font-secondary"><a class="usa-link" href="table/T3/" rel="noopener noreferrer" target="_blank">Open in a new tab</a></div></section>
+"""
 @pytest.fixture(scope="module")
 def html_content():
     return ghtml_content
@@ -218,6 +221,99 @@ def df_combined():
 """
     return markdown_to_dataframe(md_table_combined)
 
+@pytest.fixture(scope="module")
+def html_content1():
+    return ghtml_content1
+
+@pytest.fixture(scope="module")
+def md_table1():
+    return single_html_table_to_markdown(ghtml_content1)
+
+@pytest.fixture(scope="module")
+def caption1():
+    return "Bayesian pharmacokinetics parameters (all subjects). CL is clearance. Vdss is volume of distribution at steady state. Beta is the terminal slope of the log concentration versus time profile. T½ Beta is the elimination half-life."
+
+@pytest.fixture(scope="module")
+def md_table_aligned1():
+    return """
+| Parameter type | Overall | N_0 | Range_0 | Mean ± s.d._0 | Median | 3 Month to < 3 Years | N_1 | Range_1 | Mean ± s.d._1 | 3 to < 13 Years | N_2 | Range_2 | Mean ± s.d._2 | 13 to < 18 Years | N_3 | Range_3 | Mean ± s.d._3 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Free Fraction |  | 61 | 0.07–0.48 | 0.10 ± 0.05 | 0.09 |  | 17 | 0.07–0.48 | 0.11 ± 0.10 |  | 28 | 0.07–0.17 | 0.10 ± 0.02 |  | 16 | 0.07–0.15 | 0.09 ± 0.02 |
+| CL(mL/min/kg) |  | 63 | 0.3–7.75 | 1.2 ± 0.93 | 1.08 |  | 18 | 0.63–7.75 | 1.57 ± 1.62 |  | 29 | 0.30–1.82 | 1.12 ± 0.40 |  | 16 | 0.43–1.58 | 0.95 ± 0.32 |
+| CLmL/min/m) |  | 63 | 6.50–147.17 | 33.33 ± 19.33 | 29.00 |  | 18 | 12.83–147.17 | 32.83 ± 30.17 |  | 29 | 6.50–69.17 | 31.83 ± 13.83 |  | 16 | 16.33–60.00 | 36.67 ± 12.00 |
+| Vdss(L/kg) |  | 63 | 0.49–3.40 | 1.48 ± 0.54 | 1.37 |  | 18 | 0.67–3.40 | 1.62 ± 0.59 |  | 29 | 0.49–3.00 | 1.50 ± 0.61 |  | 16 | 1.00–1.54 | 1.27 ± 0.17 |
+| Beta(hr) |  | 63 | 0.017–0.118 | 0.048 ± 0.020 | 0.046 |  | 18 | 0.024–0.118 | 0.053 ± 0.027 |  | 29 | 0.017–0.092 | 0.048 ± 0.017 |  | 16 | 0.017–0.084 | 0.044 ± 0.016 |
+| T½Beta(hr) |  | 63 | 5.9–42.0 | 16.8 ± 7.1 | 15.1 |  | 18 | 5.9–28.4 | 15.8 ± 6.5 |  | 29 | 7.5–40.6 | 16.9 ± 7.4 |  | 16 | 8.2–42.0 | 17.8 ± 7.7 |
+"""
+
+@pytest.fixture(scope="module")
+def md_table_list1():
+    return ["""| Parameter type | Range_0 |
+            | --- | --- |
+            | Free Fraction | 0.07–0.48 |
+            | CL(mL/min/kg) | 0.3–7.75 |
+            | CLmL/min/m) | 6.50–147.17 |
+            | Vdss(L/kg) | 0.49–3.40 |
+            | Beta(hr) | 0.017–0.118 |
+            | T½Beta(hr) | 5.9–42.0 |""", """| Parameter type | Mean ± s.d._0 |
+            | --- | --- |
+            | Free Fraction | 0.10 ± 0.05 |
+            | CL(mL/min/kg) | 1.2 ± 0.93 |
+            | CLmL/min/m) | 33.33 ± 19.33 |
+            | Vdss(L/kg) | 1.48 ± 0.54 |
+            | Beta(hr) | 0.048 ± 0.020 |
+            | T½Beta(hr) | 16.8 ± 7.1 |""", """| Parameter type | Median |
+            | --- | --- |
+            | Free Fraction | 0.09 |
+            | CL(mL/min/kg) | 1.08 |
+            | CLmL/min/m) | 29.00 |
+            | Vdss(L/kg) | 1.37 |
+            | Beta(hr) | 0.046 |
+            | T½Beta(hr) | 15.1 |""", """| Parameter type | Range_1 |
+            | --- | --- |
+            | Free Fraction | 0.07–0.48 |
+            | CL(mL/min/kg) | 0.63–7.75 |
+            | CLmL/min/m) | 12.83–147.17 |
+            | Vdss(L/kg) | 0.67–3.40 |
+            | Beta(hr) | 0.024–0.118 |
+            | T½Beta(hr) | 5.9–28.4 |""", """| Parameter type | Mean ± s.d._1 |
+            | --- | --- |
+            | Free Fraction | 0.11 ± 0.10 |
+            | CL(mL/min/kg) | 1.57 ± 1.62 |
+            | CLmL/min/m) | 32.83 ± 30.17 |
+            | Vdss(L/kg) | 1.62 ± 0.59 |
+            | Beta(hr) | 0.053 ± 0.027 |
+            | T½Beta(hr) | 15.8 ± 6.5 |""", """| Parameter type | Range_2 |
+            | --- | --- |
+            | Free Fraction | 0.07–0.17 |
+            | CL(mL/min/kg) | 0.30–1.82 |
+            | CLmL/min/m) | 6.50–69.17 |
+            | Vdss(L/kg) | 0.49–3.00 |
+            | Beta(hr) | 0.017–0.092 |
+            | T½Beta(hr) | 7.5–40.6 |""", """| Parameter type | Mean ± s.d._2 |
+            | --- | --- |
+            | Free Fraction | 0.10 ± 0.02 |
+            | CL(mL/min/kg) | 1.12 ± 0.40 |
+            | CLmL/min/m) | 31.83 ± 13.83 |
+            | Vdss(L/kg) | 1.50 ± 0.61 |
+            | Beta(hr) | 0.048 ± 0.017 |
+            | T½Beta(hr) | 16.9 ± 7.4 |""", """| Parameter type | Range_3 |
+            | --- | --- |
+            | Free Fraction | 0.07–0.15 |
+            | CL(mL/min/kg) | 0.43–1.58 |
+            | CLmL/min/m) | 16.33–60.00 |
+            | Vdss(L/kg) | 1.00–1.54 |
+            | Beta(hr) | 0.017–0.084 |
+            | T½Beta(hr) | 8.2–42.0 |""", """| Parameter type | Mean ± s.d._3 |
+            | --- | --- |
+            | Free Fraction | 0.09 ± 0.02 |
+            | CL(mL/min/kg) | 0.95 ± 0.32 |
+            | CLmL/min/m) | 36.67 ± 12.00 |
+            | Vdss(L/kg) | 1.27 ± 0.17 |
+            | Beta(hr) | 0.044 ± 0.016 |
+            | T½Beta(hr) | 17.8 ± 7.7 |"""
+        ]
+     
 @pytest.fixture(scope="session", autouse=True)
 def prepare_logging():
     level = logging.INFO

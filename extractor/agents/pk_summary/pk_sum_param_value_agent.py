@@ -70,9 +70,11 @@ def get_parameter_value_prompt(
         md_table_aligned_with_1_param_type_and_value_rows=rows_num,
     )
 
+COLUMN_NUMBER = 8
+
 class ParameterValueResult(PKSumCommonAgentResult):
     """ Parameter Value Extraction Result """
-    extracted_param_values: List[List[float]] = Field(description="""a list of lists containing parameter values, like 
+    extracted_param_values: List[List[str]] = Field(description="""a list of lists containing parameter values, like 
 [["0.162", "Mean", "SD", "0.090", "N/A", "N/A", "N/A", ".67"], ["0.428", "Mean", "SD", "0.162", "N/A", "N/A", "N/A", ".015"]]""")
 
 def post_process_matched_list(
@@ -85,6 +87,17 @@ def post_process_matched_list(
     if not matched_values:
         logger.error("Parameter value extraction failed: No valid values found.")
         raise ValueError("Parameter value extraction failed: No valid values found.")
+    
+    for item in matched_values:
+        if len(item) != COLUMN_NUMBER:
+            error_msg = f"""Wrong answer example: 
+{str(res.extracted_param_values)}
+Why it's wrong. Mismatch: Expected {COLUMN_NUMBER} columns, but got {len(item)} extracted values.
+Please make sure the inner list have {COLUMN_NUMBER} values, the result should be like this: 
+[["0.162", "Mean", "SD", "0.090", "N/A", "N/A", "N/A", ".67"], ["0.428", "Mean", "SD", "0.162", "N/A", "N/A", "N/A", ".015"]]
+"""
+            logger.error(error_msg)
+            raise RetryException(error_msg)
 
     df_table = pd.DataFrame(matched_values, columns=[
         'Main value', 'Statistics type', 'Variation type', 'Variation value',
