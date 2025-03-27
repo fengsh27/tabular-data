@@ -21,6 +21,7 @@ from extractor.constants import (
     PROMPTS_NAME_PK,
     PROMPTS_NAME_PK,
     LLM_GEMINI_PRO,
+    LLM_DEEPSEEK_CHAT,
 )
 from extractor.stampers import ArticleStamper, Stamper
 from extractor.article_retriever import ArticleRetriever
@@ -141,7 +142,9 @@ def on_input_change(pmid: Optional[str]=None):
         if len(retrieved_tables) == 0 
         else f'{len(retrieved_tables)} tables found'
     )
-    ss.main_info = f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Retrieving completed, {tmp_info}"
+    result_str = f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Retrieving completed, {tmp_info}"
+    ss.main_info = result_str
+    output_info(result_str)
 
 def on_extract(pmid: str):
     global stamper
@@ -348,7 +351,7 @@ def main_tab():
                 st.divider()
     with prompts_panel:
         llm_option = st.radio("What LLM would you like to use?", (
-            LLM_CHATGPT_4O, LLM_GEMINI_PRO
+            LLM_CHATGPT_4O, LLM_GEMINI_PRO, LLM_DEEPSEEK_CHAT,
         ), index=0)
         ss.main_llm_option = llm_option
         st.divider()
@@ -364,10 +367,10 @@ def main_tab():
             for ix in range(len(tables)):
                 tbl = tables[ix]
                 title = extract_table_title(tbl)
-                title = title if title is not None else f"table {ix + 1}"
-                st.checkbox(
+                title = f" - table {ix+1}: {title}" if title is not None else f"table {ix + 1}"
+                st.markdown(
                     title,
-                    key=f"w-pmid-tbl-check-{ix}"
+                    # key=f"w-pmid-tbl-check-{ix}"
                 )
     
     if modal.is_open():

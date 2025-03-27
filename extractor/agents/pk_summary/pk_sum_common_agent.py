@@ -7,11 +7,14 @@ from pydantic import BaseModel, Field
 from tenacity import (
     retry, stop_after_attempt, wait_incrementing
 )
+import logging
 
 from extractor.agents.agent_utils import (
     display_md_table,
     increase_token_usage,
 )
+
+logger = logging.getLogger()
 
 class RetryException(Exception):
     """ Exception need to retry """
@@ -115,7 +118,11 @@ class PKSumCommonAgent:
             try:
                 processed_res = post_process(res, **kwargs)
             except RetryException as e:
+                logger.error(str(e))
                 self.exception = e
+                raise e
+            except Exception as e:
+                logger.error(str(e))
                 raise e
         return res, processed_res, self.token_usage
     

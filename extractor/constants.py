@@ -40,6 +40,7 @@ PROMPTS_NAME_PE = "Pharmaco-Epidemiology "
 
 LLM_CHATGPT_4O = "ChatGPT 4o"
 LLM_GEMINI_PRO = "Gemini 2.0 pro"
+LLM_DEEPSEEK_CHAT = "Deepseek-v3"
 
 
 TABLE_ROLE_PROMPTS = "Please act as a biomedical assistant, help to extract the information from the provided source"

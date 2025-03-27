@@ -43,10 +43,10 @@ st.markdown(
 
 # st.markdown('[<img src="images/copper-logo.png">](https://mprint.org/index.html)')
 # st.image("./images/copper-logo.png", width=500)
-tab1, tab2 = st.tabs(["Extract From Table Data", "Extract From The Full-text"])
+# tab1, tab2 = st.tabs(["Extract From Table Data", "Extract From The Full-text"])
 
-with tab1:
-    main_tab()
-with tab2:
-    pass
+# with tab1:
+main_tab()
+# with tab2:
+#     pass
     # html_tab()
