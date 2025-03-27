@@ -35,17 +35,11 @@ MAX_FULL_TEXT_LENGTH = 31 * 1024   # should not be greater than 31K
 ERROR_UNKNOWN_ERROR = -1
 ERROR_OK = 5000
 
-PROMPTS_NAME_PK = "PK Prompts"
-PROMPTS_NAME_PE = "PE Prompts"
-
-PROMPTS_NAME_PK_CHAIN = "PK Prompt Chain"
-PROMPTS_NAME_PK_COT = "PK COT Prompts"
+PROMPTS_NAME_PK = "Pharmacokinetics Summary"
+PROMPTS_NAME_PE = "Pharmaco-Epidemiology "
 
 LLM_CHATGPT_4O = "ChatGPT 4o"
-LLM_CHATGPT_35 = "ChatGPT 3.5-turbo"
-LLM_CHATGPT_40 = "ChatGPT 4"
-LLM_GEMINI_PRO = "Gemini 1.5 pro"
-LLM_GEMINI_FLASH = "Gemini 1.5 flash"
+LLM_GEMINI_PRO = "Gemini 2.0 pro"
 
 
 TABLE_ROLE_PROMPTS = "Please act as a biomedical assistant, help to extract the information from the provided source"

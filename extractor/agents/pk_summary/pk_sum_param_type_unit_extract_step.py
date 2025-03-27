@@ -57,7 +57,8 @@ class ExtractParamTypeAndUnitStep(PKSumCommonAgentStep):
     
                     type_unit_list.append(dataframe_to_markdown(df_selected))
                 else:
-                    step_name = "Unit Extraction" + f" (Trial {str(round)})"
+                    step_name = f" (Trial {str(round)})"
+                    self._step_output(state, step_output=step_name)
                     round += 1
                     llm = state['llm']
                     md_table_aligned = state["md_table_aligned"]
@@ -74,6 +75,7 @@ class ExtractParamTypeAndUnitStep(PKSumCommonAgentStep):
                         md_table=md,
                         col_mapping=col_mapping,
                     )
+                    self._step_output(state, step_reasoning_process=res.reasoning_process if res is not None else "")
                     tuple_type_unit: Tuple[List[str], List[str]] = processed_res
 
                     md_type_unit = dataframe_to_markdown(pd.DataFrame([tuple_type_unit[0], tuple_type_unit[1]], index=["Parameter type", "Parameter unit"]).T)
@@ -90,5 +92,7 @@ class ExtractParamTypeAndUnitStep(PKSumCommonAgentStep):
     def leave_step(self, state, res, processed_res = None, token_usage = None):
         if processed_res is not None:
             state["type_unit_list"] = processed_res
+            self._step_output(state, step_output="Result (type_unit_list):")
+            self._step_output(state, step_output=str(processed_res))
         return super().leave_step(state, res, processed_res, token_usage)
 

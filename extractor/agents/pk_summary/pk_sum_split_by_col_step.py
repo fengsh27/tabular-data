@@ -47,6 +47,8 @@ class SplitByColumnsStep(PKSumCommonAgentStep):
                     tmp_md_table_list_1.append(dataframe_to_markdown(df[selected_cols].copy()))
         md_table_list = tmp_md_table_list_1
         state["md_table_list"] = md_table_list
+        self._step_output(state, step_output="Result (md_table_list):")
+        self._step_output(state, step_output=str(processed_res))
         return super().leave_step(state, res, processed_res, token_usage)
 
     # override super().execute_directly

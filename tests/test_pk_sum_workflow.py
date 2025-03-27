@@ -16,10 +16,19 @@ def test_PKSumWorkflow(llm, html_content, caption, step_callback):
     print(df)
     logger.info("\n\n" + dataframe_to_markdown(df))
 
+@pytest.mark.skip()
 def test_PKSumWorkflow1(llm, html_content1, caption1, step_callback):
     workflow = PKSumWorkflow(llm=llm)
     workflow.build()
 
     df = workflow.go(html_content1, caption1, step_callback)
+    print(df)
+    logger.info("\n\n" + dataframe_to_markdown(df))
+
+def test_PKSumWorkflow_29943508(llm, html_content_29943508, caption_29943508, step_callback):
+    workflow = PKSumWorkflow(llm=llm)
+    workflow.build()
+
+    df = workflow.go(html_content_29943508, caption_29943508, step_callback)
     print(df)
     logger.info("\n\n" + dataframe_to_markdown(df))

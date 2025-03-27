@@ -27,6 +27,7 @@ class ParameterValueExtractionStep(PKSumCommonStep):
         total_token_usage = {**DEFAULT_TOKEN_USAGE}
         for md in md_table_list:
             round += 1
+            self._step_output(f"Trial {round}")
             system_prompt = get_parameter_value_prompt(md_table_aligned, md, caption)
             agent = PKSumCommonAgent(llm=llm)
             res, processed_res, token_usage = agent.go(
@@ -36,6 +37,7 @@ class ParameterValueExtractionStep(PKSumCommonStep):
                 post_process=post_process_matched_list,
                 expected_rows=markdown_to_dataframe(md).shape[0]
             )
+            self._step_output(state, step_reasoning_process=res.reasoning_process if res is not None else "")
             value_list.append(processed_res)
             total_token_usage = increase_token_usage(token_usage)
 
@@ -47,6 +49,8 @@ class ParameterValueExtractionStep(PKSumCommonStep):
     def leave_step(self, state, res, processed_res = None, token_usage = None):
         if processed_res is not None:
             state['value_list'] = processed_res
+            self._step_output(state, step_output="Result (value_list):")
+            self._step_output(state, step_output=str(processed_res))
         return super().leave_step(state, res, processed_res, token_usage)
             
 

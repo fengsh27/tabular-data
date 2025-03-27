@@ -33,6 +33,8 @@ class PatientInfoRefinementStep(PKSumCommonAgentStep):
     ):
         if processed_res is not None:
             state["md_table_patient_refined"] = processed_res
+            self._step_output(state, step_output="Result (md_table_patient_refined):")
+            self._step_output(state, step_output=processed_res)
         return super().leave_step(state, res, processed_res, token_usage)
     
     def get_schema(self):

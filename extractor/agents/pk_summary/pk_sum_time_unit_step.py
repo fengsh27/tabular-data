@@ -1,6 +1,7 @@
 import pandas as pd
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
+from extractor.agents.agent_utils import display_md_table
 from extractor.agents.pk_summary.pk_sum_time_unit_agent import (
     get_time_and_unit_prompt,
     TimeAndUnitResult,
@@ -47,6 +48,8 @@ class TimeExtractionStep(PKSumCommonAgentStep):
         df_combined = state['df_combined']
         df_combined = pd.concat([df_combined, markdown_to_dataframe(md_table_time)], axis=1)
         df_combined = df_combined.reset_index(drop=True)
+        self._step_output(state, step_output="Result (df_combined):")
+        self._step_output(state, step_output=display_md_table(dataframe_to_markdown(df_combined)))
 
         # update state['df_combined]
         state['df_combined'] = df_combined

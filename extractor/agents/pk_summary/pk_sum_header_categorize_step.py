@@ -31,4 +31,6 @@ class HeaderCategorizeStep(PKSumCommonAgentStep):
         result: HeaderCategorizeResult = processed_res
         if result is not None and result.categorized_headers is not None:
             state["col_mapping"] = result.categorized_headers
+            self._step_output(state, step_output="Result (col_mapping):")
+            self._step_output(state, step_output=str(result.categorized_headers))
         return super().leave_step(state, res, processed_res, token_usage)

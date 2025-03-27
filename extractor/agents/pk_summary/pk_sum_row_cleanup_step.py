@@ -4,7 +4,8 @@ import itertools
 import pandas as pd
 import re
 
-from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE
+from TabFuncFlow.utils.table_utils import dataframe_to_markdown
+from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, display_md_table
 from extractor.agents.pk_summary.pk_sum_common_agent import PKSumCommonAgentResult
 from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonStep
 
@@ -223,6 +224,11 @@ class RowCleanupStep(PKSumCommonStep):
         df_combined.sort_values(by="original_index", inplace=True)
         df_combined.drop(columns=["original_index"], inplace=True)
         df_combined.reset_index(drop=True, inplace=True)
+
+        self._step_output(state, step_output=f"""
+Result:
+{display_md_table(dataframe_to_markdown(df_combined))}
+""")
 
         return None, df_combined, {**DEFAULT_TOKEN_USAGE}
     

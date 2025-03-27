@@ -56,6 +56,8 @@ class DrugMatchingAgentStep(PKSumCommonStep):
         md_table_aligned = state['md_table_aligned']
         for md in md_table_list:
             round += 1
+            self._step_output(state, step_output="="*64)
+            self._step_output(state, f"Trial {round}")
             system_prompt = get_matching_drug_prompt(
                 md_table_aligned, md, md_table_drug, caption
             )
@@ -67,6 +69,7 @@ class DrugMatchingAgentStep(PKSumCommonStep):
                 post_process=post_process_validate_matched_rows,
                 md_table=md,
             )
+            self._step_output(state, step_reasoning_process=res.reasoning_process if res is not None else "")
             drug_match_list: List[int] = processed_res
             df_table_drug = markdown_to_dataframe(md_table_drug)
             df_table_drug = pd.concat([
@@ -83,6 +86,8 @@ class DrugMatchingAgentStep(PKSumCommonStep):
     def leave_step(self, state, res, processed_res = None, token_usage = None):
         if processed_res is not None:
             state['drug_list'] = processed_res
+            self._step_output(state, step_output="Result (drug_list):")
+            self._step_output(state, step_output=str(processed_res))
         return super().leave_step(state, res, processed_res, token_usage)
 
             

@@ -56,8 +56,10 @@ class PatientMatchingAgentStep(PKSumCommonStep):
         llm = state['llm']
         caption = state['caption']
         total_token_usage = {**DEFAULT_TOKEN_USAGE}
-
+        round = 0
         for md in md_table_list:
+            round += 1
+            self._step_output(f"Trial {round}")
             system_prompt = get_matching_patient_prompt(
                 md_table_aligned, md, md_table_patient, caption
             )
@@ -70,6 +72,7 @@ class PatientMatchingAgentStep(PKSumCommonStep):
                 post_process=post_process_validate_matched_patients,
                 md_table=md,
             )
+            self._step_output(state, step_reasoning_process=res.reasoning_process if res is not None else "")
             patient_match_list: List[int] = processed_res
             df_table_patient = df_table_patient_refined.copy()
             df_table_patient = pd.concat([
@@ -90,6 +93,8 @@ class PatientMatchingAgentStep(PKSumCommonStep):
     def leave_step(self, state, res, processed_res = None, token_usage = None):
         if processed_res is not None:
             state['patient_list'] = processed_res
+            self._step_output(state, step_output="Result (patient_list):")
+            self._step_output(state, step_output=str(processed_res))
         return super().leave_step(state, res, processed_res, token_usage)
 
 

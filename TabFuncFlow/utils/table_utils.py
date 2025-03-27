@@ -373,7 +373,7 @@ def get_caption_and_footnote_from_file(json_file_path):
 #         md_table_aligned_with_1_param_type_and_value_list.append(dataframe_to_markdown(markdown_to_dataframe(md_table).iloc[:][[pt_list[0], pv]].reset_index(drop=True)))
 #     return md_table_aligned_with_1_param_type_and_value_list
 
-def single_html_table_to_markdown(html_content):
+def single_html_table_to_markdown(html_content: str):
     """
     Converts a single HTML <table> to Markdown format.
     Ensures that the HTML content contains only one <table>.
@@ -385,7 +385,8 @@ def single_html_table_to_markdown(html_content):
 
     if len(tables) != 1:
         raise ValueError("The input must contain exactly one <table>.")
-
+    
+    html_content = re.sub(r'\xa0', ' ', html_content)
     markdown_table = deduplicate_headers(fill_empty_headers(
         remove_empty_col_row(stack_md_table_headers(html_table_to_markdown(html_content)))))
 

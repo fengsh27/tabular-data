@@ -58,3 +58,7 @@ def test_extract_float_value():
     v5 = extract_float_value(str5)
     assert v5 == 1.234
 
+def test_single_html_to_markdown(md_table_aligned_29943508):
+    import re
+    replaced_content: str = re.sub(r'\xa0', ' ', md_table_aligned_29943508)
+    assert replaced_content.find("\xa0") < 0

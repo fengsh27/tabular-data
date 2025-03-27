@@ -19,22 +19,16 @@ from extractor.constants import (
     LLM_CHATGPT_4O,
     PROMPTS_NAME_PE,
     PROMPTS_NAME_PK,
-    PROMPTS_NAME_PK_CHAIN,
-    PROMPTS_NAME_PK_COT,
-    LLM_CHATGPT_35,
-    LLM_CHATGPT_40,
-    LLM_GEMINI_FLASH,
+    PROMPTS_NAME_PK,
     LLM_GEMINI_PRO,
 )
 from extractor.stampers import ArticleStamper, Stamper
-from extractor.article_retriever import ExtendArticleRetriever, ArticleRetriever
+from extractor.article_retriever import ArticleRetriever
 from extractor.request_openai import (
     get_openai,
-    request_to_chatgpt_4o,
 )
 from extractor.utils import (
     convert_csv_table_to_dataframe,
-    convert_html_table_to_dataframe,
     convert_html_to_text,
     escape_markdown,
     extract_table_title,
@@ -52,8 +46,6 @@ from extractor.prompts_utils import (
 from extractor.generated_table_processor import GeneratedPKSummaryTableProcessor
 from extractor.request_geminiai import (
     get_gemini,
-    request_to_gemini_15_pro,
-    request_to_gemini_15_flash,
 )
 
 logger = logging.getLogger(__name__)
@@ -162,7 +154,7 @@ def on_extract(pmid: str):
     llm = get_openai() if ss.main_llm_option == LLM_CHATGPT_4O else get_gemini()
     ss.token_usage = None
     ss.logs = ""
-    if ss.main_prompts_option == PROMPTS_NAME_PK_CHAIN:
+    if ss.main_prompts_option == PROMPTS_NAME_PK:
         include_tables = ss.main_retrieved_tables
         
         output_info("We are going to select pk summary tables")
@@ -215,69 +207,6 @@ def on_extract(pmid: str):
         # ss.main_token_usage = sum(step3_usage_list)
         return
 
-    # prepare prompts including article prmpots and table prompts
-    """
-        PK CoT is modified based on the original PK prompt. 
-        TableExtractionPromptsGenerator and GeneratedPKSummaryTableProcessor 
-        are still initialized with PROMPTS_NAME_PK to minimize code changes.
-    """
-    prompt_option = PROMPTS_NAME_PK if ss.main_prompts_option == PROMPTS_NAME_PK_COT else ss.main_prompts_option
-    prmpt_generator = TableExtractionPromptsGenerator(prompt_option)
-    first_prompots = prmpt_generator.generate_system_prompts()
-
-    if ss.main_prompts_option == PROMPTS_NAME_PK_COT:
-        with open(f"./prompts/cot_examples/0119_shot29943508.txt", "r") as file:
-            cot_example = file.read()
-        first_prompots += cot_example
-
-    include_tables = []
-    for ix in range(len(ss.main_retrieved_tables)):
-        include_tbl = ss.get(f"w-pmid-tbl-check-{ix}")
-        if include_tbl:
-            include_tables.append(ss.main_retrieved_tables[ix])
-    prompts_list = [{"role": "user", "content": first_prompots}]
-    if len(include_tables) > 0:
-        prompts_list.append({
-            "role": "user",
-            "content": generate_tables_prompts(include_tables)
-        })
-
-    source = ""
-    if len(include_tables) > 0:
-        source = "tables"
-    else:
-        st.error("Please select at least one table")
-        return
-    assert len(prompts_list) > 0
-
-    # chat with LLM
-    # global stamper
-    try:
-        tmp_prmpts_list = [*prompts_list, {"role": "user", "content": generate_question(source)}]
-        stamper.output_prompts(tmp_prmpts_list)
-        request_llm: Optional[Callable[[List[Dict[str, str], str], str]]] = None
-        if ss.main_llm_option == LLM_CHATGPT_4O:
-            request_llm = request_to_chatgpt_4o
-        else:
-            request_llm = request_to_gemini_15_pro
-
-        res, content, usage, truncated = request_llm(
-            prompts_list,
-            generate_question(source),
-        )
-
-        stamper.output_result(f"{content}\n\nUsage: {str(usage) if usage is not None else ''}")
-        processor = GeneratedPKSummaryTableProcessor(prompt_option)
-        csv_str = processor.process_content(content)
-        ss.main_extracted_result = csv_str
-        ss.main_token_usage = usage
-
-        ss.main_info = f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Extracting completed. {'***The result includes truncated contents.***' if truncated is True else ''}"
-    except Exception as e:
-        logger.error(e)
-        st.error(e)
-        return
-
 def on_retrive_table_from_html_table(html_table: str):
     html_table = html_table.strip()
     if len(html_table) == 0:
@@ -307,7 +236,7 @@ def main_tab():
     ss.setdefault("main_retrieved_tables", None)
     ss.setdefault("main_extracted_btn_disabled", True)
     ss.setdefault("main_prompts_option", PROMPTS_NAME_PK)
-    ss.setdefault("main_llm_option", LLM_CHATGPT_40)
+    ss.setdefault("main_llm_option", LLM_CHATGPT_4O)
     ss.setdefault("logs", "")
     ss.setdefault('token_usage', None)
     
@@ -423,11 +352,10 @@ def main_tab():
         ), index=0)
         ss.main_llm_option = llm_option
         st.divider()
-        prompts_array = (PROMPTS_NAME_PK_CHAIN, PROMPTS_NAME_PK, PROMPTS_NAME_PK_COT, PROMPTS_NAME_PE)
+        prompts_array = (PROMPTS_NAME_PK, PROMPTS_NAME_PE)
         option = st.selectbox("What type of prompts would you like to use?", prompts_array, index=0)
         ss.main_prompts_option = option
-        open_modal = st.button("View Prompts ...")
-        logs_input = st.text_area("Logs", key="logs_input", height=140)
+        logs_input = st.text_area("Logs", key="logs_input", height=300)
         st.divider()
         if not ss.main_extracted_btn_disabled:
             tables = (
@@ -442,8 +370,6 @@ def main_tab():
                     key=f"w-pmid-tbl-check-{ix}"
                 )
     
-    if open_modal:
-        modal.open()
     if modal.is_open():
         generator = TableExtractionPromptsGenerator(ss.main_prompts_option)
         prmpts = generator.get_prompts_file_content()

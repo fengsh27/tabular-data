@@ -38,6 +38,8 @@ class DrugInfoExtractionStep(PKSumCommonAgentStep):
     ):
         if processed_res is not None:
             state["md_table_drug"] = processed_res
+            self._step_output(state, step_output="Result (md_table_drug):")
+            self._step_output(state, step_output=processed_res)
         super().leave_step(state, res, processed_res, token_usage)
     
     def get_schema(self):

@@ -1,7 +1,7 @@
 import pandas as pd
 
-from TabFuncFlow.utils.table_utils import markdown_to_dataframe
-from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE
+from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
+from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, display_md_table
 from extractor.agents.pk_summary.pk_sum_common_agent import PKSumCommonAgentResult
 from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonStep
 
@@ -30,6 +30,11 @@ class AssemblyStep(PKSumCommonStep):
             df_combined = pd.concat([df_drug, df_table_patient, df_type_unit, df_value], axis=1)
             df_list.append(df_combined)
         df_combined = pd.concat(df_list, ignore_index=True)
+
+        self._step_output(state, step_output=f"""
+Result:
+{display_md_table(dataframe_to_markdown(df_combined))}
+""")
 
         return PKSumCommonAgentResult(
             reasoning_process=""
