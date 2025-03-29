@@ -6,9 +6,6 @@ import logging
 from nanoid import generate
 from streamlit_modal import Modal
 import pandas as pd
-
-import ast
-import json
 import time
 
 from TabFuncFlow.utils.table_utils import single_html_table_to_markdown
@@ -31,6 +28,9 @@ from extractor.request_openai import (
 from extractor.request_deepseek import (
     get_deepseek
 )
+from extractor.request_geminiai import (
+    get_gemini,
+)
 from extractor.utils import (
     convert_csv_table_to_dataframe,
     convert_html_to_text,
@@ -48,9 +48,6 @@ from extractor.prompts_utils import (
     TableExtractionPromptsGenerator,
 )
 from extractor.generated_table_processor import GeneratedPKSummaryTableProcessor
-from extractor.request_geminiai import (
-    get_gemini,
-)
 
 logger = logging.getLogger(__name__)
 
@@ -157,7 +154,8 @@ def on_extract(pmid: str):
     set_stamper_pmid(pmid)
     clear_results()
 
-    llm = get_openai() if ss.main_llm_option == LLM_CHATGPT_4O else get_deepseek()
+    llm = get_openai() if ss.main_llm_option == LLM_CHATGPT_4O else \
+        get_gemini() if ss.main_llm_option == LLM_GEMINI_PRO else get_deepseek()
     ss.token_usage = None
     ss.logs = ""
     if ss.main_prompts_option == PROMPTS_NAME_PK:
@@ -212,7 +210,7 @@ def on_extract(pmid: str):
         output_info(f"Extracting tabular data completed, token usage: {ss.token_usage['total_tokens']}")
         st.write(f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Extracting tabular data completed, token usage: {ss.token_usage['total_tokens']}")
 
-        ss.main_extracted_result = df_combined.to_csv()
+        ss.main_extracted_result = df_combined
         ss.main_token_usage = ss.token_usage
         # ss.main_token_usage = sum(step3_usage_list)
         return
@@ -320,7 +318,9 @@ def main_tab():
             usage = ss.main_token_usage["total_tokens"]
             st.header(f"Extracted Result {'' if usage is None else '(token: '+str(usage)+')'}.",
                       divider="blue")
-            if is_valid_csv_table(ss.main_extracted_result):
+            if isinstance(ss.main_extracted_result, pd.DataFrame):
+                st.dataframe(ss.main_extracted_result)
+            elif is_valid_csv_table(ss.main_extracted_result):
                 preprocess_csv_table_string(ss.main_extracted_result)
                 try:
                     df = convert_csv_table_to_dataframe(ss.main_extracted_result)
