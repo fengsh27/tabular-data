@@ -25,7 +25,7 @@ def test_concate_llm_contents_truncated():
     assert truncated == True
 
 def test_concate_llm_contents_error_handling():
-    with open("tests/36396314_gpt_4o_error_result.json") as fobj:
+    with open("tests/data/36396314_gpt_4o_error_result.json") as fobj:
         obj = json.load(fobj)
         res, usage, truncated = concate_llm_contents(obj["contents"], [10000, 3000])
         assert truncated == True
