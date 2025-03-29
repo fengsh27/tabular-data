@@ -1,5 +1,10 @@
 import re
 from typing import Optional, Protocol
+from langchain_core.prompts import (
+    PromptTemplate, 
+    SystemMessagePromptTemplate, 
+    ChatPromptTemplate,
+)
 
 class StepCallback(Protocol):
     def __call__(
@@ -78,3 +83,8 @@ def extract_integers(text):
             for num_str in re.findall(pattern, text)
         ) - {0}
     )
+
+def from_system_template(template, **kwargs):
+    prompt_template = PromptTemplate.from_template(template, **kwargs)
+    message = SystemMessagePromptTemplate(prompt=prompt_template)
+    return ChatPromptTemplate.from_messages([message])

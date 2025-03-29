@@ -18,6 +18,9 @@ class RowCleanupStep(PKSumCommonStep):
 
     def execute_directly(self, state):
         df_combined = state['df_combined']
+        if df_combined.shape[0] == 0: # empty table
+            return None, df_combined, {**DEFAULT_TOKEN_USAGE}
+
         df_combined["original_index"] = df_combined.index
         expected_columns = ["Drug name", "Analyte", "Specimen", "Population", "Pregnancy stage", "Pediatric/Gestational age", "Subject N", "Parameter type", "Parameter unit", "Main value", "Statistics type", "Variation type", "Variation value", "Interval type", "Lower bound", "Upper bound", "P value"]
 

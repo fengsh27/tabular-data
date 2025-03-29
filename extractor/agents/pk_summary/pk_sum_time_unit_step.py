@@ -25,10 +25,13 @@ class TimeExtractionStep(PKSumCommonAgentStep):
         md_table_aligned = state['md_table_aligned']
         caption = state['caption']
         df_combined = state['df_combined']
-        self.md_data_lines_after_post_process = dataframe_to_markdown(df_combined[[
-            "Main value", "Statistics type", "Variation type", "Variation value",
-            "Interval type", "Lower bound", "Upper bound", "P value"
-        ]])
+        if df_combined.shape[0] == 0:
+            self.md_data_lines_after_post_process = dataframe_to_markdown(df_combined)
+        else:
+            self.md_data_lines_after_post_process = dataframe_to_markdown(df_combined[[
+                "Main value", "Statistics type", "Variation type", "Variation value",
+                "Interval type", "Lower bound", "Upper bound", "P value"
+            ]])
         return get_time_and_unit_prompt(
             md_table_aligned=md_table_aligned,
             md_table_post_processed=self.md_data_lines_after_post_process,

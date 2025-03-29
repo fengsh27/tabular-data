@@ -1,4 +1,5 @@
 import base64
+import logging.handlers
 import streamlit as st
 import logging
 import os
@@ -12,10 +13,30 @@ from version import __version__
 
 def initialize():
     # prepare logger
-    logging.basicConfig(level=logging.INFO)
+    # logging.basicConfig(level=logging.INFO)
     logs_folder = os.environ.get("LOGS_FOLDER", "./logs")
     logs_file = os.path.join(logs_folder, "app.log")
-    file_handler = logging.FileHandler(logs_file)
+    
+    # Root logger configuration (optional)
+    root_logger = logging.getLogger()
+    root_logger.setLevel(logging.WARNING)  # Silence noisy libraries
+
+    # extractor logger
+    extractor_logger = logging.getLogger("extractor")
+    extractor_logger.setLevel(logging.INFO)
+    extractor_logger.handlers.clear()
+
+    # components logger
+    components_logger = logging.getLogger("components")
+    components_logger.setLevel(logging.INFO)
+    components_logger.handlers.clear()
+
+    # app logger
+    app_logger = logging.getLogger("app")
+    app_logger.setLevel(logging.INFO)
+    app_logger.handlers.clear()
+
+    file_handler = logging.handlers.RotatingFileHandler(logs_file)
     file_handler.setLevel(logging.INFO)
     stream_handler = logging.StreamHandler()
     stream_handler.setLevel(logging.INFO)
@@ -25,12 +46,21 @@ def initialize():
     )
     file_handler.setFormatter(formatter)
     stream_handler.setFormatter(formatter)
-    root_logger = logging.getLogger()
-    root_logger.addHandler(file_handler)
-    root_logger.addHandler(stream_handler)
+    
+    extractor_logger.addHandler(file_handler)
+    extractor_logger.addHandler(stream_handler)
+    components_logger.addHandler(file_handler)
+    components_logger.addHandler(stream_handler)
+    app_logger.addHandler(file_handler)
+    app_logger.addHandler(stream_handler)
 
-initialize()
-logger = logging.getLogger(__name__)
+    # Prevent propagation to root logger
+    extractor_logger.propagate = False
+    components_logger.propagate = False
+    app_logger.propagate = False
+    return app_logger
+
+logger = initialize()
 
 ss = st.session_state
 st.set_page_config(layout="wide", page_title="Curation Tool", page_icon="./images/favicon.png")

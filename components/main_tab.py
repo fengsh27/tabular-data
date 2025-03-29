@@ -13,7 +13,7 @@ import time
 
 from TabFuncFlow.utils.table_utils import single_html_table_to_markdown
 from components.table_utils import select_pk_tables
-from extractor.agents.agent_utils import increase_token_usage
+from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
 from extractor.agents.pk_summary.pk_sum_workflow import PKSumWorkflow
 from extractor.constants import ( 
     LLM_CHATGPT_4O,
@@ -27,6 +27,9 @@ from extractor.stampers import ArticleStamper, Stamper
 from extractor.article_retriever import ArticleRetriever
 from extractor.request_openai import (
     get_openai,
+)
+from extractor.request_deepseek import (
+    get_deepseek
 )
 from extractor.utils import (
     convert_csv_table_to_dataframe,
@@ -154,7 +157,7 @@ def on_extract(pmid: str):
     set_stamper_pmid(pmid)
     clear_results()
 
-    llm = get_openai() if ss.main_llm_option == LLM_CHATGPT_4O else get_gemini()
+    llm = get_openai() if ss.main_llm_option == LLM_CHATGPT_4O else get_deepseek()
     ss.token_usage = None
     ss.logs = ""
     if ss.main_prompts_option == PROMPTS_NAME_PK:
@@ -170,8 +173,11 @@ def on_extract(pmid: str):
         for ix in indexes:
             table_no.append(f"Table {int(ix)+1}")
 
-        try:            
-            notification = f"From the HTML you selected, the following table(s) are related to PK (Pharmacokinetics): {table_no}"
+        try:
+            if len(table_no) == 0:
+                notification = "After analyzing the provided content, none of the tables contain pharmacokinetic (PK) data or ADME properties."
+            else:
+                notification = f"From the paper you selected, the following table(s) are related to PK (Pharmacokinetics): {table_no}"
             
             output_info(notification)
             output_info("Step 1 completed, token usage: " + str(token_usage['total_tokens']))
@@ -200,8 +206,9 @@ def on_extract(pmid: str):
                 step_callback=output_step,
             )
             dfs.append(df)
-        df_combined = pd.concat(dfs, axis=0)
+        df_combined = pd.concat(dfs, axis=0) if len(dfs) > 0 else pd.DataFrame()
 
+        ss.token_usage = ss.token_usage if ss.token_usage is not None else {**DEFAULT_TOKEN_USAGE}
         output_info(f"Extracting tabular data completed, token usage: {ss.token_usage['total_tokens']}")
         st.write(f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Extracting tabular data completed, token usage: {ss.token_usage['total_tokens']}")
 
@@ -386,7 +393,6 @@ def main_tab():
     function scroll(dummy_var_to_force_repeat_execution){{
         var textAreas = parent.document.querySelectorAll('.stTextArea textarea'); // document.getElementById("logs_input"); // 
         for (let index = 0; index < textAreas.length; index++) {{
-            // textAreas[index].style.color = 'red'
             textAreas[index].scrollTop = textAreas[index].scrollHeight;
         }}
     }}
@@ -394,3 +400,16 @@ def main_tab():
 </script>
 """
     st.components.v1.html(js)
+
+    # Inject custom CSS to change text_input font size
+    st.markdown("""
+<style>
+    /* Target the input field inside stTextInput */
+    .stTextInput input {
+        font-size: 24px !important;  /* Adjust size as needed */
+    }
+    .stButton button {
+        font-size: 24px !important;
+    }
+</style>
+""", unsafe_allow_html=True)

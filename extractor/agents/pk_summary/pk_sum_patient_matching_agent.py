@@ -4,14 +4,14 @@ from langchain_core.prompts import ChatPromptTemplate
 from pydantic import Field
 
 from TabFuncFlow.utils.table_utils import markdown_to_dataframe
-from extractor.agents.agent_utils import display_md_table
+from extractor.agents.agent_utils import display_md_table, from_system_template
 from extractor.agents.pk_summary.pk_sum_common_agent import (
     PKSumCommonAgentResult, 
     RetryException,
 )
 
 
-MATCHING_PATIENT_PROMPT=ChatPromptTemplate.from_template("""
+MATCHING_PATIENT_PROMPT=from_system_template("""
 The following main table contains pharmacokinetics (PK) data:  
 {processed_md_table_aligned}
 Here is the table caption:  
@@ -65,6 +65,24 @@ def post_process_validate_matched_patients(
     match_list = res.matched_row_indices
     expected_rows = markdown_to_dataframe(md_table).shape[0]
     if len(match_list) != expected_rows:
-        raise RetryException("Wrong answer example:\n" + str(match_list) + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {len(match_list)} extracted matches.")
+        raise RetryException(f"""
+**Error Identification:**
+Your previous answer `{match_list}` is incorrect because:
+- Expected output length: {expected_rows} (to match all Subtable 1 rows)
+- Provided output length: {len(match_list)}
+
+**Required Correction:**
+Please:
+1. Carefully reprocess all {expected_rows} rows from Subtable 1
+2. For each row, explicitly document your matching logic:
+   - Which Subtable 2 row index you selected
+   - The specific criteria used to determine the match
+3. Ensure your final answer contains exactly {expected_rows} indices
+
+**Key Requirements:**
+- Maintain 1:1 correspondence between Subtable 1 rows and output indices
+- Include clear justification for each match in reasoning process
+- Verify the output length matches the input exactly
+""")
     
     return match_list

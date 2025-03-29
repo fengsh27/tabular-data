@@ -8,13 +8,13 @@ from extractor.utils import (
 )
 
 def test_preprocess_csv_table_string():
-    with open("./tests/17158945-result.txt", "r") as fobj:
+    with open("./tests/data/17158945-result.txt", "r") as fobj:
         csv_str = fobj.read()
         assert len(csv_str) == 2497
         out_str = preprocess_csv_table_string(csv_str)
         assert len(out_str) == 2479
 
-    with open("./tests/32510456-result.txt", "r") as fobj:
+    with open("./tests/data/32510456-result.txt", "r") as fobj:
         csv_str = fobj.read()
         cur_length = len(csv_str)
         out_str = preprocess_csv_table_string(csv_str)
@@ -62,3 +62,10 @@ def test_single_html_to_markdown(md_table_aligned_29943508):
     import re
     replaced_content: str = re.sub(r'\xa0', ' ', md_table_aligned_29943508)
     assert replaced_content.find("\xa0") < 0
+
+def test_dataframe():
+    import pandas as pd
+    df = pd.DataFrame([], columns=[])
+    print(df)
+    md_df = df.to_markdown()
+    print(md_df)

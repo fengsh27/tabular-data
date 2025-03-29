@@ -42,7 +42,7 @@ def test_pandas_read_csv():
     ("24132975_pe", (44, 12)),
 ])
 def test_converter(pmid, expected):
-    with open(f"./tests/{pmid}_result.json", "r") as fobj:
+    with open(f"./tests/data/{pmid}_result.json", "r") as fobj:
         res_str = fobj.read()
         prompts_type = PROMPTS_NAME_PE if "_pe" in pmid else PROMPTS_NAME_PK
         processor = GeneratedPKSummaryTableProcessor(prompts_type=prompts_type)
@@ -53,7 +53,7 @@ def test_converter(pmid, expected):
         assert tuple(df.shape) == expected
 
 def test_16143486_gemini_result_json():
-    with open("./tests/16143486_gemini_result.json", "r") as fobj:
+    with open("./tests/data/16143486_gemini_result.json", "r") as fobj:
         res_str = fobj.read()
         processor = GeneratedPKSummaryTableProcessor()
         csv_str = processor.process_content(res_str)
@@ -63,7 +63,7 @@ def test_16143486_gemini_result_json():
         assert tuple(df.shape) == (29, 16)
 
 def test_16143486_gemini_result_json_1():
-    with open("./tests/16143486_gemini_result_1.json", "r") as fobj:
+    with open("./tests/data/16143486_gemini_result_1.json", "r") as fobj:
         res_str = fobj.read()
         processor = GeneratedPKSummaryTableProcessor()
         csv_str = processor.process_content(res_str)
@@ -101,7 +101,7 @@ def test_strip_table_content():
     assert res == "balahbalahbalahbalah \n balahbalahbalahbalah"
 
 def test_36396314_gpt_4o_error_result_json_1():
-    with open("./tests/36396314_gpt_4o_error_result.txt", "r") as fobj:
+    with open("./tests/data/36396314_gpt_4o_error_result.txt", "r") as fobj:
         res_str = fobj.read()
         processor = GeneratedPKSummaryTableProcessor()
         try:

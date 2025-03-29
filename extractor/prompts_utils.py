@@ -4,6 +4,7 @@ from pandas import DataFrame
 import json
 import logging
 
+from TabFuncFlow.utils.table_utils import dataframe_to_markdown
 from extractor.constants import (
     PKSUMMARY_TABLE_OUTPUT_COLUMNS, 
     PKSUMMARY_TABLE_OUTPUT_COLUMNS_DEFINITION, 
@@ -119,20 +120,18 @@ class TableExtractionPromptsGenerator(object):
                 fobj.close()
 
 def _generate_table_prompts(tbl: Dict[str, str | DataFrame], id: str | None = None):
-    raw_tag = tbl.get("raw_tag", None)
+    table = tbl.get("table", None)
+    md_table = dataframe_to_markdown(table)
     id_str = "" if id is None else f"(table index is {id})"
-    if raw_tag is not None:
-        table_text = f"html table {id_str} is:\n```\n{raw_tag}```\n"
-        return table_text
     caption = tbl.get("caption", None)
     table = tbl.get("table", None)
     footnote = tbl.get("footnote", None)
-    table_text = f"table {id_str} including caption and footnote is:\n"
+    table_text = f"markdown table {id_str} including caption and footnote is:\n"
     if caption is not None:
         table_text += f"table caption: {caption}\n"
     if table is not None:
         table_text += "table is:\n```\n"
-        table_text += table.to_csv()
+        table_text += md_table
         table_text += "\n```\n"
     if footnote is not None:
         table_text += f"table footnote: {footnote}\n"

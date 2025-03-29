@@ -36,6 +36,8 @@ class DrugMatchingAutomaticStep(PKSumCommonStep):
     def leave_step(self, state, res, processed_res = None, token_usage = None):
         if processed_res is not None:
             state['drug_list'] = processed_res
+            self._step_output(state, step_output="Result (drug_list):")
+            self._step_output(state, step_output=str(processed_res))
 
         return super().leave_step(state, res, processed_res, token_usage)
 
@@ -67,7 +69,8 @@ class DrugMatchingAgentStep(PKSumCommonStep):
                 instruction_prompt=INSTRUCTION_PROMPT,
                 schema=MatchedDrugResult,
                 post_process=post_process_validate_matched_rows,
-                md_table=md,
+                md_table1=md,
+                md_table2=md_table_drug,
             )
             self._step_output(state, step_reasoning_process=res.reasoning_process if res is not None else "")
             drug_match_list: List[int] = processed_res

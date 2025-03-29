@@ -3,6 +3,9 @@ import pandas as pd
 import re
 from difflib import get_close_matches
 import json
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 def html_table_to_markdown(html):
@@ -118,7 +121,11 @@ def dataframe_to_markdown(df_table):
         return ""  # Return empty string if DataFrame is empty
 
     # Prepare header
-    headers = df_table.columns.tolist()
+    if isinstance(df_table.columns, pd.MultiIndex):
+        # Join column levels with "/" (e.g., ("A", "B") becomes "A/B")
+        headers = ["/".join(map(str, col)) for col in df_table.columns]
+    else:
+        headers = df_table.columns.tolist()
     header_line = '| ' + ' | '.join(headers) + ' |'
     separator_line = '| ' + ' | '.join(['---'] * len(headers)) + ' |'
 
@@ -384,7 +391,7 @@ def single_html_table_to_markdown(html_content: str):
     tables = soup.find_all('table')
 
     if len(tables) != 1:
-        raise ValueError("The input must contain exactly one <table>.")
+        logger.error("The input must contain exactly one <table>.")
     
     html_content = re.sub(r'\xa0', ' ', html_content)
     markdown_table = deduplicate_headers(fill_empty_headers(

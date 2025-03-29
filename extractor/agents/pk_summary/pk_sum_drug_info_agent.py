@@ -9,6 +9,7 @@ from TabFuncFlow.utils.table_utils import dataframe_to_markdown
 from extractor.agents.agent_utils import display_md_table
 from extractor.agents.pk_summary.pk_sum_common_agent import (
     PKSumCommonAgentResult,
+    RetryException,
 )
 
 DRUG_INFO_PROMPT = ChatPromptTemplate.from_template("""
@@ -39,6 +40,11 @@ def post_process_drug_info(
 ):
     if res.drug_combinations is None:
         raise ValueError("Empty drug combinations")
+    
+    if type(res.drug_combinations) != list or len(res.drug_combinations) == 0:
+        raise RetryException(f"""
+Wrong answer: {res.drug_combinations}, if the table does not explicitly mention the drug name, analyte, please leave it with [["N/A", "N/A", "N/A"]].
+""")
     
     df_table = pd.DataFrame(res.drug_combinations, columns=["Drug name", "Analyte", "Specimen"])
     return dataframe_to_markdown(df_table)

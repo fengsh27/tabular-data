@@ -57,9 +57,9 @@ class ExtractParamTypeAndUnitStep(PKSumCommonAgentStep):
     
                     type_unit_list.append(dataframe_to_markdown(df_selected))
                 else:
+                    round += 1
                     step_name = f" (Trial {str(round)})"
                     self._step_output(state, step_output=step_name)
-                    round += 1
                     llm = state['llm']
                     md_table_aligned = state["md_table_aligned"]
                     caption = state["caption"]

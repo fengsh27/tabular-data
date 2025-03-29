@@ -1,6 +1,8 @@
 
 from bs4 import BeautifulSoup, Tag
 from typing import Optional
+import pandas as pd
+
 from extractor.utils import convert_html_table_to_dataframe
 
 class HtmlTableParser(object):
@@ -139,9 +141,33 @@ class HtmlTableExtractor(object):
         ]
 
     def extract_tables(self, html: str):
+        tables = []
         for parser in self.parsers:
             tables = parser.extract_tables(html)
             if tables and len(tables) > 0:
-                return tables
-        return []
+                break
+
+        tables = HtmlTableExtractor._remove_duplicate(tables)
+        return tables
+    
+    @staticmethod
+    def _tables_eq(tablel: dict, table2: dict) -> bool:
+        df_table1: pd.DataFrame = tablel['table']
+        df_table2: pd.DataFrame = table2['table']
+
+        return df_table1.equals(df_table2)
+
+    @staticmethod
+    def _remove_duplicate(tables):
+        res_tables = []
+        for table in tables:
+            if len(res_tables) == 0:
+                res_tables.append(table)
+                continue
+            prev_table = res_tables[-1]
+            if HtmlTableExtractor._tables_eq(prev_table, table):
+                continue
+            res_tables.append(table)
+
+        return res_tables
 

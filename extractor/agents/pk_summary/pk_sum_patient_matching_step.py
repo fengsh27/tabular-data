@@ -38,6 +38,8 @@ class PatientMatchingAutomaticStep(PKSumCommonStep):
     def leave_step(self, state, res, processed_res = None, token_usage = None):
         if processed_res is not None:
             state['patient_list'] = processed_res
+            self._step_output(state, step_output="Result (patient_list):")
+            self._step_output(state, step_output=str(processed_res))
         return super().leave_step(state, res, processed_res, token_usage)
 
 class PatientMatchingAgentStep(PKSumCommonStep):

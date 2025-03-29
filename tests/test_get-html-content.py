@@ -10,7 +10,7 @@ from extractor.prompts_utils import (
 from extractor.utils import convert_html_to_text
 
 def get_html_content(id: str):
-    with open(f'./tests/{id}.html', "r") as fobj:
+    with open(f'./tests/data/{id}.html', "r") as fobj:
         return fobj.read()
     
 class MockResponse:

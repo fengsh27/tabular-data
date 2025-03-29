@@ -29,7 +29,10 @@ class AssemblyStep(PKSumCommonStep):
             # df_combined = pd.concat([df_drug, df_table_patient, df_time, df_type_unit, df_value], axis=1)
             df_combined = pd.concat([df_drug, df_table_patient, df_type_unit, df_value], axis=1)
             df_list.append(df_combined)
-        df_combined = pd.concat(df_list, ignore_index=True)
+        if len(df_list) > 0:
+            df_combined = pd.concat(df_list, ignore_index=True)
+        else:
+            df_combined = pd.DataFrame()
 
         self._step_output(state, step_output=f"""
 Result:

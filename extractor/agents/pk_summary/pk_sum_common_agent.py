@@ -59,7 +59,7 @@ class PKSumCommonAgent:
                 return
         prompt = ChatPromptTemplate.from_messages([
             ("system", system_prompt),
-            ("user", instruction_prompt),
+            ("human", instruction_prompt),
         ])
                 
         return self._invoke_agent(
@@ -78,7 +78,7 @@ class PKSumCommonAgent:
             return prompt
         
         existing_messages = prompt.messages
-        updated_messages = existing_messages + [("user", str(self.exception))]
+        updated_messages = existing_messages + [("human", str(self.exception))]
         self.exception = None
         updated_prompt = ChatPromptTemplate.from_messages(updated_messages)
         return updated_prompt
@@ -93,7 +93,7 @@ class PKSumCommonAgent:
             }
         )
     
-    @retry(stop=stop_after_attempt(3), wait=wait_incrementing())
+    @retry(stop=stop_after_attempt(5), wait=wait_incrementing(start=1.0, increment=3, max=10))
     def _invoke_agent(
         self,
         prompt: ChatPromptTemplate,
@@ -106,13 +106,17 @@ class PKSumCommonAgent:
 
         updated_prompt = self._process_retryexception_message(prompt)
         agent = updated_prompt | self.llm.with_structured_output(schema)
-        res = agent.invoke(
-            input={},
-            config={
-                "callbacks": [callback_handler],
-            },
-        )
-        self._incre_token_usage(callback_handler)
+        try:
+            res = agent.invoke(
+                input={},
+                config={
+                    "callbacks": [callback_handler],
+                },
+            )
+            self._incre_token_usage(callback_handler)
+        except Exception as e:
+            logger.error(str(e))
+            raise e
         processed_res = None
         if post_process is not None:
             try:
