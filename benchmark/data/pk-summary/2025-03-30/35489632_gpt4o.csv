@@ -1,0 +1,8 @@
+﻿,Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower limit,High limit,P value
+0,Meropenem,Meropenem,Plasma,Adults,,11,Cmid,mg/L,GM,19.9,,,Range,13.5,29.5,0.2
+1,Meropenem,Meropenem,Plasma,Adults,,11,Ctrough,mg/L,GM,3.5,,,Range,2,6.1,0.04
+2,Meropenem,Meropenem,Plasma,Adults,,7,Cmid,mg/L,GM,4.9,,,Range,2.6,9.2,0.14
+3,Meropenem,Meropenem,Plasma,Adults,,26,Cmid,mg/L,GM,14.8,,,Range,11.4,19.1,0.2
+4,Meropenem,Meropenem,Plasma,Adults,,7,Ctrough,mg/L,GM,1.6,,,Range,1,2.6,0.04
+5,Meropenem,Meropenem,Plasma,Adults,,7,Cmid,mg/L,GM,1.9,,,Range,0.4,9.6,0.14
+6,Meropenem,Meropenem,Plasma,Adults,,28,Ctrough,mg/L,GM,0.9,,,Range,0.2,4.2,0.85
