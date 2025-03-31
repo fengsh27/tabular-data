@@ -48,8 +48,8 @@ class SplitByColumnsStep(PKSumCommonAgentStep):
         md_table_list = tmp_md_table_list_1
         state["md_table_list"] = md_table_list
         self._step_output(state, step_output="Result (md_table_list):")
-        self._step_output(state, step_output=str(processed_res))
-        return super().leave_step(state, res, processed_res, token_usage)
+        self._step_output(state, step_output=str(md_table_list))
+        return super().leave_step(state, res, md_table_list, token_usage)
 
     # override super().execute_directly
     def execute_directly(self, state):
