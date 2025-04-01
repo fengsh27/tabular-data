@@ -8,7 +8,7 @@ from streamlit_modal import Modal
 import pandas as pd
 import time
 
-from TabFuncFlow.utils.table_utils import single_html_table_to_markdown
+from TabFuncFlow.utils.table_utils import dataframe_to_markdown, single_html_table_to_markdown
 from components.table_utils import select_pk_tables
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
 from extractor.agents.pk_summary.pk_sum_workflow import PKSumWorkflow
@@ -194,12 +194,12 @@ def on_extract(pmid: str):
 
         dfs = []
         for table in selected_tables:
-            html_table = table["raw_tag"]
+            df_table = table["table"]
             caption = "\n".join([table["caption"], table["footnote"]])
             workflow = PKSumWorkflow(llm=llm)
             workflow.build()
-            df = workflow.go(
-                html_content=html_table, 
+            df = workflow.go_md_table(
+                md_table=dataframe_to_markdown(df_table),
                 caption_and_footnote=caption, 
                 step_callback=output_step,
             )
@@ -358,7 +358,7 @@ def main_tab():
                 st.divider()
     with prompts_panel:
         llm_option = st.radio("What LLM would you like to use?", (
-            LLM_CHATGPT_4O, LLM_GEMINI_PRO, LLM_DEEPSEEK_CHAT,
+            LLM_CHATGPT_4O, LLM_DEEPSEEK_CHAT,
         ), index=0)
         ss.main_llm_option = llm_option
         st.divider()

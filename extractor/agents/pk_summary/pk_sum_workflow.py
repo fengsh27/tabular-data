@@ -116,14 +116,13 @@ class PKSumWorkflow:
         # logger.info(self.graph.get_graph().draw_ascii())
         # print(self.graph.get_graph().draw_ascii())
 
-    def go(
+    def go_md_table(
         self, 
-        html_content: str, 
+        md_table: str, 
         caption_and_footnote: str, 
         step_callback: Callable | None = None,
         sleep_time: float | None = None,
     ):
-        md_table = single_html_table_to_markdown(html_content)
         config = {"recursion_limit": 500}
 
         for s in self.graph.stream(
@@ -149,6 +148,16 @@ class PKSumWorkflow:
         }
         df_combined = df_combined.rename(columns=column_mapping)
         return df_combined
+
+    def go(
+        self, 
+        html_content: str, 
+        caption_and_footnote: str, 
+        step_callback: Callable | None = None,
+        sleep_time: float | None = None,
+    ):
+        md_table = single_html_table_to_markdown(html_content)
+        return self.go_md_table(md_table, caption_and_footnote, step_callback, sleep_time)
 
         
 

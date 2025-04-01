@@ -125,7 +125,7 @@ def dataframe_to_markdown(df_table):
         # Join column levels with "/" (e.g., ("A", "B") becomes "A/B")
         headers = ["/".join(map(str, col)) for col in df_table.columns]
     else:
-        headers = df_table.columns.tolist()
+        headers = list(map(str, df_table.columns)) # df_table.columns.tolist()
     header_line = '| ' + ' | '.join(headers) + ' |'
     separator_line = '| ' + ' | '.join(['---'] * len(headers)) + ' |'
 

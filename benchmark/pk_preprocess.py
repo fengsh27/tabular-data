@@ -54,6 +54,9 @@ PK_COLUMNS_MAP = [
     ("interval high", "High limit"),
     ("Variability statistic", "Variation type"),
     ('Summary Statistic', "Summary Statistics"),
+    ('Parameter unit', "Unit"),
+    ('Parameter statistic', "Summary Statistics"),
+    ('Parameter value', "Value"),
 ]
 
 def process_1st_column(rows: List[List[str]]):

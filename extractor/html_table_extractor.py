@@ -8,7 +8,7 @@ from extractor.utils import convert_html_table_to_dataframe
 class HtmlTableParser(object):
     MAX_LEVEL = 3
     CAPTION_CANDIDATES = ["caption", "captions", "title"]
-    FOOTNOTE_CANDIDATES = ["note", "legend", "description", "foot"]
+    FOOTNOTE_CANDIDATES = ["note", "legend", "description", "foot", "notes"]
     def __init__(self):
         pass
 
