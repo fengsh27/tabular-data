@@ -55,7 +55,7 @@ def post_process_selected_table_ids(
     return tables
     
 
-def select_pk_tables(
+def select_pk_summary_tables(
     html_tables: list[dict[str, str | DataFrame]], 
     llm
 ):

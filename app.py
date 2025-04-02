@@ -9,58 +9,19 @@ load_dotenv()
 from components.main_tab import main_tab
 from components.html_table_tab import html_tab
 from extractor.stampers import ArticleStamper
+from extractor.log_utils import initialize_logger
+
 from version import __version__
 
-def initialize():
-    # prepare logger
-    # logging.basicConfig(level=logging.INFO)
-    logs_folder = os.environ.get("LOGS_FOLDER", "./logs")
-    logs_file = os.path.join(logs_folder, "app.log")
-    
-    # Root logger configuration (optional)
-    root_logger = logging.getLogger()
-    root_logger.setLevel(logging.WARNING)  # Silence noisy libraries
-
-    # extractor logger
-    extractor_logger = logging.getLogger("extractor")
-    extractor_logger.setLevel(logging.INFO)
-    extractor_logger.handlers.clear()
-
-    # components logger
-    components_logger = logging.getLogger("components")
-    components_logger.setLevel(logging.INFO)
-    components_logger.handlers.clear()
-
-    # app logger
-    app_logger = logging.getLogger("app")
-    app_logger.setLevel(logging.INFO)
-    app_logger.handlers.clear()
-
-    file_handler = logging.handlers.RotatingFileHandler(logs_file)
-    file_handler.setLevel(logging.INFO)
-    stream_handler = logging.StreamHandler()
-    stream_handler.setLevel(logging.INFO)
-    formatter = logging.Formatter(
-        '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-        # datefmt="%Y-%m-%d %H:%M:%S,uuu"
-    )
-    file_handler.setFormatter(formatter)
-    stream_handler.setFormatter(formatter)
-    
-    extractor_logger.addHandler(file_handler)
-    extractor_logger.addHandler(stream_handler)
-    components_logger.addHandler(file_handler)
-    components_logger.addHandler(stream_handler)
-    app_logger.addHandler(file_handler)
-    app_logger.addHandler(stream_handler)
-
-    # Prevent propagation to root logger
-    extractor_logger.propagate = False
-    components_logger.propagate = False
-    app_logger.propagate = False
-    return app_logger
-
-logger = initialize()
+app_logger = initialize_logger(
+    log_file="app.log",
+    app_log_name="app",
+    app_log_level=logging.INFO,
+    log_entries={
+        "extractor": logging.INFO,
+        "components": logging.INFO,
+    },    
+)
 
 ss = st.session_state
 st.set_page_config(layout="wide", page_title="Curation Tool", page_icon="./images/favicon.png")

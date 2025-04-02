@@ -143,8 +143,8 @@ class PKSumWorkflow:
         column_mapping = {
             "Main value": "Parameter value",
             "Statistics type": "Parameter statistic",
-            "Lower bound": "Lower limit",
-            "Upper bound": "High limit",
+            # "Lower bound": "Lower limit",
+            # "Upper bound": "High limit",
         }
         df_combined = df_combined.rename(columns=column_mapping)
         return df_combined

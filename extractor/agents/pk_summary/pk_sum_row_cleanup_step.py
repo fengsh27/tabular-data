@@ -21,7 +21,7 @@ class RowCleanupStep(PKSumCommonStep):
         if df_combined.shape[0] == 0: # empty table
             return None, df_combined, {**DEFAULT_TOKEN_USAGE}
 
-        df_combined["original_index"] = df_combined.index
+        # df_combined["original_index"] = df_combined.index
         expected_columns = ["Drug name", "Analyte", "Specimen", "Population", "Pregnancy stage", "Pediatric/Gestational age", "Subject N", "Parameter type", "Parameter unit", "Main value", "Statistics type", "Variation type", "Variation value", "Interval type", "Lower bound", "Upper bound", "P value"]
 
         def rename_columns(df, expected_columns):
@@ -40,9 +40,25 @@ class RowCleanupStep(PKSumCommonStep):
     
         """Delete ERROR rows"""
         df_combined = df_combined[df_combined.ne("ERROR").all(axis=1)]
-        # """if Time == "N/A", Time unit must be "N/A"。"""
-        # df_combined.loc[
-        #     (df_combined["Time value"] == "N/A"), "Time unit"] = "N/A"
+        """if Statistics type == Interval type, and (Main value == Lower bound or Main value == Upper bound), set Main value and Statistics type = N/A"""
+        df_combined.loc[
+            (df_combined["Statistics type"] == df_combined["Interval type"]) &
+            (
+                    (df_combined["Main value"] == df_combined["Lower bound"]) |
+                    (df_combined["Main value"] == df_combined["Upper bound"])
+            ),
+            ["Main value", "Statistics type"]
+        ] = "N/A"
+        """if Lower bound and Upper bound are both in Main value (string), Main value = N/A"""
+        def contains_bounds(row):
+            main_value = str(row["Main value"])
+            lower = str(row["Lower bound"])
+            upper = str(row["Upper bound"])
+            if lower.strip() != "N/A" and upper.strip() != "N/A":
+                return lower in main_value and upper in main_value
+            return False
+        mask = df_combined.apply(contains_bounds, axis=1)
+        df_combined.loc[mask, "Main value"] = "N/A"
         """if Value == "N/A", Summary Statistics must be "N/A"。"""
         df_combined.loc[
             (df_combined["Main value"] == "N/A"), "Statistics type"] = "N/A"
@@ -55,7 +71,6 @@ class RowCleanupStep(PKSumCommonStep):
         """if Variation value == "N/A", Variation type must be "N/A"。"""
         df_combined.loc[
             (df_combined["Variation value"] == "N/A"), "Variation type"] = "N/A"
-        df_combined = df_combined.reset_index(drop=True)
         """replace empty by N/A"""
         df_combined.replace(r'^\s*$', 'N/A', regex=True, inplace=True)
         """replace n/a by N/A"""
@@ -74,14 +89,12 @@ class RowCleanupStep(PKSumCommonStep):
         df_combined.replace(",", " ", inplace=True)
     
         """Remove non-digit rows"""
-        columns_to_check = ["Main value", "Statistics type", "Variation type", "Variation value",
-                            "Interval type", "Lower bound", "Upper bound", "P value"]
+        columns_to_check = ["Main value", "Variation type", "Lower bound", "Upper bound"]
     
         def contains_number(s):
             return any(char.isdigit() for char in s)
     
         df_combined = df_combined[df_combined[columns_to_check].apply(lambda row: any(contains_number(str(cell)) for cell in row), axis=1)]
-        df_combined = df_combined.reset_index(drop=True)
     
         """ Merge """
     
@@ -97,7 +110,6 @@ class RowCleanupStep(PKSumCommonStep):
     
         merged_rows = []
         for _, group in grouped:
-            group = group.reset_index(drop=True)
             used_indices = set()
     
             for i, j in itertools.combinations(range(len(group)), 2):
@@ -133,16 +145,12 @@ class RowCleanupStep(PKSumCommonStep):
         df_merged.fillna("N/A", inplace=True)
     
         df_combined = df_merged
-        df_combined = df_combined.reset_index(drop=True)
     
         """Remove duplicate"""
         df_combined = df_combined.drop_duplicates()
-        df_combined = df_combined.reset_index(drop=True)
     
         """delete 'fill in subject N as value error', this implementation is bad, still looking for better solutions"""
         df_combined = df_combined[df_combined["Subject N"] != df_combined["Main value"]]
-        # df_combined = df_combined[~df_combined["Value"].isin(markdown_to_dataframe(md_table_patient)["Subject N"].to_list())]
-        df_combined = df_combined.reset_index(drop=True)
     
         """fix put range only in lower limit/high limit"""
         float_pattern = re.compile(r"-?\d+\.\d+")
@@ -163,7 +171,6 @@ class RowCleanupStep(PKSumCommonStep):
             return pd.Series([row["Lower bound"], row["Upper bound"]])
     
         df_combined[["Lower bound", "Upper bound"]] = df_combined.apply(extract_limits, axis=1)
-        df_combined = df_combined.reset_index(drop=True)
     
         """remove inclusive rows"""
         def remove_contained_rows(df):
@@ -180,7 +187,7 @@ class RowCleanupStep(PKSumCommonStep):
                     elif all((r2 == r1) or (r2 == "N/A") for r1, r2 in zip(row1, row2)):
                         rows_to_drop.add(j)
     
-            df_cleaned = df_cleaned.drop(index=rows_to_drop).reset_index(drop=True)
+            df_cleaned = df_cleaned.drop(index=rows_to_drop)
             return df_cleaned
     
         df_combined = remove_contained_rows(df_combined)
@@ -188,14 +195,12 @@ class RowCleanupStep(PKSumCommonStep):
         df_combined = remove_contained_rows(df_combined)
         df_combined = remove_contained_rows(df_combined)
         df_combined = remove_contained_rows(df_combined)
-        df_combined = df_combined.reset_index(drop=True)
     
         """col exchange"""
         cols = list(df_combined.columns)
         i, j = cols.index('Main value'), cols.index('Statistics type')
         cols[i], cols[j] = cols[j], cols[i]
         df_combined = df_combined[cols]
-        df_combined = df_combined.reset_index(drop=True)
     
         """give range to median"""
         # group_columns = ["Drug name", "Analyte", "Specimen", "Population", "Pregnancy stage", "Subject N", "Parameter type",
@@ -221,12 +226,10 @@ class RowCleanupStep(PKSumCommonStep):
     
                         # Remove range information from the non-median row
                         df_combined.loc[non_median_row.index, ["Interval type", "Lower bound", "Upper bound"]] = ["N/A", "N/A", "N/A"]
-    
-        df_combined = df_combined.reset_index(drop=True)
-    
-        df_combined.sort_values(by="original_index", inplace=True)
-        df_combined.drop(columns=["original_index"], inplace=True)
-        df_combined.reset_index(drop=True, inplace=True)
+
+        df_combined["original_order"] = df_combined.index
+        df_combined = df_combined.sort_values(by="original_order").drop(columns=["original_order"]).reset_index(
+            drop=True)
 
         self._step_output(state, step_output=f"""
 Result:
@@ -240,5 +243,4 @@ Result:
             # update df_combined
             state['df_combined'] = processed_res
         return super().leave_step(state, res, processed_res, token_usage)
-
 

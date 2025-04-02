@@ -57,6 +57,8 @@ PK_COLUMNS_MAP = [
     ('Parameter unit', "Unit"),
     ('Parameter statistic', "Summary Statistics"),
     ('Parameter value', "Value"),
+    ("Lower bound", "Lower limit"),
+    ("Upper bound", "High limit"),
 ]
 
 def process_1st_column(rows: List[List[str]]):

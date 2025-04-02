@@ -9,7 +9,7 @@ import pandas as pd
 import time
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, single_html_table_to_markdown
-from components.table_utils import select_pk_tables
+from extractor.table_utils import select_pk_summary_tables
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
 from extractor.agents.pk_summary.pk_sum_workflow import PKSumWorkflow
 from extractor.constants import ( 
@@ -166,7 +166,7 @@ def on_extract(pmid: str):
         """ Step 1 - Identify PK Tables """
         """ Analyze the given HTML to determine which tables are about PK. """
         """ Example response: ["Table 1", "Table 2"] """
-        selected_tables, indexes, token_usage = select_pk_tables(include_tables, llm)
+        selected_tables, indexes, token_usage = select_pk_summary_tables(include_tables, llm)
         table_no = []
         for ix in indexes:
             table_no.append(f"Table {int(ix)+1}")
@@ -204,7 +204,7 @@ def on_extract(pmid: str):
                 step_callback=output_step,
             )
             dfs.append(df)
-        df_combined = pd.concat(dfs, axis=0) if len(dfs) > 0 else pd.DataFrame()
+        df_combined = pd.concat(dfs, axis=0).reset_index(drop=True) if len(dfs) > 0 else pd.DataFrame()
 
         ss.token_usage = ss.token_usage if ss.token_usage is not None else {**DEFAULT_TOKEN_USAGE}
         output_info(f"Extracting tabular data completed, token usage: {ss.token_usage['total_tokens']}")
