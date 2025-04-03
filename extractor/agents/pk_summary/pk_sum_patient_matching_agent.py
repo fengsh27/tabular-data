@@ -30,6 +30,7 @@ Carefully analyze the tables and follow these steps:
     - For instance, if the total N is 10 but a specific data point corresponds to 9, the correct Subject N for that row should be 9. It is essential to ensure that each row is matched with the appropriate Subject N accordingly.
 (4) The final list should be like this without removing duplicates or sorting:
     [1,1,2,2,3,3]
+(5) In rare cases where a row in Subtable 1 cannot be matched, return -1 for that row. This should only be used when absolutely necessary.
 """)
 
 def get_matching_patient_prompt(
