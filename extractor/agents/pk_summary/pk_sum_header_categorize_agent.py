@@ -17,7 +17,7 @@ The following table contains pharmacokinetics (PK) data:
 Carefully analyze the table and follow these steps:  
 (1) Examine all column headers and categorize each one into one of the following groups:  
    - **"Parameter type"**: Columns that describe the type of pharmacokinetic parameter.  
-   - **"Parameter unit"**: Columns that specify the unit of the parameter type.  
+   - **"Parameter unit"**: Columns that **only** specify the unit of the parameter type. e.g. "fentanyl (ng/ml)" is not Parameter unit.  
    - **"Parameter value"**: Columns that contain numerical parameter values.  
    - **"P value"**: Columns that represent statistical P values.  
    - **"Uncategorized"**: Columns that do not fit into any of the above categories.  
