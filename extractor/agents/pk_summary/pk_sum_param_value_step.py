@@ -1,4 +1,3 @@
-
 from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
@@ -10,6 +9,7 @@ from extractor.agents.pk_summary.pk_sum_param_value_agent import (
     post_process_matched_list,
 )
 
+
 class ParameterValueExtractionStep(PKSumCommonStep):
     def __init__(self):
         super().__init__()
@@ -17,10 +17,10 @@ class ParameterValueExtractionStep(PKSumCommonStep):
         self.end_title = "Completed Parameter Value Extraction"
 
     def execute_directly(self, state):
-        md_table_aligned = state['md_table_aligned']
-        llm = state['llm']
-        md_table_list = state['md_table_list']
-        caption = state['caption']
+        md_table_aligned = state["md_table_aligned"]
+        llm = state["llm"]
+        md_table_list = state["md_table_list"]
+        caption = state["caption"]
 
         value_list = []
         round = 0
@@ -35,24 +35,24 @@ class ParameterValueExtractionStep(PKSumCommonStep):
                 instruction_prompt=INSTRUCTION_PROMPT,
                 schema=ParameterValueResult,
                 post_process=post_process_matched_list,
-                expected_rows=markdown_to_dataframe(md).shape[0]
+                expected_rows=markdown_to_dataframe(md).shape[0],
             )
-            self._step_output(state, step_reasoning_process=res.reasoning_process if res is not None else "")
+            self._step_output(
+                state,
+                step_reasoning_process=res.reasoning_process if res is not None else "",
+            )
             value_list.append(processed_res)
             total_token_usage = increase_token_usage(token_usage)
 
-        return ParameterValueResult(
-            reasoning_process="",
-            extracted_param_values=[[]]
-        ), value_list, total_token_usage
-    
-    def leave_step(self, state, res, processed_res = None, token_usage = None):
+        return (
+            ParameterValueResult(reasoning_process="", extracted_param_values=[[]]),
+            value_list,
+            total_token_usage,
+        )
+
+    def leave_step(self, state, res, processed_res=None, token_usage=None):
         if processed_res is not None:
-            state['value_list'] = processed_res
+            state["value_list"] = processed_res
             self._step_output(state, step_output="Result (value_list):")
             self._step_output(state, step_output=str(processed_res))
         return super().leave_step(state, res, processed_res, token_usage)
-            
-
-
-

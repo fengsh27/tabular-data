@@ -1,20 +1,14 @@
-
-from typing import Union
-from pydantic import BaseModel, Field
+from pydantic import Field
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_openai.chat_models.base import BaseChatOpenAI
 
 from TabFuncFlow.operations.f_select_row_col import f_select_row_col
 from TabFuncFlow.utils.table_utils import (
-    dataframe_to_markdown, 
-    fix_col_name, 
+    dataframe_to_markdown,
+    fix_col_name,
     markdown_to_dataframe,
 )
 from extractor.agents.pk_summary.pk_sum_common_agent import PKSumCommonAgentResult
 
-from extractor.agents.agent_utils import display_md_table
-
-from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
 
 INDIVIDUAL_DATA_DEL_PROMPT = ChatPromptTemplate.from_template("""
 There is now a table related to pharmacokinetics (PK). 
@@ -28,15 +22,24 @@ row_list: an array of row indices that satisfy the requirement, that is the rows
 col_list: an array of column names that satisfy the requirement, that is the columns in the above rows have no individual-level results or personally identifiable data.
 """)
 
+
 class IndividualDataDelResult(PKSumCommonAgentResult):
-    """ Individual data deletion result """
-    processed: bool = Field(description="""A boolean flag indicating whether the table requires processing. 
+    """Individual data deletion result"""
+
+    processed: bool = Field(
+        description="""A boolean flag indicating whether the table requires processing. 
 - `False`: The table already meets the requirements and does not need further processing.
-- `True`: The table has been processed.""")
-    row_list: list[int] | None = Field(description="""An array of row indices that satisfy the requirement, that is the rows no individual-level results or personally identifiable data. 
-If the table does not require processing, this value will be `None`""")
-    col_list: list[str] | None = Field(description="""An array of column names that satisfy the requirement, that is the columns no individual-level results or personally identifiable data. 
-If the table does not require processing, this value will be `None`""")
+- `True`: The table has been processed."""
+    )
+    row_list: list[int] | None = Field(
+        description="""An array of row indices that satisfy the requirement, that is the rows no individual-level results or personally identifiable data. 
+If the table does not require processing, this value will be `None`"""
+    )
+    col_list: list[str] | None = Field(
+        description="""An array of column names that satisfy the requirement, that is the columns no individual-level results or personally identifiable data. 
+If the table does not require processing, this value will be `None`"""
+    )
+
 
 def post_process_individual_del_result(
     res: IndividualDataDelResult,
@@ -44,14 +47,11 @@ def post_process_individual_del_result(
 ):
     if res.processed is False:
         return md_table
-    
+
     row_list = res.row_list
     col_list = res.col_list
     if col_list is not None:
         col_list = [fix_col_name(item, md_table) for item in col_list]
-    
+
     df_table = f_select_row_col(row_list, col_list, markdown_to_dataframe(md_table))
     return dataframe_to_markdown(df_table)
-    
-
-

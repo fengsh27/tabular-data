@@ -1,27 +1,29 @@
-
-from typing import Any, Callable, List, Optional
+from typing import Any, Callable, Optional
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai.chat_models.base import BaseChatOpenAI
 from langchain_community.callbacks.openai_info import OpenAICallbackHandler
 from pydantic import BaseModel, Field
-from tenacity import (
-    retry, stop_after_attempt, wait_incrementing
-)
+from tenacity import retry, stop_after_attempt, wait_incrementing
 import logging
 
 from extractor.agents.agent_utils import (
-    display_md_table,
     increase_token_usage,
 )
 
 logger = logging.getLogger()
 
+
 class RetryException(Exception):
-    """ Exception need to retry """
+    """Exception need to retry"""
+
     pass
 
+
 class PKSumCommonAgentResult(BaseModel):
-    reasoning_process: str = Field(description="A detailed explanation of the thought process or reasoning steps taken to reach a conclusion.")
+    reasoning_process: str = Field(
+        description="A detailed explanation of the thought process or reasoning steps taken to reach a conclusion."
+    )
+
 
 class PKSumCommonAgent:
     def __init__(self, llm: BaseChatOpenAI):
@@ -30,12 +32,12 @@ class PKSumCommonAgent:
         self.token_usage: dict | None = None
 
     def go(
-        self, 
-        system_prompt: str, 
-        instruction_prompt: str, 
+        self,
+        system_prompt: str,
+        instruction_prompt: str,
         schema: any,
-        pre_process: Optional[Callable]=None,
-        post_process: Optional[Callable]=None,
+        pre_process: Optional[Callable] = None,
+        post_process: Optional[Callable] = None,
         **kwargs: Optional[Any],
     ):
         """
@@ -55,34 +57,38 @@ class PKSumCommonAgent:
         self._initialize()
         if pre_process is not None:
             is_OK = pre_process(**kwargs)
-            if not is_OK: # skip
+            if not is_OK:  # skip
                 return
-        prompt = ChatPromptTemplate.from_messages([
-            ("system", system_prompt),
-            ("human", instruction_prompt),
-        ])
-                
+        prompt = ChatPromptTemplate.from_messages(
+            [
+                ("system", system_prompt),
+                ("human", instruction_prompt),
+            ]
+        )
+
         return self._invoke_agent(
             prompt,
             schema,
             post_process,
             **kwargs,
         )
-    
+
     def _initialize(self):
         self.exception = None
         self.token_usage = None
-    
-    def _process_retryexception_message(self, prompt: ChatPromptTemplate) -> ChatPromptTemplate:
+
+    def _process_retryexception_message(
+        self, prompt: ChatPromptTemplate
+    ) -> ChatPromptTemplate:
         if self.exception is None:
             return prompt
-        
+
         existing_messages = prompt.messages
         updated_messages = existing_messages + [("human", str(self.exception))]
         self.exception = None
         updated_prompt = ChatPromptTemplate.from_messages(updated_messages)
         return updated_prompt
-    
+
     def _incre_token_usage(self, token_usage):
         self.token_usage = increase_token_usage(
             self.token_usage,
@@ -90,15 +96,18 @@ class PKSumCommonAgent:
                 "total_tokens": token_usage.total_tokens,
                 "completion_tokens": token_usage.completion_tokens,
                 "prompt_tokens": token_usage.prompt_tokens,
-            }
+            },
         )
-    
-    @retry(stop=stop_after_attempt(5), wait=wait_incrementing(start=1.0, increment=3, max=10))
+
+    @retry(
+        stop=stop_after_attempt(5),
+        wait=wait_incrementing(start=1.0, increment=3, max=10),
+    )
     def _invoke_agent(
         self,
         prompt: ChatPromptTemplate,
         schema: any,
-        post_process: Optional[Callable]=None,
+        post_process: Optional[Callable] = None,
         **kwargs: Optional[Any],
     ):
         # Initialize the callback handler
@@ -129,7 +138,3 @@ class PKSumCommonAgent:
                 logger.error(str(e))
                 raise e
         return res, processed_res, self.token_usage
-    
-
-    
-

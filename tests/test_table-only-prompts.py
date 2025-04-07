@@ -1,13 +1,11 @@
-
 from datetime import datetime
 from openai import AzureOpenAI, OpenAI
 from dotenv import load_dotenv
 import os
 import pytest
 
-pytest.skip(
-    reason="skip due to dependence on OpenAI key", allow_module_level=True
-)
+pytest.skip(reason="skip due to dependence on OpenAI key", allow_module_level=True)
+
 
 def write_log_info(msg: str):
     with open("./logs/test.log", "a+") as fobj:
@@ -27,7 +25,8 @@ if openai_type == "azure":
     model = os.environ.get("OPENAI_DEPLOYMENT_NAME", None)
 else:
     client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY", None))
-    model = "gpt-3.5-turbo" # "gpt-4-1106-preview"
+    model = "gpt-3.5-turbo"  # "gpt-4-1106-preview"
+
 
 @pytest.mark.skip("temporary skipped")
 def test_table_only_prompts():
@@ -49,7 +48,7 @@ Please note:
 1. only output markdown table without any other characters and embed the text in code chunks, so it won't convert to HTML in the assistant.
 2. give me all extracted data as compoleted as possible, I don't want you to omit any data.
 3. if the information that is not provided, please leave it empty 
-"""
+""",
     }
     table_prompts = {
         "role": "user",
@@ -65,21 +64,23 @@ table caption: Geometric mean (95% CI), GMR, and arithmetic mean of the postpart
 
 table footnote: aCLF, oral clearance, where F is bioavailability; Cmax, maximum concentration of drug in plasma; Tmax, time to reach maximum plasma concentration; Cmin, minimum concentration in plasma at the end of the dosing interval.bGeometric mean ratio.
 
-"""
+""",
     }
     prompts = [hint_prompts, table_prompts]
-    prompts.append({"role": "user", "content": "Now please extract information from the tables"})
-    
+    prompts.append(
+        {"role": "user", "content": "Now please extract information from the tables"}
+    )
+
     try:
         res = client.chat.completions.create(
-            model=model, 
+            model=model,
             messages=prompts,
             temperature=0.7,
             # max_tokens=2000,
             top_p=0.95,
             frequency_penalty=0,
             presence_penalty=0,
-            stop=None
+            stop=None,
         )
         assert res is not None
         (res.choices[0].message.content)
@@ -91,4 +92,3 @@ table footnote: aCLF, oral clearance, where F is bioavailability; Cmax, maximum 
         # (False, str(e))
         write_log_info(str(e))
         assert False
-

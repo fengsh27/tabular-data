@@ -1,7 +1,5 @@
-
-from typing import Union
 from langchain_core.prompts import ChatPromptTemplate
-from pydantic import BaseModel, Field
+from pydantic import Field
 
 from TabFuncFlow.utils.table_utils import (
     fix_col_name,
@@ -11,7 +9,7 @@ from TabFuncFlow.utils.table_utils import (
 from TabFuncFlow.operations.f_transpose import f_transpose
 from TabFuncFlow.utils.table_utils import (
     deduplicate_headers,
-    fill_empty_headers, 
+    fill_empty_headers,
     remove_empty_col_row,
 )
 from extractor.agents.pk_summary.pk_sum_common_agent import PKSumCommonAgentResult
@@ -26,19 +24,24 @@ col_name: column name, it represents the PK parameter type serves as the row hea
 (2) Ensure a thorough analysis of the table structure before selecting your answer.
 """)
 
+
 class ParameterTypeAlignResult(PKSumCommonAgentResult):
-    col_name: str | None = Field(description="""The name of the column representing the PK parameter type, which serves as the row header or is listed under a specific column. 
-If the PK parameter type is represented as column headers, this value will be None.""")
+    col_name: str | None = Field(
+        description="""The name of the column representing the PK parameter type, which serves as the row header or is listed under a specific column. 
+If the PK parameter type is represented as column headers, this value will be None."""
+    )
+
 
 def post_process_parameter_type_align(
-    res: ParameterTypeAlignResult,
-    md_table_summary: str
+    res: ParameterTypeAlignResult, md_table_summary: str
 ):
     df_table = markdown_to_dataframe(md_table_summary)
     if res.col_name is None:
         df_table = f_transpose(df_table)
-        df_table.columns = ['Parameter type'] + list(df_table.columns[1:])
-        return deduplicate_headers(fill_empty_headers(remove_empty_col_row(dataframe_to_markdown(df_table))))
+        df_table.columns = ["Parameter type"] + list(df_table.columns[1:])
+        return deduplicate_headers(
+            fill_empty_headers(remove_empty_col_row(dataframe_to_markdown(df_table)))
+        )
     else:
         col_name = fix_col_name(res.col_name, md_table_summary)
         df_table = df_table.rename(columns={f"{col_name}": "Parameter type"})

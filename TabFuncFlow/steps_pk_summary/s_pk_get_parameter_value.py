@@ -4,7 +4,9 @@ from TabFuncFlow.operations.f_transpose import *
 import pandas as pd
 
 
-def s_pk_get_parameter_value_prompt(md_table_aligned, caption, md_table_aligned_with_1_param_type_and_value):
+def s_pk_get_parameter_value_prompt(
+    md_table_aligned, caption, md_table_aligned_with_1_param_type_and_value
+):
     # Extract the first line (headers) from the provided subtable
     first_line = md_table_aligned_with_1_param_type_and_value.strip().split("\n")[0]
     headers = [col.strip() for col in first_line.split("|") if col.strip()]
@@ -44,56 +46,104 @@ Please Note:
 
 
 def s_pk_get_parameter_value_parse(content, usage):
-    content = content.replace('\n', '')
-    matches = re.findall(r'<<.*?>>', content)
+    content = content.replace("\n", "")
+    matches = re.findall(r"<<.*?>>", content)
     match_angle = matches[-1] if matches else None
 
     if match_angle:
         try:
-            match_list = ast.literal_eval(match_angle[2:-2])  # Extract list from `<<(...)>>`
+            match_list = ast.literal_eval(
+                match_angle[2:-2]
+            )  # Extract list from `<<(...)>>`
             if not isinstance(match_list, list):
-                raise ValueError(f"Parsed content is not a valid list: {match_list}", f"\n{content}", f"\n<<{usage}>>")
+                raise ValueError(
+                    f"Parsed content is not a valid list: {match_list}",
+                    f"\n{content}",
+                    f"\n<<{usage}>>",
+                )
             return match_list
         except (SyntaxError, ValueError) as e:
-            raise ValueError(f"Failed to parse parameter values: {e}", f"\n{content}", f"\n<<{usage}>>") from e
+            raise ValueError(
+                f"Failed to parse parameter values: {e}",
+                f"\n{content}",
+                f"\n<<{usage}>>",
+            ) from e
     else:
-        raise ValueError("No valid parameter values found in content.", f"\n{content}", f"\n<<{usage}>>")  # Clearer error message
+        raise ValueError(
+            "No valid parameter values found in content.",
+            f"\n{content}",
+            f"\n<<{usage}>>",
+        )  # Clearer error message
 
 
-def s_pk_get_parameter_value(md_table_aligned, caption, md_table_aligned_with_1_param_type_and_value, model_name="gemini_15_pro"):
-    msg = s_pk_get_parameter_value_prompt(md_table_aligned, caption, md_table_aligned_with_1_param_type_and_value)
+def s_pk_get_parameter_value(
+    md_table_aligned,
+    caption,
+    md_table_aligned_with_1_param_type_and_value,
+    model_name="gemini_15_pro",
+):
+    msg = s_pk_get_parameter_value_prompt(
+        md_table_aligned, caption, md_table_aligned_with_1_param_type_and_value
+    )
 
-    messages = [msg, ]
+    messages = [
+        msg,
+    ]
     question = "Do not give the final result immediately. First, explain your thought process, then provide the answer."
     # question = "When writing code to solve a problem, do not give the final result immediately. First, explain your thought process in detail, including how you analyze the problem, choose an algorithm or approach, and implement key steps. Then, provide the final code solution."
 
-    res, content, usage, truncated = get_llm_response(messages, question, model=model_name)
+    res, content, usage, truncated = get_llm_response(
+        messages, question, model=model_name
+    )
     # print(display_md_table(md_table))
     # print(usage, content)
 
     try:
-        match_list = s_pk_get_parameter_value_parse(content, usage)  # Parse extracted values
+        match_list = s_pk_get_parameter_value_parse(
+            content, usage
+        )  # Parse extracted values
     except Exception as e:
-        raise RuntimeError(f"Error in s_pk_get_parameter_value_parse: {e}", f"\n{content}", f"\n<<{usage}>>") from e
+        raise RuntimeError(
+            f"Error in s_pk_get_parameter_value_parse: {e}",
+            f"\n{content}",
+            f"\n<<{usage}>>",
+        ) from e
 
     if not match_list:
         raise ValueError(
-            "Parameter value extraction failed: No valid values found.", f"\n{content}", f"\n<<{usage}>>")  # Ensures the function does not return None
+            "Parameter value extraction failed: No valid values found.",
+            f"\n{content}",
+            f"\n<<{usage}>>",
+        )  # Ensures the function does not return None
 
-    df_table = pd.DataFrame(match_list, columns=[
-        'Main value', 'Statistics type', 'Variation type', 'Variation value',
-        'Interval type', 'Lower bound', 'Upper bound', 'P value'
-    ])
+    df_table = pd.DataFrame(
+        match_list,
+        columns=[
+            "Main value",
+            "Statistics type",
+            "Variation type",
+            "Variation value",
+            "Interval type",
+            "Lower bound",
+            "Upper bound",
+            "P value",
+        ],
+    )
 
-    expected_rows = markdown_to_dataframe(md_table_aligned_with_1_param_type_and_value).shape[0]
+    expected_rows = markdown_to_dataframe(
+        md_table_aligned_with_1_param_type_and_value
+    ).shape[0]
     if df_table.shape[0] != expected_rows:
         raise ValueError(
-            f"Mismatch: Expected {expected_rows} rows, but got {df_table.shape[0]} extracted values.", f"\n{content}", f"\n<<{usage}>>"
+            f"Mismatch: Expected {expected_rows} rows, but got {df_table.shape[0]} extracted values.",
+            f"\n{content}",
+            f"\n<<{usage}>>",
         )
 
     return_md_table = dataframe_to_markdown(df_table)
 
     return return_md_table, res, content, usage, truncated
+
 
 # print(s_pk_get_parameter_value_prompt(md_table_aligned, caption, md_table_aligned_with_1_param_type_and_value))
 # s_pk_get_parameter_value(md_table_aligned, caption, md_table_aligned_with_1_param_type_and_value, model_name="gemini_15_pro")

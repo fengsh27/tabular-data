@@ -1,10 +1,10 @@
-
 from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonAgentStep
 from extractor.agents.pk_summary.pk_sum_param_type_align_agent import (
     ParameterTypeAlignResult,
     PARAMETER_TYPE_ALIGN_PROMPT,
-    post_process_parameter_type_align
+    post_process_parameter_type_align,
 )
+
 
 class ParametertypeAlignStep(PKSumCommonAgentStep):
     def __init__(self):
@@ -17,19 +17,17 @@ class ParametertypeAlignStep(PKSumCommonAgentStep):
         return PARAMETER_TYPE_ALIGN_PROMPT.format(
             md_table_summary=md_table_summary,
         )
+
     def get_schema(self):
         return ParameterTypeAlignResult
-    
+
     def get_post_processor_and_kwargs(self, state):
         md_table_summary = state["md_table_summary"]
         return post_process_parameter_type_align, {"md_table_summary": md_table_summary}
-    
-    def leave_step(self, state, res, processed_res = None, token_usage = None):
+
+    def leave_step(self, state, res, processed_res=None, token_usage=None):
         if processed_res is not None:
             state["md_table_aligned"] = processed_res
             self._step_output(state, step_output="Result (md_table_aligned):")
             self._step_output(state, step_output=processed_res)
         return super().leave_step(state, res, processed_res, token_usage)
-
-
-

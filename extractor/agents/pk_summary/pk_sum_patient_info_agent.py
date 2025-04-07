@@ -1,11 +1,8 @@
-
-from typing import List
 from langchain_core.prompts import ChatPromptTemplate
-from pydantic import BaseModel, Field
+from pydantic import Field
 import pandas as pd
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown
-from extractor.agents.agent_utils import display_md_table
 from extractor.agents.pk_summary.pk_sum_common_agent import PKSumCommonAgentResult
 
 PATIENT_INFO_PROMPT = ChatPromptTemplate.from_template("""
@@ -31,10 +28,14 @@ Subject N represents the number of subjects corresponding to the specific parame
 
 INSTRUCTION_PROMPT = "Do not give the final result immediately. First, explain your thought process, then provide the answer."
 
+
 class PatientInfoResult(PKSumCommonAgentResult):
-    """ Patient Information Result """
-    patient_combinations: List[List[str]] = Field(description="a list of lists of unique combinations [Population, Pregnancy stage, Subject N]")
-    
+    """Patient Information Result"""
+
+    patient_combinations: list[list[str]] = Field(
+        description="a list of lists of unique combinations [Population, Pregnancy stage, Subject N]"
+    )
+
 
 def post_process_convert_patient_info_to_md_table(
     res: PatientInfoResult,
@@ -42,7 +43,8 @@ def post_process_convert_patient_info_to_md_table(
     match_list = res.patient_combinations
     match_list = [list(t) for t in dict.fromkeys(map(tuple, match_list))]
 
-    df_table = pd.DataFrame(match_list, columns=["Population", "Pregnancy stage", "Subject N"])
+    df_table = pd.DataFrame(
+        match_list, columns=["Population", "Pregnancy stage", "Subject N"]
+    )
     return_md_table = dataframe_to_markdown(df_table)
     return return_md_table
-

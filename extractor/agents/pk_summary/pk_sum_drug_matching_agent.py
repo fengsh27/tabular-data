@@ -1,12 +1,13 @@
-
 from typing import List
-from langchain_core.prompts import ChatPromptTemplate, PromptTemplate, SystemMessagePromptTemplate
-from pydantic import BaseModel, Field
+from pydantic import Field
 import logging
 
 from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table, from_system_template
-from extractor.agents.pk_summary.pk_sum_common_agent import PKSumCommonAgentResult, RetryException
+from extractor.agents.pk_summary.pk_sum_common_agent import (
+    PKSumCommonAgentResult,
+    RetryException,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -37,23 +38,24 @@ TASK:
 """)
 
 # MATCHING_DRUG_PROMPT = ChatPromptTemplate.from_template("""
-# The following main table contains pharmacokinetics (PK) data:  
+# The following main table contains pharmacokinetics (PK) data:
 # {processed_md_table_aligned}
-# Here is the table caption:  
+# Here is the table caption:
 # {caption}
-# From the main table above, I have extracted the following columns to create Subtable 1:  
-# {extracted_param_types}  
+# From the main table above, I have extracted the following columns to create Subtable 1:
+# {extracted_param_types}
 # Below is Subtable 1:
 # {processed_md_table_aligned_with_1_param_type_and_value}
 # Additionally, I have compiled Subtable 2, where each row represents a unique combination of "Drug name" - "Analyte" - "Specimen," as follows:
 # {processed_drug_md_table}
-# Carefully analyze the tables and follow these steps:  
-# (1) For each row in Subtable 1, find **the best matching one** row in Subtable 2. Return a list of unique row indices (as integers) from Subtable 2 that correspond to each row in Subtable 1.  
-# (2) **Strictly ensure that you process only rows 0 to {max_md_table_aligned_with_1_param_type_and_value_row_index} from the Subtable 1.**  
-    # - The number of processed rows must **exactly match** the number of rows in the Subtable 1—no more, no less.  
-# (3) The final list should be like this:  
-   # [1,1,2,2,3,3]
+# Carefully analyze the tables and follow these steps:
+# (1) For each row in Subtable 1, find **the best matching one** row in Subtable 2. Return a list of unique row indices (as integers) from Subtable 2 that correspond to each row in Subtable 1.
+# (2) **Strictly ensure that you process only rows 0 to {max_md_table_aligned_with_1_param_type_and_value_row_index} from the Subtable 1.**
+# - The number of processed rows must **exactly match** the number of rows in the Subtable 1—no more, no less.
+# (3) The final list should be like this:
+# [1,1,2,2,3,3]
 # """)
+
 
 def get_matching_drug_prompt(
     md_table_aligned: str,
@@ -75,12 +77,19 @@ def get_matching_drug_prompt(
             md_table_aligned_with_1_param_type_and_value
         ),
         processed_drug_md_table=display_md_table(drug_md_table),
-        max_md_table_aligned_with_1_param_type_and_value_row_index=df_aligned_with_1_param_type_and_value.shape[0] - 1,
-        md_table_aligned_with_1_param_type_and_value_row_num=df_aligned_with_1_param_type_and_value.shape[0],
+        max_md_table_aligned_with_1_param_type_and_value_row_index=df_aligned_with_1_param_type_and_value.shape[
+            0
+        ]
+        - 1,
+        md_table_aligned_with_1_param_type_and_value_row_num=df_aligned_with_1_param_type_and_value.shape[
+            0
+        ],
     )
 
+
 class MatchedDrugResult(PKSumCommonAgentResult):
-    """ Matched Drug Result """
+    """Matched Drug Result"""
+
     matched_row_indices: List[int] = Field(description="a list of matched row indices")
 
 
@@ -108,13 +117,14 @@ Please ensure future responses:
         # )
     for i in range(len(match_list)):
         ix = match_list[i]
-        if ix == -1: 
-            logger.error(f"drug matching: the {i}th row can't identify a best match in Subtable2, fill it with 0.")
+        if ix == -1:
+            logger.error(
+                f"drug matching: the {i}th row can't identify a best match in Subtable2, fill it with 0."
+            )
             match_list[i] = 0
             ix = 0
         if ix < 0 or ix > matched_row_max_index:
-            raise RetryException(
-                f"Wrong answer: {match_list}. Why it's wrong, row index should between 0 to {matched_row_max_index}. {ix} is not correct."
-            )
+            error_msg = f"Wrong answer: {match_list}. Why it's wrong, row index should between 0 to {matched_row_max_index}. {ix} is not correct."
+            logger.error(error_msg)
+            raise RetryException(error_msg)
     return match_list
-

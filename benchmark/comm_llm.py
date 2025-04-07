@@ -1,4 +1,3 @@
-
 import re
 from typing import Union
 from string import Template
@@ -37,6 +36,7 @@ Note:
 7. Ignore the lowercase and uppercase letters
 """)
 
+
 def write_LLM_score(
     output_fn: str,
     model: str,
@@ -44,7 +44,7 @@ def write_LLM_score(
     score: str,
     token_usage: str,
 ):
-    SCORE_LENGTH_THRESHOLD=64
+    SCORE_LENGTH_THRESHOLD = 64
     with open(output_fn, "a+") as fobj:
         if len(score) > SCORE_LENGTH_THRESHOLD:
             # output in verbose mode
@@ -70,38 +70,42 @@ def run_llm_benchmark(
     for id in dataset:
         the_dict = dataset[id]
         baseline = the_dict["baseline"]
-        if not model.value in the_dict:
+        if model.value not in the_dict:
             continue
         gpt4o = the_dict[model.value]
         with open(baseline, "r") as fobj:
             table_baseline = fobj.read()
         with open(gpt4o, "r") as fobj:
             table_gpt4o = fobj.read()
-        user_message = user_message = table_prompt_template.substitute({
-            "table_baseline": table_baseline,
-            "table_generated": table_gpt4o,
-        })
+        user_message = user_message = table_prompt_template.substitute(
+            {
+                "table_baseline": table_baseline,
+                "table_generated": table_gpt4o,
+            }
+        )
         cols_definition = generate_columns_definition(benchmark_type)
-        system_prompts = system_prompts_template.substitute({
-            "columns_definition": cols_definition
-        })
-        msg, usage = client.create(system_prompts,user_message)
+        system_prompts = system_prompts_template.substitute(
+            {"columns_definition": cols_definition}
+        )
+        msg, usage = client.create(system_prompts, user_message)
         write_LLM_score(
             output_fn=result_file,
             model=model.value,
             pmid=id,
             score=msg,
-            token_usage = usage,
+            token_usage=usage,
         )
         res = pat.search(msg)
         if res is None:
             logger.error(f"Can't find [[score]] for pmid {id}")
             continue
-        scores.append({
-            "pmid": id,
-            "score": res[0],
-            "token_usage": usage,
-        })
+        scores.append(
+            {
+                "pmid": id,
+                "score": res[0],
+                "token_usage": usage,
+            }
+        )
     # write in concise mode, only output scores
     for score in scores:
         write_LLM_score(

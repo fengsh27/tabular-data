@@ -4,7 +4,6 @@ from datetime import datetime
 import os
 from os import path
 import logging
-import pandas as pd
 
 from .constant import (
     BASELINE,
@@ -13,8 +12,8 @@ from .constant import (
 )
 
 
-
 logger = logging.getLogger(__name__)
+
 
 def output_msg(msg: str):
     with open("./benchmark-result.log", "a+") as fobj:
@@ -26,7 +25,7 @@ class ResponderWithRetries:
     Raise request to LLM with 3 retries
     """
 
-    def __init__(self, runnable_func: Callable, retry: int=3):
+    def __init__(self, runnable_func: Callable, retry: int = 3):
         """
         Args:
         runnable_func: function to be executed, if failed, we will retry
@@ -34,9 +33,8 @@ class ResponderWithRetries:
         self.runnable = runnable_func
         self.retry = retry
 
-    def respond(self, args: Optional[List[Any]]=None):
-        """
-        """
+    def respond(self, args: Optional[List[Any]] = None):
+        """ """
         response = []
         for attempt in range(self.retry):
             try:
@@ -45,7 +43,8 @@ class ResponderWithRetries:
             except Exception as e:
                 print(str(e))
         return response
-    
+
+
 class LLMClient(ABC):
     def __init__(self):
         pass
@@ -53,6 +52,7 @@ class LLMClient(ABC):
     @abstractmethod
     def create(self, systemp_prompts: str, user_prompts: str):
         """query"""
+
 
 def _get_pmid_and_llmodel(fn: str) -> tuple[str, LLModelType | None] | None:
     """
@@ -74,15 +74,16 @@ def _get_pmid_and_llmodel(fn: str) -> tuple[str, LLModelType | None] | None:
     if len(fn) == 0:
         return None
     bn = os.path.splitext(fn)[0]
-    arr = bn.split('_')
-    
+    arr = bn.split("_")
+
     pmid = arr[0]
     try:
         model_type = LLModelType(arr[-1])
         return pmid, model_type
     except ValueError:
         logger.error(f"Unknown llm: {arr[-1]} in file: {fn}")
-        return pmid, LLModelType.UNKNOWN   
+        return pmid, LLModelType.UNKNOWN
+
 
 def _get_benchmark_type(dir_path: str) -> BenchmarkType | None:
     """
@@ -104,27 +105,29 @@ def _get_benchmark_type(dir_path: str) -> BenchmarkType | None:
     dir_path = dir_path.replace("\\", "/")
     if dir_path[-1] != "/":
         dir_path += "/"
-    pk_summary_str = "/"+BenchmarkType.PK_SUMMARY.value+"/"
-    pe_str = "/"+BenchmarkType.PE.value+"/"
+    pk_summary_str = "/" + BenchmarkType.PK_SUMMARY.value + "/"
+    pe_str = "/" + BenchmarkType.PE.value + "/"
     if pk_summary_str in dir_path:
         ix = dir_path.find(pk_summary_str)
-        baseline_path = dir_path[ix+len(pk_summary_str):]
-        if baseline_path.startswith(BASELINE+"/"):
+        baseline_path = dir_path[ix + len(pk_summary_str) :]
+        if baseline_path.startswith(BASELINE + "/"):
             return BenchmarkType.PK_SUMMARY_BASELINE
         else:
             return BenchmarkType.PK_SUMMARY
     if pe_str in dir_path:
         ix = dir_path.find(pe_str)
-        baseline_path = dir_path[ix+len(pe_str):]
-        if baseline_path.startswith(BASELINE+"/"):
+        baseline_path = dir_path[ix + len(pe_str) :]
+        if baseline_path.startswith(BASELINE + "/"):
             return BenchmarkType.PE_BASELINE
         else:
             return BenchmarkType.PE
-        
+
     return BenchmarkType.UNKNOWN
 
 
-def walk_benchmark_data_directory(dir_path: str) -> tuple[BenchmarkType, list[str, str, LLModelType]]:
+def walk_benchmark_data_directory(
+    dir_path: str,
+) -> tuple[BenchmarkType, list[str, str, LLModelType]]:
     """
     Walks through the directory `dir_path` to identify all PMID table files (.csv) and their associated benchmark type.
 
@@ -169,25 +172,26 @@ def walk_benchmark_data_directory(dir_path: str) -> tuple[BenchmarkType, list[st
                 pmid, model = _get_pmid_and_llmodel(f)
                 if model == LLModelType.UNKNOWN:
                     # unknown model type, ignore it
-                    continue             
+                    continue
                 pmids.append((pmid, path.join(r, f), model))
-        
+
         return benchmark_type, pmids
     except Exception as e:
         print(e)
         raise e
 
+
 def prepare_dataset_for_benchmark(
-    baseline_dir: str, 
-    target_dir: str, 
+    baseline_dir: str,
+    target_dir: str,
     benchmark_type: Union[BenchmarkType.PK_SUMMARY, BenchmarkType.PE],
 ):
     """
-    This function is to prepare dataset for benchmark. It will walk through 
+    This function is to prepare dataset for benchmark. It will walk through
     `{baseline_dir}` and `{target_dir}` to populate returned {dataset}:
     {
         `{pmid}`: {
-            "baseline": `{pmid_baseline_path}`, 
+            "baseline": `{pmid_baseline_path}`,
             "gpt4o": `{pmid_gpt4o_path}`,
             "gemini15": `{pmid_gemini15_path}`,
         },
@@ -213,12 +217,13 @@ def prepare_dataset_for_benchmark(
         id, fn, model = pmid
         if model == LLModelType.UNKNOWN:
             continue
-        if not id in dataset:
+        if id not in dataset:
             logger.error(f"no baseline for pmid {id}")
             continue
         dataset[id][model.value] = fn
-    
+
     return dataset
+
 
 def ensure_target_result_directory_existed(
     baseline: str,
@@ -230,7 +235,9 @@ def ensure_target_result_directory_existed(
     target_name = target.replace("/", "_")
     target_name = target_name.replace("\\", "_")
     # result_dir = os.path.join("./benchmark/result/pk-summary", f"{target_name}-{baseline_name}")
-    dir_path = path.join("./benchmark/result", benchmark_type.value, f"{target_name}-{baseline_name}")
+    dir_path = path.join(
+        "./benchmark/result", benchmark_type.value, f"{target_name}-{baseline_name}"
+    )
     if os.path.isdir(dir_path):
         return dir_path
     try:
@@ -239,6 +246,3 @@ def ensure_target_result_directory_existed(
     except Exception as e:
         logger.error(e)
         raise e
-
-
-

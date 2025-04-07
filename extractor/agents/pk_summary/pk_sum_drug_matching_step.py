@@ -1,5 +1,3 @@
-
-from typing import List
 import pandas as pd
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
@@ -15,6 +13,7 @@ from extractor.agents.pk_summary.pk_sum_drug_matching_agent import (
     post_process_validate_matched_rows,
 )
 
+
 class DrugMatchingAutomaticStep(PKSumCommonStep):
     def __init__(self):
         super().__init__()
@@ -23,23 +22,26 @@ class DrugMatchingAutomaticStep(PKSumCommonStep):
 
     def execute_directly(self, state):
         drug_list = []
-        md_table_list = state['md_table_list']
-        md_table_drug = state['md_table_drug']
+        md_table_list = state["md_table_list"]
+        md_table_drug = state["md_table_drug"]
         for md in md_table_list:
             df = markdown_to_dataframe(md)
             row_num = df.shape[0]
-            df_expanded = pd.concat([markdown_to_dataframe(md_table_drug)] * row_num, ignore_index=True)
+            df_expanded = pd.concat(
+                [markdown_to_dataframe(md_table_drug)] * row_num, ignore_index=True
+            )
             drug_list.append(dataframe_to_markdown(df_expanded))
-        
+
         return None, drug_list, {**DEFAULT_TOKEN_USAGE}
-    
-    def leave_step(self, state, res, processed_res = None, token_usage = None):
+
+    def leave_step(self, state, res, processed_res=None, token_usage=None):
         if processed_res is not None:
-            state['drug_list'] = processed_res
+            state["drug_list"] = processed_res
             self._step_output(state, step_output="Result (drug_list):")
             self._step_output(state, step_output=str(processed_res))
 
         return super().leave_step(state, res, processed_res, token_usage)
+
 
 class DrugMatchingAgentStep(PKSumCommonStep):
     def __init__(self):
@@ -50,15 +52,15 @@ class DrugMatchingAgentStep(PKSumCommonStep):
     def execute_directly(self, state):
         drug_list = []
         round = 0
-        md_table_drug = state['md_table_drug']
-        md_table_list = state['md_table_list']
+        md_table_drug = state["md_table_drug"]
+        md_table_list = state["md_table_list"]
         total_token_usage = {**DEFAULT_TOKEN_USAGE}
-        llm = state['llm']
-        caption = state['caption']
-        md_table_aligned = state['md_table_aligned']
+        llm = state["llm"]
+        caption = state["caption"]
+        md_table_aligned = state["md_table_aligned"]
         for md in md_table_list:
             round += 1
-            self._step_output(state, step_output="="*64)
+            self._step_output(state, step_output="=" * 64)
             self._step_output(state, f"Trial {round}")
             system_prompt = get_matching_drug_prompt(
                 md_table_aligned, md, md_table_drug, caption
@@ -72,29 +74,38 @@ class DrugMatchingAgentStep(PKSumCommonStep):
                 md_table1=md,
                 md_table2=md_table_drug,
             )
-            self._step_output(state, step_reasoning_process=res.reasoning_process if res is not None else "")
-            drug_match_list: List[int] = processed_res
+            self._step_output(
+                state,
+                step_reasoning_process=res.reasoning_process if res is not None else "",
+            )
+            drug_match_list: list[int] = processed_res
             df_table_drug = markdown_to_dataframe(md_table_drug)
-            df_table_drug = pd.concat([
-                df_table_drug, pd.DataFrame([{
-                    'Drug name': 'ERROR', 'Analyte': 'ERROR', 'Specimen': 'ERROR'
-                }])
-            ], ignore_index=True)
-            df_table_drug_reordered = df_table_drug.iloc[drug_match_list].reset_index(drop=True)
+            df_table_drug = pd.concat(
+                [
+                    df_table_drug,
+                    pd.DataFrame(
+                        [
+                            {
+                                "Drug name": "ERROR",
+                                "Analyte": "ERROR",
+                                "Specimen": "ERROR",
+                            }
+                        ]
+                    ),
+                ],
+                ignore_index=True,
+            )
+            df_table_drug_reordered = df_table_drug.iloc[drug_match_list].reset_index(
+                drop=True
+            )
             drug_list.append(dataframe_to_markdown(df_table_drug_reordered))
             total_token_usage = increase_token_usage(total_token_usage, token_usage)
-        
+
         return None, drug_list, total_token_usage
-    
-    def leave_step(self, state, res, processed_res = None, token_usage = None):
+
+    def leave_step(self, state, res, processed_res=None, token_usage=None):
         if processed_res is not None:
-            state['drug_list'] = processed_res
+            state["drug_list"] = processed_res
             self._step_output(state, step_output="Result (drug_list):")
             self._step_output(state, step_output=str(processed_res))
         return super().leave_step(state, res, processed_res, token_usage)
-
-            
-                
-                
-
-

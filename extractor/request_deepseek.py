@@ -1,10 +1,9 @@
-
-from typing import List, Any, Dict
 from langchain_deepseek import ChatDeepSeek
 import os
 import logging
 
 logger = logging.getLogger(__name__)
+
 
 def get_deepseek():
     return ChatDeepSeek(
@@ -15,5 +14,3 @@ def get_deepseek():
         timeout=None,
         max_retries=2,
     )
-
-

@@ -1,6 +1,7 @@
 import os
 import logging
 
+
 def initialize_logger(
     log_file: str,
     app_log_name: str,
@@ -11,7 +12,7 @@ def initialize_logger(
     # logging.basicConfig(level=logging.INFO)
     logs_folder = os.environ.get("LOGS_FOLDER", "./logs")
     logs_file = os.path.join(logs_folder, log_file)
-    
+
     # Root logger configuration (optional)
     root_logger = logging.getLogger()
     root_logger.setLevel(logging.WARNING)  # Silence noisy libraries
@@ -21,7 +22,7 @@ def initialize_logger(
     stream_handler = logging.StreamHandler()
     stream_handler.setLevel(logging.INFO)
     formatter = logging.Formatter(
-        '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+        "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
         # datefmt="%Y-%m-%d %H:%M:%S,uuu"
     )
     file_handler.setFormatter(formatter)
@@ -44,4 +45,3 @@ def initialize_logger(
     app_logger.propagate = False
 
     return app_logger
-

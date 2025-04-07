@@ -2,13 +2,11 @@ import base64
 import logging.handlers
 import streamlit as st
 import logging
-import os
 from dotenv import load_dotenv
+
 load_dotenv()
 
 from components.main_tab import main_tab
-from components.html_table_tab import html_tab
-from extractor.stampers import ArticleStamper
 from extractor.log_utils import initialize_logger
 
 from version import __version__
@@ -20,15 +18,19 @@ app_logger = initialize_logger(
     log_entries={
         "extractor": logging.INFO,
         "components": logging.INFO,
-    },    
+    },
 )
 
 ss = st.session_state
-st.set_page_config(layout="wide", page_title="Curation Tool", page_icon="./images/favicon.png")
+st.set_page_config(
+    layout="wide", page_title="Curation Tool", page_icon="./images/favicon.png"
+)
 
 st.markdown(
     """<div style="display: flex;flex-direction: row; align-items: flex-end"><a href="https://mprint.org/index.html"><img src="data:image/png;base64,{}" width="400px"></a><p>Curation Tool v{}</p></div> """.format(
-    base64.b64encode(open("./images/mprint-logo.png", "rb").read()).decode(), __version__),
+        base64.b64encode(open("./images/mprint-logo.png", "rb").read()).decode(),
+        __version__,
+    ),
     unsafe_allow_html=True,
 )
 
@@ -40,4 +42,4 @@ st.markdown(
 main_tab()
 # with tab2:
 #     pass
-    # html_tab()
+# html_tab()

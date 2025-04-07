@@ -1,17 +1,17 @@
-
 from typing import List
-from langchain_core.prompts import ChatPromptTemplate
 from pydantic import Field
+import logging
 
 from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table, from_system_template
 from extractor.agents.pk_summary.pk_sum_common_agent import (
-    PKSumCommonAgentResult, 
+    PKSumCommonAgentResult,
     RetryException,
 )
 
+logger = logging.getLogger(__name__)
 
-MATCHING_PATIENT_PROMPT=from_system_template("""
+MATCHING_PATIENT_PROMPT = from_system_template("""
 The following main table contains pharmacokinetics (PK) data:  
 {processed_md_table_aligned}
 Here is the table caption:  
@@ -33,6 +33,7 @@ Carefully analyze the tables and follow these steps:
 (5) In rare cases where a row in Subtable 1 cannot be matched, return -1 for that row. This should only be used when absolutely necessary.
 """)
 
+
 def get_matching_patient_prompt(
     md_table_aligned: str,
     md_table_aligned_with_1_param_type_and_value: str,
@@ -52,12 +53,16 @@ def get_matching_patient_prompt(
         processed_patient_md_table=display_md_table(patient_md_table),
         max_md_table_aligned_with_1_param_type_and_value_row_index=markdown_to_dataframe(
             md_table_aligned_with_1_param_type_and_value
-        ).shape[0] - 1
+        ).shape[0]
+        - 1,
     )
 
+
 class MatchedPatientResult(PKSumCommonAgentResult):
-    """ Matched Patients Result """
+    """Matched Patients Result"""
+
     matched_row_indices: List[int] = Field(description="a list of matched row indices")
+
 
 def post_process_validate_matched_patients(
     res: MatchedPatientResult,
@@ -66,7 +71,7 @@ def post_process_validate_matched_patients(
     match_list = res.matched_row_indices
     expected_rows = markdown_to_dataframe(md_table).shape[0]
     if len(match_list) != expected_rows:
-        raise RetryException(f"""
+        error_msg = f"""
 **Error Identification:**
 Your previous answer `{match_list}` is incorrect because:
 - Expected output length: {expected_rows} (to match all Subtable 1 rows)
@@ -84,6 +89,8 @@ Please:
 - Maintain 1:1 correspondence between Subtable 1 rows and output indices
 - Include clear justification for each match in reasoning process
 - Verify the output length matches the input exactly
-""")
-    
+"""
+        logger.error(error_msg)
+        raise RetryException(error_msg)
+
     return match_list

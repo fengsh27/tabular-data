@@ -1,5 +1,3 @@
-
-
 from dotenv import load_dotenv
 import pytest
 from TabFuncFlow.steps_pk_summary.s_pk_extract_drug_info import s_pk_extract_drug_info
@@ -77,12 +75,12 @@ html_content = """
 
 caption_and_footnote = "Non-compartmental pharmacokinetics parameters from Elective Cohort patients. C<sub>max</sub> is maximum concentration. AUC<sub>0−∞</sub> is area-under-the-curve to infinity. CL is clearance. Vdz is apparent volume of distribution. T<sub>1/2</sub> is half-life."
 
+
 @pytest.mark.skip()
 def test_extract_drug_info():
     markdown_table = single_html_table_to_markdown(html_content)
     print(markdown_table)
-    drug_info = s_pk_extract_drug_info(markdown_table, caption_and_footnote, "chatgpt_4o")
+    drug_info = s_pk_extract_drug_info(
+        markdown_table, caption_and_footnote, "chatgpt_4o"
+    )
     print(drug_info)
-
-
-

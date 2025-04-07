@@ -1,17 +1,18 @@
-
-from typing import List
 from langchain_core.prompts import ChatPromptTemplate
-from pydantic import BaseModel, Field
+from pydantic import Field
 import pandas as pd
+import logging
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
 from extractor.agents.pk_summary.pk_sum_common_agent import (
-    PKSumCommonAgentResult, 
+    PKSumCommonAgentResult,
     RetryException,
 )
 
-TIME_AND_UNIT_PROMPT =  ChatPromptTemplate.from_template("""
+logger = logging.getLogger(__name__)
+
+TIME_AND_UNIT_PROMPT = ChatPromptTemplate.from_template("""
 The following table contains pharmacokinetics (PK) data:  
 {processed_md_table}
 Here is the table caption:  
@@ -46,39 +47,46 @@ Do NOT include:
 
 """)
 
+
 def get_time_and_unit_prompt(
-    md_table_aligned: str, 
-    md_table_post_processed: str, 
-    caption: str
+    md_table_aligned: str, md_table_post_processed: str, caption: str
 ):
     row_num = markdown_to_dataframe(md_table_post_processed).shape[0]
     return TIME_AND_UNIT_PROMPT.format(
         processed_md_table=display_md_table(md_table_aligned),
         caption=caption,
         processed_md_table_post_processed=display_md_table(md_table_post_processed),
-        md_data_post_processed_max_row_index=row_num-1,
+        md_data_post_processed_max_row_index=row_num - 1,
         md_data_lines_after_post_process_row_num=row_num,
     )
 
+
 class TimeAndUnitResult(PKSumCommonAgentResult):
-    """ Time and Unit Extraction Result """
-    times_and_units: List[List[str]] = Field(description="a list of lists, where each inner list represents [Time value, Time unit]")
-    
+    """Time and Unit Extraction Result"""
+
+    times_and_units: list[list[str]] = Field(
+        description="a list of lists, where each inner list represents [Time value, Time unit]"
+    )
+
 
 def post_process_time_and_unit(
     res: TimeAndUnitResult,
-    md_table_post_processed: str, # markdown table after post-processing
+    md_table_post_processed: str,  # markdown table after post-processing
 ) -> str:
     match_list = res.times_and_units
     expected_rows = markdown_to_dataframe(md_table_post_processed).shape[0]
     if all(x == match_list[0] for x in match_list):
         # expand to expect_rows
         match_list = [match_list[0]] * expected_rows
-    
+
     df_table = pd.DataFrame(match_list, columns=["Time value", "Time unit"])
     if df_table.shape[0] != expected_rows:
-        raise RetryException(
-            "Wrong answer example:\n" + str(match_list) + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {df_table.shape[0]} extracted matches."
+        error_msg = (
+            "Wrong answer example:\n"
+            + str(match_list)
+            + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {df_table.shape[0]} extracted matches."
         )
-    
+        logger.error(error_msg)
+        raise RetryException(error_msg)
+
     return dataframe_to_markdown(df_table)

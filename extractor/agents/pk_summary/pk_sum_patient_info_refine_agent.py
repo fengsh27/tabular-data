@@ -1,12 +1,16 @@
-
-from typing import List
 from langchain_core.prompts import ChatPromptTemplate
-from pydantic import BaseModel, Field
+from pydantic import Field
 import pandas as pd
+import logging
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
-from extractor.agents.pk_summary.pk_sum_common_agent import RetryException, PKSumCommonAgentResult
+from extractor.agents.pk_summary.pk_sum_common_agent import (
+    RetryException,
+    PKSumCommonAgentResult,
+)
+
+logger = logging.getLogger(__name__)
 
 PATIENT_INFO_REFINE_PROMPT = ChatPromptTemplate.from_template("""
 The following main table contains pharmacokinetics (PK) data:  
@@ -59,22 +63,25 @@ Carefully analyze the tables and follow these steps to refine Subtable 1 into a 
     - **The output must maintain the original row order** from Subtable 1—do not shuffle, reorder, or omit any rows. The Subject N for each row in Subtable 2 must be the same as in Subtable 1.
 """)
 
-def get_patient_info_refine_prompt(
-    md_table: str, md_table_patient: str, caption: str
-):
+
+def get_patient_info_refine_prompt(md_table: str, md_table_patient: str, caption: str):
     row_num = markdown_to_dataframe(md_table_patient).shape[0]
     return PATIENT_INFO_REFINE_PROMPT.format(
         processed_md_table=display_md_table(md_table),
         caption=caption,
         processed_md_table_patient=display_md_table(md_table_patient),
-        md_table_patient_max_row_index=row_num-1,
-        md_table_patient_row_num=row_num
+        md_table_patient_max_row_index=row_num - 1,
+        md_table_patient_row_num=row_num,
     )
-    
+
 
 class PatientInfoRefinedResult(PKSumCommonAgentResult):
-    """ Refined Patient Info Result """
-    refined_patient_combinations: List[List[str]] = Field(description="a list of lists of unique combinations [Population, Pregnancy stage, Subject N]")
+    """Refined Patient Info Result"""
+
+    refined_patient_combinations: list[list[str]] = Field(
+        description="a list of lists of unique combinations [Population, Pregnancy stage, Subject N]"
+    )
+
 
 def post_process_refined_patient_info(
     res: PatientInfoRefinedResult,
@@ -82,25 +89,57 @@ def post_process_refined_patient_info(
 ) -> str:
     match_list = res.refined_patient_combinations
     if not match_list:
-        raise ValueError(f"Population information refinement failed: No valid entries found!")
-    
+        raise ValueError(
+            "Population information refinement failed: No valid entries found!"
+        )
+
     expected_rows = markdown_to_dataframe(md_table_patient).shape[0]
     if len(match_list) != expected_rows:
-        raise RetryException(
-            "Wrong answer example:\n" + str(match_list) + \
-            f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {len(match_list)} extracted matches."
+        error_msg = (
+            "Wrong answer example:\n"
+            + str(match_list)
+            + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {len(match_list)} extracted matches."
         )
-        
+        logger.error(error_msg)
+        raise RetryException(error_msg)
+
     df_table = pd.DataFrame(
-        match_list, 
-        columns=["Population", "Pregnancy stage", "Pediatric/Gestational age", "Subject N"]
+        match_list,
+        columns=[
+            "Population",
+            "Pregnancy stage",
+            "Pediatric/Gestational age",
+            "Subject N",
+        ],
     ).astype(str)
 
-    if not df_table['Subject N'].equals(markdown_to_dataframe(md_table_patient)['Subject N']):
-        raise RetryException(
-            "Wrong answer example:\n" + str(match_list) + \
-            f"\nWhy it's wrong:\nThe rows in the refined Subtable 2 do not correspond to those in Subtable 1 on a one-to-one basis."
+    df_patient = markdown_to_dataframe(md_table_patient)
+    if not df_table["Subject N"].equals(df_patient["Subject N"]):
+        error_msg = (
+            "Wrong answer example:\n"
+            + str(match_list)
+            + "\nWhy it's wrong:\nThe rows in the refined Subtable 2 do not correspond to those in Subtable 1 on a one-to-one basis."
         )
-        
-    return dataframe_to_markdown(df_table)
+        if df_patient.shape[0] == df_table.shape[0]:
+            # check row by row
+            list1 = df_table["Subject N"].to_list()
+            list_patient = df_patient["Subject N"].to_list()
+            # check row by row
+            for ix in range(len(list1)):
+                item1: str = list1[ix]
+                item2: str = list_patient[ix]
+                item1 = item1.strip().strip("\"'")
+                item2 = item2.strip().strip("\"'")
+                if item1 == item2:
+                    continue
+                logger.error(
+                    error_msg + f"\nExpedted df_patient['Subject N']: {list_patient}"
+                )
+                raise RetryException(error_msg)
+        else:
+            logger.error(
+                error_msg + f"\nExpedted df_patient['Subject N']: {list_patient}"
+            )
+            raise RetryException(error_msg)
 
+    return dataframe_to_markdown(df_table)

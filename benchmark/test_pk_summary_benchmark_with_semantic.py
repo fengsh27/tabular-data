@@ -1,8 +1,6 @@
-
 import pytest
 import os
 from dotenv import load_dotenv
-import pandas as pd
 import logging
 
 from benchmark.common import (
@@ -37,6 +35,7 @@ target = os.environ.get("TARGET", "yichuan/0213_prompt_chain")
 baseline_dir = os.path.join("./benchmark/data/pk-summary", baseline)
 target_dir = os.path.join("./benchmark/data/pk-summary", target)
 
+
 @pytest.fixture(scope="module")
 def prepared_dataset():
     dataset = prepare_dataset_for_benchmark(
@@ -45,6 +44,7 @@ def prepared_dataset():
         benchmark_type=BenchmarkType.PK_SUMMARY,
     )
     return dataset
+
 
 def test_gpt4o_benchmark(prepared_dataset):
     result_dir = ensure_target_result_directory_existed(
@@ -60,6 +60,7 @@ def test_gpt4o_benchmark(prepared_dataset):
         result_file=result_path,
     )
 
+
 def test_gemini_benchmark(prepared_dataset):
     result_dir = ensure_target_result_directory_existed(
         baseline=baseline,
@@ -73,4 +74,3 @@ def test_gemini_benchmark(prepared_dataset):
         model=LLModelType.GEMINI15,
         result_file=result_path,
     )
-        

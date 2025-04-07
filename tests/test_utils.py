@@ -7,6 +7,7 @@ from extractor.utils import (
     remove_comma_in_number_string,
 )
 
+
 def test_preprocess_csv_table_string():
     with open("./tests/data/17158945-result.txt", "r") as fobj:
         csv_str = fobj.read()
@@ -21,13 +22,17 @@ def test_preprocess_csv_table_string():
         processed_length = len(out_str)
         assert cur_length == processed_length
 
-@pytest.mark.parametrize("content, expected", [
-    ("1,234.567", "1234.567"),
-    ("-123,456.789", "-123456.789"),
-    ("+123,456.789", "+123456.789"),
-    (",123456", ",123456"),
-    (",123,456", ",123456"),
-])
+
+@pytest.mark.parametrize(
+    "content, expected",
+    [
+        ("1,234.567", "1234.567"),
+        ("-123,456.789", "-123456.789"),
+        ("+123,456.789", "+123456.789"),
+        (",123456", ",123456"),
+        (",123,456", ",123456"),
+    ],
+)
 def test_process_number_string(content, expected):
     processed_content = remove_comma_in_number_string(content)
     assert processed_content == expected
@@ -40,6 +45,7 @@ def test_json_loads():
         print(obj1)
     except json.JSONDecodeError as e:
         print(e)
+
 
 def test_extract_float_value():
     str1 = "*1.234"
@@ -58,13 +64,17 @@ def test_extract_float_value():
     v5 = extract_float_value(str5)
     assert v5 == 1.234
 
+
 def test_single_html_to_markdown(md_table_aligned_29943508):
     import re
-    replaced_content: str = re.sub(r'\xa0', ' ', md_table_aligned_29943508)
+
+    replaced_content: str = re.sub(r"\xa0", " ", md_table_aligned_29943508)
     assert replaced_content.find("\xa0") < 0
+
 
 def test_dataframe():
     import pandas as pd
+
     df = pd.DataFrame([], columns=[])
     print(df)
     md_df = df.to_markdown()

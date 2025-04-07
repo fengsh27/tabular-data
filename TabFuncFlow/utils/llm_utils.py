@@ -1,4 +1,3 @@
-
 # from dotenv import load_dotenv
 # load_dotenv()
 
@@ -19,5 +18,3 @@ def get_llm_response(messages, question, model="gemini_15_pro"):
         return None, None, None, None
     else:
         raise ValueError(f"Unsupported model: {model}")
-
-

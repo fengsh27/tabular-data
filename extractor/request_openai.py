@@ -1,13 +1,11 @@
-from typing import List, Any, Optional
 # from openai import AzureOpenAI, OpenAI
 from langchain_openai import AzureChatOpenAI, ChatOpenAI
-import openai
 import os
 import logging
 
-from extractor.utils import concate_llm_contents
 
 logger = logging.getLogger(__name__)
+
 
 def get_openai():
     return AzureChatOpenAI(
@@ -24,7 +22,8 @@ def get_openai():
         presence_penalty=0,
     )
 
-def get_client_and_model(): 
+
+def get_client_and_model():
     """
     Obtain GPT client and model
     Return:
@@ -47,7 +46,7 @@ def get_client_and_model():
         )
         model_4o = os.environ.get("OPENAI_4O_DEPLOYMENT_NAME", None)
         return (client_4o, model_4o, None, None, None, None)
-    
+
     else:
         client_4o = ChatOpenAI(
             api_key=os.environ.get("OPENAI_4O_API_KEY", None),

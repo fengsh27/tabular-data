@@ -33,9 +33,9 @@ When returning this, enclose the function call in double angle brackets.
 
 
 def s_pk_delete_individual_parse(content, usage):
-    content = content.replace('\n', '')
-    match_end = re.search(r'\[\[END\]\]', content)
-    matches = re.findall(r'<<.*?>>', content)
+    content = content.replace("\n", "")
+    match_end = re.search(r"\[\[END\]\]", content)
+    matches = re.findall(r"<<.*?>>", content)
     match_angle = matches[-1] if matches else None
 
     if match_end:
@@ -43,7 +43,10 @@ def s_pk_delete_individual_parse(content, usage):
 
     elif match_angle:
         inner_content = match_angle[2:-2]
-        match_func = re.match(r'\w+\s*\(\s*(?:\w+\s*=\s*)?(\[[^\]]*\])\s*,\s*(?:\w+\s*=\s*)?(\[[^\]]*\])\s*\)', inner_content)
+        match_func = re.match(
+            r"\w+\s*\(\s*(?:\w+\s*=\s*)?(\[[^\]]*\])\s*,\s*(?:\w+\s*=\s*)?(\[[^\]]*\])\s*\)",
+            inner_content,
+        )
 
         if match_func:
             try:
@@ -51,27 +54,47 @@ def s_pk_delete_individual_parse(content, usage):
                 arg2 = ast.literal_eval(match_func.group(2))
                 return arg1, arg2
             except (SyntaxError, ValueError) as e:
-                raise ValueError(f"Failed to parse row/col data: {e}", f"\n{content}", f"\n<<{usage}>>") from e
+                raise ValueError(
+                    f"Failed to parse row/col data: {e}",
+                    f"\n{content}",
+                    f"\n<<{usage}>>",
+                ) from e
         else:
-            raise ValueError(f"Invalid format in extracted content: {inner_content}", f"\n{content}", f"\n<<{usage}>>")
+            raise ValueError(
+                f"Invalid format in extracted content: {inner_content}",
+                f"\n{content}",
+                f"\n<<{usage}>>",
+            )
 
     else:
-        raise ValueError("No valid deletion parameters found in content.", f"\n{content}", f"\n<<{usage}>>")
+        raise ValueError(
+            "No valid deletion parameters found in content.",
+            f"\n{content}",
+            f"\n<<{usage}>>",
+        )
 
 
 def s_pk_delete_individual(md_table, model_name="gemini_15_pro"):
     msg = s_pk_delete_individual_prompt(md_table)
-    messages = [msg, ]
+    messages = [
+        msg,
+    ]
     question = "Do not give the final result immediately. First, explain your thought process, then provide the answer."
 
-    res, content, usage, truncated = get_llm_response(messages, question, model=model_name)
+    res, content, usage, truncated = get_llm_response(
+        messages, question, model=model_name
+    )
     # print(display_md_table(md_table))
     # print(usage, content)
 
     try:
         row_list, col_list = s_pk_delete_individual_parse(content, usage)
     except Exception as e:
-        raise RuntimeError(f"Error in s_pk_delete_individual_parse: {e}", f"\n{content}", f"\n<<{usage}>>") from e
+        raise RuntimeError(
+            f"Error in s_pk_delete_individual_parse: {e}",
+            f"\n{content}",
+            f"\n<<{usage}>>",
+        ) from e
 
     if col_list:
         col_list = [fix_col_name(item, md_table) for item in col_list]

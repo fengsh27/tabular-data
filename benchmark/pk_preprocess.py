@@ -1,6 +1,5 @@
 import os
 import shutil
-from typing import List, Optional
 import os.path as path
 import csv
 import pandas as pd
@@ -29,22 +28,22 @@ PK_COLUMNS = [
     "High limit",
 ]
 LOWER_PK_COLUMNS = [
-    'drug name', 
-    'analyte', 
-    'specimen', 
-    'population', 
-    'pregnancy stage', 
-    'summary statistics', 
-    'parameter type', 
-    'value', 
-    'unit', 
-    'subject n', 
-    'variation value', 
-    'variation type', 
-    'p value', 
-    'interval type', 
-    'lower limit', 
-    'high limit'
+    "drug name",
+    "analyte",
+    "specimen",
+    "population",
+    "pregnancy stage",
+    "summary statistics",
+    "parameter type",
+    "value",
+    "unit",
+    "subject n",
+    "variation value",
+    "variation type",
+    "p value",
+    "interval type",
+    "lower limit",
+    "high limit",
 ]
 PK_COLUMNS_MAP = [
     ("P-value", "P value"),
@@ -53,15 +52,16 @@ PK_COLUMNS_MAP = [
     ("Interval low", "Lower limit"),
     ("interval high", "High limit"),
     ("Variability statistic", "Variation type"),
-    ('Summary Statistic', "Summary Statistics"),
-    ('Parameter unit', "Unit"),
-    ('Parameter statistic', "Summary Statistics"),
-    ('Parameter value', "Value"),
+    ("Summary Statistic", "Summary Statistics"),
+    ("Parameter unit", "Unit"),
+    ("Parameter statistic", "Summary Statistics"),
+    ("Parameter value", "Value"),
     ("Lower bound", "Lower limit"),
     ("Upper bound", "High limit"),
 ]
 
-def process_1st_column(rows: List[List[str]]):
+
+def process_1st_column(rows: list[list[str]]):
     headers = rows[0]
     if headers[0].lower() == LOWER_PK_COLUMNS[0]:
         # no NO. column in table
@@ -69,9 +69,9 @@ def process_1st_column(rows: List[List[str]]):
         for ix, row in enumerate(rows):
             prc_row = []
             if ix == 0:
-                prc_row.append('')
+                prc_row.append("")
             else:
-                prc_row.append(ix-1)
+                prc_row.append(ix - 1)
             prc_row = prc_row + row
             prc_rows.append(prc_row)
         return prc_rows
@@ -81,10 +81,11 @@ def process_1st_column(rows: List[List[str]]):
             row[0] = ""
         else:
             row[0] = ix - 1
-    
+
     return rows
 
-def process_column_names(rows: List[List[str]]):
+
+def process_column_names(rows: list[list[str]]):
     unknow_col_index = []
 
     for ix in range(len(rows[0])):
@@ -106,7 +107,10 @@ def process_column_names(rows: List[List[str]]):
 
         # Map column name
         if not found:
-            pair = next(( x for x in PK_COLUMNS_MAP if x[0].lower() == column.strip().lower() ), None)
+            pair = next(
+                (x for x in PK_COLUMNS_MAP if x[0].lower() == column.strip().lower()),
+                None,
+            )
             if pair is not None:
                 rows[0][ix] = pair[1]
                 found = True
@@ -118,10 +122,10 @@ def process_column_names(rows: List[List[str]]):
         if not found:
             print(f"Error: can't find column {column}")
             unknow_col_index.append(ix)
-    
+
     if len(unknow_col_index) == 0:
         return rows
-    
+
     processed_rows = []
     for row in rows:
         prcssed_row = []
@@ -137,14 +141,14 @@ def preprocess_table(csv_file) -> pd.DataFrame:
     with open(csv_file, "r") as fobj:
         reader = csv.reader(fobj)
         rows = list(reader)
-        
+
         rows = process_1st_column(rows)
         rows = process_column_names(rows)
 
         output_df = pd.DataFrame(rows[1:], columns=rows[0])
 
         return output_df
-    
+
 
 def preprocess_PK_csv_file(pk_csv_file: str):
     bn, extname = path.splitext(pk_csv_file)
@@ -161,18 +165,20 @@ def preprocess_PK_csv_file(pk_csv_file: str):
 
     # before write to csv file, remove the first column,
     output_df = output_df.iloc[:, 1:]
-    output_df.to_csv(dst_file, sep=',')
+    output_df.to_csv(dst_file, sep=",")
     return True
 
-def preprocess_PK_csv_files(pk_csv_files: List[str]):
+
+def preprocess_PK_csv_files(pk_csv_files: list[str]):
     for f in pk_csv_files:
         res = preprocess_PK_csv_file(f)
         if not res:
             print(f"Failed to pre-process file: {f}")
 
+
 def process_single_file():
     import argparse
-    from os import path
+
     parser = argparse.ArgumentParser()
     parser.add_argument("csv_file", help="csv file path to be pre-processed")
     args = vars(parser.parse_args())
@@ -182,14 +188,11 @@ def process_single_file():
 
 
 def process_multiple_files():
-    import argparse
-    from os import path
-    
     pk_files = [
         "./benchmark/data/pk-summary/baseline/A/18394772_baseline.csv",
     ]
     preprocess_PK_csv_files(pk_files)
-    
+
+
 if __name__ == "__main__":
     process_single_file()
-

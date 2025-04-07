@@ -1,9 +1,8 @@
-import os
+from typing import Optional
+from pydantic import BaseModel, Field
 import pytest
 from dotenv import load_dotenv
-from langchain_openai import ChatOpenAI, AzureChatOpenAI
-from langchain_deepseek import ChatDeepSeek
-from langchain_core.prompts import ChatPromptTemplate
+import logging
 
 from TabFuncFlow.operations.f_split_by_cols import f_split_by_cols
 from extractor.agents.pk_summary.pk_sum_drug_info_agent import (
@@ -14,7 +13,7 @@ from extractor.agents.pk_summary.pk_sum_drug_info_agent import (
 from extractor.agents.pk_summary.pk_sum_patient_info_agent import (
     PATIENT_INFO_PROMPT,
     PatientInfoResult,
-    post_process_convert_patient_info_to_md_table
+    post_process_convert_patient_info_to_md_table,
 )
 from extractor.agents.pk_summary.pk_sum_patient_info_refine_agent import (
     get_patient_info_refine_prompt,
@@ -32,7 +31,6 @@ from extractor.agents.pk_summary.pk_sum_individual_data_del_agent import (
     post_process_individual_del_result,
 )
 from extractor.agents.pk_summary.pk_sum_header_categorize_agent import (
-    HEADER_CATEGORIZE_PROMPT,
     HeaderCategorizeResult,
     HeaderCategorizeJsonSchema,
     post_process_validate_categorized_result,
@@ -64,15 +62,19 @@ from extractor.agents.pk_summary.pk_sum_split_by_col_agent import (
 
 from extractor.agents.pk_summary.pk_sum_common_agent import (
     PKSumCommonAgent,
-    RetryException,
 )
 from extractor.agents.agent_utils import display_md_table
-from TabFuncFlow.utils.table_utils import dataframe_to_markdown, fix_col_name, markdown_to_dataframe, single_html_table_to_markdown
-from TabFuncFlow.pipelines.p_pk_summary import p_pk_summary
+from TabFuncFlow.utils.table_utils import (
+    dataframe_to_markdown,
+    fix_col_name,
+    markdown_to_dataframe,
+)
 from TabFuncFlow.steps_pk_summary.s_pk_get_col_mapping import s_pk_get_col_mapping
 from TabFuncFlow.steps_pk_summary.s_pk_extract_patient_info import extract_integers
 
 load_dotenv()
+
+logger = logging.getLogger(__name__)
 
 md_table_post_processed = """
 | Drug name | Analyte | Specimen | Population | Pregnancy stage | Subject N | Parameter type | Unit | Value | Summary Statistics | Variation type | Variation value | Interval type | Lower limit | High limit | P value |
@@ -91,6 +93,7 @@ md_table_post_processed = """
 | N/A | N/A | Plasma | N/A | N/A | 15 | Maximum concentration (Cmax) | ng/mL | 42.2 | Median | N/A | N/A | N/A | N/A | N/A | N/A |
 """
 
+
 @pytest.mark.skip()
 def test_PKSumCommonAgent_patient_info(llm, md_table, caption):
     int_list = extract_integers(md_table + caption)
@@ -108,13 +111,16 @@ def test_PKSumCommonAgent_patient_info(llm, md_table, caption):
     assert isinstance(res, PatientInfoResult)
     assert type(processed_res) == str
 
+
 @pytest.mark.skip()
 def test_PKSumCommonAgent_patient_info_refine(llm, md_table, md_table_patient, caption):
     int_list = extract_integers(md_table_patient + caption)
     agent = PKSumCommonAgent(llm=llm)
     res, process_res, token_usage = agent.go(
         system_prompt=get_patient_info_refine_prompt(
-            md_table, md_table_patient, caption,
+            md_table,
+            md_table_patient,
+            caption,
         ),
         instruction_prompt=INSTRUCTION_PROMPT,
         schema=PatientInfoRefinedResult,
@@ -124,21 +130,41 @@ def test_PKSumCommonAgent_patient_info_refine(llm, md_table, md_table_patient, c
     assert isinstance(res, PatientInfoRefinedResult)
     assert type(process_res) == str
 
-@pytest.mark.skip()
+
+class RecommendedMovies(BaseModel):
+    """Recommended Movies."""
+
+    movies: list[list[str]] = Field(
+        description="Recommended movies, a list of lists, one list is for American movies, and the other list is for Chinese movies"
+    )
+    # american_movies: list[str] = Field(description="Recommended movies, a list of American movies")
+    # chinese_movies: list[str] = Field(description="Recommended movies, a list of Chinese movies")
+
+    reasoning_process: Optional[str] = Field(
+        description="What is the reason behind the two lists"
+    )
+
+
+# @pytest.mark.skip()
 def test_PKSumCommonAgent_drug_info(llm, md_table, caption):
     the_obj = DrugInfoResult.model_json_schema()
     print(the_obj)
+    logger.info(the_obj)
+    the_obj_1 = RecommendedMovies.model_json_schema()
+    logger.info(the_obj_1)
+
     agent = PKSumCommonAgent(llm=llm)
     res, processed_res, token_usage = agent.go(
         system_prompt=DRUG_INFO_PROMPT.format(
-            processed_md_table=display_md_table(md_table), 
+            processed_md_table=display_md_table(md_table),
             caption=caption,
-         ),
-         instruction_prompt=INSTRUCTION_PROMPT,
-         schema=DrugInfoResult,
+        ),
+        instruction_prompt=INSTRUCTION_PROMPT,
+        schema=DrugInfoResult,
     )
     assert isinstance(res, DrugInfoResult)
     assert processed_res is None
+
 
 @pytest.mark.skip()
 def test_PKSumCommonAgent_ind_data_del(llm, md_table):
@@ -155,6 +181,7 @@ def test_PKSumCommonAgent_ind_data_del(llm, md_table):
     assert isinstance(res, IndividualDataDelResult)
     assert type(processed_res) == str
 
+
 @pytest.mark.skip()
 def test_PKSumCommonAgent_param_type_align(llm, md_table):
     agent = PKSumCommonAgent(llm=llm)
@@ -170,21 +197,25 @@ def test_PKSumCommonAgent_param_type_align(llm, md_table):
     assert isinstance(res, ParameterTypeAlignResult)
     assert type(processed_res) == str
 
+
 @pytest.mark.skip()
 def test_PKSumCommonAgent_header_categorize(llm, md_table_aligned):
     agent = PKSumCommonAgent(llm=llm)
     res, processed_res, token_usage = agent.go(
         system_prompt=get_header_categorize_prompt(md_table_aligned),
         instruction_prompt=INSTRUCTION_PROMPT,
-        schema=HeaderCategorizeJsonSchema, # HeaderCategorizeResult,
+        schema=HeaderCategorizeJsonSchema,  # HeaderCategorizeResult,
         post_process=post_process_validate_categorized_result,
         md_table_aligned=md_table_aligned,
     )
     assert isinstance(res, dict)
     assert isinstance(processed_res, HeaderCategorizeResult)
 
+
 @pytest.mark.skip()
-def test_PKSumCommonAgent_unit_extraction(llm, md_table_aligned, md_table_list, col_mapping, caption):
+def test_PKSumCommonAgent_unit_extraction(
+    llm, md_table_aligned, md_table_list, col_mapping, caption
+):
     # test schema
     schema_obj = ParamTypeUnitExtractionResult.model_json_schema()
     print(schema_obj)
@@ -206,10 +237,15 @@ def test_PKSumCommonAgent_unit_extraction(llm, md_table_aligned, md_table_list, 
     )
     assert isinstance(res, ParamTypeUnitExtractionResult)
     assert type(processed_res) == tuple
-    assert len(processed_res) == 2 # matched tuple (parameter types list, parameter valus list)
+    assert (
+        len(processed_res) == 2
+    )  # matched tuple (parameter types list, parameter valus list)
+
 
 @pytest.mark.skip()
-def test_PKSumCommonAgent_param_value_extraction(llm, md_table_aligned, caption, md_table_list):
+def test_PKSumCommonAgent_param_value_extraction(
+    llm, md_table_aligned, caption, md_table_list
+):
     schema_obj = ParameterValueResult.model_json_schema()
     print(schema_obj)
 
@@ -229,6 +265,7 @@ def test_PKSumCommonAgent_param_value_extraction(llm, md_table_aligned, caption,
         assert isinstance(res, ParameterValueResult)
         assert type(processed_res) == str
 
+
 @pytest.mark.skip()
 def test_PKSumCommonAgent_time_and_unit_extraction(llm, md_table_aligned, caption):
     agent = PKSumCommonAgent(llm=llm)
@@ -247,7 +284,8 @@ def test_PKSumCommonAgent_time_and_unit_extraction(llm, md_table_aligned, captio
     assert type(processed_res) == str
     assert token_usage["total_tokens"] > 0
 
-# @pytest.mark.skip()
+
+@pytest.mark.skip()
 def test_PKSumCommonAgent_split_by_col(llm, col_mapping, md_table_aligned):
     agent = PKSumCommonAgent(llm=llm)
     res, processed_res, token_usage = agent.go(
@@ -260,6 +298,7 @@ def test_PKSumCommonAgent_split_by_col(llm, col_mapping, md_table_aligned):
         md_table_aligned=md_table_aligned,
     )
     assert isinstance(res, SplitByColumnsResult)
+
 
 @pytest.mark.skip()
 def test_p_pk_summary_drug_info(md_table_aligned):
@@ -274,10 +313,15 @@ def test_p_pk_summary_drug_info(md_table_aligned):
     res = s_pk_get_col_mapping(md_table_aligned, model_name="chatgpt_4o")
     print(res)
 
+
 @pytest.mark.skip()
 def test_post_process_split_by_columns(md_table_aligned):
-    col_groups = [['Parameter type', 'N', 'Range', 'Mean ± s.d.', 'Median']]
-    processed_col_groups = [[fix_col_name(item, md_table_aligned) for item in group] for group in col_groups]
-    df_table = f_split_by_cols(processed_col_groups, markdown_to_dataframe(md_table_aligned))
+    col_groups = [["Parameter type", "N", "Range", "Mean ± s.d.", "Median"]]
+    processed_col_groups = [
+        [fix_col_name(item, md_table_aligned) for item in group] for group in col_groups
+    ]
+    df_table = f_split_by_cols(
+        processed_col_groups, markdown_to_dataframe(md_table_aligned)
+    )
 
     return_md_table_list = [dataframe_to_markdown(d) for d in df_table]

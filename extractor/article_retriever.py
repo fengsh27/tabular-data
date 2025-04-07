@@ -1,22 +1,17 @@
-from typing import List, Any, Tuple, Dict, Optional
 from fake_useragent import UserAgent
-from bs4 import BeautifulSoup, Tag
-import pandas as pd
+from bs4 import BeautifulSoup
 import logging
 import os
 import shortuuid
-from fake_useragent import UserAgent
 
 from extractor.make_request import make_article_request, make_get_request
 from extractor.constants import (
     headers,
     cookies,
-    FULL_TEXT_LENGTH_THRESHOLD,
-    MAX_FULL_TEXT_LENGTH,
 )
-from extractor.utils import decode_url
 
 logger = logging.getLogger(__name__)
+
 
 class ArticleRetriever(object):
     def __init__(self):
@@ -35,7 +30,7 @@ class ArticleRetriever(object):
         res = make_article_request(url, fn)
         if res.status_code == 200 and os.path.exists(fn):
             # try to use make_request (it doesn't work to make_request(final_url))
-            # res_data = res.json()            
+            # res_data = res.json()
             # final_url = res_data.get("final_url", None)
             fobj = open(fn, "r")
             text = fobj.read()
@@ -43,10 +38,11 @@ class ArticleRetriever(object):
             os.unlink(fn)
             return True, text, 200
         return (
-            False, 
-            res.text if res.status_code != 200 else \
-                f"failed to request full-text article (temporary file does not exist) - {res.reason}", 
-            res.status_code
+            False,
+            res.text
+            if res.status_code != 200
+            else f"failed to request full-text article (temporary file does not exist) - {res.reason}",
+            res.status_code,
         )
 
     def _request_pmc_full_text(self, pmid: str):
@@ -64,12 +60,14 @@ class ArticleRetriever(object):
         header = headers
         ua = UserAgent()
         header["User-Agent"] = str(ua.chrome)
-        res = make_get_request(url, headers=header, allow_redirects=True, cookies=cookies)
+        res = make_get_request(
+            url, headers=header, allow_redirects=True, cookies=cookies
+        )
         if res.status_code == 200:
             return True, res.text, res.status_code
         return False, res.reason, res.status_code
-    
-    def _extract_full_text_link(self, html_content: str) -> Tuple[bool, str, int]:
+
+    def _extract_full_text_link(self, html_content: str) -> tuple[bool, str, int]:
         """
         extract full-text link from html content
         """
@@ -82,7 +80,7 @@ class ArticleRetriever(object):
         if full_text_url is None:
             return (False, "Can't get full-text url from href attribute", -1)
         return (True, full_text_url, 200)
-    
+
     def _extract_full_text_url_from_abstract_page(self, pmid: str):
         """
         extract full-text url from pmc abstract page (https://pubmed.ncbi.nlm.nih.gov/{pmid}/)
@@ -95,10 +93,10 @@ class ArticleRetriever(object):
         if r.status_code != 200:
             return (False, "", r.status_code)
         html_content = r.text
-    
+
         # extract full-text link
         return self._extract_full_text_link(html_content)
-    
+
     def request_article(self, pmid: str):
         pmid = pmid.strip()
 
@@ -111,18 +109,20 @@ class ArticleRetriever(object):
             return True, pmc_article, code
         res, full_text_url, code = self._extract_full_text_url_from_abstract_page(pmid)
         if not res:
-            logger.error(f"Can't extract full-text url from abstract page")
+            logger.error("Can't extract full-text url from abstract page")
             return res, full_text_url, code
         return self._request_full_text_from_url(full_text_url)
+
 
 class ExtendArticleRetriever(ArticleRetriever):
     """
     Comparing to ArticleRetriever, ExtendArticleRetriever will check if the article already exists first,
     if yes, the existed article will be returned, otherwise, it will download the article.
     """
+
     def __init__(self):
         super().__init__()
-    
+
     def request_article(self, pmid: str):
         pmid_folder = os.environ.get("TEMP_FOLDER", "./tmp")
         pmid_folder = os.path.join(pmid_folder, pmid)
@@ -139,7 +139,3 @@ class ExtendArticleRetriever(ArticleRetriever):
         with open(the_file, "r") as fobj:
             content = fobj.read()
             return True, content, 200
-
-        
-
-

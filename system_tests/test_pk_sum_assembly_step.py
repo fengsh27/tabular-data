@@ -1,10 +1,8 @@
-
 from extractor.agents.pk_summary.pk_sum_assembly_step import (
     AssemblyStep,
 )
-from extractor.agents.pk_summary.pk_sum_workflow import (
-    PKSumWorkflowState
-)
+from extractor.agents.pk_summary.pk_sum_workflow import PKSumWorkflowState
+
 
 def test_AssemblyStep_30825333_table_2(
     llm,
@@ -17,7 +15,7 @@ def test_AssemblyStep_30825333_table_2(
 ):
     step = AssemblyStep()
     state = PKSumWorkflowState()
-    state['llm'] = llm
+    state["llm"] = llm
     state["caption"] = caption_30825333_table_2
     state["drug_list"] = drug_list_30825333_table_2
     state["patient_list"] = patient_list_30825333_table_2
@@ -28,4 +26,3 @@ def test_AssemblyStep_30825333_table_2(
     step.execute(state)
 
     assert state["df_combined"] is not None
-

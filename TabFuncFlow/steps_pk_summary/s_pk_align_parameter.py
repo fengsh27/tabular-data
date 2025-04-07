@@ -15,9 +15,9 @@ If the PK parameter type is represented as column headers, return [[COL]].
 
 
 def s_pk_align_parameter_parse(content, usage):
-    content = content.replace('\n', '')
-    match_col = re.search(r'\[\[COL\]\]', content)
-    matches = re.findall(r'<<.*?>>', content)
+    content = content.replace("\n", "")
+    match_col = re.search(r"\[\[COL\]\]", content)
+    matches = re.findall(r"<<.*?>>", content)
     match_angle = matches[-1] if matches else None
 
     if match_col:
@@ -26,22 +26,34 @@ def s_pk_align_parameter_parse(content, usage):
         match_name = match_angle[2:-2]
         return match_name
     else:
-        raise ValueError("No valid alignment parameter found in content.", f"\n{content}", f"\n<<{usage}>>")
+        raise ValueError(
+            "No valid alignment parameter found in content.",
+            f"\n{content}",
+            f"\n<<{usage}>>",
+        )
 
 
 def s_pk_align_parameter(md_table, model_name="gemini_15_pro"):
     msg = s_pk_align_parameter_prompt(md_table)
-    messages = [msg, ]
+    messages = [
+        msg,
+    ]
     question = "Do not give the final result immediately. First, explain your thought process, then provide the answer."
 
-    res, content, usage, truncated = get_llm_response(messages, question, model=model_name)
+    res, content, usage, truncated = get_llm_response(
+        messages, question, model=model_name
+    )
     # print(display_md_table(md_table))
     # print(usage, content)
 
     try:
         col_name = s_pk_align_parameter_parse(content, usage)
     except Exception as e:
-        raise RuntimeError(f"Error in s_pk_align_parameter_parse: {e}", f"\n{content}", f"\n<<{usage}>>") from e
+        raise RuntimeError(
+            f"Error in s_pk_align_parameter_parse: {e}",
+            f"\n{content}",
+            f"\n<<{usage}>>",
+        ) from e
 
     if col_name:
         df_table = markdown_to_dataframe(md_table)
@@ -51,7 +63,9 @@ def s_pk_align_parameter(md_table, model_name="gemini_15_pro"):
     else:
         df_table = f_transpose(markdown_to_dataframe(md_table))
         df_table.columns = ["Parameter type"] + list(df_table.columns[1:])
-        return_md_table = deduplicate_headers(fill_empty_headers(remove_empty_col_row(dataframe_to_markdown(df_table))))
+        return_md_table = deduplicate_headers(
+            fill_empty_headers(remove_empty_col_row(dataframe_to_markdown(df_table)))
+        )
 
     # print(display_md_table(return_md_table))
 

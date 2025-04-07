@@ -1,4 +1,3 @@
-
 from benchmark.constant import BenchmarkType
 from benchmark.utils import generate_columns_definition
 
@@ -35,11 +34,12 @@ pe_cols_definition = (
     "P value includes the numerical value associated with the outcomes and the statistical test conducted. Not always reported in the studies."
 )
 
+
 def test_generate_pk():
     res = generate_columns_definition(BenchmarkType.PK_SUMMARY)
     assert res == pk_cols_definition
 
+
 def test_generate_pe():
     res = generate_columns_definition(BenchmarkType.PE)
     assert res == pe_cols_definition
-

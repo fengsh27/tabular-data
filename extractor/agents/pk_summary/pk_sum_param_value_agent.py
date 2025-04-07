@@ -1,5 +1,3 @@
-
-from typing import List
 from langchain_core.prompts import ChatPromptTemplate
 from pydantic import Field
 import pandas as pd
@@ -8,7 +6,7 @@ import logging
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
 from extractor.agents.pk_summary.pk_sum_common_agent import (
-    PKSumCommonAgentResult, 
+    PKSumCommonAgentResult,
     RetryException,
 )
 
@@ -49,6 +47,7 @@ Please Note:
 [["0.162", "Mean", "SD", "0.090", "N/A", "N/A", "N/A", ".67"], ["0.428", "Mean", "SD", "0.162", "N/A", "N/A", "N/A", ".015"]]
 """)
 
+
 def get_parameter_value_prompt(
     md_table_aligned: str,
     md_table_aligned_with_1_param_type_and_value: str,
@@ -58,7 +57,9 @@ def get_parameter_value_prompt(
     first_line = md_table_aligned_with_1_param_type_and_value.strip().split("\n")[0]
     headers = [col.strip() for col in first_line.split("|") if col.strip()]
     extracted_param_types = f""" "{'", "'.join(headers)}" """
-    rows_num = markdown_to_dataframe(md_table_aligned_with_1_param_type_and_value).shape[0]
+    rows_num = markdown_to_dataframe(
+        md_table_aligned_with_1_param_type_and_value
+    ).shape[0]
     return PARAMETER_VALUE_PROMPT.format(
         processed_md_table_aligned=display_md_table(md_table_aligned),
         caption=caption,
@@ -66,16 +67,22 @@ def get_parameter_value_prompt(
         processed_md_table_aligned_with_1_param_type_and_value=display_md_table(
             md_table_aligned_with_1_param_type_and_value
         ),
-        md_table_aligned_with_1_param_type_and_value_max_row_index=rows_num-1,
+        md_table_aligned_with_1_param_type_and_value_max_row_index=rows_num - 1,
         md_table_aligned_with_1_param_type_and_value_rows=rows_num,
     )
 
+
 COLUMN_NUMBER = 8
 
+
 class ParameterValueResult(PKSumCommonAgentResult):
-    """ Parameter Value Extraction Result """
-    extracted_param_values: List[List[str]] = Field(description="""a list of lists containing parameter values, like 
-[["0.162", "Mean", "SD", "0.090", "N/A", "N/A", "N/A", ".67"], ["0.428", "Mean", "SD", "0.162", "N/A", "N/A", "N/A", ".015"]]""")
+    """Parameter Value Extraction Result"""
+
+    extracted_param_values: list[list[str]] = Field(
+        description="""a list of lists containing parameter values, like 
+[["0.162", "Mean", "SD", "0.090", "N/A", "N/A", "N/A", ".67"], ["0.428", "Mean", "SD", "0.162", "N/A", "N/A", "N/A", ".015"]]"""
+    )
+
 
 def post_process_matched_list(
     res: ParameterValueResult,
@@ -87,7 +94,7 @@ def post_process_matched_list(
     if not matched_values:
         logger.error("Parameter value extraction failed: No valid values found.")
         raise ValueError("Parameter value extraction failed: No valid values found.")
-    
+
     for item in matched_values:
         if len(item) != COLUMN_NUMBER:
             error_msg = f"""Wrong answer example: 
@@ -99,17 +106,28 @@ Please make sure the inner list have {COLUMN_NUMBER} values, the result should b
             logger.error(error_msg)
             raise RetryException(error_msg)
 
-    df_table = pd.DataFrame(matched_values, columns=[
-        'Main value', 'Statistics type', 'Variation type', 'Variation value',
-        'Interval type', 'Lower bound', 'Upper bound', 'P value'
-    ])    
+    df_table = pd.DataFrame(
+        matched_values,
+        columns=[
+            "Main value",
+            "Statistics type",
+            "Variation type",
+            "Variation value",
+            "Interval type",
+            "Lower bound",
+            "Upper bound",
+            "P value",
+        ],
+    )
     if df_table.shape[0] != expected_rows:
         logger.error(
-            "Wrong answer example:\n" + str(res.extracted_param_values) + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {df_table.shape[0]} extracted values."
+            "Wrong answer example:\n"
+            + str(res.extracted_param_values)
+            + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {df_table.shape[0]} extracted values."
         )
         raise RetryException(
-            "Wrong answer example:\n" + str(res.extracted_param_values) + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {df_table.shape[0]} extracted values."
+            "Wrong answer example:\n"
+            + str(res.extracted_param_values)
+            + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {df_table.shape[0]} extracted values."
         )
     return dataframe_to_markdown(df_table)
-
-

@@ -1,35 +1,33 @@
-cookies = {
-    'cookie_name': 'cookie_value'
-}
+cookies = {"cookie_name": "cookie_value"}
 headers = {
-    'authority': 'www.google.com',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9',
-    'cache-control': 'max-age=0',
-    'cookie': "SID=ZAjX93QUU1NMI2Ztt_dmL9YRSRW84IvHQwRrSe1lYhIZncwY4QYs0J60X1WvNumDBjmqCA.; __Secure-", 
-    #..,
-    'sec-ch-ua': '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"',
-    'sec-ch-ua-arch': '"x86"',
-    'sec-ch-ua-bitness': '"64"',
-    'sec-ch-ua-full-version': '"115.0.5790.110"',
-    'sec-ch-ua-full-version-list': '"Not/A)Brand";v="99.0.0.0", "Google Chrome";v="115.0.5790.110", "Chromium";v="115.0.5790.110"',
-    'sec-ch-ua-mobile': '?0',
-    'sec-ch-ua-model': '""',
-    'sec-ch-ua-platform': 'Windows',
-    'sec-ch-ua-platform-version': '15.0.0',
-    'sec-ch-ua-wow64': '?0',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'same-origin',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36',
-    'x-client-data': '#..',
+    "authority": "www.google.com",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "accept-language": "en-US,en;q=0.9",
+    "cache-control": "max-age=0",
+    "cookie": "SID=ZAjX93QUU1NMI2Ztt_dmL9YRSRW84IvHQwRrSe1lYhIZncwY4QYs0J60X1WvNumDBjmqCA.; __Secure-",
+    # ..,
+    "sec-ch-ua": '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"',
+    "sec-ch-ua-arch": '"x86"',
+    "sec-ch-ua-bitness": '"64"',
+    "sec-ch-ua-full-version": '"115.0.5790.110"',
+    "sec-ch-ua-full-version-list": '"Not/A)Brand";v="99.0.0.0", "Google Chrome";v="115.0.5790.110", "Chromium";v="115.0.5790.110"',
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-model": '""',
+    "sec-ch-ua-platform": "Windows",
+    "sec-ch-ua-platform-version": "15.0.0",
+    "sec-ch-ua-wow64": "?0",
+    "sec-fetch-dest": "document",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-user": "?1",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
+    "x-client-data": "#..",
 }
 
-FULL_TEXT_LENGTH_THRESHOLD = 10000 # we assume the length of full-text paper should be 
-                                   # greater than 10000
-MAX_FULL_TEXT_LENGTH = 31 * 1024   # should not be greater than 31K
+FULL_TEXT_LENGTH_THRESHOLD = 10000  # we assume the length of full-text paper should be
+# greater than 10000
+MAX_FULL_TEXT_LENGTH = 31 * 1024  # should not be greater than 31K
 
 
 ERROR_UNKNOWN_ERROR = -1
@@ -48,19 +46,19 @@ TABLE_SOURCE_PROMPTS = "html table from biomedical article"
 PKSUMMARY_TABLE_OUTPUT_COLUMNS = [
     "DN",
     "Ana",
-    "Sp", 
-    "Pop", 
-    "PS", 
+    "Sp",
+    "Pop",
+    "PS",
     "SN",
-    "PT", 
-    "V", 
-    "U", 
-    "SS", 
+    "PT",
+    "V",
+    "U",
+    "SS",
     "VT",
     "VV",
-    "IT", 
+    "IT",
     "LL",
-    "HL", 
+    "HL",
     "PV",
 ]
 PKSUMMARY_TABLE_OUTPUT_COLUMNS_DEFINITION = [
@@ -77,12 +75,12 @@ PKSUMMARY_TABLE_OUTPUT_COLUMNS_DEFINITION = [
     "Population: Describe the patient age distribution, including categories such as 'pediatric,' 'adults,' 'old adults,' 'maternal,' 'fetal,' 'neonate,' etc.",
     "High limit: is a number, the higher bounds of the interval",
     "Subject N:  the number of subjects that correspond to the specific parameter. ",
-    "Variation value: is a number, the number that corresponds to the specific variation.", 
+    "Variation value: is a number, the number that corresponds to the specific variation.",
     "Variation type: the variability measure (describes how spread out the data is) associated with the specific parameter, e.g., standard deviation (SD), CV%.",
-    "P value: The p-value is a number, calculated from a statistical test, that describes the likelihood of a particular set of observations if the null hypothesis were true; varies depending on the study, and therefore it may not always be reported."
+    "P value: The p-value is a number, calculated from a statistical test, that describes the likelihood of a particular set of observations if the null hypothesis were true; varies depending on the study, and therefore it may not always be reported.",
 ]
 TABLE_OUTPUT_NOTES = [
     "1. Only output table in json format without any other characters, no triple backticks ``` and no 'json'.",
     "2. Ensure to extract all available information for each field without omitting any details.",
-    "3. If the information that is not provided, please leave it with empty string."
+    "3. If the information that is not provided, please leave it with empty string.",
 ]

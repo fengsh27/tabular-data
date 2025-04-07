@@ -36,7 +36,10 @@ def html_table_to_markdown(html):
         # Fill in existing rowspan values
         while col_idx in rowspan_tracker and rowspan_tracker[col_idx][1] > 0:
             row_data.append(rowspan_tracker[col_idx][0])  # Use stored text
-            rowspan_tracker[col_idx] = (rowspan_tracker[col_idx][0], rowspan_tracker[col_idx][1] - 1)
+            rowspan_tracker[col_idx] = (
+                rowspan_tracker[col_idx][0],
+                rowspan_tracker[col_idx][1] - 1,
+            )
             if rowspan_tracker[col_idx][1] == 0:
                 del rowspan_tracker[col_idx]
             col_idx += 1
@@ -55,7 +58,10 @@ def html_table_to_markdown(html):
 
             if rowspan > 1:
                 for i in range(colspan):
-                    rowspan_tracker[col_idx + i] = (text, rowspan - 1)  # Store rowspan values
+                    rowspan_tracker[col_idx + i] = (
+                        text,
+                        rowspan - 1,
+                    )  # Store rowspan values
 
             col_idx += colspan
 
@@ -67,7 +73,9 @@ def html_table_to_markdown(html):
         while len(row) < max_cols:
             missing_col_idx = len(row)
             if missing_col_idx in rowspan_tracker:
-                row.append(rowspan_tracker[missing_col_idx][0])  # Fill with rowspan text
+                row.append(
+                    rowspan_tracker[missing_col_idx][0]
+                )  # Fill with rowspan text
             else:
                 row.append("")  # Fallback to empty string
 
@@ -83,7 +91,11 @@ def html_table_to_markdown(html):
     markdown_rows = ["| " + " | ".join(row) + " |" for row, _ in table_matrix]
     separator = "| " + " | ".join(["---"] * max_cols) + " |"
 
-    return "\n".join(markdown_rows[:header_end_idx + 1] + [separator] + markdown_rows[header_end_idx + 1:])
+    return "\n".join(
+        markdown_rows[: header_end_idx + 1]
+        + [separator]
+        + markdown_rows[header_end_idx + 1 :]
+    )
 
 
 def markdown_to_dataframe(md_table):
@@ -93,13 +105,13 @@ def markdown_to_dataframe(md_table):
     :param md_table: A string containing the Markdown table.
     :return: Pandas DataFrame representing the table with all values as strings.
     """
-    lines = md_table.strip().split('\n')
+    lines = md_table.strip().split("\n")
     if len(lines) < 3:
         return pd.DataFrame()  # Return empty DataFrame if table is invalid
 
     # Extract header and data rows, skipping the separator line
-    headers = lines[0].split('|')[1:-1]  # Remove leading and trailing empty parts
-    data_rows = [line.split('|')[1:-1] for line in lines[2:]]
+    headers = lines[0].split("|")[1:-1]  # Remove leading and trailing empty parts
+    data_rows = [line.split("|")[1:-1] for line in lines[2:]]
 
     # Trim whitespace from headers and data cells
     headers = [h.strip() for h in headers]
@@ -125,18 +137,18 @@ def dataframe_to_markdown(df_table):
         # Join column levels with "/" (e.g., ("A", "B") becomes "A/B")
         headers = ["/".join(map(str, col)) for col in df_table.columns]
     else:
-        headers = list(map(str, df_table.columns)) # df_table.columns.tolist()
-    header_line = '| ' + ' | '.join(headers) + ' |'
-    separator_line = '| ' + ' | '.join(['---'] * len(headers)) + ' |'
+        headers = list(map(str, df_table.columns))  # df_table.columns.tolist()
+    header_line = "| " + " | ".join(headers) + " |"
+    separator_line = "| " + " | ".join(["---"] * len(headers)) + " |"
 
     # Prepare data rows
     data_lines = []
     for _, row in df_table.iterrows():
-        row_str = '| ' + ' | '.join(str(cell) for cell in row) + ' |'
+        row_str = "| " + " | ".join(str(cell) for cell in row) + " |"
         data_lines.append(row_str)
 
     # Combine into final Markdown table
-    md_table = '\n'.join([header_line, separator_line] + data_lines)
+    md_table = "\n".join([header_line, separator_line] + data_lines)
 
     return md_table
 
@@ -152,7 +164,9 @@ def stack_md_table_headers(md_table):
     lines = md_table.strip().split("\n")
 
     # Find the separator line (the line with ---)
-    separator_idx = next((i for i, line in enumerate(lines) if re.match(r'\|\s*-+\s*\|', line)), None)
+    separator_idx = next(
+        (i for i, line in enumerate(lines) if re.match(r"\|\s*-+\s*\|", line)), None
+    )
     if separator_idx is None or separator_idx == 0:
         return md_table  # No header detected or table is invalid
 
@@ -160,12 +174,14 @@ def stack_md_table_headers(md_table):
     header_lines = lines[:separator_idx]
 
     # Split header lines into lists of columns
-    header_matrix = [re.split(r'\s*\|\s*', line.strip('|')) for line in header_lines]
+    header_matrix = [re.split(r"\s*\|\s*", line.strip("|")) for line in header_lines]
     max_cols = max(len(row) for row in header_matrix)
 
     # Stack header rows by column, keeping the original name if identical
-    stacked_header = [col[0] if all(x == col[0] for x in col) else ".".join(filter(None, col)) for col in
-                      zip(*header_matrix)]
+    stacked_header = [
+        col[0] if all(x == col[0] for x in col) else ".".join(filter(None, col))
+        for col in zip(*header_matrix)
+    ]
 
     # Format stacked header back to Markdown
     stacked_header_line = "| " + " | ".join(stacked_header) + " |"
@@ -182,30 +198,35 @@ def remove_empty_col_row(md_table):
     :param md_table: A string containing the Markdown table.
     :return: A cleaned Markdown table without empty rows and columns.
     """
-    lines = md_table.strip().split('\n')
+    lines = md_table.strip().split("\n")
     if len(lines) < 2:
         return md_table  # Not enough lines to form a valid table
 
     # Parse table
-    headers = lines[0].split('|')[1:-1]  # Remove leading and trailing empty parts
+    headers = lines[0].split("|")[1:-1]  # Remove leading and trailing empty parts
     separator = lines[1]
-    data_rows = [line.split('|')[1:-1] for line in lines[2:]]
+    data_rows = [line.split("|")[1:-1] for line in lines[2:]]
 
     # Trim whitespace
     headers = [h.strip() for h in headers]
     data_rows = [[cell.strip() for cell in row] for row in data_rows]
 
     # Identify valid column indices: keep if it has a header or any non-empty data
-    valid_columns = [i for i in range(len(headers)) if headers[i] or any(row[i] for row in data_rows)]
+    valid_columns = [
+        i for i in range(len(headers)) if headers[i] or any(row[i] for row in data_rows)
+    ]
 
     # Reconstruct table
-    cleaned_headers = '| ' + ' | '.join(headers[i] for i in valid_columns) + ' |'
+    cleaned_headers = "| " + " | ".join(headers[i] for i in valid_columns) + " |"
     cleaned_separator = separator  # Keep separator line unchanged
-    cleaned_data_rows = ['| ' + ' | '.join(row[i] for i in valid_columns) + ' |' for row in data_rows if
-                         any(row)]  # Remove empty rows
+    cleaned_data_rows = [
+        "| " + " | ".join(row[i] for i in valid_columns) + " |"
+        for row in data_rows
+        if any(row)
+    ]  # Remove empty rows
 
     # Combine output
-    return '\n'.join([cleaned_headers, cleaned_separator] + cleaned_data_rows)
+    return "\n".join([cleaned_headers, cleaned_separator] + cleaned_data_rows)
 
 
 def fill_empty_headers(md_table):
@@ -216,12 +237,12 @@ def fill_empty_headers(md_table):
     :param md_table: Markdown table as a string
     :return: Modified Markdown table with filled headers
     """
-    lines = md_table.strip().split('\n')
+    lines = md_table.strip().split("\n")
     if len(lines) < 2:
         return md_table  # Not enough lines to form a valid table
 
     # Extract header line
-    headers = lines[0].split('|')[1:-1]  # Remove leading and trailing empty parts
+    headers = lines[0].split("|")[1:-1]  # Remove leading and trailing empty parts
     separator = lines[1]
 
     # Find existing Unnamed_x numbers
@@ -242,13 +263,13 @@ def fill_empty_headers(md_table):
         if not headers[i]:
             while next_num in existing_numbers:
                 next_num += 1  # Ensure unique numbering
-            headers[i] = f'Unnamed_{next_num}'
+            headers[i] = f"Unnamed_{next_num}"
             existing_numbers.add(next_num)
 
     # Reconstruct table
-    filled_header_line = '| ' + ' | '.join(headers) + ' |'
+    filled_header_line = "| " + " | ".join(headers) + " |"
 
-    return '\n'.join([filled_header_line, separator] + lines[2:])
+    return "\n".join([filled_header_line, separator] + lines[2:])
 
 
 def deduplicate_headers(md_table: str) -> str:
@@ -258,12 +279,12 @@ def deduplicate_headers(md_table: str) -> str:
     :param md_table: Markdown table as a string
     :return: Modified Markdown table with unique headers
     """
-    lines = md_table.strip().split('\n')
+    lines = md_table.strip().split("\n")
     if len(lines) < 2:
         return md_table  # Not enough lines to form a valid table
 
     # Extract header line
-    headers = lines[0].split('|')[1:-1]  # Remove leading and trailing empty parts
+    headers = lines[0].split("|")[1:-1]  # Remove leading and trailing empty parts
     separator = lines[1]
 
     # Count occurrences to detect duplicates
@@ -291,9 +312,9 @@ def deduplicate_headers(md_table: str) -> str:
         new_headers.append(new_header)
 
     # Reconstruct table
-    deduplicated_header_line = '| ' + ' | '.join(new_headers) + ' |'
+    deduplicated_header_line = "| " + " | ".join(new_headers) + " |"
 
-    return '\n'.join([deduplicated_header_line, separator] + lines[2:])
+    return "\n".join([deduplicated_header_line, separator] + lines[2:])
 
 
 def display_md_table(md_table):
@@ -305,22 +326,22 @@ def display_md_table(md_table):
     :param md_table: Markdown table as a string
     :return: Modified Markdown table with labeled rows
     """
-    lines = md_table.strip().split('\n')
+    lines = md_table.strip().split("\n")
     if len(lines) < 2:
         return md_table  # Not enough lines to form a valid table
 
     labeled_lines = []
     for i, line in enumerate(lines):
         if i == 0:
-            headers = line.split('|')
+            headers = line.split("|")
             headers = [f'"{header.strip()}"' for header in headers if header.strip()]
             labeled_lines.append(f"col: | {' | '.join(headers)} |")
-        elif i == 1 and re.match(r'\|\s*-+\s*\|', line):
+        elif i == 1 and re.match(r"\|\s*-+\s*\|", line):
             labeled_lines.append(line)  # Keep separator unchanged
         else:
             labeled_lines.append(f"row {i - 2}: {line}")
 
-    return '\n'.join(labeled_lines)
+    return "\n".join(labeled_lines)
 
 
 def fix_col_name(col_name, md_table):
@@ -337,20 +358,20 @@ def fix_col_name(col_name, md_table):
 
 
 def transpose_markdown_table(md_table):
-    lines = md_table.strip().split('\n')
+    lines = md_table.strip().split("\n")
 
-    header = lines[0].strip('|').split('|')
+    header = lines[0].strip("|").split("|")
     separator = lines[1]
-    rows = [line.strip('|').split('|') for line in lines[2:]]
+    rows = [line.strip("|").split("|") for line in lines[2:]]
 
     transposed = [header] + rows
     transposed = list(map(list, zip(*transposed)))
 
-    new_header = '| ' + ' | '.join(transposed[0]) + ' |'
-    new_separator = '| ' + ' | '.join(['---'] * len(transposed[0])) + ' |'
-    new_rows = ['| ' + ' | '.join(row) + ' |' for row in transposed[1:]]
+    new_header = "| " + " | ".join(transposed[0]) + " |"
+    new_separator = "| " + " | ".join(["---"] * len(transposed[0])) + " |"
+    new_rows = ["| " + " | ".join(row) + " |" for row in transposed[1:]]
 
-    return '\n'.join([new_header, new_separator] + new_rows)
+    return "\n".join([new_header, new_separator] + new_rows)
 
 
 def get_html_content_from_file(file_path):
@@ -359,7 +380,7 @@ def get_html_content_from_file(file_path):
 
 
 def get_caption_and_footnote_from_file(json_file_path):
-    with open(json_file_path, 'r', encoding='utf-8') as file:
+    with open(json_file_path, "r", encoding="utf-8") as file:
         data = json.load(file)
         caption = data.get("caption")
         footnote = data.get("footnote")
@@ -380,22 +401,27 @@ def get_caption_and_footnote_from_file(json_file_path):
 #         md_table_aligned_with_1_param_type_and_value_list.append(dataframe_to_markdown(markdown_to_dataframe(md_table).iloc[:][[pt_list[0], pv]].reset_index(drop=True)))
 #     return md_table_aligned_with_1_param_type_and_value_list
 
+
 def single_html_table_to_markdown(html_content: str):
     """
     Converts a single HTML <table> to Markdown format.
     Ensures that the HTML content contains only one <table>.
     """
-    soup = BeautifulSoup(html_content, 'html.parser')
+    soup = BeautifulSoup(html_content, "html.parser")
 
     # Find all tables in the HTML
-    tables = soup.find_all('table')
+    tables = soup.find_all("table")
 
     if len(tables) != 1:
         logger.error("The input must contain exactly one <table>.")
-    
-    html_content = re.sub(r'\xa0', ' ', html_content)
-    markdown_table = deduplicate_headers(fill_empty_headers(
-        remove_empty_col_row(stack_md_table_headers(html_table_to_markdown(html_content)))))
+
+    html_content = re.sub(r"\xa0", " ", html_content)
+    markdown_table = deduplicate_headers(
+        fill_empty_headers(
+            remove_empty_col_row(
+                stack_md_table_headers(html_table_to_markdown(html_content))
+            )
+        )
+    )
 
     return markdown_table
-
