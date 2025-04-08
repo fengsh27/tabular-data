@@ -89,9 +89,9 @@ def post_process_refined_patient_info(
 ) -> str:
     match_list = res.refined_patient_combinations
     if not match_list:
-        raise ValueError(
-            "Population information refinement failed: No valid entries found!"
-        )
+        error_msg = "Population information refinement failed: No valid entries found!"
+        logger.error(error_msg)
+        raise ValueError(error_msg)
 
     expected_rows = markdown_to_dataframe(md_table_patient).shape[0]
     if len(match_list) != expected_rows:

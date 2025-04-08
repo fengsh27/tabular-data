@@ -52,103 +52,40 @@ PK_COLUMNS_MAP = [
     ("Interval low", "Lower limit"),
     ("interval high", "High limit"),
     ("Variability statistic", "Variation type"),
-    ("Summary Statistic", "Summary Statistics"),
+    ("Summary Statistic", "Summary statistics"),
     ("Parameter unit", "Unit"),
-    ("Parameter statistic", "Summary Statistics"),
+    ("Parameter statistic", "Summary statistics"),
     ("Parameter value", "Value"),
     ("Lower bound", "Lower limit"),
     ("Upper bound", "High limit"),
 ]
+    
+def ensure_columns(df_table: pd.DataFrame) -> pd.DataFrame:
+    """ Normalize pk summary columns """
+    col_map = {}
+    for item in PK_COLUMNS_MAP:
+        col_map[item[0]] = item[1]
 
+    df_table = df_table.rename(columns=col_map)
+    df_table = df_table[df_table.columns.intersection(PK_COLUMNS)]
 
-def process_1st_column(rows: list[list[str]]):
-    headers = rows[0]
-    if headers[0].lower() == LOWER_PK_COLUMNS[0]:
-        # no NO. column in table
-        prc_rows = []
-        for ix, row in enumerate(rows):
-            prc_row = []
-            if ix == 0:
-                prc_row.append("")
-            else:
-                prc_row.append(ix - 1)
-            prc_row = prc_row + row
-            prc_rows.append(prc_row)
-        return prc_rows
+    return df_table
 
-    for ix, row in enumerate(rows):
-        if ix == 0:
-            row[0] = ""
-        else:
-            row[0] = ix - 1
+def ensure_NO_column(df_table: pd.DataFrame) -> pd.DataFrame:
+    """ Ensure the first column is "NO." column """
+    if df_table.columns[0].lower() == LOWER_PK_COLUMNS[0]:
+        # No "NO." column
+        df_table.insert(0, "NO.", range(len(df_table)))
+    
+    return df_table
+    
+def preprocess_pk_summary_table(csv_file: str) -> pd.DataFrame:
+    """ preprocess pk summary table """
+    df_table = pd.read_csv(csv_file)
+    df_table = ensure_columns(df_table)
+    df_table = ensure_NO_column(df_table)    
 
-    return rows
-
-
-def process_column_names(rows: list[list[str]]):
-    unknow_col_index = []
-
-    for ix in range(len(rows[0])):
-        column = rows[0][ix]
-        if ix == 0:
-            continue
-        found = False
-        if len(column.strip()) == 0:
-            print(f"Error: the {ix}th column is empty")
-            unknow_col_index.append(ix)
-            continue
-        # Normalize column names
-        try:
-            col_ix = LOWER_PK_COLUMNS.index(column.strip().lower())
-            rows[0][ix] = PK_COLUMNS[col_ix]
-            found = True
-        except ValueError:
-            found = False
-
-        # Map column name
-        if not found:
-            pair = next(
-                (x for x in PK_COLUMNS_MAP if x[0].lower() == column.strip().lower()),
-                None,
-            )
-            if pair is not None:
-                rows[0][ix] = pair[1]
-                found = True
-            # for pk_col_map in PK_COLUMNS_MAP:
-            #     if column.strip().lower() == pk_col_map[0].lower():
-            #         rows[0][ix] = pk_col_map[1]
-            #         found = True
-            #         break
-        if not found:
-            print(f"Error: can't find column {column}")
-            unknow_col_index.append(ix)
-
-    if len(unknow_col_index) == 0:
-        return rows
-
-    processed_rows = []
-    for row in rows:
-        prcssed_row = []
-        for ix in range(len(row)):
-            if ix not in unknow_col_index:
-                prcssed_row.append(row[ix])
-        processed_rows.append(prcssed_row)
-
-    return processed_rows
-
-
-def preprocess_table(csv_file) -> pd.DataFrame:
-    with open(csv_file, "r") as fobj:
-        reader = csv.reader(fobj)
-        rows = list(reader)
-
-        rows = process_1st_column(rows)
-        rows = process_column_names(rows)
-
-        output_df = pd.DataFrame(rows[1:], columns=rows[0])
-
-        return output_df
-
+    return df_table
 
 def preprocess_PK_csv_file(pk_csv_file: str):
     bn, extname = path.splitext(pk_csv_file)
@@ -161,7 +98,7 @@ def preprocess_PK_csv_file(pk_csv_file: str):
         return False
 
     dst_file = pk_csv_file
-    output_df = preprocess_table(orig_file)
+    output_df = preprocess_pk_summary_table(orig_file)
 
     # before write to csv file, remove the first column,
     output_df = output_df.iloc[:, 1:]

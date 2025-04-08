@@ -800,27 +800,6 @@ Bayesian pharmacokinetics parameters (all subjects). CL is clearance. Vdss is vo
 """
 
 
-@pytest.fixture(scope="module")
-def md_table_drug_22050870_table_3():
-    return """
-
-"""
-
-
-@pytest.fixture(scope="module")
-def md_table_list_22050870_table_3():
-    return """
-
-"""
-
-
-@pytest.fixture(scope="module")
-def md_table_aligned_22050870_table_3():
-    return """
-
-"""
-
-
 @pytest.fixture(scope="session", autouse=True)
 def prepare_logging():
     level = logging.INFO

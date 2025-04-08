@@ -1,0 +1,58 @@
+,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+0,Isoniazid,Isoniazid,Plasma,Children,N/A,N/A,20,AUC0–24,h∙mg/L,Geometric Mean,18.5,N/A,N/A,Range,5.1,47.4,0.888,2,Day
+1,Isoniazid,Isoniazid,Plasma,Children,N/A,N/A,6,C max,mg/L,Geometric Mean,4.6,N/A,N/A,Range,1.0,10.0,0.366,2,Day
+2,Isoniazid,Isoniazid,CSF,Children,N/A,N/A,6,C CSF0–2,mg/L,Geometric Mean,1.4,N/A,N/A,Range,0.5,6.1,N/A,2,Day
+3,Isoniazid,Isoniazid,CSF,Children,N/A,N/A,7,C CSF3–5,mg/L,Geometric Mean,1.6,N/A,N/A,Range,0.3,5.0,N/A,2,Day
+4,Isoniazid,Isoniazid,CSF,Children,N/A,N/A,7,C CSF6–8,mg/L,Geometric Mean,1.3,N/A,N/A,Range,1.2,4.3,N/A,2,Day
+5,Rifampicin,Rifampicin,Plasma,Children,N/A,N/A,20,AUC0–24,h∙mg/L,Geometric Mean,66.9,N/A,N/A,Range,21.7,118.6,0.442,2,Day
+6,Rifampicin,Rifampicin,Plasma,Children,N/A,N/A,6,C max,mg/L,Geometric Mean,9.4,N/A,N/A,Range,2.9,23.7,0.499,2,Day
+7,Rifampicin,Rifampicin,CSF,Children,N/A,N/A,6,C CSF0–2,mg/L,Geometric Mean,0.2,N/A,N/A,Range,0.1,0.4,N/A,2,Day
+8,Rifampicin,Rifampicin,CSF,Children,N/A,N/A,7,C CSF3–5,mg/L,Geometric Mean,0.3,N/A,N/A,Range,0.1,0.8,N/A,2,Day
+9,Rifampicin,Rifampicin,CSF,Children,N/A,N/A,7,C CSF6–8,mg/L,Geometric Mean,0.4,N/A,N/A,Range,0.1,1.4,N/A,2,Day
+10,Pyrazinamide,Pyrazinamide,Plasma,Children,N/A,N/A,20,AUC0–24,h∙mg/L,Geometric Mean,315.5,N/A,N/A,Range,100.6,599.0,0.482,2,Day
+11,Pyrazinamide,Pyrazinamide,Plasma,Children,N/A,N/A,6,C max,mg/L,Geometric Mean,37.7,N/A,N/A,Range,15.9,61.7,0.35,2,Day
+12,Pyrazinamide,Pyrazinamide,CSF,Children,N/A,N/A,6,C CSF0–2,mg/L,Geometric Mean,24.4,N/A,N/A,Range,11.1,54.9,N/A,2,Day
+13,Pyrazinamide,Pyrazinamide,CSF,Children,N/A,N/A,7,C CSF3–5,mg/L,Geometric Mean,30.0,N/A,N/A,Range,19.2,43.3,N/A,2,Day
+14,Pyrazinamide,Pyrazinamide,CSF,Children,N/A,N/A,7,C CSF6–8,mg/L,Geometric Mean,19.6,N/A,N/A,Range,7.2,37.7,N/A,2,Day
+15,Isoniazid,Isoniazid,Plasma,Children,N/A,N/A,12,AUC0–24,h∙mg/L,Mean,14.5,N/A,N/A,Range,5.9,44.2,0.888,10,Day
+16,Isoniazid,Isoniazid,Plasma,Children,N/A,N/A,6,C max,mg/L,Mean,4.7,N/A,N/A,Range,2.5,13.6,0.366,10,Day
+17,Isoniazid,Isoniazid,CSF,Children,N/A,N/A,6,C CSF0–2,mg/L,Mean,1.6,N/A,N/A,Range,1.2,2.5,N/A,10,Day
+18,Isoniazid,Isoniazid,CSF,Children,N/A,N/A,7,C CSF3–5,mg/L,Mean,1.7,N/A,N/A,Range,0.6,5.0,N/A,10,Day
+19,Isoniazid,Isoniazid,CSF,Children,N/A,N/A,7,C CSF6–8,mg/L,Mean,2.3,N/A,N/A,Range,1.9,2.8,N/A,10,Day
+20,Rifampicin,Rifampicin,Plasma,Children,N/A,N/A,12,AUC0–24,h∙mg/L,Mean,71.8,N/A,N/A,Range,36.1,116.5,0.442,10,Day
+21,Rifampicin,Rifampicin,Plasma,Children,N/A,N/A,6,C max,mg/L,Mean,10.4,N/A,N/A,Range,5.7,23.3,0.499,10,Day
+22,Rifampicin,Rifampicin,CSF,Children,N/A,N/A,6,C CSF0–2,mg/L,N/A,N/A,N/A,N/A,Range,0.1,0.1,N/A,10,Day
+23,Rifampicin,Rifampicin,CSF,Children,N/A,N/A,7,C CSF3–5,mg/L,Mean,0.1,N/A,N/A,Range,0.1,0.3,N/A,10,Day
+24,Rifampicin,Rifampicin,CSF,Children,N/A,N/A,7,C CSF6–8,mg/L,Mean,0.2,N/A,N/A,Range,0.1,0.7,N/A,10,Day
+25,Pyrazinamide,Pyrazinamide,Plasma,Children,N/A,N/A,12,AUC0–24,h∙mg/L,Mean,328.4,N/A,N/A,Range,143.3,1477.7,0.482,10,Day
+26,Pyrazinamide,Pyrazinamide,Plasma,Children,N/A,N/A,6,C max,mg/L,Mean,40.5,N/A,N/A,Range,22.7,88.4,0.35,10,Day
+27,Pyrazinamide,Pyrazinamide,CSF,Children,N/A,N/A,6,C CSF0–2,mg/L,Mean,25.6,N/A,N/A,Range,21.3,37.1,N/A,10,Day
+28,Pyrazinamide,Pyrazinamide,CSF,Children,N/A,N/A,7,C CSF3–5,mg/L,Mean,24.7,N/A,N/A,Range,15.9,38.1,N/A,10,Day
+29,Pyrazinamide,Pyrazinamide,CSF,Children,N/A,N/A,7,C CSF6–8,mg/L,Mean,39.4,N/A,N/A,Range,23.1,70.8,N/A,10,Day
+30,Isoniazid,Isoniazid,Plasma,Children,N/A,N/A,N/A,C max,mg/L,Mean,-0.020,N/A,N/A,Range,-0.043,0.003,#,N/A,N/A
+31,Isoniazid,Isoniazid,Plasma,Children,N/A,N/A,N/A,AUC0–24,hour∙mg/L,Regression Coefficient,-0.002,N/A,N/A,Range,-0.006,0.003,N/A,N/A,N/A
+32,Isoniazid,Isoniazid,Plasma,Children,N/A,N/A,N/A,C max,mg/L,Regression Coefficient,-0.004,N/A,N/A,Range,-0.009,0.001,N/A,N/A,N/A
+33,Isoniazid,Isoniazid,CSF,Children,N/A,N/A,N/A,C CSF0–8,mg/L,Regression Coefficient,-0.007,N/A,N/A,Range,-0.015,0.001,#,N/A,N/A
+34,Isoniazid,Isoniazid,Plasma,Children,N/A,N/A,N/A,AUC0–24,hour∙mg/L,Mean,0.016,N/A,N/A,Range,-0.048,0.080,N/A,N/A,N/A
+35,Isoniazid,Isoniazid,CSF,Children,N/A,N/A,N/A,C CSF0–8,mg/L,Mean,0.046,N/A,N/A,Range,-0.058,0.151,N/A,N/A,N/A
+36,Rifampicin,Rifampicin,Plasma,Children,N/A,N/A,N/A,AUC0–24,hour∙mg/L,Mean,0.439,N/A,N/A,Range,0.143,0.735,**,N/A,N/A
+37,Rifampicin,Rifampicin,Plasma,Children,N/A,N/A,N/A,C max,mg/L,Mean,0.130,N/A,N/A,Range,-0.160,0.420,N/A,N/A,N/A
+38,Rifampicin,Rifampicin,CSF,Children,N/A,N/A,N/A,C CSF0–8,mg/L,Mean,0.289,N/A,N/A,Range,-0.197,0.775,N/A,N/A,N/A
+39,Rifampicin,Rifampicin,Plasma,Children,N/A,N/A,N/A,AUC0–24,hour∙mg/L,Mean,-0.009,N/A,N/A,Range,-0.028,0.010,N/A,N/A,N/A
+40,Rifampicin,Rifampicin,Plasma,Children,N/A,N/A,N/A,C max,mg/L,Mean,-0.008,N/A,N/A,Range,-0.029,0.012,N/A,N/A,N/A
+41,Rifampicin,Rifampicin,CSF,Children,N/A,N/A,N/A,C CSF0–8,mg/L,Mean,-0.021,N/A,N/A,Range,-0.052,0.009,N/A,N/A,N/A
+42,Rifampicin,Rifampicin,Plasma,Children,N/A,N/A,N/A,AUC0–24,hour∙mg/L,Regression Coefficient,-0.003,N/A,N/A,Range,-0.007,0.001,N/A,N/A,N/A
+43,Rifampicin,Rifampicin,Plasma,Children,N/A,N/A,N/A,C max,mg/L,Regression Coefficient,-0.005,N/A,N/A,Range,-0.009,-0.0003,<0.05,N/A,N/A
+44,Rifampicin,Rifampicin,Plasma,Children,N/A,N/A,N/A,AUC0–24,hour∙mg/L,Mean,0.014,N/A,N/A,Range,-0.021,0.048,N/A,N/A,N/A
+45,Rifampicin,Rifampicin,CSF,Children,N/A,N/A,N/A,C CSF0–8,mg/L,Mean,0.030,N/A,N/A,Range,-0.030,0.091,N/A,N/A,N/A
+46,Rifampicin,Rifampicin,Plasma,Children,N/A,N/A,N/A,C max,mg/L,Mean,0.067,N/A,N/A,Range,-0.194,0.328,N/A,N/A,N/A
+47,Rifampicin,Rifampicin,CSF,Children,N/A,N/A,N/A,C CSF0–8,mg/L,Mean,0.019,N/A,N/A,Range,-0.365,0.403,N/A,N/A,N/A
+48,Pyrazinamide,Pyrazinamide,Plasma,Children,N/A,N/A,N/A,AUC0–24,hour∙mg/L,Regression Coefficient,-0.006,N/A,N/A,Range,-0.010,-0.003,**,N/A,N/A
+49,Pyrazinamide,Pyrazinamide,Plasma,Children,N/A,N/A,N/A,C max,mg/L,Regression Coefficient,-0.003,N/A,N/A,Range,-0.005,-0.001,**,N/A,N/A
+50,Pyrazinamide,Pyrazinamide,CSF,Children,N/A,N/A,N/A,C CSF0–8,mg/L,Regression Coefficient,-0.006,N/A,N/A,Range,-0.010,-0.003,**,N/A,N/A
+51,Pyrazinamide,Pyrazinamide,Plasma,Children,N/A,N/A,N/A,AUC0–24,hour∙mg/L,N/A,0.010,N/A,N/A,Range,-0.006,0.027,N/A,N/A,N/A
+52,Pyrazinamide,Pyrazinamide,Plasma,Children,N/A,N/A,N/A,C max,mg/L,N/A,0.010,N/A,N/A,Range,0.001,0.020,*,N/A,N/A
+53,Pyrazinamide,Pyrazinamide,CSF,Children,N/A,N/A,N/A,C CSF0–8,mg/L,N/A,0.010,N/A,N/A,Range,-0.006,0.027,N/A,N/A,N/A
+54,Pyrazinamide,Pyrazinamide,Plasma,Children,N/A,N/A,N/A,AUC0–24,hour∙mg/L,Mean,-0.068,N/A,N/A,Range,-0.293,0.156,N/A,N/A,N/A
+55,Pyrazinamide,Pyrazinamide,Plasma,Children,N/A,N/A,N/A,C max,mg/L,Mean,0.036,N/A,N/A,Range,-0.095,0.167,N/A,N/A,N/A
+56,Pyrazinamide,Pyrazinamide,CSF,Children,N/A,N/A,N/A,C CSF0–8,mg/L,Mean,-0.068,N/A,N/A,Range,-0.293,0.156,N/A,N/A,N/A

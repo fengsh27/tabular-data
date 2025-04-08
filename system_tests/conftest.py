@@ -381,6 +381,26 @@ def md_table_aligned_29943508():
 | Mean AUC 0‐120\xa0min for fentanyl in maternal serum (nmol\xa0h/L) | 0.428 (0.162) (n\xa0=\xa018) | 0.590 (0.197) (n\xa0=\xa015) | −0.162 [−0.289; −0.034] | .015 |
 """
 
+@pytest.fixture(scope="module")
+def md_table_drug_29943508_table_1():
+    return """
+| Drug name | Analyte | Specimen |
+| --- | --- | --- |
+| Fentanyl | Fentanyl | Umbilical vein |
+| Fentanyl | Fentanyl | Maternal serum |
+"""
+
+@pytest.fixture(scope="module")
+def md_table_aligned_29943508_table_1():
+    return """
+| Parameter type | Mean serum fentanyl concentration, umbilical vein (nmol/L) | Median maternal serum fentanyl concentration at birth (nmol/L) | Mean AUC 0‐120 min for fentanyl in maternal serum (nmol h/L) |
+| --- | --- | --- | --- |
+| Adrenaline group (n = 19) | 0.162 (0.090) (n = 16) | 0.268 [0.193; 0.493]a (n = 16) | 0.428 (0.162) (n = 18) |
+| Control group (n = 20) | 0.151 (0.070) (n = 20) | 0.291 [0.212; 0.502]a (n = 19) | 0.590 (0.197) (n = 15)b |
+| Mean difference | 0.012 [−0.042; 0.065] | −0.061 [−0.205; 0.082] | −0.162 [−0.289; −0.034] |
+| P‐value | .67 | .66a | .015 |
+"""
+
 
 @pytest.fixture(scope="module")
 def col_mapping_29943508():
@@ -969,27 +989,6 @@ def html_content_22050870_table_3():
 def caption_22050870_table_3():
     return """
 Bayesian pharmacokinetics parameters (all subjects). CL is clearance. Vdss is volume of distribution at steady state. Beta is the terminal slope of the log concentration versus time profile. T½ Beta is the elimination half-life.
-"""
-
-
-@pytest.fixture(scope="module")
-def md_table_drug_22050870_table_3():
-    return """
-
-"""
-
-
-@pytest.fixture(scope="module")
-def md_table_list_22050870_table_3():
-    return """
-
-"""
-
-
-@pytest.fixture(scope="module")
-def md_table_aligned_22050870_table_3():
-    return """
-
 """
 
 

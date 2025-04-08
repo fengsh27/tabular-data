@@ -3,6 +3,7 @@ import pandas as pd
 from .constant import BASELINE, BenchmarkType, LLModelType
 from .pk_preprocess import (
     preprocess_table as pk_preprocess_table,
+    preprocess_pk_summary_table,
 )
 from .pe_preprocess import (
     preprocess_table as pe_proprocess_table,
@@ -23,7 +24,7 @@ def run_semantic_benchmark(
     result_file: str,
 ):
     preprocess_table, evaluate_dataframe = (
-        (pk_preprocess_table, pk_summary_evaluate_dataframe)
+        (preprocess_pk_summary_table, pk_summary_evaluate_dataframe)
         if benchmark_type == BenchmarkType.PK_SUMMARY
         else (pe_proprocess_table, pe_summary_evaluate_dataframe)
     )
