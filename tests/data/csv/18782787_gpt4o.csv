@@ -1,0 +1,55 @@
+,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+0,Fenoldopam,SAP,N/A,N/A,N/A,N/A,N/A,SAP,mmHg,Median,74,N/A,N/A,Range,68,80,0.35,N/A,N/A
+1,Fenoldopam,HR,N/A,N/A,N/A,N/A,N/A,HR,b/min,Median,161,N/A,N/A,Range,149,175,0.53,N/A,N/A
+2,Fenoldopam,CVP,N/A,N/A,N/A,N/A,N/A,CVP,mmHg,Median,7,N/A,N/A,Range,6.5,10,0.8,N/A,N/A
+3,Fenoldopam,IS,N/A,N/A,N/A,N/A,N/A,IS,N/A,Median,22,N/A,N/A,Range,13.5,27.5,0.44,N/A,N/A
+4,Fenoldopam,Lactates,N/A,N/A,N/A,N/A,N/A,Lactates,mmol/l,Median,2.7,N/A,N/A,Range,1.7,4.1,0.056,N/A,N/A
+5,Fenoldopam,Serum Na+,Serum,N/A,N/A,N/A,N/A,Serum Na+,mEq/l,Median,144,N/A,N/A,Range,142,146.5,0.36,N/A,N/A
+6,Fenoldopam,Urine Na+,Urine,N/A,N/A,N/A,N/A,Urine Na+,mEq/l,Median,111,N/A,N/A,Range,70.5,122,0.77,N/A,N/A
+7,Fenoldopam,Serum K+,Serum,N/A,N/A,N/A,N/A,Serum K+,mEq/l,Median,3.05,N/A,N/A,Range,2.85,3.45,0.66,N/A,N/A
+8,Fenoldopam,Urine K+,Urine,N/A,N/A,N/A,N/A,Urine K+,mEq/l,Median,23.05,N/A,N/A,Range,13,51,0.7,N/A,N/A
+9,Fenoldopam,SAP,N/A,N/A,N/A,N/A,N/A,SAP,mmHg,Median,77.5,N/A,N/A,Range,71.5,90,0.35,N/A,N/A
+10,Fenoldopam,HR,N/A,N/A,N/A,N/A,N/A,HR,b/min,Median,155,N/A,N/A,Range,145,171,0.53,N/A,N/A
+11,Fenoldopam,CVP,N/A,N/A,N/A,N/A,N/A,CVP,mmHg,Median,7.5,N/A,N/A,Range,6,9,0.8,N/A,N/A
+12,Fenoldopam,IS,N/A,N/A,N/A,N/A,N/A,IS,N/A,Median,22.5,N/A,N/A,Range,15,29,0.44,N/A,N/A
+13,Fenoldopam,Lactates,N/A,N/A,N/A,N/A,N/A,Lactates,mmol/l,Median,1.9,N/A,N/A,Range,1.2,3.4,0.056,N/A,N/A
+14,Fenoldopam,Serum Na+,Serum,N/A,N/A,N/A,N/A,Serum Na+,mEq/l,Median,143,N/A,N/A,Range,141,146,0.36,N/A,N/A
+15,Fenoldopam,Urine Na+,Urine,N/A,N/A,N/A,N/A,Urine Na+,mEq/l,Median,104,N/A,N/A,Range,79,117,0.77,N/A,N/A
+16,Fenoldopam,Serum K+,Serum,N/A,N/A,N/A,N/A,Serum K+,mEq/l,Median,3.1,N/A,N/A,Range,2.75,3.4,0.66,N/A,N/A
+17,Fenoldopam,Urine K+,Urine,N/A,N/A,N/A,N/A,Urine K+,mEq/l,Median,23,N/A,N/A,Range,17,35,0.7,N/A,N/A
+18,Fenoldopam,SAP,N/A,N/A,N/A,N/A,N/A,SAP,mmHg,Median,86,N/A,N/A,Range,74,102,0.35,N/A,N/A
+19,Fenoldopam,HR,N/A,N/A,N/A,N/A,N/A,HR,b/min,Median,162,N/A,N/A,Range,146,176,0.53,N/A,N/A
+20,Fenoldopam,CVP,N/A,N/A,N/A,N/A,N/A,CVP,mmHg,Median,8,N/A,N/A,Range,7,9,0.8,N/A,N/A
+21,Fenoldopam,IS,N/A,N/A,N/A,N/A,N/A,IS,N/A,Median,19.5,N/A,N/A,Range,13.5,22.5,0.44,N/A,N/A
+22,Fenoldopam,Lactates,N/A,N/A,N/A,N/A,N/A,Lactates,mmol/l,Median,1.4,N/A,N/A,Range,0.9,2.2,0.056,N/A,N/A
+23,Fenoldopam,Serum Na+,Serum,N/A,N/A,N/A,N/A,Serum Na+,mEq/l,Median,140.5,N/A,N/A,Range,138,141.5,0.36,N/A,N/A
+24,Fenoldopam,Urine Na+,Urine,N/A,N/A,N/A,N/A,Urine Na+,mEq/l,Median,104.5,N/A,N/A,Range,71.5,128.5,0.77,N/A,N/A
+25,Fenoldopam,Serum K+,Serum,N/A,N/A,N/A,N/A,Serum K+,mEq/l,Median,3.05,N/A,N/A,Range,2.7,3.4,0.66,N/A,N/A
+26,Fenoldopam,Urine K+,Urine,N/A,N/A,N/A,N/A,Urine K+,mEq/l,Median,18,N/A,N/A,Range,8,42,0.7,N/A,N/A
+27,Fenoldopam,SAP,N/A,N/A,N/A,N/A,N/A,SAP,mmHg,Median,77,N/A,N/A,Range,68.5,90,0.35,N/A,N/A
+28,Fenoldopam,HR,N/A,N/A,N/A,N/A,N/A,HR,b/min,Median,158,N/A,N/A,Range,145,172,0.53,N/A,N/A
+29,Fenoldopam,CVP,N/A,N/A,N/A,N/A,N/A,CVP,mmHg,Median,6.5,N/A,N/A,Range,5.5,9.5,0.8,N/A,N/A
+30,Fenoldopam,IS,N/A,N/A,N/A,N/A,N/A,IS,N/A,Median,18,N/A,N/A,Range,14,23,0.44,N/A,N/A
+31,Fenoldopam,Lactates,N/A,N/A,N/A,N/A,N/A,Lactates,mmol/l,Median,1.2,N/A,N/A,Range,0.9,1.6,0.056,N/A,N/A
+32,Fenoldopam,Serum Na+,Serum,N/A,N/A,N/A,N/A,Serum Na+,mEq/l,Median,142,N/A,N/A,Range,140,144.5,0.36,N/A,N/A
+33,Fenoldopam,Urine Na+,Urine,N/A,N/A,N/A,N/A,Urine Na+,mEq/l,Median,87,N/A,N/A,Range,58,105,0.77,N/A,N/A
+34,Fenoldopam,Serum K+,Serum,N/A,N/A,N/A,N/A,Serum K+,mEq/l,Median,2.95,N/A,N/A,Range,2.85,3.2,0.66,N/A,N/A
+35,Fenoldopam,Urine K+,Urine,N/A,N/A,N/A,N/A,Urine K+,mEq/l,Median,29.5,N/A,N/A,Range,12.5,36.5,0.7,N/A,N/A
+36,Fenoldopam,SAP,N/A,N/A,N/A,N/A,N/A,SAP,mmHg,Median,82.5,N/A,N/A,Range,75,92,0.35,N/A,N/A
+37,Fenoldopam,HR,N/A,N/A,N/A,N/A,N/A,HR,b/min,Median,158,N/A,N/A,Range,151,162,0.53,N/A,N/A
+38,Fenoldopam,CVP,N/A,N/A,N/A,N/A,N/A,CVP,mmHg,Median,8,N/A,N/A,Range,6,9,0.8,N/A,N/A
+39,Fenoldopam,IS,N/A,N/A,N/A,N/A,N/A,IS,N/A,Median,14,N/A,N/A,Range,7.5,21.5,0.44,N/A,N/A
+40,Fenoldopam,Lactates,N/A,N/A,N/A,N/A,N/A,Lactates,mmol/l,Median,1.1,N/A,N/A,Range,0.8,1.9,0.056,N/A,N/A
+41,Fenoldopam,Serum Na+,Serum,N/A,N/A,N/A,N/A,Serum Na+,mEq/l,Median,139,N/A,N/A,Range,137,141,0.36,N/A,N/A
+42,Fenoldopam,Urine Na+,Urine,N/A,N/A,N/A,N/A,Urine Na+,mEq/l,Median,94,N/A,N/A,Range,84,105,0.77,N/A,N/A
+43,Fenoldopam,Serum K+,Serum,N/A,N/A,N/A,N/A,Serum K+,mEq/l,Median,2.9,N/A,N/A,Range,2.8,3.2,0.66,N/A,N/A
+44,Fenoldopam,Urine K+,Urine,N/A,N/A,N/A,N/A,Urine K+,mEq/l,Median,20,N/A,N/A,Range,13,28,0.7,N/A,N/A
+45,Fenoldopam,SAP,N/A,N/A,N/A,N/A,N/A,SAP,mmHg,Median,78.5,N/A,N/A,Range,75,89.5,0.35,N/A,N/A
+46,Fenoldopam,HR,N/A,N/A,N/A,N/A,N/A,HR,b/min,Median,154,N/A,N/A,Range,142,158,0.53,N/A,N/A
+47,Fenoldopam,CVP,N/A,N/A,N/A,N/A,N/A,CVP,mmHg,Median,8,N/A,N/A,Range,6,10,0.8,N/A,N/A
+48,Fenoldopam,IS,N/A,N/A,N/A,N/A,N/A,IS,N/A,Median,18.4,N/A,N/A,Range,10.5,26.5,0.44,N/A,N/A
+49,Fenoldopam,Lactates,N/A,N/A,N/A,N/A,N/A,Lactates,mmol/l,Median,0.95,N/A,N/A,Range,0.8,1.55,0.056,N/A,N/A
+50,Fenoldopam,Serum Na+,Serum,N/A,N/A,N/A,N/A,Serum Na+,mEq/l,Median,141.5,N/A,N/A,Range,137,144,0.36,N/A,N/A
+51,Fenoldopam,Urine Na+,Urine,N/A,N/A,N/A,N/A,Urine Na+,mEq/l,Median,85.5,N/A,N/A,Range,58,115.5,0.77,N/A,N/A
+52,Fenoldopam,Serum K+,Serum,N/A,N/A,N/A,N/A,Serum K+,mEq/l,Median,2.6,N/A,N/A,Range,2.5,2.7,0.66,N/A,N/A
+53,Fenoldopam,Urine K+,Urine,N/A,N/A,N/A,N/A,Urine K+,mEq/l,Median,28,N/A,N/A,Range,22,31,0.7,N/A,N/A

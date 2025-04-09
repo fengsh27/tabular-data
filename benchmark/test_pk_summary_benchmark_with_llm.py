@@ -5,16 +5,13 @@ import logging
 from benchmark.comm_llm import run_llm_benchmark
 
 from .common import (
-    ensure_target_result_directory_existed, 
+    ensure_target_result_directory_existed,
     prepare_dataset_for_benchmark,
 )
-from .constant import (
-    BASELINE,
-    BenchmarkType,
-    LLModelType
-)
+from .constant import BASELINE, BenchmarkType, LLModelType
 
 logger = logging.getLogger(__name__)
+
 
 @pytest.mark.skip("just for test the feasible of claude api")
 def test_claude(client):
@@ -23,18 +20,18 @@ def test_claude(client):
         max_tokens=4096,
         temperature=0.0,
         system="Respond only in Yoda-speak.",
-        messages=[
-            {"role": "user", "content": "How are you today?"}
-        ]
+        messages=[{"role": "user", "content": "How are you today?"}],
     )
-    
+
     print(msg)
     assert msg is not None
+
 
 baseline = os.environ.get("BASELINE", BASELINE)
 target = os.environ.get("TARGET", "yichuan/0213_prompt_chain")
 baseline_dir = os.path.join("./benchmark/data/pk-summary", baseline)
 target_dir = os.path.join("./benchmark/data/pk-summary", target)
+
 
 @pytest.fixture(scope="module")
 def prepared_dataset():
@@ -43,6 +40,7 @@ def prepared_dataset():
         target_dir=target_dir,
         benchmark_type=BenchmarkType.PK_SUMMARY,
     )
+
 
 @pytest.fixture(scope="module")
 def ensured_result_path():
@@ -53,6 +51,7 @@ def ensured_result_path():
     )
     return os.path.join(result_dir, "result.log")
 
+
 def test_gpt4o_benchmark(client, prepared_dataset, ensured_result_path):
     run_llm_benchmark(
         dataset=prepared_dataset,
@@ -61,7 +60,8 @@ def test_gpt4o_benchmark(client, prepared_dataset, ensured_result_path):
         result_file=ensured_result_path,
         client=client,
     )
-    
+
+
 def test_gemini15_benchmark(client, prepared_dataset, ensured_result_path):
     run_llm_benchmark(
         dataset=prepared_dataset,
@@ -70,4 +70,3 @@ def test_gemini15_benchmark(client, prepared_dataset, ensured_result_path):
         result_file=ensured_result_path,
         client=client,
     )
-    

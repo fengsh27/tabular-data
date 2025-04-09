@@ -1,0 +1,16 @@
+﻿,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+0,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Volume of distribution,L,Mean,3.62,SD,1.94,Range,0.31,8.88,N/A,N/A,N/A
+1,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Volume of distribution per body weight,L/kg,Mean,0.70,SD,0.48,Range,0.28,2.31,N/A,N/A,N/A
+2,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Clearance,L/h,Mean,0.749,SD,0.454,Range,0.020,1.820,N/A,N/A,N/A
+3,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Clearance per body weight,L/h/kg,Mean,0.124,SD,0.052,Range,0.025,0.268,N/A,N/A,N/A
+4,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Half-life,h,Mean,4.3,SD,2.6,Range,1.5,11.3,N/A,N/A,N/A
+5,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Volume of distribution,L,Mean,3.62,CV%,53,Range,0.31,8.88,N/A,N/A,N/A
+6,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Volume of distribution per body weight,L/kg,Mean,0.70,CV%,69,Range,0.28,2.31,N/A,N/A,N/A
+7,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Clearance,L/h,Mean,0.749,CV%,61,Range,0.020,1.820,N/A,N/A,N/A
+8,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Clearance per body weight,L/h/kg,Mean,0.124,CV%,42,Range,0.025,0.268,N/A,N/A,N/A
+9,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Half-life,h,Mean,4.3,CV%,61,Range,1.5,11.3,N/A,N/A,N/A
+10,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Volume of distribution,L,Median,3.50,CV%,53,Range,2.64,4.35,N/A,N/A,N/A
+11,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Volume of distribution per body weight,L/kg,Median,0.50,CV%,69,Range,0.39,0.94,N/A,N/A,N/A
+12,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Clearance,L/h,Median,0.737,CV%,61,Range,0.414,0.955,N/A,N/A,N/A
+13,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Clearance per body weight,L/h/kg,Median,0.112,CV%,42,Range,0.095,0.133,N/A,N/A,N/A
+14,N/A,N/A,N/A,N/A,N/A,N/A,N/A,Half-life,h,Median,3.8,CV%,61,Range,2.5,5.4,N/A,N/A,N/A

@@ -1,6 +1,5 @@
 import os
 import shutil
-from typing import List, Optional
 import os.path as path
 import csv
 import pandas as pd
@@ -29,22 +28,22 @@ PK_COLUMNS = [
     "High limit",
 ]
 LOWER_PK_COLUMNS = [
-    'drug name', 
-    'analyte', 
-    'specimen', 
-    'population', 
-    'pregnancy stage', 
-    'summary statistics', 
-    'parameter type', 
-    'value', 
-    'unit', 
-    'subject n', 
-    'variation value', 
-    'variation type', 
-    'p value', 
-    'interval type', 
-    'lower limit', 
-    'high limit'
+    "drug name",
+    "analyte",
+    "specimen",
+    "population",
+    "pregnancy stage",
+    "summary statistics",
+    "parameter type",
+    "value",
+    "unit",
+    "subject n",
+    "variation value",
+    "variation type",
+    "p value",
+    "interval type",
+    "lower limit",
+    "high limit",
 ]
 PK_COLUMNS_MAP = [
     ("P-value", "P value"),
@@ -53,93 +52,40 @@ PK_COLUMNS_MAP = [
     ("Interval low", "Lower limit"),
     ("interval high", "High limit"),
     ("Variability statistic", "Variation type"),
-    ('Summary Statistic', "Summary Statistics"),
+    ("Summary Statistic", "Summary statistics"),
+    ("Parameter unit", "Unit"),
+    ("Parameter statistic", "Summary statistics"),
+    ("Parameter value", "Value"),
+    ("Lower bound", "Lower limit"),
+    ("Upper bound", "High limit"),
 ]
-
-def process_1st_column(rows: List[List[str]]):
-    headers = rows[0]
-    if headers[0].lower() == LOWER_PK_COLUMNS[0]:
-        # no NO. column in table
-        prc_rows = []
-        for ix, row in enumerate(rows):
-            prc_row = []
-            if ix == 0:
-                prc_row.append('')
-            else:
-                prc_row.append(ix-1)
-            prc_row = prc_row + row
-            prc_rows.append(prc_row)
-        return prc_rows
-
-    for ix, row in enumerate(rows):
-        if ix == 0:
-            row[0] = ""
-        else:
-            row[0] = ix - 1
     
-    return rows
+def ensure_columns(df_table: pd.DataFrame) -> pd.DataFrame:
+    """ Normalize pk summary columns """
+    col_map = {}
+    for item in PK_COLUMNS_MAP:
+        col_map[item[0]] = item[1]
 
-def process_column_names(rows: List[List[str]]):
-    unknow_col_index = []
+    df_table = df_table.rename(columns=col_map)
+    df_table = df_table[df_table.columns.intersection(PK_COLUMNS)]
 
-    for ix in range(len(rows[0])):
-        column = rows[0][ix]
-        if ix == 0:
-            continue
-        found = False
-        if len(column.strip()) == 0:
-            print(f"Error: the {ix}th column is empty")
-            unknow_col_index.append(ix)
-            continue
-        # Normalize column names
-        try:
-            col_ix = LOWER_PK_COLUMNS.index(column.strip().lower())
-            rows[0][ix] = PK_COLUMNS[col_ix]
-            found = True
-        except ValueError:
-            found = False
+    return df_table
 
-        # Map column name
-        if not found:
-            pair = next(( x for x in PK_COLUMNS_MAP if x[0].lower() == column.strip().lower() ), None)
-            if pair is not None:
-                rows[0][ix] = pair[1]
-                found = True
-            # for pk_col_map in PK_COLUMNS_MAP:
-            #     if column.strip().lower() == pk_col_map[0].lower():
-            #         rows[0][ix] = pk_col_map[1]
-            #         found = True
-            #         break
-        if not found:
-            print(f"Error: can't find column {column}")
-            unknow_col_index.append(ix)
+def ensure_NO_column(df_table: pd.DataFrame) -> pd.DataFrame:
+    """ Ensure the first column is "NO." column """
+    if df_table.columns[0].lower() == LOWER_PK_COLUMNS[0]:
+        # No "NO." column
+        df_table.insert(0, "NO.", range(len(df_table)))
     
-    if len(unknow_col_index) == 0:
-        return rows
+    return df_table
     
-    processed_rows = []
-    for row in rows:
-        prcssed_row = []
-        for ix in range(len(row)):
-            if ix not in unknow_col_index:
-                prcssed_row.append(row[ix])
-        processed_rows.append(prcssed_row)
+def preprocess_pk_summary_table(csv_file: str) -> pd.DataFrame:
+    """ preprocess pk summary table """
+    df_table = pd.read_csv(csv_file)
+    df_table = ensure_columns(df_table)
+    df_table = ensure_NO_column(df_table)    
 
-    return processed_rows
-
-
-def preprocess_table(csv_file) -> pd.DataFrame:
-    with open(csv_file, "r") as fobj:
-        reader = csv.reader(fobj)
-        rows = list(reader)
-        
-        rows = process_1st_column(rows)
-        rows = process_column_names(rows)
-
-        output_df = pd.DataFrame(rows[1:], columns=rows[0])
-
-        return output_df
-    
+    return df_table
 
 def preprocess_PK_csv_file(pk_csv_file: str):
     bn, extname = path.splitext(pk_csv_file)
@@ -152,22 +98,24 @@ def preprocess_PK_csv_file(pk_csv_file: str):
         return False
 
     dst_file = pk_csv_file
-    output_df = preprocess_table(orig_file)
+    output_df = preprocess_pk_summary_table(orig_file)
 
     # before write to csv file, remove the first column,
     output_df = output_df.iloc[:, 1:]
-    output_df.to_csv(dst_file, sep=',')
+    output_df.to_csv(dst_file, sep=",")
     return True
 
-def preprocess_PK_csv_files(pk_csv_files: List[str]):
+
+def preprocess_PK_csv_files(pk_csv_files: list[str]):
     for f in pk_csv_files:
         res = preprocess_PK_csv_file(f)
         if not res:
             print(f"Failed to pre-process file: {f}")
 
+
 def process_single_file():
     import argparse
-    from os import path
+
     parser = argparse.ArgumentParser()
     parser.add_argument("csv_file", help="csv file path to be pre-processed")
     args = vars(parser.parse_args())
@@ -177,14 +125,11 @@ def process_single_file():
 
 
 def process_multiple_files():
-    import argparse
-    from os import path
-    
     pk_files = [
         "./benchmark/data/pk-summary/baseline/A/18394772_baseline.csv",
     ]
     preprocess_PK_csv_files(pk_files)
-    
+
+
 if __name__ == "__main__":
     process_single_file()
-

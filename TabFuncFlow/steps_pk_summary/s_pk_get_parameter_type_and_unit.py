@@ -24,12 +24,17 @@ from TabFuncFlow.operations.f_transpose import *
 #     <<(["Parameter type 1", "Parameter type 2", ...], ["Unit 1", "Unit 2", ...])>>
 # """
 
-def s_pk_get_parameter_type_and_unit_prompt(md_table_aligned, match_dict, md_table, caption):
+
+def s_pk_get_parameter_type_and_unit_prompt(
+    md_table_aligned, match_dict, md_table, caption
+):
     # md_table = re.sub(r'[^\x00-\x7F]+', '', md_table)
     parameter_type_count = list(match_dict.values()).count("Parameter type")
     # parameter_unit_count = list(match_dict.values()).count("Parameter unit")
     if parameter_type_count == 1:
-        key_with_parameter_type = [key for key, value in match_dict.items() if value == "Parameter type"][0]
+        key_with_parameter_type = [
+            key for key, value in match_dict.items() if value == "Parameter type"
+        ][0]
         return f"""
 The following main table contains pharmacokinetics (PK) data:  
 {display_md_table(md_table_aligned)}
@@ -52,40 +57,62 @@ Carefully analyze the table and follow these steps:
 
 
 def s_pk_get_parameter_type_and_unit_parse(content, usage):
-    content = content.replace('\n', '')
-    matches = re.findall(r'<<.*?>>', content)
+    content = content.replace("\n", "")
+    matches = re.findall(r"<<.*?>>", content)
     match_angle = matches[-1] if matches else None
 
     if match_angle:
         try:
-            match_tuple = ast.literal_eval(match_angle[2:-2])  # Extract tuple from `<<(...)>>`
+            match_tuple = ast.literal_eval(
+                match_angle[2:-2]
+            )  # Extract tuple from `<<(...)>>`
             if not isinstance(match_tuple, tuple) or len(match_tuple) != 2:
-                raise ValueError(f"Parsed content is not a valid (type, unit) tuple: {match_tuple}", f"\n{content}", f"\n<<{usage}>>")
+                raise ValueError(
+                    f"Parsed content is not a valid (type, unit) tuple: {match_tuple}",
+                    f"\n{content}",
+                    f"\n<<{usage}>>",
+                )
             return match_tuple
         except (SyntaxError, ValueError) as e:
-            raise ValueError(f"Failed to parse parameter type and unit: {e}", f"\n{content}", f"\n<<{usage}>>") from e
+            raise ValueError(
+                f"Failed to parse parameter type and unit: {e}",
+                f"\n{content}",
+                f"\n<<{usage}>>",
+            ) from e
     else:
         raise ValueError("No valid match_angle.", f"\n{content}", f"\n<<{usage}>>")
 
 
-def s_pk_get_parameter_type_and_unit(md_table_aligned, col_dict, md_table, caption, model_name="gemini_15_pro"):
+def s_pk_get_parameter_type_and_unit(
+    md_table_aligned, col_dict, md_table, caption, model_name="gemini_15_pro"
+):
     parameter_type_count = list(col_dict.values()).count("Parameter type")
     parameter_unit_count = list(col_dict.values()).count("Parameter unit")
     if parameter_type_count == 1 and parameter_unit_count == 1:
         return None, True, "Skipped", 0, False
     elif parameter_type_count == 1 and parameter_unit_count == 0:
-        msg = s_pk_get_parameter_type_and_unit_prompt(md_table_aligned, col_dict, md_table, caption)
+        msg = s_pk_get_parameter_type_and_unit_prompt(
+            md_table_aligned, col_dict, md_table, caption
+        )
 
-        messages = [msg, ]
+        messages = [
+            msg,
+        ]
         question = "Do not give the final result immediately. First, explain your thought process, then provide the answer."
 
-        res, content, usage, truncated = get_llm_response(messages, question, model=model_name)
+        res, content, usage, truncated = get_llm_response(
+            messages, question, model=model_name
+        )
 
         # print(usage, content)
         try:
             match_tuple = s_pk_get_parameter_type_and_unit_parse(content, usage)
         except Exception as e:
-            raise RuntimeError(f"Error in s_pk_get_parameter_type_and_unit_parse: {e}", f"\n{content}", f"\n<<{usage}>>") from e
+            raise RuntimeError(
+                f"Error in s_pk_get_parameter_type_and_unit_parse: {e}",
+                f"\n{content}",
+                f"\n<<{usage}>>",
+            ) from e
 
         # print("**********************")
         # print(match_tuple[0])
@@ -96,14 +123,21 @@ def s_pk_get_parameter_type_and_unit(md_table_aligned, col_dict, md_table, capti
         # print("**********************")
 
         if match_tuple is None:
-            raise ValueError("Parameter type and unit extraction failed: No valid tuple found.", f"\n{content}", f"\n<<{usage}>>")
+            raise ValueError(
+                "Parameter type and unit extraction failed: No valid tuple found.",
+                f"\n{content}",
+                f"\n<<{usage}>>",
+            )
         expected_rows = markdown_to_dataframe(md_table).shape[0]
         if len(match_tuple[0]) != expected_rows or len(match_tuple[1]) != expected_rows:
             raise ValueError(
-                f"Mismatch: Expected {expected_rows} rows, but got {len(match_tuple[0])} (types) and {len(match_tuple[1])} (units).", f"\n{content}", f"\n<<{usage}>>"
+                f"Mismatch: Expected {expected_rows} rows, but got {len(match_tuple[0])} (types) and {len(match_tuple[1])} (units).",
+                f"\n{content}",
+                f"\n<<{usage}>>",
             )
 
         return match_tuple, res, content, usage, truncated
     else:
-        raise ValueError(f"Invalid column configuration: {parameter_type_count} 'Parameter type' columns and {parameter_unit_count} 'Parameter unit' columns found.")
-
+        raise ValueError(
+            f"Invalid column configuration: {parameter_type_count} 'Parameter type' columns and {parameter_unit_count} 'Parameter unit' columns found."
+        )

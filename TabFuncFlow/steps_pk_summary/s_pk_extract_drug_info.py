@@ -23,8 +23,8 @@ Specimen is the type of sample.
 
 
 def s_pk_extract_drug_info_parse(content, usage):
-    content = content.replace('\n', '')
-    matches = re.findall(r'<<.*?>>', content)
+    content = content.replace("\n", "")
+    matches = re.findall(r"<<.*?>>", content)
     match_angle = matches[-1] if matches else None
 
     if match_angle:
@@ -32,33 +32,48 @@ def s_pk_extract_drug_info_parse(content, usage):
             match_list = ast.literal_eval(match_angle[2:-2])
             return match_list
         except Exception as e:
-            raise ValueError(f"Failed to parse extracted data: {e}", f"\n{content}", f"\n<<{usage}>>") from e
+            raise ValueError(
+                f"Failed to parse extracted data: {e}", f"\n{content}", f"\n<<{usage}>>"
+            ) from e
     else:
-        raise ValueError("No matching drug info found in content.", f"\n{content}", f"\n<<{usage}>>")
+        raise ValueError(
+            "No matching drug info found in content.", f"\n{content}", f"\n<<{usage}>>"
+        )
 
 
 def s_pk_extract_drug_info(md_table, caption, model_name="gemini_15_pro"):
     msg = s_pk_extract_drug_info_prompt(md_table, caption)
 
-    messages = [msg, ]
+    messages = [
+        msg,
+    ]
     question = "Do not give the final result immediately. First, explain your thought process, then provide the answer."
 
-    res, content, usage, truncated = get_llm_response(messages, question, model=model_name)
+    res, content, usage, truncated = get_llm_response(
+        messages, question, model=model_name
+    )
     # print(display_md_table(md_table))
     # print(usage, content)
 
     try:
         match_list = s_pk_extract_drug_info_parse(content, usage)
     except Exception as e:
-        raise RuntimeError(f"Error in s_pk_extract_drug_info_parse: {e}", f"\n{content}", f"\n<<{usage}>>") from e
+        raise RuntimeError(
+            f"Error in s_pk_extract_drug_info_parse: {e}",
+            f"\n{content}",
+            f"\n<<{usage}>>",
+        ) from e
 
     match_list = list(map(list, set(map(tuple, match_list))))
 
     if not match_list:
-        raise ValueError("Drug info extraction failed: match_list is empty!", f"\n{content}", f"\n<<{usage}>>")
+        raise ValueError(
+            "Drug info extraction failed: match_list is empty!",
+            f"\n{content}",
+            f"\n<<{usage}>>",
+        )
 
     df_table = pd.DataFrame(match_list, columns=["Drug name", "Analyte", "Specimen"])
     return_md_table = dataframe_to_markdown(df_table)
     # print(display_md_table(return_md_table))
     return return_md_table, res, content, usage, truncated
-
