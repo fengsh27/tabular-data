@@ -34,6 +34,7 @@ baseline = os.environ.get("BASELINE", BASELINE)
 target = os.environ.get("TARGET", "yichuan/0213_prompt_chain")
 baseline_dir = os.path.join("./benchmark/data/pk-summary", baseline)
 target_dir = os.path.join("./benchmark/data/pk-summary", target)
+score_mode = os.environ.get("SCORE_MODE", "combined")
 
 
 @pytest.fixture(scope="module")
@@ -58,6 +59,7 @@ def test_gpt4o_benchmark(prepared_dataset):
         benchmark_type=BenchmarkType.PK_SUMMARY,
         model=LLModelType.GPT4O,
         result_file=result_path,
+        score_mode=score_mode,
     )
 
 
@@ -73,4 +75,5 @@ def test_gemini_benchmark(prepared_dataset):
         benchmark_type=BenchmarkType.PK_SUMMARY,
         model=LLModelType.GEMINI15,
         result_file=result_path,
+        score_mode=score_mode,
     )

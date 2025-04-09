@@ -4,6 +4,7 @@ from datetime import datetime
 import os
 from os import path
 import logging
+from enum import Enum
 
 from .constant import (
     BASELINE,
@@ -246,3 +247,11 @@ def ensure_target_result_directory_existed(
     except Exception as e:
         logger.error(e)
         raise e
+
+class ColumnType(Enum):
+    Text = "text"
+    # Integer = "int"
+    Numeric = "numeric"
+    
+
+

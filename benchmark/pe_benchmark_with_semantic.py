@@ -1,3 +1,4 @@
+from typing import Literal
 import pandas as pd
 
 from benchmark.evaluate import (
@@ -35,7 +36,9 @@ PE_ANCHOR_COLUMNS = [
 
 
 def pe_summary_evaluate_dataframe(
-    df_baseline: pd.DataFrame, df_pk_summary: pd.DataFrame
+    df_baseline: pd.DataFrame, 
+    df_pk_summary: pd.DataFrame,
+    score_mode: Literal["combined", "separate"] | None = "combined",
 ) -> int:
     evaluator = TablesEvaluator(
         rating_cols=PE_RATING_COLUMNS,

@@ -9,6 +9,7 @@ import pandas as pd
 import csv
 from io import StringIO
 import re
+import math
 
 logger = logging.getLogger(__name__)
 
@@ -266,6 +267,14 @@ def concate_llm_contents(contents: list[str], usages: list[int]):
 
 
 def extract_float_value(s) -> float:
+    if not isinstance(s, str):
+        try: 
+            return float(s)
+        except (
+            ValueError, 
+            TypeError
+        ):
+            return math.nan
     pattern = r"([-+]?[0-9]*\.?[0-9]+)"
     match = re.search(pattern, s)
     if match:
@@ -275,6 +284,14 @@ def extract_float_value(s) -> float:
 
 
 def extract_float_values(s) -> list[float]:
+    if not isinstance(s, str):
+        try: 
+            return [float(s),]
+        except (
+            ValueError, 
+            TypeError
+        ):
+            return [math.nan,]
     pattern = r"([-+]?[0-9]*\.?[0-9]+)"
     match = re.findall(pattern, s)
     if match:

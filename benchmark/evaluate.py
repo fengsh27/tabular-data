@@ -1,10 +1,11 @@
-from typing import Any
+from typing import Any, Literal, Tuple
 import pandas as pd
 from pandas import DataFrame, Series
 import math
 import functools
 import logging
 
+from benchmark.common import ColumnType
 from extractor.utils import (
     extract_float_value,
     extract_float_values,
@@ -27,7 +28,9 @@ DELTA_VALUE = 0.000001
 SIMILARITY_DISTANCE_THRESHOLD = 0.5
 
 
-def is_abbreviation_or_contraction(a: str, b: str):
+def is_abbreviation_or_contraction(a, b):
+    if not isinstance(a, str) or not isinstance(b, str):
+        return False
     if a is None or b is None:
         return False
     a = a.strip()
@@ -91,9 +94,14 @@ class TextComparer:
 
 
 class TablesEvaluator:
-    def __init__(self, rating_cols: list[str], anchor_cols: list[str]):
+    def __init__(
+        self, 
+        rating_cols: list[str], 
+        anchor_cols: list[str],
+    ):
         self.rating_cols = rating_cols
         self.anchor_cols = anchor_cols
+        
         self.text_cmpr = TextComparer()
 
     def anchor_row(self, row1: Series, row2: Series):
@@ -101,17 +109,21 @@ class TablesEvaluator:
         for c in self.anchor_cols:
             v1 = row1[c]
             v2 = row2[c]
-            if not self.is_equal(v1, v2):
+            if not self._is_equal(v1, v2):
                 return False
         return True
 
-    def rate_row(self, row1: Series, row2: Series) -> int:
+    def rate_row(
+        self, 
+        row1: Series, 
+        row2: Series, 
+    ) -> int:
         sum = 0
         for c in self.rating_cols:
             v1 = row1[c]
             v2 = row2[c]
 
-            if self.is_equal(v1, v2):
+            if self._is_equal(v1, v2):
                 sum += 1
 
         return (int)(10.0 * sum / float(len(self.rating_cols)))
@@ -130,8 +142,8 @@ class TablesEvaluator:
             return float(val)
         except ValueError:
             return None
-
-    def is_equal(self, v1, v2) -> bool:
+  
+    def _is_equal(self, v1, v2) -> bool:
         if v1 == v2:
             return True
         if isinstance(v1, str) and isinstance(v2, str):
@@ -180,7 +192,7 @@ class TablesEvaluator:
                 continue
             similar_rows = []
             for r in candidate_rows:
-                if self.is_equal(v, r[c]):
+                if self._is_equal(v, r[c]):
                     similar_rows.append(r)
             if len(similar_rows) == 0:
                 candidate_rows = rows
@@ -190,7 +202,13 @@ class TablesEvaluator:
                 candidate_rows = similar_rows
         return None if len(similar_rows) == 0 else similar_rows[0]
 
-    def rate_rows(self, baseline: DataFrame, target: DataFrame) -> int:
+    def sum_scores(self, scores: list[int], less_row_num: int, more_row_num: int) -> int:
+        sum = functools.reduce(lambda s, i: s + i, scores, 0)
+        return (int)(
+            100.0 * (sum / (10.0 * less_row_num + 1 * (more_row_num - less_row_num)))
+        )
+
+    def rate_rows(self, baseline: DataFrame, target: DataFrame) -> int | Tuple[int, int]:
         bshape = baseline.shape
         tshape = target.shape
         if bshape[1] != tshape[1]:
@@ -199,9 +217,8 @@ class TablesEvaluator:
         less = baseline if bshape[0] <= tshape[0] else target
         much = baseline if bshape[0] > tshape[0] else target
         less_row_num = less.shape[0]
-        much_row_num = much.shape[0]
+        more_row_num = much.shape[0]
         scores = []
-        sum = 0
         much_rows = much.to_dict("records")
         for index, row in less.iterrows():
             much_row = self.anchor_row_from_rows(row, much_rows)
@@ -210,12 +227,91 @@ class TablesEvaluator:
                 continue
             scores.append(self.rate_row(row, much_row))
 
-        sum = functools.reduce(lambda a, b: a + b, scores)
         logger.info(f"scores: {scores}")
-        logger.info(f"less row number: {less_row_num}, much row number: {much_row_num}")
-        return (int)(
-            100.0 * (sum / (10.0 * less_row_num + 1 * (much_row_num - less_row_num)))
-        )
+        logger.info(f"less row number: {less_row_num}, much row number: {more_row_num}")
+        return self.sum_scores(scores, less_row_num, more_row_num)
 
-    def compare_tables(self, baseline: pd.DataFrame, target: pd.DataFrame) -> int:
+    def compare_tables(
+        self, 
+        baseline: pd.DataFrame, 
+        target: pd.DataFrame,
+    ) -> int | Tuple[int, int]:
         return self.rate_rows(baseline, target)
+
+
+class TablesSeparateEvaluator(TablesEvaluator):
+    """ 
+    This class is to evaluate the similarities of two tables by text and numerical value respectively.
+
+    TableSeparateEvaluator.compare(table1, table2) will return text similarity and numerical similarities.
+    """
+    def __init__(self, rating_cols, anchor_cols, columns_type = None):
+        super().__init__(rating_cols, anchor_cols)
+        self.columns_type = columns_type
+        self.sum_text_rating_cols = functools.reduce(
+            lambda sum, col: sum + (1 if self.columns_type[col] == ColumnType.Text else 0),
+            self.rating_cols,
+            0
+        )
+        self.sum_num_rating_cols = functools.reduce(
+            lambda sum, col: sum + (1 if self.columns_type[col] == ColumnType.Numeric else 0),
+            self.rating_cols,
+            0
+        )
+    
+    def _is_equal_text(self, v1, v2) -> bool:
+        if v1 == v2:
+            return True
+        dist = self.text_cmpr.compare(v1, v2)
+        return dist > SIMILARITY_DISTANCE_THRESHOLD
+    
+    def _is_equal_numeric(self, v1, v2) -> bool:
+        try:
+            v1 = extract_float_value(v1.strip().strip("\"'")) \
+                if isinstance(v1, str) else v1
+            v1 = float(v1)
+        except (
+            ValueError, 
+            TypeError
+        ):
+            v1 = math.nan
+        try:
+            v2 = extract_float_value(v2.strip().strip("\"'")) \
+                if isinstance(v2, str) else v2
+            v2 = float(v2)
+        except (
+            ValueError,
+            TypeError
+        ):
+            v2 = math.nan
+        if math.isnan(v1) and math.isnan(v2):
+            return True
+        if math.isnan(v1) or math.isnan(v2):
+            return False
+        return abs(v1 - v2) < DELTA_VALUE
+
+    def rate_row(self, row1, row2):        
+        sum_text = 0
+        sum_numeric = 0
+        for c in self.rating_cols:
+            v1 = row1[c]
+            v2 = row2[c]
+            if self.columns_type[c] == ColumnType.Text:
+                sum_text += (1 if self._is_equal_text(v1, v2) else 0)
+            else:
+                sum_numeric += (1 if self._is_equal_numeric(v1, v2) else 0)
+        return (
+            10.0 * sum_text / float(self.sum_text_rating_cols),
+            10.0 * sum_numeric / float(self.sum_num_rating_cols)
+        )
+    
+    def sum_scores(self, scores: list[Tuple[int, int]], less_row_num, more_row_num) -> Tuple[int, int]:
+        text_sum = functools.reduce(lambda s, i: s + i[0], scores, 0)
+        numeric_sum = functools.reduce(lambda s, i: s + i[1], scores, 0)
+        return (
+            (int)(100.0 * (text_sum / (10.0 * less_row_num + 1 * (more_row_num - less_row_num)))),
+            (int)(100.0 * (numeric_sum / (10.0 * less_row_num + 1 * (more_row_num - less_row_num))))
+        )
+        
+        
+

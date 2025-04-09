@@ -3,6 +3,7 @@ import pytest
 
 from extractor.utils import (
     extract_float_value,
+    extract_float_values,
     preprocess_csv_table_string,
     remove_comma_in_number_string,
 )
@@ -53,6 +54,7 @@ def test_extract_float_value():
     str3 = "1.234*"
     str4 = "-1.234*"
     str5 = "1.234"
+    str6 = 1.234
     v1 = extract_float_value(str1)
     assert v1 == 1.234
     v2 = extract_float_value(str2)
@@ -63,6 +65,17 @@ def test_extract_float_value():
     assert v4 == -1.234
     v5 = extract_float_value(str5)
     assert v5 == 1.234
+    v6 = extract_float_value(str6)
+    assert v6 == 1.234
+
+def test_extract_float_values():
+    str1 = "*1.234 5.678"
+    v1 = extract_float_values(str1)
+    assert v1[0] == 1.234
+    assert v1[1] == 5.678
+    str2 = 1.234
+    v2 = extract_float_values(str2)
+    assert v2 == [1.234]
 
 
 def test_single_html_to_markdown(md_table_aligned_29943508):
