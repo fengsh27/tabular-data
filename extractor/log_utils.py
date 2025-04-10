@@ -1,5 +1,6 @@
 import os
 import logging
+from logging.handlers import RotatingFileHandler
 
 
 def initialize_logger(
@@ -17,7 +18,7 @@ def initialize_logger(
     root_logger = logging.getLogger()
     root_logger.setLevel(logging.WARNING)  # Silence noisy libraries
 
-    file_handler = logging.handlers.RotatingFileHandler(logs_file)
+    file_handler = RotatingFileHandler(logs_file)
     file_handler.setLevel(logging.INFO)
     stream_handler = logging.StreamHandler()
     stream_handler.setLevel(logging.INFO)

@@ -69,6 +69,7 @@ def pk_summary_evaluate_dataframe(
     evaluator = TablesEvaluator(
         rating_cols=PK_RATING_COLUMNS,
         anchor_cols=PK_ANCHOR_COLUMNS,
+        columns_type=PK_COLUMNS_TYPE,
     ) if score_mode == "combined" else TablesSeparateEvaluator(
         rating_cols=PK_RATING_COLUMNS,
         anchor_cols=PK_ANCHOR_COLUMNS,

@@ -27,7 +27,8 @@ PK_COLUMNS = [
     "Lower limit",
     "High limit",
 ]
-LOWER_PK_COLUMNS = [
+LOWER_PK_COLUMNS = [x.lower() for x in PK_COLUMNS]
+"""[
     "drug name",
     "analyte",
     "specimen",
@@ -44,7 +45,7 @@ LOWER_PK_COLUMNS = [
     "interval type",
     "lower limit",
     "high limit",
-]
+]"""
 PK_COLUMNS_MAP = [
     ("P-value", "P value"),
     ("Subjectsn", "Subject N"),
@@ -62,11 +63,29 @@ PK_COLUMNS_MAP = [
     
 def ensure_columns(df_table: pd.DataFrame) -> pd.DataFrame:
     """ Normalize pk summary columns """
+    # Normalize column name
     col_map = {}
     for item in PK_COLUMNS_MAP:
         col_map[item[0]] = item[1]
 
     df_table = df_table.rename(columns=col_map)
+    
+    # Normalize column name for the following cases:
+    # (1) lower case and upper case difference
+    # (2) spaces at the begining or end of column name
+    col_map = {}
+    for col in df_table:
+        if col in PK_COLUMNS:
+            continue
+        if col.lower() in LOWER_PK_COLUMNS:
+            ix = LOWER_PK_COLUMNS.index(col.lower())
+            col_map[col] = PK_COLUMNS[ix]
+        if col.strip().lower() in LOWER_PK_COLUMNS:
+            ix = LOWER_PK_COLUMNS.index(col.strip().lower())
+            col_map[col] = PK_COLUMNS[ix]
+    if len(col_map.keys()) > 0:
+        df_table = df_table.rename(columns=col_map)
+
     df_table = df_table[df_table.columns.intersection(PK_COLUMNS)]
 
     return df_table

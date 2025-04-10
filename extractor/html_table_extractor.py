@@ -7,6 +7,7 @@ from extractor.utils import convert_html_table_to_dataframe
 
 class HtmlTableParser(object):
     MAX_LEVEL = 3
+    CAPTION_TAG_CANDIDATES = ["figcaption"]
     CAPTION_CANDIDATES = ["caption", "captions", "title"]
     FOOTNOTE_CANDIDATES = ["note", "legend", "description", "foot", "notes"]
 
@@ -31,6 +32,10 @@ class HtmlTableParser(object):
             if cap in text:
                 return True
         return False
+    
+    @staticmethod
+    def _is_caption_by_tagname(tagname: str) -> bool:
+        return tagname in HtmlTableParser.CAPTION_TAG_CANDIDATES
 
     @staticmethod
     def _is_footnote_in_text(text):
@@ -55,6 +60,10 @@ class HtmlTableParser(object):
         footnote = None
         for child in children:
             if not hasattr(child, "attrs"):
+                continue
+            if hasattr(child, "name") and HtmlTableParser._is_caption_by_tagname(tagname=child.name):
+                caption = self._get_caption_or_footnote_text(child)
+                found_caption = True
                 continue
             classes = child.attrs.get("class")
             if classes is None:
