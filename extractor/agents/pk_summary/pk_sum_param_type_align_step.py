@@ -1,7 +1,7 @@
 from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonAgentStep
 from extractor.agents.pk_summary.pk_sum_param_type_align_agent import (
     ParameterTypeAlignResult,
-    PARAMETER_TYPE_ALIGN_PROMPT,
+    get_parameter_type_align_prompt,
     post_process_parameter_type_align,
 )
 
@@ -14,9 +14,7 @@ class ParametertypeAlignStep(PKSumCommonAgentStep):
 
     def get_system_prompt(self, state):
         md_table_summary = state["md_table_summary"]
-        return PARAMETER_TYPE_ALIGN_PROMPT.format(
-            md_table_summary=md_table_summary,
-        )
+        return get_parameter_type_align_prompt(md_table_summary)
 
     def get_schema(self):
         return ParameterTypeAlignResult

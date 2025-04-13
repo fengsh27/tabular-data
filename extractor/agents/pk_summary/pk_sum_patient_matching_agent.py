@@ -11,28 +11,50 @@ from extractor.agents.pk_summary.pk_sum_common_agent import (
 
 logger = logging.getLogger(__name__)
 
-MATCHING_PATIENT_PROMPT = from_system_template("""
-The following main table contains pharmacokinetics (PK) data:  
-{processed_md_table_aligned}
-Here is the table caption:  
-{caption}
-From the main table above, I have extracted the following columns to create Subtable 1:  
-{extracted_param_types}  
-Below is Subtable 1:
-{processed_md_table_aligned_with_1_param_type_and_value}
-Additionally, I have compiled Subtable 2, where each row represents a unique combination of "Population" - "Pregnancy stage" - "Subject N," as follows:
-{processed_patient_md_table}
-Carefully analyze the tables and follow these steps:  
-(1) For each row in Subtable 1, find **the best matching one** row in Subtable 2. Return a list of unique row indices (as integers) from Subtable 2 that correspond to each row in Subtable 1.  
-(2) **Strictly ensure that you process only rows 0 to {max_md_table_aligned_with_1_param_type_and_value_row_index} from the Subtable 1.**  
-    - The number of processed rows must **exactly match** the number of rows in the Subtable 1—no more, no less.  
-(3) The "Subject N" values within each population group sometimes differ slightly across parameters. This reflects data availability for each specific parameter within that age group. 
-    - For instance, if the total N is 10 but a specific data point corresponds to 9, the correct Subject N for that row should be 9. It is essential to ensure that each row is matched with the appropriate Subject N accordingly.
-(4) The final list should be like this without removing duplicates or sorting:
-    [1,1,2,2,3,3]
-(5) In rare cases where a row in Subtable 1 cannot be matched, return -1 for that row. This should only be used when absolutely necessary.
-""")
+MATCHING_PATIENT_SYSTEM_PROMPT = from_system_template("""
+You are given a main table containing pharmacokinetics (PK) data:  
+**Main Table:**  
+{processed_md_table_aligned}  
 
+**Caption:**  
+{caption}
+From this main table, I have extracted a subset of rows based on specific parameters to form **Subtable 1**:  
+{extracted_param_types}  
+
+**Subtable 1 (Single Parameter Type and single Parameter Value per Row):**  
+{processed_md_table_aligned_with_1_param_type_and_value}  
+
+I have also compiled **Subtable 2**, where each row corresponds to a unique combination of:  
+**"Population" – "Pregnancy stage" – "Subject N"**  
+{processed_patient_md_table}  
+
+### Task:
+Carefully analyze the tables and follow these instructions step by step:
+
+1. **Match Each Row in Subtable 1 to Subtable 2:**
+   - For each row in Subtable 1 (rows 0 to {max_md_table_aligned_with_1_param_type_and_value_row_index}), find the **best matching row** in Subtable 2.
+   - First, find the corresponding row in the **Main Table** using the **Parameter Value** or **P Value** from Subtable 1.
+   - Then, use the associated **"Subject N"** value to identify the matching row in Subtable 2.
+
+2. **Strict Row Range:**
+   - Only process rows **0 to {max_md_table_aligned_with_1_param_type_and_value_row_index}** in Subtable 1.
+   - Your final output list must include exactly the same number of entries as there are rows in Subtable 1.
+
+3. **Handle Variations in "Subject N":**
+   - Within each population group, "Subject N" may vary across different parameters due to data availability.
+   - Match each row using the correct "Subject N" from the context of the main table. For example, if the group has a total N of 10 but a specific parameter only applies to 9, then 9 is the correct "Subject N" to use for matching.
+
+4. **Output Format:**
+   - Return a Python-style list containing the row indices (integers) of Subtable 2 that best match each row in Subtable 1.
+   - Do not sort or deduplicate the list. The output should follow the order of Subtable 1:
+     ```
+     [matched_index_row_0, matched_index_row_1, ..., matched_index_row_N]
+     ```
+
+5. **If No Match Found:**
+   - If a row in Subtable 1 cannot be matched even after applying all criteria, return `-1` for that row.
+   - Use this only as a last resort.
+""")
 
 def get_matching_patient_prompt(
     md_table_aligned: str,
@@ -43,7 +65,7 @@ def get_matching_patient_prompt(
     first_line = md_table_aligned_with_1_param_type_and_value.strip().split("\n")[0]
     headers = [col.strip() for col in first_line.split("|") if col.strip()]
     extracted_param_types = f""" "{'", "'.join(headers)}" """
-    return MATCHING_PATIENT_PROMPT.format(
+    return MATCHING_PATIENT_SYSTEM_PROMPT.format(
         processed_md_table_aligned=display_md_table(md_table_aligned),
         caption=caption,
         extracted_param_types=extracted_param_types,

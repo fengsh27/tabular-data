@@ -43,7 +43,9 @@ Please Note:
 (4) For rows in Subtable 1 that can not be extracted, enter "N/A" for the entire row.
 (3) **Important:** Please return Subtable 2 as a list of lists, excluding the headers. Ensure all values are converted to strings.
 (4) **Absolutely no calculations are allowed—every value must be taken directly from Subtable 1 without any modifications.**  
-(5) The final list should be like this:
+(5) **Important** The **P value** must be extracted directly from the main table.
+  - First, identify the corresponding column in main table, then extract **P value** from that column.
+(6) The final list should be like this:
 [["0.162", "Mean", "SD", "0.090", "N/A", "N/A", "N/A", ".67"], ["0.428", "Mean", "SD", "0.162", "N/A", "N/A", "N/A", ".015"]]
 """)
 
