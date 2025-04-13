@@ -26,9 +26,9 @@ def get_azure_openai():
     return AzureChatOpenAI(
         api_key=os.environ.get("OPENAI_4O_API_KEY", None),
         azure_endpoint=os.environ.get("AZURE_OPENAI_4O_ENDPOINT", None),
-        api_version=os.environ.get("OPENAI_O1_API_VERSION", None),
-        azure_deployment=os.environ.get("OPENAI_O1_DEPLOYMENT_NAME", None),
-        model=os.environ.get("OPENAI_O1_MODEL", None),
+        api_version=os.environ.get("OPENAI_4O_API_VERSION", None),
+        azure_deployment=os.environ.get("OPENAI_4O_DEPLOYMENT_NAME", None),
+        model=os.environ.get("OPENAI_4O_MODEL", None),
         max_retries=5,
         # temperature=0.0,
         max_completion_tokens=int(os.environ.get("OPENAI_MAX_OUTPUT_TOKENS", 4096)),
@@ -699,36 +699,14 @@ def md_table_drug_34183327_table_2():
 | Pyrazinamide | Pyrazinamide | CSF |
 """
 
-
 @pytest.fixture(scope="module")
-def md_table_list_34183327_table_2():
-    return [
-        """
-| Parameter type | Isoniazid | Age, years_0 | Random blood glucose, mg/dL_0 | Drug dose, mg/kg_0 | Drug administration via NGT, no/yes_0 | Rifampicin | Age, years_1 | Random blood glucose, mg/dL_1 | Drug dose, mg/kg_1 | Drug administration via NGT, no/yes_1 | Pyrazinamide | Random blood glucose, mg/dL_2 | Drug dose, mg/kg_2 | Drug administration via NGT, no/yes_2 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| AUC0–24,hour∙mg/L(B (95%\u2009CI)) |  | n/a | −0.002 (−0.006 to 0.003) | 0.016 (−0.048 to 0.080) | 0.439 (0.143 to 0.735)** |  | −0.009 (−0.028 to 0.010) | −0.003 (−0.007 to 0.001) | 0.014 (−0.021 to 0.048) | n/a |  | −0.006 (−0.010 to −0.003)** | 0.010 (−0.006 to 0.027) | −0.068 (−0.293 to 0.156) |
-| Cmax, mg/L(B (95%\u2009CI)) |  | −0.020 (−0.043 to 0.003) | −0.004 (−0.009 to 0.001) | n/a | 0.130 (−0.160 to 0.420) |  | −0.008 (−0.029 to 0.012) | −0.005 (−0.009 to −0.0003)* | n/a | 0.067 (−0.194 to 0.328) |  | −0.003 (−0.005 to −0.001)** | 0.010 (0.001 to 0.020)* | 0.036 (−0.095 to 0.167) |
-| CCSF0–8, mg/L(B (95%\u2009CI)) |  | n/a | −0.007 (−0.015 to 0.001) | 0.046 (−0.058 to 0.151) | 0.289 (−0.197 to 0.775) |  | −0.021 (−0.052 to 0.009) | n/a | 0.030 (−0.030 to 0.091) | 0.019 (−0.365 to 0.403) |  | −0.006 (−0.010 to −0.003)** | 0.010 (−0.006 to 0.027) | −0.068 (−0.293 to 0.156) |
-"""
-    ]
-
-
-@pytest.fixture(scope="module")
-def md_table_aligned_34183327_table_2():
+def md_table_aligned_34183327_table_3():
     return """
 | Parameter type | Isoniazid | Age, years_0 | Random blood glucose, mg/dL_0 | Drug dose, mg/kg_0 | Drug administration via NGT, no/yes_0 | Rifampicin | Age, years_1 | Random blood glucose, mg/dL_1 | Drug dose, mg/kg_1 | Drug administration via NGT, no/yes_1 | Pyrazinamide | Random blood glucose, mg/dL_2 | Drug dose, mg/kg_2 | Drug administration via NGT, no/yes_2 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | AUC0–24,hour∙mg/L(B (95% CI)) |  | n/a | −0.002 (−0.006 to 0.003) | 0.016 (−0.048 to 0.080) | 0.439 (0.143 to 0.735)** |  | −0.009 (−0.028 to 0.010) | −0.003 (−0.007 to 0.001) | 0.014 (−0.021 to 0.048) | n/a |  | −0.006 (−0.010 to −0.003)** | 0.010 (−0.006 to 0.027) | −0.068 (−0.293 to 0.156) |
 | Cmax, mg/L(B (95% CI)) |  | −0.020 (−0.043 to 0.003) | −0.004 (−0.009 to 0.001) | n/a | 0.130 (−0.160 to 0.420) |  | −0.008 (−0.029 to 0.012) | −0.005 (−0.009 to −0.0003)* | n/a | 0.067 (−0.194 to 0.328) |  | −0.003 (−0.005 to −0.001)** | 0.010 (0.001 to 0.020)* | 0.036 (−0.095 to 0.167) |
 | CCSF0–8, mg/L(B (95% CI)) |  | n/a | −0.007 (−0.015 to 0.001) | 0.046 (−0.058 to 0.151) | 0.289 (−0.197 to 0.775) |  | −0.021 (−0.052 to 0.009) | n/a | 0.030 (−0.030 to 0.091) | 0.019 (−0.365 to 0.403) |  | −0.006 (−0.010 to −0.003)** | 0.010 (−0.006 to 0.027) | −0.068 (−0.293 to 0.156) |
-"""
-
-
-@pytest.fixture(scope="module")
-def caption_34183327_table_2():
-    return """
-Summary of pharmacokinetic (PK) parameters of isoniazid, rifampicin and pyrazinamide among Indonesian children treated for TBM
-Data are presented as geometric mean (range). The first PK assessment was performed on day 2 of treatment and the second PK assessment was performed on day 10 of treatment. *Paired-sample t-test on log-transformed data of 12 patients for whom PK data were available both at the first and second PK assessments. †At the first PK assessment, 6, 7 and 7 CSF samples for each drug were available at 0–2 hours, 3–5 hours and 6–8 hours, respectively; and at the second PK assessment, 4, 4 and 3 CSF samples for each drug were available at 0–2 hours, 3–5 hours and 6–8 hours, respectively. AUC0–24, area under the plasma concentration–time curve from 0 to 24 hours postdose; C CSF0–8, drug concentration in cerebrospinal fluid during 0–8 hours postdose; C max, peak plasma concentration; n/a, non-applicable; TBM, tuberculous meningitis.
 """
 
 
@@ -807,6 +785,11 @@ ghtml_content_22050870_table_2 = """
 <section class="tw xbox font-sm" id="T2"><h4 class="obj_head">Table 2.</h4> <div class="caption p"><p id="P40">Non-compartmental pharmacokinetics parameters from Elective Cohort patients. C<sub>max</sub> is maximum concentration. AUC<sub>0−∞</sub> is area-under-the-curve to infinity. CL is clearance. Vdz is apparent volume of distribution. T<sub>1/2</sub> is half-life.</p></div> <div class="tbl-box p" tabindex="0"><table class="content" frame="hsides" rules="groups"> <thead><tr> <th align="left" colspan="1" rowspan="1"></th> <th align="center" colspan="1" rowspan="1">C<sub>max</sub><br/>(ng/mL)</th> <th align="center" colspan="1" rowspan="1" valign="top">AUC<sub>0−∞</sub> </th> <th align="center" colspan="1" rowspan="1">CL<br/>(mL/min/kg)</th> <th align="center" colspan="1" rowspan="1">CL<br/>(mL/min/m<sup>2</sup>)</th> <th align="center" colspan="1" rowspan="1">Vdz<br/>(L/kg)</th> <th align="center" colspan="1" rowspan="1">T<sub>1/2</sub><br/>(hr)</th> </tr></thead> <tbody> <tr> <td align="left" colspan="1" rowspan="1">N</td> <td align="center" colspan="1" rowspan="1">15</td> <td align="center" colspan="1" rowspan="1">15</td> <td align="center" colspan="1" rowspan="1">15</td> <td align="center" colspan="1" rowspan="1">15</td> <td align="center" colspan="1" rowspan="1">15</td> <td align="center" colspan="1" rowspan="1">15</td> </tr> <tr> <td align="left" colspan="1" rowspan="1" valign="top">Range</td> <td align="center" colspan="1" rowspan="1" valign="top">29.3–209.6</td> <td align="center" colspan="1" rowspan="1">253.3–3202.5</td> <td align="center" colspan="1" rowspan="1" valign="top">3.33–131.50</td> <td align="center" colspan="1" rowspan="1" valign="top">5.5–67.5</td> <td align="center" colspan="1" rowspan="1" valign="top">0.33–4.05</td> <td align="center" colspan="1" rowspan="1" valign="top">9.5–47.0</td> </tr> <tr> <td align="left" colspan="1" rowspan="1">Mean ± s.d.</td> <td align="center" colspan="1" rowspan="1" valign="top">56.1 ± 44.9</td> <td align="center" colspan="1" rowspan="1">822.5 ± 706.1</td> <td align="center" colspan="1" rowspan="1">49.33 ± 30.83</td> <td align="center" colspan="1" rowspan="1" valign="top">31.95 ± 13.99</td> <td align="center" colspan="1" rowspan="1">1.92 ± 0.84</td> <td align="center" colspan="1" rowspan="1">20.5 ± 10.2</td> </tr> <tr> <td align="left" colspan="1" rowspan="1">Median</td> <td align="center" colspan="1" rowspan="1">42.2</td> <td align="center" colspan="1" rowspan="1">601.5</td> <td align="center" colspan="1" rowspan="1">41.50</td> <td align="center" colspan="1" rowspan="1">32.34</td> <td align="center" colspan="1" rowspan="1">1.94</td> <td align="center" colspan="1" rowspan="1">18.1</td> </tr> </tbody> </table></div> <div class="p text-right font-secondary"><a class="usa-link" href="table/T2/" rel="noopener noreferrer" target="_blank">Open in a new tab</a></div></section>
 """
 
+@pytest.fixture(scope="module")
+def title_22050870():
+    return """
+Pharmacokinetics of intravenous lorazepam in pediatric patients with and without status epilepticus    
+"""
 
 @pytest.fixture(scope="module")
 def caption_22050870_table_2():
@@ -991,6 +974,126 @@ def caption_22050870_table_3():
 Bayesian pharmacokinetics parameters (all subjects). CL is clearance. Vdss is volume of distribution at steady state. Beta is the terminal slope of the log concentration versus time profile. T½ Beta is the elimination half-life.
 """
 
+@pytest.fixture(scope="module")
+def md_table_22050870_table_3():
+    return single_html_table_to_markdown(ghtml_content_22050870_table_3)
+
+@pytest.fixture(scope="module")
+def md_table_patient_22050870_table_3():
+    return """
+| Population | Pregnancy stage | Subject N |
+| --- | --- | --- |
+| Overall | N/A | 61 |
+| Overall | N/A | 63 |
+| 3 Month to < 3 Years | N/A | 17 |
+| 3 Month to < 3 Years | N/A | 18 |
+| 3 to < 13 Years | N/A | 28 |
+| 3 to < 13 Years | N/A | 29 |
+| 13 to < 18 Years | N/A | 16 |
+"""
+
+@pytest.fixture(scope="module")
+def md_table_patient_refined_22050870_table_3():
+    return """
+| Population | Pregnancy stage | Pediatric/Gestational age | Subject N |
+| --- | --- | --- | --- |
+| N/A | N/A | Overall | 61 |
+| N/A | N/A | Overall | 63 |
+| Children | N/A | 3 Month to < 3 Years | 17 |
+| Children | N/A | 3 Month to < 3 Years | 18 |
+| Children | N/A | 3 to < 13 Years | 28 |
+| Children | N/A | 3 to < 13 Years | 29 |
+| Adolescents | N/A | 13 to < 18 Years | 16 |
+"""
+
+@pytest.fixture(scope="module")
+def md_table_aligned_22050870_table_3():
+    return """
+| Parameter type | Overall | N_0 | Range_0 | Mean ± s.d._0 | Median | 3 Month to < 3 Years | N_1 | Range_1 | Mean ± s.d._1 | 3 to < 13 Years | N_2 | Range_2 | Mean ± s.d._2 | 13 to < 18 Years | N_3 | Range_3 | Mean ± s.d._3 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Free Fraction | nan | 61 | 0.07–0.48 | 0.10 ± 0.05 | 0.09 | nan | 17 | 0.07–0.48 | 0.11 ± 0.10 | nan | 28 | 0.07–0.17 | 0.10 ± 0.02 | nan | 16 | 0.07–0.15 | 0.09 ± 0.02 |
+| CL (mL/min/kg) | nan | 63 | 0.3–7.75 | 1.2 ± 0.93 | 1.08 | nan | 18 | 0.63–7.75 | 1.57 ± 1.62 | nan | 29 | 0.30–1.82 | 1.12 ± 0.40 | nan | 16 | 0.43–1.58 | 0.95 ± 0.32 |
+| CL mL/min/m2) | nan | 63 | 6.50–147.17 | 33.33 ± 19.33 | 29.00 | nan | 18 | 12.83–147.17 | 32.83 ± 30.17 | nan | 29 | 6.50–69.17 | 31.83 ± 13.83 | nan | 16 | 16.33–60.00 | 36.67 ± 12.00 |
+| Vdss (L/kg) | nan | 63 | 0.49–3.40 | 1.48 ± 0.54 | 1.37 | nan | 18 | 0.67–3.40 | 1.62 ± 0.59 | nan | 29 | 0.49–3.00 | 1.50 ± 0.61 | nan | 16 | 1.00–1.54 | 1.27 ± 0.17 |
+| Beta (hr−1) | nan | 63 | 0.017–0.118 | 0.048 ± 0.020 | 0.046 | nan | 18 | 0.024–0.118 | 0.053 ± 0.027 | nan | 29 | 0.017–0.092 | 0.048 ± 0.017 | nan | 16 | 0.017–0.084 | 0.044 ± 0.016 |
+| T½ Beta (hr) | nan | 63 | 5.9–42.0 | 16.8 ± 7.1 | 15.1 | nan | 18 | 5.9–28.4 | 15.8 ± 6.5 | nan | 29 | 7.5–40.6 | 16.9 ± 7.4 | nan | 16 | 8.2–42.0 | 17.8 ± 7.7 |
+"""
+
+@pytest.fixture(scope="module")
+def md_table_list_22050870_table_3():
+    return ["""
+| Parameter type | Range_0 |
+| --- | --- |
+| Free Fraction | 0.07–0.48 |
+| CL (mL/min/kg) | 0.3–7.75 |
+| CL mL/min/m2) | 6.50–147.17 |
+| Vdss (L/kg) | 0.49–3.40 |
+| Beta (hr−1) | 0.017–0.118 |
+| T½ Beta (hr) | 5.9–42.0 |""", """
+| Parameter type | Mean ± s.d._0 |
+| --- | --- |
+| Free Fraction | 0.10 ± 0.05 |
+| CL (mL/min/kg) | 1.2 ± 0.93 |
+| CL mL/min/m2) | 33.33 ± 19.33 |
+| Vdss (L/kg) | 1.48 ± 0.54 |
+| Beta (hr−1) | 0.048 ± 0.020 |
+| T½ Beta (hr) | 16.8 ± 7.1 |""", """
+| Parameter type | Median |
+| --- | --- |
+| Free Fraction | 0.09 |
+| CL (mL/min/kg) | 1.08 |
+| CL mL/min/m2) | 29.00 |
+| Vdss (L/kg) | 1.37 |
+| Beta (hr−1) | 0.046 |
+| T½ Beta (hr) | 15.1 |""", """
+| Parameter type | Range_1 |
+| --- | --- |
+| Free Fraction | 0.07–0.48 |
+| CL (mL/min/kg) | 0.63–7.75 |
+| CL mL/min/m2) | 12.83–147.17 |
+| Vdss (L/kg) | 0.67–3.40 |
+| Beta (hr−1) | 0.024–0.118 |
+| T½ Beta (hr) | 5.9–28.4 |""", """
+| Parameter type | Mean ± s.d._1 |
+| --- | --- |
+| Free Fraction | 0.11 ± 0.10 |
+| CL (mL/min/kg) | 1.57 ± 1.62 |
+| CL mL/min/m2) | 32.83 ± 30.17 |
+| Vdss (L/kg) | 1.62 ± 0.59 |
+| Beta (hr−1) | 0.053 ± 0.027 |
+| T½ Beta (hr) | 15.8 ± 6.5 |""", """
+| Parameter type | Range_2 |
+| --- | --- |
+| Free Fraction | 0.07–0.17 |
+| CL (mL/min/kg) | 0.30–1.82 |
+| CL mL/min/m2) | 6.50–69.17 |
+| Vdss (L/kg) | 0.49–3.00 |
+| Beta (hr−1) | 0.017–0.092 |
+| T½ Beta (hr) | 7.5–40.6 |""", """
+| Parameter type | Mean ± s.d._2 |
+| --- | --- |
+| Free Fraction | 0.10 ± 0.02 |
+| CL (mL/min/kg) | 1.12 ± 0.40 |
+| CL mL/min/m2) | 31.83 ± 13.83 |
+| Vdss (L/kg) | 1.50 ± 0.61 |
+| Beta (hr−1) | 0.048 ± 0.017 |
+| T½ Beta (hr) | 16.9 ± 7.4 |""", """
+| Parameter type | Range_3 |
+| --- | --- |
+| Free Fraction | 0.07–0.15 |
+| CL (mL/min/kg) | 0.43–1.58 |
+| CL mL/min/m2) | 16.33–60.00 |
+| Vdss (L/kg) | 1.00–1.54 |
+| Beta (hr−1) | 0.017–0.084 |
+| T½ Beta (hr) | 8.2–42.0 |""", """
+| Parameter type | Mean ± s.d._3 |
+| --- | --- |
+| Free Fraction | 0.09 ± 0.02 |
+| CL (mL/min/kg) | 0.95 ± 0.32 |
+| CL mL/min/m2) | 36.67 ± 12.00 |
+| Vdss (L/kg) | 1.27 ± 0.17 |
+| Beta (hr−1) | 0.044 ± 0.016 |
+| T½ Beta (hr) | 17.8 ± 7.7 |"""]
 
 # ==========================================================================================
 # 28794838_table_2
@@ -1095,6 +1198,490 @@ def md_table_34114632_table_3(html_content_34114632_table_3):
     return md_table
 
 
+## =============================================================================
+# 17635501_table_3
+
+ghtml_content_17635501_table_3 = """
+<section class="tw xbox font-sm" id="tbl3"><h4 class="obj_head">Table 3.</h4> <div class="caption p"><p>Pharmacokinetic parameters of lorazepam (LZP) following administration of a single dose (0.1 mg kg<sup>−1</sup>) either intravenously (i.v.) or intramuscularly (i.m.) in children with severe malaria and convulsions</p></div> <div class="tbl-box p" tabindex="0"><table class="content" frame="hsides" rules="groups"> <thead><tr> <th align="left" colspan="1" rowspan="1">Parameter</th> <th align="left" colspan="1" rowspan="1">n</th> <th align="left" colspan="1" rowspan="1">I.v. LZP</th> <th align="left" colspan="1" rowspan="1">n</th> <th align="left" colspan="1" rowspan="1">I.m. LZP</th> <th align="left" colspan="1" rowspan="1">95% CI for the difference between the means or medians</th> </tr></thead> <tbody> <tr> <td align="left" colspan="1" rowspan="1"><strong><em>C</em><sub>max</sub> (ng ml<sup>−1</sup>)</strong></td> <td align="right" colspan="1" rowspan="1">11</td> <td align="right" colspan="1" rowspan="1">65.1 (47.5, 86)</td> <td align="right" colspan="1" rowspan="1">10</td> <td align="right" colspan="1" rowspan="1">45.3 (29.6, 66.3)</td> <td align="left" colspan="1" rowspan="1">−43.5, 5.0</td> </tr> <tr> <td align="left" colspan="1" rowspan="1"><strong><em>t</em><sub>max</sub> (h)*</strong></td> <td align="right" colspan="1" rowspan="1">11</td> <td align="right" colspan="1" rowspan="1">0. 5 (0.167–0.67)</td> <td align="right" colspan="1" rowspan="1">10</td> <td align="right" colspan="1" rowspan="1">0.42 (0.167–1.0)</td> <td align="left" colspan="1" rowspan="1">−0.33, 0.17</td> </tr> <tr> <td align="left" colspan="1" rowspan="1"><strong><em>t</em><sub>1/2</sub> (elimination), h</strong></td> <td align="right" colspan="1" rowspan="1">9</td> <td align="right" colspan="1" rowspan="1">23.7 (9.8, 37.6)</td> <td align="right" colspan="1" rowspan="1">5</td> <td align="right" colspan="1" rowspan="1">36.9 (−1.5, 75.5)</td> <td align="left" colspan="1" rowspan="1">−41.3, 14.9</td> </tr> <tr> <td align="left" colspan="1" rowspan="1"><strong>AUC<sub>0–∞</sub> (ng ml<sup>−1</sup> h<sup>−1</sup>)</strong></td> <td align="right" colspan="1" rowspan="1">9</td> <td align="right" colspan="1" rowspan="1">2062.5 (600.6, 3771.4)</td> <td align="right" colspan="1" rowspan="1">5</td> <td align="right" colspan="1" rowspan="1">1843.6 (296.7, 3390.5)</td> <td align="left" colspan="1" rowspan="1">−1267.8, 1883.0</td> </tr> <tr> <td align="left" colspan="1" rowspan="1"><strong><em>k</em><sub><em>a</em></sub> (h<sup>−1</sup>)*</strong></td> <td colspan="1" rowspan="1"></td> <td align="right" colspan="1" rowspan="1">–</td> <td align="right" colspan="1" rowspan="1">6</td> <td align="right" colspan="1" rowspan="1">9.8 (0.033, 22.8)</td> <td align="left" colspan="1" rowspan="1">–</td> </tr> <tr> <td align="left" colspan="1" rowspan="1"><strong><em>t</em><sub>1/2</sub> (absorption), h*</strong></td> <td colspan="1" rowspan="1"></td> <td align="right" colspan="1" rowspan="1">–</td> <td align="right" colspan="1" rowspan="1">6</td> <td align="right" colspan="1" rowspan="1">0.035 (0.01, 0.071)</td> <td align="left" colspan="1" rowspan="1">–</td> </tr> <tr> <td align="left" colspan="1" rowspan="1"><strong>CL (l h<sup>−1</sup>)</strong></td> <td align="right" colspan="1" rowspan="1">9</td> <td align="right" colspan="1" rowspan="1">0.64 (0.36, 0.92)</td> <td colspan="1" rowspan="1"></td> <td align="right" colspan="1" rowspan="1">–</td> <td align="left" colspan="1" rowspan="1">–</td> </tr> <tr> <td align="left" colspan="1" rowspan="1"><strong><em>V</em><sub>C</sub> (l kg<sup>−1</sup>)</strong></td> <td align="right" colspan="1" rowspan="1">9</td> <td align="right" colspan="1" rowspan="1">1.67 (1.25, 2.10)</td> <td colspan="1" rowspan="1"></td> <td align="right" colspan="1" rowspan="1">–</td> <td align="left" colspan="1" rowspan="1">–</td> </tr> <tr> <td align="left" colspan="1" rowspan="1"><strong><em>V</em><sub>ss</sub> (l kg<sup>−1</sup>)</strong></td> <td align="right" colspan="1" rowspan="1">9</td> <td align="right" colspan="1" rowspan="1">2.59 (1.56, 3.62)</td> <td colspan="1" rowspan="1"></td> <td align="right" colspan="1" rowspan="1">–</td> <td align="left" colspan="1" rowspan="1">–</td> </tr> <tr> <td align="left" colspan="1" rowspan="1"><strong>Bioavailability (<em>F</em>)</strong></td> <td align="right" colspan="1" rowspan="1">9</td> <td align="right" colspan="1" rowspan="1">Assume 100%</td> <td align="right" colspan="1" rowspan="1">6</td> <td align="right" colspan="1" rowspan="1">89.4%</td> <td align="left" colspan="1" rowspan="1">–</td> </tr> </tbody> </table></div> <div class="p text-right font-secondary"><a class="usa-link" href="table/tbl3/" rel="noopener noreferrer" target="_blank">Open in a new tab</a></div> <div class="tw-foot p"><div class="fn" id="fn3"><p>Values are presented as mean (95% CI) or median (range) *.</p></div></div></section>
+"""
+
+
+@pytest.fixture(scope="module")
+def html_content_17635501table_3():
+    return ghtml_content_17635501_table_3
+
+
+@pytest.fixture(scope="module")
+def caption_17635501_table_3():
+    return """
+Pharmacokinetic parameters of lorazepam (LZP) following administration of a single dose (0.1 mg kg−1) either intravenously (i.v.) or intramuscularly (i.m.) in children with severe malaria and convulsions
+Values are presented as mean (95% CI) or median (range) *.
+"""
+
+@pytest.fixture(scope="module")
+def md_table_17635501_table_3():
+    return single_html_table_to_markdown(ghtml_content_17635501_table_3)
+
+@pytest.fixture(scope="module")
+def md_table_patient_17635501_table_3():
+    return """
+| Population | Pregnancy stage | Subject N |
+| --- | --- | --- |
+| Children | N/A | 11.0 |
+| Children | N/A | 10.0 |
+| Children | N/A | 9.0 |
+| Children | N/A | 5.0 |
+| Children | N/A | 6.0 |
+"""
+
+@pytest.fixture(scope="module")
+def md_table_patient_refined_17635501_table_3():
+    return """
+| Population | Pregnancy stage | Pediatric/Gestational age | Subject N |
+| --- | --- | --- | --- |
+| Children | N/A | N/A | 11.0 |
+| Children | N/A | N/A | 10.0 |
+| Children | N/A | N/A | 9.0 |
+| Children | N/A | N/A | 5.0 |
+| Children | N/A | N/A | 6.0 |
+"""
+
+@pytest.fixture(scope="module")
+def md_table_aligned_17635501_table_3():
+    return """
+| Parameter type | n | I.v. LZP | n.1 | I.m. LZP | 95% CI for the difference between the means or medians |
+| --- | --- | --- | --- | --- | --- |
+| Cmax (ng ml−1) | 11.0 | 65.1 (47.5, 86) | 10.0 | 45.3 (29.6, 66.3) | −43.5, 5.0 |
+| tmax (h)* | 11.0 | 0. 5 (0.167–0.67) | 10.0 | 0.42 (0.167–1.0) | −0.33, 0.17 |
+| t1/2 (elimination), h | 9.0 | 23.7 (9.8, 37.6) | 5.0 | 36.9 (−1.5, 75.5) | −41.3, 14.9 |
+| AUC0–∞ (ng ml−1 h−1) | 9.0 | 2062.5 (600.6, 3771.4) | 5.0 | 1843.6 (296.7, 3390.5) | −1267.8, 1883.0 |
+| ka (h−1)* | nan | – | 6.0 | 9.8 (0.033, 22.8) | – |
+| t1/2 (absorption), h* | nan | – | 6.0 | 0.035 (0.01, 0.071) | – |
+| CL (l h−1) | 9.0 | 0.64 (0.36, 0.92) | nan | – | – |
+| VC (l kg−1) | 9.0 | 1.67 (1.25, 2.10) | nan | – | – |
+| Vss (l kg−1) | 9.0 | 2.59 (1.56, 3.62) | nan | – | – |
+| Bioavailability (F) | 9.0 | Assume 100% | 6.0 | 89.4% | – |
+"""
+
+@pytest.fixture(scope="module")
+def md_table_list_17635501_table_3():
+    return ["""
+| Parameter type | I.v. LZP |
+| --- | --- |
+| Cmax (ng ml−1) | 65.1 (47.5, 86) |
+| tmax (h)* | 0. 5 (0.167–0.67) |
+| t1/2 (elimination), h | 23.7 (9.8, 37.6) |
+| AUC0–∞ (ng ml−1 h−1) | 2062.5 (600.6, 3771.4) |
+| ka (h−1)* | – |
+| t1/2 (absorption), h* | – |
+| CL (l h−1) | 0.64 (0.36, 0.92) |
+| VC (l kg−1) | 1.67 (1.25, 2.10) |
+| Vss (l kg−1) | 2.59 (1.56, 3.62) |
+| Bioavailability (F) | Assume 100% |
+""", """
+| Parameter type | I.m. LZP |
+| --- | --- |
+| Cmax (ng ml−1) | 45.3 (29.6, 66.3) |
+| tmax (h)* | 0.42 (0.167–1.0) |
+| t1/2 (elimination), h | 36.9 (−1.5, 75.5) |
+| AUC0–∞ (ng ml−1 h−1) | 1843.6 (296.7, 3390.5) |
+| ka (h−1)* | 9.8 (0.033, 22.8) |
+| t1/2 (absorption), h* | 0.035 (0.01, 0.071) |
+| CL (l h−1) | – |
+| VC (l kg−1) | – |
+| Vss (l kg−1) | – |
+| Bioavailability (F) | 89.4% |
+""", """
+| Parameter type | 95% CI for the difference between the means or medians |
+| --- | --- |
+| Cmax (ng ml−1) | −43.5, 5.0 |
+| tmax (h)* | −0.33, 0.17 |
+| t1/2 (elimination), h | −41.3, 14.9 |
+| AUC0–∞ (ng ml−1 h−1) | −1267.8, 1883.0 |
+| ka (h−1)* | – |
+| t1/2 (absorption), h* | – |
+| CL (l h−1) | – |
+| VC (l kg−1) | – |
+| Vss (l kg−1) | – |
+| Bioavailability (F) | – |
+"""]
+
+## =============================================================================
+# 34183327_table_3
+
+ghtml_content_34183327_table_2 = """
+<section class="tw xbox font-sm" id="T2"><h3 class="obj_head">Table 2.</h3> <div class="caption p"><p>Summary of pharmacokinetic (PK) parameters of isoniazid, rifampicin and pyrazinamide among Indonesian children treated for TBM</p></div> <div class="tbl-box p" tabindex="0"><table class="content" frame="hsides" rules="groups"> <thead><tr> <td align="left" colspan="1" rowspan="1" valign="bottom">PK parameters</td> <td align="left" colspan="1" rowspan="1" valign="bottom">First PK assessment (n=20)</td> <td align="left" colspan="1" rowspan="1" valign="bottom">Second PK assessment (n=12)</td> <td align="left" colspan="1" rowspan="1" valign="bottom">P value*</td> </tr></thead> <tbody> <tr> <td align="left" colspan="1" rowspan="1" valign="top">Isoniazid</td> <td align="left" colspan="1" rowspan="1" valign="top"></td> <td align="left" colspan="1" rowspan="1" valign="top"></td> <td align="left" colspan="1" rowspan="1" valign="top"></td> </tr> <tr> <td align="left" colspan="1" rowspan="1" valign="top"> AUC<sub>0–24</sub> (h∙mg/L)</td> <td align="center" colspan="1" rowspan="1" valign="top">18.5 (5.1–47.4)</td> <td align="center" colspan="1" rowspan="1" valign="top">14.5 (5.9–44.2)</td> <td align="center" colspan="1" rowspan="1" valign="top">0.888</td> </tr> <tr> <td align="left" colspan="1" rowspan="1" valign="top"> <em>C</em> <sub>max</sub> (mg/L)</td> <td align="center" colspan="1" rowspan="1" valign="top">4.6 (1.0–10.0)</td> <td align="center" colspan="1" rowspan="1" valign="top">4.7 (2.5–13.6)</td> <td align="center" colspan="1" rowspan="1" valign="top">0.366</td> </tr> <tr> <td align="center" colspan="1" rowspan="1" valign="top"> <em>C</em> <sub>CSF0–2</sub> (mg/L)†</td> <td align="center" colspan="1" rowspan="1" valign="top">1.4 (0.5–6.1)</td> <td align="center" colspan="1" rowspan="1" valign="top">1.6 (1.2–2.5)</td> <td align="left" colspan="1" rowspan="1" valign="top">n/a</td> </tr> <tr> <td align="center" colspan="1" rowspan="1" valign="top"> <em>C</em> <sub>CSF3–5</sub> (mg/L)†</td> <td align="center" colspan="1" rowspan="1" valign="top">1.6 (0.3–5.0)</td> <td align="center" colspan="1" rowspan="1" valign="top">1.7 (0.6–5.0)</td> <td align="left" colspan="1" rowspan="1" valign="top">n/a</td> </tr> <tr> <td align="center" colspan="1" rowspan="1" valign="top"> <em>C</em> <sub>CSF6–8</sub> (mg/L)†</td> <td align="center" colspan="1" rowspan="1" valign="top">1.3 (1.2–4.3)</td> <td align="center" colspan="1" rowspan="1" valign="top">2.3 (1.9–2.8)</td> <td align="left" colspan="1" rowspan="1" valign="top">n/a</td> </tr> <tr> <td align="left" colspan="1" rowspan="1" valign="top">Rifampicin</td> <td align="left" colspan="1" rowspan="1" valign="top"></td> <td align="left" colspan="1" rowspan="1" valign="top"></td> <td align="left" colspan="1" rowspan="1" valign="top"></td> </tr> <tr> <td align="left" colspan="1" rowspan="1" valign="top"> AUC<sub>0–24</sub> (h∙mg/L)</td> <td align="center" colspan="1" rowspan="1" valign="top">66.9 (21.7–118.6)</td> <td align="center" colspan="1" rowspan="1" valign="top">71.8 (36.1–116.5)</td> <td align="center" colspan="1" rowspan="1" valign="top">0.442</td> </tr> <tr> <td align="left" colspan="1" rowspan="1" valign="top"> <em>C</em> <sub>max</sub> (mg/L)</td> <td align="center" colspan="1" rowspan="1" valign="top">9.4 (2.9–23.7)</td> <td align="center" colspan="1" rowspan="1" valign="top">10.4 (5.7–23.3)</td> <td align="center" colspan="1" rowspan="1" valign="top">0.499</td> </tr> <tr> <td align="center" colspan="1" rowspan="1" valign="top"> <em>C</em> <sub>CSF0–2</sub> (mg/L)†</td> <td align="center" colspan="1" rowspan="1" valign="top">0.2 (0.1–0.4)</td> <td align="center" colspan="1" rowspan="1" valign="top">0.1 (0.1–0.1)</td> <td align="left" colspan="1" rowspan="1" valign="top">n/a</td> </tr> <tr> <td align="center" colspan="1" rowspan="1" valign="top"> <em>C</em> <sub>CSF3–5</sub> (mg/L)†</td> <td align="center" colspan="1" rowspan="1" valign="top">0.3 (0.1–0.8)</td> <td align="center" colspan="1" rowspan="1" valign="top">0.1 (0.1–0.3)</td> <td align="left" colspan="1" rowspan="1" valign="top">n/a</td> </tr> <tr> <td align="center" colspan="1" rowspan="1" valign="top"> <em>C</em> <sub>CSF6–8</sub> (mg/L)†</td> <td align="center" colspan="1" rowspan="1" valign="top">0.4 (0.1–1.4)</td> <td align="center" colspan="1" rowspan="1" valign="top">0.2 (0.1–0.7)</td> <td align="left" colspan="1" rowspan="1" valign="top">n/a</td> </tr> <tr> <td align="left" colspan="1" rowspan="1" valign="top">Pyrazinamide</td> <td align="left" colspan="1" rowspan="1" valign="top"></td> <td align="left" colspan="1" rowspan="1" valign="top"></td> <td align="left" colspan="1" rowspan="1" valign="top"></td> </tr> <tr> <td align="left" colspan="1" rowspan="1" valign="top"> AUC<sub>0–24</sub> (h∙mg/L)</td> <td align="center" colspan="1" rowspan="1" valign="top">315.5 (100.6–599.0)</td> <td align="center" colspan="1" rowspan="1" valign="top">328.4 (143.3–1477.7)</td> <td align="center" colspan="1" rowspan="1" valign="top">0.482</td> </tr> <tr> <td align="left" colspan="1" rowspan="1" valign="top"> <em>C</em> <sub>max</sub> (mg/L)</td> <td align="center" colspan="1" rowspan="1" valign="top">37.7 (15.9–61.7)</td> <td align="center" colspan="1" rowspan="1" valign="top">40.5 (22.7–88.4)</td> <td align="center" colspan="1" rowspan="1" valign="top">0.350</td> </tr> <tr> <td align="center" colspan="1" rowspan="1" valign="top"> <em>C</em> <sub>CSF0–2</sub> (mg/L)†</td> <td align="center" colspan="1" rowspan="1" valign="top">24.4 (11.1–54.9)</td> <td align="center" colspan="1" rowspan="1" valign="top">25.6 (21.3–37.1)</td> <td align="left" colspan="1" rowspan="1" valign="top">n/a</td> </tr> <tr> <td align="center" colspan="1" rowspan="1" valign="top"> <em>C</em> <sub>CSF3–5</sub> (mg/L)†</td> <td align="center" colspan="1" rowspan="1" valign="top">30.0 (19.2–43.3)</td> <td align="center" colspan="1" rowspan="1" valign="top">24.7 (15.9–38.1)</td> <td align="left" colspan="1" rowspan="1" valign="top">n/a</td> </tr> <tr> <td align="center" colspan="1" rowspan="1" valign="top"> <em>C</em> <sub>CSF6–8</sub> (mg/L)†</td> <td align="center" colspan="1" rowspan="1" valign="top">19.6 (7.2–37.7)</td> <td align="center" colspan="1" rowspan="1" valign="top">39.4 (23.1–70.8)</td> <td align="left" colspan="1" rowspan="1" valign="top">n/a</td> </tr> </tbody> </table></div> <div class="p text-right font-secondary"><a class="usa-link" href="table/T2/" rel="noopener noreferrer" target="_blank">Open in a new tab</a></div> <div class="tw-foot p"> <div class="fn" id="T2_FN1"><p>Data are presented as geometric mean (range). The first PK assessment was performed on day 2 of treatment and the second PK assessment was performed on day 10 of treatment.</p></div> <div class="fn" id="T2_FN2"><p>*Paired-sample t-test on log-transformed data of 12 patients for whom PK data were available both at the first and second PK assessments.</p></div> <div class="fn" id="T2_FN3"><p>†At the first PK assessment, 6, 7 and 7 CSF samples for each drug were available at 0–2 hours, 3–5 hours and 6–8 hours, respectively; and at the second PK assessment, 4, 4 and 3 CSF samples for each drug were available at 0–2 hours, 3–5 hours and 6–8 hours, respectively.</p></div> <div class="fn" id="T2_FN4"><p>AUC<sub>0–24</sub>, area under the plasma concentration–time curve from 0 to 24 hours postdose; <em>C</em> <sub>CSF0–8</sub>, drug concentration in cerebrospinal fluid during 0–8 hours postdose; <em>C</em> <sub>max</sub>, peak plasma concentration; n/a, non-applicable; TBM, tuberculous meningitis.</p></div>
+"""
+
+
+@pytest.fixture(scope="module")
+def html_content_34183327table_2():
+    return ghtml_content_34183327_table_2
+
+
+@pytest.fixture(scope="module")
+def caption_34183327_table_2():
+    return """
+Summary of pharmacokinetic (PK) parameters of isoniazid, rifampicin and pyrazinamide among Indonesian children treated for TBM.
+Data are presented as geometric mean (range). The first PK assessment was performed on day 2 of treatment and the second PK assessment was performed on day 10 of treatment. *Paired-sample t-test on log-transformed data of 12 patients for whom PK data were available both at the first and second PK assessments. †At the first PK assessment, 6, 7 and 7 CSF samples for each drug were available at 0–2 hours, 3–5 hours and 6–8 hours, respectively; and at the second PK assessment, 4, 4 and 3 CSF samples for each drug were available at 0–2 hours, 3–5 hours and 6–8 hours, respectively. AUC0–24, area under the plasma concentration–time curve from 0 to 24 hours postdose; C CSF0–8, drug concentration in cerebrospinal fluid during 0–8 hours postdose; C max, peak plasma concentration; n/a, non-applicable; TBM, tuberculous meningitis.
+"""
+
+@pytest.fixture(scope="module")
+def md_table_34183327_table_2():
+    return single_html_table_to_markdown(ghtml_content_34183327_table_2)
+
+@pytest.fixture(scope="module")
+def md_table_patient_34183327_table_2():
+    return """
+| Population | Pregnancy stage | Subject N |
+| --- | --- | --- |
+| Indonesian children | N/A | 20 |
+| Indonesian children | N/A | 12 |
+| Indonesian children | N/A | 6 |
+| Indonesian children | N/A | 7 |
+| Indonesian children | N/A | 4 |
+| Indonesian children | N/A | 3 |
+"""
+
+@pytest.fixture(scope="module")
+def md_table_patient_refined_34183327_table_2():
+    return """
+| Population | Pregnancy stage | Pediatric/Gestational age | Subject N |
+| --- | --- | --- | --- |
+| Children | N/A | N/A | 20 |
+| Children | N/A | N/A | 12 |
+| Children | N/A | N/A | 6 |
+| Children | N/A | N/A | 7 |
+| Children | N/A | N/A | 4 |
+| Children | N/A | N/A | 3 |
+"""
+
+@pytest.fixture(scope="module")
+def md_table_aligned_34183327_table_2():
+    return """
+| Parameter type | First PK assessment (n=20) | Second PK assessment (n=12) | P value* |
+| --- | --- | --- | --- |
+| Isoniazid | nan | nan | nan |
+| AUC0–24 (h∙mg/L) | 18.5 (5.1–47.4) | 14.5 (5.9–44.2) | 0.888 |
+| C max (mg/L) | 4.6 (1.0–10.0) | 4.7 (2.5–13.6) | 0.366 |
+| C CSF0–2 (mg/L)† | 1.4 (0.5–6.1) | 1.6 (1.2–2.5) | nan |
+| C CSF3–5 (mg/L)† | 1.6 (0.3–5.0) | 1.7 (0.6–5.0) | nan |
+| C CSF6–8 (mg/L)† | 1.3 (1.2–4.3) | 2.3 (1.9–2.8) | nan |
+| Rifampicin | nan | nan | nan |
+| AUC0–24 (h∙mg/L) | 66.9 (21.7–118.6) | 71.8 (36.1–116.5) | 0.442 |
+| C max (mg/L) | 9.4 (2.9–23.7) | 10.4 (5.7–23.3) | 0.499 |
+| C CSF0–2 (mg/L)† | 0.2 (0.1–0.4) | 0.1 (0.1–0.1) | nan |
+| C CSF3–5 (mg/L)† | 0.3 (0.1–0.8) | 0.1 (0.1–0.3) | nan |
+| C CSF6–8 (mg/L)† | 0.4 (0.1–1.4) | 0.2 (0.1–0.7) | nan |
+| Pyrazinamide | nan | nan | nan |
+| AUC0–24 (h∙mg/L) | 315.5 (100.6–599.0) | 328.4 (143.3–1477.7) | 0.482 |
+| C max (mg/L) | 37.7 (15.9–61.7) | 40.5 (22.7–88.4) | 0.35 |
+| C CSF0–2 (mg/L)† | 24.4 (11.1–54.9) | 25.6 (21.3–37.1) | nan |
+| C CSF3–5 (mg/L)† | 30.0 (19.2–43.3) | 24.7 (15.9–38.1) | nan |
+| C CSF6–8 (mg/L)† | 19.6 (7.2–37.7) | 39.4 (23.1–70.8) | nan |
+"""
+
+@pytest.fixture(scope="module")
+def md_table_list_34183327_table_2():
+    return ["""
+ | Parameter type | First PK assessment (n=20) | P value* |
+ | --- | --- | --- |
+ | Isoniazid | nan | nan |
+ | AUC0–24 (h∙mg/L) | 18.5 (5.1–47.4) | 0.888 |
+ | C max (mg/L) | 4.6 (1.0–10.0) | 0.366 |
+ | C CSF0–2 (mg/L)† | 1.4 (0.5–6.1) | nan |
+ | C CSF3–5 (mg/L)† | 1.6 (0.3–5.0) | nan |
+ | C CSF6–8 (mg/L)† | 1.3 (1.2–4.3) | nan |
+ | Rifampicin | nan | nan |
+ | AUC0–24 (h∙mg/L) | 66.9 (21.7–118.6) | 0.442 |
+ | C max (mg/L) | 9.4 (2.9–23.7) | 0.499 |
+ | C CSF0–2 (mg/L)† | 0.2 (0.1–0.4) | nan |
+ | C CSF3–5 (mg/L)† | 0.3 (0.1–0.8) | nan |
+ | C CSF6–8 (mg/L)† | 0.4 (0.1–1.4) | nan |
+ | Pyrazinamide | nan | nan |
+ | AUC0–24 (h∙mg/L) | 315.5 (100.6–599.0) | 0.482 |
+ | C max (mg/L) | 37.7 (15.9–61.7) | 0.35 |
+ | C CSF0–2 (mg/L)† | 24.4 (11.1–54.9) | nan |
+ | C CSF3–5 (mg/L)† | 30.0 (19.2–43.3) | nan |
+ | C CSF6–8 (mg/L)† | 19.6 (7.2–37.7) | nan |
+ """, """
+ | Parameter type | Second PK assessment (n=12) | P value* |
+ | --- | --- | --- |
+ | Isoniazid | nan | nan |
+ | AUC0–24 (h∙mg/L) | 14.5 (5.9–44.2) | 0.888 |
+ | C max (mg/L) | 4.7 (2.5–13.6) | 0.366 |
+ | C CSF0–2 (mg/L)† | 1.6 (1.2–2.5) | nan |
+ | C CSF3–5 (mg/L)† | 1.7 (0.6–5.0) | nan |
+ | C CSF6–8 (mg/L)† | 2.3 (1.9–2.8) | nan |
+ | Rifampicin | nan | nan |
+ | AUC0–24 (h∙mg/L) | 71.8 (36.1–116.5) | 0.442 |
+ | C max (mg/L) | 10.4 (5.7–23.3) | 0.499 |
+ | C CSF0–2 (mg/L)† | 0.1 (0.1–0.1) | nan |
+ | C CSF3–5 (mg/L)† | 0.1 (0.1–0.3) | nan |
+ | C CSF6–8 (mg/L)† | 0.2 (0.1–0.7) | nan |
+ | Pyrazinamide | nan | nan |
+ | AUC0–24 (h∙mg/L) | 328.4 (143.3–1477.7) | 0.482 |
+ | C max (mg/L) | 40.5 (22.7–88.4) | 0.35 |
+ | C CSF0–2 (mg/L)† | 25.6 (21.3–37.1) | nan |
+ | C CSF3–5 (mg/L)† | 24.7 (15.9–38.1) | nan |
+ | C CSF6–8 (mg/L)† | 39.4 (23.1–70.8) | nan |
+ """]
+
+
+## =============================================================================
+# 35465728_table_2
+
+ghtml_content_35465728_table_2 = """
+<section class="tw xbox font-sm" id="T2"><h4 class="obj_head">TABLE 2.</h4> <div class="caption p"><p>Vancomycin exposure before and after implementation of the vancomycin dose-optimization protocol</p></div> <div class="tbl-box p" tabindex="0"><table class="content" frame="hsides" rules="groups"> <colgroup span="1"> <col span="1"/> <col span="1"/> <col span="1"/> <col span="1"/> <col span="1"/> </colgroup> <thead> <tr> <th colspan="1" rowspan="2">Factor</th> <th colspan="1" rowspan="1"></th> <th colspan="2" rowspan="1">Data for:<a class="usa-link" href="#T2F1"><sup><em>a</em></sup></a><hr/> </th> <th colspan="1" rowspan="2"> <em>P</em> value</th> </tr> <tr> <th colspan="1" rowspan="1"></th> <th colspan="1" rowspan="1">Before group</th> <th colspan="1" rowspan="1">After group</th> </tr> </thead> <tbody> <tr> <td colspan="1" rowspan="1">Initial Cavg</td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1"> <em>n</em> = 60</td> <td colspan="1" rowspan="1"> <em>n</em> = 59</td> <td colspan="1" rowspan="1"></td> </tr> <tr> <td colspan="1" rowspan="1"> Repartition<a class="usa-link" href="#T2F2"><sup><em>b</em></sup></a> </td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1"></td> </tr> <tr> <td colspan="1" rowspan="1">  Subtherapeutic</td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1">41 (68.3)</td> <td colspan="1" rowspan="1">6 (10.2)</td> <td colspan="1" rowspan="1">&lt;0.001</td> </tr> <tr> <td colspan="1" rowspan="1">  Therapeutic</td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1">17 (28.3)</td> <td colspan="1" rowspan="1">44 (74.6)</td> <td colspan="1" rowspan="1">&lt;0.001</td> </tr> <tr> <td colspan="1" rowspan="1">  Supra-therapeutic</td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1">2 (3.3)</td> <td colspan="1" rowspan="1">9 (15.3)</td> <td colspan="1" rowspan="1">0.001</td> </tr> <tr> <td colspan="1" rowspan="1"> Concentration (mg/L)</td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1">12.9 [11.3–17.0]</td> <td colspan="1" rowspan="1">20.3 [17.0–22.2]</td> <td colspan="1" rowspan="1">&lt;0.001</td> </tr> <tr> <td colspan="1" rowspan="1">All Cavg</td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1"> <em>n</em> = 116</td> <td colspan="1" rowspan="1"> <em>n</em> = 103</td> <td colspan="1" rowspan="1"></td> </tr> <tr> <td colspan="1" rowspan="1"> Repartition<a class="usa-link" href="#T2F2"><sup><em>b</em></sup></a> </td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1"></td> </tr> <tr> <td colspan="1" rowspan="1">  Subtherapeutic</td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1">78 (67.2)</td> <td colspan="1" rowspan="1">13 (12.6)</td> <td colspan="1" rowspan="1">&lt;0.001</td> </tr> <tr> <td colspan="1" rowspan="1">  Therapeutic</td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1">36 (31.0)</td> <td colspan="1" rowspan="1">77 (74.8)</td> <td colspan="1" rowspan="1">&lt;0.001</td> </tr> <tr> <td colspan="1" rowspan="1">  Supra-therapeutic</td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1">2 (1.7)</td> <td colspan="1" rowspan="1">13 (12.6)</td> <td colspan="1" rowspan="1">0.025</td> </tr> <tr> <td colspan="1" rowspan="1"> Concentration (mg/L)</td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1">13.1 [11.3–16.2]</td> <td colspan="1" rowspan="1">19.8 [16.8–22.1]</td> <td colspan="1" rowspan="1">&lt; 0.001</td> </tr> <tr> <td colspan="1" rowspan="1">Initial Cavg/MIC ratio</td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1"> <em>n</em><strong> = </strong>22</td> <td colspan="1" rowspan="1"> <em>n</em><strong> = </strong>17</td> <td colspan="1" rowspan="1"></td> </tr> <tr> <td colspan="1" rowspan="1"> Repartition</td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1"></td> </tr> <tr> <td colspan="1" rowspan="1">  &lt;8</td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1">10 (45.5)</td> <td colspan="1" rowspan="1">2 (11.8)</td> <td colspan="1" rowspan="1">0.02</td> </tr> <tr> <td colspan="1" rowspan="1">  ≥8</td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1">12 (54.5)</td> <td colspan="1" rowspan="1">15 (88.2)</td> <td colspan="1" rowspan="1"></td> </tr> <tr> <td colspan="1" rowspan="1"> Cavg/MIC ratio</td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1">8.8 [6.2–11.5]</td> <td colspan="1" rowspan="1">12.8 [10.9–20.9]</td> <td colspan="1" rowspan="1">0.004</td> </tr> <tr> <td colspan="1" rowspan="1">Initial AUC/MIC ratio</td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1"> <em>n</em> <strong>=</strong> 22</td> <td colspan="1" rowspan="1"> <em>n</em> <strong>=</strong> 17</td> <td colspan="1" rowspan="1"></td> </tr> <tr> <td colspan="1" rowspan="1"> Repartition</td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1"></td> </tr> <tr> <td colspan="1" rowspan="1">  &lt;400</td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1">20/22 (90.9)</td> <td colspan="1" rowspan="1">10/17 (58.8)</td> <td colspan="1" rowspan="1">0.02</td> </tr> <tr> <td colspan="1" rowspan="1">  ≥400</td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1">2/22 (9.1)</td> <td colspan="1" rowspan="1">7/17 (41.2)</td> <td colspan="1" rowspan="1"></td> </tr> <tr> <td colspan="1" rowspan="1"> AUC/MIC ratio</td> <td colspan="1" rowspan="1"></td> <td colspan="1" rowspan="1">211 [149–275]</td> <td colspan="1" rowspan="1">307 [262–502]</td> <td colspan="1" rowspan="1">0.006</td> </tr> </tbody> </table></div> <div class="p text-right font-secondary"><a class="usa-link" href="table/T2/" rel="noopener noreferrer" target="_blank">Open in a new tab</a></div> <div class="tw-foot p"> <div class="fn" id="T2F1"> <sup>a</sup><p class="display-inline">Data are reported as <em>n</em> (%) or medians [25<sup>th</sup> to 75<sup>th</sup> percentiles].</p> </div> <div class="fn" id="T2F2"> <sup>b</sup><p class="display-inline">Therapeutic range, Cavg between 15 and 25 mg/L; subtherapeutic, Cavg &lt; 15 mg/L; supra-therapeutic, Cavg &gt; 25mg/L. Cavg, average concentration; AUC, area under the curve.</p> </div> </div></section>
+"""
+
+@pytest.fixture(scope="module")
+def html_content_35465728_table_2():
+    return ghtml_content_35465728_table_2
+
+@pytest.fixture(scope="module")
+def md_table_34183327_table_2():
+    return single_html_table_to_markdown(ghtml_content_35465728_table_2)
+
+@pytest.fixture(scope="module")
+def caption_35465728_table_2():
+    return """
+Vancomycin exposure before and after implementation of the vancomycin dose-optimization protocol.
+aData are reported as n (%) or medians [25th to 75th percentiles].
+
+bTherapeutic range, Cavg between 15 and 25 mg/L; subtherapeutic, Cavg < 15 mg/L; supra-therapeutic, Cavg > 25mg/L. Cavg, average concentration; AUC, area under the curve.
+"""
+
+
+@pytest.fixture(scope="module")
+def md_table_patient_35465728_table_2():
+    return """
+| Population | Pregnancy stage | Subject N |
+| --- | --- | --- |
+| N/A | N/A | 60 |
+| N/A | N/A | 59 |
+| N/A | N/A | 116 |
+| N/A | N/A | 103 |
+| N/A | N/A | 22 |
+| N/A | N/A | 17 |
+"""
+
+
+@pytest.fixture(scope="module")
+def md_table_patient_refined_35465728_table_2():
+    return """
+| Population | Pregnancy stage | Pediatric/Gestational age | Subject N |
+| --- | --- | --- | --- |
+| N/A | N/A | N/A | 60 |
+| N/A | N/A | N/A | 59 |
+| N/A | N/A | N/A | 116 |
+| N/A | N/A | N/A | 103 |
+| N/A | N/A | N/A | 22 |
+| N/A | N/A | N/A | 17 |
+"""
+
+@pytest.fixture(scope="module")
+def md_table_summary_35465728_table_2():
+    return """
+| Factor/Factor | Unnamed: 1_level_0/Unnamed: 1_level_1 | Data for:a/Before group | Data for:a/After group | P value/P value |
+| --- | --- | --- | --- | --- |
+| Initial Cavg | nan | n = 60 | n = 59 | nan |
+| Repartitionb | nan | nan | nan | nan |
+| Subtherapeutic | nan | 41 (68.3) | 6 (10.2) | <0.001 |
+| Therapeutic | nan | 17 (28.3) | 44 (74.6) | <0.001 |
+| Supra-therapeutic | nan | 2 (3.3) | 9 (15.3) | 0.001 |
+| Concentration (mg/L) | nan | 12.9 [11.3–17.0] | 20.3 [17.0–22.2] | <0.001 |
+| All Cavg | nan | n = 116 | n = 103 | nan |
+| Repartitionb | nan | nan | nan | nan |
+| Subtherapeutic | nan | 78 (67.2) | 13 (12.6) | <0.001 |
+| Therapeutic | nan | 36 (31.0) | 77 (74.8) | <0.001 |
+| Supra-therapeutic | nan | 2 (1.7) | 13 (12.6) | 0.025 |
+| Concentration (mg/L) | nan | 13.1 [11.3–16.2] | 19.8 [16.8–22.1] | < 0.001 |
+| Initial Cavg/MIC ratio | nan | n = 22 | n = 17 | nan |
+| Repartition | nan | nan | nan | nan |
+| <8 | nan | 10 (45.5) | 2 (11.8) | 0.02 |
+| ≥8 | nan | 12 (54.5) | 15 (88.2) | nan |
+| Cavg/MIC ratio | nan | 8.8 [6.2–11.5] | 12.8 [10.9–20.9] | 0.004 |
+| Initial AUC/MIC ratio | nan | n = 22 | n = 17 | nan |
+| Repartition | nan | nan | nan | nan |
+| <400 | nan | 20/22 (90.9) | 10/17 (58.8) | 0.02 |
+| ≥400 | nan | 2/22 (9.1) | 7/17 (41.2) | nan |
+| AUC/MIC ratio | nan | 211 [149–275] | 307 [262–502] | 0.006 |
+"""
+
+
+@pytest.fixture(scope="module")
+def md_table_aligned_35465728_table_2():
+    return """
+| Parameter type | Initial Cavg | Repartitionb_0 | Subtherapeutic_0 | Therapeutic_0 | Supra-therapeutic_0 | Concentration (mg/L)_0 | All Cavg | Repartitionb_1 | Subtherapeutic_1 | Therapeutic_1 | Supra-therapeutic_1 | Concentration (mg/L)_1 | Initial Cavg/MIC ratio | Repartition_0 | <8 | ≥8 | Cavg/MIC ratio | Initial AUC/MIC ratio | Repartition_1 | <400 | ≥400 | AUC/MIC ratio |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Unnamed: 1_level_0/Unnamed: 1_level_1 | nan | nan | nan | nan | nan | nan | nan | nan | nan | nan | nan | nan | nan | nan | nan | nan | nan | nan | nan | nan | nan | nan |
+| Data for:a/Before group | n = 60 | nan | 41 (68.3) | 17 (28.3) | 2 (3.3) | 12.9 [11.3–17.0] | n = 116 | nan | 78 (67.2) | 36 (31.0) | 2 (1.7) | 13.1 [11.3–16.2] | n = 22 | nan | 10 (45.5) | 12 (54.5) | 8.8 [6.2–11.5] | n = 22 | nan | 20/22 (90.9) | 2/22 (9.1) | 211 [149–275] |
+| Data for:a/After group | n = 59 | nan | 6 (10.2) | 44 (74.6) | 9 (15.3) | 20.3 [17.0–22.2] | n = 103 | nan | 13 (12.6) | 77 (74.8) | 13 (12.6) | 19.8 [16.8–22.1] | n = 17 | nan | 2 (11.8) | 15 (88.2) | 12.8 [10.9–20.9] | n = 17 | nan | 10/17 (58.8) | 7/17 (41.2) | 307 [262–502] |
+| P value/P value | nan | nan | <0.001 | <0.001 | 0.001 | <0.001 | nan | nan | <0.001 | <0.001 | 0.025 | < 0.001 | nan | nan | 0.02 | nan | 0.004 | nan | nan | 0.02 | nan | 0.006 |
+"""
+
+@pytest.fixture(scope="module")
+def col_mapping_35465728_table_2():
+    return {
+        'Parameter type': 'Parameter type', 
+        'Initial Cavg': 'Parameter value', 
+        'Repartitionb_0': 'Parameter value', 
+        'Subtherapeutic_0': 'Parameter value', 
+        'Therapeutic_0': 'Parameter value', 
+        'Supra-therapeutic_0': 'Parameter value', 
+        'Concentration (mg/L)_0': 'Parameter value', 
+        'All Cavg': 'Parameter value', 
+        'Repartitionb_1': 'Parameter value', 
+        'Subtherapeutic_1': 'Parameter value', 
+        'Therapeutic_1': 'Parameter value', 
+        'Supra-therapeutic_1': 'Parameter value', 
+        'Concentration (mg/L)_1': 'Parameter value', 
+        'Initial Cavg/MIC ratio': 'Parameter value', 
+        'Repartition_0': 'Parameter value', 
+        '<8': 'Parameter value', 
+        '≥8': 'Parameter value', 
+        'Cavg/MIC ratio': 'Parameter value', 
+        'Initial AUC/MIC ratio': 'Parameter value', 
+        'Repartition_1': 'Parameter value', 
+        '<400': 'Parameter value', 
+        '≥400': 'Parameter value', 
+        'AUC/MIC ratio': 'Parameter value'
+    }
+
+@pytest.fixture(scope="module")
+def md_table_list_35465728_table_2():
+    return ["""
+| Parameter type | Initial Cavg |
+| --- | --- |
+| Unnamed: 1_level_0/Unnamed: 1_level_1 | nan |
+| Data for:a/Before group | n = 60 |
+| Data for:a/After group | n = 59 |
+| P value/P value | nan |
+""", """
+| Parameter type | Subtherapeutic_0 |
+| --- | --- |
+| Unnamed: 1_level_0/Unnamed: 1_level_1 | nan |
+| Data for:a/Before group | 41 (68.3) |
+| Data for:a/After group | 6 (10.2) |
+| P value/P value | <0.001 |
+""", """
+| Parameter type | Therapeutic_0 |
+| --- | --- |
+| Unnamed: 1_level_0/Unnamed: 1_level_1 | nan |
+| Data for:a/Before group | 17 (28.3) |
+| Data for:a/After group | 44 (74.6) |
+| P value/P value | <0.001 |
+""", """
+| Parameter type | Supra-therapeutic_0 |
+| --- | --- |
+| Unnamed: 1_level_0/Unnamed: 1_level_1 | nan |
+| Data for:a/Before group | 2 (3.3) |
+| Data for:a/After group | 9 (15.3) |
+| P value/P value | 0.001 |
+""", """
+| Parameter type | Concentration (mg/L)_0 |
+| --- | --- |
+| Unnamed: 1_level_0/Unnamed: 1_level_1 | nan |
+| Data for:a/Before group | 12.9 [11.3–17.0] |
+| Data for:a/After group | 20.3 [17.0–22.2] |
+| P value/P value | <0.001 |
+""", """
+| Parameter type | All Cavg |
+| --- | --- |
+| Unnamed: 1_level_0/Unnamed: 1_level_1 | nan |
+| Data for:a/Before group | n\u2009=\u2009116 |
+| Data for:a/After group | n\u2009=\u2009103 |
+| P value/P value | nan |
+""", """
+| Parameter type | Subtherapeutic_1 |
+| --- | --- |
+| Unnamed: 1_level_0/Unnamed: 1_level_1 | nan |
+| Data for:a/Before group | 78 (67.2) |
+| Data for:a/After group | 13 (12.6) |
+| P value/P value | <0.001 |
+""", """
+| Parameter type | Therapeutic_1 |
+| --- | --- |
+| Unnamed: 1_level_0/Unnamed: 1_level_1 | nan |
+| Data for:a/Before group | 36 (31.0) |
+| Data for:a/After group | 77 (74.8) |
+| P value/P value | <0.001 |
+""", """
+| Parameter type | Supra-therapeutic_1 |
+| --- | --- |
+| Unnamed: 1_level_0/Unnamed: 1_level_1 | nan |
+| Data for:a/Before group | 2 (1.7) |
+| Data for:a/After group | 13 (12.6) |
+| P value/P value | 0.025 |
+""", """
+| Parameter type | Concentration (mg/L)_1 |
+| --- | --- |
+| Unnamed: 1_level_0/Unnamed: 1_level_1 | nan |
+| Data for:a/Before group | 13.1 [11.3–16.2] |
+| Data for:a/After group | 19.8 [16.8–22.1] |
+| P value/P value | < 0.001 |
+""", """
+| Parameter type | Initial Cavg/MIC ratio |
+| --- | --- |
+| Unnamed: 1_level_0/Unnamed: 1_level_1 | nan |
+| Data for:a/Before group | n\u2009=\u200922 |
+| Data for:a/After group | n\u2009=\u200917 |
+| P value/P value | nan |
+""", """
+| Parameter type | <8 |
+| --- | --- |
+| Unnamed: 1_level_0/Unnamed: 1_level_1 | nan |
+| Data for:a/Before group | 10 (45.5) |
+| Data for:a/After group | 2 (11.8) |
+| P value/P value | 0.02 |
+""", """
+| Parameter type | ≥8 |
+| --- | --- |
+| Unnamed: 1_level_0/Unnamed: 1_level_1 | nan |
+| Data for:a/Before group | 12 (54.5) |
+| Data for:a/After group | 15 (88.2) |
+| P value/P value | nan |
+""", """
+| Parameter type | Cavg/MIC ratio |
+| --- | --- |
+| Unnamed: 1_level_0/Unnamed: 1_level_1 | nan |
+| Data for:a/Before group | 8.8 [6.2–11.5] |
+| Data for:a/After group | 12.8 [10.9–20.9] |
+| P value/P value | 0.004 |
+""", """
+| Parameter type | Initial AUC/MIC ratio |
+| --- | --- |
+| Unnamed: 1_level_0/Unnamed: 1_level_1 | nan |
+| Data for:a/Before group | n = 22 |
+| Data for:a/After group | n = 17 |
+| P value/P value | nan |
+""", """
+| Parameter type | <400 |
+| --- | --- |
+| Unnamed: 1_level_0/Unnamed: 1_level_1 | nan |
+| Data for:a/Before group | 20/22 (90.9) |
+| Data for:a/After group | 10/17 (58.8) |
+| P value/P value | 0.02 |
+""", """
+| Parameter type | ≥400 |
+| --- | --- |
+| Unnamed: 1_level_0/Unnamed: 1_level_1 | nan |
+| Data for:a/Before group | 2/22 (9.1) |
+| Data for:a/After group | 7/17 (41.2) |
+| P value/P value | nan |
+""", """
+| Parameter type | AUC/MIC ratio |
+| --- | --- |
+| Unnamed: 1_level_0/Unnamed: 1_level_1 | nan |
+| Data for:a/Before group | 211 [149–275] |
+| Data for:a/After group | 307 [262–502] |
+| P value/P value | 0.006 |
+"""
+    ]
+
+# ============================================================================================
+# utils
 @pytest.fixture(scope="session", autouse=True)
 def prepare_logging():
     level = logging.INFO
