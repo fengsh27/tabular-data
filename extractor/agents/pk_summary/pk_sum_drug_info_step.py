@@ -22,9 +22,12 @@ class DrugInfoExtractionStep(PKSumCommonAgentStep):
     def get_system_prompt(self, state):
         md_table = state["md_table"]
         caption = state["caption"]
+        title = state["title"]
+        title = title if title is not None else "N/A"
         return DRUG_INFO_PROMPT.format(
             processed_md_table=display_md_table(md_table),
             caption=caption,
+            paper_title=title,
         )
 
     def leave_step(

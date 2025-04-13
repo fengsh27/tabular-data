@@ -19,6 +19,9 @@ def test_HtmlTableExtractor_31206433():
         assert len(tables[4]["caption"]) == 0
         assert len(tables[4]["footnote"]) == 0
 
+        title = extractor.extract_title(html)
+        assert title is not None
+
 
 def test_HtmlTableExtractor_17158945():
     extractor = HtmlTableExtractor()
@@ -26,6 +29,9 @@ def test_HtmlTableExtractor_17158945():
         html = fobj.read()
         tables = extractor.extract_tables(html)
         assert len(tables) > 0
+
+        title = extractor.extract_title(html)
+        assert title is not None
 
 
 def test_HtmlTableExtractor_15601346():
@@ -37,6 +43,8 @@ def test_HtmlTableExtractor_15601346():
         assert len(tables[0]["caption"]) > 0
         assert len(tables[0]["footnote"]) > 0
 
+        title = extractor.extract_title(html)
+        assert title is not None
 
 def test_HtmlTableExtractor_18782787():
     extractor = HtmlTableExtractor()
@@ -44,6 +52,9 @@ def test_HtmlTableExtractor_18782787():
         html = fobj.read()
         tables = extractor.extract_tables(html)
         assert len(tables) > 0
+
+        title = extractor.extract_title(html)
+        assert title is not None
 
     for table in tables:
         md_table = dataframe_to_markdown(table["table"])

@@ -1,0 +1,44 @@
+,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+0,N/A,N/A,Plasma,N/A,N/A,N/A,15,Cmax,ng/mL,Mean,56.1,SD,44.9,N/A,N/A,N/A,N/A,N/A,N/A
+1,N/A,N/A,Plasma,N/A,N/A,N/A,15,AUC0−∞,N/A,Mean,822.5,SD,706.1,N/A,N/A,N/A,N/A,N/A,N/A
+2,N/A,N/A,Plasma,N/A,N/A,N/A,15,CL,mL/min/kg,Mean,49.33,SD,30.83,N/A,N/A,N/A,N/A,N/A,N/A
+3,N/A,N/A,Plasma,N/A,N/A,N/A,15,CL,mL/min/m2,Mean,31.95,SD,13.99,N/A,N/A,N/A,N/A,N/A,N/A
+4,N/A,N/A,Plasma,N/A,N/A,N/A,15,Vdz,L/kg,Mean,1.92,SD,0.84,N/A,N/A,N/A,N/A,N/A,N/A
+5,N/A,N/A,Plasma,N/A,N/A,N/A,15,T1/2,hr,Mean,20.5,SD,10.2,N/A,N/A,N/A,N/A,N/A,N/A
+6,N/A,N/A,Plasma,N/A,N/A,N/A,15,Cmax,ng/mL,Median,42.2,N/A,N/A,Range,29.3,209.6,N/A,N/A,N/A
+7,N/A,N/A,Plasma,N/A,N/A,N/A,15,AUC0−∞,N/A,Median,601.5,N/A,N/A,Range,253.3,3202.5,N/A,N/A,N/A
+8,N/A,N/A,Plasma,N/A,N/A,N/A,15,CL,mL/min/kg,Median,41.50,N/A,N/A,Range,3.33,131.50,N/A,N/A,N/A
+9,N/A,N/A,Plasma,N/A,N/A,N/A,15,CL,mL/min/m2,Median,32.34,N/A,N/A,Range,5.5,67.5,N/A,N/A,N/A
+10,N/A,N/A,Plasma,N/A,N/A,N/A,15,Vdz,L/kg,Median,1.94,N/A,N/A,Range,0.33,4.05,N/A,N/A,N/A
+11,N/A,N/A,Plasma,N/A,N/A,N/A,15,T1/2,hr,Median,18.1,N/A,N/A,Range,9.5,47.0,N/A,N/A,N/A
+12,N/A,N/A,N/A,N/A,N/A,N/A,61,Free Fraction,N/A,Mean,0.10,SD,0.05,N/A,N/A,N/A,N/A,N/A,N/A
+13,N/A,N/A,N/A,N/A,N/A,N/A,63,Clearance,mL/min/kg,Mean,1.2,SD,0.93,N/A,N/A,N/A,N/A,N/A,N/A
+14,N/A,N/A,N/A,N/A,N/A,N/A,63,Clearance,mL/min/m²,Mean,33.33,SD,19.33,N/A,N/A,N/A,N/A,N/A,N/A
+15,N/A,N/A,N/A,N/A,N/A,N/A,63,Volume of Distribution at Steady State,L/kg,Mean,1.48,SD,0.54,N/A,N/A,N/A,N/A,N/A,N/A
+16,N/A,N/A,N/A,N/A,N/A,N/A,63,Terminal Slope,hr⁻¹,Mean,0.048,SD,0.020,N/A,N/A,N/A,N/A,N/A,N/A
+17,N/A,N/A,N/A,N/A,N/A,N/A,63,Elimination Half-Life,hr,Mean,16.8,SD,7.1,N/A,N/A,N/A,N/A,N/A,N/A
+18,N/A,N/A,N/A,N/A,N/A,N/A,61,Free Fraction,N/A,Median,0.09,N/A,N/A,Range,0.07,0.48,N/A,N/A,N/A
+19,N/A,N/A,N/A,N/A,N/A,N/A,63,Clearance,mL/min/kg,Median,1.08,N/A,N/A,Range,0.3,7.75,N/A,N/A,N/A
+20,N/A,N/A,N/A,N/A,N/A,N/A,63,Clearance,mL/min/m²,Median,29.00,N/A,N/A,Range,6.50,147.17,N/A,N/A,N/A
+21,N/A,N/A,N/A,N/A,N/A,N/A,63,Volume of Distribution at Steady State,L/kg,Median,1.37,N/A,N/A,Range,0.49,3.40,N/A,N/A,N/A
+22,N/A,N/A,N/A,N/A,N/A,N/A,63,Terminal Slope,hr⁻¹,Median,0.046,N/A,N/A,Range,0.017,0.118,N/A,N/A,N/A
+23,N/A,N/A,N/A,N/A,N/A,N/A,63,Elimination Half-Life,hr,Median,15.1,N/A,N/A,Range,5.9,42.0,N/A,N/A,N/A
+24,N/A,N/A,N/A,Children,N/A,3 Month to < 3 Years,17,Free Fraction,N/A,Mean,0.11,SD,0.10,Range,0.07,0.48,N/A,N/A,N/A
+25,N/A,N/A,N/A,Children,N/A,3 Month to < 3 Years,18,Clearance,mL/min/kg,Mean,1.57,SD,1.62,Range,0.63,7.75,N/A,N/A,N/A
+26,N/A,N/A,N/A,Children,N/A,3 Month to < 3 Years,18,Clearance,mL/min/m²,Mean,32.83,SD,30.17,Range,12.83,147.17,N/A,N/A,N/A
+27,N/A,N/A,N/A,Children,N/A,3 Month to < 3 Years,18,Volume of Distribution at Steady State,L/kg,Mean,1.62,SD,0.59,Range,0.67,3.40,N/A,N/A,N/A
+28,N/A,N/A,N/A,Children,N/A,3 Month to < 3 Years,18,Terminal Slope,hr⁻¹,Mean,0.053,SD,0.027,Range,0.024,0.118,N/A,N/A,N/A
+29,N/A,N/A,N/A,Children,N/A,3 Month to < 3 Years,18,Elimination Half-Life,hr,Mean,15.8,SD,6.5,Range,5.9,28.4,N/A,N/A,N/A
+30,N/A,N/A,N/A,Children,N/A,3 to < 13 Years,28,Free Fraction,N/A,N/A,N/A,N/A,N/A,Range,0.07,0.17,N/A,N/A,N/A
+31,N/A,N/A,N/A,Children,N/A,3 to < 13 Years,29,Clearance,mL/min/kg,Mean,1.12,SD,0.40,Range,0.30,1.82,N/A,N/A,N/A
+32,N/A,N/A,N/A,Children,N/A,3 to < 13 Years,29,Clearance,mL/min/m²,Mean,31.83,SD,13.83,Range,6.50,69.17,N/A,N/A,N/A
+33,N/A,N/A,N/A,Children,N/A,3 to < 13 Years,29,Volume of Distribution at Steady State,L/kg,Mean,1.50,SD,0.61,Range,0.49,3.00,N/A,N/A,N/A
+34,N/A,N/A,N/A,Children,N/A,3 to < 13 Years,29,Terminal Slope,hr⁻¹,Mean,0.048,SD,0.017,Range,0.017,0.092,N/A,N/A,N/A
+35,N/A,N/A,N/A,Children,N/A,3 to < 13 Years,29,Elimination Half-Life,hr,Mean,16.9,SD,7.4,Range,7.5,40.6,N/A,N/A,N/A
+36,N/A,N/A,N/A,Children,N/A,3 to < 13 Years,29,Free Fraction,N/A,Mean,0.10,SD,0.02,N/A,N/A,N/A,N/A,N/A,N/A
+37,N/A,N/A,N/A,Adolescents,N/A,13 to < 18 Years,16,Free Fraction,N/A,Mean,0.09,SD,0.02,Range,0.07,0.15,N/A,N/A,N/A
+38,N/A,N/A,N/A,Adolescents,N/A,13 to < 18 Years,16,Clearance,mL/min/kg,Mean,0.95,SD,0.32,Range,0.43,1.58,N/A,N/A,N/A
+39,N/A,N/A,N/A,Adolescents,N/A,13 to < 18 Years,16,Clearance,mL/min/m²,Mean,36.67,SD,12.00,Range,16.33,60.00,N/A,N/A,N/A
+40,N/A,N/A,N/A,Adolescents,N/A,13 to < 18 Years,16,Volume of Distribution at Steady State,L/kg,Mean,1.27,SD,0.17,Range,1.00,1.54,N/A,N/A,N/A
+41,N/A,N/A,N/A,Adolescents,N/A,13 to < 18 Years,16,Terminal Slope,hr⁻¹,Mean,0.044,SD,0.016,Range,0.017,0.084,N/A,N/A,N/A
+42,N/A,N/A,N/A,Adolescents,N/A,13 to < 18 Years,16,Elimination Half-Life,hr,Mean,17.8,SD,7.7,Range,8.2,42.0,N/A,N/A,N/A

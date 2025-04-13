@@ -131,6 +131,7 @@ def on_input_change(pmid: Optional[str] = None):
     extractor = HtmlTableExtractor()
     retrieved_tables = extractor.extract_tables(html_content)
     ss.main_retrieved_tables = retrieved_tables
+    ss.main_retrieved_title = extractor.extract_title(html_content)
 
     tmp_info = (
         "no table found"
@@ -206,6 +207,7 @@ def on_extract(pmid: str):
             workflow = PKSumWorkflow(llm=llm)
             workflow.build()
             df = workflow.go_md_table(
+                title=ss.main_retrieved_title,
                 md_table=dataframe_to_markdown(df_table),
                 caption_and_footnote=caption,
                 step_callback=output_step,
@@ -262,6 +264,7 @@ def main_tab():
     ss.setdefault("main_extracted_result", None)
     ss.setdefault("main_token_usage", None)
     ss.setdefault("main_retrieved_tables", None)
+    ss.setdefault("main_retrieved_title", None)
     ss.setdefault("main_extracted_btn_disabled", True)
     ss.setdefault("main_prompts_option", PROMPTS_NAME_PK)
     ss.setdefault("main_llm_option", LLM_CHATGPT_4O)
@@ -358,6 +361,8 @@ def main_tab():
                 st.markdown(ss.main_extracted_result)
             # st.markdown(ss.main_extracted_result)
             st.divider()
+        if ss.main_retrieved_title is not None and len(ss.main_retrieved_title) > 0:
+            st.markdown("Paper Title: " + escape_markdown(ss.main_retrieved_title))
         if ss.main_retrieved_tables is not None and len(ss.main_retrieved_tables) > 0:
             st.subheader("Tables in Article:")
             for ix in range(len(ss.main_retrieved_tables)):

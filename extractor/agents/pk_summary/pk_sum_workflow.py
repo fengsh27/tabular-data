@@ -155,6 +155,7 @@ class PKSumWorkflow:
         self,
         md_table: str,
         caption_and_footnote: str,
+        title: str | None = None,
         step_callback: Callable | None = None,
         sleep_time: float | None = None,
     ):
@@ -166,6 +167,7 @@ class PKSumWorkflow:
                 "caption": caption_and_footnote,
                 "llm": self.llm,
                 "step_callback": step_callback,
+                "title": title if title is not None else "",
             },
             config=config,
             stream_mode="values",
@@ -188,10 +190,15 @@ class PKSumWorkflow:
         self,
         html_content: str,
         caption_and_footnote: str,
+        title: str | None = None,
         step_callback: Callable | None = None,
         sleep_time: float | None = None,
     ):
         md_table = single_html_table_to_markdown(html_content)
         return self.go_md_table(
-            md_table, caption_and_footnote, step_callback, sleep_time
+            md_table=md_table, 
+            caption_and_footnote=caption_and_footnote,
+            title=title,
+            step_callback=step_callback,
+            sleep_time=sleep_time,
         )

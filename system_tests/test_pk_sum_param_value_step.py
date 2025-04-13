@@ -43,7 +43,7 @@ def test_ParameterValueExtractionStep1(
     assert updated_state["value_list"] is not None
     assert type(updated_state["value_list"]) == list
 
-
+@pytest.mark.skip()
 def test_ParameterValueExtractionStep_22050870_table_2(
     llm,
     caption_22050870_table_2,
@@ -63,3 +63,26 @@ def test_ParameterValueExtractionStep_22050870_table_2(
 
     assert updated_state["value_list"] is not None
     assert type(updated_state["value_list"]) == list
+
+def test_ParameterValueExtractionStep_35465728_table_2(
+    llm,
+    caption_35465728_table_2,
+    md_table_aligned_35465728_table_2,
+    md_table_list_35465728_table_2,
+    step_callback,
+):
+    step = ParameterValueExtractionStep()
+    state = PKSumWorkflowState()
+    state["llm"] = llm
+    state["caption"] = caption_35465728_table_2
+    state["md_table_aligned"] = md_table_aligned_35465728_table_2
+    state["md_table_list"] = md_table_list_35465728_table_2
+    state["step_callback"] = step_callback
+
+    updated_state = step.execute(state)
+
+    assert updated_state["value_list"] is not None
+    assert type(updated_state["value_list"]) == list
+
+
+

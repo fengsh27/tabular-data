@@ -1,0 +1,44 @@
+﻿,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+0,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Volume of distribution,L,Mean,3.62,SD,1.94,Range,0.31,8.88,N/A,N/A,N/A
+1,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Volume of distribution per kilogram,L/kg,Mean,0.70,SD,0.48,Range,0.28,2.31,N/A,N/A,N/A
+2,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Clearance,L/h,Mean,0.749,SD,0.454,Range,0.020,1.820,N/A,N/A,N/A
+3,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Clearance per kilogram,L/h/kg,Mean,0.124,SD,0.052,Range,0.025,0.268,N/A,N/A,N/A
+4,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Elimination half-life,h,Mean,4.3,SD,2.6,Range,1.5,11.3,N/A,N/A,N/A
+5,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Volume of distribution,L,Mean,1.94,SD,1.94,Range,2.64,4.35,N/A,N/A,N/A
+6,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Volume of distribution per kilogram,L/kg,Mean,0.48,SD,0.48,Range,0.39,0.94,N/A,N/A,N/A
+7,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Clearance,L/h,Mean,0.454,SD,0.454,Range,0.414,0.955,N/A,N/A,N/A
+8,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Clearance per kilogram,L/h/kg,Mean,0.052,SD,0.052,Range,0.095,0.133,N/A,N/A,N/A
+9,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Elimination half-life,h,Mean,2.6,SD,2.6,Range,2.5,5.4,N/A,N/A,N/A
+10,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Volume of distribution,L,Mean,53,CV%,53,N/A,N/A,N/A,N/A,N/A,N/A
+11,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Volume of distribution per kilogram,L/kg,Mean,69,CV%,69,N/A,N/A,N/A,N/A,N/A,N/A
+12,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Clearance,L/h,Mean,61,CV%,61,N/A,N/A,N/A,N/A,N/A,N/A
+13,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Clearance per kilogram,L/h/kg,Mean,42,CV%,42,N/A,N/A,N/A,N/A,N/A,N/A
+14,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Elimination half-life,h,Mean,61,CV%,61,N/A,N/A,N/A,N/A,N/A,N/A
+15,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Volume of distribution,L,Median,3.50,N/A,N/A,Range,2.64,4.35,N/A,N/A,N/A
+16,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Volume of distribution per kilogram,L/kg,Median,0.50,N/A,N/A,Range,0.39,0.94,N/A,N/A,N/A
+17,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Clearance,L/h,Median,0.737,N/A,N/A,Range,0.414,0.955,N/A,N/A,N/A
+18,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Clearance per kilogram,L/h/kg,Median,0.112,N/A,N/A,Range,0.095,0.133,N/A,N/A,N/A
+19,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Elimination half-life,h,Median,3.8,N/A,N/A,Range,2.5,5.4,N/A,N/A,N/A
+20,Vancomycin,Vancomycin,Plasma,Neonates,Gestational age,N/A,N/A,Coefficient of determination and p-value,N/A,Mean,0.6771,N/A,N/A,N/A,N/A,N/A,<.0001,N/A,N/A
+21,Vancomycin,Vancomycin,Plasma,Neonates,Gestational age,N/A,N/A,Slope with confidence interval,per unit of covariate,Mean,0.1412,N/A,N/A,Range,0.0958,0.1867,N/A,N/A,N/A
+22,Vancomycin,Vancomycin,Plasma,Infants,Postnatal age,N/A,N/A,Y-intercept with confidence interval,N/A,Mean,−0.0769,N/A,N/A,Range,−0.3676,0.2139,N/A,N/A,N/A
+23,Vancomycin,Vancomycin,Plasma,Neonates,Postmenstrual age,N/A,N/A,Coefficient of determination and p-value,N/A,r2/P value,0.5447,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+24,Vancomycin,Vancomycin,Plasma,Neonates,Postmenstrual age,N/A,N/A,Slope with confidence interval,per unit of covariate,Slope,0.0317,N/A,N/A,Range,0.0182,0.0453,N/A,N/A,N/A
+25,Vancomycin,Vancomycin,Plasma,Neonates,Postmenstrual age,N/A,N/A,Y-intercept with confidence interval,N/A,Y-intercept,-1.2100,N/A,N/A,Range,-2.0560,0.3629,N/A,N/A,N/A
+26,Vancomycin,Vancomycin,Plasma,Neonates,Gestational age,N/A,N/A,Slope with confidence interval,per unit of covariate,Mean,0.0317,N/A,N/A,Range,0.0182,0.0453,N/A,N/A,N/A
+27,Vancomycin,Vancomycin,Plasma,Infants,Postnatal age,N/A,N/A,Y-intercept with confidence interval,N/A,Mean,-1.2100,N/A,N/A,Range,-2.0560,0.3629,N/A,N/A,N/A
+28,Vancomycin,Vancomycin,Plasma,Neonates,Gestational age,N/A,N/A,Coefficient of determination and p-value,N/A,Mean,0.6620,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+29,Vancomycin,Vancomycin,Plasma,Neonates,Postmenstrual age,N/A,N/A,Slope with confidence interval,per unit of covariate,Mean,3.5700,N/A,N/A,Range,2.3800,4.7590,N/A,N/A,N/A
+30,Vancomycin,Vancomycin,Plasma,Infants,Postnatal age,N/A,N/A,Y-intercept with confidence interval,N/A,Mean,-0.3627,N/A,N/A,Range,-0.7522,0.0268,N/A,N/A,N/A
+31,Vancomycin,Vancomycin,Plasma,Neonates,Gestational age,N/A,N/A,Coefficient of determination and p-value,N/A,Mean,0.3822,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+32,Vancomycin,Vancomycin,Plasma,Neonates,Gestational age,N/A,N/A,Slope with confidence interval,per unit of covariate,Mean,0.0473,N/A,N/A,Range,0.0192,0.0753,N/A,N/A,N/A
+33,Vancomycin,Vancomycin,Plasma,Neonates,Gestational age,N/A,N/A,Y-intercept with confidence interval,N/A,Mean,-0.9317,N/A,N/A,Range,-1.941,-0.0780,N/A,N/A,N/A
+34,Vancomycin,Vancomycin,Plasma,Infants,Postnatal age,N/A,N/A,Coefficient of determination and p-value,N/A,Mean,0.5168,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+35,Vancomycin,Vancomycin,Plasma,Infants,Postnatal age,N/A,N/A,Slope with confidence interval,per unit of covariate,Mean,0.0227,N/A,N/A,Range,0.0125,0.0330,N/A,N/A,N/A
+36,Vancomycin,Vancomycin,Plasma,Infants,Postnatal age,N/A,N/A,Y-intercept with confidence interval,N/A,Mean,0.1960,N/A,N/A,Range,-0.0918,0.4838,N/A,N/A,N/A
+37,Vancomycin,Vancomycin,Plasma,Neonates,Postmenstrual age,N/A,N/A,Coefficient of determination and p-value,N/A,Mean,0.6036,N/A,N/A,N/A,N/A,N/A,<.0001,N/A,N/A
+38,Vancomycin,Vancomycin,Plasma,Neonates,Postmenstrual age,N/A,N/A,Slope with confidence interval,per unit of covariate,Mean,0.0196,N/A,N/A,Range,0.0122,0.0271,N/A,N/A,N/A
+39,Vancomycin,Vancomycin,Plasma,Neonates,Postmenstrual age,N/A,N/A,Y-intercept with confidence interval,N/A,Mean,-0.4307,N/A,N/A,Range,-0.8951,0.0338,N/A,N/A,N/A
+40,Vancomycin,Vancomycin,Plasma,Adults,eGFR,N/A,N/A,Coefficient of determination and p-value,N/A,r2/P value,0.5271,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+41,Vancomycin,Vancomycin,Plasma,Adults,eGFR,N/A,N/A,Slope with confidence interval,per unit of covariate,Slope,1.6650,N/A,N/A,Range,0.9294,2.4010,N/A,N/A,N/A
+42,Vancomycin,Vancomycin,Plasma,Adults,eGFR,N/A,N/A,Y-intercept with confidence interval,N/A,Y-intercept,0.1498,N/A,N/A,Range,-0.1506,0.4502,N/A,N/A,N/A

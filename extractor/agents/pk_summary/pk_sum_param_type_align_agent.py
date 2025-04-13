@@ -17,6 +17,8 @@ from extractor.agents.pk_summary.pk_sum_common_agent import PKSumCommonAgentResu
 PARAMETER_TYPE_ALIGN_PROMPT = ChatPromptTemplate.from_template("""
 There is now a table related to pharmacokinetics (PK). 
 {md_table_summary}
+The extracted table headers are as follows:
+{md_table_summary_header}
 Carefully examine the pharmacokinetics (PK) table and follow these steps to determine how the PK parameter type is represented:
 (1) Identify how the PK parameter type (e.g., Cmax, tmax, t1/2, etc.) is structured in the table:
 Please answer in the following format:
@@ -31,6 +33,14 @@ class ParameterTypeAlignResult(PKSumCommonAgentResult):
 If the PK parameter type is represented as column headers, this value will be None."""
     )
 
+def get_parameter_type_align_prompt(md_table_summary: str):
+    df = markdown_to_dataframe(md_table_summary)
+    headers = [f'"{col}"' for col in df.columns]
+    headers = ",".join(headers)
+    return PARAMETER_TYPE_ALIGN_PROMPT.format(
+        md_table_summary=md_table_summary,
+        md_table_summary_header=headers,
+    )
 
 def post_process_parameter_type_align(
     res: ParameterTypeAlignResult, md_table_summary: str

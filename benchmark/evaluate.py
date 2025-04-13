@@ -124,6 +124,7 @@ class TablesEvaluator:
         for c in self.rating_cols:
             v1 = row1[c]
             v2 = row2[c]
+            value = row1['Value']
             
             orig_sum = sum
             if self.columns_type[c] == ColumnType.Text:
@@ -133,7 +134,7 @@ class TablesEvaluator:
             
             # The following lines are for debugging
             # if orig_sum == sum:
-            #     logger.warning(f"Not equaled column: {c}, v1: {v1}, v2: {v2}")
+            #     logger.warning(f"Not equaled column: {c}, v1: {v1}, v2: {v2}, value: {value}")
 
         return (int)(10.0 * sum / float(len(self.rating_cols)))
 
