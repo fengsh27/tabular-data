@@ -1,0 +1,31 @@
+﻿,Drug name, Analyte, Specimen, Population, Pregnancy stage, Subject N, Parameter type, Value, Unit, Summary statistics, Variation type, Variation value, Interval type, Lower limit, High limit, P value
+0,Isoniazid, Isoniazid, plasma, pediatric, N/A,20, AUC0–24,18.5, h∙mg/L, geometric mean, range, , range,5.1,47.4, 0.888
+1,Isoniazid, Isoniazid, plasma, pediatric, N/A,12, AUC0–24,14.5, h∙mg/L, geometric mean, range, , range,5.9,44.2, 0.888
+2,Isoniazid, Isoniazid, plasma, pediatric, N/A,20, Cmax,4.6, mg/L, geometric mean, range, , range,1,10, 0.366
+3,Isoniazid, Isoniazid, plasma, pediatric, N/A,12, Cmax,4.7, mg/L, geometric mean, range, , range,2.5,13.6, 0.366
+4,Isoniazid, Isoniazid, CSF, pediatric, N/A,6, CCSF0–2,1.4, mg/L, geometric mean, range, , range,0.5,6.1, 
+5,Isoniazid, Isoniazid, CSF, pediatric, N/A,4, CCSF0–2,1.6, mg/L, geometric mean, range, , range,1.2,2.5, 
+6,Isoniazid, Isoniazid, CSF, pediatric, N/A,7, CCSF3–5,1.6, mg/L, geometric mean, range, , range,0.3,5, 
+7,Isoniazid, Isoniazid, CSF, pediatric, N/A,4, CCSF3–5,1.7, mg/L, geometric mean, range, , range,0.6,5, 
+8,Isoniazid, Isoniazid, CSF, pediatric, N/A,7, CCSF6–8,1.3, mg/L, geometric mean, range, , range,1.2,4.3, 
+9,Isoniazid, Isoniazid, CSF, pediatric, N/A,3, CCSF6–8,2.3, mg/L, geometric mean, range, , range,1.9,2.8, 
+10,Rifampicin, Rifampicin, plasma, pediatric, N/A,20, AUC0–24,66.9, h∙mg/L, geometric mean, range, , range,21.7,118.6, 0.442
+11,Rifampicin, Rifampicin, plasma, pediatric, N/A,12, AUC0–24,71.8, h∙mg/L, geometric mean, range, , range,36.1,116.5, 0.442
+12,Rifampicin, Rifampicin, plasma, pediatric, N/A,20, Cmax,9.4, mg/L, geometric mean, range, , range,2.9,23.7, 0.499
+13,Rifampicin, Rifampicin, plasma, pediatric, N/A,12, Cmax,10.4, mg/L, geometric mean, range, , range,5.7,23.3, 0.499
+14,Rifampicin, Rifampicin, CSF, pediatric, N/A,6, CCSF0–2,0.2, mg/L, geometric mean, range, , range,0.1,0.4, 
+15,Rifampicin, Rifampicin, CSF, pediatric, N/A,4, CCSF0–2,0.1, mg/L, geometric mean, range, , range,0.1,0.1, 
+16,Rifampicin, Rifampicin, CSF, pediatric, N/A,7, CCSF3–5,0.3, mg/L, geometric mean, range, , range,0.1,0.8, 
+17,Rifampicin, Rifampicin, CSF, pediatric, N/A,4, CCSF3–5,0.1, mg/L, geometric mean, range, , range,0.1,0.3, 
+18,Rifampicin, Rifampicin, CSF, pediatric, N/A,7, CCSF6–8,0.4, mg/L, geometric mean, range, , range,0.1,1.4, 
+19,Rifampicin, Rifampicin, CSF, pediatric, N/A,3, CCSF6–8,0.2, mg/L, geometric mean, range, , range,0.1,0.7, 
+20,Pyrazinamide, Pyrazinamide, plasma, pediatric, N/A,20, AUC0–24,315.5, h∙mg/L, geometric mean, range, , range,100.6,599, 0.482
+21,Pyrazinamide, Pyrazinamide, plasma, pediatric, N/A,12, AUC0–24,328.4, h∙mg/L, geometric mean, range, , range,143.3,1477.7, 0.482
+22,Pyrazinamide, Pyrazinamide, plasma, pediatric, N/A,20, Cmax,37.7, mg/L, geometric mean, range, , range,15.9,61.7, 0.35
+23,Pyrazinamide, Pyrazinamide, plasma, pediatric, N/A,12, Cmax,40.5, mg/L, geometric mean, range, , range,22.7,88.4, 0.35
+24,Pyrazinamide, Pyrazinamide, CSF, pediatric, N/A,6, CCSF0–2,24.4, mg/L, geometric mean, range, , range,11.1,54.9, 
+25,Pyrazinamide, Pyrazinamide, CSF, pediatric, N/A,4, CCSF0–2,25.6, mg/L, geometric mean, range, , range,21.3,37.1, 
+26,Pyrazinamide, Pyrazinamide, CSF, pediatric, N/A,7, CCSF3–5,30, mg/L, geometric mean, range, , range,19.2,43.3, 
+27,Pyrazinamide, Pyrazinamide, CSF, pediatric, N/A,4, CCSF3–5,24.7, mg/L, geometric mean, range, , range,15.9,38.1, 
+28,Pyrazinamide, Pyrazinamide, CSF, pediatric, N/A,7, CCSF6–8,19.6, mg/L, geometric mean, range, , range,7.2,37.7, 
+29,Pyrazinamide, Pyrazinamide, CSF, pediatric, N/A,3, CCSF6–8,39.4, mg/L, geometric mean, range, , range,23.1,70.8, 
