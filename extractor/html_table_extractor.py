@@ -1,9 +1,21 @@
 from bs4 import BeautifulSoup, Tag
-from typing import Optional
+from typing import Callable, Optional
 import pandas as pd
 
 from extractor.utils import convert_html_table_to_dataframe
 
+def get_tag_text(tag: Tag) -> str:
+    text = tag.text
+    text = text.strip()
+    if text is not None and len(text) > 0:
+        return text
+    children = list(tag.descendants)
+    if len(children) == 0:
+        return text
+    for child in children:
+        the_text = child.text
+        text += the_text
+    return text
 
 class HtmlTableParser(object):
     MAX_LEVEL = 3
@@ -15,16 +27,7 @@ class HtmlTableParser(object):
         pass
 
     def _get_caption_or_footnote_text(self, tag: Tag) -> str:
-        text = tag.text
-        if text is not None and len(text) > 0:
-            return text
-        children = list(tag.descendants)
-        if len(children) == 0:
-            return text
-        for child in children:
-            the_text = child.text
-            text += the_text
-        return text
+        return get_tag_text(tag)
 
     @staticmethod
     def _is_caption_in_text(text):
@@ -135,7 +138,55 @@ class HtmlTableParser(object):
                 }
             )
         return tables
+    
+    def _traverse_up(self, cur: Tag | None, level: int, max_level: int, check_cb: Callable):
+        if cur is None:
+            return False
+        if level == max_level:
+            return False
+        res = check_cb(cur)
+        return res if res else self._traverse_up(cur.parent, level+1, max_level, check_cb)
+    
+    def _traverse_down(self, cur: Tag | None, level: int, max_level: int, check_cb: Callable):
+        if cur is None:
+            return False
+        if level == max_level:
+            return False
+        res = check_cb(cur)
+        if res:
+            return res
+        
+        for child in cur.children:
+            res = self._traverse_down(child, level+1, max_level, check_cb)
+            if res:
+                return res
+            
+        return False
+        
 
+    def extract_title(self, html: str):
+        def check_title_in_tag_classes(tag: Tag):
+            if tag is None:
+                return False
+            classes = tag.attrs.get("class")
+            if classes is None:
+                return False
+            if not isinstance(classes, str):
+                try:
+                    classes = " ".join(classes)
+                except:
+                    return False
+            return "title" in classes
+        
+        soup = BeautifulSoup(html, "html.parser")
+        tags = soup.select("h1")
+        for tag in tags:
+            if self._traverse_up(tag, 1, 5, check_title_in_tag_classes):
+                return get_tag_text(tag)
+            if self._traverse_down(tag, 1, 2, check_title_in_tag_classes):
+                return get_tag_text(tag)
+        
+        return None
 
 class PMCHtmlTableParser(object):
     def __init__(self):
@@ -165,6 +216,15 @@ class PMCHtmlTableParser(object):
 
         return tables
 
+    def extract_title(self, html: str):
+        soup = BeautifulSoup(html, "html.parser")
+        tags = soup.select("hgroup h1")
+        for tag in tags:
+            text = get_tag_text(tag)
+            if len(text.strip()) > 0:
+                return text.strip()
+        return None
+
 
 class HtmlTableExtractor(object):
     def __init__(self):
@@ -182,6 +242,15 @@ class HtmlTableExtractor(object):
 
         tables = HtmlTableExtractor._remove_duplicate(tables)
         return tables
+    
+    def extract_title(self, html: str):
+        for parser in self.parsers:
+            title = parser.extract_title(html)
+            if title is not None:
+                return title
+            
+        return None
+
 
     @staticmethod
     def _tables_eq(tablel: dict, table2: dict) -> bool:

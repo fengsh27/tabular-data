@@ -61,6 +61,7 @@ def extract_pk_summary(
     # step 2: extract tables from paper
     extractor = HtmlTableExtractor()
     tables = extractor.extract_tables(html_content)
+    title = extractor.extract_title(html_content)
     if len(tables) == 0:
         return False, "No table found", None, None
 
@@ -79,6 +80,7 @@ def extract_pk_summary(
         df = workflow.go_md_table(
             md_table=dataframe_to_markdown(df_table),
             caption_and_footnote=caption,
+            title=title,
             step_callback=output_step,
         )
         dfs.append(df)

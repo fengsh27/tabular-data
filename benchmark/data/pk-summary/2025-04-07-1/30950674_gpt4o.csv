@@ -1,0 +1,21 @@
+﻿,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+0,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Vd,L,Mean,3.62,SD,1.94,Range,0.31,8.88,N/A,N/A,N/A
+1,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Vd,L/kg,Mean,0.70,SD,0.48,Range,0.28,2.31,N/A,N/A,N/A
+2,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,CL,L/h,Mean,0.749,SD,0.454,Range,0.020,1.820,N/A,N/A,N/A
+3,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,CL,L/h/kg,Mean,0.124,SD,0.052,Range,0.025,0.268,N/A,N/A,N/A
+4,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,t1/2,h,Mean,4.3,SD,2.6,Range,1.5,11.3,N/A,N/A,N/A
+5,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Vd,L,Mean,1.94,SD,1.94,Range,2.64,4.35,N/A,N/A,N/A
+6,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Vd,L/kg,Mean,0.48,SD,0.48,Range,0.39,0.94,N/A,N/A,N/A
+7,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,CL,L/h,Mean,0.454,SD,0.454,Range,0.414,0.955,N/A,N/A,N/A
+8,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,CL,L/h/kg,Mean,0.052,SD,0.052,Range,0.095,0.133,N/A,N/A,N/A
+9,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,t1/2,h,Mean,2.6,SD,2.6,Range,2.5,5.4,N/A,N/A,N/A
+10,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Vd,L,Mean,53,CV%,53,N/A,N/A,N/A,N/A,N/A,N/A
+11,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Vd,L/kg,Mean,69,CV%,69,N/A,N/A,N/A,N/A,N/A,N/A
+12,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,CL,L/h,Mean,61,CV%,61,N/A,N/A,N/A,N/A,N/A,N/A
+13,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,CL,L/h/kg,Mean,42,CV%,42,N/A,N/A,N/A,N/A,N/A,N/A
+14,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,t1/2,h,Mean,61,CV%,61,N/A,N/A,N/A,N/A,N/A,N/A
+15,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Vd,L,Median,3.50,N/A,N/A,Range,2.64,4.35,N/A,N/A,N/A
+16,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,Vd,L/kg,Median,0.50,N/A,N/A,Range,0.39,0.94,N/A,N/A,N/A
+17,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,CL,L/h,Median,0.737,N/A,N/A,Range,0.414,0.955,N/A,N/A,N/A
+18,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,CL,L/h/kg,Median,0.112,N/A,N/A,Range,0.095,0.133,N/A,N/A,N/A
+19,Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,N/A,t1/2,h,Median,3.8,N/A,N/A,Range,2.5,5.4,N/A,N/A,N/A

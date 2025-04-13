@@ -130,7 +130,8 @@ env.bak/
 venv.bak/
 
 # logs
-logs/*.log
+*.log
+logs/
 benchmark/logs/*.log
 
 # Spyder project settings

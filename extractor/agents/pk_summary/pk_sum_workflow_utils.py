@@ -10,6 +10,7 @@ class PKSumWorkflowState(TypedDict):
     llm: BaseChatOpenAI
     md_table: str
     caption: str
+    title: Optional[str] # paper title
     col_mapping: Optional[dict]
     md_table_drug: Optional[str]
     md_table_patient: Optional[str]

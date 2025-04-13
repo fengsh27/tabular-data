@@ -1,0 +1,29 @@
+,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+0,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,60,Subtherapeutic,mg/L,Count,41,N/A,N/A,N/A,N/A,N/A,<0.001,N/A,N/A
+1,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,60,Therapeutic,mg/L,Count,17,N/A,N/A,N/A,N/A,N/A,<0.001,N/A,N/A
+2,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,60,Supra-therapeutic,mg/L,Count,2,N/A,N/A,N/A,N/A,N/A,0.001,N/A,N/A
+3,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,60,Concentration,mg/L,Median,12.9,N/A,N/A,Range,11.3,17.0,<0.001,N/A,N/A
+4,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,116,Subtherapeutic,mg/L,Count,78,N/A,N/A,N/A,N/A,N/A,<0.001,N/A,N/A
+5,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,116,Therapeutic,mg/L,Count,36,N/A,N/A,N/A,N/A,N/A,<0.001,N/A,N/A
+6,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,116,Supra-therapeutic,mg/L,Count,2,N/A,N/A,N/A,N/A,N/A,0.025,N/A,N/A
+7,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,116,Concentration,mg/L,Median,13.1,N/A,N/A,Range,11.3,16.2,<0.001,N/A,N/A
+8,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,22,<8,ratio,Count,10,N/A,N/A,N/A,N/A,N/A,0.02,N/A,N/A
+9,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,22,≥8,ratio,Count,12,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+10,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,22,Cavg/MIC ratio,ratio,Median,8.8,N/A,N/A,Range,6.2,11.5,0.004,N/A,N/A
+11,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,22,<400,ratio,Count,20,N/A,N/A,N/A,N/A,N/A,0.02,N/A,N/A
+12,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,22,≥400,ratio,Count,2,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+13,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,22,AUC/MIC ratio,ratio,Median,211,N/A,N/A,Range,149,275,0.006,N/A,N/A
+14,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,59,Subtherapeutic,mg/L,Count,6,N/A,N/A,N/A,N/A,N/A,<0.001,N/A,N/A
+15,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,59,Therapeutic,mg/L,Count,44,N/A,N/A,N/A,N/A,N/A,<0.001,N/A,N/A
+16,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,59,Supra-therapeutic,mg/L,Count,9,N/A,N/A,N/A,N/A,N/A,0.001,N/A,N/A
+17,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,59,Concentration,mg/L,Median,20.3,N/A,N/A,Range,17.0,22.2,<0.001,N/A,N/A
+18,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,103,Subtherapeutic,mg/L,Count,13,N/A,N/A,N/A,N/A,N/A,<0.001,N/A,N/A
+19,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,103,Therapeutic,mg/L,Count,77,N/A,N/A,N/A,N/A,N/A,<0.001,N/A,N/A
+20,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,103,Supra-therapeutic,mg/L,Count,13,N/A,N/A,N/A,N/A,N/A,0.025,N/A,N/A
+21,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,103,Concentration,mg/L,Median,19.8,N/A,N/A,Range,16.8,22.1,< 0.001,N/A,N/A
+22,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,17,<8,ratio,Count,2,N/A,N/A,N/A,N/A,N/A,0.02,N/A,N/A
+23,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,17,≥8,ratio,Count,15,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+24,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,17,Cavg/MIC ratio,ratio,Median,12.8,N/A,N/A,Range,10.9,20.9,0.004,N/A,N/A
+25,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,17,<400,ratio,Count,10,N/A,N/A,N/A,N/A,N/A,0.02,N/A,N/A
+26,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,17,≥400,ratio,Count,7,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+27,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,17,AUC/MIC ratio,ratio,Median,307,N/A,N/A,Range,262,502,0.006,N/A,N/A

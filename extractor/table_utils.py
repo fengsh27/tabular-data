@@ -21,6 +21,8 @@ Focus particularly on tables that report:
 - Drug concentrations in body fluids (plasma, urine, cord blood, etc.)
 - PK parameters (e.g., AUC, Cmax, t½)
 - ADME characteristics
+                                                           
+**Exclude tables that primarily present regression analyses or statistical modeling of pharmacokinetic parameters.**
 
 Return the results as a Python list of table indexes in this exact format:
 ["table_index_1", "table_index_2", ...]
