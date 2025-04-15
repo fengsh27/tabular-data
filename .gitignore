@@ -130,7 +130,7 @@ env.bak/
 venv.bak/
 
 # logs
-*.log
+./*.log
 logs/
 benchmark/logs/*.log
 

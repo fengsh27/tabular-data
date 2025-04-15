@@ -26,7 +26,7 @@ class PatientInfoRefinementStep(PKSumCommonAgentStep):
     def leave_step(
         self,
         state: PKSumWorkflowState,
-        res: PKSumCommonAgentResult,
+        step_reasoning_process: str=None,
         processed_res=None,
         token_usage=None,
     ):
@@ -34,7 +34,7 @@ class PatientInfoRefinementStep(PKSumCommonAgentStep):
             state["md_table_patient_refined"] = processed_res
             self._step_output(state, step_output="Result (md_table_patient_refined):")
             self._step_output(state, step_output=processed_res)
-        return super().leave_step(state, res, processed_res, token_usage)
+        return super().leave_step(state, step_reasoning_process, processed_res, token_usage)
 
     def get_schema(self):
         return PatientInfoRefinedResult

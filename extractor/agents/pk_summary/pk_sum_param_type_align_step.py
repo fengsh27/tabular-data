@@ -23,9 +23,9 @@ class ParametertypeAlignStep(PKSumCommonAgentStep):
         md_table_summary = state["md_table_summary"]
         return post_process_parameter_type_align, {"md_table_summary": md_table_summary}
 
-    def leave_step(self, state, res, processed_res=None, token_usage=None):
+    def leave_step(self, state, step_reasoning_process, processed_res=None, token_usage=None):
         if processed_res is not None:
             state["md_table_aligned"] = processed_res
             self._step_output(state, step_output="Result (md_table_aligned):")
             self._step_output(state, step_output=processed_res)
-        return super().leave_step(state, res, processed_res, token_usage)
+        return super().leave_step(state, step_reasoning_process, processed_res, token_usage)

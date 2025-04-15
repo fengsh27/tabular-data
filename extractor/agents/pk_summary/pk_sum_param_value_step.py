@@ -30,7 +30,7 @@ class ParameterValueExtractionStep(PKSumCommonStep):
             self._step_output(f"Trial {round}")
             system_prompt = get_parameter_value_prompt(md_table_aligned, md, caption)
             agent = PKSumCommonAgent(llm=llm)
-            res, processed_res, token_usage = agent.go(
+            res, processed_res, token_usage, reasoning_process = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=INSTRUCTION_PROMPT,
                 schema=ParameterValueResult,
@@ -39,20 +39,21 @@ class ParameterValueExtractionStep(PKSumCommonStep):
             )
             self._step_output(
                 state,
-                step_reasoning_process=res.reasoning_process if res is not None else "",
+                step_reasoning_process=reasoning_process if reasoning_process is not None else "",
             )
             value_list.append(processed_res)
             total_token_usage = increase_token_usage(token_usage)
 
         return (
-            ParameterValueResult(reasoning_process="", extracted_param_values=[[]]),
+            ParameterValueResult(extracted_param_values=[[]]),
             value_list,
             total_token_usage,
+            None,
         )
 
-    def leave_step(self, state, res, processed_res=None, token_usage=None):
+    def leave_step(self, state, step_reasoning_process, processed_res=None, token_usage=None):
         if processed_res is not None:
             state["value_list"] = processed_res
             self._step_output(state, step_output="Result (value_list):")
             self._step_output(state, step_output=str(processed_res))
-        return super().leave_step(state, res, processed_res, token_usage)
+        return super().leave_step(state, step_reasoning_process, processed_res, token_usage)

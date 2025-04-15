@@ -32,15 +32,15 @@ class DrugMatchingAutomaticStep(PKSumCommonStep):
             )
             drug_list.append(dataframe_to_markdown(df_expanded))
 
-        return None, drug_list, {**DEFAULT_TOKEN_USAGE}
+        return None, drug_list, {**DEFAULT_TOKEN_USAGE}, None
 
-    def leave_step(self, state, res, processed_res=None, token_usage=None):
+    def leave_step(self, state, step_reasoning_process, processed_res=None, token_usage=None):
         if processed_res is not None:
             state["drug_list"] = processed_res
             self._step_output(state, step_output="Result (drug_list):")
             self._step_output(state, step_output=str(processed_res))
 
-        return super().leave_step(state, res, processed_res, token_usage)
+        return super().leave_step(state, step_reasoning_process, processed_res, token_usage)
 
 
 class DrugMatchingAgentStep(PKSumCommonStep):
@@ -66,7 +66,7 @@ class DrugMatchingAgentStep(PKSumCommonStep):
                 md_table_aligned, md, md_table_drug, caption
             )
             agent = PKSumCommonAgent(llm=llm)
-            res, processed_res, token_usage = agent.go(
+            res, processed_res, token_usage, reasoning_process = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=INSTRUCTION_PROMPT,
                 schema=MatchedDrugResult,
@@ -76,7 +76,7 @@ class DrugMatchingAgentStep(PKSumCommonStep):
             )
             self._step_output(
                 state,
-                step_reasoning_process=res.reasoning_process if res is not None else "",
+                step_reasoning_process=reasoning_process if reasoning_process is not None else "",
             )
             drug_match_list: list[int] = processed_res
             df_table_drug = markdown_to_dataframe(md_table_drug)
@@ -101,11 +101,11 @@ class DrugMatchingAgentStep(PKSumCommonStep):
             drug_list.append(dataframe_to_markdown(df_table_drug_reordered))
             total_token_usage = increase_token_usage(total_token_usage, token_usage)
 
-        return None, drug_list, total_token_usage
+        return None, drug_list, total_token_usage, None
 
-    def leave_step(self, state, res, processed_res=None, token_usage=None):
+    def leave_step(self, state, step_reasoning_process, processed_res=None, token_usage=None):
         if processed_res is not None:
             state["drug_list"] = processed_res
             self._step_output(state, step_output="Result (drug_list):")
             self._step_output(state, step_output=str(processed_res))
-        return super().leave_step(state, res, processed_res, token_usage)
+        return super().leave_step(state, step_reasoning_process, processed_res, token_usage)

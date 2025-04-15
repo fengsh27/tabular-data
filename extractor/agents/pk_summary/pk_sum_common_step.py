@@ -29,16 +29,14 @@ class PKSumCommonStep(ABC):
     def leave_step(
         self,
         state: PKSumWorkflowState,
-        res: PKSumCommonAgentResult | None = None,
+        step_reasoning_process: str | None = None,
         processed_res: Any | None = None,
         token_usage: dict | None = None,
     ):
         pk_sum_leave_step(
             state=state,
             step_output=self.end_title,
-            step_reasoning_process=res["reasoning_process"]
-            if res is not None and "reasoning_process" in res
-            else None,
+            step_reasoning_process=step_reasoning_process,
             token_usage=token_usage,
         )
 
@@ -50,7 +48,7 @@ class PKSumCommonStep(ABC):
     ):
         def default_output(
             step_output: Optional[str] = None,
-            step_reasoning_process: Optional[str] = None,
+            step_reasoning_process: Optional[str | list[str]] = None,
         ):
             if step_reasoning_process is not None:
                 logger.info(f"\n\nReasoning: \n{step_reasoning_process}\n\n")
@@ -69,8 +67,8 @@ class PKSumCommonStep(ABC):
 
     def execute(self, state: PKSumWorkflowState):
         self.enter_step(state)
-        res, processed_res, token_usage = self.execute_directly(state)
-        self.leave_step(state, res, processed_res, token_usage)
+        res, processed_res, token_usage, reasoning_process = self.execute_directly(state)
+        self.leave_step(state, reasoning_process, processed_res, token_usage)
 
         return state
 
@@ -78,7 +76,7 @@ class PKSumCommonStep(ABC):
     def execute_directly(
         self,
         state: PKSumWorkflowState,
-    ) -> tuple[PKSumCommonAgentResult, Any | None, dict | None]:
+    ) -> tuple[PKSumCommonAgentResult, Any | None, dict | None, str | None]:
         """execute directly"""
 
 
@@ -113,6 +111,7 @@ class PKSumCommonAgentStep(PKSumCommonStep):
         PKSumCommonAgentResult,
         Any | None,
         dict | None,
+        str | None,
     ]:
         """execute step directly"""
         system_prompt = self.get_system_prompt(state)
@@ -122,7 +121,7 @@ class PKSumCommonAgentStep(PKSumCommonStep):
         post_process, kwargs = self.get_post_processor_and_kwargs(state)
         agent = PKSumCommonAgent(llm=llm)
         if kwargs is not None:
-            res, processed_res, token_usage = agent.go(
+            res, processed_res, token_usage, reasoning_process = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=schema,
@@ -130,24 +129,12 @@ class PKSumCommonAgentStep(PKSumCommonStep):
                 **kwargs,
             )
         else:
-            res, processed_res, token_usage = agent.go(
+            res, processed_res, token_usage, reasoning_process = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=schema,
                 post_process=post_process,
             )
-        reasoning_process = ""
-        if res is not None:
-            try:
-                reasoning_process = (
-                    res["reasoning_process"]
-                    if type(res) == dict
-                    else res.reasoning_process
-                )
-            except Exception as e:
-                logger.error(
-                    f"Failed to access res.reasoning_process.\nError is {str(e)}"
-                )
-                pass
+        reasoning_process = reasoning_process if reasoning_process is not None else ""
         self._step_output(state, step_reasoning_process=reasoning_process)
-        return res, processed_res, token_usage
+        return res, processed_res, token_usage, None

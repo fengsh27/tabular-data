@@ -56,11 +56,6 @@ HeaderCategorizeJsonSchema = {
     "description": "Categorized results for headers",
     "type": "object",
     "properties": {
-        "reasoning_process": {
-            "type": "string",
-            "description": "A detailed explanation of the thought process or reasoning steps taken to reach a conclusion.",
-            "title": "Reasoning Process",
-        },
         "categorized_headers": {
             "type": "object",
             "description": 'the dictionary represents the categorized result for headers. Each key is a column header name, and the corresponding value is its assigned category string (one of the values: "Parameter type", "Parameter unit", "Parameter value", "P value" and "Uncategorized")',

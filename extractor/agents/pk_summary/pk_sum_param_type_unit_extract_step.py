@@ -80,7 +80,7 @@ class ExtractParamTypeAndUnitStep(PKSumCommonAgentStep):
                     )
                     instruction_prompt = self.get_instruction_prompt(state)
                     agent = PKSumCommonAgent(llm=llm)
-                    res, processed_res, token_usage = agent.go(
+                    res, processed_res, token_usage, reasoning_process = agent.go(
                         system_prompt=system_prompt,
                         instruction_prompt=instruction_prompt,
                         schema=schema,
@@ -90,8 +90,8 @@ class ExtractParamTypeAndUnitStep(PKSumCommonAgentStep):
                     )
                     self._step_output(
                         state,
-                        step_reasoning_process=res.reasoning_process
-                        if res is not None
+                        step_reasoning_process=reasoning_process \
+                        if reasoning_process is not None \
                         else "",
                     )
                     tuple_type_unit: Tuple[List[str], List[str]] = processed_res
@@ -110,18 +110,18 @@ class ExtractParamTypeAndUnitStep(PKSumCommonAgentStep):
                 type_unit_cache[col_name_of_parameter_type] = type_unit_list[-1]
         return (
             ParamTypeUnitExtractionResult(
-                reasoning_process="",
                 extracted_param_units=ExtractedParamTypeUnits(
                     parameter_types=[], parameter_units=[]
                 ),
             ),
             type_unit_list,
             total_token_usage,
+            None,
         )
 
-    def leave_step(self, state, res, processed_res=None, token_usage=None):
+    def leave_step(self, state, step_reasoning_process, processed_res=None, token_usage=None):
         if processed_res is not None:
             state["type_unit_list"] = processed_res
             self._step_output(state, step_output="Result (type_unit_list):")
             self._step_output(state, step_output=str(processed_res))
-        return super().leave_step(state, res, processed_res, token_usage)
+        return super().leave_step(state, step_reasoning_process, processed_res, token_usage)

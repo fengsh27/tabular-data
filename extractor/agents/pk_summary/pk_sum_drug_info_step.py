@@ -33,7 +33,7 @@ class DrugInfoExtractionStep(PKSumCommonAgentStep):
     def leave_step(
         self,
         state: PKSumWorkflowState,
-        res: PKSumCommonAgentResult,
+        step_reasoning_process=None,
         processed_res=None,
         token_usage=None,
     ):
@@ -41,7 +41,7 @@ class DrugInfoExtractionStep(PKSumCommonAgentStep):
             state["md_table_drug"] = processed_res
             self._step_output(state, step_output="Result (md_table_drug):")
             self._step_output(state, step_output=processed_res)
-        super().leave_step(state, res, processed_res, token_usage)
+        super().leave_step(state, step_reasoning_process, processed_res, token_usage)
 
     def get_schema(self):
         return DrugInfoResult

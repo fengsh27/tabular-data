@@ -183,7 +183,7 @@ class HtmlTableParser(object):
         for tag in tags:
             if self._traverse_up(tag, 1, 5, check_title_in_tag_classes):
                 return get_tag_text(tag)
-            if self._traverse_down(tag, 1, 2, check_title_in_tag_classes):
+            if self._traverse_down(tag, 1, 3, check_title_in_tag_classes):
                 return get_tag_text(tag)
         
         return None

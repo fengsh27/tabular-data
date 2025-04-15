@@ -28,9 +28,9 @@ class IndividualDataDelStep(PKSumCommonAgentStep):
         md_table = state["md_table"]
         return post_process_individual_del_result, {"md_table": md_table}
 
-    def leave_step(self, state, res, processed_res=None, token_usage=None):
+    def leave_step(self, state, step_reasoning_process, processed_res=None, token_usage=None):
         if processed_res is not None:
             state["md_table_summary"] = processed_res
             self._step_output(state, step_output="Result (md_table_summary):")
             self._step_output(state, step_output=processed_res)
-        return super().leave_step(state, res, processed_res, token_usage)
+        return super().leave_step(state, step_reasoning_process, processed_res, token_usage)

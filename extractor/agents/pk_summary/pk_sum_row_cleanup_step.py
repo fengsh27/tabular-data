@@ -19,7 +19,7 @@ class RowCleanupStep(PKSumCommonStep):
     def execute_directly(self, state):
         df_combined = state["df_combined"]
         if df_combined.shape[0] == 0:  # empty table
-            return None, df_combined, {**DEFAULT_TOKEN_USAGE}
+            return None, df_combined, {**DEFAULT_TOKEN_USAGE}, None
 
         # df_combined["original_index"] = df_combined.index
         expected_columns = [
@@ -307,10 +307,10 @@ Result:
 """,
         )
 
-        return None, df_combined, {**DEFAULT_TOKEN_USAGE}
+        return None, df_combined, {**DEFAULT_TOKEN_USAGE}, None
 
-    def leave_step(self, state, res, processed_res=None, token_usage=None):
+    def leave_step(self, state, step_reasoning_process, processed_res=None, token_usage=None):
         if processed_res is not None:
             # update df_combined
             state["df_combined"] = processed_res
-        return super().leave_step(state, res, processed_res, token_usage)
+        return super().leave_step(state, step_reasoning_process, processed_res, token_usage)

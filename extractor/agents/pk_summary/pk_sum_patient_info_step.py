@@ -28,12 +28,12 @@ class PatientInfoExtractionStep(PKSumCommonAgentStep):
             int_list=int_list,
         )
 
-    def leave_step(self, state, res, processed_res=None, token_usage=None):
+    def leave_step(self, state, step_reasoning_process, processed_res=None, token_usage=None):
         if processed_res is not None:
             state["md_table_patient"] = processed_res
             self._step_output(state, step_output="Result (md_table_patient):")
             self._step_output(state, step_output=processed_res)
-        return super().leave_step(state, res, processed_res, token_usage)
+        return super().leave_step(state, step_reasoning_process, processed_res, token_usage)
 
     def get_post_processor_and_kwargs(self, state):
         return post_process_convert_patient_info_to_md_table, None

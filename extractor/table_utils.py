@@ -25,7 +25,7 @@ Focus particularly on tables that report:
 **Exclude tables that primarily present regression analyses or statistical modeling of pharmacokinetic parameters.**
 
 Return the results as a Python list of table indexes in this exact format:
-["table_index_1", "table_index_2", ...]
+[table index 1, table index 2, ...]
 
 The content including markdown table to analyze:
 {table_content}
@@ -69,7 +69,7 @@ def select_pk_summary_tables(html_tables: list[dict[str, str | DataFrame]], llm)
     system_prompt = SELECT_PK_TABLES_PROMPT.format(table_content=table_content)
 
     agent = PKSumCommonAgent(llm=llm)
-    res, tables, token_usage = agent.go(
+    res, tables, token_usage, _ = agent.go(
         system_prompt=system_prompt,
         instruction_prompt=INSTRUCTION_PROMPT,
         schema=TablesSelectionResult,

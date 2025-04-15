@@ -34,14 +34,14 @@ class PatientMatchingAutomaticStep(PKSumCommonStep):
             )  # 这
             patient_list.append(dataframe_to_markdown(df_expanded))
 
-        return None, patient_list, {**DEFAULT_TOKEN_USAGE}
+        return None, patient_list, {**DEFAULT_TOKEN_USAGE}, None
 
-    def leave_step(self, state, res, processed_res=None, token_usage=None):
+    def leave_step(self, state, step_reasoning_process, processed_res=None, token_usage=None):
         if processed_res is not None:
             state["patient_list"] = processed_res
             self._step_output(state, step_output="Result (patient_list):")
             self._step_output(state, step_output=str(processed_res))
-        return super().leave_step(state, res, processed_res, token_usage)
+        return super().leave_step(state, step_reasoning_process, processed_res, token_usage)
 
 
 class PatientMatchingAgentStep(PKSumCommonStep):
@@ -69,7 +69,7 @@ class PatientMatchingAgentStep(PKSumCommonStep):
             )
             instruction_prompt = INSTRUCTION_PROMPT
             agent = PKSumCommonAgent(llm=llm)
-            res, processed_res, token_usage = agent.go(
+            res, processed_res, token_usage, reasoning_process = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=MatchedPatientResult,
@@ -78,7 +78,7 @@ class PatientMatchingAgentStep(PKSumCommonStep):
             )
             self._step_output(
                 state,
-                step_reasoning_process=res.reasoning_process if res is not None else "",
+                step_reasoning_process=reasoning_process if reasoning_process is not None else "",
             )
             patient_match_list: list[int] = processed_res
             df_table_patient = df_table_patient_refined.copy()
@@ -106,16 +106,16 @@ class PatientMatchingAgentStep(PKSumCommonStep):
 
         return (
             MatchedPatientResult(
-                reasoning_process="",
                 matched_row_indices=[],
             ),
             patient_list,
             total_token_usage,
+            None,
         )
 
-    def leave_step(self, state, res, processed_res=None, token_usage=None):
+    def leave_step(self, state, step_reasoning_process, processed_res=None, token_usage=None):
         if processed_res is not None:
             state["patient_list"] = processed_res
             self._step_output(state, step_output="Result (patient_list):")
             self._step_output(state, step_output=str(processed_res))
-        return super().leave_step(state, res, processed_res, token_usage)
+        return super().leave_step(state, step_reasoning_process, processed_res, token_usage)

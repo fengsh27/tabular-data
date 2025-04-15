@@ -26,7 +26,7 @@ class SplitByColumnsStep(PKSumCommonAgentStep):
         md_table_aligned = state["md_table_aligned"]
         return post_process_split_by_columns, {"md_table_aligned": md_table_aligned}
 
-    def leave_step(self, state, res, processed_res=None, token_usage=None):
+    def leave_step(self, state, step_reasoning_process, processed_res=None, token_usage=None):
         col_mapping = state["col_mapping"]
         tmp_md_table_list = []
         md_table_list = processed_res
@@ -57,7 +57,7 @@ class SplitByColumnsStep(PKSumCommonAgentStep):
         state["md_table_list"] = md_table_list
         self._step_output(state, step_output="Result (md_table_list):")
         self._step_output(state, step_output=str(md_table_list))
-        return super().leave_step(state, res, md_table_list, token_usage)
+        return super().leave_step(state, step_reasoning_process, md_table_list, token_usage)
 
     # override super().execute_directly
     def execute_directly(self, state):
@@ -70,10 +70,9 @@ class SplitByColumnsStep(PKSumCommonAgentStep):
             return super().execute_directly(state)
         else:
             res = SplitByColumnsResult(
-                reasoning_process="",
                 sub_tables_columns=[[]],
             )
             processed_res = [
                 md_table_aligned,
             ]
-            return res, processed_res, {**DEFAULT_TOKEN_USAGE}
+            return res, processed_res, {**DEFAULT_TOKEN_USAGE}, None

@@ -53,9 +53,9 @@ class TimeExtractionStep(PKSumCommonAgentStep):
             "md_table_post_processed": self.md_data_lines_after_post_process
         }
 
-    def leave_step(self, state, res, processed_res=None, token_usage=None):
+    def leave_step(self, state, step_reasoning_process, processed_res=None, token_usage=None):
         if processed_res is None:
-            return super().leave_step(state, res, processed_res, token_usage)
+            return super().leave_step(state, step_reasoning_process, processed_res, token_usage)
         md_table_time: str = processed_res
         df_combined = state["df_combined"]
         df_combined = pd.concat(
@@ -69,4 +69,4 @@ class TimeExtractionStep(PKSumCommonAgentStep):
 
         # update state['df_combined]
         state["df_combined"] = df_combined
-        super().leave_step(state, res, processed_res, token_usage)
+        super().leave_step(state, step_reasoning_process, processed_res, token_usage)
