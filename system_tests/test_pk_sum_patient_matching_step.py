@@ -4,6 +4,9 @@ from extractor.agents.pk_summary.pk_sum_patient_matching_step import (
     PatientMatchingAutomaticStep,
     PatientMatchingAgentStep,
 )
+from extractor.agents.pk_summary.pk_sum_patient_matching_agent import (
+    MatchedPatientResult
+)
 from extractor.agents.pk_summary.pk_sum_workflow_utils import PKSumWorkflowState
 
 
@@ -112,6 +115,9 @@ def test_PatientMatchingAgentStep_34183327_table_2(
     md_table_patient_34183327_table_2,
     step_callback,
 ):
+    json_obj = MatchedPatientResult.model_json_schema()
+    print(json_obj)
+
     step = PatientMatchingAgentStep()
     state = PKSumWorkflowState()
     state["llm"] = llm

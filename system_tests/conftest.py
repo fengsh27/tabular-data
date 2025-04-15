@@ -393,12 +393,11 @@ def md_table_drug_29943508_table_1():
 @pytest.fixture(scope="module")
 def md_table_aligned_29943508_table_1():
     return """
-| Parameter type | Mean serum fentanyl concentration, umbilical vein (nmol/L) | Median maternal serum fentanyl concentration at birth (nmol/L) | Mean AUC 0‐120 min for fentanyl in maternal serum (nmol h/L) |
-| --- | --- | --- | --- |
-| Adrenaline group (n = 19) | 0.162 (0.090) (n = 16) | 0.268 [0.193; 0.493]a (n = 16) | 0.428 (0.162) (n = 18) |
-| Control group (n = 20) | 0.151 (0.070) (n = 20) | 0.291 [0.212; 0.502]a (n = 19) | 0.590 (0.197) (n = 15)b |
-| Mean difference | 0.012 [−0.042; 0.065] | −0.061 [−0.205; 0.082] | −0.162 [−0.289; −0.034] |
-| P‐value | .67 | .66a | .015 |
+| Parameter type | Adrenaline group (n = 19) | Control group (n = 20) | Mean difference | P‐value |
+| --- | --- | --- | --- | --- |
+| Mean serum fentanyl concentration, umbilical vein (nmol/L) | 0.162 (0.090) (n = 16) | 0.151 (0.070) (n = 20) | 0.012 [−0.042; 0.065] | .67 |
+| Median maternal serum fentanyl concentration at birth (nmol/L) | 0.268 [0.193; 0.493]a (n = 16) | 0.291 [0.212; 0.502]a (n = 19) | −0.061 [−0.205; 0.082] | .66a |
+| Mean AUC 0‐120 min for fentanyl in maternal serum (nmol h/L) | 0.428 (0.162) (n = 18) | 0.590 (0.197) (n = 15)b | −0.162 [−0.289; −0.034] | .015 |
 """
 
 
@@ -411,6 +410,59 @@ def col_mapping_29943508():
         "Mean difference": "Parameter value",
         "P‐value": "P value",
     }
+
+
+## =============================================================================
+# 16143486_table_2
+
+ghtml_content_16143486_table_2 = """
+<div class="tables frame-topbot rowsep-0 colsep-0" id="tbl2"><span class="captions text-s"><span><p><span class="label">Table 2</span>. Kinetic disposition of lorazepam and its metabolite glucuronide in parturients treated with a single oral dose of 2 mg <em>rac-</em>lorazepam; mean (CI 95%)</p></span></span><div class="groups"><table><thead class="valign-top"><tr><td class="rowsep-1" scope="col"><span class="screen-reader-only">Empty Cell</span></td><th class="rowsep-1 align-left" scope="col">Lorazepam isomeric mixture</th><th class="rowsep-1 align-left" scope="col">Lorazepam-glucuronide isomeric mixture</th></tr></thead><tbody><tr><td class="align-left"><em>C</em><sub>max</sub> (ng/ml)</td><td class="align-left">12.96 (9.42–16.49)</td><td class="align-left">35.55 (8.27–62.83)</td></tr><tr><td class="align-left">t<sub>max</sub> (h)</td><td class="align-left">3.10 (2.57–3.63)</td><td class="align-left">4.33 (2.90–5.77)</td></tr><tr><td class="align-left"><em>t</em><sub>1/2a</sub> (h)</td><td class="align-left">3.16 (2.62–3.68)</td><td class="align-left">1.37 (1.15–1.58)</td></tr><tr><td class="align-left"><em>K</em><sub>a</sub> (h<sup>−1</sup>)</td><td class="align-left">0.23 (0.19–0.28)</td><td class="align-left">0.52 (0.44–0.59)</td></tr><tr><td class="align-left"><em>t</em><sub>1/2</sub><em>β</em> (h)</td><td class="align-left">10.35 (9.39–11.32)</td><td class="align-left">18.17 (14.10–22.23)</td></tr><tr><td class="align-left"><em>β</em> (h<sup>−1</sup>)</td><td class="align-left">0.068 (0.061–0.075)</td><td class="align-left">0.039 (0.032–0.047)</td></tr><tr><td class="align-left">AUC<sup>0–∞</sup> ((ng h)/ml)</td><td class="align-left">175.25 (145.74–204.75)</td><td class="align-left">481.19 (252.87–709.51)</td></tr><tr><td class="align-left">Cl<sub>T</sub>/F (ml/(min kg))</td><td class="align-left">2.61 (2.34–2.88)</td><td class="align-left">–</td></tr><tr><td class="align-left">Vd/F (l)</td><td class="align-left">178.78 (146.46–211.10)</td><td class="align-left">–</td></tr></tbody></table></div><div class="legend"><div class="u-margin-s-bottom">–, Not determined.</div></div></div>
+"""
+
+@pytest.fixture(scope="module")
+def html_content_16143486_table_2():
+    return ghtml_content_16143486_table_2
+
+
+@pytest.fixture(scope="module")
+def caption_16143486_table_2():
+    return """
+Table 2. Kinetic disposition of lorazepam and its metabolite glucuronide in parturients treated with a single oral dose of 2 mg rac-lorazepam; mean (CI 95%)
+–, Not determined.
+"""
+
+
+@pytest.fixture(scope="module")
+def md_table_16143486_table_2():
+    return single_html_table_to_markdown(ghtml_content_16143486_table_2)
+
+
+@pytest.fixture(scope="module")
+def md_table_drug_16143486_table_2():
+    return """
+| Drug name | Analyte | Specimen |
+| --- | --- | --- |
+| Lorazepam | Lorazepam | Plasma |
+| Lorazepam | Lorazepam-glucuronide | Plasma |
+"""
+
+
+@pytest.fixture(scope="module")
+def md_table_patient_16143486_table_2():
+    return """
+| Population | Pregnancy stage | Subject N |
+| --- | --- | --- |
+| parturients | N/A | N/A |
+"""
+
+
+@pytest.fixture(scope="module")
+def md_table_patient_refined_16143486_table_2():
+    return """
+| Population | Pregnancy stage | Pediatric/Gestational age | Subject N |
+| --- | --- | --- | --- |
+| Maternal | N/A | N/A | N/A |
+"""
 
 
 ## =============================================================================
@@ -1710,7 +1762,7 @@ def step_callback():
         step_name: Optional[str] = None,
         step_description: Optional[str] = None,
         step_output: Optional[str] = None,
-        step_reasoning_process: Optional[str] = None,
+        step_reasoning_process: Optional[str | list[str]] = None,
         token_usage: Optional[dict] = None,
     ):
         nonlocal total_tokens
