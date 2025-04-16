@@ -155,18 +155,24 @@ class HtmlTableParser(object):
         res = check_cb(cur)
         if res:
             return res
-        
-        for child in cur.children:
-            res = self._traverse_down(child, level+1, max_level, check_cb)
-            if res:
-                return res
-            
+        try:
+            for child in cur.children:
+                res = self._traverse_down(child, level+1, max_level, check_cb)
+                if res:
+                    return res
+        except AttributeError:
+            return False
         return False
         
 
     def extract_title(self, html: str):
         def check_title_in_tag_classes(tag: Tag):
             if tag is None:
+                return False
+            try:
+                if tag.attrs is None:
+                    return False
+            except AttributeError:
                 return False
             classes = tag.attrs.get("class")
             if classes is None:
@@ -176,7 +182,14 @@ class HtmlTableParser(object):
                     classes = " ".join(classes)
                 except:
                     return False
-            return "title" in classes
+            title_in_classes = "title" in classes
+            if title_in_classes:
+                return True
+            id = tag.attrs.get('id')
+            if id is not None and "title" in id.lower():
+                return True
+            else:
+                return False
         
         soup = BeautifulSoup(html, "html.parser")
         tags = soup.select("h1")
