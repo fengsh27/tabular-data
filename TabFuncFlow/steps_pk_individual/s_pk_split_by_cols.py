@@ -21,16 +21,12 @@ def s_pk_split_by_cols_prompt(md_table, col_mapping):
     mapping_str = "\n".join(f'"{k}" is categorized as "{v},"' for k, v in col_mapping.items())
 
     # Count occurrences of specific categories
-    parameter_type_count = sum(1 for v in col_mapping.values() if v == "Parameter type")
-    parameter_pvalue_count = sum(1 for v in col_mapping.values() if v == "P value")
+    parameter_count = sum(1 for v in col_mapping.values() if v == "Parameter")
+    patient_id_count = sum(1 for v in col_mapping.values() if v == "Patient ID")
 
     # Identify the situation based on category counts
-    if parameter_pvalue_count > 1 and parameter_type_count <= 1:
-        situation_str = "because there are multiple columns categorized as \"P value\","
-    elif parameter_type_count > 1 and parameter_pvalue_count <= 1:
-        situation_str = "because there are multiple columns categorized as \"Parameter type\","
-    elif parameter_type_count > 1 and parameter_pvalue_count > 1:
-        situation_str = "because there are multiple columns categorized as both \"Parameter type\" and \"P value\","
+    if patient_id_count > 1:
+        situation_str = "because there are multiple columns categorized as \"Patient ID\","
     else:
         situation_str = ""
 
@@ -44,7 +40,7 @@ This table contains multiple columns, categorized as follows:
 This table can be split into multiple sub-tables {situation_str}.
 Please follow these steps:
   (1) Carefully review all columns and analyze their relationships to determine logical groupings.
-  (2) Ensure that each group contains exactly one 'Parameter type' column and at most one 'P value' column.
+  (2) Ensure that each group contains exactly one 'Patient ID'.
 
 Return the results as a list of lists, where each inner list represents a sub-table with its included columns.
 Enclose the final list within double angle brackets (<< >>) like this:

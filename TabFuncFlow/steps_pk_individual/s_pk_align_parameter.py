@@ -48,14 +48,19 @@ def s_pk_align_parameter(md_table, model_name="gemini_15_pro", max_retries=5, in
 
             df_table = markdown_to_dataframe(md_table)
 
+            # if col_name:
+            #     # col_name = fix_col_name(col_name, md_table)
+            #     # df_table = df_table.rename(columns={col_name: "Parameter type"})
+            #     return_md_table = dataframe_to_markdown(df_table)
+            # else:
+            #     df_table = f_transpose(df_table)
+            #     # df_table.columns = ["Parameter type"] + list(df_table.columns[1:])
+            #     return_md_table = deduplicate_headers(fill_empty_headers(remove_empty_col_row(dataframe_to_markdown(df_table))))
             if col_name:
-                col_name = fix_col_name(col_name, md_table)
-                df_table = df_table.rename(columns={col_name: "Parameter type"})
-                return_md_table = dataframe_to_markdown(df_table)
-            else:
                 df_table = f_transpose(df_table)
-                df_table.columns = ["Parameter type"] + list(df_table.columns[1:])
                 return_md_table = deduplicate_headers(fill_empty_headers(remove_empty_col_row(dataframe_to_markdown(df_table))))
+            else:
+                return_md_table = dataframe_to_markdown(df_table)
 
             return return_md_table, res, "\n\n".join(all_content), total_usage, truncated
 

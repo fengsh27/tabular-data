@@ -18,19 +18,16 @@ From the main table above, I have extracted the following columns to create Subt
 {extracted_param_types}  
 Below is Subtable 1:
 {display_md_table(md_table_aligned_with_1_param_type_and_value)}
-Additionally, I have compiled Subtable 2, where each row represents a unique combination of "Population" - "Pregnancy stage" - "Subject N," as follows:
+Additionally, I have compiled Subtable 2, where each row represents a unique combination of "Patient ID" - "Population" - "Pregnancy stage," as follows:
 {display_md_table(patient_md_table)}
 Carefully analyze the tables and follow these steps:  
 (1) For each row in Subtable 1, find **the best matching one** row in Subtable 2. Return a list of unique row indices (as integers) from Subtable 2 that correspond to each row in Subtable 1.  
 (2) Strictly ensure that you process only rows 0 to {markdown_to_dataframe(md_table_aligned_with_1_param_type_and_value).shape[0] - 1} from the Subtable 1 (which has {markdown_to_dataframe(md_table_aligned_with_1_param_type_and_value).shape[0]} rows in total).  
     - The number of processed rows must **exactly match** the number of rows in the Subtable 1—no more, no less.  
-(3) The "Subject N" values within each population group sometimes differ slightly across parameters. This reflects data availability for each specific parameter within that age group. 
-    - For instance, if the total N is 10 but a specific data point corresponds to 9, the correct Subject N for that row should be 9. It is essential to ensure that each row is matched with the appropriate Subject N accordingly.
-(4) Format the final list within double angle brackets without removing duplicates or sorting, like this:
-    <<[1,1,2,2,3,3]>>
-(5) In rare cases where a row in Subtable 1 cannot be matched, return -1 for that row. This should only be used when absolutely necessary.
+(3) If a row in Subtable 1 cannot be matched, **do not** ignore it. Instead, make your best effort to return the closest possible number by checking the surrounding rows, as they are likely to be relevant.
+(4) Format the final list within double angle brackets without removing duplicates or sorting, like this:  
+    <<[1,1,2,2,3,3,0,0]>>
 """
-# (3) If a row in Subtable 1 cannot be matched, return -1 for that row.
 
 
 def s_pk_match_patient_info(md_table_aligned, caption, md_table_aligned_with_1_param_type_and_value, patient_md_table, model_name="gemini_15_pro", max_retries=5, initial_wait=1):
