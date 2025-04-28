@@ -1,5 +1,8 @@
 from TabFuncFlow.utils.llm_utils import *
 from TabFuncFlow.operations.f_transpose import *
+import time
+import ast
+import re
 
 
 def s_pk_align_parameter_prompt(md_table):
@@ -14,59 +17,55 @@ If the PK parameter type is represented as column headers, return [[COL]].
 """
 
 
-def s_pk_align_parameter_parse(content, usage):
-    content = content.replace("\n", "")
-    match_col = re.search(r"\[\[COL\]\]", content)
-    matches = re.findall(r"<<.*?>>", content)
-    match_angle = matches[-1] if matches else None
-
-    if match_col:
-        return None
-    elif match_angle:
-        match_name = match_angle[2:-2]
-        return match_name
-    else:
-        raise ValueError(
-            "No valid alignment parameter found in content.",
-            f"\n{content}",
-            f"\n<<{usage}>>",
-        )
-
-
-def s_pk_align_parameter(md_table, model_name="gemini_15_pro"):
+def s_pk_align_parameter(md_table, model_name="gemini_15_pro", max_retries=5, initial_wait=1):
     msg = s_pk_align_parameter_prompt(md_table)
-    messages = [
-        msg,
-    ]
+    messages = [msg]
     question = "Do not give the final result immediately. First, explain your thought process, then provide the answer."
 
-    res, content, usage, truncated = get_llm_response(
-        messages, question, model=model_name
-    )
-    # print(display_md_table(md_table))
-    # print(usage, content)
+    retries = 0
+    wait_time = initial_wait
+    total_usage = 0
+    all_content = []
 
-    try:
-        col_name = s_pk_align_parameter_parse(content, usage)
-    except Exception as e:
-        raise RuntimeError(
-            f"Error in s_pk_align_parameter_parse: {e}",
-            f"\n{content}",
-            f"\n<<{usage}>>",
-        ) from e
+    while retries < max_retries:
+        try:
+            res, content, usage, truncated = get_llm_response(messages, question, model=model_name)
+            content = fix_angle_brackets(content)
 
-    if col_name:
-        df_table = markdown_to_dataframe(md_table)
-        col_name = fix_col_name(col_name, md_table)
-        df_table = df_table.rename(columns={f"{col_name}": "Parameter type"})  # better?
-        return_md_table = dataframe_to_markdown(df_table)
-    else:
-        df_table = f_transpose(markdown_to_dataframe(md_table))
-        df_table.columns = ["Parameter type"] + list(df_table.columns[1:])
-        return_md_table = deduplicate_headers(
-            fill_empty_headers(remove_empty_col_row(dataframe_to_markdown(df_table)))
-        )
+            total_usage += usage
+            all_content.append(f"Attempt {retries + 1}:\n{content}")
 
-    # print(display_md_table(return_md_table))
+            content = content.replace('\n', '')
+            matches = re.findall(r'<<.*?>>', content)
+            match_col = re.search(r'\[\[COL\]\]', content)
 
-    return return_md_table, res, content, usage, truncated
+            if match_col:
+                col_name = None
+            elif matches:
+                col_name = matches[-1][2:-2]
+            else:
+                raise ValueError(f"No valid alignment parameter found.")
+
+            df_table = markdown_to_dataframe(md_table)
+
+            if col_name:
+                col_name = fix_col_name(col_name, md_table)
+                df_table = df_table.rename(columns={col_name: "Parameter type"})
+                return_md_table = dataframe_to_markdown(df_table)
+            else:
+                df_table = f_transpose(df_table)
+                df_table.columns = ["Parameter type"] + list(df_table.columns[1:])
+                return_md_table = deduplicate_headers(fill_empty_headers(remove_empty_col_row(dataframe_to_markdown(df_table))))
+
+            return return_md_table, res, "\n\n".join(all_content), total_usage, truncated
+
+        except Exception as e:
+            retries += 1
+            print(f"Attempt {retries}/{max_retries} failed: {e}")
+            if retries < max_retries:
+                print(f"Retrying in {wait_time} seconds...")
+                time.sleep(wait_time)
+                wait_time *= 2
+
+    raise RuntimeError(f"All {max_retries} attempts failed. Unable to align parameter column.")
+

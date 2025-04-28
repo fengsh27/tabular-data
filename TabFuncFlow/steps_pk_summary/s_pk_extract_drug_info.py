@@ -2,6 +2,8 @@ import ast
 from TabFuncFlow.utils.llm_utils import *
 from TabFuncFlow.operations.f_transpose import *
 import pandas as pd
+import time
+import re
 
 
 def s_pk_extract_drug_info_prompt(md_table, caption):
@@ -22,58 +24,51 @@ Specimen is the type of sample.
 """
 
 
-def s_pk_extract_drug_info_parse(content, usage):
-    content = content.replace("\n", "")
-    matches = re.findall(r"<<.*?>>", content)
-    match_angle = matches[-1] if matches else None
-
-    if match_angle:
-        try:
-            match_list = ast.literal_eval(match_angle[2:-2])
-            return match_list
-        except Exception as e:
-            raise ValueError(
-                f"Failed to parse extracted data: {e}", f"\n{content}", f"\n<<{usage}>>"
-            ) from e
-    else:
-        raise ValueError(
-            "No matching drug info found in content.", f"\n{content}", f"\n<<{usage}>>"
-        )
-
-
-def s_pk_extract_drug_info(md_table, caption, model_name="gemini_15_pro"):
+def s_pk_extract_drug_info(md_table, caption, model_name="gemini_15_pro", max_retries=5, initial_wait=1):
     msg = s_pk_extract_drug_info_prompt(md_table, caption)
-
-    messages = [
-        msg,
-    ]
+    messages = [msg]
     question = "Do not give the final result immediately. First, explain your thought process, then provide the answer."
 
-    res, content, usage, truncated = get_llm_response(
-        messages, question, model=model_name
-    )
-    # print(display_md_table(md_table))
-    # print(usage, content)
+    retries = 0
+    wait_time = initial_wait
+    total_usage = 0
+    all_content = []
 
-    try:
-        match_list = s_pk_extract_drug_info_parse(content, usage)
-    except Exception as e:
-        raise RuntimeError(
-            f"Error in s_pk_extract_drug_info_parse: {e}",
-            f"\n{content}",
-            f"\n<<{usage}>>",
-        ) from e
+    while retries < max_retries:
+        try:
+            res, content, usage, truncated = get_llm_response(messages, question, model=model_name)
+            content = fix_angle_brackets(content)
 
-    match_list = list(map(list, set(map(tuple, match_list))))
+            total_usage += usage
+            all_content.append(f"Attempt {retries + 1}:\n{content}")
 
-    if not match_list:
-        raise ValueError(
-            "Drug info extraction failed: match_list is empty!",
-            f"\n{content}",
-            f"\n<<{usage}>>",
-        )
+            content = content.replace('\n', '')
+            matches = re.findall(r'<<.*?>>', content)
+            match_angle = matches[-1] if matches else None
 
-    df_table = pd.DataFrame(match_list, columns=["Drug name", "Analyte", "Specimen"])
-    return_md_table = dataframe_to_markdown(df_table)
-    # print(display_md_table(return_md_table))
-    return return_md_table, res, content, usage, truncated
+            if match_angle:
+                try:
+                    match_list = ast.literal_eval(fix_trailing_brackets(match_angle[2:-2]))
+                    match_list = [list(t) for t in dict.fromkeys(map(tuple, match_list))]
+                except Exception as e:
+                    raise ValueError(f"Failed to parse extracted drug information. {e}") from e
+            else:
+                raise ValueError("No drug information found in the extracted content.")
+
+            if not match_list:
+                raise ValueError("Drug information extraction failed: No valid entries found!")
+
+            df_table = pd.DataFrame(match_list, columns=["Drug name", "Analyte", "Specimen"])
+            return_md_table = dataframe_to_markdown(df_table)
+
+            return return_md_table, res, "\n\n".join(all_content), total_usage, truncated
+
+        except Exception as e:
+            retries += 1
+            print(f"Attempt {retries}/{max_retries} failed: {e}")
+            if retries < max_retries:
+                print(f"Retrying in {wait_time} seconds...")
+                time.sleep(wait_time)
+                wait_time *= 2
+
+    raise RuntimeError(f"All {max_retries} attempts failed. Unable to extract drug information.")
