@@ -33,6 +33,7 @@ from extractor.request_geminiai import (
 from extractor.utils import (
     convert_csv_table_to_dataframe,
     convert_html_to_text,
+    convert_html_to_text_no_table,  # Yichuan
     escape_markdown,
     extract_table_title,
     is_valid_csv_table,
@@ -127,13 +128,15 @@ def on_input_change(pmid: Optional[str] = None):
     stamper.output_html(html_content)
 
     # extract text and tables
-    paper_text = convert_html_to_text(html_content)
+    # paper_text = convert_html_to_text(html_content)
+    paper_text = convert_html_to_text_no_table(html_content)
     paper_text = remove_references(paper_text)
     ss.main_article_text = paper_text
     extractor = HtmlTableExtractor()
     retrieved_tables = extractor.extract_tables(html_content)
     ss.main_retrieved_tables = retrieved_tables
     ss.main_retrieved_title = extractor.extract_title(html_content)
+    ss.main_retrieved_abstract = extractor.extract_abstract(html_content)
 
     tmp_info = (
         "no table found"
@@ -289,8 +292,6 @@ def on_extract(pmid: str):
                 caption_and_footnote=caption,
                 step_callback=output_step,
             )
-            # if df is not None:
-            #     output_info("********")
             dfs.append(df)
         # return
         df_combined = (
@@ -343,6 +344,7 @@ def main_tab():
     ss.setdefault("main_token_usage", None)
     ss.setdefault("main_retrieved_tables", None)
     ss.setdefault("main_retrieved_title", None)
+    ss.setdefault("main_retrieved_abstract", None)  # Yichuan 0501
     ss.setdefault("main_extracted_btn_disabled", True)
     ss.setdefault("main_prompts_option", PROMPTS_NAME_PK_SUM)
     ss.setdefault("main_llm_option", LLM_CHATGPT_4O)
@@ -369,7 +371,7 @@ def main_tab():
             )
             pmid_retrieve_btn = st.button(
                 # retrieve_btn = st.button(
-                "Retrieve Tables ...",
+                "Retrieve Article...",
                 key="w-pmid-retrieve",
             )
             pmid_extract_btn = st.button(
@@ -441,12 +443,15 @@ def main_tab():
             # st.markdown(ss.main_extracted_result)
             st.divider()
         if ss.main_retrieved_title is not None and len(ss.main_retrieved_title) > 0:
-            st.markdown("Paper Title: " + escape_markdown(ss.main_retrieved_title))
+            st.subheader(escape_markdown(ss.main_retrieved_title))
+        if ss.main_retrieved_abstract is not None and len(ss.main_retrieved_abstract) > 0:
+            st.subheader("Abstract:")
+            st.markdown(escape_markdown(ss.main_retrieved_abstract))
         if ss.main_retrieved_tables is not None and len(ss.main_retrieved_tables) > 0:
-            st.subheader("Tables in Article:")
+            st.subheader("Tables:")
             for ix in range(len(ss.main_retrieved_tables)):
                 tbl = ss.main_retrieved_tables[ix]
-                st.subheader(f"Table {ix+1}")
+                st.markdown(f"##### Table {ix+1}")
                 if "caption" in tbl:
                     st.markdown(escape_markdown(tbl["caption"]))
                 if "table" in tbl:

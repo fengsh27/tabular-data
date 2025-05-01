@@ -88,6 +88,17 @@ def convert_html_to_text(html_content: str) -> str:
     return text
 
 
+def convert_html_to_text_no_table(html_content: str) -> str:
+    """
+    Yichuan: convert_html_to_text, but no table
+    """
+    soup = BeautifulSoup(html_content, "html.parser")
+    for table in soup.find_all("table"):
+        table.decompose()
+    text = soup.get_text(separator="\n", strip=True)
+    return text
+
+
 def remove_references(text: str):
     ix = text.lower().rfind("references")
     if ix < 0:
