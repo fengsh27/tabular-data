@@ -11,7 +11,8 @@ from extractor.utils import convert_csv_table_to_dataframe
 from extractor.constants import (
     PKSUMMARY_TABLE_OUTPUT_COLUMNS,
     PROMPTS_NAME_PE,
-    PROMPTS_NAME_PK,
+    PROMPTS_NAME_PK_SUM,
+    PROMPTS_NAME_PK_IND,
 )
 
 # 30950674
@@ -49,7 +50,7 @@ def test_pandas_read_csv():
 def test_converter(pmid, expected):
     with open(f"./tests/data/{pmid}_result.json", "r") as fobj:
         res_str = fobj.read()
-        prompts_type = PROMPTS_NAME_PE if "_pe" in pmid else PROMPTS_NAME_PK
+        prompts_type = PROMPTS_NAME_PE if "_pe" in pmid else PROMPTS_NAME_PK_SUM
         processor = GeneratedPKSummaryTableProcessor(prompts_type=prompts_type)
         csv_str = processor.process_content(res_str)
         buf = StringIO(csv_str)
@@ -126,7 +127,7 @@ def test_36396314_gpt_4o_error_result_json_1():
 
 
 def test_plugin():
-    p = JsonEnclosePropertyNameInQuotesPlugin(PROMPTS_NAME_PK)
+    p = JsonEnclosePropertyNameInQuotesPlugin(PROMPTS_NAME_PK_SUM)
     processed_str = p.process(json_content1)
     assert processed_str is not None
 

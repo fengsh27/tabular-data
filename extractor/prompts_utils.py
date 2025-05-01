@@ -10,7 +10,8 @@ from extractor.constants import (
     TABLE_OUTPUT_NOTES,
     TABLE_ROLE_PROMPTS,
     TABLE_SOURCE_PROMPTS,
-    PROMPTS_NAME_PK,
+    PROMPTS_NAME_PK_SUM,
+    PROMPTS_NAME_PK_IND,
     PROMPTS_NAME_PE,
 )
 
@@ -20,11 +21,11 @@ logger = logging.getLogger(__name__)
 class TableExtractionPromptsGenerator(object):
     def __init__(self, prompt_type: str):
         self.prompt_type = (
-            prompt_type if prompt_type == PROMPTS_NAME_PK else PROMPTS_NAME_PE
+            prompt_type if prompt_type == PROMPTS_NAME_PK_SUM else PROMPTS_NAME_PE
         )
 
     def _read_prompts_config_file(self):
-        if self.prompt_type == PROMPTS_NAME_PK:
+        if self.prompt_type == PROMPTS_NAME_PK_SUM:
             return open("./prompts/pk_prompts.json", "r")
         else:
             return open("./prompts/pe_prompts.json", "r")
