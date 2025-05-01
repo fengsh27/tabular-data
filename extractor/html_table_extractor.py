@@ -238,6 +238,33 @@ class PMCHtmlTableParser(object):
                 return text.strip()
         return None
 
+    def extract_abstract(self, html: str):
+        """
+        Yichuan 0501
+        """
+        soup = BeautifulSoup(html, "html.parser")
+
+        # Find a heading tag that contains the word "abstract" (case-insensitive)
+        abstract_heading = soup.find(
+            lambda tag: tag.name in ["h2", "h3"] and "abstract" in tag.get_text(strip=True).lower()
+        )
+
+        if not abstract_heading:
+            return None  # No abstract heading found
+
+        # Find the parent <section> or container that wraps the abstract
+        abstract_section = abstract_heading.find_parent("section")
+        if not abstract_section:
+            return None  # No wrapping section found
+
+        # Extract all <p> tags (paragraphs) under the abstract section
+        abstract_paragraphs = abstract_section.find_all("p")
+
+        # Combine the text from each paragraph
+        abstract_text = "\n".join(p.get_text(separator=" ", strip=True) for p in abstract_paragraphs)
+
+        return abstract_text.strip()
+
 
 class HtmlTableExtractor(object):
     def __init__(self):
@@ -262,6 +289,17 @@ class HtmlTableExtractor(object):
             if title is not None:
                 return title
             
+        return None
+
+    def extract_abstract(self, html: str):
+        """
+        Yichuan 0501
+        """
+        for parser in self.parsers:
+            title = parser.extract_abstract(html)
+            if title is not None:
+                return title
+
         return None
 
 
