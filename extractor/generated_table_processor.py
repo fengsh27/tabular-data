@@ -11,7 +11,7 @@ from extractor.utils import (
 logger = logging.getLogger(__name__)
 
 from extractor.constants import (
-    PROMPTS_NAME_PK,
+    PROMPTS_NAME_PK_SUM,
 )
 
 
@@ -20,7 +20,7 @@ class JsonEnclosePropertyNameInQuotesPlugin:
     This plugin is to ensure in json, the property names are enclosed in quotes ""
     """
 
-    def __init__(self, prompts_type: str = PROMPTS_NAME_PK) -> None:
+    def __init__(self, prompts_type: str = PROMPTS_NAME_PK_SUM) -> None:
         self.prompts_type = prompts_type
         with open("./prompts/pk_prompts.json", "r") as pk_obj:
             pk_str = pk_obj.read()
@@ -31,7 +31,7 @@ class JsonEnclosePropertyNameInQuotesPlugin:
 
     def process(self, json_str: str):
         prompts = (
-            self.pk_prompts if self.prompts_type == PROMPTS_NAME_PK else self.pe_prompts
+            self.pk_prompts if self.prompts_type == PROMPTS_NAME_PK_SUM else self.pe_prompts
         )
         column_names = prompts["table_extraction_prompts"]["output_columns"]
         for cn in column_names:
@@ -71,7 +71,7 @@ class GeneratedPKSummaryTableProcessor(object):
 
     def __init__(
         self,
-        prompts_type: Optional[str] = PROMPTS_NAME_PK,
+        prompts_type: Optional[str] = PROMPTS_NAME_PK_SUM,
         delimiter: Optional[str] = ", ",
     ):
         self.prompt_type = prompts_type
@@ -99,7 +99,7 @@ class GeneratedPKSummaryTableProcessor(object):
     def _get_prompts_columns_and_columns_dict(self):
         fn = (
             "./prompts/pk_prompts.json"
-            if self.prompt_type == PROMPTS_NAME_PK
+            if self.prompt_type == PROMPTS_NAME_PK_SUM
             else "./prompts/pe_prompts.json"
         )
         with open(fn, "r") as fobj:

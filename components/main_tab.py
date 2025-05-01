@@ -12,10 +12,12 @@ from TabFuncFlow.utils.table_utils import dataframe_to_markdown
 from extractor.table_utils import select_pk_summary_tables
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
 from extractor.agents.pk_summary.pk_sum_workflow import PKSumWorkflow
+from extractor.agents.pk_individual.pk_ind_workflow import PKIndWorkflow
 from extractor.constants import (
     LLM_CHATGPT_4O,
     PROMPTS_NAME_PE,
-    PROMPTS_NAME_PK,
+    PROMPTS_NAME_PK_SUM,
+    PROMPTS_NAME_PK_IND,
     LLM_GEMINI_PRO,
     LLM_DEEPSEEK_CHAT,
 )
@@ -160,7 +162,7 @@ def on_extract(pmid: str):
     )
     ss.token_usage = None
     ss.logs = ""
-    if ss.main_prompts_option == PROMPTS_NAME_PK:
+    if ss.main_prompts_option == PROMPTS_NAME_PK_SUM:
         include_tables = ss.main_retrieved_tables
 
         output_info("We are going to select pk summary tables")
@@ -234,6 +236,82 @@ def on_extract(pmid: str):
         # ss.main_token_usage = sum(step3_usage_list)
         return
 
+    elif ss.main_prompts_option == PROMPTS_NAME_PK_IND:
+        include_tables = ss.main_retrieved_tables
+
+        output_info("We are going to select pk individual tables")
+
+        """ Step 1 - Identify PK Tables """
+        """ REUSE PK SUM """
+        """ Analyze the given HTML to determine which tables are about PK. """
+        """ Example response: ["Table 1", "Table 2"] """
+        selected_tables, indexes, token_usage = select_pk_summary_tables(
+            include_tables, llm
+        )
+        table_no = []
+        for ix in indexes:
+            table_no.append(f"Table {int(ix)+1}")
+
+        try:
+            if len(table_no) == 0:
+                notification = "After analyzing the provided content, none of the tables contain pharmacokinetic (PK) data or ADME properties."
+            else:
+                notification = f"From the paper you selected, the following table(s) are related to PK (Pharmacokinetics): {table_no}"
+
+            output_info(notification)
+            output_info(
+                "Step 1 completed, token usage: " + str(token_usage["total_tokens"])
+            )
+            st.write(notification)
+            st.write(
+                f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Step 1 completed, token usage: {token_usage['total_tokens']}"
+            )
+
+        except Exception as e:
+            logger.error(e)
+            st.error(e)
+            return
+
+        """ Step 2 - Further Divide Each Table """
+        # step1_content = ['Table II', 'Table III']
+
+        time.sleep(0.1)
+
+        dfs = []
+        for table in selected_tables:
+            df_table = table["table"]
+            caption = "\n".join([table["caption"], table["footnote"]])
+            workflow = PKIndWorkflow(llm=llm)
+            workflow.build()
+            df = workflow.go_md_table(
+                title=ss.main_retrieved_title,
+                md_table=dataframe_to_markdown(df_table),
+                caption_and_footnote=caption,
+                step_callback=output_step,
+            )
+            # if df is not None:
+            #     output_info("********")
+            dfs.append(df)
+        # return
+        df_combined = (
+            pd.concat(dfs, axis=0).reset_index(drop=True)
+            if len(dfs) > 0
+            else pd.DataFrame()
+        )
+
+        ss.token_usage = (
+            ss.token_usage if ss.token_usage is not None else {**DEFAULT_TOKEN_USAGE}
+        )
+        output_info(
+            f"Extracting tabular data completed, token usage: {ss.token_usage['total_tokens']}"
+        )
+        st.write(
+            f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Extracting tabular data completed, token usage: {ss.token_usage['total_tokens']}"
+        )
+
+        ss.main_extracted_result = df_combined
+        ss.main_token_usage = ss.token_usage
+        return
 
 def on_retrive_table_from_html_table(html_table: str):
     html_table = html_table.strip()
@@ -266,17 +344,18 @@ def main_tab():
     ss.setdefault("main_retrieved_tables", None)
     ss.setdefault("main_retrieved_title", None)
     ss.setdefault("main_extracted_btn_disabled", True)
-    ss.setdefault("main_prompts_option", PROMPTS_NAME_PK)
+    ss.setdefault("main_prompts_option", PROMPTS_NAME_PK_SUM)
     ss.setdefault("main_llm_option", LLM_CHATGPT_4O)
     ss.setdefault("logs", "")
     ss.setdefault("token_usage", None)
 
-    modal = Modal(
-        "Prompts",
-        key="prompts-modal",
-        padding=10,
-        max_width=1200,
-    )
+    # Note: The modal functionality below is currently unused. - Yichuan
+    # modal = Modal(
+    #     "Prompts",
+    #     key="prompts-modal",
+    #     padding=10,
+    #     max_width=1200,
+    # )
     global stamper
     st.title("Extract Tabular Data")
     extracted_panel, prompts_panel = st.columns([2, 1])
@@ -393,7 +472,7 @@ def main_tab():
         )
         ss.main_llm_option = llm_option
         st.divider()
-        prompts_array = (PROMPTS_NAME_PK, PROMPTS_NAME_PE)
+        prompts_array = (PROMPTS_NAME_PK_SUM, PROMPTS_NAME_PK_IND, PROMPTS_NAME_PE)
         option = st.selectbox(
             "What type of prompts would you like to use?", prompts_array, index=0
         )
@@ -417,13 +496,14 @@ def main_tab():
                     # key=f"w-pmid-tbl-check-{ix}"
                 )
 
-    if modal.is_open():
-        generator = TableExtractionPromptsGenerator(ss.main_prompts_option)
-        prmpts = generator.get_prompts_file_content()
-        prmpts += "\n\n\n"
-        with modal.container():
-            st.text(prmpts)
-            st.divider()
+    # Note: The modal functionality below is currently unused. - Yichuan
+    # if modal.is_open():
+    #     generator = TableExtractionPromptsGenerator(ss.main_prompts_option)
+    #     prmpts = generator.get_prompts_file_content()
+    #     prmpts += "\n\n\n"
+    #     with modal.container():
+    #         st.text(prmpts)
+    #         st.divider()
 
     js = f"""
 <script>

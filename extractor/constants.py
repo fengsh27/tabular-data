@@ -33,7 +33,8 @@ MAX_FULL_TEXT_LENGTH = 31 * 1024  # should not be greater than 31K
 ERROR_UNKNOWN_ERROR = -1
 ERROR_OK = 5000
 
-PROMPTS_NAME_PK = "Pharmacokinetics Summary"
+PROMPTS_NAME_PK_SUM = "Pharmacokinetics Summary"
+PROMPTS_NAME_PK_IND = "Pharmacokinetics Individual"
 PROMPTS_NAME_PE = "Pharmaco-Epidemiology "
 
 LLM_CHATGPT_4O = "ChatGPT 4o"

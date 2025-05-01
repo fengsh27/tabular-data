@@ -1,11 +1,11 @@
 from extractor.prompts_utils import (
     TableExtractionPromptsGenerator,
 )
-from extractor.constants import PROMPTS_NAME_PK, PROMPTS_NAME_PE
+from extractor.constants import PROMPTS_NAME_PK_SUM, PROMPTS_NAME_PK_IND, PROMPTS_NAME_PE
 
 
 def test_TableExtractionPKSummaryPromptsGenerator():
-    generator = TableExtractionPromptsGenerator(PROMPTS_NAME_PK)
+    generator = TableExtractionPromptsGenerator(PROMPTS_NAME_PK_SUM)
     prmpts = generator.generate_system_prompts()
     columns = prmpts[176:223]
     assert columns == "DN,Ana,Sp,Pop,PS,SN,PT,V,U,SS,VT,VV,IT,LL,HL,PV"
