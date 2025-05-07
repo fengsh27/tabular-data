@@ -4,7 +4,6 @@ import streamlit as st
 from datetime import datetime
 import logging
 from nanoid import generate
-from streamlit_modal import Modal
 import pandas as pd
 import time
 
@@ -13,11 +12,12 @@ from extractor.table_utils import select_pk_summary_tables
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
 from extractor.agents.pk_summary.pk_sum_workflow import PKSumWorkflow
 from extractor.agents.pk_individual.pk_ind_workflow import PKIndWorkflow
+from extractor.agents.pk_specimen_summary.pk_spec_sum_workflow import PKSpecSumWorkflow
 from extractor.constants import (
     LLM_CHATGPT_4O,
-    PROMPTS_NAME_PE,
     PROMPTS_NAME_PK_SUM,
     PROMPTS_NAME_PK_IND,
+    PROMPTS_NAME_PK_SPEC_SUM,
     LLM_GEMINI_PRO,
     LLM_DEEPSEEK_CHAT,
 )
@@ -32,7 +32,6 @@ from extractor.request_geminiai import (
 )
 from extractor.utils import (
     convert_csv_table_to_dataframe,
-    convert_html_to_text,
     convert_html_to_text_no_table,  # Yichuan
     escape_markdown,
     extract_table_title,
@@ -41,9 +40,6 @@ from extractor.utils import (
     remove_references,
 )
 from extractor.html_table_extractor import HtmlTableExtractor
-from extractor.prompts_utils import (
-    TableExtractionPromptsGenerator,
-)
 
 logger = logging.getLogger(__name__)
 
@@ -137,6 +133,7 @@ def on_input_change(pmid: Optional[str] = None):
     ss.main_retrieved_tables = retrieved_tables
     ss.main_retrieved_title = extractor.extract_title(html_content)
     ss.main_retrieved_abstract = extractor.extract_abstract(html_content)
+    ss.main_retrieved_sections = extractor.extract_sections(html_content)
 
     tmp_info = (
         "no table found"
@@ -200,9 +197,7 @@ def on_extract(pmid: str):
             st.error(e)
             return
 
-        """ Step 2 - Further Divide Each Table """
-        # step1_content = ['Table II', 'Table III']
-
+        """ Step 2 - Workflow """
         time.sleep(0.1)
 
         dfs = []
@@ -275,9 +270,7 @@ def on_extract(pmid: str):
             st.error(e)
             return
 
-        """ Step 2 - Further Divide Each Table """
-        # step1_content = ['Table II', 'Table III']
-
+        """ Step 2 - Workflow """
         time.sleep(0.1)
 
         dfs = []
@@ -314,6 +307,49 @@ def on_extract(pmid: str):
         ss.main_token_usage = ss.token_usage
         return
 
+    elif ss.main_prompts_option == PROMPTS_NAME_PK_SPEC_SUM:
+        output_info("We are going to clean the original text")
+        """ Step 1 - Clean Text (through extractor) """
+        """ LLM-based text clean has been deprecated due to significant omissions in its output. """
+        """ beautifulsoup-based text clean """
+        sections = ss.main_retrieved_sections
+        if len(sections) == 0:
+            notification = "No valid sections were extracted from the text."
+        else:
+            section_names = [sec["section"] for sec in sections]
+            notification = f"Extracted the following sections: {section_names}"
+        output_info(notification)
+        output_info("Text cleaning completed, token usage: 0")
+        # st.write(notification)
+        st.write(f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Text cleaning completed, token usage: 0")
+        article_content = "\n".join(sec["section"] + "\n" + sec["content"] + "\n" for sec in sections)
+
+        """ Step 2 - Workflow """
+        time.sleep(0.1)
+
+        workflow = PKSpecSumWorkflow(llm=llm)
+        workflow.build()
+        df_combined = workflow.go_full_text(
+            title=ss.main_retrieved_title,
+            full_text=article_content,
+            step_callback=output_step,
+        )
+
+        ss.token_usage = (
+            ss.token_usage if ss.token_usage is not None else {**DEFAULT_TOKEN_USAGE}
+        )
+        output_info(
+            f"Extracting tabular data completed, token usage: {ss.token_usage['total_tokens']}"
+        )
+        st.write(
+            f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Extracting tabular data completed, token usage: {ss.token_usage['total_tokens']}"
+        )
+
+        ss.main_extracted_result = df_combined
+        ss.main_token_usage = ss.token_usage
+        return
+
+
 def on_retrive_table_from_html_table(html_table: str):
     html_table = html_table.strip()
     if len(html_table) == 0:
@@ -345,6 +381,7 @@ def main_tab():
     ss.setdefault("main_retrieved_tables", None)
     ss.setdefault("main_retrieved_title", None)
     ss.setdefault("main_retrieved_abstract", None)  # Yichuan 0501
+    ss.setdefault("main_retrieved_sections", None)  # Yichuan 0502
     ss.setdefault("main_extracted_btn_disabled", True)
     ss.setdefault("main_prompts_option", PROMPTS_NAME_PK_SUM)
     ss.setdefault("main_llm_option", LLM_CHATGPT_4O)
@@ -477,7 +514,7 @@ def main_tab():
         )
         ss.main_llm_option = llm_option
         st.divider()
-        prompts_array = (PROMPTS_NAME_PK_SUM, PROMPTS_NAME_PK_IND, PROMPTS_NAME_PE)
+        prompts_array = (PROMPTS_NAME_PK_SUM, PROMPTS_NAME_PK_IND, PROMPTS_NAME_PK_SPEC_SUM) #, PROMPTS_NAME_PE)
         option = st.selectbox(
             "What type of prompts would you like to use?", prompts_array, index=0
         )
