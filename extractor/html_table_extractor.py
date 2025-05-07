@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup, Tag
 from typing import Callable, Optional
 import pandas as pd
-
+from TabFuncFlow.utils.table_utils import html_table_to_markdown
 from extractor.utils import convert_html_table_to_dataframe
 
 def get_tag_text(tag: Tag) -> str:
@@ -265,6 +265,69 @@ class PMCHtmlTableParser(object):
 
         return abstract_text.strip()
 
+    def extract_sections(self, html: str):
+        """
+        Yichuan 0505
+        Extracts sections (h2/h3) and content between 'Abstract' and 'References' headings.
+        Include tables
+        """
+        soup = BeautifulSoup(html, "html.parser")
+        body = soup.body
+        if not body:
+            return []
+
+        heading_tags = ["h2", "h3"]
+        sections = []
+        current_section = None
+        started = False
+
+        for element in body.descendants:
+            if isinstance(element, Tag):
+                if element.name in heading_tags:
+                    heading_text = element.get_text(strip=True).lower()
+
+                    if not started and "abstract" in heading_text:
+                        started = True
+                        current_section = {
+                            "section": element.get_text(strip=True),
+                            "content": ""
+                        }
+                        continue
+
+                    if started and any(
+                            x in heading_text for x in ["reference", "acknowledgment", "contributor information"]):
+                        if current_section:
+                            current_section["content"] = current_section["content"].strip()
+                            sections.append(current_section)
+                        break
+
+                    if started:
+                        if current_section:
+                            current_section["content"] = current_section["content"].strip()
+                            sections.append(current_section)
+                        current_section = {
+                            "section": element.get_text(strip=True),
+                            "content": ""
+                        }
+
+                elif started and current_section:
+                    # Tables: convert HTML
+                    if element.name == "table" or (
+                    "xtable" in element.get("class", []) if element.has_attr("class") else False):
+                        current_section["content"] += html_table_to_markdown(str(element)) + "\n"
+
+                    # Text elements: convert to plain text
+                    elif element.name in ["p", "ul", "ol"]:
+                        text = element.get_text(separator=" ", strip=True)
+                        if text:
+                            current_section["content"] += text + "\n"
+
+        if current_section:
+            current_section["content"] = current_section["content"].strip()
+            sections.append(current_section)
+
+        return sections
+
 
 class HtmlTableExtractor(object):
     def __init__(self):
@@ -302,6 +365,63 @@ class HtmlTableExtractor(object):
 
         return None
 
+    def extract_sections(self, html: str):
+        """
+        Yichuan 0505
+        """
+        for parser in self.parsers:
+            sections = parser.extract_sections(html)
+            if sections is not None:
+                return sections
+
+        return None
+
+    @staticmethod
+    def convert_sections_to_chunks(sections, min_chunk_size=2048):
+        """
+        This method is currently unused, as processing the entire article as a whole gets better results.
+
+        Converts structured sections into a list of text chunks, each at least `min_chunk_size` characters long.
+        Filters out:
+          1. Sections with empty or whitespace-only content
+          2. Completely duplicate sections (same title and content)
+        Ensures all chunks meet the minimum length requirement (except possibly the last one).
+        Yichuan 0502
+        """
+        # Step 1: Remove empty and duplicate sections
+        seen = set()
+        filtered_sections = []
+        for s in sections:
+            title = s.get("section", "").strip()
+            content = s.get("content", "").strip()
+            if not content:
+                continue  # Skip empty content
+            key = (title, content)
+            if key in seen:
+                continue  # Skip exact duplicates
+            seen.add(key)
+            filtered_sections.append({"section": title, "content": content})
+
+        # Step 2: Accumulate and chunk
+        chunks = []
+        buffer = ""
+
+        for section in filtered_sections:
+            complete_section = section["section"] + ":\n" + section["content"]
+            buffer += "\n\n" + complete_section
+
+            if len(buffer.strip()) >= min_chunk_size:
+                chunks.append(buffer.strip())
+                buffer = ""
+
+        # Step 3: Handle remaining buffer
+        if buffer.strip():
+            if len(buffer.strip()) < min_chunk_size and chunks:
+                chunks[-1] += "\n\n" + buffer.strip()
+            else:
+                chunks.append(buffer.strip())
+
+        return chunks
 
     @staticmethod
     def _tables_eq(tablel: dict, table2: dict) -> bool:
