@@ -271,6 +271,8 @@ class PMCHtmlTableParser(object):
         Extracts sections (h2/h3) and content between 'Abstract' and 'References' headings.
         Include tables
         """
+        stop_sections = ["reference", "acknowledgement", "supplementary"]
+
         soup = BeautifulSoup(html, "html.parser")
         body = soup.body
         if not body:
@@ -295,10 +297,11 @@ class PMCHtmlTableParser(object):
                         continue
 
                     if started and any(
-                            x in heading_text for x in ["reference", "acknowledgment", "contributor information"]):
+                            x in heading_text for x in stop_sections):
                         if current_section:
                             current_section["content"] = current_section["content"].strip()
                             sections.append(current_section)
+                            current_section = None
                         break
 
                     if started:
