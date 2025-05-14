@@ -163,7 +163,6 @@ class HtmlTableParser(object):
         except AttributeError:
             return False
         return False
-        
 
     def extract_title(self, html: str):
         def check_title_in_tag_classes(tag: Tag):
@@ -200,6 +199,98 @@ class HtmlTableParser(object):
                 return get_tag_text(tag)
         
         return None
+
+    def extract_abstract(self, html: str):
+        """
+        same as PMCHtmlTableParser
+        """
+        soup = BeautifulSoup(html, "html.parser")
+
+        # Find a heading tag that contains the word "abstract" (case-insensitive)
+        abstract_heading = soup.find(
+            lambda tag: tag.name in ["h2", "h3"] and "abstract" in tag.get_text(strip=True).lower()
+        )
+
+        if not abstract_heading:
+            return None  # No abstract heading found
+
+        # Find the parent <section> or container that wraps the abstract
+        abstract_section = abstract_heading.find_parent("section")
+        if not abstract_section:
+            return None  # No wrapping section found
+
+        # Extract all <p> tags (paragraphs) under the abstract section
+        abstract_paragraphs = abstract_section.find_all("p")
+
+        # Combine the text from each paragraph
+        abstract_text = "\n".join(p.get_text(separator=" ", strip=True) for p in abstract_paragraphs)
+
+        return abstract_text.strip()
+
+    def extract_sections(self, html: str):
+        """
+        same as PMCHtmlTableParser
+        """
+        stop_sections = ["reference", "acknowledgement", "supplementary"]
+
+        soup = BeautifulSoup(html, "html.parser")
+        body = soup.body
+        if not body:
+            return []
+
+        heading_tags = ["h2", "h3"]
+        sections = []
+        current_section = None
+        started = False
+
+        for element in body.descendants:
+            if isinstance(element, Tag):
+                if element.name in heading_tags:
+                    heading_text = element.get_text(strip=True).lower()
+
+                    if not started and "abstract" in heading_text:
+                        started = True
+                        current_section = {
+                            "section": element.get_text(strip=True),
+                            "content": ""
+                        }
+                        continue
+
+                    if started and any(
+                            x in heading_text for x in stop_sections):
+                        if current_section:
+                            current_section["content"] = current_section["content"].strip()
+                            sections.append(current_section)
+                            current_section = None
+                        break
+
+                    if started:
+                        if current_section:
+                            current_section["content"] = current_section["content"].strip()
+                            sections.append(current_section)
+                        current_section = {
+                            "section": element.get_text(strip=True),
+                            "content": ""
+                        }
+
+                elif started and current_section:
+                    # Tables: convert HTML
+                    if element.name == "table" or (
+                    "xtable" in element.get("class", []) if element.has_attr("class") else False):
+                        current_section["content"] += html_table_to_markdown(str(element)) + "\n"
+
+                    # Text elements: convert to plain text
+                    elif element.name in ["p", "ul", "ol"]:
+                        text = element.get_text(separator=" ", strip=True)
+                        if text:
+                            current_section["content"] += text + "\n"
+
+        if current_section:
+            current_section["content"] = current_section["content"].strip()
+            sections.append(current_section)
+
+        return sections
+
 
 class PMCHtmlTableParser(object):
     def __init__(self):
