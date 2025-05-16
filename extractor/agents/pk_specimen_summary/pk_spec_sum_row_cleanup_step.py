@@ -5,10 +5,10 @@ import re
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, display_md_table
-from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonStep
+from extractor.agents.pk_specimen_summary.pk_spec_sum_common_step import PKSpecSumCommonStep
 
 
-class RowCleanupStep(PKSumCommonStep):
+class RowCleanupStep(PKSpecSumCommonStep):
     """Row Cleanup"""
 
     def __init__(self):

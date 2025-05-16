@@ -8,40 +8,40 @@ from TabFuncFlow.utils.table_utils import (
     markdown_to_dataframe,
     single_html_table_to_markdown,
 )
-from extractor.agents.pk_specimen_summary.pk_spec_sum_assembly_step import AssemblyStep
-from extractor.agents.pk_specimen_summary.pk_spec_sum_patient_info_refine_step import PatientInfoRefinementStep
-from extractor.agents.pk_specimen_summary.pk_spec_sum_specimen_info_step import SpecimenInfoExtractionStep
-from extractor.agents.pk_specimen_summary.pk_spec_sum_row_cleanup_step import RowCleanupStep
-from extractor.agents.pk_specimen_summary.pk_spec_sum_time_unit_step import TimeExtractionStep
-from extractor.agents.pk_specimen_summary.pk_spec_sum_workflow_utils import PKSpecSumWorkflowState
+from extractor.agents.pk_drug_summary.pk_drug_sum_assembly_step import AssemblyStep
+from extractor.agents.pk_drug_summary.pk_drug_sum_patient_info_refine_step import PatientInfoRefinementStep
+from extractor.agents.pk_drug_summary.pk_drug_sum_drug_info_refine_step import DrugInfoRefinementStep
+from extractor.agents.pk_drug_summary.pk_drug_sum_drug_info_step import DrugInfoExtractionStep
+from extractor.agents.pk_drug_summary.pk_drug_sum_row_cleanup_step import RowCleanupStep
+from extractor.agents.pk_drug_summary.pk_drug_sum_workflow_utils import PKDrugSumWorkflowState
 
 logger = logging.getLogger(__name__)
 
 
-class PKSpecSumWorkflow:
+class PKDrugSumWorkflow:
     """pk summary workflow"""
 
     def __init__(self, llm: BaseChatOpenAI):
         self.llm = llm
 
     def build(self):
-        specimen_info_step = SpecimenInfoExtractionStep()
+        drug_info_step = DrugInfoExtractionStep()
         patient_info_refined_step = PatientInfoRefinementStep()
-        time_unit_step = TimeExtractionStep()
+        drug_info_refined_step = DrugInfoRefinementStep()
         assembly_step = AssemblyStep()
         row_cleanup_step = RowCleanupStep()
         #
-        graph = StateGraph(PKSpecSumWorkflowState)
-        graph.add_node("specimen_info_step", specimen_info_step.execute)
+        graph = StateGraph(PKDrugSumWorkflowState)
+        graph.add_node("drug_info_step", drug_info_step.execute)
         graph.add_node("patient_info_refined_step", patient_info_refined_step.execute)
-        graph.add_node("time_unit_step", time_unit_step.execute)
+        graph.add_node("drug_info_refined_step", drug_info_refined_step.execute)
         graph.add_node("assembly_step", assembly_step.execute)
         graph.add_node("row_cleanup_step", row_cleanup_step.execute)
         #
-        graph.add_edge(START, "specimen_info_step")
-        graph.add_edge("specimen_info_step", "patient_info_refined_step")
-        graph.add_edge("patient_info_refined_step", "time_unit_step")
-        graph.add_edge("time_unit_step", "assembly_step")
+        graph.add_edge(START, "drug_info_step")
+        graph.add_edge("drug_info_step", "patient_info_refined_step")
+        graph.add_edge("patient_info_refined_step", "drug_info_refined_step")
+        graph.add_edge("drug_info_refined_step", "assembly_step")
         graph.add_edge("assembly_step", "row_cleanup_step")
 
         self.graph = graph.compile()
@@ -78,6 +78,7 @@ class PKSpecSumWorkflow:
             "Source text": "Note",
         }
         df_combined = df_combined.rename(columns=column_mapping)
+        # df_combined = markdown_to_dataframe(s["md_table_drug_refined"])
         return df_combined
 
     def go(

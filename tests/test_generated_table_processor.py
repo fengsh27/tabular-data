@@ -14,6 +14,8 @@ from extractor.constants import (
     PROMPTS_NAME_PK_SUM,
     PROMPTS_NAME_PK_IND,
     PROMPTS_NAME_PK_SPEC_SUM,
+    PROMPTS_NAME_PK_DRUG_SUM,
+    PROMPTS_NAME_PK_POPU_SUM,
 )
 
 # 30950674

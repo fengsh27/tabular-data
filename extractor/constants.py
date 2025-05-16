@@ -36,6 +36,8 @@ ERROR_OK = 5000
 PROMPTS_NAME_PK_SUM = "Pharmacokinetics Parameter Summary"
 PROMPTS_NAME_PK_IND = "Pharmacokinetics Parameter Individual"
 PROMPTS_NAME_PK_SPEC_SUM = "Pharmacokinetics Specimen Summary"
+PROMPTS_NAME_PK_DRUG_SUM = "Pharmacokinetics Drug Summary"
+PROMPTS_NAME_PK_POPU_SUM = "Pharmacokinetics Population Summary"
 PROMPTS_NAME_PE = "Pharmaco-Epidemiology "
 
 LLM_CHATGPT_4O = "ChatGPT 4o"

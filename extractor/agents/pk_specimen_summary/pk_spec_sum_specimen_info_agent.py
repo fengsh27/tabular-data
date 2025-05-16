@@ -47,7 +47,7 @@ def post_process_specimen_info(
 
     if type(res.specimen_combinations) != list or len(res.specimen_combinations) == 0:
         raise RetryException(f"""
-Wrong answer: {res.specimen_combinations}, if the table does not explicitly mention the Specimen, Population, please leave it with [["N/A", "N/A", "N/A", "N/A", "N/A"]].
+Wrong answer: {res.specimen_combinations}, if the table does not explicitly mention any [Specimen, Sample N, Sample time, Population, Population N], please leave it with [["N/A", "N/A", "N/A", "N/A", "N/A"]].
 """)
 
     df_table = pd.DataFrame(

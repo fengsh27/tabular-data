@@ -13,11 +13,15 @@ from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usa
 from extractor.agents.pk_summary.pk_sum_workflow import PKSumWorkflow
 from extractor.agents.pk_individual.pk_ind_workflow import PKIndWorkflow
 from extractor.agents.pk_specimen_summary.pk_spec_sum_workflow import PKSpecSumWorkflow
+# from extractor.agents.pk_population_summary.pk_popu_sum_workflow import PKPopuSumWorkflow
+from extractor.agents.pk_drug_summary.pk_drug_sum_workflow import PKDrugSumWorkflow
 from extractor.constants import (
     LLM_CHATGPT_4O,
     PROMPTS_NAME_PK_SUM,
     PROMPTS_NAME_PK_IND,
     PROMPTS_NAME_PK_SPEC_SUM,
+    PROMPTS_NAME_PK_DRUG_SUM,
+    PROMPTS_NAME_PK_POPU_SUM,
     LLM_GEMINI_PRO,
     LLM_DEEPSEEK_CHAT,
 )
@@ -349,6 +353,51 @@ def on_extract(pmid: str):
         ss.main_token_usage = ss.token_usage
         return
 
+    elif ss.main_prompts_option == PROMPTS_NAME_PK_DRUG_SUM:
+        output_info("We are going to clean the original text")
+        """ Step 1 - Clean Text (through extractor) """
+        """ LLM-based text clean has been deprecated due to significant omissions in its output. """
+        """ beautifulsoup-based text clean """
+        sections = ss.main_retrieved_sections
+        if len(sections) == 0:
+            notification = "No valid sections were extracted from the text."
+        else:
+            section_names = [sec["section"] for sec in sections]
+            notification = f"Extracted the following sections: {section_names}"
+        output_info(notification)
+        output_info("Text cleaning completed, token usage: 0")
+        # st.write(notification)
+        st.write(f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Text cleaning completed, token usage: 0")
+        article_content = "\n".join(sec["section"] + "\n" + sec["content"] + "\n" for sec in sections)
+
+        """ Step 2 - Workflow """
+        time.sleep(0.1)
+
+        workflow = PKDrugSumWorkflow(llm=llm)
+        workflow.build()
+        df_combined = workflow.go_full_text(
+            title=ss.main_retrieved_title,
+            full_text=article_content,
+            step_callback=output_step,
+        )
+
+        ss.token_usage = (
+            ss.token_usage if ss.token_usage is not None else {**DEFAULT_TOKEN_USAGE}
+        )
+        output_info(
+            f"Extracting tabular data completed, token usage: {ss.token_usage['total_tokens']}"
+        )
+        st.write(
+            f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Extracting tabular data completed, token usage: {ss.token_usage['total_tokens']}"
+        )
+
+        ss.main_extracted_result = df_combined
+        ss.main_token_usage = ss.token_usage
+        return
+    elif ss.main_prompts_option == PROMPTS_NAME_PK_POPU_SUM:
+        # Note: not implemented
+        return
+
 
 def on_retrive_table_from_html_table(html_table: str):
     html_table = html_table.strip()
@@ -514,7 +563,7 @@ def main_tab():
         )
         ss.main_llm_option = llm_option
         st.divider()
-        prompts_array = (PROMPTS_NAME_PK_SUM, PROMPTS_NAME_PK_IND, PROMPTS_NAME_PK_SPEC_SUM) #, PROMPTS_NAME_PE)
+        prompts_array = (PROMPTS_NAME_PK_SUM, PROMPTS_NAME_PK_IND, PROMPTS_NAME_PK_SPEC_SUM, PROMPTS_NAME_PK_DRUG_SUM, PROMPTS_NAME_PK_POPU_SUM) #, PROMPTS_NAME_PE)
         option = st.selectbox(
             "What type of prompts would you like to use?", prompts_array, index=0
         )
