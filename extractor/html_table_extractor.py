@@ -231,7 +231,7 @@ class HtmlTableParser(object):
         """
         same as PMCHtmlTableParser
         """
-        stop_sections = ["reference", "acknowledgement", "supplementary"]
+        stop_sections = ["reference", "acknowledgement", "acknowledgment", "supplementary"]
 
         soup = BeautifulSoup(html, "html.parser")
         body = soup.body
@@ -362,7 +362,7 @@ class PMCHtmlTableParser(object):
         Extracts sections (h2/h3) and content between 'Abstract' and 'References' headings.
         Include tables
         """
-        stop_sections = ["reference", "acknowledgement", "supplementary"]
+        stop_sections = ["reference", "acknowledgement", "acknowledgment", "supplementary"]
 
         soup = BeautifulSoup(html, "html.parser")
         body = soup.body
