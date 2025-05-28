@@ -5,9 +5,9 @@ import logging
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
-from extractor.agents.pk_specimen_summary.pk_spec_sum_common_agent import (
+from extractor.agents.pk_specimen_individual.pk_spec_ind_common_agent import (
     RetryException,
-    PKSpecSumCommonAgentResult,
+    PKSpecIndCommonAgentResult,
 )
 
 logger = logging.getLogger(__name__)
@@ -17,7 +17,7 @@ TIME_AND_UNIT_PROMPT = ChatPromptTemplate.from_template("""
 {full_text}
 Read the article and answer the following:
 
-From the article above, I have extracted the following information to create Subtable 1, where each row represents a unique combination of "Specimen" - "Sample N" - "Sample time" - "Population" - "Population N" as follows:
+From the article above, I have extracted the following information to create Subtable 1, where each row represents a unique combination of "Patient ID" - "Specimen" - "Sample N" - "Sample time" as follows:
 {processed_md_table_specimen}
 
 Carefully analyze the table and follow these steps:  
@@ -51,7 +51,7 @@ def get_time_and_unit_prompt(title: str, full_text: str, md_table_specimen: str)
     )
 
 
-class TimeAndUnitResult(PKSpecSumCommonAgentResult):
+class TimeAndUnitResult(PKSpecIndCommonAgentResult):
     """Time and Unit Extraction Result"""
 
     times_and_units: list[list[str]] = Field(

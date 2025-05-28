@@ -1,8 +1,10 @@
 from bs4 import BeautifulSoup, Tag
 from typing import Callable, Optional
 import pandas as pd
-from TabFuncFlow.utils.table_utils import html_table_to_markdown
+from TabFuncFlow.utils.table_utils import html_table_to_markdown, dataframe_to_markdown
 from extractor.utils import convert_html_table_to_dataframe
+from typing import List, Optional, Dict
+
 
 def get_tag_text(tag: Tag) -> str:
     text = tag.text
@@ -200,94 +202,116 @@ class HtmlTableParser(object):
         
         return None
 
+    def _find_first_occurrence(self,
+                               soup: BeautifulSoup,
+                               keywords: List[str]) -> Optional[Tag]:
+        """
+        Yichuan 0528
+        """
+        kw_lower = [k.lower() for k in keywords]
+        valid_tags = {"section", "div", "article", "main", "h1", "h2", "h3", "p", "ul", "ol", "table", "article"}
+
+        for el in soup.find_all(True):
+            if el.name not in valid_tags:
+                continue
+            if any(kw in cls.lower() for cls in el.get("class", []) for kw in kw_lower):
+                return el
+            if any(kw in (el.get("id", "").lower()) for kw in kw_lower):
+                return el
+            direct = ''.join(el.find_all(string=True, recursive=False)).strip().lower()
+            if any(kw in direct for kw in kw_lower):
+                return el
+        return None
+
     def extract_abstract(self, html: str):
         """
-        same as PMCHtmlTableParser
+        Yichuan 0528
         """
-        soup = BeautifulSoup(html, "html.parser")
-
-        # Find a heading tag that contains the word "abstract" (case-insensitive)
-        abstract_heading = soup.find(
-            lambda tag: tag.name in ["h2", "h3"] and "abstract" in tag.get_text(strip=True).lower()
-        )
-
-        if not abstract_heading:
-            return None  # No abstract heading found
-
-        # Find the parent <section> or container that wraps the abstract
-        abstract_section = abstract_heading.find_parent("section")
-        if not abstract_section:
-            return None  # No wrapping section found
-
-        # Extract all <p> tags (paragraphs) under the abstract section
-        abstract_paragraphs = abstract_section.find_all("p")
-
-        # Combine the text from each paragraph
-        abstract_text = "\n".join(p.get_text(separator=" ", strip=True) for p in abstract_paragraphs)
-
-        return abstract_text.strip()
+        sections = self.extract_sections(html)
+        for section in sections:
+            if "abstract" in section["section"].lower():
+                return section["content"].replace("\n", " ")
+        return (sections[0]["section"] + "\n" + sections[0]["content"]).replace("\n", " ") + "\n......" or None
 
     def extract_sections(self, html: str):
         """
-        same as PMCHtmlTableParser
+        Yichuan 0528
+        Generic section extraction for main body content (non-PMC).
+        Returns [{'section': ..., 'content': ...}, ...]
         """
-        stop_sections = ["reference", "acknowledgement", "acknowledgment", "supplementary"]
+        stop_sections = [
+                "reference", "references",
+                "acknowledgement", "acknowledgment",
+                "acknowledgements", "acknowledgments",
+                "supplementary", "supplements"
+        ]
 
         soup = BeautifulSoup(html, "html.parser")
-        body = soup.body
-        if not body:
+        for a in soup.find_all("a"):
+            a.decompose()
+
+        start = self._find_first_occurrence(soup, ["abstract"])
+        if not start:
             return []
 
-        heading_tags = ["h2", "h3"]
-        sections = []
-        current_section = None
-        started = False
+        sections: List[Dict[str, str]] = []
+        current: Optional[Dict[str, str]] = None
+        seen_global = set()
+        heading_tags = ["h1", "h2", "h3", "h4"]
+        block_tags = ["p", "ul", "ol", "div", "section", "article"]
 
-        for element in body.descendants:
-            if isinstance(element, Tag):
-                if element.name in heading_tags:
-                    heading_text = element.get_text(strip=True).lower()
+        for el in start.find_all_next():
+            # ── 1. Handle section headings ───────────────────────────────
+            if el.name in heading_tags:
+                h_raw = el.get_text(strip=True)
+                h_low = h_raw.lower()
 
-                    if not started and "abstract" in heading_text:
-                        started = True
-                        current_section = {
-                            "section": element.get_text(strip=True),
-                            "content": ""
-                        }
-                        continue
+                # On encountering References/Acknowledgements → finalize and exit
+                if any(kw in h_low for kw in stop_sections):
+                    if current and current["content"].strip():
+                        lines = list(dict.fromkeys(current["content"].splitlines()))
+                        current["content"] = "\n".join(lines).strip()
+                        sections.append(current)
+                    break
 
-                    if started and any(
-                            x in heading_text for x in stop_sections):
-                        if current_section:
-                            current_section["content"] = current_section["content"].strip()
-                            sections.append(current_section)
-                            current_section = None
-                        break
+                # Normal new heading
+                if current and current["content"].strip():
+                    lines = list(dict.fromkeys(current["content"].splitlines()))
+                    current["content"] = "\n".join(lines).strip()
+                    sections.append(current)
+                current = {"section": h_raw, "content": ""}
+                continue
 
-                    if started:
-                        if current_section:
-                            current_section["content"] = current_section["content"].strip()
-                            sections.append(current_section)
-                        current_section = {
-                            "section": element.get_text(strip=True),
-                            "content": ""
-                        }
+            # ── 2. Collect main body text ───────────────────────────────
+            if current is None:
+                continue  # Not yet in the first main body section
 
-                elif started and current_section:
-                    # Tables: convert HTML
-                    if element.name == "table" or (
-                    "xtable" in element.get("class", []) if element.has_attr("class") else False):
-                        current_section["content"] += html_table_to_markdown(str(element)) + "\n"
+            if el.name == "table":
+                try:
+                    df = convert_html_table_to_dataframe(str(el))
+                    # I use this one instead of the custom html_table_to_dataframe implementation,
+                    # because it uses StringIO and is likely more robust.
+                    # That said, the previous custom version hasn’t caused any major issues so far,
+                    # so I’m not eager to change it either.  - Yichuan 0528
+                    markdown = dataframe_to_markdown(df)
+                    if markdown and markdown not in seen_global:
+                        current["content"] += markdown + "\n"
+                        seen_global.add(markdown)
+                    continue
+                except Exception:
+                    pass
 
-                    # Text elements: convert to plain text
-                    elif element.name in ["p", "ul", "ol"]:
-                        text = element.get_text(separator=" ", strip=True)
-                        if text:
-                            current_section["content"] += text + "\n"
+            if el.name in block_tags:
+                txt = el.get_text(separator="\n", strip=True)
+                if txt and txt not in seen_global:
+                    current["content"] += txt + "\n"
+                    seen_global.add(txt)
 
-        if current_section:
-            current_section["content"] = current_section["content"].strip()
-            sections.append(current_section)
+        # Document ended but still has current section
+        if current and current["content"].strip():
+            lines = list(dict.fromkeys(current["content"].splitlines()))
+            current["content"] = "\n".join(lines).strip()
+            sections.append(current)
 
         return sections
 
@@ -362,8 +386,10 @@ class PMCHtmlTableParser(object):
         Extracts sections (h2/h3) and content between 'Abstract' and 'References' headings.
         Include tables
         """
-        stop_sections = ["reference", "acknowledgement", "acknowledgment", "supplementary"]
-
+        stop_sections = [
+            "reference", "acknowledgement", "acknowledgment", "supplementary",
+            "references", "acknowledgements", "acknowledgments", "supplements"
+        ]
         soup = BeautifulSoup(html, "html.parser")
         body = soup.body
         if not body:
