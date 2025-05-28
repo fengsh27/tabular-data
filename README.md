@@ -1,4 +1,4 @@
-# tabula-data
+# tabular-data
 
 ## Benchmark
 We use [Poetry](https://python-poetry.org) for dependency management. Please make sure that you have installed Poetry and set up the environment correctly before starting development.
