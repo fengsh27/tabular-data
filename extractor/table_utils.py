@@ -80,3 +80,38 @@ def select_pk_summary_tables(html_tables: list[dict[str, str | DataFrame]], llm)
     logger.info(f"Selected tables (indices): {res.selected_table_indexes}")
 
     return tables, res.selected_table_indexes, token_usage
+
+
+SELECT_DEMOGRAPHIC_TABLES_PROMPT = ChatPromptTemplate.from_template("""
+Analyze the provided content and identify all tables related to demographic data. 
+
+Focus particularly on tables that report Population-focused characteristics. Not PK parameter!!!
+    · “Age," “Sex," "Weight," “Gender," “Race," “Ethnicity"
+    · “Socioeconomic status," “Education," “Marital status"
+    · “Comorbidity," “Drug indication," “Adverse events"
+    · “Severity," “BMI," “Smoking status," “Alcohol use," "Blood pressure"
+
+Return the results as a Python list of table indexes in this exact format:
+["table_index_1", "table_index_2", ...]
+
+The content including markdown table to analyze:
+{table_content}
+""")
+
+
+def select_pk_demographic_tables(html_tables: list[dict[str, str | DataFrame]], llm):
+    table_content = generate_tables_prompts(html_tables, True)
+    system_prompt = SELECT_DEMOGRAPHIC_TABLES_PROMPT.format(table_content=table_content)
+
+    agent = PKSumCommonAgent(llm=llm)
+    res, tables, token_usage = agent.go(
+        system_prompt=system_prompt,
+        instruction_prompt=INSTRUCTION_PROMPT,
+        schema=TablesSelectionResult,
+        post_process=post_process_selected_table_ids,
+        html_tables=html_tables,
+    )
+
+    logger.info(f"Selected tables (indices): {res.selected_table_indexes}")
+
+    return tables, res.selected_table_indexes, token_usage

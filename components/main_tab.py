@@ -8,13 +8,16 @@ import pandas as pd
 import time
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown
-from extractor.table_utils import select_pk_summary_tables
+from extractor.table_utils import select_pk_summary_tables, select_pk_demographic_tables
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
 from extractor.agents.pk_summary.pk_sum_workflow import PKSumWorkflow
 from extractor.agents.pk_individual.pk_ind_workflow import PKIndWorkflow
 from extractor.agents.pk_specimen_summary.pk_spec_sum_workflow import PKSpecSumWorkflow
 from extractor.agents.pk_population_summary.pk_popu_sum_workflow import PKPopuSumWorkflow
 from extractor.agents.pk_drug_summary.pk_drug_sum_workflow import PKDrugSumWorkflow
+from extractor.agents.pk_specimen_individual.pk_spec_ind_workflow import PKSpecIndWorkflow
+from extractor.agents.pk_population_individual.pk_popu_ind_workflow import PKPopuIndWorkflow
+from extractor.agents.pk_drug_individual.pk_drug_ind_workflow import PKDrugIndWorkflow
 from extractor.constants import (
     LLM_CHATGPT_4O,
     PROMPTS_NAME_PK_SUM,
@@ -22,6 +25,9 @@ from extractor.constants import (
     PROMPTS_NAME_PK_SPEC_SUM,
     PROMPTS_NAME_PK_DRUG_SUM,
     PROMPTS_NAME_PK_POPU_SUM,
+    PROMPTS_NAME_PK_SPEC_IND,
+    PROMPTS_NAME_PK_DRUG_IND,
+    PROMPTS_NAME_PK_POPU_IND,
     LLM_GEMINI_PRO,
     LLM_DEEPSEEK_CHAT,
 )
@@ -237,7 +243,6 @@ def on_extract(pmid: str):
         ss.main_token_usage = ss.token_usage
         # ss.main_token_usage = sum(step3_usage_list)
         return
-
     elif ss.main_prompts_option == PROMPTS_NAME_PK_IND:
         include_tables = ss.main_retrieved_tables
 
@@ -310,7 +315,6 @@ def on_extract(pmid: str):
         ss.main_extracted_result = df_combined
         ss.main_token_usage = ss.token_usage
         return
-
     elif ss.main_prompts_option == PROMPTS_NAME_PK_SPEC_SUM:
         output_info("We are going to clean the original text")
         """ Step 1 - Clean Text (through extractor) """
@@ -352,7 +356,6 @@ def on_extract(pmid: str):
         ss.main_extracted_result = df_combined
         ss.main_token_usage = ss.token_usage
         return
-
     elif ss.main_prompts_option == PROMPTS_NAME_PK_DRUG_SUM:
         output_info("We are going to clean the original text")
         """ Step 1 - Clean Text (through extractor) """
@@ -417,6 +420,183 @@ def on_extract(pmid: str):
         time.sleep(0.1)
 
         workflow = PKPopuSumWorkflow(llm=llm)
+        workflow.build()
+        df_combined = workflow.go_full_text(
+            title=ss.main_retrieved_title,
+            full_text=article_content,
+            step_callback=output_step,
+        )
+
+        ss.token_usage = (
+            ss.token_usage if ss.token_usage is not None else {**DEFAULT_TOKEN_USAGE}
+        )
+        output_info(
+            f"Extracting tabular data completed, token usage: {ss.token_usage['total_tokens']}"
+        )
+        st.write(
+            f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Extracting tabular data completed, token usage: {ss.token_usage['total_tokens']}"
+        )
+
+        ss.main_extracted_result = df_combined
+        ss.main_token_usage = ss.token_usage
+        return
+    elif ss.main_prompts_option == PROMPTS_NAME_PK_SPEC_IND:
+        output_info("We are going to clean the original text")
+        """ Step 1 - Clean Text (through extractor) """
+        """ LLM-based text clean has been deprecated due to significant omissions in its output. """
+        """ beautifulsoup-based text clean """
+        sections = ss.main_retrieved_sections
+        if len(sections) == 0:
+            notification = "No valid sections were extracted from the text."
+        else:
+            section_names = [sec["section"] for sec in sections]
+            notification = f"Extracted the following sections: {section_names}"
+        output_info(notification)
+        output_info("Text cleaning completed, token usage: 0")
+        # st.write(notification)
+        st.write(f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Text cleaning completed, token usage: 0")
+        article_content = "\n".join(sec["section"] + "\n" + sec["content"] + "\n" for sec in sections)
+
+        """ Step 2 - Workflow """
+        time.sleep(0.1)
+
+        workflow = PKSpecIndWorkflow(llm=llm)
+        workflow.build()
+        df_combined = workflow.go_full_text(
+            title=ss.main_retrieved_title,
+            full_text=article_content,
+            step_callback=output_step,
+        )
+
+        ss.token_usage = (
+            ss.token_usage if ss.token_usage is not None else {**DEFAULT_TOKEN_USAGE}
+        )
+        output_info(
+            f"Extracting tabular data completed, token usage: {ss.token_usage['total_tokens']}"
+        )
+        st.write(
+            f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Extracting tabular data completed, token usage: {ss.token_usage['total_tokens']}"
+        )
+
+        ss.main_extracted_result = df_combined
+        ss.main_token_usage = ss.token_usage
+        return
+    elif ss.main_prompts_option == PROMPTS_NAME_PK_DRUG_IND:
+        output_info("We are going to clean the original text")
+        """ Step 1 - Clean Text (through extractor) """
+        """ LLM-based text clean has been deprecated due to significant omissions in its output. """
+        """ beautifulsoup-based text clean """
+        sections = ss.main_retrieved_sections
+        if len(sections) == 0:
+            notification = "No valid sections were extracted from the text."
+        else:
+            section_names = [sec["section"] for sec in sections]
+            notification = f"Extracted the following sections: {section_names}"
+        output_info(notification)
+        output_info("Text cleaning completed, token usage: 0")
+        # st.write(notification)
+        st.write(f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Text cleaning completed, token usage: 0")
+        article_content = "\n".join(sec["section"] + "\n" + sec["content"] + "\n" for sec in sections)
+
+        """ Step 2 - Workflow """
+        time.sleep(0.1)
+
+        workflow = PKDrugIndWorkflow(llm=llm)
+        workflow.build()
+        df_combined = workflow.go_full_text(
+            title=ss.main_retrieved_title,
+            full_text=article_content,
+            step_callback=output_step,
+        )
+
+        ss.token_usage = (
+            ss.token_usage if ss.token_usage is not None else {**DEFAULT_TOKEN_USAGE}
+        )
+        output_info(
+            f"Extracting tabular data completed, token usage: {ss.token_usage['total_tokens']}"
+        )
+        st.write(
+            f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Extracting tabular data completed, token usage: {ss.token_usage['total_tokens']}"
+        )
+
+        ss.main_extracted_result = df_combined
+        ss.main_token_usage = ss.token_usage
+        return
+    elif ss.main_prompts_option == PROMPTS_NAME_PK_POPU_IND:
+        # include_tables = ss.main_retrieved_tables
+        # output_info("We are going to select pk population individual tables")
+        # """ Step 1 - Identify population Tables """
+        # """ Analyze the given HTML to determine which tables are about PK demographic data. """
+        # """ Example response: ["Table 1", "Table 2"] """
+        # selected_tables, indexes, token_usage = select_pk_demographic_tables(
+        #     include_tables, llm
+        # )
+        # table_no = []
+        # for ix in indexes:
+        #     table_no.append(f"Table {int(ix)+1}")
+        #
+        # try:
+        #     if len(table_no) == 0:
+        #         notification = "After analyzing the provided content, none of the tables contain pharmacokinetic demographic data."
+        #     else:
+        #         notification = f"From the paper you selected, the following table(s) are related to pharmacokinetic demographic data: {table_no}"
+        #
+        #     output_info(notification)
+        #     output_info(
+        #         "Step 1 completed, token usage: " + str(token_usage["total_tokens"])
+        #     )
+        #     st.write(notification)
+        #     st.write(
+        #         f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Step 1 completed, token usage: {token_usage['total_tokens']}"
+        #     )
+        #
+        # except Exception as e:
+        #     logger.error(e)
+        #     st.error(e)
+        #     return
+        output_info("We are going to clean the original text")
+        """ Step 1 - Clean Text (through extractor) """
+        """ LLM-based text clean has been deprecated due to significant omissions in its output. """
+        """ beautifulsoup-based text clean """
+        sections = ss.main_retrieved_sections
+        if sections is None:
+            notification = "Please retrieve the article first."
+        if len(sections) == 0:
+            notification = "No valid sections were retrieved from the text."
+        else:
+            section_names = [sec["section"] for sec in sections]
+            notification = f"The following sections were successfully retrieved: {section_names}"
+        output_info(notification)
+        output_info("Text cleaning completed, token usage: 0")
+        # st.write(notification)
+        st.write(f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Text cleaning completed, token usage: 0")
+        article_content = "\n".join(sec["section"] + "\n" + sec["content"] + "\n" for sec in sections)
+
+        def remove_duplicate_lines(article_content):
+            """
+            Remove duplicate lines from article content while preserving:
+            - Table rows (lines containing '|')
+            - Empty lines (they are ignored, not treated as duplicates)
+            """
+            seen = set()
+            result = []
+            for line in article_content.splitlines():
+                if '|' in line:
+                    result.append(line)
+                elif line not in seen:
+                    seen.add(line)
+                    result.append(line)
+            return '\n'.join(result)
+        _article_content = remove_duplicate_lines(article_content)
+        if _article_content != article_content:
+            article_content = _article_content
+            output_info("Duplicate content has been filtered out.")
+            st.write(f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Duplicate content has been filtered out.")
+
+        """ Step 2 - Workflow """
+        time.sleep(0.1)
+
+        workflow = PKPopuIndWorkflow(llm=llm)
         workflow.build()
         df_combined = workflow.go_full_text(
             title=ss.main_retrieved_title,
@@ -603,7 +783,8 @@ def main_tab():
         )
         ss.main_llm_option = llm_option
         st.divider()
-        prompts_array = (PROMPTS_NAME_PK_SUM, PROMPTS_NAME_PK_SPEC_SUM, PROMPTS_NAME_PK_DRUG_SUM, PROMPTS_NAME_PK_POPU_SUM, PROMPTS_NAME_PK_IND)  #, PROMPTS_NAME_PE)
+        prompts_array = (PROMPTS_NAME_PK_SUM, PROMPTS_NAME_PK_SPEC_SUM, PROMPTS_NAME_PK_DRUG_SUM, PROMPTS_NAME_PK_POPU_SUM,
+                         PROMPTS_NAME_PK_IND, PROMPTS_NAME_PK_SPEC_IND, PROMPTS_NAME_PK_DRUG_IND, PROMPTS_NAME_PK_POPU_IND)  #, PROMPTS_NAME_PE)
         option = st.selectbox(
             "What type of prompts would you like to use?", prompts_array, index=0
         )
