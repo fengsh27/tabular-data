@@ -1,0 +1,457 @@
+from datetime import datetime
+from typing import Any, Dict, List, Tuple
+import pandas as pd
+import streamlit as st
+import re
+import ast
+
+from extractor.article_retriever import ArticleRetriever
+from extractor.html_table_extractor import HtmlTableExtractor
+from extractor.utils import (
+    convert_html_to_text_no_table,
+    escape_markdown,
+    remove_references,
+)
+from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
+
+from extractor.constants import (
+    LLM_CHATGPT_4O,
+    LLM_DEEPSEEK_CHAT,
+    PROMPTS_NAME_PK_SUM,
+    PROMPTS_NAME_PK_IND,
+    PROMPTS_NAME_PK_SPEC_SUM,
+    PROMPTS_NAME_PK_DRUG_SUM,
+    PROMPTS_NAME_PK_POPU_SUM,
+    PROMPTS_NAME_PK_SPEC_IND,
+    PROMPTS_NAME_PK_DRUG_IND,
+    PROMPTS_NAME_PK_POPU_IND,
+)
+from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
+from extractor.agents.pk_summary.pk_sum_workflow import PKSumWorkflow
+from extractor.agents.pk_individual.pk_ind_workflow import PKIndWorkflow
+from extractor.agents.pk_specimen_summary.pk_spec_sum_workflow import PKSpecSumWorkflow
+from extractor.agents.pk_population_summary.pk_popu_sum_workflow import PKPopuSumWorkflow
+from extractor.agents.pk_drug_summary.pk_drug_sum_workflow import PKDrugSumWorkflow
+from extractor.agents.pk_specimen_individual.pk_spec_ind_workflow import PKSpecIndWorkflow
+from extractor.agents.pk_population_individual.pk_popu_ind_workflow import PKPopuIndWorkflow
+from extractor.agents.pk_drug_individual.pk_drug_ind_workflow import PKDrugIndWorkflow
+from extractor.request_openai import get_openai
+from extractor.request_deepseek import get_deepseek
+from extractor.table_utils import select_pk_summary_tables
+
+try:
+    from version import __version__  # type: ignore
+except Exception:
+    __version__ = "unknown"
+
+# ────────────────────────── helper functions ──────────────────────────────
+
+def _get_llm(llm_label: str):
+    if llm_label == LLM_CHATGPT_4O:
+        return get_openai()
+    if llm_label == LLM_DEEPSEEK_CHAT:
+        return get_deepseek()
+    raise ValueError(f"Unsupported LLM type: {llm_label}")
+
+
+def retrieve_article(pmid: str) -> Tuple[bool, str | None, str]:
+    """Fetch HTML by PMID/PMCID."""
+    retriever = ArticleRetriever()
+    ok, html, code = retriever.request_article(pmid)
+    if not ok:
+        return False, None, f"Retrieval failed (HTTP {code})."
+    return True, html, "Article retrieved successfully."
+
+
+def extract_article_assets(html: str):
+    """Return tables, title, abstract, and section list from raw HTML."""
+    extractor = HtmlTableExtractor()
+    tables = extractor.extract_tables(html)
+    title = extractor.extract_title(html)
+    abstract = extractor.extract_abstract(html)
+    sections = extractor.extract_sections(html)
+    return tables, title, abstract, sections
+
+# ─────────────────────────── curation pipeline ────────────────────────────
+
+def run_curation(
+    llm_label: str,
+    task: str,
+    tables: List[Dict[str, Any]],
+    title: str,
+    abstract: str,
+    sections: List[Dict[str, str]],
+    *,
+    stamp_html: str | None = None,
+) -> tuple[str, pd.DataFrame | None]:
+
+    # ───────────────────────── Select LLM ──────────────────────────
+    llm = _get_llm(llm_label)
+
+    # ───────────────────────── Helpers ─────────────────────────────
+    logs: list[str] = []
+    token_usage_acc: dict[str, int] | None = None
+
+    def _log(msg: str) -> None:
+        logs.append(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] {msg}")
+
+    def _step_callback(
+        step_name: str | None = None,
+        step_description: str | None = None,
+        step_output: str | None = None,
+        step_reasoning_process: str | None = None,
+        token_usage: dict[str, int] | None = None,
+        **kwargs,
+    ) -> None:
+        nonlocal token_usage_acc
+        if step_name:
+            _log("=" * 64)
+            _log(step_name)
+        if step_description:
+            _log(step_description)
+        if token_usage:
+            token_usage_acc = increase_token_usage(
+                token_usage_acc or {**DEFAULT_TOKEN_USAGE}, token_usage
+            )
+        if step_output:
+            _log(step_output)
+        if step_reasoning_process:
+            _log(step_reasoning_process)
+
+    result_df: pd.DataFrame | None = None
+
+    if task in (PROMPTS_NAME_PK_SUM, PROMPTS_NAME_PK_IND):
+        # _log("Selecting PK tables ...")
+        selected_tables, _, _ = select_pk_summary_tables(tables, llm)
+        if not selected_tables:
+            _log("No PK tables detected – aborting.")
+            return "\n".join(logs), None
+
+        dfs: list[pd.DataFrame] = []
+        wf_cls = PKSumWorkflow if task == PROMPTS_NAME_PK_SUM else PKIndWorkflow
+        for tbl in selected_tables:
+            caption = "\n".join([tbl.get("caption", ""), tbl.get("footnote", "")])
+            wf = wf_cls(llm=llm)
+            wf.build()
+            df = wf.go_md_table(
+                title=title,
+                md_table=dataframe_to_markdown(tbl["table"]),
+                caption_and_footnote=caption,
+                step_callback=_step_callback,
+            )
+            dfs.append(df)
+        if dfs:
+            result_df = pd.concat(dfs, ignore_index=True)
+
+    else:
+        if sections:
+            article_text = "\n".join(
+                f"{sec['section']}\n{sec['content']}" for sec in sections
+            )
+        else:
+            article_text = f"{title}\n{abstract}"
+
+        article_text = convert_html_to_text_no_table(article_text)
+        article_text = remove_references(article_text)
+
+        full_mapping = {
+            PROMPTS_NAME_PK_SPEC_SUM: PKSpecSumWorkflow,
+            PROMPTS_NAME_PK_DRUG_SUM: PKDrugSumWorkflow,
+            PROMPTS_NAME_PK_POPU_SUM: PKPopuSumWorkflow,
+            PROMPTS_NAME_PK_SPEC_IND: PKSpecIndWorkflow,
+            PROMPTS_NAME_PK_DRUG_IND: PKDrugIndWorkflow,
+            PROMPTS_NAME_PK_POPU_IND: PKPopuIndWorkflow,
+        }
+        wf_cls = full_mapping.get(task)
+        if wf_cls is None:
+            raise ValueError(f"Unknown task: {task}")
+
+        wf = wf_cls(llm=llm)
+        wf.build()
+        result_df = wf.go_full_text(
+            title=title,
+            full_text=article_text,
+            step_callback=_step_callback,
+        )
+
+    if token_usage_acc:
+        _log(
+            f"Overall token usage – total: {token_usage_acc['total_tokens']}, "
+            f"prompt: {token_usage_acc['prompt_tokens']}, "
+            f"completion: {token_usage_acc['completion_tokens']}"
+        )
+
+    return "\n".join(logs), result_df
+
+
+def main_tab():
+    ss = st.session_state
+    ss.setdefault("pmid_input", "")
+    ss.setdefault("html_input", "")
+    ss.setdefault("retrieved_articles", {})
+    ss.setdefault("curation_runs", [])
+
+    with st.sidebar:
+        st.subheader("Curation Panel")
+
+        with st.expander("Access Article", expanded=False):
+            st.markdown("Load article content via PMID, PMCID, or raw HTML input.")
+            ss.pmid_input = st.text_input("PMID or PMCID", value=ss.pmid_input, placeholder="Enter PMID or PMCID")
+            click_pmid = st.button("Access Full Text", use_container_width=True)
+
+            st.markdown(
+                """
+                <div style="width: 100%; text-align: center; border-bottom: 1px solid #ccc; line-height: 0.1em; margin: 10px 0;">
+                  <span style="background-color: #F0F2F6; padding: 0 12px; color: #888; font-size: 14px;">or</span>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+
+            ss.html_input = st.text_area("Paste HTML", value=ss.html_input, placeholder="<!DOCTYPE html> …>", height=150)
+            click_html = st.button("Retrieve from HTML", use_container_width=True)
+
+            # — via PMID/PMCID —
+            if click_pmid:
+                pmid = ss.pmid_input.strip()
+                if not pmid:
+                    st.warning("Please enter a PMID or PMCID first.")
+                else:
+                    with st.spinner("Retrieving …"):
+                        ok, html, msg = retrieve_article(pmid)
+                        info = f"{datetime.now():%Y-%m-%d %H:%M:%S}  {msg}"
+                        if ok and html:
+                            tables, title, abstract, sections = extract_article_assets(html)
+                            info += f"  Found {len(tables)} table(s)."
+                            ss.retrieved_articles[pmid] = dict(
+                                title=title,
+                                abstract=abstract,
+                                tables=tables,
+                                sections=sections,
+                                html=html,
+                                info=info,
+                            )
+                        else:
+                            st.error(msg)
+
+            # — via raw HTML —
+            if click_html:
+                html_text = ss.html_input.strip()
+                if not html_text:
+                    st.warning("Please paste some HTML first.")
+                else:
+                    tables, title, abstract, sections = extract_article_assets(html_text)
+                    aid = f"HTML_{datetime.now():%H%M%S}"
+                    info = f"{datetime.now():%Y-%m-%d %H:%M:%S}  Parsed HTML locally.  Found {len(tables)} table(s)."
+                    ss.retrieved_articles[aid] = dict(
+                        title=title,
+                        abstract=abstract,
+                        tables=tables,
+                        sections=sections,
+                        html=html_text,
+                        info=info,
+                    )
+
+        # ---------- Curation Settings -------------------------------------
+        with st.expander("Curation Settings", expanded=False):
+            if ss.retrieved_articles:
+                st.markdown("Select the model and task to run on the article.")
+                sel_aid = st.selectbox("Select Article", list(ss.retrieved_articles.keys()), index=0)
+                ss.llm_option = st.radio("Select LLM:", [LLM_CHATGPT_4O, LLM_DEEPSEEK_CHAT], index=0)
+                ss.task_option = st.selectbox(
+                    "Select Task",
+                    [
+                        PROMPTS_NAME_PK_SUM,
+                        PROMPTS_NAME_PK_SPEC_SUM,
+                        PROMPTS_NAME_PK_DRUG_SUM,
+                        PROMPTS_NAME_PK_POPU_SUM,
+                        PROMPTS_NAME_PK_IND,
+                        PROMPTS_NAME_PK_SPEC_IND,
+                        PROMPTS_NAME_PK_DRUG_IND,
+                        PROMPTS_NAME_PK_POPU_IND,
+                    ],
+                    index=0,
+                )
+                if st.button("Start Curation", use_container_width=True):
+                    art = ss.retrieved_articles[sel_aid]
+                    logs, df = run_curation(
+                        ss.llm_option,
+                        ss.task_option,
+                        art["tables"],
+                        art["title"],
+                        art["abstract"],
+                        art["sections"],
+                        stamp_html=art["html"],
+                    )
+                    ss.curation_runs.insert(
+                        0,
+                        dict(
+                            task=ss.task_option,
+                            timestamp=datetime.now(),
+                            title=art["title"],
+                            logs=logs,
+                            df=df,
+                            article_id=sel_aid,
+                        ),
+                    )
+            else:
+                st.info("Use ‘Access Article’ first")
+
+        # ---------- Manage Records ----------------------------------------
+        with st.expander("Manage Records", expanded=False):
+            article_labels = {f"Article Preview {k}": k for k in ss.retrieved_articles}
+            run_labels = {
+                f"{r['task']} ({r['article_id']}) @ {r['timestamp']:%Y-%m-%d %H:%M:%S}": r
+                for r in ss.curation_runs
+            }
+            all_labels = list(article_labels.keys()) + list(run_labels.keys())
+            if all_labels:
+                victim = st.selectbox("Select a record to delete", all_labels)
+                if st.button("Delete", use_container_width=True):
+                    if victim in article_labels:
+                        ss.retrieved_articles.pop(article_labels[victim], None)
+                    elif victim in run_labels:
+                        ss.curation_runs.remove(run_labels[victim])
+                    st.rerun()
+            else:
+                st.info("No records yet")
+
+    # ---------------- Main Pane ----------------
+    if not ss.retrieved_articles:
+        st.info("Use ‘Access Article’ first")
+
+    for article_id, data in ss.retrieved_articles.items():
+        with st.expander(f"Article Preview ({article_id})", expanded=False):
+            if data["title"]:
+                st.markdown(f"### {escape_markdown(data['title'])}")
+            if data["abstract"]:
+                st.markdown("#####  Abstract")
+                st.markdown(escape_markdown(data["abstract"]))
+
+            if data["tables"]:
+                st.markdown("---")
+                for idx, tbl in enumerate(data["tables"], start=1):
+                    st.markdown(f"#####  Table {idx}")
+                    if tbl.get("caption"):
+                        st.markdown(escape_markdown(tbl["caption"]))
+                    if "table" in tbl:
+                        try:
+                            st.dataframe(tbl["table"])
+                        except Exception:
+                            st.write(tbl["table"])
+                    if tbl.get("footnote"):
+                        st.markdown(escape_markdown(tbl["footnote"]))
+                    if idx < len(data["tables"]):
+                        st.markdown("---")
+
+                st.markdown("---")
+                for idx, tbl in enumerate(data["tables"], start=1):
+                    st.markdown(f"#####  Table {idx} HTML")
+                    if tbl.get("raw_tag"):
+                        st.text_area(
+                            label="",
+                            value=tbl["raw_tag"],
+                            key=f"html-display-{article_id}-{idx}",
+                            height=150,
+                        )
+                    if idx < len(data["tables"]):
+                        st.markdown("---")
+
+    # — Display curation outputs —
+    if ss.curation_runs:
+        for run in ss.curation_runs:
+            with st.expander(f"{run['task']} ({run['article_id']}) @ {run['timestamp']:%Y-%m-%d %H:%M:%S}"):
+
+
+                def convert_log_to_markdown(log_text: str) -> None:
+                    log_text = log_text.replace("Main Table", "previous table")
+                    log_text = log_text.replace("Subtable 1", "previous table")
+                    log_text = log_text.replace("Subtable 2", "my new table")
+
+                    sections = re.split(r'\[\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\] =+\n?', log_text)
+
+                    for section in sections[1:]:
+                        lines = section.strip().splitlines()
+                        if not lines:
+                            continue
+
+                        subtitle = lines[0].strip()
+                        st.markdown(f"######  {subtitle}")
+
+                        table_buffer = []
+                        for line in lines[1:]:
+                            stripped = line.strip()
+
+                            cleaned = re.sub(r'^\[\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\]\s*', '', stripped)
+                            if not cleaned or cleaned.startswith('Completed') or cleaned.startswith('Result ('):
+                                continue
+
+                            pipe_count = cleaned.count('|')
+
+                            if pipe_count > 2:
+                                table_buffer.append(cleaned)
+                                continue
+
+                            if table_buffer:
+                                table_text = "\n".join(table_buffer)
+                                try:
+                                    # df = pd.read_csv(StringIO(table_text), sep='|').dropna(axis=1, how='all')
+                                    df = markdown_to_dataframe(table_text)
+                                    df.columns = df.columns.str.strip()
+                                    st.dataframe(df)
+                                except Exception as e:
+                                    # Check if table_text is a string representation of a list
+                                    try:
+                                        parsed = ast.literal_eval(table_text)
+                                        if isinstance(parsed, list):
+                                            for item in parsed:
+                                                if isinstance(item, str):
+                                                    st.dataframe(markdown_to_dataframe(item))
+                                                else:
+                                                    st.markdown(f"Unsupported item type in list: {type(item)}")
+                                        else:
+                                            raise ValueError  # Not a list; fallback below
+                                    except Exception:
+                                        st.markdown("Failed to parse table, falling back to plain text:")
+                                        st.markdown(f"```\n{table_text}\n```")
+                                table_buffer = []
+
+                            st.markdown(f"> {cleaned}")
+
+                        # table at the end of section
+                        if table_buffer:
+                            table_text = "\n".join(table_buffer)
+                            try:
+                                # df = pd.read_csv(StringIO(table_text), sep='|').dropna(axis=1, how='all')
+                                df = markdown_to_dataframe(table_text)
+                                df.columns = df.columns.str.strip()
+                                st.dataframe(df)
+                            except Exception as e:
+                                # Check if table_text is a string representation of a list
+                                try:
+                                    parsed = ast.literal_eval(table_text)
+                                    if isinstance(parsed, list):
+                                        for item in parsed:
+                                            if isinstance(item, str):
+                                                st.dataframe(markdown_to_dataframe(item))
+                                            else:
+                                                st.markdown(f"Unsupported item type in list: {type(item)}")
+                                    else:
+                                        raise ValueError  # Not a list; fallback below
+                                except Exception:
+                                    st.markdown("Failed to parse table, falling back to plain text:")
+                                    st.markdown(f"```\n{table_text}\n```")
+
+                if run["title"]:
+                    st.markdown(f"### {escape_markdown(run['title'])}")
+                if isinstance(run['df'], pd.DataFrame) and not run['df'].empty:
+                    st.markdown(f"#####  {run['task']}")
+                    st.dataframe(run['df'])
+                    st.markdown("---")
+                st.markdown(f"#####  Step-by-Step Reasoning")
+                # st.markdown(convert_log_to_markdown(run['logs']))
+                convert_log_to_markdown(run['logs'])
+
+
+if __name__ == "__main__":
+    main_tab()

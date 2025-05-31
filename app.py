@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from components.main_tab import main_tab
+from components.new_tab import main_tab
 from extractor.log_utils import initialize_logger
 
 from version import __version__
@@ -27,10 +28,18 @@ st.set_page_config(
 )
 
 st.markdown(
-    """<div style="display: flex;flex-direction: row; align-items: flex-end"><a href="https://mprint.org/index.html"><img src="data:image/png;base64,{}" width="400px"></a><p>Curation Tool v{}</p></div> """.format(
-        base64.b64encode(open("./images/mprint-logo.png", "rb").read()).decode(),
-        __version__,
-    ),
+    f"""
+<div style="display: flex; flex-direction: row; align-items: flex-start; gap: 20px; margin-bottom: 1.5rem;">
+    <a href="https://mprint.org/index.html" target="_blank" style="margin: 0; padding: 0;">
+        <img src="data:image/png;base64,{base64.b64encode(open('./images/mprint-logo.png', 'rb').read()).decode()}" 
+             width="250px" style="margin: 0; padding: 0;">
+    </a>
+    <div style="font-size: 1.6rem; font-weight: 600; line-height: 1; transform: translateY(50px); margin: 0; padding: 0;">
+        Tabular Curation Tool
+        <span style="font-size: 0.9rem; color: gray;"> v{__version__}</span>
+    </div>
+</div>
+""",
     unsafe_allow_html=True,
 )
 
