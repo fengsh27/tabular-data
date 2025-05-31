@@ -228,6 +228,8 @@ class HtmlTableParser(object):
         Yichuan 0528
         """
         sections = self.extract_sections(html)
+        if sections == None:
+            return None
         for section in sections:
             if "abstract" in section["section"].lower():
                 return section["content"].replace("\n", " ")
@@ -252,7 +254,7 @@ class HtmlTableParser(object):
 
         start = self._find_first_occurrence(soup, ["abstract"])
         if not start:
-            return []
+            return None
 
         sections: List[Dict[str, str]] = []
         current: Optional[Dict[str, str]] = None
