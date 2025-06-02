@@ -338,7 +338,6 @@ def main_tab():
 
         # ---------- Manage Records ----------------------------------------
         with st.expander("Manage Records", expanded=False):
-            st.markdown("Download or delete existing records.")
             article_labels = {f"Article Preview {k}": k for k in ss.retrieved_articles}
             run_labels = {
                 f"{r['task']} ({r['article_id']}) @ {r['timestamp']:%Y-%m-%d %H:%M:%S}": r
@@ -346,6 +345,7 @@ def main_tab():
             }
             all_labels = list(article_labels.keys()) + list(run_labels.keys())
             if all_labels:
+                st.markdown("Download or delete existing records.")
                 victim = st.selectbox("Select a record", all_labels)
                 md_text = ""
                 if victim in run_labels:
