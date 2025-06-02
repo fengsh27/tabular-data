@@ -52,8 +52,7 @@ class AssemblyStep(PKPopuSumCommonStep):
         self._step_output(
             state,
             step_output=f"""
-Result:
-{display_md_table(dataframe_to_markdown(df_combined))}
+{dataframe_to_markdown(df_combined)}
 """,
         )
 

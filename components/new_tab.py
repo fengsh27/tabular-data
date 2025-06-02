@@ -37,7 +37,7 @@ from extractor.agents.pk_population_individual.pk_popu_ind_workflow import PKPop
 from extractor.agents.pk_drug_individual.pk_drug_ind_workflow import PKDrugIndWorkflow
 from extractor.request_openai import get_openai
 from extractor.request_deepseek import get_deepseek
-from extractor.table_utils import select_pk_summary_tables
+from extractor.table_utils import select_pk_summary_tables, select_pk_demographic_tables
 
 try:
     from version import __version__  # type: ignore
@@ -121,10 +121,9 @@ def run_curation(
     result_df: pd.DataFrame | None = None
 
     if task in (PROMPTS_NAME_PK_SUM, PROMPTS_NAME_PK_IND):
-        # _log("Selecting PK tables ...")
         selected_tables, _, _ = select_pk_summary_tables(tables, llm)
         if not selected_tables:
-            _log("No PK tables detected – aborting.")
+            _log("No PK parameter tables detected.")
             return "\n".join(logs), None
 
         dfs: list[pd.DataFrame] = []
@@ -142,7 +141,48 @@ def run_curation(
             dfs.append(df)
         if dfs:
             result_df = pd.concat(dfs, ignore_index=True)
+    elif task in (PROMPTS_NAME_PK_POPU_SUM, PROMPTS_NAME_PK_POPU_IND):
+        selected_tables, _, _ = select_pk_demographic_tables(tables, llm)
+        if not selected_tables:
+            _log("No PK demographic tables detected.")
+            if sections:
+                article_text = "\n".join(
+                    f"{sec['section']}\n{sec['content']}" for sec in sections
+                )
+            else:
+                article_text = f"{title}\n{abstract}"
 
+            article_text = convert_html_to_text_no_table(article_text)
+            article_text = remove_references(article_text)
+
+            full_mapping = {
+                PROMPTS_NAME_PK_POPU_SUM: PKPopuSumWorkflow,
+                PROMPTS_NAME_PK_POPU_IND: PKPopuIndWorkflow,
+            }
+            wf_cls = full_mapping.get(task)
+            wf = wf_cls(llm=llm)
+            wf.build()
+            result_df = wf.go_full_text(
+                title=title,
+                full_text=article_text,
+                step_callback=_step_callback,
+            )
+        else:
+            _log("Detected PK demographic table.")
+            dfs: list[pd.DataFrame] = []
+            wf_cls = PKPopuSumWorkflow if task == PROMPTS_NAME_PK_POPU_SUM else PKPopuIndWorkflow
+            for tbl in selected_tables:
+                caption = "\n".join([tbl.get("caption", ""), tbl.get("footnote", "")])
+                wf = wf_cls(llm=llm)
+                wf.build()
+                df = wf.go_full_text(
+                    title=title,
+                    full_text=dataframe_to_markdown(tbl["table"])+"\n\n"+caption,
+                    step_callback=_step_callback,
+                )
+                dfs.append(df)
+            if dfs:
+                result_df = pd.concat(dfs, ignore_index=True)
     else:
         if sections:
             article_text = "\n".join(
@@ -157,15 +197,12 @@ def run_curation(
         full_mapping = {
             PROMPTS_NAME_PK_SPEC_SUM: PKSpecSumWorkflow,
             PROMPTS_NAME_PK_DRUG_SUM: PKDrugSumWorkflow,
-            PROMPTS_NAME_PK_POPU_SUM: PKPopuSumWorkflow,
+            # PROMPTS_NAME_PK_POPU_SUM: PKPopuSumWorkflow,
             PROMPTS_NAME_PK_SPEC_IND: PKSpecIndWorkflow,
             PROMPTS_NAME_PK_DRUG_IND: PKDrugIndWorkflow,
-            PROMPTS_NAME_PK_POPU_IND: PKPopuIndWorkflow,
+            # PROMPTS_NAME_PK_POPU_IND: PKPopuIndWorkflow,
         }
         wf_cls = full_mapping.get(task)
-        if wf_cls is None:
-            raise ValueError(f"Unknown task: {task}")
-
         wf = wf_cls(llm=llm)
         wf.build()
         result_df = wf.go_full_text(
@@ -230,6 +267,7 @@ def main_tab():
                                 sections=sections,
                                 html=html,
                                 info=info,
+                                article_id=pmid,
                             )
                         else:
                             st.error(msg)
@@ -250,6 +288,7 @@ def main_tab():
                         sections=sections,
                         html=html_text,
                         info=info,
+                        article_id=pmid,
                     )
 
         # ---------- Curation Settings -------------------------------------
@@ -299,6 +338,7 @@ def main_tab():
 
         # ---------- Manage Records ----------------------------------------
         with st.expander("Manage Records", expanded=False):
+            st.markdown("Download or delete existing records.")
             article_labels = {f"Article Preview {k}": k for k in ss.retrieved_articles}
             run_labels = {
                 f"{r['task']} ({r['article_id']}) @ {r['timestamp']:%Y-%m-%d %H:%M:%S}": r
@@ -306,7 +346,68 @@ def main_tab():
             }
             all_labels = list(article_labels.keys()) + list(run_labels.keys())
             if all_labels:
-                victim = st.selectbox("Select a record to delete", all_labels)
+                victim = st.selectbox("Select a record", all_labels)
+                md_text = ""
+                if victim in run_labels:
+                    run = run_labels[victim]
+                    md_parts = []
+                    md_parts.append("### Curation Result")
+                    if isinstance(run["df"], pd.DataFrame) and not run["df"].empty:
+                        md_parts.append(run["df"].to_markdown(index=False))
+                    md_parts.append("### Step-by-Step Reasoning")
+                    md_parts.append(run["logs"])
+                    md_text = "\n\n".join(md_parts)
+                    def prettify_md(md_text: str) -> str:
+                        md_text = re.sub(
+                            r'\s*\[(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})\]\s*',
+                            r'\n\n**[\1]**\n\n',
+                            md_text
+                        )
+
+                        lines = md_text.splitlines()
+                        out, in_table = [], False
+
+                        for ln in lines:
+                            is_table_row = bool(re.match(r'^\s*\|.*\|\s*$', ln))
+
+                            if is_table_row and not in_table:
+                                if out and out[-1].strip():
+                                    out.append('')
+                                in_table = True
+
+                            if not is_table_row and in_table:
+                                if out and out[-1].strip():
+                                    out.append('')
+                                in_table = False
+
+                            out.append(ln)
+                        if in_table and out and out[-1].strip():
+                            out.append('')
+                        md_text = '\n'.join(out)
+                        md_text = re.sub(r'\n{4,}', '\n\n\n', md_text)
+
+                        return md_text
+                    md_text = prettify_md(md_text)
+
+                    # st.download_button(
+                    #     label="Download",
+                    #     data=md_text,
+                    #     file_name=f"{run['task'].replace(' ', '_')}_{run['timestamp']:%Y%m%d_%H%M%S}.md",
+                    #     mime="text/markdown",
+                    #     use_container_width=True,
+                    # )
+                st.download_button(
+                    label="Download",
+                    data=md_text,
+                    file_name=(
+                        f"{run['task'].replace(' ', '_')}_{run['timestamp']:%Y%m%d_%H%M%S}.md"
+                        if victim in run_labels else "placeholder.md"
+                    ),
+                    mime="text/markdown",
+                    use_container_width=True,
+                    disabled=not victim in run_labels,
+                    key="download-md"
+                )
                 if st.button("Delete", use_container_width=True):
                     if victim in article_labels:
                         ss.retrieved_articles.pop(article_labels[victim], None)
@@ -323,7 +424,18 @@ def main_tab():
     for article_id, data in ss.retrieved_articles.items():
         with st.expander(f"Article Preview ({article_id})", expanded=False):
             if data["title"]:
-                st.markdown(f"### {escape_markdown(data['title'])}")
+                # st.markdown(f"### {escape_markdown(data['title'])}")
+                st.markdown(
+                    f"""
+                    <h3>
+                        {escape_markdown(data['title'])}<a href="https://pubmed.ncbi.nlm.nih.gov/{data['article_id']}" target="_blank"
+                           style="font-size: 0.5em; margin-left: 5px;">
+                           View on PubMed</a>
+                    </h3>
+                    <br>
+                    """,
+                    unsafe_allow_html=True
+                )
             if data["abstract"]:
                 st.markdown("#####  Abstract")
                 st.markdown(escape_markdown(data["abstract"]))
@@ -362,11 +474,10 @@ def main_tab():
         for run in ss.curation_runs:
             with st.expander(f"{run['task']} ({run['article_id']}) @ {run['timestamp']:%Y-%m-%d %H:%M:%S}"):
 
-
                 def convert_log_to_markdown(log_text: str) -> None:
-                    log_text = log_text.replace("Main Table", "previous table")
-                    log_text = log_text.replace("Subtable 1", "previous table")
-                    log_text = log_text.replace("Subtable 2", "my new table")
+                    log_text = log_text.replace("Main Table", "earlier tables")
+                    log_text = log_text.replace("Subtable 1", "earlier tables")
+                    log_text = log_text.replace("Subtable 2", "my target table")
 
                     sections = re.split(r'\[\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\] =+\n?', log_text)
 
@@ -443,7 +554,19 @@ def main_tab():
                                     st.markdown(f"```\n{table_text}\n```")
 
                 if run["title"]:
-                    st.markdown(f"### {escape_markdown(run['title'])}")
+                    # st.markdown(f"### {escape_markdown(run['title'])}")
+                    st.markdown(
+                        f"""
+                        <h3>
+                            {escape_markdown(run['title'])}<a href="https://pubmed.ncbi.nlm.nih.gov/{run['article_id']}" target="_blank"
+                               style="font-size: 0.5em; margin-left: 5px;">
+                               View on PubMed</a>
+                        </h3>
+                        <br>
+                        """,
+                        unsafe_allow_html=True
+                    )
+
                 if isinstance(run['df'], pd.DataFrame) and not run['df'].empty:
                     st.markdown(f"#####  {run['task']}")
                     st.dataframe(run['df'])
