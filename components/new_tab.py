@@ -415,7 +415,7 @@ def main_tab():
                         ss.curation_runs.remove(run_labels[victim])
                     st.rerun()
             else:
-                st.info("No records yet")
+                st.info("Use ‘Access Article’ first")
 
     # ---------------- Main Pane ----------------
     if not ss.retrieved_articles:
