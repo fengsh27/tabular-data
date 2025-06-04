@@ -20,7 +20,7 @@ This table contains multiple columns, categorized as follows:
 This table can be split into multiple sub-tables {situation_str}.
 Please follow these steps:
   (1) Carefully review all columns and analyze their relationships to determine logical groupings.
-  (2) Ensure that each group contains exactly one 'Patient ID'.
+  **(2) Ensure that each group contains exactly one 'Patient ID'.**
 
 Return the results as a list of lists, where each inner list represents a sub-table with its included columns.
 [["ColumnA", "ColumnB", "ColumnC", "ColumnG"], ["ColumnA", "ColumnD", "ColumnE", "ColumnF", "ColumnG"]]

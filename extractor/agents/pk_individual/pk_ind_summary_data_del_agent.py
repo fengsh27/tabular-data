@@ -15,6 +15,7 @@ There is now a table related to pharmacokinetics (PK).
 {processed_md_table}
 Carefully examine the table and follow these steps:
 (1) Remove any information that pertains to summary statistics, aggregated values, or group-level information such as 'N=' values, as these are not individual-specific.
+    - Delete data entries that do not have an associated Patient ID (e.g., Patient 1, Case 1).
 (2) **Do not remove** any information that pertains to specific individuals, such as individual-level results or personally identifiable data.
 Please return the result with the following format:
 processed: boolean value, False represents the table have already meets the requirement, don't need to be processed. Otherwise, it will be True

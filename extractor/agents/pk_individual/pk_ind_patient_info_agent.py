@@ -12,7 +12,7 @@ Here is the table caption:
 {caption}
 Carefully analyze the table, **row by row and column by column**, and follow these steps:
 (1) Identify how many unique [Patient ID, Population, Pregnancy stage] combinations are present in the table.
-Patient ID refers to the identifier assigned to each patient.
+Patient ID refers to the identifier assigned to each patient. Use the exact same word in the table. 
 Population is the patient age group.
 Pregnancy stage is the pregnancy stages of patients mentioned in the study.
 (2) List each unique combination in the format of a list of lists in one line, using Python string syntax. Your answer should be enclosed in double angle brackets <<>>.
