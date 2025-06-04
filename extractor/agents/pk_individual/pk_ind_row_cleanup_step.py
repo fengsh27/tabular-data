@@ -23,10 +23,10 @@ class RowCleanupStep(PKIndCommonStep):
 
         # df_combined["original_index"] = df_combined.index
         expected_columns = [
+            "Patient ID",
             "Drug name",
             "Analyte",
             "Specimen",
-            "Patient ID",
             "Population",
             "Pregnancy stage",
             "Pediatric/Gestational age",
@@ -146,6 +146,10 @@ class RowCleanupStep(PKIndCommonStep):
             .drop(columns=["original_order"])
             .reset_index(drop=True)
         )
+
+        """Patient ID as the first col"""
+        cols = ['Patient ID'] + [col for col in df_combined.columns if col != 'Patient ID']
+        df_combined = df_combined[cols]
 
         self._step_output(
             state,

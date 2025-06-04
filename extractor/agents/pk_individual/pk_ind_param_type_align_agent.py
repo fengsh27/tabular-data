@@ -63,7 +63,7 @@ def post_process_parameter_type_align(
         return dataframe_to_markdown(df_table)
     else:
         df_table = f_transpose(df_table)
-        df_table.columns = ["Parameter type"] + list(df_table.columns[1:])
+        # df_table.columns = ["Parameter type"] + list(df_table.columns[1:])
         return deduplicate_headers(
-            fill_empty_headers(remove_empty_col_row(dataframe_to_markdown(df_table)))
+            fill_empty_headers(fill_empty_headers(remove_empty_col_row(dataframe_to_markdown(df_table))))
         )

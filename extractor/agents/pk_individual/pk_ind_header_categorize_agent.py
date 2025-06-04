@@ -14,7 +14,7 @@ The following table contains pharmacokinetics (PK) data:
 {column_headers_str}
 Carefully analyze the table and follow these steps:  
 (1) Examine all column headers and categorize each one into one of the following groups:  
-   - **"Patient ID"**: Columns that describe the identifier assigned to each patient.
+   - **"Patient ID"**: Columns that describe the identifier assigned to each patient. **There must be at least one column that serves as patient ID. Make sure you find it**
    - **"Parameter value"**: (Must be Dependent Variable) Columns that describe pharmacokinetics concentration or ratio parameter data.  
         - Examples: Drug concentration (e.g., "Plasma Conc ng/mL"), Area under the curve (e.g., "AUC 0-∞"), Maximum concentration (e.g., "Cmax"), Time to Maximum Concentration (e.g., "Tmax"), Half-life (e.g., "T1/2"), Clearance rate (e.g., "CL/F").
    - **"Uncategorized"**: Columns that do not fit into the above categories, such as those representing time-related information, or dose amount information.
@@ -89,11 +89,11 @@ def post_process_validate_categorized_result(
         logger.error(error_msg)
         raise ValueError(error_msg)
 
-    # # Ensure exactly one "Parameter type" column exists
-    # parameter_type_count = list(match_dict.values()).count("Parameter type")
-    # if parameter_type_count != 1:
-    #     error_msg = f"Invalid mapping: Expected 1 'Parameter type' column, but found {parameter_type_count}."
-    #     logger.error(error_msg)
-    #     raise ValueError(error_msg)
+    # Ensure "Patient ID" column exists
+    parameter_type_count = list(match_dict.values()).count("Patient ID")
+    if parameter_type_count == 0:
+        error_msg = f"**There must be at least one column that serves as the patient ID. Make sure you find it**"
+        logger.error(error_msg)
+        raise ValueError(error_msg)
 
     return res
