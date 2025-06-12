@@ -13,7 +13,7 @@ DRUG_INFO_PROMPT = ChatPromptTemplate.from_template("""
 {full_text}
 Read the article and answer the following:
 
-(1) Determine how many unique combinations of [Patient ID, Drug/Metabolite name, Dose frequency, Dose amount, Source text] appear in the table.  
+(1) Determine how many unique combinations of [Patient ID, Drug/Metabolite name, Dose frequency, Dose amount, Source text] appear in the article.  
     - **Patient ID**: Patient ID refers to the identifier assigned to each individual patient.
 
     - **Drug/Metabolite name**: The name of the drug or its metabolite that has been studied.

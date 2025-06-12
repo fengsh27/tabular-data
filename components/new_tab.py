@@ -25,6 +25,8 @@ from extractor.constants import (
     PROMPTS_NAME_PK_SPEC_IND,
     PROMPTS_NAME_PK_DRUG_IND,
     PROMPTS_NAME_PK_POPU_IND,
+    PROMPTS_NAME_PE_STUDY_INFO,
+    PROMPTS_NAME_PE_STUDY_OUT
 )
 from extractor.agents.chatbot_utils import prepare_starter_history
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
@@ -36,9 +38,11 @@ from extractor.agents.pk_drug_summary.pk_drug_sum_workflow import PKDrugSumWorkf
 from extractor.agents.pk_specimen_individual.pk_spec_ind_workflow import PKSpecIndWorkflow
 from extractor.agents.pk_population_individual.pk_popu_ind_workflow import PKPopuIndWorkflow
 from extractor.agents.pk_drug_individual.pk_drug_ind_workflow import PKDrugIndWorkflow
+from extractor.agents.pe_study_info.pe_study_info_workflow import PEStudyInfoWorkflow
+from extractor.agents.pe_study_outcome.pe_study_out_workflow import PEStudyOutWorkflow
 from extractor.request_openai import get_openai, get_client_and_model
 from extractor.request_deepseek import get_deepseek
-from extractor.table_utils import select_pk_summary_tables, select_pk_demographic_tables
+from extractor.table_utils import select_pk_summary_tables, select_pk_demographic_tables, select_pe_tables
 
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 
@@ -60,10 +64,13 @@ def _get_llm(llm_label: str):
 def retrieve_article(pmid: str) -> Tuple[bool, str | None, str]:
     """Fetch HTML by PMID/PMCID."""
     retriever = ArticleRetriever()
-    ok, html, code = retriever.request_article(pmid)
-    if not ok:
-        return False, None, f"Retrieval failed (HTTP {code})."
-    return True, html, "Article retrieved successfully."
+    try:
+        ok, html, code = retriever.request_article(pmid)
+        if not ok:
+            return False, None, f"Retrieval failed (HTTP {code})."
+        return True, html, "Article retrieved successfully."
+    except Exception as e:
+        return False, None, f"request_article() failed"
 
 
 def extract_article_assets(html: str):
@@ -235,13 +242,15 @@ def run_curation(
     result_df: pd.DataFrame | None = None
 
     if task in (PROMPTS_NAME_PK_SUM, PROMPTS_NAME_PK_IND):
-        selected_tables, selected_table_indexes, _ = select_pk_summary_tables(tables, llm)
+        selected_tables, selected_table_indexes, reasoning_process, _ = select_pk_summary_tables(tables, llm)
         if not selected_tables:
             _log("No PK parameter table detected.")
+            _log(reasoning_process)
             return "\n".join(logs), None
         else:
             _log("Detected PK parameter table.")
             _log(f"Selected tables (indices): {selected_table_indexes}")
+            _log(reasoning_process)
 
         dfs: list[pd.DataFrame] = []
         wf_cls = PKSumWorkflow if task == PROMPTS_NAME_PK_SUM else PKIndWorkflow
@@ -259,10 +268,10 @@ def run_curation(
         if dfs:
             result_df = pd.concat(dfs, ignore_index=True)
     elif task in (PROMPTS_NAME_PK_POPU_SUM, PROMPTS_NAME_PK_POPU_IND):
-        selected_tables, selected_table_indexes, _ = select_pk_demographic_tables(tables, llm)
+        selected_tables, selected_table_indexes, reasoning_process, _ = select_pk_demographic_tables(tables, llm)
         if not selected_tables:
-            _log("No PK demographic table detected.")
-            _log("Use full text as the input.")
+            _log("No PK demographic table detected. Use full text as the input.")
+            _log(reasoning_process)
             if sections:
                 article_text = "\n".join(
                     f"{sec['section']}\n{sec['content']}" for sec in sections
@@ -288,6 +297,7 @@ def run_curation(
         else:
             _log("Detected PK demographic table.")
             _log(f"Selected tables (indices): {selected_table_indexes}")
+            _log(reasoning_process)
             dfs: list[pd.DataFrame] = []
             wf_cls = PKPopuSumWorkflow if task == PROMPTS_NAME_PK_POPU_SUM else PKPopuIndWorkflow
             for tbl in selected_tables:
@@ -302,6 +312,33 @@ def run_curation(
                 dfs.append(df)
             if dfs:
                 result_df = pd.concat(dfs, ignore_index=True)
+    elif task in (PROMPTS_NAME_PE_STUDY_OUT, ):
+        selected_tables, selected_table_indexes, reasoning_process, _ = select_pe_tables(tables, llm)
+        if not selected_tables:
+            _log("No PE table detected.")
+            _log(reasoning_process)
+            return "\n".join(logs), None
+        else:
+            _log("Detected PE table.")
+            _log(f"Selected tables (indices): {selected_table_indexes}")
+            _log(reasoning_process)
+
+        # result_df = None
+        dfs: list[pd.DataFrame] = []
+        wf_cls = PEStudyOutWorkflow if task == PROMPTS_NAME_PE_STUDY_OUT else None
+        for tbl in selected_tables:
+            caption = "\n".join([tbl.get("caption", ""), tbl.get("footnote", "")])
+            wf = wf_cls(llm=llm)
+            wf.build()
+            df = wf.go_md_table(
+                title=title,
+                md_table=dataframe_to_markdown(tbl["table"]),
+                caption_and_footnote=caption,
+                step_callback=_step_callback,
+            )
+            dfs.append(df)
+        if dfs:
+            result_df = pd.concat(dfs, ignore_index=True)
     else:
         if sections:
             article_text = "\n".join(
@@ -320,6 +357,7 @@ def run_curation(
             PROMPTS_NAME_PK_SPEC_IND: PKSpecIndWorkflow,
             PROMPTS_NAME_PK_DRUG_IND: PKDrugIndWorkflow,
             # PROMPTS_NAME_PK_POPU_IND: PKPopuIndWorkflow,
+            PROMPTS_NAME_PE_STUDY_INFO: PEStudyInfoWorkflow
         }
         wf_cls = full_mapping.get(task)
         wf = wf_cls(llm=llm)
@@ -377,7 +415,8 @@ def main_tab():
                 else:
                     with st.spinner("Retrieving …"):
                         ok, html, msg = retrieve_article(pmid)
-                        info = f"{datetime.now():%Y-%m-%d %H:%M:%S}  {msg}"
+                        if msg:
+                            info = f"{datetime.now():%Y-%m-%d %H:%M:%S}  {msg}"
                         if ok and html:
                             tables, title, abstract, sections = extract_article_assets(html)
                             info += f"  Found {len(tables)} table(s)."
@@ -391,7 +430,8 @@ def main_tab():
                                 article_id=pmid,
                             )
                         else:
-                            st.error(msg)
+                            st.warning("Currently, only PMC articles are supported; content from other publishers is not accessible.")
+                            # st.error(msg)
 
             # — via raw HTML —
             if click_html:
@@ -416,6 +456,9 @@ def main_tab():
         with st.expander("Curation Settings", expanded=False):
             if ss.retrieved_articles:
                 st.markdown("Select the model and task to run on the article.")
+                st.markdown("PK - Pharmacokinetics")
+                st.markdown("PE - Pharmacoepidemiology")
+                st.markdown("CT - Clinical Trials")
                 sel_aid = st.selectbox("Select Article", list(ss.retrieved_articles.keys()), index=0)
                 ss.llm_option = st.radio("Select LLM:", [LLM_CHATGPT_4O, LLM_DEEPSEEK_CHAT], index=0)
                 ss.task_option = st.selectbox(
@@ -429,6 +472,8 @@ def main_tab():
                         PROMPTS_NAME_PK_SPEC_IND,
                         PROMPTS_NAME_PK_DRUG_IND,
                         PROMPTS_NAME_PK_POPU_IND,
+                        PROMPTS_NAME_PE_STUDY_INFO,
+                        PROMPTS_NAME_PE_STUDY_OUT,
                     ],
                     index=0,
                 )

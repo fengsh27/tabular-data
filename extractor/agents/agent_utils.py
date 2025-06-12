@@ -88,3 +88,8 @@ def from_system_template(template, **kwargs):
     prompt_template = PromptTemplate.from_template(template, **kwargs)
     message = SystemMessagePromptTemplate(prompt=prompt_template)
     return ChatPromptTemplate.from_messages([message])
+
+
+def escape_braces_for_format(text: str) -> str:
+    # replace all {xxx} by {{xxx}}
+    return re.sub(r'\{([^{}]+)\}', r'{{\1}}', text)

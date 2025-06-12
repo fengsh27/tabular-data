@@ -29,7 +29,6 @@ FULL_TEXT_LENGTH_THRESHOLD = 10000  # we assume the length of full-text paper sh
 # greater than 10000
 MAX_FULL_TEXT_LENGTH = 31 * 1024  # should not be greater than 31K
 
-
 ERROR_UNKNOWN_ERROR = -1
 ERROR_OK = 5000
 
@@ -50,12 +49,13 @@ PROMPTS_NAME_PK_POPU_SUM = "PK Population Summary"
 PROMPTS_NAME_PK_SPEC_IND = "PK Specimen Individual"
 PROMPTS_NAME_PK_DRUG_IND = "PK Drug Individual"
 PROMPTS_NAME_PK_POPU_IND = "PK Population Individual"
-PROMPTS_NAME_PE = "Pharmaco-Epidemiology"
+PROMPTS_NAME_PE = "deprecate"  # "Pharmaco-Epidemiology"
+PROMPTS_NAME_PE_STUDY_INFO = "PE/CT Study Information"
+PROMPTS_NAME_PE_STUDY_OUT = "PE/CT Study Outcome"
 
 LLM_CHATGPT_4O = "ChatGPT-4o"
 LLM_GEMINI_PRO = "Gemini 2.0 pro"
 LLM_DEEPSEEK_CHAT = "DeepSeek-v3"
-
 
 TABLE_ROLE_PROMPTS = "Please act as a biomedical assistant, help to extract the information from the provided source"
 TABLE_SOURCE_PROMPTS = "html table from biomedical article"

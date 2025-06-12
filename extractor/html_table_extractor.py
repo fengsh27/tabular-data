@@ -4,6 +4,7 @@ import pandas as pd
 from TabFuncFlow.utils.table_utils import html_table_to_markdown, dataframe_to_markdown
 from extractor.utils import convert_html_table_to_dataframe
 from typing import List, Optional, Dict
+from extractor.agents.agent_utils import escape_braces_for_format
 
 
 def get_tag_text(tag: Tag) -> str:
@@ -472,7 +473,7 @@ class HtmlTableExtractor(object):
         for parser in self.parsers:
             title = parser.extract_title(html)
             if title is not None:
-                return title
+                return escape_braces_for_format(title)
             
         return None
 
@@ -481,9 +482,9 @@ class HtmlTableExtractor(object):
         Yichuan 0501
         """
         for parser in self.parsers:
-            title = parser.extract_abstract(html)
-            if title is not None:
-                return title
+            abstract = parser.extract_abstract(html)
+            if abstract is not None:
+                return escape_braces_for_format(abstract)
 
         return None
 
@@ -494,56 +495,14 @@ class HtmlTableExtractor(object):
         for parser in self.parsers:
             sections = parser.extract_sections(html)
             if sections is not None:
+                # return sections
+                for s in sections:
+                    if "section" in s:
+                        s["section"] = escape_braces_for_format(s["section"])
+                    if "content" in s:
+                        s["content"] = escape_braces_for_format(s["content"])
                 return sections
-
         return None
-
-    @staticmethod
-    def convert_sections_to_chunks(sections, min_chunk_size=2048):
-        """
-        This method is currently unused, as processing the entire article as a whole gets better results.
-
-        Converts structured sections into a list of text chunks, each at least `min_chunk_size` characters long.
-        Filters out:
-          1. Sections with empty or whitespace-only content
-          2. Completely duplicate sections (same title and content)
-        Ensures all chunks meet the minimum length requirement (except possibly the last one).
-        Yichuan 0502
-        """
-        # Step 1: Remove empty and duplicate sections
-        seen = set()
-        filtered_sections = []
-        for s in sections:
-            title = s.get("section", "").strip()
-            content = s.get("content", "").strip()
-            if not content:
-                continue  # Skip empty content
-            key = (title, content)
-            if key in seen:
-                continue  # Skip exact duplicates
-            seen.add(key)
-            filtered_sections.append({"section": title, "content": content})
-
-        # Step 2: Accumulate and chunk
-        chunks = []
-        buffer = ""
-
-        for section in filtered_sections:
-            complete_section = section["section"] + ":\n" + section["content"]
-            buffer += "\n\n" + complete_section
-
-            if len(buffer.strip()) >= min_chunk_size:
-                chunks.append(buffer.strip())
-                buffer = ""
-
-        # Step 3: Handle remaining buffer
-        if buffer.strip():
-            if len(buffer.strip()) < min_chunk_size and chunks:
-                chunks[-1] += "\n\n" + buffer.strip()
-            else:
-                chunks.append(buffer.strip())
-
-        return chunks
 
     @staticmethod
     def _tables_eq(tablel: dict, table2: dict) -> bool:
