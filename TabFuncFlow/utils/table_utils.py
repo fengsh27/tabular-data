@@ -129,6 +129,9 @@ def dataframe_to_markdown(df_table):
     :param df_table: Pandas DataFrame to convert
     :return: Markdown-formatted table as a string
     """
+    if df_table is None:
+        return ""
+
     if df_table.empty:
         return ""  # Return empty string if DataFrame is empty
 

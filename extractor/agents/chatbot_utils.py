@@ -7,6 +7,8 @@ from extractor.constants import (
     PROMPTS_NAME_PK_SPEC_IND,
     PROMPTS_NAME_PK_DRUG_IND,
     PROMPTS_NAME_PK_POPU_IND,
+    PROMPTS_NAME_PE_STUDY_INFO,
+    PROMPTS_NAME_PE_STUDY_OUT,
 )
 
 try:
@@ -34,6 +36,8 @@ COLUMN_DEFINITIONS = {
     PROMPTS_NAME_PK_SPEC_IND: "'Patient ID', 'Specimen', 'Sample N', 'Population', 'Pregnancy stage', 'Pediatric/Gestational age', 'Sample time', 'Time unit', 'Note'",
     PROMPTS_NAME_PK_DRUG_IND: "'Patient ID', 'Drug/Metabolite name', 'Dose amount', 'Dose unit', 'Dose frequency', 'Dose schedule', 'Dose route', 'Population', 'Pregnancy stage', 'Pediatric/Gestational age', 'Note'",
     PROMPTS_NAME_PK_POPU_IND: "'Patient ID', 'Characteristic', 'Characteristic subcategory', 'Characteristic unit', 'Characteristic value', 'Population', 'Pregnancy stage', 'Pediatric/Gestational age', 'Note'",
+    PROMPTS_NAME_PE_STUDY_INFO: "'Study type', 'Population', 'Study design', 'Pregnancy stage', 'Drug name', 'Data source', 'Inclusion criteria', 'Exclusion criteria', 'Outcomes', 'Subject N'",
+    PROMPTS_NAME_PE_STUDY_OUT: "'Characteristic', 'Exposure', 'Outcome', 'Parameter unit', 'Parameter statistic', 'Parameter value', 'Variation type', 'Variation value', 'Interval type', 'Lower bound', 'Upper bound', 'P value'"
 }
 
 
