@@ -39,7 +39,7 @@ from extractor.agents.pk_specimen_individual.pk_spec_ind_workflow import PKSpecI
 from extractor.agents.pk_population_individual.pk_popu_ind_workflow import PKPopuIndWorkflow
 from extractor.agents.pk_drug_individual.pk_drug_ind_workflow import PKDrugIndWorkflow
 from extractor.agents.pe_study_info.pe_study_info_workflow import PEStudyInfoWorkflow
-from extractor.agents.pe_study_outcome.pe_study_out_workflow import PEStudyOutWorkflow
+from extractor.agents.pe_study_outcome_ver2.pe_study_out_workflow import PEStudyOutWorkflow
 from extractor.request_openai import get_openai, get_client_and_model
 from extractor.request_deepseek import get_deepseek
 from extractor.table_utils import select_pk_summary_tables, select_pk_demographic_tables, select_pe_tables
@@ -138,7 +138,7 @@ def convert_log_to_markdown(log_text: str) -> None:
 
             pipe_count = cleaned.count('|')
 
-            if pipe_count > 2:
+            if pipe_count >= 2:
                 table_buffer.append(cleaned)
                 continue
 
