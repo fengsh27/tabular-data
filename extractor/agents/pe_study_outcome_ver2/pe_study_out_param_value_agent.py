@@ -5,15 +5,16 @@ import logging
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
-from extractor.agents.pe_study_outcome.pe_study_out_common_agent import (
+from extractor.agents.pe_study_outcome_ver2.pe_study_out_common_agent import (
     PEStudyOutCommonAgentResult,
     RetryException,
 )
 
 logger = logging.getLogger(__name__)
 
-CHARACTERISTIC_REFINE_PROMPT = ChatPromptTemplate.from_template("""
-We are processing an article: "{article_title}"
+COLUMN_NUMBER = 9
+
+PARAMETER_VALUE_PROMPT = ChatPromptTemplate.from_template("""
 The following main table contains Pharmacoepidemiology data:  
 {processed_md_table}
 Here is the table caption:  
@@ -24,7 +25,7 @@ Below is Subtable 1:
 Please review the information in Subtable 1 row by row and complete Subtable 2 accordingly.
 Specifically, you need to interpret the meaning of each entry in the "Value" column of Subtable 1 and rewrite it in a more structured and standardized format in Subtable 2.
 Subtable 2 should include the following column headers only:
-**Main value, Main value unit, Statistics type, Variation type, Variation value, Interval type, Lower bound, Upper bound**
+**Main value, Main value unit, Statistics type, Variation type, Variation value, Interval type, Lower bound, Upper bound, P value**
 
 Main value: the value of main parameter (not a range). 
 Main value unit: The unit of the main parameter (e.g. kg, g, Count) **DO NOT USE Statistics type, such as SD, as the unit!!**
@@ -38,21 +39,27 @@ Variation value: the value (not a range) that corresponds to the specific variat
 Interval type: the type of interval that is being used to describe uncertainty or variability around a measure or estimate, like '95% CI,' 'Range,' 'IQR,' etc.
 Lower bound: the lower bound value of the interval.
 Upper bound: is the upper bound value of the interval.
+P value: Its P-value.
 
 Please Note:
 (1) An interval consisting of two numbers must be placed separately into the Low limit and High limit fields; it is prohibited to place it in the Variation value field.
-(2) For values that do not need to be filled, enter "N/A".
+(9) Important: Every row in Subtable 2 must contain exactly {COLUMN_NUMBER} values.
+    - Even if you don’t know the value for some columns, you must still fill them with "N/A".
+    - Rows with fewer than {COLUMN_NUMBER} values will be considered invalid.
 (3) Strictly ensure that you process only rows 0 to {md_table_with_1_value_max_row_index} from the Subtable 1 (which has {md_table_with_1_value_rows} rows in total). 
     - The number of processed rows must **exactly match** the number of rows in the Subtable 1—no more, no less.  
 (4) For rows in Subtable 1 that can not be extracted, enter "N/A" for the entire row.
-(3) **Important:** Please return Subtable 2 as a list of lists, excluding the headers. Ensure all values are converted to strings.
-(4) **Absolutely no calculations are allowed—every value must be taken directly from Subtable 1 without any modifications.**  
-(5) The final list should be like this:
-[["10", "Count", "Sum", "%", "1", "N/A", "N/A", "N/A"], ["50", "N/A", "%", "N/A", "N/A", "N/A", "N/A", "N/A"]]
+(5) **Important:** Please return Subtable 2 as a list of lists, excluding the headers. Ensure all values are converted to strings.
+(6) **Absolutely no calculations are allowed—every value must be taken directly from Subtable 1 without any modifications.**  
+(7) **P value is very important:** The P-value usually won't be in the row you're processing. You must check the **entire main table** to see if there's a corresponding P-value, and fill it in if found.  
+    - **If the same P-value corresponds to multiple rows in Subtable 1, you must fill in that P-value for all of those rows in Subtable 2.**  
+    - Do not skip or omit the P-value in any row that should have it.
+(8) The final list should be like this:
+[["10", "Count", "Sum", "%", "1", "N/A", "N/A", "N/A", "N/A"], ["50", "N/A", "%", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"]]
 """)
 
 
-def get_characteristic_refine_prompt(
+def get_parameter_value_prompt(
     md_table: str,
     md_table_with_1_param_type_and_value: str,
     caption: str,
@@ -60,7 +67,7 @@ def get_characteristic_refine_prompt(
     rows_num = markdown_to_dataframe(
         md_table_with_1_param_type_and_value
     ).shape[0]
-    return CHARACTERISTIC_REFINE_PROMPT.format(
+    return PARAMETER_VALUE_PROMPT.format(
         processed_md_table=display_md_table(md_table),
         caption=caption,
         processed_md_table_with_1_value=display_md_table(
@@ -68,22 +75,21 @@ def get_characteristic_refine_prompt(
         ),
         md_table_with_1_value_max_row_index=rows_num - 1,
         md_table_with_1_value_rows=rows_num,
+        COLUMN_NUMBER=COLUMN_NUMBER,
     )
 
 
-COLUMN_NUMBER = 8
-
-
-class CharacteristicRefinementResult(PEStudyOutCommonAgentResult):
+class ParameterValueResult(PEStudyOutCommonAgentResult):
+    """Parameter Value Extraction Result"""
 
     extracted_param_values: list[list[str]] = Field(
         description="""a list of lists containing parameter values, like 
-[["10", "Count", "Sum", "%", "1", "N/A", "N/A", "N/A"], ["50", "N/A", "%", "N/A", "N/A", "N/A", "N/A", "N/A"]]"""
+[["10", "Count", "Sum", "%", "1", "N/A", "N/A", "N/A", "N/A"], ["50", "N/A", "%", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"]]"""
     )
 
 
 def post_process_matched_list(
-    res: CharacteristicRefinementResult,
+    res: ParameterValueResult,
     expected_rows: int,
 ) -> str:
     matched_values = res.extracted_param_values
@@ -99,7 +105,7 @@ def post_process_matched_list(
 {str(res.extracted_param_values)}
 Why it's wrong. Mismatch: Expected {COLUMN_NUMBER} columns, but got {len(item)} extracted values.
 Please make sure the inner list have {COLUMN_NUMBER} values, the result should be like this: 
-[["10", "Count", "Sum", "%", "1", "N/A", "N/A", "N/A"], ["50", "N/A", "%", "N/A", "N/A", "N/A", "N/A", "N/A"]]
+[["10", "Count", "Sum", "%", "1", "N/A", "N/A", "N/A", "N/A"], ["50", "N/A", "%", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"]]
 """
             logger.error(error_msg)
             raise RetryException(error_msg)
@@ -114,7 +120,8 @@ Please make sure the inner list have {COLUMN_NUMBER} values, the result should b
             "Variation value",
             "Interval type",
             "Lower bound",
-            "Upper bound"
+            "Upper bound",
+            "P value",
         ],
     )
     if df_table.shape[0] != expected_rows:
