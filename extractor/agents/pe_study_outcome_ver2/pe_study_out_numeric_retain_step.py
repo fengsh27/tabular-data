@@ -2,8 +2,8 @@ import pandas as pd
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, display_md_table
-from extractor.agents.pe_study_outcome.pe_study_out_common_agent import PEStudyOutCommonAgentResult
-from extractor.agents.pe_study_outcome.pe_study_out_common_step import PEStudyOutCommonStep
+from extractor.agents.pe_study_outcome_ver2.pe_study_out_common_agent import PEStudyOutCommonAgentResult
+from extractor.agents.pe_study_outcome_ver2.pe_study_out_common_step import PEStudyOutCommonStep
 
 import logging
 logger = logging.getLogger(__name__)

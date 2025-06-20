@@ -2,13 +2,13 @@ from abc import ABC, abstractmethod
 from typing import Any, Callable, Optional
 import logging
 
-from extractor.agents.pe_study_outcome.pe_study_out_workflow_utils import PEStudyOutWorkflowState
+from extractor.agents.pe_study_outcome_ver2.pe_study_out_workflow_utils import PEStudyOutWorkflowState
 from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
-from extractor.agents.pe_study_outcome.pe_study_out_workflow_utils import (
+from extractor.agents.pe_study_outcome_ver2.pe_study_out_workflow_utils import (
     pe_study_out_enter_step,
     pe_study_out_leave_step,
 )
-from extractor.agents.pe_study_outcome.pe_study_out_common_agent import (
+from extractor.agents.pe_study_outcome_ver2.pe_study_out_common_agent import (
     PEStudyOutCommonAgentResult,
     PEStudyOutCommonAgent,
 )
