@@ -41,7 +41,8 @@ Please Note:
     - The number of processed rows must **exactly match** the number of rows in the Subtable 1—no more, no less.  
 (3) Carefully review both the row and column headers in the main table, as they are often directly relevant to completing the Characteristic, Exposure, and Outcome columns — or they may provide important context or hints.
 (4) **Important:** Please return Subtable 2 as a list of lists, excluding the headers. 
-(5) The final list should be like this:
+(5) Note: The Outcome column is intended to describe what the main value represents — that is, it conveys the meaning or purpose of the value extracted from the main table. It should not contain the numerical value itself. Only the contextual outcome that the value measures should be included.
+(6) The final list should be like this:
 [["infants of substance abuse mothers", "cocaine unexposed", "total sleep time"], ["infants of substance abuse mothers", "cocaine exposed", "total sleep time"]]
 """)
 
