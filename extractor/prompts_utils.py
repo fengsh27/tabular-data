@@ -5,7 +5,14 @@ import logging
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown
 from extractor.constants import (
-    PKPEPipelineType
+    PROMPTS_NAME_PE,
+    PROMPTS_NAME_PK_SUM,
+    PKPEPipelineType,
+    TABLE_ROLE_PROMPTS,
+    TABLE_SOURCE_PROMPTS,
+    PKSUMMARY_TABLE_OUTPUT_COLUMNS,
+    PKSUMMARY_TABLE_OUTPUT_COLUMNS_DEFINITION,
+    TABLE_OUTPUT_NOTES,
 )
 
 logger = logging.getLogger(__name__)
