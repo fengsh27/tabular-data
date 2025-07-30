@@ -24,14 +24,17 @@ logger = initialize_logger(
 
 
 def get_llm(model: str):
-    return (
-        get_openai()
-        if model.startswith("gpt")
-        else (get_deepseek() if model.startswith("deepseek") else get_gemini())
-    )
-
+    if model == "gpt4o":
+        return get_openai()
+    elif model == "gemini15":
+        return get_gemini()
+    elif model == "deepseek":
+        return get_deepseek()
+    else:
+        raise ValueError(f"Invalid model: {model}")
+    
 def extract_pk_summary_by_csv_file(interval_time=0.0):
-    model = "gpt4o"
+    model = "gemini15"
     llm = get_llm(model)
     parser = argparse.ArgumentParser()
     parser.add_argument("-f", "--pmids_fn", help="csv file path containing pmids to extract")
@@ -39,8 +42,8 @@ def extract_pk_summary_by_csv_file(interval_time=0.0):
     parser.add_argument("-i", "--pmid", help="PMID(s) to extract. To specify multiple PMIDs, separate them with commas (e.g., 123456,234567,345678).")
     args = vars(parser.parse_args())
 
-    pmid: str = args.get("pmid", None)
-    pmids_fn: str = args.get("pmids_fn", None)
+    pmid: str | None = args.get("pmid", None)
+    pmids_fn: str | None = args.get("pmids_fn", None)
     if pmid == None and pmids_fn == None:
         print("Usage:")
         print(f"python {__file__} -o OUTPUT_FOLDER [-f PMIDS_FILE] [-i PMID] [-h]")

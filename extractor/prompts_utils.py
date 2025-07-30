@@ -5,23 +5,23 @@ import logging
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown
 from extractor.constants import (
-    PKSUMMARY_TABLE_OUTPUT_COLUMNS,
-    PKSUMMARY_TABLE_OUTPUT_COLUMNS_DEFINITION,
-    TABLE_OUTPUT_NOTES,
-    TABLE_ROLE_PROMPTS,
-    TABLE_SOURCE_PROMPTS,
-    PROMPTS_NAME_PK_SUM,
-    PROMPTS_NAME_PK_IND,
-    PROMPTS_NAME_PK_SPEC_SUM,
-    PROMPTS_NAME_PK_DRUG_SUM,
-    PROMPTS_NAME_PK_POPU_SUM,
-    PROMPTS_NAME_PK_SPEC_IND,
-    PROMPTS_NAME_PK_DRUG_IND,
-    PROMPTS_NAME_PK_POPU_IND,
-    PROMPTS_NAME_PE,
+    PKPEPipelineType
 )
 
 logger = logging.getLogger(__name__)
+
+verification_prompts = {
+    PKPEPipelineType.PK_SUMMARY: "PK Parameter Summary",
+    PKPEPipelineType.PK_INDIVIDUAL:"PK Parameter Individual",
+    PKPEPipelineType.PK_SPEC_SUMMARY: "PK Specimen Summary",
+    PKPEPipelineType.PK_DRUG_SUMMARY: "PK Drug Summary",
+    PKPEPipelineType.PK_POPU_INDIVIDUAL: "PK Population Summary",
+    PKPEPipelineType.PK_SPEC_INDIVIDUAL: "PK Specimen Individual",
+    PKPEPipelineType.PK_DRUG_INDIVIDUAL: "PK Drug Individual",
+    PKPEPipelineType.PK_POPU_INDIVIDUAL: "PK Population Individual",
+    PKPEPipelineType.PE_STUDY_INFO: "PE/CT Study Information",
+    PKPEPipelineType.PE_STUDY_OUTCOME: "PE/CT Study Outcome",
+}
 
 
 class TableExtractionPromptsGenerator(object):

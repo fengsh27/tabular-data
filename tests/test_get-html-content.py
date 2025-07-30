@@ -1,6 +1,6 @@
 from unittest.mock import patch
-from extractor.html_table_extractor import HtmlTableExtractor
-from extractor.article_retriever import ArticleRetriever
+from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
+from extractor.pmid_extractor.article_retriever import ArticleRetriever
 from extractor.prompts_utils import _generate_table_prompts
 from extractor.utils import convert_html_to_text
 

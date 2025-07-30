@@ -1,3 +1,5 @@
+from enum import Enum
+
 cookies = {"cookie_name": "cookie_value"}
 headers = {
     "authority": "www.google.com",
@@ -41,6 +43,19 @@ ERROR_OK = 5000
 # PROMPTS_NAME_PK_DRUG_IND = "Pharmacokinetics Drug Individual"
 # PROMPTS_NAME_PK_POPU_IND = "Pharmacokinetics Population Individual"
 # PROMPTS_NAME_PE = "Pharmaco-Epidemiology "
+
+class PKPEPipelineType(Enum):
+    PK_SUMMARY = "PK Parameter Summary"
+    PK_INDIVIDUAL = "PK Parameter Individual"
+    PK_SPEC_SUMMARY = "PK Specimen Summary"
+    PK_DRUG_SUMMARY = "PK Drug Summary"
+    PK_POPU_SUMMARY = "PK Population Summary"
+    PK_SPEC_INDIVIDUAL = "PK Specimen Individual"
+    PK_DRUG_INDIVIDUAL = "PK Drug Individual"
+    PK_POPU_INDIVIDUAL = "PK Population Individual"
+    PE_STUDY_INFO = "PE/CT Study Information"
+    PE_STUDY_OUTCOME = "PE/CT Study Outcome"
+
 PROMPTS_NAME_PK_SUM = "PK Parameter Summary"
 PROMPTS_NAME_PK_IND = "PK Parameter Individual"
 PROMPTS_NAME_PK_SPEC_SUM = "PK Specimen Summary"
@@ -49,7 +64,6 @@ PROMPTS_NAME_PK_POPU_SUM = "PK Population Summary"
 PROMPTS_NAME_PK_SPEC_IND = "PK Specimen Individual"
 PROMPTS_NAME_PK_DRUG_IND = "PK Drug Individual"
 PROMPTS_NAME_PK_POPU_IND = "PK Population Individual"
-PROMPTS_NAME_PE = "deprecate"  # "Pharmaco-Epidemiology"
 PROMPTS_NAME_PE_STUDY_INFO = "PE/CT Study Information"
 PROMPTS_NAME_PE_STUDY_OUT = "PE/CT Study Outcome"
 
@@ -100,3 +114,7 @@ TABLE_OUTPUT_NOTES = [
     "2. Ensure to extract all available information for each field without omitting any details.",
     "3. If the information that is not provided, please leave it with empty string.",
 ]
+
+COT_USER_INSTRUCTION = "Do not give the answer immediately. First, explain your reasoning process step by step, then provide the answer."
+
+PROMPTS_NAME_PE = "deprecate"  # "Pharmaco-Epidemiology"

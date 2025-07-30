@@ -8,7 +8,7 @@ import pandas as pd
 import time
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown
-from extractor.table_utils import select_pk_summary_tables, select_pk_demographic_tables
+from extractor.pmid_extractor.table_utils import select_pk_summary_tables, select_pk_demographic_tables
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
 from extractor.agents.pk_summary.pk_sum_workflow import PKSumWorkflow
 from extractor.agents.pk_individual.pk_ind_workflow import PKIndWorkflow
@@ -32,7 +32,7 @@ from extractor.constants import (
     LLM_DEEPSEEK_CHAT,
 )
 from extractor.stampers import ArticleStamper
-from extractor.article_retriever import ArticleRetriever
+from extractor.pmid_extractor.article_retriever import ArticleRetriever
 from extractor.request_openai import (
     get_openai,
 )
@@ -49,7 +49,7 @@ from extractor.utils import (
     preprocess_csv_table_string,
     remove_references,
 )
-from extractor.html_table_extractor import HtmlTableExtractor
+from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
 
 logger = logging.getLogger(__name__)
 

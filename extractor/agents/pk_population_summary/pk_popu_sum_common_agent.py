@@ -9,14 +9,9 @@ import logging
 from extractor.agents.agent_utils import (
     increase_token_usage,
 )
+from extractor.agents.common_agent.common_agent import RetryException
 
 logger = logging.getLogger()
-
-
-class RetryException(Exception):
-    """Exception need to retry"""
-
-    pass
 
 
 class PKPopuSumCommonAgentResult(BaseModel):

@@ -24,11 +24,11 @@ def get_openai():
 
 def get_azure_openai():
     return AzureChatOpenAI(
-        api_key=os.environ.get("OPENAI_4O_API_KEY", None),
-        azure_endpoint=os.environ.get("AZURE_OPENAI_4O_ENDPOINT", None),
-        api_version=os.environ.get("OPENAI_4O_API_VERSION", None),
-        azure_deployment=os.environ.get("OPENAI_4O_DEPLOYMENT_NAME", None),
-        model=os.environ.get("OPENAI_4O_MODEL", None),
+        api_key=os.environ.get("OPENAI_API_KEY", None),
+        azure_endpoint=os.environ.get("AZURE_OPENAI_ENDPOINT", None),
+        api_version=os.environ.get("OPENAI_API_VERSION", None),
+        azure_deployment=os.environ.get("OPENAI_DEPLOYMENT_NAME", None),
+        model=os.environ.get("OPENAI_MODEL", None),
         max_retries=5,
         # temperature=0.0,
         max_completion_tokens=int(os.environ.get("OPENAI_MAX_OUTPUT_TOKENS", 4096)),
@@ -829,6 +829,61 @@ def md_table_list_35489632_table_2():
 """
     ]
 
+
+## =============================================================================
+# 22050807_table_1
+
+@pytest.fixture(scope="module")
+def title_22050807():
+    return """The pharmacokinetics of intravenous lorazepam in pediatric patients with and without status epilepticus"""
+
+@pytest.fixture(scope="module")
+def caption_22050807_table_1():
+    return """Non-compartmental pharmacokinetics parameters from Elective Cohort patients. Cmax is maximum concentration. AUC0−∞ is area-under-the-curve to infinity. CL is clearance. Vdz is apparent volume of distribution. T1/2 is half-life."""
+
+@pytest.fixture(scope="module")
+def md_table_drug_22050807_table_1():
+    return """
+| Drug name | Analyte | Specimen |
+| --- | --- | --- |
+| Lorazepam | Lorazepam | Plasma |
+"""
+
+@pytest.fixture(scope="module")
+def md_table_patient_22050807_table_1():
+    return """| Population | Pregnancy stage | Subject N |
+| --- | --- | --- |
+| Elective Cohort | N/A | 15 |"""
+
+@pytest.fixture(scope="module")
+def md_table_patient_refined_22050807_table_1():
+    return """| Population | Pregnancy stage | Pediatric/Gestational age | Subject N |
+| --- | --- | --- | --- |
+| Elective Cohort | N/A | N/A | 15 |"""
+
+@pytest.fixture(scope="module")
+def md_table_summary_22050807_table_1():
+    return """
+| Unnamed: 0 | Cmax (ng/mL) | AUC0−∞ | CL (mL/min/kg) | CL (mL/min/m2) | Vdz (L/kg) | T1/2 (hr) |
+| --- | --- | --- | --- | --- | --- | --- |
+| N | 15 | 15 | 15 | 15 | 15 | 15 |
+| Range | 29.3–209.6 | 253.3–3202.5 | 3.33–131.50 | 5.5–67.5 | 0.33–4.05 | 9.5–47.0 |
+| Mean ± s.d. | 56.1 ± 44.9 | 822.5 ± 706.1 | 49.33 ± 30.83 | 31.95 ± 13.99 | 1.92 ± 0.84 | 20.5 ± 10.2 |
+| Median | 42.2 | 601.5 | 41.50 | 32.34 | 1.94 | 18.1 |
+"""
+
+@pytest.fixture(scope="module")
+def md_table_aligned_22050807_table_1():
+    return """
+| Parameter type | N | Range | Mean ± s.d. | Median |
+| --- | --- | --- | --- | --- |
+| Cmax (ng/mL) | 15 | 29.3–209.6 | 56.1 ± 44.9 | 42.2 |
+| AUC0−∞ | 15 | 253.3–3202.5 | 822.5 ± 706.1 | 601.5 |
+| CL (mL/min/kg) | 15 | 3.33–131.50 | 49.33 ± 30.83 | 41.50 |
+| CL (mL/min/m2) | 15 | 5.5–67.5 | 31.95 ± 13.99 | 32.34 |
+| Vdz (L/kg) | 15 | 0.33–4.05 | 1.92 ± 0.84 | 1.94 |
+| T1/2 (hr) | 15 | 9.5–47.0 | 20.5 ± 10.2 | 18.1 |
+"""
 
 ## =============================================================================
 # 22050870_table_2

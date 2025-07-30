@@ -1,9 +1,11 @@
+import json
 from langchain_core.prompts import ChatPromptTemplate
 from pydantic import Field, ValidationError
 import logging
 
 from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
+from extractor.agents.common_agent.common_agent import RetryException
 from extractor.agents.pk_summary.pk_sum_common_agent import PKSumCommonAgentResult
 
 logger = logging.getLogger(__name__)
@@ -77,7 +79,14 @@ def post_process_validate_categorized_result(
 ) -> HeaderCategorizeResult:
     if isinstance(result, dict):
         try:
+            # try parse the result
+            if result.get("categorized_headers") is not None and isinstance(result.get("categorized_headers"), str):
+                result["categorized_headers"] = json.loads(result["categorized_headers"])
+
             res = HeaderCategorizeResult(**result)
+        except json.JSONDecodeError as e:
+            logger.error(e)
+            raise RetryException(f"Invalid categorized headers: {result.get('categorized_headers')}")
         except ValidationError as e:
             logger.error(e)
             raise e

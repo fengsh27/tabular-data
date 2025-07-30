@@ -5,7 +5,6 @@ import pandas as pd
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown
 from extractor.agents.pe_study_info.pe_study_info_common_agent import (
     PEStudyInfoCommonAgentResult,
-    RetryException,
 )
 
 STUDY_DESIGN_PROMPT = ChatPromptTemplate.from_template("""
@@ -52,11 +51,6 @@ def post_process_study_design_info(
 ):
     if res.study_design_combinations is None:
         raise ValueError("Empty study design combinations")
-
-#     if type(res.study_design_combinations) != list or len(res.study_design_combinations) == 0:
-#         raise RetryException(f"""
-# Wrong answer: {res.study_design_combinations}, if the table does not explicitly mention any [Study type, Study Design, Data source], please leave it with [["N/A", "N/A", "N/A"]].
-# """)
 
     df_table = pd.DataFrame(
         res.study_design_combinations, columns=["Study type", "Study design", "Data source"]

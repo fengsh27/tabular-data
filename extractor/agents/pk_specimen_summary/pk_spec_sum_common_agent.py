@@ -13,12 +13,6 @@ from extractor.agents.agent_utils import (
 logger = logging.getLogger()
 
 
-class RetryException(Exception):
-    """Exception need to retry"""
-
-    pass
-
-
 class PKSpecSumCommonAgentResult(BaseModel):
     reasoning_process: str = Field(
         description="A detailed explanation of the thought process or reasoning steps taken to reach a conclusion."

@@ -1,5 +1,5 @@
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown
-from extractor.html_table_extractor import HtmlTableExtractor
+from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
 
 
 def test_HtmlTableExtractor_31206433():

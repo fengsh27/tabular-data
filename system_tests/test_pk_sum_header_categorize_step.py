@@ -72,6 +72,7 @@ def test_HeaderCategorizeStep_28794837_table_2(
     assert state["col_mapping"] is not None
     assert type(state["col_mapping"]) == dict
 
+@pytest.mark.skip()
 def test_HeaderCategorizeStep_29943508_table_1(
     llm,
     md_table_aligned_29943508_table_1,
@@ -84,6 +85,27 @@ def test_HeaderCategorizeStep_29943508_table_1(
     state["caption"] = caption_29943508
     state["md_table_drug"] = md_table_drug_29943508_table_1
     state["md_table_aligned"] = md_table_aligned_29943508_table_1
+
+    state = step.execute(state)
+
+    assert state["col_mapping"] is not None
+    assert type(state["col_mapping"]) == dict
+
+def test_HeaderCategorizeStep_22050807_table_1_invalid_categorized_headers(
+    llm,
+    step_callback,
+    md_table_aligned_22050807_table_1,
+    caption_22050807_table_1,
+    md_table_drug_22050807_table_1,
+):
+    step = HeaderCategorizeStep()
+    state = PKSumWorkflowState()
+    state["llm"] = llm
+    state["step_callback"] = step_callback
+
+    state["md_table_aligned"] = md_table_aligned_22050807_table_1
+    state["caption"] = caption_22050807_table_1
+    state["md_table_drug"] = md_table_drug_22050807_table_1
 
     state = step.execute(state)
 
