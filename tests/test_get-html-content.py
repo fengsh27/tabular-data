@@ -1,6 +1,6 @@
 from unittest.mock import patch
-from extractor.html_table_extractor import HtmlTableExtractor
-from extractor.article_retriever import ArticleRetriever
+from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
+from extractor.pmid_extractor.article_retriever import ArticleRetriever
 from extractor.prompts_utils import _generate_table_prompts
 from extractor.utils import convert_html_to_text
 
@@ -16,8 +16,8 @@ class MockResponse:
         self.status_code = status_code
 
 
-@patch("extractor.article_retriever.make_article_request")
-@patch("extractor.article_retriever.make_get_request")
+@patch("extractor.pmid_extractor.article_retriever.make_article_request")
+@patch("extractor.pmid_extractor.article_retriever.make_get_request")
 def test_get_html_content(mock_make_get_request, mock_make_article_request):
     id = "17158945"
     mock_make_get_request.return_value = MockResponse(get_html_content(id), 200)
@@ -36,8 +36,8 @@ def test_get_html_content(mock_make_get_request, mock_make_article_request):
     assert len(tables) == 2
 
 
-@patch("extractor.article_retriever.make_article_request")
-@patch("extractor.article_retriever.make_get_request")
+@patch("extractor.pmid_extractor.article_retriever.make_article_request")
+@patch("extractor.pmid_extractor.article_retriever.make_get_request")
 def test_get_html_content_1(mock_make_get_request, mock_make_article_request):
     id = "35880962"
     mock_make_get_request.return_value = MockResponse(get_html_content(id), 200)

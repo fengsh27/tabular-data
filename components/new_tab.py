@@ -5,8 +5,8 @@ import streamlit as st
 import re
 import ast
 
-from extractor.article_retriever import ArticleRetriever
-from extractor.html_table_extractor import HtmlTableExtractor
+from extractor.pmid_extractor.article_retriever import ArticleRetriever
+from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
 from extractor.utils import (
     convert_html_to_text_no_table,
     escape_markdown,
@@ -42,7 +42,7 @@ from extractor.agents.pe_study_info.pe_study_info_workflow import PEStudyInfoWor
 from extractor.agents.pe_study_outcome_ver2.pe_study_out_workflow import PEStudyOutWorkflow
 from extractor.request_openai import get_openai, get_client_and_model
 from extractor.request_deepseek import get_deepseek
-from extractor.table_utils import select_pk_summary_tables, select_pk_demographic_tables, select_pe_tables
+from extractor.pmid_extractor.table_utils import select_pk_summary_tables, select_pk_demographic_tables, select_pe_tables
 
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 

@@ -3,8 +3,8 @@ from typing import Optional
 from datetime import datetime
 import streamlit as st
 
-from extractor.article_retriever import ExtendArticleRetriever
-from extractor.html_table_extractor import HtmlTableExtractor
+from extractor.pmid_extractor.article_retriever import ExtendArticleRetriever
+from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
 from extractor.stampers import ArticleStamper
 from extractor.utils import escape_markdown
 

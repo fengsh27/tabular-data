@@ -3,9 +3,9 @@ from pydantic import Field
 import pandas as pd
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown
+from extractor.agents.common_agent.common_agent import RetryException
 from extractor.agents.pk_specimen_summary.pk_spec_sum_common_agent import (
     PKSpecSumCommonAgentResult,
-    RetryException,
 )
 
 SPECIMEN_INFO_PROMPT = ChatPromptTemplate.from_template("""

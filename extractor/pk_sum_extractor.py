@@ -6,9 +6,9 @@ from langchain_openai.chat_models.base import BaseChatOpenAI
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
 from extractor.agents.pk_summary.pk_sum_workflow import PKSumWorkflow
-from extractor.article_retriever import ArticleRetriever
-from extractor.html_table_extractor import HtmlTableExtractor
-from extractor.table_utils import select_pk_summary_tables
+from extractor.pmid_extractor.article_retriever import ArticleRetriever
+from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
+from extractor.pmid_extractor.table_utils import select_pk_summary_tables
 
 logger = logging.getLogger(__name__)
 
@@ -66,7 +66,7 @@ def extract_pk_summary(
         return False, "No table found", None, None
 
     # step 3: select pk summary tables
-    selected_tables, indexes, token_usage = select_pk_summary_tables(tables, llm)
+    selected_tables, indexes, _, token_usage = select_pk_summary_tables(tables, llm)
     if len(selected_tables) == 0:
         return False, "No table found related to PK Summary", None, None
 

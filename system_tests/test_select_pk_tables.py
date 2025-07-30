@@ -1,4 +1,4 @@
-from extractor.table_utils import select_pk_summary_tables
+from extractor.pmid_extractor.table_utils import select_pk_summary_tables
 
 html_tables = [
     {

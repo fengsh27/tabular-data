@@ -5,8 +5,8 @@ import logging
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
+from extractor.agents.common_agent.common_agent import RetryException
 from extractor.agents.pe_study_info.pe_study_info_common_agent import (
-    RetryException,
     PEStudyInfoCommonAgentResult,
 )
 

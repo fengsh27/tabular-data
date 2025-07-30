@@ -5,30 +5,81 @@ from langchain_core.prompts import ChatPromptTemplate
 import logging
 
 from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
+from extractor.agents.common_agent.common_agent import CommonAgent, CommonAgentResult, RetryException
 from extractor.agents.pk_summary.pk_sum_common_agent import (
     PKSumCommonAgentResult,
     PKSumCommonAgent,
-    RetryException,
 )
 from extractor.prompts_utils import generate_tables_prompts
 
 logger = logging.getLogger(__name__)
 
 SELECT_PK_TABLES_PROMPT = ChatPromptTemplate.from_template("""
-Analyze the provided content and identify all tables related to pharmacokinetics (PK), including but not limited to tables covering Absorption, Distribution, Metabolism, and Excretion (ADME) properties. 
+You are a biomedical data assistant specializing in pharmacokinetics (PK). 
+Your task is to carefully analyze the provided content and **identify all tables relevant to pharmacokinetics (PK)**, 
+specifically those related to **ADME properties** (Absorption, Distribution, Metabolism, and Excretion).
 
-Focus particularly on tables that report:
-- Drug concentrations in body fluids (plasma, urine, cord blood, etc.)
-- PK parameters (e.g., AUC, Cmax, t½)
-- ADME characteristics
-                                                           
-**Exclude tables that primarily present regression analyses or statistical modeling of pharmacokinetic parameters.**
+---
 
-Return the results as a Python list of table indexes in this exact format:
-["table_index_1", "table_index_2", ...]
+### **Inclusion Criteria**
 
-The content including markdown table to analyze:
+Select tables that include any of the following:
+
+* **Drug concentration measurements** in biological matrices such as:
+
+  * Plasma
+  * Serum
+  * Urine
+  * Cord blood
+  * Tissues
+
+* **PK parameters**, such as:
+
+  * AUC (Area Under the Curve)
+  * Cmax (Maximum concentration)
+  * Tmax (Time to Cmax)
+  * t½ (Half-life)
+  * Volume of distribution, clearance, bioavailability, etc.
+
+* **ADME-related characteristics**, including time profiles and cumulative excretion data.
+
+---
+
+### **Exclusion Criteria**
+
+Do **not** include tables that:
+
+* Primarily present **regression models**, **statistical modeling**, or **correlational analyses** of PK parameters.
+* Focus only on **demographics**, **treatment groups**, or **non-PK safety outcomes**.
+
+---
+
+### **Input**
+
+The content includes one or more tables in markdown format. Each table is preceded by a unique identifier like `"table_1"`, `"table_2"`, etc.
 {table_content}
+---
+
+### **Your Output Format**
+
+Return a Python list of the relevant **table indexes** in the **exact format** below:
+
+```python
+["<table_index_1>", "<  table_index_2>", ...]
+```
+
+Do not include any explanations or extra output.
+
+---
+
+### **Output Example**
+
+```python
+["1", "3"]
+```
+
+---
+
 """)
 
 
@@ -50,7 +101,15 @@ def post_process_selected_table_ids(
 
     indices = []
     for id in ids:
-        id = int(id)
+        try:
+            if id.startswith('"') and id.endswith('"') and len(id) > 2:
+                id = id[1:-1]
+            id = int(id)
+        except ValueError:
+            raise RetryException(
+                f"""Please generate valid table id and **exactly follow the format**: ["table_index_1", "table_index_2", ...]. \n\nWrong answer example: `{id}`"""
+            )
+
         if id < 0 or id > len(html_tables):
             raise RetryException(
                 "Please generate valid table id, wrong answer example: `{id}`"

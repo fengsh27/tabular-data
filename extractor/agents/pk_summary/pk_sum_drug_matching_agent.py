@@ -4,9 +4,9 @@ import logging
 
 from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table, from_system_template
+from extractor.agents.common_agent.common_agent import RetryException
 from extractor.agents.pk_summary.pk_sum_common_agent import (
     PKSumCommonAgentResult,
-    RetryException,
 )
 
 logger = logging.getLogger(__name__)

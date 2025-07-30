@@ -5,8 +5,8 @@ import logging
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
+from extractor.agents.common_agent.common_agent import RetryException
 from extractor.agents.pk_population_summary.pk_popu_sum_common_agent import (
-    RetryException,
     PKPopuSumCommonAgentResult,
 )
 
