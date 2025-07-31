@@ -81,13 +81,17 @@ class CommonAgentTwoSteps(CommonAgent):
             # First, use llm to do CoT
             msgs = cot_prompt.invoke(input={}).to_messages()
             
-            cot_res = self.llm.generate(messages=[msgs])
-            reasoning_process = cot_res.generations[0][0].text
-            token_usage = cot_res.llm_output.get("token_usage")
+            # cot_res = self.llm.generate(messages=[msgs])
+            cot_res = self.llm.invoke(msgs)
+            reasoning_process = cot_res.content # cot_res.generations[0][0].text
+            token_usage = cot_res.usage_metadata # cot_res.llm_output.get("token_usage")
+            input_tokens = token_usage.get("input_tokens", 0)
+            output_tokens = token_usage.get("output_tokens", 0)
+            total_tokens = token_usage.get("total_tokens", 0)
             cot_tokens = {
-                "total_tokens": token_usage.get("total_tokens", 0),
-                "prompt_tokens": token_usage.get("prompt_tokens", 0),
-                "completion_tokens": token_usage.get("completion_tokens", 0),
+                "total_tokens": total_tokens,
+                "prompt_tokens": input_tokens,
+                "completion_tokens": output_tokens,
             }
             self._incre_token_usage(cot_tokens)
         except Exception as e:

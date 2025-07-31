@@ -14,5 +14,6 @@ class BenchmarkType(Enum):
 class LLModelType(Enum):
     GPT4O = "gpt4o"
     GEMINI15 = "gemini15"
+    SONNET4 = "sonnet4"
     BASELINE = "baseline"
     UNKNOWN = "unkown"

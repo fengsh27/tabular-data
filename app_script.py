@@ -10,6 +10,7 @@ from extractor.pk_sum_extractor import extract_pk_summary
 from extractor.request_deepseek import get_deepseek
 from extractor.request_geminiai import get_gemini
 from extractor.request_openai import get_openai
+from extractor.request_sonnet import get_sonnet
 
 load_dotenv()
 
@@ -28,13 +29,15 @@ def get_llm(model: str):
         return get_openai()
     elif model == "gemini15":
         return get_gemini()
+    elif model == "sonnet4":
+        return get_sonnet()
     elif model == "deepseek":
         return get_deepseek()
     else:
         raise ValueError(f"Invalid model: {model}")
     
 def extract_pk_summary_by_csv_file(interval_time=0.0):
-    model = "gemini15"
+    model = "sonnet4"
     llm = get_llm(model)
     parser = argparse.ArgumentParser()
     parser.add_argument("-f", "--pmids_fn", help="csv file path containing pmids to extract")

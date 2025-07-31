@@ -77,12 +77,20 @@ def extract_pk_summary(
         caption = "\n".join([table["caption"], table["footnote"]])
         workflow = PKSumWorkflow(llm=llm)
         workflow.build()
-        df = workflow.go_md_table(
-            md_table=dataframe_to_markdown(df_table),
-            caption_and_footnote=caption,
-            title=title,
-            step_callback=output_step,
-        )
+        try:
+            df = workflow.go_md_table(
+                md_table=dataframe_to_markdown(df_table),
+                caption_and_footnote=caption,
+                title=title,
+                step_callback=output_step,
+            )
+        except Exception as e:
+            # For the case that the table is not related to PK Summary, we skip it
+            logger.error(f"Error occurred in curating table {table['caption']} in paper {pmid}")
+            logger.error(str(e))
+            print(f"Error occurred in curating table {table['caption']} in paper {pmid}")
+            print(str(e))
+            continue
         dfs.append(df)
     df_combined = (
         pd.concat(dfs, axis=0).reset_index(drop=True)
