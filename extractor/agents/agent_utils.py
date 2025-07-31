@@ -92,4 +92,10 @@ def from_system_template(template, **kwargs):
 
 def escape_braces_for_format(text: str) -> str:
     # replace all {xxx} by {{xxx}}
-    return re.sub(r'\{([^{}]+)\}', r'{{\1}}', text)
+    # return re.sub(r'\{([^{}]+)\}', r'{{\1}}', text)
+    
+    # First replace single } not part of }} with }}
+    text = re.sub(r'(?<!})}(?!})', '}}', text)
+    # Then replace single { not part of {{
+    text = re.sub(r'(?<!{){(?!{)', '{{', text)
+    return text

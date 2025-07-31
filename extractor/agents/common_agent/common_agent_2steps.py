@@ -49,9 +49,9 @@ class CommonAgentTwoSteps(CommonAgent):
         system_prompt: str,
         cot_msg: str,
     ):
-        system_prompt = system_prompt.replace("{", "{{").replace("}", "}}")
+        system_prompt = escape_braces_for_format(system_prompt)
         msgs = [("system", system_prompt)]
-        cot_msg = cot_msg.replace("{", "{{").replace("}", "}}")
+        cot_msg = escape_braces_for_format(cot_msg)
         msgs = msgs + [(
             "human",
             f"Please review the following step-by-step reasoning and provide the answer based on it: ```{cot_msg}```"
@@ -157,7 +157,7 @@ class CommonAgentTwoChainSteps(CommonAgentTwoSteps):
     def _invoke_agent(self, system_prompt, instruction_prompt, schema, post_process = None, **kwargs):
         # Initialize the callback handler
         callback_handler = OpenAICallbackHandler()
-        processed_system_prompt = system_prompt.replace("{", "{{").replace("}", "}}")
+        processed_system_prompt = escape_braces_for_format(system_prompt)
         cot_prompt = self._build_prompt_for_cot_step(
             system_prompt=processed_system_prompt, 
             instruction_prompt=instruction_prompt
@@ -184,7 +184,7 @@ class CommonAgentTwoChainSteps(CommonAgentTwoSteps):
                 
         try:
             # Then use the reasoning process to do the structured output
-            processed_reasoning_process = reasoning_process.replace("{", "{{").replace("}", "}}")
+            processed_reasoning_process = escape_braces_for_format(reasoning_process)
             final_msg = FINAL_STEP_SYSTEM_PROMPTS.format(
                 llm_response=processed_reasoning_process,
             )
