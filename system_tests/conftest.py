@@ -11,6 +11,7 @@ from TabFuncFlow.utils.table_utils import (
     single_html_table_to_markdown,
 )
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
+from extractor.request_sonnet import get_sonnet
 
 load_dotenv()
 
@@ -50,7 +51,7 @@ def get_deepseek():
 
 @pytest.fixture(scope="module")
 def llm():
-    return get_azure_openai()  # get_openai() # get_deepseek() #
+    return get_sonnet() # get_azure_openai()  # get_openai() # get_deepseek() #
 
 
 ghtml_content = """
@@ -1258,6 +1259,43 @@ def col_mapping_28794838_table_2():
         "In 96 samples of 27 infants": "Uncategorized",
         "Parameter type": "Parameter type",
     }
+
+# ============================================================================================
+# 34114632 table 2
+
+@pytest.fixture(scope="module")
+def title_34114632_table_2():
+    return "The Pharmacokinetics of Crushed Levetiracetam Tablets Administered to Neonates\nFree"
+
+@pytest.fixture(scope="module")
+def caption_34114632_table_2():
+    return """
+Open in new tab
+Table 2\u2002Pharmacokinetic parameters of levetiracetam in our study compared with historical data
+Cmax, maximum plasma concentration; Tmax, time to maximum concentration; AUC0–12, area under the curve from time 0 to 12\u2009h; Ctrough, trough plasma concentration.aCompared with historical data by Fountain, et al. [18].bCompared with historical data.cT-test used to assess data.dToo small sample to compare to historical data.eMedian (range); all other data expressed as mean (±standard deviation).fNon-normally distributed data.
+"""
+
+@pytest.fixture(scope="module")
+def md_table_34114632_table_2():
+    return """
+| Unnamed: 0_level_0/PK parameters | Dose range 1 (5–15 mg/kg/12 h)/Historical dataa | Dose range 1 (5–15 mg/kg/12 h)/Current data | Dose range 1 (5–15 mg/kg/12 h)/p valueb,c | Dose range 2 (15–25 mg/kg/12 h)/Historical dataa | Dose range 2 (15–25 mg/kg/12 h)/Current data | Dose range 2 (15–25 mg/kg/12 h)/p valueb,c | Dose range 3 (25–35 mg/kg/12 h)/Historical dataa | Dose range 3 (25–35 mg/kg/12 h)/Current data | Dose range 3 (25–35 mg/kg/12 h)/p valued |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Cmax (µg/mL) | 24.8\u2009±\u20098.3 | 19.19\u2009±\u20094.12 | 0.07 | 57.1\u2009±\u200914.9 | 35.12\u2009±\u200910.54 | 0.001 | 73.2\u2009±\u200919.2 | 36.11 (27.58–44.64)e | – |
+| AUC0–12 (h*µg\u2009/mL) | 145\u2009±\u200944 | 167.0\u2009±\u200945.6 | 0.26 | 322\u2009±\u200971 | 316.5\u2009±\u2009108.4 | 0.88 | 433\u2009±\u200994 | 290.9 (176.14–405.59)e | – |
+| Ctrough (µg/mL) | 8.4\u2009±\u20093.8 | 9.99\u2009±\u20093.86 | 0.34 | 15.6\u2009±\u20095.3 | 19.25\u2009±\u20098.48 | 0.22 | 20.6\u2009±\u20095.8 | 13.03 (2.98–23.07)e | – |
+| Tmax (h) | 0.5 (0.25–3.0)e | 1.5 (1.5–2.5)e,f | – | 0.5 (0.5–3.0)e | 2.5 (2.0–3.3)e,f | – | 0.5 (0.5–3)e | 1.5 (1.5)e,f | – |
+"""
+
+@pytest.fixture(scope="module")
+def md_table_drug_34114632_table_2():
+    return """
+| Drug name | Analyte | Specimen |
+| --- | --- | --- |
+| Levetiracetam | Levetiracetam | Plasma |
+"""
+
+
+
 
 
 # ============================================================================================

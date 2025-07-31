@@ -1,5 +1,6 @@
 from typing import Literal, Tuple, Union
 import pandas as pd
+from pathlib import Path
 from .constant import BASELINE, BenchmarkType, LLModelType
 from .pk_preprocess import (
     preprocess_pk_summary_table,
@@ -34,6 +35,19 @@ def run_semantic_benchmark(
             continue
         baseline = the_dict[BASELINE]
         target = the_dict[model.value]
+        # check if target is empty
+        target_path = Path(target)
+        content = target_path.read_text()
+        if content.strip().strip('"') == "":
+            score = 0
+            write_semantic_score(
+                output_fn=result_file,
+                model=model.value,
+                pmid=id,
+                score=score,
+            )
+            continue
+
         df_baseline = pd.read_csv(baseline)
         df_target = preprocess_table(target)
         score = evaluate_dataframe(
