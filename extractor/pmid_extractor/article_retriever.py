@@ -12,6 +12,13 @@ from extractor.constants import (
 
 logger = logging.getLogger(__name__)
 
+def article_processor(func):
+    def wrapper(*args, **kwargs):
+        res, text, code = func(*args, **kwargs)
+        if res and text is not None and len(text) > 0:
+            text = text.replace('\u2009', ' ')
+        return res, text, code
+    return wrapper
 
 class ArticleRetriever(object):
     def __init__(self):
@@ -97,6 +104,7 @@ class ArticleRetriever(object):
         # extract full-text link
         return self._extract_full_text_link(html_content)
 
+    @article_processor
     def request_article(self, pmid: str):
         pmid = pmid.strip()
 
