@@ -42,6 +42,8 @@ def post_process_convert_patient_info_to_md_table(
 ) -> str:
     match_list = res.patient_combinations
     match_list = [list(t) for t in dict.fromkeys(map(tuple, match_list))]
+    if len(match_list) == 0:
+        match_list = [["N/A", "N/A", "N/A"]]
 
     df_table = pd.DataFrame(
         match_list, columns=["Population", "Pregnancy stage", "Subject N"]
