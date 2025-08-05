@@ -11,7 +11,7 @@ from extractor.request_deepseek import get_deepseek
 from extractor.request_geminiai import get_gemini
 from extractor.request_openai import get_openai
 from extractor.request_sonnet import get_sonnet
-
+from extractor.request_metallama import get_meta_llama
 load_dotenv()
 
 logger = initialize_logger(
@@ -33,11 +33,13 @@ def get_llm(model: str):
         return get_sonnet()
     elif model == "deepseek":
         return get_deepseek()
+    elif model == "metallama":
+        return get_meta_llama()
     else:
         raise ValueError(f"Invalid model: {model}")
     
 def extract_pk_summary_by_csv_file(interval_time=0.0):
-    model = "sonnet4"
+    model = "metallama"
     llm = get_llm(model)
     parser = argparse.ArgumentParser()
     parser.add_argument("-f", "--pmids_fn", help="csv file path containing pmids to extract")

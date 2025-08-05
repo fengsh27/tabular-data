@@ -12,6 +12,7 @@ from TabFuncFlow.utils.table_utils import (
 )
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
 from extractor.request_sonnet import get_sonnet
+from extractor.request_metallama import get_meta_llama
 
 load_dotenv()
 
@@ -51,7 +52,7 @@ def get_deepseek():
 
 @pytest.fixture(scope="module")
 def llm():
-    return get_azure_openai()  # get_openai() # get_deepseek() # get_sonnet() # 
+    return get_meta_llama() # get_azure_openai()  # get_openai() # get_deepseek() # get_sonnet() # 
 
 
 ghtml_content = """
@@ -412,6 +413,18 @@ def col_mapping_29943508():
         "P‐value": "P value",
     }
 
+@pytest.fixture(scope="module")
+def df_combined_29943508():
+    return """
+| Drug name | Analyte | Specimen | Population | Pregnancy stage | Pediatric/Gestational age | Subject N | Parameter type | Parameter unit | Statistics type | Main value | Variation type | Variation value | Interval type | Lower bound | Upper bound | P value |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Fentanyl | Fentanyl | umbilical vein | Maternal | Delivery | N/A | 16 | Mean serum fentanyl concentration | nmol/L | Mean | 0.162 | SD | 0.090 | N/A | N/A | N/A | .67 |
+| Fentanyl | Fentanyl | maternal serum | Maternal | Delivery | N/A | 16 | Median maternal serum fentanyl concentration at birth | nmol/L | Median | 0.268 | N/A | N/A | Range | 0.193 | 0.493 | .66 |
+| Fentanyl | Fentanyl | maternal serum | Maternal | Delivery | N/A | 18 | Mean AUC 0‐120 min for fentanyl in maternal serum | nmol h/L | Mean | 0.428 | SD | 0.162 | N/A | N/A | N/A | .015 |
+| Fentanyl | Fentanyl | umbilical vein | Maternal | Delivery | N/A | 20 | Mean serum fentanyl concentration | nmol/L | Mean | 0.151 | SD | 0.070 | N/A | N/A | N/A | .67 |
+| Fentanyl | Fentanyl | maternal serum | Maternal | Delivery | N/A | 19 | Median maternal serum fentanyl concentration at birth | nmol/L | Median | 0.291 | N/A | N/A | Range | 0.212 | 0.502 | .66 |
+| Fentanyl | Fentanyl | maternal serum | Maternal | Delivery | N/A | 15 | Mean AUC 0‐120 min for fentanyl in maternal serum | nmol h/L | Mean | 0.590 | SD | 0.197 | N/A | N/A | N/A | .015 |
+"""
 
 ## =============================================================================
 # 16143486_table_2

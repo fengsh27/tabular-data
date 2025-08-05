@@ -73,13 +73,15 @@ def test_PKSumWorkflow_22050870_table_3(
     llm,
     html_content_22050870_table_3,
     caption_22050870_table_3,
+    title_22050870,
     step_callback,
 ):
     workflow = PKSumWorkflow(llm)
     workflow.build()
     df = workflow.go(
-        html_content_22050870_table_3,
-        caption_22050870_table_3,
-        step_callback,
+        html_content=html_content_22050870_table_3,
+        caption_and_footnote=caption_22050870_table_3,
+        title=title_22050870,
+        step_callback=step_callback,
     )
     print(df)

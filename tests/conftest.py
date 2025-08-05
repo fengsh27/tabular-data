@@ -49,6 +49,10 @@ def get_deepseek():
 
 
 @pytest.fixture(scope="module")
+def azure_llm():
+    return get_azure_openai()
+
+@pytest.fixture(scope="module")
 def llm():
     return get_azure_openai()
 
