@@ -27,25 +27,28 @@ logger = initialize_logger(
 def get_llm(model: str):
     if model == "gpt4o":
         return get_openai()
-    elif model == "gemini15":
+    elif model == "gemini15" or model == "gemin25pro" or \
+        model == "gemini25flash" or model == "gemini25flashlite":
         return get_gemini()
     elif model == "sonnet4":
         return get_sonnet()
     elif model == "deepseek":
         return get_deepseek()
-    elif model == "metallama":
+    elif model == "metallama4":
         return get_meta_llama()
     else:
         raise ValueError(f"Invalid model: {model}")
     
 def extract_pk_summary_by_csv_file(interval_time=0.0):
-    model = "metallama"
-    llm = get_llm(model)
     parser = argparse.ArgumentParser()
     parser.add_argument("-f", "--pmids_fn", help="csv file path containing pmids to extract")
     parser.add_argument("-o", "--out_dir", required=True, help="output directory")
     parser.add_argument("-i", "--pmid", help="PMID(s) to extract. To specify multiple PMIDs, separate them with commas (e.g., 123456,234567,345678).")
+    parser.add_argument("-m", "--model", default='gpt4o', help="model, default is gpt4o. Could be one of 'gpt4o', 'sonnet4', 'metallama4', 'gemini25flash', 'gemini25flashlist'.")
     args = vars(parser.parse_args())
+    
+    model = args.get("model", "gemini25flash")
+    llm = get_llm(model)
 
     pmid: str | None = args.get("pmid", None)
     pmids_fn: str | None = args.get("pmids_fn", None)
