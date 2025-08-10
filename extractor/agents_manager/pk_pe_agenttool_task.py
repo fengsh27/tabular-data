@@ -21,7 +21,7 @@ from extractor.agents.pk_pe_agents.pk_pe_correction_step import PKPECuratedTable
 
 logger = logging.getLogger(__name__)
 
-class PKPEAgentToolManager(ABC):
+class PKPEAgentToolTask(ABC):
     def __init__(
         self,
         llm: BaseChatOpenAI,

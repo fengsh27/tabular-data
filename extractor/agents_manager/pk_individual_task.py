@@ -9,11 +9,11 @@ from extractor.agents.pk_pe_agents.pk_pe_agents_types import PaperTypeEnum
 from extractor.agents.pk_pe_agents.pk_pe_agent_tools import (
     PKIndividualTablesCurationTool,
 )
-from .pk_pe_agenttool_manager import PKPEAgentToolManager
+from .pk_pe_agenttool_task import PKPEAgentToolTask
 
 logger = logging.getLogger(__name__)
 
-class PKIndividualManager(PKPEAgentToolManager):
+class PKIndividualTask(PKPEAgentToolTask):
     def __init__(
         self,
         llm: BaseChatOpenAI,

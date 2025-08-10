@@ -5,19 +5,19 @@ import logging
 
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
 
-from extractor.agents_manager.pe_study_manager import (
-    PEStudyInfoManager,
-    PEStudyOutcomeManager,
+from extractor.agents_manager.pe_study_task import (
+    PEStudyInfoTask,
+    PEStudyOutcomeTask,
 )
-from extractor.agents_manager.pk_fulltext_tool_manager import (
-    PKDrugIndividualManager,
-    PKDrugSummaryManager,
-    PKSpecimenIndividualManager,
-    PKSpecimenSummaryManager,
+from extractor.agents_manager.pk_fulltext_tool_task import (
+    PKDrugIndividualTask,
+    PKDrugSummaryTask,
+    PKSpecimenIndividualTask,
+    PKSpecimenSummaryTask,
 )
-from extractor.agents_manager.pk_individual_manager import PKIndividualManager
-from extractor.agents_manager.pk_populattion_manager import PKPopulationIndividualManager, PKPopulationSummaryManager
-from extractor.agents_manager.pk_summary_manager import PKSummaryManager
+from extractor.agents_manager.pk_individual_task import PKIndividualTask
+from extractor.agents_manager.pk_populattion_task import PKPopulationIndividualTask, PKPopulationSummaryTask
+from extractor.agents_manager.pk_summary_task import PKSummaryTask
 from extractor.database.pmid_db import PMIDDB
 from extractor.pmid_extractor.article_retriever import ArticleRetriever
 from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
@@ -96,14 +96,14 @@ class PKPEManager:
 
     def _run_pk_workflows(self, pmid: str):
         mgrs = {
-            # "pk_summary": PKSummaryManager(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            # "pk_individual": PKIndividualManager(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            "pk_specimen_summary": PKSpecimenSummaryManager(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            "pk_drug_summary": PKDrugSummaryManager(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            "pk_specimen_individual": PKSpecimenIndividualManager(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            "pk_drug_individual": PKDrugIndividualManager(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            "pk_population_summary": PKPopulationSummaryManager(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            "pk_population_individual": PKPopulationIndividualManager(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            "pk_summary": PKSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            "pk_individual": PKIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            "pk_specimen_summary": PKSpecimenSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            "pk_drug_summary": PKDrugSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            "pk_specimen_individual": PKSpecimenIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            "pk_drug_individual": PKDrugIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            "pk_population_summary": PKPopulationSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            "pk_population_individual": PKPopulationIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
         }
         curated_tables = {}
         for mgr_name, mgr in mgrs.items():
@@ -122,8 +122,8 @@ class PKPEManager:
 
     def _run_pe_workflows(self, pmid: str):
         mgrs = {
-            "pe_study_info": PEStudyInfoManager(self.llm, self.pmid_db, self.print_step),
-            "pe_study_output": PEStudyOutcomeManager(self.llm, self.pmid_db, self.print_step),
+            "pe_study_info": PEStudyInfoTask(self.llm, self.pmid_db, self.print_step),
+            "pe_study_output": PEStudyOutcomeTask(self.llm, self.pmid_db, self.print_step),
         }
         curated_tables = {}
         for mgr_name, mgr in mgrs.items():

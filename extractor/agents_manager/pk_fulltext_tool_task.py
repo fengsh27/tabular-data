@@ -13,11 +13,11 @@ from extractor.agents.pk_drug_individual.pk_drug_ind_workflow import PKDrugIndWo
 from extractor.agents.pk_pe_agents.pk_pe_agent_tools import (
     FullTextCurationTool,
 )
-from .pk_pe_agenttool_manager import PKPEAgentToolManager
+from .pk_pe_agenttool_task import PKPEAgentToolTask
 
 logger = logging.getLogger(__name__)
 
-class PKSpecimenSummaryManager(PKPEAgentToolManager):
+class PKSpecimenSummaryTask(PKPEAgentToolTask):
     def __init__(
         self,
         llm: BaseChatOpenAI,
@@ -43,7 +43,7 @@ class PKSpecimenSummaryManager(PKPEAgentToolManager):
     def _get_paper_type(self) -> PaperTypeEnum:
         return PaperTypeEnum.PK
         
-class PKDrugSummaryManager(PKPEAgentToolManager):
+class PKDrugSummaryTask(PKPEAgentToolTask):
     def __init__(
         self,
         llm: BaseChatOpenAI,
@@ -69,7 +69,7 @@ class PKDrugSummaryManager(PKPEAgentToolManager):
     def _get_paper_type(self) -> PaperTypeEnum:
         return PaperTypeEnum.PK
 
-class PKSpecimenIndividualManager(PKPEAgentToolManager):
+class PKSpecimenIndividualTask(PKPEAgentToolTask):
     def __init__(
         self,
         llm: BaseChatOpenAI,
@@ -95,7 +95,7 @@ class PKSpecimenIndividualManager(PKPEAgentToolManager):
     def _get_paper_type(self) -> PaperTypeEnum:
         return PaperTypeEnum.PK
 
-class PKDrugIndividualManager(PKPEAgentToolManager):
+class PKDrugIndividualTask(PKPEAgentToolTask):
     def __init__(
         self,
         llm: BaseChatOpenAI,

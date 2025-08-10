@@ -19,11 +19,11 @@ from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflo
 from extractor.agents.pk_pe_agents.pk_pe_agent_tools import (
     PKSummaryTablesCurationTool,
 )
-from .pk_pe_agenttool_manager import PKPEAgentToolManager
+from .pk_pe_agenttool_task import PKPEAgentToolTask
 
 logger = logging.getLogger(__name__)
 
-class PKSummaryManager(PKPEAgentToolManager):
+class PKSummaryTask(PKPEAgentToolTask):
     def __init__(
         self,
         llm: BaseChatOpenAI,
