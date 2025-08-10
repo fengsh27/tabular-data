@@ -179,3 +179,13 @@ def generate_paper_text_prompts(text: str):
 
 def generate_question(source: str):
     return f"Now please extract information from {source} and output to a table string in compact json format"
+
+def generate_previous_errors_prompt(previous_errors: str):
+    return f"""\n\n---\n
+### **Previous Errors to Avoid**
+
+You must pay close attention to the following corrections from previous runs. Do not repeat these specific errors.
+
+{previous_errors}
+"""
+

@@ -52,7 +52,7 @@ def get_deepseek():
 
 @pytest.fixture(scope="module")
 def llm():
-    return get_meta_llama() # get_azure_openai()  # get_openai() # get_deepseek() # get_sonnet() # 
+    return get_azure_openai()  # get_openai() # get_deepseek() # get_sonnet() # get_meta_llama() # 
 
 
 ghtml_content = """
@@ -1387,6 +1387,14 @@ ghtml_content_17635501_table_3 = """
 def html_content_17635501table_3():
     return ghtml_content_17635501_table_3
 
+@pytest.fixture(scope="module")
+def paper_title_17635501():
+    return "Pharmacokinetics and clinical efficacy of lorazepam in children with severe malaria and convulsions"
+
+@pytest.fixture(scope="module")
+def paper_abstract_17635501():
+    return "Pharmacokinetic parameters of lorazepam (LZP) following administration of a single dose (0.1 mg kg−1) either intravenously (i.v.) or intramuscularly (i.m.) in children with severe malaria and convulsions"
+
 
 @pytest.fixture(scope="module")
 def caption_17635501_table_3():
@@ -1482,6 +1490,72 @@ def md_table_list_17635501_table_3():
 | Vss (l kg−1) | – |
 | Bioavailability (F) | – |
 """]
+
+@pytest.fixture(scope="module")
+def curated_table_17635501_table_3():
+    # From meta llama curated data
+    return """
+,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+0,Lorazepam,Lorazepam,Plasma,children,N/A,N/A,11,Cmax,ng ml−1,Mean,65.1,N/A,N/A,Range,47.5,86,N/A,N/A,N/A
+1,Lorazepam,Lorazepam,Plasma,children,N/A,N/A,11,tmax,h,Median,0.5,N/A,N/A,Range,0.167,0.67,N/A,N/A,N/A
+2,Lorazepam,Lorazepam,Plasma,children,N/A,N/A,9,t1/2 (elimination),h,Mean,23.7,N/A,N/A,Range,9.8,37.6,N/A,N/A,N/A
+3,Lorazepam,Lorazepam,Plasma,children,N/A,N/A,9,AUC0–∞,ng ml−1 h−1,Mean,2062.5,N/A,N/A,Range,600.6,3771.4,N/A,N/A,N/A
+4,Lorazepam,Lorazepam,Plasma,children,N/A,N/A,9,CL,l h−1,Mean,0.64,N/A,N/A,Range,0.36,0.92,N/A,N/A,N/A
+5,Lorazepam,Lorazepam,Plasma,children,N/A,N/A,9,VC,l kg−1,Mean,1.67,N/A,N/A,Range,1.25,2.10,N/A,N/A,N/A
+6,Lorazepam,Lorazepam,Plasma,children,N/A,N/A,9,Vss,l kg−1,Mean,2.59,N/A,N/A,Range,1.56,3.62,N/A,N/A,N/A
+7,Lorazepam,Lorazepam,Plasma,children,N/A,N/A,9,Bioavailability,N/A,N/A,100%,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+8,Lorazepam,Lorazepam,Plasma,children,N/A,N/A,10,Cmax,ng ml−1,Mean,45.3,N/A,N/A,Range,29.6,66.3,N/A,N/A,N/A
+9,Lorazepam,Lorazepam,Plasma,children,N/A,N/A,10,tmax,h,Median,0.42,N/A,N/A,Range,0.167,1.0,N/A,N/A,N/A
+10,Lorazepam,Lorazepam,Plasma,children,N/A,N/A,5,t1/2 (elimination),h,Mean,36.9,N/A,N/A,Range,-1.5,75.5,N/A,N/A,N/A
+11,Lorazepam,Lorazepam,Plasma,children,N/A,N/A,5,AUC0–∞,ng ml−1 h−1,Mean,1843.6,N/A,N/A,Range,296.7,3390.5,N/A,N/A,N/A
+12,Lorazepam,Lorazepam,Plasma,children,N/A,N/A,6,ka,h−1,Median,9.8,N/A,N/A,Range,0.033,22.8,N/A,N/A,N/A
+13,Lorazepam,Lorazepam,Plasma,children,N/A,N/A,6,t1/2 (absorption),h,Median,0.035,N/A,N/A,Range,0.01,0.071,N/A,N/A,N/A
+14,Lorazepam,Lorazepam,Plasma,children,N/A,N/A,6,Bioavailability,N/A,N/A,89.4,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+
+"""
+
+@pytest.fixture(scope="module")
+def md_table_combined_17635501_table_3():
+    return """
+| Drug name | Analyte | Specimen | Population | Pregnancy stage | Pediatric/Gestational age | Subject N | Parameter type | Parameter unit | Main value | Statistics type | Variation type | Variation value | Interval type | Lower bound | Upper bound | P value |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 11 | Maximum Concentration (Cmax) | ng/ml | 65.1 | Mean | N/A | N/A | 95% CI | 47.5 | 86 | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 11 | Time to Reach Maximum Concentration (tmax) | h | 0.5 | Median | N/A | N/A | Range | 0.167 | 0.67 | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 9 | Elimination Half-Life (t1/2) | h | 23.7 | Mean | N/A | N/A | 95% CI | 9.8 | 37.6 | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 9 | Area Under Concentration-Time Curve (AUC0–∞) | ng·h/ml | 2062.5 | Mean | N/A | N/A | 95% CI | 600.6 | 3771.4 | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 6 | Absorption Rate Constant (ka) | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 6 | Absorption Half-Life (t1/2 absorption) | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 9 | Clearance (CL) | l/h | 0.64 | Mean | N/A | N/A | 95% CI | 0.36 | 0.92 | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 9 | Volume of Central Compartment (VC) | l/kg | 1.67 | Mean | N/A | N/A | 95% CI | 1.25 | 2.10 | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 9 | Volume at Steady-State (Vss) | l/kg | 2.59 | Mean | N/A | N/A | 95% CI | 1.56 | 3.62 | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 9 | Bioavailability | Relative (%) | 100 | Assume | N/A | N/A | N/A | N/A | N/A | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 10 | Maximum Concentration (Cmax) | ng/ml | 45.3 | Mean | N/A | N/A | Range | 29.6 | 66.3 | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 10 | Time to Reach Maximum Concentration (tmax) | h | 0.42 | Mean | N/A | N/A | Range | 0.167 | 1.0 | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 5 | Elimination Half-Life (t1/2) | h | 36.9 | Mean | N/A | N/A | Range | -1.5 | 75.5 | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 5 | Area Under Concentration-Time Curve (AUC0–∞) | ng·h/ml | 1843.6 | Mean | N/A | N/A | Range | 296.7 | 3390.5 | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 6 | Absorption Rate Constant (ka) | N/A | 9.8 | Mean | N/A | N/A | Range | 0.033 | 22.8 | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 6 | Absorption Half-Life (t1/2 absorption) | N/A | 0.035 | Mean | N/A | N/A | Range | 0.01 | 0.071 | N/A |
+| Lorazepam | Lorazepam | Plasma | ERROR | ERROR | ERROR | ERROR | Clearance (CL) | l/h | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| Lorazepam | Lorazepam | Plasma | ERROR | ERROR | ERROR | ERROR | Volume of Central Compartment (VC) | l/kg | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| Lorazepam | Lorazepam | Plasma | ERROR | ERROR | ERROR | ERROR | Volume at Steady-State (Vss) | l/kg | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 6 | Bioavailability | Relative (%) | 89.4 | Mean | N/A | N/A | N/A | N/A | N/A | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 11 | Maximum Concentration (Cmax) | ng/ml | 65.1 | Mean | 95% CI | 43.25 | -43.5, 5.0 | -43.5 | 5.0 | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 11 | Time to Reach Maximum Concentration (tmax) | h | 0.42 | Mean | 95% CI | 0.167 | -0.33, 0.17 | -0.33 | 0.17 | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 9 | Elimination Half-Life (t1/2) | h | 23.7 | Median | 95% CI | 9.8 | -41.3, 14.9 | -41.3 | 14.9 | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 9 | Area Under Concentration-Time Curve (AUC0–∞) | ng·h/ml | 2062.5 | Mean | 95% CI | 600.6 | -1267.8, 1883.0 | -1267.8 | 1883.0 | N/A |
+| Lorazepam | Lorazepam | Plasma | ERROR | ERROR | ERROR | ERROR | Absorption Rate Constant (ka) | N/A | N/A | N/A | N/A | N/A | - | N/A | N/A | N/A |
+| Lorazepam | Lorazepam | Plasma | ERROR | ERROR | ERROR | ERROR | Absorption Half-Life (t1/2 absorption) | N/A | N/A | N/A | N/A | N/A | - | N/A | N/A | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 9 | Clearance (CL) | l/h | N/A | N/A | N/A | N/A | - | N/A | N/A | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 9 | Volume of Central Compartment (VC) | l/kg | N/A | N/A | N/A | N/A | - | N/A | N/A | N/A |
+| Lorazepam | Lorazepam | Plasma | Children | N/A | N/A | 9 | Volume at Steady-State (Vss) | l/kg | N/A | N/A | N/A | N/A | - | N/A | N/A | N/A |
+| Lorazepam | Lorazepam | Plasma | ERROR | ERROR | ERROR | ERROR | Bioavailability | Relative (%) | N/A | N/A | N/A | N/A | - | N/A | N/A | N/A |
+"""
+
+@pytest.fixture(scope="module")
+def df_combined_17635501_table_3(md_table_combined_17635501_table_3):
+    return markdown_to_dataframe(md_table_combined_17635501_table_3)
+
+
 
 ## =============================================================================
 # 34183327_table_3

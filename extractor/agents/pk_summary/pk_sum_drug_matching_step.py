@@ -12,6 +12,7 @@ from extractor.agents.pk_summary.pk_sum_drug_matching_agent import (
     MatchedDrugResult,
     post_process_validate_matched_rows,
 )
+from extractor.agents.pk_summary.pk_sum_workflow_utils import get_common_agent
 
 
 class DrugMatchingAutomaticStep(PKSumCommonStep):
@@ -65,8 +66,10 @@ class DrugMatchingAgentStep(PKSumCommonStep):
             system_prompt = get_matching_drug_prompt(
                 md_table_aligned, md, md_table_drug, caption
             )
-            agent = PKSumCommonAgent(llm=llm)
-            res, processed_res, token_usage = agent.go(
+            previous_errors_prompt = self._get_previous_errors_prompt(state)
+            system_prompt = system_prompt + previous_errors_prompt
+            agent = get_common_agent(llm=llm) # PKSumCommonAgent(llm=llm)
+            res, processed_res, token_usage, reasoning_process = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=INSTRUCTION_PROMPT,
                 schema=MatchedDrugResult,
@@ -76,7 +79,7 @@ class DrugMatchingAgentStep(PKSumCommonStep):
             )
             self._step_output(
                 state,
-                step_reasoning_process=res.reasoning_process if res is not None else "",
+                step_reasoning_process=reasoning_process,
             )
             drug_match_list: list[int] = processed_res
             df_table_drug = markdown_to_dataframe(md_table_drug)

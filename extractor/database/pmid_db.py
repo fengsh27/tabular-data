@@ -34,8 +34,9 @@ SELECT * FROM {pmid_info_table_name} WHERE pmid = ?
 """
 
 class PMIDDB:
-    def __init__(self):
+    def __init__(self, db_path: Path | None = None):
         self.conn: Connection | None = None
+        self.db_path = db_path
         
     def _ensure_table(self):
         if self.conn is None:
@@ -49,20 +50,25 @@ class PMIDDB:
         except Exception as e:
             logger.error(f"Failed to ensure table: {e}")
             return False
+
+    def _get_db_path(self):
+        if self.db_path is not None:
+            return self.db_path
+        db_path = os.environ.get("DATA_FOLDER", "./data")
+        db_path = Path(db_path, "databases")
+        try:
+            os.makedirs(db_path, exist_ok=True)
+        except Exception as e:
+            logger.error(f"Failed to create db path: {e}")
+            raise e
+        return db_path / "pmid_info.db"
         
     def _connect_to_db(self):
         if self.conn is not None:
             return True
         
         try:
-            db_path = os.environ.get("DATA_FOLDER", "./data")
-            db_path = Path(db_path, "databases")
-            try:
-                os.makedirs(db_path, exist_ok=True)
-            except Exception as e:
-                logger.error(f"Failed to create db path: {e}")
-                return False
-            db_path = db_path / "pmid_info.db"
+            db_path = self._get_db_path()
             if not db_path.exists():
                 logger.info(f"Creating db file: {db_path}")
                 db_path.touch()
@@ -106,7 +112,17 @@ class PMIDDB:
             self.conn.close()
             self.conn = None
         
-    def select_pmid_info(self, pmid: str):
+    def select_pmid_info(self, pmid: str) -> tuple[str, str, str, str, list[dict], list[str]] | None:
+        """
+        return (
+            pmid,
+            title,
+            abstract,
+            full_text,
+            tables,
+            sections
+        )
+        """
         res = self._connect_to_db()
         if not res:
             return None

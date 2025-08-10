@@ -24,6 +24,7 @@ class PKIndWorkflowState(TypedDict):
     # value_list: Optional[list[str]]  # value table list
     time_list: Optional[list[str]]
     df_combined: Optional[pd.DataFrame]
+    previous_errors: Optional[str]
 
     step_callback: Optional[Callable]  # StepCallback
 

@@ -1,6 +1,6 @@
 from typing import List
 from pandas import DataFrame
-from pydantic import Field
+from pydantic import BaseModel, Field
 from langchain_core.prompts import ChatPromptTemplate
 import logging
 
@@ -8,8 +8,9 @@ from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
 from extractor.agents.common_agent.common_agent import CommonAgent, CommonAgentResult, RetryException
 from extractor.agents.pk_summary.pk_sum_common_agent import (
     PKSumCommonAgentResult,
-    PKSumCommonAgent,
+    # PKSumCommonAgent,
 )
+from extractor.agents.pk_summary.pk_sum_workflow_utils import get_common_agent
 from extractor.prompts_utils import generate_tables_prompts
 
 logger = logging.getLogger(__name__)
@@ -65,7 +66,7 @@ The content includes one or more tables in markdown format. Each table is preced
 Return a Python list of the relevant **table indexes** in the **exact format** below:
 
 ```python
-["<table_index_1>", "<  table_index_2>", ...]
+[<table index>, <table index>, ...]
 ```
 
 Do not include any explanations or extra output.
@@ -83,7 +84,7 @@ Do not include any explanations or extra output.
 """)
 
 
-class TablesSelectionResult(PKSumCommonAgentResult):
+class TablesSelectionResult(BaseModel):
     """Tables Selection Result"""
 
     selected_table_indexes: List[str] = Field(
@@ -127,8 +128,8 @@ def select_pk_summary_tables(html_tables: list[dict[str, str | DataFrame]], llm)
     table_content = generate_tables_prompts(html_tables, True)
     system_prompt = SELECT_PK_TABLES_PROMPT.format(table_content=table_content)
 
-    agent = PKSumCommonAgent(llm=llm)
-    res, tables, token_usage = agent.go(
+    agent = get_common_agent(llm=llm) # PKSumCommonAgent(llm=llm)
+    res, tables, token_usage, reasoning_process = agent.go(
         system_prompt=system_prompt,
         instruction_prompt=INSTRUCTION_PROMPT,
         schema=TablesSelectionResult,
@@ -137,13 +138,17 @@ def select_pk_summary_tables(html_tables: list[dict[str, str | DataFrame]], llm)
     )
 
     logger.info(f"Selected tables (indices): {res.selected_table_indexes}")
-    logger.info(f"Reason: {res.reasoning_process}")
+    logger.info(f"Reason: {reasoning_process}")
 
-    return tables, res.selected_table_indexes, res.reasoning_process, token_usage
+    return tables, res.selected_table_indexes, reasoning_process, token_usage
 
 
 SELECT_DEMOGRAPHIC_TABLES_PROMPT = ChatPromptTemplate.from_template("""
 Analyze the provided content and identify all tables related to demographic data. 
+
+---
+
+### **Inclusion Criteria**
 
 Focus particularly on tables that report Population-focused characteristics. Not PK parameter!!!
     · “Age," “Sex," "Weight," “Gender," “Race," “Ethnicity"
@@ -151,11 +156,32 @@ Focus particularly on tables that report Population-focused characteristics. Not
     · “Comorbidity," “Drug indication," “Adverse events"
     · “Severity," “BMI," “Smoking status," “Alcohol use," "Blood pressure"
 
-Return the results as a Python list of table indexes in this exact format:
-["table_index_1", "table_index_2", ...]
+---
+
+### **Your Output Format**
+
+Return a Python list of the relevant **table indexes** in the **exact format** below:
+
+```python
+[<table index>, <table index>, ...]
+```
+
+Do not include any explanations or extra output.
+---
+
+### **Output Example**
+
+```python
+["1", "3"]
+```
+
+---
+
+### **Input**
 
 The content including markdown table to analyze:
 {table_content}
+
 """)
 
 
@@ -163,8 +189,8 @@ def select_pk_demographic_tables(html_tables: list[dict[str, str | DataFrame]], 
     table_content = generate_tables_prompts(html_tables, True)
     system_prompt = SELECT_DEMOGRAPHIC_TABLES_PROMPT.format(table_content=table_content)
 
-    agent = PKSumCommonAgent(llm=llm)
-    res, tables, token_usage = agent.go(
+    agent = get_common_agent(llm=llm) # PKSumCommonAgent(llm=llm)
+    res, tables, token_usage, reasoning_process = agent.go(
         system_prompt=system_prompt,
         instruction_prompt=INSTRUCTION_PROMPT,
         schema=TablesSelectionResult,
@@ -173,9 +199,9 @@ def select_pk_demographic_tables(html_tables: list[dict[str, str | DataFrame]], 
     )
 
     logger.info(f"Selected tables (indices): {res.selected_table_indexes}")
-    logger.info(f"Reason: {res.reasoning_process}")
+    logger.info(f"Reason: {reasoning_process}")
 
-    return tables, res.selected_table_indexes, res.reasoning_process, token_usage
+    return tables, res.selected_table_indexes, reasoning_process, token_usage
 
 
 SELECT_PE_TABLES_PROMPT = ChatPromptTemplate.from_template("""
@@ -185,11 +211,31 @@ If a table contains any variables that may reflect the effect of drug exposure�
 
 If such variables are present, the table should be included regardless of context or causality.
 
-Return the results as a Python list of table indexes in the following format:
-["table_index_1", "table_index_2", ...]
+---
 
-The content, including markdown tables, to analyze:
+### **Your Output Format**
+
+Return a Python list of the relevant **table indexes** in the **exact format** below:
+
+```python
+[<table index>, <table index>, ...]
+```
+
+---
+
+### **Output Example**
+
+```python
+["1", "3"]
+```
+
+---
+
+### **Input**
+
+The content including markdown table to analyze:
 {table_content}
+
 """)
 
 
@@ -197,8 +243,8 @@ def select_pe_tables(html_tables: list[dict[str, str | DataFrame]], llm):
     table_content = generate_tables_prompts(html_tables, True)
     system_prompt = SELECT_PE_TABLES_PROMPT.format(table_content=table_content)
 
-    agent = PKSumCommonAgent(llm=llm)
-    res, tables, token_usage = agent.go(
+    agent = get_common_agent(llm=llm) # PKSumCommonAgent(llm=llm)
+    res, tables, token_usage, reasoning_process = agent.go(
         system_prompt=system_prompt,
         instruction_prompt=INSTRUCTION_PROMPT,
         schema=TablesSelectionResult,
@@ -207,6 +253,6 @@ def select_pe_tables(html_tables: list[dict[str, str | DataFrame]], llm):
     )
 
     logger.info(f"Selected tables (indices): {res.selected_table_indexes}")
-    logger.info(f"Reason: {res.reasoning_process}")
+    logger.info(f"Reason: {reasoning_process}")
 
-    return tables, res.selected_table_indexes, res.reasoning_process, token_usage
+    return tables, res.selected_table_indexes, reasoning_process, token_usage

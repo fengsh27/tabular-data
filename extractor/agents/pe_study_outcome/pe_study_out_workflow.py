@@ -85,8 +85,10 @@ class PEStudyOutWorkflow:
         title: str | None = None,
         step_callback: Callable | None = None,
         sleep_time: float | None = None,
+        previous_errors: str | None = None,
     ):
         config = {"recursion_limit": 500}
+        previous_errors = previous_errors if previous_errors is not None else "N/A"
 
         for s in self.graph.stream(
             input={
@@ -95,6 +97,7 @@ class PEStudyOutWorkflow:
                 "llm": self.llm,
                 "step_callback": step_callback,
                 "title": title if title is not None else "",
+                "previous_errors": previous_errors,
             },
             config=config,
             stream_mode="values",
@@ -115,6 +118,7 @@ class PEStudyOutWorkflow:
         title: str | None = None,
         step_callback: Callable | None = None,
         sleep_time: float | None = None,
+        previous_errors: str | None = None,
     ):
         md_table = single_html_table_to_markdown(html_content)
         return self.go_md_table(
@@ -123,4 +127,5 @@ class PEStudyOutWorkflow:
             title=title,
             step_callback=step_callback,
             sleep_time=sleep_time,
+            previous_errors=previous_errors,
         )

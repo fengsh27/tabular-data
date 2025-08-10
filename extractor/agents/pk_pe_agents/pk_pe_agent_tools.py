@@ -37,12 +37,20 @@ class AgentTool(ABC):
             self.output_callback(step_name=self.__class__.__name__)
 
     @abstractmethod
-    def _run(self):
+    def _get_tool_name(self) -> str:
         pass
 
-    def run(self):
+    @abstractmethod
+    def _get_tool_description(self) -> str:
+        pass
+
+    @abstractmethod
+    def _run(self, previous_errors: str | None = None) -> tuple[pd.DataFrame | None, list[str] | str | None]:
+        pass
+
+    def run(self, previous_errors: str | None = None):
         self._print_tool_name()
-        return self._run()
+        return self._run(previous_errors)
 
 class PKSummaryTablesCurationTool(AgentTool):
     def __init__(
@@ -50,15 +58,22 @@ class PKSummaryTablesCurationTool(AgentTool):
         pmid: str,
         llm: BaseChatOpenAI | None = None,
         output_callback:Callable[[dict], None] = None,
+        pmid_db: PMIDDB | None = None,
     ):
         super().__init__(llm, output_callback)
         self.pmid = pmid
+        self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
 
-    def _run(self):
-        pmid_db = PMIDDB()
-        pmid_info = pmid_db.select_pmid_info(self.pmid)
+    def _get_tool_name(self) -> str:
+        return "PK Summary Tables Curation Tool"
+
+    def _get_tool_description(self) -> str:
+        return "This tool is used to curate the PK summary tables from the source paper."
+
+    def _run(self, previous_errors: str | None = None):
+        pmid_info = self.pmid_db.select_pmid_info(self.pmid)
         if pmid_info is None:
-            return None
+            return None, None
         tables = pmid_info[4]
         selected_tables, indexes, reasoning_process, token_usage = select_pk_summary_tables(tables, self.llm)
         self._print_step_output(reasoning_process)
@@ -67,12 +82,17 @@ class PKSummaryTablesCurationTool(AgentTool):
         workflow = PKSumWorkflow(llm=self.llm)
         workflow.build()
         dfs: list[pd.DataFrame] = []
+        source_tables = []
         for table in selected_tables:
             caption = "\n".join([table["caption"], table["footnote"]])
+            source_table = dataframe_to_markdown(table["table"])
+            source_tables.append(source_table)
             df = workflow.go_md_table(
                 title=title,
-                md_table=dataframe_to_markdown(table["table"]),
+                md_table=source_table,
                 caption_and_footnote=caption,
+                step_callback=self.output_callback,
+                previous_errors=previous_errors,
             )
             dfs.append(df)
 
@@ -82,7 +102,7 @@ class PKSummaryTablesCurationTool(AgentTool):
             if len(dfs) > 0
             else pd.DataFrame()
         )
-        return df_combined
+        return df_combined, source_tables
 
 class PKIndividualTablesCurationTool(AgentTool):
     def __init__(
@@ -90,13 +110,20 @@ class PKIndividualTablesCurationTool(AgentTool):
         pmid: str,
         llm: BaseChatOpenAI | None = None,
         output_callback:Callable[[dict], None] = None,
+        pmid_db: PMIDDB | None = None,
     ):
         super().__init__(llm, output_callback)
         self.pmid = pmid
-        
-    def _run(self):
-        pmid_db = PMIDDB()
-        pmid_info = pmid_db.select_pmid_info(self.pmid)
+        self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
+    
+    def _get_tool_name(self) -> str:
+        return "PK Individual Tables Curation Tool"
+
+    def _get_tool_description(self) -> str:
+        return "This tool is used to extract the individual tables from the source paper."
+
+    def _run(self, previous_errors: str):
+        pmid_info = self.pmid_db.select_pmid_info(self.pmid)
         if pmid_info is None:   
             return None
         tables = pmid_info[4]
@@ -105,16 +132,21 @@ class PKIndividualTablesCurationTool(AgentTool):
         self._print_step_output(reasoning_process)
         self._print_token_usage(token_usage)
         if not selected_tables:
-            return None
+            return None, None
         workflow = PKIndWorkflow(llm=self.llm)
         workflow.build()
         dfs: list[pd.DataFrame] = []
+        source_tables = []
         for table in selected_tables:
             caption = "\n".join([table["caption"], table["footnote"]])
+            source_table = dataframe_to_markdown(table["table"])
+            source_tables.append(source_table)
             df = workflow.go_md_table(
                 title=title,
-                md_table=dataframe_to_markdown(table["table"]),
+                md_table=source_table,
                 caption_and_footnote=caption,
+                step_callback=self.output_callback,
+                previous_errors=previous_errors,
             )
             dfs.append(df)
         df_combined = (
@@ -122,23 +154,30 @@ class PKIndividualTablesCurationTool(AgentTool):
             if len(dfs) > 0
             else pd.DataFrame()
         )
-        return df_combined
+        return df_combined, source_tables
 
-class PKPopulationSummaryWorkflowTool(AgentTool):
+class PKPopulationSummaryCurationTool(AgentTool):
     def __init__(
         self,
         pmid: str,
         llm: BaseChatOpenAI | None = None,
         output_callback:Callable[[dict], None] = None,
+        pmid_db: PMIDDB | None = None,
     ):
         super().__init__(llm, output_callback)
         self.pmid = pmid
+        self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
         
-    def _run(self):
-        pmid_db = PMIDDB()
-        pmid_info = pmid_db.select_pmid_info(self.pmid)
+    def _get_tool_name(self) -> str:
+        return "PK Population Summary Curation Tool"
+
+    def _get_tool_description(self) -> str:
+        return "This tool is used to extract the population summary data from the source paper."
+
+    def _run(self, previous_errors: str):
+        pmid_info = self.pmid_db.select_pmid_info(self.pmid)
         if pmid_info is None:
-            return None
+            return None, None
         title = pmid_info[1]
         sections = pmid_info[5]
         abstract = pmid_info[2]
@@ -163,39 +202,52 @@ class PKPopulationSummaryWorkflowTool(AgentTool):
             result_df = workflow.go_full_text(
                 title=title,
                 full_text=article_text,
+                step_callback=self.output_callback,
+                previous_errors=previous_errors,
             )
+            return result_df, article_text
         else:
             logger.info("Detected PK demographic table. Use the table as the input.")
             workflow = PKPopuIndWorkflow(llm=self.llm)
             workflow.build()
             dfs: list[pd.DataFrame] = []
+            source_tables = []
             for table in selected_tables:
                 caption = "\n".join([table["caption"], table["footnote"]])
+                source_table = dataframe_to_markdown(table["table"])+"\n\n"+caption
+                source_tables.append(source_table)
                 df = workflow.go_full_text(
                     title=title,
-                    full_text=dataframe_to_markdown(table["table"])+"\n\n"+caption,
+                    full_text=source_table,
                     step_callback=self.output_callback,
                 )
                 dfs.append(df)
             result_df = pd.concat(dfs, ignore_index=True)
-        return result_df
+        return result_df, source_tables
 
 
-class PKPopulationIndividualWorkflowTool(AgentTool):
+class PKPopulationIndividualCurationTool(AgentTool):
     def __init__(
         self,
         pmid: str,
         llm: BaseChatOpenAI | None = None,
         output_callback:Callable[[dict], None] = None,
+        pmid_db: PMIDDB | None = None,
     ):
         super().__init__(llm, output_callback)
         self.pmid = pmid
+        self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
         
-    def _run(self):
-        pmid_db = PMIDDB()
-        pmid_info = pmid_db.select_pmid_info(self.pmid)
+    def _get_tool_name(self) -> str:
+        return "PK Population Individual Curation Tool"
+
+    def _get_tool_description(self) -> str:
+        return "This tool is used to extract the population individual data from the source paper."
+
+    def _run(self, previous_errors: str):
+        pmid_info = self.pmid_db.select_pmid_info(self.pmid)
         if pmid_info is None:
-            return None
+            return None, None
         title = pmid_info[1]
         sections = pmid_info[5]
         abstract = pmid_info[2]
@@ -220,39 +272,51 @@ class PKPopulationIndividualWorkflowTool(AgentTool):
                 title=title,
                 full_text=article_text,
                 step_callback=self.output_callback,
+                previous_errors=previous_errors,
             )
-            return result_df
+            return result_df, article_text
         else:
             logger.info("Detected PK demographic table. Use the table as the input.")
             workflow = PKPopuIndWorkflow(llm=self.llm)
             workflow.build()
             dfs: list[pd.DataFrame] = []
+            source_tables = []
             for table in selected_tables:
                 caption = "\n".join([table["caption"], table["footnote"]])
+                source_table = dataframe_to_markdown(table["table"])+"\n\n"+caption
+                source_tables.append(source_table)
                 df = workflow.go_full_text(
                     title=title,
-                    full_text=dataframe_to_markdown(table["table"])+"\n\n"+caption,
+                    full_text=source_table,
                     step_callback=self.output_callback,
+                    previous_errors=previous_errors,
                 )
                 dfs.append(df)
             result_df = pd.concat(dfs, ignore_index=True)
-            return result_df
+            return result_df, source_tables
 
-class PEStudyOutcomeWorkflowTool(AgentTool):
+class PEStudyOutcomeCurationTool(AgentTool):
     def __init__(
         self,
         pmid: str,
         llm: BaseChatOpenAI | None = None,
         output_callback:Callable[[dict], None] = None,
+        pmid_db: PMIDDB | None = None,
     ):
         super().__init__(llm, output_callback)
         self.pmid = pmid
+        self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
     
-    def _run(self):
-        pmid_db = PMIDDB()
-        pmid_info = pmid_db.select_pmid_info(self.pmid)
+    def _get_tool_name(self) -> str:
+        return "PE Study Outcome Curation Tool"
+
+    def _get_tool_description(self) -> str:
+        return "This tool is used to extract the study outcome data from the source paper."
+
+    def _run(self, previous_errors: str):
+        pmid_info = self.pmid_db.select_pmid_info(self.pmid)
         if pmid_info is None:
-            return None
+            return None, None
         title = pmid_info[1]
         sections = pmid_info[5]
         abstract = pmid_info[2]
@@ -261,16 +325,21 @@ class PEStudyOutcomeWorkflowTool(AgentTool):
         self._print_step_output(reasoning_process)
         self._print_token_usage(token_usage)
         if not selected_tables:
-            return None
+            return None, None
         workflow = PEStudyOutWorkflow(llm=self.llm)
         workflow.build()
         dfs: list[pd.DataFrame] = []
+        source_tables = []
         for table in selected_tables:
             caption = "\n".join([table["caption"], table["footnote"]])
+            source_table = dataframe_to_markdown(table["table"])
+            source_tables.append(source_table)
             df = workflow.go_md_table(
                 title=title,
-                md_table=dataframe_to_markdown(table["table"]),
+                md_table=source_table,
                 caption_and_footnote=caption,
+                step_callback=self.output_callback,
+                previous_errors=previous_errors,
             )
             dfs.append(df)
         df_combined = (
@@ -278,15 +347,18 @@ class PEStudyOutcomeWorkflowTool(AgentTool):
             if len(dfs) > 0
             else pd.DataFrame()
         )
-        return df_combined
+        return df_combined, source_tables
 
-class FullTextWorkflowTool(AgentTool):
+class FullTextCurationTool(AgentTool):
     def __init__(
         self,
         pmid: str,
         cls: Any,
+        tool_name: str,
+        tool_description: str,
         llm: BaseChatOpenAI | None = None,
         output_callback:Callable[[dict], None] = None,
+        pmid_db: PMIDDB | None = None,
     ):
         """
         cls: the class of the workflow to be used
@@ -299,12 +371,20 @@ class FullTextWorkflowTool(AgentTool):
         super().__init__(llm, output_callback)
         self.pmid = pmid
         self.cls = cls
+        self.tool_name = tool_name
+        self.tool_description = tool_description
+        self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
         
-    def _run(self):
-        pmid_db = PMIDDB()
-        pmid_info = pmid_db.select_pmid_info(self.pmid)
+    def _get_tool_name(self) -> str:
+        return self.tool_name
+
+    def _get_tool_description(self) -> str:
+        return self.tool_description
+
+    def _run(self, previous_errors: str):
+        pmid_info = self.pmid_db.select_pmid_info(self.pmid)
         if pmid_info is None:
-            return None
+            return None, None
         title = pmid_info[1]
         sections = pmid_info[5]
         abstract = pmid_info[2] 
@@ -322,4 +402,5 @@ class FullTextWorkflowTool(AgentTool):
             title=title,
             full_text=article_text,
             step_callback=self.output_callback,
-        )
+            previous_errors=previous_errors,
+        ), article_text

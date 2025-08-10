@@ -21,7 +21,9 @@ class RowCategorizeStep(PEStudyOutCommonAgentStep):
 
     def get_system_prompt(self, state):
         md_table = state["md_table"]
-        return get_row_categorize_prompt(md_table)
+        system_prompt = get_row_categorize_prompt(md_table)
+        previous_errors_prompt = self._get_previous_errors_prompt(state)
+        return system_prompt + previous_errors_prompt
 
     def get_schema(self):
         return RowCategorizeJsonSchema

@@ -62,7 +62,7 @@ Carefully review the article and follow these steps to convert the population in
 """)
 
 
-def get_patient_info_refine_prompt(title: str, full_text: str, md_table_specimen: str):
+def get_patient_info_refine_prompt(title: str, full_text: str, md_table_specimen: str, previous_errors: str):
     row_num = markdown_to_dataframe(md_table_specimen).shape[0]
     return PATIENT_INFO_REFINE_PROMPT.format(
         title=title,

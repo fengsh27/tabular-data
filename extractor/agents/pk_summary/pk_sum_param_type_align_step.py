@@ -14,7 +14,9 @@ class ParametertypeAlignStep(PKSumCommonAgentStep):
 
     def get_system_prompt(self, state):
         md_table_summary = state["md_table_summary"]
-        return get_parameter_type_align_prompt(md_table_summary)
+        system_prompt = get_parameter_type_align_prompt(md_table_summary)
+        previous_errors_prompt = self._get_previous_errors_prompt(state)
+        return system_prompt + previous_errors_prompt
 
     def get_schema(self):
         return ParameterTypeAlignResult

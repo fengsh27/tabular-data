@@ -3,6 +3,8 @@ from typing import Optional, TypedDict
 from langchain_openai.chat_models.base import BaseChatOpenAI
 import pandas as pd
 
+from extractor.agents.common_agent.common_agent_2steps import CommonAgentTwoSteps
+
 
 class PKSumWorkflowState(TypedDict):
     """state data"""
@@ -23,6 +25,7 @@ class PKSumWorkflowState(TypedDict):
     patient_list: Optional[list[str]]
     value_list: Optional[list[str]]  # value table list
     df_combined: Optional[pd.DataFrame]
+    previous_errors: Optional[str]
 
     step_callback: Optional[Callable]  # StepCallback
 
@@ -48,3 +51,6 @@ def pk_sum_leave_step(
         step_reasoning_process=step_reasoning_process,
         token_usage=token_usage,
     )
+
+def get_common_agent(llm: BaseChatOpenAI):
+    return CommonAgentTwoSteps(llm=llm)

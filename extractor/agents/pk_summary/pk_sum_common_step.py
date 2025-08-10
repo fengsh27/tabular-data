@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 from typing import Any, Callable, Optional
 import logging
 
-from extractor.agents.pk_summary.pk_sum_workflow_utils import PKSumWorkflowState
+from extractor.agents.pk_summary.pk_sum_workflow_utils import PKSumWorkflowState, get_common_agent
 from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
 from extractor.agents.pk_summary.pk_sum_workflow_utils import (
     pk_sum_enter_step,
@@ -12,6 +12,7 @@ from extractor.agents.pk_summary.pk_sum_common_agent import (
     PKSumCommonAgentResult,
     PKSumCommonAgent,
 )
+from extractor.prompts_utils import generate_previous_errors_prompt
 
 logger = logging.getLogger(__name__)
 
@@ -67,6 +68,10 @@ class PKSumCommonStep(ABC):
             step_output=step_output,
         )
 
+    def _get_previous_errors_prompt(self, state: PKSumWorkflowState) -> str:
+        previous_errors = state["previous_errors"] if "previous_errors" in state else "N/A"
+        return generate_previous_errors_prompt(previous_errors)
+
     def execute(self, state: PKSumWorkflowState):
         self.enter_step(state)
         res, processed_res, token_usage = self.execute_directly(state)
@@ -120,9 +125,9 @@ class PKSumCommonAgentStep(PKSumCommonStep):
         llm = state["llm"]
         schema = self.get_schema()
         post_process, kwargs = self.get_post_processor_and_kwargs(state)
-        agent = PKSumCommonAgent(llm=llm)
+        agent = get_common_agent(llm=llm) # PKSumCommonAgent(llm=llm)
         if kwargs is not None:
-            res, processed_res, token_usage = agent.go(
+            res, processed_res, token_usage, reasoning_process = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=schema,
@@ -130,24 +135,12 @@ class PKSumCommonAgentStep(PKSumCommonStep):
                 **kwargs,
             )
         else:
-            res, processed_res, token_usage = agent.go(
+            res, processed_res, token_usage, reasoning_process = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=schema,
                 post_process=post_process,
             )
         reasoning_process = ""
-        if res is not None:
-            try:
-                reasoning_process = (
-                    res["reasoning_process"]
-                    if type(res) == dict
-                    else res.reasoning_process
-                )
-            except Exception as e:
-                logger.error(
-                    f"Failed to access res.reasoning_process.\nError is {str(e)}"
-                )
-                pass
         self._step_output(state, step_reasoning_process=reasoning_process)
         return res, processed_res, token_usage

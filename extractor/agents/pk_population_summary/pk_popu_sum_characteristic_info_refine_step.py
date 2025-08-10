@@ -21,7 +21,9 @@ class CharacteristicInfoRefinementStep(PKPopuSumCommonAgentStep):
         title = state["title"]
         full_text = state["full_text"]
         md_table_characteristic = state["md_table_characteristic"]
-        return get_characteristic_info_refine_prompt(title, full_text, md_table_characteristic)
+        previous_errors_prompt = self._get_previous_errors_prompt(state)
+        system_prompt = get_characteristic_info_refine_prompt(title, full_text, md_table_characteristic)
+        return system_prompt + previous_errors_prompt
 
     def leave_step(
         self,

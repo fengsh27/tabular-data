@@ -12,6 +12,7 @@ from extractor.agents.pk_specimen_individual.pk_spec_ind_common_agent import (
     PKSpecIndCommonAgentResult,
     PKSpecIndCommonAgent,
 )
+from extractor.prompts_utils import generate_previous_errors_prompt
 
 logger = logging.getLogger(__name__)
 
@@ -66,6 +67,10 @@ class PKSpecIndCommonStep(ABC):
             step_reasoning_process=step_reasoning_process,
             step_output=step_output,
         )
+
+    def _get_previous_errors_prompt(self, state: PKSpecIndWorkflowState) -> str:
+        previous_errors = state["previous_errors"] if "previous_errors" in state else "N/A"
+        return generate_previous_errors_prompt(previous_errors)
 
     def execute(self, state: PKSpecIndWorkflowState):
         self.enter_step(state)

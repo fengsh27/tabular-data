@@ -64,17 +64,23 @@ class PKSumCommonAgent(CommonAgent):
         assert instruction_prompt is not None, "instruction_prompt is required"
 
         if not isinstance(self.llm, ChatMetaLlama):
-            return self._invoke_structured_llm_for_openai(
+            res, token_usage, reasoning_process = self._invoke_structured_llm_for_openai(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=schema,
             )
         else:
-            return self._invoke_structured_llm_for_meta_llama(
+            res, token_usage, reasoning_process = self._invoke_structured_llm_for_meta_llama(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=schema,
             )
+        if reasoning_process is None:
+            if hasattr(res, "reasoning_process"):
+                reasoning_process = res.reasoning_process
+            else:
+                reasoning_process = ""
+        return res, token_usage, reasoning_process
 
     def _invoke_structured_llm_for_openai(
         self, 
@@ -191,4 +197,4 @@ class PKSumCommonAgent(CommonAgent):
             except Exception as e:
                 logger.error(str(e))
                 raise e
-        return res, processed_res, self.token_usage
+        return res, processed_res, self.token_usage, reasoning_process

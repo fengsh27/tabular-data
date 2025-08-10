@@ -11,6 +11,7 @@ from extractor.agents.pk_summary.pk_sum_param_type_unit_extract_agent import (
     ParamTypeUnitExtractionResult,
     post_process_validate_matched_tuple,
 )
+from extractor.agents.pk_summary.pk_sum_workflow_utils import get_common_agent
 
 
 class ExtractParamTypeAndUnitStep(PKSumCommonAgentStep):
@@ -78,9 +79,11 @@ class ExtractParamTypeAndUnitStep(PKSumCommonAgentStep):
                     system_prompt = get_param_type_unit_extraction_prompt(
                         md_table_aligned, md, col_mapping, caption
                     )
+                    previous_errors_prompt = self._get_previous_errors_prompt(state)
+                    system_prompt = system_prompt + previous_errors_prompt
                     instruction_prompt = self.get_instruction_prompt(state)
-                    agent = PKSumCommonAgent(llm=llm)
-                    res, processed_res, token_usage = agent.go(
+                    agent = get_common_agent(llm=llm) # PKSumCommonAgent(llm=llm)
+                    res, processed_res, token_usage, reasoning_process = agent.go(
                         system_prompt=system_prompt,
                         instruction_prompt=instruction_prompt,
                         schema=schema,
@@ -90,9 +93,7 @@ class ExtractParamTypeAndUnitStep(PKSumCommonAgentStep):
                     )
                     self._step_output(
                         state,
-                        step_reasoning_process=res.reasoning_process
-                        if res is not None
-                        else "",
+                        step_reasoning_process=reasoning_process,
                     )
                     tuple_type_unit: Tuple[List[str], List[str]] = processed_res
 

@@ -24,6 +24,7 @@ class PEStudyOutWorkflowState(TypedDict):
     # patient_list: Optional[list[str]]
     # value_list: Optional[list[str]]  # value table list
     df_combined: Optional[pd.DataFrame]
+    previous_errors: Optional[str]
 
     step_callback: Optional[Callable]  # StepCallback
 

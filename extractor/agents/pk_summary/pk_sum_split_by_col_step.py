@@ -17,7 +17,9 @@ class SplitByColumnsStep(PKSumCommonAgentStep):
     def get_system_prompt(self, state):
         md_table_aligned = state["md_table_aligned"]
         col_mapping = state["col_mapping"]
-        return get_split_by_columns_prompt(md_table_aligned, col_mapping)
+        system_prompt = get_split_by_columns_prompt(md_table_aligned, col_mapping)
+        previous_errors_prompt = self._get_previous_errors_prompt(state)
+        return system_prompt + previous_errors_prompt
 
     def get_schema(self):
         return SplitByColumnsResult

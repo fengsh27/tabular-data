@@ -12,6 +12,7 @@ from extractor.agents.pe_study_outcome.pe_study_out_common_agent import (
     PEStudyOutCommonAgentResult,
     PEStudyOutCommonAgent,
 )
+from extractor.prompts_utils import generate_previous_errors_prompt
 
 logger = logging.getLogger(__name__)
 
@@ -67,6 +68,10 @@ class PEStudyOutCommonStep(ABC):
             step_reasoning_process=step_reasoning_process,
             step_output=step_output,
         )
+
+    def _get_previous_errors_prompt(self, state: PEStudyOutWorkflowState) -> str:
+        previous_errors = state["previous_errors"] if "previous_errors" in state else "N/A"
+        return generate_previous_errors_prompt(previous_errors)
 
     def execute(self, state: PEStudyOutWorkflowState):
         self.enter_step(state)

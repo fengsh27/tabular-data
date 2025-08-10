@@ -21,7 +21,9 @@ class DesignInfoRefinementStep(PEStudyInfoCommonAgentStep):
         title = state["title"]
         full_text = state["full_text"]
         md_table_design = state["md_table_design"]
-        return get_design_info_refine_prompt(title, full_text, md_table_design)
+        system_prompt = get_design_info_refine_prompt(title, full_text, md_table_design)
+        previous_errors_prompt = self._get_previous_errors_prompt(state)
+        return system_prompt + previous_errors_prompt
 
     def leave_step(
         self,

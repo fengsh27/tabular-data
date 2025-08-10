@@ -22,11 +22,13 @@ class PatientInfoExtractionStep(PKSumCommonAgentStep):
         md_table = state["md_table"]
         caption = state["caption"]
         int_list = extract_integers(md_table + caption)
-        return PATIENT_INFO_PROMPT.format(
+        system_prompt = PATIENT_INFO_PROMPT.format(
             processed_md_table=display_md_table(md_table),
             caption=caption,
             int_list=int_list,
         )
+        previous_errors_prompt = self._get_previous_errors_prompt(state)
+        return system_prompt + previous_errors_prompt
 
     def leave_step(self, state, res, processed_res=None, token_usage=None):
         if processed_res is not None:
