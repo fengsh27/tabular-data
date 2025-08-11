@@ -23,6 +23,7 @@ class PEStudyOutcomeTask(PKPEAgentToolTask):
         output_callback: Callable | None = None,
     ):
         super().__init__(llm, pmid_db, output_callback)
+        self.task_name = "PE Study Outcome Task"
 
     def _create_tool(self, pmid: str):
         return PEStudyOutcomeCurationTool(
@@ -46,6 +47,7 @@ class PEStudyInfoTask(PKPEAgentToolTask):
         output_callback: Callable | None = None,
     ):
         super().__init__(llm, pmid_db, output_callback)
+        self.task_name = "PE Study Info Task"
         
     def _create_tool(self, pmid: str):
         return FullTextCurationTool(

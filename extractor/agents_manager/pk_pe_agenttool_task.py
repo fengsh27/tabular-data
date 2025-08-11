@@ -31,6 +31,7 @@ class PKPEAgentToolTask(ABC):
         self.llm = llm
         self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
         self.output_callback = output_callback
+        self.task_name = "Agent Tool Task"
 
     def print_step(
         self,
@@ -67,6 +68,9 @@ class PKPEAgentToolTask(ABC):
             if state["final_answer"] is not None and state["final_answer"]:
                 self.print_step(step_name="Final Answer")
                 self.print_step(step_output=state["final_answer"])
+                return END
+            if "step_count" in state and state["step_count"] >= MAX_STEP_COUNT:
+                self.print_step(step_name="Max Step Count Reached")
                 return END
             return "correction_step"
         execution_step = PKPEExecutionStep(
@@ -108,6 +112,7 @@ class PKPEAgentToolTask(ABC):
                 "paper_abstract": pmid_info[2],
                 "full_text": pmid_info[3],
                 "step_output_callback": self.print_step,
+                "step_count": 0,
             },
             config={"max_recursion_limit": MAX_STEP_COUNT},
             stream_mode="values",
@@ -116,6 +121,7 @@ class PKPEAgentToolTask(ABC):
         return s
 
     def run(self, pmid: str) -> tuple[bool, str | None, str | None, str | None]:
+        self.print_step(step_name=f"Running {self.task_name} for pmid-{pmid}")
         state = self._run_workflow(pmid)
         correct = state["final_answer"] if state["final_answer"] is not None else False
         curated_table = state["curated_table"] if "curated_table" in state else None

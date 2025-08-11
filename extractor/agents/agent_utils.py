@@ -6,6 +6,11 @@ from langchain_core.prompts import (
     ChatPromptTemplate,
 )
 
+from extractor.database.pmid_db import PMIDDB
+from extractor.pmid_extractor.article_retriever import ArticleRetriever
+from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
+from extractor.utils import convert_html_to_text_no_table, remove_references
+
 
 class StepCallback(Protocol):
     def __call__(
@@ -90,12 +95,26 @@ def from_system_template(template, **kwargs):
     return ChatPromptTemplate.from_messages([message])
 
 
-def escape_braces_for_format(text: str) -> str:
-    # replace all {xxx} by {{xxx}}
-    # return re.sub(r'\{([^{}]+)\}', r'{{\1}}', text)
-    
-    # First replace single } not part of }} with }}
-    text = re.sub(r'(?<!})}(?!})', '}}', text)
-    # Then replace single { not part of {{
-    text = re.sub(r'(?<!{){(?!{)', '{{', text)
-    return text
+def extract_pmid_info_to_db(pmid: str, pmid_db: PMIDDB) -> tuple[str, str, str, str, list[dict], list[str]]:
+    """
+    Extract pmid info from database or web, and save to database.
+
+    Returns:
+        tuple[str, str, str, str, list[dict], list[str]]: pmid, title, abstract, full_text, tables, sections
+    """
+    info = pmid_db.select_pmid_info(pmid)
+    if info is not None:
+        return info
+    retriever = ArticleRetriever()
+    res, html_content, code = retriever.request_article(pmid)
+    if not res:
+        return None, None, None, None, None, None
+    extractor = HtmlTableExtractor()
+    tables = extractor.extract_tables(html_content)
+    sections = extractor.extract_sections(html_content)
+    abstract = extractor.extract_abstract(html_content)
+    title = extractor.extract_title(html_content)
+    full_text = convert_html_to_text_no_table(html_content)
+    full_text = remove_references(full_text)
+    pmid_db.insert_pmid_info(pmid, title, abstract, full_text, tables, sections)
+    return pmid, title, abstract, full_text, tables, sections

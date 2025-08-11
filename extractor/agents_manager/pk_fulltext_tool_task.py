@@ -25,6 +25,7 @@ class PKSpecimenSummaryTask(PKPEAgentToolTask):
         output_callback: Callable | None = None,
     ):
         super().__init__(llm, pmid_db, output_callback)
+        self.task_name = "PK Specimen Summary Task"
 
     def _create_tool(self, pmid: str):
         return FullTextCurationTool(
@@ -51,6 +52,7 @@ class PKDrugSummaryTask(PKPEAgentToolTask):
         output_callback: Callable | None = None,
     ):
         super().__init__(llm, pmid_db, output_callback)
+        self.task_name = "PK Drug Summary Task"
         
     def _create_tool(self, pmid: str):
         return FullTextCurationTool(
@@ -77,6 +79,7 @@ class PKSpecimenIndividualTask(PKPEAgentToolTask):
         output_callback: Callable | None = None,
     ):
         super().__init__(llm, pmid_db, output_callback)
+        self.task_name = "PK Specimen Individual Task"
         
     def _create_tool(self, pmid: str):
         return FullTextCurationTool(
@@ -103,6 +106,7 @@ class PKDrugIndividualTask(PKPEAgentToolTask):
         output_callback: Callable | None = None,
     ):
         super().__init__(llm, pmid_db, output_callback)
+        self.task_name = "PK Drug Individual Task"
         
     def _create_tool(self, pmid: str):
         return FullTextCurationTool(

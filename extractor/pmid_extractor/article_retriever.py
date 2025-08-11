@@ -17,7 +17,7 @@ def article_processor(func):
     def wrapper(*args, **kwargs):
         res, text, code = func(*args, **kwargs)
         if res and text is not None and len(text) > 0:
-            text = text.replace('\u2009', ' ')
+            text = text.replace('\u2009', ' ').replace('\xa0', ' ')
         return res, text, code
     return wrapper
 

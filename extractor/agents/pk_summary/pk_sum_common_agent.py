@@ -15,10 +15,7 @@ from pydantic import BaseModel, Field
 from tenacity import retry, stop_after_attempt, wait_incrementing
 import logging
 
-from extractor.agents.agent_utils import (
-    escape_braces_for_format,
-    increase_token_usage,
-)
+from extractor.utils import escape_braces_for_format
 from extractor.agents.common_agent.common_agent import RetryException, CommonAgent
 
 logger = logging.getLogger()

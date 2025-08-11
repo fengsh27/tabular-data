@@ -35,6 +35,8 @@ class CommonStep(ABC):
         state["step_output_callback"](
             step_name=self.step_name, 
         )
+        if "step_count" in state:
+            state["step_count"] += 1
 
     def leave_step(self, state, token_usage: Optional[dict[str, int]] = None):
         if state["step_output_callback"] is None:

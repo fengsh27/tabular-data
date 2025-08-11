@@ -314,3 +314,13 @@ def extract_float_values(s) -> list[float]:
         return ret_arr
     else:
         return None
+
+def escape_braces_for_format(text: str) -> str:
+    # replace all {xxx} by {{xxx}}
+    # return re.sub(r'\{([^{}]+)\}', r'{{\1}}', text)
+    
+    # First replace single } not part of }} with }}
+    text = re.sub(r'(?<!})}(?!})', '}}', text)
+    # Then replace single { not part of {{
+    text = re.sub(r'(?<!{){(?!{)', '{{', text)
+    return text

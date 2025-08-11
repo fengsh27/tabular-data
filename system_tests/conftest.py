@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 from typing import Optional
 from langchain_deepseek import ChatDeepSeek
 from langchain_openai import AzureChatOpenAI, ChatOpenAI
@@ -11,6 +12,7 @@ from TabFuncFlow.utils.table_utils import (
     single_html_table_to_markdown,
 )
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
+from extractor.database.pmid_db import PMIDDB
 from extractor.request_sonnet import get_sonnet
 from extractor.request_metallama import get_meta_llama
 
@@ -360,6 +362,10 @@ def html_content_29943508():
 <section class="tw xbox font-sm" id="aas13175-tbl-0002" lang="en"><h4 class="obj_head">Table 2.</h4> <div class="caption p"><p>Fentanyl concentrations in umbilical vein and maternal serum. Data are presented as mean (SD) or median [interquartile range] as appropriate</p></div> <div class="tbl-box p" tabindex="0"><table class="content" frame="hsides" rules="groups"> <col span="1" style="border-right:solid 1px #000000"/> <col span="1" style="border-right:solid 1px #000000"/> <col span="1" style="border-right:solid 1px #000000"/> <col span="1" style="border-right:solid 1px #000000"/> <col span="1" style="border-right:solid 1px #000000"/> <thead valign="top"><tr style="border-bottom:solid 1px #000000"> <th align="left" colspan="1" rowspan="1" valign="top">Variable</th> <th align="center" colspan="1" rowspan="1" valign="top">Adrenaline group (n = 19)</th> <th align="center" colspan="1" rowspan="1" valign="top">Control group (n = 20)</th> <th align="center" colspan="1" rowspan="1" valign="top">Mean difference</th> <th align="center" colspan="1" rowspan="1" valign="top"> <em>P</em>‐value</th> </tr></thead> <tbody> <tr> <td align="left" colspan="1" rowspan="1">Mean serum fentanyl concentration, umbilical vein (nmol/L)</td> <td align="center" colspan="1" rowspan="1">0.162 (0.090) (n = 16)</td> <td align="center" colspan="1" rowspan="1">0.151 (0.070) (n = 20)</td> <td align="center" colspan="1" rowspan="1">0.012 [−0.042; 0.065]</td> <td align="center" colspan="1" rowspan="1">.67</td> </tr> <tr> <td align="left" colspan="1" rowspan="1">Median maternal serum fentanyl concentration at birth (nmol/L)</td> <td align="center" colspan="1" rowspan="1">0.268 [0.193; 0.493]<a class="usa-link" href="#aas13175-note-0005"><sup>a</sup></a> (n = 16)</td> <td align="center" colspan="1" rowspan="1">0.291 [0.212; 0.502]<a class="usa-link" href="#aas13175-note-0005"><sup>a</sup></a> (n = 19)</td> <td align="center" colspan="1" rowspan="1">−0.061 [−0.205; 0.082]</td> <td align="center" colspan="1" rowspan="1">.66<a class="usa-link" href="#aas13175-note-0005"><sup>a</sup></a> </td> </tr> <tr> <td align="left" colspan="1" rowspan="1">Mean AUC 0‐120 min for fentanyl in maternal serum (nmol h/L)</td> <td align="center" colspan="1" rowspan="1">0.428 (0.162) (n = 18)</td> <td align="center" colspan="1" rowspan="1">0.590 (0.197) (n = 15)<a class="usa-link" href="#aas13175-note-0006"><sup>b</sup></a> </td> <td align="center" colspan="1" rowspan="1">−0.162 [−0.289; −0.034]</td> <td align="center" colspan="1" rowspan="1">.015</td> </tr> </tbody> </table></div> <div class="p text-right font-secondary"><a class="usa-link" href="table/aas13175-tbl-0002/" rel="noopener noreferrer" target="_blank">Open in a new tab</a></div> <div class="tw-foot p"> <div class="fn" id="aas13175-note-0004"><p>AUC, Area under the curve. Student's <em>t</em> test was used to calculate <em>P</em>‐values unless otherwise specified. Complete case analysis, numbers in some cells lower than the total numbers of patients included due to missing data (hemolysis of samples, technical laboratory difficulties).</p></div> <div class="fn" id="aas13175-note-0005"> <sup>a</sup><p class="display-inline">Mann–Whitney <em>U</em> test used. Data presented as median [25th; 75th percentile].</p> </div> <div class="fn" id="aas13175-note-0006"> <sup>b</sup><p class="display-inline">Two cases with missing data due to birth prior to 120 min sample.</p> </div> </div></section>
 """
 
+@pytest.fixture(scope="module")
+def title_29943508():
+    return "Effects of Adrenaline on maternal and fetal fentanyl absorption in epidural analgesia: A randomized trial"
+
 
 @pytest.fixture(scope="module")
 def caption_29943508():
@@ -406,13 +412,21 @@ def md_table_aligned_29943508_table_1():
 @pytest.fixture(scope="module")
 def col_mapping_29943508():
     return {
+        'Parameter type': 'Parameter type', 
+        'Adrenaline group (n = 19)': 'Parameter value', 
+        'Control group (n = 20)': 'Parameter value', 
+        'Mean difference': 'Parameter value', 
+        'P‐value': 'P value'
+    }
+"""
+    return {
         "Parameter type": "Parameter type",
         "Adrenaline group (n = 19)": "Parameter value",
         "Control group (n = 20)": "Parameter value",
         "Mean difference": "Parameter value",
         "P‐value": "P value",
     }
-
+"""
 @pytest.fixture(scope="module")
 def df_combined_29943508():
     return """
@@ -1989,3 +2003,8 @@ def step_callback():
             logger.info(step_output)
 
     return print_step
+
+@pytest.fixture(scope="module")
+def pmid_db():
+    pmid_db = PMIDDB(Path(__file__).parent / "data" / "pmid_db.db")
+    return pmid_db

@@ -6,7 +6,7 @@ from pydantic import BaseModel, Field
 from tenacity import retry, stop_after_attempt, wait_incrementing
 import logging
 
-from extractor.agents.agent_utils import escape_braces_for_format
+from extractor.utils import escape_braces_for_format
 from .common_agent import (
     CommonAgent,
     RetryException,

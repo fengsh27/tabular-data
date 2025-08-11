@@ -24,6 +24,7 @@ class PKPECurationWorkflowState(TypedDict):
     verification_reasoning_process: Optional[str] = None
     previous_errors: Optional[str] = None
     step_output_callback: Optional[Callable] = None
+    step_count: Optional[int] = 0
 
 
 class PKPECuratedTables(TypedDict):

@@ -48,7 +48,7 @@ You must respond using the **exact format** below:
 ### **Important Notes**
 
 * The columns in the curated table are fixed, so you **should not doubt** the columns in the curated table.
-* Be exact and detail-oriented on the mismatched values or structure issues. Even a small mismatch in value is considered incorrect.
+* Focus on **substantial mismatches** in values or structure that could affect the meaning or interpretation. Minor typos, slight wording differences, or small formatting variations are acceptable.
 * If the curated table is correct in content but uses slightly different formatting (e.g., reordering of columns), that is acceptable as long as it does not alter the meaning or value.
 * In the **Explanation** section, you should try your best to **list all the mismatched values or structure issues**, and provide a brief explanation of why you think the curated table is incorrect.
 * Your response will be used to correct the curated table, so you should be **very specific and detailed** in your explanation. **Do not give any general explanation.**

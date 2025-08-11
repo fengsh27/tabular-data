@@ -141,6 +141,8 @@ class PKSumCommonAgentStep(PKSumCommonStep):
                 schema=schema,
                 post_process=post_process,
             )
-        reasoning_process = ""
+        reasoning_process = reasoning_process if reasoning_process is not None else None
+        reasoning_process = res.reasoning_process if reasoning_process is None and hasattr(res, "reasoning_process") else reasoning_process
+        reasoning_process = reasoning_process if reasoning_process is not None else ""
         self._step_output(state, step_reasoning_process=reasoning_process)
         return res, processed_res, token_usage

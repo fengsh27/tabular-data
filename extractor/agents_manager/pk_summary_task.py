@@ -31,6 +31,7 @@ class PKSummaryTask(PKPEAgentToolTask):
         output_callback: Callable | None = None,
     ):
         super().__init__(llm, pmid_db, output_callback)
+        self.task_name = "PK Summary Task"
 
     def _create_tool(self, pmid: str):
         return PKSummaryTablesCurationTool(
