@@ -5,6 +5,7 @@ from pydantic import BaseModel, Field
 from extractor.agents.common_agent.common_step import CommonStep
 from extractor.agents.common_agent.common_agent_2steps import CommonAgentTwoSteps
 from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState
+from extractor.agents.pk_pe_agents.pk_pe_agents_utils import format_source_tables
 from extractor.constants import COT_USER_INSTRUCTION
 
 PKPE_VERIFICATION_SYSTEM_PROMPT = """
@@ -112,14 +113,11 @@ Suggested fix:
     def _execute_directly(self, state) -> tuple[dict, dict[str, int]]:
         state: PKPECurationWorkflowState = state
         source_tables = state["source_tables"] if "source_tables" in state else None
-        if isinstance(source_tables, list):
-            source_tables = "\n".join(source_tables) if len(source_tables) > 0 else "N / A"
-        else:
-            source_tables = source_tables if source_tables is not None else "N / A"
+        source_tables = format_source_tables(source_tables)
         system_prompt = PKPE_VERIFICATION_SYSTEM_PROMPT.format(
             paper_title=state["paper_title"],
             paper_abstract=state["paper_abstract"],
-            source_tables=state["source_tables"],
+            source_tables=source_tables,
             curated_table=state["curated_table"],
             domain=self.domain,
         )

@@ -50,7 +50,11 @@ class AgentTool(ABC):
 
     def run(self, previous_errors: str | None = None):
         self._print_tool_name()
-        return self._run(previous_errors)
+        try:
+            return self._run(previous_errors)
+        except Exception as e:
+            logger.error(f"Error running {self._get_tool_name()} tool: \n{e}")
+            return pd.DataFrame(), "N/A"
 
 class PKSummaryTablesCurationTool(AgentTool):
     def __init__(
@@ -86,7 +90,7 @@ class PKSummaryTablesCurationTool(AgentTool):
         for table in selected_tables:
             caption = "\n".join([table["caption"], table["footnote"]])
             source_table = dataframe_to_markdown(table["table"])
-            source_tables.append(source_table)
+            source_tables.append(f"caption: \n{caption}\n\n table: \n{source_table}")
             df = workflow.go_md_table(
                 title=title,
                 md_table=source_table,

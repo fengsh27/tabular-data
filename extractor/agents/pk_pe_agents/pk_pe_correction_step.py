@@ -5,6 +5,7 @@ from pydantic import BaseModel, Field
 from extractor.agents.common_agent.common_step import CommonStep
 from extractor.agents.common_agent.common_agent_2steps import CommonAgentTwoSteps
 from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState
+from extractor.agents.pk_pe_agents.pk_pe_agents_utils import format_source_tables
 from extractor.constants import COT_USER_INSTRUCTION
 
 PKPE_CORRECTION_SYSTEM_PROMPT = """
@@ -49,7 +50,9 @@ You must respond using the **exact format** below:
 ### **Important Notes**
 
 * Only fix the incorrect values or structure issues in the curated table, do not change other parts of the curated table.
-* Only make changes according to the **suggested fix** in the **Reasoning Process**.
+* Only make changes according to the **SuggestedFix** in the **Reasoning Process**.
+* Note: The **SuggestedFix** in the **Reasoning Process** only is the changes that you need to make to the curated table, **do keep the other parts of the curated table unchanged**.
+  So you final answer should be a **complete and corrected** version of the curated table, including the **SuggestedFix** and the unchanged parts of the curated table.
 
 ---
 
@@ -97,12 +100,12 @@ class PKPECuratedTablesCorrectionStep(CommonStep):
     def _execute_directly(self, state) -> tuple[dict, dict[str, int]]:
         state: PKPECurationWorkflowState = state
         source_tables = state["source_tables"] if "source_tables" in state else None
-        source_tables = "\n".join(source_tables) if len(source_tables) > 0 else "N / A"
+        source_tables = format_source_tables(source_tables)
         verification_reasoning_process = state["verification_reasoning_process"] if "verification_reasoning_process" in state else "N / A"
         system_prompt = PKPE_CORRECTION_SYSTEM_PROMPT.format(
             paper_title=state["paper_title"],
             paper_abstract=state["paper_abstract"],
-            source_tables=state["source_tables"],
+            source_tables=source_tables,
             curated_table=state["curated_table"],
             reasoning_process=verification_reasoning_process,
             domain=self.domain,

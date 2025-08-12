@@ -72,6 +72,9 @@ class PKPEAgentToolTask(ABC):
             if "step_count" in state and state["step_count"] >= MAX_STEP_COUNT:
                 self.print_step(step_name="Max Step Count Reached")
                 return END
+            if not "curated_table" in state or (state["curated_table"] is None or len(state["curated_table"]) == 0):
+                self.print_step(step_name="No Curated Table")
+                return END
             return "correction_step"
         execution_step = PKPEExecutionStep(
             llm=self.llm,

@@ -113,7 +113,11 @@ class PKPEManager:
         }
         curated_tables = {}
         for mgr_name, mgr in mgrs.items():
-            correct, curated_table, explanation, suggested_fix = mgr.run(pmid)
+            try:
+                correct, curated_table, explanation, suggested_fix = mgr.run(pmid)
+            except Exception as e:
+                logger.error(f"Error running pmid-{pmid} {mgr_name} workflow: \n{e}")
+                continue
             curated_tables[mgr_name] = PKPECuratedTables(
                 correct=correct,
                 curated_table=curated_table,
@@ -130,11 +134,15 @@ class PKPEManager:
         paper_type = state["paper_type"]
 
         ## execute pk summary workflow
-        if paper_type == PaperTypeEnum.PK:
-            return self._run_pk_workflows(pmid) # return pk curated tables
-        elif paper_type == PaperTypeEnum.PE:
-            return self._run_pe_workflows(pmid) # return pe curated tables
-        else:
-            raise ValueError(f"Invalid paper type: {paper_type}")
+        pk_dict = {}
+        pe_dict = {}
+        if paper_type == PaperTypeEnum.PK or paper_type == PaperTypeEnum.Both:
+            pk_dict = self._run_pk_workflows(pmid) # return pk curated tables
+        if paper_type == PaperTypeEnum.PE or paper_type == PaperTypeEnum.Both:
+            pe_dict = self._run_pe_workflows(pmid) # return pe curated tables
 
+        return {**pk_dict, **pe_dict}
+
+        
+        
         
