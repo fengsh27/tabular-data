@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Callable, Optional
 from langchain_openai.chat_models.base import BaseChatOpenAI
 
 import logging
@@ -80,7 +80,22 @@ class PKPEManager:
         state = identification_step.execute(state)
         return state
 
-    def _run_pk_workflows(self, pmid: str):
+    def _curating_start_job(self, pmid: str, job_name: str,curation_callback: Optional[Callable] = None):
+        if curation_callback is None:
+            return
+        curation_callback(pmid, job_name)
+    
+    def _curating_end_job(self, pmid: str, job_name: str, result: PKPECuratedTables, curation_callback: Optional[Callable] = None):
+        if curation_callback is None:
+            return
+        curation_callback(pmid, job_name, result)
+
+    def _run_pk_workflows(
+        self, 
+        pmid: str, 
+        curation_start_callback: Optional[Callable[[str, str], None]] = None, 
+        curation_end_callback: Optional[Callable[[str, str, PKPECuratedTables], None]] = None
+    ):
         mgrs = {
             "pk_summary": PKSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
             "pk_individual": PKIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
@@ -94,7 +109,15 @@ class PKPEManager:
         curated_tables = {}
         for mgr_name, mgr in mgrs.items():
             try:
+                self._curating_start_job(pmid, mgr_name, curation_start_callback)
                 correct, curated_table, explanation, suggested_fix = mgr.run(pmid)
+                result = PKPECuratedTables(
+                    correct=correct,
+                    curated_table=curated_table,
+                    explanation=explanation,
+                    suggested_fix=suggested_fix,
+                )
+                self._curating_end_job(pmid, mgr_name, result, curation_end_callback)
             except Exception as e:
                 logger.error(f"Error running pmid-{pmid} {mgr_name} workflow: \n{e}")
                 continue
@@ -106,7 +129,12 @@ class PKPEManager:
             )
         return curated_tables
 
-    def _run_pe_workflows(self, pmid: str):
+    def _run_pe_workflows(
+        self, 
+        pmid: str, 
+        curation_start_callback: Optional[Callable[[str, str], None]] = None, 
+        curation_end_callback: Optional[Callable[[str, str, PKPECuratedTables], None]] = None
+    ):
         mgrs = {
             "pe_study_info": PEStudyInfoTask(self.llm, self.pmid_db, self.print_step),
             "pe_study_output": PEStudyOutcomeTask(self.llm, self.pmid_db, self.print_step),
@@ -114,19 +142,27 @@ class PKPEManager:
         curated_tables = {}
         for mgr_name, mgr in mgrs.items():
             try:
+                self._curating_start_job(pmid, mgr_name, curation_start_callback)
                 correct, curated_table, explanation, suggested_fix = mgr.run(pmid)
+                result = PKPECuratedTables(
+                    correct=correct,
+                    curated_table=curated_table,
+                    explanation=explanation,
+                    suggested_fix=suggested_fix,
+                )
+                self._curating_end_job(pmid, mgr_name, result, curation_end_callback)   
             except Exception as e:
                 logger.error(f"Error running pmid-{pmid} {mgr_name} workflow: \n{e}")
                 continue
-            curated_tables[mgr_name] = PKPECuratedTables(
-                correct=correct,
-                curated_table=curated_table,
-                explanation=explanation,
-                suggested_fix=suggested_fix,
-            )
+            curated_tables[mgr_name] = result
         return curated_tables
 
-    def run(self, pmid: str) -> dict[str, PKPECuratedTables]:
+    def run(
+        self, 
+        pmid: str, 
+        curation_start_callback: Optional[Callable[[str, str], None]] = None, 
+        curation_end_callback: Optional[Callable[[str, str, PKPECuratedTables], None]] = None
+    ) -> dict[str, PKPECuratedTables]:
         self._extract_pmid_info(pmid)
 
         ## 1. Identification Step
@@ -137,9 +173,9 @@ class PKPEManager:
         pk_dict = {}
         pe_dict = {}
         if paper_type == PaperTypeEnum.PK or paper_type == PaperTypeEnum.Both:
-            pk_dict = self._run_pk_workflows(pmid) # return pk curated tables
+            pk_dict = self._run_pk_workflows(pmid, curation_start_callback, curation_end_callback) # return pk curated tables
         if paper_type == PaperTypeEnum.PE or paper_type == PaperTypeEnum.Both:
-            pe_dict = self._run_pe_workflows(pmid) # return pe curated tables
+            pe_dict = self._run_pe_workflows(pmid, curation_start_callback, curation_end_callback) # return pe curated tables
 
         return {**pk_dict, **pe_dict}
 
