@@ -53,14 +53,14 @@ def test_openai_1():
     )
     print(res)
 
-@pytest.mark.skip()
+# @pytest.mark.skip()
 def test_gemini_list_models():
     from langchain_google_genai import ChatGoogleGenerativeAI
 
-    if "GEMINI_15_API_KEY" in os.environ:        
+    if "GEMINI_API_KEY" in os.environ:        
         client = ChatGoogleGenerativeAI(
             api_key=os.getenv("GEMINI_API_KEY"),
-            model=os.getenv("GEMINI_20_MODEL"),
+            model=os.getenv("GEMINI_MODEL"),
             temperature=0,
             max_tokens=None,
             timeout=None,
@@ -74,6 +74,7 @@ def test_gemini_list_models():
         )
         print(res)
 
+@pytest.mark.skip()
 def test_llm():
     from typing import List, Any
     from openai import AzureOpenAI, OpenAI

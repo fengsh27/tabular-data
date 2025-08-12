@@ -67,6 +67,8 @@ class PatientMatchingAgentStep(PKIndCommonStep):
             system_prompt = get_matching_patient_prompt(
                 md_table_aligned, md, md_table_patient, caption
             )
+            previous_errors_prompt = self._get_previous_errors_prompt(state)
+            system_prompt = system_prompt + previous_errors_prompt
             instruction_prompt = INSTRUCTION_PROMPT
             agent = PKIndCommonAgent(llm=llm)
             res, processed_res, token_usage = agent.go(

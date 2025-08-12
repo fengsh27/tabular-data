@@ -17,9 +17,11 @@ class SummaryDataDelStep(PKIndCommonAgentStep):
 
     def get_system_prompt(self, state):
         md_table = state["md_table"]
-        return SUMMARY_DATA_DEL_PROMPT.format(
+        system_prompt = SUMMARY_DATA_DEL_PROMPT.format(
             processed_md_table=display_md_table(md_table)
         )
+        previous_errors_prompt = self._get_previous_errors_prompt(state)
+        return system_prompt + previous_errors_prompt
 
     def get_schema(self):
         return SummaryDataDelResult

@@ -15,7 +15,7 @@ class PKSpecIndWorkflowState(TypedDict):
     md_table_time: Optional[str]
     df_combined: Optional[pd.DataFrame]
     step_callback: Optional[Callable]  # StepCallback
-
+    previous_errors: Optional[str]
 
 def pk_spec_ind_enter_step(
     state: PKSpecIndWorkflowState, step_name: str, step_description: Optional[str] = None

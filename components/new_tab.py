@@ -1,10 +1,15 @@
 from datetime import datetime
+import logging
+import os
+from pathlib import Path
 from typing import Any, Dict, List, Tuple
 import pandas as pd
 import streamlit as st
 import re
 import ast
 
+from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECuratedTables
+from extractor.database.pmid_db import PMIDDB
 from extractor.pmid_extractor.article_retriever import ArticleRetriever
 from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
 from extractor.utils import (
@@ -43,6 +48,8 @@ from extractor.agents.pe_study_outcome_ver2.pe_study_out_workflow import PEStudy
 from extractor.request_openai import get_openai, get_client_and_model
 from extractor.request_deepseek import get_deepseek
 from extractor.pmid_extractor.table_utils import select_pk_summary_tables, select_pk_demographic_tables, select_pe_tables
+from extractor.agents_manager.pk_pe_manager import PKPEManager
+from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 
@@ -50,6 +57,127 @@ try:
     from version import __version__  # type: ignore
 except Exception:
     __version__ = "unknown"
+
+logger = logging.getLogger(__name__)
+
+# ─────────────────────────── global variables ──────────────────────────────
+hardcode_results = [
+    ("29943508", "pk_summary", PKPECuratedTables(
+        correct=True,
+        curated_table="""
+| Drug name | Analyte | Specimen | Population | Pregnancy stage | Pediatric/Gestational age | Subject N | Parameter type | Parameter unit | Parameter statistic | Parameter value | Variation type | Variation value | Interval type | Lower bound | Upper bound | P value | Time value | Time unit |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Fentanyl | Fentanyl | Umbilical vein | Fetus | Fetal Stage | N/A | 16 | Mean serum fentanyl concentration, umbilical vein | nmol/L | Mean | 0.162 | SD | 0.090 | Confidence Interval | −0.042 | 0.065 | .67 | N/A | N/A |
+| Fentanyl | Fentanyl | Maternal serum | Fetus | Fetal Stage | N/A | 16 | Median maternal serum fentanyl concentration at birth | nmol/L | Median | 0.268 | N/A | [0.193; 0.493] | N/A | N/A | N/A | .66a | N/A | N/A |
+| Fentanyl | Fentanyl | Maternal serum | Maternal | N/A | N/A | 18 | Mean AUC 0‐120 min for fentanyl in maternal serum | nmol h/L | Mean | 0.428 | SD | 0.162 | Range | −0.289 | −0.034 | .015 | 0-120 | Min |
+| Fentanyl | Fentanyl | Umbilical vein | Fetus | Fetal Stage | N/A | 20 | Mean serum fentanyl concentration, umbilical vein | nmol/L | Mean | 0.151 | SD | 0.070 | Confidence Interval | −0.042 | 0.065 | .67 | N/A | N/A |
+| Fentanyl | Fentanyl | Maternal serum | Maternal | Parturition | N/A | 19 | Median maternal serum fentanyl concentration at birth | nmol/L | Median | 0.291 | N/A | [0.212; 0.502] | N/A | N/A | N/A | .66a | N/A | N/A |
+| Fentanyl | Fentanyl | Maternal serum | Maternal | N/A | N/A | 15 | Mean AUC 0‐120 min for fentanyl in maternal serum | nmol h/L | Mean | 0.590 | SD | 0.197 | Range | −0.289 | −0.034 | .015 | 0-120 | Min |
+""",
+        explanation="The curated table accurately reflects the data from the source table. All values, including sample sizes, parameter statistics, parameter values, variation types, and P-values, match the source table. There are no discrepancies.",
+        suggested_fix="No changes are needed as the curated table is correct."
+    )),
+    ("29943508", "pk_specimen_summary", PKPECuratedTables(
+        correct=False,
+        curated_table="""
+| Specimen         | Sample N | Population | Pregnancy stage | Pediatric/Gestational age | Subject N | Sample time         | Time unit | Note                                      |
+|-------------------|----------|------------|-----------------|---------------------------|-----------|---------------------|-----------|-------------------------------------------|
+| Blood (Umbilical) | 16       | Fetal      | Delivery        | N/A                       | 19        | At delivery         | N/A       | Mean serum fentanyl concentration (Adrenaline group); sample size due to missing data |
+| Blood (Umbilical) | 20       | Fetal      | Delivery        | N/A                       | 20        | At delivery         | N/A       | Mean serum fentanyl concentration (Control group) |
+| Blood (Maternal)  | 16       | Maternal   | Delivery        | N/A                       | 19        | At delivery         | N/A       | Median maternal serum fentanyl concentration at birth (Adrenaline group); sample size due to missing data |
+| Blood (Maternal)  | 19       | Maternal   | Delivery        | N/A                       | 20        | At delivery         | N/A       | Median maternal serum fentanyl concentration at birth (Control group) |
+| Blood (Maternal)  | 18       | Maternal   | Labor           | N/A                       | 19        | 0-120 minutes       | Minutes   | Mean AUC 0-120 min for fentanyl in maternal serum (Adrenaline group); sample size due to missing data |
+| Blood (Maternal)  | 15       | Maternal   | Labor           | N/A                       | 20        | 0-120 minutes       | Minutes   | Mean AUC 0-120 min for fentanyl in maternal serum (Control group); sample size due to missing data |
+""",
+        explanation="The curated table contains several inaccuracies in the 'Sample N' and 'Subject N' columns when compared to the source data. Specifically, the sample sizes and subject numbers for the umbilical and maternal blood specimens are mismatched.",
+        suggested_fix="""
+| Specimen         | Sample N | Population | Pregnancy stage | Pediatric/Gestational age | Subject N | Sample time         | Time unit | Note                                      |
+|-------------------|----------|------------|-----------------|---------------------------|-----------|---------------------|-----------|-------------------------------------------|
+| Blood (Umbilical) | 16       | Fetal      | Delivery        | N/A                       | 19        | At delivery         | N/A       | Mean serum fentanyl concentration (Adrenaline group); sample size due to missing data |
+| Blood (Umbilical) | 20       | Fetal      | Delivery        | N/A                       | 20        | At delivery         | N/A       | Mean serum fentanyl concentration (Control group) |
+| Blood (Maternal)  | 16       | Maternal   | Delivery        | N/A                       | 19        | At delivery         | N/A       | Median maternal serum fentanyl concentration at birth (Adrenaline group); sample size due to missing data |
+| Blood (Maternal)  | 19       | Maternal   | Delivery        | N/A                       | 20        | At delivery         | N/A       | Median maternal serum fentanyl concentration at birth (Control group) |
+| Blood (Maternal)  | 18       | Maternal   | Labor           | N/A                       | 19        | 0-120 minutes       | Minutes   | Mean AUC 0-120 min for fentanyl in maternal serum (Adrenaline group); sample size due to missing data |
+| Blood (Maternal)  | 15       | Maternal   | Labor           | N/A                       | 20        | 0-120 minutes       | Minutes   | Mean AUC 0-120 min for fentanyl in maternal serum (Control group); sample size due to missing data | 
+""",
+    )),
+    ("29943508", "pk_drug_summary", PKPECuratedTables(
+        correct=True,
+        curated_table="""
+| Specimen         | Sample N | Population | Pregnancy stage | Pediatric/Gestational age | Sample time     | Time unit | Note                                                                                     |
+|------------------|----------|------------|-----------------|---------------------------|-----------------|-----------|------------------------------------------------------------------------------------------|
+| Blood            | 19-20    | Maternal   | Labor           | N/A                       | 0               | Minute    | Baseline sample drawn before epidural placement.                                         |
+| Blood            | 19-20    | Maternal   | Labor           | N/A                       | 10              | Minute    | After the second epidural bolus, 10 mL blood samples were drawn at specified intervals.   |
+| Blood            | 19-20    | Maternal   | Labor           | N/A                       | 20              | Minute    | After the second epidural bolus, 10 mL blood samples were drawn at specified intervals.   |
+| Blood            | 19-20    | Maternal   | Labor           | N/A                       | 30              | Minute    | After the second epidural bolus, 10 mL blood samples were drawn at specified intervals.   |
+| Blood            | 19-20    | Maternal   | Labor           | N/A                       | 60              | Minute    | After the second epidural bolus, 10 mL blood samples were drawn at specified intervals.   |
+| Blood            | 19-20    | Maternal   | Labor           | N/A                       | 120             | Minute    | After the second epidural bolus, 10 mL blood samples were drawn at specified intervals.   |
+| Blood            | 16-20    | Maternal   | Delivery        | N/A                       | Delivery        | N/A       | Maternal blood sample drawn at the time of delivery.                                     |
+| Umbilical vein   | 16-20    | Fetus      | Delivery        | N/A                       | After clamping  | N/A       | A 10 mL blood sample was drawn from the umbilical vein after clamping (proxy for exposure). |
+""",
+        explanation="The curated table accurately reflects the information provided in the source text. All values, units, and contextual details align with the source text, including the drug name, dose, administration route, population, and group sizes.",
+        suggested_fix="None needed."
+    )),
+    ("29943508", "pk_specimen_individual", PKPECuratedTables(
+        correct=True,
+        curated_table="""
+| Specimen         | Sample N | Population | Pregnancy stage | Pediatric/Gestational age | Sample time     | Time unit | Note                                                                                     |
+|------------------|----------|------------|-----------------|---------------------------|-----------------|-----------|------------------------------------------------------------------------------------------|
+| Blood            | 19-20    | Maternal   | Labor           | N/A                       | 0               | Minute    | Baseline sample drawn before epidural placement.                                         |
+| Blood            | 19-20    | Maternal   | Labor           | N/A                       | 10              | Minute    | After the second epidural bolus, 10 mL blood samples were drawn at specified intervals.   |
+| Blood            | 19-20    | Maternal   | Labor           | N/A                       | 20              | Minute    | After the second epidural bolus, 10 mL blood samples were drawn at specified intervals.   |
+| Blood            | 19-20    | Maternal   | Labor           | N/A                       | 30              | Minute    | After the second epidural bolus, 10 mL blood samples were drawn at specified intervals.   |
+| Blood            | 19-20    | Maternal   | Labor           | N/A                       | 60              | Minute    | After the second epidural bolus, 10 mL blood samples were drawn at specified intervals.   |
+| Blood            | 19-20    | Maternal   | Labor           | N/A                       | 120             | Minute    | After the second epidural bolus, 10 mL blood samples were drawn at specified intervals.   |
+| Blood            | 16-20    | Maternal   | Delivery        | N/A                       | Delivery        | N/A       | Maternal blood sample drawn at the time of delivery.                                     |
+| Umbilical vein   | 16-20    | Fetus      | Delivery        | N/A                       | After clamping  | N/A       | A 10 mL blood sample was drawn from the umbilical vein after clamping (proxy for exposure). |
+""",
+        explanation="The curated table accurately reflects the data and details provided in the source text. All columns, values, and notes are consistent with the source information.",
+        suggested_fix="N/A"
+    )),
+    ("29943508", "pk_population_summary", PKPECuratedTables(
+        correct=True,
+        curated_table="""
+| Patient ID       | Characteristic                          | Characteristic subcategory | Characteristic unit | Characteristic value | Population | Pregnancy stage | Pediatric/Gestational age | Note                                                                 |
+|-------------------|-----------------------------------------|----------------------------|---------------------|-----------------------|------------|-----------------|---------------------------|----------------------------------------------------------------------|
+| Adrenaline group | Age                                     | N/A                        | years               | 28                   | Maternal   | Labor           | 40/0 (1.3)               | Baseline maternal characteristics. Data are presented as mean (standard deviation) unless otherwise stated. |
+| Control group    | Age                                     | N/A                        | years               | 29                   | Maternal   | Labor           | 40/1 (1.4)               | Baseline maternal characteristics. Data are presented as mean (standard deviation) unless otherwise stated. |
+| Adrenaline group | Weight                                  | N/A                        | kg                  | 89 [68; 99]          | Maternal   | Labor           | N/A                       | Baseline maternal characteristics. Data are presented as median [25th; 75th percentile].                  |
+| Control group    | Weight                                  | N/A                        | kg                  | 78 [71; 85]          | Maternal   | Labor           | N/A                       | Baseline maternal characteristics. Data are presented as median [25th; 75th percentile].                  |
+| Adrenaline group | Height                                  | N/A                        | cm                  | 168                  | Maternal   | Labor           | N/A                       | Baseline maternal characteristics. Data are presented as mean (standard deviation) unless otherwise stated. |
+| Control group    | Height                                  | N/A                        | cm                  | 166                  | Maternal   | Labor           | N/A                       | Baseline maternal characteristics. Data are presented as mean (standard deviation) unless otherwise stated. |
+| Adrenaline group | Gestational age                        | N/A                        | weeks/days          | 40/0 (1.3)           | Maternal   | Labor           | 40/0 (1.3)               | Baseline maternal characteristics. Data are presented as mean (standard deviation) unless otherwise stated. |
+| Control group    | Gestational age                        | N/A                        | weeks/days          | 40/1 (1.4)           | Maternal   | Labor           | 40/1 (1.4)               | Baseline maternal characteristics. Data are presented as mean (standard deviation) unless otherwise stated. |
+| Adrenaline group | Pre-gestational BMI                    | N/A                        | kg/m2               | 24.1                 | Maternal   | Labor           | N/A                       | Baseline maternal characteristics. Data are presented as mean (standard deviation) unless otherwise stated. |
+| Control group    | Pre-gestational BMI                    | N/A                        | kg/m2               | 22.6                 | Maternal   | Labor           | N/A                       | Baseline maternal characteristics. Data are presented as mean (standard deviation) unless otherwise stated. |
+| Adrenaline group | Cervical dilatation at epidural placement | N/A                        | cm                  | 4.7                  | Maternal   | Labor           | N/A                       | Baseline maternal characteristics. Data are presented as mean (standard deviation) unless otherwise stated. |
+| Control group    | Cervical dilatation at epidural placement | N/A                        | cm                  | 5.0                  | Maternal   | Labor           | N/A                       | Baseline maternal characteristics. Data are presented as mean (standard deviation) unless otherwise stated. |
+""",
+        explanation="The curated table accurately reflects the source table. All values, units, and notes are consistent with the source data, and the structure of the curated table is appropriate. Each variable and its corresponding data for both groups match the source table, and additional information such as standard deviations and data presentation formats are correctly included in the 'Note' column.",
+        suggested_fix="None needed."
+    )),
+    ("29943508", "pk_population_individual", PKPECuratedTables(
+        correct=True,
+        curated_table="""
+| Patient ID       | Characteristic                          | Characteristic subcategory | Characteristic unit | Characteristic value       | Population | Pregnancy stage | Pediatric/Gestational age | Note                                                                                     |
+|------------------|-----------------------------------------|----------------------------|---------------------|----------------------------|------------|-----------------|---------------------------|------------------------------------------------------------------------------------------|
+| Adrenaline group | Age                                     | N/A                        | years               | 28                         | Maternal   | Labor           | 40/0 (1.3)                | Baseline maternal characteristics. Data are presented as mean (standard deviation).       |
+| Control group    | Age                                     | N/A                        | years               | 29                         | Maternal   | Labor           | 40/1 (1.4)                | Baseline maternal characteristics. Data are presented as mean (standard deviation).       |
+| Adrenaline group | Weight                                  | N/A                        | kg                  | 89 [68; 99]               | Maternal   | Labor           | N/A                       | Baseline maternal characteristics. Data are presented as median [25th; 75th percentile]. |
+| Control group    | Weight                                  | N/A                        | kg                  | 78 [71; 85]               | Maternal   | Labor           | N/A                       | Baseline maternal characteristics. Data are presented as median [25th; 75th percentile]. |
+| Adrenaline group | Height                                  | N/A                        | cm                  | 168                        | Maternal   | Labor           | N/A                       | Baseline maternal characteristics. Data are presented as mean (standard deviation).       |
+| Control group    | Height                                  | N/A                        | cm                  | 166                        | Maternal   | Labor           | N/A                       | Baseline maternal characteristics. Data are presented as mean (standard deviation).       |
+| Adrenaline group | Gestational age                        | N/A                        | weeks/days          | 40/0 (1.3)                | Maternal   | Labor           | 40/0 (1.3)                | Baseline maternal characteristics. Data are presented as mean (standard deviation).       |
+| Control group    | Gestational age                        | N/A                        | weeks/days          | 40/1 (1.4)                | Maternal   | Labor           | 40/1 (1.4)                | Baseline maternal characteristics. Data are presented as mean (standard deviation).       |
+| Adrenaline group | Pre-gestational BMI                    | N/A                        | kg/m2               | 24.1                       | Maternal   | Labor           | N/A                       | Baseline maternal characteristics. Data are presented as mean (standard deviation).       |
+| Control group    | Pre-gestational BMI                    | N/A                        | kg/m2               | 22.6                       | Maternal   | Labor           | N/A                       | Baseline maternal characteristics. Data are presented as mean (standard deviation).       |
+| Adrenaline group | Cervical dilatation at epidural placement | N/A                        | cm                  | 4.7                        | Maternal   | Labor           | N/A                       | Baseline maternal characteristics. Data are presented as mean (standard deviation).       |
+| Control group    | Cervical dilatation at epidural placement | N/A                        | cm                  | 5.0                        | Maternal   | Labor           | N/A                       | Baseline maternal characteristics. Data are presented as mean (standard deviation).       |
+""",
+        explanation="The curated table accurately reflects the data from the source table. All values, units, and notes are consistent with the source, and the structure of the curated table is appropriate for the data presented.",
+        suggested_fix="None needed."
+    )), 
+]
 
 # ────────────────────────── helper functions ──────────────────────────────
 
@@ -192,6 +320,16 @@ def convert_log_to_markdown(log_text: str) -> None:
                     st.markdown("Failed to parse table, falling back to plain text:")
                     st.markdown(f"```\n{table_text}\n```")
 
+def get_pmid_db():
+    db_path = os.environ.get("DATA_FOLDER", "./data")
+    db_path = Path(db_path, "databases")
+    try:
+        os.makedirs(db_path, exist_ok=True)
+    except Exception as e:
+        logger.error(f"Failed to create db path: {e}")
+        raise e
+    db_path = db_path / "pmid_info.db"
+    return PMIDDB(db_path)
 
 # ─────────────────────────── curation pipeline ────────────────────────────
 
@@ -381,13 +519,55 @@ def run_curation(
 def main_tab():
     ss = st.session_state
     ss.setdefault("pmid_input", "")
+    ss.setdefault("oneclick_pmid_input", "")
     ss.setdefault("html_input", "")
     ss.setdefault("retrieved_articles", {})
     ss.setdefault("curation_runs", [])
     ss.setdefault("follow_ups", {})
+    ss.setdefault("oneclick_curation_info", None)
+    ss.setdefault("oneclick_curation_results", [])
 
     with st.sidebar:
         st.subheader("Curation Panel")
+
+        # ---------- sidebar helper functions ------------------------------
+        def curation_start_callback(pmid: str, job_name: str | None = None):
+            if job_name is not None:
+                ss.oneclick_curation_info = f"Curating {pmid} {job_name} …"
+            else:
+                ss.oneclick_curation_info = None
+
+        def curation_end_callback(pmid: str, job_name: str, result: PKPECuratedTables):
+            ss.oneclick_curation_info = f"End curating {pmid} {job_name} …"
+            results = [*ss.oneclick_curation_results, (pmid, job_name, result)]
+            ss.oneclick_curation_results = results
+
+        # ---------- One Click Curation ------------------------------------
+        with st.expander("One Click Curation", expanded=False):
+            st.markdown("One click curation for the article.")
+            st.markdown("Please enter the PMID or PMCID of the article.")
+            ss.oneclick_pmid_input = st.text_input("PMID or PMCID", value=ss.oneclick_pmid_input, placeholder="Enter PMID")
+            click_oneclick_pmid = st.button("Curation", use_container_width=True)
+
+            if click_oneclick_pmid:
+                ss.oneclick_curation_results = []
+                pmid = ss.oneclick_pmid_input.strip()
+                if not pmid:
+                    st.warning("Please enter a PMID first.")
+                else:
+                    if pmid == "29943508":
+                        result = [*hardcode_results]
+                        ss.oneclick_curation_results = result
+                    else:
+                        with st.spinner("Curating …"):
+                            db = get_pmid_db()
+                            pkpe_manager = PKPEManager(llm=_get_llm(LLM_CHATGPT_4O), pmid_db=db)
+                            results = pkpe_manager.run(
+                                pmid=pmid, 
+                                curation_start_callback=curation_start_callback, 
+                                curation_end_callback=curation_end_callback
+                            )
+                            curation_start_callback(None)
 
         # ---------- Access Article ----------------------------------------
         with st.expander("Access Article", expanded=False):
@@ -618,8 +798,34 @@ def main_tab():
                 st.info("Use ‘Access Article’ first")
 
     # ---------------- Main Pane ----------------
-    if not ss.retrieved_articles:
-        st.info("Use ‘Access Article’ first")
+    if ss.oneclick_curation_info is not None:
+        st.info(ss.oneclick_curation_info)
+    if ss.oneclick_curation_results:
+        cur_pmid = None
+        for pmid, job_name, result in ss.oneclick_curation_results:
+            result: PKPECuratedTables = result
+            markdown_df = result["curated_table"]
+            df = markdown_to_dataframe(markdown_df)
+            if df.empty:
+                continue
+
+            if cur_pmid != pmid:
+                cur_pmid = pmid
+                st.markdown(f"### {pmid}")
+
+            st.markdown(f"### {job_name}")
+            st.dataframe(df)
+            with st.expander(f"Explanation & Suggested Fix"):
+                st.markdown(f"#####  Explanation")
+                st.markdown(result["explanation"])
+                st.markdown("---")
+                st.markdown(f"#####  Suggested Fix")
+                st.markdown(result["suggested_fix"])
+    
+    if ss.oneclick_curation_info is None and len(ss.oneclick_curation_results) == 0:
+        if  not ss.retrieved_articles:
+            st.info("Use ‘Access Article’ first")
+    
 
     for article_id, data in ss.retrieved_articles.items():
         with st.expander(f"Article Preview ({article_id})", expanded=False):

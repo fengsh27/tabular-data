@@ -21,7 +21,10 @@ class PatientInfoRefinementStep(PKSpecSumCommonAgentStep):
         title = state["title"]
         full_text = state["full_text"]
         md_table_specimen = state["md_table_specimen"]
-        return get_patient_info_refine_prompt(title, full_text, md_table_specimen)
+        previous_errors = state["previous_errors"] if "previous_errors" in state else "N/A"
+        system_prompt = get_patient_info_refine_prompt(title, full_text, md_table_specimen, previous_errors)
+        previous_errors_prompt = self._get_previous_errors_prompt(state)
+        return system_prompt + previous_errors_prompt
 
     def leave_step(
         self,

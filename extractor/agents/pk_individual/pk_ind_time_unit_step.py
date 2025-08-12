@@ -34,6 +34,8 @@ class TimeExtractionStep(PKIndCommonStep):
             round += 1
             self._step_output(f"Trial {round}")
             system_prompt = get_time_and_unit_prompt(md_table_aligned, md, caption)
+            previous_errors_prompt = self._get_previous_errors_prompt(state)
+            system_prompt = system_prompt + previous_errors_prompt
             instruction_prompt = INSTRUCTION_PROMPT
             agent = PKIndCommonAgent(llm=llm)
             res, processed_res, token_usage = agent.go(

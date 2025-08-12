@@ -1,3 +1,4 @@
+from pathlib import Path
 from fake_useragent import UserAgent
 from bs4 import BeautifulSoup
 import logging
@@ -16,7 +17,7 @@ def article_processor(func):
     def wrapper(*args, **kwargs):
         res, text, code = func(*args, **kwargs)
         if res and text is not None and len(text) > 0:
-            text = text.replace('\u2009', ' ')
+            text = text.replace('\u2009', ' ').replace('\xa0', ' ')
         return res, text, code
     return wrapper
 
@@ -111,6 +112,14 @@ class ArticleRetriever(object):
         # support full-text url directly
         if pmid.startswith("http"):
             return self._request_full_text_from_url(pmid)
+
+        pmid_cache = os.environ.get("PMID_CACHE", "false")
+        if pmid_cache.lower() == "true":
+            data_folder = os.environ.get("DATA_FOLDER", "./data")
+            pmid_path = Path(data_folder) / f"{pmid}.html"
+            if pmid_path.exists():
+                logger.info(f"Found {pmid} paper from cache")
+                return True, pmid_path.read_text(), 200
 
         res, pmc_article, code = self._request_pmc_full_text(pmid)
         if res:

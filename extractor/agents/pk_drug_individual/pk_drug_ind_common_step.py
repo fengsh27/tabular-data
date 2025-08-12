@@ -12,6 +12,7 @@ from extractor.agents.pk_drug_individual.pk_drug_ind_common_agent import (
     PKDrugIndCommonAgentResult,
     PKDrugIndCommonAgent,
 )
+from extractor.prompts_utils import generate_previous_errors_prompt
 
 logger = logging.getLogger(__name__)
 
@@ -66,6 +67,10 @@ class PKDrugIndCommonStep(ABC):
             step_reasoning_process=step_reasoning_process,
             step_output=step_output,
         )
+
+    def _get_previous_errors_prompt(self, state: PKDrugIndWorkflowState) -> str:
+        previous_errors = state["previous_errors"] if "previous_errors" in state else "N/A"
+        return generate_previous_errors_prompt(previous_errors)
 
     def execute(self, state: PKDrugIndWorkflowState):
         self.enter_step(state)

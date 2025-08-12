@@ -21,7 +21,9 @@ class PatientInfoRefinementStep(PKDrugIndCommonAgentStep):
         title = state["title"]
         full_text = state["full_text"]
         md_table_drug = state["md_table_drug"]
-        return get_patient_info_refine_prompt(title, full_text, md_table_drug)
+        system_prompt = get_patient_info_refine_prompt(title, full_text, md_table_drug)
+        previous_errors_prompt = self._get_previous_errors_prompt(state)
+        return system_prompt + previous_errors_prompt
 
     def leave_step(
         self,

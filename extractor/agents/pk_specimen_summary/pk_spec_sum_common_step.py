@@ -12,6 +12,7 @@ from extractor.agents.pk_specimen_summary.pk_spec_sum_common_agent import (
     PKSpecSumCommonAgentResult,
     PKSpecSumCommonAgent,
 )
+from extractor.prompts_utils import generate_previous_errors_prompt
 
 logger = logging.getLogger(__name__)
 
@@ -73,6 +74,10 @@ class PKSpecSumCommonStep(ABC):
         self.leave_step(state, res, processed_res, token_usage)
 
         return state
+
+    def _get_previous_errors_prompt(self, state: PKSpecSumWorkflowState) -> str:
+        previous_errors = state["previous_errors"] if "previous_errors" in state else "N/A"
+        return generate_previous_errors_prompt(previous_errors)
 
     @abstractmethod
     def execute_directly(

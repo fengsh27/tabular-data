@@ -24,11 +24,13 @@ class DrugInfoExtractionStep(PKIndCommonAgentStep):
         caption = state["caption"]
         title = state["title"]
         title = title if title is not None else "N/A"
-        return DRUG_INFO_PROMPT.format(
+        system_prompt = DRUG_INFO_PROMPT.format(
             processed_md_table=display_md_table(md_table),
             caption=caption,
             paper_title=title,
         )
+        previous_errors_prompt = self._get_previous_errors_prompt(state)
+        return system_prompt + previous_errors_prompt
 
     def leave_step(
         self,

@@ -15,6 +15,7 @@ class PKPopuSumWorkflowState(TypedDict):
     md_table_characteristic_refined: Optional[str]
     df_combined: Optional[pd.DataFrame]
     step_callback: Optional[Callable]  # StepCallback
+    previous_errors: Optional[str]
 
 
 def pk_popu_sum_enter_step(

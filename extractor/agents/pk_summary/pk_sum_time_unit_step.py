@@ -39,11 +39,13 @@ class TimeExtractionStep(PKSumCommonAgentStep):
                     ]
                 ]
             )
-        return get_time_and_unit_prompt(
+        system_prompt = get_time_and_unit_prompt(
             md_table_aligned=md_table_aligned,
             md_table_post_processed=self.md_data_lines_after_post_process,
             caption=caption,
         )
+        previous_errors_prompt = self._get_previous_errors_prompt(state)
+        return system_prompt + previous_errors_prompt
 
     def get_schema(self):
         return TimeAndUnitResult

@@ -16,6 +16,7 @@ class PKDrugSumWorkflowState(TypedDict):
     # md_table_time: Optional[str]
     df_combined: Optional[pd.DataFrame]
     step_callback: Optional[Callable]  # StepCallback
+    previous_errors: Optional[str]
 
 
 def pk_drug_sum_enter_step(

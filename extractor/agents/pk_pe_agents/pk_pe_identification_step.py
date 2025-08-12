@@ -6,13 +6,10 @@ import logging
 
 from extractor.agents.common_agent.common_agent_2steps import CommonAgentTwoSteps
 from extractor.agents.common_agent.common_step import CommonStep,CommonState
+from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState, PaperTypeEnum
 from extractor.constants import COT_USER_INSTRUCTION
 
 logger = logging.getLogger(__name__)
-
-class PKPEIdentificationState(CommonState):
-    title: str
-    abstract: str
 
 class PKPEIdentificationStepResult(BaseModel):
     pkpe_type: Literal["PK", "PE", "Both", "Neither"] = Field(description="The type of the paper")
@@ -72,18 +69,17 @@ Respond in the following exact format (no additional text):
 
 """
 class PKPEIdentificationStep(CommonStep):
-    def __init__(self):
-        super().__init__()
-        self.step_name = "PKPEIdentificationStep"
+    def __init__(self, llm: BaseChatOpenAI):
+        super().__init__(llm)
+        self.step_name = "PK PE Identification Step"
 
-    def _execute_directly(self, state: CommonState):
-        state: PKPEIdentificationState = state
+    def _execute_directly(self, state: PKPECurationWorkflowState):
         system_prompt = PKPE_IDENTIFICATION_SYSTEM_PROMPT.format(
-            title=state["title"],
-            abstract=state["abstract"],
+            title=state["paper_title"],
+            abstract=state["paper_abstract"],
         )
         instruction_prompt = COT_USER_INSTRUCTION
-        llm = state["llm"]
+        llm = self.llm
         agent = CommonAgentTwoSteps(
             llm=llm,
         )
@@ -93,7 +89,7 @@ class PKPEIdentificationStep(CommonStep):
             schema=PKPEIdentificationStepResult,
         )
         res: PKPEIdentificationStepResult = res
-        state["final_answer"] = res.pkpe_type
+        state["paper_type"] = PaperTypeEnum(res.pkpe_type)
         self._print_step(state, step_output=reasoning_process)
 
         return state, token_usage

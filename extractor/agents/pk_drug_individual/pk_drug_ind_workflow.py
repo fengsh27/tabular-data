@@ -55,15 +55,17 @@ class PKDrugIndWorkflow:
         full_text: str,
         step_callback: Callable | None = None,
         sleep_time: float | None = None,
+        previous_errors: str | None = None,
     ):
         config = {"recursion_limit": 500}
-
+        previous_errors = previous_errors if previous_errors is not None else "N/A"
         for s in self.graph.stream(
             input={
                 "title": title,
                 "full_text": full_text,
                 "llm": self.llm,
                 "step_callback": step_callback,
+                "previous_errors": previous_errors,
             },
             config=config,
             stream_mode="values",
@@ -86,10 +88,12 @@ class PKDrugIndWorkflow:
         full_text: str,
         step_callback: Callable | None = None,
         sleep_time: float | None = None,
+        previous_errors: str | None = None,
     ):
         return self.go_full_text(
             title=title,
             full_text=full_text,
             step_callback=step_callback,
             sleep_time=sleep_time,
+            previous_errors=previous_errors,
         )

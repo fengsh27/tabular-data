@@ -2,10 +2,8 @@ from bs4 import BeautifulSoup, Tag
 from typing import Callable, Optional
 import pandas as pd
 from TabFuncFlow.utils.table_utils import html_table_to_markdown, dataframe_to_markdown
-from extractor.utils import convert_html_table_to_dataframe
+from extractor.utils import convert_html_table_to_dataframe, escape_braces_for_format
 from typing import List, Optional, Dict
-from extractor.agents.agent_utils import escape_braces_for_format
-
 
 def get_tag_text(tag: Tag) -> str:
     text = tag.text

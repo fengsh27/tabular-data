@@ -1,0 +1,12 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+Levetiracetam,Levetiracetam,Plasma,N/A,N/A,N/A,N/A,Cmax,µg/mL,Mean,19.19,SD,4.12,N/A,N/A,N/A,0.07,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,N/A,N/A,N/A,N/A,AUC0–12,h·µg/mL,Mean,167.0,SD,45.6,N/A,N/A,N/A,0.26,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,N/A,N/A,N/A,N/A,Ctrough,µg/mL,Mean,9.99,SD,3.86,N/A,N/A,N/A,0.34,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,N/A,N/A,N/A,N/A,Tmax,h,Median,1.5,N/A,N/A,Range,1.5,2.5,N/A,1.5–2.5,Hour
+Levetiracetam,Levetiracetam,Plasma,N/A,N/A,N/A,N/A,Cmax,µg/mL,Mean,35.12,SD,10.54,N/A,N/A,N/A,0.001,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,N/A,N/A,N/A,N/A,AUC0–12,h·µg/mL,Mean,316.5,SD,108.4,N/A,N/A,N/A,0.88,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,N/A,N/A,N/A,N/A,Ctrough,µg/mL,Mean,19.25,SD,8.48,N/A,N/A,N/A,0.22,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,N/A,N/A,N/A,N/A,Tmax,h,Median,2.5,N/A,N/A,Range,2.0,3.3,N/A,2.0–3.3,Hour
+Levetiracetam,Levetiracetam,Plasma,N/A,N/A,N/A,N/A,Cmax,µg/mL,Median,36.11,N/A,N/A,Range,27.58,44.64,N/A,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,N/A,N/A,N/A,N/A,AUC0–12,h·µg/mL,Median,290.9,N/A,N/A,Range,176.14,405.59,N/A,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,N/A,N/A,N/A,N/A,Ctrough,µg/mL,Median,13.03,N/A,N/A,Range,2.98,23.07,N/A,N/A,N/A

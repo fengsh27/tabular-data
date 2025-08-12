@@ -15,7 +15,7 @@ class PKPopuIndWorkflowState(TypedDict):
     md_table_characteristic_refined: Optional[str]
     df_combined: Optional[pd.DataFrame]
     step_callback: Optional[Callable]  # StepCallback
-
+    previous_errors: Optional[str]
 
 def pk_popu_ind_enter_step(
     state: PKPopuIndWorkflowState, step_name: str, step_description: Optional[str] = None

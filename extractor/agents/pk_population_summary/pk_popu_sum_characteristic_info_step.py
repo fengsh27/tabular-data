@@ -19,10 +19,12 @@ class CharacteristicInfoExtractionStep(PKPopuSumCommonAgentStep):
     def get_system_prompt(self, state):
         title = state["title"]
         full_text = state["full_text"]
-        return CHARACTERISTIC_INFO_PROMPT.format(
+        system_prompt = CHARACTERISTIC_INFO_PROMPT.format(
             title=title,
             full_text=full_text,
         )
+        previous_errors_prompt = self._get_previous_errors_prompt(state)
+        return system_prompt + previous_errors_prompt
 
     def leave_step(
         self,

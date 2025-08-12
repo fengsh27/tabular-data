@@ -24,9 +24,10 @@ class CommonStep(ABC):
     It provides methods to execute the step and handle exceptions.
     """
 
-    def __init__(self):
+    def __init__(self, llm: BaseChatOpenAI):
         super().__init__()
         self.step_name = ""
+        self.llm = llm
 
     def enter_step(self, state):
         if state["step_output_callback"] is None:
@@ -34,6 +35,8 @@ class CommonStep(ABC):
         state["step_output_callback"](
             step_name=self.step_name, 
         )
+        if "step_count" in state:
+            state["step_count"] += 1
 
     def leave_step(self, state, token_usage: Optional[dict[str, int]] = None):
         if state["step_output_callback"] is None:

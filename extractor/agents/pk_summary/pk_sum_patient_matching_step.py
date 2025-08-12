@@ -12,6 +12,7 @@ from extractor.agents.pk_summary.pk_sum_patient_matching_agent import (
     MatchedPatientResult,
     post_process_validate_matched_patients,
 )
+from extractor.agents.pk_summary.pk_sum_workflow_utils import get_common_agent
 
 
 class PatientMatchingAutomaticStep(PKSumCommonStep):
@@ -67,9 +68,11 @@ class PatientMatchingAgentStep(PKSumCommonStep):
             system_prompt = get_matching_patient_prompt(
                 md_table_aligned, md, md_table_patient, caption
             )
+            previous_errors_prompt = self._get_previous_errors_prompt(state)
+            system_prompt = system_prompt + previous_errors_prompt
             instruction_prompt = INSTRUCTION_PROMPT
-            agent = PKSumCommonAgent(llm=llm)
-            res, processed_res, token_usage = agent.go(
+            agent = get_common_agent(llm=llm) # PKSumCommonAgent(llm=llm)
+            res, processed_res, token_usage, reasoning_process = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=MatchedPatientResult,
@@ -78,7 +81,7 @@ class PatientMatchingAgentStep(PKSumCommonStep):
             )
             self._step_output(
                 state,
-                step_reasoning_process=res.reasoning_process if res is not None else "",
+                step_reasoning_process=reasoning_process,
             )
             patient_match_list: list[int] = processed_res
             df_table_patient = df_table_patient_refined.copy()

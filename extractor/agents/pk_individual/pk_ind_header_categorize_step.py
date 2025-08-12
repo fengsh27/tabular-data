@@ -16,7 +16,9 @@ class HeaderCategorizeStep(PKIndCommonAgentStep):
 
     def get_system_prompt(self, state):
         md_table_aligned = state["md_table_aligned"]
-        return get_header_categorize_prompt(md_table_aligned)
+        system_prompt = get_header_categorize_prompt(md_table_aligned)
+        previous_errors_prompt = self._get_previous_errors_prompt(state)
+        return system_prompt + previous_errors_prompt
 
     def get_schema(self):
         return HeaderCategorizeJsonSchema

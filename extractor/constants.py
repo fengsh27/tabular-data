@@ -115,6 +115,9 @@ TABLE_OUTPUT_NOTES = [
     "3. If the information that is not provided, please leave it with empty string.",
 ]
 
-COT_USER_INSTRUCTION = "Do not give the answer immediately. First, explain your reasoning process step by step, then provide the answer."
+COT_USER_INSTRUCTION = "Please provide **the final answer** and **your step-by-step reasoning process**."
 
 PROMPTS_NAME_PE = "deprecate"  # "Pharmaco-Epidemiology"
+
+MAX_STEP_COUNT = 3 * 3 # 3 agent and max 3 loops
+

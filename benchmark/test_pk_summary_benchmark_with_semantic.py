@@ -92,3 +92,19 @@ def test_sonnet_benchmark(prepared_dataset):
         result_file=result_path,
         score_mode=score_mode,
     )
+
+
+def test_metallama_benchmark(prepared_dataset):
+    result_dir = ensure_target_result_directory_existed(
+        baseline=baseline,
+        target=target,
+        benchmark_type=BenchmarkType.PK_SUMMARY,
+    )
+    result_path = os.path.join(result_dir, "result.log")
+    run_semantic_benchmark(
+        dataset=prepared_dataset,
+        benchmark_type=BenchmarkType.PK_SUMMARY,
+        model=LLModelType.METALLAMA4,
+        result_file=result_path,
+        score_mode=score_mode,
+    )

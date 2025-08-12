@@ -1,6 +1,7 @@
 from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
+from extractor.agents.common_agent.common_agent_2steps import CommonAgentTwoSteps
 from extractor.agents.pk_summary.pk_sum_common_agent import PKSumCommonAgent
 from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonStep
 from extractor.agents.pk_summary.pk_sum_param_value_agent import (
@@ -8,6 +9,7 @@ from extractor.agents.pk_summary.pk_sum_param_value_agent import (
     ParameterValueResult,
     post_process_matched_list,
 )
+from extractor.agents.pk_summary.pk_sum_workflow_utils import get_common_agent
 
 
 class ParameterValueExtractionStep(PKSumCommonStep):
@@ -29,8 +31,10 @@ class ParameterValueExtractionStep(PKSumCommonStep):
             round += 1
             self._step_output(f"Trial {round}")
             system_prompt = get_parameter_value_prompt(md_table_aligned, md, caption)
-            agent = PKSumCommonAgent(llm=llm)
-            res, processed_res, token_usage = agent.go(
+            previous_errors_prompt = self._get_previous_errors_prompt(state)
+            system_prompt = system_prompt + previous_errors_prompt
+            agent = get_common_agent(llm=llm) # PKSumCommonAgent(llm=llm)
+            res, processed_res, token_usage, reasoning_process = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=INSTRUCTION_PROMPT,
                 schema=ParameterValueResult,
@@ -39,7 +43,7 @@ class ParameterValueExtractionStep(PKSumCommonStep):
             )
             self._step_output(
                 state,
-                step_reasoning_process=res.reasoning_process if res is not None else "",
+                step_reasoning_process=reasoning_process if reasoning_process is not None else "",
             )
             value_list.append(processed_res)
             total_token_usage = increase_token_usage(token_usage)

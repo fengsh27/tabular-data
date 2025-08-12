@@ -20,7 +20,14 @@ def write_semantic_score(output_fn: str, model: str, pmid: str, score: int | Tup
 def run_semantic_benchmark(
     dataset: dict,
     benchmark_type: Union[BenchmarkType.PE, BenchmarkType.PK_SUMMARY],
-    model: Union[LLModelType.GEMINI15, LLModelType.GPT4O],
+    model: Union[
+        LLModelType.GEMINI15, 
+        LLModelType.GPT4O, 
+        LLModelType.GEMINI25FLASH,
+        LLModelType.GEMINI25FLASHLITE,
+        LLModelType.METALLAMA4,
+        LLModelType.SONNET4,
+    ],
     result_file: str,
     score_mode: Literal["combined", "separate"] | None = "combined",
 ):

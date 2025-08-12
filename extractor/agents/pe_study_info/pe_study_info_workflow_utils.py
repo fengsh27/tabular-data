@@ -15,6 +15,7 @@ class PEStudyInfoWorkflowState(TypedDict):
     # md_table_drug_refined: Optional[str]
     # md_table_time: Optional[str]
     df_combined: Optional[pd.DataFrame]
+    previous_errors: Optional[str]
     step_callback: Optional[Callable]  # StepCallback
 
 
