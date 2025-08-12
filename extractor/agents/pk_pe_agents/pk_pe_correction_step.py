@@ -53,7 +53,7 @@ You must respond using the **exact format** below:
 * Only make changes according to the **SuggestedFix** in the **Reasoning Process**.
 * Note: The **SuggestedFix** in the **Reasoning Process** only is the changes that you need to make to the curated table, **do keep the other parts of the curated table unchanged**.
   So you final answer should be a **complete and corrected** version of the curated table, including the **SuggestedFix** and the unchanged parts of the curated table.
-
+* In your final answer, the corrected table must be in raw markdown format, **do not wrap the table in a code fence** (like '```' or '```markdown `).
 ---
 
 ### **Input**
