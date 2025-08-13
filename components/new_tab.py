@@ -353,6 +353,7 @@ def run_curation(
 
     def _log(msg: str) -> None:
         logs.append(f"[{datetime.now():%Y-%m-%d %H:%M:%S}] {msg}")
+        logger.info(msg)
 
     def _step_callback(
         step_name: str | None = None,

@@ -9,12 +9,12 @@ from extractor.agents.pk_pe_agents.pk_pe_agents_utils import format_source_table
 from extractor.constants import COT_USER_INSTRUCTION
 
 PKPE_CORRECTION_SYSTEM_PROMPT = """
-You are a biomedical data verification assistant with expertise in {domain} and data accuracy validation. 
+You are a biomedical data correction assistant with expertise in {domain}. 
 You are given the **source paper title and tables**, and the **curated {domain} data table** that is incorrect, 
 and the reasoning process of why the curated table is incorrect, which includes the **explanation** and **suggested fix**.
 
 Your task is to carefully examine the **source paper title and tables**, and **reasoning process** of why the curated table is incorrect,
-and provide a corrected version of the curated table.
+and then provide a corrected version of the curated table.
 
 ---
 
@@ -31,7 +31,7 @@ You will be given:
 
 * **Paper Title**: The title of the publication.
 * **Paper Abstract**: The abstract of the publication.
-* **Source Table(s)**: Table(s) extracted directly from the publication, preserving structure and labels.
+* **Source Table(s) or full text**: Table(s) extracted directly from the publication, preserving structure and labels, or the full text of the publication.
 * **Curated Table**: The data table that has been curated from the above source for downstream use.
 * **Reasoning Process**: The reasoning process of why the curated table is incorrect, which includes the **explanation** and **suggested fix**.
 
@@ -66,7 +66,7 @@ You must respond using the **exact format** below:
 
 {paper_abstract}
 
-#### **Source Table(s)**
+#### **Source Table(s) or full text**
 
 {source_tables}
 
