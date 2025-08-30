@@ -221,8 +221,9 @@ class RowCleanupStep(PKSumCommonStep):
         """remove inclusive rows"""
 
         def remove_contained_rows(df):
-            df_cleaned = df.copy()
-
+            # df_cleaned = df.copy()
+            df_cleaned = df.reset_index(drop=True).copy()  # reset index to ensure alignment
+            
             rows_to_drop = set()
             for i in range(len(df_cleaned)):
                 for j in range(i + 1, len(df_cleaned)):

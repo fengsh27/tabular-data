@@ -7,7 +7,7 @@ from extractor.utils import (
     preprocess_csv_table_string,
     remove_comma_in_number_string,
 )
-
+from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 
 def test_preprocess_csv_table_string():
     with open("./tests/data/17158945-result.txt", "r") as fobj:
@@ -77,18 +77,19 @@ def test_extract_float_values():
     v2 = extract_float_values(str2)
     assert v2 == [1.234]
 
-
 def test_single_html_to_markdown(md_table_aligned_29943508):
     import re
 
     replaced_content: str = re.sub(r"\xa0", " ", md_table_aligned_29943508)
     assert replaced_content.find("\xa0") < 0
 
+@pytest.mark.skip()
+def test_dataframe(
+    md_corrected_table_31935538,
+):
+    df = markdown_to_dataframe(md_corrected_table_31935538)
+    assert df.shape[0] > 0
 
-def test_dataframe():
-    import pandas as pd
-
-    df = pd.DataFrame([], columns=[])
-    print(df)
-    md_df = df.to_markdown()
-    print(md_df)
+def test_dataframe_31112621(md_corrected_table_31112621):
+    df = markdown_to_dataframe(md_corrected_table_31112621)
+    assert df.shape[0] > 0

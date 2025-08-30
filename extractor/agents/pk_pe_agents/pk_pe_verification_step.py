@@ -82,7 +82,7 @@ class PKPEVerificationStepResult(BaseModel):
     correct: bool = Field(description="Whether the curated table is accurate and faithful to the source table(s).")
     explanation: str = Field(description="Brief explanation of whether the curated table is accurate. If incorrect, explain what is wrong, including specific mismatched values or structure issues.")
     suggested_fix: str = Field(description="If incorrect, provide a corrected version of the curated table or the corrected values/rows/columns.")
-
+    
 class PKPECuratedTablesVerificationStep(CommonStep):
     def __init__(
         self, 

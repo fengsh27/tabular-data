@@ -26,7 +26,6 @@ class PKPECurationWorkflowState(TypedDict):
     step_output_callback: Optional[Callable] = None
     step_count: Optional[int] = 0
 
-
 class PKPECuratedTables(TypedDict):
     correct: bool
     curated_table: Optional[str] = None

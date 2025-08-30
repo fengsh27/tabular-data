@@ -10,7 +10,7 @@ from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usa
 from extractor.agents.pk_pe_agents.pk_pe_execution_step import PKPEExecutionStep
 from extractor.agents.pk_pe_agents.pk_pe_verification_step import PKPECuratedTablesVerificationStep
 from extractor.agents.pk_summary.pk_sum_workflow import PKSumWorkflow
-from extractor.constants import MAX_STEP_COUNT
+from extractor.constants import MAX_AGENTTOOL_TASK_STEP_COUNT
 from extractor.database.pmid_db import PMIDDB
 from extractor.pmid_extractor.article_retriever import ArticleRetriever
 from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
@@ -69,7 +69,7 @@ class PKPEAgentToolTask(ABC):
                 self.print_step(step_name="Final Answer")
                 self.print_step(step_output=state["final_answer"])
                 return END
-            if "step_count" in state and state["step_count"] >= MAX_STEP_COUNT:
+            if "step_count" in state and state["step_count"] >= MAX_AGENTTOOL_TASK_STEP_COUNT:
                 self.print_step(step_name="Max Step Count Reached")
                 return END
             if not "curated_table" in state or (state["curated_table"] is None or len(state["curated_table"]) == 0):
@@ -117,7 +117,7 @@ class PKPEAgentToolTask(ABC):
                 "step_output_callback": self.print_step,
                 "step_count": 0,
             },
-            config={"max_recursion_limit": MAX_STEP_COUNT},
+            config={"max_recursion_limit": MAX_AGENTTOOL_TASK_STEP_COUNT},
             stream_mode="values",
         ):
             continue

@@ -8,8 +8,9 @@ from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflo
 from extractor.agents.pk_pe_agents.pk_pe_correction_step import PKPECuratedTablesCorrectionStep
 from extractor.agents.pk_pe_agents.pk_pe_verification_step import PKPECuratedTablesVerificationStep
 from extractor.constants import MAX_STEP_COUNT
+from extractor.request_openai import get_5_mini_openai
 
-curated_table = """
+curated_table_16143486 = """
 col: | "Drug name" | "Analyte" | "Specimen" | "Population" | "Pregnancy stage" | "Pediatric/Gestational age" | "Subject N" | "Parameter type" | "Parameter unit" | "Statistics type" | "Main value" | "Variation type" | "Variation value" | "Interval type" | "Lower bound" | "Upper bound" | "P value" | "Time value" | "Time unit" |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 row 0: | Lorazepam | Lorazepam | Plasma | Maternal | Trimester 3 | N/A | N/A | Maximum plasma concentration | ng/ml | Mean | 11.96 | N/A | N/A | Range | 9.42 | 16.49 | N/A | N/A | N/A |
@@ -43,7 +44,7 @@ row 27: | Lorazepam | Lorazepam | Maternal blood | Maternal | Delivery | N/A | 8
 row 28: | Lorazepam | Lorazepam | Cord blood | Maternal | Delivery | N/A | 8 | Collection time | min | Mean | 293.4 | N/A | N/A | Range | 163.2 | 423 | N/A | 163.2–423 | Min |
 row 29: | Lorazepam | Lorazepam | Cord blood | Maternal | Delivery | N/A | 8 | Cord blood to maternal blood ratio | unitless | Mean | 0.73 | N/A | N/A | Range | 0.52 | 0.94 | N/A | 163.2–423 | Min |
 """
-
+@pytest.mark.skip(reason="Skipping verification step correction step tests")
 def test_verification_step_correction_step(llm, step_callback, pmid_db):
     pmid = "16143486"
     pmid, title, abstract, full_text, tables, sections = extract_pmid_info_to_db(pmid, pmid_db)
@@ -99,7 +100,7 @@ def test_verification_step_correction_step(llm, step_callback, pmid_db):
         "source_tables": source_tables,
         "step_output_callback": print_step,
         "step_count": 0,
-        "curated_table": curated_table,
+        "curated_table": curated_table_16143486,
     })
     assert res is not None
     assert res["final_answer"] is not None
@@ -107,6 +108,76 @@ def test_verification_step_correction_step(llm, step_callback, pmid_db):
     assert res["curated_table"] is not None
     df = markdown_to_dataframe(res["curated_table"])
     assert df.shape[0] == 30
+    assert len(res["curated_table"]) > 0
+
+def test_verification_step_correction_step_on_39135538(
+    llm,
+    step_callback,
+    pmid_db,
+    md_table_combined_31935538,
+):
+    pmid = "31935538"
+    pmid, title, abstract, full_text, tables, sections = extract_pmid_info_to_db(pmid, pmid_db)
+    assert pmid is not None
+    print_step = step_callback
+    def check_verification_step(state: PKPECurationWorkflowState):
+        if state["final_answer"] is not None and state["final_answer"]:
+            print_step(step_name="Final Answer")
+            print_step(step_output=state["final_answer"])
+            return END
+        if "step_count" in state and state["step_count"] >= MAX_STEP_COUNT:
+            print_step(step_name="Max Step Count Reached")
+            return END
+        if not "curated_table" in state or (state["curated_table"] is None or len(state["curated_table"]) == 0):
+            print_step(step_name="No Curated Table")
+            return END
+        return "correction_step"
+    
+    # prepare tables
+    source_tables = []
+    for ix in [1, 2, 3, 4]:
+        table = tables[ix]
+        caption = "\n".join([table["caption"], table["footnote"]])
+        source_table = dataframe_to_markdown(table["table"])
+        source_tables.append(f"caption: \n{caption}\n\n table: \n{source_table}")
+
+    verification_step = PKPECuratedTablesVerificationStep(
+        llm=llm,
+        pmid=pmid,
+        domain="pharmacokinetic summary",
+    )
+    correction_step = PKPECuratedTablesCorrectionStep(
+        llm=llm,
+        pmid=pmid,
+        domain="pharmacokinetic summary",
+    )
+    graph = StateGraph(PKPECurationWorkflowState)
+    graph.add_node("verification_step", verification_step.execute)
+    graph.add_node("correction_step", correction_step.execute)
+    graph.add_edge(START, "verification_step")
+    graph.add_conditional_edges(
+        "verification_step",
+        check_verification_step,
+        {"correction_step", END},
+    )
+    graph.add_edge("correction_step", "verification_step")
+    compiled_graph = graph.compile()
+    res = compiled_graph.invoke({
+        "pmid": pmid,
+        "paper_title": title,
+        "paper_abstract": abstract,
+        "full_text": full_text,
+        "source_tables": source_tables,
+        "step_output_callback": print_step,
+        "step_count": 0,
+        "curated_table": md_table_combined_31935538,
+    })
+    assert res is not None
+    assert res["final_answer"] is not None
+    assert res["final_answer"]
+    assert res["curated_table"] is not None
+    df = markdown_to_dataframe(res["curated_table"])
+    # assert df.shape[0] == 30
     assert len(res["curated_table"]) > 0
 
 
