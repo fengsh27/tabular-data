@@ -1,3 +1,4 @@
+import logging
 
 from langchain_openai.chat_models.base import BaseChatOpenAI
 
@@ -10,6 +11,8 @@ from extractor.database.pmid_db import PMIDDB
 from .pk_pe_agent_tools import (
     AgentTool,
 )
+
+logger = logging.getLogger(__name__)
 
 class PKPEExecutionStep(CommonStep):
     def __init__(
@@ -28,7 +31,9 @@ class PKPEExecutionStep(CommonStep):
         df, source_tables = self.tool.run(previous_errors)
         if df is None:
             return state, {**DEFAULT_TOKEN_USAGE}
-        state["curated_table"] = dataframe_to_markdown(df)
+        md_curated_table = dataframe_to_markdown(df)
+        logger.info(f"Curated table: \n{md_curated_table}")
+        state["curated_table"] = md_curated_table
         state["source_tables"] = source_tables
         return state, {**DEFAULT_TOKEN_USAGE}
 

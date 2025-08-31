@@ -113,6 +113,13 @@ def markdown_to_dataframe(md_table):
     headers = lines[0].split("|")[1:-1]  # Remove leading and trailing empty parts
     data_rows = [line.split("|")[1:-1] for line in lines[2:]]
 
+    for i in range(len(data_rows)):
+        row = data_rows[i]
+        cell_num = len(row)
+        if cell_num != len(headers):
+            logger.warning(f"The number of cells in row {i} is {cell_num} and the number of headers is {len(headers)}. \n\nrow: {row}")
+            # return pd.DataFrame()
+
     # Trim whitespace from headers and data cells
     headers = [h.strip() for h in headers]
     data_rows = [[cell.strip() for cell in row] for row in data_rows]

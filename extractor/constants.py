@@ -115,9 +115,23 @@ TABLE_OUTPUT_NOTES = [
     "3. If the information that is not provided, please leave it with empty string.",
 ]
 
-COT_USER_INSTRUCTION = "Please provide **the final answer** and **your step-by-step reasoning process**."
+COT_USER_INSTRUCTION = "Before jump to the final answer, provide your **detailed explanation** in your answer. \nNow, please provide **the final answer** and **your detailed explanation**."
 
 PROMPTS_NAME_PE = "deprecate"  # "Pharmaco-Epidemiology"
 
 MAX_STEP_COUNT = 3 * 3 # 3 agent and max 3 loops
+
+MAX_AGENTTOOL_TASK_STEP_COUNT = 2 * 3 - 1 # 2 agent and max 3 loops
+
+class PipelineTypeEnum(Enum):
+    PK_SUMMARY = "pk_summary"
+    PK_INDIVIDUAL = "pk_individual"
+    PK_SPEC_SUMMARY = "pk_specimen_summary"
+    PK_DRUG_SUMMARY = "pk_drug_summary"
+    PK_POPU_SUMMARY = "pk_population_summary"
+    PK_SPEC_INDIVIDUAL = "pk_specimen_individual"
+    PK_DRUG_INDIVIDUAL = "pk_drug_individual"
+    PK_POPU_INDIVIDUAL = "pk_population_individual"
+    PE_STUDY_INFO = "pe_study_info"
+    PE_STUDY_OUTCOME = "pe_study_outcome"
 

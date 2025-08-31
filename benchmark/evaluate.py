@@ -77,7 +77,7 @@ class TextComparer:
     def __init__(self) -> None:
         from sentence_transformers import SentenceTransformer
 
-        self.model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+        self.model = SentenceTransformer("FremyCompany/BioLORD-2023") # SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
 
     def compare(self, a, b) -> float:
         if is_abbreviation_or_contraction(a, b):

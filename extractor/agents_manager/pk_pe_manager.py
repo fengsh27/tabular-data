@@ -16,8 +16,10 @@ from extractor.agents_manager.pk_fulltext_tool_task import (
     PKSpecimenSummaryTask,
 )
 from extractor.agents_manager.pk_individual_task import PKIndividualTask
+from extractor.agents_manager.pk_pe_agenttool_task import PKPEAgentToolTask
 from extractor.agents_manager.pk_populattion_task import PKPopulationIndividualTask, PKPopulationSummaryTask
 from extractor.agents_manager.pk_summary_task import PKSummaryTask
+from extractor.constants import PipelineTypeEnum
 from extractor.database.pmid_db import PMIDDB
 from extractor.pmid_extractor.article_retriever import ArticleRetriever
 from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
@@ -90,6 +92,56 @@ class PKPEManager:
             return
         curation_callback(pmid, job_name, result)
 
+    def _get_pipeline(self, pipeline_type: PipelineTypeEnum):
+        if pipeline_type == PipelineTypeEnum.PK_SUMMARY:
+            return PKSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db)
+        elif pipeline_type == PipelineTypeEnum.PK_INDIVIDUAL:
+            return PKIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db)
+        elif pipeline_type == PipelineTypeEnum.PK_SPEC_SUMMARY:
+            return PKSpecimenSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db)
+        elif pipeline_type == PipelineTypeEnum.PK_DRUG_SUMMARY:
+            return PKDrugSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db)
+        elif pipeline_type == PipelineTypeEnum.PK_POPU_SUMMARY:
+            return PKPopulationSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db)
+        elif pipeline_type == PipelineTypeEnum.PK_SPEC_INDIVIDUAL:
+            return PKSpecimenIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db)
+        elif pipeline_type == PipelineTypeEnum.PK_DRUG_INDIVIDUAL:
+            return PKDrugIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db)
+        elif pipeline_type == PipelineTypeEnum.PK_POPU_INDIVIDUAL:
+            return PKPopulationIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db)
+        elif pipeline_type == PipelineTypeEnum.PE_STUDY_INFO:
+            return PEStudyInfoTask(self.llm, self.pmid_db, self.print_step)
+        elif pipeline_type == PipelineTypeEnum.PE_STUDY_OUTCOME:
+            return PEStudyOutcomeTask(self.llm, self.pmid_db, self.print_step)
+        else:
+            raise ValueError(f"Invalid pipeline type: {pipeline_type}")
+
+    def _run_pipelines(
+        self, 
+        pmid: str, 
+        pipelines: dict[PipelineTypeEnum, PKPEAgentToolTask],
+        curation_start_callback: Optional[Callable[[str, str], None]] = None, 
+        curation_end_callback: Optional[Callable[[str, str, PKPECuratedTables], None]] = None
+    ):
+        curated_tables = {}
+        for pipeline_type, pipeline in pipelines.items():
+            try:
+                self._curating_start_job(pmid, pipeline_type, curation_start_callback)
+                correct, curated_table, explanation, suggested_fix = pipeline.run(pmid)
+                result = PKPECuratedTables(
+                    correct=correct,
+                    curated_table=curated_table,
+                    explanation=explanation,
+                    suggested_fix=suggested_fix,
+                )
+                self._curating_end_job(pmid, pipeline_type, result, curation_end_callback)   
+            except Exception as e:
+                logger.error(f"Error running pmid-{pmid} {pipeline_type} workflow: \n{e}")
+                continue
+            curated_tables[pipeline_type] = result
+        return curated_tables
+
+
     def _run_pk_workflows(
         self, 
         pmid: str, 
@@ -97,37 +149,16 @@ class PKPEManager:
         curation_end_callback: Optional[Callable[[str, str, PKPECuratedTables], None]] = None
     ):
         mgrs = {
-            "pk_summary": PKSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            "pk_individual": PKIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            "pk_specimen_summary": PKSpecimenSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            "pk_drug_summary": PKDrugSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            "pk_specimen_individual": PKSpecimenIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            "pk_drug_individual": PKDrugIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            "pk_population_summary": PKPopulationSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            "pk_population_individual": PKPopulationIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_SUMMARY: PKSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_INDIVIDUAL: PKIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_SPEC_SUMMARY: PKSpecimenSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_DRUG_SUMMARY: PKDrugSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_SPEC_INDIVIDUAL: PKSpecimenIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_DRUG_INDIVIDUAL: PKDrugIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_POPU_SUMMARY: PKPopulationSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_POPU_INDIVIDUAL: PKPopulationIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
         }
-        curated_tables = {}
-        for mgr_name, mgr in mgrs.items():
-            try:
-                self._curating_start_job(pmid, mgr_name, curation_start_callback)
-                correct, curated_table, explanation, suggested_fix = mgr.run(pmid)
-                result = PKPECuratedTables(
-                    correct=correct,
-                    curated_table=curated_table,
-                    explanation=explanation,
-                    suggested_fix=suggested_fix,
-                )
-                self._curating_end_job(pmid, mgr_name, result, curation_end_callback)
-            except Exception as e:
-                logger.error(f"Error running pmid-{pmid} {mgr_name} workflow: \n{e}")
-                continue
-            curated_tables[mgr_name] = PKPECuratedTables(
-                correct=correct,
-                curated_table=curated_table,
-                explanation=explanation,
-                suggested_fix=suggested_fix,
-            )
-        return curated_tables
+        return self._run_pipelines(pmid, mgrs, curation_start_callback, curation_end_callback)
 
     def _run_pe_workflows(
         self, 
@@ -136,34 +167,33 @@ class PKPEManager:
         curation_end_callback: Optional[Callable[[str, str, PKPECuratedTables], None]] = None
     ):
         mgrs = {
-            "pe_study_info": PEStudyInfoTask(self.llm, self.pmid_db, self.print_step),
-            "pe_study_output": PEStudyOutcomeTask(self.llm, self.pmid_db, self.print_step),
+            PipelineTypeEnum.PE_STUDY_INFO: PEStudyInfoTask(self.llm, self.pmid_db, self.print_step),
+            PipelineTypeEnum.PE_STUDY_OUTCOME: PEStudyOutcomeTask(self.llm, self.pmid_db, self.print_step),
         }
-        curated_tables = {}
-        for mgr_name, mgr in mgrs.items():
-            try:
-                self._curating_start_job(pmid, mgr_name, curation_start_callback)
-                correct, curated_table, explanation, suggested_fix = mgr.run(pmid)
-                result = PKPECuratedTables(
-                    correct=correct,
-                    curated_table=curated_table,
-                    explanation=explanation,
-                    suggested_fix=suggested_fix,
-                )
-                self._curating_end_job(pmid, mgr_name, result, curation_end_callback)   
-            except Exception as e:
-                logger.error(f"Error running pmid-{pmid} {mgr_name} workflow: \n{e}")
-                continue
-            curated_tables[mgr_name] = result
-        return curated_tables
+        return self._run_pipelines(pmid, mgrs, curation_start_callback, curation_end_callback)
 
     def run(
         self, 
         pmid: str, 
         curation_start_callback: Optional[Callable[[str, str], None]] = None, 
-        curation_end_callback: Optional[Callable[[str, str, PKPECuratedTables], None]] = None
+        curation_end_callback: Optional[Callable[[str, str, PKPECuratedTables], None]] = None,
+        pipeline_types: Optional[list[PipelineTypeEnum]] = None
     ) -> dict[str, PKPECuratedTables]:
         self._extract_pmid_info(pmid)
+
+        
+        if pipeline_types is not None:
+            pipelines = {}
+            for pipeline_type in pipeline_types:
+                pipeline = self._get_pipeline(pipeline_type)
+                pipelines[pipeline_type] = pipeline
+            
+            return self._run_pipelines(
+                pmid, 
+                pipelines, 
+                curation_start_callback, 
+                curation_end_callback
+            ) 
 
         ## 1. Identification Step
         state = self._identification_step(pmid)
