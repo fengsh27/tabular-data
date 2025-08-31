@@ -16,6 +16,7 @@ from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usa
 from extractor.database.pmid_db import PMIDDB
 from extractor.request_sonnet import get_sonnet
 from extractor.request_metallama import get_meta_llama
+from extractor.request_openai import get_5_openai
 
 load_dotenv()
 
@@ -64,7 +65,7 @@ def get_gemini():
 
 @pytest.fixture(scope="module")
 def llm():
-    return get_azure_openai()  # get_openai() # get_deepseek() # get_sonnet() # get_meta_llama() # get_gemini() # 
+    return get_5_openai() # get_azure_openai()  # get_openai() # get_deepseek() # get_sonnet() # get_meta_llama() # get_gemini() # 
 
 
 ghtml_content = """

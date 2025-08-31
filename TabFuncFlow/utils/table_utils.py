@@ -117,7 +117,7 @@ def markdown_to_dataframe(md_table):
         row = data_rows[i]
         cell_num = len(row)
         if cell_num != len(headers):
-            logger.warning(f"The number of cells in row {row} is not equal to the number of headers.")
+            logger.warning(f"The number of cells in row {i} is {cell_num} and the number of headers is {len(headers)}. \n\nrow: {row}")
             # return pd.DataFrame()
 
     # Trim whitespace from headers and data cells

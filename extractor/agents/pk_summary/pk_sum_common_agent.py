@@ -93,7 +93,7 @@ class PKSumCommonAgent(CommonAgent):
                 ("human", instruction_prompt),
             ])
             updated_prompt = self._process_retryexception_message(prompt)
-            agent = prompt | self.llm.with_structured_output(schema)
+            agent = updated_prompt | self.llm.with_structured_output(schema)
             callback_handler = OpenAICallbackHandler()
             res = agent.invoke(
                 input={},

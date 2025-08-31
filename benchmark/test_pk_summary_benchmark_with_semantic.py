@@ -47,7 +47,7 @@ def prepared_dataset():
     return dataset
 
 
-def test_gpt4o_benchmark(prepared_dataset):
+def test_gpt_benchmark(prepared_dataset):
     result_dir = ensure_target_result_directory_existed(
         baseline=baseline,
         target=target,
@@ -58,6 +58,13 @@ def test_gpt4o_benchmark(prepared_dataset):
         dataset=prepared_dataset,
         benchmark_type=BenchmarkType.PK_SUMMARY,
         model=LLModelType.GPT4O,
+        result_file=result_path,
+        score_mode=score_mode,
+    )
+    run_semantic_benchmark(
+        dataset=prepared_dataset,
+        benchmark_type=BenchmarkType.PK_SUMMARY,
+        model=LLModelType.GPT5,
         result_file=result_path,
         score_mode=score_mode,
     )

@@ -33,6 +33,16 @@ def get_5_mini_openai():
         max_completion_tokens=MAX_OUTPUT_TOKENS,
     )
 
+def get_5_openai():
+    MAX_OUTPUT_TOKENS = 16384*5
+    return AzureChatOpenAI(
+        api_key=os.environ.get("OPENAI_API_KEY", None),
+        azure_endpoint=os.environ.get("AZURE_OPENAI_ENDPOINT", None),
+        api_version=os.environ.get("OPENAI_5_API_VERSION", None),
+        azure_deployment=os.environ.get("OPENAI_5_DEPLOYMENT_NAME", None),
+        model=os.environ.get("OPENAI_5_MODEL", None),
+        max_completion_tokens=MAX_OUTPUT_TOKENS,
+    )
 
 def get_client_and_model():
     """
