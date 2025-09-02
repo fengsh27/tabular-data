@@ -67,7 +67,7 @@ PROMPTS_NAME_PK_POPU_IND = "PK Population Individual"
 PROMPTS_NAME_PE_STUDY_INFO = "PE/CT Study Information"
 PROMPTS_NAME_PE_STUDY_OUT = "PE/CT Study Outcome"
 
-LLM_CHATGPT_4O = "ChatGPT-4o"
+LLM_CHATGPT = "ChatGPT-5"
 LLM_GEMINI_PRO = "Gemini 2.0 pro"
 LLM_DEEPSEEK_CHAT = "DeepSeek-v3"
 

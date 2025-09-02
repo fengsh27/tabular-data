@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from components.main_tab import main_tab
-from components.new_tab import main_tab
 from extractor.log_utils import initialize_logger
 
 from version import __version__
