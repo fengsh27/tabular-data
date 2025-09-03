@@ -141,7 +141,7 @@ class HtmlTableParser(object):
         return None, None, None
         
 
-    def _extract_epub_tables(self, html: str):
+    def _extract_epub_tables(self, html: str) -> list[dict]:
         soup = BeautifulSoup(html, "html.parser")
         scripts = soup.find_all("script")
         script_tag = None
@@ -151,7 +151,7 @@ class HtmlTableParser(object):
                 break
         
         if script_tag is None:
-            return None
+            return []
         
         script_content = script_tag.string
         
@@ -165,10 +165,10 @@ class HtmlTableParser(object):
             table_data = json.loads(js_object_str)
         except json.JSONDecodeError as e:
             raise ValueError(f"Could not parse JavaScript object as JSON: {e}")
-            return None
+            return []
 
         if not "tables" in table_data:
-            return None
+            return []
 
         tables = table_data["tables"]
         table_list = []
