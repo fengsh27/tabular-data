@@ -1,3 +1,5 @@
+import json
+import re
 from bs4 import BeautifulSoup, Tag
 from typing import Callable, Optional
 import pandas as pd
@@ -119,7 +121,77 @@ class HtmlTableParser(object):
     def _find_caption_and_footnote(self, table_tag: Tag):
         return self._find_caption_and_footnote_recursively(table_tag.parent, 1)
 
-    def extract_tables(self, html: str):
+    def _extract_table_from_epub_content(self, content: str) -> tuple[str|None, str|None, str|None]:
+        soup = BeautifulSoup(content, "html.parser")
+        caption_tag = soup.select("table caption")
+        if len(caption_tag) > 0:
+            caption_text = get_tag_text(caption_tag[0])
+        else:
+            caption_text = ""
+        
+        foot_tags = soup.select('div[class*="foot"]')
+        if len(foot_tags) > 0:
+            footnote_text = get_tag_text(foot_tags[0])
+        else:
+            footnote_text = ""
+         
+        table_tags = soup.select("table")
+        if len(table_tags) > 0:
+            return caption_text, footnote_text, str(table_tags[0])
+        return None, None, None
+        
+
+    def _extract_epub_tables(self, html: str) -> list[dict]:
+        soup = BeautifulSoup(html, "html.parser")
+        scripts = soup.find_all("script")
+        script_tag = None
+        for script in scripts:
+            if script.string and "tandf.tfviewerdata" in script.string:
+                script_tag = script
+                break
+        
+        if script_tag is None:
+            return []
+        
+        script_content = script_tag.string
+        
+        # Step 2: Extract the JavaScript object using regex
+        js_pattern = r'tandf\.tfviewerdata\s*=\s*({.*?});'
+        match = re.search(js_pattern, script_content, re.DOTALL)
+        js_object_str = match.group(1)
+    
+        # Step 2: Parse the JavaScript object as JSON
+        try:
+            table_data = json.loads(js_object_str)
+        except json.JSONDecodeError as e:
+            raise ValueError(f"Could not parse JavaScript object as JSON: {e}")
+            return []
+
+        if not "tables" in table_data:
+            return []
+
+        tables = table_data["tables"]
+        table_list = []
+        for table in tables:
+            if not "content" in table:
+                continue
+            content = table["content"]
+            if content is None or len(content) == 0:
+                continue
+            caption, footnote, table = self._extract_table_from_epub_content(content)
+            if table is None:
+                continue
+            table_list.append({
+                "caption": caption,
+                "footnote": footnote,
+                "table": convert_html_table_to_dataframe(table) if table is not None else None,
+                "raw_tag": table,
+            })
+
+        return table_list
+        
+
+    def _extract_common_tables(self, html: str):
         soup = BeautifulSoup(html, "html.parser")
         tags = soup.select("table")
         tables = []
@@ -140,6 +212,12 @@ class HtmlTableParser(object):
             )
         return tables
     
+    def extract_tables(self, html: str):
+        table_list = self._extract_common_tables(html)
+        if table_list is None or len(table_list) == 0:
+            table_list = self._extract_epub_tables(html)
+        return table_list
+
     def _traverse_up(self, cur: Tag | None, level: int, max_level: int, check_cb: Callable):
         if cur is None:
             return False
