@@ -1,3 +1,4 @@
+import asyncio
 from datetime import datetime
 import logging
 import os
@@ -518,7 +519,7 @@ def run_curation(
     return "\n".join(logs), result_df
 
 
-def main_tab():
+async def main_tab():
     ss = st.session_state
     ss.setdefault("pmid_input", "")
     ss.setdefault("oneclick_pmid_input", "")
@@ -535,16 +536,18 @@ def main_tab():
         st.subheader("Curation Panel")
 
         # ---------- sidebar helper functions ------------------------------
-        def curation_start_callback(pmid: str, job_name: str | None = None):
+        async def curation_start_callback_async(pmid: str, job_name: str | None = None):
+            await asyncio.sleep(1)
             if job_name is not None:
                 ss.oneclick_curation_info = f"Curating {pmid} {job_name} …"
             else:
                 ss.oneclick_curation_info = None
 
-        def curation_end_callback(pmid: str, job_name: str, result: PKPECuratedTables):
+        async def curation_end_callback_async(pmid: str, job_name: str, result: PKPECuratedTables):
             ss.oneclick_curation_info = f"End curating {pmid} {job_name} …"
             results = [*ss.oneclick_curation_results, (pmid, job_name, result)]
             ss.oneclick_curation_results = results
+            await asyncio.sleep(1)
 
         # ---------- One Click Curation ------------------------------------
         with st.expander("One Click Curation", expanded=False):
@@ -639,20 +642,20 @@ def main_tab():
                             
                             # Call PKPEManager.run() with or without pipeline_types based on mode
                             if ss.curation_mode == "customize":
-                                results = pkpe_manager.run(
+                                results = await pkpe_manager.runAsync(
                                     pmid=pmid, 
-                                    curation_start_callback=curation_start_callback, 
-                                    curation_end_callback=curation_end_callback,
+                                    curation_start_callback=curation_start_callback_async, 
+                                    curation_end_callback=curation_end_callback_async,
                                     pipeline_types=ss.selected_pipeline_types
                                 )
                             else:
-                                results = pkpe_manager.run(
+                                results = await pkpe_manager.runAsync(
                                     pmid=pmid, 
-                                    curation_start_callback=curation_start_callback, 
-                                    curation_end_callback=curation_end_callback
+                                    curation_start_callback=curation_start_callback_async, 
+                                    curation_end_callback=curation_end_callback_async
                                 )
                             
-                            curation_start_callback(None)
+                            await curation_start_callback_async(None)
 
         # ---------- Access Article ----------------------------------------
         with st.expander("Access Article", expanded=False):
@@ -1087,4 +1090,4 @@ def main_tab():
 
 
 if __name__ == "__main__":
-    main_tab()
+    asyncio.run(main_tab())
