@@ -13,7 +13,7 @@ from TabFuncFlow.utils.table_utils import (
     single_html_table_to_markdown,
 )
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
-from extractor.database.pmid_db import PMIDDB
+from databases.pmid_db import PMIDDB
 from extractor.request_sonnet import get_sonnet
 from extractor.request_metallama import get_meta_llama
 from extractor.request_openai import get_5_openai

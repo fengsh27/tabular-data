@@ -4,7 +4,7 @@ from pathlib import Path
 
 from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 from extractor.constants import PipelineTypeEnum
-from extractor.database.pmid_db import PMIDDB
+from databases.pmid_db import PMIDDB
 from extractor.agents_manager.pk_pe_manager import PKPEManager
 
 @pytest.mark.skip()

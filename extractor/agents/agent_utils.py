@@ -6,7 +6,7 @@ from langchain_core.prompts import (
     ChatPromptTemplate,
 )
 
-from extractor.database.pmid_db import PMIDDB
+from databases.pmid_db import PMIDDB
 from extractor.pmid_extractor.article_retriever import ArticleRetriever
 from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
 from extractor.utils import convert_html_to_text_no_table, remove_references

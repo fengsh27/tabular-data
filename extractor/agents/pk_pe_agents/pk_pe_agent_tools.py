@@ -10,7 +10,7 @@ from extractor.agents.pk_individual.pk_ind_workflow import PKIndWorkflow
 from extractor.agents.pk_population_summary.pk_popu_sum_workflow import PKPopuSumWorkflow
 from extractor.agents.pk_summary.pk_sum_workflow import PKSumWorkflow, PKSumWorkflowState
 from extractor.agents.pk_population_individual.pk_popu_ind_workflow import PKPopuIndWorkflow
-from extractor.database.pmid_db import PMIDDB
+from databases.pmid_db import PMIDDB
 from extractor.pmid_extractor.table_utils import select_pe_tables, select_pk_demographic_tables, select_pk_summary_tables
 from extractor.utils import convert_html_to_text_no_table, remove_references
 

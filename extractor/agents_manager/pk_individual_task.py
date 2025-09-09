@@ -3,7 +3,7 @@ from langchain_openai.chat_models.base import BaseChatOpenAI
 
 import logging
 
-from extractor.database.pmid_db import PMIDDB
+from databases.pmid_db import PMIDDB
 
 from extractor.agents.pk_pe_agents.pk_pe_agents_types import PaperTypeEnum
 from extractor.agents.pk_pe_agents.pk_pe_agent_tools import (

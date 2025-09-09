@@ -8,8 +8,9 @@ import streamlit as st
 import re
 import ast
 
+from databases.db_utils import get_pmid_db
 from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECuratedTables
-from extractor.database.pmid_db import PMIDDB
+from databases.pmid_db import PMIDDB
 from extractor.pmid_extractor.article_retriever import ArticleRetriever
 from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
 from extractor.utils import (
@@ -320,17 +321,6 @@ def convert_log_to_markdown(log_text: str) -> None:
                 except Exception:
                     st.markdown("Failed to parse table, falling back to plain text:")
                     st.markdown(f"```\n{table_text}\n```")
-
-def get_pmid_db():
-    db_path = os.environ.get("DATA_FOLDER", "./data")
-    db_path = Path(db_path, "databases")
-    try:
-        os.makedirs(db_path, exist_ok=True)
-    except Exception as e:
-        logger.error(f"Failed to create db path: {e}")
-        raise e
-    db_path = db_path / "pmid_info.db"
-    return PMIDDB(db_path)
 
 # ─────────────────────────── curation pipeline ────────────────────────────
 

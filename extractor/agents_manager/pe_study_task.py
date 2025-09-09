@@ -4,7 +4,7 @@ from langchain_openai.chat_models.base import BaseChatOpenAI
 import logging
 
 from extractor.agents.pe_study_info.pe_study_info_workflow import PEStudyInfoWorkflow
-from extractor.database.pmid_db import PMIDDB
+from databases.pmid_db import PMIDDB
 
 from extractor.agents.pk_pe_agents.pk_pe_agents_types import PaperTypeEnum
 from extractor.agents.pk_pe_agents.pk_pe_agent_tools import (
