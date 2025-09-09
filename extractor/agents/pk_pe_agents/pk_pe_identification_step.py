@@ -4,6 +4,7 @@ from langchain_openai.chat_models.base import BaseChatOpenAI
 from pydantic import BaseModel, Field
 import logging
 
+from extractor.agents.common_agent.common_agent import CommonAgent
 from extractor.agents.common_agent.common_agent_2steps import CommonAgentTwoSteps
 from extractor.agents.common_agent.common_step import CommonStep,CommonState
 from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState, PaperTypeEnum
@@ -12,6 +13,7 @@ from extractor.constants import COT_USER_INSTRUCTION
 logger = logging.getLogger(__name__)
 
 class PKPEIdentificationStepResult(BaseModel):
+    reasoning_process: str = Field(description="A detailed explanation of the thought process or reasoning steps taken to reach a conclusion.")
     pkpe_type: Literal["PK", "PE", "Both", "Neither"] = Field(description="The type of the paper")
 
 PKPE_IDENTIFICATION_SYSTEM_PROMPT = """
@@ -80,7 +82,7 @@ class PKPEIdentificationStep(CommonStep):
         )
         instruction_prompt = COT_USER_INSTRUCTION
         llm = self.llm
-        agent = CommonAgentTwoSteps(
+        agent = CommonAgent(
             llm=llm,
         )
         res, _, token_usage, reasoning_process = agent.go(
@@ -89,6 +91,8 @@ class PKPEIdentificationStep(CommonStep):
             schema=PKPEIdentificationStepResult,
         )
         res: PKPEIdentificationStepResult = res
+        if res.reasoning_process is None:
+            reasoning_process = res.reasoning_process if hasattr(res, "reasoning_process") else "N / A"
         state["paper_type"] = PaperTypeEnum(res.pkpe_type)
         self._print_step(state, step_output=reasoning_process)
 

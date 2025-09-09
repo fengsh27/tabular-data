@@ -4,6 +4,7 @@ from langchain_openai.chat_models.base import BaseChatOpenAI
 import pandas as pd
 
 from extractor.agents.common_agent.common_agent_2steps import CommonAgentTwoSteps
+from extractor.agents.common_agent.common_agent import CommonAgent
 
 
 class PKSumWorkflowState(TypedDict):
@@ -53,4 +54,5 @@ def pk_sum_leave_step(
     )
 
 def get_common_agent(llm: BaseChatOpenAI):
-    return CommonAgentTwoSteps(llm=llm)
+    # return CommonAgentTwoSteps(llm=llm)
+    return CommonAgent(llm=llm)
