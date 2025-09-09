@@ -105,6 +105,10 @@ async def curation_work(
             logger.info(step_output)
         if step_reasoning_process:
             logger.info(f"\n\n{step_reasoning_process}\n\n")
+    def curation_start_callback(pmid: str, job_name: str | None = None):
+        pass
+    def curation_end_callback(pmid: str, job_name: str, result: PKPECuratedTables):
+        pass
     job_db = get_job_db()
     job = job_db.get_job_by_id(job_id)
     if job is None:
