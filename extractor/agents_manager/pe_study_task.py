@@ -18,17 +18,18 @@ logger = logging.getLogger(__name__)
 class PEStudyOutcomeTask(PKPEAgentToolTask):
     def __init__(
         self,
-        llm: BaseChatOpenAI,
+        pipeline_llm: BaseChatOpenAI,
+        agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
     ):
-        super().__init__(llm, pmid_db, output_callback)
+        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback)
         self.task_name = "PE Study Outcome Task"
 
     def _create_tool(self, pmid: str):
         return PEStudyOutcomeCurationTool(
             pmid=pmid,
-            llm=self.llm,
+            llm=self.pipeline_llm,
             output_callback=self.print_step,
             pmid_db=self.pmid_db,
         )
@@ -42,11 +43,12 @@ class PEStudyOutcomeTask(PKPEAgentToolTask):
 class PEStudyInfoTask(PKPEAgentToolTask):
     def __init__(
         self,
-        llm: BaseChatOpenAI,
+        pipeline_llm: BaseChatOpenAI,
+        agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
     ):
-        super().__init__(llm, pmid_db, output_callback)
+        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback)
         self.task_name = "PE Study Info Task"
         
     def _create_tool(self, pmid: str):
@@ -55,7 +57,7 @@ class PEStudyInfoTask(PKPEAgentToolTask):
             cls=PEStudyInfoWorkflow,
             tool_name="PE Study Info Curation Tool",
             tool_description="This tool is used to extract the study information from the source paper.",
-            llm=self.llm,
+            llm=self.pipeline_llm,
             output_callback=self.print_step,
             pmid_db=self.pmid_db,
         )
