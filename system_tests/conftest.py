@@ -2282,5 +2282,5 @@ def step_callback():
 
 @pytest.fixture(scope="module")
 def pmid_db():
-    pmid_db = PMIDDB(Path(__file__).parent / "data" / "pmid_db.db")
+    pmid_db = PMIDDB(Path(__file__).parent / "data" / "pmid_info.db")
     return pmid_db
