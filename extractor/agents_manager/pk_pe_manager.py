@@ -6,6 +6,7 @@ import logging
 
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, extract_pmid_info_to_db, increase_token_usage
 
+from extractor.agents.pk_pe_agents.pk_pe_design_step import PKPEDesignStep
 from extractor.agents_manager.pe_study_task import (
     PEStudyInfoTask,
     PEStudyOutcomeTask,
@@ -68,7 +69,7 @@ class PKPEManager:
         pmid, _, _, _, _, _ = extract_pmid_info_to_db(pmid, pmid_db)
         return pmid is not None
 
-    def _identification_step(self, pmid: str):
+    def _identification_step(self, pmid: str) -> PKPECurationWorkflowState:
         pmid_db = self.pmid_db
         pmid_info = pmid_db.select_pmid_info(pmid)
         state = PKPECurationWorkflowState(
@@ -81,6 +82,10 @@ class PKPEManager:
         
         identification_step = PKPEIdentificationStep(llm=self.llm)
         state = identification_step.execute(state)
+        if state["paper_type"] == PaperTypeEnum.Neither:
+            return state
+        design_step = PKPEDesignStep(llm=self.llm)
+        state = design_step.execute(state)
         return state
 
     def _curating_start_job(self, pmid: str, job_name: str,curation_callback: Optional[Callable] = None):
@@ -275,10 +280,16 @@ class PKPEManager:
         ## 1. Identification Step
         state = self._identification_step(pmid)
         paper_type = state["paper_type"]
+        if paper_type == PaperTypeEnum.Neither:
+            return {}
 
         ## execute pk summary workflow
         pk_dict = {}
         pe_dict = {}
+        pipeline_tools = state["pipeline_tools"] if "pipeline_tools" in state else None
+        if pipeline_tools is not None:
+            return self._run_pipelines(pmid, pipeline_tools, curation_start_callback, curation_end_callback)
+
         if paper_type == PaperTypeEnum.PK or paper_type == PaperTypeEnum.Both:
             pk_dict = self._run_pk_workflows(pmid, curation_start_callback, curation_end_callback) # return pk curated tables
         if paper_type == PaperTypeEnum.PE or paper_type == PaperTypeEnum.Both:
@@ -309,14 +320,20 @@ class PKPEManager:
         ## 1. Identification Step
         state = self._identification_step(pmid)
         paper_type = state["paper_type"]
+        if paper_type == PaperTypeEnum.Neither:
+            return {}
 
         ## execute pk summary workflow
         pk_dict = {}
         pe_dict = {}
+        pipeline_tools = state["pipeline_tools"] if "pipeline_tools" in state else None
+        if pipeline_tools is not None:
+            return await self._run_pipelines_async(pmid, pipeline_tools, curation_start_callback, curation_end_callback)
+
         if paper_type == PaperTypeEnum.PK or paper_type == PaperTypeEnum.Both:
-            pk_dict = self._run_pk_workflows_async(pmid, curation_start_callback, curation_end_callback) # return pk curated tables
+            pk_dict = await self._run_pk_workflows_async(pmid, curation_start_callback, curation_end_callback) # return pk curated tables
         if paper_type == PaperTypeEnum.PE or paper_type == PaperTypeEnum.Both:
-            pe_dict = self._run_pe_workflows_async(pmid, curation_start_callback, curation_end_callback) # return pe curated tables
+            pe_dict = await self._run_pe_workflows_async(pmid, curation_start_callback, curation_end_callback) # return pe curated tables
 
         return {**pk_dict, **pe_dict}
         

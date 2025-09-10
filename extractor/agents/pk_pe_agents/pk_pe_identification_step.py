@@ -91,7 +91,7 @@ class PKPEIdentificationStep(CommonStep):
             schema=PKPEIdentificationStepResult,
         )
         res: PKPEIdentificationStepResult = res
-        if res.reasoning_process is None:
+        if reasoning_process is None:
             reasoning_process = res.reasoning_process if hasattr(res, "reasoning_process") else "N / A"
         state["paper_type"] = PaperTypeEnum(res.pkpe_type)
         self._print_step(state, step_output=reasoning_process)
