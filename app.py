@@ -1,3 +1,4 @@
+import asyncio
 import base64
 import logging.handlers
 import streamlit as st
@@ -47,7 +48,7 @@ st.markdown(
 # tab1, tab2 = st.tabs(["Extract From Table Data", "Extract From The Full-text"])
 
 # with tab1:
-main_tab()
+asyncio.run(main_tab())
 # with tab2:
 #     pass
 # html_tab()

@@ -10,6 +10,7 @@ from extractor.agents.pk_individual.pk_ind_workflow import PKIndWorkflow
 from extractor.agents.pk_population_summary.pk_popu_sum_workflow import PKPopuSumWorkflow
 from extractor.agents.pk_summary.pk_sum_workflow import PKSumWorkflow, PKSumWorkflowState
 from extractor.agents.pk_population_individual.pk_popu_ind_workflow import PKPopuIndWorkflow
+from extractor.constants import PipelineTypeEnum
 from extractor.database.pmid_db import PMIDDB
 from extractor.pmid_extractor.table_utils import select_pe_tables, select_pk_demographic_tables, select_pk_summary_tables
 from extractor.utils import convert_html_to_text_no_table, remove_references
@@ -36,14 +37,7 @@ class AgentTool(ABC):
         if self.output_callback is not None:
             self.output_callback(step_name=self.__class__.__name__)
 
-    @abstractmethod
-    def _get_tool_name(self) -> str:
-        pass
-
-    @abstractmethod
-    def _get_tool_description(self) -> str:
-        pass
-
+    
     @abstractmethod
     def _run(self, previous_errors: str | None = None) -> tuple[pd.DataFrame | None, list[str] | str | None]:
         pass
@@ -68,10 +62,11 @@ class PKSummaryTablesCurationTool(AgentTool):
         self.pmid = pmid
         self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
 
-    def _get_tool_name(self) -> str:
-        return "PK Summary Tables Curation Tool"
-
-    def _get_tool_description(self) -> str:
+    @staticmethod
+    def get_tool_name() -> str:
+        return PipelineTypeEnum.PK_SUMMARY.value
+    @staticmethod
+    def get_tool_description() -> str:
         return "This tool is used to curate the PK summary tables from the source paper."
 
     def _run(self, previous_errors: str | None = None):
@@ -120,8 +115,12 @@ class PKIndividualTablesCurationTool(AgentTool):
         self.pmid = pmid
         self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
     
-    def _get_tool_name(self) -> str:
-        return "PK Individual Tables Curation Tool"
+    @staticmethod
+    def get_tool_name() -> str:
+        return PipelineTypeEnum.PK_INDIVIDUAL.value
+    @staticmethod
+    def get_tool_description() -> str:
+        return "This tool is used to curate the PK individual tables from the source paper."
 
     def _get_tool_description(self) -> str:
         return "This tool is used to extract the individual tables from the source paper."
@@ -172,11 +171,13 @@ class PKPopulationSummaryCurationTool(AgentTool):
         self.pmid = pmid
         self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
         
-    def _get_tool_name(self) -> str:
-        return "PK Population Summary Curation Tool"
+    @staticmethod
+    def get_tool_name() -> str:
+        return PipelineTypeEnum.PK_POPU_SUMMARY.value
 
-    def _get_tool_description(self) -> str:
-        return "This tool is used to extract the population summary data from the source paper."
+    @staticmethod
+    def get_tool_description() -> str:
+        return "This tool is used to curate the PK population summary data from the source paper."
 
     def _run(self, previous_errors: str):
         pmid_info = self.pmid_db.select_pmid_info(self.pmid)
@@ -242,11 +243,13 @@ class PKPopulationIndividualCurationTool(AgentTool):
         self.pmid = pmid
         self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
         
-    def _get_tool_name(self) -> str:
-        return "PK Population Individual Curation Tool"
+    @staticmethod
+    def get_tool_name() -> str:
+        return PipelineTypeEnum.PK_POPU_INDIVIDUAL.value
 
-    def _get_tool_description(self) -> str:
-        return "This tool is used to extract the population individual data from the source paper."
+    @staticmethod
+    def get_tool_description() -> str:
+        return "This tool is used to curate the PK population individual data from the source paper."
 
     def _run(self, previous_errors: str):
         pmid_info = self.pmid_db.select_pmid_info(self.pmid)
@@ -311,11 +314,13 @@ class PEStudyOutcomeCurationTool(AgentTool):
         self.pmid = pmid
         self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
     
-    def _get_tool_name(self) -> str:
-        return "PE Study Outcome Curation Tool"
-
-    def _get_tool_description(self) -> str:
-        return "This tool is used to extract the study outcome data from the source paper."
+    @staticmethod
+    def get_tool_name() -> str:
+        return PipelineTypeEnum.PE_STUDY_OUTCOME.value
+        
+    @staticmethod
+    def get_tool_description() -> str:
+        return "This tool is used to curate the PE study outcome data from the source paper."
 
     def _run(self, previous_errors: str):
         pmid_info = self.pmid_db.select_pmid_info(self.pmid)

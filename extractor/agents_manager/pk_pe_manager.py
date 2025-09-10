@@ -1,10 +1,12 @@
-from typing import Callable, Optional
+import asyncio
+from typing import Callable, Optional, Awaitable
 from langchain_openai.chat_models.base import BaseChatOpenAI
 
 import logging
 
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, extract_pmid_info_to_db, increase_token_usage
 
+from extractor.agents.pk_pe_agents.pk_pe_design_step import PKPEDesignStep
 from extractor.agents_manager.pe_study_task import (
     PEStudyInfoTask,
     PEStudyOutcomeTask,
@@ -67,7 +69,7 @@ class PKPEManager:
         pmid, _, _, _, _, _ = extract_pmid_info_to_db(pmid, pmid_db)
         return pmid is not None
 
-    def _identification_step(self, pmid: str):
+    def _identification_step(self, pmid: str) -> PKPECurationWorkflowState:
         pmid_db = self.pmid_db
         pmid_info = pmid_db.select_pmid_info(pmid)
         state = PKPECurationWorkflowState(
@@ -80,6 +82,10 @@ class PKPEManager:
         
         identification_step = PKPEIdentificationStep(llm=self.llm)
         state = identification_step.execute(state)
+        if state["paper_type"] == PaperTypeEnum.Neither:
+            return state
+        design_step = PKPEDesignStep(llm=self.llm)
+        state = design_step.execute(state)
         return state
 
     def _curating_start_job(self, pmid: str, job_name: str,curation_callback: Optional[Callable] = None):
@@ -91,6 +97,27 @@ class PKPEManager:
         if curation_callback is None:
             return
         curation_callback(pmid, job_name, result)
+
+    async def _curating_start_job_async(
+        self, 
+        pmid: str, 
+        job_name: str, 
+        curation_callback: Awaitable[Callable[[str, str], None]] = None
+    ):
+        if curation_callback is None:
+            return
+        await curation_callback(pmid, job_name)
+
+    async def _curating_end_job_async(
+        self, 
+        pmid: str, 
+        job_name: str, 
+        result: PKPECuratedTables, 
+        curation_callback: Awaitable[Callable[[str, str, PKPECuratedTables], None]] = None
+    ):
+        if curation_callback is None:
+            return
+        await curation_callback(pmid, job_name, result)
 
     def _get_pipeline(self, pipeline_type: PipelineTypeEnum):
         if pipeline_type == PipelineTypeEnum.PK_SUMMARY:
@@ -141,6 +168,30 @@ class PKPEManager:
             curated_tables[pipeline_type] = result
         return curated_tables
 
+    async def _run_pipelines_async(
+        self, 
+        pmid: str, 
+        pipelines: dict[PipelineTypeEnum, PKPEAgentToolTask],
+        curation_start_callback: Awaitable[Callable[[str, str], None]] = None, 
+        curation_end_callback: Awaitable[Callable[[str, str, PKPECuratedTables], None]] = None
+    ):
+        curated_tables = {}
+        for pipeline_type, pipeline in pipelines.items():
+            try:
+                await self._curating_start_job_async(pmid, pipeline_type, curation_start_callback)
+                correct, curated_table, explanation, suggested_fix = pipeline.run(pmid)
+                result = PKPECuratedTables(
+                    correct=correct,
+                    curated_table=curated_table,
+                    explanation=explanation,
+                    suggested_fix=suggested_fix,
+                )
+                await self._curating_end_job_async(pmid, pipeline_type, result, curation_end_callback)   
+            except Exception as e:
+                logger.error(f"Error running pmid-{pmid} {pipeline_type} workflow: \n{e}")
+                continue
+            curated_tables[pipeline_type] = result
+        return curated_tables
 
     def _run_pk_workflows(
         self, 
@@ -172,6 +223,37 @@ class PKPEManager:
         }
         return self._run_pipelines(pmid, mgrs, curation_start_callback, curation_end_callback)
 
+    def _run_pk_workflows_async(
+        self, 
+        pmid: str, 
+        curation_start_callback: Awaitable[Callable[[str, str], None]] = None, 
+        curation_end_callback: Awaitable[Callable[[str, str, PKPECuratedTables], None]] = None
+    ):
+        mgrs = {
+            PipelineTypeEnum.PK_SUMMARY: PKSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_INDIVIDUAL: PKIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_SPEC_SUMMARY: PKSpecimenSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_DRUG_SUMMARY: PKDrugSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_SPEC_INDIVIDUAL: PKSpecimenIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_DRUG_INDIVIDUAL: PKDrugIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_POPU_SUMMARY: PKPopulationSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_POPU_INDIVIDUAL: PKPopulationIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+        }
+        return self._run_pipelines_async(pmid, mgrs, curation_start_callback, curation_end_callback)
+
+    def _run_pe_workflows_async(
+        self, 
+        pmid: str, 
+        curation_start_callback: Awaitable[Callable[[str, str], None]] = None, 
+        curation_end_callback: Awaitable[Callable[[str, str, PKPECuratedTables], None]] = None
+    ):
+        mgrs = {
+            PipelineTypeEnum.PE_STUDY_INFO: PEStudyInfoTask(self.llm, self.pmid_db, self.print_step),
+            PipelineTypeEnum.PE_STUDY_OUTCOME: PEStudyOutcomeTask(self.llm, self.pmid_db, self.print_step),
+        }
+        return self._run_pipelines_async(pmid, mgrs, curation_start_callback, curation_end_callback)
+
+
     def run(
         self, 
         pmid: str, 
@@ -198,10 +280,16 @@ class PKPEManager:
         ## 1. Identification Step
         state = self._identification_step(pmid)
         paper_type = state["paper_type"]
+        if paper_type == PaperTypeEnum.Neither:
+            return {}
 
         ## execute pk summary workflow
         pk_dict = {}
         pe_dict = {}
+        pipeline_tools = state["pipeline_tools"] if "pipeline_tools" in state else None
+        if pipeline_tools is not None:
+            return self._run_pipelines(pmid, pipeline_tools, curation_start_callback, curation_end_callback)
+
         if paper_type == PaperTypeEnum.PK or paper_type == PaperTypeEnum.Both:
             pk_dict = self._run_pk_workflows(pmid, curation_start_callback, curation_end_callback) # return pk curated tables
         if paper_type == PaperTypeEnum.PE or paper_type == PaperTypeEnum.Both:
@@ -210,5 +298,42 @@ class PKPEManager:
         return {**pk_dict, **pe_dict}
 
         
-        
+    async def runAsync(
+        self, 
+        pmid: str, 
+        curation_start_callback: Awaitable[Callable[[str, str], None]] = None, 
+        curation_end_callback: Awaitable[Callable[[str, str, PKPECuratedTables], None]] = None,
+        pipeline_types: Optional[list[PipelineTypeEnum]] = None
+    ):
+        if pipeline_types is not None:
+            pipelines = {}
+            for pipeline_type in pipeline_types:
+                pipeline = self._get_pipeline(pipeline_type)
+                pipelines[pipeline_type] = pipeline
+            
+            return await self._run_pipelines_async(
+                pmid, 
+                pipelines, 
+                curation_start_callback, 
+                curation_end_callback
+            )
+        ## 1. Identification Step
+        state = self._identification_step(pmid)
+        paper_type = state["paper_type"]
+        if paper_type == PaperTypeEnum.Neither:
+            return {}
+
+        ## execute pk summary workflow
+        pk_dict = {}
+        pe_dict = {}
+        pipeline_tools = state["pipeline_tools"] if "pipeline_tools" in state else None
+        if pipeline_tools is not None:
+            return await self._run_pipelines_async(pmid, pipeline_tools, curation_start_callback, curation_end_callback)
+
+        if paper_type == PaperTypeEnum.PK or paper_type == PaperTypeEnum.Both:
+            pk_dict = await self._run_pk_workflows_async(pmid, curation_start_callback, curation_end_callback) # return pk curated tables
+        if paper_type == PaperTypeEnum.PE or paper_type == PaperTypeEnum.Both:
+            pe_dict = await self._run_pe_workflows_async(pmid, curation_start_callback, curation_end_callback) # return pe curated tables
+
+        return {**pk_dict, **pe_dict}
         

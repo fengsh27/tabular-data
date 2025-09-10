@@ -2,6 +2,7 @@ from typing import Callable, Optional
 from langchain_openai.chat_models.base import BaseChatOpenAI
 from pydantic import BaseModel, Field
 
+from extractor.agents.common_agent.common_agent import CommonAgent
 from extractor.agents.common_agent.common_step import CommonStep
 from extractor.agents.common_agent.common_agent_2steps import CommonAgentTwoSteps
 from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState
@@ -79,6 +80,7 @@ You must respond using the **exact format** below:
 """
 
 class PKPEVerificationStepResult(BaseModel):
+    reasoning_process: str = Field(description="A detailed explanation of the thought process or reasoning steps taken to reach a conclusion.")
     correct: bool = Field(description="Whether the curated table is accurate and faithful to the source table(s).")
     explanation: str = Field(description="Brief explanation of whether the curated table is accurate. If incorrect, explain what is wrong, including specific mismatched values or structure issues.")
     suggested_fix: str = Field(description="If incorrect, provide a corrected version of the curated table or the corrected values/rows/columns.")
@@ -123,13 +125,15 @@ Suggested fix:
         )
         instruction_prompt = COT_USER_INSTRUCTION
 
-        agent = CommonAgentTwoSteps(llm=self.llm)
+        agent = CommonAgent(llm=self.llm)
 
         res, _, token_usage, reasoning_process = agent.go(
             system_prompt=system_prompt,
             instruction_prompt=instruction_prompt,
             schema=PKPEVerificationStepResult,
         )
+        if res.reasoning_process is None:
+            reasoning_process = res.reasoning_process if hasattr(res, "reasoning_process") else "N / A"
         self._print_step(state, step_output=reasoning_process)
         res: PKPEVerificationStepResult = res
         state["final_answer"] = res.correct
