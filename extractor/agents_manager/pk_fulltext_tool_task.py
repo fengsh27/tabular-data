@@ -20,11 +20,12 @@ logger = logging.getLogger(__name__)
 class PKSpecimenSummaryTask(PKPEAgentToolTask):
     def __init__(
         self,
-        llm: BaseChatOpenAI,
+        pipeline_llm: BaseChatOpenAI,
+        agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
     ):
-        super().__init__(llm, pmid_db, output_callback)
+        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback)
         self.task_name = "PK Specimen Summary Task"
 
     def _create_tool(self, pmid: str):
@@ -33,7 +34,7 @@ class PKSpecimenSummaryTask(PKPEAgentToolTask):
             cls=PKSpecSumWorkflow,
             tool_name="PK Specimen Summary Curation Tool",
             tool_description="This tool is used to extract the specimen summary data from the source paper.",
-            llm=self.llm,
+            llm=self.pipeline_llm,
             output_callback=self.print_step,
             pmid_db=self.pmid_db,
         )
@@ -47,11 +48,12 @@ class PKSpecimenSummaryTask(PKPEAgentToolTask):
 class PKDrugSummaryTask(PKPEAgentToolTask):
     def __init__(
         self,
-        llm: BaseChatOpenAI,
+        pipeline_llm: BaseChatOpenAI,
+        agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
     ):
-        super().__init__(llm, pmid_db, output_callback)
+        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback)
         self.task_name = "PK Drug Summary Task"
         
     def _create_tool(self, pmid: str):
@@ -60,7 +62,7 @@ class PKDrugSummaryTask(PKPEAgentToolTask):
             cls=PKDrugSumWorkflow,
             tool_name="PK Drug Summary Curation Tool",
             tool_description="This tool is used to extract the drug summary data from the source paper.",
-            llm=self.llm,
+            llm=self.pipeline_llm,
             output_callback=self.print_step,
             pmid_db=self.pmid_db,
         )
@@ -74,11 +76,12 @@ class PKDrugSummaryTask(PKPEAgentToolTask):
 class PKSpecimenIndividualTask(PKPEAgentToolTask):
     def __init__(
         self,
-        llm: BaseChatOpenAI,
+        pipeline_llm: BaseChatOpenAI,
+        agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
     ):
-        super().__init__(llm, pmid_db, output_callback)
+        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback)
         self.task_name = "PK Specimen Individual Task"
         
     def _create_tool(self, pmid: str):
@@ -87,7 +90,7 @@ class PKSpecimenIndividualTask(PKPEAgentToolTask):
             cls=PKSpecIndWorkflow,
             tool_name="PK Specimen Individual Curation Tool",
             tool_description="This tool is used to extract the specimen individual data from the source paper.",
-            llm=self.llm,
+            llm=self.pipeline_llm,
             output_callback=self.print_step,
             pmid_db=self.pmid_db,
         )
@@ -101,11 +104,12 @@ class PKSpecimenIndividualTask(PKPEAgentToolTask):
 class PKDrugIndividualTask(PKPEAgentToolTask):
     def __init__(
         self,
-        llm: BaseChatOpenAI,
+        pipeline_llm: BaseChatOpenAI,
+        agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
     ):
-        super().__init__(llm, pmid_db, output_callback)
+        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback)
         self.task_name = "PK Drug Individual Task"
         
     def _create_tool(self, pmid: str):
@@ -114,7 +118,7 @@ class PKDrugIndividualTask(PKPEAgentToolTask):
             cls=PKDrugIndWorkflow,
             tool_name="PK Drug Individual Curation Tool",
             tool_description="This tool is used to extract the drug individual data from the source paper.",
-            llm=self.llm,
+            llm=self.pipeline_llm,
             output_callback=self.print_step,
             pmid_db=self.pmid_db,
         )

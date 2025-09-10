@@ -17,17 +17,18 @@ logger = logging.getLogger(__name__)
 class PKPopulationSummaryTask(PKPEAgentToolTask):
     def __init__(
         self,
-        llm: BaseChatOpenAI,
+        pipeline_llm: BaseChatOpenAI,
+        agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
     ):
-        super().__init__(llm, pmid_db, output_callback)
+        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback)
         self.task_name = "PK Population Summary Task"
 
     def _create_tool(self, pmid: str):
         return PKPopulationSummaryCurationTool(
             pmid=pmid,
-            llm=self.llm,
+            llm=self.pipeline_llm,
             output_callback=self.print_step,
             pmid_db=self.pmid_db,
         )
@@ -41,17 +42,18 @@ class PKPopulationSummaryTask(PKPEAgentToolTask):
 class PKPopulationIndividualTask(PKPEAgentToolTask):
     def __init__(
         self,
-        llm: BaseChatOpenAI,
+        pipeline_llm: BaseChatOpenAI,
+        agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
     ):
-        super().__init__(llm, pmid_db, output_callback)
+        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback)
         self.task_name = "PK Population Individual Task"
         
     def _create_tool(self, pmid: str):
         return PKPopulationIndividualCurationTool(
             pmid=pmid,
-            llm=self.llm,
+            llm=self.pipeline_llm,
             output_callback=self.print_step,
             pmid_db=self.pmid_db,
         )

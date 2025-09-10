@@ -136,7 +136,7 @@ def select_pk_summary_tables(html_tables: list[dict[str, str | DataFrame]], llm)
         post_process=post_process_selected_table_ids,
         html_tables=html_tables,
     )
-    if res.reasoning_process is None:
+    if reasoning_process is None:
         reasoning_process = res.reasoning_process if hasattr(res, "reasoning_process") else "N / A"
     logger.info(f"Selected tables (indices): {res.selected_table_indexes}")
     logger.info(f"Reason: {reasoning_process}")
@@ -199,6 +199,8 @@ def select_pk_demographic_tables(html_tables: list[dict[str, str | DataFrame]], 
         html_tables=html_tables,
     )
 
+    if reasoning_process is None:
+        reasoning_process = res.reasoning_process if hasattr(res, "reasoning_process") else "N / A"
     logger.info(f"Selected tables (indices): {res.selected_table_indexes}")
     logger.info(f"Reason: {reasoning_process}")
 

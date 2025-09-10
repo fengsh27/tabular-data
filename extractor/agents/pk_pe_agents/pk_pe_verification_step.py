@@ -2,6 +2,7 @@ from typing import Callable, Optional
 from langchain_openai.chat_models.base import BaseChatOpenAI
 from pydantic import BaseModel, Field
 
+from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE
 from extractor.agents.common_agent.common_agent import CommonAgent
 from extractor.agents.common_agent.common_step import CommonStep
 from extractor.agents.common_agent.common_agent_2steps import CommonAgentTwoSteps
@@ -116,6 +117,14 @@ Suggested fix:
         state: PKPECurationWorkflowState = state
         source_tables = state["source_tables"] if "source_tables" in state else None
         source_tables = format_source_tables(source_tables)
+        curated_table = state["curated_table"].strip() if "curated_table" in state else None
+        curated_table = curated_table if len(curated_table) > 0 else None
+        if curated_table is None:
+            state["final_answer"] = True
+            state["explanation"] = "No data was curated from the source."
+            state["suggested_fix"] = "N/A"
+            return state, {**DEFAULT_TOKEN_USAGE}
+
         system_prompt = PKPE_VERIFICATION_SYSTEM_PROMPT.format(
             paper_title=state["paper_title"],
             paper_abstract=state["paper_abstract"],
@@ -132,7 +141,7 @@ Suggested fix:
             instruction_prompt=instruction_prompt,
             schema=PKPEVerificationStepResult,
         )
-        if res.reasoning_process is None:
+        if reasoning_process is None:
             reasoning_process = res.reasoning_process if hasattr(res, "reasoning_process") else "N / A"
         self._print_step(state, step_output=reasoning_process)
         res: PKPEVerificationStepResult = res

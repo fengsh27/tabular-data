@@ -33,8 +33,14 @@ from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECuratedTables, 
 logger = logging.getLogger(__name__)
 
 class PKPEManager:
-    def __init__(self, llm: BaseChatOpenAI, pmid_db: PMIDDB | None = None):
-        self.llm = llm
+    def __init__(
+        self, 
+        pipeline_llm: BaseChatOpenAI,
+        agent_llm: BaseChatOpenAI,
+        pmid_db: PMIDDB | None = None
+    ):
+        self.pipeline_llm = pipeline_llm
+        self.agent_llm = agent_llm
         self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
         self.total_token_usage = {**DEFAULT_TOKEN_USAGE}
     
@@ -80,11 +86,11 @@ class PKPEManager:
             step_output_callback=self.print_step,
         )
         
-        identification_step = PKPEIdentificationStep(llm=self.llm)
+        identification_step = PKPEIdentificationStep(llm=self.agent_llm)
         state = identification_step.execute(state)
         if state["paper_type"] == PaperTypeEnum.Neither:
             return state
-        design_step = PKPEDesignStep(llm=self.llm)
+        design_step = PKPEDesignStep(llm=self.agent_llm)
         state = design_step.execute(state)
         return state
 
@@ -121,27 +127,85 @@ class PKPEManager:
 
     def _get_pipeline(self, pipeline_type: PipelineTypeEnum):
         if pipeline_type == PipelineTypeEnum.PK_SUMMARY:
-            return PKSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db)
+            return PKSummaryTask(
+                pipeline_llm=self.pipeline_llm, 
+                agent_llm=self.agent_llm,
+                output_callback=self.print_step, 
+                pmid_db=self.pmid_db
+            )
         elif pipeline_type == PipelineTypeEnum.PK_INDIVIDUAL:
-            return PKIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db)
+            return PKIndividualTask(
+                pipeline_llm=self.pipeline_llm, 
+                agent_llm=self.agent_llm, 
+                output_callback=self.print_step, 
+                pmid_db=self.pmid_db
+            )
         elif pipeline_type == PipelineTypeEnum.PK_SPEC_SUMMARY:
-            return PKSpecimenSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db)
+            return PKSpecimenSummaryTask(
+                pipeline_llm=self.pipeline_llm, 
+                agent_llm=self.agent_llm, 
+                output_callback=self.print_step, 
+                pmid_db=self.pmid_db
+            )
         elif pipeline_type == PipelineTypeEnum.PK_DRUG_SUMMARY:
-            return PKDrugSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db)
+            return PKDrugSummaryTask(
+                pipeline_llm=self.pipeline_llm, 
+                agent_llm=self.agent_llm, 
+                output_callback=self.print_step, 
+                pmid_db=self.pmid_db
+            )
         elif pipeline_type == PipelineTypeEnum.PK_POPU_SUMMARY:
-            return PKPopulationSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db)
+            return PKPopulationSummaryTask(
+                pipeline_llm=self.pipeline_llm, 
+                agent_llm=self.agent_llm, 
+                output_callback=self.print_step, 
+                pmid_db=self.pmid_db
+            )
         elif pipeline_type == PipelineTypeEnum.PK_SPEC_INDIVIDUAL:
-            return PKSpecimenIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db)
+            return PKSpecimenIndividualTask(
+                pipeline_llm=self.pipeline_llm, 
+                agent_llm=self.agent_llm, 
+                output_callback=self.print_step, 
+                pmid_db=self.pmid_db
+            )
         elif pipeline_type == PipelineTypeEnum.PK_DRUG_INDIVIDUAL:
-            return PKDrugIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db)
+            return PKDrugIndividualTask(
+                pipeline_llm=self.pipeline_llm, 
+                agent_llm=self.agent_llm, 
+                output_callback=self.print_step, 
+                pmid_db=self.pmid_db
+            )
         elif pipeline_type == PipelineTypeEnum.PK_POPU_INDIVIDUAL:
-            return PKPopulationIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db)
+            return PKPopulationIndividualTask(
+                pipeline_llm=self.pipeline_llm, 
+                agent_llm=self.agent_llm, 
+                output_callback=self.print_step, 
+                pmid_db=self.pmid_db
+            )
         elif pipeline_type == PipelineTypeEnum.PE_STUDY_INFO:
-            return PEStudyInfoTask(self.llm, self.pmid_db, self.print_step)
+            return PEStudyInfoTask(
+                pipeline_llm=self.pipeline_llm, 
+                agent_llm=self.agent_llm, 
+                output_callback=self.print_step, 
+                pmid_db=self.pmid_db
+            )
         elif pipeline_type == PipelineTypeEnum.PE_STUDY_OUTCOME:
-            return PEStudyOutcomeTask(self.llm, self.pmid_db, self.print_step)
+            return PEStudyOutcomeTask(
+                pipeline_llm=self.pipeline_llm, 
+                agent_llm=self.agent_llm, 
+                output_callback=self.print_step, 
+                pmid_db=self.pmid_db
+            )
         else:
             raise ValueError(f"Invalid pipeline type: {pipeline_type}")
+
+    def _get_pipelines_dict(self, pipeline_types: list[str]) -> dict[PipelineTypeEnum, PKPEAgentToolTask]:
+        pipelines = {}
+        for pipeline_type in pipeline_types:
+            the_type = PipelineTypeEnum(pipeline_type)
+            pipeline = self._get_pipeline(PipelineTypeEnum(pipeline_type))
+            pipelines[the_type] = pipeline
+        return pipelines
 
     def _run_pipelines(
         self, 
@@ -200,14 +264,14 @@ class PKPEManager:
         curation_end_callback: Optional[Callable[[str, str, PKPECuratedTables], None]] = None
     ):
         mgrs = {
-            PipelineTypeEnum.PK_SUMMARY: PKSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            PipelineTypeEnum.PK_INDIVIDUAL: PKIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            PipelineTypeEnum.PK_SPEC_SUMMARY: PKSpecimenSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            PipelineTypeEnum.PK_DRUG_SUMMARY: PKDrugSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            PipelineTypeEnum.PK_SPEC_INDIVIDUAL: PKSpecimenIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            PipelineTypeEnum.PK_DRUG_INDIVIDUAL: PKDrugIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            PipelineTypeEnum.PK_POPU_SUMMARY: PKPopulationSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            PipelineTypeEnum.PK_POPU_INDIVIDUAL: PKPopulationIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_SUMMARY: self._get_pipeline(PipelineTypeEnum.PK_SUMMARY),
+            PipelineTypeEnum.PK_INDIVIDUAL: self._get_pipeline(PipelineTypeEnum.PK_INDIVIDUAL),
+            PipelineTypeEnum.PK_SPEC_SUMMARY: self._get_pipeline(PipelineTypeEnum.PK_SPEC_SUMMARY),
+            PipelineTypeEnum.PK_DRUG_SUMMARY: self._get_pipeline(PipelineTypeEnum.PK_DRUG_SUMMARY),
+            PipelineTypeEnum.PK_SPEC_INDIVIDUAL: self._get_pipeline(PipelineTypeEnum.PK_SPEC_INDIVIDUAL),
+            PipelineTypeEnum.PK_DRUG_INDIVIDUAL: self._get_pipeline(PipelineTypeEnum.PK_DRUG_INDIVIDUAL),
+            PipelineTypeEnum.PK_POPU_SUMMARY: self._get_pipeline(PipelineTypeEnum.PK_POPU_SUMMARY),
+            PipelineTypeEnum.PK_POPU_INDIVIDUAL: self._get_pipeline(PipelineTypeEnum.PK_POPU_INDIVIDUAL),
         }
         return self._run_pipelines(pmid, mgrs, curation_start_callback, curation_end_callback)
 
@@ -218,8 +282,8 @@ class PKPEManager:
         curation_end_callback: Optional[Callable[[str, str, PKPECuratedTables], None]] = None
     ):
         mgrs = {
-            PipelineTypeEnum.PE_STUDY_INFO: PEStudyInfoTask(self.llm, self.pmid_db, self.print_step),
-            PipelineTypeEnum.PE_STUDY_OUTCOME: PEStudyOutcomeTask(self.llm, self.pmid_db, self.print_step),
+            PipelineTypeEnum.PE_STUDY_INFO: self._get_pipeline(PipelineTypeEnum.PE_STUDY_INFO), # PEStudyInfoTask(self.pipeline_llm, self.pmid_db, self.print_step),
+            PipelineTypeEnum.PE_STUDY_OUTCOME: self._get_pipeline(PipelineTypeEnum.PE_STUDY_OUTCOME), # PEStudyOutcomeTask(self.pipeline_llm, self.pmid_db, self.print_step),
         }
         return self._run_pipelines(pmid, mgrs, curation_start_callback, curation_end_callback)
 
@@ -230,14 +294,14 @@ class PKPEManager:
         curation_end_callback: Awaitable[Callable[[str, str, PKPECuratedTables], None]] = None
     ):
         mgrs = {
-            PipelineTypeEnum.PK_SUMMARY: PKSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            PipelineTypeEnum.PK_INDIVIDUAL: PKIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            PipelineTypeEnum.PK_SPEC_SUMMARY: PKSpecimenSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            PipelineTypeEnum.PK_DRUG_SUMMARY: PKDrugSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            PipelineTypeEnum.PK_SPEC_INDIVIDUAL: PKSpecimenIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            PipelineTypeEnum.PK_DRUG_INDIVIDUAL: PKDrugIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            PipelineTypeEnum.PK_POPU_SUMMARY: PKPopulationSummaryTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
-            PipelineTypeEnum.PK_POPU_INDIVIDUAL: PKPopulationIndividualTask(llm=self.llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_SUMMARY: self._get_pipeline(PipelineTypeEnum.PK_SUMMARY), # PKSummaryTask(pipeline_llm=self.pipeline_llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_INDIVIDUAL: self._get_pipeline(PipelineTypeEnum.PK_INDIVIDUAL), # PKIndividualTask(llm=self.pipeline_llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_SPEC_SUMMARY: self._get_pipeline(PipelineTypeEnum.PK_SPEC_SUMMARY), # PKSpecimenSummaryTask(llm=self.pipeline_llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_DRUG_SUMMARY: self._get_pipeline(PipelineTypeEnum.PK_DRUG_SUMMARY), # PKDrugSummaryTask(llm=self.pipeline_llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_SPEC_INDIVIDUAL: self._get_pipeline(PipelineTypeEnum.PK_SPEC_INDIVIDUAL), # PKSpecimenIndividualTask(llm=self.pipeline_llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_DRUG_INDIVIDUAL: self._get_pipeline(PipelineTypeEnum.PK_DRUG_INDIVIDUAL), # PKDrugIndividualTask(llm=self.pipeline_llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_POPU_SUMMARY: self._get_pipeline(PipelineTypeEnum.PK_POPU_SUMMARY), # PKPopulationSummaryTask(llm=self.pipeline_llm, output_callback=self.print_step, pmid_db=self.pmid_db),
+            PipelineTypeEnum.PK_POPU_INDIVIDUAL: self._get_pipeline(PipelineTypeEnum.PK_POPU_INDIVIDUAL), # PKPopulationIndividualTask(llm=self.pipeline_llm, output_callback=self.print_step, pmid_db=self.pmid_db),
         }
         return self._run_pipelines_async(pmid, mgrs, curation_start_callback, curation_end_callback)
 
@@ -248,8 +312,8 @@ class PKPEManager:
         curation_end_callback: Awaitable[Callable[[str, str, PKPECuratedTables], None]] = None
     ):
         mgrs = {
-            PipelineTypeEnum.PE_STUDY_INFO: PEStudyInfoTask(self.llm, self.pmid_db, self.print_step),
-            PipelineTypeEnum.PE_STUDY_OUTCOME: PEStudyOutcomeTask(self.llm, self.pmid_db, self.print_step),
+            PipelineTypeEnum.PE_STUDY_INFO: self._get_pipeline(PipelineTypeEnum.PE_STUDY_INFO), # PEStudyInfoTask(self.pipeline_llm, self.pmid_db, self.print_step),
+            PipelineTypeEnum.PE_STUDY_OUTCOME: self._get_pipeline(PipelineTypeEnum.PE_STUDY_OUTCOME), # PEStudyOutcomeTask(self.pipeline_llm, self.pmid_db, self.print_step),
         }
         return self._run_pipelines_async(pmid, mgrs, curation_start_callback, curation_end_callback)
 
@@ -288,7 +352,8 @@ class PKPEManager:
         pe_dict = {}
         pipeline_tools = state["pipeline_tools"] if "pipeline_tools" in state else None
         if pipeline_tools is not None:
-            return self._run_pipelines(pmid, pipeline_tools, curation_start_callback, curation_end_callback)
+            pipelines = self._get_pipelines_dict(pipeline_tools)
+            return self._run_pipelines(pmid, pipelines, curation_start_callback, curation_end_callback)
 
         if paper_type == PaperTypeEnum.PK or paper_type == PaperTypeEnum.Both:
             pk_dict = self._run_pk_workflows(pmid, curation_start_callback, curation_end_callback) # return pk curated tables
@@ -305,6 +370,8 @@ class PKPEManager:
         curation_end_callback: Awaitable[Callable[[str, str, PKPECuratedTables], None]] = None,
         pipeline_types: Optional[list[PipelineTypeEnum]] = None
     ):
+        self._extract_pmid_info(pmid)
+        
         if pipeline_types is not None:
             pipelines = {}
             for pipeline_type in pipeline_types:
@@ -328,7 +395,8 @@ class PKPEManager:
         pe_dict = {}
         pipeline_tools = state["pipeline_tools"] if "pipeline_tools" in state else None
         if pipeline_tools is not None:
-            return await self._run_pipelines_async(pmid, pipeline_tools, curation_start_callback, curation_end_callback)
+            pipelines = self._get_pipelines_dict(pipeline_tools)
+            return await self._run_pipelines_async(pmid, pipelines, curation_start_callback, curation_end_callback)
 
         if paper_type == PaperTypeEnum.PK or paper_type == PaperTypeEnum.Both:
             pk_dict = await self._run_pk_workflows_async(pmid, curation_start_callback, curation_end_callback) # return pk curated tables

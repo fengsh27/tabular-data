@@ -47,7 +47,7 @@ class AgentTool(ABC):
         try:
             return self._run(previous_errors)
         except Exception as e:
-            logger.error(f"Error running {self._get_tool_name()} tool: \n{e}")
+            logger.error(f"Error running {self.__class__.__name__}: \n{e}")
             return pd.DataFrame(), "N/A"
 
 class PKSummaryTablesCurationTool(AgentTool):
