@@ -134,7 +134,7 @@ Suggested fix:
         )
         instruction_prompt = COT_USER_INSTRUCTION
 
-        agent = CommonAgent(llm=self.llm)
+        agent = CommonAgentTwoSteps(llm=self.llm)
 
         res, _, token_usage, reasoning_process = agent.go(
             system_prompt=system_prompt,
@@ -144,6 +144,9 @@ Suggested fix:
         if reasoning_process is None:
             reasoning_process = res.reasoning_process if hasattr(res, "reasoning_process") else "N / A"
         self._print_step(state, step_output=reasoning_process)
+        self._print_step(state, step_output=f"Verification Final Answer: \n\n{res.correct}")
+        self._print_step(state, step_output=f"Verification Explanation: \n\n{res.explanation}")
+        self._print_step(state, step_output=f"Verification Suggested Fix: \n\n{res.suggested_fix}")
         res: PKPEVerificationStepResult = res
         state["final_answer"] = res.correct
         state["explanation"] = res.explanation

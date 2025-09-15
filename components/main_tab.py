@@ -664,8 +664,10 @@ async def main_tab():
                                     curation_start_callback=curation_start_callback_async, 
                                     curation_end_callback=curation_end_callback_async
                                 )
-                            
-                            await curation_start_callback_async(None)
+                            if results and len(results) > 0:
+                                await curation_start_callback_async(None)
+                            else:
+                                ss.oneclick_curation_info = f"No data curated from the paper {pmid}"
 
         # ---------- Access Article ----------------------------------------
         with st.expander("Access Article", expanded=False):

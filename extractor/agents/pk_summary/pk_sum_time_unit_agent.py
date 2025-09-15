@@ -81,12 +81,34 @@ def post_process_time_and_unit(
 
     df_table = pd.DataFrame(match_list, columns=["Time value", "Time unit"])
     if df_table.shape[0] != expected_rows:
-        error_msg = (
-            "Wrong answer example:\n"
-            + str(match_list)
-            + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {df_table.shape[0]} extracted matches."
-        )
-        logger.error(error_msg)
-        raise RetryException(error_msg)
+        # try to fix the mismatch
+        df_table_fixed = None
+        if df_table.shape[0] > expected_rows:
+            safe_to_remove = True
+            df_overflow = df_table.iloc[expected_rows:]
+            for row_idx in df_overflow.index:
+                for col in df_overflow.columns:
+                    cell = df_overflow.at[row_idx, col]
+                    if cell.strip() != "N/A":
+                        safe_to_remove = False
+                        break
+            if safe_to_remove:
+                df_table_fixed = df_table.iloc[:expected_rows]
+        elif df_table.shape[0] < expected_rows and (expected_rows - df_table.shape[0]) / expected_rows < 0.5:
+            # Append ["N/A", "N/A"] rows to match expected_rows
+            additional_rows = [["N/A", "N/A"]] * (expected_rows - df_table.shape[0])
+            df_table_fixed = pd.concat([df_table, pd.DataFrame(additional_rows, columns=["Time value", "Time unit"])], ignore_index=True)
+            
+        if df_table_fixed is None:
+            error_msg = (
+                "Wrong answer example:\n"
+                + str(match_list)
+                + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {df_table.shape[0]} extracted matches."
+            )
+            logger.error(error_msg)
+            raise RetryException(error_msg)
+        else:
+            logger.warning(f"Mismatch: Expected {expected_rows} rows, but got {df_table.shape[0]} extracted matches. Fixed the mismatch by removing/appending the extra rows.")
+            df_table = df_table_fixed
 
     return dataframe_to_markdown(df_table)

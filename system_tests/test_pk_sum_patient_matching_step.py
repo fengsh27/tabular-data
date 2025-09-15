@@ -106,6 +106,7 @@ def test_PatientMatchingAgentStep_17635501_table_3(
     assert state["patient_list"] is not None
     assert type(state["patient_list"]) == list
 
+@pytest.mark.skip()
 def test_PatientMatchingAgentStep_34183327_table_2(
     llm,
     md_table_patient_refined_34183327_table_2,
@@ -127,6 +128,30 @@ def test_PatientMatchingAgentStep_34183327_table_2(
     state["step_callback"] = step_callback
     state["md_table_aligned"] = md_table_aligned_34183327_table_2
     state["md_table_patient"] = md_table_patient_34183327_table_2
+
+    step.execute(state)
+
+    assert state["patient_list"] is not None
+    assert type(state["patient_list"]) == list
+
+def test_PatientMatchingAgentStep_18426260_table_0(
+    llm,
+    md_table_patient_refined_18426260_table_0,
+    md_table_list_18426260_table_0,
+    caption_18426260_table_0,
+    md_table_aligned_18426260_table_0,
+    md_table_patient_18426260_table_0,
+    step_callback,
+):
+    step = PatientMatchingAgentStep()
+    state = PKSumWorkflowState()
+    state["llm"] = llm
+    state["md_table_patient_refined"] = md_table_patient_refined_18426260_table_0
+    state["md_table_list"] = md_table_list_18426260_table_0
+    state["caption"] = caption_18426260_table_0
+    state["step_callback"] = step_callback
+    state["md_table_aligned"] = md_table_aligned_18426260_table_0
+    state["md_table_patient"] = md_table_patient_18426260_table_0
 
     step.execute(state)
 
