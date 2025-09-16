@@ -1,10 +1,14 @@
 from typing import List
 from langchain_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel, Field
+import logging
 
 from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
+from extractor.agents.common_agent.common_agent import RetryException
 from extractor.agents.pk_individual.pk_ind_common_agent import PKIndCommonAgentResult
+
+logger = logging.getLogger(__name__)
 
 UNIT_EXTRACTION_PROMPT = ChatPromptTemplate.from_template("""
 The following main table contains pharmacokinetics (PK) data:  
@@ -88,11 +92,10 @@ def post_process_validate_matched_tuple(
     expected_rows = markdown_to_dataframe(md_table).shape[0]
     if len(matched_tuple[0]) != expected_rows or len(matched_tuple[1]) != expected_rows or len(matched_tuple[2]) != expected_rows:
         error_msg = (
-            f"Mismatch: Expected {expected_rows} rows, but got {len(matched_tuple[0])} (types) and {len(matched_tuple[1])} (units).",
-            f"\n{content}",
-            f"\n<<{usage}>>",
+            f"Mismatch: Expected {expected_rows} rows, but got {len(matched_tuple[0])} (types) and {len(matched_tuple[1])} (units), and "
+            f"{len(matched_tuple[2])} (values)"
         )
         logger.error(error_msg)
-        raise ValueError(error_msg)
+        raise RetryException(error_msg)
 
     return matched_tuple

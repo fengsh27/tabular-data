@@ -16,7 +16,7 @@ from .common_agent import (
 )
 from extractor.constants import COT_USER_INSTRUCTION
 
-logger = logging.getLogger()
+logger = logging.getLogger(__name__)
 
 def get_openai():
     return AzureChatOpenAI(

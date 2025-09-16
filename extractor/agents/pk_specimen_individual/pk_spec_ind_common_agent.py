@@ -10,7 +10,7 @@ from extractor.agents.agent_utils import (
     increase_token_usage,
 )
 
-logger = logging.getLogger()
+logger = logging.getLogger(__name__)
 
 
 class PKSpecIndCommonAgentResult(BaseModel):
