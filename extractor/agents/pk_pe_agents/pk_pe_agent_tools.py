@@ -131,7 +131,7 @@ class PKIndividualTablesCurationTool(AgentTool):
             return None
         tables = pmid_info[4]
         title = pmid_info[1]
-        selected_tables, indexes, reasoning_process, token_usage = select_pk_demographic_tables(tables, self.llm)
+        selected_tables, indexes, reasoning_process, token_usage = select_pk_summary_tables(tables, self.llm)
         self._print_step_output(reasoning_process)
         self._print_token_usage(token_usage)
         if not selected_tables:
