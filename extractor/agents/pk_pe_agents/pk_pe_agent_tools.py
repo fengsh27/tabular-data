@@ -86,13 +86,21 @@ class PKSummaryTablesCurationTool(AgentTool):
             caption = "\n".join([table["caption"], table["footnote"]])
             source_table = dataframe_to_markdown(table["table"])
             source_tables.append(f"caption: \n{caption}\n\n table: \n{source_table}")
-            df = workflow.go_md_table(
-                title=title,
-                md_table=source_table,
-                caption_and_footnote=caption,
-                step_callback=self.output_callback,
-                previous_errors=previous_errors,
-            )
+            try:
+                df = workflow.go_md_table(
+                    title=title,
+                    md_table=source_table,
+                    caption_and_footnote=caption,
+                    step_callback=self.output_callback,
+                    previous_errors=previous_errors,
+                )
+            except Exception as e:
+                logger.error(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
+                logger.error(str(e))
+                print(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
+                print(str(e))
+                continue
+            
             dfs.append(df)
 
         # combine dfs
@@ -144,13 +152,20 @@ class PKIndividualTablesCurationTool(AgentTool):
             caption = "\n".join([table["caption"], table["footnote"]])
             source_table = dataframe_to_markdown(table["table"])
             source_tables.append(source_table)
-            df = workflow.go_md_table(
-                title=title,
-                md_table=source_table,
-                caption_and_footnote=caption,
-                step_callback=self.output_callback,
-                previous_errors=previous_errors,
-            )
+            try:
+                df = workflow.go_md_table(
+                    title=title,
+                    md_table=source_table,
+                    caption_and_footnote=caption,
+                    step_callback=self.output_callback,
+                    previous_errors=previous_errors,
+                )
+            except Exception as e:
+                logger.error(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
+                logger.error(str(e))
+                print(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
+                print(str(e))
+                continue
             dfs.append(df)
         df_combined = (
             pd.concat(dfs, axis=0).reset_index(drop=True)
@@ -221,11 +236,18 @@ class PKPopulationSummaryCurationTool(AgentTool):
                 caption = "\n".join([table["caption"], table["footnote"]])
                 source_table = dataframe_to_markdown(table["table"])+"\n\n"+caption
                 source_tables.append(source_table)
-                df = workflow.go_full_text(
-                    title=title,
-                    full_text=source_table,
-                    step_callback=self.output_callback,
-                )
+                try:
+                    df = workflow.go_full_text(
+                        title=title,
+                        full_text=source_table,
+                        step_callback=self.output_callback,
+                    )
+                except Exception as e:
+                    logger.error(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
+                    logger.error(str(e))
+                    print(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
+                    print(str(e))
+                    continue
                 dfs.append(df)
             result_df = pd.concat(dfs, ignore_index=True)
         return result_df, source_tables
@@ -292,12 +314,19 @@ class PKPopulationIndividualCurationTool(AgentTool):
                 caption = "\n".join([table["caption"], table["footnote"]])
                 source_table = dataframe_to_markdown(table["table"])+"\n\n"+caption
                 source_tables.append(source_table)
-                df = workflow.go_full_text(
+                try:
+                    df = workflow.go_full_text(
                     title=title,
                     full_text=source_table,
                     step_callback=self.output_callback,
                     previous_errors=previous_errors,
-                )
+                    )
+                except Exception as e:
+                    logger.error(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
+                    logger.error(str(e))
+                    print(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
+                    print(str(e))
+                    continue
                 dfs.append(df)
             result_df = pd.concat(dfs, ignore_index=True)
             return result_df, source_tables
@@ -343,13 +372,20 @@ class PEStudyOutcomeCurationTool(AgentTool):
             caption = "\n".join([table["caption"], table["footnote"]])
             source_table = dataframe_to_markdown(table["table"])
             source_tables.append(source_table)
-            df = workflow.go_md_table(
+            try:
+                df = workflow.go_md_table(
                 title=title,
                 md_table=source_table,
                 caption_and_footnote=caption,
                 step_callback=self.output_callback,
                 previous_errors=previous_errors,
-            )
+                )
+            except Exception as e:
+                logger.error(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
+                logger.error(str(e))
+                print(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
+                print(str(e))
+                continue
             dfs.append(df)
         df_combined = (
             pd.concat(dfs, axis=0).reset_index(drop=True)

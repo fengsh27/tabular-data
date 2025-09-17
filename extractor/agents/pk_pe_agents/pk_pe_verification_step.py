@@ -55,7 +55,7 @@ You must respond using the **exact format** below:
 * If the curated table is correct in content but uses slightly different formatting (e.g., reordering of columns), that is acceptable as long as it does not alter the meaning or value.
 * In the **Explanation** section, you should try your best to **list all the mismatched values or structure issues**, and provide a brief explanation of why you think the curated table is incorrect.
 * Your response will be used to correct the curated table, so you should be **very specific and detailed** in your explanation. **Do not give any general explanation.**
-
+* when values in text and table disagree, treat the table values as the ground truth (even if the text mentions slightly different ones).
 ---
 
 ### **Input**
