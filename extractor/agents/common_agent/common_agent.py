@@ -26,7 +26,7 @@ class CommonAgentResult(BaseModel):
 class CommonAgent:
     def __init__(self, llm: BaseChatOpenAI):
         self.llm = llm
-        self.exception: RetryException | None = None
+        self.exceptions: list[RetryException] | None = None
         self.token_usage: dict | None = None
 
     def go(
@@ -67,20 +67,27 @@ class CommonAgent:
         )
 
     def _initialize(self):
-        self.exception = None
+        self.exceptions = None
         self.token_usage = None
+
+    def _get_retryexception_message(self) -> list[tuple[str, str]]:
+        if self.exceptions is None:
+            return None
+        return [("human", str(excp)) for excp in self.exceptions]
 
     def _process_retryexception_message(
         self, prompt: ChatPromptTemplate
     ) -> ChatPromptTemplate:
-        if self.exception is None:
+        if self.exceptions is None:
             return prompt
 
-        existing_messages = prompt.messages
-        updated_messages = existing_messages + [("human", str(self.exception))]
-        self.exception = None
-        updated_prompt = ChatPromptTemplate.from_messages(updated_messages)
-        return updated_prompt
+        exception_msgs = self._get_retryexception_message()
+        if exception_msgs is not None:
+            existing_messages = prompt.messages
+            updated_messages = existing_messages + exception_msgs
+            updated_prompt = ChatPromptTemplate.from_messages(updated_messages)
+            return updated_prompt
+        return prompt
 
     def _incre_token_usage(self, token_usage):
         incremental_token_usage = token_usage
@@ -130,7 +137,10 @@ class CommonAgent:
                 processed_res = post_process(res, **kwargs)
             except RetryException as e:
                 logger.error(str(e))
-                self.exception = e
+                if self.exceptions is None:
+                    self.exceptions = [e]
+                else:
+                    self.exceptions.append(e)
                 raise e
             except Exception as e:
                 logger.error(str(e))

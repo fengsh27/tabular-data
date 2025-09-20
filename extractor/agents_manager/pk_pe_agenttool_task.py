@@ -24,11 +24,13 @@ logger = logging.getLogger(__name__)
 class PKPEAgentToolTask(ABC):
     def __init__(
         self,
-        llm: BaseChatOpenAI,
+        pipeline_llm: BaseChatOpenAI,
+        agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
     ):
-        self.llm = llm
+        self.pipeline_llm = pipeline_llm
+        self.agent_llm = agent_llm
         self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
         self.output_callback = output_callback
         self.task_name = "Agent Tool Task"
@@ -77,16 +79,16 @@ class PKPEAgentToolTask(ABC):
                 return END
             return "correction_step"
         execution_step = PKPEExecutionStep(
-            llm=self.llm,
+            llm=self.agent_llm,
             tool=self._create_tool(pmid),
         )
         verification_step = PKPECuratedTablesVerificationStep(
-            llm=self.llm,
+            llm=self.pipeline_llm, # FIXME: use agent_llm
             pmid=pmid,
             domain=self._get_domain(),
         )
         correction_step = PKPECuratedTablesCorrectionStep(
-            llm=self.llm,
+            llm=self.agent_llm,
             pmid=pmid,
             domain=self._get_domain(),
         )

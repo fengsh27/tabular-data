@@ -2,6 +2,8 @@ from typing import Callable, Optional
 from langchain_openai.chat_models.base import BaseChatOpenAI
 from pydantic import BaseModel, Field
 
+from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE
+from extractor.agents.common_agent.common_agent import CommonAgent
 from extractor.agents.common_agent.common_step import CommonStep
 from extractor.agents.common_agent.common_agent_2steps import CommonAgentTwoSteps
 from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState
@@ -53,7 +55,7 @@ You must respond using the **exact format** below:
 * If the curated table is correct in content but uses slightly different formatting (e.g., reordering of columns), that is acceptable as long as it does not alter the meaning or value.
 * In the **Explanation** section, you should try your best to **list all the mismatched values or structure issues**, and provide a brief explanation of why you think the curated table is incorrect.
 * Your response will be used to correct the curated table, so you should be **very specific and detailed** in your explanation. **Do not give any general explanation.**
-
+* when values in text and table disagree, treat the table values as the ground truth (even if the text mentions slightly different ones).
 ---
 
 ### **Input**
@@ -79,6 +81,7 @@ You must respond using the **exact format** below:
 """
 
 class PKPEVerificationStepResult(BaseModel):
+    reasoning_process: str = Field(description="A detailed explanation of the thought process or reasoning steps taken to reach a conclusion.")
     correct: bool = Field(description="Whether the curated table is accurate and faithful to the source table(s).")
     explanation: str = Field(description="Brief explanation of whether the curated table is accurate. If incorrect, explain what is wrong, including specific mismatched values or structure issues.")
     suggested_fix: str = Field(description="If incorrect, provide a corrected version of the curated table or the corrected values/rows/columns.")
@@ -114,6 +117,14 @@ Suggested fix:
         state: PKPECurationWorkflowState = state
         source_tables = state["source_tables"] if "source_tables" in state else None
         source_tables = format_source_tables(source_tables)
+        curated_table = state["curated_table"].strip() if "curated_table" in state else None
+        curated_table = curated_table if len(curated_table) > 0 else None
+        if curated_table is None:
+            state["final_answer"] = True
+            state["explanation"] = "No data was curated from the source."
+            state["suggested_fix"] = "N/A"
+            return state, {**DEFAULT_TOKEN_USAGE}
+
         system_prompt = PKPE_VERIFICATION_SYSTEM_PROMPT.format(
             paper_title=state["paper_title"],
             paper_abstract=state["paper_abstract"],
@@ -130,7 +141,12 @@ Suggested fix:
             instruction_prompt=instruction_prompt,
             schema=PKPEVerificationStepResult,
         )
+        if reasoning_process is None:
+            reasoning_process = res.reasoning_process if hasattr(res, "reasoning_process") else "N / A"
         self._print_step(state, step_output=reasoning_process)
+        self._print_step(state, step_output=f"Verification Final Answer: \n\n{res.correct}")
+        self._print_step(state, step_output=f"Verification Explanation: \n\n{res.explanation}")
+        self._print_step(state, step_output=f"Verification Suggested Fix: \n\n{res.suggested_fix}")
         res: PKPEVerificationStepResult = res
         state["final_answer"] = res.correct
         state["explanation"] = res.explanation

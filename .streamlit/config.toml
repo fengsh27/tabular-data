@@ -2,3 +2,8 @@
 base="light"
 [client]
 toolbarMode = "minimal"
+[server]
+port = 9092
+baseUrlPath = "/tabular-data"
+enableCORS = false
+enableXsrfProtection = false

@@ -11,7 +11,7 @@ from extractor.agents.agent_utils import (
 )
 from extractor.agents.common_agent.common_agent import RetryException
 
-logger = logging.getLogger()
+logger = logging.getLogger(__name__)
 
 
 class PKPopuSumCommonAgentResult(BaseModel):

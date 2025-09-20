@@ -13,7 +13,7 @@ from .common_agent import (
 )
 from extractor.constants import COT_USER_INSTRUCTION
 
-logger = logging.getLogger()
+logger = logging.getLogger(__name__)
 
 
 class CommonAgentTwoSteps(CommonAgent):

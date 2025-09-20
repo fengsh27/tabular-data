@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 from fastapi import FastAPI, HTTPException, BackgroundTasks, status
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional, List, Dict, Any
 from enum import Enum
@@ -24,7 +25,14 @@ load_dotenv()
 logger = logging.getLogger(__name__)
 
 app = FastAPI(title="Data Curation API", version="1.0.0")
-
+# Configure CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows all origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
+)
 
 # In-memory job storage (in production, use Redis or database)
 jobs: Dict[str, JobResponse] = {}
@@ -263,6 +271,8 @@ async def health_check():
         "active_jobs": len(active_jobs),
         "total_jobs": len(total_jobs)
     }
+
+app.add_websocket_route("/ws/curation", curation_websocket)
 
 if __name__ == "__main__":
     import uvicorn

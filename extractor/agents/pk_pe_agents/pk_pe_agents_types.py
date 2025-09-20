@@ -25,6 +25,7 @@ class PKPECurationWorkflowState(TypedDict):
     previous_errors: Optional[str] = None
     step_output_callback: Optional[Callable] = None
     step_count: Optional[int] = 0
+    pipeline_tools: Optional[list[str]] = None
 
 class PKPECuratedTables(TypedDict):
     correct: bool

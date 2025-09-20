@@ -1,3 +1,4 @@
+import asyncio
 from datetime import datetime
 import logging
 import os
@@ -508,7 +509,7 @@ def run_curation(
     return "\n".join(logs), result_df
 
 
-def main_tab():
+async def main_tab():
     ss = st.session_state
     ss.setdefault("pmid_input", "")
     ss.setdefault("oneclick_pmid_input", "")
@@ -520,21 +521,24 @@ def main_tab():
     ss.setdefault("oneclick_curation_results", [])
     ss.setdefault("curation_mode", "one_click")  # "one_click" or "customize"
     ss.setdefault("selected_pipeline_types", [])  # List of selected pipeline types
+    ss.setdefault("llm_option", LLM_CHATGPT)
 
     with st.sidebar:
         st.subheader("Curation Panel")
 
         # ---------- sidebar helper functions ------------------------------
-        def curation_start_callback(pmid: str, job_name: str | None = None):
+        async def curation_start_callback_async(pmid: str, job_name: str | None = None):
+            await asyncio.sleep(1)
             if job_name is not None:
                 ss.oneclick_curation_info = f"Curating {pmid} {job_name} …"
             else:
                 ss.oneclick_curation_info = None
 
-        def curation_end_callback(pmid: str, job_name: str, result: PKPECuratedTables):
+        async def curation_end_callback_async(pmid: str, job_name: str, result: PKPECuratedTables):
             ss.oneclick_curation_info = f"End curating {pmid} {job_name} …"
             results = [*ss.oneclick_curation_results, (pmid, job_name, result)]
             ss.oneclick_curation_results = results
+            await asyncio.sleep(1)
 
         # ---------- One Click Curation ------------------------------------
         with st.expander("One Click Curation", expanded=False):
@@ -620,29 +624,40 @@ def main_tab():
                     st.warning("Please enter a PMID first.")
                 else:
                     if pmid == "29943508":
-                        result = [(pmid, job_name, result) for pmid, job_name, result in hardcode_results if job_name in ss.selected_pipeline_types] # [*hardcode_results]
+                        if ss.curation_mode == "one_click":
+                            # In one-click mode, return all hardcoded results
+                            result = [*hardcode_results]
+                        else:
+                            # In customize mode, filter by selected pipeline types
+                            result = [(pmid, job_name, result) for pmid, job_name, result in hardcode_results if job_name in ss.selected_pipeline_types]
                         ss.oneclick_curation_results = result
                     else:
                         with st.spinner("Curating …"):
                             db = get_pmid_db()
-                            pkpe_manager = PKPEManager(llm=_get_llm(LLM_CHATGPT), pmid_db=db)
+                            pkpe_manager = PKPEManager(
+                                pipeline_llm=get_openai(), 
+                                agent_llm=get_5_openai(), 
+                                pmid_db=db
+                            )
                             
                             # Call PKPEManager.run() with or without pipeline_types based on mode
                             if ss.curation_mode == "customize":
-                                results = pkpe_manager.run(
+                                results = await pkpe_manager.runAsync(
                                     pmid=pmid, 
-                                    curation_start_callback=curation_start_callback, 
-                                    curation_end_callback=curation_end_callback,
+                                    curation_start_callback=curation_start_callback_async, 
+                                    curation_end_callback=curation_end_callback_async,
                                     pipeline_types=ss.selected_pipeline_types
                                 )
                             else:
-                                results = pkpe_manager.run(
+                                results = await pkpe_manager.runAsync(
                                     pmid=pmid, 
-                                    curation_start_callback=curation_start_callback, 
-                                    curation_end_callback=curation_end_callback
+                                    curation_start_callback=curation_start_callback_async, 
+                                    curation_end_callback=curation_end_callback_async
                                 )
-                            
-                            curation_start_callback(None)
+                            if results and len(results) > 0:
+                                await curation_start_callback_async(None)
+                            else:
+                                ss.oneclick_curation_info = f"No data curated from the paper {pmid}"
 
         # ---------- Access Article ----------------------------------------
         with st.expander("Access Article", expanded=False):
@@ -715,7 +730,7 @@ def main_tab():
                 st.markdown("PE - Pharmacoepidemiology")
                 st.markdown("CT - Clinical Trials")
                 sel_aid = st.selectbox("Select Article", list(ss.retrieved_articles.keys()), index=0)
-                ss.llm_option = st.radio("Select LLM:", [LLM_CHATGPT, LLM_DEEPSEEK_CHAT], index=0)
+                # ss.llm_option = st.radio("Select LLM:", [LLM_CHATGPT, LLM_DEEPSEEK_CHAT], index=0)
                 ss.task_option = st.selectbox(
                     "Select Task",
                     [
@@ -882,15 +897,16 @@ def main_tab():
                 result: PKPECuratedTables = result
                 markdown_df = result["curated_table"]
                 df = markdown_to_dataframe(markdown_df)
-                if df.empty:
-                    continue
-    
+                    
                 if cur_pmid != pmid:
                     cur_pmid = pmid
                     st.markdown(f"### {pmid}")
     
                 st.markdown(f"### {str(job_name.value)}")
-                st.dataframe(df)
+                if not df.empty:
+                    st.dataframe(df)
+                else:
+                    st.write("No data was curated from the source.")
                 # with st.expander(f"Explanation & Suggested Fix"):
                 st.markdown(f"#####   Explanation & Suggested Fix")
                 st.markdown(f"######  Explanation")
@@ -1077,4 +1093,4 @@ def main_tab():
 
 
 if __name__ == "__main__":
-    main_tab()
+    asyncio.run(main_tab())

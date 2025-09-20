@@ -18,7 +18,7 @@ import logging
 from extractor.utils import escape_braces_for_format
 from extractor.agents.common_agent.common_agent import RetryException, CommonAgent
 
-logger = logging.getLogger()
+logger = logging.getLogger(__name__)
 
 def get_azure_openai():
     return AzureChatOpenAI(

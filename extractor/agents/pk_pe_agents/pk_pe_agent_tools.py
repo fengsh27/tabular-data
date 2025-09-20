@@ -10,6 +10,7 @@ from extractor.agents.pk_individual.pk_ind_workflow import PKIndWorkflow
 from extractor.agents.pk_population_summary.pk_popu_sum_workflow import PKPopuSumWorkflow
 from extractor.agents.pk_summary.pk_sum_workflow import PKSumWorkflow, PKSumWorkflowState
 from extractor.agents.pk_population_individual.pk_popu_ind_workflow import PKPopuIndWorkflow
+from extractor.constants import PipelineTypeEnum
 from databases.pmid_db import PMIDDB
 from extractor.pmid_extractor.table_utils import select_pe_tables, select_pk_demographic_tables, select_pk_summary_tables
 from extractor.utils import convert_html_to_text_no_table, remove_references
@@ -36,14 +37,7 @@ class AgentTool(ABC):
         if self.output_callback is not None:
             self.output_callback(step_name=self.__class__.__name__)
 
-    @abstractmethod
-    def _get_tool_name(self) -> str:
-        pass
-
-    @abstractmethod
-    def _get_tool_description(self) -> str:
-        pass
-
+    
     @abstractmethod
     def _run(self, previous_errors: str | None = None) -> tuple[pd.DataFrame | None, list[str] | str | None]:
         pass
@@ -53,7 +47,7 @@ class AgentTool(ABC):
         try:
             return self._run(previous_errors)
         except Exception as e:
-            logger.error(f"Error running {self._get_tool_name()} tool: \n{e}")
+            logger.error(f"Error running {self.__class__.__name__}: \n{e}")
             return pd.DataFrame(), "N/A"
 
 class PKSummaryTablesCurationTool(AgentTool):
@@ -68,10 +62,11 @@ class PKSummaryTablesCurationTool(AgentTool):
         self.pmid = pmid
         self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
 
-    def _get_tool_name(self) -> str:
-        return "PK Summary Tables Curation Tool"
-
-    def _get_tool_description(self) -> str:
+    @staticmethod
+    def get_tool_name() -> str:
+        return PipelineTypeEnum.PK_SUMMARY.value
+    @staticmethod
+    def get_tool_description() -> str:
         return "This tool is used to curate the PK summary tables from the source paper."
 
     def _run(self, previous_errors: str | None = None):
@@ -91,13 +86,21 @@ class PKSummaryTablesCurationTool(AgentTool):
             caption = "\n".join([table["caption"], table["footnote"]])
             source_table = dataframe_to_markdown(table["table"])
             source_tables.append(f"caption: \n{caption}\n\n table: \n{source_table}")
-            df = workflow.go_md_table(
-                title=title,
-                md_table=source_table,
-                caption_and_footnote=caption,
-                step_callback=self.output_callback,
-                previous_errors=previous_errors,
-            )
+            try:
+                df = workflow.go_md_table(
+                    title=title,
+                    md_table=source_table,
+                    caption_and_footnote=caption,
+                    step_callback=self.output_callback,
+                    previous_errors=previous_errors,
+                )
+            except Exception as e:
+                logger.error(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
+                logger.error(str(e))
+                print(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
+                print(str(e))
+                continue
+            
             dfs.append(df)
 
         # combine dfs
@@ -120,8 +123,12 @@ class PKIndividualTablesCurationTool(AgentTool):
         self.pmid = pmid
         self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
     
-    def _get_tool_name(self) -> str:
-        return "PK Individual Tables Curation Tool"
+    @staticmethod
+    def get_tool_name() -> str:
+        return PipelineTypeEnum.PK_INDIVIDUAL.value
+    @staticmethod
+    def get_tool_description() -> str:
+        return "This tool is used to curate the PK individual tables from the source paper."
 
     def _get_tool_description(self) -> str:
         return "This tool is used to extract the individual tables from the source paper."
@@ -132,7 +139,7 @@ class PKIndividualTablesCurationTool(AgentTool):
             return None
         tables = pmid_info[4]
         title = pmid_info[1]
-        selected_tables, indexes, reasoning_process, token_usage = select_pk_demographic_tables(tables, self.llm)
+        selected_tables, indexes, reasoning_process, token_usage = select_pk_summary_tables(tables, self.llm)
         self._print_step_output(reasoning_process)
         self._print_token_usage(token_usage)
         if not selected_tables:
@@ -145,13 +152,20 @@ class PKIndividualTablesCurationTool(AgentTool):
             caption = "\n".join([table["caption"], table["footnote"]])
             source_table = dataframe_to_markdown(table["table"])
             source_tables.append(source_table)
-            df = workflow.go_md_table(
-                title=title,
-                md_table=source_table,
-                caption_and_footnote=caption,
-                step_callback=self.output_callback,
-                previous_errors=previous_errors,
-            )
+            try:
+                df = workflow.go_md_table(
+                    title=title,
+                    md_table=source_table,
+                    caption_and_footnote=caption,
+                    step_callback=self.output_callback,
+                    previous_errors=previous_errors,
+                )
+            except Exception as e:
+                logger.error(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
+                logger.error(str(e))
+                print(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
+                print(str(e))
+                continue
             dfs.append(df)
         df_combined = (
             pd.concat(dfs, axis=0).reset_index(drop=True)
@@ -172,11 +186,13 @@ class PKPopulationSummaryCurationTool(AgentTool):
         self.pmid = pmid
         self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
         
-    def _get_tool_name(self) -> str:
-        return "PK Population Summary Curation Tool"
+    @staticmethod
+    def get_tool_name() -> str:
+        return PipelineTypeEnum.PK_POPU_SUMMARY.value
 
-    def _get_tool_description(self) -> str:
-        return "This tool is used to extract the population summary data from the source paper."
+    @staticmethod
+    def get_tool_description() -> str:
+        return "This tool is used to curate the PK population summary data from the source paper."
 
     def _run(self, previous_errors: str):
         pmid_info = self.pmid_db.select_pmid_info(self.pmid)
@@ -220,11 +236,18 @@ class PKPopulationSummaryCurationTool(AgentTool):
                 caption = "\n".join([table["caption"], table["footnote"]])
                 source_table = dataframe_to_markdown(table["table"])+"\n\n"+caption
                 source_tables.append(source_table)
-                df = workflow.go_full_text(
-                    title=title,
-                    full_text=source_table,
-                    step_callback=self.output_callback,
-                )
+                try:
+                    df = workflow.go_full_text(
+                        title=title,
+                        full_text=source_table,
+                        step_callback=self.output_callback,
+                    )
+                except Exception as e:
+                    logger.error(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
+                    logger.error(str(e))
+                    print(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
+                    print(str(e))
+                    continue
                 dfs.append(df)
             result_df = pd.concat(dfs, ignore_index=True)
         return result_df, source_tables
@@ -242,11 +265,13 @@ class PKPopulationIndividualCurationTool(AgentTool):
         self.pmid = pmid
         self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
         
-    def _get_tool_name(self) -> str:
-        return "PK Population Individual Curation Tool"
+    @staticmethod
+    def get_tool_name() -> str:
+        return PipelineTypeEnum.PK_POPU_INDIVIDUAL.value
 
-    def _get_tool_description(self) -> str:
-        return "This tool is used to extract the population individual data from the source paper."
+    @staticmethod
+    def get_tool_description() -> str:
+        return "This tool is used to curate the PK population individual data from the source paper."
 
     def _run(self, previous_errors: str):
         pmid_info = self.pmid_db.select_pmid_info(self.pmid)
@@ -289,12 +314,19 @@ class PKPopulationIndividualCurationTool(AgentTool):
                 caption = "\n".join([table["caption"], table["footnote"]])
                 source_table = dataframe_to_markdown(table["table"])+"\n\n"+caption
                 source_tables.append(source_table)
-                df = workflow.go_full_text(
+                try:
+                    df = workflow.go_full_text(
                     title=title,
                     full_text=source_table,
                     step_callback=self.output_callback,
                     previous_errors=previous_errors,
-                )
+                    )
+                except Exception as e:
+                    logger.error(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
+                    logger.error(str(e))
+                    print(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
+                    print(str(e))
+                    continue
                 dfs.append(df)
             result_df = pd.concat(dfs, ignore_index=True)
             return result_df, source_tables
@@ -311,11 +343,13 @@ class PEStudyOutcomeCurationTool(AgentTool):
         self.pmid = pmid
         self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
     
-    def _get_tool_name(self) -> str:
-        return "PE Study Outcome Curation Tool"
-
-    def _get_tool_description(self) -> str:
-        return "This tool is used to extract the study outcome data from the source paper."
+    @staticmethod
+    def get_tool_name() -> str:
+        return PipelineTypeEnum.PE_STUDY_OUTCOME.value
+        
+    @staticmethod
+    def get_tool_description() -> str:
+        return "This tool is used to curate the PE study outcome data from the source paper."
 
     def _run(self, previous_errors: str):
         pmid_info = self.pmid_db.select_pmid_info(self.pmid)
@@ -338,13 +372,20 @@ class PEStudyOutcomeCurationTool(AgentTool):
             caption = "\n".join([table["caption"], table["footnote"]])
             source_table = dataframe_to_markdown(table["table"])
             source_tables.append(source_table)
-            df = workflow.go_md_table(
+            try:
+                df = workflow.go_md_table(
                 title=title,
                 md_table=source_table,
                 caption_and_footnote=caption,
                 step_callback=self.output_callback,
                 previous_errors=previous_errors,
-            )
+                )
+            except Exception as e:
+                logger.error(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
+                logger.error(str(e))
+                print(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
+                print(str(e))
+                continue
             dfs.append(df)
         df_combined = (
             pd.concat(dfs, axis=0).reset_index(drop=True)
