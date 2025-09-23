@@ -1,0 +1,6 @@
+﻿,Drug name, Analyte, Specimen, Population, Pregnancy stage, Subject N, Parameter type, Value, Unit, Summary statistics, Variation type, Variation value, Interval type, Lower limit, High limit, P value
+0,Vancomycin, Vancomycin, , , , , Volume of distribution (Vd),3.62, L, mean, SD,1.94, Min-Max,0.31,8.88, 
+1,Vancomycin, Vancomycin, , , , , Volume of distribution per body weight (Vd),0.7, L/kg, mean, SD,0.48, Min-Max,0.28,2.31, 
+2,Vancomycin, Vancomycin, , , , , Clearance (CL),0.749, L/h, mean, SD,0.454, Min-Max,0.02,1.82, 
+3,Vancomycin, Vancomycin, , , , , Clearance per body weight (CL),0.124, L/h/kg, mean, SD,0.052, Min-Max,0.025,0.268, 
+4,Vancomycin, Vancomycin, , , , , Elimination half-life (t1/2),4.3, h, mean, SD,2.6, Min-Max,1.5,11.3, 
