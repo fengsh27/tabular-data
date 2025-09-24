@@ -1,3 +1,5 @@
+import logging
+
 from extractor.agents.pk_individual.pk_ind_common_step import PKIndCommonAgentStep
 from extractor.agents.pk_individual.pk_ind_common_agent import (
     PKIndCommonAgentResult,
@@ -10,6 +12,7 @@ from extractor.agents.pk_individual.pk_ind_patient_info_refine_agent import (
     post_process_refined_patient_info,
 )
 
+logger = logging.getLogger(__name__)
 
 class PatientInfoRefinementStep(PKIndCommonAgentStep):
     def __init__(self):
@@ -44,3 +47,12 @@ class PatientInfoRefinementStep(PKIndCommonAgentStep):
     def get_post_processor_and_kwargs(self, state: PKIndWorkflowState):
         md_table_patient = state["md_table_patient"]
         return post_process_refined_patient_info, {"md_table_patient": md_table_patient}
+
+    def execute_directly(self, state: PKIndWorkflowState):
+        md_table_patient = state["md_table_patient"] if "md_table_patient" in state else None
+        if md_table_patient is None or len(md_table_patient.strip()) == 0:
+            error_msg = "Population information refinement failed: No valid entries found!"
+            logger.error(error_msg)
+            raise ValueError(error_msg)
+
+        return super().execute_directly(state)

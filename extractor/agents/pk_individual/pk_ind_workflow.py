@@ -50,7 +50,7 @@ logger = logging.getLogger(__name__)
 
 
 class PKIndWorkflow:
-    """pk summary workflow"""
+    """pk individual workflow"""
 
     def __init__(self, llm: BaseChatOpenAI):
         self.llm = llm
@@ -163,6 +163,7 @@ class PKIndWorkflow:
         step_callback: Callable | None = None,
         sleep_time: float | None = None,
         previous_errors: str | None = None,
+        full_text: str | None = None,
     ):
         config = {"recursion_limit": 500}
         previous_errors = previous_errors if previous_errors is not None else "N/A"
@@ -174,6 +175,7 @@ class PKIndWorkflow:
                 "step_callback": step_callback,
                 "title": title if title is not None else "",
                 "previous_errors": previous_errors,
+                "full_text": full_text if full_text is not None else "N/A",
             },
             config=config,
             stream_mode="values",

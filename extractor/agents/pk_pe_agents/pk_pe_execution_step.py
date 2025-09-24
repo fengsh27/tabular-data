@@ -6,7 +6,7 @@ from TabFuncFlow.utils.table_utils import dataframe_to_markdown
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE
 from extractor.agents.common_agent.common_step import CommonStep
 from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState
-from extractor.database.pmid_db import PMIDDB
+
 
 from .pk_pe_agent_tools import (
     AgentTool,

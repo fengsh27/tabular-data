@@ -3,6 +3,7 @@ import pandas as pd
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
+from extractor.agents.common_agent.common_agent_2steps import CommonAgentTwoSteps
 from extractor.agents.pk_individual.pk_ind_common_agent import PKIndCommonAgent
 from extractor.agents.pk_individual.pk_ind_common_step import (
     PKIndCommonStep,
@@ -67,8 +68,10 @@ class DrugMatchingAgentStep(PKIndCommonStep):
             )
             previous_errors_prompt = self._get_previous_errors_prompt(state)
             system_prompt = system_prompt + previous_errors_prompt
-            agent = PKIndCommonAgent(llm=llm)
-            res, processed_res, token_usage = agent.go(
+            agent = CommonAgentTwoSteps(llm=llm)
+            res, processed_res, token_usage, reasoning_process = agent.go(
+            # agent = PKIndCommonAgent(llm=llm)
+            # res, processed_res, token_usage = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=INSTRUCTION_PROMPT,
                 schema=MatchedDrugResult,

@@ -16,7 +16,8 @@ from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usa
 from extractor.database.pmid_db import PMIDDB
 from extractor.request_sonnet import get_sonnet
 from extractor.request_metallama import get_meta_llama
-from extractor.request_openai import get_5_openai
+from extractor.request_openai import get_5_openai, get_openai
+from system_tests.conftest_data import curated_data_29100749, data_caption_29100749_table_2, data_col_mapping_29100749_table_2, data_md_table_aligned_29100749_table_2, data_md_table_drug_29100749_table_2, data_md_table_list_29100749_table_2, data_source_table_29100749_table_2, paper_abstract_29100749, paper_title_29100749
 
 load_dotenv()
 
@@ -65,7 +66,7 @@ def get_gemini():
 
 @pytest.fixture(scope="module")
 def llm():
-    return get_5_openai() # get_azure_openai()  # get_openai() # get_deepseek() # get_sonnet() # get_meta_llama() # get_gemini() # 
+    return get_azure_openai()  # get_openai() # get_deepseek() # get_sonnet() # get_meta_llama() # get_gemini() # get_5_openai() # 
 
 
 ghtml_content = """
@@ -2328,6 +2329,47 @@ def caption_18426260_table_0():
     return """Drug Dose and Plasma Levels in Pregnancy and Postpartum\n aValues were available at 4 to 6 weeks postpartum for breast-feeding mother-infant pairs only.
 bSubject discontinued medication at delivery.
 Abbreviation: NA = not available."""
+
+
+## ==================================================
+## 29100749
+## ==================================================
+
+@pytest.fixture(scope="module")
+def title_29100749():
+    return paper_title_29100749
+
+@pytest.fixture(scope="module")
+def abstract_29100749():
+    return paper_abstract_29100749
+
+@pytest.fixture(scope="module")
+def curated_table_29100749():
+    return curated_data_29100749
+
+@pytest.fixture(scope="module")
+def source_table_29100749_table_2():
+    return data_source_table_29100749_table_2
+
+@pytest.fixture(scope="module")
+def md_table_aligned_29100749_table_2():
+    return data_md_table_aligned_29100749_table_2
+
+@pytest.fixture(scope="module")
+def col_mapping_29100749_table_2():
+    return data_col_mapping_29100749_table_2
+
+@pytest.fixture(scope="module")
+def caption_29100749_table_2():
+    return data_caption_29100749_table_2
+
+@pytest.fixture(scope="module")
+def md_table_list_29100749_table_2():
+    return data_md_table_list_29100749_table_2
+
+@pytest.fixture(scope="module")
+def md_table_drug_29100749_table_2():
+    return data_md_table_drug_29100749_table_2
 
 
 
