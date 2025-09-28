@@ -1,3 +1,10 @@
+## ===============================================
+## 29100749
+## ===============================================
+
+from TabFuncFlow.utils.table_utils import single_html_table_to_markdown
+
+
 paper_title_29100749 = "Presence of benzophenones commonly used as UV filters and absorbers in paired maternal and fetal samples"
 paper_abstract_29100749 = """
 Background: Previous studies have demonstrated widespread exposure of humans to certain benzophenones commonly used as UV filters or UV absorbers; some of which have been demonstrated to have endocrine disrupting abilities.
@@ -239,4 +246,24 @@ data_md_table_drug_29100749_table_2 = """
 | 4-MBP | 4-MBP | Serum |
 | 4-MBP | 4-MBP | Fetal serum |
 | 4-MBP | 4-MBP | Cord blood |
+"""
+
+
+## ===============================================
+## 32635742
+## ===============================================
+
+html_table_32635742_table_0 = """
+<figure class="table" id="tb1"><figcaption><span class="heading">Table 1</span>. Esomeprazole Concentrations in Serum and Breast Milk Samples After 10 mg of Oral Esomeprazole Administration</figcaption><div class="table-wrap" tabindex="0"><table><thead><tr><th data-xml-align="left" rowspan="2">Days postpartum</th><th colspan="2"><span>Maternal serum</span></th><th colspan="2"><span>Umbilical cord blood</span></th><th colspan="2"><span>Infant serum</span></th><th colspan="2"><span>Breast milk</span></th></tr><tr><th>Time after ESO dose (hours)</th><th>ESO concentration (ng/mL)</th><th>Time after ESO dose (hours)</th><th>ESO concentration (ng/mL)</th><th>Time after ESO dose (hours)</th><th>ESO concentration (ng/mL)</th><th>Time after ESO dose (hours)</th><th>ESO concentration (ng/mL)</th></tr></thead><tbody><tr data-xml-align="center" data-xml-valign="bottom"><td data-xml-align="left">−1</td><td>12.2</td><td>35.8</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td></tr><tr data-xml-valign="bottom"><td>0</td><td data-xml-align="center">21.5</td><td data-xml-align="center">0.6</td><td>12.5</td><td>14.8</td><td>23.2</td><td>0.0</td><td> </td><td> </td></tr><tr data-xml-valign="bottom"><td>1</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td></tr><tr data-xml-align="center" data-xml-valign="bottom"><td data-xml-align="left" rowspan="2">2</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>8.2</td><td>3.0</td></tr><tr data-xml-align="center" data-xml-valign="bottom"><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>19.4</td><td>0.0</td></tr><tr data-xml-align="center" data-xml-valign="bottom"><td data-xml-align="left" rowspan="2">3</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>0.7</td><td>10.5</td></tr><tr data-xml-align="center" data-xml-valign="bottom"><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>8.0</td><td>0.0</td></tr><tr data-xml-align="center" data-xml-valign="bottom"><td data-xml-align="left" rowspan="2">4</td><td rowspan="2">3.0</td><td rowspan="2">280.2</td><td> </td><td> </td><td> </td><td> </td><td>4.0</td><td>19.6</td></tr><tr data-xml-align="center" data-xml-valign="bottom"><td> </td><td> </td><td> </td><td> </td><td>10.5</td><td>0.0</td></tr></tbody></table></div><div class="notes"><div role="doc-footnote"><div id="tf1" role="paragraph">ESO, esomeprazole.</div></div></div></figure>
+"""
+
+data_caption_32635742_table_0 = """Table 1. Esomeprazole Concentrations in Serum and Breast Milk Samples After 10 mg of Oral Esomeprazole Administration
+ESO, esomeprazole."""
+
+data_md_table_32635742_table_0 = single_html_table_to_markdown(html_table_32635742_table_0)
+
+paper_title_32635742 = "Esomeprazole During Pregnancy and Lactation: Esomeprazole Levels in Maternal Serum, Cord Blood, Breast Milk, and the Infant's Serum"
+
+paper_abstract_32635742 = """
+Background: Esomeprazole is the S-isomer of omeprazole and is used to treat stomach acid-related diseases. Most data regarding the safety of esomeprazole during pregnancy are derived from studies on omeprazole, and the data characterizing esomeprazole transfer across the placenta and excretion into breast milk are limited. In this report, we discuss the safety of esomeprazole with reference to drug concentrations in maternal and neonatal blood and breast milk. Materials and Methods: After the patient provided informed consent, esomeprazole concentrations in maternal serum, breast milk, cord blood, and infant's serum were measured after 10 mg of maternal oral esomeprazole administration. Case Report: A 34-year-old female diagnosed with rheumatoid arthritis received esomeprazole before and during pregnancy and lactation. The esomeprazole concentration in cord blood was 40% of the level in maternal serum. At 12 hours after delivery (23.2 hours after dose), omeprazole was not detected in the infant's serum. In breast milk, esomeprazole concentrations at 0.7, 4.0, and 8.2 hours after the last dose were 10.5, 19.6, and 3.0 ng/mL, respectively, and esomeprazole was not detected at 10 hours after maternal administration. The calculated daily infant dose of esomeprazole through breast milk was 0.003 mg/[kg·day]. The infant demonstrated normal developmental progress and no detectable drug-related adverse effects. Discussion and Conclusions: Exposure to esomeprazole through placenta and breast milk was not clinically relevant in the infant. Further studies are needed to evaluate any harmful effects after exposure to esomeprazole in utero or during breastfeeding after esomeprazole treatment.
 """

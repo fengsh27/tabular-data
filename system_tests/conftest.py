@@ -17,7 +17,7 @@ from extractor.database.pmid_db import PMIDDB
 from extractor.request_sonnet import get_sonnet
 from extractor.request_metallama import get_meta_llama
 from extractor.request_openai import get_5_openai, get_openai
-from system_tests.conftest_data import curated_data_29100749, data_caption_29100749_table_2, data_col_mapping_29100749_table_2, data_md_table_aligned_29100749_table_2, data_md_table_drug_29100749_table_2, data_md_table_list_29100749_table_2, data_source_table_29100749_table_2, paper_abstract_29100749, paper_title_29100749
+from system_tests.conftest_data import curated_data_29100749, data_caption_29100749_table_2, data_caption_32635742_table_0, data_col_mapping_29100749_table_2, data_md_table_32635742_table_0, data_md_table_aligned_29100749_table_2, data_md_table_drug_29100749_table_2, data_md_table_list_29100749_table_2, data_source_table_29100749_table_2, paper_abstract_29100749, paper_abstract_32635742, paper_title_29100749, paper_title_32635742
 
 load_dotenv()
 
@@ -2371,6 +2371,31 @@ def md_table_list_29100749_table_2():
 def md_table_drug_29100749_table_2():
     return data_md_table_drug_29100749_table_2
 
+## ==================================================
+## 32635742
+## ==================================================
+
+@pytest.fixture(scope="module")
+def title_32635742():
+    return paper_title_32635742
+
+@pytest.fixture(scope="module")
+def abstract_32635742():
+    return paper_abstract_32635742
+
+@pytest.fixture(scope="module")
+def caption_32635742_table_0():
+    return data_caption_32635742_table_0
+
+@pytest.fixture(scope="module")
+def md_table_32635742_table_0():
+    return data_md_table_32635742_table_0
+
+@pytest.fixture(scope="module")
+def full_text_32635742():
+    fn = Path(__file__).parent / "data" / "32635742_full_text.txt"
+    with open(fn, "r") as f:
+        return f.read()
 
 
 # ============================================================================================

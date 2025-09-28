@@ -41,6 +41,7 @@ from extractor.agents.pk_individual.pk_ind_patient_matching_step import (
     PatientMatchingAgentStep,
     PatientMatchingAutomaticStep,
 )
+from extractor.agents.pk_individual.pk_ind_preprocess_step import PKIndPreprocessStep
 from extractor.agents.pk_individual.pk_ind_row_cleanup_step import RowCleanupStep
 from extractor.agents.pk_individual.pk_ind_split_by_col_step import SplitByColumnsStep
 from extractor.agents.pk_individual.pk_ind_time_unit_step import TimeExtractionStep
@@ -76,6 +77,7 @@ class PKIndWorkflow:
                 else "patient_matching_automatic_step"
             )
 
+        preprocess_step = PKIndPreprocessStep()
         drug_info_step = DrugInfoExtractionStep()
         patient_info_step = PatientInfoExtractionStep()
         patient_info_refined_step = PatientInfoRefinementStep()
@@ -95,6 +97,7 @@ class PKIndWorkflow:
 
         #
         graph = StateGraph(PKIndWorkflowState)
+        graph.add_node("preprocess_step", preprocess_step.execute)
         graph.add_node("drug_info_step", drug_info_step.execute)
         graph.add_node("patient_info_step", patient_info_step.execute)
         graph.add_node("patient_info_refined_step", patient_info_refined_step.execute)
@@ -120,7 +123,8 @@ class PKIndWorkflow:
         graph.add_node("row_cleanup_step", row_cleanup_step.execute)
 
         #
-        graph.add_edge(START, "drug_info_step")
+        graph.add_edge(START, "preprocess_step")
+        graph.add_edge("preprocess_step", "drug_info_step")
         graph.add_edge("drug_info_step", "patient_info_step")
         graph.add_edge("patient_info_step", "patient_info_refined_step")
         graph.add_edge("patient_info_refined_step", "summary_data_del_step")
@@ -182,7 +186,8 @@ class PKIndWorkflow:
         ):
             if sleep_time is not None:
                 time.sleep(sleep_time)
-            print(s)
+            # print(s)
+            continue
 
         df_combined = s["df_combined"]
         # column_mapping = {

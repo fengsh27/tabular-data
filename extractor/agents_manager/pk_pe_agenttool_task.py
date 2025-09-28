@@ -83,7 +83,7 @@ class PKPEAgentToolTask(ABC):
             tool=self._create_tool(pmid),
         )
         verification_step = PKPECuratedTablesVerificationStep(
-            llm=self.pipeline_llm, # FIXME: use agent_llm
+            llm=self.agent_llm, # FIXME: use agent_llm
             pmid=pmid,
             domain=self._get_domain(),
         )

@@ -333,3 +333,4 @@ def convert_sections_to_full_text(sections: list[dict[str, str]]) -> str:
     article_text = convert_html_to_text_no_table(article_text)
     article_text = remove_references(article_text)
     return article_text
+
