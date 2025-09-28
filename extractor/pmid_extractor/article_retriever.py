@@ -82,7 +82,9 @@ class ArticleRetriever(object):
         soup = BeautifulSoup(html_content, "html.parser")
         tags = soup.select("div.full-view > div.full-text-links-list > a.link-item")
         if tags is None or len(tags) == 0:
-            return (False, "Can't get full-text url by selector", -1)
+            tags = soup.select("ul.identifiers span.identifier.doi a.id-link")
+            if tags is None or len(tags) == 0:
+                return (False, "Can't get full-text url by selector", -1)
         aTag = tags[0]
         full_text_url = aTag.attrs.get("href", None)
         if full_text_url is None:
