@@ -64,6 +64,9 @@ class PatientInfoExtractionStep(PKIndCommonAgentStep):
         self,
         state: PKIndWorkflowState,
     ) -> tuple[PKIndCommonAgentResult, Any | None, dict | None]:
+
+        # [fixme]: As we have added the preprocess step to handle the case where the table does not contain patient ID 
+        # and use the full text to infer the patient ID, we don't need to infer the patient ID from full text here
         res, processed_res, token_usage = super().execute_directly(state)
         if (processed_res is not None and len(processed_res) > 0) or self.infer_from_fulltext:
             return res, processed_res, token_usage
