@@ -10,8 +10,6 @@ the following table contains pharmacokinetics (PK) data:
 {processed_md_table}
 Here is the table caption:  
 {caption}
-Here is the full text:  
-{full_text}
 Carefully analyze the table, **row by row and column by column**, and follow these steps:
 (1) Identify how many unique [Patient ID, Population, Pregnancy stage] combinations are present in the table.
 Patient ID refers to the identifier assigned to each patient. Use the exact same word in the table. 
