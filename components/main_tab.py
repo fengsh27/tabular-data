@@ -401,21 +401,28 @@ def run_curation(
             caption = "\n".join([tbl.get("caption", ""), tbl.get("footnote", "")])
             wf = wf_cls(llm=llm)
             wf.build()
-            if task == PROMPTS_NAME_PK_SUM:
-                df = wf.go_md_table(
-                    title=title,
-                    md_table=dataframe_to_markdown(tbl["table"]),
-                    caption_and_footnote=caption,
-                    step_callback=_step_callback,
-                )
-            else:
-                df = wf.go_md_table(
-                    title=title,
-                    md_table=dataframe_to_markdown(tbl["table"]),
-                    caption_and_footnote=caption,
-                    step_callback=_step_callback,
-                    full_text=full_text,
-                )            
+            try:
+                if task == PROMPTS_NAME_PK_SUM:
+                    df = wf.go_md_table(
+                        title=title,
+                        md_table=dataframe_to_markdown(tbl["table"]),
+                        caption_and_footnote=caption,
+                        step_callback=_step_callback,
+                    )
+                else:
+                    df = wf.go_md_table(
+                        title=title,
+                        md_table=dataframe_to_markdown(tbl["table"]),
+                        caption_and_footnote=caption,
+                        step_callback=_step_callback,
+                        full_text=full_text,
+                    )
+            except Exception as e:
+                _log(f"Error occurred in curating table {tbl['caption']}")
+                _log(str(e))
+                logger.error(f"Error occurred in curating table {tbl['caption']}")
+                logger.error(str(e))
+                continue
             dfs.append(df)
         if dfs:
             result_df = pd.concat(dfs, ignore_index=True)
@@ -448,11 +455,16 @@ def run_curation(
                 caption = "\n".join([tbl.get("caption", ""), tbl.get("footnote", "")])
                 wf = wf_cls(llm=llm)
                 wf.build()
-                df = wf.go_full_text(
-                    title=title,
-                    full_text=dataframe_to_markdown(tbl["table"])+"\n\n"+caption,
-                    step_callback=_step_callback,
-                )
+                try:
+                    df = wf.go_full_text(
+                        title=title,
+                        full_text=dataframe_to_markdown(tbl["table"])+"\n\n"+caption,
+                        step_callback=_step_callback,
+                    )
+                except Exception as e:
+                    _log(str(e))
+                    logger.error(str(e))
+                    continue
                 dfs.append(df)
             if dfs:
                 result_df = pd.concat(dfs, ignore_index=True)
@@ -474,12 +486,17 @@ def run_curation(
             caption = "\n".join([tbl.get("caption", ""), tbl.get("footnote", "")])
             wf = wf_cls(llm=llm)
             wf.build()
-            df = wf.go_md_table(
-                title=title,
-                md_table=dataframe_to_markdown(tbl["table"]),
-                caption_and_footnote=caption,
-                step_callback=_step_callback,
-            )
+            try:
+                df = wf.go_md_table(
+                    title=title,
+                    md_table=dataframe_to_markdown(tbl["table"]),
+                    caption_and_footnote=caption,
+                    step_callback=_step_callback,
+                )
+            except Exception as e:
+                _log(str(e))
+                logger.error(str(e))
+                continue
             dfs.append(df)
         if dfs:
             result_df = pd.concat(dfs, ignore_index=True)

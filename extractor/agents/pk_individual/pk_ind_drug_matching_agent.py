@@ -39,11 +39,11 @@ SUBTABLE 2 (Drug-Analyte-Specimen Combinations):
    - Example output format: [0, 1, 2, 3, 4, 5, 6, ...]
 
 ### ** Important Instructions:**
-   - The typical process is:
+   - You **must follow** the following steps to match the row in Subtable 1 to the row in Subtable 2:
      For each row in Subtable 1, 
-      * First find the best matching row in **main table** for the row in Subtable 1, 
+      * First find the corresponding row in **main table** for the row in Subtable 1 according to row index (row index in main table is the same as the row index in Subtable 1), 
       * The row in main table provide more context,then find the best matching row in **Subtable 2** according to the row in main table.
-   - As SUBTABLE 1 is extracted from MAIN TABLE in row order, if you cannot determine the best matching row in Subtable 2, 
+   - As SUBTABLE 1 is extracted from MAIN TABLE in row order, if you cannot determine the best matching row in Subtable 2 for a given row in Subtable 1, 
      you can infer the best matching by referring to the row before it or after it.
      For example, main table is like this:
      | Drug Name      | Patient ID      | Parameter Type | Parameter Value |
@@ -77,11 +77,11 @@ SUBTABLE 2 (Drug-Analyte-Specimen Combinations):
      | B3             | B3              | urine           |
      
      1. For the row 0, 1 and 2 in Subtable 1, the best matching row in Subtable 2 is 0 (index).
-     As Subtable 1 is extracted from main table in row order, we can infer the best matching in main table for row 0, 1 and 2 in Subtable 1 are 0, 1 and 2 (index).
+     As Subtable 1 is extracted from main table in row order, the corresponding rows in main table for row 0, 1 and 2 in Subtable 1 are 0, 1 and 2 (index).
      Then, we can determin their drug name from main table are B1, so the best matching rows in Subtable 2 for row 0, 1 and 2 in main table are [0, 0, 0] (index)
-     Thus, the best matching rows in Subtable 2 for the row 0 and row 1 in Subtable 1 are 0 and 1 (index).
+     Thus, the best matching rows in Subtable 2 for the row 0, 1 and 2 in Subtable 1 are [0, 0, 0] (index).
      2. For the row 3, 4 and 5 in Subtable 1, the best matching row in Subtable 2 is 1 (index).
-     Likewise, as the Subtable 1 is extracted from main table in row order, we can infer the best matching rows in main table for the row 3, 4 and 5 are 3, 4 and 5 (index).
+     Likewise, as the Subtable 1 is extracted from main table in row order, the corresponding rows in main table for the row 3, 4 and 5 are 3, 4 and 5 (index).
      Thus, we can determine their drug name from main table are B2, so the best matching rows in Subtable 2 for the row 3, 4 and 5 in main table are [1, 1, 1] (index).
      3. For the row 6, 7 and 8 in Subtable 1, the best matching row in Subtable 2 is 2 (index).
      Likewise, as Subtable 1 is extracted from main table in row order, we can determine the best matching rows in main table for the row 6, 7 and 8 in Subtable 1 are 6, 7 and 8 (index).
