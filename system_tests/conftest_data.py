@@ -126,6 +126,32 @@ curated_data_29100749 = """
 | 4 | 4-MBP | 4-MBP | Cord blood | Maternal | Trimester 3 | N/A | Concentration | ng/ml | < LOD | N/A | N/A |
 """
 
+data_md_table_patient_29100749_table_2 = """
+| Patient ID | Population | Pregnancy stage |
+| --- | --- | --- |
+| "1" | N/A | Cordocentesis |
+| "1" | N/A | Delivery |
+| "2" | N/A | Cordocentesis |
+| "2" | N/A | Delivery |
+| "3" | N/A | Cordocentesis |
+| "3" | N/A | Delivery |
+| "4" | N/A | Cordocentesis |
+| "4" | N/A | Delivery |
+"""
+
+data_md_table_patient_refined_29100749_table_2 = """
+| Patient ID | Population | Pregnancy stage | Pediatric/Gestational age |
+| --- | --- | --- | --- |
+| 1 | Maternal | Trimester 2 | N/A |
+| 1 | Maternal | Parturition | N/A |
+| 2 | Maternal | Trimester 2 | N/A |
+| 2 | Maternal | Parturition | N/A |
+| 3 | Maternal | Trimester 2 | N/A |
+| 3 | Maternal | Parturition | N/A |
+| 4 | Maternal | Trimester 2 | N/A |
+| 4 | Maternal | Parturition | N/A |
+"""
+
 data_md_table_individual_29100749_table_2 = """
 | ('Empty Cell', 'Empty Cell') | ('ID', 'ID') | ('Cordocentesis', 'Urine') | ('Cordocentesis', 'Amnion') | ('Cordocentesis', 'Serum') | ('Cordocentesis', 'Fetal serum') | ('Delivery', 'Urine') | ('Delivery', 'Serum') | ('Delivery', 'Cord blood') |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
