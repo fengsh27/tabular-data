@@ -4,6 +4,7 @@ from pydantic import BaseModel, Field
 from langchain_core.prompts import ChatPromptTemplate
 import logging
 
+from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
 from extractor.agents.common_agent.common_agent import CommonAgent, CommonAgentResult, RetryException
 from extractor.agents.pk_summary.pk_sum_common_agent import (
@@ -259,3 +260,9 @@ def select_pe_tables(html_tables: list[dict[str, str | DataFrame]], llm):
     logger.info(f"Reason: {reasoning_process}")
 
     return tables, res.selected_table_indexes, reasoning_process, token_usage
+
+def add_row_index_column(md_table: str) -> str:
+    df = markdown_to_dataframe(md_table)
+    df.insert(0, "rowIndex", range(len(df)))
+    return dataframe_to_markdown(df)
+    

@@ -324,3 +324,13 @@ def escape_braces_for_format(text: str) -> str:
     # Then replace single { not part of {{
     text = re.sub(r'(?<!{){(?!{)', '{{', text)
     return text
+
+def convert_sections_to_full_text(sections: list[dict[str, str]]) -> str:
+    article_text = "\n".join(
+        f"{sec['section']}\n{sec['content']}" for sec in sections
+    )
+    
+    article_text = convert_html_to_text_no_table(article_text)
+    article_text = remove_references(article_text)
+    return article_text
+

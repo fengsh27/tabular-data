@@ -15,6 +15,7 @@ from extractor.pmid_extractor.article_retriever import ArticleRetriever
 from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
 from extractor.utils import (
     convert_html_to_text_no_table,
+    convert_sections_to_full_text,
     escape_markdown,
     remove_references,
 )
@@ -382,6 +383,7 @@ def run_curation(
 
     result_df: pd.DataFrame | None = None
 
+    full_text = convert_sections_to_full_text(sections) if sections else f"{title}\n{abstract}"
     if task in (PROMPTS_NAME_PK_SUM, PROMPTS_NAME_PK_IND):
         selected_tables, selected_table_indexes, reasoning_process, _ = select_pk_summary_tables(tables, llm)
         if not selected_tables:
@@ -399,12 +401,28 @@ def run_curation(
             caption = "\n".join([tbl.get("caption", ""), tbl.get("footnote", "")])
             wf = wf_cls(llm=llm)
             wf.build()
-            df = wf.go_md_table(
-                title=title,
-                md_table=dataframe_to_markdown(tbl["table"]),
-                caption_and_footnote=caption,
-                step_callback=_step_callback,
-            )
+            try:
+                if task == PROMPTS_NAME_PK_SUM:
+                    df = wf.go_md_table(
+                        title=title,
+                        md_table=dataframe_to_markdown(tbl["table"]),
+                        caption_and_footnote=caption,
+                        step_callback=_step_callback,
+                    )
+                else:
+                    df = wf.go_md_table(
+                        title=title,
+                        md_table=dataframe_to_markdown(tbl["table"]),
+                        caption_and_footnote=caption,
+                        step_callback=_step_callback,
+                        full_text=full_text,
+                    )
+            except Exception as e:
+                _log(f"Error occurred in curating table {tbl['caption']}")
+                _log(str(e))
+                logger.error(f"Error occurred in curating table {tbl['caption']}")
+                logger.error(str(e))
+                continue
             dfs.append(df)
         if dfs:
             result_df = pd.concat(dfs, ignore_index=True)
@@ -413,15 +431,7 @@ def run_curation(
         if not selected_tables:
             _log("No PK demographic table detected. Use full text as the input.")
             _log(reasoning_process)
-            if sections:
-                article_text = "\n".join(
-                    f"{sec['section']}\n{sec['content']}" for sec in sections
-                )
-            else:
-                article_text = f"{title}\n{abstract}"
-
-            article_text = convert_html_to_text_no_table(article_text)
-            article_text = remove_references(article_text)
+            article_text = full_text
 
             full_mapping = {
                 PROMPTS_NAME_PK_POPU_SUM: PKPopuSumWorkflow,
@@ -445,11 +455,16 @@ def run_curation(
                 caption = "\n".join([tbl.get("caption", ""), tbl.get("footnote", "")])
                 wf = wf_cls(llm=llm)
                 wf.build()
-                df = wf.go_full_text(
-                    title=title,
-                    full_text=dataframe_to_markdown(tbl["table"])+"\n\n"+caption,
-                    step_callback=_step_callback,
-                )
+                try:
+                    df = wf.go_full_text(
+                        title=title,
+                        full_text=dataframe_to_markdown(tbl["table"])+"\n\n"+caption,
+                        step_callback=_step_callback,
+                    )
+                except Exception as e:
+                    _log(str(e))
+                    logger.error(str(e))
+                    continue
                 dfs.append(df)
             if dfs:
                 result_df = pd.concat(dfs, ignore_index=True)
@@ -471,25 +486,25 @@ def run_curation(
             caption = "\n".join([tbl.get("caption", ""), tbl.get("footnote", "")])
             wf = wf_cls(llm=llm)
             wf.build()
-            df = wf.go_md_table(
-                title=title,
-                md_table=dataframe_to_markdown(tbl["table"]),
-                caption_and_footnote=caption,
-                step_callback=_step_callback,
-            )
+            try:
+                df = wf.go_md_table(
+                    title=title,
+                    md_table=dataframe_to_markdown(tbl["table"]),
+                    caption_and_footnote=caption,
+                    step_callback=_step_callback,
+                )
+            except Exception as e:
+                _log(str(e))
+                logger.error(str(e))
+                continue
             dfs.append(df)
         if dfs:
             result_df = pd.concat(dfs, ignore_index=True)
     else:
         if sections:
-            article_text = "\n".join(
-                f"{sec['section']}\n{sec['content']}" for sec in sections
-            )
+            article_text = convert_sections_to_full_text(sections)
         else:
             article_text = f"{title}\n{abstract}"
-
-        article_text = convert_html_to_text_no_table(article_text)
-        article_text = remove_references(article_text)
 
         full_mapping = {
             PROMPTS_NAME_PK_SPEC_SUM: PKSpecSumWorkflow,

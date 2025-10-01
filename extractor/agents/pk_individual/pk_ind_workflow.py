@@ -41,6 +41,7 @@ from extractor.agents.pk_individual.pk_ind_patient_matching_step import (
     PatientMatchingAgentStep,
     PatientMatchingAutomaticStep,
 )
+from extractor.agents.pk_individual.pk_ind_preprocess_step import PKIndPreprocessStep
 from extractor.agents.pk_individual.pk_ind_row_cleanup_step import RowCleanupStep
 from extractor.agents.pk_individual.pk_ind_split_by_col_step import SplitByColumnsStep
 from extractor.agents.pk_individual.pk_ind_time_unit_step import TimeExtractionStep
@@ -50,7 +51,7 @@ logger = logging.getLogger(__name__)
 
 
 class PKIndWorkflow:
-    """pk summary workflow"""
+    """pk individual workflow"""
 
     def __init__(self, llm: BaseChatOpenAI):
         self.llm = llm
@@ -76,6 +77,7 @@ class PKIndWorkflow:
                 else "patient_matching_automatic_step"
             )
 
+        preprocess_step = PKIndPreprocessStep()
         drug_info_step = DrugInfoExtractionStep()
         patient_info_step = PatientInfoExtractionStep()
         patient_info_refined_step = PatientInfoRefinementStep()
@@ -95,6 +97,7 @@ class PKIndWorkflow:
 
         #
         graph = StateGraph(PKIndWorkflowState)
+        graph.add_node("preprocess_step", preprocess_step.execute)
         graph.add_node("drug_info_step", drug_info_step.execute)
         graph.add_node("patient_info_step", patient_info_step.execute)
         graph.add_node("patient_info_refined_step", patient_info_refined_step.execute)
@@ -120,7 +123,8 @@ class PKIndWorkflow:
         graph.add_node("row_cleanup_step", row_cleanup_step.execute)
 
         #
-        graph.add_edge(START, "drug_info_step")
+        graph.add_edge(START, "preprocess_step")
+        graph.add_edge("preprocess_step", "drug_info_step")
         graph.add_edge("drug_info_step", "patient_info_step")
         graph.add_edge("patient_info_step", "patient_info_refined_step")
         graph.add_edge("patient_info_refined_step", "summary_data_del_step")
@@ -163,6 +167,7 @@ class PKIndWorkflow:
         step_callback: Callable | None = None,
         sleep_time: float | None = None,
         previous_errors: str | None = None,
+        full_text: str | None = None,
     ):
         config = {"recursion_limit": 500}
         previous_errors = previous_errors if previous_errors is not None else "N/A"
@@ -174,13 +179,15 @@ class PKIndWorkflow:
                 "step_callback": step_callback,
                 "title": title if title is not None else "",
                 "previous_errors": previous_errors,
+                "full_text": full_text if full_text is not None else "N/A",
             },
             config=config,
             stream_mode="values",
         ):
             if sleep_time is not None:
                 time.sleep(sleep_time)
-            print(s)
+            # print(s)
+            continue
 
         df_combined = s["df_combined"]
         # column_mapping = {

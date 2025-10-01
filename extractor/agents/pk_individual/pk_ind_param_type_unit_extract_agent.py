@@ -20,7 +20,19 @@ Below is Subtable 1:
 {processed_md_sub_table}
 Please note that the column "{key_with_parameter_type}" in Subtable 1 roughly represents the parameter type.
 Carefully analyze the table and follow these steps:  
-(1) Refer to the "{key_with_parameter_type}" column in Subtable 1 to construct three separate lists: one for a new "Parameter type", one for "Parameter unit", and one for "Parameter value". If the information in Subtable 1 is too coarse or ambiguous, you may need to refer to the main table and its caption to refine and clarify your summarized "Parameter type" and "Parameter unit", and, if necessary, "Parameter value".
+(1) Refer to the "{key_with_parameter_type}" column in Subtable 1 to construct three separate lists: one for a new "Parameter type", 
+  one for "Parameter unit", and one for "Parameter value". If the information in Subtable 1 is too coarse or ambiguous, you may need 
+  to refer to the main table and its caption to refine and clarify your summarized "Parameter type" and "Parameter unit", 
+  and if necessary, "Parameter value".
+(1a) **No-Loss Normalization Rule for "Parameter type":**
+    - **Do not drop or merge away any subcomponents.** Preserve every informative token (e.g., matrix, method, timing).
+    - If "Parameter type" is a tuple/list (e.g., `('Cordocentesis', 'Serum')`), **concatenate all elements in order** using `" - "` as the delimiter.  
+      Examples:  
+      - `('Cordocentesis', 'Serum')` → `Cordocentesis-Serum`  
+      - `('Maternal', 'Plasma', 'Trough')` → `Maternal-Plasma-Trough`  
+      - Nested/compound values: `(('Umbilical', 'Vein'), 'Plasma')` → `Umbilical-Vein-Plasma`
+    - Remove brackets/quotes only; **keep original wording and capitalization** (no abbreviations unless already present).
+    - If already a single string, use it as-is (after trimming whitespace).
 (2) Return a tuple containing three lists:  
     - The first list should contain the extracted "Parameter type" values.  
     - The second list should contain the corresponding "Parameter unit" values.  
@@ -30,7 +42,8 @@ Carefully analyze the table and follow these steps:
 (4) For rows in Subtable 1 that can not be extracted, enter "N/A" for the entire row. 
 (5) The returned list should be like this:  
     (["Parameter type 1", "Parameter type 2", ...], ["Unit 1", "Unit 2", ...], ["Value 1", "Value 2", ...])  
-(6) **Keep the parameter type simple and informative, e.g. "Concentration", "Cmax", "Tmax" etc.**
+(6) **Keep the parameter type simple and informative (e.g. "Concentration", "Cmax", "Tmax" etc)**, **while still applying the No-Loss rule above 
+  for composite labels** (e.g., keep matrices/contexts like `Cordocentesis-Serum` intact).
 """)
 
 

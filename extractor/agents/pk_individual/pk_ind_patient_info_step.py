@@ -1,13 +1,16 @@
+from typing import Any
 from extractor.agents.agent_utils import (
     display_md_table,
     extract_integers,
 )
+from extractor.agents.pk_individual.pk_ind_common_agent import PKIndCommonAgentResult
 from extractor.agents.pk_individual.pk_ind_common_step import PKIndCommonAgentStep
 from extractor.agents.pk_individual.pk_ind_patient_info_agent import (
     PATIENT_INFO_PROMPT,
     PatientInfoResult,
     post_process_convert_patient_info_to_md_table,
 )
+from extractor.agents.pk_individual.pk_ind_workflow_utils import PKIndWorkflowState
 
 
 class PatientInfoExtractionStep(PKIndCommonAgentStep):
@@ -29,7 +32,7 @@ class PatientInfoExtractionStep(PKIndCommonAgentStep):
         )
         previous_errors_prompt = self._get_previous_errors_prompt(state)
         return system_prompt + previous_errors_prompt
-
+    
     def leave_step(self, state, res, processed_res=None, token_usage=None):
         if processed_res is not None:
             state["md_table_patient"] = processed_res
@@ -42,3 +45,12 @@ class PatientInfoExtractionStep(PKIndCommonAgentStep):
 
     def get_schema(self):
         return PatientInfoResult
+
+    def execute_directly(
+        self,
+        state: PKIndWorkflowState,
+    ) -> tuple[PKIndCommonAgentResult, Any | None, dict | None]:
+        res, processed_res, token_usage = super().execute_directly(state)
+        return res, processed_res, token_usage
+        
+        

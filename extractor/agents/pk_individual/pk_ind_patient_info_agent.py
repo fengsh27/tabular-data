@@ -13,12 +13,13 @@ Here is the table caption:
 Carefully analyze the table, **row by row and column by column**, and follow these steps:
 (1) Identify how many unique [Patient ID, Population, Pregnancy stage] combinations are present in the table.
 Patient ID refers to the identifier assigned to each patient. Use the exact same word in the table. 
-Population is the patient age group.
-Pregnancy stage is the pregnancy stages of patients mentioned in the study.
+Population is the patient age group, if **not present**, use "N/A".
+Pregnancy stage is the pregnancy stages of patients mentioned in the study, if **not present**, use "N/A".
 (2) List each unique combination in the format of a list of lists in one line, using Python string syntax. Your answer should be enclosed in double angle brackets <<>>.
 (3) Ensure that all elements in the list of lists are **strings**, especially Patient ID, which must be enclosed in double quotes (`""`).
 (4) Verify the source of each [Patient ID, Population, Pregnancy stage] combination before including it in your answer.
 (5) If any information is missing, first try to infer it from the available data (e.g., using context, related entries, or common pharmacokinetic knowledge). Only use "N/A" as a last resort if the information cannot be reasonably inferred.
+(6) If you **cannot identify any individual patient (Patient ID)**, just return empty list, **do not** make up anything. 
 """)
 
 INSTRUCTION_PROMPT = "Do not give the final result immediately. First, explain your thought process, then provide the answer."

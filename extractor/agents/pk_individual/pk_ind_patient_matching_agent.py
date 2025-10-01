@@ -50,6 +50,66 @@ Carefully analyze the tables and follow these instructions step by step:
 5. **If No Match Found:**
    - If a row in Subtable 1 cannot be matched even after applying all criteria, return `-1` for that row.
    - Use this only as a last resort.
+
+### ** Important Instructions:**
+   - You **must follow** the following steps to match the row in Subtable 1 to the row in Subtable 2:
+     For each row in Subtable 1, 
+      * First find the corresponding row in **main table** for the row in Subtable 1 according to row index (row index in main table is the same as the row index in Subtable 1), 
+      * The row in main table provide more context,then find the best matching row in **Subtable 2** according to the row in main table.
+   - As SUBTABLE 1 is extracted from MAIN TABLE in row order, if you cannot determine the best matching row in Subtable 2 for a given row in Subtable 1, 
+     you can infer the best matching by referring to the row before it or after it.
+
+### ** Example:**
+    
+    Main Table:
+     | Drug Name      | Patient ID      | Delivery         | Parameter Value | Cordocentesis | Parmeter Value |
+     | -------------- | --------------- | --------------- | --------------- | ------------- | ------------- |
+     | B1             | 1               | urine           | -               | Amnion        | -              |
+     | B1             | 2               | urine           | -               | Amnion        | -              |
+     | B1             | 3               | urine           | -               | Amnion        | -              |
+     | B2             | 1               | urine           | -               | Amnion        | -              |
+     | B2             | 2               | urine           | -               | Amnion        | -              |
+     | B2             | 3               | urine           | -               | Amnion        | -              |
+     | B3             | 1               | urine           | -               | Amnion        | -              |
+     | B3             | 2               | urine           | -               | Amnion        | -              |
+     | B3             | 3               | urine           | -               | Amnion        | -              |
+    
+    Subtable 1:
+    | Patient ID | Parameter Type   | Parameter Value |
+    | 1          | Delivery - urine | -               |
+    | 2          | Delivery - urine | -               |
+    | 3          | Delivery - urine | -               |
+    | 1          | Delivery - urine | -               |
+    | 2          | Delivery - urine | -               |
+    | 3          | Delivery - urine | -               |
+    | 1          | Delivery - urine | -               |
+    | 2          | Delivery - urine | -               |
+    | 3          | Delivery - urine | -               |
+
+    Subtable 2:
+    | Patient ID | Population   | Pregnancy Stage      | Pediatric/Gestational age |
+    | 1          | N/A          | Delivery             | N/A                       |
+    | 2          | N/A          | Delivery             | N/A                       |
+    | 3          | N/A          | Delivery             | N/A                       |
+    | 1          | N/A          | Cordocentesis        | N/A                       |
+    | 2          | N/A          | Cordocentesis        | N/A                       |
+    | 3          | N/A          | Cordocentesis        | N/A                       |
+
+    1. For the row 0, 1 and 2 in Subtable 1, the best matching row in Subtable 2 is 0, 1, and 2 (index).
+    As Subtable 1 is extracted from main table in row order, the corresponding rows in main table for row 0, 1 and 2 in Subtable 1 are 0, 1 and 2 (index).
+    Then, we can determin their patient id from main table are 1, 2 and 3, so the best matching rows in Subtable 2 for row 0, 1 and 2 in main table are [0, 1, 2] (index).
+    Thus, the best matching rows in Subtable 2 for the row 0, 1 and 2 in Subtable 1 are [0, 1, 2] (index).
+    2. For the row 3, 4 and 5 in Subtable 1, the best matching row in Subtable 2 is 0, 1 and 2 (index).
+    Likewise, as the Subtable 1 is extracted from main table in row order, the corresponding rows in main table for the row 3, 4 and 5 are 3, 4 and 5 (index).
+    Thus, we can determine their patient id from main table are 1, 2 and 3, so the best matching rows in Subtable 2 for the row 3, 4 and 5 in main table are [0, 1, 2] (index).
+    Thus, the best matching rows in Subtable 2 for the row 3, 4 and 5 in Subtable 1 are [0, 1, 2] (index).
+    3. For the row 6, 7 and 8 in Subtable 1, the best matching row in Subtable 2 is 0, 1 and 2 (index).
+    Likewise, as the Subtable 1 is extracted from main table in row order, the corresponding rows in main table for the row 6, 7 and 8 are 6, 7 and 8 (index).
+    Thus, we can determine their patient id from main table are 1, 2 and 3, so the best matching rows in Subtable 2 for the row 6, 7 and 8 in main table are [0, 1, 2] (index).
+    Thus, the best matching rows in Subtable 2 for the row 6, 7 and 8 in Subtable 1 are [0, 1, 2] (index).
+
+    So, we get the best matching rows in Subtable 2 for the row 0, 1, 2, 3, 4, 5, 6, 7 and 8 in Subtable 1 are [0, 1, 2, 0, 1, 2, 0, 1, 2] (index).
+    
 """)
 
 def get_matching_patient_prompt(

@@ -134,7 +134,7 @@ Suggested fix:
         )
         instruction_prompt = COT_USER_INSTRUCTION
 
-        agent = CommonAgentTwoSteps(llm=self.llm)
+        agent = CommonAgent(llm=self.llm) # CommonAgentTwoSteps(llm=self.llm)
 
         res, _, token_usage, reasoning_process = agent.go(
             system_prompt=system_prompt,
