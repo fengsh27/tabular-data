@@ -23,7 +23,7 @@ Here is the table caption:
 Carefully analyze the table, **row by row and column by column**, and follow these steps:
 (1) Check if the table contains patient ID.
 (2) If the table contains patient ID, return "True".
-(3) If the table does not contain patient ID, return "False".
+(3) If the table does not contain patient ID, try to infer the individual patient ID for each row, return "True" if you can infer the patient ID for each row, otherwise return "False".
 
 ---
 
@@ -128,9 +128,13 @@ Mismatch: Expected {df_table.shape[0]} rows, but got {len(patient_ids)} extracte
 
     def execute_directly(self, state):
         # First check if the table contains patient ID
+        md_table = state["md_table"]
+        caption = state["caption"]
+        self._step_output(state, step_output=f"Caption: \n{caption}")
+        self._step_output(state, step_output=f"md_able: \n{md_table}")
         system_prompt = CHECK_PATIENT_ID_SYSTEM_PROMPT.format(
-            processed_md_table=display_md_table(state["md_table"]),
-            caption=state["caption"],
+            processed_md_table=display_md_table(md_table),
+            caption=caption,
         )
         agent = PKIndCommonAgent(llm=state["llm"])
         res, processed_res, cur_token_usage = agent.go(

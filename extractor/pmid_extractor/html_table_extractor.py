@@ -22,7 +22,7 @@ def get_tag_text(tag: Tag) -> str:
 
 class HtmlTableParser(object):
     MAX_LEVEL = 3
-    CAPTION_TAG_CANDIDATES = ["figcaption"]
+    CAPTION_TAG_CANDIDATES = ["figcaption", "h2", "h3"]
     CAPTION_CANDIDATES = ["caption", "captions", "title"]
     FOOTNOTE_CANDIDATES = ["note", "legend", "description", "foot", "notes"]
 
