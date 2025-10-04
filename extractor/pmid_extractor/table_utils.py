@@ -32,16 +32,22 @@ Select tables that include any of the following:
   * Plasma
   * Serum
   * Urine
-  * Cord blood
+  * Cord blood (umbilical venous, umbilical arterial)
+  * Breast milk
+  * Amniotic fluid
+  * Cerebrospinal fluid (CSF)
   * Tissues
 
-* **PK parameters**, such as:
+* **PK parameters (These are often abbreviated and will have associated units (e.g., ng/ml, L/h, hours))**, such as:
 
   * AUC (Area Under the Curve)
   * Cmax (Maximum concentration)
   * Tmax (Time to Cmax)
   * t½ (Half-life)
-  * Volume of distribution, clearance, bioavailability, etc.
+  * Elimination rate constant (Kel)
+  * Volume of distribution 
+  * Clearance (CL)
+  * Ratios of concentration (e.g., breastmilk to plasma concentration ratio, mother to child serum concentration ratio), etc.
 
 * **ADME-related characteristics**, including time profiles and cumulative excretion data.
 
@@ -51,8 +57,8 @@ Select tables that include any of the following:
 
 Do **not** include tables that:
 
-* Primarily present **regression models**, **statistical modeling**, or **correlational analyses** of PK parameters.
-* Focus only on **demographics**, **treatment groups**, or **non-PK safety outcomes**.
+* Primarily present **regression models**, **covariate analyses**, **population PK (PopPK) modeling results **, **statistical modeling**, or **correlational analyses between PK parameters and other variables**.
+* Focus only on **patient demographics and baseline characteristics**, **treatment groups or study arm information**, or **non-PK safety outcomes**.
 
 ---
 
@@ -146,14 +152,20 @@ def select_pk_summary_tables(html_tables: list[dict[str, str | DataFrame]], llm)
 
 
 SELECT_DEMOGRAPHIC_TABLES_PROMPT = ChatPromptTemplate.from_template("""
-Analyze the provided content and identify all tables related to demographic data. 
+Analyze the provided content and identify all tables related to patient demographic data or baseline clinical characteristics. The goal is to capture the initial profile of the study population, not the results or outcomes of the study. These tables are often the first ones a publication and typically labeled with titles such as:
+ · Patient Demographics
+ · Baseline characteristics of the study population
+ · Summary of patient characteristics
+ · Demographic and clinical characteristics
 
 ---
 
 ### **Inclusion Criteria**
 
-Focus particularly on tables that report Population-focused characteristics. Not PK parameter!!!
-    · “Age," “Sex," "Weight," “Gender," “Race," “Ethnicity"
+Focus particularly on tables that report Population-focused characteristics. Not PK parameter!!! 
+    · “Age," “Sex," "Height or Length," "Weight," “Gender," “Race," “Ethnicity"
+    · "Gravidity," "Parity," "Gestational Age," "Pre-existing medical conditions,"
+    · "Birth Weight," "Apgar Score," "Head Circumference," "Feeding Status," 
     · “Socioeconomic status," “Education," “Marital status"
     · “Comorbidity," “Drug indication," “Adverse events"
     · “Severity," “BMI," “Smoking status," “Alcohol use," "Blood pressure"
@@ -169,6 +181,7 @@ Return a Python list of the relevant **table indexes** in the **exact format** b
 ```
 
 Do not include any explanations or extra output.
+
 ---
 
 ### **Output Example**
@@ -209,9 +222,16 @@ def select_pk_demographic_tables(html_tables: list[dict[str, str | DataFrame]], 
 
 
 SELECT_PE_TABLES_PROMPT = ChatPromptTemplate.from_template("""
-Analyze the provided content and identify all tables that include any outcomes or measurements potentially affected by the drug under study.
+Analyze the provided content and identify all tables that include any clinical trial outcomes (both efficacy and safety), measurements potentially affected by the drug under study, or pharmaco-epidemiologic findings.
 
-If a table contains any variables that may reflect the effect of drug exposure—such as clinical outcomes, adverse events, treatment response, laboratory values, or other health indicators—include it.
+If a table contains any variables that may reflect:
+ * Efficacy of the drug, such as treatment response, change from baseline, time-to-event 
+ * Safety outcomes: counts or frequencies of adverse events, severity, serious adverse events, laboratory abnormalities, or other health indicators—include it.
+
+If a table contains any variables that may focus on association, risk, and prevalence rather than the direct efficacy found in a controlled trial:
+ * Measures of association, e.g., Odds ratio, Risk ratio or Relative risk, Hazard ratio
+ * Incidence and prevalence - include it.
+
 
 If such variables are present, the table should be included regardless of context or causality.
 
