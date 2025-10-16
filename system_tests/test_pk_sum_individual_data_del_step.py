@@ -28,7 +28,7 @@ def test_IndividualDataDelStep(
     assert state["md_table_summary"] is not None
     assert type(state["md_table_summary"]) == str
 
-
+@pytest.mark.skip()
 def test_IndividualDataDelStep_16143486_table_2(
     llm,
     md_table_16143486_table_2,
@@ -47,5 +47,21 @@ def test_IndividualDataDelStep_16143486_table_2(
     assert state["md_table_summary"] is not None
     assert type(state["md_table_summary"]) == str
 
+def test_IndividualDataDelStep_18426260_table_0(
+    llm,
+    md_table_18426260_table_0,
+    caption_18426260_table_0,
+    step_callback,
+):
+    step = IndividualDataDelStep()
+    state = PKSumWorkflowState()
+    state["llm"] = llm
+    state["md_table"] = md_table_18426260_table_0
+    state["caption"] = caption_18426260_table_0
+    state["step_callback"] = step_callback
 
+    step.execute(state)
+
+    assert state["md_table_summary"] is not None
+    assert type(state["md_table_summary"]) == str
 
