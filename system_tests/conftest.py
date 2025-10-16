@@ -17,7 +17,7 @@ from extractor.database.pmid_db import PMIDDB
 from extractor.request_sonnet import get_sonnet
 from extractor.request_metallama import get_meta_llama
 from extractor.request_openai import get_5_openai, get_openai
-from system_tests.conftest_data import curated_data_29100749, data_caption_29100749_table_0, data_caption_29100749_table_2, data_caption_32635742_table_0, data_col_mapping_29100749_table_2, data_md_table_32635742_table_0, data_md_table_aligned_29100749_table_2, data_md_table_drug_29100749_table_2, data_md_table_individual_29100749_table_2, data_md_table_list_29100749_table_2, data_md_table_patient_29100749_table_2, data_md_table_patient_refined_29100749_table_2, data_source_table_29100749_table_0, data_source_table_29100749_table_2, paper_abstract_29100749, paper_abstract_32635742, paper_title_29100749, paper_title_32635742
+from system_tests.conftest_data import curated_data_29100749, data_caption_29100749_table_0, data_caption_29100749_table_2, data_caption_32635742_table_0, data_col_mapping_29100749_table_2, data_md_table_18426260_table_0, data_md_table_32635742_table_0, data_md_table_aligned_29100749_table_2, data_md_table_drug_29100749_table_2, data_md_table_individual_29100749_table_2, data_md_table_list_29100749_table_2, data_md_table_patient_29100749_table_2, data_md_table_patient_refined_29100749_table_2, data_source_table_29100749_table_0, data_source_table_29100749_table_2, paper_abstract_29100749, paper_abstract_32635742, paper_title_29100749, paper_title_32635742
 
 load_dotenv()
 
@@ -2329,6 +2329,10 @@ def caption_18426260_table_0():
     return """Drug Dose and Plasma Levels in Pregnancy and Postpartum\n aValues were available at 4 to 6 weeks postpartum for breast-feeding mother-infant pairs only.
 bSubject discontinued medication at delivery.
 Abbreviation: NA = not available."""
+
+@pytest.fixture(scope="module")
+def md_table_18426260_table_0():
+    return data_md_table_18426260_table_0
 
 
 ## ==================================================

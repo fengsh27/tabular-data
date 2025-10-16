@@ -146,7 +146,7 @@ def _generate_table_prompts(tbl: dict[str, str | DataFrame], id: str | None = No
     caption = tbl.get("caption", None)
     table = tbl.get("table", None)
     footnote = tbl.get("footnote", None)
-    table_text = f"markdown table {id_str} including caption and footnote is:\n"
+    table_text = f"  - markdown table {id_str} including caption and footnote is:\n"
     if caption is not None:
         table_text += f"table caption: {caption}\n"
     if table is not None:
@@ -167,7 +167,7 @@ def generate_tables_prompts(
     for i in range(len(tables)):
         table = tables[i]
         prompts += _generate_table_prompts(
-            table, str(i) if add_table_index is not None else None
+            table, str(i) if add_table_index else None
         )
         prompts += "\n"
     return prompts

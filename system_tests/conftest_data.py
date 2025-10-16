@@ -343,4 +343,42 @@ paper_abstract_32635742 = """
 Background: Esomeprazole is the S-isomer of omeprazole and is used to treat stomach acid-related diseases. Most data regarding the safety of esomeprazole during pregnancy are derived from studies on omeprazole, and the data characterizing esomeprazole transfer across the placenta and excretion into breast milk are limited. In this report, we discuss the safety of esomeprazole with reference to drug concentrations in maternal and neonatal blood and breast milk. Materials and Methods: After the patient provided informed consent, esomeprazole concentrations in maternal serum, breast milk, cord blood, and infant's serum were measured after 10 mg of maternal oral esomeprazole administration. Case Report: A 34-year-old female diagnosed with rheumatoid arthritis received esomeprazole before and during pregnancy and lactation. The esomeprazole concentration in cord blood was 40% of the level in maternal serum. At 12 hours after delivery (23.2 hours after dose), omeprazole was not detected in the infant's serum. In breast milk, esomeprazole concentrations at 0.7, 4.0, and 8.2 hours after the last dose were 10.5, 19.6, and 3.0 ng/mL, respectively, and esomeprazole was not detected at 10 hours after maternal administration. The calculated daily infant dose of esomeprazole through breast milk was 0.003 mg/[kg·day]. The infant demonstrated normal developmental progress and no detectable drug-related adverse effects. Discussion and Conclusions: Exposure to esomeprazole through placenta and breast milk was not clinically relevant in the infant. Further studies are needed to evaluate any harmful effects after exposure to esomeprazole in utero or during breastfeeding after esomeprazole treatment.
 """
 
+## ===============================================
+## 18426260
+## ===============================================
 
+data_md_table_18426260_table_0 = """
+| ('Unnamed: 0_level_0', 'Subject') | ('20 Weeks', 'Dose,  mg/d') | ('20 Weeks', 'Plasma  Level,  ng/mL') | ('30 Weeks', 'Dose,  mg/d') | ('30 Weeks', 'Plasma  Level,  ng/mL') | ('36 Weeks', 'Dose,  mg/d') | ('36 Weeks', 'Plasma  Level,  ng/mL') | ('Delivery', 'Dose,  mg/d') | ('Delivery', 'Plasma  Level,  ng/mL') | ('Postpartum 2 Weeks', 'Dose,  mg/d') | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | ('Postpartum  4 to 6 Weeksa', 'Dose,  mg/d') | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | ('Postpartum  12 Weeks', 'Dose,  mg/d') | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| S-citalopram | 40 | 32 | 40 | 40 | 50 | 25 | 50 | 15 | NA | NA | NA | NA | 50 | 18 |
+| R-citalopram |  | 62 |  | 64 |  | 41 |  | 24 | NA | NA | NA | NA |  | 36 |
+| 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 |
+| S-citalopram | 20 | 14 | 20 | 14 | 40 | 18 | NA | NA | 40 | 54 | NA | NA | 40 | 27 |
+| R-citalopram |  | 24 |  | 24 |  | 36 | NA | NA |  | 101 | NA | NA |  | 75 |
+| 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b |
+| S-citalopram | 30 | 19 | 30 | 9 | 20 | 5 | … | … | … | … | … | … | … | … |
+| R-citalopram |  | 41 |  | 22 |  | 14 | … | … | … | … | … | … | … | … |
+| 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 |
+| S-citalopram | 10 | 17 | 10 | 10 | 10 | 13 | 10 | 14 | 10 | 24 | NA | NA | NA | NA |
+| 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 |
+| S-citalopram | 20 | 58 | 20 | 70 | 20 | 67 | NA | NA | 20 | 95 | NA | NA | 20 | 63 |
+| 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 |
+| S-sertraline | NA | NA | 50 | 27 | NA | NA | 50 | 11 | NA | NA | 50 | 27 | 50 | 21 |
+| N-desmethylsertraline |  | NA |  | 44 |  | NA |  | 26 |  | NA |  | 52 |  | 50 |
+| 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 |
+| S-sertraline | 50 | 10 | 50 | 20 | 100 | 16 | 50 | 7 | 50 | 22 | 50 | 15 | NA | NA |
+| N-desmethylsertraline |  | 18 |  | 40 |  | 66 |  | 32 |  | 41 |  | 29 |  | NA |
+| 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 |
+| S-sertraline | 50 | 4 | 75 | 10 | 100 | 39 | NA | NA | 200 | 21 | NA | NA | 200 | 21 |
+| N-desmethylsertraline |  | 16 |  | 17 |  | 74 |  | NA |  | 59 |  | NA |  | 29 |
+| 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 |
+| S-sertraline | NA | NA | 150 | 17 | 200 | 43 | 200 | 32 | 200 | 39 | NA | NA | NA | NA |
+| N-desmethylsertraline |  | NA |  | 141 |  | 147 |  | 120 |  | 149 |  | NA |  | NA |
+| 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 |
+| S-sertraline | 100 | 93 | 100 | 45 | NA | NA | 100 | 28 | NA | NA | 100 | 62 | NA | NA |
+| N-desmethylsertraline |  | 72 |  | 92 |  | NA |  | 59 |  | NA |  | 74 |  | NA |
+| 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 |
+| S-sertraline | 50 | 32 | 75 | 18 | 75 | 23 | 100 | 32 | NA | NA | 100 | 83 | 125 | 99 |
+| N-desmethylsertraline |  | 52 |  | 77 |  | 73 |  | 97 |  | NA |  | 128 |  | 183 |
+"""
