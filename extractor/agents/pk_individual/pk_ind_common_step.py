@@ -112,6 +112,9 @@ class PKIndCommonAgentStep(PKIndCommonStep):
     ]:
         """get post_processor and its kwargs"""
 
+    def get_agent(self, state: PKIndWorkflowState) -> PKIndCommonAgent:
+        return PKIndCommonAgent(llm=state["llm"])
+
     def execute_directly(
         self, state: PKIndWorkflowState
     ) -> tuple[
@@ -122,37 +125,38 @@ class PKIndCommonAgentStep(PKIndCommonStep):
         """execute step directly"""
         system_prompt = self.get_system_prompt(state)
         instruction_prompt = self.get_instruction_prompt(state)
-        llm = state["llm"]
         schema = self.get_schema()
         post_process, kwargs = self.get_post_processor_and_kwargs(state)
-        agent = PKIndCommonAgent(llm=llm)
+        agent = self.get_agent(state)
+        reasoning_process = ""
         if kwargs is not None:
-            res, processed_res, token_usage = agent.go(
+            res_tuple = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=schema,
                 post_process=post_process,
                 **kwargs,
             )
+            if len(res_tuple) == 3:
+                res, processed_res, token_usage = res_tuple
+                reasoning_process = (res["reasoning_process"] if type(res) == dict else res.reasoning_process)
+            elif len(res_tuple) == 4:
+                res, processed_res, token_usage, reasoning_process = res_tuple
+            else:
+                raise ValueError(f"Invalid return value from agent.go: {res_tuple}")
         else:
-            res, processed_res, token_usage = agent.go(
+            res_tuple = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=schema,
                 post_process=post_process,
             )
-        reasoning_process = ""
-        if res is not None:
-            try:
-                reasoning_process = (
-                    res["reasoning_process"]
-                    if type(res) == dict
-                    else res.reasoning_process
-                )
-            except Exception as e:
-                logger.error(
-                    f"Failed to access res.reasoning_process.\nError is {str(e)}"
-                )
-                pass
+            if len(res_tuple) == 3:
+                res, processed_res, token_usage = res_tuple
+                reasoning_process = (res["reasoning_process"] if type(res) == dict else res.reasoning_process)
+            elif len(res_tuple) == 4:
+                res, processed_res, token_usage, reasoning_process = res_tuple
+            else:
+                raise ValueError(f"Invalid return value from agent.go: {res_tuple}")
         self._step_output(state, step_reasoning_process=reasoning_process)
         return res, processed_res, token_usage

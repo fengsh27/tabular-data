@@ -1,4 +1,5 @@
 from extractor.agents.agent_utils import display_md_table
+from extractor.agents.common_agent.common_agent_2steps import CommonAgentTwoSteps
 from extractor.agents.pk_individual.pk_ind_common_step import PKIndCommonAgentStep
 from extractor.agents.pk_individual.pk_ind_summary_data_del_agent import (
     SUMMARY_DATA_DEL_PROMPT,
@@ -25,6 +26,9 @@ class SummaryDataDelStep(PKIndCommonAgentStep):
 
     def get_schema(self):
         return SummaryDataDelResult
+
+    # def get_agent(self, state):
+    #     return CommonAgentTwoSteps(llm=state["llm"])
 
     def get_post_processor_and_kwargs(self, state):
         md_table = state["md_table"]
