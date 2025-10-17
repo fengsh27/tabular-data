@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "tabula-data"
-version = "0.2.26"
+version = "0.2.27"
 description = "tabula data"
 authors = ["fengsh <shaohong.feng.78@gmail.com>"]
 license = "MIT"
