@@ -4,6 +4,7 @@ from langchain_openai.chat_models.base import BaseChatOpenAI
 
 import logging
 
+from TabFuncFlow.utils.table_utils import dataframe_to_markdown
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, extract_pmid_info_to_db, increase_token_usage
 
 from extractor.agents.pk_pe_agents.pk_pe_design_step import PKPEDesignStep
@@ -75,14 +76,20 @@ class PKPEManager:
         pmid, _, _, _, _, _ = extract_pmid_info_to_db(pmid, pmid_db)
         return pmid is not None
 
+    def _format_source_tables(self, source_tables: list[dict]) -> str:
+        tables = source_tables if source_tables is not None else []
+        return "\n".join([f"caption: \n{table['caption']}\n\n table: \n{dataframe_to_markdown(table['table'])}" for table in tables])
+
     def _identification_step(self, pmid: str) -> PKPECurationWorkflowState:
         pmid_db = self.pmid_db
         pmid_info = pmid_db.select_pmid_info(pmid)
+        source_tables = self._format_source_tables(pmid_info[4])
         state = PKPECurationWorkflowState(
             pmid=pmid,
             paper_title=pmid_info[1],
             paper_abstract=pmid_info[2],
             full_text=pmid_info[3],
+            source_tables=source_tables,
             step_output_callback=self.print_step,
         )
         

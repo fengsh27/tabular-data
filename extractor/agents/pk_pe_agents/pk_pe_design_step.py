@@ -81,9 +81,11 @@ You will be given paper title and full text, ant the paper type (PK, PE/Clinical
 - **Paper Type**: 
 {paper_type}
 
-- **Full Text**: 
+- **Full Text excluding tables**: 
 {full_text}  
 
+- **Tables in the paper**: 
+{source_tables}
 ---
 
 """
@@ -106,6 +108,7 @@ class PKPEDesignStep(CommonStep):
         system_prompt = PKPE_DESIGN_SYSTEM_PROMPT.format(
             paper_title=state["paper_title"],
             full_text=state["full_text"],
+            source_tables=state["source_tables"],
             paper_type=state["paper_type"].value,
             tools_descriptions=self.tools_descriptions,
         )
