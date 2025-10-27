@@ -80,3 +80,6 @@ This package employs bump2version to bump version
 bump2version {major, minor or patch}
 ```
 
+## Curate data from literature
+
+Comming soom ...
