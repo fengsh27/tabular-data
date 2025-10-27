@@ -1,5 +1,6 @@
 import json
 from typing import Union
+import re
 
 from .constant import BenchmarkType
 
@@ -27,3 +28,23 @@ def generate_columns_definition(
         result_col_defs.append(definition)
 
     return ".\n ".join(result_col_defs)
+
+def is_digit(s: str) -> bool:
+    """
+    Check if the string s is a valid integer or float without extra characters.
+    Examples:
+        is_digit("29") -> True
+        is_digit("29.0") -> True
+        is_digit("+29.0") -> True
+        is_digit("-29.0") -> True
+        is_digit("29.0world") -> False
+        is_digit("f29.0") -> False
+        is_digit("xyz") -> False
+        is_digit("") -> False
+    """
+    if not s or not isinstance(s, str):
+        return False
+
+    # Regular expression for integer or decimal number with optional sign
+    pattern = r'^[+-]?\d+(\.\d+)?$'
+    return bool(re.match(pattern, s))

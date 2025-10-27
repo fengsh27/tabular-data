@@ -26,7 +26,7 @@ from extractor.constants import PipelineTypeEnum
 from extractor.database.pmid_db import PMIDDB
 from extractor.pmid_extractor.article_retriever import ArticleRetriever
 from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
-from extractor.utils import convert_html_to_text_no_table, remove_references
+from extractor.utils import convert_html_to_text_no_table, convert_sections_to_full_text, remove_references
 from extractor.agents.pk_pe_agents.pk_pe_identification_step import PKPEIdentificationStep
 from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECuratedTables, PKPECurationWorkflowState, PaperTypeEnum
 
@@ -80,16 +80,16 @@ class PKPEManager:
         tables = source_tables if source_tables is not None else []
         return "\n".join([f"caption: \n{table['caption']}\n\n table: \n{dataframe_to_markdown(table['table'])}" for table in tables])
 
-    def _identification_step(self, pmid: str) -> PKPECurationWorkflowState:
+    def _identification_and_design_step(self, pmid: str) -> PKPECurationWorkflowState:
         pmid_db = self.pmid_db
         pmid_info = pmid_db.select_pmid_info(pmid)
-        source_tables = self._format_source_tables(pmid_info[4])
+        full_text = convert_sections_to_full_text(pmid_info[5]) \
+            if pmid_info[5] is not None and len(pmid_info[5]) > 0 else pmid_info[3]
         state = PKPECurationWorkflowState(
             pmid=pmid,
             paper_title=pmid_info[1],
             paper_abstract=pmid_info[2],
-            full_text=pmid_info[3],
-            source_tables=source_tables,
+            full_text=full_text,
             step_output_callback=self.print_step,
         )
         
@@ -349,7 +349,7 @@ class PKPEManager:
             ) 
 
         ## 1. Identification Step
-        state = self._identification_step(pmid)
+        state = self._identification_and_design_step(pmid)
         paper_type = state["paper_type"]
         if paper_type == PaperTypeEnum.Neither:
             return {}
@@ -392,7 +392,7 @@ class PKPEManager:
                 curation_end_callback
             )
         ## 1. Identification Step
-        state = self._identification_step(pmid)
+        state = self._identification_and_design_step(pmid)
         paper_type = state["paper_type"]
         if paper_type == PaperTypeEnum.Neither:
             return {}

@@ -21,13 +21,13 @@ def get_tools_descriptions() -> str:
     return f"""
 {PipelineTypeEnum.PK_SUMMARY.value}: {PKSummaryTablesCurationTool.get_tool_description()}
 {PipelineTypeEnum.PK_INDIVIDUAL.value}: {PKIndividualTablesCurationTool.get_tool_description()}
-{PipelineTypeEnum.PK_SPEC_SUMMARY.value}: This tool is used to curate the PK specimen summary data from the source paper.
-{PipelineTypeEnum.PK_DRUG_SUMMARY.value}: This tool is used to curate the PK drug summary data from the source paper.
+{PipelineTypeEnum.PK_SPEC_SUMMARY.value}: This tool is used to curate the PK specimen summary data from full text in the source paper.
+{PipelineTypeEnum.PK_DRUG_SUMMARY.value}: This tool is used to curate the PK drug summary data from full text in the source paper.
 {PipelineTypeEnum.PK_POPU_SUMMARY.value}: {PKPopulationSummaryCurationTool.get_tool_description()}
-{PipelineTypeEnum.PK_SPEC_INDIVIDUAL.value}: This tool is used to curate the PK specimen individual data from the source paper.
-{PipelineTypeEnum.PK_DRUG_INDIVIDUAL.value}: This tool is used to curate the PK drug individual data from the source paper.
+{PipelineTypeEnum.PK_SPEC_INDIVIDUAL.value}: This tool is used to curate the PK specimen individual data from full text in the source paper.
+{PipelineTypeEnum.PK_DRUG_INDIVIDUAL.value}: This tool is used to curate the PK drug individual data from full text in the source paper.
 {PipelineTypeEnum.PK_POPU_INDIVIDUAL.value}: {PKPopulationIndividualCurationTool.get_tool_description()}
-{PipelineTypeEnum.PE_STUDY_INFO.value}: This tool is used to curate the PE study info data from the source paper.
+{PipelineTypeEnum.PE_STUDY_INFO.value}: This tool is used to curate the PE study info data from full text in the source paper.
 {PipelineTypeEnum.PE_STUDY_OUTCOME.value}: {PEStudyOutcomeCurationTool.get_tool_description()}
 """
 
@@ -36,56 +36,152 @@ class PKPEDesignStepResult(BaseModel):
     pipeline_tools: list[str] = Field(description="A list of pipeline tool names")
 
 PKPE_DESIGN_SYSTEM_PROMPT = """
-You are a biomedical research assistant with expertise in pharmacology, specifically pharmacokinetics (PK) and pharmacoepidemiology (PE).  
-Your goal is to curate data from the given paper using the available pipeline tools.
+You are a biomedical research assistant specializing in pharmacology, pharmacokinetics (PK), pharmacoepidemiology (PE), and clinical trials (CT).  
+Your goal is to select the **most appropriate and stable set of pipeline tools** to curate data from the given paper.
 
 ---
 
-### **Reference Definitions**  
-- **Pharmacokinetics (PK):** Study of how a drug is absorbed, distributed, metabolized, and excreted. PK parameters may include clearance, half-life, AUC, Cmax, volume of distribution, and bioavailability. Typical designs measure drug concentrations in plasma/tissues over time.  
-- **Pharmacoepidemiology (PE):** Study of drug use and effects in large populations, often using observational data (e.g., insurance claims, EHRs). Focus areas include safety, utilization, adherence, effectiveness, risk–benefit, and post-marketing surveillance.  
-- **Clinical Trials:** A type of study in which participants are randomly assigned to one or more treatment groups to evaluate the safety and effectiveness of a medical intervention.
+### **Reference Definitions**
+
+- **Pharmacokinetics (PK):** Study of how a drug is absorbed, distributed, metabolized, and excreted.  
+  Typical PK data include AUC, Cmax, Tmax, CL, Vd, t½, bioavailability, and measured concentrations in biological matrices such as plasma or tissues.
+
+- **Pharmacoepidemiology (PE):** Study of drug use and effects in large populations (e.g., EHR, insurance claims).  
+  Focuses on safety, utilization, adherence, effectiveness, risk–benefit, and post-marketing surveillance.
+
+- **Clinical Trials (CT):** Randomized or controlled experiments evaluating treatment efficacy or safety.
 
 ---
 
-### **Pipeline Tools**  
-You can only choose from the following tools:  
-{tools_descriptions}  
+### **Pipeline Tools**
+
+| Tool Name | Description | Data Type | Scope |
+|:--|:--|:--|:--|
+| **pk_summary** | Curate PK summary data from tables | Summary | General PK |
+| **pk_individual** | Curate PK individual data from tables | Individual | General PK |
+| **pk_specimen_summary** | Curate PK specimen summary data (compare across specimen types) from full text | Summary | Specimen-specific |
+| **pk_specimen_individual** | Curate PK specimen individual data (specimen-based sampling per subject) from full text | Individual | Specimen-specific |
+| **pk_drug_summary** | Curate PK drug summary data (drug-specific parameters) from full text | Summary | Drug-specific |
+| **pk_drug_individual** | Curate PK drug individual data from full text | Individual | Drug-specific |
+| **pk_population_summary** | Curate PK population summary data (demographics) from tables | Summary | Population/Demographic |
+| **pk_population_individual** | Curate PK population individual data from tables | Individual | Population/Demographic |
+| **pe_study_info** | Curate PE study information from full text | — | PE study info |
+| **pe_study_outcome** | Curate PE outcome data from tables | — | PE outcome tables |
 
 ---
 
-### **Task**
-You will be given paper title and full text, ant the paper type (PK, PE/Clinical Trial, Both, Neither), your task is:
-1. Choose the appropriate pipeline tool(s) to use for the given paper.  
+### **Stable Selection Rules**
+
+Follow these steps **in order** to ensure deterministic and context-sensitive tool selection.
+
+#### 1. Determine Study Domain
+- **PK only:** Choose from `pk_*` tools.  
+- **PE only:** Choose from `pe_*` tools.  
+- **Both:** Include relevant PK and PE pipelines.  
+- **Neither:** Return an empty list.
+
+#### 2. Determine Data Granularity
+- **Summary** → mean, SD, median, range, IQR, N=, aggregated group data.  
+- **Individual** → rows labeled by subject/case ID.  
+If both appear in distinct tables, include both granularity levels.
+
+#### 3. Determine Data Scope (Revised Hierarchy)
+- pk_summary, pk_individual, pk_population_summary, pk_population_individual pipelines are always curating data from tables.
+- pk_specimen_summary, pk_specimen_individual, pk_drug_summary, pk_drug_individual pipelines are always curating data from full text (including tables).
+- pe_study_info pipeline is always curating data from full text (including tables) while pe_study_outcome pipeline is always curating data from tables.
+- Tables have higher priority than full text, that is, if a table contains information that can be curated by a pipeline, use the pipeline to curate the table instead of using the full text.
+
+**Clarifications to ensure stability:**
+
+- **True Specimen-specific:**  
+  Select *specimen* tools **only if** the paper explicitly compares or curates data from **two or more different specimen types** (e.g., plasma vs. milk, maternal vs. cord blood, serum vs. amniotic fluid).  
+  - Examples:  
+    - “Drug concentrations in maternal plasma and breast milk” → specimen-specific.  
+    - “Drug levels measured in plasma only” → **general PK**, not specimen-specific.
+
+- **Drug-specific:**  
+  Choose when tables aggregate PK parameters *by drug or metabolite*, not by subject or specimen (e.g., “mean AUC of Drug A vs. Drug B”).
+
+- **Population/Demographic:**  
+  Choose when data summarize or stratify by population variables (e.g., age, genotype, BMI, maternal vs. fetal group averages).
+
+- **General:**  
+  Default category for standard PK tables (e.g., plasma concentrations, level-to-dose ratios, AUC tables) **when only one specimen type is present**.
+
+> **Default rule:** “Plasma-only data” is **general PK**, not specimen-specific.
+
+#### 4. Handle Multi-Type Papers
+- Include **all relevant** pipeline tools following the above rules.  
+- **Do not include redundant tools** of the same granularity and overlapping scope.  
+  Example: If `pk_summary` already fits, do not also include `pk_specimen_summary`.
+
+#### 5. Tie-Breaking Rules
+- Prefer **the most specific valid match** that does **not conflict** with the default rules.  
+- If data could fit both *specimen* and *drug* scopes, use **drug-specific** unless multiple specimen types are clearly compared.  
+- Never classify a paper as *specimen-specific* solely because it mentions plasma concentrations or sampling.
 
 ---
 
-### **Workflow Reminder**
-- **Design (current stage):** Choose the appropriate pipeline tool(s) to use for the given paper.  
-- **Execution:** Run the steps to curate data.  
-- **Verification:** Check correctness of curated data.  
-- **Correction:** Fix any detected errors.  
+### **Output Format**
+Return the selected tools in the following exact format:
+```
+
+Pipeline Tools: [tool_name_1, tool_name_2, ...]
+
+```
 
 ---
 
-### **Output Format (must follow exactly)**  
-**Pipeline Tools**: [list of pipeline tool names]
-
----
-
-### **Input**  
-
-- **Title**: 
+### **Input**
+- **Title:**  
 {paper_title}
 
-- **Paper Type**: 
+- **Paper Type:**  
 {paper_type}
 
-- **Full Text excluding tables**: 
-{full_text}  
+- **Full Text (excluding tables):**  
+{full_text}
 
-- **Tables in the paper**: 
-{source_tables}
+---
+
+### **Example Cases**
+
+#### Example 1 – Single specimen (plasma), individual + summary data  
+> Tables show individual plasma levels and summary L/D ratios.  
+```
+
+Pipeline Tools: [pk_individual, pk_summary, pk_drug_summary]
+
+```
+
+#### Example 2 – Multiple specimens (plasma + milk)  
+```
+
+Pipeline Tools: [pk_specimen_individual, pk_specimen_summary]
+
+```
+
+#### Example 3 – Drug-level comparison only  
+```
+
+Pipeline Tools: [pk_drug_summary]
+
+```
+
+#### Example 4 – PK + PE mixed study  
+```
+
+Pipeline Tools: [pk_summary, pe_study_outcome]
+
+```
+
+---
+
+### **Key Stability Rules**
+- Treat **plasma-only studies** as **general PK**, not specimen-specific.  
+- Apply **Rules 1–5 strictly** and never switch hierarchy interpretations between runs.  
+```
+
 ---
 
 """
@@ -108,7 +204,6 @@ class PKPEDesignStep(CommonStep):
         system_prompt = PKPE_DESIGN_SYSTEM_PROMPT.format(
             paper_title=state["paper_title"],
             full_text=state["full_text"],
-            source_tables=state["source_tables"],
             paper_type=state["paper_type"].value,
             tools_descriptions=self.tools_descriptions,
         )

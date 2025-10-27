@@ -37,14 +37,14 @@ PE_ANCHOR_COLUMNS = [
 
 def pe_summary_evaluate_dataframe(
     df_baseline: pd.DataFrame, 
-    df_pk_summary: pd.DataFrame,
+    df: pd.DataFrame,
     score_mode: Literal["combined", "separate"] | None = "combined",
 ) -> int:
     evaluator = TablesEvaluator(
         rating_cols=PE_RATING_COLUMNS,
         anchor_cols=PE_ANCHOR_COLUMNS,
     )
-    return evaluator.compare_tables(df_baseline, df_pk_summary)
+    return evaluator.compare_tables(df_baseline, df)
 
 
 def pe_summary_evaluate_csvfile(baseline_fn: str, pk_summary_fn: str) -> int:

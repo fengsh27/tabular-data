@@ -46,6 +46,7 @@ class ExtractParamTypeAndUnitStep(PKIndCommonAgentStep):
             step_name = f" (Trial {str(round)})"
             self._step_output(state, step_output=step_name)
             llm = state["llm"]
+            llm2 = state["llm2"] if "llm2" in state else None
             md_table_aligned = state["md_table_aligned"]
             caption = state["caption"]
             schema = self.get_schema()
@@ -55,7 +56,7 @@ class ExtractParamTypeAndUnitStep(PKIndCommonAgentStep):
             previous_errors_prompt = self._get_previous_errors_prompt(state)
             system_prompt = system_prompt + previous_errors_prompt
             instruction_prompt = self.get_instruction_prompt(state)
-            agent = PKIndCommonAgent(llm=llm)
+            agent = PKIndCommonAgent(llm=llm, llm2=llm2)
             res, processed_res, token_usage = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,

@@ -6,6 +6,7 @@ import functools
 import logging
 
 from benchmark.common import ColumnType
+from benchmark.utils import is_digit
 from extractor.utils import (
     extract_float_value,
     extract_float_values,
@@ -25,7 +26,7 @@ Drug Name:      15/100
 """
 
 DELTA_VALUE = 0.000001
-SIMILARITY_DISTANCE_THRESHOLD = 0.5
+SIMILARITY_DISTANCE_THRESHOLD = 0.42
 
 
 def is_abbreviation_or_contraction(a, b):
@@ -96,7 +97,7 @@ class TextComparer:
 class TablesEvaluator:
     def __init__(
         self, 
-        rating_cols: list[str], 
+        rating_cols: list[str] | list[tuple[str, float]], 
         anchor_cols: list[str],
         columns_type: dict[str, ColumnType] | None = None,
     ):
@@ -121,22 +122,26 @@ class TablesEvaluator:
         row2: Series, 
     ) -> int:
         sum = 0
+        total_weight = 0.0
         for c in self.rating_cols:
+            if isinstance(c, tuple):
+                c, weight = c
+            else:
+                weight = 1.0
             v1 = row1[c]
             v2 = row2[c]
-            value = row1['Value']
             
-            orig_sum = sum
             if self.columns_type[c] == ColumnType.Text:
-                sum += 1 if self._is_equal_text(v1, v2) else 0
+                sum += 1*weight if self._is_equal_text(v1, v2) else 0
             else:
-                sum += 1 if self._is_equal_numeric(v1, v2) else 0
+                sum += 1*weight if self._is_equal_numeric(v1, v2) else 0
+            total_weight += weight
             
             # The following lines are for debugging
             # if orig_sum == sum:
             #     logger.warning(f"Not equaled column: {c}, v1: {v1}, v2: {v2}, value: {value}")
 
-        return (int)(10.0 * sum / float(len(self.rating_cols)))
+        return (int)(10.0 * sum / total_weight)
 
     @staticmethod
     def parse_value(val: Any) -> int | float | None:
@@ -156,6 +161,10 @@ class TablesEvaluator:
     def _is_equal(self, v1, v2) -> bool:
         if v1 == v2:
             return True
+        if is_digit(v1):
+            v1 = float(v1)
+        if is_digit(v2):
+            v2 = float(v2)
         if isinstance(v1, str) and isinstance(v2, str):
             dist = self.text_cmpr.compare(v1, v2)
             # output_msg(f"{dist} = [{v1}] - [{v2}]")
@@ -275,6 +284,8 @@ class TablesEvaluator:
         scores = []
         much_rows = much.to_dict("records")
         for index, row in less.iterrows():
+            if index == 35:
+                pass
             much_row = self.anchor_row_from_rows(row, much_rows)
             if much_row is None:
                 scores.append(0)
@@ -283,7 +294,9 @@ class TablesEvaluator:
 
         logger.info(f"scores: {scores}")
         logger.info(f"less row number: {less_row_num}, much row number: {more_row_num}")
-        return self.sum_scores(scores, less_row_num, more_row_num)
+        sum_score = self.sum_scores(scores, less_row_num, more_row_num)
+        logger.info(f"sum score: {sum_score}")
+        return sum_score
 
     def compare_tables(
         self, 
