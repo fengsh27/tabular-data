@@ -46,6 +46,6 @@ def test_pk_pe_manager_identification_step(llm, pmid_db):
     pmid = "39843580"
     pk_pe_manager = PKPEManager(llm, pmid_db)
     pk_pe_manager._extract_pmid_info(pmid)
-    state = pk_pe_manager._identification_step(pmid)
+    state = pk_pe_manager._identification_and_design_step(pmid)
     assert "paper_type" in state and state["paper_type"] != None
 

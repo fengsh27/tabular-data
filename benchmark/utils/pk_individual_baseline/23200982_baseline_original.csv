@@ -1,0 +1,41 @@
+PMID,population,Pregnancy stage,Gestational age,Specimen,drug name,patient ID,Parameter 1,drug name 1,Time 1,Time unit 1,Value 1,Unit 1
+23200982,maternal,delivery,,plasma,Infliximab,1,concentration,Infliximab,,,40,ug/ml
+23200982,maternal,delivery,,plasma,Infliximab,2,concentration,Infliximab,,,15.1,ug/ml
+23200982,maternal,delivery,,plasma,Infliximab,3,concentration,Infliximab,,,1.4,ug/ml
+23200982,maternal,delivery,,plasma,Infliximab,4,concentration,Infliximab,,,19.2,ug/ml
+23200982,maternal,delivery,,plasma,Infliximab,5,concentration,Infliximab,,,3.8,ug/ml
+23200982,maternal,delivery,,plasma,Infliximab,6,concentration,Infliximab,,,4.8,ug/ml
+23200982,maternal,delivery,,plasma,Infliximab,7,concentration,Infliximab,,,14.5,ug/ml
+23200982,maternal,delivery,,plasma,Infliximab,8,concentration,Infliximab,,,16.5,ug/ml
+23200982,maternal,delivery,,plasma,Infliximab,9,concentration,Infliximab,,,2.2,ug/ml
+23200982,maternal,delivery,,plasma,Infliximab,10,concentration,Infliximab,,,4.1,ug/ml
+23200982,maternal,delivery,,plasma,Infliximab,11,concentration,Infliximab,,,5.1,ug/ml
+23200982,pediatric,,fetus,cord blood,Infliximab,3,concentration,Infliximab,,,2,ug/ml
+23200982,pediatric,,fetus,cord blood,Infliximab,4,concentration,Infliximab,,,26.5,ug/ml
+23200982,pediatric,,fetus,cord blood,Infliximab,5,concentration,Infliximab,,,3.3,ug/ml
+23200982,pediatric,,fetus,cord blood,Infliximab,6,concentration,Infliximab,,,8.8,ug/ml
+23200982,pediatric,,fetus,cord blood,Infliximab,7,concentration,Infliximab,,,20.5,ug/ml
+23200982,pediatric,,fetus,cord blood,Infliximab,8,concentration,Infliximab,,,26.5,ug/ml
+23200982,pediatric,,fetus,cord blood,Infliximab,9,concentration,Infliximab,,,8.4,ug/ml
+23200982,pediatric,,fetus,cord blood,Infliximab,10,concentration,Infliximab,,,13.6,ug/ml
+23200982,pediatric,,fetus,cord blood,Infliximab,11,concentration,Infliximab,,,20.4,ug/ml
+23200982,pediatric,,infant,plasma,Infliximab,1,concentration,Infliximab,,,39.5,ug/ml
+23200982,pediatric,,infant,plasma,Infliximab,2,concentration,Infliximab,,,25.3,ug/ml
+23200982,pediatric,,infant,plasma,Infliximab,3,concentration,Infliximab,,,2.9,ug/ml
+23200982,pediatric,,infant,plasma,Infliximab,4,concentration,Infliximab,,,23.6,ug/ml
+23200982,pediatric,,infant,plasma,Infliximab,5,concentration,Infliximab,,,4.2,ug/ml
+23200982,pediatric,,infant,plasma,Infliximab,6,concentration,Infliximab,,,8.7,ug/ml
+23200982,pediatric,,infant,plasma,Infliximab,7,concentration,Infliximab,,,28.2,ug/ml
+23200982,pediatric,,infant,plasma,Infliximab,8,concentration,Infliximab,,,27.5,ug/ml
+23200982,pediatric,,infant,plasma,Infliximab,9,concentration,Infliximab,,,10.6,ug/ml
+23200982,pediatric,,infant,plasma,Infliximab,10,concentration,Infliximab,,,4.7,ug/ml
+23200982,pediatric,,infant,plasma,Infliximab,11,concentration,Infliximab,,,8.4,ug/ml
+23200982,maternal/pediatric,delivery,fetus,cord blood/maternal plasma,Infliximab,3,ratio cord/mother,Infliximab,,,143,%
+23200982,maternal/pediatric,delivery,fetus,cord blood/maternal plasma,Infliximab,4,ratio cord/mother,Infliximab,,,138,%
+23200982,maternal/pediatric,delivery,fetus,cord blood/maternal plasma,Infliximab,5,ratio cord/mother,Infliximab,,,87,%
+23200982,maternal/pediatric,delivery,fetus,cord blood/maternal plasma,Infliximab,6,ratio cord/mother,Infliximab,,,183,%
+23200982,maternal/pediatric,delivery,fetus,cord blood/maternal plasma,Infliximab,7,ratio cord/mother,Infliximab,,,141,%
+23200982,maternal/pediatric,delivery,fetus,cord blood/maternal plasma,Infliximab,8,ratio cord/mother,Infliximab,,,160,%
+23200982,maternal/pediatric,delivery,fetus,cord blood/maternal plasma,Infliximab,9,ratio cord/mother,Infliximab,,,381,%
+23200982,maternal/pediatric,delivery,fetus,cord blood/maternal plasma,Infliximab,10,ratio cord/mother,Infliximab,,,332,%
+23200982,maternal/pediatric,delivery,fetus,cord blood/maternal plasma,Infliximab,11,ratio cord/mother,Infliximab,,,400,%

@@ -1,0 +1,136 @@
+PMID,Population,Pregnancy stage,Pediatric/Gestational age,Specimen,Drug name,Patient ID,Parameter type,Analyte,Time value,Time unit,Parameter value,Parameter unit
+32056930,,delivery,maternal,serum,venlafaxine,1,concentration,venlafaxine,,,5.0,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,1,concentration,O-desmethylvenlafaxine,,,85.0,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,1,concentration,sum of VEN+ODV,,,90.0,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,2,concentration,venlafaxine,,,15.8,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,2,concentration,O-desmethylvenlafaxine,,,208.0,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,2,concentration,sum of VEN+ODV,,,223.8,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,3,concentration,venlafaxine,,,18.2,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,3,concentration,O-desmethylvenlafaxine,,,197.0,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,3,concentration,sum of VEN+ODV,,,215.2,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,4,concentration,venlafaxine,,,2.0,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,4,concentration,O-desmethylvenlafaxine,,,31.9,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,4,concentration,sum of VEN+ODV,,,33.9,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,5,concentration,venlafaxine,,,86.3,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,5,concentration,O-desmethylvenlafaxine,,,190.0,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,5,concentration,sum of VEN+ODV,,,276.3,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,6,concentration,venlafaxine,,,21.0,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,6,concentration,O-desmethylvenlafaxine,,,281.0,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,6,concentration,sum of VEN+ODV,,,302.0,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,7,concentration,venlafaxine,,,18.5,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,7,concentration,O-desmethylvenlafaxine,,,271.0,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,7,concentration,sum of VEN+ODV,,,289.5,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,8,concentration,venlafaxine,,,2.0,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,8,concentration,O-desmethylvenlafaxine,,,45.3,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,8,concentration,sum of VEN+ODV,,,47.3,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,9,concentration,venlafaxine,,,201.0,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,9,concentration,O-desmethylvenlafaxine,,,137.0,ng/ml
+32056930,,delivery,maternal,serum,venlafaxine,9,concentration,sum of VEN+ODV,,,338.0,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,1,concentration,venlafaxine,,,,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,1,concentration,O-desmethylvenlafaxine,,,,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,1,concentration,sum of VEN+ODV,,,,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,2,concentration,venlafaxine,,,50.5,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,2,concentration,O-desmethylvenlafaxine,,,1002.0,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,2,concentration,sum of VEN+ODV,,,1052.5,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,3,concentration,venlafaxine,,,,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,3,concentration,O-desmethylvenlafaxine,,,,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,3,concentration,sum of VEN+ODV,,,,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,4,concentration,venlafaxine,,,,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,4,concentration,O-desmethylvenlafaxine,,,,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,4,concentration,sum of VEN+ODV,,,,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,5,concentration,venlafaxine,,,68.5,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,5,concentration,O-desmethylvenlafaxine,,,241.0,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,5,concentration,sum of VEN+ODV,,,309.5,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,6,concentration,venlafaxine,,,40.3,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,6,concentration,O-desmethylvenlafaxine,,,922.0,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,6,concentration,sum of VEN+ODV,,,962.3,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,7,concentration,venlafaxine,,,45.6,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,7,concentration,O-desmethylvenlafaxine,,,677.0,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,7,concentration,sum of VEN+ODV,,,722.6,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,8,concentration,venlafaxine,,,,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,8,concentration,O-desmethylvenlafaxine,,,,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,8,concentration,sum of VEN+ODV,,,,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,9,concentration,venlafaxine,,,404.0,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,9,concentration,O-desmethylvenlafaxine,,,385.0,ng/ml
+32056930,,delivery,maternal,amniotic fluid,venlafaxine,9,concentration,sum of VEN+ODV,,,789.0,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,1,concentration,venlafaxine,,,5.0,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,1,concentration,O-desmethylvenlafaxine,,,84.0,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,1,concentration,sum of VEN+ODV,,,89.0,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,2,concentration,venlafaxine,,,28.0,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,2,concentration,O-desmethylvenlafaxine,,,315.0,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,2,concentration,sum of VEN+ODV,,,343.0,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,3,concentration,venlafaxine,,,23.4,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,3,concentration,O-desmethylvenlafaxine,,,425.0,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,3,concentration,sum of VEN+ODV,,,448.4,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,4,concentration,venlafaxine,,,2.0,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,4,concentration,O-desmethylvenlafaxine,,,19.1,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,4,concentration,sum of VEN+ODV,,,21.1,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,5,concentration,venlafaxine,,,84.4,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,5,concentration,O-desmethylvenlafaxine,,,204.0,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,5,concentration,sum of VEN+ODV,,,288.4,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,6,concentration,venlafaxine,,,26.9,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,6,concentration,O-desmethylvenlafaxine,,,290.0,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,6,concentration,sum of VEN+ODV,,,316.9,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,7,concentration,venlafaxine,,,19.0,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,7,concentration,O-desmethylvenlafaxine,,,317.0,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,7,concentration,sum of VEN+ODV,,,336.0,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,8,concentration,venlafaxine,,,2.0,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,8,concentration,O-desmethylvenlafaxine,,,52.5,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,8,concentration,sum of VEN+ODV,,,54.5,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,9,concentration,venlafaxine,,,157.0,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,9,concentration,O-desmethylvenlafaxine,,,134.0,ng/ml
+32056930,,,pediatric,umbilical cord blood,venlafaxine,9,concentration,sum of VEN+ODV,,,291.0,ng/ml
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,1,penetration ratio of cord blood/maternal serum,venlafaxine,,,1.0,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,1,penetration ratio of cord blood/maternal serum,O-desmethylvenlafaxine,,,0.99,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,1,penetration ratio of cord blood/maternal serum,sum of VEN+ODV,,,0.99,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,2,penetration ratio of cord blood/maternal serum,venlafaxine,,,1.77,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,2,penetration ratio of cord blood/maternal serum,O-desmethylvenlafaxine,,,1.51,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,2,penetration ratio of cord blood/maternal serum,sum of VEN+ODV,,,1.53,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,3,penetration ratio of cord blood/maternal serum,venlafaxine,,,1.29,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,3,penetration ratio of cord blood/maternal serum,O-desmethylvenlafaxine,,,2.16,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,3,penetration ratio of cord blood/maternal serum,sum of VEN+ODV,,,2.08,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,4,penetration ratio of cord blood/maternal serum,venlafaxine,,,1.0,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,4,penetration ratio of cord blood/maternal serum,O-desmethylvenlafaxine,,,0.6,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,4,penetration ratio of cord blood/maternal serum,sum of VEN+ODV,,,0.62,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,5,penetration ratio of cord blood/maternal serum,venlafaxine,,,0.98,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,5,penetration ratio of cord blood/maternal serum,O-desmethylvenlafaxine,,,1.07,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,5,penetration ratio of cord blood/maternal serum,sum of VEN+ODV,,,1.04,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,6,penetration ratio of cord blood/maternal serum,venlafaxine,,,1.28,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,6,penetration ratio of cord blood/maternal serum,O-desmethylvenlafaxine,,,1.03,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,6,penetration ratio of cord blood/maternal serum,sum of VEN+ODV,,,1.05,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,7,penetration ratio of cord blood/maternal serum,venlafaxine,,,1.03,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,7,penetration ratio of cord blood/maternal serum,O-desmethylvenlafaxine,,,1.17,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,7,penetration ratio of cord blood/maternal serum,sum of VEN+ODV,,,1.16,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,8,penetration ratio of cord blood/maternal serum,venlafaxine,,,1.0,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,8,penetration ratio of cord blood/maternal serum,O-desmethylvenlafaxine,,,1.16,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,8,penetration ratio of cord blood/maternal serum,sum of VEN+ODV,,,1.15,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,9,penetration ratio of cord blood/maternal serum,venlafaxine,,,0.78,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,9,penetration ratio of cord blood/maternal serum,O-desmethylvenlafaxine,,,0.98,
+32056930,,delivery,maternal/pediatric,maternal serum/umbilical cord blood,venlafaxine,9,penetration ratio of cord blood/maternal serum,sum of VEN+ODV,,,0.86,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,1,penetration ratio of amniotic fluid/maternal serum,sum of VEN+ODV,,,,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,1,penetration ratio of amniotic fluid/maternal serum,venlafaxine,,,,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,1,penetration ratio of amniotic fluid/maternal serum,O-desmethylvenlafaxine,,,,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,2,penetration ratio of amniotic fluid/maternal serum,sum of VEN+ODV,,,4.7,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,2,penetration ratio of amniotic fluid/maternal serum,venlafaxine,,,3.2,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,2,penetration ratio of amniotic fluid/maternal serum,O-desmethylvenlafaxine,,,4.82,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,3,penetration ratio of amniotic fluid/maternal serum,sum of VEN+ODV,,,,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,3,penetration ratio of amniotic fluid/maternal serum,venlafaxine,,,,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,3,penetration ratio of amniotic fluid/maternal serum,O-desmethylvenlafaxine,,,,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,4,penetration ratio of amniotic fluid/maternal serum,sum of VEN+ODV,,,,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,4,penetration ratio of amniotic fluid/maternal serum,venlafaxine,,,,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,4,penetration ratio of amniotic fluid/maternal serum,O-desmethylvenlafaxine,,,,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,5,penetration ratio of amniotic fluid/maternal serum,sum of VEN+ODV,,,1.12,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,5,penetration ratio of amniotic fluid/maternal serum,venlafaxine,,,0.79,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,5,penetration ratio of amniotic fluid/maternal serum,O-desmethylvenlafaxine,,,1.27,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,6,penetration ratio of amniotic fluid/maternal serum,sum of VEN+ODV,,,3.19,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,6,penetration ratio of amniotic fluid/maternal serum,venlafaxine,,,1.92,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,6,penetration ratio of amniotic fluid/maternal serum,O-desmethylvenlafaxine,,,3.28,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,7,penetration ratio of amniotic fluid/maternal serum,sum of VEN+ODV,,,2.5,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,7,penetration ratio of amniotic fluid/maternal serum,venlafaxine,,,2.46,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,7,penetration ratio of amniotic fluid/maternal serum,O-desmethylvenlafaxine,,,2.5,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,8,penetration ratio of amniotic fluid/maternal serum,sum of VEN+ODV,,,,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,8,penetration ratio of amniotic fluid/maternal serum,venlafaxine,,,,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,8,penetration ratio of amniotic fluid/maternal serum,O-desmethylvenlafaxine,,,,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,9,penetration ratio of amniotic fluid/maternal serum,sum of VEN+ODV,,,2.33,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,9,penetration ratio of amniotic fluid/maternal serum,venlafaxine,,,2.01,
+32056930,,delivery,maternal,maternal serum/amniotic fluid,venlafaxine,9,penetration ratio of amniotic fluid/maternal serum,O-desmethylvenlafaxine,,,2.81,

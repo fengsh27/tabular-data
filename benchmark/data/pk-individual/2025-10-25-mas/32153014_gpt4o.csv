@@ -1,0 +1,31 @@
+﻿,Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+0,1,Infliximab,Infliximab,Maternal serum,Maternal,Delivery,N/A,TNF inhibitor - µg/mL serum - Maternal,µg/mL,25.3,23,Day
+1,2,Infliximab,Infliximab,Maternal serum,Maternal,Delivery,N/A,TNF inhibitor - µg/mL serum - Maternal,µg/mL,12.0,57,Day
+2,3,Infliximab,Infliximab,Maternal serum,Maternal,Delivery,N/A,TNF inhibitor - µg/mL serum - Maternal,µg/mL,17.0,31,Day
+3,4,Etanercept,Etanercept,Maternal serum,Maternal,Delivery,N/A,TNF inhibitor - µg/mL serum - Maternal,µg/mL,3.0,4,Day
+4,5,Etanercept,Etanercept,Maternal serum,Maternal,Delivery,N/A,TNF inhibitor - µg/mL serum - Maternal,µg/mL,<0.1,29,Day
+5,6,Etanercept,Etanercept,Maternal serum,Maternal,Delivery,N/A,TNF inhibitor - µg/mL serum - Maternal,µg/mL,0.2,16,Day
+6,1,Infliximab,Infliximab,Cord serum,Maternal,Delivery,N/A,TNF inhibitor - µg/mL serum - Cord,µg/mL,29.8,23,Day
+7,2,Infliximab,Infliximab,Cord serum,Maternal,Delivery,N/A,TNF inhibitor - µg/mL serum - Cord,µg/mL,24.0,57,Day
+8,3,Infliximab,Infliximab,Cord serum,Maternal,Delivery,N/A,TNF inhibitor - µg/mL serum - Cord,µg/mL,29.0,31,Day
+9,4,Etanercept,Etanercept,Cord serum,Maternal,Delivery,N/A,TNF inhibitor - µg/mL serum - Cord,µg/mL,0.1,4,Day
+10,5,Etanercept,Etanercept,Cord serum,Maternal,Delivery,N/A,TNF inhibitor - µg/mL serum - Cord,µg/mL,<0.1,29,Day
+11,6,Etanercept,Etanercept,Cord serum,Maternal,Delivery,N/A,TNF inhibitor - µg/mL serum - Cord,N/A,NA,16,Day
+12,1,Infliximab,Infliximab,Placental tissue,Maternal,Delivery,N/A,TNF inhibitor - Mean ± SD (µg/g tissue) - Placenta,µg/g tissue,5.8 ± 0.9,23,Day
+13,2,Infliximab,Infliximab,Placental tissue,Maternal,Delivery,N/A,TNF inhibitor - Mean ± SD (µg/g tissue) - Placenta,µg/g tissue,1.8 ± 0.0,57,Day
+14,3,Infliximab,Infliximab,Placental tissue,Maternal,Delivery,N/A,TNF inhibitor - Mean ± SD (µg/g tissue) - Placenta,µg/g tissue,4.8 ± 1.5,31,Day
+15,4,Etanercept,Etanercept,Placental tissue,Maternal,Delivery,N/A,TNF inhibitor - Mean ± SD (µg/g tissue) - Placenta,µg/g tissue,0.1 ± 0.1,4,Day
+16,5,Etanercept,Etanercept,Placental tissue,Maternal,Delivery,N/A,TNF inhibitor - Mean ± SD (µg/g tissue) - Placenta,µg/g tissue,<0.1,29,Day
+17,6,Etanercept,Etanercept,Placental tissue,Maternal,Delivery,N/A,TNF inhibitor - Mean ± SD (µg/g tissue) - Placenta,µg/g tissue,<0.1,16,Day
+18,1,Infliximab,Infliximab,Maternal serum,Maternal,Delivery,N/A,Cord-to-maternal ratio - Cord-to-maternal ratio - Cord-to-maternal ratio,Ratio,1.18,23,Day
+19,2,Infliximab,Infliximab,Maternal serum,Maternal,Delivery,N/A,Cord-to-maternal ratio - Cord-to-maternal ratio - Cord-to-maternal ratio,Ratio,2.00,57,Day
+20,3,Infliximab,Infliximab,Maternal serum,Maternal,Delivery,N/A,Cord-to-maternal ratio - Cord-to-maternal ratio - Cord-to-maternal ratio,Ratio,1.71,31,Day
+21,4,Etanercept,Etanercept,Maternal serum,Maternal,Delivery,N/A,Cord-to-maternal ratio - Cord-to-maternal ratio - Cord-to-maternal ratio,Ratio,0.04,4,Day
+22,5,Etanercept,Etanercept,Maternal serum,Maternal,Delivery,N/A,Cord-to-maternal ratio - Cord-to-maternal ratio - Cord-to-maternal ratio,Ratio,NA,29,Day
+23,6,Etanercept,Etanercept,Maternal serum,Maternal,Delivery,N/A,Cord-to-maternal ratio - Cord-to-maternal ratio - Cord-to-maternal ratio,Ratio,NA,16,Day
+24,1,Infliximab,Infliximab,Placental tissue,Maternal,Delivery,N/A,Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio,Ratio,0.35,23,Day
+25,2,Infliximab,Infliximab,Placental tissue,Maternal,Delivery,N/A,Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio,Ratio,0.23,57,Day
+26,3,Infliximab,Infliximab,Placental tissue,Maternal,Delivery,N/A,Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio,Ratio,0.44,31,Day
+27,4,Etanercept,Etanercept,Placental tissue,Maternal,Delivery,N/A,Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio,Ratio,0.03,4,Day
+28,5,Etanercept,Etanercept,Placental tissue,Maternal,Delivery,N/A,Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio,Ratio,NA,29,Day
+29,6,Etanercept,Etanercept,Placental tissue,Maternal,Delivery,N/A,Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio,Ratio,NA,16,Day

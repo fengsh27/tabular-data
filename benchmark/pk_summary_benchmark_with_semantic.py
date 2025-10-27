@@ -7,7 +7,7 @@ from benchmark.evaluate import (
 )
 from benchmark.common import ColumnType
 
-PK_COLUMNS_TYPE = {
+PK_SUMMARY_COLUMNS_TYPE = {
     "Drug name": ColumnType.Text,
     "Analyte": ColumnType.Text,
     "Specimen": ColumnType.Text,
@@ -42,7 +42,7 @@ INTERVAL_TYPE = "Interval type"
 LOWER_LIMIT = "Lower limit"
 HIGH_LIMIT = "High limit"
 
-PK_RATING_COLUMNS = [
+PK_SUMMARY_RATING_COLUMNS = [
     DRUG_NAME,
     PARAMETER_TYPE,
     VALUE,
@@ -52,7 +52,7 @@ PK_RATING_COLUMNS = [
     VARIATION_VALUE,
     P_VALUE,
 ]
-PK_ANCHOR_COLUMNS = [
+PK_SUMMARY_ANCHOR_COLUMNS = [
     VALUE,
     VARIATION_VALUE,
     LOWER_LIMIT,
@@ -63,19 +63,19 @@ PK_ANCHOR_COLUMNS = [
 
 def pk_summary_evaluate_dataframe(
     df_baseline: pd.DataFrame, 
-    df_pk_summary: pd.DataFrame,
+    df: pd.DataFrame,
     score_mode: Literal["combined", "separate"] | None = "combined",
 ) -> int | Tuple[int, int]:
     evaluator = TablesEvaluator(
-        rating_cols=PK_RATING_COLUMNS,
-        anchor_cols=PK_ANCHOR_COLUMNS,
-        columns_type=PK_COLUMNS_TYPE,
+        rating_cols=PK_SUMMARY_RATING_COLUMNS,
+        anchor_cols=PK_SUMMARY_ANCHOR_COLUMNS,
+        columns_type=PK_SUMMARY_COLUMNS_TYPE,
     ) if score_mode == "combined" else TablesSeparateEvaluator(
-        rating_cols=PK_RATING_COLUMNS,
-        anchor_cols=PK_ANCHOR_COLUMNS,
-        columns_type=PK_COLUMNS_TYPE,
+        rating_cols=PK_SUMMARY_RATING_COLUMNS,
+        anchor_cols=PK_SUMMARY_ANCHOR_COLUMNS,
+        columns_type=PK_SUMMARY_COLUMNS_TYPE,
     )
-    return evaluator.compare_tables(df_baseline, df_pk_summary)
+    return evaluator.compare_tables(df_baseline, df)
 
 
 def pk_summary_evaluate_csvfile(baseline_fn: str, pk_summary_fn: str) -> int: 

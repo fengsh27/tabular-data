@@ -18,6 +18,31 @@ from extractor.request_sonnet import get_sonnet
 from extractor.request_metallama import get_meta_llama
 from extractor.request_openai import get_5_openai, get_openai
 from system_tests.conftest_data import curated_data_29100749, data_caption_29100749_table_0, data_caption_29100749_table_2, data_caption_32635742_table_0, data_col_mapping_18426260_table_0, data_col_mapping_29100749_table_2, data_md_table_18426260_table_0, data_md_table_32635742_table_0, data_md_table_aligned_18426260_table_0, data_md_table_aligned_29100749_table_2, data_md_table_drug_18426260_table_0, data_md_table_drug_29100749_table_2, data_md_table_individual_18426260_table_0, data_md_table_individual_29100749_table_2, data_md_table_list_18426260_table_0, data_md_table_list_29100749_table_2, data_md_table_patient_29100749_table_2, data_md_table_patient_refined_29100749_table_2, data_source_table_29100749_table_0, data_source_table_29100749_table_2, paper_abstract_29100749, paper_abstract_32635742, paper_title_29100749, paper_title_32635742
+from system_tests.conftest_data_10971311 import (
+    data_title_10971311,
+    data_abstract_10971311,
+    data_full_text_excluding_tables_10971311,
+    data_tables_10971311,
+    data_sections_10971311,
+)
+from system_tests.conftest_data_18426260 import (
+    data_title_18426260,
+    data_abstract_18426260,
+    data_full_text_excluding_tables_18426260,
+    data_tables_18426260,
+    data_sections_18426260,
+)
+from system_tests.conftest_data_33253437 import (
+    data_title_33253437,
+    data_abstract_33253437,
+    data_caption_table_0_33253437,
+    data_md_table_individual_table_0_33253437,
+    data_md_table_drug_table_0_33253437,
+    data_md_table_patient_refined_table_0_33253437,
+    data_md_table_aligned_table_0_33253437,
+    data_col_mapping_table_0_33253437,
+    data_md_table_list_table_0_33253437,
+)
 
 load_dotenv()
 
@@ -68,7 +93,21 @@ def get_gemini():
 def llm():
     return get_azure_openai()  # get_openai() # get_deepseek() # get_sonnet() # get_meta_llama() # get_gemini() # get_5_openai() # 
 
-
+@pytest.fixture(scope="module")
+def llm_gpt5():
+    return AzureChatOpenAI(
+        api_key=os.environ.get("OPENAI_API_KEY", None),
+        azure_endpoint=os.environ.get("AZURE_OPENAI_ENDPOINT", None),
+        api_version=os.environ.get("OPENAI_5_API_VERSION", None),
+        azure_deployment=os.environ.get("OPENAI_5_DEPLOYMENT_NAME", None),
+        model=os.environ.get("OPENAI_5_MODEL", None),
+        max_retries=5,
+        # temperature=0.0,
+        max_completion_tokens=int(os.environ.get("OPENAI_MAX_OUTPUT_TOKENS", 4096)),
+        # top_p=0.95,
+        # frequency_penalty=0,
+        # presence_penalty=0,
+    )
 ghtml_content = """
 <section id="S8">
    <h3 class="pmc_sec_title">Pharmacokinetics</h3>
@@ -2436,6 +2475,95 @@ def full_text_32635742():
     with open(fn, "r") as f:
         return f.read()
 
+
+# ============================================================================================
+# 10971311
+# ============================================================================================
+@pytest.fixture(scope="module")
+def title_10971311():
+    return data_title_10971311
+
+@pytest.fixture(scope="module")
+def abstract_10971311():
+    return data_abstract_10971311
+
+
+@pytest.fixture(scope="module")
+def full_text_excluding_tables_10971311():
+    return data_full_text_excluding_tables_10971311
+
+
+@pytest.fixture(scope="module")
+def tables_10971311():
+    return data_tables_10971311
+
+@pytest.fixture(scope="module")
+def sections_10971311():
+    return data_sections_10971311
+
+
+# ============================================================================================
+# 18426260
+# ============================================================================================
+@pytest.fixture(scope="module")
+def title_18426260():
+    return data_title_18426260
+
+@pytest.fixture(scope="module")
+def abstract_18426260():
+    return data_abstract_18426260
+
+@pytest.fixture(scope="module")
+def full_text_excluding_tables_18426260():
+    return data_full_text_excluding_tables_18426260
+
+@pytest.fixture(scope="module")
+def tables_18426260():
+    return data_tables_18426260
+
+@pytest.fixture(scope="module")
+def sections_18426260():
+    return data_sections_18426260
+
+
+# ============================================================================================
+# 33253437
+# ============================================================================================
+@pytest.fixture(scope="module")
+def title_33253437():
+    return data_title_33253437
+
+@pytest.fixture(scope="module")
+def abstract_33253437():
+    return data_abstract_33253437
+
+@pytest.fixture(scope="module")
+def caption_table_0_33253437():
+    return data_caption_table_0_33253437
+
+@pytest.fixture(scope="module")
+def md_table_list_table_0_33253437():
+    return data_md_table_list_table_0_33253437
+
+@pytest.fixture(scope="module")
+def md_table_drug_table_0_33253437():
+    return data_md_table_drug_table_0_33253437
+
+@pytest.fixture(scope="module")
+def md_table_patient_refined_table_0_33253437():
+    return data_md_table_patient_refined_table_0_33253437
+    
+@pytest.fixture(scope="module")
+def md_table_aligned_table_0_33253437():
+    return data_md_table_aligned_table_0_33253437
+
+@pytest.fixture(scope="module")
+def md_table_individual_table_0_33253437():
+    return data_md_table_individual_table_0_33253437
+
+@pytest.fixture(scope="module")
+def col_mapping_table_0_33253437():
+    return data_col_mapping_table_0_33253437
 
 # ============================================================================================
 # utils

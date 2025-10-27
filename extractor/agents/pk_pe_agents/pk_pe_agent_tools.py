@@ -13,7 +13,7 @@ from extractor.agents.pk_population_individual.pk_popu_ind_workflow import PKPop
 from extractor.constants import PipelineTypeEnum
 from extractor.database.pmid_db import PMIDDB
 from extractor.pmid_extractor.table_utils import select_pe_tables, select_pk_demographic_tables, select_pk_summary_tables
-from extractor.utils import convert_html_to_text_no_table, remove_references
+from extractor.utils import convert_html_to_text_no_table, convert_sections_to_full_text, remove_references
 
 logger = logging.getLogger(__name__)
 
@@ -194,7 +194,7 @@ class PKPopulationSummaryCurationTool(AgentTool):
 
     @staticmethod
     def get_tool_description() -> str:
-        return "This tool is used to curate the PK population summary data from the source paper."
+        return "This tool is used to curate the PK population summary data from PK demographic tables or full text in the source paper."
 
     def _run(self, previous_errors: str):
         pmid_info = self.pmid_db.select_pmid_info(self.pmid)
@@ -273,7 +273,7 @@ class PKPopulationIndividualCurationTool(AgentTool):
 
     @staticmethod
     def get_tool_description() -> str:
-        return "This tool is used to curate the PK population individual data from the source paper."
+        return "This tool is used to curate the PK population individual data from PK demographic tables or full text in the source paper."
 
     def _run(self, previous_errors: str):
         pmid_info = self.pmid_db.select_pmid_info(self.pmid)
@@ -351,7 +351,7 @@ class PEStudyOutcomeCurationTool(AgentTool):
         
     @staticmethod
     def get_tool_description() -> str:
-        return "This tool is used to curate the PE study outcome data from the source paper."
+        return "This tool is used to curate the PE study outcome data from PE tables in the source paper."
 
     def _run(self, previous_errors: str):
         pmid_info = self.pmid_db.select_pmid_info(self.pmid)

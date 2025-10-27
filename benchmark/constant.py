@@ -7,6 +7,8 @@ class BenchmarkType(Enum):
     UNKNOWN = "unknown"
     PK_SUMMARY = "pk-summary"
     PK_SUMMARY_BASELINE = "pk-summary-baseline"
+    PK_INDIVIDUAL = "pk-individual"
+    PK_INDIVIDUAL_BASELINE = "pk-individual-baseline"
     PE = "pe"
     PE_BASELINE = "pe-baseline"
 

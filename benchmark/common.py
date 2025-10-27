@@ -108,6 +108,7 @@ def _get_benchmark_type(dir_path: str) -> BenchmarkType | None:
         dir_path += "/"
     pk_summary_str = "/" + BenchmarkType.PK_SUMMARY.value + "/"
     pe_str = "/" + BenchmarkType.PE.value + "/"
+    pk_individual_str = "/" + BenchmarkType.PK_INDIVIDUAL.value + "/"
     if pk_summary_str in dir_path:
         ix = dir_path.find(pk_summary_str)
         baseline_path = dir_path[ix + len(pk_summary_str) :]
@@ -122,7 +123,13 @@ def _get_benchmark_type(dir_path: str) -> BenchmarkType | None:
             return BenchmarkType.PE_BASELINE
         else:
             return BenchmarkType.PE
-
+    if pk_individual_str in dir_path:
+        ix = dir_path.find(pk_individual_str)
+        baseline_path = dir_path[ix + len(pk_individual_str) :]
+        if baseline_path.startswith(BASELINE + "/"):
+            return BenchmarkType.PK_INDIVIDUAL_BASELINE
+        else:
+            return BenchmarkType.PK_INDIVIDUAL
     return BenchmarkType.UNKNOWN
 
 
@@ -185,7 +192,11 @@ def walk_benchmark_data_directory(
 def prepare_dataset_for_benchmark(
     baseline_dir: str,
     target_dir: str,
-    benchmark_type: Union[BenchmarkType.PK_SUMMARY, BenchmarkType.PE],
+    benchmark_type: Union[
+        BenchmarkType.PK_SUMMARY, 
+        BenchmarkType.PE, 
+        BenchmarkType.PK_INDIVIDUAL
+    ],
 ):
     """
     This function is to prepare dataset for benchmark. It will walk through

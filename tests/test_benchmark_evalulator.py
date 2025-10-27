@@ -3,9 +3,9 @@ import pandas as pd
 
 from benchmark.evaluate import TablesEvaluator, TablesSeparateEvaluator
 from benchmark.pk_summary_benchmark_with_semantic import (
-    PK_ANCHOR_COLUMNS,
-    PK_RATING_COLUMNS,
-    PK_COLUMNS_TYPE,
+    PK_SUMMARY_ANCHOR_COLUMNS,
+    PK_SUMMARY_RATING_COLUMNS,
+    PK_SUMMARY_COLUMNS_TYPE,
 )
 
 
@@ -26,7 +26,7 @@ def test_anchro_row_from_rows():
     much_rows = much.to_dict("records")
 
     evaluator = TablesEvaluator(
-        anchor_cols=PK_ANCHOR_COLUMNS, rating_cols=PK_RATING_COLUMNS
+        anchor_cols=PK_SUMMARY_ANCHOR_COLUMNS, rating_cols=PK_SUMMARY_RATING_COLUMNS
     )
     for i, r in less.iterrows():
         the_row = evaluator.anchor_row_from_rows(r, much_rows)
@@ -43,9 +43,9 @@ def test_compare_tables():
     if bshape[1] != tshape[1]:
         return 0
     evaluator = TablesSeparateEvaluator(
-        anchor_cols=PK_ANCHOR_COLUMNS,
-        rating_cols=PK_RATING_COLUMNS,
-        columns_type=PK_COLUMNS_TYPE,
+        anchor_cols=PK_SUMMARY_ANCHOR_COLUMNS,
+        rating_cols=PK_SUMMARY_RATING_COLUMNS,
+        columns_type=PK_SUMMARY_COLUMNS_TYPE,
     )
 
     text_score, numeric_score = evaluator.compare_tables(baseline, target)
@@ -53,8 +53,8 @@ def test_compare_tables():
     assert numeric_score > 0
 
     evaluator = TablesEvaluator(
-        anchor_cols=PK_ANCHOR_COLUMNS,
-        rating_cols=PK_RATING_COLUMNS,
+        anchor_cols=PK_SUMMARY_ANCHOR_COLUMNS,
+        rating_cols=PK_SUMMARY_RATING_COLUMNS,
     )
     score = evaluator.compare_tables(baseline, target)
     assert score > 0
