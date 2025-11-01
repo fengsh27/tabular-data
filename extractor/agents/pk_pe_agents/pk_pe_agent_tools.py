@@ -22,8 +22,10 @@ class AgentTool(ABC):
         self,
         llm: BaseChatOpenAI | None = None,
         output_callback:Callable[[dict], None] = None,
+        llm2: BaseChatOpenAI | None = None,
     ):
         self.llm = llm
+        self.llm2 = llm2
         self.output_callback = output_callback
 
     def _print_token_usage(self, token_usage: dict):
@@ -55,10 +57,11 @@ class PKSummaryTablesCurationTool(AgentTool):
         self,
         pmid: str,
         llm: BaseChatOpenAI | None = None,
+        llm2: BaseChatOpenAI | None = None,
         output_callback:Callable[[dict], None] = None,
         pmid_db: PMIDDB | None = None,
     ):
-        super().__init__(llm, output_callback)
+        super().__init__(llm, output_callback, llm2)
         self.pmid = pmid
         self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
 
@@ -116,10 +119,11 @@ class PKIndividualTablesCurationTool(AgentTool):
         self,
         pmid: str,
         llm: BaseChatOpenAI | None = None,
+        llm2: BaseChatOpenAI | None = None,
         output_callback:Callable[[dict], None] = None,
         pmid_db: PMIDDB | None = None,
     ):
-        super().__init__(llm, output_callback)
+        super().__init__(llm, output_callback, llm2)
         self.pmid = pmid
         self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
     
@@ -145,7 +149,7 @@ class PKIndividualTablesCurationTool(AgentTool):
         self._print_token_usage(token_usage)
         if not selected_tables:
             return None, None
-        workflow = PKIndWorkflow(llm=self.llm)
+        workflow = PKIndWorkflow(llm=self.llm, llm2=self.llm2)
         workflow.build()
         dfs: list[pd.DataFrame] = []
         source_tables = []
@@ -181,10 +185,11 @@ class PKPopulationSummaryCurationTool(AgentTool):
         self,
         pmid: str,
         llm: BaseChatOpenAI | None = None,
+        llm2: BaseChatOpenAI | None = None,
         output_callback:Callable[[dict], None] = None,
         pmid_db: PMIDDB | None = None,
     ):
-        super().__init__(llm, output_callback)
+        super().__init__(llm, output_callback, llm2)
         self.pmid = pmid
         self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
         
@@ -260,10 +265,11 @@ class PKPopulationIndividualCurationTool(AgentTool):
         self,
         pmid: str,
         llm: BaseChatOpenAI | None = None,
+        llm2: BaseChatOpenAI | None = None,
         output_callback:Callable[[dict], None] = None,
         pmid_db: PMIDDB | None = None,
     ):
-        super().__init__(llm, output_callback)
+        super().__init__(llm, output_callback, llm2)
         self.pmid = pmid
         self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
         
@@ -338,10 +344,11 @@ class PEStudyOutcomeCurationTool(AgentTool):
         self,
         pmid: str,
         llm: BaseChatOpenAI | None = None,
+        llm2: BaseChatOpenAI | None = None,
         output_callback:Callable[[dict], None] = None,
         pmid_db: PMIDDB | None = None,
     ):
-        super().__init__(llm, output_callback)
+        super().__init__(llm, output_callback, llm2)
         self.pmid = pmid
         self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
     
@@ -404,6 +411,7 @@ class FullTextCurationTool(AgentTool):
         tool_name: str,
         tool_description: str,
         llm: BaseChatOpenAI | None = None,
+        llm2: BaseChatOpenAI | None = None,
         output_callback:Callable[[dict], None] = None,
         pmid_db: PMIDDB | None = None,
     ):
@@ -415,7 +423,7 @@ class FullTextCurationTool(AgentTool):
         PKDrugIndWorkflow
         PEStudyInfoWorkflow
         """
-        super().__init__(llm, output_callback)
+        super().__init__(llm, output_callback, llm2)
         self.pmid = pmid
         self.cls = cls
         self.tool_name = tool_name

@@ -53,8 +53,9 @@ logger = logging.getLogger(__name__)
 class PKIndWorkflow:
     """pk individual workflow"""
 
-    def __init__(self, llm: BaseChatOpenAI):
+    def __init__(self, llm: BaseChatOpenAI, llm2: BaseChatOpenAI | None = None):
         self.llm = llm
+        self.llm2 = llm2
 
     def build(self):
         def select_drug_matching_step(state: PKIndWorkflowState):
@@ -180,6 +181,7 @@ class PKIndWorkflow:
                 "title": title if title is not None else "",
                 "previous_errors": previous_errors,
                 "full_text": full_text if full_text is not None else "N/A",
+                "llm2": self.llm2,
             },
             config=config,
             stream_mode="values",

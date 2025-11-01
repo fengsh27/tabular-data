@@ -11,6 +11,7 @@ from extractor.agents.pk_individual.pk_ind_patient_matching_agent import (
     get_matching_patient_prompt,
     MatchedPatientResult,
     post_process_validate_matched_patients,
+    try_fix_error_matched_patients,
 )
 
 
@@ -50,6 +51,13 @@ class PatientMatchingAgentStep(PKIndCommonStep):
         self.start_title = "Patient Matching (Agent)"
         self.end_title = "Completed Patient Matching"
 
+    def _validate_matched_patients(self, matched_row_indices: list[int], df_table_patient: pd.DataFrame):
+        expected_rows = df_table_patient.shape[0]
+        if len(matched_row_indices) <= expected_rows:
+            return matched_row_indices
+        
+        return [ix for ix in matched_row_indices if ix < expected_rows]
+
     def execute_directly(self, state):
         patient_list = []
         md_table_list = state["md_table_list"]
@@ -58,6 +66,7 @@ class PatientMatchingAgentStep(PKIndCommonStep):
         df_table_patient_refined = markdown_to_dataframe(md_table_patient_refined)
         md_table_aligned = state["md_table_aligned"]
         llm = state["llm"]
+        llm2 = state["llm2"]
         caption = state["caption"]
         total_token_usage = {**DEFAULT_TOKEN_USAGE}
         round = 0
@@ -70,11 +79,12 @@ class PatientMatchingAgentStep(PKIndCommonStep):
             previous_errors_prompt = self._get_previous_errors_prompt(state)
             system_prompt = system_prompt + previous_errors_prompt
             instruction_prompt = INSTRUCTION_PROMPT
-            agent = PKIndCommonAgent(llm=llm)
+            agent = PKIndCommonAgent(llm=llm, llm2=llm2)
             res, processed_res, token_usage = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=MatchedPatientResult,
+                try_fix_error=try_fix_error_matched_patients,
                 post_process=post_process_validate_matched_patients,
                 md_table=md,
             )
@@ -100,6 +110,7 @@ class PatientMatchingAgentStep(PKIndCommonStep):
                 ],
                 ignore_index=True,
             )
+            patient_match_list = self._validate_matched_patients(patient_match_list, df_table_patient)
             df_table_patient_reordered = df_table_patient.iloc[
                 patient_match_list
             ].reset_index(drop=True)

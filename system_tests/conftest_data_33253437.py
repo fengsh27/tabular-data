@@ -95,6 +95,60 @@ data_md_table_drug_table_0_33253437 = """
 | Fluoxetine | Fluoxetine | Plasma |
 """
 
+data_md_table_patient_table_0_33253437 = """
+| Patient ID | Population | Pregnancy stage |
+| --- | --- | --- |
+| "1" | "N/A" | "N/A" |
+| "3" | "N/A" | "N/A" |
+| "4" | "N/A" | "N/A" |
+| "5" | "N/A" | "N/A" |
+| "12" | "N/A" | "N/A" |
+| "13" | "N/A" | "N/A" |
+| "14" | "N/A" | "N/A" |
+| "15" | "N/A" | "N/A" |
+| "18" | "N/A" | "N/A" |
+| "22" | "N/A" | "N/A" |
+| "23" | "N/A" | "N/A" |
+| "25" | "N/A" | "N/A" |
+| "26" | "N/A" | "N/A" |
+| "32" | "N/A" | "N/A" |
+| "33" | "N/A" | "N/A" |
+| "34" | "N/A" | "N/A" |
+| "36" | "N/A" | "N/A" |
+| "42" | "N/A" | "N/A" |
+| "9" | "N/A" | "N/A" |
+| "10" | "N/A" | "N/A" |
+| "28" | "N/A" | "N/A" |
+| "29" | "N/A" | "N/A" |
+| "30" | "N/A" | "N/A" |
+| "47" | "N/A" | "N/A" |
+| "56" | "N/A" | "N/A" |
+| "2" | "N/A" | "N/A" |
+| "6" | "N/A" | "N/A" |
+| "7" | "N/A" | "N/A" |
+| "16" | "N/A" | "N/A" |
+| "17" | "N/A" | "N/A" |
+| "20" | "N/A" | "N/A" |
+| "24" | "N/A" | "N/A" |
+| "8" | "N/A" | "N/A" |
+| "19" | "N/A" | "N/A" |
+| "21" | "N/A" | "N/A" |
+| "31" | "N/A" | "N/A" |
+| "45" | "N/A" | "N/A" |
+| "49" | "N/A" | "N/A" |
+| "50" | "N/A" | "N/A" |
+| "51" | "N/A" | "N/A" |
+| "39" | "N/A" | "N/A" |
+| "40" | "N/A" | "N/A" |
+| "41" | "N/A" | "N/A" |
+| "44" | "N/A" | "N/A" |
+| "46" | "N/A" | "N/A" |
+| "52" | "N/A" | "N/A" |
+| "53" | "N/A" | "N/A" |
+| "54" | "N/A" | "N/A" |
+| "55" | "N/A" | "N/A" |
+"""
+
 data_md_table_patient_refined_table_0_33253437 = """
 | Patient ID | Population | Pregnancy stage | Pediatric/Gestational age |
 | --- | --- | --- | --- |

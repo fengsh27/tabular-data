@@ -112,3 +112,25 @@ def post_process_validate_matched_tuple(
         raise RetryException(error_msg)
 
     return matched_tuple
+
+def try_fix_error_param_type_unit(
+    res: ParamTypeUnitExtractionResult,
+    md_table: str,
+    col_mapping: dict,
+):
+    matched_tuple = (
+        res.extracted_param_units.parameter_types,
+        res.extracted_param_units.parameter_units,
+        res.extracted_param_units.parameter_values,
+    )
+    expected_rows = markdown_to_dataframe(md_table).shape[0]
+    fixed_matched_list = []
+    for ix in range(len(matched_tuple)):
+        if len(matched_tuple[ix]) != expected_rows:
+            if len(matched_tuple[ix]) > expected_rows:
+                fixed_matched_list.append(matched_tuple[ix][:expected_rows])
+            elif len(matched_tuple[ix]) < expected_rows:
+                fixed_matched_list.append(matched_tuple[ix] + ["N/A"] * (expected_rows - len(matched_tuple[ix])))
+            else:
+                fixed_matched_list.append(matched_tuple[ix])
+    return (fixed_matched_list[0], fixed_matched_list[1], fixed_matched_list[2])

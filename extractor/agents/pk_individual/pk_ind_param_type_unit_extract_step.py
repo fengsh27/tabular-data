@@ -10,6 +10,7 @@ from extractor.agents.pk_individual.pk_ind_param_type_unit_extract_agent import 
     get_param_type_unit_extraction_prompt,
     ParamTypeUnitExtractionResult,
     post_process_validate_matched_tuple,
+    try_fix_error_param_type_unit,
 )
 
 
@@ -57,14 +58,22 @@ class ExtractParamTypeAndUnitStep(PKIndCommonAgentStep):
             system_prompt = system_prompt + previous_errors_prompt
             instruction_prompt = self.get_instruction_prompt(state)
             agent = PKIndCommonAgent(llm=llm, llm2=llm2)
-            res, processed_res, token_usage = agent.go(
+            
+            res_tuple = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=schema,
+                try_fix_error=try_fix_error_param_type_unit,
                 post_process=post_process_validate_matched_tuple,
                 md_table=md,
                 col_mapping=col_mapping,
             )
+            if len(res_tuple) == 3:
+                res, processed_res, token_usage = res_tuple
+            elif len(res_tuple) == 4:
+                res, processed_res, token_usage, reasoning_process = res_tuple
+            else:
+                raise ValueError(f"Invalid return value from agent.go: {res_tuple}")
             self._step_output(
                 state,
                 step_reasoning_process=res.reasoning_process

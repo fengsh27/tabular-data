@@ -28,6 +28,7 @@ class PKIndividualTask(PKPEAgentToolTask):
         return PKIndividualTablesCurationTool(
             pmid=pmid,
             llm=self.pipeline_llm,
+            llm2=self.agent_llm,
             output_callback=self.print_step,
             pmid_db=self.pmid_db,
         )
