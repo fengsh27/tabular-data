@@ -10,6 +10,7 @@ class PKIndWorkflowState(TypedDict):
     llm: BaseChatOpenAI
     md_table: str
     caption: str
+    llm2: Optional[BaseChatOpenAI]
     title: Optional[str] # paper title
     col_mapping: Optional[dict]
     md_table_drug: Optional[str]

@@ -28,12 +28,13 @@ class PKIndCommonAgent:
         self.llm2 = llm2
         self.exceptions: list[RetryException] | None = None
         self.token_usage: dict | None = None
-
+        self.try_fix_error: Optional[Callable[[Any], Any]] = None
     def go(
         self,
         system_prompt: str,
         instruction_prompt: str,
         schema: any,
+        try_fix_error: Optional[Callable[[Any], Any]] = None,
         pre_process: Optional[Callable] = None,
         post_process: Optional[Callable] = None,
         **kwargs: Optional[Any],
@@ -53,6 +54,7 @@ class PKIndCommonAgent:
         (output that comply with input args `schema`)
         """
         self._initialize()
+        self.try_fix_error = try_fix_error
         if pre_process is not None:
             is_OK = pre_process(**kwargs)
             if not is_OK:  # skip
@@ -139,6 +141,10 @@ class PKIndCommonAgent:
             try:
                 processed_res = post_process(res, **kwargs)
             except RetryException as e:
+                if self.exceptions is not None and len(self.exceptions) == 4 and self.try_fix_error is not None:
+                    fixed_res = self.try_fix_error(res, **kwargs)
+                    if fixed_res is not None:
+                        return res, fixed_res, self.token_usage
                 logger.error(str(e))
                 if self.exceptions is None:
                     self.exceptions = [e]

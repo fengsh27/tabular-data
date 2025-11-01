@@ -105,15 +105,15 @@ def normalize_pk_individual_baseline(df: pd.DataFrame) -> pd.DataFrame:
 
 def main():
     source_csv_files = [
-        'benchmark/utils/pk_individual_baseline/10971311_baseline_original.csv',
-        'benchmark/utils/pk_individual_baseline/11849190_baseline_original.csv',
-        'benchmark/utils/pk_individual_baseline/18426260_baseline_original.csv',
-        'benchmark/utils/pk_individual_baseline/23200982_baseline_original.csv',
-        'benchmark/utils/pk_individual_baseline/24989434_baseline_original.csv',
+        # 'benchmark/utils/pk_individual_baseline/10971311_baseline_original.csv',
+        # 'benchmark/utils/pk_individual_baseline/11849190_baseline_original.csv',
+        # 'benchmark/utils/pk_individual_baseline/18426260_baseline_original.csv',
+        # 'benchmark/utils/pk_individual_baseline/23200982_baseline_original.csv',
+        # 'benchmark/utils/pk_individual_baseline/24989434_baseline_original.csv',
         'benchmark/utils/pk_individual_baseline/32056930_baseline_original.csv',
-        'benchmark/utils/pk_individual_baseline/32153014_baseline_original.csv',
-        'benchmark/utils/pk_individual_baseline/34746508_baseline_original.csv',
-        'benchmark/utils/pk_individual_baseline/33253437_baseline_original.csv',
+        # 'benchmark/utils/pk_individual_baseline/32153014_baseline_original.csv',
+        # 'benchmark/utils/pk_individual_baseline/34746508_baseline_original.csv',
+        # 'benchmark/utils/pk_individual_baseline/33253437_baseline_original.csv',
     ]
     for source_csv_file in source_csv_files:
         df = pd.read_csv(source_csv_file)

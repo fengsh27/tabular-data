@@ -172,3 +172,17 @@ Please:
         raise RetryException(error_msg)
 
     return match_list
+
+def try_fix_error_matched_patients(
+    res: MatchedPatientResult,
+    md_table: str,
+):
+    match_list = res.matched_row_indices
+    expected_rows = markdown_to_dataframe(md_table).shape[0]
+    if len(match_list) == expected_rows:
+        return match_list
+    else:
+        if len(match_list) > expected_rows:
+            return match_list[:expected_rows]
+        else:
+            return match_list + [-1] * (expected_rows - len(match_list))

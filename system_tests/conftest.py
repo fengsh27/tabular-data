@@ -42,6 +42,7 @@ from system_tests.conftest_data_33253437 import (
     data_md_table_aligned_table_0_33253437,
     data_col_mapping_table_0_33253437,
     data_md_table_list_table_0_33253437,
+    data_md_table_patient_table_0_33253437,
 )
 
 load_dotenv()
@@ -2564,6 +2565,10 @@ def md_table_individual_table_0_33253437():
 @pytest.fixture(scope="module")
 def col_mapping_table_0_33253437():
     return data_col_mapping_table_0_33253437
+
+@pytest.fixture(scope="module")
+def md_table_patient_table_0_33253437():
+    return data_md_table_patient_table_0_33253437
 
 # ============================================================================================
 # utils
