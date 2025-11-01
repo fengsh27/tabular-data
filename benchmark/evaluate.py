@@ -284,9 +284,8 @@ class TablesEvaluator:
         scores = []
         much_rows = much.to_dict("records")
         for index, row in less.iterrows():
-            if index == 35:
-                pass
             much_row = self.anchor_row_from_rows(row, much_rows)
+            
             if much_row is None:
                 scores.append(0)
                 continue
