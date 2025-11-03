@@ -97,19 +97,9 @@ def llm():
 
 @pytest.fixture(scope="module")
 def llm_agent():
-    return AzureChatOpenAI(
-        api_key=os.environ.get("OPENAI_API_KEY", None),
-        azure_endpoint=os.environ.get("AZURE_OPENAI_ENDPOINT", None),
-        api_version=os.environ.get("OPENAI_5_API_VERSION", None),
-        azure_deployment=os.environ.get("OPENAI_5_DEPLOYMENT_NAME", None),
-        model=os.environ.get("OPENAI_5_MODEL", None),
-        max_retries=5,
-        # temperature=0.0,
-        max_completion_tokens=int(os.environ.get("OPENAI_MAX_OUTPUT_TOKENS", 4096)),
-        # top_p=0.95,
-        # frequency_penalty=0,
-        # presence_penalty=0,
-    )
+    return get_agent_llm()
+
+
 ghtml_content = """
 <section id="S8">
    <h3 class="pmc_sec_title">Pharmacokinetics</h3>

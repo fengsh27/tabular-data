@@ -11,10 +11,10 @@ def get_gpt_oss_llm():
     return get_gpt_oss()
 
 def get_pipeline_llm():
-    return get_openai() # get_gpt_oss_llm() # 
+    return get_gpt_oss_llm() # get_openai() # 
 
 def get_agent_llm():
-    return get_5_openai() # get_gpt_oss_llm() # 
+    return get_gpt_oss_llm() # get_5_openai() # 
 
 def structured_output_llm(
     llm,
