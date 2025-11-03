@@ -9,7 +9,7 @@ from tenacity import retry, stop_after_attempt, wait_incrementing
 import logging
 
 from extractor.agents.agent_utils import increase_token_usage
-from extractor.llm import structured_output_llm
+from extractor.llm_utils import structured_output_llm
 from extractor.utils import escape_braces_for_format
 
 logger = logging.getLogger(__name__)

@@ -10,7 +10,7 @@ import logging
 
 from extractor.agents.agent_utils import escape_braces_for_format
 from extractor.agents.common_agent.common_agent_2steps import CommonAgentTwoSteps
-from extractor.llm import structured_output_llm
+from extractor.llm_utils import structured_output_llm
 from .common_agent import (
     CommonAgent,
     RetryException,

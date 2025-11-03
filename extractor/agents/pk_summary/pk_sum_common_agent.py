@@ -4,7 +4,7 @@ from typing import Any, Callable, Optional
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import AzureChatOpenAI
 from langchain_openai.chat_models.base import BaseChatOpenAI
-from extractor.llm import structured_output_llm
+from extractor.llm_utils import structured_output_llm
 from langchain_anthropic.chat_models import ChatAnthropic
 from langchain_google_genai.chat_models import ChatGoogleGenerativeAI
 from langchain_community.callbacks.openai_info import OpenAICallbackHandler
