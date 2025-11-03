@@ -6,6 +6,7 @@ from pydantic import BaseModel, Field
 from tenacity import retry, stop_after_attempt, wait_incrementing
 import logging
 
+from extractor.llm import structured_output_llm
 from extractor.utils import escape_braces_for_format
 from .common_agent import (
     CommonAgent,
@@ -103,7 +104,8 @@ class CommonAgentTwoSteps(CommonAgent):
             system_prompt=system_prompt,
             cot_msg=reasoning_process,
         )
-        agent = updated_prompt | self.llm.with_structured_output(schema)
+        # agent = updated_prompt | self.llm.with_structured_output(schema)
+        agent = structured_output_llm(self.llm, schema, updated_prompt)
         try:
             res = agent.invoke(
                 input={},
@@ -193,7 +195,8 @@ class CommonAgentTwoChainSteps(CommonAgentTwoSteps):
                 final_msg,
             )]
             final_prompt = ChatPromptTemplate.from_messages(msgs)
-            agent = final_prompt | self.llm.with_structured_output(schema)
+            # agent = final_prompt | self.llm.with_structured_output(schema)
+            agent = structured_output_llm(self.llm, schema, final_prompt)
             res = agent.invoke(
                 input={},
                 config={

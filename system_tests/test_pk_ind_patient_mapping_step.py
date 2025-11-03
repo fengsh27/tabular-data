@@ -30,7 +30,7 @@ def test_PatientMatchingAgentStep_29100749_table_2(
 
 def test_PatientMatchingAgentStep_33253437_table_0(
     llm,
-    llm_gpt5,
+    llm_agent,
     md_table_aligned_table_0_33253437,
     md_table_patient_table_0_33253437,
     md_table_patient_refined_table_0_33253437,
@@ -41,7 +41,7 @@ def test_PatientMatchingAgentStep_33253437_table_0(
     step = PatientMatchingAgentStep()
     state = PKIndWorkflowState()
     state["llm"] = llm
-    state["llm2"] = llm_gpt5
+    state["llm2"] = llm_agent
     state["md_table_aligned"] = md_table_aligned_table_0_33253437
     state["md_table_patient"] = md_table_patient_table_0_33253437
     state["md_table_patient_refined"] = md_table_patient_refined_table_0_33253437

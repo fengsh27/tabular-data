@@ -42,11 +42,11 @@ def test_pk_pe_manager_run_pk_workflows_1(llm, pmid_db, pmid):
         f.write(f"suggested_fix: {res[PipelineTypeEnum.PK_SUMMARY]['suggested_fix']}")
     
 
-def test_pk_pe_manager_identification_step(llm, llm_gpt5, pmid_db):
+def test_pk_pe_manager_identification_step(llm, llm_agent, pmid_db):
     pmid = "39843580"
     pk_pe_manager = PKPEManager(
         pipeline_llm=llm,
-        agent_llm=llm_gpt5,
+        agent_llm=llm_agent,
         pmid_db=pmid_db,
     )
     pk_pe_manager._extract_pmid_info(pmid)

@@ -118,10 +118,9 @@ class PKPECuratedTablesCorrectionStep(CommonStep):
         domain: str,
     ):
         super().__init__(llm)
-        if isinstance(llm, AzureChatOpenAI) and llm.model_name == "gpt-4o":
+        # if isinstance(llm, AzureChatOpenAI) and llm.model_name == "gpt-4o":
             # FIXME: gpt-4o does not work well to correct big tables, so we use gpt-5-mini instead.
-            # self.llm = get_5_mini_openai()
-            self.llm = get_gemini()
+            # self.llm = get_gemini()
             # self.llm = llm
         self.step_name = "PK PE Correction Step"
         self.pmid = pmid

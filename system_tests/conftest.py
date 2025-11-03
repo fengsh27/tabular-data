@@ -17,6 +17,7 @@ from extractor.database.pmid_db import PMIDDB
 from extractor.request_sonnet import get_sonnet
 from extractor.request_metallama import get_meta_llama
 from extractor.request_openai import get_5_openai, get_openai
+from extractor.llm_utils import get_pipeline_llm, get_agent_llm
 from system_tests.conftest_data import curated_data_29100749, data_caption_29100749_table_0, data_caption_29100749_table_2, data_caption_32635742_table_0, data_col_mapping_18426260_table_0, data_col_mapping_29100749_table_2, data_md_table_18426260_table_0, data_md_table_32635742_table_0, data_md_table_aligned_18426260_table_0, data_md_table_aligned_29100749_table_2, data_md_table_drug_18426260_table_0, data_md_table_drug_29100749_table_2, data_md_table_individual_18426260_table_0, data_md_table_individual_29100749_table_2, data_md_table_list_18426260_table_0, data_md_table_list_29100749_table_2, data_md_table_patient_29100749_table_2, data_md_table_patient_refined_29100749_table_2, data_source_table_29100749_table_0, data_source_table_29100749_table_2, paper_abstract_29100749, paper_abstract_32635742, paper_title_29100749, paper_title_32635742
 from system_tests.conftest_data_10971311 import (
     data_title_10971311,
@@ -92,10 +93,10 @@ def get_gemini():
 
 @pytest.fixture(scope="module")
 def llm():
-    return get_azure_openai()  # get_openai() # get_deepseek() # get_sonnet() # get_meta_llama() # get_gemini() # get_5_openai() # 
+    return get_pipeline_llm()  # get_azure_openai()  # get_openai() # get_deepseek() # get_sonnet() # get_meta_llama() # get_gemini() # get_5_openai() # 
 
 @pytest.fixture(scope="module")
-def llm_gpt5():
+def llm_agent():
     return AzureChatOpenAI(
         api_key=os.environ.get("OPENAI_API_KEY", None),
         azure_endpoint=os.environ.get("AZURE_OPENAI_ENDPOINT", None),

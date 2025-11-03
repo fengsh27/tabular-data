@@ -1,4 +1,4 @@
-from langchain.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate
 from pydantic import Field
 
 from TabFuncFlow.operations.f_split_by_cols import f_split_by_cols

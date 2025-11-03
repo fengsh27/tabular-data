@@ -9,6 +9,7 @@ from tenacity import retry, stop_after_attempt, wait_incrementing
 import logging
 
 from extractor.agents.agent_utils import increase_token_usage
+from extractor.llm import structured_output_llm
 from extractor.utils import escape_braces_for_format
 
 logger = logging.getLogger(__name__)
@@ -119,7 +120,8 @@ class CommonAgent:
         callback_handler = OpenAICallbackHandler()
 
         updated_prompt = self._process_retryexception_message(prompt)
-        agent = updated_prompt | self.llm.with_structured_output(schema)
+        agent = structured_output_llm(self.llm, schema, updated_prompt)
+        # agent = updated_prompt | self.llm.with_structured_output(schema)
         try:
             res = agent.invoke(
                 input={},

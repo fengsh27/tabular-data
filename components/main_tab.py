@@ -48,6 +48,7 @@ from extractor.agents.pk_drug_individual.pk_drug_ind_workflow import PKDrugIndWo
 from extractor.agents.pe_study_info.pe_study_info_workflow import PEStudyInfoWorkflow
 from extractor.agents.pe_study_outcome_ver2.pe_study_out_workflow import PEStudyOutWorkflow
 from extractor.request_openai import get_5_openai, get_openai, get_client_and_model
+from extractor.llm_utils import get_pipeline_llm, get_agent_llm
 from extractor.request_deepseek import get_deepseek
 from extractor.pmid_extractor.table_utils import select_pk_summary_tables, select_pk_demographic_tables, select_pe_tables
 from extractor.agents_manager.pk_pe_manager import PKPEManager
@@ -348,7 +349,8 @@ def run_curation(
 ) -> tuple[str, pd.DataFrame | None]:
 
     # ───────────────────────── Select LLM ──────────────────────────
-    llm = _get_llm(llm_label)
+    # llm = _get_llm(llm_label)
+    llm = get_pipeline_llm()
 
     # ───────────────────────── Helpers ─────────────────────────────
     logs: list[str] = []
@@ -660,8 +662,8 @@ async def main_tab():
                         with st.spinner("Curating …"):
                             db = get_pmid_db()
                             pkpe_manager = PKPEManager(
-                                pipeline_llm=get_openai(), 
-                                agent_llm=get_5_openai(), 
+                                pipeline_llm=get_pipeline_llm(), 
+                                agent_llm=get_agent_llm(), 
                                 pmid_db=db
                             )
                             
