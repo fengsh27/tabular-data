@@ -23,6 +23,9 @@ class HeaderCategorizeStep(PKIndCommonAgentStep):
     def get_schema(self):
         return HeaderCategorizeJsonSchema
 
+    def get_schema_basemodel(self):
+        return HeaderCategorizeResult
+
     def get_post_processor_and_kwargs(self, state):
         md_table_aligned = state["md_table_aligned"]
         return post_process_validate_categorized_result, {

@@ -6,12 +6,13 @@ import logging
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
+from extractor.agents.agent_utils import get_reasoning_process
 from extractor.agents.common_agent.common_agent import CommonAgent, CommonAgentResult, RetryException
 from extractor.agents.pk_summary.pk_sum_common_agent import (
     PKSumCommonAgentResult,
     # PKSumCommonAgent,
 )
-from extractor.agents.pk_summary.pk_sum_workflow_utils import get_common_agent
+from extractor.agents.agent_factory import get_common_agent
 from extractor.prompts_utils import generate_tables_prompts
 
 logger = logging.getLogger(__name__)
@@ -136,15 +137,17 @@ def select_pk_summary_tables(html_tables: list[dict[str, str | DataFrame]], llm)
     system_prompt = SELECT_PK_TABLES_PROMPT.format(table_content=table_content)
 
     agent = get_common_agent(llm=llm) # PKSumCommonAgent(llm=llm)
-    res, tables, token_usage, reasoning_process = agent.go(
+    result = agent.go(
         system_prompt=system_prompt,
         instruction_prompt=INSTRUCTION_PROMPT,
         schema=TablesSelectionResult,
         post_process=post_process_selected_table_ids,
         html_tables=html_tables,
     )
-    if reasoning_process is None:
-        reasoning_process = res.reasoning_process if hasattr(res, "reasoning_process") else "N / A"
+    res: TablesSelectionResult = result[0]
+    tables = result[1]
+    token_usage = result[2]
+    reasoning_process = get_reasoning_process(result)
     logger.info(f"Selected tables (indices): {res.selected_table_indexes}")
     logger.info(f"Reason: {reasoning_process}")
 

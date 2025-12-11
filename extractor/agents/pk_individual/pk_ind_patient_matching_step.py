@@ -2,8 +2,7 @@ import pandas as pd
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
-from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
-from extractor.agents.pk_individual.pk_ind_common_agent import PKIndCommonAgent
+from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, get_reasoning_process, increase_token_usage
 from extractor.agents.pk_individual.pk_ind_common_step import (
     PKIndCommonStep,
 )
@@ -79,8 +78,8 @@ class PatientMatchingAgentStep(PKIndCommonStep):
             previous_errors_prompt = self._get_previous_errors_prompt(state)
             system_prompt = system_prompt + previous_errors_prompt
             instruction_prompt = INSTRUCTION_PROMPT
-            agent = PKIndCommonAgent(llm=llm, llm2=llm2)
-            res, processed_res, token_usage = agent.go(
+            agent = self.get_agent(state) # PKIndCommonAgent(llm=llm, llm2=llm2)
+            result = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=MatchedPatientResult,
@@ -88,9 +87,13 @@ class PatientMatchingAgentStep(PKIndCommonStep):
                 post_process=post_process_validate_matched_patients,
                 md_table=md,
             )
+            res: MatchedPatientResult = result[0]
+            processed_res = result[1]
+            token_usage = result[2]
+            reasoning_process = get_reasoning_process(result)
             self._step_output(
                 state,
-                step_reasoning_process=res.reasoning_process if res is not None else "",
+                step_reasoning_process=reasoning_process,
             )
             patient_match_list: list[int] = processed_res
             df_table_patient = df_table_patient_refined.copy()

@@ -29,6 +29,7 @@ class PKIndCommonAgent:
         self.exceptions: list[RetryException] | None = None
         self.token_usage: dict | None = None
         self.try_fix_error: Optional[Callable[[Any], Any]] = None
+        
     def go(
         self,
         system_prompt: str,

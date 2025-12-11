@@ -13,6 +13,7 @@ from extractor.agents.pk_pe_agents.pk_pe_agent_tools import (
 )
 from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState
 from extractor.constants import COT_USER_INSTRUCTION, PipelineTypeEnum
+from extractor.agents.pk_pe_agents.pk_pe_common_step import PKPECommonStep
 
 logger = logging.getLogger(__name__)
 
@@ -193,7 +194,7 @@ def post_process_design(res: PKPEDesignStepResult) -> PKPEDesignStepResult:
             raise RetryException(f"Invalid tool: {tool}")
     return res
 
-class PKPEDesignStep(CommonStep):
+class PKPEDesignStep(PKPECommonStep):
     def __init__(self, llm: BaseChatOpenAI):
         super().__init__(llm)
         self.step_name = "PK PE Design Step"
@@ -209,7 +210,7 @@ class PKPEDesignStep(CommonStep):
         )
         instruction_prompt = COT_USER_INSTRUCTION
 
-        agent = CommonAgent(llm=self.llm)
+        agent = self.get_agent(state) # CommonAgent(llm=self.llm)
 
         res, _, token_usage, reasoning_process = agent.go(
             system_prompt=system_prompt,

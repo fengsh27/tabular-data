@@ -4,7 +4,7 @@ from pydantic import BaseModel, Field
 
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE
 from extractor.agents.common_agent.common_agent import CommonAgent
-from extractor.agents.common_agent.common_step import CommonStep
+from extractor.agents.pk_pe_agents.pk_pe_common_step import PKPECommonStep
 from extractor.agents.common_agent.common_agent_2steps import CommonAgentTwoSteps
 from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState
 from extractor.agents.pk_pe_agents.pk_pe_agents_utils import format_source_tables
@@ -86,7 +86,7 @@ class PKPEVerificationStepResult(BaseModel):
     explanation: str = Field(description="Brief explanation of whether the curated table is accurate. If incorrect, explain what is wrong, including specific mismatched values or structure issues.")
     suggested_fix: str = Field(description="If incorrect, provide a corrected version of the curated table or the corrected values/rows/columns.")
     
-class PKPECuratedTablesVerificationStep(CommonStep):
+class PKPECuratedTablesVerificationStep(PKPECommonStep):
     def __init__(
         self, 
         llm: BaseChatOpenAI, 
@@ -134,7 +134,7 @@ Suggested fix:
         )
         instruction_prompt = COT_USER_INSTRUCTION
 
-        agent = CommonAgent(llm=self.llm) # CommonAgentTwoSteps(llm=self.llm)
+        agent = self.get_agent(state) # CommonAgent(llm=self.llm) # CommonAgentTwoSteps(llm=self.llm)
 
         res, _, token_usage, reasoning_process = agent.go(
             system_prompt=system_prompt,

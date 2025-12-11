@@ -4,8 +4,8 @@ import logging
 from extractor.agents.common_agent.common_agent import RetryException
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
-from extractor.agents.agent_utils import display_md_table, increase_token_usage
-from extractor.agents.pk_individual.pk_ind_common_agent import PKIndCommonAgent, PKIndCommonAgentResult
+from extractor.agents.agent_utils import display_md_table, get_reasoning_process, increase_token_usage
+from extractor.agents.pk_individual.pk_ind_common_agent import PKIndCommonAgentResult
 from extractor.agents.pk_individual.pk_ind_common_step import PKIndCommonAgentStep
 
 logger = logging.getLogger(__name__)
@@ -136,21 +136,30 @@ Mismatch: Expected {df_table.shape[0]} rows, but got {len(patient_ids)} extracte
             processed_md_table=display_md_table(md_table),
             caption=caption,
         )
-        agent = PKIndCommonAgent(llm=state["llm"])
-        res, processed_res, cur_token_usage = agent.go(
+        agent = self.get_agent(state) # PKIndCommonAgent(llm=state["llm"])
+        result = agent.go(
             system_prompt=system_prompt,
             instruction_prompt=INSTRUCTION_PROMPT,
             schema=CheckPatientIDResult,
         )
-        res: CheckPatientIDResult = res
-        self._step_output(state, step_output=f"Reasoning:\n{res.reasoning_process}")
+        res: CheckPatientIDResult = result[0]
+        cur_token_usage = result[2]
+        reasoning_process = get_reasoning_process(result)
+        self._step_output(state, step_output=f"Reasoning:\n{reasoning_process}")
         self._step_output(state, step_output="Result (patient_id):")
         self._step_output(state, step_output=res.patient_id)
         if res.patient_id:
-            return res, processed_res, cur_token_usage
+            # As it has already included patient ID, we don't need to infer the patient ID for each row
+            # So we return None as the processed_res (processed_res is the patient IDs for each row)
+            return res, None, cur_token_usage
 
-        res, processed_res, token_usage = super().execute_directly(state)
-        self._step_output(state, step_output=f"Reasoning:\n{res.reasoning_process}")
+        # We need to infer the patient ID for each row
+        result = super().execute_directly(state)
+        res: InferPatientIDResult = result[0]
+        processed_res = result[1]
+        cur_token_usage = result[2]
+        reasoning_process = get_reasoning_process(result)
+        self._step_output(state, step_output=f"Reasoning:\n{reasoning_process}")
         self._step_output(state, step_output="Result (patient_ids):")
         self._step_output(state, step_output=processed_res)
         token_usage = increase_token_usage(token_usage, cur_token_usage)

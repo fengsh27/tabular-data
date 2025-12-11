@@ -7,7 +7,7 @@ import pandas as pd
 from extractor.agents.common_agent.common_agent import RetryException
 from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
-from extractor.agents.common_agent.common_step import CommonStep
+from extractor.agents.pk_pe_agents.pk_pe_common_step import PKPECommonStep
 from extractor.agents.common_agent.common_agent import CommonAgent
 from extractor.agents.common_agent.common_agent_2steps import CommonAgentTwoSteps
 from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState
@@ -110,7 +110,7 @@ def post_process_corrected_table(res: PKPECorrectionStepResult) -> PKPECorrectio
     except Exception as e:
         raise RetryException(f"The corrected table is not a valid markdown table: {e}")
 
-class PKPECuratedTablesCorrectionStep(CommonStep):
+class PKPECuratedTablesCorrectionStep(PKPECommonStep):
     def __init__(
         self, 
         llm: BaseChatOpenAI, 
@@ -141,7 +141,7 @@ class PKPECuratedTablesCorrectionStep(CommonStep):
         )
         instruction_prompt = COT_USER_INSTRUCTION
 
-        agent = CommonAgent(llm=self.llm)
+        agent = self.get_agent(state) # CommonAgent(llm=self.llm)
 
         res, _, token_usage, reasoning_process = agent.go(
             system_prompt=system_prompt,

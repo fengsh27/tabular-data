@@ -20,7 +20,8 @@ Carefully analyze the table and follow these steps:
    - **"Uncategorized"**: Columns that do not fit into the above categories, such as those representing time-related information, or dose amount information.
         - Examples: Dose amount (e.g. "1 mg/kg", "infant dose", "maternal dose"), Sampling time (e.g., "Time postdose_hr"), Dosing interval (e.g., "Tau hr"), Collection date (e.g., "Sample Date"), Study period (e.g., "Period").
 (2) if a column is only about the subject number, it is considered as "Uncategorized"
-(3) Return a categorized headers dictionary where each key is a column header, and the corresponding value is its assigned category, e.g.
+(3) Please ensure "Patient ID" column exists.
+(4) Return a categorized headers dictionary where each key is a column header, and the corresponding value is its assigned category, e.g.
 {categorized_headers_example}
 """)
 
@@ -43,7 +44,7 @@ class HeaderCategorizeResult(PKIndCommonAgentResult):
     """Categorized results for headers"""
 
     categorized_headers: dict[str, str] = Field(
-        description="""the dictionary represents the categorized result for headers. Each key is a column header, and the corresponding value is its assigned category (one of the values: "Patient ID", "Parameter", and "Uncategorized")"""
+        description="""the dictionary represents the categorized result for headers. Each key is a column header, and the corresponding value is its assigned category (one of the values: "Patient ID", "Parameter value", and "Uncategorized")"""
     )
 
 
@@ -63,7 +64,7 @@ HeaderCategorizeJsonSchema = {
         },
         "categorized_headers": {
             "type": "object",
-            "description": 'the dictionary represents the categorized result for headers. Each key is a column header name, and the corresponding value is its assigned category string (one of the values: "Parameter type", "Parameter unit", "Parameter value", "P value" and "Uncategorized")',
+            "description": 'the dictionary represents the categorized result for headers. Each key is a column header name, and the corresponding value is its assigned category string (one of the values: "Patient ID", "Parameter value", "Uncategorized")',
             "title": "Categorized Headers",
         },
     },
@@ -81,6 +82,8 @@ def post_process_validate_categorized_result(
         except ValidationError as e:
             logger.error(e)
             raise e
+    else:
+        res = result
     # Ensure column count matches the table
     expected_columns = markdown_to_dataframe(md_table_aligned).shape[1]
     match_dict = res.categorized_headers

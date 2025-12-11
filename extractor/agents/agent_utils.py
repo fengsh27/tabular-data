@@ -118,3 +118,10 @@ def extract_pmid_info_to_db(pmid: str, pmid_db: PMIDDB) -> tuple[str, str, str, 
     full_text = remove_references(full_text)
     pmid_db.insert_pmid_info(pmid, title, abstract, full_text, tables, sections)
     return pmid, title, abstract, full_text, tables, sections
+
+def get_reasoning_process(result: tuple) -> str:
+    res = result[0]
+    if hasattr(res, "reasoning_process") and res.reasoning_process is not None:
+        return res.reasoning_process
+    reasoning_process = result[3] if len(result) == 4 else "N/A"
+    return reasoning_process
