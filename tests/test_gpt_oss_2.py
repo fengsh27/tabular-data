@@ -164,6 +164,18 @@ Keywords: 4-Hydroxy-benzophenone (4-HBP); 4-Methyl-benzophenone (4-MBP); Benzoph
 
 
 ---
+
+### **Output Format Instructions**
+The output should be formatted as a JSON instance that conforms to the JSON schema below.
+
+As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
+the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+
+Here is the output schema:
+```
+{"properties": {"reasoning_process": {"description": "A detailed explanation of the thought process or reasoning steps taken to reach a conclusion.", "title": "Reasoning Process", "type": "string"}, "correct": {"description": "Whether the curated table is accurate and faithful to the source table(s).", "title": "Correct", "type": "boolean"}, "explanation": {"description": "Brief explanation of whether the curated table is accurate. If incorrect, explain what is wrong, including specific mismatched values or structure issues.", "title": "Explanation", "type": "string"}, "suggested_fix": {"description": "If incorrect, provide a corrected version of the curated table or the corrected values/rows/columns.", "title": "Suggested Fix", "type": "string"}}, "required": ["reasoning_process", "correct", "explanation", "suggested_fix"]}
+```
+
 """
 
 def test_gpt_oss_with_29100749():
