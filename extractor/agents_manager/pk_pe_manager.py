@@ -71,9 +71,13 @@ class PKPEManager:
         if step_output is not None:
             logger.info(step_output)
 
-    def _extract_pmid_info(self, pmid: str):
+    def _extract_pmid_info(self, pmid: str, html_content: str | None = None):
         pmid_db = self.pmid_db
-        pmid, _, _, _, _, _ = extract_pmid_info_to_db(pmid, pmid_db)
+        pmid, _, _, _, _, _ = extract_pmid_info_to_db(
+            pmid=pmid, 
+            pmid_db=pmid_db,
+            html_content=html_content, 
+        )
         return pmid is not None
 
     def _format_source_tables(self, source_tables: list[dict]) -> str:
@@ -327,14 +331,17 @@ class PKPEManager:
 
     def run(
         self, 
-        pmid: str, 
+        pmid: str,
+        html_content: str | None = None,
         curation_start_callback: Optional[Callable[[str, str], None]] = None, 
         curation_end_callback: Optional[Callable[[str, str, PKPECuratedTables], None]] = None,
-        pipeline_types: Optional[list[PipelineTypeEnum]] = None
+        pipeline_types: Optional[list[PipelineTypeEnum]] = None,
     ) -> dict[str, PKPECuratedTables]:
-        self._extract_pmid_info(pmid)
+        self._extract_pmid_info(
+            pmid=pmid, 
+            html_content=html_content
+        )
 
-        
         if pipeline_types is not None:
             pipelines = {}
             for pipeline_type in pipeline_types:
@@ -373,11 +380,15 @@ class PKPEManager:
     async def runAsync(
         self, 
         pmid: str, 
+        html_content: str | None = None,
         curation_start_callback: Awaitable[Callable[[str, str], None]] = None, 
         curation_end_callback: Awaitable[Callable[[str, str, PKPECuratedTables], None]] = None,
         pipeline_types: Optional[list[PipelineTypeEnum]] = None
     ):
-        self._extract_pmid_info(pmid)
+        self._extract_pmid_info(
+            pmid=pmid, 
+            html_content=html_content
+        )
         
         if pipeline_types is not None:
             pipelines = {}

@@ -99,7 +99,11 @@ def from_system_template(template, **kwargs):
     return ChatPromptTemplate.from_messages([message])
 
 
-def extract_pmid_info_to_db(pmid: str, pmid_db: PMIDDB) -> tuple[str, str, str, str, list[dict], list[str]]:
+def extract_pmid_info_to_db(
+    pmid: str, 
+    pmid_db: PMIDDB, 
+    html_content: str | None = None
+) -> tuple[str, str, str, str, list[dict], list[str]]:
     """
     Extract pmid info from database or web, and save to database.
 
@@ -109,10 +113,11 @@ def extract_pmid_info_to_db(pmid: str, pmid_db: PMIDDB) -> tuple[str, str, str, 
     info = pmid_db.select_pmid_info(pmid)
     if info is not None:
         return info
-    retriever = ArticleRetriever()
-    res, html_content, code = retriever.request_article(pmid)
-    if not res:
-        return None, None, None, None, None, None
+    if html_content is None:
+        retriever = ArticleRetriever()
+        res, html_content, code = retriever.request_article(pmid)
+        if not res:
+            return None, None, None, None, None, None
     extractor = HtmlTableExtractor()
     tables = extractor.extract_tables(html_content)
     sections = extractor.extract_sections(html_content)
