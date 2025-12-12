@@ -6,5 +6,5 @@ class PKPECommonStep(CommonStep):
     def __init__(self, llm: BaseChatOpenAI):
         super().__init__(llm)
 
-    def get_agent(self, state):
-        return get_common_agent(llm=state["llm"])
+    def get_agent(self, llm:BaseChatOpenAI):
+        return get_common_agent(llm=llm)

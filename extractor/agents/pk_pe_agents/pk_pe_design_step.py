@@ -210,7 +210,7 @@ class PKPEDesignStep(PKPECommonStep):
         )
         instruction_prompt = COT_USER_INSTRUCTION
 
-        agent = self.get_agent(state) # CommonAgent(llm=self.llm)
+        agent = self.get_agent(self.llm) # CommonAgent(llm=self.llm)
 
         res, _, token_usage, reasoning_process = agent.go(
             system_prompt=system_prompt,

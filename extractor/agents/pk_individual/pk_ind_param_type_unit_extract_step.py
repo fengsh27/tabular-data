@@ -56,7 +56,7 @@ class ExtractParamTypeAndUnitStep(PKIndCommonAgentStep):
             previous_errors_prompt = self._get_previous_errors_prompt(state)
             system_prompt = system_prompt + previous_errors_prompt
             instruction_prompt = self.get_instruction_prompt(state)
-            agent = self.get_agent(state) # PKIndCommonAgent(llm=llm, llm2=llm2)
+            agent = self.get_agent(state['llm']) # PKIndCommonAgent(llm=llm, llm2=llm2)
             
             result = agent.go(
                 system_prompt=system_prompt,

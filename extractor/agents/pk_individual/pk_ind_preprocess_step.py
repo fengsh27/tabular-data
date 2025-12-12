@@ -136,7 +136,7 @@ Mismatch: Expected {df_table.shape[0]} rows, but got {len(patient_ids)} extracte
             processed_md_table=display_md_table(md_table),
             caption=caption,
         )
-        agent = self.get_agent(state) # PKIndCommonAgent(llm=state["llm"])
+        agent = self.get_agent(state['llm']) # PKIndCommonAgent(llm=state["llm"])
         result = agent.go(
             system_prompt=system_prompt,
             instruction_prompt=INSTRUCTION_PROMPT,

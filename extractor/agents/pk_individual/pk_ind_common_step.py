@@ -3,6 +3,7 @@ from typing import Any, Callable, Optional
 import logging
 
 from pydantic import BaseModel
+from langchain_openai.chat_models.base import BaseChatOpenAI
 
 from extractor.agents.agent_utils import get_reasoning_process
 from extractor.agents.common_agent.common_agent import CommonAgent
@@ -28,8 +29,8 @@ class PKIndCommonStep(ABC):
         self.start_descp = ""
         self.end_title = ""
 
-    def get_agent(self, state: PKIndWorkflowState) -> CommonAgent:
-        return get_common_agent(llm=state["llm"]) # PKIndCommonAgent(llm=state["llm"])
+    def get_agent(self, llm:BaseChatOpenAI) -> CommonAgent:
+        return get_common_agent(llm=llm) # PKIndCommonAgent(llm=state["llm"])
 
     def enter_step(self, state: PKIndWorkflowState):
         pk_ind_enter_step(state, self.start_title, self.start_descp)
@@ -136,7 +137,7 @@ class PKIndCommonAgentStep(PKIndCommonStep):
         schema = self.get_schema()
         schema_basemodel = self.get_schema_basemodel()
         post_process, kwargs = self.get_post_processor_and_kwargs(state)
-        agent = self.get_agent(state)
+        agent = self.get_agent(state["llm"])
         reasoning_process = ""
         if kwargs is not None:
             result = agent.go(

@@ -67,7 +67,7 @@ class DrugMatchingAgentStep(PKIndCommonStep):
             )
             previous_errors_prompt = self._get_previous_errors_prompt(state)
             system_prompt = system_prompt + previous_errors_prompt
-            agent = self.get_agent(state) # get_common_agent(llm=llm) # CommonAgentTwoSteps(llm=llm)
+            agent = self.get_agent(state['llm']) # get_common_agent(llm=llm) # CommonAgentTwoSteps(llm=llm)
             result = agent.go(
             # agent = PKIndCommonAgent(llm=llm)
             # res, processed_res, token_usage = agent.go(
