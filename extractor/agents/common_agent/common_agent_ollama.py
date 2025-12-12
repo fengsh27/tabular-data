@@ -1,13 +1,15 @@
 from typing import Any, Callable, Optional
 
+from langchain_core.output_parsers import PydanticOutputParser
 from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.runnables import RunnableLambda
 from langchain_ollama.chat_models import ChatOllama
 from langchain_community.callbacks.openai_info import OpenAICallbackHandler
 from pydantic import BaseModel, Field
 from tenacity import retry, stop_after_attempt, wait_incrementing
 import logging
 
-from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE
+from extractor.agents.agent_utils import COMPLETION_TOKENS, DEFAULT_TOKEN_USAGE, PROMPT_TOKENS, TOTAL_TOKENS
 from extractor.llm_utils import get_format_instructions, structured_output_llm
 from extractor.utils import escape_braces_for_format
 from .common_agent import (
@@ -22,6 +24,48 @@ class CommonAgentOllama(CommonAgent):
     def __init__(self, llm: ChatOllama):
         super().__init__(llm)
 
+    @staticmethod
+    def normalize_token_usage(token_usage):
+        usage = token_usage
+        if not isinstance(token_usage, dict):
+            usage = vars(token_usage)
+        if not PROMPT_TOKENS in usage and 'input_tokens' in usage:
+            usage[PROMPT_TOKENS] = usage['input_tokens']
+        if not COMPLETION_TOKENS in usage and 'output_tokens' in usage:
+            usage[COMPLETION_TOKENS] = usage['output_tokens']
+        
+        return {
+            PROMPT_TOKENS: usage[PROMPT_TOKENS],
+            COMPLETION_TOKENS: usage[COMPLETION_TOKENS],
+            TOTAL_TOKENS: usage[TOTAL_TOKENS],
+        }
+
+    @staticmethod
+    def get_runnable_agent(
+        prompt: ChatPromptTemplate,
+        llm: ChatOllama,
+        schema: any,
+        schema_basemodel: Optional[BaseModel] = None,
+    ):
+        if schema_basemodel is not None:
+            parser = PydanticOutputParser(pydantic_object=schema_basemodel)
+        else:
+            parser = PydanticOutputParser(pydantic_object=schema)
+        
+        def runnable_agent(input: dict) -> tuple[Any, dict | None]:
+            msg = prompt.format_messages(**input)
+            raw = llm.invoke(msg)
+            token_usage = CommonAgentOllama.normalize_token_usage(raw.usage_metadata)
+            try:
+                res = parser.parse(raw.content)
+                return res, token_usage
+            except Exception as e:
+                logger.error(e)
+                return None, token_usage
+            return parser.parse(raw), token_usage
+        return RunnableLambda(runnable_agent)
+        
+        
     @retry(
         stop=stop_after_attempt(5),
         wait=wait_incrementing(start=1.0, increment=3, max=10),
@@ -47,22 +91,15 @@ class CommonAgentOllama(CommonAgent):
         callback_handler = OpenAICallbackHandler()
 
         updated_prompt = self._process_retryexception_message(prompt)
-        if schema_basemodel is not None:
-            agent = structured_output_llm(self.llm, schema_basemodel, updated_prompt)
-        else:
-            agent = structured_output_llm(self.llm, schema, updated_prompt)
+        agent = CommonAgentOllama.get_runnable_agent(updated_prompt, self.llm, schema, schema_basemodel)
         # agent = updated_prompt | self.llm.with_structured_output(schema)
 
         try:
             # res = agent.invoke({"input": instruction_prompt})
-            res = agent.invoke(
+            res, token_usage = agent.invoke(
                 {"input": instruction_prompt},
-                config={
-                    "callbacks": [callback_handler],
-                },
-
             )
-            self._incre_token_usage(callback_handler)
+            self._incre_token_usage(token_usage)
         except Exception as e:
             logger.error(f"Error executing chain: {e}")
             raise e

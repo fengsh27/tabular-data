@@ -50,6 +50,10 @@ def display_md_table(md_table):
     return "\n".join(labeled_lines)
 
 
+PROMPT_TOKENS="prompt_tokens"
+COMPLETION_TOKENS="completion_tokens"
+TOTAL_TOKENS="total_tokens"
+
 DEFAULT_TOKEN_USAGE = {
     "total_tokens": 0,
     "completion_tokens": 0,
