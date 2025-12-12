@@ -1,7 +1,7 @@
 import pytest
 import logging
 
-from extractor.request_gpt_oss import request_gpt_oss
+from extractor.request_gpt_oss import get_gpt_oss
 from extractor.agents.pk_pe_agents.pk_pe_verification_step import PKPECuratedTablesVerificationStep
 from extractor.agents.pk_pe_agents.pk_pe_correction_step import PKPECuratedTablesCorrectionStep
 from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState
