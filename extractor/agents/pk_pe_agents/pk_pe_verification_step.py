@@ -1,4 +1,5 @@
 from typing import Callable, Optional
+import logging
 from langchain_openai.chat_models.base import BaseChatOpenAI
 from pydantic import BaseModel, Field
 
@@ -9,6 +10,8 @@ from extractor.agents.common_agent.common_agent_2steps import CommonAgentTwoStep
 from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState
 from extractor.agents.pk_pe_agents.pk_pe_agents_utils import format_source_tables
 from extractor.constants import COT_USER_INSTRUCTION
+
+logger = logging.getLogger(__name__)
 
 PKPE_VERIFICATION_SYSTEM_PROMPT = """
 You are a biomedical data verification assistant with expertise in {domain} and data accuracy validation. 
@@ -136,6 +139,7 @@ Suggested fix:
 
         agent = self.get_agent(self.llm) # CommonAgent(llm=self.llm) # CommonAgentTwoSteps(llm=self.llm)
 
+        logger.info(system_prompt)
         res, _, token_usage, reasoning_process = agent.go(
             system_prompt=system_prompt,
             instruction_prompt=instruction_prompt,
