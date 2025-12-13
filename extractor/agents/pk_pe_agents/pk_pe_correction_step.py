@@ -46,11 +46,12 @@ You will be given:
 
 ### **Your Output**
 
-You must respond using the **exact format** below:
+You must respond using the **exact compact json format** below:
 
 ```
-**FinalAnswer**: 
-**CorrectedTable**:[The corrected version of the curated table in markdown format]
+{{
+  "corrected_table":[The corrected version of the curated table in markdown format]
+}}
 ```
 
 ---

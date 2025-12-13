@@ -52,11 +52,11 @@ def test_pk_pe_verification_step_on_29100749(
         pmid="29100749",
         domain="pharmacokinetic population and individual",
     )
-    # correction_step = PKPECuratedTablesCorrectionStep(
-        # llm=llm_gpt_oss,
-        # pmid="29100749",
-        # domain="pharmacokinetic population and individual",
-    # )
+    correction_step = PKPECuratedTablesCorrectionStep(
+        llm=llm_gpt_oss,
+        pmid="29100749",
+        domain="pharmacokinetic population and individual",
+    )
     state: PKPECurationWorkflowState = {
         "llm": llm_gpt_oss,
         "paper_title": title_29100749,
@@ -66,11 +66,11 @@ def test_pk_pe_verification_step_on_29100749(
         "step_output_callback": step_callback,
     }
     state = verification_step.execute(state)
-    # n = 0
-    # while n < 5 and not ("final_answer" in state and state["final_answer"]):
-        # state = correction_step.execute(state)
-        # state = verification_step.execute(state)
-        # n += 1
+    n = 0
+    while n < 5 and not ("final_answer" in state and state["final_answer"]):
+        state = correction_step.execute(state)
+        state = verification_step.execute(state)
+        n += 1
     assert state["curated_table"] is not None
 
 

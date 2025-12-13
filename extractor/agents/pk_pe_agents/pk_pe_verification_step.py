@@ -41,12 +41,15 @@ You will be given:
 
 ### **Your Output**
 
-You must respond using the **exact format** below:
+You must respond using the **exact json compact format** below:
 
 ```
-**FinalAnswer**: [Correct / Incorrect]
-**Explanation**: [Brief explanation of whether the curated table is accurate. If incorrect, explain what is wrong, including specific mismatched values or structure issues.]
-**SuggestedFix**: [If incorrect, provide a corrected version of the curated table or the corrected values/rows/columns.]
+{{
+  "reasoning_preocess": [reasoning process of why the curated table is correct or incorrect],
+  "correct": [True / False],
+  "explanation": [Brief explanation of whether the curated table is accurate. If incorrect, explain what is wrong, including specific mismatched values or structure issues.],
+  "suggested_fix": [If incorrect, provide a corrected version of the curated table or the corrected values/rows/columns.]
+}}
 ```
 
 ---
@@ -139,7 +142,6 @@ Suggested fix:
 
         agent = self.get_agent(self.llm) # CommonAgent(llm=self.llm) # CommonAgentTwoSteps(llm=self.llm)
 
-        logger.info(system_prompt)
         res, _, token_usage, reasoning_process = agent.go(
             system_prompt=system_prompt,
             instruction_prompt=instruction_prompt,

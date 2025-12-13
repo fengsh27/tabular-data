@@ -61,8 +61,7 @@ class CommonAgentOllama(CommonAgent):
                 return res, token_usage
             except Exception as e:
                 logger.error(e)
-                return None, token_usage
-            return parser.parse(raw), token_usage
+                raise e
         return RunnableLambda(runnable_agent)
         
         
