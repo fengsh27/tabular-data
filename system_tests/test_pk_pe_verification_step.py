@@ -36,7 +36,7 @@ def test_pk_pe_verification_step(
 
     assert state["curated_table"] is not None
 
-@pytest.mark.skip()
+# @pytest.mark.skip()
 def test_pk_pe_verification_step_on_29100749(
     # llm,
     step_callback,
