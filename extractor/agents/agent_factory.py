@@ -13,10 +13,10 @@ from extractor.request_openai import get_openai, get_5_openai
 
 
 def get_pipeline_llm():
-    return get_openai() 
+    return get_gpt_oss() # get_openai() 
 
 def get_agent_llm():
-    return get_5_openai() 
+    return get_gpt_oss() # get_5_openai() 
 
 
 def get_common_agent(llm: BaseChatOpenAI):

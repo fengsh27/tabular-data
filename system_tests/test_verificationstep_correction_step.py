@@ -51,7 +51,7 @@ def test_verification_step_correction_step(llm, step_callback, pmid_db):
     assert pmid is not None
     print_step = step_callback
     def check_verification_step(state: PKPECurationWorkflowState):
-        if state["final_answer"] is not None and state["final_answer"]:
+        if state["final_answer"] is not None and state["final_answer"] in [FinalAnswerEnum.Correct, FinalAnswerEnum.Error]:
             print_step(step_name="Final Answer")
             print_step(step_output=state["final_answer"])
             return END
@@ -104,7 +104,7 @@ def test_verification_step_correction_step(llm, step_callback, pmid_db):
     })
     assert res is not None
     assert res["final_answer"] is not None
-    assert res["final_answer"]
+    assert res["final_answer"] in [FinalAnswerEnum.Correct, FinalAnswerEnum.Error]
     assert res["curated_table"] is not None
     df = markdown_to_dataframe(res["curated_table"])
     assert df.shape[0] == 30
@@ -121,7 +121,7 @@ def test_verification_step_correction_step_on_39135538(
     assert pmid is not None
     print_step = step_callback
     def check_verification_step(state: PKPECurationWorkflowState):
-        if state["final_answer"] is not None and state["final_answer"]:
+        if state["final_answer"] is not None and state["final_answer"] in [FinalAnswerEnum.Correct, FinalAnswerEnum.Error]:
             print_step(step_name="Final Answer")
             print_step(step_output=state["final_answer"])
             return END
@@ -174,7 +174,7 @@ def test_verification_step_correction_step_on_39135538(
     })
     assert res is not None
     assert res["final_answer"] is not None
-    assert res["final_answer"]
+    assert res["final_answer"] in [FinalAnswerEnum.Correct, FinalAnswerEnum.Error]
     assert res["curated_table"] is not None
     df = markdown_to_dataframe(res["curated_table"])
     # assert df.shape[0] == 30

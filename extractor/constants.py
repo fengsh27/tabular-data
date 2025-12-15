@@ -115,7 +115,7 @@ TABLE_OUTPUT_NOTES = [
     "3. If the information that is not provided, please leave it with empty string.",
 ]
 
-COT_USER_INSTRUCTION = "Before jump to the final answer, provide your **detailed explanation** in your answer. \nNow, please provide **the final answer** and **your detailed explanation**."
+COT_USER_INSTRUCTION = "Now, let's start."
 
 PROMPTS_NAME_PE = "deprecate"  # "Pharmaco-Epidemiology"
 

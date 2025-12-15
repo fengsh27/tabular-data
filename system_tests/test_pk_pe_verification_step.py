@@ -4,8 +4,8 @@ import logging
 
 from extractor.agents.pk_pe_agents.pk_pe_verification_step import PKPECuratedTablesVerificationStep
 from extractor.agents.pk_pe_agents.pk_pe_correction_step import PKPECuratedTablesCorrectionStep
-from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState
-from extractor.request_gpt_oss import get_gpt_oss
+from extractor.agents.pk_pe_agents.pk_pe_agents_types import FinalAnswerEnum, PKPECurationWorkflowState
+from extractor.request_gpt_oss import get_gpt_oss, get_gpt_qwen_30b
 
 logger = logging.getLogger(__name__)
 
@@ -38,7 +38,7 @@ def test_pk_pe_verification_step(
 
 # @pytest.mark.skip()
 def test_pk_pe_verification_step_on_29100749(
-    # llm,
+    llm,
     step_callback,
     pmid_db,
     title_29100749,
@@ -46,19 +46,18 @@ def test_pk_pe_verification_step_on_29100749(
     source_table_29100749_table_2,
     curated_table_29100749,
 ):
-    llm_gpt_oss = get_gpt_oss()
     verification_step = PKPECuratedTablesVerificationStep(
-        llm=llm_gpt_oss,
+        llm=llm,
         pmid="29100749",
         domain="pharmacokinetic population and individual",
     )
     correction_step = PKPECuratedTablesCorrectionStep(
-        llm=llm_gpt_oss,
+        llm=llm,
         pmid="29100749",
         domain="pharmacokinetic population and individual",
     )
     state: PKPECurationWorkflowState = {
-        "llm": llm_gpt_oss,
+        "llm": llm,
         "paper_title": title_29100749,
         "paper_abstract": abstract_29100749,
         "source_tables": source_table_29100749_table_2,
@@ -67,7 +66,8 @@ def test_pk_pe_verification_step_on_29100749(
     }
     state = verification_step.execute(state)
     n = 0
-    while n < 5 and not ("final_answer" in state and state["final_answer"]):
+    while n < 5 and not ("final_answer" in state and \
+        state["final_answer"] in [FinalAnswerEnum.Correct, FinalAnswerEnum.Error]):
         state = correction_step.execute(state)
         state = verification_step.execute(state)
         n += 1

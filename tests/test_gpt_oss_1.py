@@ -1,15 +1,9 @@
 import pytest
 import logging
-import tiktoken
-import os
-import requests
-from langchain_core.messages import BaseMessage
-
+from langchain_core.prompts import ChatPromptTemplate
 from extractor.request_gpt_oss import get_gpt_oss, get_gpt_qwen_30b
-from extractor.agents.pk_pe_agents.pk_pe_verification_step import PKPECuratedTablesVerificationStep
-from extractor.agents.pk_pe_agents.pk_pe_correction_step import PKPECuratedTablesCorrectionStep
-from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState
 
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 msg = """You are a biomedical data verification assistant with expertise in pharmacokinetic population and individual and data accuracy validation. 
@@ -169,48 +163,66 @@ Keywords: 4-Hydroxy-benzophenone (4-HBP); 4-Methyl-benzophenone (4-MBP); Benzoph
 
 ---
 
+
+
+---
+
 ### **Output Format Instructions**
 The output should be formatted as a JSON instance that conforms to the JSON schema below.
 
-As an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}}, "required": ["foo"]}
-the object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}} is not well-formatted.
+As an example, for the schema {{"properties": {{"foo": {{"title": "Foo", "description": "a list of strings", "type": "array", "items": {{"type": "string"}}}}}}, "required": ["foo"]}}
+the object {{"foo": ["bar", "baz"]}} is a well-formatted instance of the schema. The object {{"properties": {{"foo": ["bar", "baz"]}}}} is not well-formatted.
 
 Here is the output schema:
 ```
-{"properties": {"reasoning_process": {"description": "A detailed explanation of the thought process or reasoning steps taken to reach a conclusion.", "title": "Reasoning Process", "type": "string"}, "correct": {"description": "Whether the curated table is accurate and faithful to the source table(s).", "title": "Correct", "type": "boolean"}, "explanation": {"description": "Brief explanation of whether the curated table is accurate. If incorrect, explain what is wrong, including specific mismatched values or structure issues.", "title": "Explanation", "type": "string"}, "suggested_fix": {"description": "If incorrect, provide a corrected version of the curated table or the corrected values/rows/columns.", "title": "Suggested Fix", "type": "string"}}, "required": ["reasoning_process", "correct", "explanation", "suggested_fix"]}
+{{"properties": {{"reasoning_process": {{"description": "A detailed explanation of the thought process or reasoning steps taken to reach a conclusion.", "title": "Reasoning Process", "type": "string"}}, "correct": {{"description": "Whether the curated table is accurate and faithful to the source table(s).", "title": "Correct", "type": "boolean"}}, "explanation": {{"description": "Brief explanation of whether the curated table is accurate. If incorrect, explain what is wrong, including specific mismatched values or structure issues.", "title": "Explanation", "type": "string"}}, "suggested_fix": {{"description": "If incorrect, provide a corrected version of the curated table or the corrected values/rows/columns.", "title": "Suggested Fix", "type": "string"}}}}, "required": ["reasoning_process", "correct", "explanation", "suggested_fix"]}}
 ```
-
 """
 
-
-def approx_token_count(text: str | list[BaseMessage]) -> int:
-    enc = tiktoken.get_encoding("cl100k_base")
-    if isinstance(text, str):
-        return len(enc.encode(text))
-    return sum(len(enc.encode(m.content or "")) for m in text)
+instruction_prompt = """Before you jump to conclusions, please think step by step and give your detailed reasoning process. 
+Now, let's start.
+"""
 
 # @pytest.mark.skip()
-def test_gpt_oss_with_29100749():
-    long_msg = msg+msg+msg
-    logger.info(f"Token count: {approx_token_count(long_msg)}")
+def test_gpt_oss_1_message():
     llm = get_gpt_oss()
-    res = llm.invoke(long_msg)
+    # res = llm.invoke("You are a biomedical data verification assistant with expertise in pharmacokinetic population and individual and data accuracy validation. Here is my scenario: " + msg) # ("Hello, how are you?")
+    res = llm.invoke("Hello, how are you?")
     logger.info(res)
-    logger.info(res.response_metadata)
-    logger.info(res.usage_metadata)
+    assert res is not None
 
 @pytest.mark.skip()
-def test_request_gpt_oss():
-    long_msg = msg+msg+msg
+def test_gpt_oss_1_with_direct_invoke():
+    llm = get_gpt_qwen_30b() # get_gpt_oss()
+    res = llm.invoke(msg + "\n\n" + instruction_prompt)
+    logger.info(res)
+    assert res is not None
+
+@pytest.mark.skip()
+def test_gpt_oss_1():
     
-    payload = {
-        "model": "gpt-oss:20b",
-        "messages": [{"role": "user", "content": long_msg}],
-        "stream": False,
-        "think": "low",
-        "options": {"num_ctx": 16384}
-    }
-    base_url = os.getenv("OLLAMA_BASE_URL")
-    r = requests.post(f"{base_url}/api/chat", json=payload)
-    res = r.json()
-    logger.info(res.get("prompt_eval_count"))
+    llm = get_gpt_oss()
+    prompt = ChatPromptTemplate.from_messages(
+        messages=[
+            # ("system", msg),
+            ("human", "{input}")
+        ]
+    )
+    chain = prompt | llm
+    res = chain.invoke({
+        "input": msg + "\n\n" + instruction_prompt,
+    })
+    logger.info(res)
+    assert res is not None
+
+@pytest.mark.skip()
+def test_gpt_oss_1_with_long_answer():
+    msgs = [
+    ("system", msg),
+    ("human", instruction_prompt),
+]
+    llm = get_gpt_oss()
+    # res = llm.invoke(msg + "\n\n" + instruction_prompt)
+    res = llm.invoke(msgs)
+    print(res)
+    assert res is not None

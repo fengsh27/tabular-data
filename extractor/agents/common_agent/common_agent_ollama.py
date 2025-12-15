@@ -79,9 +79,9 @@ class CommonAgentOllama(CommonAgent):
         **kwargs: Optional[Any],
     ) -> tuple[Any, Any, dict | None, Any | None]:
         system_prompt = escape_braces_for_format(system_prompt)
-        format_instructions = get_format_instructions(schema)
-        format_instructions = format_instructions.replace("{", "{{").replace("}", "}}")
-        system_prompt = system_prompt + "\n\n" + format_instructions
+        # format_instructions = get_format_instructions(schema)
+        # format_instructions = format_instructions.replace("{", "{{").replace("}", "}}")
+        # system_prompt = system_prompt + "\n\n" + format_instructions
         instruction_prompt = escape_braces_for_format(instruction_prompt)
         prompt = ChatPromptTemplate.from_messages([
             ("system", system_prompt),

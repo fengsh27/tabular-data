@@ -15,6 +15,7 @@ from extractor.agents.pk_pe_agents.pk_pe_agents_utils import format_source_table
 from extractor.constants import COT_USER_INSTRUCTION
 from extractor.request_openai import get_5_mini_openai
 from extractor.request_geminiai import get_gemini
+from extractor.request_gpt_oss import get_gpt_qwen_30b
 
 PKPE_CORRECTION_SYSTEM_PROMPT = """
 You are a biomedical data correction assistant with expertise in {domain}. 
@@ -50,7 +51,7 @@ You must respond using the **exact compact json format** below:
 
 ```
 {{
-  "corrected_table":[The corrected version of the curated table in markdown format]
+  "corrected_table":<A string, the corrected version of the curated table in markdown format>
 }}
 ```
 
@@ -142,7 +143,7 @@ class PKPECuratedTablesCorrectionStep(PKPECommonStep):
         )
         instruction_prompt = COT_USER_INSTRUCTION
 
-        agent = self.get_agent(self.llm) # CommonAgent(llm=self.llm)
+        agent = self.get_agent(llm=self.llm) # CommonAgent(llm=self.llm)
 
         res, _, token_usage, reasoning_process = agent.go(
             system_prompt=system_prompt,
