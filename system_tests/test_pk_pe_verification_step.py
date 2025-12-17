@@ -3,7 +3,7 @@ import pytest
 import logging
 
 from extractor.agents.pk_pe_agents.pk_pe_verification_step import PKPECuratedTablesVerificationStep
-from extractor.agents.pk_pe_agents.pk_pe_correction_step import PKPECuratedTablesCorrectionStep
+from extractor.agents.pk_pe_agents.pk_pe_correction_code_step import PKPECuratedTablesCorrectionCodeStep
 from extractor.agents.pk_pe_agents.pk_pe_agents_types import FinalAnswerEnum, PKPECurationWorkflowState
 from extractor.request_gpt_oss import get_gpt_oss, get_gpt_qwen_30b
 
@@ -51,7 +51,7 @@ def test_pk_pe_verification_step_on_29100749(
         pmid="29100749",
         domain="pharmacokinetic population and individual",
     )
-    correction_step = PKPECuratedTablesCorrectionStep(
+    correction_step = PKPECuratedTablesCorrectionCodeStep(
         llm=llm,
         pmid="29100749",
         domain="pharmacokinetic population and individual",

@@ -2,7 +2,8 @@
 import os
 from langchain_ollama import ChatOllama
 
-MAX_CONTENT_NUM=16384
+MAX_CONTENT_NUM=16384*6
+MAX_PREDICT_NUM=16384*4
 
 def get_gpt_oss():
     base_url = os.getenv("OLLAMA_BASE_URL")
@@ -13,6 +14,7 @@ def get_gpt_oss():
         reasoning=False,
         streaming=False,
         num_ctx=MAX_CONTENT_NUM,
+        num_predict=MAX_PREDICT_NUM,
         temperature=0.0,
         top_p=1.0,
         top_k=1,
@@ -28,6 +30,7 @@ def get_gpt_qwen_235b():
         reasoning=False,
         streaming=False,
         num_ctx=MAX_CONTENT_NUM,
+        num_predict=MAX_PREDICT_NUM,
         temperature=0.0,
         top_p=1.0,
         top_k=1,
@@ -43,6 +46,7 @@ def get_gpt_qwen_30b(schema: dict | None = None):
             reasoning=False,
             streaming=False,
             num_ctx=MAX_CONTENT_NUM,
+            num_predict=MAX_PREDICT_NUM,
             temperature=0.0,
             top_p=1.0,
             top_k=1,
@@ -55,6 +59,7 @@ def get_gpt_qwen_30b(schema: dict | None = None):
             reasoning=False,
             streaming=False,
             num_ctx=MAX_CONTENT_NUM,
+            num_predict=MAX_PREDICT_NUM,
             temperature=0.0,
             top_p=1.0,
             top_k=1,
