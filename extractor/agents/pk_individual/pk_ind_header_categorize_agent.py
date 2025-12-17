@@ -68,7 +68,7 @@ HeaderCategorizeJsonSchema = {
             "title": "Categorized Headers",
         },
     },
-    "required": ["categorized_headers"],
+    "required": ["reasoning_process","categorized_headers"],
 }
 
 

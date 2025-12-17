@@ -17,11 +17,12 @@ from .common_agent import (
     RetryException,
 )
 from .common_agent_2steps import FINAL_STEP_SYSTEM_PROMPTS, CommonAgentTwoChainSteps, CommonAgentTwoSteps
+from extractor.request_gpt_oss import OllamaClient
 
 logger = logging.getLogger(__name__)
 
 class CommonAgentOllama(CommonAgent):
-    def __init__(self, llm: ChatOllama):
+    def __init__(self, llm: OllamaClient):
         super().__init__(llm)
 
     @staticmethod
@@ -43,7 +44,7 @@ class CommonAgentOllama(CommonAgent):
     @staticmethod
     def get_runnable_agent(
         prompt: ChatPromptTemplate,
-        llm: ChatOllama,
+        llm: OllamaClient,
         schema: any,
         schema_basemodel: Optional[BaseModel] = None,
     ):
@@ -52,9 +53,11 @@ class CommonAgentOllama(CommonAgent):
         else:
             parser = PydanticOutputParser(pydantic_object=schema)
         
-        def runnable_agent(input: dict) -> tuple[Any, dict | None]:
+        def runnable_agent(input: dict | None = None) -> tuple[Any, dict | None]:
+            if input is None:
+                input = {}
             msg = prompt.format_messages(**input)
-            raw = llm.invoke(msg)
+            raw = llm.invoke(msg, schema)
             token_usage = CommonAgentOllama.normalize_token_usage(raw.usage_metadata)
             try:
                 res = parser.parse(raw.content)
@@ -79,12 +82,10 @@ class CommonAgentOllama(CommonAgent):
         **kwargs: Optional[Any],
     ) -> tuple[Any, Any, dict | None, Any | None]:
         system_prompt = escape_braces_for_format(system_prompt)
-        format_instructions = get_format_instructions(schema)
-        format_instructions = format_instructions.replace("{", "{{").replace("}", "}}")
-        system_prompt = system_prompt + "\n\n" + format_instructions
         instruction_prompt = escape_braces_for_format(instruction_prompt)
         prompt = ChatPromptTemplate.from_messages([
             ("system", system_prompt),
+            ("human", instruction_prompt),
         ])
         # Initialize the callback handler
         callback_handler = OpenAICallbackHandler()
@@ -95,9 +96,7 @@ class CommonAgentOllama(CommonAgent):
 
         try:
             # res = agent.invoke({"input": instruction_prompt})
-            res, token_usage = agent.invoke(
-                {"input": instruction_prompt},
-            )
+            res, token_usage = agent.invoke({"input": ""})
             self._incre_token_usage(token_usage)
         except Exception as e:
             logger.error(f"Error executing chain: {e}")

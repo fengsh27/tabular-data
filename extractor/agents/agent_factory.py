@@ -8,15 +8,15 @@ from extractor.agents.common_agent.common_agent_ollama import (
     CommonAgentOllamaTwoSteps,
 )
 
-from extractor.request_gpt_oss import get_gpt_oss
+from extractor.request_gpt_oss import get_gpt_oss, get_gpt_qwen_30b
 from extractor.request_openai import get_openai, get_5_openai
 
 
 def get_pipeline_llm():
-    return get_openai() 
+    return get_gpt_qwen_30b() # get_gpt_oss() # return get_openai() 
 
 def get_agent_llm():
-    return get_5_openai() 
+    return get_gpt_qwen_30b() # return get_5_openai() 
 
 
 def get_common_agent(llm: BaseChatOpenAI):

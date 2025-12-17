@@ -45,6 +45,13 @@ from system_tests.conftest_data_33253437 import (
     data_md_table_list_table_0_33253437,
     data_md_table_patient_table_0_33253437,
 )
+from system_tests.conftest_data_11849190 import (
+    data_title_11849190,
+    data_abstract_11849190,
+    data_md_source_table0_11849190,
+    data_md_source_table1_11849190,
+    data_md_curated_table_11849190,
+)
 
 load_dotenv()
 
@@ -1418,7 +1425,7 @@ def md_table_patient_34114632_table_3():
 
 
 @pytest.fixture(scope="module")
-def md_table_34114632_table_3():
+def md_table_34114632_table_3(html_content_34114632_table_3):
     md_table = single_html_table_to_markdown(html_content_34114632_table_3)
     return md_table
 
@@ -2570,6 +2577,26 @@ def col_mapping_table_0_33253437():
 @pytest.fixture(scope="module")
 def md_table_patient_table_0_33253437():
     return data_md_table_patient_table_0_33253437
+
+@pytest.fixture(scope="module")
+def title_11849190():
+    return data_title_11849190
+
+@pytest.fixture(scope="module")
+def abstract_11849190():
+    return data_abstract_11849190
+
+@pytest.fixture(scope="module")
+def md_source_table0_11849190():
+    return data_md_source_table0_11849190
+
+@pytest.fixture(scope="module")
+def md_source_table1_11849190():
+    return data_md_source_table1_11849190
+
+@pytest.fixture(scope="module")
+def md_curated_table_11849190():
+    return data_md_curated_table_11849190
 
 # ============================================================================================
 # utils

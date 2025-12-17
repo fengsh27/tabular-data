@@ -71,20 +71,24 @@ The content includes one or more tables in markdown format. Each table is preced
 
 ### **Your Output Format**
 
-Return a Python list of the relevant **table indexes** in the **exact format** below:
+Return an **exact json compact format** below:
 
-```python
-[<table index>, <table index>, ...]
+```json
+{{
+    "reasoning_process": "<reasoning process>",
+    "selected_table_indexes": ["<table index>", "<table index>", ...]
+}}
 ```
-
-Do not include any explanations or extra output.
 
 ---
 
 ### **Output Example**
 
-```python
-["1", "3"]
+```json
+{{
+    "reasoning_process": "<reasoning process>",
+    "selected_table_indexes": ["0", "1", ...]
+}}
 ```
 
 ---

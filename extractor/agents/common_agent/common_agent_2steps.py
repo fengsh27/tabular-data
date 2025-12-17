@@ -5,6 +5,7 @@ from langchain_community.callbacks.openai_info import OpenAICallbackHandler
 from pydantic import BaseModel, Field
 from tenacity import retry, stop_after_attempt, wait_incrementing
 import logging
+from langchain_core.messages import BaseMessage, SystemMessage, HumanMessage, AIMessage
 
 from extractor.llm_utils import structured_output_llm
 from extractor.utils import escape_braces_for_format
@@ -74,7 +75,6 @@ class CommonAgentTwoSteps(CommonAgent):
             # First, use llm to do CoT
             msgs = cot_prompt.invoke(input={}).to_messages()
             
-            # cot_res = self.llm.generate(messages=[msgs])
             cot_res = self.llm.invoke(msgs)
             reasoning_process = cot_res.content # cot_res.generations[0][0].text
             token_usage = cot_res.usage_metadata # cot_res.llm_output.get("token_usage")

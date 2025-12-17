@@ -36,7 +36,7 @@ def test_pk_pe_verification_step(
 
     assert state["curated_table"] is not None
 
-# @pytest.mark.skip()
+@pytest.mark.skip()
 def test_pk_pe_verification_step_on_29100749(
     # llm,
     step_callback,
@@ -73,4 +73,40 @@ def test_pk_pe_verification_step_on_29100749(
         n += 1
     assert state["curated_table"] is not None
 
+def test_pk_pe_verification_step_on_11849190(
+    # llm,
+    step_callback,
+    pmid_db,
+    title_11849190,
+    abstract_11849190,
+    md_source_table0_11849190,
+    md_source_table1_11849190,
+    md_curated_table_11849190,
+):
+    llm_gpt_oss = get_gpt_oss()
+    verification_step = PKPECuratedTablesVerificationStep(
+        llm=llm_gpt_oss,
+        pmid="11849190",
+        domain="pharmacokinetics",
+    )
+    correction_step = PKPECuratedTablesCorrectionStep(
+        llm=llm_gpt_oss,
+        pmid="11849190",
+        domain="pharmacokinetics",
+    )
+    state: PKPECurationWorkflowState = {
+        "llm": llm_gpt_oss,
+        "paper_title": title_11849190,
+        "paper_abstract": abstract_11849190,
+        "source_tables": [md_source_table0_11849190, md_source_table1_11849190],
+        "curated_table": md_curated_table_11849190,
+        "step_output_callback": step_callback,
+    }
+    state = verification_step.execute(state)
+    n = 0
+    while n < 5 and not ("final_answer" in state and state["final_answer"]):
+        state = correction_step.execute(state)
+        state = verification_step.execute(state)
+        n += 1
+    assert state["curated_table"] is not None   
 

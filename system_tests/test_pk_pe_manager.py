@@ -57,11 +57,10 @@ def test_pk_pe_manager_identification_step(llm, llm_agent, pmid_db):
 @pytest.mark.parametrize("pmid", [
     "11849190",
 ])
-def test_pk_pe_manager_run_pk_ind_workflow(pmid_db, pmid):
+def test_pk_pe_manager_run_pk_ind_workflow(llm, pmid_db, pmid):
     with open(f"./system_tests/data/{pmid}.html", "r") as fobj:
         html_content = fobj.read()
     
-    llm = get_gpt_oss()
     pk_pe_manager = PKPEManager(
         pipeline_llm=llm,
         agent_llm=llm,

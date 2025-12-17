@@ -1,7 +1,7 @@
 import pytest
 import logging
 
-from extractor.request_gpt_oss import get_gpt_oss
+from extractor.request_gpt_oss import get_gpt_oss, get_gpt_qwen_30b
 from extractor.agents.pk_pe_agents.pk_pe_verification_step import PKPECuratedTablesVerificationStep
 from extractor.agents.pk_pe_agents.pk_pe_correction_step import PKPECuratedTablesCorrectionStep
 from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState
@@ -180,6 +180,6 @@ Here is the output schema:
 
 def test_gpt_oss_with_29100749():
     llm = get_gpt_oss()
-    res = llm.invoke(msg)
+    res = llm.invoke(msg+msg+msg+msg+msg)
     logger.info(res)
 

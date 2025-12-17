@@ -21,6 +21,19 @@ def structured_output_llm(
     else:
         raise ValueError(f"Unsupported LLM: {llm}")
 
+def get_schema_format(schema: Any) -> dict:
+    if isinstance(schema, dict):
+        return schema
+    elif isinstance(schema, type) and issubclass(schema, BaseModel):
+        the_dict = schema.model_json_schema()
+        if "title" in the_dict:
+            del the_dict["title"]
+        if "type" in the_dict:
+            del the_dict["type"]
+        return the_dict
+    else:
+        raise ValueError(f"Unsupported schema: {schema}")
+
 def get_format_instructions(schema: Any) -> str:
     if schema is None:
         return ""
