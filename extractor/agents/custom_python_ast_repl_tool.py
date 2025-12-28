@@ -6,6 +6,7 @@ import contextlib
 import io
 import logging
 import re
+import sys
 from typing import Any, Dict, Optional
 
 import pandas as pd
@@ -78,14 +79,16 @@ class CustomPythonAstREPLTool(PythonAstREPLTool):
 
         # Capture stdout/stderr including logging
         root_logger = logging.getLogger()
-        old_handlers = root_logger.handlers[:]
+        handler_streams: Dict[logging.Handler, Any] = {}
         try:
-            with contextlib.redirect_stdout(output_capture), contextlib.redirect_stderr(output_capture):
-                # Redirect root logger streams if any handlers use streams
-                for h in root_logger.handlers:
-                    if hasattr(h, "stream"):
+            # Redirect root logger handler streams that write to stdout/stderr
+            for h in root_logger.handlers:
+                if hasattr(h, "stream"):
+                    handler_streams[h] = h.stream
+                    if h.stream in (sys.stdout, sys.stderr):
                         h.stream = output_capture
 
+            with contextlib.redirect_stdout(output_capture), contextlib.redirect_stderr(output_capture):
                 # Execute the code
                 exec(code, g, g)
 
@@ -117,8 +120,13 @@ class CustomPythonAstREPLTool(PythonAstREPLTool):
         except Exception as e:
             return f"[ERROR] {type(e).__name__}: {e}\n\nCaptured output:\n{output_capture.getvalue()}"
         finally:
-            # Restore logger handlers
-            root_logger.handlers = old_handlers
+            # Restore logger handler streams
+            for h, stream in handler_streams.items():
+                try:
+                    h.stream = stream
+                except Exception:
+                    # Best-effort restore; ignore if handler disappeared or is immutable
+                    pass
 
         out = output_capture.getvalue().strip()
         return out if out else "Execution completed without output."

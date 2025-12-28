@@ -4,9 +4,10 @@ import logging
 from extractor.agents.common_agent.common_agent import RetryException
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
-from extractor.agents.agent_utils import display_md_table, get_reasoning_process, increase_token_usage
+from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, display_md_table, get_reasoning_process, increase_token_usage
 from extractor.agents.pk_individual.pk_ind_common_agent import PKIndCommonAgentResult
 from extractor.agents.pk_individual.pk_ind_common_step import PKIndCommonAgentStep
+from extractor.agents.pk_individual.pk_ind_workflow_utils import PKIndWorkflowState
 
 logger = logging.getLogger(__name__)
 
@@ -28,8 +29,10 @@ Carefully analyze the table, **row by row and column by column**, and follow the
 ---
 
 ### **OUTPUT FORMAT:**
-The output must exactly match the following format:
-**FinalAnswer:** <True/False>
+The output must **exactly match** the following format:
+{{
+    "patient_id": <True or False>
+}}
 """
 
 INFER_PATIENT_ID_SYSTEM_PROMPT = """
@@ -58,18 +61,30 @@ Infer the **Patient ID** for each row in the given table by carefully analyzing 
 ---
 
 ### **OUTPUT FORMAT**
-The output must exactly match the following format:
-[patient_id_0, patient_id_1, ..., patient_id_N]
+The output **must exactly match** the following format:
+{{
+    "reasoning_process": <reasoning_process>,
+    "patient_ids": [patient_id_0, patient_id_1, ..., patient_id_N]
+}}
 
 #### Examples:
 
-[1, 1, 1, 1, 1]
+{{
+    "reasoning_process": "balahbalah",
+    "patient_ids": [1, 1, 1, 1, 1]
+}}
 
 
-[1, 2, 3, 4, 5]
+{{
+    "reasoning_process": "balahbalah",
+    "patient_ids": [1, 2, 3, 4, 5]
+}}
 
 
-[1, "N/A", 2]
+{{
+    "reasoning_process": "balahbalah",
+    "patient_ids": [1, "N/A", 2]
+}}
 
 ---
 
@@ -126,7 +141,7 @@ Mismatch: Expected {df_table.shape[0]} rows, but got {len(patient_ids)} extracte
             return patient_ids
         return post_process, None
 
-    def execute_directly(self, state):
+    def execute_directly(self, state: PKIndWorkflowState):
         # First check if the table contains patient ID
         md_table = state["md_table"]
         caption = state["caption"]
@@ -157,6 +172,7 @@ Mismatch: Expected {df_table.shape[0]} rows, but got {len(patient_ids)} extracte
         result = super().execute_directly(state)
         res: InferPatientIDResult = result[0]
         processed_res = result[1]
+        token_usage = {**cur_token_usage} if cur_token_usage is not None else {**DEFAULT_TOKEN_USAGE}
         cur_token_usage = result[2]
         reasoning_process = get_reasoning_process(result)
         self._step_output(state, step_output=f"Reasoning:\n{reasoning_process}")

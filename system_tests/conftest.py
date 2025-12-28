@@ -18,13 +18,38 @@ from extractor.request_sonnet import get_sonnet
 from extractor.request_metallama import get_meta_llama
 from extractor.request_openai import get_5_openai, get_openai
 from extractor.agents.agent_factory import get_pipeline_llm, get_agent_llm
-from system_tests.conftest_data import curated_data_29100749, data_caption_29100749_table_0, data_caption_29100749_table_2, data_caption_32635742_table_0, data_col_mapping_18426260_table_0, data_col_mapping_29100749_table_2, data_md_table_18426260_table_0, data_md_table_32635742_table_0, data_md_table_aligned_18426260_table_0, data_md_table_aligned_29100749_table_2, data_md_table_drug_18426260_table_0, data_md_table_drug_29100749_table_2, data_md_table_individual_18426260_table_0, data_md_table_individual_29100749_table_2, data_md_table_list_18426260_table_0, data_md_table_list_29100749_table_2, data_md_table_patient_29100749_table_2, data_md_table_patient_refined_29100749_table_2, data_source_table_29100749_table_0, data_source_table_29100749_table_2, paper_abstract_29100749, paper_abstract_32635742, paper_title_29100749, paper_title_32635742
+from system_tests.conftest_data import (
+    curated_data_29100749, 
+    data_caption_29100749_table_0, 
+    data_caption_29100749_table_2, 
+    data_caption_32635742_table_0, 
+    data_col_mapping_18426260_table_0, 
+    data_col_mapping_29100749_table_2, 
+    data_md_table_18426260_table_0, 
+    data_md_table_32635742_table_0, 
+    data_md_table_aligned_29100749_table_2, 
+    data_md_table_drug_18426260_table_0, 
+    data_md_table_drug_29100749_table_2, 
+    data_md_table_individual_18426260_table_0, 
+    data_md_table_individual_29100749_table_2, 
+    data_md_table_list_29100749_table_2, 
+    data_md_table_patient_29100749_table_2, 
+    data_md_table_patient_refined_29100749_table_2, 
+    data_source_table_29100749_table_0, 
+    data_source_table_29100749_table_2, 
+    paper_abstract_29100749, 
+    paper_abstract_32635742, 
+    paper_title_29100749, 
+    data_29100749_verification_reasoning,
+    paper_title_32635742
+)
 from system_tests.conftest_data_10971311 import (
     data_title_10971311,
     data_abstract_10971311,
     data_full_text_excluding_tables_10971311,
     data_tables_10971311,
     data_sections_10971311,
+    data_md_table_aligned_10971311_table_0,
 )
 from system_tests.conftest_data_18426260 import (
     data_title_18426260,
@@ -32,6 +57,19 @@ from system_tests.conftest_data_18426260 import (
     data_full_text_excluding_tables_18426260,
     data_tables_18426260,
     data_sections_18426260,
+    data_caption_18426260_table_0,
+    data_md_table_18426260_table_0,
+    data_pk_ind_md_table_patient_18426260_table_0,
+    data_md_table_aligned_18426260_table_0,
+    data_md_table_list_18426260_table_0,
+    data_md_table_patient_refined_18426260_table_0,
+    data_caption_18426260_table_1,
+    data_md_table_18426260_table_1,
+)
+from system_tests.conftest_data_23200982 import (
+    data_md_table_aligned_23200982_table_3,
+    data_md_table_aligned_23200982_table_2,
+    data_col_mapping_23200982_table_2,
 )
 from system_tests.conftest_data_33253437 import (
     data_title_33253437,
@@ -94,6 +132,10 @@ def get_gemini():
 @pytest.fixture(scope="module")
 def llm():
     return get_pipeline_llm()  # get_azure_openai()  # get_openai() # get_deepseek() # get_sonnet() # get_meta_llama() # get_gemini() # get_5_openai() # 
+
+@pytest.fixture(scope="module")
+def llm_agent():
+    return get_agent_llm()
 
 @pytest.fixture(scope="module")
 def llm_agent():
@@ -2297,7 +2339,7 @@ def md_table_aligned_18426260_table_0():
 """
 
 @pytest.fixture(scope="module")
-def md_table_patient_refined_18426260_table_0():
+def pk_sum_md_table_patient_refined_18426260_table_0():
     return """| Population | Pregnancy stage | Pediatric/Gestational age | Subject N |
 | --- | --- | --- | --- |
 | Maternal | Trimester 2 | N/A | 40 |
@@ -2391,6 +2433,26 @@ def md_table_individual_18426260_table_0():
 def col_mapping_18426260_table_0():
     return data_col_mapping_18426260_table_0
 
+@pytest.fixture(scope="module")
+def pk_ind_md_table_patient_18426260_table_0():
+    return data_pk_ind_md_table_patient_18426260_table_0
+
+@pytest.fixture(scope="module")
+def md_table_patient_refined_18426260_table_0():
+    return data_md_table_patient_refined_18426260_table_0
+
+@pytest.fixture(scope="module")
+def caption_18426260_table_0():
+    return data_caption_18426260_table_0
+
+@pytest.fixture(scope="module")
+def caption_18426260_table_1():
+    return data_caption_18426260_table_1
+
+@pytest.fixture(scope="module")
+def md_table_18426260_table_1():
+    return data_md_table_18426260_table_1
+
 ## ==================================================
 ## 29100749
 ## ==================================================
@@ -2451,6 +2513,10 @@ def md_table_list_29100749_table_2():
 def md_table_drug_29100749_table_2():
     return data_md_table_drug_29100749_table_2
 
+@pytest.fixture(scope="module")
+def verification_reasoning_29100749():
+    return data_29100749_verification_reasoning
+
 ## ==================================================
 ## 32635742
 ## ==================================================
@@ -2502,6 +2568,10 @@ def tables_10971311():
 @pytest.fixture(scope="module")
 def sections_10971311():
     return data_sections_10971311
+
+@pytest.fixture(scope="module")
+def md_table_aligned_10971311_table_0():
+    return data_md_table_aligned_10971311_table_0
 
 
 # ============================================================================================
@@ -2570,6 +2640,22 @@ def col_mapping_table_0_33253437():
 @pytest.fixture(scope="module")
 def md_table_patient_table_0_33253437():
     return data_md_table_patient_table_0_33253437
+
+# ============================================================================================
+# 23200982
+# ============================================================================================
+
+@pytest.fixture(scope="module")
+def md_table_aligned_23200982_table_3():
+    return data_md_table_aligned_23200982_table_3
+
+@pytest.fixture(scope="module")
+def md_table_aligned_23200982_table_2():
+    return data_md_table_aligned_23200982_table_2
+
+@pytest.fixture(scope="module")
+def col_mapping_23200982_table_2():
+    return data_col_mapping_23200982_table_2
 
 # ============================================================================================
 # utils

@@ -20,6 +20,15 @@ from .common_agent_2steps import FINAL_STEP_SYSTEM_PROMPTS, CommonAgentTwoChainS
 
 logger = logging.getLogger(__name__)
 
+IMPORTANT_INSTRUCTIONS = """
+
+---
+
+## **Instructions:**
+1. Please exactly follow the output format instructions. **Do not** add any other text or comments.
+
+"""
+
 class CommonAgentOllama(CommonAgent):
     def __init__(self, llm: ChatOllama):
         super().__init__(llm)
@@ -41,6 +50,31 @@ class CommonAgentOllama(CommonAgent):
         }
 
     @staticmethod
+    def handle_qwen_thinking(content: str) -> str:
+        """
+        Strip Qwen3 thinking/reasoning content from the response.
+        
+        Args:
+            content: Raw content from the model that may contain thinking/reasoning text
+            
+        Returns:
+            Cleaned content with thinking/reasoning text removed
+        """
+        # Remove everything before and including </think> tag
+        if "</think>" in content:
+            content = content.split("</think>", 1)[-1].strip()
+        # Also handle case where reasoning might be at the start without the tag
+        # Look for JSON-like content (starts with { or [)
+        json_start = min(
+            (content.find("{"), content.find("[")),
+            key=lambda x: x if x >= 0 else float('inf')
+        )
+        if json_start > 0 and json_start < len(content) // 2:
+            # If JSON starts after significant text, likely reasoning before it
+            content = content[json_start:]
+        return content
+
+    @staticmethod
     def get_runnable_agent(
         prompt: ChatPromptTemplate,
         llm: ChatOllama,
@@ -57,7 +91,9 @@ class CommonAgentOllama(CommonAgent):
             raw = llm.invoke(msg)
             token_usage = CommonAgentOllama.normalize_token_usage(raw.usage_metadata)
             try:
-                res = parser.parse(raw.content)
+                # Strip Qwen3 thinking/reasoning content if present
+                content = CommonAgentOllama.handle_qwen_thinking(raw.content)
+                res = parser.parse(content)
                 return res, token_usage
             except Exception as e:
                 logger.error(e)
@@ -79,9 +115,12 @@ class CommonAgentOllama(CommonAgent):
         **kwargs: Optional[Any],
     ) -> tuple[Any, Any, dict | None, Any | None]:
         system_prompt = escape_braces_for_format(system_prompt)
-        # format_instructions = get_format_instructions(schema)
-        # format_instructions = format_instructions.replace("{", "{{").replace("}", "}}")
-        # system_prompt = system_prompt + "\n\n" + format_instructions
+        format_instructions = get_format_instructions(schema)
+        format_instructions = format_instructions.replace("{", "{{").replace("}", "}}")
+        system_prompt = system_prompt + "\n\n" + format_instructions
+        system_prompt = system_prompt + "\n\n" + IMPORTANT_INSTRUCTIONS
+        # Add /no_think to disable Qwen3's thinking mode
+        system_prompt = system_prompt + "\n\n/no_think"
         instruction_prompt = escape_braces_for_format(instruction_prompt)
         prompt = ChatPromptTemplate.from_messages([
             ("system", system_prompt),
@@ -109,9 +148,14 @@ class CommonAgentOllama(CommonAgent):
             except RetryException as e:
                 logger.error(str(e))
                 if self.try_fix_error is not None and self.exceptions is not None and len(self.exceptions) == 4:
+                    logger.info(f"Try to fix the error: {e}")
                     fixed_res = self.try_fix_error(res, **kwargs)
                     if fixed_res is not None:
                         return res, fixed_res, self.token_usage, None
+                if self.exceptions is None:
+                    self.exceptions = [e]
+                else:
+                    self.exceptions.append(e)
                 raise e
             except Exception as e:
                 logger.error(str(e))

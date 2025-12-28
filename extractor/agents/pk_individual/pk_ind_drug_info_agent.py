@@ -43,7 +43,6 @@ Specimen is the type of sample.
 (4) If any information is missing, first try to infer it from the available data (e.g., using context, related entries, or common pharmacokinetic knowledge). Only use "N/A" as a last resort if the information cannot be reasonably inferred.
 (5) If none of the elements are explicitly stated in the table or caption, infer them from the **paper title**.
 
-{format_instructions}
 """)
 
 INSTRUCTION_PROMPT = "Do not give the final result immediately. First, explain your thought process, then provide the answer."

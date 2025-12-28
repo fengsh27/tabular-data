@@ -55,16 +55,23 @@ def test_pk_pe_manager_identification_step(llm, llm_agent, pmid_db):
     assert "paper_type" in state and state["paper_type"] != None
 
 @pytest.mark.parametrize("pmid", [
-    "11849190",
+    # "11849190",
+    # "10971311",
+    # "18426260",
+    # "23200982",
+    # "24989434",
+    "32153014",
+    "34746508",
+    "33253437",
+    "32056930",
 ])
-def test_pk_pe_manager_run_pk_ind_workflow(pmid_db, pmid):
+def test_pk_pe_manager_run_pk_ind_workflow(llm, llm_agent, pmid_db, pmid):
     with open(f"./system_tests/data/{pmid}.html", "r") as fobj:
         html_content = fobj.read()
     
-    llm = get_gpt_oss()
     pk_pe_manager = PKPEManager(
         pipeline_llm=llm,
-        agent_llm=llm,
+        agent_llm=llm_agent,
         pmid_db=pmid_db,
     )
     res = pk_pe_manager.run(

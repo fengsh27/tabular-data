@@ -20,6 +20,7 @@ Here is the table caption:
 From the main table above, I have extracted the following information to create Subtable 1, where each row represents a unique combination of "Population" - "Pregnancy stage" - "Subject N," as follows:
 {processed_md_table_patient}
 
+### **Task**
 Carefully analyze the tables and follow these steps to refine Subtable 1 into a more detailed Subtable 2:  
 
 (1) Identify all unique combinations of **[Patient ID, Population, Pregnancy stage, Pediatric/Gestational age]** from the table.
@@ -59,6 +60,13 @@ Carefully analyze the tables and follow these steps to refine Subtable 1 into a 
 (6) Strictly ensure that you process only rows 0 to {md_table_patient_max_row_index} from the Subtable 1 (which has {md_table_patient_row_num} rows in total).   
     - The number of processed rows must **exactly match** the number of rows in the Subtable 1—no more, no less.  
     - **The output must maintain the original row order** from Subtable 1—do not shuffle, reorder, or omit any rows. The Subject N for each row in Subtable 2 must be the same as in Subtable 1.
+
+### **Output**
+Your output must be in compact json format, and **must exactly match** the following format:
+{{
+    "reasoning_process": <a string, detailed explanation of the reasoning process>,
+    "refined_patient_combinations": <a list of lists of unique combinations [Patient ID, Population, Pregnancy stage, Pediatric/Gestational age]
+}}
 """)
 
 

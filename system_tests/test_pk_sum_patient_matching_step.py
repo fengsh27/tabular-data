@@ -136,7 +136,7 @@ def test_PatientMatchingAgentStep_34183327_table_2(
 
 def test_PatientMatchingAgentStep_18426260_table_0(
     llm,
-    md_table_patient_refined_18426260_table_0,
+    pk_sum_md_table_patient_refined_18426260_table_0,
     md_table_list_18426260_table_0,
     caption_18426260_table_0,
     md_table_aligned_18426260_table_0,
@@ -146,7 +146,7 @@ def test_PatientMatchingAgentStep_18426260_table_0(
     step = PatientMatchingAgentStep()
     state = PKSumWorkflowState()
     state["llm"] = llm
-    state["md_table_patient_refined"] = md_table_patient_refined_18426260_table_0
+    state["md_table_patient_refined"] = pk_sum_md_table_patient_refined_18426260_table_0
     state["md_table_list"] = md_table_list_18426260_table_0
     state["caption"] = caption_18426260_table_0
     state["step_callback"] = step_callback

@@ -21,7 +21,8 @@ from extractor.agents.pk_pe_agents.pk_pe_agents_types import (
     PaperTypeEnum,
     FinalAnswerEnum,
 )
-from extractor.agents.pk_pe_agents.pk_pe_correction_step import PKPECuratedTablesCorrectionStep
+# from extractor.agents.pk_pe_agents.pk_pe_correction_step import PKPECuratedTablesCorrectionStep
+from extractor.agents.pk_pe_agents.pk_pe_correction_code_step import PKPECuratedTablesCorrectionCodeStep
 from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState, FinalAnswerEnum
 
 logger = logging.getLogger(__name__)
@@ -94,7 +95,7 @@ class PKPEAgentToolTask(ABC):
             pmid=pmid,
             domain=self._get_domain(),
         )
-        correction_step = PKPECuratedTablesCorrectionStep(
+        correction_step = PKPECuratedTablesCorrectionCodeStep(
             llm=self.agent_llm,
             pmid=pmid,
             domain=self._get_domain(),

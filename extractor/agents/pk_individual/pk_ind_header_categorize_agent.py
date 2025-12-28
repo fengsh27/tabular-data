@@ -9,20 +9,115 @@ from extractor.agents.pk_individual.pk_ind_common_agent import PKIndCommonAgentR
 logger = logging.getLogger(__name__)
 
 HEADER_CATEGORIZE_PROMPT = ChatPromptTemplate.from_template("""
-The following table contains pharmacokinetics (PK) data:  
+### **Task**
+
+The following table contains pharmacokinetics (PK) data:
+
 {processed_md_table_aligned}
 {column_headers_str}
-Carefully analyze the table and follow these steps:  
-(1) Examine all column headers and categorize each one into one of the following groups:  
-   - **"Patient ID"**: Columns that describe the identifier assigned to each patient. **There must be at least one column that serves as patient ID. Make sure you find it**
-   - **"Parameter value"**: (Must be Dependent Variable) Columns that describe pharmacokinetics concentration or ratio parameter data.  
-        - Examples: Drug concentration (e.g., "Plasma Conc ng/mL"), Area under the curve (e.g., "AUC 0-∞"), Maximum concentration (e.g., "Cmax"), Time to Maximum Concentration (e.g., "Tmax"), Half-life (e.g., "T1/2"), Clearance rate (e.g., "CL/F").
-   - **"Uncategorized"**: Columns that do not fit into the above categories, such as those representing time-related information, or dose amount information.
-        - Examples: Dose amount (e.g. "1 mg/kg", "infant dose", "maternal dose"), Sampling time (e.g., "Time postdose_hr"), Dosing interval (e.g., "Tau hr"), Collection date (e.g., "Sample Date"), Study period (e.g., "Period").
-(2) if a column is only about the subject number, it is considered as "Uncategorized"
-(3) Please ensure "Patient ID" column exists.
-(4) Return a categorized headers dictionary where each key is a column header, and the corresponding value is its assigned category, e.g.
-{categorized_headers_example}
+
+Each column header is **already defined** and may appear as:
+
+* a single string (e.g., `"Volunteer"`), or
+* a multi-level / tuple-style header (e.g., `("Citalopram", "Maximum1 milk concentration (µg l−1)")`).
+
+### **Your task is ONLY to categorize columns — NOT to modify them.**
+
+---
+
+### **Step 1 — Column Categorization**
+
+Examine **each column header exactly as provided** and assign it to **one and only one** of the following categories:
+
+* **"Patient ID"**
+  Columns that uniquely identify a patient or participant.
+  **At least one column must be assigned as "Patient ID".**
+
+* **"Parameter value"** (Dependent Variable)
+  Columns that report pharmacokinetic measurements or ratios, such as concentrations or PK parameters.
+  Examples include (but are not limited to):
+
+  * Concentration (e.g., plasma/milk concentration)
+  * AUC
+  * Cmax
+  * Tmax
+  * Half-life (T½)
+  * Clearance
+  * Ratios (e.g., M/P AUC)
+
+* **"Uncategorized"**
+  Columns that do not represent PK outcome values or patient identifiers.
+  Examples include dose, time, study period, subject number, sampling time, or metadata.
+
+---
+
+### **Step 2 — Special Rules**
+
+1. If a column refers **only to a subject number** (not a unique patient identifier), classify it as **"Uncategorized"**.
+2. Ensure **at least one column** is classified as **"Patient ID"**.
+
+---
+
+### **CRITICAL INSTRUCTIONS (DO NOT VIOLATE)**
+
+* **DO NOT change column names in any way.**
+* **DO NOT flatten, simplify, normalize, trim, or rewrite headers.**
+* **DO NOT remove prefixes such as `"Unnamed: x_level_y"`**.
+* **DO NOT remove units, superscripts, subscripts, or numeric suffixes**.
+* **DO NOT merge multi-level headers into a single string**.
+* **DO NOT infer or “clean up” column names.**
+
+➡️ **The output key must be an EXACT character-for-character copy of the original column header**, including:
+
+* tuple structure
+* capitalization
+* whitespace
+* punctuation
+* Unicode symbols (e.g., µ, −)
+
+If a column header is represented as a tuple, **use the tuple verbatim as the key**.
+
+---
+
+### **Output Format**
+
+Return **one JSON object** where:
+
+* **Each key = one original column header copied exactly**
+* **Each value = one category string**, chosen from:
+
+  * `"Patient ID"`
+  * `"Parameter value"`
+  * `"Uncategorized"`
+
+The **number of keys MUST exactly equal the number of columns**.
+Do **not** add, remove, rename, or merge any keys.
+
+---
+
+### **Self-Check Before Finalizing**
+
+Before producing the final answer, verify that:
+
+* Every output key exactly matches one and only one input column header.
+* No column name has been altered, shortened, or reformatted.
+* The number of keys equals the number of input columns.
+
+---
+
+### **Example**
+
+```json
+{{
+  "reasoning_process": "balahbalah",
+  "categorized_headers": {{
+    "('Unnamed: 0_level_0', 'Volunteer')": "Patient ID",
+    "('Citalopram', 'Maximum1 milk concentration (µg l−1)')": "Parameter value",
+    "('Unnamed: 4_level_0', 'M/PAUC')": "Parameter value"
+  }}
+}}
+```
+
 """)
 
 
@@ -32,11 +127,9 @@ def get_header_categorize_prompt(md_table_aligned: str):
     column_headers_str = "These are all its column headers: " + ", ".join(
         f'"{col}"' for col in df_table.columns
     )
-    categorized_headers_example = """```json\n{{"Volunteer": "Patient ID","Concentration": "Parameter value","AUC": "Parameter value","Dose": "Uncategorized"}}```"""
     return HEADER_CATEGORIZE_PROMPT.format(
         processed_md_table_aligned=processed_md_table_aligned,
         column_headers_str=column_headers_str,
-        categorized_headers_example=categorized_headers_example,
     )
 
 
