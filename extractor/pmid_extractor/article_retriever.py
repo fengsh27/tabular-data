@@ -101,8 +101,12 @@ class ArticleRetriever(object):
         url = f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/"
         r = make_get_request(url, headers=header, allow_redirects=True, cookies=cookies)
         if r.status_code != 200:
-            return (False, "", r.status_code)
-        html_content = r.text
+            res, text, code = self._request_full_text_from_url(url)
+            if not res and code != 200:
+                return (False, "", r.status_code)
+            html_content = text
+        else:
+            html_content = r.text
 
         # extract full-text link
         return self._extract_full_text_link(html_content)
