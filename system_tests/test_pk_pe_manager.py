@@ -55,11 +55,11 @@ def test_pk_pe_manager_identification_step(llm, llm_agent, pmid_db):
     assert "paper_type" in state and state["paper_type"] != None
 
 @pytest.mark.parametrize("pmid", [
-    # "11849190",
-    # "10971311",
-    # "18426260",
-    # "23200982",
-    # "24989434",
+    "11849190",
+    "10971311",
+    "18426260",
+    "23200982",
+    "24989434",
     "32153014",
     "34746508",
     "33253437",
@@ -82,5 +82,5 @@ def test_pk_pe_manager_run_pk_ind_workflow(llm, llm_agent, pmid_db, pmid):
     assert res
     assert res[PipelineTypeEnum.PK_INDIVIDUAL]["curated_table"] is not None
     df = markdown_to_dataframe(res[PipelineTypeEnum.PK_INDIVIDUAL]["curated_table"])
-    csv_path = Path(__file__).parent / "data" / f"{pmid}_gpt5.csv"
+    csv_path = Path(__file__).parent / "data" / "2026-1-1" / f"{pmid}_qwen3.csv"
     df.to_csv(csv_path, index=False)

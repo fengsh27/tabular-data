@@ -29,6 +29,8 @@ You are given:
 5) **Reasoning Process** (explains what is wrong and what to fix)
 6) **a python function markdown_to_dataframe(md_table: str)** convert markdown table to dataframe
 
+**Note**: The python function markdown_to_dataframe() is provided, **must not** implement it, use it directly. You can call it  by `markdown_to_dataframe(curated_md)`.
+
 Your task:
 - Write **Python code only** that corrects the curated table according to the Reasoning Process and the source table.
 - The code must:

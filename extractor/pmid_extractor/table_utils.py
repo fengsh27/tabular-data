@@ -122,9 +122,9 @@ def post_process_selected_table_ids(
                 f"""Please generate valid table id and **exactly follow the format**: ["table_index_1", "table_index_2", ...]. \n\nWrong answer example: `{id}`"""
             )
 
-        if id < 0 or id > len(html_tables):
+        if id < 0 or id >= len(html_tables):
             raise RetryException(
-                "Please generate valid table id, wrong answer example: `{id}`"
+                f"Please generate valid table ids in selected_table_indexes (0 <= id < {len(html_tables)}), wrong answer example: `{id}`, which is out of range."
             )
         indices.append(id)
 

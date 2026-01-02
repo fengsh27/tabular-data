@@ -74,18 +74,27 @@ from system_tests.conftest_data_23200982 import (
 from system_tests.conftest_data_33253437 import (
     data_title_33253437,
     data_abstract_33253437,
-    data_caption_table_0_33253437,
-    data_md_table_individual_table_0_33253437,
-    data_md_table_drug_table_0_33253437,
-    data_md_table_patient_refined_table_0_33253437,
-    data_md_table_aligned_table_0_33253437,
-    data_col_mapping_table_0_33253437,
-    data_md_table_list_table_0_33253437,
-    data_md_table_patient_table_0_33253437,
+    data_caption_table_1_33253437,
+    data_md_table_individual_table_1_33253437,
+    data_md_table_drug_table_1_33253437,
+    data_md_table_patient_refined_table_1_33253437,
+    data_md_table_aligned_table_1_33253437,
+    data_col_mapping_table_1_33253437,
+    data_md_table_list_table_1_33253437,
+    data_md_table_patient_table_1_33253437,
+)
+from system_tests.conftest_data_34746508 import (
+    data_abstract_34746508,
+    data_md_table_34746508_table_1,
+    data_md_table_34746508_table_2,
+    data_caption_34746508_table_1,
+    data_caption_34746508_table_2,
+    data_title_34746508,
+    data_curated_table_pk_individual_34746508,
+    data_pk_individual_verification_reasoning_34746508,
 )
 
 load_dotenv()
-
 
 def get_openai():
     return ChatOpenAI(
@@ -137,21 +146,6 @@ def llm():
 def llm_agent():
     return get_agent_llm()
 
-@pytest.fixture(scope="module")
-def llm_agent():
-    return AzureChatOpenAI(
-        api_key=os.environ.get("OPENAI_API_KEY", None),
-        azure_endpoint=os.environ.get("AZURE_OPENAI_ENDPOINT", None),
-        api_version=os.environ.get("OPENAI_5_API_VERSION", None),
-        azure_deployment=os.environ.get("OPENAI_5_DEPLOYMENT_NAME", None),
-        model=os.environ.get("OPENAI_5_MODEL", None),
-        max_retries=5,
-        # temperature=0.0,
-        max_completion_tokens=int(os.environ.get("OPENAI_MAX_OUTPUT_TOKENS", 4096)),
-        # top_p=0.95,
-        # frequency_penalty=0,
-        # presence_penalty=0,
-    )
 ghtml_content = """
 <section id="S8">
    <h3 class="pmc_sec_title">Pharmacokinetics</h3>
@@ -2610,36 +2604,36 @@ def abstract_33253437():
     return data_abstract_33253437
 
 @pytest.fixture(scope="module")
-def caption_table_0_33253437():
-    return data_caption_table_0_33253437
+def caption_table_1_33253437():
+    return data_caption_table_1_33253437
 
 @pytest.fixture(scope="module")
-def md_table_list_table_0_33253437():
-    return data_md_table_list_table_0_33253437
+def md_table_list_table_1_33253437():
+    return data_md_table_list_table_1_33253437
 
 @pytest.fixture(scope="module")
-def md_table_drug_table_0_33253437():
-    return data_md_table_drug_table_0_33253437
+def md_table_drug_table_1_33253437():
+    return data_md_table_drug_table_1_33253437
 
 @pytest.fixture(scope="module")
-def md_table_patient_refined_table_0_33253437():
-    return data_md_table_patient_refined_table_0_33253437
+def md_table_patient_refined_table_1_33253437():
+    return data_md_table_patient_refined_table_1_33253437
     
 @pytest.fixture(scope="module")
-def md_table_aligned_table_0_33253437():
-    return data_md_table_aligned_table_0_33253437
+def md_table_aligned_table_1_33253437():
+    return data_md_table_aligned_table_1_33253437
 
 @pytest.fixture(scope="module")
-def md_table_individual_table_0_33253437():
-    return data_md_table_individual_table_0_33253437
+def md_table_individual_table_1_33253437():
+    return data_md_table_individual_table_1_33253437
 
 @pytest.fixture(scope="module")
-def col_mapping_table_0_33253437():
-    return data_col_mapping_table_0_33253437
+def col_mapping_table_1_33253437():
+    return data_col_mapping_table_1_33253437
 
 @pytest.fixture(scope="module")
-def md_table_patient_table_0_33253437():
-    return data_md_table_patient_table_0_33253437
+def md_table_patient_table_1_33253437():
+    return data_md_table_patient_table_1_33253437
 
 # ============================================================================================
 # 23200982
@@ -2656,6 +2650,49 @@ def md_table_aligned_23200982_table_2():
 @pytest.fixture(scope="module")
 def col_mapping_23200982_table_2():
     return data_col_mapping_23200982_table_2
+
+# ============================================================================================
+# 34746508
+# ============================================================================================
+
+@pytest.fixture(scope="module")
+def md_table_34746508_table_2():
+    return data_md_table_34746508_table_2
+
+@pytest.fixture(scope="module")
+def md_table_34746508_table_1():
+    return data_md_table_34746508_table_1
+
+@pytest.fixture(scope="module")
+def caption_34746508_table_1():
+    return data_caption_34746508_table_1
+
+@pytest.fixture(scope="module")
+def caption_34746508_table_2():
+    return data_caption_34746508_table_2
+
+@pytest.fixture(scope="module")
+def title_34746508():
+    return data_title_34746508
+
+@pytest.fixture(scope="module")
+def abstract_34746508():
+    return data_abstract_34746508
+
+@pytest.fixture(scope="module")
+def full_text_34746508():
+    fn = Path(__file__).parent / "data" / "34746508_full_text.txt"
+    with open(fn, "r") as f:
+        return f.read()
+
+@pytest.fixture(scope="module")
+def pk_individual_curated_table_34746508():
+    return data_curated_table_pk_individual_34746508
+
+@pytest.fixture(scope="module")
+def pk_individual_verification_reasoning_34746508():
+    return data_pk_individual_verification_reasoning_34746508
+
 
 # ============================================================================================
 # utils
@@ -2677,7 +2714,6 @@ def prepare_logging():
     root_logger.setLevel(level)
     root_logger.addHandler(file_handler)
     root_logger.addHandler(stream_handler)
-
 
 @pytest.fixture(scope="module")
 def step_callback():

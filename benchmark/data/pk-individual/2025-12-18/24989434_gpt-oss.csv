@@ -1,0 +1,85 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+1,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,1st Trimester - V,μg/L,25,N/A,N/A
+2,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,1st Trimester - V,μg/L,91,N/A,N/A
+3,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,1st Trimester - V,μg/L,57,N/A,N/A
+4,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,1st Trimester - V,μg/L,25,N/A,N/A
+5,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,1st Trimester - V,μg/L,73,N/A,N/A
+6,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,1st Trimester - V,μg/L,450,N/A,N/A
+1,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,1st Trimester - ODV,μg/L,70,N/A,N/A
+2,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,1st Trimester - ODV,μg/L,110,N/A,N/A
+3,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,1st Trimester - ODV,μg/L,25,N/A,N/A
+4,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,1st Trimester - ODV,μg/L,25,N/A,N/A
+5,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,1st Trimester - ODV,μg/L,220,N/A,N/A
+6,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,1st Trimester - ODV,μg/L,690,N/A,N/A
+1,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,1st Trimester - ODV/V,ratio,2.80,N/A,N/A
+2,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,1st Trimester - ODV/V,ratio,1.21,N/A,N/A
+3,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,1st Trimester - ODV/V,ratio,0.44,N/A,N/A
+4,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,1st Trimester - ODV/V,ratio,1.00,N/A,N/A
+5,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,1st Trimester - ODV/V,ratio,3.01,N/A,N/A
+6,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,1st Trimester - ODV/V,ratio,1.53,N/A,N/A
+1,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,2nd Trimester - V,μg/L,66,N/A,N/A
+2,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,2nd Trimester - V,μg/L,61,N/A,N/A
+3,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,2nd Trimester - V,μg/L,79,N/A,N/A
+4,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,2nd Trimester - V,μg/L,25,N/A,N/A
+5,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,2nd Trimester - V,μg/L,25,N/A,N/A
+6,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,2nd Trimester - V,μg/L,270,N/A,N/A
+1,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,2nd Trimester - ODV,μg/L,76,N/A,N/A
+2,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,2nd Trimester - ODV,μg/L,100,N/A,N/A
+3,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,2nd Trimester - ODV,μg/L,67,N/A,N/A
+4,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,2nd Trimester - ODV,μg/L,51,N/A,N/A
+5,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,2nd Trimester - ODV,μg/L,190,N/A,N/A
+6,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,2nd Trimester - ODV,μg/L,630,N/A,N/A
+1,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,2nd Trimester - ODV/V,ratio,1.15,N/A,N/A
+2,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,2nd Trimester - ODV/V,ratio,1.64,N/A,N/A
+3,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,2nd Trimester - ODV/V,ratio,0.85,N/A,N/A
+4,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,2nd Trimester - ODV/V,ratio,2.04,N/A,N/A
+5,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,2nd Trimester - ODV/V,ratio,7.60,N/A,N/A
+6,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,2nd Trimester - ODV/V,ratio,2.33,N/A,N/A
+1,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,3rd Trimester - V,μg/L,25,N/A,N/A
+2,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,3rd Trimester - V,μg/L,25,N/A,N/A
+3,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,3rd Trimester - V,μg/L,25,N/A,N/A
+4,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,3rd Trimester - V,μg/L,25,N/A,N/A
+5,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,3rd Trimester - V,μg/L,25,N/A,N/A
+6,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,3rd Trimester - V,μg/L,190,N/A,N/A
+1,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,3rd Trimester - ODV,μg/L,100,N/A,N/A
+2,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,3rd Trimester - ODV,μg/L,80,N/A,N/A
+3,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,3rd Trimester - ODV,μg/L,61,N/A,N/A
+4,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,3rd Trimester - ODV,μg/L,74,N/A,N/A
+5,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,3rd Trimester - ODV,μg/L,200,N/A,N/A
+6,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,3rd Trimester - ODV,μg/L,630,N/A,N/A
+1,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,3rd Trimester - ODV/V,ratio,4.00,N/A,N/A
+2,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,3rd Trimester - ODV/V,ratio,3.20,N/A,N/A
+3,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,3rd Trimester - ODV/V,ratio,2.44,N/A,N/A
+4,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,3rd Trimester - ODV/V,ratio,2.96,N/A,N/A
+5,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,3rd Trimester - ODV/V,ratio,8.00,N/A,N/A
+6,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,3rd Trimester - ODV/V,ratio,3.32,N/A,N/A
+1,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,Post-partum-V,μg/L,25,N/A,N/A
+2,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,Post-partum-V,μg/L,92,N/A,N/A
+3,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,Post-partum-V,μg/L,170,N/A,N/A
+4,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,Post-partum-V,μg/L,87,N/A,N/A
+5,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,Post-partum-V,μg/L,25,N/A,N/A
+6,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,Post-partum-V,μg/L,220,N/A,N/A
+1,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,Post-partum-ODV,μg/L,120,N/A,N/A
+2,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,Post-partum-ODV,μg/L,130,N/A,N/A
+3,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,Post-partum-ODV,μg/L,97,N/A,N/A
+4,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,Post-partum-ODV,μg/L,210,N/A,N/A
+5,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,Post-partum-ODV,μg/L,230,N/A,N/A
+6,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,Post-partum-ODV,μg/L,290,N/A,N/A
+1,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,Post-partum-ODV/V,ratio,4.80,N/A,N/A
+2,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,Post-partum-ODV/V,ratio,1.41,N/A,N/A
+3,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,Post-partum-ODV/V,ratio,0.57,N/A,N/A
+4,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,Post-partum-ODV/V,ratio,2.41,N/A,N/A
+5,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,Post-partum-ODV/V,ratio,9.20,N/A,N/A
+6,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,Post-partum-ODV/V,ratio,1.32,N/A,N/A
+7,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,1st Trimester - V,μg/L,65,N/A,N/A
+7,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,1st Trimester - ODV,μg/L,200,N/A,N/A
+7,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,1st Trimester - ODV/V,ratio,3.08,N/A,N/A
+7,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,2nd Trimester - V,μg/L,120,N/A,N/A
+7,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,2nd Trimester - ODV,μg/L,350,N/A,N/A
+7,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,2nd Trimester - ODV/V,ratio,2.92,N/A,N/A
+7,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,3rd Trimester - V,μg/L,61,N/A,N/A
+7,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,3rd Trimester - ODV,μg/L,260,N/A,N/A
+7,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,3rd Trimester - ODV/V,ratio,4.26,N/A,N/A
+7,Venlafaxine,Venlafaxine,Plasma,Maternal,N/A,N/A,Post-partum-V,μg/L,120,N/A,N/A
+7,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,Post-partum-ODV,μg/L,260,N/A,N/A
+7,Venlafaxine,O-desmethylvenlafaxine,Plasma,Maternal,N/A,N/A,Post-partum-ODV/V,ratio,2.17,N/A,N/A

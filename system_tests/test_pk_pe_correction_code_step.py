@@ -8,7 +8,7 @@ from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflo
 
 REASONING_PROCESS = """
 """
-
+@pytest.mark.skip()
 def test_pk_pe_correction_step_on_29718415(
     llm,
     step_callback,
@@ -40,4 +40,38 @@ def test_pk_pe_correction_step_on_29718415(
 
     assert state["curated_table"] is not None
     
+
+def test_pk_pe_correction_code_step_34746508(
+    llm,
+    step_callback,
+    title_34746508,
+    abstract_34746508,
+    md_table_34746508_table_1,
+    md_table_34746508_table_2,
+    caption_34746508_table_1,
+    caption_34746508_table_2,
+    pk_individual_curated_table_34746508,
+    pk_individual_verification_reasoning_34746508,
+):
+    pmid = "34746508"
     
+    step = PKPECuratedTablesCorrectionCodeStep(
+        llm=llm,
+        pmid=pmid,
+        domain="pharmacokinetics",
+    )
+
+    state: PKPECurationWorkflowState = {
+        "paper_title": title_34746508,
+        "paper_abstract": abstract_34746508,
+        "source_tables": [md_table_34746508_table_1, md_table_34746508_table_2],
+        "curated_table": pk_individual_curated_table_34746508,
+        "verification_reasoning_process": pk_individual_verification_reasoning_34746508,
+        "step_output_callback": step_callback,
+    }
+
+    state = step.execute(state)
+
+    assert state["curated_table"] is not None
+    
+    assert state["verification_reasoning_process"] is not None

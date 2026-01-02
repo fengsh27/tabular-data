@@ -5,6 +5,7 @@ from extractor.agents.pk_individual.pk_ind_preprocess_step import (
     PKIndWorkflowState,
 )
 
+@pytest.mark.skip()
 def test_PKIndPreprocessStep_18426260_table_1(
     llm,
     caption_18426260_table_1,
@@ -25,4 +26,26 @@ def test_PKIndPreprocessStep_18426260_table_1(
 
     assert(state is not None)
     assert(state["md_table"] is not None)
+
+def test_PKIndPreprocessStep_34746508_table_2(
+    llm,
+    caption_34746508_table_2,
+    md_table_34746508_table_2,
+    full_text_34746508,
+    step_callback,
+):
+    step = PKIndPreprocessStep()
+    state = PKIndWorkflowState(
+        llm=llm,
+        caption=caption_34746508_table_2,
+        md_table=md_table_34746508_table_2,
+        full_text=full_text_34746508,
+        step_callback=step_callback,
+    )
+
+    state = step.execute(state)
+
+    assert(state is not None)
+    assert(state["md_table"] is not None)
+
 

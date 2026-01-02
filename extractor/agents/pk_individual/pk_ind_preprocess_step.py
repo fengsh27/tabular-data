@@ -100,7 +100,7 @@ class CheckPatientIDResult(PKIndCommonAgentResult):
     )
 
 class InferPatientIDResult(PKIndCommonAgentResult):
-    patient_ids: list[str] = Field(
+    patient_ids: list[str | int] = Field(
         description="List of patient IDs for each row in the table."
     )
 
