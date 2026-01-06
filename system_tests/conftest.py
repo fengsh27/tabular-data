@@ -25,7 +25,6 @@ from system_tests.conftest_data import (
     data_caption_32635742_table_0, 
     data_col_mapping_18426260_table_0, 
     data_col_mapping_29100749_table_2, 
-    data_md_table_18426260_table_0, 
     data_md_table_32635742_table_0, 
     data_md_table_aligned_29100749_table_2, 
     data_md_table_drug_18426260_table_0, 
@@ -67,9 +66,18 @@ from system_tests.conftest_data_18426260 import (
     data_md_table_18426260_table_1,
 )
 from system_tests.conftest_data_23200982 import (
+    data_title_23200982,
+    data_abstract_23200982,
     data_md_table_aligned_23200982_table_3,
     data_md_table_aligned_23200982_table_2,
     data_col_mapping_23200982_table_2,
+    data_md_curated_table_pk_individual_23200982,
+    data_verification_explanation_23200982,
+    data_verification_final_answer_23200982,
+    data_verification_suggested_fix_23200982,
+    data_md_table_23200982_table_3,
+    data_md_table_23200982_table_1,
+    data_md_table_23200982_table_2,
 )
 from system_tests.conftest_data_33253437 import (
     data_title_33253437,
@@ -2640,6 +2648,14 @@ def md_table_patient_table_1_33253437():
 # ============================================================================================
 
 @pytest.fixture(scope="module")
+def title_23200982():
+    return data_title_23200982
+
+@pytest.fixture(scope="module")
+def abstract_23200982():
+    return data_abstract_23200982
+
+@pytest.fixture(scope="module")
 def md_table_aligned_23200982_table_3():
     return data_md_table_aligned_23200982_table_3
 
@@ -2650,6 +2666,34 @@ def md_table_aligned_23200982_table_2():
 @pytest.fixture(scope="module")
 def col_mapping_23200982_table_2():
     return data_col_mapping_23200982_table_2
+
+@pytest.fixture(scope="module")
+def md_curated_table_pk_individual_23200982():
+    return data_md_curated_table_pk_individual_23200982
+
+@pytest.fixture(scope="module")
+def verification_explanation_23200982():
+    return data_verification_explanation_23200982
+
+@pytest.fixture(scope="module")
+def verification_final_answer_23200982():
+    return data_verification_final_answer_23200982
+
+@pytest.fixture(scope="module")
+def verification_suggested_fix_23200982():
+    return data_verification_suggested_fix_23200982
+
+@pytest.fixture(scope="module")
+def md_table_23200982_table_3():
+    return data_md_table_23200982_table_3
+
+@pytest.fixture(scope="module")
+def md_table_23200982_table_1():
+    return data_md_table_23200982_table_1
+
+@pytest.fixture(scope="module")
+def md_table_23200982_table_2():
+    return data_md_table_23200982_table_2
 
 # ============================================================================================
 # 34746508

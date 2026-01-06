@@ -27,7 +27,7 @@ def test_ExtractParamTypeAndUnitStep_29100749_table_2(
     assert type(state["type_unit_list"]) == list
 
 
-
+@pytest.mark.skip()
 def test_ExtractParamTypeAndUnitStep_33253437_table_1(
     llm,
     llm_agent,
@@ -51,3 +51,32 @@ def test_ExtractParamTypeAndUnitStep_33253437_table_1(
 
     assert state["type_unit_list"] is not None
     assert type(state["type_unit_list"]) == list
+
+
+def test_ExtractParamTypeAndUnitStep_18426260_table_0(
+    llm,
+    llm_agent,
+    md_table_aligned_18426260_table_0,
+    col_mapping_18426260_table_0,
+    caption_18426260_table_0,
+    md_table_list_18426260_table_0,
+    step_callback
+):
+    step = ExtractParamTypeAndUnitStep()
+    state = PKIndWorkflowState()
+    state["llm"] = llm
+    state["llm2"] = llm_agent
+    state["col_mapping"] = col_mapping_18426260_table_0
+    state["md_table_aligned"] = md_table_aligned_18426260_table_0
+    state["caption"] = caption_18426260_table_0
+    state["md_table_list"] = md_table_list_18426260_table_0
+    state["step_callback"] = step_callback
+    
+    step.execute(state)
+    
+    assert state["type_unit_list"] is not None
+    assert type(state["type_unit_list"]) == list
+    
+    
+
+

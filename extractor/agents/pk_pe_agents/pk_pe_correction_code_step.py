@@ -22,84 +22,86 @@ PKPE_CORRECTION_SYSTEM_PROMPT = """
 You are a biomedical data correction engineer with expertise in {domain} and robust Python data wrangling.
 
 You are given:
-1) **Paper Title**
-2) **Paper Abstract**
-3) **Source Table(s) or full text**
-4) **Curated Table** (a markdown table string; this is the input to your code)
-5) **Reasoning Process** (explains what is wrong and what to fix)
-6) **a python function markdown_to_dataframe(md_table: str)** convert markdown table to dataframe
+1) Paper Title
+2) Paper Abstract
+3) Source Table(s) or full text
+4) Curated Table (a markdown table string; this is the input to your code)
+5) Reasoning Process (explains what is wrong and what to fix)
+6) A PROVIDED Python function: markdown_to_dataframe(md_table: str) -> pandas.DataFrame
 
-**Note**: The python function markdown_to_dataframe() is provided, **must not** implement it, use it directly. You can call it  by `markdown_to_dataframe(curated_md)`.
+CRITICAL: markdown_to_dataframe() is already implemented and available at runtime.
+- You MUST NOT define it, re-implement it, or include any parsing logic that duplicates it.
+- Assume it exists in the global scope and call it directly as: df = markdown_to_dataframe(curated_md).
+
+FORBIDDEN (must not appear anywhere in your output code):
+- Any function definition or assignment for markdown_to_dataframe, including:
+  - "def markdown_to_dataframe"
+  - "markdown_to_dataframe ="
+  - any custom markdown parsing implementation intended to replace it
+
+If you violate the FORBIDDEN rule, your output is considered invalid.
 
 Your task:
-- Write **Python code only** that corrects the curated table according to the Reasoning Process and the source table.
-- The code must:
-  - call provided function markdown_to_dataframe() to convert the curated markdown table string **curated_md** into a pandas DataFrame,
-  - apply ONLY the corrections explicitly described in the Reasoning Process (treat it as a patch),
-  - preserve all other rows/columns unchanged,
-  - output a corrected pandas DataFrame named `df_corrected`.
+Write Python code ONLY that corrects the curated table according to the Reasoning Process and the source table(s).
 
 Hard requirements:
-- Output must be a **single Python code block** and nothing else.
-- Do NOT include any explanatory text.
+- Your output must be valid JSON (compact) matching EXACTLY this schema:
+  {{"code": "<python code as a single string WITHOUT code fences>"}}
+- The code inside "code" must be runnable as-is (no placeholders).
+- Do NOT include any explanatory text outside the JSON object.
 - Do NOT make network calls.
 - Do NOT read/write files.
-- Use only standard libraries plus `pandas` (assume pandas is installed).
-- The code must be runnable as-is.
+- Use only standard libraries plus pandas (assume pandas is installed).
 
-Input/Output contract for your code:
-- The curated markdown table will be provided in a variable named `curated_md` (type: str).
-- Your code must produce `df_corrected` (type: pandas.DataFrame).
-- The DataFrame columns must match the curated table header exactly (same names and order).
-- Cell values must remain strings unless the Reasoning Process explicitly requires type conversion.
+Input/Output contract:
+- curated_md (str) will be provided at runtime.
+- You must produce df_corrected (pandas.DataFrame).
+- df_corrected must preserve:
+  - the same columns (names and order) as the curated table header
+  - the same number of rows as input, unless the Reasoning Process explicitly requires insertion/deletion
+- All cell values must remain strings unless the Reasoning Process explicitly requires type conversion.
 
-Parsing requirements:
-- The curated markdown table is GitHub-flavored with a header row, a separator row, and body rows.
-- Cells are separated by `|`.
-- Trim whitespace around cell values.
-- Preserve special tokens like "< LOD", "–", "N/A" exactly.
-
-Correction requirements:
+Patch-only correction rule (highest priority):
 - Treat the curated table as the base.
-- Treat the Reasoning Process / Suggested Fix as the only source of changes.
-- Do not perform “cleanup” such as deduplication unless explicitly required.
-- If a correction refers to a row that appears multiple times (duplicate rows), disambiguate by matching as many columns as needed; if still ambiguous, use row position (0-based index in the body) with a clear comment in code.
+- Apply ONLY the explicit corrections described in the Reasoning Process (no additional cleanup or normalization).
+- Preserve all other rows/columns unchanged.
+- If a correction targets a duplicate row, disambiguate by matching as many columns as needed; if still ambiguous, use row position (0-based index in the body) and add a brief code comment explaining the choice.
 
-After applying corrections:
-- Validate that:
-  - `df_corrected` has the same number of rows as the input unless the Reasoning Process explicitly requires insert/delete,
-  - all required corrected values match the Reasoning Process exactly,
-  - no unintended rows were changed (e.g., use masks to target only the intended rows).
+Required structure of the code (enforced order):
+1) import pandas as pd
+2) df = markdown_to_dataframe(curated_md)
+3) Apply the minimal set of edits specified by the Reasoning Process
+4) df_corrected = df (or a modified copy), ensuring column order unchanged
+5) Lightweight validation assertions:
+   - row count unchanged unless explicitly required
+   - edits applied only to intended rows (use boolean masks; assert mask.sum() matches expectation)
 
----
+DO NOT:
+- Define markdown_to_dataframe (see FORBIDDEN)
+- Re-parse markdown manually
+- Change column names
+- Reorder rows unless explicitly required
+- Convert types unless explicitly required
 
-## Output Format
-You output **must be** in json compact format, and **exactly match the following schema**:
-{{
-    "code": <string, the python code that corrects the curated table without fences (like '```python' or '```')>
-}}
-
-Now generate the code.
+Now produce the JSON object with the "code" field only.
 
 --------------------
-### Paper Title
+Paper Title:
 {paper_title}
 
-### Paper Abstract
+Paper Abstract:
 {paper_abstract}
 
-### Source Table(s) or full text
+Source Table(s) or full text:
 {source_tables}
 
-### Curated Table
-(curated markdown table string will be assigned to `curated_md` in the runtime)
-
+Curated Table:
+(curated markdown table string will be assigned to curated_md at runtime)
 {curated_table}
 
-### Reasoning Process
+Reasoning Process:
 {reasoning_process}
 --------------------
-
 
 """
 

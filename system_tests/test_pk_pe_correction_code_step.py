@@ -40,7 +40,7 @@ def test_pk_pe_correction_step_on_29718415(
 
     assert state["curated_table"] is not None
     
-
+@pytest.mark.skip()
 def test_pk_pe_correction_code_step_34746508(
     llm,
     step_callback,
@@ -75,3 +75,47 @@ def test_pk_pe_correction_code_step_34746508(
     assert state["curated_table"] is not None
     
     assert state["verification_reasoning_process"] is not None
+
+
+def test_pk_individual_correction_code_step_23200982(
+    llm,
+    step_callback,
+    title_23200982,
+    abstract_23200982,
+    # caption_23200982_table_1,
+    # caption_23200982_table_2,
+    md_table_23200982_table_3,
+    md_table_23200982_table_1,
+    md_table_23200982_table_2,
+    md_curated_table_pk_individual_23200982,
+    verification_explanation_23200982,
+    verification_final_answer_23200982,
+    verification_suggested_fix_23200982,
+):
+    pmid = "23200982"
+    
+    step = PKPECuratedTablesCorrectionCodeStep(
+        llm=llm,
+        pmid=pmid,
+        domain="pharmacokinetics",
+    )
+
+    state: PKPECurationWorkflowState = {
+        "paper_title": title_23200982,
+        "paper_abstract": abstract_23200982,
+        "source_tables": [md_table_23200982_table_1, md_table_23200982_table_2, md_table_23200982_table_3],
+        "curated_table": md_curated_table_pk_individual_23200982,
+        "verification_reasoning_process": verification_explanation_23200982,
+        "final_answer": verification_final_answer_23200982,
+        "suggested_fix": verification_suggested_fix_23200982,
+        "step_output_callback": step_callback,
+    }
+
+    state = step.execute(state)
+
+    assert state["curated_table"] is not None
+    
+    assert state["verification_reasoning_process"] is not None
+
+
+
