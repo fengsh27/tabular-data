@@ -183,7 +183,9 @@ class PKPECuratedTablesCorrectionCodeStep(PKPECommonStep):
                     if attempt < max_retries - 1:
                         continue  # Retry with error message
                     else:
-                        raise RetryException(f"Failed to execute code after {max_retries} attempts. Last error: {error_msg}")
+                        logger.error(f"Max retries reached; leaving curated_table unchanged. Last error: {error_msg}")
+                        self._print_step(state, step_output=f"Max retries reached; leaving curated_table unchanged. Last error:\n\n{error_msg}")
+                        return state, total_token_usage
                 
                 # Validate df_corrected (should not be None if execution_error is None)
                 assert df_corrected is not None, "df_corrected should not be None if execution_error is None"
@@ -196,7 +198,9 @@ class PKPECuratedTablesCorrectionCodeStep(PKPECommonStep):
                     if attempt < max_retries - 1:
                         continue  # Retry
                     else:
-                        raise RetryException(f"df_corrected is not a valid DataFrame after {max_retries} attempts.")
+                        logger.error(f"Max retries reached; leaving curated_table unchanged. Last error: {error_msg}")
+                        self._print_step(state, step_output=f"Max retries reached; leaving curated_table unchanged. Last error:\n\n{error_msg}")
+                        return state, total_token_usage
                 
                 # Convert df_corrected to markdown
                 corrected_table_md = dataframe_to_markdown(df_corrected)
@@ -220,11 +224,14 @@ class PKPECuratedTablesCorrectionCodeStep(PKPECommonStep):
                     if attempt < max_retries - 1:
                         continue  # Retry
                     else:
-                        raise RetryException(f"Failed to generate valid markdown table after {max_retries} attempts.")
+                        logger.error(f"Max retries reached; leaving curated_table unchanged. Last error: {error_msg}")
+                        self._print_step(state, step_output=f"Max retries reached; leaving curated_table unchanged. Last error:\n\n{error_msg}")
+                        return state, total_token_usage
                         
-            except RetryException:
-                # Re-raise RetryException to trigger retry mechanism
-                raise
+            except RetryException as e:
+                logger.error(f"RetryException encountered; leaving curated_table unchanged. Error: {e}")
+                self._print_step(state, step_output=f"RetryException encountered; leaving curated_table unchanged.\n\n{e}")
+                return state, total_token_usage
             except Exception as e:
                 error_msg = f"Unexpected error: {type(e).__name__}: {e}"
                 logger.error(f"Code generation/execution failed (attempt {attempt + 1}): {error_msg}")
@@ -234,10 +241,14 @@ class PKPECuratedTablesCorrectionCodeStep(PKPECommonStep):
                 if attempt < max_retries - 1:
                     continue  # Retry
                 else:
-                    raise RetryException(f"Failed after {max_retries} attempts. Last error: {error_msg}")
+                    logger.error(f"Max retries reached; leaving curated_table unchanged. Last error: {error_msg}")
+                    self._print_step(state, step_output=f"Max retries reached; leaving curated_table unchanged. Last error:\n\n{error_msg}")
+                    return state, total_token_usage
         
         # Should not reach here, but just in case
-        raise RetryException(f"Failed to correct table after {max_retries} attempts.")
+        logger.error("Max retries reached; leaving curated_table unchanged.")
+        self._print_step(state, step_output="Max retries reached; leaving curated_table unchanged.")
+        return state, total_token_usage
     
     def _execute_code_and_extract_dataframe(self, code: str, curated_md: str) -> tuple[Optional[pd.DataFrame], Optional[str]]:
         """
@@ -274,4 +285,3 @@ class PKPECuratedTablesCorrectionCodeStep(PKPECommonStep):
 
     def leave_step(self, state, token_usage: Optional[dict[str, int]] = None):
         return super().leave_step(state, token_usage)
-
