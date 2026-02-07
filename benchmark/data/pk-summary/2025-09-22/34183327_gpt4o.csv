@@ -1,0 +1,10 @@
+﻿,Drug name, Analyte, Specimen, Population, Pregnancy stage, Subject N, Parameter type, Value, Unit, Summary statistics, Variation type, Variation value, Interval type, Lower limit, High limit, P value
+0,Isoniazid, Isoniazid, plasma, pediatric, , , AUC 0-24,0.439, hour·mg/L, regression coefficient, 95% CI, , 95% CI,0.143,0.735, <0.01
+1,Isoniazid, Isoniazid, plasma, pediatric, , , AUC 0-24,-0.002, hour·mg/L, regression coefficient, 95% CI, , 95% CI,-0.006,0.003, n/s
+2,Isoniazid, Isoniazid, plasma, pediatric, , , Cmax,-0.004, mg/L, regression coefficient, 95% CI, , 95% CI,-0.009,0.001, <0.10
+3,Isoniazid, Isoniazid, CSF, pediatric, , , CSF concentration 0-8,-0.007, mg/L, regression coefficient, 95% CI, , 95% CI,-0.015,0.001, <0.10
+4,Rifampicin, Rifampicin, plasma, pediatric, , , AUC 0-24,-0.003, hour·mg/L, regression coefficient, 95% CI, , 95% CI,-0.007,0.001, n/s
+5,Rifampicin, Rifampicin, plasma, pediatric, , , Cmax,-0.005, mg/L, regression coefficient, 95% CI, , 95% CI,-0.009,-0.0003, <0.05
+6,Pyrazinamide, Pyrazinamide, plasma, pediatric, , , AUC 0-24,-0.006, hour·mg/L, regression coefficient, 95% CI, , 95% CI,-0.01,-0.003, <0.01
+7,Pyrazinamide, Pyrazinamide, plasma, pediatric, , , Cmax,-0.003, mg/L, regression coefficient, 95% CI, , 95% CI,-0.005,-0.001, <0.01
+8,Pyrazinamide, Pyrazinamide, CSF, pediatric, , , CSF concentration 0-8,-0.006, mg/L, regression coefficient, 95% CI, , 95% CI,-0.01,-0.003, <0.01

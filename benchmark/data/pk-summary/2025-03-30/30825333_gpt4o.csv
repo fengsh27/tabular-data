@@ -1,0 +1,9 @@
+﻿,Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower limit,High limit,P value
+0,Ketamine,Ketamine,Plasma,Children,,,Total area under curve,Mg/min/L,Mean,91,SD,30,,,,
+1,Ketamine,Ketamine,Plasma,Children,,,Maximum concentration,mg/L,Mean,1.6,SD,0.68,,,,
+2,Ketamine,Ketamine,Plasma,Children,,,Total body clearance,L/min,Mean,0.52,SD,0.26,,,,
+3,Ketamine,Ketamine,Plasma,Children,,,Body weight normalized clearance,L/kg/min,Mean,0.025,SD,0.008,,,,
+4,Ketamine,Ketamine,Plasma,Children,,,Mean residence time,hr,Mean,2.3,SD,0.64,,,,
+5,Ketamine,Ketamine,Plasma,Children,,,Distribution volume at steady state,L,Mean,69,SD,39,,,,
+6,Ketamine,Ketamine,Plasma,Children,,,Body weight normalized distribution volume,L/kg,Mean,3.3,SD,1.3,,,,
+7,Ketamine,Ketamine,Plasma,Children,,,Elimination half-life,hr,Mean,2.6,SD,1,,,,

@@ -1,0 +1,41 @@
+﻿,Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower limit,High limit,P value
+0,Vancomycin,Vancomycin,Plasma,Adults,,60,Vancomycin exposure before optimization,n (count),Count,41,,,,,,<0.001
+1,Vancomycin,Vancomycin,Plasma,Adults,,59,Vancomycin exposure after optimization,n (count),Count,6,,,,,,<0.001
+2,Vancomycin,Vancomycin,Plasma,Adults,,59,Statistical significance,,,,,,,,,<0.001
+3,Vancomycin,Vancomycin,Plasma,Adults,,60,Vancomycin exposure before optimization,n (count),Count,17,,,Range,28.3,,<0.001
+4,Vancomycin,Vancomycin,Plasma,Adults,,59,Vancomycin exposure after optimization,n (count),Count,44,,,Range,74.6,,<0.001
+5,Vancomycin,Vancomycin,Plasma,Adults,,116,Statistical significance,,,,,,,,,<0.001
+6,Vancomycin,Vancomycin,Plasma,Adults,,60,Vancomycin exposure before optimization,n (count),Count,2,,,,,,0.001
+7,Vancomycin,Vancomycin,Plasma,Adults,,59,Vancomycin exposure after optimization,n (count),Count,9,,,,,,0.001
+8,Vancomycin,Vancomycin,Plasma,Adults,,116,Statistical significance,,,,,,,,,0.001
+9,Vancomycin,Vancomycin,Plasma,Adults,,60,Vancomycin exposure before optimization,n (count),Median,12.9,,,Range,11.3,17,
+10,Vancomycin,Vancomycin,Plasma,Adults,,59,Vancomycin exposure after optimization,n (count),Median,20.3,,,Range,17,22.2,
+11,Vancomycin,Vancomycin,Plasma,Adults,,116,Statistical significance,,,,,,,,,<0.001
+12,Vancomycin,Vancomycin,Plasma,Adults,,116,Vancomycin exposure before optimization,n (count),Count,78,,,,,,<0.001
+13,Vancomycin,Vancomycin,Plasma,Adults,,103,Vancomycin exposure after optimization,n (count),Count,13,,,,,,<0.001
+14,Vancomycin,Vancomycin,Plasma,Adults,,116,Statistical significance,,,,,,,,,<0.001
+15,Vancomycin,Vancomycin,Plasma,Adults,,116,Vancomycin exposure before optimization,n (count),Percentage,31,,,,,,
+16,Vancomycin,Vancomycin,Plasma,Adults,,103,Vancomycin exposure after optimization,n (count),Percentage,74.8,,,,,,
+17,Vancomycin,Vancomycin,Plasma,Adults,,116,Statistical significance,,,,,,,,,<0.001
+18,Vancomycin,Vancomycin,Plasma,Adults,,116,Vancomycin exposure before optimization,n (count),Count,2,,,,,,0.025
+19,Vancomycin,Vancomycin,Plasma,Adults,,103,Vancomycin exposure after optimization,n (count),Count,13,,,,,,0.025
+20,Vancomycin,Vancomycin,Plasma,Adults,,103,Statistical significance,,,,,,,,,0.025
+21,Vancomycin,Vancomycin,Plasma,Adults,,60,Vancomycin exposure before optimization,n (count),Median,13.1,,,Range,11.3,16.2,
+22,Vancomycin,Vancomycin,Plasma,Adults,,59,Vancomycin exposure after optimization,n (count),Median,19.8,,,Range,16.8,22.1,< 0.001
+23,Vancomycin,Vancomycin,Plasma,Adults,,116,Statistical significance,,,,,,,,,< 0.001
+24,Vancomycin,Vancomycin,Plasma,Adults,,22,Vancomycin exposure before optimization,n (count),Count,10,,,,,,
+25,Vancomycin,Vancomycin,Plasma,Adults,,17,Vancomycin exposure after optimization,n (count),Count,2,,,,,,
+26,Vancomycin,Vancomycin,Plasma,Adults,,22,Statistical significance,,,,,,,,,0.02
+27,Vancomycin,Vancomycin,Plasma,Adults,,22,Vancomycin exposure before optimization,n (count),Count,12,,,,,,
+28,Vancomycin,Vancomycin,Plasma,Adults,,17,Vancomycin exposure after optimization,n (count),Count,15,,,,,,
+29,Vancomycin,Vancomycin,Plasma,Adults,,60,Vancomycin exposure before optimization,n (count),Median,8.8,,,Range,6.2,11.5,0.004
+30,Vancomycin,Vancomycin,Plasma,Adults,,59,Vancomycin exposure after optimization,n (count),Median,12.8,,,Range,10.9,20.9,0.004
+31,Vancomycin,Vancomycin,Plasma,Adults,,116,Statistical significance,,,,,,,,,0.004
+32,Vancomycin,Vancomycin,Plasma,Adults,,22,Vancomycin exposure before optimization,n (count),Count,20/22 (90.9),,,,,,0.02
+33,Vancomycin,Vancomycin,Plasma,Adults,,17,Vancomycin exposure after optimization,n (count),Count,10/17 (58.8),,,,,,0.02
+34,Vancomycin,Vancomycin,Plasma,Adults,,116,Statistical significance,,,,,,,,,0.02
+35,Vancomycin,Vancomycin,Plasma,Adults,,22,Vancomycin exposure before optimization,n (count),Count,2,,,,,,
+36,Vancomycin,Vancomycin,Plasma,Adults,,17,Vancomycin exposure after optimization,n (count),Count,7,,,,,,
+37,Vancomycin,Vancomycin,Plasma,Adults,,60,Vancomycin exposure before optimization,n (count),Median,211,,,Range,149,275,0.006
+38,Vancomycin,Vancomycin,Plasma,Adults,,59,Vancomycin exposure after optimization,n (count),Median,307,,,Range,262,502,0.006
+39,Vancomycin,Vancomycin,Plasma,Adults,,116,Statistical significance,,,,,,,,,0.006

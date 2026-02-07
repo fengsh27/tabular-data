@@ -1,7 +1,7 @@
-
 from benchmark.constant import BenchmarkType
-from benchmark.utils import generate_columns_definition
-
+from benchmark.utils import (
+    generate_columns_definition,
+)
 pk_cols_definition = (
     "Drug name, is text, the name of drug mentioned in the paper.\n "
     "Analyte, is text, either the primary drug, its metabolite, or another drug on which the primary drug acts..\n "
@@ -35,9 +35,11 @@ pe_cols_definition = (
     "P value includes the numerical value associated with the outcomes and the statistical test conducted. Not always reported in the studies."
 )
 
+
 def test_generate_pk():
     res = generate_columns_definition(BenchmarkType.PK_SUMMARY)
     assert res == pk_cols_definition
+
 
 def test_generate_pe():
     res = generate_columns_definition(BenchmarkType.PE)

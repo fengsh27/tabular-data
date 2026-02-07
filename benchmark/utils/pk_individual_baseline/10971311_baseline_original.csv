@@ -1,0 +1,22 @@
+PMID,population,Pregnancy stage,Gestational age,Specimen,drug name,patient ID,Parameter 1,drug name 1,Time 1,Time unit 1,Value 1,Unit 1,Parameter 2,drug name 2,Time 2,Time unit 2,Value 2,Unit 2,Parameter 3,drug name 3,Time 3,Time unit 3,Value 3,Unit 3,Parameter 4,drug name 4,Time 4,Time unit 4,Value 4,Unit 4,Parameter 5,drug name 5,Time 5,Time unit 5,Value 5,Unit 5,Parameter 6,drug name 6,Time 6,Time unit 6,Value 6,Unit 6
+10971311,maternal,lactation,,breast milk,citalopram,1,tmax,citalopram,,,2.6,h,Cmax,citalopram,,,310,ug/l,average concentration,citalopram,,,107,ug/l,tmax,Demethylcitalopram,,,11.1,h,Cmax,Demethylcitalopram,,,67,ug/l,average concentration,Demethylcitalopram,,,48,ug/l
+10971311,maternal,lactation,,breast milk,citalopram,2,tmax,citalopram,,,3.8,h,Cmax,citalopram,,,103,ug/l,average concentration,citalopram,,,56,ug/l,tmax,Demethylcitalopram,,,3.8,h,Cmax,Demethylcitalopram,,,32,ug/l,average concentration,Demethylcitalopram,,,23,ug/l
+10971311,maternal,lactation,,breast milk,citalopram,3,tmax,citalopram,,,3.8,h,Cmax,citalopram,,,82,ug/l,average concentration,citalopram,,,53,ug/l,tmax,Demethylcitalopram,,,2.9,h,Cmax,Demethylcitalopram,,,27,ug/l,average concentration,Demethylcitalopram,,,23,ug/l
+10971311,maternal,lactation,,breast milk,citalopram,4,tmax,citalopram,,,7.8,h,Cmax,citalopram,,,186,ug/l,average concentration,citalopram,,,141,ug/l,tmax,Demethylcitalopram,,,3.8,h,Cmax,Demethylcitalopram,,,48,ug/l,average concentration,Demethylcitalopram,,,34,ug/l
+10971311,maternal,lactation,,breast milk,citalopram,5,tmax,citalopram,,,3.5,h,Cmax,citalopram,,,232,ug/l,average concentration,citalopram,,,168,ug/l,tmax,Demethylcitalopram,,,10.8,h,Cmax,Demethylcitalopram,,,109,ug/l,average concentration,Demethylcitalopram,,,83,ug/l
+10971311,maternal,lactation,,breast milk,citalopram,6,tmax,citalopram,,,3.8,h,Cmax,citalopram,,,119,ug/l,average concentration,citalopram,,,83,ug/l,tmax,Demethylcitalopram,,,1.8,h,Cmax,Demethylcitalopram,,,35,ug/l,average concentration,Demethylcitalopram,,,29,ug/l
+10971311,maternal,lactation,,breast milk,citalopram,7,tmax,citalopram,,,1.9,h,Cmax,citalopram,,,147,ug/l,average concentration,citalopram,,,68,ug/l,tmax,Demethylcitalopram,,,5.7,h,Cmax,Demethylcitalopram,,,34,ug/l,average concentration,Demethylcitalopram,,,15,ug/l
+10971311,maternal,lactation,,breast milk/plasma,citalopram,1,M/P AUC,citalopram,,,1.4,,M/P AUC,Demethylcitalopram,,,1.4,,,,,,,,,,,,,,,,,,,,,,,,,
+10971311,maternal,lactation,,breast milk/plasma,citalopram,2,M/P AUC,citalopram,,,0.9,,M/P AUC,Demethylcitalopram,,,1,,,,,,,,,,,,,,,,,,,,,,,,,
+10971311,maternal,lactation,,breast milk/plasma,citalopram,3,M/P AUC,citalopram,,,1.4,,M/P AUC,Demethylcitalopram,,,1.1,,,,,,,,,,,,,,,,,,,,,,,,,
+10971311,maternal,lactation,,breast milk/plasma,citalopram,4,M/P AUC,citalopram,,,2,,M/P AUC,Demethylcitalopram,,,1.5,,,,,,,,,,,,,,,,,,,,,,,,,
+10971311,maternal,lactation,,breast milk/plasma,citalopram,5,M/P AUC,citalopram,,,1.9,,M/P AUC,Demethylcitalopram,,,1.9,,,,,,,,,,,,,,,,,,,,,,,,,
+10971311,maternal,lactation,,breast milk/plasma,citalopram,6,M/P AUC,citalopram,,,2.6,,M/P AUC,Demethylcitalopram,,,2.1,,,,,,,,,,,,,,,,,,,,,,,,,
+10971311,maternal,lactation,,breast milk/plasma,citalopram,7,M/P AUC,citalopram,,,2.3,,M/P AUC,Demethylcitalopram,,,3.3,,,,,,,,,,,,,,,,,,,,,,,,,
+10971311,pediatric,,infant,plasma,citalopram,1,concentration,citalopram,,,2,ug/l,concentration,Demethylcitalopram,,,ND,ug/l,,,,,,,,,,,,,,,,,,,,,,,,
+10971311,pediatric,,infant,plasma,citalopram,2,concentration,citalopram,,,ND,ug/l,concentration,Demethylcitalopram,,,ND,ug/l,,,,,,,,,,,,,,,,,,,,,,,,
+10971311,pediatric,,infant,plasma,citalopram,3,concentration,citalopram,,,ND,ug/l,concentration,Demethylcitalopram,,,ND,ug/l,,,,,,,,,,,,,,,,,,,,,,,,
+10971311,pediatric,,infant,plasma,citalopram,4,concentration,citalopram,,,2.3,ug/l,concentration,Demethylcitalopram,,,2.2,ug/l,,,,,,,,,,,,,,,,,,,,,,,,
+10971311,pediatric,,infant,plasma,citalopram,5,concentration,citalopram,,,2.3,ug/l,concentration,Demethylcitalopram,,,2.2,ug/l,,,,,,,,,,,,,,,,,,,,,,,,
+10971311,pediatric,,infant,plasma,citalopram,6,concentration,citalopram,,,ND,ug/l,concentration,Demethylcitalopram,,,ND,ug/l,,,,,,,,,,,,,,,,,,,,,,,,
+10971311,pediatric,,infant,plasma,citalopram,7,concentration,citalopram,,,ND,ug/l,concentration,Demethylcitalopram,,,ND,ug/l,,,,,,,,,,,,,,,,,,,,,,,,

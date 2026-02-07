@@ -1,0 +1,31 @@
+,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+0,Levetiracetam,Levetiracetam,Plasma,Patients from historical data with dose range 5-15 mg/kg/12 h,N/A,N/A,N/A,Cmax,µg/mL,Mean,24.8,SD,8.3,N/A,N/A,N/A,0.07,N/A,N/A
+1,Levetiracetam,Levetiracetam,Plasma,Patients from historical data with dose range 5-15 mg/kg/12 h,N/A,N/A,N/A,AUC0–12,h*µg /mL,Mean,145,SD,44,N/A,N/A,N/A,0.26,0-12,h
+2,Levetiracetam,Levetiracetam,Plasma,Patients from historical data with dose range 5-15 mg/kg/12 h,N/A,N/A,N/A,Ctrough,µg/mL,Mean,8.4,SD,3.8,N/A,N/A,N/A,0.34,N/A,N/A
+3,Levetiracetam,Levetiracetam,Plasma,Patients from historical data with dose range 5-15 mg/kg/12 h,N/A,N/A,N/A,Tmax,h,Median,0.5,N/A,N/A,Range,0.25,3.0,N/A,N/A,N/A
+4,Levetiracetam,Levetiracetam,Plasma,Patients from current study with dose range 5-15 mg/kg/12 h,N/A,N/A,N/A,Cmax,µg/mL,Mean,19.19,SD,4.12,N/A,N/A,N/A,0.07,N/A,N/A
+5,Levetiracetam,Levetiracetam,Plasma,Patients from current study with dose range 5-15 mg/kg/12 h,N/A,N/A,N/A,AUC0–12,h*µg /mL,Mean,167.0,SD,45.6,N/A,N/A,N/A,0.26,0-12,h
+6,Levetiracetam,Levetiracetam,Plasma,Patients from current study with dose range 5-15 mg/kg/12 h,N/A,N/A,N/A,Ctrough,µg/mL,Mean,9.99,SD,3.86,N/A,N/A,N/A,0.34,N/A,N/A
+7,Levetiracetam,Levetiracetam,Plasma,Patients from current study with dose range 5-15 mg/kg/12 h,N/A,N/A,N/A,Tmax,h,Median,1.5,N/A,N/A,Range,1.5,2.5,N/A,N/A,N/A
+8,Levetiracetam,Levetiracetam,Plasma,Patients from historical data with dose range 15-25 mg/kg/12 h,N/A,N/A,N/A,Cmax,µg/mL,Mean,57.1,Standard Deviation,14.9,N/A,N/A,N/A,0.001,N/A,N/A
+9,Levetiracetam,Levetiracetam,Plasma,Patients from historical data with dose range 15-25 mg/kg/12 h,N/A,N/A,N/A,AUC0–12,h*µg /mL,Mean,322,Standard Deviation,71,N/A,N/A,N/A,0.88,0-12,h
+10,Levetiracetam,Levetiracetam,Plasma,Patients from historical data with dose range 15-25 mg/kg/12 h,N/A,N/A,N/A,Ctrough,µg/mL,Mean,15.6,Standard Deviation,5.3,N/A,N/A,N/A,0.22,N/A,N/A
+11,Levetiracetam,Levetiracetam,Plasma,Patients from historical data with dose range 15-25 mg/kg/12 h,N/A,N/A,N/A,Tmax,h,Median,0.5,N/A,N/A,Range,0.5,3.0,N/A,N/A,N/A
+12,Levetiracetam,Levetiracetam,Plasma,Patients from current study with dose range 15-25 mg/kg/12 h,N/A,N/A,N/A,Cmax,µg/mL,Mean,35.12,Standard Deviation,10.54,N/A,N/A,N/A,0.001,N/A,N/A
+13,Levetiracetam,Levetiracetam,Plasma,Patients from current study with dose range 15-25 mg/kg/12 h,N/A,N/A,N/A,AUC0–12,h*µg /mL,Mean,316.5,Standard Deviation,108.4,N/A,N/A,N/A,0.88,0-12,h
+14,Levetiracetam,Levetiracetam,Plasma,Patients from current study with dose range 15-25 mg/kg/12 h,N/A,N/A,N/A,Ctrough,µg/mL,Mean,19.25,Standard Deviation,8.48,N/A,N/A,N/A,0.22,N/A,N/A
+15,Levetiracetam,Levetiracetam,Plasma,Patients from current study with dose range 15-25 mg/kg/12 h,N/A,N/A,N/A,Tmax,h,Median,2.5,N/A,N/A,Range,2.0,3.3,N/A,N/A,N/A
+16,Levetiracetam,Levetiracetam,Plasma,Patients from historical data with dose range 25-35 mg/kg/12 h,N/A,N/A,N/A,Cmax,µg/mL,Mean,73.2,Standard Deviation,19.2,N/A,N/A,N/A,–,N/A,N/A
+17,Levetiracetam,Levetiracetam,Plasma,Patients from historical data with dose range 25-35 mg/kg/12 h,N/A,N/A,N/A,AUC0–12,h*µg /mL,Mean,433,Standard Deviation,94,N/A,N/A,N/A,–,0-12,h
+18,Levetiracetam,Levetiracetam,Plasma,Patients from historical data with dose range 25-35 mg/kg/12 h,N/A,N/A,N/A,Ctrough,µg/mL,Mean,20.6,Standard Deviation,5.8,N/A,N/A,N/A,–,N/A,N/A
+19,Levetiracetam,Levetiracetam,Plasma,Patients from historical data with dose range 25-35 mg/kg/12 h,N/A,N/A,N/A,Tmax,h,Median,0.5,N/A,N/A,Range,0.5,3,–,N/A,N/A
+20,Levetiracetam,Levetiracetam,Plasma,Patients from current study with dose range 25-35 mg/kg/12 h,N/A,N/A,None,Cmax,µg/mL,Median,36.11,N/A,N/A,Range,27.58,44.64,N/A,N/A,N/A
+21,Levetiracetam,Levetiracetam,Plasma,Patients from current study with dose range 25-35 mg/kg/12 h,N/A,N/A,None,AUC0–12,h*µg /mL,Median,290.9,N/A,N/A,Range,176.14,405.59,N/A,0-12,h
+22,Levetiracetam,Levetiracetam,Plasma,Patients from current study with dose range 25-35 mg/kg/12 h,N/A,N/A,None,Ctrough,µg/mL,Median,13.03,N/A,N/A,Range,2.98,23.07,N/A,N/A,N/A
+23,Levetiracetam,Levetiracetam,Plasma,Patients from current study with dose range 25-35 mg/kg/12 h,N/A,N/A,None,Tmax,h,N/A,N/A,N/A,N/A,Range,1.5,1.5,N/A,N/A,N/A
+24,Levetiracetam,Levetiracetam,Plasma,Adults,N/A,N/A,14,AUC0–12,h*μg/mL,Median,220,N/A,N/A,Range,157.5,355.4,0.9,0-12,h
+25,Levetiracetam,Levetiracetam,Plasma,Adults,N/A,N/A,14,Cmax,μg/mL,Median,23.8,N/A,N/A,Range,18.8,41.3,0.84,N/A,N/A
+26,Levetiracetam,Levetiracetam,Plasma,Adults,N/A,N/A,14,Tmax,h,Median,1.5,N/A,N/A,Range,1.5,2.5,0.46,N/A,N/A
+27,Levetiracetam,Levetiracetam,Plasma,Adults,N/A,N/A,5,AUC0–12,h*μg/mL,Median,213.8,N/A,N/A,Range,154.0,348.8,0.9,0-12,h
+28,Levetiracetam,Levetiracetam,Plasma,Adults,N/A,N/A,5,Cmax,μg/mL,Median,26.4,N/A,N/A,Range,19.3,34.2,0.84,N/A,N/A
+29,Levetiracetam,Levetiracetam,Plasma,Adults,N/A,N/A,5,Tmax,h,Median,2.5,N/A,N/A,Range,1.5,2.9,0.46,N/A,N/A

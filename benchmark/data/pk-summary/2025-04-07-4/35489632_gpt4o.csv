@@ -1,0 +1,9 @@
+,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+0,Meropenem,Meropenem,Plasma,N/A,N/A,N/A,28,Cmid,mg/L,Geometric Mean,19.9,N/A,N/A,Range,13.5,29.5,0.2,N/A,N/A
+1,Meropenem,Meropenem,Plasma,N/A,N/A,N/A,26,Ctrough,mg/L,Geometric Mean,3.5,N/A,N/A,Range,2.0,6.1,0.04,N/A,N/A
+2,Meropenem,Meropenem,Plasma,N/A,N/A,N/A,11,Cmid,mg/L,Geometric Mean,4.9,N/A,N/A,Range,2.6,9.2,0.14,N/A,N/A
+3,Meropenem,Meropenem,Plasma,N/A,N/A,N/A,7,Ctrough,mg/L,Geometric Mean,0.8,N/A,N/A,Range,0.4,1.6,0.85,N/A,N/A
+4,Meropenem,Meropenem,Plasma,N/A,N/A,N/A,26,Cmid,mg/L,Geometric Mean,14.8,N/A,N/A,Range,11.4,19.1,0.2,N/A,N/A
+5,Meropenem,Meropenem,Plasma,N/A,N/A,N/A,11,Ctrough,mg/L,Geometric Mean,1.6,N/A,N/A,Range,1.0,2.6,0.04,N/A,N/A
+6,Meropenem,Meropenem,Plasma,N/A,N/A,N/A,7,Cmid,mg/L,Geometric Mean,1.9,N/A,N/A,Range,0.4,9.6,0.14,N/A,N/A
+7,Meropenem,Meropenem,Plasma,N/A,N/A,N/A,7,Ctrough,mg/L,Geometric Mean,0.9,N/A,N/A,Range,0.2,4.2,0.85,N/A,N/A

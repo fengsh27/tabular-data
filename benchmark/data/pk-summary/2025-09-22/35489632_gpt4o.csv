@@ -1,0 +1,9 @@
+﻿,Drug name, Analyte, Specimen, Population, Pregnancy stage, Subject N, Parameter type, Value, Unit, Summary statistics, Variation type, Variation value, Interval type, Lower limit, High limit, P value
+0,Meropenem, Meropenem, plasma, adults, ,28, Cmid unbound plasma concentration after extended infusion,19.9, mg/L, geometric mean, , , 95% CI,13.5,29.5,0.2
+1,Meropenem, Meropenem, plasma, adults, ,26, Cmid unbound plasma concentration after extended infusion,14.8, mg/L, geometric mean, , , 95% CI,11.4,19.1,0.2
+2,Meropenem, Meropenem, plasma, adults, ,28, Ctrough unbound plasma concentration after extended infusion,3.5, mg/L, geometric mean, , , 95% CI,2,6.1,0.04
+3,Meropenem, Meropenem, plasma, adults, ,26, Ctrough unbound plasma concentration after extended infusion,1.6, mg/L, geometric mean, , , 95% CI,1,2.6,0.04
+4,Meropenem, Meropenem, plasma, adults, ,11, Cmid unbound plasma concentration after intermittent bolus,4.9, mg/L, geometric mean, , , 95% CI,2.6,9.2,0.14
+5,Meropenem, Meropenem, plasma, adults, ,7, Cmid unbound plasma concentration after intermittent bolus,1.9, mg/L, geometric mean, , , 95% CI,0.4,9.6,0.14
+6,Meropenem, Meropenem, plasma, adults, ,11, Ctrough unbound plasma concentration after intermittent bolus,0.8, mg/L, geometric mean, , , 95% CI,0.4,1.6,0.85
+7,Meropenem, Meropenem, plasma, adults, ,7, Ctrough unbound plasma concentration after intermittent bolus,0.9, mg/L, geometric mean, , , 95% CI,0.2,4.2,0.85

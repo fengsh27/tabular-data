@@ -1,0 +1,7 @@
+,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+0,Fentanyl,Fentanyl,Umbilical vein,Maternal,Near-term,N/A,16,"Mean serum fentanyl concentration, umbilical vein",nmol/L,Mean,0.162,SD,0.090,N/A,N/A,N/A,.67,N/A,N/A
+1,Fentanyl,Fentanyl,Maternal serum,Maternal,Near-term,N/A,16,Median maternal serum fentanyl concentration at birth,nmol/L,Median,0.268,N/A,N/A,Range,0.193,0.493,.66a,Birth,N/A
+2,Fentanyl,Fentanyl,Maternal serum,Maternal,Near-term,N/A,18,Mean AUC 0‐120 min for fentanyl in maternal serum,nmol h/L,Mean,0.428,SD,0.162,N/A,N/A,N/A,.015,0-120,Min
+3,Fentanyl,Fentanyl,Umbilical vein,Maternal,Near-term,N/A,20,"Mean serum fentanyl concentration, umbilical vein",nmol/L,Mean,0.151,SD,0.070,N/A,N/A,N/A,.67,N/A,N/A
+4,Fentanyl,Fentanyl,Maternal serum,Maternal,Near-term,N/A,19,Median maternal serum fentanyl concentration at birth,nmol/L,Median,0.291,N/A,N/A,Range,0.212,0.502,.66a,Birth,N/A
+5,Fentanyl,Fentanyl,Maternal serum,Maternal,Near-term,N/A,15,Mean AUC 0‐120 min for fentanyl in maternal serum,nmol h/L,Mean,0.590,SD,0.197,N/A,N/A,N/A,.015,0-120,Min
