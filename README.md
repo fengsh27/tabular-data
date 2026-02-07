@@ -1,4 +1,4 @@
-# tabula-data
+# tabular-data
 
 ## Benchmark
 We use [Poetry](https://python-poetry.org) for dependency management. Please make sure that you have installed Poetry and set up the environment correctly before starting development.
@@ -80,3 +80,6 @@ This package employs bump2version to bump version
 bump2version {major, minor or patch}
 ```
 
+## Curate data from literature
+
+Comming soom ...

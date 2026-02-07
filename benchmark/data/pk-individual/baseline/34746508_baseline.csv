@@ -1,0 +1,4 @@
+PMID,Population,Pregnancy stage,Pediatric/Gestational age,Specimen,Drug name,Patient ID,Parameter type,Analyte,Time value,Time unit,Parameter value,Parameter unit
+34746508,pediatric,,38w0d,cord blood,Infliximab,Case 1,concentration,Infliximab,,,36.89,μg/ml
+34746508,pediatric,,6 months,blood,Infliximab,Case 1,concentration,Infliximab,,,0.94,pg/ml
+34746508,pediatric,,6 months,blood,Infliximab,Case 3,concentration,Infliximab,,,0.24,pg/ml

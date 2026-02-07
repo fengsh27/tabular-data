@@ -1,0 +1,31 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+Lorazepam,Lorazepam,Plasma,Maternal,Parturition,N/A,N/A,AUC0-inf,ng*h/mL,Mean,175.25,N/A,N/A,CI 95%,145.74,204.75,N/A,N/A,N/A
+Lorazepam,Lorazepam,Plasma,Maternal,Parturition,N/A,N/A,Absorption half-life (t1/2a),h,Mean,3.16,N/A,N/A,CI 95%,2.62,3.68,N/A,N/A,N/A
+Lorazepam,Lorazepam,Plasma,Maternal,Parturition,N/A,N/A,Absorption rate constant (Ka),1/h,Mean,0.23,N/A,N/A,CI 95%,0.19,0.28,N/A,N/A,N/A
+Lorazepam,Lorazepam,Plasma,Maternal,Parturition,N/A,N/A,Apparent total clearance (ClT/F),mL/(min*kg),Mean,2.61,N/A,N/A,CI 95%,2.34,2.88,N/A,N/A,N/A
+Lorazepam,Lorazepam,Plasma,Maternal,Parturition,N/A,N/A,Apparent volume of distribution (Vd/F),L,Mean,178.78,N/A,N/A,CI 95%,146.46,211.10,N/A,N/A,N/A
+Lorazepam,Lorazepam,Plasma,Maternal,Parturition,N/A,N/A,Cmax,ng/mL,Mean,12.96,N/A,N/A,CI 95%,9.42,16.49,N/A,N/A,N/A
+Lorazepam,Lorazepam,Plasma,Maternal,Parturition,N/A,N/A,Elimination half-life (t1/2β),h,Mean,10.35,N/A,N/A,CI 95%,9.39,11.32,N/A,N/A,N/A
+Lorazepam,Lorazepam,Plasma,Maternal,Parturition,N/A,N/A,Elimination rate constant (β),1/h,Mean,0.068,N/A,N/A,CI 95%,0.061,0.075,N/A,N/A,N/A
+Lorazepam,Lorazepam,Plasma,Maternal,Parturition,N/A,N/A,Tmax,h,Mean,3.10,N/A,N/A,CI 95%,2.57,3.63,N/A,N/A,N/A
+Lorazepam,Lorazepam-glucuronide,Plasma,Maternal,Parturition,N/A,N/A,AUC0-inf,ng*h/mL,Mean,481.19,N/A,N/A,CI 95%,252.87,709.51,N/A,N/A,N/A
+Lorazepam,Lorazepam-glucuronide,Plasma,Maternal,Parturition,N/A,N/A,Absorption half-life (t1/2a),h,Mean,1.37,N/A,N/A,CI 95%,1.15,1.58,N/A,N/A,N/A
+Lorazepam,Lorazepam-glucuronide,Plasma,Maternal,Parturition,N/A,N/A,Absorption rate constant (Ka),1/h,Mean,0.52,N/A,N/A,CI 95%,0.44,0.59,N/A,N/A,N/A
+Lorazepam,Lorazepam-glucuronide,Plasma,Maternal,Parturition,N/A,N/A,Cmax,ng/mL,Mean,35.55,N/A,N/A,CI 95%,8.27,62.83,N/A,N/A,N/A
+Lorazepam,Lorazepam-glucuronide,Plasma,Maternal,Parturition,N/A,N/A,Elimination half-life (t1/2β),h,Mean,18.17,N/A,N/A,CI 95%,14.10,22.23,N/A,N/A,N/A
+Lorazepam,Lorazepam-glucuronide,Plasma,Maternal,Parturition,N/A,N/A,Elimination rate constant (β),1/h,Mean,0.039,N/A,N/A,CI 95%,0.032,0.047,N/A,N/A,N/A
+Lorazepam,Lorazepam-glucuronide,Plasma,Maternal,Parturition,N/A,N/A,Tmax,h,Mean,4.33,N/A,N/A,CI 95%,2.90,5.77,N/A,N/A,N/A
+Lorazepam,Lorazepam,Urine,Maternal,Labor,N/A,N/A,Elimination half-life (t1/2),h,Mean,12.75,N/A,N/A,CI 95%,10.71,14.79,N/A,N/A,N/A
+Lorazepam,Lorazepam,Urine,Maternal,Labor,N/A,N/A,Elimination rate constant (Kel),h−1,Mean,0.057,N/A,N/A,CI 95%,0.048,0.065,N/A,N/A,N/A
+Lorazepam,Lorazepam,Urine,Maternal,Labor,N/A,N/A,Fraction excreted in urine (Fel),%,Mean,0.29,N/A,N/A,CI 95%,0.12,0.45,N/A,N/A,N/A
+Lorazepam,Lorazepam,Urine,Maternal,Labor,N/A,N/A,Renal clearance (ClR; weight-normalized),ml/(min kg),Mean,0.0099,N/A,N/A,CI 95%,0.0049,0.015,N/A,N/A,N/A
+Lorazepam,Lorazepam,Urine,Maternal,Labor,N/A,N/A,Total amount excreted in urine (Ae total),μg,Mean,8.18,N/A,N/A,CI 95%,2.67,13.70,N/A,N/A,N/A
+Lorazepam,Lorazepam-glucuronide,Urine,Maternal,Labor,N/A,N/A,Elimination half-life (t1/2),h,Mean,11.5,N/A,N/A,CI 95%,6.14,16.86,N/A,N/A,N/A
+Lorazepam,Lorazepam-glucuronide,Urine,Maternal,Labor,N/A,N/A,Elimination rate constant (Kel),h−1,Mean,0.066,N/A,N/A,CI 95%,0.040,0.093,N/A,N/A,N/A
+Lorazepam,Lorazepam-glucuronide,Urine,Maternal,Labor,N/A,N/A,Fraction excreted in urine (Fel),%,Mean,44.97,N/A,N/A,CI 95%,26.65,63.29,N/A,N/A,N/A
+Lorazepam,Lorazepam-glucuronide,Urine,Maternal,Labor,N/A,N/A,Renal clearance (ClR; weight-normalized),ml/(min kg),Mean,1.12,N/A,N/A,CI 95%,0.69,1.55,N/A,N/A,N/A
+Lorazepam,Lorazepam-glucuronide,Urine,Maternal,Labor,N/A,N/A,Total amount excreted in urine (Ae total),μg,Mean,899.77,N/A,N/A,CI 95%,534.58,1265.0,N/A,N/A,N/A
+Lorazepam,Lorazepam,Cord blood,Maternal,Delivery,N/A,8,Cord-to-maternal blood lorazepam concentration ratio,unitless,Mean,0.73,N/A,N/A,CI 95%,0.52,0.94,N/A,N/A,N/A
+Lorazepam,Lorazepam,Cord blood,Neonatal,Delivery,N/A,8,Lorazepam concentration in cord blood,ng/ml,Mean,6.78,N/A,N/A,CI 95%,5.39,8.17,N/A,N/A,N/A
+Lorazepam,Lorazepam,Cord blood,Adults,Delivery,N/A,8,Post-dose collection time (at delivery),min,Mean,293.4,N/A,N/A,CI 95%,163.2,423,N/A,293.4,Min
+Lorazepam,Lorazepam,Maternal blood,Maternal,Delivery,N/A,8,Lorazepam concentration in maternal blood,ng/ml,Mean,9.91,N/A,N/A,CI 95%,7.68,12.14,N/A,N/A,N/A

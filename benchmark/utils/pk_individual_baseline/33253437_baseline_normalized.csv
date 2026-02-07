@@ -1,0 +1,81 @@
+PMID,Population,Pregnancy stage,Pediatric/Gestational age,Specimen,Drug name,Patient ID,Parameter type,Analyte,Time value,Time unit,Parameter value,Parameter unit
+33253437,,third trimester,maternal,plasma,venlafaxine,2,concentration,venlafaxine,12.0,h,245,ng/ml
+33253437,,third trimester,maternal,plasma,venlafaxine,6,concentration,venlafaxine,12.0,h,37.6,ng/ml
+33253437,,third trimester,maternal,plasma,venlafaxine,7,concentration,venlafaxine,12.0,h,,ng/ml
+33253437,,third trimester,maternal,plasma,venlafaxine,16,concentration,venlafaxine,12.0,h,86.1,ng/ml
+33253437,,third trimester,maternal,plasma,venlafaxine,17,concentration,venlafaxine,12.0,h,71.5,ng/ml
+33253437,,third trimester,maternal,plasma,venlafaxine,20,concentration,venlafaxine,12.0,h,,ng/ml
+33253437,,third trimester,maternal,plasma,venlafaxine,24,concentration,venlafaxine,12.0,h,154.6,ng/ml
+33253437,,delivery,maternal,plasma,venlafaxine,2,concentration,venlafaxine,,,76.8,ng/ml
+33253437,,delivery,maternal,plasma,venlafaxine,6,concentration,venlafaxine,,,,ng/ml
+33253437,,delivery,maternal,plasma,venlafaxine,7,concentration,venlafaxine,,,179.9,ng/ml
+33253437,,delivery,maternal,plasma,venlafaxine,16,concentration,venlafaxine,,,,ng/ml
+33253437,,delivery,maternal,plasma,venlafaxine,17,concentration,venlafaxine,,,,ng/ml
+33253437,,delivery,maternal,plasma,venlafaxine,20,concentration,venlafaxine,,,199.8,ng/ml
+33253437,,delivery,maternal,plasma,venlafaxine,24,concentration,venlafaxine,,,,ng/ml
+33253437,,,pediatric,plasma,venlafaxine,2,concentration,venlafaxine,,,184.8,ng/ml
+33253437,,,pediatric,plasma,venlafaxine,6,concentration,venlafaxine,,,,ng/ml
+33253437,,,pediatric,plasma,venlafaxine,7,concentration,venlafaxine,,,234.7,ng/ml
+33253437,,,pediatric,plasma,venlafaxine,16,concentration,venlafaxine,,,,ng/ml
+33253437,,,pediatric,plasma,venlafaxine,17,concentration,venlafaxine,,,,ng/ml
+33253437,,,pediatric,plasma,venlafaxine,20,concentration,venlafaxine,,,78.9,ng/ml
+33253437,,,pediatric,plasma,venlafaxine,24,concentration,venlafaxine,,,,ng/ml
+33253437,,delivery,maternal/pediatric,umbilical cord/maternal plasma,venlafaxine,2,umbilical maternal ratio,venlafaxine,,,240.6,%
+33253437,,delivery,maternal/pediatric,umbilical cord/maternal plasma,venlafaxine,6,umbilical maternal ratio,venlafaxine,,,,%
+33253437,,delivery,maternal/pediatric,umbilical cord/maternal plasma,venlafaxine,7,umbilical maternal ratio,venlafaxine,,,13.5,%
+33253437,,delivery,maternal/pediatric,umbilical cord/maternal plasma,venlafaxine,16,umbilical maternal ratio,venlafaxine,,,,%
+33253437,,delivery,maternal/pediatric,umbilical cord/maternal plasma,venlafaxine,17,umbilical maternal ratio,venlafaxine,,,,%
+33253437,,delivery,maternal/pediatric,umbilical cord/maternal plasma,venlafaxine,20,umbilical maternal ratio,venlafaxine,,,39.5,%
+33253437,,delivery,maternal/pediatric,umbilical cord/maternal plasma,venlafaxine,24,umbilical maternal ratio,venlafaxine,,,,%
+33253437,,third trimester,maternal,plasma,citalopram,36,concentration,citalopram,,,90.2,ng/ml
+33253437,,third trimester,maternal,plasma,citalopram,42,concentration,citalopram,,,14.9,ng/ml
+33253437,,delivery,maternal,plasma,citalopram,36,concentration,citalopram,,,,ng/ml
+33253437,,delivery,maternal,plasma,citalopram,42,concentration,citalopram,,,9.3,ng/ml
+33253437,,,pediatric,plasma,citalopram,36,concentration,citalopram,,,,ng/ml
+33253437,,,pediatric,plasma,citalopram,42,concentration,citalopram,,,5.5,ng/ml
+33253437,,delivery,maternal/pediatric,umbilical cord/maternal plasma,citalopram,36,umbilical maternal ratio,citalopram,,,,
+33253437,,delivery,maternal/pediatric,umbilical cord/maternal plasma,citalopram,42,umbilical maternal ratio,citalopram,,,59.1,
+33253437,,third trimester,maternal,plasma,escitalopram,9,concentration,escitalopram,,,<5,ng/ml
+33253437,,third trimester,maternal,plasma,escitalopram,10,concentration,escitalopram,,,21.8,ng/ml
+33253437,,third trimester,maternal,plasma,escitalopram,28,concentration,escitalopram,,,,ng/ml
+33253437,,third trimester,maternal,plasma,escitalopram,29,concentration,escitalopram,,,,ng/ml
+33253437,,third trimester,maternal,plasma,escitalopram,30,concentration,escitalopram,,,68.8,ng/ml
+33253437,,third trimester,maternal,plasma,escitalopram,47,concentration,escitalopram,,,,ng/ml
+33253437,,third trimester,maternal,plasma,escitalopram,56,concentration,escitalopram,,,<5,ng/ml
+33253437,,delivery,maternal,plasma,escitalopram,9,concentration,escitalopram,,,,ng/ml
+33253437,,delivery,maternal,plasma,escitalopram,10,concentration,escitalopram,,,32.4,ng/ml
+33253437,,delivery,maternal,plasma,escitalopram,28,concentration,escitalopram,,,10.1,ng/ml
+33253437,,delivery,maternal,plasma,escitalopram,29,concentration,escitalopram,,,<5,ng/ml
+33253437,,delivery,maternal,plasma,escitalopram,30,concentration,escitalopram,,,36.5,ng/ml
+33253437,,delivery,maternal,plasma,escitalopram,47,concentration,escitalopram,,,8.9,ng/ml
+33253437,,delivery,maternal,plasma,escitalopram,56,concentration,escitalopram,,,<5,ng/ml
+33253437,,,pediatric,plasma,escitalopram,9,concentration,escitalopram,,,,ng/ml
+33253437,,,pediatric,plasma,escitalopram,10,concentration,escitalopram,,,15.9,ng/ml
+33253437,,,pediatric,plasma,escitalopram,28,concentration,escitalopram,,,,ng/ml
+33253437,,,pediatric,plasma,escitalopram,29,concentration,escitalopram,,,,ng/ml
+33253437,,,pediatric,plasma,escitalopram,30,concentration,escitalopram,,,,ng/ml
+33253437,,,pediatric,plasma,escitalopram,47,concentration,escitalopram,,,7.7,ng/ml
+33253437,,,pediatric,plasma,escitalopram,56,concentration,escitalopram,,,<5,ng/ml
+33253437,,delivery,maternal/pediatric,umbilical cord/maternal plasma,escitalopram,9,umbilical maternal ratio,escitalopram,,,,
+33253437,,delivery,maternal/pediatric,umbilical cord/maternal plasma,escitalopram,10,umbilical maternal ratio,escitalopram,,,49.1,
+33253437,,delivery,maternal/pediatric,umbilical cord/maternal plasma,escitalopram,28,umbilical maternal ratio,escitalopram,,,,
+33253437,,delivery,maternal/pediatric,umbilical cord/maternal plasma,escitalopram,29,umbilical maternal ratio,escitalopram,,,,
+33253437,,delivery,maternal/pediatric,umbilical cord/maternal plasma,escitalopram,30,umbilical maternal ratio,escitalopram,,,,
+33253437,,delivery,maternal/pediatric,umbilical cord/maternal plasma,escitalopram,47,umbilical maternal ratio,escitalopram,,,86.5,
+33253437,,delivery,maternal/pediatric,umbilical cord/maternal plasma,escitalopram,56,umbilical maternal ratio,escitalopram,,,,
+33253437,,third trimester,maternal,plasma,fluoxetine,39,concentration,fluoxetine,,,346.8,ng/ml
+33253437,,third trimester,maternal,plasma,fluoxetine,40,concentration,fluoxetine,,,,ng/ml
+33253437,,third trimester,maternal,plasma,fluoxetine,41,concentration,fluoxetine,,,,ng/ml
+33253437,,third trimester,maternal,plasma,fluoxetine,44,concentration,fluoxetine,,,,ng/ml
+33253437,,delivery,maternal,plasma,fluoxetine,39,concentration,fluoxetine,,,,ng/ml
+33253437,,delivery,maternal,plasma,fluoxetine,40,concentration,fluoxetine,,,147,ng/ml
+33253437,,delivery,maternal,plasma,fluoxetine,41,concentration,fluoxetine,,,<5,ng/ml
+33253437,,delivery,maternal,plasma,fluoxetine,44,concentration,fluoxetine,,,216.8,ng/ml
+33253437,,,pediatric,plasma,fluoxetine,39,concentration,fluoxetine,,,,ng/ml
+33253437,,,pediatric,plasma,fluoxetine,40,concentration,fluoxetine,,,152,ng/ml
+33253437,,,pediatric,plasma,fluoxetine,41,concentration,fluoxetine,,,<5,ng/ml
+33253437,,,pediatric,plasma,fluoxetine,44,concentration,fluoxetine,,,108.6,ng/ml
+33253437,,delivery,maternal/pediatric,umbilical cord/maternal plasma,fluoxetine,39,umbilical maternal ratio,fluoxetine,,,,
+33253437,,delivery,maternal/pediatric,umbilical cord/maternal plasma,fluoxetine,40,umbilical maternal ratio,fluoxetine,,,103.4,
+33253437,,delivery,maternal/pediatric,umbilical cord/maternal plasma,fluoxetine,41,umbilical maternal ratio,fluoxetine,,,,
+33253437,,delivery,maternal/pediatric,umbilical cord/maternal plasma,fluoxetine,44,umbilical maternal ratio,fluoxetine,,,50.1,

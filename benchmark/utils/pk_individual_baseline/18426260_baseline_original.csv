@@ -1,0 +1,78 @@
+PMID,population,Pregnancy stage,Gestational age,Specimen,drug name,patient ID,Parameter 1,drug name 1,Time 1,Time unit 1,Value 1,Unit 1,Parameter 2,drug name 2,Time 2,Time unit 2,Value 2,Unit 2
+18426260,,pregnancy,maternal,plasma,Sertraline,6,concentration,S-sertraline,,,NA,ng/ml,concentration,N-desmethylsertraline,,,NA,ng/ml
+18426260,,pregnancy,maternal,plasma,Sertraline,7,concentration,S-sertraline,,,10,ng/ml,concentration,N-desmethylsertraline,,,18,ng/ml
+18426260,,pregnancy,maternal,plasma,Sertraline,8,concentration,S-sertraline,,,4,ng/ml,concentration,N-desmethylsertraline,,,16,ng/ml
+18426260,,pregnancy,maternal,plasma,Sertraline,9,concentration,S-sertraline,,,NA,ng/ml,concentration,N-desmethylsertraline,,,NA,ng/ml
+18426260,,pregnancy,maternal,plasma,Sertraline,10,concentration,S-sertraline,,,93,ng/ml,concentration,N-desmethylsertraline,,,72,ng/ml
+18426260,,pregnancy,maternal,plasma,Sertraline,11,concentration,S-sertraline,,,32,ng/ml,concentration,N-desmethylsertraline,,,52,ng/ml
+18426260,,pregnancy,maternal,plasma,Sertraline,6,concentration,S-sertraline,,,27,ng/ml,concentration,N-desmethylsertraline,,,44,ng/ml
+18426260,,pregnancy,maternal,plasma,Sertraline,7,concentration,S-sertraline,,,20,ng/ml,concentration,N-desmethylsertraline,,,40,ng/ml
+18426260,,pregnancy,maternal,plasma,Sertraline,8,concentration,S-sertraline,,,10,ng/ml,concentration,N-desmethylsertraline,,,17,ng/ml
+18426260,,pregnancy,maternal,plasma,Sertraline,9,concentration,S-sertraline,,,17,ng/ml,concentration,N-desmethylsertraline,,,141,ng/ml
+18426260,,pregnancy,maternal,plasma,Sertraline,10,concentration,S-sertraline,,,45,ng/ml,concentration,N-desmethylsertraline,,,92,ng/ml
+18426260,,pregnancy,maternal,plasma,Sertraline,11,concentration,S-sertraline,,,18,ng/ml,concentration,N-desmethylsertraline,,,77,ng/ml
+18426260,,pregnancy,maternal,plasma,Sertraline,6,concentration,S-sertraline,,,NA,ng/ml,concentration,N-desmethylsertraline,,,NA,ng/ml
+18426260,,pregnancy,maternal,plasma,Sertraline,7,concentration,S-sertraline,,,16,ng/ml,concentration,N-desmethylsertraline,,,66,ng/ml
+18426260,,pregnancy,maternal,plasma,Sertraline,8,concentration,S-sertraline,,,39,ng/ml,concentration,N-desmethylsertraline,,,74,ng/ml
+18426260,,pregnancy,maternal,plasma,Sertraline,9,concentration,S-sertraline,,,43,ng/ml,concentration,N-desmethylsertraline,,,147,ng/ml
+18426260,,pregnancy,maternal,plasma,Sertraline,10,concentration,S-sertraline,,,NA,ng/ml,concentration,N-desmethylsertraline,,,NA,ng/ml
+18426260,,pregnancy,maternal,plasma,Sertraline,11,concentration,S-sertraline,,,23,ng/ml,concentration,N-desmethylsertraline,,,73,ng/ml
+18426260,,delivery,maternal,plasma,Sertraline,6,concentration,S-sertraline,,,11,ng/ml,concentration,N-desmethylsertraline,,,26,ng/ml
+18426260,,delivery,maternal,plasma,Sertraline,7,concentration,S-sertraline,,,7,ng/ml,concentration,N-desmethylsertraline,,,32,ng/ml
+18426260,,delivery,maternal,plasma,Sertraline,8,concentration,S-sertraline,,,NA,ng/ml,concentration,N-desmethylsertraline,,,NA,ng/ml
+18426260,,delivery,maternal,plasma,Sertraline,9,concentration,S-sertraline,,,32,ng/ml,concentration,N-desmethylsertraline,,,120,ng/ml
+18426260,,delivery,maternal,plasma,Sertraline,10,concentration,S-sertraline,,,28,ng/ml,concentration,N-desmethylsertraline,,,59,ng/ml
+18426260,,delivery,maternal,plasma,Sertraline,11,concentration,S-sertraline,,,32,ng/ml,concentration,N-desmethylsertraline,,,97,ng/ml
+18426260,,Postpartum,maternal,plasma,Sertraline,6,concentration of 2 weeks' postpartum,S-sertraline,,,NA,ng/ml,concentration,N-desmethylsertraline,,,NA,ng/ml
+18426260,,Postpartum,maternal,plasma,Sertraline,7,concentration of 2 weeks' postpartum,S-sertraline,,,22,ng/ml,concentration,N-desmethylsertraline,,,41,ng/ml
+18426260,,Postpartum,maternal,plasma,Sertraline,8,concentration of 2 weeks' postpartum,S-sertraline,,,21,ng/ml,concentration,N-desmethylsertraline,,,59,ng/ml
+18426260,,Postpartum,maternal,plasma,Sertraline,9,concentration of 2 weeks' postpartum,S-sertraline,,,39,ng/ml,concentration,N-desmethylsertraline,,,149,ng/ml
+18426260,,Postpartum,maternal,plasma,Sertraline,10,concentration of 2 weeks' postpartum,S-sertraline,,,NA,ng/ml,concentration,N-desmethylsertraline,,,NA,ng/ml
+18426260,,Postpartum,maternal,plasma,Sertraline,11,concentration of 2 weeks' postpartum,S-sertraline,,,NA,ng/ml,concentration,N-desmethylsertraline,,,NA,ng/ml
+18426260,,Postpartum,maternal,plasma,Sertraline,6,concentration of 4-6 weeks' postpartum,S-sertraline,,,27,ng/ml,concentration of 4-6 weeks' postpartum,N-desmethylsertraline,,,52,ng/ml
+18426260,,Postpartum,maternal,plasma,Sertraline,7,concentration of 4-6 weeks' postpartum,S-sertraline,,,15,ng/ml,concentration of 4-6 weeks' postpartum,N-desmethylsertraline,,,29,ng/ml
+18426260,,Postpartum,maternal,plasma,Sertraline,8,concentration of 4-6 weeks' postpartum,S-sertraline,,,NA,ng/ml,concentration of 4-6 weeks' postpartum,N-desmethylsertraline,,,NA,ng/ml
+18426260,,Postpartum,maternal,plasma,Sertraline,9,concentration of 4-6 weeks' postpartum,S-sertraline,,,NA,ng/ml,concentration of 4-6 weeks' postpartum,N-desmethylsertraline,,,NA,ng/ml
+18426260,,Postpartum,maternal,plasma,Sertraline,10,concentration of 4-6 weeks' postpartum,S-sertraline,,,62,ng/ml,concentration of 4-6 weeks' postpartum,N-desmethylsertraline,,,74,ng/ml
+18426260,,Postpartum,maternal,plasma,Sertraline,11,concentration of 4-6 weeks' postpartum,S-sertraline,,,83,ng/ml,concentration of 4-6 weeks' postpartum,N-desmethylsertraline,,,128,ng/ml
+18426260,,Postpartum,maternal,plasma,Sertraline,6,concentration of 12 weeks' postpartum,S-sertraline,,,21,ng/ml,concentration of 12 weeks' postpartum,N-desmethylsertraline,,,50,ng/ml
+18426260,,Postpartum,maternal,plasma,Sertraline,7,concentration of 12 weeks' postpartum,S-sertraline,,,NA,ng/ml,concentration of 12 weeks' postpartum,N-desmethylsertraline,,,NA,ng/ml
+18426260,,Postpartum,maternal,plasma,Sertraline,8,concentration of 12 weeks' postpartum,S-sertraline,,,21,ng/ml,concentration of 12 weeks' postpartum,N-desmethylsertraline,,,29,ng/ml
+18426260,,Postpartum,maternal,plasma,Sertraline,9,concentration of 12 weeks' postpartum,S-sertraline,,,NA,ng/ml,concentration of 12 weeks' postpartum,N-desmethylsertraline,,,NA,ng/ml
+18426260,,Postpartum,maternal,plasma,Sertraline,10,concentration of 12 weeks' postpartum,S-sertraline,,,NA,ng/ml,concentration of 12 weeks' postpartum,N-desmethylsertraline,,,NA,ng/ml
+18426260,,Postpartum,maternal,plasma,Sertraline,11,concentration of 12 weeks' postpartum,S-sertraline,,,99,ng/ml,concentration of 12 weeks' postpartum,N-desmethylsertraline,,,183,ng/ml
+18426260,,pregnancy,maternal,plasma,Citalopram,1,concentration,S-Citalopram,,,32,ng/ml,concentration,R-Citalopram,,,62,ng/ml
+18426260,,pregnancy,maternal,plasma,Citalopram,2,concentration,S-Citalopram,,,14,ng/ml,concentration,R-Citalopram,,,24,ng/ml
+18426260,,pregnancy,maternal,plasma,Citalopram,3,concentration,S-Citalopram,,,19,ng/ml,concentration,R-Citalopram,,,41,ng/ml
+18426260,,pregnancy,maternal,plasma,Citalopram,4,concentration,S-Citalopram,,,17,ng/ml,concentration,R-Citalopram,,,,ng/ml
+18426260,,pregnancy,maternal,plasma,Citalopram,5,concentration,S-Citalopram,,,58,ng/ml,concentration,R-Citalopram,,,,ng/ml
+18426260,,pregnancy,maternal,plasma,Citalopram,1,concentration,S-Citalopram,,,40,ng/ml,concentration,R-Citalopram,,,64,ng/ml
+18426260,,pregnancy,maternal,plasma,Citalopram,2,concentration,S-Citalopram,,,14,ng/ml,concentration,R-Citalopram,,,24,ng/ml
+18426260,,pregnancy,maternal,plasma,Citalopram,3,concentration,S-Citalopram,,,9,ng/ml,concentration,R-Citalopram,,,22,ng/ml
+18426260,,pregnancy,maternal,plasma,Citalopram,4,concentration,S-Citalopram,,,10,ng/ml,concentration,R-Citalopram,,,,ng/ml
+18426260,,pregnancy,maternal,plasma,Citalopram,5,concentration,S-Citalopram,,,70,ng/ml,concentration,R-Citalopram,,,,ng/ml
+18426260,,pregnancy,maternal,plasma,Citalopram,1,concentration,S-Citalopram,,,25,ng/ml,concentration,R-Citalopram,,,41,ng/ml
+18426260,,pregnancy,maternal,plasma,Citalopram,2,concentration,S-Citalopram,,,18,ng/ml,concentration,R-Citalopram,,,36,ng/ml
+18426260,,pregnancy,maternal,plasma,Citalopram,3,concentration,S-Citalopram,,,5,ng/ml,concentration,R-Citalopram,,,14,ng/ml
+18426260,,pregnancy,maternal,plasma,Citalopram,4,concentration,S-Citalopram,,,13,ng/ml,concentration,R-Citalopram,,,,ng/ml
+18426260,,pregnancy,maternal,plasma,Citalopram,5,concentration,S-Citalopram,,,67,ng/ml,concentration,R-Citalopram,,,,ng/ml
+18426260,,delivery,maternal,plasma,Citalopram,1,concentration,S-Citalopram,,,15,ng/ml,concentration,R-Citalopram,,,24,ng/ml
+18426260,,delivery,maternal,plasma,Citalopram,2,concentration,S-Citalopram,,,NA,ng/ml,concentration,R-Citalopram,,,NA,ng/ml
+18426260,,delivery,maternal,plasma,Citalopram,3,concentration,S-Citalopram,,,,ng/ml,concentration,R-Citalopram,,,,ng/ml
+18426260,,delivery,maternal,plasma,Citalopram,4,concentration,S-Citalopram,,,14,ng/ml,concentration,R-Citalopram,,,,ng/ml
+18426260,,delivery,maternal,plasma,Citalopram,5,concentration,S-Citalopram,,,NA,ng/ml,concentration,R-Citalopram,,,,ng/ml
+18426260,,Postpartum,maternal,plasma,Citalopram,1,concentration of 2 weeks' postpartum,S-Citalopram,,,NA,ng/ml,concentration,R-Citalopram,,,NA,ng/ml
+18426260,,Postpartum,maternal,plasma,Citalopram,2,concentration of 2 weeks' postpartum,S-Citalopram,,,NA,ng/ml,concentration,R-Citalopram,,,NA,ng/ml
+18426260,,Postpartum,maternal,plasma,Citalopram,3,concentration of 2 weeks' postpartum,S-Citalopram,,,,ng/ml,concentration,R-Citalopram,,,,ng/ml
+18426260,,Postpartum,maternal,plasma,Citalopram,4,concentration of 2 weeks' postpartum,S-Citalopram,,,NA,ng/ml,concentration,R-Citalopram,,,NA,ng/ml
+18426260,,Postpartum,maternal,plasma,Citalopram,5,concentration of 2 weeks' postpartum,S-Citalopram,,,NA,ng/ml,concentration,R-Citalopram,,,NA,ng/ml
+18426260,,Postpartum,maternal,plasma,Citalopram,1,concentration of 4-6 weeks' postpartum,S-Citalopram,,,NA,ng/ml,concentration of 4-6 weeks' postpartum,R-Citalopram,,,NA,ng/ml
+18426260,,Postpartum,maternal,plasma,Citalopram,2,concentration of 4-6 weeks' postpartum,S-Citalopram,,,NA,ng/ml,concentration of 4-6 weeks' postpartum,R-Citalopram,,,NA,ng/ml
+18426260,,Postpartum,maternal,plasma,Citalopram,3,concentration of 4-6 weeks' postpartum,S-Citalopram,,,,ng/ml,concentration of 4-6 weeks' postpartum,R-Citalopram,,,,ng/ml
+18426260,,Postpartum,maternal,plasma,Citalopram,4,concentration of 4-6 weeks' postpartum,S-Citalopram,,,NA,ng/ml,concentration of 4-6 weeks' postpartum,R-Citalopram,,,NA,ng/ml
+18426260,,Postpartum,maternal,plasma,Citalopram,5,concentration of 4-6 weeks' postpartum,S-Citalopram,,,NA,ng/ml,concentration of 4-6 weeks' postpartum,R-Citalopram,,,NA,ng/ml
+18426260,,Postpartum,maternal,plasma,Citalopram,1,concentration of 12 weeks' postpartum,S-Citalopram,,,18,ng/ml,concentration of 12 weeks' postpartum,R-Citalopram,,,36,ng/ml
+18426260,,Postpartum,maternal,plasma,Citalopram,2,concentration of 12 weeks' postpartum,S-Citalopram,,,27,ng/ml,concentration of 12 weeks' postpartum,R-Citalopram,,,75,ng/ml
+18426260,,Postpartum,maternal,plasma,Citalopram,3,concentration of 12 weeks' postpartum,S-Citalopram,,,,ng/ml,concentration of 12 weeks' postpartum,R-Citalopram,,,,ng/ml
+18426260,,Postpartum,maternal,plasma,Citalopram,4,concentration of 12 weeks' postpartum,S-Citalopram,,,NA,ng/ml,concentration of 12 weeks' postpartum,R-Citalopram,,,,ng/ml
+18426260,,Postpartum,maternal,plasma,Citalopram,5,concentration of 12 weeks' postpartum,S-Citalopram,,,63,ng/ml,concentration of 12 weeks' postpartum,R-Citalopram,,,,ng/ml

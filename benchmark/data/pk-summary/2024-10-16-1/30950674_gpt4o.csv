@@ -1,0 +1,18 @@
+﻿,Drug name, Analyte, Specimen, Population, Pregnancy stage, Subject N, Parameter type, Value, Unit, Summary statistics, Variation type, Variation value, Interval type, Lower limit, High limit, P value
+0,Vancomycin, , , , , , Volume of distribution, 3.62, L, Mean, SD, 1.94, , , , 
+1,Vancomycin, , , , , , Volume of distribution, 0.7, L/kg, Mean, SD, 0.48, , , , 
+2,Vancomycin, , , , , , Clearance, 0.749, L/h, Mean, SD, 0.454, , , , 
+3,Vancomycin, , , , , , Clearance, 0.124, L/h/kg, Mean, SD, 0.052, , , , 
+4,Vancomycin, , , , , , Elimination half-life, 4.3, h, Mean, SD, 2.6, , , , 
+5,Vancomycin, , , , , , Volume of distribution, 3.5, L, Median, , , IQR, 2.64, 4.35, 
+6,Vancomycin, , , , , , Volume of distribution, 0.5, L/kg, Median, , , IQR, 0.39, 0.94, 
+7,Vancomycin, , , , , , Clearance, 0.737, L/h, Median, , , IQR, 0.414, 0.955, 
+8,Vancomycin, , , , , , Clearance, 0.112, L/h/kg, Median, , , IQR, 0.095, 0.133, 
+9,Vancomycin, , , , , , Elimination half-life, 3.8, h, Median, , , IQR, 2.5, 5.4, 
+10,Vancomycin, , , , , , Volume of distribution, , L, , CV%, , Min–Max, 0.31, 8.88, 
+11,Vancomycin, , , , , , Volume of distribution, , L/kg, , CV%, , Min–Max, 0.28, 2.31, 
+12,Vancomycin, , , , , , Clearance, , L/h, , CV%, , Min–Max, 0.02, 1.82, 
+13,Vancomycin, , , , , , Clearance, , L/h/kg, , CV%, , Min–Max, 0.025, 0.268, 
+14,Vancomycin, , , , , , Elimination half-life, , h, , CV%, , Min–Max, 1.5, 11.3, 
+15,Vancomycin, , , , , , Clearance regression, , , , , , 95% CI, 0.9294, 2.401, .0001
+16,Vancomycin, , , , , , Clearance regression, , , , , , 95% CI, -0.1506, 0.4502, .0001

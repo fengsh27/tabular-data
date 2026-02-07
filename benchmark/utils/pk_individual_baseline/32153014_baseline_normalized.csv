@@ -1,0 +1,13 @@
+PMID,Population,Pregnancy stage,Pediatric/Gestational age,Specimen,Drug name,Patient ID,Parameter type,Analyte,Time value,Time unit,Parameter value,Parameter unit
+32153014,maternal,delivery,,plasma,Infliximab,1,concentration,Infliximab,,,25.3,ug/ml
+32153014,maternal,delivery,,plasma,Infliximab,1,placenta-to-maternal ratio,Infliximab,,,0.35,
+32153014,maternal,delivery,,plasma,Infliximab,2,concentration,Infliximab,,,12.0,ug/ml
+32153014,maternal,delivery,,plasma,Infliximab,2,placenta-to-maternal ratio,Infliximab,,,0.23,
+32153014,maternal,delivery,,plasma,Infliximab,3,concentration,Infliximab,,,17.0,ug/ml
+32153014,maternal,delivery,,plasma,Infliximab,3,placenta-to-maternal ratio,Infliximab,,,0.44,
+32153014,pediatric,,fetus,cord blood,Infliximab,1,concentration,Infliximab,,,29.8,ug/ml
+32153014,pediatric,,fetus,cord blood,Infliximab,2,concentration,Infliximab,,,24.0,ug/ml
+32153014,pediatric,,fetus,cord blood,Infliximab,3,concentration,Infliximab,,,29.0,ug/ml
+32153014,maternal/pediatric,delivery,fetus,cord blood/maternal plasma,Infliximab,1,cord-to maternal-ratio,Infliximab,,,1.18,
+32153014,maternal/pediatric,delivery,fetus,cord blood/maternal plasma,Infliximab,2,cord-to maternal-ratio,Infliximab,,,2.0,
+32153014,maternal/pediatric,delivery,fetus,cord blood/maternal plasma,Infliximab,3,cord-to maternal-ratio,Infliximab,,,1.71,

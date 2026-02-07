@@ -1,5 +1,4 @@
 import os
-from typing import List, Optional
 import os.path as path
 import csv
 import shutil
@@ -33,13 +32,15 @@ PK_COLUMNS_MAP = [
     ("Interval High", "High limit"),
 ]
 
+
 def get_lower_column_name():
     cols = []
     for v in PE_COLUMNS:
         cols.append(v.lower())
     return cols
 
-def process_1st_column(rows: List[List[str]]):
+
+def process_1st_column(rows: list[list[str]]):
     lower_cols = get_lower_column_name()
     headers = rows[0]
     if headers[0].lower() == lower_cols[0]:
@@ -48,9 +49,9 @@ def process_1st_column(rows: List[List[str]]):
         for ix, row in enumerate(rows):
             prc_row = []
             if ix == 0:
-                prc_row.append('')
+                prc_row.append("")
             else:
-                prc_row.append(ix-1)
+                prc_row.append(ix - 1)
             prc_row = prc_row + row
             prc_rows.append(prc_row)
         return prc_rows
@@ -60,10 +61,11 @@ def process_1st_column(rows: List[List[str]]):
             row[0] = ""
         else:
             row[0] = ix - 1
-    
+
     return rows
 
-def process_column_names(rows: List[List[str]]):
+
+def process_column_names(rows: list[list[str]]):
     lower_cols = get_lower_column_name()
     unknow_col_index = []
 
@@ -86,7 +88,10 @@ def process_column_names(rows: List[List[str]]):
 
         # Map column name
         if not found:
-            pair = next(( x for x in PK_COLUMNS_MAP if x[0].lower() == column.strip().lower() ), None)
+            pair = next(
+                (x for x in PK_COLUMNS_MAP if x[0].lower() == column.strip().lower()),
+                None,
+            )
             if pair is not None:
                 rows[0][ix] = pair[1]
                 found = True
@@ -98,10 +103,10 @@ def process_column_names(rows: List[List[str]]):
         if not found:
             print(f"Error: can't find column {column}")
             unknow_col_index.append(ix)
-    
+
     if len(unknow_col_index) == 0:
         return rows
-    
+
     processed_rows = []
     for row in rows:
         prcssed_row = []
@@ -117,15 +122,15 @@ def preprocess_table(csv_file) -> pd.DataFrame:
     with open(csv_file, "r") as fobj:
         reader = csv.reader(fobj)
         csv_rows = list(reader)
-        stripped_rows = [[val.replace('\ufeff', '') for val in row] for row in csv_rows]
-        
+        stripped_rows = [[val.replace("\ufeff", "") for val in row] for row in csv_rows]
+
         rows = process_1st_column(stripped_rows)
         rows = process_column_names(rows)
 
         output_df = pd.DataFrame(rows[1:], columns=rows[0])
 
         return output_df
-    
+
 
 def preprocess_PK_csv_file(pk_csv_file: str):
     bn, extname = path.splitext(pk_csv_file)
@@ -140,12 +145,14 @@ def preprocess_PK_csv_file(pk_csv_file: str):
     dst_file = pk_csv_file
     output_df = preprocess_table(orig_file)
     output_df.to_csv(dst_file, sep=",")
-    
-def preprocess_PK_csv_files(pk_csv_files: List[str]):
+
+
+def preprocess_PK_csv_files(pk_csv_files: list[str]):
     for f in pk_csv_files:
         res = preprocess_PK_csv_file(f)
         if not res:
             print(f"Failed to pre-process file: {f}")
+
 
 def process_triple_files():
     PK_PMIDs = [
@@ -173,20 +180,19 @@ def process_triple_files():
             pe_files.append(gemini)
     preprocess_PK_csv_files(pe_files)
 
+
 def process_single_files():
     PE_FILES = [
         "30308427_gemini15.csv",
         "34741059_gemini15.csv",
-        "35296792_gemini15.csv"
+        "35296792_gemini15.csv",
     ]
     pe_files = []
     for f in PE_FILES:
         fn = f"./benchmark/pe/{f}"
         pe_files.append(fn)
     preprocess_PK_csv_files(pe_files)
-        
+
 
 if __name__ == "__main__":
     process_triple_files()
-    
-

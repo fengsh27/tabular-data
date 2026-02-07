@@ -1,0 +1,9 @@
+,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+0,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,60,Initial Cavg Concentration,mg/L,Median,12.9,N/A,N/A,Range,11.3,17.0,<0.001,N/A,N/A
+1,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,116,All Cavg Concentration,mg/L,Median,13.1,N/A,N/A,Range,11.3,16.2,< 0.001,N/A,N/A
+2,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,22,Initial Cavg/MIC ratio,N/A,Median,8.8,N/A,N/A,Range,6.2,11.5,0.004,N/A,N/A
+3,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,20,Number of patients with Initial AUC/MIC ratio < 400,n/N (%),Count,20/22,%,90.9,N/A,N/A,N/A,0.02,N/A,N/A
+4,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,2,Number of patients with Initial AUC/MIC ratio ≥ 400,n/N (%),Count,2/22,%,9.1,N/A,N/A,N/A,N/A,N/A,N/A
+5,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,22,Initial AUC/MIC ratio,N/A,Median,211,N/A,N/A,Range,149,275,0.006,N/A,N/A
+6,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,59,Initial Cavg Concentration,mg/L,Median,20.3,N/A,N/A,Range,17.0,22.2,<0.001,N/A,N/A
+7,Vancomycin,Vancomycin,Plasma,Adults,N/A,N/A,103,All Cavg Concentration,mg/L,Median,19.8,N/A,N/A,Range,16.8,22.1,< 0.001,N/A,N/A

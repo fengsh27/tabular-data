@@ -1,19 +1,20 @@
-import logging
 import os
 from typing import Optional
 from datetime import datetime
 import streamlit as st
 
-from extractor.article_retriever import ExtendArticleRetriever
-from extractor.html_table_extractor import HtmlTableExtractor
-from extractor.stampers import ArticleStamper, Stamper
+from extractor.pmid_extractor.article_retriever import ExtendArticleRetriever
+from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
+from extractor.stampers import ArticleStamper
 from extractor.utils import escape_markdown
 
 output_folder = os.environ.get("TEMP_FOLDER", "./tmp")
 stamper_enabled = os.environ.get("LOG_ARTICLE", "FALSE") == "TRUE"
 stamper = ArticleStamper(output_folder, stamper_enabled)
 ss = st.session_state
-def on_input_changed(pmid: Optional[str]=None):
+
+
+def on_input_changed(pmid: Optional[str] = None):
     if pmid is None:
         pmid = ss.get("id-html-tab-input")
     pmid = pmid.strip()
@@ -22,7 +23,7 @@ def on_input_changed(pmid: Optional[str]=None):
     ss.html_info = ""
 
     # retrieve article
-    retriever = ExtendArticleRetriever() # 
+    retriever = ExtendArticleRetriever()  #
     res, html_content, code = retriever.request_article(pmid)
     if not res:
         error_msg = f"Failed to retrieve article. \n {html_content}"
@@ -35,11 +36,12 @@ def on_input_changed(pmid: Optional[str]=None):
     ss.html_retrieved_tables = retrieved_tables
 
     tmp_info = (
-        'no table found' 
-        if len(retrieved_tables) == 0 
-        else f'{len(retrieved_tables)} tables found'
+        "no table found"
+        if len(retrieved_tables) == 0
+        else f"{len(retrieved_tables)} tables found"
     )
     ss.html_info = f"{datetime.now().strftime('%m/%d/%Y, %H:%M:%S')} Retrieving completed, {tmp_info}"
+
 
 def html_tab():
     global stamper
@@ -77,5 +79,3 @@ def html_tab():
                 with st.expander("Html Table"):
                     st.write(tbl["raw_tag"])
             st.divider()
-
-            

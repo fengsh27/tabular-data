@@ -1,7 +1,7 @@
 {
   "version": "250213-chain",
   "step1": {
-    "seek_for_pk_table": "Which table(s) are related to PK (pharmacokinetics)?\nPlease return a list of strings directly.\n",
+    "seek_for_pk_table": "Which table(s) are related to PK (pharmacokinetics)?\nPlease return a list of table id strings directly.\n",
     "format": "Please only return the Python string list:\n"
   },
   "step2": {

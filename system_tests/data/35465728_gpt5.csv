@@ -1,0 +1,29 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,103,Cavg category: subtherapeutic (<15 mg/L),n (%),Count,13,Percentage,12.6,N/A,N/A,N/A,<0.001,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,103,Cavg category: supratherapeutic (>25 mg/L),n (%),Count,13,Percentage,12.6,N/A,N/A,N/A,0.025,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,103,Cavg category: therapeutic (15 to 25 mg/L),n (%),Count,77,Percentage,74.8,N/A,N/A,N/A,<0.001,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,103,Cavg concentration,mg/L,Median,19.8,N/A,N/A,Range,16.8,22.1,< 0.001,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,116,Cavg category: subtherapeutic (<15 mg/L),n (%),Count,78,Percentage,67.2,N/A,N/A,N/A,<0.001,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,116,Cavg category: supratherapeutic (>25 mg/L),n (%),Count,2,Percentage,1.7,N/A,N/A,N/A,0.025,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,116,Cavg category: therapeutic (15 to 25 mg/L),n (%),Count,36,Percentage,31.0,N/A,N/A,N/A,<0.001,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,116,Cavg concentration,mg/L,Median,13.1,N/A,N/A,Range,11.3,16.2,< 0.001,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,17,AUC/MIC ratio,unitless,Median,307,N/A,N/A,Range,262,502,0.006,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,17,AUC/MIC ratio category: <400,n (%),Count,10,Percentage,58.8,N/A,N/A,N/A,0.02,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,17,AUC/MIC ratio category: >=400,n (%),Count,7,Percentage,41.2,N/A,N/A,N/A,N/A,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,17,Cavg/MIC ratio,unitless,Median,12.8,N/A,N/A,Range,10.9,20.9,0.004,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,17,Cavg/MIC ratio category: <8,n (%),Count,2,Percentage,11.8,N/A,N/A,N/A,0.02,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,17,Cavg/MIC ratio category: >=8,n (%),Count,15,Percentage,88.2,N/A,N/A,N/A,N/A,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,22,AUC/MIC ratio,unitless,Median,211,N/A,N/A,Range,149,275,0.006,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,22,AUC/MIC ratio category: <400,n (%),Proportion,20/22,Percentage,90.9,N/A,N/A,N/A,0.02,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,22,AUC/MIC ratio category: >=400,n (%),Proportion,2/22,Percentage,9.1,N/A,N/A,N/A,N/A,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,22,Cavg/MIC ratio,unitless,Median,8.8,N/A,N/A,Range,6.2,11.5,0.004,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,22,Cavg/MIC ratio category: <8,n (%),Count,10,Percentage,45.5,N/A,N/A,N/A,0.02,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,22,Cavg/MIC ratio category: >=8,n (%),Count,12,Percentage,54.5,N/A,N/A,N/A,N/A,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,59,Cavg category: subtherapeutic (<15 mg/L),n (%),Count,6,Percentage,10.2,N/A,N/A,N/A,<0.001,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,59,Cavg category: supratherapeutic (>25 mg/L),n (%),Count,9,Percentage,15.3,N/A,N/A,N/A,0.001,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,59,Cavg category: therapeutic (15 to 25 mg/L),n (%),Count,44,Percentage,74.6,N/A,N/A,N/A,<0.001,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,59,Cavg concentration,mg/L,Median,20.3,N/A,N/A,Range,17.0,22.2,<0.001,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,60,Cavg category: subtherapeutic (<15 mg/L),n (%),Count,41,Percentage,68.3,N/A,N/A,N/A,<0.001,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,60,Cavg category: supratherapeutic (>25 mg/L),n (%),Count,2,Percentage,3.3,N/A,N/A,N/A,0.001,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,60,Cavg category: therapeutic (15 to 25 mg/L),n (%),Count,17,Percentage,28.3,N/A,N/A,N/A,<0.001,N/A,N/A
+Vancomycin,Vancomycin,Plasma,N/A,N/A,N/A,60,Cavg concentration,mg/L,Median,12.9,N/A,N/A,Range,11.3,17.0,<0.001,N/A,N/A

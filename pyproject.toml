@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "tabula-data"
-version = "0.1.47"
+version = "0.2.31"
 description = "tabula data"
 authors = ["fengsh <shaohong.feng.78@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.10,<3.14"
 pandas = "^2.2.0"
 requests = "^2.31.0"
 html5lib = "^1.1"
@@ -21,14 +21,20 @@ streamlit-antd-components = "^0.3.2"
 tenacity = "^8.2.3"
 ratelimit = "^2.2.1"
 shortuuid = "^1.0.13"
-google-generativeai = "^0.4.1"
 nanoid = "^2.0.0"
 streamlit-modal = "^0.1.2"
-anthropic = {version = "^0.26.1", optional = true}
 sentence-transformers = {version = "^3.2.1", optional = true}
 lxml = "^5.3.0"
 langchain = "^0.3.18"
 langchain-openai = "^0.3.5"
+langchain-deepseek = "^0.1.2"
+langchain-community = "^0.3.20"
+langgraph = "^0.3.19"
+grandalf = "^0.8"
+langchain-google-genai = "2.1.8"
+langchain-anthropic = "0.3.18"
+tabulate = "^0.9.0"
+langchain-meta = "^0.4.2"
 
 [tool.poetry.extras]
 semantic = ["sentence-transformers"]
@@ -37,6 +43,7 @@ claude = ["anthropic"]
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0.1"
 bump2version = "^1.0.1"
+pre-commit = "^4.2.0"
 
 [build-system]
 requires = ["poetry-core"]

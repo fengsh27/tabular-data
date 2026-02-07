@@ -1,0 +1,19 @@
+﻿,Drug name, Analyte, Specimen, Population, Pregnancy stage, Subject N, Parameter type, Value, Unit, Summary statistics, Variation type, Variation value, Interval type, Lower limit, High limit, P value
+0,Levetiracetam, Levetiracetam, blood, pediatric, , , Cmax  dose range 1, 19.19, µg/mL, mean, SD, 4.12, , , , 0.07
+1,Levetiracetam, Levetiracetam, blood, pediatric, , , Cmax  dose range 2, 35.12, µg/mL, mean, SD, 10.54, , , , 0.001
+2,Levetiracetam, Levetiracetam, blood, pediatric, , , Cmax  dose range 3, 36.11, µg/mL, median, range, , range, 27.58, 44.64, 
+3,Levetiracetam, Levetiracetam, blood, pediatric, , , AUC 0–12  dose range 1, 167.0, h*µg/mL, mean, SD, 45.6, , , , 0.26
+4,Levetiracetam, Levetiracetam, blood, pediatric, , , AUC 0–12  dose range 2, 316.5, h*µg/mL, mean, SD, 108.4, , , , 0.88
+5,Levetiracetam, Levetiracetam, blood, pediatric, , , AUC 0–12  dose range 3, 290.9, h*µg/mL, median, range, , range, 176.14, 405.59, 
+6,Levetiracetam, Levetiracetam, blood, pediatric, , , Ctrough  dose range 1, 9.99, µg/mL, mean, SD, 3.86, , , , 0.34
+7,Levetiracetam, Levetiracetam, blood, pediatric, , , Ctrough  dose range 2, 19.25, µg/mL, mean, SD, 8.48, , , , 0.22
+8,Levetiracetam, Levetiracetam, blood, pediatric, , , Ctrough  dose range 3, 13.03, µg/mL, median, range, , range, 2.98, 23.07, 
+9,Levetiracetam, Levetiracetam, blood, pediatric, , , Tmax  dose range 1, , h, median, range, , range, 0.25, 3.0, 
+10,Levetiracetam, Levetiracetam, blood, pediatric, , , Tmax  dose range 2, , h, median, range, , range, 2.0, 3.3, 
+11,Levetiracetam, Levetiracetam, blood, pediatric, , , Tmax  dose range 3, , h, median, range, , range, 1.5, 3.0, 
+12,Levetiracetam, Levetiracetam, blood, , , 14, AUC 0-12  naso- or orogastric tube, 220, h*µg/mL, median, IQR, , IQR, 157.5, 355.4, 0.9
+13,Levetiracetam, Levetiracetam, blood, , , 5, AUC 0-12  oral administration, 213.8, h*µg/mL, median, IQR, , IQR, 154.0, 348.8, 0.9
+14,Levetiracetam, Levetiracetam, blood, , , 14, Cmax  naso- or orogastric tube, 23.8, µg/mL, median, IQR, , IQR, 18.8, 41.3, 0.84
+15,Levetiracetam, Levetiracetam, blood, , , 5, Cmax  oral administration, 26.4, µg/mL, median, IQR, , IQR, 19.3, 34.2, 0.84
+16,Levetiracetam, Levetiracetam, blood, , , 14, Tmax  naso- or orogastric tube, 1.5, h, median, IQR, , IQR, 1.5, 2.5, 0.46
+17,Levetiracetam, Levetiracetam, blood, , , 5, Tmax  oral administration, 2.5, h, median, IQR, , IQR, 1.5, 2.9, 0.46
