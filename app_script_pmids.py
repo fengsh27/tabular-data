@@ -60,7 +60,7 @@ def get_pmid_db():
     db_path = db_path / "pmid_info.db"
     return PMIDDB(db_path)
 
-def prepare_data_by_pmids_csv_file(csv_pmids_fn: str, pmid_db: PMIDDB):
+def prepare_data_by_pmids_csv_file(csv_pmids_fn: str, pmid_db: PMIDDB) -> list[str]:
     csv_path = Path(csv_pmids_fn)
     base_dir = csv_path.parent
     extractor = HtmlTableExtractor()
@@ -68,6 +68,7 @@ def prepare_data_by_pmids_csv_file(csv_pmids_fn: str, pmid_db: PMIDDB):
     skipped = 0
     failed = 0
 
+    pmids = []
     with open(csv_pmids_fn, "r") as fobj:
         reader = csv.reader(fobj)
         for row_idx, row in enumerate(reader, start=1):
@@ -86,6 +87,7 @@ def prepare_data_by_pmids_csv_file(csv_pmids_fn: str, pmid_db: PMIDDB):
                 continue
 
             if pmid_db.select_pmid_info(pmid) is not None:
+                pmids.append(pmid)
                 logger.info(f"PMID {pmid} already exists in DB. Skipping.")
                 skipped += 1
                 continue
@@ -127,6 +129,7 @@ def prepare_data_by_pmids_csv_file(csv_pmids_fn: str, pmid_db: PMIDDB):
                 )
                 if ok:
                     inserted += 1
+                    pmids.append(pmid)
                 else:
                     failed += 1
             except Exception as e:
@@ -135,43 +138,32 @@ def prepare_data_by_pmids_csv_file(csv_pmids_fn: str, pmid_db: PMIDDB):
                 continue
 
     logger.info(f"prepare_data_by_pmids_csv_file completed: inserted={inserted}, skipped={skipped}, failed={failed}")
-    
-    
+    return pmids
+        
  
 def extract_by_csv_file(interval_time=0.0):
     parser = argparse.ArgumentParser()
     parser.add_argument("-f", "--pmids_fn", help="csv file path containing pmids to extract")
     parser.add_argument("-o", "--out_dir", required=True, help="output directory")
-    parser.add_argument("-i", "--pmid", help="PMID(s) to extract. To specify multiple PMIDs, separate them with commas (e.g., 123456,234567,345678).")
+    
     args = vars(parser.parse_args())
     
+    pmids_fn: str | None = args.get("pmids_fn", None)
+    if pmids_fn == None:
+        print("Usage:")
+        print(f"python {__file__} -o OUTPUT_FOLDER [-f PMIDS_FILE] [-i PMID] [-h]")
+        return
+    
+    pmid_db = get_pmid_db()
+    pmids = prepare_data_by_pmids_csv_file(pmids_fn, pmid_db)
     pipeline_llm = get_pipeline_llm()
     agent_llm = get_agent_llm()
-    pmid_db = get_pmid_db()
+    
     mgr = PKPEManager(
         pipeline_llm=pipeline_llm, 
         agent_llm=agent_llm, 
         pmid_db=pmid_db
     )
-
-    pmid: str | None = args.get("pmid", None)
-    pmids_fn: str | None = args.get("pmids_fn", None)
-    if pmid == None and pmids_fn == None:
-        print("Usage:")
-        print(f"python {__file__} -o OUTPUT_FOLDER [-f PMIDS_FILE] [-i PMID] [-h]")
-        return
-    
-    pmids = []
-    if pmid is not None:
-        pmids = pmid.split(',')
-        pmids = [p.strip() for p in pmids]
-    else:
-        with open(pmids_fn, "r") as fobj:
-            reader = csv.reader(fobj)
-            for row in reader:
-                if len(row) == 0:
-                    break
-                pmids.append(row[0].strip())
             
     out_dir = args["out_dir"]
     error_report = []
