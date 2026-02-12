@@ -16,6 +16,12 @@ from extractor.request_geminiai import get_gemini
 from extractor.request_openai import get_openai
 from extractor.request_sonnet import get_sonnet
 from extractor.request_metallama import get_meta_llama
+from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
+from extractor.utils import (
+    convert_html_to_text_no_table,
+    convert_sections_to_full_text,
+    remove_references,
+)
 from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 load_dotenv()
 
@@ -53,19 +59,100 @@ def get_pmid_db():
         raise e
     db_path = db_path / "pmid_info.db"
     return PMIDDB(db_path)
+
+def prepare_data_by_pmids_csv_file(csv_pmids_fn: str, pmid_db: PMIDDB):
+    csv_path = Path(csv_pmids_fn)
+    base_dir = csv_path.parent
+    extractor = HtmlTableExtractor()
+    inserted = 0
+    skipped = 0
+    failed = 0
+
+    with open(csv_pmids_fn, "r") as fobj:
+        reader = csv.reader(fobj)
+        for row_idx, row in enumerate(reader, start=1):
+            if not row or all(not cell.strip() for cell in row):
+                continue
+
+            pmid = row[0].strip() if len(row) > 0 else ""
+            html_path = row[1].strip() if len(row) > 1 else ""
+
+            if row_idx == 1 and pmid.lower() in {"pmid", "pmcid"}:
+                continue
+
+            if not pmid or not html_path:
+                logger.warning(f"Row {row_idx}: missing pmid or html file path. Skipping.")
+                skipped += 1
+                continue
+
+            if pmid_db.select_pmid_info(pmid) is not None:
+                logger.info(f"PMID {pmid} already exists in DB. Skipping.")
+                skipped += 1
+                continue
+
+            html_file = Path(html_path)
+            if not html_file.is_absolute():
+                html_file = (base_dir / html_file).resolve()
+
+            if not html_file.exists():
+                logger.error(f"Row {row_idx}: HTML file not found for PMID {pmid}: {html_file}")
+                failed += 1
+                continue
+
+            try:
+                html_content = html_file.read_text(encoding="utf-8", errors="ignore")
+            except Exception as e:
+                logger.error(f"Row {row_idx}: failed to read {html_file}: {e}")
+                failed += 1
+                continue
+
+            try:
+                tables = extractor.extract_tables(html_content) or []
+                sections = extractor.extract_sections(html_content) or []
+                abstract = extractor.extract_abstract(html_content)
+                title = extractor.extract_title(html_content)
+
+                if sections:
+                    full_text = convert_sections_to_full_text(sections)
+                else:
+                    full_text = remove_references(convert_html_to_text_no_table(html_content))
+
+                ok = pmid_db.insert_pmid_info(
+                    pmid=pmid,
+                    title=title,
+                    abstract=abstract,
+                    full_text=full_text,
+                    tables=tables,
+                    sections=sections,
+                )
+                if ok:
+                    inserted += 1
+                else:
+                    failed += 1
+            except Exception as e:
+                logger.error(f"Row {row_idx}: failed to parse HTML for PMID {pmid}: {e}")
+                failed += 1
+                continue
+
+    logger.info(f"prepare_data_by_pmids_csv_file completed: inserted={inserted}, skipped={skipped}, failed={failed}")
+    
+    
  
 def extract_by_csv_file(interval_time=0.0):
     parser = argparse.ArgumentParser()
     parser.add_argument("-f", "--pmids_fn", help="csv file path containing pmids to extract")
     parser.add_argument("-o", "--out_dir", required=True, help="output directory")
     parser.add_argument("-i", "--pmid", help="PMID(s) to extract. To specify multiple PMIDs, separate them with commas (e.g., 123456,234567,345678).")
-    parser.add_argument("-m", "--model", default='gpt4o', help="model, default is gpt4o. Could be one of 'gpt4o', 'sonnet4', 'metallama4', 'gemini25flash', 'gemini20flash'.")
     args = vars(parser.parse_args())
     
-    model = args.get("model", "gpt4o")
-    llm = get_llm(model)
+    pipeline_llm = get_pipeline_llm()
+    agent_llm = get_agent_llm()
     pmid_db = get_pmid_db()
-    mgr = PKPEManager(llm, pmid_db)
+    mgr = PKPEManager(
+        pipeline_llm=pipeline_llm, 
+        agent_llm=agent_llm, 
+        pmid_db=pmid_db
+    )
 
     pmid: str | None = args.get("pmid", None)
     pmids_fn: str | None = args.get("pmids_fn", None)

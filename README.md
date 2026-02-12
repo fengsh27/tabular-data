@@ -74,6 +74,31 @@ poetry run pytest benchmark/test_pe_benchmark_with_llm.py
 ```
 After benchmark completed, we can find the results in `./benchmark/result/pe/{target}/result.log`
 
+## Streamlit UI
+The Streamlit app provides an interactive workflow to retrieve papers, extract tables, and curate PK/PE/CT outputs.
+
+1. Start the app: `poetry run streamlit run app.py`
+2. In the sidebar, use `Access Article` to load content by PMID/PMCID or paste raw HTML. Only PMC-hosted articles are retrievable by PMID/PMCID.
+3. In `Curation Settings`, select the article and task (PK/PE/CT), then click `Start Curation`.
+4. Optional: use `One Click Curation` to automatically run multiple pipeline types on the selected article.
+5. Results appear in the main pane, including `Article Preview`, `Curation Result`, `Follow-up Chat`, and `Manage Records`.
+
+## Extract Data From Papers (CLI)
+Use the scripts below for batch extraction without the UI. Outputs are written as CSV files per PMID, with error details saved alongside when applicable. Ensure `.env` is configured before running.
+
+1. Multi-pipeline extraction with a single model:
+```
+poetry run python app_script.py -i 29943508 -o ./out -m gpt4o
+```
+2. Batch extraction from a CSV file:
+```
+poetry run python app_script.py -f ./data/pmids.csv -o ./out -m gemini25flash
+```
+3. PK summary only:
+```
+poetry run python app_script_pk_summary.py -i 29943508 -o ./out -m gpt4o
+```
+
 ## bump version
 This package employs bump2version to bump version
 ```
@@ -82,4 +107,4 @@ bump2version {major, minor or patch}
 
 ## Curate data from literature
 
-Comming soom ...
+See `Streamlit UI` for interactive curation and `Extract Data From Papers (CLI)` for batch workflows.
