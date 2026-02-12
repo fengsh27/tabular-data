@@ -1,0 +1,16 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+1,Citalopram,Citalopram,Plasma,Infants,N/A,N/A,Citalopram - Infant dose as % of maternal dose Method B2,%,3.6,24,Hour
+2,Citalopram,Citalopram,Plasma,Infants,N/A,N/A,Citalopram - Infant dose as % of maternal dose Method B2,%,3.0,24,Hour
+3,Citalopram,Citalopram,Plasma,Infants,N/A,N/A,Citalopram - Infant dose as % of maternal dose Method B2,%,2.0,24,Hour
+4,Citalopram,Citalopram,Plasma,Infants,N/A,N/A,Citalopram - Infant dose as % of maternal dose Method B2,%,5.9,24,Hour
+5,Citalopram,Citalopram,Plasma,Infants,N/A,N/A,Citalopram - Infant dose as % of maternal dose Method B2,%,4.4,24,Hour
+6,Citalopram,Citalopram,Plasma,Infants,N/A,N/A,Citalopram - Infant dose as % of maternal dose Method B2,%,4.0,24,Hour
+7,Citalopram,Citalopram,Plasma,Infants,N/A,N/A,Citalopram - Infant dose as % of maternal dose Method B2,%,3.0,24,Hour
+1,Citalopram,Demethylcitalopram,Plasma,Infants,N/A,N/A,Demethylcitalopram - Infant dose as % of maternal dose Method A1,%,1.8,24,Hour
+2,Citalopram,Demethylcitalopram,Plasma,Infants,N/A,N/A,Demethylcitalopram - Infant dose as % of maternal dose Method A1,%,0.6,24,Hour
+3,Citalopram,Demethylcitalopram,Plasma,Infants,N/A,N/A,Demethylcitalopram - Infant dose as % of maternal dose Method A1,%,0.6,24,Hour
+4,Citalopram,Demethylcitalopram,Plasma,Infants,N/A,N/A,Demethylcitalopram - Infant dose as % of maternal dose Method A1,%,1.6,24,Hour
+5,Citalopram,Demethylcitalopram,Plasma,Infants,N/A,N/A,Demethylcitalopram - Infant dose as % of maternal dose Method A1,%,1.9,24,Hour
+6,Citalopram,Demethylcitalopram,Plasma,Infants,N/A,N/A,Demethylcitalopram - Infant dose as % of maternal dose Method A1,%,1.0,24,Hour
+7,Citalopram,Demethylcitalopram,Plasma,Infants,N/A,N/A,Demethylcitalopram - Infant dose as % of maternal dose Method A1,%,1.0,24,Hour
+Mean,Citalopram,Demethylcitalopram,Milk,Maternal,Lactation,N/A,Maximum milk concentration,µg l−1,50,"(23, 77)",Hour

@@ -1,0 +1,147 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter value,Parameter unit,Time value,Time unit
+1,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,dose,40,mg/d,20,weeks gestation
+1,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,plasma concentration,32,ng/mL,20,weeks gestation
+1,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,dose,40,mg/d,30,weeks gestation
+1,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,plasma concentration,40,ng/mL,30,weeks gestation
+1,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,dose,50,mg/d,36,weeks gestation
+1,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,plasma concentration,25,ng/mL,36,weeks gestation
+1,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),delivery,N/A,dose,50,mg/d,delivery,N/A
+1,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),delivery,N/A,plasma concentration,15,ng/mL,delivery,N/A
+1,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),postpartum,N/A,dose,50,mg/d,12,weeks postpartum
+1,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,18,ng/mL,12,weeks postpartum
+1,citalopram,R-citalopram,plasma,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,plasma concentration,62,ng/mL,20,weeks gestation
+1,citalopram,R-citalopram,plasma,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,plasma concentration,64,ng/mL,30,weeks gestation
+1,citalopram,R-citalopram,plasma,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,plasma concentration,41,ng/mL,36,weeks gestation
+1,citalopram,R-citalopram,plasma,maternal (pregnant/postpartum adults),delivery,N/A,plasma concentration,24,ng/mL,delivery,N/A
+1,citalopram,R-citalopram,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,36,ng/mL,12,weeks postpartum
+2,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,dose,20,mg/d,20,weeks gestation
+2,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,plasma concentration,14,ng/mL,20,weeks gestation
+2,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,dose,20,mg/d,30,weeks gestation
+2,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,plasma concentration,14,ng/mL,30,weeks gestation
+2,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,dose,40,mg/d,36,weeks gestation
+2,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,plasma concentration,18,ng/mL,36,weeks gestation
+2,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),postpartum,N/A,dose,40,mg/d,2,weeks postpartum
+2,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,54,ng/mL,2,weeks postpartum
+2,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),postpartum,N/A,dose,40,mg/d,12,weeks postpartum
+2,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,27,ng/mL,12,weeks postpartum
+2,citalopram,R-citalopram,plasma,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,plasma concentration,24,ng/mL,20,weeks gestation
+2,citalopram,R-citalopram,plasma,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,plasma concentration,24,ng/mL,30,weeks gestation
+2,citalopram,R-citalopram,plasma,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,plasma concentration,36,ng/mL,36,weeks gestation
+2,citalopram,R-citalopram,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,101,ng/mL,2,weeks postpartum
+2,citalopram,R-citalopram,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,75,ng/mL,12,weeks postpartum
+3b,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,dose,30,mg/d,20,weeks gestation
+3b,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,plasma concentration,19,ng/mL,20,weeks gestation
+3b,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,dose,30,mg/d,30,weeks gestation
+3b,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,plasma concentration,9,ng/mL,30,weeks gestation
+3b,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,dose,20,mg/d,36,weeks gestation
+3b,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,plasma concentration,5,ng/mL,36,weeks gestation
+3b,citalopram,R-citalopram,plasma,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,plasma concentration,41,ng/mL,20,weeks gestation
+3b,citalopram,R-citalopram,plasma,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,plasma concentration,22,ng/mL,30,weeks gestation
+3b,citalopram,R-citalopram,plasma,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,plasma concentration,14,ng/mL,36,weeks gestation
+4,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,dose,10,mg/d,20,weeks gestation
+4,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,plasma concentration,17,ng/mL,20,weeks gestation
+4,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,dose,10,mg/d,30,weeks gestation
+4,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,plasma concentration,10,ng/mL,30,weeks gestation
+4,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,dose,10,mg/d,36,weeks gestation
+4,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,plasma concentration,13,ng/mL,36,weeks gestation
+4,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),delivery,N/A,dose,10,mg/d,delivery,N/A
+4,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),delivery,N/A,plasma concentration,14,ng/mL,delivery,N/A
+4,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),postpartum,N/A,dose,10,mg/d,2,weeks postpartum
+4,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,24,ng/mL,2,weeks postpartum
+5,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,dose,20,mg/d,20,weeks gestation
+5,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,plasma concentration,58,ng/mL,20,weeks gestation
+5,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,dose,20,mg/d,30,weeks gestation
+5,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,plasma concentration,70,ng/mL,30,weeks gestation
+5,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,dose,20,mg/d,36,weeks gestation
+5,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,plasma concentration,67,ng/mL,36,weeks gestation
+5,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),postpartum,N/A,dose,20,mg/d,2,weeks postpartum
+5,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,95,ng/mL,2,weeks postpartum
+5,citalopram,S-citalopram,N/A,maternal (pregnant/postpartum adults),postpartum,N/A,dose,20,mg/d,12,weeks postpartum
+5,citalopram,S-citalopram,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,63,ng/mL,12,weeks postpartum
+6,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,dose,50,mg/d,30,weeks gestation
+6,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,plasma concentration,27,ng/mL,30,weeks gestation
+6,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),delivery,N/A,dose,50,mg/d,delivery,N/A
+6,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),delivery,N/A,plasma concentration,11,ng/mL,delivery,N/A
+6,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),postpartum,N/A,dose,50,mg/d,4-6,weeks postpartum
+6,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,27,ng/mL,4-6,weeks postpartum
+6,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),postpartum,N/A,dose,50,mg/d,12,weeks postpartum
+6,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,21,ng/mL,12,weeks postpartum
+6,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,plasma concentration,44,ng/mL,30,weeks gestation
+6,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),delivery,N/A,plasma concentration,26,ng/mL,delivery,N/A
+6,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,52,ng/mL,4-6,weeks postpartum
+6,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,50,ng/mL,12,weeks postpartum
+7,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,dose,50,mg/d,20,weeks gestation
+7,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,plasma concentration,10,ng/mL,20,weeks gestation
+7,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,dose,50,mg/d,30,weeks gestation
+7,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,plasma concentration,20,ng/mL,30,weeks gestation
+7,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,dose,100,mg/d,36,weeks gestation
+7,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,plasma concentration,16,ng/mL,36,weeks gestation
+7,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),delivery,N/A,dose,50,mg/d,delivery,N/A
+7,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),delivery,N/A,plasma concentration,7,ng/mL,delivery,N/A
+7,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),postpartum,N/A,dose,50,mg/d,2,weeks postpartum
+7,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,22,ng/mL,2,weeks postpartum
+7,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),postpartum,N/A,dose,50,mg/d,4-6,weeks postpartum
+7,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,15,ng/mL,4-6,weeks postpartum
+7,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,plasma concentration,18,ng/mL,20,weeks gestation
+7,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,plasma concentration,40,ng/mL,30,weeks gestation
+7,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,plasma concentration,66,ng/mL,36,weeks gestation
+7,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),delivery,N/A,plasma concentration,32,ng/mL,delivery,N/A
+7,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,41,ng/mL,2,weeks postpartum
+7,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,29,ng/mL,4-6,weeks postpartum
+8,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,dose,50,mg/d,20,weeks gestation
+8,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,plasma concentration,4,ng/mL,20,weeks gestation
+8,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,dose,75,mg/d,30,weeks gestation
+8,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,plasma concentration,10,ng/mL,30,weeks gestation
+8,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,dose,100,mg/d,36,weeks gestation
+8,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,plasma concentration,39,ng/mL,36,weeks gestation
+8,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),postpartum,N/A,dose,200,mg/d,2,weeks postpartum
+8,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,21,ng/mL,2,weeks postpartum
+8,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),postpartum,N/A,dose,200,mg/d,12,weeks postpartum
+8,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,21,ng/mL,12,weeks postpartum
+8,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,plasma concentration,16,ng/mL,20,weeks gestation
+8,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,plasma concentration,17,ng/mL,30,weeks gestation
+8,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,plasma concentration,74,ng/mL,36,weeks gestation
+8,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,59,ng/mL,2,weeks postpartum
+8,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,29,ng/mL,12,weeks postpartum
+9,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,dose,150,mg/d,30,weeks gestation
+9,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,plasma concentration,17,ng/mL,30,weeks gestation
+9,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,dose,200,mg/d,36,weeks gestation
+9,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,plasma concentration,43,ng/mL,36,weeks gestation
+9,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),delivery,N/A,dose,200,mg/d,delivery,N/A
+9,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),delivery,N/A,plasma concentration,32,ng/mL,delivery,N/A
+9,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),postpartum,N/A,dose,200,mg/d,2,weeks postpartum
+9,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,39,ng/mL,2,weeks postpartum
+9,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,plasma concentration,141,ng/mL,30,weeks gestation
+9,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,plasma concentration,147,ng/mL,36,weeks gestation
+9,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),delivery,N/A,plasma concentration,120,ng/mL,delivery,N/A
+9,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,149,ng/mL,2,weeks postpartum
+10,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,dose,100,mg/d,20,weeks gestation
+10,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,plasma concentration,93,ng/mL,20,weeks gestation
+10,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,dose,100,mg/d,30,weeks gestation
+10,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,plasma concentration,45,ng/mL,30,weeks gestation
+10,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),delivery,N/A,dose,100,mg/d,delivery,N/A
+10,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),delivery,N/A,plasma concentration,28,ng/mL,delivery,N/A
+10,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),postpartum,N/A,dose,100,mg/d,4-6,weeks postpartum
+10,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,62,ng/mL,4-6,weeks postpartum
+10,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,plasma concentration,72,ng/mL,20,weeks gestation
+10,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,plasma concentration,92,ng/mL,30,weeks gestation
+10,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),delivery,N/A,plasma concentration,59,ng/mL,delivery,N/A
+10,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,74,ng/mL,4-6,weeks postpartum
+11,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,dose,50,mg/d,20,weeks gestation
+11,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,plasma concentration,32,ng/mL,20,weeks gestation
+11,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,dose,75,mg/d,30,weeks gestation
+11,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,plasma concentration,18,ng/mL,30,weeks gestation
+11,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,dose,75,mg/d,36,weeks gestation
+11,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,plasma concentration,23,ng/mL,36,weeks gestation
+11,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),delivery,N/A,dose,100,mg/d,delivery,N/A
+11,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),delivery,N/A,plasma concentration,32,ng/mL,delivery,N/A
+11,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),postpartum,N/A,dose,100,mg/d,4-6,weeks postpartum
+11,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,83,ng/mL,4-6,weeks postpartum
+11,sertraline,S-sertraline,N/A,maternal (pregnant/postpartum adults),postpartum,N/A,dose,125,mg/d,12,weeks postpartum
+11,sertraline,S-sertraline,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,99,ng/mL,12,weeks postpartum
+11,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),20 weeks gestation,N/A,plasma concentration,52,ng/mL,20,weeks gestation
+11,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),30 weeks gestation,N/A,plasma concentration,77,ng/mL,30,weeks gestation
+11,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),36 weeks gestation,N/A,plasma concentration,73,ng/mL,36,weeks gestation
+11,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),delivery,N/A,plasma concentration,97,ng/mL,delivery,N/A
+11,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,128,ng/mL,4-6,weeks postpartum
+11,sertraline,N-desmethylsertraline,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,183,ng/mL,12,weeks postpartum

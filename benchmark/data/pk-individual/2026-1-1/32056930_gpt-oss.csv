@@ -1,0 +1,172 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+1,Venlafaxine,Venlafaxine,Maternal serum,Maternal,N/A,N/A,Maternal serum-VEN (ng/mL),ng/mL,5,N/A,N/A
+2,Venlafaxine,Venlafaxine,Maternal serum,Maternal,N/A,N/A,Maternal serum-VEN (ng/mL),ng/mL,15.8,N/A,N/A
+3,Venlafaxine,Venlafaxine,Maternal serum,Maternal,N/A,N/A,Maternal serum-VEN (ng/mL),ng/mL,18.2,N/A,N/A
+4,Venlafaxine,Venlafaxine,Maternal serum,Maternal,N/A,N/A,Maternal serum-VEN (ng/mL),ng/mL,2.0,N/A,N/A
+5,Venlafaxine,Venlafaxine,Maternal serum,Maternal,N/A,N/A,Maternal serum-VEN (ng/mL),ng/mL,86.3,N/A,N/A
+6,Venlafaxine,Venlafaxine,Maternal serum,Maternal,N/A,N/A,Maternal serum-VEN (ng/mL),ng/mL,21,N/A,N/A
+7,Venlafaxine,Venlafaxine,Maternal serum,Maternal,N/A,N/A,Maternal serum-VEN (ng/mL),ng/mL,18.5,N/A,N/A
+8,Venlafaxine,Venlafaxine,Maternal serum,Maternal,N/A,N/A,Maternal serum-VEN (ng/mL),ng/mL,2.0,N/A,N/A
+9,Venlafaxine,Venlafaxine,Maternal serum,Maternal,N/A,N/A,Maternal serum-VEN (ng/mL),ng/mL,201,N/A,N/A
+1,Venlafaxine,ODVEN,Maternal serum,Maternal,N/A,N/A,Maternal serum-ODVEN (ng/mL),ng/mL,85.0,N/A,N/A
+2,Venlafaxine,ODVEN,Maternal serum,Maternal,N/A,N/A,Maternal serum-ODVEN (ng/mL),ng/mL,208.0,N/A,N/A
+3,Venlafaxine,ODVEN,Maternal serum,Maternal,N/A,N/A,Maternal serum-ODVEN (ng/mL),ng/mL,197.0,N/A,N/A
+4,Venlafaxine,ODVEN,Maternal serum,Maternal,N/A,N/A,Maternal serum-ODVEN (ng/mL),ng/mL,31.9,N/A,N/A
+5,Venlafaxine,ODVEN,Maternal serum,Maternal,N/A,N/A,Maternal serum-ODVEN (ng/mL),ng/mL,190.0,N/A,N/A
+6,Venlafaxine,ODVEN,Maternal serum,Maternal,N/A,N/A,Maternal serum-ODVEN (ng/mL),ng/mL,281.0,N/A,N/A
+7,Venlafaxine,ODVEN,Maternal serum,Maternal,N/A,N/A,Maternal serum-ODVEN (ng/mL),ng/mL,271.0,N/A,N/A
+8,Venlafaxine,ODVEN,Maternal serum,Maternal,N/A,N/A,Maternal serum-ODVEN (ng/mL),ng/mL,45.3,N/A,N/A
+9,Venlafaxine,ODVEN,Maternal serum,Maternal,N/A,N/A,Maternal serum-ODVEN (ng/mL),ng/mL,137.0,N/A,N/A
+1,Venlafaxine,AM,Maternal serum,Maternal,N/A,N/A,Maternal serum-AM (ng/mL),ng/mL,90.0,N/A,N/A
+2,Venlafaxine,AM,Maternal serum,Maternal,N/A,N/A,Maternal serum-AM (ng/mL),ng/mL,223.8,N/A,N/A
+3,Venlafaxine,AM,Maternal serum,Maternal,N/A,N/A,Maternal serum-AM (ng/mL),ng/mL,215.2,N/A,N/A
+4,Venlafaxine,AM,Maternal serum,Maternal,N/A,N/A,Maternal serum-AM (ng/mL),ng/mL,33.9,N/A,N/A
+5,Venlafaxine,AM,Maternal serum,Maternal,N/A,N/A,Maternal serum-AM (ng/mL),ng/mL,276.3,N/A,N/A
+6,Venlafaxine,AM,Maternal serum,Maternal,N/A,N/A,Maternal serum-AM (ng/mL),ng/mL,302.0,N/A,N/A
+7,Venlafaxine,AM,Maternal serum,Maternal,N/A,N/A,Maternal serum-AM (ng/mL),ng/mL,289.5,N/A,N/A
+8,Venlafaxine,AM,Maternal serum,Maternal,N/A,N/A,Maternal serum-AM (ng/mL),ng/mL,47.3,N/A,N/A
+9,Venlafaxine,AM,Maternal serum,Maternal,N/A,N/A,Maternal serum-AM (ng/mL),ng/mL,338.0,N/A,N/A
+1,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-VEN (ng/mL),ng/mL,n.a.,N/A,N/A
+2,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-VEN (ng/mL),ng/mL,50.5,N/A,N/A
+3,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-VEN (ng/mL),ng/mL,n.a.,N/A,N/A
+4,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-VEN (ng/mL),ng/mL,n.a.,N/A,N/A
+5,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-VEN (ng/mL),ng/mL,68.5,N/A,N/A
+6,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-VEN (ng/mL),ng/mL,40.3,N/A,N/A
+7,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-VEN (ng/mL),ng/mL,45.6,N/A,N/A
+8,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-VEN (ng/mL),ng/mL,n.a.,N/A,N/A
+9,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-VEN (ng/mL),ng/mL,404,N/A,N/A
+1,Venlafaxine,ODVEN,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-ODVEN (ng/mL),ng/mL,n.a.,N/A,N/A
+2,Venlafaxine,ODVEN,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-ODVEN (ng/mL),ng/mL,1002,N/A,N/A
+3,Venlafaxine,ODVEN,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-ODVEN (ng/mL),ng/mL,n.a.,N/A,N/A
+4,Venlafaxine,ODVEN,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-ODVEN (ng/mL),ng/mL,n.a.,N/A,N/A
+5,Venlafaxine,ODVEN,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-ODVEN (ng/mL),ng/mL,241,N/A,N/A
+6,Venlafaxine,ODVEN,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-ODVEN (ng/mL),ng/mL,922,N/A,N/A
+7,Venlafaxine,ODVEN,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-ODVEN (ng/mL),ng/mL,677,N/A,N/A
+8,Venlafaxine,ODVEN,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-ODVEN (ng/mL),ng/mL,n.a.,N/A,N/A
+9,Venlafaxine,ODVEN,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-ODVEN (ng/mL),ng/mL,385,N/A,N/A
+1,Venlafaxine,AM,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-AM (ng/mL),ng/mL,n.a.,N/A,N/A
+2,Venlafaxine,AM,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-AM (ng/mL),ng/mL,1052.5,N/A,N/A
+3,Venlafaxine,AM,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-AM (ng/mL),ng/mL,n.a.,N/A,N/A
+4,Venlafaxine,AM,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-AM (ng/mL),ng/mL,n.a.,N/A,N/A
+5,Venlafaxine,AM,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-AM (ng/mL),ng/mL,309.5,N/A,N/A
+6,Venlafaxine,AM,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-AM (ng/mL),ng/mL,962.3,N/A,N/A
+7,Venlafaxine,AM,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-AM (ng/mL),ng/mL,722.6,N/A,N/A
+8,Venlafaxine,AM,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-AM (ng/mL),ng/mL,n.a.,N/A,N/A
+9,Venlafaxine,AM,Amniotic fluid,Maternal,N/A,N/A,Amniotic fluid-AM (ng/mL),ng/mL,789,N/A,N/A
+1,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Cord blood-VEN (ng/mL),ng/mL,5,N/A,N/A
+2,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Cord blood-VEN (ng/mL),ng/mL,28,N/A,N/A
+3,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Cord blood-VEN (ng/mL),ng/mL,23.4,N/A,N/A
+4,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Cord blood-VEN (ng/mL),ng/mL,2.0,N/A,N/A
+5,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Cord blood-VEN (ng/mL),ng/mL,84.4,N/A,N/A
+6,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Cord blood-VEN (ng/mL),ng/mL,26.9,N/A,N/A
+7,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Cord blood-VEN (ng/mL),ng/mL,19,N/A,N/A
+8,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Cord blood-VEN (ng/mL),ng/mL,2.0,N/A,N/A
+9,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Cord blood-VEN (ng/mL),ng/mL,157,N/A,N/A
+1,Venlafaxine,ODVEN,Cord blood,Maternal,N/A,N/A,Cord blood-ODVEN (ng/mL),ng/mL,84.0,N/A,N/A
+2,Venlafaxine,ODVEN,Cord blood,Maternal,N/A,N/A,Cord blood-ODVEN (ng/mL),ng/mL,315.0,N/A,N/A
+3,Venlafaxine,ODVEN,Cord blood,Maternal,N/A,N/A,Cord blood-ODVEN (ng/mL),ng/mL,425.0,N/A,N/A
+4,Venlafaxine,ODVEN,Cord blood,Maternal,N/A,N/A,Cord blood-ODVEN (ng/mL),ng/mL,19.1,N/A,N/A
+5,Venlafaxine,ODVEN,Cord blood,Maternal,N/A,N/A,Cord blood-ODVEN (ng/mL),ng/mL,204.0,N/A,N/A
+6,Venlafaxine,ODVEN,Cord blood,Maternal,N/A,N/A,Cord blood-ODVEN (ng/mL),ng/mL,290.0,N/A,N/A
+7,Venlafaxine,ODVEN,Cord blood,Maternal,N/A,N/A,Cord blood-ODVEN (ng/mL),ng/mL,317.0,N/A,N/A
+8,Venlafaxine,ODVEN,Cord blood,Maternal,N/A,N/A,Cord blood-ODVEN (ng/mL),ng/mL,52.5,N/A,N/A
+9,Venlafaxine,ODVEN,Cord blood,Maternal,N/A,N/A,Cord blood-ODVEN (ng/mL),ng/mL,134.0,N/A,N/A
+1,Venlafaxine,AM,Cord blood,Maternal,N/A,N/A,Cord blood-AM,ng/mL,89.0,N/A,N/A
+2,Venlafaxine,AM,Cord blood,Maternal,N/A,N/A,Cord blood-AM,ng/mL,343.0,N/A,N/A
+3,Venlafaxine,AM,Cord blood,Maternal,N/A,N/A,Cord blood-AM,ng/mL,448.4,N/A,N/A
+4,Venlafaxine,AM,Cord blood,Maternal,N/A,N/A,Cord blood-AM,ng/mL,21.1,N/A,N/A
+5,Venlafaxine,AM,Cord blood,Maternal,N/A,N/A,Cord blood-AM,ng/mL,288.4,N/A,N/A
+6,Venlafaxine,AM,Cord blood,Maternal,N/A,N/A,Cord blood-AM,ng/mL,316.9,N/A,N/A
+7,Venlafaxine,AM,Cord blood,Maternal,N/A,N/A,Cord blood-AM,ng/mL,336.0,N/A,N/A
+8,Venlafaxine,AM,Cord blood,Maternal,N/A,N/A,Cord blood-AM,ng/mL,54.5,N/A,N/A
+9,Venlafaxine,AM,Cord blood,Maternal,N/A,N/A,Cord blood-AM,ng/mL,291.0,N/A,N/A
+1,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Penetration ratio-VEN CB/MS,ratio,1.0,N/A,N/A
+2,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Penetration ratio-VEN CB/MS,ratio,1.77,N/A,N/A
+3,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Penetration ratio-VEN CB/MS,ratio,1.29,N/A,N/A
+4,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Penetration ratio-VEN CB/MS,ratio,1.0,N/A,N/A
+5,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Penetration ratio-VEN CB/MS,ratio,0.98,N/A,N/A
+6,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Penetration ratio-VEN CB/MS,ratio,1.28,N/A,N/A
+7,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Penetration ratio-VEN CB/MS,ratio,1.03,N/A,N/A
+8,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Penetration ratio-VEN CB/MS,ratio,1.0,N/A,N/A
+9,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Penetration ratio-VEN CB/MS,ratio,0.78,N/A,N/A
+1,Venlafaxine,ODVEN,Cord blood,Maternal,N/A,N/A,Penetration ratio-ODVEN CB/MS,ratio,0.99,N/A,N/A
+2,Venlafaxine,ODVEN,Cord blood,Maternal,N/A,N/A,Penetration ratio-ODVEN CB/MS,ratio,1.51,N/A,N/A
+3,Venlafaxine,ODVEN,Cord blood,Maternal,N/A,N/A,Penetration ratio-ODVEN CB/MS,ratio,2.16,N/A,N/A
+4,Venlafaxine,ODVEN,Cord blood,Maternal,N/A,N/A,Penetration ratio-ODVEN CB/MS,ratio,0.6000000000000001,N/A,N/A
+5,Venlafaxine,ODVEN,Cord blood,Maternal,N/A,N/A,Penetration ratio-ODVEN CB/MS,ratio,1.07,N/A,N/A
+6,Venlafaxine,ODVEN,Cord blood,Maternal,N/A,N/A,Penetration ratio-ODVEN CB/MS,ratio,1.03,N/A,N/A
+7,Venlafaxine,ODVEN,Cord blood,Maternal,N/A,N/A,Penetration ratio-ODVEN CB/MS,ratio,1.17,N/A,N/A
+8,Venlafaxine,ODVEN,Cord blood,Maternal,N/A,N/A,Penetration ratio-ODVEN CB/MS,ratio,1.16,N/A,N/A
+9,Venlafaxine,ODVEN,Cord blood,Maternal,N/A,N/A,Penetration ratio-ODVEN CB/MS,ratio,0.98,N/A,N/A
+1,Venlafaxine,AM,Cord blood,Maternal,N/A,N/A,Penetration ratio-AM CB/MS,ratio,0.99,N/A,N/A
+2,Venlafaxine,AM,Cord blood,Maternal,N/A,N/A,Penetration ratio-AM CB/MS,ratio,1.53,N/A,N/A
+3,Venlafaxine,AM,Cord blood,Maternal,N/A,N/A,Penetration ratio-AM CB/MS,ratio,2.08,N/A,N/A
+4,Venlafaxine,AM,Cord blood,Maternal,N/A,N/A,Penetration ratio-AM CB/MS,ratio,0.62,N/A,N/A
+5,Venlafaxine,AM,Cord blood,Maternal,N/A,N/A,Penetration ratio-AM CB/MS,ratio,1.04,N/A,N/A
+6,Venlafaxine,AM,Cord blood,Maternal,N/A,N/A,Penetration ratio-AM CB/MS,ratio,1.05,N/A,N/A
+7,Venlafaxine,AM,Cord blood,Maternal,N/A,N/A,Penetration ratio-AM CB/MS,ratio,1.16,N/A,N/A
+8,Venlafaxine,AM,Cord blood,Maternal,N/A,N/A,Penetration ratio-AM CB/MS,ratio,1.15,N/A,N/A
+9,Venlafaxine,AM,Cord blood,Maternal,N/A,N/A,Penetration ratio-AM CB/MS,ratio,0.86,N/A,N/A
+1,Venlafaxine,AM,Amniotic fluid,Maternal,N/A,N/A,Penetration ratio-AM AF/MS,ratio,-,N/A,N/A
+2,Venlafaxine,AM,Amniotic fluid,Maternal,N/A,N/A,Penetration ratio-AM AF/MS,ratio,4.70,N/A,N/A
+3,Venlafaxine,AM,Amniotic fluid,Maternal,N/A,N/A,Penetration ratio-AM AF/MS,ratio,-,N/A,N/A
+4,Venlafaxine,AM,Amniotic fluid,Maternal,N/A,N/A,Penetration ratio-AM AF/MS,ratio,-,N/A,N/A
+5,Venlafaxine,AM,Amniotic fluid,Maternal,N/A,N/A,Penetration ratio-AM AF/MS,ratio,1.12,N/A,N/A
+6,Venlafaxine,AM,Amniotic fluid,Maternal,N/A,N/A,Penetration ratio-AM AF/MS,ratio,3.19,N/A,N/A
+7,Venlafaxine,AM,Amniotic fluid,Maternal,N/A,N/A,Penetration ratio-AM AF/MS,ratio,2.50,N/A,N/A
+8,Venlafaxine,AM,Amniotic fluid,Maternal,N/A,N/A,Penetration ratio-AM AF/MS,ratio,-,N/A,N/A
+9,Venlafaxine,AM,Amniotic fluid,Maternal,N/A,N/A,Penetration ratio-AM AF/MS,ratio,2.33,N/A,N/A
+2,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio VEN AF/MS,ratio,3.20,N/A,N/A
+5,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio VEN AF/MS,ratio,0.79,N/A,N/A
+6,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio VEN AF/MS,ratio,1.92,N/A,N/A
+7,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio VEN AF/MS,ratio,2.46,N/A,N/A
+9,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio VEN AF/MS,ratio,2.01,N/A,N/A
+2,Venlafaxine,O-desmethylvenlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio ODVEN AF/MS,ratio,4.82,N/A,N/A
+5,Venlafaxine,O-desmethylvenlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio ODVEN AF/MS,ratio,1.27,N/A,N/A
+6,Venlafaxine,O-desmethylvenlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio ODVEN AF/MS,ratio,3.28,N/A,N/A
+7,Venlafaxine,O-desmethylvenlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio ODVEN AF/MS,ratio,2.50,N/A,N/A
+9,Venlafaxine,O-desmethylvenlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio ODVEN AF/MS,ratio,2.81,N/A,N/A
+2,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio VEN + ODVEN AF/MS,ratio,4.70,N/A,N/A
+5,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio VEN + ODVEN AF/MS,ratio,1.12,N/A,N/A
+6,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio VEN + ODVEN AF/MS,ratio,3.19,N/A,N/A
+7,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio VEN + ODVEN AF/MS,ratio,2.50,N/A,N/A
+9,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio VEN + ODVEN AF/MS,ratio,2.33,N/A,N/A
+1,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Ratio VEN CB/MS,ratio,1.0,N/A,N/A
+2,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Ratio VEN CB/MS,ratio,1.77,N/A,N/A
+3,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Ratio VEN CB/MS,ratio,1.29,N/A,N/A
+4,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Ratio VEN CB/MS,ratio,1.0,N/A,N/A
+5,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Ratio VEN CB/MS,ratio,0.98,N/A,N/A
+6,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Ratio VEN CB/MS,ratio,1.28,N/A,N/A
+7,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Ratio VEN CB/MS,ratio,1.03,N/A,N/A
+8,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Ratio VEN CB/MS,ratio,1.0,N/A,N/A
+9,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Ratio VEN CB/MS,ratio,0.78,N/A,N/A
+1,Venlafaxine,O-desmethylvenlafaxine,Cord blood,Maternal,N/A,N/A,Ratio ODVEN CB/MS,ratio,0.99,N/A,N/A
+2,Venlafaxine,O-desmethylvenlafaxine,Cord blood,Maternal,N/A,N/A,Ratio ODVEN CB/MS,ratio,1.51,N/A,N/A
+3,Venlafaxine,O-desmethylvenlafaxine,Cord blood,Maternal,N/A,N/A,Ratio ODVEN CB/MS,ratio,2.16,N/A,N/A
+4,Venlafaxine,O-desmethylvenlafaxine,Cord blood,Maternal,N/A,N/A,Ratio ODVEN CB/MS,ratio,0.6000000000000001,N/A,N/A
+5,Venlafaxine,O-desmethylvenlafaxine,Cord blood,Maternal,N/A,N/A,Ratio ODVEN CB/MS,ratio,1.07,N/A,N/A
+6,Venlafaxine,O-desmethylvenlafaxine,Cord blood,Maternal,N/A,N/A,Ratio ODVEN CB/MS,ratio,1.03,N/A,N/A
+7,Venlafaxine,O-desmethylvenlafaxine,Cord blood,Maternal,N/A,N/A,Ratio ODVEN CB/MS,ratio,1.17,N/A,N/A
+8,Venlafaxine,O-desmethylvenlafaxine,Cord blood,Maternal,N/A,N/A,Ratio ODVEN CB/MS,ratio,1.16,N/A,N/A
+9,Venlafaxine,O-desmethylvenlafaxine,Cord blood,Maternal,N/A,N/A,Ratio ODVEN CB/MS,ratio,0.98,N/A,N/A
+1,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Ratio VEN + ODVEN CB/MS,ratio,0.99,N/A,N/A
+2,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Ratio VEN + ODVEN CB/MS,ratio,1.53,N/A,N/A
+3,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Ratio VEN + ODVEN CB/MS,ratio,2.08,N/A,N/A
+4,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Ratio VEN + ODVEN CB/MS,ratio,0.62,N/A,N/A
+5,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Ratio VEN + ODVEN CB/MS,ratio,1.04,N/A,N/A
+6,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Ratio VEN + ODVEN CB/MS,ratio,1.05,N/A,N/A
+7,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Ratio VEN + ODVEN CB/MS,ratio,1.16,N/A,N/A
+8,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Ratio VEN + ODVEN CB/MS,ratio,1.15,N/A,N/A
+9,Venlafaxine,Venlafaxine,Cord blood,Maternal,N/A,N/A,Ratio VEN + ODVEN CB/MS,ratio,0.86,N/A,N/A
+1,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio VEN AF/MS,ratio,,N/A,N/A
+3,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio VEN AF/MS,ratio,,N/A,N/A
+4,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio VEN AF/MS,ratio,,N/A,N/A
+8,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio VEN AF/MS,ratio,,N/A,N/A
+1,Venlafaxine,O-desmethylvenlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio ODVEN AF/MS,ratio,,N/A,N/A
+3,Venlafaxine,O-desmethylvenlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio ODVEN AF/MS,ratio,,N/A,N/A
+4,Venlafaxine,O-desmethylvenlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio ODVEN AF/MS,ratio,,N/A,N/A
+8,Venlafaxine,O-desmethylvenlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio ODVEN AF/MS,ratio,,N/A,N/A
+1,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio VEN+ODVEN AF/MS,ratio,,N/A,N/A
+3,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio VEN+ODVEN AF/MS,ratio,,N/A,N/A
+4,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio VEN+ODVEN AF/MS,ratio,,N/A,N/A
+8,Venlafaxine,Venlafaxine,Amniotic fluid,Maternal,N/A,N/A,Ratio VEN+ODVEN AF/MS,ratio,,N/A,N/A

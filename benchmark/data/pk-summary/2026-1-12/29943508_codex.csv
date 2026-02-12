@@ -1,0 +1,7 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation value,Variation type,Interval type,Lower limit,High limit,P value
+Fentanyl,Fentanyl,umbilical vein serum,Adults (nulliparous women in labor),labor/delivery,16,"Mean serum fentanyl concentration, umbilical vein (adrenaline group)",0.162,nmol/L,mean,0.090,SD,,,,0.67
+Fentanyl,Fentanyl,umbilical vein serum,Adults (nulliparous women in labor),labor/delivery,20,"Mean serum fentanyl concentration, umbilical vein (control group)",0.151,nmol/L,mean,0.070,SD,,,,0.67
+Fentanyl,Fentanyl,maternal serum,Adults (nulliparous women in labor),labor/delivery,16,"Maternal serum fentanyl concentration at birth (adrenaline group)",0.268,nmol/L,median,,,"IQR (25th-75th percentile)",0.193,0.493,0.66
+Fentanyl,Fentanyl,maternal serum,Adults (nulliparous women in labor),labor/delivery,19,"Maternal serum fentanyl concentration at birth (control group)",0.291,nmol/L,median,,,"IQR (25th-75th percentile)",0.212,0.502,0.66
+Fentanyl,Fentanyl,maternal serum,Adults (nulliparous women in labor),labor/delivery,18,"AUC 0-120 min for fentanyl in maternal serum (adrenaline group)",0.428,nmol*h/L,mean,0.162,SD,,,,0.015
+Fentanyl,Fentanyl,maternal serum,Adults (nulliparous women in labor),labor/delivery,15,"AUC 0-120 min for fentanyl in maternal serum (control group)",0.590,nmol*h/L,mean,0.197,SD,,,,0.015

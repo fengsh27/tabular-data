@@ -1,0 +1,100 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+1,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Unnamed: 1_level_0-tmax (h),h,1.75,1.75,Hour
+2,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Unnamed: 1_level_0-tmax (h),h,1.67,1.67,Hour
+3,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Unnamed: 1_level_0-tmax (h),h,2.25,2.25,Hour
+4,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Unnamed: 1_level_0-tmax (h),h,2.25,2.25,Hour
+5,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Unnamed: 1_level_0-tmax (h),h,2.28,2.28,Hour
+6,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Unnamed: 1_level_0-tmax (h),h,5.67,5.67,Hour
+1,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Venlafaxine-Cmax1(µg l−1),µg l−1,2020,1.75,Hour
+2,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Venlafaxine-Cmax1(µg l−1),µg l−1,1096,1.67,Hour
+3,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Venlafaxine-Cmax1(µg l−1),µg l−1,712,2.25,Hour
+4,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Venlafaxine-Cmax1(µg l−1),µg l−1,1230,2.25,Hour
+5,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Venlafaxine-Cmax1(µg l−1),µg l−1,1429,2.28,Hour
+6,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Venlafaxine-Cmax1(µg l−1),µg l−1,477,5.67,Hour
+1,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Caverage2,µg l−1,1187,N/A,N/A
+2,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Caverage2,µg l−1,704,N/A,N/A
+3,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Caverage2,µg l−1,388,N/A,N/A
+4,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Caverage2,µg l−1,597,N/A,N/A
+5,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Caverage2,µg l−1,597,N/A,N/A
+6,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Caverage2,µg l−1,354,N/A,N/A
+1,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Median-AUC,µg·h·l−1,2.40,1.75,Hour
+2,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Median-AUC,µg·h·l−1,2.05,1.67,Hour
+3,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Median-AUC,µg·h·l−1,2.34,2.25,Hour
+4,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Median-AUC,µg·h·l−1,2.04,2.25,Hour
+5,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Median-AUC,µg·h·l−1,2.95,2.28,Hour
+6,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Median-AUC,µg·h·l−1,3.22,5.67,Hour
+1,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,tmax (h),h,1.75,1.75,Hour
+2,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,tmax (h),h,3.67,3.67,Hour
+3,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,tmax (h),h,2.25,2.25,Hour
+4,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,tmax (h),h,2.25,2.25,Hour
+5,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,tmax (h),h,4.20,4.20,Hour
+6,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,tmax (h),h,7.67,7.67,Hour
+1,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,O-Desmethylvenlafixine-Cmax1(µg l−1),µg l−1,335,1.75,Hour
+2,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,O-Desmethylvenlafixine-Cmax1(µg l−1),µg l−1,561,3.67,Hour
+3,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,O-Desmethylvenlafixine-Cmax1(µg l−1),µg l−1,1120,2.25,Hour
+4,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,O-Desmethylvenlafixine-Cmax1(µg l−1),µg l−1,1010,2.25,Hour
+5,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,O-Desmethylvenlafixine-Cmax1(µg l−1),µg l−1,1336,4.20,Hour
+6,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,O-Desmethylvenlafixine-Cmax1(µg l−1),µg l−1,413,7.67,Hour
+1,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,Unnamed: 7_level_0-Caverage2(µg l−1),µg l−1,277,N/A,N/A
+2,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,Unnamed: 7_level_0-Caverage2(µg l−1),µg l−1,477,N/A,N/A
+3,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,Unnamed: 7_level_0-Caverage2(µg l−1),µg l−1,925,N/A,N/A
+4,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,Unnamed: 7_level_0-Caverage2(µg l−1),µg l−1,651,N/A,N/A
+5,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,Unnamed: 7_level_0-Caverage2(µg l−1),µg l−1,815,N/A,N/A
+6,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,Unnamed: 7_level_0-Caverage2(µg l−1),µg l−1,502,N/A,N/A
+1,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,Unnamed: 8_level_0-M/PAUC,ratio,2.61,N/A,N/A
+2,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,Unnamed: 8_level_0-M/PAUC,ratio,2.26,N/A,N/A
+3,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,Unnamed: 8_level_0-M/PAUC,ratio,2.75,N/A,N/A
+4,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,Unnamed: 8_level_0-M/PAUC,ratio,2.5,N/A,N/A
+5,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,Unnamed: 8_level_0-M/PAUC,ratio,3.08,N/A,N/A
+6,Venlafaxine,O-Desmethylvenlafaxine,Human milk,N/A,N/A,N/A,Unnamed: 8_level_0-M/PAUC,ratio,3.24,N/A,N/A
+1,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Venlafaxine-Infant dose as percentage of-maternal dose1(V equivalents),%,5.9,N/A,N/A
+2a2,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Venlafaxine-Infant dose as percentage of-maternal dose1(V equivalents),%,3.8,N/A,N/A
+2b2,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Venlafaxine-Infant dose as percentage of-maternal dose1(V equivalents),%,3.8,N/A,N/A
+3,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Venlafaxine-Infant dose as percentage of-maternal dose1(V equivalents),%,2.1,N/A,N/A
+4,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Venlafaxine-Infant dose as percentage of-maternal dose1(V equivalents),%,2.7,N/A,N/A
+5,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Venlafaxine-Infant dose as percentage of-maternal dose1(V equivalents),%,2.5,N/A,N/A
+6,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Venlafaxine-Infant dose as percentage of-maternal dose1(V equivalents),%,2.1,N/A,N/A
+1,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 2_level_0-Unnamed: 2_level_1-Infant plasma concentration (µg l−1),µg l−1,5,N/A,N/A
+2a2,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 2_level_0-Unnamed: 2_level_1-Infant plasma concentration (µg l−1),µg l−1,< 4,N/A,N/A
+2b2,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 2_level_0-Unnamed: 2_level_1-Infant plasma concentration (µg l−1),µg l−1,< 4,N/A,N/A
+3,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 2_level_0-Unnamed: 2_level_1-Infant plasma concentration (µg l−1),µg l−1,< 3,N/A,N/A
+4,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 2_level_0-Unnamed: 2_level_1-Infant plasma concentration (µg l−1),µg l−1,< 2,N/A,N/A
+5,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 2_level_0-Unnamed: 2_level_1-Infant plasma concentration (µg l−1),µg l−1,ND3,N/A,N/A
+6,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 2_level_0-Unnamed: 2_level_1-Infant plasma concentration (µg l−1),µg l−1,ND3,N/A,N/A
+1,Venlafaxine,O-Desmethylvenlafaxine,Plasma,Infant,N/A,N/A,O-Desmethylvenlafixine-Infant dose as percentage of-maternal dose1(V equivalents),%,1.5,N/A,N/A
+2a2,Venlafaxine,O-Desmethylvenlafaxine,Plasma,Infant,N/A,N/A,O-Desmethylvenlafixine-Infant dose as percentage of-maternal dose1(V equivalents),%,2.7,N/A,N/A
+2b2,Venlafaxine,O-Desmethylvenlafaxine,Plasma,Infant,N/A,N/A,O-Desmethylvenlafixine-Infant dose as percentage of-maternal dose1(V equivalents),%,2.7,N/A,N/A
+3,Venlafaxine,O-Desmethylvenlafaxine,Plasma,Infant,N/A,N/A,O-Desmethylvenlafixine-Infant dose as percentage of-maternal dose1(V equivalents),%,5.2,N/A,N/A
+4,Venlafaxine,O-Desmethylvenlafaxine,Plasma,Infant,N/A,N/A,O-Desmethylvenlafixine-Infant dose as percentage of-maternal dose1(V equivalents),%,3.1,N/A,N/A
+5,Venlafaxine,O-Desmethylvenlafaxine,Plasma,Infant,N/A,N/A,O-Desmethylvenlafixine-Infant dose as percentage of-maternal dose1(V equivalents),%,3.5,N/A,N/A
+6,Venlafaxine,O-Desmethylvenlafaxine,Plasma,Infant,N/A,N/A,O-Desmethylvenlafixine-Infant dose as percentage of-maternal dose1(V equivalents),%,3.1,N/A,N/A
+1,Venlafaxine,O-Desmethylvenlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 4_level_0-Unnamed: 4_level_1-Infant plasma concentration (µg l−1),µg l−1,< 2.5,N/A,N/A
+2a2,Venlafaxine,O-Desmethylvenlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 4_level_0-Unnamed: 4_level_1-Infant plasma concentration (µg l−1),µg l−1,< 3,N/A,N/A
+2b2,Venlafaxine,O-Desmethylvenlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 4_level_0-Unnamed: 4_level_1-Infant plasma concentration (µg l−1),µg l−1,< 3,N/A,N/A
+3,Venlafaxine,O-Desmethylvenlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 4_level_0-Unnamed: 4_level_1-Infant plasma concentration (µg l−1),µg l−1,6.0,N/A,N/A
+4,Venlafaxine,O-Desmethylvenlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 4_level_0-Unnamed: 4_level_1-Infant plasma concentration (µg l−1),µg l−1,38.0,N/A,N/A
+5,Venlafaxine,O-Desmethylvenlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 4_level_0-Unnamed: 4_level_1-Infant plasma concentration (µg l−1),µg l−1,20.0,N/A,N/A
+6,Venlafaxine,O-Desmethylvenlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 4_level_0-Unnamed: 4_level_1-Infant plasma concentration (µg l−1),µg l−1,3.0,N/A,N/A
+1,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 5_level_0-Unnamed: 5_level_1-Total dose V equivalents (%),%,7.4,N/A,N/A
+2a2,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 5_level_0-Unnamed: 5_level_1-Total dose V equivalents (%),%,6.5,N/A,N/A
+2b2,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 5_level_0-Unnamed: 5_level_1-Total dose V equivalents (%),%,6.5,N/A,N/A
+3,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 5_level_0-Unnamed: 5_level_1-Total dose V equivalents (%),%,7.3,N/A,N/A
+4,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 5_level_0-Unnamed: 5_level_1-Total dose V equivalents (%),%,5.8,N/A,N/A
+5,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 5_level_0-Unnamed: 5_level_1-Total dose V equivalents (%),%,6.0,N/A,N/A
+6,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 5_level_0-Unnamed: 5_level_1-Total dose V equivalents (%),%,5.2,N/A,N/A
+Mean,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Unnamed: 1_level_0-tmax (h),h,2.253,2.253,Hour
+Mean,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Venlafaxine-Cmax1(µg l−1),µg l−1,1161,N/A,N/A
+Mean,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Caverage2,µg l−1,638,N/A,N/A
+Mean,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Median-AUC,µg·h·l−1,2.50,N/A,N/A
+Mean,Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Unnamed: 8_level_0-M/PAUC,ratio,2.74,N/A,N/A
+(95% CI),Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Unnamed: 1_level_0-tmax (h),h,"(1.75, 2.28)",N/A,N/A
+(95% CI),Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Venlafaxine-Cmax1(µg l−1),µg l−1,"(588, 1734)",N/A,N/A
+(95% CI),Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Caverage2,µg l−1,"(322, 954)",N/A,N/A
+(95% CI),Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Median-AUC,µg·h·l−1,"(2.0, 3.0)",N/A,N/A
+(95% CI),Venlafaxine,Venlafaxine,Human milk,N/A,N/A,N/A,Unnamed: 8_level_0-M/PAUC,ratio,"(2.36, 3.12)",N/A,N/A
+Mean,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Venlafaxine-Infant dose as percentage of-maternal dose1(V equivalents),%,3.2,N/A,N/A
+Mean,O-Desmethylvenlafaxine,O-Desmethylvenlafaxine,Plasma,Infant,N/A,N/A,O-Desmethylvenlafaxine-Infant dose as percentage of-maternal dose1(V equivalents),%,3.2,N/A,N/A
+Mean,Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 5_level_0-Unnamed: 5_level_1-Total dose V equivalents (%),%,6.4,N/A,N/A
+(95% CI),Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Venlafaxine-Infant dose as percentage of-maternal dose1(V equivalents),%,"(1.7, 4.7)",N/A,N/A
+(95% CI),O-Desmethylvenlafaxine,O-Desmethylvenlafaxine,Plasma,Infant,N/A,N/A,O-Desmethylvenlafaxine-Infant dose as percentage of-maternal dose1(V equivalents),%,"(1.9, 4.9)",N/A,N/A
+(95% CI),Venlafaxine,Venlafaxine,Plasma,Infant,N/A,N/A,Unnamed: 5_level_0-Unnamed: 5_level_1-Total dose V equivalents (%),%,"(5.5, 7.3)",N/A,N/A

@@ -1,0 +1,91 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter value,Parameter unit,Time value,Time unit
+1,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,tmax,2.6,h,N/A,N/A
+1,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,maximum milk concentration,210,ug/L,2.6,h
+1,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,average milk concentration,107,ug/L,N/A,N/A
+1,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,1.4,ratio,N/A,N/A
+1,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,tmax,11.1,h,N/A,N/A
+1,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,maximum milk concentration,67,ug/L,11.1,h
+1,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,average milk concentration,48,ug/L,N/A,N/A
+1,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,1.4,ratio,N/A,N/A
+2,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,tmax,3.8,h,N/A,N/A
+2,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,maximum milk concentration,103,ug/L,3.8,h
+2,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,average milk concentration,56,ug/L,N/A,N/A
+2,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,0.9,ratio,N/A,N/A
+2,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,tmax,3.8,h,N/A,N/A
+2,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,maximum milk concentration,32,ug/L,3.8,h
+2,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,average milk concentration,23,ug/L,N/A,N/A
+2,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,1.0,ratio,N/A,N/A
+3,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,tmax,3.8,h,N/A,N/A
+3,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,maximum milk concentration,82,ug/L,3.8,h
+3,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,average milk concentration,53,ug/L,N/A,N/A
+3,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,1.4,ratio,N/A,N/A
+3,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,tmax,2.9,h,N/A,N/A
+3,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,maximum milk concentration,27,ug/L,2.9,h
+3,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,average milk concentration,23,ug/L,N/A,N/A
+3,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,1.1,ratio,N/A,N/A
+4,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,tmax,7.8,h,N/A,N/A
+4,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,maximum milk concentration,186,ug/L,7.8,h
+4,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,average milk concentration,141,ug/L,N/A,N/A
+4,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,2.0,ratio,N/A,N/A
+4,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,tmax,3.8,h,N/A,N/A
+4,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,maximum milk concentration,48,ug/L,3.8,h
+4,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,average milk concentration,34,ug/L,N/A,N/A
+4,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,1.5,ratio,N/A,N/A
+5,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,tmax,3.5,h,N/A,N/A
+5,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,maximum milk concentration,232,ug/L,3.5,h
+5,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,average milk concentration,168,ug/L,N/A,N/A
+5,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,1.9,ratio,N/A,N/A
+5,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,tmax,10.8,h,N/A,N/A
+5,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,maximum milk concentration,109,ug/L,10.8,h
+5,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,average milk concentration,83,ug/L,N/A,N/A
+5,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,1.9,ratio,N/A,N/A
+6,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,tmax,3.8,h,N/A,N/A
+6,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,maximum milk concentration,119,ug/L,3.8,h
+6,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,average milk concentration,83,ug/L,N/A,N/A
+6,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,2.6,ratio,N/A,N/A
+6,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,tmax,1.8,h,N/A,N/A
+6,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,maximum milk concentration,35,ug/L,1.8,h
+6,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,average milk concentration,29,ug/L,N/A,N/A
+6,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,2.1,ratio,N/A,N/A
+7,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,tmax,1.9,h,N/A,N/A
+7,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,maximum milk concentration,147,ug/L,1.9,h
+7,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,average milk concentration,68,ug/L,N/A,N/A
+7,citalopram,citalopram,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,2.3,ratio,N/A,N/A
+7,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,tmax,5.7,h,N/A,N/A
+7,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,maximum milk concentration,34,ug/L,5.7,h
+7,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,average milk concentration,15,ug/L,N/A,N/A
+7,citalopram,demethylcitalopram,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,3.3,ratio,N/A,N/A
+Infant 1,citalopram,citalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method A,3.9,%,N/A,N/A
+Infant 1,citalopram,citalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method B,3.6,%,N/A,N/A
+Infant 1,citalopram,citalopram,infant plasma,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant plasma concentration,2,ug/L,N/A,N/A
+Infant 1,citalopram,demethylcitalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method A,1.8,%,N/A,N/A
+Infant 1,citalopram,demethylcitalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method B,1.7,%,N/A,N/A
+Infant 1,citalopram,demethylcitalopram,infant plasma,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant plasma concentration,ND3,ug/L,N/A,N/A
+Infant 2,citalopram,citalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method A,1.6,%,N/A,N/A
+Infant 2,citalopram,citalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method B,3.0,%,N/A,N/A
+Infant 2,citalopram,demethylcitalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method A,0.6,%,N/A,N/A
+Infant 2,citalopram,demethylcitalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method B,1.2,%,N/A,N/A
+Infant 3,citalopram,citalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method A,1.3,%,N/A,N/A
+Infant 3,citalopram,citalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method B,2.0,%,N/A,N/A
+Infant 3,citalopram,demethylcitalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method A,0.6,%,N/A,N/A
+Infant 3,citalopram,demethylcitalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method B,0.9,%,N/A,N/A
+Infant 4,citalopram,citalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method A,5.6,%,N/A,N/A
+Infant 4,citalopram,citalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method B,5.9,%,N/A,N/A
+Infant 4,citalopram,citalopram,infant plasma,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant plasma concentration,2.3,ug/L,N/A,N/A
+Infant 4,citalopram,demethylcitalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method A,1.6,%,N/A,N/A
+Infant 4,citalopram,demethylcitalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method B,1.5,%,N/A,N/A
+Infant 4,citalopram,demethylcitalopram,infant plasma,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant plasma concentration,2.2,ug/L,N/A,N/A
+Infant 5,citalopram,citalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method A,3.9,%,N/A,N/A
+Infant 5,citalopram,citalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method B,4.4,%,N/A,N/A
+Infant 5,citalopram,citalopram,infant plasma,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant plasma concentration,2.3,ug/L,N/A,N/A
+Infant 5,citalopram,demethylcitalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method A,1.9,%,N/A,N/A
+Infant 5,citalopram,demethylcitalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method B,2.3,%,N/A,N/A
+Infant 5,citalopram,demethylcitalopram,infant plasma,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant plasma concentration,2.2,ug/L,N/A,N/A
+Infant 6,citalopram,citalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method A,2.7,%,N/A,N/A
+Infant 6,citalopram,citalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method B,4.0,%,N/A,N/A
+Infant 6,citalopram,demethylcitalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method A,1.0,%,N/A,N/A
+Infant 6,citalopram,demethylcitalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method B,1.5,%,N/A,N/A
+Infant 7,citalopram,citalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method A,3.6,%,N/A,N/A
+Infant 7,citalopram,citalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method B,3.0,%,N/A,N/A
+Infant 7,citalopram,demethylcitalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method A,1.0,%,N/A,N/A
+Infant 7,citalopram,demethylcitalopram,breast milk,infant (breastfed),postpartum,mean 4.1 months (range 1.9-6.6 months),infant dose (% maternal dose) method B,0.7,%,N/A,N/A
