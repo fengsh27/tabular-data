@@ -174,3 +174,5 @@ temp.py
 data/*.csv
 data/databases/
 system_tests/data/*.db
+system_tests/data/*.csv
+system_tests/data/*.md

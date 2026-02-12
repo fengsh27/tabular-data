@@ -26,3 +26,4 @@ class LLModelType(Enum):
     UNKNOWN = "unkown"
     GPTOSS="gpt-oss"
     QWEN3="qwen3"
+    CODEX="codex"
