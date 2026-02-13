@@ -41,7 +41,7 @@ class RowCategorizeStep(PEStudyOutCommonAgentStep):
         total_token_usage = {**DEFAULT_TOKEN_USAGE}
         return_dict = {}
         for key in row_headers_keys:
-            agent = PEStudyOutCommonAgent(llm=llm)
+            agent = self.get_agent(llm)
             md_table = state["md_table"]
             schema = self.get_schema()
             system_prompt = get_row_categorize_prompt(
@@ -50,7 +50,7 @@ class RowCategorizeStep(PEStudyOutCommonAgentStep):
             )
             instruction_prompt = self.get_instruction_prompt(state)
 
-            res, processed_res, token_usage = agent.go(
+            res, processed_res, token_usage, _ = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=schema,

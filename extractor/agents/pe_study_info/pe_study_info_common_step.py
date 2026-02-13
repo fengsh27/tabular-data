@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import Any, Callable, Optional
+from langchain_openai.chat_models.base import BaseChatOpenAI
 import logging
 
 from extractor.agents.pe_study_info.pe_study_info_workflow_utils import PEStudyInfoWorkflowState
@@ -13,6 +14,8 @@ from extractor.agents.pe_study_info.pe_study_info_common_agent import (
     PEStudyInfoCommonAgent,
 )
 from extractor.prompts_utils import generate_previous_errors_prompt
+from extractor.agents.agent_factory import get_common_agent
+from extractor.agents.common_agent.common_agent import CommonAgent
 
 logger = logging.getLogger(__name__)
 
@@ -23,6 +26,9 @@ class PEStudyInfoCommonStep(ABC):
         self.start_title = ""
         self.start_descp = ""
         self.end_title = ""
+
+    def get_agent(self, llm:BaseChatOpenAI) -> CommonAgent:
+        return get_common_agent(llm=llm)
 
     def enter_step(self, state: PEStudyInfoWorkflowState):
         pe_study_info_enter_step(state, self.start_title, self.start_descp)
@@ -125,9 +131,9 @@ class PEStudyInfoCommonAgentStep(PEStudyInfoCommonStep):
         llm = state["llm"]
         schema = self.get_schema()
         post_process, kwargs = self.get_post_processor_and_kwargs(state)
-        agent = PEStudyInfoCommonAgent(llm=llm)
+        agent = self.get_agent(llm)
         if kwargs is not None:
-            res, processed_res, token_usage = agent.go(
+            res, processed_res, token_usage, _ = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=schema,

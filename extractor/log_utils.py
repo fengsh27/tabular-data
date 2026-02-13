@@ -63,6 +63,8 @@ def initialize_logger(
     # prepare logger
     # logging.basicConfig(level=logging.INFO)
     logs_folder = os.environ.get("LOGS_FOLDER", "./logs")
+    if len(logs_folder.strip()) == 0:
+        logs_folder = "./logs"
     os.makedirs(logs_folder, exist_ok=True)
     logs_file = os.path.join(logs_folder, log_file)
 

@@ -36,8 +36,8 @@ class ParameterValueExtractionStep(PEStudyOutCommonStep):
             system_prompt = get_characteristic_refine_prompt(md_table, md, caption)
             previous_errors_prompt = self._get_previous_errors_prompt(state)
             system_prompt = system_prompt + previous_errors_prompt
-            agent = PEStudyOutCommonAgent(llm=llm)
-            res, processed_res, token_usage = agent.go(
+            agent = self.get_agent(llm)
+            res, processed_res, token_usage, _ = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=INSTRUCTION_PROMPT,
                 schema=CharacteristicRefinementResult,
