@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 
 class PKPopuSumCommonAgentResult(BaseModel):
     reasoning_process: str = Field(
-        description="A detailed explanation of the thought process or reasoning steps taken to reach a conclusion."
+        description="A concise explanation of the thought process or reasoning steps taken to reach a conclusion in 1-2 sentences."
     )
 
 

@@ -33,7 +33,7 @@ def get_tools_descriptions() -> str:
 """
 
 class PKPEDesignStepResult(BaseModel):
-    reasoning_process: str = Field(description="A detailed explanation of the thought process or reasoning steps taken to reach a conclusion.")
+    reasoning_process: str = Field(description="A concise explanation of the thought process or reasoning steps taken to reach a conclusion in 1-2 sentences.")
     pipeline_tools: list[str] = Field(description="A list of pipeline tool names")
 
 PKPE_DESIGN_SYSTEM_PROMPT = """

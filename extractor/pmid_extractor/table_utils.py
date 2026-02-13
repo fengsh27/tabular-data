@@ -97,7 +97,7 @@ Do not include any explanations or extra output.
 
 class TablesSelectionResult(BaseModel):
     """Tables Selection Result"""
-    reasoning_process: str = Field(description="A detailed explanation of the thought process or reasoning steps taken to reach a conclusion.")
+    reasoning_process: str = Field(description="A concise explanation of the thought process or reasoning steps taken to reach a conclusion in 1-2 sentences.")
     selected_table_indexes: List[str] = Field(
         description="""a list of selected table indexes, such as ["1", "2", "3"]"""
     )
