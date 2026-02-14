@@ -151,8 +151,8 @@ class PKSpecSumCommonAgentStep(PKSpecSumCommonStep):
             try:
                 reasoning_process = (
                     res["reasoning_process"]
-                    if type(res) == dict
-                    else res.reasoning_process
+                    if type(res) == dict and "reasoning_process" in res
+                    else (res.reasoning_process if hasattr(res, "reasoning_process") else "")
                 )
             except Exception as e:
                 logger.error(

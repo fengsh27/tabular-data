@@ -20,11 +20,17 @@ Read the article and answer the following:
     - **Population**: The group of individuals the samples were collected from (e.g., healthy adults, pregnant women).
     - **Population N**: The number of individuals in that population group.
 (2) List each unique combination in Python list-of-lists syntax, like this:  
-    [["Urine", "20", "... the sentence from the article ...", "Pregnancy", "10"], ["Urine", "20", "... the sentence from the article ...", "Postpregnancy", "10"]] (example)  
+    {{"specimen_combinations": [["Urine", "20", "... the sentence from the article ...", "Pregnancy", "10"], ["Urine", "20", "... the sentence from the article ...", "Postpregnancy", "10"]]}} (example)
 (3) Confirm the source of each [Specimen, Sample N, Sample time, Population, Population N] combination before including it in your answer.
 (4) In particular, regarding Sample N, please clarify the basis for each value you selected. If there are multiple Sample N values mentioned in different parts of the text, each must be explicitly stated in the original text and should not be derived through calculation or inference. Please cite the exact sentence(s) from the paragraph that support each value.
 (5) If both individual Sample N values (e.g., for specific timepoints or population subgroups) and a summed total are reported in the text, only include the individual values. Do not include the summed total, even if it is explicitly stated, to avoid duplication or overcounting.
     For example, if the text states “16 samples were collected in the first trimester, 18 in the second trimester, and a total of 34 across both,” only report the 16 and 18, and exclude the total of 34.
+
+### **Output Format**
+Your response **must** exactly match the following format:
+{{
+    "specimen_combinations": [["Urine", "20", "... the sentence from the article ...", "Pregnancy", "10"], ["Urine", "20", "... the sentence from the article ...", "Postpregnancy", "10"]]
+}}
 """)
 
 

@@ -27,7 +27,7 @@ Carefully analyze the table and follow these steps:
     - **Time Unit:** The unit corresponding to the sample time (e.g., "Second", "Minute", "Hour", "Day").  
     - **Source text**: The original sentence or excerpt from the source document where the data was reported. This field provides context and traceability, ensuring that each data point can be verified against its original description in the literature. Use "N/A" if no source can be found.
 (2) List each unique combination in the format of a list of lists, using Python string syntax. Your answer should be like this:  
-`[["0-1", "Hour", "... the sentence from the article ..."], ["10", "Minute", "... the sentence from the article ..."], ["0, 2, 4, 6", "Hour", "... the sentence from the article ..."], ["0-2, 2-4, 4-6, 6-8", "Hour", "... the sentence from the article ..."], ["N/A", "N/A", "... the sentence from the article ..."]]` (example)
+{{"time_and_units": [["0-1", "Hour", "... the sentence from the article ..."], ["10", "Minute", "... the sentence from the article ..."], ["0, 2, 4, 6", "Hour", "... the sentence from the article ..."], ["0-2, 2-4, 4-6, 6-8", "Hour", "... the sentence from the article ..."], ["N/A", "N/A", "... the sentence from the article ..."]]}} (example)
     - If a field contains multiple values separated by commas, preserve the comma-separated string as a single element.  
     - If a range of time is given (like "0-1"), treat the entire range string as one item.  
     - If no valid data is available, use "N/A".

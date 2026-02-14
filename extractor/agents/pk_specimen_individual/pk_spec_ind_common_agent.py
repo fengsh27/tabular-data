@@ -14,9 +14,10 @@ logger = logging.getLogger(__name__)
 
 
 class PKSpecIndCommonAgentResult(BaseModel):
-    reasoning_process: str = Field(
-        description="A concise explanation of the thought process or reasoning steps taken to reach a conclusion in 1-2 sentences."
-    )
+    pass
+    # reasoning_process: str = Field(
+    #     description="A concise explanation of the thought process or reasoning steps taken to reach a conclusion in 1-2 sentences."
+    # )
 
 
 class PKSpecIndCommonAgent:

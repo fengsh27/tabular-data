@@ -1,5 +1,5 @@
 from langchain_core.prompts import ChatPromptTemplate
-from pydantic import Field
+from pydantic import Field, BaseModel
 import pandas as pd
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown
@@ -19,15 +19,29 @@ Read the article and answer the following:
     - **Sample N**: The number of samples analyzed for the corresponding specimen.
     - **Sample time:** The specific moment (numerical or time range) when the specimen is sampled.   
 (2) List each unique combination in Python list-of-lists syntax, like this:  
-    [["1", "Urine", "20", "... the sentence from the article ..."], ["2", "Urine", "20", "... the sentence from the article ..."]] (example)  
+    {{"specimen_combinations": [["1", "Urine", "20", "... the sentence from the article ..."], ["2", "Urine", "20", "... the sentence from the article ..."]] }} (example)  
 (3) Confirm the source of each [Patient ID, Specimen, Sample N, Sample time] combination before including it in your answer.
+
+### **Output Format**
+Your response **must** exactly match the following JSON schema:
+
+```json
+{{
+    "specimen_combinations": [
+        ["1", "Urine", "20", "... the sentence from the article ..."],
+        ["2", "Urine", "20", "... the sentence from the article ..."]
+        ...
+    ]
+}}
+```
+
 """)
 
 
 INSTRUCTION_PROMPT = "Do not give the final result immediately. First, explain your thought process, then provide the answer."
 
 
-class SpecimenInfoResult(PKSpecSumCommonAgentResult):
+class SpecimenInfoResult(BaseModel):
     """Specimen Information Result"""
 
     specimen_combinations: list[list[str]] = Field(
