@@ -183,7 +183,7 @@ instruction_prompt = """Before you jump to conclusions, please think step by ste
 Now, let's start.
 """
 
-# @pytest.mark.skip()
+@pytest.mark.skip()
 def test_gpt_oss_1_message():
     llm = get_gpt_oss()
     # res = llm.invoke("You are a biomedical data verification assistant with expertise in pharmacokinetic population and individual and data accuracy validation. Here is my scenario: " + msg) # ("Hello, how are you?")

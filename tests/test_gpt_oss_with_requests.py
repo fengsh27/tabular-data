@@ -11,6 +11,7 @@ from extractor.agents.pk_pe_agents.pk_pe_verification_step import PKPEVerificati
 load_dotenv()
 logger = logging.getLogger(__name__)
 
+@pytest.mark.skip()
 def test_gpt_oss_with_requests():
     schema = PKPEVerificationStepResult.model_json_schema()
     schema.pop("title", None)

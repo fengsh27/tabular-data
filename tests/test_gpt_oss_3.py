@@ -1,3 +1,5 @@
+
+import pytest
 import requests
 import json
 import dotenv
@@ -10,6 +12,7 @@ dotenv.load_dotenv()
 
 logger = logging.getLogger(__name__)
 
+@pytest.mark.skip()
 def test_gpt_oss_3():
     url = os.getenv("OLLAMA_BASE_URL")
     payload = {

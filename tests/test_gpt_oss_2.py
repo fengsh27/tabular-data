@@ -189,7 +189,7 @@ def approx_token_count(text: str | list[BaseMessage]) -> int:
         return len(enc.encode(text))
     return sum(len(enc.encode(m.content or "")) for m in text)
 
-# @pytest.mark.skip()
+@pytest.mark.skip()
 def test_gpt_oss_with_29100749():
     long_msg = msg+msg+msg
     logger.info(f"Token count: {approx_token_count(long_msg)}")
