@@ -31,7 +31,12 @@ Carefully analyze the table and follow these steps:
     Do not directly classify "Fentanyl" as "Exposure", even though it appears to refer to a drug.
     Instead, base your labeling on the role the row header plays within the overall table structure. Subheaders are typically used to group related variables and should be labeled accordingly.
 (3) Return a categorized headers dictionary where each key is a row header, and the corresponding value is its assigned category, e.g.
-{categorized_headers_example}
+{{
+"categorized_headers": {{"Race:Overall": "Characteristic", "Race": "Subtitle", "White": "Characteristic",
+    "Native American": "Characteristic", "Exposure": "Exposure", "Unexposed": "Exposure",
+    "Fentanyl Exposed": "Exposure", "Lorazepam Exposed": "Exposure", "Preterm delivery": "Outcome",
+    "Birth weight": "Outcome", "Pain score": "Outcome", "Education": "Uncategorized", "Income": "Uncategorized"}} 
+}} (example)
 """)
 
 
@@ -46,19 +51,9 @@ def get_row_categorize_prompt(md_table: str, row_header_name: str):
         f'row {i}: "{val}"' for i, val in enumerate(df_table[row_header_name])
     )
 
-    categorized_headers_example = (
-        "```json\n"
-        '{{"Race:Overall": "Characteristic", "Race": "Subtitle", "White": "Characteristic", '
-        '"Native American": "Characteristic", "Exposure": "Exposure", "Unexposed": "Exposure", "Fentanyl Exposed": "Exposure", '
-        '"Lorazepam Exposed": "Exposure", "Preterm delivery": "Outcome", "Birth weight": "Outcome", '
-        '"Pain score": "Outcome", "Education": "Uncategorized", "Income": "Uncategorized"}}'
-        "```"
-    )
-
     return HEADER_CATEGORIZE_PROMPT.format(
         processed_md_table=processed_md_table,
         row_headers_str=row_headers_str,
-        categorized_headers_example=categorized_headers_example,
     )
 
 

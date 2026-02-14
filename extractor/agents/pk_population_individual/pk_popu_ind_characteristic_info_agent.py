@@ -29,7 +29,7 @@ Read the article and answer the following:
     - **Characteristic values**: The numerical descriptor. 
     - **Source text**: The original sentence or excerpt from the source document where the data was reported. This field provides context and traceability, ensuring that each data point can be verified against its original description in the literature. Use "N/A" if no source can be found.
 (2) List each unique combination in Python list-of-lists syntax, like this:  
-    [["1", "Weight", "N/A", "76.8", "... the sentence from the article ..."], ["2", "Age", "N/A", "23", "... the sentence from the article ..."]] (example)  
+    {{"characteristic_combinations": [["1", "Weight", "N/A", "76.8", "... the sentence from the article ..."], ["2", "Age", "N/A", "23", "... the sentence from the article ..."]]}} (example)  
 (3) Confirm the source of each [Patient ID, Patient characteristic, Characteristic sub-category, Characteristic values, Source text] combination before including it in your answer.
 """)
 

@@ -24,7 +24,7 @@ Carefully analyze the table and follow these steps:
 (2) Please note that, when encountering terms like "Overall", check which category the next column of "Overall" belong to, and categorize it accordingly. Because "Overall" and the column next to it always have the same category.
     -  This rule is critically important. Misclassifying these entries will directly impact the accuracy of subsequent processing, so please handle such cases with the utmost care and precision.
 (3) Return a categorized headers dictionary where each key is a column header, and the corresponding value is its assigned category, e.g.
-{categorized_headers_example}
+{{"categorized_headers": {{"Unnamed:0": "Row headers", "Race:Overall": "Characteristic", "Race:White": "Characteristic", "Race:Native American": "Characteristic", "Unexposed": "Exposure", "Fentanyl Exposed": "Exposure", "Lorazepam Exposed": "Exposure", "Preterm delivery": "Outcome", "Birth weight": "Outcome", "Pain score": "Outcome", "P-value": "P value"}}}} (example)
 """)
 
 
@@ -34,11 +34,9 @@ def get_header_categorize_prompt(md_table: str):
     column_headers_str = "These are all its column headers: " + ", ".join(
         f'"{col}"' for col in df_table.columns
     )
-    categorized_headers_example = """```json\n{{"Unnamed:0": "Row headers", "Race:Overall": "Characteristic", "Race:White": "Characteristic", "Race:Native American": "Characteristic", "Unexposed": "Exposure", "Fentanyl Exposed": "Exposure", "Lorazepam Exposed": "Exposure", "Preterm delivery": "Outcome", "Birth weight": "Outcome", "Pain score": "Outcome", "P-value": "P value"}}```"""
     return HEADER_CATEGORIZE_PROMPT.format(
         processed_md_table=processed_md_table,
         column_headers_str=column_headers_str,
-        categorized_headers_example=categorized_headers_example,
     )
 
 

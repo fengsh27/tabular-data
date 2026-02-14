@@ -34,7 +34,7 @@ Carefully review the article and follow these steps to convert the population in
     - Upper bound: is the upper bound value of the interval.
     
 (2) Compile each unique combination in the format of a **list of lists**, using **Python string syntax**. The result should be like this:
-[["25.4", "year", "Mean", "SD", "0.5", "Minmax", "23.0", "26.1"], ...] (example)
+{{"refined_characteristic_combinations": [["25.4", "year", "Mean", "SD", "0.5", "Minmax", "23.0", "26.1"], ...]}} (example)
 
 (3) Use **"N/A"** as the placeholder if the information **cannot** be reasonably inferred.
    

@@ -47,7 +47,7 @@ Carefully review the article and follow these steps to convert the population in
         For example: "Concentrations on Days 7" refers to a measurement time point, not an age, and should not be treated as such.
 
 (2) Compile each unique combination in the format of a **list of lists**, using **Python string syntax**. The result should be like this:
-[["1", "Maternal", "Trimester 1", "N/A"], ...] (example)
+{{"refined_patient_combinations": [["1", "Maternal", "Trimester 1", "N/A"], ...]}} (example)
 
 (3) For each Population, determine whether it can be classified under one or more of the common categories listed above. If it matches one or more standard categories, replace it with the corresponding standard category (or categories). If it does not fit any common category, retain the original wording.
 

@@ -48,7 +48,7 @@ Carefully review the article and follow these steps to convert the population in
     - **Population N**: The number of people corresponding to the specific population.
     
 (2) Compile each unique combination in the format of a **list of lists**, using **Python string syntax**. The result should be like this:
-[["Maternal", "Trimester 1", "N/A", "15"], ...] (example)
+{{"refined_patient_combinations": [["Maternal", "Trimester 1", "N/A", "15"], ...]}} (example)
 
 (3) For each Population, determine whether it can be classified under one or more of the common categories listed above. If it matches one or more standard categories, replace it with the corresponding standard category (or categories). If it does not fit any common category, retain the original wording.
 
