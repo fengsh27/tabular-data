@@ -1,14 +1,18 @@
 from typing import Callable, Optional
+import logging
 from langchain_openai.chat_models.base import BaseChatOpenAI
 from pydantic import BaseModel, Field
 
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE
 from extractor.agents.common_agent.common_agent import CommonAgent
-from extractor.agents.common_agent.common_step import CommonStep
+from extractor.agents.pk_pe_agents.pk_pe_common_step import PKPECommonStep
 from extractor.agents.common_agent.common_agent_2steps import CommonAgentTwoSteps
-from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState
+from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState, FinalAnswerEnum
 from extractor.agents.pk_pe_agents.pk_pe_agents_utils import format_source_tables
 from extractor.constants import COT_USER_INSTRUCTION
+from extractor.request_gpt_oss import get_gpt_qwen_30b
+
+logger = logging.getLogger(__name__)
 
 PKPE_VERIFICATION_SYSTEM_PROMPT = """
 You are a biomedical data verification assistant with expertise in {domain} and data accuracy validation. 
@@ -38,12 +42,15 @@ You will be given:
 
 ### **Your Output**
 
-You must respond using the **exact format** below:
+You must respond using the **exact json compact format** below:
 
 ```
-**FinalAnswer**: [Correct / Incorrect]
-**Explanation**: [Brief explanation of whether the curated table is accurate. If incorrect, explain what is wrong, including specific mismatched values or structure issues.]
-**SuggestedFix**: [If incorrect, provide a corrected version of the curated table or the corrected values/rows/columns.]
+{{
+  "reasoning_process": <string, a concise explanation of the thought process or reasoning steps taken to reach a conclusion (no more than 200 words)>,
+  "correct": <boolean, True / False>,
+  "explanation": <string, brief explanation of whether the curated table is accurate. If incorrect, explain what is wrong, including specific mismatched values or structure issues>,
+  "suggested_fix": <string or None, if incorrect, provide a corrected version of the curated table or the corrected values/rows/columns.>
+}}
 ```
 
 ---
@@ -81,12 +88,12 @@ You must respond using the **exact format** below:
 """
 
 class PKPEVerificationStepResult(BaseModel):
-    reasoning_process: str = Field(description="A detailed explanation of the thought process or reasoning steps taken to reach a conclusion.")
+    reasoning_process: str = Field(description="A **concise explanation** of the thought process or reasoning steps taken to reach a conclusion (no more than 200 words).")
     correct: bool = Field(description="Whether the curated table is accurate and faithful to the source table(s).")
     explanation: str = Field(description="Brief explanation of whether the curated table is accurate. If incorrect, explain what is wrong, including specific mismatched values or structure issues.")
-    suggested_fix: str = Field(description="If incorrect, provide a corrected version of the curated table or the corrected values/rows/columns.")
+    suggested_fix: Optional[str] = Field(description="If incorrect, provide a corrected version of the curated table or the corrected values/rows/columns.")
     
-class PKPECuratedTablesVerificationStep(CommonStep):
+class PKPECuratedTablesVerificationStep(PKPECommonStep):
     def __init__(
         self, 
         llm: BaseChatOpenAI, 
@@ -120,7 +127,7 @@ Suggested fix:
         curated_table = state["curated_table"].strip() if "curated_table" in state else None
         curated_table = curated_table if len(curated_table) > 0 else None
         if curated_table is None:
-            state["final_answer"] = True
+            state["final_answer"] = FinalAnswerEnum.Error
             state["explanation"] = "No data was curated from the source."
             state["suggested_fix"] = "N/A"
             return state, {**DEFAULT_TOKEN_USAGE}
@@ -134,13 +141,20 @@ Suggested fix:
         )
         instruction_prompt = COT_USER_INSTRUCTION
 
-        agent = CommonAgent(llm=self.llm) # CommonAgentTwoSteps(llm=self.llm)
+        agent = self.get_agent(llm=self.llm) # CommonAgent(llm=self.llm) # CommonAgentTwoSteps(llm=self.llm)
 
-        res, _, token_usage, reasoning_process = agent.go(
-            system_prompt=system_prompt,
-            instruction_prompt=instruction_prompt,
-            schema=PKPEVerificationStepResult,
-        )
+        try:
+            res, _, token_usage, reasoning_process = agent.go(
+                system_prompt=system_prompt,
+                instruction_prompt=instruction_prompt,
+                schema=PKPEVerificationStepResult,
+            )
+        except Exception as e:
+            logger.error(f"Error running agent: {e}")
+            state["final_answer"] = FinalAnswerEnum.Error
+            state["explanation"] = f"Error running agent: {e}"
+            state["suggested_fix"] = "N/A"
+            return state, {**DEFAULT_TOKEN_USAGE}
         if reasoning_process is None:
             reasoning_process = res.reasoning_process if hasattr(res, "reasoning_process") else "N / A"
         self._print_step(state, step_output=reasoning_process)
@@ -148,7 +162,7 @@ Suggested fix:
         self._print_step(state, step_output=f"Verification Explanation: \n\n{res.explanation}")
         self._print_step(state, step_output=f"Verification Suggested Fix: \n\n{res.suggested_fix}")
         res: PKPEVerificationStepResult = res
-        state["final_answer"] = res.correct
+        state["final_answer"] = FinalAnswerEnum.Correct if res.correct else FinalAnswerEnum.Incorrect
         state["explanation"] = res.explanation
         state["suggested_fix"] = res.suggested_fix
 

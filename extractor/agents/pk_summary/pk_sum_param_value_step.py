@@ -9,7 +9,7 @@ from extractor.agents.pk_summary.pk_sum_param_value_agent import (
     ParameterValueResult,
     post_process_matched_list,
 )
-from extractor.agents.pk_summary.pk_sum_workflow_utils import get_common_agent
+from extractor.agents.agent_factory import get_common_agent
 
 
 class ParameterValueExtractionStep(PKSumCommonStep):

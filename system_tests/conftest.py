@@ -17,13 +17,38 @@ from extractor.database.pmid_db import PMIDDB
 from extractor.request_sonnet import get_sonnet
 from extractor.request_metallama import get_meta_llama
 from extractor.request_openai import get_5_openai, get_openai
-from system_tests.conftest_data import curated_data_29100749, data_caption_29100749_table_0, data_caption_29100749_table_2, data_caption_32635742_table_0, data_col_mapping_18426260_table_0, data_col_mapping_29100749_table_2, data_md_table_18426260_table_0, data_md_table_32635742_table_0, data_md_table_aligned_18426260_table_0, data_md_table_aligned_29100749_table_2, data_md_table_drug_18426260_table_0, data_md_table_drug_29100749_table_2, data_md_table_individual_18426260_table_0, data_md_table_individual_29100749_table_2, data_md_table_list_18426260_table_0, data_md_table_list_29100749_table_2, data_md_table_patient_29100749_table_2, data_md_table_patient_refined_29100749_table_2, data_source_table_29100749_table_0, data_source_table_29100749_table_2, paper_abstract_29100749, paper_abstract_32635742, paper_title_29100749, paper_title_32635742
+from extractor.agents.agent_factory import get_pipeline_llm, get_agent_llm
+from system_tests.conftest_data import (
+    curated_data_29100749, 
+    data_caption_29100749_table_0, 
+    data_caption_29100749_table_2, 
+    data_caption_32635742_table_0, 
+    data_col_mapping_18426260_table_0, 
+    data_col_mapping_29100749_table_2, 
+    data_md_table_32635742_table_0, 
+    data_md_table_aligned_29100749_table_2, 
+    data_md_table_drug_18426260_table_0, 
+    data_md_table_drug_29100749_table_2, 
+    data_md_table_individual_18426260_table_0, 
+    data_md_table_individual_29100749_table_2, 
+    data_md_table_list_29100749_table_2, 
+    data_md_table_patient_29100749_table_2, 
+    data_md_table_patient_refined_29100749_table_2, 
+    data_source_table_29100749_table_0, 
+    data_source_table_29100749_table_2, 
+    paper_abstract_29100749, 
+    paper_abstract_32635742, 
+    paper_title_29100749, 
+    data_29100749_verification_reasoning,
+    paper_title_32635742
+)
 from system_tests.conftest_data_10971311 import (
     data_title_10971311,
     data_abstract_10971311,
     data_full_text_excluding_tables_10971311,
     data_tables_10971311,
     data_sections_10971311,
+    data_md_table_aligned_10971311_table_0,
 )
 from system_tests.conftest_data_18426260 import (
     data_title_18426260,
@@ -31,22 +56,53 @@ from system_tests.conftest_data_18426260 import (
     data_full_text_excluding_tables_18426260,
     data_tables_18426260,
     data_sections_18426260,
+    data_caption_18426260_table_0,
+    data_md_table_18426260_table_0,
+    data_pk_ind_md_table_patient_18426260_table_0,
+    data_md_table_aligned_18426260_table_0,
+    data_md_table_list_18426260_table_0,
+    data_md_table_patient_refined_18426260_table_0,
+    data_caption_18426260_table_1,
+    data_md_table_18426260_table_1,
+)
+from system_tests.conftest_data_23200982 import (
+    data_title_23200982,
+    data_abstract_23200982,
+    data_md_table_aligned_23200982_table_3,
+    data_md_table_aligned_23200982_table_2,
+    data_col_mapping_23200982_table_2,
+    data_md_curated_table_pk_individual_23200982,
+    data_verification_explanation_23200982,
+    data_verification_final_answer_23200982,
+    data_verification_suggested_fix_23200982,
+    data_md_table_23200982_table_3,
+    data_md_table_23200982_table_1,
+    data_md_table_23200982_table_2,
 )
 from system_tests.conftest_data_33253437 import (
     data_title_33253437,
     data_abstract_33253437,
-    data_caption_table_0_33253437,
-    data_md_table_individual_table_0_33253437,
-    data_md_table_drug_table_0_33253437,
-    data_md_table_patient_refined_table_0_33253437,
-    data_md_table_aligned_table_0_33253437,
-    data_col_mapping_table_0_33253437,
-    data_md_table_list_table_0_33253437,
-    data_md_table_patient_table_0_33253437,
+    data_caption_table_1_33253437,
+    data_md_table_individual_table_1_33253437,
+    data_md_table_drug_table_1_33253437,
+    data_md_table_patient_refined_table_1_33253437,
+    data_md_table_aligned_table_1_33253437,
+    data_col_mapping_table_1_33253437,
+    data_md_table_list_table_1_33253437,
+    data_md_table_patient_table_1_33253437,
+)
+from system_tests.conftest_data_34746508 import (
+    data_abstract_34746508,
+    data_md_table_34746508_table_1,
+    data_md_table_34746508_table_2,
+    data_caption_34746508_table_1,
+    data_caption_34746508_table_2,
+    data_title_34746508,
+    data_curated_table_pk_individual_34746508,
+    data_pk_individual_verification_reasoning_34746508,
 )
 
 load_dotenv()
-
 
 def get_openai():
     return ChatOpenAI(
@@ -92,23 +148,12 @@ def get_gemini():
 
 @pytest.fixture(scope="module")
 def llm():
-    return get_azure_openai()  # get_openai() # get_deepseek() # get_sonnet() # get_meta_llama() # get_gemini() # get_5_openai() # 
+    return get_pipeline_llm()  # get_azure_openai()  # get_openai() # get_deepseek() # get_sonnet() # get_meta_llama() # get_gemini() # get_5_openai() # 
 
 @pytest.fixture(scope="module")
-def llm_gpt5():
-    return AzureChatOpenAI(
-        api_key=os.environ.get("OPENAI_API_KEY", None),
-        azure_endpoint=os.environ.get("AZURE_OPENAI_ENDPOINT", None),
-        api_version=os.environ.get("OPENAI_5_API_VERSION", None),
-        azure_deployment=os.environ.get("OPENAI_5_DEPLOYMENT_NAME", None),
-        model=os.environ.get("OPENAI_5_MODEL", None),
-        max_retries=5,
-        # temperature=0.0,
-        max_completion_tokens=int(os.environ.get("OPENAI_MAX_OUTPUT_TOKENS", 4096)),
-        # top_p=0.95,
-        # frequency_penalty=0,
-        # presence_penalty=0,
-    )
+def llm_agent():
+    return get_agent_llm()
+
 ghtml_content = """
 <section id="S8">
    <h3 class="pmc_sec_title">Pharmacokinetics</h3>
@@ -2296,7 +2341,7 @@ def md_table_aligned_18426260_table_0():
 """
 
 @pytest.fixture(scope="module")
-def md_table_patient_refined_18426260_table_0():
+def pk_sum_md_table_patient_refined_18426260_table_0():
     return """| Population | Pregnancy stage | Pediatric/Gestational age | Subject N |
 | --- | --- | --- | --- |
 | Maternal | Trimester 2 | N/A | 40 |
@@ -2390,6 +2435,26 @@ def md_table_individual_18426260_table_0():
 def col_mapping_18426260_table_0():
     return data_col_mapping_18426260_table_0
 
+@pytest.fixture(scope="module")
+def pk_ind_md_table_patient_18426260_table_0():
+    return data_pk_ind_md_table_patient_18426260_table_0
+
+@pytest.fixture(scope="module")
+def md_table_patient_refined_18426260_table_0():
+    return data_md_table_patient_refined_18426260_table_0
+
+@pytest.fixture(scope="module")
+def caption_18426260_table_0():
+    return data_caption_18426260_table_0
+
+@pytest.fixture(scope="module")
+def caption_18426260_table_1():
+    return data_caption_18426260_table_1
+
+@pytest.fixture(scope="module")
+def md_table_18426260_table_1():
+    return data_md_table_18426260_table_1
+
 ## ==================================================
 ## 29100749
 ## ==================================================
@@ -2450,6 +2515,10 @@ def md_table_list_29100749_table_2():
 def md_table_drug_29100749_table_2():
     return data_md_table_drug_29100749_table_2
 
+@pytest.fixture(scope="module")
+def verification_reasoning_29100749():
+    return data_29100749_verification_reasoning
+
 ## ==================================================
 ## 32635742
 ## ==================================================
@@ -2502,6 +2571,10 @@ def tables_10971311():
 def sections_10971311():
     return data_sections_10971311
 
+@pytest.fixture(scope="module")
+def md_table_aligned_10971311_table_0():
+    return data_md_table_aligned_10971311_table_0
+
 
 # ============================================================================================
 # 18426260
@@ -2539,36 +2612,131 @@ def abstract_33253437():
     return data_abstract_33253437
 
 @pytest.fixture(scope="module")
-def caption_table_0_33253437():
-    return data_caption_table_0_33253437
+def caption_table_1_33253437():
+    return data_caption_table_1_33253437
 
 @pytest.fixture(scope="module")
-def md_table_list_table_0_33253437():
-    return data_md_table_list_table_0_33253437
+def md_table_list_table_1_33253437():
+    return data_md_table_list_table_1_33253437
 
 @pytest.fixture(scope="module")
-def md_table_drug_table_0_33253437():
-    return data_md_table_drug_table_0_33253437
+def md_table_drug_table_1_33253437():
+    return data_md_table_drug_table_1_33253437
 
 @pytest.fixture(scope="module")
-def md_table_patient_refined_table_0_33253437():
-    return data_md_table_patient_refined_table_0_33253437
+def md_table_patient_refined_table_1_33253437():
+    return data_md_table_patient_refined_table_1_33253437
     
 @pytest.fixture(scope="module")
-def md_table_aligned_table_0_33253437():
-    return data_md_table_aligned_table_0_33253437
+def md_table_aligned_table_1_33253437():
+    return data_md_table_aligned_table_1_33253437
 
 @pytest.fixture(scope="module")
-def md_table_individual_table_0_33253437():
-    return data_md_table_individual_table_0_33253437
+def md_table_individual_table_1_33253437():
+    return data_md_table_individual_table_1_33253437
 
 @pytest.fixture(scope="module")
-def col_mapping_table_0_33253437():
-    return data_col_mapping_table_0_33253437
+def col_mapping_table_1_33253437():
+    return data_col_mapping_table_1_33253437
 
 @pytest.fixture(scope="module")
-def md_table_patient_table_0_33253437():
-    return data_md_table_patient_table_0_33253437
+def md_table_patient_table_1_33253437():
+    return data_md_table_patient_table_1_33253437
+
+# ============================================================================================
+# 23200982
+# ============================================================================================
+
+@pytest.fixture(scope="module")
+def title_23200982():
+    return data_title_23200982
+
+@pytest.fixture(scope="module")
+def abstract_23200982():
+    return data_abstract_23200982
+
+@pytest.fixture(scope="module")
+def md_table_aligned_23200982_table_3():
+    return data_md_table_aligned_23200982_table_3
+
+@pytest.fixture(scope="module")
+def md_table_aligned_23200982_table_2():
+    return data_md_table_aligned_23200982_table_2
+
+@pytest.fixture(scope="module")
+def col_mapping_23200982_table_2():
+    return data_col_mapping_23200982_table_2
+
+@pytest.fixture(scope="module")
+def md_curated_table_pk_individual_23200982():
+    return data_md_curated_table_pk_individual_23200982
+
+@pytest.fixture(scope="module")
+def verification_explanation_23200982():
+    return data_verification_explanation_23200982
+
+@pytest.fixture(scope="module")
+def verification_final_answer_23200982():
+    return data_verification_final_answer_23200982
+
+@pytest.fixture(scope="module")
+def verification_suggested_fix_23200982():
+    return data_verification_suggested_fix_23200982
+
+@pytest.fixture(scope="module")
+def md_table_23200982_table_3():
+    return data_md_table_23200982_table_3
+
+@pytest.fixture(scope="module")
+def md_table_23200982_table_1():
+    return data_md_table_23200982_table_1
+
+@pytest.fixture(scope="module")
+def md_table_23200982_table_2():
+    return data_md_table_23200982_table_2
+
+# ============================================================================================
+# 34746508
+# ============================================================================================
+
+@pytest.fixture(scope="module")
+def md_table_34746508_table_2():
+    return data_md_table_34746508_table_2
+
+@pytest.fixture(scope="module")
+def md_table_34746508_table_1():
+    return data_md_table_34746508_table_1
+
+@pytest.fixture(scope="module")
+def caption_34746508_table_1():
+    return data_caption_34746508_table_1
+
+@pytest.fixture(scope="module")
+def caption_34746508_table_2():
+    return data_caption_34746508_table_2
+
+@pytest.fixture(scope="module")
+def title_34746508():
+    return data_title_34746508
+
+@pytest.fixture(scope="module")
+def abstract_34746508():
+    return data_abstract_34746508
+
+@pytest.fixture(scope="module")
+def full_text_34746508():
+    fn = Path(__file__).parent / "data" / "34746508_full_text.txt"
+    with open(fn, "r") as f:
+        return f.read()
+
+@pytest.fixture(scope="module")
+def pk_individual_curated_table_34746508():
+    return data_curated_table_pk_individual_34746508
+
+@pytest.fixture(scope="module")
+def pk_individual_verification_reasoning_34746508():
+    return data_pk_individual_verification_reasoning_34746508
+
 
 # ============================================================================================
 # utils
@@ -2590,7 +2758,6 @@ def prepare_logging():
     root_logger.setLevel(level)
     root_logger.addHandler(file_handler)
     root_logger.addHandler(stream_handler)
-
 
 @pytest.fixture(scope="module")
 def step_callback():

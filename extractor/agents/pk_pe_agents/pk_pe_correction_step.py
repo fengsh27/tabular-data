@@ -7,7 +7,7 @@ import pandas as pd
 from extractor.agents.common_agent.common_agent import RetryException
 from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
-from extractor.agents.common_agent.common_step import CommonStep
+from extractor.agents.pk_pe_agents.pk_pe_common_step import PKPECommonStep
 from extractor.agents.common_agent.common_agent import CommonAgent
 from extractor.agents.common_agent.common_agent_2steps import CommonAgentTwoSteps
 from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState
@@ -15,6 +15,7 @@ from extractor.agents.pk_pe_agents.pk_pe_agents_utils import format_source_table
 from extractor.constants import COT_USER_INSTRUCTION
 from extractor.request_openai import get_5_mini_openai
 from extractor.request_geminiai import get_gemini
+from extractor.request_gpt_oss import get_gpt_qwen_30b
 
 PKPE_CORRECTION_SYSTEM_PROMPT = """
 You are a biomedical data correction assistant with expertise in {domain}. 
@@ -46,11 +47,12 @@ You will be given:
 
 ### **Your Output**
 
-You must respond using the **exact format** below:
+You must respond using the **exact compact json format** below:
 
 ```
-**FinalAnswer**: 
-**CorrectedTable**:[The corrected version of the curated table in markdown format]
+{{
+  "corrected_table":<A string, the corrected version of the curated table in markdown format>
+}}
 ```
 
 ---
@@ -110,7 +112,7 @@ def post_process_corrected_table(res: PKPECorrectionStepResult) -> PKPECorrectio
     except Exception as e:
         raise RetryException(f"The corrected table is not a valid markdown table: {e}")
 
-class PKPECuratedTablesCorrectionStep(CommonStep):
+class PKPECuratedTablesCorrectionStep(PKPECommonStep):
     def __init__(
         self, 
         llm: BaseChatOpenAI, 
@@ -118,10 +120,9 @@ class PKPECuratedTablesCorrectionStep(CommonStep):
         domain: str,
     ):
         super().__init__(llm)
-        if isinstance(llm, AzureChatOpenAI) and llm.model_name == "gpt-4o":
+        # if isinstance(llm, AzureChatOpenAI) and llm.model_name == "gpt-4o":
             # FIXME: gpt-4o does not work well to correct big tables, so we use gpt-5-mini instead.
-            # self.llm = get_5_mini_openai()
-            self.llm = get_gemini()
+            # self.llm = get_gemini()
             # self.llm = llm
         self.step_name = "PK PE Correction Step"
         self.pmid = pmid
@@ -142,7 +143,7 @@ class PKPECuratedTablesCorrectionStep(CommonStep):
         )
         instruction_prompt = COT_USER_INSTRUCTION
 
-        agent = CommonAgent(llm=self.llm)
+        agent = self.get_agent(llm=self.llm) # CommonAgent(llm=self.llm)
 
         res, _, token_usage, reasoning_process = agent.go(
             system_prompt=system_prompt,

@@ -1,0 +1,10 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation value,Variation type,Interval type,Lower limit,High limit,P value
+Levetiracetam,Levetiracetam,plasma,Neonates with seizures,N/A,,"AUC0-12 (dose range 5-15 mg/kg/12-hourly)",167.0,h*ug/mL,arithmetic mean,45.6,SD,,,,
+Levetiracetam,Levetiracetam,plasma,Neonates with seizures,N/A,,"Cmax (dose range 5-15 mg/kg/12-hourly)",19.19,ug/mL,arithmetic mean,4.12,SD,,,,
+Levetiracetam,Levetiracetam,plasma,Neonates with seizures,N/A,,"Ctrough (dose range 5-15 mg/kg/12-hourly)",9.99,ug/mL,arithmetic mean,3.86,SD,,,,
+Levetiracetam,Levetiracetam,plasma,Neonates with seizures,N/A,,"AUC0-12 (dose range 15-25 mg/kg/12-hourly)",316.5,h*ug/mL,arithmetic mean,108.4,SD,,,,
+Levetiracetam,Levetiracetam,plasma,Neonates with seizures,N/A,,"Cmax (dose range 15-25 mg/kg/12-hourly)",35.12,ug/mL,arithmetic mean,10.54,SD,,,,
+Levetiracetam,Levetiracetam,plasma,Neonates with seizures,N/A,,"Ctrough (dose range 15-25 mg/kg/12-hourly)",19.25,ug/mL,arithmetic mean,8.48,SD,,,,
+Levetiracetam,Levetiracetam,plasma,Neonates with seizures,N/A,,"AUC0-12 (dose range 25-35 mg/kg/12-hourly)",290.9,h*ug/mL,not reported,,,range,176.14,405.59,
+Levetiracetam,Levetiracetam,plasma,Neonates with seizures,N/A,,"Cmax (dose range 25-35 mg/kg/12-hourly)",36.11,ug/mL,not reported,,,range,27.58,44.64,
+Levetiracetam,Levetiracetam,plasma,Neonates with seizures,N/A,,"Ctrough (dose range 25-35 mg/kg/12-hourly)",13.03,ug/mL,not reported,,,range,2.98,23.07,

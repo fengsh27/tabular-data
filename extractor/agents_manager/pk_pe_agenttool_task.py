@@ -16,8 +16,14 @@ from extractor.pmid_extractor.article_retriever import ArticleRetriever
 from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
 from extractor.utils import convert_html_to_text_no_table, remove_references
 from extractor.agents.pk_pe_agents.pk_pe_identification_step import PKPEIdentificationStep
-from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState, PaperTypeEnum
-from extractor.agents.pk_pe_agents.pk_pe_correction_step import PKPECuratedTablesCorrectionStep
+from extractor.agents.pk_pe_agents.pk_pe_agents_types import (
+    PKPECurationWorkflowState,
+    PaperTypeEnum,
+    FinalAnswerEnum,
+)
+# from extractor.agents.pk_pe_agents.pk_pe_correction_step import PKPECuratedTablesCorrectionStep
+from extractor.agents.pk_pe_agents.pk_pe_correction_code_step import PKPECuratedTablesCorrectionCodeStep
+from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState, FinalAnswerEnum
 
 logger = logging.getLogger(__name__)
 
@@ -67,9 +73,11 @@ class PKPEAgentToolTask(ABC):
 
     def _build_workflow(self, pmid: str):
         def check_verification_step(state: PKPECurationWorkflowState):
-            if state["final_answer"] is not None and state["final_answer"]:
+            if state["final_answer"] is not None and \
+                (state["final_answer"] == FinalAnswerEnum.Correct or \
+                    state["final_answer"] == FinalAnswerEnum.Error):
                 self.print_step(step_name="Final Answer")
-                self.print_step(step_output=state["final_answer"])
+                self.print_step(step_output=state["final_answer"].value)
                 return END
             if "step_count" in state and state["step_count"] >= MAX_AGENTTOOL_TASK_STEP_COUNT:
                 self.print_step(step_name="Max Step Count Reached")
@@ -87,7 +95,7 @@ class PKPEAgentToolTask(ABC):
             pmid=pmid,
             domain=self._get_domain(),
         )
-        correction_step = PKPECuratedTablesCorrectionStep(
+        correction_step = PKPECuratedTablesCorrectionCodeStep(
             llm=self.agent_llm,
             pmid=pmid,
             domain=self._get_domain(),
@@ -128,7 +136,7 @@ class PKPEAgentToolTask(ABC):
     def run(self, pmid: str) -> tuple[bool, str | None, str | None, str | None]:
         self.print_step(step_name=f"Running {self.task_name} for pmid-{pmid}")
         state = self._run_workflow(pmid)
-        correct = state["final_answer"] if state["final_answer"] is not None else False
+        correct = state["final_answer"] if state["final_answer"] is not None else FinalAnswerEnum.Error
         curated_table = state["curated_table"] if "curated_table" in state else None
         explanation = state["explanation"] if "explanation" in state else None
         suggested_fix = state["suggested_fix"] if "suggested_fix" in state else None

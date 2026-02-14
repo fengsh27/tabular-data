@@ -27,27 +27,56 @@ def test_ExtractParamTypeAndUnitStep_29100749_table_2(
     assert type(state["type_unit_list"]) == list
 
 
-
-def test_ExtractParamTypeAndUnitStep_33253437_table_0(
+@pytest.mark.skip()
+def test_ExtractParamTypeAndUnitStep_33253437_table_1(
     llm,
-    llm_gpt5,
-    md_table_aligned_table_0_33253437,
-    col_mapping_table_0_33253437,
-    caption_table_0_33253437,
-    md_table_list_table_0_33253437,
+    llm_agent,
+    md_table_aligned_table_1_33253437,
+    col_mapping_table_1_33253437,
+    caption_table_1_33253437,
+    md_table_list_table_1_33253437,
     step_callback
 ):
     step = ExtractParamTypeAndUnitStep()
     state = PKIndWorkflowState()
     state["llm"] = llm
-    state["llm2"] = llm_gpt5
-    state["col_mapping"] = col_mapping_table_0_33253437
-    state["md_table_aligned"] = md_table_aligned_table_0_33253437
-    state["caption"] = caption_table_0_33253437
-    state["md_table_list"] = md_table_list_table_0_33253437
+    state["llm2"] = llm_agent
+    state["col_mapping"] = col_mapping_table_1_33253437
+    state["md_table_aligned"] = md_table_aligned_table_1_33253437
+    state["caption"] = caption_table_1_33253437
+    state["md_table_list"] = md_table_list_table_1_33253437
     state["step_callback"] = step_callback
 
     step.execute(state)
 
     assert state["type_unit_list"] is not None
     assert type(state["type_unit_list"]) == list
+
+
+def test_ExtractParamTypeAndUnitStep_18426260_table_0(
+    llm,
+    llm_agent,
+    md_table_aligned_18426260_table_0,
+    col_mapping_18426260_table_0,
+    caption_18426260_table_0,
+    md_table_list_18426260_table_0,
+    step_callback
+):
+    step = ExtractParamTypeAndUnitStep()
+    state = PKIndWorkflowState()
+    state["llm"] = llm
+    state["llm2"] = llm_agent
+    state["col_mapping"] = col_mapping_18426260_table_0
+    state["md_table_aligned"] = md_table_aligned_18426260_table_0
+    state["caption"] = caption_18426260_table_0
+    state["md_table_list"] = md_table_list_18426260_table_0
+    state["step_callback"] = step_callback
+    
+    step.execute(state)
+    
+    assert state["type_unit_list"] is not None
+    assert type(state["type_unit_list"]) == list
+    
+    
+
+

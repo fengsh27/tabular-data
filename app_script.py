@@ -9,6 +9,7 @@ from dotenv import load_dotenv
 from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECuratedTables
 from extractor.log_utils import initialize_logger
 from extractor.agents_manager.pk_pe_manager import PKPEManager
+from extractor.agents.agent_factory import get_pipeline_llm, get_agent_llm
 from extractor.database.pmid_db import PMIDDB
 from extractor.request_deepseek import get_deepseek
 from extractor.request_geminiai import get_gemini

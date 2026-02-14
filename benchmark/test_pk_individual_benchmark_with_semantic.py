@@ -45,6 +45,48 @@ def test_gpt_benchmark(prepared_dataset):
         result_file=result_path,
     )
 
+def test_gpt_oss_benchmark(prepared_dataset):
+    result_dir = ensure_target_result_directory_existed(
+        baseline=baseline,
+        target=target,
+        benchmark_type=BenchmarkType.PK_INDIVIDUAL,
+    )
+    result_path = os.path.join(result_dir, "result.log")
+    run_semantic_benchmark(
+        dataset=prepared_dataset,
+        benchmark_type=BenchmarkType.PK_INDIVIDUAL,
+        model=LLModelType.GPTOSS,
+        result_file=result_path,
+    )
+
+def test_qwen3_benchmark(prepared_dataset):
+    result_dir = ensure_target_result_directory_existed(
+        baseline=baseline,
+        target=target,
+        benchmark_type=BenchmarkType.PK_INDIVIDUAL,
+    )
+    result_path = os.path.join(result_dir, "result.log")
+    run_semantic_benchmark(
+        dataset=prepared_dataset,
+        benchmark_type=BenchmarkType.PK_INDIVIDUAL,
+        model=LLModelType.QWEN3,
+        result_file=result_path,
+    )
+
+def test_codex_benchmark(prepared_dataset):
+    result_dir = ensure_target_result_directory_existed(
+        baseline=baseline,
+        target=target,
+        benchmark_type=BenchmarkType.PK_INDIVIDUAL,
+    )
+    result_path = os.path.join(result_dir, "result.log")
+    run_semantic_benchmark(
+        dataset=prepared_dataset,
+        benchmark_type=BenchmarkType.PK_INDIVIDUAL,
+        model=LLModelType.CODEX,
+        result_file=result_path,
+    )
+
 
 
 

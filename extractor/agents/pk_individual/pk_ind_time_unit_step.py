@@ -1,7 +1,7 @@
 import pandas as pd
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
-from extractor.agents.agent_utils import display_md_table
+from extractor.agents.agent_utils import display_md_table, get_reasoning_process
 from extractor.agents.pk_individual.pk_ind_time_unit_agent import (
     get_time_and_unit_prompt,
     TimeAndUnitResult,
@@ -11,7 +11,6 @@ from extractor.agents.pk_individual.pk_ind_time_unit_agent import (
 from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
 from extractor.agents.pk_individual.pk_ind_common_step import PKIndCommonStep
-from extractor.agents.pk_individual.pk_ind_common_agent import PKIndCommonAgent
 
 
 class TimeExtractionStep(PKIndCommonStep):
@@ -37,17 +36,21 @@ class TimeExtractionStep(PKIndCommonStep):
             previous_errors_prompt = self._get_previous_errors_prompt(state)
             system_prompt = system_prompt + previous_errors_prompt
             instruction_prompt = INSTRUCTION_PROMPT
-            agent = PKIndCommonAgent(llm=llm)
-            res, processed_res, token_usage = agent.go(
+            agent = self.get_agent(state['llm']) # PKIndCommonAgent(llm=llm)
+            result = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=TimeAndUnitResult,
                 post_process=post_process_time_and_unit,
                 md_table_post_processed=md,
             )
+            res: TimeAndUnitResult = result[0]
+            processed_res = result[1]
+            token_usage = result[2]
+            reasoning_process = get_reasoning_process(result)
             self._step_output(
                 state,
-                step_reasoning_process=res.reasoning_process if res is not None else "",
+                step_reasoning_process=reasoning_process,
             )
             time_append_list: list[list[str]] = processed_res
             time_list.append(time_append_list)

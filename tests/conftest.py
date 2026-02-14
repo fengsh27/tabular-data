@@ -1,6 +1,6 @@
 import os
 from typing import Optional
-from langchain_deepseek import ChatDeepSeek
+# from langchain_deepseek import ChatDeepSeek
 from langchain_openai import AzureChatOpenAI, ChatOpenAI
 import pytest
 from dotenv import load_dotenv
@@ -36,17 +36,6 @@ def get_azure_openai():
         # frequency_penalty=0,
         # presence_penalty=0,
     )
-
-
-def get_deepseek():
-    return ChatDeepSeek(
-        api_key=os.getenv("DEEPSEEK_API_KEY"),
-        model="deepseek-chat",
-        temperature=0.0,
-        max_completion_tokens=10000,
-        max_retries=3,
-    )
-
 
 @pytest.fixture(scope="module")
 def azure_llm():

@@ -24,3 +24,6 @@ class LLModelType(Enum):
     METALLAMA4 = "metallama4"
     BASELINE = "baseline"
     UNKNOWN = "unkown"
+    GPTOSS="gpt-oss"
+    QWEN3="qwen3"
+    CODEX="codex"

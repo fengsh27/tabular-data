@@ -1,0 +1,29 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+1,Infliximab,Infliximab,serum,Maternal,N/A,N/A,TNF inhibitor - (µg/mL serum) - Maternal,(µg/mL serum),25.3,23,Day
+2,Infliximab,Infliximab,serum,Maternal,N/A,N/A,TNF inhibitor - (µg/mL serum) - Maternal,(µg/mL serum),12.0,57,Day
+3,Infliximab,Infliximab,serum,Maternal,N/A,N/A,TNF inhibitor - (µg/mL serum) - Maternal,(µg/mL serum),17.0,31,Day
+4,Etanercept,Etanercept,serum,Maternal,N/A,N/A,TNF inhibitor - (µg/mL serum) - Maternal,(µg/mL serum),3.0,4,Day
+5,Etanercept,Etanercept,serum,Maternal,N/A,N/A,TNF inhibitor - (µg/mL serum) - Maternal,(µg/mL serum),<0.1,29,Day
+6,Etanercept,Etanercept,serum,Maternal,N/A,N/A,TNF inhibitor - (µg/mL serum) - Maternal,(µg/mL serum),0.2,16,Day
+1,Infliximab,Infliximab,serum,Maternal,N/A,N/A,TNF inhibitor - (µg/mL serum) - Cord,(µg/mL serum),29.8,23,Day
+2,Infliximab,Infliximab,serum,Maternal,N/A,N/A,TNF inhibitor - (µg/mL serum) - Cord,(µg/mL serum),24.0,57,Day
+3,Infliximab,Infliximab,serum,Maternal,N/A,N/A,TNF inhibitor - (µg/mL serum) - Cord,(µg/mL serum),29.0,31,Day
+4,Etanercept,Etanercept,serum,Maternal,N/A,N/A,TNF inhibitor - (µg/mL serum) - Cord,(µg/mL serum),0.1,4,Day
+5,Etanercept,Etanercept,serum,Maternal,N/A,N/A,TNF inhibitor - (µg/mL serum) - Cord,(µg/mL serum),<0.1,29,Day
+6,Etanercept,Etanercept,serum,Maternal,N/A,N/A,TNF inhibitor - (µg/mL serum) - Cord,(µg/mL serum),NA,16,Day
+1,Infliximab,Infliximab,tissue,Maternal,N/A,N/A,TNF inhibitor - Mean ± SD (µg/g tissue) - Placenta,µg/g tissue,5.8 ± 0.9,23,Day
+2,Infliximab,Infliximab,tissue,Maternal,N/A,N/A,TNF inhibitor - Mean ± SD (µg/g tissue) - Placenta,µg/g tissue,1.8 ± 0.0,57,Day
+3,Infliximab,Infliximab,tissue,Maternal,N/A,N/A,TNF inhibitor - Mean ± SD (µg/g tissue) - Placenta,µg/g tissue,4.8 ± 1.5,31,Day
+4,Etanercept,Etanercept,tissue,Maternal,N/A,N/A,TNF inhibitor - Mean ± SD (µg/g tissue) - Placenta,µg/g tissue,0.1 ± 0.1,4,Day
+5,Etanercept,Etanercept,tissue,Maternal,N/A,N/A,TNF inhibitor - Mean ± SD (µg/g tissue) - Placenta,µg/g tissue,<0.1,29,Day
+6,Etanercept,Etanercept,tissue,Maternal,N/A,N/A,TNF inhibitor - Mean ± SD (µg/g tissue) - Placenta,µg/g tissue,<0.1,16,Day
+1,Infliximab,Infliximab,serum,Maternal,N/A,N/A,Cord‐to‐maternal ratio - Cord‐to‐maternal ratio - Cord‐to‐maternal ratio,unitless,1.18,23,Day
+2,Infliximab,Infliximab,serum,Maternal,N/A,N/A,Cord‐to‐maternal ratio - Cord‐to‐maternal ratio - Cord‐to‐maternal ratio,unitless,2.00,57,Day
+3,Infliximab,Infliximab,serum,Maternal,N/A,N/A,Cord‐to‐maternal ratio - Cord‐to‐maternal ratio - Cord‐to‐maternal ratio,unitless,1.71,31,Day
+4,Etanercept,Etanercept,serum,Maternal,N/A,N/A,Cord‐to‐maternal ratio - Cord‐to‐maternal ratio - Cord‐to‐maternal ratio,unitless,0.04,4,Day
+1,Infliximab,Infliximab,tissue,Maternal,N/A,N/A,Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio,ratio,0.35,23,Day
+2,Infliximab,Infliximab,tissue,Maternal,N/A,N/A,Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio,ratio,0.23,57,Day
+3,Infliximab,Infliximab,tissue,Maternal,N/A,N/A,Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio,ratio,0.44,31,Day
+4,Etanercept,Etanercept,tissue,Maternal,N/A,N/A,Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio,ratio,0.03,4,Day
+5,Etanercept,Etanercept,tissue,Maternal,N/A,N/A,Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio,ratio,NA,29,Day
+6,Etanercept,Etanercept,tissue,Maternal,N/A,N/A,Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio - Placenta‐to‐maternal ratio,ratio,NA,16,Day

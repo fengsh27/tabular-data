@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import Any, Callable, Optional
+from langchain_openai.chat_models.base import BaseChatOpenAI
 import logging
 
 from extractor.agents.pk_specimen_summary.pk_spec_sum_workflow_utils import PKSpecSumWorkflowState
@@ -13,6 +14,8 @@ from extractor.agents.pk_specimen_summary.pk_spec_sum_common_agent import (
     PKSpecSumCommonAgent,
 )
 from extractor.prompts_utils import generate_previous_errors_prompt
+from extractor.agents.agent_factory import get_common_agent
+from extractor.agents.common_agent.common_agent import CommonAgent
 
 logger = logging.getLogger(__name__)
 
@@ -24,6 +27,8 @@ class PKSpecSumCommonStep(ABC):
         self.start_descp = ""
         self.end_title = ""
 
+    def get_agent(self, llm:BaseChatOpenAI) -> CommonAgent:
+        return get_common_agent(llm=llm)
     def enter_step(self, state: PKSpecSumWorkflowState):
         pk_spec_sum_enter_step(state, self.start_title, self.start_descp)
 
@@ -125,9 +130,9 @@ class PKSpecSumCommonAgentStep(PKSpecSumCommonStep):
         llm = state["llm"]
         schema = self.get_schema()
         post_process, kwargs = self.get_post_processor_and_kwargs(state)
-        agent = PKSpecSumCommonAgent(llm=llm)
+        agent = self.get_agent(llm)
         if kwargs is not None:
-            res, processed_res, token_usage = agent.go(
+            res, processed_res, token_usage, _ = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=schema,
@@ -135,7 +140,7 @@ class PKSpecSumCommonAgentStep(PKSpecSumCommonStep):
                 **kwargs,
             )
         else:
-            res, processed_res, token_usage = agent.go(
+            res, processed_res, token_usage, _ = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=schema,
@@ -146,8 +151,8 @@ class PKSpecSumCommonAgentStep(PKSpecSumCommonStep):
             try:
                 reasoning_process = (
                     res["reasoning_process"]
-                    if type(res) == dict
-                    else res.reasoning_process
+                    if type(res) == dict and "reasoning_process" in res
+                    else (res.reasoning_process if hasattr(res, "reasoning_process") else "")
                 )
             except Exception as e:
                 logger.error(

@@ -10,6 +10,12 @@ class PaperTypeEnum(Enum):
     Neither = "Neither"
     Unknown = "Unknown"
 
+
+class FinalAnswerEnum(Enum):
+    Correct = "Correct"
+    Incorrect = "Incorrect"
+    Error = "Error"
+
 class PKPECurationWorkflowState(TypedDict):
     pmid: str
     paper_type: Optional[PaperTypeEnum] = PaperTypeEnum.Unknown
@@ -18,7 +24,7 @@ class PKPECurationWorkflowState(TypedDict):
     full_text: Optional[str] = None
     source_tables: Optional[str] = None
     curated_table: Optional[str] = None
-    final_answer: Optional[bool] = None
+    final_answer: Optional[FinalAnswerEnum] = None
     suggested_fix: Optional[str] = None
     explanation: Optional[str] = None
     verification_reasoning_process: Optional[str] = None

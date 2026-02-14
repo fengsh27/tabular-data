@@ -1,0 +1,243 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter value,Parameter unit,Time value,Time unit
+1,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,dose,10,mg/kg,N/A,N/A
+1,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,dose interval,6,weeks,N/A,N/A
+1,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,14,days,N/A,N/A
+1,infliximab,infliximab,maternal plasma,maternal (pregnant adults),postpartum,N/A,concentration,40.0,ug/mL,6,weeks postpartum
+1,infliximab,infliximab,infant plasma,neonate,postpartum,N/A,concentration,39.5,ug/mL,6,weeks postpartum
+1,infliximab,infliximab,infant plasma,infant,postpartum,N/A,month IFX undetectable,7,month,N/A,N/A
+2,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,dose,5,mg/kg,N/A,N/A
+2,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,dose interval,6,weeks,N/A,N/A
+2,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,30,days,N/A,N/A
+2,infliximab,infliximab,maternal plasma,maternal (pregnant adults),delivery,N/A,concentration,15.1,ug/mL,birth,N/A
+2,infliximab,infliximab,infant plasma,neonate,delivery,N/A,concentration,25.3,ug/mL,birth,N/A
+2,infliximab,infliximab,infant plasma,infant,postpartum,N/A,month IFX undetectable,5,month,N/A,N/A
+3,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,dose,5,mg/kg,N/A,N/A
+3,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,dose interval,6,weeks,N/A,N/A
+3,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,2,days,N/A,N/A
+3,infliximab,infliximab,maternal plasma,maternal (pregnant adults),delivery,N/A,concentration,1.4,ug/mL,birth,N/A
+3,infliximab,infliximab,cord blood,fetal,delivery,N/A,concentration,2.0,ug/mL,birth,N/A
+3,infliximab,infliximab,infant plasma,neonate,postpartum,N/A,concentration,2.9,ug/mL,2,weeks postpartum
+3,infliximab,infliximab,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,143,%,birth,N/A
+3,infliximab,infliximab,infant plasma,infant,postpartum,N/A,month IFX undetectable,2,month,N/A,N/A
+4,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,dose,5,mg/kg,N/A,N/A
+4,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,dose interval,6,weeks,N/A,N/A
+4,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,14,days,N/A,N/A
+4,infliximab,infliximab,maternal plasma,maternal (pregnant adults),delivery,N/A,concentration,19.2,ug/mL,birth,N/A
+4,infliximab,infliximab,cord blood,fetal,delivery,N/A,concentration,26.5,ug/mL,birth,N/A
+4,infliximab,infliximab,infant plasma,neonate,delivery,N/A,concentration,23.6,ug/mL,birth,N/A
+4,infliximab,infliximab,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,138,%,birth,N/A
+4,infliximab,infliximab,infant plasma,infant,postpartum,N/A,month IFX undetectable,7,month,N/A,N/A
+5,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,dose,5,mg/kg,N/A,N/A
+5,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,dose interval,8,weeks,N/A,N/A
+5,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,91,days,N/A,N/A
+5,infliximab,infliximab,maternal plasma,maternal (pregnant adults),delivery,N/A,concentration,3.8,ug/mL,birth,N/A
+5,infliximab,infliximab,cord blood,fetal,delivery,N/A,concentration,3.3,ug/mL,birth,N/A
+5,infliximab,infliximab,infant plasma,neonate,delivery,N/A,concentration,4.2,ug/mL,birth,N/A
+5,infliximab,infliximab,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,87,%,birth,N/A
+5,infliximab,infliximab,infant plasma,infant,postpartum,N/A,month IFX undetectable,2,month,N/A,N/A
+6,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,dose,5,mg/kg,N/A,N/A
+6,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,dose interval,8,weeks,N/A,N/A
+6,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,15,days,N/A,N/A
+6,infliximab,infliximab,maternal plasma,maternal (pregnant adults),delivery,N/A,concentration,4.8,ug/mL,birth,N/A
+6,infliximab,infliximab,cord blood,fetal,delivery,N/A,concentration,8.8,ug/mL,birth,N/A
+6,infliximab,infliximab,infant plasma,neonate,delivery,N/A,concentration,8.7,ug/mL,birth,N/A
+6,infliximab,infliximab,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,183,%,birth,N/A
+6,infliximab,infliximab,infant plasma,infant,postpartum,N/A,month IFX undetectable,3,month,N/A,N/A
+7,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,dose,5,mg/kg,N/A,N/A
+7,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,dose interval,8,weeks,N/A,N/A
+7,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,55,days,N/A,N/A
+7,infliximab,infliximab,maternal plasma,maternal (pregnant adults),delivery,N/A,concentration,14.5,ug/mL,birth,N/A
+7,infliximab,infliximab,cord blood,fetal,delivery,N/A,concentration,20.5,ug/mL,birth,N/A
+7,infliximab,infliximab,infant plasma,neonate,delivery,N/A,concentration,28.2,ug/mL,birth,N/A
+7,infliximab,infliximab,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,141,%,birth,N/A
+7,infliximab,infliximab,infant plasma,infant,postpartum,N/A,month IFX undetectable,4,month,N/A,N/A
+8,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,dose,5,mg/kg,N/A,N/A
+8,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,dose interval,6,weeks,N/A,N/A
+8,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,46,days,N/A,N/A
+8,infliximab,infliximab,maternal plasma,maternal (pregnant adults),delivery,N/A,concentration,16.5,ug/mL,birth,N/A
+8,infliximab,infliximab,cord blood,fetal,delivery,N/A,concentration,26.5,ug/mL,birth,N/A
+8,infliximab,infliximab,infant plasma,neonate,delivery,N/A,concentration,27.5,ug/mL,birth,N/A
+8,infliximab,infliximab,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,160,%,birth,N/A
+8,infliximab,infliximab,infant plasma,infant,postpartum,N/A,month IFX undetectable,5,month,N/A,N/A
+9,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,dose,5,mg/kg,N/A,N/A
+9,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,dose interval,8,weeks,N/A,N/A
+9,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,35,days,N/A,N/A
+9,infliximab,infliximab,maternal plasma,maternal (pregnant adults),delivery,N/A,concentration,2.2,ug/mL,birth,N/A
+9,infliximab,infliximab,cord blood,fetal,delivery,N/A,concentration,8.4,ug/mL,birth,N/A
+9,infliximab,infliximab,infant plasma,neonate,delivery,N/A,concentration,10.6,ug/mL,birth,N/A
+9,infliximab,infliximab,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,381,%,birth,N/A
+9,infliximab,infliximab,infant plasma,infant,postpartum,N/A,month IFX undetectable,4,month,N/A,N/A
+10,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,dose,5,mg/kg,N/A,N/A
+10,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,dose interval,6,weeks,N/A,N/A
+10,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,77,days,N/A,N/A
+10,infliximab,infliximab,maternal plasma,maternal (pregnant adults),delivery,N/A,concentration,4.1,ug/mL,birth,N/A
+10,infliximab,infliximab,cord blood,fetal,delivery,N/A,concentration,13.6,ug/mL,birth,N/A
+10,infliximab,infliximab,infant plasma,neonate,postpartum,N/A,concentration,4.7,ug/mL,4,weeks postpartum
+10,infliximab,infliximab,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,332,%,birth,N/A
+11,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,dose,10,mg/kg,N/A,N/A
+11,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,dose interval,8,weeks,N/A,N/A
+11,infliximab,infliximab,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,74,days,N/A,N/A
+11,infliximab,infliximab,maternal plasma,maternal (pregnant adults),delivery,N/A,concentration,5.1,ug/mL,birth,N/A
+11,infliximab,infliximab,cord blood,fetal,delivery,N/A,concentration,20.4,ug/mL,birth,N/A
+11,infliximab,infliximab,infant plasma,neonate,postpartum,N/A,concentration,8.4,ug/mL,4,weeks postpartum
+11,infliximab,infliximab,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,400,%,birth,N/A
+11,infliximab,infliximab,infant plasma,infant,postpartum,N/A,month IFX undetectable,4,month,N/A,N/A
+1,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,dose,40,mg,N/A,N/A
+1,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,dose interval,2,weeks,N/A,N/A
+1,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,7,days,N/A,N/A
+1,adalimumab,adalimumab,maternal plasma,maternal (pregnant adults),delivery,N/A,concentration,6.05,ug/mL,birth,N/A
+1,adalimumab,adalimumab,cord blood,fetal,delivery,N/A,concentration,9.29,ug/mL,birth,N/A
+1,adalimumab,adalimumab,infant plasma,neonate,delivery,N/A,concentration,6.17,ug/mL,birth,N/A
+1,adalimumab,adalimumab,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,153,%,birth,N/A
+2,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,dose,40,mg,N/A,N/A
+2,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,dose interval,2,weeks,N/A,N/A
+2,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,56,days,N/A,N/A
+2,adalimumab,adalimumab,maternal plasma,maternal (pregnant adults),delivery,N/A,concentration,1.84,ug/mL,birth,N/A
+2,adalimumab,adalimumab,cord blood,fetal,delivery,N/A,concentration,5.39,ug/mL,birth,N/A
+2,adalimumab,adalimumab,infant plasma,neonate,delivery,N/A,concentration,6.01,ug/mL,birth,N/A
+2,adalimumab,adalimumab,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,293,%,birth,N/A
+2,adalimumab,adalimumab,infant plasma,infant,postpartum,N/A,infant concentration (follow-up),1.94,ug/mL,6,weeks postpartum
+3,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,dose,40,mg,N/A,N/A
+3,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,dose interval,2,weeks,N/A,N/A
+3,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,7,days,N/A,N/A
+3,adalimumab,adalimumab,maternal plasma,maternal (pregnant adults),delivery,N/A,concentration,3.84,ug/mL,birth,N/A
+3,adalimumab,adalimumab,cord blood,fetal,delivery,N/A,concentration,4.57,ug/mL,birth,N/A
+3,adalimumab,adalimumab,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,119,%,birth,N/A
+4,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,dose,40,mg,N/A,N/A
+4,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,dose interval,2,weeks,N/A,N/A
+4,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,42,days,N/A,N/A
+4,adalimumab,adalimumab,maternal plasma,maternal (pregnant adults),delivery,N/A,concentration,0.0,ug/mL,birth,N/A
+4,adalimumab,adalimumab,cord blood,fetal,delivery,N/A,concentration,0.16,ug/mL,birth,N/A
+5,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,dose,40,mg,N/A,N/A
+5,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,dose interval,2,weeks,N/A,N/A
+5,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,35,days,N/A,N/A
+5,adalimumab,adalimumab,maternal plasma,maternal (pregnant adults),delivery,N/A,concentration,2.2,ug/mL,birth,N/A
+5,adalimumab,adalimumab,cord blood,fetal,delivery,N/A,concentration,4.18,ug/mL,birth,N/A
+5,adalimumab,adalimumab,infant plasma,neonate,delivery,N/A,concentration,4.28,ug/mL,birth,N/A
+5,adalimumab,adalimumab,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,190,%,birth,N/A
+5,adalimumab,adalimumab,infant plasma,infant,postpartum,N/A,infant concentration (follow-up),0.934,ug/mL,8,weeks postpartum
+6,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,dose,40,mg,N/A,N/A
+6,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,dose interval,2,weeks,N/A,N/A
+6,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,42,days,N/A,N/A
+6,adalimumab,adalimumab,maternal plasma,maternal (pregnant adults),delivery,N/A,concentration,3.21,ug/mL,birth,N/A
+6,adalimumab,adalimumab,cord blood,fetal,delivery,N/A,concentration,4.74,ug/mL,birth,N/A
+6,adalimumab,adalimumab,infant plasma,neonate,delivery,N/A,concentration,4.87,ug/mL,birth,N/A
+6,adalimumab,adalimumab,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,148,%,birth,N/A
+6,adalimumab,adalimumab,infant plasma,infant,postpartum,N/A,infant concentration (follow-up),1.31,ug/mL,7,weeks postpartum
+7,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,dose,40,mg,N/A,N/A
+7,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,dose interval,2,weeks,N/A,N/A
+7,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,42,days,N/A,N/A
+7,adalimumab,adalimumab,maternal plasma,maternal (pregnant adults),delivery,N/A,concentration,3.36,ug/mL,birth,N/A
+7,adalimumab,adalimumab,cord blood,fetal,delivery,N/A,concentration,8.94,ug/mL,birth,N/A
+7,adalimumab,adalimumab,infant plasma,neonate,delivery,N/A,concentration,8.09,ug/mL,birth,N/A
+7,adalimumab,adalimumab,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,266,%,birth,N/A
+7,adalimumab,adalimumab,infant plasma,infant,postpartum,N/A,infant concentration (follow-up),0.529,ug/mL,11,weeks postpartum
+8,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,dose,40,mg,N/A,N/A
+8,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,dose interval,1,weeks,N/A,N/A
+8,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,1,days,N/A,N/A
+8,adalimumab,adalimumab,maternal plasma,maternal (pregnant adults),delivery,N/A,concentration,16.1,ug/mL,birth,N/A
+8,adalimumab,adalimumab,cord blood,fetal,delivery,N/A,concentration,19.7,ug/mL,birth,N/A
+8,adalimumab,adalimumab,infant plasma,neonate,delivery,N/A,concentration,17.7,ug/mL,birth,N/A
+8,adalimumab,adalimumab,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,122,%,birth,N/A
+9,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,dose,40,mg,N/A,N/A
+9,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,dose interval,2,weeks,N/A,N/A
+9,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,49,days,N/A,N/A
+9,adalimumab,adalimumab,maternal plasma,maternal (pregnant adults),delivery,N/A,concentration,2.24,ug/mL,birth,N/A
+9,adalimumab,adalimumab,cord blood,fetal,delivery,N/A,concentration,4.95,ug/mL,birth,N/A
+9,adalimumab,adalimumab,infant plasma,neonate,delivery,N/A,concentration,4.64,ug/mL,birth,N/A
+9,adalimumab,adalimumab,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,220,%,birth,N/A
+10,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,dose,40,mg,N/A,N/A
+10,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,dose interval,2,weeks,N/A,N/A
+10,adalimumab,adalimumab,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,7,days,N/A,N/A
+10,adalimumab,adalimumab,maternal plasma,maternal (pregnant adults),delivery,N/A,concentration,8.48,ug/mL,birth,N/A
+10,adalimumab,adalimumab,cord blood,fetal,delivery,N/A,concentration,8.29,ug/mL,birth,N/A
+10,adalimumab,adalimumab,infant plasma,neonate,delivery,N/A,concentration,9.17,ug/mL,birth,N/A
+10,adalimumab,adalimumab,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,98,%,birth,N/A
+01,certolizumab pegol,certolizumab pegol,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,14,days,N/A,N/A
+01,certolizumab pegol,CZP,maternal plasma,maternal (pregnant adults),delivery,N/A,CZP concentration,18.83,ug/mL,birth,N/A
+01,certolizumab pegol,CZP,cord blood,fetal,delivery,N/A,CZP concentration,1.65,ug/mL,birth,N/A
+01,certolizumab pegol,CZP,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,8.8,%,birth,N/A
+01,certolizumab pegol,PEG,maternal plasma,maternal (pregnant adults),delivery,N/A,PEG concentration,33.4,ug/mL,birth,N/A
+01,certolizumab pegol,PEG,cord blood,fetal,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+01,certolizumab pegol,PEG,infant plasma,neonate,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+02,certolizumab pegol,certolizumab pegol,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,7,days,N/A,N/A
+02,certolizumab pegol,CZP,maternal plasma,maternal (pregnant adults),delivery,N/A,CZP concentration,59.57,ug/mL,birth,N/A
+02,certolizumab pegol,CZP,cord blood,fetal,delivery,N/A,CZP concentration,0.94,ug/mL,birth,N/A
+02,certolizumab pegol,CZP,infant plasma,neonate,delivery,N/A,CZP concentration,1.02,ug/mL,birth,N/A
+02,certolizumab pegol,CZP,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,1.6,%,birth,N/A
+02,certolizumab pegol,PEG,maternal plasma,maternal (pregnant adults),delivery,N/A,PEG concentration,51.3,ug/mL,birth,N/A
+02,certolizumab pegol,PEG,cord blood,fetal,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+02,certolizumab pegol,PEG,infant plasma,neonate,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+03,certolizumab pegol,certolizumab pegol,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,28,days,N/A,N/A
+03,certolizumab pegol,CZP,maternal plasma,maternal (pregnant adults),delivery,N/A,CZP concentration,4.87,ug/mL,birth,N/A
+03,certolizumab pegol,CZP,cord blood,fetal,delivery,N/A,CZP concentration,1.19,ug/mL,birth,N/A
+03,certolizumab pegol,CZP,infant plasma,neonate,delivery,N/A,CZP concentration,1.22,ug/mL,birth,N/A
+03,certolizumab pegol,CZP,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,24,%,birth,N/A
+03,certolizumab pegol,PEG,maternal plasma,maternal (pregnant adults),delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+03,certolizumab pegol,PEG,cord blood,fetal,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+03,certolizumab pegol,PEG,infant plasma,neonate,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+04,certolizumab pegol,certolizumab pegol,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,17,days,N/A,N/A
+04,certolizumab pegol,CZP,maternal plasma,maternal (pregnant adults),delivery,N/A,CZP concentration,20.13,ug/mL,birth,N/A
+04,certolizumab pegol,CZP,cord blood,fetal,delivery,N/A,CZP concentration,0.57,ug/mL,birth,N/A
+04,certolizumab pegol,CZP,infant plasma,neonate,delivery,N/A,CZP concentration,0.44,ug/mL,birth,N/A
+04,certolizumab pegol,CZP,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,2.8,%,birth,N/A
+04,certolizumab pegol,PEG,maternal plasma,maternal (pregnant adults),delivery,N/A,PEG concentration,34.7,ug/mL,birth,N/A
+04,certolizumab pegol,PEG,cord blood,fetal,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+04,certolizumab pegol,PEG,infant plasma,neonate,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+05,certolizumab pegol,certolizumab pegol,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,21,days,N/A,N/A
+05,certolizumab pegol,CZP,maternal plasma,maternal (pregnant adults),delivery,N/A,CZP concentration,16.49,ug/mL,birth,N/A
+05,certolizumab pegol,CZP,cord blood,fetal,delivery,N/A,CZP concentration (BLQ <0.41),0.41,ug/mL,birth,N/A
+05,certolizumab pegol,CZP,infant plasma,neonate,delivery,N/A,CZP concentration (BLQ <0.41),0.41,ug/mL,birth,N/A
+05,certolizumab pegol,CZP,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,2.5,%,birth,N/A
+05,certolizumab pegol,PEG,maternal plasma,maternal (pregnant adults),delivery,N/A,PEG concentration,27.7,ug/mL,birth,N/A
+05,certolizumab pegol,PEG,cord blood,fetal,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+06,certolizumab pegol,certolizumab pegol,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,24,days,N/A,N/A
+06,certolizumab pegol,CZP,maternal plasma,maternal (pregnant adults),delivery,N/A,CZP concentration,34.65,ug/mL,birth,N/A
+06,certolizumab pegol,CZP,cord blood,fetal,delivery,N/A,CZP concentration,1.66,ug/mL,birth,N/A
+06,certolizumab pegol,CZP,infant plasma,neonate,delivery,N/A,CZP concentration,1.58,ug/mL,birth,N/A
+06,certolizumab pegol,CZP,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,4.8,%,birth,N/A
+06,certolizumab pegol,PEG,maternal plasma,maternal (pregnant adults),delivery,N/A,PEG concentration,34.4,ug/mL,birth,N/A
+06,certolizumab pegol,PEG,cord blood,fetal,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+06,certolizumab pegol,PEG,infant plasma,neonate,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+07,certolizumab pegol,certolizumab pegol,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,28,days,N/A,N/A
+07,certolizumab pegol,CZP,maternal plasma,maternal (pregnant adults),delivery,N/A,CZP concentration,1.87,ug/mL,birth,N/A
+07,certolizumab pegol,CZP,cord blood,fetal,delivery,N/A,CZP concentration (BLQ <0.41),0.41,ug/mL,birth,N/A
+07,certolizumab pegol,CZP,infant plasma,neonate,delivery,N/A,CZP concentration (BLQ <0.41),0.41,ug/mL,birth,N/A
+07,certolizumab pegol,CZP,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,22,%,birth,N/A
+07,certolizumab pegol,PEG,maternal plasma,maternal (pregnant adults),delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+07,certolizumab pegol,PEG,cord blood,fetal,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+07,certolizumab pegol,PEG,infant plasma,neonate,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+08-A,certolizumab pegol,certolizumab pegol,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,42,days,N/A,N/A
+08-A,certolizumab pegol,CZP,maternal plasma,maternal (pregnant adults),delivery,N/A,CZP concentration,6.32,ug/mL,birth,N/A
+08-A,certolizumab pegol,CZP,cord blood,fetal,delivery,N/A,CZP concentration (BLQ <0.41),0.41,ug/mL,birth,N/A
+08-A,certolizumab pegol,CZP,infant plasma,neonate,delivery,N/A,CZP concentration,0.58,ug/mL,birth,N/A
+08-A,certolizumab pegol,CZP,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,6.4,%,birth,N/A
+08-A,certolizumab pegol,PEG,maternal plasma,maternal (pregnant adults),delivery,N/A,PEG concentration,11.1,ug/mL,birth,N/A
+08-A,certolizumab pegol,PEG,cord blood,fetal,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+08-A,certolizumab pegol,PEG,infant plasma,neonate,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+08-B,certolizumab pegol,CZP,cord blood,fetal,delivery,N/A,CZP concentration (BLQ <0.41),0.41,ug/mL,birth,N/A
+08-B,certolizumab pegol,CZP,infant plasma,neonate,delivery,N/A,CZP concentration (BLQ <0.41),0.41,ug/mL,birth,N/A
+08-B,certolizumab pegol,CZP,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,6.4,%,birth,N/A
+08-B,certolizumab pegol,PEG,cord blood,fetal,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+08-B,certolizumab pegol,PEG,infant plasma,neonate,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+09-A,certolizumab pegol,certolizumab pegol,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,6,days,N/A,N/A
+09-A,certolizumab pegol,CZP,maternal plasma,maternal (pregnant adults),delivery,N/A,CZP concentration,42.7,ug/mL,birth,N/A
+09-A,certolizumab pegol,CZP,cord blood,fetal,delivery,N/A,CZP concentration,1.28,ug/mL,birth,N/A
+09-A,certolizumab pegol,CZP,infant plasma,neonate,delivery,N/A,CZP concentration,1.34,ug/mL,birth,N/A
+09-A,certolizumab pegol,CZP,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,3.0,%,birth,N/A
+09-A,certolizumab pegol,PEG,maternal plasma,maternal (pregnant adults),delivery,N/A,PEG concentration,62.1,ug/mL,birth,N/A
+09-A,certolizumab pegol,PEG,cord blood,fetal,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+09-A,certolizumab pegol,PEG,infant plasma,neonate,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+09-B,certolizumab pegol,CZP,cord blood,fetal,delivery,N/A,CZP concentration,1.16,ug/mL,birth,N/A
+09-B,certolizumab pegol,CZP,infant plasma,neonate,delivery,N/A,CZP concentration,1.18,ug/mL,birth,N/A
+09-B,certolizumab pegol,CZP,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,2.7,%,birth,N/A
+09-B,certolizumab pegol,PEG,cord blood,fetal,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+09-B,certolizumab pegol,PEG,infant plasma,neonate,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+10,certolizumab pegol,certolizumab pegol,N/A,maternal (pregnant adults),pregnancy,N/A,time from last dose to birth,5,days,N/A,N/A
+10,certolizumab pegol,CZP,maternal plasma,maternal (pregnant adults),delivery,N/A,CZP concentration,37.83,ug/mL,birth,N/A
+10,certolizumab pegol,CZP,cord blood,fetal,delivery,N/A,CZP concentration,0.55,ug/mL,birth,N/A
+10,certolizumab pegol,CZP,infant plasma,neonate,delivery,N/A,CZP concentration,0.6,ug/mL,birth,N/A
+10,certolizumab pegol,CZP,cord blood/maternal plasma,maternal/fetal,delivery,N/A,cord/mother ratio at birth,1.5,%,birth,N/A
+10,certolizumab pegol,PEG,maternal plasma,maternal (pregnant adults),delivery,N/A,PEG concentration,74.9,ug/mL,birth,N/A
+10,certolizumab pegol,PEG,cord blood,fetal,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A
+10,certolizumab pegol,PEG,infant plasma,neonate,delivery,N/A,PEG concentration (BLQ <9),9.0,ug/mL,birth,N/A

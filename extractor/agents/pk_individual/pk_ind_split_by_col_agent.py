@@ -1,4 +1,4 @@
-from langchain.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate
 from pydantic import Field
 
 from TabFuncFlow.operations.f_split_by_cols import f_split_by_cols
@@ -11,6 +11,7 @@ from extractor.agents.agent_utils import display_md_table
 from extractor.agents.pk_individual.pk_ind_common_agent import PKIndCommonAgentResult
 
 SPLIT_BY_COLUMNS_PROMPT = ChatPromptTemplate.from_template("""
+### **Task**
 There is a table related to pharmacokinetics (PK):
 {processed_md_table}
 
@@ -25,6 +26,11 @@ Please follow these steps:
 
 Return the results as a list of lists, where each inner list represents a sub-table with its included columns.
 [["ColumnA", "ColumnB", "ColumnC", "ColumnG"], ["ColumnA", "ColumnD", "ColumnE", "ColumnF", "ColumnG"]]
+
+---
+
+### **Important Instructions**
+1. Use the provided column names exactly as given in the output list. Do not rename, alter, or create any new column names.
 """)
 
 

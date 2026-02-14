@@ -8,7 +8,7 @@ from langchain_openai.chat_models.base import BaseChatOpenAI
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 from langchain_core.messages import HumanMessage
-from langchain.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate
 import logging
 from pydantic import BaseModel, Field
 

@@ -4,6 +4,7 @@ from typing import Any, Callable, Optional
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import AzureChatOpenAI
 from langchain_openai.chat_models.base import BaseChatOpenAI
+from extractor.llm_utils import structured_output_llm
 from langchain_anthropic.chat_models import ChatAnthropic
 from langchain_google_genai.chat_models import ChatGoogleGenerativeAI
 from langchain_community.callbacks.openai_info import OpenAICallbackHandler
@@ -37,7 +38,7 @@ def get_azure_openai():
 
 class PKSumCommonAgentResult(BaseModel):
     reasoning_process: str = Field(
-        description="A detailed explanation of the thought process or reasoning steps taken to reach a conclusion."
+        description="A concise explanation of the thought process or reasoning steps taken to reach a conclusion in 1-2 sentences."
     )
 
 
@@ -93,7 +94,8 @@ class PKSumCommonAgent(CommonAgent):
                 ("human", instruction_prompt),
             ])
             updated_prompt = self._process_retryexception_message(prompt)
-            agent = updated_prompt | self.llm.with_structured_output(schema)
+            agent = structured_output_llm(self.llm, schema, updated_prompt)
+            # agent = updated_prompt | self.llm.with_structured_output(schema)
             callback_handler = OpenAICallbackHandler()
             res = agent.invoke(
                 input={},
@@ -150,7 +152,8 @@ class PKSumCommonAgent(CommonAgent):
             f"Please review the following step-by-step reasoning and provide the answer based on it: ```{cot_msg}```"
         )]
         final_prompt = ChatPromptTemplate.from_messages(msgs)
-        agent = final_prompt | self.structured_llm.with_structured_output(schema)
+        agent = structured_output_llm(self.structured_llm, schema, final_prompt)
+        # agent = final_prompt | self.structured_llm.with_structured_output(schema)
         try:
             callback_handler = OpenAICallbackHandler()
             res = agent.invoke(

@@ -1,0 +1,92 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter value,Parameter unit,Time value,Time unit
+1,venlafaxine,venlafaxine,N/A,maternal (pregnant/postpartum adults),pregnancy,N/A,dose,75.0,mg/day,N/A,N/A
+1,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),1st trimester,N/A,plasma concentration,25.0,ug/L,1,trimester
+1,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),1st trimester,N/A,plasma concentration,70.0,ug/L,1,trimester
+1,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),1st trimester,N/A,ODV/V ratio,2.8,ratio,1,trimester
+1,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),2nd trimester,N/A,plasma concentration,66.0,ug/L,2,trimester
+1,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),2nd trimester,N/A,plasma concentration,76.0,ug/L,2,trimester
+1,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),2nd trimester,N/A,ODV/V ratio,1.15,ratio,2,trimester
+1,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),3rd trimester,N/A,plasma concentration,25.0,ug/L,3,trimester
+1,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),3rd trimester,N/A,plasma concentration,100.0,ug/L,3,trimester
+1,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),3rd trimester,N/A,ODV/V ratio,4.0,ratio,3,trimester
+1,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,25.0,ug/L,3,month postpartum
+1,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,120.0,ug/L,3,month postpartum
+1,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,ODV/V ratio,4.8,ratio,3,month postpartum
+2,venlafaxine,venlafaxine,N/A,maternal (pregnant/postpartum adults),pregnancy,N/A,dose,150.0,mg/day,N/A,N/A
+2,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),1st trimester,N/A,plasma concentration,91.0,ug/L,1,trimester
+2,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),1st trimester,N/A,plasma concentration,110.0,ug/L,1,trimester
+2,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),1st trimester,N/A,ODV/V ratio,1.21,ratio,1,trimester
+2,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),2nd trimester,N/A,plasma concentration,61.0,ug/L,2,trimester
+2,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),2nd trimester,N/A,plasma concentration,100.0,ug/L,2,trimester
+2,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),2nd trimester,N/A,ODV/V ratio,1.64,ratio,2,trimester
+2,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),3rd trimester,N/A,plasma concentration,25.0,ug/L,3,trimester
+2,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),3rd trimester,N/A,plasma concentration,80.0,ug/L,3,trimester
+2,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),3rd trimester,N/A,ODV/V ratio,3.2,ratio,3,trimester
+2,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,92.0,ug/L,3,month postpartum
+2,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,130.0,ug/L,3,month postpartum
+2,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,ODV/V ratio,1.41,ratio,3,month postpartum
+3,venlafaxine,venlafaxine,N/A,maternal (pregnant/postpartum adults),pregnancy,N/A,dose,37.5,mg/day,N/A,N/A
+3,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),1st trimester,N/A,plasma concentration,57.0,ug/L,1,trimester
+3,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),1st trimester,N/A,plasma concentration,25.0,ug/L,1,trimester
+3,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),1st trimester,N/A,ODV/V ratio,0.44,ratio,1,trimester
+3,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),2nd trimester,N/A,plasma concentration,79.0,ug/L,2,trimester
+3,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),2nd trimester,N/A,plasma concentration,67.0,ug/L,2,trimester
+3,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),2nd trimester,N/A,ODV/V ratio,0.85,ratio,2,trimester
+3,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),3rd trimester,N/A,plasma concentration,25.0,ug/L,3,trimester
+3,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),3rd trimester,N/A,plasma concentration,61.0,ug/L,3,trimester
+3,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),3rd trimester,N/A,ODV/V ratio,2.44,ratio,3,trimester
+3,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,170.0,ug/L,3,month postpartum
+3,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,97.0,ug/L,3,month postpartum
+3,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,ODV/V ratio,0.57,ratio,3,month postpartum
+4,venlafaxine,venlafaxine,N/A,maternal (pregnant/postpartum adults),pregnancy,N/A,dose,37.5,mg/day,N/A,N/A
+4,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),1st trimester,N/A,plasma concentration,25.0,ug/L,1,trimester
+4,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),1st trimester,N/A,plasma concentration,25.0,ug/L,1,trimester
+4,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),1st trimester,N/A,ODV/V ratio,1.0,ratio,1,trimester
+4,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),2nd trimester,N/A,plasma concentration,25.0,ug/L,2,trimester
+4,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),2nd trimester,N/A,plasma concentration,51.0,ug/L,2,trimester
+4,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),2nd trimester,N/A,ODV/V ratio,2.04,ratio,2,trimester
+4,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),3rd trimester,N/A,plasma concentration,25.0,ug/L,3,trimester
+4,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),3rd trimester,N/A,plasma concentration,74.0,ug/L,3,trimester
+4,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),3rd trimester,N/A,ODV/V ratio,2.96,ratio,3,trimester
+4,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,87.0,ug/L,3,month postpartum
+4,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,210.0,ug/L,3,month postpartum
+4,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,ODV/V ratio,2.41,ratio,3,month postpartum
+5,venlafaxine,venlafaxine,N/A,maternal (pregnant/postpartum adults),pregnancy,N/A,dose,150.0,mg/day,N/A,N/A
+5,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),1st trimester,N/A,plasma concentration,73.0,ug/L,1,trimester
+5,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),1st trimester,N/A,plasma concentration,220.0,ug/L,1,trimester
+5,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),1st trimester,N/A,ODV/V ratio,3.01,ratio,1,trimester
+5,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),2nd trimester,N/A,plasma concentration,25.0,ug/L,2,trimester
+5,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),2nd trimester,N/A,plasma concentration,190.0,ug/L,2,trimester
+5,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),2nd trimester,N/A,ODV/V ratio,7.6,ratio,2,trimester
+5,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),3rd trimester,N/A,plasma concentration,25.0,ug/L,3,trimester
+5,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),3rd trimester,N/A,plasma concentration,200.0,ug/L,3,trimester
+5,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),3rd trimester,N/A,ODV/V ratio,8.0,ratio,3,trimester
+5,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,25.0,ug/L,3,month postpartum
+5,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,230.0,ug/L,3,month postpartum
+5,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,ODV/V ratio,9.2,ratio,3,month postpartum
+6,venlafaxine,venlafaxine,N/A,maternal (pregnant/postpartum adults),pregnancy,N/A,dose,225.0,mg/day,N/A,N/A
+6,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),1st trimester,N/A,plasma concentration,450.0,ug/L,1,trimester
+6,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),1st trimester,N/A,plasma concentration,690.0,ug/L,1,trimester
+6,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),1st trimester,N/A,ODV/V ratio,1.53,ratio,1,trimester
+6,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),2nd trimester,N/A,plasma concentration,270.0,ug/L,2,trimester
+6,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),2nd trimester,N/A,plasma concentration,630.0,ug/L,2,trimester
+6,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),2nd trimester,N/A,ODV/V ratio,2.33,ratio,2,trimester
+6,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),3rd trimester,N/A,plasma concentration,190.0,ug/L,3,trimester
+6,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),3rd trimester,N/A,plasma concentration,630.0,ug/L,3,trimester
+6,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),3rd trimester,N/A,ODV/V ratio,3.32,ratio,3,trimester
+6,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,220.0,ug/L,3,month postpartum
+6,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,290.0,ug/L,3,month postpartum
+6,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,ODV/V ratio,1.32,ratio,3,month postpartum
+7,venlafaxine,venlafaxine,N/A,maternal (pregnant/postpartum adults),pregnancy,N/A,dose,150.0,mg/day,N/A,N/A
+7,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),1st trimester,N/A,plasma concentration,65.0,ug/L,1,trimester
+7,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),1st trimester,N/A,plasma concentration,200.0,ug/L,1,trimester
+7,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),1st trimester,N/A,ODV/V ratio,3.08,ratio,1,trimester
+7,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),2nd trimester,N/A,plasma concentration,120.0,ug/L,2,trimester
+7,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),2nd trimester,N/A,plasma concentration,350.0,ug/L,2,trimester
+7,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),2nd trimester,N/A,ODV/V ratio,2.92,ratio,2,trimester
+7,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),3rd trimester,N/A,plasma concentration,61.0,ug/L,3,trimester
+7,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),3rd trimester,N/A,plasma concentration,260.0,ug/L,3,trimester
+7,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),3rd trimester,N/A,ODV/V ratio,4.26,ratio,3,trimester
+7,venlafaxine,venlafaxine,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,120.0,ug/L,3,month postpartum
+7,venlafaxine,O-desmethylvenlafaxine,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,plasma concentration,260.0,ug/L,3,month postpartum
+7,venlafaxine,ODV/V ratio,plasma,maternal (pregnant/postpartum adults),postpartum,N/A,ODV/V ratio,2.17,ratio,3,month postpartum

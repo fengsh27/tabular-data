@@ -11,8 +11,7 @@ from extractor.agents.pk_summary.pk_sum_param_type_unit_extract_agent import (
     ParamTypeUnitExtractionResult,
     post_process_validate_matched_tuple,
 )
-from extractor.agents.pk_summary.pk_sum_workflow_utils import get_common_agent
-
+from extractor.agents.agent_factory import get_common_agent
 
 class ExtractParamTypeAndUnitStep(PKSumCommonAgentStep):
     def __init__(self):

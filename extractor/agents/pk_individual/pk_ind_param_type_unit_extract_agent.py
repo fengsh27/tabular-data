@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Tuple
 from langchain_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel, Field
 import logging
@@ -11,39 +11,154 @@ from extractor.agents.pk_individual.pk_ind_common_agent import PKIndCommonAgentR
 logger = logging.getLogger(__name__)
 
 UNIT_EXTRACTION_PROMPT = ChatPromptTemplate.from_template("""
-The following main table contains pharmacokinetics (PK) data:  
+
+You are an expert in pharmacokinetics (PK) data interpretation and table normalization.
+
+You are given:
+
+**Main PK Table (reference only):**
 {processed_md_table_aligned}
-Here is the table caption:  
+
+**Table Caption (reference only):**
 {caption}
-From the main table above, I have extracted some columns to create Subtable 1:  
-Below is Subtable 1:
+
+**Subtable 1 (PRIMARY input):**
 {processed_md_sub_table}
-Please note that the column "{key_with_parameter_type}" in Subtable 1 roughly represents the parameter type.
-Carefully analyze the table and follow these steps:  
-(1) Refer to the "{key_with_parameter_type}" column in Subtable 1 to construct three separate lists: one for a new "Parameter type", 
-  one for "Parameter unit", and one for "Parameter value". If the information in Subtable 1 is too coarse or ambiguous, you may need 
-  to refer to the main table and its caption to refine and clarify your summarized "Parameter type" and "Parameter unit", 
-  and if necessary, "Parameter value".
-(1a) **No-Loss Normalization Rule for "Parameter type":**
-    - **Do not drop or merge away any subcomponents.** Preserve every informative token (e.g., matrix, method, timing).
-    - If "Parameter type" is a tuple/list (e.g., `('Cordocentesis', 'Serum')`), **concatenate all elements in order** using `" - "` as the delimiter.  
-      Examples:  
-      - `('Cordocentesis', 'Serum')` → `Cordocentesis-Serum`  
-      - `('Maternal', 'Plasma', 'Trough')` → `Maternal-Plasma-Trough`  
-      - Nested/compound values: `(('Umbilical', 'Vein'), 'Plasma')` → `Umbilical-Vein-Plasma`
-    - Remove brackets/quotes only; **keep original wording and capitalization** (no abbreviations unless already present).
-    - If already a single string, use it as-is (after trimming whitespace).
-(2) Return a tuple containing three lists:  
-    - The first list should contain the extracted "Parameter type" values.  
-    - The second list should contain the corresponding "Parameter unit" values.  
-    - The Third list should contain the corresponding "Parameter value" values.  
-(3) **Strictly ensure that you process only rows 0 to {row_max_index} from the column "{key_with_parameter_type}".**  
-    - The number of processed rows must **exactly match** the number of rows in the Subtable 1—no more, no less. 
-(4) For rows in Subtable 1 that can not be extracted, enter "N/A" for the entire row. 
-(5) The returned list should be like this:  
-    (["Parameter type 1", "Parameter type 2", ...], ["Unit 1", "Unit 2", ...], ["Value 1", "Value 2", ...])  
-(6) **Keep the parameter type simple and informative (e.g. "Concentration", "Cmax", "Tmax" etc)**, **while still applying the No-Loss rule above 
-  for composite labels** (e.g., keep matrices/contexts like `Cordocentesis-Serum` intact).
+
+The column **"{key_with_parameter_type}"** in Subtable 1 *approximately* represents the pharmacokinetic **parameter type**, but it may be incomplete, abbreviated, or ambiguous.
+
+---
+
+## Task
+
+For **each row in Subtable 1 (rows 0 to {row_max_index}, inclusive)**, extract and construct **three aligned outputs**:
+
+1. **Parameter type**
+2. **Parameter unit**
+3. **Parameter value**
+
+You must return these as **three parallel lists**, preserving row order exactly.
+
+---
+
+## Extraction Rules (Follow in Order)
+
+### Step 1 — Row Scope (STRICT)
+
+* Process **only** rows `0 … {row_max_index}` from Subtable 1.
+* The number of output entries **must exactly equal** the number of processed rows.
+* Do not skip, add, reorder, or merge rows.
+
+---
+
+### Step 2 — Parameter Type Construction (PRIMARY FOCUS)
+
+Use the column **"{key_with_parameter_type}"** as the starting point.
+
+#### 2a. No-Loss Normalization Rule (MANDATORY)
+
+* **Do NOT drop, simplify away, or merge informative components.**
+* Preserve **all meaningful tokens**, including:
+
+  * biological matrix (e.g., plasma, serum, milk)
+  * subject/context (e.g., maternal, fetal, cord)
+  * timing or condition (e.g., trough, peak)
+  * method or sampling source
+
+#### 2b. Composite Values
+
+If the parameter type appears as a tuple, list, or nested structure:
+
+* **Flatten and concatenate all elements in order**
+* Use `"-"` as the delimiter
+* Remove brackets and quotes only
+* Preserve original wording and capitalization
+
+**Examples:**
+
+* `('Cordocentesis', 'Serum')` → `Cordocentesis-Serum`
+* `('Maternal', 'Plasma', 'Trough')` → `Maternal-Plasma-Trough`
+* `(('Umbilical', 'Vein'), 'Plasma')` → `Umbilical-Vein-Plasma`
+
+If the parameter type is already a single string:
+
+* Use it **as-is**, trimming surrounding whitespace only.
+
+---
+
+### Step 3 — Parameter Type Semantics
+
+* Keep the **core PK concept clear and simple**, such as:
+
+  * `Concentration`
+  * `Cmax`
+  * `Tmax`
+  * `AUC`
+* While doing so, **do NOT remove contextual qualifiers** required by the No-Loss Rule.
+
+Correct example:
+
+* `Cmax-Maternal-Plasma`
+* `Concentration-Cordocentesis-Serum`
+
+Incorrect example:
+
+* Reducing everything to just `Concentration`
+
+---
+
+### Step 4 — Parameter Unit and Value Extraction
+
+* Prefer values and units **explicitly present in Subtable 1**.
+* If unit or value is ambiguous or incomplete:
+
+  * Refer to the **main table and caption** ONLY to clarify or refine.
+* Do **not infer or invent** values or units that are not supported by the provided tables.
+
+---
+
+### Step 5 — Missing or Unextractable Rows
+
+* If **any** of the three fields (type, unit, value) cannot be confidently extracted for a row:
+
+  * Output `"N/A"` for **all three fields** for that row.
+
+---
+
+## Output Format (STRICT)
+
+Return **exactly one tuple** containing **three lists**:
+
+```json
+{{
+  "reasoning_process": "<Reasoning process>",
+  "extracted_param_units": {{
+    "parameter_types": ["Parameter type 1", "Parameter type 2", ...],
+    "parameter_units": ["Parameter unit 1", "Parameter unit 2", ...],
+    "parameter_values": ["Parameter value 1", "Parameter value 2", ...]
+  }}
+}}
+```
+
+Constraints:
+
+* All three lists must have **identical length**
+* List indices must correspond to the same row in Subtable 1
+* Output **only** the tuple — no explanations, no markdown, no extra text
+
+---
+
+## Priority Rules (Highest to Lowest)
+
+1. Row count and alignment correctness
+2. No-Loss Normalization Rule
+3. Fidelity to Subtable 1
+4. Clarification via main table/caption
+5. Simplicity of PK terminology without information loss
+
+---
+
+
 """)
 
 
@@ -117,7 +232,7 @@ def try_fix_error_param_type_unit(
     res: ParamTypeUnitExtractionResult,
     md_table: str,
     col_mapping: dict,
-):
+) -> Tuple[List[str], List[str], List[str]]:
     matched_tuple = (
         res.extracted_param_units.parameter_types,
         res.extracted_param_units.parameter_units,
@@ -133,4 +248,6 @@ def try_fix_error_param_type_unit(
                 fixed_matched_list.append(matched_tuple[ix] + ["N/A"] * (expected_rows - len(matched_tuple[ix])))
             else:
                 fixed_matched_list.append(matched_tuple[ix])
+        else:
+            fixed_matched_list.append(matched_tuple[ix])
     return (fixed_matched_list[0], fixed_matched_list[1], fixed_matched_list[2])

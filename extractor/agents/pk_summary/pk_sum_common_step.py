@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 from typing import Any, Callable, Optional
 import logging
 
-from extractor.agents.pk_summary.pk_sum_workflow_utils import PKSumWorkflowState, get_common_agent
+from extractor.agents.pk_summary.pk_sum_workflow_utils import PKSumWorkflowState
 from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
 from extractor.agents.pk_summary.pk_sum_workflow_utils import (
     pk_sum_enter_step,
@@ -10,9 +10,9 @@ from extractor.agents.pk_summary.pk_sum_workflow_utils import (
 )
 from extractor.agents.pk_summary.pk_sum_common_agent import (
     PKSumCommonAgentResult,
-    PKSumCommonAgent,
 )
 from extractor.prompts_utils import generate_previous_errors_prompt
+from extractor.agents.agent_factory import get_common_agent
 
 logger = logging.getLogger(__name__)
 

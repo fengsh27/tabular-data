@@ -10,6 +10,7 @@ import logging
 
 from extractor.agents.agent_utils import escape_braces_for_format
 from extractor.agents.common_agent.common_agent_2steps import CommonAgentTwoSteps
+from extractor.llm_utils import structured_output_llm
 from .common_agent import (
     CommonAgent,
     RetryException,
@@ -38,7 +39,7 @@ def get_openai():
 class CommonAgentTwoChainStepAgents(CommonAgent):
     def __init__(self, llm: BaseChatOpenAI):
         super().__init__(llm)
-        self.azure_llm = get_openai()
+        # self.azure_llm = get_openai()
 
     def _initialize(self):
         self.exceptions = None
@@ -123,7 +124,8 @@ class CommonAgentTwoChainStepAgents(CommonAgent):
             system_prompt=system_prompt,
             cot_msg=reasoning_process,
         )
-        agent = updated_prompt | self.azure_llm.with_structured_output(schema)
+        # agent = updated_prompt | self.azure_llm.with_structured_output(schema)
+        agent = structured_output_llm(self.llm, schema, updated_prompt)
         try:
             res = agent.invoke(
                 input={},

@@ -6,6 +6,7 @@ from pydantic import BaseModel, Field
 from tenacity import retry, stop_after_attempt, wait_incrementing
 import logging
 
+from extractor.llm_utils import structured_output_llm
 from extractor.utils import escape_braces_for_format
 from .common_agent import (
     CommonAgent,
@@ -19,15 +20,6 @@ logger = logging.getLogger(__name__)
 class CommonAgentTwoSteps(CommonAgent):
     def __init__(self, llm: BaseChatOpenAI):
         super().__init__(llm)
-
-    def _initialize(self):
-        self.exceptions = None
-        self.token_usage = None
-
-    def _get_retryexception_message(self) -> list[tuple[str, str]]:
-        if self.exceptions is None:
-            return None
-        return [("human", str(excp)) for excp in self.exceptions]
 
     def _build_prompt_for_cot_step(
         self,
@@ -67,6 +59,7 @@ class CommonAgentTwoSteps(CommonAgent):
         system_prompt: str,
         instruction_prompt: str,
         schema: any,
+        schema_basemodel: Optional[BaseModel] = None,
         post_process: Optional[Callable] = None,
         **kwargs: Optional[Any],
     ):
@@ -103,7 +96,11 @@ class CommonAgentTwoSteps(CommonAgent):
             system_prompt=system_prompt,
             cot_msg=reasoning_process,
         )
-        agent = updated_prompt | self.llm.with_structured_output(schema)
+        # agent = updated_prompt | self.llm.with_structured_output(schema)
+        if schema_basemodel is not None:
+            agent = structured_output_llm(self.llm, schema_basemodel, updated_prompt)
+        else:
+            agent = structured_output_llm(self.llm, schema, updated_prompt)
         try:
             res = agent.invoke(
                 input={},
@@ -154,7 +151,19 @@ class CommonAgentTwoChainSteps(CommonAgentTwoSteps):
     def __init__(self, llm):
         super().__init__(llm)
 
-    def _invoke_agent(self, system_prompt, instruction_prompt, schema, post_process = None, **kwargs):
+    @retry(
+        stop=stop_after_attempt(5),
+        wait=wait_incrementing(start=1.0, increment=3, max=10),
+    )
+    def _invoke_agent(
+        self, 
+        system_prompt: str, 
+        instruction_prompt: str, 
+        schema: any, 
+        schema_basemodel: Optional[BaseModel] = None, 
+        post_process: Optional[Callable] = None, 
+        **kwargs: Optional[Any],
+    ):
         # Initialize the callback handler
         callback_handler = OpenAICallbackHandler()
         processed_system_prompt = escape_braces_for_format(system_prompt)
@@ -193,7 +202,11 @@ class CommonAgentTwoChainSteps(CommonAgentTwoSteps):
                 final_msg,
             )]
             final_prompt = ChatPromptTemplate.from_messages(msgs)
-            agent = final_prompt | self.llm.with_structured_output(schema)
+            # agent = final_prompt | self.llm.with_structured_output(schema)
+            if schema_basemodel is not None:
+                agent = structured_output_llm(self.llm, schema_basemodel, final_prompt)
+            else:
+                agent = structured_output_llm(self.llm, schema, final_prompt)
             res = agent.invoke(
                 input={},
                 config={

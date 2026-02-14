@@ -9,6 +9,7 @@ from tenacity import retry, stop_after_attempt, wait_incrementing
 import logging
 
 from extractor.agents.agent_utils import increase_token_usage
+from extractor.llm_utils import structured_output_llm
 from extractor.utils import escape_braces_for_format
 
 logger = logging.getLogger(__name__)
@@ -20,7 +21,7 @@ class RetryException(Exception):
 
 class CommonAgentResult(BaseModel):
     reasoning_process: str = Field(
-        description="A detailed explanation of the thought process or reasoning steps taken to reach a conclusion."
+        description="A concise explanation of the thought process or reasoning steps taken to reach a conclusion in 1-2 sentences."
     )
 
 class CommonAgent:
@@ -28,12 +29,15 @@ class CommonAgent:
         self.llm = llm
         self.exceptions: list[RetryException] | None = None
         self.token_usage: dict | None = None
+        self.try_fix_error: Optional[Callable[[Any], Any]] = None
 
     def go(
         self,
         system_prompt: str,
         instruction_prompt: str,
         schema: any,
+        schema_basemodel: Optional[BaseModel] = None,
+        try_fix_error: Optional[Callable[[Any], Any]] = None,
         pre_process: Optional[Callable] = None,
         post_process: Optional[Callable] = None,
         **kwargs: Optional[Any],
@@ -53,6 +57,7 @@ class CommonAgent:
         (output that comply with input args `schema`)
         """
         self._initialize()
+        self.try_fix_error = try_fix_error
         if pre_process is not None:
             is_OK = pre_process(**kwargs)
             if not is_OK:  # skip
@@ -62,6 +67,7 @@ class CommonAgent:
             system_prompt,
             instruction_prompt,
             schema,
+            schema_basemodel,
             post_process,
             **kwargs,
         )
@@ -106,6 +112,7 @@ class CommonAgent:
         system_prompt: str,
         instruction_prompt: str,
         schema: any,
+        schema_basemodel: Optional[BaseModel] = None,
         post_process: Optional[Callable] = None,
         **kwargs: Optional[Any],
     ) -> tuple[Any, Any, dict | None, Any | None]:
@@ -119,7 +126,8 @@ class CommonAgent:
         callback_handler = OpenAICallbackHandler()
 
         updated_prompt = self._process_retryexception_message(prompt)
-        agent = updated_prompt | self.llm.with_structured_output(schema)
+        agent = structured_output_llm(self.llm, schema, updated_prompt)
+        # agent = updated_prompt | self.llm.with_structured_output(schema)
         try:
             res = agent.invoke(
                 input={},
@@ -137,6 +145,10 @@ class CommonAgent:
                 processed_res = post_process(res, **kwargs)
             except RetryException as e:
                 logger.error(str(e))
+                if self.try_fix_error is not None and self.exceptions is not None and len(self.exceptions) == 4:
+                    fixed_res = self.try_fix_error(res, **kwargs)
+                    if fixed_res is not None:
+                        return res, fixed_res, self.token_usage, None
                 if self.exceptions is None:
                     self.exceptions = [e]
                 else:

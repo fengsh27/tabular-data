@@ -2,6 +2,7 @@
 # 18426260
 # ==================================================================================
 
+
 data_title_18426260 = """Changes in Antidepressant Metabolism and Dosing Across Pregnancy and Early Postpartum"""
 
 data_abstract_18426260 = "Little information about the disposition of individual antidepressant drugs during pregnancy has been published. We examined the dose requirements and level-to-dose (L/D) ratios of citalopram, escitalopram, and sertraline during pregnancy and after birth.\nWomen aged from 32 to 43 years with major depressive disorder according to the Structured Clinical Interview for DSM-IV Axis I Disorders participated in the study. Doses were charted across each week of gestation and postpartum. Samples were collected at 20, 30, and 36 weeks’ gestation; delivery; and at 2 and 12 weeks postpartum. Plasma trough levels were obtained 8 to 15 hours after dose intake. Across pregnancy and postpartum, the mean dose-corrected plasma concentrations (L/D ratios) of S- and R-citalopram and S-sertraline, and the corresponding primary chiral metabolites S- and R-desmethylcitalopram and N-desmethylsertraline were assessed. The samples were analyzed for concentrations of stereospecific parent drug and metabolites. The study was conducted from 2003 to 2006.\nThree women received citalopram, 2 women were treated with escitalopram, and 6 women received sertraline. In 4 of 5 subjects who received citalopram or escitalopram and 5 of 6 subjects who received sertraline, the L/D ratios for the stereoisomers of the parent compound and primary metabolite decreased between 20 weeks gestation and delivery, which reflects increased drug metabolism. By 12 weeks postpartum the L/D ratios were similar to those detected at 20 weeks gestation.\nOur cases illustrate that dose requirements frequently increase during the second half of pregnancy to offset increased drug turnover and maintain optimal pharmacotherapy. These findings replicate and extend earlier published data with other antidepressants.\nclinicaltrials.gov Identifier: NCT00279370"
@@ -27,3 +28,247 @@ data_sections_18426260 = [
 {'section': 'Sertraline', 'content': 'Six women received sertraline at 50 to 200 mg daily ( Table 1 ). Subject 9 smoked 1 pack daily during pregnancy and postpartum. Increased depressive symptoms and dose requirements across pregnancy were evident in 3 mothers who received sertraline. Subject 8 developed increased depression levels at 30 and 36 weeks gestation (SIGH-ADS = 24 and 19, respectively) and required gradual dose elevations from 75 mg daily to a final dose of 200 mg daily. By 2 weeks postpartum, she had mild symptoms (SIGH-ADS = 13). Subject 9 developed moderate depression at 30 weeks gestation (SIGH-ADS = 21) with sertraline 150 mg daily. Following a dose increase to 200 mg, her symptoms improved and she remained euthymic at 36 weeks’ gestation and 2 weeks postpartum (SIGH-ADS = 14 and 12, respectively). Subject 11 had depressive symptoms (SIGH-ADS = 24) with sertraline 50 mg daily at 20 weeks gestation. With a dose increase to 75 mg daily, her mood improved (SIGH-ADS = 14) by 30 weeks gestation.\nThe chiral L/D ratios of citalopram, escitalopram, and sertraline decreased in the second half of pregnancy ( Table 2 , Figures 1 – 3 ). By the 12th postpartum week, the values were similar to those detected at 20 weeks’ gestation. Reductions in L/D ratios corresponded with increased severity of depression or minimal symptomatic improvement. The antenatal and postnatal changes in the chiral L/D ratios persisted after adjustments for total body weight (kg) and BMI (kg/m 2 ) were made to address intra-individual variations 24 and pregnancy-related changes in drug processing. 19 , 44 , 45 Therefore, we report the unadjusted L/D values. The drug levels and L/D ratios were consistent with those observed in age-matched women in the general population. 32 , 42 , 46 – 48\nMean ± SD (Range) of Drug Level-to-Dose Ratios a\n| Drug | 20 weeks | 30 weeks | 36 weeks | Delivery | Postpartum 2 weeks | Postpartum 4 to 6 weeks | Postpartum 12 weeks |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| Citalopram | Citalopram | Citalopram | Citalopram | Citalopram | Citalopram | Citalopram | Citalopram |\n| S-citalopram | 0.7 ± 0.1 (0.6–0.8) | 0.7 ± 0.4 (0.3–1.0) | 0.4 ± 0.1 (0.3–0.5) | 0.3 | 1.4 | NA | 0.5 ± 0.2 (0.4–0.7) |\n| R-citalopram | 1.4 ± 0.2 (1.2–1.5) | 1.2 ± 0.4 (0.7–1.6) | 0.8 ± 0.1 (0.7–0.9) | 0.5 | 2.5 | NA | 1.3 ± 0.8 (0.7–1.8) |\n| S-desmethylcitalopram | 0.3 ± 0.1 (0.3–0.4) | 0.4 ± 0.2 (0.2–0.5) | 0.2 ± 0.02 (0.21–0.24) | 0.1 | 0.4 | NA | 0.3 ± 0.1 (0.2–0.3) |\n| R-desmethylcitalopram | 0.4 ± 0.1 (0.3–0.5) | 0.4 ± 0.1 (0.2–0.5) | 0.3 ± 0.03 (0.2–0.3) | 0.1 | 0.5 | NA | 0.4 ± 0.2 (0.2–0.5) |\n| Escitlopram | Escitlopram | Escitlopram | Escitlopram | Escitlopram | Escitlopram | Escitlopram | Escitlopram |\n| S-citalopram | 2.3 ± 0.8 | 2.2 ± 1.8 | 2.3 ± 1.5 | 1.4 | 3.6 ± 1.6 | NA | 3.2 |\n| S-desmethylcitalopram | 0.5 ± 0.2 | 0.2 ± 0.1 | 0.5 ± 0.01 | 0.3 | 0.4 ± 0.1 | NA | 0.3 |\n| Sertaline | Sertaline | Sertaline | Sertaline | Sertaline | Sertaline | Sertaline | Sertaline |\n| S-Sertaline | 0.5 ± 0.4 (0.07–0.9) | 0.3 ± 0.2 (0.1–0.5) | 0.3 ± 0.1 (0.2–0.4) | 0.2 ± 0.1 (0.1–0.3) | 0.2 ± 0.2 (0.1–0.4) | 0.6 ± 0.2 (0.3–0.8) | 0.4 ± 0.3 (0.1–0.8) |\n| N-demethylsertaline | 0.6 ± 0.3 (0.3–1.1) | 0.8 ± 0.3 (0.2–1.0) | 0.8 ± 0.1 (0.7–1.0) | 0.7 ± 0.2 (0.5–1.0) | 0.6 ± 0.3 (0.3–0.8) | 0.9 ± 0.3 (0.6–1.3) | 0.9 ± 0.7 (0.1–1.5) |\nThe level-to-dose raito is a measure of the drug plasma level corrected for the dose.\nAbbreviation: NA = not available.\nMean Drug Level-to-Dose (L/D) Ratios Across Childbearing for Citalopram-Treated Women\nMean Drug Level-to-Dose (L/D) Ratios Across Childbearing for Sertraline-Treated Women'}, 
 {'section': 'DISCUSSION', 'content': 'Our data indicate that antidepressant drug disposition changed across pregnancy. In 4 of 5 subjects who received citalopram or escitalopram and 5 of 6 subjects who received sertraline, the L/D ratios for the stereoisomers of the parent compound and primary metabolite decreased between 20 weeks’ gestation and delivery, which reflects increased drug metabolism. The dose requirements of citalopram, escitalopram, and sertraline increased in the second half of gestation. These findings replicated reports that pregnant women who received fluoxetine, paroxetine, or sertraline required dose increases by 24 to 28 weeks’ gestation to alleviate recurrent depression. 5 , 49 Our observations suggested that the decline in L/D ratios often corresponded with lowered drug efficacy. These findings were consistent with the induction of cytochrome 3A4 and 2D6 enzymes during pregnancy 31 , 50 that overrides the pregnancy-induced inhibition of 2C19 activity. 51 Heikkinen et al. 50 detected diminished plasma citalopram concentrations during pregnancy without increased depressive symptoms. Our study adds a systematic assessment of mood symptoms in addition to plasma drug levels.\nThe volume of distribution (Vd) represents the ratio of the total quantity of drug in the body to the total concentration of drug in the plasma. 45 The Vd of individual drugs may change across the gestational period. During pregnancy, reduction in plasma proteins may result in an increased distribution of unbound drug. 19 In a review of 23 articles, 9 studies (39%) suggested increased Vd; 11 (48%) did not indicate change in Vd; and 3 (12%) suggested reduction in Vd. 11 , 19 The complexity of estimating the hypothetical Vd values could explain the lack of reporting. 45 Without direct measures of Vd, total body weight is an appropriate actual descriptor for drug distribution. 44 After adjusting for total body weight and BMI, the L/D ratios of the isomers of citalopram, S-sertraline, and the primary metabolites did not vary from the unadjusted values. Thus, the changes in Vd likely contributed minimally to the decline in L/D ratios across pregnancy.\nThe dramatic rise in chiral L/D ratios at 2 weeks postpartum reflects a brief postpartum refractory metabolic state ( Table 2 , Figures 1 – 3 ). Other investigators have provided evidence of a postpartum drop in drug metabolic capacity for citalopram, 50 nortriptyline (a substrate of cytochrome 2D6), 4 and nelfinavir (substrates of 3A4 and 2C19). 51 Although some researchers have not detected variable biotransformation of citalopram based on genetic polymorphisms of the 2C19 isoenzyme, 20 , 29 significant reduction in N-demethylation has been described in poor metabolizers. 52 – 54 The frequency of poor metabolism differs across racial groups; for example, 2% of the white compared to 15% to 20% of the Asian populations are homozygous for the alleles that encode deficient 2C19 activity. 55 The individuals who received citalopram or escitalopram were white. The range of plasma concentration and L/D ratios was uniform and indicated no poor metabolizers in the group. The induction of 3A4 and 2D6 enzyme activity could mask impairment in 2C19 activity during pregnancy. 55 On the other hand, the refractory period in the first 6 postnatal weeks could result in elevated plasma drug concentrations and increased side effects in selected women with the mutated alleles.\nPreclinical data suggest that the R-isomer of citalopram could antagonize the antidepressant effects of S-citalopram. 56 – 61 We found that changes in depression severity and dose requirements across pregnancy and the postnatal period were similar in mothers who received citalopram (subjects 1–3) and escitalopram (subjects 4 and 5). To establish gestational differences in antidepressant responses between citalopram and escitalopram, we require additional subjects.\nThe optimal management of depression across pregnancy is to quickly identify recurrent depressive symptoms 3 through a systematic exploration of symptom levels at each trimester or ideally at each gestational month in the latter half of pregnancy. If symptoms worsen or recur, a dose increase should be considered. In office settings, depression severity could be monitored with the following instruments: (1) the Center for Epidemiological Studies-Depression Scale, which is a 20-item screening tool that is highly sensitive for detecting depression in women during pregnancy and postpartum (score of ≥ 16 indicates depression) 62 , 63 ; (2) the Montgomery-Asberg Depression Rating Scale, 64 which is a brief 10-item clinician-rated scale that is highly sensitive to drug-related changes in depression severity; or (3) the Clinical Global Impressions scale, 65 which is a clinical rating on a single item, 7-point scale (1 = normal, not ill; 7 = very severely ill) to assess depression severity, change across time, and overall efficacy that takes into account both clinical improvement and severity of side effects.\nAfter delivery, the antidepressant should be restarted immediately at the nonpregnant dose of response or two thirds of the final dose in pregnancy. 4 Since hepatic metabolism undergoes a period of refractory activity in the first several weeks postdelivery as suggested by our data and others, 4 , 50 , 51 side effects should be monitored for indication of elevated plasma levels. By 12 weeks post-delivery, women may require a dose increase as the prepregnancy rate of metabolism is restored. Our cases represent the steady-state L/D ratios in a small sample of women. Therefore, replication studies to investigate the antidepressant drug L/D ratios and efficacy across pregnancy and early postpartum are essential to inform physicians and patients of the possible changes in dose requirements across the gestational period.'}, 
 {'section': 'Figure 2.', 'content': 'Mean Drug Level-to-Dose (L/D) Ratios Across Childbearing for Escitalopram-Treated Women'}]
+
+data_caption_18426260_table_0 = "caption: \nDrug Dose and Plasma Levels in Pregnancy and Postpartum"
+data_md_table_18426260_table_0= """
+| ('Unnamed: 0_level_0', 'Subject') | ('20 Weeks', 'Dose,  mg/d') | ('20 Weeks', 'Plasma  Level,  ng/mL') | ('30 Weeks', 'Dose,  mg/d') | ('30 Weeks', 'Plasma  Level,  ng/mL') | ('36 Weeks', 'Dose,  mg/d') | ('36 Weeks', 'Plasma  Level,  ng/mL') | ('Delivery', 'Dose,  mg/d') | ('Delivery', 'Plasma  Level,  ng/mL') | ('Postpartum 2 Weeks', 'Dose,  mg/d') | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | ('Postpartum  4 to 6 Weeksa', 'Dose,  mg/d') | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | ('Postpartum  12 Weeks', 'Dose,  mg/d') | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| S-citalopram | 40 | 32 | 40 | 40 | 50 | 25 | 50 | 15 | NA | NA | NA | NA | 50 | 18 |
+| R-citalopram |  | 62 |  | 64 |  | 41 |  | 24 | NA | NA | NA | NA |  | 36 |
+| 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 |
+| S-citalopram | 20 | 14 | 20 | 14 | 40 | 18 | NA | NA | 40 | 54 | NA | NA | 40 | 27 |
+| R-citalopram |  | 24 |  | 24 |  | 36 | NA | NA |  | 101 | NA | NA |  | 75 |
+| 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b |
+| S-citalopram | 30 | 19 | 30 | 9 | 20 | 5 | … | … | … | … | … | … | … | … |
+| R-citalopram |  | 41 |  | 22 |  | 14 | … | … | … | … | … | … | … | … |
+| 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 |
+| S-citalopram | 10 | 17 | 10 | 10 | 10 | 13 | 10 | 14 | 10 | 24 | NA | NA | NA | NA |
+| 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 |
+| S-citalopram | 20 | 58 | 20 | 70 | 20 | 67 | NA | NA | 20 | 95 | NA | NA | 20 | 63 |
+| 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 |
+| S-sertraline | NA | NA | 50 | 27 | NA | NA | 50 | 11 | NA | NA | 50 | 27 | 50 | 21 |
+| N-desmethylsertraline |  | NA |  | 44 |  | NA |  | 26 |  | NA |  | 52 |  | 50 |
+| 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 |
+| S-sertraline | 50 | 10 | 50 | 20 | 100 | 16 | 50 | 7 | 50 | 22 | 50 | 15 | NA | NA |
+| N-desmethylsertraline |  | 18 |  | 40 |  | 66 |  | 32 |  | 41 |  | 29 |  | NA |
+| 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 |
+| S-sertraline | 50 | 4 | 75 | 10 | 100 | 39 | NA | NA | 200 | 21 | NA | NA | 200 | 21 |
+| N-desmethylsertraline |  | 16 |  | 17 |  | 74 |  | NA |  | 59 |  | NA |  | 29 |
+| 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 |
+| S-sertraline | NA | NA | 150 | 17 | 200 | 43 | 200 | 32 | 200 | 39 | NA | NA | NA | NA |
+| N-desmethylsertraline |  | NA |  | 141 |  | 147 |  | 120 |  | 149 |  | NA |  | NA |
+| 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 |
+| S-sertraline | 100 | 93 | 100 | 45 | NA | NA | 100 | 28 | NA | NA | 100 | 62 | NA | NA |
+| N-desmethylsertraline |  | 72 |  | 92 |  | NA |  | 59 |  | NA |  | 74 |  | NA |
+| 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 |
+| S-sertraline | 50 | 32 | 75 | 18 | 75 | 23 | 100 | 32 | NA | NA | 100 | 83 | 125 | 99 |
+| N-desmethylsertraline |  | 52 |  | 77 |  | 73 |  | 97 |  | NA |  | 128 |  | 183 |
+"""
+data_pk_ind_md_table_patient_18426260_table_0="""
+| Patient ID | Population | Pregnancy stage |
+| --- | --- | --- |
+| 1 | N/A | 20 Weeks |
+| 1 | N/A | 30 Weeks |
+| 1 | N/A | 36 Weeks |
+| 1 | N/A | Delivery |
+| 1 | N/A | Postpartum 12 Weeks |
+| 2 | N/A | 20 Weeks |
+| 2 | N/A | 30 Weeks |
+| 2 | N/A | 36 Weeks |
+| 2 | N/A | Postpartum 2 Weeks |
+| 2 | N/A | Postpartum 12 Weeks |
+| 3b | N/A | 20 Weeks |
+| 3b | N/A | 30 Weeks |
+| 3b | N/A | 36 Weeks |
+| 4 | N/A | 20 Weeks |
+| 4 | N/A | 30 Weeks |
+| 4 | N/A | 36 Weeks |
+| 4 | N/A | Delivery |
+| 4 | N/A | Postpartum 2 Weeks |
+| 5 | N/A | 20 Weeks |
+| 5 | N/A | 30 Weeks |
+| 5 | N/A | 36 Weeks |
+| 5 | N/A | Postpartum 2 Weeks |
+| 5 | N/A | Postpartum 12 Weeks |
+| 6 | N/A | 30 Weeks |
+| 6 | N/A | Delivery |
+| 6 | N/A | Postpartum 4 to 6 Weeks |
+| 6 | N/A | Postpartum 12 Weeks |
+| 7 | N/A | 20 Weeks |
+| 7 | N/A | 30 Weeks |
+| 7 | N/A | 36 Weeks |
+| 7 | N/A | Delivery |
+| 7 | N/A | Postpartum 2 Weeks |
+| 7 | N/A | Postpartum 4 to 6 Weeks |
+| 8 | N/A | 20 Weeks |
+| 8 | N/A | 30 Weeks |
+| 8 | N/A | 36 Weeks |
+| 8 | N/A | Postpartum 2 Weeks |
+| 8 | N/A | Postpartum 12 Weeks |
+| 9 | N/A | 30 Weeks |
+| 9 | N/A | 36 Weeks |
+| 9 | N/A | Delivery |
+| 9 | N/A | Postpartum 2 Weeks |
+| 10 | N/A | 20 Weeks |
+| 10 | N/A | 30 Weeks |
+| 10 | N/A | Delivery |
+| 10 | N/A | Postpartum 4 to 6 Weeks |
+| 11 | N/A | 20 Weeks |
+| 11 | N/A | 30 Weeks |
+| 11 | N/A | 36 Weeks |
+| 11 | N/A | Delivery |
+| 11 | N/A | Postpartum 4 to 6 Weeks |
+| 11 | N/A | Postpartum 12 Weeks |
+"""
+
+data_md_table_aligned_18426260_table_0 = """
+| ('Unnamed: 0_level_0', 'Subject') | ('20 Weeks', 'Dose,  mg/d') | ('20 Weeks', 'Plasma  Level,  ng/mL') | ('30 Weeks', 'Dose,  mg/d') | ('30 Weeks', 'Plasma  Level,  ng/mL') | ('36 Weeks', 'Dose,  mg/d') | ('36 Weeks', 'Plasma  Level,  ng/mL') | ('Delivery', 'Dose,  mg/d') | ('Delivery', 'Plasma  Level,  ng/mL') | ('Postpartum 2 Weeks', 'Dose,  mg/d') | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | ('Postpartum  4 to 6 Weeksa', 'Dose,  mg/d') | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | ('Postpartum  12 Weeks', 'Dose,  mg/d') | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| S-citalopram | 40 | 32 | 40 | 40 | 50 | 25 | 50 | 15 | NA | NA | NA | NA | 50 | 18 |
+| R-citalopram |  | 62 |  | 64 |  | 41 |  | 24 | NA | NA | NA | NA |  | 36 |
+| 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 |
+| S-citalopram | 20 | 14 | 20 | 14 | 40 | 18 | NA | NA | 40 | 54 | NA | NA | 40 | 27 |
+| R-citalopram |  | 24 |  | 24 |  | 36 | NA | NA |  | 101 | NA | NA |  | 75 |
+| 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b | 3b |
+| S-citalopram | 30 | 19 | 30 | 9 | 20 | 5 | … | … | … | … | … | … | … | … |
+| R-citalopram |  | 41 |  | 22 |  | 14 | … | … | … | … | … | … | … | … |
+| 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 |
+| S-citalopram | 10 | 17 | 10 | 10 | 10 | 13 | 10 | 14 | 10 | 24 | NA | NA | NA | NA |
+| 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 |
+| S-citalopram | 20 | 58 | 20 | 70 | 20 | 67 | NA | NA | 20 | 95 | NA | NA | 20 | 63 |
+| 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 |
+| S-sertraline | NA | NA | 50 | 27 | NA | NA | 50 | 11 | NA | NA | 50 | 27 | 50 | 21 |
+| N-desmethylsertraline |  | NA |  | 44 |  | NA |  | 26 |  | NA |  | 52 |  | 50 |
+| 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 |
+| S-sertraline | 50 | 10 | 50 | 20 | 100 | 16 | 50 | 7 | 50 | 22 | 50 | 15 | NA | NA |
+| N-desmethylsertraline |  | 18 |  | 40 |  | 66 |  | 32 |  | 41 |  | 29 |  | NA |
+| 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 |
+| S-sertraline | 50 | 4 | 75 | 10 | 100 | 39 | NA | NA | 200 | 21 | NA | NA | 200 | 21 |
+| N-desmethylsertraline |  | 16 |  | 17 |  | 74 |  | NA |  | 59 |  | NA |  | 29 |
+| 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 |
+| S-sertraline | NA | NA | 150 | 17 | 200 | 43 | 200 | 32 | 200 | 39 | NA | NA | NA | NA |
+| N-desmethylsertraline |  | NA |  | 141 |  | 147 |  | 120 |  | 149 |  | NA |  | NA |
+| 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 |
+| S-sertraline | 100 | 93 | 100 | 45 | NA | NA | 100 | 28 | NA | NA | 100 | 62 | NA | NA |
+| N-desmethylsertraline |  | 72 |  | 92 |  | NA |  | 59 |  | NA |  | 74 |  | NA |
+| 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 |
+| S-sertraline | 50 | 32 | 75 | 18 | 75 | 23 | 100 | 32 | NA | NA | 100 | 83 | 125 | 99 |
+| N-desmethylsertraline |  | 52 |  | 77 |  | 73 |  | 97 |  | NA |  | 128 |  | 183 |
+"""
+
+data_md_table_patient_refined_18426260_table_0="""
+| Patient ID | Population | Pregnancy stage | Pediatric/Gestational age |
+| --- | --- | --- | --- |
+| 1 | N/A | Trimester 2 | 20 Weeks |
+| 1 | N/A | Trimester 3 | 30 Weeks |
+| 1 | N/A | Trimester 3 | 36 Weeks |
+| 1 | N/A | Delivery | Delivery |
+| 1 | N/A | Postpartum | Postpartum 2 Weeks |
+| 1 | N/A | Postpartum | Postpartum  4 to 6 Weeksa |
+| 1 | N/A | Postpartum | Postpartum  12 Weeks |
+| 2 | N/A | Trimester 2 | 20 Weeks |
+| 2 | N/A | Trimester 3 | 30 Weeks |
+| 2 | N/A | Trimester 3 | 36 Weeks |
+| 2 | N/A | Delivery | Delivery |
+| 2 | N/A | Postpartum | Postpartum 2 Weeks |
+| 2 | N/A | Postpartum | Postpartum  4 to 6 Weeksa |
+| 2 | N/A | Postpartum | Postpartum  12 Weeks |
+| 3b | N/A | Trimester 2 | 20 Weeks |
+| 3b | N/A | Trimester 3 | 30 Weeks |
+| 3b | N/A | Trimester 3 | 36 Weeks |
+| 3b | N/A | Delivery | Delivery |
+| 3b | N/A | Postpartum | Postpartum 2 Weeks |
+| 3b | N/A | Postpartum | Postpartum  4 to 6 Weeksa |
+| 3b | N/A | Postpartum | Postpartum  12 Weeks |
+| 4 | N/A | Trimester 2 | 20 Weeks |
+| 4 | N/A | Trimester 3 | 30 Weeks |
+| 4 | N/A | Trimester 3 | 36 Weeks |
+| 4 | N/A | Delivery | Delivery |
+| 4 | N/A | Postpartum | Postpartum 2 Weeks |
+| 4 | N/A | Postpartum | Postpartum  4 to 6 Weeksa |
+| 4 | N/A | Postpartum | Postpartum  12 Weeks |
+| 5 | N/A | Trimester 2 | 20 Weeks |
+| 5 | N/A | Trimester 3 | 30 Weeks |
+| 5 | N/A | Trimester 3 | 36 Weeks |
+| 5 | N/A | Delivery | Delivery |
+| 5 | N/A | Postpartum | Postpartum 2 Weeks |
+| 5 | N/A | Postpartum | Postpartum  4 to 6 Weeksa |
+| 5 | N/A | Postpartum | Postpartum  12 Weeks |
+| 6 | N/A | Trimester 2 | 20 Weeks |
+| 6 | N/A | Trimester 3 | 30 Weeks |
+| 6 | N/A | Trimester 3 | 36 Weeks |
+| 6 | N/A | Delivery | Delivery |
+| 6 | N/A | Postpartum | Postpartum 2 Weeks |
+| 6 | N/A | Postpartum | Postpartum  4 to 6 Weeksa |
+| 6 | N/A | Postpartum | Postpartum  12 Weeks |
+| 7 | N/A | Trimester 2 | 20 Weeks |
+| 7 | N/A | Trimester 3 | 30 Weeks |
+| 7 | N/A | Trimester 3 | 36 Weeks |
+| 7 | N/A | Delivery | Delivery |
+| 7 | N/A | Postpartum | Postpartum 2 Weeks |
+| 7 | N/A | Postpartum | Postpartum  4 to 6 Weeksa |
+| 7 | N/A | Postpartum | Postpartum  12 Weeks |
+| 8 | N/A | Trimester 2 | 20 Weeks |
+| 8 | N/A | Trimester 3 | 30 Weeks |
+| 8 | N/A | Trimester 3 | 36 Weeks |
+| 8 | N/A | Delivery | Delivery |
+| 8 | N/A | Postpartum | Postpartum  2 Weeks |
+| 8 | N/A | Postpartum | Postpartum  4 to 6 Weeksa |
+| 8 | N/A | Postpartum | Postpartum  12 Weeks |
+| 9 | N/A | Trimester 2 | 20 Weeks |
+| 9 | N/A | Trimester 3 | 30 Weeks |
+| 9 | N/A | Trimester 3 | 36 Weeks |
+| 9 | N/A | Delivery | Delivery |
+| 9 | N/A | Postpartum | Postpartum  2 Weeks |
+| 9 | N/A | Postpartum | Postpartum  4 to 6 Weeksa |
+| 9 | N/A | Postpartum | Postpartum  12 Weeks |
+| 10 | N/A | Trimester 2 | 20 Weeks |
+| 10 | N/A | Trimester 3 | 30 Weeks |
+| 10 | N/A | Trimester 3 | 36 Weeks |
+| 10 | N/A | Delivery | Delivery |
+| 10 | N/A | Postpartum | Postpartum  2 Weeks |
+| 10 | N/A | Postpartum | Postpartum  4 to 6 Weeksa |
+| 10 | N/A | Postpartum | Postpartum  12 Weeks |
+| 11 | N/A | Trimester 2 | 20 Weeks |
+| 11 | N/A | Trimester 3 | 30 Weeks |
+| 11 | N/A | Trimester 3 | 36 Weeks |
+| 11 | N/A | Delivery | Delivery |
+| 11 | N/A | Postpartum | Postpartum  2 Weeks |
+| 11 | N/A | Postpartum | Postpartum  4 to 6 Weeksa |
+| 11 | N/A | Postpartum | Postpartum  12 Weeks |
+"""
+
+data_md_table_list_18426260_table_0 = [
+    "| ('Unnamed: 0_level_0', 'Subject') | Parameter type | Parameter value |\n| --- | --- | --- |\n| 1 | ('20 Weeks', 'Plasma  Level,  ng/mL') | 1 |\n| S-citalopram | ('20 Weeks', 'Plasma  Level,  ng/mL') | 32 |\n| R-citalopram | ('20 Weeks', 'Plasma  Level,  ng/mL') | 62 |\n| 2 | ('20 Weeks', 'Plasma  Level,  ng/mL') | 2 |\n| S-citalopram | ('20 Weeks', 'Plasma  Level,  ng/mL') | 14 |\n| R-citalopram | ('20 Weeks', 'Plasma  Level,  ng/mL') | 24 |\n| 3b | ('20 Weeks', 'Plasma  Level,  ng/mL') | 3b |\n| S-citalopram | ('20 Weeks', 'Plasma  Level,  ng/mL') | 19 |\n| R-citalopram | ('20 Weeks', 'Plasma  Level,  ng/mL') | 41 |\n| 4 | ('20 Weeks', 'Plasma  Level,  ng/mL') | 4 |\n| S-citalopram | ('20 Weeks', 'Plasma  Level,  ng/mL') | 17 |\n| 5 | ('20 Weeks', 'Plasma  Level,  ng/mL') | 5 |\n| S-citalopram | ('20 Weeks', 'Plasma  Level,  ng/mL') | 58 |\n| 6 | ('20 Weeks', 'Plasma  Level,  ng/mL') | 6 |\n| S-sertraline | ('20 Weeks', 'Plasma  Level,  ng/mL') | NA |\n| N-desmethylsertraline | ('20 Weeks', 'Plasma  Level,  ng/mL') | NA |\n| 7 | ('20 Weeks', 'Plasma  Level,  ng/mL') | 7 |\n| S-sertraline | ('20 Weeks', 'Plasma  Level,  ng/mL') | 10 |\n| N-desmethylsertraline | ('20 Weeks', 'Plasma  Level,  ng/mL') | 18 |\n| 8 | ('20 Weeks', 'Plasma  Level,  ng/mL') | 8 |\n| S-sertraline | ('20 Weeks', 'Plasma  Level,  ng/mL') | 4 |\n| N-desmethylsertraline | ('20 Weeks', 'Plasma  Level,  ng/mL') | 16 |\n| 9 | ('20 Weeks', 'Plasma  Level,  ng/mL') | 9 |\n| S-sertraline | ('20 Weeks', 'Plasma  Level,  ng/mL') | NA |\n| N-desmethylsertraline | ('20 Weeks', 'Plasma  Level,  ng/mL') | NA |\n| 10 | ('20 Weeks', 'Plasma  Level,  ng/mL') | 10 |\n| S-sertraline | ('20 Weeks', 'Plasma  Level,  ng/mL') | 93 |\n| N-desmethylsertraline | ('20 Weeks', 'Plasma  Level,  ng/mL') | 72 |\n| 11 | ('20 Weeks', 'Plasma  Level,  ng/mL') | 11 |\n| S-sertraline | ('20 Weeks', 'Plasma  Level,  ng/mL') | 32 |\n| N-desmethylsertraline | ('20 Weeks', 'Plasma  Level,  ng/mL') | 52 |", 
+    "| ('Unnamed: 0_level_0', 'Subject') | Parameter type | Parameter value |\n| --- | --- | --- |\n| 1 | ('30 Weeks', 'Plasma  Level,  ng/mL') | 1 |\n| S-citalopram | ('30 Weeks', 'Plasma  Level,  ng/mL') | 40 |\n| R-citalopram | ('30 Weeks', 'Plasma  Level,  ng/mL') | 64 |\n| 2 | ('30 Weeks', 'Plasma  Level,  ng/mL') | 2 |\n| S-citalopram | ('30 Weeks', 'Plasma  Level,  ng/mL') | 14 |\n| R-citalopram | ('30 Weeks', 'Plasma  Level,  ng/mL') | 24 |\n| 3b | ('30 Weeks', 'Plasma  Level,  ng/mL') | 3b |\n| S-citalopram | ('30 Weeks', 'Plasma  Level,  ng/mL') | 9 |\n| R-citalopram | ('30 Weeks', 'Plasma  Level,  ng/mL') | 22 |\n| 4 | ('30 Weeks', 'Plasma  Level,  ng/mL') | 4 |\n| S-citalopram | ('30 Weeks', 'Plasma  Level,  ng/mL') | 10 |\n| 5 | ('30 Weeks', 'Plasma  Level,  ng/mL') | 5 |\n| S-citalopram | ('30 Weeks', 'Plasma  Level,  ng/mL') | 70 |\n| 6 | ('30 Weeks', 'Plasma  Level,  ng/mL') | 6 |\n| S-sertraline | ('30 Weeks', 'Plasma  Level,  ng/mL') | 27 |\n| N-desmethylsertraline | ('30 Weeks', 'Plasma  Level,  ng/mL') | 44 |\n| 7 | ('30 Weeks', 'Plasma  Level,  ng/mL') | 7 |\n| S-sertraline | ('30 Weeks', 'Plasma  Level,  ng/mL') | 20 |\n| N-desmethylsertraline | ('30 Weeks', 'Plasma  Level,  ng/mL') | 40 |\n| 8 | ('30 Weeks', 'Plasma  Level,  ng/mL') | 8 |\n| S-sertraline | ('30 Weeks', 'Plasma  Level,  ng/mL') | 10 |\n| N-desmethylsertraline | ('30 Weeks', 'Plasma  Level,  ng/mL') | 17 |\n| 9 | ('30 Weeks', 'Plasma  Level,  ng/mL') | 9 |\n| S-sertraline | ('30 Weeks', 'Plasma  Level,  ng/mL') | 17 |\n| N-desmethylsertraline | ('30 Weeks', 'Plasma  Level,  ng/mL') | 141 |\n| 10 | ('30 Weeks', 'Plasma  Level,  ng/mL') | 10 |\n| S-sertraline | ('30 Weeks', 'Plasma  Level,  ng/mL') | 45 |\n| N-desmethylsertraline | ('30 Weeks', 'Plasma  Level,  ng/mL') | 92 |\n| 11 | ('30 Weeks', 'Plasma  Level,  ng/mL') | 11 |\n| S-sertraline | ('30 Weeks', 'Plasma  Level,  ng/mL') | 18 |\n| N-desmethylsertraline | ('30 Weeks', 'Plasma  Level,  ng/mL') | 77 |", 
+    "| ('Unnamed: 0_level_0', 'Subject') | Parameter type | Parameter value |\n| --- | --- | --- |\n| 1 | ('36 Weeks', 'Plasma  Level,  ng/mL') | 1 |\n| S-citalopram | ('36 Weeks', 'Plasma  Level,  ng/mL') | 25 |\n| R-citalopram | ('36 Weeks', 'Plasma  Level,  ng/mL') | 41 |\n| 2 | ('36 Weeks', 'Plasma  Level,  ng/mL') | 2 |\n| S-citalopram | ('36 Weeks', 'Plasma  Level,  ng/mL') | 18 |\n| R-citalopram | ('36 Weeks', 'Plasma  Level,  ng/mL') | 36 |\n| 3b | ('36 Weeks', 'Plasma  Level,  ng/mL') | 3b |\n| S-citalopram | ('36 Weeks', 'Plasma  Level,  ng/mL') | 5 |\n| R-citalopram | ('36 Weeks', 'Plasma  Level,  ng/mL') | 14 |\n| 4 | ('36 Weeks', 'Plasma  Level,  ng/mL') | 4 |\n| S-citalopram | ('36 Weeks', 'Plasma  Level,  ng/mL') | 13 |\n| 5 | ('36 Weeks', 'Plasma  Level,  ng/mL') | 5 |\n| S-citalopram | ('36 Weeks', 'Plasma  Level,  ng/mL') | 67 |\n| 6 | ('36 Weeks', 'Plasma  Level,  ng/mL') | 6 |\n| S-sertraline | ('36 Weeks', 'Plasma  Level,  ng/mL') | NA |\n| N-desmethylsertraline | ('36 Weeks', 'Plasma  Level,  ng/mL') | NA |\n| 7 | ('36 Weeks', 'Plasma  Level,  ng/mL') | 7 |\n| S-sertraline | ('36 Weeks', 'Plasma  Level,  ng/mL') | 16 |\n| N-desmethylsertraline | ('36 Weeks', 'Plasma  Level,  ng/mL') | 66 |\n| 8 | ('36 Weeks', 'Plasma  Level,  ng/mL') | 8 |\n| S-sertraline | ('36 Weeks', 'Plasma  Level,  ng/mL') | 39 |\n| N-desmethylsertraline | ('36 Weeks', 'Plasma  Level,  ng/mL') | 74 |\n| 9 | ('36 Weeks', 'Plasma  Level,  ng/mL') | 9 |\n| S-sertraline | ('36 Weeks', 'Plasma  Level,  ng/mL') | 43 |\n| N-desmethylsertraline | ('36 Weeks', 'Plasma  Level,  ng/mL') | 147 |\n| 10 | ('36 Weeks', 'Plasma  Level,  ng/mL') | 10 |\n| S-sertraline | ('36 Weeks', 'Plasma  Level,  ng/mL') | NA |\n| N-desmethylsertraline | ('36 Weeks', 'Plasma  Level,  ng/mL') | NA |\n| 11 | ('36 Weeks', 'Plasma  Level,  ng/mL') | 11 |\n| S-sertraline | ('36 Weeks', 'Plasma  Level,  ng/mL') | 23 |\n| N-desmethylsertraline | ('36 Weeks', 'Plasma  Level,  ng/mL') | 73 |", 
+    "| ('Unnamed: 0_level_0', 'Subject') | Parameter type | Parameter value |\n| --- | --- | --- |\n| 1 | ('Delivery', 'Plasma  Level,  ng/mL') | 1 |\n| S-citalopram | ('Delivery', 'Plasma  Level,  ng/mL') | 15 |\n| R-citalopram | ('Delivery', 'Plasma  Level,  ng/mL') | 24 |\n| 2 | ('Delivery', 'Plasma  Level,  ng/mL') | 2 |\n| S-citalopram | ('Delivery', 'Plasma  Level,  ng/mL') | NA |\n| R-citalopram | ('Delivery', 'Plasma  Level,  ng/mL') | NA |\n| 3b | ('Delivery', 'Plasma  Level,  ng/mL') | 3b |\n| S-citalopram | ('Delivery', 'Plasma  Level,  ng/mL') | … |\n| R-citalopram | ('Delivery', 'Plasma  Level,  ng/mL') | … |\n| 4 | ('Delivery', 'Plasma  Level,  ng/mL') | 4 |\n| S-citalopram | ('Delivery', 'Plasma  Level,  ng/mL') | 14 |\n| 5 | ('Delivery', 'Plasma  Level,  ng/mL') | 5 |\n| S-citalopram | ('Delivery', 'Plasma  Level,  ng/mL') | NA |\n| 6 | ('Delivery', 'Plasma  Level,  ng/mL') | 6 |\n| S-sertraline | ('Delivery', 'Plasma  Level,  ng/mL') | 11 |\n| N-desmethylsertraline | ('Delivery', 'Plasma  Level,  ng/mL') | 26 |\n| 7 | ('Delivery', 'Plasma  Level,  ng/mL') | 7 |\n| S-sertraline | ('Delivery', 'Plasma  Level,  ng/mL') | 7 |\n| N-desmethylsertraline | ('Delivery', 'Plasma  Level,  ng/mL') | 32 |\n| 8 | ('Delivery', 'Plasma  Level,  ng/mL') | 8 |\n| S-sertraline | ('Delivery', 'Plasma  Level,  ng/mL') | NA |\n| N-desmethylsertraline | ('Delivery', 'Plasma  Level,  ng/mL') | NA |\n| 9 | ('Delivery', 'Plasma  Level,  ng/mL') | 9 |\n| S-sertraline | ('Delivery', 'Plasma  Level,  ng/mL') | 32 |\n| N-desmethylsertraline | ('Delivery', 'Plasma  Level,  ng/mL') | 120 |\n| 10 | ('Delivery', 'Plasma  Level,  ng/mL') | 10 |\n| S-sertraline | ('Delivery', 'Plasma  Level,  ng/mL') | 28 |\n| N-desmethylsertraline | ('Delivery', 'Plasma  Level,  ng/mL') | 59 |\n| 11 | ('Delivery', 'Plasma  Level,  ng/mL') | 11 |\n| S-sertraline | ('Delivery', 'Plasma  Level,  ng/mL') | 32 |\n| N-desmethylsertraline | ('Delivery', 'Plasma  Level,  ng/mL') | 97 |", 
+    "| ('Unnamed: 0_level_0', 'Subject') | Parameter type | Parameter value |\n| --- | --- | --- |\n| 1 | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | 1 |\n| S-citalopram | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | NA |\n| R-citalopram | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | NA |\n| 2 | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | 2 |\n| S-citalopram | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | 54 |\n| R-citalopram | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | 101 |\n| 3b | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | 3b |\n| S-citalopram | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | … |\n| R-citalopram | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | … |\n| 4 | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | 4 |\n| S-citalopram | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | 24 |\n| 5 | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | 5 |\n| S-citalopram | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | 95 |\n| 6 | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | 6 |\n| S-sertraline | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | NA |\n| N-desmethylsertraline | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | NA |\n| 7 | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | 7 |\n| S-sertraline | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | 22 |\n| N-desmethylsertraline | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | 41 |\n| 8 | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | 8 |\n| S-sertraline | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | 21 |\n| N-desmethylsertraline | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | 59 |\n| 9 | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | 9 |\n| S-sertraline | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | 39 |\n| N-desmethylsertraline | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | 149 |\n| 10 | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | 10 |\n| S-sertraline | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | NA |\n| N-desmethylsertraline | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | NA |\n| 11 | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | 11 |\n| S-sertraline | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | NA |\n| N-desmethylsertraline | ('Postpartum 2 Weeks', 'Plasma  Level,  ng/mL') | NA |", 
+    "| ('Unnamed: 0_level_0', 'Subject') | Parameter type | Parameter value |\n| --- | --- | --- |\n| 1 | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | 1 |\n| S-citalopram | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | NA |\n| R-citalopram | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | NA |\n| 2 | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | 2 |\n| S-citalopram | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | NA |\n| R-citalopram | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | NA |\n| 3b | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | 3b |\n| S-citalopram | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | … |\n| R-citalopram | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | … |\n| 4 | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | 4 |\n| S-citalopram | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | NA |\n| 5 | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | 5 |\n| S-citalopram | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | NA |\n| 6 | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | 6 |\n| S-sertraline | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | 27 |\n| N-desmethylsertraline | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | 52 |\n| 7 | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | 7 |\n| S-sertraline | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | 15 |\n| N-desmethylsertraline | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | 29 |\n| 8 | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | 8 |\n| S-sertraline | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | NA |\n| N-desmethylsertraline | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | NA |\n| 9 | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | 9 |\n| S-sertraline | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | NA |\n| N-desmethylsertraline | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | NA |\n| 10 | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | 10 |\n| S-sertraline | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | 62 |\n| N-desmethylsertraline | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | 74 |\n| 11 | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | 11 |\n| S-sertraline | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | 83 |\n| N-desmethylsertraline | ('Postpartum  4 to 6 Weeksa', 'Plasma  Level,  ng/mL') | 128 |", 
+    "| ('Unnamed: 0_level_0', 'Subject') | Parameter type | Parameter value |\n| --- | --- | --- |\n| 1 | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | 1 |\n| S-citalopram | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | 18 |\n| R-citalopram | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | 36 |\n| 2 | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | 2 |\n| S-citalopram | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | 27 |\n| R-citalopram | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | 75 |\n| 3b | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | 3b |\n| S-citalopram | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | … |\n| R-citalopram | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | … |\n| 4 | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | 4 |\n| S-citalopram | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | NA |\n| 5 | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | 5 |\n| S-citalopram | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | 63 |\n| 6 | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | 6 |\n| S-sertraline | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | 21 |\n| N-desmethylsertraline | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | 50 |\n| 7 | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | 7 |\n| S-sertraline | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | NA |\n| N-desmethylsertraline | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | NA |\n| 8 | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | 8 |\n| S-sertraline | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | 21 |\n| N-desmethylsertraline | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | 29 |\n| 9 | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | 9 |\n| S-sertraline | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | NA |\n| N-desmethylsertraline | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | NA |\n| 10 | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | 10 |\n| S-sertraline | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | NA |\n| N-desmethylsertraline | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | NA |\n| 11 | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | 11 |\n| S-sertraline | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | 99 |\n| N-desmethylsertraline | ('Postpartum  12 Weeks', 'Plasma  Level,  ng/mL') | 183 |"
+]
+
+data_caption_18426260_table_1="""
+Mean ± SD (Range) of Drug Level-to-Dose Ratiosa
+a
+The level-to-dose raito is a
+measure of the drug plasma level corrected for the dose.
+"""
+
+data_md_table_18426260_table_1="""
+| Drug | 20 weeks | 30 weeks | 36 weeks | Delivery | Postpartum 2 weeks | Postpartum 4 to 6 weeks | Postpartum 12 weeks |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Citalopram | Citalopram | Citalopram | Citalopram | Citalopram | Citalopram | Citalopram | Citalopram |
+| S-citalopram | 0.7 ±  0.1 (0.6–0.8) | 0.7 ±  0.4 (0.3–1.0) | 0.4 ±  0.1 (0.3–0.5) | 0.3 | 1.4 | NA | 0.5 ±  0.2 (0.4–0.7) |
+| R-citalopram | 1.4 ±  0.2 (1.2–1.5) | 1.2 ±  0.4 (0.7–1.6) | 0.8 ±  0.1 (0.7–0.9) | 0.5 | 2.5 | NA | 1.3 ±  0.8 (0.7–1.8) |
+| S-desmethylcitalopram | 0.3 ±  0.1 (0.3–0.4) | 0.4 ±  0.2 (0.2–0.5) | 0.2 ±  0.02 (0.21–0.24) | 0.1 | 0.4 | NA | 0.3 ±  0.1 (0.2–0.3) |
+| R-desmethylcitalopram | 0.4 ±  0.1 (0.3–0.5) | 0.4 ±  0.1 (0.2–0.5) | 0.3 ±  0.03 (0.2–0.3) | 0.1 | 0.5 | NA | 0.4 ±  0.2 (0.2–0.5) |
+| Escitlopram | Escitlopram | Escitlopram | Escitlopram | Escitlopram | Escitlopram | Escitlopram | Escitlopram |
+| S-citalopram | 2.3 ±  0.8 | 2.2 ±  1.8 | 2.3 ±  1.5 | 1.4 | 3.6 ±  1.6 | NA | 3.2 |
+| S-desmethylcitalopram | 0.5 ±  0.2 | 0.2 ±  0.1 | 0.5 ±  0.01 | 0.3 | 0.4 ±  0.1 | NA | 0.3 |
+| Sertaline | Sertaline | Sertaline | Sertaline | Sertaline | Sertaline | Sertaline | Sertaline |
+| S-Sertaline | 0.5 ±  0.4 (0.07–0.9) | 0.3 ±  0.2 (0.1–0.5) | 0.3 ±  0.1 (0.2–0.4) | 0.2 ±  0.1 (0.1–0.3) | 0.2 ±  0.2 (0.1–0.4) | 0.6 ±  0.2 (0.3–0.8) | 0.4 ±  0.3 (0.1–0.8) |
+| N-demethylsertaline | 0.6 ±  0.3 (0.3–1.1) | 0.8 ±  0.3 (0.2–1.0) | 0.8 ±  0.1 (0.7–1.0) | 0.7 ±  0.2 (0.5–1.0) | 0.6 ±  0.3 (0.3–0.8) | 0.9 ±  0.3 (0.6–1.3) | 0.9 ±  0.7 (0.1–1.5) |
+"""

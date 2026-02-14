@@ -6,12 +6,13 @@ import logging
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
+from extractor.agents.agent_utils import get_reasoning_process
 from extractor.agents.common_agent.common_agent import CommonAgent, CommonAgentResult, RetryException
 from extractor.agents.pk_summary.pk_sum_common_agent import (
     PKSumCommonAgentResult,
     # PKSumCommonAgent,
 )
-from extractor.agents.pk_summary.pk_sum_workflow_utils import get_common_agent
+from extractor.agents.agent_factory import get_common_agent
 from extractor.prompts_utils import generate_tables_prompts
 
 logger = logging.getLogger(__name__)
@@ -70,11 +71,11 @@ The content includes one or more tables in markdown format. Each table is preced
 
 ### **Your Output Format**
 
-Return a Python list of the relevant **table indexes** in the **exact format** below:
-
-```python
-[<table index>, <table index>, ...]
-```
+You output **must be** in json compact format, it **must exactly match** the following schema:
+{{
+    "reasoning_process": <string, a concise explanation of the thought process or reasoning steps taken to reach a conclusion (no more than 200 words)>,
+    "selected_table_indexes": <list[str], a python list of selected table indexes without fences (like '```python' or '```')>
+}}
 
 Do not include any explanations or extra output.
 
@@ -82,8 +83,11 @@ Do not include any explanations or extra output.
 
 ### **Output Example**
 
-```python
-["1", "3"]
+```json
+{{
+    "reasoning_process": "I carefully analyzed the tables and selected the ones that are relevant to pharmacokinetics (PK).",
+    "selected_table_indexes": ["1", "3"]
+}}
 ```
 
 ---
@@ -93,7 +97,7 @@ Do not include any explanations or extra output.
 
 class TablesSelectionResult(BaseModel):
     """Tables Selection Result"""
-    reasoning_process: str = Field(description="A detailed explanation of the thought process or reasoning steps taken to reach a conclusion.")
+    reasoning_process: str = Field(description="A concise explanation of the thought process or reasoning steps taken to reach a conclusion in 1-2 sentences.")
     selected_table_indexes: List[str] = Field(
         description="""a list of selected table indexes, such as ["1", "2", "3"]"""
     )
@@ -118,9 +122,9 @@ def post_process_selected_table_ids(
                 f"""Please generate valid table id and **exactly follow the format**: ["table_index_1", "table_index_2", ...]. \n\nWrong answer example: `{id}`"""
             )
 
-        if id < 0 or id > len(html_tables):
+        if id < 0 or id >= len(html_tables):
             raise RetryException(
-                "Please generate valid table id, wrong answer example: `{id}`"
+                f"Please generate valid table ids in selected_table_indexes (0 <= id < {len(html_tables)}), wrong answer example: `{id}`, which is out of range."
             )
         indices.append(id)
 
@@ -136,15 +140,17 @@ def select_pk_summary_tables(html_tables: list[dict[str, str | DataFrame]], llm)
     system_prompt = SELECT_PK_TABLES_PROMPT.format(table_content=table_content)
 
     agent = get_common_agent(llm=llm) # PKSumCommonAgent(llm=llm)
-    res, tables, token_usage, reasoning_process = agent.go(
+    result = agent.go(
         system_prompt=system_prompt,
         instruction_prompt=INSTRUCTION_PROMPT,
         schema=TablesSelectionResult,
         post_process=post_process_selected_table_ids,
         html_tables=html_tables,
     )
-    if reasoning_process is None:
-        reasoning_process = res.reasoning_process if hasattr(res, "reasoning_process") else "N / A"
+    res: TablesSelectionResult = result[0]
+    tables = result[1]
+    token_usage = result[2]
+    reasoning_process = get_reasoning_process(result)
     logger.info(f"Selected tables (indices): {res.selected_table_indexes}")
     logger.info(f"Reason: {reasoning_process}")
 

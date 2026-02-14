@@ -1,9 +1,8 @@
 from typing import List, Tuple
 import pandas as pd
 
-from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
-from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
-from extractor.agents.pk_individual.pk_ind_common_agent import PKIndCommonAgent
+from TabFuncFlow.utils.table_utils import dataframe_to_markdown
+from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, get_reasoning_process, increase_token_usage
 from extractor.agents.pk_individual.pk_ind_common_step import PKIndCommonAgentStep
 from extractor.agents.pk_individual.pk_ind_param_type_unit_extract_agent import (
     ExtractedParamTypeUnits,
@@ -57,9 +56,9 @@ class ExtractParamTypeAndUnitStep(PKIndCommonAgentStep):
             previous_errors_prompt = self._get_previous_errors_prompt(state)
             system_prompt = system_prompt + previous_errors_prompt
             instruction_prompt = self.get_instruction_prompt(state)
-            agent = PKIndCommonAgent(llm=llm, llm2=llm2)
+            agent = self.get_agent(state['llm']) # PKIndCommonAgent(llm=llm, llm2=llm2)
             
-            res_tuple = agent.go(
+            result = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=schema,
@@ -68,17 +67,13 @@ class ExtractParamTypeAndUnitStep(PKIndCommonAgentStep):
                 md_table=md,
                 col_mapping=col_mapping,
             )
-            if len(res_tuple) == 3:
-                res, processed_res, token_usage = res_tuple
-            elif len(res_tuple) == 4:
-                res, processed_res, token_usage, reasoning_process = res_tuple
-            else:
-                raise ValueError(f"Invalid return value from agent.go: {res_tuple}")
+            res: ParamTypeUnitExtractionResult = result[0]
+            processed_res = result[1]
+            token_usage = result[2]
+            reasoning_process = get_reasoning_process(result)
             self._step_output(
                 state,
-                step_reasoning_process=res.reasoning_process
-                if res is not None
-                else "",
+                step_reasoning_process=reasoning_process,
             )
             tuple_type_unit: Tuple[List[str], List[str], List[str]] = processed_res
 

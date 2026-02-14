@@ -2,6 +2,11 @@ from abc import ABC, abstractmethod
 from typing import Any, Callable, Optional
 import logging
 
+from pydantic import BaseModel
+from langchain_openai.chat_models.base import BaseChatOpenAI
+
+from extractor.agents.agent_utils import get_reasoning_process
+from extractor.agents.common_agent.common_agent import CommonAgent
 from extractor.agents.pk_individual.pk_ind_workflow_utils import PKIndWorkflowState
 from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
 from extractor.agents.pk_individual.pk_ind_workflow_utils import (
@@ -10,8 +15,8 @@ from extractor.agents.pk_individual.pk_ind_workflow_utils import (
 )
 from extractor.agents.pk_individual.pk_ind_common_agent import (
     PKIndCommonAgentResult,
-    PKIndCommonAgent,
 )
+from extractor.agents.agent_factory import get_common_agent
 from extractor.prompts_utils import generate_previous_errors_prompt
 
 logger = logging.getLogger(__name__)
@@ -23,6 +28,9 @@ class PKIndCommonStep(ABC):
         self.start_title = ""
         self.start_descp = ""
         self.end_title = ""
+
+    def get_agent(self, llm:BaseChatOpenAI) -> CommonAgent:
+        return get_common_agent(llm=llm) # PKIndCommonAgent(llm=state["llm"])
 
     def enter_step(self, state: PKIndWorkflowState):
         pk_ind_enter_step(state, self.start_title, self.start_descp)
@@ -103,6 +111,10 @@ class PKIndCommonAgentStep(PKIndCommonStep):
     def get_schema(self) -> PKIndCommonAgentResult | dict:
         """get result schema (pydantic BaseModel or json schema)"""
 
+    def get_schema_basemodel(self) -> Optional[BaseModel]:
+        """get result schema (pydantic BaseModel)"""
+        return None
+
     @abstractmethod
     def get_post_processor_and_kwargs(
         self, state: PKIndWorkflowState
@@ -111,9 +123,6 @@ class PKIndCommonAgentStep(PKIndCommonStep):
         dict | None,
     ]:
         """get post_processor and its kwargs"""
-
-    def get_agent(self, state: PKIndWorkflowState) -> PKIndCommonAgent:
-        return PKIndCommonAgent(llm=state["llm"])
 
     def execute_directly(
         self, state: PKIndWorkflowState
@@ -126,37 +135,34 @@ class PKIndCommonAgentStep(PKIndCommonStep):
         system_prompt = self.get_system_prompt(state)
         instruction_prompt = self.get_instruction_prompt(state)
         schema = self.get_schema()
+        schema_basemodel = self.get_schema_basemodel()
         post_process, kwargs = self.get_post_processor_and_kwargs(state)
-        agent = self.get_agent(state)
+        agent = self.get_agent(state["llm"])
         reasoning_process = ""
         if kwargs is not None:
-            res_tuple = agent.go(
+            result = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=schema,
+                schema_basemodel=schema_basemodel,
                 post_process=post_process,
                 **kwargs,
             )
-            if len(res_tuple) == 3:
-                res, processed_res, token_usage = res_tuple
-                reasoning_process = (res["reasoning_process"] if type(res) == dict else res.reasoning_process)
-            elif len(res_tuple) == 4:
-                res, processed_res, token_usage, reasoning_process = res_tuple
-            else:
-                raise ValueError(f"Invalid return value from agent.go: {res_tuple}")
+            res: PKIndCommonAgentResult = result[0]
+            processed_res = result[1]
+            token_usage = result[2]
+            reasoning_process = get_reasoning_process(result)            
         else:
-            res_tuple = agent.go(
+            result = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=schema,
+                schema_basemodel=schema_basemodel,
                 post_process=post_process,
             )
-            if len(res_tuple) == 3:
-                res, processed_res, token_usage = res_tuple
-                reasoning_process = (res["reasoning_process"] if type(res) == dict else res.reasoning_process)
-            elif len(res_tuple) == 4:
-                res, processed_res, token_usage, reasoning_process = res_tuple
-            else:
-                raise ValueError(f"Invalid return value from agent.go: {res_tuple}")
+            res: PKIndCommonAgentResult = result[0]
+            processed_res = result[1]
+            token_usage = result[2]
+            reasoning_process = get_reasoning_process(result)
         self._step_output(state, step_reasoning_process=reasoning_process)
         return res, processed_res, token_usage

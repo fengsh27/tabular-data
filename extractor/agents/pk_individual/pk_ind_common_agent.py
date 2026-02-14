@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 class PKIndCommonAgentResult(BaseModel):
     reasoning_process: str = Field(
-        description="A detailed explanation of the thought process or reasoning steps taken to reach a conclusion."
+        description="A concise explanation of the thought process or reasoning steps taken to reach a conclusion in 1-2 sentences."
     )
 
 
@@ -29,6 +29,7 @@ class PKIndCommonAgent:
         self.exceptions: list[RetryException] | None = None
         self.token_usage: dict | None = None
         self.try_fix_error: Optional[Callable[[Any], Any]] = None
+        
     def go(
         self,
         system_prompt: str,

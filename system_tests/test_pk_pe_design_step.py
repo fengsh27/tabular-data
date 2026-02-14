@@ -6,13 +6,13 @@ from extractor.utils import convert_sections_to_full_text
 
 # @pytest.mark.skip()
 def test_pk_pe_design_step_on_10971311(
-    llm_gpt5,
+    llm_agent,
     step_callback,
     title_10971311,
     abstract_10971311,
     sections_10971311,
 ):
-    step = PKPEDesignStep(llm=llm_gpt5)
+    step = PKPEDesignStep(llm=llm_agent)
     full_text = convert_sections_to_full_text(sections_10971311)
     state = PKPECurationWorkflowState(
         pmid="10971311",
@@ -29,13 +29,13 @@ def test_pk_pe_design_step_on_10971311(
 
 @pytest.mark.skip()
 def test_pk_pe_design_step_on_18426260(
-    llm_gpt5,
+    llm_agent,
     step_callback,
     title_18426260,
     abstract_18426260,
     sections_18426260,
 ):
-    step = PKPEDesignStep(llm=llm_gpt5)
+    step = PKPEDesignStep(llm=llm_agent)
     full_text = convert_sections_to_full_text(sections_18426260)
     state = PKPECurationWorkflowState(
         pmid="18426260",

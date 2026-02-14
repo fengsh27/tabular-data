@@ -1,0 +1,9 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation value,Variation type,Interval type,Lower limit,High limit,P value
+Vancomycin,Vancomycin,plasma,Neonates,N/A,60,"Initial Cavg concentration (before group)",12.9,mg/L,median,,,"IQR (25th-75th percentile)",11.3,17.0,<0.001
+Vancomycin,Vancomycin,plasma,Neonates,N/A,59,"Initial Cavg concentration (after group)",20.3,mg/L,median,,,"IQR (25th-75th percentile)",17.0,22.2,<0.001
+Vancomycin,Vancomycin,plasma,Neonates,N/A,116,"All Cavg concentration (before group)",13.1,mg/L,median,,,"IQR (25th-75th percentile)",11.3,16.2,<0.001
+Vancomycin,Vancomycin,plasma,Neonates,N/A,103,"All Cavg concentration (after group)",19.8,mg/L,median,,,"IQR (25th-75th percentile)",16.8,22.1,<0.001
+Vancomycin,Vancomycin,plasma,Neonates,N/A,22,"Initial Cavg/MIC ratio (before group)",8.8,ratio,median,,,"IQR (25th-75th percentile)",6.2,11.5,0.004
+Vancomycin,Vancomycin,plasma,Neonates,N/A,17,"Initial Cavg/MIC ratio (after group)",12.8,ratio,median,,,"IQR (25th-75th percentile)",10.9,20.9,0.004
+Vancomycin,Vancomycin,plasma,Neonates,N/A,22,"Initial AUC/MIC ratio (before group)",211,ratio,median,,,"IQR (25th-75th percentile)",149,275,0.006
+Vancomycin,Vancomycin,plasma,Neonates,N/A,17,"Initial AUC/MIC ratio (after group)",307,ratio,median,,,"IQR (25th-75th percentile)",262,502,0.006

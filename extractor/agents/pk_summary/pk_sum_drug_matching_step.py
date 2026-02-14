@@ -12,7 +12,7 @@ from extractor.agents.pk_summary.pk_sum_drug_matching_agent import (
     MatchedDrugResult,
     post_process_validate_matched_rows,
 )
-from extractor.agents.pk_summary.pk_sum_workflow_utils import get_common_agent
+from extractor.agents.agent_factory import get_common_agent
 
 
 class DrugMatchingAutomaticStep(PKSumCommonStep):

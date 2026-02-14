@@ -50,6 +50,10 @@ def display_md_table(md_table):
     return "\n".join(labeled_lines)
 
 
+PROMPT_TOKENS="prompt_tokens"
+COMPLETION_TOKENS="completion_tokens"
+TOTAL_TOKENS="total_tokens"
+
 DEFAULT_TOKEN_USAGE = {
     "total_tokens": 0,
     "completion_tokens": 0,
@@ -95,7 +99,11 @@ def from_system_template(template, **kwargs):
     return ChatPromptTemplate.from_messages([message])
 
 
-def extract_pmid_info_to_db(pmid: str, pmid_db: PMIDDB) -> tuple[str, str, str, str, list[dict], list[str]]:
+def extract_pmid_info_to_db(
+    pmid: str, 
+    pmid_db: PMIDDB, 
+    html_content: str | None = None
+) -> tuple[str, str, str, str, list[dict], list[str]]:
     """
     Extract pmid info from database or web, and save to database.
 
@@ -105,10 +113,11 @@ def extract_pmid_info_to_db(pmid: str, pmid_db: PMIDDB) -> tuple[str, str, str, 
     info = pmid_db.select_pmid_info(pmid)
     if info is not None:
         return info
-    retriever = ArticleRetriever()
-    res, html_content, code = retriever.request_article(pmid)
-    if not res:
-        return None, None, None, None, None, None
+    if html_content is None:
+        retriever = ArticleRetriever()
+        res, html_content, code = retriever.request_article(pmid)
+        if not res:
+            return None, None, None, None, None, None
     extractor = HtmlTableExtractor()
     tables = extractor.extract_tables(html_content)
     sections = extractor.extract_sections(html_content)
@@ -118,3 +127,10 @@ def extract_pmid_info_to_db(pmid: str, pmid_db: PMIDDB) -> tuple[str, str, str, 
     full_text = remove_references(full_text)
     pmid_db.insert_pmid_info(pmid, title, abstract, full_text, tables, sections)
     return pmid, title, abstract, full_text, tables, sections
+
+def get_reasoning_process(result: tuple) -> str:
+    res = result[0]
+    if hasattr(res, "reasoning_process") and res.reasoning_process is not None:
+        return res.reasoning_process
+    reasoning_process = result[3] if len(result) == 4 else "N/A"
+    return reasoning_process

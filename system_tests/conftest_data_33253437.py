@@ -18,12 +18,12 @@ Plasma levels of Sertraline, Citalopram and Escitalopram were more frequently in
 """
 
 
-data_caption_table_0_33253437 = """TABLE  2.
+data_caption_table_1_33253437 = """TABLE  2.
                     Individual pharmacokinetic, pharmacogenetic data and maternal/neonatal outcomes for women
 Abbreviations: APGAR, Appearance, Pulse, Grimace, Activity, Respiration; CPAP, Continuous Positive Airway Pressure; EM, Extensive Metabolizer; GDM, Gestational Diabetes Mellitus; GH, gestational Hypertension; IM, Intermediate Metabolizer; NA, not available; NICU, Neonatal Intensive Care Unit; PL, Plasma Level; PROM, Premature Rupture of Membranes; PM, Poor Metabolizer; PPH, postpartum hemorrhage; RDS, Respiratory Distress Syndrome; RP, Rapid Metabolizer; SGA, Small for Gestational Age; UM, Ultrarapid Metabolizer.
 [Correction added on December 5, 2020 after first online publication: The 8th column heading has been corrected. “CYP2C19” has been revised to “CYP2D6”.]"""
 
-data_md_table_table_0_33253437 = """
+data_md_table_table_1_33253437 = """""
 | Unnamed: 0 | ID | Dose (mg/d) | Mother's PL III trimester (ng/ml) | Mother's PL (ng/ml) delivery | Infant's PL (ng/ml) | Umbilical maternal ratio (%) | Other drugs | Expected phenotype (CYP2D6: major CYP metabolizer) | Maternal outcomes | Bleeding (ml) | Neonatal outcomes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Sertraline | 1 | 75 | 19.5 | NA | NA | NA | - | UM | - | 250 | Apnea with desaturation and mild bradycardia, superficial breathing, polypnea at 48 h of life up to 5 day |
@@ -84,7 +84,7 @@ data_md_table_table_0_33253437 = """
 | Fluoxetine | 44 | 20 | NA | 216.8 | 108.6 | 50.1 | - | UM | - | 100 | SGA, Neonatal infection |
 """
 
-data_md_table_drug_table_0_33253437 = """
+data_md_table_drug_table_1_33253437 = """
 | Drug name | Analyte | Specimen |
 | --- | --- | --- |
 | Sertraline | Sertraline | Plasma |
@@ -95,7 +95,7 @@ data_md_table_drug_table_0_33253437 = """
 | Fluoxetine | Fluoxetine | Plasma |
 """
 
-data_md_table_patient_table_0_33253437 = """
+data_md_table_patient_table_1_33253437 = """
 | Patient ID | Population | Pregnancy stage |
 | --- | --- | --- |
 | "1" | "N/A" | "N/A" |
@@ -149,7 +149,7 @@ data_md_table_patient_table_0_33253437 = """
 | "55" | "N/A" | "N/A" |
 """
 
-data_md_table_patient_refined_table_0_33253437 = """
+data_md_table_patient_refined_table_1_33253437 = """
 | Patient ID | Population | Pregnancy stage | Pediatric/Gestational age |
 | --- | --- | --- | --- |
 | 1 | Maternal | Trimester 3 | N/A |
@@ -203,7 +203,7 @@ data_md_table_patient_refined_table_0_33253437 = """
 | 55 | Maternal | Trimester 3 | N/A |
 """
 
-data_md_table_individual_table_0_33253437 = """
+data_md_table_individual_table_1_33253437 = """
 | Unnamed: 0 | ID | Dose (mg/d) | Mother's PL III trimester (ng/ml) | Mother's PL (ng/ml) delivery | Infant's PL (ng/ml) | Umbilical maternal ratio (%) | Other drugs | Expected phenotype (CYP2D6: major CYP metabolizer) | Maternal outcomes | Bleeding (ml) | Neonatal outcomes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Sertraline | 1 | 75 | 19.5 | NA | NA | NA | - | UM | - | 250 | Apnea with desaturation and mild bradycardia, superficial breathing, polypnea at 48 h of life up to 5 day |
@@ -264,7 +264,7 @@ data_md_table_individual_table_0_33253437 = """
 | Fluoxetine | 44 | 20 | NA | 216.8 | 108.6 | 50.1 | - | UM | - | 100 | SGA, Neonatal infection |
 """
 
-data_md_table_aligned_table_0_33253437 = """
+data_md_table_aligned_table_1_33253437 = """
 | Unnamed: 0 | ID | Dose (mg/d) | Mother's PL III trimester (ng/ml) | Mother's PL (ng/ml) delivery | Infant's PL (ng/ml) | Umbilical maternal ratio (%) | Other drugs | Expected phenotype (CYP2D6: major CYP metabolizer) | Maternal outcomes | Bleeding (ml) | Neonatal outcomes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Sertraline | 1 | 75 | 19.5 | NA | NA | NA | - | UM | - | 250 | Apnea with desaturation and mild bradycardia, superficial breathing, polypnea at 48 h of life up to 5 day |
@@ -325,7 +325,7 @@ data_md_table_aligned_table_0_33253437 = """
 | Fluoxetine | 44 | 20 | NA | 216.8 | 108.6 | 50.1 | - | UM | - | 100 | SGA, Neonatal infection |
 """
 
-data_col_mapping_table_0_33253437 = {
+data_col_mapping_table_1_33253437 = {
     'Unnamed: 0': 'Uncategorized', 
     'ID': 'Patient ID', 
     'Dose (mg/d)': 'Uncategorized', 
@@ -340,7 +340,7 @@ data_col_mapping_table_0_33253437 = {
     'Neonatal outcomes': 'Uncategorized'
 }
 
-data_md_table_list_table_0_33253437 = ["""
+data_md_table_list_table_1_33253437 = ["""
 | ID | Parameter type | Parameter value |
 | --- | --- | --- |
 | 1 | Mother's PL III trimester (ng/ml) | 19.5 |

@@ -1,0 +1,84 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter value,Parameter unit,Time value,Time unit
+1,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,tmax,1.75,h,N/A,N/A
+1,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Cmax,2020,ug/L,1.75,h
+1,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Caverage,1187,ug/L,N/A,N/A
+1,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,2.40,ratio,N/A,N/A
+1,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,tmax,1.75,h,N/A,N/A
+1,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Cmax,335,ug/L,1.75,h
+1,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Caverage,277,ug/L,N/A,N/A
+1,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,2.61,ratio,N/A,N/A
+2,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,tmax,1.67,h,N/A,N/A
+2,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Cmax,1096,ug/L,1.67,h
+2,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Caverage,704,ug/L,N/A,N/A
+2,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,2.05,ratio,N/A,N/A
+2,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,tmax,3.67,h,N/A,N/A
+2,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Cmax,561,ug/L,3.67,h
+2,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Caverage,477,ug/L,N/A,N/A
+2,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,2.26,ratio,N/A,N/A
+3,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,tmax,2.25,h,N/A,N/A
+3,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Cmax,712,ug/L,2.25,h
+3,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Caverage,388,ug/L,N/A,N/A
+3,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,2.34,ratio,N/A,N/A
+3,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,tmax,2.25,h,N/A,N/A
+3,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Cmax,1120,ug/L,2.25,h
+3,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Caverage,925,ug/L,N/A,N/A
+3,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,2.75,ratio,N/A,N/A
+4,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,tmax,2.25,h,N/A,N/A
+4,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Cmax,1230,ug/L,2.25,h
+4,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Caverage,597,ug/L,N/A,N/A
+4,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,2.04,ratio,N/A,N/A
+4,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,tmax,2.25,h,N/A,N/A
+4,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Cmax,1010,ug/L,2.25,h
+4,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Caverage,651,ug/L,N/A,N/A
+4,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,2.5,ratio,N/A,N/A
+5,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,tmax,2.28,h,N/A,N/A
+5,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Cmax,1429,ug/L,2.28,h
+5,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Caverage,597,ug/L,N/A,N/A
+5,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,2.95,ratio,N/A,N/A
+5,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,tmax,4.20,h,N/A,N/A
+5,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Cmax,1336,ug/L,4.20,h
+5,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Caverage,815,ug/L,N/A,N/A
+5,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,3.08,ratio,N/A,N/A
+6,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,tmax,5.67,h,N/A,N/A
+6,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Cmax,477,ug/L,5.67,h
+6,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Caverage,354,ug/L,N/A,N/A
+6,venlafaxine,venlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,3.22,ratio,N/A,N/A
+6,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,tmax,7.67,h,N/A,N/A
+6,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Cmax,413,ug/L,7.67,h
+6,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,Caverage,502,ug/L,N/A,N/A
+6,venlafaxine,O-desmethylvenlafaxine,breast milk,maternal (lactating adults),postpartum,N/A,M/P_AUC,3.24,ratio,N/A,N/A
+Infant 1,venlafaxine,venlafaxine,breast milk,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),"infant dose (% maternal dose, V equivalents)",5.9,%,N/A,N/A
+Infant 1,venlafaxine,venlafaxine,infant plasma,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),infant plasma concentration,5,ug/L,N/A,N/A
+Infant 1,venlafaxine,O-desmethylvenlafaxine,breast milk,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),"infant dose (% maternal dose, V equivalents)",1.5,%,N/A,N/A
+Infant 1,venlafaxine,O-desmethylvenlafaxine,infant plasma,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),infant plasma concentration (below limit),2.5,ug/L,N/A,N/A
+Infant 1,venlafaxine,V equivalents,breast milk,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),total infant dose (V equivalents),7.4,%,N/A,N/A
+Infant 2a,venlafaxine,venlafaxine,breast milk,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),"infant dose (% maternal dose, V equivalents)",3.8,%,N/A,N/A
+Infant 2a,venlafaxine,venlafaxine,infant plasma,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),infant plasma concentration (below limit),4,ug/L,N/A,N/A
+Infant 2a,venlafaxine,O-desmethylvenlafaxine,breast milk,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),"infant dose (% maternal dose, V equivalents)",2.7,%,N/A,N/A
+Infant 2a,venlafaxine,O-desmethylvenlafaxine,infant plasma,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),infant plasma concentration (below limit),3,ug/L,N/A,N/A
+Infant 2a,venlafaxine,V equivalents,breast milk,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),total infant dose (V equivalents),6.5,%,N/A,N/A
+Infant 2b,venlafaxine,venlafaxine,breast milk,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),"infant dose (% maternal dose, V equivalents)",3.8,%,N/A,N/A
+Infant 2b,venlafaxine,venlafaxine,infant plasma,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),infant plasma concentration (below limit),4,ug/L,N/A,N/A
+Infant 2b,venlafaxine,O-desmethylvenlafaxine,breast milk,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),"infant dose (% maternal dose, V equivalents)",2.7,%,N/A,N/A
+Infant 2b,venlafaxine,O-desmethylvenlafaxine,infant plasma,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),infant plasma concentration (below limit),3,ug/L,N/A,N/A
+Infant 2b,venlafaxine,V equivalents,breast milk,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),total infant dose (V equivalents),6.5,%,N/A,N/A
+Infant 3,venlafaxine,venlafaxine,breast milk,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),"infant dose (% maternal dose, V equivalents)",2.1,%,N/A,N/A
+Infant 3,venlafaxine,venlafaxine,infant plasma,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),infant plasma concentration (below limit),3,ug/L,N/A,N/A
+Infant 3,venlafaxine,O-desmethylvenlafaxine,breast milk,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),"infant dose (% maternal dose, V equivalents)",5.2,%,N/A,N/A
+Infant 3,venlafaxine,O-desmethylvenlafaxine,infant plasma,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),infant plasma concentration,6.0,ug/L,N/A,N/A
+Infant 3,venlafaxine,V equivalents,breast milk,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),total infant dose (V equivalents),7.3,%,N/A,N/A
+Infant 4,venlafaxine,venlafaxine,breast milk,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),"infant dose (% maternal dose, V equivalents)",2.7,%,N/A,N/A
+Infant 4,venlafaxine,venlafaxine,infant plasma,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),infant plasma concentration (below limit),2,ug/L,N/A,N/A
+Infant 4,venlafaxine,O-desmethylvenlafaxine,breast milk,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),"infant dose (% maternal dose, V equivalents)",3.1,%,N/A,N/A
+Infant 4,venlafaxine,O-desmethylvenlafaxine,infant plasma,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),infant plasma concentration,38.0,ug/L,N/A,N/A
+Infant 4,venlafaxine,V equivalents,breast milk,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),total infant dose (V equivalents),5.8,%,N/A,N/A
+Infant 5,venlafaxine,venlafaxine,breast milk,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),"infant dose (% maternal dose, V equivalents)",2.5,%,N/A,N/A
+Infant 5,venlafaxine,venlafaxine,infant plasma,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),infant plasma concentration,ND3,ug/L,N/A,N/A
+Infant 5,venlafaxine,O-desmethylvenlafaxine,breast milk,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),"infant dose (% maternal dose, V equivalents)",3.5,%,N/A,N/A
+Infant 5,venlafaxine,O-desmethylvenlafaxine,infant plasma,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),infant plasma concentration,20.0,ug/L,N/A,N/A
+Infant 5,venlafaxine,V equivalents,breast milk,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),total infant dose (V equivalents),6.0,%,N/A,N/A
+Infant 6,venlafaxine,venlafaxine,breast milk,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),"infant dose (% maternal dose, V equivalents)",2.1,%,N/A,N/A
+Infant 6,venlafaxine,venlafaxine,infant plasma,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),infant plasma concentration,ND3,ug/L,N/A,N/A
+Infant 6,venlafaxine,O-desmethylvenlafaxine,breast milk,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),"infant dose (% maternal dose, V equivalents)",3.1,%,N/A,N/A
+Infant 6,venlafaxine,O-desmethylvenlafaxine,infant plasma,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),infant plasma concentration,3.0,ug/L,N/A,N/A
+Infant 6,venlafaxine,V equivalents,breast milk,infant (breastfed),postpartum,mean 7.0 months (range 2.7-10.3 months),total infant dose (V equivalents),5.2,%,N/A,N/A

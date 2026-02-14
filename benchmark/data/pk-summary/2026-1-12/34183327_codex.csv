@@ -1,0 +1,31 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation value,Variation type,Interval type,Lower limit,High limit,P value
+Isoniazid,Isoniazid,plasma,Children and adolescents with TBM,N/A,20,"AUC0-24 (day 2, first PK assessment)",18.5,h*mg/L,geometric mean,,,range,5.1,47.4,0.888
+Isoniazid,Isoniazid,plasma,Children and adolescents with TBM,N/A,12,"AUC0-24 (day 10, second PK assessment)",14.5,h*mg/L,geometric mean,,,range,5.9,44.2,0.888
+Isoniazid,Isoniazid,plasma,Children and adolescents with TBM,N/A,20,"Cmax (day 2, first PK assessment)",4.6,mg/L,geometric mean,,,range,1.0,10.0,0.366
+Isoniazid,Isoniazid,plasma,Children and adolescents with TBM,N/A,12,"Cmax (day 10, second PK assessment)",4.7,mg/L,geometric mean,,,range,2.5,13.6,0.366
+Isoniazid,Isoniazid,cerebrospinal fluid,Children and adolescents with TBM,N/A,6,"C_CSF0-2 (day 2, first PK assessment)",1.4,mg/L,geometric mean,,,range,0.5,6.1,
+Isoniazid,Isoniazid,cerebrospinal fluid,Children and adolescents with TBM,N/A,4,"C_CSF0-2 (day 10, second PK assessment)",1.6,mg/L,geometric mean,,,range,1.2,2.5,
+Isoniazid,Isoniazid,cerebrospinal fluid,Children and adolescents with TBM,N/A,7,"C_CSF3-5 (day 2, first PK assessment)",1.6,mg/L,geometric mean,,,range,0.3,5.0,
+Isoniazid,Isoniazid,cerebrospinal fluid,Children and adolescents with TBM,N/A,4,"C_CSF3-5 (day 10, second PK assessment)",1.7,mg/L,geometric mean,,,range,0.6,5.0,
+Isoniazid,Isoniazid,cerebrospinal fluid,Children and adolescents with TBM,N/A,7,"C_CSF6-8 (day 2, first PK assessment)",1.3,mg/L,geometric mean,,,range,1.2,4.3,
+Isoniazid,Isoniazid,cerebrospinal fluid,Children and adolescents with TBM,N/A,3,"C_CSF6-8 (day 10, second PK assessment)",2.3,mg/L,geometric mean,,,range,1.9,2.8,
+Rifampicin,Rifampicin,plasma,Children and adolescents with TBM,N/A,20,"AUC0-24 (day 2, first PK assessment)",66.9,h*mg/L,geometric mean,,,range,21.7,118.6,0.442
+Rifampicin,Rifampicin,plasma,Children and adolescents with TBM,N/A,12,"AUC0-24 (day 10, second PK assessment)",71.8,h*mg/L,geometric mean,,,range,36.1,116.5,0.442
+Rifampicin,Rifampicin,plasma,Children and adolescents with TBM,N/A,20,"Cmax (day 2, first PK assessment)",9.4,mg/L,geometric mean,,,range,2.9,23.7,0.499
+Rifampicin,Rifampicin,plasma,Children and adolescents with TBM,N/A,12,"Cmax (day 10, second PK assessment)",10.4,mg/L,geometric mean,,,range,5.7,23.3,0.499
+Rifampicin,Rifampicin,cerebrospinal fluid,Children and adolescents with TBM,N/A,6,"C_CSF0-2 (day 2, first PK assessment)",0.2,mg/L,geometric mean,,,range,0.1,0.4,
+Rifampicin,Rifampicin,cerebrospinal fluid,Children and adolescents with TBM,N/A,4,"C_CSF0-2 (day 10, second PK assessment)",0.1,mg/L,geometric mean,,,range,0.1,0.1,
+Rifampicin,Rifampicin,cerebrospinal fluid,Children and adolescents with TBM,N/A,7,"C_CSF3-5 (day 2, first PK assessment)",0.3,mg/L,geometric mean,,,range,0.1,0.8,
+Rifampicin,Rifampicin,cerebrospinal fluid,Children and adolescents with TBM,N/A,4,"C_CSF3-5 (day 10, second PK assessment)",0.1,mg/L,geometric mean,,,range,0.1,0.3,
+Rifampicin,Rifampicin,cerebrospinal fluid,Children and adolescents with TBM,N/A,7,"C_CSF6-8 (day 2, first PK assessment)",0.4,mg/L,geometric mean,,,range,0.1,1.4,
+Rifampicin,Rifampicin,cerebrospinal fluid,Children and adolescents with TBM,N/A,3,"C_CSF6-8 (day 10, second PK assessment)",0.2,mg/L,geometric mean,,,range,0.1,0.7,
+Pyrazinamide,Pyrazinamide,plasma,Children and adolescents with TBM,N/A,20,"AUC0-24 (day 2, first PK assessment)",315.5,h*mg/L,geometric mean,,,range,100.6,599.0,0.482
+Pyrazinamide,Pyrazinamide,plasma,Children and adolescents with TBM,N/A,12,"AUC0-24 (day 10, second PK assessment)",328.4,h*mg/L,geometric mean,,,range,143.3,1477.7,0.482
+Pyrazinamide,Pyrazinamide,plasma,Children and adolescents with TBM,N/A,20,"Cmax (day 2, first PK assessment)",37.7,mg/L,geometric mean,,,range,15.9,61.7,0.350
+Pyrazinamide,Pyrazinamide,plasma,Children and adolescents with TBM,N/A,12,"Cmax (day 10, second PK assessment)",40.5,mg/L,geometric mean,,,range,22.7,88.4,0.350
+Pyrazinamide,Pyrazinamide,cerebrospinal fluid,Children and adolescents with TBM,N/A,6,"C_CSF0-2 (day 2, first PK assessment)",24.4,mg/L,geometric mean,,,range,11.1,54.9,
+Pyrazinamide,Pyrazinamide,cerebrospinal fluid,Children and adolescents with TBM,N/A,4,"C_CSF0-2 (day 10, second PK assessment)",25.6,mg/L,geometric mean,,,range,21.3,37.1,
+Pyrazinamide,Pyrazinamide,cerebrospinal fluid,Children and adolescents with TBM,N/A,7,"C_CSF3-5 (day 2, first PK assessment)",30.0,mg/L,geometric mean,,,range,19.2,43.3,
+Pyrazinamide,Pyrazinamide,cerebrospinal fluid,Children and adolescents with TBM,N/A,4,"C_CSF3-5 (day 10, second PK assessment)",24.7,mg/L,geometric mean,,,range,15.9,38.1,
+Pyrazinamide,Pyrazinamide,cerebrospinal fluid,Children and adolescents with TBM,N/A,7,"C_CSF6-8 (day 2, first PK assessment)",19.6,mg/L,geometric mean,,,range,7.2,37.7,
+Pyrazinamide,Pyrazinamide,cerebrospinal fluid,Children and adolescents with TBM,N/A,3,"C_CSF6-8 (day 10, second PK assessment)",39.4,mg/L,geometric mean,,,range,23.1,70.8,

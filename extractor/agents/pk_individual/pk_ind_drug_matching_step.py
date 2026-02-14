@@ -2,9 +2,7 @@ import pandas as pd
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
-from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, increase_token_usage
-from extractor.agents.common_agent.common_agent_2steps import CommonAgentTwoSteps
-from extractor.agents.pk_individual.pk_ind_common_agent import PKIndCommonAgent
+from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, get_reasoning_process, increase_token_usage
 from extractor.agents.pk_individual.pk_ind_common_step import (
     PKIndCommonStep,
 )
@@ -68,8 +66,8 @@ class DrugMatchingAgentStep(PKIndCommonStep):
             )
             previous_errors_prompt = self._get_previous_errors_prompt(state)
             system_prompt = system_prompt + previous_errors_prompt
-            agent = CommonAgentTwoSteps(llm=llm)
-            res, processed_res, token_usage, reasoning_process = agent.go(
+            agent = self.get_agent(state['llm']) 
+            result = agent.go(
             # agent = PKIndCommonAgent(llm=llm)
             # res, processed_res, token_usage = agent.go(
                 system_prompt=system_prompt,
@@ -79,9 +77,13 @@ class DrugMatchingAgentStep(PKIndCommonStep):
                 md_table1=md,
                 md_table2=md_table_drug,
             )
+            res: MatchedDrugResult = result[0]
+            processed_res = result[1]
+            token_usage = result[2]
+            reasoning_process = get_reasoning_process(result)
             self._step_output(
                 state,
-                step_reasoning_process=res.reasoning_process if res is not None else "",
+                step_reasoning_process=reasoning_process,
             )
             drug_match_list: list[int] = processed_res
             df_table_drug = markdown_to_dataframe(md_table_drug)

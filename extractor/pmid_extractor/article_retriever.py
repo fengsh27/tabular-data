@@ -3,6 +3,7 @@ from fake_useragent import UserAgent
 from bs4 import BeautifulSoup
 import logging
 import os
+from requests import Response
 import shortuuid
 
 from extractor.make_request import make_article_request, make_get_request
