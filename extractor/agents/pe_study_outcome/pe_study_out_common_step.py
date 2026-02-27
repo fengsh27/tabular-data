@@ -142,7 +142,7 @@ class PEStudyOutCommonAgentStep(PEStudyOutCommonStep):
                 **kwargs,
             )
         else:
-            res, processed_res, token_usage = agent.go(
+            res, processed_res, token_usage, _ = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=schema,
@@ -153,8 +153,8 @@ class PEStudyOutCommonAgentStep(PEStudyOutCommonStep):
             try:
                 reasoning_process = (
                     res["reasoning_process"]
-                    if type(res) == dict
-                    else res.reasoning_process
+                    if type(res) == dict and "reasoning_process" in res
+                    else res.reasoning_process if hasattr(res, "reasoning_process") else ""
                 )
             except Exception as e:
                 logger.error(
