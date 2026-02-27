@@ -113,7 +113,14 @@ class ArticleRetriever(object):
         return self._extract_full_text_link(html_content)
 
     @article_processor
-    def request_article(self, pmid: str):
+    def request_article(self, pmid: str) -> tuple[bool, str, int]:
+        """
+        request article by pmid:
+
+        Returns:
+            tuple[bool, str, int]: (success, html_content, status_code)
+        """
+
         pmid = pmid.strip()
 
         # support full-text url directly

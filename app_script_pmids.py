@@ -25,6 +25,30 @@ from extractor.utils import (
 from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 load_dotenv()
 
+"""
+python app_script_pmids.py -o OUTPUT_FOLDER [-f PMIDS_FILE] [-i PMID] [-h]
+
+This script will:
+1. Read PMIDs from a CSV file or a single PMID
+2. Extract tables from the HTML content of each PMID
+3. Insert the extracted data into a SQLite database
+4. Run PK-PE agents to extract PK-PE information from the extracted data
+5. Write the extracted PK-PE information into a CSV file in output directory
+
+Input:
+- optional -f CSV file path containing PMIDs to extract,
+  The CSV file should have the following format:
+  PMID, HTML_FILE_PATH
+  or
+  PMID # we will download the html file from pubmed
+- optional -o Output directory, if not provided, we won't run the agent part
+- Optional: -i PMID to extract
+
+Output:
+- CSV file in output directory containing PK-PE information
+
+"""
+
 logger = initialize_logger(
     log_file="app_scripts.log",
     app_log_name="scripts",
@@ -144,7 +168,7 @@ def prepare_data_by_pmids_csv_file(csv_pmids_fn: str, pmid_db: PMIDDB) -> list[s
 def extract_by_csv_file(interval_time=0.0):
     parser = argparse.ArgumentParser()
     parser.add_argument("-f", "--pmids_fn", help="csv file path containing pmids to extract")
-    parser.add_argument("-o", "--out_dir", required=True, help="output directory")
+    parser.add_argument("-o", "--out_dir", help="output directory")
     
     args = vars(parser.parse_args())
     
@@ -156,6 +180,14 @@ def extract_by_csv_file(interval_time=0.0):
     
     pmid_db = get_pmid_db()
     pmids = prepare_data_by_pmids_csv_file(pmids_fn, pmid_db)
+    if not pmids:
+        logger.info("No PMIDs to process")
+        return
+    
+    if args.get("out_dir", None) is None:
+        logger.info("No output directory provided, skipping agent part")
+        return
+    
     pipeline_llm = get_pipeline_llm()
     agent_llm = get_agent_llm()
     
