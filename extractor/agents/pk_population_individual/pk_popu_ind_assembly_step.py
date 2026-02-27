@@ -51,7 +51,7 @@ class AssemblyStep(PKPopuIndCommonStep):
         )
 
         return (
-            PKPopuIndCommonAgentResult(reasoning_process=""),
+            PKPopuIndCommonAgentResult(),
             df_combined,
             {**DEFAULT_TOKEN_USAGE},
         )

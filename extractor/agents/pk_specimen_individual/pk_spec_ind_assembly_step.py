@@ -51,7 +51,6 @@ class AssemblyStep(PKSpecIndCommonStep):
 
         return (
             PKSpecIndCommonAgentResult(
-                # reasoning_process="",
             ),
             df_combined,
             {**DEFAULT_TOKEN_USAGE},

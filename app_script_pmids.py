@@ -245,7 +245,7 @@ def extract_by_csv_file(interval_time=0.0):
                 df = markdown_to_dataframe(value["curated_table"])
                 if df.empty:
                     continue
-                out_fn = Path(out_dir) / f"{pmid}_{k}.csv"
+                out_fn = Path(out_dir) / f"{pmid}_{str(k)}.csv"
                 df.to_csv(out_fn, index=False)
                 if not value["correct"]:
                     logger.error(f"Curated table for {pmid} {k} is not correct")

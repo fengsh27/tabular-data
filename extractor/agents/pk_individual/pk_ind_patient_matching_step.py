@@ -122,7 +122,6 @@ class PatientMatchingAgentStep(PKIndCommonStep):
 
         return (
             MatchedPatientResult(
-                reasoning_process="",
                 matched_row_indices=[],
             ),
             patient_list,

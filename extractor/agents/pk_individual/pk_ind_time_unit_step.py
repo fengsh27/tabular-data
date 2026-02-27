@@ -58,7 +58,6 @@ class TimeExtractionStep(PKIndCommonStep):
 
         return (
             TimeAndUnitResult(
-                reasoning_process="",
                 times_and_units=[]
             ),
             time_list,

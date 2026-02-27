@@ -110,7 +110,6 @@ class ExtractParamTypeAndUnitStep(PKSumCommonAgentStep):
                 type_unit_cache[col_name_of_parameter_type] = type_unit_list[-1]
         return (
             ParamTypeUnitExtractionResult(
-                reasoning_process="",
                 extracted_param_units=ExtractedParamTypeUnits(
                     parameter_types=[], parameter_units=[]
                 ),

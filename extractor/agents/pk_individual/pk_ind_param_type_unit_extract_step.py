@@ -90,7 +90,6 @@ class ExtractParamTypeAndUnitStep(PKIndCommonAgentStep):
 
         return (
             ParamTypeUnitExtractionResult(
-                reasoning_process="",
                 extracted_param_units=ExtractedParamTypeUnits(
                     parameter_types=[], parameter_units=[], parameter_values=[]
                 ),

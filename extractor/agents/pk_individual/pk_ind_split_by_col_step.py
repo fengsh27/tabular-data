@@ -85,7 +85,6 @@ class SplitByColumnsStep(PKIndCommonAgentStep):
             return super().execute_directly(state)
         else:
             res = SplitByColumnsResult(
-                reasoning_process="",
                 sub_tables_columns=[[]],
             )
             processed_res = [

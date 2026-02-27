@@ -119,7 +119,7 @@ class MappingStep(PEStudyOutCommonStep):
             ].reset_index(drop=True)
 
         return (
-            PEStudyOutCommonAgentResult(reasoning_process=""),
+            PEStudyOutCommonAgentResult(),
             df_combined,
             {**DEFAULT_TOKEN_USAGE},
         )
