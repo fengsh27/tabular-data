@@ -1,11 +1,14 @@
 import json
 import re
+import logging
 from bs4 import BeautifulSoup, FeatureNotFound, Tag
 from typing import Callable, Optional
 import pandas as pd
 from TabFuncFlow.utils.table_utils import html_table_to_markdown, dataframe_to_markdown
 from extractor.utils import convert_html_table_to_dataframe, escape_braces_for_format
 from typing import List, Optional, Dict
+
+logger = logging.getLogger(__name__)
 
 def get_tag_text(tag: Tag) -> str:
     text = tag.text
@@ -704,6 +707,7 @@ class XmlTableParser(object):
         return tables
 
     def extract_title(self, html: str):
+        logger.info("Extracting title from xml")
         soup = self._parse_xml(html)
         if soup is None:
             return None
@@ -714,6 +718,7 @@ class XmlTableParser(object):
             if title_tag is not None:
                 title_text = self._clean_text(title_tag.get_text(" ", strip=True))
                 if len(title_text) > 0:
+                    logger.info("Extracted title: %s", title_text)
                     return title_text
 
         for title_tag in soup.find_all("article-title"):
@@ -721,15 +726,20 @@ class XmlTableParser(object):
                 continue
             title_text = self._clean_text(title_tag.get_text(" ", strip=True))
             if len(title_text) > 0:
+                logger.info("Extracted title: %s", title_text)
                 return title_text
 
+        logger.info("Failed to extract title")
         return None
 
     def extract_abstract(self, html: str):
+        logger.info("Extracting abstract from xml")
         soup = self._parse_xml(html)
         if soup is None:
             return None
-        return self._extract_abstract_text(soup)
+        abstract = self._extract_abstract_text(soup)
+        logger.info("Extracted abstract: %s", abstract)
+        return abstract
 
     def _section_is_stopped(self, title: str, sec_type: str) -> bool:
         section_key = f"{title} {sec_type}".lower()
