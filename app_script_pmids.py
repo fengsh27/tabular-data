@@ -59,6 +59,38 @@ logger = initialize_logger(
 )
 
 
+def _create_pmid_log_handler(pmid: str) -> logging.FileHandler:
+    logs_folder = os.environ.get("LOGS_FOLDER", "./logs")
+    if len(logs_folder.strip()) == 0:
+        logs_folder = "./logs"
+    os.makedirs(logs_folder, exist_ok=True)
+
+    pmid_log_path = os.path.join(logs_folder, f"{pmid}.log")
+    handler = logging.FileHandler(pmid_log_path, mode="a", encoding="utf-8")
+    handler.setLevel(logging.INFO)
+    handler.setFormatter(
+        logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+    )
+    return handler
+
+
+def _attach_pmid_log_handler(pmid: str):
+    handler = _create_pmid_log_handler(pmid)
+    target_loggers = [
+        logger,
+        logging.getLogger("extractor"),
+    ]
+    for target_logger in target_loggers:
+        target_logger.addHandler(handler)
+    return handler, target_loggers
+
+
+def _detach_pmid_log_handler(handler: logging.Handler, target_loggers: list[logging.Logger]):
+    for target_logger in target_loggers:
+        target_logger.removeHandler(handler)
+    handler.close()
+
+
 def get_llm(model: str):
     if "gpt" in model:
         return get_openai()
@@ -200,7 +232,9 @@ def extract_by_csv_file(interval_time=0.0):
     out_dir = args["out_dir"]
     error_report = []
     for pmid in pmids:
+        pmid_handler, pmid_loggers = _attach_pmid_log_handler(pmid)
         try:
+            logger.info(f"Start curating paper {pmid}")
             res = mgr.run(pmid)
             for k, value in res.items():
                 value: PKPECuratedTables = value
@@ -218,7 +252,7 @@ def extract_by_csv_file(interval_time=0.0):
                     error_report.append((pmid, f"Curated table for {pmid} {k} is not correct"))
                     error_fn = Path(out_dir) / f"{pmid}_{k}_error.txt"
                     error_fn.write_text(f"Curated table for {pmid} {k} is not correct\nExplanation: {value['explanation']}\nSuggested fix: {value['suggested_fix']}\n")
-                    
+            logger.info(f"Finish curating paper {pmid}")
             time.sleep(interval_time)
         except Exception as e:
             logger.error(f"Error ocurred in curating paper {pmid}")
@@ -227,6 +261,8 @@ def extract_by_csv_file(interval_time=0.0):
             print(str(e))
             error_report.append((pmid, str(e)))
             continue
+        finally:
+            _detach_pmid_log_handler(pmid_handler, pmid_loggers)
 
     if len(error_report) == 0:
         logger.info("All PMIDs are successfully curated.")
