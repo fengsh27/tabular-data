@@ -22,6 +22,7 @@ from extractor.utils import (
     convert_sections_to_full_text,
     remove_references,
 )
+from extractor.agents.agent_utils import extract_pmid_info_to_db
 from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 load_dotenv()
 
@@ -200,19 +201,26 @@ def prepare_data_by_pmids_csv_file(csv_pmids_fn: str, pmid_db: PMIDDB) -> list[s
 def extract_by_csv_file(interval_time=0.0):
     parser = argparse.ArgumentParser()
     parser.add_argument("-f", "--pmids_fn", help="csv file path containing pmids to extract")
+    parser.add_argument("-i", "--pmid", help="paper pmid")
     parser.add_argument("-o", "--out_dir", help="output directory")
     
     args = vars(parser.parse_args())
     
     pmids_fn: str | None = args.get("pmids_fn", None)
-    if pmids_fn == None:
+    pmid: str | None = args.get("pmid", None)
+    if pmids_fn == None and pmid is None:
         print("Usage:")
         print(f"python {__file__} -o OUTPUT_FOLDER [-f PMIDS_FILE] [-i PMID] [-h]")
         return
     
     pmid_db = get_pmid_db()
-    pmids = prepare_data_by_pmids_csv_file(pmids_fn, pmid_db)
-    if not pmids:
+    pmids = None
+    if pmids_fn is not None:
+        pmids = prepare_data_by_pmids_csv_file(pmids_fn, pmid_db)
+    elif pmid is not None:
+        extract_pmid_info_to_db(pmid, pmid_db)
+        pmids = [pmid]
+    if not pmids and not pmid:
         logger.info("No PMIDs to process")
         return
     
@@ -245,7 +253,7 @@ def extract_by_csv_file(interval_time=0.0):
                 df = markdown_to_dataframe(value["curated_table"])
                 if df.empty:
                     continue
-                out_fn = Path(out_dir) / f"{pmid}_{str(k)}.csv"
+                out_fn = Path(out_dir) / f"{pmid}_{k.value}.csv"
                 df.to_csv(out_fn, index=False)
                 if not value["correct"]:
                     logger.error(f"Curated table for {pmid} {k} is not correct")

@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import Any, Callable, Optional
 import logging
+from pydantic import BaseModel
 
 from extractor.agents.pk_summary.pk_sum_workflow_utils import PKSumWorkflowState
 from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
@@ -103,6 +104,10 @@ class PKSumCommonAgentStep(PKSumCommonStep):
     def get_schema(self) -> PKSumCommonAgentResult | dict:
         """get result schema (pydantic BaseModel or json schema)"""
 
+    def get_schema_basemodel(self) -> Optional[BaseModel]:
+        """get result schema (pydantic BaseModel)"""
+        return None
+
     @abstractmethod
     def get_post_processor_and_kwargs(
         self, state: PKSumWorkflowState
@@ -131,6 +136,7 @@ class PKSumCommonAgentStep(PKSumCommonStep):
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=schema,
+                schema_basemodel=self.get_schema_basemodel(),
                 post_process=post_process,
                 **kwargs,
             )

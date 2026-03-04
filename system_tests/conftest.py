@@ -101,6 +101,12 @@ from system_tests.conftest_data_34746508 import (
     data_curated_table_pk_individual_34746508,
     data_pk_individual_verification_reasoning_34746508,
 )
+from system_tests.conftest_data_21474786 import (
+    data_title_21474786,
+    data_md_table_aligned_21474786_table_1,
+    data_caption_21474786_table_1,
+    data_md_table_drug_21474786_table_1,
+)
 
 load_dotenv()
 
@@ -2736,6 +2742,23 @@ def pk_individual_curated_table_34746508():
 @pytest.fixture(scope="module")
 def pk_individual_verification_reasoning_34746508():
     return data_pk_individual_verification_reasoning_34746508
+
+
+@pytest.fixture(scope="module")
+def md_table_drug_21474786_table_1():
+    return data_md_table_drug_21474786_table_1
+
+@pytest.fixture(scope="module")
+def md_table_aligned_21474786_table_1():
+    return data_md_table_aligned_21474786_table_1
+
+@pytest.fixture(scope="module")
+def caption_21474786_table_1():
+    return data_caption_21474786_table_1
+
+@pytest.fixture(scope="module")
+def title_21474786():
+    return data_title_21474786
 
 
 # ============================================================================================
