@@ -204,11 +204,13 @@ def extract_by_csv_file(interval_time=0.0):
     parser.add_argument("-f", "--pmids_fn", help="csv file path containing pmids to extract")
     parser.add_argument("-i", "--pmid", help="paper pmid")
     parser.add_argument("-o", "--out_dir", help="output directory")
+    parser.add_argument("-j", "--job_id", help="job id for the summary file (defaults to PID)", type=int)
     
     args = vars(parser.parse_args())
     
     pmids_fn: str | None = args.get("pmids_fn", None)
     pmid: str | None = args.get("pmid", None)
+    job_id: int = args.get("job_id") or os.getpid()
     if pmids_fn == None and pmid is None:
         print("Usage:")
         print(f"python {__file__} -o OUTPUT_FOLDER [-f PMIDS_FILE] [-i PMID] [-h]")
@@ -239,6 +241,14 @@ def extract_by_csv_file(interval_time=0.0):
     )
             
     out_dir = args["out_dir"]
+    os.makedirs(out_dir, exist_ok=True)
+    input_stem = Path(pmids_fn).stem if pmids_fn is not None else pmid
+    summary_fn = Path(out_dir) / f"summary_{job_id}_{input_stem}.csv"
+    summary_file = open(summary_fn, "w", newline="", encoding="utf-8")
+    summary_writer = csv.writer(summary_file)
+    summary_writer.writerow(["pmid", "pipeline", "final_answer", "suggested_fix"])
+    summary_file.flush()
+
     error_report = []
     for pmid in pmids:
         pmid_handler, pmid_loggers = _attach_pmid_log_handler(pmid)
@@ -248,6 +258,10 @@ def extract_by_csv_file(interval_time=0.0):
             for k, value in res.items():
                 k: PipelineTypeEnum = k
                 value: PKPECuratedTables = value
+                final_answer = value["correct"].value if hasattr(value["correct"], "value") else str(value["correct"])
+                suggested_fix = value.get("suggested_fix") or "N/A"
+                summary_writer.writerow([pmid, k.value, final_answer, suggested_fix])
+                summary_file.flush()
                 if not "curated_table" in value or value["curated_table"] is None:
                     logger.error(f"No curated table found for {pmid} {k.value}")
                     error_report.append((pmid, f"No curated table found for {pmid} {k.value}"))
@@ -270,9 +284,14 @@ def extract_by_csv_file(interval_time=0.0):
             print(f"Error ocurred in curating paper {pmid}")
             print(str(e))
             error_report.append((pmid, str(e)))
+            summary_writer.writerow([pmid, "N/A", "Error", "N/A"])
+            summary_file.flush()
             continue
         finally:
             _detach_pmid_log_handler(pmid_handler, pmid_loggers)
+
+    summary_file.close()
+    logger.info(f"Summary written to {summary_fn}")
 
     if len(error_report) == 0:
         logger.info("All PMIDs are successfully curated.")
