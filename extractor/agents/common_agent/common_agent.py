@@ -29,7 +29,8 @@ class CommonAgent:
         self.llm = llm
         self.exceptions: list[RetryException] | None = None
         self.token_usage: dict | None = None
-        self.try_fix_error: Optional[Callable[[Any], Any]] = None
+        self.try_fix_error: Optional[Callable[[Any], Any]] = None # this callback is used fix post_process exception
+        self.agent_fix_parser: Optional[Callable[[str], object | None]] = None # this callback is used fix the error in parsing llm output
 
     def go(
         self,
@@ -38,6 +39,7 @@ class CommonAgent:
         schema: any,
         schema_basemodel: Optional[BaseModel] = None,
         try_fix_error: Optional[Callable[[Any], Any]] = None,
+        agent_fix_parser: Optional[Callable[[str], object | None]] = None,
         pre_process: Optional[Callable] = None,
         post_process: Optional[Callable] = None,
         **kwargs: Optional[Any],
@@ -58,6 +60,7 @@ class CommonAgent:
         """
         self._initialize()
         self.try_fix_error = try_fix_error
+        self.agent_fix_parser = agent_fix_parser
         if pre_process is not None:
             is_OK = pre_process(**kwargs)
             if not is_OK:  # skip

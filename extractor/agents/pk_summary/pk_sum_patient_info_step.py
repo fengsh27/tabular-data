@@ -7,6 +7,7 @@ from extractor.agents.pk_summary.pk_sum_patient_info_agent import (
     PATIENT_INFO_PROMPT,
     PatientInfoResult,
     post_process_convert_patient_info_to_md_table,
+    agent_fix_parser_patient_info,
 )
 
 
@@ -29,6 +30,9 @@ class PatientInfoExtractionStep(PKSumCommonAgentStep):
         )
         previous_errors_prompt = self._get_previous_errors_prompt(state)
         return system_prompt + previous_errors_prompt
+
+    def get_agent_fix_parser(self):
+        return agent_fix_parser_patient_info
 
     def leave_step(self, state, res, processed_res=None, token_usage=None):
         if processed_res is not None:

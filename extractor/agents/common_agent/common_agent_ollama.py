@@ -80,6 +80,7 @@ class CommonAgentOllama(CommonAgent):
         llm: ChatOllama,
         schema: any,
         schema_basemodel: Optional[BaseModel] = None,
+        agent_fix_parser: Optional[Callable[[str], object | None]] = None,
     ):
         if schema_basemodel is not None:
             parser = PydanticOutputParser(pydantic_object=schema_basemodel)
@@ -96,6 +97,10 @@ class CommonAgentOllama(CommonAgent):
                 res = parser.parse(content)
                 return res, token_usage
             except Exception as e:
+                if agent_fix_parser is not None:
+                    res = agent_fix_parser(content)
+                    if res is not None:
+                        return res, token_usage
                 logger.error(e)
                 raise e
         return RunnableLambda(runnable_agent)
@@ -129,7 +134,7 @@ class CommonAgentOllama(CommonAgent):
         callback_handler = OpenAICallbackHandler()
 
         updated_prompt = self._process_retryexception_message(prompt)
-        agent = CommonAgentOllama.get_runnable_agent(updated_prompt, self.llm, schema, schema_basemodel)
+        agent = CommonAgentOllama.get_runnable_agent(updated_prompt, self.llm, schema, schema_basemodel, self.agent_fix_parser)
         # agent = updated_prompt | self.llm.with_structured_output(schema)
 
         try:

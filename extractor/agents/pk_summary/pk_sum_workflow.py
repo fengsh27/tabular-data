@@ -163,6 +163,12 @@ class PKSumWorkflow:
         config = {"recursion_limit": 500}
         previous_errors = previous_errors if previous_errors is not None else "N/A"
 
+        # print md_table
+        if step_callback is not None:
+            step_callback(step_output=f"md_table:\n\n{md_table}\n\n")
+            step_callback(step_output=f"caption_and_footnote:\n\n{caption_and_footnote}\n\n")
+            step_callback(step_output=f"title:\n\n{title if title is not None else 'N/A'}\n\n")
+
         for s in self.graph.stream(
             input={
                 "md_table": md_table,

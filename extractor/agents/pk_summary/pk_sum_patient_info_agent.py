@@ -15,7 +15,7 @@ Carefully analyze the table, **row by row and column by column**, and follow the
 Population is the patient age group.
 Pregnancy stage is the pregnancy stages of patients mentioned in the study.
 Subject N represents the number of subjects corresponding to the specific parameter or the number of samples with quantifiable levels of the respective analyte.
-(2) List each unique combination in the format of a list of lists in one line, using Python string syntax. Your answer should be enclosed in double angle brackets <<>>.
+(2) List each unique combination in the format of a list of lists in one line.
 (3) Ensure that all elements in the list of lists are **strings**, especially Subject N, which must be enclosed in double quotes (`""`).
 (4) Verify the source of each [Population, Pregnancy stage, Subject N] combination before including it in your answer.
 (5) The "Subject N" values within each population group sometimes differ slightly across parameters. This reflects data availability for each specific parameter within that age group. **YOU MUST** include all the Ns for each age group.
@@ -34,8 +34,6 @@ The output **must** exactly follow the format of the following example:
 
 """)
 
-INSTRUCTION_PROMPT = "Do not give the final result immediately. First, explain your thought process, then provide the answer."
-
 
 class PatientInfoResult(PKSumCommonAgentResult):
     """Patient Information Result"""
@@ -44,6 +42,20 @@ class PatientInfoResult(PKSumCommonAgentResult):
         description="a list of lists of unique combinations [Population, Pregnancy stage, Subject N]"
     )
 
+def agent_fix_parser_patient_info(json_str: str) -> PatientInfoResult | None:
+    """agent fix parser for patient info"""
+    try:
+        json_str = json_str.replace("\n", "")
+        json_str = json_str.strip()
+        json_str = json_str.strip("```json")
+        json_str = json_str.strip("```")
+        if not (json_str.startswith("{") and json_str.endswith("}")):
+            json_str = "{" + '"patient_combinations": ' + json_str + "}"
+        res = json.loads(json_str)
+        return PatientInfoResult(**res)
+    except Exception as e:
+        logger.error(e)
+        return None
 
 def post_process_convert_patient_info_to_md_table(
     res: PatientInfoResult,

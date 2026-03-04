@@ -22,6 +22,7 @@ from extractor.utils import (
     convert_sections_to_full_text,
     remove_references,
 )
+from extractor.constants import PipelineTypeEnum
 from extractor.agents.agent_utils import extract_pmid_info_to_db
 from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 load_dotenv()
@@ -245,10 +246,11 @@ def extract_by_csv_file(interval_time=0.0):
             logger.info(f"Start curating paper {pmid}")
             res = mgr.run(pmid)
             for k, value in res.items():
+                k: PipelineTypeEnum = k
                 value: PKPECuratedTables = value
                 if not "curated_table" in value or value["curated_table"] is None:
-                    logger.error(f"No curated table found for {pmid} {k}")
-                    error_report.append((pmid, f"No curated table found for {pmid} {k}"))
+                    logger.error(f"No curated table found for {pmid} {k.value}")
+                    error_report.append((pmid, f"No curated table found for {pmid} {k.value}"))
                     continue
                 df = markdown_to_dataframe(value["curated_table"])
                 if df.empty:
@@ -256,10 +258,10 @@ def extract_by_csv_file(interval_time=0.0):
                 out_fn = Path(out_dir) / f"{pmid}_{k.value}.csv"
                 df.to_csv(out_fn, index=False)
                 if not value["correct"]:
-                    logger.error(f"Curated table for {pmid} {k} is not correct")
-                    error_report.append((pmid, f"Curated table for {pmid} {k} is not correct"))
-                    error_fn = Path(out_dir) / f"{pmid}_{k}_error.txt"
-                    error_fn.write_text(f"Curated table for {pmid} {k} is not correct\nExplanation: {value['explanation']}\nSuggested fix: {value['suggested_fix']}\n")
+                    logger.error(f"Curated table for {pmid} {k.value} is not correct")
+                    error_report.append((pmid, f"Curated table for {pmid} {k.value} is not correct"))
+                    error_fn = Path(out_dir) / f"{pmid}_{k.value}_error.txt"
+                    error_fn.write_text(f"Curated table for {pmid} {k.value} is not correct\nExplanation: {value['explanation']}\nSuggested fix: {value['suggested_fix']}\n")
             logger.info(f"Finish curating paper {pmid}")
             time.sleep(interval_time)
         except Exception as e:

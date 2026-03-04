@@ -224,7 +224,7 @@ class PKPEManager:
         pipelines: dict[PipelineTypeEnum, PKPEAgentToolTask],
         curation_start_callback: Optional[Callable[[str, str], None]] = None, 
         curation_end_callback: Optional[Callable[[str, str, PKPECuratedTables], None]] = None
-    ):
+    ) -> dict[PipelineTypeEnum, PKPECuratedTables]:
         curated_tables = {}
         for pipeline_type, pipeline in pipelines.items():
             try:
@@ -249,7 +249,7 @@ class PKPEManager:
         pipelines: dict[PipelineTypeEnum, PKPEAgentToolTask],
         curation_start_callback: Awaitable[Callable[[str, str], None]] = None, 
         curation_end_callback: Awaitable[Callable[[str, str, PKPECuratedTables], None]] = None
-    ):
+    ) -> dict[PipelineTypeEnum, PKPECuratedTables]:
         curated_tables = {}
         for pipeline_type, pipeline in pipelines.items():
             try:
@@ -273,7 +273,7 @@ class PKPEManager:
         pmid: str, 
         curation_start_callback: Optional[Callable[[str, str], None]] = None, 
         curation_end_callback: Optional[Callable[[str, str, PKPECuratedTables], None]] = None
-    ):
+    ) -> dict[PipelineTypeEnum, PKPECuratedTables]:
         mgrs = {
             PipelineTypeEnum.PK_SUMMARY: self._get_pipeline(PipelineTypeEnum.PK_SUMMARY),
             PipelineTypeEnum.PK_INDIVIDUAL: self._get_pipeline(PipelineTypeEnum.PK_INDIVIDUAL),
@@ -291,7 +291,7 @@ class PKPEManager:
         pmid: str, 
         curation_start_callback: Optional[Callable[[str, str], None]] = None, 
         curation_end_callback: Optional[Callable[[str, str, PKPECuratedTables], None]] = None
-    ):
+    ) -> dict[PipelineTypeEnum, PKPECuratedTables]:
         mgrs = {
             PipelineTypeEnum.PE_STUDY_INFO: self._get_pipeline(PipelineTypeEnum.PE_STUDY_INFO), # PEStudyInfoTask(self.pipeline_llm, self.pmid_db, self.print_step),
             PipelineTypeEnum.PE_STUDY_OUTCOME: self._get_pipeline(PipelineTypeEnum.PE_STUDY_OUTCOME), # PEStudyOutcomeTask(self.pipeline_llm, self.pmid_db, self.print_step),
@@ -303,7 +303,7 @@ class PKPEManager:
         pmid: str, 
         curation_start_callback: Awaitable[Callable[[str, str], None]] = None, 
         curation_end_callback: Awaitable[Callable[[str, str, PKPECuratedTables], None]] = None
-    ):
+    ) -> dict[PipelineTypeEnum, PKPECuratedTables]:
         mgrs = {
             PipelineTypeEnum.PK_SUMMARY: self._get_pipeline(PipelineTypeEnum.PK_SUMMARY), # PKSummaryTask(pipeline_llm=self.pipeline_llm, output_callback=self.print_step, pmid_db=self.pmid_db),
             PipelineTypeEnum.PK_INDIVIDUAL: self._get_pipeline(PipelineTypeEnum.PK_INDIVIDUAL), # PKIndividualTask(llm=self.pipeline_llm, output_callback=self.print_step, pmid_db=self.pmid_db),
@@ -321,7 +321,7 @@ class PKPEManager:
         pmid: str, 
         curation_start_callback: Awaitable[Callable[[str, str], None]] = None, 
         curation_end_callback: Awaitable[Callable[[str, str, PKPECuratedTables], None]] = None
-    ):
+    ) -> dict[PipelineTypeEnum, PKPECuratedTables]:
         mgrs = {
             PipelineTypeEnum.PE_STUDY_INFO: self._get_pipeline(PipelineTypeEnum.PE_STUDY_INFO), # PEStudyInfoTask(self.pipeline_llm, self.pmid_db, self.print_step),
             PipelineTypeEnum.PE_STUDY_OUTCOME: self._get_pipeline(PipelineTypeEnum.PE_STUDY_OUTCOME), # PEStudyOutcomeTask(self.pipeline_llm, self.pmid_db, self.print_step),
@@ -336,7 +336,7 @@ class PKPEManager:
         curation_start_callback: Optional[Callable[[str, str], None]] = None, 
         curation_end_callback: Optional[Callable[[str, str, PKPECuratedTables], None]] = None,
         pipeline_types: Optional[list[PipelineTypeEnum]] = None,
-    ) -> dict[str, PKPECuratedTables]:
+    ) -> dict[PipelineTypeEnum, PKPECuratedTables]:
         self._extract_pmid_info(
             pmid=pmid, 
             html_content=html_content
@@ -384,7 +384,7 @@ class PKPEManager:
         curation_start_callback: Awaitable[Callable[[str, str], None]] = None, 
         curation_end_callback: Awaitable[Callable[[str, str, PKPECuratedTables], None]] = None,
         pipeline_types: Optional[list[PipelineTypeEnum]] = None
-    ):
+    ) -> dict[PipelineTypeEnum, PKPECuratedTables]:
         self._extract_pmid_info(
             pmid=pmid, 
             html_content=html_content

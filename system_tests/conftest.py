@@ -108,6 +108,13 @@ from system_tests.conftest_data_21474786 import (
     data_md_table_drug_21474786_table_1,
     data_html_content_21474786_table_1
 )
+from system_tests.conftest_data_19168553 import (
+    data_title_19168553,
+    data_abstract_19168553,
+    data_md_table_19168553_table_1,
+    data_caption_19168553_table_1,
+    data_md_table_drug_19168553_table_1,
+)
 
 load_dotenv()
 
@@ -2764,6 +2771,26 @@ def title_21474786():
 @pytest.fixture(scope="module")
 def html_content_21474786_table_1():
     return data_html_content_21474786_table_1
+
+@pytest.fixture(scope="module")
+def md_table_19168553_table_1():
+    return data_md_table_19168553_table_1
+
+@pytest.fixture(scope="module")
+def md_table_drug_19168553_table_1():
+    return data_md_table_drug_19168553_table_1
+
+@pytest.fixture(scope="module")
+def caption_19168553_table_1():
+    return data_caption_19168553_table_1
+
+@pytest.fixture(scope="module")
+def title_19168553():
+    return data_title_19168553
+
+@pytest.fixture(scope="module")
+def abstract_19168553():
+    return data_abstract_19168553
 
 
 # ============================================================================================
