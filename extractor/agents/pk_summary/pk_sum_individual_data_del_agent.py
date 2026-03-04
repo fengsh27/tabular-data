@@ -20,6 +20,12 @@ Please return the result with the following format:
 processed: boolean value, False represents the table have already meets the requirement, don't need to be processed. Otherwise, it will be True
 row_list: an array of row indices that satisfy the requirement, that is the rows have no individual-level results or personally identifiable data.
 col_list: an array of column names that satisfy the requirement, that is the columns in the above rows have no individual-level results or personally identifiable data.
+
+### **Output Format**
+The output **must** exactly follow the format of the following example:
+
+{{"processed": True, "row_list": [index_0, index_1, ..., index_n], "col_list": ["col_0", "col_1", ..., "col_n"]}}
+
 """)
 
 

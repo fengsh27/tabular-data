@@ -106,6 +106,7 @@ from system_tests.conftest_data_21474786 import (
     data_md_table_aligned_21474786_table_1,
     data_caption_21474786_table_1,
     data_md_table_drug_21474786_table_1,
+    data_html_content_21474786_table_1
 )
 
 load_dotenv()
@@ -2759,6 +2760,10 @@ def caption_21474786_table_1():
 @pytest.fixture(scope="module")
 def title_21474786():
     return data_title_21474786
+
+@pytest.fixture(scope="module")
+def html_content_21474786_table_1():
+    return data_html_content_21474786_table_1
 
 
 # ============================================================================================

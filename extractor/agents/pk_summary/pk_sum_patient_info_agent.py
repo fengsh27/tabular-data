@@ -24,6 +24,14 @@ Subject N represents the number of subjects corresponding to the specific parame
     - Fill in "N/A" when you don't know the exact N.
     - Important: Do not confuse Patient ID with Subject N. Subject N refers to the total number of patients.
 (6) If any information is missing, first try to infer it from the available data (e.g., using context, related entries, or common pharmacokinetic knowledge). Only use "N/A" as a last resort if the information cannot be reasonably inferred.
+
+### **Output Format**
+The output **must** exactly follow the format of the following example:
+
+{{"patient_combinations": [["Population 1", "Pregnancy stage 1", "Subject N 1"], ["Population 2", "Pregnancy stage 2", "Subject N 2"]]}}
+
+
+
 """)
 
 INSTRUCTION_PROMPT = "Do not give the final result immediately. First, explain your thought process, then provide the answer."

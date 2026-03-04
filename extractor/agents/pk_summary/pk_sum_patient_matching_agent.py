@@ -54,6 +54,12 @@ Carefully analyze the tables and follow these instructions step by step:
 5. **If No Match Found:**
    - If a row in Subtable 1 cannot be matched even after applying all criteria, return `-1` for that row.
    - Use this only as a last resort.
+
+### **Output Format**
+The output **must** exactly follow the format of the following example:
+
+{{"matched_row_indices": [index_1, index_2, -1, -1, ...]}}
+
 """)
 
 def get_matching_patient_prompt(
