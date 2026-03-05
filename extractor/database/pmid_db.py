@@ -7,6 +7,7 @@ from time import strftime
 import os
 import logging
 import pandas as pd
+from io import StringIO
 
 logger = logging.getLogger(__name__)
 
@@ -134,7 +135,7 @@ class PMIDDB:
                 return None
             tables = json.loads(row[4])
             for table in tables:
-                table["table"] = pd.read_json(table["table"])
+                table["table"] = pd.read_json(StringIO(table["table"]))
             sections = json.loads(row[5])
             return row[0], row[1], row[2], row[3], tables, sections
         except Exception as e:

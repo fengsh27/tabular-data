@@ -11,7 +11,7 @@ from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, display_md_table, 
 from extractor.agents.pk_pe_agents.pk_pe_common_step import PKPECommonStep
 from extractor.agents.common_agent.common_agent import CommonAgent
 from extractor.agents.common_agent.common_agent_2steps import CommonAgentTwoSteps
-from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState
+from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState, FinalAnswerEnum
 from extractor.agents.pk_pe_agents.pk_pe_agents_utils import format_source_tables
 from extractor.agents.custom_python_ast_repl_tool import CustomPythonAstREPLTool
 from extractor.constants import COT_USER_INSTRUCTION
@@ -141,113 +141,83 @@ class PKPECuratedTablesCorrectionCodeStep(PKPECommonStep):
                 reasoning_process=verification_reasoning_process,
                 domain=self.domain,
             )
-            
-            # Add error history to the prompt if there were previous errors
+
             if error_history:
                 error_context = "\n\n".join([f"Attempt {i+1} Error: {err}" for i, err in enumerate(error_history)])
                 system_prompt += f"\n\n### Previous Execution Errors\n{error_context}\n\nPlease fix the code based on these errors."
-            
-            instruction_prompt = "Let's start generating the code to correct the curated table."
-            if attempt > 0:
-                instruction_prompt = f"Previous code execution failed. Please regenerate the code fixing the errors. Attempt {attempt + 1}/{max_retries}."
+
+            instruction_prompt = (
+                "Let's start generating the code to correct the curated table."
+                if attempt == 0
+                else f"Previous code execution failed. Please regenerate the code fixing the errors. Attempt {attempt + 1}/{max_retries}."
+            )
 
             agent = self.get_agent(llm=self.llm)
-            
+
             try:
                 res, _, token_usage, reasoning_process = agent.go(
                     system_prompt=system_prompt,
                     instruction_prompt=instruction_prompt,
                     schema=PKPECorrectionStepResult,
                 )
-                
+
                 if token_usage:
                     total_token_usage = increase_token_usage(total_token_usage, token_usage)
-                
+
                 self._print_step(state, step_output=reasoning_process if reasoning_process is not None else "N / A")
-                res: PKPECorrectionStepResult = res
-                
-                # Extract and execute the code
                 code = res.code.strip()
                 self._print_step(state, step_output=f"Generated Code (Attempt {attempt + 1}):\n\n```python\n{code}\n```")
-                
-                # Execute the code and extract df_corrected
+
                 df_corrected, execution_error = self._execute_code_and_extract_dataframe(code, curated_md)
-                
-                # Check if execution was successful
+
                 if execution_error is not None:
-                    error_msg = execution_error
-                    logger.error(f"Code execution failed (attempt {attempt + 1}): {error_msg}")
-                    error_history.append(error_msg)
-                    self._print_step(state, step_output=f"Execution Error (Attempt {attempt + 1}):\n\n{error_msg}")
-                    
-                    if attempt < max_retries - 1:
-                        continue  # Retry with error message
-                    else:
-                        logger.error(f"Max retries reached; leaving curated_table unchanged. Last error: {error_msg}")
-                        self._print_step(state, step_output=f"Max retries reached; leaving curated_table unchanged. Last error:\n\n{error_msg}")
-                        return state, total_token_usage
-                
-                # Validate df_corrected (should not be None if execution_error is None)
+                    error_history.append(execution_error)
+                    self._print_step(state, step_output=f"Execution Error (Attempt {attempt + 1}):\n\n{execution_error}")
+                    logger.error(f"Code execution failed (attempt {attempt + 1}): {execution_error}")
+                    continue
+
                 assert df_corrected is not None, "df_corrected should not be None if execution_error is None"
                 if not isinstance(df_corrected, pd.DataFrame):
                     error_msg = f"df_corrected is not a pandas DataFrame, got {type(df_corrected)}"
-                    logger.error(f"Code execution failed (attempt {attempt + 1}): {error_msg}")
                     error_history.append(error_msg)
                     self._print_step(state, step_output=f"Execution Error (Attempt {attempt + 1}):\n\n{error_msg}")
-                    
-                    if attempt < max_retries - 1:
-                        continue  # Retry
-                    else:
-                        logger.error(f"Max retries reached; leaving curated_table unchanged. Last error: {error_msg}")
-                        self._print_step(state, step_output=f"Max retries reached; leaving curated_table unchanged. Last error:\n\n{error_msg}")
-                        return state, total_token_usage
-                
-                # Convert df_corrected to markdown
+                    logger.error(f"Code execution failed (attempt {attempt + 1}): {error_msg}")
+                    continue
+
                 corrected_table_md = dataframe_to_markdown(df_corrected)
-                
-                # Validate the markdown table
                 try:
-                    # Verify it can be parsed back
-                    df_verify = markdown_to_dataframe(corrected_table_md)
-                    self._print_step(state, step_output=f"Successfully executed code and generated corrected table (shape: {df_corrected.shape})")
-                    self._print_step(state, step_output=f"Corrected Table: \n\n{corrected_table_md}")
-                    
-                    state["curated_table"] = corrected_table_md
-                    return state, total_token_usage
-                    
+                    markdown_to_dataframe(corrected_table_md)  # validate round-trip
                 except Exception as e:
                     error_msg = f"Generated markdown table is invalid: {e}"
-                    logger.error(f"Code execution failed (attempt {attempt + 1}): {error_msg}")
                     error_history.append(error_msg)
                     self._print_step(state, step_output=f"Execution Error (Attempt {attempt + 1}):\n\n{error_msg}")
-                    
-                    if attempt < max_retries - 1:
-                        continue  # Retry
-                    else:
-                        logger.error(f"Max retries reached; leaving curated_table unchanged. Last error: {error_msg}")
-                        self._print_step(state, step_output=f"Max retries reached; leaving curated_table unchanged. Last error:\n\n{error_msg}")
-                        return state, total_token_usage
-                        
-            except RetryException as e:
-                logger.error(f"RetryException encountered; leaving curated_table unchanged. Error: {e}")
-                self._print_step(state, step_output=f"RetryException encountered; leaving curated_table unchanged.\n\n{e}")
+                    logger.error(f"Code execution failed (attempt {attempt + 1}): {error_msg}")
+                    continue
+
+                # Success
+                self._print_step(state, step_output=f"Successfully executed code and generated corrected table (shape: {df_corrected.shape})")
+                self._print_step(state, step_output=f"Corrected Table: \n\n{corrected_table_md}")
+                state["curated_table"] = corrected_table_md
                 return state, total_token_usage
+
+            except RetryException as e:
+                logger.error(f"RetryException in correction step: {e}")
+                self._print_step(state, step_output=f"RetryException in correction step:\n\n{e}")
+                break
             except Exception as e:
                 error_msg = f"Unexpected error: {type(e).__name__}: {e}"
-                logger.error(f"Code generation/execution failed (attempt {attempt + 1}): {error_msg}")
                 error_history.append(error_msg)
                 self._print_step(state, step_output=f"Error (Attempt {attempt + 1}):\n\n{error_msg}")
-                
-                if attempt < max_retries - 1:
-                    continue  # Retry
-                else:
-                    logger.error(f"Max retries reached; leaving curated_table unchanged. Last error: {error_msg}")
-                    self._print_step(state, step_output=f"Max retries reached; leaving curated_table unchanged. Last error:\n\n{error_msg}")
-                    return state, total_token_usage
-        
-        # Should not reach here, but just in case
-        logger.error("Max retries reached; leaving curated_table unchanged.")
-        self._print_step(state, step_output="Max retries reached; leaving curated_table unchanged.")
+                logger.error(f"Code generation/execution failed (attempt {attempt + 1}): {error_msg}")
+                continue
+
+        # All retries exhausted or non-retriable exception — mark as Error so the
+        # verification step short-circuits and the workflow terminates cleanly.
+        last_error = error_history[-1] if error_history else "unknown error"
+        logger.error(f"Correction step failed after {max_retries} attempts; leaving curated_table unchanged. Last error: {last_error}")
+        self._print_step(state, step_output=f"Correction step failed; leaving curated_table unchanged. Last error:\n\n{last_error}")
+        state["final_answer"] = FinalAnswerEnum.Error
+        state["suggested_fix"] = "N/A"
         return state, total_token_usage
     
     def _execute_code_and_extract_dataframe(self, code: str, curated_md: str) -> tuple[Optional[pd.DataFrame], Optional[str]]:
