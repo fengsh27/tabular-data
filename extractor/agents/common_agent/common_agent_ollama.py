@@ -8,6 +8,7 @@ from langchain_community.callbacks.openai_info import OpenAICallbackHandler
 from pydantic import BaseModel, Field
 from tenacity import retry, stop_after_attempt, wait_incrementing
 import logging
+import tiktoken
 
 from extractor.agents.agent_utils import COMPLETION_TOKENS, DEFAULT_TOKEN_USAGE, PROMPT_TOKENS, TOTAL_TOKENS
 from extractor.llm_utils import get_format_instructions, structured_output_llm
@@ -28,6 +29,26 @@ IMPORTANT_INSTRUCTIONS = """
 1. Please exactly follow the output format instructions. **Do not** add any other text or comments.
 
 """
+
+def count_tokens(text: str, model: str = "text-embedding-3-small") -> int:
+    """
+    Count the number of tokens in a text string using tiktoken.
+
+    Args:
+        text (str): The text to count tokens for.
+        model (str): The model to use for tokenization.
+
+    Returns:
+        int: The number of tokens in the text.
+    """
+    try:
+        encoding = tiktoken.encoding_for_model(model)
+        return len(encoding.encode(text))
+    except Exception as e:
+        # Fallback to a simple approximation if tiktoken fails
+        logger.warning(f"Error counting tokens with tiktoken: {e}")
+        # Rough approximation: 4 characters per token
+        return len(text) // 4
 
 class CommonAgentOllama(CommonAgent):
     def __init__(self, llm: ChatOllama):
@@ -89,6 +110,11 @@ class CommonAgentOllama(CommonAgent):
         
         def runnable_agent(input: dict) -> tuple[Any, dict | None]:
             msg = prompt.format_messages(**input)
+            # Count tokens in the input messages
+            token_count = 0
+            for message in msg:
+                token_count += count_tokens(message.content)
+            logger.info(f"Prompt token rough count: {token_count}")
             raw = llm.invoke(msg)
             token_usage = CommonAgentOllama.normalize_token_usage(raw.usage_metadata)
             try:

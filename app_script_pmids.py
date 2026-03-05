@@ -182,7 +182,18 @@ def _curate_pmid(
 ) -> list[tuple[str, str]]:
     """Run all pipelines for one PMID. Returns a list of (pmid, error_msg) tuples."""
     errors = []
-    res = mgr.run(pmid)
+    try:
+        res = mgr.run(pmid)
+    except Exception as e:
+        logger.error(f"Identification/design step failed for {pmid}: {e}")
+        write_summary([pmid, "N/A", "Error", "N/A"])
+        return [(pmid, str(e))]
+
+    if not res:
+        logger.info(f"Paper {pmid} identified as Neither PK nor PE, skipping curation.")
+        write_summary([pmid, "N/A", "Neither", "N/A"])
+        return []
+
     for pipeline_type, value in res.items():
         pipeline_type: PipelineTypeEnum
         value: PKPECuratedTables
