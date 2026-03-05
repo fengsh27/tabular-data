@@ -2,8 +2,8 @@
 import os
 from langchain_ollama import ChatOllama
 
-MAX_CONTENT_NUM=16384*6
-MAX_PREDICT_NUM=16384*4
+MAX_CONTENT_NUM=16384*2
+MAX_PREDICT_NUM=2048
 
 def get_gpt_oss(
     max_content_num: int = -1,
@@ -21,6 +21,7 @@ def get_gpt_oss(
         temperature=0.0,
         top_p=1.0,
         top_k=1,
+        timeout=900,
     )
 
 def get_gpt_qwen_235b(
@@ -40,6 +41,7 @@ def get_gpt_qwen_235b(
         temperature=0.0,
         top_p=1.0,
         top_k=1,
+        timeout=900,
     )
 
 def get_gpt_qwen_30b(
@@ -60,6 +62,7 @@ def get_gpt_qwen_30b(
             temperature=0.0,
             top_p=1.0,
             top_k=1,
+            timeout=900,
         )
     else:
         return ChatOllama(
@@ -74,4 +77,5 @@ def get_gpt_qwen_30b(
             top_p=1.0,
             top_k=1,
             format=schema,
+            timeout=900,
         )
