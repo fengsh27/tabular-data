@@ -47,7 +47,7 @@ Please Note:
 (3) **Important:** Please return Subtable 2 as a list of lists, excluding the headers. Ensure all values are converted to strings.
 (4) **Absolutely no calculations are allowed—every value must be taken directly from Subtable 1 without any modifications.**  
 (5) The final list should be like this:
-[["10", "Count", "Sum", "%", "1", "N/A", "N/A", "N/A"], ["50", "N/A", "%", "N/A", "N/A", "N/A", "N/A", "N/A"]]
+{{"extracted_param_values": [["10", "Count", "Sum", "%", "1", "N/A", "N/A", "N/A"], ["50", "N/A", "%", "N/A", "N/A", "N/A", "N/A", "N/A"]]}} (example)
 """)
 
 

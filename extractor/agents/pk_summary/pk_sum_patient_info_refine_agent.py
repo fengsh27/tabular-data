@@ -50,7 +50,7 @@ Carefully analyze the tables and follow these steps to refine Subtable 1 into a 
     - **Subject N**: The number of subjects corresponding to the specific population.
 
 (2) Compile each unique combination in the format of a **list of lists**, using **Python string syntax**. The result should be like this:
-[["N/A", "N/A", "N/A", "15"], ...]
+{{"refined_patient_combinations": [["N/A", "N/A", "N/A", "15"], ...]}}
 
 (3) For each Population, determine whether it can be classified under one or more of the common categories listed above. If it matches one or more standard categories, replace it with the corresponding standard category (or categories). If it does not fit any common category, retain the original wording.
 
@@ -61,6 +61,14 @@ Carefully analyze the tables and follow these steps to refine Subtable 1 into a 
 (6) Strictly ensure that you process only rows 0 to {md_table_patient_max_row_index} from the Subtable 1 (which has {md_table_patient_row_num} rows in total).   
     - The number of processed rows must **exactly match** the number of rows in the Subtable 1—no more, no less.  
     - **The output must maintain the original row order** from Subtable 1—do not shuffle, reorder, or omit any rows. The Subject N for each row in Subtable 2 must be the same as in Subtable 1.
+
+### **Output Format**
+The output **must** exactly follow the format of the following example:
+
+{{"refined_patient_combinations": [["N/A", "N/A", "N/A", "15"], ...]}}
+
+
+
 """)
 
 

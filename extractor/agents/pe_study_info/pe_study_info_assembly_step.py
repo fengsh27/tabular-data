@@ -28,7 +28,7 @@ class AssemblyStep(PEStudyInfoCommonStep):
         )
 
         return (
-            PEStudyInfoCommonAgentResult(reasoning_process=""),
+            PEStudyInfoCommonAgentResult(),
             df_combined,
             {**DEFAULT_TOKEN_USAGE},
         )

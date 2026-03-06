@@ -61,7 +61,7 @@ class RowCategorizeStep(PEStudyOutCommonAgentStep):
             self._step_output(
                 state,
                 step_reasoning_process=res['reasoning_process']
-                if res is not None
+                if res is not None and "reasoning_process" in res
                 else "",
             )
             total_token_usage = increase_token_usage(

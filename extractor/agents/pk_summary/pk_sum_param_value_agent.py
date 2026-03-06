@@ -46,7 +46,15 @@ Please Note:
 (5) **Important** The **P value** must be extracted directly from the main table.
   - First, identify the corresponding column in main table, then extract **P value** from that column.
 (6) The final list should be like this:
-[["0.162", "Mean", "SD", "0.090", "N/A", "N/A", "N/A", ".67"], ["0.428", "Mean", "SD", "0.162", "N/A", "N/A", "N/A", ".015"]]
+{{"extracted_param_values": [["0.162", "Mean", "SD", "0.090", "N/A", "N/A", "N/A", ".67"], ["0.428", "Mean", "SD", "0.162", "N/A", "N/A", "N/A", ".015"]]}}
+
+### **Output Format**
+The output **must** exactly follow the format of the following example:
+
+{{"extracted_param_values": [["0.162", "Mean", "SD", "0.090", "N/A", "N/A", "N/A", ".67"], ["0.428", "Mean", "SD", "0.162", "N/A", "N/A", "N/A", ".015"]]}}
+
+
+
 """)
 
 

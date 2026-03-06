@@ -31,7 +31,7 @@ Read the article and answer the following:
         If multiple designs are mentioned (e.g., "prospective, randomized, double-blind"), list them as one string in the same order.
     - **Data source**: The primary locations(s) where data is accessed from or primary site where a study was conducted (ex: hospitals, database, geographic locations etc.)
 (2) List the combination in Python list-of-lists syntax, like this:  
-    [["Pharmacoepidemiology", "Prospective Randomized Double-blinded Invesigation", "OSUMC"]] (example)  
+    {{"study_design_combinations": [["Pharmacoepidemiology", "Prospective Randomized Double-blinded Invesigation", "OSUMC"]]}} (example)  
 """)
 
 

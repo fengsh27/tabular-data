@@ -31,7 +31,7 @@ Carefully review the article and follow these steps to convert the population in
     - **Dose route**:  The route of administration of the drug, e.g., Oral, Intravenous (IV), Intramuscular (IM), Subcutaneous (SC), Epidural, Infusion, etc.
     
 (2) Compile each unique combination in the format of a **list of lists**, using **Python string syntax**. The result should be like this:
-[["Lorazepam", "0.01", "mg", "2", "once a day", "Oral"], ...] (example)
+{{"refined_drug_combinations": [["Lorazepam", "0.01", "mg", "2", "once a day", "Oral"], ...]}} (example)
 
 (3) Use **"N/A"** as the placeholder if the information **cannot** be reasonably inferred.
    

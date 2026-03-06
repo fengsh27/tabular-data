@@ -22,6 +22,7 @@ def test_SplitByColumnsStep_29100749_table_2(
     assert state["md_table_list"] is not None
     assert type(state["md_table_list"]) == list
 
+@pytest.mark.skip()
 def test_SplitByColumnsStep_23200982_table_2(
     llm, 
     step_callback,

@@ -44,7 +44,7 @@ Now, please carefully review the article and extract the Study-designn-related i
     - **Outcomes**: A measure(s) of interest that an investigator(s) considers the most important among the many outcomes to be examined in the study. (use exact wording from the article)
 
 (2) Write the one-row subtable 2 into the format of a **list of lists**, using **Python string syntax**. The result should be like this:
-[["Maternal", "Inclusion criteria should be retrieved from the article, use the exact wording from the article", "Exclusion criteria should be retrieved from the article, use the exact wording from the article", "Trimester 3", "20", "Lorazepam", "Outcomes should be retrieved from the article, use the exact wording from the article"]] (example)
+{{"refined_design_combinations": [["Maternal", "Inclusion criteria should be retrieved from the article, use the exact wording from the article", "Exclusion criteria should be retrieved from the article, use the exact wording from the article", "Trimester 3", "20", "Lorazepam", "Outcomes should be retrieved from the article, use the exact wording from the article"]]}} (example)
 
 (3) Use **"N/A"** as the placeholder if the information **cannot** be reasonably inferred.
 """)

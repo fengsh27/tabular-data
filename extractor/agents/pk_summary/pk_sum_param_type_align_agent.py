@@ -24,6 +24,12 @@ Carefully examine the pharmacokinetics (PK) table and follow these steps to dete
 Please answer in the following format:
 col_name: column name, it represents the PK parameter type serves as the row header or is listed under the specific column. If the PK parameter type is represented as column headers, return None.
 (2) Ensure a thorough analysis of the table structure before selecting your answer.
+
+### **Output Format**
+The output **must** exactly follow the format of the following example:
+
+{{"col_name": "column_name"}}
+
 """)
 
 

@@ -122,46 +122,51 @@ Suggested fix:
 
     def _execute_directly(self, state) -> tuple[dict, dict[str, int]]:
         state: PKPECurationWorkflowState = state
+
+        # If a previous step (e.g. correction exhausted all retries) already marked the
+        # pipeline as Error, honour that decision and skip the LLM call entirely.
+        if state.get("final_answer") == FinalAnswerEnum.Error:
+            return state, {**DEFAULT_TOKEN_USAGE}
+
         source_tables = state["source_tables"] if "source_tables" in state else None
         source_tables = format_source_tables(source_tables)
-        curated_table = state["curated_table"].strip() if "curated_table" in state else None
-        curated_table = curated_table if len(curated_table) > 0 else None
+        raw = state.get("curated_table")
+        curated_table = raw.strip() if isinstance(raw, str) else None
+        curated_table = curated_table if curated_table else None
         if curated_table is None:
             state["final_answer"] = FinalAnswerEnum.Error
             state["explanation"] = "No data was curated from the source."
             state["suggested_fix"] = "N/A"
             return state, {**DEFAULT_TOKEN_USAGE}
 
-        system_prompt = PKPE_VERIFICATION_SYSTEM_PROMPT.format(
-            paper_title=state["paper_title"],
-            paper_abstract=state["paper_abstract"],
-            source_tables=source_tables,
-            curated_table=state["curated_table"],
-            domain=self.domain,
-        )
-        instruction_prompt = COT_USER_INSTRUCTION
-
-        agent = self.get_agent(llm=self.llm) # CommonAgent(llm=self.llm) # CommonAgentTwoSteps(llm=self.llm)
-
         try:
+            system_prompt = PKPE_VERIFICATION_SYSTEM_PROMPT.format(
+                paper_title=state["paper_title"],
+                paper_abstract=state["paper_abstract"],
+                source_tables=source_tables,
+                curated_table=state["curated_table"],
+                domain=self.domain,
+            )
+            instruction_prompt = COT_USER_INSTRUCTION
+            agent = self.get_agent(llm=self.llm)
             res, _, token_usage, reasoning_process = agent.go(
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=PKPEVerificationStepResult,
             )
         except Exception as e:
-            logger.error(f"Error running agent: {e}")
+            logger.error(f"Error running verification agent: {e}")
             state["final_answer"] = FinalAnswerEnum.Error
-            state["explanation"] = f"Error running agent: {e}"
+            state["explanation"] = f"Error running verification agent: {e}"
             state["suggested_fix"] = "N/A"
             return state, {**DEFAULT_TOKEN_USAGE}
+
         if reasoning_process is None:
             reasoning_process = res.reasoning_process if hasattr(res, "reasoning_process") else "N / A"
         self._print_step(state, step_output=reasoning_process)
         self._print_step(state, step_output=f"Verification Final Answer: \n\n{res.correct}")
         self._print_step(state, step_output=f"Verification Explanation: \n\n{res.explanation}")
         self._print_step(state, step_output=f"Verification Suggested Fix: \n\n{res.suggested_fix}")
-        res: PKPEVerificationStepResult = res
         state["final_answer"] = FinalAnswerEnum.Correct if res.correct else FinalAnswerEnum.Incorrect
         state["explanation"] = res.explanation
         state["suggested_fix"] = res.suggested_fix

@@ -27,7 +27,7 @@ def test_PKSumWorkflow1(llm, html_content1, caption1, step_callback):
     logger.info("\n\n" + dataframe_to_markdown(df))
 
 
-# @pytest.mark.skip()
+@pytest.mark.skip()
 def test_PKSumWorkflow_29943508(
     llm, 
     html_content_29943508, 
@@ -94,3 +94,22 @@ def test_PKSumWorkflow_22050870_table_3(
         step_callback=step_callback,
     )
     print(df)
+
+def test_PKSumWorkflow_21474786_table_1(
+    llm,
+    html_content_21474786_table_1,
+    caption_21474786_table_1,
+    title_21474786,
+    step_callback,
+):
+    workflow = PKSumWorkflow(llm)
+    workflow.build()
+    df = workflow.go(
+        html_content=html_content_21474786_table_1,
+        caption_and_footnote=caption_21474786_table_1,
+        title=title_21474786,
+        step_callback=step_callback,
+    )
+    print(df)
+
+

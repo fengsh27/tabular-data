@@ -73,7 +73,7 @@ class AssemblyStep(PKDrugIndCommonStep):
         )
 
         return (
-            PKDrugIndCommonAgentResult(reasoning_process=""),
+            PKDrugIndCommonAgentResult(),
             df_combined,
             {**DEFAULT_TOKEN_USAGE},
         )

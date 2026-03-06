@@ -21,7 +21,7 @@ Read the article and answer the following:
     - **Population N**: The number of individuals in that population group.
     - **Source text**: The original sentence or excerpt from the source document where the data was reported. This field provides context and traceability, ensuring that each data point can be verified against its original description in the literature. Use "N/A" if no source can be found.
 (2) List each unique combination in Python list-of-lists syntax, like this:  
-    [["Lorazepam", "2 doses", "0.01 mg", "Pregnancy", "10", "...the source text..."], ["Fentanyl", "Single dose", "0.01 mg", "Postpregnancy", "10", "...the source text..."]] (example)  
+    {{"population_combinations": [["Lorazepam", "2 doses", "0.01 mg", "Pregnancy", "10", "...the source text..."], ["Fentanyl", "Single dose", "0.01 mg", "Postpregnancy", "10", "...the source text..."]]}} (example)  
 (3) Confirm the source of each [Drug/Metabolite name, Dose frequency, Dose amount, Population, Drug N] combination before including it in your answer.
 """)
 

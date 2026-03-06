@@ -36,7 +36,7 @@ class NumericRetainStep(PEStudyOutCommonStep):
         df_combined = pd.DataFrame(records)
 
         return (
-            PEStudyOutCommonAgentResult(reasoning_process=""),
+            PEStudyOutCommonAgentResult(),
             df_combined,
             {**DEFAULT_TOKEN_USAGE},
         )

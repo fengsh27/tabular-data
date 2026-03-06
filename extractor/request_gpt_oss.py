@@ -2,8 +2,8 @@
 import os
 from langchain_ollama import ChatOllama
 
-MAX_CONTENT_NUM=16384*6
-MAX_PREDICT_NUM=16384*4
+MAX_CONTENT_NUM=16384*2
+MAX_PREDICT_NUM=2048
 
 def get_gpt_oss(
     max_content_num: int = -1,
@@ -15,12 +15,13 @@ def get_gpt_oss(
         base_url=base_url,
         model="gpt-oss:20b",
         reasoning=False,
-        streaming=False,
+        streaming=True,
         num_ctx=max_content_num if max_content_num > 0 else MAX_CONTENT_NUM,
         num_predict=max_predict_num if max_predict_num > 0 else MAX_PREDICT_NUM,
         temperature=0.0,
         top_p=1.0,
         top_k=1,
+        timeout=900,
     )
 
 def get_gpt_qwen_235b(
@@ -34,12 +35,13 @@ def get_gpt_qwen_235b(
         # model="qwen3:235b",
         model="qwen3:235b",
         reasoning=False,
-        streaming=False,
+        streaming=True,
         num_ctx=max_content_num if max_content_num > 0 else MAX_CONTENT_NUM,
         num_predict=max_predict_num if max_predict_num > 0 else MAX_PREDICT_NUM,
         temperature=0.0,
         top_p=1.0,
         top_k=1,
+        timeout=900,
     )
 
 def get_gpt_qwen_30b(
@@ -54,12 +56,13 @@ def get_gpt_qwen_30b(
             base_url=base_url,
             model="qwen3:30b",
             reasoning=False,
-            streaming=False,
+            streaming=True,
             num_ctx=max_content_num if max_content_num > 0 else MAX_CONTENT_NUM,
             num_predict=max_predict_num if max_predict_num > 0 else MAX_PREDICT_NUM,
             temperature=0.0,
             top_p=1.0,
             top_k=1,
+            timeout=900,
         )
     else:
         return ChatOllama(
@@ -67,11 +70,12 @@ def get_gpt_qwen_30b(
             base_url=base_url,
             model="qwen3:30b",
             reasoning=False,
-            streaming=False,
+            streaming=True,
             num_ctx=max_content_num if max_content_num > 0 else MAX_CONTENT_NUM,
             num_predict=max_predict_num if max_predict_num > 0 else MAX_PREDICT_NUM,
             temperature=0.0,
             top_p=1.0,
             top_k=1,
             format=schema,
+            timeout=900,
         )

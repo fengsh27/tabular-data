@@ -45,6 +45,11 @@ Do NOT include:
    - "T½Beta(hr)" values (half-life parameter value, not a recorded time) 
    - "Beta(hr)" values (elimination rate constant)
 
+### **Output Format**
+The output **must** exactly follow the format of the following example:
+
+{{"times_and_units": [["Time value", "Time unit"], ["Time value", "Time unit", ...]]}}
+
 """)
 
 

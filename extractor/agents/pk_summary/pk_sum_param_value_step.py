@@ -49,7 +49,7 @@ class ParameterValueExtractionStep(PKSumCommonStep):
             total_token_usage = increase_token_usage(token_usage)
 
         return (
-            ParameterValueResult(reasoning_process="", extracted_param_values=[[]]),
+            ParameterValueResult(extracted_param_values=[[]]),
             value_list,
             total_token_usage,
         )

@@ -1,11 +1,14 @@
 import json
 import re
-from bs4 import BeautifulSoup, Tag
+import logging
+from bs4 import BeautifulSoup, FeatureNotFound, Tag
 from typing import Callable, Optional
 import pandas as pd
 from TabFuncFlow.utils.table_utils import html_table_to_markdown, dataframe_to_markdown
 from extractor.utils import convert_html_table_to_dataframe, escape_braces_for_format
 from typing import List, Optional, Dict
+
+logger = logging.getLogger(__name__)
 
 def get_tag_text(tag: Tag) -> str:
     text = tag.text
@@ -22,7 +25,7 @@ def get_tag_text(tag: Tag) -> str:
 
 class HtmlTableParser(object):
     MAX_LEVEL = 3
-    CAPTION_TAG_CANDIDATES = ["figcaption", "h2", "h3"]
+    CAPTION_TAG_CANDIDATES = ["figcaption", "h2", "h3", "caption"]
     CAPTION_CANDIDATES = ["caption", "captions", "title"]
     FOOTNOTE_CANDIDATES = ["note", "legend", "description", "foot", "notes"]
 
@@ -528,16 +531,328 @@ class PMCHtmlTableParser(object):
         return sections
 
 
+class XmlTableParser(object):
+    STOP_SECTION_KEYWORDS = [
+        "reference",
+        "references",
+        "acknowledgement",
+        "acknowledgment",
+        "acknowledgements",
+        "acknowledgments",
+        "supplementary",
+        "supplements",
+        "display-objects",
+    ]
+
+    TEXT_BLOCK_TAGS = {"p", "list", "boxed-text", "disp-quote"}
+
+    def __init__(self):
+        pass
+
+    @staticmethod
+    def _is_xml_content(content: str) -> bool:
+        if content is None:
+            return False
+        lowered = content.lower()
+        markers = [
+            "<article-meta",
+            "<article-title",
+            "<table-wrap",
+            "<sec ",
+            "<sec>",
+            "<abstract>",
+            "<abstract ",
+        ]
+        return any(marker in lowered for marker in markers)
+
+    def _parse_xml(self, content: str) -> Optional[BeautifulSoup]:
+        if not self._is_xml_content(content):
+            return None
+        try:
+            return BeautifulSoup(content, "xml")
+        except FeatureNotFound:
+            return BeautifulSoup(content, "html.parser")
+
+    @staticmethod
+    def _clean_text(text: str) -> str:
+        if text is None:
+            return ""
+        return re.sub(r"\s+", " ", text).strip()
+
+    def _extract_main_abstract_tag(self, soup: BeautifulSoup) -> Optional[Tag]:
+        article_meta = soup.find("article-meta")
+        if article_meta is not None:
+            abstract = article_meta.find("abstract")
+            if abstract is not None:
+                return abstract
+        return soup.find("abstract")
+
+    def _extract_abstract_text(self, soup: BeautifulSoup) -> Optional[str]:
+        abstract = self._extract_main_abstract_tag(soup)
+        if abstract is None:
+            return None
+
+        text_parts = []
+        sections = abstract.find_all("sec", recursive=False)
+        if sections:
+            for sec in sections:
+                title_tag = sec.find("title", recursive=False)
+                sec_title = self._clean_text(title_tag.get_text(" ", strip=True)) if title_tag else ""
+                sec_paras = [
+                    self._clean_text(p.get_text(" ", strip=True))
+                    for p in sec.find_all("p")
+                    if self._clean_text(p.get_text(" ", strip=True))
+                ]
+                sec_text = " ".join(sec_paras).strip()
+                if sec_title and sec_text:
+                    text_parts.append(f"{sec_title}: {sec_text}")
+                elif sec_text:
+                    text_parts.append(sec_text)
+        else:
+            paragraphs = [
+                self._clean_text(p.get_text(" ", strip=True))
+                for p in abstract.find_all("p")
+                if self._clean_text(p.get_text(" ", strip=True))
+            ]
+            if paragraphs:
+                text_parts.extend(paragraphs)
+            else:
+                fallback_text = self._clean_text(abstract.get_text(" ", strip=True))
+                if fallback_text:
+                    text_parts.append(fallback_text)
+
+        res = "\n".join(text_parts).strip()
+        return res if len(res) > 0 else None
+
+    def _extract_table_caption(self, table_wrap: Tag) -> str:
+        label_tag = table_wrap.find("label", recursive=False)
+        caption_tag = table_wrap.find("caption", recursive=False)
+        if caption_tag is None:
+            caption_tag = table_wrap.find("caption")
+
+        label_text = self._clean_text(label_tag.get_text(" ", strip=True)) if label_tag else ""
+        caption_text = self._clean_text(caption_tag.get_text(" ", strip=True)) if caption_tag else ""
+        if label_text and caption_text:
+            if caption_text.lower().startswith(label_text.lower()):
+                return caption_text
+            return f"{label_text} {caption_text}".strip()
+        if label_text:
+            return label_text
+        return caption_text
+
+    def _extract_table_footnote(self, table_wrap: Tag) -> str:
+        footnote_tag = table_wrap.find("table-wrap-foot", recursive=False)
+        if footnote_tag is None:
+            footnote_tag = table_wrap.find("table-wrap-foot")
+
+        footnote_parts = []
+        seen = set()
+        if footnote_tag is not None:
+            fn_tags = footnote_tag.find_all("fn")
+            if fn_tags:
+                for fn in fn_tags:
+                    text = self._clean_text(fn.get_text(" ", strip=True))
+                    if len(text) > 0 and text not in seen:
+                        seen.add(text)
+                        footnote_parts.append(text)
+            else:
+                text = self._clean_text(footnote_tag.get_text(" ", strip=True))
+                if len(text) > 0:
+                    footnote_parts.append(text)
+
+        return "\n".join(footnote_parts).strip()
+
+    def extract_tables(self, html: str):
+        soup = self._parse_xml(html)
+        if soup is None:
+            return []
+
+        table_wrap_tags = soup.find_all("table-wrap")
+        tables = []
+        for table_wrap in table_wrap_tags:
+            table_tag = table_wrap.find("table")
+            if table_tag is None:
+                continue
+
+            table_df = convert_html_table_to_dataframe(str(table_tag))
+            if table_df is None:
+                continue
+
+            tables.append(
+                {
+                    "caption": self._extract_table_caption(table_wrap),
+                    "footnote": self._extract_table_footnote(table_wrap),
+                    "table": table_df,
+                    "raw_tag": str(table_wrap),
+                }
+            )
+
+        if tables:
+            return tables
+
+        # Fallback for xml files with raw <table> tags but without <table-wrap>.
+        for table_tag in soup.find_all("table"):
+            table_df = convert_html_table_to_dataframe(str(table_tag))
+            if table_df is None:
+                continue
+            tables.append(
+                {
+                    "caption": "",
+                    "footnote": "",
+                    "table": table_df,
+                    "raw_tag": str(table_tag),
+                }
+            )
+
+        return tables
+
+    def extract_title(self, html: str):
+        logger.info("Extracting title from xml")
+        soup = self._parse_xml(html)
+        if soup is None:
+            return None
+
+        article_meta = soup.find("article-meta")
+        if article_meta is not None:
+            title_tag = article_meta.find("article-title")
+            if title_tag is not None:
+                title_text = self._clean_text(title_tag.get_text(" ", strip=True))
+                if len(title_text) > 0:
+                    logger.info("Extracted title: %s", title_text)
+                    return title_text
+
+        for title_tag in soup.find_all("article-title"):
+            if title_tag.find_parent("ref-list") or title_tag.find_parent("citation"):
+                continue
+            title_text = self._clean_text(title_tag.get_text(" ", strip=True))
+            if len(title_text) > 0:
+                logger.info("Extracted title: %s", title_text)
+                return title_text
+
+        logger.info("Failed to extract title")
+        return None
+
+    def extract_abstract(self, html: str):
+        logger.info("Extracting abstract from xml")
+        soup = self._parse_xml(html)
+        if soup is None:
+            return None
+        abstract = self._extract_abstract_text(soup)
+        logger.info("Extracted abstract: %s", abstract)
+        return abstract
+
+    def _section_is_stopped(self, title: str, sec_type: str) -> bool:
+        section_key = f"{title} {sec_type}".lower()
+        return any(keyword in section_key for keyword in XmlTableParser.STOP_SECTION_KEYWORDS)
+
+    def _extract_section_content(self, section: Tag) -> str:
+        parts = []
+        seen = set()
+
+        for child in section.children:
+            if not isinstance(child, Tag):
+                continue
+            if child.name in {"title", "sec"}:
+                continue
+
+            if child.name == "table-wrap":
+                table_tag = child.find("table")
+                if table_tag is None:
+                    continue
+                table_df = convert_html_table_to_dataframe(str(table_tag))
+                if table_df is None:
+                    continue
+                table_md = dataframe_to_markdown(table_df).strip()
+                if len(table_md) > 0 and table_md not in seen:
+                    seen.add(table_md)
+                    parts.append(table_md)
+                continue
+
+            if child.name in XmlTableParser.TEXT_BLOCK_TAGS:
+                text = self._clean_text(child.get_text(" ", strip=True))
+                if len(text) > 0 and text not in seen:
+                    seen.add(text)
+                    parts.append(text)
+                continue
+
+            text = self._clean_text(child.get_text(" ", strip=True))
+            if len(text) > 0 and text not in seen:
+                seen.add(text)
+                parts.append(text)
+
+        return "\n".join(parts).strip()
+
+    def _extract_sections_from_sec(self, sec: Tag) -> List[Dict[str, str]]:
+        sections = []
+        title_tag = sec.find("title", recursive=False)
+        section_title = self._clean_text(title_tag.get_text(" ", strip=True)) if title_tag else ""
+        sec_type = self._clean_text(sec.attrs.get("sec-type", ""))
+
+        if self._section_is_stopped(section_title, sec_type):
+            return sections
+
+        if len(section_title) == 0:
+            section_title = sec_type if len(sec_type) > 0 else self._clean_text(sec.attrs.get("id", ""))
+
+        content = self._extract_section_content(sec)
+        if len(section_title) > 0 and len(content) > 0:
+            sections.append({"section": section_title, "content": content})
+
+        for child_sec in sec.find_all("sec", recursive=False):
+            sections.extend(self._extract_sections_from_sec(child_sec))
+
+        return sections
+
+    def extract_sections(self, html: str):
+        soup = self._parse_xml(html)
+        if soup is None:
+            return None
+
+        sections = []
+        abstract_text = self._extract_abstract_text(soup)
+        if abstract_text is not None and len(abstract_text) > 0:
+            sections.append({"section": "Abstract", "content": abstract_text})
+
+        body_tag = soup.find("body")
+        if body_tag is not None:
+            for sec in body_tag.find_all("sec", recursive=False):
+                sections.extend(self._extract_sections_from_sec(sec))
+
+        return sections if len(sections) > 0 else None
+
+
 class HtmlTableExtractor(object):
     def __init__(self):
-        self.parsers = [
+        self.xml_parser = XmlTableParser()
+        self.html_parsers = [
             PMCHtmlTableParser(),
             HtmlTableParser(),
         ]
+    
+    def _is_xml_paper(self, content: str) -> bool:
+        if content is None:
+            return False
+        lowered = content.lstrip().lower()
+        if lowered.startswith("<?xml"):
+            return True
+        if "<!doctype article" in lowered:
+            return True
+        # JATS/NLM XML indicators.
+        if "<article-meta" in lowered and "<article-title" in lowered:
+            return True
+        if "<table-wrap" in lowered and "<article" in lowered:
+            return True
+        return XmlTableParser._is_xml_content(content)
+
+    def _get_parsers(self, content: str):
+        if self._is_xml_paper(content):
+            return [self.xml_parser]
+        return self.html_parsers
 
     def extract_tables(self, html: str):
         tables = []
-        for parser in self.parsers:
+        parsers = self._get_parsers(html)
+        for parser in parsers:
             tables = parser.extract_tables(html)
             if tables and len(tables) > 0:
                 break
@@ -546,7 +861,8 @@ class HtmlTableExtractor(object):
         return tables
     
     def extract_title(self, html: str):
-        for parser in self.parsers:
+        parsers = self._get_parsers(html)
+        for parser in parsers:
             title = parser.extract_title(html)
             if title is not None:
                 return escape_braces_for_format(title)
@@ -557,7 +873,8 @@ class HtmlTableExtractor(object):
         """
         Yichuan 0501
         """
-        for parser in self.parsers:
+        parsers = self._get_parsers(html)
+        for parser in parsers:
             abstract = parser.extract_abstract(html)
             if abstract is not None:
                 return escape_braces_for_format(abstract)
@@ -568,7 +885,8 @@ class HtmlTableExtractor(object):
         """
         Yichuan 0505
         """
-        for parser in self.parsers:
+        parsers = self._get_parsers(html)
+        for parser in parsers:
             sections = parser.extract_sections(html)
             if sections is not None:
                 # return sections

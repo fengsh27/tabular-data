@@ -55,7 +55,7 @@ Please Note:
     - **If the same P-value corresponds to multiple rows in Subtable 1, you must fill in that P-value for all of those rows in Subtable 2.**  
     - Do not skip or omit the P-value in any row that should have it.
 (8) The final list should be like this:
-[["10", "Count", "Sum", "%", "1", "N/A", "N/A", "N/A", "N/A"], ["50", "N/A", "%", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"]]
+{{"extracted_param_values": [["10", "Count", "Sum", "%", "1", "N/A", "N/A", "N/A", "N/A"], ["50", "N/A", "%", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"]]}} (example)
 """)
 
 

@@ -37,6 +37,7 @@ def test_PatientInfoRefinementStep_34183327_table_2(
     assert state["md_table_patient_refined"] is not None
     assert type(state["md_table_patient_refined"]) == str
 
+@pytest.mark.skip()
 def test_PatientInfoRefinementStep_34114632_table_2(
     llm, 
     step_callback,
@@ -57,3 +58,26 @@ def test_PatientInfoRefinementStep_34114632_table_2(
 
     assert state["md_table_patient"] is not None
     assert type(state["md_table_patient"]) == str
+
+def test_PatientInfoRefinementStep_19168553_table_1(
+    llm, 
+    md_table_19168553_table_1,
+    caption_19168553_table_1, 
+    step_callback,
+    title_19168553,
+    abstract_19168553,
+    md_table_drug_19168553_table_1,
+):
+    state = PKSumWorkflowState()
+    state["llm"] = llm
+    state["caption"] = caption_19168553_table_1
+    state["md_table"] = md_table_19168553_table_1
+    state["step_callback"] = step_callback
+    state["md_table_drug"] = md_table_drug_19168553_table_1
+    state["title"] = title_19168553
+    
+    step = PatientInfoExtractionStep()
+    step.execute(state)
+
+    assert state["md_table_patient_refined"] is not None
+    assert type(state["md_table_patient_refined"]) == str

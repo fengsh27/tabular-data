@@ -58,7 +58,7 @@ class AssemblyStep(PKDrugSumCommonStep):
         )
 
         return (
-            PKDrugSumCommonAgentResult(reasoning_process=""),
+            PKDrugSumCommonAgentResult(),
             df_combined,
             {**DEFAULT_TOKEN_USAGE},
         )

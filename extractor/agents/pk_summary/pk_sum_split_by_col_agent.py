@@ -23,7 +23,13 @@ Please follow these steps:
   (2) Ensure that each group contains exactly one 'Parameter type' column and at most one 'P value' column.
 
 Return the results as a list of lists, where each inner list represents a sub-table with its included columns, like this:
-[["ColumnA", "ColumnB", "ColumnC", "ColumnG"], ["ColumnA", "ColumnD", "ColumnE", "ColumnF", "ColumnG"]]
+{{"sub_tables_columns": [["ColumnA", "ColumnB", "ColumnC", "ColumnG"], ["ColumnA", "ColumnD", "ColumnE", "ColumnF", "ColumnG"]]}}
+
+### **Output Format**
+The output **must** exactly follow the format of the following example:
+
+{{"sub_tables_columns": [["ColumnA", "ColumnB", "ColumnC", "ColumnG"], ["ColumnA", "ColumnD", "ColumnE", "ColumnF", "ColumnG"]]}}   
+
 """)
 
 

@@ -28,7 +28,7 @@ Carefully review the article and follow these steps to convert the characteristi
     - Unit: The measurement unit of the Main value.
     
 (2) Compile each unique combination in the format of a **list of lists**, using **Python string syntax**. The result should be like this:
-[["1", "25.4", "year"], ...] (example)
+{{"refined_characteristic_combinations": [["1", "25.4", "year"], ...]}} (example)
 
 (3) Use **"N/A"** as the placeholder if the information **cannot** be reasonably inferred.
    

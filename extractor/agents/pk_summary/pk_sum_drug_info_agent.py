@@ -20,10 +20,16 @@ Drug name is the name of the drug mentioned in the study.
 Analyte is the substance measured in the study, which can be the primary drug, its metabolite, or another drug it affects, etc. When filling in "Analyte," only enter the name of the substance.
 Specimen is the type of sample.
 (2) List each unique combination in the format of a list of lists, using Python string syntax. Your answer should be enclosed in double angle brackets, like this:  
-   [["Lorazepam", "Lorazepam", "Plasma"], ["Lorazepam", "Lorazepam", "Urine"]] (example)  
+   {{"drug_combinations": [["Lorazepam", "Lorazepam", "Plasma"], ["Lorazepam", "Lorazepam", "Urine"]]}} (example)  
 (3) Verify the source of each [Drug Name, Analyte, Specimen] combination before including it in your answer.  
 (4) If any information is missing, first try to infer it from the available data (e.g., using context, related entries, or common pharmacokinetic knowledge). Only use "N/A" as a last resort if the information cannot be reasonably inferred.
 (5) If none of the elements are explicitly stated in the table or caption, infer them from the **paper title**.
+
+### **Output Format**
+The output **must** exactly follow the format of the following example:
+
+{{"drug_combinations": [["drug_name_0", "analyte_0", "specimen_0"], ["drug_name_1", "analyte_1", "specimen_1"]]}}
+
 """)
 
 INSTRUCTION_PROMPT = "Do not give the final result immediately. First, explain your thought process, then provide the answer."

@@ -24,6 +24,18 @@ Carefully analyze the table and follow these steps:
 (2) if a column is only about the subject number, it is considered as "Uncategorized"
 (3) Return a categorized headers dictionary where each key is a column header, and the corresponding value is its assigned category, e.g.
 {categorized_headers_example}
+
+### **Output Format**
+The output **must** exactly match the following format:
+{{
+  "categorized_headers": {{ "column_header_1": "category_1", "column_header_2": "category_2", ... }}
+}}
+
+Example:
+{{
+  "categorized_headers": {{ "Parameter type": "Parameter type","N": "Uncategorized","Range": "Parameter value","Mean ± s.d.": "Parameter value","Median": "Parameter value"}}
+}}
+
 """)
 
 
@@ -58,11 +70,6 @@ HeaderCategorizeJsonSchema = {
     "description": "Categorized results for headers",
     "type": "object",
     "properties": {
-        "reasoning_process": {
-            "type": "string",
-            "description": "A detailed explanation of the thought process or reasoning steps taken to reach a conclusion.",
-            "title": "Reasoning Process",
-        },
         "categorized_headers": {
             "type": "object",
             "description": 'the dictionary represents the categorized result for headers. Each key is a column header name, and the corresponding value is its assigned category string (one of the values: "Parameter type", "Parameter unit", "Parameter value", "P value" and "Uncategorized")',
@@ -90,6 +97,8 @@ def post_process_validate_categorized_result(
         except ValidationError as e:
             logger.error(e)
             raise e
+    else:
+        res = result
     # Ensure column count matches the table
     expected_columns = markdown_to_dataframe(md_table_aligned).shape[1]
     match_dict = res.categorized_headers

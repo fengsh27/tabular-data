@@ -43,7 +43,7 @@ Please Note:
 (4) **Important:** Please return Subtable 2 as a list of lists, excluding the headers. 
 (5) Note: The Outcome column is intended to describe what the main value represents — that is, it conveys the meaning or purpose of the value extracted from the main table. It should not contain the numerical value itself. Only the contextual outcome that the value measures should be included.
 (6) The final list should be like this:
-[["infants of substance abuse mothers", "cocaine unexposed", "total sleep time"], ["infants of substance abuse mothers", "cocaine exposed", "total sleep time"]]
+{{"extracted_study_info": [["infants of substance abuse mothers", "cocaine unexposed", "total sleep time"], ["infants of substance abuse mothers", "cocaine exposed", "total sleep time"]]}} (example)
 """)
 
 

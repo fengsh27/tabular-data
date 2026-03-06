@@ -46,13 +46,13 @@ class ParameterValueExtractionStep(PEStudyOutCommonStep):
             )
             self._step_output(
                 state,
-                step_reasoning_process=res.reasoning_process if res is not None else "",
+                step_reasoning_process=res.reasoning_process if res and hasattr(res, "reasoning_process") and res.reasoning_process else "",
             )
             value_list.append(processed_res)
             total_token_usage = increase_token_usage(token_usage)
 
         return (
-            ParameterValueResult(reasoning_process="", extracted_param_values=[[]]),
+            ParameterValueResult(extracted_param_values=[[]]),
             value_list,
             total_token_usage,
         )

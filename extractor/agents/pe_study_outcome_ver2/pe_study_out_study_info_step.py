@@ -47,13 +47,13 @@ class StudyInfoExtractionStep(PEStudyOutCommonStep):
             )
             self._step_output(
                 state,
-                step_reasoning_process=res.reasoning_process if res is not None else "",
+                step_reasoning_process=res.reasoning_process if res and hasattr(res, "reasoning_process") and res.reasoning_process else "",
             )
             value_list.append(processed_res)
             total_token_usage = increase_token_usage(token_usage)
 
         return (
-            StudyInfoResult(reasoning_process="", extracted_study_info=[[]]),
+            StudyInfoResult(extracted_study_info=[[]]),
             value_list,
             total_token_usage,
         )

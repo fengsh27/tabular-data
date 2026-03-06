@@ -30,11 +30,24 @@ Read the article and answer the following:
     - **Population N**: The number of individuals in that population group.
     - **Source text**: The original sentence or excerpt from the source document where the data was reported. This field provides context and traceability, ensuring that each data point can be verified against its original description in the literature. Use "N/A" if no source can be found.
 (2) List each unique combination in Python list-of-lists syntax, like this:  
-    [["Weight", "N/A", "76.8 (67.4-86.2)", "Pregnancy", "10", "... the sentence from the article ..."], ["Age", "N/A", "23.3 (19.02-27.58)", "Postpregnancy", "10", "... the sentence from the article ..."]] (example)  
+    {{"characteristic_combinations": [["Weight", "N/A", "76.8 (67.4-86.2)", "Pregnancy", "10", "... the sentence from the article ..."], ["Age", "N/A", "23.3 (19.02-27.58)", "Postpregnancy", "10", "... the sentence from the article ..."]]}} (example)  
 (3) Confirm the source of each [Population characteristic, Characteristic values, Population, Population N, Source text] combination before including it in your answer.
 (4) In particular, regarding Sample N, please clarify the basis for each value you selected. If there are multiple Sample N values mentioned in different parts of the text, each must be explicitly stated in the original text and should not be derived through calculation or inference. Please cite the exact sentence(s) from the paragraph that support each value.
 (5) If both individual Sample N values (e.g., for specific timepoints or population subgroups) and a summed total are reported in the text, only include the individual values. Do not include the summed total, even if it is explicitly stated, to avoid duplication or overcounting.
     For example, if the text states “16 samples were collected in the first trimester, 18 in the second trimester, and a total of 34 across both," only report the 16 and 18, and exclude the total of 34.
+
+### **Output Format**
+Your response **must** exactly match the following JSON schema:
+
+```json
+{{
+  "characteristic_combinations": [
+    ["Population characteristic", "Characteristic sub-category", "Characteristic values", "Population", "Population N", "Source text"]
+    ...
+  ]
+}}
+```
+(example)
 """)
 
 

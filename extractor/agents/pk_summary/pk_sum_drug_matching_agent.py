@@ -88,6 +88,12 @@ SUBTABLE 2 (Drug-Analyte-Specimen Combinations):
 
      So, we get the best matching rows in Subtable 2 for the row 0, 1, 2, 3, 4, 5, 6, 7 and 8 in Subtable 1 are [0, 0, 0, 1, 1, 1, 2, 2, 2] (index).
 
+---
+
+### **Output Format**
+The output **must** exactly follow the format of the following example:
+
+{{"matching_row_indices": [index_0, index_1, ..., index_n]}}
 
 """)
 
