@@ -10,12 +10,32 @@ from extractor.agents.pk_individual.pk_ind_workflow import PKIndWorkflow
 from extractor.agents.pk_population_summary.pk_popu_sum_workflow import PKPopuSumWorkflow
 from extractor.agents.pk_summary.pk_sum_workflow import PKSumWorkflow, PKSumWorkflowState
 from extractor.agents.pk_population_individual.pk_popu_ind_workflow import PKPopuIndWorkflow
+from extractor.agents.pk_pe_agents.pk_pe_agents_types import FinalAnswerEnum
 from extractor.constants import PipelineTypeEnum
 from extractor.database.pmid_db import PMIDDB
 from extractor.pmid_extractor.table_utils import select_pe_tables, select_pk_demographic_tables, select_pk_summary_tables
 from extractor.utils import convert_html_to_text_no_table, convert_sections_to_full_text, remove_references
 
 logger = logging.getLogger(__name__)
+
+
+class NoTableFoundError(Exception):
+    """Raised when no relevant tables are found in the paper for a pipeline."""
+    pass
+
+
+class NoIndividualDataError(Exception):
+    """Raised when PK tables exist but contain no individual patient data rows."""
+    pass
+
+
+# Maps domain-specific exceptions to their FinalAnswerEnum outcome.
+# Add new entries here when introducing new "expected non-data" cases.
+_TOOL_EXCEPTION_MAP: dict[type[Exception], FinalAnswerEnum] = {
+    NoTableFoundError:     FinalAnswerEnum.NoTable,
+    NoIndividualDataError: FinalAnswerEnum.NoIndividualData,
+}
+
 
 class AgentTool(ABC):
     def __init__(
@@ -44,13 +64,19 @@ class AgentTool(ABC):
     def _run(self, previous_errors: str | None = None) -> tuple[pd.DataFrame | None, list[str] | str | None]:
         pass
 
-    def run(self, previous_errors: str | None = None):
+    def run(self, previous_errors: str | None = None) -> tuple[pd.DataFrame | None, list | str | None, FinalAnswerEnum | None]:
+        """Run the tool. Returns (df, source_tables, final_answer) where final_answer is
+        None on success (proceed to verification), or a terminal FinalAnswerEnum value
+        when the tool can already determine the outcome without verification."""
         self._print_tool_name()
         try:
-            return self._run(previous_errors)
+            df, source_tables = self._run(previous_errors)
+            return df, source_tables, None
+        except tuple(_TOOL_EXCEPTION_MAP.keys()) as e:
+            return None, None, _TOOL_EXCEPTION_MAP[type(e)]
         except Exception as e:
             logger.error(f"Error running {self.__class__.__name__}: \n{e}")
-            return pd.DataFrame(), "N/A"
+            return pd.DataFrame(), "N/A", FinalAnswerEnum.PipelineError
 
 class PKSummaryTablesCurationTool(AgentTool):
     def __init__(
@@ -80,6 +106,8 @@ class PKSummaryTablesCurationTool(AgentTool):
         selected_tables, indexes, reasoning_process, token_usage = select_pk_summary_tables(tables, self.llm)
         self._print_step_output(reasoning_process)
         self._print_token_usage(token_usage)
+        if not selected_tables:
+            raise NoTableFoundError("No PK summary tables found in the paper.")
         title = pmid_info[1]
         workflow = PKSumWorkflow(llm=self.llm)
         workflow.build()
@@ -148,11 +176,13 @@ class PKIndividualTablesCurationTool(AgentTool):
         self._print_step_output(reasoning_process)
         self._print_token_usage(token_usage)
         if not selected_tables:
-            return None, None
+            raise NoTableFoundError("No PK individual tables found in the paper.")
         workflow = PKIndWorkflow(llm=self.llm, llm2=self.llm2)
         workflow.build()
         dfs: list[pd.DataFrame] = []
         source_tables = []
+        no_individual_data_count = 0
+        other_error_count = 0
         for table in selected_tables:
             caption = "\n".join([table["caption"], table["footnote"]])
             source_table = dataframe_to_markdown(table["table"])
@@ -166,13 +196,25 @@ class PKIndividualTablesCurationTool(AgentTool):
                     previous_errors=previous_errors,
                     full_text=full_text,
                 )
-            except Exception as e:
+            except ValueError as e:
+                if "No valid entries found" in str(e):
+                    no_individual_data_count += 1
+                else:
+                    other_error_count += 1
                 logger.error(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
                 logger.error(str(e))
-                print(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
-                print(str(e))
+                continue
+            except Exception as e:
+                other_error_count += 1
+                logger.error(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
+                logger.error(str(e))
                 continue
             dfs.append(df)
+        if not dfs:
+            if no_individual_data_count > 0 and other_error_count == 0:
+                raise NoIndividualDataError(
+                    "PK tables found but none contain individual patient data."
+                )
         df_combined = (
             pd.concat(dfs, axis=0).reset_index(drop=True)
             if len(dfs) > 0
@@ -372,7 +414,7 @@ class PEStudyOutcomeCurationTool(AgentTool):
         self._print_step_output(reasoning_process)
         self._print_token_usage(token_usage)
         if not selected_tables:
-            return None, None
+            raise NoTableFoundError("No PE study outcome tables found in the paper.")
         workflow = PEStudyOutWorkflow(llm=self.llm)
         workflow.build()
         dfs: list[pd.DataFrame] = []

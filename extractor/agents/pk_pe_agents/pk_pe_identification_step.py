@@ -14,7 +14,7 @@ from extractor.constants import COT_USER_INSTRUCTION
 logger = logging.getLogger(__name__)
 
 class PKPEIdentificationStepResult(BaseModel):
-    reasoning_process: str = Field(description="A concise explanation of the thought process or reasoning steps taken to reach a conclusion in 1-2 sentences.")
+    # reasoning_process: str = Field(description="A concise explanation of the thought process or reasoning steps taken to reach a conclusion in 1-2 sentences.")
     pkpe_type: Literal["PK", "PE", "Both", "Neither"] = Field(description="The type of the paper")
 
 PKPE_IDENTIFICATION_SYSTEM_PROMPT = """
@@ -55,7 +55,9 @@ Determine whether the paper is:
 Respond in the following exact format (no additional text):
 
 ```
-**FinalAnswer**: [PK / PE / Both / Neither]
+{{
+"pkpe_type": <PK / PE / Both / Neither>
+}}
 ```
 
 ---

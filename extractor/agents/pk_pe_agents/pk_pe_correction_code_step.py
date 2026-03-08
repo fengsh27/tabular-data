@@ -211,12 +211,12 @@ class PKPECuratedTablesCorrectionCodeStep(PKPECommonStep):
                 logger.error(f"Code generation/execution failed (attempt {attempt + 1}): {error_msg}")
                 continue
 
-        # All retries exhausted or non-retriable exception — mark as Error so the
+        # All retries exhausted or non-retriable exception — mark as CorrectionError so the
         # verification step short-circuits and the workflow terminates cleanly.
         last_error = error_history[-1] if error_history else "unknown error"
         logger.error(f"Correction step failed after {max_retries} attempts; leaving curated_table unchanged. Last error: {last_error}")
         self._print_step(state, step_output=f"Correction step failed; leaving curated_table unchanged. Last error:\n\n{last_error}")
-        state["final_answer"] = FinalAnswerEnum.Error
+        state["final_answer"] = FinalAnswerEnum.CorrectionError
         state["suggested_fix"] = "N/A"
         return state, total_token_usage
     

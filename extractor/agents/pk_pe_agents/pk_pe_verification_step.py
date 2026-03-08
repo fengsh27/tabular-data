@@ -46,7 +46,6 @@ You must respond using the **exact json compact format** below:
 
 ```
 {{
-  "reasoning_process": <string, a concise explanation of the thought process or reasoning steps taken to reach a conclusion (no more than 200 words)>,
   "correct": <boolean, True / False>,
   "explanation": <string, brief explanation of whether the curated table is accurate. If incorrect, explain what is wrong, including specific mismatched values or structure issues>,
   "suggested_fix": <string or None, if incorrect, provide a corrected version of the curated table or the corrected values/rows/columns.>
@@ -88,7 +87,7 @@ You must respond using the **exact json compact format** below:
 """
 
 class PKPEVerificationStepResult(BaseModel):
-    reasoning_process: str = Field(description="A **concise explanation** of the thought process or reasoning steps taken to reach a conclusion (no more than 200 words).")
+    # reasoning_process: str = Field(description="A **concise explanation** of the thought process or reasoning steps taken to reach a conclusion (no more than 200 words).")
     correct: bool = Field(description="Whether the curated table is accurate and faithful to the source table(s).")
     explanation: str = Field(description="Brief explanation of whether the curated table is accurate. If incorrect, explain what is wrong, including specific mismatched values or structure issues.")
     suggested_fix: Optional[str] = Field(description="If incorrect, provide a corrected version of the curated table or the corrected values/rows/columns.")
@@ -123,9 +122,9 @@ Suggested fix:
     def _execute_directly(self, state) -> tuple[dict, dict[str, int]]:
         state: PKPECurationWorkflowState = state
 
-        # If a previous step (e.g. correction exhausted all retries) already marked the
-        # pipeline as Error, honour that decision and skip the LLM call entirely.
-        if state.get("final_answer") == FinalAnswerEnum.Error:
+        # If a previous step already set a terminal non-correctable answer, skip.
+        answer = state.get("final_answer")
+        if answer is not None and answer.is_terminal:
             return state, {**DEFAULT_TOKEN_USAGE}
 
         source_tables = state["source_tables"] if "source_tables" in state else None
@@ -134,7 +133,7 @@ Suggested fix:
         curated_table = raw.strip() if isinstance(raw, str) else None
         curated_table = curated_table if curated_table else None
         if curated_table is None:
-            state["final_answer"] = FinalAnswerEnum.Error
+            state["final_answer"] = FinalAnswerEnum.NoTable
             state["explanation"] = "No data was curated from the source."
             state["suggested_fix"] = "N/A"
             return state, {**DEFAULT_TOKEN_USAGE}
@@ -156,7 +155,7 @@ Suggested fix:
             )
         except Exception as e:
             logger.error(f"Error running verification agent: {e}")
-            state["final_answer"] = FinalAnswerEnum.Error
+            state["final_answer"] = FinalAnswerEnum.VerificationError
             state["explanation"] = f"Error running verification agent: {e}"
             state["suggested_fix"] = "N/A"
             return state, {**DEFAULT_TOKEN_USAGE}

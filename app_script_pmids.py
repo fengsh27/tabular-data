@@ -28,7 +28,7 @@ from dotenv import load_dotenv
 
 from extractor.agents.agent_factory import get_agent_llm, get_pipeline_llm
 from extractor.agents.agent_utils import extract_pmid_info_to_db
-from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECuratedTables
+from extractor.agents.pk_pe_agents.pk_pe_agents_types import FinalAnswerEnum, PKPECuratedTables
 from extractor.agents_manager.pk_pe_manager import PKPEManager
 from extractor.constants import PipelineTypeEnum
 from extractor.database.pmid_db import PMIDDB
@@ -216,7 +216,7 @@ def _curate_pmid(
 
         df.to_csv(out_dir / f"{pmid}_{pipeline_type.value}.csv", index=False)
 
-        if not value["correct"]:
+        if value["correct"] != FinalAnswerEnum.Correct:
             msg = f"Curated table for {pmid} {pipeline_type.value} is not correct"
             logger.error(msg)
             errors.append((pmid, msg))

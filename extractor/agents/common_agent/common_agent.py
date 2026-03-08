@@ -20,9 +20,10 @@ class RetryException(Exception):
     pass
 
 class CommonAgentResult(BaseModel):
-    reasoning_process: str = Field(
-        description="A concise explanation of the thought process or reasoning steps taken to reach a conclusion in 1-2 sentences."
-    )
+    # reasoning_process: str = Field(
+    #     description="A concise explanation of the thought process or reasoning steps taken to reach a conclusion in 1-2 sentences."
+    # )
+    pass
 
 class CommonAgent:
     def __init__(self, llm: BaseChatOpenAI):

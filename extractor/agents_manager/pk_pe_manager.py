@@ -28,7 +28,7 @@ from extractor.pmid_extractor.article_retriever import ArticleRetriever
 from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
 from extractor.utils import convert_html_to_text_no_table, convert_sections_to_full_text, remove_references
 from extractor.agents.pk_pe_agents.pk_pe_identification_step import PKPEIdentificationStep
-from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECuratedTables, PKPECurationWorkflowState, PaperTypeEnum
+from extractor.agents.pk_pe_agents.pk_pe_agents_types import FinalAnswerEnum, PKPECuratedTables, PKPECurationWorkflowState, PaperTypeEnum
 
 
 logger = logging.getLogger(__name__)
@@ -239,7 +239,12 @@ class PKPEManager:
                 self._curating_end_job(pmid, pipeline_type, result, curation_end_callback)   
             except Exception as e:
                 logger.error(f"Error running pmid-{pmid} {pipeline_type} workflow: \n{e}")
-                continue
+                result = PKPECuratedTables(
+                    correct=FinalAnswerEnum.PipelineError,
+                    curated_table=None,
+                    explanation=str(e),
+                    suggested_fix="N/A",
+                )
             curated_tables[pipeline_type] = result
         return curated_tables
 
@@ -264,7 +269,12 @@ class PKPEManager:
                 await self._curating_end_job_async(pmid, pipeline_type, result, curation_end_callback)   
             except Exception as e:
                 logger.error(f"Error running pmid-{pmid} {pipeline_type} workflow: \n{e}")
-                continue
+                result = PKPECuratedTables(
+                    correct=FinalAnswerEnum.PipelineError,
+                    curated_table=None,
+                    explanation=str(e),
+                    suggested_fix="N/A",
+                )
             curated_tables[pipeline_type] = result
         return curated_tables
 

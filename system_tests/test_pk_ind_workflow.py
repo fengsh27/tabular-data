@@ -3,7 +3,7 @@ import pytest
 from extractor.agents.pk_individual.pk_ind_workflow import PKIndWorkflow
 from extractor.agents.pk_individual.pk_ind_workflow_utils import PKIndWorkflowState
 
-# @pytest.mark.skip()
+@pytest.mark.skip()
 def test_PKIndWorkflow_29100749_table_2(
     llm, 
     title_29100749,
@@ -45,3 +45,23 @@ def test_PKIndWorkflow_32635742_table_0(
     print(df)
     assert df is not None
     assert df.empty is False
+
+
+def test_PKIndWorkflow_19951112_table_0(
+    llm,
+    title_19951112,
+    html_content_19951112_table_0,
+    caption_19951112_table_0,
+    step_callback,
+):
+    workflow = PKIndWorkflow(llm=llm)
+    workflow.build()
+    df = workflow.go(
+        html_content=html_content_19951112_table_0,
+        caption_and_footnote=caption_19951112_table_0,
+        title=title_19951112,
+        step_callback=step_callback,
+    )
+    assert df is not None
+    assert df.empty is False
+

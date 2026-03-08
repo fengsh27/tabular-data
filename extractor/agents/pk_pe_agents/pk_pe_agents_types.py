@@ -14,7 +14,18 @@ class PaperTypeEnum(Enum):
 class FinalAnswerEnum(Enum):
     Correct = "Correct"
     Incorrect = "Incorrect"
-    Error = "Error"
+    MaxStepReached = "MaxStepReached"
+    NoTable = "NoTable"
+    NoIndividualData = "NoIndividualData"
+    PipelineError = "PipelineError"
+    CorrectionError = "CorrectionError"
+    VerificationError = "VerificationError"
+
+    @property
+    def is_terminal(self) -> bool:
+        """True for any state that ends the verify/correct loop.
+        Only Incorrect continues; everything else terminates."""
+        return self != FinalAnswerEnum.Incorrect
 
 class PKPECurationWorkflowState(TypedDict):
     pmid: str
@@ -34,10 +45,10 @@ class PKPECurationWorkflowState(TypedDict):
     pipeline_tools: Optional[list[str]] = None
 
 class PKPECuratedTables(TypedDict):
-    correct: bool
-    curated_table: Optional[str] = None
-    explanation: Optional[str] = None
-    suggested_fix: Optional[str] = None
+    correct: FinalAnswerEnum
+    curated_table: Optional[str]
+    explanation: Optional[str]
+    suggested_fix: Optional[str]
 
 
 

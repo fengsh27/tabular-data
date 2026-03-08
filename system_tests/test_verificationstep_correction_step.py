@@ -4,11 +4,12 @@ from langgraph.graph import StateGraph, START, END
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown, markdown_to_dataframe
 from extractor.agents.agent_utils import extract_pmid_info_to_db
-from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState
+from extractor.agents.pk_pe_agents.pk_pe_agents_types import FinalAnswerEnum, PKPECurationWorkflowState
 from extractor.agents.pk_pe_agents.pk_pe_correction_step import PKPECuratedTablesCorrectionStep
 from extractor.agents.pk_pe_agents.pk_pe_verification_step import PKPECuratedTablesVerificationStep
 from extractor.constants import MAX_STEP_COUNT
 from extractor.request_openai import get_5_mini_openai
+
 
 curated_table_16143486 = """
 col: | "Drug name" | "Analyte" | "Specimen" | "Population" | "Pregnancy stage" | "Pediatric/Gestational age" | "Subject N" | "Parameter type" | "Parameter unit" | "Statistics type" | "Main value" | "Variation type" | "Variation value" | "Interval type" | "Lower bound" | "Upper bound" | "P value" | "Time value" | "Time unit" |
@@ -51,7 +52,7 @@ def test_verification_step_correction_step(llm, step_callback, pmid_db):
     assert pmid is not None
     print_step = step_callback
     def check_verification_step(state: PKPECurationWorkflowState):
-        if state["final_answer"] is not None and state["final_answer"] in [FinalAnswerEnum.Correct, FinalAnswerEnum.Error]:
+        if state["final_answer"] is not None and state["final_answer"].is_terminal:
             print_step(step_name="Final Answer")
             print_step(step_output=state["final_answer"])
             return END
@@ -104,7 +105,7 @@ def test_verification_step_correction_step(llm, step_callback, pmid_db):
     })
     assert res is not None
     assert res["final_answer"] is not None
-    assert res["final_answer"] in [FinalAnswerEnum.Correct, FinalAnswerEnum.Error]
+    assert res["final_answer"].is_terminal
     assert res["curated_table"] is not None
     df = markdown_to_dataframe(res["curated_table"])
     assert df.shape[0] == 30
@@ -121,7 +122,7 @@ def test_verification_step_correction_step_on_39135538(
     assert pmid is not None
     print_step = step_callback
     def check_verification_step(state: PKPECurationWorkflowState):
-        if state["final_answer"] is not None and state["final_answer"] in [FinalAnswerEnum.Correct, FinalAnswerEnum.Error]:
+        if state["final_answer"] is not None and state["final_answer"].is_terminal:
             print_step(step_name="Final Answer")
             print_step(step_output=state["final_answer"])
             return END
@@ -174,7 +175,7 @@ def test_verification_step_correction_step_on_39135538(
     })
     assert res is not None
     assert res["final_answer"] is not None
-    assert res["final_answer"] in [FinalAnswerEnum.Correct, FinalAnswerEnum.Error]
+    assert res["final_answer"].is_terminal
     assert res["curated_table"] is not None
     df = markdown_to_dataframe(res["curated_table"])
     # assert df.shape[0] == 30

@@ -33,7 +33,7 @@ def get_tools_descriptions() -> str:
 """
 
 class PKPEDesignStepResult(BaseModel):
-    reasoning_process: str = Field(description="A concise explanation of the thought process or reasoning steps taken to reach a conclusion in 1-2 sentences.")
+    # reasoning_process: str = Field(description="A concise explanation of the thought process or reasoning steps taken to reach a conclusion in 1-2 sentences.")
     pipeline_tools: list[str] = Field(description="A list of pipeline tool names")
 
 PKPE_DESIGN_SYSTEM_PROMPT = """
@@ -126,9 +126,9 @@ If both appear in distinct tables, include both granularity levels.
 ### **Output Format**
 Return the selected tools in the following exact format:
 ```
-
-Pipeline Tools: [tool_name_1, tool_name_2, ...]
-
+{{
+"pipeline_tools": [tool_name_1, tool_name_2, ...]
+}}
 ```
 
 ---
@@ -150,30 +150,30 @@ Pipeline Tools: [tool_name_1, tool_name_2, ...]
 #### Example 1 – Single specimen (plasma), individual + summary data  
 > Tables show individual plasma levels and summary L/D ratios.  
 ```
-
-Pipeline Tools: [pk_individual, pk_summary, pk_drug_summary]
-
+{{
+"pipeline_tools": [pk_individual, pk_summary, pk_drug_summary]
+}}
 ```
 
 #### Example 2 – Multiple specimens (plasma + milk)  
 ```
-
-Pipeline Tools: [pk_specimen_individual, pk_specimen_summary]
-
+{{
+"pipeline_tools": [pk_specimen_individual, pk_specimen_summary]
+}}
 ```
 
 #### Example 3 – Drug-level comparison only  
 ```
-
-Pipeline Tools: [pk_drug_summary]
-
+{{
+"pipeline_tools": [pk_drug_summary]
+}}
 ```
 
 #### Example 4 – PK + PE mixed study  
 ```
-
-Pipeline Tools: [pk_summary, pe_study_outcome]
-
+{{
+"pipeline_tools": [pk_summary, pe_study_outcome]
+}}
 ```
 
 ---

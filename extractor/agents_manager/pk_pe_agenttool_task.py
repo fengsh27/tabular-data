@@ -73,14 +73,14 @@ class PKPEAgentToolTask(ABC):
 
     def _build_workflow(self, pmid: str):
         def check_verification_step(state: PKPECurationWorkflowState):
-            if state["final_answer"] is not None and \
-                (state["final_answer"] == FinalAnswerEnum.Correct or \
-                    state["final_answer"] == FinalAnswerEnum.Error):
+            answer = state["final_answer"]
+            if answer is not None and answer.is_terminal:
                 self.print_step(step_name="Final Answer")
                 self.print_step(step_output=state["final_answer"].value)
                 return END
             if "step_count" in state and state["step_count"] >= MAX_AGENTTOOL_TASK_STEP_COUNT:
                 self.print_step(step_name="Max Step Count Reached")
+                state["final_answer"] = FinalAnswerEnum.MaxStepReached
                 return END
             if not "curated_table" in state or (state["curated_table"] is None or len(state["curated_table"]) == 0):
                 self.print_step(step_name="No Curated Table")
@@ -136,7 +136,7 @@ class PKPEAgentToolTask(ABC):
     def run(self, pmid: str) -> tuple[bool, str | None, str | None, str | None]:
         self.print_step(step_name=f"Running {self.task_name} for pmid-{pmid}")
         state = self._run_workflow(pmid)
-        correct = state["final_answer"] if state["final_answer"] is not None else FinalAnswerEnum.Error
+        correct = state["final_answer"] if state["final_answer"] is not None else FinalAnswerEnum.PipelineError
         curated_table = state["curated_table"] if "curated_table" in state else None
         explanation = state["explanation"] if "explanation" in state else None
         suggested_fix = state["suggested_fix"] if "suggested_fix" in state else None

@@ -66,8 +66,7 @@ def test_pk_pe_verification_step_on_29100749(
     }
     state = verification_step.execute(state)
     n = 0
-    while n < 5 and not ("final_answer" in state and \
-        state["final_answer"] in [FinalAnswerEnum.Correct, FinalAnswerEnum.Error]):
+    while n < 5 and not ("final_answer" in state and state["final_answer"].is_terminal):
         state = correction_step.execute(state)
         state = verification_step.execute(state)
         n += 1

@@ -11,6 +11,7 @@ from extractor.constants import (
     headers,
     cookies,
 )
+from extractor.pmid_extractor.pubmed_fulltext import PubMedFullTextRetriever
 
 logger = logging.getLogger(__name__)
 
@@ -135,6 +136,15 @@ class ArticleRetriever(object):
                 logger.info(f"Found {pmid} paper from cache")
                 return True, pmid_path.read_text(), 200
 
+        # First, try to request pmc full-text with PubMedFullTextRetriever, which is using https://eutils.ncbi.nlm.nih.gov/entrez/eutils
+        pubmed_fulltext_retriever = PubMedFullTextRetriever()
+        try:
+            result = pubmed_fulltext_retriever.retrieve(pmid, "html", fallback=False)
+            return True, result.content, result.code
+        except ValueError as e:
+            logger.error(f"Failed to use entrez/efetch to retrieve full-text for {pmid}: {e}")
+            
+        # Second, try to request pmc full-text with request_pmc_full_text
         res, pmc_article, code = self._request_pmc_full_text(pmid)
         if res:
             return True, pmc_article, code
