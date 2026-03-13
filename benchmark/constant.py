@@ -27,3 +27,4 @@ class LLModelType(Enum):
     GPTOSS="gpt-oss"
     QWEN3="qwen3"
     CODEX="codex"
+    GPT54="gpt54"

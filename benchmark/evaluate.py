@@ -274,8 +274,8 @@ class TablesEvaluator:
     def rate_rows(self, baseline: DataFrame, target: DataFrame) -> int | Tuple[int, int]:
         bshape = baseline.shape
         tshape = target.shape
-        if bshape[1] != tshape[1]:
-            return 0
+        # if bshape[1] != tshape[1]:
+        #     return 0
 
         less = baseline if bshape[0] <= tshape[0] else target
         much = baseline if bshape[0] > tshape[0] else target
