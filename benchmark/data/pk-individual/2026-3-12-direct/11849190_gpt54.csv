@@ -1,0 +1,78 @@
+Population,Pregnancy stage,Pediatric/Gestational age,Specimen,Drug name,Patient ID,Parameter type,Analyte,Time value,Time unit,Parameter value,Parameter unit
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,1,milk Cmax,venlafaxine,1.75,hour,2020,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,1,milk Caverage,venlafaxine,NR,NR,1187,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,1,milk/plasma ratio,venlafaxine,NR,NR,2.40,ratio
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,1,milk Cmax,O-desmethylvenlafaxine,1.75,hour,335,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,1,milk Caverage,O-desmethylvenlafaxine,NR,NR,277,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,1,milk/plasma ratio,O-desmethylvenlafaxine,NR,NR,2.61,ratio
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,1,infant dose as % maternal dose (V equivalents),venlafaxine,NR,NR,5.9,%
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,1,infant plasma concentration,venlafaxine,NR,NR,5,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,1,infant dose as % maternal dose (V equivalents),O-desmethylvenlafaxine,NR,NR,1.5,%
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,1,infant plasma concentration,O-desmethylvenlafaxine,NR,NR,<2.5,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,1,total infant dose (V equivalents),venlafaxine equivalents,NR,NR,7.4,%
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,2a,milk Cmax,venlafaxine,1.67,hour,1096,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,2a,milk Caverage,venlafaxine,NR,NR,704,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,2a,milk/plasma ratio,venlafaxine,NR,NR,2.05,ratio
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,2a,milk Cmax,O-desmethylvenlafaxine,3.67,hour,561,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,2a,milk Caverage,O-desmethylvenlafaxine,NR,NR,477,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,2a,milk/plasma ratio,O-desmethylvenlafaxine,NR,NR,2.26,ratio
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,2a,infant dose as % maternal dose (V equivalents),venlafaxine,NR,NR,3.8,%
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,2a,infant plasma concentration,venlafaxine,NR,NR,<4,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,2a,infant dose as % maternal dose (V equivalents),O-desmethylvenlafaxine,NR,NR,2.7,%
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,2a,infant plasma concentration,O-desmethylvenlafaxine,NR,NR,<3,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,2a,total infant dose (V equivalents),venlafaxine equivalents,NR,NR,6.5,%
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,2b,milk Cmax,venlafaxine,1.67,hour,1096,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,2b,milk Caverage,venlafaxine,NR,NR,704,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,2b,milk/plasma ratio,venlafaxine,NR,NR,2.05,ratio
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,2b,milk Cmax,O-desmethylvenlafaxine,3.67,hour,561,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,2b,milk Caverage,O-desmethylvenlafaxine,NR,NR,477,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,2b,milk/plasma ratio,O-desmethylvenlafaxine,NR,NR,2.26,ratio
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,2b,infant dose as % maternal dose (V equivalents),venlafaxine,NR,NR,3.8,%
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,2b,infant plasma concentration,venlafaxine,NR,NR,<4,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,2b,infant dose as % maternal dose (V equivalents),O-desmethylvenlafaxine,NR,NR,2.7,%
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,2b,infant plasma concentration,O-desmethylvenlafaxine,NR,NR,<3,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,2b,total infant dose (V equivalents),venlafaxine equivalents,NR,NR,6.5,%
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,3,milk Cmax,venlafaxine,2.25,hour,712,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,3,milk Caverage,venlafaxine,NR,NR,388,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,3,milk/plasma ratio,venlafaxine,NR,NR,2.34,ratio
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,3,milk Cmax,O-desmethylvenlafaxine,2.25,hour,1120,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,3,milk Caverage,O-desmethylvenlafaxine,NR,NR,925,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,3,milk/plasma ratio,O-desmethylvenlafaxine,NR,NR,2.75,ratio
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,3,infant dose as % maternal dose (V equivalents),venlafaxine,NR,NR,2.1,%
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,3,infant plasma concentration,venlafaxine,NR,NR,<3,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,3,infant dose as % maternal dose (V equivalents),O-desmethylvenlafaxine,NR,NR,5.2,%
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,3,infant plasma concentration,O-desmethylvenlafaxine,NR,NR,6.0,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,3,total infant dose (V equivalents),venlafaxine equivalents,NR,NR,7.3,%
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,4,milk Cmax,venlafaxine,2.25,hour,1230,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,4,milk Caverage,venlafaxine,NR,NR,597,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,4,milk/plasma ratio,venlafaxine,NR,NR,2.04,ratio
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,4,milk Cmax,O-desmethylvenlafaxine,2.25,hour,1010,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,4,milk Caverage,O-desmethylvenlafaxine,NR,NR,651,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,4,milk/plasma ratio,O-desmethylvenlafaxine,NR,NR,2.50,ratio
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,4,infant dose as % maternal dose (V equivalents),venlafaxine,NR,NR,2.7,%
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,4,infant plasma concentration,venlafaxine,NR,NR,<2,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,4,infant dose as % maternal dose (V equivalents),O-desmethylvenlafaxine,NR,NR,3.1,%
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,4,infant plasma concentration,O-desmethylvenlafaxine,NR,NR,38.0,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,4,total infant dose (V equivalents),venlafaxine equivalents,NR,NR,5.8,%
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,5,milk Cmax,venlafaxine,2.28,hour,1429,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,5,milk Caverage,venlafaxine,NR,NR,597,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,5,milk/plasma ratio,venlafaxine,NR,NR,2.95,ratio
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,5,milk Cmax,O-desmethylvenlafaxine,4.20,hour,1336,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,5,milk Caverage,O-desmethylvenlafaxine,NR,NR,815,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,5,milk/plasma ratio,O-desmethylvenlafaxine,NR,NR,3.08,ratio
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,5,infant dose as % maternal dose (V equivalents),venlafaxine,NR,NR,2.5,%
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,5,infant plasma concentration,venlafaxine,NR,NR,ND,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,5,infant dose as % maternal dose (V equivalents),O-desmethylvenlafaxine,NR,NR,3.5,%
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,5,infant plasma concentration,O-desmethylvenlafaxine,NR,NR,20.0,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,5,total infant dose (V equivalents),venlafaxine equivalents,NR,NR,6.0,%
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,6,milk Cmax,venlafaxine,5.67,hour,477,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,6,milk Caverage,venlafaxine,NR,NR,354,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,6,milk/plasma ratio,venlafaxine,NR,NR,3.22,ratio
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,6,milk Cmax,O-desmethylvenlafaxine,7.67,hour,413,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,6,milk Caverage,O-desmethylvenlafaxine,NR,NR,502,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,6,milk/plasma ratio,O-desmethylvenlafaxine,NR,NR,3.24,ratio
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,6,infant dose as % maternal dose (V equivalents),venlafaxine,NR,NR,2.1,%
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,6,infant plasma concentration,venlafaxine,NR,NR,ND,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,6,infant dose as % maternal dose (V equivalents),O-desmethylvenlafaxine,NR,NR,3.1,%
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,6,infant plasma concentration,O-desmethylvenlafaxine,NR,NR,3.0,ug/L
+breastfeeding women,postpartum,NR,breast milk|infant plasma,venlafaxine,6,total infant dose (V equivalents),venlafaxine equivalents,NR,NR,5.2,%

@@ -1,0 +1,31 @@
+Population,Pregnancy stage,Pediatric/Gestational age,Specimen,Drug name,Patient ID,Parameter type,Analyte,Time value,Time unit,Parameter value,Parameter unit
+pregnant women,third trimester,40+1 weeks,maternal serum|cord blood|placenta,infliximab,1,maternal concentration,infliximab,NR,NR,25.3,ug/mL
+pregnant women,third trimester,40+1 weeks,maternal serum|cord blood|placenta,infliximab,1,cord concentration,infliximab,NR,NR,29.8,ug/mL
+pregnant women,third trimester,40+1 weeks,maternal serum|cord blood|placenta,infliximab,1,placenta concentration,infliximab,NR,NR,5.8,ug/g tissue
+pregnant women,third trimester,40+1 weeks,maternal serum|cord blood|placenta,infliximab,1,cord-to-maternal ratio,infliximab,NR,NR,1.18,ratio
+pregnant women,third trimester,40+1 weeks,maternal serum|cord blood|placenta,infliximab,1,placenta-to-maternal ratio,infliximab,NR,NR,0.35,ratio
+pregnant women,third trimester,41+6 weeks,maternal serum|cord blood|placenta,infliximab,2,maternal concentration,infliximab,NR,NR,12.0,ug/mL
+pregnant women,third trimester,41+6 weeks,maternal serum|cord blood|placenta,infliximab,2,cord concentration,infliximab,NR,NR,24.0,ug/mL
+pregnant women,third trimester,41+6 weeks,maternal serum|cord blood|placenta,infliximab,2,placenta concentration,infliximab,NR,NR,1.8,ug/g tissue
+pregnant women,third trimester,41+6 weeks,maternal serum|cord blood|placenta,infliximab,2,cord-to-maternal ratio,infliximab,NR,NR,2.00,ratio
+pregnant women,third trimester,41+6 weeks,maternal serum|cord blood|placenta,infliximab,2,placenta-to-maternal ratio,infliximab,NR,NR,0.23,ratio
+pregnant women,third trimester,38+6 weeks,maternal serum|cord blood|placenta,infliximab,3,maternal concentration,infliximab,NR,NR,17.0,ug/mL
+pregnant women,third trimester,38+6 weeks,maternal serum|cord blood|placenta,infliximab,3,cord concentration,infliximab,NR,NR,29.0,ug/mL
+pregnant women,third trimester,38+6 weeks,maternal serum|cord blood|placenta,infliximab,3,placenta concentration,infliximab,NR,NR,4.8,ug/g tissue
+pregnant women,third trimester,38+6 weeks,maternal serum|cord blood|placenta,infliximab,3,cord-to-maternal ratio,infliximab,NR,NR,1.71,ratio
+pregnant women,third trimester,38+6 weeks,maternal serum|cord blood|placenta,infliximab,3,placenta-to-maternal ratio,infliximab,NR,NR,0.44,ratio
+pregnant women,third trimester,38+5 weeks,maternal serum|cord blood|placenta,etanercept,4,maternal concentration,etanercept,NR,NR,3.0,ug/mL
+pregnant women,third trimester,38+5 weeks,maternal serum|cord blood|placenta,etanercept,4,cord concentration,etanercept,NR,NR,0.1,ug/mL
+pregnant women,third trimester,38+5 weeks,maternal serum|cord blood|placenta,etanercept,4,placenta concentration,etanercept,NR,NR,0.1,ug/g tissue
+pregnant women,third trimester,38+5 weeks,maternal serum|cord blood|placenta,etanercept,4,cord-to-maternal ratio,etanercept,NR,NR,0.04,ratio
+pregnant women,third trimester,38+5 weeks,maternal serum|cord blood|placenta,etanercept,4,placenta-to-maternal ratio,etanercept,NR,NR,0.03,ratio
+pregnant women,third trimester,40+6 weeks,maternal serum|cord blood|placenta,etanercept,5,maternal concentration,etanercept,NR,NR,<0.1,ug/mL
+pregnant women,third trimester,40+6 weeks,maternal serum|cord blood|placenta,etanercept,5,cord concentration,etanercept,NR,NR,<0.1,ug/mL
+pregnant women,third trimester,40+6 weeks,maternal serum|cord blood|placenta,etanercept,5,placenta concentration,etanercept,NR,NR,<0.1,ug/g tissue
+pregnant women,third trimester,40+6 weeks,maternal serum|cord blood|placenta,etanercept,5,cord-to-maternal ratio,etanercept,NR,NR,NA,ratio
+pregnant women,third trimester,40+6 weeks,maternal serum|cord blood|placenta,etanercept,5,placenta-to-maternal ratio,etanercept,NR,NR,NA,ratio
+pregnant women,third trimester,39+1 weeks,maternal serum|cord blood|placenta,etanercept,6,maternal concentration,etanercept,NR,NR,0.2,ug/mL
+pregnant women,third trimester,39+1 weeks,maternal serum|cord blood|placenta,etanercept,6,cord concentration,etanercept,NR,NR,NA,ug/mL
+pregnant women,third trimester,39+1 weeks,maternal serum|cord blood|placenta,etanercept,6,placenta concentration,etanercept,NR,NR,<0.1,ug/g tissue
+pregnant women,third trimester,39+1 weeks,maternal serum|cord blood|placenta,etanercept,6,cord-to-maternal ratio,etanercept,NR,NR,NA,ratio
+pregnant women,third trimester,39+1 weeks,maternal serum|cord blood|placenta,etanercept,6,placenta-to-maternal ratio,etanercept,NR,NR,NA,ratio

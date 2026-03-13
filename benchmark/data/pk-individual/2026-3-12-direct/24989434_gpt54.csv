@@ -1,0 +1,85 @@
+Population,Pregnancy stage,Pediatric/Gestational age,Specimen,Drug name,Patient ID,Parameter type,Analyte,Time value,Time unit,Parameter value,Parameter unit
+pregnant women,first_trimester,0-13 weeks,plasma,venlafaxine,1,concentration,venlafaxine,first_trimester,NA,25,ug/L
+pregnant women,first_trimester,0-13 weeks,plasma,venlafaxine,1,concentration,O-desmethylvenlafaxine,first_trimester,NA,70,ug/L
+pregnant women,first_trimester,0-13 weeks,plasma,venlafaxine,1,metabolic_ratio,ODV/V,first_trimester,NA,2.80,ratio
+pregnant women,second_trimester,14-27 weeks,plasma,venlafaxine,1,concentration,venlafaxine,second_trimester,NA,66,ug/L
+pregnant women,second_trimester,14-27 weeks,plasma,venlafaxine,1,concentration,O-desmethylvenlafaxine,second_trimester,NA,76,ug/L
+pregnant women,second_trimester,14-27 weeks,plasma,venlafaxine,1,metabolic_ratio,ODV/V,second_trimester,NA,1.15,ratio
+pregnant women,third_trimester,>28 weeks,plasma,venlafaxine,1,concentration,venlafaxine,third_trimester,NA,25,ug/L
+pregnant women,third_trimester,>28 weeks,plasma,venlafaxine,1,concentration,O-desmethylvenlafaxine,third_trimester,NA,100,ug/L
+pregnant women,third_trimester,>28 weeks,plasma,venlafaxine,1,metabolic_ratio,ODV/V,third_trimester,NA,4.00,ratio
+pregnant women,postpartum,NA,plasma,venlafaxine,1,concentration,venlafaxine,postpartum,NA,25,ug/L
+pregnant women,postpartum,NA,plasma,venlafaxine,1,concentration,O-desmethylvenlafaxine,postpartum,NA,120,ug/L
+pregnant women,postpartum,NA,plasma,venlafaxine,1,metabolic_ratio,ODV/V,postpartum,NA,4.80,ratio
+pregnant women,first_trimester,0-13 weeks,plasma,venlafaxine,2,concentration,venlafaxine,first_trimester,NA,91,ug/L
+pregnant women,first_trimester,0-13 weeks,plasma,venlafaxine,2,concentration,O-desmethylvenlafaxine,first_trimester,NA,110,ug/L
+pregnant women,first_trimester,0-13 weeks,plasma,venlafaxine,2,metabolic_ratio,ODV/V,first_trimester,NA,1.21,ratio
+pregnant women,second_trimester,14-27 weeks,plasma,venlafaxine,2,concentration,venlafaxine,second_trimester,NA,61,ug/L
+pregnant women,second_trimester,14-27 weeks,plasma,venlafaxine,2,concentration,O-desmethylvenlafaxine,second_trimester,NA,100,ug/L
+pregnant women,second_trimester,14-27 weeks,plasma,venlafaxine,2,metabolic_ratio,ODV/V,second_trimester,NA,1.64,ratio
+pregnant women,third_trimester,>28 weeks,plasma,venlafaxine,2,concentration,venlafaxine,third_trimester,NA,25,ug/L
+pregnant women,third_trimester,>28 weeks,plasma,venlafaxine,2,concentration,O-desmethylvenlafaxine,third_trimester,NA,80,ug/L
+pregnant women,third_trimester,>28 weeks,plasma,venlafaxine,2,metabolic_ratio,ODV/V,third_trimester,NA,3.20,ratio
+pregnant women,postpartum,NA,plasma,venlafaxine,2,concentration,venlafaxine,postpartum,NA,92,ug/L
+pregnant women,postpartum,NA,plasma,venlafaxine,2,concentration,O-desmethylvenlafaxine,postpartum,NA,130,ug/L
+pregnant women,postpartum,NA,plasma,venlafaxine,2,metabolic_ratio,ODV/V,postpartum,NA,1.41,ratio
+pregnant women,first_trimester,0-13 weeks,plasma,venlafaxine,3,concentration,venlafaxine,first_trimester,NA,57,ug/L
+pregnant women,first_trimester,0-13 weeks,plasma,venlafaxine,3,concentration,O-desmethylvenlafaxine,first_trimester,NA,25,ug/L
+pregnant women,first_trimester,0-13 weeks,plasma,venlafaxine,3,metabolic_ratio,ODV/V,first_trimester,NA,0.44,ratio
+pregnant women,second_trimester,14-27 weeks,plasma,venlafaxine,3,concentration,venlafaxine,second_trimester,NA,79,ug/L
+pregnant women,second_trimester,14-27 weeks,plasma,venlafaxine,3,concentration,O-desmethylvenlafaxine,second_trimester,NA,67,ug/L
+pregnant women,second_trimester,14-27 weeks,plasma,venlafaxine,3,metabolic_ratio,ODV/V,second_trimester,NA,0.85,ratio
+pregnant women,third_trimester,>28 weeks,plasma,venlafaxine,3,concentration,venlafaxine,third_trimester,NA,25,ug/L
+pregnant women,third_trimester,>28 weeks,plasma,venlafaxine,3,concentration,O-desmethylvenlafaxine,third_trimester,NA,61,ug/L
+pregnant women,third_trimester,>28 weeks,plasma,venlafaxine,3,metabolic_ratio,ODV/V,third_trimester,NA,2.44,ratio
+pregnant women,postpartum,NA,plasma,venlafaxine,3,concentration,venlafaxine,postpartum,NA,170,ug/L
+pregnant women,postpartum,NA,plasma,venlafaxine,3,concentration,O-desmethylvenlafaxine,postpartum,NA,97,ug/L
+pregnant women,postpartum,NA,plasma,venlafaxine,3,metabolic_ratio,ODV/V,postpartum,NA,0.57,ratio
+pregnant women,first_trimester,0-13 weeks,plasma,venlafaxine,4,concentration,venlafaxine,first_trimester,NA,25,ug/L
+pregnant women,first_trimester,0-13 weeks,plasma,venlafaxine,4,concentration,O-desmethylvenlafaxine,first_trimester,NA,25,ug/L
+pregnant women,first_trimester,0-13 weeks,plasma,venlafaxine,4,metabolic_ratio,ODV/V,first_trimester,NA,1.00,ratio
+pregnant women,second_trimester,14-27 weeks,plasma,venlafaxine,4,concentration,venlafaxine,second_trimester,NA,25,ug/L
+pregnant women,second_trimester,14-27 weeks,plasma,venlafaxine,4,concentration,O-desmethylvenlafaxine,second_trimester,NA,51,ug/L
+pregnant women,second_trimester,14-27 weeks,plasma,venlafaxine,4,metabolic_ratio,ODV/V,second_trimester,NA,2.04,ratio
+pregnant women,third_trimester,>28 weeks,plasma,venlafaxine,4,concentration,venlafaxine,third_trimester,NA,25,ug/L
+pregnant women,third_trimester,>28 weeks,plasma,venlafaxine,4,concentration,O-desmethylvenlafaxine,third_trimester,NA,74,ug/L
+pregnant women,third_trimester,>28 weeks,plasma,venlafaxine,4,metabolic_ratio,ODV/V,third_trimester,NA,2.96,ratio
+pregnant women,postpartum,NA,plasma,venlafaxine,4,concentration,venlafaxine,postpartum,NA,87,ug/L
+pregnant women,postpartum,NA,plasma,venlafaxine,4,concentration,O-desmethylvenlafaxine,postpartum,NA,210,ug/L
+pregnant women,postpartum,NA,plasma,venlafaxine,4,metabolic_ratio,ODV/V,postpartum,NA,2.41,ratio
+pregnant women,first_trimester,0-13 weeks,plasma,venlafaxine,5,concentration,venlafaxine,first_trimester,NA,73,ug/L
+pregnant women,first_trimester,0-13 weeks,plasma,venlafaxine,5,concentration,O-desmethylvenlafaxine,first_trimester,NA,220,ug/L
+pregnant women,first_trimester,0-13 weeks,plasma,venlafaxine,5,metabolic_ratio,ODV/V,first_trimester,NA,3.01,ratio
+pregnant women,second_trimester,14-27 weeks,plasma,venlafaxine,5,concentration,venlafaxine,second_trimester,NA,25,ug/L
+pregnant women,second_trimester,14-27 weeks,plasma,venlafaxine,5,concentration,O-desmethylvenlafaxine,second_trimester,NA,190,ug/L
+pregnant women,second_trimester,14-27 weeks,plasma,venlafaxine,5,metabolic_ratio,ODV/V,second_trimester,NA,7.60,ratio
+pregnant women,third_trimester,>28 weeks,plasma,venlafaxine,5,concentration,venlafaxine,third_trimester,NA,25,ug/L
+pregnant women,third_trimester,>28 weeks,plasma,venlafaxine,5,concentration,O-desmethylvenlafaxine,third_trimester,NA,200,ug/L
+pregnant women,third_trimester,>28 weeks,plasma,venlafaxine,5,metabolic_ratio,ODV/V,third_trimester,NA,8.00,ratio
+pregnant women,postpartum,NA,plasma,venlafaxine,5,concentration,venlafaxine,postpartum,NA,25,ug/L
+pregnant women,postpartum,NA,plasma,venlafaxine,5,concentration,O-desmethylvenlafaxine,postpartum,NA,230,ug/L
+pregnant women,postpartum,NA,plasma,venlafaxine,5,metabolic_ratio,ODV/V,postpartum,NA,9.20,ratio
+pregnant women,first_trimester,0-13 weeks,plasma,venlafaxine,6,concentration,venlafaxine,first_trimester,NA,450,ug/L
+pregnant women,first_trimester,0-13 weeks,plasma,venlafaxine,6,concentration,O-desmethylvenlafaxine,first_trimester,NA,690,ug/L
+pregnant women,first_trimester,0-13 weeks,plasma,venlafaxine,6,metabolic_ratio,ODV/V,first_trimester,NA,1.53,ratio
+pregnant women,second_trimester,14-27 weeks,plasma,venlafaxine,6,concentration,venlafaxine,second_trimester,NA,270,ug/L
+pregnant women,second_trimester,14-27 weeks,plasma,venlafaxine,6,concentration,O-desmethylvenlafaxine,second_trimester,NA,630,ug/L
+pregnant women,second_trimester,14-27 weeks,plasma,venlafaxine,6,metabolic_ratio,ODV/V,second_trimester,NA,2.33,ratio
+pregnant women,third_trimester,>28 weeks,plasma,venlafaxine,6,concentration,venlafaxine,third_trimester,NA,190,ug/L
+pregnant women,third_trimester,>28 weeks,plasma,venlafaxine,6,concentration,O-desmethylvenlafaxine,third_trimester,NA,630,ug/L
+pregnant women,third_trimester,>28 weeks,plasma,venlafaxine,6,metabolic_ratio,ODV/V,third_trimester,NA,3.32,ratio
+pregnant women,postpartum,NA,plasma,venlafaxine,6,concentration,venlafaxine,postpartum,NA,220,ug/L
+pregnant women,postpartum,NA,plasma,venlafaxine,6,concentration,O-desmethylvenlafaxine,postpartum,NA,290,ug/L
+pregnant women,postpartum,NA,plasma,venlafaxine,6,metabolic_ratio,ODV/V,postpartum,NA,1.32,ratio
+pregnant women,first_trimester,0-13 weeks,plasma,venlafaxine,7,concentration,venlafaxine,first_trimester,NA,65,ug/L
+pregnant women,first_trimester,0-13 weeks,plasma,venlafaxine,7,concentration,O-desmethylvenlafaxine,first_trimester,NA,200,ug/L
+pregnant women,first_trimester,0-13 weeks,plasma,venlafaxine,7,metabolic_ratio,ODV/V,first_trimester,NA,3.08,ratio
+pregnant women,second_trimester,14-27 weeks,plasma,venlafaxine,7,concentration,venlafaxine,second_trimester,NA,120,ug/L
+pregnant women,second_trimester,14-27 weeks,plasma,venlafaxine,7,concentration,O-desmethylvenlafaxine,second_trimester,NA,350,ug/L
+pregnant women,second_trimester,14-27 weeks,plasma,venlafaxine,7,metabolic_ratio,ODV/V,second_trimester,NA,2.92,ratio
+pregnant women,third_trimester,>28 weeks,plasma,venlafaxine,7,concentration,venlafaxine,third_trimester,NA,61,ug/L
+pregnant women,third_trimester,>28 weeks,plasma,venlafaxine,7,concentration,O-desmethylvenlafaxine,third_trimester,NA,260,ug/L
+pregnant women,third_trimester,>28 weeks,plasma,venlafaxine,7,metabolic_ratio,ODV/V,third_trimester,NA,4.26,ratio
+pregnant women,postpartum,NA,plasma,venlafaxine,7,concentration,venlafaxine,postpartum,NA,120,ug/L
+pregnant women,postpartum,NA,plasma,venlafaxine,7,concentration,O-desmethylvenlafaxine,postpartum,NA,260,ug/L
+pregnant women,postpartum,NA,plasma,venlafaxine,7,metabolic_ratio,ODV/V,postpartum,NA,2.17,ration
