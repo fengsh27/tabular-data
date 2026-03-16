@@ -46,6 +46,9 @@ PK_SUMMARY_COLUMNS_MAP = [
     ("Parameter value", "Value"),
     ("Lower bound", "Lower limit"),
     ("Upper bound", "High limit"),
+    ("interval low", "Lower limit"),
+    ("interval high", "High limit"),
+    ("summary static", "Summary statistics")
 ]
 
 # ==============================================================

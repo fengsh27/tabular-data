@@ -31,17 +31,17 @@ The files in target directory should adhere to the following naming convention:
 """
 
 baseline = os.environ.get("BASELINE", BASELINE)
-target = "2024-10-16" # "2024-10-16" # os.environ.get("TARGET", "yichuan/0213_prompt_chain")
+target = os.environ.get("TARGET", "yichuan/0213_prompt_chain")
 baseline_dir = os.path.join("./benchmark/data/pk-summary", baseline)
 target_dir = os.path.join("./benchmark/data/pk-summary", target)
 score_mode = os.environ.get("SCORE_MODE", "combined")
 
 specified_pmids = [
     # "16143486", 
-    "22050870",
+    # "22050870",
     # "34183327",
     # "35465728",
-    # "30950674",
+    "30950674",
     # "17635501",
     # "34183327",
 ]
@@ -88,6 +88,21 @@ def test_gemini_benchmark(prepared_dataset):
         dataset=prepared_dataset,
         benchmark_type=BenchmarkType.PK_SUMMARY,
         model=LLModelType.GEMINI15,
+        result_file=result_path,
+        score_mode=score_mode,
+    )
+
+def test_gpt54_benchmark(prepared_dataset):
+    result_dir = ensure_target_result_directory_existed(
+        baseline=baseline,
+        target=target,
+        benchmark_type=BenchmarkType.PK_SUMMARY,
+    )
+    result_path = os.path.join(result_dir, "result.log")
+    run_semantic_benchmark(
+        dataset=prepared_dataset,
+        benchmark_type=BenchmarkType.PK_SUMMARY,
+        model=LLModelType.GPT54,
         result_file=result_path,
         score_mode=score_mode,
     )
