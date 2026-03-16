@@ -1,35 +1,35 @@
 ﻿,Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
-0,1,Infliximab,Infliximab,Mom,Maternal,Postpartum,N/A,IFX (μg/ml) at Birth - Mom:,μg/ml,40 (6 wks),N/A,N/A
-1,2,Infliximab,Infliximab,Mom,Maternal,N/A,N/A,IFX (μg/ml) at Birth - Mom:,μg/ml,15.1,N/A,N/A
-2,3,Infliximab,Infliximab,Mom,Maternal,Postpartum,N/A,IFX (μg/ml) at Birth - Mom:,μg/ml,1.4,N/A,N/A
-3,4,Infliximab,Infliximab,Mom,Maternal,Postpartum,N/A,IFX (μg/ml) at Birth - Mom:,μg/ml,19.2,N/A,N/A
-4,5,Infliximab,Infliximab,Mom,Maternal,N/A,N/A,IFX (μg/ml) at Birth - Mom:,μg/ml,3.8,N/A,N/A
-5,6,Infliximab,Infliximab,Mom,Maternal,N/A,N/A,IFX (μg/ml) at Birth - Mom:,μg/ml,4.8,N/A,N/A
-6,7,Infliximab,Infliximab,Mom,Maternal,N/A,N/A,IFX (μg/ml) at Birth - Mom:,μg/ml,14.5,N/A,N/A
-7,8,Infliximab,Infliximab,Mom,Maternal,N/A,N/A,IFX (μg/ml) at Birth - Mom:,μg/ml,16.5,N/A,N/A
-8,9,Infliximab,Infliximab,Mom,Maternal,N/A,N/A,IFX (μg/ml) at Birth - Mom:,μg/ml,2.2,N/A,N/A
-9,10,Infliximab,Infliximab,Mom,Maternal,N/A,N/A,IFX (μg/ml) at Birth - Mom:,μg/ml,4.1,N/A,N/A
-10,11,Infliximab,Infliximab,Mom,Maternal,Trimester 3,N/A,IFX (μg/ml) at Birth - Mom:,μg/ml,5.1,N/A,N/A
-11,3,Infliximab,Infliximab,Cord,Newborns,Postpartum,N/A,IFX (μg/ml) at Birth - Cord:,μg/ml,2.0,N/A,N/A
-12,4,Infliximab,Infliximab,Cord,Newborns,Postpartum,N/A,IFX (μg/ml) at Birth - Cord:,μg/ml,26.5,N/A,N/A
-13,5,Infliximab,Infliximab,Cord,Newborns,N/A,N/A,IFX (μg/ml) at Birth - Cord:,μg/ml,3.3,N/A,N/A
-14,6,Infliximab,Infliximab,Cord,Newborns,N/A,N/A,IFX (μg/ml) at Birth - Cord:,μg/ml,8.8,N/A,N/A
-15,7,Infliximab,Infliximab,Cord,Newborns,N/A,N/A,IFX (μg/ml) at Birth - Cord:,μg/ml,20.5,N/A,N/A
-16,8,Infliximab,Infliximab,Cord,Newborns,N/A,N/A,IFX (μg/ml) at Birth - Cord:,μg/ml,26.5,N/A,N/A
-17,9,Infliximab,Infliximab,Cord,Newborns,N/A,N/A,IFX (μg/ml) at Birth - Cord:,μg/ml,8.4,N/A,N/A
-18,10,Infliximab,Infliximab,Cord,Newborns,N/A,N/A,IFX (μg/ml) at Birth - Cord:,μg/ml,13.6,N/A,N/A
-19,11,Infliximab,Infliximab,Cord,Newborns,Trimester 3,N/A,IFX (μg/ml) at Birth - Cord:,μg/ml,20.4,N/A,N/A
-20,1,Infliximab,Infliximab,Infant,Newborns,Postpartum,N/A,IFX (μg/ml) at Birth - Infant,μg/ml,39.5* (6 wks),N/A,N/A
-21,2,Infliximab,Infliximab,Infant,Newborns,N/A,N/A,IFX (μg/ml) at Birth - Infant,μg/ml,25.3,N/A,N/A
-22,3,Infliximab,Infliximab,Infant,Newborns,Postpartum,N/A,IFX (μg/ml) at Birth - Infant,μg/ml,2.9* (2 wks),N/A,N/A
-23,4,Infliximab,Infliximab,Infant,Newborns,Postpartum,N/A,IFX (μg/ml) at Birth - Infant,μg/ml,23.6,N/A,N/A
-24,5,Infliximab,Infliximab,Infant,Newborns,N/A,N/A,IFX (μg/ml) at Birth - Infant,μg/ml,4.2,N/A,N/A
-25,6,Infliximab,Infliximab,Infant,Newborns,N/A,N/A,IFX (μg/ml) at Birth - Infant,μg/ml,8.7,N/A,N/A
-26,7,Infliximab,Infliximab,Infant,Newborns,N/A,N/A,IFX (μg/ml) at Birth - Infant,μg/ml,28.2,N/A,N/A
-27,8,Infliximab,Infliximab,Infant,Newborns,N/A,N/A,IFX (μg/ml) at Birth - Infant,μg/ml,27.5,N/A,N/A
-28,9,Infliximab,Infliximab,Infant,Newborns,N/A,N/A,IFX (μg/ml) at Birth - Infant,μg/ml,10.6,N/A,N/A
-29,10,Infliximab,Infliximab,Infant,Newborns,N/A,N/A,IFX (μg/ml) at Birth - Infant,μg/ml,4.7* (4 wks),N/A,N/A
-30,11,Infliximab,Infliximab,Infant,Newborns,Trimester 3,N/A,IFX (μg/ml) at Birth - Infant,μg/ml,8.4* (4 wks),N/A,N/A
+0,1,Infliximab,Infliximab,Mom,Maternal,Postpartum,N/A,Concentration,μg/ml,40 (6 wks),N/A,N/A
+1,2,Infliximab,Infliximab,Mom,Maternal,N/A,N/A,concentration,μg/ml,15.1,N/A,N/A
+2,3,Infliximab,Infliximab,Mom,Maternal,Postpartum,N/A,concentration,μg/ml,1.4,N/A,N/A
+3,4,Infliximab,Infliximab,Mom,Maternal,Postpartum,N/A,concentration,μg/ml,19.2,N/A,N/A
+4,5,Infliximab,Infliximab,Mom,Maternal,N/A,N/A,concentration,μg/ml,3.8,N/A,N/A
+5,6,Infliximab,Infliximab,Mom,Maternal,N/A,N/A,concentration,μg/ml,4.8,N/A,N/A
+6,7,Infliximab,Infliximab,Mom,Maternal,N/A,N/A,concentration,μg/ml,14.5,N/A,N/A
+7,8,Infliximab,Infliximab,Mom,Maternal,N/A,N/A,concentration,μg/ml,16.5,N/A,N/A
+8,9,Infliximab,Infliximab,Mom,Maternal,N/A,N/A,Concentration,μg/ml,2.2,N/A,N/A
+9,10,Infliximab,Infliximab,Mom,Maternal,N/A,N/A,concentration,μg/ml,4.1,N/A,N/A
+10,11,Infliximab,Infliximab,Mom,Maternal,Trimester 3,N/A,concentration,μg/ml,5.1,N/A,N/A
+11,3,Infliximab,Infliximab,Cord,Newborns,Postpartum,N/A,concentration,μg/ml,2,N/A,N/A
+12,4,Infliximab,Infliximab,Cord,Newborns,Postpartum,N/A,concentration,μg/ml,26.5,N/A,N/A
+13,5,Infliximab,Infliximab,Cord,Newborns,N/A,N/A,concentration,μg/ml,3.3,N/A,N/A
+14,6,Infliximab,Infliximab,Cord,Newborns,N/A,N/A,concentration,μg/ml,8.8,N/A,N/A
+15,7,Infliximab,Infliximab,Cord,Newborns,N/A,N/A,concentration,μg/ml,20.5,N/A,N/A
+16,8,Infliximab,Infliximab,Cord,Newborns,N/A,N/A,Concentration,μg/ml,26.5,N/A,N/A
+17,9,Infliximab,Infliximab,Cord,Newborns,N/A,N/A,concentration,μg/ml,8.4,N/A,N/A
+18,10,Infliximab,Infliximab,Cord,Newborns,N/A,N/A,concentration,μg/ml,13.6,N/A,N/A
+19,11,Infliximab,Infliximab,Cord,Newborns,Trimester 3,N/A,concentration,μg/ml,20.4,N/A,N/A
+20,1,Infliximab,Infliximab,Infant,Newborns,Postpartum,N/A,concentration,μg/ml,39.5* (6 wks),N/A,N/A
+21,2,Infliximab,Infliximab,Infant,Newborns,N/A,N/A,concentration,μg/ml,25.3,N/A,N/A
+22,3,Infliximab,Infliximab,Infant,Newborns,Postpartum,N/A,concentration,μg/ml,2.9* (2 wks),N/A,N/A
+23,4,Infliximab,Infliximab,Infant,Newborns,Postpartum,N/A,concentration,μg/ml,23.6,N/A,N/A
+24,5,Infliximab,Infliximab,Infant,Newborns,N/A,N/A,concentration,μg/ml,4.2,N/A,N/A
+25,6,Infliximab,Infliximab,Infant,Newborns,N/A,N/A,concentration,μg/ml,8.7,N/A,N/A
+26,7,Infliximab,Infliximab,Infant,Newborns,N/A,N/A,concentration,μg/ml,28.2,N/A,N/A
+27,8,Infliximab,Infliximab,Infant,Newborns,N/A,N/A,concentration,μg/ml,27.5,N/A,N/A
+28,9,Infliximab,Infliximab,Infant,Newborns,N/A,N/A,concentration,μg/ml,10.6,N/A,N/A
+29,10,Infliximab,Infliximab,Infant,Newborns,N/A,N/A,concentration,μg/ml,4.7* (4 wks),N/A,N/A
+30,11,Infliximab,Infliximab,Infant,Newborns,Trimester 3,N/A,concentration,μg/ml,8.4* (4 wks),N/A,N/A
 31,3,Infliximab,Infliximab,Cord,Newborns,Postpartum,N/A,Ratio cord/Mother (%),%,143%,2,Day
 32,4,Infliximab,Infliximab,Cord,Newborns,Postpartum,N/A,Ratio cord/Mother (%),%,138%,14,Day
 33,5,Infliximab,Infliximab,Cord,Newborns,N/A,N/A,Ratio cord/Mother (%),%,87%,91,Day
@@ -42,7 +42,7 @@
 40,1,Adalimumab,Adalimumab,Mom,Maternal,Trimester 3,N/A,ADA(μg/ml) at Birth - Mom:,μg/ml,6.05,7,Day
 41,2,Adalimumab,Adalimumab,Mom,Maternal,Postpartum,N/A,ADA(μg/ml) at Birth - Mom:,μg/ml,1.8399999999999999,56,Day
 42,3,Adalimumab,Adalimumab,Mom,Maternal,Trimester 3,N/A,ADA(μg/ml) at Birth - Mom:,μg/ml,3.84,7,Day
-43,4,Adalimumab,Adalimumab,Mom,Maternal,Trimester 3,N/A,ADA(μg/ml) at Birth - Mom:,μg/ml,0.0,42,Day
+43,4,Adalimumab,Adalimumab,Mom,Maternal,Trimester 3,N/A,ADA(μg/ml) at Birth - Mom:,μg/ml,0,42,Day
 44,5,Adalimumab,Adalimumab,Mom,Maternal,Trimester 3,N/A,ADA(μg/ml) at Birth - Mom:,μg/ml,2.2,35,Day
 45,6,Adalimumab,Adalimumab,Mom,Maternal,Trimester 3,N/A,ADA(μg/ml) at Birth - Mom:,μg/ml,3.21,42,Day
 46,7,Adalimumab,Adalimumab,Mom,Maternal,Postpartum,N/A,ADA(μg/ml) at Birth - Mom:,μg/ml,3.36,42,Day
@@ -110,18 +110,18 @@
 108,09-A,Certolizumab pegol,Certolizumab pegol,Infant,Newborns,Delivery,N/A,Day of Birth CZP concentrations (μg/ml) - Lower limit of Quantification <0.41 - Infant,μg/ml,1.34,6,Day
 109,B,Certolizumab pegol,Certolizumab pegol,Infant,Newborns,Delivery,N/A,Day of Birth CZP concentrations (μg/ml) - Lower limit of Quantification <0.41 - Infant,μg/ml,1.18,N/A,N/A
 110,10,Certolizumab pegol,Certolizumab pegol,Infant,Newborns,Delivery,N/A,Day of Birth CZP concentrations (μg/ml) - Lower limit of Quantification <0.41 - Infant,μg/ml,0.6,5,Day
-111,01,Certolizumab pegol,Certolizumab pegol,Cord,Newborns,Delivery,N/A,Ratio Cord/Mother - Unnamed: 5_level_1 - Unnamed: 5_level_2,%,8.8%,14,Day
-112,02,Certolizumab pegol,Certolizumab pegol,Cord,Newborns,Delivery,N/A,Ratio Cord/Mother - Unnamed: 5_level_1 - Unnamed: 5_level_2,%,1.6%,7,Day
+111,01,Certolizumab pegol,Certolizumab pegol,Cord,Newborns,Delivery,N/A,Ratio Cord/Mother - Unnamed: 5_level_1 - Unnamed: 5_level_2,%,8.80%,14,Day
+112,02,Certolizumab pegol,Certolizumab pegol,Cord,Newborns,Delivery,N/A,Ratio Cord/Mother - Unnamed: 5_level_1 - Unnamed: 5_level_2,%,1.60%,7,Day
 113,03,Certolizumab pegol,Certolizumab pegol,Cord,Newborns,Delivery,N/A,Ratio Cord/Mother - Unnamed: 5_level_1 - Unnamed: 5_level_2,%,24%,28,Day
-114,04,Certolizumab pegol,Certolizumab pegol,Cord,Newborns,Delivery,N/A,Ratio Cord/Mother - Unnamed: 5_level_1 - Unnamed: 5_level_2,%,2.8%,17,Day
-115,05,Certolizumab pegol,Certolizumab pegol,Cord,Newborns,Delivery,N/A,Ratio Cord/Mother - Unnamed: 5_level_1 - Unnamed: 5_level_2,%,2.5%,21,Day
-116,06,Certolizumab pegol,Certolizumab pegol,Cord,Newborns,Delivery,N/A,Ratio Cord/Mother - Unnamed: 5_level_1 - Unnamed: 5_level_2,%,4.8%,24,Day
+114,04,Certolizumab pegol,Certolizumab pegol,Cord,Newborns,Delivery,N/A,Ratio Cord/Mother - Unnamed: 5_level_1 - Unnamed: 5_level_2,%,2.80%,17,Day
+115,05,Certolizumab pegol,Certolizumab pegol,Cord,Newborns,Delivery,N/A,Ratio Cord/Mother - Unnamed: 5_level_1 - Unnamed: 5_level_2,%,2.50%,21,Day
+116,06,Certolizumab pegol,Certolizumab pegol,Cord,Newborns,Delivery,N/A,Ratio Cord/Mother - Unnamed: 5_level_1 - Unnamed: 5_level_2,%,4.80%,24,Day
 117,07,Certolizumab pegol,Certolizumab pegol,Cord,Newborns,Delivery,N/A,Ratio Cord/Mother - Unnamed: 5_level_1 - Unnamed: 5_level_2,%,22%,28,Day
-118,08-A,Certolizumab pegol,Certolizumab pegol,Cord,Newborns,Delivery,N/A,Ratio Cord/Mother - Unnamed: 5_level_1 - Unnamed: 5_level_2,%,6.4%,42,Day
-119,B,Certolizumab pegol,Certolizumab pegol,Cord,Newborns,Delivery,N/A,Ratio Cord/Mother - Unnamed: 5_level_1 - Unnamed: 5_level_2,%,6.4%,N/A,N/A
-120,09-A,Certolizumab pegol,Certolizumab pegol,Cord,Newborns,Delivery,N/A,Ratio Cord/Mother - Unnamed: 5_level_1 - Unnamed: 5_level_2,%,3.0%,6,Day
-121,B,Certolizumab pegol,Certolizumab pegol,Cord,Newborns,Delivery,N/A,Ratio Cord/Mother - Unnamed: 5_level_1 - Unnamed: 5_level_2,%,2.7%,N/A,N/A
-122,10,Certolizumab pegol,Certolizumab pegol,Cord,Newborns,Delivery,N/A,Ratio Cord/Mother - Unnamed: 5_level_1 - Unnamed: 5_level_2,%,1.5%,5,Day
+118,08-A,Certolizumab pegol,Certolizumab pegol,Cord,Newborns,Delivery,N/A,Ratio Cord/Mother - Unnamed: 5_level_1 - Unnamed: 5_level_2,%,6.40%,42,Day
+119,B,Certolizumab pegol,Certolizumab pegol,Cord,Newborns,Delivery,N/A,Ratio Cord/Mother - Unnamed: 5_level_1 - Unnamed: 5_level_2,%,6.40%,N/A,N/A
+120,09-A,Certolizumab pegol,Certolizumab pegol,Cord,Newborns,Delivery,N/A,Ratio Cord/Mother - Unnamed: 5_level_1 - Unnamed: 5_level_2,%,3.00%,6,Day
+121,B,Certolizumab pegol,Certolizumab pegol,Cord,Newborns,Delivery,N/A,Ratio Cord/Mother - Unnamed: 5_level_1 - Unnamed: 5_level_2,%,2.70%,N/A,N/A
+122,10,Certolizumab pegol,Certolizumab pegol,Cord,Newborns,Delivery,N/A,Ratio Cord/Mother - Unnamed: 5_level_1 - Unnamed: 5_level_2,%,1.50%,5,Day
 123,01,Certolizumab pegol,PEG,Mother,Maternal,Delivery,N/A,Day of Birth PEG concentrations (μg/ml) - Lower limit of Quantification <9 - Mother,μg/ml,33.4,14,Day
 124,02,Certolizumab pegol,PEG,Mother,Maternal,Delivery,N/A,Day of Birth PEG concentrations (μg/ml) - Lower limit of Quantification <9 - Mother,μg/ml,51.3,7,Day
 125,03,Certolizumab pegol,PEG,Mother,Maternal,Delivery,N/A,Day of Birth PEG concentrations (μg/ml) - Lower limit of Quantification <9 - Mother,μg/ml,*,28,Day
