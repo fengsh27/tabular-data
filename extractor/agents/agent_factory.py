@@ -10,7 +10,11 @@ from extractor.agents.common_agent.common_agent_ollama import (
     CommonAgentOllamaTwoSteps,
 )
 
-from extractor.request_gpt_oss import get_gpt_oss, get_gpt_qwen_30b
+from extractor.request_gpt_oss import (
+    get_gpt_oss, 
+    get_gpt_qwen_30b,
+    get_gpt_qwen35_27b,
+)
 from extractor.request_openai import get_openai, get_5_openai
 
 MAX_PIPELINE_AGENT_CONTENT_NUM = 16384
@@ -25,6 +29,11 @@ def get_pipeline_llm():
         )
     elif llm == "QWEN3-30B":
         return get_gpt_qwen_30b(
+            max_content_num=MAX_PIPELINE_AGENT_CONTENT_NUM,
+            max_predict_num=MAX_PIPELINE_AGENT_PREDICT_NUM,
+        )
+    elif llm == "QWEN3.5-27B":
+        return get_gpt_qwen35_27b(
             max_content_num=MAX_PIPELINE_AGENT_CONTENT_NUM,
             max_predict_num=MAX_PIPELINE_AGENT_PREDICT_NUM,
         )

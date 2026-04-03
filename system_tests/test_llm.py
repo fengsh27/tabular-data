@@ -53,7 +53,7 @@ def test_openai_1():
     )
     print(res)
 
-# @pytest.mark.skip()
+@pytest.mark.skip()
 def test_gemini_list_models():
     from langchain_google_genai import ChatGoogleGenerativeAI
 

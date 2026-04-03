@@ -191,7 +191,7 @@ def test_gpt_oss_1_message():
     logger.info(res)
     assert res is not None
 
-@pytest.mark.skip()
+# @pytest.mark.skip()
 def test_gpt_oss_1_with_direct_invoke():
     llm = get_gpt_qwen_30b() # get_gpt_oss()
     res = llm.invoke(msg + "\n\n" + instruction_prompt)

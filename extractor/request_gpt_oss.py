@@ -79,3 +79,39 @@ def get_gpt_qwen_30b(
             format=schema,
             timeout=900,
         )
+    
+def get_gpt_qwen35_27b(
+    max_content_num: int = -1,
+    max_predict_num: int = -1,
+    schema: dict | None = None,
+):
+    base_url = os.getenv("OLLAMA_BASE_URL")
+    if schema is None:
+        return ChatOllama(
+            # base_url="http://localhost:11434",
+            base_url=base_url,
+            model="qwen3.5:27b",
+            reasoning=False,
+            streaming=True,
+            num_ctx=max_content_num if max_content_num > 0 else MAX_CONTENT_NUM,
+            num_predict=max_predict_num if max_predict_num > 0 else MAX_PREDICT_NUM,
+            temperature=0.0,
+            top_p=1.0,
+            top_k=1,
+            timeout=900,
+        )
+    else:
+        return ChatOllama(
+            # base_url="http://localhost:11434",
+            base_url=base_url,
+            model="qwen3.5:27b",
+            reasoning=False,
+            streaming=True,
+            num_ctx=max_content_num if max_content_num > 0 else MAX_CONTENT_NUM,
+            num_predict=max_predict_num if max_predict_num > 0 else MAX_PREDICT_NUM,
+            temperature=0.0,
+            top_p=1.0,
+            top_k=1,
+            format=schema,
+            timeout=900,
+        )
