@@ -14,6 +14,7 @@ from extractor.request_gpt_oss import (
     get_gpt_oss, 
     get_gpt_qwen_30b,
     get_gpt_qwen35_27b,
+    get_gemma4_31b,
 )
 from extractor.request_openai import get_openai, get_5_openai
 
@@ -41,6 +42,11 @@ def get_pipeline_llm():
         return get_openai()
     elif llm == "OPENAI-5":
         return get_5_openai()
+    elif llm == "GEMMA4-31B":
+        return get_gemma4_31b(
+            max_content_num=MAX_PIPELINE_AGENT_CONTENT_NUM,
+            max_predict_num=MAX_PIPELINE_AGENT_PREDICT_NUM,
+        )
     else:
         raise ValueError(f"Unknown LLM: {llm}")
 
@@ -56,6 +62,8 @@ def get_agent_llm():
         return get_openai()
     elif llm == "OPENAI-5":
         return get_5_openai()
+    elif llm == "GEMMA4-31B":
+        return get_gemma4_31b()
     else:
         raise ValueError(f"Unknown LLM: {llm}")
 
