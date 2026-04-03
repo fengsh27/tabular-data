@@ -180,11 +180,11 @@ Focus particularly on tables that report Population-focused characteristics. Not
 
 ### **Your Output Format**
 
-Return a Python list of the relevant **table indexes** in the **exact format** below:
-
-```python
-[<table index>, <table index>, ...]
-```
+You output **must be** in json compact format, it **must exactly match** the following schema:
+{{
+    "reasoning_process": <string, a concise explanation of the thought process or reasoning steps taken to reach a conclusion (no more than 200 words)>,
+    "selected_table_indexes": <list[str], a python list of selected table indexes without fences (like '```python' or '```')>
+}}
 
 Do not include any explanations or extra output.
 
@@ -192,8 +192,11 @@ Do not include any explanations or extra output.
 
 ### **Output Example**
 
-```python
-["1", "3"]
+```json
+{{
+    "reasoning_process": "I carefully analyzed the tables and selected the ones that are relevant to pharmacokinetics (PK).",
+    "selected_table_indexes": ["1", "3"]
+}}
 ```
 
 ---
@@ -245,18 +248,21 @@ If such variables are present, the table should be included regardless of contex
 
 ### **Your Output Format**
 
-Return a Python list of the relevant **table indexes** in the **exact format** below:
-
-```python
-[<table index>, <table index>, ...]
-```
+You output **must be** in json compact format, it **must exactly match** the following schema:
+{{
+    "reasoning_process": <string, a concise explanation of the thought process or reasoning steps taken to reach a conclusion (no more than 200 words)>,
+    "selected_table_indexes": <list[str], a python list of selected table indexes without fences (like '```python' or '```')>
+}}
 
 ---
 
 ### **Output Example**
 
-```python
-["1", "3"]
+```json
+{{
+    "reasoning_process": "I carefully analyzed the tables and selected the ones that are relevant to pharmacokinetics (PK).",
+    "selected_table_indexes": ["1", "3"]
+}}
 ```
 
 ---
