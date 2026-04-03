@@ -161,8 +161,8 @@ Suggested fix:
             return state, {**DEFAULT_TOKEN_USAGE}
 
         if reasoning_process is None:
-            reasoning_process = res.reasoning_process if hasattr(res, "reasoning_process") else "N / A"
-        self._print_step(state, step_output=reasoning_process)
+            reasoning_process = res.reasoning_process if hasattr(res, "reasoning_process") else None
+        self._print_step(state, step_output=reasoning_process or "N / A")
         self._print_step(state, step_output=f"Verification Final Answer: \n\n{res.correct}")
         self._print_step(state, step_output=f"Verification Explanation: \n\n{res.explanation}")
         self._print_step(state, step_output=f"Verification Suggested Fix: \n\n{res.suggested_fix}")
@@ -172,8 +172,9 @@ Suggested fix:
         state["suggested_fix"] = suggested_fix if suggested_fix is not None else res.explanation
 
         if not res.correct:
-            self._update_intermediate_output(state, res.explanation, res.suggested_fix)
-        state["verification_reasoning_process"] = reasoning_process
+            self._update_intermediate_output(state, state["explanation"], state["suggested_fix"])
+        valid_reasoning = reasoning_process if isinstance(reasoning_process, str) and reasoning_process.strip() else None
+        state["verification_reasoning_process"] = valid_reasoning or state["suggested_fix"] or state["explanation"]
 
         return state, token_usage
 
