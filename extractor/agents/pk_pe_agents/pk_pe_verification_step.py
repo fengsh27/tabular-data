@@ -168,7 +168,8 @@ Suggested fix:
         self._print_step(state, step_output=f"Verification Suggested Fix: \n\n{res.suggested_fix}")
         state["final_answer"] = FinalAnswerEnum.Correct if res.correct else FinalAnswerEnum.Incorrect
         state["explanation"] = res.explanation
-        state["suggested_fix"] = res.suggested_fix
+        suggested_fix = res.suggested_fix if isinstance(res.suggested_fix, str) and res.suggested_fix.strip() else None
+        state["suggested_fix"] = suggested_fix if suggested_fix is not None else res.explanation
 
         if not res.correct:
             self._update_intermediate_output(state, res.explanation, res.suggested_fix)
