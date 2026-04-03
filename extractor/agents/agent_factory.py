@@ -50,6 +50,8 @@ def get_agent_llm():
         return get_gpt_oss()
     elif llm == "QWEN3-30B":
         return get_gpt_qwen_30b()
+    elif llm == "QWEN3.5-27B":
+        return get_gpt_qwen35_27b()
     elif llm == "OPENAI":
         return get_openai()
     elif llm == "OPENAI-5":

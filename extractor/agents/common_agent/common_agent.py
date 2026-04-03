@@ -39,7 +39,7 @@ class CommonAgent:
         instruction_prompt: str,
         schema: any,
         schema_basemodel: Optional[BaseModel] = None,
-        try_fix_error: Optional[Callable[[Any], Anget_runnable_agenty]] = None,
+        try_fix_error: Optional[Callable[[Any], Any]] = None,
         agent_fix_parser: Optional[Callable[[str], object | None]] = None,
         pre_process: Optional[Callable] = None,
         post_process: Optional[Callable] = None,
