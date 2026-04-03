@@ -18,7 +18,7 @@ from extractor.constants import COT_USER_INSTRUCTION
 
 logger = logging.getLogger(__name__)
 
-PKPE_CORRECTION_SYSTEM_PROMPT = """
+PKPE_CORRECTION_SYSTEM_PROMPT = '''
 You are a biomedical data correction engineer with expertise in {domain} and robust Python data wrangling.
 
 You are given:
@@ -84,6 +84,8 @@ DO NOT:
 - Convert types unless explicitly required
 - Write assert or validation statements that check row count, column count, or any
   table dimension — the verification step is solely responsible for correctness checking
+- Write comments or docstrings in the code — omit all # comments and """ strings to
+  keep the output concise and within token limits
 
 Now produce the JSON object with the "code" field only.
 
@@ -105,7 +107,7 @@ Reasoning Process:
 {reasoning_process}
 --------------------
 
-"""
+'''
 
 class PKPECorrectionStepResult(BaseModel):
     code: str = Field(description="Python code that corrects the curated table. The code must produce a pandas DataFrame named `df_corrected`.")
