@@ -72,9 +72,9 @@ Required structure of the code (enforced order):
 2) df = markdown_to_dataframe(curated_md)
 3) Apply the minimal set of edits specified by the Reasoning Process
 4) df_corrected = df (or a modified copy), ensuring column order unchanged
-5) Lightweight validation assertions:
-   - row count unchanged unless explicitly required
-   - edits applied only to intended rows (use boolean masks; assert mask.sum() matches expectation)
+
+CRITICAL: The variable df_corrected MUST always be assigned in every code path. If no
+corrections are needed, still write: df_corrected = df
 
 DO NOT:
 - Define markdown_to_dataframe (see FORBIDDEN)
@@ -82,6 +82,8 @@ DO NOT:
 - Change column names
 - Reorder rows unless explicitly required
 - Convert types unless explicitly required
+- Write assert or validation statements that check row count, column count, or any
+  table dimension — the verification step is solely responsible for correctness checking
 
 Now produce the JSON object with the "code" field only.
 
