@@ -297,4 +297,30 @@ def add_row_index_column(md_table: str) -> str:
     df = markdown_to_dataframe(md_table)
     df.insert(0, "rowIndex", range(len(df)))
     return dataframe_to_markdown(df)
+
+def format_source_tables(source_tables: list[dict]) -> str:
+    """
+    Format source tables for LLM input.
+    
+    Args:
+        source_tables: List of source tables. Each table is a dict with keys 'caption' (str), 'footnote' (str), and 'table' (DataFrame).
+    
+    Returns:
+        Formatted source tables.
+    """
+    tables = source_tables if source_tables is not None else []
+    if len(tables) == 0:
+        return "No tables found."
+    formatted_tables = ""
+    for idx, table in enumerate(tables):
+        caption = table['caption'] if "caption" in table and table['caption'] is not None else ""
+        footnote = table['footnote'] if "footnote" in table and table['footnote'] is not None else ""
+        md_table = dataframe_to_markdown(table['table'])
+        formatted_tables += f"""
+ - **Table {idx + 1}:**
+Caption: {caption+"\n"+footnote}
+{md_table}
+"""
+    return formatted_tables
+
     
