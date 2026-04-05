@@ -63,26 +63,22 @@ Infer the **Patient ID** for each row in the given table by carefully analyzing 
 ### **OUTPUT FORMAT**
 The output **must exactly match** the following format:
 {{
-    "reasoning_process": <reasoning_process>,
     "patient_ids": [patient_id_0, patient_id_1, ..., patient_id_N]
 }}
 
 #### Examples:
 
 {{
-    "reasoning_process": "balahbalah",
     "patient_ids": [1, 1, 1, 1, 1]
 }}
 
 
 {{
-    "reasoning_process": "balahbalah",
     "patient_ids": [1, 2, 3, 4, 5]
 }}
 
 
 {{
-    "reasoning_process": "balahbalah",
     "patient_ids": [1, "N/A", 2]
 }}
 
