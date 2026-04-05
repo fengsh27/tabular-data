@@ -65,12 +65,23 @@ Patch-only correction rule (highest priority):
 - Treat the curated table as the base.
 - Apply ONLY the explicit corrections described in the Reasoning Process (no additional cleanup or normalization).
 - Preserve all other rows/columns unchanged.
-- If a correction targets a duplicate row, disambiguate by matching as many columns as needed; if still ambiguous, use row position (0-based index in the body) and add a brief code comment explaining the choice.
+- If a correction targets a duplicate row, disambiguate by matching as many columns as needed; if still ambiguous, use row position (0-based index in the body).
+
+TOKEN-EFFICIENT CODE RULE (CRITICAL — violations cause truncated output):
+- NEVER rebuild the table by constructing a list of row dictionaries (e.g., new_rows = [...] or pd.DataFrame([...])).
+  This generates too many tokens and the output WILL be cut off, producing invalid code.
+- ALWAYS start from df = markdown_to_dataframe(curated_md) and apply targeted, surgical edits.
+- To fix a cell:       df.at[row_index, 'column_name'] = 'new_value'
+- To fix cells by condition: df.loc[df['col'] == 'old', 'col'] = 'new'
+- To add a row:        df.loc[len(df)] = {{'col1': 'v1', 'col2': 'v2', ...}}
+- To delete rows:      df = df.drop(index=[...]).reset_index(drop=True)
+- Use loops when applying the same edit pattern to many rows.
+- Keep the total code under 80 lines.
 
 Required structure of the code (enforced order):
 1) import pandas as pd
 2) df = markdown_to_dataframe(curated_md)
-3) Apply the minimal set of edits specified by the Reasoning Process
+3) Apply the minimal set of targeted edits specified by the Reasoning Process
 4) df_corrected = df (or a modified copy), ensuring column order unchanged
 
 CRITICAL: The variable df_corrected MUST always be assigned in every code path. If no
@@ -86,6 +97,8 @@ DO NOT:
   table dimension — the verification step is solely responsible for correctness checking
 - Write comments or docstrings in the code — omit all # comments and """ strings to
   keep the output concise and within token limits
+- Build new_rows lists, pd.DataFrame([...]) with hardcoded rows, or any full-table
+  reconstruction — this ALWAYS causes token-limit truncation and invalid code
 
 Now produce the JSON object with the "code" field only.
 
@@ -149,6 +162,17 @@ class PKPECuratedTablesCorrectionCodeStep(PKPECommonStep):
             if error_history:
                 error_context = "\n\n".join([f"Attempt {i+1} Error: {err}" for i, err in enumerate(error_history)])
                 system_prompt += f"\n\n### Previous Execution Errors\n{error_context}\n\nPlease fix the code based on these errors."
+                if self._has_truncation_error(error_history):
+                    system_prompt += (
+                        "\n\n### TRUNCATION WARNING\n"
+                        "Your previous code was TRUNCATED because it exceeded the token limit. "
+                        "You MUST use a shorter approach:\n"
+                        "- Do NOT build new_rows=[...] or pd.DataFrame([...]) with hardcoded rows.\n"
+                        "- Start from df = markdown_to_dataframe(curated_md) and apply targeted edits only.\n"
+                        "- Use df.at[row_index, 'col'] = 'value' for cell fixes.\n"
+                        "- Use df.loc[len(df)] = {...} to add one row at a time.\n"
+                        "- Use loops when applying the same pattern to many rows.\n"
+                    )
 
             instruction_prompt = (
                 "Let's start generating the code to correct the curated table."
@@ -256,6 +280,19 @@ class PKPECuratedTablesCorrectionCodeStep(PKPECommonStep):
             return None, error_msg
 
         return df_corrected, None
+
+    @staticmethod
+    def _has_truncation_error(error_history: list[str]) -> bool:
+        truncation_patterns = [
+            "was never closed",
+            "unexpected EOF while parsing",
+            "unterminated string literal",
+        ]
+        return any(
+            pattern in err
+            for err in error_history
+            for pattern in truncation_patterns
+        )
 
     def leave_step(self, state, token_usage: Optional[dict[str, int]] = None):
         return super().leave_step(state, token_usage)
