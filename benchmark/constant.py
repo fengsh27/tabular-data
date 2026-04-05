@@ -28,3 +28,4 @@ class LLModelType(Enum):
     QWEN3="qwen3"
     CODEX="codex"
     GPT54="gpt54"
+    GEMMA4="gemma4"

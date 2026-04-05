@@ -1,5 +1,5 @@
 """
-python app_script_pmids.py -o OUTPUT_FOLDER [-f PMIDS_FILE] [-i PMID] [-j JOB_ID] [-h]
+python app_script_pmids.py -o OUTPUT_FOLDER [-f PMIDS_FILE] [-i PMID] [-j JOB_ID] [-p PIPELINES] [-h]
 
 This script will:
 1. Read PMIDs from a CSV file or a single PMID
@@ -14,6 +14,11 @@ Input:
 - optional -i  single PMID
 - optional -o  output directory (skips agent step if omitted)
 - optional -j  job ID for the summary filename (defaults to PID)
+- optional -p  space-separated pipeline names to force for every PMID, skipping the
+               design step. Valid values: pk_summary, pk_individual,
+               pk_specimen_summary, pk_specimen_individual, pk_drug_summary,
+               pk_drug_individual, pk_population_summary, pk_population_individual,
+               pe_study_info, pe_study_outcome
 """
 
 import argparse
@@ -174,16 +179,34 @@ def prepare_data_by_pmids_csv_file(csv_pmids_fn: str, pmid_db: PMIDDB) -> list[s
 # Curation
 # ---------------------------------------------------------------------------
 
+def _parse_pipelines(names: list[str]) -> list[PipelineTypeEnum]:
+    """Validate and convert pipeline name strings to PipelineTypeEnum values."""
+    valid = {m.value: m for m in PipelineTypeEnum}
+    result = []
+    errors = []
+    for name in names:
+        if name in valid:
+            result.append(valid[name])
+        else:
+            errors.append(name)
+    if errors:
+        print(f"Invalid pipeline name(s): {errors}")
+        print(f"Valid options: {list(valid.keys())}")
+        raise SystemExit(1)
+    return result
+
+
 def _curate_pmid(
     pmid: str,
     mgr: PKPEManager,
     out_dir: Path,
     write_summary,
+    pipeline_types: list[PipelineTypeEnum] | None = None,
 ) -> list[tuple[str, str]]:
     """Run all pipelines for one PMID. Returns a list of (pmid, error_msg) tuples."""
     errors = []
     try:
-        res = mgr.run(pmid)
+        res = mgr.run(pmid, pipeline_types=pipeline_types)
     except Exception as e:
         logger.error(f"Identification/design step failed for {pmid}: {e}")
         write_summary([pmid, "N/A", "Error", "N/A"])
@@ -244,12 +267,25 @@ def extract_by_csv_file(interval_time: float = 0.0):
         help="Job ID for the summary filename (defaults to PID)",
         type=int,
     )
+    parser.add_argument(
+        "-p", "--pipelines",
+        nargs="+",
+        metavar="PIPELINE",
+        help=(
+            "Space-separated pipeline names to run for every PMID, skipping the "
+            "design step. E.g.: -p pk_summary pk_individual"
+        ),
+    )
     args = vars(parser.parse_args())
 
     pmids_fn: str | None = args.get("pmids_fn")
     pmid: str | None = args.get("pmid")
     out_dir: str | None = args.get("out_dir")
     job_id: int = args.get("job_id") or os.getpid()
+    pipeline_names: list[str] | None = args.get("pipelines")
+    pipeline_types: list[PipelineTypeEnum] | None = (
+        _parse_pipelines(pipeline_names) if pipeline_names else None
+    )
 
     if pmids_fn is None and pmid is None:
         parser.print_help()
@@ -298,7 +334,7 @@ def extract_by_csv_file(interval_time: float = 0.0):
             with _pmid_log_context(pmid, logs_folder):
                 try:
                     logger.info(f"Start curating paper {pmid}")
-                    errors = _curate_pmid(pmid, mgr, out_path, write_summary)
+                    errors = _curate_pmid(pmid, mgr, out_path, write_summary, pipeline_types)
                     error_report.extend(errors)
                     logger.info(f"Finish curating paper {pmid}")
                 except Exception as e:
