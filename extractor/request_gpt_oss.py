@@ -3,7 +3,7 @@ import os
 from langchain_ollama import ChatOllama
 
 MAX_CONTENT_NUM=16384*2
-MAX_PREDICT_NUM=2048
+MAX_PREDICT_NUM=2048*2
 
 def get_gpt_oss(
     max_content_num: int = -1,
