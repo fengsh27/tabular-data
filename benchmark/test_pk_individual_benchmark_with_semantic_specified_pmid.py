@@ -29,8 +29,8 @@ specified_pmids = [
     # "18426260",
     # "23200982",
     # "24989434",
-    # "11849190",
-    "32056930",
+    "11849190",
+    #"32056930",
 ]
 
 @pytest.fixture(scope="module")
@@ -58,6 +58,20 @@ def test_gpt_benchmark(prepared_dataset):
         dataset=prepared_dataset,
         benchmark_type=BenchmarkType.PK_INDIVIDUAL,
         model=LLModelType.GPT4O,
+        result_file=result_path,
+    )
+
+def test_gpt54_benchmark(prepared_dataset):
+    result_dir = ensure_target_result_directory_existed(
+        baseline=baseline,
+        target=target,
+        benchmark_type=BenchmarkType.PK_INDIVIDUAL,
+    )
+    result_path = os.path.join(result_dir, "result.log")
+    run_semantic_benchmark(
+        dataset=prepared_dataset,
+        benchmark_type=BenchmarkType.PK_INDIVIDUAL,
+        model=LLModelType.GPT54,
         result_file=result_path,
     )
 

@@ -109,7 +109,6 @@ Before producing the final answer, verify that:
 
 ```json
 {{
-  "reasoning_process": "balahbalah",
   "categorized_headers": {{
     "('Unnamed: 0_level_0', 'Volunteer')": "Patient ID",
     "('Citalopram', 'Maximum1 milk concentration (µg l−1)')": "Parameter value",
@@ -150,11 +149,6 @@ HeaderCategorizeJsonSchema = {
     "description": "Categorized results for headers",
     "type": "object",
     "properties": {
-        "reasoning_process": {
-            "type": "string",
-            "description": "A detailed explanation of the thought process or reasoning steps taken to reach a conclusion.",
-            "title": "Reasoning Process",
-        },
         "categorized_headers": {
             "type": "object",
             "description": 'the dictionary represents the categorized result for headers. Each key is a column header name, and the corresponding value is its assigned category string (one of the values: "Patient ID", "Parameter value", "Uncategorized")',

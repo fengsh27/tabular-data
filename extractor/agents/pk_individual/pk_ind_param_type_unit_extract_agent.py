@@ -131,7 +131,6 @@ Return **exactly one tuple** containing **three lists**:
 
 ```json
 {{
-  "reasoning_process": "<Reasoning process>",
   "extracted_param_units": {{
     "parameter_types": ["Parameter type 1", "Parameter type 2", ...],
     "parameter_units": ["Parameter unit 1", "Parameter unit 2", ...],

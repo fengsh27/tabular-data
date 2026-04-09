@@ -28,8 +28,8 @@ from extractor.pmid_extractor.article_retriever import ArticleRetriever
 from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
 from extractor.utils import convert_html_to_text_no_table, convert_sections_to_full_text, remove_references
 from extractor.agents.pk_pe_agents.pk_pe_identification_step import PKPEIdentificationStep
-from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECuratedTables, PKPECurationWorkflowState, PaperTypeEnum
-
+from extractor.agents.pk_pe_agents.pk_pe_agents_types import FinalAnswerEnum, PKPECuratedTables, PKPECurationWorkflowState, PaperTypeEnum
+from extractor.pmid_extractor.table_utils import format_source_tables
 
 logger = logging.getLogger(__name__)
 
@@ -80,10 +80,6 @@ class PKPEManager:
         )
         return pmid is not None
 
-    def _format_source_tables(self, source_tables: list[dict]) -> str:
-        tables = source_tables if source_tables is not None else []
-        return "\n".join([f"caption: \n{table['caption']}\n\n table: \n{dataframe_to_markdown(table['table'])}" for table in tables])
-
     def _identification_and_design_step(self, pmid: str) -> PKPECurationWorkflowState:
         pmid_db = self.pmid_db
         pmid_info = pmid_db.select_pmid_info(pmid)
@@ -95,6 +91,7 @@ class PKPEManager:
             paper_abstract=pmid_info[2],
             full_text=full_text,
             step_output_callback=self.print_step,
+            source_tables=format_source_tables(pmid_info[4])
         )
         
         identification_step = PKPEIdentificationStep(llm=self.agent_llm)
@@ -239,7 +236,12 @@ class PKPEManager:
                 self._curating_end_job(pmid, pipeline_type, result, curation_end_callback)   
             except Exception as e:
                 logger.error(f"Error running pmid-{pmid} {pipeline_type} workflow: \n{e}")
-                continue
+                result = PKPECuratedTables(
+                    correct=FinalAnswerEnum.PipelineError,
+                    curated_table=None,
+                    explanation=str(e),
+                    suggested_fix="N/A",
+                )
             curated_tables[pipeline_type] = result
         return curated_tables
 
@@ -264,7 +266,12 @@ class PKPEManager:
                 await self._curating_end_job_async(pmid, pipeline_type, result, curation_end_callback)   
             except Exception as e:
                 logger.error(f"Error running pmid-{pmid} {pipeline_type} workflow: \n{e}")
-                continue
+                result = PKPECuratedTables(
+                    correct=FinalAnswerEnum.PipelineError,
+                    curated_table=None,
+                    explanation=str(e),
+                    suggested_fix="N/A",
+                )
             curated_tables[pipeline_type] = result
         return curated_tables
 

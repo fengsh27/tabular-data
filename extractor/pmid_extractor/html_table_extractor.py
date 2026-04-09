@@ -818,6 +818,33 @@ class XmlTableParser(object):
             for sec in body_tag.find_all("sec", recursive=False):
                 sections.extend(self._extract_sections_from_sec(sec))
 
+        # JATS XML often places tables in <floats-group> or other locations
+        # outside <body>, so they are never reached by _extract_section_content.
+        # Collect those floating table-wraps and append them as a "Tables" section.
+        all_table_wraps = soup.find_all("table-wrap")
+        body_table_wraps = set(body_tag.find_all("table-wrap")) if body_tag else set()
+        floating_table_wraps = [t for t in all_table_wraps if t not in body_table_wraps]
+
+        table_parts = []
+        seen_tables: set[str] = set()
+        for table_wrap in floating_table_wraps:
+            table_tag = table_wrap.find("table")
+            if table_tag is None:
+                continue
+            table_df = convert_html_table_to_dataframe(str(table_tag))
+            if table_df is None:
+                continue
+            caption = self._extract_table_caption(table_wrap)
+            table_md = dataframe_to_markdown(table_df).strip()
+            if not table_md or table_md in seen_tables:
+                continue
+            seen_tables.add(table_md)
+            entry = f"{caption}\n{table_md}".strip() if caption else table_md
+            table_parts.append(entry)
+
+        if table_parts:
+            sections.append({"section": "Tables", "content": "\n\n".join(table_parts)})
+
         return sections if len(sections) > 0 else None
 
 

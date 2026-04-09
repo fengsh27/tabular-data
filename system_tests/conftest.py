@@ -115,6 +115,24 @@ from system_tests.conftest_data_19168553 import (
     data_caption_19168553_table_1,
     data_md_table_drug_19168553_table_1,
 )
+from system_tests.conftest_data_19925470 import (
+    data_title_19925470,
+    data_caption_19925470_table_3,
+    data_html_content_19925470_table_3,
+    data_md_table_summary_19925470_table_3,
+    data_md_table_aligned_19925470_table_3,
+)
+from system_tests.conftest_data_19951112 import (
+    data_caption_19951112_table_0,
+    data_md_table_aligned_19951112_table_0,
+    data_html_content_19951112_table_0,
+    data_md_table_individual_19951112_table_0,
+    data_title_19951112,
+)
+from system_tests.conftest_data_20071999 import (
+    data_caption_20071999_table_3,
+    data_md_table_20071999_table_3,
+)
 
 load_dotenv()
 
@@ -2792,6 +2810,53 @@ def title_19168553():
 def abstract_19168553():
     return data_abstract_19168553
 
+@pytest.fixture(scope="module")
+def title_19925470():
+    return data_title_19925470
+
+@pytest.fixture(scope="module")
+def caption_19925470_table_3():
+    return data_caption_19925470_table_3
+
+@pytest.fixture(scope="module")
+def html_content_19925470_table_3():
+    return data_html_content_19925470_table_3
+
+@pytest.fixture(scope="module")
+def md_table_summary_19925470_table_3():
+    return data_md_table_summary_19925470_table_3
+
+@pytest.fixture(scope="module")
+def md_table_aligned_19925470_table_3():
+    return data_md_table_aligned_19925470_table_3
+
+@pytest.fixture(scope="module")
+def title_19951112():
+    return data_title_19951112
+
+@pytest.fixture(scope="module")
+def caption_19951112_table_0():
+    return data_caption_19951112_table_0
+
+@pytest.fixture(scope="module")
+def md_table_aligned_19951112_table_0():
+    return data_md_table_aligned_19951112_table_0
+
+@pytest.fixture(scope="module")
+def html_content_19951112_table_0():
+    return data_html_content_19951112_table_0
+
+@pytest.fixture(scope="module")
+def md_table_individual_19951112_table_0():
+    return data_md_table_individual_19951112_table_0
+
+@pytest.fixture(scope="module")
+def md_table_20071999_table_3():
+    return data_md_table_20071999_table_3
+
+@pytest.fixture(scope="module")
+def caption_20071999_table_3():
+    return data_caption_20071999_table_3
 
 # ============================================================================================
 # utils

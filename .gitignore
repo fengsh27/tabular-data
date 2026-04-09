@@ -164,8 +164,8 @@ cython_debug/
 # temporary files
 tmp/
 temp.py
-data/
-data/*.csv
+# data/
+# data/*.csv
 data/databases/
 system_tests/data/*.db
 system_tests/data/*.csv

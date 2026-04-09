@@ -115,7 +115,16 @@ class CommonAgentOllama(CommonAgent):
             for message in msg:
                 token_count += count_tokens(message.content)
             logger.info(f"Prompt token rough count: {token_count}")
-            raw = llm.invoke(msg)
+            # Rebind the LLM with the JSON schema as `format` to activate Ollama's
+            # grammar-constrained generation, which suppresses Qwen3 thinking tokens
+            # at the Ollama level (more reliable than the /no_think prompt hint).
+            active_schema = schema_basemodel if schema_basemodel is not None else schema
+            json_format = (
+                active_schema.model_json_schema()
+                if hasattr(active_schema, "model_json_schema")
+                else "json"
+            )
+            raw = llm.bind(format=json_format).invoke(msg)
             token_usage = CommonAgentOllama.normalize_token_usage(raw.usage_metadata)
             try:
                 # Strip Qwen3 thinking/reasoning content if present

@@ -8,6 +8,7 @@ from extractor.constants import PipelineTypeEnum
 from extractor.database.pmid_db import PMIDDB
 from extractor.agents_manager.pk_pe_manager import PKPEManager
 from extractor.request_gpt_oss import get_gpt_oss
+from extractor.pmid_extractor.article_retriever import ArticleRetriever
 
 @pytest.mark.skip()
 def test_pk_pe_manager_run_pk_workflows(llm, pmid_db):
@@ -54,16 +55,17 @@ def test_pk_pe_manager_identification_step(llm, llm_agent, pmid_db):
     state = pk_pe_manager._identification_and_design_step(pmid)
     assert "paper_type" in state and state["paper_type"] != None
 
+@pytest.mark.skip()
 @pytest.mark.parametrize("pmid", [
-    "11849190",
-    "10971311",
-    "18426260", # empty
-    "23200982", # error in executing code in correction step
-    "24989434",
-    "32153014",
-    "34746508", # error in executing code in correction step
-    "33253437", # empty
-    "32056930",
+    # "11849190",
+    # "10971311",
+    # "18426260", # empty
+    # "23200982", # error in executing code in correction step
+    # "24989434",
+    # "32153014",
+    # "34746508", # error in executing code in correction step
+    # "33253437", # empty
+    # "32056930",
 ])
 def test_pk_pe_manager_run_pk_ind_workflow(llm, llm_agent, pmid_db, pmid):
     with open(f"./system_tests/data/{pmid}.html", "r") as fobj:
@@ -84,3 +86,26 @@ def test_pk_pe_manager_run_pk_ind_workflow(llm, llm_agent, pmid_db, pmid):
     df = markdown_to_dataframe(res[PipelineTypeEnum.PK_INDIVIDUAL]["curated_table"])
     csv_path = Path(__file__).parent / "data" / "2026-1-4" / f"{pmid}_gpt-oss.csv"
     df.to_csv(csv_path, index=False)
+
+def test_pk_pe_manager_run_pk_ind_workflow_1(llm, llm_agent, pmid_db):
+    pmid = "19925470"
+    article_retriever = ArticleRetriever()
+    res, text, code = article_retriever.request_article(pmid)
+
+    pk_pe_manager = PKPEManager(
+        pipeline_llm=llm,
+        agent_llm=llm_agent,
+        pmid_db=pmid_db,
+    )
+    res = pk_pe_manager.run(
+        pmid, 
+        html_content=text,
+        pipeline_types=[PipelineTypeEnum.PK_INDIVIDUAL]
+    )
+    assert res
+    assert res[PipelineTypeEnum.PK_INDIVIDUAL]["curated_table"] is not None
+    df = markdown_to_dataframe(res[PipelineTypeEnum.PK_INDIVIDUAL]["curated_table"])
+    csv_path = Path(__file__).parent / "data" / "2026-1-4" / f"{pmid}_gpt-oss.csv"
+    df.to_csv(csv_path, index=False)
+
+

@@ -245,7 +245,7 @@ class TablesEvaluator:
     
     def anchor_row_from_rows(self, row: Series, rows: list[Series]):
         candidate_rows = rows
-        similar_rows = []
+        narrowed = False
         for c in self.anchor_cols:
             v = row[c]
             if v is None:
@@ -253,17 +253,14 @@ class TablesEvaluator:
             v = v.strip() if isinstance(v, str) else v
             if isinstance(v, str) and len(v) == 0:
                 continue
-            similar_rows = []
-            for r in candidate_rows:
-                if self._is_equal(v, r[c]):
-                    similar_rows.append(r)
+            similar_rows = [r for r in candidate_rows if self._is_equal(v, r[c])]
             if len(similar_rows) == 0:
-                candidate_rows = rows
-            elif len(similar_rows) == 1:
+                continue  # column didn't help; preserve existing candidates
+            if len(similar_rows) == 1:
                 return similar_rows[0]
-            else:
-                candidate_rows = similar_rows
-        return None if len(similar_rows) == 0 else similar_rows[0]
+            candidate_rows = similar_rows
+            narrowed = True
+        return candidate_rows[0] if narrowed else None
 
     def sum_scores(self, scores: list[int], less_row_num: int, more_row_num: int) -> int:
         sum = functools.reduce(lambda s, i: s + i, scores, 0)
@@ -274,8 +271,8 @@ class TablesEvaluator:
     def rate_rows(self, baseline: DataFrame, target: DataFrame) -> int | Tuple[int, int]:
         bshape = baseline.shape
         tshape = target.shape
-        if bshape[1] != tshape[1]:
-            return 0
+        # if bshape[1] != tshape[1]:
+        #     return 0
 
         less = baseline if bshape[0] <= tshape[0] else target
         much = baseline if bshape[0] > tshape[0] else target

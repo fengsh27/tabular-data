@@ -1,0 +1,109 @@
+Population,Pregnancy stage,Pediatric/Gestational age,Specimen,Drug name,Patient ID,Parameter type,Analyte,Time value,Time unit,Parameter value,Parameter unit
+pregnant women,third trimester,38+5,maternal serum|amniotic fluid|cord blood,venlafaxine,1,maternal serum concentration,venlafaxine,4.5,hour,5,ng/mL
+pregnant women,third trimester,38+5,maternal serum|amniotic fluid|cord blood,venlafaxine,1,maternal serum concentration,O-desmethylvenlafaxine,4.5,hour,85,ng/mL
+pregnant women,third trimester,38+5,maternal serum|amniotic fluid|cord blood,venlafaxine,1,maternal serum active moiety concentration,VEN+ODVEN,4.5,hour,90,ng/mL
+pregnant women,third trimester,38+5,maternal serum|amniotic fluid|cord blood,venlafaxine,1,amniotic fluid concentration,venlafaxine,4.5,hour,n.a.,ng/mL
+pregnant women,third trimester,38+5,maternal serum|amniotic fluid|cord blood,venlafaxine,1,amniotic fluid concentration,O-desmethylvenlafaxine,4.5,hour,n.a.,ng/mL
+pregnant women,third trimester,38+5,maternal serum|amniotic fluid|cord blood,venlafaxine,1,amniotic fluid active moiety concentration,VEN+ODVEN,4.5,hour,n.a.,ng/mL
+pregnant women,third trimester,38+5,maternal serum|amniotic fluid|cord blood,venlafaxine,1,cord blood concentration,venlafaxine,4.5,hour,5,ng/mL
+pregnant women,third trimester,38+5,maternal serum|amniotic fluid|cord blood,venlafaxine,1,cord blood concentration,O-desmethylvenlafaxine,4.5,hour,84,ng/mL
+pregnant women,third trimester,38+5,maternal serum|amniotic fluid|cord blood,venlafaxine,1,cord blood active moiety concentration,VEN+ODVEN,4.5,hour,89,ng/mL
+pregnant women,third trimester,38+5,maternal serum|amniotic fluid|cord blood,venlafaxine,1,AF/MS ratio,VEN+ODVEN,4.5,hour,n.a.,ratio
+pregnant women,third trimester,38+5,maternal serum|amniotic fluid|cord blood,venlafaxine,1,CB/MS ratio,venlafaxine,4.5,hour,1.00,ratio
+pregnant women,third trimester,38+5,maternal serum|amniotic fluid|cord blood,venlafaxine,1,CB/MS ratio,O-desmethylvenlafaxine,4.5,hour,0.99,ratio
+pregnant women,third trimester,38+4,maternal serum|amniotic fluid|cord blood,venlafaxine,2,maternal serum concentration,venlafaxine,16,hour,15.8,ng/mL
+pregnant women,third trimester,38+4,maternal serum|amniotic fluid|cord blood,venlafaxine,2,maternal serum concentration,O-desmethylvenlafaxine,16,hour,208,ng/mL
+pregnant women,third trimester,38+4,maternal serum|amniotic fluid|cord blood,venlafaxine,2,maternal serum active moiety concentration,VEN+ODVEN,16,hour,223.8,ng/mL
+pregnant women,third trimester,38+4,maternal serum|amniotic fluid|cord blood,venlafaxine,2,amniotic fluid concentration,venlafaxine,16,hour,50.5,ng/mL
+pregnant women,third trimester,38+4,maternal serum|amniotic fluid|cord blood,venlafaxine,2,amniotic fluid concentration,O-desmethylvenlafaxine,16,hour,1002,ng/mL
+pregnant women,third trimester,38+4,maternal serum|amniotic fluid|cord blood,venlafaxine,2,amniotic fluid active moiety concentration,VEN+ODVEN,16,hour,1052.5,ng/mL
+pregnant women,third trimester,38+4,maternal serum|amniotic fluid|cord blood,venlafaxine,2,cord blood concentration,venlafaxine,16,hour,28,ng/mL
+pregnant women,third trimester,38+4,maternal serum|amniotic fluid|cord blood,venlafaxine,2,cord blood concentration,O-desmethylvenlafaxine,16,hour,315,ng/mL
+pregnant women,third trimester,38+4,maternal serum|amniotic fluid|cord blood,venlafaxine,2,cord blood active moiety concentration,VEN+ODVEN,16,hour,343,ng/mL
+pregnant women,third trimester,38+4,maternal serum|amniotic fluid|cord blood,venlafaxine,2,AF/MS ratio,VEN+ODVEN,16,hour,4.70,ratio
+pregnant women,third trimester,38+4,maternal serum|amniotic fluid|cord blood,venlafaxine,2,CB/MS ratio,venlafaxine,16,hour,1.77,ratio
+pregnant women,third trimester,38+4,maternal serum|amniotic fluid|cord blood,venlafaxine,2,CB/MS ratio,O-desmethylvenlafaxine,16,hour,1.51,ratio
+pregnant women,third trimester,39+1,maternal serum|amniotic fluid|cord blood,venlafaxine,3,maternal serum concentration,venlafaxine,10,hour,18.2,ng/mL
+pregnant women,third trimester,39+1,maternal serum|amniotic fluid|cord blood,venlafaxine,3,maternal serum concentration,O-desmethylvenlafaxine,10,hour,197,ng/mL
+pregnant women,third trimester,39+1,maternal serum|amniotic fluid|cord blood,venlafaxine,3,maternal serum active moiety concentration,VEN+ODVEN,10,hour,215.2,ng/mL
+pregnant women,third trimester,39+1,maternal serum|amniotic fluid|cord blood,venlafaxine,3,amniotic fluid concentration,venlafaxine,10,hour,n.a.,ng/mL
+pregnant women,third trimester,39+1,maternal serum|amniotic fluid|cord blood,venlafaxine,3,amniotic fluid concentration,O-desmethylvenlafaxine,10,hour,n.a.,ng/mL
+pregnant women,third trimester,39+1,maternal serum|amniotic fluid|cord blood,venlafaxine,3,amniotic fluid active moiety concentration,VEN+ODVEN,10,hour,n.a.,ng/mL
+pregnant women,third trimester,39+1,maternal serum|amniotic fluid|cord blood,venlafaxine,3,cord blood concentration,venlafaxine,10,hour,23.4,ng/mL
+pregnant women,third trimester,39+1,maternal serum|amniotic fluid|cord blood,venlafaxine,3,cord blood concentration,O-desmethylvenlafaxine,10,hour,425,ng/mL
+pregnant women,third trimester,39+1,maternal serum|amniotic fluid|cord blood,venlafaxine,3,cord blood active moiety concentration,VEN+ODVEN,10,hour,448.4,ng/mL
+pregnant women,third trimester,39+1,maternal serum|amniotic fluid|cord blood,venlafaxine,3,AF/MS ratio,VEN+ODVEN,10,hour,n.a.,ratio
+pregnant women,third trimester,39+1,maternal serum|amniotic fluid|cord blood,venlafaxine,3,CB/MS ratio,venlafaxine,10,hour,1.29,ratio
+pregnant women,third trimester,39+1,maternal serum|amniotic fluid|cord blood,venlafaxine,3,CB/MS ratio,O-desmethylvenlafaxine,10,hour,2.16,ratio
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,4,maternal serum concentration,venlafaxine,4,hour,2,ng/mL
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,4,maternal serum concentration,O-desmethylvenlafaxine,4,hour,31.9,ng/mL
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,4,maternal serum active moiety concentration,VEN+ODVEN,4,hour,33.9,ng/mL
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,4,amniotic fluid concentration,venlafaxine,4,hour,n.a.,ng/mL
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,4,amniotic fluid concentration,O-desmethylvenlafaxine,4,hour,n.a.,ng/mL
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,4,amniotic fluid active moiety concentration,VEN+ODVEN,4,hour,n.a.,ng/mL
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,4,cord blood concentration,venlafaxine,4,hour,2,ng/mL
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,4,cord blood concentration,O-desmethylvenlafaxine,4,hour,19.1,ng/mL
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,4,cord blood active moiety concentration,VEN+ODVEN,4,hour,21.1,ng/mL
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,4,AF/MS ratio,VEN+ODVEN,4,hour,n.a.,ratio
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,4,CB/MS ratio,venlafaxine,4,hour,1.00,ratio
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,4,CB/MS ratio,O-desmethylvenlafaxine,4,hour,0.60,ratio
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,5,maternal serum concentration,venlafaxine,2.5,hour,86.3,ng/mL
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,5,maternal serum concentration,O-desmethylvenlafaxine,2.5,hour,190,ng/mL
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,5,maternal serum active moiety concentration,VEN+ODVEN,2.5,hour,276.3,ng/mL
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,5,amniotic fluid concentration,venlafaxine,2.5,hour,68.5,ng/mL
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,5,amniotic fluid concentration,O-desmethylvenlafaxine,2.5,hour,241,ng/mL
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,5,amniotic fluid active moiety concentration,VEN+ODVEN,2.5,hour,309.5,ng/mL
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,5,cord blood concentration,venlafaxine,2.5,hour,84.4,ng/mL
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,5,cord blood concentration,O-desmethylvenlafaxine,2.5,hour,204,ng/mL
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,5,cord blood active moiety concentration,VEN+ODVEN,2.5,hour,288.4,ng/mL
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,5,AF/MS ratio,VEN+ODVEN,2.5,hour,1.12,ratio
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,5,CB/MS ratio,venlafaxine,2.5,hour,0.98,ratio
+pregnant women,third trimester,39+4,maternal serum|amniotic fluid|cord blood,venlafaxine,5,CB/MS ratio,O-desmethylvenlafaxine,2.5,hour,1.07,ratio
+pregnant women,third trimester,38+2,maternal serum|amniotic fluid|cord blood,venlafaxine,6,maternal serum concentration,venlafaxine,3,hour,21,ng/mL
+pregnant women,third trimester,38+2,maternal serum|amniotic fluid|cord blood,venlafaxine,6,maternal serum concentration,O-desmethylvenlafaxine,3,hour,281,ng/mL
+pregnant women,third trimester,38+2,maternal serum|amniotic fluid|cord blood,venlafaxine,6,maternal serum active moiety concentration,VEN+ODVEN,3,hour,302,ng/mL
+pregnant women,third trimester,38+2,maternal serum|amniotic fluid|cord blood,venlafaxine,6,amniotic fluid concentration,venlafaxine,3,hour,40.3,ng/mL
+pregnant women,third trimester,38+2,maternal serum|amniotic fluid|cord blood,venlafaxine,6,amniotic fluid concentration,O-desmethylvenlafaxine,3,hour,922,ng/mL
+pregnant women,third trimester,38+2,maternal serum|amniotic fluid|cord blood,venlafaxine,6,amniotic fluid active moiety concentration,VEN+ODVEN,3,hour,962.3,ng/mL
+pregnant women,third trimester,38+2,maternal serum|amniotic fluid|cord blood,venlafaxine,6,cord blood concentration,venlafaxine,3,hour,26.9,ng/mL
+pregnant women,third trimester,38+2,maternal serum|amniotic fluid|cord blood,venlafaxine,6,cord blood concentration,O-desmethylvenlafaxine,3,hour,290,ng/mL
+pregnant women,third trimester,38+2,maternal serum|amniotic fluid|cord blood,venlafaxine,6,cord blood active moiety concentration,VEN+ODVEN,3,hour,316.9,ng/mL
+pregnant women,third trimester,38+2,maternal serum|amniotic fluid|cord blood,venlafaxine,6,AF/MS ratio,VEN+ODVEN,3,hour,3.19,ratio
+pregnant women,third trimester,38+2,maternal serum|amniotic fluid|cord blood,venlafaxine,6,CB/MS ratio,venlafaxine,3,hour,1.28,ratio
+pregnant women,third trimester,38+2,maternal serum|amniotic fluid|cord blood,venlafaxine,6,CB/MS ratio,O-desmethylvenlafaxine,3,hour,1.03,ratio
+pregnant women,third trimester,37+2,maternal serum|amniotic fluid|cord blood,venlafaxine,7,maternal serum concentration,venlafaxine,22,hour,18.5,ng/mL
+pregnant women,third trimester,37+2,maternal serum|amniotic fluid|cord blood,venlafaxine,7,maternal serum concentration,O-desmethylvenlafaxine,22,hour,271,ng/mL
+pregnant women,third trimester,37+2,maternal serum|amniotic fluid|cord blood,venlafaxine,7,maternal serum active moiety concentration,VEN+ODVEN,22,hour,289.5,ng/mL
+pregnant women,third trimester,37+2,maternal serum|amniotic fluid|cord blood,venlafaxine,7,amniotic fluid concentration,venlafaxine,22,hour,45.6,ng/mL
+pregnant women,third trimester,37+2,maternal serum|amniotic fluid|cord blood,venlafaxine,7,amniotic fluid concentration,O-desmethylvenlafaxine,22,hour,677,ng/mL
+pregnant women,third trimester,37+2,maternal serum|amniotic fluid|cord blood,venlafaxine,7,amniotic fluid active moiety concentration,VEN+ODVEN,22,hour,722.6,ng/mL
+pregnant women,third trimester,37+2,maternal serum|amniotic fluid|cord blood,venlafaxine,7,cord blood concentration,venlafaxine,22,hour,19,ng/mL
+pregnant women,third trimester,37+2,maternal serum|amniotic fluid|cord blood,venlafaxine,7,cord blood concentration,O-desmethylvenlafaxine,22,hour,317,ng/mL
+pregnant women,third trimester,37+2,maternal serum|amniotic fluid|cord blood,venlafaxine,7,cord blood active moiety concentration,VEN+ODVEN,22,hour,336,ng/mL
+pregnant women,third trimester,37+2,maternal serum|amniotic fluid|cord blood,venlafaxine,7,AF/MS ratio,VEN+ODVEN,22,hour,2.50,ratio
+pregnant women,third trimester,37+2,maternal serum|amniotic fluid|cord blood,venlafaxine,7,CB/MS ratio,venlafaxine,22,hour,1.03,ratio
+pregnant women,third trimester,37+2,maternal serum|amniotic fluid|cord blood,venlafaxine,7,CB/MS ratio,O-desmethylvenlafaxine,22,hour,1.17,ratio
+pregnant women,third trimester,39+0,maternal serum|amniotic fluid|cord blood,venlafaxine,8,maternal serum concentration,venlafaxine,5,hour,2,ng/mL
+pregnant women,third trimester,39+0,maternal serum|amniotic fluid|cord blood,venlafaxine,8,maternal serum concentration,O-desmethylvenlafaxine,5,hour,45.3,ng/mL
+pregnant women,third trimester,39+0,maternal serum|amniotic fluid|cord blood,venlafaxine,8,maternal serum active moiety concentration,VEN+ODVEN,5,hour,47.3,ng/mL
+pregnant women,third trimester,39+0,maternal serum|amniotic fluid|cord blood,venlafaxine,8,amniotic fluid concentration,venlafaxine,5,hour,n.a.,ng/mL
+pregnant women,third trimester,39+0,maternal serum|amniotic fluid|cord blood,venlafaxine,8,amniotic fluid concentration,O-desmethylvenlafaxine,5,hour,n.a.,ng/mL
+pregnant women,third trimester,39+0,maternal serum|amniotic fluid|cord blood,venlafaxine,8,amniotic fluid active moiety concentration,VEN+ODVEN,5,hour,n.a.,ng/mL
+pregnant women,third trimester,39+0,maternal serum|amniotic fluid|cord blood,venlafaxine,8,cord blood concentration,venlafaxine,5,hour,2,ng/mL
+pregnant women,third trimester,39+0,maternal serum|amniotic fluid|cord blood,venlafaxine,8,cord blood concentration,O-desmethylvenlafaxine,5,hour,52.5,ng/mL
+pregnant women,third trimester,39+0,maternal serum|amniotic fluid|cord blood,venlafaxine,8,cord blood active moiety concentration,VEN+ODVEN,5,hour,54.5,ng/mL
+pregnant women,third trimester,39+0,maternal serum|amniotic fluid|cord blood,venlafaxine,8,AF/MS ratio,VEN+ODVEN,5,hour,n.a.,ratio
+pregnant women,third trimester,39+0,maternal serum|amniotic fluid|cord blood,venlafaxine,8,CB/MS ratio,venlafaxine,5,hour,1.00,ratio
+pregnant women,third trimester,39+0,maternal serum|amniotic fluid|cord blood,venlafaxine,8,CB/MS ratio,O-desmethylvenlafaxine,5,hour,1.16,ratio
+pregnant women,third trimester,37+3,maternal serum|amniotic fluid|cord blood,venlafaxine,9,maternal serum concentration,venlafaxine,9.5,hour,201,ng/mL
+pregnant women,third trimester,37+3,maternal serum|amniotic fluid|cord blood,venlafaxine,9,maternal serum concentration,O-desmethylvenlafaxine,9.5,hour,137,ng/mL
+pregnant women,third trimester,37+3,maternal serum|amniotic fluid|cord blood,venlafaxine,9,maternal serum active moiety concentration,VEN+ODVEN,9.5,hour,338,ng/mL
+pregnant women,third trimester,37+3,maternal serum|amniotic fluid|cord blood,venlafaxine,9,amniotic fluid concentration,venlafaxine,9.5,hour,404,ng/mL
+pregnant women,third trimester,37+3,maternal serum|amniotic fluid|cord blood,venlafaxine,9,amniotic fluid concentration,O-desmethylvenlafaxine,9.5,hour,385,ng/mL
+pregnant women,third trimester,37+3,maternal serum|amniotic fluid|cord blood,venlafaxine,9,amniotic fluid active moiety concentration,VEN+ODVEN,9.5,hour,789,ng/mL
+pregnant women,third trimester,37+3,maternal serum|amniotic fluid|cord blood,venlafaxine,9,cord blood concentration,venlafaxine,9.5,hour,157,ng/mL
+pregnant women,third trimester,37+3,maternal serum|amniotic fluid|cord blood,venlafaxine,9,cord blood concentration,O-desmethylvenlafaxine,9.5,hour,134,ng/mL
+pregnant women,third trimester,37+3,maternal serum|amniotic fluid|cord blood,venlafaxine,9,cord blood active moiety concentration,VEN+ODVEN,9.5,hour,291,ng/mL
+pregnant women,third trimester,37+3,maternal serum|amniotic fluid|cord blood,venlafaxine,9,AF/MS ratio,VEN+ODVEN,9.5,hour,2.33,ratio
+pregnant women,third trimester,37+3,maternal serum|amniotic fluid|cord blood,venlafaxine,9,CB/MS ratio,venlafaxine,9.5,hour,0.78,ratio
+pregnant women,third trimester,37+3,maternal serum|amniotic fluid|cord blood,venlafaxine,9,CB/MS ratio,O-desmethylvenlafaxine,9.5,hour,0.98,ratio

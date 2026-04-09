@@ -94,10 +94,37 @@ poetry run python app_script.py -i 29943508 -o ./out -m gpt4o
 ```
 poetry run python app_script.py -f ./data/pmids.csv -o ./out -m gemini25flash
 ```
-3. PK summary only:
+3. Batch extraction with full pipeline orchestration (identification + design + curation):
 ```
-poetry run python app_script_pk_summary.py -i 29943508 -o ./out -m gpt4o
+poetry run python app_script_pmids.py -f ./data/pmids.csv -o ./out
+poetry run python app_script_pmids.py -i 29943508 -o ./out
 ```
+  - `-j / --job_id`: optional integer job ID used in the summary filename (defaults to the process PID).
+
+### Summary CSV
+
+`app_script_pmids.py` writes a summary file `summary_{job_id}_{input_stem}.csv` in the output directory after each pipeline completes. Columns:
+
+| Column | Description |
+|--------|-------------|
+| `pmid` | PubMed ID |
+| `pipeline` | Pipeline name (e.g. `PK_SUMMARY`) or `N/A` |
+| `final_answer` | Outcome code (see table below) |
+| `suggested_fix` | Suggested correction from the verification step, or `N/A` |
+
+`final_answer` values:
+
+| Value | Meaning |
+|-------|---------|
+| `Correct` | Verification confirmed the curated table is correct |
+| `Incorrect` | Verification found errors; correction did not fully resolve them (intermediate state) |
+| `MaxStepReached` | Verify/correct cycle hit the step limit while still Incorrect |
+| `NoTable` | No relevant tables found in the paper for this pipeline (expected, not an error) |
+| `NoIndividualData` | PK tables found but contain only summary-level data, no per-subject rows (PK individual pipeline only) |
+| `Neither` | Identification step classified the paper as neither PK nor PE |
+| `PipelineError` | Unhandled exception during pipeline tool execution |
+| `CorrectionError` | Correction step exhausted all retries without producing a valid fix |
+| `VerificationError` | Exception raised inside the verification agent |
 
 ## bump version
 This package employs bump2version to bump version

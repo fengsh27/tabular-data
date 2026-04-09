@@ -180,11 +180,11 @@ Focus particularly on tables that report Population-focused characteristics. Not
 
 ### **Your Output Format**
 
-Return a Python list of the relevant **table indexes** in the **exact format** below:
-
-```python
-[<table index>, <table index>, ...]
-```
+You output **must be** in json compact format, it **must exactly match** the following schema:
+{{
+    "reasoning_process": <string, a concise explanation of the thought process or reasoning steps taken to reach a conclusion (no more than 200 words)>,
+    "selected_table_indexes": <list[str], a python list of selected table indexes without fences (like '```python' or '```')>
+}}
 
 Do not include any explanations or extra output.
 
@@ -192,8 +192,11 @@ Do not include any explanations or extra output.
 
 ### **Output Example**
 
-```python
-["1", "3"]
+```json
+{{
+    "reasoning_process": "I carefully analyzed the tables and selected the ones that are relevant to pharmacokinetics (PK).",
+    "selected_table_indexes": ["1", "3"]
+}}
 ```
 
 ---
@@ -245,18 +248,21 @@ If such variables are present, the table should be included regardless of contex
 
 ### **Your Output Format**
 
-Return a Python list of the relevant **table indexes** in the **exact format** below:
-
-```python
-[<table index>, <table index>, ...]
-```
+You output **must be** in json compact format, it **must exactly match** the following schema:
+{{
+    "reasoning_process": <string, a concise explanation of the thought process or reasoning steps taken to reach a conclusion (no more than 200 words)>,
+    "selected_table_indexes": <list[str], a python list of selected table indexes without fences (like '```python' or '```')>
+}}
 
 ---
 
 ### **Output Example**
 
-```python
-["1", "3"]
+```json
+{{
+    "reasoning_process": "I carefully analyzed the tables and selected the ones that are relevant to pharmacokinetics (PK).",
+    "selected_table_indexes": ["1", "3"]
+}}
 ```
 
 ---
@@ -291,4 +297,30 @@ def add_row_index_column(md_table: str) -> str:
     df = markdown_to_dataframe(md_table)
     df.insert(0, "rowIndex", range(len(df)))
     return dataframe_to_markdown(df)
+
+def format_source_tables(source_tables: list[dict]) -> str:
+    """
+    Format source tables for LLM input.
+    
+    Args:
+        source_tables: List of source tables. Each table is a dict with keys 'caption' (str), 'footnote' (str), and 'table' (DataFrame).
+    
+    Returns:
+        Formatted source tables.
+    """
+    tables = source_tables if source_tables is not None else []
+    if len(tables) == 0:
+        return "No tables found."
+    formatted_tables = ""
+    for idx, table in enumerate(tables):
+        caption = table['caption'] if "caption" in table and table['caption'] is not None else ""
+        footnote = table['footnote'] if "footnote" in table and table['footnote'] is not None else ""
+        md_table = dataframe_to_markdown(table['table'])
+        formatted_tables += f"""
+ - **Table {idx + 1}:**
+Caption: {caption+"\n"+footnote}
+{md_table}
+"""
+    return formatted_tables
+
     

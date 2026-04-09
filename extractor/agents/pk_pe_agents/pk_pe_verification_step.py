@@ -46,7 +46,6 @@ You must respond using the **exact json compact format** below:
 
 ```
 {{
-  "reasoning_process": <string, a concise explanation of the thought process or reasoning steps taken to reach a conclusion (no more than 200 words)>,
   "correct": <boolean, True / False>,
   "explanation": <string, brief explanation of whether the curated table is accurate. If incorrect, explain what is wrong, including specific mismatched values or structure issues>,
   "suggested_fix": <string or None, if incorrect, provide a corrected version of the curated table or the corrected values/rows/columns.>
@@ -88,10 +87,10 @@ You must respond using the **exact json compact format** below:
 """
 
 class PKPEVerificationStepResult(BaseModel):
-    reasoning_process: str = Field(description="A **concise explanation** of the thought process or reasoning steps taken to reach a conclusion (no more than 200 words).")
+    # reasoning_process: str = Field(description="A **concise explanation** of the thought process or reasoning steps taken to reach a conclusion (no more than 200 words).")
     correct: bool = Field(description="Whether the curated table is accurate and faithful to the source table(s).")
     explanation: str = Field(description="Brief explanation of whether the curated table is accurate. If incorrect, explain what is wrong, including specific mismatched values or structure issues.")
-    suggested_fix: Optional[str] = Field(description="If incorrect, provide a corrected version of the curated table or the corrected values/rows/columns.")
+    suggested_fix: Optional[str] = Field(default=None, description="If incorrect, provide a corrected version of the curated table or the corrected values/rows/columns.")
     
 class PKPECuratedTablesVerificationStep(PKPECommonStep):
     def __init__(
@@ -123,9 +122,9 @@ Suggested fix:
     def _execute_directly(self, state) -> tuple[dict, dict[str, int]]:
         state: PKPECurationWorkflowState = state
 
-        # If a previous step (e.g. correction exhausted all retries) already marked the
-        # pipeline as Error, honour that decision and skip the LLM call entirely.
-        if state.get("final_answer") == FinalAnswerEnum.Error:
+        # If a previous step already set a terminal non-correctable answer, skip.
+        answer = state.get("final_answer")
+        if answer is not None and answer.is_terminal:
             return state, {**DEFAULT_TOKEN_USAGE}
 
         source_tables = state["source_tables"] if "source_tables" in state else None
@@ -134,7 +133,7 @@ Suggested fix:
         curated_table = raw.strip() if isinstance(raw, str) else None
         curated_table = curated_table if curated_table else None
         if curated_table is None:
-            state["final_answer"] = FinalAnswerEnum.Error
+            state["final_answer"] = FinalAnswerEnum.NoTable
             state["explanation"] = "No data was curated from the source."
             state["suggested_fix"] = "N/A"
             return state, {**DEFAULT_TOKEN_USAGE}
@@ -156,24 +155,26 @@ Suggested fix:
             )
         except Exception as e:
             logger.error(f"Error running verification agent: {e}")
-            state["final_answer"] = FinalAnswerEnum.Error
+            state["final_answer"] = FinalAnswerEnum.VerificationError
             state["explanation"] = f"Error running verification agent: {e}"
             state["suggested_fix"] = "N/A"
             return state, {**DEFAULT_TOKEN_USAGE}
 
         if reasoning_process is None:
-            reasoning_process = res.reasoning_process if hasattr(res, "reasoning_process") else "N / A"
-        self._print_step(state, step_output=reasoning_process)
+            reasoning_process = res.reasoning_process if hasattr(res, "reasoning_process") else None
+        self._print_step(state, step_output=reasoning_process or "N / A")
         self._print_step(state, step_output=f"Verification Final Answer: \n\n{res.correct}")
         self._print_step(state, step_output=f"Verification Explanation: \n\n{res.explanation}")
         self._print_step(state, step_output=f"Verification Suggested Fix: \n\n{res.suggested_fix}")
         state["final_answer"] = FinalAnswerEnum.Correct if res.correct else FinalAnswerEnum.Incorrect
         state["explanation"] = res.explanation
-        state["suggested_fix"] = res.suggested_fix
+        suggested_fix = res.suggested_fix if isinstance(res.suggested_fix, str) and res.suggested_fix.strip() else None
+        state["suggested_fix"] = suggested_fix if suggested_fix is not None else res.explanation
 
         if not res.correct:
-            self._update_intermediate_output(state, res.explanation, res.suggested_fix)
-        state["verification_reasoning_process"] = reasoning_process
+            self._update_intermediate_output(state, state["explanation"], state["suggested_fix"])
+        valid_reasoning = reasoning_process if isinstance(reasoning_process, str) and reasoning_process.strip() else None
+        state["verification_reasoning_process"] = valid_reasoning or state["suggested_fix"] or state["explanation"]
 
         return state, token_usage
 

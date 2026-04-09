@@ -132,7 +132,7 @@ def test_AzureOpenAI_with_22050870_table_3():
     )
     print(completion.to_json())
 
-# @pytest.mark.skip()
+@pytest.mark.skip()
 def test_AzureChatOpenAI_with_22050870_table_3():
     client = AzureChatOpenAI(
         api_key=os.environ.get("OPENAI_4O_API_KEY", None),

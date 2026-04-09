@@ -5,7 +5,7 @@ from langchain_openai.chat_models.base import BaseChatOpenAI
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown
 from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE
 from extractor.agents.common_agent.common_step import CommonStep
-from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState
+from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState, FinalAnswerEnum
 
 
 from .pk_pe_agent_tools import (
@@ -28,7 +28,10 @@ class PKPEExecutionStep(CommonStep):
         state: PKPECurationWorkflowState = state
         previous_errors = state["previous_errors"] if "previous_errors" in state else None
         previous_errors = previous_errors if previous_errors is not None else "N/A"
-        df, source_tables = self.tool.run(previous_errors)
+        df, source_tables, final_answer = self.tool.run(previous_errors)
+        if final_answer is not None:
+            state["final_answer"] = final_answer
+            return state, {**DEFAULT_TOKEN_USAGE}
         if df is None:
             return state, {**DEFAULT_TOKEN_USAGE}
         md_curated_table = dataframe_to_markdown(df)

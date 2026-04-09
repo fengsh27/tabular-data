@@ -1,0 +1,16 @@
+Population,Pregnancy stage,Pediatric/Gestational age,Specimen,Drug name,Patient ID,Parameter type,Analyte,Time value,Time unit,Parameter value,Parameter unit
+pregnant women with Crohn's disease,third trimester,38w0d,cord blood|infant blood,infliximab,1,cord blood concentration,infliximab,0,day,36.89,ug/mL
+pregnant women with Crohn's disease,third trimester,38w0d,cord blood|infant blood,infliximab,1,infant blood concentration at 6 months,infliximab,6,month,0.94,pg/mL
+pregnant women with Crohn's disease,third trimester,38w0d,cord blood|infant blood,infliximab,1,maternal peripheral blood concentration,infliximab,0,day,NR,NR
+pregnant women with Crohn's disease,third trimester,38w3d,infant blood,infliximab,2,infant blood concentration at 6 months,infliximab,6,month,Not detected,NR
+pregnant women with Crohn's disease,third trimester,38w3d,infant blood,infliximab,2,cord blood concentration,infliximab,0,day,Not measured,NR
+pregnant women with Crohn's disease,third trimester,38w3d,infant blood,infliximab,2,maternal peripheral blood concentration,infliximab,0,day,Not measured,NR
+pregnant women with Crohn's disease,third trimester,38w5d,infant blood,infliximab,3,infant blood concentration at 6 months,infliximab,6,month,0.24,pg/mL
+pregnant women with Crohn's disease,third trimester,38w5d,infant blood,infliximab,3,cord blood concentration,infliximab,0,day,Not measured,NR
+pregnant women with Crohn's disease,third trimester,38w5d,infant blood,infliximab,3,maternal peripheral blood concentration,infliximab,0,day,Not measured,NR
+pregnant women with Crohn's disease,third trimester,38w3d,infant blood,infliximab,4,infant blood concentration at 6 months,infliximab,6,month,Not detected,NR
+pregnant women with Crohn's disease,third trimester,38w3d,infant blood,infliximab,4,cord blood concentration,infliximab,0,day,Not measured,NR
+pregnant women with Crohn's disease,third trimester,38w3d,infant blood,infliximab,4,maternal peripheral blood concentration,infliximab,0,day,Not measured,NR
+pregnant women with Crohn's disease,second trimester,38w0d,maternal peripheral blood|cord blood|infant blood,ustekinumab,5,maternal peripheral blood concentration,ustekinumab,0,day,267.7,ng/mL
+pregnant women with Crohn's disease,second trimester,38w0d,maternal peripheral blood|cord blood|infant blood,ustekinumab,5,cord blood concentration,ustekinumab,0,day,756.5,ng/mL
+pregnant women with Crohn's disease,second trimester,38w0d,maternal peripheral blood|cord blood|infant blood,ustekinumab,5,infant blood concentration at 6 months,ustekinumab,6,month,Not detected,NR

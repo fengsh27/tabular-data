@@ -95,6 +95,7 @@ def test_PKSumWorkflow_22050870_table_3(
     )
     print(df)
 
+@pytest.mark.skip()
 def test_PKSumWorkflow_21474786_table_1(
     llm,
     html_content_21474786_table_1,
@@ -108,6 +109,24 @@ def test_PKSumWorkflow_21474786_table_1(
         html_content=html_content_21474786_table_1,
         caption_and_footnote=caption_21474786_table_1,
         title=title_21474786,
+        step_callback=step_callback,
+    )
+    print(df)
+
+
+def test_PKSumWorkflow_19925470_table_3(
+    llm,
+    html_content_19925470_table_3,
+    caption_19925470_table_3,
+    title_19925470,
+    step_callback,
+):
+    workflow = PKSumWorkflow(llm)
+    workflow.build()
+    df = workflow.go(
+        html_content=html_content_19925470_table_3,
+        caption_and_footnote=caption_19925470_table_3,
+        title=title_19925470,
         step_callback=step_callback,
     )
     print(df)

@@ -64,8 +64,12 @@ Carefully analyze the tables and follow these steps to refine Subtable 1 into a 
 ### **Output**
 Your output must be in compact json format, and **must exactly match** the following format:
 {{
-    "reasoning_process": <a string, detailed explanation of the reasoning process>,
     "refined_patient_combinations": <a list of lists of unique combinations [Patient ID, Population, Pregnancy stage, Pediatric/Gestational age]
+}}
+
+### **Output Example**
+{{
+    "refined_patient_combinations": [["1", "Maternal", "Trimester 1", "N/A"], ["2", "Preterm", "Trimester 2", "N/A"]]
 }}
 """)
 

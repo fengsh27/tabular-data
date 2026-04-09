@@ -64,7 +64,6 @@ Your response **must be valid JSON** and **must exactly match** the structure be
 
 ```json
 {{
-  "reasoning_process": "<1–2 concise sentences summarizing how the combinations were identified>",
   "patient_combinations": [
     ["Patient ID", "Population", "Pregnancy stage"]
   ]

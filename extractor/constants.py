@@ -119,9 +119,9 @@ COT_USER_INSTRUCTION = "Now, let's start."
 
 PROMPTS_NAME_PE = "deprecate"  # "Pharmaco-Epidemiology"
 
-MAX_STEP_COUNT = 3 * 3 # 3 agent and max 3 loops
+MAX_STEP_COUNT = 3 * 5 # 3 agent and max 5 loops
 
-MAX_AGENTTOOL_TASK_STEP_COUNT = 2 * 3 - 1 # 2 agent and max 3 loops
+MAX_AGENTTOOL_TASK_STEP_COUNT = 2 * 5 - 1 # 2 agent and max 5 loops
 
 class PipelineTypeEnum(Enum):
     PK_SUMMARY = "pk_summary"
