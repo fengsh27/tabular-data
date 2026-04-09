@@ -36,6 +36,7 @@ Rules:
 - Do NOT group unrelated edits into one task.
 - Do NOT write any code — only write task descriptions.
 - Include ALL corrections from the Reasoning Process; do not skip any.
+- IMPORTANT: "idx" in the Reasoning Process refers to 0-based row index (idx 0 = first data row of the DataFrame, i.e. df.iloc[0]). Do NOT treat it as 1-based.
 
 --------------------
 Paper Title:
@@ -74,6 +75,8 @@ Input/Output contract:
 - You must produce df_corrected (pandas.DataFrame).
 - df_corrected must preserve the same columns (names and order) as the curated table header.
 - All cell values must remain strings unless the task explicitly requires type conversion.
+
+IMPORTANT: "idx" in the correction task refers to 0-based row index (idx 0 = first data row of the DataFrame, i.e. df.iloc[0]). Do NOT treat it as 1-based.
 
 Required structure of the code (enforced order):
 1) import pandas as pd

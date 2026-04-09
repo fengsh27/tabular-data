@@ -47,21 +47,52 @@ You must respond using the **exact json compact format** below:
 ```
 {{
   "correct": <boolean, True / False>,
-  "explanation": <string, brief explanation of whether the curated table is accurate. If incorrect, explain what is wrong, including specific mismatched values or structure issues>,
-  "suggested_fix": <string or None, if incorrect, provide a corrected version of the curated table or the corrected values/rows/columns.>
+  "explanation": <string, max 200 words. If incorrect, list ALL errors using idx (0-based positional index) in the compact format below. If correct, state "All values match." and nothing more.>,
+  "suggested_fix": <string or None, if incorrect, repeat each error with the fix using idx (0-based positional index) and the compact format below.>
 }}
 ```
 
 ---
 
-### **Important Notes**
+### **Error Listing Format (MUST FOLLOW when incorrect)**
 
-* The columns in the curated table are fixed, so you **should not doubt** the columns in the curated table.
-* Focus on **substantial mismatches** in values or structure that could affect the meaning or interpretation. Minor typos, slight wording differences, or small formatting variations are acceptable.
-* If the curated table is correct in content but uses slightly different formatting (e.g., reordering of columns), that is acceptable as long as it does not alter the meaning or value.
-* In the **Explanation** section, you should try your best to **list all the mismatched values or structure issues**, and provide a brief explanation of why you think the curated table is incorrect.
-* Your response will be used to correct the curated table, so you should be **very specific and detailed** in your explanation. **Do not give any general explanation.**
-* when values in text and table disagree, treat the table values as the ground truth (even if the text mentions slightly different ones).
+Identify each cell by its **0-based positional index** in the curated table (first data row after the header = idx 0, second data row = idx 1, etc.).
+
+**CRITICAL**: The index is the row's POSITION in the table, NOT a value from any column. For example, if the first data row has Patient ID "3", that row is still **idx 0** (not idx 3).
+
+List EVERY error as one line each, using this compact format:
+  idx 0, Col "column_name": change "found_value" to "expected_value"
+
+For missing rows:
+  Missing row: Col1="val1", Col2="val2", ...
+
+For extra rows that should be removed:
+  Extra idx X: should be removed
+
+---
+
+### **Important Rules**
+
+* The columns in the curated table are fixed — do NOT question column names or order.
+* Focus on **substantial mismatches** in values or structure. Minor typos, slight wording differences, or small formatting variations are acceptable. 
+  In particular, ignore footnote markers or superscripts attached to values (e.g., "< LODa" vs "< LOD", "3.5*" vs "3.5").
+* When values in text and table disagree, treat the **table values as ground truth**.
+* You MUST list **EVERY** incorrect value. Do NOT use phrases like "for instance", "for example", "such as", "e.g.", or "etc." to give partial examples. An incomplete error list means corrections will be incomplete.
+* Do NOT explain WHY a value is wrong — just state WHAT is wrong and WHAT it should be.
+* Keep explanation under 200 words. No reasoning, no justification — only the error list.
+
+---
+
+### **Output Example**
+
+```
+{{
+  "correct": false,
+  "explanation": "idx 3, Col \"Parameter value\": change \"4.13\" to \"< LOD\"\nidx 20, Col \"Parameter value\": change \"37\" to \"0.37\"",
+  "suggested_fix": "idx 3, Col \"Parameter value\": change \"4.13\" to \"< LOD\"\nidx 20, Col \"Parameter value\": change \"37\" to \"0.37\""
+}}
+```
+
 ---
 
 ### **Input**
@@ -84,13 +115,21 @@ You must respond using the **exact json compact format** below:
 
 ---
 
+### **Previous Verification Attempts** (if any)
+
+{previous_verification_thoughts}
+
+If this section is not empty, use it to understand what was already checked and whether prior corrections resolved those issues. Do NOT re-report issues that have already been fully resolved.
+
+---
+
 """
 
 class PKPEVerificationStepResult(BaseModel):
     # reasoning_process: str = Field(description="A **concise explanation** of the thought process or reasoning steps taken to reach a conclusion (no more than 200 words).")
     correct: bool = Field(description="Whether the curated table is accurate and faithful to the source table(s).")
-    explanation: str = Field(description="Brief explanation of whether the curated table is accurate. If incorrect, explain what is wrong, including specific mismatched values or structure issues.")
-    suggested_fix: Optional[str] = Field(default=None, description="If incorrect, provide a corrected version of the curated table or the corrected values/rows/columns.")
+    explanation: str = Field(description="If incorrect, list ALL errors in compact format: idx X, Col Y: change found to expected. Max 200 words. If correct, state 'All values match.'")
+    suggested_fix: Optional[str] = Field(default=None, description="If incorrect, repeat each error: idx X, Col \"name\": change \"wrong_value\" to \"correct_value\"")
     
 class PKPECuratedTablesVerificationStep(PKPECommonStep):
     def __init__(
@@ -139,12 +178,18 @@ Suggested fix:
             return state, {**DEFAULT_TOKEN_USAGE}
 
         try:
+            prev_thoughts = state.get("previous_verification_thoughts") or []
+            prev_thoughts_str = "\n\n".join(
+                f"Attempt {i+1}:\n{t}" for i, t in enumerate(prev_thoughts)
+            ) if prev_thoughts else "None"
+
             system_prompt = PKPE_VERIFICATION_SYSTEM_PROMPT.format(
                 paper_title=state["paper_title"],
                 paper_abstract=state["paper_abstract"],
                 source_tables=source_tables,
                 curated_table=state["curated_table"],
                 domain=self.domain,
+                previous_verification_thoughts=prev_thoughts_str,
             )
             instruction_prompt = COT_USER_INSTRUCTION
             agent = self.get_agent(llm=self.llm)
@@ -173,6 +218,10 @@ Suggested fix:
 
         if not res.correct:
             self._update_intermediate_output(state, state["explanation"], state["suggested_fix"])
+            entry = f"Explanation: {state['explanation']}\nSuggested fix: {state['suggested_fix']}"
+            thoughts = state.get("previous_verification_thoughts") or []
+            thoughts.append(entry)
+            state["previous_verification_thoughts"] = thoughts[-2:]
         valid_reasoning = reasoning_process if isinstance(reasoning_process, str) and reasoning_process.strip() else None
         state["verification_reasoning_process"] = valid_reasoning or state["suggested_fix"] or state["explanation"]
 

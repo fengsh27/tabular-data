@@ -40,6 +40,7 @@ class PKPECurationWorkflowState(TypedDict):
     explanation: Optional[str] = None
     verification_reasoning_process: Optional[str] = None
     previous_errors: Optional[str] = None
+    previous_verification_thoughts: Optional[list[str]] = None
     step_output_callback: Optional[Callable] = None
     step_count: Optional[int] = 0
     pipeline_tools: Optional[list[str]] = None
