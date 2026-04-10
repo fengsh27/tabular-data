@@ -171,6 +171,8 @@ class PKPECuratedTablesVerificationStep(PKPECommonStep):
 
     _CHANGE_PATTERN = re.compile(r'change\s+"([^"]*)"\s+to\s+"([^"]*)"')
     _IDX_COL_PATTERN = re.compile(r'(idx\s+\d+,\s*Col\s+"[^"]*")')
+    _IDX_NUM_PATTERN = re.compile(r'idx\s+(\d+)')
+    _COL_NAME_PATTERN = re.compile(r'Col\s+"([^"]*)"')
 
     @staticmethod
     def _remove_noop_fixes(text: str) -> str:
@@ -186,8 +188,7 @@ class PKPECuratedTablesVerificationStep(PKPECommonStep):
             if m and m.group(1) == m.group(2):
                 continue
             filtered.append(line)
-        result = "\n".join(filtered).strip()
-        return result if result else text
+        return "\n".join(filtered).strip()
 
     @staticmethod
     def _remove_oscillation_fixes(text: str, previous_thoughts: list[str]) -> str:
@@ -222,8 +223,42 @@ class PKPECuratedTablesVerificationStep(PKPECommonStep):
                     logger.info(f"Oscillation detected, removing: {line.strip()}")
                     continue
             filtered.append(line)
-        result = "\n".join(filtered).strip()
-        return result if result else text
+        return "\n".join(filtered).strip()
+
+    @staticmethod
+    def _remove_stale_fixes(text: str, curated_table: str) -> str:
+        """Remove lines where the 'from' value doesn't match the actual value in the curated table.
+        E.g., suggested fix says idx 52, Col "Parameter value": change "52" to "55.1"
+        but the actual value at idx 52 is already "55.1" — this fix is stale/wrong.
+        """
+        if not text or not curated_table:
+            return text
+        try:
+            from TabFuncFlow.utils.table_utils import markdown_to_dataframe
+            df = markdown_to_dataframe(curated_table)
+        except Exception:
+            return text
+
+        lines = text.split("\n")
+        filtered = []
+        for line in lines:
+            idx_m = PKPECuratedTablesVerificationStep._IDX_NUM_PATTERN.search(line)
+            col_m = PKPECuratedTablesVerificationStep._COL_NAME_PATTERN.search(line)
+            change_m = PKPECuratedTablesVerificationStep._CHANGE_PATTERN.search(line)
+            if idx_m and col_m and change_m:
+                idx = int(idx_m.group(1))
+                col_name = col_m.group(1)
+                from_value = change_m.group(1)
+                if col_name in df.columns and idx < len(df):
+                    actual_value = str(df.iloc[idx][col_name]).strip()
+                    if actual_value != from_value:
+                        logger.info(
+                            f"Stale fix removed: {line.strip()} "
+                            f"(actual value is \"{actual_value}\", not \"{from_value}\")"
+                        )
+                        continue
+            filtered.append(line)
+        return "\n".join(filtered).strip()
 
     def _update_intermediate_output(self, state, explanation, suggested_fix):
         error_msg = """
@@ -302,12 +337,19 @@ Suggested fix:
             if filtered_suggested_fix:
                 filtered_suggested_fix = self._remove_oscillation_fixes(filtered_suggested_fix, prev_thoughts)
 
+        # Filter out stale fixes (where the "from" value doesn't match the actual table value)
+        curated_table = state.get("curated_table")
+        if curated_table:
+            filtered_explanation = self._remove_stale_fixes(filtered_explanation, curated_table)
+            if filtered_suggested_fix:
+                filtered_suggested_fix = self._remove_stale_fixes(filtered_suggested_fix, curated_table)
+
         self._print_step(state, step_output=f"Verification Explanation: \n\n{filtered_explanation}")
         self._print_step(state, step_output=f"Verification Suggested Fix: \n\n{filtered_suggested_fix}")
-        # If all fixes were no-ops or oscillations, treat as correct
+        # If all fixes were no-ops, oscillations, or stale, treat as correct
         if not res.correct and (filtered_suggested_fix is None or not filtered_suggested_fix.strip()):
-            logger.info("All suggested fixes were no-ops or oscillations after filtering; treating as correct.")
-            self._print_step(state, step_output="All suggested fixes were no-ops or oscillations; treating as correct.")
+            logger.info("All suggested fixes were no-ops, oscillations, or stale after filtering; treating as correct.")
+            self._print_step(state, step_output="All suggested fixes were no-ops, oscillations, or stale; treating as correct.")
             state["final_answer"] = FinalAnswerEnum.Correct
             state["explanation"] = "All values match after filtering."
             state["suggested_fix"] = "N/A"

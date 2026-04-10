@@ -65,6 +65,15 @@ from system_tests.conftest_data_18426260 import (
     data_caption_18426260_table_1,
     data_md_table_18426260_table_1,
 )
+from system_tests.conftest_data_19065567 import (
+    data_title_19065567,
+    data_abstract_19065567,
+    data_md_table_19065567_table_1,
+    data_md_curated_table_pk_summary_19065567,
+    data_verification_explanation_19065567,
+    data_verification_final_answer_19065567,
+    data_verification_suggested_fix_19065567,
+)
 from system_tests.conftest_data_23200982 import (
     data_title_23200982,
     data_abstract_23200982,
@@ -2674,6 +2683,42 @@ def col_mapping_table_1_33253437():
 @pytest.fixture(scope="module")
 def md_table_patient_table_1_33253437():
     return data_md_table_patient_table_1_33253437
+
+# ============================================================================================
+# 23200982
+# ============================================================================================
+
+# ============================================================================================
+# 19065567
+# ============================================================================================
+
+@pytest.fixture(scope="module")
+def title_19065567():
+    return data_title_19065567
+
+@pytest.fixture(scope="module")
+def abstract_19065567():
+    return data_abstract_19065567
+
+@pytest.fixture(scope="module")
+def md_table_19065567_table_1():
+    return data_md_table_19065567_table_1
+
+@pytest.fixture(scope="module")
+def md_curated_table_pk_summary_19065567():
+    return data_md_curated_table_pk_summary_19065567
+
+@pytest.fixture(scope="module")
+def verification_explanation_19065567():
+    return data_verification_explanation_19065567
+
+@pytest.fixture(scope="module")
+def verification_final_answer_19065567():
+    return data_verification_final_answer_19065567
+
+@pytest.fixture(scope="module")
+def verification_suggested_fix_19065567():
+    return data_verification_suggested_fix_19065567
 
 # ============================================================================================
 # 23200982
