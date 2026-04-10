@@ -79,6 +79,8 @@ Input/Output contract:
 
 IMPORTANT: "idx" in the correction task refers to 0-based row index (idx 0 = first data row of the DataFrame, i.e. df.iloc[0]). Do NOT treat it as 1-based.
 
+When the task specifies idx numbers, use df.at[idx, "column_name"] to target cells directly. Do NOT use value-based matching (e.g., df.loc[df["col"] == "value"]) to locate rows — the values may be ambiguous or duplicated. Always use the idx provided.
+
 Required structure of the code (enforced order):
 1) import pandas as pd
 2) df = markdown_to_dataframe(curated_md)
@@ -183,11 +185,8 @@ class PKPECuratedTablesCorrectionCodeStep(PKPECommonStep):
             current_md = result_md
 
         if current_md == curated_md:
-            logger.error("Correction step produced no changes; leaving curated_table unchanged.")
-            self._print_step(state, step_output="Correction step produced no changes; leaving curated_table unchanged.")
-            state["final_answer"] = FinalAnswerEnum.CorrectionError
-            state["suggested_fix"] = "N/A"
-            return state, total_token_usage
+            logger.warning("Correction step produced no changes; passing unchanged table back to verification.")
+            self._print_step(state, step_output="Correction step produced no changes; passing unchanged table back to verification.")
 
         state["curated_table"] = current_md
         self._print_step(state, step_output=f"Corrected Table: \n\n{current_md}")
