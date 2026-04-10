@@ -119,7 +119,10 @@ For extra rows that should be removed:
 
 {previous_verification_thoughts}
 
-If this section is not empty, use it to understand what was already checked and whether prior corrections resolved those issues. Do NOT re-report issues that have already been fully resolved.
+If this section is not empty:
+- Use it to understand what was already checked and whether prior corrections resolved those issues.
+- Do NOT re-report issues that have already been fully resolved.
+- **CRITICAL: Do NOT revert a previous correction.** If a previous attempt changed a value from A to B, and the current table now has B, do NOT suggest changing it back to A. A correction that was already applied is considered resolved — accept the current value.
 
 ---
 
