@@ -75,12 +75,15 @@ For extra rows that should be removed:
 
 * The columns in the curated table are fixed — do NOT question column names or order.
 * Focus on **substantial mismatches** in values or structure. Minor typos, slight wording differences, or small formatting variations are acceptable. 
-  In particular, ignore footnote markers or superscripts attached to values (e.g., "< LODa" vs "< LOD", "3.5*" vs "3.5").
+  In particular, 
+    - **ignore** footnote markers or superscripts attached to values (e.g., "< LODa" vs "< LOD", "3.5*" vs "3.5").
+    - **ignore** the difference between "nan" and "N/A" and "N/A" and "NA", and so on.
+* In explanation, **must not** include thinking process, such as "re-evaluate", "wait", "re-check", "Let's check", etc, and **must not** exceed 200 words.
 * When values in text and table disagree, treat the **table values as ground truth**.
 * You MUST list **EVERY** incorrect value. Do NOT use phrases like "for instance", "for example", "such as", "e.g.", or "etc." to give partial examples. An incomplete error list means corrections will be incomplete.
 * Do NOT explain WHY a value is wrong — just state WHAT is wrong and WHAT it should be.
 * Only list rows that have ACTUAL errors. Do NOT list rows where the current value already matches the expected value (e.g., do NOT write: idx 2, Col "P value": change "0.001" to "0.001").
-* Keep explanation under 200 words. No reasoning, no justification — only the error list.
+* **Keep explanation under 200 words**. No reasoning, no justification — only the error list.
 
 ---
 

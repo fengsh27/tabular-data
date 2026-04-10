@@ -36,6 +36,7 @@ Rules:
 - Do NOT group unrelated edits into one task.
 - Do NOT write any code — only write task descriptions.
 - Include ALL corrections from the Reasoning Process; do not skip any.
+- IGNORE no-op entries where the value is unchanged (e.g., idx 2, Col "Parameter value": change "3" to "3"). Do NOT generate a task for these.
 - IMPORTANT: "idx" in the Reasoning Process refers to 0-based row index (idx 0 = first data row of the DataFrame, i.e. df.iloc[0]). Do NOT treat it as 1-based.
 
 --------------------
