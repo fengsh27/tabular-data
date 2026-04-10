@@ -291,8 +291,6 @@ Suggested fix:
             reasoning_process = res.reasoning_process if hasattr(res, "reasoning_process") else None
         self._print_step(state, step_output=reasoning_process or "N / A")
         self._print_step(state, step_output=f"Verification Final Answer: \n\n{res.correct}")
-        self._print_step(state, step_output=f"Verification Explanation: \n\n{res.explanation}")
-        self._print_step(state, step_output=f"Verification Suggested Fix: \n\n{res.suggested_fix}")
         # Filter out no-op fixes (e.g., change "0.001" to "0.001")
         filtered_explanation = self._remove_noop_fixes(res.explanation)
         filtered_suggested_fix = self._remove_noop_fixes(res.suggested_fix) if res.suggested_fix else None
@@ -304,6 +302,8 @@ Suggested fix:
             if filtered_suggested_fix:
                 filtered_suggested_fix = self._remove_oscillation_fixes(filtered_suggested_fix, prev_thoughts)
 
+        self._print_step(state, step_output=f"Verification Explanation: \n\n{filtered_explanation}")
+        self._print_step(state, step_output=f"Verification Suggested Fix: \n\n{filtered_suggested_fix}")
         # If all fixes were no-ops or oscillations, treat as correct
         if not res.correct and (filtered_suggested_fix is None or not filtered_suggested_fix.strip()):
             logger.info("All suggested fixes were no-ops or oscillations after filtering; treating as correct.")
