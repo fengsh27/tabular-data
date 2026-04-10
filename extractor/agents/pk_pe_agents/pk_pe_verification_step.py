@@ -1,5 +1,6 @@
 from typing import Callable, Optional
 import logging
+import re
 from langchain_openai.chat_models.base import BaseChatOpenAI
 from pydantic import BaseModel, Field
 
@@ -168,6 +169,62 @@ class PKPECuratedTablesVerificationStep(PKPECommonStep):
         self.pmid = pmid
         self.domain = domain
 
+    _CHANGE_PATTERN = re.compile(r'change\s+"([^"]*)"\s+to\s+"([^"]*)"')
+    _IDX_COL_PATTERN = re.compile(r'(idx\s+\d+,\s*Col\s+"[^"]*")')
+
+    @staticmethod
+    def _remove_noop_fixes(text: str) -> str:
+        """Remove lines where the 'change' from/to values are identical, e.g.
+        idx 2, Col "P value": change "0.001" to "0.001"
+        """
+        if not text:
+            return text
+        lines = text.split("\n")
+        filtered = []
+        for line in lines:
+            m = PKPECuratedTablesVerificationStep._CHANGE_PATTERN.search(line)
+            if m and m.group(1) == m.group(2):
+                continue
+            filtered.append(line)
+        result = "\n".join(filtered).strip()
+        return result if result else text
+
+    @staticmethod
+    def _remove_oscillation_fixes(text: str, previous_thoughts: list[str]) -> str:
+        """Remove lines that revert a previous fix (oscillation detection).
+        E.g., previous said: idx 1, Col "X": change "A" to "B"
+             current says:  idx 1, Col "X": change "B" to "A"
+        """
+        if not text or not previous_thoughts:
+            return text
+        # Build a set of (cell_key, from, to) from previous thoughts
+        prev_fixes = set()
+        for thought in previous_thoughts:
+            for line in thought.split("\n"):
+                idx_m = PKPECuratedTablesVerificationStep._IDX_COL_PATTERN.search(line)
+                change_m = PKPECuratedTablesVerificationStep._CHANGE_PATTERN.search(line)
+                if idx_m and change_m:
+                    cell_key = idx_m.group(1).lower().replace(" ", "")
+                    prev_fixes.add((cell_key, change_m.group(1), change_m.group(2)))
+
+        if not prev_fixes:
+            return text
+
+        lines = text.split("\n")
+        filtered = []
+        for line in lines:
+            idx_m = PKPECuratedTablesVerificationStep._IDX_COL_PATTERN.search(line)
+            change_m = PKPECuratedTablesVerificationStep._CHANGE_PATTERN.search(line)
+            if idx_m and change_m:
+                cell_key = idx_m.group(1).lower().replace(" ", "")
+                # Current wants to change B→A, but previous changed A→B — this is a revert
+                if (cell_key, change_m.group(2), change_m.group(1)) in prev_fixes:
+                    logger.info(f"Oscillation detected, removing: {line.strip()}")
+                    continue
+            filtered.append(line)
+        result = "\n".join(filtered).strip()
+        return result if result else text
+
     def _update_intermediate_output(self, state, explanation, suggested_fix):
         error_msg = """
         #### **Error**
@@ -236,10 +293,30 @@ Suggested fix:
         self._print_step(state, step_output=f"Verification Final Answer: \n\n{res.correct}")
         self._print_step(state, step_output=f"Verification Explanation: \n\n{res.explanation}")
         self._print_step(state, step_output=f"Verification Suggested Fix: \n\n{res.suggested_fix}")
+        # Filter out no-op fixes (e.g., change "0.001" to "0.001")
+        filtered_explanation = self._remove_noop_fixes(res.explanation)
+        filtered_suggested_fix = self._remove_noop_fixes(res.suggested_fix) if res.suggested_fix else None
+
+        # Filter out oscillation fixes (reverting a previous correction)
+        prev_thoughts = state.get("previous_verification_thoughts") or []
+        if prev_thoughts:
+            filtered_explanation = self._remove_oscillation_fixes(filtered_explanation, prev_thoughts)
+            if filtered_suggested_fix:
+                filtered_suggested_fix = self._remove_oscillation_fixes(filtered_suggested_fix, prev_thoughts)
+
+        # If all fixes were no-ops or oscillations, treat as correct
+        if not res.correct and (filtered_suggested_fix is None or not filtered_suggested_fix.strip()):
+            logger.info("All suggested fixes were no-ops or oscillations after filtering; treating as correct.")
+            self._print_step(state, step_output="All suggested fixes were no-ops or oscillations; treating as correct.")
+            state["final_answer"] = FinalAnswerEnum.Correct
+            state["explanation"] = "All values match after filtering."
+            state["suggested_fix"] = "N/A"
+            return state, token_usage
+
         state["final_answer"] = FinalAnswerEnum.Correct if res.correct else FinalAnswerEnum.Incorrect
-        state["explanation"] = res.explanation
-        suggested_fix = res.suggested_fix if isinstance(res.suggested_fix, str) and res.suggested_fix.strip() else None
-        state["suggested_fix"] = suggested_fix if suggested_fix is not None else res.explanation
+        state["explanation"] = filtered_explanation
+        suggested_fix = filtered_suggested_fix if isinstance(filtered_suggested_fix, str) and filtered_suggested_fix.strip() else None
+        state["suggested_fix"] = suggested_fix if suggested_fix is not None else filtered_explanation
 
         if not res.correct:
             self._update_intermediate_output(state, state["explanation"], state["suggested_fix"])
