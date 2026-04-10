@@ -79,17 +79,36 @@ For extra rows that should be removed:
 * When values in text and table disagree, treat the **table values as ground truth**.
 * You MUST list **EVERY** incorrect value. Do NOT use phrases like "for instance", "for example", "such as", "e.g.", or "etc." to give partial examples. An incomplete error list means corrections will be incomplete.
 * Do NOT explain WHY a value is wrong — just state WHAT is wrong and WHAT it should be.
+* Only list rows that have ACTUAL errors. Do NOT list rows where the current value already matches the expected value (e.g., do NOT write: idx 2, Col "P value": change "0.001" to "0.001").
 * Keep explanation under 200 words. No reasoning, no justification — only the error list.
 
 ---
 
 ### **Output Example**
 
+CORRECT — only list actual errors:
 ```
 {{
   "correct": false,
   "explanation": "idx 3, Col \"Parameter value\": change \"4.13\" to \"< LOD\"\nidx 20, Col \"Parameter value\": change \"37\" to \"0.37\"",
   "suggested_fix": "idx 3, Col \"Parameter value\": change \"4.13\" to \"< LOD\"\nidx 20, Col \"Parameter value\": change \"37\" to \"0.37\""
+}}
+```
+
+WRONG cases — do NOT list correct rows or no-op changes:
+```
+{{
+  "correct": false,
+  "explanation": "idx 0, Col \"P value\": change \"0.01\" to \"0.01\"\nidx 1, Col \"P value\": change \"N/A\" to \"0.007\"\nidx 2, Col \"P value\": change \"0.04\" to \"0.04\"",
+  "suggested_fix": "idx 0, Col \"P value\": change \"0.01\" to \"0.01\"\nidx 1, Col \"P value\": change \"N/A\" to \"0.007\"\nidx 2, Col \"P value\": change \"0.04\" to \"0.04\""
+}}
+```
+Above is WRONG because idx 0 and idx 2 have no actual change ("0.01" to "0.01" and "0.04" to "0.04"). The correct output should only include idx 1:
+```
+{{
+  "correct": false,
+  "explanation": "idx 1, Col \"P value\": change \"N/A\" to \"0.007\"",
+  "suggested_fix": "idx 1, Col \"P value\": change \"N/A\" to \"0.007\""
 }}
 ```
 
