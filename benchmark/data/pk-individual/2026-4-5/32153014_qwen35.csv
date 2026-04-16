@@ -1,0 +1,31 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+1,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,TNF inhibitor-µg/mL serum-Maternal,µg/mL,25.3,23,days
+2,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,TNF inhibitor-µg/mL serum-Maternal,µg/mL,12.0,57,days
+3,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,TNF inhibitor-µg/mL serum-Maternal,µg/mL,17.0,31,days
+4,Etanercept,Etanercept,Serum,Maternal,Delivery,N/A,TNF inhibitor-µg/mL serum-Maternal,µg/mL,3.0,4,days
+5,Etanercept,Etanercept,Serum,Maternal,Delivery,N/A,TNF inhibitor-µg/mL serum-Maternal,µg/mL,<0.1,29,days
+6,Etanercept,Etanercept,Serum,Maternal,Delivery,N/A,TNF inhibitor-µg/mL serum-Maternal,µg/mL,0.2,16,days
+1,Infliximab,Infliximab,Cord blood,Maternal,Delivery,N/A,TNF inhibitor-µg/mL serum-Cord,µg/mL,29.8,23,days
+2,Infliximab,Infliximab,Cord blood,Maternal,Delivery,N/A,TNF inhibitor-µg/mL serum-Cord,µg/mL,24.0,57,days
+3,Infliximab,Infliximab,Cord blood,Maternal,Delivery,N/A,TNF inhibitor-µg/mL serum-Cord,µg/mL,29.0,31,days
+4,Etanercept,Etanercept,Cord blood,Maternal,Delivery,N/A,TNF inhibitor-µg/mL serum-Cord,µg/mL,0.1,4,days
+5,Etanercept,Etanercept,Cord blood,Maternal,Delivery,N/A,TNF inhibitor-µg/mL serum-Cord,µg/mL,<0.1,29,days
+6,Etanercept,Etanercept,Cord blood,Maternal,Delivery,N/A,TNF inhibitor-µg/mL serum-Cord,µg/mL,NA,16,days
+1,Infliximab,Infliximab,Placenta,Maternal,Delivery,N/A,TNF inhibitor-Mean ± SD (µg/g tissue)-Placenta,µg/g tissue,5.8 ± 0.9,23,days
+2,Infliximab,Infliximab,Placenta,Maternal,Delivery,N/A,TNF inhibitor-Mean ± SD (µg/g tissue)-Placenta,µg/g tissue,1.8 ± 0.0,57,days
+3,Infliximab,Infliximab,Placenta,Maternal,Delivery,N/A,TNF inhibitor-Mean ± SD (µg/g tissue)-Placenta,µg/g tissue,4.8 ± 1.5,31,days
+4,Etanercept,Etanercept,Placenta,Maternal,Delivery,N/A,TNF inhibitor-Mean ± SD (µg/g tissue)-Placenta,µg/g tissue,0.1 ± 0.1,4,days
+5,Etanercept,Etanercept,Placenta,Maternal,Delivery,N/A,TNF inhibitor-Mean ± SD (µg/g tissue)-Placenta,µg/g tissue,<0.1,29,days
+6,Etanercept,Etanercept,Placenta,Maternal,Delivery,N/A,TNF inhibitor-Mean ± SD (µg/g tissue)-Placenta,µg/g tissue,<0.1,16,days
+1,Infliximab,Infliximab,Cord blood,Maternal,Delivery,N/A,Cord‐to‐maternal ratio-Cord‐to‐maternal ratio-Cord‐to‐maternal ratio,N/A,1.18,23,days
+2,Infliximab,Infliximab,Cord blood,Maternal,Delivery,N/A,Cord‐to‐maternal ratio-Cord‐to‐maternal ratio-Cord‐to‐maternal ratio,N/A,2.00,57,days
+3,Infliximab,Infliximab,Cord blood,Maternal,Delivery,N/A,Cord‐to‐maternal ratio-Cord‐to‐maternal ratio-Cord‐to‐maternal ratio,N/A,1.71,31,days
+4,Etanercept,Etanercept,Cord blood,Maternal,Delivery,N/A,Cord‐to‐maternal ratio-Cord‐to‐maternal ratio-Cord‐to‐maternal ratio,N/A,0.04,4,days
+5,Etanercept,Etanercept,Cord blood,Maternal,Delivery,N/A,Cord‐to‐maternal ratio-Cord‐to‐maternal ratio-Cord‐to‐maternal ratio,N/A,NA,29,days
+6,Etanercept,Etanercept,Cord blood,Maternal,Delivery,N/A,Cord‐to‐maternal ratio-Cord‐to‐maternal ratio-Cord‐to‐maternal ratio,N/A,NA,16,days
+1,Infliximab,Infliximab,Placenta,Maternal,Delivery,N/A,Placenta‐to‐maternal ratio-Placenta‐to‐maternal ratio-Placenta‐to‐maternal ratio,N/A,0.35,23,days
+2,Infliximab,Infliximab,Placenta,Maternal,Delivery,N/A,Placenta‐to‐maternal ratio-Placenta‐to‐maternal ratio-Placenta‐to‐maternal ratio,N/A,0.23,57,days
+3,Infliximab,Infliximab,Placenta,Maternal,Delivery,N/A,Placenta‐to‐maternal ratio-Placenta‐to‐maternal ratio-Placenta‐to‐maternal ratio,N/A,0.44,31,days
+4,Etanercept,Etanercept,Placenta,Maternal,Delivery,N/A,Placenta‐to‐maternal ratio-Placenta‐to‐maternal ratio-Placenta‐to‐maternal ratio,N/A,0.03,4,days
+5,Etanercept,Etanercept,Placenta,Maternal,Delivery,N/A,Placenta‐to‐maternal ratio-Placenta‐to‐maternal ratio-Placenta‐to‐maternal ratio,N/A,NA,29,days
+6,Etanercept,Etanercept,Placenta,Maternal,Delivery,N/A,Placenta‐to‐maternal ratio-Placenta‐to‐maternal ratio-Placenta‐to‐maternal ratio,N/A,NA,16,days

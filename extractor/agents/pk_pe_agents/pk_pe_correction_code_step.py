@@ -36,6 +36,8 @@ Rules:
 - Do NOT group unrelated edits into one task.
 - Do NOT write any code — only write task descriptions.
 - Include ALL corrections from the Reasoning Process; do not skip any.
+- IGNORE no-op entries where the value is unchanged (e.g., idx 2, Col "Parameter value": change "3" to "3"). Do NOT generate a task for these.
+- IMPORTANT: "idx" in the Reasoning Process refers to 0-based row index (idx 0 = first data row of the DataFrame, i.e. df.iloc[0]). Do NOT treat it as 1-based.
 
 --------------------
 Paper Title:
@@ -74,6 +76,10 @@ Input/Output contract:
 - You must produce df_corrected (pandas.DataFrame).
 - df_corrected must preserve the same columns (names and order) as the curated table header.
 - All cell values must remain strings unless the task explicitly requires type conversion.
+
+IMPORTANT: "idx" in the correction task refers to 0-based row index (idx 0 = first data row of the DataFrame, i.e. df.iloc[0]). Do NOT treat it as 1-based.
+
+When the task specifies idx numbers, use df.at[idx, "column_name"] to target cells directly. Do NOT use value-based matching (e.g., df.loc[df["col"] == "value"]) to locate rows — the values may be ambiguous or duplicated. Always use the idx provided.
 
 Required structure of the code (enforced order):
 1) import pandas as pd
@@ -179,11 +185,8 @@ class PKPECuratedTablesCorrectionCodeStep(PKPECommonStep):
             current_md = result_md
 
         if current_md == curated_md:
-            logger.error("Correction step produced no changes; leaving curated_table unchanged.")
-            self._print_step(state, step_output="Correction step produced no changes; leaving curated_table unchanged.")
-            state["final_answer"] = FinalAnswerEnum.CorrectionError
-            state["suggested_fix"] = "N/A"
-            return state, total_token_usage
+            logger.warning("Correction step produced no changes; passing unchanged table back to verification.")
+            self._print_step(state, step_output="Correction step produced no changes; passing unchanged table back to verification.")
 
         state["curated_table"] = current_md
         self._print_step(state, step_output=f"Corrected Table: \n\n{current_md}")

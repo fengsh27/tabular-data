@@ -1,0 +1,167 @@
+,Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+0,1,Sertraline,Sertraline,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,19.5,N/A,N/A
+1,3,Sertraline,Sertraline,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,14.4,N/A,N/A
+2,4,Sertraline,Sertraline,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,25.7,N/A,N/A
+3,5,Sertraline,Sertraline,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,42.7,N/A,N/A
+4,12,Sertraline,Sertraline,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,16.7,N/A,N/A
+5,13,Sertraline,Sertraline,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,26,N/A,N/A
+6,14,Sertraline,Sertraline,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,14.1,N/A,N/A
+7,15,Sertraline,Sertraline,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,27.4,N/A,N/A
+8,18,Sertraline,Sertraline,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,12.1,N/A,N/A
+9,43,Sertraline,Sertraline,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,13.2,N/A,N/A
+10,52,Sertraline,Sertraline,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,<5,N/A,N/A
+11,53,Sertraline,Sertraline,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,13.1,N/A,N/A
+12,36,Citalopram,Citalopram,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,90.2,N/A,N/A
+13,42,Citalopram,Citalopram,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,14.9,N/A,N/A
+14,9,Escitalopram,Escitalopram,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,<5,N/A,N/A
+15,10,Escitalopram,Escitalopram,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,21.8,N/A,N/A
+16,30,Escitalopram,Escitalopram,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,68.8,N/A,N/A
+17,56,Escitalopram,Escitalopram,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,<5,N/A,N/A
+18,2,Venlafaxine,Venlafaxine,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,245,N/A,N/A
+19,6,Venlafaxine,Venlafaxine,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,37.6,N/A,N/A
+20,16,Venlafaxine,Venlafaxine,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,86.1,N/A,N/A
+21,17,Venlafaxine,Venlafaxine,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,71.5,N/A,N/A
+22,24,Venlafaxine,Venlafaxine,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,154.6,N/A,N/A
+23,8,Paroxetine,Paroxetine,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,10.3,N/A,N/A
+24,49,Paroxetine,Paroxetine,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,<5,N/A,N/A
+25,50,Paroxetine,Paroxetine,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,41.9,N/A,N/A
+26,39,Fluoxetine,Fluoxetine,Plasma,Maternal,Trimester 3,N/A,Mother's Plasma Level-III trimester,ng/ml,346.8,N/A,N/A
+27,1,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,NA,N/A,N/A
+28,3,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,6.1,N/A,N/A
+29,4,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,NA,N/A,N/A
+30,5,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,16.7,N/A,N/A
+31,12,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,14.1,N/A,N/A
+32,13,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,12,N/A,N/A
+33,14,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,11.6,N/A,N/A
+34,15,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,42.6,N/A,N/A
+35,18,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,NA,N/A,N/A
+36,22,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,24.5,N/A,N/A
+37,23,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,9.2,N/A,N/A
+38,25,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,89,N/A,N/A
+39,26,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,32.7,N/A,N/A
+40,32,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,12.7,N/A,N/A
+41,33,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,9.5,N/A,N/A
+42,34,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,7.4,N/A,N/A
+43,35,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,7.8,N/A,N/A
+44,37,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,16.9,N/A,N/A
+45,38,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,9.5,N/A,N/A
+46,43,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,7.7,N/A,N/A
+47,46,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,20,N/A,N/A
+48,48,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,8.7,N/A,N/A
+49,52,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,<5,N/A,N/A
+50,53,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,<5,N/A,N/A
+51,36,Citalopram,Citalopram,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,NA,N/A,N/A
+52,42,Citalopram,Citalopram,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,9.3,N/A,N/A
+53,9,Escitalopram,Escitalopram,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,NA,N/A,N/A
+54,10,Escitalopram,Escitalopram,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,32.4,N/A,N/A
+55,28,Escitalopram,Escitalopram,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,10.1,N/A,N/A
+56,29,Escitalopram,Escitalopram,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,<5,N/A,N/A
+57,30,Escitalopram,Escitalopram,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,36.5,N/A,N/A
+58,47,Escitalopram,Escitalopram,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,8.9,N/A,N/A
+59,56,Escitalopram,Escitalopram,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,<5,N/A,N/A
+60,2,Venlafaxine,Venlafaxine,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,76.8,N/A,N/A
+61,6,Venlafaxine,Venlafaxine,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,NA,N/A,N/A
+62,7,Venlafaxine,Venlafaxine,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,179.9,N/A,N/A
+63,16,Venlafaxine,Venlafaxine,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,NA,N/A,N/A
+64,17,Venlafaxine,Venlafaxine,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,NA,N/A,N/A
+65,20,Venlafaxine,Venlafaxine,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,199.8,N/A,N/A
+66,24,Venlafaxine,Venlafaxine,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,NA,N/A,N/A
+67,8,Paroxetine,Paroxetine,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,NA,N/A,N/A
+68,19,Paroxetine,Paroxetine,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,10,N/A,N/A
+69,21,Paroxetine,Paroxetine,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,23.4,N/A,N/A
+70,31,Paroxetine,Paroxetine,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,48.6,N/A,N/A
+71,45,Paroxetine,Paroxetine,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,<5,N/A,N/A
+72,49,Paroxetine,Paroxetine,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,<5,N/A,N/A
+73,50,Paroxetine,Paroxetine,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,12.9,N/A,N/A
+74,51,Paroxetine,Paroxetine,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,<5,N/A,N/A
+75,44,Fluoxetine,Fluoxetine,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,216.8,N/A,N/A
+76,41,Fluoxetine,Fluoxetine,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,<5,N/A,N/A
+77,40,Fluoxetine,Fluoxetine,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,147,N/A,N/A
+78,54,Paroxetine,Paroxetine,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,<5,N/A,N/A
+79,55,Paroxetine,Paroxetine,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,<5,N/A,N/A
+80,57,Paroxetine,Paroxetine,Plasma,Maternal,Delivery,N/A,Mother's PL (ng/ml) delivery,ng/ml,<5,N/A,N/A
+81,1,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,NA,N/A,N/A
+82,3,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,<5,N/A,N/A
+83,4,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,9,N/A,N/A
+84,5,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,9.7,N/A,N/A
+85,12,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,<5,N/A,N/A
+86,13,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,<5,N/A,N/A
+87,14,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,<5,N/A,N/A
+88,15,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,19,N/A,N/A
+89,18,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,NA,N/A,N/A
+90,22,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,11.1,N/A,N/A
+91,23,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,6.5,N/A,N/A
+92,25,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,35.5,N/A,N/A
+93,26,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,7.8,N/A,N/A
+94,32,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,13,N/A,N/A
+95,33,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,<5,N/A,N/A
+96,34,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,<5,N/A,N/A
+97,35,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,<5,N/A,N/A
+98,37,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,8.2,N/A,N/A
+99,38,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,<5,N/A,N/A
+100,43,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,12.3,N/A,N/A
+101,46,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,6,N/A,N/A
+102,48,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,5,N/A,N/A
+103,52,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,<5,N/A,N/A
+104,53,Sertraline,Sertraline,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,NA,N/A,N/A
+105,36,Citalopram,Citalopram,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,NA,N/A,N/A
+106,42,Citalopram,Citalopram,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,5.5,N/A,N/A
+107,9,Escitalopram,Escitalopram,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,NA,N/A,N/A
+108,10,Escitalopram,Escitalopram,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,15.9,N/A,N/A
+109,28,Escitalopram,Escitalopram,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,NA,N/A,N/A
+110,29,Escitalopram,Escitalopram,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,NA,N/A,N/A
+111,30,Escitalopram,Escitalopram,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,NA,N/A,N/A
+112,47,Escitalopram,Escitalopram,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,7.7,N/A,N/A
+113,56,Escitalopram,Escitalopram,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,<5,N/A,N/A
+114,2,Venlafaxine,Venlafaxine,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,184.8,N/A,N/A
+115,6,Venlafaxine,Venlafaxine,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,NA,N/A,N/A
+116,7,Venlafaxine,Venlafaxine,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,234.7,N/A,N/A
+117,16,Venlafaxine,Venlafaxine,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,NA,N/A,N/A
+118,17,Venlafaxine,Venlafaxine,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,NA,N/A,N/A
+119,20,Venlafaxine,Venlafaxine,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,78.9,N/A,N/A
+120,24,Venlafaxine,Venlafaxine,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,NA,N/A,N/A
+121,8,Paroxetine,Paroxetine,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,NA,N/A,N/A
+122,19,Paroxetine,Paroxetine,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,NA,N/A,N/A
+123,21,Paroxetine,Paroxetine,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,9.1,N/A,N/A
+124,31,Paroxetine,Paroxetine,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,10.3,N/A,N/A
+125,45,Paroxetine,Paroxetine,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,<5,N/A,N/A
+126,49,Paroxetine,Paroxetine,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,NA,N/A,N/A
+127,50,Paroxetine,Paroxetine,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,2.5,N/A,N/A
+128,51,Paroxetine,Paroxetine,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,<5,N/A,N/A
+129,54,Paroxetine,Paroxetine,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,<5,N/A,N/A
+130,39,Fluoxetine,Fluoxetine,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,NA,N/A,N/A
+131,40,Fluoxetine,Fluoxetine,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,152,N/A,N/A
+132,41,Fluoxetine,Fluoxetine,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,<5,N/A,N/A
+133,44,Fluoxetine,Fluoxetine,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,108.6,N/A,N/A
+134,55,Paroxetine,Paroxetine,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,<5,N/A,N/A
+135,57,Paroxetine,Paroxetine,Plasma,Neonatal,Delivery,N/A,Infant-Plasma-Concentration,ng/ml,<5,N/A,N/A
+136,3,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,40.1,N/A,N/A
+137,5,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,58.1,N/A,N/A
+138,12,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,17.7,N/A,N/A
+139,13,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,20.8,N/A,N/A
+140,14,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,21.5,N/A,N/A
+141,15,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,44.6,N/A,N/A
+142,22,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,45.3,N/A,N/A
+143,23,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,70.6,N/A,N/A
+144,25,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,39.9,N/A,N/A
+145,26,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,23.8,N/A,N/A
+146,32,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,102.4,N/A,N/A
+147,33,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,26.3,N/A,N/A
+148,34,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,33.8,N/A,N/A
+149,35,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,32.0,N/A,N/A
+150,37,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,48.5,N/A,N/A
+151,38,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,26.6,N/A,N/A
+152,43,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,159.7,N/A,N/A
+153,46,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,30.0,N/A,N/A
+154,48,Sertraline,Sertraline,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,57.5,N/A,N/A
+155,42,Citalopram,Citalopram,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,59.1,N/A,N/A
+156,10,Escitalopram,Escitalopram,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,49.1,N/A,N/A
+157,47,Escitalopram,Escitalopram,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,86.5,N/A,N/A
+158,2,Venlafaxine,Venlafaxine,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,240.6,N/A,N/A
+159,7,Venlafaxine,Venlafaxine,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,13.5,N/A,N/A
+160,20,Venlafaxine,Venlafaxine,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,39.5,N/A,N/A
+161,21,Paroxetine,Paroxetine,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,38.9,N/A,N/A
+162,31,Paroxetine,Paroxetine,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,21.2,N/A,N/A
+163,50,Paroxetine,Paroxetine,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,19.4,N/A,N/A
+164,44,Fluoxetine,Fluoxetine,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,50.1,N/A,N/A
+165,40,Fluoxetine,Fluoxetine,Plasma,Maternal,Delivery,N/A,Umbilical maternal ratio,%,103.4,N/A,N/A

@@ -1,0 +1,142 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+1,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_0,mg/d,40,20 Weeks,N/A
+1,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_0,ng/mL,32,20 Weeks,N/A
+1,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_0,ng/mL,40,30 Weeks,N/A
+1,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_0,mg/d,40,30 Weeks,N/A
+1,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_0,ng/mL,25,36 Weeks,N/A
+1,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_0,mg/d,50,36 Weeks,N/A
+1,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_0,mg/d,50,Delivery,N/A
+1,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_0,ng/mL,15,Delivery,N/A
+1,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_0,ng/mL,18,Postpartum 12 Weeks,N/A
+1,Citalopram,R-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,R-citalopram_0-Plasma Level,ng/mL,62,20 Weeks,N/A
+1,Citalopram,R-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,R-citalopram_0-Plasma Level,ng/mL,64,30 Weeks,N/A
+1,Citalopram,R-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,R-citalopram_0-Plasma Level,ng/mL,41,36 Weeks,N/A
+1,Citalopram,R-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,R-citalopram_0-Plasma Level,ng/mL,24,Delivery,N/A
+1,Citalopram,R-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,R-citalopram_0-Dose,ng/mL,36,Postpartum 12 Weeks,N/A
+1,Citalopram,R-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,R-citalopram_0-Plasma Level,ng/mL,NA,36 Weeks,N/A
+1,Citalopram,R-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,R-citalopram_0-Plasma Level,ng/mL,NA,Delivery,N/A
+2,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_1,mg/d,20,20 Weeks,N/A
+2,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_1,ng/mL,14,20 Weeks,N/A
+2,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_1,mg/d,40,30 Weeks,N/A
+2,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_1,ng/mL,18,30 Weeks,N/A
+2,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_1,mg/d,NA,36 Weeks,N/A
+2,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_1,ng/mL,NA,36 Weeks,N/A
+2,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_1,ng/mL,54,Delivery,N/A
+2,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_1,ng/mL,27,Delivery,N/A
+2,Citalopram,R-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,R-citalopram_1,ng/mL,24,20 Weeks,N/A
+2,Citalopram,R-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,R-citalopram_1,ng/mL,36,20 Weeks,N/A
+2,Citalopram,R-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,R-citalopram_1,mg/d,NA,30 Weeks,N/A
+2,Citalopram,R-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,R-citalopram_1,ng/mL,NA,30 Weeks,N/A
+2,Citalopram,R-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,R-citalopram_1,ng/mL,101,36 Weeks,N/A
+2,Citalopram,R-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,R-citalopram_1,ng/mL,75,36 Weeks,N/A
+3b,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_2,mg/d,30,20 Weeks,N/A
+3b,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_2,ng/mL,19,20 Weeks,N/A
+3b,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_2,ng/mL,9,30 Weeks,N/A
+3b,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_2,mg/d,20,30 Weeks,N/A
+3b,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_2,ng/mL,5,36 Weeks,N/A
+3b,Citalopram,R-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,R-citalopram_2,ng/mL,41,20 Weeks,N/A
+3b,Citalopram,R-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,R-citalopram_2,ng/mL,22,20 Weeks,N/A
+3b,Citalopram,R-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,R-citalopram_2,ng/mL,14,30 Weeks,N/A
+4,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_3-Dose,mg/d,10,20 Weeks,N/A
+4,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_3-Plasma Level,ng/mL,17,20 Weeks,N/A
+4,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_3-Plasma Level,ng/mL,10,30 Weeks,N/A
+4,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_3-Plasma Level,ng/mL,13,30 Weeks,N/A
+4,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_3-Plasma Level,ng/mL,14,36 Weeks,N/A
+4,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_3-Plasma Level,ng/mL,24,36 Weeks,N/A
+4,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_3-Dose,mg/d,NA,Delivery,N/A
+4,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_3-Plasma Level,ng/mL,NA,Delivery,N/A
+5,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_4,mg/d,20,20 Weeks,N/A
+5,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_4,ng/mL,58,20 Weeks,N/A
+5,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_4,ng/mL,70,30 Weeks,N/A
+5,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_4,ng/mL,67,30 Weeks,N/A
+5,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_4,mg/d,NA,36 Weeks,N/A
+5,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_4,ng/mL,NA,36 Weeks,N/A
+5,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_4,ng/mL,95,Delivery,N/A
+5,Citalopram,S-citalopram,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-citalopram_4,ng/mL,63,Delivery,N/A
+6,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_0,mg/d,NA,20 Weeks,N/A
+6,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_0,ng/mL,NA,20 Weeks,N/A
+6,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_0,mg/d,50,30 Weeks,N/A
+6,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_0,ng/mL,27,30 Weeks,N/A
+6,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_0,ng/mL,11,36 Weeks,N/A
+6,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_0,ng/mL,21,36 Weeks,N/A
+6,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_0-Plasma Level,ng/mL,NA,20 Weeks,N/A
+6,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_0-Plasma Level,ng/mL,44,20 Weeks,N/A
+6,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_0-Plasma Level,ng/mL,26,30 Weeks,N/A
+6,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_0-Plasma Level,ng/mL,52,30 Weeks,N/A
+6,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_0-Plasma Level,ng/mL,50,36 Weeks,N/A
+7,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_1,mg/d,50,20 Weeks,N/A
+7,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_1,ng/mL,10,20 Weeks,N/A
+7,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_1,ng/mL,20,30 Weeks,N/A
+7,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_1,mg/d,100,30 Weeks,N/A
+7,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_1,ng/mL,16,36 Weeks,N/A
+7,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_1,ng/mL,7,36 Weeks,N/A
+7,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_1,ng/mL,22,Delivery,N/A
+7,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_1,ng/mL,15,Delivery,N/A
+7,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_1,mg/d,NA,Postpartum 2 Weeks,N/A
+7,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_1,ng/mL,NA,Postpartum 2 Weeks,N/A
+7,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_1,ng/mL,18,20 Weeks,N/A
+7,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_1,ng/mL,40,20 Weeks,N/A
+7,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_1,ng/mL,66,30 Weeks,N/A
+7,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_1,ng/mL,32,30 Weeks,N/A
+7,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_1,ng/mL,41,36 Weeks,N/A
+7,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_1,ng/mL,29,36 Weeks,N/A
+7,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_1,ng/mL,NA,Delivery,N/A
+8,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_2,mg/d,50,20 Weeks,N/A
+8,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_2,ng/mL,4,20 Weeks,N/A
+8,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_2,mg/d,75,30 Weeks,N/A
+8,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_2,ng/mL,10,30 Weeks,N/A
+8,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_2,mg/d,100,36 Weeks,N/A
+8,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_2,ng/mL,39,36 Weeks,N/A
+8,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_2,mg/d,NA,Delivery,N/A
+8,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_2,ng/mL,NA,Delivery,N/A
+8,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_2,mg/d,200,Postpartum 2 Weeks,N/A
+8,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_2,ng/mL,21,Postpartum 2 Weeks,N/A
+8,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_2,ng/mL,16,20 Weeks,N/A
+8,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_2,ng/mL,17,20 Weeks,N/A
+8,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_2,ng/mL,74,30 Weeks,N/A
+8,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_2,ng/mL,NA,30 Weeks,N/A
+8,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_2,ng/mL,59,36 Weeks,N/A
+8,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_2,ng/mL,29,36 Weeks,N/A
+9,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_3-Dose,mg/d,NA,20 Weeks,N/A
+9,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_3-Plasma Level,ng/mL,NA,20 Weeks,N/A
+9,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_3-Dose,mg/d,150,30 Weeks,N/A
+9,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_3-Plasma Level,ng/mL,17,30 Weeks,N/A
+9,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_3-Dose,mg/d,200,36 Weeks,N/A
+9,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_3-Plasma Level,ng/mL,43,36 Weeks,N/A
+9,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_3-Plasma Level,ng/mL,32,Delivery,N/A
+9,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_3-Plasma Level,ng/mL,39,Delivery,N/A
+9,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_3,mg/d,NA,20 Weeks,N/A
+9,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_3,ng/mL,NA,20 Weeks,N/A
+9,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_3,ng/mL,141,30 Weeks,N/A
+9,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_3,ng/mL,147,30 Weeks,N/A
+9,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_3,ng/mL,120,36 Weeks,N/A
+9,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_3,ng/mL,149,36 Weeks,N/A
+10,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,Dose-S-sertraline_4,mg/d,100,20 Weeks,N/A
+10,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,Plasma Level-S-sertraline_4,ng/mL,93,20 Weeks,N/A
+10,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,Plasma Level-S-sertraline_4,ng/mL,45,30 Weeks,N/A
+10,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,Dose-S-sertraline_4,mg/d,NA,30 Weeks,N/A
+10,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,Plasma Level-S-sertraline_4,ng/mL,NA,36 Weeks,N/A
+10,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,Plasma Level-S-sertraline_4,ng/mL,28,36 Weeks,N/A
+10,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,Plasma Level-S-sertraline_4,ng/mL,62,Delivery,N/A
+10,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_4,ng/mL,72,20 Weeks,N/A
+10,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_4,ng/mL,92,20 Weeks,N/A
+10,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_4,ng/mL,NA,30 Weeks,N/A
+10,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_4,ng/mL,59,30 Weeks,N/A
+10,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_4,ng/mL,74,36 Weeks,N/A
+11,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_5,mg/d,50,20 Weeks,N/A
+11,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_5,ng/mL,32,20 Weeks,N/A
+11,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_5,mg/d,75,30 Weeks,N/A
+11,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_5,ng/mL,18,30 Weeks,N/A
+11,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_5,ng/mL,23,36 Weeks,N/A
+11,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_5,mg/d,100,36 Weeks,N/A
+11,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_5,mg/d,NA,Delivery,N/A
+11,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_5,ng/mL,NA,Delivery,N/A
+11,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_5,ng/mL,83,Postpartum 2 Weeks,N/A
+11,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_5,mg/d,125,Postpartum 2 Weeks,N/A
+11,Sertraline,S-sertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,S-sertraline_5,ng/mL,99,Postpartum 4 to 6 Weeks,N/A
+11,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_5,ng/mL,52,20 Weeks,N/A
+11,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_5,ng/mL,77,20 Weeks,N/A
+11,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_5,ng/mL,73,30 Weeks,N/A
+11,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_5,ng/mL,97,30 Weeks,N/A
+11,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_5,ng/mL,128,36 Weeks,N/A
+11,Sertraline,N-desmethylsertraline,Plasma,Maternal,Pregnancy and Postpartum,N/A,N-desmethylsertraline_5,ng/mL,183,36 Weeks,N/A
