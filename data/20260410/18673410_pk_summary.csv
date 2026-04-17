@@ -1,0 +1,5 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+LH Antagonist,Luteinising Hormone,Plasma,Sham,N/A,N/A,N/A,Half-life of plasma LH Time period 1 (0-10 min after LH administration),min,Mean,4.02,SEM,0.45,N/A,N/A,N/A,N/A,0-10,min
+LH Antagonist,Luteinising Hormone,Plasma,Tx,N/A,N/A,N/A,Half-life of plasma LH Time period 1 (0-10 min after LH administration),min,Mean,4.75,SEM,0.35,N/A,N/A,N/A,N/A,0-10,min
+LH Antagonist,Luteinising Hormone,Plasma,Sham,N/A,N/A,N/A,Half-life of plasma LH Time period 2 (10-240 min after LH administration),min,Mean,52.67,SEM,2.67,N/A,N/A,N/A,N/A,10-240,min
+LH Antagonist,Luteinising Hormone,Plasma,Tx,N/A,N/A,N/A,Half-life of plasma LH Time period 2 (10-240 min after LH administration),min,Mean,65.07,SEM,0.20,N/A,N/A,N/A,< 0.05,10-240,min

@@ -1,0 +1,199 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+A,Buprenorphine,Free BUP,Meconium,N/A,N/A,N/A,Free BUP ng/g,ng/g,101.6,N/A,N/A
+B,Buprenorphine,Free BUP,Meconium,N/A,N/A,N/A,Free BUP ng/g,ng/g,47.4,N/A,N/A
+C,Buprenorphine,Free BUP,Meconium,N/A,N/A,N/A,Free BUP ng/g,ng/g,101.0,N/A,N/A
+D (Baby 1),Buprenorphine,Free BUP,Meconium,Neonates,N/A,N/A,Free BUP ng/g,ng/g,59.3,N/A,N/A
+D (Baby 2),Buprenorphine,Free BUP,Meconium,Neonates,N/A,N/A,Free BUP ng/g,ng/g,59.6,N/A,N/A
+E,Buprenorphine,Free BUP,Meconium,N/A,N/A,N/A,Free BUP ng/g,ng/g,240.5,N/A,N/A
+F,Buprenorphine,Free BUP,Meconium,N/A,N/A,N/A,Free BUP ng/g,ng/g,NDb,N/A,N/A
+G,Buprenorphine,Free BUP,Meconium,N/A,N/A,N/A,Free BUP ng/g,ng/g,23.9,N/A,N/A
+H,Buprenorphine,Free BUP,Meconium,N/A,N/A,N/A,Free BUP ng/g,ng/g,40.4,N/A,N/A
+I,Buprenorphine,Free BUP,Meconium,N/A,N/A,N/A,Free BUP ng/g,ng/g,165.4,N/A,N/A
+A,Buprenorphine,Total BUP,Meconium,N/A,N/A,N/A,Total BUP ng/g,ng/g,123.8,N/A,N/A
+B,Buprenorphine,Total BUP,Meconium,N/A,N/A,N/A,Total BUP ng/g,ng/g,95.9,N/A,N/A
+C,Buprenorphine,Total BUP,Meconium,N/A,N/A,N/A,Total BUP ng/g,ng/g,131.3,N/A,N/A
+D (Baby 1),Buprenorphine,Total BUP,Meconium,Neonates,N/A,N/A,Total BUP ng/g,ng/g,96,N/A,N/A
+D (Baby 2),Buprenorphine,Total BUP,Meconium,Neonates,N/A,N/A,Total BUP ng/g,ng/g,169.6,N/A,N/A
+E,Buprenorphine,Total BUP,Meconium,N/A,N/A,N/A,Total BUP ng/g,ng/g,296.8,N/A,N/A
+F,Buprenorphine,Total BUP,Meconium,N/A,N/A,N/A,Total BUP ng/g,ng/g,24.3,N/A,N/A
+G,Buprenorphine,Total BUP,Meconium,N/A,N/A,N/A,Total BUP ng/g,ng/g,32.1,N/A,N/A
+H,Buprenorphine,Total BUP,Meconium,N/A,N/A,N/A,Total BUP ng/g,ng/g,91.6,N/A,N/A
+I,Buprenorphine,Total BUP,Meconium,N/A,N/A,N/A,Total BUP ng/g,ng/g,245.9,N/A,N/A
+A,Buprenorphine,Free BUP,Meconium,N/A,N/A,N/A,% Free BUP,%,82.0,N/A,N/A
+B,Buprenorphine,Free BUP,Meconium,N/A,N/A,N/A,% Free BUP,%,49.4,N/A,N/A
+C,Buprenorphine,Free BUP,Meconium,N/A,N/A,N/A,% Free BUP,%,76.9,N/A,N/A
+D (Baby 1),Buprenorphine,Free BUP,Meconium,Neonates,N/A,N/A,% Free BUP,%,61.7,N/A,N/A
+D (Baby 2),Buprenorphine,Free BUP,Meconium,Neonates,N/A,N/A,% Free BUP,%,35.1,N/A,N/A
+E,Buprenorphine,Free BUP,Meconium,N/A,N/A,N/A,% Free BUP,%,81.0,N/A,N/A
+G,Buprenorphine,Free BUP,Meconium,N/A,N/A,N/A,% Free BUP,%,74.4,N/A,N/A
+H,Buprenorphine,Free BUP,Meconium,N/A,N/A,N/A,% Free BUP,%,44.1,N/A,N/A
+I,Buprenorphine,Free BUP,Meconium,N/A,N/A,N/A,% Free BUP,%,67.3,N/A,N/A
+A,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,Free NBUP,ng/g,712.6,N/A,N/A
+B,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,Free NBUP,ng/g,497.5,N/A,N/A
+C,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,Free NBUP,ng/g,398.2,N/A,N/A
+D (Baby 1),Buprenorphine,Free NBUP,Meconium,Neonates,N/A,N/A,Free NBUP,ng/g,468.4,N/A,N/A
+D (Baby 2),Buprenorphine,Free NBUP,Meconium,Neonates,N/A,N/A,Free NBUP,ng/g,373.4,N/A,N/A
+E,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,Free NBUP,ng/g,1228.6,N/A,N/A
+F,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,Free NBUP,ng/g,331.1,N/A,N/A
+G,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,Free NBUP,ng/g,730.6,N/A,N/A
+H,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,Free NBUP,ng/g,505.4,N/A,N/A
+I,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,Free NBUP,ng/g,858.4,N/A,N/A
+A,Buprenorphine,Total NBUP,Meconium,N/A,N/A,N/A,Total NBUP ng/g,ng/g,719.3,N/A,N/A
+B,Buprenorphine,Total NBUP,Meconium,N/A,N/A,N/A,Total NBUP ng/g,ng/g,689.2,N/A,N/A
+C,Buprenorphine,Total NBUP,Meconium,N/A,N/A,N/A,Total NBUP ng/g,ng/g,447.5,N/A,N/A
+D (Baby 1),Buprenorphine,Total NBUP,Meconium,Neonates,N/A,N/A,Total NBUP ng/g,ng/g,548.1,N/A,N/A
+D (Baby 2),Buprenorphine,Total NBUP,Meconium,Neonates,N/A,N/A,Total NBUP ng/g,ng/g,607.6,N/A,N/A
+E,Buprenorphine,Total NBUP,Meconium,N/A,N/A,N/A,Total NBUP ng/g,ng/g,1880.2,N/A,N/A
+F,Buprenorphine,Total NBUP,Meconium,N/A,N/A,N/A,Total NBUP ng/g,ng/g,323.9,N/A,N/A
+G,Buprenorphine,Total NBUP,Meconium,N/A,N/A,N/A,Total NBUP ng/g,ng/g,629.9,N/A,N/A
+H,Buprenorphine,Total NBUP,Meconium,N/A,N/A,N/A,Total NBUP ng/g,ng/g,955.6,N/A,N/A
+I,Buprenorphine,Total NBUP,Meconium,N/A,N/A,N/A,Total NBUP ng/g,ng/g,737.1,N/A,N/A
+A,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,% Free NBUP,%,99.1,N/A,N/A
+B,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,% Free NBUP,%,72.2,N/A,N/A
+C,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,% Free NBUP,%,89.0,N/A,N/A
+D (Baby 1),Buprenorphine,Free NBUP,Meconium,Neonates,N/A,N/A,% Free NBUP,%,85.5,N/A,N/A
+D (Baby 2),Buprenorphine,Free NBUP,Meconium,Neonates,N/A,N/A,% Free NBUP,%,61.5,N/A,N/A
+E,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,% Free NBUP,%,65.3,N/A,N/A
+F,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,% Free NBUP,%,102.2,N/A,N/A
+G,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,% Free NBUP,%,116.0,N/A,N/A
+H,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,% Free NBUP,%,52.9,N/A,N/A
+I,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,% Free NBUP,%,116.5,N/A,N/A
+A,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,Free BUP/Free NBUP,ratio,0.14,N/A,N/A
+B,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,Free BUP/Free NBUP,ratio,0.10,N/A,N/A
+C,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,Free BUP/Free NBUP,ratio,0.25,N/A,N/A
+D (Baby 1),Buprenorphine,Free NBUP,Meconium,Neonates,N/A,N/A,Free BUP/Free NBUP,ratio,0.13,N/A,N/A
+D (Baby 2),Buprenorphine,Free NBUP,Meconium,Neonates,N/A,N/A,Free BUP/Free NBUP,ratio,0.16,N/A,N/A
+E,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,Free BUP/Free NBUP,ratio,0.20,N/A,N/A
+G,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,Free BUP/Free NBUP,ratio,0.03,N/A,N/A
+H,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,Free BUP/Free NBUP,ratio,0.08,N/A,N/A
+I,Buprenorphine,Free NBUP,Meconium,N/A,N/A,N/A,Free BUP/Free NBUP,ratio,0.19,N/A,N/A
+A,Buprenorphine,Total BUP,Meconium,N/A,N/A,N/A,Total BUP/Total NBUP,unitless,0.17,N/A,N/A
+B,Buprenorphine,Total BUP,Meconium,N/A,N/A,N/A,Total BUP/Total NBUP,unitless,0.14,N/A,N/A
+C,Buprenorphine,Total BUP,Meconium,N/A,N/A,N/A,Total BUP/Total NBUP,unitless,0.29,N/A,N/A
+D (Baby 1),Buprenorphine,Total BUP,Meconium,Neonates,N/A,N/A,Total BUP/Total NBUP,unitless,0.18,N/A,N/A
+D (Baby 2),Buprenorphine,Total BUP,Meconium,Neonates,N/A,N/A,Total BUP/Total NBUP,unitless,0.28,N/A,N/A
+E,Buprenorphine,Total BUP,Meconium,N/A,N/A,N/A,Total BUP/Total NBUP,unitless,0.16,N/A,N/A
+F,Buprenorphine,Total BUP,Meconium,N/A,N/A,N/A,Total BUP/Total NBUP,unitless,0.08,N/A,N/A
+G,Buprenorphine,Total BUP,Meconium,N/A,N/A,N/A,Total BUP/Total NBUP,unitless,0.05,N/A,N/A
+H,Buprenorphine,Total BUP,Meconium,N/A,N/A,N/A,Total BUP/Total NBUP,unitless,0.10,N/A,N/A
+I,Buprenorphine,Total BUP,Meconium,N/A,N/A,N/A,Total BUP/Total NBUP,unitless,0.33,N/A,N/A
+A,Nicotine,Nornicotine,Meconium,Maternal,Delivery,N/A,Nornicotine,ng/g,21.3,N/A,N/A
+B,Nicotine,Nornicotine,Meconium,Maternal,Delivery,N/A,Nornicotine,ng/g,6.1,N/A,N/A
+C,Nicotine,Nornicotine,Meconium,Maternal,Delivery,N/A,Nornicotine,ng/g,7.56,N/A,N/A
+D(Baby 1),Nicotine,Nornicotine,Meconium,Maternal,Delivery,N/A,Nornicotine,ng/g,—,N/A,N/A
+D(Baby 2),Nicotine,Nornicotine,Meconium,Maternal,Delivery,N/A,Nornicotine,ng/g,—,N/A,N/A
+E,Nicotine,Nornicotine,Meconium,Maternal,Delivery,N/A,Nornicotine,ng/g,10.4,N/A,N/A
+F,Nicotine,Nornicotine,Meconium,Maternal,Delivery,N/A,Nornicotine,ng/g,24.43,N/A,N/A
+G,Nicotine,Nornicotine,Meconium,Maternal,Delivery,N/A,Nornicotine,ng/g,8.2,N/A,N/A
+H,Nicotine,Nornicotine,Meconium,Maternal,Delivery,N/A,Nornicotine,ng/g,—,N/A,N/A
+I,Nicotine,Nornicotine,Meconium,Maternal,Delivery,N/A,Nornicotine,ng/g,36.4,N/A,N/A
+A,Nicotine,Cotinine,Meconium,Maternal,Delivery,N/A,Cotinine,ng/g,241.0,N/A,N/A
+B,Nicotine,Cotinine,Meconium,Maternal,Delivery,N/A,Cotinine,ng/g,55.0,N/A,N/A
+C,Nicotine,Cotinine,Meconium,Maternal,Delivery,N/A,Cotinine,ng/g,48.0,N/A,N/A
+E,Nicotine,Cotinine,Meconium,Maternal,Delivery,N/A,Cotinine,ng/g,97.5,N/A,N/A
+F,Nicotine,Cotinine,Meconium,Maternal,Delivery,N/A,Cotinine,ng/g,259.2,N/A,N/A
+G,Nicotine,Cotinine,Meconium,Maternal,Delivery,N/A,Cotinine,ng/g,80.9,N/A,N/A
+I,Nicotine,Cotinine,Meconium,Maternal,Delivery,N/A,Cotinine,ng/g,420.6,N/A,N/A
+A,Nicotine,Norcotinine,Meconium,Maternal,Delivery,N/A,Norcotinine,ng/g,4.3,N/A,N/A
+B,Nicotine,Norcotinine,Meconium,Maternal,Delivery,N/A,Norcotinine,ng/g,1.8,N/A,N/A
+C,Nicotine,Norcotinine,Meconium,Maternal,Delivery,N/A,Norcotinine,ng/g,—,N/A,N/A
+D(Baby 1),Nicotine,Norcotinine,Meconium,Maternal,Delivery,N/A,Norcotinine,ng/g,—,N/A,N/A
+D(Baby 2),Nicotine,Norcotinine,Meconium,Maternal,Delivery,N/A,Norcotinine,ng/g,—,N/A,N/A
+E,Cocaine,Norcotinine,Meconium,Maternal,Delivery,N/A,Norcotinine,ng/g,—,N/A,N/A
+F,Cocaine,Norcotinine,Meconium,Maternal,Delivery,N/A,Norcotinine,ng/g,5.9,N/A,N/A
+G,Cocaine,Norcotinine,Meconium,Maternal,Delivery,N/A,Norcotinine,ng/g,1.6,N/A,N/A
+H,Nicotine,Norcotinine,Meconium,Maternal,Delivery,N/A,Norcotinine,ng/g,—,N/A,N/A
+I,Nicotine,Norcotinine,Meconium,Maternal,Delivery,N/A,Norcotinine,ng/g,6.6,N/A,N/A
+A,Nicotine,OH-cotinine,Meconium,Maternal,Delivery,N/A,OH-cotinine,ng/g,75.2,N/A,N/A
+B,Nicotine,OH-cotinine,Meconium,Maternal,Delivery,N/A,OH-cotinine,ng/g,100.7,N/A,N/A
+C,Nicotine,OH-cotinine,Meconium,Maternal,Delivery,N/A,OH-cotinine,ng/g,155.4,N/A,N/A
+E,Nicotine,OH-cotinine,Meconium,Maternal,Delivery,N/A,OH-cotinine,ng/g,206.2,N/A,N/A
+F,Nicotine,OH-cotinine,Meconium,Maternal,Delivery,N/A,OH-cotinine,ng/g,159.5,N/A,N/A
+G,Nicotine,OH-cotinine,Meconium,Maternal,Delivery,N/A,OH-cotinine,ng/g,151.4,N/A,N/A
+I,Nicotine,OH-cotinine,Meconium,Maternal,Delivery,N/A,OH-cotinine,ng/g,>ULOQ,N/A,N/A
+A,Cocaine,Cocaethylene,Meconium,Maternal,Delivery,N/A,Cocaethylene,ng/g,—,N/A,N/A
+B,Cocaine,Cocaethylene,Meconium,Maternal,Delivery,N/A,Cocaethylene,ng/g,—,N/A,N/A
+C,Cocaine,Cocaethylene,Meconium,Maternal,Delivery,N/A,Cocaethylene,ng/g,—,N/A,N/A
+D(Baby 1),Cocaine,Cocaethylene,Meconium,Maternal,Delivery,N/A,Cocaethylene,ng/g,—,N/A,N/A
+D(Baby 2),Cocaine,Cocaethylene,Meconium,Maternal,Delivery,N/A,Cocaethylene,ng/g,—,N/A,N/A
+E,Cocaine,Cocaethylene,Meconium,Maternal,Delivery,N/A,Cocaethylene,ng/g,—,N/A,N/A
+F,Cocaine,Cocaethylene,Meconium,Maternal,Delivery,N/A,Cocaethylene,ng/g,—,N/A,N/A
+G,Cocaine,Cocaethylene,Meconium,Maternal,Delivery,N/A,Cocaethylene,ng/g,—,N/A,N/A
+H,Cocaine,Cocaethylene,Meconium,Maternal,Delivery,N/A,Cocaethylene,ng/g,—,N/A,N/A
+I,Cocaine,Cocaethylene,Meconium,Maternal,Delivery,N/A,Cocaethylene,ng/g,—,N/A,N/A
+A,Cocaine,Benzoylecgonine,Meconium,Maternal,Delivery,N/A,Benzoylecgonine,ng/g,211,N/A,N/A
+B,Cocaine,Benzoylecgonine,Meconium,Maternal,Delivery,N/A,Benzoylecgonine,ng/g,—,N/A,N/A
+C,Cocaine,Benzoylecgonine,Meconium,Maternal,Delivery,N/A,Benzoylecgonine,ng/g,—,N/A,N/A
+D(Baby 1),Cocaine,Benzoylecgonine,Meconium,Maternal,Delivery,N/A,Benzoylecgonine,ng/g,5,N/A,N/A
+D(Baby 2),Cocaine,Benzoylecgonine,Meconium,Maternal,Delivery,N/A,Benzoylecgonine,ng/g,10,N/A,N/A
+E,Cocaine,Benzoylecgonine,Meconium,Maternal,Delivery,N/A,Benzoylecgonine,ng/g,—,N/A,N/A
+F,Cocaine,Benzoylecgonine,Meconium,Maternal,Delivery,N/A,Benzoylecgonine,ng/g,—,N/A,N/A
+G,Cocaine,Benzoylecgonine,Meconium,Maternal,Delivery,N/A,Benzoylecgonine,ng/g,—,N/A,N/A
+H,Cocaine,Benzoylecgonine,Meconium,Maternal,Delivery,N/A,Benzoylecgonine,ng/g,—,N/A,N/A
+I,Cocaine,Benzoylecgonine,Meconium,Maternal,Delivery,N/A,Benzoylecgonine,ng/g,—,N/A,N/A
+A,Cocaine,m-OH-benzoylecgonine,Meconium,Maternal,Delivery,N/A,m-OH-benzoylecgonine,ng/g,1263,N/A,N/A
+B,Cocaine,m-OH-benzoylecgonine,Meconium,Maternal,Delivery,N/A,m-OH-benzoylecgonine,ng/g,—,N/A,N/A
+C,Cocaine,m-OH-benzoylecgonine,Meconium,Maternal,Delivery,N/A,m-OH-benzoylecgonine,ng/g,—,N/A,N/A
+D(Baby 1),Cocaine,m-OH-benzoylecgonine,Meconium,Maternal,Delivery,N/A,m-OH-benzoylecgonine,ng/g,124,N/A,N/A
+D(Baby 2),Cocaine,m-OH-benzoylecgonine,Meconium,Maternal,Delivery,N/A,m-OH-benzoylecgonine,ng/g,122,N/A,N/A
+E,Cocaine,m-OH-benzoylecgonine,Meconium,Maternal,Delivery,N/A,m-OH-benzoylecgonine,ng/g,—,N/A,N/A
+F,Cocaine,m-OH-benzoylecgonine,Meconium,Maternal,Delivery,N/A,m-OH-benzoylecgonine,ng/g,—,N/A,N/A
+G,Cocaine,m-OH-benzoylecgonine,Meconium,Maternal,Delivery,N/A,m-OH-benzoylecgonine,ng/g,—,N/A,N/A
+H,Cocaine,m-OH-benzoylecgonine,Meconium,Maternal,Delivery,N/A,m-OH-benzoylecgonine,ng/g,—,N/A,N/A
+I,Cocaine,m-OH-benzoylecgonine,Meconium,Maternal,Delivery,N/A,m-OH-benzoylecgonine,ng/g,10,N/A,N/A
+A,Nicotine,Nicotine,Meconium,Maternal,Delivery,N/A,Cumulative cocaine and metabolites,ng/g,1545,N/A,N/A
+D(Baby 1),Nicotine,Nicotine,Meconium,Maternal,Delivery,N/A,Cumulative cocaine and metabolites,ng/g,129,N/A,N/A
+D(Baby 2),Nicotine,Nicotine,Meconium,Maternal,Delivery,N/A,Cumulative cocaine and metabolites,ng/g,143,N/A,N/A
+I,Nicotine,Nicotine,Meconium,Maternal,Delivery,N/A,Cumulative cocaine and metabolites,ng/g,10,N/A,N/A
+A,Opiate,Codeine,Meconium,Maternal,Delivery,N/A,Codeine,ng/g,—,N/A,N/A
+B,Opiate,Codeine,Meconium,Maternal,Delivery,N/A,Codeine,ng/g,—,N/A,N/A
+C,Opiate,Codeine,Meconium,Maternal,Delivery,N/A,Codeine,ng/g,—,N/A,N/A
+D(Baby 1),Opiate,Codeine,Meconium,Maternal,Delivery,N/A,Codeine,ng/g,—,N/A,N/A
+D(Baby 2),Opiate,Codeine,Meconium,Maternal,Delivery,N/A,Codeine,ng/g,—,N/A,N/A
+E,Opiate,Codeine,Meconium,Maternal,Delivery,N/A,Codeine,ng/g,—,N/A,N/A
+F,Opiate,Codeine,Meconium,Maternal,Delivery,N/A,Codeine,ng/g,—,N/A,N/A
+G,Opiate,Codeine,Meconium,Maternal,Delivery,N/A,Codeine,ng/g,—,N/A,N/A
+H,Opiate,Codeine,Meconium,Maternal,Delivery,N/A,Codeine,ng/g,—,N/A,N/A
+I,Opiate,Codeine,Meconium,Maternal,Delivery,N/A,Codeine,ng/g,—,N/A,N/A
+A,Opiate,Morphine,Meconium,Maternal,Delivery,N/A,Morphine,ng/g,891,N/A,N/A
+B,Opiate,Morphine,Meconium,Maternal,Delivery,N/A,Morphine,ng/g,—,N/A,N/A
+C,Opiate,Morphine,Meconium,Maternal,Delivery,N/A,Morphine,ng/g,—,N/A,N/A
+D(Baby 1),Opiate,Morphine,Meconium,Maternal,Delivery,N/A,Morphine,ng/g,1163,N/A,N/A
+D(Baby 2),Opiate,Morphine,Meconium,Maternal,Delivery,N/A,Morphine,ng/g,1185,N/A,N/A
+E,Opiate,Morphine,Meconium,Maternal,Delivery,N/A,Morphine,ng/g,—,N/A,N/A
+F,Opiate,Morphine,Meconium,Maternal,Delivery,N/A,Morphine,ng/g,—,N/A,N/A
+G,Opiate,Morphine,Meconium,Maternal,Delivery,N/A,Morphine,ng/g,—,N/A,N/A
+H,Opiate,Morphine,Meconium,Maternal,Delivery,N/A,Morphine,ng/g,—,N/A,N/A
+I,Opiate,Morphine,Meconium,Maternal,Delivery,N/A,Morphine,ng/g,—,N/A,N/A
+A,Opiate,Hydrocodone,Meconium,Maternal,Delivery,N/A,Hydrocodone,ng/g,—,N/A,N/A
+B,Opiate,Hydrocodone,Meconium,Maternal,Delivery,N/A,Hydrocodone,ng/g,—,N/A,N/A
+C,Opiate,Hydrocodone,Meconium,Maternal,Delivery,N/A,Hydrocodone,ng/g,—,N/A,N/A
+D(Baby 1),Opiate,Hydrocodone,Meconium,Maternal,Delivery,N/A,Hydrocodone,ng/g,—,N/A,N/A
+D(Baby 2),Opiate,Hydrocodone,Meconium,Maternal,Delivery,N/A,Hydrocodone,ng/g,—,N/A,N/A
+E,Opiate,Hydrocodone,Meconium,Maternal,Delivery,N/A,Hydrocodone,ng/g,—,N/A,N/A
+F,Opiate,Hydrocodone,Meconium,Maternal,Delivery,N/A,Hydrocodone,ng/g,—,N/A,N/A
+G,Opiate,Hydrocodone,Meconium,Maternal,Delivery,N/A,Hydrocodone,ng/g,—,N/A,N/A
+H,Opiate,Hydrocodone,Meconium,Maternal,Delivery,N/A,Hydrocodone,ng/g,—,N/A,N/A
+I,Opiate,Hydrocodone,Meconium,Maternal,Delivery,N/A,Hydrocodone,ng/g,–,N/A,N/A
+A,Opiate,Oxycodone,Meconium,Maternal,Delivery,N/A,Oxycodone,ng/g,—,N/A,N/A
+B,Opiate,Oxycodone,Meconium,Maternal,Delivery,N/A,Oxycodone,ng/g,—,N/A,N/A
+C,Opiate,Oxycodone,Meconium,Maternal,Delivery,N/A,Oxycodone,ng/g,—,N/A,N/A
+D(Baby 1),Opiate,Oxycodone,Meconium,Maternal,Delivery,N/A,Oxycodone,ng/g,—,N/A,N/A
+D(Baby 2),Opiate,Oxycodone,Meconium,Maternal,Delivery,N/A,Oxycodone,ng/g,—,N/A,N/A
+E,Opiate,Oxycodone,Meconium,Maternal,Delivery,N/A,Oxycodone,ng/g,—,N/A,N/A
+F,Opiate,Oxycodone,Meconium,Maternal,Delivery,N/A,Oxycodone,ng/g,—,N/A,N/A
+G,Opiate,Oxycodone,Meconium,Maternal,Delivery,N/A,Oxycodone,ng/g,—,N/A,N/A
+H,Opiate,Oxycodone,Meconium,Maternal,Delivery,N/A,Oxycodone,ng/g,–,N/A,N/A
+I,Opiate,Oxycodone,Meconium,Maternal,Delivery,N/A,Oxycodone,ng/g,–,N/A,N/A
+A,Nicotine,Nicotine,Meconium,Maternal,Delivery,N/A,Nicotine,ng/g,198.7,N/A,N/A
+B,Nicotine,Nicotine,Meconium,Maternal,Delivery,N/A,Nicotine,ng/g,35.9,N/A,N/A
+C,Nicotine,Nicotine,Meconium,Maternal,Delivery,N/A,Nicotine,ng/g,19.5,N/A,N/A
+D (Baby 1),Nicotine,Nicotine,Meconium,Maternal,Delivery,N/A,Nicotine,ng/g,—,N/A,N/A
+D (Baby 2),Nicotine,Nicotine,Meconium,Maternal,Delivery,N/A,Nicotine,ng/g,—,N/A,N/A
+E,Nicotine,Nicotine,Meconium,Maternal,Delivery,N/A,Nicotine,ng/g,79.1,N/A,N/A
+F,Nicotine,Nicotine,Meconium,Maternal,Delivery,N/A,Nicotine,ng/g,403.8,N/A,N/A
+G,Nicotine,Nicotine,Meconium,Maternal,Delivery,N/A,Nicotine,ng/g,46.6,N/A,N/A
+H,Nicotine,Nicotine,Meconium,Maternal,Delivery,N/A,Nicotine,ng/g,—,N/A,N/A
+I,Nicotine,Nicotine,Meconium,Maternal,Delivery,N/A,Nicotine,ng/g,>ULOQ,N/A,N/A
+A,Cocaine,Cocaine,Meconium,Maternal,Delivery,N/A,Cocaine,ng/g,71,N/A,N/A
+D (Baby 2),Cocaine,Cocaine,Meconium,Maternal,Delivery,N/A,Cocaine,ng/g,11,N/A,N/A
