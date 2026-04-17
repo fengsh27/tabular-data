@@ -1,0 +1,3614 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">7613873</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">4137</journal-id>
+      <journal-id journal-id-type="nlm-ta">Hum Genet</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Hum. Genet.</journal-id>
+      <journal-title-group>
+        <journal-title>Human genetics</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0340-6717</issn>
+      <issn pub-type="epub">1432-1203</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">22476623</article-id>
+      <article-id pub-id-type="pmc">3557796</article-id>
+      <article-id pub-id-type="doi">10.1007/s00439-012-1163-5</article-id>
+      <article-id pub-id-type="manuscript">NIHMS431060</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Further Clarification of The Contribution of The <italic>ADH1C</italic> Gene to The Vulnerability of Alcoholism And Selected Liver Diseases</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Li</surname>
+            <given-names>Dawei</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhao</surname>
+            <given-names>Hongyu</given-names>
+          </name>
+          <xref ref-type="aff" rid="A2">2</xref>
+          <xref ref-type="aff" rid="A3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gelernter</surname>
+            <given-names>Joel</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">1</xref>
+          <xref ref-type="aff" rid="A3">3</xref>
+          <xref ref-type="aff" rid="A4">4</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>1</label>Department of Psychiatry, School of Medicine, Yale University, New Haven, Connecticut 06511, USA</aff>
+      <aff id="A2"><label>2</label>Department of Epidemiology and Public Health, School of Medicine, Yale University, New Haven, Connecticut 06511, USA</aff>
+      <aff id="A3"><label>3</label>Department of Genetics, School of Medicine, Yale University, New Haven, Connecticut 06511, USA</aff>
+      <aff id="A4"><label>4</label>VA Connecticut Healthcare Center, West Haven, CT, USA</aff>
+      <author-notes>
+        <corresp id="cor1"><label>*</label>To whom correspondence should be addressed: Dawei Li, <italic>Ph.D.</italic>, Department of Psychiatry, School of Medicine, Yale University, New Haven, Connecticut 06511, USA. or 300 George Street, Suite 503, New Haven, Connecticut 06511, USA. <email>dawei.li@yale.edu</email></corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>15</day>
+        <month>1</month>
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>05</day>
+        <month>4</month>
+        <year>2012</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>8</month>
+        <year>2012</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>01</day>
+        <month>8</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>131</volume>
+      <issue>8</issue>
+      <fpage>1361</fpage>
+      <lpage>1374</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P1">The alcohol dehydrogenase 1C (ADH1C) subunit is an important member of the alcohol dehydrogenase family, a set of genes that plays a major role in the catabolism of ethanol. Numerous association studies have provided compelling evidence that <italic>ADH1C</italic> gene variation (formerly <italic>ADH3</italic>) is associated with altered genetic susceptibility to alcoholism and alcohol-related liver disease, cirrhosis, or pancreatitis. However, the results have been inconsistent, partially because each study involved a limited number of subjects, and some were underpowered. Using cumulative data over the past two decades, this meta-analysis (6,796 cases and 6,938 controls) considered samples of Asian, European, African, and Native American origins to examine whether the aggregate genotype provide statistically significant evidence of association. The results showed strong evidence of association between <italic>ADH1C</italic> Ile350Val (rs698, formerly <italic>ADH1C</italic> *1/*2) and alcohol dependence (AD) and abuse in the combined studies. The overall allelic (Val vs. Ile or *2 vs. *1) <italic>P</italic> value was 1×10<sup>−8</sup> and Odds Ratio (OR) was 1.51 (1.31, 1.73). The Asian populations produced stronger evidence of association with an allelic <italic>P</italic> value of 4×10<sup>−33</sup> (OR = 2.14 (1.89, 2.43)) with no evidence of heterogeneity, and the dominant and recessive models revealed even stronger effect sizes. The strong evidence remained when stricter criteria and sub-group analyses were applied, while Asians always showed stronger associations than other populations. Our findings support that <italic>ADH1C</italic> Ile may lower the risk of AD and alcohol abuse as well as alcohol-related cirrhosis in pooled populations, with the strongest and most consistent effects in Asians.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>Meta-analysis</kwd>
+        <kwd>Association</kwd>
+        <kwd>Ethanol Oxidation</kwd>
+        <kwd>Addiction</kwd>
+        <kwd>
+          <italic>ADH1C</italic>
+        </kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source country="United States">National Institute on Drug Abuse : NIDA</funding-source>
+          <award-id>R01 DA012849 || DA</award-id>
+        </award-group>
+        <award-group>
+          <funding-source country="United States">National Institute on Drug Abuse : NIDA</funding-source>
+          <award-id>R01 DA012690 || DA</award-id>
+        </award-group>
+        <award-group>
+          <funding-source country="United States">National Institute on Alcohol Abuse and Alcoholism : NIAAA</funding-source>
+          <award-id>R01 AA017535 || AA</award-id>
+        </award-group>
+        <award-group>
+          <funding-source country="United States">National Institute on Alcohol Abuse and Alcoholism : NIAAA</funding-source>
+          <award-id>R01 AA011330 || AA</award-id>
+        </award-group>
+        <award-group>
+          <funding-source country="United States">National Institute on Alcohol Abuse and Alcoholism : NIAAA</funding-source>
+          <award-id>P50 AA012870 || AA</award-id>
+        </award-group>
+      </funding-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S1">
+      <title>Introduction</title>
+      <p id="P2">Substance abuse, which constitutes a major public health problem, is genetically influenced, but characterized by incomplete penetrance, phenocopies, heterogeneity, and polygenic inheritance. The alcohol dehydrogenase 1B and 1C genes (<italic>ADH1B</italic> and <italic>ADH1C</italic>) encode class I alcohol dehydrogenase beta and gamma subunits, respectively. These isoenzymes metabolize alcohol into acetaldehyde (among other physiological actions); acetaldehyde is then metabolized into acetate through the aldehyde dehydrogenase 2 gene (<italic>ALDH2</italic>). The gamma subunit encoded by <italic>ADH1C</italic> plays a key role in the oxidation catabolism of a wide variety of substrates, including ethanol, retinol, other aliphatic alcohols, hydroxysteroids, and lipid peroxidation products. <italic>ADH1B</italic> appears to play the greatest role in modulating alcohol dependence risk among the ADH loci (review, <xref ref-type="bibr" rid="R40">Li et al., 2011</xref>). The <italic>ADH1C</italic> gene (formerly called <italic>ADH3</italic>), located on chromosome 4q21-q23, is adjacent to <italic>ADH1B</italic> and in the region of a gene cluster of the alcohol dehydrogenase subunits 6, 1A, 1B, 1C, and 7. The common form of a single nucleotide polymorphism (SNP: rs698, Ile350Val in exon 8, formerly known as <italic>ADH1C</italic> *1/*2) at the <italic>ADH1C</italic> gene locus is 350Val (G or *2). The other allele 350Ile (A or *1) encodes for a highly active allozyme. This allozyme is capable of altering ethanol metabolism(<xref ref-type="bibr" rid="R69">Yoshida et al. 1991</xref>) and reducing genetic susceptibility to alcohol dependence (AD)(<xref ref-type="bibr" rid="R29">Higuchi et al. 1995</xref>; <xref ref-type="bibr" rid="R60">Thomasson et al. 1991</xref>). A well-known and generally accepted hypothetical mechanism is that the highly active <italic>ADH1C</italic> 350Ile can increase the level of acetaldehyde, and then result in enhanced negative reactions to alcohol, which in turn reduces the likelihood of AD.</p>
+      <p id="P3">Over the last few years, an increasing number of association studies have provided compelling evidence regarding the role of the <italic>ADH1C</italic> gene in alcohol and drug dependence as well as in alcohol-related liver disease, cirrhosis, and pancreatitis. However, the results have been inconsistent, partially because each study obviously involved a limited number of subjects, and some were underpowered to the extent that there was not enough information to demonstrate a significant association. Second, the findings are complicated by the use of different ethnicities, sampling strategies, or genotyping procedures (e.g., the rates of alcohol abuse and alcohol-related medical diseases differ across various populations). Third, the low prevalence of Val350Val individuals in some Asian populations makes it particularly difficult to determine the effect of homozygous individuals without evaluating large samples.</p>
+      <p id="P4">Although two early meta-analyses(<xref ref-type="bibr" rid="R65">Whitfield 1997</xref>; <xref ref-type="bibr" rid="R71">Zintzaras et al. 2006</xref>) evaluated findings relevant to the gene, the limited data were not sufficient to provide a systematic explanation of the role of the SNP. However, the availability of genotype data from various populations has increased greatly in recent years. Considering the critical role of the gene in alcohol and acetaldehyde metabolism as well as this nonsynonymous SNP’s function in modulating in protein activity, we performed a comprehensive meta-analysis of <italic>ADH1C</italic> Ile350Val with AD and alcohol abuse, as well as with alcohol-related medical diseases, based on both English and Chinese-language publications. The aim of this meta-analysis was to clarify and confirm the characteristics of this association; compare the results with those from previous studies; and if possible, to provide further evidence for the proposed mechanism of <italic>ADH1C</italic> Ile350Val.</p>
+    </sec>
+    <sec sec-type="methods" id="S2">
+      <title>Methods</title>
+      <sec id="S3">
+        <title>Literature Search</title>
+        <p id="P5">The studies included in the meta-analysis were selected from PubMed and from the database of Chinese Academic Journals with keywords 'alcohol dehydrogenase', '<italic>ADH3</italic>', '<italic>ADH1C</italic>', 'association', 'associated', 'drug’, 'substance', 'alcoholism’, 'alcohol’, 'alcoholics', 'heroin’, 'cocaine’, 'opiate', 'opioid', and 'methamphetamine'. All references cited in these studies and in published reviews were examined in order to identify additional works not indexed by the databases. The analyzed studies cover all identified English and Chinese publications up to August 2010.</p>
+      </sec>
+      <sec id="S4">
+        <title>Inclusion Criteria</title>
+        <p id="P6">Eligible studies had to meet the following criteria: they (1) were published in peer-reviewed journals; (2) contained original data; (3) presented sufficient data to calculate the odds ratio (OR) with confidence interval (CI) and <italic>P</italic> value; (4) were association studies investigating the specific SNP considered here; (5) described or referenced appropriate genotyping methods; (6) investigated alcohol, heroin, cocaine, or methamphetamine dependence (or abuse) diagnosed by valid published criteria. For the studies investigating alcohol-related liver disease, cirrhosis, or chronic pancreatitis, the cases were considered as alcoholics with the alcohol-related diseases. Cirrhosis was diagnosed by histological, clinical, radiological, and (or) endoscopic findings; (7) had no description of known comorbidity with major psychiatric disorders for the participants (this information was not available in all the studies); and (8) used unrelated individuals in case-control studies. Authors were contacted in cases where we determined it would be useful to have additional information regarding their studies.</p>
+      </sec>
+      <sec id="S5">
+        <title>Statistical Analyses</title>
+        <p id="P7">Studies were divided among those dealing with samples with European ancestries, those with Asian ancestries, those with African ancestries, and those with Mexican (or Native American) ancestries. For studies that contained data from multiple populations, each was considered as effectively an independent study. Data from the studies were summarized by two-by-two tables. From each table a log-odds ratio and its sampling variance were calculated(<xref ref-type="bibr" rid="R39">Li et al. 2006</xref>). The Cochran’s χ<sup>2</sup>-based Q statistic test was computed in order to assess heterogeneity to ascertain whether each group of studies was suitable for meta-analysis. Where heterogeneity was found, the random effects model, which yields a wider CI, was adopted; otherwise, both the fixed and random effects models were adopted. A test for funnel plot asymmetry(<xref ref-type="bibr" rid="R18">Egger et al. 1997</xref>) was used to assess evidence for publication bias. The test used a linear regression approach to measure funnel plot asymmetry on the natural logarithm of the OR. The larger the deviation of each study from the funnel curve, the more pronounced the asymmetry. Results from small studies will scatter widely at the bottom of the graph, with the spread narrowing among larger studies. The significance of the intercept was evaluated using the T-test(<xref ref-type="bibr" rid="R18">Egger et al. 1997</xref>; <xref ref-type="bibr" rid="R21">Fan and Sklar 2005</xref>). For datasets with evidence for publication bias, the “Duval and Tweedie's Trim and Fill” procedure(<xref ref-type="bibr" rid="R17">Duval and Tweedie 2000</xref>) was used to impute the number of potentially-missing studies. In the absence of bias the funnel plot would be symmetric with respect to the summary effect. If there are more small studies on the right than on the left, some studies may be missing from the left. The Trim and Fill procedure imputes these missing studies, adds them to the analysis, and then re-computes the adjusted overall effect size.</p>
+        <p id="P8">ORs were pooled using the method of DerSimonian and Laird(<xref ref-type="bibr" rid="R16">DerSimonian and Laird 1986</xref>), and 95% CIs were constructed using Woolf’s method(<xref ref-type="bibr" rid="R66">Woolf 1955</xref>). The significance of the overall OR was determined using the Z-test. For sensitivity analysis, each study was removed in turn from the total, and the remainder then reanalyzed. This procedure was used to ensure that no individual study was entirely responsible for the combined results. In addition, genotypic analyses were carried out under the dominant ((ValVal + ValIle) vs. IleIle) and recessive (ValVal vs. (ValIle + IleIle)) models. Different combinations of the ethnic populations and different combinations of the alcohol-related medical conditions (e.g., alcohol liver disease, cirrhosis, and pancreatitis) were also analyzed. Retrospective analysis was performed to understand better the potential effect of year of publication upon the results. The type I error rate was set at 0.05. The tests were two-tailed. In order to know whether there are other polymorphisms in strong linkage disequilibrium (LD) with this SNP in Asians and Europeans, haplotype construction, counting, and LD block defining over a broader genomic region of <italic>ADH1C</italic> were performed separately using the genotypes of 30 European and 90 Asian samples from HapMap (release 23a and ncbi_b36). The analysis procedure and additional LD information on the gene cluster (<italic>ADH7</italic>, <italic>ADH1C</italic>, <italic>ADH1B</italic> and <italic>ADH1A</italic>) and other statistical approaches (e.g., fail-safe analysis) were described previously(<xref ref-type="bibr" rid="R40">Li et al. 2011</xref>).</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S6">
+      <title>Results</title>
+      <p id="P9">The combined search yielded 820 references. After discarding overlapping references and those which clearly did not meet the inclusion criteria, 58 studies remained. These studies were then filtered to ensure conformity with the inclusion criteria. One study(<xref ref-type="bibr" rid="R64">Wei et al. 1999</xref>) was excluded because the cases and controls were related; one study(<xref ref-type="bibr" rid="R52">Poupon et al. 1992</xref>) because the controls were moderate alcohol drinkers; one study(<xref ref-type="bibr" rid="R43">Macgregor et al. 2009</xref>) because it was investigating twin pairs; one study(<xref ref-type="bibr" rid="R31">Khan et al. 2010</xref>) because the definition for “alcoholics” was not consistent with our inclusion criteria; and one study(<xref ref-type="bibr" rid="R54">Shafe et al. 2009</xref>) because no genotype data were available. In the end, 53 case-control studies (<xref ref-type="supplementary-material" rid="SD13">supplementary Table 1</xref>) met our criteria for inclusion. These studies included 30 studies(<xref ref-type="bibr" rid="R4">Chai et al. 2005</xref>; <xref ref-type="bibr" rid="R6">Chao et al. 1994</xref>; <xref ref-type="bibr" rid="R7">Chao et al. 2000</xref>; <xref ref-type="bibr" rid="R8">Chao et al. 1997</xref>; <xref ref-type="bibr" rid="R9">Chen et al. 1999</xref>; <xref ref-type="bibr" rid="R10">Chen et al. 1996</xref>; <xref ref-type="bibr" rid="R11">Chen et al. 1997</xref>; <xref ref-type="bibr" rid="R12">Choi et al. 2005</xref>; <xref ref-type="bibr" rid="R20">Fan et al. 1998</xref>; <xref ref-type="bibr" rid="R30">Higuchi et al. 1996</xref>; <xref ref-type="bibr" rid="R32">Kim et al. 2004</xref>; <xref ref-type="bibr" rid="R36">Lee et al. 2001</xref>; <xref ref-type="bibr" rid="R37">Lee et al. 1999</xref>; <xref ref-type="bibr" rid="R45">Montane-Jaime et al. 2006</xref>; <xref ref-type="bibr" rid="R46">Nakamura et al. 1996</xref>; <xref ref-type="bibr" rid="R49">Osier et al. 1999</xref>; <xref ref-type="bibr" rid="R51">Park et al. 2001</xref>; <xref ref-type="bibr" rid="R55">Shen et al. 1997a</xref>; <xref ref-type="bibr" rid="R56">Shen et al. 1997b</xref>; <xref ref-type="bibr" rid="R59">Thomasson et al. 1994</xref>; <xref ref-type="bibr" rid="R60">Thomasson et al. 1991</xref>; <xref ref-type="bibr" rid="R70">Yu et al. 2002</xref>) of Asian populations; 18 studies(<xref ref-type="bibr" rid="R3">Borras et al. 2000</xref>; <xref ref-type="bibr" rid="R5">Chambers et al. 2002</xref>; <xref ref-type="bibr" rid="R13">Cichoz-Lach et al. 2008</xref>; <xref ref-type="bibr" rid="R14">Couzigou et al. 1990</xref>; <xref ref-type="bibr" rid="R15">Day et al. 1991</xref>; <xref ref-type="bibr" rid="R19">Espinos et al. 1997</xref>; <xref ref-type="bibr" rid="R22">Foley et al. 2004</xref>; <xref ref-type="bibr" rid="R23">Frenzer et al. 2002</xref>; <xref ref-type="bibr" rid="R25">Gilder et al. 1993</xref>; <xref ref-type="bibr" rid="R26">Grove et al. 1998</xref>; <xref ref-type="bibr" rid="R35">Kuo et al. 2008</xref>; <xref ref-type="bibr" rid="R42">Luo et al. 2007</xref>; <xref ref-type="bibr" rid="R48">Neumark et al. 1998</xref>; <xref ref-type="bibr" rid="R50">Pares et al. 1994</xref>; <xref ref-type="bibr" rid="R57">Sherman et al. 1994</xref>; <xref ref-type="bibr" rid="R58">Sherva et al. 2009</xref>; <xref ref-type="bibr" rid="R62">Vidal et al. 2004</xref>) of European populations; three studies(<xref ref-type="bibr" rid="R33">Konishi et al. 2003</xref>; <xref ref-type="bibr" rid="R34">Konishi et al. 2004</xref>; <xref ref-type="bibr" rid="R63">Wall et al. 2003</xref>) of Mexican Americans, and two studies(<xref ref-type="bibr" rid="R42">Luo et al. 2007</xref>; <xref ref-type="bibr" rid="R45">Montane-Jaime et al. 2006</xref>) of African Americans. Among them one study(<xref ref-type="bibr" rid="R48">Neumark et al. 1998</xref>) investigated heroin dependence and abuse; two studies(<xref ref-type="bibr" rid="R42">Luo et al. 2007</xref>) investigated multi-drug dependence; and among the 50 studies of AD (or AD and abuse) 14 studies(<xref ref-type="bibr" rid="R3">Borras et al. 2000</xref>; <xref ref-type="bibr" rid="R6">Chao et al. 1994</xref>; <xref ref-type="bibr" rid="R7">Chao et al. 2000</xref>; <xref ref-type="bibr" rid="R8">Chao et al. 1997</xref>; <xref ref-type="bibr" rid="R13">Cichoz-Lach et al. 2008</xref>; <xref ref-type="bibr" rid="R14">Couzigou et al. 1990</xref>; <xref ref-type="bibr" rid="R15">Day et al. 1991</xref>; <xref ref-type="bibr" rid="R23">Frenzer et al. 2002</xref>; <xref ref-type="bibr" rid="R26">Grove et al. 1998</xref>; <xref ref-type="bibr" rid="R36">Lee et al. 2001</xref>; <xref ref-type="bibr" rid="R50">Pares et al. 1994</xref>; <xref ref-type="bibr" rid="R57">Sherman et al. 1994</xref>; <xref ref-type="bibr" rid="R62">Vidal et al. 2004</xref>) investigated alcohol-related liver disease, cirrhosis, and (or) pancreatitis (five of them also included data for alcoholics without any of these diseases). The 53 studies included 6,796 cases and 6,938 controls. The results are described below.</p>
+      <p id="P10">The frequency of the risk <italic>ADH1C</italic> 350Val allele varied widely across different populations, based on all the samples: low in the Asian control populations 8% (0% – 20%) and patients 14% (0% – 32%); higher in the European controls 45% (24% – 59%) and patients 45% (30% – 62%); between Asian and European frequencies in the Mexican controls 35% (34% – 38%) and patients 35% (32% – 39%); and less frequent in African controls 13% (12% – 13%) and patients 16% (13% – 17%). Among the 30 Asian studies, 26 studies showed higher 350Val frequency in cases than in controls and one showed no significant difference; among the 17 European studies 10 studies showed higher frequency and two showed equal frequencies; two of three studies of Mexican Americans showed higher frequency; and all the studies of African Americans showed higher frequency in cases than in controls (<xref ref-type="table" rid="T2">Table 2</xref>).</p>
+      <p id="P11">The combined studies of AD and alcohol abuse showed that there was strong evidence of association, in particular, in the Asian populations, using both the allelic (350Val vs. 350Ile) and genotypic analyses (<xref ref-type="table" rid="T1">Table 1</xref>). The strict random effects model was applied when evidence of heterogeneity was found throughout this meta-analysis. The <italic>P</italic> value was 1×10<sup>−8</sup> with OR of 1.51 (1.31, 1.73). Strong evidence of association was also found under the dominant (ValVal + ValIle vs. IleIle: OR = 1.65 (1.38, 1.96)) and recessive models (<xref ref-type="table" rid="T1">Table 1</xref>). Furthermore, the Asian populations showed a highly significant association, with an allelic <italic>P</italic> value of 4×10<sup>−33</sup> (OR = 2.14 (1.89, 2.43)) with no evidence of heterogeneity between studies (<italic>P</italic> &gt; 0.05). It was interesting that the dominant and recessive models produced stronger effect sizes (ORs = 2.2 (1.92, 2.53) and 3.83 (2.26, 6.49), respectively) although the underlying biological mechanism was not yet established. Strong evidence of association was also detected in the combined Asian and European populations (<italic>P</italic> = 3×10<sup>−8</sup> and 2×10<sup>−7</sup> for the allelic analysis and dominant model, respectively). The Mexican samples revealed evidence of significant association with <italic>P</italic> value of 0.001 (OR = 1.52 (1.18, 1.97)) under the dominant model. No evidence of significant association was found in the European populations. When the alcoholic subjects with alcoholic liver disease, cirrhosis, or pancreatitis (designated as “alcohol-related diseases” in <xref ref-type="table" rid="T1">Table 1</xref>) were combined for the analysis, strong evidence of association was found in the Asian populations. The <italic>P</italic> values were 0.0002 (OR = 2.12 (1.42, 3.17)) and 0.0006 for the allelic analysis and dominant model, respectively.</p>
+      <p id="P12">In order to understand whether the strong association was driven primarily by the patients with alcoholic liver disease, cirrhosis, or pancreatitis, we also analyzed the alcoholic subjects without any alcohol-related diseases. The results showed consistently strong evidence of association in the combined populations, particularly in the Asian populations, in both allelic and genotypic analyses (<xref ref-type="table" rid="T1">Table 1</xref>). For instance, the allelic <italic>P</italic> values for the combined populations and Asian populations were 8×10<sup>−8</sup> (OR = 1.53 (1.31, 1.78)) and 6×10<sup>−30</sup> (OR = 2.14 (1.87, 2.44)), respectively; and the allelic <italic>P</italic> value for the combined Asians and Europeans was 2×10<sup>−7</sup>. They were also significant under the dominant and recessive models.</p>
+      <p id="P13">In most of the studies, the patients were explicitly described as “alcohol dependent” (these “definite” alcohol dependent patients are designated as “AD” in <xref ref-type="table" rid="T1">Table 1</xref>) while six studies had no such clear description and one study indicated that the patients included both AD and alcohol abuse subjects. Therefore, these “definite” alcohol dependent patients without any specification regarding alcohol-related diseases were also analyzed independently. The results showed no major change and the association was still significant in the combined populations, in particular, in Asians and combined Asians and Europeans, for both allelic and genotypic analyses (<xref ref-type="table" rid="T1">Table 1</xref>). For example, the allelic <italic>P</italic> values were 4×10<sup>−8</sup> (OR = 1.66 (1.39, 1.99) and 7×10<sup>−30</sup> (OR = 2.14 (1.87, 2.44)) in all the populations and Asian populations, respectively. Evidence of significant association was also found in the studies of non-Asians (<xref ref-type="table" rid="T1">Table 1</xref>).</p>
+      <p id="P14">In terms of different phenotypes, when the samples of subjects diagnosed with heroin and other drug dependence (only three studies, and they were investigating the European and African populations) were combined with those of AD and alcohol abuse as an independent meta-analysis, based on the hypothesis that different types of addictions may share some common genetic risks(<xref ref-type="bibr" rid="R24">Fu et al. 2002</xref>; <xref ref-type="bibr" rid="R61">True et al. 1999</xref>; <xref ref-type="bibr" rid="R68">Xian et al. 2008</xref>), no significant change was found in the associations. Strong evidence of association was still identified using allelic and genotypic analyses in all the combined populations, combined Asians and Europeans, and combined Mexicans and Africans, but not in Europeans. The results of overall and sub-grouped analyses are shown for both allelic and genotypic analyses in <xref ref-type="table" rid="T1">Table 1</xref>. The forest plots of the allelic analysis and dominant model are shown in <xref ref-type="fig" rid="F1">Figures 1</xref> and <xref ref-type="fig" rid="F2">2</xref>; and the plots of the recessive model are shown in <xref ref-type="supplementary-material" rid="SD1">supplementary Figure 1</xref>.</p>
+      <sec id="S7">
+        <title>Other Heterogeneity Analyses</title>
+        <p id="P15">Heterogeneity Q tests were also performed to evaluate possible differences in OR between the studies using the World Health Organization’s International Statistical Classification of Diseases and Related Health Problems (ICD)(<xref ref-type="bibr" rid="R67">World Health Organization</xref>) or the American Psychiatric Association’s Diagnostic and Statistical Manual of Mental Disorders (DSM)(<xref ref-type="bibr" rid="R1">American Psychiatric Association</xref>) system and others criteria(allowing the inclusion of the studies with no description of specific criteria); between the studies with specified criteria and the studies with no description of criteria; between the English-language publications and Chinese-language publications; between the studies originating in mainland China and others (identified by information provided, e.g., institutions and addresses of the authors); and between the studies originating in the United States and others. The results showed that there was no evidence of significant heterogeneity in the Asian studies regarding different diagnostis criteria, publication languages, or research sites using either allelic or genotypic analysis. The results are shown in <xref ref-type="supplementary-material" rid="SD13">supplementary Table 2</xref> (<italic>P</italic>(Q) &gt; 0.1).</p>
+      </sec>
+      <sec id="S8">
+        <title>Publication Bias Analyses</title>
+        <p id="P16">In the present study, no evidence of publication bias was found in either Asian or European populations (<italic>P</italic>(T) &gt; 0.05) for either allelic or genotypic analyses. However, evidence of publication bias was found when all the populations were combined (Egger's regression <italic>P</italic> = 0.001 (1-tailed) for the allelic analysis and <italic>P</italic> = 0.002 (1-tailed) for the recessive model but not significant using Kendall's tau (Begg and Mazumdar rank correlation)(<xref ref-type="bibr" rid="R2">Begg and Mazumdar 1994</xref>) with <italic>P</italic> &gt; 0.05). The Duval and Tweedie's trim and fill analysis showed that for the allelic analysis there might potentially be 10 missing studies, and the adjusted overall effect size was 1.28(1.11, 1.48), which was still significant (it was not significant for the recessive model).</p>
+        <p id="P17">On the other hand, the classic fail-safe analysis suggested the association was still strong. For instance, for the allelic analysis at least 1,033 assumed non-significant studies would be required to bring the significant <italic>P</italic>(Z) value to &gt; 0.05 (814 required for the Asian studies); for the dominant model at least 949 non-significant studies would be required to bring the <italic>P</italic> value to &gt; 0.05 (716 required for the Asian studies); and for the recessive model at least 235 non-significant studies would bring the <italic>P</italic> value to &gt; 0.05 (138 required for the Asian studies). These findings, therefore, support that there are strong associations between the SNP and alcoholism as well as alcohol-related diseases. The funnel plots of the Asian studies of AD and alcohol abuse are shown for the allelic analysis, dominant model, and recessive model in <xref ref-type="fig" rid="F3">Figure 3</xref>, and <xref ref-type="supplementary-material" rid="SD2">supplementary Figures 2</xref> and <xref ref-type="supplementary-material" rid="SD3">3</xref>, respectively. The plots of all the studies of AD and alcohol abuse are shown in <xref ref-type="supplementary-material" rid="SD4">supplementary Figures 4</xref>–<xref ref-type="supplementary-material" rid="SD6">6</xref>, indicating the possible changes between the observed and adjusted values of effect size.</p>
+      </sec>
+      <sec id="S9">
+        <title>Sensitivity and Retrospective Analyses</title>
+        <p id="P18">According to the sensitivity analyses, no individual study biased the findings to the extent that it could account for the strong observed association. For example, in the Asian populations, the results of AD and alcohol abuse were consistent, regardless of the data set removed, with the allelic <italic>P</italic> values always between 6×10<sup>−34</sup> and 3×10<sup>−28</sup>. For the dominant model, the results also were consistent, regardless of the data set removed, with the <italic>P</italic> values always between 8×10<sup>−30</sup> and 1×10<sup>−24</sup>. <xref ref-type="supplementary-material" rid="SD13">Supplementary Tables 3 and 4</xref> show the results for the allelic analysis and dominant model of the Asian populations, respectively. The results of all the combined populations are not shown, but are available on request.</p>
+        <p id="P19">The asymptote lines of the analyses in retrospect based on 20 publication years showed that the association signal of the polymorphism has tended to be stable in the Asian populations. However, the results revealed a slight decrease on the effect size in all the combined studies in recent years, which implied that more non-Asian replication studies may be still necessary. The results of the allelic analysis, dominant model, and recessive model are shown for all the studies in <xref ref-type="fig" rid="F4">Figures 4</xref>, and <xref ref-type="supplementary-material" rid="SD7">supplementary Figures 7</xref> and <xref ref-type="supplementary-material" rid="SD8">8</xref>, respectively. Those of the Asian populations are shown in <xref ref-type="supplementary-material" rid="SD9">supplementary Figures 9</xref>–<xref ref-type="supplementary-material" rid="SD11">11</xref>, respectively. The <italic>P</italic> values of the allelic analysis, dominant model, and recessive model are shown for all the studies in <xref ref-type="supplementary-material" rid="SD13">supplementary Table 5–7</xref> and for the Asian populations in <xref ref-type="supplementary-material" rid="SD13">supplementary Table 8–10</xref>, respectively.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="S10">
+      <title>Discussion</title>
+      <p id="P20">The alcohol dehydrogenases (ADH) are a group of alcohol metabolizing enzymes that occur in many organisms. Aldehyde dehydrogenase (the most important in this context is ALDH2) is the next enzyme in this metabolic pathway. The first ADH was purified in 1937 from <italic>Saccharomyces cerevisiae</italic>(<xref ref-type="bibr" rid="R47">Negelein and Wulff 1937</xref>). In humans, the ADH isozymes are encoded by at least seven genes, and genetic association studies of genes in the ADH gene cluster with alcoholism and drug dependence have a longstanding history of decades with the most studied genes being <italic>ADH1B</italic> and <italic>ADH1C</italic>. Similarly, <italic>ALDH2</italic> has long been studied with respect to alcohol dependence. Our recent meta-analyses confirmed strong associations of the <italic>ADH1B</italic>(<xref ref-type="bibr" rid="R40">Li et al. 2011</xref>) and <italic>ALDH2</italic>(<xref ref-type="bibr" rid="R41">Li et al. 2012</xref>) genes with alcoholism and alcohol-related medical diseases (<italic>P</italic> = 1×10<sup>−36</sup> and OR = 2.06; <italic>P</italic> = 3×10<sup>−56</sup> and OR = 0.23, respectively). Because the three genes are biologically related in terms of the functions of their encoded enzymes or pathways, genotype data of ADH1C was also analyzed. In this study, our findings strongly support that <italic>ADH1C</italic> 350Ile may lower the risk for AD and alcohol abuse as well as some alcohol-related diseases, particularly in Asian populations. Regarding the studies included in this meta-analysis, the prevalence of 350Ile allele varied greatly across these populations: from 40% in the Polish population to 100% in some Chinese aboriginal populations (e.g., Ami). <xref ref-type="table" rid="T2">Table 2</xref> and <xref ref-type="fig" rid="F5">Figure 5</xref> show allele frequencies by geographic location.</p>
+      <p id="P21">Significant LD was found in the region of the gene cluster composed of the <italic>ADH6</italic>, <italic>ADH1A</italic>, <italic>ADH1B</italic>, <italic>ADH1C</italic>, and <italic>ADH7</italic> genes (<xref ref-type="fig" rid="F6">Figure 6</xref>). The first four genes were in a strong LD structure and two of them (the <italic>ADH1A</italic> and <italic>ADH1B</italic> genes) were in the same haplotype block, which implied that the contribution of the genes that make up the cluster to the associated effect on substance use may not be independent. One study(<xref ref-type="bibr" rid="R49">Osier et al. 1999</xref>) claimed the <italic>ADH1C</italic> association might be attributable to the <italic>ADH1C</italic> gene being in close proximity to the <italic>ADH1B</italic> gene on chromosome 4q so that their genotypes are correlated. Our results showed that <italic>ADH1C</italic> is in another haplotype block (multiallelic D’ = 0.99) although it is physically close to <italic>ADH1B</italic> (multiallelic D’ = 0.6). It is still necessary to investigate further the polymorphisms that are in the same haplotype block with <italic>ADH1C</italic> (e.g., the nonsynonymous SNPs shown on the LD plots and <xref ref-type="supplementary-material" rid="SD13">supplementary Table 11</xref>) or the polymorphisms on close genes within this strong LD structure. The LD plots are shown for the Asian and European populations in <xref ref-type="fig" rid="F6">Figure 6</xref> and <xref ref-type="supplementary-material" rid="SD12">supplementary Figure 12</xref>, respectively.</p>
+      <p id="P22">Previous studies were somewhat inconsistent regarding associations with alcoholism and related traits. The discrepancies may be due to a number of reasons. Most obviously, these include type II error and low power due to sample size limitations for some studies. Second, most subjects were diagnosed according to the ICD(<xref ref-type="bibr" rid="R67">World Health Organization</xref>) or DSM(<xref ref-type="bibr" rid="R1">American Psychiatric Association</xref>) system. However, ICD-10 criteria for AD have been shown to be more stringent than DSM-IV criteria, which in turn are more stringent than DSM-III-R(<xref ref-type="bibr" rid="R53">Schuckit et al. 1994</xref>). Therefore, different studies differ in their diagnostic criteria, and selection of more severely affected subjects could potentially increase the observed effect sizes. Third, different recruiting strategies could result in differing results (e.g., recruitment based on clinical treatment samples vs. that based on general population samples). Fourth, studies using only males or females may yield different results than studies using mixed sex samples, especially when this affects sex matching between cases or controls. Fifth, the genetic effects of <italic>ADH1C</italic> 350Ile may change over the course of lifetime alcohol use. For example, it may be a protective factor at one stage, but become a neutral or even a risk factor at another stage(<xref ref-type="bibr" rid="R38">Lenroot and Giedd 2008</xref>). Sixth, potential cultural differences in patterns of alcohol consumption (and potentially in reporting or diagnosing) consititute one easily idendifiable set of environmental influences on this trait, and can also contribute to discrepancies by interacting with the effect of variation at the gene.</p>
+      <p id="P23">The present meta-analysis identified much stronger evidence for association than previous meta-analyses, as shown below. One study(<xref ref-type="bibr" rid="R65">Whitfield 1997</xref>) only included five studies of alcoholism, and the latest dataset was published in 1995. Another study(<xref ref-type="bibr" rid="R71">Zintzaras et al. 2006</xref>), in which the latest dataset was published in 2004, (i) included 24 studies, compared to 53 studies in the present meta-analysis; (ii) only included English-language literature; and (iii) did not consider association with alcoholic liver diseases. Compared with the previous meta-analyses, our study included the largest sample size up to 2010 from 49 English and four Chinese publications (it was important to include Chinese-language publications as well); investigated both AD and alcohol abuse as well as drug dependence; applied both strict and extended criteria; performed both allelic and genotypic analyses under the strict random effects model; and applied a comprehensive and systematic analysis precedure, as shown in the results, to study additional questions not answered in those previous meta-analyses. Our meta-analysis found highly significant evidence of associations with AD and alcohol abuse as well as alcohol-related diseases, in particular, in Asians. In addition, the procedure of ‘extended-quality score’ suggested in our previous study(<xref ref-type="bibr" rid="R39">Li et al. 2006</xref>) was also applied to assist the assessment of quality of the association studies.</p>
+      <p id="P24">The Val350Val homozygote could not be observed or showed extremely low frequency in Asian and African American samples (but not in Europeans or Native Americans), thus, the analysis under the recessive model (ValVal vs. ValIle + IleIle) tended to produce a wider CI compared to that under the dominant model. On the other hand, despite the stringent criteria that were applied in the selection of studies, the samples in some studies might not be entirely random because the participants might have been screened for certain alcohol-related medical conditions. In addition, Hardy-Weinberg disequilibrium in patients or controls may support that the gene is related to AD, however, disequilibrium in controls may also reflect genotyping error and thus potentially reduce the powerof the analysis (however, of the control samples that were not in equilibrium, either the samples were small or the disequilibrium was not highly significant considering our strong findings).</p>
+      <p id="P25">Future studies should, first, strive to examine joint and interactive effects of the genetic markers because interaction effects could account for some of the inconsistent findings. Second, future investigations should also ideally consider longitudinal or prospective studies. Such studies can improve the understanding of the genetic mechanism and how the effects will change over the course of lifetime substance use. Third, most inherited AD involves the interaction of multiple genes that have minor effects and sociocultural factors. For example, increased cultural acceptance of alcohol consumption has been shown to reduce the protective effect of the <italic>ALDH2</italic> 350Val allele(<xref ref-type="bibr" rid="R28">Higuchi et al. 1994</xref>); thus, gene-environment interactions should also be considered in the future studies. Fourth, to identify genes of minor effect, alcohol dependent subjects with either heterozygous Ile350Val or homozygous Val350Val, could be selected based on their reduced heterogeneity. Fifth, quantitative tests may be of value. In addition, future studies should use older control samples that can be more accurately categorized, as younger individuals may not have fully transited the age of risk for alcohol dependence.</p>
+      <p id="P26">In conclusion, this meta-analysis combined the cumulative data of <italic>ADH1C</italic> Ile350Val with AD and alcohol abuse as well as alcohol-related medical diseases based on all 53 identified English and Chinese-language studies within the past 20 years. Strong evidence of association was found in the combined populations, in particular, in the Asian populations, using both allelic and genotypic analyses. The association remained strong using stricter and extended criteria as well as in various sub-group analyses. The findings strongly support that <italic>ADH1C</italic> 350Ile lowers the risk for AD and alcohol abuse as well as some alcohol-related diseases; and provide further evidence for the involvement of the human <italic>ADH1C</italic> gene in the pathogenesis of AD and alcohol-related diseases.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="SM">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="SD1">
+        <label>Supplementary Figure 1</label>
+        <media xlink:href="NIHMS431060-supplement-Supplementary_Figure_1.jpg" orientation="portrait" xlink:type="simple" id="d35e925" position="anchor" mimetype="image" mime-subtype="jpeg"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD10">
+        <label>Supplementary Figure 7</label>
+        <media xlink:href="NIHMS431060-supplement-Supplementary_Figure_7.jpg" orientation="portrait" xlink:type="simple" id="d35e929" position="anchor" mimetype="image" mime-subtype="jpeg"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD11">
+        <label>Supplementary Figure 8</label>
+        <media xlink:href="NIHMS431060-supplement-Supplementary_Figure_8.jpg" orientation="portrait" xlink:type="simple" id="d35e933" position="anchor" mimetype="image" mime-subtype="jpeg"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD12">
+        <label>Supplementary Figure 9</label>
+        <media xlink:href="NIHMS431060-supplement-Supplementary_Figure_9.jpg" orientation="portrait" xlink:type="simple" id="d35e937" position="anchor" mimetype="image" mime-subtype="jpeg"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD2">
+        <label>Supplementary Figure 10</label>
+        <media xlink:href="NIHMS431060-supplement-Supplementary_Figure_10.jpg" orientation="portrait" xlink:type="simple" id="d35e941" position="anchor" mimetype="image" mime-subtype="jpeg"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD3">
+        <label>Supplementary Figure 11</label>
+        <media xlink:href="NIHMS431060-supplement-Supplementary_Figure_11.jpg" orientation="portrait" xlink:type="simple" id="d35e945" position="anchor" mimetype="image" mime-subtype="jpeg"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD4">
+        <label>Supplementary Figure 12</label>
+        <media xlink:href="NIHMS431060-supplement-Supplementary_Figure_12.jpg" orientation="portrait" xlink:type="simple" id="d35e949" position="anchor" mimetype="image" mime-subtype="jpeg"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD5">
+        <label>Supplementary Figure 2</label>
+        <media xlink:href="NIHMS431060-supplement-Supplementary_Figure_2.jpg" orientation="portrait" xlink:type="simple" id="d35e953" position="anchor" mimetype="image" mime-subtype="jpeg"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD6">
+        <label>Supplementary Figure 3</label>
+        <media xlink:href="NIHMS431060-supplement-Supplementary_Figure_3.jpg" orientation="portrait" xlink:type="simple" id="d35e957" position="anchor" mimetype="image" mime-subtype="jpeg"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD7">
+        <label>Supplementary Figure 4</label>
+        <media xlink:href="NIHMS431060-supplement-Supplementary_Figure_4.jpg" orientation="portrait" xlink:type="simple" id="d35e961" position="anchor" mimetype="image" mime-subtype="jpeg"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD8">
+        <label>Supplementary Figure 5</label>
+        <media xlink:href="NIHMS431060-supplement-Supplementary_Figure_5.jpg" orientation="portrait" xlink:type="simple" id="d35e966" position="anchor" mimetype="image" mime-subtype="jpeg"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD9">
+        <label>Supplementary Figure 6</label>
+        <media xlink:href="NIHMS431060-supplement-Supplementary_Figure_6.jpg" orientation="portrait" xlink:type="simple" id="d35e970" position="anchor" mimetype="image" mime-subtype="jpeg"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD13">
+        <label>Supplementary Tables</label>
+        <media xlink:href="NIHMS431060-supplement-01.pdf" orientation="portrait" xlink:type="simple" id="d35e974" position="anchor" mimetype="application" mime-subtype="pdf"/>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack id="S11">
+      <title>Acknowledgements</title>
+      <p id="P27">This work was supported by the research grants DA12849, DA12690, AA017535, AA12870, and AA11330 from the National Institutes of Health, USA.</p>
+    </ack>
+    <fn-group>
+      <fn id="FN1" fn-type="conflict">
+        <p id="P28">
+          <bold>Conflict of Interest</bold>
+        </p>
+        <p id="P29">None</p>
+      </fn>
+      <fn id="FN2">
+        <p id="P30">
+          <bold>Electronic-database information</bold>
+        </p>
+        <p id="P31">Accession Numbers and URLs for data in this article are as follows:</p>
+        <p id="P32">GenBank, <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/Genbank/">http://www.ncbi.nlm.nih.gov/Genbank/</ext-link> for genomic structure of <italic>ADH1C</italic>; Online Mendelian Inheritance in Man (OMIM), <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/Omim">http://www.ncbi.nlm.nih.gov/Omim</ext-link> for <italic>ADH1C</italic>;</p>
+        <p id="P33">Genotype data, <ext-link ext-link-type="uri" xlink:href="http://www.hapmap.org/">http://www.hapmap.org/</ext-link> for <italic>ADH1C</italic>;</p>
+        <p id="P34">Genome data, <ext-link ext-link-type="uri" xlink:href="http://genome.ucsc.edu/">http://genome.ucsc.edu/</ext-link> for <italic>ADH1C</italic>.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="R1">
+        <element-citation publication-type="book">
+          <collab>American Psychiatric Association Diagnostic and Statistical Manual of Mental Disorders (DSM)</collab>
+          <publisher-loc>Washington, DC</publisher-loc>
+          <publisher-name>American Psychiatric Press</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="R2">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Begg</surname>
+              <given-names>CB</given-names>
+            </name>
+            <name>
+              <surname>Mazumdar</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Operating characteristics of a rank correlation test for publication bias</article-title>
+          <source>Biometrics</source>
+          <year>1994</year>
+          <volume>50</volume>
+          <fpage>1088</fpage>
+          <lpage>1101</lpage>
+          <pub-id pub-id-type="pmid">7786990</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R3">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Borras</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Coutelle</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Rosell</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Fernandez-Muixi</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Broch</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Crosas</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Hjelmqvist</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Lorenzo</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Gutierrez</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Santos</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Szczepanek</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Heilig</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Quattrocchi</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Farres</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Vidal</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Richart</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Mach</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Bogdal</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Jornvall</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Seitz</surname>
+              <given-names>HK</given-names>
+            </name>
+            <name>
+              <surname>Couzigou</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Pares</surname>
+              <given-names>X</given-names>
+            </name>
+          </person-group>
+          <article-title>Genetic polymorphism of alcohol dehydrogenase in europeans: the ADH2*2 allele decreases the risk for alcoholism and is associated with ADH3*1</article-title>
+          <source>Hepatology</source>
+          <year>2000</year>
+          <volume>31</volume>
+          <fpage>984</fpage>
+          <lpage>989</lpage>
+          <pub-id pub-id-type="pmid">10733556</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R4">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chai</surname>
+              <given-names>YG</given-names>
+            </name>
+            <name>
+              <surname>Oh</surname>
+              <given-names>DY</given-names>
+            </name>
+            <name>
+              <surname>Chung</surname>
+              <given-names>EK</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>GS</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>YS</given-names>
+            </name>
+            <name>
+              <surname>Choi</surname>
+              <given-names>IG</given-names>
+            </name>
+          </person-group>
+          <article-title>Alcohol and aldehyde dehydrogenase polymorphisms in men with type I and Type II alcoholism</article-title>
+          <source>Am J Psychiatry</source>
+          <year>2005</year>
+          <volume>162</volume>
+          <fpage>1003</fpage>
+          <lpage>1005</lpage>
+          <pub-id pub-id-type="pmid">15863807</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R5">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chambers</surname>
+              <given-names>GK</given-names>
+            </name>
+            <name>
+              <surname>Marshall</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <name>
+              <surname>Robinson</surname>
+              <given-names>GM</given-names>
+            </name>
+            <name>
+              <surname>Maguire</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Newton-Howes</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Chong</surname>
+              <given-names>NL</given-names>
+            </name>
+          </person-group>
+          <article-title>The genetics of alcoholism in Polynesians: alcohol and aldehyde dehydrogenase genotypes in young men</article-title>
+          <source>Alcohol Clin Exp Res</source>
+          <year>2002</year>
+          <volume>26</volume>
+          <fpage>949</fpage>
+          <lpage>955</lpage>
+          <pub-id pub-id-type="pmid">12170102</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R6">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chao</surname>
+              <given-names>YC</given-names>
+            </name>
+            <name>
+              <surname>Liou</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Chung</surname>
+              <given-names>YY</given-names>
+            </name>
+            <name>
+              <surname>Tang</surname>
+              <given-names>HS</given-names>
+            </name>
+            <name>
+              <surname>Hsu</surname>
+              <given-names>CT</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>TK</given-names>
+            </name>
+            <name>
+              <surname>Yin</surname>
+              <given-names>SJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Polymorphism of alcohol and aldehyde dehydrogenase genes and alcoholic cirrhosis in Chinese patients</article-title>
+          <source>Hepatology</source>
+          <year>1994</year>
+          <volume>19</volume>
+          <fpage>360</fpage>
+          <lpage>366</lpage>
+          <pub-id pub-id-type="pmid">7904979</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R7">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chao</surname>
+              <given-names>YC</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>LS</given-names>
+            </name>
+            <name>
+              <surname>Hsieh</surname>
+              <given-names>TY</given-names>
+            </name>
+            <name>
+              <surname>Chu</surname>
+              <given-names>CW</given-names>
+            </name>
+            <name>
+              <surname>Chang</surname>
+              <given-names>FY</given-names>
+            </name>
+            <name>
+              <surname>Chu</surname>
+              <given-names>HC</given-names>
+            </name>
+          </person-group>
+          <article-title>Chinese alcoholic patients with esophageal cancer are genetically different from alcoholics with acute pancreatitis and liver cirrhosis</article-title>
+          <source>Am J Gastroenterol</source>
+          <year>2000</year>
+          <volume>95</volume>
+          <fpage>2958</fpage>
+          <lpage>2964</lpage>
+          <pub-id pub-id-type="pmid">11051375</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R8">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chao</surname>
+              <given-names>YC</given-names>
+            </name>
+            <name>
+              <surname>Young</surname>
+              <given-names>TH</given-names>
+            </name>
+            <name>
+              <surname>Tang</surname>
+              <given-names>HS</given-names>
+            </name>
+            <name>
+              <surname>Hsu</surname>
+              <given-names>CT</given-names>
+            </name>
+          </person-group>
+          <article-title>Alcoholism and alcoholic organ damage and genetic polymorphisms of alcohol metabolizing enzymes in Chinese patients</article-title>
+          <source>Hepatology</source>
+          <year>1997</year>
+          <volume>25</volume>
+          <fpage>112</fpage>
+          <lpage>117</lpage>
+          <pub-id pub-id-type="pmid">8985275</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R9">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>CC</given-names>
+            </name>
+            <name>
+              <surname>Lu</surname>
+              <given-names>RB</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>YC</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>MF</given-names>
+            </name>
+            <name>
+              <surname>Chang</surname>
+              <given-names>YC</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>TK</given-names>
+            </name>
+            <name>
+              <surname>Yin</surname>
+              <given-names>SJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Interaction between the functional polymorphisms of the alcohol-metabolism genes in protection against alcoholism</article-title>
+          <source>Am J Hum Genet</source>
+          <year>1999</year>
+          <volume>65</volume>
+          <fpage>795</fpage>
+          <lpage>807</lpage>
+          <pub-id pub-id-type="pmid">10441588</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R10">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>Loh</surname>
+              <given-names>EW</given-names>
+            </name>
+            <name>
+              <surname>Hsu</surname>
+              <given-names>YP</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>CC</given-names>
+            </name>
+            <name>
+              <surname>Yu</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Cheng</surname>
+              <given-names>AT</given-names>
+            </name>
+          </person-group>
+          <article-title>Alcohol-metabolising genes and alcoholism among Taiwanese Han men: independent effect of ADH2, ADH3 and ALDH2</article-title>
+          <source>Br J Psychiatry</source>
+          <year>1996</year>
+          <volume>168</volume>
+          <fpage>762</fpage>
+          <lpage>767</lpage>
+          <pub-id pub-id-type="pmid">8773821</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R11">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>Loh</surname>
+              <given-names>EW</given-names>
+            </name>
+            <name>
+              <surname>Hsu</surname>
+              <given-names>YP</given-names>
+            </name>
+            <name>
+              <surname>Cheng</surname>
+              <given-names>AT</given-names>
+            </name>
+          </person-group>
+          <article-title>Alcohol dehydrogenase and aldehyde dehydrogenase genotypes and alcoholism among Taiwanese aborigines</article-title>
+          <source>Biol Psychiatry</source>
+          <year>1997</year>
+          <volume>41</volume>
+          <fpage>703</fpage>
+          <lpage>709</lpage>
+          <pub-id pub-id-type="pmid">9066994</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R12">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Choi</surname>
+              <given-names>IG</given-names>
+            </name>
+            <name>
+              <surname>Son</surname>
+              <given-names>HG</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>BH</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>SH</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>JS</given-names>
+            </name>
+            <name>
+              <surname>Chai</surname>
+              <given-names>YG</given-names>
+            </name>
+            <name>
+              <surname>Son</surname>
+              <given-names>BK</given-names>
+            </name>
+            <name>
+              <surname>Kee</surname>
+              <given-names>BS</given-names>
+            </name>
+            <name>
+              <surname>Park</surname>
+              <given-names>BL</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>LH</given-names>
+            </name>
+            <name>
+              <surname>Choi</surname>
+              <given-names>YH</given-names>
+            </name>
+            <name>
+              <surname>Shin</surname>
+              <given-names>HD</given-names>
+            </name>
+          </person-group>
+          <article-title>Scanning of genetic effects of alcohol metabolism gene (ADH1B and ADH1C) polymorphisms on the risk of alcoholism</article-title>
+          <source>Hum Mutat</source>
+          <year>2005</year>
+          <volume>26</volume>
+          <fpage>224</fpage>
+          <lpage>234</lpage>
+          <pub-id pub-id-type="pmid">16086315</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R13">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cichoz-Lach</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Celinski</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Slomka</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Alcohol-metabolizing enzyme gene polymorphisms and alcohol chronic pancreatitis among Polish individuals</article-title>
+          <source>HPB (Oxford)</source>
+          <year>2008</year>
+          <volume>10</volume>
+          <fpage>138</fpage>
+          <lpage>143</lpage>
+          <pub-id pub-id-type="pmid">18773092</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R14">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Couzigou</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Fleury</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Groppi</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Cassaigne</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Begueret</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Iron</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Genotyping study of alcohol dehydrogenase class I polymorphism in French patients with alcoholic cirrhosis. The French Group for Research on Alcohol and Liver</article-title>
+          <source>Alcohol Alcohol</source>
+          <year>1990</year>
+          <volume>25</volume>
+          <fpage>623</fpage>
+          <lpage>626</lpage>
+          <pub-id pub-id-type="pmid">2085345</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R15">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Day</surname>
+              <given-names>CP</given-names>
+            </name>
+            <name>
+              <surname>Bashir</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>James</surname>
+              <given-names>OF</given-names>
+            </name>
+            <name>
+              <surname>Bassendine</surname>
+              <given-names>MF</given-names>
+            </name>
+            <name>
+              <surname>Crabb</surname>
+              <given-names>DW</given-names>
+            </name>
+            <name>
+              <surname>Thomasson</surname>
+              <given-names>HR</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>TK</given-names>
+            </name>
+            <name>
+              <surname>Edenberg</surname>
+              <given-names>HJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Investigation of the role of polymorphisms at the alcohol and aldehyde dehydrogenase loci in genetic predisposition to alcohol-related end-organ damage</article-title>
+          <source>Hepatology</source>
+          <year>1991</year>
+          <volume>14</volume>
+          <fpage>798</fpage>
+          <lpage>801</lpage>
+          <pub-id pub-id-type="pmid">1937384</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R16">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>DerSimonian</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Laird</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Meta-analysis in clinical trials</article-title>
+          <source>Control Clin Trials</source>
+          <year>1986</year>
+          <volume>7</volume>
+          <fpage>177</fpage>
+          <lpage>188</lpage>
+          <pub-id pub-id-type="pmid">3802833</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R17">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Duval</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Tweedie</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Trim and fill: A simple funnel-plot-based method of testing and adjusting for publication bias in meta-analysis</article-title>
+          <source>Biometrics</source>
+          <year>2000</year>
+          <volume>56</volume>
+          <fpage>455</fpage>
+          <lpage>463</lpage>
+          <pub-id pub-id-type="pmid">10877304</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R18">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Egger</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Davey Smith</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Schneider</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Minder</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Bias in meta-analysis detected by a simple, graphical test</article-title>
+          <source>Bmj</source>
+          <year>1997</year>
+          <volume>315</volume>
+          <fpage>629</fpage>
+          <lpage>634</lpage>
+          <pub-id pub-id-type="pmid">9310563</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R19">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Espinos</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Sanchez</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Ramirez</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Juan</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Najera</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Polymorphism of alcohol dehydrogenase genes in alcoholic and nonalcoholic individuals from Valencia (Spain)</article-title>
+          <source>Hereditas</source>
+          <year>1997</year>
+          <volume>126</volume>
+          <fpage>247</fpage>
+          <lpage>253</lpage>
+          <pub-id pub-id-type="pmid">9350139</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R20">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fan</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Shen</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Cui</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Tian</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Dan</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Teng</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Xia</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Yao</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Wei</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>ADH and ALDH genes among Korea and Elunchun ethnic groups in China</article-title>
+          <source>Chin J Psychiatry</source>
+          <year>1998</year>
+          <volume>31</volume>
+          <fpage>209</fpage>
+          <lpage>212</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R21">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fan</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Sklar</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Meta-analysis reveals association between serotonin transporter gene STin2 VNTR polymorphism and schizophrenia</article-title>
+          <source>Mol Psychiatry</source>
+          <year>2005</year>
+          <volume>10</volume>
+          <fpage>928</fpage>
+          <lpage>938</lpage>
+          <fpage>891</fpage>
+          <pub-id pub-id-type="pmid">15940296</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R22">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Foley</surname>
+              <given-names>PF</given-names>
+            </name>
+            <name>
+              <surname>Loh</surname>
+              <given-names>EW</given-names>
+            </name>
+            <name>
+              <surname>Innes</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Williams</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Tannenberg</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Harper</surname>
+              <given-names>CG</given-names>
+            </name>
+            <name>
+              <surname>Dodd</surname>
+              <given-names>PR</given-names>
+            </name>
+          </person-group>
+          <article-title>Association studies of neurotransmitter gene polymorphisms in alcoholic Caucasians</article-title>
+          <source>Ann N Y Acad Sci</source>
+          <year>2004</year>
+          <volume>1025</volume>
+          <fpage>39</fpage>
+          <lpage>46</lpage>
+          <pub-id pub-id-type="pmid">15542698</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R23">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Frenzer</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Butler</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>Norton</surname>
+              <given-names>ID</given-names>
+            </name>
+            <name>
+              <surname>Wilson</surname>
+              <given-names>JS</given-names>
+            </name>
+            <name>
+              <surname>Apte</surname>
+              <given-names>MV</given-names>
+            </name>
+            <name>
+              <surname>Pirola</surname>
+              <given-names>RC</given-names>
+            </name>
+            <name>
+              <surname>Ryan</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Roberts-Thomson</surname>
+              <given-names>IC</given-names>
+            </name>
+          </person-group>
+          <article-title>Polymorphism in alcohol-metabolizing enzymes, glutathione S-transferases and apolipoprotein E and susceptibility to alcohol-induced cirrhosis and chronic pancreatitis</article-title>
+          <source>J Gastroenterol Hepatol</source>
+          <year>2002</year>
+          <volume>17</volume>
+          <fpage>177</fpage>
+          <lpage>182</lpage>
+          <pub-id pub-id-type="pmid">11966948</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R24">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fu</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Heath</surname>
+              <given-names>AC</given-names>
+            </name>
+            <name>
+              <surname>Bucholz</surname>
+              <given-names>KK</given-names>
+            </name>
+            <name>
+              <surname>Nelson</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Goldberg</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Lyons</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>True</surname>
+              <given-names>WR</given-names>
+            </name>
+            <name>
+              <surname>Jacob</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Tsuang</surname>
+              <given-names>MT</given-names>
+            </name>
+            <name>
+              <surname>Eisen</surname>
+              <given-names>SA</given-names>
+            </name>
+          </person-group>
+          <article-title>Shared genetic risk of major depression, alcohol dependence, and marijuana dependence: contribution of antisocial personality disorder in men</article-title>
+          <source>Arch Gen Psychiatry</source>
+          <year>2002</year>
+          <volume>59</volume>
+          <fpage>1125</fpage>
+          <lpage>1132</lpage>
+          <pub-id pub-id-type="pmid">12470129</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R25">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gilder</surname>
+              <given-names>FJ</given-names>
+            </name>
+            <name>
+              <surname>Hodgkinson</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Murray</surname>
+              <given-names>RM</given-names>
+            </name>
+          </person-group>
+          <article-title>ADH and ALDH genotype profiles in Caucasians with alcohol-related problems and controls</article-title>
+          <source>Addiction</source>
+          <year>1993</year>
+          <volume>88</volume>
+          <fpage>383</fpage>
+          <lpage>388</lpage>
+          <pub-id pub-id-type="pmid">8461855</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R26">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Grove</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>AS</given-names>
+            </name>
+            <name>
+              <surname>Daly</surname>
+              <given-names>AK</given-names>
+            </name>
+            <name>
+              <surname>Bassendine</surname>
+              <given-names>MF</given-names>
+            </name>
+            <name>
+              <surname>James</surname>
+              <given-names>OF</given-names>
+            </name>
+            <name>
+              <surname>Day</surname>
+              <given-names>CP</given-names>
+            </name>
+          </person-group>
+          <article-title>The RsaI polymorphism of CYP2E1 and susceptibility to alcoholic liver disease in Caucasians: effect on age of presentation and dependence on alcohol dehydrogenase genotype</article-title>
+          <source>Pharmacogenetics</source>
+          <year>1998</year>
+          <volume>8</volume>
+          <fpage>335</fpage>
+          <lpage>342</lpage>
+          <pub-id pub-id-type="pmid">9731720</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R27">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Heatherton</surname>
+              <given-names>TF</given-names>
+            </name>
+            <name>
+              <surname>Kozlowski</surname>
+              <given-names>LT</given-names>
+            </name>
+            <name>
+              <surname>Frecker</surname>
+              <given-names>RC</given-names>
+            </name>
+            <name>
+              <surname>Fagerstrom</surname>
+              <given-names>KO</given-names>
+            </name>
+          </person-group>
+          <article-title>The Fagerstrom Test for Nicotine Dependence: a revision of the Fagerstrom Tolerance Questionnaire</article-title>
+          <source>Br J Addict</source>
+          <year>1991</year>
+          <volume>86</volume>
+          <fpage>1119</fpage>
+          <lpage>1127</lpage>
+          <pub-id pub-id-type="pmid">1932883</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R28">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Higuchi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Matsushita</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Imazeki</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kinoshita</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Takagi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kono</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title>Aldehyde dehydrogenase genotypes in Japanese alcoholics</article-title>
+          <source>Lancet</source>
+          <year>1994</year>
+          <volume>343</volume>
+          <fpage>741</fpage>
+          <lpage>742</lpage>
+          <pub-id pub-id-type="pmid">7907720</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R29">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Higuchi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Matsushita</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Murayama</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Takagi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Hayashida</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Alcohol and aldehyde dehydrogenase polymorphisms and the risk for alcoholism</article-title>
+          <source>Am J Psychiatry</source>
+          <year>1995</year>
+          <volume>152</volume>
+          <fpage>1219</fpage>
+          <lpage>1221</lpage>
+          <pub-id pub-id-type="pmid">7625477</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R30">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Higuchi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Muramatsu</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Matsushita</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Murayama</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hayashida</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Polymorphisms of ethanol-oxidizing enzymes in alcoholics with inactive ALDH2</article-title>
+          <source>Hum Genet</source>
+          <year>1996</year>
+          <volume>97</volume>
+          <fpage>431</fpage>
+          <lpage>434</lpage>
+          <pub-id pub-id-type="pmid">8834237</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R31">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Khan</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Husain</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Choudhuri</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Parmar</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Association of polymorphism in alcohol dehydrogenase and interaction with other genetic risk factors with alcoholic liver cirrhosis</article-title>
+          <source>Drug Alcohol Depend</source>
+          <year>2010</year>
+          <volume>109</volume>
+          <fpage>190</fpage>
+          <lpage>197</lpage>
+          <pub-id pub-id-type="pmid">20171022</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R32">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kim</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name>
+              <surname>Song</surname>
+              <given-names>JY</given-names>
+            </name>
+            <name>
+              <surname>Park</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>HJ</given-names>
+            </name>
+            <name>
+              <surname>Chung</surname>
+              <given-names>JH</given-names>
+            </name>
+          </person-group>
+          <article-title>Association of polymorphisms in nicotinic acetylcholine receptor alpha 4 subunit gene (CHRNA4), mu-opioid receptor gene (OPRM1), and ethanol-metabolizing enzyme genes with alcoholism in Korean patients</article-title>
+          <source>Alcohol</source>
+          <year>2004</year>
+          <volume>34</volume>
+          <fpage>115</fpage>
+          <lpage>120</lpage>
+          <pub-id pub-id-type="pmid">15902904</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R33">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Konishi</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Calvillo</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Leng</surname>
+              <given-names>AS</given-names>
+            </name>
+            <name>
+              <surname>Feng</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Sial</surname>
+              <given-names>SH</given-names>
+            </name>
+            <name>
+              <surname>Berman</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>French</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Eysselein</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Wan</surname>
+              <given-names>YJ</given-names>
+            </name>
+          </person-group>
+          <article-title>The ADH3*2 and CYP2E1 c2 alleles increase the risk of alcoholism in Mexican American men</article-title>
+          <source>Exp Mol Pathol</source>
+          <year>2003</year>
+          <volume>74</volume>
+          <fpage>183</fpage>
+          <lpage>189</lpage>
+          <pub-id pub-id-type="pmid">12710951</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R34">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Konishi</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Luo</surname>
+              <given-names>HR</given-names>
+            </name>
+            <name>
+              <surname>Calvillo</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Mayo</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Wan</surname>
+              <given-names>YJ</given-names>
+            </name>
+          </person-group>
+          <article-title>ADH1B*1, ADH1C*2, DRD2 (-141C Ins), and 5-HTTLPR are associated with alcoholism in Mexican American men living in Los Angeles</article-title>
+          <source>Alcohol Clin Exp Res</source>
+          <year>2004</year>
+          <volume>28</volume>
+          <fpage>1145</fpage>
+          <lpage>1152</lpage>
+          <pub-id pub-id-type="pmid">15318112</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R35">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kuo</surname>
+              <given-names>PH</given-names>
+            </name>
+            <name>
+              <surname>Kalsi</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Prescott</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>Hodgkinson</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>Goldman</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>van den Oord</surname>
+              <given-names>EJ</given-names>
+            </name>
+            <name>
+              <surname>Alexander</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Jiang</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Sullivan</surname>
+              <given-names>PF</given-names>
+            </name>
+            <name>
+              <surname>Patterson</surname>
+              <given-names>DG</given-names>
+            </name>
+            <name>
+              <surname>Walsh</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Kendler</surname>
+              <given-names>KS</given-names>
+            </name>
+            <name>
+              <surname>Riley</surname>
+              <given-names>BP</given-names>
+            </name>
+          </person-group>
+          <article-title>Association of ADH and ALDH genes with alcohol dependence in the Irish Affected Sib Pair Study of alcohol dependence (IASPSAD) sample</article-title>
+          <source>Alcohol Clin Exp Res</source>
+          <year>2008</year>
+          <volume>32</volume>
+          <fpage>785</fpage>
+          <lpage>795</lpage>
+          <pub-id pub-id-type="pmid">18331377</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R36">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lee</surname>
+              <given-names>HC</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>HS</given-names>
+            </name>
+            <name>
+              <surname>Jung</surname>
+              <given-names>SH</given-names>
+            </name>
+            <name>
+              <surname>Yi</surname>
+              <given-names>SY</given-names>
+            </name>
+            <name>
+              <surname>Jung</surname>
+              <given-names>HK</given-names>
+            </name>
+            <name>
+              <surname>Yoon</surname>
+              <given-names>JH</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>CY</given-names>
+            </name>
+          </person-group>
+          <article-title>Association between polymorphisms of ethanol-metabolizing enzymes and susceptibility to alcoholic cirrhosis in a Korean male population</article-title>
+          <source>J Korean Med Sci</source>
+          <year>2001</year>
+          <volume>16</volume>
+          <fpage>745</fpage>
+          <lpage>750</lpage>
+          <pub-id pub-id-type="pmid">11748356</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R37">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lee</surname>
+              <given-names>JF</given-names>
+            </name>
+            <name>
+              <surname>Lu</surname>
+              <given-names>RB</given-names>
+            </name>
+            <name>
+              <surname>Ko</surname>
+              <given-names>HC</given-names>
+            </name>
+            <name>
+              <surname>Chang</surname>
+              <given-names>FM</given-names>
+            </name>
+            <name>
+              <surname>Yin</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <name>
+              <surname>Pakstis</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Kidd</surname>
+              <given-names>KK</given-names>
+            </name>
+          </person-group>
+          <article-title>No association between DRD2 locus and alcoholism after controlling the ADH and ALDH genotypes in Chinese Han population</article-title>
+          <source>Alcohol Clin Exp Res</source>
+          <year>1999</year>
+          <volume>23</volume>
+          <fpage>592</fpage>
+          <lpage>599</lpage>
+          <pub-id pub-id-type="pmid">10235293</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R38">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lenroot</surname>
+              <given-names>RK</given-names>
+            </name>
+            <name>
+              <surname>Giedd</surname>
+              <given-names>JN</given-names>
+            </name>
+          </person-group>
+          <article-title>The changing impact of genes and environment on brain development during childhood and adolescence: initial findings from a neuroimaging study of pediatric twins</article-title>
+          <source>Dev Psychopathol</source>
+          <year>2008</year>
+          <volume>20</volume>
+          <fpage>1161</fpage>
+          <lpage>1175</lpage>
+          <pub-id pub-id-type="pmid">18838036</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R39">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Collier</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>He</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Meta-analysis shows strong positive association of the neuregulin 1 (NRG1) gene with schizophrenia</article-title>
+          <source>Hum Mol Genet</source>
+          <year>2006</year>
+          <volume>15</volume>
+          <fpage>1995</fpage>
+          <lpage>2002</lpage>
+          <pub-id pub-id-type="pmid">16687441</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R40">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Gelernter</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Strong association of the alcohol dehydrogenase 1B gene (ADH1B) with alcohol dependence and alcohol-induced medical diseases</article-title>
+          <source>Biol Psychiatry</source>
+          <year>2011</year>
+          <volume>70</volume>
+          <fpage>504</fpage>
+          <lpage>512</lpage>
+          <pub-id pub-id-type="pmid">21497796</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R41">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Gelernter</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Strong protective effect of the aldehyde dehydrogenase gene (ALDH2) 504lys (*2) allele against alcoholism and alcohol-induced medical diseases in Asians</article-title>
+          <source>Hum Genet</source>
+          <year>2012</year>
+        </element-citation>
+      </ref>
+      <ref id="R42">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Luo</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Kranzler</surname>
+              <given-names>HR</given-names>
+            </name>
+            <name>
+              <surname>Zuo</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Schork</surname>
+              <given-names>NJ</given-names>
+            </name>
+            <name>
+              <surname>Gelernter</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Multiple ADH genes modulate risk for drug dependence in both African- and European-Americans</article-title>
+          <source>Hum Mol Genet</source>
+          <year>2007</year>
+          <volume>16</volume>
+          <fpage>380</fpage>
+          <lpage>390</lpage>
+          <pub-id pub-id-type="pmid">17185388</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R43">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Macgregor</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Lind</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Bucholz</surname>
+              <given-names>KK</given-names>
+            </name>
+            <name>
+              <surname>Hansell</surname>
+              <given-names>NK</given-names>
+            </name>
+            <name>
+              <surname>Madden</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Richter</surname>
+              <given-names>MM</given-names>
+            </name>
+            <name>
+              <surname>Montgomery</surname>
+              <given-names>GW</given-names>
+            </name>
+            <name>
+              <surname>Martin</surname>
+              <given-names>NG</given-names>
+            </name>
+            <name>
+              <surname>Heath</surname>
+              <given-names>AC</given-names>
+            </name>
+            <name>
+              <surname>Whitfield</surname>
+              <given-names>JB</given-names>
+            </name>
+          </person-group>
+          <article-title>Associations of ADH and ALDH2 gene variation with self report alcohol reactions, consumption and dependence: an integrated analysis</article-title>
+          <source>Hum Mol Genet</source>
+          <year>2009</year>
+          <volume>18</volume>
+          <fpage>580</fpage>
+          <lpage>593</lpage>
+          <pub-id pub-id-type="pmid">18996923</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R44">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Miyazaki</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Yamaguchi</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Takehara</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Dental arch and palate in Taiwan aboriginals--Ami, Bunun, Paiwan and Rukai tribes</article-title>
+          <source>Arch Oral Biol</source>
+          <year>1993</year>
+          <volume>38</volume>
+          <fpage>729</fpage>
+          <lpage>735</lpage>
+          <pub-id pub-id-type="pmid">8240079</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R45">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Montane-Jaime</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Moore</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Shafe</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Joseph</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Crooks</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Carr</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Ehlers</surname>
+              <given-names>CL</given-names>
+            </name>
+          </person-group>
+          <article-title>ADH1C*2 allele is associated with alcohol dependence and elevated liver enzymes in Trinidad and Tobago</article-title>
+          <source>Alcohol</source>
+          <year>2006</year>
+          <volume>39</volume>
+          <fpage>81</fpage>
+          <lpage>86</lpage>
+          <pub-id pub-id-type="pmid">17134660</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R46">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nakamura</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Iwahashi</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Matsuo</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Miyatake</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Ichikawa</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Suwaki</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title>Characteristics of Japanese alcoholics with the atypical aldehyde dehydrogenase 2*2. I. A comparison of the genotypes of ALDH2, ADH2, ADH3, and cytochrome P-4502E1 between alcoholics and nonalcoholics</article-title>
+          <source>Alcohol Clin Exp Res</source>
+          <year>1996</year>
+          <volume>20</volume>
+          <fpage>52</fpage>
+          <lpage>55</lpage>
+          <pub-id pub-id-type="pmid">8651462</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R47">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Negelein</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Wulff</surname>
+              <given-names>H-J</given-names>
+            </name>
+          </person-group>
+          <article-title>Diphosphopyridinproteid ackohol, acetaldehyd</article-title>
+          <source>Biochem Z</source>
+          <year>1937</year>
+          <fpage>351</fpage>
+          <lpage>389</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R48">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Neumark</surname>
+              <given-names>YD</given-names>
+            </name>
+            <name>
+              <surname>Friedlander</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Thomasson</surname>
+              <given-names>HR</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>TK</given-names>
+            </name>
+          </person-group>
+          <article-title>Association of the ADH2*2 allele with reduced ethanol consumption in Jewish men in Israel: a pilot study</article-title>
+          <source>J Stud Alcohol</source>
+          <year>1998</year>
+          <volume>59</volume>
+          <fpage>133</fpage>
+          <lpage>139</lpage>
+          <pub-id pub-id-type="pmid">9500299</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R49">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Osier</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Pakstis</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Kidd</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>JF</given-names>
+            </name>
+            <name>
+              <surname>Yin</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <name>
+              <surname>Ko</surname>
+              <given-names>HC</given-names>
+            </name>
+            <name>
+              <surname>Edenberg</surname>
+              <given-names>HJ</given-names>
+            </name>
+            <name>
+              <surname>Lu</surname>
+              <given-names>RB</given-names>
+            </name>
+            <name>
+              <surname>Kidd</surname>
+              <given-names>KK</given-names>
+            </name>
+          </person-group>
+          <article-title>Linkage disequilibrium at the ADH2 and ADH3 loci and risk of alcoholism</article-title>
+          <source>Am J Hum Genet</source>
+          <year>1999</year>
+          <volume>64</volume>
+          <fpage>1147</fpage>
+          <lpage>1157</lpage>
+          <pub-id pub-id-type="pmid">10090900</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R50">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pares</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Farres</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Pares</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Soler</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Panes</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Ferre</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Caballeria</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Rodes</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Genetic polymorphism of liver alcohol dehydrogenase in Spanish subjects: significance of alcohol consumption and liver disease</article-title>
+          <source>Alcohol Alcohol</source>
+          <year>1994</year>
+          <volume>29</volume>
+          <fpage>701</fpage>
+          <lpage>705</lpage>
+          <pub-id pub-id-type="pmid">7695787</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R51">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Park</surname>
+              <given-names>KS</given-names>
+            </name>
+            <name>
+              <surname>Mok</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name>
+              <surname>Chung</surname>
+              <given-names>TH</given-names>
+            </name>
+          </person-group>
+          <article-title>Genetic aspects and relative risk factors in alcoholism among Koreans</article-title>
+          <source>Korean J. Genetics</source>
+          <year>2001</year>
+          <volume>23</volume>
+          <fpage>143</fpage>
+          <lpage>150</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R52">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Poupon</surname>
+              <given-names>RE</given-names>
+            </name>
+            <name>
+              <surname>Nalpas</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Coutelle</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Fleury</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Couzigou</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Higueret</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Polymorphism of alcohol dehydrogenase, alcohol and aldehyde dehydrogenase activities: implication in alcoholic cirrhosis in white patients. The French Group for Research on Alcohol and Liver</article-title>
+          <source>Hepatology</source>
+          <year>1992</year>
+          <volume>15</volume>
+          <fpage>1017</fpage>
+          <lpage>1022</lpage>
+          <pub-id pub-id-type="pmid">1592339</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R53">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schuckit</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Hesselbrock</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Tipp</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Anthenelli</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Bucholz</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Radziminski</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>A comparison of DSM-III-R, DSM-IV and ICD-10 substance use disorders diagnoses in 1922 men and women subjects in the COGA study. Collaborative Study on the Genetics of Alcoholism</article-title>
+          <source>Addiction</source>
+          <year>1994</year>
+          <volume>89</volume>
+          <fpage>1629</fpage>
+          <lpage>1638</lpage>
+          <pub-id pub-id-type="pmid">7866247</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R54">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shafe</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Gilder</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Montane-Jaime</surname>
+              <given-names>LK</given-names>
+            </name>
+            <name>
+              <surname>Joseph</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Moore</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Crooks</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Ramcharan</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Ehlers</surname>
+              <given-names>CL</given-names>
+            </name>
+          </person-group>
+          <article-title>Co-morbidity of Alcohol Dependence and Select Affective and Anxiety Disorders among Individuals of East Indian and African Ancestry in Trinidad and Tobago</article-title>
+          <source>West Indian Med. J</source>
+          <year>2009</year>
+          <volume>58</volume>
+          <fpage>164</fpage>
+          <lpage>172</lpage>
+          <pub-id pub-id-type="pmid">20953317</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R55">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shen</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Fan</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Cui</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Tian</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>TK</given-names>
+            </name>
+            <name>
+              <surname>Edenberg</surname>
+              <given-names>HJ</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Bai</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Dan</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Teng</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Fan</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Z</given-names>
+            </name>
+          </person-group>
+          <article-title>A study of the correlation between alcohol dependence and polymorphism of alcohol-dehydrogenase genes and aldehyde-dehydrogenase genes among Mongolian and Han ethnic groups in China</article-title>
+          <source>Chin J Psychiatry</source>
+          <year>1997a</year>
+          <volume>30</volume>
+          <fpage>3</fpage>
+          <lpage>6</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R56">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shen</surname>
+              <given-names>YC</given-names>
+            </name>
+            <name>
+              <surname>Fan</surname>
+              <given-names>JH</given-names>
+            </name>
+            <name>
+              <surname>Edenberg</surname>
+              <given-names>HJ</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>TK</given-names>
+            </name>
+            <name>
+              <surname>Cui</surname>
+              <given-names>YH</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>YF</given-names>
+            </name>
+            <name>
+              <surname>Tian</surname>
+              <given-names>CH</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>CF</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>ZL</given-names>
+            </name>
+            <name>
+              <surname>Xia</surname>
+              <given-names>GY</given-names>
+            </name>
+          </person-group>
+          <article-title>Polymorphism of ADH and ALDH genes among four ethnic groups in China and effects upon the risk for alcoholism</article-title>
+          <source>Alcohol Clin Exp Res</source>
+          <year>1997b</year>
+          <volume>21</volume>
+          <fpage>1272</fpage>
+          <lpage>1277</lpage>
+          <pub-id pub-id-type="pmid">9347089</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R57">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sherman</surname>
+              <given-names>DI</given-names>
+            </name>
+            <name>
+              <surname>Ward</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Yoshida</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Peters</surname>
+              <given-names>TJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Alcohol and acetaldehyde dehydrogenase gene polymorphism and alcoholism</article-title>
+          <source>EXS</source>
+          <year>1994</year>
+          <volume>71</volume>
+          <fpage>291</fpage>
+          <lpage>300</lpage>
+          <pub-id pub-id-type="pmid">7913353</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R58">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sherva</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Rice</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Neuman</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Rochberg</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Saccone</surname>
+              <given-names>NL</given-names>
+            </name>
+            <name>
+              <surname>Bierut</surname>
+              <given-names>LJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Associations and interactions between SNPs in the alcohol metabolizing genes and alcoholism phenotypes in European Americans</article-title>
+          <source>Alcohol Clin Exp Res</source>
+          <year>2009</year>
+          <volume>33</volume>
+          <fpage>848</fpage>
+          <lpage>857</lpage>
+          <pub-id pub-id-type="pmid">19298322</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R59">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Thomasson</surname>
+              <given-names>HR</given-names>
+            </name>
+            <name>
+              <surname>Crabb</surname>
+              <given-names>DW</given-names>
+            </name>
+            <name>
+              <surname>Edenberg</surname>
+              <given-names>HJ</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>TK</given-names>
+            </name>
+            <name>
+              <surname>Hwu</surname>
+              <given-names>HG</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>CC</given-names>
+            </name>
+            <name>
+              <surname>Yeh</surname>
+              <given-names>EK</given-names>
+            </name>
+            <name>
+              <surname>Yin</surname>
+              <given-names>SJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Low frequency of the ADH2*2 allele among Atayal natives of Taiwan with alcohol use disorders</article-title>
+          <source>Alcohol Clin Exp Res</source>
+          <year>1994</year>
+          <volume>18</volume>
+          <fpage>640</fpage>
+          <lpage>643</lpage>
+          <pub-id pub-id-type="pmid">7943668</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R60">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Thomasson</surname>
+              <given-names>HR</given-names>
+            </name>
+            <name>
+              <surname>Edenberg</surname>
+              <given-names>HJ</given-names>
+            </name>
+            <name>
+              <surname>Crabb</surname>
+              <given-names>DW</given-names>
+            </name>
+            <name>
+              <surname>Mai</surname>
+              <given-names>XL</given-names>
+            </name>
+            <name>
+              <surname>Jerome</surname>
+              <given-names>RE</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>TK</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>SP</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>YT</given-names>
+            </name>
+            <name>
+              <surname>Lu</surname>
+              <given-names>RB</given-names>
+            </name>
+            <name>
+              <surname>Yin</surname>
+              <given-names>SJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Alcohol and aldehyde dehydrogenase genotypes and alcoholism in Chinese men</article-title>
+          <source>Am J Hum Genet</source>
+          <year>1991</year>
+          <volume>48</volume>
+          <fpage>677</fpage>
+          <lpage>681</lpage>
+          <pub-id pub-id-type="pmid">2014795</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R61">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>True</surname>
+              <given-names>WR</given-names>
+            </name>
+            <name>
+              <surname>Xian</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Scherrer</surname>
+              <given-names>JF</given-names>
+            </name>
+            <name>
+              <surname>Madden</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Bucholz</surname>
+              <given-names>KK</given-names>
+            </name>
+            <name>
+              <surname>Heath</surname>
+              <given-names>AC</given-names>
+            </name>
+            <name>
+              <surname>Eisen</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Lyons</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Goldberg</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Tsuang</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Common genetic vulnerability for nicotine and alcohol dependence in men</article-title>
+          <source>Arch Gen Psychiatry</source>
+          <year>1999</year>
+          <volume>56</volume>
+          <fpage>655</fpage>
+          <lpage>661</lpage>
+          <pub-id pub-id-type="pmid">10401514</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R62">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vidal</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Lorenzo</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Auguet</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Olona</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Broch</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Gutierrez</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Aguilar</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Estupina</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Santos</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Richart</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Genetic polymorphisms of ADH2, ADH3, CYP4502E1 Dra-I and Pst-I, and ALDH2 in Spanish men: lack of association with alcoholism and alcoholic liver disease</article-title>
+          <source>J Hepatol</source>
+          <year>2004</year>
+          <volume>41</volume>
+          <fpage>744</fpage>
+          <lpage>750</lpage>
+          <pub-id pub-id-type="pmid">15519646</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R63">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wall</surname>
+              <given-names>TL</given-names>
+            </name>
+            <name>
+              <surname>Carr</surname>
+              <given-names>LG</given-names>
+            </name>
+            <name>
+              <surname>Ehlers</surname>
+              <given-names>CL</given-names>
+            </name>
+          </person-group>
+          <article-title>Protective association of genetic variation in alcohol dehydrogenase with alcohol dependence in Native American Mission Indians</article-title>
+          <source>Am J Psychiatry</source>
+          <year>2003</year>
+          <volume>160</volume>
+          <fpage>41</fpage>
+          <lpage>46</lpage>
+          <pub-id pub-id-type="pmid">12505800</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R64">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wei</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Fan</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Shen</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Tian</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Zheng</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Peng</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>A control study on the polymorphism of the ADH and ALDH genes in high risk alcoholic families of Han ethnic population</article-title>
+          <source>Chin J Psychiatry</source>
+          <year>1999</year>
+          <volume>32</volume>
+          <fpage>164</fpage>
+          <lpage>166</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R65">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Whitfield</surname>
+              <given-names>JB</given-names>
+            </name>
+          </person-group>
+          <article-title>Meta-analysis of the effects of alcohol dehydrogenase genotype on alcohol dependence and alcoholic liver disease</article-title>
+          <source>Alcohol Alcohol</source>
+          <year>1997</year>
+          <volume>32</volume>
+          <fpage>613</fpage>
+          <lpage>619</lpage>
+          <pub-id pub-id-type="pmid">9373704</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R66">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Woolf</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>On estimating the relation between blood group and disease</article-title>
+          <source>Ann Hum Genet</source>
+          <year>1955</year>
+          <volume>19</volume>
+          <fpage>251</fpage>
+          <lpage>253</lpage>
+          <pub-id pub-id-type="pmid">14388528</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R67">
+        <element-citation publication-type="book">
+          <collab>World Health Organization World Health Organization’s International Statistical Classification of Diseases and Related Health Problems (ICD)</collab>
+          <publisher-loc>Geneva</publisher-loc>
+          <publisher-name>WHO</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="R68">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xian</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Scherrer</surname>
+              <given-names>JF</given-names>
+            </name>
+            <name>
+              <surname>Grant</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Eisen</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>True</surname>
+              <given-names>WR</given-names>
+            </name>
+            <name>
+              <surname>Jacob</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Bucholz</surname>
+              <given-names>KK</given-names>
+            </name>
+          </person-group>
+          <article-title>Genetic and environmental contributions to nicotine, alcohol and cannabis dependence in male twins</article-title>
+          <source>Addiction</source>
+          <year>2008</year>
+          <volume>103</volume>
+          <fpage>1391</fpage>
+          <lpage>1398</lpage>
+          <pub-id pub-id-type="pmid">18855830</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R69">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yoshida</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Hsu</surname>
+              <given-names>LC</given-names>
+            </name>
+            <name>
+              <surname>Yasunami</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Genetics of human alcohol-metabolizing enzymes</article-title>
+          <source>Prog Nucleic Acid Res Mol Biol</source>
+          <year>1991</year>
+          <volume>40</volume>
+          <fpage>255</fpage>
+          <lpage>287</lpage>
+          <pub-id pub-id-type="pmid">2031085</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R70">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yu</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Yue</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Genotype of ethanol metabolizing enzyme genes by oligonucleotide microarray in alcoholic liver disease in Chinese people</article-title>
+          <source>Chin Med J (Engl)</source>
+          <year>2002</year>
+          <volume>115</volume>
+          <fpage>1085</fpage>
+          <lpage>1087</lpage>
+          <pub-id pub-id-type="pmid">12173598</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R71">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zintzaras</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Stefanidis</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Santos</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Vidal</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <article-title>Do alcohol-metabolizing enzyme gene polymorphisms increase the risk of alcoholism and alcoholic liver disease?</article-title>
+          <source>Hepatology</source>
+          <year>2006</year>
+          <volume>43</volume>
+          <fpage>352</fpage>
+          <lpage>361</lpage>
+          <pub-id pub-id-type="pmid">16440362</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig id="F1" orientation="portrait" position="float">
+      <label>Figure 1</label>
+      <caption>
+        <p id="P35">Forest plots of ln(OR) with 95% CI for the allelic analysis. Black squares indicate the ln(OR) (ln(OR) can be better fitted than OR), with the size of the square inversely proportional to its variance, and horizontal lines represent the 95% CIs. The pooled results are indicated by the unshaded black diamond. Three studies, including Chen 1997 (Atayal), Chen 1997 (Ami), and Chen 1997 (Paiwan), are not shown on the forest plots because the scale of the wide CIs can not fit into the current version of the plot.</p>
+        <p id="P36"><sup> *</sup>, alcoholic patients without alcoholic liver disease, cirrhosis or pancreatitis.</p>
+      </caption>
+      <graphic xlink:href="nihms431060f1"/>
+    </fig>
+    <fig id="F2" orientation="portrait" position="float">
+      <label>Figure 2</label>
+      <caption>
+        <p id="P37">Forest plots of ln(OR) with 95% CI for the dominant model ((ValVal + ValIle) vs. IleIle). Three studies, including Chen 1997 (Atayal), Chen 1997 (Ami), and Chen 1997 (Paiwan), are not shown on the forest plots because the scale of the wide CIs can not fit into the current version of the plot.</p>
+        <p id="P38"><sup>*</sup>, the alcoholic patients without alcoholic liver disease, cirrhosis or pancreatitis.</p>
+      </caption>
+      <graphic xlink:href="nihms431060f2"/>
+    </fig>
+    <fig id="F3" orientation="portrait" position="float">
+      <label>Figure 3</label>
+      <caption>
+        <p id="P39">Egger’s funnel plots of publication bias analysis for the allelic analysis of AD and alcohol abuse in Asians. A larger deviation from the funnel curve of each study means more pronounced asymmetry. Results from small studies will scatter widely at the bottom of the graph, with the spread narrowing among larger studies.</p>
+      </caption>
+      <graphic xlink:href="nihms431060f3"/>
+    </fig>
+    <fig id="F4" orientation="portrait" position="float">
+      <label>Figure 4</label>
+      <caption>
+        <p id="P40">Retrospective analysis for the allelic analysis. Analysis in retrospect was based on publication year since 1990.</p>
+      </caption>
+      <graphic xlink:href="nihms431060f4"/>
+    </fig>
+    <fig id="F5" orientation="portrait" position="float">
+      <label>Figure 5</label>
+      <caption>
+        <p id="P41">Allele frequencies among different populations. Blue and red represent Ile350 and 350Val, respectively. Upper graphs are based on the patients and , lower graphs on controls. The geographical borders(<xref ref-type="bibr" rid="R44">Miyazaki et al. 1993</xref>) of Taiwan aboriginals were from a previous study.</p>
+      </caption>
+      <graphic xlink:href="nihms431060f5"/>
+    </fig>
+    <fig id="F6" orientation="portrait" position="float">
+      <label>Figure 6</label>
+      <caption>
+        <p id="P42">Graphical representation of the LD structure of the <italic>ADH1C</italic> gene for the Asian populations. The LD structure, spanning 233 kb, was constructed using the Asian genotype data of 232 SNPs. Vertical tick marks above the name indicate the relative genomic position of each SNP. The LD structure represents the pairwise calculation of D’ for each possible combination of SNPs. D’ &lt; 0.5 is shown in white, D’ = 1.0 in dark red, with increasing shades of red representing increasing D’ between the SNPs. The genes from left to right are<italic> ADH6</italic>, <italic>ADH1A</italic>, <italic>ADH1B</italic>, <italic>ADH1C</italic> and <italic>ADH7</italic>. The <italic>ADH1C</italic> gene, and <italic>ADH1C</italic> Ile350Val are shown in red; the selected <italic>ADH1C</italic> nonsynonymous SNPs are shown in blue; and the other genes are in black.</p>
+      </caption>
+      <graphic xlink:href="nihms431060f6"/>
+    </fig>
+    <table-wrap id="T1" position="float" orientation="landscape">
+      <label>Table 1</label>
+      <caption>
+        <p id="P43">Results of the overall and sub-grouped studies</p>
+      </caption>
+      <table frame="hsides" rules="none">
+        <thead>
+          <tr>
+            <th align="left" rowspan="1" colspan="1">Groups</th>
+            <th align="right" rowspan="1" colspan="1">N<xref ref-type="table-fn" rid="TFN1">*</xref></th>
+            <th align="left" rowspan="1" colspan="1">OR (95% CI)</th>
+            <th align="center" rowspan="1" colspan="1">P(Z)</th>
+            <th align="center" rowspan="1" colspan="1">P(Q)</th>
+            <th align="left" rowspan="1" colspan="1">OR (95% CI)</th>
+            <th align="center" rowspan="1" colspan="1">P(Z)</th>
+            <th align="center" rowspan="1" colspan="1">P(Q)</th>
+            <th align="left" rowspan="1" colspan="1">OR (95% CI)</th>
+            <th align="right" rowspan="1" colspan="1">P(Z)</th>
+            <th align="right" rowspan="1" colspan="1">P(Q)</th>
+          </tr>
+          <tr>
+            <th align="left" rowspan="1" colspan="1"/>
+            <th align="right" rowspan="1" colspan="1"/>
+            <th align="left" rowspan="1" colspan="1">Allelic Analysis<break/>Val vs. Ile</th>
+            <th align="center" rowspan="1" colspan="1"/>
+            <th align="center" rowspan="1" colspan="1"/>
+            <th align="left" rowspan="1" colspan="1">Dominant Model<break/>(ValVal + ValIle)<break/>vs. IleIle</th>
+            <th align="center" rowspan="1" colspan="1"/>
+            <th align="center" rowspan="1" colspan="1"/>
+            <th align="left" rowspan="1" colspan="1">Recessive Model<break/>ValVal vs.<break/>(ValIle + IleIle)</th>
+            <th align="right" rowspan="1" colspan="1"/>
+            <th align="right" rowspan="1" colspan="1"/>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Alcoholics<xref ref-type="table-fn" rid="TFN2">a</xref></td>
+            <td align="right" rowspan="1" colspan="1">50</td>
+            <td align="left" rowspan="1" colspan="1">1.51 (1.31,1.73)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>1×10<sup>−8</sup></bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">6×10<sup>−17</sup></td>
+            <td align="left" rowspan="1" colspan="1">1.65 (1.38,1.96)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>2×10<sup>−8</sup></bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">7×10<sup>−11</sup></td>
+            <td align="left" rowspan="1" colspan="1">1.43 (1.11,1.86)</td>
+            <td align="right" rowspan="1" colspan="1">
+              <bold>0.0067</bold>
+            </td>
+            <td align="right" rowspan="1" colspan="1">0.0007</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Alcoholics<xref ref-type="table-fn" rid="TFN2">a</xref>(Asian)</td>
+            <td align="right" rowspan="1" colspan="1">30</td>
+            <td align="left" rowspan="1" colspan="1">2.14 (1.89,2.43)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>4×10<sup>−33</sup></bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">0.2145</td>
+            <td align="left" rowspan="1" colspan="1">2.2 (1.92,2.53)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>7×10<sup>−29</sup></bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">0.1597</td>
+            <td align="left" rowspan="1" colspan="1">3.83 (2.26,6.49)</td>
+            <td align="right" rowspan="1" colspan="1">
+              <bold>6×10<sup>−7</sup></bold>
+            </td>
+            <td align="right" rowspan="1" colspan="1">0.9481</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Alcoholics<xref ref-type="table-fn" rid="TFN2">a</xref>(European)</td>
+            <td align="right" rowspan="1" colspan="1">16</td>
+            <td align="left" rowspan="1" colspan="1">1.04 (0.89,1.22)</td>
+            <td align="center" rowspan="1" colspan="1">0.6358</td>
+            <td align="center" rowspan="1" colspan="1">3×10<sup>−5</sup></td>
+            <td align="left" rowspan="1" colspan="1">1.04 (0.79,1.36)</td>
+            <td align="center" rowspan="1" colspan="1">0.7968</td>
+            <td align="center" rowspan="1" colspan="1">1×10<sup>−4</sup></td>
+            <td align="left" rowspan="1" colspan="1">1.21 (0.87,1.69)</td>
+            <td align="right" rowspan="1" colspan="1">0.2579</td>
+            <td align="right" rowspan="1" colspan="1">0.0001</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Alcoholics<xref ref-type="table-fn" rid="TFN2">a</xref>(Mexican)</td>
+            <td align="right" rowspan="1" colspan="1">3</td>
+            <td align="left" rowspan="1" colspan="1">1.22 (1.02,1.47)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>0.0328</bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">0.9613</td>
+            <td align="left" rowspan="1" colspan="1">1.52 (1.18,1.97)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>0.0012</bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">0.6814</td>
+            <td align="left" rowspan="1" colspan="1">0.92 (0.64,1.31)</td>
+            <td align="right" rowspan="1" colspan="1">0.6440</td>
+            <td align="right" rowspan="1" colspan="1">0.3034</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Alcoholics<xref ref-type="table-fn" rid="TFN2">a</xref>(Asian &amp; European)</td>
+            <td align="right" rowspan="1" colspan="1">46</td>
+            <td align="left" rowspan="1" colspan="1">1.56 (1.33,1.83)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>3×10<sup>−8</sup></bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">4×10<sup>−18</sup></td>
+            <td align="left" rowspan="1" colspan="1">1.69 (1.39,2.05)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>2×10<sup>−7</sup></bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">1×10<sup>−11</sup></td>
+            <td align="left" rowspan="1" colspan="1">1.6 (1.19,2.16)</td>
+            <td align="right" rowspan="1" colspan="1">
+<bold>0.0020</bold></td>
+            <td align="right" rowspan="1" colspan="1">0.0007</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Alcohol-related diseases<xref ref-type="table-fn" rid="TFN3">b</xref></td>
+            <td align="right" rowspan="1" colspan="1">14</td>
+            <td align="left" rowspan="1" colspan="1">1.2 (0.91,1.57)</td>
+            <td align="center" rowspan="1" colspan="1">0.1966</td>
+            <td align="center" rowspan="1" colspan="1">7×10<sup>−6</sup></td>
+            <td align="left" rowspan="1" colspan="1">1.08 (0.78,1.5)</td>
+            <td align="center" rowspan="1" colspan="1">0.6381</td>
+            <td align="center" rowspan="1" colspan="1">0.0015</td>
+            <td align="left" rowspan="1" colspan="1">1.52 (0.91,2.54)</td>
+            <td align="right" rowspan="1" colspan="1">0.1104</td>
+            <td align="right" rowspan="1" colspan="1">0.0009</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Alcohol-related diseases<xref ref-type="table-fn" rid="TFN3">b</xref> (Asian)</td>
+            <td align="right" rowspan="1" colspan="1">4</td>
+            <td align="left" rowspan="1" colspan="1">2.12 (1.42,3.17)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>0.0002</bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">0.3004</td>
+            <td align="left" rowspan="1" colspan="1">2.15 (1.39,3.31)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>0.0006</bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">0.3041</td>
+            <td align="left" rowspan="1" colspan="1">2.82 (0.59,13.38)</td>
+            <td align="right" rowspan="1" colspan="1">0.1921</td>
+            <td align="right" rowspan="1" colspan="1">0.7982</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Alcohol-related diseases<xref ref-type="table-fn" rid="TFN3">b</xref> (European)</td>
+            <td align="right" rowspan="1" colspan="1">10</td>
+            <td align="left" rowspan="1" colspan="1">1.02 (0.77,1.35)</td>
+            <td align="center" rowspan="1" colspan="1">0.8956</td>
+            <td align="center" rowspan="1" colspan="1">1×10<sup>−4</sup></td>
+            <td align="left" rowspan="1" colspan="1">0.84 (0.68,1.04)</td>
+            <td align="center" rowspan="1" colspan="1">0.1125</td>
+            <td align="center" rowspan="1" colspan="1">0.0822</td>
+            <td align="left" rowspan="1" colspan="1">1.42 (0.8,2.49)</td>
+            <td align="right" rowspan="1" colspan="1">0.2281</td>
+            <td align="right" rowspan="1" colspan="1">0.0001</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Cirrhosis</td>
+            <td align="right" rowspan="1" colspan="1">8</td>
+            <td align="left" rowspan="1" colspan="1">1.48 (1.03,2.12)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>0.0320</bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">0.0031</td>
+            <td align="left" rowspan="1" colspan="1">1.34 (0.84,2.15)</td>
+            <td align="center" rowspan="1" colspan="1">0.2202</td>
+            <td align="center" rowspan="1" colspan="1">0.0103</td>
+            <td align="left" rowspan="1" colspan="1">2.1 (1.03,4.27)</td>
+            <td align="right" rowspan="1" colspan="1">
+              <bold>0.0407</bold>
+            </td>
+            <td align="right" rowspan="1" colspan="1">0.0140</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Cirrhosis (Asian)</td>
+            <td align="right" rowspan="1" colspan="1">3</td>
+            <td align="left" rowspan="1" colspan="1">2.15 (1.31,3.53)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>0.0025</bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">0.1609</td>
+            <td align="left" rowspan="1" colspan="1">2.09 (1.22,3.58)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>0.0075</bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">0.1652</td>
+            <td align="left" rowspan="1" colspan="1">4.15 (0.54,31.87)</td>
+            <td align="right" rowspan="1" colspan="1">0.1709</td>
+            <td align="right" rowspan="1" colspan="1">0.7121</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Cirrhosis (European)</td>
+            <td align="right" rowspan="1" colspan="1">5</td>
+            <td align="left" rowspan="1" colspan="1">1.27 (0.87,1.85)</td>
+            <td align="center" rowspan="1" colspan="1">0.2191</td>
+            <td align="center" rowspan="1" colspan="1">0.0136</td>
+            <td align="left" rowspan="1" colspan="1">0.92 (0.68,1.24)</td>
+            <td align="center" rowspan="1" colspan="1">0.5895</td>
+            <td align="center" rowspan="1" colspan="1">0.090</td>
+            <td align="left" rowspan="1" colspan="1">1.95 (0.87,4.34)</td>
+            <td align="right" rowspan="1" colspan="1">0.1041</td>
+            <td align="right" rowspan="1" colspan="1">0.0027</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Alcoholic liver disease (European)</td>
+            <td align="right" rowspan="1" colspan="1">3</td>
+            <td align="left" rowspan="1" colspan="1">1.16 (0.91,1.47)</td>
+            <td align="center" rowspan="1" colspan="1">0.2298</td>
+            <td align="center" rowspan="1" colspan="1">0.6717</td>
+            <td align="left" rowspan="1" colspan="1">0.93 (0.65,1.33)</td>
+            <td align="center" rowspan="1" colspan="1">0.6766</td>
+            <td align="center" rowspan="1" colspan="1">0.2863</td>
+            <td align="left" rowspan="1" colspan="1">1.95 (1.21,3.15)</td>
+            <td align="right" rowspan="1" colspan="1">
+              <bold>0.0062</bold>
+            </td>
+            <td align="right" rowspan="1" colspan="1">0.8942</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Alcoholics<xref ref-type="table-fn" rid="TFN4">c</xref></td>
+            <td align="right" rowspan="1" colspan="1">42</td>
+            <td align="left" rowspan="1" colspan="1">1.53 (1.31,1.78)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>8×10<sup>−8</sup></bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">4×10<sup>−14</sup></td>
+            <td align="left" rowspan="1" colspan="1">1.69 (1.4,2.05)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>7×10<sup>−8</sup></bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">4×10<sup>−9</sup></td>
+            <td align="left" rowspan="1" colspan="1">1.39 (1.08,1.8)</td>
+            <td align="right" rowspan="1" colspan="1">
+              <bold>0.0119</bold>
+            </td>
+            <td align="right" rowspan="1" colspan="1">0.0302</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Alcoholics<xref ref-type="table-fn" rid="TFN4">c</xref> (Asian)</td>
+            <td align="right" rowspan="1" colspan="1">27</td>
+            <td align="left" rowspan="1" colspan="1">2.14 (1.87,2.44)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>6×10<sup>−30</sup></bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">0.1525</td>
+            <td align="left" rowspan="1" colspan="1">2.2 (1.9,2.54)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>5×10<sup>−26</sup></bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">0.1097</td>
+            <td align="left" rowspan="1" colspan="1">4.01 (2.29,7.01)</td>
+            <td align="right" rowspan="1" colspan="1">
+              <bold>1×10<sup>−6</sup></bold>
+            </td>
+            <td align="right" rowspan="1" colspan="1">0.8841</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Alcoholics<xref ref-type="table-fn" rid="TFN4">c</xref> (European)</td>
+            <td align="right" rowspan="1" colspan="1">11</td>
+            <td align="left" rowspan="1" colspan="1">1.02 (0.86,1.21)</td>
+            <td align="center" rowspan="1" colspan="1">0.8075</td>
+            <td align="center" rowspan="1" colspan="1">0.0039</td>
+            <td align="left" rowspan="1" colspan="1">1.03 (0.72,1.47)</td>
+            <td align="center" rowspan="1" colspan="1">0.8616</td>
+            <td align="center" rowspan="1" colspan="1">0.0002</td>
+            <td align="left" rowspan="1" colspan="1">1.11 (0.93,1.33)</td>
+            <td align="right" rowspan="1" colspan="1">0.2627</td>
+            <td align="right" rowspan="1" colspan="1">0.0978</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Alcoholics<xref ref-type="table-fn" rid="TFN4">c</xref> (Asian&amp; European)</td>
+            <td align="right" rowspan="1" colspan="1">38</td>
+            <td align="left" rowspan="1" colspan="1">1.6 (1.34,1.91)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>2×10<sup>−7</sup></bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">3×10<sup>−15</sup></td>
+            <td align="left" rowspan="1" colspan="1">1.74 (1.4,2.17)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>8×10<sup>−7</sup></bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">8×10<sup>−10</sup></td>
+            <td align="left" rowspan="1" colspan="1">1.61 (1.19,2.2)</td>
+            <td align="right" rowspan="1" colspan="1">
+              <bold>0.0023</bold>
+            </td>
+            <td align="right" rowspan="1" colspan="1">0.0316</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">AD<xref ref-type="table-fn" rid="TFN5">d</xref></td>
+            <td align="right" rowspan="1" colspan="1">36</td>
+            <td align="left" rowspan="1" colspan="1">1.66 (1.39,1.99)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>4×10<sup>−8</sup></bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">1×10<sup>−13</sup></td>
+            <td align="left" rowspan="1" colspan="1">1.86 (1.54,2.26)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>2×10<sup>−10</sup></bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">2×10<sup>−5</sup></td>
+            <td align="left" rowspan="1" colspan="1">1.47 (1.04,2.09)</td>
+            <td align="right" rowspan="1" colspan="1">
+              <bold>0.0312</bold>
+            </td>
+            <td align="right" rowspan="1" colspan="1">0.0350</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">AD<xref ref-type="table-fn" rid="TFN5">d</xref> (Asian)</td>
+            <td align="right" rowspan="1" colspan="1">26</td>
+            <td align="left" rowspan="1" colspan="1">2.14 (1.87,2.44)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>7×10<sup>−30</sup></bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">0.1229</td>
+            <td align="left" rowspan="1" colspan="1">2.2 (1.9,2.54)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>6×10<sup>−26</sup></bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">0.0866</td>
+            <td align="left" rowspan="1" colspan="1">4.01 (2.29,7.01)</td>
+            <td align="right" rowspan="1" colspan="1">
+              <bold>1×10<sup>−6</sup></bold>
+            </td>
+            <td align="right" rowspan="1" colspan="1">0.8841</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">AD<xref ref-type="table-fn" rid="TFN5">d</xref> (European)</td>
+            <td align="right" rowspan="1" colspan="1">6</td>
+            <td align="left" rowspan="1" colspan="1">0.98 (0.77,1.23)</td>
+            <td align="center" rowspan="1" colspan="1">0.8396</td>
+            <td align="center" rowspan="1" colspan="1">0.0170</td>
+            <td align="left" rowspan="1" colspan="1">1.1 (0.91,1.33)</td>
+            <td align="center" rowspan="1" colspan="1">0.3255</td>
+            <td align="center" rowspan="1" colspan="1">0.0662</td>
+            <td align="left" rowspan="1" colspan="1">0.99 (0.78,1.26)</td>
+            <td align="right" rowspan="1" colspan="1">0.9595</td>
+            <td align="right" rowspan="1" colspan="1">0.1665</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">AD<xref ref-type="table-fn" rid="TFN5">d</xref> (Asian &amp; European)</td>
+            <td align="right" rowspan="1" colspan="1">32</td>
+            <td align="left" rowspan="1" colspan="1">1.78 (1.44,2.2)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>1×10<sup>−7</sup></bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">1×10<sup>−14</sup></td>
+            <td align="left" rowspan="1" colspan="1">1.97 (1.57,2.47)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>4×10<sup>−9</sup></bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">7×10<sup>−6</sup></td>
+            <td align="left" rowspan="1" colspan="1">2.05 (1.25,3.34)</td>
+            <td align="right" rowspan="1" colspan="1">
+              <bold>0.0042</bold>
+            </td>
+            <td align="right" rowspan="1" colspan="1">0.0324</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">AD<xref ref-type="table-fn" rid="TFN5">d</xref> (non-Asian)</td>
+            <td align="right" rowspan="1" colspan="1">10</td>
+            <td align="left" rowspan="1" colspan="1">1.06 (0.9,1.24)</td>
+            <td align="center" rowspan="1" colspan="1">0.4776</td>
+            <td align="center" rowspan="1" colspan="1">0.0299</td>
+            <td align="left" rowspan="1" colspan="1">1.23 (1.06,1.43)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>0.0073</bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">0.0858</td>
+            <td align="left" rowspan="1" colspan="1">0.97 (0.8,1.18)</td>
+            <td align="right" rowspan="1" colspan="1">0.7826</td>
+            <td align="right" rowspan="1" colspan="1">0.3029</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">All the studies</td>
+            <td align="right" rowspan="1" colspan="1">53</td>
+            <td align="left" rowspan="1" colspan="1">1.47 (1.29,1.68)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>1×10<sup>−8</sup></bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">2×10<sup>−16</sup></td>
+            <td align="left" rowspan="1" colspan="1">1.61 (1.37,1.9)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>9×10<sup>−9</sup></bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">2×10<sup>−10</sup></td>
+            <td align="left" rowspan="1" colspan="1">1.36 (1.07,1.73)</td>
+            <td align="right" rowspan="1" colspan="1">
+              <bold>0.0129</bold>
+            </td>
+            <td align="right" rowspan="1" colspan="1">0.0008</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">European</td>
+            <td align="right" rowspan="1" colspan="1">18</td>
+            <td align="left" rowspan="1" colspan="1">1.04 (0.9,1.2)</td>
+            <td align="center" rowspan="1" colspan="1">0.5759</td>
+            <td align="center" rowspan="1" colspan="1">1×10<sup>−4</sup></td>
+            <td align="left" rowspan="1" colspan="1">1.05 (0.83,1.33)</td>
+            <td align="center" rowspan="1" colspan="1">0.6707</td>
+            <td align="center" rowspan="1" colspan="1">0.0003</td>
+            <td align="left" rowspan="1" colspan="1">1.16 (0.87,1.56)</td>
+            <td align="right" rowspan="1" colspan="1">0.3064</td>
+            <td align="right" rowspan="1" colspan="1">0.0003</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Asian &amp; European</td>
+            <td align="right" rowspan="1" colspan="1">48</td>
+            <td align="left" rowspan="1" colspan="1">1.52 (1.31,1.76)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>3×10<sup>−8</sup></bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">6×10<sup>−18</sup></td>
+            <td align="left" rowspan="1" colspan="1">1.65 (1.37,1.98)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>1×10<sup>−7</sup></bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">2×10<sup>−11</sup></td>
+            <td align="left" rowspan="1" colspan="1">1.49 (1.13,1.96)</td>
+            <td align="right" rowspan="1" colspan="1">
+              <bold>0.0042</bold>
+            </td>
+            <td align="right" rowspan="1" colspan="1">0.0007</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Mexican &amp; African</td>
+            <td align="right" rowspan="1" colspan="1">5</td>
+            <td align="left" rowspan="1" colspan="1">1.23 (1.03,1.46)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>0.0235</bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">0.9963</td>
+            <td align="left" rowspan="1" colspan="1">1.49 (1.18,1.89)</td>
+            <td align="center" rowspan="1" colspan="1">
+              <bold>0.0008</bold>
+            </td>
+            <td align="center" rowspan="1" colspan="1">0.8306</td>
+            <td align="left" rowspan="1" colspan="1">0.92 (0.64,1.31)</td>
+            <td align="right" rowspan="1" colspan="1">0.633</td>
+            <td align="right" rowspan="1" colspan="1">0.4236</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN1">
+          <label>*</label>
+          <p id="P44">number of studies included in the analyses.</p>
+        </fn>
+        <fn id="TFN2">
+          <label>a</label>
+          <p id="P45">alcoholic patients with and without alcohol liver disease, cirrhosis or pancreatitis (only one study described the patients included both alcohol dependent and abuse subjects).</p>
+        </fn>
+        <fn id="TFN3">
+          <label>b</label>
+          <p id="P46">alcoholics with alcoholic liver disease, cirrhosis or pancreatitis.</p>
+        </fn>
+        <fn id="TFN4">
+          <label>c</label>
+          <p id="P47">alcoholic patients without alcoholic liver disease, cirrhosis or pancreatitis and those without liver disease status described.</p>
+        </fn>
+        <fn id="TFN5">
+          <label>d</label>
+          <p id="P48">“definite” alcohol dependence patients without alcoholic liver disease, cirrhosis or pancreatitis (i.e., including only patients clearly described as alcohol dependent).</p>
+        </fn>
+        <fn id="TFN6">
+          <p id="P49">P(Z): Z test used to determine significance of the overall OR. The <italic>P</italic> values &lt; 0.05 are indicated in boldfaces.</p>
+          <p id="P50">P(Q): Cochran’s Χ<sup>2</sup>-based Q statistic test used to assess heterogeneity.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+    <table-wrap id="T2" position="float" orientation="portrait">
+      <label>Table 2</label>
+      <caption>
+        <p id="P51">350Val allele frequencies in different populations</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="left" rowspan="1" colspan="1">Populations</th>
+            <th align="right" rowspan="1" colspan="1">Cases</th>
+            <th align="right" rowspan="1" colspan="1">Controls</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <bold>Asians</bold>
+            </td>
+            <td align="right" rowspan="1" colspan="1"/>
+            <td align="right" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Ami</td>
+            <td align="right" rowspan="1" colspan="1">2.2%</td>
+            <td align="right" rowspan="1" colspan="1">0.0%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Paiwan</td>
+            <td align="right" rowspan="1" colspan="1">0.0%</td>
+            <td align="right" rowspan="1" colspan="1">1.4%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Atayal</td>
+            <td align="right" rowspan="1" colspan="1">1.3%</td>
+            <td align="right" rowspan="1" colspan="1">1.7%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Japanese</td>
+            <td align="right" rowspan="1" colspan="1">12.0%</td>
+            <td align="right" rowspan="1" colspan="1">5.8%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Bunun</td>
+            <td align="right" rowspan="1" colspan="1">5.9%</td>
+            <td align="right" rowspan="1" colspan="1">6.0%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Taiwanese Chinese</td>
+            <td align="right" rowspan="1" colspan="1">12.6%</td>
+            <td align="right" rowspan="1" colspan="1">6.6%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Chinese</td>
+            <td align="right" rowspan="1" colspan="1">15.2%</td>
+            <td align="right" rowspan="1" colspan="1">7.5%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Korean</td>
+            <td align="right" rowspan="1" colspan="1">13.0%</td>
+            <td align="right" rowspan="1" colspan="1">7.9%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Han Chinese</td>
+            <td align="right" rowspan="1" colspan="1">16.1%</td>
+            <td align="right" rowspan="1" colspan="1">9.1%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Mongolian</td>
+            <td align="right" rowspan="1" colspan="1">19.4%</td>
+            <td align="right" rowspan="1" colspan="1">10.0%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Elunchun</td>
+            <td align="right" rowspan="1" colspan="1">32.3%</td>
+            <td align="right" rowspan="1" colspan="1">13.5%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">East Indian Trinidadian</td>
+            <td align="right" rowspan="1" colspan="1">30.5%</td>
+            <td align="right" rowspan="1" colspan="1">19.8%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <bold>Europeans</bold>
+            </td>
+            <td align="right" rowspan="1" colspan="1"/>
+            <td align="right" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">New Zealand Maori</td>
+            <td align="right" rowspan="1" colspan="1">40.0%</td>
+            <td align="right" rowspan="1" colspan="1">23.9%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Jewish</td>
+            <td align="right" rowspan="1" colspan="1">34.9%</td>
+            <td align="right" rowspan="1" colspan="1">31.5%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Spanish</td>
+            <td align="right" rowspan="1" colspan="1">40.8%</td>
+            <td align="right" rowspan="1" colspan="1">40.0%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">European, European American, or White</td>
+            <td align="right" rowspan="1" colspan="1">41.5%</td>
+            <td align="right" rowspan="1" colspan="1">40.7%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">French</td>
+            <td align="right" rowspan="1" colspan="1">43.5%</td>
+            <td align="right" rowspan="1" colspan="1">42.3%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Australian</td>
+            <td align="right" rowspan="1" colspan="1">53.4%</td>
+            <td align="right" rowspan="1" colspan="1">43.7%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">UK or Irish</td>
+            <td align="right" rowspan="1" colspan="1">48.2%</td>
+            <td align="right" rowspan="1" colspan="1">49.6%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Polish</td>
+            <td align="right" rowspan="1" colspan="1">36.2%</td>
+            <td align="right" rowspan="1" colspan="1">59.3%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <bold>Native Americans</bold>
+            </td>
+            <td align="right" rowspan="1" colspan="1"/>
+            <td align="right" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Native or Mexican American</td>
+            <td align="right" rowspan="1" colspan="1">37.6%</td>
+            <td align="right" rowspan="1" colspan="1">33.2%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <bold>Africans</bold>
+            </td>
+            <td align="right" rowspan="1" colspan="1"/>
+            <td align="right" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">African American</td>
+            <td align="right" rowspan="1" colspan="1">15.7%</td>
+            <td align="right" rowspan="1" colspan="1">12.6%</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN7">
+          <p id="P52">Allele frequencies were based on all the 53 studies. For the categories of European, European American, “White”, Chinese, and Taiwanese: no specific geographic origins were described or the subjects were mixed.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+  </floats-group>
+</article>

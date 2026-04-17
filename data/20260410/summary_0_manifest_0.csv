@@ -1,0 +1,20 @@
+
+pmid,pipeline,final_answer,suggested_fix
+17311057,N/A,Neither,N/A
+18285809,N/A,Neither,N/A
+18391836,pk_summary,Correct,N/A
+18391836,pk_drug_summary,Correct,All values match.
+18391836,pk_population_summary,PipelineError,N/A
+18535487,N/A,Neither,N/A
+18602250,N/A,Neither,N/A
+18615089,N/A,Neither,N/A
+18643912,N/A,Neither,N/A
+18665197,pk_summary,Correct,N/A
+18665197,pk_specimen_summary,Correct,All values match.
+18665197,pk_drug_summary,Correct,All values match.
+18665197,pk_population_summary,PipelineError,N/A
+18670224,pe_study_info,Correct,All values match.
+18670224,pe_study_outcome,Correct,N/A
+18673410,pk_summary,Correct,All values match.
+18673410,pk_drug_summary,Incorrect,Extra idx 22: should be removed
+18673410,pk_population_summary,PipelineError,N/A

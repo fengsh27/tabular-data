@@ -1,0 +1,762 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Archiving and Interchange DTD v2.3 20070202//EN" "archivearticle.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">9203369</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">2083</journal-id>
+      <journal-id journal-id-type="nlm-ta">J Vasc Interv Radiol</journal-id>
+      <journal-title>Journal of vascular and interventional radiology : JVIR</journal-title>
+      <issn pub-type="ppub">1051-0443</issn>
+      <issn pub-type="epub">1535-7732</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">21354816</article-id>
+      <article-id pub-id-type="pmc">3071444</article-id>
+      <article-id pub-id-type="doi">10.1016/j.jvir.2010.10.033</article-id>
+      <article-id pub-id-type="manuscript">NIHMS257090</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Clinical Utility of Real-Time Fusion Guidance for Biopsy and Ablation</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Krücker</surname>
+            <given-names>Jochen</given-names>
+          </name>
+          <degrees>PhD</degrees>
+          <xref ref-type="aff" rid="A1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Xu</surname>
+            <given-names>Sheng</given-names>
+          </name>
+          <degrees>PhD</degrees>
+          <xref ref-type="aff" rid="A1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Venkatesan</surname>
+            <given-names>Aradhana</given-names>
+          </name>
+          <degrees>MD</degrees>
+          <xref ref-type="aff" rid="A2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Locklin</surname>
+            <given-names>Julia K</given-names>
+          </name>
+          <degrees>RN, MS</degrees>
+          <xref ref-type="aff" rid="A2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Amalo</surname>
+            <given-names>Hayet</given-names>
+          </name>
+          <degrees>MD</degrees>
+          <xref ref-type="aff" rid="A2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Glossop</surname>
+            <given-names>Neil</given-names>
+          </name>
+          <degrees>PhD</degrees>
+          <xref ref-type="aff" rid="A3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wood</surname>
+            <given-names>Bradford J</given-names>
+          </name>
+          <degrees>MD</degrees>
+          <xref ref-type="aff" rid="A2">2</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>1</label>Philips Research North America, Briarcliff Manor, NY, USA
+</aff>
+      <aff id="A2"><label>2</label>Radiology and Imaging Sciences, National Institutes of Health Clinical Center, Bethesda, MD, USA
+</aff>
+      <aff id="A3"><label>3</label>Philips Healthcare, Toronto, Canada
+</aff>
+      <author-notes>
+        <corresp id="CR1">Corresponding Author: Jochen Krücker National Institutes of Health Building 10, Room 1N-306A 9000 Rockville Pike, Bethesda, MD 20892 Phone: 301-451-7863 Fax: 301-451-5406 <email>jochen.kruecker@philips.com</email>
+</corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>27</day>
+        <month>1</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>26</day>
+        <month>2</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>4</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>1</day>
+        <month>4</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>22</volume>
+      <issue>4</issue>
+      <fpage>515</fpage>
+      <lpage>524</lpage>
+      <permissions>
+        <license>
+          <p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</p>
+        </license>
+      </permissions>
+      <abstract>
+        <sec id="S1">
+          <title>Purpose</title>
+          <p id="P1">To demonstrate utility, accuracy, and clinical outcomes of electromagnetic tracking and multi-modality image fusion for guidance of biopsy and radiofrequency (RF) ablation procedures.</p>
+        </sec>
+        <sec sec-type="materials|methods" id="S2">
+          <title>Materials and Methods</title>
+          <p id="P2">A combination of conventional image guidance (ultrasound/computed tomography (CT)) and a research navigation system were used in 40 patients undergoing biopsy or RF ablation to assist in target localization and needle/electrode placement. The navigation system displays electromagnetically tracked needles and ultrasound images relative to a pre-procedural CT. Additional images (prior positron emission tomography (PET) or magnetic resonance imaging (MRI)) can be fused with the CT as needed. Needle aiming with and without tracking were compared, the utility of navigation for each procedure was assessed, the system’s off-target tracking error for two different registration methods was evaluated, and setup time recorded.</p>
+        </sec>
+        <sec id="S3">
+          <title>Results</title>
+          <p id="P3">The tracking error was evaluable in 35 of 40 patients. A basic tracking error of 3.8 ± 2.3 mm was demonstrated using skin fiducials for registration. The error improved to 2.7 ± 1.6 mm when using prior internal needle positions as additional fiducials. Real-time fusion of ultrasound with CT and registration with prior PET and MRI were successful and provided clinically relevant guidance information, enabling 19 of the 40 procedures.</p>
+        </sec>
+        <sec id="S4">
+          <title>Conclusion</title>
+          <p id="P4">The spatial accuracy of the navigation system is sufficient to display clinically-relevant image guidance information during biopsy and RF ablation. Breath holding and respiratory gating are effective in minimizing the error associated with tissue motion. In 48% of cases, the navigation system provided information critical for successful execution of the procedure. Fusion of real-time ultrasound with CT or prior diagnostic images may enable procedures that are not feasible with standard, single-modality image guidance.</p>
+        </sec>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S5">
+      <title>INTRODUCTION</title>
+      <p id="P5">Needle-based interventional procedures such as biopsy and radiofrequency (RF) ablation in the liver, kidneys and other soft-tissue targets are usually guided by ultrasound (US), computed tomography (CT) with or without fluoroscopy, or magnetic resonance (MR) imaging (<xref ref-type="bibr" rid="R1">1</xref>-<xref ref-type="bibr" rid="R4">4</xref>). Ultrasound is cost-effective and versatile, may provide real-time visualization of the biopsy needle/RF electrode and target lesion, and can be useful in monitoring RF ablation progression by visualizing the bubble cloud forming during RF ablation. However, US image contrast may be too limited for adequate target visualization, and the 2-dimenional (2D) freehand US images commonly used today for real-time guidance make proper needle/electrode placement challenging when dealing with complex 3D target geometries. CT guidance is typically not real-time, but offers superior 3D visualization of the needle/electrode and target. CT fluoroscopy offers near-real-time 2D or limited 3D imaging but the radiation dose for the medical personnel is of concern. MR guidance may offer superior soft tissue contrast but requires MR compatible equipment and is often not considered cost-effective. Positron Emission Tomography (PET) provides metabolic or functional spatial data, but has largely been ignored for real time interventional feedback due to lack of enabling methods. In practice, real-time ultrasound may be used in conjunction with pre-procedural or intra-procedural CT, but the lack of registration between the two modalities limits the accuracy with which diagnostic information from the pre-procedure CT image can be correlated for guiding needle/electrode placement.</p>
+      <p id="P6">In earlier work (<xref ref-type="bibr" rid="R5">5</xref>-<xref ref-type="bibr" rid="R10">10</xref>) an electromagnetic (EM) tracking and navigation system was introduced to accurately fuse real-time US with CT, and to provide real-time visualization of tracked interventional needles within pre-procedure CT scans. The system allows registration of pre-procedural CT scans with intra-procedural ultrasound using skin fiducials. Spatial accuracy of better than 6 mm was reported (<xref ref-type="bibr" rid="R5">5</xref>). The setup and workflow of the system is described in detail in the Materials and Methods section below. Some systems for real-time image fusion and needle tracking are now commercially available. However, data is only now emerging on the accuracy and efficacy of these systems. In this study we present such data by extending earlier work to a larger patient population. Compared to the retrospective analysis in an earlier study (<xref ref-type="bibr" rid="R5">5</xref>), the navigation system in the present study was actively used to guide interventional procedures, accuracy measures were obtained both prospectively and retrospectively, a novel tracking system was employed, and fusion with additional imaging modalities (primarily PET) was demonstrated. Procedures were facilitated that would have otherwise been difficult or impossible to perform without this technology.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="S6">
+      <title>MATERIALS AND METHODS</title>
+      <sec sec-type="subjects" id="S7">
+        <title>Patient Population, Hardware and Setup</title>
+        <p id="P7">The clinical trial was approved by the institutional investigational review board, and all patients signed written informed consent. The patient population comprised 28 males and 12 females, mean age 58.0 ± 16.0 years. Patients were selected for this study both who had easy to see lesions and others with difficult to image lesions. The final cohort does not represent a random selection or sampling of our overall patient referral population.</p>
+        <p id="P8">Twenty-two of the procedures were RF ablations, the remaining 18 were needle biopsies. In the patients undergoing RF ablation, a total of 30 lesions were ablated with navigation-assistance and the mean lesion size was 28 mm (median 21, range 12 to 80). In the biopsy patients, 21 lesions were sampled with navigation-assistance, with a mean lesion size of 23 mm (median 17, range 5 to 90). Twenty-five patients were treated in supine position, one prone, and fourteen in decubitus position.</p>
+        <p id="P9">All procedures were carried out on a Brilliance 16-slice CT scanner (Philips Healthcare, Cleveland, OH). For all cases except central lung procedures, a Philips iU22 ultrasound scanner was used for real-time guidance. An Aurora (Northern Digital Inc, Waterloo, Ontario, Canada) electromagnetic tracking system with square field generator (2005 release) was mounted on a three-joint articulated arm (DK Technologies, Barum, Germany), which was attached to the CT gantry via a custom support frame (<xref ref-type="fig" rid="F1">Figure 1</xref>). The ultrasound probe was tracked using a 6-degree of freedom (DoF) EM position tracking sensor (Traxtal Inc, Toronto, Canada) attached to the probe handle. Guider needles (Traxtal Inc) were tracked using a 5-DoF sensor integrated inside the needle tip (<xref ref-type="bibr" rid="R5">5</xref>). The guider needles allowed insertion of the biopsy needles and RF ablation electrodes using a coaxial or tandem approach. The 3-prong Cool-tip™ RF ablation cluster electrode (Covidien, Boulder, CO, USA) was used in 14 of the 22 RF ablation procedures. In 6 of these procedures, the cluster electrode was used in combination with the single-electrode Cool-tip™ probe, and in 8 procedures the single-electrode Cool-tip™ electrode was used exclusively.</p>
+      </sec>
+      <sec sec-type="methods" id="S8">
+        <title>Procedure</title>
+        <p id="P10">The three-step workflow for the procedures is illustrated in <xref ref-type="fig" rid="F2">Figure 2</xref>. The patients were positioned on a vacuum stabilization mattress on the CT table. All but two of the biopsy procedures were performed under standard conscious sedation, induced by intravenous administration of midazolam and fentanyl. All RF ablation procedures and two of the biopsies were performed under general endotracheal anesthesia with breath holds during CT imaging. Six to seven sterile passive fiducial markers (Beekley Co. Bristol, CT) were placed on the skin near the planned needle entry point (<xref ref-type="fig" rid="F3">Figure 3</xref>). All needle insertions were carried out without use of needle guides attached to the ultrasound probe.</p>
+        <p id="P11">A pre-procedural CT scan (3 mm slice thickness, 1.5 mm overlap) was obtained at expiration breath-hold in sedated patients, or during interruption of ventilation in the end expiration phase in patients under general anesthesia. Intravenous administration of 50-100 cc of non-ionic contrast was used to visualize the target in 21 of 40 patients. The CT phase with the greatest target conspicuity (arterial or portal venous phase) was transferred to the research navigation system located in the procedure room.</p>
+        <p id="P12">On the navigation system, target locations were identified manually in the CT scan. Targets were most often designated as the center of a tumor, or in some cases as the tumor region with the highest enhancement on CT, perfusion on MR, or standardized uptake value (SUV) on PET. Registration between the tracking system coordinates and CT scan coordinates was obtained by manually identifying the skin fiducials in the CT scan and acquiring the corresponding tracking coordinates by pointing the tracked needle to each of the fiducials during breath-hold. The fiducial registration error (FRE) was computed (<xref ref-type="bibr" rid="R11">11</xref>) and displayed and the duration of the registration procedure was recorded.</p>
+        <p id="P13">After registration, the navigation system visualized the tracked needle relative to the CT scan in real-time using two orthogonal multi-planar reconstructions (MPRs) centered at the tracked needle tip. An additional MPR was centered at the currently selected target location and provided feedback about the current distance and pose relative to the target. A fourth viewing panel showed the real-time ultrasound image fused (with variable blending) with the corresponding MPR of the CT scan (see section Multi-modality image fusion, below).</p>
+        <p id="P14">Needle insertions were guided by a combination of conventional real-time ultrasound (except for central lung cases), CT and the navigation system, in addition to MRI (2 cases) and PET (<xref ref-type="bibr" rid="R7">7</xref>). During needle placement a CT confirmation scan was obtained whenever clinically indicated, for a total of 1 to 5 confirmation scans per patient. No scans were acquired solely for research purposes.</p>
+        <p id="P15">Setup time for all additional steps necessary to utilize the navigation system was recorded.</p>
+      </sec>
+      <sec id="S9">
+        <title>Tracking error calculation</title>
+        <p id="P16">In each confirmation scan for which corresponding needle tracking data was available, the tracked needle tip was identified retrospectively. The confirmation scan and needle position were then mapped onto the pre-procedural CT scan (navigation scan) in which the targets had been selected and which was used by the navigation system. The basic tracking error was defined as the distance between the “virtual” needle position computed using the tracking data, and the “gold standard” actual needle position extracted from the confirmation scan (<xref ref-type="bibr" rid="R5">5</xref>).</p>
+        <p id="P17">The tracking error was calculated for the entire patient population, and for sub-groups of the population according to target site, procedure type and patient position. Unpaired t-tests were calculated in Matlab R2006a (The Mathworks, Natick, MA) to determine statistically significant differences (P &lt; 0.05) in tracking error between sub-groups.</p>
+        <p id="P18">Two different registration methods were compared retrospectively: (1) Rigid registrations based only on external fiducials, and (2) rigid and affine (i.e. linear but non-rigid, including shearing and scaling) registrations based on the external fiducials and additionally including CT-confirmed internal needle positions in prior confirmation scans as fiducial markers. Note that no additional needle is required for method (<xref ref-type="bibr" rid="R2">2</xref>): After recording the needle’s tracking position and confirmation scan, the same needle can be advanced/repositioned as needed. Paired t-tests were used to determine differences (P &lt; 0.05) between the two techniques.</p>
+      </sec>
+      <sec id="S10">
+        <title>Multi-modality image fusion</title>
+        <p id="P19">Spatial tracking of the ultrasound probe, and registering the tracking coordinate system with the CT coordinate system, enables real-time fusion and visualization of the live ultrasound image with the spatially corresponding MPR from the CT scan as described in prior work (<xref ref-type="bibr" rid="R5">5</xref>-<xref ref-type="bibr" rid="R7">7</xref>, <xref ref-type="bibr" rid="R9">9</xref>).</p>
+        <p id="P20">In addition, the navigation system can import prior diagnostic 3D image data such as MR or PET. A graphical user interface allows rigid manual registration between the pre-procedural CT and prior diagnostic image. The registered images are displayed jointly with semi-transparent overlays, using different color-maps to distinguish the two images. During the intervention, the tracked needle is visualized relative to the fused images, enabling the intra-procedural use of target location information from prior diagnostic images.</p>
+      </sec>
+      <sec id="S11">
+        <title>Needle angle selection</title>
+        <p id="P21">The accuracy of needle targeting with and without the navigation system was evaluated in 15 patients. The comparison was based on the selection of needle angles with both guidance approaches shortly after skin puncture. In two sequential breath holds, the radiologist aimed the needle at the pre-identified target (a) with conventional CT and ultrasound guidance only (blinded to the navigation system), and (b) with the additional feedback from the navigation system. The needle angles, distance to the target, and the relative distance between the two needle positions during aiming were recorded. Based on the two needle angles, the distance <italic>d</italic> between the target and the projected needle paths was calculated (<xref ref-type="fig" rid="F4">Figure 4</xref>).</p>
+      </sec>
+      <sec id="S12">
+        <title>Assessment of utility</title>
+        <p id="P22">The utility of the navigation technology for each needle/electrode placement was estimated by one interventional radiologist. The utility was labeled “enabling”, “facilitating” or “stand-by”, based on the following criteria: “Enabling” was assigned to placements that would have had a high probability of technical failure or that would have been impossible to perform without the navigation technology, such as biopsy of small lesions that were identified in prior PET studies and that were not visualized with CT or ultrasound. “Facilitating” was assigned to needle/electrode placements in which the navigation may have reduced the time, number of needle sticks or number of CT scans required to position the needle. A procedure was labeled “enabled” and “facilitated”, respectively, when at least one needle placement in the procedure was “enabled” or “facilitated”. “Stand-by” was assigned to the remaining procedures. Imaging and medical records were retrospectively analyzed for surgical pathology, whether diagnosis was made, use of contrast for tracking, number of lesions tracked, size of target lesions. For RF ablation patients, length of follow-up was determined by most recent CT or MR imaging after ablation.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S13">
+      <title>RESULTS</title>
+      <sec sec-type="methods" id="S14">
+        <title>Procedure timing</title>
+        <p id="P23">Total additional setup time for the navigation system was 5.8 +− 2.5 min (mean +- standard deviation). The setup time include time for covering the field generator with a sterile cover (35 +− 14 secs), positioning the field generator (64 +− 66 secs), placing the skin fiducials (52 +− 21), loading the navigation scan into the navigation workstation (54 +− 11 secs), identifying the fiducials in the navigation scan (64 +− 23 secs) and carrying out the registration (81 +− 46secs ).</p>
+        <p id="P24">Some of these steps, e.g. loading the navigation scan and identifying fiducials, were carried out by the system operators concurrently with the ongoing patient preparation by the nurses and physician.</p>
+      </sec>
+      <sec id="S15">
+        <title>Tracking Error</title>
+        <p id="P25">The tracking error could be evaluated in 35 of the 40 consecutive patients. Five patients were inevaluable because of electronic data loss (<xref ref-type="bibr" rid="R2">2</xref>), because the tracking system could not be set up appropriately (<xref ref-type="bibr" rid="R1">1</xref>), because the patient was moved during the procedure (<xref ref-type="bibr" rid="R1">1</xref>) or because no verification scan was obtained (<xref ref-type="bibr" rid="R1">1</xref>). Tracking navigation was still used in the inevaluable patients despite post-procedure data loss. The evaluable patients comprised 26 males and 9 females, mean age 57.9 ± 16.4 years. 3 patients underwent tracked biopsy or RF ablation on two separate occasions. The mean fiducial registration error (FRE) in the evaluable patients was 1.6 ± 0.7 mm. This is a measure of how well the pre-procedural images are fused to the intraprocedural images. A total of 75 verification CT scans with corresponding needle tracking data were obtained in the evaluable patients (2.1 ± 1.4 per patient). The mean basic tracking error determined at these data points was 3.8 ± 2.3 mm. This is the difference between virtual (tracked / displayed) and actual needle positions.</p>
+        <p id="P26">The patient population was divided into groups according to target site (liver versus kidney, the 2 most frequent target sites in this study), procedure type (RF ablation vs. biopsy) and patient position (supine vs. decubitus), and the tracking error was computed for each group individually (<xref ref-type="table" rid="T1">Table 1</xref>). No statistically significant differences were seen between the tracking errors in different groups (P &gt; 0.05).</p>
+        <p id="P27">Tracking errors were compared for registrations obtained without and with the use of confirmed internal needle positions as additional fiducials (see section Tracking Error Calculation). One CT-confirmed needle position was used as an additional fiducial for 36 data points; two CT-confirmed needle positions were used as additional fiducials for 12 data points. <xref ref-type="table" rid="T2">Table 2</xref> shows the resulting tracking errors (range 2.7 mm to 3.1 mm) for rigid and affine registrations with up to 2 additional internal fiducials. The differences between the tracking errors obtained without and with internal fiducials were statistically significant based on paired t-test analysis (P=0.0062, 0.0156 and 0.0330, respectively, when comparing rigid registration without internal fiducials to rigid with 1 internal, affine with 1 internal, and rigid with 2 internals ), except for the approach with 2 internal fiducials and affine registration (P = 0.1314). On average, the best results were achieved when using affine registrations with 1 additional internal fiducial, which reduced the tracking error by 29% on average compared to the approach with skin fiducials only.</p>
+      </sec>
+      <sec id="S16">
+        <title>Accuracy of needle angle selection</title>
+        <p id="P28">Needle angle selection with and without the navigation system was evaluated for a total of 19 targets in 15 patients. The targets were located in the liver (N=13), kidney (<xref ref-type="bibr" rid="R4">4</xref>), neck (<xref ref-type="bibr" rid="R1">1</xref>) and paracardiac mediastinum (<xref ref-type="bibr" rid="R1">1</xref>).</p>
+        <p id="P29">The mean distance between target and needle path selected without the navigation system (as defined in <xref ref-type="fig" rid="F4">Figure 4</xref>) was 17.8 ± 17.1 mm (range 3.3 to 81.9, median 14.8). The mean distance between target and path selected with navigation system assistance was 3.3 ± 3.1 mm (range 0.4 to 12.1, median 2.5 mm). The difference was statistically significant (P = 0.0006). The mean angle between the needle paths chosen without and with navigation assistance was 13.3 ± 6.5 degrees (range 6.4 to 35.9).</p>
+      </sec>
+      <sec id="S17">
+        <title>Clinical experience</title>
+        <p id="P30">Ultrasound and CT guidance were both used in all 40 procedures, although for lung lesions, the ultrasound was only used to define the plane for displaying the CT data. The target lesions had a mean maximum diameter of 25 mm (range 5 to 80 mm). 17 of 18 patients undergoing tracked biopsy and 18 of 20 lesions had biopsies with diagnostic specimens. Two patients undergoing tracked biopsies had a negative pathology results, likely due to sampling error, but one of these had a positive diagnosis from a separate tracked biopsy the same day. 17 of 22 patients had successful RF ablation with targeted lesions completely ablated by standard imaging criteria. 24 of 29 lesions were successfully treated with tracked RF ablation. Mean follow up for successful RF ablation was 11.4 months. Local recurrence was found in 5 out of 29 lesions in 5 out of 22 patients.</p>
+        <p id="P31">Of the 51 navigation-assisted needle placements in the 40 procedures, the utility of navigation was considered “enabling” in 22, “facilitating” in 24, and “stand-by” in 5.</p>
+        <p id="P32">Of the 19 procedures that were enabled by navigation, 10 of 11 enabled biopsies had positive results and 8 of 8 enabled ablations had successful local control, with a mean follow up of 10.5 months. Fused PET guidance was used in 8 biopsies and 3 ablations.</p>
+        <p id="P33">A number of cases will be highlighted in which the navigation system provided targeting information not available using conventional guidance, which may have either enabled successful completion of the procedure or allowed the procedure to be carried out potentially more accurately, faster, with fewer CT scans, or more operator confidence, although these factors were not specifically quantified per patient.</p>
+        <p id="P34"><xref ref-type="fig" rid="F5">Figure 5</xref> shows navigation displays and confirmation scans during a lung biopsy in a 55 year old male. Needle targeting was initially attempted with (non-fluoro-) CT guidance only. After repositioning the needle and obtaining confirmation CT scans 3 times without use of the navigation system, the needle was still not correctly positioned (<xref ref-type="fig" rid="F5">Figure 5a</xref>). The navigation system was then used to reposition the needle as shown in (<xref ref-type="fig" rid="F5">Figure 5b</xref>). A subsequent CT scans confirmed the correct orientation of the needle for biopsy (<xref ref-type="fig" rid="F5">Figure 5c</xref>).</p>
+        <p id="P35"><xref ref-type="fig" rid="F6">Figure 6</xref> shows navigation displays and confirmation scans obtained during a liver biopsy in a 58 year old male. The lesion was located close to the gall bladder and was poorly visualized without the use of contrast-enhanced CT. With contrast, the lesion was visible only with arterial phase enhancement. Use of the navigation system enabled needle positioning with real-time position feedback relative to the arterial phase enhanced CT obtained at the beginning of the procedure (<xref ref-type="fig" rid="F6">Figure 6a</xref>). A subsequent non-contrast confirmation CT scan did not visualize the target lesion (<xref ref-type="fig" rid="F6">Figure 6b</xref>). However, rigid registration of the confirmation scan with the contrast-enhanced navigation scan in the vicinity of the lesion (<xref ref-type="fig" rid="F6">Figure 6c</xref>) confirmed the correct orientation of the needle.</p>
+        <p id="P36"><xref ref-type="fig" rid="F7">Figure 7</xref> shows screenshots obtained during navigation-assisted right iliac lymph node biopsy in a 21 year old male with recurrent lymphoma. The target was selected after rigid registration of a prior PET scan onto the navigation CT scan (<xref ref-type="fig" rid="F7">Figure 7a</xref>). The navigation system guided needle positioning toward the hot spot in the PET (<xref ref-type="fig" rid="F7">Figure 7b</xref>). A confirmation CT scan showed the accuracy of the navigation display (<xref ref-type="fig" rid="F7">Figure 7c</xref>): The virtual needle displayed by the navigation system is closely aligned with the needle image in the confirmation CT.</p>
+        <p id="P37"><xref ref-type="fig" rid="F8">Figure 8</xref> shows needle placement for biopsy of a lymphoma directly adjacent to the heart in a 44 year old male, who underwent an unsuccessful open surgical biopsy and median sternostomy just prior to the percutaneous tracked biopsy. The target was invisible on CT and contrast CT, but showed enhanced activity on a PET/CT scan obtained 6 days earlier. The PET component of the PET/CT scan was imported into the navigation workstation and manually registered with the pre-procedural CT scan, allowing display of the tracked needle relative to both images simultaneously.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="S18">
+      <title>DISCUSSION</title>
+      <p id="P38">A research navigation system for biopsy and ablation procedures was used in conjunction with conventional ultrasound and CT guidance in a 40-patient clinical trial. The navigation system integrated electromagnetic tracking of needles and ultrasound probes with custom software and allowed registration and fusion with prior 3D images to improve target visualization during needle-based procedures.</p>
+      <p id="P39">This study was an extension of prior work in which the safety of an earlier prototype navigation system was demonstrated in a clinical pilot study (<xref ref-type="bibr" rid="R5">5</xref>, <xref ref-type="bibr" rid="R6">6</xref>). In that study, the system was not actively used for procedure guidance, and accuracy was evaluated retrospectively only. Compared with the earlier work, improved tracking accuracy was observed in our current study. The basic tracking error improved from 5.8 mm to 3.8 mm, the tracking error based on rigid registration with one prior needle position improved from 4.8 mm to 3.0 mm, and the tracking error based on affine registration with one prior needle position improved from 3.5mm to 2.7 mm. The first two improvements were statistically significant (at P &lt; 0.0001 and P = 0.0006, respectively), while the improvement for the affine registration did not reach significance (P = 0.096).</p>
+      <p id="P40">The improvements in tracking accuracy in the current study compared to the pilot study may be largely attributable to the better performance of the current Aurora electromagnetic tracking system compared to the older system used in the previous study. Laboratory investigations have demonstrated (<xref ref-type="bibr" rid="R12">12</xref>, <xref ref-type="bibr" rid="R13">13</xref>) that the newer system has significantly improved accuracy both in an ideal metal-free environment and under more challenging conditions close to bulky medical imaging equipment, as was true in this study.</p>
+      <p id="P41">The accuracy improvement is more pronounced for the basic tracking error based on external fiducials only than for registrations including internal needle positions. This is consistent with the assumption stated in our earlier study that the internally tracked needle provides information about field distortions that can be reduced by including this extra data point in the registration, in particular with affine registrations. Since the field distortions are reduced in the newer Aurora tracking system, so is the potential to partially correct the distortions using tracking data from internal needles.</p>
+      <p id="P42">In addition to the tracking hardware upgrade, it is also possible that more extensive experience with the system and more detailed attention to minimizing respiratory motion artifacts have contributed to reducing the tracking error in the current study.</p>
+      <p id="P43">When combining the patient populations of the pilot study and the current study, the total number of patients is 60, the number of evaluable patients is 54, the basic tracking error is 4.6 +− 2.7 mm, the tracking error based on rigid registration with one prior needle position is 3.5 +− 1.9 mm, and the tracking error based on affine registration with one prior needle position is 2.9 +− 1.7 mm. Similar fusion guided technology has been used for prostate biopsy in 100 patients and is being reported separately. A total of 130 biopsies and 31 ablations in 152 patients have used tracking and fusion technology in our Interventional Radiology section.</p>
+      <p id="P44">Prospective evaluation of needle aiming showed a significantly higher accuracy when using the navigation system compared to conventional guidance. While the task of aiming the needle at a target from a distance does not fully reflect the breadth of the clinical challenge, it does suggest that the navigation system could speed up the procedure by finding the correct needle angle earlier. In settings where accuracy influences outcomes, one can assume that improved accuracy assisted by the navigation system could enable certain procedures and improve clinical outcomes, especially in challenging cases and ablations, where composite treatments are dependent upon the collective accuracy of component needle positions.</p>
+      <p id="P45">Prospective use of the navigation system allowed needle/electrode placement with higher confidence in all cases, and provided valuable target information not available by conventional image guidance in the majority of cases. 22 needle/electrode placements in 19 procedures were enabled by the tracking technology and would have had a high risk of technical failure with conventional image guidance only, due to lack of target localization. These were primarily cases in which the target lesion was only visible in an arterial phase CT, or on prior PET or PET/CT scan, which were then brought into the procedure by image registration with the navigation CT. The technology was especially enabling for targets that were only visible during brief arterial phase enhancement in contrast enhanced CT.</p>
+      <p id="P46">Furthermore, the additional information allowed completion of at least two lung biopsies in less time than they would have taken with conventional guidance, based on the number of failed needle positioning attempts with CT guidance only. Whether the addition of navigation added accuracy or integrity to these procedures remains speculative, since no randomization was performed. However, the use of navigation allowed the physician to proceed with procedures where targets could not be identified with conventional methods, and procedures may not have been performed at all without navigation in many cases. It is unknown whether standard guidance methods and an experienced operator could have guessed target locations using mental estimates.</p>
+      <p id="P47">As with any new technology, there is a learning curve before the system can be used efficiently. Since a number of the setup tasks can be performed concurrently, however, the impact on the workflow is small. Some of the steps involved in the setup (such as the attachment and identification of fiducials) may be easily accelerated in the future with improved hardware design and image analysis software. This has actually already been prototyped and commercially released.</p>
+      <p id="P48">It is important to note the limitations of this study. The number of patients was relatively small, and the patient population was diverse in diagnosis, target site, and ventilation method. Therefore, a statistically meaningful comparison of outcomes with a control group was not possible. Also, all procedures were carried out and analyzed by two radiologists under the direct guidance of a single operator at one institution. A randomized multi-center trial has been designed and would better evaluate the potential benefits of the navigation system presented in this study. Furthermore, there certainly is patient selection bias based upon the fact that some patients with difficult to see lesions were more likely to be enrolled in this trial. We can likely extrapolate to say that in the setting of patients with difficult to see lesions, the addition of the technology enhanced the physician’s sense of accurate guidance and confidence in target localization.</p>
+      <p id="P49">In conclusion, electromagnetic tracking of needles and ultrasound probes with integrated miniaturized sensors enables multimodality interventional navigation on pre-procedural CT, MR, and PET and real-time fusion of CT with ultrasound. This technology may improve operator confidence and potentially increase accuracy of needle/electrode placement in cases where ultrasound visualization of the target is poor or not available. Fusion guidance significantly improved angle selections over conventional methods. The addition of needle and ultrasound tracking improved needle path off-target error from 17.8 ± 17.1 mm to 3.3 ± 3.1 mm, and changed the insertion angle by 13.3 ± 6.5 degrees. Such major improvements over conventional methods quantify the value of this technology to the interventional physician, especially for procedures where improved accuracy could translate to improved outcomes. Registration and use of pre-procedural diagnostic or metabolic images enabled identification and localization of targets and directly impacted outcomes in biopsy and ablation interventions.</p>
+    </sec>
+  </body>
+  <back>
+    <ack id="S19">
+      <title>Acknowledgements</title>
+      <p>This work was supported in part by the Intramural Research Program of the NIH Clinical Center and by a Collaborative Research and Development Agreement between NIH and Philips Healthcare.</p>
+    </ack>
+    <fn-group>
+      <fn id="FN1">
+        <p id="P50">Disclosures: BJW and Philips have intellectual property in the field. JK, SX, and NG are salaried employees of Philips Electronics.</p>
+      </fn>
+      <fn id="FN2">
+        <p id="P51">Clinical Trial Information: <ext-link ext-link-type="uri" xlink:href="http://ClinicalTrials.gov">ClinicalTrials.gov</ext-link> Identifier: NCT00102544 A full description of this trial can be found at <ext-link ext-link-type="uri" xlink:href="http://www.clinicaltrials.gov/ct/show/NCT00102544?order=1">http://www.clinicaltrials.gov/ct/show/NCT00102544?order=1</ext-link></p>
+      </fn>
+      <fn id="FN3">
+        <p content-type="publisher-disclaimer" id="P52">This is a PDF file of an unedited manuscript that has been accepted for publication. As a service to our customers we are providing this early version of the manuscript. The manuscript will undergo copyediting, typesetting, and review of the resulting proof before it is published in its final citable form. Please note that during the production process errors may be discovered which could affect the content, and all legal disclaimers that apply to the journal pertain.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="R1">
+        <label>1</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Goldberg</surname>
+              <given-names>SN</given-names>
+            </name>
+            <name>
+              <surname>Dupuy</surname>
+              <given-names>DE</given-names>
+            </name>
+          </person-group>
+          <article-title>Image-guided radiofrequency tumor ablation: challenges and opportunities--part I</article-title>
+          <source>J Vasc Interv Radiol</source>
+          <year>2001</year>
+          <volume>12</volume>
+          <fpage>1021</fpage>
+          <lpage>1032</lpage>
+          <pub-id pub-id-type="pmid">11535764</pub-id>
+        </citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Goldberg</surname>
+              <given-names>SN</given-names>
+            </name>
+          </person-group>
+          <article-title>Radiofrequency tumor ablation: principles and techniques</article-title>
+          <source>Eur J Ultrasound</source>
+          <year>2001</year>
+          <volume>13</volume>
+          <fpage>129</fpage>
+          <lpage>147</lpage>
+          <pub-id pub-id-type="pmid">11369525</pub-id>
+        </citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dupuy</surname>
+              <given-names>DE</given-names>
+            </name>
+            <name>
+              <surname>Goldberg</surname>
+              <given-names>SN</given-names>
+            </name>
+          </person-group>
+          <article-title>Image-guided radiofrequency tumor ablation: challenges and opportunities--part II</article-title>
+          <source>J Vasc Interv Radiol</source>
+          <year>2001</year>
+          <volume>12</volume>
+          <fpage>1135</fpage>
+          <lpage>1148</lpage>
+          <pub-id pub-id-type="pmid">11585879</pub-id>
+        </citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boss</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Clasen</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kuczyk</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Magnetic resonance-guided percutaneous radiofrequency ablation of renal cell carcinomas: a pilot clinical study</article-title>
+          <source>Invest Radiol</source>
+          <year>2005</year>
+          <volume>40</volume>
+          <fpage>583</fpage>
+          <lpage>590</lpage>
+          <pub-id pub-id-type="pmid">16118551</pub-id>
+        </citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Krücker</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Glossop</surname>
+              <given-names>N</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Electromagnetic tracking for thermal ablation and biopsy guidance: clinical evaluation of spatial accuracy</article-title>
+          <source>J Vasc Interv Radiol</source>
+          <year>2007</year>
+          <volume>18</volume>
+          <fpage>1141</fpage>
+          <lpage>1150</lpage>
+          <pub-id pub-id-type="pmid">17804777</pub-id>
+        </citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Krücker</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Viswanathan</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Shen</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Glossop</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Wood</surname>
+              <given-names>BJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Clinical evaluation of electromagnetic tracking for biopsy and radiofrequency ablation guidance</article-title>
+          <source>Proceedings of CARS 2006, Int J Comput Assist Radiol Surg</source>
+          <year>2006</year>
+          <volume>1</volume>
+          <fpage>169</fpage>
+          <lpage>171</lpage>
+        </citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <citation citation-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kruecker</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Viswanathan</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Borgert</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Glossop</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Wood</surname>
+              <given-names>BJ</given-names>
+            </name>
+          </person-group>
+          <article-title>An electromagnetically tracked laparoscopic ultrasound for multi-modality minimally invasive surgery</article-title>
+          <year>2005</year>
+          <fpage>746</fpage>
+          <lpage>751</lpage>
+          <conf-name>Proceedings of CARS 2005, International Congress Series 1281</conf-name>
+        </citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <citation citation-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kruecker</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Viswanathan</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Glossop</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Wood</surname>
+              <given-names>BJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Electromagnetic Tracking for Biopsy and Radiofrequency Ablation</article-title>
+          <year>2006</year>
+          <fpage>S84</fpage>
+          <conf-name>Proceedings of SIR</conf-name>
+        </citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kruecker</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Glossop</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Neeman</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Locklin</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Wood</surname>
+              <given-names>BJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Electromagnetic needle tracking and multi-modality imaging for biopsy and ablation guidance</article-title>
+          <source>Proceedings of CARS 2007, Int J Comput Assist Radiol Surg</source>
+          <year>2007</year>
+          <volume>2</volume>
+          <fpage>S147</fpage>
+          <lpage>150</lpage>
+        </citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kruecker</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Viswanathan</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Wood</surname>
+              <given-names>BJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Automatic localization of fiducial markers for Transrectal Ultrasound (TRUS) guided needle biopsy—phantom study</article-title>
+          <source>Proceedings of CARS 2006, Int J Comput Assist Radiol Surg</source>
+          <year>2006</year>
+          <volume>1</volume>
+          <fpage>512</fpage>
+          <lpage>513</lpage>
+        </citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fitzpatrick</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>West</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Maurer</surname>
+              <given-names>CR</given-names>
+              <suffix>Jr.</suffix>
+            </name>
+          </person-group>
+          <article-title>Predicting error in rigid-body point-based registration</article-title>
+          <source>IEEE Trans Med Imaging</source>
+          <year>1998</year>
+          <volume>17</volume>
+          <fpage>694</fpage>
+          <lpage>702</lpage>
+          <pub-id pub-id-type="pmid">9874293</pub-id>
+        </citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shen</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Shechter</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Kruecker</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Stanton</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Quantification of AC electromagnetic tracking system accuracy in a CT scanner environment</article-title>
+          <source>Proceedings of SPIE Medical Imaging</source>
+          <year>2007</year>
+          <volume>6509</volume>
+          <fpage>65090L1</fpage>
+          <lpage>10</lpage>
+        </citation>
+      </ref>
+      <ref id="R13">
+        <label>13</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hummel</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Bax</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Figl</surname>
+              <given-names>ML</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Design and application of an assessment protocol for electromagnetic tracking systems</article-title>
+          <source>Med Phys</source>
+          <year>2005</year>
+          <volume>32</volume>
+          <fpage>2371</fpage>
+          <lpage>2379</lpage>
+          <pub-id pub-id-type="pmid">16121595</pub-id>
+        </citation>
+      </ref>
+    </ref-list>
+    <sec id="S20" sec-type="display-objects">
+      <title>Figures and Tables</title>
+      <fig id="F1" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <p>Setup for an US/CT guided biopsy procedure with electromagnetic tracking guidance. FG = electromagnetic field generator, US = Ultrasound scanner, NS = Navigation system workstation, SF = support frame</p>
+        </caption>
+        <graphic xlink:href="nihms-257090-f0001"/>
+      </fig>
+      <fig id="F2" position="float">
+        <label>Figure 2</label>
+        <caption>
+          <p>Procedure workflow using navigation system</p>
+        </caption>
+        <graphic xlink:href="nihms-257090-f0002"/>
+      </fig>
+      <fig id="F3" position="float">
+        <label>Figure 3</label>
+        <caption>
+          <p>Six or seven fiducials were placed on the patient’s skin to facilitate the registration process.</p>
+        </caption>
+        <graphic xlink:href="nihms-257090-f0003"/>
+      </fig>
+      <fig id="F4" position="float">
+        <label>Figure 4</label>
+        <caption>
+          <p>Needle aiming accuracy was determined for conventional guidance and for guidance using the navigation system by calculating the distance d between the target point and the projected needle path at the time of aiming.</p>
+        </caption>
+        <graphic xlink:href="nihms-257090-f0004"/>
+      </fig>
+      <fig id="F5" position="float">
+        <label>Figure 5</label>
+        <caption>
+          <p>(a) MPR showing the biopsy needle and target lesion after 3 unsuccessful attempts to position the needle with CT guidance only (no tracking). (b) Navigation system display showing 3 orthogonal MPRs that were used to bring the virtual needle (cyan) into alignment with the target lesion. (c) Confirmation scan after repositioning the needle with the aid of the navigation system shows the needle well positioned for biopsy.</p>
+        </caption>
+        <graphic xlink:href="nihms-257090-f0005"/>
+        <graphic xlink:href="nihms-257090-f0006"/>
+        <graphic xlink:href="nihms-257090-f0007"/>
+      </fig>
+      <fig id="F6" position="float">
+        <label>Figure 6</label>
+        <caption>
+          <p>(a) Navigation display showing the virtual needle aligned with the target identified in the arterial phase-enhanced CT. (b) Non-contrast enhanced confirmation scan of the needle position does not show the target lesion. (c) After rigid registration of the confirmation scan (pseudo-colored) with the arterial contrast-enhanced scan (gray scale background) in the vicinity of the target lesion, the correct alignment of the needle with the target is confirmed.</p>
+        </caption>
+        <graphic xlink:href="nihms-257090-f0008"/>
+        <graphic xlink:href="nihms-257090-f0009"/>
+        <graphic xlink:href="nihms-257090-f0010"/>
+      </fig>
+      <fig id="F7" position="float">
+        <label>Figure 7</label>
+        <caption>
+          <p>(a) Target selected based on a prior PET scan registered interactively onto the navigation CT scan. (b) The navigation system was used to guide the needle to the hot spot on PET. (c) A verification CT scan showing the actual needle position (white line) was registered with and superimposed on the navigation scan. The two orthogonal MPRs confirm that the virtual needle (blue line) is correctly registered with the image.</p>
+        </caption>
+        <graphic xlink:href="nihms-257090-f0011"/>
+        <graphic xlink:href="nihms-257090-f0012"/>
+        <graphic xlink:href="nihms-257090-f0013"/>
+      </fig>
+      <fig id="F8" position="float">
+        <label>Figure 8</label>
+        <caption>
+          <p>Needle positioning using navigation relative to a prior PET scan registered and fused with the pre-procedural CT. The target location, a lymphoma directly adjacent to the heart, was clearly visible in the PET scan but was occult in CT.</p>
+        </caption>
+        <graphic xlink:href="nihms-257090-f0014"/>
+      </fig>
+      <table-wrap id="T1" position="float">
+        <label>Table 1</label>
+        <caption>
+          <p>Mean and standard deviation of the basic tracking error (mm) in various subgroups of the patient population. N indicates the number of data points obtained in each group.</p>
+        </caption>
+        <table frame="hsides" rules="rows">
+          <tbody>
+            <tr>
+              <td align="left" valign="middle" rowspan="1" colspan="1">Target Site:</td>
+              <td align="left" valign="middle" rowspan="1" colspan="1">Liver (N=43):</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">4.0 ± 1.9</td>
+              <td align="left" valign="middle" rowspan="1" colspan="1">Kidney (N=12):</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">3.4 ± 2.1</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle" rowspan="1" colspan="1">Procedure:</td>
+              <td align="left" valign="middle" rowspan="1" colspan="1">RFA (N=45):</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">3.6 ± 1.6</td>
+              <td align="left" valign="middle" rowspan="1" colspan="1">Biopsie (N=30):</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">4.0 ± 3.2</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle" rowspan="1" colspan="1">Patient Position:</td>
+              <td align="left" valign="middle" rowspan="1" colspan="1">Supine (N=49):</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">3.8 ± 2.4</td>
+              <td align="left" valign="middle" rowspan="1" colspan="1">Decubitus (N=24):</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">3.7 ± 2.3</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+      <table-wrap id="T2" position="float">
+        <label>Table 2</label>
+        <caption>
+          <p>Mean and standard deviation of the tracking error (mm) for registrations obtained with external skin fiducials only and for registrations with up to two CT-confirmed internal needle positions as additional fiducials.</p>
+        </caption>
+        <table frame="hsides" rules="rows">
+          <thead>
+            <tr>
+              <th align="center" valign="middle" rowspan="1" colspan="1">Registration Type</th>
+              <th align="center" valign="middle" rowspan="1" colspan="1">Number of<break/>Internal fiducials</th>
+              <th align="center" valign="middle" rowspan="1" colspan="1">Tracking Error<break/>(mm)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">Rigid</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">0</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">3.8 ± 2.3</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">Rigid</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">1</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">3.0 ± 1.3</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">Affine</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">1</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">2.7 ± 1.6</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">Rigid</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">2</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">3.1 ± 2.1</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">Affine</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">2</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">2.9 ± 2.5</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+    </sec>
+  </back>
+</article>

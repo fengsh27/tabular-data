@@ -1,0 +1,2382 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="en">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">2985117R</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">4816</journal-id>
+      <journal-id journal-id-type="nlm-ta">J Immunol</journal-id>
+      <journal-title-group>
+        <journal-title>Journal of immunology (Baltimore, Md. : 1950)</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0022-1767</issn>
+      <issn pub-type="epub">1550-6606</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">21335488</article-id>
+      <article-id pub-id-type="pmc">3104396</article-id>
+      <article-id pub-id-type="doi">10.4049/jimmunol.1001539</article-id>
+      <article-id pub-id-type="manuscript">NIHMS293860</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Secretory Leukocyte Protease Inhibitor Plays an Important Role in the Regulation of Allergic Asthma in Mice</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Marino</surname>
+            <given-names>Rafael</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Thuraisingam</surname>
+            <given-names>Thusanth</given-names>
+          </name>
+          <xref ref-type="aff" rid="A2">†</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Camateros</surname>
+            <given-names>Pierre</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kanagaratham</surname>
+            <given-names>Cynthia</given-names>
+          </name>
+          <xref ref-type="aff" rid="A3">‡</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Xu</surname>
+            <given-names>Yong Zhong</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Henri</surname>
+            <given-names>Jennifer</given-names>
+          </name>
+          <xref ref-type="aff" rid="A4">§</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Yang</surname>
+            <given-names>Jingxuan</given-names>
+          </name>
+          <xref ref-type="aff" rid="A5">¶</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>He</surname>
+            <given-names>Guoan</given-names>
+          </name>
+          <xref ref-type="aff" rid="A6">∥</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ding</surname>
+            <given-names>Aihao</given-names>
+          </name>
+          <xref ref-type="aff" rid="A6">∥</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Radzioch</surname>
+            <given-names>Danuta</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">*</xref>
+          <xref ref-type="aff" rid="A3">‡</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>*</label>Division of Experimental Medicine, Department of Medicine, McGill University, Montreal, Quebec H3A 2T5, Canada</aff>
+      <aff id="A2"><label>†</label>Faculty of Medicine, University of Montreal, Montreal, Quebec H3T 1J4, Canada</aff>
+      <aff id="A3"><label>‡</label>Department of Human Genetics, McGill University, Montreal, Quebec H3A 2T5, Canada</aff>
+      <aff id="A4"><label>§</label>Research Institute, Montreal General Hospital, McGill University, Montreal, Quebec H3G 1A4, Canada</aff>
+      <aff id="A5"><label>¶</label>Institute of Cell Biology, Swiss Federal Institute of Technology Zürich, Zürich 8092, Switzerland</aff>
+      <aff id="A6"><label>∥</label>Department of Microbiology and Immunology, Weill Medical College of Cornell University, New York, NY 10065</aff>
+      <author-notes>
+        <corresp id="cor1">Address correspondence and reprint requests to Dr. Danuta Radzioch, Research Institute, Montreal General Hospital, 1650 Cedar Avenue L11-218, Montreal, Quebec, Canada H3G 1A4. <email>danuta.radzioch@mcgill.ca</email></corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>24</day>
+        <month>5</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>18</day>
+        <month>2</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <day>1</day>
+        <month>4</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>31</day>
+        <month>5</month>
+        <year>2011</year>
+      </pub-date>
+      <volume>186</volume>
+      <issue>7</issue>
+      <fpage>4433</fpage>
+      <lpage>4442</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P1">Secretory leukocyte protease inhibitor (SLPI) is an anti-inflammatory protein that is observed at high levels in asthma patients. Resiquimod, a TLR7/8 ligand, is protective against acute and chronic asthma, and it increases SLPI expression of macrophages in vitro. However, the protective role played by SLPI and the interactions between the SLPI and resiquimod pathways in the immune response occurring in allergic asthma have not been fully elucidated. To evaluate the role of SLPI in the development of asthma phenotypes and the effect of resiquimod treatment on SLPI, we assessed airway resistance and inflammatory parameters in the lungs of OVA-induced asthmatic SLPI transgenic and knockout mice and in mice treated with resiquimod. Compared with wild-type mice, allergic SLPI transgenic mice showed a decrease in lung resistance (<italic>p</italic> &lt; 0.001), airway eosinophilia (<italic>p</italic> &lt; 0.001), goblet cell hyperplasia (<italic>p</italic> &lt; 0.001), and plasma IgE levels (<italic>p</italic> &lt; 0.001). Allergic SLPI knockout mice displayed phenotype changes significantly more severe compared with wild-type mice. These phenotypes included lung resistance (<italic>p</italic> &lt; 0.001), airway eosinophilia (<italic>p</italic> &lt; 0.001), goblet cell hyperplasia (<italic>p</italic> &lt; 0.001), cytokine levels in the lungs (<italic>p</italic> &lt; 0.05), and plasma IgE levels (<italic>p</italic> &lt; 0.001). Treatment of asthmatic transgenic mice with resiquimod increased the expression of SLPI and decreased inflammation in the lungs; resiquimod treatment was still effective in asthmatic SLPI knockout mice. Taken together, our study showed that the expression of SLPI protects against allergic asthma phenotypes, and treatment by resiquimod is independent of SLPI expression, displayed through the use of transgenic and knockout SLPI mice.</p>
+      </abstract>
+      <funding-group>
+        <award-group>
+          <funding-source country="United States">National Institute of General Medical Sciences  : NIGMS</funding-source>
+          <award-id>R01 GM061710-08 || GM</award-id>
+        </award-group>
+        <award-group>
+          <funding-source country="United States">National Institute of Allergy and Infectious Diseases Extramural Activities  : NIAID</funding-source>
+          <award-id>R01 AI030165-20 || AI</award-id>
+        </award-group>
+      </funding-group>
+    </article-meta>
+  </front>
+  <body>
+    <p id="P2">Asthma is a complex, multifactorial (<xref ref-type="bibr" rid="R1">1</xref>), and inflammatory disease whose symptoms include cough, wheezing, and shortness of breath (<xref ref-type="bibr" rid="R2">2</xref>). It is one of the most common chronic diseases among children and adolescents (<xref ref-type="bibr" rid="R3">3</xref>). It is a major public health problem (<xref ref-type="bibr" rid="R4">4</xref>) because of its high and increasing worldwide morbidity and mortality (<xref ref-type="bibr" rid="R5">5</xref>) and because of its associated health care costs (<xref ref-type="bibr" rid="R6">6</xref>). Pathophysiology associated with asthma is characterized by an increase in plasma IgE levels and acute and chronic inflammation of the airways caused by activation of immune cells (<xref ref-type="bibr" rid="R2">2</xref>, <xref ref-type="bibr" rid="R7">7</xref>). Bronchial inflammation, in turn, leads to airway hyperresponsiveness (AHR), airflow obstruction, goblet cell hyperplasia, and airway remodeling (<xref ref-type="bibr" rid="R8">8</xref>). A better understanding of the roles of various effector molecules regulating allergic asthma will aid in the development of new therapies for the associated symptoms.</p>
+    <p id="P3">Secretory leukocyte protease inhibitor (SLPI; 11.7 kDa) is a serine protease constitutively expressed in mucosal tissues and immune cells, including monocytes, macrophages, and neutrophils (<xref ref-type="bibr" rid="R9">9</xref>, <xref ref-type="bibr" rid="R10">10</xref>); it can be found in bronchial secretions, seminal fluid, saliva, and breast milk (<xref ref-type="bibr" rid="R11">11</xref>). It exhibits anti-inflammatory, antifungal (<xref ref-type="bibr" rid="R12">12</xref>), and antimicrobial functions (<xref ref-type="bibr" rid="R13">13</xref>). SLPI also modulates the activity of matrix metalloproteinases (<xref ref-type="bibr" rid="R14">14</xref>), improves cutaneous wound healing (<xref ref-type="bibr" rid="R15">15</xref>, <xref ref-type="bibr" rid="R16">16</xref>), and prevents HIV-1 infection (<xref ref-type="bibr" rid="R17">17</xref>–<xref ref-type="bibr" rid="R19">19</xref>). The protective effect of SLPI as an anti-inflammatory mediator has been documented in chronic obstructive pulmonary disease (<xref ref-type="bibr" rid="R20">20</xref>) and cystic fibrosis (<xref ref-type="bibr" rid="R21">21</xref>). The potential therapeutic effect of recombinant SLPI was shown when administered by aerosol to <italic>Ascaris</italic>-sensitized sheep and OVA-sensitized guinea pigs (<xref ref-type="bibr" rid="R2">2</xref>). However, the role of SLPI in immunomodulating the response during allergic asthma has not been fully elucidated.</p>
+    <p id="P4">Despite the broad spectrum of strategies for the treatment of asthma, there is a need for new effective therapeutic options with fewer side effects. One strategy is to treat through TLRs, which are a family of widely expressed homologous proteins that play a crucial role in innate and adaptive immunity (<xref ref-type="bibr" rid="R22">22</xref>, <xref ref-type="bibr" rid="R23">23</xref>). They are some of the first molecules to trigger the immune system to respond to environmental stimuli, to activate immune cells, and to produce cytokines (<xref ref-type="bibr" rid="R24">24</xref>). Pathogen-derived molecular patterns are the common ligands for TLRs; these receptors and their ligands have been associated with the development of asthma phenotypes. Some TLRs initiate a conserved intracellular-signaling cascade to activate NF-κB and to induce expression of NF-κB–regulated genes (<xref ref-type="bibr" rid="R25">25</xref>).</p>
+    <p id="P5">TLR7 and TLR8 have been associated with the recognition of single-stranded viral RNA; however, these receptors have been also linked to a pharmaceutical compound called resiquimod (RES) (<xref ref-type="bibr" rid="R26">26</xref>, <xref ref-type="bibr" rid="R27">27</xref>). RES, also known as S28463, is a member of the imidazoquinoline family and was demonstrated to be a TLR7/8 ligand. Our group showed the protective effect of RES against acute and chronic allergic asthma in mice (<xref ref-type="bibr" rid="R28">28</xref>) and rats (<xref ref-type="bibr" rid="R29">29</xref>).</p>
+    <p id="P6">Previous studies demonstrated that asthmatic patients express significantly higher levels of SLPI compared with healthy controls (<xref ref-type="bibr" rid="R30">30</xref>). In addition, preliminary studies demonstrated a significant increase in SLPI expression at the mRNA and protein levels in macrophages after in vitro treatment with RES. We hypothesized that increased expression of SLPI during the development of allergic asthma protects the lungs from allergic asthma-induced inflammation and, thereby, improves lung physiology. Using an acute asthma model in SLPI gene transgenic (TG) and SLPI knockout (KO) mice, our findings document the importance of SLPI in the regulation of allergic asthma. Furthermore, SLPI may play a role, directly or indirectly, in the treatment of allergic asthma by RES.</p>
+    <sec sec-type="materials|methods" id="S1">
+      <title>Materials and Methods</title>
+      <sec id="S2">
+        <title>Animals</title>
+        <p id="P7">Eight to ten-week-old SLPI KO [generously donated by Dr. Sharon M. Wahl (<xref ref-type="bibr" rid="R15">15</xref>)], SLPI KO wild-type (WT<sup>KO</sup>) littermates, SLPI TG, SLPI TG wild-type (WT<sup>TG</sup>) littermates, and C57BL/6 male mice were used in all experiments. SLPI TG mice were generated as previously described (<xref ref-type="bibr" rid="R31">31</xref>). Mice were bred in the pathogen-free facility of the Montreal General Hospital, Research Institute at the McGill University Health Center, Montreal, Quebec, Canada. The McGill University Animal Care Committee, in compliance with the Canadian Council of Animal Care guidelines, approved all of the procedures performed on the animals.</p>
+      </sec>
+      <sec id="S3">
+        <title>Sensitization and challenge</title>
+        <p id="P8">Sensitization and challenge were performed as previously described (<xref ref-type="bibr" rid="R29">29</xref>). Briefly, mice were injected i.p. with 100 µg OVA (Sigma-Aldrich, St. Louis, MO) adsorbed to 1.5 mg of aluminum hydroxide (Imject Alum; Pierce, Rockford, IL) in a total volume of 0.2 ml sterile PBS on days 0, 7, and 14. Mice were challenged on days 21, 22, and 23 by aerosol exposure to 1% OVA solution or to PBS for 30 min. One group of mice was injected i.p. with 100 µg RES on 3 consecutive days, starting 1 d before the first OVA challenge.</p>
+        <p id="P9">The animals were organized into 10 groups: SLPI TG mice challenged with PBS (TG-PBS) or OVA (TG-OVA), SLPI TG mice wild-type (WT) littermates challenged with PBS (WT<sup>TG</sup>-PBS) or OVA (WT<sup>TG</sup>-OVA), SLPI KO mice challenged with PBS (KO-PBS) or OVA (KO-OVA), and SLPI KO WT littermates challenged with PBS (WT<sup>KO</sup>-PBS) or OVA (WT<sup>KO</sup>-OVA). SLPI KO mice treated with RES and challenged with OVA were identified as KO-RES-OVA and SLPI KO WT littermates treated with RES and challenged with OVA as WT<sup>KO</sup>-RES-OVA, respectively.</p>
+      </sec>
+      <sec id="S4">
+        <title>Assessment of respiratory resistance</title>
+        <p id="P10">Forty-eight hours after the last challenge, mice were anesthetized with ketamine (70 mg/kg) and xylazine (10 mg/kg). After the depth of anesthesia was verified, mice were tracheotomized, endotracheally intubated (with an 18-gauge stainless steel cannula), injected i.p. with 10 µl/g pancuronium (1 mg/ml), and connected to the MiniVent (type 845) small animal ventilator (Harvard Apparatus, Saint-Laurent, Quebec, Canada). Tidal volume was adjusted to 10 µl/g and a respiratory frequency of 180 strokes/min. The peak respiratory system resistance was measured with the Buxco resistance system (Buxco Electronics, Wilmington, NC) after administering increasing doses of aerosolized methacholine (Mch; 10 µl of 0–80 µg/ml) (Sigma-Aldrich, Oakville, Ontario, Canada).</p>
+      </sec>
+      <sec id="S5">
+        <title>Histological analysis of lung inflammation</title>
+        <p id="P11">Forty-eight hours after the last challenge, the left lung was dissected, inflated with 10% buffered formalin at a pressure of 25 cm H<sub>2</sub>O, kept in a 50-ml tube filled with 15 ml 10% formalin overnight, and then embedded in paraffin. Lungs were cut into 3-µm sections for histological analysis. Deparaffinized and hydrated sections were stained with H&amp;E, Congo red (CR), or periodic acid-Schiff (PAS).</p>
+        <p id="P12">Inflammation of the lungs was assessed by histological analysis of H&amp;E- or CR-stained lung sections. Quantification of the infiltrating cells was performed by counting 300 infiltrating cells in the peribronchial space, and the percentage of eosinophils was calculated based on the nuclear morphology and the presence of eosin staining in the cytoplasm. The percentage of eosinophils was corroborated with CR-stained lung sections. Goblet cell hyperplasia of the airways was assessed by histological analysis of PAS-stained sections. Goblet cell hyperplasia was quantified by determining the percentage of PAS-stained epithelial cells in at least five airway cross-sections per slide. Five independent experiments were performed, and 15 animals were included in each group.</p>
+      </sec>
+      <sec id="S6">
+        <title>Plasma IgE levels</title>
+        <p id="P13">Mice were euthanized with CO<sub>2</sub> 48 h after the final challenge, and blood was collected by cardiac puncture in 0.05 M EDTA-coated tubes. Plasma was isolated from blood by centrifuging for 7 min at 2000 × <italic>g</italic>. Total IgE levels were measured using a commercial ELISA kit, following the manufacturer’s instructions (BD Biosciences, San Diego, CA). Briefly, 96-well ELISA plates (Thermo Labsystems, Franklin, MA) were coated with anti-mouse IgE mAb and blocked with 10% FBS (Winsent Inc., Saint-Bruno, Quebec, Canada) in PBS. Standards and plasma samples were incubated for 2 h at room temperature, and mouse IgE was detected with biotinylated anti-mouse IgE and streptavidin-HRP conjugate using ABTS reagent mixture (Roche Diagnostics, Laval, Quebec, Canada). The plate was read at 450 nm in an ELISA plate reader (Biorad, Hercules, CA). Purified mouse IgE, provided with the kit, was used as a standard.</p>
+      </sec>
+      <sec id="S7">
+        <title>RNA extraction</title>
+        <p id="P14">Total RNA was extracted from half lung homogenized with a Mixer Mill type MM 301 (Retsch GmbH &amp; Co. KG, Haan, Germany), using TRIzol reagent and RNA extraction protocol (Invitrogen, Burlington, Ontario, Canada). RNA quality was tested by electrophoresis in 2.2 M formaldehyde-1.2% agarose gel and with a 2100 Bioanalyser using the RNA 6000 Nano LabChip Kit (Agilent Technologies, Böblingen, Germany). Total RNA was used for gene-expression analysis by real-time quantitative PCR.</p>
+      </sec>
+      <sec id="S8">
+        <title>Quantitative real-time PCR</title>
+        <p id="P15">A DNA-free Kit (Ambion, Austin, TX) was used to digest any residual DNA from 1 µg RNA obtained from the lungs. A reverse-transcription reaction was performed using the QuantiTect reverse transcription kit (Qiagen, Mississauga, Ontario, Canada), according to manufacturer’s instructions. Next, 2 µl the 25-µl reverse-transcriptase reaction was added to 50 µl Brilliant II SYBR Green quantitative PCR Master Mix (Stratagene, Cedar Creek, TX), and the Stratagene MX-4000 apparatus was used to amplify the target cDNA to assess SLPI expression by real-time quantitative PCR. The following primers were used to amplify murine SLPI cDNA: 5′-CTCAGGCAAGATGTATGATG-3′ (sense) and 5′-TTTCCCACATATACCCTCAC-3′ (antisense). The amount of cDNA was calculated based on the threshold cycle (<italic>C</italic><sub>T</sub>) value and was standardized by the amount of the housekeeping gene <italic>Gapdh</italic> using the 2<sup>−ΔΔ<italic>C</italic>T</sup> method (<xref ref-type="bibr" rid="R32">32</xref>):
+<disp-formula id="FD1"><mml:math id="M1" display="block" overflow="scroll"><mml:mrow><mml:mi mathvariant="normal">Δ</mml:mi><mml:mi mathvariant="normal">Δ</mml:mi><mml:msub><mml:mi>C</mml:mi><mml:mi mathvariant="normal">T</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mo stretchy="false">(</mml:mo><mml:msub><mml:mi>C</mml:mi><mml:mrow><mml:mi mathvariant="normal">T</mml:mi><mml:mo>,</mml:mo><mml:mtext mathvariant="italic">Target</mml:mtext></mml:mrow></mml:msub><mml:mo>−</mml:mo><mml:msub><mml:mi>C</mml:mi><mml:mrow><mml:mi mathvariant="normal">T</mml:mi><mml:mo>,</mml:mo><mml:mtext mathvariant="italic">GAPDH</mml:mtext></mml:mrow></mml:msub><mml:mo stretchy="false">)</mml:mo><mml:mo>−</mml:mo><mml:msub><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:msub><mml:mi>C</mml:mi><mml:mrow><mml:mi mathvariant="normal">T</mml:mi><mml:mo>,</mml:mo><mml:mtext mathvariant="italic">Target</mml:mtext></mml:mrow></mml:msub><mml:mo>−</mml:mo><mml:msub><mml:mi>C</mml:mi><mml:mrow><mml:mi mathvariant="normal">T</mml:mi><mml:mo>,</mml:mo><mml:mtext mathvariant="italic">GAPDH</mml:mtext></mml:mrow></mml:msub><mml:mo stretchy="false">)</mml:mo></mml:mrow><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:mtext>calibrator.avg</mml:mtext><mml:mo stretchy="false">)</mml:mo><mml:mo>,</mml:mo></mml:mrow></mml:msub></mml:mrow></mml:math></disp-formula> where “target” represents the gene of interest and “calibrator” represents KO-PBS mice. <italic>SLPI</italic> gene expression was standardized against the expression of <italic>Gapdh</italic>. Melting-curve analysis and agarose gel electrophoresis were also performed to confirm that a single product of the expected length was amplified.</p>
+        <p id="P16">The amplification program consisted of an enzyme-activation step at 95°C for 10 min, followed by 40 cycles of denaturing at 95°C for 30 s, annealing at 56°C for 30 s, and extension at 72°C for 30 s. <italic>Gapdh</italic> was used as the normalizing gene to compensate for potential differences in total cDNA amounts. The primer sequences were all designed based on the National Center for Biotechnology Information GenBank mRNA sequence, using the PrimerQuest Web-based software, Integrated DNA Technologies (<ext-link ext-link-type="uri" xlink:href="http://www.idtdna.com/Scitools/Applications/Primerquest/">http://www.idtdna.com/Scitools/Applications/Primerquest/</ext-link>).</p>
+      </sec>
+      <sec id="S9">
+        <title>Effect of RES in mRNA expression of SLPI</title>
+        <p id="P17">C57BL/6 mice were injected i.p. with PBS or 0.1 mg RES (generously provided by Dr. T.C. Meng, Graceway Pharmaceuticals LLC, Exton, PA). Three or six hours following i.p. injection, the mice were euthanized by CO<sub>2</sub>, and their lung RNA was extracted as described above.</p>
+      </sec>
+      <sec id="S10">
+        <title>Immunoprecipitation</title>
+        <p id="P18">Mice were euthanized by CO<sub>2</sub> 48 h after the last challenge; the right lung was dissected and homogenized in 500 µl PBS containing a protease inhibitor mixture (Complete Inhibitor; Roche Diagnostics). One microgram of rabbit anti-mouse SLPI Ab, generated as previously described (<xref ref-type="bibr" rid="R33">33</xref>), was added to 500 µl the homogenate and incubated at 4°C for 1 h. A mix of 20 µl protein A/G plus agarose beads (Santa Cruz Biotechnologies, Santa Cruz, CA) was added, and the solution was gently mixed at 4°C overnight. Supernatants were removed after centrifugation at 1000 rpm for 5 min and washed three times with 500 µl immunoprecipitation buffer (2% Triton X-100, 100 and 300 mM NaCl). Samples were concentrated using Microcon YM-3 centrifugal filters (Millipore, Billerica, MA), and total protein concentration was measured using the Bio-Rad protein assay dye (Biorad).</p>
+      </sec>
+      <sec id="S11">
+        <title>Western blot</title>
+        <p id="P19">Protein concentration was adjusted, and 30 µg each sample was mixed with SDS-PAGE sample buffer containing 2.5% 2-ME (Fisher, Fairlawn, NJ), heated at 95°C, and loaded in a 4–12% Bis-Tris NuPAGE gel (Invitrogen) for acrylamide electrophoresis. Human recombinant SLPI protein was used as a positive control, and SeeBlue Plus2 (Invitrogen) molecular weight marker as reference. Next, proteins were transferred onto Immobilon transfer membranes (Millipore) by semidry transfer. Membranes were blocked with 5% nonfat skim milk at 4°C overnight; they were incubated with rabbit anti-mouse SLPI (<xref ref-type="bibr" rid="R33">33</xref>) at a concentration of 1 µg/ml in 5% nonfat skim milk for 1 h at room temperature and subsequently with a solution of anti-mouse IgG HRP-conjugated Ab (1:5000; Santa Cruz Biotechnologies) for 1 h at room temperature. The signal was visualized using Western Lightning Plus-ECL reagent (GE Healthcare Bio-Sciences Corp., Piscataway, NJ).</p>
+        <p id="P20">Western blot analysis for NF-κB was performed by detection of IκB-β using an anti–IκB-β Ab (Santa Cruz Biotechnology) and following the protocol described above.</p>
+      </sec>
+      <sec id="S12">
+        <title>Cytokine analysis</title>
+        <p id="P21">Mice were euthanized 3 h after the last challenge, and the lungs were dissected and homogenized in 500 µl PBS containing a protease inhibitor mixture (Complete Inhibitor; Roche Diagnostics). Using Microcon YM-3 centrifugal filters (Millipore), the samples were concentrated 20-fold, and total protein concentration was adjusted using the Bio-Rad protein assay dye (Bio-Rad) for analysis using a custom Lincoplex mouse cytokine kit (Millipore) on a Luminex 100 LS apparatus with software version 2.3 (Luminex Corporation, Austin, TX). The minimum detectable concentrations for the Lincoplex kit using the Luminex 100 LS apparatus are as follows: IL-4, 0.3 pg/ml; IL-5, 0.6 pg/ml; IL-6, 0.7 pg/ml; IFN-γ, 0.7 pg/ml; IL-2, 0.8 pg/ml; RANTES, 0.7 pg/ml; TNF-α, 0.9 pg/ml; and MCP-1, 6.3 pg/ml.</p>
+      </sec>
+      <sec id="S13">
+        <title>Statistical analysis</title>
+        <p id="P22">Data were analyzed using a nonparametric one-way ANOVA, followed by the Bonferroni multiple-comparison posttest and correlation coefficient using 95% confidence intervals (GraphPad Prism 4, version 4.03; GraphPad Software, San Diego, CA). Differences were considered significant at <italic>p</italic> &lt; 0.05.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S14">
+      <title>Results</title>
+      <sec id="S15">
+        <title>SLPI mRNA and protein expression in the lungs of SLPI TG mice</title>
+        <p id="P23">Because TG mice frequently show a highly variable expression of the transgene, we first evaluated SLPI mRNA and protein levels in the lungs. OVA-sensitized SLPI TG mice clearly expressed higher levels of SLPI mRNA following PBS and OVA aerosol challenge compared with similarly treated WT controls (<xref ref-type="supplementary-material" rid="SD1">Supplemental Fig. 1<italic>A</italic></xref>). Furthermore, the expression of SLPI mRNA was induced by allergen challenge in SLPI TG mice (304 ± 91 in TG-OVA versus 91 ± 17 in TG-PBS; <italic>p</italic> &lt; 0.001) and WT mice (85 ± 7 in WT<sup>TG</sup>-OVA versus 12 ± 3 in WT<sup>TG</sup>-PBS; <italic>p</italic> &lt; 0.01). Compared with SLPI WT<sup>TG</sup> animals, SLPI constitutive-protein expression was greater in lungs of TG mice following PBS challenge, and it was increased in the lungs of OVA-challenged TG animals following allergen challenge (<xref ref-type="supplementary-material" rid="SD1">Supplemental Fig. 1<italic>B</italic></xref>). Taken together, SLPI protein is overexpressed in OVA-sensitized and OVA-challenged TG mice (<xref ref-type="supplementary-material" rid="SD1">Supplemental Fig. 1</xref>).</p>
+      </sec>
+      <sec id="S16">
+        <title>SLPI overexpression improves AHR and influences IgE levels in plasma</title>
+        <p id="P24">Previous studies suggested that SLPI modified the airway response in guinea pigs induced with a chronic model of allergic asthma (<xref ref-type="bibr" rid="R2">2</xref>). We evaluated whether the expression of SLPI was able to influence AHR and levels of plasma IgE in sensitized and challenged SLPI TG or KO mice. As expected, allergen challenge increased airway resistance in response to Mch in SLPI TG mice (6.3 ± 1.1 cm H<sub>2</sub>O × s/ml) and WT mice (8.0 ± 2.1 cm H<sub>2</sub>O × s/ml) (<xref ref-type="fig" rid="F1">Fig. 1<italic>A</italic></xref>). TG (3.6 ± 0.3 cm H<sub>2</sub>O × s/ml) and WT (4.3 ± 0.5 cm H<sub>2</sub>O × s/ml) mice demonstrated similar levels of airway responsiveness in the absence of OVA challenge. However, compared with WT mice, SLPI overexpression (TG-OVA) significantly (<italic>p</italic> &lt; 0.001) prevented the increase in airway responsiveness associated with OVA challenge (<xref ref-type="fig" rid="F1">Fig. 1<italic>A</italic></xref>). The same protective effect of SLPI overexpression was observed for plasma IgE levels (<xref ref-type="fig" rid="F1">Fig. 1<italic>B</italic></xref>). Significantly lower IgE levels were observed in OVA-challenged TG mice (2014.1 ± 309.2 ng/ml) compared with OVA WT mice (2014.1 ± 309.2 ng/ml; <italic>p</italic> &lt; 0.01), and a significant difference was observed compared with the TG-PBS group (925.3 ± 136.4 ng/ml; <italic>p</italic> &lt; 0.01). WT<sup>TG</sup>-PBS (3308 ± 396.3 ng/ml) control group displayed lower (<italic>p</italic> &lt; 0.001) IgE levels than did WT<sup>TG</sup>-OVA mice. Overall, greater SLPI expression was associated with lower lung resistance and plasma IgE.</p>
+      </sec>
+      <sec id="S17">
+        <title>SLPI decreases allergic inflammation in SLPI TG mice</title>
+        <p id="P25">OVA-challenged SLPI TG mice displayed a lower degree of inflammatory cell infiltration in the lungs compared with WT<sup>TG</sup> mice under the same conditions (<xref ref-type="fig" rid="F2">Fig. 2</xref>). Consistent with allergic inflammation, the inflammatory cells found in the lungs of OVA-challenged TG mice contained a significantly lower (<italic>p</italic> &lt; 0.05) proportion of eosinophils (24 ± 1.1%) compared with WT<sup>TG</sup> OVA-challenged mice (29 ± 2.3%) (<xref ref-type="supplementary-material" rid="SD1">Supplemental Fig. 2<italic>A</italic></xref>). Almost no eosinophilic infiltration was observed in the control groups, which were sensitized with OVA and challenged with PBS (TG-PBS [1 ± 0.2%] and WT<sup>TG</sup>-PBS [1 ± 0.3%]) (<xref ref-type="supplementary-material" rid="SD1">Supplemental Fig. 2<italic>A</italic></xref>). Again, SLPI overexpression exerted a protective effect against the development of allergic asthma by significantly reducing the inflammatory cell influx and the proportion of eosinophils into the peribronchial space.</p>
+      </sec>
+      <sec id="S18">
+        <title>SLPI decreases goblet cell hyperplasia in SLPI TG mice</title>
+        <p id="P26">The development of goblet cell hyperplasia and mucus production are other histological changes that characterize allergic asthma (<xref ref-type="bibr" rid="R34">34</xref>). OVA challenge caused a significant and marked increase (<italic>p</italic> &lt; 0.001) in the number of airway goblet cells in WT and TG animals (<xref ref-type="supplementary-material" rid="SD1">Supplemental Fig. 2<italic>B</italic></xref>). WT OVA-challenged mice showed a significantly higher (<italic>p</italic> &lt; 0.001) percentage of goblet cells compared with the control group challenged with PBS (8 ± 1.9%). However, TG OVA-challenged mice had a significantly lower (<italic>p</italic> &lt; 0.05) percentage of goblet cells (25 ± 2.4%) compared with WT mice under the same conditions (36 ± 4.0%) or TG mice (<italic>p</italic> &lt; 0.001) challenged with PBS (6 ± 1.4%), and it correlated with the percentage of eosinophils (<italic>r</italic> = 0.72) under each condition. These results demonstrated that the expression of SLPI plays a protective role against the induction of goblet cell hyperplasia in our model of allergic asthma.</p>
+      </sec>
+      <sec id="S19">
+        <title>SLPI mRNA and protein expression in the lungs of SLPI KO mice</title>
+        <p id="P27">We used an SLPI-KO mouse model to further corroborate our findings regarding the biological importance of SLPI in allergic asthma. As anticipated, SLPI mRNA was not expressed in the lungs of any KO mice (<xref ref-type="supplementary-material" rid="SD1">Supplemental Fig. 3<italic>A</italic></xref>), regardless of the Ag challenge. SLPI mRNA levels in the pulmonary tissue from WT<sup>KO</sup>-OVA mice (73 ± 8.7) demonstrated a significant increase following OVA challenge compared with WT<sup>KO</sup>-PBS (26 ± 3.1; <italic>p</italic> &lt; 0.01) and KO-OVA (0 ± 0.0l; <italic>p</italic> &lt; 0.001) animals. Western blot analysis was used to confirm the expression of SLPI at the protein level. As expected, SLPI protein expression was not detectable in the KO-PBS and KO-OVA mice, whereas WT<sup>KO</sup>-OVA mice showed higher protein levels compared with WT<sup>KO</sup>-PBS mice (<xref ref-type="supplementary-material" rid="SD1">Supplemental Fig. 3<italic>B</italic></xref>). These results demonstrated the absence of SLPI in KO mice and confirmed the SLPI constitutive expression in OVA-sensitized and -challenged WT<sup>KO</sup> mice.</p>
+      </sec>
+      <sec id="S20">
+        <title>SLPI ablation increases AHR and IgE levels in plasma</title>
+        <p id="P28">Our results demonstrated that the overexpression of SLPI protein prevented the development of AHR following allergen challenge, and it prevented the increase in plasma IgE levels. We then hypothesized that ablation of the SLPI gene would generate the opposite effect.</p>
+        <p id="P29">Allergen challenge led to a significant increase in airway responsiveness in SLPI KO and WT<sup>KO</sup> mice (<xref ref-type="fig" rid="F3">Fig. 3<italic>A</italic></xref>); levels in KO-OVA mice (10.2 ± 1.6 cm H<sub>2</sub>O × s/ml) were significantly higher (<italic>p</italic> &lt; 0.001) compared with WT<sup>KO</sup>-OVA mice (6.6 ± 0.5 cm H<sub>2</sub>O × s/ml; <italic>p</italic> &lt; 0.05) or KO-PBS mice (3.1 ± 0.5 cm H<sub>2</sub>O × s/ml). WT<sup>KO</sup>-PBS mice (2.6 ± 0.2 cm H<sub>2</sub>O × s/ml) displayed significantly lower (<italic>p</italic> &lt; 0.05) lung resistance than WT<sup>KO</sup>-OVA mice. Similarly, in SLPI KO and WT mice, OVA challenge led to a marked and significant increase in plasma IgE titers (<xref ref-type="fig" rid="F3">Fig. 3<italic>B</italic></xref>). Again, ablation of the SLPI gene led to a more severe asthmatic phenotype in the form of higher plasma IgE levels. Plasma IgE levels in KO-OVA mice (3598 ± 204.7 ng/ml) were significantly higher compared with WT<sup>KO</sup>-OVA mice (2763 ± 220.3 ng/ml; <italic>p</italic> &lt; 0.01) or the KO-PBS control group (920 ± 125.4 ng/ml; <italic>p</italic> &lt; 0.001) control group, whereas WT<sup>KO</sup>-PBS mice (958 ± 166.8 ng/ml) showed lower (<italic>p</italic> &lt; 0.001) IgE plasma levels than WT<sup>KO</sup>-OVA mice. We concluded that ablation of the SLPI gene enhanced AHR and IgE levels in OVA-sensitized and -challenged mice, whereas higher SLPI expression improved lung physiology and limited the atopic condition.</p>
+      </sec>
+      <sec id="S21">
+        <title>Absence of SLPI promotes inflammation in an acute asthma model</title>
+        <p id="P30">Using SLPI TG mice, we observed an anti-inflammatory effect in the lungs of OVA- challenged mice (<xref ref-type="fig" rid="F2">Fig. 2<italic>B</italic></xref>; TG-OVA). To demonstrate that SLPI is responsible for these results, we sensitized and challenged SLPI KO mice, expecting to observe higher inflammatory cell infiltration in their lungs compared with WT controls. As predicted, KO-OVA mice displayed a greater degree of infiltration than WT<sup>KO</sup>-OVA mice (<xref ref-type="fig" rid="F4">Fig. 4</xref>). All PBS-challenged animals showed minimal inflammatory cell infiltration compared with the groups challenged with OVA. These results confirmed that, in the absence of SLPI, mice were unable to control the inflammatory process in response to OVA challenge, resulting in a much greater influx of inflammatory cells into peribronchial spaces of the lungs in OVA-sensitized and -challenged mice.</p>
+      </sec>
+      <sec id="S22">
+        <title>SLPI ablation increases eosinophilia and goblet cell hyperplasia in SLPI KO mice</title>
+        <p id="P31">To further corroborate the effect of SLPI gene ablation on lung inflammation, we evaluated the percentage of eosinophils in the inflammatory infiltrate of the lungs and the degree of goblet cell hyperplasia. SLPI KO-OVA mice (36 ± 2.7%) exhibited a significantly higher percentage of eosinophils compared with WT<sup>KO</sup>-OVA mice (29 ± 1.5%; <italic>p</italic> &lt; 0.05) or KO-PBS mice (1 ± 0.4%; <italic>p</italic> &lt; 0.001) (<xref ref-type="fig" rid="F5">Fig. 5<italic>A</italic></xref>). Allergen challenge significantly induced goblet cell hyperplasia in KO and WT mice (<xref ref-type="fig" rid="F5">Fig. 5<italic>B</italic></xref>). Interestingly, ablation of the SLPI gene caused a significant (<italic>p</italic> &lt; 0.05) increase in the percentage of goblet cells in KO-OVA mice (40 ± 4.1%) compared with WT<sup>KO</sup>-OVA mice (30 ± 1.4%), and this correlated (<italic>r</italic> = 0.75) with the eosinophil percentage, indicating that the antiproliferative effect that SLPI exerts on goblet cells is active in the presence of allergic inflammation.</p>
+      </sec>
+      <sec id="S23">
+        <title>SLPI affects cytokine levels in an acute asthma model</title>
+        <p id="P32">In the assessment of the cytokine profiles of OVA-sensitized and -challenged mice, we found significantly higher (<italic>p</italic> &lt; 0.001) levels of IL-4, IL-5, and IL-6 in OVA-challenged KO and WT<sup>KO</sup> mice compared with their respective PBS-challenged controls (<xref ref-type="fig" rid="F6">Fig. 6</xref>). Consistent with their higher level of inflammation and plasma IgE levels, SLPI KO mice expressed cytokines at higher levels. The levels of IFN-γ and IL-2 followed similar patterns of expression, indicating that allergen challenge did not uniquely induce Th2 cytokines and that SLPI demonstrates a broad anti-inflammatory effect in the context of allergic asthma. RANTES and TNF-α were also significantly higher (<italic>p</italic> &lt; 0.05) in KO-OVA mice compared with KO-PBS mice, but no significant difference was found in the assessment of MCP-1.</p>
+        <p id="P33">Using SLPI TG and WT<sup>TG</sup> mice, our results showed significantly higher (<italic>p</italic> &lt; 0.001) levels for the entire panel of cytokines assessed in mice challenged with OVA compared with their PBS-challenged controls (<xref ref-type="fig" rid="F7">Fig. 7</xref>). The levels of IL-6, IFN-γ, IL-2, and MCP-1 were significantly higher (<italic>p</italic> &lt; 0.05) in WT<sup>TG</sup> mice challenged with OVA compared with TG mice under the same conditions. IL-4, IL-5, RANTES, TNF-α, and MCP-1 were also higher in WT<sup>TG</sup>-OVA mice, but there was no significant difference compared with TG-OVA mice.</p>
+        <p id="P34">Our data showed that Th1 and Th2 cytokines were expressed at higher levels in KO and TG mice challenged with OVA compared with their respective WT controls, as assessed 3 h following the last allergen challenge. Additionally, TG-OVA mice showed lower cytokine levels compared with WT<sup>TG</sup>-OVA mice. These results can explain, in part, the degree of inflammation in the lungs and the magnitude of lung resistance observed in each group of animals.</p>
+      </sec>
+      <sec id="S24">
+        <title>Effect of RES treatment on SLPI mRNA and protein expression and IκB-β level</title>
+        <p id="P35">Previous studies by our laboratory demonstrated that RES treatment prevented the development of AHR in allergic A/J and C57BL/6 mice, as well as Brown Norway rats (<xref ref-type="bibr" rid="R28">28</xref>, <xref ref-type="bibr" rid="R29">29</xref>). We also found higher SLPI expression in macrophages derived from OVA-sensitized and -challenged mice compared with control animals (data not shown). Those results led us to investigate the mRNA expression of SLPI after RES treatment in naive C57BL/6 mice. We found significantly higher (<italic>p</italic> &lt; 0.05) SLPI mRNA expression 3 and 6 h after RES injection compared with nontreated mice. As expected, SLPI mRNA was absent from the lungs of SLPI KO mice (<xref ref-type="fig" rid="F8">Fig. 8<italic>A</italic></xref>), regardless of PBS or OVA challenge or RES treatment. In the analysis of SLPI protein expression (<xref ref-type="fig" rid="F8">Fig. 8<italic>B</italic></xref>), there was no difference between WT<sup>KO</sup>-OVA mice compared with the WT<sup>KO</sup>-RES-OVA group. WT<sup>KO</sup>-PBS and WT<sup>KO</sup>-RES-PBS mice displayed no SLPI protein expression in the Western blots.</p>
+        <p id="P36">SLPI regulates the activation of NF-κB through the protection of IκB-β (<xref ref-type="bibr" rid="R35">35</xref>). We evaluated whether RES was able to modify the protection effect of SLPI on IκB-β. Treatment with RES in SLPI KO and WT<sup>KO</sup> mice challenged with PBS or OVA (KO-RES-PBS and WT<sup>KO</sup>-RES-OVA) resulted in higher IκB-β levels compared with their respective untreated group (<xref ref-type="fig" rid="F8">Fig. 8<italic>B</italic></xref>). WT<sup>KO</sup> mice displayed higher levels of IκB-β compared with KO mice. These data showed the protective effect of constitutive SLPI expression over IκB-β and suggested a potential effect of RES in protecting the activation of NF-κB, which is independent of SLPI expression.</p>
+      </sec>
+      <sec id="S25">
+        <title>RES treatment prevents OVA-induced AHR independently of SLPI</title>
+        <p id="P37">To evaluate the role of SLPI expression in RES treatment of allergic asthma, we treated SLPI KO mice with RES prior to OVA challenge. SLPI gene ablation in KO-OVA mice (12.3 ± 1.6 cm H<sub>2</sub>O × s/ml) increased the severity of AHR following allergen challenge compared with WT<sup>KO</sup>-OVA mice (8.4 ± 0.8 cm H<sub>2</sub>O × s/ml; <italic>p</italic> &lt; 0.05) (<xref ref-type="fig" rid="F9">Fig. 9</xref>). However, treatment with RES significantly reduced (<italic>p</italic> &lt; 0.05) the lung responsiveness in KO-RES-OVA mice (5.8 ± 0.9 cm H<sub>2</sub>O × s/ml) and WT<sup>KO</sup>-RES-OVA mice (4.7 ± 1.2 cm H<sub>2</sub>O × s/ml) compared with untreated animals. Overall, these results showed that treatment with RES prevented AHR, and the effectiveness of the drug does not depend on the expression of SLPI.</p>
+      </sec>
+      <sec id="S26">
+        <title>RES treatment prevents inflammation in allergic asthma</title>
+        <p id="P38">To determine whether the inhibition of allergic inflammation mediated by RES is dependent on SLPI expression, we assessed inflammatory cell infiltration and the percentage of eosinophils in RES-treated OVA-sensitized and -challenged SLPI KO and WT<sup>KO</sup> mice. We found that OVA-challenged SLPI KO mice and the group treated with RES (KO-RES-OVA) showed increased numbers of inflammatory cells compared with their respective controls (<xref ref-type="fig" rid="F10">Fig. 10<italic>A</italic></xref>). Also, the percentage of eosinophils was significantly higher (<italic>p</italic> &lt; 0.001) in KO-OVA mice (29.0 ± 2.2%) (<xref ref-type="fig" rid="F10">Fig. 10<italic>B</italic></xref>) compared with the control mice. After treatment with RES, KO-RES-OVA mice (1.0 ± 0.2%) and WT<sup>KO</sup>-RES-OVA mice (0.5 ± 0.2%) showed a significantly lower (<italic>p</italic> &lt; 0.001) fraction of eosinophils compared with KO-OVA or WT<sup>KO</sup>-OVA groups. These results confirmed that treatment with RES prevents AHR and diminishes inflammatory cell infiltration into allergen-sensitized and -challenged lungs and that the effect of the drug seems to be independent on the induction or even basal expression of SLPI.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="S27">
+      <title>Discussion</title>
+      <p id="P39">The objective of this study was to evaluate the role of SLPI in allergic asthma and to assess whether the protective effect of RES treatment depends on the expression of SLPI. To test this, we evaluated lung physiology and inflammatory responses in a murine model of acute allergic asthma, using SLPI TG and KO mice. Our results demonstrated that overexpression of SLPI prevented the development of AHR and decreased the influx of inflammatory cells into the lungs following airway allergen challenge. Furthermore, ablation of SLPI expression resulted in more severe AHR and inflammation under similar conditions. Finally, treatment of allergic asthma with RES modulated the activation of NF-κB through the protection of IκB, but its effect is independent of SLPI expression.</p>
+      <p id="P40">AHR is one of the characteristics of allergic asthma in humans (<xref ref-type="bibr" rid="R36">36</xref>–<xref ref-type="bibr" rid="R38">38</xref>) that can be reproduced in animal models (<xref ref-type="bibr" rid="R28">28</xref>, <xref ref-type="bibr" rid="R39">39</xref>, <xref ref-type="bibr" rid="R40">40</xref>). Allergic C57BL/6 mice are hyporesponsive to Mch compared with BALB/c and A/J mice (<xref ref-type="bibr" rid="R41">41</xref>, <xref ref-type="bibr" rid="R42">42</xref>). In preliminary experiments, we found that SLPI KO mice on a C57BL/6 genetic background were relatively hyperresponsive to Mch compared with WT<sup>KO</sup> C57BL/6 mice. To confirm whether this effect was generated by the ablation of expression of SLPI, we assessed airway resistance in KO and TG mice constitutively expressing different levels of SLPI. Our results showed that allergic SLPI TG mice were hyporesponsive to Mch compared with WT<sup>TG</sup> mice, whereas SLPI KO mice were hyperresponsive compared with WT<sup>KO</sup> mice. Hence, we were able to demonstrate that lung physiology is directly influenced by the differential expression of SLPI.</p>
+      <p id="P41">It was shown that acute OVA sensitization and challenge increase airway reactivity to the allergen, which causes inflammation, and increase resistance to expiratory airflow by narrowing of the airways (<xref ref-type="bibr" rid="R5">5</xref>, <xref ref-type="bibr" rid="R42">42</xref>, <xref ref-type="bibr" rid="R43">43</xref>). SLPI expressed in TG and WT mice may decrease the airway responsiveness to Mch by exerting its anti-inflammatory effect (<xref ref-type="bibr" rid="R21">21</xref>). Therefore, it is likely that ablation of the SLPI gene contributes to the hyperresponsiveness to allergen challenge observed in SLPI KO mice.</p>
+      <p id="P42">Allergen sensitization triggers the immune response characterized for the presence of eosinophils, neutrophils, and macrophages. These cells secrete proteases, which degrade the tissue matrix, increasing chemotaxis, improving the remodeling of damaged tissue, and clearing opsonized particles, including allergens (<xref ref-type="bibr" rid="R44">44</xref>). Considering that asthma is characterized by an important inflammatory component, we evaluated the inflammatory response and the role of SLPI in this process. Previous studies performed in our laboratory, using acute and chronic allergic asthma models, showed a significant inflammatory process in the lungs characterized by infiltration of the peribronchial space in the lungs (<xref ref-type="bibr" rid="R28">28</xref>, <xref ref-type="bibr" rid="R29">29</xref>).</p>
+      <p id="P43">In the current study, we found that OVA-challenged SLPI TG mice showed significantly lower inflammatory cell influx, including eosinophils, surrounding the airways compared with WT controls; the opposite phenomenon was observed in KO mice under the same conditions. The presence of eosinophils could be explained by the triggering of an inflammatory response whereby epithelial cells secrete chemotactic factors that recruit granulocytes, including eosinophils (<xref ref-type="bibr" rid="R45">45</xref>). The milder inflammatory response found in mice in which SLPI expression was not ablated confirmed the effect of SLPI in controlling inflammation in this acute asthma model. These results support the work of Wright et al. (<xref ref-type="bibr" rid="R2">2</xref>), who reported that leukocyte influx into the airway could be inhibited by administration of intratracheal SLPI in guinea pigs after allergen sensitization and challenge.</p>
+      <p id="P44">To further evaluate the degree of inflammation, goblet cell hyperplasia was also assessed. The higher goblet cell hyperplasia found in KO-OVA mice is related to the inflammatory cell influx, and it correlated (<italic>r</italic> = 0.72) with the percentage of eosinophils in the peribronchial region. The increase in goblet cell activity could be explained by the fact that, in asthma, there is an inflammatory process in the lungs, which includes increased mucus production due to goblet cell hyperplasia. The excess of mucus, along with edema and smooth muscle contraction, results in the closure of distal airways and increased resistance in the airway (<xref ref-type="bibr" rid="R6">6</xref>).</p>
+      <p id="P45">Allergic asthma is an atopic disease characterized by an elevation of blood IgE levels (<xref ref-type="bibr" rid="R28">28</xref>, <xref ref-type="bibr" rid="R46">46</xref>). Westin et al. (<xref ref-type="bibr" rid="R47">47</xref>) showed that SLPI regulates allergic reactions by inhibiting IgE. It is tempting to speculate that early inflammatory events in acute allergic asthma, characterized by cell infiltration in the lungs and IgE, are directly modulated by SLPI. We found higher levels of IgE in plasma of OVA-challenged SLPI KO mice, whereas animals constitutively expressing SLPI showed the opposite phenomenon. These findings are consistent with the observation by Nakamura et al. (<xref ref-type="bibr" rid="R48">48</xref>) of increased B cell proliferation and Ig production in SLPI KO mice. Our results could be explained by the theories that SLPI plays a role as a negative feedback protein in the production of Abs by interfering with transcription factor activation during the immune response (<xref ref-type="bibr" rid="R49">49</xref>) or the lack of control in the production of IgE in SLPI KO mice compared with those who express normal levels of SLPI (<xref ref-type="bibr" rid="R41">41</xref>, <xref ref-type="bibr" rid="R46">46</xref>).</p>
+      <p id="P46">During the inflammatory process in the airway, epithelial cells interact with dendritic cells that activate CD4<sup>+</sup> Th cells to initiate a Th2 response to produce IL-4 and IL-10; finally, the Th2 cytokines stimulate B cells to produce IgE. We assessed the cytokine profile of OVA-sensitized and -challenged mice in an attempt to further clarify the mechanism of action of SLPI in the immune response of allergic asthma, and we found a significant increase in the entire cytokine panel using KO-OVA mice compared with KO-PBS or WT<sup>KO</sup>-OVA mice. Additionally, IL-2, IL-6, IFN-γ, and MCP-1 showed significant increases using TG-OVA mice compared with WT<sup>TG</sup>-PBS or WT<sup>TG</sup>-OVA mice; interestingly, TG-OVA mice showed lower cytokine levels compared with WT<sup>TG</sup> mice under the same conditions. No specific Th1 or Th2 pattern of cytokine/chemokine expression seems to distinguish SLPI KO and TG mice from their respective WT controls. These results demonstrated that constitutive expression of SLPI is a determinant in the production of differential cytokines levels, which are associated with IgE in plasma and the severity of the inflammatory process.</p>
+      <p id="P47">RES is a TLR7/8 ligand in humans (<xref ref-type="bibr" rid="R50">50</xref>), and previous studies demonstrated that its protective effect is dependent on MyD88 but independent of MAPKAP-2 (<xref ref-type="bibr" rid="R28">28</xref>). The anti-inflammatory role of TLR7 signaling in allergic asthma is reflected by the complete inhibition of Th1 and Th2 cytokines following RES treatment in OVA-challenged animals (<xref ref-type="bibr" rid="R29">29</xref>). Additionally, several studies using RES treatment in mice performed in our laboratory showed that RES induced the expression of SLPI in macrophages derived from OVA-sensitized and -challenged mice compared with untreated controls. This observation led us to assess the effect of RES on SLPI expression and its role in modulating the development of inflammation in a murine model of allergic asthma. In this study, we found that RES increased mRNA expression in naive C57BL/6 mice and inhibited the inflammatory process in SLPI KO and TG OVA-sensitized and -challenged mice, which is reflected by the lower degree of inflammatory cell infiltration in the lungs, the decreased percentage of eosinophils, and the reduction in goblet cell hyperplasia compared with untreated animals.</p>
+      <p id="P48">The immunoregulatory role of SLPI occurs through the NF-κB–signaling pathway. Taggart et al. (<xref ref-type="bibr" rid="R51">51</xref>) demonstrated that SLPI is located in the cytoplasm and nucleus of U937 cells and peripheral blood monocytes. These results were confirmed by Xu et al. (<xref ref-type="bibr" rid="R49">49</xref>), who also found SLPI in the nucleus and cytoplasm of tonsillar epithelial cells. SLPI protects IκB-β and binds NF-κB in a specific manner, affecting its activation (<xref ref-type="bibr" rid="R51">51</xref>). These results were confirmed by Xu et al. (<xref ref-type="bibr" rid="R49">49</xref>), who also found SLPI in the nucleus and cytoplasm of tonsillar epithelial cells. Using SLPI KO mice, we studied the effect of RES on the activation of NF-κB and its effect on SLPI. We found higher levels of IκB-β in SLPI KO and WT<sup>KO</sup> mice treated with RES compared with untreated mice, showing a protective effect on the activation of NF-κB in those animals under RES treatment.</p>
+      <p id="P49">These results demonstrated how the expression of SLPI exerts a protective effect in the activation of NF-κB using SLPI KO and WT mice and showed that treatment with RES is effective against allergic asthma through the protection of IκB-β, but it is not directly associated with the expression of SLPI. An additional mechanism related to activation of NF-κB should be involved in the treatment with RES, and further studies must be performed to elucidate the participation of this NF in the treatment of allergic asthma with this drug.</p>
+      <p id="P50">Using an acute model of allergic asthma in SLPI TG and KO mice, we demonstrated that constitutive expression of SLPI directly reduces the inflammatory response in the respiratory tract and improves lung function. Because of the anti-inflammatory and antimicrobial functions attributed to SLPI, the lack of genetic polymorphism, and its early expression after tissue injury, this protein should be considered a target for novel therapies in allergic asthma.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="SM">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="SD1">
+        <label>supplementary data</label>
+        <media xlink:href="NIHMS293860-supplement-supplementary_data.pdf" orientation="portrait" xlink:type="simple" id="N0x908ec50N0x9d933b0" position="anchor" mimetype="application" mime-subtype="pdf"/>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn id="FN1">
+        <p id="P51"><bold>Supplementary Data</bold> <ext-link ext-link-type="uri" xlink:href="http://www.jimmunol.org/content/suppl/2011/02/18/jimmunol.1001539.DC1.html">http://www.jimmunol.org/content/suppl/2011/02/18/jimmunol.1001539.DC1.html</ext-link></p>
+      </fn>
+      <fn id="FN2" fn-type="supplementary-material">
+        <p id="P52">The online version of this article contains supplemental material.</p>
+      </fn>
+      <fn id="FN3" fn-type="conflict">
+        <p id="P53">
+          <bold>Disclosures</bold>
+        </p>
+        <p id="P54">The authors have no financial conflicts of interest.</p>
+      </fn>
+    </fn-group>
+    <ack id="S28">
+      <title>Acknowledgments</title>
+      <p id="P55">This work was supported by grants from the Sandler Program for Asthma Research and the Canadian Institutes of Health Research (to D.R.). R.M. and P.C. are supported by a Canadian Institutes of Health Research Doctoral Award. C.K. is supported by the Fonds de la recherche en santé du Québec Master’s Training Award.</p>
+      <p id="P56">We thank Dr. Marie-Christine Guiot for expertise with histological analyses.</p>
+    </ack>
+    <glossary>
+      <title>Abbreviations used in this article</title>
+      <def-list>
+        <def-item>
+          <term>AHR</term>
+          <def>
+            <p id="P57">airway hyperresponsiveness</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>CR</term>
+          <def>
+            <p id="P58">Congo red</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>C<sub>T</sub></term>
+          <def>
+            <p id="P59">threshold cycle</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>KO</term>
+          <def>
+            <p id="P60">knockout</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>Mch</term>
+          <def>
+            <p id="P61">methacholine</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>PAS</term>
+          <def>
+            <p id="P62">periodic acid-Schiff</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>RES</term>
+          <def>
+            <p id="P63">resiquimod</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>SLPI</term>
+          <def>
+            <p id="P64">secretory leukocyte protease inhibitor</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>TG</term>
+          <def>
+            <p id="P65">transgenic</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>WT</term>
+          <def>
+            <p id="P66">wild-type</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>WT<sup>KO</sup></term>
+          <def>
+            <p id="P67">SLPI KO wild-type</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>WT<sup>TG</sup></term>
+          <def>
+            <p id="P68">SLPI TG wild-type</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+    <ref-list>
+      <title>References</title>
+      <ref id="R1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Myers</surname>
+              <given-names>TR</given-names>
+            </name>
+          </person-group>
+          <article-title>Use of heliox in children</article-title>
+          <source>Respir. Care</source>
+          <year>2006</year>
+          <volume>51</volume>
+          <fpage>619</fpage>
+          <lpage>631</lpage>
+          <pub-id pub-id-type="pmid">16723039</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wright</surname>
+              <given-names>CD</given-names>
+            </name>
+            <name>
+              <surname>Havill</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Middleton</surname>
+              <given-names>SC</given-names>
+            </name>
+            <name>
+              <surname>Kashem</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Dripps</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>O’Riordan</surname>
+              <given-names>TG</given-names>
+            </name>
+            <name>
+              <surname>Bevilacqua</surname>
+              <given-names>MP</given-names>
+            </name>
+            <name>
+              <surname>Abraham</surname>
+              <given-names>WM</given-names>
+            </name>
+          </person-group>
+          <article-title>Secretory leukocyte protease inhibitor prevents allergen-induced pulmonary responses in animal models of asthma</article-title>
+          <source>J. Pharmacol. Exp. Ther</source>
+          <year>1999</year>
+          <volume>289</volume>
+          <fpage>1007</fpage>
+          <lpage>1014</lpage>
+          <pub-id pub-id-type="pmid">10215681</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Blais</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Beauchesne</surname>
+              <given-names>MF</given-names>
+            </name>
+            <name>
+              <surname>Lévesque</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Socioeconomic status and medication prescription patterns in pediatric asthma in Canada</article-title>
+          <source>J. Adolesc. Health</source>
+          <year>2006</year>
+          <volume>38</volume>
+          <fpage>607</fpage>
+          <fpage>e9</fpage>
+          <lpage>e16</lpage>
+          <pub-id pub-id-type="pmid">16635775</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brown</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Turk</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Dale</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Bousquet</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Cost-effectiveness of omalizumab in patients with severe persistent allergic asthma</article-title>
+          <source>Allergy</source>
+          <year>2007</year>
+          <volume>62</volume>
+          <fpage>149</fpage>
+          <lpage>153</lpage>
+          <pub-id pub-id-type="pmid">17298423</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Burburan</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Xisto</surname>
+              <given-names>DG</given-names>
+            </name>
+            <name>
+              <surname>Rocco</surname>
+              <given-names>PR</given-names>
+            </name>
+          </person-group>
+          <article-title>Anaesthetic management in asthma</article-title>
+          <source>Minerva Anestesiol</source>
+          <year>2007</year>
+          <volume>73</volume>
+          <fpage>357</fpage>
+          <lpage>365</lpage>
+          <pub-id pub-id-type="pmid">17115010</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sorkness</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name>
+              <surname>Bleecker</surname>
+              <given-names>ER</given-names>
+            </name>
+            <name>
+              <surname>Busse</surname>
+              <given-names>WW</given-names>
+            </name>
+            <name>
+              <surname>Calhoun</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>Castro</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Chung</surname>
+              <given-names>KF</given-names>
+            </name>
+            <name>
+              <surname>Curran-Everett</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Erzurum</surname>
+              <given-names>SC</given-names>
+            </name>
+            <name>
+              <surname>Gaston</surname>
+              <given-names>BM</given-names>
+            </name>
+            <name>
+              <surname>Israel</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <collab>National Heart, Lung, and Blood Institute Severe Asthma Research Program</collab>
+          <article-title>Lung function in adults with stable but severe asthma: air trapping and incomplete reversal of obstruction with bronchodilation</article-title>
+          <source>J. Appl. Physiol</source>
+          <year>2008</year>
+          <volume>104</volume>
+          <fpage>394</fpage>
+          <lpage>403</lpage>
+          <pub-id pub-id-type="pmid">17991792</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shome</surname>
+              <given-names>GP</given-names>
+            </name>
+            <name>
+              <surname>Starnes</surname>
+              <given-names>JD</given-names>
+              <suffix>III</suffix>
+            </name>
+            <name>
+              <surname>Shearer</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kennedy</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Way</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Arif</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Prabhakar</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Exhaled nitric oxide in asthma: variability, relation to asthma severity, and peripheral blood lymphocyte cytokine expression</article-title>
+          <source>J. Asthma</source>
+          <year>2006</year>
+          <volume>43</volume>
+          <fpage>95</fpage>
+          <lpage>99</lpage>
+          <pub-id pub-id-type="pmid">16517424</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bandi</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Velamuri</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Sirgi</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Wendt</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Wendt</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Guntupalli</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Deposition pattern of heliox-driven bronchodilator aerosol in the airways of stable asthmatics</article-title>
+          <source>J. Asthma</source>
+          <year>2005</year>
+          <volume>42</volume>
+          <fpage>583</fpage>
+          <lpage>586</lpage>
+          <pub-id pub-id-type="pmid">16169793</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Eisenberg</surname>
+              <given-names>SP</given-names>
+            </name>
+            <name>
+              <surname>Hale</surname>
+              <given-names>KK</given-names>
+            </name>
+            <name>
+              <surname>Heimdal</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Thompson</surname>
+              <given-names>RC</given-names>
+            </name>
+          </person-group>
+          <article-title>Location of the protease-inhibitory region of secretory leukocyte protease inhibitor</article-title>
+          <source>J. Biol. Chem</source>
+          <year>1990</year>
+          <volume>265</volume>
+          <fpage>7976</fpage>
+          <lpage>7981</lpage>
+          <pub-id pub-id-type="pmid">2110563</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Odaka</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Mizuochi</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Ding</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Murine macrophages produce secretory leukocyte protease inhibitor during clearance of apoptotic cells: implications for resolution of the inflammatory response</article-title>
+          <source>J. Immunol</source>
+          <year>2003</year>
+          <volume>171</volume>
+          <fpage>1507</fpage>
+          <lpage>1514</lpage>
+          <pub-id pub-id-type="pmid">12874244</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fakioglu</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Wilson</surname>
+              <given-names>SS</given-names>
+            </name>
+            <name>
+              <surname>Mesquita</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>Hazrati</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Cheshenko</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Blaho</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Herold</surname>
+              <given-names>BC</given-names>
+            </name>
+          </person-group>
+          <article-title>Herpes simplex virus downregulates secretory leukocyte protease inhibitor: a novel immune evasion mechanism</article-title>
+          <source>J. Virol</source>
+          <year>2008</year>
+          <volume>82</volume>
+          <fpage>9337</fpage>
+          <lpage>9344</lpage>
+          <pub-id pub-id-type="pmid">18667508</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tomee</surname>
+              <given-names>JF</given-names>
+            </name>
+            <name>
+              <surname>Hiemstra</surname>
+              <given-names>PS</given-names>
+            </name>
+            <name>
+              <surname>Heinzel-Wieland</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Kauffman</surname>
+              <given-names>HF</given-names>
+            </name>
+          </person-group>
+          <article-title>Antileukoprotease: an endogenous protein in the innate mucosal defense against fungi</article-title>
+          <source>J. Infect. Dis</source>
+          <year>1997</year>
+          <volume>176</volume>
+          <fpage>740</fpage>
+          <lpage>747</lpage>
+          <pub-id pub-id-type="pmid">9291323</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R13">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sagel</surname>
+              <given-names>SD</given-names>
+            </name>
+            <name>
+              <surname>Sontag</surname>
+              <given-names>MK</given-names>
+            </name>
+            <name>
+              <surname>Accurso</surname>
+              <given-names>FJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Relationship between antimicrobial proteins and airway inflammation and infection in cystic fibrosis</article-title>
+          <source>Pediatr. Pulmonol</source>
+          <year>2009</year>
+          <volume>44</volume>
+          <fpage>402</fpage>
+          <lpage>409</lpage>
+          <pub-id pub-id-type="pmid">19283840</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R14">
+        <label>14</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ramadas</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>LeVine</surname>
+              <given-names>AM</given-names>
+            </name>
+          </person-group>
+          <article-title>Surfactant protein A enhances production of secretory leukoprotease inhibitor and protects it from cleavage by matrix metalloproteinases</article-title>
+          <source>J. Immunol</source>
+          <year>2009</year>
+          <volume>182</volume>
+          <fpage>1560</fpage>
+          <lpage>1567</lpage>
+          <pub-id pub-id-type="pmid">19155504</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R15">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ashcroft</surname>
+              <given-names>GS</given-names>
+            </name>
+            <name>
+              <surname>Lei</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Jin</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Longenecker</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Kulkarni</surname>
+              <given-names>AB</given-names>
+            </name>
+            <name>
+              <surname>Greenwell-Wild</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Hale-Donze</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>McGrady</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Song</surname>
+              <given-names>XY</given-names>
+            </name>
+            <name>
+              <surname>Wahl</surname>
+              <given-names>SM</given-names>
+            </name>
+          </person-group>
+          <article-title>Secretory leukocyte protease inhibitor mediates non-redundant functions necessary for normal wound healing</article-title>
+          <source>Nat. Med</source>
+          <year>2000</year>
+          <volume>6</volume>
+          <fpage>1147</fpage>
+          <lpage>1153</lpage>
+          <pub-id pub-id-type="pmid">11017147</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R16">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Thuraisingam</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sam</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Moisan</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Ding</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Radzioch</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Delayed cutaneous wound healing in mice lacking solute carrier 11a1 (formerly Nramp1): correlation with decreased expression of secretory leukocyte protease inhibitor</article-title>
+          <source>J. Invest. Dermatol</source>
+          <year>2006</year>
+          <volume>126</volume>
+          <fpage>890</fpage>
+          <lpage>901</lpage>
+          <pub-id pub-id-type="pmid">16470178</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R17">
+        <label>17</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jana</surname>
+              <given-names>NK</given-names>
+            </name>
+            <name>
+              <surname>Gray</surname>
+              <given-names>LR</given-names>
+            </name>
+            <name>
+              <surname>Shugars</surname>
+              <given-names>DC</given-names>
+            </name>
+          </person-group>
+          <article-title>Human immunodeficiency virus type 1 stimulates the expression and production of secretory leukocyte protease inhibitor (SLPI) in oral epithelial cells: a role for SLPI in innate mucosal immunity</article-title>
+          <source>J. Virol</source>
+          <year>2005</year>
+          <volume>79</volume>
+          <fpage>6432</fpage>
+          <lpage>6440</lpage>
+          <pub-id pub-id-type="pmid">15858026</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R18">
+        <label>18</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McNeely</surname>
+              <given-names>TB</given-names>
+            </name>
+            <name>
+              <surname>Shugars</surname>
+              <given-names>DC</given-names>
+            </name>
+            <name>
+              <surname>Rosendahl</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Tucker</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Eisenberg</surname>
+              <given-names>SP</given-names>
+            </name>
+            <name>
+              <surname>Wahl</surname>
+              <given-names>SM</given-names>
+            </name>
+          </person-group>
+          <article-title>Inhibition of human immunodeficiency virus type 1 infectivity by secretory leukocyte protease inhibitor occurs prior to viral reverse transcription</article-title>
+          <source>Blood</source>
+          <year>1997</year>
+          <volume>90</volume>
+          <fpage>1141</fpage>
+          <lpage>1149</lpage>
+          <pub-id pub-id-type="pmid">9242546</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R19">
+        <label>19</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Py</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Basmaciogullari</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Bouchet</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Zarka</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Moura</surname>
+              <given-names>IC</given-names>
+            </name>
+            <name>
+              <surname>Benhamou</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Monteiro</surname>
+              <given-names>RC</given-names>
+            </name>
+            <name>
+              <surname>Hocini</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Madrid</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Benichou</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>The phospholipid scramblases 1 and 4 are cellular receptors for the secretory leukocyte protease inhibitor and interact with CD4 at the plasma membrane</article-title>
+          <source>PLoS ONE</source>
+          <year>2009</year>
+          <volume>4</volume>
+          <fpage>e5006</fpage>
+          <pub-id pub-id-type="pmid">19333378</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R20">
+        <label>20</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Zheng</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Homer</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Riese</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Chapman</surname>
+              <given-names>HA</given-names>
+              <suffix>Jr</suffix>
+            </name>
+            <name>
+              <surname>Shapiro</surname>
+              <given-names>SD</given-names>
+            </name>
+            <name>
+              <surname>Elias</surname>
+              <given-names>JA</given-names>
+            </name>
+          </person-group>
+          <article-title>Interferon gamma induction of pulmonary emphysema in the adult murine lung</article-title>
+          <source>J. Exp. Med</source>
+          <year>2000</year>
+          <volume>192</volume>
+          <fpage>1587</fpage>
+          <lpage>1600</lpage>
+          <pub-id pub-id-type="pmid">11104801</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R21">
+        <label>21</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Weldon</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>McGarry</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Taggart</surname>
+              <given-names>CC</given-names>
+            </name>
+            <name>
+              <surname>McElvaney</surname>
+              <given-names>NG</given-names>
+            </name>
+          </person-group>
+          <article-title>The role of secretory leucoprotease inhibitor in the resolution of inflammatory responses</article-title>
+          <source>Biochem. Soc. Trans</source>
+          <year>2007</year>
+          <volume>35</volume>
+          <fpage>273</fpage>
+          <lpage>276</lpage>
+          <pub-id pub-id-type="pmid">17371258</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R22">
+        <label>22</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Medzhitov</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Toll-like receptors and innate immunity</article-title>
+          <source>Nat. Rev. Immunol</source>
+          <year>2001</year>
+          <volume>1</volume>
+          <fpage>135</fpage>
+          <lpage>145</lpage>
+          <pub-id pub-id-type="pmid">11905821</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R23">
+        <label>23</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schnare</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Barton</surname>
+              <given-names>GM</given-names>
+            </name>
+            <name>
+              <surname>Holt</surname>
+              <given-names>AC</given-names>
+            </name>
+            <name>
+              <surname>Takeda</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Akira</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Medzhitov</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Toll-like receptors control activation of adaptive immune responses</article-title>
+          <source>Nat. Immunol</source>
+          <year>2001</year>
+          <volume>2</volume>
+          <fpage>947</fpage>
+          <lpage>950</lpage>
+          <pub-id pub-id-type="pmid">11547333</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R24">
+        <label>24</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Takeda</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Kaisho</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Akira</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Toll-like receptors</article-title>
+          <source>Annu. Rev. Immunol</source>
+          <year>2003</year>
+          <volume>21</volume>
+          <fpage>335</fpage>
+          <lpage>376</lpage>
+          <pub-id pub-id-type="pmid">12524386</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R25">
+        <label>25</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Greene</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>McElvaney</surname>
+              <given-names>NG</given-names>
+            </name>
+            <name>
+              <surname>O’Neill</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <name>
+              <surname>Taggart</surname>
+              <given-names>CC</given-names>
+            </name>
+          </person-group>
+          <article-title>Secretory leucoprotease inhibitor impairs Toll-like receptor 2- and 4-mediated responses in monocytic cells</article-title>
+          <source>Infect. Immun</source>
+          <year>2004</year>
+          <volume>72</volume>
+          <fpage>3684</fpage>
+          <lpage>3687</lpage>
+          <pub-id pub-id-type="pmid">15155685</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R26">
+        <label>26</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hemmi</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kaisho</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Takeuchi</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Sato</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Sanjo</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Hoshino</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Horiuchi</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Tomizawa</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Takeda</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Akira</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Small anti-viral compounds activate immune cells via the TLR7 MyD88-dependent signaling pathway</article-title>
+          <source>Nat. Immunol</source>
+          <year>2002</year>
+          <volume>3</volume>
+          <fpage>196</fpage>
+          <lpage>200</lpage>
+          <pub-id pub-id-type="pmid">11812998</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R27">
+        <label>27</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gorden</surname>
+              <given-names>KK</given-names>
+            </name>
+            <name>
+              <surname>Qiu</surname>
+              <given-names>XX</given-names>
+            </name>
+            <name>
+              <surname>Binsfeld</surname>
+              <given-names>CC</given-names>
+            </name>
+            <name>
+              <surname>Vasilakos</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Alkan</surname>
+              <given-names>SS</given-names>
+            </name>
+          </person-group>
+          <article-title>Cutting edge: activation of murine TLR8 by a combination of imidazoquinoline immune response modifiers and polyT oligodeoxynucleotides</article-title>
+          <source>J. Immunol</source>
+          <year>2006</year>
+          <volume>177</volume>
+          <fpage>6584</fpage>
+          <lpage>6587</lpage>
+          <pub-id pub-id-type="pmid">17082568</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R28">
+        <label>28</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Moisan</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Camateros</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Thuraisingam</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Marion</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Koohsari</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Martin</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Boghdady</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Ding</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Gaestel</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Guiot</surname>
+              <given-names>MC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>TLR7 ligand prevents allergen-induced airway hyperresponsiveness and eosinophilia in allergic asthma by a MYD88-dependent and MK2-independent pathway</article-title>
+          <source>Am. J. Physiol. Lung Cell. Mol. Physiol</source>
+          <year>2006</year>
+          <volume>290</volume>
+          <fpage>L987</fpage>
+          <lpage>L995</lpage>
+          <pub-id pub-id-type="pmid">16361354</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R29">
+        <label>29</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Camateros</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Tamaoka</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hassan</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Marino</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Moisan</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Marion</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Guiot</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>Martin</surname>
+              <given-names>JG</given-names>
+            </name>
+            <name>
+              <surname>Radzioch</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Chronic asthma-induced airway remodeling is prevented by toll-like receptor-7/8 ligand S28463</article-title>
+          <source>Am. J. Respir. Crit. Care Med</source>
+          <year>2007</year>
+          <volume>175</volume>
+          <fpage>1241</fpage>
+          <lpage>1249</lpage>
+          <pub-id pub-id-type="pmid">17400732</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R30">
+        <label>30</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Belkowski</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Boot</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Mascelli</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Diamant</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>de Garavilla</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Hertzog</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Polkovitch</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Towers</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Batheja</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>D’Andrea</surname>
+              <given-names>MR</given-names>
+            </name>
+          </person-group>
+          <article-title>Cleaved secretory leucocyte protease inhibitor as a biomarker of chymase activity in allergic airway disease</article-title>
+          <source>Clin. Exp. Allergy</source>
+          <year>2009</year>
+          <volume>39</volume>
+          <fpage>1179</fpage>
+          <lpage>1186</lpage>
+          <pub-id pub-id-type="pmid">19400896</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R31">
+        <label>31</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ghasemlou</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Bouhy</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>López-Vales</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Haber</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Thuraisingam</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>He</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Radzioch</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Ding</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>David</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Beneficial effects of secretory leukocyte protease inhibitor after spinal cord injury</article-title>
+          <source>Brain</source>
+          <year>2010</year>
+          <volume>133</volume>
+          <fpage>126</fpage>
+          <lpage>138</lpage>
+          <pub-id pub-id-type="pmid">20047904</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R32">
+        <label>32</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Livak</surname>
+              <given-names>KJ</given-names>
+            </name>
+            <name>
+              <surname>Schmittgen</surname>
+              <given-names>TD</given-names>
+            </name>
+          </person-group>
+          <article-title>Analysis of relative gene expression data using real-time quantitative PCR and the 2(-Delta Delta C(T)) Method</article-title>
+          <source>Methods</source>
+          <year>2001</year>
+          <volume>25</volume>
+          <fpage>402</fpage>
+          <lpage>408</lpage>
+          <pub-id pub-id-type="pmid">11846609</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R33">
+        <label>33</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jin</surname>
+              <given-names>FY</given-names>
+            </name>
+            <name>
+              <surname>Nathan</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Radzioch</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Ding</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Secretory leukocyte protease inhibitor: a macrophage product induced by and antagonistic to bacterial lipopolysaccharide</article-title>
+          <source>Cell</source>
+          <year>1997</year>
+          <volume>88</volume>
+          <fpage>417</fpage>
+          <lpage>426</lpage>
+          <pub-id pub-id-type="pmid">9039268</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R34">
+        <label>34</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Saglani</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Mathie</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Gregory</surname>
+              <given-names>LG</given-names>
+            </name>
+            <name>
+              <surname>Bell</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Bush</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Lloyd</surname>
+              <given-names>CM</given-names>
+            </name>
+          </person-group>
+          <article-title>Pathophysiological features of asthma develop in parallel in house dust mite exposed neonatal mice</article-title>
+          <source>Am. J. Respir. Cell Mol. Biol</source>
+          <year>2009</year>
+          <volume>41</volume>
+          <fpage>281</fpage>
+          <lpage>289</lpage>
+          <pub-id pub-id-type="pmid">19151316</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R35">
+        <label>35</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lentsch</surname>
+              <given-names>AB</given-names>
+            </name>
+            <name>
+              <surname>Jordan</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Czermak</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Diehl</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Younkin</surname>
+              <given-names>EM</given-names>
+            </name>
+            <name>
+              <surname>Sarma</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Ward</surname>
+              <given-names>PA</given-names>
+            </name>
+          </person-group>
+          <article-title>Inhibition of NF-kappaB activation and augmentation of IkappaBbeta by secretory leukocyte protease inhibitor during lung inflammation</article-title>
+          <source>Am. J. Pathol</source>
+          <year>1999</year>
+          <volume>154</volume>
+          <fpage>239</fpage>
+          <lpage>247</lpage>
+          <pub-id pub-id-type="pmid">9916938</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R36">
+        <label>36</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Goodman</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Chandalia</surname>
+              <given-names>JK</given-names>
+            </name>
+            <name>
+              <surname>Thakali</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Seeley</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Meta-analysis of nitrogen dioxide exposure and airway hyper-responsiveness in asthmatics</article-title>
+          <source>Crit. Rev. Toxicol</source>
+          <year>2009</year>
+          <volume>39</volume>
+          <fpage>719</fpage>
+          <lpage>742</lpage>
+          <pub-id pub-id-type="pmid">19852559</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R37">
+        <label>37</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Motomura</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Odajima</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Tezuka</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Murakami</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Moriyasu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Kando</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Taba</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Hayashi</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Okada</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Nishima</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Effect of age on relationship between exhaled nitric oxide and airway hyperresponsiveness in asthmatic children</article-title>
+          <source>Chest</source>
+          <year>2009</year>
+          <volume>136</volume>
+          <fpage>519</fpage>
+          <lpage>525</lpage>
+          <pub-id pub-id-type="pmid">19395581</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R38">
+        <label>38</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Komatsu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Fujimoto</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Yasuo</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Urushihata</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Hanaoka</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Koizumi</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Kubo</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Airway hyper-responsiveness in young adults with asthma that remitted either during or before adolescence</article-title>
+          <source>Respirology</source>
+          <year>2009</year>
+          <volume>14</volume>
+          <fpage>217</fpage>
+          <lpage>223</lpage>
+          <pub-id pub-id-type="pmid">19272083</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R39">
+        <label>39</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hamelmann</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Schwarze</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Takeda</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Oshiba</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Larsen</surname>
+              <given-names>GL</given-names>
+            </name>
+            <name>
+              <surname>Irvin</surname>
+              <given-names>CG</given-names>
+            </name>
+            <name>
+              <surname>Gelfand</surname>
+              <given-names>EW</given-names>
+            </name>
+          </person-group>
+          <article-title>Noninvasive measurement of airway responsiveness in allergic mice using barometric plethysmography</article-title>
+          <source>Am. J. Respir. Crit. Care Med</source>
+          <year>1997</year>
+          <volume>156</volume>
+          <fpage>766</fpage>
+          <lpage>775</lpage>
+          <pub-id pub-id-type="pmid">9309991</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R40">
+        <label>40</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hoymann</surname>
+              <given-names>HG</given-names>
+            </name>
+          </person-group>
+          <article-title>Invasive and noninvasive lung function measurements in rodents</article-title>
+          <source>J. Pharmacol. Toxicol. Methods</source>
+          <year>2007</year>
+          <volume>55</volume>
+          <fpage>16</fpage>
+          <lpage>26</lpage>
+          <pub-id pub-id-type="pmid">16793289</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R41">
+        <label>41</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fukunaga</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Abe</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Murai</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Akitake</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Hosokawa</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Takahashi</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Comparative study to elucidate the mechanism underlying the difference in airway hyperresponsiveness between two mouse strains</article-title>
+          <source>Int. Immunopharmacol</source>
+          <year>2007</year>
+          <volume>7</volume>
+          <fpage>1852</fpage>
+          <lpage>1861</lpage>
+          <pub-id pub-id-type="pmid">18039522</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R42">
+        <label>42</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jonasson</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Hedenstierna</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Hedenström</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Hjoberg</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Comparisons of effects of intravenous and inhaled methacholine on airway physiology in a murine asthma model</article-title>
+          <source>Respir. Physiol. Neurobiol</source>
+          <year>2009</year>
+          <volume>165</volume>
+          <fpage>229</fpage>
+          <lpage>236</lpage>
+          <pub-id pub-id-type="pmid">19136080</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R43">
+        <label>43</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lougheed</surname>
+              <given-names>MD</given-names>
+            </name>
+            <name>
+              <surname>Fisher</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>O’Donnell</surname>
+              <given-names>DE</given-names>
+            </name>
+          </person-group>
+          <article-title>Dynamic hyperinflation during bronchoconstriction in asthma: implications for symptom perception</article-title>
+          <source>Chest</source>
+          <year>2006</year>
+          <volume>130</volume>
+          <fpage>1072</fpage>
+          <lpage>1081</lpage>
+          <pub-id pub-id-type="pmid">17035440</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R44">
+        <label>44</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Diegelmann</surname>
+              <given-names>RF</given-names>
+            </name>
+            <name>
+              <surname>Evans</surname>
+              <given-names>MC</given-names>
+            </name>
+          </person-group>
+          <article-title>Wound healing: an overview of acute, fibrotic and delayed healing</article-title>
+          <source>Front. Biosci</source>
+          <year>2004</year>
+          <volume>9</volume>
+          <fpage>283</fpage>
+          <lpage>289</lpage>
+          <pub-id pub-id-type="pmid">14766366</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R45">
+        <label>45</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dragon</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Takhar</surname>
+              <given-names>MK</given-names>
+            </name>
+            <name>
+              <surname>Shan</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Hayglass</surname>
+              <given-names>KT</given-names>
+            </name>
+            <name>
+              <surname>Simons</surname>
+              <given-names>FE</given-names>
+            </name>
+            <name>
+              <surname>Gounni</surname>
+              <given-names>AS</given-names>
+            </name>
+          </person-group>
+          <article-title>T(H)2 cytokines modulate the IL-9R expression on human neutrophils</article-title>
+          <source>Biochem. Biophys. Res. Commun</source>
+          <year>2009</year>
+          <volume>384</volume>
+          <fpage>167</fpage>
+          <lpage>172</lpage>
+          <pub-id pub-id-type="pmid">19401191</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R46">
+        <label>46</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Corry</surname>
+              <given-names>DB</given-names>
+            </name>
+            <name>
+              <surname>Folkesson</surname>
+              <given-names>HG</given-names>
+            </name>
+            <name>
+              <surname>Warnock</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Erle</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Matthay</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Wiener-Kronish</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Locksley</surname>
+              <given-names>RM</given-names>
+            </name>
+          </person-group>
+          <article-title>Interleukin 4, but not interleukin 5 or eosinophils, is required in a murine model of acute airway hyperreactivity</article-title>
+          <source>J. Exp. Med</source>
+          <year>1996</year>
+          <volume>183</volume>
+          <fpage>109</fpage>
+          <lpage>117</lpage>
+          <pub-id pub-id-type="pmid">8551213</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R47">
+        <label>47</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Westin</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Lundberg</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Ohlsson</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>IgE-mediated histamine release from nasal mucosa is inhibited by SLPI (secretory leukocyte protease inhibitor) to the level of spontaneous release</article-title>
+          <source>Mediators Inflamm</source>
+          <year>1998</year>
+          <volume>7</volume>
+          <fpage>217</fpage>
+          <lpage>220</lpage>
+          <pub-id pub-id-type="pmid">9705610</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R48">
+        <label>48</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nakamura</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Mori</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Hagiwara</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sakakibara</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Kikuchi</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Igarashi</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Ebina</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Abe</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Miyazaki</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Increased susceptibility to LPS-induced endotoxin shock in secretory leukoprotease inhibitor (SLPI)-deficient mice</article-title>
+          <source>J. Exp. Med</source>
+          <year>2003</year>
+          <volume>197</volume>
+          <fpage>669</fpage>
+          <lpage>674</lpage>
+          <pub-id pub-id-type="pmid">12615907</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R49">
+        <label>49</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xu</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>He</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Chiu</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Chadburn</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Shan</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Buldys</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ding</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Knowles</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Santini</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Cerutti</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Epithelial cells trigger frontline immunoglobulin class switching through a pathway regulated by the inhibitor SLPI</article-title>
+          <source>Nat. Immunol</source>
+          <year>2007</year>
+          <volume>8</volume>
+          <fpage>294</fpage>
+          <lpage>303</lpage>
+          <pub-id pub-id-type="pmid">17259987</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R50">
+        <label>50</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jurk</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Heil</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Vollmer</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Schetter</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Krieg</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Wagner</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Lipford</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Bauer</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Human TLR7 or TLR8 independently confer responsiveness to the antiviral compound R-848</article-title>
+          <source>Nat. Immunol</source>
+          <year>2002</year>
+          <volume>3</volume>
+          <fpage>499</fpage>
+          <pub-id pub-id-type="pmid">12032557</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R51">
+        <label>51</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Taggart</surname>
+              <given-names>CC</given-names>
+            </name>
+            <name>
+              <surname>Cryan</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Weldon</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Gibbons</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Greene</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Kelly</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Low</surname>
+              <given-names>TB</given-names>
+            </name>
+            <name>
+              <surname>O’Neill</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <name>
+              <surname>McElvaney</surname>
+              <given-names>NG</given-names>
+            </name>
+          </person-group>
+          <article-title>Secretory leucoprotease inhibitor binds to NF-kappaB binding sites in monocytes and inhibits p65 binding</article-title>
+          <source>J. Exp. Med</source>
+          <year>2005</year>
+          <volume>202</volume>
+          <fpage>1659</fpage>
+          <lpage>1668</lpage>
+          <pub-id pub-id-type="pmid">16352738</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig id="F1" position="float" orientation="portrait">
+      <label>FIGURE 1</label>
+      <caption>
+        <p id="P69">Airway resistance and IgE levels in plasma from SLPI TG and WT<sup>TG</sup> mice. Bars represent the mean ± SEM of five independent experiments (<italic>n</italic> = 15 per group). <italic>A</italic>, Airway resistance. <italic>B</italic>, IgE levels in plasma. TG-OVA mice showed statistically significantly lower lung resistance and IgE levels in plasma compared with WT<sup>TG</sup>-OVA mice.</p>
+      </caption>
+      <graphic xlink:href="nihms293860f1"/>
+    </fig>
+    <fig id="F2" position="float" orientation="portrait">
+      <label>FIGURE 2</label>
+      <caption>
+        <p id="P70">H&amp;E-stained lung sections from SLPI TG and WT<sup>TG</sup> mice. Lungs from TG-PBS (<italic>A</italic>), TG-OVA (<italic>B</italic>), WT<sup>TG</sup>-PBS (<italic>C</italic>), and WT<sup>TG</sup>-OVA (<italic>D</italic>) mice. The lungs from TG-OVA mice show a decrease in cellular infiltration after OVA challenge compared with the lungs of similarly treated WT<sup>TG</sup>-OVA mice.</p>
+      </caption>
+      <graphic xlink:href="nihms293860f2"/>
+    </fig>
+    <fig id="F3" position="float" orientation="portrait">
+      <label>FIGURE 3</label>
+      <caption>
+        <p id="P71">Airway resistance and IgE levels in plasma from SLPI KO and WT<sup>KO</sup> mice. Bars represent the mean ± SEM from five independent experiments (<italic>n</italic> = 15 per group). <italic>A</italic>, Airway resistance. <italic>B</italic>, IgE levels in plasma. KO-OVA mice showed statistically significantly higher lung resistance and IgE levels in plasma compared with WT<sup>KO</sup>-OVA or KO-PBS mice.</p>
+      </caption>
+      <graphic xlink:href="nihms293860f3"/>
+    </fig>
+    <fig id="F4" position="float" orientation="portrait">
+      <label>FIGURE 4</label>
+      <caption>
+        <p id="P72">H&amp;E-stained lung sections from SLPI KO and WT<sup>KO</sup> mice. Lungs from KO-PBS (<italic>A</italic>), KO-OVA (<italic>B</italic>), WT<sup>KO</sup>-PBS (<italic>C</italic>), and WT<sup>KO</sup>-OVA (<italic>D</italic>) mice. Lungs from KO-OVA mice show an increase in cellular infiltration after OVA challenge compared with lungs of similarly treated WT<sup>KO</sup>-OVA mice.</p>
+      </caption>
+      <graphic xlink:href="nihms293860f4"/>
+    </fig>
+    <fig id="F5" position="float" orientation="portrait">
+      <label>FIGURE 5</label>
+      <caption>
+        <p id="P73">Eosinophils and goblet cells in lungs from SLPI KO and WT<sup>KO</sup> mice. Bars represent the mean ± SEM from five independent experiments (<italic>n</italic> = 15 per group). <italic>A</italic>, Percentage of eosinophils. <italic>B</italic>, Percentage of goblet cell hyperplasia. KO-OVA mice showed a statistically significantly higher percentage of eosinophils and goblet cell hyperplasia compared with WT<sup>KO</sup>-OVA and KO-PBS mice.</p>
+      </caption>
+      <graphic xlink:href="nihms293860f5"/>
+    </fig>
+    <fig id="F6" position="float" orientation="portrait">
+      <label>FIGURE 6</label>
+      <caption>
+        <p id="P74">Cytokine levels in lungs of SLPI KO and WT<sup>KO</sup> mice. The bars represent the mean ± SEM (<italic>n</italic> = 6 per group). *<italic>p</italic> &lt; 0.001, for IL-4, IL-5, IL-6, IL-2, and MCP-1 in KO-PBS mice versus KO-OVA mice and for WT<sup>KO</sup>-PBS mice versus WT<sup>KO</sup>-OVA; **<italic>p</italic> &lt; 0.05, for IFN-γ, RANTES, and TNF-γ in KO-PBS mice versus KO-OVA mice and WT<sup>KO</sup>-PBS mice versus WT<sup>KO</sup>-OVA mice.</p>
+      </caption>
+      <graphic xlink:href="nihms293860f6"/>
+    </fig>
+    <fig id="F7" position="float" orientation="portrait">
+      <label>FIGURE 7</label>
+      <caption>
+        <p id="P75">Cytokine levels in lungs of SLPI TG and WT<sup>TG</sup> mice. The bars represent the mean ± SEM (<italic>n</italic> = 3–5 per group). *<italic>p</italic> &lt; 0.001 for IL-4, IL-5, IL-6, IFN-γ, IL-2, and MCP-1 in TG-PBS mice versus TG-OVA mice and WT<sup>TG</sup>-PBS mice versus WT<sup>TG</sup>-OVA mice; **<italic>p</italic> &lt; 0.05 for RANTES and TNF-γ in TG-PBS mice versus TG-OVA mice and WT<sup>TG</sup>-PBS mice versus WT<sup>TG</sup>-OVA mice.</p>
+      </caption>
+      <graphic xlink:href="nihms293860f7"/>
+    </fig>
+    <fig id="F8" position="float" orientation="portrait">
+      <label>FIGURE 8</label>
+      <caption>
+        <p id="P76">SLPI and IκB-β expression in lung homogenates from SLPI KO and WT<sup>KO</sup> mice after PBS or OVA challenge, including RES treatment. <italic>A</italic>, SLPI mRNA relative expression (mean ± SEM) (<italic>n</italic> = 10 per group). <italic>B</italic>, SLPI, IκB-β, and GAPDH protein expression. SLPI KO mice showed no SLPI mRNA and protein expression under any condition. SLPI WT<sup>KO</sup> mice displayed no variation in protein levels, and IκB-β level was higher after treatment with RES. rSLPI, recombinant SLPI.</p>
+      </caption>
+      <graphic xlink:href="nihms293860f8"/>
+    </fig>
+    <fig id="F9" position="float" orientation="portrait">
+      <label>FIGURE 9</label>
+      <caption>
+        <p id="P77">Airway resistance in OVA-sensitized and -challenged SLPI KO and WT<sup>KO</sup> mice after RES treatment. Bars represent the mean ± SEM from three independent experiments (<italic>n</italic> = 6 per group). RES treatment significantly reduces airway resistance in SLPI KO (KO-RES-OVA) and WT (WT<sup>KO</sup>-RES-OVA) mice compared with untreated mice under the same conditions.</p>
+      </caption>
+      <graphic xlink:href="nihms293860f9"/>
+    </fig>
+    <fig id="F10" position="float" orientation="portrait">
+      <label>FIGURE 10</label>
+      <caption>
+        <p id="P78">Inflammatory cell infiltration and eosinophils in lungs from SLPI KO and WT<sup>KO</sup> mice after RES treatment. <italic>A</italic>, H&amp;E-stained lung sections. <italic>B</italic>, Percentage of eosinophils (mean ± SEM) (<italic>n</italic> = 6 per group). KO-RES-OVA and WT<sup>KO</sup>-RES-OVA mice show lower cellular infiltration and a significant decrease in eosinophil percentage after RES treatment compared with untreated mice. <italic>p</italic> &lt; 0.001.</p>
+      </caption>
+      <graphic xlink:href="nihms293860f10"/>
+    </fig>
+  </floats-group>
+</article>

@@ -1,0 +1,4157 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Archiving and Interchange DTD v2.3 20070202//EN" "archivearticle.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">2985117R</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">4816</journal-id>
+      <journal-id journal-id-type="nlm-ta">J Immunol</journal-id>
+      <journal-title>Journal of immunology (Baltimore, Md. : 1950)</journal-title>
+      <issn pub-type="ppub">0022-1767</issn>
+      <issn pub-type="epub">1550-6606</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">21383240</article-id>
+      <article-id pub-id-type="pmc">3074466</article-id>
+      <article-id pub-id-type="doi">10.4049/jimmunol.1000466</article-id>
+      <article-id pub-id-type="manuscript">NIHMS275356</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>B cell- and BAFF-dependence of IFNα-exaggerated disease in SLE-prone NZM 2328 mice<xref ref-type="fn" rid="FN2">1</xref></article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Jacob</surname>
+            <given-names>Noam</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Guo</surname>
+            <given-names>Shunhua</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Mathian</surname>
+            <given-names>Alexis</given-names>
+          </name>
+          <xref ref-type="aff" rid="A4">†</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Koss</surname>
+            <given-names>Michael N.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A2">‡</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gindea</surname>
+            <given-names>Simona</given-names>
+          </name>
+          <xref ref-type="aff" rid="A5">§</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Putterman</surname>
+            <given-names>Chaim</given-names>
+          </name>
+          <xref ref-type="aff" rid="A5">§</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Jacob</surname>
+            <given-names>Chaim O.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A3">¶</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Stohl</surname>
+            <given-names>William</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">*</xref>
+          <xref ref-type="corresp" rid="CR1">2</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>*</label>Division of Rheumatology, University of Southern California Keck School of Medicine, Los Angeles, CA 90033
+</aff>
+      <aff id="A2"><label>‡</label>Department of Pathology, University of Southern California Keck School of Medicine, Los Angeles, CA 90033
+</aff>
+      <aff id="A3"><label>¶</label>Division of Gastrointestinal and Liver Diseases, University of Southern California Keck School of Medicine, Los Angeles, CA 90033
+</aff>
+      <aff id="A4"><label>†</label>Service de Médecine Interne 2, CHU Pitié-Salpêtrière, APHP, Paris, France
+</aff>
+      <aff id="A5"><label>§</label>Division of Rheumatology, Albert Einstein College of Medicine, Bronx, NY 10461
+</aff>
+      <author-notes>
+        <corresp id="CR1">
+<label>2</label>Please address correspondence to: William Stohl, MD, PhD, University of Southern California, Division of Rheumatology, 2011 Zonal Ave. HMR 711, Los Angeles, CA 90033, 323-442-1959 (office), 323-442-2874 (FAX), <email>stohl@usc.edu</email>
+</corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>24</day>
+        <month>2</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>7</day>
+        <month>3</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <day>15</day>
+        <month>4</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>15</day>
+        <month>4</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>186</volume>
+      <issue>8</issue>
+      <fpage>4984</fpage>
+      <lpage>4993</lpage>
+      <permissions>
+        <license>
+          <p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P1">IFNα is a potent activator of innate and adaptive immunity, and its administration to pre-autoimmune (NZBxNZW)F1 mice promotes virulent systemic lupus erythematosus (SLE) disease. Given the known contributions of B cells and BAFF to SLE, we evaluated the ability of IFNα administration to induce disease in wild-type (WT), B cell-deficient, and BAFF-deficient NZM 2328 mice. Whereas WT mice rapidly developed proliferative glomerulonephritis (GN), marked proteinuria, and increased mortality in response to IFNα administration, B cell-deficient mice developed neither renal pathology nor clinical disease. Moreover, BAFF-deficient mice, despite developing limited glomerular IgG and C3 deposition, also remained free of histological GN and clinical disease. Strikingly, similar T cell expansion and serum IgG responses were observed in Adv-IFN-treated WT and BAFF-deficient mice despite their disparate pathological and clinical responses, whereas numbers of activated B cells increased in WT mice but not in BAFF-deficient mice. Nonetheless, B cell, plasma cell, and T cell infiltration of the kidneys in Adv-IFN-treated WT mice was similar to that in WT mice treated with Adv-control. Its ability to promote SLE disease in WT mice notwithstanding, IFNα administration failed to drive the preferential expansion of CD4<sup>+</sup> memory T cells that occurs during the natural course of disease, and glomerular infiltration of macrophages failed to associate with development of disease. These results collectively suggest that therapeutic targeting in SLE of BAFF and/or B cells in SLE could be successful even in states of IFNα overexpression. Moreover, our results document important biological differences between IFNα-driven and spontaneous “natural” SLE disease.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>rodent</kwd>
+        <kwd>systemic lupus erythematosus</kwd>
+        <kwd>cytokines</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S1">
+      <title>Introduction</title>
+      <p id="P2">The clinical diagnosis of systemic lupus erythematosus (SLE<xref ref-type="fn" rid="FN3">3</xref>) is based on a constellation of signs, symptoms, and clinical laboratory-based abnormalities. Perturbation of distinct single genes can lead to SLE-like manifestations in mice (<xref ref-type="bibr" rid="R1">1</xref>-<xref ref-type="bibr" rid="R6">6</xref>), and human linkage and association studies have identified multiple SLE susceptibility genes (<xref ref-type="bibr" rid="R7">7</xref>-<xref ref-type="bibr" rid="R14">14</xref>). Accordingly, SLE represents a collection of disorders which likely stem from a plethora of discrete etiologies and pathogenetic pathways.</p>
+      <p id="P3">This inherent heterogeneity notwithstanding, certain common threads tend to run across all “varieties” of SLE. One of these is the IFNα signature, defined as the preferential increase in expression of those genes up-regulated by IFNα (<xref ref-type="bibr" rid="R15">15</xref>-<xref ref-type="bibr" rid="R17">17</xref>).</p>
+      <p id="P4">Several observations support a contributory role for IFNα in SLE. Systemic administration of IFNα has promoted <italic>de novo</italic> SLE-like disease in several patients (<xref ref-type="bibr" rid="R18">18</xref>). Moreover, circulating IFNα levels in SLE are frequently elevated (<xref ref-type="bibr" rid="R17">17</xref>), corticosteroid-induced remissions are paralleled by the extinguishing of the IFNα signature (<xref ref-type="bibr" rid="R16">16</xref>), and the risk allele of the <italic>STAT4</italic> gene, which codes for a transcription factor activated by IFNα signaling, is associated with increased sensitivity to IFNα signaling (<xref ref-type="bibr" rid="R19">19</xref>). In several murine SLE models, blockade of IFNα signaling by genetic deletion of the type I IFN receptor (IFNR) attenuates disease (<xref ref-type="bibr" rid="R20">20</xref>-<xref ref-type="bibr" rid="R22">22</xref>). Most strikingly, administration of IFNα promotes the rapid onset of virulent clinical disease in young (pre-autoimmune) (NZBxNZW)F1 (BWF1) female mice but has no pathogenic effects on age- and sex-matched non-SLE-prone BALB/c mice (<xref ref-type="bibr" rid="R23">23</xref>).</p>
+      <p id="P5">B cells indispensably contribute to spontaneous SLE not just by autoantibody-dependent means but by autoantibody-independent means as well, as highlighted by the complete absence of SLE features in B cell-deficient MRL-<italic>lpr</italic> mice (<xref ref-type="bibr" rid="R24">24</xref>) and the partial restoration of disease following genetic reconstitution of these mice with B cells incapable of secreting Ig (<xref ref-type="bibr" rid="R25">25</xref>). Indeed, B cell-depletion therapy in human SLE leads to clinical improvement in many patients despite limited effects on circulating autoantibodies (<xref ref-type="bibr" rid="R26">26</xref>-<xref ref-type="bibr" rid="R31">31</xref>).</p>
+      <p id="P6">B cell activating factor belonging to the TNF family (BAFF) also vitally contributes to SLE. BAFF-transgenic (Tg) mice that are otherwise not autoimmune-prone develop SLE-like features, including elevated circulating titers of multiple autoantibodies and immune-complex glomerulonephritis (GN) (<xref ref-type="bibr" rid="R32">32</xref>-<xref ref-type="bibr" rid="R34">34</xref>). Furthermore, constitutive BAFF overexpression leads to accelerated glomerular pathology in mice with an incomplete diathesis to SLE (<xref ref-type="bibr" rid="R35">35</xref>), and SLE-like features develop in otherwise non-autoimmune-prone BAFF-Tg mice even in the complete absence of T cells (as long as MyD88-mediated signaling is intact) (<xref ref-type="bibr" rid="R36">36</xref>). Conversely, treatment of BWF1 or MRL-<italic>lpr</italic> mice with a BAFF antagonist retards disease progression and improves survival (<xref ref-type="bibr" rid="R34">34</xref>, <xref ref-type="bibr" rid="R37">37</xref>-<xref ref-type="bibr" rid="R39">39</xref>), and disruption of the <italic>Baff</italic> gene in SLE-prone NZM 2328 (NZM) mice (an inbred recombinant strain derived from BWF1 mice which closely mirrors the parental SLE phenotype and shares many features with human SLE [40]) markedly attenuates development of clinical disease (<xref ref-type="bibr" rid="R41">41</xref>). In humans, treatment with an anti-BAFF mAb ameliorates disease activity in “seropositive” SLE patients (<xref ref-type="bibr" rid="R42">42</xref>-<xref ref-type="bibr" rid="R46">46</xref>).</p>
+      <p id="P7">Importantly, BAFF expression is affected by IFNα. In human dendritic cell (DC) cultures, IFNα up-regulates BAFF expression (<xref ref-type="bibr" rid="R47">47</xref>), whereas treatment of SLE patients with an anti-IFNα mAb down-regulates BAFF expression (<xref ref-type="bibr" rid="R48">48</xref>). In both SLE-prone BWF1 mice and non-autoimmune-prone BALB/c mice, circulating BAFF levels increase following IFNα administration (<xref ref-type="bibr" rid="R23">23</xref>).</p>
+      <p id="P8">Given that clinical trials in human SLE have been, and are continuing to be, conducted with agents that deplete B cells or neutralize BAFF, the dependence of IFNα-driven pathogenicity on B cells or BAFF in SLE becomes a clinically important topic. The ability of IFNα to drive exaggerated disease in a SLE-prone host has previously not been tested in the context of B cell or BAFF deficiency. Moreover, the faithfulness of IFNα-driven disease to the spontaneous disease has previously not been sufficiently assessed. To address these issues, we induced IFNα overexpression through an adenovirus (Adv) construct containing murine IFNα (Adv-IFN) and studied SLE-prone NZM mice as well as NZM mice deficient in B cells (NZM.JHD), in BAFF (NZM.<italic>baff</italic><sup>−/−</sup>), in the type I IFNR α chain (NZM.<italic>ifnar</italic><sup>−/−</sup>), or in both TNF receptors (TNFR) 1 and 2 (NZM.<italic>tnfr1</italic><sup>−/−</sup>.<italic>tnfr2</italic><sup>−/−</sup>).</p>
+    </sec>
+    <sec sec-type="materials|methods" id="S2">
+      <title>Materials and methods</title>
+      <sec id="S3">
+        <title>General</title>
+        <p id="P9">All reported studies were approved by the University of Southern California IACUC.</p>
+      </sec>
+      <sec id="S4">
+        <title>Mice</title>
+        <p id="P10">Female mice were housed in specific pathogen-free quarters. Five congenic NZM strains were utilized: wild-type (WT); NZM.JHD; NZM.<italic>baff</italic><sup>−/−</sup>; NZM.<italic>ifnar</italic><sup>−/−</sup>; and NZM.<italic>tnfr1</italic><sup>−/−</sup>.<italic>tnfr2</italic><sup>−/−</sup>. The generation of NZM.<italic>baff</italic><sup>−/−</sup>, NZM.<italic>ifnar</italic><sup>−/−</sup>, and NZM.<italic>tnfr1</italic><sup>−/−</sup>.<italic>tnfr2</italic><sup>−/−</sup> mice have previously been described (<xref ref-type="bibr" rid="R22">22</xref>, <xref ref-type="bibr" rid="R41">41</xref>, <xref ref-type="bibr" rid="R49">49</xref>).</p>
+        <p id="P11">To generate NZM.JHD mice, B cell-deficient JHD mice were backcrossed into NZM mice using a marker-assisted selection protocol (<xref ref-type="bibr" rid="R41">41</xref>, <xref ref-type="bibr" rid="R50">50</xref>, <xref ref-type="bibr" rid="R51">51</xref>). These markers were chosen to include those regions identified as susceptibility loci in NZM mice (<xref ref-type="bibr" rid="R52">52</xref>). To detect the disrupted <italic>JH</italic> gene fragment (containing a <italic>neo</italic> insert), genomic DNA extracted from mouse tail clippings was PCR-amplified for 35 cycles at 94°C for 40 sec, 62°C for 40 sec, and 72°C for 1 min. The primer sequences were:
+<list list-type="simple" id="L1"><list-item><p id="P12"><italic>JH</italic> sense: 5′-GGACCAGGGGGCTCAGGTCAC-3′</p></list-item><list-item><p id="P13"><italic>JH</italic> anti-sense: 5′-GAGGAGACGGTGACCGTGGTCCCT-3′</p></list-item><list-item><p id="P14"><italic>neo</italic> sense: 5′-CCTTGCGCAGCTGTGCTCGAC-3′</p></list-item><list-item><p id="P15"><italic>neo</italic> anti-sense: 5′-GCCGCATTGCATCAGCCATGATGGA-3′.</p></list-item></list></p>
+        <p id="P16">Band sizes for the intact and disrupted <italic>JH</italic> gene fragments are ~200 bp and ~120 bp, respectively. A <italic>neo</italic> band was detected only in mice with a disrupted gene fragment.</p>
+      </sec>
+      <sec id="S5">
+        <title>IFNα treatment and clinical assessment</title>
+        <p id="P17">The recombinant Adv vector containing murine IFNα subtype 5 under the control of the CMV promoter/enhancer (Adv-IFN) and the control Adv vector lacking the IFNα insert (Adv-control) have been previously described (<xref ref-type="bibr" rid="R23">23</xref>). Mice received single i.v. injections containing 1-1.5 × 10<sup>9</sup> viral particles (vp) of either Adv-IFN or Adv-control and were assessed for proteinuria twice weekly on a scale of 0 to 4+ with Albustrix assay strips (Bayer, Elkhart, IN). Severe proteinuria was defined as ≥3+ on two consecutive examinations. Blood was collected prior to Adv injection and at days 8 and 28 post-injection.</p>
+      </sec>
+      <sec id="S6">
+        <title>Serum IFNα determination</title>
+        <p id="P18">Serum IFNα levels were determined by ELISA (PBL Biomedical Laboratories, Piscataway, NJ) according to the manufacturer’s instructions. The lower limit of detection is 12.5 pg/ml. Samples with values &lt;12.5 pg/ml were arbitrarily plotted as 12.5 pg/ml.</p>
+      </sec>
+      <sec id="S7">
+        <title>Cell surface staining</title>
+        <p id="P19">Murine spleen mononuclear cells were stained with fluorochrome-conjugated mAb specific for murine CD3, CD4, CD8, CD44, CD62L, CD45R (B220), CD19, CD21, CD23, CD69, CD80, or CD86 (BD PharMingen, San Diego, CA, or eBioscience, San Diego, CA) and analyzed by flow cytometry (<xref ref-type="bibr" rid="R49">49</xref>).</p>
+      </sec>
+      <sec id="S8">
+        <title>Serum total IgG and IgG autoantibody determinations</title>
+        <p id="P20">Serum levels of total IgG and IgG anti-chromatin and anti-dsDNA antibodies were determined by ELISA as previously described (<xref ref-type="bibr" rid="R53">53</xref>, <xref ref-type="bibr" rid="R54">54</xref>). Autoantibody OD values were normalized to the mean OD of serum from 5-month-old MRL-<italic>lpr/lpr</italic> mice, the latter being arbitrarily assigned a value of 100 U/ml.</p>
+      </sec>
+      <sec id="S9">
+        <title>Kidney histology</title>
+        <p id="P21">Individual sections of formalin-fixed kidneys were stained with H&amp;E and examined by light microscopy. Each section was assessed for glomerular hypercellularity, mesangial matrix expansion, interstitial cellular infiltration, and tubular atrophy or dilation.</p>
+      </sec>
+      <sec id="S10">
+        <title>Kidney immunofluorescence</title>
+        <p id="P22">Five-micron sections of snap-frozen kidneys were stained for total IgG deposition using FITC-conjugated goat anti-mouse IgG antibodies (SouthernBiotech, Birmingham, AL), for individual IgG isotype deposition using FITC-conjugated goat anti-mouse IgG1, IgG2a, IgG2b, or IgG3 antibodies (SouthernBiotech), and for C3 deposition using FITC-conjugated goat anti-mouse C3 antibodies (MP Biomedicals, Solon, OH). To document infiltration of T cells, B cells, or plasma cells into the kidneys, FITC-conjugated rat anti-CD3 (BD Bioscience, San Diego, CA), PE-conjugated anti-CD20 (eBioscience, San Diego, CA), and PE-conjugated anti-CD138 (BD Bioscience) antibodies were used.</p>
+      </sec>
+      <sec id="S11">
+        <title>Kidney immunohistochemistry</title>
+        <p id="P23">Four-micron sections of de-parafinized formalin-fixed kidneys were subjected to antigen retrieval with an antigen unmasking solution (Vector, Burlingame, CA). The sections were then blocked with hydrogen peroxidase and normal rabbit serum and stained for macrophages using rat anti-mouse Mac-2 mAb (Biolegend, San Diego, CA). Biotin-conjugated rabbit anti-rat IgG (Vector) was used as the secondary antibody, followed by avidin-streptoavidin-peroxidase complex (Vector). Diaminobenzidine (Vector) was used as the substrate for color development.</p>
+      </sec>
+      <sec id="S12">
+        <title>Statistical analysis</title>
+        <p id="P24">All analyses were performed using SigmaStat software (SPSS, Chicago, IL). Parametric testing between two matched or unmatched groups was performed by the paired or unpaired t test, respectively. Parametric testing among three or more groups was performed by one-way ANOVA. When the data were not normally distributed or the equal variance test was not satisfied, non-parametric testing was performed by the Mann-Whitney rank sum test between two groups and by Kruskal-Wallis one-way ANOVA on ranks among three or more groups. Correlations were determined by Pearson’s product-moment correlation for normally distributed interval data.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S13">
+      <title>Results</title>
+      <sec id="S14">
+        <title>NZM.JHD mice develop neither clinical nor pathological SLE</title>
+        <p id="P25">B cell-deficient MRL-<italic>lpr</italic> mice are completely protected from development of clinical or pathological SLE (<xref ref-type="bibr" rid="R24">24</xref>). Nevertheless, the defect in MRL-<italic>lpr</italic> mice in CD95 (Fas)-mediated signaling and the attendant massive lymphadenopathy and expansion of B220<sup>+</sup>CD3<sup>+</sup>CD4<sup>−</sup>CD8<sup>−</sup> T cells (features typical of neither other murine SLE models nor human SLE) <italic>a priori</italic> raises the possibility that the consequences of B cell deficiency in other SLE mice may differ from those in MRL-<italic>lpr</italic> mice.</p>
+        <p id="P26">To that end, we turned to NZM mice, which phenotypically resemble human SLE more closely than do MRL-<italic>lpr</italic> mice (<xref ref-type="bibr" rid="R40">40</xref>), and generated B cell-deficient NZM.JHD mice. In sharp contrast to B cell-sufficient NZM mice in which severe proteinuria begins to develop by 5-6 months of age and which experience &gt;90% mortality by 11-12 months of age (<xref ref-type="bibr" rid="R41">41</xref>, <xref ref-type="bibr" rid="R49">49</xref>, <xref ref-type="bibr" rid="R55">55</xref>), NZM.JHD mice (n &gt; 40) neither developed severe proteinuria nor died prematurely through 12 months of age. Moreover, no glomerular pathology developed in NZM.JHD mice, in sharp contrast to the diffuse proliferative GN that develops in WT NZM mice (<xref ref-type="bibr" rid="R41">41</xref>, <xref ref-type="bibr" rid="R49">49</xref>).</p>
+      </sec>
+      <sec id="S15">
+        <title>Inability of IFNα to promote pathological or clinical disease in NZM.JHD mice</title>
+        <p id="P27">Administration of a single dose of replication-incompetent Adv-IFN (1 × 10<sup>10</sup> vp), but not Adv-control, to pre-autoimmune (9-11 weeks of age) BWF1 mice promoted rapid and virulent GN, manifested as severe proteinuria as early as 3 weeks post-injection and 100% mortality by 2 months post-injection (<xref ref-type="bibr" rid="R23">23</xref>). Of note, a lower single dose of the same Adv-IFN (1-2 × 10<sup>9</sup> vp) led to the identical virulent clinical and pathological outcomes in pre-autoimmune NZM mice (<xref ref-type="bibr" rid="R22">22</xref>).</p>
+        <p id="P28">Development of disease consequent to overexpression of IFNα in these mice could have been either B cell-dependent or B cell-independent. That is, IFNα might drive a pathogenic pathway that directly or indirectly requires B cells, in which case overexpression of IFNα in a B cell-deficient host would have no pathogenic ramifications. Alternatively, IFNα might up-regulate a pathogenic pathway that does not involve B cells, in which case overexpression of IFNα in B cell-deficient hosts that are otherwise SLE-prone should elicit clinical disease and end-organ (kidney) pathology. To test these possibilities, we compared the effects of Adv-IFN in B cell-sufficient NZM and B cell-deficient NZM.JHD mice.</p>
+        <p id="P29">In accord with our previous experience (<xref ref-type="bibr" rid="R22">22</xref>), pre-autoimmune NZM mice injected with Adv-IFN rapidly developed clinical disease. Severe proteinuria developed in 50% of the mice by 6 weeks post-injection, and all the mice developed severe proteinuria by 10 weeks post-injection (<xref ref-type="fig" rid="F1">Figure 1A</xref>). Mortality ensued shortly after development of severe proteinuria, with 50% of the mice dead by 7 weeks post-injection and 100% of the mice dead by 12 weeks post-injection (~5 months of age; <xref ref-type="fig" rid="F1">Figure 1B</xref>). To put this into perspective, 50% mortality among unmanipulated NZM mice is not reached until ~8 months of age, and 95% mortality is not realized until 11-12 months of age (<xref ref-type="bibr" rid="R41">41</xref>). In contrast to the potent pathogenic effects following Adv-IFN administration, Adv-control-treated pre-autoimmune NZM mice failed to develop any clinical disease (<xref ref-type="fig" rid="F1">Figure 1A-B</xref>). Importantly, clinical sequelae also did not develop in Adv-IFN-treated (or Adv-control-treated) NZM.JHD mice.</p>
+        <p id="P30">Kidney histology paralleled the clinical findings. Adv-control-treated NZM mice showed some mesangial hypercellularity and glomerular focal and segmental hyaline thrombi (<xref ref-type="fig" rid="F2">Figure 2A</xref>), consistent with the early pathologic changes in the kidneys of these mice as the onset of clinical disease approaches. In contrast, Adv-IFN-treated mice developed florid diffuse proliferative GN, including crescents, wire loops, and interstitial inflammatory cells (<xref ref-type="fig" rid="F2">Figure 2B-C</xref>). In agreement with the absence of clinical disease, no glomerular or interstitial pathology was detected in NZM.JHD mice treated with Adv-IFN (or Adv-control; <xref ref-type="fig" rid="F2">Figure 2D-E</xref>), and, consistent with the absence of B cells, no renal IgG deposition in these mice was appreciated (data not shown).</p>
+      </sec>
+      <sec id="S16">
+        <title>Inability of IFNα to promote meaningful immunopathological or clinical disease in NZM.<italic>baff</italic><sup>−/−</sup> mice</title>
+        <p id="P31">The most likely explanation for the inability of IFNα to drive disease in NZM.JHD mice is that the absence of B cells extinguished any underlying pathogenic autoimmune process. To address this possibility, we turned to NZM.<italic>baff</italic><sup>−/−</sup> mice which harbor B cells that, despite their low absolute numbers, do differentiate into autoantibody-producing cells and lead to serological autoimmunity and renal immunopathology over time (<xref ref-type="bibr" rid="R41">41</xref>).</p>
+        <p id="P32">This extant autoimmune process notwithstanding, NZM.<italic>baff</italic><sup>−/−</sup> mice failed to develop overt clinical disease even by 16 weeks following injection with Adv-IFN (<xref ref-type="fig" rid="F1">Figure 1A-B</xref>). This does not appear to be due differential <italic>in vivo</italic> production of IFNα by the injected Adv-IFN, since serum IFNα levels in Adv-IFN-treated NZM.<italic>baff</italic><sup>−/−</sup> mice were identical to those in Adv-IFN-treated NZM mice (<xref ref-type="fig" rid="F1">Figure 1C</xref>). As expected, serum IFNα levels were below the limit of detection in all tested Adv-control-injected mice.</p>
+        <p id="P33">In agreement with the absence of clinical disease, neither Adv-control-treated nor Adv-IFN-treated NZM.<italic>baff</italic><sup>−/−</sup> mice developed renal pathology (<xref ref-type="fig" rid="F2">Figure 2F-G</xref>). Whereas Adv-IFN-treated NZM mice uniformly developed greater glomerular IgG than did control NZM mice, only very limited glomerular IgG deposition was detected in either Adv-control- or Adv-IFN-treated NZM.<italic>baff</italic><sup>−/−</sup> mice (<xref ref-type="fig" rid="F3">Figure 3A-D</xref>). This dichotomy between NZM mice and NZM.<italic>baff</italic><sup>−/−</sup> mice uniformly held true for deposition of each of the individual IgG subclasses and C3 (<xref ref-type="fig" rid="F3">Figure 3G-J, M-P, S-V, Y-BB, EE-HH</xref>). Of note, infiltration of (CD3<sup>+</sup>) T cells and (CD20<sup>+</sup>) B cells into the renal parenchyma was uniformly substantial in both Adv-control-treated and Adv-IFN-treated NZM mice and was qualitatively similar in each (<xref ref-type="fig" rid="F3">Figure 3KK-NN</xref>) despite the glaring difference in development of GN (<xref ref-type="fig" rid="F2">Figure 2A-C, F-G</xref>). In contrast, infiltration of (CD138<sup>+</sup>) plasma cells in Adv-IFN-treated or Adv-control-treated NZM mice was negligible at most (<xref ref-type="fig" rid="F3">Figure 3WW-ZZ</xref>). In addition, essentially no T cell, B cell, or plasma cell infiltrates were detected in the kidneys of any of the NZM.<italic>baff</italic><sup>−/−</sup> mice (<xref ref-type="fig" rid="F3">Figure 3MM-NN, SS-TT, YY-ZZ</xref>).</p>
+        <p id="P34">It remained possible that resistance of NZM.<italic>baff</italic><sup>−/−</sup> mice to Adv-IFN was due to the absence of overt kidney pathology in these young (2-3 months of age) mice at the time of Adv-IFN injection. That is, IFNα may have required not only an underlying autoimmune process to exaggerate disease but some established end-organ (kidney) pathology as well.</p>
+        <p id="P35">We, therefore, turned to 9-month-old NZM.<italic>baff</italic><sup>−/−</sup> mice in which both serological autoimmunity and kidney immunopathology had already developed (<xref ref-type="bibr" rid="R41">41</xref>). Kidney pathology, highlighted by prominent hyaline thrombi, was appreciated in both Adv-control- and Adv-IFN-treated mice, with glomerular hypercellularity being somewhat more prominent in the latter (<xref ref-type="fig" rid="F2">Figure 2H-I</xref>). Glomerular deposition of total IgG, the individual IgG subclasses, and C3 was very modestly greater in the Adv-IFN-treated mice than in the corresponding Adv-control-treated mice (<xref ref-type="fig" rid="F3">Figure 3E-F, K-L, Q-R, W-X, CC-DD, II-JJ</xref>), but renal infiltration of T cells, B cells, or plasma cells was very limited at most (<xref ref-type="fig" rid="F3">Figure 3 OO-PP, UU-VV, AAA-BBB</xref>). In agreement with the paucity of renal immunopathology, Adv-IFN treatment failed to promote any clinical disease even after 17 weeks in any of the 9 older NZM.<italic>baff</italic><sup>−/−</sup> mice tested.</p>
+      </sec>
+      <sec id="S17">
+        <title>T cell, B cell, and IgG responses to Adv-IFN in NZM and NZM.<italic>baff</italic><sup>−/−</sup> mice</title>
+        <p id="P36">Importantly, the absence of clinical findings in Ad-IFN-treated NZM.<italic>baff</italic><sup>−/−</sup> mice cannot be attributed to an inability to respond to IFNα. Young NZM mice or NZM.<italic>baff</italic><sup>−/−</sup> mice were injected with Adv-IFN, and their spleens were harvested 3-4 weeks later (when some Adv-IFN-injected NZM mice started becoming clinically sick). Control mice were either injected with Adv-control or not injected with any Adv. Since no differences were appreciated between Adv-control-treated mice and untreated mice in each mouse cohort, the results were pooled. Marked splenomegaly was visually obvious in both NZM and NZM.<italic>baff</italic><sup>−/−</sup> mice that had been injected with Adv-IFN in comparison to corresponding control mice. In fact, expansions of spleen total mononuclear cells, CD3<sup>+</sup> cells, total CD4<sup>+</sup> cells, CD4<sup>+</sup> naive (CD44<sup>lo</sup>CD62L<sup>hi</sup>) cells, CD4<sup>+</sup> memory (CD44<sup>hi</sup>CD62L<sup>lo</sup>) cells, and CD8<sup>+</sup> cells in Adv-IFN-injected NZM.<italic>baff</italic><sup>−/−</sup> mice were no less than the corresponding expansions in Adv-IFN-injected NZM mice (<xref ref-type="fig" rid="F4">Figure 4A-F</xref>), with the expansion of CD8<sup>+</sup> cells in Adv-IFN-injected NZM.<italic>baff</italic><sup>−/−</sup> mice being greater than that in the corresponding NZM mice (p = 0.008). Expansion of spleen total mononuclear cells and individual T cell subjects was not as robust in Adv-IFN-injected old NZM.<italic>baff</italic><sup>−/−</sup> mice as in young NZM.<italic>baff</italic><sup>−/−</sup> mice (p ≤ 0.004 for each comparison), although expansion of CD4<sup>+</sup> memory cells was substantially greater in the former than in the latter (p = 0.011).</p>
+        <p id="P37">To assess whether the variability in expansion of these T cell subsets was related to differential IFNα expression, we identified 4 Adv-IFN-treated NZM mice and 4 Adv-IFN-treated NZM.<italic>baff</italic><sup>−/−</sup> mice that had been bled on day 8 post-injection and subsequently analyzed for both lymphocyte phenotype and serum IFNα levels. Among the former mice, numbers of CD3<sup>+</sup>, CD4<sup>+</sup>, CD8<sup>+</sup>, and CD4<sup>+</sup> naive cells (but not CD4<sup>+</sup> memory cells) correlated with serum IFNα levels (p ≤ 0.028). In contrast, no such correlations were observed among the latter mice.</p>
+        <p id="P38">In contrast to the considerable IFNα-driven T cell expansion, serum levels of total IgG and IgG autoantibodies even at day 28 post-injection were similar in Adv-IFN-treated 3-month-old NZM mice or 3-month-old NZM.<italic>baff</italic><sup>−/−</sup> mice as in the corresponding Adv-control-treated mice. Only in 9-month-old NZM.<italic>baff</italic><sup>−/−</sup> mice was there a trend for greater serum levels of IgG anti-dsDNA antibodies (<xref ref-type="fig" rid="F5">Figure 5A-C</xref>), and this trend involved each of the measured IgG subclasses (IgG1, IgG2a, IgG2b; <xref ref-type="fig" rid="F5">Figure 5D-F</xref>).</p>
+        <p id="P39">Although the total IgG and IgG autoantibody responses in NZM mice were not affected by treatment with Adv-IFN, the number of spleen B cell did modestly increase (p = 0.021, <xref ref-type="fig" rid="F5">Figure 5G</xref>). In contrast, no such increase was appreciated in either young or old NZM.<italic>baff</italic><sup>−/−</sup> mice. Moreover, the numbers of activated (CD69<sup>+</sup>) B cells significantly expanded in Adv-IFN-treated NZM mice (p = 0.005) but not in Adv-IFN-treated NZM.<italic>baff</italic><sup>−/−</sup> mice (<xref ref-type="fig" rid="F5">Figure 5H</xref>). This expansion in CD69<sup>+</sup> B cells was accompanied by a similar expansion in CD86<sup>+</sup> B cells (p = 0.031) but not in CD80<sup>+</sup>B cells. In addition, the dramatic reductions in follicular and marginal zone B cells that are characteristic of NZM.<italic>baff</italic><sup>−/−</sup> mice (<xref ref-type="bibr" rid="R41">41</xref>) were not affected by Adv-IFN treatment (data not shown). No correlations between serum IFNα levels and any B cell populations were observed among either Adv-IFN-treated NZM or Adv-IFN-treated NZM.<italic>baff</italic><sup>−/−</sup> mice.</p>
+      </sec>
+      <sec id="S18">
+        <title>Failure of IFNα to preferentially expand the activated memory CD4<sup>+</sup> cell population</title>
+        <p id="P40">BWF1 mice undergo an ordered progression from serological autoimmunity to renal immunopathology to clinical disease as they age, with the entire process taking as long as 11 months. This ordered progression is condensed into a much shorter time frame in young pre-autoimmune BWF1 mice injected with Adv-IFN (<xref ref-type="bibr" rid="R23">23</xref>), raising the hope that the exaggerated disease in Adv-IFN-treated mice could serve as a rapid, yet faithful, model of the “natural” disease.</p>
+        <p id="P41">This does not appear to be the case. NZM mice undergo a virtually identical ordered progression from serological autoimmunity to renal immunopathology to clinical disease as they age. A biomarker that parallels this progression is the ratio of spleen CD4<sup>+</sup> memory cells to spleen CD4<sup>+</sup> naive cells (M/N ratio). This ratio is low in clinically healthy mice but markedly rises with development of clinical disease (proteinuria). For example, in 5-month-old healthy WT NZM mice (n = 4), the mean M/N ratio was 0.22, whereas in 9-month-old proteinuric WT mice (n = 6), the mean M/N ratio was 1.99 (<xref ref-type="fig" rid="F4">Figure 4G</xref>, p = 0.003). In NZM.<italic>ifnar</italic><sup>−/−</sup> mice, in which disease onset is delayed and severity is relatively mild (<xref ref-type="bibr" rid="R22">22</xref>), the change in M/N ratio over time was less striking, albeit still significant (p = 0.020), with the mean M/N ratio rising from 0.39 in 6-month-old NZM.<italic>ifnar</italic><sup>−/−</sup> mice (n = 3) to 0.95 in 12-month-old mice (n = 3). In NZM.<italic>tnfr1</italic><sup>−/−</sup>.<italic>tnfr2</italic><sup>−/−</sup> mice, in which disease is accelerated (<xref ref-type="bibr" rid="R49">49</xref>), the mean M/N in proteinuric 5-month-old mice (n = 4) was already very high (2.81).</p>
+        <p id="P42">In contrast to the association between M/N ratios and clinical disease in NZM, NZM.<italic>ifnar</italic><sup>−/−</sup>, and NZM.<italic>tnfr1</italic><sup>−/−</sup>.<italic>tnfr2</italic><sup>−/−</sup> mice, no such associations were noted in Adv-IFN-treated mice. Even in Adv-IFN-treated NZM mice which either had or were soon to develop lethal GN, M/N ratios remained very low and were no different than those in control WT mice.</p>
+      </sec>
+      <sec id="S19">
+        <title>Lack of correlation between glomerular macrophages and clinical disease among Adv-IFN-treated mice</title>
+        <p id="P43">As NZM mice age and develop their “natural” spontaneous disease, increasing numbers of macrophages progressively infiltrate the glomeruli. Few, if any, such cells are detectable “pre-autoimmune” mice (3 months of age); some cells are present in “autoimmune but clinically healthy” mice (6 months of age); and many cells are present in “clinically sick” mice (9 months of age) (Guo S et al, manuscript in preparation). Our observations in NZM are consistent with those in BWF1 mice, in which an association between activated renal macrophages and clinical disease has been reported (<xref ref-type="bibr" rid="R56">56</xref>).</p>
+        <p id="P44">Remarkably, no association between glomerular infiltration of macrophages and clinical disease was appreciated in Adv-IFN-treated mice. NZM mice, treated with Adv-IFN at 2.5 months of age and sacrificed 2 months later (when becoming clinically sick), harbored only few macrophages in their glomeruli which were no greater in number than those harbored by clinically healthy Adv-control-treated NZM mice (<xref ref-type="fig" rid="F6">Figure 6A-B</xref>). Although no glomerular infiltration of macrophages was appreciated in either Adv-control- or Adv-IFN-treated young (age-matched with the WT mice) NZM.<italic>baff</italic><sup>−/−</sup> mice (<xref ref-type="fig" rid="F6">Figure 6C-D</xref>), occasional macrophages were detected in the glomeruli of old NZM.<italic>baff</italic><sup>−/−</sup> mice treated with Adv-control (<xref ref-type="fig" rid="F6">Figure 6E</xref>). Surprisingly, numbers of such macrophages increased considerably in Adv-IFN-treated old NZM.<italic>baff</italic><sup>−/−</sup> mice despite the absence of clinical disease.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="S20">
+      <title>Discussion</title>
+      <p id="P45">IFNα has, to date, garnered considerable interest as a contributing factor to SLE pathogenesis. Genetic depletion of the type I IFNR (which blocks IFNα signaling) attenuates disease in several murine SLE models (<xref ref-type="bibr" rid="R20">20</xref>-<xref ref-type="bibr" rid="R22">22</xref>), and administration of IFNα to pre-autoimmune BWF1 mice promotes the rapid onset of a highly aggressive clinical disease (<xref ref-type="bibr" rid="R23">23</xref>). In humans, an IFNα signature is commonly expressed by SLE patients (<xref ref-type="bibr" rid="R15">15</xref>-<xref ref-type="bibr" rid="R17">17</xref>), and systemic administration of IFNα has induced SLE-like disease (<xref ref-type="bibr" rid="R18">18</xref>). These results have prompted many investigators to consider IFNα a viable candidate therapeutic target, and a phase-I clinical trial in SLE with one anti-IFNα mAb has already been completed (<xref ref-type="bibr" rid="R48">48</xref>).</p>
+      <p id="P46">These observations notwithstanding, IFNα does not immutably contribute to SLE pathogenesis. In MRL-<italic>lpr</italic> mice, genetic depletion of the type I IFNR not only does not ameliorate disease but actually aggravates it (<xref ref-type="bibr" rid="R57">57</xref>). By implication, IFNα may not necessarily be vital to or even contribute to development of SLE in other hosts. Thus, a more complete understanding of the permissive factors that work in concert with IFNα to promote disease is needed.</p>
+      <p id="P47">In this light, our results unequivocally demonstrate that although administration of Adv-IFN can rapidly promote florid clinical and pathological disease in pre-autoimmune NZM mice, identical treatment fails to drive SLE disease in congenic B cell-deficient NZM.JHD mice. Of note, IFNα-sufficient, B cell-deficient NZM and MRL mice are each completely resistant to the spontaneous SLE disease that their respective IFNα-sufficient, B cell-sufficient WT counterparts develop (<xref ref-type="bibr" rid="R24">24</xref>), indicating that life-long production of endogenous IFNα even in a SLE-prone environment is incapable of overcoming resistance to disease imposed through the absence of B cells. It should be stressed that these observations do not prove that B cells are the actual pathogenic effectors. B cells may simply be part of a cascade of events that culminate with the generation and/or activation of some pathogenic non-B cell population.</p>
+      <p id="P48">Not only does Adv-IFN treatment not promote disease in NZM.JHD mice, but Adv-IFN treatment also fails to drive SLE disease in either young NZM.<italic>baff</italic><sup>−/−</sup> mice (in which overt renal immunopathology has not yet developed) or in old NZM.<italic>baff</italic><sup>−/−</sup> mice (in which overt renal immunopathology has already developed). This does not represent a failure of IFNα to effect its biological activity in BAFF-deficient hosts, inasmuch as expansion of all tested T cell subsets in Adv-IFN-treated young NZM.<italic>baff</italic><sup>−/−</sup> mice is identical to that in age-matched Adv-IFN-treated NZM mice.</p>
+      <p id="P49">Although T cell expansion was noted in all Adv-IFN-treated mice (both WT and BAFF-deficient), the degree of expansion was variable. One possible contributing factor could have been variability in IFNα expression following Adv-IFN injection. We measured serum IFNα levels to document successful administration of Adv-IFN, and levels in NZM.<italic>baff</italic><sup>−/−</sup> mice were identical to those in WT NZM mice. Of note, among the small number of Adv-IFN-treated NZM WT mice in whom both day-8 serum IFNα levels and lymphocyte profiles were determined, serum IFNα levels correlated significantly with CD3<sup>+</sup>, CD4<sup>+</sup>, CD8<sup>+</sup>, and CD4<sup>+</sup> naive cells, whereas no correlations were detected in Adv-IFN-treated NZM.<italic>baff</italic><sup>−/−</sup> mice.</p>
+      <p id="P50">With regard to these results, there are several important caveats to consider. First, we did not perform comprehensive pharmacokinetic studies. Since the total integrated exposure to IFNα in an individual host is biologically more meaningful than is the serum level at a single point in time, T cell expansion may have better correlated with (unmeasured) total integrated exposure to IFNα over time. Second, the number of mice studied was small (n = 4 in each group), so the presence or absence of significant correlations may have reflected “chance” occurrences. Third, since our results are the composite of several individual experiments performed over many months, variability in T cell expansion may have reflected subtle (unmeasured) differences in the local environment, such as changes in the microbiologic profiles over time within the animal room. Fourth, differences in clinical status may have affected T cell expansion among the WT mice. We have long appreciated that spleen cell numbers in NZM mice decline as the course of their spontaneous “natural” SLE reaches the point of overt clinical disease (development of ascites, unkempt fur, lethargy). Indeed, T cell numbers in Adv-IFN-treated NZM mice that were clinically very sick at the time of analysis tended to be lower than in those Adv-IFN-treated NZM mice that had not yet become as sick.</p>
+      <p id="P51">The paucity of IgG (including IgG anti-chromatin and anti-dsDNA) responses by day 28 post-injection in Adv-IFN-treated NZM mice was unexpected, in light of the greater glomerular deposition of IgG and C3 in Adv-IFN-treated NZM mice than in control NZM mice and the increases in serum total IgG levels in BWF1 mice treated with the same Adv-IFN by day 10 post-injection and the increases in serum IgG anti-dsDNA levels by day 21 post-injection (<xref ref-type="bibr" rid="R23">23</xref>). Importantly, the dose of Adv-IFN given to these BWF1 mice (1 × 10<sup>10</sup> vp) was 7- to 10-fold greater than the dose given to our NZM mice (1-1.5 × 10<sup>9</sup> vp), so the limited IgG responses in young NZM mice may have reflected a dose of Adv-IFN insufficiently high to promote robust IgG responses. Indeed, Adv-IFN at a dose of 3 × 10<sup>9</sup> vp (a dose closer to the one we used) did not promote either anti-nuclear or anti-dsDNA antibodies in B6.Sle1.Sle2.Sle3 SLE mice despite promoting immune-complex GN (<xref ref-type="bibr" rid="R58">58</xref>). These findings do not exclude a pathogenic contribution from autoantibodies at later time points, but they do collectively point to an important autoantibody-independent component for IFNα-exaggerated disease, although it remains possible that nephritogenic autoantibodies with specificities other than chromatin or dsDNA were promoted by IFNα overexpression within the first 28 days post-injection and contributed to development of disease. This apparent uncoupling of circulating autoantibody levels from clinical disease is reminiscent of NZM.<italic>stat4</italic><sup>−/−</sup> and NZM.<italic>stat6</italic><sup>−/−</sup> mice in which the effects on circulating autoantibody levels were anti-parallel to those on clinical disease (<xref ref-type="bibr" rid="R55">55</xref>).</p>
+      <p id="P52">Another point to consider is the striking degree of T cell and B cell infiltration into the kidneys of Adv-control-treated (clinically healthy) NZM mice. In mice treated in parallel with Adv-IFN, renal infiltration of T cells and B cells was qualitatively similar, but the latter mice developed a virulent clinical disease whereas the former mice remained healthy. It may be that IFNα somehow affects the nature or function of these infiltrating cells and, thereby, promotes “conversion” from a clinically quiescent state to a very active one. The absence of such renal T cell and/or B cell infiltrates may help explain the protection of NZM.<italic>baff</italic><sup>−/−</sup> mice from the pathogenic effects of Adv-IFN treatment.</p>
+      <p id="P53">Since IFNα is a potent inducer of BAFF (<xref ref-type="bibr" rid="R47">47</xref>) and treatment of SLE patients with an anti-IFNα mAb reduces their endogenous expression of BAFF (<xref ref-type="bibr" rid="R48">48</xref>), our findings support a pathogenic pathway from IFNα to clinical disease with the vital involvement of BAFF along the way. Given that Adv-IFN administration drives similar robust T cell expansion in WT and BAFF-deficient NZM mice, the dichotomous clinical and pathological responses in these mice suggest that the role for IFNα in IFNα-exaggerated disease might hinge more on effects on B cells and/or the innate immune system than on T cells.</p>
+      <p id="P54">Regarding B cells, both IFNα and BAFF up-regulate the expression and sensitivity of TLR7 and TLR9 (<xref ref-type="bibr" rid="R59">59</xref>-<xref ref-type="bibr" rid="R63">63</xref>). Such signaling can promote B cell activation, proliferation, and differentiation (<xref ref-type="bibr" rid="R64">64</xref>), and signaling through the downstream MyD88 pathway may be especially relevant to SLE (<xref ref-type="bibr" rid="R36">36</xref>, <xref ref-type="bibr" rid="R65">65</xref>). Moreover, TLR-mediated signaling promotes production of IL-6 (<xref ref-type="bibr" rid="R60">60</xref>, <xref ref-type="bibr" rid="R63">63</xref>, <xref ref-type="bibr" rid="R66">66</xref>), the administration of which to BWF1 mice being capable of accelerating disease and the neutralization of which being capable of ameliorating disease (<xref ref-type="bibr" rid="R67">67</xref>-<xref ref-type="bibr" rid="R69">69</xref>). Indeed, Adv-IFN treatment, promoted a modest increase in total B cells and a substantial increase in activated (CD69<sup>+</sup> or CD86<sup>+</sup>) B cells in NZM, but not NZM.<italic>baff</italic><sup>−/−</sup>, mice. One possible explanation is that IFNα-driven activation of B cells in a BAFF-sufficient environment differs from that in a BAFF-deficient environment That is, engagement of both IFNα and BAFF on the target B cell is required for “complete” activation, and the failure of activated B cells to increase in number in Adv-IFN-treated NZM.<italic>baff</italic><sup>−/−</sup> mice truly reflects an “incomplete” activation of B cells. An alternative explanation is that the marked reduction in B cells in a BAFF-deficient environment precludes detection of IFNα-driven activation. That is, B cell activation in Adv-IFN-treated NZM.<italic>baff</italic><sup>−/−</sup>, mice is “complete”, but we cannot detect it due to issues external to the activation process, such as homing to extra-splenic sites. To aid in distinguishing between these two possibilities, we are currently generating BAFF-deficient NZM mice that selectively overexpress Bcl-2 in their B cells and, therefore, harbor (near)-normal numbers of B cells.</p>
+      <p id="P55">Regarding cells of the innate immune system, IFNα promotes monocyte and immature DC activation and proliferation (<xref ref-type="bibr" rid="R70">70</xref>, <xref ref-type="bibr" rid="R71">71</xref>). Of note, IFNα promotes increased expression of BAFF in myeloid DCs (mDCs), which also express BAFF receptors (<xref ref-type="bibr" rid="R47">47</xref>, <xref ref-type="bibr" rid="R72">72</xref>). When stimulated with BAFF, mDCs up-regulate costimulatory molecules and produce chemokines and pro-inflammatory cytokines (<xref ref-type="bibr" rid="R73">73</xref>). Conversely, systemic BAFF antagonism reduces DC numbers (<xref ref-type="bibr" rid="R39">39</xref>), and when BAFF is silenced in mDCs following treatment with specific siRNA, the mDCs remain immature and fail to produce IL-6 (<xref ref-type="bibr" rid="R74">74</xref>). NZM.<italic>ifnar</italic><sup>−/−</sup> mice, which cannot generate any IFNα-mediated signaling, harbor reduced numbers of DC subsets that exhibit only limited responses to TLR9 stimulation (<xref ref-type="bibr" rid="R22">22</xref>).</p>
+      <p id="P56">It is of interest that both NZM.<italic>baff</italic><sup>−/−</sup> mice and NZM.<italic>ifnar</italic><sup>−/−</sup> mice are largely (albeit incompletely) protected to similar degrees from spontaneous SLE clinical disease (<xref ref-type="bibr" rid="R22">22</xref>, <xref ref-type="bibr" rid="R41">41</xref>). It remains to be established whether BAFF-triggered signaling is a vital downstream component of the IFNα-driven pathogenic pathway (that is, reduction in BAFF-triggered signaling plays an important direct role in mediating resistance to disease in NZM.<italic>ifnar</italic><sup>−/−</sup> mice) or whether BAFF and IFNα trigger vital pathogenic pathways that work in parallel but are largely independent of each other (<xref ref-type="fig" rid="F7">Figure 7</xref>). Development of SLE disease in NZM.<italic>ifnar</italic><sup>−/−</sup> mice following enforced overexpression of BAFF (e.g., by introduction of a BAFF Tg) would point to the first alternative, whereas continued protection from disease would point to the second. Additional investigation into the cellular and molecular underpinnings of the intertwined roles played by BAFF and IFNα is needed.</p>
+      <p id="P57">If IFNα and BAFF each trigger a pathogenic pathway that is largely independent of the other, then therapeutic targeting of IFNα in human SLE is highly rational. However, if BAFF is an indispensable downstream component of the pathogenic pathway triggered by IFNα, then one may question the choice of IFNα as an optimal therapeutic target rather than directly targeting BAFF. Post-hoc analysis of a phase-II trial with belimumab, an anti-BAFF mAb, in SLE demonstrated clinical benefit in the subset of patients who were “seropositive” (serum ANA titer ≥1:80 or elevated serum anti-dsDNA level) at the time of enrollment into the study (<xref ref-type="bibr" rid="R42">42</xref>, <xref ref-type="bibr" rid="R43">43</xref>). Two recent phase-III trials have substantiated such efficacy (<xref ref-type="bibr" rid="R44">44</xref>-<xref ref-type="bibr" rid="R46">46</xref>). From a clinical standpoint, additional investigation is sorely needed to identify those SLE patients who could benefit more from antagonism of BAFF (or B cells) versus those who could benefit more from antagonism of IFNα.</p>
+      <p id="P58">In addition to the therapeutic implications our results may have for human SLE, our findings have important implications for experimental murine SLE models. The differences in M/N ratios between NZM mice which had developed their natural disease and those mice which had developed IFNα-exaggerated disease were striking. Moreover, the association between glomerular infiltration of macrophages and clinical disease in the natural NZM disease is in stark contrast to the uncoupling of the two in Adv-IFN-treated NZM and NZM.<italic>baff</italic><sup>−/−</sup> mice. These disparities clearly demonstrate that SLE disease driven by artificial overexpression of IFNα in a given host may not faithfully reflect all the characteristics of the SLE disease that would otherwise spontaneously develop in that same host. That is, the disease that is promoted by IFNα overexpression in a given host may be subtly, but fundamentally, different from the natural spontaneous disease in that host. In the case of NZM mice, it appears that spontaneous disease is much more T cell-driven than is IFNα-exaggerated disease.</p>
+      <p id="P59">Differences between the natural disease and IFNα-exaggerated disease are not limited to NZM mice but have also been documented in the anti-phospholipid syndrome-related (NZWxBXSB)F1 mouse model (<xref ref-type="bibr" rid="R75">75</xref>). Importantly, differences between the IFNα-exaggerated diseases and the natural spontaneous diseases in these hosts in no way negate the likely value of the IFNα-driven models and the insights that can be gleaned from them. Nevertheless, investigators should exercise considerable circumspection prior to extrapolating findings from IFNα-exaggerated models to infer mechanistic pathways in the unmanipulated native hosts.</p>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn fn-type="equal" id="FN1">
+        <label>*</label>
+        <p id="P60">COJ and WS contributed equally.</p>
+      </fn>
+      <fn fn-type="supported-by" id="FN2">
+        <label>1</label>
+        <p id="P61">This work was supported in part by NIH grants R01 AR050193 (WS), R01 AI057473 (COJ), and R01 AR048692 (CP), a grant from the Arthritis Foundation Southern California Chapter (WS), and an American College of Rheumatology Research and Education Foundation Abbott Medical Student Clinical Preceptorship Award (NJ).</p>
+      </fn>
+      <fn id="FN3">
+        <label>3</label>
+        <p id="P62">Abbreviations
+<def-list><def-item><term>Adv</term><def><p id="P63">adenovirus</p></def></def-item><def-item><term>BAFF</term><def><p id="P64">B cell activating factor belonging to the TNF family</p></def></def-item><def-item><term>BWF1 mice</term><def><p id="P65">(NZBxNZW)F1 mice</p></def></def-item><def-item><term>DC</term><def><p id="P66">dendritic cells</p></def></def-item><def-item><term>GN</term><def><p id="P67">glomerulonephritis</p></def></def-item><def-item><term>IFNR</term><def><p id="P68">IFN receptor</p></def></def-item><def-item><term>M/N ratio</term><def><p id="P69">memory cell to naive cell ratio</p></def></def-item><def-item><term>mDC</term><def><p id="P70">myeloid DC</p></def></def-item><def-item><term>SLE</term><def><p id="P71">systemic lupus erythematosus</p></def></def-item><def-item><term>Tg</term><def><p id="P72">transgenic</p></def></def-item><def-item><term>TNFR</term><def><p id="P73">TNF receptor</p></def></def-item><def-item><term>vp</term><def><p id="P74">viral particles</p></def></def-item><def-item><term>WT</term><def><p id="P75">wild-type</p></def></def-item></def-list></p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="R1">
+        <label>1</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Strasser</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Whittingham</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Vaux</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Bath</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Adams</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Cory</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Harris</surname>
+              <given-names>AW</given-names>
+            </name>
+          </person-group>
+          <article-title>Enforced <italic>BCL2</italic> expression in B-lymphoid cells prolongs antibody responses and elicits autoimmune disease</article-title>
+          <source>Proc. Natl. Acad. Sci. USA</source>
+          <year>1991</year>
+          <volume>88</volume>
+          <fpage>8661</fpage>
+          <lpage>8665</lpage>
+          <pub-id pub-id-type="pmid">1924327</pub-id>
+        </citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Botto</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Dell’Agnola</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Bygrave</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Thompson</surname>
+              <given-names>EM</given-names>
+            </name>
+            <name>
+              <surname>Cook</surname>
+              <given-names>HT</given-names>
+            </name>
+            <name>
+              <surname>Petry</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Loos</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Pandolfi</surname>
+              <given-names>PP</given-names>
+            </name>
+            <name>
+              <surname>Walport</surname>
+              <given-names>MJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Homozygous C1q deficiency causes glomerulonephritis associated with multiple apoptotic bodies</article-title>
+          <source>Nat. Genet</source>
+          <year>1998</year>
+          <volume>19</volume>
+          <fpage>56</fpage>
+          <lpage>59</lpage>
+          <pub-id pub-id-type="pmid">9590289</pub-id>
+        </citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nishimura</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Nose</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hiai</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Minato</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Honjo</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Development of lupus-like autoimmune diseases by disruption of the <italic>PD-1</italic> gene encoding an ITIM motif-carrying immunoreceptor</article-title>
+          <source>Immunity</source>
+          <year>1999</year>
+          <volume>11</volume>
+          <fpage>141</fpage>
+          <lpage>151</lpage>
+          <pub-id pub-id-type="pmid">10485649</pub-id>
+        </citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Di Cristofano</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Kotsi</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Peng</surname>
+              <given-names>YF</given-names>
+            </name>
+            <name>
+              <surname>Cordon-Cardo</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Elkon</surname>
+              <given-names>KB</given-names>
+            </name>
+            <name>
+              <surname>Pandolfi</surname>
+              <given-names>PP</given-names>
+            </name>
+          </person-group>
+          <article-title>Impaired Fas response and autoimmunity in <italic>Pten</italic><italic><sup>+/−</sup></italic> mice</article-title>
+          <source>Science</source>
+          <year>1999</year>
+          <volume>285</volume>
+          <fpage>2122</fpage>
+          <lpage>2125</lpage>
+          <pub-id pub-id-type="pmid">10497129</pub-id>
+        </citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bolland</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ravetch</surname>
+              <given-names>JV</given-names>
+            </name>
+          </person-group>
+          <article-title>Spontaneous autoimmune disease in FcγRIIB-deficient mice results from strain-specific epistasis</article-title>
+          <source>Immunity</source>
+          <year>2000</year>
+          <volume>13</volume>
+          <fpage>277</fpage>
+          <lpage>285</lpage>
+          <pub-id pub-id-type="pmid">10981970</pub-id>
+        </citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Seshasayee</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Valdez</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Yan</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Dixit</surname>
+              <given-names>VM</given-names>
+            </name>
+            <name>
+              <surname>Tumas</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Grewal</surname>
+              <given-names>IS</given-names>
+            </name>
+          </person-group>
+          <article-title>Loss of TACI causes fatal lymphoproliferation and autoimmunity, establishing TACI as an inhibitory BLyS receptor</article-title>
+          <source>Immunity</source>
+          <year>2003</year>
+          <volume>18</volume>
+          <fpage>279</fpage>
+          <lpage>288</lpage>
+          <pub-id pub-id-type="pmid">12594954</pub-id>
+        </citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jacob</surname>
+              <given-names>CO</given-names>
+            </name>
+            <name>
+              <surname>Reiff</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Armstrong</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Myones</surname>
+              <given-names>BL</given-names>
+            </name>
+            <name>
+              <surname>Silverman</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Klein-Gitelman</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>McCurdy</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Wagner-Weiner</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Nocton</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Solomon</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Zidovetzki</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Identification of novel susceptibility genes in childhood-onset systemic lupus erythematosus using a uniquely designed candidate gene pathway platform</article-title>
+          <source>Arthritis Rheum</source>
+          <year>2007</year>
+          <volume>56</volume>
+          <fpage>4164</fpage>
+          <lpage>4173</lpage>
+          <pub-id pub-id-type="pmid">18050247</pub-id>
+        </citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Remmers</surname>
+              <given-names>EF</given-names>
+            </name>
+            <name>
+              <surname>Plenge</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>AT</given-names>
+            </name>
+            <name>
+              <surname>Graham</surname>
+              <given-names>RR</given-names>
+            </name>
+            <name>
+              <surname>Hom</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Behrens</surname>
+              <given-names>TW</given-names>
+            </name>
+            <name>
+              <surname>de Bakker</surname>
+              <given-names>PIW</given-names>
+            </name>
+            <name>
+              <surname>Le</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>H-S</given-names>
+            </name>
+            <name>
+              <surname>Batliwalla</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Masters</surname>
+              <given-names>SL</given-names>
+            </name>
+            <name>
+              <surname>Booty</surname>
+              <given-names>MG</given-names>
+            </name>
+            <name>
+              <surname>Carulli</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Padyukov</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Alfredsson</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Klareskog</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>WV</given-names>
+            </name>
+            <name>
+              <surname>Amos</surname>
+              <given-names>CI</given-names>
+            </name>
+            <name>
+              <surname>Criswell</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Seldin</surname>
+              <given-names>MF</given-names>
+            </name>
+            <name>
+              <surname>Kastner</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Gregersen</surname>
+              <given-names>PK</given-names>
+            </name>
+          </person-group>
+          <article-title><italic>STAT4</italic> and the risk of rheumatoid arthritis and systemic lupus erythematosus</article-title>
+          <source>N. Engl. J. Med</source>
+          <year>2007</year>
+          <volume>357</volume>
+          <fpage>977</fpage>
+          <lpage>986</lpage>
+          <pub-id pub-id-type="pmid">17804842</pub-id>
+        </citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <collab>The International Consortium for Systemic Lupus Erythematosus Genetics (SLEGEN)</collab>
+            <name>
+              <surname>Harley</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Alarcón-Riquelme</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>Criswell</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Jacob</surname>
+              <given-names>CO</given-names>
+            </name>
+            <name>
+              <surname>Kimberly</surname>
+              <given-names>RP</given-names>
+            </name>
+            <name>
+              <surname>Moser</surname>
+              <given-names>KL</given-names>
+            </name>
+            <name>
+              <surname>Tsao</surname>
+              <given-names>BP</given-names>
+            </name>
+            <name>
+              <surname>Vyse</surname>
+              <given-names>TJ</given-names>
+            </name>
+            <name>
+              <surname>Langefeld</surname>
+              <given-names>CD</given-names>
+            </name>
+          </person-group>
+          <article-title>Genome-wide association scan in women with systemic lupus erythematosus identifies susceptibility variants in <italic>ITGAM, PXK, KIAA1542</italic> and other loci</article-title>
+          <source>Nat. Genet</source>
+          <year>2008</year>
+          <volume>40</volume>
+          <fpage>204</fpage>
+          <lpage>210</lpage>
+          <pub-id pub-id-type="pmid">18204446</pub-id>
+        </citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Han</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kim-Howard</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Deshmukh</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kamatani</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Viswanathan</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Guthridge</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Thomas</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Kaufman</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Ojwang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Rojas-Villarraga</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Baca</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Orozco</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Rhodes</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Choi</surname>
+              <given-names>C-B</given-names>
+            </name>
+            <name>
+              <surname>Gregersen</surname>
+              <given-names>PK</given-names>
+            </name>
+            <name>
+              <surname>Merrill</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>James</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Gaffney</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>Moser</surname>
+              <given-names>KL</given-names>
+            </name>
+            <name>
+              <surname>Jacob</surname>
+              <given-names>CO</given-names>
+            </name>
+            <name>
+              <surname>Kimberly</surname>
+              <given-names>RP</given-names>
+            </name>
+            <name>
+              <surname>Harley</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Bae</surname>
+              <given-names>S-C</given-names>
+            </name>
+            <name>
+              <surname>Anaya</surname>
+              <given-names>J-M</given-names>
+            </name>
+            <name>
+              <surname>Alarcón-Riquelme</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>Matsuda</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Vyse</surname>
+              <given-names>TJ</given-names>
+            </name>
+            <name>
+              <surname>Nath</surname>
+              <given-names>SK</given-names>
+            </name>
+          </person-group>
+          <article-title>Evaluation of imputation-based association in and around the integrin-α-M (<italic>ITGAM</italic>) gene and replication of robust association between a non-synonymous functional variant within <italic>ITGAM</italic> and systemic lupus erythematosus (SLE)</article-title>
+          <source>Hum. Mol. Genet</source>
+          <year>2009</year>
+          <volume>18</volume>
+          <fpage>1171</fpage>
+          <lpage>1180</lpage>
+          <pub-id pub-id-type="pmid">19129174</pub-id>
+        </citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jacob</surname>
+              <given-names>CO</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Armstrong</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Yan</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Han</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>XJ</given-names>
+            </name>
+            <name>
+              <surname>Thomas</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Reiff</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Myones</surname>
+              <given-names>BL</given-names>
+            </name>
+            <name>
+              <surname>Ojwang</surname>
+              <given-names>JO</given-names>
+            </name>
+            <name>
+              <surname>Kaufman</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Klein-Gitelman</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>McCurdy</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Wagner-Weiner</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Silverman</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Ziegler</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kelly</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Merrill</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>Harley</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Ramsey-Goldman</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Vila</surname>
+              <given-names>LM</given-names>
+            </name>
+            <name>
+              <surname>Bae</surname>
+              <given-names>S-C</given-names>
+            </name>
+            <name>
+              <surname>Vyse</surname>
+              <given-names>TJ</given-names>
+            </name>
+            <name>
+              <surname>Gilkeson</surname>
+              <given-names>GS</given-names>
+            </name>
+            <name>
+              <surname>Gaffney</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>Moser</surname>
+              <given-names>KL</given-names>
+            </name>
+            <name>
+              <surname>Langefeld</surname>
+              <given-names>CD</given-names>
+            </name>
+            <name>
+              <surname>Zidovetzki</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Mohan</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Identification of <italic>IRAK1</italic> as a risk gene with critical role in the pathogenesis of systemic lupus erythematosus</article-title>
+          <source>Proc. Natl. Acad. Sci. USA</source>
+          <year>2009</year>
+          <volume>106</volume>
+          <fpage>6256</fpage>
+          <lpage>6261</lpage>
+          <pub-id pub-id-type="pmid">19329491</pub-id>
+        </citation>
+      </ref>
+      <ref id="R13">
+        <label>13</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Armstrong</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Reiff</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Myones</surname>
+              <given-names>BL</given-names>
+            </name>
+            <name>
+              <surname>Quismorio</surname>
+              <given-names>FP</given-names>
+              <suffix>Jr.</suffix>
+            </name>
+            <name>
+              <surname>Klein-Gitelman</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>McCurdy</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Wagner-Weiner</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Silverman</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Ojwang</surname>
+              <given-names>JO</given-names>
+            </name>
+            <name>
+              <surname>Kaufman</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Kelly</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Merrill</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>Harley</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Bae</surname>
+              <given-names>S-C</given-names>
+            </name>
+            <name>
+              <surname>Vyse</surname>
+              <given-names>TJ</given-names>
+            </name>
+            <name>
+              <surname>Gilkeson</surname>
+              <given-names>GS</given-names>
+            </name>
+            <name>
+              <surname>Gaffney</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>Moser</surname>
+              <given-names>KL</given-names>
+            </name>
+            <name>
+              <surname>Putterman</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Edberg</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>EE</given-names>
+            </name>
+            <name>
+              <surname>Ziegler</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Langefeld</surname>
+              <given-names>CD</given-names>
+            </name>
+            <name>
+              <surname>Zidovetzki</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Jacob</surname>
+              <given-names>CO</given-names>
+            </name>
+          </person-group>
+          <article-title>Identification of new SLE-associated genes with a two-step Bayesian study design</article-title>
+          <source>Genes Immun</source>
+          <year>2009</year>
+          <volume>10</volume>
+          <fpage>446</fpage>
+          <lpage>456</lpage>
+          <pub-id pub-id-type="pmid">19440200</pub-id>
+        </citation>
+      </ref>
+      <ref id="R14">
+        <label>14</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Webb</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Merrill</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>Kelly</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Sestak</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Kaufman</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Langefeld</surname>
+              <given-names>CD</given-names>
+            </name>
+            <name>
+              <surname>Ziegler</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kimberly</surname>
+              <given-names>RP</given-names>
+            </name>
+            <name>
+              <surname>Edberg</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Ramsey-Goldman</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Petri</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Reveille</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Alarcón</surname>
+              <given-names>GS</given-names>
+            </name>
+            <name>
+              <surname>Vilá</surname>
+              <given-names>LM</given-names>
+            </name>
+            <name>
+              <surname>Alarcón-Riquelme</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>James</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Gilkeson</surname>
+              <given-names>GS</given-names>
+            </name>
+            <name>
+              <surname>Jacob</surname>
+              <given-names>CO</given-names>
+            </name>
+            <name>
+              <surname>Moser</surname>
+              <given-names>KL</given-names>
+            </name>
+            <name>
+              <surname>Gaffney</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>Vyse</surname>
+              <given-names>TJ</given-names>
+            </name>
+            <name>
+              <surname>Nath</surname>
+              <given-names>SK</given-names>
+            </name>
+            <name>
+              <surname>Lipsky</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Harley</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Sawalha</surname>
+              <given-names>AH</given-names>
+            </name>
+          </person-group>
+          <article-title>A polymorphism within <italic>IL21R</italic> confers risk for systemic lupus erythematosus</article-title>
+          <source>Arthritis Rheum</source>
+          <year>2009</year>
+          <volume>60</volume>
+          <fpage>2402</fpage>
+          <lpage>2407</lpage>
+          <pub-id pub-id-type="pmid">19644854</pub-id>
+        </citation>
+      </ref>
+      <ref id="R15">
+        <label>15</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Baechler</surname>
+              <given-names>EC</given-names>
+            </name>
+            <name>
+              <surname>Batliwalla</surname>
+              <given-names>FM</given-names>
+            </name>
+            <name>
+              <surname>Karypis</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Gaffney</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>Ortmann</surname>
+              <given-names>WA</given-names>
+            </name>
+            <name>
+              <surname>Espe</surname>
+              <given-names>KJ</given-names>
+            </name>
+            <name>
+              <surname>Shark</surname>
+              <given-names>KB</given-names>
+            </name>
+            <name>
+              <surname>Grande</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>Hughes</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Kapur</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Gregersen</surname>
+              <given-names>PK</given-names>
+            </name>
+            <name>
+              <surname>Behrens</surname>
+              <given-names>TW</given-names>
+            </name>
+          </person-group>
+          <article-title>Interferon-inducible gene expression signature in peripheral blood cells of patients with severe lupus</article-title>
+          <source>Proc. Natl. Acad. Sci. USA</source>
+          <year>2003</year>
+          <volume>100</volume>
+          <fpage>2610</fpage>
+          <lpage>2615</lpage>
+          <pub-id pub-id-type="pmid">12604793</pub-id>
+        </citation>
+      </ref>
+      <ref id="R16">
+        <label>16</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bennett</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Palucka</surname>
+              <given-names>AK</given-names>
+            </name>
+            <name>
+              <surname>Arce</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Cantrell</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Borvak</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Banchereau</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Pascual</surname>
+              <given-names>V</given-names>
+            </name>
+          </person-group>
+          <article-title>Interferon and granulopoiesis signatures in systemic lupus erythematosus blood</article-title>
+          <source>J. Exp. Med</source>
+          <year>2003</year>
+          <volume>197</volume>
+          <fpage>711</fpage>
+          <lpage>723</lpage>
+          <pub-id pub-id-type="pmid">12642603</pub-id>
+        </citation>
+      </ref>
+      <ref id="R17">
+        <label>17</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kirou</surname>
+              <given-names>KA</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>George</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Louca</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Papagiannis</surname>
+              <given-names>IG</given-names>
+            </name>
+            <name>
+              <surname>Peterson</surname>
+              <given-names>MGE</given-names>
+            </name>
+            <name>
+              <surname>Ly</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Woodward</surname>
+              <given-names>RN</given-names>
+            </name>
+            <name>
+              <surname>Fry</surname>
+              <given-names>KE</given-names>
+            </name>
+            <name>
+              <surname>Lau</surname>
+              <given-names>AY-H</given-names>
+            </name>
+            <name>
+              <surname>Prentice</surname>
+              <given-names>JG</given-names>
+            </name>
+            <name>
+              <surname>Wohlgemuth</surname>
+              <given-names>JG</given-names>
+            </name>
+            <name>
+              <surname>Crow</surname>
+              <given-names>MK</given-names>
+            </name>
+          </person-group>
+          <article-title>Coordinate overexpression of interferon-α-induced genes in systemic lupus erythematosus</article-title>
+          <source>Arthritis Rheum</source>
+          <year>2004</year>
+          <volume>50</volume>
+          <fpage>3958</fpage>
+          <lpage>3967</lpage>
+          <pub-id pub-id-type="pmid">15593221</pub-id>
+        </citation>
+      </ref>
+      <ref id="R18">
+        <label>18</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Niewold</surname>
+              <given-names>TB</given-names>
+            </name>
+            <name>
+              <surname>Swedler</surname>
+              <given-names>WI</given-names>
+            </name>
+          </person-group>
+          <article-title>Systemic lupus erythematosus arising during interferon-alpha therapy for cryoglobulinemic vasculitis associated with hepatitis C</article-title>
+          <source>Clin. Rheumatol</source>
+          <year>2005</year>
+          <volume>24</volume>
+          <fpage>178</fpage>
+          <lpage>181</lpage>
+          <pub-id pub-id-type="pmid">15565395</pub-id>
+        </citation>
+      </ref>
+      <ref id="R19">
+        <label>19</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kariuki</surname>
+              <given-names>SN</given-names>
+            </name>
+            <name>
+              <surname>Kirou</surname>
+              <given-names>KA</given-names>
+            </name>
+            <name>
+              <surname>MacDermott</surname>
+              <given-names>EJ</given-names>
+            </name>
+            <name>
+              <surname>Barillas-Arias</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Crow</surname>
+              <given-names>MK</given-names>
+            </name>
+            <name>
+              <surname>Niewold</surname>
+              <given-names>TB</given-names>
+            </name>
+          </person-group>
+          <article-title>Cutting edge: autoimmune disease risk variant of STAT4 confers increased sensitivity to IFN-α in lupus patients in vivo</article-title>
+          <source>J. Immunol</source>
+          <year>2009</year>
+          <volume>182</volume>
+          <fpage>34</fpage>
+          <lpage>38</lpage>
+          <pub-id pub-id-type="pmid">19109131</pub-id>
+        </citation>
+      </ref>
+      <ref id="R20">
+        <label>20</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Santiago-Raber</surname>
+              <given-names>M-L</given-names>
+            </name>
+            <name>
+              <surname>Baccala</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Haraldsson</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Choubey</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Stewart</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name>
+              <surname>Kono</surname>
+              <given-names>DH</given-names>
+            </name>
+            <name>
+              <surname>Theofilopoulos</surname>
+              <given-names>AN</given-names>
+            </name>
+          </person-group>
+          <article-title>Type-I interferon receptor deficiency reduces lupus-like disease in NZB mice</article-title>
+          <source>J. Exp. Med</source>
+          <year>2003</year>
+          <volume>197</volume>
+          <fpage>777</fpage>
+          <lpage>788</lpage>
+          <pub-id pub-id-type="pmid">12642605</pub-id>
+        </citation>
+      </ref>
+      <ref id="R21">
+        <label>21</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nacionales</surname>
+              <given-names>DC</given-names>
+            </name>
+            <name>
+              <surname>Kelly-Scumpia</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>PY</given-names>
+            </name>
+            <name>
+              <surname>Weinstein</surname>
+              <given-names>JS</given-names>
+            </name>
+            <name>
+              <surname>Lyons</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Sobel</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Satoh</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Reeves</surname>
+              <given-names>WH</given-names>
+            </name>
+          </person-group>
+          <article-title>Deficiency of the type I interferon receptor protects mice from experimental lupus</article-title>
+          <source>Arthritis Rheum</source>
+          <year>2007</year>
+          <volume>56</volume>
+          <fpage>3770</fpage>
+          <lpage>3783</lpage>
+          <pub-id pub-id-type="pmid">17968932</pub-id>
+        </citation>
+      </ref>
+      <ref id="R22">
+        <label>22</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Agrawal</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Jacob</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Carreras</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Bajana</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Putterman</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Turner</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Neas</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Mathian</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Koss</surname>
+              <given-names>MN</given-names>
+            </name>
+            <name>
+              <surname>Stohl</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Kovats</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Jacob</surname>
+              <given-names>CO</given-names>
+            </name>
+          </person-group>
+          <article-title>Deficiency of type I IFN receptor in lupus-prone New Zealand Mixed 2328 mice decreases dendritic cell numbers and activation and protects from disease</article-title>
+          <source>J. Immunol</source>
+          <year>2009</year>
+          <volume>183</volume>
+          <fpage>6021</fpage>
+          <lpage>6029</lpage>
+          <pub-id pub-id-type="pmid">19812195</pub-id>
+        </citation>
+      </ref>
+      <ref id="R23">
+        <label>23</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mathian</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Weinberg</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Gallegos</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Banchereau</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Koutouzov</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>IFN-α induces early lethal lupus in preautoimmune (New Zealand Black X New Zealand White)F<sub>1</sub> but not in BALB/c mice</article-title>
+          <source>J. Immunol</source>
+          <year>2005</year>
+          <volume>174</volume>
+          <fpage>2499</fpage>
+          <lpage>2506</lpage>
+          <pub-id pub-id-type="pmid">15728455</pub-id>
+        </citation>
+      </ref>
+      <ref id="R24">
+        <label>24</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shlomchik</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Madaio</surname>
+              <given-names>MP</given-names>
+            </name>
+            <name>
+              <surname>Ni</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Trounstein</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Huszar</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>The role of B cells in <italic>lpr/lpr</italic>-induced autoimmunity</article-title>
+          <source>J. Exp. Med</source>
+          <year>1994</year>
+          <volume>180</volume>
+          <fpage>1295</fpage>
+          <lpage>1306</lpage>
+          <pub-id pub-id-type="pmid">7931063</pub-id>
+        </citation>
+      </ref>
+      <ref id="R25">
+        <label>25</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chan</surname>
+              <given-names>OTM</given-names>
+            </name>
+            <name>
+              <surname>Hannum</surname>
+              <given-names>LG</given-names>
+            </name>
+            <name>
+              <surname>Haberman</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Madaio</surname>
+              <given-names>MP</given-names>
+            </name>
+            <name>
+              <surname>Shlomchik</surname>
+              <given-names>MJ</given-names>
+            </name>
+          </person-group>
+          <article-title>A novel mouse with B cells but lacking serum antibody reveals an antibody-independent role for B cells in murine lupus</article-title>
+          <source>J. Exp. Med</source>
+          <year>1999</year>
+          <volume>189</volume>
+          <fpage>1639</fpage>
+          <lpage>1647</lpage>
+          <pub-id pub-id-type="pmid">10330443</pub-id>
+        </citation>
+      </ref>
+      <ref id="R26">
+        <label>26</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Leandro</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Edwards</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Cambridge</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Ehrenstein</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Isenberg</surname>
+              <given-names>DA</given-names>
+            </name>
+          </person-group>
+          <article-title>An open study of B lymphocyte depletion in systemic lupus erythematosus</article-title>
+          <source>Arthritis Rheum</source>
+          <year>2002</year>
+          <volume>46</volume>
+          <fpage>2673</fpage>
+          <lpage>2677</lpage>
+          <pub-id pub-id-type="pmid">12384926</pub-id>
+        </citation>
+      </ref>
+      <ref id="R27">
+        <label>27</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Looney</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Anolik</surname>
+              <given-names>JH</given-names>
+            </name>
+            <name>
+              <surname>Campbell</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Felgar</surname>
+              <given-names>RE</given-names>
+            </name>
+            <name>
+              <surname>Young</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Arend</surname>
+              <given-names>LJ</given-names>
+            </name>
+            <name>
+              <surname>Sloand</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Rosenblatt</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Sanz</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <article-title>B cell depletion as a novel treatment for systemic lupus erythematosus: a phase I/II dose-escalation trial of rituximab</article-title>
+          <source>Arthritis Rheum</source>
+          <year>2004</year>
+          <volume>50</volume>
+          <fpage>2580</fpage>
+          <lpage>2589</lpage>
+          <pub-id pub-id-type="pmid">15334472</pub-id>
+        </citation>
+      </ref>
+      <ref id="R28">
+        <label>28</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sfikakis</surname>
+              <given-names>PP</given-names>
+            </name>
+            <name>
+              <surname>Boletis</surname>
+              <given-names>JN</given-names>
+            </name>
+            <name>
+              <surname>Lionaki</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Vigklis</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Fragiadaki</surname>
+              <given-names>KG</given-names>
+            </name>
+            <name>
+              <surname>Iniotaki</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Moutsopoulos</surname>
+              <given-names>HM</given-names>
+            </name>
+          </person-group>
+          <article-title>Remission of proliferative lupus nephritis following B cell depletion therapy is preceded by down-regulation of the T cell costimulatory molecule CD40 ligand: an open-label trial</article-title>
+          <source>Arthritis Rheum</source>
+          <year>2005</year>
+          <volume>52</volume>
+          <fpage>501</fpage>
+          <lpage>513</lpage>
+          <pub-id pub-id-type="pmid">15693003</pub-id>
+        </citation>
+      </ref>
+      <ref id="R29">
+        <label>29</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gunnarsson</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Sundelin</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Jónsdóttir</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Jacobson</surname>
+              <given-names>SH</given-names>
+            </name>
+            <name>
+              <surname>Henriksson</surname>
+              <given-names>EW</given-names>
+            </name>
+            <name>
+              <surname>van Vollenhoven</surname>
+              <given-names>RF</given-names>
+            </name>
+          </person-group>
+          <article-title>Histopathologic and clinical outcome of rituximab treatment in patients with cyclophosphamide-resistant proliferative lupus nephritis</article-title>
+          <source>Arthritis Rheum</source>
+          <year>2007</year>
+          <volume>56</volume>
+          <fpage>1263</fpage>
+          <lpage>1272</lpage>
+          <pub-id pub-id-type="pmid">17393458</pub-id>
+        </citation>
+      </ref>
+      <ref id="R30">
+        <label>30</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jónsdóttir</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Gunnarsson</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Risselada</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Henriksson</surname>
+              <given-names>EW</given-names>
+            </name>
+            <name>
+              <surname>Klareskog</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>van Vollenhoven</surname>
+              <given-names>RF</given-names>
+            </name>
+          </person-group>
+          <article-title>Treatment of refractory SLE with rituximab plus cyclophosphamide: clinical effects, serological changes, and predictors of response</article-title>
+          <source>Ann. Rheum. Dis</source>
+          <year>2008</year>
+          <volume>67</volume>
+          <fpage>330</fpage>
+          <lpage>334</lpage>
+          <pub-id pub-id-type="pmid">17827182</pub-id>
+        </citation>
+      </ref>
+      <ref id="R31">
+        <label>31</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Albert</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Dunham</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Khan</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Stansberry</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kolasinski</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Tsai</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Pullman-Mooar</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Barnack</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Striebich</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Looney</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Luning Prak</surname>
+              <given-names>ET</given-names>
+            </name>
+            <name>
+              <surname>Kimberly</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Eisenberg</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Variability in the biological response to anti-CD20 B cell depletion in systemic lupus erythematosus</article-title>
+          <source>Ann. Rheum. Dis</source>
+          <year>2008</year>
+          <volume>67</volume>
+          <fpage>1724</fpage>
+          <lpage>1731</lpage>
+          <pub-id pub-id-type="pmid">18250115</pub-id>
+        </citation>
+      </ref>
+      <ref id="R32">
+        <label>32</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mackay</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Woodcock</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Lawton</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Ambrose</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Baetscher</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Schneider</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Tschopp</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Browning</surname>
+              <given-names>JL</given-names>
+            </name>
+          </person-group>
+          <article-title>Mice transgenic for BAFF develop lymphocytic disorders along with autoimmune manifestations</article-title>
+          <source>J. Exp. Med</source>
+          <year>1999</year>
+          <volume>190</volume>
+          <fpage>1697</fpage>
+          <lpage>1710</lpage>
+          <pub-id pub-id-type="pmid">10587360</pub-id>
+        </citation>
+      </ref>
+      <ref id="R33">
+        <label>33</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Khare</surname>
+              <given-names>SD</given-names>
+            </name>
+            <name>
+              <surname>Sarosi</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Xia</surname>
+              <given-names>X-Z</given-names>
+            </name>
+            <name>
+              <surname>McCabe</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Miner</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Solovyev</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Hawkins</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Kelley</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Chang</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Van</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Ross</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Delaney</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Lacey</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Boyle</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>Hsu</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title>Severe B cell hyperplasia and autoimmune disease in TALL-1 transgenic mice</article-title>
+          <source>Proc. Natl. Acad. Sci. USA</source>
+          <year>2000</year>
+          <volume>97</volume>
+          <fpage>3370</fpage>
+          <lpage>3375</lpage>
+          <pub-id pub-id-type="pmid">10716715</pub-id>
+        </citation>
+      </ref>
+      <ref id="R34">
+        <label>34</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gross</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Johnston</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Mudri</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Enselman</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Dillon</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Madden</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Parrish-Novak</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Foster</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Lofton-Day</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Moore</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Littau</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Grossman</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Haugen</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Foley</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Blumberg</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Harrison</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Kindsvogel</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Clegg</surname>
+              <given-names>CH</given-names>
+            </name>
+          </person-group>
+          <article-title>TACI and BCMA are receptors for a TNF homologue implicated in B-cell autoimmune disease</article-title>
+          <source>Nature</source>
+          <year>2000</year>
+          <volume>404</volume>
+          <fpage>995</fpage>
+          <lpage>999</lpage>
+          <pub-id pub-id-type="pmid">10801128</pub-id>
+        </citation>
+      </ref>
+      <ref id="R35">
+        <label>35</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stohl</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>KS</given-names>
+            </name>
+            <name>
+              <surname>Koss</surname>
+              <given-names>MN</given-names>
+            </name>
+            <name>
+              <surname>Jorgensen</surname>
+              <given-names>TN</given-names>
+            </name>
+            <name>
+              <surname>Deocharan</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Metzger</surname>
+              <given-names>TE</given-names>
+            </name>
+            <name>
+              <surname>Bixler</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Hong</surname>
+              <given-names>YS</given-names>
+            </name>
+            <name>
+              <surname>Ambrose</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Mackay</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Morel</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Putterman</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Kotzin</surname>
+              <given-names>BL</given-names>
+            </name>
+            <name>
+              <surname>Kalled</surname>
+              <given-names>SL</given-names>
+            </name>
+          </person-group>
+          <article-title>BAFF overexpression and accelerated glomerular disease in mice with an incomplete genetic predisposition to systemic lupus erythematosus</article-title>
+          <source>Arthritis Rheum</source>
+          <year>2005</year>
+          <volume>52</volume>
+          <fpage>2080</fpage>
+          <lpage>2091</lpage>
+          <pub-id pub-id-type="pmid">15986357</pub-id>
+        </citation>
+      </ref>
+      <ref id="R36">
+        <label>36</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Groom</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Fletcher</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>Walters</surname>
+              <given-names>SN</given-names>
+            </name>
+            <name>
+              <surname>Grey</surname>
+              <given-names>ST</given-names>
+            </name>
+            <name>
+              <surname>Watt</surname>
+              <given-names>SV</given-names>
+            </name>
+            <name>
+              <surname>Sweet</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Smyth</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Mackay</surname>
+              <given-names>CR</given-names>
+            </name>
+            <name>
+              <surname>Mackay</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <article-title>BAFF and MyD88 signals promote a lupuslike disease independent of T cells</article-title>
+          <source>J. Exp. Med</source>
+          <year>2007</year>
+          <volume>204</volume>
+          <fpage>1959</fpage>
+          <lpage>1971</lpage>
+          <pub-id pub-id-type="pmid">17664289</pub-id>
+        </citation>
+      </ref>
+      <ref id="R37">
+        <label>37</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kayagaki</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Yan</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Seshasayee</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>French</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Grewal</surname>
+              <given-names>IS</given-names>
+            </name>
+            <name>
+              <surname>Cochran</surname>
+              <given-names>AG</given-names>
+            </name>
+            <name>
+              <surname>Gordon</surname>
+              <given-names>NC</given-names>
+            </name>
+            <name>
+              <surname>Yin</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Starovasnik</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Dixit</surname>
+              <given-names>VM</given-names>
+            </name>
+          </person-group>
+          <article-title>BAFF/BLyS receptor 3 binds the B cell survival factor BAFF ligand through a discrete surface loop and promotes processing of NF-κB2</article-title>
+          <source>Immunity</source>
+          <year>2002</year>
+          <volume>17</volume>
+          <fpage>515</fpage>
+          <lpage>524</lpage>
+          <pub-id pub-id-type="pmid">12387744</pub-id>
+        </citation>
+      </ref>
+      <ref id="R38">
+        <label>38</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ramanujam</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Huang</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Schiffer</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Grimaldi</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Akkerman</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Diamond</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Madaio</surname>
+              <given-names>MP</given-names>
+            </name>
+            <name>
+              <surname>Davidson</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Mechanism of action of transmembrane activator and calcium modulator ligand interactor-Ig in murine systemic lupus erythematosus</article-title>
+          <source>J. Immunol</source>
+          <year>2004</year>
+          <volume>173</volume>
+          <fpage>3524</fpage>
+          <lpage>3534</lpage>
+          <pub-id pub-id-type="pmid">15322217</pub-id>
+        </citation>
+      </ref>
+      <ref id="R39">
+        <label>39</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ramanujam</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Huang</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Schiffer</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Tao</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Frank</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Rice</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Diamond</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Yu</surname>
+              <given-names>KOA</given-names>
+            </name>
+            <name>
+              <surname>Porcelli</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Davidson</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Similarities and differences between selective and nonselective BAFF blockade in murine SLE</article-title>
+          <source>J. Clin. Invest</source>
+          <year>2006</year>
+          <volume>116</volume>
+          <fpage>724</fpage>
+          <lpage>734</lpage>
+          <pub-id pub-id-type="pmid">16485042</pub-id>
+        </citation>
+      </ref>
+      <ref id="R40">
+        <label>40</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rudofsky</surname>
+              <given-names>UH</given-names>
+            </name>
+            <name>
+              <surname>Evans</surname>
+              <given-names>BD</given-names>
+            </name>
+            <name>
+              <surname>Balaban</surname>
+              <given-names>SL</given-names>
+            </name>
+            <name>
+              <surname>Mottironi</surname>
+              <given-names>VD</given-names>
+            </name>
+            <name>
+              <surname>Gabrielsen</surname>
+              <given-names>AE</given-names>
+            </name>
+          </person-group>
+          <article-title>Differences in expression of lupus nephritis in New Zealand Mixed <italic>H-2</italic><italic><sup>z</sup></italic> homozygous inbred strains of mice derived from New Zealand Black and New Zealand White mice: origins and initial characterization</article-title>
+          <source>Lab. Invest</source>
+          <year>1993</year>
+          <volume>68</volume>
+          <fpage>419</fpage>
+          <lpage>426</lpage>
+          <pub-id pub-id-type="pmid">8479150</pub-id>
+        </citation>
+      </ref>
+      <ref id="R41">
+        <label>41</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jacob</surname>
+              <given-names>CO</given-names>
+            </name>
+            <name>
+              <surname>Pricop</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Putterman</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Koss</surname>
+              <given-names>MN</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Kollaros</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Bixler</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Ambrose</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Scott</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Stohl</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>Paucity of clinical disease despite serological autoimmunity and kidney pathology in lupus-prone New Zealand Mixed 2328 mice deficient in BAFF</article-title>
+          <source>J. Immunol</source>
+          <year>2006</year>
+          <volume>177</volume>
+          <fpage>2671</fpage>
+          <lpage>2680</lpage>
+          <pub-id pub-id-type="pmid">16888029</pub-id>
+        </citation>
+      </ref>
+      <ref id="R42">
+        <label>42</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wallace</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Stohl</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Furie</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Lisse</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>McKay</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Merrill</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>Petri</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Ginzler</surname>
+              <given-names>EM</given-names>
+            </name>
+            <name>
+              <surname>Chatham</surname>
+              <given-names>WW</given-names>
+            </name>
+            <name>
+              <surname>McCune</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>Fernandez</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Chevrier</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Zhong</surname>
+              <given-names>ZJ</given-names>
+            </name>
+            <name>
+              <surname>Freimuth</surname>
+              <given-names>WW</given-names>
+            </name>
+          </person-group>
+          <article-title>A phase II, randomized, double-blind, placebo-controlled, dose-ranging study of belimumab in patients with active systemic lupus erythematosus</article-title>
+          <source>Arthritis Rheum</source>
+          <year>2009</year>
+          <volume>61</volume>
+          <fpage>1168</fpage>
+          <lpage>1178</lpage>
+          <pub-id pub-id-type="pmid">19714604</pub-id>
+        </citation>
+      </ref>
+      <ref id="R43">
+        <label>43</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Furie</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Petri</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Wallace</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Ginzler</surname>
+              <given-names>EM</given-names>
+            </name>
+            <name>
+              <surname>Merrill</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>Stohl</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Chatham</surname>
+              <given-names>WW</given-names>
+            </name>
+            <name>
+              <surname>Strand</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Weinstein</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Chevrier</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Zhong</surname>
+              <given-names>ZJ</given-names>
+            </name>
+            <name>
+              <surname>Freimuth</surname>
+              <given-names>WW</given-names>
+            </name>
+          </person-group>
+          <article-title>Novel evidence-based systemic lupus erythematosus responder index</article-title>
+          <source>Arthritis Rheum</source>
+          <year>2009</year>
+          <volume>61</volume>
+          <fpage>1143</fpage>
+          <lpage>1151</lpage>
+          <pub-id pub-id-type="pmid">19714615</pub-id>
+        </citation>
+      </ref>
+      <ref id="R44">
+        <label>44</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Navarra</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Guzman</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Gallacher</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Levy</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>EK</given-names>
+            </name>
+            <name>
+              <surname>Thomas</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Jimenez</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Leon</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hall</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Lan</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Nasonov</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Tanasescu</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>HY</given-names>
+            </name>
+            <name>
+              <surname>Pineda</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Zhong</surname>
+              <given-names>ZJ</given-names>
+            </name>
+            <name>
+              <surname>Freimuth</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Petri</surname>
+              <given-names>MA</given-names>
+            </name>
+            <collab>BLISS-52 Study Group</collab>
+          </person-group>
+          <article-title>Belimumab, a BLyS-specific inhibitor, reduced disease activity, flares and prednisone use in patients with active SLE: efficacy and safety results from the phase 3 BLISS-52 study</article-title>
+          <source>Arthritis Rheum</source>
+          <year>2009</year>
+          <volume>60</volume>
+          <fpage>3859</fpage>
+        </citation>
+      </ref>
+      <ref id="R45">
+        <label>45</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Furie</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Zamani</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Wallace</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Tegzova</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Petri</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Merrill</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>Chatham</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Stohl</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Schwarting</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Cooper</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Zhong</surname>
+              <given-names>ZJ</given-names>
+            </name>
+            <name>
+              <surname>Freimuth</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Hough</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>van Vollenhoven</surname>
+              <given-names>RF</given-names>
+            </name>
+            <collab>BLISS-76 Study Group</collab>
+          </person-group>
+          <article-title>Belimumab, a BLyS-specific inhibitor, reduced disease activity and severe flares in seropositive SLE patients: BLISS-76 study results through wk 76</article-title>
+          <source>Arthritis Rheum</source>
+          <year>2010</year>
+          <volume>62</volume>
+          <fpage>S606</fpage>
+        </citation>
+      </ref>
+      <ref id="R46">
+        <label>46</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Manzi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Sanchez-Guerrero</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Merrill</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>Furie</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Gladman</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Navarra</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ginzler</surname>
+              <given-names>EM</given-names>
+            </name>
+            <name>
+              <surname>D’Cruz</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Doria</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Cooper</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Zhong</surname>
+              <given-names>ZJ</given-names>
+            </name>
+            <name>
+              <surname>Hough</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Freimuth</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Petri</surname>
+              <given-names>M</given-names>
+            </name>
+            <collab>BLISS-52 and −76 Study Groups</collab>
+          </person-group>
+          <article-title>Belimumab, a BLyS-specific inhibitor, reduced disease activity across multiple organ domains: combined efficacy results from the phase 3 BLISS-52 and −76 studies</article-title>
+          <source>Arthritis Rheum</source>
+          <year>2010</year>
+          <volume>62</volume>
+          <fpage>S607</fpage>
+        </citation>
+      </ref>
+      <ref id="R47">
+        <label>47</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Litinskiy</surname>
+              <given-names>MB</given-names>
+            </name>
+            <name>
+              <surname>Nardelli</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Hilbert</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>He</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Schaffer</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Casali</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Cerutti</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>DCs induce CD40-independent immunoglobulin class switching through BLyS and APRIL</article-title>
+          <source>Nat. Immunol</source>
+          <year>2002</year>
+          <volume>3</volume>
+          <fpage>822</fpage>
+          <lpage>829</lpage>
+          <pub-id pub-id-type="pmid">12154359</pub-id>
+        </citation>
+      </ref>
+      <ref id="R48">
+        <label>48</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yao</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Richman</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Higgs</surname>
+              <given-names>BW</given-names>
+            </name>
+            <name>
+              <surname>Morehouse</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>de los Reyes</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Brohawn</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>White</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Coyle</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Kiener</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Jallal</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>Neutralization of interferon-α/β-inducible genes and downstream effect in a phase I trial of an anti-interferon-α monoclonal antibody in systemic lupus erythematosus</article-title>
+          <source>Arthritis Rheum</source>
+          <year>2009</year>
+          <volume>60</volume>
+          <fpage>1785</fpage>
+          <lpage>1796</lpage>
+          <pub-id pub-id-type="pmid">19479852</pub-id>
+        </citation>
+      </ref>
+      <ref id="R49">
+        <label>49</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jacob</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Pricop</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Gao</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Zheng</surname>
+              <given-names>SG</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Gao</surname>
+              <given-names>H-X</given-names>
+            </name>
+            <name>
+              <surname>Putterman</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Koss</surname>
+              <given-names>MN</given-names>
+            </name>
+            <name>
+              <surname>Stohl</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Jacob</surname>
+              <given-names>CO</given-names>
+            </name>
+          </person-group>
+          <article-title>Accelerated pathological and clinical nephritis in systemic lupus erythematosus-prone New Zealand Mixed 2328 mice doubly deficient in TNF receptor 1 and TNF receptor 2 via a Th17-associated pathway</article-title>
+          <source>J. Immunol</source>
+          <year>2009</year>
+          <volume>182</volume>
+          <fpage>2532</fpage>
+          <lpage>2541</lpage>
+          <pub-id pub-id-type="pmid">19201910</pub-id>
+        </citation>
+      </ref>
+      <ref id="R50">
+        <label>50</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Morel</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Yu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Blenman</surname>
+              <given-names>KR</given-names>
+            </name>
+            <name>
+              <surname>Caldwell</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Wakeland</surname>
+              <given-names>EK</given-names>
+            </name>
+          </person-group>
+          <article-title>Production of congenic mouse strains carrying genomic intervals containing SLE-susceptibility genes derived from the SLE-prone NZM2410 strain</article-title>
+          <source>Mamm. Genome</source>
+          <year>1996</year>
+          <volume>7</volume>
+          <fpage>335</fpage>
+          <lpage>339</lpage>
+          <pub-id pub-id-type="pmid">8661718</pub-id>
+        </citation>
+      </ref>
+      <ref id="R51">
+        <label>51</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Markel</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Shu</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Ebeling</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Carlson</surname>
+              <given-names>GA</given-names>
+            </name>
+            <name>
+              <surname>Nagle</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Smutko</surname>
+              <given-names>JS</given-names>
+            </name>
+            <name>
+              <surname>Moore</surname>
+              <given-names>KJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Theoretical and empirical issue for marker-assisted breeding of congenic mouse strains</article-title>
+          <source>Nat. Genet</source>
+          <year>1997</year>
+          <volume>17</volume>
+          <fpage>280</fpage>
+          <lpage>284</lpage>
+          <pub-id pub-id-type="pmid">9354790</pub-id>
+        </citation>
+      </ref>
+      <ref id="R52">
+        <label>52</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Waters</surname>
+              <given-names>ST</given-names>
+            </name>
+            <name>
+              <surname>Fu</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Gaskin</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Deshmukh</surname>
+              <given-names>US</given-names>
+            </name>
+            <name>
+              <surname>Sung</surname>
+              <given-names>S-SJ</given-names>
+            </name>
+            <name>
+              <surname>Kannapell</surname>
+              <given-names>CC</given-names>
+            </name>
+            <name>
+              <surname>Tung</surname>
+              <given-names>KSK</given-names>
+            </name>
+            <name>
+              <surname>McEwen</surname>
+              <given-names>SB</given-names>
+            </name>
+            <name>
+              <surname>DcDuffie</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>NZM2328: a new mouse model of systemic lupus erythematosus with unique genetic susceptibility loci</article-title>
+          <source>Clin. Immunol</source>
+          <year>2001</year>
+          <volume>100</volume>
+          <fpage>372</fpage>
+          <lpage>383</lpage>
+          <pub-id pub-id-type="pmid">11513551</pub-id>
+        </citation>
+      </ref>
+      <ref id="R53">
+        <label>53</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Deocharan</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Marambio</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Edelman</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Putterman</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Differential effects of interleukin-4 in peptide induced autoimmunity</article-title>
+          <source>Clin. Immunol</source>
+          <year>2003</year>
+          <volume>108</volume>
+          <fpage>80</fpage>
+          <lpage>88</lpage>
+          <pub-id pub-id-type="pmid">12921753</pub-id>
+        </citation>
+      </ref>
+      <ref id="R54">
+        <label>54</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhao</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Burkly</surname>
+              <given-names>LC</given-names>
+            </name>
+            <name>
+              <surname>Campbell</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Schwartz</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Molano</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Choudhury</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Eisenberg</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Michaelson</surname>
+              <given-names>JS</given-names>
+            </name>
+            <name>
+              <surname>Putterman</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>TWEAK/Fn14 interactions are instrumental in the pathogenesis of nephritis in the chronic graft-versus-host model of systemic lupus erythematosus</article-title>
+          <source>J. Immunol</source>
+          <year>2007</year>
+          <volume>179</volume>
+          <fpage>7949</fpage>
+          <lpage>7958</lpage>
+          <pub-id pub-id-type="pmid">18025243</pub-id>
+        </citation>
+      </ref>
+      <ref id="R55">
+        <label>55</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jacob</surname>
+              <given-names>CO</given-names>
+            </name>
+            <name>
+              <surname>Zang</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Ciobanu</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Quismorio</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Mazutani</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Satoh</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Koss</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Pivotal role of Stat4 and Stat6 in the pathogenesis of the lupus-like disease in the New Zealand Mixed 2328 mice</article-title>
+          <source>J. Immunol</source>
+          <year>2003</year>
+          <volume>171</volume>
+          <fpage>1564</fpage>
+          <lpage>1571</lpage>
+          <pub-id pub-id-type="pmid">12874250</pub-id>
+        </citation>
+      </ref>
+      <ref id="R56">
+        <label>56</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schiffer</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Bethunaickan</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Ramanujam</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Huang</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Schiffer</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Tao</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Madaio</surname>
+              <given-names>MM</given-names>
+            </name>
+            <name>
+              <surname>Bottinger</surname>
+              <given-names>EP</given-names>
+            </name>
+            <name>
+              <surname>Davidson</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Activated renal macrophages are markers of disease onset and disease remission in lupus nephritis</article-title>
+          <source>J. Immunol</source>
+          <year>2008</year>
+          <volume>180</volume>
+          <fpage>1938</fpage>
+          <lpage>1947</lpage>
+          <pub-id pub-id-type="pmid">18209092</pub-id>
+        </citation>
+      </ref>
+      <ref id="R57">
+        <label>57</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hron</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Peng</surname>
+              <given-names>SL</given-names>
+            </name>
+          </person-group>
+          <article-title>Type I IFN protects against murine lupus</article-title>
+          <source>J. Immunol</source>
+          <year>2004</year>
+          <volume>173</volume>
+          <fpage>2134</fpage>
+          <lpage>2142</lpage>
+          <pub-id pub-id-type="pmid">15265950</pub-id>
+        </citation>
+      </ref>
+      <ref id="R58">
+        <label>58</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fairhurst</surname>
+              <given-names>A-M</given-names>
+            </name>
+            <name>
+              <surname>Mathian</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Connolly</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Gray</surname>
+              <given-names>HF</given-names>
+            </name>
+            <name>
+              <surname>George</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name>
+              <surname>Boudreaux</surname>
+              <given-names>CD</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>XJ</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>Q-Z</given-names>
+            </name>
+            <name>
+              <surname>Koutouzov</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Banchereau</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Wakeland</surname>
+              <given-names>EK</given-names>
+            </name>
+          </person-group>
+          <article-title>Sytemic IFN-α drives kidney nephritis in B6.<italic>SLE123</italic> mice</article-title>
+          <source>Eur. J. Immunol</source>
+          <year>2008</year>
+          <volume>38</volume>
+          <fpage>1948</fpage>
+          <lpage>1960</lpage>
+          <pub-id pub-id-type="pmid">18506882</pub-id>
+        </citation>
+      </ref>
+      <ref id="R59">
+        <label>59</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bekeredjian-Ding</surname>
+              <given-names>IB</given-names>
+            </name>
+            <name>
+              <surname>Wagner</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hornung</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Giese</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Schnurr</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Endres</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Hartmann</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Plasmacytoid dendritic cells control TLR7 sensitivity of naive B cells via type I IFN</article-title>
+          <source>J. Immunol</source>
+          <year>2005</year>
+          <volume>174</volume>
+          <fpage>4043</fpage>
+          <lpage>4050</lpage>
+          <pub-id pub-id-type="pmid">15778362</pub-id>
+        </citation>
+      </ref>
+      <ref id="R60">
+        <label>60</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ng</surname>
+              <given-names>LG</given-names>
+            </name>
+            <name>
+              <surname>Ng</surname>
+              <given-names>C-H</given-names>
+            </name>
+            <name>
+              <surname>Woehl</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Sutherland</surname>
+              <given-names>APR</given-names>
+            </name>
+            <name>
+              <surname>Huo</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Mackay</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Lam</surname>
+              <given-names>K-P</given-names>
+            </name>
+          </person-group>
+          <article-title>BAFF costimulation of Toll-like receptor-activated B-1 cells</article-title>
+          <source>Eur. J. Immunol</source>
+          <year>2006</year>
+          <volume>36</volume>
+          <fpage>1837</fpage>
+          <lpage>1846</lpage>
+          <pub-id pub-id-type="pmid">16791880</pub-id>
+        </citation>
+      </ref>
+      <ref id="R61">
+        <label>61</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brummel</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Roberts</surname>
+              <given-names>TL</given-names>
+            </name>
+            <name>
+              <surname>Stacey</surname>
+              <given-names>KJ</given-names>
+            </name>
+            <name>
+              <surname>Lenert</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Higher-order CpG-DNA stimulation reveals distinct activation requirements for marginal zone and follicular B cells in lupus mice</article-title>
+          <source>Eur. J. Immunol</source>
+          <year>2006</year>
+          <volume>36</volume>
+          <fpage>1951</fpage>
+          <lpage>1962</lpage>
+          <pub-id pub-id-type="pmid">16791898</pub-id>
+        </citation>
+      </ref>
+      <ref id="R62">
+        <label>62</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Treml</surname>
+              <given-names>LS</given-names>
+            </name>
+            <name>
+              <surname>Carlesso</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Hoek</surname>
+              <given-names>KL</given-names>
+            </name>
+            <name>
+              <surname>Stadanlick</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Kambayashi</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Bram</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Cancro</surname>
+              <given-names>MP</given-names>
+            </name>
+            <name>
+              <surname>Khan</surname>
+              <given-names>WN</given-names>
+            </name>
+          </person-group>
+          <article-title>TLR stimulation modifies BLyS receptor expression in follicular and marginal zone B cells</article-title>
+          <source>J. Immunol</source>
+          <year>2007</year>
+          <volume>178</volume>
+          <fpage>7531</fpage>
+          <lpage>7539</lpage>
+          <pub-id pub-id-type="pmid">17548587</pub-id>
+        </citation>
+      </ref>
+      <ref id="R63">
+        <label>63</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Thibault</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Graham</surname>
+              <given-names>KL</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>LY</given-names>
+            </name>
+            <name>
+              <surname>Balboni</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Hertzog</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Utz</surname>
+              <given-names>PJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Type I interferon receptor controls B-cell expression of nucleic acid-sensing Toll-like receptors and autoantibody production in a murine model of lupus</article-title>
+          <source>Arthritis Res. Ther</source>
+          <year>2009</year>
+          <volume>11</volume>
+          <fpage>R112</fpage>
+          <pub-id pub-id-type="pmid">19624844</pub-id>
+        </citation>
+      </ref>
+      <ref id="R64">
+        <label>64</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Krieg</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Yi</surname>
+              <given-names>AK</given-names>
+            </name>
+            <name>
+              <surname>Matson</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Waldschmidt</surname>
+              <given-names>TJ</given-names>
+            </name>
+            <name>
+              <surname>Bishop</surname>
+              <given-names>GA</given-names>
+            </name>
+          </person-group>
+          <article-title>CpG motifs in bacterial DNA trigger direct B-cell activation</article-title>
+          <source>Nature</source>
+          <year>1995</year>
+          <volume>374</volume>
+          <fpage>546</fpage>
+          <lpage>549</lpage>
+          <pub-id pub-id-type="pmid">7700380</pub-id>
+        </citation>
+      </ref>
+      <ref id="R65">
+        <label>65</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sadanaga</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Nakashima</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Akahoshi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Masutani</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Miyake</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Igawa</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sugiyama</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Niiro</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Harada</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Protection against autoimmune nephritis in MyD88-deficient MRL/<italic>lpr</italic> mice</article-title>
+          <source>Arthritis Rheum</source>
+          <year>2007</year>
+          <volume>56</volume>
+          <fpage>1618</fpage>
+          <lpage>1628</lpage>
+          <pub-id pub-id-type="pmid">17469144</pub-id>
+        </citation>
+      </ref>
+      <ref id="R66">
+        <label>66</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yi</surname>
+              <given-names>AK</given-names>
+            </name>
+            <name>
+              <surname>Klinman</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Martin</surname>
+              <given-names>TL</given-names>
+            </name>
+            <name>
+              <surname>Matson</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Krieg</surname>
+              <given-names>AM</given-names>
+            </name>
+          </person-group>
+          <article-title>Rapid immune activation by CpG motifs in bacterial DNA: systemic induction of IL-6 transcription through an antioxidant-sensitive pathway</article-title>
+          <source>J. Immunol</source>
+          <year>1996</year>
+          <volume>1996</volume>
+          <fpage>5394</fpage>
+          <lpage>5402</lpage>
+          <pub-id pub-id-type="pmid">8955187</pub-id>
+        </citation>
+      </ref>
+      <ref id="R67">
+        <label>67</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ryffel</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Car</surname>
+              <given-names>BD</given-names>
+            </name>
+            <name>
+              <surname>Gunn</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Roman</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Hiestand</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Mihatsch</surname>
+              <given-names>MJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Interleukin-6 exacerbates glomerulonephritis in (NZB x NZM)F1 mice</article-title>
+          <source>Am. J. Pathol</source>
+          <year>1994</year>
+          <volume>144</volume>
+          <fpage>927</fpage>
+          <lpage>937</lpage>
+          <pub-id pub-id-type="pmid">8178944</pub-id>
+        </citation>
+      </ref>
+      <ref id="R68">
+        <label>68</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Finck</surname>
+              <given-names>BK</given-names>
+            </name>
+            <name>
+              <surname>Chan</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Wofsy</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Interleukin 6 promotes murine lupus in NZB/NZW F<sub>1</sub> mice</article-title>
+          <source>J. Clin. Invest</source>
+          <year>1994</year>
+          <volume>94</volume>
+          <fpage>585</fpage>
+          <lpage>591</lpage>
+          <pub-id pub-id-type="pmid">8040314</pub-id>
+        </citation>
+      </ref>
+      <ref id="R69">
+        <label>69</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mihara</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Takagi</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Takeda</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Ohsugi</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <article-title>IL-6 receptor blockage inhibits the onset of autoimmune kidney disease in NZB/W F<sub>1</sub> mice</article-title>
+          <source>Clin. Exp. Immunol</source>
+          <year>1998</year>
+          <volume>112</volume>
+          <fpage>397</fpage>
+          <lpage>402</lpage>
+          <pub-id pub-id-type="pmid">9649207</pub-id>
+        </citation>
+      </ref>
+      <ref id="R70">
+        <label>70</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Santini</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Lapenta</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Logozzi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Parlato</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Spada</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Di Pucchio</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Belardelli</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <article-title>Type I interferon as a powerful adjuvant for monocyte-derived dendritic cell development and activity in vitro and in Hu-PBL-SCID mice</article-title>
+          <source>J. Exp. Med</source>
+          <year>2000</year>
+          <volume>191</volume>
+          <fpage>1777</fpage>
+          <lpage>1788</lpage>
+          <pub-id pub-id-type="pmid">10811870</pub-id>
+        </citation>
+      </ref>
+      <ref id="R71">
+        <label>71</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Blanco</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Palucka</surname>
+              <given-names>AK</given-names>
+            </name>
+            <name>
+              <surname>Gill</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Pascual</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Banchereau</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Induction of dendritic cell differentiation by IFN-α in systemic lupus erythematosus</article-title>
+          <source>Science</source>
+          <year>2001</year>
+          <volume>294</volume>
+          <fpage>1540</fpage>
+          <lpage>1543</lpage>
+          <pub-id pub-id-type="pmid">11711679</pub-id>
+        </citation>
+      </ref>
+      <ref id="R72">
+        <label>72</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nardelli</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Belvedere</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Roschke</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Moore</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Olsen</surname>
+              <given-names>HS</given-names>
+            </name>
+            <name>
+              <surname>Migone</surname>
+              <given-names>TS</given-names>
+            </name>
+            <name>
+              <surname>Sosnovtseva</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Carrell</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Feng</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Giri</surname>
+              <given-names>JG</given-names>
+            </name>
+            <name>
+              <surname>Hilbert</surname>
+              <given-names>DM</given-names>
+            </name>
+          </person-group>
+          <article-title>Synthesis and release of B-lymphocyte stimulator from myeloid cells</article-title>
+          <source>Blood</source>
+          <year>2001</year>
+          <volume>97</volume>
+          <fpage>198</fpage>
+          <lpage>204</lpage>
+          <pub-id pub-id-type="pmid">11133761</pub-id>
+        </citation>
+      </ref>
+      <ref id="R73">
+        <label>73</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chang</surname>
+              <given-names>SK</given-names>
+            </name>
+            <name>
+              <surname>Mihalcik</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Jelinek</surname>
+              <given-names>DF</given-names>
+            </name>
+          </person-group>
+          <article-title>B lymphocyte stimulator regulates adaptive immune responses by directly promoting dendritic cell maturation</article-title>
+          <source>J. Immunol</source>
+          <year>2008</year>
+          <volume>180</volume>
+          <fpage>7394</fpage>
+          <lpage>7403</lpage>
+          <pub-id pub-id-type="pmid">18490739</pub-id>
+        </citation>
+      </ref>
+      <ref id="R74">
+        <label>74</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lai Kwan Lam</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>King Hung Ko</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Zheng</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Lu</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Local BAFF gene silencing suppresses Th17-cell generation and ameliorates autoimmune arthritis</article-title>
+          <source>Proc. Natl. Acad. Sci. USA</source>
+          <year>2008</year>
+          <volume>105</volume>
+          <fpage>14993</fpage>
+          <lpage>14998</lpage>
+          <pub-id pub-id-type="pmid">18820032</pub-id>
+        </citation>
+      </ref>
+      <ref id="R75">
+        <label>75</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ramanujam</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kahn</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Huang</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Tao</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Madaio</surname>
+              <given-names>MP</given-names>
+            </name>
+            <name>
+              <surname>Factor</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Davidson</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Interferon-α treatment of female (NZW X BXSB)F<sub>1</sub> mice mimics some but not all features associated with the <italic>Yaa</italic> mutation</article-title>
+          <source>Arthritis Rheum</source>
+          <year>2009</year>
+          <volume>60</volume>
+          <fpage>1096</fpage>
+          <lpage>1101</lpage>
+          <pub-id pub-id-type="pmid">19333924</pub-id>
+        </citation>
+      </ref>
+    </ref-list>
+    <sec id="S21" sec-type="display-objects">
+      <title>Figures</title>
+      <fig id="F1" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <title>Resistance of NZM.JHD and NZM.<italic>baff</italic><sup>−/−</sup> mice to the disease-accelerating effects of Adv-IFN</title>
+          <p>Panels A-B: Pre-autoimmune (9-11 weeks of age) WT and age-matched B cell-deficient (B-KO) or BAFF-deficient (BAFF-KO) NZM mice were injected with Adv-IFN (black lines and symbols) or Adv-control (Adv-cont; gray lines and symbols). Data are plotted as the fraction of mice over time that did not develop severe proteinuria (panel A) and remained alive (panel B). Panel C: Sera collected on day 8 post-injection with either Adv-IFN or Adv-control were available from 18 Adv-IFN-injected WT mice, 6 Adv-control-injected WT mice, 10 Adv-IFN-injected NZM.<italic>baff</italic><sup>−/−</sup> mice, and 3 Adv-control-injected NZM.<italic>baff</italic><sup>−/−</sup> mice were assayed for IFNα levels by ELISA. Samples with values &lt;12.5 pg/ml (lower limit of detection) were arbitrarily plotted as 12.5 pg/ml.</p>
+        </caption>
+        <graphic xlink:href="nihms-275356-f0001"/>
+      </fig>
+      <fig id="F2" position="float">
+        <label>Figure 2</label>
+        <caption>
+          <title>Renal histology in Adv-control-, or Adv-IFN-treated NZM, NZM.JHD, or NZM.<italic>baff</italic><sup>−/−</sup> mice</title>
+          <p>Representative H&amp;E-stained sections of formalin-fixed kidneys from NZM (panels A-C), NZM.JHD (panels D-E), and NZM.<italic>baff</italic><sup>−/−</sup> mice (panels F-I) that had been injected with Adv-control (panels A, D, F, H) or Adv-IFN (panels B, C, E, G, I). All mice were 2-3 months of age at the time of Adv injection, with the exception of “old” NZM.<italic>baff</italic><sup>−/−</sup> mice, which were 9 months of age at the time of Adv injection. The yellow arrow in panel B points to a glomerular “wire loop”. The black arrow in panel C points to an interstitial infiltrate. The red arrow in panel C points to a glomerular “crescent”. The green arrows in panels H and I point to areas of increased mesangial deposition. Original magnification is 400X.</p>
+        </caption>
+        <graphic xlink:href="nihms-275356-f0002"/>
+      </fig>
+      <fig id="F3" position="float">
+        <label>Figure 3</label>
+        <caption>
+          <title>Glomerular IgG and C3 deposition and T cell and B cell infiltration in Adv-control-, or Adv-IFN-treated NZM or NZM.<italic>baff</italic><sup>−/−</sup> mice</title>
+          <p>Representative kidney sections from NZM (panels A, B, G, H, M, N, S, T, Y, Z, EE, FF, KK, LL, QQ, RR, WW, XX) and NZM.<italic>baff</italic><sup>−/−</sup> (panels C-F, I-L, O-R, U-X, AA-DD, GG-JJ, MM-PP, SS-VV, YY-BBB) mice that had been injected with Adv-control (panels A, C, E, G, I, K, M, O, Q, S, U, W, Y, AA, CC, EE, GG, II, KK, MM, OO, QQ, SS, UU, WW, YY, AAA) or Adv-IFN (panels B, D, F, H, J, L, N, P, R, T, V, X, Z, BB, DD, FF, HH, JJ, LL, NN, PP, RR, TT, VV, XX, ZZ, BBB). were stained for IgG (panels A-F), IgG1 (panels G-L), IgG2a (panels M-R), IgG2b (panels S-X), IgG3 (panels Y-DD), C3 (panels EE-JJ), CD3 (panels KK-PP), CD20 (panels QQ-VV), or CD138 (panels WW-BBB). All mice were 2-3 months of age at the time of Adv injection, with the exception of “old” NZM.<italic>baff</italic><sup>−/−</sup> mice, which were 9 months of age at the time of Adv injection. Original magnification is 400X for panels A-JJ and 200X for panels KK-BBB.</p>
+        </caption>
+        <graphic xlink:href="nihms-275356-f0003"/>
+      </fig>
+      <fig id="F4" position="float">
+        <label>Figure 4</label>
+        <caption>
+          <title>Effect of Adv-IFN administration on spleen T cell populations in NZM and NZM.<italic>baff</italic><sup>−/−</sup> mice</title>
+          <p>Panels A-F: NZM (WT) or NZM.<italic>baff</italic><sup>−/−</sup> (BAFF KO) mice were injected with Adv-IFN (IFN) (n = 13 for WT; n = 8 for 3-month-old BAFF KO; n = 9 for 9-month-old BAFF KO) and were assessed for total spleen mononuclear cells (panel A), CD3<sup>+</sup> cells (panel B), CD4<sup>+</sup> cells (panel C), CD8<sup>+</sup> cells (panel D), CD4<sup>+</sup> naive cells (panel E), or CD4<sup>+</sup> memory cells (panel F). Control (cont) WT mice were either injected with Adv-control (n = 3) or not injected with any Adv (n = 2); control BAFF KO (3 mo) mice were either injected with Adv-control (n = 4) or not injected with any Adv (n = 2-3); and control BAFF KO (9 mo) mice were injected with Adv-control (n = 5). The composite results are plotted as box plots. The lines inside the boxes indicate the medians; the outer borders of the boxes indicate the 25th and 75th percentiles; and the bars extending from the boxes indicate the 10th and 90th percentiles. Panel G: The ratios of CD4<sup>+</sup> memory cells to CD4<sup>+</sup> naive cells (M/N ratios) from the Adv-IFN-treated or control mice in panels A-F as well as the M/N ratios from unmanipulated 5-month-old WT (n = 4), 9-month-old WT (n = 6), 6-month-old NZM.<italic>ifnar</italic><sup>−/−</sup> (IFNR KO; n = 3), 12-month-old NZM.<italic>ifnar</italic><sup>−/−</sup> (n = 3), and 5-month-old NZM.<italic>tnfr1</italic><sup>−/−</sup>.<italic>tnfr2</italic><sup>−/−</sup> (TNFR KO; n = 4) mice are plotted.</p>
+        </caption>
+        <graphic xlink:href="nihms-275356-f0004"/>
+      </fig>
+      <fig id="F5" position="float">
+        <label>Figure 5</label>
+        <caption>
+          <title>Effect of Adv-IFN administration on serum total IgG and IgG autoantibody levels and on spleen B cells in NZM and NZM.<italic>baff</italic><sup>−/−</sup> mice</title>
+          <p>Panels A-F: Adv-IFN-injected or control NZM (WT) or NZM.<italic>baff</italic><sup>−/−</sup> (BAFF KO) mice of the indicated ages were assessed for serum levels of total IgG (panel A), IgG anti-chromatin (panel B), IgG anti-dsDNA (panel C), IgG1 anti-dsDNA (panel D), IgG2a anti-dsDNA (panel E), and IgG2b anti-dsDNA (panel F) immediately prior to injection (pre) or at days 8 and 28 (d8, d28). Open symbols indicate Adv-IFN-injected mice, and closed symbols indicate control mice. WT 3-month-old NZM mice are depicted by circles; young (3-month-old) NZM.<italic>baff</italic><sup>−/−</sup> mice are depicted by triangles; and old (9-month-old) NZM.<italic>baff</italic><sup>−/−</sup> mice are depicted by diamonds. Each cohort contained 4-8 mice. Panel G: Adv-IFN-injected or control NZM (WT) or NZM.<italic>baff</italic><sup>−/−</sup> (BAFF KO) mice of the indicated ages were assessed for spleen total B (CD19<sup>+</sup>) cells. Each cohort contained 7-20 mice. Panel H: Spleens from Adv-IFN-injected or control NZM (WT) or NZM.<italic>baff</italic><sup>−/−</sup> (BAFF KO) mice were assessed for the indicated subset. Each cohort contained 3-11 mice.</p>
+        </caption>
+        <graphic xlink:href="nihms-275356-f0005"/>
+      </fig>
+      <fig id="F6" position="float">
+        <label>Figure 6</label>
+        <caption>
+          <title>Glomerular infiltration of macrophages in Adv-control- or Adv-IFN-treated NZM and NZM.<italic>baff</italic><sup>−/−</sup> mice</title>
+          <p>Representative sections of formalin-fixed kidneys stained for Mac-2<sup>+</sup> macrophages from NZM (panels A-B) young NZM.<italic>baff</italic><sup>−/−</sup> mice (panels C-D), and old NZM.<italic>baff</italic><sup>−/−</sup> mice (panels E-F) that had been injected with Adv-control (panels A, C, E) or Adv-IFN (panels B, D, F). All mice were 2.5 months of age at the time of Adv injection, with the exception of “old” NZM.<italic>baff</italic><sup>−/−</sup> mice, which were 9 months of age at the time of Adv injection. The black arrows point to individual Mac-2<sup>+</sup> macrophages. Original magnification is 200X.</p>
+        </caption>
+        <graphic xlink:href="nihms-275356-f0006"/>
+      </fig>
+      <fig id="F7" position="float">
+        <label>Figure 7</label>
+        <caption>
+          <title>Role for BAFF in IFNα-driven exaggerated disease in NZM mice</title>
+          <p>Upper half: Overexpression of IFNα activates myeloid DC (mDC) to increase BAFF production. This increased BAFF production further activates mDC and promotes increased B cell survival and activation, the latter leading to increased B cell responses to endogenous and/or exogenous TLR ligands. Collectively, this results in production of IL-6 and other proinflammatory cytokines and culminate in exaggerated disease. Lower half: Overexpression of IFNα directly activates both mDC and B cells. Such activation does not require BAFF as an intermediary, but a distinct BAFF-driven pathway in parallel must be present for exaggerated disease to develop.</p>
+        </caption>
+        <graphic xlink:href="nihms-275356-f0007"/>
+      </fig>
+    </sec>
+  </back>
+</article>

@@ -1,0 +1,9 @@
+Patient ID,Characteristic,Characteristic subcategory,Characteristic unit,Characteristic value,Population,Pregnancy stage,Pediatric/Gestational age,Note
+1,Sex,Male,N/A,7,Pediatric,N/A,N/A,N/A
+1,Sex,Female,N/A,6,Pediatric,N/A,N/A,N/A
+1,Race,"White, non Hispanic",N/A,13,Pediatric,N/A,N/A,N/A
+1,Race,"White, Hispanic",N/A,0,Pediatric,N/A,N/A,N/A
+2,Sex,Male,N/A,10,Pediatric,N/A,N/A,N/A
+2,Sex,Female,N/A,3,Pediatric,N/A,N/A,N/A
+2,Race,"White, non Hispanic",N/A,11,Pediatric,N/A,N/A,N/A
+2,Race,"White, Hispanic",N/A,2,Pediatric,N/A,N/A,N/A

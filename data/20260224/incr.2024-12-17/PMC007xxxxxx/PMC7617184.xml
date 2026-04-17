@@ -1,0 +1,1271 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties open_access?>
+  <?properties manuscript?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">9416267</journal-id>
+      <journal-id journal-id-type="nlm-ta">Soc Anim</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Soc Anim</journal-id>
+      <journal-title-group>
+        <journal-title>Society &amp; animals : social scientific studies of the human experience of other animals</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1063-1119</issn>
+      <issn pub-type="epub">1568-5306</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">39664202</article-id>
+      <article-id pub-id-type="pmc">7617184</article-id>
+      <article-id pub-id-type="manuscript">EMS184997</article-id>
+      <article-id pub-id-type="doi">10.1163/15685306-bja10139</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>What Do Scientists Mean When They Talk About Research Animals “Volunteering”?</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0001-5273-4813</contrib-id>
+          <name>
+            <surname>Palmer</surname>
+            <given-names>Alexandra</given-names>
+          </name>
+          <email>ally.palmer@auckland.ac.nz</email>
+          <aff id="A1">School of Biological Sciences, University of Auckland, Auckland, New Zealand</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-7351-2619</contrib-id>
+          <name>
+            <surname>Greenhough</surname>
+            <given-names>Beth</given-names>
+          </name>
+          <email>beth.greenhough@ouce.ox.ac.uk</email>
+          <aff id="A2">School of Geography and the Environment, Oxford University Centre for the Environment, University of Oxford, Oxford, UK</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0001-6105-0747</contrib-id>
+          <name>
+            <surname>Hobson-West</surname>
+            <given-names>Pru</given-names>
+          </name>
+          <email>Pru.Hobson-west@nottingham.ac.uk</email>
+          <aff id="A3">School of Sociology and Social Policy, University of Nottingham, Nottingham, UK</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-6811-0885</contrib-id>
+          <name>
+            <surname>Davies</surname>
+            <given-names>Gail</given-names>
+          </name>
+          <email>G.F.Davies@exeter.ac.uk</email>
+          <aff id="A4">Department of Geography, University of Exeter, Exeter, UK</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0001-8779-3282</contrib-id>
+          <name>
+            <surname>Message</surname>
+            <given-names>Reuben</given-names>
+          </name>
+          <email>rmessage@ed.ac.uk</email>
+          <aff id="A5">Science, Technology and Innovation Studies, School of Social and Political Science, University of Edinburgh, Edinburgh, UK</aff>
+        </contrib>
+      </contrib-group>
+      <pub-date pub-type="nihms-submitted">
+        <day>14</day>
+        <month>8</month>
+        <year>2023</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <day>11</day>
+        <month>8</month>
+        <year>2023</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>10</day>
+        <month>12</month>
+        <year>2024</year>
+      </pub-date>
+      <volume>32</volume>
+      <issue>7-8</issue>
+      <fpage>744</fpage>
+      <lpage>765</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available to download for the purposes of text mining, consistent with the principles of UK copyright law.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:href="https://doi.org/10.1163/15685306-bja10139"/>
+      <abstract>
+        <p id="P1">This paper examines discourses around “volunteering” in animal research. Through a qualitative textual analysis of the scientific literature using animals in behavioral and psychological research, we demonstrate that “voluntary” and related terms are used by scientists in a variety of distinct ways, which carry a range of ethical and political connotations. While any reference to volunteering might be assumed to imply free, unconstrained, and unpaid participation in an activity, in the animal research literature the term is often used simply to signal a lack of physical restraint, even though other human-imposed constraints are at play. Though truly voluntary behavior may be impossible, we nevertheless argue that there is a case for seeing use of the language of volunteering as an ethical or political move in which scientists aim to highlight a goal of minimizing human control, promoting animal welfare, or representing their research as ethically acceptable.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>agency</kwd>
+        <kwd>animal research</kwd>
+        <kwd>animal behavior</kwd>
+        <kwd>ethics</kwd>
+        <kwd>laboratory</kwd>
+        <kwd>animal psychology</kwd>
+        <kwd>voluntary</kwd>
+        <kwd>welfare</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <p id="P2">Imagine a cognitive science laboratory study in which group-living monkeys are given free access to a research cubicle in which they are presented with puzzles; the monkeys are free to leave the cubicle at any time. Research along these lines is very often described as “voluntary” for the monkeys. Now imagine the monkeys are presented with food rewards for correct answers to puzzles; is their participation voluntary in this case? What about if, rather than a puzzle, the monkeys undergo something unpleasant, like electric shocks, in return for food rewards, or are on a restricted food regime unless they participate? Is this still voluntary? How would we describe these studies if the subjects were human?</p>
+    <p id="P3">These questions illustrate the central purpose of this paper, which is to unpack the discourse of nonhuman-animal (hereafter, animal) “volunteering” in the context of scientific research. Although the scenarios presented above are hypothetical, they illustrate a real situation: that the use of the term “voluntary” is quite variable in animal research. Our goal is not only to describe the contexts in which the language of volunteering is used in animal research, but also to explore what discourses of volunteering do politically and ethically, and how these discourses construct the relationship between researchers and the animals they study. Our analysis of volunteering discourses sits within a long tradition of using discourse and rhetoric analysis to examine language used in scientific communications (e.g., <xref rid="R9" ref-type="bibr">Bazerman, 1984</xref>, <xref rid="R10" ref-type="bibr">1988</xref>; <xref rid="R21" ref-type="bibr">Collins et al., 2018</xref>; <xref rid="R38" ref-type="bibr">Gilbert &amp; Mulkay, 1984</xref>; <xref rid="R56" ref-type="bibr">Latour &amp; Woolgar, 2013</xref>; <xref rid="R64" ref-type="bibr">McLeod et al., 2019</xref>) and representations of animals in scientific contexts, such as use of language related to agency (<xref rid="R11" ref-type="bibr">Birke &amp; Smith, 1995</xref>; <xref rid="R22" ref-type="bibr">Cook &amp; Sealey, 2017</xref>; <xref rid="R31" ref-type="bibr">Durham &amp; Merskin, 2009</xref>). Such analyses are premised on the idea that language is important for shaping perceptions of the subject matter, and can therefore reveal implicit meanings in texts and show how texts are constructed to persuade readers. This research additionally contributes to ongoing discussions about the relationship between animal agency and human control (e.g., <xref rid="R28" ref-type="bibr">Despret, 2013</xref>; <xref rid="R52" ref-type="bibr">Howell, 2018</xref>; <xref rid="R72" ref-type="bibr">Pearson, 2015</xref>), the implications of viewing research animals as agentive subjects − as “workers” rather than as “lab tools” (<xref rid="R20" ref-type="bibr">Clark, 2014</xref>; <xref rid="R46" ref-type="bibr">Haraway, 2008</xref>) − and the meaning of “consent” for animals, in research and other settings (<xref rid="R4" ref-type="bibr">Arnason, 2020</xref>; <xref rid="R6" ref-type="bibr">Ashall et al., 2018</xref>; <xref rid="R32" ref-type="bibr">Fenton, 2014</xref>; <xref rid="R43" ref-type="bibr">Greenhough &amp; Roe, 2011</xref>; <xref rid="R47" ref-type="bibr">Healey &amp; Pepper, 2020</xref>).</p>
+    <p id="P4">We begin by reviewing how the language of volunteering is used in animal research, based on qualitative textual analysis of the published scientific literature. We then explore how the language of volunteering is employed to describe experiments that accord animals differing levels of agency and employ different kinds of incentive. In each case we examine the conceptual debates around animal agency, relational autonomy, and the limits to notions of informed consent, which can be used to explore the implications and limitations of using voluntariness as a way of describing specific experimental practices in animal research. We demonstrate that although reference to volunteering in humans generally indicates unconstrained and unpaid participation, in animal research literature the term is often used simply to signal a lack of physical restraint, even though other human-imposed constraints are used. We conclude by considering the implications of using the language of volunteering in animal research, arguing that while “voluntary” cannot be considered a technical term with a consistent meaning, in some cases it can be viewed as an ethical or political move in which researchers aim to highlight a goal of minimizing human control, promoting animal welfare, or representing their research as ethically acceptable. Nevertheless, efforts by some animal behavioral researchers to make animals’ participation <italic toggle="yes">as voluntary as possible</italic> remains a worthy aspiration.</p>
+    <sec id="S1">
+      <title>How the Language of Volunteering is Used in Animal Research</title>
+      <p id="P5">To explore how the term “voluntary” is currently used in animal research, we collected a sample of recent scientific publications that use “voluntary” or related terms with reference to research animals. Using Google Scholar, we performed searches for the term “voluntary” in publications also containing the phrases “animal behavior” (both U.S. and U.K. spellings), “laboratory animal,” or “zoo,” to ensure we obtained examples from a variety of settings. To make this task manageable, we restricted our search to texts published in 2018. This search yielded 75 publications and conference abstracts, of which 55 contained relevant uses of the term “voluntary.” We discarded results in which the term was applied to humans or featured only in the reference list. Based on this initial search, we then collected a further 83 publications via snowballing and searches for related terms such as “willing.” This approach provided us with a substantial, if not representative, sample of relevant animal research literature.</p>
+      <p id="P6">We assigned each paper an overarching code reflecting how the language of volunteering was used (e.g. “voluntary exercise,” “voluntary ingestion (food)”). Based on this qualitative analysis, we merged and renamed codes as appropriate to produce a list of the nine most common uses, outlined in <xref rid="T1" ref-type="table">Table 1</xref>. We found that most commonly, the language of volunteering was used in behavioral and psychological research with specific aims, such as investigating motivations for human behaviors including alcoholism and exercise, exploring animal cognition and behavior, or attending to animal welfare. However, the exact meaning of the term “voluntary” was rarely explained, nor could we find existing work suggesting how “voluntary” ought to be defined in animal research.</p>
+      <p id="P7">We therefore elected to explore discourses of volunteering in the animal research literature as represented in our sample. By <italic toggle="yes">discourse,</italic> we refer not just to language itself, but to how language “encodes, reflects, (re)produces, and challenges social norms” (Paterson &amp; Gregory, 2019, p. 27). In particular, we focus on how these discourses relate to two common ideas: that volunteering means doing something (a) willingly as a free agent, and (b) without being forced or paid. These ideas are both signaled in the Cambridge Dictionary’s (2020) definition of “voluntary” as an adjective describing an activity “done, made, or given willingly, without being forced or paid to do it.” For each of these ideas, we first outline how they have been approached in the social sciences and humanities before exploring how these ideas are reflected (or not) in the animal research literature, drawing on our sample of research publications as well as grey literature from a specific U.K.-based debate about neuroscience research involving primates.</p>
+    </sec>
+    <sec id="S2">
+      <title>Willingness and Agency</title>
+      <sec id="S3">
+        <title>Background: Agency and Constraint</title>
+        <p id="P8">Are (at least some) animals “agents?” If so, what is meant by “agency?” Responses to these complex questions have come from a variety of disciplines (<xref rid="R63" ref-type="bibr">McFarland &amp; Hediger, 2009</xref>). Our premise is that at least some animals can be agents, in the sense of being independent creatures with their own preferences and desires who are capable of shaping the world through their actions. We are not alone in making this assumption; this view lies at the heart of the so-called “animal turn” within many social science and humanities disciplines (<xref rid="R46" ref-type="bibr">Haraway, 2008</xref>; <xref rid="R77" ref-type="bibr">Ritvo, 2007</xref>). Our concern in this section is the relationship between <italic toggle="yes">agency and constraint</italic> in the animal research laboratory. After briefly reviewing key ideas about agency and constraint in the humanities and social sciences, we consider how the context of the laboratory might constrain animal agency, specifically via processes of training and breeding.</p>
+        <p id="P9">Despite acknowledging animal agency, animal studies scholars have observed that animals are still constrained by biopolitical control strategies implemented by humans, and that humans often hold more power than animals in cross-species relationships (<xref rid="R13" ref-type="bibr">Braverman, 2015</xref>; <xref rid="R83" ref-type="bibr">Srinivasan, 2013</xref>). The ways in which animals confound and resist human control have become significant areas of research in social science (e.g., <xref rid="R49" ref-type="bibr">Hodgetts &amp; Lorimer, 2020</xref>), history (<xref rid="R52" ref-type="bibr">Howell, 2018</xref>; <xref rid="R72" ref-type="bibr">Pearson, 2015</xref>), and philosophy, where scholars have explored the meaning of animal “dissent” (<xref rid="R4" ref-type="bibr">Arnason, 2020</xref>; <xref rid="R32" ref-type="bibr">Fenton, 2014</xref>; <xref rid="R47" ref-type="bibr">Healey &amp; Pepper, 2020</xref>). In this literature, questions remain about how to recognize animal dissent, and − even more challenging − how to define and recognize its opposites: “consent,” “assent,” or “voluntary” behavior (see also <xref rid="R27" ref-type="bibr">Despret, 2004</xref>, <xref rid="R28" ref-type="bibr">2013</xref>; <xref rid="R41" ref-type="bibr">Gray et al., 2018</xref>, <xref rid="R43" ref-type="bibr">Greenhough &amp; Roe, 2011</xref>).</p>
+        <p id="P10">One obstacle to developing universal definitions of these concepts is that they are context-dependent, since choices and expressions of agency are inevitably constrained and influenced by external factors (<xref rid="R47" ref-type="bibr">Healey &amp; Pepper, 2020</xref>). As summarized by <xref rid="R45" ref-type="bibr">Gruen (2011)</xref>, for both humans and animals “[t]o act autonomously does not require being completely free from constraints” (p. 149) since one can still determine how to act considering social factors that not only restrict available choices but also shape personal desires and interests. This is the concept of “relational autonomy” highlighted by feminist philosophers (see <xref rid="R61" ref-type="bibr">Mackenzie &amp; Stoljar, 2000</xref>). This means it is impossible to separate individual agency and constraint completely, and we can only talk about personal autonomy as taking place within a social context (see also <xref rid="R28" ref-type="bibr">Despret, 2013</xref>).</p>
+        <p id="P11">This social context might be deliberately shaped by powerful parties with the goal of pushing others towards certain choices, potentially involving an element of deception. Governments may use behavioral science techniques to direct people toward specific kinds of actions without outlawing undesirable behavior, a form of neoliberal governmentality (<xref rid="R60" ref-type="bibr">Lorenzini, 2018</xref>). Recent work on concepts of “nudge” and “neuroliberalism” highlight efforts by governments to subtly structure people’s choices to lead them the “right” decisions, such as making healthy lifestyle choices (<xref rid="R7" ref-type="bibr">Baldwin, 2014</xref>; <xref rid="R53" ref-type="bibr">Jones et al., 2014</xref>; <xref rid="R88" ref-type="bibr">Whitehead et al., 2019</xref>). Similar strategies may be applied to animals. For example, <xref rid="R51" ref-type="bibr">Holloway (2007)</xref> demonstrates that despite claims that Automatic Milking Systems (AMS) used on dairy farms allow cows to be milked “voluntarily” − a term used explicitly by some farmers cited by Holloway, and in one research paper we surveyed on “voluntary cow traffic” toward AMS (<xref rid="R89" ref-type="bibr">Wildridge et al., 2018</xref>) − in practice, AMS systems are installed to push cows to make “the right choices and exercise their freedom appropriately.” For example, some AMS systems are installed in a one-way system, such that cows must be milked to access food and water, and cows may be bred for their suitability for AMS systems. Thus, “autonomy granted to cows under AMS is rhetorical rather than ‘real’” (<xref rid="R89" ref-type="bibr">Wildridge et al., 2018</xref>, p. 1050). A similar argument could be made about some animal research described as voluntary.</p>
+      </sec>
+      <sec id="S4">
+        <title>Application to Animal Research: Training and Breeding</title>
+        <p id="P12">Applying these ideas to animal research encourages us to think about how research animals’ choices are shaped and constrained by the circumstances established by human researchers. This may first happen via training. Very often in the animal research literature we surveyed, training was viewed as compatible with volunteering; indeed, training was sometimes cast as <italic toggle="yes">enabling</italic> choice and as a fundamental element of “voluntary” research with animals (see also <xref rid="R4" ref-type="bibr">Arnason, 2020</xref>). For example, in a paper discussing efforts to have laboratory-housed chimpanzees voluntarily move between enclosures (<xref rid="T1" ref-type="table">Table 1</xref>), <xref rid="R12" ref-type="bibr">Bloomsmith et al. (1998)</xref> stated that “[p]ositive reinforcement allows increased choice as the animals volunteer to participate or not” (p. 339). One might liken this to a situation in which policymakers view neuroliberal strategies as still compatible with people’s ability to make free choices. However, we encountered one study where voluntary behavior was cast as antithetical to training: <xref rid="R17" ref-type="bibr">Chertoff et al. (2018)</xref> described a study in which “[p]articipation by the gorillas was voluntary in that no training or reinforcement was provided” (p. 292), implying that there may be some disagreement about the role of training in voluntary behavior among animal researchers.</p>
+        <p id="P13">Debates about the relationship between training and voluntary behavior came to the fore in discussions around a report undertaken in the U.K. by the <xref rid="R2" ref-type="bibr">Animal Procedures Committee (2013)</xref> on the experience of nonhuman primates (hereafter, primates) in neuroscience research, commonly referred to as the Pickard Report. During visits by members of the working group to research establishments, research staff raised the idea that primates “may actually look forward to performing the experimental tasks” (p. 102). In contrast, several animal protection groups argued that given evidence in the report that primates are kept hungry and thirsty as motivation for performing tasks, and force may still be used in training (e.g., use of collar and pole training), researchers interviewed for the report make a “preposterous misinterpretation” by viewing “a monkey’s desperate thirst or hunger as ‘willingness’ to sit in a ‘training chair’” (<xref rid="R1" ref-type="bibr">Animal Aid et al., 2014</xref>, p. 4). The <xref rid="R3" ref-type="bibr">Animals in Science Committee (2014)</xref> also challenged the Pickard Report’s conclusion, noting that because primates “perform tasks for so long (years in many cases) they could be performing habitually” (p. 3). In other words, the training of primates used in neuroscience research might account for their participation and should not be misread as active “willingness.” Similarly, <xref rid="R32" ref-type="bibr">Fenton (2014)</xref> argues that when chimpanzees used in research display “learned helplessness,” it is no longer morally significant whether they appear to dissent or comply with harmful research.</p>
+        <p id="P14">Another interesting practice mentioned in the Pickard Report is collaboration between scientists and breeding colony managers to select “well-motivated subject[s]” (p. 100). This hints at how humans might shape research animals’ preferences and behavior before they are even born, via breeding, like the cows Holloway describes in AMS systems. Like training, the use of breeding to shape research animals’ preferences is generally presented as compatible with volunteering. For example, mice used in exercise studies (<xref rid="T1" ref-type="table">Table 1</xref>) may be “selectively bred for high voluntary wheel-running” (<xref rid="R55" ref-type="bibr">Kelly &amp; Pomp, 2013</xref>, p. 349); the same is true in some rodent studies examining alcohol and drug consumption (<xref rid="T1" ref-type="table">Table 1</xref>; e.g., <xref rid="R18" ref-type="bibr">Chester et al., 2004</xref>). Here, one may argue that humans have played an even more significant role in shaping the behaviors an animal is inclined to perform. The behavior of domesticated animals could, in a sense, be seen in the same way, though less so if one views domestication as more of a process of mutualism or co-evolution (<xref rid="R16" ref-type="bibr">Cassidy and Mullin, 2007</xref>). Still, animals with certain personalities and life histories more readily engage in research activities (<xref rid="R48" ref-type="bibr">Herrelko et al., 2012</xref>; <xref rid="R67" ref-type="bibr">Morton et al., 2013</xref>), and humans may have played a significant role in shaping personality and life history via breeding and training.</p>
+      </sec>
+    </sec>
+    <sec id="S5">
+      <title>The Use of Force and Rewards</title>
+      <sec id="S6">
+        <title>Background: Coercion and Altruism</title>
+        <p id="P15">In the previous section, we discussed how humans might establish structures that shape the preferences of animals before the research even takes place, namely via breeding and training. We now consider the idea that voluntary behavior cannot involve any force or payment, which in turn relates to the assumption that voluntary behavior in humans should be driven by “morally worthy” motivations like altruism. Though the principle of freely given, autonomous, informed consent dominates in discussions of human research participation in clinical trials, social science research has demonstrated that in practice, people may feel compelled to participate in research due to broader contextual factors. For example, <xref rid="R75" ref-type="bibr">Rajan (2007)</xref> describes how the recruitment of unemployed mill workers from Mumbai’s former industrial district into paid clinical trials can hardly be considered voluntary in the context of few other sources of employment or healthcare. Similarly, <xref rid="R33" ref-type="bibr">Fisher and Walker (2019)</xref> point out that phase one clinical trials with healthy volunteers in the U.S. are very often run in a manner that attracts vulnerable individuals, some of whom view the money as “too good to refuse” (p. 5). For some, volunteering for clinical trials can even become a “job,” yet because clinical trial “volunteering” is not framed as work, they lack protections afforded to workers. For these reasons, financial remuneration of human volunteers is often frowned upon if it is viewed as potentially causing “coercion” or “undue inducement” (<xref rid="R70" ref-type="bibr">NHS Health Research Authority, 2014</xref>).</p>
+        <p id="P16">We see in this brief example two important points. First is the idea that sociopolitical contexts can constrain the available choices and push people toward “volunteering” for something they would not otherwise do. Second, financial incentives can transform volunteering into something that would be more commonly described as “work,” which, unlike volunteering, is commonly defined as a paid activity (e.g., <xref rid="R15" ref-type="bibr">Cambridge Dictionary, 2020b</xref>). This distinction reflects an underlying concern about whether human volunteers must be involved for the “right reasons,” i.e., motivated by altruism or personal self-fulfillment rather than money (e.g., <xref rid="R78" ref-type="bibr">Roe &amp; Greenhough, 2018</xref>). For humans, the motivation and nature of rewards or payment are therefore considered important in determining whether certain activities are “voluntary”: money should not be the reward volunteers are looking for (even if, in reality, some are motivated by money), but something more intangible, like a contribution to economic (<xref rid="R36" ref-type="bibr">Fortun, 2008</xref>) or scientific (<xref rid="R50" ref-type="bibr">Hoeyer, 2003</xref>) progress. Therefore, to “volunteer” arguably carries a connotation of action that is motivated by more “morally worthy” reasons than work.</p>
+      </sec>
+      <sec id="S7">
+        <title>Application to Animal Research: Alternative Options and Food Rewards</title>
+        <p id="P17">Applying these ideas to animal research encourages us to think not only about whether the animal has the option of doing or avoiding an activity, but also what other options are available for those who opt out. A good example of this is illustrated in cognitive research conducted by <xref rid="R37" ref-type="bibr">Gazes et al. (2013)</xref>, in which the researchers compared the test results of rhesus macaques housed in a laboratory with those housed in a free-ranging field station. In both settings, macaques were given free access to the test apparatus, and though they received food rewards for correct answers, they were also not deprived of food; as such, the researchers describe participation in the cognitive tests as “voluntary.” However, although all the laboratory-housed subjects participated in the tests, only 51% of non-infant field station monkeys participated at all. This result suggests that caged animals are more likely to “volunteer” to participate in research than free-ranging animals. Given that they did not choose to live in a constrained environment, it is reasonable to ask whether captive animals can ever participate in research voluntarily. In other words, as in the case of human participation in clinical trials, certain contexts and environments can push animals toward “volunteering” in research, such as food deprivation (see previous discussion of the Pickard Report) or captivity.</p>
+        <p id="P18">To give another concrete example, food is often described as a “reward” in the context of animal research, “voluntary” and otherwise; we might therefore think of food as equivalent to financial payment for humans. However, as research by Frans <xref rid="R26" ref-type="bibr">de Waal (2005)</xref> illustrates, quantity is not everything, since capuchins who previously appeared very happy to receive cucumbers became upset when their peers received grapes, once again demonstrating the contextual nature of individual decisions (in this case, a perceived inequality). Thus, as with human decisions to volunteer in clinical trials, animals’ decisions must be understood not only in terms of the quantity of payment offered, but also in terms of the broader sociopolitical context (<xref rid="R42" ref-type="bibr">Greenhough, 2007</xref>).</p>
+        <p id="P19">In our analysis of the animal research literature, we noticed animal behavior commonly referred to as simultaneously “reward based and voluntary” (<xref rid="R39" ref-type="bibr">Goodrowe, 2003</xref>; <xref rid="R62" ref-type="bibr">Margulis, 2017</xref>; <xref rid="R90" ref-type="bibr">Wondrak et al., 2018</xref>). Again, <xref rid="R17" ref-type="bibr">Chertoff et al. (2018)</xref> present an exception to this trend when they describe gorillas’ participation as voluntary <italic toggle="yes">because</italic> no training and reinforcement (i.e., food rewards) were provided. People commonly associate volunteering with performing an action for a worthy cause (e.g., altruism). In our analysis, <xref rid="R17" ref-type="bibr">Chertoff et al. (2018)</xref> come closest to including such normative commitments in their definition of volunteering. However, though we might acknowledge that (some) animals can be motivated by altruism (<xref rid="R25" ref-type="bibr">de Waal, 2011</xref>), it is unclear how humans would attempt to detect this without veering into “altruistic anthropomorphism” in contexts where animals’ wellbeing is compromised for an abstract “greater good” (<xref rid="R5" ref-type="bibr">Ashall, 2017</xref>). Furthermore, communicating to animals the intentions behind research is likely impossible. This means that even if animals possess capacities for altruism, we cannot accurately convey to them how others will benefit from the research (<xref rid="R4" ref-type="bibr">Arnason, 2020</xref>; <xref rid="R32" ref-type="bibr">Fenton, 2014</xref>; <xref rid="R47" ref-type="bibr">Healey &amp; Pepper, 2020</xref>).</p>
+        <p id="P20">If we cannot reasonably expect animals’ participation in research to be motivated by altruism or scientific contribution, then what motivations should we find acceptable to consider animals’ participation “truly” voluntary? One route forward could be to utilize the distinction between “extrinsic” and “intrinsic” reinforcement, the former referring to behaviors that are performed to obtain an external reward like food, and the latter to behaviors that are intrinsically rewarding, such as play, hunting, and exploration (<xref rid="R84" ref-type="bibr">Tarou &amp; Bashaw, 2007</xref>). Though it could be tempting to classify the latter as more desirable than the former, it should be noted that not all intrinsically reinforced behaviors are considered desirable − repetitive, stereotypic behaviors being one example − and “rewards” might be widely considered desirable, like human contact, toys, sensory stimulation, or care and protection as in cases of companion animals (<xref rid="R23" ref-type="bibr">Coulter, 2016</xref>). Thus, the task of delineating “desirable” and “undesirable” motivations for animals’ participation in research is not straightforward.</p>
+        <p id="P21">Putting this issue to one side, it is worth pointing out that in some publications we surveyed, the entire purpose of the study was to understand what kinds of activities offer animals some benefit beyond just food. For example, this was the case in work aimed at improving animal husbandry, and in particular cognitive studies conducted in zoos (especially with primates; <xref rid="T1" ref-type="table">Table 1</xref>) where a goal was to test whether cognitive research tasks serve as enrichment for the animals (e.g., <xref rid="R48" ref-type="bibr">Herrelko et al., 2012</xref>; <xref rid="R79" ref-type="bibr">Ross, 2010</xref>; <xref rid="R80" ref-type="bibr">Ruby &amp; Buchanan-Smith, 2015</xref>). In such studies, the reason that animals volunteer is crucial, not necessarily for determining whether a study counts as “voluntary,” but because the central goal is undermined if animals engage for the “wrong” reasons. For example, <xref rid="R87" ref-type="bibr">Washburn and Rumbaugh (1992)</xref> found that when given the choice between a cognitive task and “free food,” rhesus macaques more often chose the food. However, this result changed when the free food selection came with a 30-minute period when they could not access any cognitive tasks. As <xref rid="R79" ref-type="bibr">Ross (2010)</xref> summarizes, the result suggested that “there is ‘benefit’ to engaging in the tasks themselves above and beyond the value of the food alone” (p. 314) and therefore that this task acted as a genuine form of enrichment (see also <xref rid="R76" ref-type="bibr">Reinhardt, 1994</xref>). Animal studies like this perhaps come closest to the ideal of volunteering as involving no or minimal payment or other reward.</p>
+      </sec>
+    </sec>
+    <sec id="S8">
+      <title>What Does the Concept of Volunteering do in Animal Research?</title>
+      <p id="P22">Having explored how animal science papers differentially construct the relationships between volunteering, animal agency, and incentives offered by researchers, we are now able to critically reflect on what the idea of volunteering “does” in the context of animal research. In other words, if it is not operating as a distinctive and clearly defined scientific category, what role does it perform? We have identified at least three sets of functions.</p>
+      <p id="P23">First, by using language of agency and choice-making, one could argue that those working in animal research are making an important ethical intervention by implicitly acknowledging animals as agents − arguably, it has a similar effect to describing research animals as “working subjects.” However, in some publications we surveyed, the idea of animals as agents capable of feelings, wants, and intentions is not the general assumption. For example, studies of “voluntary exercise” in rodents (<xref rid="T1" ref-type="table">Table 1</xref>) have taken place since the late 19th century, often focusing on questions surrounding behavior motivation, with proposals ranging from hormonal status to food deprivation, play, stereotypic behavior, and genetics (see <xref rid="R44" ref-type="bibr">Greenwood &amp; Fleshner, 2019</xref>; <xref rid="R55" ref-type="bibr">Kelly &amp; Pomp, 2013</xref>; <xref rid="R82" ref-type="bibr">Sherwin, 1998</xref> for reviews). It would therefore not be contradictory to do “voluntary exercise” studies with rats and believe that rats are essentially machines governed by their genes. Thus, in some cases the language of volunteering may be used without assuming anything about animal agency; rather, the term “voluntary” is shorthand for signaling that animals were given free access to a research activity, and that no physical force was involved. In such cases, animals’ voluntary action is viewed in purely physical terms, without reference to factors that are implied when the language of volunteering is applied to humans, such as mental states, contextual factors that constrain and shape choices, and comprehension of the harms and benefits of research. Arguably, this discrepancy reflects the legacy of dualist thinking, in which only humans are regarded as possessing a “mind” or “soul” while “animality” is conceived in largely physical terms (<xref rid="R65" ref-type="bibr">Midgley, 1978</xref>). Nevertheless, in other cases, use of the term “voluntary” does seem intended to imply animal agency. For example, studies aimed at offering cognitive enrichment for captive primates (e.g., see <xref rid="R48" ref-type="bibr">Herrelko et al., 2012</xref>; <xref rid="R79" ref-type="bibr">Ross, 2010</xref>; <xref rid="R80" ref-type="bibr">Ruby &amp; Buchanan-Smith, 2015</xref>; <xref rid="R87" ref-type="bibr">Washburn &amp; Rumbaugh, 1992</xref>) are premised on assumptions of primate intelligence, preferences, and feelings.</p>
+      <p id="P24">Second, using the term “voluntary” may also (intentionally or otherwise) frame research in a more positive light than if other terms, such as “work,” were used instead, given the more positive connotations of volunteering. The importance of this distinction is assumed in some human-animal studies literature that describes animal “work” as “grounded in constraint, suffering, and dependence” on humans (<xref rid="R73" ref-type="bibr">Porcher, 2017</xref>, p. 309; see also Barua, 2019; though see <xref rid="R23" ref-type="bibr">Coulter, 2016</xref>, for a broader definition of animal work that includes “voluntary labor” such as care work in human homes). Some animal researchers have attempted to draw similar distinctions. For example, <xref rid="R62" ref-type="bibr">Margulis (2017)</xref> makes the case that zoos need to “emphasiz[e] the differences between the observational, noninvasive, opportunistic, voluntary research conducted in zoos, and the sometimes invasive experimental studies that are often assumed to be the essence of any animal-based research” (p. 73). In other words, <xref rid="R62" ref-type="bibr">Margulis (2017)</xref> argues that describing zoo-based research as voluntary can help make it apparent that this activity is different (and, implicitly, more ethically acceptable) than much lab-based research.</p>
+      <p id="P25">Third, the language of volunteering is used by some authors to demonstrate their stated commitment to animal welfare, on the grounds that research described as voluntary is better for animal welfare than non-voluntary research. For example, <xref rid="R62" ref-type="bibr">Margulis (2017)</xref> highlights how voluntary research in zoos is part of a wider aim to use training to facilitate voluntary husbandry behavior, such as cooperating with medical procedures (<xref rid="T1" ref-type="table">Table 1</xref>; see <xref rid="R12" ref-type="bibr">Bloomsmith et al., 1998</xref>; <xref rid="R58" ref-type="bibr">Laule &amp; Whittaker, 2007</xref>). In laboratories too, training is often used to facilitate voluntary husbandry, not only as a way of getting better research results (<xref rid="R81" ref-type="bibr">Schapiro et al., 2005</xref>) but also because of the positive welfare effects of “voluntary cooperation,” such as reduction in stress symptoms (e.g., <xref rid="R57" ref-type="bibr">Laule et al., 2003</xref>; <xref rid="R58" ref-type="bibr">Laule &amp; Whittaker, 2007</xref>). Animal welfare is also a goal of many studies focused on providing cognitive enrichment. Nevertheless, it is important to remain critical of the welfare implications of “voluntary” activities, since they might also have negative effects − as <xref rid="R48" ref-type="bibr">Herrelko et al., (2012)</xref> states, “preference alone is not sufficient, as activities may have a detrimental impact” (p. 829; see also <xref rid="R69" ref-type="bibr">Neal Webb et al., 2019</xref>; <xref rid="R79" ref-type="bibr">Ross, 2010</xref>). Nevertheless, we maintain that at least some of the authors whose work we explored would appear to use the language of volunteering as part of an underlying ethical goal of improving animal welfare.</p>
+    </sec>
+    <sec sec-type="conclusions" id="S9">
+      <title>Conclusion</title>
+      <p id="P26">This paper has shown that the language of volunteering is evident in different kinds of animal research literature, and that this language is utilized in several ways. While at first any reference to volunteering might be assumed to imply free, unconstrained, and unpaid participation in an activity, in reality, various human-imposed constraints are at play for the animal “volunteers.” These constraints can shape animals’ preferences and subjectivities before research takes place via captivity, breeding, and training, and constrain choice during research via the restriction of other options and use of rewards such as food.</p>
+      <p id="P27">In animal research, the extent to which these constraints are discussed or accounted for is highly variable. In some cases, the use of breeding, training, rewards, and restriction of alternatives are presented as compatible with “voluntary” behavior, implying that volunteering equates to an absence of physical force. However, in other cases, such as some primate cognition research in zoos, a deeper meaning of “voluntary” is implied, since the purpose of the research is often to offer choice and stimulation as methods for improving animal welfare. Indeed, some authors regard the use of training and rewards as incompatible with truly voluntary behavior (<xref rid="R17" ref-type="bibr">Chertoff et al., 2018</xref>).</p>
+      <p id="P28">Given this wide variation of use, we consider that it may be helpful for researchers to expand on what they mean by the term “voluntary” in writing about their study design, for example, by describing how factors such as breeding, training, individual personality, life history, and choice feature in their research. Though this would not lead to a single, consistent definition of voluntary animal research, it would at least enable readers to reflect on the appropriateness (or otherwise) of how the term is being used in a particular study.</p>
+      <p id="P29">In conclusion, it remains questionable whether “pure” voluntary behavior is ever attainable in research involving either human or animal subjects. Human agency is expressed relationally and within specific social contexts, and even apparently voluntary participation in human clinical trials may be shaped and constrained by specific social circumstances. In animals, “pure” voluntary behavior is perhaps even less likely, given the extensive constraints imposed by humans on research animals, the likely impossibility of accurately communicating to animals the justifications for research, the extent of harms they may experience while participating, and the difficulties involved in interpreting animals’ motivations. Yet the effort by some animal behavioral researchers to make animals’ participation as voluntary as possible, partly to enhance animal welfare, echoes Despret’s (2004, 2016) encouragement to work with animals in ways that seek to acknowledge animal agency, even if we are unable to secure informed consent. In other words, even if “pure” voluntary animal research is difficult to achieve, it is nonetheless a worthy aspiration, and one to be encouraged within animal research communities and beyond.</p>
+    </sec>
+  </body>
+  <back>
+    <ack id="S10">
+      <title>Acknowledgements</title>
+      <p>This research was conducted as part of The Animal Research Nexus program, which is funded by a five-year Wellcome Trust Collaborative Award (WT205393/A/16/z £1,633,835, 2017–2022). We also gratefully acknowledge Professor Hannah Buchanan-Smith and other researchers in the Behaviour and Evolution Research Group (BERG) at the University of Stirling for initial conversations about animal volunteering in January 2019, which inspired the subject of this paper (see <ext-link xlink:href="https://animalresearchnexus.org/blogs/can-animals-volunteer-participate-research" ext-link-type="uri">https://animalresearchnexus.org/blogs/can-animals-volunteer-participate-research</ext-link>).</p>
+    </ack>
+    <ref-list>
+      <ref id="R1">
+        <element-citation publication-type="book">
+          <collab>Animal Aid, People for the Ethical Treatment of Animals Foundation [PETA], &amp; National Anti-Vivisection Society [NAVS]</collab>
+          <source>Review of APC report on the assessment of cumulative severity and lifetime experience in non-human primates used in neuroscience research</source>
+          <publisher-name>Animal Aid</publisher-name>
+          <year>2014</year>
+        </element-citation>
+      </ref>
+      <ref id="R2">
+        <element-citation publication-type="book">
+          <collab>Animal Procedures Committee</collab>
+          <source>Review of the assessment of cumulative severity and lifetime experience in non-human primates used in neuroscience research: Report of the Animal Procedures Committee’s Primate Subcommittee Working Group chaired by Professor John Pickard FMedSci</source>
+          <publisher-name>Animal Procedures Committee</publisher-name>
+          <year>2013</year>
+        </element-citation>
+      </ref>
+      <ref id="R3">
+        <element-citation publication-type="book">
+          <collab>Animals in Science Committee</collab>
+          <source>Response to the review of the assessment of cumulative severity and lifetime experience in non-human primates used in neuroscience − the Pickard Report</source>
+          <publisher-name>Animals in Science Committee</publisher-name>
+          <year>2014</year>
+        </element-citation>
+      </ref>
+      <ref id="R4">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Arnason</surname><given-names>G</given-names></name>
+</person-group><article-title>The emergence and development of animal research ethics: A review with a focus on nonhuman primates</article-title><source>Science and Engineering Ethics</source><year>2020</year><volume>26</volume><issue>4</issue><fpage>2277</fpage><lpage>2293</lpage><pub-id pub-id-type="doi">10.1007/s11948-020-00219-z</pub-id><pub-id pub-id-type="pmid">32350758</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R5">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Ashall</surname><given-names>V</given-names></name>
+</person-group>
+          <source>Veterinary donation: To what extent can the ethical justifications for living human donation be applied to living animal donation?</source>
+          <publisher-name>University of Nottingham</publisher-name>
+          <year>2017</year>
+          <comment>[Unpublished doctoral thesis]</comment>
+        </element-citation>
+      </ref>
+      <ref id="R6">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ashall</surname><given-names>V</given-names></name>
+<name><surname>Millar</surname><given-names>KM</given-names></name>
+<name><surname>Hobson-West</surname><given-names>P</given-names></name>
+</person-group><article-title>Informed consent in veterinary medicine: Ethical implications for the profession and the animal “patient”</article-title><source>Food Ethics</source><year>2018</year><volume>1</volume><fpage>247</fpage><lpage>258</lpage><pub-id pub-id-type="doi">10.1007/s41055-017-0016-2</pub-id><pub-id pub-id-type="pmid">30882023</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R7">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Baldwin</surname><given-names>R</given-names></name>
+</person-group>
+          <article-title>From regulation to behaviour change: Giving nudge the third degree</article-title>
+          <source>The Modern Law Review</source>
+          <year>2014</year>
+          <volume>77</volume>
+          <issue>6</issue>
+          <fpage>831</fpage>
+          <lpage>57</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R8">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Barua</surname><given-names>M</given-names></name>
+</person-group>
+          <article-title>Animating capital: Work, commodities, circulation</article-title>
+          <source>Progress in Human Geography</source>
+          <year>2019</year>
+          <volume>43</volume>
+          <issue>4</issue>
+          <fpage>650</fpage>
+          <lpage>669</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R9">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Bazerman</surname><given-names>C</given-names></name>
+</person-group>
+          <article-title>Modern evolution of the experimental report in physics: Spectroscopic articles in physical review, 1893–1980</article-title>
+          <source>Social Studies of Science</source>
+          <year>1984</year>
+          <volume>14</volume>
+          <issue>2</issue>
+          <fpage>163</fpage>
+          <lpage>96</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R10">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Bazerman</surname><given-names>C</given-names></name>
+</person-group>
+          <source>Shaping written knowledge: The genre and activity of the experimental article in science</source>
+          <publisher-name>University of Wisconsin Press</publisher-name>
+          <year>1988</year>
+        </element-citation>
+      </ref>
+      <ref id="R11">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Birke</surname><given-names>L</given-names></name>
+<name><surname>Smith</surname><given-names>J</given-names></name>
+</person-group><article-title>Animals in experimental reports: The rhetoric of science</article-title><source>Society &amp; Animals</source><year>1995</year><volume>3</volume><issue>1</issue><fpage>23</fpage><lpage>42</lpage><pub-id pub-id-type="pmid">11653208</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R12">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bloomsmith</surname><given-names>MA</given-names></name>
+<name><surname>Stone</surname><given-names>AM</given-names></name>
+<name><surname>Laule</surname><given-names>GE</given-names></name>
+</person-group><article-title>Positive reinforcement training to enhance the voluntary movement of group-housed chimpanzees within their enclosures</article-title><source>Zoo Biology</source><year>1998</year><volume>17</volume><issue>4</issue><fpage>333</fpage><lpage>41</lpage><pub-id pub-id-type="pmid">19383217</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R13">
+        <element-citation publication-type="book">
+          <person-group person-group-type="editor">
+<name><surname>Braverman</surname><given-names>I</given-names></name>
+</person-group>
+          <source>Animals, biopolitics, law: Lively legalities</source>
+          <publisher-name>Routledge</publisher-name>
+          <year>2015</year>
+        </element-citation>
+      </ref>
+      <ref id="R14">
+        <element-citation publication-type="journal">
+          <collab>Cambridge Dictionary</collab>
+          <source>Voluntary</source>
+          <year>2020a</year>
+          <comment>Retrieved January 22, 2020, from <ext-link xlink:href="https://dictionary.cambridge.org/dictionary/english/voluntary" ext-link-type="uri">https://dictionary.cambridge.org/dictionary/english/voluntary</ext-link></comment>
+        </element-citation>
+      </ref>
+      <ref id="R15">
+        <element-citation publication-type="journal">
+          <collab>Cambridge Dictionary</collab>
+          <source>Work</source>
+          <year>2020b</year>
+          <comment>Retrieved January 22, 2020, from <ext-link xlink:href="https://dictionary.cambridge.org/dictionary/english/work" ext-link-type="uri">https://dictionary.cambridge.org/dictionary/english/work</ext-link></comment>
+        </element-citation>
+      </ref>
+      <ref id="R16">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Cassidy</surname><given-names>R</given-names></name>
+<name><surname>Mullin</surname><given-names>M</given-names></name>
+</person-group>
+          <source>Where the wild things are now: Domestication reconsidered</source>
+          <publisher-name>Berg Publishers</publisher-name>
+          <year>2007</year>
+        </element-citation>
+      </ref>
+      <ref id="R17">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Chertoff</surname><given-names>S</given-names></name>
+<name><surname>Margulis</surname><given-names>S</given-names></name>
+<name><surname>Rodgers</surname><given-names>JD</given-names></name>
+</person-group>
+          <article-title>Visual processing of faces in juvenile Western Lowland Gorillas without the use of training or reinforcement: A pilot study</article-title>
+          <source>Animal Behavior and Cognition</source>
+          <year>2018</year>
+          <volume>5</volume>
+          <issue>3</issue>
+          <fpage>292</fpage>
+          <lpage>99</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R18">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Chester</surname><given-names>JA</given-names></name>
+<name><surname>Blose</surname><given-names>AM</given-names></name>
+<name><surname>Zweifel</surname><given-names>M</given-names></name>
+<name><surname>Froehlich</surname><given-names>JC</given-names></name>
+</person-group><article-title>Effects of stress on alcohol consumption in rats selectively bred for high or low alcohol drinking</article-title><source>Alcoholism: Clinical and Experimental Research</source><year>2004</year><volume>28</volume><issue>3</issue><fpage>385</fpage><lpage>93</lpage><pub-id pub-id-type="pmid">15084895</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R19">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Clark</surname><given-names>CJ</given-names></name>
+</person-group>
+          <article-title>Signal or cue? Locomotion-induced sounds and the evolution of communication</article-title>
+          <source>Animal Behaviour</source>
+          <year>2018</year>
+          <volume>143</volume>
+          <fpage>83</fpage>
+          <lpage>91</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R20">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Clark</surname><given-names>JL</given-names></name>
+</person-group>
+          <part-title>Labourers or lab tools? Rethinking the role of lab animals</part-title>
+          <person-group person-group-type="editor">
+<name><surname>Taylor</surname><given-names>N</given-names></name>
+<name><surname>Twine</surname><given-names>R</given-names></name>
+</person-group>
+          <source>The rise of critical animal studies: From the margins to the centre</source>
+          <publisher-name>Routledge</publisher-name>
+          <year>2014</year>
+          <fpage>139</fpage>
+          <lpage>164</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R21">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Collins</surname><given-names>LC</given-names></name>
+<name><surname>Jaspal</surname><given-names>R</given-names></name>
+<name><surname>Nerlich</surname><given-names>B</given-names></name>
+</person-group><article-title>Who or what has agency in the discussion of antimicrobial resistance in UK news media (2010–2015)? A transitivity analysis</article-title><source>Health</source><year>2018</year><volume>22</volume><issue>6</issue><fpage>521</fpage><lpage>40</lpage><pub-id pub-id-type="pmid">28637360</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R22">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Cook</surname><given-names>G</given-names></name>
+<name><surname>Sealey</surname><given-names>A</given-names></name>
+</person-group>
+          <part-title>The discursive representation of animals</part-title>
+          <person-group person-group-type="editor">
+<name><surname>Fill</surname><given-names>AF</given-names></name>
+<name><surname>Penz</surname><given-names>H</given-names></name>
+</person-group>
+          <source>The Routledge handbook of ecolinguistics</source>
+          <publisher-name>Routledge</publisher-name>
+          <year>2017</year>
+        </element-citation>
+      </ref>
+      <ref id="R23">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Coulter</surname><given-names>K</given-names></name>
+</person-group>
+          <source>Animals, work, and the promise of interspecies solidarity</source>
+          <publisher-name>Palgrave Macmillan</publisher-name>
+          <publisher-loc>US</publisher-loc>
+          <year>2016</year>
+        </element-citation>
+      </ref>
+      <ref id="R24">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Dantzer</surname><given-names>B</given-names></name>
+<name><surname>Dubuc</surname><given-names>C</given-names></name>
+<name><surname>Goncalves</surname><given-names>IB</given-names></name>
+<name><surname>Cram</surname><given-names>DL</given-names></name>
+<name><surname>Bennett</surname><given-names>NC</given-names></name>
+<name><surname>Ganswindt</surname><given-names>A</given-names></name>
+<name><surname>Heistermann</surname><given-names>M</given-names></name>
+<name><surname>Duncan</surname><given-names>C</given-names></name>
+<name><surname>Gaynor</surname><given-names>D</given-names></name>
+<name><surname>Clutton-Brock</surname><given-names>TH</given-names></name>
+</person-group><article-title>The development of individual differences in cooperative behaviour: Maternal glucocorticoid hormones alter helping behaviour of offspring in wild meerkats</article-title><source>Philosophical Transactions of the Royal Society B: Biological Sciences</source><year>2019</year><volume>374</volume><issue>1770</issue><elocation-id>20180117</elocation-id><pub-id pub-id-type="doi">10.1098/rstb.2018.0117</pub-id><pub-id pub-id-type="pmid">30966876</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R25">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>de Waal</surname><given-names>F</given-names></name>
+</person-group><article-title>What is an animal emotion?</article-title><source>Annals of the New York Academy of Sciences</source><year>2011</year><volume>1224</volume><issue>1</issue><fpage>191</fpage><lpage>206</lpage><pub-id pub-id-type="pmid">21486301</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R26">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>de Waal</surname><given-names>FBM</given-names></name>
+</person-group><article-title>How animals do business</article-title><source>Scientific American</source><year>2005</year><fpage>55</fpage><lpage>61</lpage><pub-id pub-id-type="pmid">15915815</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R27">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Despret</surname><given-names>V</given-names></name>
+</person-group>
+          <article-title>The body we care for: Figures of Anthropo-Zoo-Genesis’</article-title>
+          <source>Body &amp; Society</source>
+          <year>2004</year>
+          <volume>10</volume>
+          <issue>2–3</issue>
+          <fpage>111</fpage>
+          <lpage>34</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R28">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Despret</surname><given-names>V</given-names></name>
+</person-group>
+          <article-title>From secret agents to interagency</article-title>
+          <source>History and Theory</source>
+          <year>2013</year>
+          <volume>52</volume>
+          <issue>4</issue>
+          <fpage>29</fpage>
+          <lpage>44</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R29">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Despret</surname><given-names>V</given-names></name>
+</person-group>
+          <source>What would animals say if we asked the right questions?</source>
+          <publisher-name>University of Minnesota Press</publisher-name>
+          <year>2016</year>
+        </element-citation>
+      </ref>
+      <ref id="R30">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Dunlop</surname><given-names>R</given-names></name>
+<name><surname>Millsopp</surname><given-names>S</given-names></name>
+<name><surname>Laming</surname><given-names>P</given-names></name>
+</person-group>
+          <article-title>Avoidance learning in goldfish <italic toggle="yes">(Carassius auratus)</italic> and trout <italic toggle="yes">(Oncorhynchus mykiss)</italic> and implications for pain perception</article-title>
+          <source>Applied Animal Behaviour Science</source>
+          <year>2006</year>
+          <volume>97</volume>
+          <issue>2</issue>
+          <fpage>255</fpage>
+          <lpage>71</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R31">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Durham</surname><given-names>D</given-names></name>
+<name><surname>Merskin</surname><given-names>D</given-names></name>
+</person-group>
+          <part-title>Animals, agency, and absence: A discourse analysis of institutional animal care and use committee meetings</part-title>
+          <person-group person-group-type="editor">
+<name><surname>McFarland</surname><given-names>SE</given-names></name>
+<name><surname>Hediger</surname><given-names>R</given-names></name>
+</person-group>
+          <source>Animals and agency: An interdisciplinary exploration</source>
+          <publisher-name>Brill</publisher-name>
+          <year>2009</year>
+          <fpage>229</fpage>
+          <lpage>47</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R32">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Fenton</surname><given-names>A</given-names></name>
+</person-group><article-title>Can a chimp say “no”? Reenvisioning chimpanzee dissent in harmful research</article-title><source>Cambridge Quarterly of Healthcare Ethics</source><year>2014</year><volume>23</volume><issue>2</issue><fpage>130</fpage><lpage>39</lpage><pub-id pub-id-type="pmid">24495658</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R33">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Fisher</surname><given-names>JA</given-names></name>
+<name><surname>Walker</surname><given-names>RL</given-names></name>
+</person-group><article-title>Advancing ethics and policy for healthy-volunteer research through a model-organism framework</article-title><source>Ethics &amp; Human Research</source><year>2019</year><volume>41</volume><issue>1</issue><fpage>4</fpage><lpage>14</lpage><pub-id pub-id-type="doi">10.1002/eahr.500001</pub-id><pub-id pub-id-type="pmid">30744313</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R34">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Forbes</surname><given-names>JM</given-names></name>
+</person-group>
+          <source>The voluntary food intake of farm animals</source>
+          <publisher-name>Butterworth-Heinemann</publisher-name>
+          <year>2013</year>
+        </element-citation>
+      </ref>
+      <ref id="R35">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Forkman</surname><given-names>B</given-names></name>
+<name><surname>Boissy</surname><given-names>A</given-names></name>
+<name><surname>Meunier-Salaün</surname><given-names>MC</given-names></name>
+<name><surname>Canali</surname><given-names>E</given-names></name>
+<name><surname>Jones</surname><given-names>RB</given-names></name>
+</person-group><article-title>A critical review of fear tests used on cattle, pigs, sheep, poultry and horses</article-title><source>Physiology &amp; Behavior</source><year>2007</year><volume>92</volume><issue>3</issue><fpage>340</fpage><lpage>74</lpage><pub-id pub-id-type="pmid">18046784</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R36">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Fortun</surname><given-names>M</given-names></name>
+</person-group>
+          <source>Promising genomics</source>
+          <publisher-name>University of California Press</publisher-name>
+          <year>2008</year>
+        </element-citation>
+      </ref>
+      <ref id="R37">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Gazes</surname><given-names>RP</given-names></name>
+<name><surname>Brown</surname><given-names>EK</given-names></name>
+<name><surname>Basile</surname><given-names>BM</given-names></name>
+<name><surname>Hampton</surname><given-names>RR</given-names></name>
+</person-group><article-title>Automated cognitive testing of monkeys in social groups yields results comparable to individual laboratory-based testing</article-title><source>Animal Cognition</source><year>2013</year><volume>16</volume><issue>3</issue><fpage>445</fpage><lpage>58</lpage><pub-id pub-id-type="doi">10.1007/s10071-012-0585-8</pub-id><pub-id pub-id-type="pmid">23263675</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R38">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Gilbert</surname><given-names>N</given-names></name>
+<name><surname>Mulkay</surname><given-names>M</given-names></name>
+</person-group>
+          <source>Opening Pandora’s box: A sociological analysis of scientists’ discourse</source>
+          <publisher-name>Cambridge University Press</publisher-name>
+          <year>1984</year>
+        </element-citation>
+      </ref>
+      <ref id="R39">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Goodrowe</surname><given-names>KL</given-names></name>
+</person-group><article-title>Programs for invasive research in North American zoos and aquariums</article-title><source>ILAR Journal</source><year>2003</year><volume>44</volume><issue>4</issue><fpage>317</fpage><lpage>23</lpage><pub-id pub-id-type="pmid">13130162</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R40">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Grant</surname><given-names>EP</given-names></name>
+<name><surname>Brown</surname><given-names>A</given-names></name>
+<name><surname>Wickham</surname><given-names>SL</given-names></name>
+<name><surname>Anderson</surname><given-names>F</given-names></name>
+<name><surname>Barnes</surname><given-names>AL</given-names></name>
+<name><surname>Fleming</surname><given-names>PA</given-names></name>
+<name><surname>Miller</surname><given-names>DW</given-names></name>
+</person-group>
+          <article-title>What can the quantitative and qualitative behavioural assessment of videos of sheep moving through an autonomous data capture system tell us about welfare?</article-title>
+          <source>Applied Animal Behaviour Science</source>
+          <year>2018</year>
+          <volume>208</volume>
+          <fpage>31</fpage>
+          <lpage>39</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R41">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Gray</surname><given-names>CA</given-names></name>
+<name><surname>Fox</surname><given-names>M</given-names></name>
+<name><surname>Hobson-West</surname><given-names>P</given-names></name>
+</person-group><article-title>Reconciling autonomy and beneficence in treatment decision-making for animal patients</article-title><source>Liverpool Law Review</source><year>2018</year><volume>39</volume><issue>3</issue><pub-id pub-id-type="doi">10.1007/s10991-018-9211-4</pub-id><pub-id pub-id-type="pmid">30996497</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R42">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Greenhough</surname><given-names>B</given-names></name>
+</person-group>
+          <article-title>Situated knowledges and the spaces of consent</article-title>
+          <source>Geoforum</source>
+          <year>2007</year>
+          <volume>38</volume>
+          <issue>6</issue>
+          <fpage>1140</fpage>
+          <lpage>1151</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R43">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Greenhough</surname><given-names>B</given-names></name>
+<name><surname>Roe</surname><given-names>E</given-names></name>
+</person-group>
+          <article-title>Ethics, space, and somatic sensibilities: Comparing relationships between scientific researchers and their human and animal experimental subjects</article-title>
+          <source>Environment and Planning D: Society and Space</source>
+          <year>2011</year>
+          <volume>29</volume>
+          <issue>1</issue>
+          <fpage>47</fpage>
+          <lpage>66</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R44">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Greenwood</surname><given-names>BN</given-names></name>
+<name><surname>Fleshner</surname><given-names>M</given-names></name>
+</person-group><article-title>Voluntary wheel running: A useful rodent model for investigating mechanisms of stress robustness and exercise motivation</article-title><source>Current Opinion in Behavioral Sciences</source><year>2019</year><volume>28</volume><fpage>78</fpage><lpage>84</lpage><pub-id pub-id-type="doi">10.1016/j.cobeha.2019.02.001</pub-id><pub-id pub-id-type="pmid">32766411</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R45">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Gruen</surname><given-names>L</given-names></name>
+</person-group>
+          <source>Ethics and animals: An introduction</source>
+          <publisher-name>Cambridge University Press</publisher-name>
+          <year>2011</year>
+        </element-citation>
+      </ref>
+      <ref id="R46">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Haraway</surname><given-names>DJ</given-names></name>
+</person-group>
+          <source>When species meet</source>
+          <publisher-name>University of Minnesota Press</publisher-name>
+          <year>2008</year>
+        </element-citation>
+      </ref>
+      <ref id="R47">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Healey</surname><given-names>R</given-names></name>
+<name><surname>Pepper</surname><given-names>A</given-names></name>
+</person-group>
+          <article-title>Interspecies justice: Agency, self-determination, and assent</article-title>
+          <source>Philosophical Studies</source>
+          <year>2020</year>
+        </element-citation>
+      </ref>
+      <ref id="R48">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Herrelko</surname><given-names>ES</given-names></name>
+<name><surname>Vick</surname><given-names>S-J</given-names></name>
+<name><surname>Buchanan-Smith</surname><given-names>HM</given-names></name>
+</person-group><article-title>Cognitive research in zoo-housed chimpanzees: Influence of personality and impact on welfare</article-title><source>American Journal of Primatology</source><year>2012</year><volume>74</volume><issue>9</issue><fpage>828</fpage><lpage>840</lpage><pub-id pub-id-type="pmid">22648997</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R49">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Hodgetts</surname><given-names>T</given-names></name>
+<name><surname>Lorimer</surname><given-names>J</given-names></name>
+</person-group>
+          <article-title>Animals’ mobilities</article-title>
+          <source>Progress in Human Geography</source>
+          <year>2020</year>
+          <volume>44</volume>
+          <issue>1</issue>
+          <fpage>4</fpage>
+          <lpage>26</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R50">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Hoeyer</surname><given-names>K</given-names></name>
+</person-group><article-title>“Science is really needed − That’s all I know”: Informed consent and the non-verbal practices of collecting blood for genetic research in Northern Sweden</article-title><source>New Genetics and Society</source><year>2003</year><volume>22</volume><issue>3</issue><fpage>229</fpage><lpage>44</lpage><pub-id pub-id-type="pmid">15115024</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R51">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Holloway</surname><given-names>L</given-names></name>
+</person-group>
+          <article-title>Subjecting cows to robots: Farming technologies and the making of animal subjects</article-title>
+          <source>Environment and Planning D: Society and Space</source>
+          <year>2007</year>
+          <volume>25</volume>
+          <issue>6</issue>
+          <fpage>1041</fpage>
+          <lpage>1060</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R52">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Howell</surname><given-names>P</given-names></name>
+</person-group>
+          <part-title>Animals, agency, and history</part-title>
+          <person-group person-group-type="editor">
+<name><surname>Kean</surname><given-names>H</given-names></name>
+</person-group>
+          <source>The Routledge companion to animal − human history</source>
+          <publisher-name>Routledge</publisher-name>
+          <year>2018</year>
+          <fpage>197</fpage>
+          <lpage>221</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R53">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Jones</surname><given-names>R</given-names></name>
+<name><surname>Pykett</surname><given-names>J</given-names></name>
+<name><surname>Whitehead</surname><given-names>M</given-names></name>
+</person-group>
+          <article-title>The geographies of policy translation: How nudge became the default policy option</article-title>
+          <source>Environment and Planning C: Government and Policy</source>
+          <year>2014</year>
+          <volume>32</volume>
+          <issue>1</issue>
+          <fpage>54</fpage>
+          <lpage>69</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R54">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Kaartinen</surname><given-names>J</given-names></name>
+<name><surname>Lair</surname><given-names>S</given-names></name>
+<name><surname>Walsh</surname><given-names>MT</given-names></name>
+<name><surname>Burns</surname><given-names>P</given-names></name>
+<name><surname>Desmarchelier</surname><given-names>M</given-names></name>
+<name><surname>Pang</surname><given-names>JM</given-names></name>
+<name><surname>Pang</surname><given-names>DSJ</given-names></name>
+</person-group><article-title>Anesthesia of aquarium-housed walrus <italic toggle="yes">(Odobenus rosmarus):</italic> A case series</article-title><source>Journal of Zoo and Wildlife Medicine</source><year>2018</year><volume>49</volume><issue>2</issue><fpage>435</fpage><lpage>443</lpage><pub-id pub-id-type="pmid">29900767</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R55">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Kelly</surname><given-names>SA</given-names></name>
+<name><surname>Pomp</surname><given-names>D</given-names></name>
+</person-group><article-title>Genetic determinants of voluntary exercise</article-title><source>Trends in Genetics</source><year>2013</year><volume>29</volume><issue>6</issue><fpage>348</fpage><lpage>57</lpage><pub-id pub-id-type="doi">10.1016/j.tig.2012.12.007</pub-id><pub-id pub-id-type="pmid">23351966</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R56">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Latour</surname><given-names>B</given-names></name>
+<name><surname>Woolgar</surname><given-names>S</given-names></name>
+</person-group>
+          <source>Laboratory life: The construction of scientific facts</source>
+          <publisher-name>Princeton University Press</publisher-name>
+          <year>2013</year>
+        </element-citation>
+      </ref>
+      <ref id="R57">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Laule</surname><given-names>GE</given-names></name>
+<name><surname>Bloomsmith</surname><given-names>MA</given-names></name>
+<name><surname>Schapiro</surname><given-names>SJ</given-names></name>
+</person-group><article-title>The use of positive reinforcement training techniques to enhance the care, management, and welfare of primates in the laboratory</article-title><source>Journal of Applied Animal Welfare Science</source><year>2003</year><volume>6</volume><issue>3</issue><fpage>163</fpage><lpage>73</lpage><pub-id pub-id-type="pmid">14612265</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R58">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Laule</surname><given-names>GE</given-names></name>
+<name><surname>Whittaker</surname><given-names>M</given-names></name>
+</person-group><article-title>Enhancing nonhuman primate care and welfare through the use of positive reinforcement training</article-title><source>Journal of Applied Animal Welfare Science</source><year>2007</year><volume>10</volume><issue>1</issue><fpage>31</fpage><lpage>38</lpage><pub-id pub-id-type="pmid">17484676</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R59">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Leasure</surname><given-names>JL</given-names></name>
+<name><surname>Jones</surname><given-names>M</given-names></name>
+</person-group><article-title>Forced and voluntary exercise differentially affect brain and behavior</article-title><source>Neuroscience</source><year>2008</year><volume>156</volume><issue>3</issue><fpage>456</fpage><lpage>65</lpage><pub-id pub-id-type="pmid">18721864</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R60">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Lorenzini</surname><given-names>D</given-names></name>
+</person-group>
+          <article-title>Governmentality, subjectivity, and the neoliberal form of life</article-title>
+          <source>Journal for Cultural Research</source>
+          <year>2018</year>
+          <volume>22</volume>
+          <issue>2</issue>
+          <fpage>154</fpage>
+          <lpage>66</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R61">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Mackenzie</surname><given-names>C</given-names></name>
+<name><surname>Stoljar</surname><given-names>N</given-names></name>
+</person-group>
+          <source>Relational autonomy: Feminist perspectives on autonomy, agency, and the social self</source>
+          <publisher-name>Oxford University Press</publisher-name>
+          <year>2000</year>
+        </element-citation>
+      </ref>
+      <ref id="R62">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Margulis</surname><given-names>S</given-names></name>
+</person-group>
+          <part-title>Zoos as venues for research: Changes in focus, changes in perception</part-title>
+          <person-group person-group-type="editor">
+<name><surname>Donahue</surname><given-names>J</given-names></name>
+</person-group>
+          <source>Increasing legal rights for zoo animals: Justice on the Ark</source>
+          <publisher-name>Lexington Books</publisher-name>
+          <year>2017</year>
+          <fpage>49</fpage>
+          <lpage>78</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R63">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>McFarland</surname><given-names>SE</given-names></name>
+<name><surname>Hediger</surname><given-names>R</given-names></name>
+</person-group>
+          <source>Animals and agency: An interdisciplinary exploration</source>
+          <publisher-name>Brill</publisher-name>
+          <year>2009</year>
+        </element-citation>
+      </ref>
+      <ref id="R64">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>McLeod</surname><given-names>C</given-names></name>
+<name><surname>Nerlich</surname><given-names>B</given-names></name>
+<name><surname>Jaspal</surname><given-names>R</given-names></name>
+</person-group>
+          <article-title>Fecal microbiota transplants: Emerging social representations in the English-language print media</article-title>
+          <source>New Genetics and Society</source>
+          <year>2019</year>
+          <volume>38</volume>
+          <issue>3</issue>
+          <fpage>331</fpage>
+          <lpage>51</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R65">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Midgley</surname><given-names>M</given-names></name>
+</person-group>
+          <source>Beast and man: The roots of human nature</source>
+          <publisher-name>Cornell University Press</publisher-name>
+          <year>1978</year>
+        </element-citation>
+      </ref>
+      <ref id="R66">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Millar</surname><given-names>KM</given-names></name>
+</person-group>
+          <article-title>Respect for animal autonomy in bioethical analysis: The case of Automatic Milking Systems (AMS)</article-title>
+          <source>Journal of Agricultural and Environmental Ethics</source>
+          <year>2000</year>
+          <volume>12</volume>
+          <issue>1</issue>
+          <fpage>41</fpage>
+          <lpage>50</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R67">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Morton</surname><given-names>FB</given-names></name>
+<name><surname>Lee</surname><given-names>PC</given-names></name>
+<name><surname>Buchanan-Smith</surname><given-names>HM</given-names></name>
+</person-group><article-title>Taking personality selection bias seriously in animal cognition research: A case study in Capuchin monkeys <italic toggle="yes">(Sapajusapella)</italic></article-title><source>Animal Cognition</source><year>2013</year><volume>16</volume><issue>4</issue><fpage>677</fpage><lpage>84</lpage><pub-id pub-id-type="pmid">23370784</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R68">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Murphy</surname><given-names>HW</given-names></name>
+<name><surname>Danforth</surname><given-names>MD</given-names></name>
+<name><surname>Clyde</surname><given-names>VL</given-names></name>
+</person-group>
+          <article-title>The Great Ape Heart Project</article-title>
+          <source>International Zoo Yearbook</source>
+          <year>2018</year>
+          <volume>52</volume>
+          <issue>1</issue>
+          <fpage>103</fpage>
+          <lpage>12</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R69">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Neal Webb</surname><given-names>SJ</given-names></name>
+<name><surname>Hau</surname><given-names>J</given-names></name>
+<name><surname>Schapiro</surname><given-names>SJ</given-names></name>
+</person-group><article-title>Relationships between captive chimpanzee <italic toggle="yes">Pan troglodytes</italic> welfare and voluntary participation in behavioural studies</article-title><source>Applied Animal Behaviour Science</source><year>2019</year><volume>214</volume><fpage>102</fpage><lpage>9</lpage><pub-id pub-id-type="doi">10.1016/j.applanim.2019.03.002</pub-id><pub-id pub-id-type="pmid">31244501</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R70">
+        <element-citation publication-type="journal">
+          <collab>NHS Health Research Authority</collab>
+          <source>HRA ethics guidance: Payments and incentives in research</source>
+          <year>2014</year>
+        </element-citation>
+      </ref>
+      <ref id="R71">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Paterson</surname><given-names>LL</given-names></name>
+<name><surname>Gregory</surname><given-names>IN</given-names></name>
+</person-group>
+          <source>Representations of poverty and place: Using geographical text analysis to understand discourse</source>
+          <publisher-name>Springer International Publishing</publisher-name>
+          <year>2019</year>
+        </element-citation>
+      </ref>
+      <ref id="R72">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Pearson</surname><given-names>C</given-names></name>
+</person-group>
+          <article-title>Beyond “resistance”: Rethinking nonhuman agency for a “more-than-human” world</article-title>
+          <source>European Review of History: Revue Européenne d’Histoire</source>
+          <year>2015</year>
+          <volume>22</volume>
+          <issue>5</issue>
+          <fpage>709</fpage>
+          <lpage>725</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R73">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Porcher</surname><given-names>J</given-names></name>
+</person-group>
+          <part-title>Animal work</part-title>
+          <person-group person-group-type="editor">
+<name><surname>Kalof</surname><given-names>L</given-names></name>
+</person-group>
+          <source>The Oxford handbook of animal studies</source>
+          <publisher-name>Oxford University Press</publisher-name>
+          <year>2017</year>
+          <fpage>302</fpage>
+          <lpage>18</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R74">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Prochazka</surname><given-names>A</given-names></name>
+<name><surname>Clarac</surname><given-names>F</given-names></name>
+<name><surname>Loeb</surname><given-names>GE</given-names></name>
+<name><surname>Rothwell</surname><given-names>JC</given-names></name>
+<name><surname>Wolpaw</surname><given-names>JR</given-names></name>
+</person-group><article-title>What do reflex and voluntary mean? Modern views on an ancient debate</article-title><source>Experimental Brain Research</source><year>2000</year><volume>130</volume><issue>4</issue><fpage>417</fpage><lpage>32</lpage><pub-id pub-id-type="pmid">10717785</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R75">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Rajan</surname><given-names>KS</given-names></name>
+</person-group>
+          <article-title>Experimental values: Indian clinical trials and surplus health</article-title>
+          <source>New Left Review</source>
+          <year>2007</year>
+          <month>May-June</month>
+          <volume>45</volume>
+          <fpage>67</fpage>
+          <lpage>88</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R76">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Reinhardt</surname><given-names>V</given-names></name>
+</person-group>
+          <article-title>Caged Rhesus Macaques voluntarily work for ordinary food</article-title>
+          <source>Primates</source>
+          <year>1994</year>
+          <volume>35</volume>
+          <issue>1</issue>
+          <fpage>95</fpage>
+          <lpage>98</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R77">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Ritvo</surname><given-names>H</given-names></name>
+</person-group>
+          <article-title>On the animal turn</article-title>
+          <source>Daedalus</source>
+          <year>2007</year>
+          <volume>136</volume>
+          <issue>4</issue>
+          <fpage>118</fpage>
+          <lpage>22</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R78">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Roe</surname><given-names>E</given-names></name>
+<name><surname>Greenhough</surname><given-names>B</given-names></name>
+</person-group><article-title>Attuning to laboratory animals and telling stories: Learning animal geography research skills from animal technologists</article-title><source>Environment and Planning D: Society and Space</source><year>2018</year><volume>37</volume><issue>2</issue><pub-id pub-id-type="doi">10.1177/0263775818807720</pub-id><pub-id pub-id-type="pmid">32655205</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R79">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+<name><surname>Ross</surname><given-names>SR</given-names></name>
+</person-group>
+          <part-title>How cognitive studies help shape our obligation for the ethical care of chimpanzees</part-title>
+          <person-group person-group-type="editor">
+<name><surname>Lonsdorf</surname><given-names>EV</given-names></name>
+<name><surname>Ross</surname><given-names>SR</given-names></name>
+<name><surname>Masuzawa</surname><given-names>T</given-names></name>
+</person-group>
+          <source>The mind of the chimpanzee: Ecological and experimental perspectives</source>
+          <publisher-name>University of Chicago Press</publisher-name>
+          <year>2010</year>
+          <fpage>309</fpage>
+          <lpage>19</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R80">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ruby</surname><given-names>S</given-names></name>
+<name><surname>Buchanan-Smith</surname><given-names>HM</given-names></name>
+</person-group><article-title>The effects of individual cubicle research on the social interactions and individual behavior of Brown Capuchin monkeys <italic toggle="yes">(Sapajus apella)</italic></article-title><source>American Journal of Primatology</source><year>2015</year><volume>77</volume><issue>10</issue><fpage>1097</fpage><lpage>1108</lpage><pub-id pub-id-type="pmid">26173706</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R81">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Schapiro</surname><given-names>SJ</given-names></name>
+<name><surname>Perlman</surname><given-names>JE</given-names></name>
+<name><surname>Thiele</surname><given-names>E</given-names></name>
+<name><surname>Lambeth</surname><given-names>S</given-names></name>
+</person-group><article-title>Training nonhuman primates to perform behaviors useful in biomedical research</article-title><source>Lab Animal</source><year>2005</year><volume>34</volume><issue>5</issue><fpage>37</fpage><lpage>42</lpage><pub-id pub-id-type="pmid">15861157</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R82">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Sherwin</surname><given-names>CM</given-names></name>
+</person-group><article-title>Voluntary wheel running: A review and novel interpretation</article-title><source>Animal Behaviour</source><year>1998</year><volume>56</volume><issue>1</issue><fpage>11</fpage><lpage>27</lpage><pub-id pub-id-type="pmid">9710457</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R83">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Srinivasan</surname><given-names>K</given-names></name>
+</person-group>
+          <article-title>The biopolitics of animal being and welfare: Dog control and care in the UK and India</article-title>
+          <source>Transactions of the Institute of British Geographers</source>
+          <year>2013</year>
+          <volume>38</volume>
+          <issue>1</issue>
+          <fpage>106</fpage>
+          <lpage>19</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R84">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Tarou</surname><given-names>LR</given-names></name>
+<name><surname>Bashaw</surname><given-names>MJ</given-names></name>
+</person-group>
+          <article-title>Maximizing the effectiveness of environmental enrichment: Suggestions from the experimental analysis of behavior</article-title>
+          <source>Applied Animal Behaviour Science</source>
+          <year>2007</year>
+          <volume>102</volume>
+          <issue>3</issue>
+          <fpage>189</fpage>
+          <lpage>204</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R85">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Uhart</surname><given-names>M</given-names></name>
+<name><surname>Wand</surname><given-names>GS</given-names></name>
+</person-group><article-title>Stress, alcohol and drug interaction: An update of human research</article-title><source>Addiction Biology</source><year>2009</year><volume>14</volume><issue>1</issue><fpage>43</fpage><lpage>64</lpage><pub-id pub-id-type="doi">10.1111/j.1369-1600.2008.00131.x</pub-id><pub-id pub-id-type="pmid">18855803</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R86">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Walker</surname><given-names>M</given-names></name>
+<name><surname>Mason</surname><given-names>G</given-names></name>
+</person-group>
+          <article-title>Using mildly electrified grids to impose costs on resource access: A potential tool for assessing motivation in laboratory mice</article-title>
+          <source>Applied Animal Behaviour Science</source>
+          <year>2018</year>
+          <volume>198</volume>
+          <fpage>101</fpage>
+          <lpage>8</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R87">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Washburn</surname><given-names>DA</given-names></name>
+<name><surname>Rumbaugh</surname><given-names>DM</given-names></name>
+</person-group><article-title>Investigations of Rhesus monkey video-task performance: Evidence for enrichment</article-title><source>Contemporary Topics in Laboratory Animal Science</source><year>1992</year><volume>31</volume><issue>5</issue><fpage>6</fpage><lpage>10</lpage><pub-id pub-id-type="pmid">11538195</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R88">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Whitehead</surname><given-names>M</given-names></name>
+<name><surname>Jones</surname><given-names>R</given-names></name>
+<name><surname>Lilley</surname><given-names>R</given-names></name>
+<name><surname>Howell</surname><given-names>R</given-names></name>
+<name><surname>Pykett</surname><given-names>J</given-names></name>
+</person-group>
+          <article-title>Neuroliberalism: Cognition, context, and the geographical bounding of rationality</article-title>
+          <source>Progress in Human Geography</source>
+          <year>2019</year>
+          <volume>43</volume>
+          <issue>4</issue>
+          <fpage>632</fpage>
+          <lpage>49</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R89">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Wildridge</surname><given-names>AM</given-names></name>
+<name><surname>Thomson</surname><given-names>PC</given-names></name>
+<name><surname>Garcia</surname><given-names>SC</given-names></name>
+<name><surname>Jongman</surname><given-names>EC</given-names></name>
+<name><surname>Clark</surname><given-names>CEF</given-names></name>
+<name><surname>Kerrisk</surname><given-names>KL</given-names></name>
+</person-group>
+          <article-title>The impact of fetching at night on milking parlour visitation for pasture-based dairy cattle</article-title>
+          <source>Applied Animal Behaviour Science</source>
+          <year>2018</year>
+          <volume>201</volume>
+          <fpage>25</fpage>
+          <lpage>30</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R90">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+<name><surname>Wondrak</surname><given-names>M</given-names></name>
+<name><surname>Conzelmann</surname><given-names>E</given-names></name>
+<name><surname>Veit</surname><given-names>A</given-names></name>
+<name><surname>Huber</surname><given-names>L</given-names></name>
+</person-group>
+          <article-title>Pigs <italic toggle="yes">Sus scrofa domesticus</italic> categorize pictures of human heads</article-title>
+          <source>Applied Animal Behaviour Science</source>
+          <year>2018</year>
+          <volume>205</volume>
+          <fpage>19</fpage>
+          <lpage>27</lpage>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <table-wrap position="float" id="T1">
+      <label>Table 1</label>
+      <caption>
+        <title>Common uses of “voluntary” in animal research literature</title>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr style="border-top: solid thin">
+            <th align="left" valign="top" rowspan="1" colspan="1">Use</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">Research areas</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">Brief description</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">Example literature extracts (underline emphasis added)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">1 Body function</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Evolution, neuroscience research</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Describes certain body functions such as movements as voluntary, as opposed to involuntary, e.g., in discussions of evolutionary adaptations (<xref rid="R19" ref-type="bibr">Clark 2018</xref>) and neuroscience (<xref rid="R74" ref-type="bibr">Prochazka et al. 2000</xref>).</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">“If the sound is produced only in certain contexts …, it could be involuntary. Alternately, it could be under <underline>voluntary</underline> control of a ‘hidden switch’.” (<xref rid="R19" ref-type="bibr">Clark 2018</xref>)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">2 Behavior in nature</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Evolution, ethology, natural history research</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">In wildlife studies, terms may be used such as voluntary dispersal and voluntary avoidance (moving away from others: <xref rid="R68" ref-type="bibr">Murphy et al., 2018</xref>). “Willing” is also used, e.g., with reference to animals willing to take risks for mating and resources.</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">‘…subordinate males <underline>voluntarily</underline> disperse from their natal group to look for receptive females but can return to their natal group, whereas subordinate females rarely <underline>voluntarily</underline> disperse from their natal group.’ (<xref rid="R24" ref-type="bibr">Dantzer et al. 2019</xref>)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">3 Medical procedures and handling</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Often part of care rather than experiment, or research with an animal husbandry goal</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Animals are described as voluntarily undertaking medical procedures like venipuncture, providing feces samples, or accepting restraint for medical or research procedures.</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">“… animals were trained by operant conditioning using food and verbal encouragements to allow <underline>voluntary</underline> physical examination …” (<xref rid="R54" ref-type="bibr">Kaartinen et al. 2018</xref>)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">4 Participation in cognitive enrichment task</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Psychology and cognition research, potentially with an animal husbandry goal</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Usually involves giving free access to a test apparatus or testing area for cognition research. Task is usually assumed to be enriching/positive for the animal. Particularly common in zoos and with non-human primates.</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">“In most experimental studies of animal cognition, researchers attempt to control for multiple interacting variables by training subjects prior to actual testing, allowing subjects to participate <underline>voluntarily</underline> (‘free-choice’ participation), and/or providing subjects with food rewards to encourage their participation, motivation, and attention.” (<xref rid="R67" ref-type="bibr">Morton et al., 2013</xref>, p. 678)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">5 Participation in aversive motivational test</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Psychology research, especially on motivation and avoidance</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Describes participation in more aversive procedures, e.g., mice crossing a mildly electrified grid voluntarily (<xref rid="R86" ref-type="bibr">Walker and Mason 2018</xref>). At other times, animals are described as “willing” to undertake an aversive task for a reward (e.g., <xref rid="R30" ref-type="bibr">Dunlop et al., 2006</xref>).</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">“This experiment was designed to allow mice to cross an electric grid <italic toggle="yes">entirely <underline>voluntarily</underline></italic>. They did so in order to access an enriched cage, but both the starting cage and the enriched cage contained food, water, and nesting material, meaning that the mice <italic toggle="yes">never</italic> had to cross the electric grid if they found it too aversive.” (<xref rid="R86" ref-type="bibr">Walker and Mason, 2018</xref>, p. 102)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">6 Exercise</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Research on motivation for exercise</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">“Voluntary exercise” is used when laboratory rodents are given free access to exercise wheels, and often contrasted with “forced treadmill training.”</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">“. with many studies utilizing ad libitum access to <underline>voluntary</underline> exercise wheels, while others employ comparably short bouts of forced exercise on a treadmill.” (<xref rid="R59" ref-type="bibr">Leasure and Jones, 2008</xref>, p. 456)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">7 Movement between enclosures</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Agricultural and zoo husbandry research</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Refers to movement between areas, as in “voluntary traffic” in agricultural animals (<xref rid="R89" ref-type="bibr">Wildridge et al., 2018</xref>), or to movement between enclosures in zoo- or lab-housed animals.</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">“Positive reinforcement techniques were applied to train groups of chimpanzees to move <underline>voluntarily</underline> into the indoor portions of their enclosures at the request of trainers …” (<xref rid="R12" ref-type="bibr">Bloomsmith et al., 1998</xref>, p. 333)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">8 Ingestion and consumption</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Addiction studies, agricultural husbandry research</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Used with reference to voluntary consumption of food in agricultural studies, or to voluntary consumption of drugs in addiction studies (<xref rid="R85" ref-type="bibr">Uhart and Wand 2009</xref>). Term “voluntary” may also be used with reference to refusal to eat (<xref rid="R40" ref-type="bibr">Grant et al. 2018</xref>).</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">“The amount eaten during a period of time (usually 1 d) is usually called the <italic toggle="yes"><underline>voluntary</underline> intake;</italic> this is often lower than the <italic toggle="yes">potential intake</italic> …” (<xref rid="R34" ref-type="bibr">Forbes, 2013</xref>, p. 5)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">9 Interaction with humans</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Agricultural or companion animal husbandry research</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Often with reference to interactions with a caregiver, as in the “voluntary human approach test” (which may be contrasted with the “forced human approach test”).</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">“The exposure to a human has been specifically devel oped for farm animals to study their fear-related responses, with the animal that is either approached by a human (‘Forced Approach test’, FAT) or is free to approach a human (‘<underline>Voluntary</underline> Approach test’, VAT).” (<xref rid="R35" ref-type="bibr">Forkman et al., 2007</xref>, p. 341)</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+  </floats-group>
+</article>

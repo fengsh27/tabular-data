@@ -1,0 +1,1876 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">0372544</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">1822</journal-id>
+      <journal-id journal-id-type="nlm-ta">Br J Haematol</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Br. J. Haematol.</journal-id>
+      <journal-title-group>
+        <journal-title>British journal of haematology</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0007-1048</issn>
+      <issn pub-type="epub">1365-2141</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">24666134</article-id>
+      <article-id pub-id-type="pmc">3984599</article-id>
+      <article-id pub-id-type="doi">10.1111/bjh.12748</article-id>
+      <article-id pub-id-type="manuscript">NIHMS558388</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Response to Androgen Therapy in Patients with Dyskeratosis Congenita</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Khincha</surname>
+            <given-names>Payal P.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">1</xref>
+          <xref ref-type="aff" rid="A2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wentzensen</surname>
+            <given-names>Ingrid M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">1</xref>
+          <xref ref-type="aff" rid="A3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Giri</surname>
+            <given-names>Neelam</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Alter</surname>
+            <given-names>Blanche P.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Savage</surname>
+            <given-names>Sharon A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">1</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>1</label>Clinical Genetics Branch, Division of Cancer Epidemiology and Genetics, National Cancer Institute, National Institutes of Health, Rockville, MD</aff>
+      <aff id="A2"><label>2</label>Children’s National Medical Center, Washington, DC</aff>
+      <aff id="A3"><label>3</label>McKusick Nathans Institute of Genetic Medicine, Johns Hopkins Hospital, Baltimore, MD</aff>
+      <author-notes>
+        <corresp id="FN1">Correspondence to: Sharon A. Savage, M.D., Clinical Genetics Branch, Division of Cancer Epidemiology and Genetics, National Cancer Institute, 9609 Medical Center Drive, Room 6E 454, Bethesda, MD 20850-9772, <email>savagesh@mail.nih.gov</email>, Telephone: 240-276-7241, Fax: 240-276-7836</corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>12</day>
+        <month>3</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>12</day>
+        <month>2</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>5</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>01</day>
+        <month>5</month>
+        <year>2015</year>
+      </pub-date>
+      <volume>165</volume>
+      <issue>3</issue>
+      <fpage>349</fpage>
+      <lpage>357</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P1">Dyskeratosis congenita (DC) is an inherited bone marrow failure syndrome and telomere biology disorder characterized by dysplastic nails, reticular skin pigmentation and oral leucoplakia. Androgens are a standard therapeutic option for bone marrow failure in those patients with DC who are unable to undergo haematopoietic stem cell transplantation, but there are no systematic data on its use in those patients. We evaluated haematological response and side effects of androgen therapy in 16 patients with DC in our observational cohort study. Untreated DC patients served as controls. Seventy percent of treated DC patients had a haematological response with red blood cell and/or platelet transfusion independence. The expected age-related decline in telomere length was noted in androgen-treated patients. All treated DC patients had at least one significant lipid abnormality. Additional treatment-related findings included a significant decrease in thyroid binding globulin, accelerated growth in pre-pubertal children and splenic peliosis in two patients. Liver enzymes were elevated in both androgen-treated and untreated patients, suggesting underlying liver involvement in DC. This study suggests that androgen therapy can be effectively used to treat bone marrow failure in DC, but that side effects need to be closely monitored.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>Dyskeratosis Congenita</kwd>
+        <kwd>androgen</kwd>
+        <kwd>telomere</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S1">
+      <title>INTRODUCTION</title>
+      <p id="P2">Dyskeratosis congenita (DC), an inherited bone marrow failure (BMF) and cancer susceptibility syndrome, is characterized by very short germline telomeres and/or a mutation in a telomere biology gene (<xref rid="R14" ref-type="bibr">Dokal, 2011</xref>; <xref rid="R11" ref-type="bibr">Ballew &amp; Savage, 2013</xref>). The diagnostic triad of DC consists of dysplastic nails, reticular skin pigmentation and oral leucoplakia. Patients with DC may also have pulmonary fibrosis, liver disease, neurological, gastrointestinal and ophthalmological problems. In addition, patients with DC are at a significantly increased risk of solid tumours, leukaemia and myelodysplastic syndrome (<xref rid="R5" ref-type="bibr">Alter <italic>et al.</italic>, 2010</xref>). Telomere length less than the first percentile for age measured by leucocyte flow fluorescent <italic>in situ</italic> hybridization (FISH) is diagnostic of DC and differentiates DC from other inherited BMF syndromes (IBMFS), such as Fanconi Anaemia (FA) (<xref rid="R4" ref-type="bibr">Alter <italic>et al.,</italic> 2007</xref>).</p>
+      <p id="P3">The cumulative incidence of BMF is at least 50% by age 50 years in patients with DC and is often life threatening (<xref rid="R5" ref-type="bibr">Alter <italic>et al.,</italic> 2010</xref>; <xref rid="R29" ref-type="bibr">Vulliamy &amp; Dokal, 2006</xref>). Patients with DC-related BMF do not respond to immunosuppressive therapy (<xref rid="R2" ref-type="bibr">Al-Rahawan <italic>et al</italic>, 2006</xref>). Haematopoietic stem cell transplant (HSCT) is the only current curative modality for DC-associated BMF. However, HSCT may not be feasible due to the presence of co-morbid conditions, lack of suitable donors or patient preferences; thus, Anabolic-androgenic steroid (androgen) treatment is often considered for DC-related BMF (<xref rid="R24" ref-type="bibr">Savage <italic>et al.</italic>, 2009</xref>; <xref rid="R18" ref-type="bibr">Islam <italic>et al.</italic>, 2013</xref>).</p>
+      <p id="P4">Androgens have been used to treat acquired and inherited BMF, both prior to the current era of HSCT and currently in patients who are not HSCT candidates (<xref rid="R26" ref-type="bibr">Shahidi, 2001</xref>; <xref rid="R1" ref-type="bibr">Allen <italic>et al</italic>, 1968</xref>; <xref rid="R5" ref-type="bibr">Alter <italic>et al</italic>, 2010</xref>; <xref rid="R15" ref-type="bibr">Diamond &amp; Shahidi, 1967</xref>). Historically, BMF in FA patients has also been treated with androgens with an approximately 50% haematological response rate (<xref rid="R1" ref-type="bibr">Allen <italic>et al,</italic> 1968</xref>; <xref rid="R27" ref-type="bibr">Shimamura &amp; Alter, 2010</xref>). With recent advances and improvements in HSCT for patients with FA, androgens are now less often used to treat FA-related BMF.</p>
+      <p id="P5">The specific mechanism(s) by which androgens stimulate haematopoiesis is (are) not well understood. It was postulated that androgens lead to an increase in erythropoietin, which stimulates erythropoietic stem cells and, to a lesser extent, myeloid progenitor cells in the bone marrow (<xref rid="R26" ref-type="bibr">Shahidi, 2001</xref>). Recent studies suggest that androgens such as testosterone do not increase erythropoietin levels, but rather work at the level of the erythropoietin receptor to elicit a haematological response (<xref rid="R19" ref-type="bibr">Maggio <italic>et al.,</italic> 2013</xref>). Androgens also stimulate osteoblasts, bone matrix production, cytokine and growth factor synthesis (<xref rid="R26" ref-type="bibr">Shahidi, 2001</xref>).</p>
+      <p id="P6">The most common side effects of androgen therapy include virilization in females, priapism in males, acne, hepatotoxicity including hyperbilirubinaemia, transaminitis, hepatic and splenic peliosis, hepatic adenomas or hepatocellular carcinomas, lipid abnormalities and behavioural problems (<xref rid="R26" ref-type="bibr">Shahidi, 2001</xref>). Anecdotal data suggest that DC patients are particularly sensitive to the side effects of androgen therapy; thus, lower doses and more frequent monitoring have been recommended (<xref rid="R24" ref-type="bibr">Savage <italic>et al.</italic>, 2009</xref>; <xref rid="R18" ref-type="bibr">Islam <italic>et al.</italic>, 2013</xref>). However, androgen-related side effects have not been systematically studied in patients with DC. Here we describe the response to androgens and the side effects in DC patients enrolled in a natural history study of IBMFS.</p>
+    </sec>
+    <sec sec-type="methods" id="S2">
+      <title>METHODS</title>
+      <sec id="S3" sec-type="intro">
+        <title>Patient Characteristics</title>
+        <p id="P7">This retrospective/prospective natural study included patients with DC enrolled in the National Cancer Institute’s (NCI) Institutional Review Board-approved IBMFS study (NCI 02-C-0052), NCT00027274, <ext-link ext-link-type="uri" xlink:href="www.marrowfailure.cancer.gov">www.marrowfailure.cancer.gov</ext-link>) between March 2002 and December 2011 (<xref rid="R5" ref-type="bibr">Alter <italic>et al</italic>, 2010</xref>). Patients were classified as having DC if they had a germline mutation in one of the known DC genes, or if they had at least two features of the diagnostic triad and other clinical findings consistent with DC, such as haematological or neoplastic complications (<xref rid="R23" ref-type="bibr">Savage &amp; Bertuch, 2010</xref>; <xref rid="R12" ref-type="bibr">Ballew <italic>et al,</italic> 2013</xref>).</p>
+        <p id="P8">We reviewed medical records from 16 DC patients who were treated with androgens, and compared their data with 28 DC patients never treated with androgens (<xref rid="T1" ref-type="table">Table I</xref>). All patients underwent evaluations at the National Institutes of Health (NIH) Clinical Center, and were examined by the same physicians, whether or not they were on androgens. The management of patients was at the discretion of their primary haematologist, with consultative input from the NCI IBMFS study physicians.</p>
+        <p id="P9">Haematological response was defined as red blood cell (RBC) and/or platelet transfusion independence along with an increment in haemoglobin (Hb) of ≥20 g/l from the baseline, rise in the absolute neutrophil count (ANC) to ≥ 1.0 × 10<sup>9</sup>/l without the use of granulocyte colony stimulating factor (G-CSF), and/or a platelet count increase to ≥ 40 × 10<sup>9</sup>/l. We evaluated patients for androgen-related side effects by determining fasting serum lipid profile [total cholesterol, high density lipoprotein (HDL), low density lipoprotein (LDL) and triglycerides]; liver function tests (LFT) including serum bilirubin, aspartate aminotransferase (AST), alanine aminotransferase (ALT) and gamma-glutamyl transpeptidase (GGT); endocrine function [thyroid binding globulin (TBG), triiodothyronine (T3), thyroxine (T4) and thyroid-stimulating hormone (TSH) levels]. An abnormal lipid profile was defined as the presence of one or more of the following: total cholesterol more than 5.18 mmol/l, LDL more than 2.59 mmol/l, triglycerides more than 1.69 mmol/l, or HDL less than 1.03 mmol/l. LFT values above the normal range reported by the clinical laboratory were considered abnormal. Liver and spleen ultrasounds were performed in search of abnormalities in architecture, peliosis or tumours. Bone age and linear growth were evaluated in children and adolescents. Telomere length was determined on leucocyte subsets as previously described (<xref rid="R9" ref-type="bibr">Baerlocher <italic>et al.,</italic> 2006</xref>; <xref rid="R6" ref-type="bibr">Alter <italic>et al.,</italic> 2012</xref>). Clinical germline mutation testing was performed in Clinical Laboratory Improvement Amendments-certified laboratories.</p>
+      </sec>
+      <sec id="S4">
+        <title>Statistical analysis</title>
+        <p id="P10">All statistical analyses were two-sided. We used Fisher’s exact and Student’s T-test to compare pre- and post-treatment parameters. <italic>P</italic>-values less than 0.05 were considered significant. Analyses were done with Microsoft Excel (2007 release) and Stata Version 11 (StataCorp Release 11, College Station, TX, USA).</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S5">
+      <title>RESULTS</title>
+      <sec id="S6" sec-type="intro">
+        <title>Patient Characteristics</title>
+        <p id="P11">The median age at study entry was 16 years (range 1.5–69 years) (<xref rid="T1" ref-type="table">Table I</xref>). Thirty-seven of the 44 patients (84%) had a germline mutation in one of the known DC-causing genes (11 <italic>DKC1,</italic> 12 <italic>TINF2,</italic> 5 <italic>TERT</italic>, 3 <italic>TERC</italic>, 2 <italic>WRAP53</italic> [<italic>TCAB1</italic>]<italic>,</italic> and 4 <italic>RTEL1</italic>) (<xref rid="T2" ref-type="table">Table 2</xref>). Thirty-four of the 44 patients (77%) had single or multi-lineage cytopenia. Ten (23%) had cytopenia with Hb &gt;80 g/l but less than normal for age, ANC between 0.5–1.5 × 10<sup>9</sup>/l and/or platelets between 30–150 ×10<sup>9</sup>/l and did not require treatment. Twenty-four patients (54%) had severe single or multi-lineage cytopenia with Hb &lt;80 g/l, ANC &lt;0.5 × 10<sup>9</sup>/l and/or platelets &lt;30 ×10<sup>9</sup>/l. Eight patients with severe cytopenias were not treated with androgens; four of these eight patients were transfusion dependent until receiving HSCT, one was treated with RBC and platelet transfusions as needed, two were treated with immunosuppressive agents (but did not respond) and one patient did not require treatment. Sixteen patients with severe cytopenias were treated with androgens (14 oxymetholone, one fluoxymesterone and one nandrolone decanoate). Of these 16 treated patients, germline mutations were known in 14 (88%) (3 <italic>DKC1</italic>, 6 <italic>TINF2</italic>, 1 <italic>TERC</italic>, 1 <italic>WRAP53</italic> and 3 <italic>RTEL1</italic>) (<xref rid="T2" ref-type="table">Table II</xref>). The starting oxymetholone dose was 0.5–1 mg/kg, which was increased or decreased based on the patient’s haematological response. The maintenance dose was the minimum effective dose and ranged from 0.5 – 2.7 mg/kg/day (median 1.5 mg/kg/day). Of the 16 patients who received androgens, pre-treatment lipid panels were available for 10, LFTs and measures of endocrine function were available from 11, and complete blood counts (CBCs) were available for all patients. Twenty-eight DC patients who never received androgens served as controls. Germline mutations were known in 22 (79%) of the controls (8 <italic>DKC1</italic>, 6 <italic>TINF2</italic>, 5 <italic>TERT</italic>, 2 <italic>TERC</italic> and 1 <italic>WRAP53</italic>) (<xref rid="T2" ref-type="table">Table II</xref>).</p>
+      </sec>
+      <sec id="S7">
+        <title>Haematological response</title>
+        <p id="P12">Eleven of the 16 patients (69%) treated with androgens showed a haematological response, 10 to oxymetholone and one to fluoxymesterone (<xref rid="F1" ref-type="fig">Figure 1</xref>). All 11 patients who responded had a Hb increment of ≥20 g/l from baseline [median pre-treatment Hb 93 g/l (range 60 – 104 g/l) <italic>vs.</italic> post-treatment Hb 116 g/l (range 94 – 130 g/l); p&lt;0.001]. The ANC improved in four out of the eight patients with an ANC below 1.0 × 10<sup>9</sup>/l at treatment initiation [median pretreatment ANC 0.55 × 10<sup>9</sup>/l (range 0.5 – 0.84 × 10<sup>9</sup>/l); post treatment ANC 1.514 × 10<sup>9</sup>/l (range 1.13–1.985 × 10<sup>9</sup>/l); p&lt;0.01]. Nine of 15 patients (60%) who had a platelet count &lt;30 × 10<sup>9</sup>/l prior to androgen therapy demonstrated an androgen response with increase from a median platelet count of 13.5 × 10<sup>9</sup>/l (range 7–25 × 10<sup>9</sup>/l) to 41.5 ×10<sup>9</sup>/l (range 41–131 × 10<sup>9</sup>/l); p&lt;0.01. The median time to response was four months (range 2 – 9 months) for Hb, 1.6 months (range 1 – 2.6 months) for ANC, and 1.4 months (0.6–7.5 months) for platelets. A haematological response was observed in 2 of 3 (67%) patients with <italic>DKC1</italic> mutations, 4 of 6 (67%) with <italic>TINF2</italic>, 1 of 1 (100%) with <italic>TERC</italic>, 1 of 1 (100%) with <italic>WRAP53</italic>, and 3 of 3 (100%) with <italic>RTEL1</italic> mutations. Neither of the two treated patients with unknown genetic cause for DC responded to androgens.</p>
+        <p id="P13">The median duration of androgen therapy was 2.2 years (range 0.4–10 years). Androgens were discontinued in 11 patients during the observation period. Four patients (one on nandrolone and three on oxymetholone) failed to respond after 4 to 5 months. Two patients on oxymetholone and G-CSF discontinued therapy after 1 and 2 years of treatment because of splenic peliosis (<xref rid="R17" ref-type="bibr">Giri <italic>et al.,</italic> 2007</xref>). Three patients stopped responding to oxymetholone after 2.3, 3.9, and 5.5 years of therapy. Treatment was discontinued at 2.6 and 5.5 years for a hypoechoic liver lesion with a non-diagnostic biopsy and persistent transaminitis in one patient, and behavioural problems/noncompliance in another. Five haematological DC responders (one on fluoxymesterone, 4 on oxymetholone) were still responding to treatment at a median of 3.7 years (range 0.8 – 10 years) at the time these data were analysed.</p>
+      </sec>
+      <sec id="S8">
+        <title>Telomere length in DC before and after androgens</title>
+        <p id="P14">Four DC patients who responded to androgen (three to oxymetholone and one to fluoxymesterone) therapy had telomere length measurements prior to, and at a median of 2.6 years (range 0.8–7.8 years) after androgen treatment. Post-androgen telomere lengths were consistently the same or shorter than pre-androgen measurements in the total lymphocyte population from all four patients (<xref rid="F2" ref-type="fig">Figure 2A</xref>) and in the four lymphocyte subsets measured (CD 20+ B cells, CD 45+ Naïve T cells, CD 45- Memory T cells, CD 57+ Natural Killer cells; data not shown). Telomere lengths declined over time (median 5.5 years, range 5–7 years) in five untreated patients, as previously shown in this population (<xref rid="F2" ref-type="fig">Figure 2B</xref>) (<xref rid="R6" ref-type="bibr">Alter <italic>et al.,</italic> 2012</xref>).</p>
+        <sec id="S9">
+          <title>Lipid abnormalities</title>
+          <p id="P15">A fasting lipid panel was obtained in all 28 untreated patients and in 13 of the 16 patients while on androgen therapy; 10 of the latter also had pre-androgen lipid data. All 13 DC patients treated with androgens showed markedly abnormal lipid profiles compared with their own pre-androgen values. Total cholesterol was elevated (&gt;5.18 mmol/l) in 54% after androgens vs. 8% prior to therapy (P=0.001). Similarly, all patients had significantly abnormally low HDL (100% on androgens vs. 5% prior to treatment, P&lt;0.0001) and high LDL (100% on androgens vs. 16% prior to treatment, P&lt;0.0001), and high triglycerides (38% on androgens vs. 5% prior to treatment, P=0.008). All P values for lipid levels on the treated patients compared with those never treated were statistically significant (P&lt;0.0001) (<xref rid="T3" ref-type="table">Table III</xref>, <xref rid="F3" ref-type="fig">Figure 3</xref>).</p>
+        </sec>
+        <sec id="S10">
+          <title>Liver function</title>
+          <p id="P16">Twenty-one of the 28 (75%) untreated DC patients had elevated LFTs, suggesting possible underlying DC-related liver disease. Six of 11 (55%) treated patients had pre-treatment abnormalities in at least one liver parameter evaluated (<xref rid="T4" ref-type="table">Table IV</xref>). There was no statistically significant difference in liver function between treated versus never-treated DC patients. Though pre- and post-treatment LFT parameters did not differ statistically, liver enzyme elevation on androgens was noted in eight (50%) treated patients, one of whom had normal pretreatment liver function at the time of evaluation. Dose reduction was advised when patients on androgens developed an AST or ALT more than twice the upper limit of normal. One patient continued to have good haematological response and LFT normalization after dose reduction. Androgen therapy was discontinued in one of 16 (6%) patients due to persistent elevation of liver transaminases.</p>
+        </sec>
+        <sec id="S11">
+          <title>Structural changes in the liver and spleen</title>
+          <p id="P17">Among the 37 DC patients who underwent liver and spleen ultrasound examinations, one treated patient (3%) developed a hypoechoic liver lesion that was non-diagnostic on biopsy but not suggestive of either an adenoma or liver fibrosis. Two patients who received G-CSF combined with androgens developed splenic peliosis leading to rupture requiring emergent surgical care for one patient (<xref rid="R17" ref-type="bibr">Giri <italic>et al,</italic> 2007</xref>). No other patients in our study reported concomitant use of growth factors and androgens.</p>
+        </sec>
+        <sec id="S12">
+          <title>Bone changes</title>
+          <p id="P18">Six pre-pubertal male DC patients had accelerated growth that crossed at least two percentile curves on the growth chart during androgen treatment (<xref rid="F4" ref-type="fig">Figure 4</xref>). One patient had marked growth acceleration from the 10<sup>th</sup> percentile to greater than the 97<sup>th</sup> percentile for height in a six-year period. Three patients on androgens developed bone fractures of the femur, tibia, humerus and clavicle after reporting minimal or no trauma (<italic>e.g.,</italic> getting into a car). However, two patients in the untreated group also had bone fractures, one tibial fracture after minor trauma and one femur fracture after minor trauma in a post-HSCT patient.</p>
+        </sec>
+        <sec id="S13">
+          <title>Endocrine function</title>
+          <p id="P19">All patients had normal thyroid function both prior to and during androgen therapy, although we observed a significant decrease in TBG in 10/11 (91%) patients after beginning androgen treatment (P<italic>=</italic>0.004). All treated patients reported masculinizing androgen effects; males reported priapism; and female patients reported hirsutism and voice hoarseness. We did not collect systematic information on behavioural complications.</p>
+        </sec>
+        <sec id="S14">
+          <title>Comparison with Fanconi anaemia</title>
+          <p id="P20">As an additional comparison group, we also reviewed the medical records for 11 patients with FA treated with androgens (three males and eight females) enrolled in the same NCI longitudinal IBMFS study. Median age at study entry for the FA group was 13 years (range 6–34 years). Two FA patients had single lineage and nine (82%) had multi-lineage cytopenia. Seven patients were treated with oxymetholone, two with danazol, one each with nandrolone decanoate and dehydroepiandrosterone (DHEA). Two FA patients, one DHEA- and one danazol-treated, had received oxymetholone in the past. Haematological data were available on eight treated FA patients, all of whom (100%) had a haematological response with an increase in Hb of at least 20 g/l higher than the pre-treatment value. Five of eight (63%) had a neutrophil response and seven patients (71%) had a platelet response. Time to response could not be determined due to lack of data.</p>
+          <p id="P21">Post-androgen lipid data were available from six of the 11 treated FA patients. Four (60%) had high LDL, low HDL or high triglycerides while on androgens (<xref rid="T3" ref-type="table">Table III</xref>, <xref rid="F3" ref-type="fig">Figure 3</xref>). Lipid levels in FA patients could not be directly compared with the levels in DC patients because FA patients were on substantially lower doses of androgens at the time of evaluation (median oxymetholone dose of 0.2 mg/kg/day [range 0.02–0.6]). Liver function abnormalities in the FA patients were similar to those observed in DC patients. Five of six (83%) FA patients had abnormal liver parameters before treatment and eight of 10 (80%) androgen-treated patients developed at least one elevated serum transaminase. Review of records showed that like DC, FA patients had also required androgen dose-adjustments for high liver transaminases. None of the six FA patients who had TBG measurements while on androgens demonstrated a change in TBG.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="S15">
+      <title>DISCUSSION</title>
+      <p id="P22">Patients with DC have very high rates of BMF but may not always be HSCT candidates, whether due to personal choice, medical ineligibility or lack of suitable donors. Our study suggests that androgen therapy for DC-related BMF may be a reasonable therapeutic modality if carefully monitored and thoughtfully considered either in patients unable to undergo HSCT or as a bridge to HSCT further down the road.</p>
+      <p id="P23">It is very encouraging that 69% of our DC patients had a haematopoietic response, with notable improvements in erythroid and platelet lineages. Specifically, 14 of the 16 DC patients evaluated in our study were treated with oxymetholone, with two (14%) of them demonstrating a trilineage response; six (43%) had erythroid and platelet lineage responses (all of whom had normal pre-treatment ANC). This is similar to previous FA reports (<xref rid="R3" ref-type="bibr">Alter &amp; Kupfer, 1993</xref>; <xref rid="R22" ref-type="bibr">Rose <italic>et al.,</italic> 2014</xref>) and in our small FA cohort. Our patient treated with danazol did not have a haematological response, in contrast to a recent report of two patients with DC who did respond (<xref rid="R18" ref-type="bibr">Islam <italic>et al.,</italic> 2013</xref>).</p>
+      <p id="P24">Patients with DC in our study had a surprisingly high prevalence of severe lipid profile abnormalities. This has neither been previously evaluated in DC nor reported in FA. Androgen-treated FA patients in our cohort did not have lipid abnormalities at the time of this evaluation, but their androgen doses were much lower than those used in DC. Abnormalities in lipid profile during androgen therapy for different indications, such as chronic obstructive pulmonary disease, constitutional growth retardation, muscle wasting or body-building, have been well documented in the past (<xref rid="R16" ref-type="bibr">Glazer, 1991</xref>; <xref rid="R26" ref-type="bibr">Shahidi, 2001</xref>). We cannot quantify the long-term risk of atherosclerosis from the sustained lipid profile abnormalities seen in our DC patients, but it is possible that annual monitoring of carotid intima-media thickness by Doppler ultrasound may prove helpful in the future, to identify early atherosclerotic changes so that timely discontinuation of androgen therapy or initiation of lipid-lowering therapy can be considered (<xref rid="R10" ref-type="bibr">Baldassarre <italic>et al.,</italic> 2013</xref>).</p>
+      <p id="P25">Endocrine dysfunction is an important clinical concern for all patients treated with androgens. While we observed statistically significant decreased TBGs in treated DC patients, their thyroid function was normal. Previous studies (<xref rid="R28" ref-type="bibr">Tahboub &amp; Arafah, 2009</xref>; <xref rid="R8" ref-type="bibr">Arafah, 1994</xref>) suggest that in patients with normal thyroid function, TBG levels markedly decrease after initiation of androgen therapy, but the precise mechanism is unknown.</p>
+      <p id="P26">Growth and development before, during and after androgen therapy in pre-pubertal and adolescent patients should be carefully monitored; patients and their parents need to understand the potential for endocrine-related side effects, including rapid bone growth, behaviour changes and masculinization. It is also important to note that patients with DC may have an increased prevalence of neuropsychiatric conditions (<xref rid="R21" ref-type="bibr">Rackley <italic>et al.,</italic> 2012</xref>) that could be exacerbated by androgen therapy. Careful evaluation and management for behavioural complications of androgen therapy are warranted.</p>
+      <p id="P27">The occurrence of bone fractures in both treated and untreated DC patients makes it difficult to discern whether these events were treatment-related, an intrinsic component of the disease phenotype, a combination of both or a consequence of other unrecognized risk factors. The combination of androgen-related accelerated bone growth and increased muscle mass may have created a discrepancy between muscle strength and bone mineralization which resulted in increased skeletal fragility. It is also possible that telomere biology disorders, such as DC, have a bony phenotype that is not yet characterized. For example, a subset of patients with DC has mutations in <italic>CTC1</italic>, a telomere-capping gene. In addition, mutations in <italic>CTC1</italic> also cause a disorder designated “Coats plus” (also known as cerebroretinal microangiopathy with calcifications and cysts), in which some patients have abnormal bone growth and poor bone healing, in addition to features of DC (<xref rid="R7" ref-type="bibr">Anderson <italic>et al.,</italic> 2012</xref>; <xref rid="R20" ref-type="bibr">Polvi <italic>et al.</italic>, 2012</xref>). The DC patients in our study did not have <italic>CTC1</italic> mutations.</p>
+      <p id="P28">We found the expected age-related telomere attrition in patients with DC both before and after androgen therapy, observations which differ from recent case reports suggesting that telomere attrition may be mitigated by androgen therapy (<xref rid="R25" ref-type="bibr">Scheinberg, 2013</xref>; <xref rid="R13" ref-type="bibr">Chen <italic>et al.,</italic> 2012</xref>; <xref rid="R30" ref-type="bibr">Ziegler <italic>et al.,</italic> 2012</xref>). This difference could be due to the small size of our cohort, the sensitivity and specificity of the different telomere length measurement methods (<italic>e.g.,</italic> quantitative polymerase chain reaction used by <xref rid="R25" ref-type="bibr">Scheinberg (2013</xref>), flow-FISH used by <xref rid="R13" ref-type="bibr">Chen <italic>et al</italic> (2012)</xref> and <xref rid="R6" ref-type="bibr">Alter <italic>et al</italic> 2012</xref>) and/or other clinical or methodological differences between studies.</p>
+      <p id="P29">A strength of this study is that, to our knowledge, it is the largest systematic study of therapeutic response to and side effects from androgen therapy for DC-related BMF. Our data suggest that a large proportion of DC patients with BMF can be given androgens safely, and can achieve a good haematological response. However, it is difficult to draw definitive conclusions from a small, observational non-randomized study. But, given the rarity of DC, a methodologically-rigorous study design may be difficult to implement.</p>
+      <p id="P30">In conclusion, androgen therapy for BMF in DC is a reasonable option in patients who are not HSCT candidates or as bridging therapy while awaiting HSCT. A longer, prospective study is needed to further characterize the observed adverse effects. Studies using danazol, an attenuated androgen, are underway in patients with FA, and various DC-related telomere biology disorders (NCT01001598 and NCT01441037). Until those results are available, we recommend that DC patients receiving androgens for BMF have frequent monitoring of their serum lipids, liver function, growth and development, as well as biannual liver/spleen ultrasounds.</p>
+    </sec>
+  </body>
+  <back>
+    <ack id="S16">
+      <p>We thank the patients, their families, and the referring clinicians for their valuable contributions to this study. Lisa Leathwood, RN, and Maureen Risch, RN, Westat, Inc. (NIH contracts N02-CP-11019, N02-CP-65504, and N02-CP-65501) provided outstanding study support. This work and the research of Drs. Khincha, Wentzensen, Giri, Alter and Savage were supported by the Intramural Research Program of the National Cancer Institute, National Institutes of Health. We thank Charleen Adams, NCI, for help with FA-related data abstraction and Dr. Mark H. Greene, NCI, for his helpful comments.</p>
+    </ack>
+    <fn-group>
+      <fn id="FN2" fn-type="con">
+        <p>
+          <bold>AUTHOR CONTRIBUTIONS</bold>
+        </p>
+        <p>NG saw all patients, collected, analysed and interpreted the data, and wrote the manuscript. PK and IMW did the chart review, extracted and analysed the data, and wrote the manuscript. SAS designed the study, interpreted data and wrote the manuscript. BPA designed the parent IBMFS study, served as an advisor, saw the patients and edited the manuscript.</p>
+      </fn>
+      <fn id="FN3" fn-type="conflict">
+        <p>
+          <bold>DISCLOSURE OF CONFLICTS OF INTEREST</bold>
+        </p>
+        <p>The authors declare no conflict of interest.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <ref id="R1">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Allen</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Fine</surname>
+              <given-names>MH</given-names>
+            </name>
+            <name>
+              <surname>Necheles</surname>
+              <given-names>TF</given-names>
+            </name>
+            <name>
+              <surname>Dameshek</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <year>1968</year>
+          <article-title>Oxymetholone therapy in aplastic anemia</article-title>
+          <source>Blood</source>
+          <volume>32</volume>
+          <fpage>83</fpage>
+          <lpage>89</lpage>
+          <pub-id pub-id-type="pmid">5658392</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R2">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Al-Rahawan</surname>
+              <given-names>MM</given-names>
+            </name>
+            <name>
+              <surname>Giri</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Alter</surname>
+              <given-names>BP</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Intensive immunosuppression therapy for aplastic anemia associated with dyskeratosis congenita</article-title>
+          <source>International Journal of Hematology</source>
+          <volume>83</volume>
+          <fpage>275</fpage>
+          <lpage>276</lpage>
+          <pub-id pub-id-type="pmid">16720563</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R3">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Alter</surname>
+              <given-names>BP</given-names>
+            </name>
+            <name>
+              <surname>Kupfer</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <year>1993</year>
+          <article-title>Fanconi anemia</article-title>
+          <source>GeneReviews</source>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Pagon</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Bird</surname>
+              <given-names>TD</given-names>
+            </name>
+            <name>
+              <surname>Dolan</surname>
+              <given-names>CR</given-names>
+            </name>
+            <name>
+              <surname>Stephens</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Adam</surname>
+              <given-names>MP</given-names>
+            </name>
+          </person-group>
+          <publisher-name>University of Washington, Seattle</publisher-name>
+          <publisher-loc>Seattle (WA)</publisher-loc>
+        </element-citation>
+      </ref>
+      <ref id="R4">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Alter</surname>
+              <given-names>BP</given-names>
+            </name>
+            <name>
+              <surname>Baerlocher</surname>
+              <given-names>GM</given-names>
+            </name>
+            <name>
+              <surname>savage</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Chanock</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <name>
+              <surname>Weksler</surname>
+              <given-names>BB</given-names>
+            </name>
+            <name>
+              <surname>Willner</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Peters</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Giri</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Lansdorp</surname>
+              <given-names>PM</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Very short telomere length by flow FISH identifies patients with Dyskeratosis Congenita</article-title>
+          <source>Blood</source>
+          <volume>110</volume>
+          <fpage>1439</fpage>
+          <lpage>1447</lpage>
+          <pub-id pub-id-type="pmid">17468339</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R5">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Alter</surname>
+              <given-names>BP</given-names>
+            </name>
+            <name>
+              <surname>Giri</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Savage</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Peters</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Loud</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>Leathwood</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Carr</surname>
+              <given-names>AG</given-names>
+            </name>
+            <name>
+              <surname>Greene</surname>
+              <given-names>MH</given-names>
+            </name>
+            <name>
+              <surname>Rosenberg</surname>
+              <given-names>PS</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>Malignancies and survival patterns in the national cancer institute inherited bone marrow failure syndromes cohort study</article-title>
+          <source>British Journal of Haematology</source>
+          <volume>150</volume>
+          <fpage>179</fpage>
+          <lpage>188</lpage>
+          <pub-id pub-id-type="pmid">20507306</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R6">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Alter</surname>
+              <given-names>BP</given-names>
+            </name>
+            <name>
+              <surname>Rosenberg</surname>
+              <given-names>PS</given-names>
+            </name>
+            <name>
+              <surname>Giri</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Baerlocher</surname>
+              <given-names>GM</given-names>
+            </name>
+            <name>
+              <surname>Lansdorp</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>Savage</surname>
+              <given-names>SA</given-names>
+            </name>
+          </person-group>
+          <year>2012</year>
+          <article-title>Telomere length is associated with disease severity and declines with age in dyskeratosis congenita</article-title>
+          <source>Haematologica</source>
+          <volume>97</volume>
+          <fpage>353</fpage>
+          <lpage>359</lpage>
+          <pub-id pub-id-type="pmid">22058220</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R7">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Anderson</surname>
+              <given-names>BH</given-names>
+            </name>
+            <name>
+              <surname>Kasher</surname>
+              <given-names>PR</given-names>
+            </name>
+            <name>
+              <surname>Mayer</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Szynkiewicz</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Jenkinson</surname>
+              <given-names>EM</given-names>
+            </name>
+            <name>
+              <surname>Bhaskar</surname>
+              <given-names>SS</given-names>
+            </name>
+            <name>
+              <surname>Urquhart</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Daly</surname>
+              <given-names>SB</given-names>
+            </name>
+            <name>
+              <surname>Dickerson</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>O’Sullivan</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Leibundgut</surname>
+              <given-names>EO</given-names>
+            </name>
+            <name>
+              <surname>Muter</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Abdel-Salem</surname>
+              <given-names>GM</given-names>
+            </name>
+            <name>
+              <surname>Babul-Hirji</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Baxter</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Berger</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Bonafe</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Brunstom-Hernandez</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Buckard</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Chitayat</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Chong</surname>
+              <given-names>WK</given-names>
+            </name>
+            <name>
+              <surname>Cordelli</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Ferreira</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Fluss</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Forrest</surname>
+              <given-names>EH</given-names>
+            </name>
+            <name>
+              <surname>Franzoni</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Garone</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Hammans</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Houge</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Hughes</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Jacquemont</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Jeannet</surname>
+              <given-names>PY</given-names>
+            </name>
+            <name>
+              <surname>Jefferson</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Kumar</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Kutschke</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Lundberg</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Lourenco</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Mehta</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Naidu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Nischal</surname>
+              <given-names>KK</given-names>
+            </name>
+            <name>
+              <surname>Nunes</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Ounap</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Philippart</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Prabhakar</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Risen</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Schiffmann</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Soh</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Stephenson</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Stewart</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Stone</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Tolmie</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>van der Knaap</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name>
+              <surname>Vieira</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Vilain</surname>
+              <given-names>CN</given-names>
+            </name>
+            <name>
+              <surname>Wakeling</surname>
+              <given-names>EL</given-names>
+            </name>
+            <name>
+              <surname>Wermenbol</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Whitney</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Lovell</surname>
+              <given-names>SC</given-names>
+            </name>
+            <name>
+              <surname>Meyer</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Livingston</surname>
+              <given-names>JH</given-names>
+            </name>
+            <name>
+              <surname>Baerlocher</surname>
+              <given-names>GM</given-names>
+            </name>
+            <name>
+              <surname>Black</surname>
+              <given-names>GC</given-names>
+            </name>
+            <name>
+              <surname>Rice</surname>
+              <given-names>GI</given-names>
+            </name>
+            <name>
+              <surname>Crow</surname>
+              <given-names>YJ</given-names>
+            </name>
+          </person-group>
+          <year>2012</year>
+          <article-title>Mutations in CTC1, encoding conserved telomere maintenance component 1, cause coats plus</article-title>
+          <source>Nature Genetics</source>
+          <volume>44</volume>
+          <fpage>338</fpage>
+          <lpage>342</lpage>
+          <pub-id pub-id-type="pmid">22267198</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R8">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Arafah</surname>
+              <given-names>BM</given-names>
+            </name>
+          </person-group>
+          <year>1994</year>
+          <article-title>Decreased levothyroxine requirement in women with hypothyroidism during androgen therapy for breast cancer</article-title>
+          <source>Annals of Internal Medicine</source>
+          <volume>121</volume>
+          <fpage>247</fpage>
+          <lpage>251</lpage>
+          <pub-id pub-id-type="pmid">7518657</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R9">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Baerlocher</surname>
+              <given-names>GM</given-names>
+            </name>
+            <name>
+              <surname>Vulto</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>de Jong</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Lansdorp</surname>
+              <given-names>PM</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Flow cytometry and FISH to measure the average length of telomeres (flow FISH)</article-title>
+          <source>Nature Protocols</source>
+          <volume>1</volume>
+          <fpage>2365</fpage>
+          <lpage>2376</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R10">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Baldassarre</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Veglia</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Hamsten</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Humphries</surname>
+              <given-names>SE</given-names>
+            </name>
+            <name>
+              <surname>Rauramaa</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>de Faire</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Smit</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Giral</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Kurl</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Mannarino</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Grossi</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Paoletti</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Tremoli</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <collab>on behalf of the IMPROVE Study Group</collab>
+          <year>2013</year>
+          <article-title>Progression of Carotid Intima-Media Thickness as Predictor of Vascular Events: Results from the IMPROVE Study</article-title>
+          <source>Arteriosclerosis, Thrombosis and Vascular Biology</source>
+          <volume>33</volume>
+          <fpage>2273</fpage>
+          <lpage>2279</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R11">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ballew</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Savage</surname>
+              <given-names>SA</given-names>
+            </name>
+          </person-group>
+          <year>2013</year>
+          <article-title>Updates on the biology and management of Dyskeratosis Congenita and related telomere biology disorders</article-title>
+          <source>Expert Reviews in Hematology</source>
+          <volume>6</volume>
+          <issue>3</issue>
+          <fpage>327</fpage>
+          <lpage>27</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R12">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ballew</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Yeager</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Jacobs</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Giri</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Boland</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Burdett</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Alter</surname>
+              <given-names>BP</given-names>
+            </name>
+            <name>
+              <surname>Savage</surname>
+              <given-names>SA</given-names>
+            </name>
+          </person-group>
+          <year>2013</year>
+          <article-title>Germline mutations of regulator of telomere elongation helicase 1, RTEL1, in dyskeratosis congenita</article-title>
+          <source>Human Genetics</source>
+          <volume>132</volume>
+          <fpage>473</fpage>
+          <lpage>480</lpage>
+          <pub-id pub-id-type="pmid">23329068</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R13">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Desierto</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Dent</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Bachman</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Calado</surname>
+              <given-names>RT</given-names>
+            </name>
+            <name>
+              <surname>Stratakis</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>Young</surname>
+              <given-names>NS</given-names>
+            </name>
+          </person-group>
+          <year>2012</year>
+          <article-title>Androgen Treatment Mitigates Hematopoietic Cell Telomere Attrition <italic>In Vivo</italic></article-title>
+          <source>Blood (ASH Annual Meeting Abstracts)</source>
+          <volume>120</volume>
+          <fpage>516</fpage>
+        </element-citation>
+      </ref>
+      <ref id="R14">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dokal</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <year>2011</year>
+          <article-title>Dyskeratosis Congenita</article-title>
+          <source>ASH Education Book 2011</source>
+          <volume>2011</volume>
+          <fpage>480</fpage>
+          <lpage>486</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R15">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Diamond</surname>
+              <given-names>LK</given-names>
+            </name>
+            <name>
+              <surname>Shahidi</surname>
+              <given-names>NT</given-names>
+            </name>
+          </person-group>
+          <year>1967</year>
+          <article-title>Treatment of aplastic anemia in children</article-title>
+          <source>Seminars in Hematology</source>
+          <volume>4</volume>
+          <fpage>278</fpage>
+          <lpage>288</lpage>
+          <pub-id pub-id-type="pmid">4294607</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R16">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Glazer</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <year>1991</year>
+          <article-title>Atherogenic effects of anabolic steroids on serum lipid levels. A literature review</article-title>
+          <source>Archives of Internal Medicine</source>
+          <volume>151</volume>
+          <fpage>1925</fpage>
+          <lpage>1933</lpage>
+          <pub-id pub-id-type="pmid">1929679</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R17">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Giri</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Pitel</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Green</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Alter</surname>
+              <given-names>BP</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Splenic peliosis and rupture in patients with dyskeratosis congenita on androgens and granulocyte colony-stimulating factor</article-title>
+          <source>British Journal of Haematology</source>
+          <volume>138</volume>
+          <fpage>815</fpage>
+          <lpage>817</lpage>
+          <pub-id pub-id-type="pmid">17760812</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R18">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Islam</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Rafiq</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kirwan</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Walne</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Cavenagh</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Vulliamy</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Dokal</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <year>2013</year>
+          <article-title>Haematological recovery in dyskeratosis congenita patients treated with danazol</article-title>
+          <source>British Journal of Haematology</source>
+          <volume>162</volume>
+          <fpage>854</fpage>
+          <lpage>856</lpage>
+          <pub-id pub-id-type="pmid">23782100</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R19">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Maggio</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Snyder</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Ceda</surname>
+              <given-names>GP</given-names>
+            </name>
+            <name>
+              <surname>Milaneschi</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Luci</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Cattabiani</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Masoni</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Vignali</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Volpi</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Lauretani</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Peachey</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Valenti</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Cappola</surname>
+              <given-names>AR</given-names>
+            </name>
+            <name>
+              <surname>Longo</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Ferrucci</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <year>2013</year>
+          <article-title>Is the haematopoietic effect of testosterone mediated by erythropoietin? the results of a clinical trial in older men</article-title>
+          <source>Andrology</source>
+          <volume>1</volume>
+          <fpage>24</fpage>
+          <lpage>28</lpage>
+          <pub-id pub-id-type="pmid">23258626</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R20">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Polvi</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Linnankivi</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Kivela</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Herva</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Keating</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Makitie</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Pareyson</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Vainionpaa</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Lahtinen</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Hovatta</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Pihko</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Lehesjoki</surname>
+              <given-names>AE</given-names>
+            </name>
+          </person-group>
+          <year>2012</year>
+          <article-title>Mutations in CTC1, encoding the CTS telomere maintenance complex component 1, cause cerebroretinal microangiopathy with calcifications and cysts</article-title>
+          <source>American Journal of Human Genetics</source>
+          <volume>90</volume>
+          <fpage>540</fpage>
+          <lpage>549</lpage>
+          <pub-id pub-id-type="pmid">22387016</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R21">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rackley</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Pao</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Seratti</surname>
+              <given-names>GF</given-names>
+            </name>
+            <name>
+              <surname>Giri</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Rasimas</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Alter</surname>
+              <given-names>BP</given-names>
+            </name>
+            <name>
+              <surname>Savage</surname>
+              <given-names>SA</given-names>
+            </name>
+          </person-group>
+          <year>2012</year>
+          <article-title>Neuropsychiatric conditions among patients with dyskeratosis congenita: a link with telomere biology?</article-title>
+          <source>Psychosomatics</source>
+          <volume>53</volume>
+          <fpage>230</fpage>
+          <lpage>235</lpage>
+          <pub-id pub-id-type="pmid">22458992</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R22">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rose</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>MO</given-names>
+            </name>
+            <name>
+              <surname>Korbee</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Wilson</surname>
+              <given-names>KA</given-names>
+            </name>
+            <name>
+              <surname>Douglas</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Eyal</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Sherafat-Kazemzadeh</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Bollepalli</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Harris</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Jeng</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Williams</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>FO</given-names>
+            </name>
+          </person-group>
+          <year>2014</year>
+          <article-title>Oxandrolone in the treatment of bone marrow failure in Fanconi Anemia</article-title>
+          <source>Pediatric Blood and Cancer</source>
+          <volume>61</volume>
+          <fpage>11</fpage>
+          <lpage>19</lpage>
+          <pub-id pub-id-type="pmid">24019220</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R23">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Savage</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Bertuch</surname>
+              <given-names>AA</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>The genetics and clinical manifestations of telomere biology disorders</article-title>
+          <source>Genetics in Medicine: Official Journal of the American College of Medical Genetics</source>
+          <volume>12</volume>
+          <fpage>753</fpage>
+          <lpage>764</lpage>
+          <pub-id pub-id-type="pmid">21189492</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R24">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Savage</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Dokal</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Armanios</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Aubert</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Cowen</surname>
+              <given-names>EW</given-names>
+            </name>
+            <name>
+              <surname>Domingo</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Giri</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Greene</surname>
+              <given-names>MH</given-names>
+            </name>
+            <name>
+              <surname>Orchard</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Tolar</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Tsilou</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Van Waes</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Wong</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Young</surname>
+              <given-names>NS</given-names>
+            </name>
+            <name>
+              <surname>Alter</surname>
+              <given-names>BP</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Dyskeratosis Congenita: The first NIH clinical research workshop</article-title>
+          <source>Pediatric Blood &amp; Cancer</source>
+          <volume>53 </volume>
+          <issue>3</issue>
+          <fpage>520</fpage>
+          <lpage>3</lpage>
+          <pub-id pub-id-type="pmid">19415736</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R25">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Scheinberg</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <year>2013</year>
+          <article-title>Prognostic value of telomere attrition in patients with aplastic anemia</article-title>
+          <source>International Journal of Hematology</source>
+          <volume>97</volume>
+          <fpage>553</fpage>
+          <lpage>557</lpage>
+          <pub-id pub-id-type="pmid">23636667</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R26">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shahidi</surname>
+              <given-names>NT</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>A review of the chemistry, biological action, and clinical applications of anabolic-androgenic steroids</article-title>
+          <source>Clinical Therapeutics</source>
+          <volume>23</volume>
+          <fpage>1355</fpage>
+          <lpage>1390</lpage>
+          <pub-id pub-id-type="pmid">11589254</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R27">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shimamura</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Alter</surname>
+              <given-names>BP</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>Pathophysiology and management of inherited bone marrow failure syndromes</article-title>
+          <source>Blood Reviews</source>
+          <volume>24</volume>
+          <fpage>101</fpage>
+          <lpage>122</lpage>
+          <pub-id pub-id-type="pmid">20417588</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R28">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tahboub</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Arafah</surname>
+              <given-names>BM</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Sex steroids and the thyroid</article-title>
+          <source>Best Practice &amp; Research. Clinical Endocrinology &amp; Metabolism</source>
+          <volume>23</volume>
+          <fpage>769</fpage>
+          <lpage>780</lpage>
+          <pub-id pub-id-type="pmid">19942152</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R29">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vulliamy</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Dokal</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Dyskeratosis congenita</article-title>
+          <source>Seminars in Hematology</source>
+          <volume>43</volume>
+          <fpage>157</fpage>
+          <lpage>166</lpage>
+          <pub-id pub-id-type="pmid">16822458</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R30">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ziegler</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Schrezenmeier</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Akkad</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Brassat</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Vankann</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Panse</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Wilop</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Balabanov</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Schwarz</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Martens</surname>
+              <given-names>UM</given-names>
+            </name>
+            <name>
+              <surname>Brummendorf</surname>
+              <given-names>TH</given-names>
+            </name>
+          </person-group>
+          <year>2012</year>
+          <article-title>Telomere elongation and clinical response to androgen treatment in a patient with aplastic anemia and a heterozygous hTERT gene mutation</article-title>
+          <source>Annals of Hematology</source>
+          <volume>91</volume>
+          <fpage>1115</fpage>
+          <lpage>1120</lpage>
+          <pub-id pub-id-type="pmid">22476886</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig id="F1" orientation="portrait" position="float">
+      <label>Figure 1</label>
+      <caption>
+        <title>Haematological response in all patients with DC treated with androgens</title>
+        <p>The median is denoted by the solid horizontal line.</p>
+        <p>A) Haemoglobin (g/l)</p>
+        <p>B) Absolute Neutrophil Count (× 10<sup>9</sup>/l)</p>
+        <p>C) Platelet count (× 10<sup>9</sup>/l)</p>
+        <p>DC, dyskeratosis congenita</p>
+      </caption>
+      <graphic xlink:href="nihms558388f1a"/>
+      <graphic xlink:href="nihms558388f1b"/>
+      <graphic xlink:href="nihms558388f1c"/>
+    </fig>
+    <fig id="F2" orientation="portrait" position="float">
+      <label>Figure 2</label>
+      <caption>
+        <title>Longitudinal telomere lengths in patients with DC</title>
+        <p>A) Pre- and post-androgen lymphocyte telomere lengths in 4 DC patients. The green line indicates the patient treated with fluoxymesterone. The other three patients received oxymetholone. Legend reflects the known germline mutation in each patient.</p>
+        <p>B) Lymphocyte telomere lengths in 5 DC patients not treated with androgens. Legend reflects the known germline mutation in each patient.</p>
+        <p>DC, dyskeratosis congenita</p>
+      </caption>
+      <graphic xlink:href="nihms558388f2a"/>
+      <graphic xlink:href="nihms558388f2b"/>
+    </fig>
+    <fig id="F3" orientation="portrait" position="float">
+      <label>Figure 3</label>
+      <caption>
+        <title>Summary of lipid changes in patients with DC and FA treated with androgens</title>
+        <p>DC, dyskeratosis congenita; FA, Fanconi anaemia; HDL, high density lipoprotein; LDL, low density lipoprotein</p>
+      </caption>
+      <graphic xlink:href="nihms558388f3"/>
+    </fig>
+    <fig id="F4" orientation="portrait" position="float">
+      <label>Figure 4</label>
+      <caption>
+        <title>Growth acceleration in six pre-pubertal male dyskeratosis congenita patients on androgen therapy</title>
+        <p>Growth charts from CDC website, May 2000 (<ext-link ext-link-type="uri" xlink:href="http://www.cdc.gov/growthcharts/clinical_charts.htm">http://www.cdc.gov/growthcharts/clinical_charts.htm</ext-link>). Legend reflects the known germline mutation in each patient.</p>
+      </caption>
+      <graphic xlink:href="nihms558388f4"/>
+    </fig>
+    <table-wrap id="T1" position="float" orientation="portrait">
+      <label>Table I</label>
+      <caption>
+        <p>Demographics of patients with dyskeratosis congenita</p>
+      </caption>
+      <table frame="box" rules="all">
+        <thead>
+          <tr>
+            <th valign="top" align="left" rowspan="1" colspan="1">Diagnosis</th>
+            <th colspan="3" valign="top" align="center" rowspan="1">Dyskeratosis Congenita</th>
+          </tr>
+          <tr>
+            <th valign="middle" align="left" rowspan="1" colspan="1"/>
+            <th valign="middle" align="center" rowspan="1" colspan="1">Total</th>
+            <th valign="middle" align="center" rowspan="1" colspan="1">No Androgens</th>
+            <th valign="middle" align="center" rowspan="1" colspan="1">Treated with Androgens</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Number</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">44</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">28</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">16</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Male:female</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">17:5</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">11:3</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3:1</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Median age, years (range)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">16 (1.5–69)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">18 (2.5–69)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">11 (1.5–47)</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+    <table-wrap id="T2" position="float" orientation="landscape">
+      <label>Table II</label>
+      <caption>
+        <p>Genetic characteristics of dyskeratosis congenita patients by androgen treatment status and response.</p>
+      </caption>
+      <table frame="box" rules="all">
+        <thead>
+          <tr>
+            <th valign="top" rowspan="2" align="center" colspan="1"/>
+            <th colspan="3" valign="top" align="center" rowspan="1">Treated with androgens</th>
+            <th valign="middle" rowspan="2" align="center" colspan="1">Not treated</th>
+            <th valign="middle" rowspan="2" align="center" colspan="1">Total</th>
+          </tr>
+          <tr>
+            <th valign="top" align="center" rowspan="1" colspan="1">Responders</th>
+            <th valign="top" align="center" rowspan="1" colspan="1">Non responders</th>
+            <th valign="top" align="center" rowspan="1" colspan="1">% response</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center" valign="top" rowspan="1" colspan="1">
+              <italic>DKC1</italic>
+            </td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">67%</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">8</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">11</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" rowspan="1" colspan="1">
+              <italic>TINF2</italic>
+            </td>
+            <td align="center" valign="top" rowspan="1" colspan="1">4</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">67%</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">6</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">12</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" rowspan="1" colspan="1">
+              <italic>TERC</italic>
+            </td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">100%</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" rowspan="1" colspan="1">
+              <italic>TERT</italic>
+            </td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">NA</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">5</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">5</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" rowspan="1" colspan="1">
+              <italic>WRAP53</italic>
+            </td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">100%</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" rowspan="1" colspan="1">
+              <italic>RTEL1</italic>
+            </td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">100%</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" rowspan="1" colspan="1">Unknown</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0%</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">6</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">8</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" rowspan="1" colspan="1">Total</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">11</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">5</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">28</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">44</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+    <table-wrap id="T3" position="float" orientation="landscape">
+      <label>Table III</label>
+      <caption>
+        <p>Lipid profiles of untreated and treated patients with dyskeratosis congenita (DC) and treated Fanconi anaemia (FA) patients</p>
+      </caption>
+      <table frame="box" rules="all">
+        <thead>
+          <tr>
+            <th colspan="2" align="left" valign="top" rowspan="1">Parameter (normal range)</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">Cholesterol (&lt; 5.18 mmol/l)</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">HDL (1.03–1.55 mmol/l)</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">LDL (&lt;2.59 mmol/)</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">Triglyceride (&lt;1.69 mmol/l)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="middle" rowspan="2" colspan="1">DC: not treated</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Number abnormal/Total patients (%)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3/38 (8%)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">2/38 (5%)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">6/37 (16%)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">2/38 (5%)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Median (range)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3.94 (2.75–6.27)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">1.27 (0.8–2.69)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">2.14 (1.01–3.7)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.72 (0.34–1.89)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="2" colspan="1">DC: treated</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Number abnormal/Total patients (%)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">7/13 (54%)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">13/13 (100%)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">13/13 (100%)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">5/13 (38%)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Median (range)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">5.18 (3.5–9.27)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.39 (0.18–0.96)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">4.51 (2.28–7.54)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">1.12 (0.54–2.69)</td>
+          </tr>
+          <tr>
+            <td colspan="2" align="left" valign="middle" rowspan="1">P-value<xref rid="TFN2" ref-type="table-fn">*</xref></td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.001</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">&lt;0.0001</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">&lt;0.0001</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.008</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="2" colspan="1">FA: treated</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Number abnormal/Total Patients (%)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0/6 (0%)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3/6 (50%)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3/6 (50%)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">1/6 (17%)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Median (range)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3.64 (3.47–4.51)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">1.01 (0.7–1.97)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">2.49 (2.23–2.85)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.84 (0.33–2.02)</td>
+          </tr>
+          <tr>
+            <td colspan="2" align="left" valign="middle" rowspan="1">P-value<xref rid="TFN3" ref-type="table-fn">**</xref></td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.04</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.02</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">0.02</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">NS</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN1">
+          <p>p value calculated by Fisher exact test. p ≤ 0.05 considered significant</p>
+        </fn>
+        <fn id="TFN2">
+          <label>*</label>
+          <p>: Comparison between untreated and treated DC patients</p>
+        </fn>
+        <fn id="TFN3">
+          <label>**</label>
+          <p>: Comparison between post-androgen DC and FA patients</p>
+        </fn>
+        <fn id="TFN4">
+          <p>HDL: high density lipoprotein, LDL: low density lipoprotein, NS: Not significant (p &gt;0.05)</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+    <table-wrap id="T4" position="float" orientation="landscape">
+      <label>Table IV</label>
+      <caption>
+        <p>Liver function of untreated and treated dyskeratosis congenita (DC) patients</p>
+      </caption>
+      <table frame="box" rules="all">
+        <thead>
+          <tr>
+            <th colspan="2" align="left" valign="top" rowspan="1">Parameter (normal range)</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">AST (0–59 u/l)</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">ALT (5–30 u/l)</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">Total Bilirubin (0–17.1 μmol/l)</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">GGT (2–24 u/l)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center" valign="middle" rowspan="2" colspan="1">DC: not treated</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Number abnormal/Total patients (%)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">4/40 (10%)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">15/40 (38%)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">10/40 (25%)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">6/36 (17%)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Median (range)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">25 (12–116)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">26 (7–171)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">11.97 (3.42–41)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">24 (0–114)</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle" rowspan="2" colspan="1">DC: treated</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Number abnormal/Total patients (%)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">2/13 (15%)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">6/14 (43%)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3/14 (21%)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">4/10 (40%)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Median (range)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">31 (12–87)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">29 (15–553)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">11.97 (3.42–27.37)</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">17 (9–247)</td>
+          </tr>
+          <tr>
+            <td colspan="2" align="left" valign="middle" rowspan="1">P-value<xref rid="TFN6" ref-type="table-fn">*</xref></td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">NS</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">NS</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">NS</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">NS</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN5">
+          <p>p value calculated by Fisher exact test. p ≤ 0.05 considered significant</p>
+        </fn>
+        <fn id="TFN6">
+          <label>*</label>
+          <p>: Comparison between untreated and treated DC patients</p>
+        </fn>
+        <fn id="TFN7">
+          <p>AST: aspartate aminotransferase, ALT: alanine aminotransferase, GGT: gamma-glutamyl transpeptidase; NS: Not significant (p &gt;0.05).</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+  </floats-group>
+</article>

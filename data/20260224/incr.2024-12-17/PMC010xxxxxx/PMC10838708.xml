@@ -1,0 +1,1383 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties manuscript?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">101586049</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">40834</journal-id>
+      <journal-id journal-id-type="nlm-ta">J Pediatric Infect Dis Soc</journal-id>
+      <journal-id journal-id-type="iso-abbrev">J Pediatric Infect Dis Soc</journal-id>
+      <journal-title-group>
+        <journal-title>Journal of the Pediatric Infectious Diseases Society</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">2048-7193</issn>
+      <issn pub-type="epub">2048-7207</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">37952237</article-id>
+      <article-id pub-id-type="pmc">10838708</article-id>
+      <article-id pub-id-type="doi">10.1093/jpids/piad100</article-id>
+      <article-id pub-id-type="manuscript">HHSPA1963268</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Association of HIV Exposure and HIV Infection With In-hospital Mortality Among Hospitalized Infants &lt;1 Year of Age, South Africa, 2016–2018</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0002-9526-0133</contrib-id>
+          <name>
+            <surname>Wolter</surname>
+            <given-names>Nicole</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A2" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Walaza</surname>
+            <given-names>Sibongile</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A3" ref-type="aff">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>von Mollendorf</surname>
+            <given-names>Claire</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>von Gottberg</surname>
+            <given-names>Anne</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A2" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Tempia</surname>
+            <given-names>Stefano</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>McMorrow</surname>
+            <given-names>Meredith L.</given-names>
+          </name>
+          <xref rid="A4" ref-type="aff">4</xref>
+          <xref rid="A5" ref-type="aff">5</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Moyes</surname>
+            <given-names>Jocelyn</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A3" ref-type="aff">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Treurnicht</surname>
+            <given-names>Florette</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A2" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0001-9246-8927</contrib-id>
+          <name>
+            <surname>Hellferscee</surname>
+            <given-names>Orienka</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A2" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Moleleki</surname>
+            <given-names>Malefu</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A2" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Makhasi</surname>
+            <given-names>Mvuyo</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A3" ref-type="aff">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Baute</surname>
+            <given-names>Neydis</given-names>
+          </name>
+          <xref rid="A6" ref-type="aff">6</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Cohen</surname>
+            <given-names>Cheryl</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A3" ref-type="aff">3</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>1</label>Centre for Respiratory Diseases and Meningitis, National Institute for Communicable Diseases of the National Health Laboratory Service, Johannesburg, South Africa,</aff>
+      <aff id="A2"><label>2</label>School of Pathology, Faculty of Health Sciences, University of the Witwatersrand, Johannesburg, South Africa,</aff>
+      <aff id="A3"><label>3</label>School of Public Health, Faculty of Health Sciences, University of the Witwatersrand, Johannesburg, South Africa,</aff>
+      <aff id="A4"><label>4</label>Influenza Division, Centers for Disease Control and Prevention, Atlanta, GA, USA,</aff>
+      <aff id="A5"><label>5</label>Influenza Program, Centers for Disease Control and Prevention, Pretoria, South Africa,</aff>
+      <aff id="A6"><label>6</label>Department of Paediatrics, Mapulaneng Hospital, Mpumalanga, South Africa</aff>
+      <author-notes>
+        <fn fn-type="con" id="FN1">
+          <p id="P1"><bold><italic toggle="yes">Author contribution</italic></bold>: All authors approved the final manuscript as submitted and agree to be accountable for all aspects of the work.</p>
+        </fn>
+        <corresp id="CR1">Corresponding Author: Nicole Wolter, Centre for Respiratory Diseases and Meningitis, National Institute for Communicable Diseases, Private Bag X4, Sandringham, 2131, Gauteng, South Africa. <email>nicolew@nicd.ac.za</email>.</corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>30</day>
+        <month>1</month>
+        <year>2024</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <day>16</day>
+        <month>12</month>
+        <year>2023</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>16</day>
+        <month>12</month>
+        <year>2024</year>
+      </pub-date>
+      <volume>12</volume>
+      <issue>12</issue>
+      <fpage>646</fpage>
+      <lpage>651</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract id="ABS1">
+        <p id="P2">We enrolled 1323 hospitalized infants aged &lt;1 year in 2016–2018, and examined the association between HIV status and in-hospital mortality. After controlling for confounders, HIV-exposed uninfected infants did not have an increased risk of mortality, whereas infants living with HIV had 4 times greater risk compared with HIV-uninfected infants.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>Africa</kwd>
+        <kwd>HIV exposure</kwd>
+        <kwd>HIV infection</kwd>
+        <kwd>infants</kwd>
+        <kwd>mortality</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="S1">
+      <title>INTRODUCTION</title>
+      <p id="P3">While infants living with HIV (HI) are known to be at increased risk of mortality compared with HIV unexposed uninfected (HUU) infants [<xref rid="R1" ref-type="bibr">1</xref>], the effect of HIV exposure on infant mortality is less well understood with much of the data from prior to widespread antiretroviral therapy (ART) use, and from non-African countries [<xref rid="R2" ref-type="bibr">2</xref>].</p>
+      <p id="P4">In a national antenatal survey in 2017, 31% of pregnant women in South Africa were living with HIV [<xref rid="R3" ref-type="bibr">3</xref>]. A national program for prevention of vertical transmission of HIV was implemented in 2002 and was expanded and improved over time so that from 2015 all women living with HIV were eligible for lifelong ART, irrespective of CD4 count, as well as the availability of combination therapy [<xref rid="R4" ref-type="bibr">4</xref>]. This program has successfully reduced the risk of vertical HIV transmission; however, there is a growing population of HIV-exposed uninfected (HEU) infants. In a meta-analysis in 2016 of 22 studies conducted between 1986 and 2013, the pooled estimate showed that HEU infants had more than a 70% increased risk of all-cause mortality compared with HUU infants within the first 2 years of life, although there was heterogeneity between the individual studies [<xref rid="R5" ref-type="bibr">5</xref>].</p>
+      <p id="P5">We aimed to determine whether HIV exposure and HIV infection were associated with an increased risk of in-hospital mortality among infants hospitalized with acute medical illness, in the context of an established ART program.</p>
+    </sec>
+    <sec id="S2">
+      <title>METHODS</title>
+      <p id="P6">The Infant Burden Study was conducted to assess the burden of disease associated with influenza and other respiratory pathogens among hospitalized infants at 3 sentinel surveillance hospitals located in 3 (KwaZulu-Natal, Mpumalanga, and North West) provinces from July 2016 through October 2018. Surveillance officers enrolled infants aged &lt;1 year admitted to the medical ward with acute (symptom onset ≤10 days) respiratory and non-respiratory medical illness (excluding trauma/surgical cases), including medical admissions to the ICU. Surveillance officers collected whole blood, and demographic and clinical information by structured interview with parent/caregiver and hospital record review. Infants were followed up until discharge or in-hospital death.</p>
+      <p id="P7">Infant HIV status was determined from standard of care testing during the admission, or through testing at enrollment by polymerase chain reaction (PCR). HUU infants were infants with a negative HIV result and a recently documented (&lt;3 months) negative maternal HIV status. HEU infants were infants with a negative HIV result and a recently documented or verbally reported positive maternal HIV status, evidence that the mother was taking ART during pregnancy or post-partum. HI infants were infants with a recently documented positive HIV result, verbally reported by the parent/caregiver, or evidence that the infant was receiving ART. If the mother’s HIV status was unknown or a negative test result was from &gt;3 months prior, the mother was offered voluntary counseling and testing.</p>
+      <p id="P8">A cross-sectional analysis was conducted to assess the association between infant HIV status and in-hospital mortality. Factors associated with mortality were assessed using univariate random effects logistic regression, accounting for clustering by site. Potential confounders (<italic toggle="yes">P</italic> &lt; .2) from this analysis were examined individually for their effect on the association between HIV status and mortality, with evidence of confounding considered if the main effect adjusted odds ratio (aOR) differed by &gt;10% from the unadjusted odds ratio (OR) for either HI or HEU compared with HUU infants. Length of hospital stay, oxygen therapy, and intensive care unit admission were considered to be on the causal pathway, and not assessed for confounding. Multivariable random effects logistic regression accounting for clustering by site was performed, adjusting for the identified confounders. <italic toggle="yes">A priori</italic> variables included age, vaccination status, and feeding type.</p>
+      <p id="P9">Sensitivity analyses of the final model was performed by (1) comparing the risk of in-hospital mortality in HI compared with HIV-uninfected (grouping together both HUU and HEU) infants, and (2) restricting the analysis to infants aged &lt;6 months. Statistical analyses were performed using Stata version 14.0.</p>
+      <p id="P10">Ethical approval was obtained from the University of the Witwatersrand Human Research Ethics Committee (M140824) and University of KwaZulu-Natal Biomedical Research Ethics Committee (BE605/16). This surveillance was deemed non-research by the US Centers for Disease Control and Prevention.</p>
+    </sec>
+    <sec id="S3">
+      <title>RESULTS</title>
+      <p id="P11">During the study period, 1323 infants were enrolled, of which 1321 (99.8%) had known in-hospital outcome and 1296 (98.0%) had known HIV status. The most common admission diagnoses were pneumonia (538/1314, 40.9%) and diarrhea (191/1314, 14.5%), with 52.0% (683/1314) admitted with a respiratory diagnosis (<xref rid="SD1" ref-type="supplementary-material">Supplementary Table 1</xref>). Two percent (27/1321) of infants died while in hospital.</p>
+      <p id="P12">Overall, 55.8% (723/1296) of infants were HUU, 40.6% (526/1296) were HEU, and 3.6% (47/1296) were HI. Characteristics of enrolled infants by HIV status are shown in <xref rid="T1" ref-type="table">Table 1</xref>. The mortality ratio was 1.7% (12/721), 1.5% (8/526), and 12.8% (6/47) among HUU, HEU, and HI infants, respectively.</p>
+      <p id="P13">Among the 38/47 (80.9%) HI infants with information available, 92.1% (35/38) had mother’s that received ART during pregnancy. For 28 HI infants with available information, 21 (75.0%) were receiving ART at the time of admission. Of 523 HEU infants with available data, 513 (98.1%) had mother’s that were receiving ART during pregnancy.</p>
+      <p id="P14">The OR for mortality for HEU infants was 0.99 (95% confidence interval (CI) 0.40–2.44) and for HI infants was 7.39 (95% CI 2.58–21.19), compared with HUU infants (<xref rid="T2" ref-type="table">Table 2</xref>). Infant mortality by demographic and clinical characteristics, stratified by HIV status, is shown in <xref rid="SD1" ref-type="supplementary-material">Supplementary Table 2</xref>. After adjusting for a priori confounders, as well as the identified confounders (malnutrition and maternal education, <xref rid="SD1" ref-type="supplementary-material">Supplementary Table 3</xref>), HEU infants were not at increased risk of mortality compared with HUU (aOR 0.80, 95% CI .31–2.09), whereas HI infants had over 4 times increased risk of death compared with HUU (aOR 4.79, 95% CI 1.49–15.37) (<xref rid="T2" ref-type="table">Table 2</xref>). Malnutrition and not being fully vaccinated were also associated with an increased risk of mortality.</p>
+      <p id="P15">HI infants remained at increased risk of mortality compared with all HIV-uninfected (HUU and HEU) infants (<xref rid="SD1" ref-type="supplementary-material">Supplementary Table 4</xref>). When restricting to infants aged &lt;6 months, HI but not HEU, were at increased risk of mortality compared with HUU infants (<xref rid="SD1" ref-type="supplementary-material">Supplementary Table 5</xref>).</p>
+    </sec>
+    <sec id="S4">
+      <title>DISCUSSION</title>
+      <p id="P16">In the context of a mature program for prevention of vertical HIV transmission this study found that HI infants, but not HEU infants, were at increased risk of in-hospital mortality compared with HUU infants. Malnutrition and not being fully vaccinated for age were also identified as risk factors for in-hospital mortality.</p>
+      <p id="P17">The proportion of infants that were HEU and HI were higher than was expected based on the reported HIV prevalence (31%) of women who attended antenatal care in 2017 [<xref rid="R3" ref-type="bibr">3</xref>], as well as that reported in a cross-sectional survey conducted in 2012–2013 (33.1% HEU and 2.6% HI) [<xref rid="R6" ref-type="bibr">6</xref>]. This may be due to these studies having been conducted among pregnant women and infants presenting for routine immunization, whereas our study was conducted among admitted infants, with HEU and HI infants more likely to be hospitalized [<xref rid="R7" ref-type="bibr">7</xref>].</p>
+      <p id="P18">Previous studies examining the association between HIV exposure and mortality have reported conflicting results. In a study conducted in 2010–2013 among infants aged &lt;6 months hospitalized with lower respiratory tract infection in South Africa, HEU infants had 2.1-times increased risk of mortality compared with HUU infants [<xref rid="R8" ref-type="bibr">8</xref>], although feeding type was not adjusted for. In another study, among infants aged &lt;6 months in South Africa in 2012–2013, the risk of hospitalization or death was 4-fold higher among HEU infants compared with HUU [<xref rid="R9" ref-type="bibr">9</xref>], although the CI included 1. A more recent study in a South African cohort of infants &lt;1 year in 2017–2019 showed that while infectious-cause hospitalization was higher for HEU than HUU infants, there was no difference in mortality [<xref rid="R10" ref-type="bibr">10</xref>]. Data from the Thembisa model showed that ART coverage among adult females in 2018 in South Africa was 63% [<xref rid="R11" ref-type="bibr">11</xref>]. Use of ART in the mothers of HEU infants, and thereby improved health and well-being of the mother during and after pregnancy, would have likely resulted in transfer of protective maternal antibodies as well as improved infant care and nutrition.</p>
+      <p id="P19">Malnutrition was identified as a risk factor for mortality, with an increased mortality ratio in HUU, HEU, and HI infants compared with well-nourished infants with the same HIV status. Similarly, in the CHAMPS study in 7 countries in 2016–2020, malnutrition was identified as 1 of 2 most common underlying conditions among infant deaths [<xref rid="R12" ref-type="bibr">12</xref>].</p>
+      <p id="P20">Our study had a number of limitations. First, maternal HIV status was determined by numerous methods, including self-report for mothers living with HIV. It is possible that there was misclassification of infant’s exposure status. Second, we did not determine whether the infant died subsequent to hospital discharge. Third, data were not collected for maternal characteristics that have been associated with increased infant mortality risk such as maternal health, vital status, and age and there may be residual confounding. Fourth, we may have been under-powered to detect an association between HIV exposure and mortality.</p>
+      <p id="P21">Strengthening efforts to further decrease vertical HIV transmission, such as early and repeat HIV testing of pregnant women and maintenance of maternal viral suppression, remain essential to prevent infant HIV infection. In addition, ensuring HI infants are diagnosed and started on treatment early, and that infants are well nourished and fully vaccinated will help to further reduce infant mortality.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="SM1">
+      <title>Supplementary Material</title>
+      <supplementary-material id="SD1" position="float" content-type="local-data">
+        <label>Supplement</label>
+        <media xlink:href="NIHMS1963268-supplement-Supplement.docx" id="d64e329" position="anchor"/>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack id="S5">
+      <title>Acknowledgements</title>
+      <p id="P22">We acknowledge the following site investigators: Dr Omphile Mekgoe (Department of Paediatrics, Klerksdorp Hospital, Klerksdorp, South Africa), Dr Sumayya Haffejee (Department of Paediatrics, Matikwana Hospital, Hazyview, South Africa), Dr Fathima Naby (Department of Paediatrics, Pietermaritzburg Metropolitan Hospital, Pietermaritzburg, South Africa) and Dr Godfrey Siwele (Department of Medicine, Matikwana Hospital, Hazyview, South Africa), for the support they provided for the surveillance teams during participant enrollment.</p>
+      <sec id="S6">
+        <title>Financial support.</title>
+        <p id="P23">This work was supported by a research cooperative agreement with the United States of America Centers for Disease Control and Prevention (US CDC) [grant number 5U01IP001048]</p>
+      </sec>
+      <sec sec-type="COI-statement" id="S7">
+        <title>Potential conflicts of interest.</title>
+        <p id="P24">C. C. has received grant support from Sanofi Pasteur, the Bill and Melinda Gates Foundation, US CDC, South African Medical Research Council and Wellcome Trust. A. v. G. and N. W. have received grant funding from the US CDC, the Bill and Melinda Gates Foundation and Sanofi. J. M. has received grant funding from Sanofi Pasteur. C. V. M. has received grant funding from Pfizer. All other authors report no potential conflicts.</p>
+      </sec>
+    </ack>
+    <fn-group>
+      <fn id="FN2">
+        <p id="P25">Supplementary Data</p>
+        <p id="P26">Supplementary materials are available at the Journal of The Pediatric Infectious Diseases Society online (<ext-link xlink:href="http://jpids.oxfordjournals.org" ext-link-type="uri">http://jpids.oxfordjournals.org</ext-link>).</p>
+      </fn>
+      <fn id="FN3">
+        <p id="P27"><bold><italic toggle="yes">Disclaimer</italic></bold>: The findings and conclusions in this paper are those of the authors and do not necessarily represent the views of their affiliated institutions or the agencies funding the study.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>REFERENCES</title>
+      <ref id="R1">
+        <label>1.</label>
+        <mixed-citation publication-type="journal"><name><surname>Cohen</surname><given-names>C</given-names></name>, <name><surname>Walaza</surname><given-names>S</given-names></name>, <name><surname>Moyes</surname><given-names>J</given-names></name>, <etal/>
+<article-title>Epidemiology of viral-associated acute lower respiratory tract infection among children &lt;5 years of age in a high HIV prevalence setting, South Africa, 2009–2012</article-title>. <source>Pediatr Infect Dis J</source>
+<year>2015</year>; <volume>34</volume>:<fpage>66</fpage>–<lpage>72</lpage>.<pub-id pub-id-type="pmid">25093972</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R2">
+        <label>2.</label>
+        <mixed-citation publication-type="journal"><name><surname>Evans</surname><given-names>C</given-names></name>, <name><surname>Jones</surname><given-names>CE</given-names></name>, <name><surname>Prendergast</surname><given-names>AJ</given-names></name>. <article-title>HIV-exposed, uninfected infants: new global challenges in the era of paediatric HIV elimination</article-title>. <source>Lancet Infect Dis</source>
+<year>2016</year>; <volume>16</volume>:<fpage>e92</fpage>–<lpage>e107</lpage>.<pub-id pub-id-type="pmid">27049574</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R3">
+        <label>3.</label>
+        <mixed-citation publication-type="journal"><name><surname>Woldesenbet</surname><given-names>S</given-names></name>, <name><surname>Kufa-Chakezha</surname><given-names>T</given-names></name>, <name><surname>Lombard</surname><given-names>C</given-names></name>, <etal/>
+<article-title>Recent HIV infection among pregnant women in the 2017 antenatal sentinel cross-sectional survey, South Africa: assay-based incidence measurement</article-title>. <source>PLoS One</source>
+<year>2021</year>; <volume>16</volume>:<fpage>e0249953</fpage>.<pub-id pub-id-type="pmid">33852629</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R4">
+        <label>4.</label>
+        <mixed-citation publication-type="journal"><name><surname>Burton</surname><given-names>R</given-names></name>, <name><surname>Giddy</surname><given-names>J</given-names></name>, <name><surname>Stinson</surname><given-names>K</given-names></name>. <article-title>Prevention of mother-to-child transmission in South Africa: an ever-changing landscape</article-title>. <source>Obstetr Med</source>
+<year>2015</year>; <volume>8</volume>:<fpage>5</fpage>–<lpage>12</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R5">
+        <label>5.</label>
+        <mixed-citation publication-type="journal"><name><surname>Brennan</surname><given-names>AT</given-names></name>, <name><surname>Bonawitz</surname><given-names>R</given-names></name>, <name><surname>Gill</surname><given-names>CJ</given-names></name>, <etal/>
+<article-title>A meta-analysis assessing all-cause mortality in HIV-exposed uninfected compared with HIV-unexposed uninfected infants and children</article-title>. <source>AIDS</source>
+<year>2016</year>; <volume>30</volume>:<fpage>2351</fpage>–<lpage>60</lpage>.<pub-id pub-id-type="pmid">27456985</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R6">
+        <label>6.</label>
+        <mixed-citation publication-type="journal"><name><surname>Goga</surname><given-names>AE</given-names></name>, <name><surname>Dinh</surname><given-names>T-H</given-names></name>, <name><surname>Jackson</surname><given-names>DJ</given-names></name>, <etal/>; <article-title>South Africa PMTCT Evaluation (SAPMCTE) Team. Population-level effectiveness of PMTCT Option A on early mother-to-child (MTCT) transmission of HIV in South Africa: implications for eliminating MTCT</article-title>. <source>J Glob Health</source>
+<year>2016</year>; <volume>6</volume>:<fpage>020405</fpage>.<pub-id pub-id-type="pmid">27698999</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R7">
+        <label>7.</label>
+        <mixed-citation publication-type="journal"><name><surname>McMorrow</surname><given-names>ML</given-names></name>, <name><surname>Tempia</surname><given-names>S</given-names></name>, <name><surname>Walaza</surname><given-names>S</given-names></name>, <etal/>
+<article-title>The role of human immunodeficiency virus in influenza- and respiratory syncytial virus-associated hospitalizations in South African children, 2011–2016</article-title>. <source>Clin Infect Dis</source>
+<year>2019</year>; <volume>68</volume>:<fpage>773</fpage>–<lpage>80</lpage>.<pub-id pub-id-type="pmid">29961814</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R8">
+        <label>8.</label>
+        <mixed-citation publication-type="journal"><name><surname>Cohen</surname><given-names>C</given-names></name>, <name><surname>Moyes</surname><given-names>J</given-names></name>, <name><surname>Tempia</surname><given-names>S</given-names></name>, <etal/>
+<article-title>Epidemiology of acute lower respiratory tract infection in HIV exposed uninfected infants</article-title>. <source>Pediatrics</source>
+<year>2016</year>; <volume>137</volume>:<fpage>e20153272</fpage>.<pub-id pub-id-type="pmid">27025960</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R9">
+        <label>9.</label>
+        <mixed-citation publication-type="journal"><name><surname>Slogrove</surname><given-names>AL</given-names></name>, <name><surname>Esser</surname><given-names>MM</given-names></name>, <name><surname>Cotton</surname><given-names>MF</given-names></name>, <etal/>
+<article-title>A prospective cohort study of common childhood infections in South African HIV-exposed uninfected and HIV-unexposed infants</article-title>. <source>Pediatr Infect Dis J</source>
+<year>2017</year>; <volume>36</volume>:<fpage>e38</fpage>–<lpage>44</lpage>.<pub-id pub-id-type="pmid">28081048</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R10">
+        <label>10.</label>
+        <mixed-citation publication-type="journal"><name><surname>Anderson</surname><given-names>K</given-names></name>, <name><surname>Kalk</surname><given-names>E</given-names></name>, <name><surname>Madlala</surname><given-names>HP</given-names></name>, <etal/>
+<article-title>Increased infectious-cause hospitalization among infants who are HIV-exposed uninfected compared with HIV-unexposed</article-title>. <source>AIDS</source>
+<year>2021</year>; <volume>35</volume>:<fpage>2327</fpage>–<lpage>39</lpage>.<pub-id pub-id-type="pmid">34324450</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R11">
+        <label>11.</label>
+        <mixed-citation publication-type="webpage"><name><surname>Johnson</surname><given-names>L</given-names></name>, <name><surname>Dorrington</surname><given-names>R</given-names></name>. <source>Modelling the impact of HIV in South Africa’s provinces</source>. <year>2022</year>:<fpage>1</fpage>–<lpage>134</lpage>. <comment><ext-link xlink:href="https://www.thembisa.org/downloads" ext-link-type="uri">https://www.thembisa.org/downloads</ext-link>.</comment>
+<comment>Accessed</comment>
+<date-in-citation>September 26, 2023</date-in-citation>.</mixed-citation>
+      </ref>
+      <ref id="R12">
+        <label>12.</label>
+        <mixed-citation publication-type="journal"><name><surname>Breiman</surname><given-names>RF</given-names></name>, <name><surname>Blau</surname><given-names>DM</given-names></name>, <name><surname>Mutevedzi</surname><given-names>P</given-names></name>, <etal/>
+<article-title>Postmortem investigations and identification of multiple causes of child deaths: an analysis of findings from the Child Health and Mortality Prevention Surveillance (CHAMPS) network</article-title>. <source>PLoS Med</source>
+<year>2021</year>; <volume>18</volume>:<fpage>e1003814</fpage>–<lpage>19</lpage>.<pub-id pub-id-type="pmid">34591862</pub-id>
+</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <table-wrap position="float" id="T1" orientation="landscape">
+      <label>Table 1.</label>
+      <caption>
+        <p id="P28">Characteristics of Infants &lt;1 Year of Age Enrolled in the Infant Burden Study, Overall and by HIV Status, South Africa, July 2016–October 2018 (<italic toggle="yes">N</italic> = 1323)</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <colgroup span="1">
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th align="left" valign="bottom" rowspan="1" colspan="1">Variable</th>
+            <th align="center" valign="bottom" rowspan="1" colspan="1">Categories</th>
+            <th align="center" valign="bottom" rowspan="1" colspan="1">No. (%)<break/><italic toggle="yes">N</italic> = 1323</th>
+            <th align="center" valign="bottom" rowspan="1" colspan="1">HIV Unexposed Uninfected (HUU) No. (%)<break/><italic toggle="yes">N</italic> = 723</th>
+            <th align="center" valign="bottom" rowspan="1" colspan="1">HIV-exposed Uninfected (HEU) No. (%)<break/><italic toggle="yes">N</italic> = 526</th>
+            <th align="center" valign="bottom" rowspan="1" colspan="1">HEU vs HUU<break/><italic toggle="yes">P</italic>-value<sup><xref rid="TFN7" ref-type="table-fn">g</xref></sup></th>
+            <th align="center" valign="bottom" rowspan="1" colspan="1">Living with HIV (HI) No. (%)<break/><italic toggle="yes">N</italic> = 47</th>
+            <th align="center" valign="bottom" rowspan="1" colspan="1">HI vs. HUU<break/><italic toggle="yes">P</italic>-value<sup><xref rid="TFN7" ref-type="table-fn">g</xref></sup></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Site</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mpumalanga</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">214 (16.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">114 (15.8)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">73 (13.9)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.075</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">16 (34.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.001</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">KwaZulu-Natal</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">683 (51.6)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">364 (50.4)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">299 (56.8)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">12 (25.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">North West</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">426 (32.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">245 (33.9)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">154 (29.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">19 (40.4)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Year</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">2016</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">177 (13.4)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">105 (14.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">62 (11.8)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.369</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">8 (17.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.493</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">2017</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">575 (43.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">308 (42.6)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">229 (43.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">23 (49.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">2018</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">571 (43.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">310 (42.9)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">235 (44.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">16 (34.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Sex</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Male</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">763 (57.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">415 (57.4)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">305 (58.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.836</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">26 (55.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.780</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Female</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">560 (42.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">308 (42.6)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">221 (42.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">21 (44.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Race</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Black</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1303 (98.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">706 (97.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">523 (99.4)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.013</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">47 (100.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.288</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Non-black</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">20 (1.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">17 (2.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3 (0.6)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">0 (0.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Age group (months)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">&lt;1</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">108 (8.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">56 (7.8)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">51 (9.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.344</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1 (2.1)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.177</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">1 to &lt;3</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">364 (27.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">207 (28.6)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">137 (26.1)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">10 (21.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">3 to &lt;6</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">335 (25.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">188 (26.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">120 (22.8)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">15 (31.9)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">6 to &lt;9</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">277 (20.9)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">148 (20.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">118 (22.4)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">8 (17.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">9 to &lt;12</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">239 (18.1)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">124 (17.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">100 (19.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">13 (27.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Underlying condition<sup><xref rid="TFN1" ref-type="table-fn">a</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">No</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1284 (97.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">698 (96.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">513 (97.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.316</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">46 (97.9)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.625</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Yes</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">39 (3.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">25 (3.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">13 (2.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">1 (2.1)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Malnutrition<sup><xref rid="TFN2" ref-type="table-fn">b</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">No</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">975 (73.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">556 (76.9)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">382 (72.6)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.145</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">21 (44.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">&lt;.001</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Yes</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">347 (26.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">166 (23.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">144 (27.4)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">26 (55.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Unknown</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1 (0.1)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1 (0.1)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0 (0.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">0 (0.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Feeding type</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Exclusive breastfeeding</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">707 (53.4)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">427 (59.1)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">248 (47.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">&lt;.001</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">21 (44.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.066</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mixed feeding</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">240 (18.1)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">142 (19.6)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">82 (15.6)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">12 (25.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Formula feeding</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">333 (25.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">130 (18.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">182 (34.6)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">14 (29.8)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Unknown</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">43 (3.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">24 (3.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">14 (2.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">0 (0.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Prematurity<sup><xref rid="TFN3" ref-type="table-fn">c</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">No</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1082 (81.8)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">585 (80.9)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">428 (81.4)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.839</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">42 (89.4)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.149</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Yes</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">241 (18.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">138 (19.1)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">98 (18.6)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">5 (10.6)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Birthweight<sup><xref rid="TFN4" ref-type="table-fn">d</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Normal</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">970 (73.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">533 (73.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">384 (73.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.516</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">32 (68.1)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.003</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Low</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">282 (21.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">153 (21.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">121 (23.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">7 (14.9)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Unknown</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">71 (5.4)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">37 (5.1)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">21 (4.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">8 (17.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Vaccination<sup><xref rid="TFN5" ref-type="table-fn">e</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Full coverage</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">964 (72.9)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">530 (73.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">378 (71.9)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.646</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">37 (78.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.013</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">No full coverage</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">307 (23.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">167 (23.1)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">132 (25.1)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">5 (10.6)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Unknown</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">52 (3.9)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">26 (3.6)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">16 (3.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">5 (10.6)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Admission diagnosis<sup><xref rid="TFN6" ref-type="table-fn">f</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Non-respiratory</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">631 (47.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">320 (44.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">283 (53.8)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.003</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">17 (36.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.470</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Respiratory</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">683 (51.6)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">399 (55.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">239 (45.4)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">30 (63.8)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Unknown</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">9 (0.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">4 (0.6)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">4 (0.8)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">0 (0.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Maternal education level</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">None/Primary</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">616 (46.6)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">300 (41.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">268 (51.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.004</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">33 (70.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.001</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Secondary/Tertiary</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">694 (52.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">414 (57.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">254 (48.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">14 (29.8)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Unknown</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">13 (1.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">9 (1.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">4 (0.8)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">0 (0.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Outcome</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Sur vived</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1294 (97.8)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">709 (98.1)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">518 (98.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.473</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">41 (87.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">&lt;.001</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Died</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">27 (2.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">12 (1.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">8 (1.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">6 (12.8)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Unknown</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2 (0.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2 (0.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0 (0.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">0 (0.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN1">
+          <label>a</label>
+          <p id="P29">Underlying condition includes asthma, chronic lung, heart, liver or renal disease, stroke, sinusitis, organ transplant, anemia, immunosuppressive therapy, splenectomy, diabetes, burns, immunoglobulin deficiency, autoimmune disease, nephrotic syndrome, cancer, spinal cord injury, seizure disorder, cerebral palsy, congenital heart disease, other congenital disorder, obesity, or chronic gastrointestinal problems.</p>
+        </fn>
+        <fn id="TFN2">
+          <label>b</label>
+          <p id="P30">Malnutrition defined as a weight-for-age &lt;−2 standard deviations from the WHO mean <italic toggle="yes">Z</italic>-score.</p>
+        </fn>
+        <fn id="TFN3">
+          <label>c</label>
+          <p id="P31">Prematurity defined as gestational age at birth of &lt;37 weeks.</p>
+        </fn>
+        <fn id="TFN4">
+          <label>d</label>
+          <p id="P32">Low infant birthweight defined as &lt;2500 g.</p>
+        </fn>
+        <fn id="TFN5">
+          <label>e</label>
+          <p id="P33">Vaccination defined as full vaccine coverage for age, using the <italic toggle="yes">Haemophilus influenzae</italic> type b vaccine given as part of the routine infant immunization schedule at 6,10, 14 weeks as a proxy.</p>
+        </fn>
+        <fn id="TFN6">
+          <label>f</label>
+          <p id="P34">Admission diagnosis: respiratory diagnosis includes apnea, neonatal sepsis, bronchiolitis, pneumonia, tuberculosis, and bronchitis and non-respiratory diagnosis includes encephalitis, viral illness, diarrhea, febrile seizures, meningitis, sepsis (non-neonatal), and other diagnosis.</p>
+        </fn>
+        <fn id="TFN7">
+          <label>g</label>
+          <p id="P35">Chi-squared test calculated for known data (unknown excluded).</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+    <table-wrap position="float" id="T2" orientation="landscape">
+      <label>Table 2.</label>
+      <caption>
+        <p id="P36">Demographic and Clinical Factors Associated With In-hospital Mortality Among Infants Aged &lt;1 Year, South Africa, July 2016–October 2018</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <colgroup span="1">
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th align="left" valign="bottom" rowspan="1" colspan="1">Variable</th>
+            <th align="center" valign="bottom" rowspan="1" colspan="1">Categories</th>
+            <th align="center" valign="bottom" rowspan="1" colspan="1">Total, No.<break/><italic toggle="yes">N</italic> = 1321</th>
+            <th align="center" valign="bottom" rowspan="1" colspan="1">No. of deaths<break/><italic toggle="yes">N</italic> = 27</th>
+            <th align="center" valign="bottom" rowspan="1" colspan="1">Mortality ratio, %<break/>(95% CI)</th>
+            <th align="center" valign="bottom" rowspan="1" colspan="1"><italic toggle="yes">P</italic>-value<sup><xref rid="TFN14" ref-type="table-fn">g</xref></sup></th>
+            <th align="center" valign="bottom" rowspan="1" colspan="1">Odds ratio<sup><xref rid="TFN15" ref-type="table-fn">h</xref></sup><break/>(95% Cl)</th>
+            <th align="center" valign="bottom" rowspan="1" colspan="1"><italic toggle="yes">P</italic>-value</th>
+            <th align="center" valign="bottom" rowspan="1" colspan="1">Adjusted OR<sup><xref rid="TFN16" ref-type="table-fn">i</xref></sup> (95% CI)</th>
+            <th align="center" valign="bottom" rowspan="1" colspan="1"><italic toggle="yes">P</italic>-value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">HIV status</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">HUU</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">721</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">12</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.7 (0.9–2.9)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">&lt;.001</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">Reference</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">Reference</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">HEU</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">526</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">8</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.5 (0.7–2.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.99 (0.40–2.44)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.974</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.80 (0.31–2.09)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.652</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">HI</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">47</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">6</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">12.8 (4.7–27.8)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">7.39 (2.58–21.19)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">&lt;0.001</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">4.79 (1.49–15.37)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.008</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Unknown</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">27</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3.7 (0.1–19.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.06 (0.25–16.83)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.499</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.94 (0.21–17.91)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.557</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Site</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mpumalanga</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">214</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">6</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.8 (1.0–6.1)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">&lt;.001</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">N/A</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">KwaZulu-Natal</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">682</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">4</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.6 (0.2–1.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">N/A</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">North West</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">425</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">17</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">4.0 (2.3–6.41</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">N/A</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Year</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">2016</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">177</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">5</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.8 (0.9–6.6)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.667</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">Reference</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">2017</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">574</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">10</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.7 (0.8–3.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.68 (0.22–2.07)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.493</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">2018</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">570</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">12</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.1 (1.1–3.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.81 (0.27–2.10)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.702</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Sex</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Male</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">762</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">13</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.7 (0.9–2.9)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.311</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">Reference</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Female</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">559</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">14</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.5 (1.3–3.9)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.47 (0.68–3.18)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.324</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Race</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Black African</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1301</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">27</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.1 (1.4–3.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.515</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">Reference</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Non-black African</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">20</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.00</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Age group (months)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">&lt;1</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">108</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.8 (0.6–8.1)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.138</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.09 (0.28–4.29)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.897</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.49 (0.09–2.76)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.416</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">1 to &lt;3</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">363</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">4</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.1 (0.3–2.8)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.24 (0.07–0.80)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.020</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.15 (0.04–0.63)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.010</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">3 to &lt;6</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">335</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">8</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.4 (1.0–4.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.60 (0.23–1.60)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.307</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.51 (0.18–1.44)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.200</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">6 to &lt;9</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">277</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.1 (0.2–3.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.26 (0.07–0.97)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.045</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.20 (0.05–0.82)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.025</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">9 to &lt;12</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">238</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">9</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3.8 (1.7–7.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">Reference</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">Reference</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Underlying condition<sup><xref rid="TFN8" ref-type="table-fn">a</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">No</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1282</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">25</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.95 (1.3–2.9)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.167</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">Reference</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Yes</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">39</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">5.1 (0.6–18.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">5.48 (1.12–26.79)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.036</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Malnutrition<sup><xref rid="TFN9" ref-type="table-fn">b</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">No</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">975</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">9</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.92 (0.4–1.8)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">&lt;.001</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">Reference</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">Reference</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Yes</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">345</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">18</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">5.2 (3.1–8.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">5.19 (2.29–11.79)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">&lt;0.001</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">4.80 (2.00–11.51)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">&lt;.001</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Unknown</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.0</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Feeding type</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Exclusive breastfeeding</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">705</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">13</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.8 (1.0–3.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.946</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">Reference</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">Reference</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mixed feeding</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">240</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">5</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.1 (0.7–4.9)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.04 (0.36–2.95)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.948</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.02 (0.32–3.24)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.975</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Formula feeding</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">333</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">8</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.4 (1.0–4.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.39 (0.57–3.40)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.475</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.27 (0.48–3.35)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.634</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Unknown</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">43</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.3 (0.1–12.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.30 (0.16–10.34)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.802</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.57 (0.05–5.96)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.635</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Prematurity<sup><xref rid="TFN10" ref-type="table-fn">c</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">No</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1081</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">23</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.1 (1.4–3.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.648</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">Reference</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Yes</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">240</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">4</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.7 (0.5–4.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.76 (0.26–2.25)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.618</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Birthweight<sup><xref rid="TFN11" ref-type="table-fn">d</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Normal</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">970</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">21</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.2 (1.3–3.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.457</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">Reference</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Low</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">280</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">6</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.1 (0.8–4.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.01 (0.40–2.54)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.986</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Unknown</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">71</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.0</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Vaccination<sup><xref rid="TFN12" ref-type="table-fn">e</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Full coverage</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">962</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">16</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.7 (1.0–2.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.253</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.49 (0.21–1.13)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.095</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.20 (0.06–0.66)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">008</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">No full coverage</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">307</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">9</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.9 (1.3–5.6)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">Reference</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">Reference</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Unknown</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">52</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3.9 (0.5–13.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.35 (0.28–6.54)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.713</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.62 (0.10–4.02)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.617</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Admission diagnosis<sup><xref rid="TFN13" ref-type="table-fn">f</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Non-respiratory</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">630</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">15</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.4 (1.3–3.9)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.663</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">Reference</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Respiratory</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">682</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">12</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.76 (0.9–3.1)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.64 (0.30–1.40)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.264</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Unknown</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">9</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.0</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mothers/caregivers education level</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">None/Primary</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">616</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">18</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.9 (1.7–4.6)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.103</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">Reference</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">Reference</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Secondary/Tertiary</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">692</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">9</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.3 (0.6–2.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.61 (0.26–1.41)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.244</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.77 (0.31–1.89)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.570</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Unknown</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">13</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.0</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN8">
+          <label>a</label>
+          <p id="P37">Underlying condition includes any of the following: asthma, chronic lung, heart, liver or renal disease, stroke, sinusitis, organ transplant, anemia, immunosuppressive therapy, splenectomy, diabetes, burns immunoglobulin deficiency, autoimmune disease, nephrotic syndrome, cancer, spinal cord injury, seizure disorder, cerebral palsy, congenital heart disease, other congenital disorder, obesity, or chronic gastrointestinal problems.</p>
+        </fn>
+        <fn id="TFN9">
+          <label>b</label>
+          <p id="P38">Malnutrition defined as a weight-for-age &lt;−2 standard deviations from the WHO mean <italic toggle="yes">Z</italic>-score.</p>
+        </fn>
+        <fn id="TFN10">
+          <label>c</label>
+          <p id="P39">Prematurity defined as gestational age at birth of &lt;37 weeks.</p>
+        </fn>
+        <fn id="TFN11">
+          <label>d</label>
+          <p id="P40">Low infant birthweight defined as &lt;2500 g.</p>
+        </fn>
+        <fn id="TFN12">
+          <label>e</label>
+          <p id="P41">Vaccination defined as full vaccine coverage for age, using the <italic toggle="yes">Haemophilus influenzae</italic> type b vaccine given as part of the routine infant immunization schedule at 6,10, 14 weeks as a proxy.</p>
+        </fn>
+        <fn id="TFN13">
+          <label>f</label>
+          <p id="P42">Admission diagnosis: respiratory diagnosis includes apnea, neonatal sepsis, bronchiolitis, pneumonia, tuberculosis, and bronchitis and non-respiratory diagnosis includes encephalitis, viral illness, diarrhea, febrile seizures, meningitis, sepsis (non-neonatal), and other diagnosis.</p>
+        </fn>
+        <fn id="TFN14">
+          <label>g</label>
+          <p id="P43">Chi-squared test <italic toggle="yes">P</italic>-value.</p>
+        </fn>
+        <fn id="TFN15">
+          <label>h</label>
+          <p id="P44">Univariate mixed effects regression model, accounting for clustering by site.</p>
+        </fn>
+        <fn id="TFN16">
+          <label>i</label>
+          <p id="P45">Multivariable mixed effects regression model, accounting for clustering by site.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+  </floats-group>
+</article>

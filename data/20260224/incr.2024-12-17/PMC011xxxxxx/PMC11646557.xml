@@ -1,0 +1,856 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties manuscript?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">9002928</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">1481</journal-id>
+      <journal-id journal-id-type="nlm-ta">Drug Saf</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Drug Saf</journal-id>
+      <journal-title-group>
+        <journal-title>Drug safety</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0114-5916</issn>
+      <issn pub-type="epub">1179-1942</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">38411838</article-id>
+      <article-id pub-id-type="pmc">11646557</article-id>
+      <article-id pub-id-type="doi">10.1007/s40264-024-01406-8</article-id>
+      <article-id pub-id-type="manuscript">HHSPA2039663</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Safety of Simultaneous Administration of Bivalent mRNA COVID-19 and Influenza Vaccines in the Vaccine Adverse Event Reporting System (VAERS)</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Moro</surname>
+            <given-names>Pedro L.</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ennulat</surname>
+            <given-names>Carol</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Brown</surname>
+            <given-names>Hannah</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Woody</surname>
+            <given-names>Gina</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhang</surname>
+            <given-names>Bicheng</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Marquez</surname>
+            <given-names>Paige</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Woo</surname>
+            <given-names>Emily Jane</given-names>
+          </name>
+          <xref rid="A2" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Su</surname>
+            <given-names>John R.</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>1</label>Immunization Safety Office, Division of Healthcare Quality Promotion, NCEZID, Centers for Disease Control and Prevention, 1600 Clifton Rd, MS V18-4, Atlanta, GA 30329-4027, USA</aff>
+      <aff id="A2"><label>2</label>Center for Biologics Evaluation and Research, Food and Drug Administration, 10903 New Hampshire Ave, Silver Spring, MD 20993, USA</aff>
+      <author-notes>
+        <fn fn-type="con" id="FN1">
+          <p id="P1"><bold>Author contributions</bold> PLM originated the study, supervised its implementation, conducted the analysis, and led the writing of the manuscript summarizing the findings. BZ, CE, HB, GW, PM, EJW, and JRS assisted in one or more aspects, including study design, review of VAERS reports and medical records, technical advice, administrative support, and writing of the report. All author read and approved the final version.</p>
+        </fn>
+        <corresp id="CR1"><label>✉</label>Pedro L. Moro, <email>pmoro@cdc.gov</email></corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>10</day>
+        <month>12</month>
+        <year>2024</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>5</month>
+        <year>2024</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>27</day>
+        <month>2</month>
+        <year>2024</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>15</day>
+        <month>12</month>
+        <year>2024</year>
+      </pub-date>
+      <volume>47</volume>
+      <issue>5</issue>
+      <fpage>487</fpage>
+      <lpage>493</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract id="ABS1">
+        <sec id="S1">
+          <title>Introduction</title>
+          <p id="P2">Bivalent mRNA coronavirus disease 2019 (COVID-19) vaccines may be simultaneously administered with other recommended vaccines, including seasonal influenza vaccines. However, few studies have evaluated the safety of co-administration of bivalent mRNA COVID-19 and seasonal influenza vaccines.</p>
+        </sec>
+        <sec id="S2">
+          <title>Objective</title>
+          <p id="P3">The aim was to describe reports to the Vaccine Adverse Event Reporting System (VAERS) after co-administration of bivalent mRNA COVID-19 and seasonal influenza vaccines.</p>
+        </sec>
+        <sec id="S3">
+          <title>Methods</title>
+          <p id="P4">We searched the VAERS database for reports of adverse events (AEs) following co-administration of bivalent mRNA COVID-19 and seasonal influenza vaccines during the period of September 1, 2022–March 31, 2023. We assessed the characteristics of these reports and described the most frequently reported AEs. Clinicians reviewed available medical records for reports of serious AEs and adverse events of special interest (AESI).</p>
+        </sec>
+        <sec id="S4">
+          <title>Results</title>
+          <p id="P5">During the period of 1 September 2022 through 31 March 2023, VAERS received 3689 reports of AEs following co-administration of bivalent mRNA COVID-19 and seasonal influenza vaccines. The median age of vaccinees was 59 years (interquartile range 39, 70 years); 342 reports (9.3%) were classified as serious. The most common AEs among non-serious reports were severe-acute-respiratory-syndrome-related coronavirus (SARS-CoV-2) infection (785, 23.5%), cough (592, 17.7%), and fatigue (568, 17.0%). The most common AEs among serious reports were Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2) infection (88, 25.7%), dyspnea (81, 23.7%), and condition aggravated (55, 16.1%).</p>
+        </sec>
+        <sec id="S5">
+          <title>Discussion</title>
+          <p id="P6">Reports of AEs following co-administration of bivalent mRNA COVID-19 and seasonal influenza vaccines did not reveal any unusual or unexpected patterns of AEs. Increased reporting of certain events (e.g., COVID-19) was expected due to Food and Drug Administration (FDA) and Centers for Disease Control and Prevention (CDC) reporting requirements. CDC and FDA will continue to monitor the safety of co-administration of mRNA COVID-19 and seasonal influenza vaccines.</p>
+        </sec>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="S6">
+      <label>1</label>
+      <title>Introduction</title>
+      <p id="P7">On August 31, 2022, the US Food and Drug Administration (FDA) amended the emergency use authorizations (EUAs) of the Moderna (mRNA-1273) and Pfizer-BioNTech (BNT162b2) coronavirus disease 2019 (COVID-19) vaccines to include bivalent formulations for use as a single dose at least 2 months following monovalent primary or booster vaccination [<xref rid="R1" ref-type="bibr">1</xref>]. On October 12, 2022, the Centers for Disease Control and Prevention (CDC) recommended use of bivalent vaccine for children 5 through 11 years [<xref rid="R2" ref-type="bibr">2</xref>, <xref rid="R3" ref-type="bibr">3</xref>]. The bivalent mRNA COVID-19 vaccines have been shown to be safe and effective and increase protection to known and studied variants [<xref rid="R4" ref-type="bibr">4</xref>, <xref rid="R5" ref-type="bibr">5</xref>]. The Advisory Committee on Immunization Practices (ACIP) also recommends that everyone aged 6 months and older receive an annual influenza vaccine [<xref rid="R6" ref-type="bibr">6</xref>]. COVID-19 vaccines may be administered without regard to the timing of other vaccines. This includes co-administration of a COVID-19 vaccine and other vaccines at the same healthcare visit [<xref rid="R7" ref-type="bibr">7</xref>]. Co-administration of recommended vaccines during the same healthcare visit increases the likelihood that people will be protected against vaccine-preventable diseases in a timely manner and improves efficiency in preventive healthcare services [<xref rid="R8" ref-type="bibr">8</xref>]. However, there are limited data on the safety of co-administration of bivalent mRNA COVID-19 and seasonal inactivated influenza vaccines [<xref rid="R8" ref-type="bibr">8</xref>]. In this study, we assessed the safety of the co-administration of the bivalent mRNA COVID-19 and seasonal inactivated influenza vaccines using data from the Vaccine Adverse Event Reporting System (VAERS).</p>
+    </sec>
+    <sec id="S7">
+      <label>2</label>
+      <title>Material and Methods</title>
+      <sec id="S8">
+        <label>2.1</label>
+        <title>Vaccine Adverse Event Reporting System (VAERS)</title>
+        <p id="P8">VAERS is a US national vaccine safety surveillance system created in 1990 and co-administered by the CDC and the FDA [<xref rid="R9" ref-type="bibr">9</xref>]. VAERS is a spontaneous reporting (passive surveillance) system that serves primarily for signal detection and hypothesis generation. Due to the limitations of spontaneous reporting, it is generally not possible to determine whether an adverse event (AE) is causally associated with vaccination based on VAERS data alone [<xref rid="R9" ref-type="bibr">9</xref>]. VAERS accepts reports from healthcare providers, vaccine manufacturers, vaccine recipients, and other reporters. The VAERS report form collects information on sex, age, type of vaccine(s) administered, vaccine dose and lot number, the AE experienced, and medical history. VAERS reports are coded by trained personnel using the Medical Dictionary for Regulatory Activities (MedDRA), a clinically validated, internationally standardized terminology [<xref rid="R10" ref-type="bibr">10</xref>]. A VAERS report may be assigned one or more MedDRA Preferred Terms (PTs) within a System Organ Class (SOC). A MedDRA PT is a distinct descriptor for a symptom, sign, disease, diagnosis, therapeutic indication, investigation, surgical, or medical procedure, or medical, social, or family history characteristic [<xref rid="R10" ref-type="bibr">10</xref>]; however, MedDRA PTs are not necessarily medically confirmed diagnoses. Vaccination errors not describing an AE may also be reported [<xref rid="R11" ref-type="bibr">11</xref>]. A report is classified as serious based on the Code of Federal Regulations (21-CFR) if one or more of the following are reported: death, life-threatening illness, hospitalization or prolongation of existing hospitalization, congenital anomaly, permanent disability, or medical intervention to prevent the aforementioned outcomes [<xref rid="R12" ref-type="bibr">12</xref>]. For non-manufacturer serious reports, medical records are routinely requested and made available to VAERS personnel; vaccine manufacturers are required to investigate serious AEs that they report to VAERS and to submit additional information that they receive as part of their investigation. Medical records may also be requested for AEs of special interest (AESI), irrespective of the serious status. AESI are AEs selected for further scrutiny, for reasons including their occurrence in pre-authorization clinical trials (or in post-marketing data), general historical interest (e.g., Guillain Barré syndrome [GBS]), or general interest applicable to any vaccine (e.g., anaphylaxis).</p>
+        <p id="P9">We searched the VAERS database for US reports of co-administration of bivalent mRNA COVID-19 and seasonal inactivated influenza vaccines among persons vaccinated during the period of September 1, 2022–March 31, 2023. We assessed the characteristics of these reports, which included the types of influenza vaccines co-administered with a bivalent mRNA COVID-19 vaccine, and we also described the most common MedDRA PTs by severity status.</p>
+      </sec>
+      <sec id="S9">
+        <label>2.2</label>
+        <title>Clinical Review of Serious Reports and Adverse Events of Special Interest (AESI)</title>
+        <p id="P10">Clinicians (e.g., physicians, nurses, nurse practitioners, and physician assistants) reviewed reports after co-administration of bivalent mRNA COVID-19 and seasonal influenza vaccines that were of AESI or classified as serious. Based upon the primary AE (i.e., the event that appeared to trigger the reporter to report to VAERS), the reviewer categorized reports by main conditions [<xref rid="R10" ref-type="bibr">10</xref>]. For death reports, the primary cause of death was obtained from reviewing the autopsy report, death certificate, and/or available medical records; absent these documents, a preliminary impression of cause of death was made based on the initial report.</p>
+        <p id="P11">We searched for and reviewed reports and any associated available medical records for the following AESI: anaphylaxis, Bell’s palsy, GBS, myocarditis/pericarditis, and ischemic stroke/transient ischemic attack. We used the Brighton Collaboration case definitions for anaphylaxis [<xref rid="R13" ref-type="bibr">13</xref>], Bell’s palsy [<xref rid="R14" ref-type="bibr">14</xref>], and GBS [<xref rid="R15" ref-type="bibr">15</xref>], and CDC case definitions for myocarditis/pericarditis [<xref rid="R16" ref-type="bibr">16</xref>]. For ischemic stroke, we considered the attending physician diagnosis of ischemic stroke or transient ischemic attack to be a verified report. Reports were considered to meet the case definition for a given AESI if details of the initial report were verified by medical record review and the reported case met the respective case definition for that AESI.</p>
+      </sec>
+    </sec>
+    <sec id="S10">
+      <label>3</label>
+      <title>Results</title>
+      <p id="P12">During the period of this review, VAERS received 3689 reports involving co-administration of bivalent mRNA COVID-19 and seasonal inactivated influenza vaccines; 342 (9.3%) were classified as serious, including 29 deaths. <xref rid="T1" ref-type="table">Table 1</xref> summarizes the main demographic characteristics of vaccinees. Ages ranged from 0 to 103 years (median 59 years; interquartile range [IQR] 39, 70 years). Most reports (2312, 62.7%) were of females. The most commonly reported races and ethnicities were non-Hispanic white (2388, 64.7%) and not reported (402, 10.9%). A higher proportion of bivalent BNT162b2 (2324, 63.0%) was co-administered with seasonal inactivated influenza vaccine than bivalent mRNA-1273 (1363, 36.9%). Median time to symptom onset was 1 day after vaccination (IQR 0, 47 days), ranging from the day of vaccination to 188 days after vaccination. The most common types of inactivated influenza vaccine co-administered were standard dose inactivated influenza (IIV4) vaccines (1309, 35. 5%), high-dose inactivated influenza vaccine (HD-IIV4) (729, 19.8%), cell-based inactivated influenza vaccine (ccIIV4) (440, 11.9%), adjuvanted inactivated influenza vaccine (aIIV4) (344, 9.3%), and recombinant influenza vaccine (RIV4) (111, 3.0%). For 756 reports (20.5%), no specific brand or type of influenza vaccine was reported.</p>
+      <p id="P13">The most common MedDRA PTs among non-serious and serious reports are shown in <xref rid="T2" ref-type="table">Table 2</xref>. SARS-CoV-2 infection was the most common MedDRA PT reported in both serious and non-serious reports. Other MedDRA PTs commonly reported were injection site and systemic reactions (<xref rid="T2" ref-type="table">Table 2</xref>).</p>
+      <p id="P14">Among 310 non-death serious reports, 174 (56.1%) were of females. The most common AEs by SOC categories were infections and infestations (77, 24.8%), vascular disorders (53, 17.1%), cardiac disorders (39, 12.6%), and nervous system disorders (32, 10.3%) (<xref rid="T3" ref-type="table">Table 3</xref>). COVID-19 was the condition most commonly reported as the main AE in 70 serious reports (22.6%).</p>
+      <p id="P15">There were 29 deaths reported (<xref rid="T4" ref-type="table">Table 4</xref>); 11 among females and 18 among males, with ages ranging from 46 to 94 years (median 74 years; IQR 63, 84 years). Twenty-six reported deaths (89.6%) involved people aged ≥ 50 years. HD-IIV4 (8, 27.6%) and IIV4 (8, 27.6%) were most commonly reported among death reports. Death certificates or autopsy reports documenting cause of death were available for 13 reports. Causes of death were associated with diseases of the circulatory system (8, 27.6%), diseases of the respiratory system (3, 10.3%), infectious causes, like COVID-19, or hepatobiliary disorders (one report each). For the other 16 death reports, only the initial VAERS report was available.</p>
+      <p id="P16">Among all reports of co-administration (serious and non-serious), the following reports of AESI were identified: Bell’s palsy (15), anaphylaxis (5), myocarditis or pericarditis (6), GBS (5), and ischemic stroke/transient ischemic attack (24). Two reports of Bell’s palsy, two reports of anaphylaxis, and four reports of GBS met Brighton level criteria. Four reports of myocarditis met the CDC case definition.</p>
+      <p id="P17">Of the initial reports of ischemic stroke/transient ischemic attack, 21 reports were verified as ischemic stroke or transient ischemic attack by review of medical records. We were not able to obtain medical records for the other three reports (at the time of the review) to verify the diagnosis. Twelve were in females and nine in males. Median age was 70 years (range 20–90 years; IQR 64, 73). The median onset interval was 12 days (range 0–115; IQR 2, 41). In 19 reports, bivalent BNT162b2 was co-administered with the following influenza vaccines: HD-IIV4 (9), aIIV4 (3), IIV4 (6), and RIV4 (1). Bivalent mRNA-1273 was co-administered with quadrivalent high-dose inactivated influenza vaccine and quadrivalent standard dose inactivated influenza vaccine.</p>
+    </sec>
+    <sec id="S11">
+      <label>4</label>
+      <title>Discussion</title>
+      <p id="P18">We conducted a review of AEs reported to VAERS after co-administration of bivalent mRNA COVID-19 and seasonal influenza vaccines among persons vaccinated during the period of September 1, 2022–March 31, 2023. Our review included automated analyses of all reports, analyses of reports of AESI, and clinical review of death and non-death serious reports. We did not observe any unusual or unexpected patterns among serious reports or AESI. Among non-serious and serious reports, the most common AE reported was COVID-19. COVID-19 was also the most common AE reported for serious and non-serious reports in the VAERS database where a bivalent mRNA COVID-19 vaccine was administered [<xref rid="R17" ref-type="bibr">17</xref>]. COVID-19 disease may have been frequently reported due to the EUA requirement for providers to report COVID-19 that results in hospitalization or death if observed following vaccination [<xref rid="R4" ref-type="bibr">4</xref>]. We also noted that local and systemic reactions were frequently reported, which is consistent with pre-authorization clinical trial findings as well as observations in post-authorization/post-licensure monitoring systems [<xref rid="R4" ref-type="bibr">4</xref>]. Of the 29 reports of death, 13 had cause of death information from death certificates or autopsy reports; the leading causes of death were diseases of the circulatory system (e.g., myocardial infarction) and diseases of the respiratory system (e.g., acute respiratory failure), consistent with the leading causes of death in the USA [<xref rid="R18" ref-type="bibr">18</xref>]. Following the availability of the bivalent mRNA COVID-19 vaccines in September 2022, a statistical signal for ischemic stroke in older adults was identified in the CDC’s Vaccine Safety Datalink electronic health record-based active surveillance; many of the vaccinated ischemic stroke cases in the risk window also had co-administration of influenza vaccine [<xref rid="R19" ref-type="bibr">19</xref>]. This finding prompted review in other vaccine safety systems, including VAERS. Our review of bivalent mRNA COVID-19 reports co-administered with seasonal inactivated influenza vaccines identified a small number of reports of ischemic stroke, but no unusual pattens or clustering.</p>
+      <p id="P19">Important strengths of VAERS include its broad national scope and timeliness [<xref rid="R10" ref-type="bibr">10</xref>]. VAERS is useful for rapidly detecting rare AEs that, if new or unexpected, can be studied in more robust vaccine safety surveillance and research systems, such as the CDC’s Vaccine Safety Datalink, or in special epidemiological studies [<xref rid="R20" ref-type="bibr">20</xref>]. This strength has been demonstrated during the US COVID-19 vaccination program, with safety signals for AEs such as myocarditis after mRNA COVID-19 vaccines and GBS and thrombosis with thrombocytopenia syndrome after the Janssen adenoviral vector vaccine being identified and assessed in VAERS [<xref rid="R17" ref-type="bibr">17</xref>, <xref rid="R21" ref-type="bibr">21</xref>, <xref rid="R22" ref-type="bibr">22</xref>]. As a passive surveillance system, VAERS has several inherent limitations. Some of these limitations include reporting biases (over- or under-reporting) and inconsistency in the quality and completeness of reports [<xref rid="R10" ref-type="bibr">10</xref>]. In addition, VAERS data generally cannot be used to assess if a vaccine caused an AE.</p>
+    </sec>
+    <sec id="S12">
+      <label>5</label>
+      <title>Conclusion</title>
+      <p id="P20">Our assessment of surveillance data on co-administration of mRNA COVID-19 and seasonal influenza vaccines in VAERS did not identify any new or unexpected safety concerns and is consistent with the safety profile following either vaccine when given alone or from published studies on co-administration of these vaccines [<xref rid="R8" ref-type="bibr">8</xref>, <xref rid="R23" ref-type="bibr">23</xref>]. Co-administration of mRNA COVID-19 and other COVID-19 vaccines with influenza vaccines should continue to be monitored in future influenza seasons to further assess the safety of the practice of co-administration.</p>
+    </sec>
+  </body>
+  <back>
+    <ack id="S14">
+      <title>Acknowledgements</title>
+      <p id="P22">We thank the staff of the Immunization Safety Office, and General Dynamics Information Technology, for their work and dedication to public health during the COVID-19 pandemic.</p>
+      <sec id="S15">
+        <title>Funding</title>
+        <p id="P23">No funding from any organization, agency, or entity was received for this study.</p>
+      </sec>
+    </ack>
+    <fn-group>
+      <fn fn-type="COI-statement" id="FN2">
+        <p id="P24"><bold>Conflict of interest</bold> None of the authors have conflicts of interest that are directly relevant to the content of this article.</p>
+      </fn>
+      <fn id="FN3">
+        <p id="P25"><bold>Ethics approval and consent to participate</bold> This activity was reviewed by the CDC and was considered to be consistent with applicable federal law and CDC policy. Informed consent was not obtained for this secondary use of existing information; see 45 CFR part 46.102(l)(2), 21 CFR part 56, 42 USC §241(d), 5 USC §552a, and 44 USC §3501 et seq.</p>
+      </fn>
+      <fn id="FN4">
+        <p id="P26"><bold>Declarations</bold> The findings and conclusions in this report are those of the authors and do not necessarily represent the official position of the Centers for Disease Control and Prevention (CDC) or the US Food and Drug Administration (FDA). Mention of a product or company name is for identification purposes only and does not constitute endorsement by the CDC or FDA.</p>
+      </fn>
+    </fn-group>
+    <sec sec-type="data-availability" id="S13">
+      <title>Availability of data and materials</title>
+      <p id="P21">Data from the VAERS system is available to everyone through the VAERS Wonder database available at <ext-link xlink:href="https://wonder.cdc.gov/vaers.html" ext-link-type="uri">https://wonder.cdc.gov/vaers.html</ext-link>. Anyone with internet access may reach this site and conduct basic analysis to confirm some of the findings described in the article. However, there are data in this paper that come from review of medical records of the patients who experienced an AE. These data cannot be shared openly, to protect patient privacy</p>
+    </sec>
+    <ref-list>
+      <title>References</title>
+      <ref id="R1">
+        <label>1.</label>
+        <mixed-citation publication-type="webpage"><collab>Food and Drug Administration</collab>. <source>Coronavirus (COVID-19) update: FDA authorizes Moderna, Pfizer-BioNTech bivalent COVID-19 vaccines for use as a booster dose. FDA news release</source>. <month>August</month>
+<day>31</day>, <year>2022</year>
+<comment><ext-link xlink:href="https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-moderna-pfizer-biontech-bivalent-covid-19-vaccines-use" ext-link-type="uri">https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-moderna-pfizer-biontech-bivalent-covid-19-vaccines-use</ext-link>.</comment>
+<comment>Accessed</comment>
+<date-in-citation>10 Oct 2022</date-in-citation>.</mixed-citation>
+      </ref>
+      <ref id="R2">
+        <label>2.</label>
+        <mixed-citation publication-type="webpage"><source>CDC expands updated COVID-19 vaccines to include children ages 5 through 11</source>. <comment><ext-link xlink:href="https://www.cdc.gov/media/releases/2022/s1012-COVID-19-Vaccines.html" ext-link-type="uri">https://www.cdc.gov/media/releases/2022/s1012-COVID-19-Vaccines.html</ext-link>.</comment>
+<comment>Accessed</comment>
+<date-in-citation>10 Oct 2023</date-in-citation>.</mixed-citation>
+      </ref>
+      <ref id="R3">
+        <label>3.</label>
+        <mixed-citation publication-type="webpage"><collab>Food and Drug Administration</collab>. <source>Coronavirus (COVID-19) update: FDA authorizes moderna, Pfizer-BioNTech bivalent COVID-19 vaccines for use as a booster dose</source>. <comment><ext-link xlink:href="https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-moderna-pfizer-biontech-bivalent-covid-19-vaccines-use" ext-link-type="uri">https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-moderna-pfizer-biontech-bivalent-covid-19-vaccines-use</ext-link>.</comment>
+<comment>Accessed</comment>
+<date-in-citation>10 Oct 2023</date-in-citation>.</mixed-citation>
+      </ref>
+      <ref id="R4">
+        <label>4.</label>
+        <mixed-citation publication-type="journal"><name><surname>Hause</surname><given-names>AM</given-names></name>, <name><surname>Marquez</surname><given-names>P</given-names></name>, <name><surname>Zhang</surname><given-names>B</given-names></name>, <etal/>
+<article-title>Safety monitoring of bivalent COVID-19 mRNA vaccine booster doses among persons aged ≥12 years—United States, August 31–October 23, 2022</article-title>. <source>MMWR Morb Mortal Wkly Rep</source>. <year>2022</year>;<volume>71</volume>:<fpage>1401</fpage>–<lpage>6</lpage>. <pub-id pub-id-type="doi">10.15585/mmwr.mm7144a3</pub-id>.<pub-id pub-id-type="pmid">36327162</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R5">
+        <label>5.</label>
+        <mixed-citation publication-type="journal"><name><surname>Link-Gelles</surname><given-names>R</given-names></name>, <name><surname>Ciesla</surname><given-names>AA</given-names></name>, <name><surname>Fleming-Dutra</surname><given-names>KE</given-names></name>, <etal/>
+<article-title>Effectiveness of bivalent mRNA vaccines in preventing symptomatic SARS-CoV-2 infection—increasing community access to testing program, United States, September–November 2022</article-title>. <source>MMWR Morb Mortal Wkly Rep</source>. <year>2022</year>;<volume>71</volume>:<fpage>1526</fpage>–<lpage>30</lpage>. <pub-id pub-id-type="doi">10.15585/mmwr.mm7148e1</pub-id>.<pub-id pub-id-type="pmid">36454688</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R6">
+        <label>6.</label>
+        <mixed-citation publication-type="webpage"><source>Seasonal Influenza Vaccination Resources for Health Professionals</source>. <comment><ext-link xlink:href="https://www.cdc.gov/flu/professionals/vaccination/index.htm" ext-link-type="uri">https://www.cdc.gov/flu/professionals/vaccination/index.htm</ext-link>.</comment>
+<comment>Accessed</comment>
+<date-in-citation>10 Oct 2023</date-in-citation>.</mixed-citation>
+      </ref>
+      <ref id="R7">
+        <label>7.</label>
+        <mixed-citation publication-type="webpage"><collab>CDC</collab>. <source>Interim Clinical Considerations for Use of COVID-19 Vaccines Currently Approved or Authorized in the United States</source>. <comment><ext-link xlink:href="https://www.cdc.gov/vaccines/COVID-19/clinical-considerations/interim-considerations-us.html#:~:text=COVID%2D19%20vaccination%20is%20recommended,younger%20than%20age%206%20months" ext-link-type="uri">https://www.cdc.gov/vaccines/COVID-19/clinical-considerations/interim-considerations-us.html#:~:text=COVID%2D19%20vaccination%20is%20recommended,younger%20than%20age%206%20months</ext-link>.</comment>
+<comment>Accessed</comment>
+<date-in-citation>10 Oct 2023</date-in-citation>.</mixed-citation>
+      </ref>
+      <ref id="R8">
+        <label>8.</label>
+        <mixed-citation publication-type="journal"><name><surname>Hause</surname><given-names>AM</given-names></name>, <name><surname>Zhang</surname><given-names>B</given-names></name>, <name><surname>Yue</surname><given-names>X</given-names></name>, <etal/>
+<article-title>Reactogenicity of simultaneous COVID-19 mRNA booster and influenza vaccination in the US</article-title>. <source>JAMA Netw Open</source>. <year>2022</year>;<volume>5</volume>(<issue>7</issue>): <fpage>e2222241</fpage>. <pub-id pub-id-type="doi">10.1001/jamanetworkopen.2022.22241</pub-id>.<pub-id pub-id-type="pmid">35838667</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R9">
+        <label>9.</label>
+        <mixed-citation publication-type="journal"><name><surname>Shimabukuro</surname><given-names>TT</given-names></name>, <name><surname>Nguyen</surname><given-names>M</given-names></name>, <name><surname>Martin</surname><given-names>D</given-names></name>, <name><surname>DeStefano</surname><given-names>F</given-names></name>. <article-title>Safety monitoring in the Vaccine Adverse Event Reporting System (VAERS)</article-title>. <source>Vaccine</source>. <year>2015</year>;<volume>33</volume>(<issue>36</issue>):<fpage>4398</fpage>–<lpage>405</lpage>. <pub-id pub-id-type="doi">10.1016/j.vaccine.2015.07.035</pub-id>.<pub-id pub-id-type="pmid">26209838</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R10">
+        <label>10.</label>
+        <mixed-citation publication-type="webpage"><source>Medical dictionary for regulatory activities</source>. <comment><ext-link xlink:href="https://www.meddra.org/" ext-link-type="uri">https://www.meddra.org/</ext-link>.</comment>
+<comment>Accessed</comment>
+<date-in-citation>10 Oct 2023</date-in-citation>.</mixed-citation>
+      </ref>
+      <ref id="R11">
+        <label>11.</label>
+        <mixed-citation publication-type="journal"><name><surname>Hibbs</surname><given-names>BF</given-names></name>, <name><surname>Moro</surname><given-names>PL</given-names></name>, <name><surname>Lewis</surname><given-names>P</given-names></name>, <name><surname>Miller</surname><given-names>ER</given-names></name>, <name><surname>Shimabukuro</surname><given-names>TT</given-names></name>. <article-title>Vaccination errors reported to the Vaccine Adverse Event Reporting System, (VAERS) United States, 2000–2013</article-title>. <source>Vaccine</source>. <year>2015</year>;<volume>33</volume>(<issue>28</issue>):<fpage>3171</fpage>–<lpage>8</lpage>. <pub-id pub-id-type="doi">10.1016/j.vaccine.2015.05.006</pub-id>.(<comment>Epub 2015 May 14</comment>).<pub-id pub-id-type="pmid">25980429</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R12">
+        <label>12.</label>
+        <mixed-citation publication-type="journal"><collab>CFR Part 600.80</collab>. <article-title>Postmarketing reporting of adverse experiences</article-title>. <source>Fed Regist</source>. <year>1997</year>;<volume>7</volume>:<fpage>52252</fpage>–<lpage>53</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R13">
+        <label>13.</label>
+        <mixed-citation publication-type="journal"><name><surname>Rüggeberg</surname><given-names>JU</given-names></name>, <name><surname>Gold</surname><given-names>MS</given-names></name>, <name><surname>Bayas</surname><given-names>JM</given-names></name>, <etal/>
+<article-title>Anaphylaxis: case definition and guidelines for data collection, analysis, and presentation of immunization safety data</article-title>. <source>Vaccine</source>. <year>2007</year>;<volume>25</volume>(<issue>31</issue>):<fpage>5675</fpage>–<lpage>84</lpage>. <pub-id pub-id-type="doi">10.1016/j.vaccine.2007.02.064</pub-id>. (<comment>Epub 2007 Mar 12</comment>).<pub-id pub-id-type="pmid">17448577</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R14">
+        <label>14.</label>
+        <mixed-citation publication-type="journal"><name><surname>Rath</surname><given-names>B</given-names></name>, <name><surname>Gidudu</surname><given-names>JF</given-names></name>, <name><surname>Anyoti</surname><given-names>H</given-names></name>, <etal/>
+<article-title>Facial nerve palsy including Bell’s palsy: case definitions and guidelines for collection, analysis, and presentation of immunisation safety data</article-title>. <source>Vaccine</source>. <year>2017</year>;<volume>35</volume>(<issue>15</issue>):<fpage>1972</fpage>–<lpage>83</lpage>. <pub-id pub-id-type="doi">10.1016/j.vaccine.2016.05.023</pub-id>. (<comment>Epub 2016 May 24</comment>).<pub-id pub-id-type="pmid">27235092</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R15">
+        <label>15.</label>
+        <mixed-citation publication-type="journal"><name><surname>Sejvar</surname><given-names>JJ</given-names></name>, <name><surname>Kohl</surname><given-names>KS</given-names></name>, <name><surname>Gidudu</surname><given-names>J</given-names></name>, <etal/>
+<article-title>Brighton Collaboration GBS Working Group Guillain-Barré syndrome and Fisher syndrome: case definitions and guidelines for collection, analysis, and presentation of immunization safety data</article-title>. <source>Vaccine</source>. <year>2011</year>;<volume>29</volume>(<issue>3</issue>):<fpage>599</fpage>–<lpage>612</lpage>. <pub-id pub-id-type="doi">10.1016/j.vaccine.2010.06.003</pub-id>.<pub-id pub-id-type="pmid">20600491</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R16">
+        <label>16.</label>
+        <mixed-citation publication-type="journal"><name><surname>Oster</surname><given-names>ME</given-names></name>, <name><surname>Shay</surname><given-names>DK</given-names></name>, <name><surname>Su</surname><given-names>JR</given-names></name>, <etal/>
+<article-title>Myocarditis cases reported after mRNA-based COVID-19 vaccination in the US from December 2020 to August 2021</article-title>. <source>JAMA</source>. <year>2022</year>;<volume>327</volume>(<issue>4</issue>):<fpage>331</fpage>–<lpage>40</lpage>. <pub-id pub-id-type="doi">10.1001/jama.2021.24110</pub-id>.<pub-id pub-id-type="pmid">35076665</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R17">
+        <label>17.</label>
+        <mixed-citation publication-type="webpage"><collab>Centers for Disease Control and Prevention</collab>. <source>COVID-19 vaccine safety updates. Advisory Committee on Immunization Practices February 24, 2023 meeting</source>
+<comment><ext-link xlink:href="https://www.cdc.gov/vaccines/acip/meetings/downloads/slides-2023-02/slides-02-24/COVID-02-Shimabukuro-508.pdf" ext-link-type="uri">https://www.cdc.gov/vaccines/acip/meetings/downloads/slides-2023-02/slides-02-24/COVID-02-Shimabukuro-508.pdf</ext-link>.</comment>
+<comment>Accessed</comment>
+<date-in-citation>10 Oct 2023</date-in-citation>.</mixed-citation>
+      </ref>
+      <ref id="R18">
+        <label>18.</label>
+        <mixed-citation publication-type="book"><name><surname>Murphy</surname><given-names>SL</given-names></name>, <name><surname>Kochanek</surname><given-names>KD</given-names></name>, <name><surname>Xu</surname><given-names>JQ</given-names></name>, <name><surname>Arias</surname><given-names>E</given-names></name>. <source>Mortality in the United States, 2020. NCHS Data Brief, no 427</source>. <publisher-loc>Hyattsville</publisher-loc>: <publisher-name>National Center for Health Statistics</publisher-name>. <year>2021</year>. <pub-id pub-id-type="doi">10.15620/cdc:112079</pub-id>. <comment>Accessed</comment>
+<date-in-citation>10 Oct 2023</date-in-citation>.</mixed-citation>
+      </ref>
+      <ref id="R19">
+        <label>19.</label>
+        <mixed-citation publication-type="webpage"><source>CDC &amp; FDA Identify Preliminary COVID-19 Vaccine Safety Signal for Persons Aged 65 Years and Older</source>
+<comment><ext-link xlink:href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/bivalent-boosters.html" ext-link-type="uri">https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/bivalent-boosters.html</ext-link>.</comment>
+<comment>Accessed</comment>
+<date-in-citation>10 Oct 2023</date-in-citation>.</mixed-citation>
+      </ref>
+      <ref id="R20">
+        <label>20.</label>
+        <mixed-citation publication-type="journal"><name><surname>McNeil</surname><given-names>MM</given-names></name>, <name><surname>Gee</surname><given-names>J</given-names></name>, <name><surname>Weintraub</surname><given-names>ES</given-names></name>, <etal/>
+<article-title>The Vaccine Safety Data-link: successes and challenges monitoring vaccine safety</article-title>. <source>Vaccine</source>. <year>2014</year>;<volume>32</volume>(<issue>42</issue>):<fpage>5390</fpage>–<lpage>8</lpage>. <pub-id pub-id-type="doi">10.1016/j.vaccine.2014.07.073</pub-id>. (<comment>Epub 2014 Aug 6</comment>).<pub-id pub-id-type="pmid">25108215</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R21">
+        <label>21.</label>
+        <mixed-citation publication-type="journal"><name><surname>Woo</surname><given-names>EJ</given-names></name>, <name><surname>Mba-Jonas</surname><given-names>A</given-names></name>, <name><surname>Dimova</surname><given-names>RB</given-names></name>, <etal/>
+<article-title>Association of receipt of the Ad26.COV2.S COVID-19 vaccine with presumptive Guillain-Barré syndrome, February-July 2021</article-title>. <source>JAMA</source>. <year>2021</year>;<volume>326</volume>(<issue>16</issue>):<fpage>1606</fpage>–<lpage>13</lpage>. <pub-id pub-id-type="doi">10.1001/jama.2021.16496</pub-id>.<pub-id pub-id-type="pmid">34617967</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R22">
+        <label>22.</label>
+        <mixed-citation publication-type="journal"><name><surname>See</surname><given-names>I</given-names></name>, <name><surname>Su</surname><given-names>JR</given-names></name>, <name><surname>Lale</surname><given-names>A</given-names></name>, <etal/>
+<article-title>US case reports of cerebral venous sinus thrombosis with thrombocytopenia after Ad26.COV2.S vaccination, March 2 to April 21, 2021</article-title>. <source>JAMA</source>. <year>2021</year>;<volume>325</volume>(<issue>24</issue>):<fpage>2448</fpage>–<lpage>56</lpage>. <pub-id pub-id-type="doi">10.1001/jama.2021.7517</pub-id>.<pub-id pub-id-type="pmid">33929487</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R23">
+        <label>23.</label>
+        <mixed-citation publication-type="journal"><name><surname>Moro</surname><given-names>PL</given-names></name>, <name><surname>Zhang</surname><given-names>B</given-names></name>, <name><surname>Ennulat</surname><given-names>C</given-names></name>, <etal/>
+<article-title>Safety of co-administration of mRNA COVID-19 and seasonal inactivated influenza vaccines in the Vaccine Adverse Event Reporting System (VAERS) during July 1, 2021–June 30, 2022</article-title>. <source>Vaccine</source>. <year>2023</year>;<volume>41</volume>(<issue>11</issue>):<fpage>1859</fpage>–<lpage>63</lpage>. <pub-id pub-id-type="doi">10.1016/j.vaccine.2022.12.069</pub-id>. (<comment>Epub 2023 Jan 9</comment>).<pub-id pub-id-type="pmid">36669964</pub-id>
+</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <table-wrap position="float" id="T1" orientation="landscape">
+      <label>Table 1</label>
+      <caption>
+        <p id="P27">Characteristics of reports (<italic toggle="yes">n</italic> = 3689) of co-administration of bivalent mRNA COVID-19 and seasonal inactivated influenza vaccines in the Vaccine Adverse Event Reporting System, September 2022–March 31, 2023</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <colgroup span="1">
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th align="left" valign="middle" rowspan="1" colspan="1">Characteristic</th>
+            <th align="left" valign="middle" rowspan="1" colspan="1"><italic toggle="yes">N</italic> (%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Serious<sup><xref rid="TFN2" ref-type="table-fn">a</xref></sup></td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">342 (9.3)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Male<sup><xref rid="TFN3" ref-type="table-fn">b</xref></sup></td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">1370 (37.1)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Female<sup><xref rid="TFN3" ref-type="table-fn">b</xref></sup></td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">2312 (62.7)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Median onset (range), days<sup><xref rid="TFN4" ref-type="table-fn">c</xref></sup></td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">1 (0–217)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Interquartile range onset, days</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">0, 47</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Median age of patient (range), years</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">59 (0.5–103)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Interquartile range of patient age, years</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">39, 70</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Type of reporter</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Patient</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">1959 (53.1)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Provider</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">1438 (39.0)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Manufacturer</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">157 (4.3)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Other<sup><xref rid="TFN5" ref-type="table-fn">d</xref></sup></td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">98 (2.7)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Parent/guardian/caregiver</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">37 (1.0)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Top co-administered influenza vaccines</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Quadrivalent standard dose inactivated influenza (IIV4) vaccines</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">1309 (35.5)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Unknown type of influenza vaccine</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">756 (20.5)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Quadrivalent high-dose inactivated influenza vaccine</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">729 (19.8)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Quadrivalent cell-based influenza vaccine</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">440 (11.9)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Quadrivalent adjuvanted influenza vaccine</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">344 (9.3)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Quadrivalent recombinant influenza vaccine</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">111 (3.0)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">COVID-19 vaccines co-administered<sup><xref rid="TFN6" ref-type="table-fn">e</xref></sup></td>
+            <td align="left" valign="middle" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">BNT162b2</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">2324 (63.0)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">mRNA-1273</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">1363 (36.9)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Race</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Non-Hispanic white</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">2388 (64.7)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Hispanic<sup><xref rid="TFN7" ref-type="table-fn">f</xref></sup>/Latino</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">235 (6.4)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Non-Hispanic black</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">142 (3.9)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Non-Hispanic Asian</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">109 (3.0)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Non-Hispanic multiple</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">57 (1.6)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Non-Hispanic AI/AN</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">15 (0.4)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Non-Hispanic NHOPI</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">3 (0.1)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Non-Hispanic other</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">17 (0.5)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Race not reported</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">402 (10.9)</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN1">
+          <p id="P28"><italic toggle="yes">AI/AN</italic> American Indian/Alaska Native, <italic toggle="yes">COVID-19</italic> coronavirus disease 2019, <italic toggle="yes">NHOPI</italic> Native Hawaiian/Other Pacific Islander</p>
+        </fn>
+        <fn id="TFN2">
+          <label>a</label>
+          <p id="P29">Per federal law, includes reports of hospitalization or prolongation of existing hospitalization, life-threatening illness, permanent disability, congenital malformity/birth defect, or death</p>
+        </fn>
+        <fn id="TFN3">
+          <label>b</label>
+          <p id="P30">Sex was not reported for 7 reports (0.2%)</p>
+        </fn>
+        <fn id="TFN4">
+          <label>c</label>
+          <p id="P31">Time to symptom onset was unreported for 19 reports</p>
+        </fn>
+        <fn id="TFN5">
+          <label>d</label>
+          <p id="P32">Pharmacist</p>
+        </fn>
+        <fn id="TFN6">
+          <label>e</label>
+          <p id="P33">In two reports, a Pfizer bivalent vaccine and a Moderna bivalent vaccine were administered</p>
+        </fn>
+        <fn id="TFN7">
+          <label>f</label>
+          <p id="P34">Hispanic includes people of known Hispanic ethnicity and unreported race; known race but unknown ethnicity includes 321 reports</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+    <table-wrap position="float" id="T2" orientation="landscape">
+      <label>Table 2</label>
+      <caption>
+        <p id="P35">Most commonly reported MedDRA Preferred Terms among non-serious (<italic toggle="yes">n</italic> = 3347) and serious (<italic toggle="yes">n</italic> = 342) reports of co-administration of bivalent mRNA COVID-19 and seasonal inactivated influenza vaccines in the Vaccine Adverse Event Reporting System, September 2022–March 31, 2023</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <colgroup span="1">
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th align="left" valign="middle" rowspan="1" colspan="1">MedDRA Preferred Term</th>
+            <th align="left" valign="middle" rowspan="1" colspan="1">Non-serious, <italic toggle="yes">n</italic> (%)</th>
+            <th align="left" valign="middle" rowspan="1" colspan="1">MedDRA Preferred Term</th>
+            <th align="left" valign="middle" rowspan="1" colspan="1">Serious, <italic toggle="yes">n</italic> (%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">COVID-19</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">785 (23.5)</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">COVID-19</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">88 (25.7)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Cough</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">592 (17.7)</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Dyspnea</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">81 (23.7)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Fatigue</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">568 (17.0)</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Condition aggravated</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">55 (16.1)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Pyrexia</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">535 (16.0)</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Asthenia</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">46 (13.5)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Headache</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">491 (14.7)</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Pyrexia</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">43 (12.6)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Pain</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">460 (13.7)</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Cough</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">40 (11.7)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Oropharyngeal pain</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">365 (10.9)</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Anticoagulant therapy</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">39 (11.4)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Respiratory tract congestion</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">291 (8.7)</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Fatigue</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">39 (11.4)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Chills</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">270 (8.1)</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Dizziness</td>
+            <td align="left" valign="middle" rowspan="1" colspan="1">35 (10.2)</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN8">
+          <p id="P36"><italic toggle="yes">COVID-19</italic> coronavirus disease 2019, <italic toggle="yes">MedDRA</italic> Medical Dictionary for Regulatory Activities</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+    <table-wrap position="float" id="T3">
+      <label>Table 3</label>
+      <caption>
+        <p id="P37">Main conditions (System Organ Class) for non-death serious<sup><xref rid="TFN10" ref-type="table-fn">a</xref></sup> reports (<italic toggle="yes">n</italic> = 310) after co-administration of bivalent mRNA COVID-19 and seasonal inactivated influenza vaccines in the Vaccine Adverse Event Reporting System, September 2022–March 31, 2023</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <colgroup span="1">
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th align="left" valign="middle" rowspan="1" colspan="1">Main condition</th>
+            <th align="center" valign="middle" rowspan="1" colspan="1"><italic toggle="yes">N</italic> (%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Infections and infestations</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">77 (24.8)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Vascular disorders</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">53 (17.1)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Cardiac disorders</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">39 (12.6)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Nervous system disorders</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">32 (10.3)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Respiratory, thoracic, and mediastinal disorders</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">25 (8.1)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">General disorders and administration site conditions</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">16 (5.2)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Musculoskeletal and connective tissue disorders</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">11 (3.5)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Gastrointestinal disorders</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">10 (3.2)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Ear and labyrinth disorders</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">10 (3.2)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Immune system disorders</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">7 (2.3)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Renal and urinary disorders</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">7 (2.3)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Skin and subcutaneous tissue disorders</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">5 (1.6)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Blood and lymphatic system disorders</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">5 (1.6)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Pregnancy, puerperium, and perinatal conditions</td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">3 (1.0)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle" rowspan="1" colspan="1">Other<sup><xref rid="TFN11" ref-type="table-fn">b</xref></sup></td>
+            <td align="center" valign="middle" rowspan="1" colspan="1">10 (3.2)</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN9">
+          <p id="P38"><italic toggle="yes">COVID-19</italic> coronavirus disease 2019</p>
+        </fn>
+        <fn id="TFN10">
+          <label>a</label>
+          <p id="P39">Per code of federal regulations, includes reports of hospitalization or prolongation of existing hospitalization, life-threatening illness, permanent disability, congenital malformity/birth defect, or death</p>
+        </fn>
+        <fn id="TFN11">
+          <label>b</label>
+          <p id="P40">“Other” includes two reports each of neoplasms (benign, malignant, and unspecified [including cysts and polyps]), psychiatric disorders, hepatobiliary disorders, and reproductive system and breast disorders; and one report each of injury, poisoning and procedural complications, and eye disorders</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+    <table-wrap position="float" id="T4" orientation="landscape">
+      <label>Table 4</label>
+      <caption>
+        <p id="P41">Death reports (<italic toggle="yes">n</italic> = 29) after co-administration of bivalent mRNA COVID-19 and seasonal inactivated influenza vaccines in the Vaccine Adverse Event Reporting System, September 2022–March 3, 2023</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <colgroup span="1">
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th align="left" valign="middle" rowspan="1" colspan="1"/>
+            <th align="center" valign="middle" rowspan="1" colspan="1">N</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>ICD-10 higher level groups (cause of death assessed)</bold>
+</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<italic toggle="yes">Diseases of the circulatory system</italic>
+</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">8</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Myocardial infarction</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Asystole cardiac arrest</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Pulmonary emboli</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Diastolic heart failure</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Sudden cardiac death</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Acute coronary syndrome</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<italic toggle="yes">Diseases of the respiratory system</italic>
+</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Acute respiratory failure</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Pulmonary fibrosis</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<italic toggle="yes">Codes for special purposes</italic>
+</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">SARS-CoV-2 infection</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<italic toggle="yes">Hepatobiliary disorders</italic>
+</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Alcoholic cirrhosis</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Reports with no medical records (no cause of death assessed)</bold>
+</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">
+<bold>16</bold>
+</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">No symptoms or diagnosis listed in report</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Cardiac arrest</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Patient found unresponsive</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">SARS-CoV-2 infection</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"><bold>Reports with one report each for the following:</bold> acute respiratory failure, Guillain Barré syndrome, ischemic stroke, loss of awareness, psychosis, shortness of breath, and respiratory distress</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">7</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Total</bold>
+</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">29</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN12">
+          <p id="P42"><italic toggle="yes">COVID-19</italic> coronavirus disease 2019, <italic toggle="yes">ICD-10</italic> 10th revision of the International Statistical Classification of Diseases and Related Health Problems, <italic toggle="yes">SARS-CoV-2</italic> severe-acute-respiratory-syndrome-coronavirus</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+    <boxed-text id="BX1" position="float">
+      <caption>
+        <title>Key Points</title>
+      </caption>
+      <p id="P43">During the period 1 September 2022 to 31 March 2023 VAERS received 3,689 reports of adverse events (AEs) following administration of bivalent mRNA COVID-19 and seasonal influenza vaccines.</p>
+      <p id="P44">The most common AEs among non-serious reports were severe-acute-respiratory-syndrome-related coronavirus (SARS-CoV-2) infection (785, 23.5%) and cough (592, 17.7%). The most common AEs among serious reports were SARS-CoV-2 infection (88, 25.7%), and dyspnea (81, 23.7%).</p>
+      <p id="P45">Reports of AEs following co-administration of bivalent mRNA COVID-19 and seasonal influenza vaccines did not reveal any unusual/unexpected patterns of AEs.</p>
+    </boxed-text>
+  </floats-group>
+</article>

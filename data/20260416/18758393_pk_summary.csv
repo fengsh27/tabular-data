@@ -1,0 +1,8 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+ZDV,ZDV,Breast Milk and Blood Plasma,Maternal,N/A,N/A,21,Breast Milk to Blood Plasma Concentration Ratio,Ratio,Mean,1.17,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+d4T,d4T,Breast Milk and Blood Plasma,Maternal,N/A,N/A,2,Breast Milk to Blood Plasma Concentration Ratio,Ratio,Mean,1.73,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+NFV,NFV,Breast Milk and Blood Plasma,Maternal,N/A,N/A,29,Breast Milk to Blood Plasma Concentration Ratio,Ratio,Mean,0.21,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+NVP,NVP,Breast Milk and Blood Plasma,Maternal,N/A,N/A,39,Breast Milk to Blood Plasma Concentration Ratio,Ratio,Mean,0.8200000000000001,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+3TC,3TC,Breast Milk and Blood Plasma,Maternal,N/A,N/A,49,Breast Milk to Blood Plasma Concentration Ratio,Ratio,Mean,2.96,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+RTV,RTV,Breast Milk and Blood Plasma,Maternal,N/A,N/A,60,Breast Milk to Blood Plasma Concentration Ratio,Ratio,Mean,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+LPV,LPV,Breast Milk and Blood Plasma,Maternal,N/A,N/A,60,Breast Milk to Blood Plasma Concentration Ratio,Ratio,Mean,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A

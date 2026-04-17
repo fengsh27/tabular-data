@@ -1,0 +1,4441 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Archiving and Interchange DTD v2.3 20070202//EN" "archivearticle.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">8904683</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">1769</journal-id>
+      <journal-id journal-id-type="nlm-ta">Cell Signal</journal-id>
+      <journal-title>Cellular signalling</journal-title>
+      <issn pub-type="ppub">0898-6568</issn>
+      <issn pub-type="epub">1873-3913</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">21376121</article-id>
+      <article-id pub-id-type="pmc">3078531</article-id>
+      <article-id pub-id-type="doi">10.1016/j.cellsig.2011.02.007</article-id>
+      <article-id pub-id-type="manuscript">NIHMS280576</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Cell signalling pathways for the regulation of GATA4 transcription factor: Implications for cell growth and apoptosis</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Suzuki</surname>
+            <given-names>Yuichiro J.</given-names>
+          </name>
+          <aff id="A1">Department of Pharmacology, Georgetown University Medical Center, Washington DC 20057</aff>
+        </contrib>
+      </contrib-group>
+      <author-notes>
+        <corresp id="FN1">To whom correspondence should be addressed: Dr. Yuichiro J. Suzuki, Department of Pharmacology, Georgetown University Medical Center, 3900 Reservoir Road NW, Washington, DC 20057 USA, TEL: (202) 687-8090, FAX: (202) 687-8825, <email>ys82@georgetown.edu</email></corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>15</day>
+        <month>3</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>1</day>
+        <month>3</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>7</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>1</day>
+        <month>7</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>23</volume>
+      <issue>7</issue>
+      <fpage>1094</fpage>
+      <lpage>1099</lpage>
+      <permissions>
+        <license>
+          <p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P2">GATA4 is a member of the GATA family of zinc finger transcription factor, which regulates gene transcription by binding to GATA elements. GATA4 was originally discovered as a regulator of cardiac development and subsequently identified as a major regulator of adult cardiac hypertrophy. GATA4 regulate gene expression of various genes, which are involved in cardiac development and cardiac hypertrophy and heart failure. In addition to the heart, GATA4 plays important roles in the reproductive system, gastrointestinal system, respiratory system and cancer. Positive and negative regulations of GATA4 therefore are important components of biologic functions. The activation of GATA4 occurs via various cell signaling events. Earlier studies have identified protein-protein interactions of GATA4 with other factors. The discovery of interactions of GATA4 with nuclear factor for activated T cells (NFAT) revealed the importance of calcium signaling in the activation of GATA4. GATA4 can also be phosphorylated by mitogen activated protein kinases and protein kinase A. Lysine modifications also occur on the GATA4 molecule including acetylation and sumoylation. Both reactive oxygen-dependent and –independent antioxidant-sensitive pathways for GATA4 activation have also been demonstrated. The GATA4 activity is also regulated by modulating the level of GATA4 expression via transcriptional as well as translational mechanisms. This work summarizes the current understanding of regulatory mechanisms for modulating GATA4 activity.</p>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="S1">
+      <title>GATA4 AS A REGULATOR OF CELL GROWTH AND DEATH</title>
+      <p id="P3">Various genes contain GATA binding sequences including the consensus 5′-WGATAR-3′ sequence, where W is A or T and R is A or G (Evans, 1988 [<xref ref-type="bibr" rid="R1">1</xref>]; Orkin, 1992 [<xref ref-type="bibr" rid="R2">2</xref>]). Binding of transcription factors to these GATA elements regulates a variety of biological processes. Six members of the GATA family of zinc finger transcription factors have been identified, and are named GATA-1, -2, -3, -4, -5 and -6 (Molkentin, 2000 [<xref ref-type="bibr" rid="R3">3</xref>]).</p>
+      <p id="P4">GATA4 was initially discovered as a regulator of cardiac development (Kelley et al., 1993 [<xref ref-type="bibr" rid="R4">4</xref>]; Arceci et al., 1993 [<xref ref-type="bibr" rid="R5">5</xref>]). GATA4 was then found to play essential roles in the development of clinically important cardiac hypertrophy (Molkentin &amp; Olson, 1997 [<xref ref-type="bibr" rid="R6">6</xref>]) by activating the expression of genes such as angiotensin II type<sub>1a</sub> receptor (Herzig et al., 1997 [<xref ref-type="bibr" rid="R7">7</xref>]) and beta-myosin heavy chain (Hasegawa et al., 1997 [<xref ref-type="bibr" rid="R8">8</xref>]) in response to pressure overload to the left ventricle. A number of other proteins that are important for cardiac hypertrophy such as alpha-myosin heavy chain (Molkentin et al., 1994 [<xref ref-type="bibr" rid="R9">9</xref>]), myosin light chains (McGrew et al., 1996 [<xref ref-type="bibr" rid="R10">10</xref>]), troponin C (Ip et al., 1994 [<xref ref-type="bibr" rid="R11">11</xref>]), troponin I (Murphy et al., 1997 [<xref ref-type="bibr" rid="R12">12</xref>]), troponin C (Montgomery &amp; Litvin, 1997 [<xref ref-type="bibr" rid="R13">13</xref>]), Na<sup>+</sup>-Ca<sup>2+</sup> exchanger (Nicholas &amp; Philipson, 1999 [<xref ref-type="bibr" rid="R14">14</xref>]; Cheng et al., 1999 [<xref ref-type="bibr" rid="R15">15</xref>]), atrial natriuretic factor (Durocher et al., 1997 [<xref ref-type="bibr" rid="R16">16</xref>]), and brain natriuretic factor (Thuerauf et al., 1994 [<xref ref-type="bibr" rid="R17">17</xref>]) also contain GATA regulatory sites in their promoters. Further, various hypertrophic stimuli such as alpha-adrenergic agonist and endothelin-1 were found to activate GATA-4 in cardiomyocytes (Morimoto et al., 2000 [<xref ref-type="bibr" rid="R18">18</xref>]; Hautala et al., 2001 [<xref ref-type="bibr" rid="R19">19</xref>]). In transgenic mice overexpressing calsequestrin with cardiac hypertrophy (Jones et al., 1998 [<xref ref-type="bibr" rid="R20">20</xref>]), GATA4 was found to be activated in the heart (Suzuki et al., 1999 [<xref ref-type="bibr" rid="R21">21</xref>]).</p>
+      <p id="P5">In addition to established roles of GATA4 in cardiac hypertrophy, GATA4 also regulates cell survival (anti-apoptotic) signaling. Evidence for the role of GATA factors in the regulation of apoptosis was initially generated in the studies of GATA1 deficient precursors that were found to undergo apoptosis (Weiss and Orkin, 1995 [<xref ref-type="bibr" rid="R22">22</xref>]). Further, apoptosis induced by estrogen was associated with the inhibition of GATA1 in erythroleukemia cells (Blobel et al., 1995 [<xref ref-type="bibr" rid="R23">23</xref>]; Blobel &amp; Orkin, 1996 [<xref ref-type="bibr" rid="R24">24</xref>]). Gregory et al. (1999 [<xref ref-type="bibr" rid="R25">25</xref>]) also reported that GATA1 induced the expression of anti-apoptotic protein Bcl-x<sub>L</sub>. The bcl-x gene generates five Bcl-x isoforms including Bcl-x<sub>L</sub>, Bcl-x<sub>S</sub>, Bcl-x<sub>β</sub>, Bcl-x<sub>γ</sub> and Bcl-x<sub>ΔTM</sub> from different splicing protein products (Pecci et al., 2001 [<xref ref-type="bibr" rid="R26">26</xref>]). Bcl-x<sub>L</sub> (233 amino acids) is anti-apoptotic and shorter Bcl-x<sub>S</sub> (170 amino acids) is a dominant negative repressor of Bcl-x<sub>L</sub> and Bcl-2 (Minn et al., 1996 [<xref ref-type="bibr" rid="R27">27</xref>]; Boise et al., 1993 [<xref ref-type="bibr" rid="R28">28</xref>]; Sorenson, 2004 [<xref ref-type="bibr" rid="R29">29</xref>]). These protein isoforms are translated from different mRNAs that are regulated by various regions within the <italic>bcl-x</italic> gene promoter. The proximal promoter region located within 802 bp upstream from the ATG site is responsible for the regulation of Bcl-x<sub>L</sub> gene expression (Pecci et al., 2001 [<xref ref-type="bibr" rid="R26">26</xref>]). These regions of the <italic>bcl-x</italic> promoter are conserved among species with various putative regulatory <italic>cis</italic>-elements including two GATA elements (Grillot et al., 1997 [<xref ref-type="bibr" rid="R30">30</xref>]). More recent reports suggest that the mechanism of GATA1-mediated upregulation of Bcl-x<sub>L</sub> involves protein phosphorylation (Yu et al., 2005 [<xref ref-type="bibr" rid="R31">31</xref>]) as well as the regulation by Gfi-1B (Kuo &amp; Chang, 2007 [<xref ref-type="bibr" rid="R32">32</xref>]). Another anti-apoptotic protein Bcl-2 has also been shown to be regulated by GATA1 (Tanaka et al., 2000 [<xref ref-type="bibr" rid="R33">33</xref>]). Recently, GATA3 was also found to upregulate Bcl-x<sub>L</sub> expression in osteoblasts (Chen et al., 2010 [<xref ref-type="bibr" rid="R35">35</xref>]).</p>
+      <p id="P6">GATA4 was also found to regulate apoptosis, as ovarian cell apoptosis was found to be associated with decreased expression of GATA4 (Heikinheimo et al., 1997 [<xref ref-type="bibr" rid="R35">35</xref>]; Vaskivuo et al., 2001 [<xref ref-type="bibr" rid="R36">36</xref>]). Also, cardiogenesis is enhanced in embryonic stem cells overexpressing GATA4, and the depletion of GATA4 results in apoptosis (Grepin et al., 1997 [<xref ref-type="bibr" rid="R37">37</xref>]). In adult cardiac myocytes, Kakita et al (2001 [<xref ref-type="bibr" rid="R38">38</xref>]) reported that the calcineurin/NFAT/GATA4 pathway is required for endothelin-1 mediated protection against cardiac myocyte apoptosis. Our laboratory has shown that the overexpression of GATA4 prevented cardiac myocyte apoptosis induced by anthracyclines such as daunorubicin and doxorubicin (Kim et al., 2003 [<xref ref-type="bibr" rid="R39">39</xref>]). We also reported that hepatocyte growth factor with the cardiac muscle cell survival activity caused the activation of GATA4 through MEK/ERK-dependent phosphorylation and upregulated Bcl-x<sub>L</sub> expression (Kitta et al., 2003 [<xref ref-type="bibr" rid="R40">40</xref>]). Anthracyclines were also found to downregulate GATA4 expression, suggesting that the mechanism of apoptosis may involve the regulation of GATA4. Nemer and co-workers (Aries et al., 2004 [<xref ref-type="bibr" rid="R41">41</xref>]) also showed doxorubicin-mediated downregulation of GATA4 in the heart of intact mice. Anthracycline-mediated downregulation of GATA4 in cardiac muscle has subsequently been reported by a number of laboratories (Bien et al., 2007 [<xref ref-type="bibr" rid="R42">42</xref>]; Suliman et al., 2007 [<xref ref-type="bibr" rid="R43">43</xref>]; Esaki et al., 2008 [<xref ref-type="bibr" rid="R44">44</xref>]; Riad et al., 2008 [<xref ref-type="bibr" rid="R45">45</xref>]; Koka et al., 2010 [<xref ref-type="bibr" rid="R46">46</xref>]). Other apoptotic stimuli such as mercury (Suzuki, 2003 [<xref ref-type="bibr" rid="R47">47</xref>]) and ischemia/reperfusion (Suzuki et al., 2004 [<xref ref-type="bibr" rid="R48">48</xref>]) also downregulate GATA4 expression. Studies of genetically modified mice demonstrated that GATA4 knock-down induced cardiac myocyte apoptosis and heart failure (Oka et al., 2006 [<xref ref-type="bibr" rid="R49">49</xref>]; Bisping et al., 2006 [<xref ref-type="bibr" rid="R50">50</xref>]). In mice, intermittent hypoxia with the preconditioning activity promoted the activation of GATA4 and upregulated Bcl-x<sub>L</sub> expression (Park et al., 2007 [<xref ref-type="bibr" rid="R51">51</xref>]). Kobayashi et al. (2006 [<xref ref-type="bibr" rid="R52">52</xref>]) demonstrated that GATA4 also regulates Bcl-2 expression in cardiac myocytes. GATA4 was found to prevent apoptosis induced by depletion of alpha-adrenergic receptor signaling (Huang et al., 2008 [<xref ref-type="bibr" rid="R53">53</xref>]) and to play a role in cell survival induced by cardiotrophin-1 (He-nan et al., 2009 [<xref ref-type="bibr" rid="R54">54</xref>]). GATA4 is involved in erythropoietin-induced cardioprotection against ischemia/reperfusion injury in the mouse heart (Shan et al., 2009 [<xref ref-type="bibr" rid="R55">55</xref>]). Interestingly, GATA4 also serves as a survival factor in cancer cells by regulating the expression of anti-apoptotic Bcl-2 (Kyronlahti et al., 2008 [<xref ref-type="bibr" rid="R56">56</xref>]) and Bcl-x<sub>L</sub> (Jaaskelainen et al., 2010 [<xref ref-type="bibr" rid="R57">57</xref>]).</p>
+    </sec>
+    <sec sec-type="background" id="S2">
+      <title>REGULATION OF GATA4 ACTIVATION BY CALCIUM SIGNALING</title>
+      <p id="P7">The activity of GATA4 can be increased and decreased by modulating the activity of the already existing GATA4 molecule through post-translational modifications or by increasing the expression of GATA4. Post-translational modification mechanisms include protein-protein interactions, protein phosphorylation, and lysine modifications.</p>
+      <p id="P8">GATA4 has been shown to interact with some regulatory proteins including dHAND, FOG2, GATA6, MEF2, Nkx2.5, p300, RXRα and SRF (Pikkarainen et al., 2004 [<xref ref-type="bibr" rid="R58">58</xref>]). Molkentin et al. (1998 [<xref ref-type="bibr" rid="R59">59</xref>]) discovered that GATA4 can interact with nuclear factor for activated T-cells (NFAT) in the heart. The discovery of NFAT-GATA4 interactions in the heart was surprising because, while NFAT has been well studied in immune cells, its activity in the heart or in any other muscular systems was unknown. NFAT is activated when it is dephosphorylated by a calcium/calmodulin-dependent protein phosphatase, calcineurin. The paper by Molkentin et al. (1998 [<xref ref-type="bibr" rid="R59">59</xref>]) published in <italic>Cell</italic> describes that the expression of a constitutively active mutant of calcinuerin promoted cardiac hypertrophy in mice. A subsequent report by the same group published in <italic>Science</italic> demonstrated that the treatment with a calcineurin inhibitor cyclosporine blocked the development of cardiac hypertrophy induced by pressure-overload or genetic manipulations (Sussman et al., 1998 [<xref ref-type="bibr" rid="R60">60</xref>]). These findings suggested that calcium signaling regulates the GATA4 activation. Consistent with these findings, we also demonstrated that activities of NFAT and GATA4 are enhanced in the heart of mice, which overexpress cardiac calsequestrin (Suzuki et al., 1999 [<xref ref-type="bibr" rid="R21">21</xref>]). Calsequestrin is the major calcium binding protein of the sarcoplasmic reticulum, the calcium storage site of srtirated muscles. Sarcoplasmic reticular calcium plays essential roles in excitation-contraction coupling and the discovery of calsequestrin (MacLennan &amp; Wong, 1971 [<xref ref-type="bibr" rid="R61">61</xref>]; Ikemoto et al., 1972 [<xref ref-type="bibr" rid="R62">62</xref>]) indicated that calcium does not freely exist in the sarcoplasmic reticulum, but is tightly regulated by calcium-binding proteins. As calsequestin has high capacity for calcium binding, it was not surprising for us to observed that cardiac myocytes from calsequetrin overexpressing mice have increased calcium release from the sarcoplasmic reticulum induced by caffeine which directly opens up the ryanodine receptor, suggesting that the sarcoplasmic reticulum is overloaded with calcium (Jones et al., 1998 [<xref ref-type="bibr" rid="R20">20</xref>]). Surprisingly, however, despite the increased calcium load, depolarization-dependent calcium-induced calcium released was suppressed with slow and sustained kinetics in these mice compared to cardiac myocytes from non-transgenic littermates (Jones et al., 1998 [<xref ref-type="bibr" rid="R20">20</xref>]). Moreover, these mice were found to exhibit cardiac hypertrophy (Jone et al., 1998 [<xref ref-type="bibr" rid="R20">20</xref>]). In light of findings in T-cells that slow and sustained calcium release can specifically activate the NFAT pathway (Dolmetsch et al., 1997 [<xref ref-type="bibr" rid="R63">63</xref>]), we hypothesized that slow and sustained kinetics of calcium release, which is distinct from normal contractile calcium exhibiting fast and transient kinetic of calcium release, may trigger the activation of calmodulin/calcineurin/NFAT/GATA4 pathway in cardiac myocytes and may promote cardiac hypertrophy (Morad &amp; Suzuki, 2000 [<xref ref-type="bibr" rid="R64">64</xref>]). Consistent to this idea, the treatment of cardiac myocytes with hydrogen peroxide, which modulates the kinetics of ryanodine receptor-dependent calcium release (Goldhaber &amp; Liu, 1994 [<xref ref-type="bibr" rid="R65">65</xref>]; Suzuki et al., 1998 [<xref ref-type="bibr" rid="R66">66</xref>]), allowed for depolarization-induced GATA4 activation (Morad &amp; Suzuki, 2000 [<xref ref-type="bibr" rid="R64">64</xref>]). <xref rid="F1" ref-type="fig">Fig. 1</xref> summarizes the published findings concerning the role of calcium signaling in GATA4 activation.</p>
+      <p id="P9">Consistent to the idea that calcium regulates GATA4 activation and cardiac hypertrophy, Morimoto et al. (2001; [<xref ref-type="bibr" rid="R67">67</xref>]) reported that norepinephrine-induced stimulation of endothelin-1 expression in cardiac myocytes is mediated by calcium-activated calcineurin-NFAT-GATA4 pathway. It is interesting to note that calcium also regulates the translational control of GATA4 mRNA (Sharma et al., 2007 [<xref ref-type="bibr" rid="R68">68</xref>]) as discussed below.</p>
+    </sec>
+    <sec sec-type="background" id="S3">
+      <title>REGULATION OF GATA4 ACTIVATION BY PROTEIN PHOSPHORYLATION</title>
+      <p id="P10">Evidence suggests that the activation of GATA factors is regulated by protein phosphorylation. Crossley &amp; Orkin (1994 [<xref ref-type="bibr" rid="R69">69</xref>]) reported that GATA1 is phosphorylated at serine residues in the <italic>N</italic>-terminal region. GATA2 was found to be phosphorylated by extracellular signal-regulated kinases (ERK) in response to interleukin signals (Towatari et al., 1995 [<xref ref-type="bibr" rid="R70">70</xref>]). GATA4 can be phosphorylated in response to hypertrophic stimuli such as phenylephrine (Morimoto et al., 2000 [<xref ref-type="bibr" rid="R18">18</xref>]) and endothelin-1 (Kitta et al., 2001 [<xref ref-type="bibr" rid="R71">71</xref>]) in cardiac myocytes at serine 105 (Liang et al., 2001 [<xref ref-type="bibr" rid="R72">72</xref>]; Kitta et al., 2003 [<xref ref-type="bibr" rid="R40">40</xref>]). p38 MAPK has also been shown to phosphorylate GATA4 at serine 105 (Kerkela et al., 2002 [<xref ref-type="bibr" rid="R73">73</xref>]; Charron et al., 2001 [<xref ref-type="bibr" rid="R74">74</xref>]). Both ERK and p38 MAPK were found to mediate the wall stress-induced activation of GATA4 binding in adult rat left ventricle (Tenhunen et al., 2004 [<xref ref-type="bibr" rid="R75">75</xref>]). In isolated rat atria, p38 MAPK-dependent GATA4 phosphorylation mediates hypertrophic responses (Kerkela et al., 2011 [<xref ref-type="bibr" rid="R76">76</xref>]). GATA4 that is phosphorylated at this site is more resistant to cellular degradation (Suzuki, 2003 [<xref ref-type="bibr" rid="R47">47</xref>]).</p>
+      <p id="P11">The RhoA/Rho kinase (ROCK) pathway has been show to be upstream of GATA4 phosphorylation by ERK and p38 MAPK in cardiac myocytes (Charron et al., 2001 [<xref ref-type="bibr" rid="R74">74</xref>]); Yanazume et al., 2002 [<xref ref-type="bibr" rid="R77">77</xref>]). In pulmonary artery smooth muscle cells, we have shown that the 5-HT signal for the nuclear translocation of ERK and GATA4 phosphorylation is dependent on the activation of RhoA and ROCK (Liu et al., 2004 [<xref ref-type="bibr" rid="R78">78</xref>]).</p>
+      <p id="P12">Some studies suggest that PI-3 kinase/Akt/GSK pathway regulates GATA4. Sadoshima and co-workers reported that glycogen synthase kinase3 (GSK3)-β regulates subcellular localization of GATA4 and beta-adrenergic receptor stimulation induces GSK3-β phosphorylation/inactivation followed by nuclear accumulation of GATA4 (Morisco et al., 2001 [<xref ref-type="bibr" rid="R79">79</xref>]). Subsequent studies have shown that Akt induces hypertrophy in vivo by activating the glycogen synthase kinase3-beta/GATA 4 pathway (Condorelli et al., 2002 [<xref ref-type="bibr" rid="R80">80</xref>]) and the deletion of GSK-3beta in mice was found to increase nuclear GATA4 and promote cardiac hypertrophy (Kerkela et al., 2008 [<xref ref-type="bibr" rid="R81">81</xref>]). IL-18 induced ANF gene transcription and hypertrophy of neonatal rat ventricular myocytes via the PI-3 kinase/Akt/GATA4 pathway (Chandrasekar et al., 2005 [<xref ref-type="bibr" rid="R82">82</xref>]). Naito et al. (2003 [<xref ref-type="bibr" rid="R83">83</xref>]) reported that PI3-kinase inhibition suppressed the GATA4 expression.</p>
+      <p id="P13">GATA4 has also been shown to be phosphorylated by protein kinase A. Tremblay et al. (2002 [<xref ref-type="bibr" rid="R84">84</xref>]) showed that cAMP stimulation of gonadal cells leads to phosphorylation of GATA4. Further studies by this group identified conserved serine 261 in the GATA4 molecule to be phosphorylated by protein kinase A (Tremblay &amp; Viger, 2003 [<xref ref-type="bibr" rid="R85">85</xref>]).</p>
+    </sec>
+    <sec sec-type="background" id="S4">
+      <title>REGULATION OF GATA4 BY LYSINE MODIFICATIONS</title>
+      <p id="P14">Lysine can be modified via acetylation, sumoylation and ubiquitination (Freiman &amp; Tjian, 2003 [<xref ref-type="bibr" rid="R86">86</xref>]) and GATA factors are also subjected to these modifications. In 1998, Boyes et al. (1998 [<xref ref-type="bibr" rid="R87">87</xref>]) reported that GATA1 is acetylated. GATA2 (Hayakawa et al., 2004 [<xref ref-type="bibr" rid="R88">88</xref>]) and GATA3 (Yamagata et al., 2000 [<xref ref-type="bibr" rid="R89">89</xref>]) have also been shown to be acetylated.</p>
+      <p id="P15">Yanazume et al. (2003 [<xref ref-type="bibr" rid="R90">90</xref>]) reported that stimulation of neonatal rat cardiac myocytes with phenylephrine increased an acetylated form of GATA4. A dominant-negative mutant of p300 suppressed phenylephrine-induced GATA4 acetylation as well as hypertrophic responses. In contrast to the activation of MEK which phosphorylates GATA4 and causes compensated concentric hypertrophy as described above, overexpression of p300 promoted eccentric dilatation and systolic dysfunction, suggesting the role of acetylated GATA4 in decompensated heart failure. More recently, curcumin, which possesses the histone acetyltransferase inhibitory activity, was found to inhibit acetylation of GATA4 and prevent heart failure (Morimoto et al., 2008 [<xref ref-type="bibr" rid="R91">91</xref>]). GATA4 acetylation also plays a role in the differentiation of embryonic stem cells into cardiac myocytes (Kawamura et al., 2005 [<xref ref-type="bibr" rid="R92">92</xref>]).</p>
+      <p id="P16">Acetylation sites have been identified to be Lys-311, Lys-318, Lys-320, and Lys-322 (Takaya et al., 2008 [<xref ref-type="bibr" rid="R93">93</xref>]). Cdk9 kinase activity was required for the p300-induced transcriptional activities, DNA binding, and acetylation of GATA4 (Sunagawa et al., 2010 [<xref ref-type="bibr" rid="R94">94</xref>]). Histone deacetylase 2 (HDAC2) and a small homeodomain factor, Hopx mediate deacetylation of GATA4 (Trivedi et al., 2010 [<xref ref-type="bibr" rid="R95">95</xref>]). Our laboratory has shown that acetylated GATA4 is more resistance to degradation, perhaps due to blocking ubiquitination which also occurs on lysine residues (Suzuki et al., 2004 [<xref ref-type="bibr" rid="R48">48</xref>]).</p>
+      <p id="P17">GATA4 contains putative sumoylation site at Lysine 366. This site was found to be sumoylated by small ubiquitin-like modifier-1 (SUMO-1) (Komatsu et al., 2004 [<xref ref-type="bibr" rid="R96">96</xref>]; Wang et al., 2004 [<xref ref-type="bibr" rid="R97">97</xref>]). Sumoylation resulted in enhanced GATA4 activity. Mutation of lysine 366 to arginine indicated that sumoylation regulates nuclear localization of GATA4 (Wang et al., 2004 [<xref ref-type="bibr" rid="R97">97</xref>]).</p>
+    </sec>
+    <sec sec-type="background" id="S5">
+      <title>REGULATION OF GATA4 GENE EXPRESSION</title>
+      <p id="P18">The GATA4 activity can be enhanced by increasing the expression of GATA4 protein. In cultured neonatal cardiac myocytes, electrical pacing-induced hypertrophy is associated with an increase in GATA4 mRNA (Xia et al., 2000 [<xref ref-type="bibr" rid="R98">98</xref>]). In rats, pulmonary artery banding (Bar et al., 2003 [<xref ref-type="bibr" rid="R99">99</xref>]) and hypoxic pulmonary hypertension (Park et al., 2010 [<xref ref-type="bibr" rid="R100">100</xref>]) have been shown to increase GATA4 gene expression in the right ventricle. The treatment of mice with acute intermittent hypoxia also increased GATA4 mRNA and protein expression in the heart (Park et al., 2007 [<xref ref-type="bibr" rid="R101">101</xref>]). Increased GATA4 expression was associated with the enhancement of GATA4 DNA binding activity (Park et al., 2010 [<xref ref-type="bibr" rid="R100">100</xref>]; Park et al., 2007 [<xref ref-type="bibr" rid="R101">101</xref>]).</p>
+      <p id="P19">To understand regulatory mechanisms of the induction of GATA4 expression, our laboratory identified the transcriptional start site of the <italic>Gata4</italic> gene and found a regulatory region in its promoter. We performed 5′-Rapid Amplification of cDNA Ends (5′-RACE) analysis to identify the transcriptional start site of the <italic>Gata4</italic> gene (Suzuki et al., 2004 [<xref ref-type="bibr" rid="R48">48</xref>]; Park et al., 2007 [<xref ref-type="bibr" rid="R101">101</xref>]; Nagase et al., 2006 [<xref ref-type="bibr" rid="R102">102</xref>]; Suzuki et al., 2007 [<xref ref-type="bibr" rid="R103">103</xref>]). We found that 5′ mRNA end occurs 0.6 kb upstream of the ATG translational start site, with 3.5 kb intron existing 0.5 kb upstream of the ATG site as indicated in <xref rid="F2" ref-type="fig">Fig. 2</xref> (Park et al., 2007 [<xref ref-type="bibr" rid="R101">101</xref>]; Nagase et al., 2006 [<xref ref-type="bibr" rid="R102">102</xref>]; Suzuki et al., 2007 [<xref ref-type="bibr" rid="R103">103</xref>]). The 1,000 bp region immediately upstream from the identified transcriptional start site is conserved and shares 90% homology with the promoter of the rat <italic>Gata4</italic> gene. Similar results were reported by Ohara et al. (2006 [<xref ref-type="bibr" rid="R104">104</xref>]). We found that the 250 bp region proximal to the transcriptional start site is important for regulating gene transcription in cardiac muscle cells (Park et al., 2007 [<xref ref-type="bibr" rid="R101">101</xref>]). This region contains functionally important CCAAT box, and the DNA binding protein was identified as CCAAT-binding factor (CBF)/nuclear factor-Y (NF-Y) (Park et al., 2010 [<xref ref-type="bibr" rid="R100">100</xref>]; Park et al., 2011 [<xref ref-type="bibr" rid="R105">105</xref>]).</p>
+      <p id="P20">It has been reported that, in the left ventricle, pressure overload by aortic banding activates GATA4 via post-translational modifications without increasing GATA4 gene expression (Hautala et al., 2001 [<xref ref-type="bibr" rid="R19">19</xref>]); while pulmonary artery banding increased GATA4 gene expression in the right ventricle (Bar et al., 2003 [<xref ref-type="bibr" rid="R99">99</xref>]). These results suggest that the right ventricle specifically possesses transcriptional mechanism for GATA4 activation. Using the hypoxic pulmonary hypertension model of right ventricular hypertrophy, we found that CBF/NF-Y activation occurs through the liberation from a complex with annexin A1 protein via reactive oxygen species-mediated degradation of annexin A1 (<xref rid="F3" ref-type="fig">Fig. 3</xref>; Park et al., 2010 [<xref ref-type="bibr" rid="R100">100</xref>]). One difference between left and right ventricles is that the right ventricle has a higher CBF/NF-Y to annexin A1 ratio, compared to the left ventricle, thereby making more efficient for the CBF/NF-Y activation upon the annexin A1 degradation (Park et al., 2010 [<xref ref-type="bibr" rid="R100">100</xref>]).</p>
+      <p id="P21">In addition to the regulation at the transcriptional level, Sharma et al. (2007 [<xref ref-type="bibr" rid="R68">68</xref>]) reported that GATA4 expression is regulated at the translational level. Authors found that the GATA4 mRNA 5′-UTR contains internal ribosome entry site (IRES) activity that is stimulated during hypertrophic responses induced by vasopressin in cardiac myocytes. This translational activity is regulated by sarcoplasmic reticular calcium as well as protein kinase C.</p>
+    </sec>
+    <sec sec-type="background" id="S6">
+      <title>NEGATIVE REGULATION OF GATA4 GENE EXPRESSION</title>
+      <p id="P22">As described above, various apoptotic agents such as anthracyclines, nitric oxide and ischemia/reperfusion have been shown to downregulate GATA4 expression. Our previous study has shown that the inhibition of general gene transcription by actinomycin D did not alter the rate of downregulation of <italic>Gata4</italic> mRNA promoted by anthracyclines, suggesting that the mRNA stability was not affected. Cloning of the <italic>Gata4</italic> promoter allowed for testing if this negative regulation is transcriptionally regulated. Our studies using cloned 250 bp proximal region of the <italic>Gata4</italic> promoter revealed that daunorubicin inhibits the binding activity of CBF/NF-Y to CCAAT box in cardiac muscle cells (Park et al., 2011 [<xref ref-type="bibr" rid="R105">105</xref>]). We further found that daunorubicin promotes nuclear translocation of p53 and elicit protein-protein interactions between p53 and CBF/NF-Y to suppress the DNA binding activity (Park et al., 2011 [<xref ref-type="bibr" rid="R105">105</xref>]; <xref rid="F4" ref-type="fig">Fig. 4</xref>).</p>
+      <p id="P23">Nitric oxide also signals to suppress <italic>Gata4</italic> gene expression. In cardiac muscle cells, nitric oxide-mediated downregulation of <italic>Gata4</italic> is dependent on protein kinase G (Suzuki et al., 2004 [<xref ref-type="bibr" rid="R96">96</xref>]). In contrast, nitric oxide-mediated <italic>Gata4</italic> downregulation appears to be independent of protein kinase G (Suzuki et al., 2009 [<xref ref-type="bibr" rid="R106">106</xref>]), but regulated by Egr1 in pulmonary artery smooth muscle cells (Suzuki et al., 2007 [<xref ref-type="bibr" rid="R103">103</xref>]).</p>
+    </sec>
+    <sec id="S7">
+      <title>GATA4 ACTIVATION BY REDOX SIGNALING</title>
+      <p id="P24">Evidence suggests that cell signaling for GATA4 activation is sensitive to antioxidant inhibition. The actions of antioxidants may be due to inhibiting reactive oxygen species (ROS) that serve as second messengers (Suzuki et al., 1997 [<xref ref-type="bibr" rid="R107">107</xref>]) or via mechanisms independent of ROS.</p>
+      <p id="P25">In pulmonary artery smooth muscle cells, GATA4 activation has been shown to depend on ROS signaling. The major GATA factor of smooth muscle cells in systemic circulation is GATA6 and mitogens have been shown to downregulate GATA6 which suppresses cell cycle proteins (Perlman et al., 1998 [<xref ref-type="bibr" rid="R108">108</xref>]; Mano et al., 1999 [<xref ref-type="bibr" rid="R109">109</xref>]). Thus, we initially hypothesized that an important mediator of pulmonary hypertension, serotonin (5-HT), promotes the growth of pulmonary artery smooth muscle cells by downregulating GATA6. However, in pulmonary artery smooth muscle cells, we found that GATA4 is expressed and its DNA binding activity is enhanced by 5-HT (Suzuki et al., 2003 [<xref ref-type="bibr" rid="R110">110</xref>]). 5-HT-mediated activation of GATA4 is through reactive oxygen species and MEK/ERK-dependent phosphorylation at serine 105 (Suzuki et al., 2003 [<xref ref-type="bibr" rid="R110">110</xref>]). Subsequently, we have shown that the 5-HT signal for the nuclear translocation of ERK and GATA4 phosphorylation is dependent on the activation of RhoA and Rho kinase (Liu et al., 2004 [<xref ref-type="bibr" rid="R78">78</xref>]). Rabinovitch and co-workers also showed that GATA4 is phosphorylated and activated via ERK in response to ROS generation by 5-HT (Lawrie et al., 2005 [<xref ref-type="bibr" rid="R111">111</xref>]). They proposed that ROS promote the translocation of ERK to the nucleus. We recently found that Rho guanine nucleotide dissociation inhibitor (RhoGDI), which functions to prevent the exchange of GTP for GDP on the Rho-GTPases by guanine nucleotide exchange factors, is carbonylated in response to 5-HT (Wong et al., 2010 [<xref ref-type="bibr" rid="R112">112</xref>]). Thus, carbonylation of RhoGDI may trigger RhoA/Rho kinase activation, leading to the nuclear translocation of ERK and GATA4 phosphorylation. <xref rid="F5" ref-type="fig">Fig. 5</xref> depicts proposed ROS-dependent cell signaling pathways for GATA4 activation in pulmonary artery smooth muscle cells. Also, in cardiac myocytes, as described above, membrane depolarization activates calcium-dependent signaling for GATA4 only when the cells are pretreated with hydrogen peroxide (Morad &amp; Suzuki, 2000 [<xref ref-type="bibr" rid="R64">64</xref>]). These results are consistent with the idea that GATA4 is an oxidative stress responsive transcription factor (Suzuki, 2003 [<xref ref-type="bibr" rid="R47">47</xref>]).</p>
+      <p id="P26">Antioxidant inhibitable step of signal transduction (Suzuki et al., 1994 [<xref ref-type="bibr" rid="R113">113</xref>]) for GATA4 activation has also been reported (Kitta et al., 2001 [<xref ref-type="bibr" rid="R114">114</xref>]). In HL-1 cardiac muscle cells, an antioxidant N-acetylcysteine was found to inhibit hepatocyte growth factor (HGF)-induced GATA4 phosphorylation, suggesting the role of ROS. However, this was due to a shift in kinetics of GATA4 phosphorylation via ROS independent mechanism (Kitta et al., 2001 [<xref ref-type="bibr" rid="R114">114</xref>]). The PMA-induced ERK/GATA4 pathway was inhibited by α-tocopherol (vitamin E) in pulmonary artery smooth muscle cells, but not in cardiac muscle cells (Clement et al., 2002 [<xref ref-type="bibr" rid="R115">115</xref>]).</p>
+    </sec>
+    <sec sec-type="conclusions" id="S8">
+      <title>CONCLUSIONS</title>
+      <p id="P27">GATA4 plays important roles in gene transcription of various genes in various tissues. Specific actions of GATA4 to regulate these genes under different situations are likely regulated by activating differential cell signaling pathways. As described in the present article, GATA4 can be activated through increasing the activity of the already existing GATA4 protein molecule or by increasing the GATA4 protein expression. Post-translational modifications of GATA4 includes protein-protein interactions, protein phosphorylation by kinases such as ERK, p38 MAPK, PKA and GSK, protein acetylation, and protein sumoylation. GATA4 protein expression can be altered through transcriptional or translational mechanisms. Identifications of molecular mechanisms of cell signaling for GATA4 modulation should contribute to developing therapeutic strategies to treat various diseases in which GATA4 has been implicated.</p>
+    </sec>
+  </body>
+  <back>
+    <sec id="S9" sec-type="display-objects">
+      <title>Figures</title>
+      <fig id="F1" position="float">
+        <label>Fig. 1</label>
+        <caption>
+          <title>Proposed calcium signaling pathways for GATA4-dependent gene transcription in the heart</title>
+          <p>Normal cardiac muscle contraction is dependent on fast and transient kinetics of calcium release. Ligand activation by hypertrophic stimuli such as angiotensin II and alpha-agonists as well as redox modulations of the ryanodine receptor may activate slow and sustained calcium release that is sensed by calmodulin. Calcium-calmodulin, in turn, activates calcineurin that dephosphorylates NFAT. Dephosphorylated and active NFAT gets translocated into the nucleus, and interacts with GATA4, triggering gene transcription.</p>
+        </caption>
+        <graphic xlink:href="nihms280576f1"/>
+      </fig>
+      <fig id="F2" position="float">
+        <label>Fig. 2</label>
+        <caption>
+          <title><italic>Gata4</italic> gene regulatory regions</title>
+          <p>Transcriptional start site of the <italic>Gata4</italic> gene occurs 4.1 kb upstream from the translational start site with 3.5kb intron. Regulatory regions reside within 0.25 kb upstream from the transcriptional start site.</p>
+        </caption>
+        <graphic xlink:href="nihms280576f2"/>
+      </fig>
+      <fig id="F3" position="float">
+        <label>Fig. 3</label>
+        <caption>
+          <title>Proposed cell signaling pathways for the activation of <italic>Gata4</italic> gene transcription</title>
+          <p>CCAAT box plays an important role in the transcription of the Gata4 gene and is regulated by CBF/NF-Y transcription factor. CBF/NF-Y is inactive when annexin A1 is bound. Signaling stimuli liberate CBF/NF-Y as an active form via the production of ROS, which in turn carbonylate annexin A1. Carbonylated annexin A1 gets degraded by proteasomes.</p>
+        </caption>
+        <graphic xlink:href="nihms280576f3"/>
+      </fig>
+      <fig id="F4" position="float">
+        <label>Fig. 4</label>
+        <caption>
+          <title>A proposed mechanism for inhibition of <italic>Gata4</italic> gene transcription by apoptotic stimuli</title>
+          <p>Some apoptotic stimuli increase nuclear p53 that can bind to CBF/NF-Y, inhibiting its DNA binding activity, thereby suppressing <italic>Gata4</italic> gene transcription.</p>
+        </caption>
+        <graphic xlink:href="nihms280576f4"/>
+      </fig>
+      <fig id="F5" position="float">
+        <label>Fig. 5</label>
+        <caption>
+          <title>Proposed ROS-dependent signaling pathways for GATA4 activation</title>
+          <p>Signaling stimuli trigger the generation of ROS, which in turn (i) activate MEK, phosphorylating ERK and (ii) activate RhoA/ROCK pathway, facilitating ERK nuclear translocation. In the nucleus, ERK then phosphorylates and activates GATA4.</p>
+        </caption>
+        <graphic xlink:href="nihms280576f5"/>
+      </fig>
+    </sec>
+    <ref-list>
+      <ref id="R1">
+        <label>1</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Evans</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Reitman</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Felsenfeld</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>1988</year>
+          <volume>85</volume>
+          <fpage>5976</fpage>
+          <lpage>80</lpage>
+          <pub-id pub-id-type="pmid">3413070</pub-id>
+        </citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Orkin</surname>
+              <given-names>SH</given-names>
+            </name>
+          </person-group>
+          <source>Blood</source>
+          <year>1992</year>
+          <volume>80</volume>
+          <fpage>575</fpage>
+          <lpage>81</lpage>
+          <pub-id pub-id-type="pmid">1638017</pub-id>
+        </citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Molkentin</surname>
+              <given-names>JD</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>2000</year>
+          <volume>275</volume>
+          <fpage>38949</fpage>
+          <lpage>52</lpage>
+          <pub-id pub-id-type="pmid">11042222</pub-id>
+        </citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kelley</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Blumberg</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Zon</surname>
+              <given-names>LI</given-names>
+            </name>
+            <name>
+              <surname>Evans</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <source>Development</source>
+          <year>1993</year>
+          <volume>118</volume>
+          <fpage>817</fpage>
+          <lpage>27</lpage>
+          <pub-id pub-id-type="pmid">8076520</pub-id>
+        </citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Arceci</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>King</surname>
+              <given-names>AA</given-names>
+            </name>
+            <name>
+              <surname>Simon</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>Orkin</surname>
+              <given-names>SH</given-names>
+            </name>
+            <name>
+              <surname>Wilson</surname>
+              <given-names>DB</given-names>
+            </name>
+          </person-group>
+          <source>Mol Cell Biol</source>
+          <year>1993</year>
+          <volume>13</volume>
+          <fpage>2235</fpage>
+          <lpage>46</lpage>
+          <pub-id pub-id-type="pmid">8455608</pub-id>
+        </citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Molkentin</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Olson</surname>
+              <given-names>EN</given-names>
+            </name>
+          </person-group>
+          <source>Circulation</source>
+          <year>1997</year>
+          <volume>96</volume>
+          <fpage>3833</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="pmid">9403603</pub-id>
+        </citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Herzig</surname>
+              <given-names>TC</given-names>
+            </name>
+            <name>
+              <surname>Jobe</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Aoki</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Molkentin</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Cowley</surname>
+              <given-names>AW</given-names>
+              <suffix>Jr</suffix>
+            </name>
+            <name>
+              <surname>Izumo</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Markham</surname>
+              <given-names>BE</given-names>
+            </name>
+          </person-group>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>1997</year>
+          <volume>94</volume>
+          <fpage>7543</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">9207128</pub-id>
+        </citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hasegawa</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <name>
+              <surname>Jobe</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Markham</surname>
+              <given-names>BE</given-names>
+            </name>
+            <name>
+              <surname>Kitsis</surname>
+              <given-names>RN</given-names>
+            </name>
+          </person-group>
+          <source>Circulation</source>
+          <year>1997</year>
+          <volume>96</volume>
+          <fpage>3943</fpage>
+          <lpage>53</lpage>
+          <pub-id pub-id-type="pmid">9403619</pub-id>
+        </citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Molkentin</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Kalvakolanu</surname>
+              <given-names>DV</given-names>
+            </name>
+            <name>
+              <surname>Markham</surname>
+              <given-names>BE</given-names>
+            </name>
+          </person-group>
+          <source>Mol Cell Biol</source>
+          <year>1994</year>
+          <volume>14</volume>
+          <fpage>4947</fpage>
+          <lpage>57</lpage>
+          <pub-id pub-id-type="pmid">8007990</pub-id>
+        </citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McGrew</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Bogdanova</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Hasegawa</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Hughes</surname>
+              <given-names>SH</given-names>
+            </name>
+            <name>
+              <surname>Kitsis</surname>
+              <given-names>RN</given-names>
+            </name>
+            <name>
+              <surname>Rosenthal</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <source>Mol Cell Biol</source>
+          <year>1996</year>
+          <volume>16</volume>
+          <fpage>4524</fpage>
+          <lpage>34</lpage>
+          <pub-id pub-id-type="pmid">8754853</pub-id>
+        </citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ip</surname>
+              <given-names>HS</given-names>
+            </name>
+            <name>
+              <surname>Wilson</surname>
+              <given-names>DB</given-names>
+            </name>
+            <name>
+              <surname>Heikinheimo</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Tang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Ting</surname>
+              <given-names>CN</given-names>
+            </name>
+            <name>
+              <surname>Simon</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>Leiden</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Parmacek</surname>
+              <given-names>MS</given-names>
+            </name>
+          </person-group>
+          <source>Mol Cell Biol</source>
+          <year>1994</year>
+          <volume>14</volume>
+          <fpage>7517</fpage>
+          <lpage>26</lpage>
+          <pub-id pub-id-type="pmid">7935467</pub-id>
+        </citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Murphy</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Thompson</surname>
+              <given-names>WR</given-names>
+            </name>
+            <name>
+              <surname>Peng</surname>
+              <given-names>LF</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>L</given-names>
+              <suffix>2nd</suffix>
+            </name>
+          </person-group>
+          <source>Biochem J</source>
+          <year>1997</year>
+          <volume>322</volume>
+          <fpage>393</fpage>
+          <lpage>401</lpage>
+          <pub-id pub-id-type="pmid">9065755</pub-id>
+        </citation>
+      </ref>
+      <ref id="R13">
+        <label>13</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Montgomery</surname>
+              <given-names>MO</given-names>
+            </name>
+            <name>
+              <surname>Litvin</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <source>Gene</source>
+          <year>1997</year>
+          <volume>187</volume>
+          <fpage>159</fpage>
+          <lpage>64</lpage>
+          <pub-id pub-id-type="pmid">9099875</pub-id>
+        </citation>
+      </ref>
+      <ref id="R14">
+        <label>14</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nicholas</surname>
+              <given-names>SB</given-names>
+            </name>
+            <name>
+              <surname>Philipson</surname>
+              <given-names>KD</given-names>
+            </name>
+          </person-group>
+          <source>Am J Physiol</source>
+          <year>1999</year>
+          <volume>277</volume>
+          <fpage>H324</fpage>
+          <lpage>30</lpage>
+          <pub-id pub-id-type="pmid">10409212</pub-id>
+        </citation>
+      </ref>
+      <ref id="R15">
+        <label>15</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cheng</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Hagen</surname>
+              <given-names>TP</given-names>
+            </name>
+            <name>
+              <surname>Dawson</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Barnes</surname>
+              <given-names>KV</given-names>
+            </name>
+            <name>
+              <surname>Menick</surname>
+              <given-names>DR</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>1999</year>
+          <volume>274</volume>
+          <fpage>12819</fpage>
+          <lpage>26</lpage>
+          <pub-id pub-id-type="pmid">10212268</pub-id>
+        </citation>
+      </ref>
+      <ref id="R16">
+        <label>16</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Durocher</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Charron</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Warren</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Schwartz</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Nemer</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <source>EMBO J</source>
+          <year>1997</year>
+          <volume>16</volume>
+          <fpage>5687</fpage>
+          <lpage>96</lpage>
+          <pub-id pub-id-type="pmid">9312027</pub-id>
+        </citation>
+      </ref>
+      <ref id="R17">
+        <label>17</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Thuerauf</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Hanford</surname>
+              <given-names>DS</given-names>
+            </name>
+            <name>
+              <surname>Glembotski</surname>
+              <given-names>CC</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>1994</year>
+          <volume>269</volume>
+          <fpage>17772</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="pmid">8027030</pub-id>
+        </citation>
+      </ref>
+      <ref id="R18">
+        <label>18</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Morimoto</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Hasegawa</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Kaburagi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kakita</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Wada</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Yanazume</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sasayama</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>2000</year>
+          <volume>275</volume>
+          <fpage>13721</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="pmid">10788492</pub-id>
+        </citation>
+      </ref>
+      <ref id="R19">
+        <label>19</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hautala</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Tokola</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Luodonpaa</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Puhakka</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Romppanen</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Vuolteenaho</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Ruskoaho</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <source>Circulation</source>
+          <year>2001</year>
+          <volume>103</volume>
+          <fpage>730</fpage>
+          <lpage>735</lpage>
+          <pub-id pub-id-type="pmid">11156886</pub-id>
+        </citation>
+      </ref>
+      <ref id="R20">
+        <label>20</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jones</surname>
+              <given-names>LR</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Kobayashi</surname>
+              <given-names>YM</given-names>
+            </name>
+            <name>
+              <surname>Ramesh</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Franzini-Armstrong</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Cleemann</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Morad</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <source>J Clin Invest</source>
+          <year>1998</year>
+          <volume>101</volume>
+          <fpage>1385</fpage>
+          <lpage>93</lpage>
+          <pub-id pub-id-type="pmid">9525981</pub-id>
+        </citation>
+      </ref>
+      <ref id="R21">
+        <label>21</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+            <name>
+              <surname>Ikeda</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Shi</surname>
+              <given-names>SS</given-names>
+            </name>
+            <name>
+              <surname>Kitta</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Kobayashi</surname>
+              <given-names>YM</given-names>
+            </name>
+            <name>
+              <surname>Morad</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>LR</given-names>
+            </name>
+            <name>
+              <surname>Blumberg</surname>
+              <given-names>JB</given-names>
+            </name>
+          </person-group>
+          <source>Cell Calcium</source>
+          <year>1999</year>
+          <volume>25</volume>
+          <fpage>401</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">10579051</pub-id>
+        </citation>
+      </ref>
+      <ref id="R22">
+        <label>22</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Weiss</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Orkin</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>1995</year>
+          <volume>92</volume>
+          <fpage>9623</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">7568185</pub-id>
+        </citation>
+      </ref>
+      <ref id="R23">
+        <label>23</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Blobel</surname>
+              <given-names>GA</given-names>
+            </name>
+            <name>
+              <surname>Sieff</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>Orkin</surname>
+              <given-names>SH</given-names>
+            </name>
+          </person-group>
+          <source>Mol Cell Biol</source>
+          <year>1995</year>
+          <volume>15</volume>
+          <fpage>3147</fpage>
+          <lpage>53</lpage>
+          <pub-id pub-id-type="pmid">7760810</pub-id>
+        </citation>
+      </ref>
+      <ref id="R24">
+        <label>24</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Blobel</surname>
+              <given-names>GA</given-names>
+            </name>
+            <name>
+              <surname>Orkin</surname>
+              <given-names>SH</given-names>
+            </name>
+          </person-group>
+          <source>Mol Cell Biol</source>
+          <year>1996</year>
+          <volume>16</volume>
+          <fpage>1687</fpage>
+          <lpage>94</lpage>
+          <pub-id pub-id-type="pmid">8657144</pub-id>
+        </citation>
+      </ref>
+      <ref id="R25">
+        <label>25</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gregory</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Yu</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Orkin</surname>
+              <given-names>SH</given-names>
+            </name>
+            <name>
+              <surname>Blobel</surname>
+              <given-names>GA</given-names>
+            </name>
+            <name>
+              <surname>Weiss</surname>
+              <given-names>MJ</given-names>
+            </name>
+          </person-group>
+          <source>Blood</source>
+          <year>1999</year>
+          <volume>94</volume>
+          <fpage>87</fpage>
+          <lpage>96</lpage>
+          <pub-id pub-id-type="pmid">10381501</pub-id>
+        </citation>
+      </ref>
+      <ref id="R26">
+        <label>26</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pecci</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Viegas</surname>
+              <given-names>LR</given-names>
+            </name>
+            <name>
+              <surname>Baranao</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Beato</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>2001</year>
+          <volume>276</volume>
+          <fpage>21062</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">11274164</pub-id>
+        </citation>
+      </ref>
+      <ref id="R27">
+        <label>27</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Minn</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Boise</surname>
+              <given-names>LH</given-names>
+            </name>
+            <name>
+              <surname>Thompson</surname>
+              <given-names>CB</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>1996</year>
+          <volume>271</volume>
+          <fpage>6306</fpage>
+          <lpage>12</lpage>
+          <pub-id pub-id-type="pmid">8626425</pub-id>
+        </citation>
+      </ref>
+      <ref id="R28">
+        <label>28</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boise</surname>
+              <given-names>LH</given-names>
+            </name>
+            <name>
+              <surname>Gonzalez-Garcia</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Postema</surname>
+              <given-names>CE</given-names>
+            </name>
+            <name>
+              <surname>Ding</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Lindsten</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Turka</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Mao</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Nunez</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Thompson</surname>
+              <given-names>CB</given-names>
+            </name>
+          </person-group>
+          <source>Cell</source>
+          <year>1993</year>
+          <volume>74</volume>
+          <fpage>597</fpage>
+          <lpage>608</lpage>
+          <pub-id pub-id-type="pmid">8358789</pub-id>
+        </citation>
+      </ref>
+      <ref id="R29">
+        <label>29</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sorenson</surname>
+              <given-names>CM</given-names>
+            </name>
+          </person-group>
+          <source>Biochim Biophys Acta</source>
+          <year>2004</year>
+          <volume>1644</volume>
+          <fpage>169</fpage>
+          <lpage>77</lpage>
+          <pub-id pub-id-type="pmid">14996501</pub-id>
+        </citation>
+      </ref>
+      <ref id="R30">
+        <label>30</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Grillot</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Gonzalez-Garcia</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ekhterae</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Duan</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Inohara</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Ohta</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Seldin</surname>
+              <given-names>MF</given-names>
+            </name>
+            <name>
+              <surname>Nunez</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <source>J Immunol</source>
+          <year>1997</year>
+          <volume>158</volume>
+          <fpage>4750</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">9144489</pub-id>
+        </citation>
+      </ref>
+      <ref id="R31">
+        <label>31</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yu</surname>
+              <given-names>YL</given-names>
+            </name>
+            <name>
+              <surname>Chiang</surname>
+              <given-names>YJ</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>YC</given-names>
+            </name>
+            <name>
+              <surname>Papetti</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Juo</surname>
+              <given-names>CG</given-names>
+            </name>
+            <name>
+              <surname>Skoultchi</surname>
+              <given-names>AI</given-names>
+            </name>
+            <name>
+              <surname>Yen</surname>
+              <given-names>JJ</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>2005</year>
+          <volume>280</volume>
+          <fpage>29533</fpage>
+          <lpage>42</lpage>
+          <pub-id pub-id-type="pmid">15967790</pub-id>
+        </citation>
+      </ref>
+      <ref id="R32">
+        <label>32</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kuo</surname>
+              <given-names>YY</given-names>
+            </name>
+            <name>
+              <surname>Chang</surname>
+              <given-names>ZF</given-names>
+            </name>
+          </person-group>
+          <source>Mol Cell Biol</source>
+          <year>2007</year>
+          <volume>27</volume>
+          <fpage>4261</fpage>
+          <lpage>72</lpage>
+          <pub-id pub-id-type="pmid">17420275</pub-id>
+        </citation>
+      </ref>
+      <ref id="R33">
+        <label>33</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tanaka</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Matsumura</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Nakajima</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Daino</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Sonoyama</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Yoshida</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Oritani</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Machii</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Yamamoto</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hirano</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Kanakura</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <source>Blood</source>
+          <year>2000</year>
+          <volume>95</volume>
+          <fpage>1264</fpage>
+          <lpage>73</lpage>
+          <pub-id pub-id-type="pmid">10666199</pub-id>
+        </citation>
+      </ref>
+      <ref id="R34">
+        <label>34</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>YL</given-names>
+            </name>
+            <name>
+              <surname>Chou</surname>
+              <given-names>CW</given-names>
+            </name>
+          </person-group>
+          <source>J Bone Miner Res</source>
+          <year>2010</year>
+          <volume>25</volume>
+          <fpage>2193</fpage>
+          <lpage>204</lpage>
+          <pub-id pub-id-type="pmid">20499358</pub-id>
+        </citation>
+      </ref>
+      <ref id="R35">
+        <label>35</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Heikinheimo</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ermolaeva</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Bielinska</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Rahman</surname>
+              <given-names>NA</given-names>
+            </name>
+            <name>
+              <surname>Narita</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Huhtaniemi</surname>
+              <given-names>IT</given-names>
+            </name>
+            <name>
+              <surname>Tapanainen</surname>
+              <given-names>JS</given-names>
+            </name>
+            <name>
+              <surname>Wilson</surname>
+              <given-names>DB</given-names>
+            </name>
+          </person-group>
+          <source>Endocrinology</source>
+          <year>1997</year>
+          <volume>138</volume>
+          <fpage>3505</fpage>
+          <lpage>14</lpage>
+          <pub-id pub-id-type="pmid">9231805</pub-id>
+        </citation>
+      </ref>
+      <ref id="R36">
+        <label>36</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vaskivuo</surname>
+              <given-names>TE</given-names>
+            </name>
+            <name>
+              <surname>Anttonen</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Herva</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Billig</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Dorland</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>te Velde</surname>
+              <given-names>ER</given-names>
+            </name>
+            <name>
+              <surname>Stenbäck</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Heikinheimo</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Tapanainen</surname>
+              <given-names>JS</given-names>
+            </name>
+          </person-group>
+          <source>J Clin Endocrinol Metab</source>
+          <year>2001</year>
+          <volume>86</volume>
+          <fpage>3421</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">11443219</pub-id>
+        </citation>
+      </ref>
+      <ref id="R37">
+        <label>37</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Grépin</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Nemer</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Nemer</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <source>Development</source>
+          <year>1997</year>
+          <volume>124</volume>
+          <fpage>2387</fpage>
+          <lpage>95</lpage>
+          <pub-id pub-id-type="pmid">9199365</pub-id>
+        </citation>
+      </ref>
+      <ref id="R38">
+        <label>38</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kakita</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Hasegawa</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Iwai-Kanai</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Adachi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Morimoto</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Wada</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kawamura</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Yanazume</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sasayama</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <source>Circ Res</source>
+          <year>2001</year>
+          <volume>88</volume>
+          <fpage>1239</fpage>
+          <lpage>46</lpage>
+          <pub-id pub-id-type="pmid">11420299</pub-id>
+        </citation>
+      </ref>
+      <ref id="R39">
+        <label>39</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kim</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>AG</given-names>
+            </name>
+            <name>
+              <surname>Kitta</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Fitch</surname>
+              <given-names>SN</given-names>
+            </name>
+            <name>
+              <surname>Ikeda</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Ihara</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Simon</surname>
+              <given-names>AR</given-names>
+            </name>
+            <name>
+              <surname>Evans</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+          </person-group>
+          <source>Mol Pharmacol</source>
+          <year>2003</year>
+          <volume>63</volume>
+          <fpage>368</fpage>
+          <lpage>77</lpage>
+          <pub-id pub-id-type="pmid">12527808</pub-id>
+        </citation>
+      </ref>
+      <ref id="R40">
+        <label>40</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kitta</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Day</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Torregroza</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Evans</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>2003</year>
+          <volume>278</volume>
+          <fpage>4705</fpage>
+          <lpage>12</lpage>
+          <pub-id pub-id-type="pmid">12468531</pub-id>
+        </citation>
+      </ref>
+      <ref id="R41">
+        <label>41</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Aries</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Paradis</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Lefebvre</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Schwartz</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Nemer</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>2004</year>
+          <volume>101</volume>
+          <fpage>6975</fpage>
+          <lpage>80</lpage>
+          <pub-id pub-id-type="pmid">15100413</pub-id>
+        </citation>
+      </ref>
+      <ref id="R42">
+        <label>42</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bien</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Riad</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Ritter</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>Gratz</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Olshausen</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Westermann</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Grube</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Krieg</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Ciecholewski</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Felix</surname>
+              <given-names>SB</given-names>
+            </name>
+            <name>
+              <surname>Staudt</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Schultheiss</surname>
+              <given-names>HP</given-names>
+            </name>
+            <name>
+              <surname>Ewert</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Völker</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Tschöpe</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Kroemer</surname>
+              <given-names>HK</given-names>
+            </name>
+          </person-group>
+          <source>Cancer Res</source>
+          <year>2007</year>
+          <volume>67</volume>
+          <fpage>10428</fpage>
+          <lpage>35</lpage>
+          <pub-id pub-id-type="pmid">17974986</pub-id>
+        </citation>
+      </ref>
+      <ref id="R43">
+        <label>43</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Suliman</surname>
+              <given-names>HB</given-names>
+            </name>
+            <name>
+              <surname>Carraway</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name>
+              <surname>Ali</surname>
+              <given-names>AS</given-names>
+            </name>
+            <name>
+              <surname>Reynolds</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Welty-Wolf</surname>
+              <given-names>KE</given-names>
+            </name>
+            <name>
+              <surname>Piantadosi</surname>
+              <given-names>CA</given-names>
+            </name>
+          </person-group>
+          <source>J Clin Invest</source>
+          <year>2007</year>
+          <volume>117</volume>
+          <fpage>3730</fpage>
+          <lpage>41</lpage>
+          <pub-id pub-id-type="pmid">18037988</pub-id>
+        </citation>
+      </ref>
+      <ref id="R44">
+        <label>44</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Esaki</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Takemura</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Kosai</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Takahashi</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Miyata</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Goto</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Maruyama</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Okada</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kanamori</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Ogino</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Ushikoshi</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Minatoguchi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Fujiwara</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Fujiwara</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <source>Am J Physiol Heart Circ Physiol</source>
+          <year>2008</year>
+          <volume>294</volume>
+          <fpage>H1048</fpage>
+          <lpage>57</lpage>
+          <pub-id pub-id-type="pmid">18083897</pub-id>
+        </citation>
+      </ref>
+      <ref id="R45">
+        <label>45</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Riad</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Bien</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Gratz</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Escher</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Westermann</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Heimesaat</surname>
+              <given-names>MM</given-names>
+            </name>
+            <name>
+              <surname>Bereswill</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Krieg</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Felix</surname>
+              <given-names>SB</given-names>
+            </name>
+            <name>
+              <surname>Schultheiss</surname>
+              <given-names>HP</given-names>
+            </name>
+            <name>
+              <surname>Kroemer</surname>
+              <given-names>HK</given-names>
+            </name>
+            <name>
+              <surname>Tschöpe</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <source>Eur J Heart Fail</source>
+          <year>2008</year>
+          <volume>10</volume>
+          <fpage>233</fpage>
+          <lpage>43</lpage>
+          <pub-id pub-id-type="pmid">18321777</pub-id>
+        </citation>
+      </ref>
+      <ref id="R46">
+        <label>46</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Koka</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Das</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>SG</given-names>
+            </name>
+            <name>
+              <surname>Durrant</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Xi</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Kukreja</surname>
+              <given-names>RC</given-names>
+            </name>
+          </person-group>
+          <source>J Pharmacol Exp Ther</source>
+          <year>2010</year>
+          <volume>334</volume>
+          <fpage>1023</fpage>
+          <lpage>30</lpage>
+          <pub-id pub-id-type="pmid">20543097</pub-id>
+        </citation>
+      </ref>
+      <ref id="R47">
+        <label>47</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+          </person-group>
+          <source>Free Radic Biol Med</source>
+          <year>2003</year>
+          <volume>34</volume>
+          <fpage>1589</fpage>
+          <lpage>98</lpage>
+          <pub-id pub-id-type="pmid">12788478</pub-id>
+        </citation>
+      </ref>
+      <ref id="R48">
+        <label>48</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+            <name>
+              <surname>Nagase</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Day</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Das</surname>
+              <given-names>DK</given-names>
+            </name>
+          </person-group>
+          <source>J Mol Cell Cardiol</source>
+          <year>2004</year>
+          <volume>37</volume>
+          <fpage>1195</fpage>
+          <lpage>203</lpage>
+          <pub-id pub-id-type="pmid">15572049</pub-id>
+        </citation>
+      </ref>
+      <ref id="R49">
+        <label>49</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Oka</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Maillet</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Watt</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Schwartz</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Aronow</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Duncan</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Molkentin</surname>
+              <given-names>JD</given-names>
+            </name>
+          </person-group>
+          <source>Circ Res</source>
+          <year>2006</year>
+          <volume>98</volume>
+          <fpage>837</fpage>
+          <lpage>45</lpage>
+          <pub-id pub-id-type="pmid">16514068</pub-id>
+        </citation>
+      </ref>
+      <ref id="R50">
+        <label>50</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bisping</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Ikeda</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kong</surname>
+              <given-names>SW</given-names>
+            </name>
+            <name>
+              <surname>Tarnavski</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Bodyak</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>McMullen</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Rajagopal</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Son</surname>
+              <given-names>JK</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Springer</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Kang</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>Izumo</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Pu</surname>
+              <given-names>WT</given-names>
+            </name>
+          </person-group>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>2006</year>
+          <volume>103</volume>
+          <fpage>14471</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="pmid">16983087</pub-id>
+        </citation>
+      </ref>
+      <ref id="R51">
+        <label>51</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Park</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Nagase</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Vinod Kumar</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+          </person-group>
+          <source>Am J Physiol Heart Circ Physiol</source>
+          <year>2007</year>
+          <volume>292</volume>
+          <fpage>H751</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">17098826</pub-id>
+        </citation>
+      </ref>
+      <ref id="R52">
+        <label>52</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kobayashi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Lackey</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Huang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Bisping</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Pu</surname>
+              <given-names>WT</given-names>
+            </name>
+            <name>
+              <surname>Boxer</surname>
+              <given-names>LM</given-names>
+            </name>
+            <name>
+              <surname>Liang</surname>
+              <given-names>Q</given-names>
+            </name>
+          </person-group>
+          <source>FASEB J</source>
+          <year>2006</year>
+          <volume>20</volume>
+          <fpage>800</fpage>
+          <lpage>2</lpage>
+          <pub-id pub-id-type="pmid">16469847</pub-id>
+        </citation>
+      </ref>
+      <ref id="R53">
+        <label>53</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Huang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Wright</surname>
+              <given-names>CD</given-names>
+            </name>
+            <name>
+              <surname>Kobayashi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Healy</surname>
+              <given-names>CL</given-names>
+            </name>
+            <name>
+              <surname>Elgethun</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Cypher</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Liang</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>O’Connell</surname>
+              <given-names>TD</given-names>
+            </name>
+          </person-group>
+          <source>Am J Physiol Heart Circ Physiol</source>
+          <year>2008</year>
+          <volume>295</volume>
+          <fpage>H699</fpage>
+          <lpage>707</lpage>
+          <pub-id pub-id-type="pmid">18552157</pub-id>
+        </citation>
+      </ref>
+      <ref id="R54">
+        <label>54</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>He-nan</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Yan</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Miao-na</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Cai-hua</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Shen</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Yu-jie</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <source>Pathol Res Pract</source>
+          <year>2009</year>
+          <volume>205</volume>
+          <fpage>615</fpage>
+          <lpage>25</lpage>
+          <pub-id pub-id-type="pmid">19327894</pub-id>
+        </citation>
+      </ref>
+      <ref id="R55">
+        <label>55</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shan</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Cao</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Guo</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Que</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Ha</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <source>Int J Cardiol</source>
+          <year>2009</year>
+          <volume>134</volume>
+          <fpage>384</fpage>
+          <lpage>92</lpage>
+          <pub-id pub-id-type="pmid">18672303</pub-id>
+        </citation>
+      </ref>
+      <ref id="R56">
+        <label>56</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kyrönlahti</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Rämö</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Tamminen</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Unkila-Kallio</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Butzow</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Leminen</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Nemer</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Rahman</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Huhtaniemi</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Heikinheimo</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Anttonen</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <source>Endocrinology</source>
+          <year>2008</year>
+          <volume>149</volume>
+          <fpage>5635</fpage>
+          <lpage>42</lpage>
+          <pub-id pub-id-type="pmid">18653721</pub-id>
+        </citation>
+      </ref>
+      <ref id="R57">
+        <label>57</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jääskeläinen</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Nieminen</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Pökkylä</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Kauppinen</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Liakka</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Heikinheimo</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Vaskivuo</surname>
+              <given-names>TE</given-names>
+            </name>
+            <name>
+              <surname>Klefström</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Tapanainen</surname>
+              <given-names>JS</given-names>
+            </name>
+          </person-group>
+          <source>Mol Cell Endocrinol</source>
+          <year>2010</year>
+          <volume>330</volume>
+          <fpage>17</fpage>
+          <lpage>24</lpage>
+          <pub-id pub-id-type="pmid">20673843</pub-id>
+        </citation>
+      </ref>
+      <ref id="R58">
+        <label>58</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pikkarainen</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Tokola</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kerkelä</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Ruskoaho</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <source>Cardiovasc Res</source>
+          <year>2004</year>
+          <volume>63</volume>
+          <fpage>196</fpage>
+          <lpage>207</lpage>
+          <pub-id pub-id-type="pmid">15249177</pub-id>
+        </citation>
+      </ref>
+      <ref id="R59">
+        <label>59</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Molkentin</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Lu</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Antos</surname>
+              <given-names>CL</given-names>
+            </name>
+            <name>
+              <surname>Markham</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Richardson</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Robbins</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Grant</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Olson</surname>
+              <given-names>EN</given-names>
+            </name>
+          </person-group>
+          <source>Cell</source>
+          <year>1998</year>
+          <volume>93</volume>
+          <fpage>215</fpage>
+          <lpage>28</lpage>
+          <pub-id pub-id-type="pmid">9568714</pub-id>
+        </citation>
+      </ref>
+      <ref id="R60">
+        <label>60</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sussman</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Lim</surname>
+              <given-names>HW</given-names>
+            </name>
+            <name>
+              <surname>Gude</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Taigen</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Olson</surname>
+              <given-names>EN</given-names>
+            </name>
+            <name>
+              <surname>Robbins</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Colbert</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>Gualberto</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Wieczorek</surname>
+              <given-names>DF</given-names>
+            </name>
+            <name>
+              <surname>Molkentin</surname>
+              <given-names>JD</given-names>
+            </name>
+          </person-group>
+          <source>Science</source>
+          <year>1998</year>
+          <volume>281</volume>
+          <fpage>1690</fpage>
+          <lpage>3</lpage>
+          <pub-id pub-id-type="pmid">9733519</pub-id>
+        </citation>
+      </ref>
+      <ref id="R61">
+        <label>61</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>MacLennan</surname>
+              <given-names>DH</given-names>
+            </name>
+            <name>
+              <surname>Wong</surname>
+              <given-names>PT</given-names>
+            </name>
+          </person-group>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>1971</year>
+          <volume>68</volume>
+          <fpage>1231</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="pmid">4256614</pub-id>
+        </citation>
+      </ref>
+      <ref id="R62">
+        <label>62</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ikemoto</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Bhatnagar</surname>
+              <given-names>GM</given-names>
+            </name>
+            <name>
+              <surname>Nagy</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Gergely</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>1972</year>
+          <volume>247</volume>
+          <fpage>7835</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">4264137</pub-id>
+        </citation>
+      </ref>
+      <ref id="R63">
+        <label>63</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dolmetsch</surname>
+              <given-names>RE</given-names>
+            </name>
+            <name>
+              <surname>Lewis</surname>
+              <given-names>RS</given-names>
+            </name>
+            <name>
+              <surname>Goodnow</surname>
+              <given-names>CC</given-names>
+            </name>
+            <name>
+              <surname>Healy</surname>
+              <given-names>JI</given-names>
+            </name>
+          </person-group>
+          <source>Nature</source>
+          <year>1997</year>
+          <volume>386</volume>
+          <fpage>855</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">9126747</pub-id>
+        </citation>
+      </ref>
+      <ref id="R64">
+        <label>64</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Morad</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+          </person-group>
+          <source>Antioxid Redox Signal</source>
+          <year>2000</year>
+          <volume>2</volume>
+          <fpage>65</fpage>
+          <lpage>71</lpage>
+          <pub-id pub-id-type="pmid">11232602</pub-id>
+        </citation>
+      </ref>
+      <ref id="R65">
+        <label>65</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Goldhaber</surname>
+              <given-names>JI</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <source>J Physiol</source>
+          <year>1994</year>
+          <volume>477</volume>
+          <fpage>135</fpage>
+          <lpage>47</lpage>
+          <pub-id pub-id-type="pmid">8071880</pub-id>
+        </citation>
+      </ref>
+      <ref id="R66">
+        <label>66</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+            <name>
+              <surname>Cleemann</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Abernethy</surname>
+              <given-names>DR</given-names>
+            </name>
+            <name>
+              <surname>Morad</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <source>Free Radic Biol Med</source>
+          <year>1998</year>
+          <volume>24</volume>
+          <fpage>318</fpage>
+          <lpage>25</lpage>
+          <pub-id pub-id-type="pmid">9433907</pub-id>
+        </citation>
+      </ref>
+      <ref id="R67">
+        <label>67</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Morimoto</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Hasegawa</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Wada</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kakita</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Kaburagi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Yanazume</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sasayama</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>2001</year>
+          <volume>276</volume>
+          <fpage>34983</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">11435416</pub-id>
+        </citation>
+      </ref>
+      <ref id="R68">
+        <label>68</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sharma</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Masri</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Jo</surname>
+              <given-names>OD</given-names>
+            </name>
+            <name>
+              <surname>Bernath</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Martin</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Funk</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Gera</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>2007</year>
+          <volume>282</volume>
+          <fpage>9505</fpage>
+          <lpage>16</lpage>
+          <pub-id pub-id-type="pmid">17284439</pub-id>
+        </citation>
+      </ref>
+      <ref id="R69">
+        <label>69</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Crossley</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Orkin</surname>
+              <given-names>SH</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>1994</year>
+          <volume>269</volume>
+          <fpage>16589</fpage>
+          <lpage>96</lpage>
+          <pub-id pub-id-type="pmid">8206977</pub-id>
+        </citation>
+      </ref>
+      <ref id="R70">
+        <label>70</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Towatari</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>May</surname>
+              <given-names>GE</given-names>
+            </name>
+            <name>
+              <surname>Marais</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Perkins</surname>
+              <given-names>GR</given-names>
+            </name>
+            <name>
+              <surname>Marshall</surname>
+              <given-names>CJ</given-names>
+            </name>
+            <name>
+              <surname>Cowley</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Enver</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>1995</year>
+          <volume>270</volume>
+          <fpage>4101</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">7876160</pub-id>
+        </citation>
+      </ref>
+      <ref id="R71">
+        <label>71</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kitta</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Clément</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Remeika</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Blumberg</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+          </person-group>
+          <source>Biochem J</source>
+          <year>2001</year>
+          <volume>359</volume>
+          <fpage>375</fpage>
+          <lpage>80</lpage>
+          <pub-id pub-id-type="pmid">11583584</pub-id>
+        </citation>
+      </ref>
+      <ref id="R72">
+        <label>72</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liang</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Wiese</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Bueno</surname>
+              <given-names>OF</given-names>
+            </name>
+            <name>
+              <surname>Dai</surname>
+              <given-names>YS</given-names>
+            </name>
+            <name>
+              <surname>Markham</surname>
+              <given-names>BE</given-names>
+            </name>
+            <name>
+              <surname>Molkentin</surname>
+              <given-names>JD</given-names>
+            </name>
+          </person-group>
+          <source>Mol Cell Biol</source>
+          <year>2001</year>
+          <volume>21</volume>
+          <fpage>7460</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">11585926</pub-id>
+        </citation>
+      </ref>
+      <ref id="R73">
+        <label>73</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kerkela</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Pikkarainen</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Majalahti-Palviainen</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Tokola</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Ruskoaho</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>2002</year>
+          <volume>277</volume>
+          <fpage>13752</fpage>
+          <lpage>60</lpage>
+          <pub-id pub-id-type="pmid">11827958</pub-id>
+        </citation>
+      </ref>
+      <ref id="R74">
+        <label>74</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Charron</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Tsimiklis</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Arcand</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Robitaille</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Liang</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Molkentin</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Meloche</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Nemer</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <source>Genes Develop</source>
+          <year>2001</year>
+          <volume>15</volume>
+          <fpage>2702</fpage>
+          <lpage>19</lpage>
+          <pub-id pub-id-type="pmid">11641276</pub-id>
+        </citation>
+      </ref>
+      <ref id="R75">
+        <label>75</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tenhunen</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Sármán</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Kerkelä</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Szokodi</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Papp</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Tóth</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ruskoaho</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <volume>279</volume>
+          <fpage>24852</fpage>
+          <lpage>24860</lpage>
+          <year>2004</year>
+          <pub-id pub-id-type="pmid">15051723</pub-id>
+        </citation>
+      </ref>
+      <ref id="R76">
+        <label>76</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kerkelä</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Ilves</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Pikkarainen</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Tokola</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Ronkainen</surname>
+              <given-names>VP</given-names>
+            </name>
+            <name>
+              <surname>Majalahti</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Leppäluoto</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Vuolteenaho</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Ruskoaho</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <source>Am J Physiol Regul Integr Comp Physiol</source>
+          <year>2011</year>
+          <volume>300</volume>
+          <fpage>R140</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">21084678</pub-id>
+        </citation>
+      </ref>
+      <ref id="R77">
+        <label>77</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yanazume</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Hasegawa</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Wada</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Morimoto</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Abe</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kawamura</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sasayama</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>2002</year>
+          <volume>277</volume>
+          <fpage>8618</fpage>
+          <lpage>25</lpage>
+          <pub-id pub-id-type="pmid">11739382</pub-id>
+        </citation>
+      </ref>
+      <ref id="R78">
+        <label>78</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+            <name>
+              <surname>Day</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Fanburg</surname>
+              <given-names>BL</given-names>
+            </name>
+          </person-group>
+          <source>Circ Res</source>
+          <year>2004</year>
+          <volume>95</volume>
+          <fpage>579</fpage>
+          <lpage>86</lpage>
+          <pub-id pub-id-type="pmid">15297378</pub-id>
+        </citation>
+      </ref>
+      <ref id="R79">
+        <label>79</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Morisco</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Seta</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Hardt</surname>
+              <given-names>SE</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Vatner</surname>
+              <given-names>SF</given-names>
+            </name>
+            <name>
+              <surname>Sadoshima</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>2001</year>
+          <volume>276</volume>
+          <fpage>28586</fpage>
+          <lpage>97</lpage>
+          <pub-id pub-id-type="pmid">11382772</pub-id>
+        </citation>
+      </ref>
+      <ref id="R80">
+        <label>80</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Condorelli</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Drusco</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Stassi</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Bellacosa</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Roncarati</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Iaccarino</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Russo</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Gu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Dalton</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Chung</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Latronico</surname>
+              <given-names>MV</given-names>
+            </name>
+            <name>
+              <surname>Napoli</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Sadoshima</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Croce</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Ross</surname>
+              <given-names>J</given-names>
+              <suffix>Jr</suffix>
+            </name>
+          </person-group>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>2002</year>
+          <volume>99</volume>
+          <fpage>12333</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">12237475</pub-id>
+        </citation>
+      </ref>
+      <ref id="R81">
+        <label>81</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kerkela</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Kockeritz</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Macaulay</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Doble</surname>
+              <given-names>BW</given-names>
+            </name>
+            <name>
+              <surname>Beahm</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Greytak</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Woulfe</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Trivedi</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Woodgett</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Epstein</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Force</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Huggins</surname>
+              <given-names>GS</given-names>
+            </name>
+          </person-group>
+          <source>J Clin Invest</source>
+          <year>2008</year>
+          <volume>118</volume>
+          <fpage>3609</fpage>
+          <lpage>18</lpage>
+          <pub-id pub-id-type="pmid">18830417</pub-id>
+        </citation>
+      </ref>
+      <ref id="R82">
+        <label>82</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chandrasekar</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Mummidi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Claycomb</surname>
+              <given-names>WC</given-names>
+            </name>
+            <name>
+              <surname>Mestril</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Nemer</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>2005</year>
+          <volume>280</volume>
+          <fpage>4553</fpage>
+          <lpage>67</lpage>
+          <pub-id pub-id-type="pmid">15574430</pub-id>
+        </citation>
+      </ref>
+      <ref id="R83">
+        <label>83</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Naito</surname>
+              <given-names>AT</given-names>
+            </name>
+            <name>
+              <surname>Tominaga</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Oyamada</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Oyamada</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Shiraishi</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Monzen</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Komuro</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Takamatsu</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <source>Exp Cell Res</source>
+          <year>2003</year>
+          <volume>291</volume>
+          <fpage>56</fpage>
+          <lpage>69</lpage>
+          <pub-id pub-id-type="pmid">14597408</pub-id>
+        </citation>
+      </ref>
+      <ref id="R84">
+        <label>84</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tremblay</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Hamel</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Viger</surname>
+              <given-names>RS</given-names>
+            </name>
+          </person-group>
+          <source>Endocrinology</source>
+          <year>2002</year>
+          <volume>143</volume>
+          <fpage>3935</fpage>
+          <lpage>45</lpage>
+          <pub-id pub-id-type="pmid">12239105</pub-id>
+        </citation>
+      </ref>
+      <ref id="R85">
+        <label>85</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tremblay</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Viger</surname>
+              <given-names>RS</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>2003</year>
+          <volume>278</volume>
+          <fpage>22128</fpage>
+          <lpage>35</lpage>
+          <pub-id pub-id-type="pmid">12670947</pub-id>
+        </citation>
+      </ref>
+      <ref id="R86">
+        <label>86</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Freiman</surname>
+              <given-names>RN</given-names>
+            </name>
+            <name>
+              <surname>Tjian</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <source>Cell</source>
+          <year>2003</year>
+          <volume>112</volume>
+          <fpage>11</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">12526789</pub-id>
+        </citation>
+      </ref>
+      <ref id="R87">
+        <label>87</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boyes</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Byfield</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Nakatani</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Ogryzko</surname>
+              <given-names>V</given-names>
+            </name>
+          </person-group>
+          <source>Nature</source>
+          <year>1998</year>
+          <volume>396</volume>
+          <fpage>594</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">9859997</pub-id>
+        </citation>
+      </ref>
+      <ref id="R88">
+        <label>88</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hayakawa</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Towatari</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ozawa</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Tomita</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Privalsky</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Saito</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <source>J Leukoc Biol</source>
+          <year>2004</year>
+          <volume>75</volume>
+          <fpage>529</fpage>
+          <lpage>40</lpage>
+          <pub-id pub-id-type="pmid">15001660</pub-id>
+        </citation>
+      </ref>
+      <ref id="R89">
+        <label>89</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yamagata</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Mitani</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Oda</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Honda</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Asai</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Maki</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Nakamoto</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Hirai</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <source>EMBO J</source>
+          <year>2000</year>
+          <volume>19</volume>
+          <fpage>4676</fpage>
+          <lpage>87</lpage>
+          <pub-id pub-id-type="pmid">10970860</pub-id>
+        </citation>
+      </ref>
+      <ref id="R90">
+        <label>90</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yanazume</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Hasegawa</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Morimoto</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Kawamura</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Wada</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Matsumori</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Kawase</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Hirai</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kita</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <source>Mol Cell Biol</source>
+          <year>2003</year>
+          <volume>23</volume>
+          <fpage>3593</fpage>
+          <lpage>606</lpage>
+          <pub-id pub-id-type="pmid">12724418</pub-id>
+        </citation>
+      </ref>
+      <ref id="R91">
+        <label>91</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Morimoto</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sunagawa</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Kawamura</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Takaya</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Wada</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Nagasawa</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Komeda</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Fujita</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Shimatsu</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Kita</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Hasegawa</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <source>J Clin Invest</source>
+          <year>2008</year>
+          <volume>118</volume>
+          <fpage>868</fpage>
+          <lpage>78</lpage>
+          <pub-id pub-id-type="pmid">18292809</pub-id>
+        </citation>
+      </ref>
+      <ref id="R92">
+        <label>92</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kawamura</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Ono</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Morimoto</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Wada</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Hirai</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hidaka</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Morisaki</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Heike</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Nakahata</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Kita</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Hasegawa</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>2005</year>
+          <volume>280</volume>
+          <fpage>19682</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">15764815</pub-id>
+        </citation>
+      </ref>
+      <ref id="R93">
+        <label>93</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Takaya</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Kawamura</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Morimoto</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Ono</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Kita</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Shimatsu</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Hasegawa</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>2008</year>
+          <volume>283</volume>
+          <fpage>9828</fpage>
+          <lpage>35</lpage>
+          <pub-id pub-id-type="pmid">18252717</pub-id>
+        </citation>
+      </ref>
+      <ref id="R94">
+        <label>94</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sunagawa</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Morimoto</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Takaya</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Kaichi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Wada</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kawamura</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Fujita</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Shimatsu</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Kita</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Hasegawa</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>2010</year>
+          <volume>285</volume>
+          <fpage>9556</fpage>
+          <lpage>68</lpage>
+          <pub-id pub-id-type="pmid">20081228</pub-id>
+        </citation>
+      </ref>
+      <ref id="R95">
+        <label>95</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Trivedi</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Jia</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Kee</surname>
+              <given-names>HJ</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Hannenhalli</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Epstein</surname>
+              <given-names>JA</given-names>
+            </name>
+          </person-group>
+          <source>Dev Cell</source>
+          <year>2010</year>
+          <volume>19</volume>
+          <fpage>450</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">20833366</pub-id>
+        </citation>
+      </ref>
+      <ref id="R96">
+        <label>96</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Komatsu</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Mizusaki</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Mukai</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Ogawa</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Baba</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Shirakawa</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hatakeyama</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Nakayama</surname>
+              <given-names>KI</given-names>
+            </name>
+            <name>
+              <surname>Yamamoto</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kikuchi</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Morohashi</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <source>Mol Endocrinol</source>
+          <year>2004</year>
+          <volume>18</volume>
+          <fpage>2451</fpage>
+          <lpage>62</lpage>
+          <pub-id pub-id-type="pmid">15192080</pub-id>
+        </citation>
+      </ref>
+      <ref id="R97">
+        <label>97</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Feng</surname>
+              <given-names>XH</given-names>
+            </name>
+            <name>
+              <surname>Schwartz</surname>
+              <given-names>RJ</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>2004</year>
+          <volume>279</volume>
+          <fpage>49091</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">15337742</pub-id>
+        </citation>
+      </ref>
+      <ref id="R98">
+        <label>98</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xia</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>McMillin</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Lewis</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Moore</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>WG</given-names>
+            </name>
+            <name>
+              <surname>Williams</surname>
+              <given-names>RS</given-names>
+            </name>
+            <name>
+              <surname>Kellems</surname>
+              <given-names>RE</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>2000</year>
+          <volume>275</volume>
+          <fpage>1855</fpage>
+          <lpage>63</lpage>
+          <pub-id pub-id-type="pmid">10636885</pub-id>
+        </citation>
+      </ref>
+      <ref id="R99">
+        <label>99</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bär</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kreuzer</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Cojoc</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Jahn</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <source>Basic Res Cardiol</source>
+          <year>2003</year>
+          <volume>98</volume>
+          <fpage>285</fpage>
+          <lpage>94</lpage>
+          <pub-id pub-id-type="pmid">12955401</pub-id>
+        </citation>
+      </ref>
+      <ref id="R100">
+        <label>100</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Park</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Wong</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Jelinkova</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Nagase</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+          </person-group>
+          <source>Hypertension</source>
+          <year>2010</year>
+          <volume>56</volume>
+          <fpage>1145</fpage>
+          <lpage>51</lpage>
+          <pub-id pub-id-type="pmid">21059997</pub-id>
+        </citation>
+      </ref>
+      <ref id="R101">
+        <label>101</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Park</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Nagase</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Vinod Kumar</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+          </person-group>
+          <source>Am J Physiol Heart Circ Physiol</source>
+          <year>2007</year>
+          <volume>292</volume>
+          <fpage>H751</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">17098826</pub-id>
+        </citation>
+      </ref>
+      <ref id="R102">
+        <label>102</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nagase</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Vinod Kumar</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Szwergold</surname>
+              <given-names>NR</given-names>
+            </name>
+            <name>
+              <surname>Day</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+          </person-group>
+          <source>Proc Am Thorac Soc</source>
+          <volume>3</volume>
+          <fpage>A686</fpage>
+          <year>2006</year>
+        </citation>
+      </ref>
+      <ref id="R103">
+        <label>103</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+            <name>
+              <surname>Nagase</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Wong</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Kumar</surname>
+              <given-names>SV</given-names>
+            </name>
+            <name>
+              <surname>Jain</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Park</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Day</surname>
+              <given-names>RM</given-names>
+            </name>
+          </person-group>
+          <source>Am J Respir Cell Mol Biol</source>
+          <year>2007</year>
+          <volume>36</volume>
+          <fpage>678</fpage>
+          <lpage>87</lpage>
+          <pub-id pub-id-type="pmid">17272823</pub-id>
+        </citation>
+      </ref>
+      <ref id="R104">
+        <label>104</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ohara</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Atarashi</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Ishibashi</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Ohashi-Kobayashi</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Maeda</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <source>Biol Pharm Bull</source>
+          <year>2006</year>
+          <volume>29</volume>
+          <fpage>410</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">16508137</pub-id>
+        </citation>
+      </ref>
+      <ref id="R105">
+        <label>105</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Park</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Nagase</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Vinod Kumar</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Szwergold</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Wong</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+          </person-group>
+          <source>Cardiovasc Res</source>
+          <year>2011</year>
+          <comment>(in press)</comment>
+        </citation>
+      </ref>
+      <ref id="R106">
+        <label>106</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Park</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <source>Am J Respir Crit Care Med</source>
+          <volume>179</volume>
+          <fpage>A5359</fpage>
+          <year>2009</year>
+          <comment>(Abstract)</comment>
+        </citation>
+      </ref>
+      <ref id="R107">
+        <label>107</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+            <name>
+              <surname>Forman</surname>
+              <given-names>HJ</given-names>
+            </name>
+            <name>
+              <surname>Sevanian</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <source>Free Radic Biol Med</source>
+          <year>1997</year>
+          <volume>22</volume>
+          <fpage>269</fpage>
+          <lpage>85</lpage>
+          <pub-id pub-id-type="pmid">8958153</pub-id>
+        </citation>
+      </ref>
+      <ref id="R108">
+        <label>108</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Perlman</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Simonson</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>RC</given-names>
+            </name>
+            <name>
+              <surname>Walsh</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>1998</year>
+          <volume>273</volume>
+          <fpage>13713</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">9593712</pub-id>
+        </citation>
+      </ref>
+      <ref id="R109">
+        <label>109</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mano</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Luo</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Malendowicz</surname>
+              <given-names>SL</given-names>
+            </name>
+            <name>
+              <surname>Evans</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Walsh</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <source>Circ Res</source>
+          <year>1999</year>
+          <volume>84</volume>
+          <fpage>647</fpage>
+          <lpage>54</lpage>
+          <pub-id pub-id-type="pmid">10189352</pub-id>
+        </citation>
+      </ref>
+      <ref id="R110">
+        <label>110</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+            <name>
+              <surname>Day</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Tan</surname>
+              <given-names>CC</given-names>
+            </name>
+            <name>
+              <surname>Sandven</surname>
+              <given-names>TH</given-names>
+            </name>
+            <name>
+              <surname>Liang</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Molkentin</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Fanburg</surname>
+              <given-names>BL</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <year>2003</year>
+          <volume>278</volume>
+          <fpage>17525</fpage>
+          <lpage>31</lpage>
+          <pub-id pub-id-type="pmid">12615926</pub-id>
+        </citation>
+      </ref>
+      <ref id="R111">
+        <label>111</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lawrie</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Spiekerkoetter</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Martinez</surname>
+              <given-names>EC</given-names>
+            </name>
+            <name>
+              <surname>Ambartsumian</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Sheward</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>MacLean</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Harmar</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Schmidt</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Lukanidin</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Rabinovitch</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <source>Circ Res</source>
+          <year>2005</year>
+          <volume>97</volume>
+          <fpage>227</fpage>
+          <lpage>35</lpage>
+          <pub-id pub-id-type="pmid">16002749</pub-id>
+        </citation>
+      </ref>
+      <ref id="R112">
+        <label>112</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wong</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Marcocci</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+          </person-group>
+          <source>Am J Resp Crit Care Med</source>
+          <year>2010</year>
+          <volume>181</volume>
+          <fpage>A6376</fpage>
+          <comment>(Abstract)</comment>
+        </citation>
+      </ref>
+      <ref id="R113">
+        <label>113</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+            <name>
+              <surname>Mizuno</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Packer</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <source>J Immunol</source>
+          <year>1994</year>
+          <volume>153</volume>
+          <fpage>5008</fpage>
+          <lpage>15</lpage>
+          <pub-id pub-id-type="pmid">7963561</pub-id>
+        </citation>
+      </ref>
+      <ref id="R114">
+        <label>114</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kitta</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Day</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Remeika</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Blumberg</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+          </person-group>
+          <source>Antioxid Redox Signal</source>
+          <year>2001</year>
+          <volume>3</volume>
+          <fpage>911</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">11761336</pub-id>
+        </citation>
+      </ref>
+      <ref id="R115">
+        <label>115</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Clément</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Tan</surname>
+              <given-names>CC</given-names>
+            </name>
+            <name>
+              <surname>Guo</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kitta</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>YJ</given-names>
+            </name>
+          </person-group>
+          <source>Free Radic Biol Med</source>
+          <year>2002</year>
+          <volume>32</volume>
+          <fpage>341</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">11841924</pub-id>
+        </citation>
+      </ref>
+    </ref-list>
+    <fn-group>
+      <fn id="FN2">
+        <p content-type="publisher-disclaimer">This is a PDF file of an unedited manuscript that has been accepted for publication. As a service to our customers we are providing this early version of the manuscript. The manuscript will undergo copyediting, typesetting, and review of the resulting proof before it is published in its final citable form. Please note that during the production process errors may be discovered which could affect the content, and all legal disclaimers that apply to the journal pertain.</p>
+      </fn>
+    </fn-group>
+  </back>
+</article>

@@ -1,0 +1,28 @@
+pmid,pipeline,final_answer,suggested_fix
+18686186,pk_summary,NoTable,N/A
+18686186,pk_specimen_summary,Correct,All values match.
+18686186,pk_drug_summary,Correct,All values match.
+18686186,pk_population_summary,Correct,All values match.
+18689369,N/A,Neither,N/A
+18694901,pk_summary,NoTable,N/A
+18694901,pk_drug_summary,Correct,All values match.
+18694901,pk_population_summary,Correct,All values match.
+18701886,pk_summary,NoTable,N/A
+18701886,pk_individual,Correct,All values match.
+18701886,pk_specimen_summary,Correct,All values match.
+18701886,pk_drug_summary,Correct,All values match.
+18701886,pk_population_summary,NoTable,N/A
+18701886,pk_specimen_individual,Correct,All values match.
+18701886,pk_drug_individual,Correct,All values match.
+18701886,pk_population_individual,NoTable,N/A
+18715278,N/A,Neither,N/A
+18715556,N/A,Neither,N/A
+18718657,N/A,Neither,N/A
+18753646,N/A,Neither,N/A
+18758393,pk_summary,Correct,All values match.
+18758393,pk_specimen_summary,Correct,All values match.
+18758393,pk_drug_summary,NoTable,N/A
+18762498,pk_summary,NoTable,N/A
+18762498,pk_specimen_summary,Correct,All values match.
+18762498,pk_drug_summary,PipelineError,N/A
+18762498,pk_population_summary,Correct,All values match.

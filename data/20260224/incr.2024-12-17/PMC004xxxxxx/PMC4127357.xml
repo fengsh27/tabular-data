@@ -1,0 +1,1184 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">101139554</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">27040</journal-id>
+      <journal-id journal-id-type="nlm-ta">J Chromatogr B Analyt Technol Biomed Life Sci</journal-id>
+      <journal-id journal-id-type="iso-abbrev">J. Chromatogr. B Analyt. Technol. Biomed. Life Sci.</journal-id>
+      <journal-title-group>
+        <journal-title>Journal of chromatography. B, Analytical technologies in the biomedical and life sciences</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1570-0232</issn>
+      <issn pub-type="epub">1873-376X</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">24704183</article-id>
+      <article-id pub-id-type="pmc">4127357</article-id>
+      <article-id pub-id-type="doi">10.1016/j.jchromb.2014.03.016</article-id>
+      <article-id pub-id-type="manuscript">NIHMS582385</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>The identification of a novel SIRT6 modulator from <italic>Trigonella foenum-graecum</italic> using ligand fishing with protein coated magnetic beads<sup><xref ref-type="fn" rid="FN2">☆</xref></sup></article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Singh</surname>
+            <given-names>N.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">a</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ravichandran</surname>
+            <given-names>S.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A2">b</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Spelman</surname>
+            <given-names>K.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A3">c</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Fugmann</surname>
+            <given-names>S.D.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A4">d</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Moaddel</surname>
+            <given-names>R.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">a</xref>
+          <xref rid="FN1" ref-type="author-notes">*</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>a</label>Biomedical Research Center, National institute on Aging, National Institutes of Health, 251 Bayview Boulevard, Suite 100, Baltimore, MD 21224, USA</aff>
+      <aff id="A2"><label>b</label>Advanced Biomedical Computing Center, Information Systems Program, Frederick National Laboratory for Cancer Research (FNLCR), Frederick, MD 21702, USA</aff>
+      <aff id="A3"><label>c</label>Health, Education &amp; Research in Botanical Medicine, 2209 Dollarhide Way, Ashland, OR 97520, USA</aff>
+      <aff id="A4"><label>d</label>Department of Biomedical Sciences, Chang Gung University, 259 Wen-Hwa 1st Road, Kwei-Shan, Taiwan</aff>
+      <author-notes>
+        <corresp id="FN1"><label>*</label>Corresponding author at: Bioanalytical and Drug Discovery Unit, Laboratory of Clinical Investigation, National Institute on Aging, National Institutes of Health, Biomedical Research Center, 251 Bayview Boulevard, Suite 100, Baltimore, MD 21224-6825, USA. Tel.: +1 410 558 8294. <email>moaddelru@grc.nia.nih.gov</email> (R. Moaddel)</corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>2</day>
+        <month>6</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>15</day>
+        <month>3</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <day>1</day>
+        <month>10</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>01</day>
+        <month>10</month>
+        <year>2015</year>
+      </pub-date>
+      <volume>0</volume>
+      <fpage>105</fpage>
+      <lpage>111</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P1">SIRT6 is a histone deacetylase that has been proposed as a potential therapeutic target for metabolic disorders and the prevention of age-associated diseases. Thus the identification of compounds that modulate SIRT6 activity could be of great therapeutic importance. We have previously developed an H3K9 deacetylation guided assay with SIRT6 coated magnetic beads (SIRT6-MB). With the developed assay, we identified quercetin, naringenin and vitexin as SIRT6 inhibitors from <italic>T. foenum-graecum</italic> seed extract using a candidate approach. Currently, the predominant method for the identification of active compounds from a plant extract is carried out through a dereplication process. A novel targeted approach for the direct identification of active compounds from a complex matrix could save time and resources. Herein, we report the application of the SIRT6-MB for ‘fishing’ experiments utilizing <italic>T. foenum-graecum</italic> seed extract. In which orientin, and seventeen other compounds were identified as SIRT6 binders. This is the first use of this method for ‘fishing’ out active ligands from a botanical matrix, and sets the basis for the identification of active compounds from a complex matrix.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>SIRT6</kwd>
+        <kwd>Fenugreek seed extract</kwd>
+        <kwd>Orientin</kwd>
+        <kwd>Ligand fishing</kwd>
+        <kwd>Magnetic beads</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="S1">
+      <title>1. Introduction</title>
+      <p id="P2"><italic>Trigonella foenum-graecum</italic> L. (fenugreek, Fabaceae) is extensively cultivated as a food crop in India, the Mediterranean regions, North Africa and Yemen [<xref rid="R1" ref-type="bibr">1</xref>]. Besides culinary use, <italic>T. foenum-graecum</italic> has been used as a remedy for cough, to soften boils [<xref rid="R2" ref-type="bibr">2</xref>], to prevent anemia [<xref rid="R3" ref-type="bibr">3</xref>], to promote lactation and as a yang tonic [<xref rid="R4" ref-type="bibr">4</xref>]. However, it is perhaps best known in modern phytotherapy for its use in diabetes [<xref rid="R5" ref-type="bibr">5</xref>,<xref rid="R6" ref-type="bibr">6</xref>].</p>
+      <p id="P3">Human studies of <italic>T. foenum-graecum</italic> have demonstrated a decrease in blood glucose from water extracts of the seed [<xref rid="R7" ref-type="bibr">7</xref>-<xref rid="R9" ref-type="bibr">9</xref>] and favorable effects on serum lipids [<xref rid="R9" ref-type="bibr">9</xref>,<xref rid="R10" ref-type="bibr">10</xref>]. In addition, a meta-analysis has suggested that <italic>T. foenum-graecum</italic> seed may improve glycemic control in type 2 diabetes [<xref rid="R11" ref-type="bibr">11</xref>]. While the mechanisms of action of these effects are not currently established, multiple constituents: the fiber, gum [<xref rid="R12" ref-type="bibr">12</xref>], saponins [<xref rid="R13" ref-type="bibr">13</xref>], guanides [<xref rid="R14" ref-type="bibr">14</xref>] and 4-hydroxy isoleucine [<xref rid="R15" ref-type="bibr">15</xref>] are suggested to be responsible.</p>
+      <p id="P4">Sirtuins are a family of NAD+-dependent histone deacetylases (HDACs) that have been implicated to be important regulators in the aging process, cancers and metabolic diseases [<xref rid="R16" ref-type="bibr">16</xref>]. SIRT6 knockout mice show a premature aging phenotype and shortened lifespan, developing several acute degenerative processes by three weeks of age, including decreased serum glucose and insulin-like growth factor 1 (IGF-1) levels [<xref rid="R17" ref-type="bibr">17</xref>]. SIRT6 also has a role in glycolysis, where activation of SIRT6 reduces glycolytic activity and controls the expression of multiple glycolytic genes [<xref rid="R18" ref-type="bibr">18</xref>,<xref rid="R19" ref-type="bibr">19</xref>]. Recent evidence, points to SIRT6 as a master regulator of glucose homeostasis and a target for the treatment of obesity and insulin resistant diabetes [<xref rid="R19" ref-type="bibr">19</xref>,<xref rid="R20" ref-type="bibr">20</xref>]. In animal models, SIRT6 activity suppresses gluconeogenesis and normalizes glycemia [<xref rid="R20" ref-type="bibr">20</xref>].</p>
+      <p id="P5">In previous research using H3K9 deacetylation guided assay, we demonstrated that the flavonoids quercetin and vitexin, contained within <italic>T. foenum-graecum</italic> seed extract (TFGExt), were SIRT6 modulators. While they inhibited deacetylation of H3K9Ac, quercetin and vitexin did not have the same level of inhibition as 1% fenugreek seed extract, suggesting that there were additional, and as of yet, unidentified modulators of SIRT6 in the extract. Considering the use of TFGExt in Type II diabetes, the identification of novel modulators of SIRT6 activity from TFGExt could be beneficial.</p>
+      <p id="P6">Currently, the identification of active compounds is carried out through a dereplication process, where bioassays of plant extracts are used to identify and isolate the active compounds through a bioassay-guided fractionation process [<xref rid="R21" ref-type="bibr">21</xref>]. While dereplication has been proven effective, an active compound that is only present in minute quantities could be missed.</p>
+      <p id="P7">A novel targeted approach is the direct identification of active compounds for a target from a complex matrix using a protein-coated bead. We have previously demonstrated the success of this approach with Acetylcholine esterase (AChE). In that study, AChE was immobilized onto the surface of magnetic beads, and the protein coated magnetic beads were used to fish out active compounds from <italic>Melodinus fusiformis</italic>, which lead to the identification of an inhibitor of AChE [<xref rid="R22" ref-type="bibr">22</xref>].</p>
+      <p id="P8">In this manuscript, SIRT6 was immobilized onto the surface of magnetic beads in an attempt to identify additional ligands from the crude plant extract, TFGExt, that possess SIRT6 activity. Herein, we report for the first time, the use of SIRT6-coated magnetic bead for the isolation of novel modulators from TFGExt and the identification of orientin as a novel SIRT6 inhibitor.</p>
+    </sec>
+    <sec id="S2">
+      <title>2. Materials and methods</title>
+      <sec id="S3">
+        <title>2.1. Materials</title>
+        <p id="P9">2-(N-morpholino)ethanesulfonic acid (MES) was purchased from EMD-Calbiochem (Gibbstown, NJ). 1-Ethyl-3-(3-methylaminopropyl)carbodiimide (EDC), gluteraldehyde, hydroxylamine hydrochloride, Dithiothreitol (DTT) potassium phosphate dibasic, pyridine (99.8%), sodium azide, sodium cyanoborohydride, sodium chloride, tryptone, yeast extract, glucose, β-mercaptoethanol, EDTA, Isopropyl β-<sc>d</sc>-1-thiogalactopyranoside (IPTG), trizma base, calcium chloride, glycerol and sodium phosphate monobasic, quercetin, vitexin, naringenin, orientin were obtained from Sigma–Aldrich Chemical Co. (Milwaukee, WI). Species verification of lot number 401255 (<italic>T. foenum-graecum</italic>) was from HerbPharm (Williams, OR). N-Hydroxysulfosuccinimide (Sulfo-NHS) was from Pierce (Rockford, IL). Solutions were prepared using purified water from a Millipore MilliQ system (Millipore Corporation, Bedford, MA). BcMag amine-terminated magnetic beads (50 mg/mL, 1 μm) were purchased from Bioclone, Inc. (San Diego, CA). The manual magnetic separator Dynal MPC-S was from Invitrogen Corporation (Carlsbad, CA).</p>
+      </sec>
+      <sec id="S4">
+        <title>2.2. Expression and purification of GST-tagged SIRT6 proteins in E. coli</title>
+        <p id="P10">Recombinant SIRT6 protein was expressed in E. coli (BL21, Rosetta strain, Novagen) and purified as previously described [<xref rid="R23" ref-type="bibr">23</xref>]. In brief, an overnight 5 mL culture of a single bacterial colony harboring the pGEX SIRT6 plasmid was used to inoculate 1 L of Luria Broth medium (10 g/L tryptone, 5 g/L yeast extract, 10 g/L NaCl, pH = 7.0) containing 2 g/L glucose. The cultures were grown at 37 °C and 200 rpm, and protein production was induced by adding 50 μM IPTG. After 3 h the bacteria were pelleted and flash frozen. Bacterial pellets were resuspended in 12.5 mL ice-cold lysis buffer (20 mM Tris pH = 8.0, 200 mM NaCl, 1 mM EDTA, 5 mM β-mercaptoethanol, 10% glycerol) including protease inhibitors and lysed by sonication (3× 15 s bursts with 30 s intervals on ice using a Branson digital sonifier). The GST-SIRT6 fusion proteins were bound to 400 μL glutathione sepharose resin (GE Healthcare) for 2 h at 4 °C on a rotator. The resin was washed twice with ice-cold lysis buffer, twice with ice-cold cleavage buffer (20 mM Tris pH 8.0, 150 mM NaCl, 1 mM CaCl<sub>2</sub>, 5 mM β-mercaptoethanol, 10% glycerol), and finally resuspended in 600 μL of cleavage buffer. The SIRT6 protein was released from the resin be adding 4 μL of thrombin (1 U/μL, Novagen) and incubation at 4 °C overnight. The resin was pelleted and the supernatant was added to 50 μL benzamidine-agarose (Sigma). After 30 min at room temperature, the agarose was pelleted and the supernatant was further purified using a Superose 6 column in an AKTA FPLC system (GE Healthcare). Fractions containing monomeric SIRT6 protein were pooled and dialyzed overnight against 1× PBS + 20% glycerol, and finally stored as frozen aliquots at −80 °C.</p>
+      </sec>
+      <sec id="S5">
+        <title>2.3. Immobilization of SIRT6 onto the surface of magnetic beads</title>
+        <p id="P11">The amine groups on the BcMag beads and the SIRT-6 protein were linked by a previously described method [<xref rid="R24" ref-type="bibr">24</xref>]. Briefly, 0.5 mL (25 mg) of BcMag beads were rinsed with 1 mL of MES [100 mM, pH 5.5] in a 2 mL microcentrifuge tube. After magnetic separation, the supernatant was discarded, and the BcMag beads were suspended in 300 μL of MES [100 mM, pH 5.5] and 260 μg of SIRT6 protein. Fifty microliters of a mixture of 10 mg of EDC and 15 mg of sulfo-NHS in 1 mL of water were added and the mixture was vortex-mixed for 5 min and left for 3 h at 4 °C with gentle rotation. This was followed by the addition of 20 μL of 1 M hydroxylamine, and the mixture was left for 30 min at 4 °C with gentle rotation. The supernatant was discarded and the SIRT6-MB was rinsed three times with 1 mL of storage buffer (phosphate buffer [10 mM, pH7.4] containing 150 mM NaCl and 0.02% sodium azide). Histone deacetylation assay by mass spectrometry [<xref rid="R23" ref-type="bibr">23</xref>] was carried out to confirm the activity of immobilized SIRT6. For the control-MBs, SIRT6 was not added.</p>
+      </sec>
+      <sec id="S6">
+        <title>2.4. T. foenum-graecum seed extract preparation</title>
+        <p id="P12">Species verification of lot number 401255 (Herb Pharm, Williams, OR) of organic <italic>T. foenum-graecum semen</italic> was performed by macroscopic and microscopic examination and HPTLC analysis. A typical protocol for the manufacture of ethanolic extracts was followed for plant extractions [<xref rid="R25" ref-type="bibr">25</xref>]. <italic>T. foenum-graecum</italic> seed was extracted by maceration for 3 weeks at 1:2.5 ratio at 72% ethanol, ratio expressed as mass raw plant material (<italic>T. foenum-graecum</italic> seed) in weight (g) per volume (mL) of extraction solvent.</p>
+      </sec>
+      <sec id="S7">
+        <title>2.5. Fingerprinting of Trigonella foenum-graecum extract by mass spectrometry</title>
+        <p id="P13">A previously described method [<xref rid="R26" ref-type="bibr">26</xref>] for separation of polyphenols was used to establish a fingerprint for the TFGExt. Briefly, 1% (v/v) TFGExt was analyzed by mass spectrometry using a system composed of an Agilent Technologies 1100 LC/MSD equipped with a G1322A degasser, G1312A binary pump, G1367A autosampler, G1316A column thermostat, G1315A diode array detector and G1946D mass spectrometer equipped with an electrospray ionization (ESI) interface. Selected ion monitoring (SIM) chromatograms were acquired using Chemstation software, Rev. A.10.02. For the separation of the polyphenols, a reversed-phase Varian Pursuit XRs C18 analytical column (250 mm × 4.6 mm id, 5 μm particles) was used. The column was operated at 25 °C. Gradient elution was used for the separation. The two solvents used to make the gradient were (A) 25% methanol in 1% acetic acid, and (B) 75% methanol in 1% acetic acid. The solvent gradient in volumetric ratios of solvents A and B was as follows:0–30 min, 100 A/0 B; 30–45 min, 82 A/18 B; 45–65 min, 72 A/28 B; 65–85 min, 60 A/40 B; 85 min, 0 A/100 B. The flow rate was 0.75 mL/min and the injection volume was 20 μL.</p>
+      </sec>
+      <sec id="S8">
+        <title>2.6. Fishing for SIRT6 specific substrate/inhibitor in Trigonella foenum-graecum seed extract</title>
+        <p id="P14">TFGExt was diluted with ammonium acetate buffer [10 mM, pH 7.4] to prepare 1% (v/v) solution. SIRT6-MB were suspended in 1 mL of the 1% (v/v) of TFGExt. The suspension was vortexed and was constantly mixed using a roller at 4 °C for 15 min. Later, the SIRT6-MB was separated using a magnetic tray and the supernatant was collected (Load). The SIRT6-MB was washed twice (10 min) with 0.5 mL of 10 mM ammonium acetate, pH 7.4 and the supernatant was discarded. Following this wash, SIRT6-MB was incubated with 0.5 mL of 20:80 MEOH:10 mM Amm. Acetate buffer, pH 7.4 for 15 min and the supernatant was collected (Elute) after magnetic separation. The diluted TFGExt, Load and elute were analyzed by mass spectrometry (as described in Section 2.4).</p>
+      </sec>
+    </sec>
+    <sec id="S9">
+      <title>3. Results and discussion</title>
+      <p id="P15">The use of protein-coated magnetic beads for ligand fishing in complex matrices allows for the identification of a compound(s) that is not concentration dependent but rather affinity dependent. This allows an advantage over the classic dereplication process, which is concentration dependent.</p>
+      <p id="P16">In this study, the SIRT6 coated magnetic beads were used to ‘fish’ active compounds from TFGExt. The optimal conditions required for the ligand fishing experiments using the SIRT6-MB were carried out using known inhibitors of the SIRT6 protein including: quercetin, naringenin and vitexin [<xref rid="R23" ref-type="bibr">23</xref>,<xref rid="R24" ref-type="bibr">24</xref>,<xref rid="R27" ref-type="bibr">27</xref>], representing strong, moderate and weak binder, respectively. The length of incubation time (5, 10 or 15 min) of ligands with the SIRT6-MB, was the initial parameter studied. It was determined that while quercetin, naringenin and vitexin were retained in both the 5 and 10 min incubations, 15 min was the optimal incubation time. After incubation, the SIRT6-MBs were washed twice with ammonium acetate buffer and eluted by incubating the SIRT6-MB with the elution buffer (ammonium acetate buffer [10 mM, pH 7.4] containing 10% methanol) for 15 min. While, a concentration of 10% methanol in the elution buffer worked, a marked improvement was observed when the methanol concentration was increased to 20%.</p>
+      <p id="P17">Prior to running the “fishing” experiments, a fingerprint of TFGExt was carried out on the LC–MS in both positive and negative mode at the following mass ranges: 150–500 <italic>m/z</italic> and 500–1000 <italic>m/z</italic> (<xref rid="F1" ref-type="fig">Fig. 1</xref>), using a previously described method for separation of polyphenols with slight modifications [<xref rid="R26" ref-type="bibr">26</xref>]. The extract was subsequently spiked with <italic>T. foenum-graecum</italic> flavonoids vitexin, quercetin and naringenin to identify the retention time of these known components with the LC–MS method in negative ionization mode (<xref rid="F2" ref-type="fig">Fig. 2A</xref>) and in positive ionization mode (<xref rid="F2" ref-type="fig">Fig. 2B</xref>). The identification of vitexin and naringenin was seen in both negative ionization mode (<xref rid="F2" ref-type="fig">Fig. 2A(C)</xref> (<italic>m/z</italic> 431.2) and <xref rid="F2" ref-type="fig">Fig. 2A(D)</xref> (<italic>m/z</italic> 271.2), respectively) and in positive ionization mode (<xref rid="F2" ref-type="fig">Fig. 2B(B)</xref> (<italic>m/z</italic> 433.2) and <xref rid="F2" ref-type="fig">Fig. 2B(C)</xref> (<italic>m/z</italic> 273.2) respectively), while quercetin was only seen in negative ionization mode (<xref rid="F2" ref-type="fig">Fig. 2A(B)</xref> (<italic>m/z</italic> 301.2)).</p>
+      <p id="P18">The deacetylation of H3K9Ac by SIRT6-MB was significantly inhibited (&gt;50%, <italic>P</italic> &lt; 0.05) by 1% TFGExt [<xref rid="R24" ref-type="bibr">24</xref>], therefore, a similar concentration of TFGExt was chosen for the ligand fishing experiments for both the SIRT6-MB and the control-MB. The fingerprint of the elution buffer in the <italic>m/z</italic> range of 100–500, was obtained in both the negative ion mode (<xref rid="F3" ref-type="fig">Fig. 3A</xref>) and positive ion mode (<xref rid="F3" ref-type="fig">Fig. 3B</xref>) for the SIRT6-MB. The identification of vitexin (<xref rid="F3" ref-type="fig">Fig. 3A(F)/B(D)</xref>), naringenin (<xref rid="F3" ref-type="fig">Fig. 3A(C)</xref>) and quercetin (<xref rid="F3" ref-type="fig">Fig. 3A(E)</xref>) was seen in the elution buffer, while, no retention of these inhibitors was observed for the control-MBs. Of interest, in <xref rid="F3" ref-type="fig">Fig. 3A(F)</xref>, in addition to vitexin (42 min) and additional peak was identified at 48 min. It is suspected that this peak may correspond to isovitexin, as fenugreek has been reported to be rich in this flavonoid [<xref rid="R28" ref-type="bibr">28</xref>]. In addition to these compounds, an additional 14 compounds were identified (<xref rid="T1" ref-type="table">Table 1</xref>). The major constituents of TFGExt have been previously published [<xref rid="R26" ref-type="bibr">26</xref>]. We determined if any of the retained compounds reported in <xref rid="T1" ref-type="table">Table 1</xref> matched previously reported compounds and identified orientin (the 8C glucoside of luteolin) as a possible SIRT6 modulator. In order to confirm that the compound was orientin, a standard of orientin was spiked into TFGExt and chromatographed (<xref rid="F3" ref-type="fig">Fig. 3A(G)</xref> (<italic>m/z</italic> 447.2) and <xref rid="F4" ref-type="fig">Fig. 4F</xref> (<italic>m/z</italic> 449.2)), the resulting chromatogram demonstrated that orientin had the same retention time and <italic>m/z</italic> as the identified compound. Of the 18 retained compounds from TFGExt, quercetin, vitexin, naringenin and orientin have been positively identified.</p>
+      <p id="P19">Previously, we have generated a refined pharmacophore of the quercetin binding site of SIRT6 [<xref rid="R27" ref-type="bibr">27</xref>] and the pharmacophore fit values generated by the model was shown to correlate with the experimental elution time which corresponded to the activity of the SIRT6 protein [<xref rid="R23" ref-type="bibr">23</xref>,<xref rid="R27" ref-type="bibr">27</xref>]. In order to determine the estimated activity, we used the pharmacophore model to generate the pharmacophore fit value (<xref rid="F4" ref-type="fig">Fig. 4</xref>), and the model predicted that orientin should have a similar binding affinity as luteolin for the SIRT6 protein.</p>
+    </sec>
+    <sec id="S10">
+      <title>4. Conclusion</title>
+      <p id="P20">A novel affinity-based method utilizing immobilized SIRT6 onto magnetic beads suspended directly into <italic>T. foenum graecum</italic> seed extract elucidated orientin, and fourteen other compounds, as SIRT6 modulators for the first time. Further investigations are in process to identify the remaining compounds. This method holds potential for other applications and may streamline the development of drug leads from complex chemical matrices.</p>
+    </sec>
+  </body>
+  <back>
+    <ack id="S11">
+      <p>This work was supported in part by funds from the NIA Intramural Research Program (RM), and from the National Cancer Institute/National Institutes of Health contract no. HHSN261200800001E (SR). The content of this publication does not necessarily reflect the views or policies of the Department of Health and Human Services, nor does mention of trade names, commercial products, or organizations imply endorsement by the U.S. government.</p>
+    </ack>
+    <fn-group>
+      <fn id="FN2" fn-type="other">
+        <label>☆</label>
+        <p>This paper belongs to the “Special issue Chiral Separations 2013”, by R. Moaddel (Guest Editor).</p>
+      </fn>
+      <fn id="FN3" fn-type="conflict">
+        <p>There are no financial conflicts.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <ref id="R1">
+        <label>1</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Al-Habori</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Raman</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Petropoulos</surname>
+              <given-names>GA</given-names>
+            </name>
+          </person-group>
+          <source>Fenugreek: The Genus Trigonella</source>
+          <publisher-name>CRC Press</publisher-name>
+          <publisher-loc>Boca Raton, FL</publisher-loc>
+          <year>2002</year>
+          <fpage>162</fpage>
+          <lpage>182</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Weiss</surname>
+              <given-names>RF</given-names>
+            </name>
+          </person-group>
+          <source>Herbal Medicine, classic ed</source>
+          <publisher-name>Beaconsfield Publishers</publisher-name>
+          <publisher-loc>Beaconsfield, UK</publisher-loc>
+          <year>1988</year>
+        </element-citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gardner</surname>
+              <given-names>ZE</given-names>
+            </name>
+            <name>
+              <surname>McGuffin</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Gardner</surname>
+              <given-names>ZE</given-names>
+            </name>
+            <name>
+              <surname>McGuffin</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <collab>American Herbal Products Association</collab>
+          <source>The American Herbal Products Association Botanical Safety Handbook</source>
+          <edition>2</edition>
+          <publisher-name>CRC Press</publisher-name>
+          <publisher-loc>Boca Raton, FL</publisher-loc>
+          <year>2013</year>
+          <fpage>880</fpage>
+          <lpage>882</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mills</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Bone</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <source>Principles and Practice of Phytotherapy: Modern Herbal Medicine</source>
+          <edition>1</edition>
+          <publisher-name>Churchill Livingston</publisher-name>
+          <publisher-loc>New York</publisher-loc>
+          <year>2000</year>
+        </element-citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kumar</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Kale</surname>
+              <given-names>RK</given-names>
+            </name>
+            <name>
+              <surname>Baquer</surname>
+              <given-names>NZ</given-names>
+            </name>
+          </person-group>
+          <source>Eur Rev Med Pharmacol Sci</source>
+          <volume>16</volume>
+          <year>2012</year>
+          <fpage>18</fpage>
+          <lpage>27</lpage>
+          <pub-id pub-id-type="pmid">22957414</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mullaicharam</surname>
+              <given-names>AR</given-names>
+            </name>
+            <name>
+              <surname>Deori</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Uma Maheswari</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <source>Res J Pharm Biol Chem</source>
+          <volume>4</volume>
+          <year>2013</year>
+          <fpage>1304</fpage>
+          <lpage>1313</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yadav</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Lavania</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Tomar</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Prasad</surname>
+              <given-names>GB</given-names>
+            </name>
+            <name>
+              <surname>Jain</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Yadav</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <source>Appl Biochem Biotechnol</source>
+          <volume>160</volume>
+          <year>2010</year>
+          <fpage>2388</fpage>
+          <lpage>2400</lpage>
+          <pub-id pub-id-type="pmid">19904502</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Abdel-Barry</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Abdel-Hassan</surname>
+              <given-names>IA</given-names>
+            </name>
+            <name>
+              <surname>Jawad</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Al-Hakiem</surname>
+              <given-names>MH</given-names>
+            </name>
+          </person-group>
+          <source>East Mediterr Health J</source>
+          <volume>6</volume>
+          <year>2000</year>
+          <fpage>83</fpage>
+          <lpage>88</lpage>
+          <pub-id pub-id-type="pmid">11370345</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kassaian</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Azadbakht</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Forghani</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Amini</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <source>Int J Vitam Nutr Res</source>
+          <volume>79</volume>
+          <year>2009</year>
+          <fpage>34</fpage>
+          <lpage>39</lpage>
+          <pub-id pub-id-type="pmid">19839001</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bordia</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Verma</surname>
+              <given-names>SK</given-names>
+            </name>
+            <name>
+              <surname>Srivastava</surname>
+              <given-names>KC</given-names>
+            </name>
+          </person-group>
+          <source>Prostaglandins Leukot Essent Fatty Acids</source>
+          <volume>56</volume>
+          <year>1997</year>
+          <fpage>379</fpage>
+          <lpage>384</lpage>
+          <pub-id pub-id-type="pmid">9175175</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Suksomboon</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Poolsup</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Boonkaew</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Suthisisang</surname>
+              <given-names>CC</given-names>
+            </name>
+          </person-group>
+          <source>J Ethnopharmacol</source>
+          <volume>137</volume>
+          <year>2011</year>
+          <fpage>1328</fpage>
+          <lpage>1333</lpage>
+          <pub-id pub-id-type="pmid">21843614</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Roberts</surname>
+              <given-names>KT</given-names>
+            </name>
+          </person-group>
+          <source>J Med Food</source>
+          <volume>14</volume>
+          <year>2011</year>
+          <fpage>485</fpage>
+          <lpage>1489</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R13">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lu</surname>
+              <given-names>FR</given-names>
+            </name>
+            <name>
+              <surname>Shen</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Qin</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Gao</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Dai</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <source>Chin J Integr Med</source>
+          <volume>14</volume>
+          <year>2008</year>
+          <fpage>56</fpage>
+          <lpage>60</lpage>
+          <pub-id pub-id-type="pmid">18219452</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R14">
+        <label>14</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Perla</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Jayanty</surname>
+              <given-names>SS</given-names>
+            </name>
+          </person-group>
+          <source>Food Chem</source>
+          <volume>138</volume>
+          <year>2013</year>
+          <fpage>1574</fpage>
+          <lpage>1580</lpage>
+          <pub-id pub-id-type="pmid">23411283</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R15">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sauvaire</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Petit</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Broca</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <source>Diabetes</source>
+          <volume>47</volume>
+          <year>1998</year>
+          <fpage>206</fpage>
+          <lpage>210</lpage>
+          <pub-id pub-id-type="pmid">9519714</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R16">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Haigis</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>Sinclair</surname>
+              <given-names>DA</given-names>
+            </name>
+          </person-group>
+          <source>Annu Rev Pathol</source>
+          <volume>5</volume>
+          <year>2010</year>
+          <fpage>253</fpage>
+          <lpage>295</lpage>
+          <pub-id pub-id-type="pmid">20078221</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R17">
+        <label>17</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mostoslavsky</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Chua</surname>
+              <given-names>KF</given-names>
+            </name>
+            <name>
+              <surname>Lombard</surname>
+              <given-names>DB</given-names>
+            </name>
+            <name>
+              <surname>Pang</surname>
+              <given-names>WW</given-names>
+            </name>
+            <name>
+              <surname>Fischer</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Gellon</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Mostoslavsky</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Franco</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Murphy</surname>
+              <given-names>MM</given-names>
+            </name>
+          </person-group>
+          <source>Cell</source>
+          <volume>124</volume>
+          <year>2006</year>
+          <fpage>315</fpage>
+          <lpage>329</lpage>
+          <pub-id pub-id-type="pmid">16439206</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R18">
+        <label>18</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>TF</given-names>
+            </name>
+            <name>
+              <surname>Vachharajani</surname>
+              <given-names>VT</given-names>
+            </name>
+            <name>
+              <surname>Yoza</surname>
+              <given-names>BK</given-names>
+            </name>
+            <name>
+              <surname>McCall</surname>
+              <given-names>CE</given-names>
+            </name>
+          </person-group>
+          <source>J Biol Chem</source>
+          <volume>287</volume>
+          <year>2012</year>
+          <fpage>25758</fpage>
+          <lpage>25769</lpage>
+          <pub-id pub-id-type="pmid">22700961</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R19">
+        <label>19</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhong</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>D’Urso</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Toiber</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Sebastian</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Henry</surname>
+              <given-names>RE</given-names>
+            </name>
+            <name>
+              <surname>Vadysirisack</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Guimaraes</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Marinelli</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Widstrom</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Nir</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Clish</surname>
+              <given-names>CB</given-names>
+            </name>
+            <name>
+              <surname>Vaitheesvaran</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Illiopoulos</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Kurland</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Dor</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Weissleder</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Shirihai</surname>
+              <given-names>OS</given-names>
+            </name>
+            <name>
+              <surname>Ellisen</surname>
+              <given-names>LW</given-names>
+            </name>
+            <name>
+              <surname>Espinosa</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Mostoslavsky</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <source>Cell</source>
+          <volume>40</volume>
+          <year>2010</year>
+          <fpage>280</fpage>
+          <lpage>293</lpage>
+          <pub-id pub-id-type="pmid">20141841</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R20">
+        <label>20</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dominy</surname>
+              <given-names>JE</given-names>
+              <suffix>Jr</suffix>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Jedrychowski</surname>
+              <given-names>MP</given-names>
+            </name>
+            <name>
+              <surname>Chim</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Jurczak</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Camporez</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Ruan</surname>
+              <given-names>HB</given-names>
+            </name>
+            <name>
+              <surname>Feldman</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Pierce</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Mostoslavsky</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Denu</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Clish</surname>
+              <given-names>CB</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Shulman</surname>
+              <given-names>GI</given-names>
+            </name>
+            <name>
+              <surname>Gygi</surname>
+              <given-names>SP</given-names>
+            </name>
+            <name>
+              <surname>Puigserver</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <source>Mol Cell</source>
+          <volume>48</volume>
+          <year>2012</year>
+          <fpage>900</fpage>
+          <lpage>913</lpage>
+          <pub-id pub-id-type="pmid">23142079</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R21">
+        <label>21</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lang</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Mayhudin</surname>
+              <given-names>NA</given-names>
+            </name>
+            <name>
+              <surname>Mitova</surname>
+              <given-names>MI</given-names>
+            </name>
+            <name>
+              <surname>Sun</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Sar</surname>
+              <given-names>SV</given-names>
+            </name>
+            <name>
+              <surname>Blunt</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name>
+              <surname>Cole</surname>
+              <given-names>ALJ</given-names>
+            </name>
+            <name>
+              <surname>Ellis</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Laatsch</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Munro</surname>
+              <given-names>MHG</given-names>
+            </name>
+          </person-group>
+          <source>J Nat Prod</source>
+          <volume>71</volume>
+          <year>2008</year>
+          <fpage>1595</fpage>
+          <lpage>1599</lpage>
+          <pub-id pub-id-type="pmid">18710284</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R22">
+        <label>22</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lourenço</surname>
+              <given-names>KV</given-names>
+            </name>
+            <name>
+              <surname>Jiang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Zang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Curcino</surname>
+              <given-names>LCV</given-names>
+            </name>
+            <name>
+              <surname>Gonçalvez</surname>
+              <given-names>AC</given-names>
+            </name>
+            <name>
+              <surname>Lucia</surname>
+              <given-names>CC</given-names>
+            </name>
+            <name>
+              <surname>Bezerra</surname>
+              <given-names>QC</given-names>
+            </name>
+            <name>
+              <surname>Moaddel</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <source>Talanta</source>
+          <volume>116</volume>
+          <year>2013</year>
+          <fpage>647</fpage>
+          <lpage>652</lpage>
+          <pub-id pub-id-type="pmid">24148457</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R23">
+        <label>23</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Singh</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Ravichandran</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Norton</surname>
+              <given-names>DD</given-names>
+            </name>
+            <name>
+              <surname>Fugmann</surname>
+              <given-names>SD</given-names>
+            </name>
+            <name>
+              <surname>Moaddel</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <source>Anal Biochem</source>
+          <volume>436</volume>
+          <year>2013</year>
+          <fpage>78</fpage>
+          <lpage>83</lpage>
+          <pub-id pub-id-type="pmid">23376017</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R24">
+        <label>24</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yasuda</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Wilson</surname>
+              <given-names>DR</given-names>
+            </name>
+            <name>
+              <surname>Fugmann</surname>
+              <given-names>SD</given-names>
+            </name>
+            <name>
+              <surname>Moaddel</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <source>Anal Chem</source>
+          <volume>83</volume>
+          <year>2011</year>
+          <fpage>7400</fpage>
+          <lpage>7407</lpage>
+          <pub-id pub-id-type="pmid">21854049</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R25">
+        <label>25</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Adams</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Tan</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <source>Herbal Manufacturing: How to Make Medicines from Plants</source>
+          <publisher-name>Northern Melbourne Institute of TAFE</publisher-name>
+          <publisher-loc>Australia</publisher-loc>
+          <year>1999</year>
+        </element-citation>
+      </ref>
+      <ref id="R26">
+        <label>26</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yilmaz</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Toldeo</surname>
+              <given-names>RT</given-names>
+            </name>
+          </person-group>
+          <source>J Agric Food Chem</source>
+          <volume>52</volume>
+          <year>2004</year>
+          <fpage>255</fpage>
+          <lpage>260</lpage>
+          <pub-id pub-id-type="pmid">14733505</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R27">
+        <label>27</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ravichandran</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Singh</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Donnelly</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Migliore</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Johnson</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Fishwick</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Luke</surname>
+              <given-names>BT</given-names>
+            </name>
+            <name>
+              <surname>Martin</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Maudsley</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Fugmann</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Moaddel</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <source>J Mol Graphics Modell</source>
+          <volume>49</volume>
+          <year>2014</year>
+          <fpage>38</fpage>
+          <lpage>46</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R28">
+        <label>28</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chatterjee</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Prasad</surname>
+              <given-names>SV</given-names>
+            </name>
+            <name>
+              <surname>Sharma</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <source>Food Chem</source>
+          <volume>119</volume>
+          <year>2010</year>
+          <fpage>349</fpage>
+          <lpage>353</lpage>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig id="F1" orientation="portrait" position="float">
+      <label>Fig. 1</label>
+      <caption>
+        <p>HPLC–MS analysis of a 1% (v/v) ethanolic extract of <italic>T. foenum-graecum seed</italic>. The separation was carried out on a reversed-phase Varian Pursuit XRs C18 analytical column (250 mm × 4.6 mm id, 5 μM particles). The flow rate was 0.75 mL/min and the injection volume was 20 μL The analysis was carried out in both a negative ionization mode with a mass range of <italic>m/z</italic> 150–500 (A) and <italic>m/z</italic> 500–1000 (B) and positive ionization mode with a scan range of <italic>m/z</italic> 150–500 (C) and <italic>m/z</italic> of 500–1000 (D).</p>
+      </caption>
+      <graphic xlink:href="nihms582385f1"/>
+    </fig>
+    <fig id="F2" orientation="portrait" position="float">
+      <label>Fig. 2</label>
+      <caption>
+        <p>(A) HPLC–MS analysis in negative ionization mode with a scan range of <italic>m/z</italic> 150–500 was carried out of a 1% (v/v) ethanolic extract of <italic>T. foenum-graecum</italic> seed (A) and the extracted ion chromatogram of <italic>m/z</italic> 301.2 (B); 431.2 (C); 271.2 (D) and a 1% (v/v) ethanolic extract of <italic>T. foenum-graecum</italic> seed spiked with 10 μM vitexin (42 min), 10 μM quercetin (86 min) and 10 μM naringenin (86 min) (E). (B) HPLC–MS analysis in positive ionization mode with a scan range of <italic>m/z</italic> 150–500 was carried out of a 1% (v/v) ethanolic extract of <italic>T. foenum-graecum</italic> seed (A) and the extracted ion chromatogram of <italic>m/z</italic> 433.2 (B); 273.2 (C).</p>
+      </caption>
+      <graphic xlink:href="nihms582385f2"/>
+    </fig>
+    <fig id="F3" orientation="portrait" position="float">
+      <label>Fig. 3</label>
+      <caption>
+        <p>(A) Total ion chromatogram of the elution buffer (ammonium acetate buffer [10 mM, pH7.4]) obtained from incubation of a 1% (v/v) ethanolic extract of <italic>T. foenum-graecum</italic> seed with SIRT6-MB for 15 min in negative ionization mode with a scan range of <italic>m/z</italic> 150–500 (A) and the extracted ion chromatogram of <italic>m/z</italic> 267.2 (B); 271.2(C); 401.2 (D); 301.2 (E); 431.2 (F) and 447.2 (G). (B) Total ion chromatogram of the elution buffer (ammonium acetate buffer [10 mM, pH7.4]) obtained from incubation of a 1% (v/v) ethanolic extract of <italic>T. foenum-graecum</italic> seed with SIRT6-MB for 15 min in positive ionization mode with a scan range of <italic>m/z</italic> 150–500 (A) and the extracted ion chromatogram of <italic>m/z</italic> 226.2 (B); 279.2(C); 433.2 (D); 437.2 (E) and 449.2 (F).</p>
+      </caption>
+      <graphic xlink:href="nihms582385f3"/>
+    </fig>
+    <fig id="F4" orientation="portrait" position="float">
+      <label>Fig. 4</label>
+      <caption>
+        <p>Orientin (inset) mapped to the pharmacophore model of the quercetin binding site of SIRT6. Gray spheres indicate the excluded volumes, Green spheres are HBA and the Ring-Aromatic feature is shown in orange color sphere. Common features modeling technique detailed in our previous work [<xref rid="R23" ref-type="bibr">23</xref>] was used for creating the pharmacophore model [<xref rid="R27" ref-type="bibr">27</xref>]. Discovery Studio (version 3.5; Accelrys, Inc., San Diego, CA) software was used for modeling and analysis. Discovery Studio module Ligand Profiler with default options was used to map Orientin to the model (For interpretation of the references to color in this figure legend, the reader is referred to the web version of the article.)</p>
+      </caption>
+      <graphic xlink:href="nihms582385f4"/>
+    </fig>
+    <table-wrap id="T1" position="float" orientation="portrait">
+      <label>Table 1</label>
+      <caption>
+        <p>HPLC–MS analysis of the elution buffer (ammonium acetate buffer [10 mM, pH7.4]) obtained from incubation of a 1% v/v ethanolic extract of <italic>T. foenum-graecum</italic> seed with SIRT6-MB for 15 min. The peaks were identified in both negative ionization mode and positive ionization mode with a scan range of <italic>m/z</italic> 150–1000.</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="left" rowspan="1" colspan="1"/>
+            <th align="left" rowspan="1" colspan="1">Positive mode (<italic>m/z</italic>)</th>
+            <th align="left" rowspan="1" colspan="1">Negative mode (<italic>m/z</italic>)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">150–500 <italic>m/z</italic></td>
+            <td align="left" rowspan="1" colspan="1">174, 226, 235, 279, 433, 437, 449</td>
+            <td align="left" rowspan="1" colspan="1">267, 301, 401, 431, 447</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">500–1000 <italic>m/z</italic></td>
+            <td align="left" rowspan="1" colspan="1">NA</td>
+            <td align="left" rowspan="1" colspan="1">533, 545, 563, 577, 593, 621, 683</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+  </floats-group>
+</article>

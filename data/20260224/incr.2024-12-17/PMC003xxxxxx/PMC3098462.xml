@@ -1,0 +1,605 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="en">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">101177553</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">32204</journal-id>
+      <journal-id journal-id-type="nlm-ta">Concepts Magn Reson Part B Magn Reson Eng</journal-id>
+      <journal-title-group>
+        <journal-title>Concepts in magnetic resonance. Part B, Magnetic resonance engineering</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1552-5031</issn>
+      <issn pub-type="epub">1552-504X</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">21603086</article-id>
+      <article-id pub-id-type="pmc">3098462</article-id>
+      <article-id pub-id-type="doi">10.1002/cmr.b.20161</article-id>
+      <article-id pub-id-type="manuscript">NIHMS291093</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>A Wire Crossed-Loop-Resonator for Rapid Scan EPR</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Rinard</surname>
+            <given-names>George A.</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Quine</surname>
+            <given-names>Richard W.</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Biller</surname>
+            <given-names>Joshua R.</given-names>
+          </name>
+          <xref rid="A2" ref-type="aff">#</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Eaton</surname>
+            <given-names>Gareth R.</given-names>
+          </name>
+          <xref rid="A2" ref-type="aff">#</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>*</label> Department of Electrical Engineering, University of Denver</aff>
+      <aff id="A2"><label>#</label> Department of Chemistry and Biochemistry, University of Denver, Denver, CO 80208</aff>
+      <author-notes>
+        <corresp id="FN1">Corresponding Author: Prof. Gareth R. Eaton, Department of Chemistry and Biochemistry, University of Denver, Denver, CO 80208, Phone: 303-871-2980, Fax: 303-871-2243</corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>25</day>
+        <month>4</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <day>9</day>
+        <month>4</month>
+        <year>2010</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>20</day>
+        <month>5</month>
+        <year>2011</year>
+      </pub-date>
+      <volume>37B</volume>
+      <issue>2</issue>
+      <fpage>86</fpage>
+      <lpage>91</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p>
+        </license>
+      </permissions>
+      <self-uri xlink:href="http://onlinelibrary.wiley.com/doi/10.1002/cmr.b.20161/abstract"/>
+      <abstract>
+        <p id="P1">A crossed-loop (orthogonal mode) resonator (CLR) was constructed of fine wire to achieve design goals for rapid scan in vivo EPR imaging at VHF frequencies (in practice, near 250 MHz). This application requires the resonator to have a very open design to facilitate access to the animal for physiological support during the image acquisition. The rapid scan experiment uses large amplitude magnetic field scans, and sufficiently large resonator and detection bandwidths to record the rapidly-changing signal response. Rapid-scan EPR is sensitive to RF/microwave source noise and to baseline changes that are coherent with the field scan. The sensitivity to source noise is a primary incentive for using a CLR to isolate the detected signal from the RF source noise. Isolation from source noise of 44 and 47 dB was achieved in two resonator designs. Prior results showed that eddy currents contribute to background problems in rapid scan EPR, so the CLR design had to minimize conducting metal components. Using fine (AWG 38) wire for the resonators decreased eddy currents and lowered the resonator Q, thus providing larger resonator bandwidth. Mechanical resonances at specific scan frequencies are a major contributor to rapid scan backgrounds.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>bimodal resonator</kwd>
+        <kwd>isolation</kwd>
+        <kwd>rapid scan</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source country="United States">National Institute of Biomedical Imaging and Bioengineering  : NIBIB</funding-source>
+          <award-id>R01 EB000557-08 || EB</award-id>
+        </award-group>
+        <award-group>
+          <funding-source country="United States">National Institute of Biomedical Imaging and Bioengineering  : NIBIB</funding-source>
+          <award-id>P41 EB002034-05 || EB</award-id>
+        </award-group>
+      </funding-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S1">
+      <title>INTRODUCTION</title>
+      <p id="P2">In many electron paramagnetic resonance (EPR) experiments, signal to noise (S/N) is limited by source noise. This is especially a problem for dispersion operation. High-power pulsed EPR experiments such as electron spin echo (ESE) require protection of the sensitive EPR signal detector from the high power pulses used to create the signal. For these reasons, there is a long tradition dating back to Teaney et al. (<xref ref-type="bibr" rid="R1">1</xref>) of building bimodal resonators in which the excitation resonator is isolated from the EPR signal resonator. Background literature was cited in Tsapin and Hyde (<xref ref-type="bibr" rid="R2">2</xref>).</p>
+      <p id="P3">A bimodal LGR concept with perpendicular resonators was illustrated in Hyde and Froncisz (<xref ref-type="bibr" rid="R3">3</xref>). Tsapin and Hyde (<xref ref-type="bibr" rid="R2">2</xref>) fabricated and bench tested an X-band implementation of this concept. Hyde subsequently informed us that although not stated in this paper (<xref ref-type="bibr" rid="R2">2</xref>), there were conducting plates on the outside of the resonator to constrain the return flux from the two resonators, so this resonator was more similar to those that we built than we realized at the time. An S-band bimodal resonator, using two aluminum loop-gap resonators in coaxial juxtaposition, was described by Piasecki et al. (<xref ref-type="bibr" rid="R4">4</xref>). Our prior S-band (<xref ref-type="bibr" rid="R5">5</xref>,<xref ref-type="bibr" rid="R6">6</xref>), L-band (<xref ref-type="bibr" rid="R7">7</xref>), and VHF (<xref ref-type="bibr" rid="R8">8</xref>) crossed loop (bimodal) resonators (CLR) were constructed of solid copper alloy with a principal goal of maximizing the isolation between the two resonators. The VHF resonator was also designed with rapid Q-switching of the two resonators to optimize pulse power use and minimize dead time of the echo or free induction decay (FID) EPR signal.</p>
+      <p id="P4">In the rapid scan EPR experiment there are experimental artifacts that are suppressed substantially by the slow-scan continuous wave (CW) experiment when implemented with small-amplitude magnetic field modulation and narrow-band lock-in detection at the modulation frequency. The normal slow-scan CW measurement flattens the baseline and filters out high-frequency noise. The rapid scan experiment uses larger amplitude magnetic field scans, and sufficiently large resonator and detection bandwidths to record the rapidly-changing signal response. High frequency noise and baseline changes that are not coherent with the field scan can be reduced by time averaging the signal. However, rapid-scan EPR is sensitive to RF/microwave source noise and to baseline changes that are coherent with the field scan. The sensitivity to source noise is a primary incentive for using a CLR to isolate the detected signal from the RF source noise in rapid scan experiments.</p>
+      <p id="P5">In a reflection resonator, isolation of the source from the detector is obtained by critical coupling of the resonator to the transmission line. Since the coupling is frequency sensitive, this type of isolation is not effective in reducing the phase noise from the source that reaches the detector. In the CLR, phase noise from the source still causes noise current to flow in the driven resonator. However, this noise is isolated from the detector by the fact that the fields in the two resonators are essentially perpendicular. An isolation of 20 dB between the two resonators of the CLR reduces the RF source noise by 20 dB, which often will be sufficient to reduce source noise to a level below thermal noise. At VHF frequencies (~ 250 MHz) it is common to achieve CLR isolation of at least 40 dB.</p>
+      <p id="P6">Very rapid scans permit measuring short electron spin relaxation times, as illustrated by the measurement of T<sub>2</sub> for a nitroxyl radical in fluid solution (<xref ref-type="bibr" rid="R9">9</xref>). The faster and larger the magnetic field-scan, the larger the background signal induced by the scanning field. The background signal is due to mechanical effects in the resonator that are coherent with the scanning field and, therefore, do not cancel with time averaging. This background signal has been greatly suppressed by the use of filters to isolate the scan coils from the RF field in the resonator and by making the CLR more mechanically stable. The smaller the background signal, the more useful the rapid scan methodology. Tseitlin et al. (<xref ref-type="bibr" rid="R10">10</xref>) developed a Fourier expansion method for subtracting the background signal from the EPR signal. The closer the background signal is to the fundamental of the scan frequency, the more effective this removal method. Reducing the background signal will be especially important for image reconstruction from rapid scan data, since some projections used for image reconstruction have inherently low S/N (<xref ref-type="bibr" rid="R11">11</xref>). Our tests indicate that the residual backgrounds are primarily the result of mechanical resonances at specific sweep frequencies. Backgrounds can be minimized by avoiding these resonant frequencies.</p>
+      <p id="P7">The CLR described in this paper simultaneously addresses two demanding design specifications. First, since the CLR is intended for in vivo imaging at VHF frequencies (in practice, near 250 MHz), the resonator has to have a very open design to facilitate access to the animal for physiological support during the image acquisition. Second, based on our experience with background problems in rapid scan EPR, we concluded that the design had to minimize conducting metal components. Initially, there was the possibility that magnetic susceptibility as well as electrical conductivity could be important, but resonators built with “zero susceptibility” wire (obtained from Doty Scientific) did not show significant improvements. Consequently, eddy currents became the design focus. Increasing the resistance decreases eddy currents. Fortunately, increasing resistance fits with two aspects of the CLR design: the open design is better achieved with wire loops than with the solid copper alloy designs of our prior CLR, and the need for large resonator bandwidth (low Q) is achieved by increasing the resistance of the resonator. The smaller the diameter of the wire, the higher the resistance, and therefore the lower the Q. Thus, using a small-diameter wire both lowers the Q and reduces the eddy current problems. However, the small diameter wire has to be rigidly supported. Various mechanical tests suggested that the orientation of the coax transmission line relative to the magnetic field is also important, so the resonator design reported in this paper has the coax parallel to the external field instead of perpendicular to the field as in almost all other EPR resonator and transmission line assemblies.</p>
+      <p id="P8">Another consideration is the interaction of the magnetic field scan coils with the resonator. This is the primary source of baseline shifts that are coherent with the field scan and produce the background signal referred to above. There are a number of ways that the field scan coils can interact with the resonator. When there is no RF shield between the resonator and the scan coils, as is the case in our design, there is a direct induction of RF current into the scan coils which is dependent, most likely, on the RF impedance of the scan coil driver circuit that changes with scan current. In addition, vibration of the scan coils caused by the interaction of the steady magnetic field and the scanning field can change RF current induced into the scan coils. If the vibrations are transmitted to the resonator, this can cause changes in tuning and resonant frequency. We have shown that mechanical resonances at specific scan frequencies are a major contributor to rapid scan backgrounds.</p>
+    </sec>
+    <sec sec-type="methods" id="S2">
+      <title>RESONATOR DESIGN</title>
+      <p id="P9">Earlier designs of CLRs were limited in terms of filling factor because the two loops were essentially the same size and the effective volume is that common volume where the two loops cross. In the design for the CLR described here, the diameter of the excitation loop is larger than the length or diameter of the sample loop and excites the spins in the sample loop quite uniformly and, therefore, the effective filling factor is the same or better than it would be if the sample loop was used as a reflection resonator.</p>
+      <p id="P10">A sketch of the VHF CLR is shown in <xref rid="F1" ref-type="fig">Figure 1</xref>. The 89 mm diameter Helmholtz scan coils consist of 50 turns each of AWG 20 enameled copper wire, are epoxy encapsulated and epoxied to the acrylic scan coil supports. The sample resonator is 16 mm in diameter and 15 mm long. The excitation resonator consists of two coils 32 mm in diameter spaced 20 mm apart. The sample resonator is rigidly attached to the support columns via brass screws extending through the scan coil supports. The excitation resonator is mounted via pivots, in the support columns, concentric with the two coax-cables such that its axis can be rotated very precisely relative to the axis of the sample resonator by means of a screw arrangement at the top of the isolation arm, which controls the isolation between the two resonators.</p>
+      <p id="P11">The physical size of a wire resonator depends on the resonant frequency and the number of turns of wire. A single-turn wire loop resonator would be self-resonant when the circumference of the loop is on the order of 1/2 wavelength. However, the magnetic field inside a self-resonant resonator would be very non-uniform. Therefore a practical one-turn EPR resonator should be less than about ¼ wavelength in circumference. This means that at a resonant frequency of 250 MHz (λ = 1200 mm), a single loop resonator should be less than about 95 mm in diameter. For multi-turn wire loop resonators, the diameter of the turns should be further reduced by at least the number of turns squared and even further due to inter-wire capacitances.</p>
+      <p id="P12">In the VHF CLR, the excitation resonator consists of 2 turns in series which would limit its diameter to about 24 mm. The larger size, 32 mm excitation resonator diameter is made possible by inserting capacitances in series between the 2 loops. This essentially makes each loop a separate resonant circuit and reduces the chances of self-resonance. In the present design each loop of the excitation resonator consists of 2 series turns of AWG No. 38, 0.1 mm (0.004 in) diameter bare copper wire and the two coils have a total of 4 series capacitors. Three of the capacitors are 0.64 mm square ceramic chip capacitors from Voltronics and the 4<sup>th</sup> capacitor is a 1 to 5 pF trimmer capacitor from the same source. The trimmer allows tuning of the resonator to the same frequency as the sample resonator. A parallel chip capacitor is used at the coax feed point to the resonator to adjust to near critical coupling. Precise critical coupling of either resonator is not required in a CLR, because reflections from the excitation resonator are isolated from the detector. The resonator wires are wound on a machined raised circle on the surface of a 12.7 mm thick Rexolite® (polystyrene) structure.</p>
+      <p id="P13">The sample resonator consists of 6 turns of AWG No. 38 wire with a chip capacitor between each 1-1/2 turns and also at the two ends of the winding; a total of 5 capacitors. A parallel capacitor is again used to adjust to near critical coupling and no provision for tuning the resonant frequency is provided. The use of multiple capacitors in series reduces the effect of stray capacitances and reduces the change in resonant frequency when the sample is inserted. The resonator wires are wound over a thin, 0.09 mm (0.0035in) thick plastic sheet on the outside of a 16 mm mandrel. The wires and capacitors are then covered with Q-dope (solvent dissolved polystyrene) and mounted inside a Rexolite® support structure.</p>
+      <p id="P14">Both resonators are fed with ¼ wave bazooka baluns (<xref ref-type="bibr" rid="R12">12</xref>) constructed of 3.36 mm (0.14 in) outside diameter semi-rigid coax with the center conductor replaced by a 1.2 mm (0.047 in) outside diameter semi-rigid coax.</p>
+      <p id="P15">The present design of the VHF CLR does not have an RF shield between the CLR and the scan coils; rather an RF shield surrounds the entire assembly. As the scan coils are swept, the RF impedance looking into the coil driver output is a function of the driving current. Therefore, there is a change in energy in the sample resonator that is coherent with the field scan waveform and a potential for producing a background signal superimposed on the recorded rapid scan signal. In order to produce the required current waveform over a range of frequencies, the scan driver uses a feedback circuit that monitors the scan coil current and maintains the required voltage waveform to provide a linear field sweep (triangular waveform) current to the scan coils. Excessive stray capacitance from the coil driver leads to ground produces an unmonitored current component that can cause the driver circuit to become unstable. Therefore, filters that have capacitance to ground or between the coil driver leads are not usable. Instead, a wave-trap consisting of a parallel combination of inductance and tunable capacitance is inserted into each lead of the coil driver. This has been found to be effective in decoupling the coil driver from the scan coils for RF frequencies near resonance of the CLR. An experiment was performed in which the scan coils were wrapped completely, except for a small gap, with copper tape which was connected to a shield around the coil driver leads inside the RF shield. This was also found to be effective in reducing scan coil – resonator RF interactions, but produced excessive capacitance to ground, making the scan coil driver unstable and was abandoned.</p>
+      <sec id="S3">
+        <title>Experimental Measurements and Resonator Refinement</title>
+        <p id="P16">Several versions of the design concepts outlined above were built and tested in the 250 MHz rapid scan spectrometer (<xref ref-type="bibr" rid="R13">13</xref>). In a test of the ability of the CLR to suppress source phase noise, the source was artificially FM modulated with a noise source to increase its phase noise. This was required in order to pass enough noise through the CLR to be measurable. It was found that, for both absorption and dispersion, the measured noise level, after correction for differences in spectrometer gain and 20 dB higher noise in the CLR, was 42 dB ± 1 dB below the noise measured in a similar test of a typical reflection resonator of approximately the same Q. The isolation of the CLR, as measured on a network analyzer, was 42 dB ± 0.5 dB, demonstrating that the r.f. isolation of the CLR translates directly into source phase noise suppression in the signal. The key experimental observable that stimulated refinements in the design of the resonator is the background signal.</p>
+        <p id="P17">Our current hypothesis is that the rapidly-scanning magnetic field induces eddy currents in any conducting material in the resonator or shield assembly, and that the resultant forces cause slight changes in the frequency and/or match of the resonator that are coherent with the magnetic field scan. This results in a change in the RF that is detected along with the EPR signal, independent of whether there is an EPR signal. The dependence on external magnetic field makes it difficult to fully subtract the signal if the background is recorded very far off resonance. The background can have multiple harmonics and phase changes that can confound the interpretation, with field dependence sometimes making it look almost like an EPR signal.</p>
+        <p id="P18"><xref rid="T1" ref-type="table">Tables 1</xref> and <xref rid="T2" ref-type="table">2</xref> show the comparison between measured results for two versions of the VHF CLR; an earlier version, CLR-1, and the latest version, CLR-2. The resonators for the two CLRs are essentially the same except as follows. All non-conducting parts of CLR-1 were constructed of polyvinyl chloride (PVC) plastic and those for CLR-2 were Rexolite® (polystyrene plastic) for resonator supports and acrylic for other support structures. The support for the excitation resonator in CLR-1 is 3 mm (1/8 in) PVC and that for CLR-2 is 12.7 mm (1/2 in) Rexolite® for rigidity. The support for the sample resonator is 12.7 mm PVC for CLR-1 and 12.7 mm Rexolite® for CLR-2. The excitation resonator for CLR-1 has one turn of AWG 38 wire in each coil and each coil for CLR-2 has 2 series turns of AWG 38 wire spaced 1 mm apart and separated by a chip capacitor. The coaxial baluns run in a radial direction from near the axis of the scan coils in CLR-1 and they run along the axis of the scan coils in CLR-2 to present a smaller cross-section to the scan field.</p>
+        <p id="P19">The two CLRs were tested on the same locally-built VHF rapid scan EPR spectrometer (<xref ref-type="bibr" rid="R8">8</xref>) under identical conditions.</p>
+      </sec>
+      <sec sec-type="results|discussion" id="S4">
+        <title>Discussion of Results</title>
+        <p id="P20">A 25 mm VHF resonator constructed from solid copper alloy (e.g., as described in (<xref ref-type="bibr" rid="R8">8</xref>)) has a Q of about one thousand, and resultant narrow bandwidth. As shown in <xref rid="T1" ref-type="table">Table 1</xref>, the desired lower Q was achieved by constructing the CLR with fine wire. The isolation between the two resonators of the CLR was nearly as high in the open design wire CLR described here (see <xref rid="T1" ref-type="table">Table 1</xref>) as in the carefully enclosed solid metal CLR (<xref ref-type="bibr" rid="R8">8</xref>).</p>
+        <p id="P21">During the iterative design and construction of the wire CLR it was found that the background signals during rapid scan EPR were maximized at specific scan frequencies in the kHz region. The two CLR described were designed with different thicknesses of support pieces to test the importance of rigidity of the support. The mechanical resonance frequencies and amplitudes of background signals listed in <xref rid="T2" ref-type="table">Table 2</xref> confirm that the background signals are mechanical in origin and are maximized at specific mechanical resonance frequencies.</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <ack id="S5">
+      <p>Development of rapid scan EPR is supported by NIH NIBIB grant R01EB000557 and is a collaborative project of the Center for EPR Imaging in Vivo Physiology supported by NIH NIBIB P41 EB002034 (Howard Halpern, PI). CLR-1 described here has been provided to Dr. Halpern for in vivo studies. Mark Teitlin performed analyses of the harmonic content of the background signals. We thank Sandra S. Eaton for helpful discussions.</p>
+    </ack>
+    <ref-list>
+      <ref id="R1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Teaney</surname>
+              <given-names>DT</given-names>
+            </name>
+            <name>
+              <surname>Klein</surname>
+              <given-names>MP</given-names>
+            </name>
+            <name>
+              <surname>Portis</surname>
+              <given-names>AM</given-names>
+            </name>
+          </person-group>
+          <year>1961</year>
+          <article-title>Microwave Superheterodyne Induction Spectrometer</article-title>
+          <source>Rev Sci Instrum</source>
+          <volume>32</volume>
+          <fpage>721</fpage>
+          <lpage>729</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tsapin</surname>
+              <given-names>AI</given-names>
+            </name>
+            <name>
+              <surname>Hyde</surname>
+              <given-names>JS</given-names>
+            </name>
+            <name>
+              <surname>Froncisz</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <year>1992</year>
+          <article-title>Bimodal loop-gap resonator</article-title>
+          <source>J Magn Reson</source>
+          <volume>100</volume>
+          <issue>3</issue>
+          <fpage>484</fpage>
+          <lpage>90</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hyde</surname>
+              <given-names>JS</given-names>
+            </name>
+            <name>
+              <surname>Froncisz</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Hoff</surname>
+              <given-names>AJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Loop gap resonators</article-title>
+          <source>Advanced EPR: Applications in Biology and Biochemistry</source>
+          <publisher-loc>Amsterdam</publisher-loc>
+          <publisher-name>Elsevier</publisher-name>
+          <year>1989</year>
+          <fpage>277</fpage>
+          <lpage>306</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Piasecki</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Froncisz</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Hyde</surname>
+              <given-names>JS</given-names>
+            </name>
+          </person-group>
+          <year>1996</year>
+          <article-title>Bimodal loop-gap resonator</article-title>
+          <source>Rev Sci Instrum</source>
+          <volume>67</volume>
+          <issue>5</issue>
+          <fpage>1896</fpage>
+          <lpage>1904</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rinard</surname>
+              <given-names>GA</given-names>
+            </name>
+            <name>
+              <surname>Quine</surname>
+              <given-names>RW</given-names>
+            </name>
+            <name>
+              <surname>Ghim</surname>
+              <given-names>BT</given-names>
+            </name>
+            <name>
+              <surname>Eaton</surname>
+              <given-names>SS</given-names>
+            </name>
+            <name>
+              <surname>Eaton</surname>
+              <given-names>GR</given-names>
+            </name>
+          </person-group>
+          <year>1996</year>
+          <article-title>Dispersion and superheterodyne EPR using a bimodal resonator</article-title>
+          <source>J Magn Reson A</source>
+          <volume>122</volume>
+          <issue>1</issue>
+          <fpage>58</fpage>
+          <lpage>63</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rinard</surname>
+              <given-names>GA</given-names>
+            </name>
+            <name>
+              <surname>Quine</surname>
+              <given-names>RW</given-names>
+            </name>
+            <name>
+              <surname>Ghim</surname>
+              <given-names>BT</given-names>
+            </name>
+            <name>
+              <surname>Eaton</surname>
+              <given-names>SS</given-names>
+            </name>
+            <name>
+              <surname>Eaton</surname>
+              <given-names>GR</given-names>
+            </name>
+          </person-group>
+          <year>1996</year>
+          <article-title>Easily tunable crossed-loop (bimodal) EPR resonator</article-title>
+          <source>J Magn Reson A</source>
+          <volume>122</volume>
+          <issue>1</issue>
+          <fpage>50</fpage>
+          <lpage>57</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rinard</surname>
+              <given-names>GA</given-names>
+            </name>
+            <name>
+              <surname>Quine</surname>
+              <given-names>RW</given-names>
+            </name>
+            <name>
+              <surname>Eaton</surname>
+              <given-names>GR</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>An L-Band crossed-loop (bimodal) EPR resonator</article-title>
+          <source>J Magn Reson</source>
+          <volume>144</volume>
+          <issue>1</issue>
+          <fpage>85</fpage>
+          <lpage>88</lpage>
+          <pub-id pub-id-type="pmid">10783276</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rinard</surname>
+              <given-names>GA</given-names>
+            </name>
+            <name>
+              <surname>Quine</surname>
+              <given-names>RW</given-names>
+            </name>
+            <name>
+              <surname>Eaton</surname>
+              <given-names>GR</given-names>
+            </name>
+            <name>
+              <surname>Eaton</surname>
+              <given-names>SS</given-names>
+            </name>
+          </person-group>
+          <year>2002</year>
+          <article-title>250 MHz crossed loop resonator for pulsed electron paramagnetic resonance</article-title>
+          <source>Magn Reson Engineer</source>
+          <volume>15</volume>
+          <fpage>37</fpage>
+          <lpage>46</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tseitlin</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Dhami</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Quine</surname>
+              <given-names>RW</given-names>
+            </name>
+            <name>
+              <surname>Rinard</surname>
+              <given-names>GA</given-names>
+            </name>
+            <name>
+              <surname>Eaton</surname>
+              <given-names>SS</given-names>
+            </name>
+            <name>
+              <surname>Eaton</surname>
+              <given-names>GR</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Electron Spin T<sub>2</sub> of a Nitroxyl Radical at 250 MHz Measured by Rapid Scan EPR</article-title>
+          <source>Appl Magn Reson</source>
+          <volume>30</volume>
+          <fpage>651</fpage>
+          <lpage>656</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tseitlin</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Czechowski</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Quine</surname>
+              <given-names>RW</given-names>
+            </name>
+            <name>
+              <surname>Eaton</surname>
+              <given-names>SS</given-names>
+            </name>
+            <name>
+              <surname>Eaton</surname>
+              <given-names>GR</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Background Removal Procedure for Rapid Scan EPR</article-title>
+          <source>J Magn Reson</source>
+          <volume>196</volume>
+          <fpage>48</fpage>
+          <lpage>53</lpage>
+          <pub-id pub-id-type="pmid">18974015</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tseitlin</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Dhami</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Eaton</surname>
+              <given-names>SS</given-names>
+            </name>
+            <name>
+              <surname>Eaton</surname>
+              <given-names>GR</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Comparison of Maximum Entropy and Filtered Back-Projection Methods to Reconstruct Rapid-Scan EPR Images</article-title>
+          <source>J Magn Res</source>
+          <volume>184</volume>
+          <fpage>157</fpage>
+          <lpage>168</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Balanis</surname>
+              <given-names>CA</given-names>
+            </name>
+          </person-group>
+          <source>Antenna Theory Analysis and Design</source>
+          <publisher-loc>NY</publisher-loc>
+          <publisher-name>Harper Row</publisher-name>
+          <year>1982</year>
+          <fpage>365</fpage>
+          <lpage>368</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R13">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Quine</surname>
+              <given-names>RW</given-names>
+            </name>
+            <name>
+              <surname>Rinard</surname>
+              <given-names>GA</given-names>
+            </name>
+            <name>
+              <surname>Eaton</surname>
+              <given-names>SS</given-names>
+            </name>
+            <name>
+              <surname>Eaton</surname>
+              <given-names>GR</given-names>
+            </name>
+          </person-group>
+          <year>2002</year>
+          <article-title>A pulsed and continuous wave 250 MHz electron paramagnetic resonance spectrometer</article-title>
+          <source>Magn Reson Engineer</source>
+          <volume>15</volume>
+          <fpage>59</fpage>
+          <lpage>91</lpage>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig id="F1" position="float" orientation="portrait">
+      <label>Figure 1</label>
+      <caption>
+        <p>Sketch of VHF CLR, showing the arrangement of the two resonators and scan coils.</p>
+      </caption>
+      <graphic xlink:href="nihms291093f1"/>
+    </fig>
+    <table-wrap id="T1" position="float" orientation="landscape">
+      <label>Table 1</label>
+      <caption>
+        <p>Measured Parameters for the CLRs and Scan Coils</p>
+      </caption>
+      <table frame="box" rules="all">
+        <thead>
+          <tr>
+            <th valign="bottom" align="left" rowspan="1" colspan="1">CLR resonator</th>
+            <th valign="bottom" align="left" rowspan="1" colspan="1">Q<sub>source</sub></th>
+            <th valign="bottom" align="left" rowspan="1" colspan="1">Q<sub>detector</sub></th>
+            <th valign="bottom" align="left" rowspan="1" colspan="1">Best isolation</th>
+            <th valign="bottom" align="left" rowspan="1" colspan="1">Scan coil inductance</th>
+            <th valign="bottom" align="left" rowspan="1" colspan="1">Scan coil resistance</th>
+            <th valign="bottom" align="left" rowspan="1" colspan="1">Scan coil field constant</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">CLR-1</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">35</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">30</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">47 dB</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">1.2 mH</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">1.8 ohms</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">10.12 G/A</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">CLR-2</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">66</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">54</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">44 dB</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">1.2 mH</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">1.8 ohms</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">10.06 G/A</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+    <table-wrap id="T2" position="float" orientation="portrait">
+      <label>Table 2</label>
+      <caption>
+        <p>Resonator Performance</p>
+      </caption>
+      <table frame="box" rules="all">
+        <thead>
+          <tr>
+            <th valign="bottom" align="left" rowspan="1" colspan="1">CLR resonator</th>
+            <th valign="bottom" align="left" rowspan="1" colspan="1">Normalized S/N obtained under same conditions with no significant background.</th>
+            <th valign="bottom" align="left" rowspan="1" colspan="1">Mechanical resonance frequencies (kHz)</th>
+            <th valign="bottom" align="left" rowspan="1" colspan="1">Normalized background amplitudes at worst mechanical resonance.</th>
+            <th valign="bottom" align="left" rowspan="1" colspan="1">Normalized ratio of standard signal to worst background</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">CLR-1</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">1</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">1.04, 1.18, 2.25</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">1.62</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">1</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">CLR-2</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">1.67</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">1.07</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">1</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">2.73</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+  </floats-group>
+</article>

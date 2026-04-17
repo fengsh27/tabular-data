@@ -1,0 +1,1970 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Archiving and Interchange DTD v2.3 20070202//EN" "archivearticle.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">8410979</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">7967</journal-id>
+      <journal-id journal-id-type="nlm-ta">Virus Res</journal-id>
+      <journal-title>Virus research</journal-title>
+      <issn pub-type="ppub">0168-1702</issn>
+      <issn pub-type="epub">1872-7492</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">21316405</article-id>
+      <article-id pub-id-type="pmc">3078687</article-id>
+      <article-id pub-id-type="doi">10.1016/j.virusres.2011.02.004</article-id>
+      <article-id pub-id-type="manuscript">NIHMS273318</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Infection of cultured bovine cells with bovine herpesvirus 1 (BHV-1) or Sendai virus induces different beta interferon subtypes</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>da Silva</surname>
+            <given-names>Leticia Frizzo</given-names>
+          </name>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Jones</surname>
+            <given-names>Clinton</given-names>
+          </name>
+          <email>cjones@unlnotes.unl.edu</email>
+        </contrib>
+        <aff id="A1">School of Veterinary Medicine and Biomedical Sciences, Nebraska Center for Virology, University of Nebraska, Lincoln, Fair Street at East Campus Loop, Lincoln, NE, 68583-0905, Phone: (402) 472-1890, FAX: (402) 472-9690</aff>
+      </contrib-group>
+      <pub-date pub-type="nihms-submitted">
+        <day>3</day>
+        <month>3</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>23</day>
+        <month>2</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>4</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>1</day>
+        <month>4</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>157</volume>
+      <issue>1</issue>
+      <fpage>54</fpage>
+      <lpage>60</lpage>
+      <permissions>
+        <license>
+          <p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P1">In contrast to mice or humans, cattle contain three beta interferon (IFN-β) genes with distinct transcriptional promoters suggesting IFN-β gene expression is not stimulated the same by different viruses. To test this hypothesis, we compared expression of the three IFN-β subtypes after infection with a RNA virus, Sendai, versus a large DNA virus, bovine herpesvirus 1 (BHV-1). Infection of low passage bovine kidney (BK) or established bovine kidney cells (CRIB) with Sendai virus has consistently led to high levels of IFN-β1 RNA. Conversely, infection of CRIB cells, but not BK cells, with BHV-1 increased IFN-β3 RNA levels and to a lesser extent the other two IFN-β subtypes. Inhibition of de novo protein synthesis with cycloheximide resulted in higher levels of IFN-β1 and IFN-β2 RNA levels after BHV-1 infection. Further studies demonstrated that BHV-1 immediate early and/or early genes were primarily responsible for inhibiting the IFN response in BK cells. The three bovine IFN-β promoters were cloned upstream of a reporter gene construct, and their properties analyzed in transient transfection assays. Only the IFN-β3 promoter was trans-activated by IRF3 (interferon responsive factor 3). IRF7 and double stranded RNA (polyIC) stimulated IFN-β1 and IFN-β3 promoter activity, but not IFN-β2. Relative to the human IFN-β promoter, the IFN-β3 promoter contained fewer nucleotide differences in the positive regulatory domain III (PRD III), PRD IV, and PRD I compared to the IFN-β1 and IFN-β2 promoter. Collectively, these studies provide evidence that virus infection differentially stimulates expression of the three bovine IFN-β genes.</p>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S1">
+      <title>Introduction</title>
+      <p id="P2">Stimulation of beta-interferon (IFN-β) transcription is an early response to virus infection (<xref ref-type="bibr" rid="R3">Au et al., 1995</xref>; <xref ref-type="bibr" rid="R13">Goodbourn et al., 1985</xref>; <xref ref-type="bibr" rid="R26">King and Goodbourn, 1994</xref>; <xref ref-type="bibr" rid="R33">Munshi et al., 1998</xref>; <xref ref-type="bibr" rid="R43">Sharma et al., 2003</xref>; <xref ref-type="bibr" rid="R57">Yoneyama et al., 1998</xref>). In contrast to humans or mice, cattle contain three IFN-β genes with distinct promoters (<xref ref-type="bibr" rid="R46">Valarcher et al., 2003</xref>; <xref ref-type="bibr" rid="R50">Wilson et al., 1983</xref>). All three bovine IFN-β isotypes have anti-viral activity, but it is not clear whether virus infection differentially induces the three subtypes. Viral regulation of IFN responses is crucial for survival in nature and pathogenesis. For example, mice lacking type I and type II IFN receptors in combination with RAG-2 gene deletions die within a few days following infection with bovine herpesvirus 1 (BHV-1) (<xref ref-type="bibr" rid="R2">Abril et al., 2004</xref>), an alpha-herpesvirinae subfamily member. Conversely, infection of wt mice with BHV-1 does not lead to clinical symptoms. BHV-1 induces an IFN response, in part due to its high CpG content (<xref ref-type="bibr" rid="R28">Lundberg et al., 2003</xref>). It is assumed that DNA “sensors” and/or toll like receptors that recognize unmethylated CpG DNA motifs, TLR9 for example (<xref ref-type="bibr" rid="R6">Bowie and Unteerholzner, 2008</xref>), recognize incoming BHV-1 DNA and induces an IFN response. During the course of productive infection, viral encoded products, including infected cell protein 0 (bICP0), interfere with innate immune responses {reviewed by (<xref ref-type="bibr" rid="R22">Jones, 2009</xref>)}.</p>
+      <p id="P3">BHV-1 infections can lead to conjunctivitis, pneumonia, genital disorders, abortions, and an upper respiratory infection known as bovine respiratory disease (BRD) (<xref ref-type="bibr" rid="R9">Chowdhury and Jones, 2010</xref>; <xref ref-type="bibr" rid="R23">Jones and Chowdhury, 2008</xref>; <xref ref-type="bibr" rid="R45">Tikoo et al., 1995</xref>). BHV-1 initiates BRD by immunosuppressing cattle (<xref ref-type="bibr" rid="R8">Carter et al., 1989</xref>; <xref ref-type="bibr" rid="R14">Griebel et al., 1990</xref>; <xref ref-type="bibr" rid="R15">Griebel et al., 1987a</xref>; <xref ref-type="bibr" rid="R16">Griebel et al., 1987b</xref>; <xref ref-type="bibr" rid="R56">Yates, 1982</xref>), which leads to secondary bacterial infections and life-threatening pneumonia (<xref ref-type="bibr" rid="R56">Yates, 1982</xref>). BRD costs the cattle industry more than $1 billion/year in the United States (<xref ref-type="bibr" rid="R1">(NASS), 1996</xref>; <xref ref-type="bibr" rid="R7">Bowland and Shewen, 2000</xref>; <xref ref-type="bibr" rid="R8">Carter et al., 1989</xref>; <xref ref-type="bibr" rid="R14">Griebel et al., 1990</xref>; <xref ref-type="bibr" rid="R15">Griebel et al., 1987a</xref>; <xref ref-type="bibr" rid="R16">Griebel et al., 1987b</xref>; <xref ref-type="bibr" rid="R21">Ishmael, 2001</xref>; <xref ref-type="bibr" rid="R25">Kapil, 1997</xref>; <xref ref-type="bibr" rid="R38">Powell, 2005</xref>; <xref ref-type="bibr" rid="R45">Tikoo et al., 1995</xref>). Modified live vaccines are available, and in general, they prevent clinical disease in adults. However, vaccine strains are immunosuppressive, can cause serious disease in young calves or abortions in pregnant cows, and can reactivate from latency. Thus, there is a need to better understand the mechanism by which BHV-1 suppresses immune responses, in particular innate immune responses.</p>
+      <p id="P4">In contrast to large double stranded DNA viruses, RNA viruses generally initiate an IFN response by novel mechanisms, in large part due to high levels of double stranded RNA produced during their replication cycle (<xref ref-type="bibr" rid="R6">Bowie and Unterholzner, 2008</xref>). For example, Sendai virus, a small negative single stranded RNA virus that belongs to the Paramyxovirinae subfamily, activates the IFN-β promoter primarily through a RIG-I (retinoic acid inducible gene I) dependent manner (<xref ref-type="bibr" rid="R44">Strahle et al., 2007</xref>). The Sendai virus encoded C protein, in part, inhibits IFN responses indicating that inducing and inhibiting IFN responses following infection is a normal process following infection of mammalian cells with a RNA virus.</p>
+      <p id="P5">In this study, we examined expression of the three IFN-β subtypes following infection with BHV-1 or Sendai virus. In established or low passage bovine cells, Sendai virus consistently increased IFN-β1 RNA levels. In contrast, BHV-1 productive infection led to an increase in IFN-β3 RNA levels in established BK cells. When low passage bovine cells were infected, IFN-β RNA levels were not detected unless protein synthesis was blocked. The promoters of each IFN-β subtype were cloned and transient transfection assays performed to begin to understand how these promoters were activated. Only the IFN-β3 promoter construct was trans-activated by IRF3 (interferon responsive factor 3). IRF7 and double stranded RNA (polyIC) stimulated IFN-β1 and IFN-β3 promoter activity. The IFN-β3 promoter was more similar to the human IFN-β promoter relative to the IFN-β1 and IFN-β2 promoter. Collectively, these studies suggested that IFN-β subtype RNA levels are differentially regulated by BHV-1 versus Sendai virus. Furthermore, cell type specific induction of IFN-β RNA levels were observed following infection with BHV-1.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="S2">
+      <title>Materials and Methods</title>
+      <sec id="S3">
+        <title>Cells</title>
+        <p id="P6">Human epithelial 293 (293) cells, murine neuroblastoma cells (neuro-2A), low passage bovine kidney (BK) cells, low passage bovine turbinate cells, low passage bovine testicle cells, and established bovine kidney cells (CRIB) were cultured in Earle's modified Eagle's medium supplemented with 10% fetal bovine serum, penicillin (10 U/ml), and streptomycin (100 μg/ml) in a humidified 5% CO<sub>2</sub> atmosphere at 37°C. Low passage BK cells were prepared from a healthy calf.</p>
+      </sec>
+      <sec id="S4">
+        <title>Viruses</title>
+        <p id="P7">The Cooper strain of BHV-1 (wt virus) was obtained from the National Veterinary Services Laboratory, Animal and Plant Health Inspection Services, Ames, IA. BHV-1 stocks were prepared in bovine cells (CRIB).</p>
+        <p id="P8">Sendai virus (Cantell strain) was obtained from Dr. Fernando Osorio (University of Nebraska, Lincoln, NE). The designated cells were infected with 40-hemagglutinin units/mL.</p>
+      </sec>
+      <sec id="S5">
+        <title>Construction of bovine IFN-β1, 2 and 3 reporter constructs</title>
+        <p id="P9">IFN-β-chloramphenicol acetyltransferase (CAT) reporter constructs containing the bovine IFN-β promoters were generated by PCR using DNA extracted from CRIB cells as a template. Specific primers for regions flanking the enhanceosome of these IFN-β promoters were designed using the following oligonucleotide primers. For the bovine IFNβ-1 promoter, the forward primer was 5′-AAGGTACCCCTCTCCCCAAATCTC–3′ and the reverse primer was 5′-CTCGAGGTCCTTCGTCCTTAAGTG–3′. To amplify the bovine IFN-β3 promoter, the forward primer was 5′-GGTACCTGTTCTCGGAAAGTTGAGC–3′, and the reverse primer was 5′–CTCGAGGATGAAAACAGGCACAGGG–3′. The respective amplification products were cloned into the CAT vector, pCAT-basic reporter plasmid (Promega, catalog no. E1871) at the unique XhoI and KpnI restriction enzyme sites. The bovine IFN-β2 promoter construct was synthesized (IDT), because it was difficult to amplify a specific fragment containing its promoter region. The flanking region of the bovine IFN-β2 promoter is almost identical to the flanking region of bovine IFN-β1.</p>
+        <p id="P10">The human IRF-3 and IRF-7 expression constructs were obtained from Luwen Zhang (University of Nebraska, Lincoln, NE). The dsRNA (Poly I:C) was purchased from Invivogen, (catalog # tlrl-pic).</p>
+      </sec>
+      <sec id="S6">
+        <title>CAT assays</title>
+        <p id="P11">The respective cells were transfected with the designated plasmids. Human epithelial 293, BK, or CRIB cells were transfected with TransIT (Mirus, catalog no. MIR2000) according to the manufacturer's instructions. Neuro-2A cells were transfected with NeuroTransit (Mirus, catalog no.2145), according to the manufacturer's instructions. Forty hours after transfection, cells were lysed by three freeze-thaw cycles in 250mM Tris-HCL (pH7.4). CAT assays were performed with 0.2 μCi (7.4 KBq) {<sup>14</sup>C}-chloramphenicol (Amersham Biosciences, catalog no. CFA754) and 0.5 mM acetyl coenzyme A (Sigma, catalog no. A2181). Chloramphenicol and its acetylated forms were separated by thin-layer chromatography and CAT activity measured with a PhosphorImager (Molecular Dynamics, CA). CAT activity was expressed as the fold of induction relative to the vector control. Transfection experiments for CAT assays were repeated at least three times to confirm the results.</p>
+        <p id="P12">For virus infection studies, the designated cells were cultured in 60 mm<sup>2</sup> dishes and then transfected with Lipofectamine™ 2000 transfection reagent (Invitrogen, catalog no. 11668-019) according to the manufacturer's instructions. Cells were incubated with the transfection mix for 5 hours and then replaced with fresh media supplemented with 10% FBS. At 24 hours after transfection, cells were infected with wt BHV-1 using a multiplicity of infection (moi) of 5 or with 40 hemagglutinin units of Sendai virus/mL. Cell lysate was harvested at the designated time points, and CAT activity measured as described previously (<xref ref-type="bibr" rid="R31">Meyer and Jones, 2008</xref>; <xref ref-type="bibr" rid="R54">Workman et al., 2009</xref>; <xref ref-type="bibr" rid="R58">Zhang and Jones, 2001</xref>; <xref ref-type="bibr" rid="R59">Zhang and Jones, 2005</xref>; <xref ref-type="bibr" rid="R60">Zhang et al., 2006</xref>).</p>
+      </sec>
+      <sec id="S7">
+        <title>RNA extraction and RT-PCR</title>
+        <p id="P13">RNA extraction and reverse transcription (RT)-PCR was performed as described previously using primers that specifically amplify the three bovine IFN-β subtypes (<xref ref-type="bibr" rid="R36">Perez et al., 2008</xref>). The IFN-β1 primers are: forward, AGGAGCTACAGCTTGCTTCG and reverse, TGACCAATATGGCATCTTCC. The IFN-β2 primers are: forward, AATGGACAGTTAAATACTGTAAGC and reverse, TAAATGTCTCCAGGGTGCTC. The IFN-β3 primers are: forward, TCCTCTTCTACTTTCTGCCAAA and reverse, AAGGGCTTGCAGAGTGAATG. PCR products were electrophoresed on 2% agarose gels and stained with ethidium bromide.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S8">
+      <title>Results</title>
+      <sec sec-type="methods" id="S9">
+        <title>Analysis of bovine IFN-β RNA levels after infection</title>
+        <p id="P14">To understand whether specific viral pathogens differentially stimulate bovine IFN-β RNA expression, established CRIB or low passage BK cells were infected with Sendai virus or BHV-1 and expression of the three IFN-β subtypes examined by RT-PCR. RT-PCR was used for these studies because there are no subtype specific IFN-β antibodies available and it is difficult to develop subtype specific probes for Northern blot analysis. In a previous study, we developed primers that specifically amplify the three IFN-β subtypes (<xref ref-type="bibr" rid="R36">Perez, et al. 2008</xref>). IFN-β1 RNA levels increased 3-7 fold following infection of CRIB cells with Sendai virus for 8 or 12 hours respectively (<xref rid="F1" ref-type="fig">Figure 1</xref>). IFN-β2 or IFN-β3 RNA levels were not stimulated dramatically relative to IFN-β1. In contrast to Sendai infection, BHV-1 infection of CRIB cells increased IFN-β3 RNA levels 10-11 fold at 16 or 24 hours after infection (<xref rid="F1" ref-type="fig">Figure 1</xref>), which was consistent with a previous study using a different established bovine cell line (<xref ref-type="bibr" rid="R36">Perez et al., 2008</xref>). IFN-β1 RNA levels were induced 2-3 fold after infection with BHV-1, which was similar to IFN-β2 induction.</p>
+        <p id="P15">Low passage BK cells (<xref rid="F2" ref-type="fig">Figure 2</xref>) infected with Sendai virus contained 14-27 fold higher levels of IFN-β1 RNA levels, which was similar to the results observed in CRIB cells. In contrast to CRIB cells, Sendai virus infection of BK cells induced 4 fold higher levels of IFN-β2 RNA. Similar titers of Sendai virus were detected in each cell type (data not shown) suggesting this was not the reason for the differences observed. In contrast to CRIB cells, we were unable to detect IFN-β RNA following infection of low passage BK cells with BHV-1 (<xref rid="F2" ref-type="fig">Figure 2</xref>). BHV-1 readily infected BK cells because high levels of infectious virus were produced (data not shown). Similar results were observed for Sendai and BHV-1 in two other low passage bovine cells derived from turbinate or testicles (data not shown). In summary, these studies demonstrated that different IFN-β sub-types were expressed following infection with Sendai virus or BHV-1. Furthermore, IFN-β RNA levels were similar to mock-infected cells following infection of BK cells with BHV-1.</p>
+      </sec>
+      <sec id="S10">
+        <title>Induction of IFN-β RNA levels following BHV-1 infection when cells are treated with cycloheximide or phosphonoacetic acid</title>
+        <p id="P16">The studies presented in <xref rid="F1" ref-type="fig">Figures 1</xref> and <xref rid="F2" ref-type="fig">2</xref> suggested BHV-1 encoded proteins completely blocked IFN-β RNA expression or BHV-1 entry and penetration does not induce IFN-β RNA levels in low passage bovine cells. To distinguish between these two possibilities, BK cells were infected with BHV-1 in the presence of a protein synthesis inhibitor (cycloheximide) and IFN-β RNA levels measured using RT-PCR. In the presence of cycloheximide, BHV-1 infection induced higher levels of IFN-β1 at 4 and 8 hours after infection respectively. Furthermore, IFN-β2 RNA levels were higher at 4 and 8 hours after infection respectively (<xref rid="F3" ref-type="fig">Figure 3A</xref>). IFN-β3 RNA levels were not readily detected even when BK cells were infected in the presence of cycloheximide.</p>
+        <p id="P17">BHV-1 gene expression occurs in a temporal cascade. IE gene expression is stimulated by a virion component α-TIF (<xref ref-type="bibr" rid="R32">Misra et al., 1995</xref>). IE proteins activate E and L gene expression (<xref ref-type="bibr" rid="R11">Fraefel et al., 1994</xref>; <xref ref-type="bibr" rid="R17">Hamel and Simard, 2003</xref>; <xref ref-type="bibr" rid="R32">Misra et al., 1995</xref>). To understand which class of viral genes were important for inhibiting IFN-β RNA levels, BK cells were mock-infected or infected with BHV-1 in the presence of 400 μg/ml of phosphonoacetic acid (PAA), an inhibitor of viral DNA replication (<xref ref-type="bibr" rid="R5">Becker et al., 1977</xref>; <xref ref-type="bibr" rid="R18">Hay et al., 1977</xref>; <xref ref-type="bibr" rid="R27">Leinbach et al., 1976</xref>). Generally speaking, IE, E, and leaky late proteins are expressed, but not true L genes when infected cultured cells are treated with PAA. In the presence of PAA, IFN-β1 RNA levels were readily detected at 16 hours after infection but not in mock infected cells (<xref rid="F3" ref-type="fig">Figure 3B</xref>). Conversely, IFN-β2 and IFN-β3 mRNA levels were not higher relative to mock infected cells. Collectively, the studies presented in <xref rid="F3" ref-type="fig">Figure 3</xref> suggested that BHV-1 entry and penetration strongly induced IFN-β1 and IFN-β2 RNA expression. IE, E, and/or leaky late viral protein expression appeared to be important for inhibiting IFN-β RNA expression in BK cells or low passage bovine turbinate cells (data not shown).</p>
+      </sec>
+      <sec id="S11">
+        <title>Cloning and characterization of the bovine IFN-β promoters</title>
+        <p id="P18">DNA sequences within the human IFN-β promoter (-110 to -36) are required for virus induced activation (<xref ref-type="bibr" rid="R13">Goodbourn et al., 1985</xref>; <xref ref-type="bibr" rid="R26">King and Goodbourn, 1994</xref>). These sequences contain four positive regulatory domains (PRD I-PRD IV) (<xref ref-type="bibr" rid="R47">Wathelet et al., 1998a</xref>) (<xref rid="F4" ref-type="fig">Figure 4A</xref>). PRD IV is recognized by a hetero-dimer comprised of ATF2 (activating transcription factor 2) and c-Jun (<xref ref-type="bibr" rid="R29">Maniatis et al., 1992</xref>). PRD II is bound by the NF-κB (nuclear factor κB) transcription factor. DNA sequences comprising PRD III-PRD I are bound by several DNA binding proteins, including IRF3 (interferon regulatory factor 3), IRF1, a truncated form of IRF2, and IRF7 (<xref ref-type="bibr" rid="R12">Fujita et al., 1989</xref>; <xref ref-type="bibr" rid="R24">Juang et al., 1998</xref>; <xref ref-type="bibr" rid="R47">Wathelet et al., 1998a</xref>; <xref ref-type="bibr" rid="R49">Whiteside et al., 1992</xref>). The human and three bovine IFN-β promoters contained identical PRD II and TATA box DNA sequences (<xref rid="F4" ref-type="fig">Figure 4A</xref>). DNA sequences comprising PRD I, PRD III, and PRD IV of the human IFN-β promoter contained 4 nucleotide differences in the IFN-β1 promoter, 11 nucleotide differences in the bovine IFN-β2 promoter, but only 2 nucleotide differences in the bovine IFN-β3 promoter. To further characterize the bovine IFN-β promoters, sequences encompassing -110 to -36 and DNA sequences spanning the TATA box sequences were amplified by PCR or synthesized. These fragments were then cloned into a chloramphenicol acetyltransferase (CAT) expression vector as described in the materials and methods.</p>
+        <p id="P19">To test whether infection with BHV-1 or Sendai virus induced bovine IFN-β promoter activity, CRIB cells were transfected with one of the IFN-β promoter constructs and promoter activity measured at various times after infection. IFN-β3 promoter activity was stimulated 10 fold following infection with BHV-1 (<xref rid="F4" ref-type="fig">Figure 4B</xref>), while IFN-β1 and IFN-β2 promoter activity was stimulated less than 2 fold following infection of CRIB cells with BHV-1. Sendai virus infection stimulated the IFN-β3 promoter approximately 12 fold in CRIB cells (<xref rid="F4" ref-type="fig">Figure 4C</xref>). IFN-β1 promoter activity was stimulated 5-6 fold 24 hours after Sendai virus infection, whereas IFN-β2 promoter activity was not stimulated. Similar results were obtained using low passage BK or rabbit skin cells (data not shown). In contrast to the RT-PCR studies, IFN-β1 promoter activity was less than IFN-β3 promoter activity following infection.</p>
+      </sec>
+      <sec id="S12">
+        <title>Activation of IFN-β promoter activity by factors known to stimulate the human IFN-β promoter</title>
+        <p id="P20">Additional studies were performed to test whether transcription factors that stimulate the human IFN-β promoter have similar effects on the three bovine IFN-β promoters. Initial studies were performed in low passage BK cells. For these studies, we examined the effect of two transcription factors (IRF3 and IRF7) that trans-activate human IFN-β promoter activity (<xref ref-type="bibr" rid="R4">Barnes et al., 2002</xref>; <xref ref-type="bibr" rid="R10">Doyle et al., 2002</xref>; <xref ref-type="bibr" rid="R20">Honda et al., 2005</xref>; <xref ref-type="bibr" rid="R42">Servant et al., 2002</xref>) or synthetic double strand RNA (PolyI:C). In three independent studies, IRF3 stimulated IFN-β3 promoter activity approximately 15 fold (<xref rid="F5" ref-type="fig">Figure 5A</xref>). Surprisingly, IRF3 had no effect on the other two bovine IFN-β promoters. PolyI:C trans-activated the IFN-β1 and IFN-β3 promoters at least 10 fold (<xref rid="F5" ref-type="fig">Figure 5A</xref>). In BK cells, PolyI:C, IRF3 or IRF7 did not readily stimulate IFN-β2 promoter activity. IRF7 activated IFN-β1 promoter activity approximately 20 fold, but IFN-β3 promoter activity was stimulated less than 10 fold in BK cells. Similar results were obtained in CRIB cells (data not shown).</p>
+        <p id="P21">As a comparison to the results obtained in BK and CRIB cells, human embryonic kidney cells (293; <xref rid="F3" ref-type="fig">Figure 3B</xref>) or mouse neuroblastoma cells (neuro-2A; <xref rid="F3" ref-type="fig">Figure 3C</xref>) were cotransfected with a CAT reporter plasmid containing a bovine IFN-β promoter and a transcription factor (IRF3, IRF7 or PolyI:C). The IFN-β1 promoter was stimulated 25 and 80 fold by PolyI:C and IRF7 respectively in 293 cells (<xref rid="F5" ref-type="fig">Figure 5B</xref>). IFN-β3 promoter activity was stimulated more than 60 fold by PolyI:C and 40 fold by IRF7 in human 293 cells (<xref rid="F5" ref-type="fig">Figure 5B</xref>). As observed in low passage BK cells, only the IFN-β3 promoter was trans-activated by IRF3 (<xref rid="F5" ref-type="fig">Figure 5B and C</xref>). In neuro-2A cells, the IFN-β1 promoter was not stimulated by PolyI:C and was only stimulated by IRF7 approximately 10 fold (<xref rid="F5" ref-type="fig">Figure 5C</xref>). These studies suggested that suggested that induction of IFN-b promoter activity was similar in all the cell lines examined.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="S13">
+      <title>Discussion</title>
+      <p id="P22">In this study, we provided evidence that infection of cultured bovine cells with Sendai versus BHV-1 resulted in differential activation of the three bovine IFN-β subtypes. The differences in the IFN-β response following BHV-1 infection of established CRIB cells versus low passage BK cells were unexpected. The results in BK cells were the same in low passage bovine cells derived from turbinate or testicles (data not shown). Blocking de novo protein synthesis with cycloheximide was necessary for inducing IFN-β1 and IFN-β2, but not IFN-β3, RNA levels in low passage bovine cells after BHV-1 infection. The PAA studies further suggest that IE and/or E viral genes were primarily involved with inhibiting IFN-β gene expression. When primary human cells are infected with HSV-1, IFN-β RNA is not readily detected unless de novo protein synthesis is inhibited (<xref ref-type="bibr" rid="R35">Nicholl et al., 2000</xref>; <xref ref-type="bibr" rid="R39">Preston et al., 2001</xref>). Surprisingly, low passage cells were more sensitive to the effects of viral proteins encoded by HSV-1 or BHV-1 that inhibit IFN-β signaling pathways. The reason why BHV-1 proteins inhibited IFN-β signaling in low passage cells more efficiently than established cells is not understood.</p>
+      <p id="P23">To date, bICP0 is the only known BHV-1 encoded protein that can interfere with IFN dependent transcription in transient transfection assays (<xref ref-type="bibr" rid="R19">Henderson et al., 2005</xref>; Jones and Chowdhury, 2009; <xref ref-type="bibr" rid="R40">Saira et al., 2007</xref>; <xref ref-type="bibr" rid="R41">Saira and Jones, 2009</xref>). bICP0 mRNA is an IE and E transcript (<xref ref-type="bibr" rid="R51">Wirth et al., 1992</xref>; <xref ref-type="bibr" rid="R52">Wirth et al., 1989</xref>; <xref ref-type="bibr" rid="R53">Wirth et al., 1991</xref>), and thus bICP0 protein expression is not affected when infected cells are treated with PAA (data not shown). In general, these studies suggested that binding of the BHV-1 virion and/or viral entry induced IFN-β RNA expression in low passage BK cells. Viral protein expression, bICP0 for example, may interfere with stimulation of IFN-β RNA expression after infection of low passage bovine cells. Considering the genome complexity of alpha-herpesvirinae subfamily members, it would not be surprising to find that other BHV-1 proteins inhibit IFN-β signaling pathways.</p>
+      <p id="P24">Since all three bovine IFN-β genes have anti-viral activity (<xref ref-type="bibr" rid="R46">Valarcher et al., 2003</xref>; <xref ref-type="bibr" rid="R50">Wilson et al., 1983</xref>), what is the advantage of having three bovine IFN-β genes in cattle? Based on our studies, we suggest that the presence of three bovine IFN-β genes with distinct promoters ensures that an efficient and rapid innate immune response occurs after infection. In mice, more than a dozen IFN-α genes are clustered on chromosome 4 (<xref ref-type="bibr" rid="R34">Nadeau et al., 1986</xref>; <xref ref-type="bibr" rid="R37">Pitha and Au, 1995</xref>). It is believed that multiple IFN-α genes are important because immediate early expression of IFN-α4 (<xref ref-type="bibr" rid="R30">Marie et al., 1998</xref>) helps to provide a rapid response to virus infection. The sequential induction of delayed IFN-α genes provides a mechanism to amplify the protective response to virus infection. The finding that Sendai virus induced a different IFN-β response when compared to BHV-1 further suggested that distinct signaling pathways regulate activation of the respective bovine IFN-β subtypes.</p>
+      <p id="P25">When compared to the IFN-β1 or IFN-β2 promoter constructs, IFN-β3 promoter activity was strongly activated by virus infection (Sendai or BHV-1), IRF3, IRF7, and polyIC. Since the IFN-β3 promoter has only one nucleotide difference in the PRD I and PRD III sequences relative to the human promoter (<xref rid="F4" ref-type="fig">Figure 4A</xref>), we suggest that sequence variability within PRD I and PRD III of the IFN-β1 and IFN-β2 promoters was the primary reason these promoters were not trans- activated by IRF3. For example, the IFN-β1 promoter contained 3 nucleotide differences in PRD III and PRD I sequences and the IFN-β2 promoter contained 7 nucleotide differences in these domains. The IFN-β2 promoter was not activated by PolyI:C, IRF3, or IRF7 suggesting that the relative low levels of IFN-β2 RNA after infection by BHV-1 or Sendai virus was probably not due to virus encoded or induced products. Collectively, these studies indicated that the 11 nucleotide mismatches in PRD IV, PRD III, and PRD I of IFN-β2 (<xref ref-type="bibr" rid="R48">Wathelet et al., 1998b</xref>) (<xref rid="F4" ref-type="fig">Figure 4A</xref>) interfered with high levels of activation by transcription factors that stimulated the other two bovine IFN-β promoters.</p>
+      <p id="P26">In the context of endogenous IFN-β expression after infection, IFN-β3 RNA levels were not induced by Sendai virus infection regardless of the cell type examined. Although IFN-β3 RNA levels were induced when CRIB cells were infected with BHV-1, this was not the case in low passage bovine cells (even in the presence of cycloheximide), which resulted only in an increase of IFN-β1 and IFN-β2 RNA levels. These results were in contrast to the transient transfection studies that were performed. There are several possible reasons for these differences. For example, additional promoter sequences may be necessary for stimulating IFN-β1 and IFN-β2 RNA levels following infection with Sendai or BHV-1. It is also unlikely that the chromatin structure of the respective IFN-β promoters in the CAT expression plasmids were the same as found in the context of the bovine genome, and this may have influenced the activation of IFN-β subtypes. Studies designed to further understand the signaling pathways that lead to IFN-β expression in cattle following infection are in progress.</p>
+    </sec>
+  </body>
+  <back>
+    <sec id="S14" sec-type="display-objects">
+      <title>Figures</title>
+      <fig id="F1" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <title>Analysis of IFN-β levels in established bovine cells infected with BHV-1 or Sendai virus</title>
+          <p>Established bovine kidney cells (CRIB) were mock infected or infected with BHV-1 (moi = 5) or Sendai virus (40 HA U/mL) for the designated length of time (hours). Total RNA was extracted for each sample and cDNA synthesis performed as previously described (<xref ref-type="bibr" rid="R36">Perez et al., 2008</xref>). The bovine IFN-β specific primers used for PCR reactions were previously described (<xref ref-type="bibr" rid="R36">Perez et al., 2008</xref>), see materials and methods for the sequences of the primers that were used. These results are representative of at least three independent studies. The numbers below the respective panels are relative intensities of the amplified bands. The values from the respective bands were obtained using a Bio-Rad Molecular Imager FX (Molecular Dynamics, CA). The value obtained from the mock-infected sample was arbitrarily set at 1.</p>
+        </caption>
+        <graphic xlink:href="nihms273318f1"/>
+      </fig>
+      <fig id="F2" position="float">
+        <label>Figure 2</label>
+        <caption>
+          <title>Analysis of IFN-β levels in low passage bovine cells infected with BHV-1 or Sendai virus</title>
+          <p>BK cells (less than 10 passages) were mock infected or infected with BHV-1 (moi = 5) or Sendai virus (40 HA U/mL) for the designated length of time (hours). Total RNA was extracted for each sample and cDNA synthesis performed as previously described (<xref ref-type="bibr" rid="R36">Perez et al., 2008</xref>). The bovine IFN-β specific primers used for PCR reactions were previously described (<xref ref-type="bibr" rid="R36">Perez et al., 2008</xref>). These results are representative of at least three independent studies. The numbers below the respective panels are relative intensities of the amplified bands. The values from the respective bands were obtained using a Bio-Rad Molecular Imager FX (Molecular Dynamics, CA). The value obtained from the mock-infected sample was set at 1.</p>
+        </caption>
+        <graphic xlink:href="nihms273318f2"/>
+      </fig>
+      <fig id="F3" position="float">
+        <label>Figure 3</label>
+        <caption>
+          <title>Analysis of the effect that cycloheximide and phosphonoacetic acid has on IFN-β RNA levels after infection with BHV-1</title>
+          <p>Low passage BK cells were infected with BHV-1 using a moi of 5 as described in the legend of <xref rid="F1" ref-type="fig">Figure 1</xref> and <xref rid="F2" ref-type="fig">2</xref>. Cells were treated with 100 ug/ml cycloheximide (CHX; Panel A) or 400 ug/ml phosponoacetic acid (PAA; Panel B). At the indicated times after infection (hours), RNA was prepared and IFN-β RNA levels examined as described in <xref rid="F1" ref-type="fig">Figures 1</xref> and <xref rid="F2" ref-type="fig">2</xref>. These studies are representative of 3 independent experiments.</p>
+        </caption>
+        <graphic xlink:href="nihms273318f3"/>
+      </fig>
+      <fig id="F4" position="float">
+        <label>Figure 4</label>
+        <caption>
+          <title>Activation of bovine IFN-β promoters by BHV-1 or Sendai virus infection</title>
+          <p><bold>Panel A:</bold> The human IFN-β promoter (H) and the three bovine IFN-β promoters (1, 2, or 3) are shown (-110 to the TATA box). The position of the human IFN-β enhancesome, which is required for activating the IFN response is divided into four transcription factor binding domains: PRD IV (grey), PRD III (yellow), PRD I (green), and PRD II (light blue). The unshaded nucleotides denote differences in the bovine IFN-β promoter relative to the human promoter. The TATA box is highlighted in pink. Sequences containing the 3 IFN-β promoters were cloned into pCAT-basic reporter plasmid (Promega, catalog no. E1871) at unique XhoI and KpnI restriction enzyme sites. DNA sequencing was performed to confirm each promoter construct was intact.</p>
+          <p><bold>Panel B:</bold> Approximately 1.8 × 10<sup>6</sup> CRIB cells were transfected with 3 μg of the designated bovine IFN-β promoter constructs. Cultures were transfected with Lipofectamine™ 2000 transfection reagent (Invitrogen, catalog no. 11668-019) according to the manufacturer's instructions. At 24 hours after transfection, these cells were mock infected or infected with BHV-1 using a moi of 5.</p>
+          <p><bold>Panel C:</bold> Approximately 1.8 × 10<sup>6</sup> CRIB cells were transfected with 3 μg of the designated bovine IFN-β promoter construct. At 24 hours after transfection, these cells were mock infected or infected with 40 HAU/mL of Sendai virus. Cell lysate was harvested at different time points after infection as designed and CAT enzymatic activity measured as previously described (<xref ref-type="bibr" rid="R54">Workman et al., 2009</xref>; <xref ref-type="bibr" rid="R55">Workman and Jones, 2010</xref>). The amount of cell lysate used for measuring CAT activity was normalized after measuring protein levels in the respective samples, and the levels of beta-galactosidase expressed in the respective cells when cotransfected with the plasmid pCMV β-Gal. The results are the average of at least three independent studies.</p>
+        </caption>
+        <graphic xlink:href="nihms273318f4"/>
+      </fig>
+      <fig id="F5" position="float">
+        <label>Figure 5</label>
+        <caption>
+          <title>Activation of bovine IFN-β promoter activity by synthetic dsRNA (Poly (I:C), IRF3, and IRF7</title>
+          <p>Approximately 1 × 10<sup>5</sup> of low passage BK cells (Panel A), human embryonic kidney cells (293; Panel B) or mouse neuroblastoma cells (neuro-2A; Panel C) were cotransfected with the designated bovine IFN-β promoter CAT reporter plasmid (1 μg DNA), 0.5 μg Poly (I:C) (PIC; Invivogen, catalog # tlrl-pic) or 1 μg of IRF3 or IRF7 expression plasmid. Neuro-2A and 293 cells were purchased from ATCC. Plasmid DNA was maintained at the same concentration by including a blank expression vector (pcDNA3.1). At approximately 40 hours after transfection, cell lysate was collected and CAT enzymatic activity measured. The amount of cell lysate used for measuring CAT activity was normalized after measuring protein levels in the respective samples, and the levels of beta-galactosidase expressed in the respective cells when cotransfected with the plasmid pCMV β-Gal. The results are an average of three independent experiments.</p>
+        </caption>
+        <graphic xlink:href="nihms273318f5"/>
+      </fig>
+    </sec>
+    <ack id="S15">
+      <p>This research was supported by grants from the USDA and Agriculture and Food Research Initiative Competitive Grants Program (08-00891 and 09-01653). A grant to the Nebraska Center for Virology (1P20RR15635) also supported certain aspects of these studies.</p>
+    </ack>
+    <ref-list>
+      <ref id="R1">
+        <citation citation-type="book">
+          <person-group person-group-type="author">
+            <collab>U.S. Department of Agriculture</collab>
+          </person-group>
+          <year>1996</year>
+          <source>Agricultural Statistics Board. (NASS)</source>
+          <publisher-name>N.A.S.S.</publisher-name>
+          <comment>May 17, 1996</comment>
+        </citation>
+      </ref>
+      <ref id="R2">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Abril</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Engels</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Limman</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Hilbe</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Albini</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Franchini</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Suter</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ackerman</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Both viral and host factors contribute to neurovirulence of bovine herpesvirus 1 and 5 in interferon receptor-deficient mice</article-title>
+          <source>J Virol</source>
+          <volume>78</volume>
+          <issue>7</issue>
+          <fpage>3644</fpage>
+          <lpage>3653</lpage>
+          <pub-id pub-id-type="pmid">15016885</pub-id>
+        </citation>
+      </ref>
+      <ref id="R3">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Au</surname>
+              <given-names>WC</given-names>
+            </name>
+            <name>
+              <surname>Moore</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Lowther</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Juang</surname>
+              <given-names>YT</given-names>
+            </name>
+            <name>
+              <surname>Pitha</surname>
+              <given-names>PM</given-names>
+            </name>
+          </person-group>
+          <year>1995</year>
+          <article-title>Identification of a member of the interferon regulatory factor family that binds to the interferon-stimulated response element and activates expression of interferon-induced genes</article-title>
+          <source>Proc Natl Acad Sci USA</source>
+          <volume>92</volume>
+          <fpage>11657</fpage>
+          <lpage>11661</lpage>
+          <pub-id pub-id-type="pmid">8524823</pub-id>
+        </citation>
+      </ref>
+      <ref id="R4">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Barnes</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Lubyova</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Pitha</surname>
+              <given-names>PM</given-names>
+            </name>
+          </person-group>
+          <year>2002</year>
+          <article-title>On the control of IRF in host defense</article-title>
+          <source>J Interferon Cytokine Res</source>
+          <volume>22</volume>
+          <fpage>59</fpage>
+          <lpage>71</lpage>
+          <pub-id pub-id-type="pmid">11846976</pub-id>
+        </citation>
+      </ref>
+      <ref id="R5">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Becker</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Asher</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Cohen</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Weinberg-Zahlering</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Shlomai</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>1977</year>
+          <article-title>Phosphonoacetic acid-resistant mutants of herpes simplex virus: effect of phosphonoacetic acid on virus replication and in vitro deoxyribonucleic acid synthesis in isolated nuclei</article-title>
+          <source>Antimicrob Agents Chemother</source>
+          <volume>11</volume>
+          <issue>5</issue>
+          <fpage>919</fpage>
+          <lpage>22</lpage>
+          <pub-id pub-id-type="pmid">195514</pub-id>
+        </citation>
+      </ref>
+      <ref id="R6">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bowie</surname>
+              <given-names>AG</given-names>
+            </name>
+            <name>
+              <surname>Unterholzner</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Viral evasion and subversion of pattern-recognition receptor signalling</article-title>
+          <source>Nature Reviews Immunology</source>
+          <volume>8</volume>
+          <fpage>911</fpage>
+          <lpage>922</lpage>
+        </citation>
+      </ref>
+      <ref id="R7">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bowland</surname>
+              <given-names>SL</given-names>
+            </name>
+            <name>
+              <surname>Shewen</surname>
+              <given-names>PE</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>Bovine respiratory disease: commercial vaccines currently available in Canada</article-title>
+          <source>Can Vet J</source>
+          <volume>41</volume>
+          <issue>1</issue>
+          <fpage>33</fpage>
+          <lpage>48</lpage>
+          <pub-id pub-id-type="pmid">10642871</pub-id>
+        </citation>
+      </ref>
+      <ref id="R8">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Carter</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Weinberg</surname>
+              <given-names>AD</given-names>
+            </name>
+            <name>
+              <surname>Pollard</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Reeves</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Magnuson</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Magnuson</surname>
+              <given-names>NS</given-names>
+            </name>
+          </person-group>
+          <year>1989</year>
+          <article-title>Inhibition of T-lymphocyte mitogenic responses and effects on cell functions by bovine herpesvirus 1</article-title>
+          <source>J Virol</source>
+          <volume>63</volume>
+          <issue>4</issue>
+          <fpage>1525</fpage>
+          <lpage>30</lpage>
+          <pub-id pub-id-type="pmid">2538643</pub-id>
+        </citation>
+      </ref>
+      <ref id="R9">
+        <citation citation-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chowdhury</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>Bovine herpesvirus type 1 (BHV-1) is an important cofactor in the bovine respiratory disease complex</article-title>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Broderson</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Cooper</surname>
+              <given-names>VL</given-names>
+            </name>
+          </person-group>
+          <source>Veterinary Clinics of North America, Food Animal Practice, Bovine Respiratory Disease</source>
+          <publisher-name>W.B Saunders Company</publisher-name>
+          <publisher-loc>Philadelphia, PA</publisher-loc>
+        </citation>
+      </ref>
+      <ref id="R10">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Doyle</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Vaidya</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>O'Connell</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Dadgostar</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Dempsey</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Rao</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Sun</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Haberland</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Modlin</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Cheng</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <year>2002</year>
+          <article-title>IRF3 mediates a TLR3/TLR4-specific antiviral gene program</article-title>
+          <source>Immunity</source>
+          <volume>17</volume>
+          <fpage>251</fpage>
+          <lpage>263</lpage>
+          <pub-id pub-id-type="pmid">12354379</pub-id>
+        </citation>
+      </ref>
+      <ref id="R11">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fraefel</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Zeng</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Choffat</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Engels</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Schwyzer</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ackermann</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>1994</year>
+          <article-title>Identification and zinc dependence of the bovine herpesvirus 1 transactivator protein BICP0</article-title>
+          <source>J Virol</source>
+          <volume>68</volume>
+          <issue>5</issue>
+          <fpage>3154</fpage>
+          <lpage>62</lpage>
+          <pub-id pub-id-type="pmid">8151780</pub-id>
+        </citation>
+      </ref>
+      <ref id="R12">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fujita</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Kimura</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Barsoumian</surname>
+              <given-names>EL</given-names>
+            </name>
+            <name>
+              <surname>Taniguchi</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <year>1989</year>
+          <article-title>Induction of endogenous IFN-alpha and IFN-beta genes by a regulatory transcription factor, IRF-1</article-title>
+          <source>Nature</source>
+          <volume>337</volume>
+          <fpage>270</fpage>
+          <lpage>272</lpage>
+          <pub-id pub-id-type="pmid">2911367</pub-id>
+        </citation>
+      </ref>
+      <ref id="R13">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Goodbourn</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Zinn</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Maniatis</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <year>1985</year>
+          <article-title>Human beta-interferon gene expression is regulated by an inducible enhancer element</article-title>
+          <source>Cell</source>
+          <volume>41</volume>
+          <fpage>509</fpage>
+          <lpage>520</lpage>
+          <pub-id pub-id-type="pmid">3986910</pub-id>
+        </citation>
+      </ref>
+      <ref id="R14">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Griebel</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Ohmann</surname>
+              <given-names>HB</given-names>
+            </name>
+            <name>
+              <surname>Lawman</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Babiuk</surname>
+              <given-names>LA</given-names>
+            </name>
+          </person-group>
+          <year>1990</year>
+          <article-title>The interaction between bovine herpesvirus type 1 and activated bovine T lymphocytes</article-title>
+          <source>J Gen Virol</source>
+          <volume>71</volume>
+          <issue>Pt 2</issue>
+          <fpage>369</fpage>
+          <lpage>77</lpage>
+          <pub-id pub-id-type="pmid">2155290</pub-id>
+        </citation>
+      </ref>
+      <ref id="R15">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Griebel</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Qualtiere</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Davis</surname>
+              <given-names>WC</given-names>
+            </name>
+            <name>
+              <surname>Gee</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Bielefeldt Ohmann</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Lawman</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Babiuk</surname>
+              <given-names>LA</given-names>
+            </name>
+          </person-group>
+          <year>1987a</year>
+          <article-title>T lymphocyte population dynamics and function following a primary bovine herpesvirus type-1 infection</article-title>
+          <source>Viral Immunol</source>
+          <volume>1</volume>
+          <issue>4</issue>
+          <fpage>287</fpage>
+          <lpage>304</lpage>
+          <pub-id pub-id-type="pmid">3509949</pub-id>
+        </citation>
+      </ref>
+      <ref id="R16">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Griebel</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Qualtiere</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Davis</surname>
+              <given-names>WC</given-names>
+            </name>
+            <name>
+              <surname>Lawman</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Babiuk</surname>
+              <given-names>LA</given-names>
+            </name>
+          </person-group>
+          <year>1987b</year>
+          <article-title>Bovine peripheral blood leukocyte subpopulation dynamics following a primary bovine herpesvirus-1 infection</article-title>
+          <source>Viral Immunol</source>
+          <volume>1</volume>
+          <issue>4</issue>
+          <fpage>267</fpage>
+          <lpage>86</lpage>
+          <pub-id pub-id-type="pmid">3509948</pub-id>
+        </citation>
+      </ref>
+      <ref id="R17">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hamel</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Simard</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Mapping of the bovine herpesvirus 1 glycoprotein C promoter region and its specific transactivation by the viral BICP27 gene product</article-title>
+          <source>Arch Virol</source>
+          <volume>148</volume>
+          <issue>1</issue>
+          <fpage>137</fpage>
+          <lpage>52</lpage>
+          <pub-id pub-id-type="pmid">12536300</pub-id>
+        </citation>
+      </ref>
+      <ref id="R18">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hay</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Jamieson</surname>
+              <given-names>AT</given-names>
+            </name>
+            <name>
+              <surname>Rixon</surname>
+              <given-names>FJ</given-names>
+            </name>
+            <name>
+              <surname>Moss</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Dargan</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Subak-Sharpe</surname>
+              <given-names>JH</given-names>
+            </name>
+          </person-group>
+          <year>1977</year>
+          <article-title>The effect of phosphonoacetic acid on herpes viruses</article-title>
+          <source>J Antimicrob Chemother</source>
+          <volume>3</volume>
+          <supplement>A</supplement>
+          <fpage>63</fpage>
+          <lpage>70</lpage>
+          <pub-id pub-id-type="pmid">193822</pub-id>
+        </citation>
+      </ref>
+      <ref id="R19">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Henderson</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>The bovine herpesvirus 1 gene encoding infected cell protein 0 (bICP0) can inhibit interferon-dependent transcription in the absence of other viral genes</article-title>
+          <source>J Gen Virol</source>
+          <volume>86</volume>
+          <fpage>2697</fpage>
+          <lpage>2702</lpage>
+          <pub-id pub-id-type="pmid">16186222</pub-id>
+        </citation>
+      </ref>
+      <ref id="R20">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Honda</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Yanai</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Negishi</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Asagiri</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Saton</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Mizutani</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Shimada</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Ohba</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Takaoka</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Yoshida</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Taniguchi</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>IRF-7 is the master regulator of type-I interferon-dependent immune responses</article-title>
+          <source>Nature</source>
+          <volume>434</volume>
+          <fpage>772</fpage>
+          <lpage>777</lpage>
+          <pub-id pub-id-type="pmid">15800576</pub-id>
+        </citation>
+      </ref>
+      <ref id="R21">
+        <citation citation-type="web">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ishmael</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>Gasping for dollars</article-title>
+          <source>Angus Beef Bulletin</source>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://www.mycattle.com/health/updates/gaspingfordollars">www.mycattle.com/health/updates/gaspingfordollars</ext-link>
+          </comment>
+        </citation>
+      </ref>
+      <ref id="R22">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jones</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Regulation of innate immune responses by bovine herpesvirus 1 and infected cell protein 0</article-title>
+          <source>Viruses</source>
+          <volume>1</volume>
+          <fpage>255</fpage>
+          <lpage>275</lpage>
+        </citation>
+      </ref>
+      <ref id="R23">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jones</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Chowdhury</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>A review of the biology of bovine herpesvirus type 1 (BHV-1), its role as a cofactor in the bovine respiratory disease complex, and development of improved vaccines</article-title>
+          <source>Adv in Animal Health</source>
+          <volume>8</volume>
+          <fpage>187</fpage>
+          <lpage>205</lpage>
+        </citation>
+      </ref>
+      <ref id="R24">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Juang</surname>
+              <given-names>YT</given-names>
+            </name>
+            <name>
+              <surname>Lowther</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Kellum</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Au</surname>
+              <given-names>WC</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Hiscott</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Pitha</surname>
+              <given-names>PM</given-names>
+            </name>
+          </person-group>
+          <year>1998</year>
+          <article-title>Primary activation of interferon A and interferon B gene transcription by interferon refulatory factor 3</article-title>
+          <source>PNAS (USA)</source>
+          <volume>95</volume>
+          <fpage>9837</fpage>
+          <lpage>9842</lpage>
+          <pub-id pub-id-type="pmid">9707562</pub-id>
+        </citation>
+      </ref>
+      <ref id="R25">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kapil</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Basaraba</surname>
+              <given-names>RJ</given-names>
+            </name>
+          </person-group>
+          <year>1997</year>
+          <article-title>Infectious bovine rhinotracheitis, parainfluenza-3, and respiratory coronavirus. Bovine respiratory disease update</article-title>
+          <source>Veterinary Clinics of North America Food Animal Practice</source>
+          <volume>13</volume>
+          <fpage>455</fpage>
+          <lpage>461</lpage>
+        </citation>
+      </ref>
+      <ref id="R26">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>King</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Goodburn</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>1994</year>
+          <article-title>The beta-interferon promoter responds to priming through multiple independent regulatory elements</article-title>
+          <source>J Biol Chem</source>
+          <volume>269</volume>
+          <fpage>30609</fpage>
+          <lpage>30615</lpage>
+          <pub-id pub-id-type="pmid">7982980</pub-id>
+        </citation>
+      </ref>
+      <ref id="R27">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Leinbach</surname>
+              <given-names>SS</given-names>
+            </name>
+            <name>
+              <surname>Reno</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>LF</given-names>
+            </name>
+            <name>
+              <surname>Isbell</surname>
+              <given-names>AF</given-names>
+            </name>
+            <name>
+              <surname>Boezi</surname>
+              <given-names>JA</given-names>
+            </name>
+          </person-group>
+          <year>1976</year>
+          <article-title>Mechanism of phosphonoacetate inhibition of herpesvirus-induced DNA polymerase</article-title>
+          <source>Biochemistry</source>
+          <volume>15</volume>
+          <issue>2</issue>
+          <fpage>426</fpage>
+          <lpage>30</lpage>
+          <pub-id pub-id-type="pmid">55273</pub-id>
+        </citation>
+      </ref>
+      <ref id="R28">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lundberg</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Welander</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Han</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Cantin</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Herpes simplex virus type 1 DNA is immunostimulatory in vitro and in vivo</article-title>
+          <source>J of Virology</source>
+          <volume>77</volume>
+          <fpage>11158</fpage>
+          <lpage>11169</lpage>
+          <pub-id pub-id-type="pmid">14512563</pub-id>
+        </citation>
+      </ref>
+      <ref id="R29">
+        <citation citation-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Maniatis</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Whittemore</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Du</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Fan</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Keller</surname>
+              <given-names>AD</given-names>
+            </name>
+            <name>
+              <surname>Palombella</surname>
+              <given-names>VJ</given-names>
+            </name>
+            <name>
+              <surname>Thanos</surname>
+              <given-names>DN</given-names>
+            </name>
+          </person-group>
+          <year>1992</year>
+          <article-title>Positive and negative control of human interferon-b gene expression</article-title>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>M</surname>
+              <given-names>SL</given-names>
+            </name>
+            <name>
+              <surname>Yamamoto</surname>
+              <given-names>KR</given-names>
+            </name>
+          </person-group>
+          <source>Transcriptional Regulation</source>
+          <fpage>1193</fpage>
+          <lpage>1220</lpage>
+          <publisher-name>Cold Spring Harobr Laboratory Press</publisher-name>
+          <publisher-loc>Cold Spring Harbor, New York</publisher-loc>
+        </citation>
+      </ref>
+      <ref id="R30">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Marie</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Durbin</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Levy</surname>
+              <given-names>DE</given-names>
+            </name>
+          </person-group>
+          <year>1998</year>
+          <article-title>Differential viral induction of distinct interferon-a genes by positive feedback through interferon regulatory factor-7</article-title>
+          <source>The EMBO Journal</source>
+          <volume>17</volume>
+          <issue>22</issue>
+          <fpage>6660</fpage>
+          <lpage>6669</lpage>
+          <pub-id pub-id-type="pmid">9822609</pub-id>
+        </citation>
+      </ref>
+      <ref id="R31">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meyer</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>C/EBP-alpha cooperates with bTIF to activate the bovine herpesvirus 1 immediate early transcription unit 1 promoter</article-title>
+          <source>J Neurovirology</source>
+          <volume>2</volume>
+          <fpage>1</fpage>
+          <lpage>8</lpage>
+        </citation>
+      </ref>
+      <ref id="R32">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Misra</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Walker</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Hayes</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>O'Hare</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <year>1995</year>
+          <article-title>The bovine herpesvirus alpha gene trans-inducing factor activates transcription by mechanisms different from those of its herpes simplex virus type 1 counterpart VP16</article-title>
+          <source>J Virol</source>
+          <volume>69</volume>
+          <issue>9</issue>
+          <fpage>5209</fpage>
+          <lpage>16</lpage>
+          <pub-id pub-id-type="pmid">7636962</pub-id>
+        </citation>
+      </ref>
+      <ref id="R33">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Munshi</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Merika</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Yie</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Senger</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Thanos</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <year>1998</year>
+          <article-title>Acetylation of HMG I(Y) by CBP turns off IFN beta expression by disrupting the enhanceosome</article-title>
+          <source>Mol Cell</source>
+          <volume>2</volume>
+          <issue>4</issue>
+          <fpage>457</fpage>
+          <lpage>67</lpage>
+          <pub-id pub-id-type="pmid">9809067</pub-id>
+        </citation>
+      </ref>
+      <ref id="R34">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nadeau</surname>
+              <given-names>JH</given-names>
+            </name>
+            <name>
+              <surname>Berger</surname>
+              <given-names>FG</given-names>
+            </name>
+            <name>
+              <surname>Pitha</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>Sidman</surname>
+              <given-names>CL</given-names>
+            </name>
+            <name>
+              <surname>Worrall</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <year>1986</year>
+          <article-title>Rearrangement of genes located on homologous chromosomal segments in mouse and man: the location of genes for a-interferon and b-interferon, a-1 acid glycoprotein-1 and -2 and aminolevulinate deydratase on mouse chromosome 4</article-title>
+          <source>Genetics</source>
+          <volume>114</volume>
+          <fpage>1239</fpage>
+          <lpage>1255</lpage>
+          <pub-id pub-id-type="pmid">3100390</pub-id>
+        </citation>
+      </ref>
+      <ref id="R35">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nicholl</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Robinson</surname>
+              <given-names>LH</given-names>
+            </name>
+            <name>
+              <surname>Preston</surname>
+              <given-names>CM</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>Activation of cellular interferon-responsive genes after infection of human cells with herpes simplex virus type 1</article-title>
+          <source>J Gen Virology</source>
+          <volume>81</volume>
+          <fpage>2215</fpage>
+          <lpage>2218</lpage>
+          <pub-id pub-id-type="pmid">10950979</pub-id>
+        </citation>
+      </ref>
+      <ref id="R36">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Perez</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Meyer</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Saira</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Doster</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Premature expression of the latency-related RNA encoded by bovine herpesvirus 1 correlates with higher levels of beta interferon RNA expression in productively infected cells</article-title>
+          <source>J Gen Virol</source>
+          <volume>89</volume>
+          <fpage>1338</fpage>
+          <lpage>1345</lpage>
+          <pub-id pub-id-type="pmid">18474548</pub-id>
+        </citation>
+      </ref>
+      <ref id="R37">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pitha</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>Au</surname>
+              <given-names>WC</given-names>
+            </name>
+          </person-group>
+          <year>1995</year>
+          <article-title>Induction of interferon a gene expression</article-title>
+          <source>Semin Virol</source>
+          <volume>6</volume>
+          <fpage>151</fpage>
+          <lpage>159</lpage>
+        </citation>
+      </ref>
+      <ref id="R38">
+        <citation citation-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Powell</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <source>Bovine Respiratory Disease</source>
+          <publisher-name>University of Arkansas Division of Agriculture Cooperative Extension Service</publisher-name>
+          <comment>FSA, 3082</comment>
+        </citation>
+      </ref>
+      <ref id="R39">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Preston</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Harman</surname>
+              <given-names>AN</given-names>
+            </name>
+            <name>
+              <surname>Nicholl</surname>
+              <given-names>MJ</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>Activation of interferon response factor-3 in human cells infected with herpes simplex virus type 1 or human cytomegalovirus</article-title>
+          <source>J Virol</source>
+          <volume>75</volume>
+          <fpage>8909</fpage>
+          <lpage>8916</lpage>
+          <pub-id pub-id-type="pmid">11533154</pub-id>
+        </citation>
+      </ref>
+      <ref id="R40">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Saira</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>The infected cell protein 0 encoded by bovine herpesvirus 1 (bICP0) induces degradation of interferon response factor 3 (IRF3), and consequently inhibits beta interferon promoter activity</article-title>
+          <source>J Virol</source>
+          <volume>81</volume>
+          <fpage>3077</fpage>
+          <lpage>3086</lpage>
+          <pub-id pub-id-type="pmid">17215277</pub-id>
+        </citation>
+      </ref>
+      <ref id="R41">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Saira</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>The infected cell protein 0 encoded by bovine herpesvirus 1 (bICP0) associates with interferon regulatory factor 7 (IRF7), and consequently inhibits beta interferon promoter activity</article-title>
+          <source>J Virol</source>
+          <volume>83</volume>
+          <fpage>3977</fpage>
+          <lpage>3981</lpage>
+          <pub-id pub-id-type="pmid">19176627</pub-id>
+        </citation>
+      </ref>
+      <ref id="R42">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Servant</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Tenoever</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <year>2002</year>
+          <article-title>Overlapping and distinct mechanisms regulating IRF-3 and IRF-7 function</article-title>
+          <source>J of Interferon and Cytokine Research</source>
+          <volume>22</volume>
+          <fpage>49</fpage>
+          <lpage>58</lpage>
+          <pub-id pub-id-type="pmid">11846975</pub-id>
+        </citation>
+      </ref>
+      <ref id="R43">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sharma</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>tenOever</surname>
+              <given-names>BR</given-names>
+            </name>
+            <name>
+              <surname>Grandvaux</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>GP</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Hiscott</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Trigerring the interferon antiviral response through and IKK-related pathway</article-title>
+          <source>Science</source>
+          <volume>300</volume>
+          <fpage>1148</fpage>
+          <lpage>1151</lpage>
+          <pub-id pub-id-type="pmid">12702806</pub-id>
+        </citation>
+      </ref>
+      <ref id="R44">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Strahle</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Marq</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Britini</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Hausmann</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kolakofsky</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Garcin</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Activation of the beta interferon promoter by unnatural Sendai virus infection requires RIG-I and is inhibited by viral C proteins</article-title>
+          <source>J Virol</source>
+          <volume>81</volume>
+          <fpage>12227</fpage>
+          <lpage>12237</lpage>
+          <pub-id pub-id-type="pmid">17804509</pub-id>
+        </citation>
+      </ref>
+      <ref id="R45">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tikoo</surname>
+              <given-names>SK</given-names>
+            </name>
+            <name>
+              <surname>Campos</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Babiuk</surname>
+              <given-names>LA</given-names>
+            </name>
+          </person-group>
+          <year>1995</year>
+          <article-title>Bovine herpesvirus 1 (BHV-1): biology, pathogenesis, and control</article-title>
+          <source>Adv Virus Res</source>
+          <volume>45</volume>
+          <fpage>191</fpage>
+          <lpage>223</lpage>
+          <pub-id pub-id-type="pmid">7793325</pub-id>
+        </citation>
+      </ref>
+      <ref id="R46">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Valarcher</surname>
+              <given-names>JF</given-names>
+            </name>
+            <name>
+              <surname>Furze</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Wyld</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Cook</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Conzelman</surname>
+              <given-names>KK</given-names>
+            </name>
+            <name>
+              <surname>Taylor</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Role of alpha/beta interferons in the attenuation and immunogenecity of recombinant bovine respiratory syncitial viruses lacking NS proteins</article-title>
+          <source>J Virol</source>
+          <volume>77</volume>
+          <fpage>8426</fpage>
+          <lpage>8439</lpage>
+          <pub-id pub-id-type="pmid">12857912</pub-id>
+        </citation>
+      </ref>
+      <ref id="R47">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wathelet</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>CH</given-names>
+            </name>
+            <name>
+              <surname>Parekh</surname>
+              <given-names>BS</given-names>
+            </name>
+            <name>
+              <surname>Ronco</surname>
+              <given-names>LV</given-names>
+            </name>
+            <name>
+              <surname>Howley</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>Maniatis</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <year>1998a</year>
+          <article-title>Virus infection induces the assembly of coordinately activated transcription factors on the IFN-b enhancer in vivo</article-title>
+          <source>Molec Cell</source>
+          <volume>1</volume>
+          <fpage>507</fpage>
+          <lpage>518</lpage>
+          <pub-id pub-id-type="pmid">9660935</pub-id>
+        </citation>
+      </ref>
+      <ref id="R48">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wathelet</surname>
+              <given-names>MG</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>CH</given-names>
+            </name>
+            <name>
+              <surname>Parekh</surname>
+              <given-names>BS</given-names>
+            </name>
+            <name>
+              <surname>Ronco</surname>
+              <given-names>LV</given-names>
+            </name>
+            <name>
+              <surname>Howley</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>Maniatis</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <year>1998b</year>
+          <article-title>Virus infection induces the assembly of coordinately activated transcription factors on the IFN-b enhancer in vivo</article-title>
+          <source>Mol Cell</source>
+          <volume>1</volume>
+          <fpage>507</fpage>
+          <lpage>518</lpage>
+          <pub-id pub-id-type="pmid">9660935</pub-id>
+        </citation>
+      </ref>
+      <ref id="R49">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Whiteside</surname>
+              <given-names>ST</given-names>
+            </name>
+            <name>
+              <surname>Visvanathan</surname>
+              <given-names>KV</given-names>
+            </name>
+            <name>
+              <surname>Goodburn</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>1992</year>
+          <article-title>Identification of novel factors that bind to the PRD I region of the human beta-interferon promoter</article-title>
+          <source>Nucl Acids Res</source>
+          <volume>20</volume>
+          <fpage>1531</fpage>
+          <lpage>1538</lpage>
+          <pub-id pub-id-type="pmid">1579446</pub-id>
+        </citation>
+      </ref>
+      <ref id="R50">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wilson</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Jeffreys</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Barrie</surname>
+              <given-names>PA</given-names>
+            </name>
+          </person-group>
+          <year>1983</year>
+          <article-title>A comparison of vertebrate interferon gene families deteced by hybridization with human interferon DNA</article-title>
+          <source>J Mol Biol</source>
+          <volume>166</volume>
+          <fpage>457</fpage>
+          <lpage>475</lpage>
+          <pub-id pub-id-type="pmid">6306247</pub-id>
+        </citation>
+      </ref>
+      <ref id="R51">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wirth</surname>
+              <given-names>UV</given-names>
+            </name>
+            <name>
+              <surname>Fraefel</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Vogt</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Vlcek</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Paces</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Schwyzer</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>1992</year>
+          <article-title>Immediate-early RNA 2.9 and early RNA 2.6 of bovine herpesvirus 1 are 3′ coterminal and encode a putative zinc finger transactivator protein</article-title>
+          <source>J Virol</source>
+          <volume>66</volume>
+          <issue>5</issue>
+          <fpage>2763</fpage>
+          <lpage>72</lpage>
+          <pub-id pub-id-type="pmid">1313901</pub-id>
+        </citation>
+      </ref>
+      <ref id="R52">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wirth</surname>
+              <given-names>UV</given-names>
+            </name>
+            <name>
+              <surname>Gunkel</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Engels</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Schwyzer</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>1989</year>
+          <article-title>Spatial and temporal distribution of bovine herpesvirus 1 transcripts</article-title>
+          <source>J Virol</source>
+          <volume>63</volume>
+          <issue>11</issue>
+          <fpage>4882</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">2552160</pub-id>
+        </citation>
+      </ref>
+      <ref id="R53">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wirth</surname>
+              <given-names>UV</given-names>
+            </name>
+            <name>
+              <surname>Vogt</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Schwyzer</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>1991</year>
+          <article-title>The three major immediate-early transcripts of bovine herpesvirus 1 arise from two divergent and spliced transcription units</article-title>
+          <source>J Virol</source>
+          <volume>65</volume>
+          <issue>1</issue>
+          <fpage>195</fpage>
+          <lpage>205</lpage>
+          <pub-id pub-id-type="pmid">1845884</pub-id>
+        </citation>
+      </ref>
+      <ref id="R54">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Workman</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Perez</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Doster</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Dexamethasone treatment of calves latently infected with bovine herpesvirus 1 (BHV-1) leads to activation of the bICP0 early promoter, in part by the cellular transcription factor C/EBP-alpha</article-title>
+          <source>J Virol</source>
+          <volume>83</volume>
+          <fpage>8800</fpage>
+          <lpage>8809</lpage>
+          <pub-id pub-id-type="pmid">19553330</pub-id>
+        </citation>
+      </ref>
+      <ref id="R55">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Workman</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>Bovine herpesvirus 1 productive infection and bICP0 early promoter activity are stimulated by E2F1</article-title>
+          <source>J Virol</source>
+          <volume>84</volume>
+          <fpage>6308</fpage>
+          <lpage>6317</lpage>
+          <pub-id pub-id-type="pmid">20410283</pub-id>
+        </citation>
+      </ref>
+      <ref id="R56">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yates</surname>
+              <given-names>WDG</given-names>
+            </name>
+          </person-group>
+          <year>1982</year>
+          <article-title>A review of infectious bovine rhinotracheitis, shipping fever pneumonia, and viral-bacterial synergism in respiratory diesease of cattle</article-title>
+          <source>Can J Comp Med</source>
+          <volume>46</volume>
+          <fpage>225</fpage>
+          <lpage>263</lpage>
+          <pub-id pub-id-type="pmid">6290011</pub-id>
+        </citation>
+      </ref>
+      <ref id="R57">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yoneyama</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Suhara</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Fukuhara</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Fukuda</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Nishida</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Fujita</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <year>1998</year>
+          <article-title>Direct triggering of the type 1 interferon system by virus infection: activation of a transcription factors containing IRF-3 and CBP/p300</article-title>
+          <source>EMBO J</source>
+          <volume>17</volume>
+          <fpage>1087</fpage>
+          <lpage>1095</lpage>
+          <pub-id pub-id-type="pmid">9463386</pub-id>
+        </citation>
+      </ref>
+      <ref id="R58">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>The bovine herpesvirus 1 immediate-early protein (bICP0) associates with histone deacetylase 1 to activate transcription</article-title>
+          <source>J Virol</source>
+          <volume>75</volume>
+          <issue>20</issue>
+          <fpage>9571</fpage>
+          <lpage>9578</lpage>
+          <pub-id pub-id-type="pmid">11559788</pub-id>
+        </citation>
+      </ref>
+      <ref id="R59">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Identification of functional domains within the bICP0 protein encoded by BHV-1</article-title>
+          <source>J Gen Virol</source>
+          <volume>86</volume>
+          <fpage>879</fpage>
+          <lpage>886</lpage>
+          <pub-id pub-id-type="pmid">15784882</pub-id>
+        </citation>
+      </ref>
+      <ref id="R60">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Jiang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>The bovine herpes virus 1 (BHV-1) immediate early protein (bICP0) interacts with the histone acetyltransferase p300, and these interactions correlate with stimulation of gC promoter activity</article-title>
+          <source>J Gen Virol</source>
+          <volume>87</volume>
+          <fpage>1843</fpage>
+          <lpage>1851</lpage>
+          <pub-id pub-id-type="pmid">16760386</pub-id>
+        </citation>
+      </ref>
+    </ref-list>
+    <fn-group>
+      <fn id="FN1">
+        <p content-type="publisher-disclaimer">This is a PDF file of an unedited manuscript that has been accepted for publication. As a service to our customers we are providing this early version of the manuscript. The manuscript will undergo copyediting, typesetting, and review of the resulting proof before it is published in its final citable form. Please note that during the production process errors may be discovered which could affect the content, and all legal disclaimers that apply to the journal pertain.</p>
+      </fn>
+    </fn-group>
+  </back>
+</article>

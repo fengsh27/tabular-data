@@ -1,0 +1,648 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">0370543</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">537</journal-id>
+      <journal-id journal-id-type="nlm-ta">Angew Chem Int Ed Engl</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Angew. Chem. Int. Ed. Engl.</journal-id>
+      <journal-title-group>
+        <journal-title>Angewandte Chemie (International ed. in English)</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1433-7851</issn>
+      <issn pub-type="epub">1521-3773</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">24801708</article-id>
+      <article-id pub-id-type="pmc">4127133</article-id>
+      <article-id pub-id-type="doi">10.1002/anie.201402449</article-id>
+      <article-id pub-id-type="manuscript">NIHMS602983</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Copper-Catalyzed Regioselective <italic>ortho</italic> C–H Cyanation of Vinylarenes<xref ref-type="fn" rid="FN2">**</xref></article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Yang</surname>
+            <given-names>Yang</given-names>
+          </name>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Buchwald</surname>
+            <given-names>Stephen L.</given-names>
+            <prefix>Prof. Dr.</prefix>
+          </name>
+          <email>sbuchwal@mit.edu</email>
+        </contrib>
+        <aff id="A1">Department of Chemistry, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, MA 02139 (USA)</aff>
+      </contrib-group>
+      <pub-date pub-type="nihms-submitted">
+        <day>12</day>
+        <month>6</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>6</day>
+        <month>5</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <day>11</day>
+        <month>8</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>11</day>
+        <month>8</month>
+        <year>2015</year>
+      </pub-date>
+      <volume>53</volume>
+      <issue>33</issue>
+      <fpage>8677</fpage>
+      <lpage>8681</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P1">A copper-based catalytic technique for the regioselective ortho C–H cyanation of vinylarenes has been developed. This method provides an effective means for the selective functionalization of vinylarene derivatives. A copper-catalyzed cyanative dearomatization mechanism is proposed to account for the regiochemical course of this reaction.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>C–H activation</kwd>
+        <kwd>copper</kwd>
+        <kwd>cyanation</kwd>
+        <kwd>difunctionalization</kwd>
+        <kwd>dearomatization</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <p id="P2">Transition-metal-catalyzed direct C–H functionalization is an attractive strategy to streamline chemical synthesis.<sup>[<xref rid="R1" ref-type="bibr">1</xref>,<xref rid="R2" ref-type="bibr">2</xref>]</sup> During the past decade, chelation-assisted C–H activation has been employed to devise a range of synthetically useful functionalization reactions of aromatic compounds.<sup>[<xref rid="R1" ref-type="bibr">1</xref>]</sup> In these processes, relatively strong σ-directing groups, such as pyridines<sup>[<xref rid="R1" ref-type="bibr">1b,1c,1h</xref>]</sup> and carbonyls,<sup>[<xref rid="R1" ref-type="bibr">1a,1e,1f,1g</xref>]</sup> are usually required to coordinate to the transition metal center, thereby enhancing reactivity as well as controlling site selectivity. In contrast, weakly coordinating π-directing groups, such as C=C double bonds, have rarely been utilized, and in particular, the <italic>ortho</italic> selective C–H functionalization of styrenes remains a challenge.<sup>[<xref rid="R3" ref-type="bibr">3</xref>,<xref rid="R4" ref-type="bibr">4</xref>]</sup></p>
+    <p id="P3">Herein we report a combined copper-catalyzed borylation/<italic>ortho</italic> C–H cyanation reaction of vinylarenes. In this process, the C=C double bond is used as both a reaction site and a ‘directing group’ for the C–H functionalization event (<xref rid="F1" ref-type="fig">Scheme 1</xref>). Overall, this method introduces a synthetically versatile cyano group,<sup>[<xref rid="R5" ref-type="bibr">5</xref>]</sup> while simultaneously performing a catalytic anti-Markovnikov hydrofunctionalization of the olefin.<sup>[<xref rid="R6" ref-type="bibr">6</xref>]</sup></p>
+    <p id="P4">As a part of our work to develop catalytic methods for the enantioselective difunctionalization of olefins,<sup>[<xref rid="R7" ref-type="bibr">7</xref>,<xref rid="R8" ref-type="bibr">8</xref>]</sup> we sought to use the benzylcopper intermediate (<bold>II</bold>) generated from hydrocupration<sup>[<xref rid="R7" ref-type="bibr">7</xref>]</sup> or borocupration<sup>[<xref rid="R9" ref-type="bibr">9</xref>]</sup> of styrenes (<bold>I</bold>) in a subsequent electrophilic functionalization process. In an attempt to develop a cyanoborylation reaction, we unexpectedly found that the <italic>ortho</italic> C–H functionalized product (<bold>3a</bold>) was generated in 90% yield upon treatment of 2-vinylnaphthalene (<bold>1</bold>) with the electrophilic cyanating agent NCTS (<bold>2</bold>)<sup>[<xref rid="R10" ref-type="bibr">10</xref>]</sup> in the presence of a copper catalyst derived from CyJohnPhos<sup>[<xref rid="R11" ref-type="bibr">11</xref>]</sup> (<bold>L1</bold>) (<xref rid="T1" ref-type="table">Table 1</xref>, entries 1–2). Notably, cyanation at the less sterically congested C3 position (<bold>3b</bold>) was not observed and benzylic cyanation product (<bold>3c</bold>) was obtained in &lt;5% yield as indicated by <sup>1</sup>H NMR spectroscopy. Further experimentation revealed that replacement of the phosphine bound cyclohexyl groups with phenyl (<bold>L2</bold>) or <italic>tert</italic>-butyl (<bold>L3</bold>) resulted in catalysts that were less effective. Increasing the steric bulk of the ligand’s biaryl backbone did not lead to further improvement (entries 5–6). Employing bidentate phosphine ligands such as dppp (<bold>L6</bold>) also furnished the C1 cyanation product, albeit in lower yields, while the use of BINAP (<bold>L7</bold>) provided &lt;5% product under otherwise identical reaction conditions. Among various bidentate phosphine ligands examined, DPPBz (<bold>L8</bold>) gave the best results, providing <bold>3a</bold> in 95% yield along with &lt;5% of <bold>3c</bold>.<sup>[<xref rid="R12" ref-type="bibr">12</xref>]</sup> Other commonly used electrophilic cyanating agents such as TsCN were ineffective for the current transformation (entry 11).</p>
+    <p id="P5">We next explored the substrate scope with respect to the vinylarene component (<xref rid="F2" ref-type="fig">Scheme 2</xref>). A variety of 2-vinylnaphthalenes bearing electron-donating or electron-withdrawing functional groups were converted to the C1 cyanated product in good yields (<bold>4b</bold>–<bold>4h</bold>). C3 cyanation was not observed for any of the cases examined. Sterically hindered substrates could be successfully transformed with this method (<bold>4i</bold> and <bold>4j</bold>), and 1-vinylnaphthalenes also represented excellent substrates (<bold>4k</bold> and <bold>4l</bold>). Further, a heterocyclic vinylarene (<bold>4m</bold>) as well as those bearing pendent heterocyclic motifs (<bold>4n</bold>–<bold>4p</bold>) were compatible. Using the <bold>L8</bold>-based catalyst, α- and β-branched vinylnaphthalenes (<bold>4q</bold> and <bold>4r</bold>) also reacted to provide the cyanation products, although in lower yields (see the SI). Finally, styrene can also be cyanated in a similar fashion (73%), although other simple aromatic substrates such as 4-methoxystyrene afforded lower yields of the desired product (30–40%).</p>
+    <p id="P6">To demonstrate the synthetic versatility of the products derived from this method, several derivatization reactions were performed (<xref rid="F3" ref-type="fig">Scheme 3</xref>). Oxidation of the boronate afforded alcohol <bold>5a</bold>,<sup>[<xref rid="R13" ref-type="bibr">13</xref>]</sup> while the BCl<sub>3</sub> mediated amination with benzyl azide provided amine <bold>5b</bold>.<sup>[<xref rid="R14" ref-type="bibr">14</xref>]</sup> Suzuki–Miyaura coupling using our RuPhos-based palladacycle precatalyst<sup>[<xref rid="R15" ref-type="bibr">15</xref>]</sup> delivered the unsymmetrical 1,2-diarylethane bearing a heterocyclic core (<bold>5c</bold>). Furthermore, alcohol <bold>5a</bold> was converted to lactone <bold>5d</bold>, amide <bold>5e</bold><sup>[<xref rid="R16" ref-type="bibr">16</xref>]</sup> and tetrazole <bold>5f</bold><sup>[<xref rid="R17" ref-type="bibr">17</xref>]</sup> in excellent yields.</p>
+    <p id="P7">A great deal of effort has been devoted to the selective functionalization of the biaryl backbone of BINOL in an attempt to access new catalysts for enantioselective transformations. However, the regioselective C–H functionalization of BINOL derivatives at the C4 or C5 position remains underdeveloped (<xref rid="F4" ref-type="fig">Scheme 4</xref>).<sup>[<xref rid="R18" ref-type="bibr">18</xref>]</sup> To further demonstrate the utility of our method, we converted <bold>6a</bold> and <bold>6b</bold> into the corresponding cyanated products <bold>7a</bold> and <bold>7b</bold>, respectively. In both examples, a single C–H cyanated isomer was generated. Additionally, the fully substituted and differentiated benzene ring of <bold>7b</bold> is generated with acceptable yield.<sup>[<xref rid="R19" ref-type="bibr">19</xref>]</sup></p>
+    <p id="P8">We were also able to effect the formal <italic>ortho</italic> C–H cyanation of 2-vinylnaphthalenes by treating <bold>5a</bold> with DBU in the presence of MsCl at room temperature to furnish <bold>8</bold> in 85% yield (<xref rid="F5" ref-type="fig">Scheme 5</xref>). By regenerating the olefin, the C1 selectivity that we observe complements that of other directed C–H activation processes, where the functionalization of less sterically hindered C3 carbon is usually favored.<sup>[<xref rid="R20" ref-type="bibr">20</xref>]</sup></p>
+    <p id="P9">In order to gain insight into the reaction mechanism of this process, we prepared 1-deutero-2-vinylnaphthalene (<bold>9</bold>) and subjected it to the standard reaction conditions (<xref rid="F6" ref-type="fig">Scheme 6</xref>). It was found that 88% of the deuterium of <bold>9</bold> was incorporated into <bold>10</bold> at the benzylic position, indicating that a formal 1,3-hydrogen transposition has taken place. In addition, we were able to demonstrate that this hydrogen migration is likely an intramolecular process with respect to the vinylnaphthalene substrate by performing a crossover experiment using <bold>9</bold> and <bold>11</bold>. After confirming that <bold>9</bold> and <bold>11</bold> react at similar rates, we found that converting <bold>11</bold> to <bold>4h</bold> in the presence of <bold>9</bold> did not result in deuterium incorporation, while the amount of deuterium incorporated in <bold>10</bold> was unaffected. Furthermore, a competition experiment between <bold>9</bold> and <bold>1</bold> showed a kinetic isotope effect (KIE) of 0.98±0.02, which is suggestive that the rate-determining step precedes hydrogen migration.</p>
+    <p id="P10">Based on these results, we propose that the current reaction proceeds through a cyanative dearomatization mechanism (<xref rid="F7" ref-type="fig">Scheme 7</xref>). Transmetalation of the phosphine-ligated copper catalyst <bold>12</bold> with the diboron reagent provides <bold>13</bold>, which undergoes subsequent borocupration to afford benzylcopper <bold>14a</bold>.<sup>[<xref rid="R9" ref-type="bibr">9a,h</xref>]</sup> Electrophilic cyanation of <bold>14a</bold> with NCTS (<bold>2</bold>) proceeds in an S<sub>E</sub>2′ fashion, delivering the dearomatized intermediate <bold>16</bold>, which then undergoes a rapid hydrogen transfer to generate the C1 cyanated product.<sup>[<xref rid="R21" ref-type="bibr">21</xref>–<xref rid="R24" ref-type="bibr">24</xref>]</sup> Cyanation at the C3 position (<bold>17</bold>) would disrupt the aromaticity of both benzene rings and is therefore disfavored. At this point the exact reason for the favorable C1 cyanation over benzylic cyanation remains unclear; we are performing computational studies to gain an accurate understanding into this regiochemical outcome.</p>
+    <p id="P11">In conclusion, we have developed a copper-catalyzed <italic>ortho</italic> C–H cyanation of vinylarenes. This protocol provides an effective means to access an array of synthetically versatile building blocks that can be easily transformed into a variety of complex molecules. This C–H functionalization process features unique site selectivity, which originates from a copper-catalyzed electrophilic cyanative dearomatization mechanism. Designing new catalysts to broaden the substrate scope, developing enantioselective variants of the current transformation and engaging other electrophiles of significant synthetic utility in this process are topics of ongoing investigations in our laboratory.</p>
+    <sec sec-type="supplementary-material" id="S1">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="SD1">
+        <label>Supporting Information</label>
+        <media xlink:href="NIHMS602983-supplement-Supporting_Information.pdf" orientation="portrait" xlink:type="simple" id="d36e515" position="anchor"/>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn id="FN1">
+        <p>In celebration of the 100th anniversary of the Max-Planck Institut für Kohlenforschung</p>
+      </fn>
+      <fn id="FN2" fn-type="supported-by">
+        <label>**</label>
+        <p>We thank the National Institutes of Health (GM46059) for financial support. We are grateful to Drs. Aaron C. Sather (MIT), Yi-Ming Wang (MIT) and Daniel T. Cohen (MIT) for insightful discussions and help with the preparation of this manuscript. MIT has patents on some of the ligands used in this study from which S.L.B. as well as current or former coworkers receive royalty payments. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institute of Health.</p>
+      </fn>
+      <fn id="FN3">
+        <p><xref rid="SD1" ref-type="supplementary-material">Supporting information</xref> for this article is available on the WWW under <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1002/anie.201xxxxxx">http://dx.doi.org/10.1002/anie.201xxxxxx</ext-link></p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <ref id="R1">
+        <label>1</label>
+        <note>
+          <p>Selected reviews on directed C–H activation: <element-citation publication-type="journal" id="d36e540"><person-group person-group-type="author"><name><surname>Kakiuchi</surname><given-names>F</given-names></name><name><surname>Sekine</surname><given-names>S</given-names></name><name><surname>Tanaka</surname><given-names>Y</given-names></name><name><surname>Kamatani</surname><given-names>A</given-names></name><name><surname>Sonoda</surname><given-names>M</given-names></name><name><surname>Chatani</surname><given-names>N</given-names></name><name><surname>Murai</surname><given-names>S</given-names></name></person-group><source>Bull Chem Soc Jpn</source><year>1995</year><volume>68</volume><fpage>62</fpage></element-citation><element-citation publication-type="journal" id="d36e587"><person-group person-group-type="author"><name><surname>Jun</surname><given-names>C-H</given-names></name><name><surname>Hong</surname><given-names>J-B</given-names></name><name><surname>Lee</surname><given-names>D-Y</given-names></name></person-group><source>Synlett</source><year>1999</year><volume>1</volume></element-citation><element-citation publication-type="journal" id="d36e612"><person-group person-group-type="author"><name><surname>Daugulis</surname><given-names>O</given-names></name><name><surname>Do</surname><given-names>HQ</given-names></name><name><surname>Shabashov</surname><given-names>D</given-names></name></person-group><source>Acc Chem Res</source><year>2009</year><volume>42</volume><fpage>1074</fpage><pub-id pub-id-type="pmid">19552413</pub-id></element-citation><element-citation publication-type="journal" id="d36e639"><person-group person-group-type="author"><name><surname>Albrecht</surname><given-names>M</given-names></name></person-group><source>Chem Rev</source><year>2010</year><volume>110</volume><fpage>576</fpage><pub-id pub-id-type="pmid">20017477</pub-id></element-citation><element-citation publication-type="journal" id="d36e656"><person-group person-group-type="author"><name><surname>Colby</surname><given-names>DA</given-names></name><name><surname>Bergman</surname><given-names>RG</given-names></name><name><surname>Ellman</surname><given-names>JA</given-names></name></person-group><source>Chem Rev</source><year>2010</year><volume>110</volume><fpage>624</fpage><pub-id pub-id-type="pmid">19438203</pub-id></element-citation><element-citation publication-type="journal" id="d36e683"><person-group person-group-type="author"><name><surname>Yeung</surname><given-names>CS</given-names></name><name><surname>Dong</surname><given-names>VM</given-names></name></person-group><source>Chem Rev</source><year>2011</year><volume>111</volume><fpage>1215</fpage><pub-id pub-id-type="pmid">21391561</pub-id></element-citation><element-citation publication-type="journal" id="d36e705"><person-group person-group-type="author"><name><surname>Engle</surname><given-names>KM</given-names></name><name><surname>Mei</surname><given-names>TS</given-names></name><name><surname>Wasa</surname><given-names>M</given-names></name><name><surname>Yu</surname><given-names>JQ</given-names></name></person-group><source>Acc Chem Res</source><year>2012</year><volume>45</volume><fpage>788</fpage><pub-id pub-id-type="pmid">22166158</pub-id></element-citation><element-citation publication-type="journal" id="d36e737"><person-group person-group-type="author"><name><surname>Neufeldt</surname><given-names>SR</given-names></name><name><surname>Sanford</surname><given-names>MS</given-names></name></person-group><source>Acc Chem Res</source><year>2012</year><volume>45</volume><fpage>936</fpage><pub-id pub-id-type="pmid">22554114</pub-id></element-citation></p>
+        </note>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <note>
+          <p>Selected reviews on other C–H functionalizations: <element-citation publication-type="journal" id="d36e765"><person-group person-group-type="author"><name><surname>Mkhalid</surname><given-names>IA</given-names></name><name><surname>Barnard</surname><given-names>JH</given-names></name><name><surname>Marder</surname><given-names>TB</given-names></name><name><surname>Murphy</surname><given-names>JM</given-names></name><name><surname>Hartwig</surname><given-names>JF</given-names></name></person-group><source>Chem Rev</source><year>2010</year><volume>110</volume><fpage>890</fpage><pub-id pub-id-type="pmid">20028025</pub-id></element-citation><element-citation publication-type="journal" id="d36e802"><person-group person-group-type="author"><name><surname>Wendlandt</surname><given-names>AE</given-names></name><name><surname>Suess</surname><given-names>AM</given-names></name><name><surname>Stahl</surname><given-names>SS</given-names></name></person-group><source>Angew Chem, Int Ed</source><year>2011</year><volume>50</volume><fpage>11062</fpage></element-citation><element-citation publication-type="journal" id="d36e829"><person-group person-group-type="author"><name><surname>Davies</surname><given-names>HML</given-names></name><name><surname>Morton</surname><given-names>D</given-names></name></person-group><source>Chem Soc Rev</source><year>2011</year><volume>40</volume><fpage>1857</fpage><pub-id pub-id-type="pmid">21359404</pub-id></element-citation></p>
+        </note>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <note>
+          <p>For a Pd-catalyzed C–H activation directed by an ortho allylic C=C double bond: <element-citation publication-type="journal" id="d36e857"><person-group person-group-type="author"><name><surname>Gandeepan</surname><given-names>P</given-names></name><name><surname>Cheng</surname><given-names>CH</given-names></name></person-group><source>J Am Chem Soc</source><year>2012</year><volume>134</volume><fpage>5738</fpage><comment>Styrenes were unreactive under these conditions</comment><pub-id pub-id-type="pmid">22432641</pub-id></element-citation></p>
+        </note>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tobisu</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hyodo</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Onoe</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Chatani</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <source>Chem Commun</source>
+          <year>2008</year>
+          <fpage>6013</fpage>
+        </element-citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Larock</surname>
+              <given-names>RC</given-names>
+            </name>
+          </person-group>
+          <source>Comprehensive Organic Transformations</source>
+          <publisher-name>Wiley-VCH</publisher-name>
+          <publisher-loc>New York</publisher-loc>
+          <year>1988</year>
+        </element-citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <note>
+          <p>For a review: <element-citation publication-type="journal" id="d36e934"><person-group person-group-type="author"><name><surname>Beller</surname><given-names>M</given-names></name><name><surname>Seavad</surname><given-names>J</given-names></name><name><surname>Tillack</surname><given-names>A</given-names></name><name><surname>Jiao</surname><given-names>H</given-names></name></person-group><source>Angew Chem, Int Ed</source><year>2004</year><volume>43</volume><fpage>3368</fpage></element-citation>For a recent example: <element-citation publication-type="journal" id="d36e965"><person-group person-group-type="author"><name><surname>Dong</surname><given-names>G</given-names></name><name><surname>Teo</surname><given-names>P</given-names></name><name><surname>Wickens</surname><given-names>ZK</given-names></name><name><surname>Grubbs</surname><given-names>RH</given-names></name></person-group><source>Science</source><year>2011</year><volume>333</volume><fpage>1609</fpage><pub-id pub-id-type="pmid">21921194</pub-id></element-citation></p>
+        </note>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <note>
+          <p>For example, we have recently demonstrated the utility of benzylcopper intermediates generated from hydrocupration of styrenes in an enantioselective amination process: <element-citation publication-type="journal" id="d36e1001"><person-group person-group-type="author"><name><surname>Zhu</surname><given-names>S</given-names></name><name><surname>Niljianskul</surname><given-names>N</given-names></name><name><surname>Buchwald</surname><given-names>SL</given-names></name></person-group><source>J Am Chem Soc</source><year>2013</year><volume>135</volume><fpage>15746</fpage><pub-id pub-id-type="pmid">24106781</pub-id></element-citation></p>
+        </note>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhu</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Buchwald</surname>
+              <given-names>SL</given-names>
+            </name>
+          </person-group>
+          <source>Angew Chem, Int Ed</source>
+          <year>2013</year>
+          <volume>52</volume>
+          <fpage>12655</fpage>
+        </element-citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <note>
+          <p>Examples of borocupration of styrenes: <element-citation publication-type="journal" id="d36e1055"><person-group person-group-type="author"><name><surname>Laitar</surname><given-names>DS</given-names></name><name><surname>Tsui</surname><given-names>EY</given-names></name><name><surname>Sadighi</surname><given-names>JP</given-names></name></person-group><source>Organometallics</source><year>2006</year><volume>25</volume><fpage>2405</fpage></element-citation><element-citation publication-type="journal" id="d36e1082"><person-group person-group-type="author"><name><surname>Lillo</surname><given-names>V</given-names></name><name><surname>Fructos</surname><given-names>MR</given-names></name><name><surname>Ramírez</surname><given-names>J</given-names></name><name><surname>Braga</surname><given-names>AAC</given-names></name><name><surname>Maseras</surname><given-names>F</given-names></name><name><surname>Díaz-Requejo</surname><given-names>MM</given-names></name><name><surname>Pérez</surname><given-names>PJ</given-names></name><name><surname>Fernández</surname><given-names>E</given-names></name></person-group><source>Chem –Eur J</source><year>2007</year><volume>13</volume><fpage>2614</fpage><pub-id pub-id-type="pmid">17183598</pub-id></element-citation><element-citation publication-type="journal" id="d36e1134"><person-group person-group-type="author"><name><surname>Lee</surname><given-names>Y</given-names></name><name><surname>Hoveyda</surname><given-names>AH</given-names></name></person-group><source>J Am Chem Soc</source><year>2009</year><volume>131</volume><fpage>3160</fpage><pub-id pub-id-type="pmid">19256564</pub-id></element-citation><element-citation publication-type="journal" id="d36e1156"><person-group person-group-type="author"><name><surname>Zhong</surname><given-names>C</given-names></name><name><surname>Kunii</surname><given-names>S</given-names></name><name><surname>Kosaka</surname><given-names>Y</given-names></name><name><surname>Sawamura</surname><given-names>M</given-names></name><name><surname>Ito</surname><given-names>H</given-names></name></person-group><source>J Am Chem Soc</source><year>2010</year><volume>132</volume><fpage>11440</fpage><pub-id pub-id-type="pmid">20684557</pub-id></element-citation><element-citation publication-type="journal" id="d36e1193"><person-group person-group-type="author"><name><surname>Ito</surname><given-names>H</given-names></name><name><surname>Toyoda</surname><given-names>T</given-names></name><name><surname>Sawamura</surname><given-names>M</given-names></name></person-group><source>J Am Chem Soc</source><year>2010</year><volume>132</volume><fpage>5990</fpage><pub-id pub-id-type="pmid">20384300</pub-id></element-citation><element-citation publication-type="journal" id="d36e1220"><person-group person-group-type="author"><name><surname>Corberán</surname><given-names>R</given-names></name><name><surname>Mszar</surname><given-names>NW</given-names></name><name><surname>Hoveyda</surname><given-names>AH</given-names></name></person-group><source>Angew Chem, Int Ed</source><year>2011</year><volume>50</volume><fpage>7079</fpage></element-citation><element-citation publication-type="journal" id="d36e1247"><person-group person-group-type="author"><name><surname>Matsuda</surname><given-names>N</given-names></name><name><surname>Hirano</surname><given-names>K</given-names></name><name><surname>Satoh</surname><given-names>T</given-names></name><name><surname>Miura</surname><given-names>M</given-names></name></person-group><source>J Am Chem Soc</source><year>2013</year><volume>135</volume><fpage>11440</fpage></element-citation>Computational studies: <element-citation publication-type="journal" id="d36e1280"><person-group person-group-type="author"><name><surname>Dang</surname><given-names>L</given-names></name><name><surname>Zhao</surname><given-names>H</given-names></name><name><surname>Lin</surname><given-names>Z</given-names></name><name><surname>Marder</surname><given-names>TB</given-names></name></person-group><source>Organometallics</source><year>2007</year><volume>26</volume><fpage>2824</fpage></element-citation></p>
+        </note>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <note>
+          <p>NCTS (<bold>2</bold>) is a safe and bench stable crystalline compound that can be easily prepared from tosyl chloride and phenylurea. For the synthesis of NCTS: <element-citation publication-type="journal" id="d36e1321"><person-group person-group-type="author"><name><surname>Kurzer</surname><given-names>F</given-names></name></person-group><source>J Chem Soc</source><year>1949</year><fpage>1034</fpage></element-citation><element-citation publication-type="journal" id="d36e1336"><person-group person-group-type="author"><name><surname>Kurzer</surname><given-names>F</given-names></name></person-group><source>J Chem Soc</source><year>1949</year><fpage>3029</fpage></element-citation>For the application of NCTS in electrophilic cyanation: <element-citation publication-type="journal" id="d36e1352"><person-group person-group-type="author"><name><surname>Anbarasan</surname><given-names>P</given-names></name><name><surname>Neumann</surname><given-names>H</given-names></name><name><surname>Beller</surname><given-names>M</given-names></name></person-group><source>Angew Chem, Int Ed</source><year>2011</year><volume>50</volume><fpage>519</fpage></element-citation><element-citation publication-type="journal" id="d36e1379"><person-group person-group-type="author"><name><surname>Anbarasan</surname><given-names>P</given-names></name><name><surname>Neumann</surname><given-names>H</given-names></name><name><surname>Beller</surname><given-names>M</given-names></name></person-group><source>Chem –Eur J</source><year>2011</year><volume>17</volume><fpage>4271</fpage></element-citation><element-citation publication-type="journal" id="d36e1406"><person-group person-group-type="author"><name><surname>Yang</surname><given-names>Y</given-names></name><name><surname>Zhang</surname><given-names>Y</given-names></name><name><surname>Wang</surname><given-names>J</given-names></name></person-group><source>Org Lett</source><year>2011</year><volume>13</volume><fpage>5068</fpage><pub-id pub-id-type="pmid">21875036</pub-id></element-citation><element-citation publication-type="journal" id="d36e1433"><person-group person-group-type="author"><name><surname>Gong</surname><given-names>TJ</given-names></name><name><surname>Xiao</surname><given-names>B</given-names></name><name><surname>Cheng</surname><given-names>WM</given-names></name><name><surname>Su</surname><given-names>W</given-names></name><name><surname>Xu</surname><given-names>J</given-names></name><name><surname>Liu</surname><given-names>ZJ</given-names></name><name><surname>Liu</surname><given-names>L</given-names></name><name><surname>Fu</surname><given-names>Y</given-names></name></person-group><source>J Am Chem Soc</source><year>2013</year><volume>135</volume><fpage>10630</fpage><pub-id pub-id-type="pmid">23822812</pub-id></element-citation><element-citation publication-type="journal" id="d36e1485"><person-group person-group-type="author"><name><surname>Chaitanya</surname><given-names>M</given-names></name><name><surname>Yadagiri</surname><given-names>D</given-names></name><name><surname>Anbarasan</surname><given-names>P</given-names></name></person-group><source>Org Lett</source><year>2013</year><volume>15</volume><fpage>4960</fpage><pub-id pub-id-type="pmid">24041400</pub-id></element-citation><element-citation publication-type="journal" id="d36e1513"><person-group person-group-type="author"><name><surname>Liu</surname><given-names>W</given-names></name><name><surname>Ackermann</surname><given-names>L</given-names></name></person-group><source>Chem Comm</source><year>2014</year><volume>50</volume><fpage>1878</fpage><pub-id pub-id-type="pmid">24402371</pub-id></element-citation></p>
+        </note>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wolfe</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Buchwald</surname>
+              <given-names>SL</given-names>
+            </name>
+          </person-group>
+          <source>Angew Chem, Int Ed</source>
+          <year>1999</year>
+          <volume>38</volume>
+          <fpage>2413</fpage>
+        </element-citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <note>
+          <p>For a detailed ligand evaluation, see the <xref rid="SD1" ref-type="supplementary-material">Supporting Information</xref>.</p>
+        </note>
+      </ref>
+      <ref id="R13">
+        <label>13</label>
+        <note>
+          <p>The structure of <bold>15a</bold> was confirmed by X-ray diffraction analysis. CCDC 986749 contains the <xref rid="SD1" ref-type="supplementary-material">supplementary crystallographic data</xref> for this paper. These data can be obtained free of charge from The Cambridge Crystallographic Data Centre via <ext-link ext-link-type="uri" xlink:href="www.ccdc.cam.ac.uk/data_request/cif">www.ccdc.cam.ac.uk/data_request/cif</ext-link>.</p>
+          <p>
+            <graphic xlink:href="nihms602983u1.jpg" position="float" orientation="portrait"/>
+          </p>
+        </note>
+      </ref>
+      <ref id="R14">
+        <label>14</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kubota</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Yamamoto</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Ito</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <source>J Am Chem Soc</source>
+          <year>2013</year>
+          <volume>135</volume>
+          <fpage>2635</fpage>
+          <pub-id pub-id-type="pmid">23351005</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R15">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bruno</surname>
+              <given-names>NC</given-names>
+            </name>
+            <name>
+              <surname>Tudge</surname>
+              <given-names>MT</given-names>
+            </name>
+            <name>
+              <surname>Buchwald</surname>
+              <given-names>SL</given-names>
+            </name>
+          </person-group>
+          <source>Chem Sci</source>
+          <year>2013</year>
+          <volume>4</volume>
+          <fpage>916</fpage>
+          <pub-id pub-id-type="pmid">23667737</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R16">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Caddick</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Haynes</surname>
+              <given-names>AKK</given-names>
+            </name>
+            <name>
+              <surname>Judd</surname>
+              <given-names>DB</given-names>
+            </name>
+            <name>
+              <surname>Williams</surname>
+              <given-names>MRV</given-names>
+            </name>
+          </person-group>
+          <source>Tetrahedron Lett</source>
+          <year>2000</year>
+          <volume>41</volume>
+          <fpage>3513</fpage>
+        </element-citation>
+      </ref>
+      <ref id="R17">
+        <label>17</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Demko</surname>
+              <given-names>ZP</given-names>
+            </name>
+            <name>
+              <surname>Sharpless</surname>
+              <given-names>KB</given-names>
+            </name>
+          </person-group>
+          <source>J Org Chem</source>
+          <year>2001</year>
+          <volume>66</volume>
+          <fpage>7945</fpage>
+          <pub-id pub-id-type="pmid">11722189</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R18">
+        <label>18</label>
+        <element-citation publication-type="journal" id="R18-2">
+          <label>(a)</label>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brunel</surname>
+              <given-names>JM</given-names>
+            </name>
+          </person-group>
+          <source>Chem Rev</source>
+          <year>2005</year>
+          <volume>105</volume>
+          <fpage>857</fpage>
+          <pub-id pub-id-type="pmid">15755079</pub-id>
+        </element-citation>
+        <element-citation publication-type="journal" id="R18-3">
+          <label>(b)</label>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Yekata</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Yudin</surname>
+              <given-names>AK</given-names>
+            </name>
+          </person-group>
+          <source>Chem Rev</source>
+          <year>2003</year>
+          <volume>103</volume>
+          <fpage>3155</fpage>
+          <pub-id pub-id-type="pmid">12914495</pub-id>
+        </element-citation>
+        <element-citation publication-type="journal" id="R18-4">
+          <label>(c)</label>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Berthod</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Mignani</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Woodward</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Lemaire</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <source>Chem Rev</source>
+          <year>2005</year>
+          <volume>105</volume>
+          <fpage>1801</fpage>
+          <pub-id pub-id-type="pmid">15884790</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R19">
+        <label>19</label>
+        <note>
+          <p>For reviews on alternative methods to prepare fully substituted arenes: <element-citation publication-type="journal" id="d36e1782"><person-group person-group-type="author"><name><surname>Chopade</surname><given-names>PR</given-names></name><name><surname>Louie</surname><given-names>J</given-names></name></person-group><source>Adv Synth Catal</source><year>2006</year><volume>348</volume><fpage>2307</fpage></element-citation><element-citation publication-type="journal" id="d36e1804"><person-group person-group-type="author"><name><surname>van Otterlo</surname><given-names>WAL</given-names></name><name><surname>de Koning</surname><given-names>CB</given-names></name></person-group><source>Chem Rev</source><year>2009</year><volume>109</volume><fpage>3743</fpage><pub-id pub-id-type="pmid">19618929</pub-id></element-citation></p>
+        </note>
+      </ref>
+      <ref id="R20">
+        <label>20</label>
+        <note>
+          <p>For an example: <element-citation publication-type="journal" id="d36e1832"><person-group person-group-type="author"><name><surname>Kalyani</surname><given-names>D</given-names></name><name><surname>Dick</surname><given-names>AR</given-names></name><name><surname>Anani</surname><given-names>WQ</given-names></name><name><surname>Sanford</surname><given-names>MS</given-names></name></person-group><source>Tetrahedron</source><year>2006</year><volume>62</volume><fpage>11483</fpage></element-citation></p>
+        </note>
+      </ref>
+      <ref id="R21">
+        <label>21</label>
+        <note>
+          <p>For a recent review on the chemistry of benzylmetal species: <element-citation publication-type="journal" id="d36e1868"><person-group person-group-type="author"><name><surname>Trost</surname><given-names>BM</given-names></name><name><surname>Czabaniuk</surname><given-names>LC</given-names></name></person-group><source>Angew Chem Int Ed</source><year>2014</year><volume>53</volume><fpage>2826</fpage></element-citation></p>
+        </note>
+      </ref>
+      <ref id="R22">
+        <label>22</label>
+        <note>
+          <p>For Pd-catalyzed nucleophilic aromatic C–H functionalization processes involving dearomatization mechanism, see: allylation: <element-citation publication-type="journal" id="d36e1894"><person-group person-group-type="author"><name><surname>Bao</surname><given-names>M</given-names></name><name><surname>Nakamura</surname><given-names>H</given-names></name><name><surname>Yamamoto</surname><given-names>Y</given-names></name></person-group><source>J Am Chem Soc</source><year>2001</year><volume>123</volume><fpage>759</fpage><pub-id pub-id-type="pmid">11456600</pub-id></element-citation>Related computational studies: <element-citation publication-type="journal" id="d36e1922"><person-group person-group-type="author"><name><surname>Ariafard</surname><given-names>A</given-names></name><name><surname>Lin</surname><given-names>A</given-names></name></person-group><source>J Am Chem Soc</source><year>2006</year><volume>128</volume><fpage>13010</fpage><pub-id pub-id-type="pmid">17002398</pub-id></element-citation>amination: <element-citation publication-type="journal" id="d36e1943"><person-group person-group-type="author"><name><surname>Zhang</surname><given-names>S</given-names></name><name><surname>Wang</surname><given-names>Y</given-names></name><name><surname>Feng</surname><given-names>X</given-names></name><name><surname>Bao</surname><given-names>M</given-names></name></person-group><source>J Am Chem Soc</source><year>2012</year><volume>134</volume><fpage>5492</fpage><pub-id pub-id-type="pmid">22409404</pub-id></element-citation>Related computational studies: <element-citation publication-type="journal" id="d36e1976"><person-group person-group-type="author"><name><surname>Xie</surname><given-names>H</given-names></name><name><surname>Zhang</surname><given-names>H</given-names></name><name><surname>Lin</surname><given-names>Z</given-names></name></person-group><source>Organometallics</source><year>2013</year><volume>32</volume><fpage>2336</fpage></element-citation></p>
+        </note>
+      </ref>
+      <ref id="R23">
+        <label>23</label>
+        <note>
+          <p>For a Cu-catalyzed 1,3-hologen migration via an oxidative addition mechanism, see: <element-citation publication-type="journal" id="d36e2008"><person-group person-group-type="author"><name><surname>Grigg</surname><given-names>RD</given-names></name><name><surname>Van Hoveln</surname><given-names>R</given-names></name><name><surname>Schomaker</surname><given-names>JM</given-names></name></person-group><source>J Am Chem Soc</source><year>2012</year><volume>134</volume><fpage>16131</fpage><pub-id pub-id-type="pmid">22985198</pub-id></element-citation></p>
+        </note>
+      </ref>
+      <ref id="R24">
+        <label>24</label>
+        <note>
+          <p>An alternative mechanism involving oxidative addition to a Cu(III) intermediate is also possible, see reference [<xref rid="R8" ref-type="bibr">8</xref>].</p>
+        </note>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig id="F1" orientation="portrait" position="float">
+      <label>Scheme 1</label>
+      <caption>
+        <p>Copper-Catalyzed Borylation/<italic>ortho</italic> C–H Cyanation of Styrenes.</p>
+      </caption>
+      <graphic xlink:href="nihms602983f1"/>
+    </fig>
+    <fig id="F2" orientation="portrait" position="float">
+      <label>Scheme 2</label>
+      <caption>
+        <p>Substrate Scope of Vinylarenes. <italic><sup>a</sup></italic>Reaction conditions: vinylarene (0.20–1.0 mmol), <bold>2</bold> (1.2 equiv), B<sub>2</sub>Pin<sub>2</sub> (1.1–1.2 equiv), LiO<italic>t</italic>Bu (1.5 equiv), CuCl (20 mol %), <bold>L1</bold> (22 mol %), dioxane (0.30 M), 80 °C or <bold>L8</bold> (22 mol %), THF (0.40 M), 60 °C, 12 h. Yields reported are that of isolated material. Yields in parentheses were determined by <sup>1</sup>H NMR analysis of the crude reaction mixture using 1,1,2,2-tetrachloroethane as internal standard. Isolated yields were lower than <sup>1</sup>H NMR yields because of product decomposition on silica gel.</p>
+      </caption>
+      <graphic xlink:href="nihms602983f2"/>
+    </fig>
+    <fig id="F3" orientation="portrait" position="float">
+      <label>Scheme 3</label>
+      <caption>
+        <p>Derivatization of Borylation/Cyanation Products. Conditions: a. NaOH/H<sub>2</sub>O<sub>2</sub>, RT, 2 h (85%). b. BCl<sub>3</sub>, CH<sub>2</sub>Cl<sub>2</sub>, RT, 4 h, then BnN<sub>3</sub>, 0 °C, 16 h (63%). c. ArCl, 5 mol% RuPhos Precat, 5 mol% RuPhos, K<sub>3</sub>PO<sub>4</sub>, toluene/H<sub>2</sub>O, 80 °C, 12 h (60%). d. conc. HCl/MeOH, 60 °C, 12 h (95%). e. NiCl<sub>2</sub>·6H<sub>2</sub>O, NaBH<sub>4</sub>, Boc<sub>2</sub>O, MeOH, 0 °C to RT, 1 h (65%). f. NaN<sub>3</sub>, ZnBr<sub>2</sub>, H<sub>2</sub>O/<italic>i</italic>PrOH, 100 °C, 48 h (92%).</p>
+      </caption>
+      <graphic xlink:href="nihms602983f3"/>
+    </fig>
+    <fig id="F4" orientation="portrait" position="float">
+      <label>Scheme 4</label>
+      <caption>
+        <p>Regioselective Cyanation of BINOL Scaffolds.</p>
+      </caption>
+      <graphic xlink:href="nihms602983f4"/>
+    </fig>
+    <fig id="F5" orientation="portrait" position="float">
+      <label>Scheme 5</label>
+      <caption>
+        <p>“Unmasking” the Boronic Ester: Formal <italic>ortho</italic> C–H Cyanation of Vinylarenes.</p>
+      </caption>
+      <graphic xlink:href="nihms602983f5"/>
+    </fig>
+    <fig id="F6" orientation="portrait" position="float">
+      <label>Scheme 6</label>
+      <caption>
+        <p>Mechanistic Studies.</p>
+      </caption>
+      <graphic xlink:href="nihms602983f6"/>
+    </fig>
+    <fig id="F7" orientation="portrait" position="float">
+      <label>Scheme 7</label>
+      <caption>
+        <p>Mechanistic Proposal.</p>
+      </caption>
+      <graphic xlink:href="nihms602983f7"/>
+    </fig>
+    <table-wrap id="T1" position="float" orientation="portrait">
+      <label>Table 1</label>
+      <caption>
+        <p>Optimization of Reaction Conditions<xref rid="TFN1" ref-type="table-fn">a</xref>.</p>
+      </caption>
+      <table frame="below" rules="groups">
+        <thead>
+          <tr>
+            <th colspan="4" valign="bottom" align="center" rowspan="1">
+<graphic xlink:href="nihms602983u2"/>
+<hr/></th>
+          </tr>
+          <tr>
+            <th valign="bottom" align="center" rowspan="1" colspan="1">entry</th>
+            <th valign="bottom" align="center" rowspan="1" colspan="1">L</th>
+            <th valign="bottom" align="center" rowspan="1" colspan="1">yield of 3a</th>
+            <th valign="bottom" align="center" rowspan="1" colspan="1">yield of 3b</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">
+              <bold>L1</bold>
+            </td>
+            <td align="center" valign="top" rowspan="1" colspan="1">84%</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.5%</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" rowspan="1" colspan="1">2<xref rid="TFN2" ref-type="table-fn">[b]</xref></td>
+            <td align="center" valign="top" rowspan="1" colspan="1">
+              <bold>L1</bold>
+            </td>
+            <td align="center" valign="top" rowspan="1" colspan="1">90%</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0%</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" rowspan="1" colspan="1">3</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">
+              <bold>L2</bold>
+            </td>
+            <td align="center" valign="top" rowspan="1" colspan="1">55%</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">10%</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" rowspan="1" colspan="1">4</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">
+              <bold>L3</bold>
+            </td>
+            <td align="center" valign="top" rowspan="1" colspan="1">70%</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">6%</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" rowspan="1" colspan="1">5</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">
+              <bold>L4</bold>
+            </td>
+            <td align="center" valign="top" rowspan="1" colspan="1">25%</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">7%</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" rowspan="1" colspan="1">6</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">
+              <bold>L5</bold>
+            </td>
+            <td align="center" valign="top" rowspan="1" colspan="1">59%</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">11%</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" rowspan="1" colspan="1">7</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">
+              <bold>L6</bold>
+            </td>
+            <td align="center" valign="top" rowspan="1" colspan="1">63%</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">9%</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" rowspan="1" colspan="1">8</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">
+              <bold>L7</bold>
+            </td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0%</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0%</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" rowspan="1" colspan="1">9</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">
+              <bold>L8</bold>
+            </td>
+            <td align="center" valign="top" rowspan="1" colspan="1">95%</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0%</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" rowspan="1" colspan="1">10<xref rid="TFN3" ref-type="table-fn">[c]</xref></td>
+            <td align="center" valign="top" rowspan="1" colspan="1">
+              <bold>L8</bold>
+            </td>
+            <td align="center" valign="top" rowspan="1" colspan="1">88%</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2%</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" rowspan="1" colspan="1">11<xref rid="TFN4" ref-type="table-fn">[d]</xref></td>
+            <td align="center" valign="top" rowspan="1" colspan="1">
+              <bold>L8</bold>
+            </td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0%</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0%</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" rowspan="1" colspan="1">12<xref rid="TFN5" ref-type="table-fn">[e]</xref></td>
+            <td align="center" valign="top" rowspan="1" colspan="1">
+              <bold>-</bold>
+            </td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0%</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0%</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN1">
+          <label>[a]</label>
+          <p>Reaction conditions: 1 (0.20 mmol), 2 (0.30 mmol), CuCl (0.040 mmol), <bold>L</bold> (0.044 mmol), LiO<italic>t</italic>Bu (0.31 mmol), THF (0.50 mL), 60 °C, 12 h. Yields of <bold>3a</bold>–<bold>3d</bold> were determined by <sup>1</sup>H NMR analysis of the crude reaction mixture using 1,1,2,2-tetrachloroethane as an internal standard.</p>
+        </fn>
+        <fn id="TFN2">
+          <label>[b]</label>
+          <p>Dioxane (0.70 mL), 80 °C, 12 h.</p>
+        </fn>
+        <fn id="TFN3">
+          <label>[c]</label>
+          <p>CuCl (5 mol %), <bold>L8</bold> (6 mol %), 1.0 mmol scale.</p>
+        </fn>
+        <fn id="TFN4">
+          <label>[d]</label>
+          <p>TsCN was used in lieu of <bold>2</bold>.</p>
+        </fn>
+        <fn id="TFN5">
+          <label>[e]</label>
+          <p>In the absence of CuCl and ligand.</p>
+          <p>
+<graphic xlink:href="nihms602983u3"/></p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+  </floats-group>
+</article>

@@ -1,0 +1,1313 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties manuscript?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">101139309</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">30413</journal-id>
+      <journal-id journal-id-type="nlm-ta">Lancet Neurol</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Lancet Neurol</journal-id>
+      <journal-title-group>
+        <journal-title>The Lancet. Neurology</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1474-4422</issn>
+      <issn pub-type="epub">1474-4465</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">30129477</article-id>
+      <article-id pub-id-type="pmc">11646336</article-id>
+      <article-id pub-id-type="doi">10.1016/S1474-4422(18)30254-0</article-id>
+      <article-id pub-id-type="manuscript">NIHMS2037386</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Classification and management of adult inflammatory myopathies</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Selva-O’Callaghan</surname>
+            <given-names>Albert</given-names>
+          </name>
+          <aff id="A1">Systemic Autoimmune Diseases Unit, Vall d’Hebron General Hospital, Universitat Autònoma de Barcelona, Barcelona, Spain</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Pinal-Fernandez</surname>
+            <given-names>Iago</given-names>
+          </name>
+          <aff id="A2">Muscle Disease Unit, Laboratory of Muscle Stem Cells and Gene Regulation, National Institute of Arthritis and Musculoskeletal and Skin Diseases, National Institutes of Health, Bethesda, MD, USA</aff>
+          <aff id="A3">Department of Neurology, Johns Hopkins University School of Medicine, Baltimore, MD, USA</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Trallero-Araguás</surname>
+            <given-names>Ernesto</given-names>
+          </name>
+          <aff id="A4">Rheumatology Unit, Vall d’Hebron General Hospital, Universitat Autònoma de Barcelona, Barcelona, Spain</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Milisenda</surname>
+            <given-names>José César</given-names>
+          </name>
+          <aff id="A5">Internal Medicine Department, Hospital Clinic, Universitat de Barcelona, Barcelona, Spain</aff>
+          <aff id="A6">Centro de Investigación Médica en Red Enfermedades Raras</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Grau-Junyent</surname>
+            <given-names>Josep Maria</given-names>
+          </name>
+          <aff id="A7">Internal Medicine Department, Hospital Clinic, Universitat de Barcelona, Barcelona, Spain</aff>
+          <aff id="A8">Centro de Investigación Médica en Red Enfermedades Raras</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Mammen</surname>
+            <given-names>Andrew L</given-names>
+          </name>
+          <aff id="A9">Muscle Disease Unit, Laboratory of Muscle Stem Cells and Gene Regulation, National Institute of Arthritis and Musculoskeletal and Skin Diseases, National Institutes of Health, Bethesda, MD, USA</aff>
+          <aff id="A10">Department of Neurology, Johns Hopkins University School of Medicine, Baltimore, MD, USA</aff>
+        </contrib>
+      </contrib-group>
+      <author-notes>
+        <fn fn-type="con" id="FN1">
+          <p id="P1">Contributors</p>
+          <p id="P2">We all contributed to writing this manuscript and approved the final version.</p>
+        </fn>
+        <corresp id="CR1">Correspondence to: Prof Albert Selva-O’Callaghan, Systemic Autoimmune Diseases Unit, Vall d’Hebron General Hospital, Universitat Autònoma de Barcelona, Barcelona, Spain <email>aselva@vhebron.net</email></corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>10</day>
+        <month>12</month>
+        <year>2024</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>9</month>
+        <year>2018</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>15</day>
+        <month>12</month>
+        <year>2024</year>
+      </pub-date>
+      <volume>17</volume>
+      <issue>9</issue>
+      <fpage>816</fpage>
+      <lpage>828</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract id="ABS1">
+        <p id="P3">Inflammatory myopathies, collectively known as myositis, are heterogeneous disorders characterised by muscle inflammation, and frequently accompanied by extramuscular manifestations that affect the skin, lung, and joints. Patients with inflammatory myopathies were previously classified as having dermatomyositis if characteristic rashes accompanied the muscle involvement, and as having polymyositis if no rashes were present. Five main types of inflammatory myopathies are now widely recognised: dermatomyositis, immune-mediated necrotising myopathy, sporadic inclusion-body myositis, overlap myositis (including antisynthetase syndrome), and polymyositis. The discovery of autoantibodies that are specifically associated with characteristic clinical phenotypes has been instrumental to the understanding of inflammatory myopathies. Treatment is still largely based on expert opinion, but several studies have shown effectiveness of different therapies in various subsets of inflammatory myopathies. These advances will undoubtedly improve the outcomes of patients with inflammatory myopathies.</p>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="S1">
+      <title>Introduction</title>
+      <p id="P4">Inflammatory myopathies, collectively known as myositis, are a heterogeneous group of rare diseases that affect multiple organs and systems, including the muscles, skin, lungs, and joints. Although universally accepted classification criteria for inflammatory myopathies have not yet been established, the five most recognised types of inflammatory myopathies are dermatomyositis, immune-mediated necrotising myopathy, overlap myositis (including antisynthetase syndrome), sporadic inclusion-body myositis, and polymyositis.<sup><xref rid="R1" ref-type="bibr">1</xref>–<xref rid="R3" ref-type="bibr">3</xref></sup> Inflammatory myopathy-specific autoantibodies can be used to classify patients with inflammatory myopathies in homogeneous phenotypic subsets. However, the importance of these autoantibodies has not yet been translated to inflammatory-myopathy classification criteria, probably because of their recent development.<sup><xref rid="R1" ref-type="bibr">1</xref>,<xref rid="R4" ref-type="bibr">4</xref></sup></p>
+      <p id="P5">Treatment options for inflammatory myopathies are broad, but their choice and combination are still largely based on expert opinion.<sup><xref rid="R3" ref-type="bibr">3</xref></sup> Randomised controlled trials are providing evidence for treatment in specific subsets of patients, but the nature of the diseases, which are rare and heterogeneous, complicates enrolling adequate numbers of patients with homogeneous phenotypes and designing appropriate studies. This Review describes the classification and treatment of the most common types of inflammatory myopathies in adults.</p>
+    </sec>
+    <sec id="S2">
+      <title>Classification</title>
+      <sec id="S3">
+        <title>Dermatomyositis</title>
+        <p id="P6">Patients with dermatomyositis typically present with proximal muscle weakness and cutaneous manifestations that develop over weeks to months. However, some patients with a dermatomyositis rash have little or no muscle involvement, as shown by the absence of weakness and muscle enzyme elevation, and of electromyography (EMG), MRI, and muscle biopsy findings. Some clinicians consider these hypomyopathic or amyopathic forms of dermatomyositis to be different subtypes of myositis,<sup><xref rid="R2" ref-type="bibr">2</xref></sup> but, for simplicity, we will include them in this section.</p>
+        <p id="P7">The pathognomonic skin features of dermatomyositis include a violaceous periorbital, often oedematous, rash (ie, a heliotrope rash; <xref rid="F1" ref-type="fig">figure 1</xref>, <xref rid="SD1" ref-type="supplementary-material">appendix</xref>) and erythematous lesions on the extensor surfaces of the joints (ie, Gottron’s papules; <xref rid="F1" ref-type="fig">figure 1</xref>). Usually, muscle enzymes are elevated and EMG reveals a myopathic pattern (myopathic motor units with fibrillations and spontaneous sharp waves).<sup><xref rid="R5" ref-type="bibr">5</xref></sup> As in other types of inflammatory myopathies, MRI scans in patients with dermatomyositis can reveal intramuscular T2 hyperintensities caused by muscle inflammation or necrosis.<sup><xref rid="R6" ref-type="bibr">6</xref></sup> Additionally, patients with dermatomyositis often have T2 hyperintensities around individual muscles as a result of fascial involvement, a feature seen less frequently in other types of inflammatory myopathies.<sup><xref rid="R6" ref-type="bibr">6</xref></sup> Myalgia and pruritus can also be important symptoms of the disease in some patients.<sup><xref rid="R7" ref-type="bibr">7</xref></sup></p>
+        <p id="P8">Perifascicular atrophy is a highly specific feature of muscle biopsies in patients with dermatomyositis (specificity &gt;90%);<sup><xref rid="R8" ref-type="bibr">8</xref></sup> however, this feature lacks sensitivity (25–50%; <xref rid="F1" ref-type="fig">figure 1</xref>).<sup><xref rid="R8" ref-type="bibr">8</xref>,<xref rid="R9" ref-type="bibr">9</xref></sup> Data support that the expression of perifascicular human myxovirus resistance protein 1 and retinoic acid-inducible gene 1 have higher diagnostic sensitivity (71% and 50%) than perifascicular atrophy with equivalent specificity.<sup><xref rid="R8" ref-type="bibr">8</xref>,<xref rid="R10" ref-type="bibr">10</xref></sup> Additionally, tissue biopsies from patients with dermatomyositis often have cellular infiltrates consisting predominantly of plasmacytoid dendritic cells, B cells, CD4 T cells, and macrophages.<sup><xref rid="R11" ref-type="bibr">11</xref></sup> These cells often surround medium sized blood vessels and invade the perimysium.<sup><xref rid="R11" ref-type="bibr">11</xref></sup> However, up to 16% of dermatomyositis biopsies do not have infiltrates but have prominent necrosis that is pathologically indistinguishable from immune-mediated necrotising myopathy.<sup><xref rid="R9" ref-type="bibr">9</xref></sup> The deposition of membrane attack complex and presence of microtubular inclusions on intramuscular capillaries is an early manifestation of dermatomyositis; as the disease progresses, capillary dropout can also occur.<sup><xref rid="R9" ref-type="bibr">9</xref></sup> Furthermore, as with other inflammatory myopathies, class-1 major histocompatibility complex is usually upregulated on the sarcolemma of muscle fibres. In patients with dermatomyositis, class-1 major histo compatibility complex upregulation and other pathological findings (eg, myofibre degeneration and regeneration, and necrosis) can be especially prominent in perifascicular regions.<sup><xref rid="R11" ref-type="bibr">11</xref></sup></p>
+        <p id="P9">Based on a prevalence study, approximately 70% of patients with dermatomyositis have a dermatomyositis-specific autoantibody,<sup><xref rid="R4" ref-type="bibr">4</xref></sup> which are associated with a unique clinical phenotype (<xref rid="T1" ref-type="table">table 1</xref>). Autoantibodies recognising the Mi2 nuclear antigen have been associated with classic dermatomyositis features, including proximal muscle weakness and severe skin manifestations.<sup><xref rid="R12" ref-type="bibr">12</xref></sup> Patients with dermatomyositis and autoantibodies recognising nuclear matrix protein (NXP)2 are more likely than patients with other types of autoantibodies to present with both proximal and distal muscle weakness, subcutaneous oedema, and dysphagia.<sup><xref rid="R13" ref-type="bibr">13</xref></sup> Furthermore, patients who are positive for anti-NXP2 autoantibodies are more prone to developing calcinosis, which are painful deposits of calcium in the soft tissues, than patients with other types of autoantibodies.<sup><xref rid="R13" ref-type="bibr">13</xref></sup> Patients with dermatomyositis who are positive for anti-NXP2 or anti-transcription intermediary factor (TIF)-1 autoantibodies are at increased risk of malignancy within 3 years of their diagnosis; as such, doing comprehensive cancer screening<sup><xref rid="R13" ref-type="bibr">13</xref>–<xref rid="R15" ref-type="bibr">15</xref></sup> or PET-CT scans is particularly important in these patients.<sup><xref rid="R33" ref-type="bibr">33</xref></sup></p>
+        <p id="P10">Patients with dermatomyositis who have autoantibodies recognising small ubiquitin-like modifier activating enzyme or melanoma differentiation-associated gene 5 (MDA5) tend to have more substantial skin than muscle involvement.<sup><xref rid="R16" ref-type="bibr">16</xref>–<xref rid="R19" ref-type="bibr">19</xref></sup> Along with the typical skin manifestations of dermatomyositis, patients who are positive for anti-MDA5 autoantibodies are prone to developing ulcers, often on the flexor surface of the digits and palm (<xref rid="F2" ref-type="fig">figure 2</xref>).<sup><xref rid="R19" ref-type="bibr">19</xref></sup> Most patients with anti-MDA5 autoantibodies are hypomyopathic or amyopathic.<sup><xref rid="R17" ref-type="bibr">17</xref>–<xref rid="R19" ref-type="bibr">19</xref></sup> Furthermore, unlike patients with other dermatomyositis autoantibodies, those who are anti-MDA5 positive frequently develop a rapidly progressive and sometimes lethal form of interstitial lung disease.<sup><xref rid="R17" ref-type="bibr">17</xref>,<xref rid="R18" ref-type="bibr">18</xref></sup> All patients with myositis who are suspected to have interstitial lung disease should initially be evaluated using pulmonary function tests (including carbon monoxide diffusion and inspiratory and expiratory pressures) and high-resolution CT scans. Monitoring of interstitial lung disease should rely on periodical pulmonary function tests, and subsequent high-resolution CT scans should be restricted to evaluating patients with evolving pulmonary issues.</p>
+        <p id="P11">A combination of genetic risk factors and exposure to environmental factors is presumably required to trigger dermatomyositis. Indeed, several immunogenetic risk factors, including certain class-2 HLA alleles, have been implicated in dermatomyositis pathogenesis.<sup><xref rid="R34" ref-type="bibr">34</xref></sup> Exposure to ultraviolet light is also a known risk factor for developing dermatomyositis.<sup><xref rid="R35" ref-type="bibr">35</xref></sup> However, the majority of people with known genetic risk factors, even those with high ultraviolet light exposure, never develop dermatomyositis. An increased number of mutations and loss of heterozygosity in <italic toggle="yes">TIF1</italic> genes in tumours from patients with dermatomyositis who are positive for anti-TIF1 autoantibodies<sup><xref rid="R15" ref-type="bibr">15</xref></sup> have been reported.<sup><xref rid="R36" ref-type="bibr">36</xref></sup> This observation suggests that mutations in <italic toggle="yes">TIF1</italic> genes might generate neoantigens that could trigger autoimmunity.</p>
+        <p id="P12">Whatever the cause, once a patient has developed dermatomyositis, it is unclear what mechanisms maintain muscle damage and weakness. Some evidence, including membrane attack complex deposition on endothelial cells, suggests that part of the muscle damage could be caused by hypoperfusion due to endothelial destruction.<sup><xref rid="R11" ref-type="bibr">11</xref></sup> Additionally, the presence of plasmacytoid dendritic cells, potent sources of interferon, along with the increased expression of type-1 interferon-inducible proteins in the perifascicular area, suggest that interferon could somehow mediate perifascicular atrophy.<sup><xref rid="R8" ref-type="bibr">8</xref>,<xref rid="R37" ref-type="bibr">37</xref></sup> However, further studies are required to clarify the role of these proteins in dermatomyositis muscle dysfunction.</p>
+      </sec>
+      <sec id="S4">
+        <title>Immune-mediated necrotising myositis</title>
+        <p id="P13">Immune-mediated necrotising myopathy is a distinct type of inflammatory myopathy characterised by proximal muscle weakness, exceptionally high muscle enzyme concentrations, myopathic EMG findings, and muscle biopsies showing necrosis or regeneration with minimal lymphocytic infiltrates and no perifascicular atrophy (<xref rid="SD1" ref-type="supplementary-material">appendix</xref>). Typical immune-mediated necrotising-myopathy muscle biopsies also include class-1 major histocompatibility complex upregulation, M2-macrophage infiltration, and membrane attack complex deposition on non-necrotic fibres (<xref rid="SD1" ref-type="supplementary-material">appendix</xref>).<sup><xref rid="R23" ref-type="bibr">23</xref>,<xref rid="R38" ref-type="bibr">38</xref></sup> Extramuscular manifestations are rare and generally mild when they occur.<sup><xref rid="R21" ref-type="bibr">21</xref>,<xref rid="R22" ref-type="bibr">22</xref>,<xref rid="R25" ref-type="bibr">25</xref></sup></p>
+        <p id="P14">Around two thirds of patients with immune-mediated necrotising myopathy have autoantibodies recognising either signal recognition particle (SRP) or 3-hydroxy 3-methylglutaryl coenzyme-A reductase (HMGCR). However, about 20% of patients who are positive for anti-SRP and anti-HMGCR have lymphocytic infiltrates in their muscle biopsies, but are otherwise indistinguishable from their counterparts with biopsies that reveal necrotising tissue.<sup><xref rid="R22" ref-type="bibr">22</xref>,<xref rid="R26" ref-type="bibr">26</xref>,<xref rid="R39" ref-type="bibr">39</xref></sup> Patients with proximal muscle weakness, elevated creatine kinase concentrations, and anti-SRP autoantibodies are defined as having anti-SRP myopathy, but patients with proximal muscle weakness, elevated muscle creatine kinase concentrations, and anti-HMGCR autoantibodies are defined as having anti-HMGCR myopathy.<sup><xref rid="R40" ref-type="bibr">40</xref></sup> According to this classification, specific biopsy features are not required to classify patients with autoantibody-positive immune-mediated necrotising myopathy.<sup><xref rid="R40" ref-type="bibr">40</xref></sup> By contrast, a necrotising biopsy is still required to classify a patient as having autoantibody-negative immune-mediated necrotising myopathy.<sup><xref rid="R40" ref-type="bibr">40</xref></sup></p>
+        <p id="P15">Anti-SRP and anti-HMGCR myopathy share many features, including similar muscle biopsy findings and high creatine kinase concentrations, and minimal extramuscular manifestations.<sup><xref rid="R23" ref-type="bibr">23</xref></sup> Furthermore, in both types of myopathy, young patients seem to have more aggressive and refractory muscle disease.<sup><xref rid="R21" ref-type="bibr">21</xref>,<xref rid="R25" ref-type="bibr">25</xref></sup> However, differences between these two immune-mediated necrotising-myopathy subtypes have been reported. First, anti-HMGCR myopathy is associated with statin exposure,<sup><xref rid="R24" ref-type="bibr">24</xref></sup> whereas anti-SRP myopathy is not associated with use of statins.<sup><xref rid="R21" ref-type="bibr">21</xref>,<xref rid="R22" ref-type="bibr">22</xref></sup> Second, patients who are positive for anti-SRP autoantibodies tend to have more severe muscle weakness than those with anti-HMGCR autoantibodies.<sup><xref rid="R21" ref-type="bibr">21</xref>,<xref rid="R23" ref-type="bibr">23</xref></sup> Third, although virtually all patients with anti-HMGCR and anti-SRP autoantibodies show some degree of necrosis,<sup><xref rid="R22" ref-type="bibr">22</xref>,<xref rid="R26" ref-type="bibr">26</xref></sup> those with anti-SRP autoantibodies have a higher number of necrotic muscle fibres than those with anti-HMGCR autoantibodies.<sup><xref rid="R39" ref-type="bibr">39</xref></sup> Fourth, the presence of interstitial lung disease, although uncommon in both groups, is more common in patients with anti-SRP autoantibodies (13–22) than in those with anti-HMGCR autoantibodies (&lt;5).<sup><xref rid="R21" ref-type="bibr">21</xref>–<xref rid="R23" ref-type="bibr">23</xref>,<xref rid="R25" ref-type="bibr">25</xref></sup> Fifth, patients with anti-HMGCR myopathy and autoantibody-negative immune-mediated necrotising myopathy might have an increased risk of malignancy, unlike those with anti-SRP myopathy.<sup><xref rid="R41" ref-type="bibr">41</xref></sup> Finally, anti-HMGCR myopathy has rarely been associated with cardiac involvement.<sup><xref rid="R23" ref-type="bibr">23</xref></sup> By contrast, early cross-sectional studies in patients with anti-SRP myopathy suggested a high prevalence of cardiac manifestations in these patients,<sup><xref rid="R42" ref-type="bibr">42</xref>,<xref rid="R43" ref-type="bibr">43</xref></sup> although these findings have not been supported by cohort studies.<sup><xref rid="R21" ref-type="bibr">21</xref>–<xref rid="R23" ref-type="bibr">23</xref></sup> In patients with suspected cardiac involvement, an electrocardiogram and an echocardiogram should be performed. A gadolinium-enhanced MRI scan can assess active myocardial inflammation and, in selected patients, an endomyocardial biopsy can confirm the diagnosis.<sup><xref rid="R44" ref-type="bibr">44</xref></sup></p>
+        <p id="P16">Regarding the immunogenetic risk factors in immune-mediated necrotising myopathy, one study<sup><xref rid="R45" ref-type="bibr">45</xref></sup> suggested that class-2 HLA-allele DRB1*08:03 is associated with anti-SRP myopathy. Additionally, several case-control studies<sup><xref rid="R45" ref-type="bibr">45</xref>–<xref rid="R47" ref-type="bibr">47</xref></sup> have supported that DRB1*11:01 is an immunogenetic risk factor for anti-HMGCR myopathy. This allele is present in about 70% of people with anti-HMGCR autoantibodies, but only in about 15% of the general population. Moreover, statins, which inhibit the enzymatic activity of HMGCR and increase HMGCR production, are a risk factor for anti-HMGCR myopathy.<sup><xref rid="R23" ref-type="bibr">23</xref>–<xref rid="R25" ref-type="bibr">25</xref></sup> Given these observations, increased HMGCR production has been proposed to contribute to breaking tolerance for developing anti-HMGCR myopathy.<sup><xref rid="R48" ref-type="bibr">48</xref></sup> Alternatively, in some patients, statins binding to HMGCR could generate a neoepitope that would have a role in triggering the immune response against HMGCR. In either scenario, DRB1*11:01 could have a role by presenting the relevant HMGCR peptides. Further work is required to show the relevance of these mechanisms in anti-HMGCR myopathy.</p>
+        <p id="P17">The mechanisms underlying myofibre necrosis in immune-mediated necrotising myopathy remain to be elucidated; however, some clues to these mechanisms have emerged. For example, given that the membrane attack complex deposits on the surface of non-necrotic fibres, anti-SRP and anti-HMGCR autoantibodies have been proposed to be directly pathogenic.<sup><xref rid="R39" ref-type="bibr">39</xref></sup> A study<sup><xref rid="R49" ref-type="bibr">49</xref></sup> showed that these autoantibodies can induce muscle atrophy, increase concentrations of reactive oxygen species and cytokines (eg, tumour necrosis factor and interleukin 6), and impair myoblast fusion (by decreasing the production of interleukin 4 and interleukin 13) of cultured muscle cells. However, anti-SRP and anti-HMGCR autoantibodies did not induce necrosis, and further studies are needed to show that these two autoantibodies are pathogenic in vivo.<sup><xref rid="R49" ref-type="bibr">49</xref></sup></p>
+      </sec>
+      <sec id="S5">
+        <title>Sporadic inclusion-body myositis</title>
+        <p id="P18">As with other types of inflammatory myopathies, patients with sporadic inclusion-body myositis present with muscle weakness, and usually have elevated creatine kinase concentrations and myopathic EMG features, which could indicate chronicity. However, sporadic inclusion-body myositis is different from other inflammatory myopathies in numerous ways. First, twice as many men as women are affected by sporadic inclusion-body myositis; other inflammatory myopathies are more frequent in women.<sup><xref rid="R3" ref-type="bibr">3</xref></sup> Second, sporadic inclusion-body myositis usually affects patients older than 50 years,<sup><xref rid="R3" ref-type="bibr">3</xref></sup> but other types of inflammatory myopathies can also develop in patients younger than 50 years, including in children.<sup><xref rid="R2" ref-type="bibr">2</xref></sup> Third, in most patients with sporadic inclusion-body myositis, the disease is slowly progressive, with weakness occurring over the course of years.<sup><xref rid="R3" ref-type="bibr">3</xref></sup> In other inflammatory myopathies, progressive weakness can occur over weeks or months.<sup><xref rid="R3" ref-type="bibr">3</xref></sup> Fourth, many patients with sporadic inclusion-body myositis have an asymmetric pattern of muscle weakness; symmetric weakness is the rule in patients with other inflammatory myopathies.<sup><xref rid="R3" ref-type="bibr">3</xref></sup> Fifth, patients with sporadic inclusion-body myositis usually have prominent knee extensor weakness along with distal weakness, including of the deep finger flexors, wrist flexors, and ankle dorsiflexors; arm abductors and hip flexors can also be affected, but are frequently stronger than more distal muscles.<sup><xref rid="R27" ref-type="bibr">27</xref></sup> By contrast, unless the disease is in an advanced stage, few other patients with inflammatory myopathies have substantial distal weakness.<sup><xref rid="R3" ref-type="bibr">3</xref>,<xref rid="R13" ref-type="bibr">13</xref></sup> Sixth, these patients might also have progressive dysphagia,<sup><xref rid="R3" ref-type="bibr">3</xref></sup> which can lead to bronchoaspiration and can be studied using video-fluoroscopy. Seventh, although autoantibodies recognizing cytosolic 5′-nucleotidase 1A (NT5C1a) are present in 30–60% of patients with sporadic inclusion-body myositis, these types of autoantibodies can also be found in 5–10% of patients with polymyositis, 15–20% of patients with dermatomyositis, and 10% of patients with systemic lupus erythematosus and 12% with Sjögren’s syndrome.<sup><xref rid="R50" ref-type="bibr">50</xref>–<xref rid="R53" ref-type="bibr">53</xref></sup> Unlike other types of inflammatory myopathies, sporadic inclusion-body myositis is not associated with any myositis-specific autoantibody.<sup><xref rid="R54" ref-type="bibr">54</xref></sup> Eighth, no clear evidence shows that immunosuppression benefits patients with sporadic inclusion-body myositis, whereas patients with other inflammatory myopathies usually do respond to immunosuppression.<sup><xref rid="R3" ref-type="bibr">3</xref></sup> Finally, compared with patients with other inflammatory myopathies, those with sporadic inclusion-body myositis have the most characteristic MRI scan pattern, with severe involvement of the anterior compartment of the thigh.<sup><xref rid="R6" ref-type="bibr">6</xref>,<xref rid="R55" ref-type="bibr">55</xref></sup></p>
+        <p id="P19">Muscle biopsies from patients with sporadic inclusion-body myositis are histologically unique in that they often include coexisting inflammation, mitochondrial dysfunction, and abnormal protein aggregation (<xref rid="F3" ref-type="fig">figure 3</xref>).<sup><xref rid="R9" ref-type="bibr">9</xref></sup> The inflammatory infiltrate is comprised of CD8 T cells that surround and invade non-necrotic fibres. A study<sup><xref rid="R56" ref-type="bibr">56</xref></sup> has shown that these cells express CD57, a surface marker of T-cell aggressiveness, and that most (22 [58%] of 38) patients with sporadic inclusion-body myositis meet criteria for T-cell large granular lymphocytic leukaemia. Although this association has yet to be validated, it would explain the refractory nature and advanced age of these patients.<sup><xref rid="R56" ref-type="bibr">56</xref></sup> Doing a muscle MRI scan to select the site of muscle biopsy is important in patients with sporadic inclusion-body myositis (as well as all types of inflammatory myopathies) because this method increases the diagnostic accuracy of the pathology.<sup><xref rid="R57" ref-type="bibr">57</xref></sup></p>
+        <p id="P20">An increased number of cytochrome oxidase-negative muscle fibres and the presence of so-called ragged-red fibres suggest that mitochondrial damage has an important role in sporadic inclusion-body myositis (<xref rid="F3" ref-type="fig">figure 3</xref>).<sup><xref rid="R11" ref-type="bibr">11</xref></sup> Additionally, a study<sup><xref rid="R58" ref-type="bibr">58</xref></sup> showed that mitochondrial DNA is depleted and that mitochondrial fusion proteins are dysregulated in the muscle of patients with sporadic inclusion-body myositis. Furthermore, an increased frequency of mitochondrial DNA deletions was also reported in the muscles of these patients.<sup><xref rid="R59" ref-type="bibr">59</xref></sup></p>
+        <p id="P21">Rimmed vacuoles, best visualised by Gomori-trichrome staining, are a histological hallmark of biopsies from patients with sporadic inclusion-body myositis (<xref rid="F3" ref-type="fig">figure 3</xref>).<sup><xref rid="R3" ref-type="bibr">3</xref></sup> Although some patients with hereditary myopathies also have rimmed vacuoles, their presence can help in distinguishing sporadic inclusion-body myositis from other inflammatory myopathies, because these vacuoles are not present in other types of inflammatory myopathies.<sup><xref rid="R11" ref-type="bibr">11</xref></sup> How the rimmed vacuoles of sporadic inclusion-body myositis are formed remains unknown. However, nuclear membrane proteins are found within rimmed vacuoles, suggesting that these vacuoles could be the remnants of degenerated myonuclei.<sup><xref rid="R60" ref-type="bibr">60</xref></sup> Another study<sup><xref rid="R61" ref-type="bibr">61</xref></sup> showed that proteins accumulating in rimmed vacuoles are related to protein folding and autophagy, suggesting that impaired autophagic function could be implicated in their formation.</p>
+        <p id="P22">Several other cytoplasmic inclusions, which are pathophysiologically relevant and important for diagnosis, are also found in muscle biopsies of patients with sporadic inclusion-body myositis. The tubofilamentous inclusions seen by electron microscopy gave rise to the name inclusion-body myositis.<sup><xref rid="R11" ref-type="bibr">11</xref></sup> Cytoplasmic accumulations of amyloid can be visualised using Congo red and polarised light.<sup><xref rid="R11" ref-type="bibr">11</xref></sup> These structures include β-amyloid-related and amyloidogenic-related molecules β-secretase 1 and γ-secretase, which are increased in the plasma of patients with sporadic inclusion-body myositis.<sup><xref rid="R62" ref-type="bibr">62</xref></sup> Cytoplasmic aggregations of other proteins, including phosphorylated neurofilaments, p62, and TAR DNA-binding protein 43 can also be found in muscle biopsies of patients with sporadic inclusion-body myositis (<xref rid="F3" ref-type="fig">figure 3</xref>).<sup><xref rid="R11" ref-type="bibr">11</xref></sup></p>
+        <p id="P23">Although not specific to sporadic inclusion-body myositis, anti-NT5C1a autoantibodies have been associated with increased severity and mortality in these patients.<sup><xref rid="R53" ref-type="bibr">53</xref>,<xref rid="R63" ref-type="bibr">63</xref></sup> Additionally, anti-NT5C1a autoantibodies might directly cause muscle damage.<sup><xref rid="R64" ref-type="bibr">64</xref></sup> Therefore, the presence of such autoantibodies along with the presence of aggressive T cells in muscle biopsies suggest that autoimmunity might be relevant in the pathology of sporadic inclusion-body myositis. Alternatively, the presence of cytoplasmic inclusions suggests that an underlying degenerative process drives the progression of the disease. This hypothesis is reinforced by the observation that immunosuppression is not effective in patients with sporadic inclusion-body myositis.<sup><xref rid="R3" ref-type="bibr">3</xref></sup> Future investigations will elucidate whether successful treatment strategies will need to target the immune system, protein aggregation pathways, or both.</p>
+      </sec>
+      <sec id="S6">
+        <title>Overlap myositis</title>
+        <p id="P24">Overlap myositis is a type of autoimmune myopathy associated with other connective tissue diseases. Autoimmune myopathy can also occur in patients presenting with features of other autoimmune diseases, such as systemic lupus erythematosus, rheumatoid arthritis, Sjögren’s syndrome, or systemic sclerosis.<sup><xref rid="R30" ref-type="bibr">30</xref>–<xref rid="R32" ref-type="bibr">32</xref></sup> Many of these patients also have autoantibodies that are associated with characteristic phenotypes.<sup><xref rid="R30" ref-type="bibr">30</xref>–<xref rid="R32" ref-type="bibr">32</xref></sup></p>
+        <p id="P25">The most representative form of overlap myositis is antisynthetase syndrome, with autoantibodies targeting aminoacyl tRNA synthetases, which are enzymes that conjugate an aminoacid to its cognate tRNA.<sup><xref rid="R28" ref-type="bibr">28</xref>,<xref rid="R29" ref-type="bibr">29</xref></sup> Autoantibodies that recognise histidyl tRNA synthetase (anti-Jo1), threonyl tRNA synthetase (anti-PL7), and alanyl tRNA synthetase (anti-PL12) are most common.<sup><xref rid="R28" ref-type="bibr">28</xref>,<xref rid="R29" ref-type="bibr">29</xref></sup> Patients with any one of these autoantibodies can be defined as having antisynthetase syndrome, and typically present with one or more of the following features: an inflammatory myopathy, interstitial lung disease, arthritis, Raynaud syndrome, fever, or hyperkeratotic radial-finger lesions known as mechanic’s hands (<xref rid="F4" ref-type="fig">figure 4</xref>).<sup><xref rid="R3" ref-type="bibr">3</xref></sup> Patients with antisynthetase syndrome can also have skin rashes similar to dermatomyositis.<sup><xref rid="R3" ref-type="bibr">3</xref></sup> Notably, not all patients with antisynthetase syndrome have muscle weakness. Indeed, whereas about 90% of patients who have anti-Jo1 autoantibodies have an inflammatory myopathy, up to 50% of patients with anti-PL12 autoantibodies present with interstitial lung disease but no muscle involvement.<sup><xref rid="R28" ref-type="bibr">28</xref></sup> Furthermore, patients who are positive for anti-Jo1 autoantibodies have more severe weakness than patients with anti-PL7 and anti-PL12 autoantibodies who have more severe lung involvement (<xref rid="T1" ref-type="table">table 1</xref>).<sup><xref rid="R28" ref-type="bibr">28</xref>,<xref rid="R29" ref-type="bibr">29</xref></sup></p>
+        <p id="P26">The features of myopathic antisynthetase syndrome are similar to those of dermatomyositis, including proximal muscle weakness, elevated muscle enzymes, and myopathic EMG.<sup><xref rid="R3" ref-type="bibr">3</xref></sup> Patients with antisynthetase syndrome often have hyperintensities on intramuscular T2-weighted MRI scans, but a specific MRI scan pattern has not been described.<sup><xref rid="R65" ref-type="bibr">65</xref></sup> Muscle biopsies can reveal perifascicular atrophy similar to dermatomyositis. However, compared with dermatomyositis, the muscle biopsies from patients with antisynthetase syndrome can show an increased number of perifascicular necrotic fibers.<sup><xref rid="R66" ref-type="bibr">66</xref>,<xref rid="R67" ref-type="bibr">67</xref></sup> Furthermore, most of these biopsies show nuclear actin aggregation, an electron microscopy feature that is not seen in other inflammatory myopathies.<sup><xref rid="R68" ref-type="bibr">68</xref></sup> However, little is known about what triggers and maintains autoimmunity in antisynthetase syndrome, and further research is warranted.</p>
+        <p id="P27">Anti-polymyositis-Scl or anti-Ku autoantibodies are associated with inflammatory myopathies in patients with systemic sclerosis.<sup><xref rid="R30" ref-type="bibr">30</xref>,<xref rid="R31" ref-type="bibr">31</xref></sup> Similarly, patients with connective tissue disease who are positive for anti-U1 ribonucleoprotein can have myositis along with additional systemic sclerosis features, such as sclerodactyly.<sup><xref rid="R32" ref-type="bibr">32</xref></sup> These patients can also have systemic lupus erythematosus-like features, such as glomerulonephritis, usually accompanied by anti-DNA autoantibodies (<xref rid="T1" ref-type="table">table 1</xref>).<sup><xref rid="R32" ref-type="bibr">32</xref></sup> Sporadic inclusion-body myositis can be associated with Sjögren’s syndrome, especially in women with a genetic predisposition.<sup><xref rid="R69" ref-type="bibr">69</xref></sup></p>
+      </sec>
+      <sec id="S7">
+        <title>Polymyositis</title>
+        <p id="P28">Polymyositis is defined by the presence of muscle weakness, elevated creatine phosphokinase concentrations, myopathic EMG features, and inflammatory CD8 T-cell infiltrates on muscle biopsy, with none of the characteristic accompanying features of the other above-mentioned groups (ie, dermatomyositis, immune-med iated necrotising myopathy, overlap myositis, or sporadic inclusion-body myositis). Many patients previously classified as having polymyositis could now be considered to have antisynthetase syndrome without a rash, immune-mediated necrotising myopathy, or sporadic inclusion-body myositis on the basis of characteristic clinical manifestations, serological features, and muscle biopsy findings.<sup><xref rid="R70" ref-type="bibr">70</xref>–<xref rid="R72" ref-type="bibr">72</xref></sup> Even for patients who truly have polymyositis, the condition remains a diagnosis of exclusion, and these patients should be closely monitored for new clinical features suggesting alternative diagnoses.</p>
+      </sec>
+    </sec>
+    <sec id="S8">
+      <title>Management</title>
+      <p id="P29">Treatment for inflammatory myopathies remains a challenge. The low prevalence, wide phenotypic heterogeneity, and variable course of these diseases complicate the assessment of different treatment approaches, which explains the absence of standardised therapeutic guidelines. For the same reasons, treatment should be multidisciplinary and managed by experienced clinicians. Tailored physical exercise programmes and rehabilitation under the supervision of a physical therapist are safe in all types of inflammatory myopathies, and are generally recommended to increase strength and reduce disability.<sup><xref rid="R73" ref-type="bibr">73</xref>,<xref rid="R74" ref-type="bibr">74</xref></sup> In this regard, two randomised controlled trials<sup><xref rid="R73" ref-type="bibr">73</xref>,<xref rid="R74" ref-type="bibr">74</xref></sup> have shown the utility of physical exercise intervention as a complementary treatment even in patients with acute inflammatory myopathies.</p>
+      <sec id="S9">
+        <title>Non-inclusion-body myositis</title>
+        <p id="P30">Dermatomyositis, immune-mediated necrotising myopathy, overlap myositis, and polymyositis are considered to be non-inclusion-body myositis. A systematic Cochrane review<sup><xref rid="R75" ref-type="bibr">75</xref></sup> highlighted the scarcity of high-quality randomised controlled trials for the treatment of inflammatory myopathies; although immunosuppressive agents are the primary form of treatment for inflammatory myopathies, few randomised controlled trials have been done in the field. Thus, treatment is largely based on historical clinical practice and case series, and fundamentally guided by the opinion of experts. Glucocorticoids are first-line drugs in the treatment of inflammatory myopathies, but are rarely used as a monotherapy because of their side-effects, such as osteoporosis, hypertension, or weight gain.<sup><xref rid="R76" ref-type="bibr">76</xref></sup> The most commonly prescribed corticosteroid is prednisone, which is typically started at a dose of 0·5–1 mg/kg per day to a maximum dose of 80–100 mg per day. In severe cases, daily intravenous methylprednisolone pulses of 500 mg to 1 g per day for 3–5 days can be used initially (<xref rid="T2" ref-type="table">table 2</xref>). Prednisone is maintained for 4–6 weeks and is then decreased. Neither the initial dose nor the speed at which corticosteroid treatment should be decreased have been adequately investigated, and so treatment is based on clinical judement.</p>
+        <p id="P31">Other immunosuppressive drugs that are used for treatment of inflammatory myopathies include methotrexate (10–25 mg per week orally or subcutaneously) and azathioprine (2–3 mg/kg per day) in patients with normal thiopurine methyltransferase activity, and mycophenolate mofetil (2–3 g per day divided into two doses), ciclosporin (3–4 mg/kg per day), tacrolimus (0·06 mg/kg per day), and intravenous immunoglobulins.<sup><xref rid="R3" ref-type="bibr">3</xref></sup> These drugs are normally used as corticosteroid-sparing agents from the time of diagnosis. Some clinical settings can warrant the selection of different drugs. For example, methotrexate, which is useful for muscle and joint manifestations,<sup><xref rid="R77" ref-type="bibr">77</xref></sup> should be carefully used in patients with myositis-associated interstitial lung disease because of the potential lung toxicity of this drug.<sup><xref rid="R77" ref-type="bibr">77</xref></sup> Calcineurin inhibitors (eg, ciclosporin and tacrolimus) improve dermatomyositis skin manifestations, and along with mycophenolate are recommended by experts in myositis-associated interstitial lung disease.<sup><xref rid="R78" ref-type="bibr">78</xref>–<xref rid="R80" ref-type="bibr">80</xref></sup> However, these drugs need to be administered with caution in elderly patients with hypertension because of the potential renal toxicity and management difficulties in hypertensive patients and their dose should be guided by serum concentrations of the drug. Cyclophosphamide can be used in patients with severe or rapidly progressive interstitial lung disease as in other autoimmune diseases, such as systemic sclerosis,<sup><xref rid="R81" ref-type="bibr">81</xref></sup> but can impair fertility.</p>
+        <p id="P32">Intravenous immunoglobulins (2 g/kg per month administered during 2–5 days) have shown efficacy in an randomised controlled trial<sup><xref rid="R82" ref-type="bibr">82</xref></sup> and in a retrospective study<sup><xref rid="R83" ref-type="bibr">83</xref></sup> for the management of dermatomyositis. Intravenous immunoglobulins also seem to be effective in immune-mediated necrotising myopathy, especially in patients with anti-HMGCR autoantibodies.<sup><xref rid="R40" ref-type="bibr">40</xref>,<xref rid="R88" ref-type="bibr">88</xref></sup> A preliminary case series<sup><xref rid="R89" ref-type="bibr">89</xref></sup> of 19 patients suggests that subcutaneous immunoglobulins could be an alternative to intravenous administration, although no comparative studies are yet available (<xref rid="T2" ref-type="table">table 2</xref>).</p>
+        <p id="P33">Because of the existence of refractory forms of non-inclusion-body myositis, there has been growing interest in assessing the potential of several biological agents in inflammatory myopathies. The efficacy of one of these agents, rituximab (a monoclonal antibody targeting the CD20 antigen on B lymphocytes), was assessed in 124 patients with refractory dermatomyositis and 76 patients with polymyositis in a randomised, double-blind, placebo-controlled trial,<sup><xref rid="R84" ref-type="bibr">84</xref></sup> the only randomised controlled trial done to date with this agent. Although the drug did not induce faster improvement when introduced early versus late in the course of the clinical trial, 161 (83%) of 195 patients with refractory disease with longitudinal data (regardless of the study branch) met the International Myositis Assessment &amp; Clinical Studies Group definition of improvement. However, because the trial design allowed for treatment with other immunosuppressive drugs, the study did not establish whether rituximab was causing that improvement. Nevertheless, a post-hoc analysis of the trial and further case series and cohort studies suggested beneficial effects of this drug in patients with antisynthetase syndrome, and in those with anti-Mi2 or anti-SRP autoantibodies.<sup><xref rid="R21" ref-type="bibr">21</xref>,<xref rid="R40" ref-type="bibr">40</xref>,<xref rid="R85" ref-type="bibr">85</xref></sup> Although the efficacy of rituximab for patients with myositis-associated interstitial lung disease is only based on two small uncontrolled studies<sup><xref rid="R90" ref-type="bibr">90</xref>,<xref rid="R91" ref-type="bibr">91</xref></sup> and the aforementioned trial,<sup><xref rid="R84" ref-type="bibr">84</xref></sup> rituximab is usually preferred to cyclophosphamide on account of the better tolerance and side-effect profile of this drug. Rituximab is usually administered as two 1-g doses 2 weeks apart (<xref rid="T2" ref-type="table">table 2</xref>).</p>
+        <p id="P34">Evidence supporting the use of anti-tumour necrosis factor in inflammatory myopathies is inconclusive since studies on etanercept and infliximab have shown conflicting results.<sup><xref rid="R92" ref-type="bibr">92</xref>–<xref rid="R94" ref-type="bibr">94</xref></sup> Although some patients might respond to these therapies, more studies are necessary to define the role of these drugs in inflammatory myopathies. In a pilot study<sup><xref rid="R86" ref-type="bibr">86</xref></sup> of 20 patients with inflammatory myopathies, abatacept, a fusion protein that inhibits T-cell costimulation, showed beneficial effects in reducing disease activity and increasing the number of regulatory T cells in muscle biopsies of these patients; however, these results need to be supported by further studies with larger sample sizes. Some case reports have reported the efficacy of tocilizumab (an antagonist of interleukin 6),<sup><xref rid="R87" ref-type="bibr">87</xref></sup> anakinra (antiinterleukin 1),<sup><xref rid="R95" ref-type="bibr">95</xref></sup> alemtuzumab (anti-CD52),<sup><xref rid="R96" ref-type="bibr">96</xref></sup> and tofacitinib<sup><xref rid="R97" ref-type="bibr">97</xref></sup> and ruxolitinib<sup><xref rid="R98" ref-type="bibr">98</xref></sup> (janus-kinase inhibitors) in inflammatory myopathies, but confirmatory studies are required for these treatments to be widely used in clinical practice.</p>
+      </sec>
+      <sec id="S10">
+        <title>Sporadic inclusion-body myositis</title>
+        <p id="P35">No pharmacological therapy has been shown to be effective for sporadic inclusion-body myositis, and consequently treatment of this form of myositis remains largely supportive. Immunosuppressive drugs such as corticosteroids, azathioprine, methotrexate, etanercept, anakinra, or interferon β are not effective in sporadic inclusion-body myositis.<sup><xref rid="R99" ref-type="bibr">99</xref>,<xref rid="R100" ref-type="bibr">100</xref></sup> Alemtuzumab is an anti-T-cell agent that has shown a trend towards a reduction of key biomarkers, such as interleukin 1β or class-1 major histocompatibility complex, in a pilot study that has not been confirmed so far,<sup><xref rid="R101" ref-type="bibr">101</xref></sup> although larger trials are needed given the trends towards reduction. Two small clinical trials, one that investigated bimagrumab<sup><xref rid="R102" ref-type="bibr">102</xref></sup> (a human monoclonal antibody that blocks the myostatin pathway) and the other that investigated follistatin<sup><xref rid="R103" ref-type="bibr">103</xref></sup> (another inhibitor of myostatin locally delivered using an adenovirus), showed improved thigh muscle volume and performance on the 6-min walking test in patients with sporadic inclusion-body myositis; however, these drugs did not significantly improve muscle strength. An randomised controlled trial<sup><xref rid="R104" ref-type="bibr">104</xref></sup> on the efficacy of sirolimus did not meet the primary outcome (improved quadriceps strength), but patients who received the drug did show improvement on the 6-min walking test.</p>
+        <p id="P36">Other drugs with alternative mechanisms of action have been investigated. Oxandrolone, an anabolic steroid, and simvastatin, a cholesterol-lowering agent, were not shown to be effective in small clinical trials.<sup><xref rid="R105" ref-type="bibr">105</xref>,<xref rid="R106" ref-type="bibr">106</xref></sup> A large randomised controlled trial (<ext-link xlink:href="https://clinicaltrials.gov/ct2/show/NCT02753530" ext-link-type="uri">NCT02753530</ext-link>) is underway with arimoclomol, a drug that prevents aberrant protein–protein interaction and promotes adequate protein folding. Another randomised controlled trial (<ext-link xlink:href="https://clinicaltrials.gov/ct2/show/NCT02483845" ext-link-type="uri">NCT02483845</ext-link>) investigating natalizumab is ongoing.</p>
+      </sec>
+      <sec id="S11">
+        <title>Severe manifestations of the disease</title>
+        <p id="P37">Some patient conditions require different therapeutic management, such as when the patient presents with severe weakness, dysphagia, or rapidly progressive interstitial lung disease. Severe weakness is characteristic of patients with immune-mediated necrotising myopathy, but can also occur in all types of inflammatory myopathies.<sup><xref rid="R3" ref-type="bibr">3</xref></sup> Additionally, severe muscle weakness can cause acute complications, such as development of restrictive lung disease due to respiratory muscle weakness, or severe dysphagia if oropharyngeal muscles are involved.<sup><xref rid="R3" ref-type="bibr">3</xref></sup> Evidence suggests that atrophy and fatty replacement of muscle tissue is established early after the onset of disease, and thus, delayed treatment can lead to long-term disability.<sup><xref rid="R6" ref-type="bibr">6</xref></sup> Thus, in these situations a three-drug initial regimen should be considered, and should include high-dose corticosteroids with an initial intravenous bolus, a secondary agent (usually azathioprine, methotrexate, tacrolimus, or mycophenolate mofetil), and intravenous immunoglobulins. Rituximab should be considered in patients with refractory disease (panel).<sup><xref rid="R40" ref-type="bibr">40</xref></sup></p>
+        <p id="P38">Given the risk of bronchoaspiration, patients with inflammatory myopathies with dysphagia other than inclusion body myositis should receive a three-drug regimen that is similar to that given to patients with severe weakness. Intravenous immunoglobulins have been shown to improve dysphagia<sup><xref rid="R107" ref-type="bibr">107</xref></sup> and should therefore be considered in patients with substantial dysphagia. In selected patients, mainly those with sporadic inclusion-body myositis but also those with extremely severe cases of dysphagia in other types of inflammatory myopathies, local therapies such as cricopharyngeal myotomy, pharyngoesophageal balloon dilatation, and injection of botulinum toxin into the upper oesophageal sphincter have shown a reasonable benefit in improving life-threatening dysphagia.<sup><xref rid="R108" ref-type="bibr">108</xref>,<xref rid="R109" ref-type="bibr">109</xref></sup> Swallowing physical therapy could also help to avoid complications in patients with myositis and dysphagia.</p>
+        <p id="P39">Rapidly progressive interstitial lung disease is a hallmark of hypomyopathic or amyopathic dermatomyositis associated with anti-MDA5 autoantibodies, but can also occur with other types of inflammatory myopathies, such as the antisynthetase syndrome.<sup><xref rid="R28" ref-type="bibr">28</xref></sup> In most cohorts studied, about 50–60% of patients with anti-MDA5-positive inflammatory myopathies develop interstitial lung disease soon after the onset of disease, and most of these patients (&gt;85%) will have rapidly progressive forms of the illness.<sup><xref rid="R17" ref-type="bibr">17</xref>,<xref rid="R18" ref-type="bibr">18</xref></sup> Because 30–50% of patients who develop rapidly progressive interstitial lung disease will die during the first year after the onset of lung disease,<sup><xref rid="R17" ref-type="bibr">17</xref>,<xref rid="R18" ref-type="bibr">18</xref></sup> patients who are positive for anti-MDA5 autoantibodies, even those with mild interstitial lung disease, should be intensively treated from disease onset with glucocorticoids and a second-line immunosuppressant agent (eg, tacrolimus or mycophenolate mofetil), and should be followed closely. When interstitial lung disease progression is detected, immediate and intensive treatment should be initiated. Different therapeutic strategies include methylprednisolone pulses, immunosuppressants (tacrolimus, cyclophosphamide, or rituximab), courses of polymyxin-B-immobilised fibre-column haemo-perfusion, plasmapheresis, and intravenous immunoglobulins.<sup><xref rid="R110" ref-type="bibr">110</xref></sup> Lung transplantation should be considered as a last-resort treatment in patients with myositis-associated interstitial lung disease, whether rapidly progressive or not.<sup><xref rid="R111" ref-type="bibr">111</xref></sup></p>
+      </sec>
+    </sec>
+    <sec id="S12">
+      <title>Conclusions and future directions</title>
+      <p id="P40">Five main types of inflammatory myopathies are now widely recognised: dermatomyositis, immune-mediated necrotising myopathy, sporadic inclusion-body myositis, overlap myositis, and polymyositis (<xref rid="T1" ref-type="table">table 1</xref>). Furthermore, within each type, specific autoantibodies further divide patients into even more homogeneous subtypes. For example, although patients in the immune-mediated necrotising-myopathy subgroup share some clinical characteristics (eg, necrotising muscle biopsies), those with anti-HMGCR autoantibodies have different environmental and immunogenetic risk factors, and might respond optimally to different treatments than patients with anti-SRP autoantibodies. This broad classification scheme is likely to require revision as more is learnt about inflammatory myopathies. For example, if new autoantibodies associated with dermatomyositis and immune-mediated necrotising myopathy are discovered, the number of patients with autoantibody-negative dermatomyositis and immune-mediated necrotising myopathy will decrease.</p>
+      <p id="P41">Therapies for inflammatory myopathies are broadly immunosuppressive rather than targeting specific pathogenic pathways. Moreover, past clinical trials have been hampered by the inclusion of heterogeneous patient populations. Even if imperfect, this widely accepted classification scheme should define more homogeneous patient populations, which will improve the power of clinical trials to identify effective treatments for the different forms of inflammatory myopathies. However, transformative changes in the way we treat inflammatory myopathies will probably require a deep understanding of disease mechanisms to reveal novel therapeutic targets. In this regard, recent investigations are promising, such as those establishing the pathogenic role of specific autoantibodies in immune-mediated necrotising myopathy,<sup><xref rid="R40" ref-type="bibr">40</xref></sup> the association between sporadic inclusion-body myositis and large granular lymphocytic leukaemia,<sup><xref rid="R56" ref-type="bibr">56</xref></sup> or the link between tumour TIF1 mutations and paraneoplastic anti-TIF1 myositis.<sup><xref rid="R36" ref-type="bibr">36</xref></sup> As our understanding of inflammatory myopathy disease mechanisms expands, we expect that additional therapeutic targets will be identified.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="SM1">
+      <title>Supplementary Material</title>
+      <supplementary-material id="SD1" position="float" content-type="local-data">
+        <label>supplementary_material</label>
+        <media xlink:href="NIHMS2037386-supplement-supplementary_material.pdf" id="d67e1030" position="anchor"/>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn fn-type="COI-statement" id="FN3">
+        <p id="P42">Declaration of interests</p>
+        <p id="P43">ALM has a patent on an anti-HMGCR assay. AS-O’C, IP-F, ET-A, JCM, and JMG-J declare no competing interests.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="R1">
+        <label>1</label>
+        <mixed-citation publication-type="journal"><name><surname>Senecal</surname><given-names>JL</given-names></name>, <name><surname>Raynauld</surname><given-names>JP</given-names></name>, <name><surname>Troyanov</surname><given-names>Y</given-names></name>. <article-title>Editorial: a new classification of adult autoimmune myositis</article-title>. <source>Arthritis Rheumatol</source>
+<year>2017</year>; <volume>69</volume>: <fpage>878</fpage>–<lpage>84</lpage>.<pub-id pub-id-type="pmid">28382651</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <mixed-citation publication-type="journal"><name><surname>Lundberg</surname><given-names>IE</given-names></name>, <name><surname>Tjarnlund</surname><given-names>A</given-names></name>, <name><surname>Bottai</surname><given-names>M</given-names></name>, <etal/>
+<article-title>2017 European League Against Rheumatism/American College of Rheumatology classification criteria for adult and juvenile idiopathic inflammatory myopathies and their major subgroups</article-title>. <source>Ann Rheum Dis</source>
+<year>2017</year>; <volume>76</volume>: <fpage>1955</fpage>–<lpage>64</lpage>.<pub-id pub-id-type="pmid">29079590</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <mixed-citation publication-type="journal"><name><surname>Dalakas</surname><given-names>MC</given-names></name>. <article-title>Inflammatory muscle diseases</article-title>. <source>N Engl J Med</source>
+<year>2015</year>; <volume>373</volume>: <fpage>393</fpage>–<lpage>94</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <mixed-citation publication-type="journal"><name><surname>Betteridge</surname><given-names>Z</given-names></name>, <name><surname>McHugh</surname><given-names>N</given-names></name>. <article-title>Myositis-specific autoantibodies: an important tool to support diagnosis of myositis</article-title>. <source>J Intern Med</source>
+<year>2016</year>; <volume>280</volume>: <fpage>8</fpage>–<lpage>23</lpage>.<pub-id pub-id-type="pmid">26602539</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <mixed-citation publication-type="journal"><name><surname>Paganoni</surname><given-names>S</given-names></name>, <name><surname>Amato</surname><given-names>A</given-names></name>. <article-title>Electrodiagnostic evaluation of myopathies</article-title>. <source>Phys Med Rehabil Clin N Am</source>
+<year>2013</year>; <volume>24</volume>: <fpage>193</fpage>–<lpage>207</lpage>.<pub-id pub-id-type="pmid">23177039</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <mixed-citation publication-type="journal"><name><surname>Pinal-Fernandez</surname><given-names>I</given-names></name>, <name><surname>Casal-Dominguez</surname><given-names>M</given-names></name>, <name><surname>Carrino</surname><given-names>JA</given-names></name>, <etal/>
+<article-title>Thigh muscle MRI in immune-mediated necrotising myopathy: extensive oedema, early muscle damage and role of anti-SRP autoantibodies as a marker of severity</article-title>. <source>Ann Rheum Dis</source>
+<year>2017</year>; <volume>76</volume>: <fpage>681</fpage>–<lpage>87</lpage>.<pub-id pub-id-type="pmid">27651398</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <mixed-citation publication-type="journal"><name><surname>Shirani</surname><given-names>Z</given-names></name>, <name><surname>Kucenic</surname><given-names>MJ</given-names></name>, <name><surname>Carroll</surname><given-names>CL</given-names></name>
+<etal/>
+<article-title>Pruritus in adult dermato-myositis</article-title>. <source>Clin Exp Dermatol</source>
+<year>2004</year>; <volume>29</volume>: <fpage>273</fpage>–<lpage>76</lpage><pub-id pub-id-type="pmid">15115510</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <mixed-citation publication-type="journal"><name><surname>Suarez-Calvet</surname><given-names>X</given-names></name>, <name><surname>Gallardo</surname><given-names>E</given-names></name>, <name><surname>Pinal-Fernandez</surname><given-names>I</given-names></name>, <etal/>
+<article-title>RIG-I expression in perifascicular myofibers is a reliable biomarker of dermatomyositis</article-title>. <source>Arthritis Res Ther</source>
+<year>2017</year>; <volume>19</volume>: <fpage>174</fpage>.<pub-id pub-id-type="pmid">28738907</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <mixed-citation publication-type="journal"><name><surname>Pinal-Fernandez</surname><given-names>I</given-names></name>, <name><surname>Casciola-Rosen</surname><given-names>LA</given-names></name>, <name><surname>Christopher-Stine</surname><given-names>L</given-names></name>, <name><surname>Corse</surname><given-names>AM</given-names></name>, <name><surname>Mammen</surname><given-names>AL</given-names></name>. <article-title>The prevalence of individual histopathologic features varies according to autoantibody status in muscle biopsies from patients with dermatomyositis</article-title>. <source>J Rheumatol</source>
+<year>2015</year>; <volume>42</volume>: <fpage>1448</fpage>–<lpage>54</lpage>.<pub-id pub-id-type="pmid">26443871</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <mixed-citation publication-type="journal"><name><surname>Uruha</surname><given-names>A</given-names></name>, <name><surname>Nishikawa</surname><given-names>A</given-names></name>, <name><surname>Tsuburaya</surname><given-names>RS</given-names></name>, <etal/>
+<article-title>Sarcoplasmic MxA expression: a valuable marker of dermatomyositis</article-title>. <source>Neurology</source>
+<year>2017</year>; <volume>88</volume>: <fpage>493</fpage>–<lpage>500</lpage>.<pub-id pub-id-type="pmid">28039312</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <mixed-citation publication-type="journal"><name><surname>Dalakas</surname><given-names>MC</given-names></name>. <article-title>Muscle biopsy findings in inflammatory myopathies</article-title>. <source>Rheum Dis Clin North Am</source>
+<year>2002</year>; <volume>28</volume>: <fpage>779</fpage>–<lpage>98</lpage>.<pub-id pub-id-type="pmid">12506772</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <mixed-citation publication-type="journal"><name><surname>Ghirardello</surname><given-names>A</given-names></name>, <name><surname>Zampieri</surname><given-names>S</given-names></name>, <name><surname>Iaccarino</surname><given-names>L</given-names></name>, <etal/>
+<article-title>Anti-Mi-2 antibodies</article-title>. <source>Autoimmunity</source>
+<year>2005</year>; <volume>38</volume>: <fpage>79</fpage>–<lpage>83</lpage>.<pub-id pub-id-type="pmid">15966133</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R13">
+        <label>13</label>
+        <mixed-citation publication-type="journal"><name><surname>Albayda</surname><given-names>J</given-names></name>, <name><surname>Pinal-Fernandez</surname><given-names>I</given-names></name>, <name><surname>Huang</surname><given-names>W</given-names></name>, <etal/>
+<article-title>Antinuclear matrix protein 2 autoantibodies and edema, muscle disease, and malignancy risk in dermatomyositis patients</article-title>. <source>Arthritis Care Res (Hoboken)</source>
+<year>2017</year>; <volume>69</volume>: <fpage>1771</fpage>–<lpage>76</lpage>.<pub-id pub-id-type="pmid">28085235</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R14">
+        <label>14</label>
+        <mixed-citation publication-type="journal"><name><surname>Fiorentino</surname><given-names>DF</given-names></name>, <name><surname>Chung</surname><given-names>LS</given-names></name>, <name><surname>Christopher-Stine</surname><given-names>L</given-names></name>, <etal/>
+<article-title>Most patients with cancer-associated dermatomyositis have antibodies to nuclear matrix protein NXP-2 or transcription intermediary factor 1gamma</article-title>. <source>Arthritis Rheum</source>
+<year>2013</year>; <volume>65</volume>: <fpage>2954</fpage>–<lpage>62</lpage>.<pub-id pub-id-type="pmid">24037894</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R15">
+        <label>15</label>
+        <mixed-citation publication-type="journal"><name><surname>Trallero-Araguas</surname><given-names>E</given-names></name>, <name><surname>Rodrigo-Pendas</surname><given-names>JA</given-names></name>, <name><surname>Selva-O’Callaghan</surname><given-names>A</given-names></name>, <etal/>
+<article-title>Usefulness of anti-p155 autoantibody for diagnosing cancer-associated dermatomyositis: a systematic review and meta-analysis</article-title>. <source>Arthritis Rheum</source>
+<year>2012</year>; <volume>64</volume>: <fpage>523</fpage>–<lpage>32</lpage>.<pub-id pub-id-type="pmid">21953614</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R16">
+        <label>16</label>
+        <mixed-citation publication-type="journal"><name><surname>Ge</surname><given-names>Y</given-names></name>, <name><surname>Lu</surname><given-names>X</given-names></name>, <name><surname>Shu</surname><given-names>X</given-names></name>, <name><surname>Peng</surname><given-names>Q</given-names></name>, <name><surname>Wang</surname><given-names>G</given-names></name>. <article-title>Clinical characteristics of anti-SAE antibodies in Chinese patients with dermatomyositis in comparison with different patient cohorts</article-title>. <source>Sci Rep</source>
+<year>2017</year>; <volume>7</volume>: <fpage>188</fpage>.<pub-id pub-id-type="pmid">28298642</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R17">
+        <label>17</label>
+        <mixed-citation publication-type="journal"><name><surname>Labrador-Horrillo</surname><given-names>M</given-names></name>, <name><surname>Martinez</surname><given-names>MA</given-names></name>, <name><surname>Selva-O’Callaghan</surname><given-names>A</given-names></name>, <etal/>
+<article-title>Anti-MDA5 antibodies in a large Mediterranean population of adults with dermatomyositis</article-title>. <source>J Immunol Res</source>
+<year>2014</year>; <volume>2014</volume>: <fpage>290797</fpage>.<pub-id pub-id-type="pmid">24741583</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R18">
+        <label>18</label>
+        <mixed-citation publication-type="journal"><name><surname>Sato</surname><given-names>S</given-names></name>, <name><surname>Hoshino</surname><given-names>K</given-names></name>, <name><surname>Satoh</surname><given-names>T</given-names></name>, <etal/>
+<article-title>RNA helicase encoded by melanoma differentiation-associated gene 5 is a major autoantigen in patients with clinically amyopathic dermatomyositis: association with rapidly progressive interstitial lung disease</article-title>. <source>Arthritis Rheum</source>
+<year>2009</year>; <volume>60</volume>: <fpage>2193</fpage>–<lpage>200</lpage>.<pub-id pub-id-type="pmid">19565506</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R19">
+        <label>19</label>
+        <mixed-citation publication-type="journal"><name><surname>Narang</surname><given-names>NS</given-names></name>, <name><surname>Casciola-Rosen</surname><given-names>L</given-names></name>, <name><surname>Li</surname><given-names>S</given-names></name>, <name><surname>Chung</surname><given-names>L</given-names></name>, <name><surname>Fiorentino</surname><given-names>DF</given-names></name>. <article-title>Cutaneous ulceration in dermatomyositis: association with anti-melanoma differentiation-associated gene 5 antibodies and interstitial lung disease</article-title>. <source>Arthritis Care Res (Hoboken)</source>
+<year>2015</year>; <volume>67</volume>: <fpage>667</fpage>–<lpage>72</lpage>.<pub-id pub-id-type="pmid">25331610</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R20">
+        <label>20</label>
+        <mixed-citation publication-type="journal"><name><surname>Bodoki</surname><given-names>L</given-names></name>, <name><surname>Budai</surname><given-names>D</given-names></name>, <name><surname>Nagy-Vincze</surname><given-names>M</given-names></name>, <name><surname>Griger</surname><given-names>Z</given-names></name>, <name><surname>Betteridge</surname><given-names>Z</given-names></name>, <name><surname>Dankó</surname><given-names>K</given-names></name>. <article-title>Comparison of clinical characteristics and laboratory parameters of patients with dermatomyositis-specific autoantibodies and autoantibody negative patients</article-title>. <source>Orv Hetil</source>
+<year>2015</year>; <volume>156</volume>: <fpage>1451</fpage>–<lpage>59</lpage>.<pub-id pub-id-type="pmid">26320599</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R21">
+        <label>21</label>
+        <mixed-citation publication-type="journal"><name><surname>Pinal-Fernandez</surname><given-names>I</given-names></name>, <name><surname>Parks</surname><given-names>C</given-names></name>, <name><surname>Werner</surname><given-names>JL</given-names></name>, <etal/>
+<article-title>Longitudinal course of disease in a large cohort of myositis patients with autoantibodies recognizing the signal recognition particle</article-title>. <source>Arthritis Care Res (Hoboken)</source>
+<year>2017</year>; <volume>69</volume>: <fpage>263</fpage>–<lpage>70</lpage>.<pub-id pub-id-type="pmid">27111848</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R22">
+        <label>22</label>
+        <mixed-citation publication-type="journal"><name><surname>Suzuki</surname><given-names>S</given-names></name>, <name><surname>Nishikawa</surname><given-names>A</given-names></name>, <name><surname>Kuwana</surname><given-names>M</given-names></name>, <etal/>
+<article-title>Inflammatory myopathy with anti-signal recognition particle antibodies: case series of 100 patients</article-title>. <source>Orphanet J Rare Dis</source>
+<year>2015</year>; <volume>10</volume>: <fpage>61</fpage>.<pub-id pub-id-type="pmid">25963141</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R23">
+        <label>23</label>
+        <mixed-citation publication-type="journal"><name><surname>Watanabe</surname><given-names>Y</given-names></name>, <name><surname>Uruha</surname><given-names>A</given-names></name>, <name><surname>Suzuki</surname><given-names>S</given-names></name>, <etal/>
+<article-title>Clinical features and prognosis in anti-SRP and anti-HMGCR necrotising myopathy</article-title>. <source>J Neurol Neurosurg Psychiatry</source>
+<year>2016</year>; <volume>87</volume>: <fpage>1038</fpage>–<lpage>44</lpage>.<pub-id pub-id-type="pmid">27147697</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R24">
+        <label>24</label>
+        <mixed-citation publication-type="journal"><name><surname>Christopher-Stine</surname><given-names>L</given-names></name>, <name><surname>Casciola-Rosen</surname><given-names>LA</given-names></name>, <name><surname>Hong</surname><given-names>G</given-names></name>, <name><surname>Chung</surname><given-names>T</given-names></name>, <name><surname>Corse</surname><given-names>AM</given-names></name>, <name><surname>Mammen</surname><given-names>AL</given-names></name>. <article-title>A novel autoantibody recognizing 200-kd and 100-kd proteins is associated with an immune-mediated necrotizing myopathy</article-title>. <source>Arthritis Rheum</source>
+<year>2010</year>; <volume>62</volume>: <fpage>2757</fpage>–<lpage>66</lpage>.<pub-id pub-id-type="pmid">20496415</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R25">
+        <label>25</label>
+        <mixed-citation publication-type="journal"><name><surname>Tiniakou</surname><given-names>E</given-names></name>, <name><surname>Pinal-Fernandez</surname><given-names>I</given-names></name>, <name><surname>Lloyd</surname><given-names>TE</given-names></name>, <etal/>
+<article-title>More severe disease and slower recovery in younger patients with anti-3-hydroxy-3-methylglutaryl-coenzyme A reductase-associated autoimmune myopathy</article-title>. <source>Rheumatology (Oxford)</source>
+<year>2017</year>; <volume>56</volume>: <fpage>787</fpage>–<lpage>94</lpage>.<pub-id pub-id-type="pmid">28096458</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R26">
+        <label>26</label>
+        <mixed-citation publication-type="journal"><name><surname>Mammen</surname><given-names>AL</given-names></name>, <name><surname>Chung</surname><given-names>T</given-names></name>, <name><surname>Christopher-Stine</surname><given-names>L</given-names></name>, <etal/>
+<article-title>Autoantibodies against 3-hydroxy-3-methylglutaryl-coenzyme A reductase in patients with statin-associated autoimmune myopathy</article-title>. <source>Arthritis Rheum</source>
+<year>2011</year>; <volume>63</volume>: <fpage>713</fpage>–<lpage>21</lpage>.<pub-id pub-id-type="pmid">21360500</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R27">
+        <label>27</label>
+        <mixed-citation publication-type="journal"><name><surname>Lloyd</surname><given-names>TE</given-names></name>, <name><surname>Mammen</surname><given-names>AL</given-names></name>, <name><surname>Amato</surname><given-names>AA</given-names></name>, <name><surname>Weiss</surname><given-names>MD</given-names></name>, <name><surname>Needham</surname><given-names>M</given-names></name>, <name><surname>Greenberg</surname><given-names>SA</given-names></name>. <article-title>Evaluation and construction of diagnostic criteria for inclusion body myositis</article-title>. <source>Neurology</source>
+<year>2014</year>; <volume>83</volume>: <fpage>426</fpage>–<lpage>33</lpage>.<pub-id pub-id-type="pmid">24975859</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R28">
+        <label>28</label>
+        <mixed-citation publication-type="journal"><name><surname>Pinal-Fernandez</surname><given-names>I</given-names></name>, <name><surname>Casal-Dominguez</surname><given-names>M</given-names></name>, <name><surname>Huapaya</surname><given-names>JA</given-names></name>, <etal/>
+<article-title>A longitudinal cohort study of the anti-synthetase syndrome: increased severity of interstitial lung disease in black patients and patients with anti-PL7 and anti-PL12 autoantibodies</article-title>. <source>Rheumatology (Oxford)</source>
+<year>2017</year>; <volume>56</volume>: <fpage>999</fpage>–<lpage>1007</lpage>.<pub-id pub-id-type="pmid">28339994</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R29">
+        <label>29</label>
+        <mixed-citation publication-type="journal"><name><surname>Trallero-Araguas</surname><given-names>E</given-names></name>, <name><surname>Grau-Junyent</surname><given-names>JM</given-names></name>, <name><surname>Labirua-Iturburu</surname><given-names>A</given-names></name>, <etal/>
+<article-title>Clinical manifestations and long-term outcome of anti-Jo1 antisynthetase patients in a large cohort of Spanish patients from the GEAS-IIM group</article-title>. <source>Semin Arthritis Rheum</source>
+<year>2016</year>; <volume>46</volume>: <fpage>225</fpage>–<lpage>31</lpage>.<pub-id pub-id-type="pmid">27139168</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R30">
+        <label>30</label>
+        <mixed-citation publication-type="journal"><name><surname>Guillen-Del Castillo</surname><given-names>A</given-names></name>, <name><surname>Pilar Simeon-Aznar</surname><given-names>C</given-names></name>, <name><surname>Fonollosa-Pla</surname><given-names>V</given-names></name>, <etal/>
+<article-title>Good outcome of interstitial lung disease in patients with scleroderma associated to anti-PM/Scl antibody</article-title>. <source>Semin Arthritis Rheum</source>
+<year>2014</year>; <volume>44</volume>: <fpage>331</fpage>–<lpage>37</lpage>.<pub-id pub-id-type="pmid">25110305</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R31">
+        <label>31</label>
+        <mixed-citation publication-type="journal"><name><surname>Rigolet</surname><given-names>A</given-names></name>, <name><surname>Musset</surname><given-names>L</given-names></name>, <name><surname>Dubourg</surname><given-names>O</given-names></name>, <etal/>
+<article-title>Inflammatory myopathies with anti-Ku antibodies: a prognosis dependent on associated lung disease</article-title>. <source>Medicine (Baltimore)</source>
+<year>2012</year>; <volume>91</volume>: <fpage>95</fpage>–<lpage>102</lpage>.<pub-id pub-id-type="pmid">22391471</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R32">
+        <label>32</label>
+        <mixed-citation publication-type="journal"><name><surname>Escola-Verge</surname><given-names>L</given-names></name>, <name><surname>Pinal-Fernandez</surname><given-names>I</given-names></name>, <name><surname>Fernandez-Codina</surname><given-names>A</given-names></name>, <etal/>
+<article-title>Mixed connective tissue disease and epitope spreading: a historical cohort study</article-title>. <source>J Clin Rheumatol</source>
+<year>2017</year>; <volume>23</volume>: <fpage>155</fpage>–<lpage>59</lpage>.<pub-id pub-id-type="pmid">28248800</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R33">
+        <label>33</label>
+        <mixed-citation publication-type="journal"><name><surname>Selva-O’Callaghan</surname><given-names>A</given-names></name>, <name><surname>Grau</surname><given-names>JM</given-names></name>, <name><surname>Gamez-Cenzano</surname><given-names>C</given-names></name>, <etal/>
+<article-title>Conventional cancer screening versus PET/CT in dermatomyositis/polymyositis</article-title>. <source>Am J Med</source>
+<year>2010</year>; <volume>123</volume>: <fpage>558</fpage>–<lpage>62</lpage>.<pub-id pub-id-type="pmid">20569766</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R34">
+        <label>34</label>
+        <mixed-citation publication-type="journal"><name><surname>Miller</surname><given-names>FW</given-names></name>, <name><surname>Chen</surname><given-names>W</given-names></name>, <name><surname>O’Hanlon</surname><given-names>TP</given-names></name>, <etal/>
+<article-title>Genome-wide association study identifies HLA 8.1 ancestral haplotype alleles as major genetic risk factors for myositis phenotypes</article-title>. <source>Genes Immun</source>
+<year>2015</year>; <volume>16</volume>: <fpage>470</fpage>–<lpage>80</lpage>.<pub-id pub-id-type="pmid">26291516</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R35">
+        <label>35</label>
+        <mixed-citation publication-type="journal"><name><surname>Mamyrova</surname><given-names>G</given-names></name>, <name><surname>Rider</surname><given-names>LG</given-names></name>, <name><surname>Ehrlich</surname><given-names>A</given-names></name>, <etal/>
+<article-title>Environmental factors associated with disease flare in juvenile and adult dermatomyositis</article-title>. <source>Rheumatology (Oxford)</source>
+<year>2017</year>; <volume>56</volume>: <fpage>1342</fpage>–<lpage>47</lpage>.<pub-id pub-id-type="pmid">28444299</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R36">
+        <label>36</label>
+        <mixed-citation publication-type="journal"><name><surname>Pinal-Fernandez</surname><given-names>I</given-names></name>, <name><surname>Ferrer-Fabregas</surname><given-names>B</given-names></name>, <name><surname>Trallero-Araguas</surname><given-names>E</given-names></name>, <etal/>
+<article-title>Tumour TIF1 mutations and loss of heterozygosity related to cancer-associated myositis</article-title>. <source>Rheumatology (Oxford)</source>
+<year>2018</year>; <volume>57</volume>: <fpage>388</fpage>–<lpage>96</lpage>.<pub-id pub-id-type="pmid">29149307</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R37">
+        <label>37</label>
+        <mixed-citation publication-type="journal"><name><surname>Greenberg</surname><given-names>SA</given-names></name>, <name><surname>Pinkus</surname><given-names>JL</given-names></name>, <name><surname>Pinkus</surname><given-names>GS</given-names></name>, <etal/>
+<article-title>Interferon-alpha/beta-mediated innate immune mechanisms in dermatomyositis</article-title>. <source>Ann Neurol</source>
+<year>2005</year>; <volume>57</volume>: <fpage>664</fpage>–<lpage>78</lpage>.<pub-id pub-id-type="pmid">15852401</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R38">
+        <label>38</label>
+        <mixed-citation publication-type="journal"><name><surname>Chung</surname><given-names>T</given-names></name>, <name><surname>Christopher-Stine</surname><given-names>L</given-names></name>, <name><surname>Paik</surname><given-names>JJ</given-names></name>, <name><surname>Corse</surname><given-names>A</given-names></name>, <name><surname>Mammen</surname><given-names>AL</given-names></name>. <article-title>The composition of cellular infiltrates in anti-HMG-CoA reductase-associated myopathy</article-title>. <source>Muscle Nerve</source>
+<year>2015</year>; <volume>52</volume>: <fpage>189</fpage>–<lpage>95</lpage>.<pub-id pub-id-type="pmid">25737145</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R39">
+        <label>39</label>
+        <mixed-citation publication-type="journal"><name><surname>Allenbach</surname><given-names>Y</given-names></name>, <name><surname>Arouche-Delaperche</surname><given-names>L</given-names></name>, <name><surname>Preusse</surname><given-names>C</given-names></name>, <etal/>
+<article-title>Necrosis in anti-SRP(+) and anti-HMGCR(+) myopathies: role of autoantibodies and complement</article-title>. <source>Neurology</source>
+<year>2018</year>; <volume>90</volume>: <fpage>e507</fpage>–<lpage>17</lpage>.<pub-id pub-id-type="pmid">29330311</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R40">
+        <label>40</label>
+        <mixed-citation publication-type="journal"><name><surname>Allenbach</surname><given-names>Y</given-names></name>, <name><surname>Mammen</surname><given-names>AL</given-names></name>, <name><surname>Stenzel</surname><given-names>W</given-names></name>, <name><surname>Benveniste</surname><given-names>O</given-names></name>, <article-title>Immune-Mediated Necrotizing Myopathies Working Group. 224th ENMC International Workshop: clinico-sero-pathological classification of immune-mediated necrotizing myopathies Zandvoort, The Netherlands, Oct 14–16, 2016</article-title>. <source>Neuromuscul Disord</source>
+<year>2018</year>; <volume>28</volume>: <fpage>87</fpage>–<lpage>99</lpage>.<pub-id pub-id-type="pmid">29221629</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R41">
+        <label>41</label>
+        <mixed-citation publication-type="journal"><name><surname>Allenbach</surname><given-names>Y</given-names></name>, <name><surname>Keraen</surname><given-names>J</given-names></name>, <name><surname>Bouvier</surname><given-names>AM</given-names></name>, <etal/>
+<article-title>High risk of cancer in autoimmune necrotizing myopathies: usefulness of myositis specific antibody</article-title>. <source>Brain</source>
+<year>2016</year>; <volume>139</volume>: <fpage>2131</fpage>–<lpage>35</lpage>.<pub-id pub-id-type="pmid">27086869</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R42">
+        <label>42</label>
+        <mixed-citation publication-type="journal"><name><surname>Targoff</surname><given-names>IN</given-names></name>, <name><surname>Johnson</surname><given-names>AE</given-names></name>, <name><surname>Miller</surname><given-names>FW</given-names></name>. <article-title>Antibody to signal recognition particle in polymyositis</article-title>. <source>Arthritis Rheum</source>
+<year>1990</year>; <volume>33</volume>: <fpage>1361</fpage>–<lpage>70</lpage>.<pub-id pub-id-type="pmid">2403400</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R43">
+        <label>43</label>
+        <mixed-citation publication-type="journal"><name><surname>Kao</surname><given-names>AH</given-names></name>, <name><surname>Lacomis</surname><given-names>D</given-names></name>, <name><surname>Lucas</surname><given-names>M</given-names></name>, <name><surname>Fertig</surname><given-names>N</given-names></name>, <name><surname>Oddis</surname><given-names>CV</given-names></name>. <article-title>Anti-signal recognition particle autoantibody in patients with and patients without idiopathic inflammatory myopathy</article-title>. <source>Arthritis Rheum</source>
+<year>2004</year>; <volume>50</volume>: <fpage>209</fpage>–<lpage>15</lpage>.<pub-id pub-id-type="pmid">14730618</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R44">
+        <label>44</label>
+        <mixed-citation publication-type="journal"><name><surname>Chen</surname><given-names>F</given-names></name>, <name><surname>Peng</surname><given-names>Y</given-names></name>, <name><surname>Chen</surname><given-names>M</given-names></name>. <article-title>Diagnostic Approach to Cardiac Involvement in Idiopathic Inflammatory Myopathies</article-title>. <source>Int Heart J</source>
+<year>2018</year>; <volume>59</volume>: <fpage>256</fpage>–<lpage>62</lpage>.<pub-id pub-id-type="pmid">29563381</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R45">
+        <label>45</label>
+        <mixed-citation publication-type="journal"><name><surname>Ohnuki</surname><given-names>Y</given-names></name>, <name><surname>Suzuki</surname><given-names>S</given-names></name>, <name><surname>Shiina</surname><given-names>T</given-names></name>, <etal/>
+<article-title>HLA-DRB1 alleles in immune-mediated necrotizing myopathy</article-title>. <source>Neurology</source>
+<year>2016</year>; <volume>87</volume>: <fpage>1954</fpage>–<lpage>55</lpage>.<pub-id pub-id-type="pmid">27581220</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R46">
+        <label>46</label>
+        <mixed-citation publication-type="journal"><name><surname>Mammen</surname><given-names>AL</given-names></name>, <name><surname>Gaudet</surname><given-names>D</given-names></name>, <name><surname>Brisson</surname><given-names>D</given-names></name>, <etal/>
+<article-title>Increased frequency of DRB1*11:01 in anti-hydroxymethylglutaryl-coenzyme A reductase-associated autoimmune myopathy</article-title>. <source>Arthritis Care Res (Hoboken)</source>
+<year>2012</year>; <volume>64</volume>: <fpage>1233</fpage>–<lpage>37</lpage>.<pub-id pub-id-type="pmid">22422616</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R47">
+        <label>47</label>
+        <mixed-citation publication-type="journal"><name><surname>Limaye</surname><given-names>V</given-names></name>, <name><surname>Bundell</surname><given-names>C</given-names></name>, <name><surname>Hollingsworth</surname><given-names>P</given-names></name>, <etal/>
+<article-title>Clinical and genetic associations of autoantibodies to 3-hydroxy-3-methyl-glutaryl-coenzyme a reductase in patients with immune-mediated myositis and necrotizing myopathy</article-title>. <source>Muscle Nerve</source>
+<year>2015</year>; <volume>52</volume>: <fpage>196</fpage>–<lpage>203</lpage>.<pub-id pub-id-type="pmid">25521389</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R48">
+        <label>48</label>
+        <mixed-citation publication-type="journal"><name><surname>Selva-O’Callaghan</surname><given-names>A</given-names></name>, <name><surname>Alvarado-Cardenas</surname><given-names>M</given-names></name>, <name><surname>Pinal-Fernández</surname><given-names>I</given-names></name>, <etal/>
+<article-title>Statin-induced myalgia and myositis: an update on pathogenesis and clinical recommendations</article-title>. <source>Expert Rev Clin Immunol</source>
+<year>2018</year>; <volume>14</volume>: <fpage>215</fpage>–<lpage>24</lpage>.<pub-id pub-id-type="pmid">29473763</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R49">
+        <label>49</label>
+        <mixed-citation publication-type="journal"><name><surname>Arouche-Delaperche</surname><given-names>L</given-names></name>, <name><surname>Allenbach</surname><given-names>Y</given-names></name>, <name><surname>Amelin</surname><given-names>D</given-names></name>, <etal/>
+<article-title>Pathogenic role of anti-signal recognition protein and anti-3-Hydroxy-3-methylglutaryl-CoA reductase antibodies in necrotizing myopathies: myofiber atrophy and impairment of muscle regeneration in necrotizing autoimmune myopathies</article-title>. <source>Ann Neurol</source>
+<year>2017</year>; <volume>81</volume>: <fpage>538</fpage>–<lpage>48</lpage>.<pub-id pub-id-type="pmid">28224701</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R50">
+        <label>50</label>
+        <mixed-citation publication-type="journal"><name><surname>Lloyd</surname><given-names>TE</given-names></name>, <name><surname>Christopher-Stine</surname><given-names>L</given-names></name>, <name><surname>Pinal-Fernandez</surname><given-names>I</given-names></name>, <etal/>
+<article-title>Cytosolic 5’-nucleotidase 1A as a target of circulating autoantibodies in autoimmune diseases</article-title>. <source>Arthritis Care Res (Hoboken)</source>
+<year>2016</year>; <volume>68</volume>: <fpage>66</fpage>–<lpage>71</lpage>.<pub-id pub-id-type="pmid">25892010</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R51">
+        <label>51</label>
+        <mixed-citation publication-type="journal"><name><surname>Herbert</surname><given-names>MK</given-names></name>, <name><surname>Stammen-Vogelzangs</surname><given-names>J</given-names></name>, <name><surname>Verbeek</surname><given-names>MM</given-names></name>, <etal/>
+<article-title>Disease specificity of autoantibodies to cytosolic 5’-nucleotidase 1A in sporadic inclusion body myositis versus known autoimmune diseases</article-title>. <source>Ann Rheum Dis</source>
+<year>2016</year>; <volume>75</volume>: <fpage>696</fpage>–<lpage>701</lpage>.<pub-id pub-id-type="pmid">25714931</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R52">
+        <label>52</label>
+        <mixed-citation publication-type="journal"><name><surname>Muro</surname><given-names>Y</given-names></name>, <name><surname>Nakanishi</surname><given-names>H</given-names></name>, <name><surname>Katsuno</surname><given-names>M</given-names></name>, <name><surname>Kono</surname><given-names>M</given-names></name>, <name><surname>Akiyama</surname><given-names>M</given-names></name>. <article-title>Prevalence of anti-NT5C1A antibodies in Japanese patients with autoimmune rheumatic diseases in comparison with other patient cohorts</article-title>. <source>Clin Chim Acta</source>
+<year>2017</year>; <volume>472</volume>: <fpage>1</fpage>–<lpage>4</lpage>.<pub-id pub-id-type="pmid">28687351</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R53">
+        <label>53</label>
+        <mixed-citation publication-type="journal"><name><surname>Lilleker</surname><given-names>JB</given-names></name>, <name><surname>Rietveld</surname><given-names>A</given-names></name>, <name><surname>Pye</surname><given-names>SR</given-names></name>, <etal/>
+<article-title>Cytosolic 5’-nucleotidase 1A autoantibody profile and clinical characteristics in inclusion body myositis</article-title>. <source>Ann Rheum Dis</source>
+<year>2017</year>; <volume>76</volume>: <fpage>862</fpage>–<lpage>68</lpage>.<pub-id pub-id-type="pmid">28122761</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R54">
+        <label>54</label>
+        <mixed-citation publication-type="journal"><name><surname>Rojana-Udomsart</surname><given-names>A</given-names></name>, <name><surname>Bundell</surname><given-names>C</given-names></name>, <name><surname>James</surname><given-names>I</given-names></name>, <etal/>
+<article-title>Frequency of autoantibodies and correlation with HLA-DRB1 genotype in sporadic inclusion-body myositis (s-IBM): a population control study</article-title>. <source>J Neuroimmunol</source>
+<year>2012</year>; <volume>249</volume>: <fpage>66</fpage>–<lpage>70</lpage>.<pub-id pub-id-type="pmid">22554526</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R55">
+        <label>55</label>
+        <mixed-citation publication-type="journal"><name><surname>Tasca</surname><given-names>G</given-names></name>, <name><surname>Monforte</surname><given-names>M</given-names></name>, <name><surname>De Fino</surname><given-names>C</given-names></name>, <name><surname>Kley</surname><given-names>RA</given-names></name>, <name><surname>Ricci</surname><given-names>E</given-names></name>, <name><surname>Mirabella</surname><given-names>M</given-names></name>. <article-title>Magnetic resonance imaging pattern recognition in sporadic inclusion-body myositis</article-title>. <source>Muscle Nerve</source>
+<year>2015</year>; <volume>52</volume>: <fpage>956</fpage>–<lpage>62</lpage>.<pub-id pub-id-type="pmid">25808807</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R56">
+        <label>56</label>
+        <mixed-citation publication-type="journal"><name><surname>Greenberg</surname><given-names>SA</given-names></name>, <name><surname>Pinkus</surname><given-names>JL</given-names></name>, <name><surname>Amato</surname><given-names>AA</given-names></name>, <name><surname>Kristensen</surname><given-names>T</given-names></name>, <name><surname>Dorfman</surname><given-names>DM</given-names></name>. <article-title>Association of inclusion body myositis with T cell large granular lymphocytic leukaemia</article-title>. <source>Brain</source>
+<year>2016</year>; <volume>139</volume>: <fpage>1348</fpage>–<lpage>60</lpage>.<pub-id pub-id-type="pmid">26920676</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R57">
+        <label>57</label>
+        <mixed-citation publication-type="journal"><name><surname>Van De Vlekkert</surname><given-names>J</given-names></name>, <name><surname>Maas</surname><given-names>M</given-names></name>, <name><surname>Hoogendijk</surname><given-names>JE</given-names></name>, <name><surname>De Visser</surname><given-names>M</given-names></name>, <name><surname>Van Schaik</surname><given-names>IN</given-names></name>. <article-title>Combining MRI and muscle biopsy improves diagnostic accuracy in subacute-onset idiopathic inflammatory myopathy</article-title>. <source>Muscle Nerve</source>
+<year>2015</year>; <volume>51</volume>: <fpage>253</fpage>–<lpage>58</lpage>.<pub-id pub-id-type="pmid">24895239</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R58">
+        <label>58</label>
+        <mixed-citation publication-type="journal"><name><surname>Catalan-Garcia</surname><given-names>M</given-names></name>, <name><surname>Garrabou</surname><given-names>G</given-names></name>, <name><surname>Moren</surname><given-names>C</given-names></name>, <etal/>
+<article-title>Mitochondrial DNA disturbances and deregulated expression of oxidative phosphorylation and mitochondrial fusion proteins in sporadic inclusion body myositis</article-title>. <source>Clin Sci (Lond)</source>
+<year>2016</year>; <volume>130</volume>: <fpage>1741</fpage>–<lpage>51</lpage>.<pub-id pub-id-type="pmid">27413019</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R59">
+        <label>59</label>
+        <mixed-citation publication-type="journal"><name><surname>Rygiel</surname><given-names>KA</given-names></name>, <name><surname>Tuppen</surname><given-names>HA</given-names></name>, <name><surname>Grady</surname><given-names>JP</given-names></name>, <etal/>
+<article-title>Complex mitochondrial DNA rearrangements in individual cells from patients with sporadic inclusion body myositis</article-title>. <source>Nucleic Acids Res</source>
+<year>2016</year>; <volume>44</volume>: <fpage>5313</fpage>–<lpage>29</lpage>.<pub-id pub-id-type="pmid">27131788</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R60">
+        <label>60</label>
+        <mixed-citation publication-type="journal"><name><surname>Greenberg</surname><given-names>SA</given-names></name>, <name><surname>Pinkus</surname><given-names>JL</given-names></name>, <name><surname>Amato</surname><given-names>AA</given-names></name>. <article-title>Nuclear membrane proteins are present within rimmed vacuoles in inclusion-body myositis</article-title>. <source>Muscle Nerve</source>
+<year>2006</year>; <volume>34</volume>: <fpage>406</fpage>–<lpage>16</lpage>.<pub-id pub-id-type="pmid">16823856</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R61">
+        <label>61</label>
+        <mixed-citation publication-type="journal"><name><surname>Guttsches</surname><given-names>AK</given-names></name>, <name><surname>Brady</surname><given-names>S</given-names></name>, <name><surname>Krause</surname><given-names>K</given-names></name>, <etal/>
+<article-title>Proteomics of rimmed vacuoles define new risk allele in inclusion body myositis</article-title>. <source>Ann Neurol</source>
+<year>2017</year>; <volume>81</volume>: <fpage>227</fpage>–<lpage>39</lpage>.<pub-id pub-id-type="pmid">28009083</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R62">
+        <label>62</label>
+        <mixed-citation publication-type="journal"><name><surname>Catalan-Garcia</surname><given-names>M</given-names></name>, <name><surname>Garrabou</surname><given-names>G</given-names></name>, <name><surname>Moren</surname><given-names>C</given-names></name>, <etal/>
+<article-title>BACE-1, PS-1 and sAPPbeta levels are increased in plasma from sporadic inclusion body myositis patients: surrogate biomarkers among inflammatory myopathies</article-title>. <source>Mol Med</source>
+<year>2015</year>; <volume>21</volume>: <fpage>817</fpage>–<lpage>23</lpage>.<pub-id pub-id-type="pmid">26552061</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R63">
+        <label>63</label>
+        <mixed-citation publication-type="journal"><name><surname>Goyal</surname><given-names>NA</given-names></name>, <name><surname>Cash</surname><given-names>TM</given-names></name>, <name><surname>Alam</surname><given-names>U</given-names></name>, <etal/>
+<article-title>Seropositivity for NT5c1A antibody in sporadic inclusion body myositis predicts more severe motor, bulbar and respiratory involvement</article-title>. <source>J Neurol Neurosurg Psychiatry</source>
+<year>2016</year>; <volume>87</volume>: <fpage>373</fpage>–<lpage>78</lpage>.<pub-id pub-id-type="pmid">25857661</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R64">
+        <label>64</label>
+        <mixed-citation publication-type="journal"><name><surname>Tawara</surname><given-names>N</given-names></name>, <name><surname>Yamashita</surname><given-names>S</given-names></name>, <name><surname>Zhang</surname><given-names>X</given-names></name>, <etal/>
+<article-title>Pathomechanisms of anti-cytosolic 5’-nucleotidase 1A autoantibodies in sporadic inclusion body myositis</article-title>. <source>Ann Neurol</source>
+<year>2017</year>; <volume>81</volume>: <fpage>512</fpage>–<lpage>25</lpage>.<pub-id pub-id-type="pmid">28318044</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R65">
+        <label>65</label>
+        <mixed-citation publication-type="journal"><name><surname>Andersson</surname><given-names>H</given-names></name>, <name><surname>Kirkhus</surname><given-names>E</given-names></name>, <name><surname>Garen</surname><given-names>T</given-names></name>, <name><surname>Walle-Hansen</surname><given-names>R</given-names></name>, <name><surname>Merckoll</surname><given-names>E</given-names></name>, <name><surname>Molberg</surname><given-names>O</given-names></name>. <article-title>Comparative analyses of muscle MRI and muscular function in anti-synthetase syndrome patients and matched controls: a cross-sectional study</article-title>. <source>Arthritis Res Ther</source>
+<year>2017</year>; <volume>19</volume>: <fpage>17</fpage>.<pub-id pub-id-type="pmid">28122635</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R66">
+        <label>66</label>
+        <mixed-citation publication-type="journal"><name><surname>Mescam-Mancini</surname><given-names>L</given-names></name>, <name><surname>Allenbach</surname><given-names>Y</given-names></name>, <name><surname>Hervier</surname><given-names>B</given-names></name>, <etal/>
+<article-title>Anti-Jo-1 antibody-positive patients show a characteristic necrotizing perifascicular myositis</article-title>. <source>Brain</source>
+<year>2015</year>; <volume>138</volume>: <fpage>2485</fpage>–<lpage>92</lpage>.<pub-id pub-id-type="pmid">26198592</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R67">
+        <label>67</label>
+        <mixed-citation publication-type="journal"><name><surname>Noguchi</surname><given-names>E</given-names></name>, <name><surname>Uruha</surname><given-names>A</given-names></name>, <name><surname>Suzuki</surname><given-names>S</given-names></name>, <etal/>
+<article-title>Skeletal muscle involvement in antisynthetase syndrome</article-title>. <source>JAMA Neurol</source>
+<year>2017</year>; <volume>74</volume>: <fpage>992</fpage>–<lpage>99</lpage>.<pub-id pub-id-type="pmid">28586844</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R68">
+        <label>68</label>
+        <mixed-citation publication-type="journal"><name><surname>Stenzel</surname><given-names>W</given-names></name>, <name><surname>Preusse</surname><given-names>C</given-names></name>, <name><surname>Allenbach</surname><given-names>Y</given-names></name>, <etal/>
+<article-title>Nuclear actin aggregation is a hallmark of anti-synthetase syndrome-induced dysimmune myopathy</article-title>. <source>Neurology</source>
+<year>2015</year>; <volume>84</volume>: <fpage>1346</fpage>–<lpage>54</lpage>.<pub-id pub-id-type="pmid">25746564</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R69">
+        <label>69</label>
+        <mixed-citation publication-type="journal"><name><surname>Rojana-udomsart</surname><given-names>A</given-names></name>, <name><surname>Needham</surname><given-names>M</given-names></name>, <name><surname>Luo</surname><given-names>YB</given-names></name>, <etal/>
+<article-title>The association of sporadic inclusion body myositis and Sjogren’s syndrome in carriers of HLA-DR3 and the 8.1 MHC ancestral haplotype</article-title>. <source>Clin Neurol Neurosurg</source>
+<year>2011</year>; <volume>113</volume>: <fpage>559</fpage>–<lpage>63</lpage>.<pub-id pub-id-type="pmid">21507567</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R70">
+        <label>70</label>
+        <mixed-citation publication-type="journal"><name><surname>van der Meulen</surname><given-names>MF</given-names></name>, <name><surname>Bronner</surname><given-names>IM</given-names></name>, <name><surname>Hoogendijk</surname><given-names>JE</given-names></name>, <etal/>
+<article-title>Polymyositis: an overdiagnosed entity</article-title>. <source>Neurology</source>
+<year>2003</year>; <volume>61</volume>: <fpage>316</fpage>–<lpage>21</lpage>.<pub-id pub-id-type="pmid">12913190</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R71">
+        <label>71</label>
+        <mixed-citation publication-type="journal"><name><surname>Chahin</surname><given-names>N</given-names></name>, <name><surname>Engel</surname><given-names>AG</given-names></name>. <article-title>Correlation of muscle biopsy, clinical course, and outcome in PM and sporadic IBM</article-title>. <source>Neurology</source>
+<year>2008</year>; <volume>70</volume>: <fpage>418</fpage>–<lpage>24</lpage>.<pub-id pub-id-type="pmid">17881720</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R72">
+        <label>72</label>
+        <mixed-citation publication-type="journal"><name><surname>Vilela</surname><given-names>VS</given-names></name>, <name><surname>Prieto-Gonzalez</surname><given-names>S</given-names></name>, <name><surname>Milisenda</surname><given-names>JC</given-names></name>, <name><surname>Selva-O’Callaghan</surname><given-names>A</given-names></name>, <name><surname>Grau</surname><given-names>JM</given-names></name>. <article-title>Polymyositis, a very uncommon isolated disease: clinical and histological re-evaluation after long-term follow-up</article-title>. <source>Rheumatol Int</source>
+<year>2015</year>; <volume>35</volume>: <fpage>915</fpage>–<lpage>20</lpage>.<pub-id pub-id-type="pmid">25547622</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R73">
+        <label>73</label>
+        <mixed-citation publication-type="journal"><name><surname>Alemo Munters</surname><given-names>L</given-names></name>, <name><surname>Dastmalchi</surname><given-names>M</given-names></name>, <name><surname>Andgren</surname><given-names>V</given-names></name>, <etal/>
+<article-title>Improvement in health and possible reduction in disease activity using endurance exercise in patients with established polymyositis and dermatomyositis: a multicenter randomized controlled trial with a 1-year open extension followup</article-title>. <source>Arthritis Care Res (Hoboken)</source>
+<year>2013</year>; <volume>65</volume>: <fpage>1959</fpage>–<lpage>68</lpage>.<pub-id pub-id-type="pmid">23861241</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R74">
+        <label>74</label>
+        <mixed-citation publication-type="journal"><name><surname>Alexanderson</surname><given-names>H</given-names></name>, <name><surname>Munters</surname><given-names>LA</given-names></name>, <name><surname>Dastmalchi</surname><given-names>M</given-names></name>, <etal/>
+<article-title>Resistive home exercise in patients with recent-onset polymyositis and dermatomyositis—a randomized controlled single-blinded study with a 2-year followup</article-title>. <source>J Rheumatol</source>
+<year>2014</year>; <volume>41</volume>: <fpage>1124</fpage>–<lpage>32</lpage>.<pub-id pub-id-type="pmid">24786930</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R75">
+        <label>75</label>
+        <mixed-citation publication-type="journal"><name><surname>Gordon</surname><given-names>PA</given-names></name>, <name><surname>Winer</surname><given-names>JB</given-names></name>, <name><surname>Hoogendijk</surname><given-names>JE</given-names></name>, <name><surname>Choy</surname><given-names>EH</given-names></name>. <article-title>Immunosuppressant and immunomodulatory treatment for dermatomyositis and polymyositis</article-title>. <source>Cochrane Database Syst Rev</source>
+<year>2012</year>; <volume>8</volume>: <fpage>CD003643</fpage>.</mixed-citation>
+      </ref>
+      <ref id="R76">
+        <label>76</label>
+        <mixed-citation publication-type="journal"><name><surname>van de Vlekkert</surname><given-names>J</given-names></name>, <name><surname>Hoogendijk</surname><given-names>JE</given-names></name>, <name><surname>de Haan</surname><given-names>RJ</given-names></name>, <etal/>
+<article-title>Dexa myositis trial. Oral dexamethasone pulse therapy versus daily prednisolone in sub-acute onset myositis, a randomised clinical trial</article-title>. <source>Neuromuscul Disord</source>
+<year>2010</year>; <volume>20</volume>: <fpage>382</fpage>–<lpage>89</lpage>.<pub-id pub-id-type="pmid">20423755</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R77">
+        <label>77</label>
+        <mixed-citation publication-type="journal"><name><surname>Vencovsky</surname><given-names>J</given-names></name>, <name><surname>Jarosova</surname><given-names>K</given-names></name>, <name><surname>Machacek</surname><given-names>S</given-names></name>, <etal/>
+<article-title>Cyclosporine A versus methotrexate in the treatment of polymyositis and dermatomyositis</article-title>. <source>Scand J Rheumatol</source>
+<year>2000</year>; <volume>29</volume>: <fpage>95</fpage>–<lpage>102</lpage>.<pub-id pub-id-type="pmid">10777122</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R78">
+        <label>78</label>
+        <mixed-citation publication-type="journal"><name><surname>Go</surname><given-names>DJ</given-names></name>, <name><surname>Park</surname><given-names>JK</given-names></name>, <name><surname>Kang</surname><given-names>EH</given-names></name>, <etal/>
+<article-title>Survival benefit associated with early cyclosporine treatment for dermatomyositis-associated interstitial lung disease</article-title>. <source>Rheumatol Int</source>
+<year>2016</year>; <volume>36</volume>: <fpage>125</fpage>–<lpage>31</lpage>.<pub-id pub-id-type="pmid">26223808</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R79">
+        <label>79</label>
+        <mixed-citation publication-type="journal"><name><surname>Labirua-Iturburu</surname><given-names>A</given-names></name>, <name><surname>Selva-O’Callaghan</surname><given-names>A</given-names></name>, <name><surname>Martinez-Gomez</surname><given-names>X</given-names></name>, <name><surname>Trallero-Araguas</surname><given-names>E</given-names></name>, <name><surname>Labrador-Horrillo</surname><given-names>M</given-names></name>, <name><surname>Vilardell-Tarres</surname><given-names>M</given-names></name>. <article-title>Calcineurin inhibitors in a cohort of patients with antisynthetase-associated interstitial lung disease</article-title>. <source>Clin Exp Rheumatol</source>
+<year>2013</year>; <volume>31</volume>: <fpage>436</fpage>–<lpage>39</lpage>.<pub-id pub-id-type="pmid">23465087</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R80">
+        <label>80</label>
+        <mixed-citation publication-type="journal"><name><surname>Morganroth</surname><given-names>PA</given-names></name>, <name><surname>Kreider</surname><given-names>ME</given-names></name>, <name><surname>Werth</surname><given-names>VP</given-names></name>. <article-title>Mycophenolate mofetil for interstitial lung disease in dermatomyositis</article-title>. <source>Arthritis Care Res (Hoboken)</source>
+<year>2010</year>; <volume>62</volume>: <fpage>1496</fpage>–<lpage>501</lpage>.<pub-id pub-id-type="pmid">20506189</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R81">
+        <label>81</label>
+        <mixed-citation publication-type="journal"><name><surname>Barnes</surname><given-names>H</given-names></name>, <name><surname>Holland</surname><given-names>AE</given-names></name>, <name><surname>Westall</surname><given-names>GP</given-names></name>, <name><surname>Goh</surname><given-names>NS</given-names></name>, <name><surname>Glaspole</surname><given-names>IN</given-names></name>. <article-title>Cyclophosphamide for connective tissue disease-associated interstitial lung disease</article-title>. <source>Cochrane Database Syst Rev</source>
+<year>2018</year>; <volume>1</volume>: <fpage>CD010908</fpage>.<pub-id pub-id-type="pmid">29297205</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R82">
+        <label>82</label>
+        <mixed-citation publication-type="journal"><name><surname>Dalakas</surname><given-names>MC</given-names></name>, <name><surname>Illa</surname><given-names>I</given-names></name>, <name><surname>Dambrosia</surname><given-names>JM</given-names></name>, <etal/>
+<article-title>A controlled trial of high-dose intravenous immune globulin infusions as treatment for dermatomyositis</article-title>. <source>N Engl J Med</source>
+<year>1993</year>; <volume>329</volume>: <fpage>1993</fpage>–<lpage>2000</lpage>.<pub-id pub-id-type="pmid">8247075</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R83">
+        <label>83</label>
+        <mixed-citation publication-type="journal"><name><surname>Kampylafka</surname><given-names>EI</given-names></name>, <name><surname>Kosmidis</surname><given-names>ML</given-names></name>, <name><surname>Panagiotakos</surname><given-names>DB</given-names></name>, <name><surname>Dalakas</surname><given-names>M</given-names></name>, <name><surname>Moutsopoulos</surname><given-names>HM</given-names></name>, <name><surname>Tzioufas</surname><given-names>AG</given-names></name>. <article-title>The effect of intravenous immunoglobulin (IVIG) treatment on patients with dermatomyositis: a 4-year follow-up study</article-title>. <source>Clin Exp Rheumatol</source>
+<year>2012</year>; <volume>30</volume>: <fpage>397</fpage>–<lpage>401</lpage>.<pub-id pub-id-type="pmid">22510247</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R84">
+        <label>84</label>
+        <mixed-citation publication-type="journal"><name><surname>Oddis</surname><given-names>CV</given-names></name>, <name><surname>Reed</surname><given-names>AM</given-names></name>, <name><surname>Aggarwal</surname><given-names>R</given-names></name>, <etal/>
+<article-title>Rituximab in the treatment of refractory adult and juvenile dermatomyositis and adult polymyositis: a randomized, placebo-phase trial</article-title>. <source>Arthritis Rheum</source>
+<year>2013</year>; <volume>65</volume>: <fpage>314</fpage>–<lpage>24</lpage>.<pub-id pub-id-type="pmid">23124935</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R85">
+        <label>85</label>
+        <mixed-citation publication-type="journal"><name><surname>Aggarwal</surname><given-names>R</given-names></name>, <name><surname>Bandos</surname><given-names>A</given-names></name>, <name><surname>Reed</surname><given-names>AM</given-names></name>, <etal/>
+<article-title>Predictors of clinical improvement in rituximab-treated refractory adult and juvenile dermatomyositis and adult polymyositis</article-title>. <source>Arthritis Rheumatol</source>
+<year>2014</year>; <volume>66</volume>: <fpage>740</fpage>–<lpage>49</lpage>.<pub-id pub-id-type="pmid">24574235</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R86">
+        <label>86</label>
+        <mixed-citation publication-type="journal"><name><surname>Tjarnlund</surname><given-names>A</given-names></name>, <name><surname>Tang</surname><given-names>Q</given-names></name>, <name><surname>Wick</surname><given-names>C</given-names></name>, <etal/>
+<article-title>Abatacept in the treatment of adult dermatomyositis and polymyositis: a randomised, phase IIb treatment delayed-start trial</article-title>. <source>Ann Rheum Dis</source>
+<year>2018</year>; <volume>77</volume>: <fpage>55</fpage>–<lpage>62</lpage>.<pub-id pub-id-type="pmid">28993346</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R87">
+        <label>87</label>
+        <mixed-citation publication-type="journal"><name><surname>Narazaki</surname><given-names>M</given-names></name>, <name><surname>Hagihara</surname><given-names>K</given-names></name>, <name><surname>Shima</surname><given-names>Y</given-names></name>, <name><surname>Ogata</surname><given-names>A</given-names></name>, <name><surname>Kishimoto</surname><given-names>T</given-names></name>, <name><surname>Tanaka</surname><given-names>T</given-names></name>. <article-title>Therapeutic effect of tocilizumab on two patients with polymyositis</article-title>. <source>Rheumatology (Oxford)</source>
+<year>2011</year>; <volume>50</volume>: <fpage>1344</fpage>–<lpage>46</lpage>.<pub-id pub-id-type="pmid">21515628</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R88">
+        <label>88</label>
+        <mixed-citation publication-type="journal"><name><surname>Mammen</surname><given-names>AL</given-names></name>, <name><surname>Tiniakou</surname><given-names>E</given-names></name>. <article-title>Intravenous Immune Globulin for Statin-Triggered Autoimmune Myopathy</article-title>. <source>N Engl J Med</source>
+<year>2015</year>; <volume>373</volume>: <fpage>1680</fpage>–<lpage>82</lpage>.<pub-id pub-id-type="pmid">26488714</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R89">
+        <label>89</label>
+        <mixed-citation publication-type="journal"><name><surname>Cherin</surname><given-names>P</given-names></name>, <name><surname>Belizna</surname><given-names>C</given-names></name>, <name><surname>Cartry</surname><given-names>O</given-names></name>, <etal/>
+<article-title>Long-term subcutaneous immunoglobulin use in inflammatory myopathies: a retrospective review of 19 cases</article-title>. <source>Autoimmun Rev</source>
+<year>2016</year>; <volume>15</volume>: <fpage>281</fpage>–<lpage>86</lpage>.<pub-id pub-id-type="pmid">26688441</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R90">
+        <label>90</label>
+        <mixed-citation publication-type="journal"><name><surname>Allenbach</surname><given-names>Y</given-names></name>, <name><surname>Guiguet</surname><given-names>M</given-names></name>, <name><surname>Rigolet</surname><given-names>A</given-names></name>, <etal/>
+<article-title>Efficacy of rituximab in refractory inflammatory myopathies associated with anti-synthetase auto-antibodies: an open-label, phase II trial</article-title>. <source>PLoS One</source>
+<year>2015</year>; <volume>10</volume>: <fpage>e0133702</fpage>.<pub-id pub-id-type="pmid">26539981</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R91">
+        <label>91</label>
+        <mixed-citation publication-type="journal"><name><surname>Andersson</surname><given-names>H</given-names></name>, <name><surname>Sem</surname><given-names>M</given-names></name>, <name><surname>Lund</surname><given-names>MB</given-names></name>, <etal/>
+<article-title>Long-term experience with rituximab in anti-synthetase syndrome-related interstitial lung disease</article-title>. <source>Rheumatology (Oxford)</source>
+<year>2015</year>; <volume>54</volume>: <fpage>1420</fpage>–<lpage>28</lpage>.<pub-id pub-id-type="pmid">25740830</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R92">
+        <label>92</label>
+        <mixed-citation publication-type="journal"><name><surname>Chen</surname><given-names>D</given-names></name>, <name><surname>Wang</surname><given-names>XB</given-names></name>, <name><surname>Zhou</surname><given-names>Y</given-names></name>, <name><surname>Zhu</surname><given-names>XC</given-names></name>. <article-title>Efficacy of infliximab in the treatment for dermatomyositis with acute interstitial pneumonia: a study of fourteen cases and literature review</article-title>. <source>Rheumatol Int</source>
+<year>2013</year>; <volume>33</volume>: <fpage>2455</fpage>–<lpage>58</lpage>.<pub-id pub-id-type="pmid">23715693</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R93">
+        <label>93</label>
+        <mixed-citation publication-type="journal"><collab>Muscle Study Group</collab>. <article-title>A randomized, pilot trial of etanercept in dermatomyositis</article-title>. <source>Ann Neurol</source>
+<year>2011</year>; <volume>70</volume>: <fpage>427</fpage>–<lpage>36</lpage>.<pub-id pub-id-type="pmid">21688301</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R94">
+        <label>94</label>
+        <mixed-citation publication-type="journal"><name><surname>Schiffenbauer</surname><given-names>A</given-names></name>, <name><surname>Garg</surname><given-names>M</given-names></name>, <name><surname>Castro</surname><given-names>C</given-names></name>, <etal/>
+<article-title>A randomized, double-blind, placebo-controlled trial of infliximab in refractory polymyositis and dermatomyositis</article-title>. <source>Semin Arthritis Rheum</source>
+<year>2018</year>; <volume>47</volume>: <fpage>858</fpage>–<lpage>64</lpage>.<pub-id pub-id-type="pmid">29174792</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R95">
+        <label>95</label>
+        <mixed-citation publication-type="journal"><name><surname>Zong</surname><given-names>M</given-names></name>, <name><surname>Dorph</surname><given-names>C</given-names></name>, <name><surname>Dastmalchi</surname><given-names>M</given-names></name>, <etal/>
+<article-title>Anakinra treatment in patients with refractory inflammatory myopathies and possible predictive response biomarkers: a mechanistic study with 12 months follow-up</article-title>. <source>Ann Rheum Dis</source>
+<year>2014</year>; <volume>73</volume>: <fpage>913</fpage>–<lpage>20</lpage>.<pub-id pub-id-type="pmid">23625983</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R96">
+        <label>96</label>
+        <mixed-citation publication-type="journal"><name><surname>Ruck</surname><given-names>T</given-names></name>, <name><surname>Bittner</surname><given-names>S</given-names></name>, <name><surname>Kuhlmann</surname><given-names>T</given-names></name>, <name><surname>Wiendl</surname><given-names>H</given-names></name>, <name><surname>Meuth</surname><given-names>SG</given-names></name>. <article-title>Long-term efficacy of alemtuzumab in polymyositis</article-title>. <source>Rheumatology (Oxford)</source>
+<year>2015</year>; <volume>54</volume>: <fpage>560</fpage>–<lpage>62</lpage>.<pub-id pub-id-type="pmid">25552256</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R97">
+        <label>97</label>
+        <mixed-citation publication-type="journal"><name><surname>Kurtzman</surname><given-names>DJ</given-names></name>, <name><surname>Wright</surname><given-names>NA</given-names></name>, <name><surname>Lin</surname><given-names>J</given-names></name>, <etal/>
+<article-title>Tofacitinib citrate for refractory cutaneous dermatomyositis: an alternative treatment</article-title>. <source>JAMA Dermatol</source>
+<year>2016</year>; <volume>152</volume>: <fpage>944</fpage>–<lpage>45</lpage>.<pub-id pub-id-type="pmid">27120749</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R98">
+        <label>98</label>
+        <mixed-citation publication-type="journal"><name><surname>Hornung</surname><given-names>T</given-names></name>, <name><surname>Janzen</surname><given-names>V</given-names></name>, <name><surname>Heidgen</surname><given-names>FJ</given-names></name>, <name><surname>Wolf</surname><given-names>D</given-names></name>, <name><surname>Bieber</surname><given-names>T</given-names></name>, <name><surname>Wenzel</surname><given-names>J</given-names></name>. <article-title>Remission of recalcitrant dermatomyositis treated with ruxolitinib</article-title>. <source>N Engl J Med</source>
+<year>2014</year>; <volume>371</volume>: <fpage>2537</fpage>–<lpage>38</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R99">
+        <label>99</label>
+        <mixed-citation publication-type="journal"><name><surname>Benveniste</surname><given-names>O</given-names></name>, <name><surname>Guiguet</surname><given-names>M</given-names></name>, <name><surname>Freebody</surname><given-names>J</given-names></name>, <etal/>
+<article-title>Long-term observational study of sporadic inclusion body myositis</article-title>. <source>Brain</source>
+<year>2011</year>; <volume>134</volume>: <fpage>3176</fpage>–<lpage>84</lpage>.<pub-id pub-id-type="pmid">21994327</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R100">
+        <label>100</label>
+        <mixed-citation publication-type="journal"><name><surname>Kosmidis</surname><given-names>ML</given-names></name>, <name><surname>Alexopoulos</surname><given-names>H</given-names></name>, <name><surname>Tzioufas</surname><given-names>AG</given-names></name>, <name><surname>Dalakas</surname><given-names>MC</given-names></name>. <article-title>The effect of anakinra, an IL1 receptor antagonist, in patients with sporadic inclusion body myositis (sIBM): a small pilot study</article-title>. <source>J Neurol Sci</source>
+<year>2013</year>; <volume>334</volume>: <fpage>123</fpage>–<lpage>25</lpage>.<pub-id pub-id-type="pmid">23998706</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R101">
+        <label>101</label>
+        <mixed-citation publication-type="journal"><name><surname>Schmidt</surname><given-names>K</given-names></name>, <name><surname>Kleinschnitz</surname><given-names>K</given-names></name>, <name><surname>Rakocevic</surname><given-names>G</given-names></name>, <name><surname>Dalakas</surname><given-names>MC</given-names></name>, <name><surname>Schmidt</surname><given-names>J</given-names></name>. <article-title>Molecular treatment effects of alemtuzumab in skeletal muscles of patients with IBM</article-title>. <source>BMC Neurol</source>
+<year>2016</year>; <volume>16</volume>: <fpage>48</fpage>.<pub-id pub-id-type="pmid">27083892</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R102">
+        <label>102</label>
+        <mixed-citation publication-type="journal"><name><surname>Amato</surname><given-names>AA</given-names></name>, <name><surname>Sivakumar</surname><given-names>K</given-names></name>, <name><surname>Goyal</surname><given-names>N</given-names></name>, <etal/>
+<article-title>Treatment of sporadic inclusion body myositis with bimagrumab</article-title>. <source>Neurology</source>
+<year>2014</year>; <volume>83</volume>: <fpage>2239</fpage>–<lpage>46</lpage>.<pub-id pub-id-type="pmid">25381300</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R103">
+        <label>103</label>
+        <mixed-citation publication-type="journal"><name><surname>Mendell</surname><given-names>JR</given-names></name>, <name><surname>Sahenk</surname><given-names>Z</given-names></name>, <name><surname>Al-Zaidy</surname><given-names>S</given-names></name>, <etal/>
+<article-title>Follistatin gene therapy for sporadic inclusion body myositis improves functional outcomes</article-title>. <source>Mol Ther</source>
+<year>2017</year>; <volume>25</volume>: <fpage>870</fpage>–<lpage>79</lpage>.<pub-id pub-id-type="pmid">28279643</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R104">
+        <label>104</label>
+        <mixed-citation publication-type="journal"><name><surname>Benveniste</surname><given-names>O</given-names></name>, <name><surname>Hogrel</surname><given-names>JY</given-names></name>, <name><surname>Annoussamy</surname><given-names>M</given-names></name>, <etal/>
+<article-title>Rapamycin vs. placebo for the treatment of inclusion body myositis: improvement of the 6 min walking distance, a functional scale, the fvc and muscle quantitative MRI</article-title>. <source>Arthritis Rheumatol</source>
+<year>2017</year>; <volume>69</volume> (<issue>suppl 10</issue>): (<comment>abstr</comment>).</mixed-citation>
+      </ref>
+      <ref id="R105">
+        <label>105</label>
+        <mixed-citation publication-type="journal"><name><surname>Rutkove</surname><given-names>SB</given-names></name>, <name><surname>Parker</surname><given-names>RA</given-names></name>, <name><surname>Nardin</surname><given-names>RA</given-names></name>, <name><surname>Connolly</surname><given-names>CE</given-names></name>, <name><surname>Felice</surname><given-names>KJ</given-names></name>, <name><surname>Raynor</surname><given-names>EM</given-names></name>. <article-title>A pilot randomized trial of oxandrolone in inclusion body myositis</article-title>. <source>Neurology</source>
+<year>2002</year>; <volume>58</volume>: <fpage>1081</fpage>–<lpage>87</lpage>.<pub-id pub-id-type="pmid">11940697</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R106">
+        <label>106</label>
+        <mixed-citation publication-type="journal"><name><surname>Sancricca</surname><given-names>C</given-names></name>, <name><surname>Mora</surname><given-names>M</given-names></name>, <name><surname>Ricci</surname><given-names>E</given-names></name>, <name><surname>Tonali</surname><given-names>PA</given-names></name>, <name><surname>Mantegazza</surname><given-names>R</given-names></name>, <name><surname>Mirabella</surname><given-names>M</given-names></name>. <article-title>Pilot trial of simvastatin in the treatment of sporadic inclusion-body myositis</article-title>. <source>Neurol Sci</source>
+<year>2011</year>; <volume>32</volume>: <fpage>841</fpage>–<lpage>47</lpage>.<pub-id pub-id-type="pmid">21695654</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R107">
+        <label>107</label>
+        <mixed-citation publication-type="journal"><name><surname>Cherin</surname><given-names>P</given-names></name>, <name><surname>Pelletier</surname><given-names>S</given-names></name>, <name><surname>Teixeira</surname><given-names>A</given-names></name>, <etal/>
+<article-title>Intravenous immunoglobulin for dysphagia of inclusion body myositis</article-title>. <source>Neurology</source>
+<year>2002</year>; <volume>58</volume>: <fpage>326</fpage>.<pub-id pub-id-type="pmid">11805271</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R108">
+        <label>108</label>
+        <mixed-citation publication-type="journal"><name><surname>Murata</surname><given-names>KY</given-names></name>, <name><surname>Kouda</surname><given-names>K</given-names></name>, <name><surname>Tajima</surname><given-names>F</given-names></name>, <name><surname>Kondo</surname><given-names>T</given-names></name>. <article-title>Balloon dilation in sporadic inclusion body myositis patients with dysphagia</article-title>. <source>Clin Med Insights Case Rep</source>
+<year>2013</year>; <volume>6</volume>: <fpage>1</fpage>–<lpage>7</lpage>.<pub-id pub-id-type="pmid">23362370</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R109">
+        <label>109</label>
+        <mixed-citation publication-type="journal"><name><surname>Schrey</surname><given-names>A</given-names></name>, <name><surname>Airas</surname><given-names>L</given-names></name>, <name><surname>Jokela</surname><given-names>M</given-names></name>, <name><surname>Pulkkinen</surname><given-names>J</given-names></name>. <article-title>Botulinum toxin alleviates dysphagia of patients with inclusion body myositis</article-title>. <source>J Neurol Sci</source>
+<year>2017</year>; <volume>380</volume>: <fpage>142</fpage>–<lpage>47</lpage>.<pub-id pub-id-type="pmid">28870555</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R110">
+        <label>110</label>
+        <mixed-citation publication-type="journal"><name><surname>Teruya</surname><given-names>A</given-names></name>, <name><surname>Kawamura</surname><given-names>K</given-names></name>, <name><surname>Ichikado</surname><given-names>K</given-names></name>, <name><surname>Sato</surname><given-names>S</given-names></name>, <name><surname>Yasuda</surname><given-names>Y</given-names></name>, <name><surname>Yoshioka</surname><given-names>M</given-names></name>. <article-title>Successful polymyxin B hemoperfusion treatment associated with serial reduction of serum anti-CADM-140/MDA5 antibody levels in rapidly progressive interstitial lung disease with amyopathic dermatomyositis</article-title>. <source>Chest</source>
+<year>2013</year>; <volume>144</volume>: <fpage>1934</fpage>–<lpage>36</lpage>.<pub-id pub-id-type="pmid">24297126</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R111">
+        <label>111</label>
+        <mixed-citation publication-type="journal"><name><surname>Morisset</surname><given-names>J</given-names></name>, <name><surname>Johnson</surname><given-names>C</given-names></name>, <name><surname>Rich</surname><given-names>E</given-names></name>, <name><surname>Collard</surname><given-names>HR</given-names></name>, <name><surname>Lee</surname><given-names>JS</given-names></name>. <article-title>Management of myositis-related interstitial lung disease</article-title>. <source>Chest</source>
+<year>2016</year>; <volume>150</volume>: <fpage>1118</fpage>–<lpage>28</lpage>.<pub-id pub-id-type="pmid">27102182</pub-id>
+</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig position="float" id="F1">
+      <label>Figure 1:</label>
+      <caption>
+        <title>Clinical features and pathological findings of dermatomyositis</title>
+        <p id="P44">A women aged 67 years presented with muscle weakness. She had (A) a heliotrope rash and (C) Gottron’s papules, and a muscle biopsy revealed (B) perifascicular atrophy. The patient was positive for anti-Mi2 autoantibodies and was diagnosed with dermatomyositis. Arrows indicate perifascicular atrophy.</p>
+      </caption>
+      <graphic xlink:href="nihms-2037386-f0001" position="float"/>
+    </fig>
+    <fig position="float" id="F2">
+      <label>Figure 2:</label>
+      <caption>
+        <title>Clinical features and radiological findings of anti-melanoma differentiation-associated gene 5 syndrome</title>
+        <p id="P45">A man aged 52 years presented with progressive dyspnoea that had been present for 2 months. At the emergency room, he was hypoxemic with a ratio of arterial oxygen partial pressure to fractional inspired oxygen of less than 300 (normal &gt;500). The patient was positive for high concentrations of anti-melanoma differentiation-associated gene-5 autoantibodies . (A) A high-resolution chest CT scan showed alveolar infiltrate in both lungs. Infectious and neoplastic causes were ruled out. (B) Characteristic skin lesion ulcer on elbow, (C) fingers suggesting vasculopathy , and (D) erythematous skin changes due to dermatomyositis. The patient was intubated and mechanic ventilation was started at the intensive care unit. After treatment with polymyxin-B haemoperfusion, glucocorticoids, tacrolimus, plasmapheresis, and intravenous immunoglobulin, the patient’s general condition improved to the extent that the orotracheal tube was withdrawn and he was discharged to a conventional ward.</p>
+      </caption>
+      <graphic xlink:href="nihms-2037386-f0002" position="float"/>
+    </fig>
+    <fig position="float" id="F3">
+      <label>Figure 3:</label>
+      <caption>
+        <title>Clinical features and pathological findings of sporadic inclusion-body myositis</title>
+        <p id="P46">A man aged 65 years presented with slowly progressing muscle weakness that included weakness of distal muscle groups. (A) Quadriceps were markedly atrophied and the muscle biopsy showed (B) fibres with rimmed vacuoles (black arrow), ragged-red fibres (black arrowhead), and (C) p62 positivity. Quadriceps image courtesy of Dr Tom Lloyd (Department of Neurology, Johns Hopkins University School of Medicine, Baltimore, MD, USA).</p>
+      </caption>
+      <graphic xlink:href="nihms-2037386-f0003" position="float"/>
+    </fig>
+    <fig position="float" id="F4">
+      <label>Figure 4:</label>
+      <caption>
+        <title>Clinical features and radiological and pathological findings of antisynthetase syndrome</title>
+        <p id="P47">A woman aged 45 years presented with muscle weakness and dyspnoea. (A) A high-resolution chest CT scan showed interstitial lung disease. She had crackles in both lung bases and (B) mechanic’s hands. Muscle biopsy showed (C) necrotic and regenerating muscle fibres in the perifascicular area (arrows) and (D) prominent class-1 major histocompatibility complex positivity predominantly in the perifascicular area (arrows). Serum was positive for anti-Jo1 antibodies. Jo1=histidyl tRNA synthetase.</p>
+      </caption>
+      <graphic xlink:href="nihms-2037386-f0004" position="float"/>
+    </fig>
+    <table-wrap position="float" id="T1" orientation="landscape">
+      <label>Table 1:</label>
+      <caption>
+        <p id="P48">Clinical characteristics of the main clinical and phenotype-specific autoantibody groups in inflammatory myopathies</p>
+      </caption>
+      <table frame="box" rules="none">
+        <colgroup span="1">
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th align="left" valign="top" rowspan="1" colspan="1"/>
+            <th align="left" valign="top" rowspan="1" colspan="1">Clinical features</th>
+            <th colspan="3" align="left" valign="top" rowspan="1">Type of organ involvement and severity<hr/></th>
+          </tr>
+          <tr>
+            <th align="left" valign="top" rowspan="1" colspan="1"/>
+            <th align="left" valign="top" rowspan="1" colspan="1"/>
+            <th align="left" valign="top" rowspan="1" colspan="1">Muscle</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">Lung</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">Skin</th>
+          </tr>
+          <tr>
+            <th colspan="5" align="center" valign="middle" rowspan="1">
+<hr/>
+</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Dermatomyositis</td>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Anti-Mi2 autoantibodies<sup><xref rid="R12" ref-type="bibr">12</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild-to-moderate muscle involvement with classical skin rash</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Moderate</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">None</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Moderate</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Anti-NXP2 autoantibodies<sup><xref rid="R13" ref-type="bibr">13</xref>,<xref rid="R14" ref-type="bibr">14</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild-to-moderate muscle involvement with myalgia, classical skin rash, calcinosis, distal extensor weakness and oedema, and dysphagia; increased risk of cancer</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Moderate</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">None</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Moderate</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Anti-TIFl autoantibodies<sup><xref rid="R14" ref-type="bibr">14</xref>,<xref rid="R15" ref-type="bibr">15</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Strong association with cancer; mild muscle involvement with marked skin involvement, occasionally this type of myositis can present as clinically amyopathic dermatomyositis</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">None</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Moderate</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Anti-SAE autoantibodies<sup><xref rid="R16" ref-type="bibr">16</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild-to-moderate muscle involvement with classical skin rash</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">None</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Moderate</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Anti-MDA5 autoantibodies<sup><xref rid="R17" ref-type="bibr">17</xref>–<xref rid="R19" ref-type="bibr">19</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Severe skin rash with no muscle involvement (hypomyopathic or amyopathic dermatomyositis) and occasionally highly lethal forms of rapidly progressive interstitial lung disease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">None or mild</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Severe</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Severe</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Antibody-negative dermatomyositis<sup><xref rid="R20" ref-type="bibr">20</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild-to-moderate muscle involvement with classical skin rash</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Unknown</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Moderate</td>
+          </tr>
+          <tr>
+            <td colspan="5" align="left" valign="top" rowspan="1">Immune-mediated necrotising myopathy</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Anti-SRP autoantibodies<sup><xref rid="R21" ref-type="bibr">21</xref>–<xref rid="R23" ref-type="bibr">23</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Severe muscle involvement, dysphagia, and 20% of patients with lung involvement with no skin lesions</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Severe</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">None</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Anti-HMGCR autoantibodies<sup><xref rid="R24" ref-type="bibr">24</xref>–<xref rid="R26" ref-type="bibr">26</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Exclusive severe muscle involvement; statin-exposed patients</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Severe</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">None</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">None</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Antibody-negative immune-mediated necrotising myopathy</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Strong association with cancer</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Unknown</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Unknown</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">None</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Sporadic inclusion-body myositis<sup><xref rid="R3" ref-type="bibr">3</xref>,<xref rid="R27" ref-type="bibr">27</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Older (&gt;50 years) patients with prominant distal and quadriceps involvement; slow progression and refractory to treatment</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Severe</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">None</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">None</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Overlap myositis</td>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Antisynthetase syndrome</td>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">  Anti-Jo1 autoantibodies<sup><xref rid="R28" ref-type="bibr">28</xref>,<xref rid="R29" ref-type="bibr">29</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild-to-moderate muscle involvement with progressive lung involvement and possible mild dermatomyositis skin rash (~50% of patients); other characteristic cutaneous features (eg, mechanic's hands and Raynaud syndrome)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Moderate</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Moderate</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">  Anti-PL7 autoantibodies<sup><xref rid="R28" ref-type="bibr">28</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Symptoms are similar to those of anti-Jo1 autoantibody-positive myositis with more severe lung involvement</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Moderate</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Severe</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">  Anti-PL12 autoantibodies<sup><xref rid="R28" ref-type="bibr">28</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Severe lung involvement with mild muscle weakness</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Severe</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Anti-Pm/Scl autoantibodies<sup><xref rid="R30" ref-type="bibr">30</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild myositis and scleroderma features with muscle weakness, interstitial lung disease, and skin involvement</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Anti-Ku autoantibodies<sup><xref rid="R31" ref-type="bibr">31</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild muscle involvement and interstitial lung disease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Anti-U1RNP autoantibodies<sup><xref rid="R32" ref-type="bibr">32</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Myositis, scleroderma, and systemic lupus erythematosus features; glomerulonephritis and pulmonary hypertension are possible</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mild</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Polymyositis</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Diagnosis of exclusion; heterogeneous clinical features</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Unknown</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Unknown</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Unknown</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN1">
+          <p id="P49">NXP2=nuclear matrix protein 2. TIF1=transcription intermediary factor 1. SAE=small ubiquitin-like modifier activating enzyme. MDA5=melanoma differentiation-associated gene 5. SRP=signal recognition particle. HMGCR=3-hydroxy 3-methylglutaryl coenzyme A reductase. Jo1=histidyl tRNA synthetase. PL7=threonyl tRNA synthetase. PL12=alanyl tRNA synthetase. Pm/Scl=anti-polymyositis-scleromyositis, EXOSC9 and EXOSC10 antigens. U1RNP=U1 ribonucleoprotein. The severity of the organ involvement is based on comparative studies of muscle, lung, and skin involvement in different myositis autoantibody groups.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+    <table-wrap position="float" id="T2" orientation="landscape">
+      <label>Table 2:</label>
+      <caption>
+        <p id="P50">Treatment options for inflammatory myopathies other than sporadic inclusion-body myositis</p>
+      </caption>
+      <table frame="box" rules="none">
+        <colgroup span="1">
+          <col align="left" valign="top" span="1"/>
+          <col align="left" valign="top" span="1"/>
+          <col align="left" valign="top" span="1"/>
+          <col align="left" valign="top" span="1"/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th align="left" valign="top" rowspan="1" colspan="1"/>
+            <th align="left" valign="top" rowspan="1" colspan="1">Doses and treatment suggestions</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">Treatment for</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">Side-effects</th>
+          </tr>
+          <tr>
+            <th colspan="4" align="center" valign="middle" rowspan="1">
+<hr/>
+</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="4" align="left" valign="top" rowspan="1">Immunosuppressive or immunomodulatory drugs</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Corticosteroids<sup><xref rid="R3" ref-type="bibr">3</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Prednisone 0·5–1 mg/kg per day. Consider adding 500 mg to 1 g intravenous methylprednisolone pulses once per day for 3 days for severe cases</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">All patients and all manifestations</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Hypertension, hyperglycaemia, hyperlipidaemia, osteoporosis, infections, and cataracts</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Azathioprine<sup><xref rid="R3" ref-type="bibr">3</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">2–3 mg/kg per day</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Predominantly myositis</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Gastrointestinal symptoms, myelosuppression, leukaemia pancreatitis, infections, and liver toxicity</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Methotrexate<sup><xref rid="R3" ref-type="bibr">3</xref>,<xref rid="R77" ref-type="bibr">77</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Up to 25 mg per week</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Arthritis; use with caution in interstitial lung disease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Stomatitis, gastrointestinal symptoms, leucopoenia, liver toxicity, infections, and lung toxicity</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Ciclosporin<sup><xref rid="R78" ref-type="bibr">78</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Up to 5 mg/kg per day</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Skin involvement (panniculitis and dermatomyositis skin rashes) and interstitial lung disease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Renal insufficiency, anaemia, infections, and hypertension</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Tacrolimus<sup><xref rid="R79" ref-type="bibr">79</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0·06 mg/kg per day</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Interstitial lung disease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Hypertension, renal insufficiency, gastrointestinal symptoms, infections, and tremor</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Mycophenolate mofetil<sup><xref rid="R80" ref-type="bibr">80</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">2–3 g per day</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Interstitial lung disease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Gastrointestinal symptoms, myelosuppression, infections, and hypertension</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Cyclophosphamide<sup><xref rid="R81" ref-type="bibr">81</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Intravenous 0·5–1 g/m<sup>2</sup> per month or 10–15 mg/kg per month for 6–12 months</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Interstitial lung disease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Myelosuppression, myeloproliferative disorders, haemorrhagic cystitis, bladder cancer, infections, and infertility</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Intravenous immunoglobulins<sup><xref rid="R82" ref-type="bibr">82</xref>,<xref rid="R83" ref-type="bibr">83</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">2 g per kg every 4–6 weeks</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Dysphagia and severe disease refractory to other treatments</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Hypotension, anaphylaxis, headache, aseptic meningitis, blood clots, infections, and renal toxicity</td>
+          </tr>
+          <tr>
+            <td colspan="4" align="left" valign="top" rowspan="1">Biological agents</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Rituximab<sup><xref rid="R21" ref-type="bibr">21</xref>,<xref rid="R40" ref-type="bibr">40</xref>,<xref rid="R84" ref-type="bibr">84</xref>,<xref rid="R85" ref-type="bibr">85</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">1 g given twice within a 2-week interval; maintenance with either one or two doses of 0·5–1 g rituximab on the basis of the patient’s clinical situation and their CD19 and CD20 counts (usually given every 6–9 months)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Rapidly progressive interstitial lung disease and severe cases of inflammatory myopathies</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Infusion-related reaction, infections, and progressive multifocal leukoencephalopathy</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Abatacept<sup><xref rid="R86" ref-type="bibr">86</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">750 mg intravenously every 4 weeks (if patient’s weight &lt;60 kg, 500 mg; if patient’s weight &gt;100 kg, 1000 mg)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Consider for refractory disease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Infusion reactions and infections</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Tocilizumab<sup><xref rid="R87" ref-type="bibr">87</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">8 mg per kg intravenously every 4 weeks or 162 mg per week subcutaneously</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Consider for refractory disease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Liver toxicity, neutropaenia, thrombocytopaenia, infections, hyperlipidaemia, and intestinal perforation</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Physical exercise<sup><xref rid="R73" ref-type="bibr">73</xref>,<xref rid="R74" ref-type="bibr">74</xref></sup></td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Aerobic and resistance-tailored programmes (about 4 weeks after starting medical treatment or as soon as the patient can cope with exercise)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">All patients, as a coadjuvant therapy</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Not described</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+    <boxed-text id="BX1" position="float">
+      <label>Panel:</label>
+      <caption>
+        <title>Sequential treatment approach and treatment of severe manifestations of the disease</title>
+      </caption>
+      <sec id="S13">
+        <title>Inflammatory myopathies</title>
+        <sec id="S14">
+          <title>Initial treatment</title>
+          <list list-type="bullet" id="L2">
+            <list-item>
+              <p id="P51">Corticosteroids and physical exercise with the addition of a corticosteroid-sparing agent (azathioprine, methotrexate, ciclosporin, tacrolimus, or mycophenolate mofetil) in all patients to minimise the toxicity of corticosteroids<sup><xref rid="R3" ref-type="bibr">3</xref>,<xref rid="R73" ref-type="bibr">73</xref>,<xref rid="R74" ref-type="bibr">74</xref>,<xref rid="R76" ref-type="bibr">76</xref></sup></p>
+            </list-item>
+          </list>
+        </sec>
+        <sec id="S15">
+          <title>Treatment for severe or refractory cases of disease</title>
+          <list list-type="bullet" id="L4">
+            <list-item>
+              <p id="P52">Corticosteroids and physical exercise with the addition of intravenous immunoglobulins, rituximab, or both agents; in patients with refractory disease, other biological agents, such as abatacept and tocilizumab, can be used<sup><xref rid="R86" ref-type="bibr">86</xref>,<xref rid="R87" ref-type="bibr">87</xref></sup></p>
+            </list-item>
+          </list>
+        </sec>
+      </sec>
+      <sec id="S16">
+        <title>Dysphagia</title>
+        <list list-type="bullet" id="L6">
+          <list-item>
+            <p id="P53">Corticosteroids, a second-line treatment agent, and intravenous immunoglobulin; in selected patients, local therapies including cricopharyngeal myotomy, pharyngo-oesophageal balloon dilatation, or injection of botulinum toxin into the upper oesophageal sphincter can be used<sup><xref rid="R107" ref-type="bibr">107</xref>–<xref rid="R109" ref-type="bibr">109</xref></sup></p>
+          </list-item>
+        </list>
+      </sec>
+      <sec id="S17">
+        <title>Rapidly progressive interstitial lung disease</title>
+        <list list-type="bullet" id="L8">
+          <list-item>
+            <p id="P54">Pulses of methylprednisolone followed by systemic corticosteroids along with a second-line treatment agent (eg, tacrolimus, mycophenolate mofetil, cyclophosphamide, or rituximab). Additionally, the following treatments should be considered: two sessions of polymyxin in 24 h, daily plasmapheresis over the course of 3 days and on alternate days thereafter until the completion of seven sessions, and 400 mg intravenous immunoglobulin per kg after each plasmapheresis session</p>
+          </list-item>
+        </list>
+      </sec>
+    </boxed-text>
+    <boxed-text id="BX2" position="float">
+      <caption>
+        <title>Search strategy and selection criteria</title>
+      </caption>
+      <p id="P55">Articles for this Review were identified by searches of PubMed between March 1, 2003, and March 31, 2018, and references from relevant articles. The search terms “dermatomyositis”, “polymyositis”, “myositis”, “autoantibodies”, “inclusion-body myositis”, “antisynthetase”, and “immune-mediated necrotising myositis” were used. There were no language restrictions. The final reference list was generated on the basis of relevance to the topics covered in this Review.</p>
+    </boxed-text>
+  </floats-group>
+</article>

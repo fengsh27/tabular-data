@@ -1,0 +1,2416 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">0430463</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">6479</journal-id>
+      <journal-id journal-id-type="nlm-ta">Prim Care</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Prim. Care</journal-id>
+      <journal-title-group>
+        <journal-title>Primary care</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0095-4543</issn>
+      <issn pub-type="epub">1558-299X</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">23148958</article-id>
+      <article-id pub-id-type="pmc">3990217</article-id>
+      <article-id pub-id-type="doi">10.1016/j.pop.2012.08.006</article-id>
+      <article-id pub-id-type="manuscript">NIHMS540086</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Adoption of Self-management Interventions for Prevention and
+Care</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Rotheram-Borus</surname>
+            <given-names>Mary Jane</given-names>
+          </name>
+          <degrees>Ph.D.</degrees>
+          <xref ref-type="aff" rid="A1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ingram</surname>
+            <given-names>Barbara L.</given-names>
+          </name>
+          <degrees>Ph.D.</degrees>
+          <xref ref-type="aff" rid="A2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Swendeman</surname>
+            <given-names>Dallas</given-names>
+          </name>
+          <degrees>Ph.D.</degrees>
+          <xref ref-type="aff" rid="A1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lee</surname>
+            <given-names>Adabel</given-names>
+          </name>
+          <degrees>Ph.D.</degrees>
+          <xref ref-type="aff" rid="A1">1</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>1</label>University of California at Los Angeles, Semel Institute for
+Neuroscience and Human Behavior, Global Center for Children and Families</aff>
+      <aff id="A2"><label>2</label>Pepperdine University, Graduate School of Education and
+Psychology</aff>
+      <author-notes>
+        <corresp id="FN1">Corresponding Author: Mary Jane Rotheram-Borus, Ph.D., Global
+Center for Children and Families, 10920 Wilshire Blvd., Suite 350, Los Angeles,
+CA 90024-6521, Phone: 310-823-8541, Fax: 310-794-8297,
+<email>rotheram@ucla.edu</email></corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>20</day>
+        <month>12</month>
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>05</day>
+        <month>10</month>
+        <year>2012</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>12</month>
+        <year>2012</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>17</day>
+        <month>4</month>
+        <year>2014</year>
+      </pub-date>
+      <volume>39</volume>
+      <issue>4</issue>
+      <fpage>649</fpage>
+      <lpage>660</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P1">Seventy-five percent of spiraling healthcare costs can be attributed to
+chronic diseases, making prevention and management of chronic conditions one of
+our highest healthcare priorities, especially as we organize for
+patient-centered medical homes. Collaborative patient self-management in primary
+care has been repeatedly demonstrated to be efficacious in reducing both
+symptoms and increasing quality of life, yet there is no consensus on what, how,
+when, and by whom self-management programs are best implemented. In this
+article, we argue that self-management interventions effectively span the
+continuum of prevention and disease management. Self-management interventions
+rest on a foundation of five core actions: 1) activate motivation to change; 2)
+apply domain-specific information from education and self-monitoring; 3) develop
+skills; 4) acquire environmental resources; and 5) build social support. A range
+of delivery vehicles, including group interventions, primary care providers, and
+advanced wireless technology, are described and evaluated in terms of diffusion
+and cost-containment goals.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>self-management</kwd>
+        <kwd>self-regulation</kwd>
+        <kwd>chronic illness</kwd>
+        <kwd>chronic disease</kwd>
+        <kwd>interventions</kwd>
+        <kwd>prevention</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <p id="P2">Healthcare costs in the United States are reaching unprecedented heights. In
+2009, healthcare spending was $2.5 trillion, $8,086 per person, or
+17.6% of the GDP (<xref rid="R13" ref-type="bibr">California Health Care
+Foundation, 2011</xref>), making it the second highest in the world. Despite this
+huge financial investment, the life expectancy of people in the United States ranks last
+on a list of 11 wealthy nations and ranks fiftieth in the world. The average life
+expectancy for American men is 76.05 years compared to 78.89 years for Canadian men
+(<xref rid="R17" ref-type="bibr">CIA World Factbook, 2012</xref> estimates). In
+2005, 43.8% of the U.S. civilian, non-institutionalized population had one or
+more chronic conditions (<xref rid="R51" ref-type="bibr">Paez et al., 2009</xref>), the
+economic burden of chronic illness is currently 78% of total health care
+spending (<xref rid="R8" ref-type="bibr">Bodenheimer et al., 2009</xref>), and
+96% of Medicare annual spending is for chronic conditions (<xref rid="R26" ref-type="bibr">Foote, 2009</xref>). It is estimated that by 2023, there will be a
+42% increase in cases of 7 major chronic diseases, costing $4.2 trillion
+in treatment costs and lost economic output (<xref rid="R22" ref-type="bibr">DeVol et
+al., 2007</xref>).</p>
+    <p id="P3">Lifestyle change is the key to reducing the human and financial burden of chronic
+disease by preventing disease and delaying advancement of disease. Four risk factors
+directly contribute to the prevalence and severity of chronic illnesses, as well as
+their prevention: unhealthy diet, physical inactivity, tobacco use, and alcohol abuse
+(<xref rid="R69" ref-type="bibr">World Health Organization, 2009</xref>). These
+lifestyle factors—primarily determined by the individual and often not addressed
+by medical providers—were the leading cause of death in 2000, with tobacco
+causing 18.1% of deaths, poor diet and physical inactivity causing
+16.1%, and alcohol consumption causing 3.5% of all deaths. The
+significance of patients’ behavioral choices places patient self-management at
+the center of chronic care and prevention models (<xref rid="R9" ref-type="bibr">Bodenheimer et al., 2002a</xref>; <xref rid="R10" ref-type="bibr">Bodenheimer et
+al., 2002b</xref>).</p>
+    <sec id="S1">
+      <title>Self-management as the Gold Standard of Chronic Care</title>
+      <p id="P4">The World Health Organization (WHO)’s “best practice”
+strategy for chronic conditions is to “educate and support patients to
+manage their own conditions as much as possible” (<xref rid="R23" ref-type="bibr">Epping-Jordan et al., 2001</xref>, p. 947). The outcome of a
+self-management approach is a change in the physician-patient relationship: the
+patient becomes an active, informed, collaborative participant in healthcare
+decision-making; assumes responsibility for engaging in health-promoting behaviors
+and relationships; and develops competence for problem-solving and proactively
+addressing predictable challenges of the disease (<xref rid="R9" ref-type="bibr">Bodenheimer et al., 2002a</xref>; <xref rid="R20" ref-type="bibr">Creer et al.,
+2004</xref>). Chronic illness self-management and healthy lifestyle promotion
+for the prevention of disease require similar cognitive processes to transform
+intentions into behavior: capacity for self-evaluation; self-managed action with
+task- and time-specific, outcome-focused goal setting (<xref rid="R53" ref-type="bibr">Purdie &amp; McCrindle, 2002</xref>); active patient
+involvement; and ongoing planning (<xref rid="R30" ref-type="bibr">Glasgow et al.,
+2004</xref>).</p>
+      <p id="P5">The outcome of self-management interventions (SMI) is that patients have the
+skills to monitor markers of health and disease, make decisions to modify their own
+behavior, and develop individualized goal-setting and action plans. <xref rid="R16" ref-type="bibr">Chodosh and colleagues (2005)</xref> defined self-management as
+having a minimum of two components—self-monitoring and decision-making.
+<xref rid="R20" ref-type="bibr">Creer and colleagues (2004)</xref> described it
+as using “the capacity for self-evaluation and self-managed action”
+(p. 723). Furthermore, because chronic diseases often limit patients’
+aspirations (e.g., diabetes may stop a rock climber from achieving his goals),
+patients must accept their losses, find new goals to engage in (<xref rid="R55" ref-type="bibr">Rasmussen, Wrosch, Scheier, &amp; Carver, 2006</xref>), and
+develop competence in coping with failure, known as relapse-management (<xref rid="R57" ref-type="bibr">Schwarzer, 2001</xref>).</p>
+      <p id="P6">Two comprehensive meta-analyses of SMI studies using randomized trials (<xref rid="R16" ref-type="bibr">Chodosh et al., 2005</xref>; <xref rid="R49" ref-type="bibr">Newman et al., 2004</xref>) found positive outcomes for patients
+with diabetes, hypertension, arthritis, and asthma. Three reviews that included
+studies with nonrandomized methodologies (<xref rid="R5" ref-type="bibr">Barlow et
+al., 2002</xref>; <xref rid="R50" ref-type="bibr">Nolte et al., 2007</xref>;
+<xref rid="R65" ref-type="bibr">Warsi et al., 2004</xref>) reported benefits for
+patients with asthma, arthritis, diabetes, and hypertension. Multiple literature
+reviews, as well as primary source data, show consensus about a set of common
+factors for effective self-management (<xref rid="R20" ref-type="bibr">Creer et al.,
+2004</xref>; <xref rid="R24" ref-type="bibr">Fisher et al., 2005</xref>; <xref rid="R34" ref-type="bibr">Jerant et al., 2005</xref>; <xref rid="R41" ref-type="bibr">Lorig &amp; Holman, 2003</xref>; <xref rid="R60" ref-type="bibr">Swendeman et al., 2009</xref>).</p>
+    </sec>
+    <sec id="S2">
+      <title>Necessary Elements for Effective Self-Management</title>
+      <p id="P7">The essential elements for successful self-management are organized within
+five categories: 1) activate motivation for change, 2) apply information from
+education and self-monitoring, 3) develop skills, 4) acquire environmental
+resources, and 5) build social support. These same elements can contribute to
+successful health maintenance of people who are currently healthy, and thus should
+be viewed as essential elements of prevention as well as chronic disease
+management.</p>
+      <sec id="S3">
+        <title>Element 1: Activate Motivation for Change</title>
+        <p id="P8">Every SMI program includes educational components or intervention
+techniques (e.g., Motivational Interviewing) to create motivation to engage in
+health-promoting behaviors, usually by enhancing individuals’ beliefs in
+their ability to achieve desired change (self-efficacy). To be activated to
+change, the individual needs to accept responsibility for lifestyle change and
+experience a sense of empowerment (<xref rid="R2" ref-type="bibr">Anderson,
+1995</xref>; <xref rid="R3" ref-type="bibr">Aujoulat et al., 2007</xref>),
+counteracting feelings of being a victim of the illness by feeling in control of
+their disease. The patient needs to resolve inter-goal conflict (<xref rid="R35" ref-type="bibr">Karoly et al., 2005</xref>) and value health and longevity
+more than the gratifications of the current lifestyle, which may include the
+pleasures of enjoying rich food, alcohol, cigarettes, and sedentary forms of
+recreation. Cultural roles and beliefs must be recognized to motivate change:
+for example, women in many cultures are socialized to value the needs of family
+members above their own, and will not serve healthier meals (e.g., reduced fat,
+smaller portions) to the whole family, unless they frame that choice as
+“protection” rather than “deprivation”.
+Motivation to change is likely to be stronger for disease management than for
+prevention (<xref rid="R30" ref-type="bibr">Glasgow et al., 2004</xref>).</p>
+        <p id="P9">The Stages of Change model (<xref rid="R52" ref-type="bibr">Prochaska
+&amp; DiClemente, 1983</xref>) applies to self-management commitment (<xref rid="R14" ref-type="bibr">Cassidy, 1999</xref>) and describes how an
+individual is more likely to change behavior when an intervention matches their
+stage of change. Participants in a self-management treatment for chronic pain
+were less likely to complete the program if they were judged to be in the
+pre-contemplation or contemplation stage, rather than the preparation or action
+stage (<xref rid="R36" ref-type="bibr">Kerns &amp; Rosenberg, 2000</xref>).
+Motivational Interviewing (<xref rid="R45" ref-type="bibr">Miller &amp;
+Rollnick, 1991</xref>), a technique based on the Stages of Change model, has
+been used in health settings to move patients to a commitment to change (<xref rid="R11" ref-type="bibr">Britt et al., 2004</xref>; <xref rid="R38" ref-type="bibr">Knight et al., 2006</xref>).</p>
+        <p id="P10">Maintenance of change over time needs to receive as much focus as
+initial behavior change (<xref rid="R7" ref-type="bibr">Bellg, 2003</xref>).
+Setbacks arise from unexpected declines in health despite adherence to
+health-promoting plans and need to be framed as challenges to overcome, rather
+than reasons to relapse to unhealthy behaviors. Cognitive interventions are
+helpful at this stage, as people are best prepared for setbacks when they have
+internalized thought patterns that protect against disengagement (<xref rid="R57" ref-type="bibr">Schwarzer, 2001</xref>).</p>
+      </sec>
+      <sec id="S4">
+        <title>Element 2: Apply Information</title>
+        <p id="P11">Education is an essential component of all SMI: patients need
+information about the disease as well as the general chronic care model. Another
+source of information is self-observation and self-recording on a regular,
+established schedule, enabling the patient to modify medication and behaviors
+without direct supervision of a healthcare professional (<xref rid="R20" ref-type="bibr">Creer et al., 2004</xref>). Self-monitoring is comprised of
+two processes: 1) awareness of bodily symptoms, sensations, daily activities,
+and cognitive processes and 2) measurements, recordings, and observations that
+provide information for independent action or consultation with care providers
+(<xref rid="R67" ref-type="bibr">Wilde &amp; Garvin, 2007</xref>).
+Self-management is enhanced when patients can gather information about the
+status of their physical health by monitoring specific markers of biological
+functioning on a daily basis. For example, glycemic level monitored through
+blood testing is the marker for diabetes; blood pressure and heart rate are
+markers for cardiovascular conditions; and airflow is the marker for asthma and
+chronic obstructive pulmonary disease. Self-monitoring of psychological states
+such as depressed mood, anxiety, and fatigue is another essential component of
+self-regulation (<xref rid="R43" ref-type="bibr">Maes &amp; Gebhardt,
+2000</xref>), as psychological states can often impact physical health and
+adherence to medical regimens. The creation of methods for patients to monitor
+biomarkers of stress is an important future goal, especially for people living
+with HIV (<xref rid="R64" ref-type="bibr">Uchino et al., 1996</xref>).</p>
+      </sec>
+      <sec id="S5">
+        <title>Element 3: Skill Development</title>
+        <p id="P12">Patients need skills to manage their specific disease, maintain
+health-promoting behaviors, and use behavior change technology for
+problem-solving and creation of action plans. Effective communication and
+collaboration with health care providers is a common outcome goal in health
+interventions and a necessary skill for self-management (<xref rid="R5" ref-type="bibr">Barlow et al., 2002</xref>; <xref rid="R28" ref-type="bibr">Gifford &amp; Sengupta, 1999</xref>; <xref rid="R41" ref-type="bibr">Lorig
+&amp; Holman, 2003</xref>; <xref rid="R58" ref-type="bibr">Skinner et al.,
+2006</xref>). Ideally, patients are empowered to manage their health and
+their disease through a “partnership” (<xref rid="R9" ref-type="bibr">Bodenheimer, Lorig, Holman, &amp; Grumbach, 2002</xref>) in
+which patients and practitioners enter into collaborative problem-solving and
+agree upon mutually negotiated goals (<xref rid="R18" ref-type="bibr">Clark et
+al., 2004</xref>). Disease-specific skills include appropriate use of
+devices (e.g., an inhaler for asthma; a blood pressure monitor for
+cardiovascular disease), adherence to complicated medication programs, and the
+ability to interpret new symptoms (<xref rid="R28" ref-type="bibr">Gifford &amp;
+Sengupta, 1999</xref>). Generic health-related skills include those needed
+for initiating and maintaining lifestyle changes and dealing with psychological
+distress (<xref rid="R70" ref-type="bibr">Wright et al., 2003</xref>). Specific
+skills for overcoming obstacles and challenges will vary depending on the
+individual person and their health status. Five of the most important skills
+are:</p>
+        <list list-type="order" id="L1">
+          <list-item>
+            <p id="P13"><bold>Problem-solving</bold>. Frequently cited as the most
+important skill, problem-solving is a prerequisite for successful
+self-management, and can be viewed as a mediator of improved health
+outcomes (<xref rid="R30" ref-type="bibr">Glasgow et al., 2004</xref>).
+Problem-solving is typically described as a series of steps: identifying
+the problem, setting a goal, generating possible solutions, selecting
+and implementing an action plan, and readjusting plans until goals are
+reached. Information-seeking skills are part of every phase in
+problem-solving.</p>
+          </list-item>
+          <list-item>
+            <p id="P14"><bold>Self-monitoring.</bold> Self-monitoring motivates and
+maintains behavior change by promoting self-efficacy, increasing
+awareness, and monitoring progress. Self-monitoring has been used
+effectively to change dietary behaviors through use of food-tracking
+instruments (<xref rid="R47" ref-type="bibr">Mossavar-Rahmani,
+2004</xref>).</p>
+          </list-item>
+          <list-item>
+            <p id="P15"><bold>Stress management and emotional regulation</bold>. Coping
+with negative emotions is a major task for people living with chronic
+illness (<xref rid="R15" ref-type="bibr">Charmaz, 1991</xref>). Because
+depression is a condition that impedes successful self-management (<xref rid="R6" ref-type="bibr">Bayliss et al., 2007</xref>; <xref rid="R31" ref-type="bibr">Hibbard et al., 2007</xref>), skills for
+preventing and managing dysphoric moods are extremely beneficial.</p>
+          </list-item>
+          <list-item>
+            <p id="P16"><bold>Coping with lapses and setbacks.</bold> To cope
+effectively with lapses, and prevent them from becoming excuses to
+revert to unhealthy behavior patterns, individuals must have cognitive
+strategies for framing their behavior as a predictable part of the
+learning curve, rather than failure (<xref rid="R68" ref-type="bibr">Witkiewitz &amp; Marlatt, 2004</xref>). For long-term lifestyle
+change, individuals need to learn methods to enhance self-control by
+focusing attention on their goals (<xref rid="R44" ref-type="bibr">Metcalfe &amp; Mischel, 1999</xref>), activate problem-solving
+processes to deal with competing goals (<xref rid="R39" ref-type="bibr">Leventhal &amp; Mora, 2005</xref>), and develop appropriate
+self-talk for stages before, during, and after the challenging situation
+(“stress inoculation”) (<xref rid="R35" ref-type="bibr">Karoly et al., 2005</xref>).</p>
+          </list-item>
+          <list-item>
+            <p id="P17"><bold>Communicating assertively.</bold> Communication skills are
+needed in a variety of situations to maximize support, confront
+obstacles, and minimize negative social influences. Situations requiring
+assertiveness skills include examples such as saying
+“no” to unhealthy social behaviors, making specific
+dietary requests at a restaurant, and asking for help from family
+members.</p>
+          </list-item>
+        </list>
+      </sec>
+      <sec id="S6">
+        <title>Element 4: Environmental Resources</title>
+        <p id="P18">“Resource utilization” includes securing medication,
+supplies, and educational resources (<xref rid="R48" ref-type="bibr">Nagelkerk
+et al., 2006</xref>). The best efforts of self-management will be defeated
+if there is no access to the necessary supplies from the environment, or if the
+environment contains pernicious elements. For example, if people living with HIV
+lack access to antiretroviral drugs, their illness becomes acute and terminal
+rather than a chronic disease that can be effectively self-managed.
+Environmental barriers to obtaining resources (e.g., transportation issues) and
+maintaining healthy behaviors (e.g., safe settings for exercise) require action
+plans to overcome them. Part of self-management is to be aware of, and take
+concerted action to avoid, environmental settings that derail goal attainment,
+and to use problem-solving skills to develop and achieve action plans.</p>
+        <p id="P19">Recommendations for environmental structuring (<xref rid="R37" ref-type="bibr">Kitsantas, 2000</xref>) and principles of environmental
+control (<xref rid="R9" ref-type="bibr">Bodenheimer et al., 2002a</xref>) are
+included in many SMI. In behavior modification, environment is relevant as a
+source of situational cues and a potent reinforcer for both positive and
+negative behaviors. The self-managing patient is advised to create a home
+environment with stimuli for healthy behaviors (e.g., fruits and vegetables in
+the refrigerator; treadmill in front of the television), take steps to remove
+stimuli for problematic behavior (e.g., junk food, alcohol), and seek healthy
+environments while avoiding unhealthy environments (e.g., gyms vs. fast food
+restaurants).</p>
+      </sec>
+      <sec id="S7">
+        <title>Element 5: Social Support</title>
+        <p id="P20">The current approach to SMI may over-emphasize individual variables such
+as self-efficacy and neglect the importance of social factors (<xref rid="R62" ref-type="bibr">Taylor &amp; Bury, 2007</xref>). Supportive relationships
+have been identified as an important component in interventions to promote
+healthy behaviors (<xref rid="R12" ref-type="bibr">Bull et al., 2006</xref>),
+and good self-managers have extensive support networks (<xref rid="R42" ref-type="bibr">MacDonald et al., 2008</xref>). Health-promoting decisions
+can be both supported or impeded by family and friends. Negative influences can
+come from well-intentioned people, as when they reinforce a “sick
+role” instead of supporting the autonomy and empowerment of the patient.
+Cultural norms and values need to be addressed to ensure optimum social support
+(<xref rid="R35" ref-type="bibr">Karoly et al., 2005</xref>; <xref rid="R59" ref-type="bibr">Steed et al., 2005</xref>). Health providers are an
+essential source of encouragement, positive reinforcement, and emotional
+support.</p>
+      </sec>
+    </sec>
+    <sec id="S8">
+      <title>Development of Self-Management Competence</title>
+      <p id="P21">Competence in self-management occurs over time, in phases. Interventions
+should be targeted to the appropriate stage (<xref rid="R31" ref-type="bibr">Hibbard
+et al., 2007</xref>) and meet patients at their current level of information and
+skills (<xref rid="R58" ref-type="bibr">Skinner et al., 2006</xref>). <xref rid="F1" ref-type="fig">Figure 1</xref> presents a three-phase model that shows the
+patient’s journey to a healthy lifestyle. This figure simplifies the process
+of developing competence, which is best viewed as iterative and cyclical, as the
+patient makes progress on sub-goals at different rates, and will inevitably
+experience new challenges over time, requiring a return to the education phase.
+However, this model illustrates the different outcomes—knowledge, attitudes,
+and skills—at different stages in the trajectory of choosing healthy
+behaviors, and may help determine the best delivery vehicle for self-management
+interventions.</p>
+    </sec>
+    <sec id="S9">
+      <title>Delivery Vehicles for Self-Management Interventions</title>
+      <p id="P22">The diffusion of interventions that promote successful self-management is
+essential for improving health-related quality of life, reducing health care costs
+over time, and preventing the progression of chronic conditions. In this section, we
+review delivery vehicles with varying levels of expense and professional involvement
+for promoting self-management. As new delivery vehicles are developed, interventions
+can be tailored to the cultural and social needs of individuals, wider dissemination
+will be possible, and gaps in one form of delivery will be filled by the services of
+another.</p>
+      <sec id="S10">
+        <title>Primary Care Settings</title>
+        <p id="P23">The Chronic Care Model (CCM) requires a “major
+rethinking” of primary care practice, with non-physician personnel
+trained to support patient self-management, and new, collaborative roles for
+health care professionals (<xref rid="R10" ref-type="bibr">Bodenheimer et al.
+2002b</xref>, p. 1776). While behavioral interventions in the medical office
+are effective and interventions introduced by a physician garner greater
+participation (<xref rid="R29" ref-type="bibr">Glasgow et al., 1997</xref>),
+patients participate in clinical decisions only 9% of the time, pointing
+to the need for physicians to learn skills for group facilitation,
+problem-solving, goal-setting, and cognitive-behavioral techniques (<xref rid="R49" ref-type="bibr">Newman et al., 2004</xref>).</p>
+      </sec>
+      <sec id="S11">
+        <title>Group Interventions</title>
+        <p id="P24">There are many successful evidence-based group interventions for chronic
+illness that promote behavioral self-management, yet these interventions are not
+broadly diffused in the United States, are typically delivered only for a few
+diseases (e.g., diabetes), and are usually implemented only when diseases become
+chronic and debilitating rather than as strategies of primary and secondary
+prevention. Group interventions are often led by peers (expert patients who have
+received special training) or health professionals, such as nurses and
+dieticians (<xref rid="R59" ref-type="bibr">Steed et al., 2005</xref>).</p>
+        <p id="P25">There are drawbacks to relying on standardized self-management group
+interventions as the sole means of developing competent patients. Critics of the
+U.K. Expert Patients Programme complain that it lacks flexibility and
+individualization because of requirements to adhere to rigid protocols (<xref rid="R42" ref-type="bibr">MacDonald et al., 2008</xref>), and should be
+better integrated with primary care and attend more to social factors (<xref rid="R62" ref-type="bibr">Taylor &amp; Bury, 2007</xref>). Lack of
+participation and attrition are barriers to success (<xref rid="R18" ref-type="bibr">Clark et al., 2004</xref>; <xref rid="R59" ref-type="bibr">Steed et al. 2005</xref>), especially when support for the maintenance of
+behavior change is not provided. Group programs rarely provide support for the
+maintenance phase (the final stage in the Stages of Change model), with the
+exception of a program offering a booster session a few months after completion
+(<xref rid="R19" ref-type="bibr">Clifford et al., 1991</xref>; <xref rid="R59" ref-type="bibr">Steed et al., 2005</xref>).</p>
+      </sec>
+      <sec id="S12">
+        <title>Books, Manuals, and Other Media</title>
+        <p id="P26">Books, audio tapes, video tapes, CD-ROMs, and self-directed manuals can
+be effective ways to promote self-management (<xref rid="R33" ref-type="bibr">Janevic et al., 2003</xref>), with or without an in-person intervention,
+depending on the personal preferences, age, and education level of the audience.
+For example, <italic>Self-directed Behavior</italic> (<xref rid="R66" ref-type="bibr">Watson &amp; Tharp, 2007</xref>) teaches how to design
+step-by-step self-change interventions, integrates empirically-validated
+approaches, and provides guidelines for how to revise plans when strategies are
+unsuccessful.</p>
+      </sec>
+      <sec id="S13">
+        <title>Disease Management Companies</title>
+        <p id="P27">Commercial disease management companies offer financial savings and
+improved health, generally through increased use of care managers rather than
+the systematic teaching of skills of self-management (<xref rid="R21" ref-type="bibr">Crosson &amp; Madvig, 2004</xref>). American Healthways, the
+largest disease management company, provides a program with health coaching,
+patient education, and phone calls to patients, including a “virtual
+health coach” project that integrates information therapy and behavior
+change interventions based on the Stages of Change model (<xref rid="R1" ref-type="bibr">American Healthways, 2005</xref>).</p>
+      </sec>
+      <sec id="S14">
+        <title>Individual or Family Coaching Sessions</title>
+        <p id="P28">Another delivery vehicle is individual coaching with a health educator
+or counselor (alone or in combination with other methods), or one-on-one
+sessions and individual follow-ups as a supplement to the core program.
+Individual coaching or counseling provides added motivation, time to address an
+individual’s specific barriers or challenges, opportunities to include
+family members as social support, and enhancement of an individual’s
+capacity for self-control.</p>
+      </sec>
+      <sec id="S15">
+        <title>Technological Innovations</title>
+        <p id="P29">Websites, e-mail, and touch-screen computers offer tools for
+self-management (<xref rid="R29" ref-type="bibr">Glasgow et al., 1997</xref>;
+<xref rid="R40" ref-type="bibr">Lorig, 2005</xref>; <xref rid="R61" ref-type="bibr">Tate et al., 2001</xref>). One example is Diabetes
+Prevention Source (DPS) Health’s Behavior Change
+Suite<sup>™</sup>, a web-based platform that incorporates key
+behavior change strategies in an online, interactive experience that includes
+goal-setting, self-monitoring, visual feedback on progress over time, automated
+reminders, physical activity monitoring with integrated accelerometers, virtual
+real-time or message-based coaching, interactive lessons, streaming audio and
+video, and social support and networking features. Interactive voice response
+(IVR), mobile phones, and text messages also facilitate self-monitoring through
+data collection, monitoring and reporting of blood glucose level (for
+diabetics), positive reinforcement messages, and reminders for medication and
+behavior adherence (<xref rid="R4" ref-type="bibr">Bardone et al., 2000</xref>;
+<xref rid="R25" ref-type="bibr">Fjeldsoe, 2009</xref>). Mobile personal
+sensing (MPS) offers the opportunity for broadly accessible, privacy-preserving
+“ecological momentary assessment (EMA),” the self-report of
+symptoms, behaviors, feelings, and cognitions the moment that they occur (<xref rid="R46" ref-type="bibr">Moscowitz &amp; Young, 2006</xref>). MPS is moving
+towards technology for biosensors to monitor physiological health data, collect
+information for activity classification, and provide notifications for
+problematic contexts and locations (<xref rid="R54" ref-type="bibr">Ramanathan
+et al., 2009</xref>). EMA has been used for self-monitoring to change
+behaviors related to drug and alcohol use, coping with chronic pain, and stress
+and cardiovascular reactivity (<xref rid="R27" ref-type="bibr">Freedman et al.,
+2006</xref>).</p>
+      </sec>
+    </sec>
+    <sec sec-type="conclusions" id="S16">
+      <title>Conclusion</title>
+      <p id="P30">There has been little consensus on the components of SMIs that are most
+effective, but our five-element, three-phase framework can be used to evaluate
+currently-implemented SMIs, identify gaps in interventions, and identify each
+patient’s strengths and deficits for personalized interventions.
+Self-management is applicable to primary prevention for healthy people as well as
+the health and lifestyle improvement of the chronically ill.</p>
+      <p id="P31">Self-management approaches are more economical than traditional disease
+management because professional roles can be filled by health educators and
+counselors rather than physicians. Moreover, they can take place in community
+settings, on the Internet, or by phone to lessen the demand on over-burdened medical
+settings (<xref rid="R49" ref-type="bibr">Newman et al., 2004</xref>). It is
+predicted that patients who adhere to healthy lifestyles and habitually use
+self-management tools will be protected from the severe symptoms that require
+hospital utilization, a major contributor to high healthcare costs. Currently, no
+long-term follow-up research has been completed to demonstrate that SMI
+significantly reduces healthcare costs over an extended period of time.</p>
+      <p id="P32">Shifting responsibility of some aspects of health management to patients
+requires a change in how provider and patient roles are viewed by both. However,
+self-management does <italic>not</italic> mean the exclusion of health
+professionals. Rather, it represents a new model of <italic>active
+collaboration</italic> between “expert patients” and
+patient-centered practitioners. Self-management interventions will result in
+decreased burden on the overall health care system and will support more optimized
+utilization of limited resources. Additionally, it will increase patient investment
+in, and responsibility for, their own care. Health care professionals will have
+roles in both education of self-management methods and ongoing support for
+maintenance of results. Personnel with less education, such as Community Health
+Workers (CHW), will be necessary for providing adjuctive support, basic follow-up
+and feedback, positive reinforcement, and accountability. Primary care providers can
+support patient self-management by encouraging patients to become more informed,
+active, and responsible in the provider-patient relationship, and by trusting
+patients to be experts on their symptoms and health condition, particularly the
+longer the patient has coped with the condition.</p>
+      <p id="P33">Health policy changes will be necessary to make self-management a priority
+and provide funds for training, employment, technology development, and
+dissemination. Most importantly, there should be a termination of the sharp division
+between prevention and disease management that is evident in the structure and
+missions of different government agencies. As a solution to the staggering costs of
+chronic disease, <xref rid="R22" ref-type="bibr">DeVol and colleagues (2007)</xref>
+propose incentives for prevention and early intervention through private-public
+partnerships, and a national commitment to promote health and wellness.</p>
+      <p id="P34">A “family wellness” model offers the best potential for
+sustained improvement in global health, by going beyond a disease management model
+to instill healthy behaviors at the level of the family as primary prevention (<xref rid="R56" ref-type="bibr">Rotheram-Borus et al., 2009</xref>). Ultimately, the
+solution to the high human and financial cost of chronic illnesses will be
+health-promoting families, with each member, regardless of health status, committed
+to eating well, keeping active, avoiding alcohol and tobacco, and embracing
+stress-reducing behaviors through the self-management of healthy living.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <ref id="R1">
+        <element-citation publication-type="web">
+          <collab>American Healthways.</collab>
+          <year>2005</year>
+          <month>11</month>
+          <day>1</day>
+          <article-title>Center for Information Therapy to jointly develop Ix best
+practices</article-title>
+          <source>The Free Library: 2005</source>
+          <comment>Retrieved August 03, 2009 from <ext-link ext-link-type="uri" xlink:href="http://www.thefreelibrary.com/AmericanHealthways">http://www.thefreelibrary.com/AmericanHealthways</ext-link>.</comment>
+        </element-citation>
+      </ref>
+      <ref id="R2">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Anderson</surname>
+              <given-names>RM</given-names>
+            </name>
+          </person-group>
+          <year>1995</year>
+          <article-title>Patient empowerment and the traditional medical model: A case of
+irreconcilable differences?</article-title>
+          <source>Diabetes Care</source>
+          <volume>18</volume>
+          <fpage>412</fpage>
+          <lpage>415</lpage>
+          <pub-id pub-id-type="pmid">7555490</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R3">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Aujoulat</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>d’Hoore</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Deccache</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Patient empowerment in theory and practice: Polysemy or
+cacophony?</article-title>
+          <source>Patient Education and Counseling</source>
+          <volume>66</volume>
+          <issue>1</issue>
+          <fpage>13</fpage>
+          <lpage>20</lpage>
+          <pub-id pub-id-type="pmid">17084059</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R4">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bardone</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Krahn</surname>
+              <given-names>DD</given-names>
+            </name>
+            <name>
+              <surname>Goodman</surname>
+              <given-names>BM</given-names>
+            </name>
+            <name>
+              <surname>Searles</surname>
+              <given-names>JS</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>Using interactive voice response technology and timeline
+follow-back methodology in studying binge eating and drinking behavior:
+Different answers to different forms of the same question?</article-title>
+          <source>Addictive Behaviors</source>
+          <volume>25</volume>
+          <fpage>1</fpage>
+          <lpage>11</lpage>
+          <pub-id pub-id-type="pmid">10708315</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R5">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Barlow</surname>
+              <given-names>JH</given-names>
+            </name>
+            <name>
+              <surname>Wright</surname>
+              <given-names>CC</given-names>
+            </name>
+            <name>
+              <surname>Sheasby</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Turner</surname>
+              <given-names>AP</given-names>
+            </name>
+            <name>
+              <surname>Hainsworth</surname>
+              <given-names>JM</given-names>
+            </name>
+          </person-group>
+          <year>2002</year>
+          <article-title>Self-management approaches for people with chronic conditions: a
+review</article-title>
+          <source>Patient Education and Counseling</source>
+          <volume>48</volume>
+          <fpage>177</fpage>
+          <lpage>187</lpage>
+          <pub-id pub-id-type="pmid">12401421</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R6">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bayliss</surname>
+              <given-names>EA</given-names>
+            </name>
+            <name>
+              <surname>Ellis</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Steiner</surname>
+              <given-names>JF</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Barriers to self-management and quality-of-life outcomes in
+seniors with mutimorbidities</article-title>
+          <source>Annals of Family Medicine</source>
+          <volume>5</volume>
+          <fpage>395</fpage>
+          <lpage>402</lpage>
+          <pub-id pub-id-type="pmid">17893380</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R7">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bellg</surname>
+              <given-names>AJ</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Maintenance of Health Behavior Change in Preventive Cardiology:
+Internalization and Self-Regulation of New Behaviors</article-title>
+          <source>Behavior Modification</source>
+          <volume>27</volume>
+          <fpage>103</fpage>
+          <lpage>131</lpage>
+          <pub-id pub-id-type="pmid">12587263</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R8">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bodenheimer</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Bennett</surname>
+              <given-names>HD</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Confronting the growing burden of chronic disease: Can the U.S.
+health care workforce do the job?</article-title>
+          <source>Health Affairs</source>
+          <volume>28</volume>
+          <issue>1</issue>
+          <fpage>64</fpage>
+          <lpage>74</lpage>
+          <pub-id pub-id-type="pmid">19124856</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R9">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bodenheimer</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Lorig</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Holman</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Grumbach</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <year>2002a</year>
+          <article-title>Patient self-management of chronic disease in primary
+care</article-title>
+          <source>Journal of the American Medical Association</source>
+          <volume>288</volume>
+          <issue>19</issue>
+          <fpage>2469</fpage>
+          <lpage>2475</lpage>
+          <pub-id pub-id-type="pmid">12435261</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R10">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bodenheimer</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Wagner</surname>
+              <given-names>EH</given-names>
+            </name>
+            <name>
+              <surname>Grumbach</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <year>2002b</year>
+          <article-title>Improving primary care for patients with chronic
+illness</article-title>
+          <source>Journal of the American Medical Association</source>
+          <volume>288</volume>
+          <issue>14</issue>
+          <fpage>1775</fpage>
+          <lpage>1779</lpage>
+          <pub-id pub-id-type="pmid">12365965</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R11">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Britt</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Hudson</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Blampied</surname>
+              <given-names>NM</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Motivational interviewing in health settings: a
+review</article-title>
+          <source>Patient Education and Counseling</source>
+          <volume>53</volume>
+          <fpage>147</fpage>
+          <lpage>155</lpage>
+          <pub-id pub-id-type="pmid">15140454</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R12">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bull</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Eakin</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Reevers</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Riley</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Multi-level support for physical activity and healthy
+eating</article-title>
+          <source>Journal of Advanced Nursing</source>
+          <volume>54</volume>
+          <issue>5</issue>
+          <fpage>585</fpage>
+          <lpage>593</lpage>
+          <pub-id pub-id-type="pmid">16722956</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R13">
+        <element-citation publication-type="web">
+          <collab>California Health Care Foundation</collab>
+          <month>5</month>
+          <year>2011</year>
+          <source>California Health Care Almanac: Health Care Costs 101</source>
+          <comment>Retrieved on March 5, 2011 from <ext-link ext-link-type="uri" xlink:href="http://www.chcf.org/~/media/MEDIA%20LIBRARY%20Files/PDF/H/PDF%20HealthCareCosts11.pdf">http://www.chcf.org/~/media/MEDIA%20LIBRARY%20Files/PDF/H/PDF%20HealthCareCosts11.pdf</ext-link></comment>
+        </element-citation>
+      </ref>
+      <ref id="R14">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cassidy</surname>
+              <given-names>CA</given-names>
+            </name>
+          </person-group>
+          <year>1999</year>
+          <article-title>Using the transtheoretical model to facilitate behavior change in
+patients with chronic illness</article-title>
+          <source>Journal of the American Academy of Nurse Practitioners</source>
+          <volume>11</volume>
+          <fpage>281</fpage>
+          <lpage>287</lpage>
+          <pub-id pub-id-type="pmid">10504938</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R17">
+        <element-citation publication-type="journal">
+          <collab>Central Intelligence Agency</collab>
+          <year>2012</year>
+          <article-title>The World Factbook</article-title>
+          <source>Updated February</source>
+          <volume>15</volume>
+          <fpage>2012</fpage>
+          <comment>Retrieved March 5, 2012, from <ext-link ext-link-type="uri" xlink:href="https://www.cia.gov/library/publications/the-world-factbook/rankorder/2102rank.html">https://www.cia.gov/library/publications/the-world-factbook/rankorder/2102rank.html</ext-link></comment>
+        </element-citation>
+      </ref>
+      <ref id="R15">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Charmaz</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <year>1991</year>
+          <source>Good days, bad days: The self in chronic illness and time</source>
+          <publisher-loc>New Brunswick, NJ</publisher-loc>
+          <publisher-name>Rutgers University Press</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="R16">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chodosh</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Morton</surname>
+              <given-names>SC</given-names>
+            </name>
+            <name>
+              <surname>Mojica</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Maglione</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Suttorp</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Hilton</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Rhodes</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Shekelle</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Meta-analysis: chronic disease self-management programs for older
+adults</article-title>
+          <source>Annals of Internal Medicine</source>
+          <volume>143</volume>
+          <fpage>427</fpage>
+          <lpage>438</lpage>
+          <pub-id pub-id-type="pmid">16172441</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R18">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Clark</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hampson</surname>
+              <given-names>SE</given-names>
+            </name>
+            <name>
+              <surname>Avery</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Simpson</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Effects of a brief tailored intervention on the process and
+predictors of lifestyle behaviour change in patients with type 2
+diabetes</article-title>
+          <source>Psychology, Health &amp; Medicine</source>
+          <volume>9</volume>
+          <issue>4</issue>
+          <fpage>440</fpage>
+          <lpage>449</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R19">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Clifford</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Tan</surname>
+              <given-names>SY</given-names>
+            </name>
+            <name>
+              <surname>Gorsuch</surname>
+              <given-names>RL</given-names>
+            </name>
+          </person-group>
+          <year>1991</year>
+          <article-title>Efficacy of a self-directed behavioral health change program:
+Weight, body composition, cardiovascular fitness, blood pressure, health
+risk, and psychosocial mediating variables</article-title>
+          <source>Journal of Behavioral Medicine</source>
+          <volume>14</volume>
+          <fpage>303</fpage>
+          <lpage>323</lpage>
+          <pub-id pub-id-type="pmid">1875406</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R20">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Creer</surname>
+              <given-names>TL</given-names>
+            </name>
+            <name>
+              <surname>Holroyd</surname>
+              <given-names>KA</given-names>
+            </name>
+            <name>
+              <surname>Glasgow</surname>
+              <given-names>RE</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>TW</given-names>
+            </name>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Lambert</surname>
+              <given-names>MJ</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Health Psychology (chapter 15)</article-title>
+          <source>Bergin and Garfield’s Handbook of Psychotherapy and Behavior
+Change</source>
+          <edition>5</edition>
+          <fpage>697</fpage>
+          <lpage>742</lpage>
+          <publisher-loc>New York</publisher-loc>
+          <publisher-name>John Wiley &amp; Sons</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="R21">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Crosson</surname>
+              <given-names>FJ</given-names>
+            </name>
+            <name>
+              <surname>Madvig</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Does population management of chronic disease lead to lower costs
+of care?</article-title>
+          <source>Health Affairs</source>
+          <volume>23</volume>
+          <issue>6</issue>
+          <fpage>76</fpage>
+          <lpage>78</lpage>
+          <pub-id pub-id-type="pmid">15537587</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R22">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>DeVol</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Bedroussian</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Charuworn</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Chatterjee</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <source>An unhealthy America: the economic burden of chronic disease -- Charting
+a new course to save lives and increase productivity and economic
+growth</source>
+          <publisher-loc>Santa Monica, CA</publisher-loc>
+          <publisher-name>Milken Institute</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="R23">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Epping-Jordan</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Bengoa</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Kawar</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Sabaté</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>The challenge of chronic conditions: WHO responds</article-title>
+          <source>British Medical Journal</source>
+          <volume>323</volume>
+          <fpage>947</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">11679371</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R24">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fisher</surname>
+              <given-names>EB</given-names>
+            </name>
+            <name>
+              <surname>Brownson</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>O’Toole</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Shetty</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Anwuri</surname>
+              <given-names>VV</given-names>
+            </name>
+            <name>
+              <surname>Glasgow</surname>
+              <given-names>RE</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Ecological approaches to self-management: the case of
+diabetes</article-title>
+          <source>American Journal of Public Health</source>
+          <volume>95</volume>
+          <issue>9</issue>
+          <fpage>1523</fpage>
+          <lpage>1535</lpage>
+          <pub-id pub-id-type="pmid">16051929</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R25">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fjeldsoe</surname>
+              <given-names>BS</given-names>
+            </name>
+            <name>
+              <surname>Marshall</surname>
+              <given-names>AL</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>YD</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Behavior change interventions delivered by mobile telephone
+short-message service</article-title>
+          <source>American Journal of Preventive Medicine</source>
+          <volume>36</volume>
+          <issue>2</issue>
+          <fpage>165</fpage>
+          <lpage>173</lpage>
+          <pub-id pub-id-type="pmid">19135907</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R26">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Foote</surname>
+              <given-names>SM</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Next steps: How can Medicare accelerate the pace of improving
+chronic care?</article-title>
+          <source>Health Affairs</source>
+          <volume>28</volume>
+          <fpage>99</fpage>
+          <lpage>102</lpage>
+          <pub-id pub-id-type="pmid">19124859</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R27">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Freedman</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Lester</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>McNamara</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Milby</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Schumacher</surname>
+              <given-names>JE</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Cell phones for ecological momentary assessment with
+cocaine-addicted homeless patients in treatment</article-title>
+          <source>Journal of Substance Abuse Treatment</source>
+          <volume>30</volume>
+          <issue>2</issue>
+          <fpage>105</fpage>
+          <lpage>111</lpage>
+          <pub-id pub-id-type="pmid">16490673</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R28">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gifford</surname>
+              <given-names>AL</given-names>
+            </name>
+            <name>
+              <surname>Sengupta</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>1999</year>
+          <article-title>Self-management health education for chronic HIV
+infection</article-title>
+          <source>AIDS Care</source>
+          <volume>11</volume>
+          <issue>1</issue>
+          <fpage>115</fpage>
+          <lpage>30</lpage>
+          <pub-id pub-id-type="pmid">10434987</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R29">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Glasgow</surname>
+              <given-names>RE</given-names>
+            </name>
+            <name>
+              <surname>LaChance</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Toobert</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Hampson</surname>
+              <given-names>SE</given-names>
+            </name>
+            <name>
+              <surname>Riddle</surname>
+              <given-names>MC</given-names>
+            </name>
+          </person-group>
+          <year>1997</year>
+          <article-title>Long-term effects and costs of brief behavioural dietary
+interventions for patients with diabetes delivered from the medical
+office</article-title>
+          <source>Patient Education and Counseling</source>
+          <volume>32</volume>
+          <fpage>175</fpage>
+          <lpage>184</lpage>
+          <pub-id pub-id-type="pmid">9423499</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R30">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Glasgow</surname>
+              <given-names>RE</given-names>
+            </name>
+            <name>
+              <surname>Toobert</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Barrera</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Strycker</surname>
+              <given-names>LA</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Assessment of problem-solving: A key to successful diabetes
+self-management</article-title>
+          <source>Journal of Behavioral Medicine</source>
+          <volume>27</volume>
+          <issue>5</issue>
+          <fpage>477</fpage>
+          <lpage>490</lpage>
+          <pub-id pub-id-type="pmid">15675636</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R31">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hibbard</surname>
+              <given-names>JH</given-names>
+            </name>
+            <name>
+              <surname>Mahoney</surname>
+              <given-names>ER</given-names>
+            </name>
+            <name>
+              <surname>Stock</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Tusler</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Self-management and health care utilization: Do increases in
+patient activation result in improved self-management
+behaviors?</article-title>
+          <source>Health Services Research</source>
+          <volume>42</volume>
+          <issue>4</issue>
+          <fpage>1443</fpage>
+          <lpage>1463</lpage>
+          <pub-id pub-id-type="pmid">17610432</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R33">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Janevic</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Janz</surname>
+              <given-names>NK</given-names>
+            </name>
+            <name>
+              <surname>Dodge</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Pan</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Sinco</surname>
+              <given-names>BR</given-names>
+            </name>
+            <name>
+              <surname>Clark</surname>
+              <given-names>NM</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>The role of choice in health education intervention trials: a
+review and case study</article-title>
+          <source>Social Science and Medicine</source>
+          <volume>56</volume>
+          <fpage>1581</fpage>
+          <lpage>1594</lpage>
+          <pub-id pub-id-type="pmid">12614707</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R34">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jerant</surname>
+              <given-names>AF</given-names>
+            </name>
+            <name>
+              <surname>von Friederichs-Fitzwater</surname>
+              <given-names>MM</given-names>
+            </name>
+            <name>
+              <surname>Moore</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Patients’ perceived barriers to active self-management of
+chronic conditions</article-title>
+          <source>Patient Education and Counseling</source>
+          <volume>57</volume>
+          <fpage>300</fpage>
+          <lpage>307</lpage>
+          <pub-id pub-id-type="pmid">15893212</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R35">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Karoly</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Boekaerts</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Maes</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Toward consensus in the psychology of self-regulation: How far
+have we come? How far do we have yet to travel?</article-title>
+          <source>Applied Psychology: An International Review</source>
+          <volume>54</volume>
+          <issue>2</issue>
+          <fpage>300</fpage>
+          <lpage>311</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R36">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kerns</surname>
+              <given-names>RD</given-names>
+            </name>
+            <name>
+              <surname>Rosenberg</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>Predicting responses to self-management treatments for chronic
+pain: application of the pain stages of change model</article-title>
+          <source>Pain</source>
+          <volume>84</volume>
+          <fpage>49</fpage>
+          <lpage>55</lpage>
+          <pub-id pub-id-type="pmid">10601672</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R37">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kitsantas</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>The role of self-regulation strategies and self-efficacy
+perceptions in successful weight loss maintenance</article-title>
+          <source>Psychology &amp; Health</source>
+          <volume>15</volume>
+          <issue>6</issue>
+          <fpage>811</fpage>
+          <lpage>820</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R38">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Knight</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>McGowan</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Dickens</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Bundy</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>A systematic review of motivational interviewing in physical
+health care settings</article-title>
+          <source>British Journal of Health Psychology</source>
+          <volume>11</volume>
+          <issue>2</issue>
+          <fpage>319</fpage>
+          <lpage>32</lpage>
+          <pub-id pub-id-type="pmid">16643702</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R39">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Leventhal</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Mora</surname>
+              <given-names>PA</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Is there a science of the processes underlying health and illness
+behaviors? A comment on Maes and Karoly</article-title>
+          <source>Applied Psychology: An International Review</source>
+          <volume>54</volume>
+          <issue>2</issue>
+          <fpage>255</fpage>
+          <lpage>266</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R40">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lorig</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>White</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>What are the barriers to healthcare systems using a
+biopsychosocial approach and how might they be overcome?</article-title>
+          <source>Biopsychosocial medicine: an integrated approach to understanding
+illness</source>
+          <fpage>201</fpage>
+          <lpage>215</lpage>
+          <publisher-loc>New York</publisher-loc>
+          <publisher-name>Oxford University Press</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="R41">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lorig</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Holman</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Self-management education: History, definition, outcomes and
+mechanisms</article-title>
+          <source>Annals of Behavioral Medicine</source>
+          <volume>26</volume>
+          <issue>1</issue>
+          <fpage>1</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">12867348</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R42">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>MacDonald</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Rogers</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Blakeman</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Bower</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Practice nurses and the facilitation of self-management in
+primary care</article-title>
+          <source>Journal of Advanced Nursing</source>
+          <volume>62</volume>
+          <issue>2</issue>
+          <fpage>191</fpage>
+          <lpage>199</lpage>
+          <pub-id pub-id-type="pmid">18394031</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R43">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Maes</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Gebhardt</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Boekaerts</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Pintrich</surname>
+              <given-names>PR</given-names>
+            </name>
+            <name>
+              <surname>Zeidner</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>Self-regulation and health behavior: The health behavior goal
+model</article-title>
+          <source>Handbook of self-regulation</source>
+          <fpage>343</fpage>
+          <lpage>368</lpage>
+          <publisher-loc>Burlington, MA</publisher-loc>
+          <publisher-name>Elsevier Academic Press</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="R44">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Metcalfe</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Mischel</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <year>1999</year>
+          <article-title>A hot/cool-system analysis of delay of gratification: Dynamics of
+willpower</article-title>
+          <source>Psychological Review</source>
+          <volume>106</volume>
+          <fpage>3</fpage>
+          <lpage>19</lpage>
+          <pub-id pub-id-type="pmid">10197361</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R45">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Miller</surname>
+              <given-names>WR</given-names>
+            </name>
+            <name>
+              <surname>Rollnick</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>1991</year>
+          <source>Motivational Interviewing: Preparing People to Change Addictive
+Behavior</source>
+          <publisher-loc>New York</publisher-loc>
+          <publisher-name>Guilford Press</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="R46">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Moscowitz</surname>
+              <given-names>DS</given-names>
+            </name>
+            <name>
+              <surname>Young</surname>
+              <given-names>SN</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Ecological momentary assessment: what it is and why it is a
+method of the future in clinical psychopharmacology</article-title>
+          <source>Journal of Psychiatry and Neuroscience</source>
+          <volume>31</volume>
+          <issue>1</issue>
+          <fpage>13</fpage>
+          <lpage>20</lpage>
+          <pub-id pub-id-type="pmid">16496031</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R47">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mossavar-Rahmani</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Henry</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Rodabough</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Bragg</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Brewer</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Freed</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2004</year>
+          <article-title>Additional self-monitoring tools in the dietary modification
+component of the Women’s Health Initiative</article-title>
+          <source>Journal of the American Dietetic Association</source>
+          <volume>104</volume>
+          <issue>1</issue>
+          <fpage>76</fpage>
+          <lpage>85</lpage>
+          <pub-id pub-id-type="pmid">14702588</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R48">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nagelkerk</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Reick</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Meengs</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Perceived barriers and effective strategies to diabetes
+self-management</article-title>
+          <source>Journal of Advanced Nursing</source>
+          <volume>54</volume>
+          <issue>2</issue>
+          <fpage>151</fpage>
+          <lpage>158</lpage>
+          <pub-id pub-id-type="pmid">16553701</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R49">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Newman</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Steed</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Mulligan</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Self-management interventions for chronic illness</article-title>
+          <source>Lancet</source>
+          <volume>364</volume>
+          <fpage>1523</fpage>
+          <lpage>1537</lpage>
+          <pub-id pub-id-type="pmid">15500899</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R50">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nolte</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Elsworth</surname>
+              <given-names>GR</given-names>
+            </name>
+            <name>
+              <surname>Sinclair</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Osborne</surname>
+              <given-names>RH</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>The extent and breadth of benefits from participating in chronic
+disease self-management courses: A national patient-reported outcomes
+survey</article-title>
+          <source>Patient Education and Counseling</source>
+          <volume>65</volume>
+          <issue>3</issue>
+          <fpage>351</fpage>
+          <lpage>360</lpage>
+          <pub-id pub-id-type="pmid">17027221</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R51">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Paez</surname>
+              <given-names>KA</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Hwang</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Rising out-of-pocket spending for chronic conditions: A ten-year
+trend</article-title>
+          <source>Health Affairs</source>
+          <volume>28</volume>
+          <issue>1</issue>
+          <fpage>15</fpage>
+          <lpage>25</lpage>
+          <pub-id pub-id-type="pmid">19124848</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R52">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Prochaska</surname>
+              <given-names>JO</given-names>
+            </name>
+            <name>
+              <surname>DiClemente</surname>
+              <given-names>CC</given-names>
+            </name>
+          </person-group>
+          <year>1983</year>
+          <article-title>Stages and processes of self-change of smoking: Toward an
+integrative model of change</article-title>
+          <source>Journal of Consulting and Clinical Psychology</source>
+          <volume>51</volume>
+          <fpage>390</fpage>
+          <lpage>395</lpage>
+          <pub-id pub-id-type="pmid">6863699</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R53">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Purdie</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>McCrindle</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2002</year>
+          <article-title>Self-regulation, self-efficacy and health behavior change in
+older adults</article-title>
+          <source>Educational Gerontology</source>
+          <volume>28</volume>
+          <issue>5</issue>
+          <fpage>379</fpage>
+          <lpage>400</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R54">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ramanathan</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Burke</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Cenizal</surname>
+              <given-names>CJ</given-names>
+            </name>
+            <name>
+              <surname>Estrin</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Ryder</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Rotheram-Borus</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Samanta</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Swendeman</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <source>Improving Personal and Environmental Health Decision Making with Mobile
+Personal Sensing (May 12, 2009)</source>
+          <publisher-name>Center for Embedded Network Sensing</publisher-name>
+          <year>2009</year>
+          <comment>Posters. Paper 430. Available at: <ext-link ext-link-type="uri" xlink:href="http://repositories.cdlib.org/cens/Posters/430">http://repositories.cdlib.org/cens/Posters/430</ext-link>. Pretrieved
+June 23, 2009</comment>
+        </element-citation>
+      </ref>
+      <ref id="R55">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rasmussen</surname>
+              <given-names>HN</given-names>
+            </name>
+            <name>
+              <surname>Wrosch</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Scheier</surname>
+              <given-names>MF</given-names>
+            </name>
+            <name>
+              <surname>Carver</surname>
+              <given-names>CS</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Self-regulation processes and health: The importance of optimism
+and goal adjustment</article-title>
+          <source>Journal of Personality</source>
+          <volume>74</volume>
+          <issue>6</issue>
+          <fpage>1721</fpage>
+          <lpage>1747</lpage>
+          <pub-id pub-id-type="pmid">17083664</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R56">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rotheram-Borus</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Swendeman</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Flannery</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Family wellness, not HIV prevention</article-title>
+          <source>AIDS and Behavior</source>
+          <volume>13</volume>
+          <fpage>409</fpage>
+          <lpage>413</lpage>
+          <pub-id pub-id-type="pmid">19148744</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R57">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schwarzer</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>Social-cognitive factors in changing health-related
+behaviors</article-title>
+          <source>Current Directions in Psychological Science</source>
+          <volume>10</volume>
+          <issue>2</issue>
+          <fpage>47</fpage>
+          <lpage>51</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R58">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Skinner</surname>
+              <given-names>TC</given-names>
+            </name>
+            <name>
+              <surname>Carey</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>Cradock</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Daly</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Davies</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Doherty</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Heller</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Khunti</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Oliver</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Diabetes education and self-management for ongoing and newly
+diagnosed (DESMOND): Process modeling of pilot study</article-title>
+          <source>Patient Education and Counseling</source>
+          <volume>64</volume>
+          <fpage>369</fpage>
+          <lpage>377</lpage>
+          <pub-id pub-id-type="pmid">17011154</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R59">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Steed</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Lankester</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Barnard</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Earle</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Hurel</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Newman</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Evaluation of the UCL Diabetes Self-Management Programme
+(UCL-DSMP): a randomized controlled trial</article-title>
+          <source>Journal of Health Psychology</source>
+          <volume>10</volume>
+          <fpage>261</fpage>
+          <lpage>275</lpage>
+          <pub-id pub-id-type="pmid">15723895</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R60">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Swendeman</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Ingram</surname>
+              <given-names>BL</given-names>
+            </name>
+            <name>
+              <surname>Rotheram-Borus</surname>
+              <given-names>MJ</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Common elements in self-management of HIV and other chronic
+illnesses: An integrative framework</article-title>
+          <source>AIDS Care</source>
+          <volume>21</volume>
+          <issue>10</issue>
+          <fpage>1321</fpage>
+          <lpage>1334</lpage>
+          <pub-id pub-id-type="pmid">20024709</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R61">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tate</surname>
+              <given-names>DF</given-names>
+            </name>
+            <name>
+              <surname>Wing</surname>
+              <given-names>RR</given-names>
+            </name>
+            <name>
+              <surname>Winett</surname>
+              <given-names>RA</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>Using internet technology to deliver a behavioral weight loss
+program</article-title>
+          <source>Journal of the American Medical Association</source>
+          <volume>285</volume>
+          <fpage>1172</fpage>
+          <lpage>1177</lpage>
+          <pub-id pub-id-type="pmid">11231746</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R62">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Taylor</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Bury</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Chronic illness, expert patients and care
+transition</article-title>
+          <source>Sociology of Health and Illness</source>
+          <volume>29</volume>
+          <fpage>27</fpage>
+          <lpage>45</lpage>
+          <pub-id pub-id-type="pmid">17286704</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R63">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Taylor</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Bury</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Chronic illness, expert patients, and care
+transition</article-title>
+          <source>Sociology of Health and Illness</source>
+          <volume>29</volume>
+          <issue>1</issue>
+          <fpage>27</fpage>
+          <lpage>45</lpage>
+          <pub-id pub-id-type="pmid">17286704</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R64">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Uchino</surname>
+              <given-names>BM</given-names>
+            </name>
+            <name>
+              <surname>Cacioppo</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>Kiecolt-Glaser</surname>
+              <given-names>JK</given-names>
+            </name>
+          </person-group>
+          <year>1996</year>
+          <article-title>The relationship between social support and physiological
+process: A review with emphasis on underlying mechanisms and implications
+for health</article-title>
+          <source>Psychological Bulletin</source>
+          <volume>119</volume>
+          <fpage>488</fpage>
+          <lpage>531</lpage>
+          <pub-id pub-id-type="pmid">8668748</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R65">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Warsi</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>PS</given-names>
+            </name>
+            <name>
+              <surname>LaValley</surname>
+              <given-names>MP</given-names>
+            </name>
+            <name>
+              <surname>Avorn</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Solomon</surname>
+              <given-names>DH</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Self-management education programs in chronic disease: a
+systematic review and methodological critique of the
+literature</article-title>
+          <source>Archives of Internal Medicine</source>
+          <volume>164</volume>
+          <fpage>1641</fpage>
+          <lpage>1649</lpage>
+          <pub-id pub-id-type="pmid">15302634</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R66">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Watson</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Tharp</surname>
+              <given-names>RG</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <source>Self-directed behavior</source>
+          <edition>9</edition>
+          <publisher-loc>Belmont, CA</publisher-loc>
+          <publisher-name>Wadsworth Publishing Company</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="R67">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wilde</surname>
+              <given-names>MH</given-names>
+            </name>
+            <name>
+              <surname>Garvin</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>A concept analysis of self-monitoring</article-title>
+          <source>Journal of Advanced Nursing</source>
+          <volume>57</volume>
+          <issue>3</issue>
+          <fpage>339</fpage>
+          <lpage>350</lpage>
+          <pub-id pub-id-type="pmid">17233653</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R68">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Witkiewitz</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Marlatt</surname>
+              <given-names>GA</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Relapse prevention for alcohol and drug problems: That was zen,
+this is tao</article-title>
+          <source>American Psychologist</source>
+          <volume>59</volume>
+          <fpage>224</fpage>
+          <lpage>235</lpage>
+          <pub-id pub-id-type="pmid">15149263</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R69">
+        <element-citation publication-type="web">
+          <collab>World Health Organization.</collab>
+          <year>2009</year>
+          <source>2008–2013 Action Plan for the Global Strategy for the Prevention
+and Control of Noncommunicable Diseases</source>
+          <comment>Retrieved July 14, 2009 from <ext-link ext-link-type="uri" xlink:href="http://www.who.int/chp/action/en/">http://www.who.int/chp/action/en/</ext-link></comment>
+        </element-citation>
+      </ref>
+      <ref id="R70">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wright</surname>
+              <given-names>CC</given-names>
+            </name>
+            <name>
+              <surname>Barlow</surname>
+              <given-names>JH</given-names>
+            </name>
+            <name>
+              <surname>Turner</surname>
+              <given-names>AP</given-names>
+            </name>
+            <name>
+              <surname>Bancroft</surname>
+              <given-names>GV</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Self-management training for people with chronic disease: An
+exploratory study</article-title>
+          <source>British Journal of Health Psychology</source>
+          <volume>8</volume>
+          <issue>4</issue>
+          <fpage>465</fpage>
+          <lpage>476</lpage>
+          <pub-id pub-id-type="pmid">14614793</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig id="F1" orientation="portrait" position="float">
+      <label>Figure 1</label>
+      <caption>
+        <p>Patient process of developing self-management.</p>
+      </caption>
+      <graphic xlink:href="nihms540086f1"/>
+    </fig>
+  </floats-group>
+</article>

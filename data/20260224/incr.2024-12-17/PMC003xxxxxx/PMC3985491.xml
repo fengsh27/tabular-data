@@ -1,0 +1,937 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">8406280</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">6551</journal-id>
+      <journal-id journal-id-type="nlm-ta">Patient Educ Couns</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Patient Educ Couns</journal-id>
+      <journal-title-group>
+        <journal-title>Patient education and counseling</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0738-3991</issn>
+      <issn pub-type="epub">1873-5134</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">24126091</article-id>
+      <article-id pub-id-type="pmc">3985491</article-id>
+      <article-id pub-id-type="doi">10.1016/j.pec.2013.09.013</article-id>
+      <article-id pub-id-type="manuscript">NIHMS568145</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Documentation of reproductive health counseling and contraception in women with inflammatory bowel diseases<xref ref-type="fn" rid="FN1">☆</xref></article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gawron</surname>
+            <given-names>Lori M.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">a</xref>
+          <xref ref-type="corresp" rid="cor1">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hammond</surname>
+            <given-names>Cassing</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">a</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Keefer</surname>
+            <given-names>Laurie</given-names>
+          </name>
+          <xref ref-type="aff" rid="A2">b</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>a</label>Department of Obstetrics and Gynecology, Northwestern University, Chicago, USA</aff>
+      <aff id="A2"><label>b</label>Division of Gastroenterology and Hepatology, Department of Medicine, Northwestern University, Chicago, USA</aff>
+      <author-notes>
+        <corresp id="cor1"><label>*</label>Corresponding author at: 680 N. Lakeshore Drive Suite 1015, Chicago, IL 60611, USA. Tel.: +1 312 695 4373; fax: +1 312 695 8711. <email>lgawron@northwestern.edu</email> (L.M. Gawron)</corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>8</day>
+        <month>4</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>27</day>
+        <month>9</month>
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>1</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>14</day>
+        <month>4</month>
+        <year>2014</year>
+      </pub-date>
+      <volume>94</volume>
+      <issue>1</issue>
+      <fpage>134</fpage>
+      <lpage>137</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <sec id="S1">
+          <title>Objective</title>
+          <p id="P1">Inflammatory bowel diseases (IBD) are commonly diagnosed during women’s reproductive years. Counseling is important to avoid unintended pregnancy in a disease-poor state. We sought to determine reproductive counseling documentation by gastroenterologists in women with IBD.</p>
+        </sec>
+        <sec id="S2">
+          <title>Methods</title>
+          <p id="P2">An electronic query identified women, age 18–45, with IBD in an academic gastroenterology practice from 2010 to 2012. A random sample (15%) chart review determined contraception documentation and content/frequency of reproductive counseling.</p>
+        </sec>
+        <sec id="S3">
+          <title>Results</title>
+          <p id="P3">100 patients were analyzed. Median age was 35 (range 19–45), 53% were married, and 69% had Crohn’s disease. Median time since IBD diagnosis was 9 years (range 1–32) with a 5 visit median (range 1–45) over 31 months (range 1–105). A contraceptive method was identified in 24% of all patients.</p>
+          <p id="P4">Nineteen patients (19%) had documentation of reproductive counseling. Only 1/100 patients had a specific reference to using contraception to avoid pregnancy. The remaining counseling included (1) medication effects on pregnancy, (2) disease control before pregnancy, or (3) mode of delivery planning.</p>
+        </sec>
+        <sec id="S4">
+          <title>Conclusions</title>
+          <p id="P5">Outside of listing contraception as a “current medication”, documentation of reproductive counseling at gastroenterology visits for IBD is sparse.</p>
+        </sec>
+        <sec id="S5">
+          <title>Practice implications</title>
+          <p id="P6">In light of the importance of reproductive planning for women with IBD, future research on incentives and barriers to counseling is warranted.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>Inflammatory bowel disease</kwd>
+        <kwd>Family planning</kwd>
+        <kwd>Physician counseling</kwd>
+        <kwd>Contraception</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S6">
+      <title>1. Introduction</title>
+      <p id="P7">Pregnancy planning and contraception non-adherence are substantial public health concerns in the United States, with over half of all pregnancies being unintended each year [<xref rid="R1" ref-type="bibr">1</xref>]. A reduction of the unintended pregnancy rate is a specific goal of Department of Health and Human Services’ Healthy People 2020 campaign [<xref rid="R2" ref-type="bibr">2</xref>]. Physician counseling has been shown to alter maternal behaviors to improve pregnancy outcomes and decrease the risk of an unintended pregnancy through increased uptake of effective contraceptive methods; goals that take on additional significance for women with chronic medical conditions [<xref rid="R3" ref-type="bibr">3</xref>,<xref rid="R4" ref-type="bibr">4</xref>].</p>
+      <p id="P8">Inflammatory bowel diseases (IBD) are chronic relapsing and remitting disorders that are primarily comprised of ulcerative colitis and Crohn’s disease. IBD is commonly diagnosed during women’s reproductive years, with the highest incidence of disease onset between 20 and 29 years of age [<xref rid="R5" ref-type="bibr">5</xref>]. An unintended pregnancy in a woman with IBD may be detrimental due to the risk of adverse pregnancy outcomes in a poorly controlled disease state, potential teratogenic medication exposures or delay in IBD treatment options. Approximately 25% of women with IBD conceive for the 1st time after disease diagnosis [<xref rid="R6" ref-type="bibr">6</xref>]. The disease itself does not affect overall female fertility rates, although two studies have shown an increased rate of voluntary childlessness and smaller family size than the general population [<xref rid="R7" ref-type="bibr">7</xref>–<xref rid="R12" ref-type="bibr">12</xref>]. Concerns regarding IBD heritability, congenital malformations, medication teratogenicity or a physician’s recommendation to avoid pregnancy influenced family planning choices by women with IBD [<xref rid="R12" ref-type="bibr">12</xref>]. Increases in the spontaneous abortion rate, preterm delivery, and low-birth weight have all been related to the activity of the disease at the time of pregnancy [<xref rid="R13" ref-type="bibr">13</xref>–<xref rid="R15" ref-type="bibr">15</xref>]. Women desiring pregnancy may opt to defer more aggressive/high-risk treatments such as surgery or biological therapies until after family completion [<xref rid="R16" ref-type="bibr">16</xref>]. Given the risk of relapse and adverse pregnancy outcomes, women may be advised to achieve pregnancy only after six months of remission [<xref rid="R17" ref-type="bibr">17</xref>].</p>
+      <p id="P9">The 2010 Centers for Disease Control’s United States Medical Eligibility Criteria confirms hormonal contraception is safe and highly effective for pregnancy planning in women with IBD [<xref rid="R18" ref-type="bibr">18</xref>]. The National Survey for Family Growth in 2006–2008 found that 99.1% of women age 15–44 who had ever had intercourse reported using contraception at some point [<xref rid="R19" ref-type="bibr">19</xref>]. Despite the risks of unintended pregnancy, women with IBD have been shown to utilize contraception at rates slightly lower than the general population, with few women with IBD using highly effective contraceptive methods [<xref rid="R11" ref-type="bibr">11</xref>].</p>
+      <p id="P10">Women with IBD seek information regarding pregnancy and contraception from their gastroenterologist more frequently than their primary care physician [<xref rid="R12" ref-type="bibr">12</xref>]. A recent Irish study found that 42% of respondents with IBD felt their disease influenced family planning decisions, yet 68% had not discussed family planning with a doctor [<xref rid="R20" ref-type="bibr">20</xref>]. Literature is lacking on the nature and extent to which family planning issues are discussed in routine IBD patient encounters by gastroenterologists. The objectives of this study were to determine the frequency of contraceptive method documentation and the frequency and content of reproductive health counseling by academic gastroenterologists in reproductive age women with IBD.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="S7">
+      <title>2. Materials and methods</title>
+      <p id="P11">Women, age 18–45, with ulcerative colitis or Crohn’s disease who accessed care within a practice of thirteen academic gastroenterologists from 2010 to 2012 were identified by an electronic query of the Enterprise Data Warehouse at Northwestern University. A manual chart review was performed in October 2012 to confirm the diagnosis of Crohn’s disease or ulcerative colitis and characterize documentation of care within the gastroenterology faculty practice. Women with an indeterminate diagnosis or history of a hysterectomy were excluded. A random sample of 100 women was identified through a computerized random numbers generator.</p>
+      <p id="P12">A manual chart review was completed on all gastroenterology visits to determine the following: (1) participant demographics and disease characteristics, (2) proportion of participants receiving IBD medications within the United States Food and Drug Administration Category C (animal studies have shown adverse outcomes, but there are no well-designed human studies), Category D (there is positive evidence of human fetal risk, but benefits may outweigh risks), or Category X (there is positive evidence of human fetal risks and the risks outweigh any benefits of use in pregnancy), (3) documentation of contraceptive method, and (4) content and frequency of documented reproductive health counseling. Following data extraction, all data were de-identified, entered into Microsoft Excel spreadsheet software 2010 and analyzed. Descriptive statistics were performed with the assistance of SPSS v20 and reported as proportions and medians. This study was approved by the Institutional Review Board at Northwestern University.</p>
+    </sec>
+    <sec sec-type="results" id="S8">
+      <title>3. Results</title>
+      <p id="P13">A total of 638 reproductive-age IBD patients were identified through the electronic query and confirmed to meet inclusion criteria. A random sample of 100 women (15%) was identified and a detailed manual chart review was performed. No significant difference was found in median age or disease type proportion between the random sample and the total study population and all physicians in the practice were represented. The median age of participants was 35 (range 19–45) and 53% were married. Crohn’s disease represented 69% of the diagnoses and 31% of the participants had ulcerative colitis. The median time since IBD diagnosis was 9 years (range 1–32) and 29% of the women had previous IBD-related surgery. The median number of gastroenterology visits was 5 (range 1–45) over 31 months (range 1–105), with the earliest visit in December 2003 and last in September 2012. Contraceptive method was documented in 24% of patients’ charts in at least one visit; however, this coincided only with hormonal methods that were listed as a medication (<xref ref-type="table" rid="T1">Table 1</xref>).</p>
+      <p id="P14">Of the 100 patients identified, 48% used a Category D and 6% used a Category X medication for IBD management. The majority of patients used Category B or C medications. A contraceptive method was documented in the gastroenterology visit in 29.2% (<italic>n</italic> = 14/48) of Category D and 16.7% (<italic>n</italic> = 1/6) of Category X medication users (<xref ref-type="table" rid="T2">Table 2</xref>).</p>
+      <p id="P15">Nineteen patients (19%) had reproductive health counseling documented in at least one physician’s note. Only 1/100 patients had a specific reference to using contraception to avoid pregnancy; she was on a category X medication, but no contraceptive method or plan was found in her chart. The remaining counseling was related to (1) stopping medications for pregnancy/breastfeeding (<italic>n</italic> = 10), (2) improving disease control before pregnancy (<italic>n</italic> = 6), or (3) planning for mode of delivery (<italic>n</italic> = 2). Only 3 of the 19 patients (15.8%) had physician-initiated discussions about avoidance of pregnancy or disease management prior to considering pregnancy. The remaining 16 patients were either already pregnant or initiated a discussion due to their plans for future pregnancy.</p>
+    </sec>
+    <sec sec-type="Discussion|conclusions" id="S9">
+      <title>4. Discussion and conclusion</title>
+      <sec id="S10" sec-type="discussion">
+        <title>4.1. Discussion</title>
+        <p id="P16">In a random sample of 100 reproductive age women with IBD who are potentially at risk for pregnancy, only 24% had a contraceptive method documented and 19% had reproductive health documentation in the chart by her gastroenterologist. The only documented contraceptive methods were those that could be considered a “ medication,” such as a pill or hormonal intrauterine device, therefore, the medical assistant may have populated the medication list with this information. The women who require a Category D or X medication have the greatest risk of teratogenic effects and an increased need for reproductive planning due to disease severity, yet also had scant contraceptive documentation. The addition of a separate area for contraceptive documentation outside of the medication lists in electronic medical records may address this concern. This area would allow for documentation of barrier methods, natural family planning, or other non-medication methods such as copper IUDs. Contraceptive documentation is important for all non-pregnant, reproductive-age women, but takes on additional significance for women with IBD.</p>
+        <p id="P17">As women with IBD depend upon their gastroenterologist for counseling on IBD-related reproductive health concerns [<xref rid="R12" ref-type="bibr">12</xref>,<xref rid="R20" ref-type="bibr">20</xref>], documentation of reproductive planning should be considered a “best practice.” This study found that counseling by gastroenterologists is primarily patient-driven, as most women with documented counseling were already pregnant or initiated the conversation by telling the physician they were considering pregnancy. These topics account for the focus of counseling on pregnancy-related concerns, not on prevention of, or planning for a pregnancy. As women spend the majority of their reproductive years avoiding pregnancy, this is an important area that needs to be addressed during all healthcare encounters [<xref rid="R21" ref-type="bibr">21</xref>]. Among IBD patients, the burden for family planning counseling most likely falls on the gastroenterologist who manages the disease, prescribes medications, recommends surgical interventions, and sees their patients more frequently than other preventive care providers. The authors of a recent review article on pregnancy and breastfeeding in IBD patients recommended: “Clinicians need to educate patients before, during and after conception, emphasizing treatment compliance” [<xref rid="R22" ref-type="bibr">22</xref>]. If the gastroenterologist is not comfortable with reproductive counseling, documentation of a referral to a primary care physician or reproductive health provider for this counseling should be completed. In addition, the role of patient education regarding medications or other outpatient medical treatments is often filled by nursing or trained health educators, especially in highly specialized academic centers. Reproductive health counseling and discussion of contraceptive options could be incorporated into such education and the physician could document referrals for this purpose.</p>
+        <p id="P18">This is the first study to evaluate the frequency and content of reproductive counseling and contraception documentation in routine IBD visits by academic gastroenterologists. The limitations are inherent to a retrospective chart review. As all women are of reproductive age without a history of a hysterectomy, the assumption is that they are at risk for pregnancy, although sexual activity, menstrual regularity, and gravida and parity could not be ascertained from the documentation. Regardless of intended family size and age at time of visit, unintended pregnancy can occur at any point in a woman’s reproductive life, necessitating continued counseling by healthcare providers. The medication lists that included contraceptive methods may have been inconsistently updated in the electronic medical record; therefore there is no way to assess method continuation. The contraceptive method was listed as “documented,” even if it was only present in one of several encounters and there is no way to ensure the physician noted the method if it was entered by a medical assistant. The tertiary care setting of the academic gastroenterology practice did not allow for review of primary care provider documentation, which could fill the educational need of reproductive counseling. Regardless of this limitation, the gastroenterologists also would not have been able to view such documentation and could not have proven that contraceptive management occurred in another clinical setting, necessitating their own documentation efforts. The most important limitation is that a chart review is not proof of lack of reproductive health counseling by gastroenterologists; only that the gastroenterologists included in this study are not consistently documenting their counseling efforts and potentially at-risk for the medico-legal and ethical implications of adverse pregnancy outcomes of an unintended pregnancy.</p>
+      </sec>
+      <sec id="S11" sec-type="conclusions">
+        <title>4.2. Conclusion</title>
+        <p id="P19">Outside of listing contraception as a “current medication,” documentation of family planning discussions in gastroenterology visits for IBD is sparse, even in women using Category D or X medication. In light of the importance of reproductive planning for women with IBD, future research on incentives and barriers to family planning discussions is warranted.</p>
+      </sec>
+      <sec id="S12">
+        <title>4.3. Practice implications</title>
+        <p id="P20">As electronic medical records are further implemented, integration of an area for contraceptive documentation outside of the medication list will highlight the importance of this topic. In addition, development of patient resources or a standardized counseling checklist may assist gastroenterologists in addressing these issues in a time-limited visit. Incorporating reproductive health and contraceptive counseling into a nursing or health educator session, or referring a patient to a primary care or reproductive health provider can also fill this important educational need.</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn id="FN1">
+        <p id="P21">Conference presentation: Digestive Disease Week, Orlando, FL, USA, 2013.</p>
+      </fn>
+      <fn id="FN2" fn-type="con">
+        <p id="P22">
+          <bold>Author contributions</bold>
+        </p>
+        <p id="P23">L.M.G. participated in study design, data acquisition, data analysis and interpretation, and manuscript preparation. C.H. contributed to study design, data interpretation, and manuscript preparation. L.K. participated in study design, data interpretation, and manuscript preparation.</p>
+      </fn>
+    </fn-group>
+    <ack id="S13">
+      <title>Acknowledgements</title>
+      <p id="P24">Electronic query support was received through the Northwestern University Enterprise Data Warehouse Seed Grant and Dr. Gawron receives salary support through the Women’s Reproductive Health Research Scholar Program (NIH K12 HD050121).</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="R1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Finer</surname>
+              <given-names>LB</given-names>
+            </name>
+            <name>
+              <surname>Zolna</surname>
+              <given-names>MR</given-names>
+            </name>
+          </person-group>
+          <article-title>Unintended pregnancy in the United States: incidence and disparities, 2006</article-title>
+          <source>Contraception</source>
+          <year>2011</year>
+          <volume>84</volume>
+          <fpage>478</fpage>
+          <lpage>485</lpage>
+          <pub-id pub-id-type="pmid">22018121</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <element-citation publication-type="gov">
+          <article-title><ext-link ext-link-type="uri" xlink:href="http://HealthyPeople.gov">HealthyPeople.gov</ext-link>: Family Planning</article-title>
+          <year>2012</year>
+          <date-in-citation>accessed 20.03.13</date-in-citation>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://www.healthypeople.gov/2020/topicsobjectives2020/overview.aspx?topicid=13">http://www.healthypeople.gov/2020/topicsobjectives2020/overview.aspx?topicid=13</ext-link>
+          </comment>
+        </element-citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Williams</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Zapata</surname>
+              <given-names>LB</given-names>
+            </name>
+            <name>
+              <surname>D’Angelo</surname>
+              <given-names>DV</given-names>
+            </name>
+            <name>
+              <surname>Harrison</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Morrow</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>Associations between preconception counseling and maternal behaviors before and during pregnancy</article-title>
+          <source>Matern Child Health J</source>
+          <year>2012</year>
+          <volume>16</volume>
+          <fpage>1854</fpage>
+          <lpage>1861</lpage>
+          <pub-id pub-id-type="pmid">22173331</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gemzell-Danielsson</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Thunell</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Lindeberg</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Tyden</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Marintcheva-Petrova</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Oddens</surname>
+              <given-names>BJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Comprehensive counseling about combined hormonal contraceptives changes the choice of contraceptive methods: results of the CHOICE program in Sweden</article-title>
+          <source>Acta Obstet Gynecol Scand</source>
+          <year>2011</year>
+          <volume>90</volume>
+          <fpage>869</fpage>
+          <lpage>877</lpage>
+          <pub-id pub-id-type="pmid">21564028</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Molodecky</surname>
+              <given-names>NA</given-names>
+            </name>
+            <name>
+              <surname>Soon</surname>
+              <given-names>IS</given-names>
+            </name>
+            <name>
+              <surname>Rabi</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Ghali</surname>
+              <given-names>WA</given-names>
+            </name>
+            <name>
+              <surname>Ferris</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Chernoff</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Increasing incidence and prevalence of the inflammatory bowel diseases with time, based on systematic review</article-title>
+          <source>Gastroenterology</source>
+          <year>2012</year>
+          <volume>142</volume>
+          <fpage>46</fpage>
+          <lpage>54</lpage>
+          <pub-id pub-id-type="pmid">22001864</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Baiocco</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Korelitz</surname>
+              <given-names>BI</given-names>
+            </name>
+          </person-group>
+          <article-title>The influence of inflammatory bowel disease and its treatment on pregnancy and fetal outcome</article-title>
+          <source>J Clin Gastroenterol</source>
+          <year>1984</year>
+          <volume>6</volume>
+          <fpage>211</fpage>
+          <lpage>216</lpage>
+          <pub-id pub-id-type="pmid">6144706</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Olsen</surname>
+              <given-names>KO</given-names>
+            </name>
+            <name>
+              <surname>Joelsson</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Laurberg</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Oresland</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Fertility after ileal pouch-anal anastomosis in women with ulcerative colitis</article-title>
+          <source>Br J Surg</source>
+          <year>1999</year>
+          <volume>86</volume>
+          <fpage>493</fpage>
+          <lpage>495</lpage>
+          <pub-id pub-id-type="pmid">10215821</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ording Olsen</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Juul</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Berndtsson</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Oresland</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Laurberg</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Ulcerative colitis: female fecundity before diagnosis, during disease, and after surgery compared with a population sample</article-title>
+          <source>Gastroenterology</source>
+          <year>2002</year>
+          <volume>122</volume>
+          <fpage>15</fpage>
+          <lpage>19</lpage>
+          <pub-id pub-id-type="pmid">11781275</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Khosla</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Willoughby</surname>
+              <given-names>CP</given-names>
+            </name>
+            <name>
+              <surname>Jewell</surname>
+              <given-names>DP</given-names>
+            </name>
+          </person-group>
+          <article-title>Crohn’s disease and pregnancy</article-title>
+          <source>Gut</source>
+          <year>1984</year>
+          <volume>25</volume>
+          <fpage>52</fpage>
+          <lpage>56</lpage>
+          <pub-id pub-id-type="pmid">6140209</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Johnson</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Female infertility after ileal pouch-anal anastomosis for ulcerative colitis</article-title>
+          <source>Dis Colon Rectum</source>
+          <year>2004</year>
+          <volume>47</volume>
+          <fpage>1119</fpage>
+          <lpage>1126</lpage>
+          <pub-id pub-id-type="pmid">15164254</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Marri</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Ahn</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Buchman</surname>
+              <given-names>AL</given-names>
+            </name>
+          </person-group>
+          <article-title>Voluntary childlessness is increased in women with inflammatory bowel disease</article-title>
+          <source>Inflamm Bowel Dis</source>
+          <year>2007</year>
+          <volume>13</volume>
+          <fpage>591</fpage>
+          <lpage>599</lpage>
+          <pub-id pub-id-type="pmid">17206690</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mountifield</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Bampton</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Prosser</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Muller</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Andrews</surname>
+              <given-names>JM</given-names>
+            </name>
+          </person-group>
+          <article-title>Fear and fertility in inflammatory bowel disease: a mismatch of perception and reality affects family planning decisions</article-title>
+          <source>Inflamm Bowel Dis</source>
+          <year>2009</year>
+          <volume>15</volume>
+          <fpage>720</fpage>
+          <lpage>725</lpage>
+          <pub-id pub-id-type="pmid">19067431</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R13">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Riis</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Vind</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Politi</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Wolters</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Vermeire</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Tsianos</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Does pregnancy change the disease course? A study in a European cohort of patients with inflammatory bowel disease</article-title>
+          <source>Am J Gastroenterol</source>
+          <year>2006</year>
+          <volume>101</volume>
+          <fpage>1539</fpage>
+          <lpage>1545</lpage>
+          <pub-id pub-id-type="pmid">16863558</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R14">
+        <label>14</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fonager</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Sorensen</surname>
+              <given-names>HT</given-names>
+            </name>
+            <name>
+              <surname>Olsen</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Dahlerup</surname>
+              <given-names>JF</given-names>
+            </name>
+            <name>
+              <surname>Rasmussen</surname>
+              <given-names>SN</given-names>
+            </name>
+          </person-group>
+          <article-title>Pregnancy outcome for women with Crohn’s disease: a follow-up study based on linkage between national registries</article-title>
+          <source>Am J Gastroenterol</source>
+          <year>1998</year>
+          <volume>93</volume>
+          <fpage>2426</fpage>
+          <lpage>2430</lpage>
+          <pub-id pub-id-type="pmid">9860403</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R15">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Norgard</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Fonager</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Sorensen</surname>
+              <given-names>HT</given-names>
+            </name>
+            <name>
+              <surname>Olsen</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Birth outcomes of women with ulcerative colitis: a nationwide Danish cohort study</article-title>
+          <source>Am J Gastroenterol</source>
+          <year>2000</year>
+          <volume>95</volume>
+          <fpage>3165</fpage>
+          <lpage>3170</lpage>
+          <pub-id pub-id-type="pmid">11095336</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R16">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Blumenstein</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Herrmann</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Filmann</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Zosel</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Tacke</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Bock</surname>
+              <given-names>H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Female patients suffering from inflammatory bowel diseases are treated less frequently with immunosuppressive medication and have a higher disease activity: a subgroup analysis of a large multi-centre, prospective, internet-based study</article-title>
+          <source>J Crohns Colitis</source>
+          <year>2011</year>
+          <volume>5</volume>
+          <fpage>203</fpage>
+          <lpage>210</lpage>
+          <pub-id pub-id-type="pmid">21575882</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R17">
+        <label>17</label>
+        <element-citation publication-type="gov">
+          <article-title>United States Department of Health and Human Services Office of Women’s Health</article-title>
+          <source>Inflammatory Bowel Disease Fact Sheet</source>
+          <year>2009</year>
+          <date-in-citation>accessed 09.05.13</date-in-citation>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://womenshealth.-gov/publications/our-publications/fact-sheet/inflammatory-bowel-disease-cfm">http://womenshealth.-gov/publications/our-publications/fact-sheet/inflammatory-bowel-disease-cfm</ext-link>
+          </comment>
+        </element-citation>
+      </ref>
+      <ref id="R18">
+        <label>18</label>
+        <element-citation publication-type="gov">
+          <collab>United States Centers for Disease Control</collab>
+          <article-title>U.S. Medically Eligibility Criteria for Contraceptive Use</article-title>
+          <year>2010</year>
+          <date-in-citation>accessed 29.12.11</date-in-citation>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://www.cdc.gov/mmwr/pdf/rr/rr5904.pdf">http://www.cdc.gov/mmwr/pdf/rr/rr5904.pdf</ext-link>
+          </comment>
+        </element-citation>
+      </ref>
+      <ref id="R19">
+        <label>19</label>
+        <element-citation publication-type="gov">
+          <article-title>National Survey of Family Growth, 2006–2010</article-title>
+          <date-in-citation>accessed 11.04.13</date-in-citation>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://www.cdc.gov/nchs/nsfg.htm">http://www.cdc.gov/nchs/nsfg.htm</ext-link>
+          </comment>
+        </element-citation>
+      </ref>
+      <ref id="R20">
+        <label>20</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Toomey</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Waldron</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>Family planning and inflammatory bowel disease: the patient and the practitioner</article-title>
+          <source>Fam Pract</source>
+          <year>2013</year>
+          <volume>30</volume>
+          <fpage>64</fpage>
+          <lpage>68</lpage>
+          <pub-id pub-id-type="pmid">22843639</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R21">
+        <label>21</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boonstra</surname>
+              <given-names>HD</given-names>
+            </name>
+            <name>
+              <surname>Benson Gold</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Richards</surname>
+              <given-names>CL</given-names>
+            </name>
+            <name>
+              <surname>Finer</surname>
+              <given-names>LB</given-names>
+            </name>
+          </person-group>
+          <article-title>Abortion in Women’s Lives</article-title>
+          <year>2006</year>
+          <date-in-citation>accessed 24.04.13</date-in-citation>
+          <comment>
+            <ext-link ext-link-type="uri" xlink:href="http://www.guttmacher.org/pubs/2006/05/04/AiWL.pdf">http://www.guttmacher.org/pubs/2006/05/04/AiWL.pdf</ext-link>
+          </comment>
+        </element-citation>
+      </ref>
+      <ref id="R22">
+        <label>22</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yarur</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Kane</surname>
+              <given-names>SV</given-names>
+            </name>
+          </person-group>
+          <article-title>Update on pregnancy and breastfeeding in the era of biologics</article-title>
+          <source>Dig Liver Dis</source>
+          <year>2013</year>
+          <comment><ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1016/j.dld.2013.02.001">http://dx.doi.org/10.1016/j.dld.2013.02.001</ext-link>.</comment>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <table-wrap id="T1" position="float" orientation="portrait">
+      <label>Table 1</label>
+      <caption>
+        <p id="P25">Participant characteristics (<italic>n</italic> = 100).</p>
+      </caption>
+      <table frame="hsides" rules="none">
+        <tbody>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">IBD diagnosis</td>
+            <td align="left" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">  Crohn’s disease</td>
+            <td align="left" rowspan="1" colspan="1">61%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">  Ulcerative colitis</td>
+            <td align="left" rowspan="1" colspan="1">39%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <bold>Demographics</bold>
+            </td>
+            <td align="left" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Current median age (range)</td>
+            <td align="left" rowspan="1" colspan="1">35 (19–45)</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Race</td>
+            <td align="left" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">  White</td>
+            <td align="left" rowspan="1" colspan="1">71%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">  Black</td>
+            <td align="left" rowspan="1" colspan="1">12%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">  Asian</td>
+            <td align="left" rowspan="1" colspan="1">3%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">  Unknown</td>
+            <td align="left" rowspan="1" colspan="1">14%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Hispanic ethnicity</td>
+            <td align="left" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">  Yes</td>
+            <td align="left" rowspan="1" colspan="1">3%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">  Unknown</td>
+            <td align="left" rowspan="1" colspan="1">11%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Insurance type</td>
+            <td align="left" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">  Private</td>
+            <td align="left" rowspan="1" colspan="1">87%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">  Public (Medicaid/Medicare)</td>
+            <td align="left" rowspan="1" colspan="1">12%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">  Uninsured/self-pay</td>
+            <td align="left" rowspan="1" colspan="1">1%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Married</td>
+            <td align="left" rowspan="1" colspan="1">53%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <bold>Disease characteristics</bold>
+            </td>
+            <td align="left" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Median no. years since diagnosis (range)</td>
+            <td align="left" rowspan="1" colspan="1">9 (1–32)</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Previous IBD surgery</td>
+            <td align="left" rowspan="1" colspan="1">29%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Median no. months in faculty practice (range)</td>
+            <td align="left" rowspan="1" colspan="1">31 (1–105)</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Median no. visits in faculty practice (range)</td>
+            <td align="left" rowspan="1" colspan="1">5 (1–45)</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">
+              <bold>Contraception</bold>
+            </td>
+            <td align="left" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Documented contraceptive method</td>
+            <td align="left" rowspan="1" colspan="1">24%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">  Combined hormonal method (pill, patch, ring)</td>
+            <td align="left" rowspan="1" colspan="1">79.2% (19/24)</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">  Levonorgestrol intrauterine contraceptive</td>
+            <td align="left" rowspan="1" colspan="1">16.7% (4/24)</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">  Depo-Provera injectable</td>
+            <td align="left" rowspan="1" colspan="1">4.1% (1/24)</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+    <table-wrap id="T2" position="float" orientation="landscape">
+      <label>Table 2</label>
+      <caption>
+        <p id="P26">Use of IBD medications by United States Food and Drug Administration Category.</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="left" rowspan="1" colspan="1"/>
+            <th align="left" rowspan="1" colspan="1">Total (n = 100)</th>
+            <th align="right" rowspan="1" colspan="1">Category B</th>
+            <th align="right" rowspan="1" colspan="1">Category BC</th>
+            <th align="right" rowspan="1" colspan="1">Category D</th>
+            <th align="right" rowspan="1" colspan="1">Category X</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Aminosalicylates</td>
+            <td align="left" rowspan="1" colspan="1">59%</td>
+            <td align="right" rowspan="1" colspan="1">27%</td>
+            <td align="right" rowspan="1" colspan="1">32%</td>
+            <td align="right" rowspan="1" colspan="1"/>
+            <td align="right" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Immunomodulator</td>
+            <td align="left" rowspan="1" colspan="1">54%</td>
+            <td align="right" rowspan="1" colspan="1">0</td>
+            <td align="right" rowspan="1" colspan="1">0</td>
+            <td align="right" rowspan="1" colspan="1">48%</td>
+            <td align="right" rowspan="1" colspan="1">6%</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Corticosteroids</td>
+            <td align="left" rowspan="1" colspan="1">50%</td>
+            <td align="right" rowspan="1" colspan="1">0</td>
+            <td align="right" rowspan="1" colspan="1">50%</td>
+            <td align="right" rowspan="1" colspan="1">0</td>
+            <td align="right" rowspan="1" colspan="1">0</td>
+          </tr>
+          <tr>
+            <td align="left" rowspan="1" colspan="1">Biologics</td>
+            <td align="left" rowspan="1" colspan="1">30%</td>
+            <td align="right" rowspan="1" colspan="1">30%</td>
+            <td align="right" rowspan="1" colspan="1">0</td>
+            <td align="right" rowspan="1" colspan="1">0</td>
+            <td align="right" rowspan="1" colspan="1">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+  </floats-group>
+</article>

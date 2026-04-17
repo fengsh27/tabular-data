@@ -1,0 +1,955 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties manuscript?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">101560384</journal-id>
+      <journal-id journal-id-type="nlm-ta">Curr Protoc Mouse Biol</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Curr Protoc Mouse Biol</journal-id>
+      <journal-title-group>
+        <journal-title>Current protocols in mouse biology</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2161-2617</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">32865891</article-id>
+      <article-id pub-id-type="pmc">7617235</article-id>
+      <article-id pub-id-type="manuscript">EMS201732</article-id>
+      <article-id pub-id-type="doi">10.1002/cpmo.81</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Simultaneous Assessment of Circadian Rhythms and Sleep in Mice Using Passive Infrared Sensors: A User’s Guide</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Brown</surname>
+            <given-names>Laurence A.</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A2" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author" equal-contrib="yes">
+          <name>
+            <surname>Banks</surname>
+            <given-names>Gareth T.</given-names>
+          </name>
+          <xref rid="A3" ref-type="aff">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Horner</surname>
+            <given-names>Neil</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wilcox</surname>
+            <given-names>Sian L.</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Nolan</surname>
+            <given-names>Patrick M.</given-names>
+          </name>
+          <xref rid="A3" ref-type="aff">3</xref>
+          <xref rid="CR1" ref-type="corresp">†</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Peirson</surname>
+            <given-names>Stuart N.</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="CR1" ref-type="corresp">†</xref>
+        </contrib>
+        <aff id="A1">
+<label>1</label>Sleep and Circadian Neuroscience Institute (SCNi), Nuffield Department of Clinical Neurosciences, <institution-wrap><institution-id institution-id-type="ror">https://ror.org/052gg0110</institution-id><institution>University of Oxford</institution></institution-wrap>, <country country="GB">UK</country></aff>
+        <aff id="A2">
+<label>2</label>Research Support Team, IT Services, <institution-wrap><institution-id institution-id-type="ror">https://ror.org/052gg0110</institution-id><institution>University of Oxford</institution></institution-wrap>, <country country="GB">UK</country></aff>
+        <aff id="A3">
+<label>3</label><institution-wrap><institution-id institution-id-type="ror">https://ror.org/0001h1y25</institution-id><institution>MRC Harwell</institution></institution-wrap>, <city>Harwell Campus</city>, <city>Harwell</city>, <country country="GB">UK</country></aff>
+      </contrib-group>
+      <author-notes>
+        <corresp id="CR1">
+<label>†</label>To whom correspondence should be addressed (<email>p.nolan@har.mrc.ac.uk</email> and <email>stuart.peirson@eye.ox.ac.uk</email>)</corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>06</day>
+        <month>12</month>
+        <year>2024</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <day>01</day>
+        <month>9</month>
+        <year>2020</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>14</day>
+        <month>12</month>
+        <year>2024</year>
+      </pub-date>
+      <volume>10</volume>
+      <issue>3</issue>
+      <fpage>e81</fpage>
+      <lpage>e81</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available to download for the purposes of text mining, consistent with the principles of UK copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P1">The 24h cycle of activity and sleep provides perhaps the most familiar example of circadian rhythms. In mammals, circadian activity rhythms are generated by a master biological clock located in the hypothalamic suprachiasmatic nuclei (SCN). This clock is synchronized (entrained) to the external light environment via light input from retinal photoreceptors. However, sleep is not a simple circadian output and is also regulated by a homeostatic process whereby extended wakefulness increases the need for subsequent sleep. As such, the amount and distribution of sleep depends upon the interaction between both circadian and homeostatic processes. The study of circadian activity and sleep is not only confined to these specialised fields. Sleep and circadian rhythm disruption is common in many conditions, ranging from neurological and metabolic disorders to aging. Such disruption is associated with a range of negative consequences including cognitive impairment, mood disorders, as well as immune and metabolic dysfunction. As circadian activity and sleep are hallmarks of normal healthy physiology, they also provide valuable welfare indicators. However traditional methods for the monitoring of circadian rhythms and sleep in mice can require separate specialised resources as well as significant expertise. Here we outline a low-cost, non-invasive and open source method for the simultaneous assessment of circadian activity and sleep in mice. This protocol describes both the assembly of the hardware used and the capture and analysis of data without the need for expertise in electronics or data processing.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>Circadian</kwd>
+        <kwd>sleep</kwd>
+        <kwd>home-cage monitoring</kwd>
+        <kwd>welfare</kwd>
+        <kwd>refinement</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S1">
+      <title>Introduction</title>
+      <p id="P2">Circadian rhythms are approximately 24h cycles of physiology and behaviour that optimise physiology to the demands of the day/night cycle. In mammals, the master circadian clock is located in the suprachiasmatic nuclei (SCN) in the anterior hypothalamus (<xref rid="R37" ref-type="bibr">Reppert and Weaver, 2002</xref>). The SCN is synchronised (entrained) to the external light/dark cycle by light input from specialised photoreceptors in the retina and regulates physiological and behavioural outputs such as the timing of locomotor activity and the entrainment of peripheral circadian clocks found in cells and tissues throughout the body (<xref rid="R13" ref-type="bibr">Dibner et al., 2010</xref>). However, the timing of sleep and wake is not a simple circadian output. Whilst the SCN clock undoubtedly plays a role in the regulation of the timing of sleep and wake (<xref rid="R9" ref-type="bibr">Borbely et al., 2016</xref>; <xref rid="R30" ref-type="bibr">Mistleberger 2005</xref>), sleep is also dependent upon the duration of preceding wakefulness in a homeostatic manner. As such, the amount and distribution of sleep depends upon the interaction of both circadian and homeostatic processes (<xref rid="R8" ref-type="bibr">Borbely 1982</xref>; <xref rid="R9" ref-type="bibr">Borbely et al., 2016</xref>). Although specific hypothalamic circuits control the switch from sleep to wake (<xref rid="R39" ref-type="bibr">Scammell et al 2017</xref>), the homeostat may depend upon cellular mechanisms rather than specific neuronal circuits (<xref rid="R44" ref-type="bibr">Wang et al 2018</xref>).</p>
+      <p id="P3">In healthy individuals cycles of activity and rest are very robust with similar recurring patterns across multiple days. Disruption of these regular activity/sleep patterns contributes to impaired cognitive performance, metabolic and cardiovascular disorders and even the risk of developing cancer (<xref rid="R6" ref-type="bibr">Bechtold et al., 2010</xref>; <xref rid="R22" ref-type="bibr">Hastings et al, 2003</xref>; <xref rid="R25" ref-type="bibr">Jagannath et al., 2013</xref>; <xref rid="R46" ref-type="bibr">West and Bechtold, 2015</xref>; <xref rid="R48" ref-type="bibr">Wulff et al., 2010</xref>). In addition, circadian disruption has also been characterised in many different disease states as well as a result of our modern 24h society, with jet-lag, shift work and light at night all perturbing the normal activity/rest cycle (<xref rid="R11" ref-type="bibr">Brown et al., 2019</xref>). As a result, the ability to measure changes in activity and sleep cycles in model systems such as the mouse is of value not only to the circadian and sleep community but also to researchers studying a wide range of disorders. In addition, animals display characteristic changes in physiology and behaviour in response to illness, including reduced activity and increased sleep (<xref rid="R42" ref-type="bibr">Tizard et al., 2008</xref>). As such, home cage activity and sleep provides a valuable potential indicator of healthy physiology as well as disease progression.</p>
+      <p id="P4">Measuring activity and sleep in mice typically requires specialised resources. In the case of circadian activity, usually cages equipped with running wheels are housed in light-tight environmentally-controlled chambers with independent lighting and ventilation. Wheel revolutions are recorded via micro-switches to computer systems running specialist software (<xref rid="R1" ref-type="bibr">Albrecht and Foster 2002</xref>; <xref rid="R26" ref-type="bibr">Jud et al 2005</xref>; <xref rid="R3" ref-type="bibr">Banks and Nolan 2011</xref>; <xref rid="R14" ref-type="bibr">Eckel-Mahan and Sassone-Corsi 2015</xref>). By contrast, sleep is traditionally recorded using electroencephalography (EEG) combined with electromyography (EMG), which involve invasive surgery and collection of high resolution electrophysiological data. The detailed characterisation of sleep critically depends upon such EEG/EMG data, in particular the analysis of specific vigilance states and spectral analysis which require specialist software and time-consuming sleep-scoring. However, behavioural correlates of sleep provide a valuable approach to studying the amount and distribution of sleep in a high throughput manner, prior to focused EEG/EMG studies or as part of a larger screening process. Both video and piezoelectric methods have been used in this manner (<xref rid="R31" ref-type="bibr">Pack et al., 2007</xref>; <xref rid="R17" ref-type="bibr">Flores et al., 2007</xref>; <xref rid="R15" ref-type="bibr">Fisher et al., 2012</xref>). Continuous Open Mouse Phenotyping of Activity and Sleep Status (COMPASS) was developed as a low cost, accessible technique for measuring simultaneous activity and sleep in mice. This system is based upon passive infrared (PIR) sensors that continuously monitor home cage movement and store data onto a local PC via an Arduino microprocessor (<xref rid="F1" ref-type="fig">Figure 1</xref>). Validation against EEG/EMG data shows that accurate sleep data can be obtained by monitoring periods of extended immobility using calibrated positioning of the PIR sensors (<xref rid="R10" ref-type="bibr">Brown et al 2017</xref>). Here we provide a step-by-step protocol for the assembly of the COMPASS system, the collection of PIR activity data and the analysis of this data for circadian activity and sleep phenotyping.</p>
+    </sec>
+    <sec id="S2">
+      <title>Strategic Planning</title>
+      <p id="P5">Activity and sleep in mice are highly sensitive to light exposure, with light suppressing activity and promoting sleep. Moreover, mistimed light exposure can also disrupt the circadian system by producing circadian phase shifts or fragmentation of activity rhythms (<xref rid="R33" ref-type="bibr">Peirson et al 2018</xref>; <xref rid="R11" ref-type="bibr">Brown et al., 2019</xref>). Light history may also influence sleep via its action upon the circadian system or by directly regulating sleep. PIR activity and sleep recordings should therefore ideally be performed under controlled light environments. For detailed circadian analysis, the use of light-tight environmentally controlled chambers with inbuilt timer-controlled lighting is strongly recommended. The construction of such chambers has been described in detail elsewhere (see appendix of <xref rid="R1" ref-type="bibr">Albrecht and Foster 2002</xref>). See also <xref rid="R26" ref-type="bibr">Jud et al 2005</xref>; <xref rid="R3" ref-type="bibr">Banks and Nolan 2011</xref>; <xref rid="R14" ref-type="bibr">Eckel-Mahan and Sassone-Corsi 2015</xref>). The type of lighting used, as well as the light intensity should also always be reported. Ideally, the spectral power distribution of the light source should also be measured and included in any publication (<xref rid="R29" ref-type="bibr">Lucas et al., 2014</xref>). If light-tight chambers are not available, PIR recordings can be performed in normal cage racks or procedure rooms. This may be more appropriate for monitoring health status or disease progression in animals under long-term study. However, in such situations it is important to maintain a stable lighting environment. While 12h light/12h dark cycles are commonly used in animal facilities, unexpected light changes will affect the data obtained (e.g. lights being accidently turned on or off in a room or light exposure during the dark phase due to light from external corridors). Clear signage warning users of the need for care in the light environment may be necessary. Additional precautions such as blackout curtains on room entrances may also help provide a light-controlled environment. Some animal facilities also use ramped dawn/dusk lighting, and users should be aware that this may result in different activity and sleep data in comparison with mice housed under a simple lights on/off condition (<xref rid="R12" ref-type="bibr">Comas and Hut, 2009</xref>). To ensure that the light environment is consistent during data collection, the build below includes a light-dependent resistor (LDR) to monitor the light environment throughout data collection.</p>
+      <sec id="S3">
+        <title>Basic Protocol</title>
+        <sec id="S4">
+          <title>Assembly of a PIR system for basic activity and sleep recordings</title>
+          <p id="P6">This protocol describes the assembly of the PIR sensors and Arduino microprocessor, and their connection to the PC-based recording software. The recording and analysis of home cage activity and sleep data is also described.</p>
+          <p id="P7">NOTE: It is recommended that the COMPASS system is built and tested prior to any home cage animal activity study. Exact part codes may be discontinued, though supplier sites will typically suggest alternatives. For the recording computer, the system has been successfully run on old computers (&lt; 512Mb RAM, and &lt;1GHz Pentium III processors), and operating systems from Windows XP- Windows 10 (Microsoft), MacOS X (Apple Inc.) and Ubuntu Linux 14.04 LTS and above (Canonical Ltd.).</p>
+          <p id="P8">NOTE: The technique outlined below is based upon the PIR sensor being positioned above the cage. The mouse should therefore be prevented from reaching areas of the cage not covered by the sensor field. To this end, the underside of the food hopper should be made inaccessible and home cage bedding may need to be reduced. We have found that Nestlets work well. Please note that PIR sensors are unable to penetrate IVC cage lids, so recordings need to be made without such lids in place.</p>
+        </sec>
+      </sec>
+      <sec sec-type="materials" id="S5">
+        <title>Materials</title>
+        <p id="P9">For construction of PIR sensors <list list-type="simple" id="L1"><list-item><p id="P10">PIR sensors (Panasonic AMN32111) (<ext-link xlink:href="http://uk.mouser.com/" ext-link-type="uri">http://uk.mouser.com/</ext-link> cat. no 769-AMN32111); one for each cage to be monitored.1 k Ohm Resistor (0.25W, 1%) (Farnell cat. no 9341102); one for each cage to be monitored.</p></list-item><list-item><p id="P11">10 k Ohm Resistor (0.25W, 1%) Farnell cat. no 2329855); one for each cage to be monitored (for PIR sensors that require a LDR).</p></list-item><list-item><p id="P12">Printed PIR circuit boards (designed and manufactured using Fritzing (<ext-link xlink:href="http://fritzing.org/home/" ext-link-type="uri">http://fritzing.org/home/</ext-link>, versions up to 0.9.3b); one for each cage to be monitored. The circuit board design can be found here: <ext-link xlink:href="https://aisler.net/LABrown/compass/1pir_ldr" ext-link-type="uri">https://aisler.net/LABrown/compass/1pir_ldr</ext-link>.</p></list-item><list-item><p id="P13">Light-dependant resistor (LDR) (Farnell cat. no 3168335); one for each lighting environment (e.g. light-tight cabinet or room) to be monitored.</p></list-item><list-item><p id="P14">RJ12 receptacle for PIR board (JACK, 6/4 LOW PROFILE) (Farnell cat. no 1560166).</p></list-item><list-item><p id="P15"><italic toggle="yes">OPTIONAL:</italic> Small PIR case (BOX, 18×40×28MM) (Farnell cat. no 1871051). Alternatively, 3D printing .stl files can be found at: <ext-link xlink:href="http://users.ox.ac.uk/&#x2DC;anat0144/COMPASS_updates.html" ext-link-type="uri">http://users.ox.ac.uk/˜anat0144/COMPASS_updates.html</ext-link></p></list-item></list>
+</p>
+        <p id="P16">For construction of the main unit <list list-type="simple" id="L2"><list-item><p id="P17">Printed main circuit board (designed and manufactured using Fritzing (<ext-link xlink:href="http://fritzing.org/home/" ext-link-type="uri">http://fritzing.org/home/</ext-link>, versions up to 0.9.3b). The circuit board design can be found here: <ext-link xlink:href="https://aisler.net/LABrown/compass/6pir_board" ext-link-type="uri">https://aisler.net/LABrown/compass/6pir_board</ext-link>.</p></list-item><list-item><p id="P18">Arduino microcontroller (AVR ARDUINO MEGA2560 REV 3) (<ext-link xlink:href="http://uk.mouser.com/" ext-link-type="uri">http://uk.mouser.com/</ext-link> cat. no 782-A000067)</p></list-item><list-item><p id="P19">Arduino case (Farnell cat. no 1848692)</p></list-item><list-item><p id="P20">RJ12 sockets (VERTICAL, 6WAY, 4WIRE) (Farnell cat. no 1097915).</p></list-item><list-item><p id="P21">Jumper Wires (MALE TO MALE 15CM 10PK) (<ext-link xlink:href="http://uk.mouser.com/" ext-link-type="uri">http://uk.mouser.com/</ext-link> cat. no 932-MIKROE-513)</p></list-item><list-item><p id="P22">2-pin header (2.54MM, SINGLE, 2WAY) Farnell cat. no 1667508)</p></list-item><list-item><p id="P23">24-pin header (2.54MM, 2X12WAY) (Farnell cat no 1804656)</p></list-item></list>
+</p>
+        <p id="P24">Cables <list list-type="simple" id="L3"><list-item><p id="P25">Cable reel (FCC68, 4CORE, BLACK, 100M) (Farnell cat. no 1202607)</p></list-item><list-item><p id="P26">Crimp tool (4P/4C, 6P/4C, 6P/6C) (Farnell cat. no 106321)</p></list-item><list-item><p id="P27">Crimp plugs (RJ12, 6P4C, FLAT) (Farnell cat. no 1712385)</p></list-item><list-item><p id="P28">USB cable (2.0 A TO B 3M) (Farnell cat. no 2444242)</p></list-item></list>
+</p>
+        <p id="P29">Miscellaneous</p>
+        <p id="P30">Standard soldering equipment (soldering iron, solder, safety mat). NB: Ensure appropriate ventilation.</p>
+        <p id="P31">For activity recording and analysis <list list-type="simple" id="L4"><list-item><p id="P32">Individual cages</p></list-item><list-item><p id="P33">Recording PC. Recording PC (minimal computational requirements), with Arduino integrated development environment (IDE, versions 1.0.1-1.0.5 and 1.5.6- 1.6.11 tested, available at <ext-link xlink:href="http://arduino.cc/en/Main/Software" ext-link-type="uri">http://arduino.cc/en/Main/Software</ext-link>) and Processing (version 3.4 tested, available at <ext-link xlink:href="http://processing.org/" ext-link-type="uri">http://processing.org/</ext-link>) installed.</p></list-item><list-item><p id="P34">Analysis PC (for Python scripts). Running Python (2.7.11: <ext-link xlink:href="https://www.python.org/downloads/" ext-link-type="uri">https://www.python.org/downloads/</ext-link>) and Pycharms (<ext-link xlink:href="https://www.jetbrains.com/pycharm/" ext-link-type="uri">https://www.jetbrains.com/pycharm/</ext-link>). In Pycharms, install the following packages: Pandas 0.18.0; Numpy 1.10.4; Matplotlib 1.5.1; Seaborn 0.7.0.</p></list-item><list-item><p id="P35">Data analysis software: e.g. ClockLab (Actimetrics), Actogram J (<xref rid="R40" ref-type="bibr">Schmid et al 2011</xref>), Rethomics (<xref rid="R20" ref-type="bibr">Geissmann et al 2020</xref>), or a spreadsheet or data analysis package (e.g. Microsoft Excel, MatLab or R).</p></list-item><list-item><p id="P36"><italic toggle="yes">OPTIONAL:</italic> Light-tight environmentally-controlled chambers may be required for more controlled lighting conditions for circadian studies (<xref rid="R1" ref-type="bibr">Albrecht and Foster 2002</xref>; <xref rid="R26" ref-type="bibr">Jud et al 2005</xref>; <xref rid="R3" ref-type="bibr">Banks and Nolan 2011</xref>; <xref rid="R14" ref-type="bibr">Eckel-Mahan and Sassone-Corsi 2015</xref>).</p></list-item></list>
+</p>
+      </sec>
+      <sec id="S6">
+        <title>PIR sensor assembly</title>
+        <p id="P37">Please note that all circuit board diagrams are available (<xref rid="R10" ref-type="bibr">Brown et al 2017</xref>). Alternatively, circuit board details can also be found at: <ext-link xlink:href="http://users.ox.ac.uk/&#x2DC;anat0144/COMPASS_updates.html" ext-link-type="uri">http://users.ox.ac.uk/˜anat0144/COMPASS_updates.html</ext-link>
+<list list-type="order" id="L5"><list-item><p id="P38">Insert the resistors, the RJ12 jack and the PIR module through the PIR board (<xref rid="F2" ref-type="fig">Figure 2A</xref>) in the marked locations and pull tight by twisting the wire ends or bending the wire legs apart on the other side (<xref rid="F2" ref-type="fig">Figures 2B-E</xref>).</p><p id="P39"><italic toggle="yes">RJ11 and RJ12 connections use the same size plug, but RJ11 uses 4 channels whereas RJ12 uses 6. This system requires only 4 channels (RJ11) but RJ12 plugs and sockets can be used interchangeably. As the cable is 6 channels, RJ12 is used throughout the protocol</italic>.</p></list-item><list-item><p id="P40">Carefully solder all holes where connections come through. Check there are no loose components or connections (check both sides of the board and fix with more solder if needed). Tidy by removing loose wires with tin snips, just beyond the soldered points.</p><p id="P41">CAUTION: <italic toggle="yes">Ensure that appropriate ventilation is available during soldering</italic></p></list-item><list-item><p id="P42">Insert a 10 k resistor and 2-pin header to any board that will have and LDR mounted (<xref rid="F2" ref-type="fig">Figure 2F-G</xref>).</p></list-item><list-item><p id="P43">Solder resistor/header into place.</p></list-item><list-item><p id="P44">Run final checks for loose connections or missing components and add LDRs if needed. Ensure the wire legs of the LDR do not cross using heat-shrink tubing or tape.</p><p id="P45"><italic toggle="yes">OPTIONAL: If using a case to house the PIR unit, it can be placed inside, ensuring that the sensor is unobscured</italic>.</p></list-item></list></p>
+      </sec>
+      <sec id="S7">
+        <title>Main board assembly</title>
+        <p id="P46">The main board involves a simple circuit board that collects inputs from up to 6 PIR sensors to the Arduino microprocessor. <list list-type="simple" id="L6"><list-item><label>6.</label><p id="P47">Mount the headers to the underside of the main board (<xref rid="F3" ref-type="fig">Figure 3A</xref>) and carefully solder in place (<xref rid="F3" ref-type="fig">Figures 3B-C</xref>).</p><p id="P48"><italic toggle="yes">These headers allow the connection of the individual PIR sensors via standard RJ12 connector plugs</italic>.</p></list-item><list-item><label>7.</label><p id="P49">Mount the RJ12 connectors to the other side of the board and solder these in place (<xref rid="F3" ref-type="fig">Figures 3D-E</xref>).</p></list-item><list-item><label>8.</label><p id="P50">If using the Arduino case, fit the Arduino Uno microcontroller into the lower half of the case (a small section of the case either side of the existing hole may need to be removed to mount the board flat to the case).</p></list-item><list-item><label>9.</label><p id="P51">Insert the jumper cables into the correct pins of the microcontroller (start with GND (black) and 5V (red)) (<xref rid="F3" ref-type="fig">Figure 3F</xref>).</p><p id="P52"><italic toggle="yes">Additional information regarding these connections can be found in the original publication</italic> (<xref rid="R10" ref-type="bibr">Brown et al., 2017</xref>).</p></list-item><list-item><label>10.</label><p id="P53">Mount the remaining jumper wires with A2 for the LDR and digital pins 2 to 8 for the 6 PIR sensors.</p><p id="P54"><italic toggle="yes">Pin 4 is not used because this setup was designed to allow that to be used for other add-ons</italic></p></list-item><list-item><label>11.</label><p id="P55">Run the other ends of the jumper wires through the hole in the case and into the headers on the main board (PIR 1-6 from one end, + and – for power in the middle, then LDR pins. LDR pin for PIR sensor 1 is closest to the power pins) (<xref rid="F3" ref-type="fig">Figure 3F</xref>).</p></list-item><list-item><label>12.</label><p id="P56">Close the case and secure the main board to the front of the Arduino case. This can be achieved with any suitable adhesive (<xref rid="F3" ref-type="fig">Figure 3G</xref>).</p><p id="P57"><italic toggle="yes">For clarity, the connections between the main board and Arduino are shown in more detail in</italic>
+<xref rid="F4" ref-type="fig">Figure 4</xref>.</p></list-item></list></p>
+      </sec>
+      <sec id="S8">
+        <title>Arduino box setup</title>
+        <p id="P58">
+<list list-type="simple" id="L7"><list-item><label>13.</label><p id="P59">Connect each of the PIR sensors to the main board using RJ12 cables. Please note that the PIR sensor attached to the LDR needs to go into the ‘PIR1’ port. Connect the main board to the recording PC via the USB connection.</p></list-item><list-item><label>14.</label><p id="P60">Download and install the Arduino integrated development environment (IDE) on the data collection PC (<ext-link xlink:href="http://www.arduino.cc/en/main/software" ext-link-type="uri">www.arduino.cc/en/main/software</ext-link>). Open the IDE once installed.</p></list-item><list-item><label>15.</label><p id="P61">Load the 6chan_arduino.ino configuration sketch (sketch can be found in the repository here: <ext-link xlink:href="https://zenodo.org/record/3838998#.Xsei3ndFwjY" ext-link-type="uri">https://zenodo.org/record/3838998#.Xsei3ndFwjY</ext-link>) in the IDE.</p></list-item><list-item><label>16.</label><p id="P62">In the tools tab of the IDE, confirm that the correct board and port are selected.</p></list-item><list-item><label>17.</label><p id="P63">Test the PIR sensors using the ‘Serial Monitor’ found in the tools tab of the IDE. Check the Serial Baud Rate (bottom right of Serial Monitor window) matches that in the Sketch, so that they are communicating at the same speed. This Output from the Serial Monitor will confirm that readings are being taken from the sensors every 10 seconds.</p></list-item><list-item><label>18.</label><p id="P64">Close the Arduino IDE before trying to access serial data through Processing.</p></list-item></list>
+</p>
+      </sec>
+      <sec id="S9">
+        <title>Processing setup</title>
+        <list list-type="simple" id="L8">
+          <list-item>
+            <label>19.</label>
+            <p id="P65">Close the IDE and open Processing.</p>
+          </list-item>
+          <list-item>
+            <label>20.</label>
+            <p id="P66">The activity_monitor_P3_update.pde sketch used by Processing can be found in the repository here: <ext-link xlink:href="https://zenodo.org/record/3838998#.Xsei3ndFwjY" ext-link-type="uri">https://zenodo.org/record/3838998#.Xsei3ndFwjY</ext-link>. Load the .pde sketch in Processing. Within the sketch confirm that the ‘port index’ is to the COM port specified by the IDE.</p>
+          </list-item>
+          <list-item>
+            <label>21.</label>
+            <p id="P67">Press the ‘play’ icon on the Processing sketch to begin a test recording. While recording, Processing opens a new window showing the activity data recorded by each sensor for both the previous hour and the previous 24 hours.</p>
+          </list-item>
+          <list-item>
+            <label>22.</label>
+            <p id="P68">Prior to commencing actual experiments, the Processing window read out should be used to test that the field of each PIR sensor covers the entire base of the cage and that there is no cross contamination between sensors. The Arduino IDE ‘Serial Monitor’ can also be used for this purpose.</p>
+          </list-item>
+          <list-item>
+            <label>23.</label>
+            <p id="P69">The recording can be stopped by either pressing ‘X’ or by closing the window showing the individual PIR channels.</p>
+          </list-item>
+          <list-item>
+            <label>24.</label>
+            <p id="P70">Once the system has been built and tested, it can then be transferred to the animal facility ready to use.</p>
+          </list-item>
+        </list>
+      </sec>
+      <sec id="S10">
+        <title>Recording animal activity</title>
+        <p id="P71">
+<list list-type="simple" id="L9"><list-item><label>25.</label><p id="P72">Position each PIR sensor 220mm above the cage floor. <disp-quote id="Q1"><p id="P73">If there are no convenient fittings from which the sensors can be suspended, frames can be constructed from which the sensors can be mounted. However the sensors are mounted, care should be taken that they are stable, as any movement from cage changes or mechanical vibrations will be detected as mouse movement during analysis. Be careful to ensure that the PIR sensor does not obscure the cage lighting.</p></disp-quote>
+</p></list-item><list-item><label>26.</label><p id="P74">Prepare animal cages for recording (minimal bedding, locations in which the PIR sensor will be obscured are blocked to animal entry).</p></list-item><list-item><label>27.</label><p id="P75">When ready to commence the experimental recording, singly house each animal in a cage with a PIR sensor positioned above (as described above). <disp-quote id="Q2"><p id="P76">Ensure that there are no areas of the cage where the animal will be out of range of the sensor. For example, in many cages, the area under the food hopper may need to be blocked off. We normally use Perspex blocks, which are cheap and easy to clean (always make sure there are no sharp edges). Always ensure that animals have sufficient cage space, as set out by local regulations. We normally use larger cages for long-term circadian and sleep studies. In addition, nesting material may need to be reduced to prevent the animal being obscured. We have found that Nestlets work well. Other environmental enrichment may be included if it does not obscure the animal. For example, using wooden chew blocks or forage mix would not pose a problem, but Perspex mouse houses or cardboard tubes would not be suitable.</p></disp-quote>
+</p></list-item><list-item><label>28.</label><p id="P77">When ready, open Processing and begin the recording by pressing the play icon.</p><p id="P78"><italic toggle="yes">OPTIONAL: PIR recordings can also be performed in group housed conditions. Such recordings can be used to analyse activity patterns at a whole cage level, but cannot distinguish individuals within the cage. Care must therefore be taken in the interpretation of group housed data</italic>.</p></list-item></list>
+</p>
+      </sec>
+      <sec id="S11">
+        <title>Experimental recording and data collection</title>
+        <list list-type="simple" id="L10">
+          <list-item>
+            <label>29.</label>
+            <p id="P79">Record data for at least 5 days under a 12h light/12h dark cycle.</p>
+            <p id="P80"><italic toggle="yes">During this time, perform daily visual checks of mice and top up food and water as necessary (in accordance with local regulations). During these checks, minimise any disruption of animals and movement of the cage. If cages are moved following animal checks, this can lead to inconsistent data. If cages must be moved to enable animal checks, care should be taken that the cages are returned to the same position as before. If necessary guides or runners can be installed to assist cage return in the same location, though this is usually less of a problem when normal animal cage racks are used</italic>.</p>
+          </list-item>
+          <list-item>
+            <label>30.</label>
+            <p id="P81">Once the screening period had ended, if necessary remove mice from cages (and cabinets if used) and end the recording on the computer.</p>
+          </list-item>
+          <list-item>
+            <label>31.</label>
+            <p id="P82">The data will be saved as a .csv file in the same folder as the Processing file.</p>
+            <p id="P83"><italic toggle="yes">The activity data will be recorded in 10 second bins in the following the columns: column 1: time bin; column 2: Arduino ID; column 3 onwards: data from individual PIR sensors. Note that the .csv is updated in real time. It is therefore possible to take a copy of the .csv data file for analysis at any time while leaving the screen running. In this way initial analyses can be performed and the ongoing screening conditions updated based upon the results of the initial analysis</italic>.</p>
+          </list-item>
+        </list>
+      </sec>
+      <sec id="S12">
+        <title>Data analysis</title>
+        <p id="P84">Data analysis can be performed using the raw data found in the .csv file. Basic data analysis can be performed using any spreadsheet or data analysis package (such as Microsoft Excel, MatLab or R), or using commercially available circadian analysis tools such as ClockLab (Actimetrics) or freely-available alternatives such as ActogramJ (<xref rid="R40" ref-type="bibr">Schmid et al 2011</xref>). We have provided several analytical tools for Python, which we describe the use of below. <list list-type="simple" id="L11"><list-item><label>32.</label><p id="P85">On the analysis computer, open the Pycharm program and open the following Python scripts in Pycharm: settings.py; binning.py; sleep_bout_lengths.py; sleep_counting.py (<ext-link xlink:href="https://github.com/MRC-Harwell/sleep-tracking/tree/master/scripts" ext-link-type="uri">https://github.com/MRC-Harwell/sleep-tracking/tree/master/scripts</ext-link>).</p></list-item><list-item><label>33.</label><p id="P86">In the ‘settings’ script, set the following options: set where the output files are to be stored in the ‘outdir’ line (line 8); set the .csv data file location and name in the ‘data path’ line (line 11); set the date and time period across which the analysis is to be performed using the ‘time_start’ and ‘time_end’ lines (time and date format = “YYYY-MM-DD HH:MM:SS”) (lines 25 and 26).</p><p id="P87"><italic toggle="yes">The Python scripts provided can be used for analyses as described below</italic>.</p></list-item><list-item><label>34.</label><p id="P88">In all cases an output .csv file is generated in which the first column is the specified time bin and the subsequent columns are the re-binned data from each PIR sensor. In the case of the binning.py script the final column shows the light data from the LDR.</p><p id="P89"><italic toggle="yes">Users are encouraged to generate analysis techniques best suited to their specific needs. Additionally, please see the STATISTICAL ANALYSIS section below regarding how best to fully understand and analyse this data</italic>.<list list-type="simple" id="L12"><list-item><label>a)</label><p id="P90"><bold>Change the bin size of the activity data</bold>: While the .csv data file gives activity data, it is in 10 second time bins. This can produce a very large number of data points that can be very unwieldy to analyse. The binning.py script allows the user to change the size of the time bins to alternative bin sizes (e.g. 60 mins). The output bin size (in minutes) is specified the settings.py script (line 16).</p></list-item><list-item><label>b)</label><p id="P91"><bold>Convert the activity data into sleep data</bold>: When the PIR senor is positioned as described above, immobility bouts of 40 seconds or more are highly correlated with time spent asleep (<xref rid="R10" ref-type="bibr">Brown et al 2017</xref>). The sleep_counting.py script extracts periods of zero movement for 40 seconds or more to give a measure of the time spent in immobility defined sleep. The time bins in which this data is returned is specified in the sleep_counting.py script (line 13).</p></list-item><list-item><label>c)</label><p id="P92"><bold>Change the activity data into sleep bout data</bold>: The period between the onset of a sleep episode and the subsequent waking is defined as a sleep bout. Sleep bout analysis will give a measure of sleep fragmentation, which is usually apparent as an increase in the number of short bouts. The sleep_bout_lengths.py script will produce two different outputs. The sleep_bout_length .csv file returns the mean length of the sleep bouts in time bins specified in the settings.py script (line 22). The sleep_bin_counts_by_pir folder returns .csv files of the total number of sleep bouts of different lengths in bins of one minute, up to 15 minutes. There will be a different .csv for each 12 hour period analysed.</p><p id="P93"><italic toggle="yes">OPTIONAL: All three scripts can be run as one combined script. The run_sleep_scripts.py script will run the three scripts described above, with the options for this running set in the sleep.toml script (both scripts can be found at <ext-link xlink:href="https://github.com/MRC-Harwell/sleep-tracking/" ext-link-type="uri">https://github.com/MRC-Harwell/sleep-tracking/</ext-link>)</italic>.</p></list-item></list></p></list-item></list></p>
+      </sec>
+      <sec id="S13">
+        <title>Alternate Protocol</title>
+        <sec id="S14">
+          <title>Data collection using Raspberry Pi</title>
+          <p id="P94">An obvious limitation of the system outlined in the basic protocol above is the requirement of one laptop for every 6 PIR channels. Whilst this may not be a consideration for screening small numbers of animals, for large-scale screening involving tens or even hundreds of cages, using one laptop for every 6 cages is very cumbersome and often impractical. As such, an alternative to using a laptop is the use of a low cost single-board computer such as a Raspberry Pi. Raspberry Pi boards are much cheaper and smaller than laptops and can easily be integrated into the PIR system to continuously upload data to online resources such as Dropbox. There are a wealth of online resources for working with Raspberry Pi units (<ext-link xlink:href="https://www.raspberrypi.org/" ext-link-type="uri">https://www.raspberrypi.org/</ext-link>) and Processing is also an option here (<ext-link xlink:href="https://pi.processing.org/" ext-link-type="uri">https://pi.processing.org/</ext-link>). As such, the authors recommend that users consider such alternatives depending upon their experimental requirements. This alternate protocol uses Node-RED (<ext-link xlink:href="https://nodered.org/" ext-link-type="uri">https://nodered.org/</ext-link>), a simple and low-code system.</p>
+        </sec>
+      </sec>
+      <sec sec-type="materials" id="S15">
+        <title>Materials</title>
+        <p id="P95">Raspberry Pi kit (including board, case and power supply; Raspbian operating system) (Farnell cat no RPI3-MODBP-STARTER).</p>
+        <p id="P96">HDMI-capable monitor (or adapter), keyboard and mouse for initial set up of the Pi system. If required/preferred, these can be removed following set up.</p>
+        <sec id="S16">
+          <title>Sample Data (incorporated into the protocol steps)</title>
+          <p id="P97">
+<list list-type="order" id="L13"><list-item><p id="P98">With the Raspberry Pi connected to a monitor, keyboard and mouse, install and set up Node-RED on the Raspberry Pi (details for this can be found here: <ext-link xlink:href="https://nodered.org/docs/getting-started/raspberrypi" ext-link-type="uri">https://nodered.org/docs/getting-started/raspberrypi</ext-link>).</p></list-item><list-item><p id="P99">Once the web interface for Node RED is available install the ‘thethingbox-node-timestamp’ node via the 'manage pallete' option on the web page.</p></list-item><list-item><p id="P100">If remote backup of data to Dropbox is required, install the ‘node-red-node-dropbox.’</p></list-item><list-item><p id="P101">Import the ‘COMPASS_Arduino string to .csv’ flow onto the Pi (the flow can be found at <ext-link xlink:href="https://flows.nodered.org/flow/70424972bc835ead155e3264f7d100b1" ext-link-type="uri">https://flows.nodered.org/flow/70424972bc835ead155e3264f7d100b1</ext-link>).</p></list-item><list-item><p id="P102">If remote backup of data to Dropbox is required, install the ‘COMPASS_backup to Dropbox’ flow (<ext-link xlink:href="https://flows.nodered.org/flow/5d825ee3fd1194398cc3bb57fdc79745" ext-link-type="uri">https://flows.nodered.org/flow/5d825ee3fd1194398cc3bb57fdc79745</ext-link>).</p></list-item><list-item><p id="P103">Assemble and set up the PIR sensors as described in steps 1 to 4 of the basic protocol above.</p></list-item><list-item><p id="P104">Connect the main board to the Pi unit and find the connected unit by opening the serial node in the web interface. Data from the serial port can be checked using a debug node and reading the messages.</p></list-item><list-item><p id="P105">The flow can be duplicated for more than one Arduino base unit and Node-RED provides a wealth of other options for local and remote storage as well as other sensors.</p></list-item></list>
+</p>
+        </sec>
+      </sec>
+      <sec id="S17">
+        <title>Support Protocol</title>
+        <sec id="S18">
+          <title>Circadian analysis using PIR sensors</title>
+          <p id="P106">The protocol described below provides a standard circadian phenotyping screen. We and others have previously published detailed guidelines for circadian analysis of mice (<xref rid="R1" ref-type="bibr">Albrecht and Foster 2002</xref>; <xref rid="R26" ref-type="bibr">Jud et al 2005</xref>; <xref rid="R3" ref-type="bibr">Banks and Nolan 2011</xref>; <xref rid="R14" ref-type="bibr">Eckel-Mahan and Sassone-Corsi 2015</xref>; <xref rid="R24" ref-type="bibr">Hughes et al., 2015</xref>; <xref rid="R11" ref-type="bibr">Brown et al., 2019</xref>). Please refer to these protocols for more comprehensive guidance of circadian protocols and materials. Be aware that a detailed circadian screen using different light/dark protocols will require the use of light-tight chambers with independent lighting control.</p>
+        </sec>
+      </sec>
+      <sec sec-type="materials" id="S19">
+        <title>Materials</title>
+        <p id="P107">See Basic Protocol <list list-type="order" id="L14"><list-item><p id="P108">Follow the steps outlined in the basic protocol above, with PIR sensors (one above each cage) in a light-tight environmentally controlled chamber with independent lighting control.</p></list-item><list-item><p id="P109">Singly house mice and place cages into the chamber, ensuring that there are no regions of the cage blocked from the PIR sensor that the mouse can access (see Basic Protocol Steps 25 to 27).</p></list-item><list-item><p id="P110">Once all cages are in position, close the cabinet and start the PIR recording, as described in the basic protocol step 28.</p></list-item><list-item><p id="P111">Set the lighting timers of the circadian cabinets to those required by the experiment.</p><p id="P112"><italic toggle="yes">For a basic circadian analysis we recommend 7 to 14 days in a 12h light/12h dark cycle, followed by 10 to 14 days in constant darkness to assess free running period</italic>.</p><p id="P113"><italic toggle="yes">Alternatively, more detailed protocols including phase shifting light pulses or conditions known to result in circadian disruption may be used</italic> (<xref rid="R1" ref-type="bibr">Albrecht and Foster 2002</xref>; <xref rid="R26" ref-type="bibr">Jud et al 2005</xref>; <xref rid="R3" ref-type="bibr">Banks and Nolan 2011</xref>; <xref rid="R14" ref-type="bibr">Eckel-Mahan and Sassone-Corsi 2015</xref>; <xref rid="R24" ref-type="bibr">Hughes et al., 2015</xref>; <xref rid="R11" ref-type="bibr">Brown et al., 2019</xref>).</p></list-item><list-item><p id="P114">During recording ensure a light-controlled environment is maintained and that cage disturbance is kept to a minimum (see Basic Protocol).</p></list-item><list-item><p id="P115">Always include an LDR on at least one PIR sensor to monitor the light environment throughout the study.</p></list-item><list-item><p id="P116">After the completion of the recording, remove the mice from the circadian cabinets and stop and close the recording software.</p></list-item><list-item><p id="P117">Convert the .csv data file produced by the recording into an .awd file which can be read by the Clocklab circadian analysis software (Actimetrics). This can be achieved by running the binning.py script, setting the output bin size to 1 minute. The re-binned data file will display the data for each sensor in a different column in one minute bins.</p></list-item><list-item><p id="P118">Open the .awd template file (<ext-link xlink:href="https://github.com/MRC-Harwell/sleep-tracking/tree/master/data" ext-link-type="uri">https://github.com/MRC-Harwell/sleep-tracking/tree/master/data</ext-link>) in Notebook (note that a new .awd file must be created for each animal to be analysed). Fill in the additional fields as noted in lines 1,2,3,5 and 7. Paste the data for the specified animal starting from line 8 (below the ‘sex’ field), with each data point on a new line. Save this with an .awd extension. Note that the repository link above also includes an example .awd file that can be compared to the template and used as a guide for data entry.</p></list-item><list-item><p id="P119">Alternatively, using a text editor such as Notebook, simply add the following 7 line header before the data: <list list-type="order" id="L15"><list-item><p id="P120">NAME</p></list-item><list-item><p id="P121">START DATE (dd-mon-yyyy), where the month uses stardard 3-letter abbreviations (lower case)</p></list-item><list-item><p id="P122">START TIME (24 hour) Always is 2 digits for both hour and minute, as in 04:20</p></list-item><list-item><p id="P123">INTERVAL (sample interval, or the time between data points, in minutes multiplied by 4)</p></list-item><list-item><p id="P124">AGE (fill in any number just as a place holder, it will be ignored)</p></list-item><list-item><p id="P125">ID (also ignored, put in something random as a place holder)</p></list-item><list-item><p id="P126">SEX (ignored)</p></list-item></list></p><p id="P127">Following this header, just put the data points one after another, one number per line. Finally, give the file the extension ".AWD". The file can now be read by Clocklab and analysed following program instructions.</p><p id="P128">An example is provided below: <list list-type="order" id="L16"><list-item><p id="P129">Taconic2</p></list-item><list-item><p id="P130">21-nov-2000</p></list-item><list-item><p id="P131">00:00</p></list-item><list-item><p id="P132">24</p></list-item><list-item><p id="P133">0</p></list-item><list-item><p id="P134">9wild</p></list-item><list-item><p id="P135">M</p></list-item><list-item><p id="P136">253 (First data point)</p><p id="P137"><italic toggle="yes">OPTIONAL: Open source circadian analysis software such as ActogramJ (<xref rid="R40" ref-type="bibr">Schmid et al 2011</xref>) or Rethomics</italic> (<xref rid="R20" ref-type="bibr">Geissmann et al 2020</xref>) <italic toggle="yes">can also be used for circadian analysis. The activity data generated by protocols described here can be used directly in such programs following the program instructions. However it may still be advantageous to re-bin the raw data for ease of use</italic>.</p></list-item></list></p></list-item></list></p>
+      </sec>
+    </sec>
+    <sec id="S20">
+      <title>Commentary</title>
+      <sec id="S21">
+        <title>Background information</title>
+        <p id="P138">Circadian rhythms are approximately 24h cycles of physiology and behaviour that optimise internal biology to the varying demands of day and night. Whilst gene expression, cognition, cardiovascular function, digestion, hormone synthesis and body temperature all show robust circadian rhythms (<xref rid="R38" ref-type="bibr">Rijo-Ferreira and Takahashi 2019</xref>), perhaps the most recognisable circadian rhythm is that of activity and rest. In mammals, circadian rhythms in activity are regulated by a master circadian pacemaker located in the suprachiasmatic nuclei (SCN) of the anterior hypothalamus. The SCN receives light input from the retina, entraining the endogenous biological clock to the external light/dark cycle (<xref rid="R37" ref-type="bibr">Reppert and Weaver, 2002</xref>). However, sleep is not a simple output of the circadian system. Whilst the circadian system contributes to the regulation of the timing of sleep and wake, sleep is also regulated by a homeostatic process which increases the propensity for sleep with extended wakefulness. These circadian and homeostatic processes interact to determine the amount and distribution of sleep across the 24h cycle (<xref rid="R8" ref-type="bibr">Borbely 1982</xref>; <xref rid="R9" ref-type="bibr">Borbely et al., 2016</xref>). There is an increasing appreciation that circadian rhythms and sleep are essential for normal healthy physiology. Sleep and circadian rhythm disruption results in numerous deleterious effects, and is also associated with a range of conditions, including neurological and metabolic disease as well as aging (<xref rid="R6" ref-type="bibr">Bechtold et al., 2010</xref>; <xref rid="R22" ref-type="bibr">Hastings et al, 2003</xref>; <xref rid="R25" ref-type="bibr">Jagannath et al., 2013</xref>; <xref rid="R46" ref-type="bibr">West and Bechtold, 2015</xref>; <xref rid="R48" ref-type="bibr">Wulff et al., 2010</xref>; <xref rid="R4" ref-type="bibr">Banks et al., 2015</xref>).</p>
+        <p id="P139">Laboratory mice provide a versatile animal model for the study of circadian rhythms and sleep. Both the genetic and neuronal circuits regulating these processes are conserved between mice and other mammals, including humans (<xref rid="R28" ref-type="bibr">Lo et al 2004</xref>; <xref rid="R45" ref-type="bibr">Weiergraber et al 2005</xref>). EEG studies of sleep have also demonstrated that the structure of sleep and the composition of characteristic frequencies of neuronal activity are also largely conserved between mice and humans (<xref rid="R18" ref-type="bibr">Fuller et al., 2006</xref>). Additionally, mice show the same associations between sleep and circadian rhythm disturbances and metabolic or cognitive disruptions as have been shown to occur in humans (<xref rid="R16" ref-type="bibr">Fisk et al., 2018</xref>). While such evidence demonstrates the power of the mouse as a model for understanding conserved processes, a number of practical considerations also make the mouse a useful model in the study of circadian and sleep function. Studies of long term sleep and circadian rhythm disruption (such as repeated jetlag or sleep deprivation) which would be practically and ethically challenging to perform in humans can readily be studied in mice. Critically, genetically modified mice provide an ever-expanding resource to understanding the molecular mechanisms underlying these biological processes. Repositories of genetically modified mice have been successfully utilised for large scale screens for sleep and circadian phenotypes (<xref rid="R32" ref-type="bibr">Parsons et al 2015</xref>; <xref rid="R5" ref-type="bibr">Banks et al 2018</xref>; <xref rid="R34" ref-type="bibr">Potter et al 2016</xref>; <xref rid="R19" ref-type="bibr">Funato et al 2016</xref>; <xref rid="R50" ref-type="bibr">Zhang et al 2020</xref>). In addition, methods such as gene editing allow the role of specific human mutations to be studied in mice to establish their role in sleep or circadian rhythms (<xref rid="R27" ref-type="bibr">Kurien et al 2019</xref>). Finally, techniques such as conditional and inducible gene targeting as well as optogenetics allow researchers to generate increasingly specific spatial and temporal genetic models as well as enabling the study of specific neuronal circuits in sleep and circadian biology (<xref rid="R47" ref-type="bibr">Wilcox et al 2017</xref>; <xref rid="R49" ref-type="bibr">Yang et al 2016</xref>).</p>
+        <p id="P140">Historically, a range of methods have been used to analyse circadian activity and sleep in mice. Of the two parameters, activity is the easiest to measure over long time periods. The most common activity measure has been to use cages equipped with running wheels. Mice, when housed with free access to a wheel, will spend the majority of the active phase of their daily cycle running on the wheel. Running wheel activity can be monitored via a micro-switch attached to the wheel, and saved to a local computer to give a measure of activity over time (<xref rid="R1" ref-type="bibr">Albrecht and Foster 2002</xref>; <xref rid="R26" ref-type="bibr">Jud et al 2005</xref>; <xref rid="R3" ref-type="bibr">Banks and Nolan 2011</xref>; <xref rid="R14" ref-type="bibr">Eckel-Mahan and Sassone-Corsi 2015</xref>). While wheel running screens are robust and relatively inexpensive, they only give a measure of one aspect of home cage activity. If the animal is feeding, grooming or in a state of quiet wakefulness, no activity will be detectable even though the animal is clearly still awake and active. For this reason, running wheel data alone does not provide a reliable indicator of sleep. Instead, the gold standard methodology for the assessment of sleep is electroencephalography (EEG) combined with electromyography (EMG) (<xref rid="R28" ref-type="bibr">Lo et al 2004</xref>; <xref rid="R45" ref-type="bibr">Weiergraber et al 2005</xref>). EEG/EMG provides a detailed breakdown of sleep structure, enabling rapid eye movement (REM) and non-rapid eye movement (NREM) – also known as slow-wave sleep (SWS) - to be measured. Moreover, it also allows spectral analysis of the specific frequencies of neuronal activity to be assessed. However, EEG/EMG requires the surgical implantation of electrodes. As such, non-invasive behavioural phenotyping methods can provide a valuable preliminary screen prior to focused EEG/EMG studies, as well as providing an ideal tool for high-throughput genetic screens. Sleep is also frequently disrupted in response to injury of infection, but as measuring sleep has typically necessitated invasive measures, sleep is rarely used as a biomarker of animal health or disease progression.</p>
+        <p id="P141">In mice, periods of extended immobility of 40 seconds or more are highly correlated with sleep (<xref rid="R31" ref-type="bibr">Pack et al 2007</xref>). This enables researchers to conduct non-invasive behavioural phenotyping of both sleep and activity in the same animals (<xref rid="R15" ref-type="bibr">Fisher et al 2012</xref>). While behavioural sleep scoring cannot distinguish between REM and NREM sleep, it can be used to rapidly measure the amount and distribution of sleep over multiple cycles (<xref rid="R4" ref-type="bibr">Banks et al 2015</xref>; <xref rid="R23" ref-type="bibr">Heise et al 2015</xref>). However, video tracking generates very large data files which presents issues for data storage and sharing – particularly for large scale screens. This data also requires specialist software for analysis and can be computationally intensive. The COMPASS technique we describe here relies upon the same behaviourally-defined sleep criteria as video tracking, and provides a comparable accuracy versus EEG/EMG scored sleep. A key difference is that the output data files are small and can be easily analysed in real time (<xref rid="R10" ref-type="bibr">Brown et al 2017</xref>). This enables days, weeks or even months of data to be easily collected, archived and shared. Additionally, the relative simplicity of the components means that PIR screening is both low-cost and can be assembled and run with minimal expertise in electronics or data processing. It is important to note that the COMPASS system was never intended to be a static or finalised methodology. The protocol outlined here should allow users to set up the basic equipment and make recordings in an animal house environment, but the system is extremely flexible and amenable to customisation. For example, temperature, noise or other environmental sensors can easily be incorporated. As such, we recommend that users adapt and modify the system to suit their own specific research requirements. Updates and modifications to the system - as well as additional guidance can be found online at: <ext-link xlink:href="http://users.ox.ac.uk/&#x2DC;anat0144/COMPASS_updates.html" ext-link-type="uri">http://users.ox.ac.uk/˜anat0144/COMPASS_updates.html</ext-link> and individual files are also available from: <ext-link xlink:href="https://zenodo.org/record/3838998#.Xsei3ndFwjY" ext-link-type="uri">https://zenodo.org/record/3838998#.Xsei3ndFwjY</ext-link>.</p>
+      </sec>
+      <sec id="S22">
+        <title>Critical Parameters:</title>
+        <sec id="S23">
+          <title>Electrical components</title>
+          <p id="P142">If unfamiliar with simple electronics, it is recommended that users familiarise themselves with the basics of soldering and assembly of electrical components. Guides for soldering are freely available online and should be consulted if the user is inexperienced with such techniques. It is also recommended that spare components are ordered to allow for practice and accidental damage. All components are relatively cheap, and this also provides a ready reserve should components need replacing. Following the construction of each circuit board, it is vital that each solder point is tested to ensure there are no loose connections. Additionally, care must be taken that soldered connections or wires do no cross (heat-shrink tubing or tape can be used if necessary). Finally, good crimp connections on cables or wires are essential for reliable recordings. Again, if necessary, additional components should be ordered to establish good practice. The inbuilt Arduino IDE Serial Monitor tool provides an ideal way of testing PIR sensors and light sensors are working properly prior to use in experiments and enables crosstalk between PIR channels to be easily detected during testing. These are most likely to occur due to soldered points being accidentally joined or crimp connectors being incorrectly attached (see Troubleshooting below).</p>
+        </sec>
+        <sec id="S24">
+          <title>Mouse age, sex and strain</title>
+          <p id="P143">Strain specific differences in both circadian rhythms and sleep have been demonstrated in a number of studies (<xref rid="R4" ref-type="bibr">Banks et al 2015</xref>; <xref rid="R21" ref-type="bibr">Hasan et al 2012</xref>). Therefore, when comparing cohorts of mice, the genetic background of the cohorts should be as closely matched as possible. The best comparison is between littermates, so if possible, use siblings for experimental and control groups. A number of studies provide background on the genetic and behavioural differences between mouse strains (<xref rid="R41" ref-type="bibr">Simon et al 2013</xref>). Such studies may also provide guidance of the most appropriate strain to use for particular studies. Age-related changes have also been reported for both activity rhythms and sleep (<xref rid="R4" ref-type="bibr">Banks et al 2015</xref>; <xref rid="R21" ref-type="bibr">Hasan et al 2012</xref>). In general, older animals show reduced activity and increased sleep with increasing fragmentation and variability. While older mice can still be used for analysis - and age-related phenotypes may be of interest - the increased variability in data may require larger cohort numbers or the use of within-subject longitudinal experimental designs. Finally, sex specific differences have been demonstrated in both circadian rhythms and sleep (<xref rid="R2" ref-type="bibr">Bailey and Silver 2014</xref>). Therefore, comparisons should be based upon mice of the same sex, and where possible, both male and female mice should be analysed to test for sex-dependent differences.</p>
+        </sec>
+        <sec id="S25">
+          <title>Disturbance</title>
+          <p id="P144">The measurment of both circadian rhythms and sleep demands as little disturbance from external sources as possible. Disturbance to the cage as well as noise, light or changes in temperature will all disturb animals, altering their behaviour and potentially resulting in stress which will influence both circadian activity and sleep. As mice are nocturnal, they are typically inactive and asleep during the day, when both technicians and scientists will be working. As such, daily animal checks should be performed with minimal disruption and cage changes should be minimised wherever possible within the necessary limits of local regulations. Where checks are conducted in the dark phase, use of dim red light is recommended to minimise potential circadian disruption (&gt;600nm wavelength and ideally &lt;1 lux or &lt;11.8 log quanta/cm<sup>2</sup>/s, <xref rid="R33" ref-type="bibr">Peirson et al., 2018</xref>). Unless required by the study (e.g. scheduled feeding), food and water should be accessible <italic toggle="yes">ad libitum</italic> to prevent entrainment to feeding regimes. The best method of minimising external disruption is the use of light-tight environmentally controlled chambers, as described elsewhere (<xref rid="R1" ref-type="bibr">Albrecht and Foster 2002</xref>; <xref rid="R26" ref-type="bibr">Jud et al 2005</xref>; <xref rid="R3" ref-type="bibr">Banks and Nolan 2011</xref>; <xref rid="R14" ref-type="bibr">Eckel-Mahan and Sassone-Corsi 2015</xref>).</p>
+        </sec>
+        <sec id="S26">
+          <title>Light source</title>
+          <p id="P145">Both circadian activity rhythms and sleep are extremely sensitive to light. A cool white light source generating a light intensity of 100-300 lux is standard for circadian entrainment, though mice are capable of responding to far lower light levels (<xref rid="R33" ref-type="bibr">Peirson et al., 2018</xref>). The use of light sources such as fluorescent or LED bulbs in dedicated circadian cabinets has been discussed elsewhere (<xref rid="R1" ref-type="bibr">Albrecht and Foster 2002</xref>, <xref rid="R26" ref-type="bibr">Jud et al 2005</xref>, <xref rid="R3" ref-type="bibr">Banks and Nolan 2011</xref>, <xref rid="R14" ref-type="bibr">Eckel-Mahan and Sassone-Corsi 2015</xref>). However, be aware that white light sources are not all equivalent. Despite their similar appearance to the human eye, different white light sources can be spectrally very different, and may exert differing visual and non-visual effects as well as appearing different to mice. As such, it is always recommended that the spectral power distribution of the light source is properly characterised in any circadian or sleep study (<xref rid="R29" ref-type="bibr">Lucas et al., 2014</xref>). Researchers should also be aware that if studies are conducted in procedure rooms or cage racks, care must be taken that the light intensity is the same across all cages being recorded. This is a particular issue when using standard laboratory mouse cage racks where the light intensity can vary dramatically due to cage position. However, even in light-tight environmentally controlled chambers light intensity can potentially vary between chambers and cage positions, which can be a source of systematic experimental bias.</p>
+        </sec>
+      </sec>
+      <sec id="S27">
+        <title>Troubleshooting</title>
+        <p id="P146">Common technical problems and likely solutions are provided below:</p>
+        <table-wrap position="anchor" id="T1">
+          <table frame="box" rules="all">
+            <thead>
+              <tr>
+                <th valign="top" align="left" rowspan="1" colspan="1">Steps</th>
+                <th valign="top" align="left" rowspan="1" colspan="1">Problem</th>
+                <th valign="top" align="left" rowspan="1" colspan="1">Possible solutions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">13-18</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Ardunio microcontroller board not recognized when plugged in</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Check Arduino IDE is open Attach board by USB cable<break/>Under Tools in IDE, check for correct board and port entries<break/>Unplug microcontroller and plug in again</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">19-21</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">No readout or saved file after running Processing sketch</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Close Arduino IDE<break/>Re-run Processing sketch<break/>Change the ‘portindex1 =’ value towards the top of the Processing sketch to match the designated port</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">1-12</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Output values are random values</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Check cable and sensor (if possible test replacements)<break/>Check all soldering connections</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">1-5 and 13</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Constant readings of 1 or 100</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">If on all sensors, ensure the RJ12 cable does not cross over<break/>If on a single sensor replace cable or sensor and check connections to main<break/>board and microcontroller</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">3, 10 and 11</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Failure to read environmental light via the LDR</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Ensure the face of the LDR faces the light source<break/>Ensure the legs of the LDR are not<break/>crossed and touching</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">27-29</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Changes of read quality following cage change or animal check</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Confirm that the PIR sensor has not been moved during the cage change<break/>Ensure that the cage has been returned to the same location relative to the sensor. If necessary, runners or guides can be installed to maintain correct cage<break/>placement</td>
+              </tr>
+              <tr>
+                <td valign="top" align="left" rowspan="1" colspan="1">32-34</td>
+                <td valign="top" align="left" rowspan="1" colspan="1">Failure to read .csv data file by Python scripts</td>
+                <td valign="top" align="justify" rowspan="1" colspan="1">Confirm that the file location designated in the settings.py script includes the .csv extension in the filename<break/>Confirm that all data in the .csv is numerical. Any non-numerical data should be removed from the file<break/>If being read and saved by Windows, the<break/>.csv file can initially be saved in such a way that it cannot be read by python scripts. If so, open the .csv file in excel<break/>and resave before reading in Python</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+      </sec>
+      <sec id="S28">
+        <title>Statistical Analysis</title>
+        <p id="P147">The statistical methods used to analyse the data generated in PIR experiments will depend upon the specific hypothesis under investigation and the experimental design. For example, where gross differences in activity or sleep under a 12h light/12h dark cycle are of interest, a simple comparison between total day-time and night-time activity and sleep counts may be sufficient. Such data can be analysed by simple ANOVA or Students t-test, with 2-way ANOVAs where control vs treated or wildtype vs knockout designs are used. However, as PIR recordings allow longitudinal data to be analysed over time, the distribution of activity or sleep over one or more days may provide considerably more data. Such data are amenable to analysis using repeated measures ANOVA. In many cases, the primary circadian and sleep literature provide a rich resource to help plan experiments, as well as to obtain measurements of variance to allow power calculations to determine the necessary sample size.</p>
+        <p id="P148">As described above, light exerts profound effects on both activity and sleep in mice. The lighting environment of the cage should therefore be taken into consideration when conducting any form of analysis. Light and dark phase data should be considered separately, as the behaviour of animals will differ markedly between these conditions. Additionally, if unexpected light changes are evident on the lighting channel data may need to be excluded from the analysis. The response of mice to different lighting conditions provides additional critical data regarding different aspects of circadian function, for which the reader is referred elsewhere (<xref rid="R24" ref-type="bibr">Hughes et al., 2015</xref>).</p>
+        <p id="P149">Circadian researchers have developed a wide range of detailed methods for analysing activity rhythm data, particularly for the measurement of circadian period (<xref rid="R35" ref-type="bibr">Refinetti 1993</xref>; <xref rid="R36" ref-type="bibr">Refinetti et al 2007</xref>; <xref rid="R51" ref-type="bibr">Zielinski et al., 2014</xref>). Commercial analysis programs such as ClockLab (Actimetrics) provide user-friendly methods of analysing circadian data, including period estimates, activity onsets and phase shifting. Alternatively, similar analyses can be performed using open source software. For example, ActogramJ can perform a range of periodogram analyses (<xref rid="R40" ref-type="bibr">Schmid et al 2011</xref>), as can online resources such as the Circadian Rhythm Laboratory (<ext-link xlink:href="https://www.circadian.org/softwar.html" ext-link-type="uri">https://www.circadian.org/softwar.html</ext-link>) or BioDare 2 (<ext-link xlink:href="https://biodare2.ed.ac.uk/" ext-link-type="uri">https://biodare2.ed.ac.uk/</ext-link>, <xref rid="R51" ref-type="bibr">Zielinski et al., 2014</xref>). Finally, disruption of circadian rhythms and sleep can be assessed using a range of different measures (<xref rid="R11" ref-type="bibr">Brown et al., 2019</xref>), including interdaily stability (IS) and intradaily variability (IV) (<xref rid="R43" ref-type="bibr">Van Someren et al 1999</xref>), implementations of which are also available as online R scripts (<xref rid="R7" ref-type="bibr">Blume et al 2016</xref>).</p>
+      </sec>
+      <sec id="S29">
+        <title>Understanding Results</title>
+        <disp-quote id="Q3">
+          <p id="P150">“It seems that many researchers think that circadian biology involves simply placing a mouse in a cage with a running wheel and watching papers fall out the other end”</p>
+          <attrib>- Anonymous</attrib>
+        </disp-quote>
+        <p id="P151">Although measuring the levels of home cage activity and sleep using the PIR system described herein is relatively straightforward, as in all research areas the interpretation of data often depends upon a detailed understanding of the underlying biology. The interpretation of results from different types of circadian analyses have been described in detail elsewhere (<xref rid="R1" ref-type="bibr">Albrecht and Foster 2002</xref>; <xref rid="R26" ref-type="bibr">Jud et al 2005</xref>; <xref rid="R3" ref-type="bibr">Banks and Nolan 2011</xref>; <xref rid="R14" ref-type="bibr">Eckel-Mahan and Sassone-Corsi 2015</xref>; <xref rid="R24" ref-type="bibr">Hughes et al., 2015</xref>). While PIR circadian recordings will generate comparable data to wheel running screens, users should also be aware that some differences will exist. As PIR sensors detect all animal movement rather than just voluntary running wheel activity, in our experience greater activity will be observed during the inactive light phase, activity is often less consolidated and there may be a greater day-to-day variability in PIR data when compared to wheel running data.</p>
+        <p id="P152">An example of activity, sleep duration and sleep bout data generated from a wildtype C57BL/6N animal in a standard 12h light/12h dark cycle is shown in <xref rid="F5" ref-type="fig">Figure 5</xref>. In the light phase, mice spend ˜70% of their time asleep. While the animal will show some activity during the light phase, this will be much lower. The length of the sleep bouts of an animal also shows high variability across a day. However, in general sleep in the light phase consists of fewer, longer bouts than sleep in the dark phase. Notably, previous data has demonstrated that patterns of activity and sleep are relatively stable across different mouse strains and ages in the light phase (<xref rid="R4" ref-type="bibr">Banks et al 2015</xref>). However, in the dark phase strain- and age-dependent patterns of activity and sleep are more apparent. Furthermore, conspecific differences are also apparent, and even genetically identical mice may show quite different patterns of activity and sleep, though these patterns are very stable within any individual (<xref rid="R10" ref-type="bibr">Brown et al., 2017</xref>).</p>
+      </sec>
+      <sec id="S30">
+        <title>Time Considerations</title>
+        <p id="P153">Users should allow sufficient time to assemble all components and test the PIR system prior to starting any animal work. Once assembled, the system can easily be tested by simply running the Arduino IDE ‘Serial Monitor’ tool, which allows the user to see the signal generated in real time by each sensor channel – typically 6 separate PIR sensors and a single light channel. This enables crosstalk between channels or non-functioning channels to be easily detected. Following this, running the system using Processing or using Node red on a Raspberry Pi will allow the system to be tested over several days to ensure everything works properly before starting experiments. We have often left a system running in the lab to measure human traffic and light levels as a simple way of testing that the system works prior to animal studies.</p>
+        <p id="P154">The time taken for activity and sleep analysis is dependent upon the experiment or condition the measures are being taken for. However, it should be noted that once running the system is fully automated, requiring little input from the investigator throughout recording. PIR analysis of C57BL/6J animals has demonstrated that individual animals show highly stable day to day patterns of activity and sleep (<xref rid="R10" ref-type="bibr">Brown et al 2017</xref>). It is therefore possible to establish baseline levels of activity and sleep from 3-5 days of data. However, it is worth noting that this represents a minimum, and circadian screens often require 7-10 days under each lighting condition to obtain sufficient data for detailed analysis. For both baseline activity and sleep analysis and detailed circadian screening, it is worth noting that the first 1-2 days an animal is housed in a new cage or lighting condition their activity and sleep may be more variable. For this reason, cage changes for husbandry purposes should be planned in advance so as not to coincide with critical periods of data recording.</p>
+        <p id="P155">Finally, if the PIR system is for monitoring health or disease progression, recordings may be necessary for extended periods. However, establishing a healthy baseline is critical, as deviations from this baseline are likely to provide the most reliable welfare indicators. For example, if assessing the effects of surgical interventions on activity and sleep, a comparison of at least a week pre- and post-surgery would be required. By contrast, models of neurodegenerative disease may require monitoring over a period of months as the condition progresses. In our experience the PIR system can make stable continuous measurements for at least a year, so the protocols we describe here can easily be used for such longitudinal measurements associated with biological processes such as aging. In all cases, it is recommended that experiments are discussed with local animal care and veterinary staff to address welfare considerations prior to commencing such a study. For example, some neurodegenerative models may not thrive under single housing conditions, which may limit the monitoring of activity and sleep in individual animals. Alternatively, separating male animals to record activity and sleep and then returning animals to cohoused conditions can result in fighting.</p>
+      </sec>
+    </sec>
+  </body>
+  <back>
+    <ack id="S36">
+      <title>Acknowledgements</title>
+      <p>P.M.N. is supported by the MRC (grant codes MC_U142684173). S.N.P is supported by the BBSRC (BB/I021086/1 and BB/S015817/1), Wellcome (098461/Z/12/Z) and the NC3Rs (NC/V000977/1). S.L.W. is funded by the NC3Rs (NC/S001689/1). We would like to thank Rhys Hancocks and Angus Fisk for their assistance in establishing and running the PIR systems in our institutes and the biomedical staff at the Mary Lyon Centre, MRC Harwell Institute. Thanks to Robert Dallmann (University of Warwick) for advice on how to convert data for ClockLab.</p>
+    </ack>
+    <ref-list>
+      <title>Literature Cited</title>
+      <ref id="R1">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Albrecht</surname><given-names>U</given-names></name>
+<name><surname>Foster</surname><given-names>RG</given-names></name>
+</person-group><article-title>Placing ocular mutants into a functional context: a chronobiological approach</article-title><source>Methods</source><year>2002</year><volume>28</volume><issue>4</issue><fpage>465</fpage><lpage>77</lpage><pub-id pub-id-type="pmid">12507465</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R2">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bailey</surname><given-names>M</given-names></name>
+<name><surname>Silver</surname><given-names>R</given-names></name>
+</person-group><article-title>Sex differences in circadian timing systems: Implications for disease</article-title><source>Front Neuroendocrinol</source><year>2014</year><volume>35</volume><issue>1</issue><fpage>111</fpage><lpage>39</lpage><pub-id pub-id-type="doi">10.1016/j.yfrne.2013.11.003</pub-id><pub-id pub-id-type="pmid">24287074</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R3">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Banks</surname><given-names>GT</given-names></name>
+<name><surname>Nolan</surname><given-names>PN</given-names></name>
+</person-group><article-title>Assessment of Circadian and Light-Entrainable Paramters in Mice Using Wheel-Running Activity</article-title><source>Curr Protoc Mouse Biol</source><year>2011</year><volume>1</volume><issue>3</issue><fpage>369</fpage><lpage>81</lpage><pub-id pub-id-type="pmid">26068996</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R4">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Banks</surname><given-names>G</given-names></name>
+<name><surname>Heise</surname><given-names>I</given-names></name>
+<name><surname>Starbuck</surname><given-names>B</given-names></name>
+<name><surname>Osborne</surname><given-names>T</given-names></name>
+<name><surname>Wisby</surname><given-names>L</given-names></name>
+<name><surname>Potter</surname><given-names>P</given-names></name>
+<name><surname>Jackson</surname><given-names>IJ</given-names></name>
+<name><surname>Foster</surname><given-names>RG</given-names></name>
+<name><surname>Peirson</surname><given-names>SN</given-names></name>
+<name><surname>Nolan</surname><given-names>PN</given-names></name>
+</person-group><article-title>Genetic background influences age-related decline in visual and nonvisual retinal responses, circadian rhythms, and sleep</article-title><source>Neurobiol Aging</source><year>2015</year><volume>36</volume><issue>1</issue><fpage>380</fpage><lpage>93</lpage><pub-id pub-id-type="doi">10.1016/j.neurobiolaging.2014.07.040</pub-id><pub-id pub-id-type="pmid">25179226</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R5">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Banks</surname><given-names>G</given-names></name>
+<name><surname>Lassi</surname><given-names>G</given-names></name>
+<name><surname>Hoerder-Suabedissen</surname><given-names>A</given-names></name>
+<name><surname>Tinarelli</surname><given-names>F</given-names></name>
+<name><surname>Simon</surname><given-names>MM</given-names></name>
+<name><surname>Wilcox</surname><given-names>A</given-names></name>
+<name><surname>Lau</surname><given-names>P</given-names></name>
+<name><surname>Lawson</surname><given-names>TN</given-names></name>
+<name><surname>Johnson</surname><given-names>S</given-names></name>
+<name><surname>Rutman</surname><given-names>A</given-names></name>
+<name><surname>Sweeting</surname><given-names>M</given-names></name>
+<etal/>
+</person-group><article-title>A Missense Mutation in Katnal1 Underlies Behavioural, Neurological and Ciliary Anomalies</article-title><source>Mol Psychiatry</source><year>2018</year><volume>23</volume><issue>3</issue><fpage>713</fpage><lpage>722</lpage><pub-id pub-id-type="doi">10.1038/mp.2017.54</pub-id><pub-id pub-id-type="pmid">28373692</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R6">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bechtold</surname><given-names>DA</given-names></name>
+<name><surname>Gibbs</surname><given-names>JE</given-names></name>
+<name><surname>Loudon</surname><given-names>AS</given-names></name>
+</person-group><article-title>Circadian dysfunction in disease</article-title><source>Trends Pharmacol Sci</source><year>2010</year><volume>31</volume><issue>5</issue><fpage>191</fpage><lpage>8</lpage><pub-id pub-id-type="pmid">20171747</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R7">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Blume</surname><given-names>C</given-names></name>
+<name><surname>Santhi</surname><given-names>N</given-names></name>
+<name><surname>Schabus</surname><given-names>M</given-names></name>
+</person-group><article-title>'nparACT' Package for R: A Free Software Tool for the Non-Parametric Analysis of Actigraphy Data</article-title><source>MethodsX</source><year>2016</year><volume>3</volume><fpage>430</fpage><lpage>5</lpage><pub-id pub-id-type="doi">10.1016/j.mex.2016.05.006</pub-id><pub-id pub-id-type="pmid">27294030</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R8">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Borbély</surname><given-names>AA</given-names></name>
+</person-group><article-title>A two process model of sleep regulation</article-title><source>Hum Neurobiol</source><year>1982</year><volume>1</volume><issue>3</issue><fpage>195</fpage><lpage>204</lpage><pub-id pub-id-type="pmid">7185792</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R9">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Borbély</surname><given-names>AA</given-names></name>
+<name><surname>Daan</surname><given-names>S</given-names></name>
+<name><surname>Wirz-Justice</surname><given-names>A</given-names></name>
+<name><surname>Deboer</surname><given-names>T</given-names></name>
+</person-group><article-title>The two-process model of sleep regulation: a reappraisal</article-title><source>J Sleep Res</source><year>2016</year><volume>25</volume><issue>2</issue><fpage>131</fpage><lpage>43</lpage><pub-id pub-id-type="pmid">26762182</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R10">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Brown</surname><given-names>LA</given-names></name>
+<name><surname>Hasan</surname><given-names>S</given-names></name>
+<name><surname>Foster</surname><given-names>RG</given-names></name>
+<name><surname>Peirson</surname><given-names>SN</given-names></name>
+</person-group><article-title>COMPASS: Continuous Open Mouse Phenotyping of Activity and Sleep Status</article-title><source>Wellcome Open Research 2017</source><year>2017</year><volume>1</volume><fpage>2</fpage><comment>[version 2; peer review: 4 approved]</comment><pub-id pub-id-type="doi">10.12688/wellcomeopenres.9892.2</pub-id><pub-id pub-id-type="pmid">27976750</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R11">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Brown</surname><given-names>LA</given-names></name>
+<name><surname>Fisk</surname><given-names>AS</given-names></name>
+<name><surname>Pothecary</surname><given-names>CA</given-names></name>
+<name><surname>Peirson</surname><given-names>SN</given-names></name>
+</person-group><article-title>Telling the Time with a Broken Clock: Quantifying Circadian Disruption in Animal Models</article-title><source>Biology (Basel)</source><year>2019</year><volume>8</volume><issue>1</issue><fpage>18</fpage><comment>2019</comment><pub-id pub-id-type="doi">10.3390/biology8010018</pub-id><pub-id pub-id-type="pmid">30901884</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R12">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Comas</surname><given-names>M</given-names></name>
+<name><surname>Hut</surname><given-names>RA</given-names></name>
+</person-group><article-title>Twilight and photoperiod affect behavioral entrainment in the house mouse (Mus musculus</article-title><source>J Biol Rhythms</source><year>2009</year><volume>24</volume><issue>5</issue><fpage>403</fpage><lpage>12</lpage><pub-id pub-id-type="pmid">19755585</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R13">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Dibner</surname><given-names>C</given-names></name>
+<name><surname>Schibler</surname><given-names>U</given-names></name>
+<name><surname>Albrecht</surname><given-names>U</given-names></name>
+</person-group><article-title>The mammalian circadian timing system: organization and coordination of central and peripheral clocks</article-title><source>Annu Rev Physiol</source><year>2010</year><volume>72</volume><fpage>517</fpage><lpage>49</lpage><pub-id pub-id-type="pmid">20148687</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R14">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Eckel-Mahan</surname><given-names>K</given-names></name>
+<name><surname>Sassone-Corsi</surname><given-names>P</given-names></name>
+</person-group><article-title>Phenotyping circadian rhythms in mice</article-title><source>Curr Protoc Mouse Biol</source><year>2015</year><volume>5</volume><fpage>271</fpage><lpage>281</lpage><pub-id pub-id-type="doi">10.1002/9780470942390.mo140229</pub-id><pub-id pub-id-type="pmid">26331760</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R15">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Fisher</surname><given-names>SP</given-names></name>
+<name><surname>Godinho</surname><given-names>SIH</given-names></name>
+<name><surname>Pothecary</surname><given-names>CA</given-names></name>
+<name><surname>Hankins</surname><given-names>MW</given-names></name>
+<name><surname>Foster</surname><given-names>RG</given-names></name>
+<name><surname>Peirson</surname><given-names>SN</given-names></name>
+</person-group><article-title>Rapid Assessment of Sleep-Wake Behavior in Mice</article-title><source>J Biol Rhythms</source><year>2012</year><volume>27</volume><issue>1</issue><fpage>48</fpage><lpage>58</lpage><pub-id pub-id-type="doi">10.1177/0748730411431550</pub-id><pub-id pub-id-type="pmid">22306973</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R16">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Fisk</surname><given-names>AS</given-names></name>
+<name><surname>Tam</surname><given-names>SKE</given-names></name>
+<name><surname>Brown</surname><given-names>LA</given-names></name>
+<name><surname>Vyazovskiy</surname><given-names>VV</given-names></name>
+<name><surname>Bannerman</surname><given-names>DM</given-names></name>
+<name><surname>Peirson</surname><given-names>SN</given-names></name>
+</person-group><article-title>Light and Cognition: Roles for Circadian Rhythms, Sleep, and Arousal</article-title><source>Front Neurol</source><year>2018</year><month>Feb</month><day>9</day><volume>9</volume><fpage>56</fpage><comment>2018</comment><pub-id pub-id-type="doi">10.3389/fneur.2018.00056</pub-id><pub-id pub-id-type="pmid">29479335</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R17">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Flores</surname><given-names>AE</given-names></name>
+<name><surname>Flores</surname><given-names>JE</given-names></name>
+<name><surname>Deshpande</surname><given-names>H</given-names></name>
+<name><surname>Picazo</surname><given-names>JA</given-names></name>
+<name><surname>Xie</surname><given-names>XS</given-names></name>
+<name><surname>Franken</surname><given-names>P</given-names></name>
+<name><surname>Heller</surname><given-names>HC</given-names></name>
+<name><surname>Grahn</surname><given-names>DA</given-names></name>
+<name><surname>O’Hara</surname><given-names>BF</given-names></name>
+</person-group><article-title>Pattern recognition of sleep in rodents using piezoelectric signals generated by gross body movements</article-title><source>IEEE Trans Biomed Eng</source><year>2007</year><volume>54</volume><issue>2</issue><fpage>225</fpage><lpage>33</lpage><pub-id pub-id-type="pmid">17278579</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R18">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Fuller</surname><given-names>PM</given-names></name>
+<name><surname>Gooley</surname><given-names>JJ</given-names></name>
+<name><surname>Saper</surname><given-names>CB</given-names></name>
+</person-group><article-title>Neurobiology of the Sleep-Wake Cycle: Sleep Architecture, Circadian Regulation, and Regulatory Feedback</article-title><source>J Biol Rhythms</source><year>2006</year><volume>21</volume><issue>6</issue><fpage>482</fpage><lpage>93</lpage><pub-id pub-id-type="pmid">17107938</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R19">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Funato</surname><given-names>H</given-names></name>
+<name><surname>Miyoshi</surname><given-names>C</given-names></name>
+<name><surname>Fujiyama</surname><given-names>T</given-names></name>
+<name><surname>Kanda</surname><given-names>T</given-names></name>
+<name><surname>Sato</surname><given-names>M</given-names></name>
+<name><surname>Wang</surname><given-names>Z</given-names></name>
+<name><surname>Ma</surname><given-names>J</given-names></name>
+<name><surname>Nakane</surname><given-names>S</given-names></name>
+<name><surname>Tomita</surname><given-names>J</given-names></name>
+<name><surname>Ikkyu</surname><given-names>A</given-names></name>
+<name><surname>Kakizaki</surname><given-names>M</given-names></name>
+<etal/>
+</person-group><article-title>Forward-genetics Analysis of Sleep in Randomly Mutagenized Mice</article-title><source>Nature</source><year>2016</year><volume>539</volume><issue>7629</issue><fpage>378</fpage><lpage>383</lpage><pub-id pub-id-type="doi">10.1038/nature20142</pub-id><pub-id pub-id-type="pmid">27806374</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R20">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Geissmann</surname><given-names>Q</given-names></name>
+<name><surname>Rodriguez</surname><given-names>LG</given-names></name>
+<name><surname>Beckwith</surname><given-names>EJ</given-names></name>
+<name><surname>Gilestro</surname><given-names>GF</given-names></name>
+</person-group><article-title>Rethomics: An R framework to analyse high-throughput behavioural data</article-title><source>PLoS ONE</source><year>2020</year><volume>14</volume><issue>1</issue><elocation-id>e0209331</elocation-id><pub-id pub-id-type="doi">10.1371/journal.pone.0209331</pub-id><pub-id pub-id-type="pmid">30650089</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R21">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Hasan</surname><given-names>S</given-names></name>
+<name><surname>Dauvilliers</surname><given-names>Y</given-names></name>
+<name><surname>Mongrain</surname><given-names>V</given-names></name>
+<name><surname>Franken</surname><given-names>P</given-names></name>
+<name><surname>Tafti</surname><given-names>M</given-names></name>
+</person-group><article-title>Age-related changes in sleep in inbred mice are genotype dependent</article-title><source>Neurobiol Aging</source><year>2012</year><volume>33</volume><elocation-id>195.e13-195.e26</elocation-id><pub-id pub-id-type="pmid">20619936</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R22">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Hastings</surname><given-names>MH</given-names></name>
+<name><surname>Reddy</surname><given-names>AB</given-names></name>
+<name><surname>Maywood</surname><given-names>ES</given-names></name>
+</person-group><article-title>A clockwork web: circadian timing in brain and periphery, in health and disease</article-title><source>Nat Rev Neurosci</source><year>2003</year><volume>4</volume><issue>8</issue><fpage>649</fpage><lpage>61</lpage><pub-id pub-id-type="pmid">12894240</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R23">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Heise</surname><given-names>I</given-names></name>
+<name><surname>Fisher</surname><given-names>SP</given-names></name>
+<name><surname>Banks</surname><given-names>GT</given-names></name>
+<name><surname>Wells</surname><given-names>S</given-names></name>
+<name><surname>Peirson</surname><given-names>SN</given-names></name>
+<name><surname>Foster</surname><given-names>RG</given-names></name>
+<name><surname>Nolan</surname><given-names>PM</given-names></name>
+</person-group><article-title>Sleep-like behaviour and 24-h rhythm disruption in the Tc1 mouse model of Down syndrome</article-title><source>Genes Brain Behav</source><year>2015</year><volume>14</volume><fpage>209</fpage><lpage>216</lpage><pub-id pub-id-type="doi">10.1111/gbb.12198</pub-id><pub-id pub-id-type="pmid">25558895</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R24">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Hughes</surname><given-names>S</given-names></name>
+<name><surname>Jagannath</surname><given-names>A</given-names></name>
+<name><surname>Hankins</surname><given-names>MW</given-names></name>
+<name><surname>Foster</surname><given-names>RG</given-names></name>
+<name><surname>Peirson</surname><given-names>SN</given-names></name>
+</person-group><article-title>Photic regulation of clock systems</article-title><source>Methods Enzymol</source><year>2015</year><volume>552</volume><fpage>125</fpage><lpage>43</lpage><pub-id pub-id-type="pmid">25707275</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R25">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Jagannath</surname><given-names>A</given-names></name>
+<name><surname>Peirson</surname><given-names>SN</given-names></name>
+<name><surname>Foster</surname><given-names>RG</given-names></name>
+</person-group><article-title>Sleep and circadian rhythm disruption in neuropsychiatric illness</article-title><source>Curr Opin Neurobiol</source><year>2013</year><volume>23</volume><issue>5</issue><fpage>888</fpage><lpage>94</lpage><pub-id pub-id-type="pmid">23618559</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R26">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Jud</surname><given-names>C</given-names></name>
+<name><surname>Schmutz</surname><given-names>I</given-names></name>
+<name><surname>Hampp</surname><given-names>G</given-names></name>
+<name><surname>Oster</surname><given-names>H</given-names></name>
+<name><surname>Albrecht</surname><given-names>U</given-names></name>
+</person-group><article-title>A guideline for analyzing circadian wheel-running behavior in rodents under different lighting conditions</article-title><source>Biol Proced Online</source><year>2005</year><volume>7</volume><fpage>101</fpage><lpage>16</lpage><pub-id pub-id-type="doi">10.1251/bpo109</pub-id><pub-id pub-id-type="pmid">16136228</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R27">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Kurien</surname><given-names>P</given-names></name>
+<name><surname>Hsu</surname><given-names>P-K</given-names></name>
+<name><surname>Leon</surname><given-names>J</given-names></name>
+<name><surname>Wu</surname><given-names>D</given-names></name>
+<name><surname>McMahon</surname><given-names>T</given-names></name>
+<name><surname>Shi</surname><given-names>G</given-names></name>
+<name><surname>Xu</surname><given-names>Y</given-names></name>
+<name><surname>Lipzen</surname><given-names>A</given-names></name>
+<name><surname>Pennacchio</surname><given-names>LA</given-names></name>
+<name><surname>Jones</surname><given-names>CR</given-names></name>
+<name><surname>Fu</surname><given-names>Y-H</given-names></name>
+<etal/>
+</person-group><article-title>TIMELESS mutation alters phase responsiveness and causes advanced sleep phase</article-title><source>PNAS</source><year>2019</year><volume>116</volume><issue>24</issue><fpage>12045</fpage><lpage>12053</lpage><pub-id pub-id-type="doi">10.1073/pnas.1819110116</pub-id><pub-id pub-id-type="pmid">31138685</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R28">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Lo</surname><given-names>CC</given-names></name>
+<name><surname>Chou</surname><given-names>T</given-names></name>
+<name><surname>Penzel</surname><given-names>T</given-names></name>
+<name><surname>Scammell</surname><given-names>TE</given-names></name>
+<name><surname>Strecker</surname><given-names>RE</given-names></name>
+<name><surname>Stanley</surname><given-names>HE</given-names></name>
+<name><surname>Ivanov</surname><given-names>PCh</given-names></name>
+</person-group><article-title>Common scale-invariant patterns of sleep-wake transitions across mammalian species</article-title><source>Proc Natl Acad Sci U S A</source><volume>101</volume><issue>50</issue><fpage>17545</fpage><lpage>8</lpage><pub-id pub-id-type="doi">10.1073/pnas.0408242101</pub-id><pub-id pub-id-type="pmid">15583127</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R29">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Lucas</surname><given-names>RJ</given-names></name>
+<name><surname>Peirson</surname><given-names>SN</given-names></name>
+<name><surname>Berson</surname><given-names>DM</given-names></name>
+<name><surname>Brown</surname><given-names>TM</given-names></name>
+<name><surname>Cooper</surname><given-names>HM</given-names></name>
+<name><surname>Czeisler</surname><given-names>CA</given-names></name>
+<name><surname>Figueiro</surname><given-names>MG</given-names></name>
+<name><surname>Gamlin</surname><given-names>PD</given-names></name>
+<name><surname>Lockley</surname><given-names>SW</given-names></name>
+<name><surname>O’Hagan</surname><given-names>JB</given-names></name>
+<name><surname>Price</surname><given-names>LL</given-names></name>
+<etal/>
+</person-group><article-title>Measuring and using light in the melanopsin age</article-title><source>Trends Neurosci</source><year>2014</year><volume>37</volume><issue>1</issue><fpage>1</fpage><lpage>9</lpage><pub-id pub-id-type="doi">10.1016/j.tins.2013.10.004</pub-id><pub-id pub-id-type="pmid">24287308</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R30">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Mistlberger</surname><given-names>RE</given-names></name>
+</person-group><article-title>Circadian regulation of sleep in mammals: role of the suprachiasmatic nucleus</article-title><source>Brain Res Brain Res Rev</source><year>2005</year><volume>49</volume><issue>3</issue><fpage>429</fpage><lpage>54</lpage><pub-id pub-id-type="pmid">16269313</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R31">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Pack</surname><given-names>AI</given-names></name>
+<name><surname>Galante</surname><given-names>RJ</given-names></name>
+<name><surname>Maislin</surname><given-names>G</given-names></name>
+<name><surname>Cater</surname><given-names>J</given-names></name>
+<name><surname>Metaxas</surname><given-names>D</given-names></name>
+<name><surname>Lu</surname><given-names>S</given-names></name>
+<name><surname>Zhang</surname><given-names>L</given-names></name>
+<name><surname>Von Smith</surname><given-names>R</given-names></name>
+<name><surname>Kay</surname><given-names>T</given-names></name>
+<name><surname>Lian</surname><given-names>J</given-names></name>
+<name><surname>Svenson</surname><given-names>K</given-names></name>
+<etal/>
+</person-group><article-title>Novel method for high-throughput phenotyping of sleep in mice</article-title><source>Physiol Genomics</source><year>2007</year><volume>28</volume><fpage>232</fpage><lpage>238</lpage><pub-id pub-id-type="pmid">16985007</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R32">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Parsons</surname><given-names>MJ</given-names></name>
+<name><surname>Brancaccio</surname><given-names>M</given-names></name>
+<name><surname>Sethi</surname><given-names>S</given-names></name>
+<name><surname>Maywood</surname><given-names>ES</given-names></name>
+<name><surname>Satija</surname><given-names>R</given-names></name>
+<name><surname>Edwards</surname><given-names>JK</given-names></name>
+<name><surname>Jagannath</surname><given-names>A</given-names></name>
+<name><surname>Couch</surname><given-names>Y</given-names></name>
+<name><surname>Finelli</surname><given-names>MJ</given-names></name>
+<name><surname>Smyllie</surname><given-names>NJ</given-names></name>
+<name><surname>Esapa</surname><given-names>C</given-names></name>
+<etal/>
+</person-group><article-title>The Regulatory Factor ZFHX3 Modifies Circadian Function in SCN via an AT Motif-Driven Axis</article-title><source>Cell</source><year>2015</year><volume>162</volume><issue>3</issue><fpage>607</fpage><lpage>21</lpage><pub-id pub-id-type="doi">10.1016/j.cell.2015.06.060</pub-id><pub-id pub-id-type="pmid">26232227</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R33">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Peirson</surname><given-names>SN</given-names></name>
+<name><surname>Brown</surname><given-names>LA</given-names></name>
+<name><surname>Pothecary</surname><given-names>CA</given-names></name>
+<name><surname>Benson</surname><given-names>LA</given-names></name>
+<name><surname>Fisk</surname><given-names>AS</given-names></name>
+</person-group><article-title>Light and the Laboratory Mouse</article-title><source>J Neurosci Methods</source><year>2018</year><volume>300</volume><fpage>26</fpage><lpage>36</lpage><pub-id pub-id-type="doi">10.1016/j.jneumeth.2017.04.007</pub-id><pub-id pub-id-type="pmid">28414048</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R34">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Potter</surname><given-names>PK</given-names></name>
+<name><surname>Bowl</surname><given-names>MR</given-names></name>
+<name><surname>Jeyarajan</surname><given-names>P</given-names></name>
+<name><surname>Wisby</surname><given-names>L</given-names></name>
+<name><surname>Blease</surname><given-names>A</given-names></name>
+<name><surname>Goldsworthy</surname><given-names>ME</given-names></name>
+<name><surname>Simon</surname><given-names>MM</given-names></name>
+<name><surname>Greenaway</surname><given-names>S</given-names></name>
+<name><surname>Michel</surname><given-names>V</given-names></name>
+<name><surname>Barnard</surname><given-names>A</given-names></name>
+<name><surname>Aguilar</surname><given-names>C</given-names></name>
+<etal/>
+</person-group><article-title>Novel Gene Function Revealed by Mouse Mutagenesis Screens for Models of Age-Related Disease</article-title><source>Nat Commun</source><year>2016</year><volume>18</volume><issue>7</issue><elocation-id>12444</elocation-id><pub-id pub-id-type="doi">10.1038/ncomms12444</pub-id><pub-id pub-id-type="pmid">27534441</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R35">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Refinetti</surname><given-names>R</given-names></name>
+</person-group><article-title>Laboratory instrumentation and computing: comparison of six methods for the determination of the period of circadian rhythms</article-title><source>Physiol Behav</source><year>1993</year><volume>54</volume><issue>5</issue><fpage>869</fpage><lpage>75</lpage><pub-id pub-id-type="pmid">8248375</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R36">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Refinetti</surname><given-names>R</given-names></name>
+<name><surname>Lissen</surname><given-names>GC</given-names></name>
+<name><surname>Halberg</surname><given-names>F</given-names></name>
+</person-group><article-title>Procedures for numerical analysis of circadian rhythms</article-title><source>Biol Rhythm Res</source><year>2007</year><volume>38</volume><issue>4</issue><fpage>275</fpage><lpage>325</lpage><pub-id pub-id-type="doi">10.1080/09291010600903692</pub-id><pub-id pub-id-type="pmid">23710111</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R37">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Reppert</surname><given-names>SM</given-names></name>
+<name><surname>Weaver</surname><given-names>DR</given-names></name>
+</person-group><article-title>Coordination of Circadian Timing in Mammals</article-title><source>Nature</source><year>2002</year><volume>418</volume><issue>6901</issue><fpage>935</fpage><lpage>41</lpage><pub-id pub-id-type="pmid">12198538</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R38">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Rijo-Ferreira</surname><given-names>F</given-names></name>
+<name><surname>Takahashi</surname><given-names>JS</given-names></name>
+</person-group><article-title>Genomics of Circadian Rhythms in Health and Disease</article-title><source>Genome Med</source><year>2019</year><volume>11</volume><issue>1</issue><fpage>82</fpage><pub-id pub-id-type="doi">10.1186/s13073-019-0704-0</pub-id><pub-id pub-id-type="pmid">31847894</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R39">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Scammell</surname><given-names>TE</given-names></name>
+<name><surname>Arrigoni</surname><given-names>E</given-names></name>
+<name><surname>Lipton</surname><given-names>J</given-names></name>
+</person-group><article-title>Neuronal Circuitry of Wakefulness of Sleep</article-title><source>Neuron</source><year>2017</year><volume>93</volume><issue>4</issue><fpage>747</fpage><lpage>765</lpage><pub-id pub-id-type="doi">10.1016/j.neuron.2017.01.014</pub-id><pub-id pub-id-type="pmid">28231463</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R40">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Schmid</surname><given-names>B</given-names></name>
+<name><surname>Helfrich-Förster</surname><given-names>C</given-names></name>
+<name><surname>Yoshii</surname><given-names>T</given-names></name>
+</person-group><article-title>A new ImageJ plugin "ActogramJ" for chronobiological analyses</article-title><source>J Biol Rhythms</source><year>2011</year><volume>26</volume><fpage>464</fpage><lpage>467</lpage><pub-id pub-id-type="pmid">21921300</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R41">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Simon</surname><given-names>MM</given-names></name>
+<name><surname>Greenaway</surname><given-names>S</given-names></name>
+<name><surname>White</surname><given-names>JK</given-names></name>
+<name><surname>Fuchs</surname><given-names>H</given-names></name>
+<name><surname>Gailus-Durner</surname><given-names>V</given-names></name>
+<name><surname>Wells</surname><given-names>S</given-names></name>
+<name><surname>Sorg</surname><given-names>T</given-names></name>
+<name><surname>Wong</surname><given-names>K</given-names></name>
+<name><surname>Bedu</surname><given-names>E</given-names></name>
+<name><surname>Cartwright</surname><given-names>EJ</given-names></name>
+<name><surname>Dacquin</surname><given-names>R</given-names></name>
+<etal/>
+</person-group><article-title>A comparative phenotypic and genomic analysis of C57BL/6J and C57BL/6N mouse strains</article-title><source>Genome Biol</source><year>2013</year><volume>14</volume><fpage>R82</fpage><pub-id pub-id-type="doi">10.1186/gb-2013-14-7-r82</pub-id><pub-id pub-id-type="pmid">23902802</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R42">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Tizard</surname><given-names>I</given-names></name>
+</person-group><article-title>Sickness behavior, its mechanisms and significance</article-title><source>Anim Health Res Rev</source><year>2008</year><volume>9</volume><issue>1</issue><fpage>87</fpage><lpage>99</lpage><pub-id pub-id-type="pmid">18423072</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R43">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Van Someren</surname><given-names>EJW</given-names></name>
+<name><surname>Swaab</surname><given-names>DF</given-names></name>
+<name><surname>Colenda</surname><given-names>CC</given-names></name>
+<name><surname>Cohen</surname><given-names>W</given-names></name>
+<name><surname>McCall</surname><given-names>WV</given-names></name>
+<name><surname>Rosenquist</surname><given-names>PB</given-names></name>
+</person-group><article-title>Bright Light Therapy: Improved sensitivity to its effects on rest-activity rhythms in Alzheimer patients by application of nonparametric methods</article-title><source>Chronobiol Int</source><year>1999</year><volume>16</volume><issue>4</issue><fpage>505</fpage><lpage>518</lpage><pub-id pub-id-type="pmid">10442243</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R44">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>Z</given-names></name>
+<name><surname>Ma</surname><given-names>J</given-names></name>
+<name><surname>Miyoshi</surname><given-names>C</given-names></name>
+<name><surname>Li</surname><given-names>Y</given-names></name>
+<name><surname>Sato</surname><given-names>M</given-names></name>
+<name><surname>Ogawa</surname><given-names>Y</given-names></name>
+<name><surname>Lou</surname><given-names>T</given-names></name>
+<name><surname>Ma</surname><given-names>C</given-names></name>
+<name><surname>Gao</surname><given-names>X</given-names></name>
+<name><surname>Lee</surname><given-names>C</given-names></name>
+<name><surname>Fujiyama</surname><given-names>T</given-names></name>
+<etal/>
+</person-group><article-title>Quantitative phosphoproteomic analysis of the molecular substrates of sleep need</article-title><source>Nature</source><year>2018</year><volume>558</volume><issue>7710</issue><fpage>435</fpage><lpage>439</lpage><pub-id pub-id-type="doi">10.1038/s41586-018-0218-8</pub-id><pub-id pub-id-type="pmid">29899451</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R45">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Weiergräber</surname><given-names>M</given-names></name>
+<name><surname>Henry</surname><given-names>M</given-names></name>
+<name><surname>Hescheler</surname><given-names>J</given-names></name>
+<name><surname>Smyth</surname><given-names>N</given-names></name>
+<name><surname>Schneider</surname><given-names>T</given-names></name>
+</person-group><article-title>Electrocorticographic and deep intracerebral EEG recording in mice using a telemetry system</article-title><source>Brain Res Brain Res Protoc</source><year>2005</year><volume>14</volume><issue>3</issue><fpage>154</fpage><lpage>64</lpage><pub-id pub-id-type="pmid">15795169</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R46">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>West</surname><given-names>AC</given-names></name>
+<name><surname>Bechtold</surname><given-names>DA</given-names></name>
+</person-group><article-title>The cost of circadian desynchrony: Evidence, insights and open questions</article-title><source>Bioessays</source><year>2015</year><volume>37</volume><issue>7</issue><fpage>777</fpage><lpage>88</lpage><pub-id pub-id-type="doi">10.1002/bies.201400173</pub-id><pub-id pub-id-type="pmid">26010005</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R47">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Wilcox</surname><given-names>AG</given-names></name>
+<name><surname>Vizor</surname><given-names>L</given-names></name>
+<name><surname>Parsons</surname><given-names>MJ</given-names></name>
+<name><surname>Banks</surname><given-names>G</given-names></name>
+<name><surname>Nolan</surname><given-names>PM</given-names></name>
+</person-group><article-title>Inducible Knockout of Mouse Zfhx3 Emphasizes Its Key Role in Setting the Pace and Amplitude of the Adult Circadian Clock</article-title><source>J Biol Rhythms</source><year>2017</year><volume>32</volume><issue>5</issue><fpage>433</fpage><lpage>443</lpage><pub-id pub-id-type="doi">10.1177/0748730417722631</pub-id><pub-id pub-id-type="pmid">28816086</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R48">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Wulff</surname><given-names>K</given-names></name>
+<name><surname>Gatti</surname><given-names>S</given-names></name>
+<name><surname>Wettstein</surname><given-names>JG</given-names></name>
+<name><surname>Foster</surname><given-names>RG</given-names></name>
+</person-group><article-title>Sleep and circadian rhythm disruption in psychiatric and neurodegenerative disease</article-title><source>Nat Rev Neurosci</source><year>2010</year><volume>11</volume><issue>8</issue><fpage>589</fpage><lpage>99</lpage><pub-id pub-id-type="pmid">20631712</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R49">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Yang</surname><given-names>G</given-names></name>
+<name><surname>Chen</surname><given-names>L</given-names></name>
+<name><surname>Grant</surname><given-names>GR</given-names></name>
+<name><surname>Paschos</surname><given-names>G</given-names></name>
+<name><surname>Song</surname><given-names>W-L</given-names></name>
+<name><surname>Musiek</surname><given-names>ES</given-names></name>
+<name><surname>Lee</surname><given-names>V</given-names></name>
+<name><surname>McLoughlin</surname><given-names>SC</given-names></name>
+<name><surname>Grosser</surname><given-names>T</given-names></name>
+<name><surname>Cotsarelis</surname><given-names>G</given-names></name>
+<name><surname>FitzGerald</surname><given-names>GA</given-names></name>
+</person-group><article-title>Timing of expression of the core clock gene Bmal1 influences its effects on aging and survival</article-title><source>Sci Transl Med</source><year>2016</year><volume>8</volume><elocation-id>324ra16</elocation-id><pub-id pub-id-type="doi">10.1126/scitranslmed.aad3305</pub-id><pub-id pub-id-type="pmid">26843191</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R50">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>T</given-names></name>
+<name><surname>Xie</surname><given-names>P</given-names></name>
+<name><surname>Dong</surname><given-names>Y</given-names></name>
+<name><surname>Liu</surname><given-names>Z</given-names></name>
+<name><surname>Zhou</surname><given-names>F</given-names></name>
+<name><surname>Pan</surname><given-names>D</given-names></name>
+<name><surname>Huang</surname><given-names>Z</given-names></name>
+<name><surname>Zhai</surname><given-names>Q</given-names></name>
+<name><surname>Gu</surname><given-names>Y</given-names></name>
+<name><surname>Wu</surname><given-names>Q</given-names></name>
+<name><surname>Tanaka</surname><given-names>N</given-names></name>
+<etal/>
+</person-group><article-title>High-throughput Discovery of Genetic Determinants of Circadian Misalignment</article-title><source>PLoS Genet</source><year>2020</year><volume>16</volume><issue>1</issue><elocation-id>e1008577</elocation-id><pub-id pub-id-type="doi">10.1371/journal.pgen.1008577</pub-id><pub-id pub-id-type="pmid">31929527</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R51">
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zielinski</surname><given-names>T</given-names></name>
+<name><surname>Moore</surname><given-names>AM</given-names></name>
+<name><surname>Troup</surname><given-names>E</given-names></name>
+<name><surname>Halliday</surname><given-names>KJ</given-names></name>
+<name><surname>Millar</surname><given-names>AJ</given-names></name>
+</person-group><article-title>Strengths and limitations of period estimation methods for circadian data</article-title><source>PLoS One</source><year>2014</year><volume>9</volume><issue>5</issue><elocation-id>e96462</elocation-id><pub-id pub-id-type="doi">10.1371/journal.pone.0096462</pub-id><pub-id pub-id-type="pmid">24809473</pub-id>
+</element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig position="float" id="F1">
+      <label>Figure 1</label>
+      <caption>
+        <title>COMPASS system overview.</title>
+        <p>(<bold>A</bold>) Singly-housed animal in home cage. To prevent the animal moving out of the range of the passive infrared (PIR) sensor, a block is placed under the food hopper ensuring the animal still has sufficient cage space. (<bold>B</bold>) The PIR sensor is placed 220mm above the cage floor for optimum sensitivity for the assessment of immobility defined sleep (<xref rid="R10" ref-type="bibr">Brown et al 2017</xref>). The sensor may also have an integrated light dependent resistor (LDR) to measure light levels. Typically only one LDR is required for all 6 channels if these are in the same light environment. (<bold>C</bold>) Up to six PIR sensors are then connected to the main board, which is designed to interface with the Arduino microprocessor. (<bold>D</bold>) The Arduino is then connected to a local PC to store data. Alternatively, a Raspberry Pi microprocessor may be used instead of a PC, particularly when multiple different systems are being run in parallel.</p>
+      </caption>
+      <graphic xlink:href="EMS201732-f001" position="float"/>
+    </fig>
+    <fig position="float" id="F2">
+      <label>Figure 2</label>
+      <caption>
+        <title>Assembly of the PIR sensor units.</title>
+        <p>(<bold>A</bold>) Image of the PIR circuit board prior to addition of components. (<bold>B</bold>) Addition of the 1 k and 10 k Ohm Resistors to the board. (<bold>C</bold>) Addition of the RJ12 jack to the board. (<bold>D</bold>) Addition of the PIR module to the board. (<bold>E</bold>) Twisting wires and bending of legs will secure components prior to soldering. (<bold>F</bold>) Addition of a 2-pin header to the board for LDR connection. (<bold>G</bold>) Final assembly of PIR sensor units both with (right) and without (left) an LDR.</p>
+      </caption>
+      <graphic xlink:href="EMS201732-f002" position="float"/>
+    </fig>
+    <fig position="float" id="F3">
+      <label>Figure 3</label>
+      <caption>
+        <title>Assembly of the main board.</title>
+        <p>(<bold>A</bold>) Image of the main circuit board prior to addition of components. (<bold>B</bold>) Headers to be mounted to the underside of the main board. (<bold>C</bold>) Headers mounted to the underside of the board. (<bold>D</bold>) RJ12 connectors to be mounted to the main board. (<bold>E</bold>) Addition of RJ12 connectors to the main board. (<bold>F</bold>) Addition wiring connections between the Arduino Uno microcontroller (lower case section) and the headers on the underside of the main board (upper case section). (<bold>G</bold>) Final assembly of the main board on the Arduino case.</p>
+      </caption>
+      <graphic xlink:href="EMS201732-f003" position="float"/>
+    </fig>
+    <fig position="float" id="F4">
+      <label>Figure 4</label>
+      <caption>
+        <title>Schematic of connections of main board to Arduino.</title>
+        <p>The power (5V, red) and ground (GND, black) channels are connected to the two central pins. PIR channels 1-6 are connected to ports 2 – 8. In the example above a single LDR channel is used on PIR sensor 1, and this is connected to analogue port A2. For clarity, the same colour scheme for wiring is used as in image in <xref rid="F3" ref-type="fig">Figure 3F</xref>.</p>
+      </caption>
+      <graphic xlink:href="EMS201732-f004" position="float"/>
+    </fig>
+    <fig position="float" id="F5">
+      <label>Figure 5</label>
+      <caption>
+        <title>Typical activity, sleep and sleep bout length in C57BL/6N animals (females, 34 weeks old, n=9).</title>
+        <p>Data given in 30-min time bins. Grey section of the graph represents the dark phase of the light-dark cycle. (<bold>A</bold>) Activity over 24h. (<bold>B</bold>) Time spent in immobility defined sleep over 24h. (<bold>C</bold>) Average length of sleep bouts over 24h.</p>
+      </caption>
+      <graphic xlink:href="EMS201732-f005" position="float"/>
+    </fig>
+  </floats-group>
+</article>

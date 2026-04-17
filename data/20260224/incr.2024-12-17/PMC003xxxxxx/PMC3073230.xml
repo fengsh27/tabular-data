@@ -1,0 +1,2001 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Archiving and Interchange DTD v2.3 20070202//EN" "archivearticle.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">101489144</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">35623</journal-id>
+      <journal-id journal-id-type="nlm-ta">Circ Cardiovasc Genet</journal-id>
+      <journal-title>Circulation. Cardiovascular genetics</journal-title>
+      <issn pub-type="ppub">1942-325X</issn>
+      <issn pub-type="epub">1942-3268</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">20124440</article-id>
+      <article-id pub-id-type="pmc">3073230</article-id>
+      <article-id pub-id-type="doi">10.1161/CIRCGENETICS.109.904698</article-id>
+      <article-id pub-id-type="manuscript">NIHMS272922</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Heart Failure Associated Changes in RNA Splicing of Sarcomere Genes</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kong</surname>
+            <given-names>Sek Won</given-names>
+          </name>
+          <degrees>MD</degrees>
+          <xref ref-type="aff" rid="A1">1</xref>
+          <xref ref-type="aff" rid="A2">2</xref>
+          <xref ref-type="author-notes" rid="FN1">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hu</surname>
+            <given-names>Yong Wu</given-names>
+          </name>
+          <degrees>PhD</degrees>
+          <xref ref-type="aff" rid="A1">1</xref>
+          <xref ref-type="aff" rid="A3">3</xref>
+          <xref ref-type="author-notes" rid="FN1">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ho</surname>
+            <given-names>Joshua W. K.</given-names>
+          </name>
+          <degrees>BSc</degrees>
+          <xref ref-type="aff" rid="A4">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ikeda</surname>
+            <given-names>Sadakatsu</given-names>
+          </name>
+          <degrees>MD</degrees>
+          <xref ref-type="aff" rid="A1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Polster</surname>
+            <given-names>Sean</given-names>
+          </name>
+          <degrees>PhD</degrees>
+          <xref ref-type="aff" rid="A5">5</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>John</surname>
+            <given-names>Ranjit</given-names>
+          </name>
+          <degrees>MD</degrees>
+          <xref ref-type="aff" rid="A6">6</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hall</surname>
+            <given-names>Jennifer L.</given-names>
+          </name>
+          <degrees>PhD</degrees>
+          <xref ref-type="aff" rid="A5">5</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bisping</surname>
+            <given-names>Egbert</given-names>
+          </name>
+          <degrees>MD</degrees>
+          <xref ref-type="aff" rid="A7">7</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Pieske</surname>
+            <given-names>Burkert</given-names>
+          </name>
+          <degrees>MD</degrees>
+          <xref ref-type="aff" rid="A7">7</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Remedios</surname>
+            <given-names>Cristobal G. dos</given-names>
+          </name>
+          <degrees>DSc</degrees>
+          <xref ref-type="aff" rid="A8">8</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Pu</surname>
+            <given-names>William T.</given-names>
+          </name>
+          <degrees>MD</degrees>
+          <xref ref-type="aff" rid="A1">1</xref>
+          <xref ref-type="aff" rid="A9">9</xref>
+          <xref ref-type="corresp" rid="CR1">10</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>1</label>Department of Cardiology, Children's Hospital Boston, 300 Longwood Ave., Boston, MA, USA</aff>
+      <aff id="A2"><label>2</label>Children's Hospital Informatics Program, 300 Longwood Ave., Boston, MA, USA</aff>
+      <aff id="A3"><label>3</label>Department of Life Sciences, Wenzhou Medical College, Wenzhou, China</aff>
+      <aff id="A4"><label>4</label>School of Information Technologies, The University of Sydney, and NICTA, Australian Technology Park, Sydney, New South Wales, Australia</aff>
+      <aff id="A5"><label>5</label>Lillehei Heart Institute, Department of Medicine and Developmental Biology Center, University of Minnesota, Minneapolis, MN 55455</aff>
+      <aff id="A6"><label>6</label>Department of Surgery, University of Minnesota, Minneapolis, MN 55455</aff>
+      <aff id="A7"><label>7</label>Department of Clinical Cardiology, Medical University of Graz, Auenbruggerplatz 15, Graz, Austria</aff>
+      <aff id="A8"><label>8</label>Muscle Research Unit, Bosch Institute, The University of Sydney, Sydney, New South Wales, Australia</aff>
+      <aff id="A9"><label>9</label>Harvard Stem Cell Institute, 42 Church Street, Cambridge, MA, USA</aff>
+      <author-notes>
+        <fn id="FN1" fn-type="equal">
+          <label>*</label>
+          <p id="P1">Contributed equally to this study. Their authorship positions are interchangeable.</p>
+        </fn>
+        <corresp id="CR1"><label>10</label>Corresponding author: William T. Pu, Children's Hospital Boston, 300 Longwood Ave., Boston, MA 02115. <email>wpu@enders.tch.harvard.edu</email>. Ph: 617-919-2091. Fax: 617-730-0140</corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>21</day>
+        <month>3</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>2</day>
+        <month>2</month>
+        <year>2010</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>4</month>
+        <year>2010</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>11</day>
+        <month>4</month>
+        <year>2011</year>
+      </pub-date>
+      <volume>3</volume>
+      <issue>2</issue>
+      <fpage>138</fpage>
+      <lpage>146</lpage>
+      <permissions>
+        <license>
+          <p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</p>
+        </license>
+      </permissions>
+      <abstract>
+        <sec id="S1">
+          <title>Background</title>
+          <p id="P2">Alternative mRNA splicing is an important mechanism for regulation of gene expression. Altered mRNA splicing occurs in association with several types of cancer, and a small number of disease-associated changes in splicing have been reported in heart disease. However, genome-wide approaches have not been used to study splicing changes in heart disease. We hypothesized that mRNA splicing is different in diseased hearts compared to control hearts.</p>
+        </sec>
+        <sec sec-type="methods" id="S2">
+          <title>Methods and Results</title>
+          <p id="P3">We used the Affymetrix exon array to globally evaluate mRNA splicing in LV myocardial RNA from control (n=15) and ischemic cardiomyopathy (ICM) patients. We observed a broad and significant decrease in RNA splicing efficiency in heart failure, which affected some introns to a greater extent than others. The profile of mRNA splicing separately clustered ICM and control samples, suggesting distinct changes in RNA splicing between groups. RTPCR validated 9 previously unreported alternative splicing events. Furthermore, we demonstrated that splicing of four key sarcomere genes, <italic>cardiac troponin T</italic> (<italic>TNNT2</italic>), <italic>cardiac troponin I</italic> (<italic>TNNI3</italic>), <italic>myosin heavy chain 7</italic> (<italic>MYH7</italic>), and <italic>filamin C gamma</italic> (<italic>FLNC</italic>), was significantly altered in ICM, as well as in dilated cardiomyopathy and aortic stenosis (AS). In AS samples, these differences preceded the onset of heart failure. Remarkably, the ratio of minor to major splice variants of <italic>TNNT2</italic>, <italic>MYH7</italic>, and <italic>FLNC</italic> classified independent test samples as control or disease with greater than 98% accuracy.</p>
+        </sec>
+        <sec id="S3">
+          <title>Conclusions</title>
+          <p id="P4">Our data indicate that RNA splicing is broadly altered in human heart disease, and that patterns of aberrant RNA splicing accurately assign samples to control or disease classes.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>RNA Splicing</kwd>
+        <kwd>Cardiomyopathy</kwd>
+        <kwd>Heart Failure</kwd>
+        <kwd>Genes</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S4">
+      <title>Introduction</title>
+      <p id="P5">Nearly every human mRNA transcript is alternatively spliced<xref ref-type="bibr" rid="R1">1</xref>, and mRNA splicing is an important mechanism for generating transcriptional diversity and regulating gene expression. Tissue specific mRNA splicing confers specialized properties to organs such as the heart. A significant proportion of gene mutations that cause human disease disrupt mRNA splicing<xref ref-type="bibr" rid="R2">2</xref>. Perturbation of mRNA splicing may also influence the natural history of acquired diseases, as mRNA splicing is influenced by environmental signals and can become dysregulated in disease states<xref ref-type="bibr" rid="R3">3</xref>–<xref ref-type="bibr" rid="R5">5</xref>. Abnormal patterns of mRNA splicing are associated with diseases such as cancer, and splicing profiles have been shown to be effective in cancer classification<xref ref-type="bibr" rid="R5">5</xref>, <xref ref-type="bibr" rid="R6">6</xref>.</p>
+      <p id="P6">Heart failure is a leading cause of morbidity and mortality. Biomechanical loads induce gene expression changes in the heart. Heart failure also influences mRNA splicing, as indicated by focused studies of a small number of mRNA transcripts documenting disease-associated changes in mRNA splicing<xref ref-type="bibr" rid="R7">7</xref>,<xref ref-type="bibr" rid="R8">8</xref>. For instance, human heart failure was associated with higher expression of a dominant negative variant of the key transcription factor Serum Response Factor (SRF)<xref ref-type="bibr" rid="R7">7</xref>. Ischemic cardiomyopathy was accompanied by higher expression of an alternatively spliced variant of the sarcomere gene <italic>titin</italic>, resulting in reduced titin-derived myofibrillar stiffness<xref ref-type="bibr" rid="R8">8</xref>. However, global, genome-wide studies of differences in RNA splicing between control and diseased myocardium have not been reported.</p>
+      <p id="P7">We hypothesized that mRNA splicing is more widely altered in human heart failure than has been appreciated based on anecdotal evidence. We used the Affymetrix Exon array to interrogate RNA splicing in ischemic cardiomyopathy (ICM; n=15) and non-failing control (n=15) myocardium, and we used RT-PCR to validate findings in an independent set of 60 samples. We found substantial differences in RNA splicing between control and diseased myocardium, including splicing of sarcomeric genes. Measures of RNA splicing assigned samples to disease or control categories with 98% accuracy. Our results indicate that mRNA splicing is broadly perturbed in heart disease.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="S5">
+      <title>Materials and methods</title>
+      <sec id="S6">
+        <title>Patient samples</title>
+        <p id="P8">Left ventricular (LV) myocardial samples, remote from infarcted areas, were obtained from explanted cardiomyopathy hearts at the time of transplantation, from unused transplant donor hearts, and from hearts at the time of implant or explant of a LV assist device. Samples were frozen immediately in liquid nitrogen and stored at −80 °C. Collection and analysis of tissue samples was performed under protocols approved by Institutional Review Boards of participating institutions.</p>
+      </sec>
+      <sec id="S7">
+        <title>RNA extraction and transcript analysis</title>
+        <p id="P9">RNA was extracted with Trizol (Invitrogen) and further purified on RNeasy columns (Qiagen) with on column DNase digestion. Control and disease samples were of comparable high quality when analyzed using an Experion bio-analyzer (Bio-Rad). Probe generated from RNA was hybridized to Affymetrix GeneChip Human Exon 1.0 ST (HuEx) Arrays (Gene Expression Omnibus, accession number GSE16499).</p>
+        <p id="P10">RNA was converted to cDNA by random priming, using Superscript III reverse transcriptase (Invitrogen). PCR Primers are listed in <xref ref-type="supplementary-material" rid="SD1">Supplementary Table 1</xref>. RTPCR products were analyzed by gel electrophoresis, real time PCR, or capillary electrophoresis (see <xref ref-type="supplementary-material" rid="SD1">Supplementary Methods</xref>). Intergroup comparisons were performed using Welch's <italic>t</italic>-test. Values are expressed as mean ± SEM.</p>
+      </sec>
+      <sec id="S8">
+        <title>Bioinformatic analysis</title>
+        <p id="P11">We used several bioinformatic approaches to detect AS events and minimize false discoveries (<xref ref-type="supplementary-material" rid="SD1">Suppl Methods</xref>). We focused on genes with &lt; 50 exons, because large exon numbers increase multiple simultaneous hypothesis testing. We defined alternative splicing events as novel if they were not present in the Alternative Splicing and Transcript Diversity database<xref ref-type="bibr" rid="R9">9</xref>. Assignment to diagnostic class was performed using a logistic regression-based classifier derived from biomarkers based on splicing state (<xref ref-type="supplementary-material" rid="SD1">Suppl Methods</xref>).</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S9">
+      <title>Results</title>
+      <sec id="S10">
+        <title>Systematic alteration of RNA splicing in ischemic cardiomyopathy</title>
+        <p id="P12">We isolated total RNA from LV myocardium of patients with ischemic cardiomyopathy (ICM, n=15), obtained at the time of heart transplantation. Control samples (n=15) were obtained from transplant donor hearts not used for transplantation for non-cardiac reasons. Ischemic time in both groups was less than two hours. Groups were matched for sex (each 12 M and 3 F) and age (50.4 ± 1.9 yrs control vs 52.1 ± 1.1 yrs ICM). Clinical data are summarized in <xref ref-type="supplementary-material" rid="SD1">Suppl. Table 2</xref>.</p>
+        <p id="P13">RNA samples were hybridized to HuEx arrays. Each exon is represented by a “probeset” consisting of four oligonucleotides. Probesets are grouped by the level of supportive evidence. The “Core Probeset” represents Refseq exons, while the “Complete Probeset” includes the Core Probeset plus probesets supported by expressed sequence tags (ESTs) and by computational prediction. There are 232,448 and 1,653,912 Core and Complete Probesets, respectively, on the HuEx Array.</p>
+        <p id="P14">Whole gene expression levels were calculated by combining probe intensities for exons that belong to the same gene. Consistent with prior reports<xref ref-type="bibr" rid="R10">10</xref>, <xref ref-type="bibr" rid="R11">11</xref>, hierarchical clustering using genes with significant differential expression accurately segregated control and ICM samples (<xref ref-type="supplementary-material" rid="SD1">Suppl. Fig. 1a</xref>). We did not detect significantly differences in expression profiles between males and females within the control or ICM cohorts. 1036 genes were differentially expressed between control and ICM (nominal P &lt; 0.01). The differentially expressed genes substantially overlapped with differentially expressed genes in an independent profiling study of ICM samples<xref ref-type="bibr" rid="R12">12</xref> (<xref ref-type="supplementary-material" rid="SD1">Suppl. Fig 1b; Suppl. Table 3</xref>).</p>
+        <p id="P15">To determine if splicing profiles similarly segregate samples by diagnosis, we used the FIRMA method<xref ref-type="bibr" rid="R13">13</xref> on Core Probesets to score each gene for alternative splicing. When we selected genes with FIRMA scores that differed significantly between groups (false discovery rate (FDR) &lt; 1%), ICM and control samples clustered by diagnostic label (<xref ref-type="fig" rid="F1">Fig. 1</xref>), with only one sample placed in the incorrect cluster. This analysis showed that splicing is systematically altered in ICM versus control samples.</p>
+      </sec>
+      <sec id="S11">
+        <title>Altered splicing of sarcomere genes in heart disease</title>
+        <p id="P16">We next set out to identify genes that are differentially spliced between control and ICM groups. We analyzed Complete Probeset data using two different statistical approaches, AS-ANOVA and MADS<xref ref-type="bibr" rid="R14">14</xref>, to identify candidates likely to be differentially spliced between ICM and control groups. Those with significant scores by both methods (P &lt; 0.001) are shown in <xref ref-type="supplementary-material" rid="SD1">Suppl. Table 4</xref>. A subset of genes identified by these methods was visually inspected to identify those with likely altered splicing between groups. Amongst these screened candidates were several genes already known to regulate cardiomyocyte contraction or hypertrophy, including multiple sarcomere genes. Subsequently, we visually inspected all cardiomyopathy-associated sarcomere genes for potential differential splicing between groups. Two of the candidates, <italic>MYH7</italic> and <italic>TNNT2</italic>, are shown in <xref ref-type="fig" rid="F2">Fig. 2a–b</xref>. The TNNT2 alternative splicing event discovered here is distinct from those previously reported<xref ref-type="bibr" rid="R15">15</xref>, <xref ref-type="bibr" rid="R16">16</xref>.</p>
+        <p id="P17">We selected 20 candidate alternative splicing events (in 17 genes) differentially regulated in ICM for validation by RTPCR (<xref ref-type="table" rid="T1">Table 1</xref>, <xref ref-type="fig" rid="F2">Fig. 2</xref>, and <xref ref-type="supplementary-material" rid="SD1">Suppl. Fig. 2</xref>). Eleven involved intron retention, a relatively infrequent form of alternative splicing<xref ref-type="bibr" rid="R17">17</xref>. Additionally, eleven of these events were not previously reported in the Alternative Splicing Database<xref ref-type="bibr" rid="R9">9</xref>. To confirm these novel alternative splicing isoforms and define the mechanism of alternative splicing, we sequenced RTPCR products using primers predicted to span exon-exon boundaries. Of the eleven novel putative splicing events, we confirmed nine (<xref ref-type="table" rid="T1">Table 1</xref> and <xref ref-type="supplementary-material" rid="SD1">Suppl. Fig. 2</xref>).</p>
+        <p id="P18">Motifs for the well-characterized splicing regulators muscleblind-like (MBNL) and hnRNP F were significantly overrepresented in sequences flanking differentially spliced exons (<xref ref-type="supplementary-material" rid="SD1">Suppl. Table 5</xref>; p &lt; 10<sup>−6</sup>). Based on the exon array, hnRNP F expression was downregulated in ICM by 1.3-fold (nominal p-value 0.0012), while MBNL mRNA expression was not significantly changed. These data suggest that MBNL and hnRNP F participate in altered RNA splicing observed in human heart failure.</p>
+        <p id="P19">To validate differential alternative splicing between groups, we designed semi-quantitative RTPCR assays to measure the ratio of minor and major splice isoforms, and compared the ratio between groups. Out of the 20 splicing events, we were successful in designing RTPCR assays for 17. Of these 17 events, RTPCR showed that five splicing events involving four genes were enriched in ICM compared to control (P &lt; 0.05; n=15; <xref ref-type="fig" rid="F2">Figure 2c–d</xref>). Interestingly, these four genes are involved in sarcomere structure and function. One gene, Filamin C gamma (<italic>FLNC</italic>), a muscle-restricted actin binding protein localized to Z-discs and intercalated discs<xref ref-type="bibr" rid="R18">18</xref>, <xref ref-type="bibr" rid="R19">19</xref>, exhibited higher inclusion of a previously described cassette exon (<xref ref-type="fig" rid="F2">Fig. 2c–d</xref>). The other three genes, <italic>MYH7</italic> (beta myosin heavy chain), <italic>TNNI3</italic> (cardiac troponin I), and <italic>TNNT2</italic> (cardiac troponin T), underwent greater intron retention in heart failure, resulting in incorporation of in-frame stop codons. (<xref ref-type="fig" rid="F2">Figure 2c–d</xref>). Two separate intron retention events in <italic>MYH7</italic>, referred to as <italic>MYH7-1</italic> and <italic>MYH7-2</italic>, were higher in ICM.</p>
+        <p id="P20">We performed several control experiments to verify that these intron retentions were not artifacts. First, all RTPCR experiments were performed with and without addition of reverse transcriptase, and we observed no RTPCR products in the absence of this enzyme (<xref ref-type="supplementary-material" rid="SD1">Suppl. Fig. 3a</xref> and data not shown). Second, sequencing of RTPCR products verified amplification of the intended fragment and demonstrated lack of splicing at the reference sequence exon-intron boundary in the minor isoform. Third, the intron retention products were also detected with oligo-dT-priming of RT reactions, indicating that the intron retention products are on polyadenylated transcripts.</p>
+        <p id="P21">We next sought to validate and extend our findings in independent samples. We used quantitative RTPCR assays to measure minor to major isoform ratios of <italic>TNNI3</italic>, <italic>MYH7-1, MYH7-2</italic>, <italic>TNNT2</italic>, and <italic>FLNC</italic> in LV RNA from control, ICM, idiopathic dilated cardiomyopathy (DCM), and aortic stenosis (AS) patients, obtained at different centers from the 30 samples initially used for array analysis (<xref ref-type="fig" rid="F3">Fig. 3a–b</xref>). These samples were described previously<xref ref-type="bibr" rid="R20">20</xref>. For ICM, we again found higher minor to major isoform ratios of <italic>MYH7-1</italic>, <italic>MYH7-2</italic>, <italic>TNNI3</italic>, <italic>TNNT2</italic>, and <italic>FLNC,</italic> indicating that these findings are reproducible in independent patient populations and in tissue collected at different centers (<xref ref-type="fig" rid="F3">Fig. 3a</xref>). The minor to major isoform ratio of all four genes was also higher in dilated cardiomyopathy (DCM; P &lt; 0.05) and aortic stenosis (AS; P &lt; 0.05; <xref ref-type="fig" rid="F3">Fig. 3a–b</xref>), distinct forms of heart disease.</p>
+        <p id="P22">The aortic stenosis samples gave us to opportunity to investigate if RNA splicing differences are evident prior to the onset of overt heart failure, as 5 AS samples were from patients with heart failure (EF &lt; 50%), while 5 were from patients with compensated heart function (EF ≥ 50%). Importantly, the splicing ratios of these genes were the indistinguishable between compensated and failing AS myocardium. This suggests that splicing differences are present in diseased hearts with elevated mechanical load, prior to the onset of overt heart failure.</p>
+        <p id="P23">Conversely, we considered whether mechanical unloading of failing hearts, through placement of LV assist devices (LVADs), was sufficient to correct abnormal splicing patterns. Similar studies of gene expression have shown that mechanical unloading normalizes expression of some but not all genes<xref ref-type="bibr" rid="R21">21</xref>, <xref ref-type="bibr" rid="R22">22</xref>. Therefore, we compared splicing of these genes before and after LVAD placement in patients with end stage heart disease (n = 4). RTPCR measurement of the minor to major isoform ratio showed that LVAD placement did not significantly change splicing of these genes (<xref ref-type="fig" rid="F3">Fig. 3c</xref>). The splicing profile of these samples was consistent with the pattern observed in diseased hearts (see below).</p>
+        <p id="P24">Exon array probes located in sarcomere gene introns identified several introns that were spliced less efficiently in heart failure. To determine if inefficient splicing was widespread in heart failure, we used quantitative real time RTPCR to measure 5 arbitrarily chosen introns and one exon in each of 4 sarcomere genes (<italic>TNNT2</italic>, <italic>TNNI3</italic>, <italic>MYH7</italic>, and <italic>MYBPC3</italic>). Comparison of ICM to control samples showed that introns were spliced out with significantly reduced efficiency in ICM. This was evident when the intron/exon ratio was compared between groups for all genes (<xref ref-type="fig" rid="F4">Fig. 4a</xref>) or when intron/exon ratios were analyzed by gene (<xref ref-type="fig" rid="F4">Fig. 4b</xref>). Analysis of each intron individually demonstrated considerable heterogeneity between samples. Despite reduced statistical power in this analysis, two additional introns showed statistically higher intron retention (<xref ref-type="fig" rid="F4">Fig. 4c</xref>). Both of these intron retentions were significantly higher in an independent set of ICM and control samples (n = 5; P &lt; 0.05; data not shown). These data indicate that ICM is associated with reduced splicing efficiency that affects some introns to a greater degree than others.</p>
+        <p id="P25">Lower splicing efficiency in heart failure led us to ask if splicing precision was also affected. To test this hypothesis, we developed a moderate throughput, coupled RTPCR-capillary electrophoresis assay to detect and measure minor variations at exon-exon junctions. For pilot studies, we examined a novel splice variant of <italic>TNNT2</italic> that we discovered in the course of sequencing to validate <italic>TNNT2</italic> intron retention. This variant arises from use of an alternative 5' splice acceptor on <italic>TNNT2</italic> exon 7, resulting in a spliced transcript lacking three nucleotides and consequently resulting in an in-frame deletion of aspartate 41 (p.Asp41del; c.203_205delAAG [NM_001001431]; <xref ref-type="fig" rid="F5">Fig. 5a</xref>). When known ratios of wild-type and c.203_205delAAG <italic>TNNT2</italic> variants were mixed, we were able to detect the minor variant when it was present at 5% of the major isoform (<xref ref-type="fig" rid="F5">Fig. 5b</xref>). Analysis of control and ICM samples (n=15) showed that the c.203_205delAAG variant comprised 5–10% of <italic>TNNT2</italic> transcripts and did not significantly differ between groups (<xref ref-type="fig" rid="F5">Fig. 5c</xref> and data not shown). We next used the RTPCR-capillary electrophoresis platform to anaylze 48 additional amplicons that encompass all coding exon-exon junctions of nine sarcomere genes that are known to genetically contribute to inherited cardiomyopathies (<italic>myosin binding protein c3</italic> [<italic>MYBPC3</italic>], <italic>cardiac alpha actin</italic> [<italic>ACTC1</italic>], <italic>myosin light chain 2</italic> [<italic>MYL2</italic>], <italic>myosin light chain 3</italic> [<italic>MYL3</italic>], <italic>MYH7</italic>, <italic>cardiac troponin C</italic> [<italic>TNNC1</italic>], <italic>TNNI3</italic>, <italic>TNNT2</italic>, and <italic>alpha tropomyosin</italic> [<italic>TPM1</italic>]) for similar splice junction variation. This survey revealed only one other minor isoform involving fine differences of exon-exon junctions. This again occurred in <italic>TNNT2</italic>, in an amplicon (primers 3F/3R; <xref ref-type="supplementary-material" rid="SD1">Supplementary Table 1</xref>) that spans exons 12–16. The peak area of the minor isoform was &lt; 5% of the major isoform and did not vary between control and ICM groups. These data indicate that the splicing of sarcomere genes remains precise in heart failure.</p>
+      </sec>
+      <sec id="S12">
+        <title>Splicing Profiles Accurately Label Samples with Diagnostic Class</title>
+        <p id="P26">Splicing profiles are effective diagnostic classifiers in cancer<xref ref-type="bibr" rid="R5">5</xref>, <xref ref-type="bibr" rid="R6">6</xref>. To begin to investigate the effectiveness of splicing profiles as biomarkers in heart disease, we asked whether the splicing pattern of <italic>MYH7-2</italic>, <italic>TNNT2</italic>, and <italic>FLNC</italic> was sufficient to classify samples as control or diseased. Pilot studies, in which we measured minor to major splicing ratios for <italic>MYH7-2</italic>, <italic>TNNT2</italic>, and <italic>FLNC</italic> in 20 samples (control, ICM, DCM, and AS, 5 per group) by qRTPCR, suggested that splicing profiles of these genes could accurately assign control and disease diagnostic labels. Therefore, we expanded the study to include an additional 40 samples (10 per group). Principal component analysis of the 60 samples indicated that splicing profiles of these genes effectively separated control and disease samples (<xref ref-type="fig" rid="F6">Fig. 6</xref>). Consistent with this observation, a logistic regression-based classifier trained on the 40 samples to classify control versus disease samples assigned the remaining 20 samples to control or disease groups with 100% accuracy. Similarly, greater than 98% accuracy was attained when 20 samples were used as the training set and 40 samples were used as the validation set. This level of accuracy was also observed in a 5-fold cross validation study over 20 permutations of the combined 60 samples. One ICM sample, apparent on the Principal component analysis (arrow, <xref ref-type="fig" rid="F6">Fig. 6</xref>), was frequently misclassfied as control. The classifier assigned both pre- and post- LVAD samples to the disease class.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="S13">
+      <title>Discussion</title>
+      <p id="P27">We used the Affymetrix exon array to interrogate alternative splicing in human heart failure. Our data document for the first time global differences in RNA splicing that occur in diseased compared to control hearts. ICM and control samples clustered separately by their mRNA splicing profiles. We identified nine novel alternative splicing events, including six novel alternative splicing events in well-studied sarcomere genes (1 in <italic>TNNI3</italic>, <italic>TNNT2</italic>, <italic>MYH6</italic>, and <italic>MYBPC3</italic>, and 2 in <italic>MYH7</italic>). Moreover, we showed that splicing of four sarcomere genes, <italic>FLNC</italic>, <italic>TNNI3</italic>, <italic>TNNT2</italic>, and <italic>MYH7</italic> was different in diseased compared to control hearts. These changes in splicing likely occur prior to the onset of overt heart failure, as they were also altered in AS patients with LV hypertrophy but preserved ventricular function. In addition, LVAD placement in failing hearts did not correct aberrant splicing of these genes, suggesting that molecular changes that lead to abnormal splicing of these genes are not readily reversible by mechanical unloading.</p>
+      <p id="P28">Differences in minor to major isoform ratios of specific genes were highly characteristic of heart disease, such that the ratio of three splice variants of <italic>MYH7</italic>, <italic>TNNT2</italic>, and <italic>FLNC</italic> assigned samples into normal and disease classes with greater than 98% accuracy. The classification accuracy of splicing profiles suggests that splicing ratios may be developed as useful diagnostic and prognostic biomarkers in heart failure. mRNA expression profiling of myocardial samples has been investigated as a diagnostic and prognostic tool in heart disease, and initial studies indicate that transcriptional profiles predict prognosis and disease severity in ICM<xref ref-type="bibr" rid="R23">23</xref>, <xref ref-type="bibr" rid="R24">24</xref>. Our results suggest that measurement of RNA splicing may be a useful adjunct to gene level measurements of transcript abundance. Further proof of concept will involve identifying splicing events that accurately label samples with disease class, which has been used as further proof of concept of prognostic utility of gene expression profiles<xref ref-type="bibr" rid="R25">25</xref> Although the three splicing events at <italic>MYH7</italic>, <italic>TNNT2</italic>, and <italic>FLNC</italic> were not able to discriminator among different subtypes of heart disease, this is not unexpected because they were discovered in a screen of splicing events differentially regulated in control versus ICM. Screening for splicing events differentially regulated between disease classes may identify splicing events that distinguish between disease classes.</p>
+      <p id="P29">A surprising finding of the exon array, validated by RTPCR, was the high frequency of intron retention events among splicing events differentially regulated between ICM and control hearts. Consequently, we surveyed 20 unselected introns of sarcomere genes and found significantly reduced excision of multiple introns in ICM. This suggests that ICM is accompanied by widespread reduction of splicing efficiency. This reduction in intron splicing affected some introns to a greater degree than others. While RNA splicing efficiency was lower in heart failure, the precision of splicing was not significantly affected, as demonstrated by our survey of all coding exon-exon junctions of eight sarcomere genes for variation in splice donor or acceptor sites.</p>
+      <p id="P30">We validated differential splicing of four sarcomere genes, <italic>MYH7</italic>, <italic>TNNI3</italic>, <italic>TNNT2</italic>, and <italic>FLNC</italic>, in diseased versus normal myocardium. <italic>FLNC</italic> is a large, rod-like actin binding protein expressed in striated muscles and localized to Z-disks and intercalated discs<xref ref-type="bibr" rid="R18">18</xref>, <xref ref-type="bibr" rid="R19">19</xref>. Mutation of <italic>FLNC</italic> caused dilated cardiomyopathy. <italic>FLNC</italic> contains a cassette exon encoding a flexible hinge region<xref ref-type="bibr" rid="R18">18</xref>. In normal muscle, this cassette exon is largely spliced out to yield the <italic>FLNC</italic> (−<italic>H1</italic>) variant<xref ref-type="bibr" rid="R26">26</xref>. We show that the <italic>FLNC</italic> variant that includes this flexible hinge region, <italic>FLNC (+H1)</italic>, increases in heart disease, potentially altering structure or function of Z-disks, key signaling centers in cardiomyocytes.</p>
+      <p id="P31">The sarcomere genes <italic>MYH7</italic>, <italic>TNNI3</italic>, and <italic>TNNT2</italic> exhibited increased intron retention in diseased myocardium. The fraction of total transcripts with retained introns was low (by quantitative PCR for MYH7-2, 0.1% and 0.3% in control and ICM hearts, respectively), but the fold increase in transcripts with retained introns was substantial (up to 15-fold; <xref ref-type="fig" rid="F4">Fig. 4</xref>). The functional significance of increased abundance of incompletely spliced transcripts will require further investigation. Intron retention also results in transcripts containing premature stop codons, which may reduce effective translation, cause nonsense-mediated decay, produce incomplete proteins that have dominant negative activity<xref ref-type="bibr" rid="R27">27</xref>, or contribute to protein aggregates seen in some forms of heart disease.</p>
+      <p id="P32">In addition to alternative splicing of <italic>TNNT2</italic> involving retention of the intron following exon 7, we also found a novel <italic>TNNT2</italic> isoform generated by alternative splice acceptor usage at the 5' boundary of exon 7. This confirmed prior a suggestion there may be two closely space splice acceptors at this location<xref ref-type="bibr" rid="R28">28</xref>. Variable 5' splice acceptor usage resulted in 5–10% of adult <italic>TNNT2</italic> transcripts encoding a protein lacking Asp41. Expression of this variant was not different in ICM. The N-terminus of TNNT2 encoded by exons 2–7 is less well conserved than the C-terminus and undergoes developmentally regulated alternative splicing<xref ref-type="bibr" rid="R29">29</xref> that influences differential sensitivity of the fetal heart to hypoxia and acidosis<xref ref-type="bibr" rid="R30">30</xref>. The importance of this region of TNNT is underscored by an intron 3 polymorphism that alters splicing of exon 4 and predisposes to LV hypertrophy<xref ref-type="bibr" rid="R31">31</xref>.</p>
+      <p id="P33">Several limitations of this study should be noted. First, while the exon array revealed interesting aspects of RNA splicing in heart disease, the it has limited resolution and sensitivity. Perhaps as a result of this limitations, previously reported alternative splicing of titin<xref ref-type="bibr" rid="R8">8</xref> and TNNT2 exons 4–6<xref ref-type="bibr" rid="R16">16</xref>, <xref ref-type="bibr" rid="R32">32</xref> were not detected by our exon array analysis. Future studies might take advantage of the recently reported application of massively parallel sequencing strategies to sequence the entire mRNA transcriptome (mRNA-seq)<xref ref-type="bibr" rid="R1">1</xref>, <xref ref-type="bibr" rid="R17">17</xref>, which permits quantitative delineation of alternative splicing at nucleotide resolution. Second, our global analysis compared ICM to control myocardium, and therefore it is not surprising that the splicing events arising from this screen were not effective in differentiating between disease states. Additional studies of mRNA splicing in different heart disease classes will be required to provide further proof of principle that myocardial splicing-related biomarkers contain this type of clinically important information.</p>
+      <p id="P34">In summary, we showed that RNA splicing is altered in human heart failure. We identified novel splicing events and heart failure associated differences in RNA splicing of several key sarcomere genes. Our data demonstrate reduction of RNA splicing efficiency in heart failure. These changes in RNA splicing may contribute to pathogenesis of heart disease. In addition, RNA splicing patterns accurately classified samples by diagnostic label, providing proof of concept that RNA splicing patterns may have utility as diagnostic or prognostic markers in heart disease.</p>
+      <boxed-text id="BX1" position="float">
+        <p id="P35">Changes in gene expression accompany and contribute to heart failure. These gene expression changes have been documented at the whole gene level using microarray based, genome-wide expression profiling approaches. However, global changes in mRNA splicing in heart failure have not been previously studied. Here, we use a microarray that individually measures expression of each known or putative exon and reverse transcription PCR assays to examine splicing changes that accompany heart failure. We found that broad changes in RNA splicing occur in the failing heart. Many of these changes were indicative of decreased efficiency of RNA splicing, and among the affected genes were several sarcomere genes. These splicing changes were also observed in hypertrophied myocardium with preserved systolic function, suggesting that the splicing changes may occur prior to the onset of overt heart failure. The splicing changes were characteristic of diseased myocardium. A prediction model using the splicing of three sarcomere genes discriminated failing from non-failing hearts with 98% accuracy, providing proof of principle that splicing-based biomarkers may provide diagnostic and prognostic information on patients with heart disease. Future studies will be needed to prospectively evaluate the value of splicing-based myocardial biomarkers in individualizing therapy in heart failure. Future work will also be needed to determine whether changes in RNA splicing are functionally important in the pathogenesis of heart disease, and whether targeted modulation of splicing is a useful therapeutic strategy for heart failure.</p>
+      </boxed-text>
+    </sec>
+    <sec sec-type="supplementary-material" id="SM">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="SD1">
+        <label>Supp1</label>
+        <media xlink:href="NIHMS272922-supplement-Supp1.pdf" xlink:type="simple" id="N0x1f57aef0N0x20537b40" position="anchor" mimetype="application" mime-subtype="pdf"/>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack id="S14">
+      <p><bold>Funding sources:</bold> This work was funded a charitable donation from Edward Marram and Karen Carpenter (WTP) and grants from NIH (WTP, R21HL89417), the Charles H. Hood Foundation (SWK), and the University of Sydney (JWKH). The Molecular Genetics Core Facility at Children's Hospital performed microarray experiments (NIH-P50-NS40828 and NIH-P30-HD18655).</p>
+    </ack>
+    <fn-group>
+      <fn id="FN2">
+        <p id="P36"><bold>Conflict of Interest Disclosures:</bold> Jennifer Hall is a consultant for Catholic Health Care West.</p>
+      </fn>
+      <fn id="FN3">
+        <p content-type="publisher disclaimer" id="P37">This is a PDF file of an unedited manuscript that has been accepted for publication. As a service to our customers we are providing this early version of the manuscript. The manuscript will undergo copyediting, typesetting, and review of the resulting proof before it is published in its final citable form. Please note that during the production process errors may be discovered which could affect the content, and all legal disclaimers that apply to the journal pertain.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="R1">
+        <label>1</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Gerstein</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Snyder</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>RNA-Seq: a revolutionary tool for transcriptomics</article-title>
+          <source>Nat Rev Genet</source>
+          <year>2009</year>
+          <volume>10</volume>
+          <fpage>57</fpage>
+          <lpage>63</lpage>
+          <pub-id pub-id-type="pmid">19015660</pub-id>
+        </citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Blencowe</surname>
+              <given-names>BJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Alternative splicing: new insights from global analyses</article-title>
+          <source>Cell</source>
+          <year>2006</year>
+          <volume>126</volume>
+          <fpage>37</fpage>
+          <lpage>47</lpage>
+          <pub-id pub-id-type="pmid">16839875</pub-id>
+        </citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stamm</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Signals and their transduction pathways regulating alternative splicing: a new dimension of the human genome</article-title>
+          <source>Hum Mol Genet</source>
+          <year>2002</year>
+          <volume>11</volume>
+          <fpage>2409</fpage>
+          <lpage>2416</lpage>
+          <pub-id pub-id-type="pmid">12351576</pub-id>
+        </citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Kato</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Shiue</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Shively</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Ares</surname>
+              <given-names>M</given-names>
+              <suffix>Jr.</suffix>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>RJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Cell type and culture condition-dependent alternative splicing in human breast cancer cells revealed by splicing-sensitive microarrays</article-title>
+          <source>Cancer Res</source>
+          <year>2006</year>
+          <volume>66</volume>
+          <fpage>1990</fpage>
+          <lpage>1999</lpage>
+          <pub-id pub-id-type="pmid">16488998</pub-id>
+        </citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>HR</given-names>
+            </name>
+            <name>
+              <surname>Fan</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Wang-Rodriguez</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Downs</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Fu</surname>
+              <given-names>XD</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>MQ</given-names>
+            </name>
+          </person-group>
+          <article-title>Profiling alternatively spliced mRNA isoforms for prostate cancer classification</article-title>
+          <source>BMC Bioinformatics</source>
+          <year>2006</year>
+          <volume>7</volume>
+          <fpage>202</fpage>
+          <pub-id pub-id-type="pmid">16608523</pub-id>
+        </citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Venables</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Klinck</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Bramard</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Inkel</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Dufresne-Martin</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Koh</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Gervais-Bird</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Lapointe</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Froehlich</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Durand</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Gendron</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Brosseau</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Thibault</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Lucier</surname>
+              <given-names>JF</given-names>
+            </name>
+            <name>
+              <surname>Tremblay</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Prinos</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Wellinger</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Chabot</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Rancourt</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Elela</surname>
+              <given-names>SA</given-names>
+            </name>
+          </person-group>
+          <article-title>Identification of alternative splicing markers for breast cancer</article-title>
+          <source>Cancer Res</source>
+          <year>2008</year>
+          <volume>68</volume>
+          <fpage>9525</fpage>
+          <lpage>9531</lpage>
+          <pub-id pub-id-type="pmid">19010929</pub-id>
+        </citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Davis</surname>
+              <given-names>FJ</given-names>
+            </name>
+            <name>
+              <surname>Gupta</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Pogwizd</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Bacha</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Jeevanandam</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Gupta</surname>
+              <given-names>MP</given-names>
+            </name>
+          </person-group>
+          <article-title>Increased expression of alternatively spliced dominant-negative isoform of SRF in human failing hearts</article-title>
+          <source>Am J Physiol Heart Circ Physiol</source>
+          <year>2002</year>
+          <volume>282</volume>
+          <fpage>H1521</fpage>
+          <lpage>33</lpage>
+          <pub-id pub-id-type="pmid">11893590</pub-id>
+        </citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Neagoe</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Kulke</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>del Monte</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Gwathmey</surname>
+              <given-names>JK</given-names>
+            </name>
+            <name>
+              <surname>de Tombe</surname>
+              <given-names>PP</given-names>
+            </name>
+            <name>
+              <surname>Hajjar</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Linke</surname>
+              <given-names>WA</given-names>
+            </name>
+          </person-group>
+          <article-title>Titin isoform switch in ischemic human heart disease</article-title>
+          <source>Circulation</source>
+          <year>2002</year>
+          <volume>106</volume>
+          <fpage>1333</fpage>
+          <lpage>1341</lpage>
+          <pub-id pub-id-type="pmid">12221049</pub-id>
+        </citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Koscielny</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Le Texier</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Gopalakrishnan</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Kumanduri</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Riethoven</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Nardone</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Stanley</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Fallsehr</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Hofmann</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Kull</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Harrington</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Boue</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Eyras</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Plass</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Lopez</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Ritchie</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Moucadel</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Ara</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Pospisil</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Herrmann</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>G Reich</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Guigo</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Bork</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Doeberitz</surname>
+              <given-names>MK</given-names>
+            </name>
+            <name>
+              <surname>Vilo</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Hide</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Apweiler</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Thanaraj</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name>
+              <surname>Gautheret</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>ASTD: The Alternative Splicing and Transcript Diversity database</article-title>
+          <source>Genomics</source>
+          <year>2009</year>
+          <volume>93</volume>
+          <fpage>213</fpage>
+          <lpage>220</lpage>
+          <pub-id pub-id-type="pmid">19059335</pub-id>
+        </citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hwang</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Allen</surname>
+              <given-names>PD</given-names>
+            </name>
+            <name>
+              <surname>Tseng</surname>
+              <given-names>GC</given-names>
+            </name>
+            <name>
+              <surname>Lam</surname>
+              <given-names>CW</given-names>
+            </name>
+            <name>
+              <surname>Fananapazir</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Dzau</surname>
+              <given-names>VJ</given-names>
+            </name>
+            <name>
+              <surname>Liew</surname>
+              <given-names>CC</given-names>
+            </name>
+          </person-group>
+          <article-title>Microarray gene expression profiles in dilated and hypertrophic cardiomyopathic end-stage heart failure</article-title>
+          <source>Physiol Genomics</source>
+          <year>2002</year>
+          <volume>10</volume>
+          <fpage>31</fpage>
+          <lpage>44</lpage>
+          <pub-id pub-id-type="pmid">12118103</pub-id>
+        </citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kittleson</surname>
+              <given-names>MM</given-names>
+            </name>
+            <name>
+              <surname>Minhas</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Irizarry</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Ye</surname>
+              <given-names>SQ</given-names>
+            </name>
+            <name>
+              <surname>Edness</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Breton</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Conte</surname>
+              <given-names>JV</given-names>
+            </name>
+            <name>
+              <surname>Tomaselli</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Garcia</surname>
+              <given-names>JG</given-names>
+            </name>
+            <name>
+              <surname>Hare</surname>
+              <given-names>JM</given-names>
+            </name>
+          </person-group>
+          <article-title>Gene expression analysis of ischemic and nonischemic cardiomyopathy: shared and distinct genes in the development of heart failure</article-title>
+          <source>Physiol Genomics</source>
+          <year>2005</year>
+          <volume>21</volume>
+          <fpage>299</fpage>
+          <lpage>307</lpage>
+          <pub-id pub-id-type="pmid">15769906</pub-id>
+        </citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hannenhalli</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Putt</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>Gilmore</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Parmacek</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name>
+              <surname>Epstein</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Morrisey</surname>
+              <given-names>EE</given-names>
+            </name>
+            <name>
+              <surname>Margulies</surname>
+              <given-names>KB</given-names>
+            </name>
+            <name>
+              <surname>Cappola</surname>
+              <given-names>TP</given-names>
+            </name>
+          </person-group>
+          <article-title>Transcriptional genomics associates FOX transcription factors with human heart failure</article-title>
+          <source>Circulation</source>
+          <year>2006</year>
+          <volume>114</volume>
+          <fpage>1269</fpage>
+          <lpage>1276</lpage>
+          <pub-id pub-id-type="pmid">16952980</pub-id>
+        </citation>
+      </ref>
+      <ref id="R13">
+        <label>13</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Purdom</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Simpson</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Robinson</surname>
+              <given-names>MD</given-names>
+            </name>
+            <name>
+              <surname>Conboy</surname>
+              <given-names>JG</given-names>
+            </name>
+            <name>
+              <surname>Lapuk</surname>
+              <given-names>AV</given-names>
+            </name>
+            <name>
+              <surname>Speed</surname>
+              <given-names>TP</given-names>
+            </name>
+          </person-group>
+          <article-title>FIRMA: a method for detection of alternative splicing from exon array data</article-title>
+          <source>Bioinformatics</source>
+          <year>2008</year>
+          <volume>24</volume>
+          <fpage>1707</fpage>
+          <lpage>1714</lpage>
+          <pub-id pub-id-type="pmid">18573797</pub-id>
+        </citation>
+      </ref>
+      <ref id="R14">
+        <label>14</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xing</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Stoilov</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Kapur</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Han</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Jiang</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Shen</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Black</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Wong</surname>
+              <given-names>WH</given-names>
+            </name>
+          </person-group>
+          <article-title>MADS: a new and improved method for analysis of differential alternative splicing by exon-tiling microarrays</article-title>
+          <source>RNA</source>
+          <year>2008</year>
+          <volume>14</volume>
+          <fpage>1470</fpage>
+          <lpage>1479</lpage>
+          <pub-id pub-id-type="pmid">18566192</pub-id>
+        </citation>
+      </ref>
+      <ref id="R15">
+        <label>15</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Anderson</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Malouf</surname>
+              <given-names>NN</given-names>
+            </name>
+            <name>
+              <surname>Oakeley</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Pagani</surname>
+              <given-names>ED</given-names>
+            </name>
+            <name>
+              <surname>Allen</surname>
+              <given-names>PD</given-names>
+            </name>
+          </person-group>
+          <article-title>Troponin T isoform expression in humans. A comparison among normal and failing adult heart, fetal heart, and adult and fetal skeletal muscle</article-title>
+          <source>Circ Res</source>
+          <year>1991</year>
+          <volume>69</volume>
+          <fpage>1226</fpage>
+          <lpage>1233</lpage>
+          <pub-id pub-id-type="pmid">1934353</pub-id>
+        </citation>
+      </ref>
+      <ref id="R16">
+        <label>16</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mesnard-Rouiller</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Mercadier</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Butler-Browne</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Heimburger</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Logeart</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Allen</surname>
+              <given-names>PD</given-names>
+            </name>
+            <name>
+              <surname>Samson</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <article-title>Troponin T mRNA and protein isoforms in the human left ventricle: pattern of expression in failing and control hearts</article-title>
+          <source>J Mol Cell Cardiol</source>
+          <year>1997</year>
+          <volume>29</volume>
+          <fpage>3043</fpage>
+          <lpage>3055</lpage>
+          <pub-id pub-id-type="pmid">9405179</pub-id>
+        </citation>
+      </ref>
+      <ref id="R17">
+        <label>17</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>ET</given-names>
+            </name>
+            <name>
+              <surname>Sandberg</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Luo</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Khrebtukova</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Mayr</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Kingsmore</surname>
+              <given-names>SF</given-names>
+            </name>
+            <name>
+              <surname>Schroth</surname>
+              <given-names>GP</given-names>
+            </name>
+            <name>
+              <surname>Burge</surname>
+              <given-names>CB</given-names>
+            </name>
+          </person-group>
+          <article-title>Alternative isoform regulation in human tissue transcriptomes</article-title>
+          <source>Nature</source>
+          <year>2008</year>
+          <volume>456</volume>
+          <fpage>470</fpage>
+          <lpage>476</lpage>
+          <pub-id pub-id-type="pmid">18978772</pub-id>
+        </citation>
+      </ref>
+      <ref id="R18">
+        <label>18</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>van der Flier</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Sonnenberg</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Structural and functional aspects of filamins</article-title>
+          <source>Biochim Biophys Acta</source>
+          <year>2001</year>
+          <volume>1538</volume>
+          <fpage>99</fpage>
+          <lpage>117</lpage>
+          <pub-id pub-id-type="pmid">11336782</pub-id>
+        </citation>
+      </ref>
+      <ref id="R19">
+        <label>19</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Estigoy</surname>
+              <given-names>CB</given-names>
+            </name>
+            <name>
+              <surname>Pontén</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Odeberg</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Herbert</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Guilhaus</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Charleston</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ho</surname>
+              <given-names>JWK</given-names>
+            </name>
+            <name>
+              <surname>Cameron</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>dos Remedios</surname>
+              <given-names>CG</given-names>
+            </name>
+          </person-group>
+          <article-title>Intercalated discs: multiple proteins perform multiple functions in non-failing and failing human hearts</article-title>
+          <source>Biophysical Reviews</source>
+          <fpage>43</fpage>
+          <lpage>49</lpage>
+        </citation>
+      </ref>
+      <ref id="R20">
+        <label>20</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ikeda</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kong</surname>
+              <given-names>SW</given-names>
+            </name>
+            <name>
+              <surname>Lu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Bisping</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Allen</surname>
+              <given-names>PD</given-names>
+            </name>
+            <name>
+              <surname>Golub</surname>
+              <given-names>TR</given-names>
+            </name>
+            <name>
+              <surname>Pieske</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Pu</surname>
+              <given-names>WT</given-names>
+            </name>
+          </person-group>
+          <article-title>Altered microRNA expression in human heart disease</article-title>
+          <source>Physiol Genomics</source>
+          <year>2007</year>
+          <volume>31</volume>
+          <fpage>367</fpage>
+          <lpage>373</lpage>
+          <pub-id pub-id-type="pmid">17712037</pub-id>
+        </citation>
+      </ref>
+      <ref id="R21">
+        <label>21</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hall</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Grindle</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Han</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Fermin</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Park</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Bache</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Mariash</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Guan</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Ormaza</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Thompson</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Graziano</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>de Sam Lazaro</surname>
+              <given-names>SE</given-names>
+            </name>
+            <name>
+              <surname>Pan</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Simari</surname>
+              <given-names>RD</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>LW</given-names>
+            </name>
+          </person-group>
+          <article-title>Genomic profiling of the human heart before and after mechanical support with a ventricular assist device reveals alterations in vascular signaling networks</article-title>
+          <source>Physiol Genomics</source>
+          <year>2004</year>
+          <volume>17</volume>
+          <fpage>283</fpage>
+          <lpage>291</lpage>
+          <pub-id pub-id-type="pmid">14872006</pub-id>
+        </citation>
+      </ref>
+      <ref id="R22">
+        <label>22</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Margulies</surname>
+              <given-names>KB</given-names>
+            </name>
+            <name>
+              <surname>Matiwala</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Cornejo</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Olsen</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Craven</surname>
+              <given-names>WA</given-names>
+            </name>
+            <name>
+              <surname>Bednarik</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Mixed messages: transcription patterns in failing and recovering human myocardium</article-title>
+          <source>Circ Res</source>
+          <year>2005</year>
+          <volume>96</volume>
+          <fpage>592</fpage>
+          <lpage>599</lpage>
+          <pub-id pub-id-type="pmid">15718504</pub-id>
+        </citation>
+      </ref>
+      <ref id="R23">
+        <label>23</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Heidecker</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Kasper</surname>
+              <given-names>EK</given-names>
+            </name>
+            <name>
+              <surname>Wittstein</surname>
+              <given-names>IS</given-names>
+            </name>
+            <name>
+              <surname>Champion</surname>
+              <given-names>HC</given-names>
+            </name>
+            <name>
+              <surname>Breton</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Russell</surname>
+              <given-names>SD</given-names>
+            </name>
+            <name>
+              <surname>Kittleson</surname>
+              <given-names>MM</given-names>
+            </name>
+            <name>
+              <surname>Baughman</surname>
+              <given-names>KL</given-names>
+            </name>
+            <name>
+              <surname>Hare</surname>
+              <given-names>JM</given-names>
+            </name>
+          </person-group>
+          <article-title>Transcriptomic biomarkers for individual risk assessment in new-onset heart failure</article-title>
+          <source>Circulation</source>
+          <year>2008</year>
+          <volume>118</volume>
+          <fpage>238</fpage>
+          <lpage>246</lpage>
+          <pub-id pub-id-type="pmid">18591436</pub-id>
+        </citation>
+      </ref>
+      <ref id="R24">
+        <label>24</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Margulies</surname>
+              <given-names>KB</given-names>
+            </name>
+            <name>
+              <surname>Bednarik</surname>
+              <given-names>DP</given-names>
+            </name>
+            <name>
+              <surname>Dries</surname>
+              <given-names>DL</given-names>
+            </name>
+          </person-group>
+          <article-title>Genomics, transcriptional profiling, and heart failure</article-title>
+          <source>J Am Coll Cardiol</source>
+          <year>2009</year>
+          <volume>53</volume>
+          <fpage>1752</fpage>
+          <lpage>1759</lpage>
+          <pub-id pub-id-type="pmid">19422981</pub-id>
+        </citation>
+      </ref>
+      <ref id="R25">
+        <label>25</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kittleson</surname>
+              <given-names>MM</given-names>
+            </name>
+            <name>
+              <surname>Ye</surname>
+              <given-names>SQ</given-names>
+            </name>
+            <name>
+              <surname>Irizarry</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Minhas</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Edness</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Conte</surname>
+              <given-names>JV</given-names>
+            </name>
+            <name>
+              <surname>Parmigiani</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>LW</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Hall</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Garcia</surname>
+              <given-names>JG</given-names>
+            </name>
+            <name>
+              <surname>Hare</surname>
+              <given-names>JM</given-names>
+            </name>
+          </person-group>
+          <article-title>Identification of a gene expression profile that differentiates between ischemic and nonischemic cardiomyopathy</article-title>
+          <source>Circulation</source>
+          <year>2004</year>
+          <volume>110</volume>
+          <fpage>3444</fpage>
+          <lpage>3451</lpage>
+          <pub-id pub-id-type="pmid">15557369</pub-id>
+        </citation>
+      </ref>
+      <ref id="R26">
+        <label>26</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xie</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Davie</surname>
+              <given-names>EW</given-names>
+            </name>
+            <name>
+              <surname>Chung</surname>
+              <given-names>DW</given-names>
+            </name>
+          </person-group>
+          <article-title>Molecular cloning of human ABPL, an actin-binding protein homologue</article-title>
+          <source>Biochem Biophys Res Commun</source>
+          <year>1998</year>
+          <volume>251</volume>
+          <fpage>914</fpage>
+          <lpage>919</lpage>
+          <pub-id pub-id-type="pmid">9791010</pub-id>
+        </citation>
+      </ref>
+      <ref id="R27">
+        <label>27</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Watkins</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Seidman</surname>
+              <given-names>CE</given-names>
+            </name>
+            <name>
+              <surname>Seidman</surname>
+              <given-names>JG</given-names>
+            </name>
+            <name>
+              <surname>Feng</surname>
+              <given-names>HS</given-names>
+            </name>
+            <name>
+              <surname>Sweeney</surname>
+              <given-names>HL</given-names>
+            </name>
+          </person-group>
+          <article-title>Expression and functional assessment of a truncated cardiac troponin T that causes hypertrophic cardiomyopathy. Evidence for a dominant negative action</article-title>
+          <source>J Clin Invest</source>
+          <year>1996</year>
+          <volume>98</volume>
+          <fpage>2456</fpage>
+          <lpage>2461</lpage>
+          <pub-id pub-id-type="pmid">8958207</pub-id>
+        </citation>
+      </ref>
+      <ref id="R28">
+        <label>28</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Farza</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Townsend</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Carrier</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Barton</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Mesnard</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Bahrend</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Forissier</surname>
+              <given-names>JF</given-names>
+            </name>
+            <name>
+              <surname>Fiszman</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Yacoub</surname>
+              <given-names>MH</given-names>
+            </name>
+            <name>
+              <surname>Schwartz</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Genomic organisation, alternative splicing and polymorphisms of the human cardiac troponin T gene</article-title>
+          <source>J Mol Cell Cardiol</source>
+          <year>1998</year>
+          <volume>30</volume>
+          <fpage>1247</fpage>
+          <lpage>1253</lpage>
+          <pub-id pub-id-type="pmid">9689598</pub-id>
+        </citation>
+      </ref>
+      <ref id="R29">
+        <label>29</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Townsend</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Farza</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>MacGeoch</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Spurr</surname>
+              <given-names>NK</given-names>
+            </name>
+            <name>
+              <surname>Wade</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Gahlmann</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Yacoub</surname>
+              <given-names>MH</given-names>
+            </name>
+            <name>
+              <surname>Barton</surname>
+              <given-names>PJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Human cardiac troponin T: identification of fetal isoforms and assignment of the TNNT2 locus to chromosome 1q</article-title>
+          <source>Genomics</source>
+          <year>1994</year>
+          <volume>21</volume>
+          <fpage>311</fpage>
+          <lpage>316</lpage>
+          <pub-id pub-id-type="pmid">8088824</pub-id>
+        </citation>
+      </ref>
+      <ref id="R30">
+        <label>30</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Solaro</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Kumar</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Blanchard</surname>
+              <given-names>EM</given-names>
+            </name>
+            <name>
+              <surname>Martin</surname>
+              <given-names>AF</given-names>
+            </name>
+          </person-group>
+          <article-title>Differential effects of pH on calcium activation of myofilaments of adult and perinatal dog hearts. Evidence for developmental differences in thin filament regulation</article-title>
+          <source>Circ Res</source>
+          <year>1986</year>
+          <volume>58</volume>
+          <fpage>721</fpage>
+          <lpage>729</lpage>
+          <pub-id pub-id-type="pmid">2940029</pub-id>
+        </citation>
+      </ref>
+      <ref id="R31">
+        <label>31</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Komamura</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Iwai</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Kokame</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Yasumura</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Yamagishi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Morisaki</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Kimura</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Tomoike</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kitakaze</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Miyatake</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>The role of a common TNNT2 polymorphism in cardiac hypertrophy</article-title>
+          <source>J Hum Genet</source>
+          <year>2004</year>
+          <volume>49</volume>
+          <fpage>129</fpage>
+          <lpage>133</lpage>
+          <pub-id pub-id-type="pmid">14986170</pub-id>
+        </citation>
+      </ref>
+      <ref id="R32">
+        <label>32</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Anderson</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Greig</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Mark</surname>
+              <given-names>TM</given-names>
+            </name>
+            <name>
+              <surname>Malouf</surname>
+              <given-names>NN</given-names>
+            </name>
+            <name>
+              <surname>Oakeley</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Ungerleider</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Allen</surname>
+              <given-names>PD</given-names>
+            </name>
+            <name>
+              <surname>Kay</surname>
+              <given-names>BK</given-names>
+            </name>
+          </person-group>
+          <article-title>Molecular basis of human cardiac troponin T isoforms expressed in the developing, adult, and failing heart</article-title>
+          <source>Circ Res</source>
+          <year>1995</year>
+          <volume>76</volume>
+          <fpage>681</fpage>
+          <lpage>686</lpage>
+          <pub-id pub-id-type="pmid">7534662</pub-id>
+        </citation>
+      </ref>
+    </ref-list>
+    <sec id="S15" sec-type="display-objects">
+      <title>Figures and Table</title>
+      <fig id="F1" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <title>Systematic differences of RNA splicing in ICM compared to control</title>
+          <p>Genes were scored for likelihood of alternative splicing (FIRMA score). Two way clustering of samples and genes with significantly different FIRMA scores (FDR &lt; 0.01) separated samples by diagnosis, with one misassignment. Heat map is color coded by FIRMA score (blue-red, −1.9 to +1.9 standard deviations from the mean). Genes with significantly different gene level expression (P &lt; 0.05) were excluded.</p>
+        </caption>
+        <graphic xlink:href="nihms-272922-f0001"/>
+      </fig>
+      <fig id="F2" position="float">
+        <label>Fig. 2</label>
+        <caption>
+          <title>Differences in Alternative Splicing between ICM and control</title>
+          <p><bold>a–b</bold>. Examples of exon array data suggestive of differential alternative splicing between ICM and control. Expression values are in log2 scale. Black arrows indicate direction of transcription. n=15. <bold>c</bold>. Structure and representative RTPCR of major and minor isoforms in control and ICM heart samples. Blue boxes indicate RefSeq exons. Red triangles indicate probeset with differential signal detected by exon array. Primers are indicated as arrows beneath gene models. EF, exonic forward. ER, exonic reverse. TF, intronic forward. TR, intronic reverse. <bold>d</bold>. Percentage of minor variant by RTPCR. n=15. *, P &lt; 0.05 by Welch's t-test. NS, not significant.</p>
+        </caption>
+        <graphic xlink:href="nihms-272922-f0002"/>
+      </fig>
+      <fig id="F3" position="float">
+        <label>Figure 3</label>
+        <caption>
+          <title>Disease-associated differences in splicing of sarcomere genes in diseased compared to control myocardium</title>
+          <p><bold>a.</bold> Minor variant fraction of <italic>TNNI3</italic> and <italic>MYH7-1</italic> were measured by RTPCR in control, ICM, DCM, and AS samples (5 per group). <bold>b.</bold> Minor variant fraction of <italic>TNNT2</italic>, <italic>MYH7-2</italic>, and <italic>FLNC</italic> sarcomere genes were measured by RTPCR in control, ICM, DCM, and AS samples (10 per group). <bold>c.</bold> LVAD mechanical unloading did not normalize splicing of the four sarcomere genes in heart failure. n=4. NS, not significant. *, P &lt; 0.05, using Welch's t-test with Sidak correction.</p>
+        </caption>
+        <graphic xlink:href="nihms-272922-f0003"/>
+      </fig>
+      <fig id="F4" position="float">
+        <label>Figure 4</label>
+        <caption>
+          <title>Lower RNA Splicing Efficiency in Heart Failure</title>
+          <p>Expression of 5 introns and one exon for 4 genes was measured by qRTPCR. The intron/exon ratio was expressed relative to control (defined as 1). <bold>a</bold>. Comparison of all measured intron/exon ratios between control and ICM. <bold>b</bold>. Comparison of measured intron/exon ratios between control (blue) and ICM (red), analyzed by gene. <bold>c</bold>. Individual analysis of each intron/exon ratio. Black lines indicate the group mean. Each point represents the intron/exon ratio from a single sample, measured in duplicate. Controls lacking RT showed no detectable signal. P value indicates Welch's t-test between ICM and control.</p>
+        </caption>
+        <graphic xlink:href="nihms-272922-f0004"/>
+      </fig>
+      <fig id="F5" position="float">
+        <label>Fig 5</label>
+        <caption>
+          <title>Analysis of sarcomere gene exon-exon junctions by capillary electrophoresis of RTPCR products</title>
+          <p><bold>a</bold>. <italic>TNNT2</italic> transcript and alternative splicing variant due to differential exon 7 5' splice acceptor use. <bold>b</bold>. Detection of variation of exon-exon junctions by capillary electrophoresis. A standard curve was generated by mixing known proportions of cloned wild-type and <italic>c.203_205del TNNT2</italic>. The peak area ratios from capillary electrophoresis analysis were linearly related to the input ratio. <bold>c</bold>. Representative chromatograms of control and ICM samples analyzed using the capillary electrophoresis assay. No significant difference in the proportion of <italic>c203_205del</italic> variant was detected between groups (n=15).</p>
+        </caption>
+        <graphic xlink:href="nihms-272922-f0005"/>
+      </fig>
+      <fig id="F6" position="float">
+        <label>Figure 6</label>
+        <caption>
+          <title>Altered RNA Splicing Distinctly Clusters Control and Disease Samples</title>
+          <p><italic>MYH7-2</italic>, <italic>TNNT2</italic>, and <italic>FLNC</italic> splicing ratios measured in 60 samples were visualized by principal component analysis. The control samples were tightly clustered together and clearly distinguished from the disease samples. Arrow indicates sample prone to misclassification as control.</p>
+        </caption>
+        <graphic xlink:href="nihms-272922-f0006"/>
+      </fig>
+      <table-wrap id="T1" position="float">
+        <label>Table</label>
+        <caption>
+          <p>Selected Candidate Genes with Differential Alternative Splicing in ICM (Complete Probeset)</p>
+        </caption>
+        <table frame="box" rules="groups">
+          <thead>
+            <tr>
+              <th align="left" valign="top" rowspan="1" colspan="1">Gene Symbol</th>
+              <th align="left" valign="top" rowspan="1" colspan="1">Gene Name</th>
+              <th align="left" valign="top" rowspan="1" colspan="1">Accesion Number</th>
+              <th align="center" valign="top" rowspan="1" colspan="1">AS Type<xref ref-type="table-fn" rid="TFN1">*</xref></th>
+              <th align="center" valign="top" rowspan="1" colspan="1">Changed in ICM^</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<italic>ACTG1</italic>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">Actin, gamma 1</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">TRAN00000084206</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">RI</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">N</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<italic>ANKS1A</italic>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">Ankyrin repeat and sterile alpha motif domain containing 1A</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">Novel</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">CE</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">N</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<italic>DNM2</italic>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">Dynamin 2</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">Novel</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">RI</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">N</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<italic>ENG</italic>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">Endoglin</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">ENST00000344849</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">RI</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">N</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<italic>ESRRG</italic>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">Estrogen-related receptor gamma</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">ENST00000354407</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">AFE</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">N</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<italic>FLNC</italic>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">Filamin C, gamma</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">ENST00000346177</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">CE</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">Y</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<italic>HDAC9</italic>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">Histone deacetylase 9</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">Novel</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">RI</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">N</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<italic>HOPX</italic>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">HOP homeobox, event 1</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">Novel</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">ND</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">ND</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1"/>
+              <td align="left" valign="top" rowspan="1" colspan="1">HOP homeobox, event 2</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">ENST00000317745</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">CE</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">U</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<italic>MKL2</italic>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">MKL/myocardin-like 2</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">Novel (AK093577, AX748211)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">ND</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">U</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<italic>MYBPC3</italic>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">myosin binding protein C, cardiac</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">Novel</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">RI</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">U</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<italic>MYH6</italic>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">myosin, heavy chain 6, event 1</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">ENST00000356287</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">CE</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">N</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1"/>
+              <td align="left" valign="top" rowspan="1" colspan="1">myosin, heavy chain 6, event 2</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">Novel</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">RI</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">N</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<italic>MYH7</italic>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">myosin, heavy chain 7, event 1</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">Novel</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">RI</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">Y</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1"/>
+              <td align="left" valign="top" rowspan="1" colspan="1">myosin, heavy chain 7, event 2</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">Novel</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">RI</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">Y</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<italic>PARVB</italic>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">parvin, beta</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">Novel</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">CE</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">U</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<italic>TNNI3</italic>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">troponin I type 3 (cardiac)</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">Novel (AW027005)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">RI</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">Y</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<italic>TNNT2</italic>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">troponin T type 2 (cardiac)</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">TRAN00000060677</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">RI</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">Y</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<italic>TRABD</italic>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">TraB domain containing</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">TRAN00000089822</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">CE</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">N</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<italic>TTN</italic>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">Titin</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">ENST00000355565</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">RI</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">N</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <p>Database: If present in the alternative splicing database (ATSD), then a supporting accession number is provided. Otherwise the event was considered novel. If supporting ESTs were found, then up to 2 supporting accession numbers are provided.</p>
+          <fn id="TFN1">
+            <label>*</label>
+            <p id="P38">Alternative splicing class for novel splicing events was validated by sequencing of RTPCR products.</p>
+          </fn>
+          <p>Abbreviation:RI, retained intron. CE, cassette exon. ALE, alternative last exon. AFE, alternative first exon. ND, predicted minor isoform not detected by RTPCR. U, RTPCR unsuccessful for quantitating minor isoform abundance.</p>
+        </table-wrap-foot>
+      </table-wrap>
+    </sec>
+  </back>
+</article>

@@ -1,0 +1,1716 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Archiving and Interchange DTD v2.3 20070202//EN" "archivearticle.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">101130617</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">29778</journal-id>
+      <journal-id journal-id-type="nlm-ta">Cancer Cell</journal-id>
+      <journal-title>Cancer cell</journal-title>
+      <issn pub-type="ppub">1535-6108</issn>
+      <issn pub-type="epub">1878-3686</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">21397860</article-id>
+      <article-id pub-id-type="pmc">3072410</article-id>
+      <article-id pub-id-type="doi">10.1016/j.ccr.2011.01.036</article-id>
+      <article-id pub-id-type="manuscript">NIHMS270286</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Twist1-induced invadopodia formation promotes tumor metastasis</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Eckert</surname>
+            <given-names>Mark A.</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A2" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lwin</surname>
+            <given-names>Thinzar M.</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chang</surname>
+            <given-names>Andrew T.</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A3" ref-type="aff">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kim</surname>
+            <given-names>Jihoon</given-names>
+          </name>
+          <xref rid="A4" ref-type="aff">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Danis</surname>
+            <given-names>Etienne</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ohno-Machado</surname>
+            <given-names>Lucila</given-names>
+          </name>
+          <xref rid="A4" ref-type="aff">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Yang</surname>
+            <given-names>Jing</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A5" ref-type="aff">5</xref>
+          <xref rid="FN1" ref-type="author-notes">*</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>1</label> Department of Pharmacology, University of California, San Diego, School of Medicine, 9500 Gilman Drive, La Jolla, CA 92093-0636, USA</aff>
+      <aff id="A2"><label>2</label> The Molecular Pathology Graduate Program, University of California, San Diego, School of Medicine, 9500 Gilman Drive, La Jolla, CA 92093-0636, USA</aff>
+      <aff id="A3"><label>3</label> The Biomedical Science Graduate Program, University of California, San Diego, School of Medicine, 9500 Gilman Drive, La Jolla, CA 92093-0636, USA</aff>
+      <aff id="A4"><label>4</label> Division of Biomedical Informatics, University of California, San Diego, School of Medicine, 9500 Gilman Drive, La Jolla, CA 92093-0636, USA</aff>
+      <aff id="A5"><label>5</label> Department of Pediatrics, University of California, San Diego, School of Medicine, 9500 Gilman Drive, La Jolla, CA 92093-0636, USA</aff>
+      <author-notes>
+        <corresp id="FN1">
+<label>*</label>Contact: <email>jingyang@ucsd.edu</email>, 858-534-1994 (Phone), 858-534-7390 (Fax)</corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>4</day>
+        <month>2</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <day>8</day>
+        <month>3</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>8</day>
+        <month>3</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>19</volume>
+      <issue>3</issue>
+      <fpage>372</fpage>
+      <lpage>386</lpage>
+      <permissions>
+        <license>
+          <p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</p>
+        </license>
+      </permissions>
+      <abstract>
+        <title>Summary</title>
+        <p id="P3">The Twist1 transcription factor is known to promote tumor metastasis and induce Epithelial-Mesenchymal Transition (EMT). Here, we report that Twist1 is capable of promoting the formation of invadopodia, specialized membrane protrusions for extracellular matrix degradation. Twist1 induces PDGFRα expression, which in turn activates Src, to promote invadopodia formation. We show that Twist1 and PDGFRα are central mediators of invadopodia formation in response to various EMT-inducing signals. Induction of PDGFRα and invadopodia is essential for Twist1 to promote tumor metastasis. Consistent with PDGFRα being a direct transcriptional target of Twist1, coexpression of Twist1 and PDGFRα predicts poor survival in breast tumor patients. Therefore, invadopodia-mediated matrix degradation is a key function of Twist1 in promoting tumor metastasis.</p>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S1">
+      <title>Introduction</title>
+      <p id="P6">During metastasis, carcinoma cells acquire the ability to invade surrounding tissues and intravasate through the endothelium to enter systemic circulation. Both the invasion and intravasation processes require degradation of basement membrane and extracellular matrix (ECM). Although proteolytic activity is associated with increased metastasis and poor clinical outcome, the molecular triggers for matrix degradation in tumor cells are largely unknown.</p>
+      <p id="P7">Invadopodia are specialized actin-based membrane protrusions found in cancer cells that degrade ECM via localization of proteases (<xref ref-type="bibr" rid="R35">Tarone et al., 1985</xref>, <xref ref-type="bibr" rid="R11">Chen, 1989</xref>). Their ability to mediate focal ECM degradation suggests a critical role for invadopodia in tumor invasion and metastasis. However, a definitive role for invadopodia in local invasion and metastasis in vivo has not yet been clearly demonstrated. As actin-based structures, invadopodia contain a primarily branched F-actin core and actin regulatory proteins, such as cortactin, WASp, and the Arp2/3 complex (<xref ref-type="bibr" rid="R23">Linder, 2007</xref>). The SH3-domain-rich proteins Tks4 (<xref ref-type="bibr" rid="R9">Buschman et al., 2009</xref>) and Tks5 (<xref ref-type="bibr" rid="R30">Seals et al., 2005</xref>) function as essential adaptor proteins in clustering structural and enzymatic components of invadopodia. The matrix degradation activity of invadopodia has been associated with a large number of proteases, including membrane type MMPs (MT1-MMP) (<xref ref-type="bibr" rid="R23">Linder 2007</xref>). Invadopodia formation requires tyrosine phosphorylation of several invadopodia components including cortactin (<xref ref-type="bibr" rid="R2">Ayala et al., 2008</xref>), Tks4 (<xref ref-type="bibr" rid="R9">Buschmann et al., 2009</xref>), and Tks5 (<xref ref-type="bibr" rid="R30">Seals et al., 2005</xref>) by Src family kinases.</p>
+      <p id="P8">Our previous study found that the Twist1 transcription factor, a key regulator of early embryonic morphogenesis, was essential for the ability of tumor cells to metastasize from the mammary gland to the lung in a mouse breast tumor model and was highly expressed in invasive human lobular breast cancer (<xref ref-type="bibr" rid="R37">Yang et al., 2004</xref>). Since then, studies have also associated Twist1 expression with many aggressive human cancers, such as melanomas, neuroblastomas, prostate cancers, and gastric cancers (<xref ref-type="bibr" rid="R29">Peinado et al., 2007</xref>). Twist1 can activate a latent developmental program termed the epithelial-mesenchymal transition (EMT), thus enabling carcinoma cells to dissociate from each other and migrate.</p>
+      <p id="P9">The EMT program is a highly conserved developmental program that promotes epithelial cell dissociation and migration to different sites during embryogenesis. During EMT, cells lose their epithelial characteristics, including cell adhesion and polarity, and acquire a mesenchymal morphology and the ability to migrate (<xref ref-type="bibr" rid="R18">Hay, 1995</xref>). Biochemically, cells downregulate epithelial markers such as adherens junction proteins E-cadherin and catenins and express mesenchymal markers including vimentin and fibronectin (<xref ref-type="bibr" rid="R8">Boyer and Thiery, 1993</xref>). In addition to Twist1, the zinc-finger transcription factors, including Snail, Slug, ZEB1, and ZEB2 (<xref ref-type="bibr" rid="R29">Peinado et al., 2007</xref>), can also activate the EMT program by directly binding the E-boxes of the E-cadherin promoter to suppress its transcription. However, it is unclear how Twist1, as a bHLH transcription factor, controls the EMT program. In this study, we test the hypothesis that Twist1 plays a major role in regulating ECM degradation to promote tumor metastasis.</p>
+    </sec>
+    <sec sec-type="results" id="S2">
+      <title>Results</title>
+      <sec id="S3">
+        <title>Twist1 is necessary and sufficient for invadopodia formation and function</title>
+        <p id="P10">Our previous studies found that Twist1 expression was associated with increased metastatic potentials in a series of mouse mammary tumor cell lines, including 67NR, 168FARN, and 4T1 (<xref ref-type="bibr" rid="R37">Yang et al., 2004</xref>). Furthermore, Twist1 is required for the ability of 4T1 cells to metastasize from the mammary gland to the lung. To dissect the cellular functions of Twist1 in promoting tumor metastasis, we first tested whether expression of Twist1 was associated with increased ability to degrade ECM. 67NR, 168FARN, and 4T1 cells were plated onto FITC-conjugated gelatin matrix to assess their abilities to degrade matrix. We found that Twist1-expressing metastatic 168FARN and 4T1 cells potently degraded ECM in eight hours, while non-metastatic 67NR cells that do not express Twist1 failed to do so (<xref rid="F1" ref-type="fig">Figure 1A–C</xref>). To test whether Twist1 is required for the ability of 168FARN and 4T1 cells to degrade ECM, 168FARN and 4T1 cells expressing two independent shRNAs against Twist1 were processed for the matrix degradation assay (<xref rid="F1" ref-type="fig">Figure 1A</xref>). Indeed, we found that suppressing Twist1 expression resulted in a potent reduction in matrix degradation in both cell types (<xref rid="F1" ref-type="fig">Figure 1B–C</xref>). Together, these results demonstrate that Twist1 is required for ECM degradation ability in tumor cells.</p>
+        <p id="P11">Localized matrix degradation can be mediated through actin-based subcellular protrusions called invadopodia. Colocalization of F-actin with the actin-bundling protein cortactin (<xref ref-type="bibr" rid="R7">Bowden et al., 2006</xref>) or the unique adaptor protein Tks5 (<xref ref-type="bibr" rid="R1">Abram et al., 2003</xref>) can be used to identify invadopodia. To determine whether invadopodia are present in 168FARN and 4T1 cells and whether Twist1 is required for invadopodia formation, we examined the presence of invadopodia in 168FARN and 4T1 cells by immunofluorescence. Invadopodia are transient structures, so only a fraction of cells possess invadopodia at any given time. Indeed, over 50% 168FARN and 4T1 cells contain invadopodia, while suppression of Twist1 expression reduced the occurrence of invadopodia to 5–20% in both cell lines (<xref rid="F1" ref-type="fig">Figure 1D–1F</xref>, <xref rid="SD1" ref-type="supplementary-material">S1A, and S1B</xref>). These data indicate that Twist1 is necessary for the formation of invadopodia for ECM degradation.</p>
+        <p id="P12">Since 168FARN and 4T1 mouse tumor cells contain additional genetic and epigenetic changes essential for their tumorigenic and metastatic abilities (<xref ref-type="bibr" rid="R24">Mani et al., 2007</xref>), we next tested whether Twist1 is sufficient to promote invadopodia formation and matrix degradation in HMLE cells, immortalized normal human mammary epithelial cells. As reported, expression of Twist1 induced EMT in HMLE cells (<xref ref-type="bibr" rid="R37">Yang et al., 2004</xref>). We examined the presence of invadopodia and found that over 60% of HMLE cells expressing Twist1 contained invadopodia, compared to 10% of HMLE control cells with invadopodia (<xref rid="F2" ref-type="fig">Figure 2A, 2B</xref>, and <xref rid="SD1" ref-type="supplementary-material">S2A</xref>). Importantly, these invadopodia were all localized to the basal surface of the cell directly adjacent to the underlying matrix when examined with Z-sectioning (<xref rid="F2" ref-type="fig">Figure 2C</xref>). To determine whether these Twist1-induced invadopodia are functional, we compared the ability of these two cell lines to degrade matrix using the FITC-gelatin degradation assay. Expression of Twist1 increased matrix degradation by approximately 10 fold (<xref rid="F2" ref-type="fig">Figure 2D and 2E</xref>). Strikingly, focal matrix degradation precisely colocalized with F-actin positive puncta (<xref rid="F2" ref-type="fig">Figure 2D</xref>), indicating that Twist1 is sufficient to promote the formation of functional invadopodia in HMLE cells. Furthermore, Twist1-induced matrix degradation is protease-driven since suppression of metalloproteases by GM6001 inhibited the ability of HMLE-Twist1 cells to degrade FITC-gelatin (<xref rid="F2" ref-type="fig">Figure 2E</xref>). Together, these data demonstrate that Twist1 is both necessary and sufficient to promote invadopodia formation and focal matrix degradation.</p>
+      </sec>
+      <sec id="S4">
+        <title>Twist1-mediated matrix degradation is invadopodia-driven and Src-dependent</title>
+        <p id="P13">Since both invadopodia-associated proteases and secreted proteases can mediate matrix degradation, we next set out to determine whether invadopodia, not secreted proteases, are solely responsible for Twist1-induced matrix degradation. In HMLE-Twist1 cells, we expressed shRNAs against Tks5, an adaptor protein that is required for invadopodia formation, but not MMP secretion (Seals et al., 2004). Both shRNAs effectively suppressed Tks5 expression (<xref rid="SD1" ref-type="supplementary-material">Figure S3A</xref>), and gelatin zymography showed that knockdown of Tks5 did not affect the secretion of proteases, mainly MMP2, into conditioned media (<xref rid="SD1" ref-type="supplementary-material">Figure S3B</xref>). In contrast, suppression of Tks5 significantly reduced their abilities to form invadopodia (<xref rid="F3" ref-type="fig">Figure 3A and 3B</xref>) and degrade FITC-gelatin matrix (<xref rid="F3" ref-type="fig">Figure 3C</xref>). Complementary to these data, Boyden chamber migration and invasion assays showed that suppression of Tks5 inhibited the ability of HMLE-Twist1 cells to invade through Matrigel, but did not affect cell migration (<xref rid="SD1" ref-type="supplementary-material">Figure S3C and S3D</xref>). Together, these results demonstrate that the protease activity associated with invadopodia is the sole mediator of Twist1-induced matrix degradation.</p>
+        <p id="P14">We next set out to understand how Twist1 promotes invadopodia formation. While no transcription factor has been implicated in invadopodia regulation, tyrosine phosphorylation of invadopodia components, including cortactin and Tks5, is necessary for invadopodia formation (<xref ref-type="bibr" rid="R2">Ayala et al., 2008</xref>). We therefore assessed whether tyrosine phosphorylation at invadopodia was increased in HMLE-Twist1 cells. Immunofluorescence staining with a phosphotyrosine antibody revealed enrichment of phosphotyrosine at invadopodia (<xref rid="F3" ref-type="fig">Figure 3D</xref>). Cortactin immunoprecipitated from HMLE-Twist1 cells also showed increased tyrosine phosphorylation compared to HMLE control cells (<xref rid="F3" ref-type="fig">Figure 3E</xref>).</p>
+        <p id="P15">Src family kinases are the major kinases that promote tyrosine phosphorylation and formation of invadopodia. We therefore examined whether Twist1 induced expression of any of the three major Src family kinases, Src, Yes, and Fyn. Both real-time RT-PCR and immunoblotting analyses showed that none of the three Src kinases were greatly induced by Twist1 (<xref rid="SD1" ref-type="supplementary-material">Figure S3E, S3F, and 3E</xref>). Interestingly, when we probed for the activation status of Src, Yes, and Fyn in HMLE-Twist1 cells using an antibody recognizing the active form of Src family kinases (phosphotyrosine 416), Src was significantly activated upon Twist1 expression (<xref rid="F3" ref-type="fig">Figure 3E</xref>), while Yes and Fyn phosphorylation remained constant (<xref rid="SD1" ref-type="supplementary-material">Figure S3F</xref>). These data suggest that activation of Src kinase activity, but not transcriptional induction of Src kinase expression, might be responsible for tyrosine phosphorylation at invadopodia in HMLE-Twist1 cells. To determine whether Src kinase activity is required for Twist1-induced invadopodia function, we treated HMLE-Twist1 cells with SU6656, a selective inhibitor of Src family kinases (<xref ref-type="bibr" rid="R5">Blake et al., 2000</xref>) (<xref rid="SD1" ref-type="supplementary-material">Figure S3G</xref>) or expressed a dominant-negative Src (Src<sup>K295M/Y527F</sup>) (<xref rid="SD1" ref-type="supplementary-material">Figure S3H</xref>). Both treatments reduced the ability of HMLE-Twist1 cells to degrade matrix by 5-fold (<xref rid="F3" ref-type="fig">Figure 3F</xref>), indicating that Src kinase activity is essential for Twist1–mediated invadopodia function. Treatment with SU6656 also inhibited colocalization of the phosphotyrosine signal with F-actin (<xref rid="F3" ref-type="fig">Figure 3D</xref>) and caused a significant reduction in the number of cells that formed invadopodia (<xref rid="F3" ref-type="fig">Figure 3G</xref>). Together, these results indicate that Twist1-induced invadopodia formation and function is dependent on activation of the Src kinase.</p>
+      </sec>
+      <sec id="S5">
+        <title>Twist1-induced PDGFR expression and activation is required for invadopodia formation</title>
+        <p id="P16">As a transcription factor, Twist1 cannot directly activate Src kinase, so we probed how Twist1 promotes activation of Src in HMLE-Twist1 cells. Since activation of Src kinase is downstream of growth factor receptor (GFR) activation, we examined induction of known GFRs upstream of Src by Twist1. Using an inducible Twist1 (Twist1-ER) construct (<xref ref-type="bibr" rid="R25">Mani et al., 2008</xref>), we found that expression of PDGFRα mRNAs increased 3-fold within 3 hours of Twist1 activation and reached over 6000-fold induction at Day 15, while induction of PDGFRβ mRNAs occurred significantly later (<xref rid="F4" ref-type="fig">Figure 4A</xref>). PDGFRs can directly activate Src family kinases by tyrosine phosphorylation (<xref ref-type="bibr" rid="R21">Kypta et al., 1990</xref>), and activation of a PDGF autocrine loop is associated with the EMT program (<xref ref-type="bibr" rid="R19">Jechlinger et al., 2003</xref>). We found that PDGFRα and β proteins were also induced in HMLE-Twist1 cells and both PDGFR α and β were phosphorylated at tyrosine residues corresponding to their active states (<xref rid="F4" ref-type="fig">Figure 4B</xref>). This activation of PDGFR without exogenous PDGF ligands implies the existence of an autocrine activation loop in vitro most likely mediated by PDGF-C, the only PDGF ligand significantly expressed and upregulated upon activation of Twist1 in HMLE cells (<xref rid="SD1" ref-type="supplementary-material">Figure S4A</xref>). Upregulation of PDGFRs by Twist1 therefore presented a potential mechanism for activation of Src by Twist1.</p>
+        <p id="P17">We next set out to determine whether activation of PDGFRs is required for Twist1-induced invadopodia formation and matrix degradation. Given the immediate and robust induction of PDGFRα upon Twist1 activation, we focused on inhibiting PDGFRα to examine its role in mediating Twist1-induced Src activation and invadopodia formation. We first treated the HMLE-Twist1 cells with a monoclonal blocking antibody against PDGFRα and examined invadopodia formation and matrix degradation. This antibody effectively inhibited PDGFRα activation (<xref rid="F4" ref-type="fig">Figure 4B</xref>), Src activation, and tyrosine phosphorylation of cortactin in HMLE-Twist1 cells (<xref rid="F4" ref-type="fig">Figure 4C</xref>). This PDGFRα blocking antibody significantly inhibited invadopodia formation and tyrosine phosphorylation at invadopodia and suppressed the ability of HMLE-Twist1 cells to degrade FITC-gelatin by over 5-fold (<xref rid="F4" ref-type="fig">Figure 4D–4F</xref>). To verify the results observed with the PDGFRα blocking antibody, we also expressed two independent shRNAs against PDGFRα in HMLE-Twist1 cells to stably suppress and inhibit PDGFRα signaling. Both shRNAs potently suppressed PDGFRα expression (<xref rid="F4" ref-type="fig">Figure 4B</xref>), Src activation, and cortactin phosphorylation (<xref rid="F4" ref-type="fig">Figure 4C</xref>), and effectively suppressed the ability of HMLE-Twist1 cells to degrade matrix (<xref rid="F4" ref-type="fig">Figure 4F</xref>). Importantly, expression or secretion of proteases was not affected by PDGFRα knockdown as measured with gelatin zymography (<xref rid="SD1" ref-type="supplementary-material">Figure S4B</xref>). Together, these data indicate that PDGFRα expression and activation is required for Twist1-induced invadopodia formation and invasion.</p>
+        <p id="P18">We also examined expression of PDGFRα in 168FARN cells expressing control and Twist1 knockdown constructs. PDGFRα was highly expressed in control cells and significantly reduced upon knockdown of Twist1 (<xref rid="SD1" ref-type="supplementary-material">Figure S4C</xref>). These results provide further evidence that expression of PDGFRα depends on the presence of Twist1 in breast tumor cells.</p>
+      </sec>
+      <sec id="S6">
+        <title>Twist1 is a central mediator of invadopodia formation in response to EMT-inducing signals</title>
+        <p id="P19">Since other inducers of EMT, such as TGFβ and Snail, have also been associated with tumor invasion and metastasis, we sought to understand whether invadopodia formation also occurs in response to other EMT-inducing signals and whether Twist1 mediates invadopodia formation in response to these signals.</p>
+        <p id="P20">To do so, we first tested the ability of Snail, another EMT-inducing transcription factor, to promote invadopodia formation and matrix degradation. As previously reported, Snail overexpression induces EMT similarly to Twist1 in HMLE cells (Mani et al., 2009). HMLE-Snail cells have similar numbers of invadopodia and ECM-degradation activities as HMLE-Twist1 cells (<xref rid="F5" ref-type="fig">Figure 5A–D</xref>). To determine whether Snail, like Twist1, could induce the expression of PDGFRα to promote invadopodia formation, we examined the expression of PDGFRα mRNA in HMLE cells that express an inducible Snail (Snail-ER) construct. In contrast to the immediate induction of PDGFRα upon Twist1 activation, PDGFRα mRNA only began to increase 6 days after Snail activation, indicating that induction of PDGFRα by Snail is indirect (<xref rid="F5" ref-type="fig">Figure 5E</xref>). Interestingly, endogenous Twist1 mRNA levels increased significantly after 4 days of Snail activation, before PDGFRα mRNA began to increase (<xref rid="F5" ref-type="fig">Figure 5E</xref>). These data suggest that induction of endogenous Twist1 could be responsible for PDGFRα expression and invadopodia formation upon Snail activation.</p>
+        <p id="P21">To assess whether Twist1 mediates the induction of invadopodia and PDGFRα in HMLE-Snail cells, we expressed shRNAs against endogenous Twist1 in HMLE-Snail cells. Indeed, suppression of endogenous Twist1 significantly inhibited expression of PDGFRα in HMLE-Snail cells (<xref rid="F5" ref-type="fig">Figure 5F</xref>). Significantly, suppression of Twist1 expression inhibited invadopodia formation in HMLE-Snail cells and reduced their ability to degrade matrix (<xref rid="F5" ref-type="fig">Figure 5A–5D</xref>). Importantly, HMLE-Snail cells that express shRNAs against Twist1 presented an EMT phenotype with loss of E-cadherin expression and a mesenchymal morphology (<xref rid="SD1" ref-type="supplementary-material">Figure S5A and S5B</xref>), indicating that suppression of E-cadherin by Snail and induction of invadopodia by Twist1 are regulated independently. Treating HMLE-Snail cells with the PDGFRα blocking antibody also significantly suppressed the ability of HMLE-Snail cells to degrade FITC-gelatin (<xref rid="SD1" ref-type="supplementary-material">Figure S5C and S5D</xref>). Together, these results indicate that Twist1 and PDGFRα are responsible for invadopodia formation in response to Snail activation.</p>
+        <p id="P22">To further generalize our finding, we also investigated the role of Twist1 and PDGFRα in regulating invadopodia formation in response to TGFβ. In EpH4 mouse mammary epithelial cells, TGFβ has been shown to collaborate with Ras to promote EMT and activates an autocrine PDGF loop (<xref ref-type="bibr" rid="R19">Jechlinger et al., 2003</xref>). When we examined the invadopodia formation and matrix degradation in EpH4-Ras cells treated with TGFβ, we found that TGFβ treatment induced over 5-fold increase of invadopodia formation and matrix degradation in 2D culture (<xref rid="F6" ref-type="fig">Figure 6A–6C</xref>). When these cells grew in 3D culture with TGFβ, invadopodia were visible at the leading edge of cells invading out of the organoids (<xref rid="F6" ref-type="fig">Figure 6E</xref>). Interestingly, both Twist1 and PDGFRα were induced in response to TGFβ treatment (<xref rid="F6" ref-type="fig">Figure 6D</xref>). When endogenous Twist1 induction was inhibited by shRNAs, invadopodia formation and matrix degradation were significantly reduced in 2D and 3D cultures (<xref rid="F6" ref-type="fig">Figure 6A–6C, and 6E</xref>). Importantly, knocking down Twist1 abolished induction of PDGFRα in EpH4-Ras cells treated with TGFβ (<xref rid="F6" ref-type="fig">Figure 6D</xref>), but did not prevent induction of EMT morphogenesis and loss of E-cadherin (<xref rid="SD1" ref-type="supplementary-material">Figure S6A and S6B</xref>), similar to knockdown of Twist1 in HMLE-Snail cells. Furthermore, treating EpH4-Ras cells with the PDGFRα inhibitor ST1571 significantly suppressed their ability to degrade FITC-gelatin in response to TGFβ treatment (<xref rid="SD1" ref-type="supplementary-material">Figure S6C and S6D</xref>). Importantly, treatment with STI571 did not revert the EMT phenotype (<xref rid="SD1" ref-type="supplementary-material">Figure S6E</xref>). Together, these results support our conclusion that Twist1 is a central mediator of invadopodia formation and matrix degradation via induction of PDGFRα in response to EMT-inducing signals.</p>
+      </sec>
+      <sec id="S7">
+        <title>Twist1-induced metastasis is mediated by invadopodia in vivo and requires PDGFRα</title>
+        <p id="P23">Twist1 is required for mammary tumor cells to metastasize from the mammary gland to the lung. We then tested whether PDGFRα and invadopodia are required for the ability of Twist1 to promote tumor metastasis in vivo. To do so, we generated HMLE-Twist1 cells that were transformed with oncogenic Ras (HMLER-Twist1) and expressed shRNAs against either PDGFRα or a control shRNA. These cells also expressed GFP to allow identification of tumor cells in mice. Individual cell lines were injected subcutaneously into nude mice. Suppression of PDGFRα did not affect cell proliferation in culture or tumor growth rate in vivo (<xref rid="SD1" ref-type="supplementary-material">Figure S7A and S7B</xref>). Six weeks after tumor implantation, we sacrificed the mice and examined primary tumors for histology and invadopodia. Since HMLER-Twist1 tumors expressing large T antigen, we used an antibody against large T antigen to stain implanted tumor cells. Interestingly, HMLER-Twist1 tumor cells invaded into surrounding stroma and adjacent adipose tissue, while PDGFRa knockdown inhibited local invasion and tumor cells remained encapsulated (<xref rid="F7" ref-type="fig">Figure 7A</xref>). Staining for invadopodia using cortactin and Tks5 in sections of primary tumor tissue revealed that HMLER-Twist1 tumor cells contained abundant invadopodia, while knocking down PDGFRα significantly reduced their occurance (<xref rid="F7" ref-type="fig">Figure 7B and 7C</xref>). To test whether PDGFRα is required for distant metastasis, examination of lung lobes and sections revealed clusters of HMLER-Twist1 shControl cells throughout the lungs (<xref rid="F7" ref-type="fig">Figure 7E</xref> and <xref rid="SD1" ref-type="supplementary-material">S7E</xref>). Significantly, suppression of PDGFRα expression significantly reduced the number of disseminated tumor cells in the lung (<xref rid="F7" ref-type="fig">Figure 7D</xref>). These results strongly indicate that induction of PDGFRα is required for the ability of Twist1 to form invadopodia and promote tumor metastasis without affecting primary tumor growth in vivo.</p>
+        <p id="P24">To demonstrate that invadopodia are required for the ability of Twist1 to metastasize in vivo, we expressed shRNAs against Tks5 to inhibit invadopodia formation in HMLER-Twist1 cells. Knockdown of Tks5 did not affect cell growth rate in vitro (<xref rid="SD1" ref-type="supplementary-material">Figure S7C</xref>). These cells were implanted subcutaneously into nude mice to follow primary tumor growth and lung metastasis. Consistent with the results from the PDGFRα knockdown experiments, Tks5 knockdown inhibited local tumor invasion and significantly reduced the numbers of tumor cells that disseminated into the lung, while primary tumor growth was not affected (<xref rid="F7" ref-type="fig">Figure 7A, 7D, 7E</xref>, and <xref rid="SD1" ref-type="supplementary-material">S7D</xref>). Together, these data demonstrate that induction of invadopodia formation via PDGFRα activation is essential for the ability of Twist1 to promote tumor metastasis in vivo.</p>
+      </sec>
+      <sec id="S8">
+        <title>PDGFRα is a direct transcription target of Twist1 and expression of Twist1 and PDGFRα are tightly linked in human breast tumors</title>
+        <p id="P25">Given the immediate induction of PDGFRα by Twist1 and their tight association in various tumor cells, we set out to determine whether PDGFRα is a direct transcriptional target of Twist1. We examined the human PDGFRα promoter for potential Twist1-binding E-box sequences (CANNTG). We designed three sets of primers on the putative promoter: primer sets 1 and 2 target the identified E-box, and primer set 3 targets an adjacent region lacking the putative E-box (<xref rid="F8" ref-type="fig">Figure 8A</xref>). By chromatin immunoprecipitation, we found that Twist1 directly bound to the E-box on the putative PDGFRα promoter (<xref rid="F8" ref-type="fig">Figure 8B</xref>). Twist1 was able to activate the isolated human PDGFRa promoter in an E-box-dependent fashion in a luciferase reporter assay (<xref rid="SD1" ref-type="supplementary-material">Figure S8A and S8B</xref>). Furthermore, this consensus E-box sequence is highly conserved between all mammalian species examined and chickens (<xref rid="F8" ref-type="fig">Figure 8C</xref>), indicating that induction of PDGFRα by Twist1 is direct and evolutionally conserved.</p>
+        <p id="P26">To more directly probe the in vivo association between Twist1 and PDGFRα in human breast tumor samples, we analyzed four published large human breast tumor gene expression datasets summarizing 860 primary breast cancers (<xref ref-type="bibr" rid="R28">Pawitan et al., 2005</xref>; <xref ref-type="bibr" rid="R32">Sotiriou et al., 2006</xref>; <xref ref-type="bibr" rid="R36">Wang et al., 2005</xref>; <xref ref-type="bibr" rid="R26">Miller et al., 2005</xref>). In each data set, we calculated the rank-based Spearman correlation coefficient between Twist1 and all 22282 genes on the array, including PDGFRa. PDGFRα was consistently among the top ranked genes associated with Twist1 (4<sup>th</sup>, 17<sup>th</sup>, 47<sup>th</sup>, and 54<sup>th</sup> out of 22282 genes) in all four breast cancer datasets (<xref rid="F8" ref-type="fig">Figure 8D</xref> and <xref rid="SD1" ref-type="supplementary-material">S8D</xref>). Expression of Twist1 and PDGFRα were positively correlated with correlation coefficients ranging from 0.56 to 0.70 (<xref rid="F8" ref-type="fig">Figure 8D</xref> and <xref rid="SD1" ref-type="supplementary-material">S8C</xref>). Furthermore, in all four data sets, PDGF ligand expression correlated with PDGFRα and Twist1 expression in over 95% of tumor samples (<xref rid="SD1" ref-type="supplementary-material">Table S1</xref>), indicating that PDGFRα could be active in these samples. To further access whether coexpression of Twist1 and PDGFRα could affect survival in breast tumor patients, we stained Twist1 and PDGFRα in a set of human invasive breast tumor tissue array samples and found that co-expression of Twist1 and PDGFRα was negatively associated with long-term survival (<xref rid="F8" ref-type="fig">Figure 8E and 8F</xref>). Together, these data provides further support for a direct and functional association between Twist1 and PDGFRα in human breast cancers and suggests that regulation of invadopodia by Twist1 and PDGFRα contributes to human breast cancer progression.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="S9">
+      <title>Discussion</title>
+      <p id="P27">Our study has identified a unique function of the Twist1 transcription factor in promoting invadopodia formation and matrix degradation during tumor metastasis. We demonstrate that transcriptional induction of PDGFRα and activation of Src by Twist1 are essential for invadopodia formation and matrix degradation. Induction of PDGFRα and invadopodia formation is also essential for the ability of Twist1 to promote metastasis in vivo. Twist1 and PDGFRα are central mediators of invadopodia in response to several EMT-inducing signals. Finally, we provide evidence for a tight association between Twist1 and PDGFRα in human breast tumor samples.</p>
+      <sec id="S10">
+        <title>Induction of invadopodia by Twist1 plays a key role in extracellular matrix degradation and metastasis</title>
+        <p id="P28">ECM degradation is considered a key step promoting tumor invasion and metastasis. Extensive studies have largely focused on secreted MMPs as key proteases in tumor invasion. More recent studies suggest a role for invadopodia and their associated proteases in localized matrix degradation during cell invasion. Conceptually, invadopodia provide an elegant solution to restrict protease activity to areas of the cell in direct contact with ECM, thus precisely controlling cell invasion in vivo. In this study, we show that Twist1, a key transcription factor in tumor metastasis, is both necessary and sufficient to promote invadopodia formation. Importantly, invadopodia formation is required for the ability of Twist1 to promote tumor metastasis in vivo. Together, these results demonstrate an essential role for invadopodia in tumor invasion and metastasis in vivo.</p>
+        <p id="P29">How invadopodia formation is regulated at the molecular level is still not well understood. Our current study indicates that Twist1 directly induces the expression and activation of PDGFRα, thus promoting Src kinase activation and invadopodia formation. Although we did not detect induction of several important invadopodia proteins, including cortactin, Tks4, Tks5, and MT1-MMP, by Twist1 (data not shown), we are actively exploring additional mechanisms by which Twist1 regulates invadopodia.</p>
+        <p id="P30">Another question arising from our study is whether invadopodia function is required for the EMT process. Epithelial cells sit on top of a layer of basement membrane. For the EMT program to occur in vivo, these cells must breach the underlying basement membrane to dissociate (<xref ref-type="bibr" rid="R27">Nakaya et al., 2008</xref>). Little is known about the functional relationship between basement membrane integrity and the EMT program. In HMLE-Snail cells and EpH4-Ras cells treated with TGFβ, knockdown of Twist1 inhibited invadopodia formation, while these cells underwent the morphological changes associated with EMT and lost E-cadherin expression. Additionally, knockdown of Tks5, a required component of invadopodia, did not revert the EMT phenotype in HMLE-Twist1 cells. These results indicate that invadopodia function is not essential for EMT to occur in 2D cultures. However, it is plausible that the EMT program requires activation of Twist1 and invadopodia formation to allow degradation of the basement membrane in vivo. Studies in vivo or in 3D cultures with intact basement membrane are required to fully answer this question.</p>
+      </sec>
+      <sec id="S11">
+        <title>Twist1 and Snail have distinct cellular functions and transcriptional targets</title>
+        <p id="P31">The EMT program is considered a key event promoting carcinoma cell dissociation, invasion, and metastasis. Several transcription factors, including Snail, Slug, ZEB1, ZEB2, and Twist1, promote EMT in epithelial cells (<xref ref-type="bibr" rid="R29">Peinado et al., 2007</xref>). During mesoderm formation and neural crest development, these transcription factors are activated to allow the dissociation and migration of epithelial cells. A major unsolved question is to determine the distinct cellular functions and molecular targets of individual EMT-inducing transcription factors. Extensive studies in recent years have demonstrated that Snail (<xref ref-type="bibr" rid="R4">Batlle et al., 2000</xref>; <xref ref-type="bibr" rid="R10">Cano et al., 2000</xref>), Slug (<xref ref-type="bibr" rid="R16">Hajra et al, 2002</xref>), and ZEB2 (<xref ref-type="bibr" rid="R13">Comijin et al., 2001</xref>), all zinc-finger-containing transcriptional repressors, directly bind to the E-boxes on the E-cadherin promoter and suppress its transcription. In this study, we identified a unique function of Twist1 in promoting matrix degradation via invadopodia. We show that Twist1 functions as a transcriptional activator to directly induce the expression of PDGFRα, in contrast to the EMT-inducing Zn-finger transcription factors.</p>
+        <p id="P32">Vertebrate Twist1 lacks a transcription activation domain and requires dimerization with other bHLH transcription factors to activate transcription. Previous studies have shown Twist1 heterodimers with MyoD function as transcriptional repressors (<xref ref-type="bibr" rid="R17">Hamamori et al., 1997</xref>). In contrast, heterodimerization with E12 enables Twist1 to activate FGF2 transcription (<xref ref-type="bibr" rid="R22">Laursen et al, 2007</xref>). Here we demonstrate that Twist1 functions as a transcriptional activator to directly induce the transcription of PDGFRα. Twist1 might function as an activator or repressor of transcription based on dimerization partners under different physiological and cellular environments. The factors that heterodimerize with Twist1 to activate PDGFRα transcription remain unknown, although the E12/E47 proteins could perform this function.</p>
+      </sec>
+      <sec id="S12">
+        <title>The pathway linking Twist1, PDGFR, and invadopodia is likely to play a conserved role in matrix degradation during both tumor metastasis and embryonic morphogenesis</title>
+        <p id="P33">Twist1 has been associated with increased metastasis in both experimental tumor metastasis models and in many types of human cancers. Interestingly, PDGFRα overexpression and activation have also been observed in aggressive human breast tumors (<xref ref-type="bibr" rid="R31">Seymour and Bezwoda, 1994</xref>; <xref ref-type="bibr" rid="R20">Jechlinger et al, 2006</xref>). Activation of PDGFRs was first observed in TGFβ-induced EMT and shown to be involved in cell survival during EMT and experimental metastasis in mice (<xref ref-type="bibr" rid="R20">Jechlinger et al., 2006</xref>). Here, we demonstrated a role of PDGFRα in invadopodia formation and matrix degradation during tumor metastasis. Interestingly, suppression of PDGFRα had no significant effects on cell proliferation or survival in vitro and in vivo. These results could be due to the greater specificity of shRNAs compared to chemical inhibition as well as differences in cellular and signaling contexts. Indeed, we found that STI571 (Gleevec), a c-ABL and c-Kit inhibitor that also inhibits PDGFR at a higher concentration, suppressed Twist1-induced invadopodia formation and matrix degradation. However, long-term (four days) treatment with STI571 resulted in cell toxicity in HMLE-Twist1 cells (data not shown).</p>
+        <p id="P34">Our analyses identified Twist1 as a transcription inducer of PDGFRα and demonstrate a tight correlation between the expression level of Twist1 and PDGFRα in four large human breast tumor gene expression studies. Interestingly, PDGF ligand was also present in over 95% of tumor samples that expressed Twist1 and PDGFRα, indicating PDGFRα is activated in these tumors. Although these two genes alone are not sufficient to predict survival with statistical significance in these studies, these data, together with our metastasis data in mice and human breast cancer tissue array data, strongly suggest their involvement in breast cancer progression. Twist1, as a transcription factor, is difficult to target therapeutically. As a downstream target of Twist1 with roles in tumor invasion, PDGFRα might be a potentially valuable target for future therapeutics against metastasis.</p>
+        <p id="P35">Although our study focuses on the role of Twist1-induced invadopodia in metastasis, it also has important implications in development. Twist1 null mice and PDGFRα null mice both show defects in cranial neural crest development (<xref ref-type="bibr" rid="R12">Chen and Behringer, 1995</xref>, <xref ref-type="bibr" rid="R33">Sun et al., 2000</xref>). In addition, the expression pattern of Twist1 and PDGFRα are similar along the developing neural crest and craniofacial region in developing mouse embryos (<xref ref-type="bibr" rid="R14">Gitelman, 1997</xref>, <xref ref-type="bibr" rid="R34">Takakura et al., 1997</xref>). Our identification of PDGFRα as a highly conserved transcriptional target of Twist1 suggests that the pathway linking Twist1, PDGFRα, and invadopodia might play a key role in regulating neural crest development. Reactivation of this developmental machinery in tumor metastasis is another example of an important developmental pathway regulating tumor progression.</p>
+      </sec>
+    </sec>
+    <sec sec-type="methods" id="S13">
+      <title>Experimental Procedures</title>
+      <sec id="S14">
+        <title>Cell Lines</title>
+        <p id="P36">67NR, 168FARN, 4T1 cells and the human mammary epithelial cell lines HMLE and HMLER were cultured as described (<xref ref-type="bibr" rid="R37">Yang et al., 2004</xref>). EpH4Ras cells were passaged in mammary epithelial growth media (MEGM) mixed 1:1 with DMEM/F12 supplemented with human EGF, insulin, and hydrocortisone.</p>
+      </sec>
+      <sec id="S15">
+        <title>Viral Production and Infection</title>
+        <p id="P37">Stable cell lines were created via infection of target cells using either lentiviruses or Moloney viruses. 293T cells were seeded at 1×10<sup>6</sup> cells per 6cm dish in DMEM/10%FBS. After 18 hours, cells were transfected as follows: 6μL TransIT-LT1 (Mirus Bio) was added to 150 μL DMEM and incubated 20 minutes. 1μg of viral vector along with 0.9μg of the appropriate gag/pol expression vector (pUMCV3 for pBabe or pWZL or pCMV 8.2R for lentiviral vectors) and 0.1μg VSVG expression vector were then added to the DMEM/LT-1 mixture. The mixture was incubated 30 minutes and then added to 293T cells overnight. Next day fresh media were added to the transfected 293T cells. Viral supernatant was harvested at 48 and 72 hours post transfection, filtered, and added to the recipient cell lines with 6 μg/ml protamine sulfate for 4 hours infection. HMLE and EpH4Ras cells were then selected with 2 μg/ml puromycin, or 10 μg/ml blasticidin.</p>
+      </sec>
+      <sec id="S16">
+        <title>Plasmids</title>
+        <p id="P38">The Twist1 and Snail cDNAs and the Twist1-ER and Snail-ER in the pWZL-Blast vector were described in Mani et al, 2009. The three shRNA lentiviral constructs against Twist1 in the pSP108 vector were described in <xref ref-type="bibr" rid="R37">Yang et al, 2004</xref>. The shRNA lentiviral constructs against Tks5 in the pLKO vector were provided by Dr. Sara Courtneidge. The shRNAmir lentiviral constructs against PDGFRα in the pGIPZ vector were purchased from Open Biosystems. The oncogenic Ras (V12) was cloned into the pRRL lentiviral vector.</p>
+      </sec>
+      <sec id="S17">
+        <title>Real-Time PCR</title>
+        <p id="P39">Total RNAs were extracted from cells at 80–90% confluency using RNeasy Mini Kit coupled with DNase treatment (Qiagen) and reverse transcribed with High Capacity cDNA Reverse Transcription Kit (Applied Biosystems). Resulting cDNAs were analyzed in triplicates using SYBR-Green Master PCR mix (Applied Biosystems). Relative mRNA concentrations were determined by 2<sup>−(Ct-Cc)</sup> where Ct and Cc are the mean threshold cycle differences after normalizing to GAPDH values. Primers used for PCR are listed in <xref rid="SD1" ref-type="supplementary-material">Supplemental Information</xref>.</p>
+      </sec>
+      <sec id="S18">
+        <title>Immunoprecipitation</title>
+        <p id="P40">Cells at 80–90% confluence were washed with PBS containing 100 μM Na<sub>3</sub>VO<sub>4</sub> and lysed in lysis buffer (50 mM Tris-HCL, pH 7.5, 150 mM NaCl, 1% Triton X-100, 10 mM NaF, 100 μM Na<sub>3</sub>VO<sub>4</sub>, 2 mM DTT) containing 1:50 dilution Protease Inhibitor Cocktail Set III (Calbiochem). For immunoprecipitations, lysates were incubated with antibodies overnight at 4°C. 50 μL Protein G-Sepharose 4B conjugated beads (Invitrogen) were added for 12 hours at 4°C. Beads were washed in lysis buffer and in PBS containing 100 uM Na<sub>3</sub>VO<sub>4</sub>. Proteins were eluted from beads using SDS sample buffer and analyzed on 4–12% precast SDS gels (PAGEgel).</p>
+      </sec>
+      <sec id="S19">
+        <title>In situ zymography</title>
+        <p id="P41">This protocol is adapted from <xref ref-type="bibr" rid="R3">Artym et al. 2009</xref>. Briefly, 12 mm coverslips were incubated in 20% nitric acid for 2 hours, washed in H<sub>2</sub>O for 4 hours. Coverslips were incubated with 50 μg/mL poly-L-lysine/PBS for 15 min followed by PBS washes before 0.15% gluteraldehyde/PBS was added for 10 min, followed by PBS washes. Coverslips were inverted onto 20 μl droplets of 1:9 0.1% fluorescein isothiocyante (FITC)-gelatin (Invitrogen): 0.2% porcine gelatin for 10 minutes. Coverslips were washed in PBS and then incubated 15 min in 5 mg/ml NaBH<sub>4</sub>. Coverslips were rinsed in PBS and incubated at 37° in 10% calf serum/DMEM for 2 hours. 20,000 cells were seeded on each coverslip, incubated for 8 hours, and processed for immunofluorescence. Each experiment was performed in triplicate. Images were taken at ten fields per sample for a total of approximately 150 cells per sample. Gelatin degradation was quantified using ImageJ software. To measure the percentage of degraded area in each field, identical signal threshold for the FITC-gelatin fluorescence are set for all images in an experiment and the degraded area with FITC signal below the set threshold was measured by ImageJ. The resulting percentage of degradation area was further normalized to total cell number (counted by DAPI staining for nuclei) in each field. The final gel degradation index is the average percentage degradation per cell obtained from all 10 fields. Each experiment was repeated at least three times.</p>
+      </sec>
+      <sec id="S20">
+        <title>Immunofluorescence</title>
+        <p id="P42">Matrix substrates were prepared using 0.2% porcine gelatin as for <italic>in situ</italic> zymography. Cells were fixed at 37°C in 4% paraformaldehyde (PFA)/PBS with 50 μM CaCl<sub>2</sub> for 15 min, permeabilized with 0.1% Triton X-100/PBS for 10 min, and blocked with 5% goat serum. Samples were incubated with primary antibodies overnight at 4°C and with secondary antibodies and/or phalloidin for 2 hours. After washing, coverslips were mounted with VECTASHIELD (Vector Laboratories). All antibodies used and their dilutions are listed in <xref rid="SD1" ref-type="supplementary-material">Supplemental Information</xref>.</p>
+      </sec>
+      <sec id="S21">
+        <title>Chromatin Immunoprecipitation</title>
+        <p id="P43">Cells at 80% confluence were crosslinked with 4% PFA, lysed, and sonicated. Nuclear lysates were incubated with Protein G Dynabeads (Invitrogen) pre-conjugated with anti-estrogen receptor antibody overnight. DNA was reverse crosslinked and purified by phenol-chloroform and ethanol precipitation.</p>
+      </sec>
+      <sec id="S22">
+        <title>Subcutaneous tumor implantation and metastasis assay</title>
+        <p id="P44">All animal care and experiments were approved by the Institutional Animal Care and Use Committee (IACUC) of the University of California, San Diego. 1.5 million cells resuspended in 50% Matrigel were injected into the left and right flanks of Nude mice and allowed to grow to about 2 cm in diameter before mice were sacrificed. Primary tumor size was measured every five days. Lungs were harvested and imaged for GFP positive tumor cells. Tissues were embedded in paraffin, sectioned, stained with hematoxylin and eosin, and imaged to identify GFP positive tumor cells.</p>
+      </sec>
+      <sec id="S23">
+        <title>Three Dimensional Cell Culture</title>
+        <p id="P45">Equal volumes of neutralized collagen I and Matrigel were mixed on ice and 20 μl added to the bottom of each well of an 8-chamber coverglass slide. Cells of interest were mixed with the Matrigel:collagen mix to give a final concentration of 200,000 cells per ml and 100 ul of the cell:matrix mixture added to each well. Media was changed every other day until establishment of spherical colonies. TGFβ1 was added at 5 ng/ml every other day for up to two weeks. Cells were fixed with 4% PFA and processed as described above for immunofluorescence.</p>
+      </sec>
+      <sec id="S24">
+        <title>Immunohistochemistry</title>
+        <p id="P46">Paraffin sections of human or mouse samples were rehydrated through xylene and graded alcohols. Antigen retrieval was accomplished using a pressure cooker in 10 mM sodium citrate 0.05% Tween. Samples were incubated with 3% H<sub>2</sub>O<sub>2</sub> for 30 minutes followed by 5 hours blocking in 20% goat serum in PBS. Endogenous biotin and avidin were blocked using a Vector Avidin/Biotin blocking kit. Primary antibodies were incubated overnight at 4°C in 20% goat serum. Biotinylated secondary antibody and Vectorstain ABC kit were used as indicated by manufacturer. Samples were developed with diaminobenzidine (DAB) and samples counterstained with hematoxylin and mounted with Permount.</p>
+        <boxed-text id="BX1" position="float">
+          <title>Significance</title>
+          <p id="P5">Studies suggest that the EMT-inducing transcription factors play critical roles in tumor metastasis. A major question is what are the cellular functions and transcriptional targets of individual EMT-inducing transcription factors required for tumor metastasis. Our study identifies a unique function of Twist1 in promoting invadopodia-mediated matrix degradation, which is essential for its ability to promote metastasis. Formation of invadopodia and loss of cell adhesion are regulated by different transcription factors. This explains why multiple factors need to be activated coordinately to promote carcinoma cells to undergo EMT and invade. We also identify PDGFRα as a direct transcriptional target of Twist1 in promoting invadopodia formation and tumor metastasis, therefore suggesting that PDGFRs might be potential targets for anti-metastasis therapies.</p>
+        </boxed-text>
+      </sec>
+    </sec>
+    <sec sec-type="supplementary-material" id="S25">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="SD1">
+        <label>01</label>
+        <media xlink:href="NIHMS270286-supplement-01.doc" xlink:type="simple" id="N0x13555d90N0x1426c2c0" position="anchor" mimetype="application" mime-subtype="msword"/>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <sec id="S26" sec-type="display-objects">
+      <title>Figures</title>
+      <fig id="F1" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <title>Twist1 is necessary for invadopodia formation</title>
+          <p>A. Indicated cell lysates were analyzed by SDS-PAGE and probed for Twist1 and β-actin.</p>
+          <p>B. 67NR, 168FARN (expressing control or Twist1 knockdown shRNA), and 4T1 (expressing control or Twist1 knockdown shRNA) cells were plated on FITC-conjugated gelatin (green) for 8 hours. F-actin was stained with phallodin (red) and nuclei with DAPI (blue). Areas of gelatin degradation appear as punctuate black areas beneath the cells.</p>
+          <p>C. Quantification of FITC-gelatin degradation. N=150 cells/sample. *p&lt;0.02.</p>
+          <p>D–E. 168FARN and 4T1 cells expressing control or Twist1 shRNAs were stained with phalloidin (red), DAPI (blue), and cortactin (green).</p>
+          <p>F. Quantification of percentage of cells with invadopodia. N=150 cells/sample. *p&lt;0.02.</p>
+          <p>Error bars are standard error of mean (SEM). Scale bars are 1 μm for insets, 5 μm for full images.</p>
+          <p>See also <xref rid="SD1" ref-type="supplementary-material">Figure S1</xref>.</p>
+        </caption>
+        <graphic xlink:href="nihms270286f1"/>
+      </fig>
+      <fig id="F2" position="float">
+        <label>Figure 2</label>
+        <caption>
+          <title>Twist1 is sufficient to promote invadopodia formation</title>
+          <p>A. HMLE cells expressing a control vector or Twist1 were plated on 0.2% gelatin matrix for 72 hours and invadopodia were visualized by colocalization of cortactin (green) and F-actin (red).</p>
+          <p>B. Quantification of cells with invadopodia. N=150 cells/sample. *p&lt;0.02.</p>
+          <p>C. Colocalization of F-actin (red) and cortactin (green) is restricted to the basal side of cells in direct contact with the underlying matrix.</p>
+          <p>D. HMLE control or HMLE-Twist1 cells were plated on FITC-gelatin for 8 hours and stained for F-actin (red) and nuclei (blue).</p>
+          <p>E. Quantification of degradation by HMLE-ctrl and HMLE-Twist1 cells and HMLE-Twist1 cells treated with 25 μM GM6001 Negative Control (GMNC) or 25 μM GM6001 for eight hours. N=150 cells/sample. *p&lt;0.02.</p>
+          <p>Error bars are SEM. Scale bars are 1 μm for insets, 5 μm for full images.</p>
+          <p>See also <xref rid="SD1" ref-type="supplementary-material">Figure S2</xref>.</p>
+        </caption>
+        <graphic xlink:href="nihms270286f2"/>
+      </fig>
+      <fig id="F3" position="float">
+        <label>Figure 3</label>
+        <caption>
+          <title>Twist1-mediated matrix degradation is invadopodia-driven and Src-dependent</title>
+          <p>A. HMLE-Twist1 cells expressing a control or Tks5 shRNA were plated on 0.2% gelatin and stained for Tks5 (green) or phosphotyrosine (green) and F-actin (red).</p>
+          <p>B. Quantification of cells with invadopodia. N=150 cells/sample. *p&lt;0.02.</p>
+          <p>C. Quantification of FITC-gelatin degradation. N=150 cells/sample. *p&lt;0.02.</p>
+          <p>D. HMLE-Twist1 cells were plated on 0.2% gelatin and treated with treated with DMSO or 5μM SU6656 for 12 hours and stained for phosphotyrosine (green) and F-actin (red).</p>
+          <p>E. Cortactin and Src were immunoprecipitated from HMLE control and HMLE-Twist1 cell lysates, analyzed by SDS-PAGE, and probed for cortactin and phosphotyrosine and Src and pTyr<sup>416</sup>Src, respectively. Input lysates were probed for β-actin, Src, and cortactin.</p>
+          <p>F. Quantification of FITC-gelatin degradation. Indicated cells were treated with 5 μM SU6656 or DMSO for 12 hours or transfected with control or SrcK295M/Y527F vectors. N=150 cells/sample. *p&lt;0.02.</p>
+          <p>G. Quantification of cells with invadopodia. N=150 cells/sample. *p&lt;0.02.</p>
+          <p>Error bars are SEM. Scale bars are 1 μm for insets, 5 μm for full images.</p>
+          <p>See also <xref rid="SD1" ref-type="supplementary-material">Figure S3</xref>.</p>
+        </caption>
+        <graphic xlink:href="nihms270286f3"/>
+      </fig>
+      <fig id="F4" position="float">
+        <label>Figure 4</label>
+        <caption>
+          <title>Twist1-induced PDGFR expression and activation is required for invadopodia formation</title>
+          <p>A. Real-time PCR analysis of PDGFRα and PDGFRβ expression in HMLE-Twist1-ER cells treated with 20 nM 4-hydroxy-tamoxifen.</p>
+          <p>B. Cell lysates from HMLE control, HMLE-Twist1 cells, HMLE-Twist1 cells treated with vehicle or 8μg/ml PDGFRα blocking antibody (ctrl and mAb), and HMLE-Twist1 cells expressing control (shC) or PDGFR (shα1 and 3) shRNA were analyzed by SDS-PAGE and probed for β-actin, PDGFRα, PDGFRβ, pTyr<sup>754</sup>PDGFRα, and pTyr<sup>1009</sup>PDGFRβ.</p>
+          <p>C. Cortactin and Src were immunoprecipitated from cell lysates of HMLE-Twist1 cells treated with 8 μg/mL PDGFRα blocking antibody (mAb) or vehicle control (ctrl) or HMLE-Twist1 cells expressing indicated shRNAs (control, shC; shPDGFRα, shα1 and shα3) and probed for total cortactin and phosphotyrosine or total Src and pTyr<sup>419</sup>Src, respectively. Input lysates were probed for β-actin, cortactin, and total Src.</p>
+          <p>D. HMLE-Twist1 cells were seeded on 0.2% gelatin and treated for 24 hours with 8 μg/mL PDGFRα blocking antibody (αPDGFRα) or vehicle control and stained for phosphotyrosine (green), F-actin (red), and nuclei (blue). Scale bars are 1 μm for insets, 5 μm for full images.</p>
+          <p>E. Quantification of cells with invadopodia. N=150 cells/sample. *p&lt;0.02.</p>
+          <p>F. Quantification of FITC-gelatin degradation. N=150 cells/sample. *p&lt;0.02.</p>
+          <p>Error bars are SEM.</p>
+          <p>See also <xref rid="SD1" ref-type="supplementary-material">Figure S4</xref>.</p>
+        </caption>
+        <graphic xlink:href="nihms270286f4"/>
+      </fig>
+      <fig id="F5" position="float">
+        <label>Figure 5</label>
+        <caption>
+          <title>Twist1 is required for Snail-induced invadopodia formation</title>
+          <p>A. HMLE-Snail cells expressing indicated shRNA were seeded on 0.2% gelatin for 72 hours, and stained for cortactin (green), F-actin (red), and nuclei (blue).</p>
+          <p>B. Quantification of cells with invadopodia. N=150 cells/sample. *p&lt;0.02.</p>
+          <p>C. HMLE-Snail cells expressing control or Twist1 shRNA were seeded on FITC-gelatin (green) for 8 hours and stained for F-actin (red) and nuclei (blue).</p>
+          <p>D. Quantification of FITC-gelatin degradation. N=150 cells/sample. *p&lt;0.02.</p>
+          <p>E. Real-time PCR analysis of PDGFRα and Twist1 mRNA expression in HMLE-Snail-ER cells treated with 20 nM 4-hydroxy-tamoxifen.</p>
+          <p>F. Cell lysates from indicated cells were analyzed by SDS-PAGE and probed for PDGFRα, Twist1, and β-actin.</p>
+          <p>Error bars are SEM. Scale bars are 1 μm for insets, 5 μm for full images.</p>
+          <p>See also <xref rid="SD1" ref-type="supplementary-material">Figure S5</xref>.</p>
+        </caption>
+        <graphic xlink:href="nihms270286f5"/>
+      </fig>
+      <fig id="F6" position="float">
+        <label>Figure 6</label>
+        <caption>
+          <title>Twist1 is required for TGFβ-induced invadopodia formation in Eph4Ras cells</title>
+          <p>A. Eph4Ras cells expressing control or Twist1 shRNAs were seeded on 0.2% gelatin for 72 hours before and after treatment with 5 ng/ml TGFβ1 for seven days and stained for cortactin (green), F-actin (red), and nuclei (blue).</p>
+          <p>B. Quantification of cells with invadopodia before and after seven days of 5 ng/ml TGFβ1 treatment for EpH4Ras cells expressing indicated shRNAs. N=150 cells/sample. *p&lt;0.02.</p>
+          <p>C. Quantification of FITC-gelatin degradation for cells expressing indicated shRNA before and after seven days of 5 ng/ml TGFβ1 treatment. N=150 cells/sample. *p&lt;0.02.</p>
+          <p>D. Cell lysates from indicated cells before and after treatment with 5 ng/mL TGFβ1 for seven days were analyzed by SDS-PAGE and probed for PDGFRα, Twist1, and β-actin.</p>
+          <p>E. Indicated cells were embedded in 1:1 mixture of Matrigel and collagen, allowed to form 3D structures, and processed for IF before and after 7 days of induction with 7 ng/ml TGFβ1. Cells were stained for Tks5 (green) and F-actin (red).</p>
+          <p>Error bars are SEM. Scale bars are 1 μm for insets, 5 μm for full images.</p>
+          <p>See also <xref rid="SD1" ref-type="supplementary-material">Figure S6</xref>.</p>
+        </caption>
+        <graphic xlink:href="nihms270286f6"/>
+      </fig>
+      <fig id="F7" position="float">
+        <label>Figure 7</label>
+        <caption>
+          <title>Twist1-induced metastasis is mediated by invadopodia in vivo and requires PDGFRα</title>
+          <p>A. Representative images of primary tumor paraffin tissue sections stained with SV40 Large-T antigen IHC and counterstained with hematoxylin. Tumor margin is indicated with dashed line when apparent. Closed triangles indicate invasive, Large-T positive tumor cells. Asterisks indicate adjacent adipose tissue. Scale bars are 100 μm.</p>
+          <p>B. Images of sections of primary tumors stained with cortactin (green), Tks5 (red), and DAPI (blue). Scale bars are 1 μm for insets, 5 μm for full images.</p>
+          <p>C. Quantification of number of invadopodia (cortactin/Tks5 colocalization) per cell. N=150 cells/sample. *p&lt;0.02.</p>
+          <p>D. Quantification of total number of GFP positive tumor cells (HMLER-Twist1 cells expressing indicated shRNAs) in individual lungs. N=5 mice per group.</p>
+          <p>E. Representative images of lungs from mice injected with HMLER-Twist1 cells expressing indicated shRNAs show a decrease in dissemination of GFP positive tumor cells (green) to the lungs upon knockdown of PDGFRα or Tks5.</p>
+          <p>Error bars are SEM.</p>
+          <p>See also <xref rid="SD1" ref-type="supplementary-material">Figure S7</xref>.</p>
+        </caption>
+        <graphic xlink:href="nihms270286f7"/>
+      </fig>
+      <fig id="F8" position="float">
+        <label>Figure 8</label>
+        <caption>
+          <title>PDGFRα is a direct target of Twist1 and expression of Twist1 and PDGFRα is negatively correlated with survival</title>
+          <p>A. Schematic of the human PDGFRα gene promoter region with conserved E-box element 1839 bp upstream of transcriptional start site (TSS), and regions targeted by three primer pairs (#1–3, dashed lines). Primer pairs #1 and #2 target the putative E-box while primer pair #3 targets a downstream region lacking a conserved E-box.</p>
+          <p>B. HMLE-Twist1-ER cells were treated with 20 nM 4-hydroxytamoxifen for 0, 1, or 4 hours. Chromatin was immunoprecipitated using estrogen receptor antibody and PCR was performed on the ChIP product using three primer pairs.</p>
+          <p>C. Alignment of conserved E-box (underlined) in PDGFRα promoter. Number in parenthesis indicates distance upstream from transcription start site. Hs=<italic>Homo sapiens</italic>, Pt=<italic>Pan troglodytes</italic>, Mm=<italic>Mus musculus</italic>, Md=<italic>Monodelphus domesticus</italic>, Gg=<italic>Gallus gallus</italic>.</p>
+          <p>D. Correlation of Twist1 and PDGFRα in four human breast cancer expression array datasets. R is the correlation coefficient.</p>
+          <p>E. Representative images of normal human breast tissue or human breast cancer samples stained for Twist1 and PDGFRα. Scale bar is 5 μm for inset, 100 μm for full images.</p>
+          <p>F. Kaplan-Meier survival curve for samples classified as high PDGFRα/high Twist1 expression and low PDGRα/low Twist1 by IHC analysis. Censored data are indicated with X.</p>
+          <p>See also <xref rid="SD1" ref-type="supplementary-material">Figure S8</xref> and <xref rid="SD1" ref-type="supplementary-material">Table S1</xref>.</p>
+        </caption>
+        <graphic xlink:href="nihms270286f8"/>
+      </fig>
+    </sec>
+    <ack id="S27">
+      <p>We are grateful to Dr. Sara Courtneidge and the members of her laboratory, especially Begoňa Diaz and Danielle Murphy, for their suggestions and for providing the antibody and shRNA constructs for Tks5. We thank Drs. Robert A. Weinberg, Alexandra Newton, Kun-Liang Guan, and other members of the Yang lab for their suggestions to the manuscript. We thank Dr. David Cheresh for providing Yes and Fyn antibodies. We thank Dr. Cornelis Murre for providing the E47 expression construct. We thank the NCI Cancer Diagnosis Program (CDP) for providing breast tumor tissue microarray slides. We thank the Shared Microscope Facility and UCSD Cancer Center Specialized Support Grant P30 CA23100. This work was supported by grants to J. Y. from NIH (DP2 OD002420-01), Kimmel Scholar Award, and California Breast Cancer Research Program (12IB-0065), by a NIH Molecular Pathology of Cancer Predoctoral Training grant and a DOD Breast Cancer Predoctoral fellowship (M.A.E), by an NIH Pharmacological Science Predoctoral Training grant (A.T.C), by a DOD Breast Cancer Era of Hope Postdoctoral Fellowship (E.D.), and by the Susan G. Komen Foundation grant FAS0703850 (J.K. and L.O.).</p>
+    </ack>
+    <ref-list>
+      <ref id="R1">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Abram</surname>
+              <given-names>CL</given-names>
+            </name>
+            <name>
+              <surname>Seals</surname>
+              <given-names>DF</given-names>
+            </name>
+            <name>
+              <surname>Pass</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Salinsky</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Maurer</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Roth</surname>
+              <given-names>TM</given-names>
+            </name>
+            <name>
+              <surname>Courtneidge</surname>
+              <given-names>SA</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>The adaptor protein fish associates with members of the ADAMs family and localizes to podosomes of Src-transformed cells</article-title>
+          <source>J Biol Chem</source>
+          <volume>278</volume>
+          <fpage>16844</fpage>
+          <lpage>51</lpage>
+          <pub-id pub-id-type="pmid">12615925</pub-id>
+        </citation>
+      </ref>
+      <ref id="R2">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ayala</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Baldassarre</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Giacchetti</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Multiple regulatory inputs converge on cortactin to control invadopodia biogenesis and extracellular matrix degradation</article-title>
+          <source>J Cell Sci</source>
+          <volume>121</volume>
+          <fpage>369</fpage>
+          <lpage>78</lpage>
+          <pub-id pub-id-type="pmid">18198194</pub-id>
+        </citation>
+      </ref>
+      <ref id="R3">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Artym</surname>
+              <given-names>VV</given-names>
+            </name>
+            <name>
+              <surname>Yamada</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Mueller</surname>
+              <given-names>SC</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>ECM degradation assays for analyzing local cell invasion</article-title>
+          <source>Methods Mol Biol</source>
+          <volume>522</volume>
+          <fpage>211</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">19247615</pub-id>
+        </citation>
+      </ref>
+      <ref id="R4">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Batlle</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Sancho</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Franci</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Dominguez</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Monfar</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Baulida</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Garcia De Herreros</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>The transcription factor snail is a repressor of E-cadherin gene expression in epithelial tumour cells</article-title>
+          <source>Nat Cell Biol</source>
+          <volume>2</volume>
+          <fpage>84</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">10655587</pub-id>
+        </citation>
+      </ref>
+      <ref id="R5">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Blake</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Broome</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Gishizky</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Sun</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Courtneidge</surname>
+              <given-names>SA</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>SU6656, a selective Src family kinase inhibitor, used to probe growth factor signaling</article-title>
+          <source>Mol Cell Biol</source>
+          <volume>20</volume>
+          <fpage>9018</fpage>
+          <lpage>27</lpage>
+          <pub-id pub-id-type="pmid">11074000</pub-id>
+        </citation>
+      </ref>
+      <ref id="R6">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Blouw</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Seals</surname>
+              <given-names>DF</given-names>
+            </name>
+            <name>
+              <surname>Pass</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Diaz</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Courtneidge</surname>
+              <given-names>SA</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>A role for the podosome/invadopodia scaffold protein Tks5 in tumor growth in vivo</article-title>
+          <source>Eur J Cell Biol</source>
+          <volume>87</volume>
+          <fpage>555</fpage>
+          <lpage>67</lpage>
+          <pub-id pub-id-type="pmid">18417249</pub-id>
+        </citation>
+      </ref>
+      <ref id="R7">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bowden</surname>
+              <given-names>ET</given-names>
+            </name>
+            <name>
+              <surname>Onikoyi</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Slack</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Myoui</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Yoneda</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Yamada</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Mueller</surname>
+              <given-names>SC</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Co-localization of cortactin and phosphotyrosine identifies active invadopodia in human breast cancer cells</article-title>
+          <source>Exp Cell Res</source>
+          <volume>312</volume>
+          <fpage>1240</fpage>
+          <lpage>53</lpage>
+          <pub-id pub-id-type="pmid">16442522</pub-id>
+        </citation>
+      </ref>
+      <ref id="R8">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boyer</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Thiery</surname>
+              <given-names>JP</given-names>
+            </name>
+          </person-group>
+          <year>1993</year>
+          <article-title>Epithelium-mesenchyme interconversion as example of epithelial plasticity</article-title>
+          <source>APMIS</source>
+          <volume>101</volume>
+          <fpage>257</fpage>
+          <lpage>268</lpage>
+          <pub-id pub-id-type="pmid">8323734</pub-id>
+        </citation>
+      </ref>
+      <ref id="R9">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Buschman</surname>
+              <given-names>MD</given-names>
+            </name>
+            <name>
+              <surname>Bromann</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Cejudo-Martin</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Wen</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Pass</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Courtneidge</surname>
+              <given-names>SA</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>The novel adaptor protein Tks4 (SH3PXD2B) is required for functional podosome formation</article-title>
+          <source>Mol Biol Cell</source>
+          <volume>20</volume>
+          <fpage>1302</fpage>
+          <lpage>11</lpage>
+          <pub-id pub-id-type="pmid">19144821</pub-id>
+        </citation>
+      </ref>
+      <ref id="R10">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cano</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Perez-Moreno</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Rodrigo</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Locascio</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Blanco</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>del Barrio</surname>
+              <given-names>MG</given-names>
+            </name>
+            <name>
+              <surname>Portillo</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Nieto</surname>
+              <given-names>MA</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>The transcription factor snail controls epithelial-mesenchymal transitions by repressing E-cadherin expression</article-title>
+          <source>Nat Cell Biol</source>
+          <volume>2</volume>
+          <fpage>76</fpage>
+          <lpage>83</lpage>
+          <pub-id pub-id-type="pmid">10655586</pub-id>
+        </citation>
+      </ref>
+      <ref id="R11">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>WT</given-names>
+            </name>
+          </person-group>
+          <year>1989</year>
+          <article-title>Proteolytic activity of specialized surface protrusions formed at rosette contact sites of transformed cells</article-title>
+          <source>J Exp Zool</source>
+          <volume>251</volume>
+          <fpage>167</fpage>
+          <lpage>85</lpage>
+          <pub-id pub-id-type="pmid">2549171</pub-id>
+        </citation>
+      </ref>
+      <ref id="R12">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>ZF</given-names>
+            </name>
+            <name>
+              <surname>Behringer</surname>
+              <given-names>RR</given-names>
+            </name>
+          </person-group>
+          <year>1995</year>
+          <article-title>Twist is required in head mesenchyme for cranial neural tube morphogenesis</article-title>
+          <source>Genes Dev</source>
+          <volume>9</volume>
+          <fpage>686</fpage>
+          <lpage>99</lpage>
+          <pub-id pub-id-type="pmid">7729687</pub-id>
+        </citation>
+      </ref>
+      <ref id="R13">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Comijn</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Berx</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Vermassen</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Verschueren</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>van Grunsven</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Bruyneel</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Mareel</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Huylebroeck</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>van Roy</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>The two-handed E box binding zinc finger protein SIP1 downregulates E-cadherin and induces invasion</article-title>
+          <source>Mol Cell</source>
+          <volume>7</volume>
+          <fpage>1267</fpage>
+          <lpage>1278</lpage>
+          <pub-id pub-id-type="pmid">11430829</pub-id>
+        </citation>
+      </ref>
+      <ref id="R14">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gitelman</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <year>1997</year>
+          <article-title>Twist protein in mouse embryogenesis</article-title>
+          <source>Dev Biol</source>
+          <volume>189</volume>
+          <fpage>205</fpage>
+          <lpage>14</lpage>
+          <pub-id pub-id-type="pmid">9299114</pub-id>
+        </citation>
+      </ref>
+      <ref id="R15">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Grobelny</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Poncz</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Galardy</surname>
+              <given-names>RE</given-names>
+            </name>
+          </person-group>
+          <year>1992</year>
+          <article-title>Inhibition of human skin fibroblast collagenase, thermolysin, and Pseudomonas aeruginosa elastase by peptide hydroxamic acids</article-title>
+          <source>Biochemistry</source>
+          <volume>31</volume>
+          <fpage>7152</fpage>
+          <lpage>4</lpage>
+          <pub-id pub-id-type="pmid">1322694</pub-id>
+        </citation>
+      </ref>
+      <ref id="R16">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hajra</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>DY</given-names>
+            </name>
+            <name>
+              <surname>Fearon</surname>
+              <given-names>ER</given-names>
+            </name>
+          </person-group>
+          <year>2002</year>
+          <article-title>The SLUG zinc-finger protein represses E-cadherin in breast cancer</article-title>
+          <source>Cancer Res</source>
+          <volume>62</volume>
+          <fpage>1613</fpage>
+          <lpage>18</lpage>
+          <pub-id pub-id-type="pmid">11912130</pub-id>
+        </citation>
+      </ref>
+      <ref id="R17">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hamamori</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>HY</given-names>
+            </name>
+            <name>
+              <surname>Sartorelli</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Kedes</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <year>1997</year>
+          <article-title>The basic domain of myogenic basic helix-loop-helix (bHLH) proteins is the novel target for direct inhibition by another bHLH protein, Twist</article-title>
+          <source>Mol Cell Biol</source>
+          <volume>17</volume>
+          <fpage>6563</fpage>
+          <lpage>73</lpage>
+          <pub-id pub-id-type="pmid">9343420</pub-id>
+        </citation>
+      </ref>
+      <ref id="R18">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hay</surname>
+              <given-names>ED</given-names>
+            </name>
+          </person-group>
+          <year>1995</year>
+          <article-title>An overview of epithelio-mesenchymal transformation</article-title>
+          <source>Acta Anat. (Basel)</source>
+          <volume>154</volume>
+          <fpage>8</fpage>
+          <lpage>20</lpage>
+          <pub-id pub-id-type="pmid">8714286</pub-id>
+        </citation>
+      </ref>
+      <ref id="R19">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jechlinger</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Grunert</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Tamir</surname>
+              <given-names>IH</given-names>
+            </name>
+            <name>
+              <surname>Janda</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Lüdemann</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Waerner</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Seither</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Weith</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Beug</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kraut</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Expression profiling of epithelial plasticity in tumor progression</article-title>
+          <source>Oncogene</source>
+          <volume>22</volume>
+          <fpage>7155</fpage>
+          <lpage>69</lpage>
+          <pub-id pub-id-type="pmid">14562044</pub-id>
+        </citation>
+      </ref>
+      <ref id="R20">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jechlinger</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Sommer</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Moriggl</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Seither</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Kraut</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Capodiecci</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Donovan</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Cordon-Cardo</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Beug</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Grünert</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Autocrine PDGFR signaling promotes mammary cancer metastasis</article-title>
+          <source>J Clin Invest</source>
+          <volume>116</volume>
+          <fpage>1561</fpage>
+          <lpage>70</lpage>
+          <pub-id pub-id-type="pmid">16741576</pub-id>
+        </citation>
+      </ref>
+      <ref id="R21">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kypta</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Goldberg</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Ulug</surname>
+              <given-names>ET</given-names>
+            </name>
+            <name>
+              <surname>Courtneidge</surname>
+              <given-names>SA</given-names>
+            </name>
+          </person-group>
+          <year>1990</year>
+          <article-title>Association between the PDGF receptor and members of the src family of tyrosine kinases</article-title>
+          <source>Cell</source>
+          <volume>62</volume>
+          <fpage>481</fpage>
+          <lpage>92</lpage>
+          <pub-id pub-id-type="pmid">1696179</pub-id>
+        </citation>
+      </ref>
+      <ref id="R22">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Laursen</surname>
+              <given-names>KB</given-names>
+            </name>
+            <name>
+              <surname>Mielke</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Iannaccone</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Füchtbauer</surname>
+              <given-names>EM</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Mechanism of transcriptional activation by the proto-oncogene Twist1</article-title>
+          <source>J Biol Chem</source>
+          <volume>282</volume>
+          <fpage>34623</fpage>
+          <lpage>33</lpage>
+          <pub-id pub-id-type="pmid">17893140</pub-id>
+        </citation>
+      </ref>
+      <ref id="R23">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Linder</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>The matrix corroded: podosomes and invadopodia in extracellular matrix degradation</article-title>
+          <source>Trends Cell Biol</source>
+          <volume>17</volume>
+          <fpage>107</fpage>
+          <lpage>17</lpage>
+          <pub-id pub-id-type="pmid">17275303</pub-id>
+        </citation>
+      </ref>
+      <ref id="R24">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mani</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Brooks</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Schwaninger</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Miura</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Kutok</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Hartwell</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Richardson</surname>
+              <given-names>AL</given-names>
+            </name>
+            <name>
+              <surname>Weinberg</surname>
+              <given-names>RA</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Mesenchyme Forkhead 1 (FOXC2) plays a key role in metastasis and is associated with aggressive basal-like breast cancers</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <volume>104</volume>
+          <fpage>10069</fpage>
+          <lpage>74</lpage>
+          <pub-id pub-id-type="pmid">17537911</pub-id>
+        </citation>
+      </ref>
+      <ref id="R25">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mani</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Guo</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Liao</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Eaton</surname>
+              <given-names>EN</given-names>
+            </name>
+            <name>
+              <surname>Ayyanan</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>AY</given-names>
+            </name>
+            <name>
+              <surname>Brooks</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Reinhard</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>CC</given-names>
+            </name>
+            <name>
+              <surname>Shipitsin</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2008</year>
+          <article-title>The epithelial-mesenchymal transition generates cells with properties of stem cells</article-title>
+          <source>Cell</source>
+          <volume>133</volume>
+          <fpage>704</fpage>
+          <lpage>15</lpage>
+          <pub-id pub-id-type="pmid">18485877</pub-id>
+        </citation>
+      </ref>
+      <ref id="R26">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Miller</surname>
+              <given-names>LD</given-names>
+            </name>
+            <name>
+              <surname>Smeds</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>George</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Vega</surname>
+              <given-names>VB</given-names>
+            </name>
+            <name>
+              <surname>Vergara</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Ploner</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Pawitan</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Hall</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Klaar</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>ET</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2005</year>
+          <article-title>An expression signature for p53 status in human breast cancer predicts mutation status, transcriptional effects, and patient survival</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <volume>102</volume>
+          <fpage>13550</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="pmid">16141321</pub-id>
+        </citation>
+      </ref>
+      <ref id="R27">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nakaya</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Sukowati</surname>
+              <given-names>EW</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Sheng</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>RhoA and microtubule dynamics control cell-basement membrane interaction in EMT during gastrulation</article-title>
+          <source>Nat Cell Biol</source>
+          <volume>10</volume>
+          <fpage>765</fpage>
+          <lpage>75</lpage>
+          <pub-id pub-id-type="pmid">18552836</pub-id>
+        </citation>
+      </ref>
+      <ref id="R28">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pawitan</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Bjöhle</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Amler</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Borg</surname>
+              <given-names>AL</given-names>
+            </name>
+            <name>
+              <surname>Egyhazi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Hall</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Han</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Holmberg</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Huang</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Klaar</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2005</year>
+          <article-title>Gene expression profiling spares early breast cancer patients from adjuvant therapy: derived and validated in two population-based cohorts</article-title>
+          <source>Breast Cancer Res</source>
+          <volume>7</volume>
+          <fpage>R953</fpage>
+          <lpage>64</lpage>
+          <pub-id pub-id-type="pmid">16280042</pub-id>
+        </citation>
+      </ref>
+      <ref id="R29">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Peinado</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Olmeda</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Cano</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Snail, Zeb and bHLH factors in tumour progression: an alliance against the epithelial phenotype?</article-title>
+          <source>Nat Rev Cancer</source>
+          <volume>7</volume>
+          <fpage>415</fpage>
+          <lpage>28</lpage>
+          <pub-id pub-id-type="pmid">17508028</pub-id>
+        </citation>
+      </ref>
+      <ref id="R30">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Seals</surname>
+              <given-names>DF</given-names>
+            </name>
+            <name>
+              <surname>Azucena</surname>
+              <given-names>EF</given-names>
+              <suffix>Jr</suffix>
+            </name>
+            <name>
+              <surname>Pass</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Tesfay</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Gordon</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Woodrow</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Resau</surname>
+              <given-names>JH</given-names>
+            </name>
+            <name>
+              <surname>Courtneidge</surname>
+              <given-names>SA</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>The adaptor protein Tks5/fish is required for podosome formation and function, and for the protease-driven invasion of cancer cells</article-title>
+          <source>Cancer Cell</source>
+          <volume>7</volume>
+          <fpage>155</fpage>
+          <lpage>65</lpage>
+          <pub-id pub-id-type="pmid">15710328</pub-id>
+        </citation>
+      </ref>
+      <ref id="R31">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Seymour</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Bezwoda</surname>
+              <given-names>WR</given-names>
+            </name>
+          </person-group>
+          <year>1994</year>
+          <article-title>Positive immunostaining for platelet derived growth factor is an adverse prognostic factor in patients with advanced breast cancer</article-title>
+          <source>Breast Cancer Res Treat</source>
+          <volume>32</volume>
+          <fpage>229</fpage>
+          <lpage>33</lpage>
+          <pub-id pub-id-type="pmid">7865852</pub-id>
+        </citation>
+      </ref>
+      <ref id="R32">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sotiriou</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Wirapati</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Loi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Harris</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Fox</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Smeds</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Nordgren</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Farmer</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Praz</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Haibe-Kains</surname>
+              <given-names>B</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2006</year>
+          <article-title>Gene expression profiling in breast cancer: understanding the molecular basis of histologic grade to improve prognosis</article-title>
+          <source>J Natl Cancer Inst</source>
+          <volume>98</volume>
+          <fpage>262</fpage>
+          <lpage>72</lpage>
+          <pub-id pub-id-type="pmid">16478745</pub-id>
+        </citation>
+      </ref>
+      <ref id="R33">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sun</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Jayatilake</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Afink</surname>
+              <given-names>GB</given-names>
+            </name>
+            <name>
+              <surname>Ataliotis</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Nister</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Richardson</surname>
+              <given-names>WD</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>HK</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>A human YAC transgene rescues craniofacial and neural tube development in PDGFRalpha knockout mice and uncovers a role for PDGFRalpha in prenatal lung growth</article-title>
+          <source>Development</source>
+          <volume>127</volume>
+          <fpage>4519</fpage>
+          <lpage>29</lpage>
+          <pub-id pub-id-type="pmid">11023856</pub-id>
+        </citation>
+      </ref>
+      <ref id="R34">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Takakura</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Yoshida</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Ogura</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Kataoka</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Nishikawa</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Nishikawa</surname>
+              <given-names>SI</given-names>
+            </name>
+          </person-group>
+          <year>1997</year>
+          <article-title>PDGFRα expression during mouse embryogenesis: immunolocalization analyzed by whole-mount immunohistostaining using the monoclonal anti-mouse PDGFRα antibody APA5</article-title>
+          <source>J Histochem Cytochem</source>
+          <volume>45</volume>
+          <fpage>883</fpage>
+          <lpage>93</lpage>
+          <pub-id pub-id-type="pmid">9199674</pub-id>
+        </citation>
+      </ref>
+      <ref id="R35">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tarone</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Cirillo</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Giancotti</surname>
+              <given-names>FG</given-names>
+            </name>
+            <name>
+              <surname>Comoglio</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>Marchisio</surname>
+              <given-names>PC</given-names>
+            </name>
+          </person-group>
+          <year>1985</year>
+          <article-title>Rous sarcoma virus-transformed fibroblasts adhere primarily at discrete protrusions of the ventral membrane called podosomes</article-title>
+          <source>Exp Cell Res</source>
+          <volume>159</volume>
+          <fpage>141</fpage>
+          <lpage>57</lpage>
+          <pub-id pub-id-type="pmid">2411576</pub-id>
+        </citation>
+      </ref>
+      <ref id="R36">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Klijn</surname>
+              <given-names>JG</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Sieuwerts</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Look</surname>
+              <given-names>MP</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Talantov</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Timmermans</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Meijer-van Gelder</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>Yu</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2005</year>
+          <article-title>Gene-expression profiles to predict distant metastasis of lymph-node-negative primary breast cancer</article-title>
+          <source>Lancet</source>
+          <volume>365</volume>
+          <fpage>671</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">15721472</pub-id>
+        </citation>
+      </ref>
+      <ref id="R37">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Mani</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Donaher</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Ramaswamy</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Itzykson</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Come</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Savagner</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Gitelman</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Richardson</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Weinberg</surname>
+              <given-names>RA</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Twist, a master regulator of morphogenesis, plays an essential role in tumor metastasis</article-title>
+          <source>Cell</source>
+          <volume>117</volume>
+          <fpage>927</fpage>
+          <lpage>39</lpage>
+          <pub-id pub-id-type="pmid">15210113</pub-id>
+        </citation>
+      </ref>
+    </ref-list>
+    <fn-group>
+      <fn id="FN2">
+        <p content-type="publisher-disclaimer">This is a PDF file of an unedited manuscript that has been accepted for publication. As a service to our customers we are providing this early version of the manuscript. The manuscript will undergo copyediting, typesetting, and review of the resulting proof before it is published in its final citable form. Please note that during the production process errors may be discovered which could affect the content, and all legal disclaimers that apply to the journal pertain.</p>
+      </fn>
+    </fn-group>
+  </back>
+</article>

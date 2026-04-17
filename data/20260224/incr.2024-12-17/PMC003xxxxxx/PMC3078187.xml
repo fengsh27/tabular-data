@@ -1,0 +1,1956 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Archiving and Interchange DTD v2.3 20070202//EN" "archivearticle.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">8913428</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">1628</journal-id>
+      <journal-id journal-id-type="nlm-ta">Curr Opin Cell Biol</journal-id>
+      <journal-title>Current opinion in cell biology</journal-title>
+      <issn pub-type="ppub">0955-0674</issn>
+      <issn pub-type="epub">1879-0410</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">21146390</article-id>
+      <article-id pub-id-type="pmc">3078187</article-id>
+      <article-id pub-id-type="doi">10.1016/j.ceb.2010.11.003</article-id>
+      <article-id pub-id-type="manuscript">NIHMS256554</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Signaling Cell Death from the Endoplasmic Reticulum Stress Response</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Shore</surname>
+            <given-names>Gordon C.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">1</xref>
+          <xref ref-type="corresp" rid="cor1">¶</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Papa</surname>
+            <given-names>Feroz R.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Oakes</surname>
+            <given-names>Scott A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A3">3</xref>
+          <xref ref-type="corresp" rid="cor1">¶</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>1</label>Department of Biochemistry and Goodman Cancer Center, McGill University, Montreal, Quebec, H3G 1Y6, Canada</aff>
+      <aff id="A2"><label>2</label>Department of Medicine, Diabetes Center, &amp; California Institute for Quantitative Biosciences, University of California-San Francisco, 513 Parnassus Avenue, San Francisco, CA 94143, USA</aff>
+      <aff id="A3"><label>3</label>Department of Pathology, University of California-San Francisco, 513 Parnassus Avenue, San Francisco, CA 94143, USA</aff>
+      <author-notes>
+        <corresp id="cor1"><label>¶</label>To whom correspondence should be addressed: Gordon C. Shore, Ph.D., Department of Biochemistry and Goodman Cancer Center McIntyre, McGill University, Medical Sciences Building, Room 702, 3655 Promenade Sir William Osler, Montreal, Quebec H3G 1Y6 Canada, Voice: 514-398-7282; FAX 514-398-7384, <email>gordon.shore@mcgill.ca</email>, or Scott A. Oakes, M.D., UCSF Department of Pathology, 513 Parnassus Avenue, HSW-517, Box 0511, San Francisco, CA 94143-0511, Voice: 415-476-1777; FAX: 415-514-3165, <email>scott.oakes@ucsf.edu</email></corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>10</day>
+        <month>12</month>
+        <year>2010</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>9</day>
+        <month>12</month>
+        <year>2010</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>4</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>1</day>
+        <month>4</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>23</volume>
+      <issue>2</issue>
+      <fpage>143</fpage>
+      <lpage>149</lpage>
+      <permissions>
+        <license>
+          <p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</p>
+        </license>
+      </permissions>
+      <abstract>
+        <title>Summary</title>
+        <p id="P1">Inability to meet protein folding demands within the endoplasmic reticulum (ER) activates the unfolded protein response (UPR), a signaling pathway with both adaptive and apoptotic outputs. While some secretory cell types have a remarkable ability to increase protein folding capacity, their upper limits can be reached when pathological conditions overwhelm the fidelity and/or output of the secretory pathway. Irremediable “ER stress” induces apoptosis and contributes to cell loss in several common human diseases, including type 2 diabetes and neurodegeneration. Researchers have begun to elucidate the molecular switches that determine when ER stress is too great to repair and the signals that are then sent from the UPR to execute the cell.</p>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S1">
+      <title>Introduction</title>
+      <p id="P2">The lumen of the ER is a unique cellular environment optimized to carry out the three primary tasks of this organelle: calcium storage and release, protein folding and secretion, and lipid biogenesis [<xref ref-type="bibr" rid="R1">1</xref>]. A range of cellular disturbances lead to accumulation of misfolded proteins in the ER, including point mutations in secreted proteins that disrupt their proper folding, sustained secretory demands on endocrine cells, viral infection with ER overload of virus-encoding protein, and loss of calcium homeostasis with detrimental effects on ER-resident calcium-dependent chaperones [<xref ref-type="bibr" rid="R2">2</xref>–<xref ref-type="bibr" rid="R4">4</xref>]. The tripartite UPR consists of three ER transmembrane proteins (IRE1α, PERK, ATF6) that alert the cell to the presence of misfolded proteins in the ER and attempt to restore homeostasis in this organelle through increasing ER biogenesis, decreasing the influx of new proteins into the ER, promoting the transport of damaged proteins from the ER to the cytosol for degradation, and upregulating protein folding chaperones [<xref ref-type="bibr" rid="R5">5</xref>]. The adaptive responses of the UPR can markedly expand the protein folding capacity of the cell and restore ER homeostasis [<xref ref-type="bibr" rid="R6">6</xref>]. However, if these adaptive outputs fail to compensate because ER stress is excessive or prolonged, the UPR induces cell death. The cell death pathways collectively triggered by the UPR include both caspase-dependent apoptosis and caspase-independent necrosis. While many details remain unknown, we are beginning to understand how cells determine when ER stress is beyond repair and communicate this information to the cell death machinery. For the purposes of this review, we focus on the apoptotic outputs trigged by the UPR under irremediable ER stress. While the ER contains numerous additional signaling platforms and targets that respond to diverse apoptotic stimuli (eg., those associated with the Bap31 complex [<xref ref-type="bibr" rid="R7">7</xref>,<xref ref-type="bibr" rid="R8">8</xref>]), their formal link to UPR-driven apoptosis remains to be determined.</p>
+    </sec>
+    <sec id="S2">
+      <title>The proximal unfolded protein response sensors</title>
+      <p id="P3">UPR signaling is initiated by three ER transmembrane proteins: IRE1α, PERK, and ATF6. The most ancient ER stress sensor, IRE1α, contains an ER lumenal domain, a cytosolic kinase domain and a cytosolic RNase domain [<xref ref-type="bibr" rid="R9">9</xref>,<xref ref-type="bibr" rid="R10">10</xref>]. In the presence of unfolded proteins, IRE1α’s ER lumenal domains homo-oligomerize, leading first to kinase trans-autophosphorylation and subsequent RNase activation. Dissociation of the ER chaperone BiP from IRE1α’s lumenal domain in order to engage unfolded proteins may facilitate IRE1α oligomerization [<xref ref-type="bibr" rid="R11">11</xref>]; alternatively, the lumenal domain may bind unfolded proteins directly [<xref ref-type="bibr" rid="R12">12</xref>]. PERK’s ER lumenal domain is thought to be activated similarly [<xref ref-type="bibr" rid="R13">13</xref>,<xref ref-type="bibr" rid="R14">14</xref>]. The ATF6 activation mechanism is less clear. Under ER stress, ATF6 translocates to the Golgi and is cleaved by Site-1 and Site-2 proteases to generate the ATF6(N) transcription factor [<xref ref-type="bibr" rid="R15">15</xref>].</p>
+      <p id="P4">All three UPR sensors have outputs that attempt to tilt protein folding demand and capacity back into homeostasis. PERK contains a cytosolic kinase that phosphorylates eukaryotic translation initiation factor 2α (eIF2α), which impedes translation initiation to reduce the protein load on the ER [<xref ref-type="bibr" rid="R16">16</xref>]. IRE1α splices <italic>XBP1</italic> mRNA, to produce the homeostatic transcription factor XBP1s [<xref ref-type="bibr" rid="R17">17</xref>,<xref ref-type="bibr" rid="R18">18</xref>]. Together with ATF6(N), XBP1s increases transcription of genes that augment ER size and function[<xref ref-type="bibr" rid="R19">19</xref>]. When eIF2α is phosphorylated, the translation of the activating transcription factor-4 (ATF4) is actively promoted and leads to the transcription of many pro-survival genes [<xref ref-type="bibr" rid="R20">20</xref>]. Together, these transcriptional events act as homeostatic feedback loops to reduce ER stress. If successful in reducing the amount of unfolded proteins, the UPR attenuates.</p>
+      <p id="P5">However, when these adaptive responses prove insufficient, the UPR switches into an alternate mode that promotes apoptosis. Under irremediable ER stress, PERK signaling can induce ATF-4-dependent upregulation of the CHOP/GADD153 transcription factor, which inhibits expression of the gene encoding anti-apoptotic BCL-2 while upregulating the expression of oxidase ERO1α to induce damaging ER oxidation [<xref ref-type="bibr" rid="R21">21</xref>,<xref ref-type="bibr" rid="R22">22</xref>]. Sustained IRE1α oligomerization leads to activation of apoptosis signal-regulating kinase 1 (ASK1) and its downstream target c-Jun NH<sub>2</sub>-terminal kinase (JNK) [<xref ref-type="bibr" rid="R23">23</xref>,<xref ref-type="bibr" rid="R24">24</xref>]. Phosphorylation by JNK has been reported to both activate pro-apoptotic BIM and inhibit anti-apoptotic BCL-2 (see below). Small molecule modulators of ASK1 have been shown to protect cultured cells against ER stress-induced apoptosis, emphasizing the importance of the IRE1α-ASK1-JNK output as a death signal in this pathway [<xref ref-type="bibr" rid="R25">25</xref>]. In response to sustained oligomerization, the IRE1α RNase also causes endonucleolytic decay of hundreds of ER-localized mRNAs [<xref ref-type="bibr" rid="R26">26</xref>]. By depleting ER cargo and protein folding components, IRE1α-mediated mRNA decay may worsen ER stress, and could be a key aspect of IRE1α’s pro-apoptotic program [<xref ref-type="bibr" rid="R27">27</xref>]. Recently, inhibitors of IRE1α’s kinase pocket have been shown to conformationally activate its adjacent RNase domain in a manner that enforces homeostatic XBP1s without causing destructive mRNA decay [<xref ref-type="bibr" rid="R27">27</xref>], a potentially exciting strategy for preventing ER stress-induced cell loss.</p>
+      <p id="P6">When deciding whether to switch into apoptotic mode, cells might use one or more “timers” to indicate if UPR signaling remains continuously active under high or chronic ER stress. For example, sustained PERK activity could result in protracted translation attenuation, which should be incompatible with survival, as well as high levels of pro-apoptotic CHOP. Similarly, high-level mRNA degradation mediated by IRE1α may deplete ER protein folding capacity further, and along with JNK signaling push the cell towards apoptosis. Thus, the continuous activation of the proximal sensors IRE1α and PERK may constitute a “timer” that triggers the switch to apoptosis under irremediable ER stress. Moreover, the ultimate response may depend on cell context. For example, the ability of IRE1α to complex with regulators such as BAX/BAK and Bax Inhibitor 1 (BI-1) at the ER may influence its ability to remediate ER stress and/or potentially signal apoptosis [<xref ref-type="bibr" rid="R28">28</xref>,<xref ref-type="bibr" rid="R29">29</xref>].</p>
+    </sec>
+    <sec id="S3">
+      <title>The BCL-2 family and the Mitochondrial Apoptotic Pathway</title>
+      <p id="P7">A wealth of genetic and biochemical data argues that the intrinsic (mitochondrial) apoptotic pathway is the major cell death pathway induced by the UPR, at least in most cell types. This apoptotic pathway is set in motion when several toxic proteins (e.g., cytochrome <italic>c</italic>, Smac/Diablo) are released from mitochondria into the cytosol where they lead to activation of downstream effector caspases (e.g., Caspase-3) [<xref ref-type="bibr" rid="R30">30</xref>]. The BCL-2 family, a large class of both pro- and anti- survival proteins, tightly regulates the intrinsic apoptotic pathway by controlling the integrity of the outer mitochondrial membrane [<xref ref-type="bibr" rid="R31">31</xref>]. This pathway is set in motion when cell injury leads to the transcriptional and/or post-translational activation of one or more BH3-only proteins, a structurally diverse class of pro-apoptotic BCL-2 proteins that share sequence similarity only in a short alpha helix (~9–12 a.a.) known as the Bcl-2 homology 3 (BH3) domain [<xref ref-type="bibr" rid="R32">32</xref>]. Once activated, BH3-only proteins lead to loss of mitochondrial integrity by disabling mitochondrial protecting proteins (e.g., BCL-2, BCL-XL, MCL-1) and (for a subset) directly triggering the oligomerization of the multidomain pro-apoptotic BAX and BAK proteins that drive the permeabilization of the outer mitochondrial membrane.</p>
+      <p id="P8">ER stress has been reported to activate at least four distinct BH3-only proteins (BID, BIM, NOXA, PUMA) that then signal the mitochondrial apoptotic machinery (i.e., BAX/BAK) [<xref ref-type="bibr" rid="R33">33</xref>–<xref ref-type="bibr" rid="R35">35</xref>]. Each of these BH3-only proteins is activated by ER stress in a unique way. For example, BID is proteolytically cleaved at a caspase recognition site into a potent apoptotic signal [<xref ref-type="bibr" rid="R33">33</xref>]. The Bim gene is transcriptionally upregulated and its protein product stabilized through dephosphorylation in response to ER stress [<xref ref-type="bibr" rid="R34">34</xref>]. Cells individually deficient in any of these BH3-only proteins are modestly protected against ER stress-inducing agents, but not nearly as resistant as cells null for their common downstream targets BAX and BAK [<xref ref-type="bibr" rid="R36">36</xref>]—the essential gatekeepers to the mitochondrial apoptotic pathway. Moreover, cells genetically deficient in both <italic>Bim</italic> and <italic>Puma</italic> are more protected against ER stress-induced apoptosis than <italic>Bim</italic> or <italic>Puma</italic> single knockout cells [<xref ref-type="bibr" rid="R37">37</xref>], arguing that several BH3-only proteins are necessary for efficient activation of BAX/BAK-dependent apoptosis under conditions of irremediable ER stress.</p>
+      <p id="P9">The ER stress sensor that signals these BH3-only proteins is known in a few cases (i.e., BIM is downstream of PERK); however, we do not yet understand how the UPR communicates with most of the BH3-only proteins. Moreover, it is not known if all of the above BH3-only proteins are simultaneously set in motion by all forms of ER stress or if a subset is activated under specific pathological stimuli that injure this organelle. Understanding the molecular details of how ER damage is communicated to the mitochondrial apoptotic machinery is critical if we want to target disease specific apoptotic signals sent from the ER.</p>
+    </sec>
+    <sec id="S4">
+      <title>Initiator and Executor Caspases</title>
+      <p id="P10">Caspases, or <bold>c</bold>ysteine-dependent <bold>asp</bold>artate-directed prote<bold>ases</bold>, play essential roles in both initiating apoptotic signaling (initiator caspases- 2, 4, 8, 12) and executing the final stages of cell demise (executioner caspases- 3, 7, 9) [<xref ref-type="bibr" rid="R38">38</xref>]. The executioner caspases are proteolytically activated through either mitochondrial-dependent apoptosome formation or death receptor activation of upstream initiator caspases (i.e., caspase- 8, 10). Given the promiment role of the mitochondrial apoptotic pathway in ER stress-induced death, it is not surprising that the executioner caspases (casp-3,7,9) are critical for cell death resulting from damage to this organelle. On the other hand, there has been much controversy regarding the role of initiator caspases in ER stress-induced apoptosis. Caspase 12 was the first caspase reported to localize to the ER and become activated by UPR signaling in murine cells [<xref ref-type="bibr" rid="R39">39</xref>]. However, Caspase 12 was subsequently shown to be downstream of BAX/BAK-dependent mitochondrial permeabilization and executioner caspase activation in this pathway [<xref ref-type="bibr" rid="R40">40</xref>], arguing that its role is probably limited to amplifying rather than initiating ER stress-induced apoptosis. Moreover, most humans fail to express a functional CASP12 due to a polymorphism that creates a nonsense mutation in the coding region [<xref ref-type="bibr" rid="R41">41</xref>], which rules out an essential role for this protease in human ER stress signaling. More recently, caspase-2 was found to be the premitochondrial protease that proteolytically cleaves and activates the BH3-only protein BID in response to ER stress [<xref ref-type="bibr" rid="R33">33</xref>]. Genetic knockdown or pharmacological inhibition of caspase-2 confers resistance to ER stress-induced apoptosis [<xref ref-type="bibr" rid="R42">42</xref>]. How the UPR activates caspase-2 and whether other initiator caspases, such as caspase 4, are also involved remains to be determined.</p>
+    </sec>
+    <sec id="S5">
+      <title>Calcium and Cell Death</title>
+      <p id="P11">Although an extreme depletion of ER luminal Ca<sup>2+</sup> concentrations is a well-documented initiator of the UPR and ER stress-induced apoptosis or necrosis, it represents a relatively non-physiological stimulus. Given that Ca<sup>2+</sup> signaling from the ER is likely coupled to most pathways leading to apoptosis, however, it is not surprising that this also extends to UPR overload. For example, recent evidence in macrophages indicates that UPR-induced activation of ERO1-α via CHOP results in stimulation of inositol 1,4,5-triphosphate receptor (IP3R) [<xref ref-type="bibr" rid="R43">43</xref>], the major release channel for luminal Ca<sup>2+</sup> from the ER. Although pathways may exist for ER Ca<sup>2+</sup> release independently of IP3 receptors, many seemingly disparate pathways appear to converge on the IP3R platform. Consistent with this, all three sub-groups of the Bcl-2 family at the ER regulate IP3R activity. Mechanistically, this might ultimately result from titrations of pro-survival Bcl-X<sub>L</sub>, Bcl-2, and Mcl-1 that physically associate with IP3R [<xref ref-type="bibr" rid="R44">44</xref>]. Release of ER Ca<sup>2+</sup> via IP3R into the cytoplasm could of course influence multiple pathways upstream of the core apoptosis machinery. However, a significant fraction of IP3R is a constituent of highly specialized tethers that physically attach ER cisternae to mitochondria (mitochondrial-associated membrane) and regulate local Ca<sup>2+</sup> dynamics at the ER-mitochondrion interface [<xref ref-type="bibr" rid="R45">45</xref>–<xref ref-type="bibr" rid="R46">46</xref>]. This results in propagation of privileged IP3R-mediated Ca<sup>2+</sup> oscillations into mitochondria, which can influence cell survival in multiple ways. In an extreme scenario, massive transmission of Ca<sup>2+</sup> into mitochondria results in Ca<sup>2+</sup> overload and cell death by caspase-dependent and –independent means [<xref ref-type="bibr" rid="R46">46</xref>], particularly via the pathway involving the permeability transition pore/cyclophilin D complex [<xref ref-type="bibr" rid="R47">47</xref>]. More refined transmission regulated by the Bcl-2 axis at the ER can influence cristae junctions and the availability of cytochrome <italic>c</italic> for its release across the outer mitochondrial membrane [<xref ref-type="bibr" rid="R48">48</xref>]. Finally, such regulated Ca<sup>2+</sup> transmission to mitochondria is a key determinant of mitochondrial bioenergetics, which is linked not only to potential apoptotic responses, but importantly to survival/death mechanisms dependent on macroautophagy [<xref ref-type="bibr" rid="R49">49</xref>].</p>
+    </sec>
+    <sec id="S6">
+      <title>ER Stress-Induced Cell Loss and Disease</title>
+      <p id="P12">Mounting evidence suggests that ER stress-induced apoptosis contributes to a range of human diseases of cell loss, including diabetes, neurodegeneration, stroke, and heart disease, to name a few (reviewed in REF [<xref ref-type="bibr" rid="R50">50</xref>]). The cause of ER stress in these distinct diseases varies depending on the cell type affected and the intracellular and/or extracellular conditions that disrupt proteostasis. For example, some cases of inherited amyotrophic lateral sclerosis (ALS) are caused by toxic, gain-of-function point mutations in superoxide dismutase-1 (SOD1). Other neurodegenerative diseases, such as Huntington, result from mutant proteins (e.g., huntingtin) containing expanded glutamate repeat sequences. Both mutant SOD1 and mutant huntingtin proteins aggregate, exhaust proteasome activity, and result in secondary accumulations of misfolded proteins in the ER [<xref ref-type="bibr" rid="R51">51</xref>–<xref ref-type="bibr" rid="R52">52</xref>]. In the early stages of type 2 diabetes, peripheral insulin resistance challenges pancreatic beta cells to secrete greater amounts of insulin in order to maintain euglycemia. This increased secretory demand can lead to ER stress, beta cell loss, and hyperglycemia [<xref ref-type="bibr" rid="R53">53</xref>]. Mutations in PERK result in massive pancreatic beta cell death and infant-onset diabetes in patients with Wolcott-Rallison syndrome [<xref ref-type="bibr" rid="R54">54</xref>], an autosomal recessive inherited disorder that illustrates the importance of a properly functioning UPR for beta cell health. An association between ER stress and heart disease has been implicated on a number of levels. Oxidative stress, high levels of cholesterol, and fatty acids can all cause ER stress-induced apoptosis of macrophages and endothelial cells associated with atherosclerotic plaques, leading to progression of atherosclerosis [<xref ref-type="bibr" rid="R55">55</xref>]. Myocardial infarction activates the UPR in cardiac myocytes; and <italic>Ask1<sup>−/−</sup></italic> mice show preservation of left ventricular function compared to wild-type controls after coronary artery ligation [<xref ref-type="bibr" rid="R56">56</xref>]. Stroke (ischemia-reperfusion injury) has also been shown to induce ER stress-induced apoptosis, and <italic>Chop<sup>−/−</sup></italic> mice are partly protected from neuronal loss after stroke injury [<xref ref-type="bibr" rid="R57">57</xref>].</p>
+      <p id="P13">While by no means exhaustive, these examples illustrate the therapeutic potential for novel drugs that block ER stress-induced apoptosis. While chronic UPR-targeted therapies may be problematic for the many tissues that require this pathway to maintain proteastasis, acute modulation of the UPR during stroke or myocardial infarction could be an effective strategy to prevent cell loss. In the case of IRE1α, it may be possible to use kinase inhibitors to activate its cytoprotective signaling and shut down its apoptotic outputs [<xref ref-type="bibr" rid="R27">27</xref>]. Whether similar strategies will work for PERK and/or ATF6 remains to be seen. Alternatively, blocking the specific apoptotic signals that emerge from the UPR is perhaps a more straightforward strategy to prevent ER stress-induced cell loss. To this end, small molecular inhibitors of ASK and JNK are currently being tested in a variety preclinical models of ER stress [<xref ref-type="bibr" rid="R52">52</xref>–<xref ref-type="bibr" rid="R53">53</xref>,<xref ref-type="bibr" rid="R56">56</xref>–<xref ref-type="bibr" rid="R57">57</xref>]. This is just the beginning, and much work needs to be done to validate the best drugs targets in the ER stress pathway.</p>
+    </sec>
+    <sec sec-type="conclusions" id="S7">
+      <title>Conclusions</title>
+      <p id="P14">The UPR is a highly complex signaling pathway activated by ER stress that sends out both adaptive and apoptotic signals. All three transmembrane ER stress sensors (IRE1α, PERK, AFT6) have outputs that initially decrease the load and increase capacity of the ER secretory pathway in an effort to restore ER homeostasis. However, under extreme ER stress, continuous engagement of IRE1α and PERK results in events that simultaneously exacerbate protein misfolding and signal death, the latter involving caspase-dependent apoptosis and caspase-independent necrosis. Advances in our molecular understanding of how these stress sensors switch from life to death signaling will hopefully lead to new strategies to prevent diseases caused by ER stress-induced cell loss.</p>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn id="FN1">
+        <p id="P15" content-type="publisher-disclaimer">This is a PDF file of an unedited manuscript that has been accepted for publication. As a service to our customers we are providing this early version of the manuscript. The manuscript will undergo copyediting, typesetting, and review of the resulting proof before it is published in its final citable form. Please note that during the production process errors may be discovered which could affect the content, and all legal disclaimers that apply to the journal pertain.</p>
+      </fn>
+    </fn-group>
+    <ack id="S8">
+      <title>Acknowledgements</title>
+      <p id="P16">We thank Jason T. Williams for figure design. We apologize to those colleagues whose work we could not cite here because of space limits. Work in our laboratories is supported by grants from the Canadian Institutes of Health Research (G.S.C.); National Cancer Institute of Canada (G.S.C.); National Institutes of Health: Director’s New Innovator Award DP2 OD001925 (F.R.P.), RO1 DK080955 (F.R.P.), RO1 CA136577 (S.A.O.); Sandler Program in Basic Sciences (F.R.P. and S.A.O.); Burroughs Wellcome Foundation (F.R.P.); Hillbloom Foundation (F.R.P.); Juvenile Diabetes Research Foundation (F.R.P.); Partnership for Cures (F.R.P.); HHMI Physician-Scientist Early Career Award (S.A.O.); V Foundation (S.A.O.); and the Steward Trust Foundation (S.A.O.).</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <p id="P17">Papers of particular interest, published within the period of review, have been highlighted as:</p>
+      <p id="P18">• of special interest</p>
+      <p id="P19">•• of outstanding interesting</p>
+      <ref id="R1">
+        <label>1</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Anelli</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sitia</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Protein quality control in the early secretory pathway</article-title>
+          <source>Embo J</source>
+          <year>2008</year>
+          <volume>27</volume>
+          <fpage>315</fpage>
+          <lpage>327</lpage>
+          <pub-id pub-id-type="pmid">18216874</pub-id>
+        </citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <note>
+<p id="P20">
+<citation citation-type="journal" id="N0xae0c790N0xbd97df0"><person-group person-group-type="author"><name><surname>Oyadomari</surname><given-names>S</given-names></name><name><surname>Koizumi</surname><given-names>A</given-names></name><name><surname>Takeda</surname><given-names>K</given-names></name><name><surname>Gotoh</surname><given-names>T</given-names></name><name><surname>Akira</surname><given-names>S</given-names></name><name><surname>Araki</surname><given-names>E</given-names></name><name><surname>Mori</surname><given-names>M</given-names></name></person-group><article-title>Targeted disruption of the Chop gene delays endoplasmic reticulum stress-mediated diabetes</article-title><source>J Clin Invest</source><year>2002</year><volume>109</volume><fpage>525</fpage><lpage>532</lpage><pub-id pub-id-type="pmid">11854325</pub-id></citation>
+••Report that Chop signals ER stress-induced apoptosis in a diabetes model.</p>
+</note>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>HM</given-names>
+            </name>
+            <name>
+              <surname>Ye</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Su</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Yuan</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Stein</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Coxsackievirus B3 infection activates the unfolded protein response and induces apoptosis through downregulation of p58IPK and activation of CHOP and SREBP1</article-title>
+          <source>J Virol</source>
+          <year>2010</year>
+          <volume>84</volume>
+          <fpage>8446</fpage>
+          <lpage>8459</lpage>
+          <pub-id pub-id-type="pmid">20554776</pub-id>
+        </citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ma</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Hendershot</surname>
+              <given-names>LM</given-names>
+            </name>
+          </person-group>
+          <article-title>ER chaperone functions during normal and stress conditions</article-title>
+          <source>J Chem Neuroanat</source>
+          <year>2004</year>
+          <volume>28</volume>
+          <fpage>51</fpage>
+          <lpage>65</lpage>
+          <pub-id pub-id-type="pmid">15363491</pub-id>
+        </citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ron</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Walter</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Signal integration in the endoplasmic reticulum unfolded protein response</article-title>
+          <source>Nat Rev Mol Cell Biol</source>
+          <year>2007</year>
+          <volume>8</volume>
+          <fpage>519</fpage>
+          <lpage>529</lpage>
+          <pub-id pub-id-type="pmid">17565364</pub-id>
+        </citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kaufman</surname>
+              <given-names>RJ</given-names>
+            </name>
+          </person-group>
+          <article-title>From acute ER stress to physiological roles of the Unfolded Protein Response</article-title>
+          <source>Cell Death Differ</source>
+          <year>2006</year>
+          <volume>13</volume>
+          <fpage>374</fpage>
+          <lpage>384</lpage>
+          <pub-id pub-id-type="pmid">16397578</pub-id>
+        </citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Breckenridge</surname>
+              <given-names>DG</given-names>
+            </name>
+            <name>
+              <surname>Nguyen</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kuppig</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Reth</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Shore</surname>
+              <given-names>GC</given-names>
+            </name>
+          </person-group>
+          <article-title>The procaspase-8 isoform, procaspase-8L, recruited to the BAP31 complex at the endoplasmic reticulum</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>2002</year>
+          <volume>99</volume>
+          <fpage>4331</fpage>
+          <lpage>4336</lpage>
+          <pub-id pub-id-type="pmid">11917123</pub-id>
+        </citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Breckenridge</surname>
+              <given-names>DG</given-names>
+            </name>
+            <name>
+              <surname>Stojanovic</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Marcellus</surname>
+              <given-names>RC</given-names>
+            </name>
+            <name>
+              <surname>Shore</surname>
+              <given-names>GC</given-names>
+            </name>
+          </person-group>
+          <article-title>Caspase cleavage product of BAP31 induces mitochondrial fission through endoplasmic reticulum calcium signals, enhancing cytochrome c release to the cytosol</article-title>
+          <source>J Cell Biol</source>
+          <year>2003</year>
+          <volume>160</volume>
+          <fpage>1115</fpage>
+          <lpage>1127</lpage>
+          <pub-id pub-id-type="pmid">12668660</pub-id>
+        </citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tirasophon</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Welihinda</surname>
+              <given-names>AA</given-names>
+            </name>
+            <name>
+              <surname>Kaufman</surname>
+              <given-names>RJ</given-names>
+            </name>
+          </person-group>
+          <article-title>A stress response pathway from the endoplasmic reticulum to the nucleus requires a novel bifunctional protein kinase/endoribonuclease (Ire1p) in mammalian cells</article-title>
+          <source>Genes Dev</source>
+          <year>1998</year>
+          <volume>12</volume>
+          <fpage>1812</fpage>
+          <lpage>1824</lpage>
+          <pub-id pub-id-type="pmid">9637683</pub-id>
+        </citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>XZ</given-names>
+            </name>
+            <name>
+              <surname>Harding</surname>
+              <given-names>HP</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Jolicoeur</surname>
+              <given-names>EM</given-names>
+            </name>
+            <name>
+              <surname>Kuroda</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ron</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Cloning of mammalian Ire1 reveals diversity in the ER stress responses</article-title>
+          <source>Embo J</source>
+          <year>1998</year>
+          <volume>17</volume>
+          <fpage>5708</fpage>
+          <lpage>5717</lpage>
+          <pub-id pub-id-type="pmid">9755171</pub-id>
+        </citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pincus</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Chevalier</surname>
+              <given-names>MW</given-names>
+            </name>
+            <name>
+              <surname>Aragon</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>van Anken</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Vidal</surname>
+              <given-names>SE</given-names>
+            </name>
+            <name>
+              <surname>El-Samad</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Walter</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>BiP binding to the ER-stress sensor Ire1 tunes the homeostatic behavior of the unfolded protein response</article-title>
+          <source>PLoS Biol</source>
+          <year>2010</year>
+          <volume>8</volume>
+          <comment>e1000415</comment>
+        </citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Credle</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Finer-Moore</surname>
+              <given-names>JS</given-names>
+            </name>
+            <name>
+              <surname>Papa</surname>
+              <given-names>FR</given-names>
+            </name>
+            <name>
+              <surname>Stroud</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Walter</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>On the mechanism of sensing unfolded protein in the endoplasmic reticulum</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>2005</year>
+          <volume>102</volume>
+          <fpage>18773</fpage>
+          <lpage>18784</lpage>
+          <pub-id pub-id-type="pmid">16365312</pub-id>
+        </citation>
+      </ref>
+      <ref id="R13">
+        <label>13</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>CY</given-names>
+            </name>
+            <name>
+              <surname>Schroder</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kaufman</surname>
+              <given-names>RJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Ligand-independent dimerization activates the stress response kinases IRE1 and PERK in the lumen of the endoplasmic reticulum</article-title>
+          <source>J Biol Chem</source>
+          <year>2000</year>
+          <volume>275</volume>
+          <fpage>24881</fpage>
+          <lpage>24885</lpage>
+          <pub-id pub-id-type="pmid">10835430</pub-id>
+        </citation>
+      </ref>
+      <ref id="R14">
+        <label>14</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bertolotti</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Hendershot</surname>
+              <given-names>LM</given-names>
+            </name>
+            <name>
+              <surname>Harding</surname>
+              <given-names>HP</given-names>
+            </name>
+            <name>
+              <surname>Ron</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Dynamic interaction of BiP and ER stress transducers in the unfolded-protein response</article-title>
+          <source>Nat Cell Biol</source>
+          <year>2000</year>
+          <volume>2</volume>
+          <fpage>326</fpage>
+          <lpage>332</lpage>
+          <pub-id pub-id-type="pmid">10854322</pub-id>
+        </citation>
+      </ref>
+      <ref id="R15">
+        <label>15</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ye</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Rawson</surname>
+              <given-names>RB</given-names>
+            </name>
+            <name>
+              <surname>Komuro</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Dave</surname>
+              <given-names>UP</given-names>
+            </name>
+            <name>
+              <surname>Prywes</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name>
+              <surname>Goldstein</surname>
+              <given-names>JL</given-names>
+            </name>
+          </person-group>
+          <article-title>ER stress induces cleavage of membrane-bound ATF6 by the same proteases that process SREBPs</article-title>
+          <source>Mol Cell</source>
+          <year>2000</year>
+          <volume>6</volume>
+          <fpage>1355</fpage>
+          <lpage>1364</lpage>
+          <pub-id pub-id-type="pmid">11163209</pub-id>
+        </citation>
+      </ref>
+      <ref id="R16">
+        <label>16</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Harding</surname>
+              <given-names>HP</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Ron</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Protein translation and folding are coupled by an endoplasmic-reticulum-resident kinase</article-title>
+          <source>Nature</source>
+          <year>1999</year>
+          <volume>397</volume>
+          <fpage>271</fpage>
+          <lpage>274</lpage>
+          <pub-id pub-id-type="pmid">9930704</pub-id>
+        </citation>
+      </ref>
+      <ref id="R17">
+        <label>17</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Calfon</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Zeng</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Urano</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Till</surname>
+              <given-names>JH</given-names>
+            </name>
+            <name>
+              <surname>Hubbard</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Harding</surname>
+              <given-names>HP</given-names>
+            </name>
+            <name>
+              <surname>Clark</surname>
+              <given-names>SG</given-names>
+            </name>
+            <name>
+              <surname>Ron</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>IRE1 couples endoplasmic reticulum load to secretory capacity by processing the XBP-1 mRNA</article-title>
+          <source>Nature</source>
+          <year>2002</year>
+          <volume>415</volume>
+          <fpage>92</fpage>
+          <lpage>96</lpage>
+          <pub-id pub-id-type="pmid">11780124</pub-id>
+        </citation>
+      </ref>
+      <ref id="R18">
+        <label>18</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yoshida</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Matsui</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Yamamoto</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Okada</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Mori</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>XBP1 mRNA is induced by ATF6 and spliced by IRE1 in response to ER stress to produce a highly active transcription factor</article-title>
+          <source>Cell</source>
+          <year>2001</year>
+          <volume>107</volume>
+          <fpage>881</fpage>
+          <lpage>891</lpage>
+          <pub-id pub-id-type="pmid">11779464</pub-id>
+        </citation>
+      </ref>
+      <ref id="R19">
+        <label>19</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yamamoto</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Sato</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Matsui</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sato</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Okada</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Yoshida</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Harada</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Mori</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Transcriptional induction of mammalian ER quality control proteins is mediated by single or combined action of ATF6alpha and XBP1</article-title>
+          <source>Dev Cell</source>
+          <year>2007</year>
+          <volume>13</volume>
+          <fpage>365</fpage>
+          <lpage>376</lpage>
+          <pub-id pub-id-type="pmid">17765680</pub-id>
+        </citation>
+      </ref>
+      <ref id="R20">
+        <label>20</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Harding</surname>
+              <given-names>HP</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Zeng</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Novoa</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Lu</surname>
+              <given-names>PD</given-names>
+            </name>
+            <name>
+              <surname>Calfon</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Sadri</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Yun</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Popko</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Paules</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Stojdl</surname>
+              <given-names>DF</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>An integrated stress response regulates amino acid metabolism and resistance to oxidative stress</article-title>
+          <source>Mol Cell</source>
+          <year>2003</year>
+          <volume>11</volume>
+          <fpage>619</fpage>
+          <lpage>633</lpage>
+          <pub-id pub-id-type="pmid">12667446</pub-id>
+        </citation>
+      </ref>
+      <ref id="R21">
+        <label>21</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McCullough</surname>
+              <given-names>KD</given-names>
+            </name>
+            <name>
+              <surname>Martindale</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Klotz</surname>
+              <given-names>LO</given-names>
+            </name>
+            <name>
+              <surname>Aw</surname>
+              <given-names>TY</given-names>
+            </name>
+            <name>
+              <surname>Holbrook</surname>
+              <given-names>NJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Gadd153 sensitizes cells to endoplasmic reticulum stress by down-regulating Bcl2 and perturbing the cellular redox state</article-title>
+          <source>Mol Cell Biol</source>
+          <year>2001</year>
+          <volume>21</volume>
+          <fpage>1249</fpage>
+          <lpage>1259</lpage>
+          <pub-id pub-id-type="pmid">11158311</pub-id>
+        </citation>
+      </ref>
+      <ref id="R22">
+        <label>22</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Marciniak</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <name>
+              <surname>Yun</surname>
+              <given-names>CY</given-names>
+            </name>
+            <name>
+              <surname>Oyadomari</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Novoa</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Jungreis</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Nagata</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Harding</surname>
+              <given-names>HP</given-names>
+            </name>
+            <name>
+              <surname>Ron</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>CHOP induces death by promoting protein synthesis and oxidation in the stressed endoplasmic reticulum</article-title>
+          <source>Genes Dev</source>
+          <year>2004</year>
+          <volume>18</volume>
+          <fpage>3066</fpage>
+          <lpage>3077</lpage>
+          <pub-id pub-id-type="pmid">15601821</pub-id>
+        </citation>
+      </ref>
+      <ref id="R23">
+        <label>23</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Urano</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Bertolotti</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Chung</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Harding</surname>
+              <given-names>HP</given-names>
+            </name>
+            <name>
+              <surname>Ron</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Coupling of stress in the ER to activation of JNK protein kinases by transmembrane protein kinase IRE1</article-title>
+          <source>Science</source>
+          <year>2000</year>
+          <volume>287</volume>
+          <fpage>664</fpage>
+          <lpage>666</lpage>
+          <pub-id pub-id-type="pmid">10650002</pub-id>
+        </citation>
+      </ref>
+      <ref id="R24">
+        <label>24</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nishitoh</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Matsuzawa</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Tobiume</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Saegusa</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Takeda</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Inoue</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Hori</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kakizuka</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Ichijo</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title>ASK1 is essential for endoplasmic reticulum stress-induced neuronal cell death triggered by expanded polyglutamine repeats</article-title>
+          <source>Genes Dev</source>
+          <year>2002</year>
+          <volume>16</volume>
+          <fpage>1345</fpage>
+          <lpage>1355</lpage>
+          <pub-id pub-id-type="pmid">12050113</pub-id>
+        </citation>
+      </ref>
+      <ref id="R25">
+        <label>25</label>
+        <note>
+<p id="P21">
+<citation citation-type="journal" id="N0xae0c790N0xbc84a50"><person-group person-group-type="author"><name><surname>Kim</surname><given-names>I</given-names></name><name><surname>Shu</surname><given-names>CW</given-names></name><name><surname>Xu</surname><given-names>W</given-names></name><name><surname>Shiau</surname><given-names>CW</given-names></name><name><surname>Grant</surname><given-names>D</given-names></name><name><surname>Vasile</surname><given-names>S</given-names></name><name><surname>Cosford</surname><given-names>ND</given-names></name><name><surname>Reed</surname><given-names>JC</given-names></name></person-group><article-title>Chemical biology investigation of cell death pathways activated by endoplasmic reticulum stress reveals cytoprotective modulators of ASK1</article-title><source>J Biol Chem</source><year>2009</year><volume>284</volume><fpage>1593</fpage><lpage>1603</lpage><pub-id pub-id-type="pmid">19004820</pub-id></citation>
+•Indentify small molecular modulators of ASK1 that can protect cells against ER stress-induced apoptosis.</p>
+</note>
+      </ref>
+      <ref id="R26">
+        <label>26</label>
+        <note>
+<p id="P22">
+<citation citation-type="journal" id="N0xae0c790N0xbc84ed0"><person-group person-group-type="author"><name><surname>Hollien</surname><given-names>J</given-names></name><name><surname>Weissman</surname><given-names>JS</given-names></name></person-group><article-title>Decay of endoplasmic reticulum-localized mRNAs during the unfolded protein response</article-title><source>Science</source><year>2006</year><volume>313</volume><fpage>104</fpage><lpage>107</lpage><pub-id pub-id-type="pmid">16825573</pub-id></citation>
+••Discovery that IRE1 promotes the degradation of ER-localized mRNAs under conditions of ER stress</p>
+</note>
+      </ref>
+      <ref id="R27">
+        <label>27</label>
+        <note>
+<p id="P23">
+<citation citation-type="journal" id="N0xae0c790N0xbc85110"><person-group person-group-type="author"><name><surname>Han</surname><given-names>D</given-names></name><name><surname>Lerner</surname><given-names>AG</given-names></name><name><surname>Vande Walle</surname><given-names>L</given-names></name><name><surname>Upton</surname><given-names>JP</given-names></name><name><surname>Xu</surname><given-names>W</given-names></name><name><surname>Hagen</surname><given-names>A</given-names></name><name><surname>Backes</surname><given-names>BJ</given-names></name><name><surname>Oakes</surname><given-names>SA</given-names></name><name><surname>Papa</surname><given-names>FR</given-names></name></person-group><article-title>IRE1alpha kinase activation modes control alternate endoribonuclease outputs to determine divergent cell fates</article-title><source>Cell</source><year>2009</year><volume>138</volume><fpage>562</fpage><lpage>575</lpage><pub-id pub-id-type="pmid">19665977</pub-id></citation>
+••Demonstration that IRE1alpha RNase has both homeostatic and apoptotic outputs that can be biased to favor survival with kinase inhibitors</p>
+</note>
+      </ref>
+      <ref id="R28">
+        <label>28</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hetz</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Bernasconi</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Fisher</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>AH</given-names>
+            </name>
+            <name>
+              <surname>Bassik</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>Antonsson</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Brandt</surname>
+              <given-names>GS</given-names>
+            </name>
+            <name>
+              <surname>Iwakoshi</surname>
+              <given-names>NN</given-names>
+            </name>
+            <name>
+              <surname>Schinzel</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Glimcher</surname>
+              <given-names>LH</given-names>
+            </name>
+            <name>
+              <surname>Korsmeyer</surname>
+              <given-names>SJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Proapoptotic BAX and BAK modulate the unfolded protein response by a direct interaction with IRE1alpha</article-title>
+          <source>Science</source>
+          <year>2006</year>
+          <volume>312</volume>
+          <fpage>572</fpage>
+          <lpage>576</lpage>
+          <pub-id pub-id-type="pmid">16645094</pub-id>
+        </citation>
+      </ref>
+      <ref id="R29">
+        <label>29</label>
+        <note>
+<p id="P24">
+<citation citation-type="journal" id="N0xae0c790N0xbc85b30"><person-group person-group-type="author"><name><surname>Lisbona</surname><given-names>F</given-names></name><name><surname>Rojas-Rivera</surname><given-names>D</given-names></name><name><surname>Thielen</surname><given-names>P</given-names></name><name><surname>Zamorano</surname><given-names>S</given-names></name><name><surname>Todd</surname><given-names>D</given-names></name><name><surname>Martinon</surname><given-names>F</given-names></name><name><surname>Glavic</surname><given-names>A</given-names></name><name><surname>Kress</surname><given-names>C</given-names></name><name><surname>Lin</surname><given-names>JH</given-names></name><name><surname>Walter</surname><given-names>P</given-names></name><name><surname>Reed</surname><given-names>JC</given-names></name><etal/></person-group><article-title>BAX inhibitor-1 is a negative regulator of the ER stress sensor IRE1alpha</article-title><source>Mol Cell</source><year>2009</year><volume>33</volume><fpage>679</fpage><lpage>691</lpage><pub-id pub-id-type="pmid">19328063</pub-id></citation>
+•Discovery that BI-1 modulates the UPR.</p>
+</note>
+      </ref>
+      <ref id="R30">
+        <label>30</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Youle</surname>
+              <given-names>RJ</given-names>
+            </name>
+          </person-group>
+          <article-title>The role of mitochondria in apoptosis</article-title>
+          <source>Annu Rev Genet</source>
+          <year>2009</year>
+          <volume>43</volume>
+          <fpage>95</fpage>
+          <lpage>118</lpage>
+          <pub-id pub-id-type="pmid">19659442</pub-id>
+        </citation>
+      </ref>
+      <ref id="R31">
+        <label>31</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chipuk</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Moldoveanu</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Llambi</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Parsons</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Green</surname>
+              <given-names>DR</given-names>
+            </name>
+          </person-group>
+          <article-title>The BCL-2 family reunion</article-title>
+          <source>Mol Cell</source>
+          <year>2010</year>
+          <volume>37</volume>
+          <fpage>299</fpage>
+          <lpage>310</lpage>
+          <pub-id pub-id-type="pmid">20159550</pub-id>
+        </citation>
+      </ref>
+      <ref id="R32">
+        <label>32</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Giam</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Huang</surname>
+              <given-names>DC</given-names>
+            </name>
+            <name>
+              <surname>Bouillet</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>BH3-only proteins and their roles in programmed cell death</article-title>
+          <source>Oncogene</source>
+          <year>2008</year>
+          <volume>27</volume>
+          <fpage>S128</fpage>
+          <lpage>S136</lpage>
+          <pub-id pub-id-type="pmid">19641498</pub-id>
+        </citation>
+      </ref>
+      <ref id="R33">
+        <label>33</label>
+        <note>
+<p id="P25">
+<citation citation-type="journal" id="N0xae0c790N0xbc95f90"><person-group person-group-type="author"><name><surname>Upton</surname><given-names>JP</given-names></name><name><surname>Austgen</surname><given-names>K</given-names></name><name><surname>Nishino</surname><given-names>M</given-names></name><name><surname>Coakley</surname><given-names>KM</given-names></name><name><surname>Hagen</surname><given-names>A</given-names></name><name><surname>Han</surname><given-names>D</given-names></name><name><surname>Papa</surname><given-names>FR</given-names></name><name><surname>Oakes</surname><given-names>SA</given-names></name></person-group><article-title>Caspase-2 cleavage of BID is a critical apoptotic signal downstream of endoplasmic reticulum stress</article-title><source>Mol Cell Biol</source><year>2008</year><volume>28</volume><fpage>3943</fpage><lpage>3951</lpage><pub-id pub-id-type="pmid">18426910</pub-id></citation>
+•Discovery that ER stress leads to Caspase-2 activation and proteolytic cleavage of BID upstream of the mitochondrial apoptotic pathway</p>
+</note>
+      </ref>
+      <ref id="R34">
+        <label>34</label>
+        <note>
+<p id="P26">
+<citation citation-type="journal" id="N0xae0c790N0xbc96410"><person-group person-group-type="author"><name><surname>Puthalakath</surname><given-names>H</given-names></name><name><surname>O'Reilly</surname><given-names>LA</given-names></name><name><surname>Gunn</surname><given-names>P</given-names></name><name><surname>Lee</surname><given-names>L</given-names></name><name><surname>Kelly</surname><given-names>PN</given-names></name><name><surname>Huntington</surname><given-names>ND</given-names></name><name><surname>Hughes</surname><given-names>PD</given-names></name><name><surname>Michalak</surname><given-names>EM</given-names></name><name><surname>McKimm-Breschkin</surname><given-names>J</given-names></name><name><surname>Motoyama</surname><given-names>N</given-names></name><name><surname>Gotoh</surname><given-names>T</given-names></name><etal/></person-group><article-title>ER stress triggers apoptosis by activating BH3-only protein Bim</article-title><source>Cell</source><year>2007</year><volume>129</volume><fpage>1337</fpage><lpage>1349</lpage><pub-id pub-id-type="pmid">17604722</pub-id></citation>
+•Demonstration that BIM is a key apoptotic signal downstream of the UPR.</p>
+</note>
+      </ref>
+      <ref id="R35">
+        <label>35</label>
+        <note>
+<p id="P27">
+<citation citation-type="journal" id="N0xae0c790N0xbc969b0"><person-group person-group-type="author"><name><surname>Li</surname><given-names>J</given-names></name><name><surname>Lee</surname><given-names>B</given-names></name><name><surname>Lee</surname><given-names>AS</given-names></name></person-group><article-title>Endoplasmic reticulum stress-induced apoptosis: multiple pathways and activation of p53-up-regulated modulator of apoptosis (PUMA) and NOXA by p53</article-title><source>J Biol Chem</source><year>2006</year><volume>281</volume><fpage>7260</fpage><lpage>7270</lpage><pub-id pub-id-type="pmid">16407291</pub-id></citation>
+•Idenfication that ER stress-induced apoptosis is mediated in part through the BH3-only proteins NOXA and PUMA.</p>
+</note>
+      </ref>
+      <ref id="R36">
+        <label>36</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wei</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>Zong</surname>
+              <given-names>WX</given-names>
+            </name>
+            <name>
+              <surname>Cheng</surname>
+              <given-names>EH</given-names>
+            </name>
+            <name>
+              <surname>Lindsten</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Panoutsakopoulou</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Ross</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Roth</surname>
+              <given-names>KA</given-names>
+            </name>
+            <name>
+              <surname>MacGregor</surname>
+              <given-names>GR</given-names>
+            </name>
+            <name>
+              <surname>Thompson</surname>
+              <given-names>CB</given-names>
+            </name>
+            <name>
+              <surname>Korsmeyer</surname>
+              <given-names>SJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Proapoptotic BAX and BAK: a requisite gateway to mitochondrial dysfunction and death</article-title>
+          <source>Science</source>
+          <year>2001</year>
+          <volume>292</volume>
+          <fpage>727</fpage>
+          <lpage>730</lpage>
+          <pub-id pub-id-type="pmid">11326099</pub-id>
+        </citation>
+      </ref>
+      <ref id="R37">
+        <label>37</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kim</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Tu</surname>
+              <given-names>HC</given-names>
+            </name>
+            <name>
+              <surname>Ren</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Takeuchi</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Jeffers</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Zambetti</surname>
+              <given-names>GP</given-names>
+            </name>
+            <name>
+              <surname>Hsieh</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Cheng</surname>
+              <given-names>EH</given-names>
+            </name>
+          </person-group>
+          <article-title>Stepwise activation of BAX and BAK by tBID, BIM, and PUMA initiates mitochondrial apoptosis</article-title>
+          <source>Mol Cell</source>
+          <year>2009</year>
+          <volume>36</volume>
+          <fpage>487</fpage>
+          <lpage>499</lpage>
+          <pub-id pub-id-type="pmid">19917256</pub-id>
+        </citation>
+      </ref>
+      <ref id="R38">
+        <label>38</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kurokawa</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kornbluth</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Caspases and kinases in a death grip</article-title>
+          <source>Cell</source>
+          <year>2009</year>
+          <volume>138</volume>
+          <fpage>838</fpage>
+          <lpage>854</lpage>
+          <pub-id pub-id-type="pmid">19737514</pub-id>
+        </citation>
+      </ref>
+      <ref id="R39">
+        <label>39</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nakagawa</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Morishima</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Yankner</surname>
+              <given-names>BA</given-names>
+            </name>
+            <name>
+              <surname>Yuan</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Caspase-12 mediates endoplasmic-reticulum-specific apoptosis and cytotoxicity by amyloid-beta</article-title>
+          <source>Nature</source>
+          <year>2000</year>
+          <volume>403</volume>
+          <fpage>98</fpage>
+          <lpage>103</lpage>
+          <pub-id pub-id-type="pmid">10638761</pub-id>
+        </citation>
+      </ref>
+      <ref id="R40">
+        <label>40</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ruiz-Vela</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Opferman</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>Cheng</surname>
+              <given-names>EH</given-names>
+            </name>
+            <name>
+              <surname>Korsmeyer</surname>
+              <given-names>SJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Proapoptotic BAX and BAK control multiple initiator caspases</article-title>
+          <source>EMBO Rep</source>
+          <year>2005</year>
+          <volume>6</volume>
+          <fpage>379</fpage>
+          <lpage>385</lpage>
+          <pub-id pub-id-type="pmid">15776018</pub-id>
+        </citation>
+      </ref>
+      <ref id="R41">
+        <label>41</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fischer</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Koenig</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Eckhart</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Tschachler</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>Human caspase 12 has acquired deleterious mutations</article-title>
+          <source>Biochem Biophys Res Commun</source>
+          <year>2002</year>
+          <volume>293</volume>
+          <fpage>722</fpage>
+          <lpage>726</lpage>
+          <pub-id pub-id-type="pmid">12054529</pub-id>
+        </citation>
+      </ref>
+      <ref id="R42">
+        <label>42</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gu</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Gao</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Dong</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title>Caspase-2 functions upstream of mitochondria in endoplasmic reticulum stress-induced apoptosis by bortezomib in human myeloma cells</article-title>
+          <source>Mol Cancer Ther</source>
+          <year>2008</year>
+          <volume>7</volume>
+          <fpage>2298</fpage>
+          <lpage>2307</lpage>
+          <pub-id pub-id-type="pmid">18723477</pub-id>
+        </citation>
+      </ref>
+      <ref id="R43">
+        <label>43</label>
+        <note>
+<p id="P28">
+<citation citation-type="journal" id="N0xae0c790N0xbc982d0"><person-group person-group-type="author"><name><surname>Li</surname><given-names>G</given-names></name><name><surname>Mongillo</surname><given-names>M</given-names></name><name><surname>Chin</surname><given-names>KT</given-names></name><name><surname>Harding</surname><given-names>H</given-names></name><name><surname>Ron</surname><given-names>D</given-names></name><name><surname>Marks</surname><given-names>AR</given-names></name><name><surname>Tabas</surname><given-names>I</given-names></name></person-group><article-title>Role of ERO1- alpha-mediated stimulation of inositol 1,4,5-triphosphate receptor activity in endoplasmic reticulum stress-induced apoptosis</article-title><source>J Cell Biol</source><year>2009</year><volume>186</volume><fpage>783</fpage><lpage>792</lpage><pub-id pub-id-type="pmid">19752026</pub-id></citation>
+••Discover connection between the unfolded protein response and IP3R-mediated calcium-dependent apoptosis</p>
+</note>
+      </ref>
+      <ref id="R44">
+        <label>44</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Eckenrode</surname>
+              <given-names>EF</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Velmurugan</surname>
+              <given-names>GV</given-names>
+            </name>
+            <name>
+              <surname>Foskett</surname>
+              <given-names>JK</given-names>
+            </name>
+            <name>
+              <surname>White</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Apoptosis protection by Mcl-1 and Bcl-2 modulation of inositol 1,4,5-trisphosphate receptor-dependent Ca2+ signaling</article-title>
+          <source>J Biol Chem</source>
+          <year>2010</year>
+          <volume>285</volume>
+          <fpage>13678</fpage>
+          <lpage>13684</lpage>
+          <pub-id pub-id-type="pmid">20189983</pub-id>
+        </citation>
+      </ref>
+      <ref id="R45">
+        <label>45</label>
+        <note>
+<p id="P29">
+<citation citation-type="journal" id="N0xae0c790N0xbae0e30"><person-group person-group-type="author"><name><surname>Csordas</surname><given-names>G</given-names></name><name><surname>Varnai</surname><given-names>P</given-names></name><name><surname>Golenar</surname><given-names>T</given-names></name><name><surname>Roy</surname><given-names>S</given-names></name><name><surname>Purkins</surname><given-names>G</given-names></name><name><surname>Schneider</surname><given-names>TG</given-names></name><name><surname>Balla</surname><given-names>T</given-names></name><name><surname>Hajnoczky</surname><given-names>G</given-names></name></person-group><article-title>Imaging interorganelle contacts and local calcium dynamics at the ER-mitochondrial interface</article-title><source>Mol Cell</source><year>2010</year><volume>39</volume><fpage>121</fpage><lpage>132</lpage><pub-id pub-id-type="pmid">20603080</pub-id></citation>
+•Study provides direct evidence for the existence of high-Ca(2+) microdomains between the ER and mitochondria.</p>
+</note>
+      </ref>
+      <ref id="R46">
+        <label>46</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rizzuto</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Marchi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Bonora</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Aguiari</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Bononi</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>De Stefani</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Giorgi</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Leo</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Rimessi</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Siviero</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Zecchini</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Ca(2+) transfer from the ER to mitochondria: when, how and why</article-title>
+          <source>Biochim Biophys Acta</source>
+          <year>2009</year>
+          <volume>1787</volume>
+          <fpage>1342</fpage>
+          <lpage>1351</lpage>
+          <pub-id pub-id-type="pmid">19341702</pub-id>
+        </citation>
+      </ref>
+      <ref id="R47">
+        <label>47</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schneider</surname>
+              <given-names>MD</given-names>
+            </name>
+          </person-group>
+          <article-title>Cyclophilin D: knocking on death's door</article-title>
+          <source>Sci STKE</source>
+          <year>2005</year>
+          <volume>2005</volume>
+          <fpage>pe26</fpage>
+          <pub-id pub-id-type="pmid">15942033</pub-id>
+        </citation>
+      </ref>
+      <ref id="R48">
+        <label>48</label>
+        <note>
+<p id="P30">
+<citation citation-type="journal" id="N0xae0c790N0xbae1970"><person-group person-group-type="author"><name><surname>Germain</surname><given-names>M</given-names></name><name><surname>Mathai</surname><given-names>JP</given-names></name><name><surname>McBride</surname><given-names>HM</given-names></name><name><surname>Shore</surname><given-names>GC</given-names></name></person-group><article-title>Endoplasmic reticulum BIK initiates DRP1-regulated remodelling of mitochondrial cristae during apoptosis</article-title><source>Embo J</source><year>2005</year><volume>24</volume><fpage>1546</fpage><lpage>1556</lpage><pub-id pub-id-type="pmid">15791210</pub-id></citation>
+•Demonstrates that ER to mitochondrial calcium signaling controls cristae junctions</p>
+</note>
+      </ref>
+      <ref id="R49">
+        <label>49</label>
+        <note>
+<p id="P31">
+<citation citation-type="journal" id="N0xae0c790N0xbae1c70"><person-group person-group-type="author"><name><surname>Cardenas</surname><given-names>C</given-names></name><name><surname>Miller</surname><given-names>RA</given-names></name><name><surname>Smith</surname><given-names>I</given-names></name><name><surname>Bui</surname><given-names>T</given-names></name><name><surname>Molgo</surname><given-names>J</given-names></name><name><surname>Muller</surname><given-names>M</given-names></name><name><surname>Vais</surname><given-names>H</given-names></name><name><surname>Cheung</surname><given-names>KH</given-names></name><name><surname>Yang</surname><given-names>J</given-names></name><name><surname>Parker</surname><given-names>I</given-names></name><name><surname>Thompson</surname><given-names>CB</given-names></name><etal/></person-group><article-title>Essential regulation of cell bioenergetics by constitutive InsP3 receptor Ca2+ transfer to mitochondria</article-title><source>Cell</source><year>2010</year><volume>142</volume><fpage>270</fpage><lpage>283</lpage><pub-id pub-id-type="pmid">20655468</pub-id></citation>
+••Demonstrates that constitutive IP3R-mediated Ca(2+) signaling between ER and mitochondria is essential for efficient mitochondrial respiration and maintenance of normal bioenergetics</p>
+</note>
+      </ref>
+      <ref id="R50">
+        <label>50</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kim</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Reed</surname>
+              <given-names>JC</given-names>
+            </name>
+          </person-group>
+          <article-title>Cell death and endoplasmic reticulum stress: disease relevance and therapeutic opportunities</article-title>
+          <source>Nat Rev Drug Discov</source>
+          <year>2008</year>
+          <volume>7</volume>
+          <fpage>1013</fpage>
+          <lpage>1030</lpage>
+          <pub-id pub-id-type="pmid">19043451</pub-id>
+        </citation>
+      </ref>
+      <ref id="R51">
+        <label>51</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nishitoh</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kadowaki</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Nagai</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Maruyama</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Yokota</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Fukutomi</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Noguchi</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Matsuzawa</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Takeda</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Ichijo</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title>ALS-linked mutant SOD1 induces ER stress- and ASK1-dependent motor neuron death by targeting Derlin-1</article-title>
+          <source>Genes Dev</source>
+          <year>2008</year>
+          <volume>22</volume>
+          <fpage>1451</fpage>
+          <lpage>1464</lpage>
+          <pub-id pub-id-type="pmid">18519638</pub-id>
+        </citation>
+      </ref>
+      <ref id="R52">
+        <label>52</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cho</surname>
+              <given-names>KJ</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>BI</given-names>
+            </name>
+            <name>
+              <surname>Cheon</surname>
+              <given-names>SY</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>HW</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>HJ</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>GW</given-names>
+            </name>
+          </person-group>
+          <article-title>Inhibition of apoptosis signal-regulating kinase 1 reduces endoplasmic reticulum stress and nuclear huntingtin fragments in a mouse model of Huntington disease</article-title>
+          <source>Neuroscience</source>
+          <year>2009</year>
+          <volume>163</volume>
+          <fpage>1128</fpage>
+          <lpage>1134</lpage>
+          <pub-id pub-id-type="pmid">19646509</pub-id>
+        </citation>
+      </ref>
+      <ref id="R53">
+        <label>53</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Song</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Scheuner</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Ron</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Pennathur</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kaufman</surname>
+              <given-names>RJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Chop deletion reduces oxidative stress, improves beta cell function, and promotes cell survival in multiple mouse models of diabetes</article-title>
+          <source>J Clin Invest</source>
+          <year>2008</year>
+          <volume>118</volume>
+          <fpage>3378</fpage>
+          <lpage>3389</lpage>
+          <pub-id pub-id-type="pmid">18776938</pub-id>
+        </citation>
+      </ref>
+      <ref id="R54">
+        <label>54</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Delepine</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Nicolino</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Barrett</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Golamaully</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Lathrop</surname>
+              <given-names>GM</given-names>
+            </name>
+            <name>
+              <surname>Julier</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>EIF2AK3, encoding translation initiation factor 2-alpha kinase 3, is mutated in patients with Wolcott-Rallison syndrome</article-title>
+          <source>Nat Genet</source>
+          <year>2000</year>
+          <volume>25</volume>
+          <fpage>406</fpage>
+          <lpage>409</lpage>
+          <pub-id pub-id-type="pmid">10932183</pub-id>
+        </citation>
+      </ref>
+      <ref id="R55">
+        <label>55</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Seimon</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name>
+              <surname>Nadolski</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Liao</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Magallon</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Nguyen</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Feric</surname>
+              <given-names>NT</given-names>
+            </name>
+            <name>
+              <surname>Koschinsky</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Harkewicz</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Witztum</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Tsimikas</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Golenbock</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Atherogenic lipids and lipoproteins trigger CD36-TLR2-dependent apoptosis in macrophages undergoing endoplasmic reticulum stress</article-title>
+          <source>Cell Metab</source>
+          <year>2010</year>
+          <volume>12</volume>
+          <fpage>467</fpage>
+          <lpage>482</lpage>
+          <pub-id pub-id-type="pmid">21035758</pub-id>
+        </citation>
+      </ref>
+      <ref id="R56">
+        <label>56</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yamaguchi</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Higuchi</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Hirotani</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kashiwase</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Nakayama</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Hikoso</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Takeda</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Watanabe</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Asahi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Taniike</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Matsumura</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Targeted deletion of apoptosis signal-regulating kinase 1 attenuates left ventricular remodeling</article-title>
+          <source>Proc Natl Acad Sci USA</source>
+          <year>2003</year>
+          <volume>100</volume>
+          <fpage>15883</fpage>
+          <lpage>15888</lpage>
+          <pub-id pub-id-type="pmid">14665690</pub-id>
+        </citation>
+      </ref>
+      <ref id="R57">
+        <label>57</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tajiri</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Oyadomari</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Yano</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Morioka</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Gotoh</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Hamada</surname>
+              <given-names>JI</given-names>
+            </name>
+            <name>
+              <surname>Ushio</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Mori</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Ischemia-induced neuronal cell death is mediated by the endoplasmic reticulum stress pathway involving CHOP</article-title>
+          <source>Cell Death Differ</source>
+          <year>2004</year>
+          <volume>11</volume>
+          <fpage>403</fpage>
+          <lpage>415</lpage>
+          <pub-id pub-id-type="pmid">14752508</pub-id>
+        </citation>
+      </ref>
+      <ref id="R58">
+        <label>58</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Merksamer</surname>
+              <given-names>PI</given-names>
+            </name>
+            <name>
+              <surname>Papa</surname>
+              <given-names>FR</given-names>
+            </name>
+          </person-group>
+          <article-title>The UPR and cell fate at a glance</article-title>
+          <source>J Cell Sci</source>
+          <year>2010</year>
+          <volume>123</volume>
+          <fpage>1003</fpage>
+          <lpage>1006</lpage>
+          <pub-id pub-id-type="pmid">20332117</pub-id>
+        </citation>
+      </ref>
+    </ref-list>
+    <sec id="S9" sec-type="display-objects">
+      <title>Figure</title>
+      <fig id="F1" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <title>Connections from the UPR to the Mitochondrial Apoptotic Pathway</title>
+          <p id="P32">Under excessive ER stress, the ER transmembrane sensors IRE1α and PERK send signals through the BCL-2 family of proteins to activate the mitochondrial apoptotic pathway. In response to unfolded proteins, IRE1α oligomerizes and induces endonucleolytic decay of hundreds of ER-localized mRNAs, depleting ER protein folding components and leading to worsening ER stress. Phosphorylated IRE1α also recruits TNF receptor-associated factor 2 (TRAF2) and activates apoptosis signaling kinase 1 (ASK1) and its downstream target c-Jun NH<sub>2</sub>-terminal kinase (JNK). JNK then activates pro-apoptotic BIM and inhibits anti-apoptotic BCL-2. These conditions result in dimerization of PERK and activation of its kinase domain to phosphorylate eukaryotic translation initiation factor 2α (eIF2α), which causes selective translation of activating transcription factor-4 (ATF4). ATF4 upregulates expression of the CHOP/GADD153 transcription factor, which inhibits the gene encoding anti-apoptotic BCL-2 while inducing expression of pro-apoptotic BIM. ER stress also promotes p53-dependent transcriptional upregulation of Noxa and Puma, two additional pro-apoptotic BH3-only proteins. Furthermore, high levels of UPR signaling induce initiator caspase-2 to proteolytically cleave and activate pro-apoptotic BID upstream of the mitochondrion. In addition to antagonizing pro-survival BCL-2 members, cleaved BID, BIM and PUMA activate Bax and/or Bak. Hence, in response to excessive UPR signaling, the balance of BCL-2 family proteins shifts in the direction of apoptosis and leads to the oligomerization of BAX and BAK, two multi-domain pro-apoptotic BCL-2 family proteins that then drive the permeabilization of the outer mitochondrial membrane, apoptosome formation and activation of executioner caspases such as Caspase-3. Figure adapted with permission from the <italic>Journal of Cell Science</italic> [<xref ref-type="bibr" rid="R58">58</xref>].</p>
+        </caption>
+        <graphic xlink:href="nihms256554f1"/>
+      </fig>
+    </sec>
+  </back>
+</article>

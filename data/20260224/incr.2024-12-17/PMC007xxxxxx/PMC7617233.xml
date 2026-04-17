@@ -1,0 +1,212 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties manuscript?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">101215604</journal-id>
+      <journal-id journal-id-type="nlm-ta">Nat Methods</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Nat Methods</journal-id>
+      <journal-title-group>
+        <journal-title>Nature methods</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1548-7091</issn>
+      <issn pub-type="epub">1548-7105</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">37596472</article-id>
+      <article-id pub-id-type="pmc">7617233</article-id>
+      <article-id pub-id-type="manuscript">EMS201739</article-id>
+      <article-id pub-id-type="doi">10.1038/s41592-023-01991-z</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>scNodes: a correlation and processing toolkit for super-resolution fluorescence and electron microscopy</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Last</surname>
+            <given-names>Mart G.F.</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Voortman</surname>
+            <given-names>Lenard M.</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Sharp</surname>
+            <given-names>Thomas H.</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="CR1" ref-type="corresp">*</xref>
+        </contrib>
+        <aff id="A1">
+<label>1</label>Department of Cell and Chemical Biology, <institution-wrap><institution-id institution-id-type="ror">https://ror.org/05xvt9f17</institution-id><institution>Leiden University Medical Center</institution></institution-wrap>, <postal-code>2300</postal-code>
+<state>RC</state>
+<city>Leiden</city>, <country country="NL">The Netherlands</country></aff>
+      </contrib-group>
+      <author-notes>
+        <corresp id="CR1">
+<label>*</label>To whom correspondence should be addressed: <email>t.sharp@lumc.nl</email></corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>06</day>
+        <month>12</month>
+        <year>2024</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <day>01</day>
+        <month>10</month>
+        <year>2023</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>14</day>
+        <month>12</month>
+        <year>2024</year>
+      </pub-date>
+      <volume>20</volume>
+      <issue>10</issue>
+      <fpage>1445</fpage>
+      <lpage>1446</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available to download for the purposes of text mining, consistent with the principles of UK copyright law.</license-p>
+        </license>
+      </permissions>
+    </article-meta>
+  </front>
+  <body>
+    <p id="P1">Correlative cryo-super resolution light and cryo-electron microscopy (SR-cryoCLEM) is an upcoming method that promises to enable accurately targeted, high-resolution <italic toggle="yes">in situ</italic> structure determination by combining the specificity of fluorescent labelling with the high resolution of cryoEM<sup><xref rid="R1" ref-type="bibr">1</xref>–<xref rid="R4" ref-type="bibr">4</xref></sup>. As it is a novel and rapidly developing method, there is currently no dedicated open-source software available for data processing, and current implementations rely instead on numerous disjointed software packages for processing and visualization. Here, we present a solution: an open-source, standalone processing suite called ‘scNodes,’ that is specialized for (but not limited to) SR-cryoCLEM and can be used for super-resolution fluorescence data processing, image correlation, and fluorescence-guided particle picking for cryoEM. The project is available at <ext-link xlink:href="http://github.com/bionanopatterning/scNodes" ext-link-type="uri">github.com/bionanopatterning/scNodes</ext-link></p>
+    <p id="P2">scNodes offers a simple user interface for super-resolution reconstruction using a <italic toggle="yes">node editor</italic>: an intuitive graphical interface that streamlines the entire workflow (<xref rid="F1" ref-type="fig">Fig. 1a</xref>), from raw data to final reconstruction, by enabling on-the-fly adjustment of the processing setup, and by offering processing speeds more than 5× those achieved with ThunderSTORM<sup><xref rid="R5" ref-type="bibr">5</xref></sup>, a popular alternative (see Fig. S1). This fast real-time data processing is instrumental in allowing the user to develop an understanding of each processing step by observing its effect on the final outcome. This enables the user to customize the super-resolution reconstruction, leading to better results in a shorter time.</p>
+    <p id="P3">scNodes also contains a <italic toggle="yes">correlation editor</italic> for correlation of light microscopy images with electron microscopy images and tomographic volumes. With this editor users can manually or semi-automatically perform rigid alignment, and correlate, visualize, and export fluorescence and electron microscopy datasets (<xref rid="F1" ref-type="fig">Fig. 1b</xref>). While the editor was created to aid manual correlation of light to electron microscope images, a semi-automated procedure to align images of the same content type, based on TurboReg<sup><xref rid="R6" ref-type="bibr">6</xref></sup>, is also implemented. This procedure is highly suited for, e.g., cryo-electron tomography datasets, which typically contain multiple views of one sample at various magnifications: overview, search, exposure, and tomographic volume. The numerous alignment steps that are typically required in a CLEM experiment are facilitated by a number of internal plugins, including the aforementioned registration method as well as a hierarchical arrangement of the data in the scene that helps organise the entire correlation train in a straightforward way.</p>
+    <p id="P4">With the exception of cryoEM data processing, for which many excellent software packages are available (e.g., refs<sup><xref rid="R7" ref-type="bibr">7</xref>,<xref rid="R8" ref-type="bibr">8</xref></sup>), the combined functionality of the node and correlation editors allows the user to perform all data processing steps, from raw fluorescence data to the final correlated super-resolution images, in a cohesive workflow. Once a correlated dataset has been prepared, scNodes can also be used for fluorescence-guided particle picking using built-in manual picking functionality.</p>
+    <p id="P5">The programme was designed from the ground up to be easily extensible. It is written in Python and has a modular structure that allows for customization through the use of standalone nodes and plugins. These can be added to the software with minimal effort - by following a simple template – and require little specialized knowledge to create. Plugins can be shared on discussions page of the GitHub repository, which also hosts a forum where users can ask for help, provide feedback, or request features.</p>
+    <p id="P6">Besides ease of use, processing speed was an important parameter in the design. scNodes makes use of parallel processing on the CPU to speed up operations such as image registration, filtering, and particle detection, as well as of GPU accelerated computing for point-spread function (PSF) fitting<sup><xref rid="R9" ref-type="bibr">9</xref></sup> of fluorescence images and for drift correction.</p>
+    <p id="P7">Installation of the software is straightforward: releases can be downloaded from our GitHub repository and run without requiring setting up any local Python environment or dependencies. Alternative installation instructions, including instructions on how to set up a local development environment for the project, can be found in the manual (in the supplementary note).</p>
+    <p id="P8">An extensive user manual that contains tutorials and visual instructions on how to use the software is also provided. It includes: an introduction to the node editor (chapter 2), a tutorial on generating super-resolution reconstructions with either a PSF-fitting method or SOFI (chapter 2.4), a tutorial on creating custom nodes (chapter 2.6), or downloading external nodes (chapter 2.7), an introduction to the correlation editor (chapter 3), a tutorial on correlating super-resolution fluorescence and cryo-electron tomography data (chapter 3.5), a tutorial on writing and installing custom plugins for the correlation editor (chapter 3.6), fluorescence-guided particle picking (chapter 3.7), and various other sections that provide further information.</p>
+    <p id="P9">To ensure that scNodes can respond to the developments in the field and the need of users, we are continuously improving and extending the software and it is our hope that others who find the software useful may do so as well, and share their plugins on GitHub.</p>
+  </body>
+  <back>
+    <ack id="S1">
+      <title>Acknowledgements</title>
+      <p>We thank the reviewers for their valuable comments, and J. Slotman, M. van Klaveren, and A.M. So for feedback and testing. This work was supported by the following grants to THS: ERC 759517, NWO OCENW.KLEIN.291, NWO VI.Vidi.193.014.</p>
+    </ack>
+    <fn-group>
+      <fn fn-type="con" id="FN1">
+        <p id="P10"><bold>Author Contributions</bold>: MGFL wrote the software, THS and LMV supervised the project.</p>
+      </fn>
+      <fn fn-type="COI-statement" id="FN2">
+        <p id="P11"><bold>Competing Interests Statement</bold>: The authors declare no competing interests.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <ref id="R1">
+        <label>1</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Dahlberg</surname><given-names>PD</given-names></name>
+<etal/>
+</person-group><article-title>Cryogenic single-molecule fluorescence annotations for electron tomography reveal in situ organization of key proteins in Caulobacter</article-title><source>Proceedings of the National Academy of Sciences</source><year>2020</year><volume>117</volume><fpage>13937</fpage><lpage>13944</lpage><pub-id pub-id-type="doi">10.1073/pnas.2001849117</pub-id><pub-id pub-id-type="pmid">32513734</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Tuijtel</surname><given-names>MW</given-names></name>
+<name><surname>Koster</surname><given-names>AJ</given-names></name>
+<name><surname>Jakobs</surname><given-names>S</given-names></name>
+<name><surname>Faas</surname><given-names>FGA</given-names></name>
+<name><surname>Sharp</surname><given-names>TH</given-names></name>
+</person-group><article-title>Correlative cryo super-resolution light and electron microscopy on mammalian cells using fluorescent proteins</article-title><source>Scientific Reports</source><year>2019</year><volume>9</volume><elocation-id>1369</elocation-id><pub-id pub-id-type="doi">10.1038/s41598-018-37728-8</pub-id><pub-id pub-id-type="pmid">30718653</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Tian</surname><given-names>B</given-names></name>
+<name><surname>Xu</surname><given-names>X</given-names></name>
+<name><surname>Xue</surname><given-names>Y</given-names></name>
+<name><surname>Ji</surname><given-names>W</given-names></name>
+<name><surname>Xu</surname><given-names>T</given-names></name>
+</person-group><article-title>Cryogenic superresolution correlative light and electron microscopy on the frontier of subcellular imaging</article-title><source>Biophysical Reviews</source><year>2021</year><volume>13</volume><fpage>1163</fpage><lpage>1171</lpage><pub-id pub-id-type="doi">10.1007/s12551-021-00851-4</pub-id><pub-id pub-id-type="pmid">35059034</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>DeRosier</surname><given-names>DJ</given-names></name>
+</person-group><article-title>Where in the cell is my protein?</article-title><source>Quarterly Reviews of Biophysics</source><year>2021</year><volume>54</volume><fpage>e9</fpage><pub-id pub-id-type="pmid">34165063</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ovesný</surname><given-names>M</given-names></name>
+<name><surname>Křížek</surname><given-names>P</given-names></name>
+<name><surname>Borkovec</surname><given-names>J</given-names></name>
+<name><surname>Švindrych</surname><given-names>Z</given-names></name>
+<name><surname>Hagen</surname><given-names>GM</given-names></name>
+</person-group><article-title>ThunderSTORM: a comprehensive ImageJ plug-in for PALM and STORM data analysis and super-resolution imaging</article-title><source>Bioinformatics</source><year>2014</year><volume>30</volume><fpage>2389</fpage><lpage>2390</lpage><pub-id pub-id-type="doi">10.1093/bioinformatics/btu202</pub-id><pub-id pub-id-type="pmid">24771516</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Thevenaz</surname><given-names>P</given-names></name>
+<name><surname>Ruttimann</surname><given-names>UE</given-names></name>
+<name><surname>Unser</surname><given-names>M</given-names></name>
+</person-group><article-title>A pyramid approach to subpixel registration based on intensity</article-title><source>IEEE Transactions on Image Processing</source><year>1998</year><volume>7</volume><fpage>27</fpage><lpage>41</lpage><pub-id pub-id-type="pmid">18267377</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Tang</surname><given-names>G</given-names></name>
+<etal/>
+</person-group><article-title>EMAN2: An extensible image processing suite for electron microscopy</article-title><source>Journal of Structural Biology</source><year>2007</year><volume>157</volume><fpage>38</fpage><lpage>46</lpage><pub-id pub-id-type="pmid">16859925</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Danita</surname><given-names>C</given-names></name>
+<name><surname>Chiu</surname><given-names>W</given-names></name>
+<name><surname>Galaz-Montoya</surname><given-names>JG</given-names></name>
+</person-group><article-title>Efficient manual annotation of cryogenic electron tomograms using IMOD</article-title><source>STAR Protocols</source><year>2022</year><volume>3</volume><elocation-id>101658</elocation-id><pub-id pub-id-type="doi">10.1016/j.xpro.2022.101658</pub-id><pub-id pub-id-type="pmid">36097385</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Przybylski</surname><given-names>A</given-names></name>
+<name><surname>Thiel</surname><given-names>B</given-names></name>
+<name><surname>Keller-Findeisen</surname><given-names>J</given-names></name>
+<name><surname>Stock</surname><given-names>B</given-names></name>
+<name><surname>Bates</surname><given-names>M</given-names></name>
+</person-group><article-title>Gpufit: An open-source toolkit for GPU-accelerated curve fitting</article-title><source>Scientific Reports</source><year>2017</year><volume>7</volume><elocation-id>15722</elocation-id><pub-id pub-id-type="doi">10.1038/s41598-017-15313-9</pub-id><pub-id pub-id-type="pmid">29146965</pub-id>
+</element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig position="float" id="F1">
+      <label>Figure 1</label>
+      <caption>
+        <title>an overview of scNodes.</title>
+        <p><bold>a)</bold> a view of the node editor (left) and the accompanying output display (right). The display shows the output of the active ‘PSF-fitting’ node, which is preceded in the processing pipeline by a particle detection, spatial filter, registration, and data import node. <bold>b)</bold> the correlation editor showing a super-resolution fluorescence image overlayed on a cryo-electron tomographic reconstruction.</p>
+      </caption>
+      <graphic xlink:href="EMS201739-f001" position="float"/>
+    </fig>
+  </floats-group>
+</article>

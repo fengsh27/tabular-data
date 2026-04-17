@@ -1,0 +1,81 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+"'subject', 'A'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Free BUP Concentration,ng/g,101.6,N/A,N/A
+"'subject', 'B'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Free BUP Concentration,ng/g,47.4,N/A,N/A
+"'subject', 'C'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Free BUP Concentration,ng/g,101.0,N/A,N/A
+"'subject', 'D (Baby 1)'",Buprenorphine,Buprenorphine,Meconium,Neonates,N/A,N/A,Free BUP Concentration,ng/g,59.3,N/A,N/A
+"'subject', 'D (Baby 2)'",Buprenorphine,Buprenorphine,Meconium,Neonates,N/A,N/A,Free BUP Concentration,ng/g,59.6,N/A,N/A
+"'subject', 'E'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Free BUP Concentration,ng/g,240.5,N/A,N/A
+"'subject', 'F'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Free BUP Concentration,ng/g,NDb,N/A,N/A
+"'subject', 'G'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Free BUP Concentration,ng/g,23.9,N/A,N/A
+"'subject', 'H'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Free BUP Concentration,ng/g,40.4,N/A,N/A
+"'subject', 'I'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Free BUP Concentration,ng/g,165.4,N/A,N/A
+"'subject', 'A'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Total BUP ng/g,ng/g,123.8,N/A,N/A
+"'subject', 'B'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Total BUP ng/g,ng/g,95.9,N/A,N/A
+"'subject', 'C'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Total BUP ng/g,ng/g,131.3,N/A,N/A
+"'subject', 'D (Baby 1)'",Buprenorphine,Buprenorphine,Meconium,Neonates,N/A,N/A,Total BUP ng/g,ng/g,96,N/A,N/A
+"'subject', 'D (Baby 2)'",Buprenorphine,Buprenorphine,Meconium,Neonates,N/A,N/A,Total BUP ng/g,ng/g,169.6,N/A,N/A
+"'subject', 'E'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Total BUP ng/g,ng/g,296.8,N/A,N/A
+"'subject', 'F'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Total BUP ng/g,ng/g,24.3,N/A,N/A
+"'subject', 'G'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Total BUP ng/g,ng/g,32.1,N/A,N/A
+"'subject', 'H'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Total BUP ng/g,ng/g,91.6,N/A,N/A
+"'subject', 'I'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Total BUP ng/g,ng/g,245.9,N/A,N/A
+"'subject', 'A'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,% Free BUP,%,82.0,N/A,N/A
+"'subject', 'B'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,% Free BUP,%,49.4,N/A,N/A
+"'subject', 'C'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,% Free BUP,%,76.9,N/A,N/A
+"'subject', 'D (Baby 1)'",Buprenorphine,Buprenorphine,Meconium,Neonates,N/A,N/A,% Free BUP,%,61.7,N/A,N/A
+"'subject', 'D (Baby 2)'",Buprenorphine,Buprenorphine,Meconium,Neonates,N/A,N/A,% Free BUP,%,35.1,N/A,N/A
+"'subject', 'E'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,% Free BUP,%,81.0,N/A,N/A
+"'subject', 'G'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,% Free BUP,%,74.4,N/A,N/A
+"'subject', 'H'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,% Free BUP,%,44.1,N/A,N/A
+"'subject', 'I'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,% Free BUP,%,67.3,N/A,N/A
+"'subject', 'A'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,Free NBUP ng/g,ng/g,712.6,N/A,N/A
+"'subject', 'B'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,Free NBUP ng/g,ng/g,497.5,N/A,N/A
+"'subject', 'C'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,Free NBUP ng/g,ng/g,398.2,N/A,N/A
+"'subject', 'D (Baby 1)'",Buprenorphine,Norbuprenorphine,Meconium,Neonates,N/A,N/A,Free NBUP ng/g,ng/g,468.4,N/A,N/A
+"'subject', 'D (Baby 2)'",Buprenorphine,Norbuprenorphine,Meconium,Neonates,N/A,N/A,Free NBUP ng/g,ng/g,373.4,N/A,N/A
+"'subject', 'E'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,Free NBUP ng/g,ng/g,1228.6,N/A,N/A
+"'subject', 'F'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,Free NBUP ng/g,ng/g,331.1,N/A,N/A
+"'subject', 'G'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,Free NBUP ng/g,ng/g,730.6,N/A,N/A
+"'subject', 'H'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,Free NBUP ng/g,ng/g,505.4,N/A,N/A
+"'subject', 'I'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,Free NBUP ng/g,ng/g,858.4,N/A,N/A
+"'subject', 'A'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,Total NBUP ng/g,ng/g,719.3,N/A,N/A
+"'subject', 'B'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,Total NBUP ng/g,ng/g,689.2,N/A,N/A
+"'subject', 'C'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,Total NBUP ng/g,ng/g,447.5,N/A,N/A
+"'subject', 'D (Baby 1)'",Buprenorphine,Norbuprenorphine,Meconium,Neonates,N/A,N/A,Total NBUP ng/g,ng/g,548.1,N/A,N/A
+"'subject', 'D (Baby 2)'",Buprenorphine,Norbuprenorphine,Meconium,Neonates,N/A,N/A,Total NBUP ng/g,ng/g,607.6,N/A,N/A
+"'subject', 'E'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,Total NBUP ng/g,ng/g,1880.2,N/A,N/A
+"'subject', 'F'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,Total NBUP ng/g,ng/g,323.9,N/A,N/A
+"'subject', 'G'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,Total NBUP ng/g,ng/g,629.9,N/A,N/A
+"'subject', 'H'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,Total NBUP ng/g,ng/g,955.6,N/A,N/A
+"'subject', 'I'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,Total NBUP ng/g,ng/g,737.1,N/A,N/A
+"'subject', 'A'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,% Free NBUP,%,99.1,N/A,N/A
+"'subject', 'B'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,% Free NBUP,%,72.2,N/A,N/A
+"'subject', 'C'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,% Free NBUP,%,89.0,N/A,N/A
+"'subject', 'D (Baby 1)'",Buprenorphine,Norbuprenorphine,Meconium,Neonates,N/A,N/A,% Free NBUP,%,85.5,N/A,N/A
+"'subject', 'D (Baby 2)'",Buprenorphine,Norbuprenorphine,Meconium,Neonates,N/A,N/A,% Free NBUP,%,61.5,N/A,N/A
+"'subject', 'E'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,% Free NBUP,%,65.3,N/A,N/A
+"'subject', 'F'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,% Free NBUP,%,102.2,N/A,N/A
+"'subject', 'G'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,% Free NBUP,%,116.0,N/A,N/A
+"'subject', 'H'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,% Free NBUP,%,52.9,N/A,N/A
+"'subject', 'I'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,% Free NBUP,%,116.5,N/A,N/A
+"'subject', 'A'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Free BUP/Free NBUP,Ratio,0.14,N/A,N/A
+"'subject', 'B'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Free BUP/Free NBUP,Ratio,0.10,N/A,N/A
+"'subject', 'C'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Free BUP/Free NBUP,Ratio,0.25,N/A,N/A
+"'subject', 'D (Baby 1)'",Buprenorphine,Norbuprenorphine,Meconium,Neonates,N/A,N/A,Free BUP/Free NBUP,Ratio,0.13,N/A,N/A
+"'subject', 'D (Baby 2)'",Buprenorphine,Norbuprenorphine,Meconium,Neonates,N/A,N/A,Free BUP/Free NBUP,Ratio,0.16,N/A,N/A
+"'subject', 'E'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,Free BUP/Free NBUP,Ratio,0.20,N/A,N/A
+"'subject', 'G'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,Free BUP/Free NBUP,Ratio,0.03,N/A,N/A
+"'subject', 'H'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,Free BUP/Free NBUP,Ratio,0.08,N/A,N/A
+"'subject', 'I'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,Free BUP/Free NBUP,Ratio,0.19,N/A,N/A
+"'subject', 'A'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Total BUP/Total NBUP,Ratio,0.17,N/A,N/A
+"'subject', 'B'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Total BUP/Total NBUP,Ratio,0.14,N/A,N/A
+"'subject', 'C'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Total BUP/Total NBUP,Ratio,0.29,N/A,N/A
+"'subject', 'D (Baby 1)'",Buprenorphine,Buprenorphine,Meconium,Neonates,N/A,N/A,Total BUP/Total NBUP,Ratio,0.18,N/A,N/A
+"'subject', 'D (Baby 2)'",Buprenorphine,Buprenorphine,Meconium,Neonates,N/A,N/A,Total BUP/Total NBUP,Ratio,0.28,N/A,N/A
+"'subject', 'E'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Total BUP/Total NBUP,Ratio,0.16,N/A,N/A
+"'subject', 'F'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Total BUP/Total NBUP,Ratio,0.08,N/A,N/A
+"'subject', 'G'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Total BUP/Total NBUP,Ratio,0.05,N/A,N/A
+"'subject', 'H'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Total BUP/Total NBUP,Ratio,0.10,N/A,N/A
+"'subject', 'I'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,Total BUP/Total NBUP,Ratio,0.33,N/A,N/A
+"'subject', 'F'",Buprenorphine,Buprenorphine,Meconium,N/A,N/A,N/A,% Free BUP,%,—,N/A,N/A
+"'subject', 'F'",Buprenorphine,Norbuprenorphine,Meconium,N/A,N/A,N/A,Free BUP/Free NBUP,Ratio,—,N/A,N/A

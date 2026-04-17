@@ -1,0 +1,3824 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Archiving and Interchange DTD v2.3 20070202//EN" "archivearticle.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">8302946</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">4093</journal-id>
+      <journal-id journal-id-type="nlm-ta">Hepatology</journal-id>
+      <journal-title>Hepatology (Baltimore, Md.)</journal-title>
+      <issn pub-type="ppub">0270-9139</issn>
+      <issn pub-type="epub">1527-3350</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">21384408</article-id>
+      <article-id pub-id-type="pmc">3082587</article-id>
+      <article-id pub-id-type="doi">10.1002/hep.24279</article-id>
+      <article-id pub-id-type="manuscript">NIHMS276351</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>THE CONTRIBUTION OF ER STRESS TO LIVER DISEASES</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Dara</surname>
+            <given-names>Lily</given-names>
+          </name>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ji</surname>
+            <given-names>Cheng</given-names>
+          </name>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kaplowitz</surname>
+            <given-names>Neil</given-names>
+          </name>
+        </contrib>
+        <aff id="A1">USC Research Center for Liver Diseases and the Division of Gastrointestinal and Liver Diseases, Los Angeles California, Keck School of Medicine University of Southern California</aff>
+      </contrib-group>
+      <author-notes>
+        <corresp id="cor1">Address correspondence to: Lily Dara, M.D., USC Research Center for Liver Disease, 2011 Zonal Ave HMR 101, Los Angeles CA 90033, Fax: 323-442-3243, <email>lily.dara@usc.edu</email></corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>4</day>
+        <month>3</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>5</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>1</day>
+        <month>5</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>53</volume>
+      <issue>5</issue>
+      <fpage>1752</fpage>
+      <lpage>1763</lpage>
+      <permissions>
+        <license>
+          <p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P1">The unfolded protein response (UPR) is an evolutionarily conserved cell signaling pathway which is activated to regulate protein synthesis and restore homeostatic equilibrium when the cell is stressed from increased client protein load or the accumulation of unfolded or malfolded proteins. Once activated, this signaling pathway can either result in the recovery of homeostasis, , or can activate a cascade of events which ultimately result in cell death. The UPR/ER stress response spectrum and its interplay with other cellular organelles play an important role in the pathogenesis of disease in secretory cells rich in endoplasmic reticulum, such as hepatocytes. Over the past two decades the contribution of ER stress to various forms of liver diseases has been examined. Robust support for a contributing as opposed to a secondary role for ER stress response is seen in the nonalcoholic steatohepatitis (NASH), alcoholic liver disease, ischemia reperfusion injury and cholestatic models of liver disease. The exact direction of the cause and effect relationship between modes of cell injury and ER stress remains elusive. It is apparent that a complex interplay exists between ER stress response, conditions that promote it, and those that result from it. A vicious cycle in which ER stress promotes inflammation, cell injury and steatosis and in which steatogenesis, inflammation and cell injury aggravate ER stress seems to be at play. It is perhaps the nature of such a vicious cycle that is the key pathophysiologic concept. Therapeutic approaches aimed at interrupting the cycle may dampen the stress response and the ensuing injury.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>unfolded protein response</kwd>
+        <kwd>steatohepatitis</kwd>
+        <kwd>apoptosis</kwd>
+        <kwd>liver disease, alcoholic</kwd>
+        <kwd>fatty liver, nonalcoholic</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S1">
+      <title>Introduction</title>
+      <p id="P2">The endoplasmic reticulum (ER) is the intracellular organelle responsible for synthesis, folding, trafficking and maturation of proteins. In addition, the ER has other important functions such as triglyceride and cholesterol synthesis, drug metabolism, as well as storage and release of Ca<sup>2+</sup>. Under normal conditions a homeostatic equilibrium exists between the influx of unfolded peptides and the folding capacity of the ER. As physiologic conditions change, thereby impacting the rate of protein synthesis, a signal transduction pathway between the ER and other intracellular organelles has evolved which mediates adaptation to the new folding demands, promoting survival. These physiological adaptive responses are of particular importance in cells rich in endoplasmic reticulum content and responsible for protein synthesis, such as lymphocytes, pancreatic beta cells and acinar cells as well as hepatocytes.</p>
+      <p id="P3">This evolutionarily conserved mechanism was first described in the budding yeast, Saccharomyces cerevisiea. It is an intricate homeostatic adaptive response to the accumulation of unfolded protein molecules which has been termed the unfolded protein response (UPR)(<xref ref-type="bibr" rid="R1">1</xref>). The insufficiency of the ER stress response to meet the increased folding needs of the cell activates a pathologic response resulting in lipogenesis, inflammation and activation of apoptotic pathways. The sequence of events which lead the cell to the pathologic response is often termed the ER stress response(<xref ref-type="bibr" rid="R2">2</xref>). In a sense the ER stress response can be viewed as a spectrum from the UPR to adaptive injury (elimination of cells unable to handle client load) to disease promotion and/or propagation (e.g. steatohepatitis). The precise point at which this shift from adaptation to apoptosis occurs is not certain but clearly is influenced by the degree and the duration of the ER stress.</p>
+    </sec>
+    <sec id="S2">
+      <title>The UPR</title>
+      <p id="P4">When the protein load in the ER increases, the three main branches of the UPR are activated. These homeostatic responses aim to bring the organelle and the cell into a state of equilibrium by producing more chaperones to increase the folding capacity of the ER, by enhancing endoplasmic reticulum associated protein degradation (ERAD) and autophagy, and by decreasing protein entry through impacting the translation and synthesis of new polypeptides(<xref ref-type="bibr" rid="R3">3</xref>).</p>
+      <p id="P5">The UPR has three main branches each of which consists of a transmembrane sensor embedded in the ER which is kept inactive as long as it is bound to the intraluminal chaperone, glucose regulated protein GRP78/BIP (<xref ref-type="bibr" rid="R4">4</xref>, <xref ref-type="bibr" rid="R5">5</xref>). When the ER is stressed either by glucose deprivation, the depletion of calcium stores, or the accumulation of malfolded proteins, GRP78 is displaced from the stress sensor to aid in protein folding. This disengagement initiates an intricate cascade which ultimately determines the fate of the cell. After the release of GRP78, the three UPR transducers activating transcription factor-6 (ATF6), inositol requiring enzyme-1α (IRE1α), and protein kinase dsRNA-dependent–like ER kinase (PERK) are subsequently activated by self association and autophosphorylation (IRE1α + PERK) or translocation to the Golgi (ATF6) for proteolytic release of the active transcription factor (referred to as regulated intramembrane proteolysis or RIP).</p>
+      <p id="P6">PERK acts by global inhibition of protein synthesis through phosphorylation of eukaryotic translation initiation factor-2α subunit (eIF2α) (<xref ref-type="bibr" rid="R6">6</xref>). PERK also regulates the transcription of ribosomal RNA via phosphorylated eIF2 and preferentially increases the translation of ATF4 which in turn binds to cAMP response elements (CRE) and results in the activation of C/EBP–homologous protein (CHOP) (<xref ref-type="bibr" rid="R4">4</xref>, <xref ref-type="bibr" rid="R7">7</xref>, <xref ref-type="bibr" rid="R8">8</xref>). IRE1α is an endoribonuclease which activates XBP1 by unconventional splicing of XBP1 mRNA resulting in transcription of UPR elements (UPRE) and ERSE genes which control ER-associated protein degradation (ERAD) and chaperones(<xref ref-type="bibr" rid="R9">9</xref>, <xref ref-type="bibr" rid="R10">10</xref>). IRE1α also degrades the mRNA of many secretory and transmembrane proteins and thus also helps in decreasing the protein load that enters the ER(<xref ref-type="bibr" rid="R11">11</xref>). Active ATF6 after RIP translocates to the nucleus which together with ATF4 and sXBP1,activateERSE, and UPRE, and CRE. The products of the genes regulated by these elements facilitate the folding and elimination of accumulated proteins via ER degradation enhancing mannosidase-like protein (EDEM), a component of ERAD, as well as up regulation of chaperones which aid in protein folding. All of the arms of the UPR are signal transduction mechanisms which lead to the production or release of transcription factors which regulate the UPR (sXBP, ATF4, ATF6). This mechanism is primarily a cytoprotective survival response which aims to regulate protein folding and restore homeostatic balance.</p>
+    </sec>
+    <sec id="S3">
+      <title>Pathologic ER Stress response</title>
+      <p id="P7">When the activation of the UPR fails to promote cell survival, the cell is taken down the pro-apoptotic ER stress response pathway which can ultimately lead to apoptotic cell death, inflammation and/or fat accumulation (<xref ref-type="bibr" rid="R12">12</xref>). The pathologic ER stress response can be activated in a variety of ways (<xref ref-type="fig" rid="F1">FIG 1</xref>). An important and frequent feature of ER stress response is increased C/EBP–homologous protein (CHOP) expression leading to activation of the proapoptotic pathways (<xref ref-type="bibr" rid="R13">13</xref>, <xref ref-type="bibr" rid="R14">14</xref>). Some of the pathologically induced signaling pathways include: PERK mediated global protein translation shut down resulting in decreased Inhibitory-κBα (IκBα) which leads to inflammation through NF-κB activation (<xref ref-type="bibr" rid="R15">15</xref>); IRE1α mediated recruitment of proapoptotic signals such as TNF receptor associated factor 2 (TRAF2) and signal regulated kinase 1 (ASK1)/c-jun-N-terminal kinase (JNK) which can lead to autophagy, insulin resistance and apoptosis. TRAF2 can recruit IκB kinase (IKK) and promote NF-κB mediated inflammation (<xref ref-type="bibr" rid="R16">16</xref>, <xref ref-type="bibr" rid="R17">17</xref>). Proapoptotic Bcl2 proteins which regulate apoptotic cell death via altering calcium homeostasis have been linked to the ER stress response and in particular to theIRE1α branch. (<xref ref-type="bibr" rid="R12">12</xref>, <xref ref-type="bibr" rid="R18">18</xref>) When activated these Bcl2 proteins can lead to calcium release, calpain activation which can cause mitochondrial depolarization and increased ROS(<xref ref-type="bibr" rid="R19">19</xref>) as well as the activation of caspase 4 which along with JNK modulates apoptosis. On the other hand, BAX and BAK have been shown to form a complex with the cytosolic domain of IRE1α and regulate IRE signaling in cells undergoing ER stress. Double knockouts of BAX and BAK apoptotic factors demonstrate a pheonytpe similar to that of IRE1α deficient mice (<xref ref-type="bibr" rid="R18">18</xref>). ER associated caspase 12 plays an important role in ER stress response induced apoptosis in rodents but not in humans (<xref ref-type="bibr" rid="R20">20</xref>); Calcium release is a critical factor in affecting mitochondrial function, particularly in areas in which the ER is in close association with the mitochondria, so-called mitochondria-associated membrane (MAM) (<xref ref-type="bibr" rid="R21">21</xref>, <xref ref-type="bibr" rid="R22">22</xref>); PERK induced ATF4 as well as ATF6 can increase the expression of CHOP which promotes ER stress response through numerous mechanisms. CHOP promotes oxidative stress and inflammation, and results in downregulation of anti-apoptotic Bcl2 proteins and increased transcription of pro-apoptotic Bcl2 member, Bim(<xref ref-type="bibr" rid="R23">23</xref>). CHOP induces GADD34 which associates with protein phosphatase-1 and promotes dephosphorylation of P-eIF2α, a mechanism aiming to recover ER homeostasis by resuming protein synthesis but which could be harmful if protein overload were to continue. In addition, CHOP and ATF4 together induce TRB3 which inhibits the cytoprotective, insulin sensitizing Akt kinase(<xref ref-type="bibr" rid="R13">13</xref>, <xref ref-type="bibr" rid="R24">24</xref>).</p>
+    </sec>
+    <sec id="S4">
+      <title>ER stress response in liver diseases</title>
+      <p id="P8">Hepatocytes, like other secretory cells, are rich in ER. Due to their high protein synthesizing capacity it is easy to postulate that UPR/ER stress response plays an important role either in preventing or mediating pathological changes in various liver diseases. Despite the identification of upregulation or dysregulation of ER stress signaling mediators in various forms of liver injury and the rapid growth in the field of ER stress research in liver diseases, the exact contribution of ER stress response to many forms of hepatic injury remain to be fully established (<xref ref-type="bibr" rid="R25">25</xref>). Here we review and update some well established associations between ER stress response and liver disease (<xref ref-type="fig" rid="F2">FIG 2</xref>). Due to space limitations we will not discuss the putative role of ER stress response in α1-antitrypsin deficiency, cystic fibrosis, or hemochromatosis.</p>
+    </sec>
+    <sec id="S5">
+      <title>NASH/NAFLD</title>
+      <p id="P9">ER stress associated steatosis and steatohepatitis has been one of the most extensively studied consequences of ER stress response. The ER plays an important part in fatty acid synthesis and cholesterol metabolism. The relationship between ER stress and fatty liver is a bilateral one. Steatosis has been shown to promote ER stress; conversely ER stress response leads to steatosis (<xref ref-type="fig" rid="F3">FIG 3</xref>). Despite many uncertainties, current evidence strongly supports an important role for ER stress response in NAFLD.</p>
+      <p id="P10">Multiple mechanisms for ER stress induced steatosis have been proposed: (1) ER stress induces TRB3 via ATF4 and CHOP. TRB3 inhibits the activity of Akt, an insulin sensitizing kinase which mediates insulin signaling in hepatocytes. Interestingly TRB3 expression is increased in the liver of diabetic mice and knockdown of hepatic TRB3 expression leads to improved glucose tolerance (<xref ref-type="bibr" rid="R26">26</xref>, <xref ref-type="bibr" rid="R27">27</xref>). (2) ER stress response activates JNK mediated inhibition of IRS-1 leading to insulin resistance which can promote hepatic steatosis; insulin resistance due to TRB3 and JNK leads to hyperinsulinemia and increased hepatic lipogenesis;(3); (4) Phosphorylation of eIF2α results in induction of c/EBP proteins and increased expression of genes that regulate lipogenesis (PPARγ) (<xref ref-type="bibr" rid="R28">28</xref>); (5)When hepatocytes are stressed, PERK mediated shut down of protein synthesis can lead to decreased Insig-1 protein, a negative regulator of lipid synthesis which retains SREBP-SCAP/complex in the ER. Insig-1 protein has a very short half life and falls rapidly upon ER stress response induced translational arrest; the subsequent translocation of SREBPs to the Golgi leads to cleavage and enhanced lipogenesis (<xref ref-type="bibr" rid="R29">29</xref>, <xref ref-type="bibr" rid="R30">30</xref>); (6) PERK mediated global protein translational arrest along with increased ERAD mediated by IRE-1/JNK can result in decreased apoprotein B (apo B) levels promoting steatosis (<xref ref-type="bibr" rid="R31">31</xref>); (7) GRP78 may directly interact with SREBP so that displacement of GRP78 may allow SREBPs to translocate to the Golgi and undergo RIP(<xref ref-type="bibr" rid="R32">32</xref>). Thus a combination of enhanced lipogenesis via SREBP activation (including insulin resistance) and impaired VLDL secretion via decreased apo B contribute to ER stress induced fatty liver.</p>
+      <p id="P11">A variety of supportive evidence suggests that prolonged UPR/ER stress response leads to steatosis: SREBPs are a family of ER resident proteins which function as transcription factors in the control of fatty acid, triglyceride and cholesterol synthesis (<xref ref-type="bibr" rid="R33">33</xref>, <xref ref-type="bibr" rid="R34">34</xref>). They are synthesized as inactive precursors bound to the endoplasmic reticulum (ER) in a complex with SREBP cleavage activating protein (SCAP). Once released from Insig, SREBPs are escorted to the Golgi by SCAP where they undergo RIP and promote lipogenesis (<xref ref-type="bibr" rid="R35">35</xref>). In the presence of cholesterol and oxysterols, SCAP undergoes conformational changes causing it to bind Insig which prevents translocation of the complex to the Golgi (<xref ref-type="bibr" rid="R29">29</xref>). SREBP-1c knockout mice are protected against a high fat diet induced and alcohol induced steatosis (<xref ref-type="bibr" rid="R36">36</xref>), favoring the view that de novo lipogenesis is a key mechanism for fat accumulation in the liver (<xref ref-type="bibr" rid="R37">37</xref>, <xref ref-type="bibr" rid="R38">38</xref>). It appears that ER stress can override cholesterol inhibition of SREBP processing. It is thought that down regulation of protein synthesis in response to ER stress decreases Insig which in turn results in the cleavage and release of SREBPs and their subsequent activation (<xref ref-type="bibr" rid="R39">39</xref>). SREBP activation may also be indirect; insulin resistance induced by ER stress induces SREBP expression (<xref ref-type="bibr" rid="R40">40</xref>, <xref ref-type="bibr" rid="R41">41</xref>). A key point in this field is the significance of triglyceride (TG) accumulation. Mounting evidence supports the view that the formation of TGs may detoxify fatty acids (<xref ref-type="bibr" rid="R42">42</xref>–<xref ref-type="bibr" rid="R44">44</xref>). In this scenario triglyceride accumulation is a sign of increased lipogenesis which means that increased exposure to lipotoxic fatty acids may accompany steatosis. Thus the key to the pathogenetic importance of ER stress in NAFLD is the bidirectional interplay of ER stress and lipogenesis which promotes insulin resistance as well as lipotoxicity. GRP78 overexpression has been shown to inhibit insulin induced SREBP-1c activation in cultured primary hepatocytes (<xref ref-type="bibr" rid="R32">32</xref>). There is some evidence that the master regulator GRP78 (BIP) may play a role in retaining the SREBP-SCAP complex in the ER but this is not fully defined. GRP78 overexpression has been shown to inhibit ER stress response and SREBP activation in ob/ob mice (<xref ref-type="bibr" rid="R32">32</xref>). Induction of ER stress response by treatment with tunicamycin leads to alteration of SREBP expression and hepatic steatosis in Hep G2 cells(<xref ref-type="bibr" rid="R45">45</xref>), with some studies reporting activation and some downregulation of SREBP-1c depending on the severity and duration of ER stress response (<xref ref-type="bibr" rid="R45">45</xref>, <xref ref-type="bibr" rid="R46">46</xref>). Clearly Tunicamycin’s effects are extreme and probably do not reflect the effects of UPR/ER stress response on lipid metabolism in natural occurring liver diseases (<xref ref-type="bibr" rid="R47">47</xref>).IRE 1α has been implicated in liver steatosis via its downstream product XBP1. Independent of SREBPs, XBP1 regulates genes involved in fatty acid and triglyceride synthesis such as stearoyl-CoA desaturase 1(Scd-1) and acetyl CoA carboxylase-2 (Acc2). Selective deletion of XBP1 in the liver resulted in marked hypocholestrolemia and hypotriglyceredemia. These mice did not demonstrate hepatic steatosis when placed on a high carbohydrate diet (<xref ref-type="bibr" rid="R48">48</xref>). XBP +/− mice fed HFD for 3 weeks developed hyperinsulinemia, type 2 diabetes and insulin resistance. An increase in PERK phosphorylation was demonstrated as well as increased JNK activity (<xref ref-type="bibr" rid="R49">49</xref>). ER stress has been shown to cause insulin resistance. ER stress promotes JNK-dependent serine phosphorylation of IRS-1, which in turn inhibits insulin receptor signaling and leads to insulin resistance (<xref ref-type="bibr" rid="R49">49</xref>). Inhibition of the eIF2α arm of the UPR by dephosphorylation of eIF2α via GADD34 leads to improved steatosis and glucose tolerance in mice (<xref ref-type="bibr" rid="R28">28</xref>). Treatment with chemical chaperones (4-phenylbutyric acid and taurine-conjugated ursodeoxycholic acid) which presumably improve protein folding have been shown to decrease ER stress response, insulin resistance, improve glucose tolerance and resolve fatty liver in ob/ob leptin deficient mice models (<xref ref-type="bibr" rid="R50">50</xref>). The over expression of protective ER chaperones such as ORP 150 in the liver of db/db leptin receptor deficient mice improved insulin sensing and glucose tolerance by reducing ER stress response (<xref ref-type="bibr" rid="R51">51</xref>). ATF6 knockout has also been shown to result in increased steatosis upon induction of ER stress via tunicamycin. ATF6α null mice exhibit no particular phenotype; however, when challenged with tunicamycin they express prolonged CHOP activation, increased levels of intracellular triglycerides, and increased fat droplets (<xref ref-type="bibr" rid="R52">52</xref>). Thus, overall evidence that ER stress response can promote lipogenesis and fatty liver is robust and solidly supported by selective UPR gene deletions which augment ER stress response and subsequently NAFLD, when animals are fed a high fat diet, and by overexpression of UPR proteins or chemical chaperones which dampen ER stress response and steatosis.</p>
+      <p id="P12">Although the evidence summarized above provides strong support for ER stress response induced steatosis the converse is also supported by a variety of evidence, namely that steatogenic conditions promote ER stress, setting up a vicious cycle. Male mice fed a HFD for 16 weeks exhibited ER stress markers (PERK, eIF2, JNK) compared to regular fed mice. These mice exhibited insulin resistance and type 2 diabetes (<xref ref-type="bibr" rid="R49">49</xref>). An increase in ER stress response markers, eIF2α, PERK and GRP78 has been demonstrated in ob/ob mice as well (<xref ref-type="bibr" rid="R49">49</xref>). Obesity and a high fat diet have been shown to induce ER stress response with subsequent activation of JNK in mice (<xref ref-type="bibr" rid="R49">49</xref>, <xref ref-type="bibr" rid="R53">53</xref>). In rats fed high sucrose diet, saturated fatty acids lead to elevation in ER stress markers GRP78, CHOP and caspase 3. Many of these effects have been linked to JNK activation (<xref ref-type="bibr" rid="R54">54</xref>). Boden et al have demonstrated an increase in ER stress response markers such as calnexin and JNK in the adipose tissue of obese humans (<xref ref-type="bibr" rid="R55">55</xref>). Gregor et al have shown that weight loss following gastric bypass surgery decreased GRP78, sXBP-1, P-eIF2α and P-JNK in adipose tissue and GRP78 and P-eIF2α in the liver(<xref ref-type="bibr" rid="R56">56</xref>). Oral chromium administration (which potentiates insulin and ameliorates lipid transport through ABCA1) was shown to reduce ER stress response markers, PERK, IRE1 and eIF2 and subsequently improve glucose tolerance and decrease liver lipid accumulation (<xref ref-type="bibr" rid="R57">57</xref>, <xref ref-type="bibr" rid="R58">58</xref>). Apo B mediated secretion of lipids (VLDL) could protect the liver from lipid accumulation and steatosis. Both in vitro and in vivo exposure to fatty acids decreased apo B levels. Intravenous infusion of oleic acid in mice promoted ER stress response and resulted in decreased apo B levels (<xref ref-type="bibr" rid="R31">31</xref>). Transgenic mice overexpressing apo B exhibit markers of ER stress. ER stress response induced by apoB overload impeded insulin action through JNK-mediated phosphorylation of IRS-1. These mice demonstrated much lower Akt and GSK-3α/β (Ser 21/9) phosphorylation levels. Furthermore apoB knockdown reduced ER stress response and increased Akt and GSK-3 phosphorylation (<xref ref-type="bibr" rid="R59">59</xref>). Thus either overload of apo B (by accumulation in the ER) or degradation of apoB (leading to inability to export lipids from the liver via VLDL synthesis) may contribute to high fat diet induced ER stress.</p>
+    </sec>
+    <sec id="S6">
+      <title>Alcoholic liver disease and hyperhomocysteinemia</title>
+      <p id="P13">Intragastric alcohol fed mice exhibit severe steatosis, apoptosis and necroinflammation as well as upregulation of UPR genes and ER stress response (<xref ref-type="bibr" rid="R60">60</xref>–<xref ref-type="bibr" rid="R62">62</xref>). Increased expression and activation of SREBP proteins 1c and 2 has been detected in alcohol fed mice further supporting the relation between alcohol, steatosis and ER stress (<xref ref-type="bibr" rid="R36">36</xref>, <xref ref-type="bibr" rid="R63">63</xref>, <xref ref-type="bibr" rid="R64">64</xref>). CHOP knockout mice fed ethanol exhibited no change in ER stress markers or steatosis but marked inhibition of apoptosis (<xref ref-type="bibr" rid="R62">62</xref>). In micropigs fed alcohol, liver steatosis was shown to be accompanied by increased transcription of GRP78 and SREBP and activated caspase 12, all markers of response to ER stress (<xref ref-type="bibr" rid="R65">65</xref>). Cirrhotic rat livers exhibit markers of ER stress response after challenge with lipopolysacharide, which has been implicated in alcohol induced liver injury (<xref ref-type="bibr" rid="R66">66</xref>).</p>
+      <p id="P14">Homocysteine is an amino acid involved in the methionine metabolic pathway. Hyperhomocysteinemia (HHcy) seen in alcoholic liver disease plays an important role in the induction of hepatic steatosis and ER stress response through interference with protein folding (<xref ref-type="bibr" rid="R67">67</xref>, <xref ref-type="bibr" rid="R68">68</xref>). Potential mechanisms include generation of Hcy thiolactone via the editing function of t-RNA synthase resulting in the incorporation of Hcy into the lysine amino groups of nascent proteins causing malfolding. Hcy may also interfere with disulfide bond formation. Homocysteine can be remethylated and converted to methionine via methionine synthase (MS) or betaine-homocysteine methyl transferase (BHMT) where betaine is the methyl donor (<xref ref-type="bibr" rid="R60">60</xref>). In mice and rats fed alcohol MS activity decreases resulting in HHcy (<xref ref-type="bibr" rid="R69">69</xref>). Thus supplementation with betaine promotes the remethylation of Hcy through the BMHT pathway and decreases Hcy levels. The protective role of betaine in HHcy induced ER stress was demonstrated in experiments on HepG2 cells where overexpression of BHMT inhibited Hcy mediated ER stress response and steatosis (<xref ref-type="bibr" rid="R46">46</xref>). In the murine intragastric alcohol feeding model, betaine supplementation prevents HHcy, ER stress and steatohepatitis (<xref ref-type="bibr" rid="R63">63</xref>). In addition transgenic mice expressing human BHMT in extrahepatic tissues are resistant to alcohol induced HHcy, hepatic ER stress and steatohepatitis, indicating that lowering Hcy exposure to the liver, independent of any effect of exogenous betaine, is key in preventing liver injury (<xref ref-type="bibr" rid="R64">64</xref>).</p>
+      <p id="P15">Interestingly mice and rats exhibit differences with regards to homocysteine metabolism. Rats fed alcohol or a high methionine low folate (HMLF) diet have been shown to increase the expression BHMT whereas mice do not. When both species were fed ethanol intragastrically, mice exhibited an increase in GRP78 and IRE1, ER stress response markers, but rats did not. Thus, up-regulation of BHMT in rats helps in alleviating ER stress resulting from ethanol or HMLF diet induced HHcy, likely by increased conversion of Hcy to Methionine (<xref ref-type="bibr" rid="R70">70</xref>). Homocysteine can also be converted to SAH by reverse catalysis of SAH hydrolase or it can be converted to cystathionine by cysthathionine beta synthase (CBS). HHcy seen in genetic disorders such as CBS or MTHFR deficiencies also results in ER stress response, up regulation of SREBPs and steatosis (<xref ref-type="bibr" rid="R71">71</xref>, <xref ref-type="bibr" rid="R72">72</xref>). Heterozygous CBS deficient mice are more susceptible to ethanol induced steatohepatitis and ER stress (<xref ref-type="bibr" rid="R73">73</xref>). Recent evidence suggests that homocysteine induced ER stress may be related to an epigenetic effect on ER stress response genes mediated by decreased SAM/SAH due to the rapid conversion of homocysteine to SAH in the liver (<xref ref-type="bibr" rid="R73">73</xref>). Aside from HHcy, decreased SAM/SAH ratio could be a response to inhibition of MAT activity as a consequence of ethanol induced ROS or RNS (<xref ref-type="bibr" rid="R74">74</xref>–<xref ref-type="bibr" rid="R76">76</xref>). Similarly, the ER stress response plays an important role in MCD diet induced steatohepatitis through the effect on SAM/SAH (<xref ref-type="bibr" rid="R77">77</xref>).</p>
+      <p id="P16">Thus, ER stress response and its consequent effects on steatohepatitis in both alcohol and MCD diet models may be due to altered homocysteine metabolism with the predominant effect of increased hepatic exposure to homocysteine mediated by decreased SAM/SAH. The role of homocysteine induced malfolding is less clear.</p>
+    </sec>
+    <sec id="S7">
+      <title>Viral hepatitis</title>
+      <p id="P17">HCV RNA replication involves many intracellular organelles including the ER (<xref ref-type="bibr" rid="R78">78</xref>). The HCV genome encodes about 3000 amino acids which contribute to at least 10 polypeptides including structural and non structural proteins. Hepatitis C virus relies on the host’s transcription machinery to replicate. Rapid viral replication and accumulation of viral protein in the ER could trigger the UPR. Tardif et al have demonstrated that in cell lines infected with HCV virus and expressing HCV virus subreplicon, despite XBP1 slicing, the transcriptional induction of EDEM, a protein degradation pathway downstream of sXBP1 is inhibited. Consequently viral proteins are protected from degradation and accumulate in cells expressing the HCV replicon (<xref ref-type="bibr" rid="R79">79</xref>). Certain non-structural proteins in the HCV proteome have been recognized to induce the UPR. For example HCV NS4B could induce ATF6 and IRE1, to favor the HCV subreplicon and HCV viral replication. HCV NS4B activated the IRE1 pathway, resulting in XBP1 splicing. Interestingly again EDEM was shown to be inhibited; these results suggest that the NS4B protein for hepatitis C virus helps the virus manipulate UPR to benefit HCV replication (<xref ref-type="bibr" rid="R80">80</xref>). HCV and HBV protein replication in cells has been shown to induce ER stress response and release of calcium from the ER which activates CREB (cyclic AMP response protein) likely through calcium/calmodulin-dependent protein kinase. CREB induces transcription of CRE element by binding the promoter of protein phosphatase 2Ac (PP2Ac), an important phosphatase involved in cell cycle regulation, carcinogenesis and apoptosis (<xref ref-type="bibr" rid="R81">81</xref>). HCV core constructs trigger hyperexpression of GRP78/BiP, GRP 94, calreticulin and ER calcium ATPase, inducing ER stress response. This results in CHOP/GADD153 overexpression and Bax translocation to mitochondria and subsequent apoptosis (<xref ref-type="bibr" rid="R82">82</xref>). Recent in vivo studies by electron microscopy and Western blot analysis on human liver biopsy tissue in individuals infected with HCV support the existence of hepatic ER stress by showing activation of the three ER stress sensors ATF-6, IRE1, and PERK in chronic HCV infection (<xref ref-type="bibr" rid="R83">83</xref>). Real-time RT-PCR showed no significant induction of UPR-responsive genes. In contrast, genes involved in the control of diffuse processes such as liver proliferation, inflammation, and apoptosis were significantly induced. In conclusion, livers from patients with untreated chronic hepatitis C exhibit in vivo hepatocyte ER stress response and activation of the three UPR sensors without apparent induction of UPR-responsive genes. This lack of gene induction may be explained by the inhibiting action of HCV (as suggested by in vitro studies) (<xref ref-type="bibr" rid="R83">83</xref>). Sir et al have demonstrated that HCV induces an incomplete autophagic response via activation of the UPR cascade. HCV transfection of Huh7.5 hepatocytes with HCV virus resulted in phosphorylation of PERK, eIF2, splicing of xbp1 RNA and increased expression of ATF4, GRP78 and CHOP. Inhibition of PERK, IRE1 and ATF6 via siRNA reduced HCV RNA levels by 80–90% indicating that ER stress response promotes viral replication. HCV induces the accumulation of autophagosomes by activating the UPR (<xref ref-type="bibr" rid="R84">84</xref>). Recent evidence suggests that HCV evades innate immunity by UPR induced autophagy and repression of PAMP mediated innate immune response (<xref ref-type="bibr" rid="R85">85</xref>). Hepatitis B has also been shown to activate the UPR, via the HBx protein to help promote HBV replication in liver cells and possibly contribute to the development of HCC. The HBx protein induces UPR by activation of IRE1-XBP1 and the ATF6 pathways (<xref ref-type="bibr" rid="R86">86</xref>). Other viruses such as CMV have also been shown to induce UPR signaling through the main three branches PERK, ATF6, and IRE-1, to favor viral replication (<xref ref-type="bibr" rid="R87">87</xref>). Thus a complex picture emerges in viral infection in which viruses use the UPR to favor replication. It is however conceivable that very high levels of replication, particularly in immunocompromised settings, may lead to sufficient ER stress to induce apoptosis.</p>
+    </sec>
+    <sec id="S8">
+      <title>Drug induced liver injury</title>
+      <p id="P18">Arylating quinones have been shown to induce ER stress. Phosphorylation of PERK and eIF2α was observed in cells treated with quinones, as well as induction of ATF4 and CHOP. Due to the concomitant generation of ROS with quinone toxicity and in an effort to differentiate the mode of toxicity, arylating quinones were compared to non-arylating quinones. Greater toxicity was associated with arylating congeners. Both types of quinones participate in redox cycling but only arylating quinones can form Michael adducts with ER proteins. Prior treatment with NAC resulted in detoxification further supporting the importance of Michael adduct formation in quinone toxicity. Disulfide shuffling during protein folding in the ER in the presence of these compounds provides an opportunity for Michael adduct formation. Disruption of disulfide bond formation and subsequent activation of the ER stress response pathways due to accumulation of misfolded proteins ensues (<xref ref-type="bibr" rid="R88">88</xref>).</p>
+      <p id="P19">Nagy et al have recently published findings demonstrating that acetaminophen (APAP) toxicity results in very rapid phosphorylation of eIF2α and JNK and induction of CHOP (<xref ref-type="bibr" rid="R89">89</xref>). APAP decreased glutathione stores in the ER. In vivo experiments by the same group have shown that the redox state of thiols of ER resident oxidoreductases ERp72, PDI, was shifted towards the oxidized form and ER stress-responsive transcription factor ATF6 was activated by APAP administration at sub-lethal doses. Transcriptional activation and elevated expression of GADD153/CHOP, an ER stress-responsive proapoptotic transcription factor along with transient activation of the ER-resident caspase-12 was shown. Treatment with buthionine-sulfoximine (inhibitor of GSH synthesis) was unable to mimic the effects by APAP indicating that glutathione depletion itself is insufficient to provoke apoptosis and that intraluminal redox imbalance of the ER and ER participation is necessary for cell death (<xref ref-type="bibr" rid="R90">90</xref>). Aside from redox perturbations, it is also conceivable that covalent binding of NAPQI to ER chaperones or nascent proteins might impair folding and induce stress (<xref ref-type="bibr" rid="R88">88</xref>, <xref ref-type="bibr" rid="R91">91</xref>). APAP induced ER stress has also been studied in renal tubular cells where Lorz et al detected induction of endoplasmic reticulum (ER) stress, characterized by GADD153/CHOP upregulation and translocation to the nucleus, as well as caspase-12 cleavage (<xref ref-type="bibr" rid="R92">92</xref>). Although robust ER stress response occurs rapidly in APAP toxicity, its role in necrosis is unproved but intriguing to consider, especially in the early activation of JNK, a key factor in APAP induced necrosis, and calcium mediated MPT.</p>
+      <p id="P20">Other drugs such as methapyrilene and HIV protease inhibitors (PI) have been implicated in causing ER stress (<xref ref-type="bibr" rid="R93">93</xref>, <xref ref-type="bibr" rid="R94">94</xref>). The protease inhibitors have been shown to increase the SREBP levels and activate UPR. Different PIs have been shown to have various effects on the UPR. Both atazanavir and ritonavir activated the UPR, induced apoptosis, and increased nuclear SREBP levels, but amprenavir had no significant effect at the same concentrations (<xref ref-type="bibr" rid="R95">95</xref>, <xref ref-type="bibr" rid="R96">96</xref>). The mechanism for PI induced ER stress is not known but nonspecific inhibition of proteasomal degradation is a leading candidate as proteasome inhibitors, such as bortezomib (PS-341) induce ER stress, which may be the mechanism of bortezomib induced hepatotoxicity (<xref ref-type="bibr" rid="R97">97</xref>–<xref ref-type="bibr" rid="R99">99</xref>). The contribution of PI induced ER stress to steatosis and drug hepatitis needs further clarification but the evidence is highly suggestive.</p>
+    </sec>
+    <sec id="S9">
+      <title>Ischemia-reperfusion injury</title>
+      <p id="P21">Ischemia reperfusion injury (IRI) causes liver damage by a process that involves oxidative stress and inflammation via mitochondrial pathways, NF-kB activation, ATP depletion and calcium release from the ER (<xref ref-type="bibr" rid="R100">100</xref>). BI-1 (Bax inhibitor 1) is an ER protein that suppresses cell death and helps prevent IRI. Knockout mice deficient in BI-1 exhibit increased histological and biochemical liver injury when subjected to transient blood flow occlusion. In addition, more UPR activation via IRE1 and ATF6 is seen in the knockout mice models indicating that BI-1 plays an important role in suppressing ER stress mediated injury during ischemia reperfusion (<xref ref-type="bibr" rid="R101">101</xref>). Chemical chaperones such as 4-phenylbutyrate, have also been shown to be protective against ER stress and damage in IRI (<xref ref-type="bibr" rid="R102">102</xref>).</p>
+    </sec>
+    <sec id="S10">
+      <title>Cholestatic liver disease</title>
+      <p id="P22">Liver injury during cholestasis has been attributed to the accumulation of toxic bile salts within the liver. These have been shown to promote UPR and activate genes responsible for ER stress signal activation such as GRP78, CHOP and mitochondrial oxidative stress leading to NF-KB activation (<xref ref-type="bibr" rid="R103">103</xref>). Treatment of murine hepatocytes with glycochenodeoxycholic acid (a toxic bile acid) resulted in ER stress induced increased cytosolic calcium (leading to calpain activation) and caspase 12 activation (<xref ref-type="bibr" rid="R104">104</xref>, <xref ref-type="bibr" rid="R105">105</xref>). Tamaki et al investigated the role of CHOP in cholestatic liver disease, by comparing liver injury in wild type (WT) and CHOP deficient mice after bile duct ligation and induction of cholestasis. In WT livers, BDL induced increased expression of CHOP and Bax, a downstream target in the CHOP-mediated ER stress response pathway. Liver fibrosis as well as apoptotic and necrotic hepatocyte death was attenuated in CHOP-knockout mice pointing towards an essential role for CHOP in cholestatic liver injury (<xref ref-type="bibr" rid="R106">106</xref>). Foxa2 regulates bile acid transporter expression. Foxa2-deficient mice are strikingly sensitive to a diet containing cholic acid, which results in toxic accumulation of hepatic bile salts, ER stress response, and liver injury suggesting that reduced Foxa2 abundance could exacerbate cholestatic liver injury and that ER stress response is a contributing factor in response to bile acid retention as a consequence of decreased transporters (<xref ref-type="bibr" rid="R107">107</xref>).</p>
+    </sec>
+    <sec sec-type="conclusions" id="S11">
+      <title>Conclusion</title>
+      <p id="P23">ER stress response accompanies nearly all forms of acute and chronic liver disease and robust support for a contributing, as opposed to a parallel role, is seen in the NASH, ASH, IRI and cholestatic models. Less conclusive evidence of the importance of ER stress exists in viral and drug hepatitis, although it is likely to be so. It is important to recognize that the ER is in a pivotal position to both respond to and cause dysfunction in other cellular loci such as mitochondria, cytoplasm and nucleus. Thus it is common to see ER stress response accompanied by ATP depletion, oxidative stress, mitochondrial dysfunction and lipid accumulation (<xref ref-type="fig" rid="F4">FIG 4</xref>). It is important to appreciate that cells such as hepatocytes exhibit the simultaneous appearance of numerous different stress responses including ER stress, mitochondrial, MAP Kinases, etc in disease and there is a complex interplay among them in disease pathogenesis. The UPR/ER stress response is certainly a contributor to both dampening and worsening the outcome depending the ability of the ER to deal with disease promoting factors such as ROS, redox perturbations, client proteins (and their modifications), toxic chemicals/drugs, viruses and lipids. There is a complex cause versus effect interplay between all these pathophysiologic responses and ER stress response. We believe a key to interpreting the commonly observed association of liver diseases and ER stress response is the recognition that there is a vicious cycle between ER stress and other adverse phenomena which are caused by ER stress response. Thus it is perhaps the nature of such a vicious cycle that is the key pathophysiologic concept and perhaps it is less important to resolve the difficult question as to whether ER stress, is so to speak “the chicken or the egg?” From this standpoint it is hoped that therapeutics aimed at blunting ER stress will interrupt the cycle.</p>
+    </sec>
+  </body>
+  <back>
+    <ack id="S12">
+      <title>Acknowledgements</title>
+      <p id="P24">This work was supported by NIH grants RO1 DK067215 (NK), R01 AA018846 (NK, CJ), R01 AA014428 (CJ), and R01 AA018612 (CJ) and the USC Research Center for Liver Disease (P30 DK48522) and the Southern California Research Center for Alcoholic Liver and Pancreas Disease (P50 AA11999).</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="R1">
+        <label>1</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kozutsumi</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Segal</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Normington</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Gething</surname>
+              <given-names>M-J</given-names>
+            </name>
+            <name>
+              <surname>Sambrook</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>The presence of malfolded proteins in the endoplasmic reticulum signals the induction of glucose-regulated proteins</article-title>
+          <source>Nature</source>
+          <year>1988</year>
+          <volume>332</volume>
+          <fpage>462</fpage>
+          <lpage>464</lpage>
+          <pub-id pub-id-type="pmid">3352747</pub-id>
+        </citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kaufman</surname>
+              <given-names>RJ</given-names>
+            </name>
+          </person-group>
+          <article-title>From acute ER stress to physiological roles of the Unfolded Protein Response</article-title>
+          <source>Cell Death Differ</source>
+          <year>2006</year>
+          <volume>13</volume>
+          <fpage>374</fpage>
+          <lpage>384</lpage>
+          <pub-id pub-id-type="pmid">16397578</pub-id>
+        </citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ron</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Walter</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Signal integration in the endoplasmic reticulum unfolded protein response</article-title>
+          <source>Nat Rev Mol Cell Biol</source>
+          <year>2007</year>
+          <volume>8</volume>
+          <fpage>519</fpage>
+          <lpage>529</lpage>
+          <pub-id pub-id-type="pmid">17565364</pub-id>
+        </citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bertolotti</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Hendershot</surname>
+              <given-names>LM</given-names>
+            </name>
+            <name>
+              <surname>Harding</surname>
+              <given-names>HP</given-names>
+            </name>
+            <name>
+              <surname>Ron</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Dynamic interaction of BiP and ER stress transducers in the unfolded-protein response</article-title>
+          <source>Nat Cell Biol</source>
+          <year>2000</year>
+          <volume>2</volume>
+          <fpage>326</fpage>
+          <lpage>332</lpage>
+          <pub-id pub-id-type="pmid">10854322</pub-id>
+        </citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shen</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Hendershot</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Prywes</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>ER Stress Regulation of ATF6 Localization by Dissociation of BiP/GRP78 Binding and Unmasking of Golgi Localization Signals</article-title>
+          <source>Developmental Cell</source>
+          <year>2002</year>
+          <volume>3</volume>
+          <fpage>99</fpage>
+          <lpage>111</lpage>
+          <pub-id pub-id-type="pmid">12110171</pub-id>
+        </citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shi</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Vattem</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Sood</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>An</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Liang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Stramm</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Wek</surname>
+              <given-names>RC</given-names>
+            </name>
+          </person-group>
+          <article-title>Identification and Characterization of Pancreatic Eukaryotic Initiation Factor 2 alpha -Subunit Kinase, PEK, Involved in Translational Control</article-title>
+          <source>Mol. Cell. Biol</source>
+          <year>1998</year>
+          <volume>18</volume>
+          <fpage>7499</fpage>
+          <lpage>7509</lpage>
+          <pub-id pub-id-type="pmid">9819435</pub-id>
+        </citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>DuRose</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Scheuner</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Kaufman</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Rothblum</surname>
+              <given-names>LI</given-names>
+            </name>
+            <name>
+              <surname>Niwa</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Phosphorylation of Eukaryotic Translation Initiation Factor 2{alpha} Coordinates rRNA Transcription and Translation Inhibition during Endoplasmic Reticulum Stress</article-title>
+          <source>Mol. Cell. Biol</source>
+          <year>2009</year>
+          <volume>29</volume>
+          <fpage>4295</fpage>
+          <lpage>4307</lpage>
+          <pub-id pub-id-type="pmid">19470760</pub-id>
+        </citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lu</surname>
+              <given-names>PD</given-names>
+            </name>
+            <name>
+              <surname>Harding</surname>
+              <given-names>HP</given-names>
+            </name>
+            <name>
+              <surname>Ron</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Translation reinitiation at alternative open reading frames regulates gene expression in an integrated stress response</article-title>
+          <source>J Cell Biol</source>
+          <year>2004</year>
+          <volume>167</volume>
+          <fpage>27</fpage>
+          <lpage>33</lpage>
+          <pub-id pub-id-type="pmid">15479734</pub-id>
+        </citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kaplowitz</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Ji</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Unfolding new mechanisms of alcoholic liver disease in the endoplasmic reticulum</article-title>
+          <source>Blackwell Publishing Asia</source>
+          <year>2006</year>
+          <fpage>S7</fpage>
+          <lpage>S9</lpage>
+        </citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lee</surname>
+              <given-names>A-H</given-names>
+            </name>
+            <name>
+              <surname>Iwakoshi</surname>
+              <given-names>NN</given-names>
+            </name>
+            <name>
+              <surname>Glimcher</surname>
+              <given-names>LH</given-names>
+            </name>
+          </person-group>
+          <article-title>XBP-1 Regulates a Subset of Endoplasmic Reticulum Resident Chaperone Genes in the Unfolded Protein Response</article-title>
+          <source>Mol. Cell. Biol</source>
+          <year>2003</year>
+          <volume>23</volume>
+          <fpage>7448</fpage>
+          <lpage>7459</lpage>
+          <pub-id pub-id-type="pmid">14559994</pub-id>
+        </citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hollien</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Weissman</surname>
+              <given-names>JS</given-names>
+            </name>
+          </person-group>
+          <article-title>Decay of Endoplasmic Reticulum-Localized mRNAs During the Unfolded Protein Response</article-title>
+          <source>Science</source>
+          <year>2006</year>
+          <volume>313</volume>
+          <fpage>104</fpage>
+          <lpage>107</lpage>
+          <pub-id pub-id-type="pmid">16825573</pub-id>
+        </citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rao</surname>
+              <given-names>RV</given-names>
+            </name>
+            <name>
+              <surname>Ellerby</surname>
+              <given-names>HM</given-names>
+            </name>
+            <name>
+              <surname>Bredesen</surname>
+              <given-names>DE</given-names>
+            </name>
+          </person-group>
+          <article-title>Coupling endoplasmic reticulum stress to the cell death program</article-title>
+          <source>Cell Death Differ</source>
+          <year>2004</year>
+          <volume>11</volume>
+          <fpage>372</fpage>
+          <lpage>380</lpage>
+          <pub-id pub-id-type="pmid">14765132</pub-id>
+        </citation>
+      </ref>
+      <ref id="R13">
+        <label>13</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ohoka</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Yoshii</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Hattori</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Onozaki</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Hayashi</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title>TRB3, a novel ER stress-inducible gene, is induced via ATF4-CHOP pathway and is involved in cell death</article-title>
+          <source>EMBO J</source>
+          <year>2005</year>
+          <volume>24</volume>
+          <fpage>1243</fpage>
+          <lpage>1255</lpage>
+          <pub-id pub-id-type="pmid">15775988</pub-id>
+        </citation>
+      </ref>
+      <ref id="R14">
+        <label>14</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Marciniak</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <name>
+              <surname>Yun</surname>
+              <given-names>CY</given-names>
+            </name>
+            <name>
+              <surname>Oyadomari</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Novoa</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Jungreis</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Nagata</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>CHOP induces death by promoting protein synthesis and oxidation in the stressed endoplasmic reticulum</article-title>
+          <source>Genes Dev</source>
+          <year>2004</year>
+          <volume>18</volume>
+          <fpage>3066</fpage>
+          <lpage>3077</lpage>
+          <pub-id pub-id-type="pmid">15601821</pub-id>
+        </citation>
+      </ref>
+      <ref id="R15">
+        <label>15</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Deng</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Lu</surname>
+              <given-names>PD</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Scheuner</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Kaufman</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Sonenberg</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Harding</surname>
+              <given-names>HP</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Translational repression mediates activation of nuclear factor kappa B by phosphorylated translation initiation factor 2</article-title>
+          <source>Mol Cell Biol</source>
+          <year>2004</year>
+          <volume>24</volume>
+          <fpage>10161</fpage>
+          <lpage>10168</lpage>
+          <pub-id pub-id-type="pmid">15542827</pub-id>
+        </citation>
+      </ref>
+      <ref id="R16">
+        <label>16</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kaneko</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Niinuma</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Nomura</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <article-title>Activation Signal of Nuclear Factor-&amp;kappa;B in Response to Endoplasmic Reticulum Stress is Transduced via IRE1 and Tumor Necrosis Factor Receptor-Associated Factor 2</article-title>
+          <source>Biological &amp; Pharmaceutical Bulletin</source>
+          <year>2003</year>
+          <volume>26</volume>
+          <fpage>931</fpage>
+          <lpage>935</lpage>
+          <pub-id pub-id-type="pmid">12843613</pub-id>
+        </citation>
+      </ref>
+      <ref id="R17">
+        <label>17</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Urano</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Bertolotti</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Chung</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Harding</surname>
+              <given-names>HP</given-names>
+            </name>
+            <name>
+              <surname>Ron</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Coupling of stress in the ER to activation of JNK protein kinases by transmembrane protein kinase IRE1</article-title>
+          <source>Science</source>
+          <year>2000</year>
+          <volume>287</volume>
+          <fpage>664</fpage>
+          <lpage>666</lpage>
+          <pub-id pub-id-type="pmid">10650002</pub-id>
+        </citation>
+      </ref>
+      <ref id="R18">
+        <label>18</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hetz</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Bernasconi</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Fisher</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>A-H</given-names>
+            </name>
+            <name>
+              <surname>Bassik</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>Antonsson</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Brandt</surname>
+              <given-names>GS</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Proapoptotic BAX and BAK Modulate the Unfolded Protein Response by a Direct Interaction with IRE1{alpha}</article-title>
+          <source>Science</source>
+          <year>2006</year>
+          <volume>312</volume>
+          <fpage>572</fpage>
+          <lpage>576</lpage>
+          <pub-id pub-id-type="pmid">16645094</pub-id>
+        </citation>
+      </ref>
+      <ref id="R19">
+        <label>19</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kaplowitz</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Than</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name>
+              <surname>Shinohara</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ji</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Endoplasmic Reticulum Stress and Liver Injury</article-title>
+          <source>Semin Liver Dis</source>
+          <year>2007</year>
+          <volume>27</volume>
+          <fpage>367</fpage>
+          <lpage>377</lpage>
+          <pub-id pub-id-type="pmid">17979073</pub-id>
+        </citation>
+      </ref>
+      <ref id="R20">
+        <label>20</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sanges</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Marigo</surname>
+              <given-names>V</given-names>
+            </name>
+          </person-group>
+          <article-title>Cross-talk between two apoptotic pathways activated by endoplasmic reticulum stress: differential contribution of caspase-12 and AIF</article-title>
+          <source>Apoptosis</source>
+          <year>2006</year>
+          <volume>11</volume>
+          <fpage>1629</fpage>
+          <lpage>1641</lpage>
+          <pub-id pub-id-type="pmid">16820963</pub-id>
+        </citation>
+      </ref>
+      <ref id="R21">
+        <label>21</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Deniaud</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Sharaf el dein</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Maillier</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Poncet</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Kroemer</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Lemaire</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Brenner</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Endoplasmic reticulum stress induces calcium-dependent permeability transition, mitochondrial outer membrane permeabilization and apoptosis</article-title>
+          <source>Oncogene</source>
+          <year>2008</year>
+          <volume>27</volume>
+          <fpage>285</fpage>
+          <lpage>299</lpage>
+          <pub-id pub-id-type="pmid">17700538</pub-id>
+        </citation>
+      </ref>
+      <ref id="R22">
+        <label>22</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Giorgi</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>De Stefani</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Bononi</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Rizzuto</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Pinton</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Structural and functional link between the mitochondrial network and the endoplasmic reticulum</article-title>
+          <source>Int J Biochem Cell Biol</source>
+          <year>2009</year>
+          <volume>41</volume>
+          <fpage>1817</fpage>
+          <lpage>1827</lpage>
+          <pub-id pub-id-type="pmid">19389485</pub-id>
+        </citation>
+      </ref>
+      <ref id="R23">
+        <label>23</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Puthalakath</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>O'Reilly</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Gunn</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Kelly</surname>
+              <given-names>PN</given-names>
+            </name>
+            <name>
+              <surname>Huntington</surname>
+              <given-names>ND</given-names>
+            </name>
+            <name>
+              <surname>Hughes</surname>
+              <given-names>PD</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>ER stress triggers apoptosis by activating BH3-only protein Bim</article-title>
+          <source>Cell</source>
+          <year>2007</year>
+          <volume>129</volume>
+          <fpage>1337</fpage>
+          <lpage>1349</lpage>
+          <pub-id pub-id-type="pmid">17604722</pub-id>
+        </citation>
+      </ref>
+      <ref id="R24">
+        <label>24</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Du</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Ding</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Insulin regulates TRB3 and other stress-responsive gene expression through induction of C/EBPbeta</article-title>
+          <source>Mol Endocrinol</source>
+          <year>2009</year>
+          <volume>23</volume>
+          <fpage>475</fpage>
+          <lpage>485</lpage>
+          <pub-id pub-id-type="pmid">19164449</pub-id>
+        </citation>
+      </ref>
+      <ref id="R25">
+        <label>25</label>
+        <citation citation-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ji</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Kaplowitz</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>ER stress signaling in hepatic injury</article-title>
+          <source>Jean Francois Dufour MP-AC, MD, Ph.D., ed. <italic>Signaling Pathways in Liver Diseases</italic></source>
+          <year>2010</year>
+          <edition>2nd ed.</edition>
+          <publisher-loc>Heidelberg</publisher-loc>
+          <publisher-name>Springer-Verlag GmbH &amp; Co.</publisher-name>
+          <fpage>287</fpage>
+          <lpage>304</lpage>
+        </citation>
+      </ref>
+      <ref id="R26">
+        <label>26</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Du</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Herzig</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kulkarni</surname>
+              <given-names>RN</given-names>
+            </name>
+            <name>
+              <surname>Montminy</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>TRB3: a tribbles homolog that inhibits Akt/PKB activation by insulin in liver</article-title>
+          <source>Science</source>
+          <year>2003</year>
+          <volume>300</volume>
+          <fpage>1574</fpage>
+          <lpage>1577</lpage>
+          <pub-id pub-id-type="pmid">12791994</pub-id>
+        </citation>
+      </ref>
+      <ref id="R27">
+        <label>27</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Koo</surname>
+              <given-names>SH</given-names>
+            </name>
+            <name>
+              <surname>Satoh</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Herzig</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>CH</given-names>
+            </name>
+            <name>
+              <surname>Hedrick</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kulkarni</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Evans</surname>
+              <given-names>RM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>PGC-1 promotes insulin resistance in liver through PPAR-alpha-dependent induction of TRB-3</article-title>
+          <source>Nat Med</source>
+          <year>2004</year>
+          <volume>10</volume>
+          <fpage>530</fpage>
+          <lpage>534</lpage>
+          <pub-id pub-id-type="pmid">15107844</pub-id>
+        </citation>
+      </ref>
+      <ref id="R28">
+        <label>28</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Oyadomari</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Harding</surname>
+              <given-names>HP</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Oyadomari</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ron</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Dephosphorylation of translation initiation factor 2alpha enhances glucose tolerance and attenuates hepatosteatosis in mice</article-title>
+          <source>Cell Metab</source>
+          <year>2008</year>
+          <volume>7</volume>
+          <fpage>520</fpage>
+          <lpage>532</lpage>
+          <pub-id pub-id-type="pmid">18522833</pub-id>
+        </citation>
+      </ref>
+      <ref id="R29">
+        <label>29</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sun</surname>
+              <given-names>LP</given-names>
+            </name>
+            <name>
+              <surname>Seemann</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Goldstein</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>MS</given-names>
+            </name>
+          </person-group>
+          <article-title>Sterol-regulated transport of SREBPs from endoplasmic reticulum to Golgi: Insig renders sorting signal in Scap inaccessible to COPII proteins</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>2007</year>
+          <volume>104</volume>
+          <fpage>6519</fpage>
+          <lpage>6526</lpage>
+          <pub-id pub-id-type="pmid">17428919</pub-id>
+        </citation>
+      </ref>
+      <ref id="R30">
+        <label>30</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sun</surname>
+              <given-names>LP</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Goldstein</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>MS</given-names>
+            </name>
+          </person-group>
+          <article-title>Insig required for sterol-mediated inhibition of Scap/SREBP binding to COPII proteins in vitro</article-title>
+          <source>J Biol Chem</source>
+          <year>2005</year>
+          <volume>280</volume>
+          <fpage>26483</fpage>
+          <lpage>26490</lpage>
+          <pub-id pub-id-type="pmid">15899885</pub-id>
+        </citation>
+      </ref>
+      <ref id="R31">
+        <label>31</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ota</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Gayet</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Ginsberg</surname>
+              <given-names>HN</given-names>
+            </name>
+          </person-group>
+          <article-title>Inhibition of apolipoprotein B100 secretion by lipid-induced hepatic endoplasmic reticulum stress in rodents</article-title>
+          <source>J Clin Invest</source>
+          <year>2008</year>
+          <volume>118</volume>
+          <fpage>316</fpage>
+          <lpage>332</lpage>
+          <pub-id pub-id-type="pmid">18060040</pub-id>
+        </citation>
+      </ref>
+      <ref id="R32">
+        <label>32</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kammoun</surname>
+              <given-names>HL</given-names>
+            </name>
+            <name>
+              <surname>Chabanon</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Hainault</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Luquet</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Magnan</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Koike</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Ferre</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>GRP78 expression inhibits insulin and ER stress-induced SREBP-1c activation and reduces hepatic steatosis in mice</article-title>
+          <source>J Clin Invest</source>
+          <year>2009</year>
+          <volume>119</volume>
+          <fpage>1201</fpage>
+          <lpage>1215</lpage>
+          <pub-id pub-id-type="pmid">19363290</pub-id>
+        </citation>
+      </ref>
+      <ref id="R33">
+        <label>33</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gregor</surname>
+              <given-names>MF</given-names>
+            </name>
+            <name>
+              <surname>Hotamisligil</surname>
+              <given-names>GS</given-names>
+            </name>
+          </person-group>
+          <article-title>Thematic review series: Adipocyte Biology. Adipocyte stress: the endoplasmic reticulum and metabolic disease</article-title>
+          <source>J Lipid Res</source>
+          <year>2007</year>
+          <volume>48</volume>
+          <fpage>1905</fpage>
+          <lpage>1914</lpage>
+          <pub-id pub-id-type="pmid">17699733</pub-id>
+        </citation>
+      </ref>
+      <ref id="R34">
+        <label>34</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brown</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name>
+              <surname>Ye</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Rawson</surname>
+              <given-names>RB</given-names>
+            </name>
+            <name>
+              <surname>Goldstein</surname>
+              <given-names>JL</given-names>
+            </name>
+          </person-group>
+          <article-title>Regulated intramembrane proteolysis: a control mechanism conserved from bacteria to humans</article-title>
+          <source>Cell</source>
+          <year>2000</year>
+          <volume>100</volume>
+          <fpage>391</fpage>
+          <lpage>398</lpage>
+          <pub-id pub-id-type="pmid">10693756</pub-id>
+        </citation>
+      </ref>
+      <ref id="R35">
+        <label>35</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Horton</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Goldstein</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>MS</given-names>
+            </name>
+          </person-group>
+          <article-title>SREBPs: activators of the complete program of cholesterol and fatty acid synthesis in the liver</article-title>
+          <source>J Clin Invest</source>
+          <year>2002</year>
+          <volume>109</volume>
+          <fpage>1125</fpage>
+          <lpage>1131</lpage>
+          <pub-id pub-id-type="pmid">11994399</pub-id>
+        </citation>
+      </ref>
+      <ref id="R36">
+        <label>36</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ji</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Chan</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Kaplowitz</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Predominant role of sterol response element binding proteins (SREBP) lipogenic pathways in hepatic steatosis in the murine intragastric ethanol feeding model</article-title>
+          <source>J Hepatol</source>
+          <year>2006</year>
+          <volume>45</volume>
+          <fpage>717</fpage>
+          <lpage>724</lpage>
+          <pub-id pub-id-type="pmid">16879892</pub-id>
+        </citation>
+      </ref>
+      <ref id="R37">
+        <label>37</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ferre</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Foufelle</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <article-title>Hepatic steatosis: a role for de novo lipogenesis and the transcription factor SREBP-1c</article-title>
+          <source>Diabetes Obes Metab</source>
+          <year>2010</year>
+          <volume>12</volume>
+          <supplement>Suppl 2</supplement>
+          <fpage>83</fpage>
+          <lpage>92</lpage>
+          <pub-id pub-id-type="pmid">21029304</pub-id>
+        </citation>
+      </ref>
+      <ref id="R38">
+        <label>38</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Donnelly</surname>
+              <given-names>KL</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>CI</given-names>
+            </name>
+            <name>
+              <surname>Schwarzenberg</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <name>
+              <surname>Jessurun</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Boldt</surname>
+              <given-names>MD</given-names>
+            </name>
+            <name>
+              <surname>Parks</surname>
+              <given-names>EJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Sources of fatty acids stored in liver and secreted via lipoproteins in patients with nonalcoholic fatty liver disease</article-title>
+          <source>J Clin Invest</source>
+          <year>2005</year>
+          <volume>115</volume>
+          <fpage>1343</fpage>
+          <lpage>1351</lpage>
+          <pub-id pub-id-type="pmid">15864352</pub-id>
+        </citation>
+      </ref>
+      <ref id="R39">
+        <label>39</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Engelking</surname>
+              <given-names>LJ</given-names>
+            </name>
+            <name>
+              <surname>Kuriyama</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Hammer</surname>
+              <given-names>RE</given-names>
+            </name>
+            <name>
+              <surname>Horton</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name>
+              <surname>Goldstein</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Liang</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Overexpression of Insig-1 in the livers of transgenic mice inhibits SREBP processing and reduces insulin-stimulated lipogenesis</article-title>
+          <source>J Clin Invest</source>
+          <year>2004</year>
+          <volume>113</volume>
+          <fpage>1168</fpage>
+          <lpage>1175</lpage>
+          <pub-id pub-id-type="pmid">15085196</pub-id>
+        </citation>
+      </ref>
+      <ref id="R40">
+        <label>40</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hegarty</surname>
+              <given-names>BD</given-names>
+            </name>
+            <name>
+              <surname>Bobard</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Hainault</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Ferre</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Bossard</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Foufelle</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <article-title>Distinct roles of insulin and liver X receptor in the induction and cleavage of sterol regulatory element-binding protein-1c</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>2005</year>
+          <volume>102</volume>
+          <fpage>791</fpage>
+          <lpage>796</lpage>
+          <pub-id pub-id-type="pmid">15637161</pub-id>
+        </citation>
+      </ref>
+      <ref id="R41">
+        <label>41</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shimomura</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Bashmakov</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Ikemoto</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Horton</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name>
+              <surname>Goldstein</surname>
+              <given-names>JL</given-names>
+            </name>
+          </person-group>
+          <article-title>Insulin selectively increases SREBP-1c mRNA in the livers of rats with streptozotocin-induced diabetes</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>1999</year>
+          <volume>96</volume>
+          <fpage>13656</fpage>
+          <lpage>13661</lpage>
+          <pub-id pub-id-type="pmid">10570128</pub-id>
+        </citation>
+      </ref>
+      <ref id="R42">
+        <label>42</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Neuschwander-Tetri</surname>
+              <given-names>BA</given-names>
+            </name>
+          </person-group>
+          <article-title>Hepatic lipotoxicity and the pathogenesis of nonalcoholic steatohepatitis: the central role of nontriglyceride fatty acid metabolites</article-title>
+          <source>Hepatology</source>
+          <year>2010</year>
+          <volume>52</volume>
+          <fpage>774</fpage>
+          <lpage>788</lpage>
+          <pub-id pub-id-type="pmid">20683968</pub-id>
+        </citation>
+      </ref>
+      <ref id="R43">
+        <label>43</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Neuschwander-Tetri</surname>
+              <given-names>BA</given-names>
+            </name>
+          </person-group>
+          <article-title>Nontriglyceride hepatic lipotoxicity: the new paradigm for the pathogenesis of NASH</article-title>
+          <source>Curr Gastroenterol Rep</source>
+          <year>2010</year>
+          <volume>12</volume>
+          <fpage>49</fpage>
+          <lpage>56</lpage>
+          <pub-id pub-id-type="pmid">20425484</pub-id>
+        </citation>
+      </ref>
+      <ref id="R44">
+        <label>44</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jou</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Choi</surname>
+              <given-names>SS</given-names>
+            </name>
+            <name>
+              <surname>Diehl</surname>
+              <given-names>AM</given-names>
+            </name>
+          </person-group>
+          <article-title>Mechanisms of disease progression in nonalcoholic fatty liver disease</article-title>
+          <source>Semin Liver Dis</source>
+          <year>2008</year>
+          <volume>28</volume>
+          <fpage>370</fpage>
+          <lpage>379</lpage>
+          <pub-id pub-id-type="pmid">18956293</pub-id>
+        </citation>
+      </ref>
+      <ref id="R45">
+        <label>45</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Damiano</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Alemanno</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Gnoni</surname>
+              <given-names>GV</given-names>
+            </name>
+            <name>
+              <surname>Siculella</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Translational control of the sterol-regulatory transcription factor SREBP-1 mRNA in response to serum starvation or ER stress is mediated by an internal ribosome entry site</article-title>
+          <source>Biochem J</source>
+          <year>2010</year>
+          <volume>429</volume>
+          <fpage>603</fpage>
+          <lpage>612</lpage>
+          <pub-id pub-id-type="pmid">20513236</pub-id>
+        </citation>
+      </ref>
+      <ref id="R46">
+        <label>46</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ji</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Shinohara</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kuhlenkamp</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Chan</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Kaplowitz</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Mechanisms of protection by the betaine-homocysteine methyltransferase/betaine system in HepG2 cells and primary mouse hepatocytes</article-title>
+          <source>Hepatology</source>
+          <year>2007</year>
+          <volume>46</volume>
+          <fpage>1586</fpage>
+          <lpage>1596</lpage>
+          <pub-id pub-id-type="pmid">17705221</pub-id>
+        </citation>
+      </ref>
+      <ref id="R47">
+        <label>47</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hotamisligil</surname>
+              <given-names>GS</given-names>
+            </name>
+          </person-group>
+          <article-title>Endoplasmic reticulum stress and the inflammatory basis of metabolic disease</article-title>
+          <source>Cell</source>
+          <year>2010</year>
+          <volume>140</volume>
+          <fpage>900</fpage>
+          <lpage>917</lpage>
+          <pub-id pub-id-type="pmid">20303879</pub-id>
+        </citation>
+      </ref>
+      <ref id="R48">
+        <label>48</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lee</surname>
+              <given-names>AH</given-names>
+            </name>
+            <name>
+              <surname>Scapa</surname>
+              <given-names>EF</given-names>
+            </name>
+            <name>
+              <surname>Cohen</surname>
+              <given-names>DE</given-names>
+            </name>
+            <name>
+              <surname>Glimcher</surname>
+              <given-names>LH</given-names>
+            </name>
+          </person-group>
+          <article-title>Regulation of hepatic lipogenesis by the transcription factor XBP1</article-title>
+          <source>Science</source>
+          <year>2008</year>
+          <volume>320</volume>
+          <fpage>1492</fpage>
+          <lpage>1496</lpage>
+          <pub-id pub-id-type="pmid">18556558</pub-id>
+        </citation>
+      </ref>
+      <ref id="R49">
+        <label>49</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ozcan</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Cao</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Yilmaz</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>AH</given-names>
+            </name>
+            <name>
+              <surname>Iwakoshi</surname>
+              <given-names>NN</given-names>
+            </name>
+            <name>
+              <surname>Ozdelen</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Tuncman</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Endoplasmic reticulum stress links obesity, insulin action, and type 2 diabetes</article-title>
+          <source>Science</source>
+          <year>2004</year>
+          <volume>306</volume>
+          <fpage>457</fpage>
+          <lpage>461</lpage>
+          <pub-id pub-id-type="pmid">15486293</pub-id>
+        </citation>
+      </ref>
+      <ref id="R50">
+        <label>50</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ozcan</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Yilmaz</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Ozcan</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Furuhashi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Vaillancourt</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>RO</given-names>
+            </name>
+            <name>
+              <surname>Gorgun</surname>
+              <given-names>CZ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Chemical chaperones reduce ER stress and restore glucose homeostasis in a mouse model of type 2 diabetes</article-title>
+          <source>Science</source>
+          <year>2006</year>
+          <volume>313</volume>
+          <fpage>1137</fpage>
+          <lpage>1140</lpage>
+          <pub-id pub-id-type="pmid">16931765</pub-id>
+        </citation>
+      </ref>
+      <ref id="R51">
+        <label>51</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nakatani</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Kaneto</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kawamori</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Yoshiuchi</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Hatazaki</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Matsuoka</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name>
+              <surname>Ozawa</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Involvement of endoplasmic reticulum stress in insulin resistance and diabetes</article-title>
+          <source>J Biol Chem</source>
+          <year>2005</year>
+          <volume>280</volume>
+          <fpage>847</fpage>
+          <lpage>851</lpage>
+          <pub-id pub-id-type="pmid">15509553</pub-id>
+        </citation>
+      </ref>
+      <ref id="R52">
+        <label>52</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rutkowski</surname>
+              <given-names>DT</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Back</surname>
+              <given-names>SH</given-names>
+            </name>
+            <name>
+              <surname>Callaghan</surname>
+              <given-names>MU</given-names>
+            </name>
+            <name>
+              <surname>Ferris</surname>
+              <given-names>SP</given-names>
+            </name>
+            <name>
+              <surname>Iqbal</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Clark</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>UPR pathways combine to prevent hepatic steatosis caused by ER stress-mediated suppression of transcriptional master regulators</article-title>
+          <source>Dev Cell</source>
+          <year>2008</year>
+          <volume>15</volume>
+          <fpage>829</fpage>
+          <lpage>840</lpage>
+          <pub-id pub-id-type="pmid">19081072</pub-id>
+        </citation>
+      </ref>
+      <ref id="R53">
+        <label>53</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yoshiuchi</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Kaneto</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Matsuoka</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name>
+              <surname>Kohno</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Iwawaki</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Nakatani</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Yamasaki</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Direct monitoring of in vivo ER stress during the development of insulin resistance with ER stress-activated indicator transgenic mice</article-title>
+          <source>Biochem Biophys Res Commun</source>
+          <year>2008</year>
+          <volume>366</volume>
+          <fpage>545</fpage>
+          <lpage>550</lpage>
+          <pub-id pub-id-type="pmid">18070597</pub-id>
+        </citation>
+      </ref>
+      <ref id="R54">
+        <label>54</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Wei</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Pagliassotti</surname>
+              <given-names>MJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Saturated fatty acids promote endoplasmic reticulum stress and liver injury in rats with hepatic steatosis</article-title>
+          <source>Endocrinology</source>
+          <year>2006</year>
+          <volume>147</volume>
+          <fpage>943</fpage>
+          <lpage>951</lpage>
+          <pub-id pub-id-type="pmid">16269465</pub-id>
+        </citation>
+      </ref>
+      <ref id="R55">
+        <label>55</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boden</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Duan</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Homko</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Molina</surname>
+              <given-names>EJ</given-names>
+            </name>
+            <name>
+              <surname>Song</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Perez</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Cheung</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Increase in endoplasmic reticulum stress-related proteins and genes in adipose tissue of obese, insulin-resistant individuals</article-title>
+          <source>Diabetes</source>
+          <year>2008</year>
+          <volume>57</volume>
+          <fpage>2438</fpage>
+          <lpage>2444</lpage>
+          <pub-id pub-id-type="pmid">18567819</pub-id>
+        </citation>
+      </ref>
+      <ref id="R56">
+        <label>56</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gregor</surname>
+              <given-names>MF</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Fabbrini</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Mohammed</surname>
+              <given-names>BS</given-names>
+            </name>
+            <name>
+              <surname>Eagon</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Hotamisligil</surname>
+              <given-names>GS</given-names>
+            </name>
+            <name>
+              <surname>Klein</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Endoplasmic reticulum stress is reduced in tissues of obese subjects after weight loss</article-title>
+          <source>Diabetes</source>
+          <year>2009</year>
+          <volume>58</volume>
+          <fpage>693</fpage>
+          <lpage>700</lpage>
+          <pub-id pub-id-type="pmid">19066313</pub-id>
+        </citation>
+      </ref>
+      <ref id="R57">
+        <label>57</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dong</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Kandadi</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Ren</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Sreejayan</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Chromium (D-phenylalanine)3 supplementation alters glucose disposal, insulin signaling, and glucose transporter-4 membrane translocation in insulin-resistant mice</article-title>
+          <source>J Nutr</source>
+          <year>2008</year>
+          <volume>138</volume>
+          <fpage>1846</fpage>
+          <lpage>1851</lpage>
+          <pub-id pub-id-type="pmid">18806091</pub-id>
+        </citation>
+      </ref>
+      <ref id="R58">
+        <label>58</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sreejayan</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Dong</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Kandadi</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Ren</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Chromium alleviates glucose intolerance, insulin resistance, and hepatic ER stress in obese mice</article-title>
+          <source>Obesity (Silver Spring)</source>
+          <year>2008</year>
+          <volume>16</volume>
+          <fpage>1331</fpage>
+          <lpage>1337</lpage>
+          <pub-id pub-id-type="pmid">18388893</pub-id>
+        </citation>
+      </ref>
+      <ref id="R59">
+        <label>59</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Su</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Tsai</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Qiu</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Bereczki</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Santha</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Adeli</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Apolipoprotein B100 acts as a molecular link between lipid-induced endoplasmic reticulum stress and hepatic insulin resistance</article-title>
+          <source>Hepatology</source>
+          <year>2009</year>
+          <volume>50</volume>
+          <fpage>77</fpage>
+          <lpage>84</lpage>
+          <pub-id pub-id-type="pmid">19434737</pub-id>
+        </citation>
+      </ref>
+      <ref id="R60">
+        <label>60</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ji</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Dissection of endoplasmic reticulum stress signaling in alcoholic and non-alcoholic liver injury</article-title>
+          <source>J Gastroenterol Hepatol</source>
+          <year>2008</year>
+          <volume>23</volume>
+          <supplement>Suppl 1</supplement>
+          <fpage>S16</fpage>
+          <lpage>S24</lpage>
+          <pub-id pub-id-type="pmid">18336657</pub-id>
+        </citation>
+      </ref>
+      <ref id="R61">
+        <label>61</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ji</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Kaplowitz</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Hyperhomocysteinemia, endoplasmic reticulum stress, and alcoholic liver injury</article-title>
+          <source>World J Gastroenterol</source>
+          <year>2004</year>
+          <volume>10</volume>
+          <fpage>1699</fpage>
+          <lpage>1708</lpage>
+          <pub-id pub-id-type="pmid">15188490</pub-id>
+        </citation>
+      </ref>
+      <ref id="R62">
+        <label>62</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ji</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Mehrian-Shai</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Chan</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Hsu</surname>
+              <given-names>YH</given-names>
+            </name>
+            <name>
+              <surname>Kaplowitz</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Role of CHOP in hepatic apoptosis in the murine model of intragastric ethanol feeding</article-title>
+          <source>Alcohol Clin Exp Res</source>
+          <year>2005</year>
+          <volume>29</volume>
+          <fpage>1496</fpage>
+          <lpage>1503</lpage>
+          <pub-id pub-id-type="pmid">16131858</pub-id>
+        </citation>
+      </ref>
+      <ref id="R63">
+        <label>63</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ji</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Kaplowitz</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Betaine decreases hyperhomocysteinemia, endoplasmic reticulum stress, and liver injury in alcohol-fed mice</article-title>
+          <source>Gastroenterology</source>
+          <year>2003</year>
+          <volume>124</volume>
+          <fpage>1488</fpage>
+          <lpage>1499</lpage>
+          <pub-id pub-id-type="pmid">12730887</pub-id>
+        </citation>
+      </ref>
+      <ref id="R64">
+        <label>64</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ji</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Shinohara</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Vance</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Than</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name>
+              <surname>Ookhtens</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Chan</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Kaplowitz</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Effect of transgenic extrahepatic expression of betaine-homocysteine methyltransferase on alcohol or homocysteine-induced fatty liver</article-title>
+          <source>Alcohol Clin Exp Res</source>
+          <year>2008</year>
+          <volume>32</volume>
+          <fpage>1049</fpage>
+          <lpage>1058</lpage>
+          <pub-id pub-id-type="pmid">18498552</pub-id>
+        </citation>
+      </ref>
+      <ref id="R65">
+        <label>65</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Esfandiari</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Villanueva</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Wong</surname>
+              <given-names>DH</given-names>
+            </name>
+            <name>
+              <surname>French</surname>
+              <given-names>SW</given-names>
+            </name>
+            <name>
+              <surname>Halsted</surname>
+              <given-names>CH</given-names>
+            </name>
+          </person-group>
+          <article-title>Chronic ethanol feeding and folate deficiency activate hepatic endoplasmic reticulum stress pathway in micropigs</article-title>
+          <source>Am J Physiol Gastrointest Liver Physiol</source>
+          <year>2005</year>
+          <volume>289</volume>
+          <fpage>G54</fpage>
+          <lpage>G63</lpage>
+          <pub-id pub-id-type="pmid">15705656</pub-id>
+        </citation>
+      </ref>
+      <ref id="R66">
+        <label>66</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tazi</surname>
+              <given-names>KA</given-names>
+            </name>
+            <name>
+              <surname>Bieche</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Paradis</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Guichard</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Laurendeau</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Dargere</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Legrand</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>In vivo altered unfolded protein response and apoptosis in livers from lipopolysaccharide-challenged cirrhotic rats</article-title>
+          <source>J Hepatol</source>
+          <year>2007</year>
+          <volume>46</volume>
+          <fpage>1075</fpage>
+          <lpage>1088</lpage>
+          <pub-id pub-id-type="pmid">17399843</pub-id>
+        </citation>
+      </ref>
+      <ref id="R67">
+        <label>67</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Werstuck</surname>
+              <given-names>GH</given-names>
+            </name>
+            <name>
+              <surname>Lentz</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Dayal</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Hossain</surname>
+              <given-names>GS</given-names>
+            </name>
+            <name>
+              <surname>Sood</surname>
+              <given-names>SK</given-names>
+            </name>
+            <name>
+              <surname>Shi</surname>
+              <given-names>YY</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Homocysteine-induced endoplasmic reticulum stress causes dysregulation of the cholesterol and triglyceride biosynthetic pathways</article-title>
+          <source>J Clin Invest</source>
+          <year>2001</year>
+          <volume>107</volume>
+          <fpage>1263</fpage>
+          <lpage>1273</lpage>
+          <pub-id pub-id-type="pmid">11375416</pub-id>
+        </citation>
+      </ref>
+      <ref id="R68">
+        <label>68</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hamelet</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Demuth</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Paul</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Delabar</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Janel</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Hyperhomocysteinemia due to cystathionine beta synthase deficiency induces dysregulation of genes involved in hepatic lipid homeostasis in mice</article-title>
+          <source>J Hepatol</source>
+          <year>2007</year>
+          <volume>46</volume>
+          <fpage>151</fpage>
+          <lpage>159</lpage>
+          <pub-id pub-id-type="pmid">17030070</pub-id>
+        </citation>
+      </ref>
+      <ref id="R69">
+        <label>69</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Barak</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Beckenhauer</surname>
+              <given-names>HC</given-names>
+            </name>
+            <name>
+              <surname>Tuma</surname>
+              <given-names>DJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Betaine, ethanol, and the liver: a review</article-title>
+          <source>Alcohol</source>
+          <year>1996</year>
+          <volume>13</volume>
+          <fpage>395</fpage>
+          <lpage>398</lpage>
+          <pub-id pub-id-type="pmid">8836329</pub-id>
+        </citation>
+      </ref>
+      <ref id="R70">
+        <label>70</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shinohara</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ji</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Kaplowitz</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Differences in betaine-homocysteine methyltransferase expression, endoplasmic reticulum stress response, and liver injury between alcohol-fed mice and rats</article-title>
+          <source>Hepatology</source>
+          <year>2010</year>
+          <volume>51</volume>
+          <fpage>796</fpage>
+          <lpage>805</lpage>
+          <pub-id pub-id-type="pmid">20069651</pub-id>
+        </citation>
+      </ref>
+      <ref id="R71">
+        <label>71</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Karaplis</surname>
+              <given-names>AC</given-names>
+            </name>
+            <name>
+              <surname>Ackerman</surname>
+              <given-names>SL</given-names>
+            </name>
+            <name>
+              <surname>Pogribny</surname>
+              <given-names>IP</given-names>
+            </name>
+            <name>
+              <surname>Melnyk</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Lussier-Cacan</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>MF</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Mice deficient in methylenetetrahydrofolate reductase exhibit hyperhomocysteinemia and decreased methylation capacity, with neuropathology and aortic lipid deposition</article-title>
+          <source>Hum Mol Genet</source>
+          <year>2001</year>
+          <volume>10</volume>
+          <fpage>433</fpage>
+          <lpage>443</lpage>
+          <pub-id pub-id-type="pmid">11181567</pub-id>
+        </citation>
+      </ref>
+      <ref id="R72">
+        <label>72</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Watanabe</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Osada</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Aratani</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Kluckman</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Reddick</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Malinow</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Maeda</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Mice deficient in cystathionine beta-synthase: animal models for mild and severe homocyst(e)inemia</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>1995</year>
+          <volume>92</volume>
+          <fpage>1585</fpage>
+          <lpage>1589</lpage>
+          <pub-id pub-id-type="pmid">7878023</pub-id>
+        </citation>
+      </ref>
+      <ref id="R73">
+        <label>73</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Esfandiari</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Medici</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Wong</surname>
+              <given-names>DH</given-names>
+            </name>
+            <name>
+              <surname>Jose</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Dolatshahi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Quinlivan</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Dayal</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Epigenetic regulation of hepatic endoplasmic reticulum stress pathways in the ethanol-fed cystathionine beta synthase-deficient mouse</article-title>
+          <source>Hepatology</source>
+          <year>2010</year>
+          <volume>51</volume>
+          <fpage>932</fpage>
+          <lpage>941</lpage>
+          <pub-id pub-id-type="pmid">19957376</pub-id>
+        </citation>
+      </ref>
+      <ref id="R74">
+        <label>74</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mato</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Corrales</surname>
+              <given-names>FJ</given-names>
+            </name>
+            <name>
+              <surname>Lu</surname>
+              <given-names>SC</given-names>
+            </name>
+            <name>
+              <surname>Avila</surname>
+              <given-names>MA</given-names>
+            </name>
+          </person-group>
+          <article-title>S-Adenosylmethionine: a control switch that regulates liver function</article-title>
+          <source>FASEB J</source>
+          <year>2002</year>
+          <volume>16</volume>
+          <fpage>15</fpage>
+          <lpage>26</lpage>
+          <pub-id pub-id-type="pmid">11772932</pub-id>
+        </citation>
+      </ref>
+      <ref id="R75">
+        <label>75</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sanchez-Gongora</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Ruiz</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Mingorance</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>An</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Corrales</surname>
+              <given-names>FJ</given-names>
+            </name>
+            <name>
+              <surname>Mato</surname>
+              <given-names>JM</given-names>
+            </name>
+          </person-group>
+          <article-title>Interaction of liver methionine adenosyltransferase with hydroxyl radical</article-title>
+          <source>FASEB J</source>
+          <year>1997</year>
+          <volume>11</volume>
+          <fpage>1013</fpage>
+          <lpage>1019</lpage>
+          <pub-id pub-id-type="pmid">9337154</pub-id>
+        </citation>
+      </ref>
+      <ref id="R76">
+        <label>76</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ruiz</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Corrales</surname>
+              <given-names>FJ</given-names>
+            </name>
+            <name>
+              <surname>Miqueo</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Mato</surname>
+              <given-names>JM</given-names>
+            </name>
+          </person-group>
+          <article-title>Nitric oxide inactivates rat hepatic methionine adenosyltransferase In vivo by S-nitrosylation</article-title>
+          <source>Hepatology</source>
+          <year>1998</year>
+          <volume>28</volume>
+          <fpage>1051</fpage>
+          <lpage>1057</lpage>
+          <pub-id pub-id-type="pmid">9755242</pub-id>
+        </citation>
+      </ref>
+      <ref id="R77">
+        <label>77</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Henkel</surname>
+              <given-names>AS</given-names>
+            </name>
+            <name>
+              <surname>Elias</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name>
+              <surname>Green</surname>
+              <given-names>RM</given-names>
+            </name>
+          </person-group>
+          <article-title>Homocysteine supplementation attenuates the unfolded protein response in a murine nutritional model of steatohepatitis</article-title>
+          <source>J Biol Chem</source>
+          <year>2009</year>
+          <volume>284</volume>
+          <fpage>31807</fpage>
+          <lpage>31816</lpage>
+          <pub-id pub-id-type="pmid">19762918</pub-id>
+        </citation>
+      </ref>
+      <ref id="R78">
+        <label>78</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Okamoto</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Moriishi</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Miyamura</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Matsuura</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <article-title>Intramembrane proteolysis and endoplasmic reticulum retention of hepatitis C virus core protein</article-title>
+          <source>J Virol</source>
+          <year>2004</year>
+          <volume>78</volume>
+          <fpage>6370</fpage>
+          <lpage>6380</lpage>
+          <pub-id pub-id-type="pmid">15163730</pub-id>
+        </citation>
+      </ref>
+      <ref id="R79">
+        <label>79</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tardif</surname>
+              <given-names>KD</given-names>
+            </name>
+            <name>
+              <surname>Mori</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Kaufman</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Siddiqui</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Hepatitis C virus suppresses the IRE1-XBP1 pathway of the unfolded protein response</article-title>
+          <source>J Biol Chem</source>
+          <year>2004</year>
+          <volume>279</volume>
+          <fpage>17158</fpage>
+          <lpage>17164</lpage>
+          <pub-id pub-id-type="pmid">14960590</pub-id>
+        </citation>
+      </ref>
+      <ref id="R80">
+        <label>80</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zheng</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Gao</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Ye</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Kong</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Jing</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>Z</given-names>
+            </name>
+          </person-group>
+          <article-title>Hepatitis C virus non-structural protein NS4B can modulate an unfolded protein response</article-title>
+          <source>J Microbiol</source>
+          <year>2005</year>
+          <volume>43</volume>
+          <fpage>529</fpage>
+          <lpage>536</lpage>
+          <pub-id pub-id-type="pmid">16410770</pub-id>
+        </citation>
+      </ref>
+      <ref id="R81">
+        <label>81</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Christen</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Treves</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Duong</surname>
+              <given-names>FH</given-names>
+            </name>
+            <name>
+              <surname>Heim</surname>
+              <given-names>MH</given-names>
+            </name>
+          </person-group>
+          <article-title>Activation of endoplasmic reticulum stress response by hepatitis viruses up-regulates protein phosphatase 2A</article-title>
+          <source>Hepatology</source>
+          <year>2007</year>
+          <volume>46</volume>
+          <fpage>558</fpage>
+          <lpage>565</lpage>
+          <pub-id pub-id-type="pmid">17526027</pub-id>
+        </citation>
+      </ref>
+      <ref id="R82">
+        <label>82</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Benali-Furet</surname>
+              <given-names>NL</given-names>
+            </name>
+            <name>
+              <surname>Chami</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Houel</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>De Giorgi</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Vernejoul</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Lagorce</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Buscail</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Hepatitis C virus core triggers apoptosis in liver cells by inducing ER stress and ER calcium depletion</article-title>
+          <source>Oncogene</source>
+          <year>2005</year>
+          <volume>24</volume>
+          <fpage>4921</fpage>
+          <lpage>4933</lpage>
+          <pub-id pub-id-type="pmid">15897896</pub-id>
+        </citation>
+      </ref>
+      <ref id="R83">
+        <label>83</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Asselah</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Bieche</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Mansouri</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Laurendeau</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Cazals-Hatem</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Feldmann</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Bedossa</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>In vivo hepatic endoplasmic reticulum stress in patients with chronic hepatitis C</article-title>
+          <source>J Pathol</source>
+          <year>2010</year>
+          <volume>221</volume>
+          <fpage>264</fpage>
+          <lpage>274</lpage>
+          <pub-id pub-id-type="pmid">20527020</pub-id>
+        </citation>
+      </ref>
+      <ref id="R84">
+        <label>84</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sir</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>WL</given-names>
+            </name>
+            <name>
+              <surname>Choi</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Wakita</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Yen</surname>
+              <given-names>TS</given-names>
+            </name>
+            <name>
+              <surname>Ou</surname>
+              <given-names>JH</given-names>
+            </name>
+          </person-group>
+          <article-title>Induction of incomplete autophagic response by hepatitis C virus via the unfolded protein response</article-title>
+          <source>Hepatology</source>
+          <year>2008</year>
+          <volume>48</volume>
+          <fpage>1054</fpage>
+          <lpage>1061</lpage>
+          <pub-id pub-id-type="pmid">18688877</pub-id>
+        </citation>
+      </ref>
+      <ref id="R85">
+        <label>85</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ke</surname>
+              <given-names>PY</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>SS</given-names>
+            </name>
+          </person-group>
+          <article-title>Activation of the unfolded protein response and autophagy after hepatitis C virus infection suppresses innate antiviral immunity in vitro</article-title>
+          <source>J Clin Invest</source>
+          <year>2011</year>
+          <volume>121</volume>
+          <fpage>37</fpage>
+          <lpage>56</lpage>
+          <pub-id pub-id-type="pmid">21135505</pub-id>
+        </citation>
+      </ref>
+      <ref id="R86">
+        <label>86</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Gao</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Ye</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Han</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Kong</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Fang</surname>
+              <given-names>X</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Hepatitis B virus X protein (HBx) activates ATF6 and IRE1-XBP1 pathways of unfolded protein response</article-title>
+          <source>Virus Res</source>
+          <year>2007</year>
+          <volume>124</volume>
+          <fpage>44</fpage>
+          <lpage>49</lpage>
+          <pub-id pub-id-type="pmid">17092596</pub-id>
+        </citation>
+      </ref>
+      <ref id="R87">
+        <label>87</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Isler</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Skalet</surname>
+              <given-names>AH</given-names>
+            </name>
+            <name>
+              <surname>Alwine</surname>
+              <given-names>JC</given-names>
+            </name>
+          </person-group>
+          <article-title>Human cytomegalovirus infection activates and regulates the unfolded protein response</article-title>
+          <source>J Virol</source>
+          <year>2005</year>
+          <volume>79</volume>
+          <fpage>6890</fpage>
+          <lpage>6899</lpage>
+          <pub-id pub-id-type="pmid">15890928</pub-id>
+        </citation>
+      </ref>
+      <ref id="R88">
+        <label>88</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Thomas</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Sachdeva</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Arterburn</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Frye</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Hatcher</surname>
+              <given-names>PG</given-names>
+            </name>
+            <name>
+              <surname>Cornwell</surname>
+              <given-names>DG</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Mechanism of arylating quinone toxicity involving Michael adduct formation and induction of endoplasmic reticulum stress</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>2006</year>
+          <volume>103</volume>
+          <fpage>3604</fpage>
+          <lpage>3609</lpage>
+          <pub-id pub-id-type="pmid">16505371</pub-id>
+        </citation>
+      </ref>
+      <ref id="R89">
+        <label>89</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nagy</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Szarka</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Lotz</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Doczi</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Wunderlich</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Kiss</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Jemnitz</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>BGP-15 inhibits caspase-independent programmed cell death in acetaminophen-induced liver injury</article-title>
+          <source>Toxicol Appl Pharmacol</source>
+          <year>2010</year>
+          <volume>243</volume>
+          <fpage>96</fpage>
+          <lpage>103</lpage>
+          <pub-id pub-id-type="pmid">19931551</pub-id>
+        </citation>
+      </ref>
+      <ref id="R90">
+        <label>90</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nagy</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Kardon</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Wunderlich</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Szarka</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Kiss</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Schaff</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Banhegyi</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Acetaminophen induces ER dependent signaling in mouse liver</article-title>
+          <source>Arch Biochem Biophys</source>
+          <year>2007</year>
+          <volume>459</volume>
+          <fpage>273</fpage>
+          <lpage>279</lpage>
+          <pub-id pub-id-type="pmid">17207453</pub-id>
+        </citation>
+      </ref>
+      <ref id="R91">
+        <label>91</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Voronin</surname>
+              <given-names>KB</given-names>
+            </name>
+            <name>
+              <surname>Kriachkova</surname>
+              <given-names>NV</given-names>
+            </name>
+            <name>
+              <surname>Iakovleva</surname>
+              <given-names>NI</given-names>
+            </name>
+            <name>
+              <surname>Kul'berg</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>[Immunity indices in the diagnosis of pretoxicosis in women with an increased risk for the development of late toxicosis]</article-title>
+          <source>Akush Ginekol (Mosk)</source>
+          <year>1991</year>
+          <fpage>26</fpage>
+          <lpage>28</lpage>
+          <pub-id pub-id-type="pmid">1650537</pub-id>
+        </citation>
+      </ref>
+      <ref id="R92">
+        <label>92</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lorz</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Justo</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Sanz</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Subira</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Egido</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Ortiz</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Paracetamol-induced renal tubular injury: a role for ER stress</article-title>
+          <source>J Am Soc Nephrol</source>
+          <year>2004</year>
+          <volume>15</volume>
+          <fpage>380</fpage>
+          <lpage>389</lpage>
+          <pub-id pub-id-type="pmid">14747384</pub-id>
+        </citation>
+      </ref>
+      <ref id="R93">
+        <label>93</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Craig</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Sidaway</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Holmes</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Orton</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Jackson</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Rowlinson</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Nickson</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Systems toxicology: integrated genomic, proteomic and metabonomic analysis of methapyrilene induced hepatotoxicity in the rat</article-title>
+          <source>J Proteome Res</source>
+          <year>2006</year>
+          <volume>5</volume>
+          <fpage>1586</fpage>
+          <lpage>1601</lpage>
+          <pub-id pub-id-type="pmid">16823966</pub-id>
+        </citation>
+      </ref>
+      <ref id="R94">
+        <label>94</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Auman</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>Chou</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Gerrish</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Huang</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Jayadev</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Blanchard</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Paules</surname>
+              <given-names>RS</given-names>
+            </name>
+          </person-group>
+          <article-title>Identification of genes implicated in methapyrilene-induced hepatotoxicity by comparing differential gene expression in target and nontarget tissue</article-title>
+          <source>Environ Health Perspect</source>
+          <year>2007</year>
+          <volume>115</volume>
+          <fpage>572</fpage>
+          <lpage>578</lpage>
+          <pub-id pub-id-type="pmid">17450226</pub-id>
+        </citation>
+      </ref>
+      <ref id="R95">
+        <label>95</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhou</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Gurley</surname>
+              <given-names>EC</given-names>
+            </name>
+            <name>
+              <surname>Jarujaron</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ding</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Fang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Pandak</surname>
+              <given-names>WM</given-names>
+              <suffix>Jr</suffix>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>HIV protease inhibitors activate the unfolded protein response and disrupt lipid metabolism in primary hepatocytes</article-title>
+          <source>Am J Physiol Gastrointest Liver Physiol</source>
+          <year>2006</year>
+          <volume>291</volume>
+          <fpage>G1071</fpage>
+          <lpage>G1080</lpage>
+          <pub-id pub-id-type="pmid">16861219</pub-id>
+        </citation>
+      </ref>
+      <ref id="R96">
+        <label>96</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Jarujaron</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Sun</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Zha</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Liang</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>X</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>HIV protease inhibitor lopinavir-induced TNF-alpha and IL-6 expression is coupled to the unfolded protein response and ERK signaling pathways in macrophages</article-title>
+          <source>Biochem Pharmacol</source>
+          <year>2009</year>
+          <volume>78</volume>
+          <fpage>70</fpage>
+          <lpage>77</lpage>
+          <pub-id pub-id-type="pmid">19447225</pub-id>
+        </citation>
+      </ref>
+      <ref id="R97">
+        <label>97</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rzymski</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Milani</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Singleton</surname>
+              <given-names>DC</given-names>
+            </name>
+            <name>
+              <surname>Harris</surname>
+              <given-names>AL</given-names>
+            </name>
+          </person-group>
+          <article-title>Role of ATF4 in regulation of autophagy and resistance to drugs and hypoxia</article-title>
+          <source>Cell Cycle</source>
+          <year>2009</year>
+          <volume>8</volume>
+          <fpage>3838</fpage>
+          <lpage>3847</lpage>
+          <pub-id pub-id-type="pmid">19887912</pub-id>
+        </citation>
+      </ref>
+      <ref id="R98">
+        <label>98</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Periyasamy-Thandavan</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Jackson</surname>
+              <given-names>WH</given-names>
+            </name>
+            <name>
+              <surname>Samaddar</surname>
+              <given-names>JS</given-names>
+            </name>
+            <name>
+              <surname>Erickson</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Barrett</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Raney</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Gopal</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Bortezomib blocks the catabolic process of autophagy via a cathepsin-dependent mechanism, affects endoplasmic reticulum stress and induces caspase-dependent cell death in antiestrogen-sensitive and resistant ER+ breast cancer cells</article-title>
+          <source>Autophagy</source>
+          <year>2010</year>
+          <volume>6</volume>
+          <fpage>19</fpage>
+          <lpage>35</lpage>
+          <pub-id pub-id-type="pmid">20110775</pub-id>
+        </citation>
+      </ref>
+      <ref id="R99">
+        <label>99</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nawrocki</surname>
+              <given-names>ST</given-names>
+            </name>
+            <name>
+              <surname>Carew</surname>
+              <given-names>JS</given-names>
+            </name>
+            <name>
+              <surname>Pino</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name>
+              <surname>Highshaw</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Dunner</surname>
+              <given-names>K</given-names>
+              <suffix>Jr</suffix>
+            </name>
+            <name>
+              <surname>Huang</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Abbruzzese</surname>
+              <given-names>JL</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Bortezomib sensitizes pancreatic cancer cells to endoplasmic reticulum stress-mediated apoptosis</article-title>
+          <source>Cancer Res</source>
+          <year>2005</year>
+          <volume>65</volume>
+          <fpage>11658</fpage>
+          <lpage>11666</lpage>
+          <pub-id pub-id-type="pmid">16357177</pub-id>
+        </citation>
+      </ref>
+      <ref id="R100">
+        <label>100</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sakon</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ariyoshi</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Umeshita</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Monden</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Ischemia-reperfusion injury of the liver with special reference to calcium-dependent mechanisms</article-title>
+          <source>Surg Today</source>
+          <year>2002</year>
+          <volume>32</volume>
+          <fpage>1</fpage>
+          <lpage>12</lpage>
+          <pub-id pub-id-type="pmid">11871810</pub-id>
+        </citation>
+      </ref>
+      <ref id="R101">
+        <label>101</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bailly-Maitre</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Fondevila</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Kaldas</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Droin</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Luciano</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Ricci</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Croxton</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Cytoprotective gene bi-1 is required for intrinsic protection from endoplasmic reticulum stress and ischemia-reperfusion injury</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <year>2006</year>
+          <volume>103</volume>
+          <fpage>2809</fpage>
+          <lpage>2814</lpage>
+          <pub-id pub-id-type="pmid">16478805</pub-id>
+        </citation>
+      </ref>
+      <ref id="R102">
+        <label>102</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vilatoba</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Eckstein</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Bilbao</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Smyth</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>Jenkins</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Thompson</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Eckhoff</surname>
+              <given-names>DE</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Sodium 4-phenylbutyrate protects against liver ischemia reperfusion injury by inhibition of endoplasmic reticulum-stress mediated apoptosis</article-title>
+          <source>Surgery</source>
+          <year>2005</year>
+          <volume>138</volume>
+          <fpage>342</fpage>
+          <lpage>351</lpage>
+          <pub-id pub-id-type="pmid">16153446</pub-id>
+        </citation>
+      </ref>
+      <ref id="R103">
+        <label>103</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bernstein</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Payne</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Bernstein</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Schneider</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Beard</surname>
+              <given-names>SE</given-names>
+            </name>
+            <name>
+              <surname>Crowley</surname>
+              <given-names>CL</given-names>
+            </name>
+          </person-group>
+          <article-title>Activation of the promoters of genes associated with DNA damage, oxidative stress, ER stress and protein malfolding by the bile salt, deoxycholate</article-title>
+          <source>Toxicol Lett</source>
+          <year>1999</year>
+          <volume>108</volume>
+          <fpage>37</fpage>
+          <lpage>46</lpage>
+          <pub-id pub-id-type="pmid">10472808</pub-id>
+        </citation>
+      </ref>
+      <ref id="R104">
+        <label>104</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tsuchiya</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Tsuji</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Morio</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Oguchi</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Involvement of endoplasmic reticulum in glycochenodeoxycholic acid-induced apoptosis in rat hepatocytes</article-title>
+          <source>Toxicol Lett</source>
+          <year>2006</year>
+          <volume>166</volume>
+          <fpage>140</fpage>
+          <lpage>149</lpage>
+          <pub-id pub-id-type="pmid">16860497</pub-id>
+        </citation>
+      </ref>
+      <ref id="R105">
+        <label>105</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Iizaka</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Tsuji</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Oyamada</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Morio</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Oguchi</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Interaction between caspase-8 activation and endoplasmic reticulum stress in glycochenodeoxycholic acid-induced apoptotic HepG2 cells</article-title>
+          <source>Toxicology</source>
+          <year>2007</year>
+          <volume>241</volume>
+          <fpage>146</fpage>
+          <lpage>156</lpage>
+          <pub-id pub-id-type="pmid">17928124</pub-id>
+        </citation>
+      </ref>
+      <ref id="R106">
+        <label>106</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tamaki</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Hatano</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Taura</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Tada</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kodama</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Nitta</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Iwaisako</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>CHOP deficiency attenuates cholestasis-induced liver fibrosis by reduction of hepatocyte injury</article-title>
+          <source>Am J Physiol Gastrointest Liver Physiol</source>
+          <year>2008</year>
+          <volume>294</volume>
+          <fpage>G498</fpage>
+          <lpage>G505</lpage>
+          <pub-id pub-id-type="pmid">18174271</pub-id>
+        </citation>
+      </ref>
+      <ref id="R107">
+        <label>107</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bochkis</surname>
+              <given-names>IM</given-names>
+            </name>
+            <name>
+              <surname>Rubins</surname>
+              <given-names>NE</given-names>
+            </name>
+            <name>
+              <surname>White</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Furth</surname>
+              <given-names>EE</given-names>
+            </name>
+            <name>
+              <surname>Friedman</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Kaestner</surname>
+              <given-names>KH</given-names>
+            </name>
+          </person-group>
+          <article-title>Hepatocyte-specific ablation of Foxa2 alters bile acid homeostasis and results in endoplasmic reticulum stress</article-title>
+          <source>Nat Med</source>
+          <year>2008</year>
+          <volume>14</volume>
+          <fpage>828</fpage>
+          <lpage>836</lpage>
+          <pub-id pub-id-type="pmid">18660816</pub-id>
+        </citation>
+      </ref>
+    </ref-list>
+    <sec id="S13" sec-type="display-objects">
+      <title>Figures</title>
+      <fig id="F1" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <title>Cell signaling pathways in prolonged UPR/ER stress</title>
+          <p id="P25">When GRP78 dissociates from the 3 UPR sensors (ATF6, IRE1, PERK and possibly SREBP) to aid in protein folding, a series of cell signaling pathways are activated which can result in apoptosis, oxidative injury, steatosis and inflammation if UPR is prolonged and equilibrium is not restored.</p>
+        </caption>
+        <graphic xlink:href="nihms276351f1"/>
+      </fig>
+      <fig id="F2" position="float">
+        <label>Figure 2</label>
+        <caption>
+          <title>ER stress in liver diseases</title>
+          <p id="P26">ER adapts to a variety of stress inducing triggers by activating the UPR ro dampen stress. However sustained UPR/ER stress may contribute to the pathogenesis of most acute and chronic liver diseases.</p>
+        </caption>
+        <graphic xlink:href="nihms276351f2"/>
+      </fig>
+      <fig id="F3" position="float">
+        <label>Figure 3</label>
+        <caption>
+          <title>The vicious cycle of steatosis and ER stress</title>
+          <p id="P27">ER stress leads to steatosis by impaired lipid secretion and activation of SREBPs. Steatosis, high fat diet, obesity and insulin resistance in turn promote ER stress.</p>
+        </caption>
+        <graphic xlink:href="nihms276351f3"/>
+      </fig>
+      <fig id="F4" position="float">
+        <label>Figure 4</label>
+        <caption>
+          <title>ER stress at the crossroads of cellular and organ pathophysiology</title>
+          <p id="P28">Perturbations in redox status, steatosis, ROS, inflammation and mitochondrial injury have a complex cause and effect relationship with ER stress. Inter-organellar signaling pathways can be activated by ER stress and/or promote it. The final end point of prolonged or unchecked ER stress is steatosis, apoptosis and inflammation.</p>
+        </caption>
+        <graphic xlink:href="nihms276351f4"/>
+      </fig>
+    </sec>
+  </back>
+</article>

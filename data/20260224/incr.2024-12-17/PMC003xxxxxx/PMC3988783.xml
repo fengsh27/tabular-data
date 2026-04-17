@@ -1,0 +1,2439 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">0155157</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">3696</journal-id>
+      <journal-id journal-id-type="nlm-ta">FEBS Lett</journal-id>
+      <journal-id journal-id-type="iso-abbrev">FEBS Lett.</journal-id>
+      <journal-title-group>
+        <journal-title>FEBS letters</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0014-5793</issn>
+      <issn pub-type="epub">1873-3468</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">21081125</article-id>
+      <article-id pub-id-type="pmc">3988783</article-id>
+      <article-id pub-id-type="doi">10.1016/j.febslet.2010.11.016</article-id>
+      <article-id pub-id-type="manuscript">NIHMS256663</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Chromatin structure as a mediator of aging</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Feser</surname>
+            <given-names>Jason</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Tyler</surname>
+            <given-names>Jessica</given-names>
+          </name>
+          <xref ref-type="aff" rid="A2">2</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>1</label>Molecular Biology Program, University of Colorado School of Medicine, Aurora, CO</aff>
+      <aff id="A2"><label>2</label>Department of Biochemistry and Molecular Biology, UT MD Anderson Cancer Center, Houston, TX</aff>
+      <author-notes>
+        <corresp id="FN1">Correspondence: <email>jtyler@mdanderson.org</email>, tel: 713 834 6274, fax: 713 834 6266, Unit 1000, 1515 Holcombe Blvd, Houston, TX 77030</corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>7</day>
+        <month>4</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>16</day>
+        <month>11</month>
+        <year>2010</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <day>7</day>
+        <month>7</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>16</day>
+        <month>4</month>
+        <year>2014</year>
+      </pub-date>
+      <volume>585</volume>
+      <issue>13</issue>
+      <fpage>2041</fpage>
+      <lpage>2048</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P1">The aging process is characterized by gradual changes to an organism's macromolecules, which negatively impacts biological processes. The complex macromolecular structure of chromatin regulates all nuclear processes requiring access to the DNA sequence. As such, maintenance of chromatin structure is an integral component to deter premature aging. In this review, we describe current research that links aging to chromatin structure. Histone modifications influence chromatin compaction and gene expression and undergo many changes during aging. Histone protein levels also decline during aging, dramatically affecting chromatin structure. Excitingly, lifespan can be extended by manipulations that reverse the age-dependent changes to chromatin structure, indicating the pivotal role chromatin structure plays during aging.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>aging</kwd>
+        <kwd>chromatin</kwd>
+        <kwd>histone modifications</kwd>
+        <kwd>epigenetics</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S1">
+      <title>Introduction</title>
+      <p id="P2">The basic repeating unit of chromatin, the nucleosome, consists of just under 150bp of DNA wrapped around an octamer of histone proteins including two molecules of each core histone - H2A, H2B, H3, and H4 [<xref rid="R1" ref-type="bibr">1</xref>]. The addition of linker histones and non-histone proteins enables the folding of arrays of nucleosomes into 30nm fibers and higher order chromatin structures. Packaging of our DNA into chromatin regulates all the genomic processes that occur within the cell. The reason for this is that the degree of chromatin compaction determines accessibility to the underlying DNA sequences. Tightly structured chromatin, or heterochromatin, minimizes genomic instability and misregulated gene expression, whereas more open chromatin, known as euchromatin, facilitates increased gene expression and genomic instability.</p>
+      <p id="P3">Aging is the prime risk factor for many human diseases such as cancer, heart disease, and diabetes. As such, elucidating the alterations to macromolecules that promote aging will be critical to develop treatments to delay or minimize age-related diseases and potentially extend lifespan. Aging is accompanied by changes in the transcriptional profile of cells and increased genomic instability [<xref rid="R2" ref-type="bibr">2</xref>,<xref rid="R3" ref-type="bibr">3</xref>]. The reasons for these age-related changes remain unclear but given that chromatin structure regulates genomic integrity and gene expression, potential changes to the chromatin structure during aging are likely to play an important role. Indeed, it has been previously suggested that changes to chromatin structure may partially explain the age-related changes to biological functions in cells and the increased incidence of disease states with age [<xref rid="R4" ref-type="bibr">4</xref>,<xref rid="R5" ref-type="bibr">5</xref>].</p>
+      <p id="P4">Chromatin structure is modified by the cell in a variety of ways to facilitate or limit access to the DNA. The most profound alteration to chromatin structure consists of the removal of histones from DNA and the opposite process of re-deposition of histones onto the DNA to re-establish chromatin. Another way to alter chromatin structure is via the addition or removal of post-translational modifications (PTMs) on specific amino acid residues on the histones. Histone PTMs exist in complex patterns including phosphorylation, acetylation, methylation and ubiquitination. PTMs on histones and DNA methylation of cytosines (collectively referred to as epigenetic marks) influence the ability of proteins to bind to the chromatin [<xref rid="R6" ref-type="bibr">6</xref>] which subsequently regulates the degree of compaction of the chromatin structure and the activities of the genome. For example, normal patterns of epigenetic marks are required for growth, development and the prevention of human disease. Growing evidence indicates that the patterns of epigenetic marks are altered during aging and human disease states including cancer [<xref rid="R7" ref-type="bibr">7</xref>]. In contrast to the genetic changes to the DNA sequence, epigenetic changes are reversible and therefore represent a promising therapeutic target for the treatment of human disease and hold equally promising potential for delaying the aging process.</p>
+      <p id="P5">Long-term maintenance of chromatin structure is required to promote normal biological functions during the aging process. Individuals with Hutchinson-Gilford progeria syndrome (HGPS), exhibit early aging characteristics such as hair-loss, decreased joint mobility, and heart disease that represent at least a subset of age-related problems [<xref rid="R8" ref-type="bibr">8</xref>]. Noteworthy, HGPS is accompanied by disrupted chromatin structure and nuclear organization. Moreover, the accelerated changes to the chromatin structure that occur in HGPS partially mirror the changes that occur normally in aged humans, suggesting a causal link between altered chromatin structure and aging.</p>
+      <p id="P6">In this review we will discuss the changes to chromatin structure that occur with age in multiple organisms and discuss recent publications that further demonstrate how chromatin structure impacts aging. Aging is accompanied by gross changes in DNA methylation, but this will not be discussed further here as this subject has been covered comprehensively in recent reviews [<xref rid="R9" ref-type="bibr">9</xref>,<xref rid="R10" ref-type="bibr">10</xref>]. Rather, we will summarize the changes to histone post-translational modifications, and changes in the abundance of histone proteins, histone variants and non-histone chromatin proteins during aging. These and future studies will enable the field to answer many of the remaining questions, such as what are all the age-related changes to chromatin? Which of the age related changes to chromatin cause aging? Which of the age related changes to chromatin function to delay premature aging? Which age related chromatin changes are simply a consequence rather than a cause of aging? We will also summarize very recent reports showing manipulations to chromatin structure can reverse age related changes and delay the aging process, demonstrating that the changes to the chromatin structure during aging are indeed a cause of aging.</p>
+    </sec>
+    <sec id="S2">
+      <title>Chromatin Modulation and Aging in Yeast</title>
+      <p id="P7">The budding yeast <italic>Saccharomyces cerevisiae</italic> has become a leading model organism for the study of aging as a consequence of the ease of its genetic manipulation, short cell division cycles, accuracy of lifespan determination and conservation of aging mechanisms across eukaryotes. One measurement of aging in budding yeast is the replicative lifespan (RLS), which is the number of times mother cells can divide to form daughter cells, modeling the finite mitotic divisions that occurs in metazoan cells. One of the first hints that chromatin structure changes during aging came from the realization that replicative aging in yeast is accompanied by the loss of transcriptional silencing which is thought to reflect a decrease in the degree of chromatin compaction [<xref rid="R11" ref-type="bibr">11</xref>].</p>
+      <p id="P8">Budding yeast maintain silencing in three main regions of the genome: the telomere proximal regions, the mating-type loci, and the ribosomal DNA (rDNA). Silencing of mating-type loci prevents sterility from occurring, which happens when gene products for both mating types are simultaneously expressed, preventing the cell from responding to mating pheromone. Aged yeast experience increased sterility due to the loss of silencing of the mating-type loci and subsequent expression of both mating-types [<xref rid="R11" ref-type="bibr">11</xref>]. Regions that contain repetitive DNA sequences such as the rDNA and telomere proximal DNA are silenced, which helps to prevent recombination, genomic instability and the formation of extra ribosomal chromosomal circles (ERCs). Silencing of reporter genes inserted near telomeres is lost upon replicative aging [<xref rid="R12" ref-type="bibr">12</xref>]. This occurs concomitantly with the movement of silencing proteins, including the NAD-dependent histone deacetylase (HDAC) Silencing information regulator 2 (Sir2), away from telomeric regions to the rDNA [<xref rid="R13" ref-type="bibr">13</xref>]. Failure to silence the rDNA results in higher levels of recombination and the formation of ERCs. Noteworthy, ERCs accumulate with age and can limit the RLS of yeast [<xref rid="R14" ref-type="bibr">14</xref>].</p>
+      <p id="P9">Sir2 mediated silencing of chromatin influences the RLS. Deletion of <italic>SIR2</italic> reduces the RLS, while introducing an extra genomic copy of <italic>SIR2</italic> extends the RLS, indicating that Sir2 is a limiting factor during aging [<xref rid="R15" ref-type="bibr">15</xref>]. Although the exact nature of the changes to the chromatin structure during aging were not clear, the increased genomic instability, the accumulation of ERCs, the loss of silencing with age and the ability of the Sir2 HDAC to influence yeast replicative lifespan were highly suggestive of a more relaxed chromatin structure during aging, at least at the silent regions of the genome.</p>
+      <sec id="S3">
+        <title>Sir2 and Telomeric Histone Acetylation</title>
+        <p id="P10">Recently, Sir2's function as a histone deacetylase has been shown to directly affect aging in budding yeast. Sir2 is the primary HDAC for acetylated lysine 16 of histone 4 (H4 K16ac) [<xref rid="R16" ref-type="bibr">16</xref>]. Old yeast cells were found to have decreased amounts of Sir2 protein compared to young cells and this is the likely reason for increased global levels of H4 K16ac in old cells [<xref rid="R17" ref-type="bibr">17</xref>] (<xref rid="T1" ref-type="table">Table 1</xref>; <xref rid="F1" ref-type="fig">Fig. 1</xref>). H4 K16ac is a unique epigenetic mark in that it inhibits the formation of the 30nm chromatin fiber and impedes the ability of chromatin to form cross-fiber interactions [<xref rid="R18" ref-type="bibr">18</xref>]. As such, increased levels of H4 K16ac in old cells presumably lead to a more open chromatin structure. Examination of H4 K16ac levels on the chromatin of old cells demonstrated increased levels of H4 K16ac at the X core and X elements within the telomeric regions examined [<xref rid="R17" ref-type="bibr">17</xref>]. The increased level of H4 K16ac with age also correlated with decreased silencing of reporter genes inserted near these telomere proximal DNA elements. Prevention of H4 K16ac by deletion of the gene encoding the relevant histone acetyl transferase (HAT), Something About Silencing 2 (SAS2), extended the RLS of yeast [<xref rid="R17" ref-type="bibr">17</xref>]. Conversely, mutation of H4 K16 to glutamine, which mimics permanent acetylation, decreased the RLS, directly showing that H4 K16ac modulates lifespan in budding yeast. As such, the ability of Sir2 to reduce H4 K16Ac levels partially explains the mechanism by which Sir2 promotes lifespan in budding yeast, though how lifespan is shortened as a consequence of loss of telomere-proximal silencing due to increased H4 K16ac remains unclear. As H4 K16ac inhibits higher order chromatin formation [<xref rid="R18" ref-type="bibr">18</xref>], the shortened lifespan of yeast with excess H4 K16Ac (achieved by deletion of the <italic>SIR2</italic> gene or the K16Q mutation to mimic acetylation) could be the result of a potentially more open global chromatin structure. Conversely, the extended lifespan of cells with reduced levels of H4 K16ac (achieved by overexpression of the Sir2 HDAC or deletion of the gene encoding the Sas2 HAT) could be due to a potentially more closed global chromatin structure. Indeed, analysis of histone H4 occupancy by chromatin immunoprecipitation (ChIP) analysis on DNA in mutants with altered H4 K16ac levels is consistent with these predictions [<xref rid="R17" ref-type="bibr">17</xref>].</p>
+      </sec>
+      <sec id="S4">
+        <title>Aging and Loss of Histones</title>
+        <p id="P11">Global age-related transcriptional changes have been documented in budding yeast. These changes in gene expression during aging correlate with the shifts in the metabolic profile, elevated stress responses and induction of DNA repair genes [<xref rid="R19" ref-type="bibr">19</xref>,<xref rid="R20" ref-type="bibr">20</xref>]. Some of these transcriptional changes are likely responses to the stresses of aging itself. However, given that loss of silencing is a characteristic of aging in budding yeast, the changes in transcription during aging could also stem from a general reduction in the stringency of transcriptional regulation due to chromatin alterations.</p>
+        <p id="P12">Another example of altered transcription during aging occurs at the genes encoding the core histones. Histone transcript levels increase during aging in wild type yeast [<xref rid="R20" ref-type="bibr">20</xref>]. By contrast, short-lived yeast deficient in telomerase activity or <italic>dna2-1</italic> mutants have decreased histone transcript levels in old cells [<xref rid="R20" ref-type="bibr">20</xref>]. Similarly, short-lived yeast mutants lacking the ability to acetylate H3 lysine 56 (H3 K56ac) also have reduced levels of histone transcripts. For example, mutants of the histone chaperone Anti-silencing function 1 (Asf1) or the HAT, Repressor of Ty 1 transposition 109 (Rtt109), which are essential for acetylation of H3 K56, or strains with an H3 K56A substitution that prevents acetylation of H3 K56, all exhibit a similar decrease of histone transcripts levels and dramatically reduced RLS [<xref rid="R17" ref-type="bibr">17</xref>,<xref rid="R21" ref-type="bibr">21</xref>,<xref rid="R22" ref-type="bibr">22</xref>]. Normally, H3 K56ac is enriched at the promoters of histone genes and is required for normal transcription of the cell cycle regulated histone genes [<xref rid="R21" ref-type="bibr">21</xref>]. Studies at model yeast promoters have revealed the likely mechanism whereby H3 K56ac promotes transcription of the histones genes - H3 K56ac promotes the disassembly of histone proteins from promoters to facilitate access by the transcriptional machinery [<xref rid="R23" ref-type="bibr">23</xref>]. Furthermore, while aged wild type yeast have elevated histone transcript levels, cells lacking the ability to acetylate H3 K56 fail to increase histone transcripts with age [<xref rid="R22" ref-type="bibr">22</xref>]. Counterintuitive to the role of H3 K56ac in promoting histone transcription and the increase in histone transcription that occurs during aging in wild type cells, bulk levels of acetylated H3 K56 (H3 K56ac) actually decreased with age [<xref rid="R17" ref-type="bibr">17</xref>] (<xref rid="F1" ref-type="fig">Fig. 1</xref>, <xref rid="T1" ref-type="table">Table 1</xref>). This could suggest that the bulk levels of H3 K56ac in the cell are not reflecting the occupancy of H3 K56ac at the promoters of the histone genes, or that other mechanisms are acting to promote histone transcription in old cells despite the reduced level of H3 K56ac. Notwithstanding, given the role of H3 K56ac in promoting rapid and efficient gene expression, the reduction in bulk H3 K56ac levels in old cells could exacerbate and potentially contribute to other age-related transcriptional changes.</p>
+        <p id="P13">In contrast to the increase in histone transcript levels during aging, investigation of total histone protein levels in aged cells found H3, H4 and H2A protein levels to be greatly reduced relative to young cells [<xref rid="R17" ref-type="bibr">17</xref>,<xref rid="R22" ref-type="bibr">22</xref>] (<xref rid="F1" ref-type="fig">Fig. 1</xref>, <xref rid="F2" ref-type="fig">Fig. 2</xref>). Perhaps the increase in histone transcripts that normally occurs during aging reflects a feed back mechanism to attempt to replace the histone proteins that are lost during aging. Additionally, the occupancy of histones on DNA declines in aged yeast relative to young populations as demonstrated by ChIP and chromatin fractionation experiments [<xref rid="R17" ref-type="bibr">17</xref>,<xref rid="R22" ref-type="bibr">22</xref>]. The loss of histone occupancy during aging occurred from many different genomic locations and included the silent regions near telomeres, the rDNA, and the mating-type loci but also included the promoter of a repressed gene (<italic>PHO5)</italic> (JF and JT unpublished data) and open reading frame of an active gene <italic>ACT1</italic>. Although this loss of histones during aging has not yet been demonstrated at every region of the genome, all regions sampled to date show a profound loss of histones during aging. Additionally, it is unlikely that the loss of histones that has been observed during aging merely reflects the accumulation of a dead cell population in the culture that for some reason completely lack any histones, because yeast cells exist in a metabolically active senescent state for an extremely long time after ceasing replicative divisions [<xref rid="R24" ref-type="bibr">24</xref>]. The transcriptional consequences of loss of histone proteins from the genome are likely to be profound. For example, experimental depletion of H4 alters transcription of many genes, particularly those near telomeric regions [<xref rid="R25" ref-type="bibr">25</xref>].</p>
+        <p id="P14">The loss of histone proteins during aging raises the question of whether loss of histones during aging is a cause of aging. Clearly there is a correlation between histone protein levels and lifespan in some mutants. For example the loss of histone protein occupancy on the DNA occurs after fewer generations in the <italic>asf1</italic>Δ and <italic>rtt109</italic>Δ mutants than in aged wild type yeast [<xref rid="R22" ref-type="bibr">22</xref>], providing a correlation between shortened lifespan and having a lower histone occupancy on the genome. Indeed, increasing the expression of H2A and H2B in short-lived <italic>asf1</italic>Δ mutants partially restored the lifespan [<xref rid="R22" ref-type="bibr">22</xref>], indicating that the low histone level is partially responsible for the decreased lifespan of the <italic>asf1</italic>Δ mutant. Furthermore, disruption of the histone information regulator complex (Hir), which is a repressor of histone transcription, causes elevated histone transcript levels and results in higher levels of H3 protein in aged <italic>hir1</italic>Δ mutants [<xref rid="R22" ref-type="bibr">22</xref>]. Indeed, the RLS of <italic>hir1</italic>Δ mutants is increased relative to wild type yeast [<xref rid="R22" ref-type="bibr">22</xref>]. The ultimate demonstration of a causal link between histone levels and aging was provided by the almost 50% increase in RLS that was achieved by inducing elevated levels of histones H3/H4 driven by the divergent pGAL1/10 promoters (<xref rid="F2" ref-type="fig">Fig. 2</xref>) [<xref rid="R22" ref-type="bibr">22</xref>]. Noteworthy, this degree of lifespan extension is greater than that achieved by any known single manipulation in yeast, including calorie restriction.</p>
+        <p id="P15">The profound loss of histone proteins in aged yeast is expected to lead to a more open chromatin structure. A more open chromatin structure in turn would enable inappropriate access of the transcription machinery and DNA damaging agents to the DNA [<xref rid="R26" ref-type="bibr">26</xref>,<xref rid="R27" ref-type="bibr">27</xref>] (<xref rid="F2" ref-type="fig">Fig. 2</xref>). Noteworthy, given that daughter yeast are rejuvenated, i.e. their age clock is set back to 0, the accumulation of mutations in the mother's genome is unlikely to be the major driving force that determines the replicative lifespan of yeast. The increased access of the transcription machinery to the DNA that likely results from histone loss with age may lead to elevated transcription of some genes (this could also explain the age-dependent increase in histone transcription), transcription of genes that should normally be repressed and the use of cryptic initiation sites in old cells. Clearly, these ideas now need to be thoroughly tested.</p>
+        <p id="P16">Throughout the cell cycle, histone proteins constantly leave the chromatin and are replaced, or “exchanged”, with free histone proteins. One could imagine that the lower concentration of histones in old cells is likely to lead to a smaller pool of free histones, which would limit the extent of histone exchange (<xref rid="F2" ref-type="fig">Fig. 2</xref>). If histone exchange is indeed reduced in old cells, this would limit the cells capacity to refresh the histone modification pattern on the genome, and may contribute to the alterations in patterns of epigenetic marks with age (<xref rid="T1" ref-type="table">Table 1</xref>, <xref rid="F1" ref-type="fig">Fig. 1</xref>). The consequence of reduced histone exchange would again be altered gene expression during aging.</p>
+        <p id="P17">Given that overexpressing histones can extend lifespan [<xref rid="R22" ref-type="bibr">22</xref>], it is tempting to speculate that the additional histones can restore the occupancy of histones on the DNA in old cells in order to reinstate the stringency of transcriptional regulation (<xref rid="F2" ref-type="fig">Fig. 2</xref>). Extra histones may also restore the rates of histone exchange in old cells, in order to prevent the age-dependent accumulation of detrimental histone modifications such as H4 K16ac on the genome. In this case, overexpression of histones would be expected to rejuvenate the chromatin structure and genomic functions of old cells back to that of young cells. Regardless of the mechanism, it is clear that increasing histone expression and reducing levels of H4 K16ac improves lifespan, indicating that the maintenance of chromatin structure is central to the aging process in budding yeast.</p>
+      </sec>
+      <sec id="S5">
+        <title>Spermidine Treatment Reduces N-terminal H3 Acetylation to Extend Lifespan</title>
+        <p id="P18">Further evidence indicating a link between histone modifications, chromatin maintenance, and aging is found through the effect of the polyamine spermidine on lifespan. Polyamines are small organic molecules derived from amino acids and are synthesized by all organisms. Polyamines promote cell proliferation and inhibit apoptosis and have been implicated in cancer because polyamine levels are increased in cancer [<xref rid="R28" ref-type="bibr">28</xref>]. Aged mammalian cells and old yeast have decreased levels of polyamine synthesis and subsequently decreased levels of polyamines (<xref rid="F1" ref-type="fig">Fig. 1</xref>, <xref rid="F3" ref-type="fig">Fig. 3</xref>). Yeast subjected to spermidine supplementation have increased chronological lifespan (CLS) and RLS [<xref rid="R29" ref-type="bibr">29</xref>] (<xref rid="F3" ref-type="fig">Fig. 3</xref>). Treatment with spermidine resulted in hypoacetylation of H3 K9, K14, and K18 during chronological aging by an apparent inhibition of HAT activity. Inactivation of HATs that acetylate H3 K9, K14, and K18 also extended RLS and reduced the response to spermidine treatment, indicating that lowering the levels of H3 N-terminal acetylation partially explains the mechanism whereby spermidine treatment extends lifespan [<xref rid="R29" ref-type="bibr">29</xref>]. The ability of reduced levels of H3 N-terminal acetylation and reduced levels of H4 K16Ac to extend lifespan is in contrast to the extended lifespan that results from increasing levels of H4 K5Ac and H4 K12Ac by deletion of the gene encoding the HDAC Rpd3 [<xref rid="R30" ref-type="bibr">30</xref>]. It is clear that not all lysine acetylations within the N-termini of histones are equivalent for lifespan extension, and this is probably explained by differences in the genes whose transcription are influenced by different histone acetylation marks.</p>
+        <p id="P19">In order to better understand the mechanism of lifespan extension, microarray analyses were performed in an attempt to identify genes whose expression is altered by spermidine treatment [<xref rid="R29" ref-type="bibr">29</xref>]. It was noted that several genes required for autophagy, such as <italic>ATG7</italic>, were upregulated (<xref rid="F3" ref-type="fig">Fig. 3</xref>). Autophagy is the major lysosomal degradation pathway that recycles damaged and potentially harmful cellular material [<xref rid="R31" ref-type="bibr">31</xref>]. Autophagy counteracts cell death and extends lifespan in various models of aging [<xref rid="R32" ref-type="bibr">32</xref>,<xref rid="R33" ref-type="bibr">33</xref>]. Indeed, yeast treated with spermidine exhibited elevated signs of autophagy and a reduction of necrosis, which is implicated in regulating lifespan via the Tor pathway [<xref rid="R29" ref-type="bibr">29</xref>,<xref rid="R34" ref-type="bibr">34</xref>] (<xref rid="F3" ref-type="fig">Fig. 3</xref>). Importantly, lifespan extension by spermidine treatment was not specific to yeast but also extended lifespan in <italic>Drosophila melanogaster</italic>, <italic>Caenorhabditis elegans</italic>, mice, and human cultured cells [<xref rid="R29" ref-type="bibr">29</xref>]. Furthermore, autophagy was required for lifespan extension by spermidine treatment in yeast, flies, and worms while spermidine treatment also induced autophagy in human cultured cells, indicating the conserved link between spermidine treatment, lifespan extension, and autophagy [<xref rid="R29" ref-type="bibr">29</xref>]. It is unclear how spermidine treatment leads to the elevated expression of the autophagy genes, because their promoters actually become enriched in H3 K18ac marks upon spermidine treatment (<xref rid="F3" ref-type="fig">Fig. 3</xref>) [<xref rid="R29" ref-type="bibr">29</xref>]. Clearly the situation is complicated, but these studies present intriguing causal links between chromatin structure, aging and lifespan extension..</p>
+      </sec>
+    </sec>
+    <sec id="S6">
+      <title>Chromatin Modulation during Mammalian Aging</title>
+      <p id="P20">Aging research in yeast has indicated that changes to the nuclear architecture and chromatin structure occur during aging and that lifespan can be positively or negatively affected by multiple types of chromatin manipulations. These lessons may also be relevant to mammalian aging. Micrococcal nuclease (MNase) digestion ladders become less discrete during aging in mammals [<xref rid="R35" ref-type="bibr">35</xref>,<xref rid="R36" ref-type="bibr">36</xref>]. MNase cleaves DNA between nucleosomes and blurring of the digestion ladder pattern indicates that the spacing of the nucleosomes may become more irregular with age. Furthermore, visual analysis of the 30nm fibers in aging fibroblasts indicates a progressive loss of density, suggesting loosening chromatin structure with age [<xref rid="R35" ref-type="bibr">35</xref>,<xref rid="R36" ref-type="bibr">36</xref>]. However, the analysis of changes to chromatin structure during aging in mammals should be revisited using improved modern day technologies, given that early studies reported reduced, increased or no change in MNase digestion during aging of metazoan cells [<xref rid="R37" ref-type="bibr">37</xref>]. Part of the reason for the contradictory results may depend on the fraction of senescent cells in the population and the genomic regions being studied, as some regions of the genome in senescent cells clearly becomes heterochromatinized, as indicated by the formation of SAHF (senescence associated heterochromatin foci) [<xref rid="R38" ref-type="bibr">38</xref>]. Presumably other regions of the genome become less compact during senescence because senescence is also accompanied by global loss of DNA methylation and loss of perinuclear heterochromatin [<xref rid="R39" ref-type="bibr">39</xref>,<xref rid="R40" ref-type="bibr">40</xref>].</p>
+      <p id="P21">Similar to the loss of silencing that occurs in old yeast cells, the ability to maintain heterochromatin also decreases in old mammals, shown by less efficient X-inactivation in old mice [<xref rid="R41" ref-type="bibr">41</xref>]. Genetic diseases, termed progeria, exist in mammals that partially mimic the aging process at an accelerated rate. These diseases are caused by mutations of genes involved in DNA repair, telomere maintenance, and nuclear architecture [<xref rid="R42" ref-type="bibr">42</xref>]. Representing a model for the aging process, lessons learned from progeria syndromes can be insightful for understanding how aging occurs.</p>
+      <sec id="S7">
+        <title>Progeria, Aging, and Nuclear Architecture Changes</title>
+        <p id="P22">Hutchinson-Gilford progeria syndrome (HGPS) greatly disrupts the nuclear architecture. HGPS can be caused by a mutation in the gene encoding Lamin A, that leads to defective splicing and results in a C-terminally truncated protein termed progerin [<xref rid="R43" ref-type="bibr">43</xref>]. Lamin A is a component of nuclear laminae and comprises part of the nuclear envelope. Progerin acts as a dominant gain-of-function protein, accumulating in the nuclear envelope and causing a number of nuclear defects including a decline in heterochromatin, including loss of heterochromatin protein 1 (HP1), decreased levels of trimethylated H3 K9 (me3) and H3 K27 me3 (markers of heterochromatin), lower levels of the H3 K27 methyltransferase EZH2, increased transcription from pericentric repeats, shortened telomere length, elevated levels of DNA damage foci, and a general disruption of nuclear organization [<xref rid="R40" ref-type="bibr">40</xref>,<xref rid="R43" ref-type="bibr">43</xref>].</p>
+        <p id="P23">Progerin expression is even detectable at low levels in many cell types from healthy young and old individuals [<xref rid="R44" ref-type="bibr">44</xref>]. Cells from aged humans exhibit elevated levels of DNA damage foci and altered localization of Lamin A that was similar to observations of HGPS cells. Cells from aged humans also experience a decline in the levels of HP1 protein and loss of H3 K9me3 [<xref rid="R44" ref-type="bibr">44</xref>], indicating that several components of HGPS and normal aging are shared, albeit occurring at an earlier age in HGPS. Expression of progerin is sufficient to induce these nuclear changes in normal cells, which in turn recapitulates several of the phenotypes observed in HGPS [<xref rid="R45" ref-type="bibr">45</xref>]. Intriguingly, by correcting the splicing defect of Lamin A mRNA, accomplished by blocking the cryptic splice site, the HGPS-like phenotypes of cells were reversed to resemble their WT counterparts [<xref rid="R46" ref-type="bibr">46</xref>]. The abnormal nuclear shape of the cells reverted to a normal morphology and markers of heterochromatin, HP1 protein and H3 K9me3, were restored to near wild type levels in the majority of cells. Strikingly, cells from old healthy individuals also experienced a reversal in cellular phenotype upon reducing the level of progerin by removing the cryptic splice site [<xref rid="R44" ref-type="bibr">44</xref>]. The capacity to revert the cellular function of progerin-containing cells and old donor cells by reducing the level of progerin strongly indicates that maintenance of the nuclear architecture contributes to delaying the aging process. In light of the phenotypic reversal of old cells, which have had time to accumulate deleterious mutations to DNA, the phenotypic changes observed upon reducing progerin levels point to reversible changes to macromolecules rather than permanent mutations to DNA as being the major cause of aging in mammals.</p>
+      </sec>
+      <sec id="S8">
+        <title>Reduction of NURD and HDAC1 Protein Levels Cause HGPS Phenotypes</title>
+        <p id="P24">Further characterization of HGPS cells has elucidated additional changes to chromatin modifying proteins that contribute to the accelerated aging phenotype observed in HPGS. Yeast-two hybrid screens with the region lacking in progerin identified interactions with the histone binding proteins RBBP4 and RBBP7 [<xref rid="R47" ref-type="bibr">47</xref>]. RBBP4 and RBBP7 function in the NUcleosome Remodeling Deacetylase (NURD) complex, which is involved in chromatin modulation. HGPS cells exhibited decreased RBBP4/7 protein levels, along with lower levels of the NURD subunits HDAC1 and MTA3 [<xref rid="R48" ref-type="bibr">48</xref>]. Limiting NURD function via knockdown of various subunits in HeLa or fibroblast cells caused a loss of HP1 and H3 K9me3 along with elevated levels of DNA damage foci. These phenotypes are characteristic of HGPS, highlighting the importance of NURD function and chromatin modification in HGPS. Analysis of healthy aged cells also demonstrates a decline in levels of the NURD subunits RBBP4/7 and HDAC1 [<xref rid="R47" ref-type="bibr">47</xref>]. Additional research will be required to determine exactly how decreased NURD activity causes aging phenotypes. However, it is possible that reduced HDAC1 levels could lead to elevated histone acetylation, which would lead to altered transcription.</p>
+      </sec>
+      <sec id="S9">
+        <title>Histone Modifications During Mammalian Aging and Senescence</title>
+        <p id="P25">Changes in the abundance of histone post translational modifications (PTMs) during aging has been investigated (<xref rid="T1" ref-type="table">Table 1</xref>). Evidence for changes in histone PTMs was gained from a wide range of organisms and tissue types including mitotically dividing cells and post-mitotic cells. These results have sometimes been contradictory given the variety of organs studied and variation between individuals. Solid studies examining histone acetylation levels found a bulk reduction of H4 acetylation in rat cerebral cortex neurons and cultured human cells [<xref rid="R49" ref-type="bibr">49</xref>]. Levels of H4 K20 trimethylation, a marker of constitutive heterochromatin, have been shown to increase in kidney and liver tissue with age [<xref rid="R50" ref-type="bibr">50</xref>]. This mimics the increase in H4 K20 trimethylation levels that is observed in HGPS [<xref rid="R40" ref-type="bibr">40</xref>]. An interesting characterization of monozygotic twins revealed that histone acetylation of H3 and H4 is similar for twin pairs at a young age but can change in abundance between the twins with increased age [<xref rid="R51" ref-type="bibr">51</xref>]. These studies clearly indicated that the abundance of histone modifications changes during aging in mammals, meriting further study.</p>
+        <p id="P26">Improvements in mass spectrometry and modification-specific antibodies enabled a recent comprehensive characterization of histone modifications of early passage and late passage human fibroblast cells (<xref rid="T1" ref-type="table">Table 1</xref>, <xref rid="F1" ref-type="fig">Fig. 1</xref>) [<xref rid="R52" ref-type="bibr">52</xref>]. Despite the fact that senescent cells do increase in abundance with increasing organismal age as observed in baboon fibroblast cells [<xref rid="R53" ref-type="bibr">53</xref>], the relevance of the study of entry into cell senescence in tissue culture to the process of aging in metazoans is hotly debated and has been reviewed elsewhere [<xref rid="R54" ref-type="bibr">54</xref>]. As such, a distinction is made in <xref rid="T1" ref-type="table">Table 1</xref> as to whether the studies of histone modifications in mammals were performed in tissue culture models (in vitro) or in organisms (in vivo). The decreased levels of H3 K56ac and the increased level of H4 K16ac observed in old yeast cells was also apparent in aged cycling human fibroblasts [<xref rid="R52" ref-type="bibr">52</xref>]. Furthermore, aged cycling human fibroblasts experience many changes to the levels and cell cycle patterns of specific acetylated and methylated histone residues (<xref rid="T1" ref-type="table">Table 1</xref>, <xref rid="F1" ref-type="fig">Fig. 1</xref>) [<xref rid="R52" ref-type="bibr">52</xref>]. As seen in aged mammalian tissue, levels of trimethylated H3 K9 decreased during aging in vitro [<xref rid="R52" ref-type="bibr">52</xref>]. Interestingly, there was a complete loss of H4 K20 me3 in aged cycling fibroblasts, in contrast to the increase observed in mammalian tissues and in HGPS. In general, many of the modifications that changed abundance during in vitro aging are involved in heterochromatin formation or DNA damage responses. Indeed, the large number of histone modifications whose abundance changes during aging complicates predictions of how, or if, each histone PTM change contributes to alteration of nuclear processes during aging. It will also be critical to determine whether each of these histone PTM changes occur as a consequence of aging or play a causal role in aging.</p>
+        <p id="P27">The abundance of histone modifications during aging is directly affected by changes in the levels of chromatin modifying proteins during age. In addition to the altered abundance of particular histone modifications during aging, chromatin structure is likely experiencing changes in the establishment and maintenance of chromatin due to the reduced levels of the histone chaperones Asf1A/B and CAF-1 during aging [<xref rid="R52" ref-type="bibr">52</xref>] (<xref rid="F4" ref-type="fig">Figure 4</xref>). Given that Asf1A/B and CAF-1 participate in chromatin assembly and / or chromatin disassembly during DNA replication, DNA repair, and transcription [<xref rid="R55" ref-type="bibr">55</xref>], the declining histone chaperone levels during aging could cause cells to less efficiently alter chromatin structure to facilitate nuclear processes.</p>
+      </sec>
+      <sec id="S10">
+        <title>Altered Histone Variant Abundance and Reduced Histone Protein Levels during Metazoan Aging</title>
+        <p id="P28">Histone variants have differences in amino acid residues that affect a diverse range of nuclear functions including DNA repair, transcription, and recombination [<xref rid="R56" ref-type="bibr">56</xref>]. The relative abundance of histone variants has been examined in various metazoans during aging [<xref rid="R57" ref-type="bibr">57</xref>-<xref rid="R59" ref-type="bibr">59</xref>]. The most notable change with likely functional consequences is the loss of the canonical histone H3.1 and H3.2 and the increase in the replication-independent variant H3.3 during aging. H3.3 exists in labile, more easily removable nucleosomes [<xref rid="R60" ref-type="bibr">60</xref>], and its enrichment in old cells could itself cause transcriptional changes during aging. Interestingly, aging in baboons is accompanied by an increase in the levels of HIRA [<xref rid="R61" ref-type="bibr">61</xref>], the histone chaperone involved in specifically incorporating H3.3 into chromatin.</p>
+        <p id="P29">Reinforcing the relevance of the loss of histone proteins from the genome observed during yeast aging, the similar result has been observed in aging human fibroblasts. Replicatively aged cells have markedly decreased levels (∼50%) of H3 and H4 relative to young cells (<xref rid="F4" ref-type="fig">Figure 4</xref>) [<xref rid="R52" ref-type="bibr">52</xref>]. Why would histone levels decrease during mammalian aging? SLBP, a protein required for specific stabilization of the histone mRNA, decreases in abundance in cells aged in vitro, which could contribute to the decreased levels of histone proteins in high population doubling fibroblasts [<xref rid="R52" ref-type="bibr">52</xref>]. It is not yet clear whether the reduced levels of SLBP1, histone chaperones and histone modifying enzymes in old cells reflects a defect in transcription and / or translation. Histone transcription occurs primarily during S-phase to coincide with DNA replication. This occurs as a consequence of cyclinE-Cdk2 mediated phosphorylation of the NPAT transactivator protein of histone gene expression.</p>
+        <p id="P30">During successive replicative cycles of the human fibroblast cells, telomeres undergo gradual shortening, which causes DNA damage signals to be persistently activated. Activation of the DNA damage checkpoint blocks phosphorylation of NPAT, inhibiting histone transcription [<xref rid="R63" ref-type="bibr">63</xref>]. Activation of the DNA damage checkpoint also results in degradation of histone mRNAs [<xref rid="R64" ref-type="bibr">64</xref>]. With a dramatically altered chromatin structure as a consequence of reduced histone levels and altered patterns of histone modifications, aged cells would presumably experience many changes to all genomic processes that are likely to be detrimental for the cell. Strikingly, the reactivation of telomerase in old fibroblasts not only increased the length of telomeres but also restored the abundance of Asf1, SLBP and histones and restored the pattern of histone modifications to that seen in young fibroblasts [<xref rid="R52" ref-type="bibr">52</xref>]. This very exciting result indicates that the telomere length mitotic ”age clock” is controlling the deterioration of the global chromatin structure with age, and that chromatin is likely to be a key mediator of the aging process.</p>
+      </sec>
+    </sec>
+    <sec sec-type="conclusions" id="S11">
+      <title>Conclusions</title>
+      <p id="P31">Growing evidence strongly implicates chromatin structure in the aging process. Aging is accompanied by changes in the chromatin structure, which is likely to impact all nuclear processes. As such, maintenance of chromatin structure is integral for maintaining proper cellular function during the aging process. Recent studies in budding yeast and human fibroblast cells show that chromatin is profoundly altered during aging due to the decreased level of histone proteins and changes to abundance of histone modifications. These alterations are likely to result in a more open chromatin structure during aging, presumably allowing inappropriate transcription. The identification of the specific transcripts that are misregulated as a consequence of the altered chromatin structure during aging that are causative for aging will provide a better understanding of the fundamental molecular basis of the aging process. Restoration of the aging chromatin structure back to a more youthful state by elevating histone expression, reducing H4 K16 acetylation, reducing H3 N-terminal acetylation, inactivation of the HDAC Rpd3, or blocking the signaling of persistent DNA damage from shortened telomeres, is sufficient to extend lifespan or revert the aged phenotype to a more youthful state. We expect that future studies will focus on understanding the molecular consequences of these manipulations that tighten the loose chromatin structure of old cells, in order to extend lifespan. Only in this way will the field be able to develop specific therapeutics to extend lifespan without the side effects that are likely to occur as a consequence of tightening the chromatin structure of the entire genome. It is certainly an exciting time for research at the intersection of aging and chromatin structure.</p>
+    </sec>
+  </body>
+  <back>
+    <fn-group>
+      <fn id="FN2">
+        <p content-type="publisher-disclaimer">This is a PDF file of an unedited manuscript that has been accepted for publication. As a service to our customers we are providing this early version of the manuscript. The manuscript will undergo copyediting, typesetting, and review of the resulting proof before it is published in its final citable form. Please note that during the production process errors may be discovered which could affect the content, and all legal disclaimers that apply to the journal pertain.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <ref id="R1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Luger</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Mader</surname>
+              <given-names>AW</given-names>
+            </name>
+            <name>
+              <surname>Richmond</surname>
+              <given-names>RK</given-names>
+            </name>
+            <name>
+              <surname>Sargent</surname>
+              <given-names>DF</given-names>
+            </name>
+            <name>
+              <surname>Richmond</surname>
+              <given-names>TJ</given-names>
+            </name>
+          </person-group>
+          <year>1997</year>
+          <article-title>Crystal structure of the nucleosome core particle at 2.8 A resolution</article-title>
+          <source>Nature</source>
+          <volume>389</volume>
+          <fpage>251</fpage>
+          <lpage>60</lpage>
+          <pub-id pub-id-type="pmid">9305837</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Busuttil</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Bahar</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Vijg</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Genome dynamics and transcriptional deregulation in aging</article-title>
+          <source>Neuroscience</source>
+          <volume>145</volume>
+          <fpage>1341</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">17137723</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Maslov</surname>
+              <given-names>AY</given-names>
+            </name>
+            <name>
+              <surname>Vijg</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Genome instability, cancer and aging</article-title>
+          <source>Biochim Biophys Acta</source>
+          <volume>1790</volume>
+          <fpage>963</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">19344750</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Villeponteau</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <year>1997</year>
+          <article-title>The heterochromatin loss model of aging</article-title>
+          <source>Exp Gerontol</source>
+          <volume>32</volume>
+          <fpage>383</fpage>
+          <lpage>94</lpage>
+          <pub-id pub-id-type="pmid">9315443</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Oberdoerffer</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Sinclair</surname>
+              <given-names>DA</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>The role of nuclear architecture in genomic instability and ageing</article-title>
+          <source>Nat Rev Mol Cell Biol</source>
+          <volume>8</volume>
+          <fpage>692</fpage>
+          <lpage>702</lpage>
+          <pub-id pub-id-type="pmid">17700626</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Peterson</surname>
+              <given-names>CL</given-names>
+            </name>
+            <name>
+              <surname>Laniel</surname>
+              <given-names>MA</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Histones and histone modifications</article-title>
+          <source>Curr Biol</source>
+          <volume>14</volume>
+          <fpage>R546</fpage>
+          <lpage>51</lpage>
+          <pub-id pub-id-type="pmid">15268870</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fraga</surname>
+              <given-names>MF</given-names>
+            </name>
+            <name>
+              <surname>Agrelo</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Esteller</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Cross-talk between aging and cancer: the epigenetic language</article-title>
+          <source>Ann N Y Acad Sci</source>
+          <volume>1100</volume>
+          <fpage>60</fpage>
+          <lpage>74</lpage>
+          <pub-id pub-id-type="pmid">17460165</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hennekam</surname>
+              <given-names>RC</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Hutchinson-Gilford progeria syndrome: review of the phenotype</article-title>
+          <source>Am J Med Genet A</source>
+          <volume>140</volume>
+          <fpage>2603</fpage>
+          <lpage>24</lpage>
+          <pub-id pub-id-type="pmid">16838330</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gravina</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Vijg</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Epigenetic factors in aging and longevity</article-title>
+          <source>Pflugers Arch</source>
+          <volume>459</volume>
+          <fpage>247</fpage>
+          <lpage>58</lpage>
+          <pub-id pub-id-type="pmid">19768466</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fraga</surname>
+              <given-names>MF</given-names>
+            </name>
+            <name>
+              <surname>Esteller</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Epigenetics and aging: the targets and the marks</article-title>
+          <source>Trends Genet</source>
+          <volume>23</volume>
+          <fpage>413</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">17559965</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Smeal</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Claus</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Kennedy</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Cole</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Guarente</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <year>1996</year>
+          <article-title>Loss of transcriptional silencing causes sterility in old mother cells of S. cerevisiae</article-title>
+          <source>Cell</source>
+          <volume>84</volume>
+          <fpage>633</fpage>
+          <lpage>42</lpage>
+          <pub-id pub-id-type="pmid">8598049</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kim</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Villeponteau</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Jazwinski</surname>
+              <given-names>SM</given-names>
+            </name>
+          </person-group>
+          <year>1996</year>
+          <article-title>Effect of replicative age on transcriptional silencing near telomeres in Saccharomyces cerevisiae</article-title>
+          <source>Biochem Biophys Res Commun</source>
+          <volume>219</volume>
+          <fpage>370</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="pmid">8604994</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R13">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kennedy</surname>
+              <given-names>BK</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>1997</year>
+          <article-title>Redistribution of silencing proteins from telomeres to the nucleolus is associated with extension of life span in S. cerevisiae</article-title>
+          <source>Cell</source>
+          <volume>89</volume>
+          <fpage>381</fpage>
+          <lpage>91</lpage>
+          <pub-id pub-id-type="pmid">9150138</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R14">
+        <label>14</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sinclair</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Guarente</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <year>1997</year>
+          <article-title>Extrachromosomal rDNA circles--a cause of aging in yeast</article-title>
+          <source>Cell</source>
+          <volume>91</volume>
+          <fpage>1033</fpage>
+          <lpage>42</lpage>
+          <pub-id pub-id-type="pmid">9428525</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R15">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kaeberlein</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>McVey</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Guarente</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <year>1999</year>
+          <article-title>The SIR2/3/4 complex and SIR2 alone promote longevity in Saccharomyces cerevisiae by two different mechanisms</article-title>
+          <source>Genes Dev</source>
+          <volume>13</volume>
+          <fpage>2570</fpage>
+          <lpage>80</lpage>
+          <pub-id pub-id-type="pmid">10521401</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R16">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Imai</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Armstrong</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Kaeberlein</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Guarente</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>Transcriptional silencing and longevity protein Sir2 is an NAD-dependent histone deacetylase</article-title>
+          <source>Nature</source>
+          <volume>403</volume>
+          <fpage>795</fpage>
+          <lpage>800</lpage>
+          <pub-id pub-id-type="pmid">10693811</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R17">
+        <label>17</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dang</surname>
+              <given-names>W</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>Histone H4 lysine 16 acetylation regulates cellular lifespan</article-title>
+          <source>Nature</source>
+          <volume>459</volume>
+          <fpage>802</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">19516333</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R18">
+        <label>18</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shogren-Knaak</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ishii</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Sun</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Pazin</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Davie</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Peterson</surname>
+              <given-names>CL</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Histone H4-K16 acetylation controls chromatin structure and protein interactions</article-title>
+          <source>Science</source>
+          <volume>311</volume>
+          <fpage>844</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">16469925</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R19">
+        <label>19</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yiu</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2008</year>
+          <article-title>Pathways change in expression during replicative aging in Saccharomyces cerevisiae</article-title>
+          <source>J Gerontol A Biol Sci Med Sci</source>
+          <volume>63</volume>
+          <fpage>21</fpage>
+          <lpage>34</lpage>
+          <pub-id pub-id-type="pmid">18245757</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R20">
+        <label>20</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lesur</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Campbell</surname>
+              <given-names>JL</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>The transcriptome of prematurely aging yeast cells is similar to that of telomerase-deficient cells</article-title>
+          <source>Mol Biol Cell</source>
+          <volume>15</volume>
+          <fpage>1297</fpage>
+          <lpage>312</lpage>
+          <pub-id pub-id-type="pmid">14718559</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R21">
+        <label>21</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xu</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Grunstein</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Acetylation in histone H3 globular domain regulates gene expression in yeast</article-title>
+          <source>Cell</source>
+          <volume>121</volume>
+          <fpage>375</fpage>
+          <lpage>85</lpage>
+          <pub-id pub-id-type="pmid">15882620</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R22">
+        <label>22</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Feser</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Truong</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Das</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Carson</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Kieft</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Harkness</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Tyler</surname>
+              <given-names>JK</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>Elevated histone expression promotes life span extension</article-title>
+          <source>Mol Cell</source>
+          <volume>39</volume>
+          <fpage>724</fpage>
+          <lpage>35</lpage>
+          <pub-id pub-id-type="pmid">20832724</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R23">
+        <label>23</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Williams</surname>
+              <given-names>SK</given-names>
+            </name>
+            <name>
+              <surname>Truong</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Tyler</surname>
+              <given-names>JK</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Acetylation in the globular core of histone H3 on lysine-56 promotes chromatin disassembly during transcriptional activation</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <volume>105</volume>
+          <fpage>9000</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="pmid">18577595</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R24">
+        <label>24</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mortimer</surname>
+              <given-names>RK</given-names>
+            </name>
+            <name>
+              <surname>Johnston</surname>
+              <given-names>JR</given-names>
+            </name>
+          </person-group>
+          <year>1959</year>
+          <article-title>Life span of individual yeast cells</article-title>
+          <source>Nature</source>
+          <volume>183</volume>
+          <fpage>1751</fpage>
+          <lpage>2</lpage>
+          <pub-id pub-id-type="pmid">13666896</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R25">
+        <label>25</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wyrick</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Holstege</surname>
+              <given-names>FC</given-names>
+            </name>
+            <name>
+              <surname>Jennings</surname>
+              <given-names>EG</given-names>
+            </name>
+            <name>
+              <surname>Causton</surname>
+              <given-names>HC</given-names>
+            </name>
+            <name>
+              <surname>Shore</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Grunstein</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Lander</surname>
+              <given-names>ES</given-names>
+            </name>
+            <name>
+              <surname>Young</surname>
+              <given-names>RA</given-names>
+            </name>
+          </person-group>
+          <year>1999</year>
+          <article-title>Chromosomal landscape of nucleosome-dependent gene expression and silencing in yeast</article-title>
+          <source>Nature</source>
+          <volume>402</volume>
+          <fpage>418</fpage>
+          <lpage>21</lpage>
+          <pub-id pub-id-type="pmid">10586882</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R26">
+        <label>26</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ljungman</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hanawalt</surname>
+              <given-names>PC</given-names>
+            </name>
+          </person-group>
+          <year>1992</year>
+          <article-title>Efficient protection against oxidative DNA damage in chromatin</article-title>
+          <source>Mol Carcinog</source>
+          <volume>5</volume>
+          <fpage>264</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">1323299</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R27">
+        <label>27</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Enright</surname>
+              <given-names>HU</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>Hebbel</surname>
+              <given-names>RP</given-names>
+            </name>
+          </person-group>
+          <year>1992</year>
+          <article-title>Nucleosomal histone protein protects DNA from iron-mediated damage</article-title>
+          <source>Nucleic Acids Res</source>
+          <volume>20</volume>
+          <fpage>3341</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="pmid">1630905</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R28">
+        <label>28</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gerner</surname>
+              <given-names>EW</given-names>
+            </name>
+            <name>
+              <surname>Meyskens</surname>
+              <given-names>FL</given-names>
+              <suffix>Jr</suffix>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Polyamines and cancer: old molecules, new understanding</article-title>
+          <source>Nat Rev Cancer</source>
+          <volume>4</volume>
+          <fpage>781</fpage>
+          <lpage>92</lpage>
+          <pub-id pub-id-type="pmid">15510159</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R29">
+        <label>29</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Eisenberg</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2009</year>
+          <article-title>Induction of autophagy by spermidine promotes longevity</article-title>
+          <source>Nat Cell Biol</source>
+          <volume>11</volume>
+          <fpage>1305</fpage>
+          <lpage>14</lpage>
+          <pub-id pub-id-type="pmid">19801973</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R30">
+        <label>30</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kim</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Benguria</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Lai</surname>
+              <given-names>CY</given-names>
+            </name>
+            <name>
+              <surname>Jazwinski</surname>
+              <given-names>SM</given-names>
+            </name>
+          </person-group>
+          <year>1999</year>
+          <article-title>Modulation of lifespan by histone deacetylase genes in Saccharomyces cerevisiae</article-title>
+          <source>Mol Biol Cell</source>
+          <volume>10</volume>
+          <fpage>3125</fpage>
+          <lpage>36</lpage>
+          <pub-id pub-id-type="pmid">10512855</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R31">
+        <label>31</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mizushima</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Levine</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Cuervo</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Klionsky</surname>
+              <given-names>DJ</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Autophagy fights disease through cellular self-digestion</article-title>
+          <source>Nature</source>
+          <volume>451</volume>
+          <fpage>1069</fpage>
+          <lpage>75</lpage>
+          <pub-id pub-id-type="pmid">18305538</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R32">
+        <label>32</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Juhasz</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Erdi</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Sass</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Neufeld</surname>
+              <given-names>TP</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Atg7-dependent autophagy promotes neuronal health, stress tolerance, and longevity but is dispensable for metamorphosis in Drosophila</article-title>
+          <source>Genes Dev</source>
+          <volume>21</volume>
+          <fpage>3061</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="pmid">18056421</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R33">
+        <label>33</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Melendez</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Talloczy</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Seaman</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Eskelinen</surname>
+              <given-names>EL</given-names>
+            </name>
+            <name>
+              <surname>Hall</surname>
+              <given-names>DH</given-names>
+            </name>
+            <name>
+              <surname>Levine</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Autophagy genes are essential for dauer development and life-span extension in C. elegans</article-title>
+          <source>Science</source>
+          <volume>301</volume>
+          <fpage>1387</fpage>
+          <lpage>91</lpage>
+          <pub-id pub-id-type="pmid">12958363</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R34">
+        <label>34</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Powers</surname>
+              <given-names>RW</given-names>
+              <suffix>3rd</suffix>
+            </name>
+            <name>
+              <surname>Kaeberlein</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Caldwell</surname>
+              <given-names>SD</given-names>
+            </name>
+            <name>
+              <surname>Kennedy</surname>
+              <given-names>BK</given-names>
+            </name>
+            <name>
+              <surname>Fields</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Extension of chronological life span in yeast by decreased TOR pathway signaling</article-title>
+          <source>Genes Dev</source>
+          <volume>20</volume>
+          <fpage>174</fpage>
+          <lpage>84</lpage>
+          <pub-id pub-id-type="pmid">16418483</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R35">
+        <label>35</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ishimi</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Kojima</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Takeuchi</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Miyamoto</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Yamada</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hanaoka</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <year>1987</year>
+          <article-title>Changes in chromatin structure during aging of human skin fibroblasts</article-title>
+          <source>Exp Cell Res</source>
+          <volume>169</volume>
+          <fpage>458</fpage>
+          <lpage>67</lpage>
+          <pub-id pub-id-type="pmid">3556427</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R36">
+        <label>36</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Macieira-Coelho</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Puvion-Dutilleul</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <year>1989</year>
+          <article-title>Evaluation of the reorganization in the high-order structure of DNA occurring during cell senescence</article-title>
+          <source>Mutat Res</source>
+          <volume>219</volume>
+          <fpage>165</fpage>
+          <lpage>70</lpage>
+          <pub-id pub-id-type="pmid">2739673</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R37">
+        <label>37</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Medvedev</surname>
+              <given-names>ZA</given-names>
+            </name>
+          </person-group>
+          <year>1984</year>
+          <article-title>Age changes of chromatin. A review</article-title>
+          <source>Mech Ageing Dev</source>
+          <volume>28</volume>
+          <fpage>139</fpage>
+          <lpage>54</lpage>
+          <pub-id pub-id-type="pmid">6394910</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R38">
+        <label>38</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Narita</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Nunez</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Heard</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>AW</given-names>
+            </name>
+            <name>
+              <surname>Hearn</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Spector</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Hannon</surname>
+              <given-names>GJ</given-names>
+            </name>
+            <name>
+              <surname>Lowe</surname>
+              <given-names>SW</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Rb-mediated heterochromatin formation and silencing of E2F target genes during cellular senescence</article-title>
+          <source>Cell</source>
+          <volume>113</volume>
+          <fpage>703</fpage>
+          <lpage>16</lpage>
+          <pub-id pub-id-type="pmid">12809602</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R39">
+        <label>39</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shin</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Kucia</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ratajczak</surname>
+              <given-names>MZ</given-names>
+            </name>
+          </person-group>
+          <article-title>Nuclear and Chromatin Reorganization during Cell Senescence and Aging - A Mini-Review</article-title>
+          <source>Gerontology</source>
+        </element-citation>
+      </ref>
+      <ref id="R40">
+        <label>40</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shumaker</surname>
+              <given-names>DK</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2006</year>
+          <article-title>Mutant nuclear lamin A leads to progressive alterations of epigenetic control in premature aging</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <volume>103</volume>
+          <fpage>8703</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">16738054</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R41">
+        <label>41</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cattanach</surname>
+              <given-names>BM</given-names>
+            </name>
+          </person-group>
+          <year>1974</year>
+          <article-title>Position effect variegation in the mouse</article-title>
+          <source>Genet Res</source>
+          <volume>23</volume>
+          <fpage>291</fpage>
+          <lpage>306</lpage>
+          <pub-id pub-id-type="pmid">4435357</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R42">
+        <label>42</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schumacher</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Garinis</surname>
+              <given-names>GA</given-names>
+            </name>
+            <name>
+              <surname>Hoeijmakers</surname>
+              <given-names>JH</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Age to survive: DNA damage and aging</article-title>
+          <source>Trends Genet</source>
+          <volume>24</volume>
+          <fpage>77</fpage>
+          <lpage>85</lpage>
+          <pub-id pub-id-type="pmid">18192065</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R43">
+        <label>43</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Burtner</surname>
+              <given-names>CR</given-names>
+            </name>
+            <name>
+              <surname>Kennedy</surname>
+              <given-names>BK</given-names>
+            </name>
+          </person-group>
+          <article-title>Progeria syndromes and ageing: what is the connection?</article-title>
+          <source>Nat Rev Mol Cell Biol</source>
+          <volume>11</volume>
+          <fpage>567</fpage>
+          <lpage>78</lpage>
+          <pub-id pub-id-type="pmid">20651707</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R44">
+        <label>44</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Scaffidi</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Misteli</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Lamin A-dependent nuclear defects in human aging</article-title>
+          <source>Science</source>
+          <volume>312</volume>
+          <fpage>1059</fpage>
+          <lpage>63</lpage>
+          <pub-id pub-id-type="pmid">16645051</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R45">
+        <label>45</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Scaffidi</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Misteli</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Lamin A-dependent misregulation of adult stem cells associated with accelerated ageing</article-title>
+          <source>Nat Cell Biol</source>
+          <volume>10</volume>
+          <fpage>452</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">18311132</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R46">
+        <label>46</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Scaffidi</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Misteli</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Reversal of the cellular phenotype in the premature aging disease Hutchinson-Gilford progeria syndrome</article-title>
+          <source>Nat Med</source>
+          <volume>11</volume>
+          <fpage>440</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="pmid">15750600</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R47">
+        <label>47</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pegoraro</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Misteli</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>The central role of chromatin maintenance in aging</article-title>
+          <source>Aging (Albany NY)</source>
+          <volume>1</volume>
+          <fpage>1017</fpage>
+          <lpage>22</lpage>
+          <pub-id pub-id-type="pmid">20157584</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R48">
+        <label>48</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pegoraro</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Kubben</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Wickert</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Gohler</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Hoffmann</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Misteli</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Ageing-related chromatin defects through loss of the NURD complex</article-title>
+          <source>Nat Cell Biol</source>
+          <volume>11</volume>
+          <fpage>1261</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">19734887</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R49">
+        <label>49</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ryan</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Cristofalo</surname>
+              <given-names>VJ</given-names>
+            </name>
+          </person-group>
+          <year>1972</year>
+          <article-title>Histone acetylation during aging of human cells in culture</article-title>
+          <source>Biochem Biophys Res Commun</source>
+          <volume>48</volume>
+          <fpage>735</fpage>
+          <lpage>42</lpage>
+          <pub-id pub-id-type="pmid">4636644</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R50">
+        <label>50</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sarg</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Koutzamani</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Helliger</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Rundquist</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Lindner</surname>
+              <given-names>HH</given-names>
+            </name>
+          </person-group>
+          <year>2002</year>
+          <article-title>Postsynthetic trimethylation of histone H4 at lysine 20 in mammalian tissues is associated with aging</article-title>
+          <source>J Biol Chem</source>
+          <volume>277</volume>
+          <fpage>39195</fpage>
+          <lpage>201</lpage>
+          <pub-id pub-id-type="pmid">12154089</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R51">
+        <label>51</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fraga</surname>
+              <given-names>MF</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2005</year>
+          <article-title>Epigenetic differences arise during the lifetime of monozygotic twins</article-title>
+          <source>Proc Natl Acad Sci U S A</source>
+          <volume>102</volume>
+          <fpage>10604</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">16009939</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R52">
+        <label>52</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>O'Sullivan</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Kubicek</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Schreiber</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Karlsleder</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>Reduced histone biosynthesis and chromatin changes arising from a damage signal at telomeres</article-title>
+        </element-citation>
+      </ref>
+      <ref id="R53">
+        <label>53</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Herbig</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Ferreira</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Condel</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Carey</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Sedivy</surname>
+              <given-names>JM</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Cellular senescence in aging primates</article-title>
+          <source>Science</source>
+          <volume>311</volume>
+          <fpage>1257</fpage>
+          <pub-id pub-id-type="pmid">16456035</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R54">
+        <label>54</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Campisi</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Sedivy</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>How does proliferative homeostasis change with age? What causes it and how does it contribute to aging?</article-title>
+          <source>J Gerontol A Biol Sci Med Sci</source>
+          <volume>64</volume>
+          <fpage>164</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="pmid">19228778</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R55">
+        <label>55</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Eitoku</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Sato</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Senda</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Horikoshi</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Histone chaperones: 30 years from isolation to elucidation of the mechanisms of nucleosome assembly and disassembly</article-title>
+          <source>Cell Mol Life Sci</source>
+          <volume>65</volume>
+          <fpage>414</fpage>
+          <lpage>44</lpage>
+          <pub-id pub-id-type="pmid">17955179</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R56">
+        <label>56</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Talbert</surname>
+              <given-names>PB</given-names>
+            </name>
+            <name>
+              <surname>Henikoff</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>Histone variants--ancient wrap artists of the epigenome</article-title>
+          <source>Nat Rev Mol Cell Biol</source>
+          <volume>11</volume>
+          <fpage>264</fpage>
+          <lpage>75</lpage>
+          <pub-id pub-id-type="pmid">20197778</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R57">
+        <label>57</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pina</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Suau</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <year>1987</year>
+          <article-title>Changes in histones H2A and H3 variant composition in differentiating and mature rat brain cortical neurons</article-title>
+          <source>Dev Biol</source>
+          <volume>123</volume>
+          <fpage>51</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">3622934</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R58">
+        <label>58</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rogakou</surname>
+              <given-names>EP</given-names>
+            </name>
+            <name>
+              <surname>Sekeri-Pataryas</surname>
+              <given-names>KE</given-names>
+            </name>
+          </person-group>
+          <year>1999</year>
+          <article-title>Histone variants of H2A and H3 families are regulated during in vitro aging in the same manner as during differentiation</article-title>
+          <source>Exp Gerontol</source>
+          <volume>34</volume>
+          <fpage>741</fpage>
+          <lpage>54</lpage>
+          <pub-id pub-id-type="pmid">10579635</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R59">
+        <label>59</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Urban</surname>
+              <given-names>MK</given-names>
+            </name>
+            <name>
+              <surname>Zweidler</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>1983</year>
+          <article-title>Changes in nucleosomal core histone variants during chicken development and maturation</article-title>
+          <source>Dev Biol</source>
+          <volume>95</volume>
+          <fpage>421</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">6825941</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R60">
+        <label>60</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jin</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Zang</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Wei</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Cui</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Peng</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Felsenfeld</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>H3.3/H2A.Z double variant-containing nucleosomes mark ‘nucleosome-free regions’ of active promoters and other regulatory regions</article-title>
+          <source>Nat Genet</source>
+          <volume>41</volume>
+          <fpage>941</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="pmid">19633671</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R61">
+        <label>61</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jeyapalan</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Ferreira</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Sedivy</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Herbig</surname>
+              <given-names>U</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Accumulation of senescent cells in mitotic tissue of aging primates</article-title>
+          <source>Mech Ageing Dev</source>
+          <volume>128</volume>
+          <fpage>36</fpage>
+          <lpage>44</lpage>
+          <pub-id pub-id-type="pmid">17116315</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R62">
+        <label>62</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Berkowitz</surname>
+              <given-names>EM</given-names>
+            </name>
+            <name>
+              <surname>Sanborn</surname>
+              <given-names>AC</given-names>
+            </name>
+            <name>
+              <surname>Vaughan</surname>
+              <given-names>DW</given-names>
+            </name>
+          </person-group>
+          <year>1983</year>
+          <article-title>Chromatin structure in neuronal and neuroglial cell nuclei as a function of age</article-title>
+          <source>J Neurochem</source>
+          <volume>41</volume>
+          <fpage>516</fpage>
+          <lpage>23</lpage>
+          <pub-id pub-id-type="pmid">6875550</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R63">
+        <label>63</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>DeRan</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Pulvino</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Greene</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Su</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Transcriptional activation of histone genes requires NPAT-dependent recruitment of TRRAP-Tip60 complex to histone promoters during the G1/S phase transition</article-title>
+          <source>Mol Cell Biol</source>
+          <volume>28</volume>
+          <fpage>435</fpage>
+          <lpage>47</lpage>
+          <pub-id pub-id-type="pmid">17967892</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R64">
+        <label>64</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kaygun</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Marzluff</surname>
+              <given-names>WF</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Regulated degradation of replication-dependent histone mRNAs requires both ATR and Upf1</article-title>
+          <source>Nat Struct Mol Biol</source>
+          <volume>12</volume>
+          <fpage>794</fpage>
+          <lpage>800</lpage>
+          <pub-id pub-id-type="pmid">16086026</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R65">
+        <label>65</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pina</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Martinez</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Suau</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <year>1988</year>
+          <article-title>Differential acetylation of core histones in rat cerebral cortex neurons during development and aging</article-title>
+          <source>Eur J Biochem</source>
+          <volume>174</volume>
+          <fpage>311</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="pmid">3383848</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R66">
+        <label>66</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Braig</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2005</year>
+          <article-title>Oncogene-induced senescence as an initial barrier in lymphoma development</article-title>
+          <source>Nature</source>
+          <volume>436</volume>
+          <fpage>660</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="pmid">16079837</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R67">
+        <label>67</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kawakami</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Nakamura</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Ishigami</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Goto</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Takahashi</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Age-related difference of site-specific histone modifications in rat liver</article-title>
+          <source>Biogerontology</source>
+          <volume>10</volume>
+          <fpage>415</fpage>
+          <lpage>21</lpage>
+          <pub-id pub-id-type="pmid">18814051</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R68">
+        <label>68</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Huang</surname>
+              <given-names>JC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2007</year>
+          <article-title>Changes in histone acetylation during postovulatory aging of mouse oocyte</article-title>
+          <source>Biol Reprod</source>
+          <volume>77</volume>
+          <fpage>666</fpage>
+          <lpage>70</lpage>
+          <pub-id pub-id-type="pmid">17582009</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R69">
+        <label>69</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bracken</surname>
+              <given-names>AP</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <year>2007</year>
+          <article-title>The Polycomb group proteins bind throughout the INK4A-ARF locus and are disassociated in senescent cells</article-title>
+          <source>Genes Dev</source>
+          <volume>21</volume>
+          <fpage>525</fpage>
+          <lpage>30</lpage>
+          <pub-id pub-id-type="pmid">17344414</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R70">
+        <label>70</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pina</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Suau</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <year>1985</year>
+          <article-title>Core histone variants and ubiquitinated histones 2A and 2B of rat cerebral cortex neurons</article-title>
+          <source>Biochem Biophys Res Commun</source>
+          <volume>133</volume>
+          <fpage>505</fpage>
+          <lpage>10</lpage>
+          <pub-id pub-id-type="pmid">3002348</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+    <glossary id="GL">
+      <title>Abbreviations</title>
+      <def-list>
+        <def-item>
+          <term id="G1">PTMs</term>
+          <def>
+            <p>Post-translational modifications</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G2">rDNA</term>
+          <def>
+            <p>Ribosomal DNA</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G3">H4 K16ac</term>
+          <def>
+            <p>Histone 4 lysine 16 acetylation</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G4">Sir</term>
+          <def>
+            <p>Silencing information regulator</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G5">HDAC</term>
+          <def>
+            <p>Histone deacetylase</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G6">HAT</term>
+          <def>
+            <p>Histone acetyltransferase</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G7">SAS</term>
+          <def>
+            <p>Something about silencing</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G8">H3 K56ac</term>
+          <def>
+            <p>Histone 3 lysine 56 acetylation</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G9">Asf1</term>
+          <def>
+            <p>Anti-silencing function 1</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G10">Rtt109</term>
+          <def>
+            <p>Repressor of Ty 1 transposition</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G11">WT</term>
+          <def>
+            <p>Wild type</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G12">ChIP</term>
+          <def>
+            <p>Chromatin immunoprecipitation</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G13">Hir</term>
+          <def>
+            <p>Histone information regulator</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G14">RLS</term>
+          <def>
+            <p>replicative lifespan</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G15">ERCs</term>
+          <def>
+            <p>Extrachromosomal rDNA circles</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G16">HGPS</term>
+          <def>
+            <p>Hutchinson-Gilford progeria syndrome</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G17">NURD</term>
+          <def>
+            <p>NUcleosome Remodeling Deacetylase</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G18">CLS</term>
+          <def>
+            <p>Chronological lifespan</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G19">SAHFs</term>
+          <def>
+            <p>Senescent-associated heterochromatin foci</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+  </back>
+  <floats-group>
+    <fig id="F1" orientation="portrait" position="float">
+      <label>Figure 1</label>
+      <caption>
+        <title>Alterations to Chromatin Structure During Aging in Eukaryotes</title>
+        <p>A) Budding yeast undergo changes to histone levels and histone modifications with increased replicative age. Additionally, changes to chromatin modifying proteins and organic molecules that impact chromatin structure occur with increased age. B) Mammalian cells experience changes in histone modifications during successive mitotic divisions in vitro. Levels of histones, histone modifications, and chromatin modifying proteins are altered during the aging process.</p>
+      </caption>
+      <graphic xlink:href="nihms256663f1"/>
+    </fig>
+    <fig id="F2" orientation="portrait" position="float">
+      <label>Figure 2</label>
+      <caption>
+        <title>Histones Levels Decline During Aging</title>
+        <p>Young budding yeast cells have high levels of histones that facilitates proper chromatin assembly and histone exchange. With increasing age, histone levels decline, which may cause chromatin to be more open and have reducing histone exchange. This potentially leads to inappropriate access to the DNA, disrupting transcriptional regulation. Increasing the histone supply may allow the formation of tighter chromatin structure, thereby restoring transcriptional regulation and causing lifespan to be extended.</p>
+      </caption>
+      <graphic xlink:href="nihms256663f2"/>
+    </fig>
+    <fig id="F3" orientation="portrait" position="float">
+      <label>Figure 3</label>
+      <caption>
+        <title>Spermidine Treatment Extends Lifespan via Chromatin Alterations</title>
+        <p>During aging, yeast experience a decline in polyamine levels that disrupts cellular functions and leads to necrotic death. The addition of spermidine causes a global decrease in H3 N-terminal acetylation and increases the expression of autophagic genes. Autophagic responses reduce the accumulation of damaged molecules and delay the onset of necrosis, extending lifespan.</p>
+      </caption>
+      <graphic xlink:href="nihms256663f3"/>
+    </fig>
+    <fig id="F4" orientation="portrait" position="float">
+      <label>Figure 4</label>
+      <caption>
+        <title>Persistent DNA Damage Signals From Shortened Telomeres Disrupt Chromatin Structure</title>
+        <p>Young fibroblast cells have long telomeres and high levels of histones and chromatin modifying proteins. Successive mitotic divisions leads to shortened telomeres that cause persistent DNA damage signals. Asf1 and CAF-1 levels are reduced which disrupts chromatin structure. Reduced SLBP levels reduce the stability of the histone mRNAs during aging. Chromatin structure is likely to be more open in some regions of the genome, resulting in inappropriate access to the DNA and misregulated transcription. Reactivating telomerase extends the telomeres and halts the DNA damage signal, causing protein levels and chromatin structure to be restored.</p>
+      </caption>
+      <graphic xlink:href="nihms256663f4"/>
+    </fig>
+    <table-wrap id="T1" position="float" orientation="portrait">
+      <label>Table 1</label>
+      <caption>
+        <title>Comparison of Histone Variants and Modifications that Change with Age</title>
+        <p>Compilation of known changes to the abundance of histone modifications and histone variants that change from young to old organisms (in vivo) or cells (in vitro).</p>
+      </caption>
+      <table frame="box" rules="cols">
+        <thead>
+          <tr>
+            <th valign="top" align="left" rowspan="1" colspan="1">Modification</th>
+            <th valign="top" align="left" rowspan="1" colspan="1">Change with age</th>
+            <th valign="top" align="left" rowspan="1" colspan="1">Organism</th>
+            <th valign="top" align="left" rowspan="1" colspan="1">Citation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="bottom" colspan="4" rowspan="1">
+<hr/></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Global histone acetylation</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Decrease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Human (<italic>in vitro</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R49" ref-type="bibr">49</xref>]</td>
+          </tr>
+          <tr>
+            <td valign="bottom" colspan="4" rowspan="1">
+<hr/></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Bulk H4 ac</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Decrease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Rat (<italic>in vivo</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R65" ref-type="bibr">65</xref>]</td>
+          </tr>
+          <tr>
+            <td valign="bottom" colspan="4" rowspan="1">
+<hr/></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">H3 K9me</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Increase</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Human (<italic>in vitro</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R52" ref-type="bibr">52</xref>]</td>
+          </tr>
+          <tr>
+            <td valign="bottom" colspan="4" rowspan="1">
+<hr/></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">H3 K9me2</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Decrease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Human (<italic>in vitro</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R52" ref-type="bibr">52</xref>]</td>
+          </tr>
+          <tr>
+            <td valign="bottom" colspan="4" rowspan="1">
+<hr/></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">H3 K9me3</td>
+            <td rowspan="2" align="left" valign="top" colspan="1">Decrease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Human (<italic>in vivo</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R44" ref-type="bibr">44</xref>]</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">(<italic>in vitro</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R52" ref-type="bibr">52</xref>]</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Increase</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mouse (<italic>in vivo</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R66" ref-type="bibr">66</xref>]</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Increase</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Fly (<italic>in vivo</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Wood, 2010</td>
+          </tr>
+          <tr>
+            <td valign="bottom" colspan="4" rowspan="1">
+<hr/></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">H3 K9ac</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Decrease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Rat (<italic>in vivo</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R67" ref-type="bibr">67</xref>]</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Increase</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Human (<italic>in vitro</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R52" ref-type="bibr">52</xref>]</td>
+          </tr>
+          <tr>
+            <td valign="bottom" colspan="4" rowspan="1">
+<hr/></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">H3 S10ph</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Increase,</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Rat (<italic>in vivo</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R67" ref-type="bibr">67</xref>]</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Decrease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Human (<italic>in vitro</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R52" ref-type="bibr">52</xref>]</td>
+          </tr>
+          <tr>
+            <td valign="bottom" colspan="4" rowspan="1">
+<hr/></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">H3 K14ac</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Increase</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mouse (<italic>in vivo</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R68" ref-type="bibr">68</xref>]</td>
+          </tr>
+          <tr>
+            <td valign="bottom" colspan="4" rowspan="1">
+<hr/></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">H3 K27me3</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Decrease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Human (<italic>in vitro</italic>), Mouse (<italic>in vitro</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R69" ref-type="bibr">69</xref>]</td>
+          </tr>
+          <tr>
+            <td valign="bottom" colspan="4" rowspan="1">
+<hr/></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">H4 K8ac</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Increase</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mouse (<italic>in vivo</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R68" ref-type="bibr">68</xref>]</td>
+          </tr>
+          <tr>
+            <td valign="bottom" colspan="4" rowspan="1">
+<hr/></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">H4 K12ac</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Increase</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Mouse (<italic>in vivo</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R68" ref-type="bibr">68</xref>]</td>
+          </tr>
+          <tr>
+            <td valign="bottom" colspan="4" rowspan="1">
+<hr/></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">H3 K56ac</td>
+            <td rowspan="2" align="left" valign="top" colspan="1">Decrease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Yeast (<italic>in vivo</italic>),</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R17" ref-type="bibr">17</xref>]</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Human (<italic>in vitro</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R52" ref-type="bibr">52</xref>]</td>
+          </tr>
+          <tr>
+            <td valign="bottom" colspan="4" rowspan="1">
+<hr/></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">H4 K16ac</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Decrease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Yeast (<italic>in vivo</italic>),</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R17" ref-type="bibr">17</xref>]</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Human (<italic>in vitro</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R52" ref-type="bibr">52</xref>]</td>
+          </tr>
+          <tr>
+            <td valign="bottom" colspan="4" rowspan="1">
+<hr/></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">H4 K20me</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Increase</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Human (<italic>in vitro</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R52" ref-type="bibr">52</xref>]</td>
+          </tr>
+          <tr>
+            <td valign="bottom" colspan="4" rowspan="1">
+<hr/></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">H4 K20me2</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Increase</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Human (<italic>in vitro</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R52" ref-type="bibr">52</xref>]</td>
+          </tr>
+          <tr>
+            <td valign="bottom" colspan="4" rowspan="1">
+<hr/></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">H4 K20me3</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Increase</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Rat (<italic>in vivo</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R50" ref-type="bibr">50</xref>]</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Decrease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Human (<italic>in vitro</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R52" ref-type="bibr">52</xref>]</td>
+          </tr>
+          <tr>
+            <td valign="bottom" colspan="4" rowspan="1">
+<hr/></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">H3.1</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Decrease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Human (<italic>in vitro</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R58" ref-type="bibr">58</xref>]</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Decrease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Rat (<italic>in vivo</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R70" ref-type="bibr">70</xref>]</td>
+          </tr>
+          <tr>
+            <td valign="bottom" colspan="4" rowspan="1">
+<hr/></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">H3.2</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Decrease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Rat (<italic>in vivo</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R70" ref-type="bibr">70</xref>]</td>
+          </tr>
+          <tr>
+            <td valign="bottom" colspan="4" rowspan="1">
+<hr/></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">H3.3</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Increase</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Human (<italic>in vitro</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R58" ref-type="bibr">58</xref>]</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Increase</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Rat (<italic>in vivo</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R70" ref-type="bibr">70</xref>]</td>
+          </tr>
+          <tr>
+            <td valign="bottom" colspan="4" rowspan="1">
+<hr/></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">H2A.1</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Decrease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Human (<italic>in vitro</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R58" ref-type="bibr">58</xref>]</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Decrease</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Rat (<italic>in vivo</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R70" ref-type="bibr">70</xref>]</td>
+          </tr>
+          <tr>
+            <td valign="bottom" colspan="4" rowspan="1">
+<hr/></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">H2A.2</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Increase</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Human (<italic>in vitro</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R58" ref-type="bibr">58</xref>]</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1">Increase</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">Rat (<italic>in vivo</italic>)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">[<xref rid="R70" ref-type="bibr">70</xref>]</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+  </floats-group>
+</article>

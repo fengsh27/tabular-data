@@ -1,0 +1,1828 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Archiving and Interchange DTD v2.3 20070202//EN" "archivearticle.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">8302946</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">4093</journal-id>
+      <journal-id journal-id-type="nlm-ta">Hepatology</journal-id>
+      <journal-title>Hepatology (Baltimore, Md.)</journal-title>
+      <issn pub-type="ppub">0270-9139</issn>
+      <issn pub-type="epub">1527-3350</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">21294144</article-id>
+      <article-id pub-id-type="pmc">3082584</article-id>
+      <article-id pub-id-type="doi">10.1002/hep.24110</article-id>
+      <article-id pub-id-type="manuscript">NIHMS257201</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Hepatitis C virus receptors claudin-1 and occludin after liver transplantation and influence on early viral kinetics</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Mensa</surname>
+            <given-names>Laura</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Crespo</surname>
+            <given-names>Gonzalo</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gastinger</surname>
+            <given-names>Matthew J.</given-names>
+          </name>
+          <xref rid="A3" ref-type="aff">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kabat</surname>
+            <given-names>Juraj</given-names>
+          </name>
+          <xref rid="A3" ref-type="aff">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Pérez-del-Pulgar</surname>
+            <given-names>Sofía</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Miquel</surname>
+            <given-names>Rosa</given-names>
+          </name>
+          <xref rid="A2" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Emerson</surname>
+            <given-names>Suzanne U.</given-names>
+          </name>
+          <xref rid="A4" ref-type="aff">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Purcell</surname>
+            <given-names>Robert H</given-names>
+          </name>
+          <xref rid="A4" ref-type="aff">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Forns</surname>
+            <given-names>Xavier</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>1</label> Liver Unit, Hospital Clinic, IDIBAPS, Ciberehd, Barcelona, Spain</aff>
+      <aff id="A2"><label>2</label> Pathology Department, Hospital Clinic, IDIBAPS, Ciberehd, Barcelona, Spain</aff>
+      <aff id="A3"><label>3</label> Biological Imaging Facility/Research Technologies Branch, National Institute of Allergy and Infectious Disease, National Institutes of Health, Bethesda, MD, USA</aff>
+      <aff id="A4"><label>4</label> Hepatitis Viruses Section, Laboratory of Infectious Diseases, National Institute of Allergy and Infectious Disease, National Institutes of Health, Bethesda, MD, USA</aff>
+      <author-notes>
+        <corresp id="FN1">Correspondence: Xavier Forns, Liver Unit, Institut de Malalties Digestives, Hospital Clinic, IDIBAPS, Ciberehd, Villarroel 170, 08036 Barcelona, Spain, Phone. 34 93 227 54 00 (4405), <email>xforns@clinic.ub.es</email></corresp>
+        <fn id="FN2" fn-type="equal">
+          <p>LM and GC contributed equally to this study and both should be considered first authors.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>13</day>
+        <month>12</month>
+        <year>2010</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>3</day>
+        <month>2</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>5</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>1</day>
+        <month>5</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>53</volume>
+      <issue>5</issue>
+      <fpage>1436</fpage>
+      <lpage>1445</lpage>
+      <permissions>
+        <license>
+          <p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P1">Liver transplantation (LT) is a unique model to study HCV entry into hepatocytes. Recent <italic>in vitro</italic> studies suggest significant changes in the expression of the HCV receptors claudin-1 and occludin after HCV infection. Our aims were: 1) to characterize claudin-1 and occludin expression in grafts from LT recipients and 2) to explore their potential influence on early HCV kinetics and their changes after HCV infection.</p>
+        <sec sec-type="methods" id="S1">
+          <title>Patients and methods</title>
+          <p id="P2">We included 42 HCV-infected LT recipients and 19 uninfected controls. Claudin-1 and occludin were detected in paraffin-embedded liver biopsies obtained during reperfusion, 3 and 12 months after LT. HCV receptors were characterized by confocal immunofluorescence microscopy; quantification and colocalization studies were performed with dedicated software.</p>
+        </sec>
+        <sec id="S2">
+          <title>Results</title>
+          <p id="P3">Claudin-1 and occludin expression were restricted to the apical pole of hepatocytes. There was a significant correlation between the amount of SR-B1 at the time of reperfusion and the HCV-RNA decay during the first 24 hours following LT (r= 0.6, p= 0.004). Similarly, there was significant correlation between the levels of claudin and occludin and the slope of HCV-RNA increase during the first week after LT (r= 0.63, p = 0.002). Occludin and claudin-1 levels increased significantly 12 months after LT (p = 0.03 and p= 0.007, respectively). The expression pattern of both proteins, however, remained unchanged, colocalizing strongly (60%–94%) at the apical membrane of hepatocytes.</p>
+        </sec>
+        <sec id="S3">
+          <title>Conclusions</title>
+          <p id="P4">HCV receptor levels at the time of LT seem to modulate early HCV kinetics. Hepatitis C recurrence after LT was associated with increased levels of claudin-1 and occludin in the hepatocyte cell membrane, though it did not alter their localization within the tight junctions.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>confocal microscopy</kwd>
+        <kwd>real-time PCR</kwd>
+        <kwd>canalicular pole</kwd>
+        <kwd>hepatocyte</kwd>
+        <kwd>tight-junctions</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S4">
+      <title>Introduction</title>
+      <p id="P5">Hepatitis C virus (HCV) is the leading cause of chronic liver disease in many regions of the world. Chronic hepatitis C progresses to cirrhosis and end-stage liver failure in a significant proportion of patients over the years and is the main indication for liver transplantation (LT) in the Western world and Japan (<xref ref-type="bibr" rid="R1">1</xref>).</p>
+      <p id="P6">Major advances have been achieved in the last few years towards a better understanding of the HCV life cycle. The development of a retroviral pseudoparticle system (HCVpp) (<xref ref-type="bibr" rid="R2">2</xref>) and the ability of an HCV strain (JFH-1) (<xref ref-type="bibr" rid="R3">3</xref>) to replicate and release infectious particles in cell culture have been very relevant to the study of HCV entry into hepatocytes. Virus entry is commonly a complex event that requires sequential interactions between viral surface proteins and cellular factors (<xref ref-type="bibr" rid="R4">4</xref>–<xref ref-type="bibr" rid="R10">10</xref>). The exact mechanisms by which HCV reaches the cytoplasm of liver cells and initiates replication are not yet completely understood. The fact that HCV needs several receptors with different membrane distributions favors the hypothesis of a coordinated entry process, such as what occurs with other viruses (i.e. Coxackievirus B) (<xref ref-type="bibr" rid="R7">7</xref>, <xref ref-type="bibr" rid="R10">10</xref>, <xref ref-type="bibr" rid="R11">11</xref>). Ploss and collaborators recently proposed that HCV may initially interact with the luminal (sinusoidal) surface of the hepatocyte by contact with SR-B1 and CD81 (<xref ref-type="bibr" rid="R10">10</xref>). Thereafter a virus-receptor complex might migrate to the biliary pole (apical membrane), where the virus-receptor complex reaches the tight junctions and uptake into the cytoplasm would occur. The recent discovery that the tight junction proteins claudin-1 and occludin are essential factors for HCV entry into cells suggests a role for these proteins in HCV cell-cell transmission, a route of spread that is still under investigation (<xref ref-type="bibr" rid="R7">7</xref>).</p>
+      <p id="P7">Recent studies have analyzed the potential role of HCV infection in the regulation of its putative receptors, particularly those located in the tight junctions. In one study, HCV infection appeared to downregulate claudin-1 and occludin in Huh7 cells (<xref ref-type="bibr" rid="R12">12</xref>). In another study, expression of HCV structural proteins in Huh7 cells was not associated with changes in claudin-1 and occludin levels, but these proteins accumulated in the endoplasmic reticulum and their altered localization disrupted the tight junction barrier function (<xref ref-type="bibr" rid="R13">13</xref>). These differences between studies reflect the complexity of the HCV entry mechanisms and the fact that current <italic>in vitro</italic> systems may not completely reproduce the virus life cycle in a human liver (<xref ref-type="bibr" rid="R14">14</xref>).</p>
+      <p id="P8">Liver transplant patients undergo frequent liver biopsies, allowing <italic>in vivo</italic> assessment of the potential changes in the expression of such HCV receptors over time. The aim of this study was to evaluate the potential changes in tight junction proteins claudin-1 and occludin following HCV graft infection and to analyze if their expression could influence early HCV kinetics.</p>
+    </sec>
+    <sec sec-type="methods" id="S5">
+      <title>Patients and methods</title>
+      <sec id="S6">
+        <title>Patients</title>
+        <p id="P9">Forty-two HCV-infected patients undergoing LT from January 2000 to January 2008 were included in the study. Selection of patients was based on the type of hepatitis C recurrence and individuals at both extremes of the disease spectrum (mild and severe) were selected. Mild disease recurrence was defined as absent (F0) or mild (F1) fibrosis one year after transplantation, and a normal hepatic venous pressure gradient (HVPG). Severe disease recurrence was defined as the presence of advanced fibrosis (F ≥ 3) and/or clinically significant portal hypertension (HVPG ≥ 10 mmHg) one year after transplantation. Nineteen HCV-negative liver transplant recipients served as controls.</p>
+        <p id="P10">All patients were followed in our Liver Unit and underwent standard immunosuppression protocols (<xref ref-type="bibr" rid="R15">15</xref>). Induction immunosuppression consisted of cyclosporine A or tacrolimus and prednisone. After hospital discharge, patients visited the outpatient clinic monthly for 3 months for complete recording of clinical and analytical data and every 2 or 3 months thereafter. Liver biopsies were obtained after graft reperfusion (revascularization of the graft during the surgical procedure) and at 3 and 12 months after LT in accordance with the standard protocol. Patients whose liver disease was likely caused by another reason (rejection, CMV infection) were excluded. The study was previously approved by the Investigation and Ethics Committee of the Hospital Clinic of Barcelona following the ethical guidelines of the 1975 Declaration of Helsinki. We obtained informed consent from all patients included in the study.</p>
+      </sec>
+      <sec id="S7">
+        <title>Liver biopsies</title>
+        <p id="P11">Percutaneous liver biopsies were performed by expert radiologists. HVPG measurements and transjugular liver biopsies were performed at the Hepatic Hemodynamics Laboratory as previously described (<xref ref-type="bibr" rid="R16">16</xref>). Liver samples were processed by the Pathology Department. All tissue samples were formalin-fixed and paraffin-embedded (FFPE). For diagnostic purposes, samples were stained with hematoxilin-eosin and Masson’s trichromic. All histological samples were examined by an expert pathologist (RM). Fibrosis stage was scored using the Scheuer classification.</p>
+      </sec>
+      <sec id="S8">
+        <title>Immunofluoresence protocols</title>
+        <p id="P12">Representative 5–10 μm sections were cut from paraffin blocks and mounted on charged slides. Slides were heated overnight at 37°C and thereafter deparaffinized by treating the slides with xylene 3 times (10 min each) followed by ethanol rehydration.</p>
+        <p id="P13">Antigen retrieval was performed by treating the tissue with heat using a pressure cooker (Pascal, Dako, Carpintería, CA, US). When the temperature reached 80 °C the sections were placed on metal racks and submerged in a 1 mM EDTA solution (pH 8). The pressure cooker was set to reach 125 °C (21 psi) for 2 minutes. Thereafter, the sections were blocked for 30 min. with PBS/10% goat serum (Jackson ImmunoResearch, West Grove, PA, US), followed by incubation for 2 hours at RT with the primary antibody: 2.5 μg/mL rabbit polyclonal anti-human claudin-1 (Zymed, Invitrogen, Carlsbad, CA, USA), 5 μg/mL mouse monoclonal anti-human occludin (Zymed, Invitrogen), 2.5 μg/mL mouse monoclonal anti-human SR-B1 (BD Transduction Laboratories, San Jose, CA, USA), or 2 μg/mL rat anti-human CD10 (Santa Cruz Biotechnology, Santa Cruz, CA, USA). After 3 washes with PBS (10 minutes each), sections were incubated with the secondary antibody for 1 hour at RT. Secondary antibodies were: Alexa FluorR 488 goat anti-rabbit IgG, Alexa FluorR 568 F(ab′)2 fragment of goat anti-mouse IgG (H+L) and Alexa FluorR 647 goat anti-rat IgG (Invitrogen). Slides were washed three times with PBS (10 minutes each); after the second wash, slides were incubated for 2 minutes with DAPI (Sigma Aldrich, St. Louis, MO, USA). Slides were then mounted with Hard Mounting Media (Vector Laboratories, Burlingame, CA, USA) and kept overnight at room temperature in the dark.</p>
+      </sec>
+      <sec id="S9">
+        <title>Analysis of receptor expression by confocal microscopy</title>
+        <p id="P14">Images were acquired on a Leica SP5 confocal microscope (Leica Microsystems, Exton, PA) using 488 nm, 561 nm, or 633 nm laser lines. Hoechst dye was excited using a 364 nm Enterprise II UV laser (Coherent, Santa Clara, CA). Sequential frame averaged scans were set up for each fluorophore to eliminate emission crosstalk. All images were saved in a 12 bit TIFF format at 512×512 or 1024×1024 pixels. Surface rendering and colocalization analysis were performed using Imaris (version 6.2.2, Bitplane AG, Zurich, Switzerland). For each channel, an individual threshold was selected and maintained for all processed samples. Sum of intensities (representing the sum of the intensities obtained in each voxel above the threshold) and number of positive voxels (those with intensity above the established threshold) were calculated for each individual sample. In order to correctly sample the entire liver biopsy, 10 different image acquisitions were obtained for each liver section. The sum of intensities and the number of positive voxels for each biopsy was calculated as the geometrical mean of the individual values obtained in the different acquisitions.</p>
+        <p id="P15">A detailed colocalization study for claudin-1 and occludin was performed in 20 selected specimens. For this purpose, triple staining was carried out with rabbit anti-claudin-1, mouse anti-occludin and rat anti-CD10 (a commonly used marker of the biliary canalicula). Sequential sections of stained samples were acquired with the 63x-oil immersion objective (NA 1.4) at a zoom of 5 to 7 with a Z-step of 0.20 μm – 0.25 μm through the entire volume of the paraffin section (approximately 7–10 μm section thickness). All collected images for 3D analyses were deconvolved by Huygens Essential software (Version 3.4, Scientific Volume Imaging BV, Hilversum, The Netherlands). A 3D image volume was reconstructed from sequential z-sections and colocalization analyses were performed in Imaris software. Surface rendering and channel masking was used in conjunction with manual thresholding to calculate protein colocalization statistics in a 3D environment. The same level of thresholding was applied to each data set; unlabeled regions were not included in this analysis (masking). The level of colocalization in the 3D volume was measured as % of volume of the channel above threshold colocalized (the total number of colocalized voxels divided by the total number of voxels in each channel that are above the threshold). A second measure of the intensity of colocalization between claudin-1 and occludin was obtained by calculating the correlation between the intensities of the colocalized voxels (Pearson correlation).</p>
+        <p id="P16">Positive (strongly positive samples) and negative controls (samples stained with an irrelevant primary antibody) were included in each experiment. In order to ensure that differences in the expression of receptors were not due to methodological issues, 20 random liver biopsies were processed in triplicate on different days following the same protocols. Sum of intensities for SR-B1 and claudin-1 as well as the number of positive voxels for each channel were compared for each independent experiment. Samples were always processed blindly. This applied both for the immunoflourescence protocol and for image processing. Coding of slides allowed the staining of samples belonging to the same patient in the same experiment.</p>
+      </sec>
+      <sec id="S10">
+        <title>Quantitation of claudin-1 and occludin mRNA by real-time PCR</title>
+        <p id="P17">Total RNA was extracted from 5-μm FFPE liver sections (5 sections for each sample) using the RNeasy FFPE Kit (Qiagen, Hilden, Germany) and then stored at −80 °C in 66 available samples. Reverse transcription was performed with the Archive High Capacity cDNA Synthesis Kit (Applied Biosystems, Foster City, CA, USA). Levels of claudin-1 and occludin were measured with TaqMan Gene Expression Assays (Applied Biosystems). Ribosomal protein L13a (RPL13a) was chosen as an endogenous control for mRNA normalization. Relative quantitation was carried out using the standard curve method. Data are expressed as the fold-change relative to an arbitrary calibrator.</p>
+      </sec>
+      <sec id="S11">
+        <title>HCV-RNA determination</title>
+        <p id="P18">To study early HCV kinetics, serum samples were obtained immediately before LT and daily during the first week following LT. Thereafter, samples were collected weekly during the first month and at months 3, 6, and 12. Viral load in serum specimens was determined by real time PCR (<italic>m2000rt</italic>, Abbott, with a detection limit of 30 IU/mL), as previously reported (<xref ref-type="bibr" rid="R15">15</xref>). Samples belonging to the same patient were assayed in the same run.</p>
+      </sec>
+      <sec id="S12">
+        <title>Statistical analysis</title>
+        <p id="P19">Quantitative variables are expressed as medians (range) and depicted in the figures as box plots. Differences between qualitative variables were assessed with the Fisher exact test. Differences between quantitative variables were analyzed with a non-parametric test (Mann-Whitney or Kruskal-Wallis for unpaired samples, Wilcoxon for paired samples). Correlations between quantitative variables were expressed by the Pearson coefficient. The software used for statistical analysis was SPSS 16.0 (SPSS Inc., Chicago IL).</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S13">
+      <title>Results</title>
+      <sec sec-type="intro" id="S14">
+        <title>Patient characteristics</title>
+        <p id="P20">Forty-two HCV-infected patients and 19 HCV-negative controls were included in the study. The baseline characteristics of the patients are summarized in <xref rid="T1" ref-type="table">Table 1</xref>. Hepatitis C recurrence was mild in 23 individuals and severe in 19. A liver biopsy obtained at time of liver reperfusion and 12 months after LT was available for all 42 patients; a 3-month biopsy was available in 36. For the 19 HCV-negative controls, liver biopsies were available for all individuals at the 3 time points. The indication for LT in the controls was alcoholic cirrhosis (<xref ref-type="bibr" rid="R14">14</xref>), hepatitis B (<xref ref-type="bibr" rid="R1">1</xref>), primary sclerosing cholangitis (<xref ref-type="bibr" rid="R1">1</xref>), NASH (<xref ref-type="bibr" rid="R2">2</xref>) and familiar amiloidotic polyneuropathy (<xref ref-type="bibr" rid="R1">1</xref>).</p>
+      </sec>
+      <sec id="S15">
+        <title>Quantitative expression of HCV receptors: reproducibility</title>
+        <p id="P21">Twenty random liver biopsies were stained for claudin-1 and SR-B1 in three independent experiments using slices from the same biopsy. For claudin-1 the correlation coefficients between the sum of intensities obtained in the 3 independent experiments ranged from 0.72 to 0.75 (p &lt; 0.01 in all cases). For SR-B1 the comparable values ranged from 0.89 to 0.91 (p &lt; 0.01 in all cases). These data support the excellent reproducibility of receptor quantification using our methodology.</p>
+      </sec>
+      <sec id="S16">
+        <title>Localizaton of HCV receptors claudin-1 and occludin in hepatocytes</title>
+        <p id="P22">Immunostaining of claudin-1 and occludin in liver biopsies demonstrated the expression of both tight junction proteins in the apical membrane of the hepatocytes, whereas SR-B1 was expressed in the sinusoidal pole of liver cells (<xref rid="F1" ref-type="fig">Figure 1</xref>). To confirm that expression of claudin-1 and occludin was restricted to the apical pole of hepatocytes, we performed a triple staining, including CD10 in 20 representative samples. CD10, also known as common ALL antigen (CALLA) is a cell membrane metallopeptidase that is expressed in the canaliculi of normal or neoplastic liver. As shown in <xref rid="F2" ref-type="fig">Figure 2A</xref>, claudin-1, occludin and CD10 were localized in the apical pole of hepatocytes. We were unable to detect significant amounts of claudin-1 and occludin in the basolateral/sinusoidal membrane of liver cells in any of the studied samples. High resolution 3D images were obtained in the 20 selected liver biopsies. As shown in <xref rid="F2" ref-type="fig">Figure 2B</xref>, CD10 was localized within the biliary canalicula, which is most likely explained by its distribution along the surface of the microvilli of the liver cells (<xref ref-type="bibr" rid="R17">17</xref>). Claudin-1 and occludin distribution followed the apical membrane of adjacent hepatocytes, corresponding to proteins localized in tight junctions.</p>
+        <p id="P23">We also used the high resolution images to study the colocalization pattern of the two HCV receptors. Our results indicate that overall, claudin-1 and occludin colocalized strongly in all studied samples: 60% to 94% of claudin-1 volume colocalized with occludin. The coefficients of correlation between colocalized voxels, however, varied significantly from sample to sample and ranged from 0.20 to 0.86 and correlated strongly with the amount of expressed claudin-1 (r=0.8, p&lt; 0.001).</p>
+      </sec>
+      <sec id="S17">
+        <title>Viral kinetics and receptor expression</title>
+        <p id="P24">We wished to determine if SR-B1 and tight junction proteins claudin-1 and occludin (which most likely represent the final step in HCV entry into hepatocytes) influenced early HCV kinetics. For this purpose, we divided early viral kinetics into two different components: 1) the initial viral load decay, which occurs during the first 24 hours following graft reperfusion and 2) the viral load increase the first week following LT (<xref ref-type="bibr" rid="R18">18</xref>) (3A). The first viral load decline may represent massive viral uptake by the liver; whereas the viral load increase during the first week indicates HCV replication in the newly infected liver. There was a significant correlation between the viral load decay and the levels of SR-B1 in the graft at time of reperfusion (r=0.55, p=0.007) (<xref rid="F3" ref-type="fig">Fig 3B</xref>). Interestingly, there was a significant relationship between the levels of occludin and claudin-1 in the graft at the time of reperfusion and the slope of HCV-RNA increase during the first week after LT (r=0.63; P=0.005)(<xref rid="F3" ref-type="fig">Fig 3C</xref>), suggesting a potential role of these receptors in regulating early HCV kinetics.</p>
+      </sec>
+      <sec id="S18">
+        <title>Changes of claudin-1 and occludin expression levels and pattern following HCV infection</title>
+        <p id="P25">We analyzed if the expression pattern of these proteins changed following HCV infection after LT. For this purpose, we compared the patterns of claudin-1 and occludin expression in liver samples obtained during graft reperfusion (before HCV replication starts in the liver) and at 3 and 12 months after LT. Localization of claudin-1 and occludin was limited to the apical pole of the hepatocyte membrane at all time points, independently of the severity of hepatitis C recurrence (<xref rid="F4" ref-type="fig">Fig 4A–4B</xref>). Reconstruction of 3D images in xz sections supported the absence of significant amounts of these proteins in the basolateral/sinusoidal membrane of the hepatocytes. Moreover, we did not observe cytoplasmic retention of claudin-1 or occludin after HCV infection, as described <italic>in vitro</italic> (<xref ref-type="bibr" rid="R19">19</xref>). We observed a significant increase in the levels of occludin and claudin-1 one year after LT (p= 0.03 and p=0.007, respectively), both in patients with mild and severe disease recurrence (<xref rid="SD2" ref-type="supplementary-material">Supplemental Table 1</xref> and <xref rid="SD1" ref-type="supplementary-material">Supplemental Fig 1</xref>). In the HCV-negative controls the levels of claudin-1 and occludin remained unchanged after transplantation (<xref rid="SD1" ref-type="supplementary-material">Supplemental Fig 1</xref>).</p>
+        <p id="P26">The amount of claudin-1 was higher in liver samples from patients with severe hepatitis C recurrence (particularly 12 months after LT) compared to those with mild recurrence, but the differences did not reach statistical significance (<xref rid="SD2" ref-type="supplementary-material">Supplemental Table 1</xref>). Interestingly, in the subgroup of patients with severe cholestatic hepatitis (n =12), the amount of claudin-1 12 months after LT was significantly higher compared to the remaining patients (p= 0.005) (<xref rid="F5" ref-type="fig">Fig 5</xref>). Claudin-1 levels did not correlate with any of the biochemical markers of cholestasis (gamma glutamyl transpeptidase, alkaline phosphatase, bilirubin) or HCV-RNA concentration obtained at the same time points.</p>
+        <p id="P27">With regards to mRNA quantification, we found no correlation between mRNA and protein abundance levels (as quantified by confocal microscopy) either for claudin-1 (r= 0.2, ns) or for occluding (r=0.1, ns). Indeed, claudin-1 mRNA levels remained stable over time in HCV-infected patients; occludin mRNA levels increased, although the difference did not reach statistical significance (<xref rid="SD1" ref-type="supplementary-material">Supplemental Figure 1</xref>). Similarly, we did not detect significant differences in the mRNA levels of these two proteins in individuals with mild or severe disease recurrence.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="S19">
+      <title>Discussion</title>
+      <p id="P28">HCV entry is a complex process involving several receptors. It is believed that HCV particles are consecutively bound by a complex formed by SR-B1 and CD81. Virus associated with CD81 would then be transferred into tight junctions, where HCV would interact with claudin-1 and occludin to enter the cell by clathrin-dependent endocytosis (<xref ref-type="bibr" rid="R4">4</xref>–<xref ref-type="bibr" rid="R10">10</xref>). Tight junctions are multi-protein complexes that seal the space between adjacent cells. In fact, hepatocyte plasma membranes are separated by tight junctions into sinusoidal-basolateral and apical domains (<xref ref-type="bibr" rid="R20">20</xref>). These two domains are very important for hepatocytes to perform diverse functions, such as canalicular bile secretion and simultaneous sinusoidal secretion of serum proteins into blood.</p>
+      <p id="P29">Since tight-junction proteins claudin-1 and occludin are thought to be a relevant part of HCV entry into hepatocytes, our goal was to characterize 1) the expression pattern of these proteins in liver tissue of patients undergoing LT, 2) their influence on early HCV kinetics following recurrent hepatitis C and their potential changes following HCV infection of the graft.</p>
+      <p id="P30">We used the LT model for several reasons: 1) tissue samples can be obtained before and after HCV infection; 2) infection can be monitored from the beginning and thus, it is possible to obtain data on early HCV kinetics, 3) hepatitis C recurrence after LT is a rapidly progressive disease and patients with mild or very severe hepatitis recurrence can be well characterized; 4) finally, expression of HCV receptors has not been characterized in this model so far.</p>
+      <p id="P31">Several reports based on <italic>in vitro</italic> experiments have suggested major changes in the expression of these proteins after HCV infection of liver cells. Using the replicon system Benedicto et al. (<xref ref-type="bibr" rid="R13">13</xref>) explored the effect of HCV on tight junction organization, demonstrating that in Huh7 cells containing a genomic replicon, occludin and claudin-1 accumulated in the cytoplasm of the cells as dot-like structures (and were not detected in the tight junction). Colocalization studies suggested that the envelope protein E2 could play a role in the mislocalization of tight junction-associated proteins. Our results show that, <italic>in vivo,</italic> HCV infection is not associated with retention of claudin-1 and occludin in the cytoplasm of hepatocytes. We found that claudin-1 and occludin remained in the apical pole of hepatocytes even in cases with severe cholestatic hepatitis. In the latter cases, the only structural change observed was a slight dilation of the biliary canaliculi. The absence of mislocalized claudin-1 and occludin was verified by using additional antibodies directed to distinct protein epitopes (data not shown). A potential limitation of our findings is the possibility that only a small proportion of hepatocytes are infected with HCV and thus, that morphological changes are restricted to areas of infected cells (<xref ref-type="bibr" rid="R21">21</xref>). Nevertheless, we analyzed a large number of liver cells per biopsy (&gt; 3000). Moreover, changes in tight junction proteins affecting a very small proportion of hepatocytes would not explain the significant clinical expression (cholestasis) found in hepatitis C recurrence. Since tight junctions are multiprotein complexes highly regulated by cytokines and interleukins (<xref ref-type="bibr" rid="R22">22</xref>, <xref ref-type="bibr" rid="R23">23</xref>), we cannot exclude that alterations in permeability or function may be explained by changes in protein composition during a strong inflammatory event such as hepatitis C.</p>
+      <p id="P32">Despite the absence of structural changes in the tight junctions, we observed an increased expression of claudin-1 and occludin over time in HCV-infected patients. The increase in claudin-1 was particularly significant in individuals with cholestatic hepatitis. Enhanced apical expression of claudin-1 and occludin after HCV infection could represent a mechanism favoring cell-to cell transmission of HCV within the liver (<xref ref-type="bibr" rid="R7">7</xref>). We did not find a correlation between claudin-1 and occludin mRNA and protein levels, although the association between levels of RNA and protein products can vary greatly (<xref ref-type="bibr" rid="R24">24</xref>, <xref ref-type="bibr" rid="R25">25</xref>). What our results may indicate is that HCV proteins influence claudin-1 and occludin expression either by affecting them at a post-transcriptional level or by altering the complex membrane traffic of tight-junction proteins. These proteins are recycled via various mechanisms such as by clathrin-mediated and caveolae-mediated endocytosis, as well as by macropinocytosis; these pathways may be altered by HCV infection, particularly in cases with high HCV replication. Our data, however, are based on a small number of samples and, more importantly, do not allow for a functional analysis of tight-junctions. Thus, we must be cautious with our conclusions.</p>
+      <p id="P33">Up to a certain extent, our findings are in agreement with Reynolds et al (<xref ref-type="bibr" rid="R26">26</xref>), who reported a significant increase in claudin-1 expression after infecting Huh7 cells with HCVcc. The latter was also observed in tissue from HCV-infected patients as compared to samples from uninfected livers, with focal regions of basolaterally expressed claudin-1. The increase in both HCV receptors found in our study was not attributable, however, to the presence of aberrant expression of claudin-1 or occludin in the basolateral/sinusodal membrane, but rather to an increased presence of these proteins in the apical membrane of hepatocytes. We showed that claudin-1 and occludin localization followed a similar pattern to that of CD10 and confirmed the findings in high resolution images. The discrepancies between our results and those by Reynolds et al. may be explained by the different methodology (we used imaging software that allowed precise and reproducible quantification of these proteins) and the different patient population (they used livers from patients with end-stage cirrhosis).</p>
+      <p id="P34">We studied early HCV kinetics by assessing daily HCV-RNA concentrations in a subgroup of patients. Since SR-B1 may be the first putative HCV receptor which contacts the virus, we explored if its levels of expression at the time of LT influenced the initial viral decay immediately following graft reperfusion. In vitro, SR-B1 surface expression has been reported to affect HCV infection: SR-B1 overexpression enhances HCV internalization whereas SR-B1 silencing reduces infectivity of HCVcc and HCVpp (<xref ref-type="bibr" rid="R27">27</xref>–<xref ref-type="bibr" rid="R29">29</xref>). We found a significant correlation between the levels of expression of SR-B1 in the graft (at the time of LT) and the magnitude of the viral decrease (during the first 24 hours following transplantation). This supports a massive uptake of HCV by the liver immediately after graft reperfusion. It is obvious that other variables may play a role in early viral decay, such as the amount of blood loss or transfusion requirements during the surgical procedure (<xref ref-type="bibr" rid="R18">18</xref>). We were particularly interested in exploring the potential effect of claudin-1 and occludin expression in early HCV kinetics after graft reperfusion. We observed that the viral load increase slope during the first 7 days following graft reperfusion was significantly greater in the patients with high claudin-1 and occludin levels, showing a significant correlation between their expression in the graft and the slope of viral increase. Timple et al (<xref ref-type="bibr" rid="R30">30</xref>) have recently suggested that HCV can be transmitted directly between cells, most likely using the HCV receptors found in tight junctions. Data obtained after visualization of HCV antigens in human livers by two-photon microscopy indicate that infected hepatocytes are found in clusters, further supporting the spread of HCV from cell to cell (<xref ref-type="bibr" rid="R21">21</xref>). Our results would also suggest a role of cell-to-cell transmission during the first days following graft infection: the presence of high levels of claudin-1 and occludin might facilitate HCV spread within the liver resulting in a faster increase in HCV-RNA concentrations. It is clear that other variables not analyzed in this study (such as HCV fitness, quasispecies evolution) may also play a role in early HCV kinetics.</p>
+      <p id="P35">Our study has some limitations. First, the study is retrospective in its design and preservation of liver samples may not have been completely homogeneous across the study period. Second, liver tissue obtained before HCV infection (reperfusion liver biopsies) cannot be considered normal, since samples are obtained from the liver of a deceased donor after treatment of the organ with a preservation solution. Finally, patients undergoing LT are treated with immunosuppression drugs, which may influence the expression of HCV receptors.</p>
+      <p id="P36">In summary, hepatitis C recurrence after LT is associated with increased levels of claudin-1 and occludin in hepatocyte membranes, although this does not alter their localization or expression pattern within the tight junctions. HCV receptor levels at the time of LT seem to modulate early HCV kinetics, which may be relevant when designing strategies to prevent HCV infection in the graft.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="S20">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="SD1">
+        <label>FigS1</label>
+        <media xlink:href="NIHMS257201-supplement-FigS1.tif" xlink:type="simple" id="N0x1493d090N0x158ffd70" position="anchor" mimetype="image" mime-subtype="tiff"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD2">
+        <label>Supp Table S1</label>
+        <media xlink:href="NIHMS257201-supplement-Supp_Table_S1.doc" xlink:type="simple" id="N0x1493d090N0x158ffe30" position="anchor" mimetype="application" mime-subtype="msword"/>
+      </supplementary-material>
+      <supplementary-material content-type="local-data" id="SD3">
+        <label>Supplementary Legends</label>
+        <media xlink:href="NIHMS257201-supplement-Supplementary_Legends.doc" xlink:type="simple" id="N0x1493d090N0x158ffef0" position="anchor" mimetype="application" mime-subtype="msword"/>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <sec id="S21" sec-type="display-objects">
+      <title>Figures and Table</title>
+      <fig id="F1" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <p>Immunostaining of claudin-1 and SR-B1 in a representative liver biopsy. Claudin-1 is depicted in green, SR-B1 is shown in red. The expression of claudin is restricted to the apical membrane of the hepatocytes, whereas SR-B1 is expressed in the sinusoidal pole of liver cells</p>
+        </caption>
+        <graphic xlink:href="nihms257201f1"/>
+      </fig>
+      <fig id="F2" position="float">
+        <label>Figure 2</label>
+        <caption>
+          <p><bold>(A)</bold> Confocal images (xy and xz sections) obtained from a liver biopsy of an HCV-infected patient. Claudin-1 (green) and occludin (red) localization is restricted to the apical membrane of hepatocytes following a typical tram track (tight junction) pattern; CD10 (a biliary canalicular marker) is depicted in white. <bold>(B)</bold> High resolution 3D image. CD10 (white) localized within the bile canaliculi, which is most likely explained by its expression in the microvilli of adjacent hepatocytes. Claudin-1 (green) and occludin (red) distribution followed the apical membrane of adjacent hepatocytes.</p>
+        </caption>
+        <graphic xlink:href="nihms257201f2"/>
+      </fig>
+      <fig id="F3" position="float">
+        <label>Figure 3</label>
+        <caption>
+          <title>Influence of HCV receptor abundance and early viral kinetics</title>
+          <p><bold>(A)</bold> HCV early viral kinetics in a representative patient: HCV-RNA concentration is depicted in the y axis (logarithmic scale, IU/mL) and time (in hours) is shown in the x axis. <bold>(B).</bold> Correlation between SR-B1 levels in the graft and the HCV-RNA decline (in log<sub>10</sub>) during the first 24 hours after LT. <bold>(C)</bold> Correlation between the abundance of claudin-1 and occludin in the graft and the HCV-RNA increase slope during the first 7 days following LT. Levels of SR-B1, claudin-1 and occludin are represented as the sum of intensitites (x axis log<sub>10</sub>). SI: sum of intensities.</p>
+        </caption>
+        <graphic xlink:href="nihms257201f3"/>
+      </fig>
+      <fig id="F4" position="float">
+        <label>Figure 4</label>
+        <caption>
+          <title>Confocal xy and xz sections of liver biopsies from representative patients with severe hepatitis C recurrence</title>
+          <p>Immunostaining was performed with CD10, claudin-1 and occludin. We did not find significant differences in the staining pattern of the three proteins when comparing samples obtained at time of reperfusion <bold>(3A)</bold> and 3 months after transplantation <bold>(3B)</bold>. Claudin-1 and occludin staining was restricted to the apical pole of hepatocytes with no abnormal retention in the cell cytoplasm.</p>
+        </caption>
+        <graphic xlink:href="nihms257201f4"/>
+      </fig>
+      <fig id="F5" position="float">
+        <label>Figure 5</label>
+        <caption>
+          <title>Sum of intensities of SR-B1, occludin and claudin-1 one year after transplantation</title>
+          <p>in patients with mild hepatitis C recurrence (MR) and cholestatic hepatitis (CH). Median values are depicted as a line.</p>
+        </caption>
+        <graphic xlink:href="nihms257201f5"/>
+      </fig>
+      <table-wrap id="T1" position="float">
+        <label>Table 1</label>
+        <caption>
+          <p>Baseline characteristics of patients included in the study</p>
+        </caption>
+        <table frame="box" rules="cols">
+          <thead>
+            <tr>
+              <th valign="bottom" align="left" rowspan="1" colspan="1"/>
+              <th valign="bottom" align="center" rowspan="1" colspan="1">Controls<break/>n=19</th>
+              <th valign="bottom" align="center" rowspan="1" colspan="1">HCV-infected patients<break/>n=42</th>
+              <th valign="bottom" align="center" rowspan="1" colspan="1">P</th>
+              <th colspan="2" valign="bottom" align="center" rowspan="1">HCV-infected patients<break/>n=42</th>
+              <th valign="bottom" align="center" rowspan="1" colspan="1">p</th>
+            </tr>
+            <tr>
+              <th colspan="7" valign="bottom" align="left" rowspan="1">
+                <hr/>
+              </th>
+            </tr>
+            <tr>
+              <th valign="bottom" align="left" rowspan="1" colspan="1"/>
+              <th valign="bottom" align="center" rowspan="1" colspan="1"/>
+              <th valign="bottom" align="center" rowspan="1" colspan="1"/>
+              <th valign="bottom" align="center" rowspan="1" colspan="1"/>
+              <th valign="bottom" align="center" rowspan="1" colspan="1">Mild recurrence<break/>n= 23</th>
+              <th valign="bottom" align="center" rowspan="1" colspan="1">Severe recurrence<break/>n=19</th>
+              <th valign="bottom" align="center" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <th colspan="7" valign="bottom" align="left" rowspan="1">
+                <hr/>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">Age (years)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">58 (42–68)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">57 (36–69)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.51</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">55 (39–66)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">62 (36–69)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.22</td>
+            </tr>
+            <tr>
+              <td colspan="7" valign="bottom" align="left" rowspan="1">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">Sex, males (%)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">15 (79)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">22 (52)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.09</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">13 (57)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">9 (47)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.8</td>
+            </tr>
+            <tr>
+              <td colspan="7" valign="bottom" align="left" rowspan="1">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">Donor age (years)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">47 (25–76)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">45 (13–77)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.59</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">34 (13–76)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">53 (18–77)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.005</td>
+            </tr>
+            <tr>
+              <td colspan="7" valign="bottom" align="left" rowspan="1">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">Ischemia time (min)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">458 (275–900)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">342 (60–720)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.007</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">322 (60–720)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">362 (85–485)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.5</td>
+            </tr>
+            <tr>
+              <td colspan="7" valign="bottom" align="left" rowspan="1">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">Genotype (%) 1</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">37 (88)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">20 (87)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">17 (90)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.3</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1"> 2/3</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">3 (7)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">2 (9)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">1 (5)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1"> Unknown</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">2 (5)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">1 (4)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">1(5)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td colspan="7" valign="bottom" align="left" rowspan="1">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">Pre-LT viral load (log<sub>10</sub>IU/mL)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">5 (2–6.6)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">4.5 (2–6.6)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">5.32 (2.9–6.56)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.47</td>
+            </tr>
+            <tr>
+              <td colspan="7" valign="bottom" align="left" rowspan="1">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+                <underline>Viral load 1 month (log<sub>10</sub>IU/mL)</underline>
+              </td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">6.4 (4–7.03)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">5.9 (4.9–7.8)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">6.8 (4.7–9)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.03</td>
+            </tr>
+            <tr>
+              <td colspan="7" valign="bottom" align="left" rowspan="1">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+                <underline>Viral load 3 month (log<sub>10</sub>IU/mL)</underline>
+              </td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">6.6 (4.7–8.5)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">6.2 (4.7–7.9)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">6.7 (5.8–8.5)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.02</td>
+            </tr>
+            <tr>
+              <td colspan="7" valign="bottom" align="left" rowspan="1">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+                <underline>Viral load 12 month (log<sub>10</sub>IU/mL)</underline>
+                <xref rid="TFN3" ref-type="table-fn">c</xref>
+              </td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">6.3 (3.9–7.5)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">6.3 (4–7)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">6.3 (3.9–7.5)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.32<xref rid="TFN2" ref-type="table-fn">b</xref></td>
+            </tr>
+            <tr>
+              <td colspan="7" valign="bottom" align="left" rowspan="1">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">Type of transplantation DDLT vs. LDLT</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">15 (79)/4 (21)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">37 (88 )/5 (12)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.44</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">21 (91)/2 (9)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">16 (84)/3 (16)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.6</td>
+            </tr>
+            <tr>
+              <td colspan="7" valign="bottom" align="left" rowspan="1">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">Immunosuppression</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1"> CyA</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">6 (32)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">23 (55)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.4</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">13 (57)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">10 (53)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1"> FK</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">13 (68)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">19 (45)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">10 (43)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">9 (47)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td colspan="7" valign="bottom" align="left" rowspan="1">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">Acute rejection</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">8 (42)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">11 (26)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.24</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">7 (30)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">4 (21)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.49</td>
+            </tr>
+            <tr>
+              <td colspan="7" valign="bottom" align="left" rowspan="1">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">Corticosteroid bolus</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">3 (16)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">7 (17)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">5 (28)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">2 (11)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.33</td>
+            </tr>
+            <tr>
+              <td colspan="7" valign="bottom" align="left" rowspan="1">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+                <underline>CMV disease</underline>
+                <xref rid="TFN4" ref-type="table-fn">d</xref>
+              </td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">5 (12)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.14</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">2 (9)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">3 (16)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.48</td>
+            </tr>
+            <tr>
+              <td colspan="7" valign="bottom" align="left" rowspan="1">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">Biliary complications</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">3 (16)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">14 (33)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.22</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">7 (30)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">7 (37)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">0.75</td>
+            </tr>
+            <tr>
+              <td colspan="7" valign="bottom" align="left" rowspan="1">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">Fibrosis stage (1y)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1"> F0</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">16 (38)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">16 (70)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">-</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1"> F1</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">7 (17)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">7 (30)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">-</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1"> F3</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">13 (31)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">-</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">13 (68)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1"> F4</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">5 (12)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">-</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">5 (26)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td colspan="7" valign="bottom" align="left" rowspan="1">
+                <hr/>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">HVPG (1 y)<xref rid="TFN1" ref-type="table-fn">a</xref></td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1"> &lt;6 mmHg</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">21 (52)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">21</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">-</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1"> ≥ 10 mmHg</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">19 (48)</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+              <td align="center" valign="top" rowspan="1" colspan="1">-</td>
+              <td align="center" valign="top" rowspan="1" colspan="1">19</td>
+              <td align="center" valign="top" rowspan="1" colspan="1"/>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn id="TFN1">
+            <label>a</label>
+            <p>Available in 40 patients.</p>
+          </fn>
+          <fn id="TFN2">
+            <label>b</label>
+            <p>Patients who were under antiviral treatment are excluded.</p>
+          </fn>
+          <fn id="TFN3">
+            <label>c</label>
+            <p>There were no differences in viral load between patients treated with CyA and FK at any time point.</p>
+          </fn>
+          <fn id="TFN4">
+            <label>d</label>
+            <p>Detection of CMV (antigen, DNA) in the presence of symptoms. DDLT: deceased donor liver transplantation; LDLT: living donor liver transplantation; CyA; cyclosporine A; FK: tacrolimus, CMV: cytomegalovirus; y: year</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+    </sec>
+    <ack id="S22">
+      <p><bold>Financial support</bold>: X. Forns received support in part by a grant from Instituto de Salud Carlos III (PI080239), co-funded by the European Regional Development Fund (ERDF), and by the Spanish Association for the Study of Liver Diseases (AEEH, Beca Hernández-Guío). G Crespo was granted by Hospital Clinic (Ajut a la Recerca Josep Font) and Fundación BBVA. L Mensa was granted by Instituto de Salud Carlos III (PFIS). This study was supported in part by the Intramural Research Program of the National Institute of Allergy and Infectious Diseases, National Institutes of Health.</p>
+    </ack>
+    <fn-group>
+      <fn id="FN3" fn-type="conflict">
+        <p><bold>Conflicts of interest</bold>: X.F. received an unrestricted grant support from Schering and Roche. MG is currently hired by Bitplane but his affiliation was the one stated above during the period of study design, laboratory work and manuscript preparation.</p>
+      </fn>
+    </fn-group>
+    <glossary id="GL">
+      <title>Abbreviations</title>
+      <gloss-group>
+        <def-list>
+          <def-item>
+            <term id="G1">HCV</term>
+            <def>
+              <p>hepatitis C virus</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term id="G2">LT</term>
+            <def>
+              <p>liver transplantation</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term id="G3">SR-B1</term>
+            <def>
+              <p>scavenger receptor B1</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term id="G4">HCVpp</term>
+            <def>
+              <p>HCV pseudoparticle</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term id="G5">HVPG</term>
+            <def>
+              <p>hepatic venous pressure gradient</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term id="G6">DDLT</term>
+            <def>
+              <p>deceased donor liver transplantation</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term id="G7">LDLT</term>
+            <def>
+              <p>living donor liver transplantation</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term id="G8">CyA</term>
+            <def>
+              <p>cyclosporine A</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term id="G9">FK</term>
+            <def>
+              <p>tacrolimus</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term id="G10">CMV</term>
+            <def>
+              <p>cytomegalovirus</p>
+            </def>
+          </def-item>
+        </def-list>
+      </gloss-group>
+    </glossary>
+    <ref-list>
+      <title>Reference List</title>
+      <ref id="R1">
+        <label>1</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ghany</surname>
+              <given-names>MG</given-names>
+            </name>
+            <name>
+              <surname>Strader</surname>
+              <given-names>DB</given-names>
+            </name>
+            <name>
+              <surname>Thomas</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Seeff</surname>
+              <given-names>LB</given-names>
+            </name>
+          </person-group>
+          <article-title>Diagnosis, management, and treatment of hepatitis C: an update</article-title>
+          <source>Hepatology</source>
+          <year>2009</year>
+          <volume>49</volume>
+          <fpage>1335</fpage>
+          <lpage>1374</lpage>
+          <pub-id pub-id-type="pmid">19330875</pub-id>
+        </citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bartosch</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Dubuisson</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Cosset</surname>
+              <given-names>FL</given-names>
+            </name>
+          </person-group>
+          <article-title>Infectious hepatitis C virus pseudo-particles containing functional E1–E2 envelope protein complexes</article-title>
+          <source>J Exp Med</source>
+          <year>2003</year>
+          <volume>197</volume>
+          <fpage>633</fpage>
+          <lpage>642</lpage>
+          <pub-id pub-id-type="pmid">12615904</pub-id>
+        </citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wakita</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Pietschmann</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Kato</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Date</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Miyamoto</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>Z</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Production of infectious hepatitis C virus in tissue culture from a cloned viral genome</article-title>
+          <source>Nat Med</source>
+          <year>2005</year>
+          <volume>11</volume>
+          <fpage>791</fpage>
+          <lpage>796</lpage>
+          <pub-id pub-id-type="pmid">15951748</pub-id>
+        </citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bartosch</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Vitelli</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Granier</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Goujon</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Dubuisson</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Pascale</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Cell entry of hepatitis C virus requires a set of co-receptors that include the CD81 tetraspanin and the SR-B1 scavenger receptor</article-title>
+          <source>J Biol Chem</source>
+          <year>2003</year>
+          <volume>278</volume>
+          <fpage>41624</fpage>
+          <lpage>41630</lpage>
+          <pub-id pub-id-type="pmid">12913001</pub-id>
+        </citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Scarselli</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Ansuini</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Cerino</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Roccasecca</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Acali</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Filocamo</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The human scavenger receptor class B type I is a novel candidate receptor for the hepatitis C virus</article-title>
+          <source>EMBO J</source>
+          <year>2002</year>
+          <volume>21</volume>
+          <fpage>5017</fpage>
+          <lpage>5025</lpage>
+          <pub-id pub-id-type="pmid">12356718</pub-id>
+        </citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zeisel</surname>
+              <given-names>MB</given-names>
+            </name>
+            <name>
+              <surname>Koutsoudakis</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Schnober</surname>
+              <given-names>EK</given-names>
+            </name>
+            <name>
+              <surname>Haberstroh</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Blum</surname>
+              <given-names>HE</given-names>
+            </name>
+            <name>
+              <surname>Cosset</surname>
+              <given-names>FL</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Scavenger receptor class B type I is a key host factor for hepatitis C virus infection required for an entry step closely linked to CD81</article-title>
+          <source>Hepatology</source>
+          <year>2007</year>
+          <volume>46</volume>
+          <fpage>1722</fpage>
+          <lpage>1731</lpage>
+          <pub-id pub-id-type="pmid">18000990</pub-id>
+        </citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Burlone</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>Budkowska</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Hepatitis C virus cell entry: role of lipoproteins and cellular receptors</article-title>
+          <source>J Gen Virol</source>
+          <year>2009</year>
+          <volume>90</volume>
+          <fpage>1055</fpage>
+          <lpage>1070</lpage>
+          <pub-id pub-id-type="pmid">19264629</pub-id>
+        </citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Evans</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Rice</surname>
+              <given-names>CM</given-names>
+            </name>
+          </person-group>
+          <article-title>Hepatitis C virus replicons finally get to second base</article-title>
+          <source>Gastroenterology</source>
+          <year>2003</year>
+          <volume>125</volume>
+          <fpage>1892</fpage>
+          <lpage>1895</lpage>
+          <pub-id pub-id-type="pmid">14724844</pub-id>
+        </citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pileri</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Uematsu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Campagnoli</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Galli</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Falugi</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Petracca</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Binding of hepatitis C virus to CD81</article-title>
+          <source>Science</source>
+          <year>1998</year>
+          <volume>282</volume>
+          <fpage>938</fpage>
+          <lpage>941</lpage>
+          <pub-id pub-id-type="pmid">9794763</pub-id>
+        </citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ploss</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Evans</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Gaysinskaya</surname>
+              <given-names>VA</given-names>
+            </name>
+            <name>
+              <surname>Panis</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>You</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>de Jong</surname>
+              <given-names>YP</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Human occludin is a hepatitis C virus entry factor required for infection of mouse cells</article-title>
+          <source>Nature</source>
+          <year>2009</year>
+          <volume>457</volume>
+          <fpage>882</fpage>
+          <lpage>886</lpage>
+          <pub-id pub-id-type="pmid">19182773</pub-id>
+        </citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Evans</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>von Hahn</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Tscherne</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Syder</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Panis</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Wolk</surname>
+              <given-names>B</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Claudin-1 is a hepatitis C virus co-receptor required for a late step in entry</article-title>
+          <source>Nature</source>
+          <year>2007</year>
+          <volume>446</volume>
+          <fpage>801</fpage>
+          <lpage>805</lpage>
+          <pub-id pub-id-type="pmid">17325668</pub-id>
+        </citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Shen</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Turner</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Coyne</surname>
+              <given-names>CB</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Tight junction proteins claudin-1 and occludin control hepatitis C virus entry and are downregulated during infection to prevent superinfection</article-title>
+          <source>J Virol</source>
+          <year>2009</year>
+          <volume>83</volume>
+          <fpage>2011</fpage>
+          <lpage>2014</lpage>
+          <pub-id pub-id-type="pmid">19052094</pub-id>
+        </citation>
+      </ref>
+      <ref id="R13">
+        <label>13</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Benedicto</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Molina-Jimenez</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Barreiro</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Maldonado-Rodriguez</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Prieto</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Moreno-Otero</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Hepatitis C virus envelope components alter localization of hepatocyte tight junction-associated proteins and promote occludin retention in the endoplasmic reticulum</article-title>
+          <source>Hepatology</source>
+          <year>2008</year>
+          <volume>48</volume>
+          <fpage>1044</fpage>
+          <lpage>1053</lpage>
+          <pub-id pub-id-type="pmid">18802961</pub-id>
+        </citation>
+      </ref>
+      <ref id="R14">
+        <label>14</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Decaens</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Durand</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Grosse</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Cassio</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Which in vitro models could be best used to study hepatocyte polarity?</article-title>
+          <source>Biol Cell</source>
+          <year>2008</year>
+          <volume>100</volume>
+          <fpage>387</fpage>
+          <lpage>398</lpage>
+          <pub-id pub-id-type="pmid">18549352</pub-id>
+        </citation>
+      </ref>
+      <ref id="R15">
+        <label>15</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Carrion</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Navasa</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Garcia-Retortillo</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Garcia-Pagan</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Crespo</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Bruguera</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Efficacy of antiviral therapy on hepatitis C recurrence after liver transplantation: a randomized controlled study</article-title>
+          <source>Gastroenterology</source>
+          <year>2007</year>
+          <volume>132</volume>
+          <fpage>1746</fpage>
+          <lpage>1756</lpage>
+          <pub-id pub-id-type="pmid">17484872</pub-id>
+        </citation>
+      </ref>
+      <ref id="R16">
+        <label>16</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Blasco</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Forns</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Carrion</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Garcia-Pagan</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Gilabert</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Rimola</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Hepatic venous pressure gradient identifies patients at risk of severe hepatitis C recurrence after liver transplantation</article-title>
+          <source>Hepatology</source>
+          <year>2006</year>
+          <volume>43</volume>
+          <fpage>492</fpage>
+          <lpage>499</lpage>
+          <pub-id pub-id-type="pmid">16496308</pub-id>
+        </citation>
+      </ref>
+      <ref id="R17">
+        <label>17</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Loke</surname>
+              <given-names>SL</given-names>
+            </name>
+            <name>
+              <surname>Leung</surname>
+              <given-names>CY</given-names>
+            </name>
+            <name>
+              <surname>Chiu</surname>
+              <given-names>KY</given-names>
+            </name>
+            <name>
+              <surname>Yau</surname>
+              <given-names>WL</given-names>
+            </name>
+            <name>
+              <surname>Cheung</surname>
+              <given-names>KN</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Localisation of CD10 to biliary canaliculi by immunoelectron microscopical examination</article-title>
+          <source>J Clin Pathol</source>
+          <year>1990</year>
+          <volume>43</volume>
+          <fpage>654</fpage>
+          <lpage>656</lpage>
+          <pub-id pub-id-type="pmid">2144860</pub-id>
+        </citation>
+      </ref>
+      <ref id="R18">
+        <label>18</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Garcia-Retortillo</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Forns</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Feliu</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Moitinho</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Costa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Navasa</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Hepatitis C virus kinetics during and immediately after liver transplantation</article-title>
+          <source>Hepatology</source>
+          <year>2002</year>
+          <volume>35</volume>
+          <fpage>680</fpage>
+          <lpage>687</lpage>
+          <pub-id pub-id-type="pmid">11870384</pub-id>
+        </citation>
+      </ref>
+      <ref id="R19">
+        <label>19</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Benedicto</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Molina-Jimenez</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Bartosch</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Cosset</surname>
+              <given-names>FL</given-names>
+            </name>
+            <name>
+              <surname>Lavillette</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Prieto</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The tight junction-associated protein occludin is required for a postbinding step in hepatitis C virus entry and infection</article-title>
+          <source>J Virol</source>
+          <year>2009</year>
+          <volume>83</volume>
+          <fpage>8012</fpage>
+          <lpage>8020</lpage>
+          <pub-id pub-id-type="pmid">19515778</pub-id>
+        </citation>
+      </ref>
+      <ref id="R20">
+        <label>20</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Boyer</surname>
+              <given-names>JL</given-names>
+            </name>
+          </person-group>
+          <article-title>The maintenance and generation of membrane polarity in hepatocytes</article-title>
+          <source>Hepatology</source>
+          <year>2004</year>
+          <volume>39</volume>
+          <fpage>892</fpage>
+          <lpage>899</lpage>
+          <pub-id pub-id-type="pmid">15057889</pub-id>
+        </citation>
+      </ref>
+      <ref id="R21">
+        <label>21</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Shilagard</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Xiao</surname>
+              <given-names>SY</given-names>
+            </name>
+            <name>
+              <surname>Snyder</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Lau</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Cicalese</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Visualizing hepatitis C virus infections in human liver by two-photon microscopy</article-title>
+          <source>Gastroenterology</source>
+          <year>2009</year>
+          <volume>137</volume>
+          <fpage>1448</fpage>
+          <lpage>1458</lpage>
+          <pub-id pub-id-type="pmid">19632233</pub-id>
+        </citation>
+      </ref>
+      <ref id="R22">
+        <label>22</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kojima</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Yamamoto</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Murata</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Chiba</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kokai</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Sawada</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Regulation of the blood-biliary barrier: interaction between gap and tight junctions in hepatocytes</article-title>
+          <source>Med Electron Microsc</source>
+          <year>2003</year>
+          <volume>36</volume>
+          <fpage>157</fpage>
+          <lpage>164</lpage>
+          <pub-id pub-id-type="pmid">14505059</pub-id>
+        </citation>
+      </ref>
+      <ref id="R23">
+        <label>23</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Capaldo</surname>
+              <given-names>CT</given-names>
+            </name>
+            <name>
+              <surname>Nusrat</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Cytokine regulation of tight junctions</article-title>
+          <source>Biochim Biophys Acta</source>
+          <year>2009</year>
+          <volume>1788</volume>
+          <fpage>864</fpage>
+          <lpage>871</lpage>
+          <pub-id pub-id-type="pmid">18952050</pub-id>
+        </citation>
+      </ref>
+      <ref id="R24">
+        <label>24</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Gharib</surname>
+              <given-names>TG</given-names>
+            </name>
+            <name>
+              <surname>Huang</surname>
+              <given-names>CC</given-names>
+            </name>
+            <name>
+              <surname>Taylor</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Misek</surname>
+              <given-names>DE</given-names>
+            </name>
+            <name>
+              <surname>Kardia</surname>
+              <given-names>SL</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Discordant protein and mRNA expression in lung adenocarcinomas</article-title>
+          <source>Mol Cell Proteomics</source>
+          <year>2002</year>
+          <volume>1</volume>
+          <fpage>304</fpage>
+          <lpage>313</lpage>
+          <pub-id pub-id-type="pmid">12096112</pub-id>
+        </citation>
+      </ref>
+      <ref id="R25">
+        <label>25</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gry</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Rimini</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Stromberg</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Asplund</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Ponten</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Uhlen</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Correlations between RNA and protein expression profiles in 23 human cell lines</article-title>
+          <source>BMC Genomics</source>
+          <year>2009</year>
+          <volume>10</volume>
+          <fpage>365</fpage>
+          <lpage>79</lpage>
+          <pub-id pub-id-type="pmid">19660143</pub-id>
+        </citation>
+      </ref>
+      <ref id="R26">
+        <label>26</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Reynolds</surname>
+              <given-names>GM</given-names>
+            </name>
+            <name>
+              <surname>Harris</surname>
+              <given-names>HJ</given-names>
+            </name>
+            <name>
+              <surname>Jennings</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Hu</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Grove</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Lalor</surname>
+              <given-names>PF</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Hepatitis C virus receptor expression in normal and diseased liver tissue</article-title>
+          <source>Hepatology</source>
+          <year>2008</year>
+          <volume>47</volume>
+          <fpage>418</fpage>
+          <lpage>27</lpage>
+          <pub-id pub-id-type="pmid">18085708</pub-id>
+        </citation>
+      </ref>
+      <ref id="R27">
+        <label>27</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Grove</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Huby</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Stamataki</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Vanwolleghem</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Meuleman</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Farquhar</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Scavenger receptor BI and BII expression levels modulate hepatitis C virus infectivity</article-title>
+          <source>J Virol</source>
+          <year>2007</year>
+          <volume>81</volume>
+          <fpage>3162</fpage>
+          <lpage>3169</lpage>
+          <pub-id pub-id-type="pmid">17215280</pub-id>
+        </citation>
+      </ref>
+      <ref id="R28">
+        <label>28</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schwarz</surname>
+              <given-names>AK</given-names>
+            </name>
+            <name>
+              <surname>Grove</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Hu</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Mee</surname>
+              <given-names>CJ</given-names>
+            </name>
+            <name>
+              <surname>Balfe</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>McKeating</surname>
+              <given-names>JA</given-names>
+            </name>
+          </person-group>
+          <article-title>Hepatoma cell density promotes claudin-1 and scavenger receptor BI expression and hepatitis C virus internalization</article-title>
+          <source>J Virol</source>
+          <year>2009</year>
+          <volume>83</volume>
+          <fpage>12407</fpage>
+          <lpage>12414</lpage>
+          <pub-id pub-id-type="pmid">19776133</pub-id>
+        </citation>
+      </ref>
+      <ref id="R29">
+        <label>29</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ciesek</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Steinmann</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Iken</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ott</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Helfritz</surname>
+              <given-names>FA</given-names>
+            </name>
+            <name>
+              <surname>Wappler</surname>
+              <given-names>I</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Glucocorticosteroids increase cell entry by hepatitis C virus</article-title>
+          <source>Gastroenterology</source>
+          <year>2010</year>
+          <volume>138</volume>
+          <fpage>1875</fpage>
+          <lpage>1884</lpage>
+          <pub-id pub-id-type="pmid">20152835</pub-id>
+        </citation>
+      </ref>
+      <ref id="R30">
+        <label>30</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Timpe</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Stamataki</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Jennings</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Hu</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Farquhar</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Harris</surname>
+              <given-names>HJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Hepatitis C virus cell-cell transmission in hepatoma cells in the presence of neutralizing antibodies</article-title>
+          <source>Hepatology</source>
+          <year>2008</year>
+          <volume>47</volume>
+          <fpage>17</fpage>
+          <lpage>24</lpage>
+          <pub-id pub-id-type="pmid">17941058</pub-id>
+        </citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

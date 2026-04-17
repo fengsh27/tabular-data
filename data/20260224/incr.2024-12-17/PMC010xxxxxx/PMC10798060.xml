@@ -1,0 +1,1203 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties manuscript?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">9302957</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">8479</journal-id>
+      <journal-id journal-id-type="nlm-ta">Support Care Cancer</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Support Care Cancer</journal-id>
+      <journal-title-group>
+        <journal-title>Supportive care in cancer : official journal of the Multinational Association of Supportive Care in Cancer</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0941-4355</issn>
+      <issn pub-type="epub">1433-7339</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">38102496</article-id>
+      <article-id pub-id-type="pmc">10798060</article-id>
+      <article-id pub-id-type="doi">10.1007/s00520-023-08248-7</article-id>
+      <article-id pub-id-type="manuscript">NIHMS1953076</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Mechanism underlying a brief cognitive behavioral treatment for head and neck cancer survivors with body image distress</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Graboyes</surname>
+            <given-names>Evan M.</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A2" ref-type="aff">2</xref>
+          <xref rid="A3" ref-type="aff">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kistner-Griffin</surname>
+            <given-names>Emily</given-names>
+          </name>
+          <xref rid="A2" ref-type="aff">2</xref>
+          <xref rid="A3" ref-type="aff">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hill</surname>
+            <given-names>Elizabeth G.</given-names>
+          </name>
+          <xref rid="A2" ref-type="aff">2</xref>
+          <xref rid="A3" ref-type="aff">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Maurer</surname>
+            <given-names>Stacey</given-names>
+          </name>
+          <xref rid="A4" ref-type="aff">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Balliet</surname>
+            <given-names>Wendy</given-names>
+          </name>
+          <xref rid="A4" ref-type="aff">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Williams</surname>
+            <given-names>Amy M.</given-names>
+          </name>
+          <xref rid="A5" ref-type="aff">5</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Padgett</surname>
+            <given-names>Lynne</given-names>
+          </name>
+          <xref rid="A6" ref-type="aff">6</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Yan</surname>
+            <given-names>Flora</given-names>
+          </name>
+          <xref rid="A7" ref-type="aff">7</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Rush</surname>
+            <given-names>Angie</given-names>
+          </name>
+          <xref rid="A8" ref-type="aff">8</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Johnson</surname>
+            <given-names>Brad</given-names>
+          </name>
+          <xref rid="A8" ref-type="aff">8</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>McLeod</surname>
+            <given-names>Taylor</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Dahne</surname>
+            <given-names>Jennifer</given-names>
+          </name>
+          <xref rid="A3" ref-type="aff">3</xref>
+          <xref rid="A4" ref-type="aff">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ruggiero</surname>
+            <given-names>Kenneth J.</given-names>
+          </name>
+          <xref rid="A9" ref-type="aff">9</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Sterba</surname>
+            <given-names>Katherine R.</given-names>
+          </name>
+          <xref rid="A2" ref-type="aff">2</xref>
+          <xref rid="A3" ref-type="aff">3</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>1</label>Department of Otolaryngology–Head &amp; Neck Surgery, Medical University of South Carolina, Charleston, SC, USA</aff>
+      <aff id="A2"><label>2</label>Department of Public Health Sciences, Medical University of South Carolina, Charleston, SC, USA</aff>
+      <aff id="A3"><label>3</label>Hollings Cancer Center, MUSC, Charleston, SC, USA</aff>
+      <aff id="A4"><label>4</label>Department of Psychiatry and Behavioral Sciences, Medical University of South Carolina, Charleston, SC, USA</aff>
+      <aff id="A5"><label>5</label>Office of Physician Well-Being and Professionalism, Corewell Health, Detroit, MI, USA</aff>
+      <aff id="A6"><label>6</label>Veteran Affairs Office of Research and Development, Washington, DC, USA</aff>
+      <aff id="A7"><label>7</label>Department of Otolaryngology-Head &amp; Neck Surgery, Temple University School of Medicine, Philadelphia, USA</aff>
+      <aff id="A8"><label>8</label>Head and Neck Cancer Alliance, Charleston, SC, USA</aff>
+      <aff id="A9"><label>9</label>College of Nursing, Medical University of South Carolina, Charleston, SC, USA</aff>
+      <author-notes>
+        <fn fn-type="con" id="FN1">
+          <p id="P1"><bold>Author contributions</bold> All authors contributed to the study conception and design. Material preparation, data collection and analysis were performed by Evan Graboyes, Emily Kistner-Griffin, and Elizabeth G. Hill. The first draft of the manuscript was written by Evan Graboyes and all authors commented on previous versions of the manuscript. All authors read and approved the final manuscript.</p>
+        </fn>
+        <corresp id="CR1"><label>✉</label>Evan M. Graboyes, <email>graboyes@musc.edu</email></corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>12</day>
+        <month>1</month>
+        <year>2024</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>16</day>
+        <month>12</month>
+        <year>2023</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <day>16</day>
+        <month>12</month>
+        <year>2023</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>16</day>
+        <month>12</month>
+        <year>2024</year>
+      </pub-date>
+      <volume>32</volume>
+      <issue>1</issue>
+      <fpage>32</fpage>
+      <lpage>32</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract id="ABS1">
+        <sec id="S1">
+          <title>Purpose</title>
+          <p id="P2">Body image distress (BID) among head and neck cancer (HNC) survivors is a debilitating toxicity associated with depression, anxiety, stigma, and poor quality of life. BRIGHT (<underline>B</underline>uilding a <underline>R</underline>enewed <underline>I</underline>ma<underline>G</underline>e after <underline>H</underline>ead &amp; neck cancer <underline>T</underline>reatment) is a brief cognitive behavioral therapy (CBT) that reduces BID for these patients. This study examines the mechanism underlying BRIGHT.</p>
+        </sec>
+        <sec id="S2">
+          <title>Methods</title>
+          <p id="P3">In this randomized clinical trial, HNC survivors with clinically significant BID were randomized to receive five weekly psychologist-led video tele-CBT sessions (BRIGHT) or dose-and delivery matched survivorship education (attention control [AC]). Body image coping strategies, the hypothesized mediators, were assessed using the Body Image Coping Skills Inventory (BICSI). HNC-related BID was measured with the Inventory to Measure and Assess imaGe disturbancE–Head and Neck (IMAGE-HN). Causal mediation analyses were used to estimate the mediated effects of changes in BICSI scores on changes in IMAGE-HN scores.</p>
+        </sec>
+        <sec id="S3">
+          <title>Results</title>
+          <p id="P4">Among 44 HNC survivors with BID allocated to BRIGHT (<italic toggle="yes">n</italic> = 20) or AC (<italic toggle="yes">n</italic> = 24), mediation analyses showed that BRIGHT decreased avoidant body image coping (mean change in BICSI-Avoidance scale score) from baseline to 1-month post-intervention relative to AC (<italic toggle="yes">p</italic> = 0.039). Decreases in BICSI-Avoidance scores from baseline to 1-month resulted in decreases in IMAGE-HN scores from baseline to 3 months (<italic toggle="yes">p</italic> = 0.009). The effect of BRIGHT on IMAGE-HN scores at 3 months was partially mediated by a decrease in BICSI-Avoidance scores (<italic toggle="yes">p</italic> = 0.039).</p>
+        </sec>
+        <sec id="S4">
+          <title>Conclusions</title>
+          <p id="P5">This randomized trial provides preliminary evidence that BRIGHT reduces BID among HNC survivors by decreasing avoidant body image coping. Further research is necessary to confirm these results and enhance the development of interventions targeting relevant pathways to reduce BID among HNC survivors.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>Body image</kwd>
+        <kwd>Cancer</kwd>
+        <kwd>Cognitive behavioral therapy</kwd>
+        <kwd>Head and neck cancer</kwd>
+        <kwd>Psychosocial oncology</kwd>
+        <kwd>Survivorship</kwd>
+        <kwd>Telemedicine</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="S5">
+      <title>Introduction</title>
+      <p id="P6">Head and neck cancer (HNC) and its treatments result in substantial life-altering changes related to facial disfigurement, difficulty swallowing, impaired smiling, and challenges speaking. Because these changes are highly visible and affect daily functions, 75% of HNC survivors express body image concerns [<xref rid="R1" ref-type="bibr">1</xref>] and up to 28% have clinically significant body image-related distress (BID) [<xref rid="R2" ref-type="bibr">2</xref>]. BID is a source of devastating psychosocial morbidity including a 6-fold increase in moderate-severe depressive symptoms, an 8-fold increase in moderate-severe anxiety symptoms, and increased rates of social isolation and feelings of stigmatization [<xref rid="R2" ref-type="bibr">2</xref>]. As a result, BID among HNC survivors is associated with reduced quality of life (QOL) and may contribute to the two-fold higher rate of suicide mortality relative to other cancer survivors [<xref rid="R2" ref-type="bibr">2</xref>, <xref rid="R3" ref-type="bibr">3</xref>].</p>
+      <p id="P7">There are a variety of conceptual models for understanding BID among patients with visible differences (e.g., HNC survivors) [<xref rid="R4" ref-type="bibr">4</xref>–<xref rid="R7" ref-type="bibr">7</xref>]. Most of these models draw from principles of cognitive theory, behavioral theory, and self-discrepancy theory to suggest that BID in patients with disfigurement is caused by perturbations in body image schemas, body image investment, automatic thoughts, and compensatory behaviors [<xref rid="R4" ref-type="bibr">4</xref>–<xref rid="R7" ref-type="bibr">7</xref>]. For HNC survivors, the experience of disfigurement and function-related impairment occurs in routine life activities and a highly social context (e.g., others noticing and reacting negatively through staring or hurtful words [<xref rid="R8" ref-type="bibr">8</xref>, <xref rid="R9" ref-type="bibr">9</xref>]). We therefore conceptualize HNC-related BID according to Folkman’s transactional theory of stress and coping [<xref rid="R4" ref-type="bibr">4</xref>–<xref rid="R6" ref-type="bibr">6</xref>, <xref rid="R10" ref-type="bibr">10</xref>, <xref rid="R11" ref-type="bibr">11</xref>]. Accordingly, when a HNC survivor is confronted with a situation that generates a negative body image-related response, they utilize a body image coping strategy to regulate their distress. Some of these body image coping strategies may be adaptive while others may be maladaptive. Based on work by our team and others, we believe that maladaptive body image coping, particularly avoidance behavior in routine life activities and social situations, may be one of the key mechanisms that predispose a subset of HNC survivors to BID [<xref rid="R5" ref-type="bibr">5</xref>, <xref rid="R6" ref-type="bibr">6</xref>, <xref rid="R9" ref-type="bibr">9</xref>, <xref rid="R12" ref-type="bibr">12</xref>–<xref rid="R14" ref-type="bibr">14</xref>].</p>
+      <p id="P8">Cognitive behavioral therapy (CBT)-based approaches have emerged as potential treatment paradigms for HNC survivors with BID [<xref rid="R15" ref-type="bibr">15</xref>, <xref rid="R16" ref-type="bibr">16</xref>]. BRIGHT (Building a Renewed ImaGe after Head &amp; neck cancer Treatment) is a brief tailored CBT that has demonstrated feasibility, acceptability, telehealth compatibility, and preliminary efficacy in both a single-arm [<xref rid="R17" ref-type="bibr">17</xref>] and pilot randomized clinical trial (RCT) [<xref rid="R18" ref-type="bibr">18</xref>, <xref rid="R19" ref-type="bibr">19</xref>] settings. BRIGHT was developed to target maladaptive body image coping among HNC survivors. Specifically, BRIGHT provides psychoeducation about the cognitive model of body image; teaches self-monitoring about thoughts, feelings, and body image behaviors; offers cognitive restructuring to identify and challenge unhelpful automatic HNC-related body image thoughts; teaches positive body image coping strategies; and reinforces relapse prevention when managing lifelong BID.</p>
+      <p id="P9">There is consensus that evidence-based psychosocial interventions should be based on theory-based mechanisms of change to avoid pseudoscientific interventions, optimize the effectiveness and efficiency of treatment, and advance the science of psychosocial interventions broadly by identifying psychological factors involved in pathology and health [<xref rid="R20" ref-type="bibr">20</xref>, <xref rid="R21" ref-type="bibr">21</xref>]. However, little is known about the mechanism of change underlying CBT for BID, particularly among cancer survivors and/or persons with visible disfigurement [<xref rid="R6" ref-type="bibr">6</xref>, <xref rid="R22" ref-type="bibr">22</xref>, <xref rid="R23" ref-type="bibr">23</xref>]. To address this gap in understanding, this study aims to examine the mechanism of change underlying BRIGHT on BID among HNC survivors. We hypothesize that a brief, tailored CBT (i.e., BRIGHT) will improve BID among HNC survivors by reducing maladaptive body image coping.</p>
+    </sec>
+    <sec id="S6">
+      <title>Methods</title>
+      <sec id="S7">
+        <title>Study approvals</title>
+        <p id="P10">The study was approved by the institutional review board at the Medical University of South Carolina (MUSC). The CONSORT diagram (<xref rid="SD1" ref-type="supplementary-material">Figure S1 in Supplement 1</xref>), methods, and primary and secondary analyses for the RCT have been described in detail [<xref rid="R18" ref-type="bibr">18</xref>, <xref rid="R19" ref-type="bibr">19</xref>]. Results are reported according to the Consolidated Standards of Reporting Trials Extension (CONSORT Extension) reporting guidelines for randomized pilot and psychological intervention trials [<xref rid="R24" ref-type="bibr">24</xref>, <xref rid="R25" ref-type="bibr">25</xref>].</p>
+      </sec>
+      <sec id="S8">
+        <title>Patients and study procedures</title>
+        <p id="P11">Study patients were recruited in the outpatient setting from the MUSC HNC clinic during a routine survivorship encounter. Eligible patients were adult HNC survivors with clinically significant BID, as determined by a Body Image Scale score ≥ 10 [<xref rid="R26" ref-type="bibr">26</xref>], who had completed treatment 6 weeks to 12 months prior to accrual. The early post-treatment time-point for trial eligibility was chosen to reflect the preferences of HNC survivors established during our formative work and was utilized in the preceding single arm-trial [<xref rid="R17" ref-type="bibr">17</xref>]. Patients were excluded if they could not read and write English or if they had a severe psychiatric comorbidity (e.g., psychosis). Following written informed consent and completion of baseline assessments, patients were randomized 1:1 to BRIGHT or attention control (AC) using a permuted block randomization design with block sizes of 4 or 6. Study assessments were performed at baseline and then 1 week, 1 month, and 3 months post-intervention. The study team was not blinded to treatment allocation, but patients were blinded as to which arm was the investigational one.</p>
+      </sec>
+      <sec id="S9">
+        <title>Interventions</title>
+        <p id="P12">The BRIGHT and AC interventions have previously been described in detail [<xref rid="R18" ref-type="bibr">18</xref>]. In brief, BRIGHT is a theory-based [<xref rid="R4" ref-type="bibr">4</xref>–<xref rid="R6" ref-type="bibr">6</xref>, <xref rid="R10" ref-type="bibr">10</xref>, <xref rid="R11" ref-type="bibr">11</xref>], manualized CBT consisting of five weekly 60-min sessions delivered one-on-one by a licensed clinical psychologist via a video telemedicine platform. BRIGHT session topics include (1) psychoeducation about the cognitive model of body image; (2) self-monitoring about thoughts, feelings, and body image behaviors; (3) cognitive restructuring to identify and challenge unhelpful automatic HNC-related body image thoughts; (4) positive body image coping strategies; and (5) maintenance and relapse prevention. AC is a tele-supportive care intervention consisting of educational videos that address non-body image aspects of HNC survivorship. Following best practices for choosing control groups within behavior change RCTs [<xref rid="R27" ref-type="bibr">27</xref>], we designed AC to match BRIGHT’s dose (five weekly sessions) and delivery method (video-based telemedicine) while not providing the behavior change mechanism in BRIGHT. Attention control is a tele–supportive care intervention consisting of educational videos that address non–body image aspects of HNC survivorship in five modules: (1) introduction to survivorship, (2) physical treatment toxic effects, (3) psychosocial effects of HNC, (4) health maintenance, and (5) financial toxicity. AC was pretested with HNC survivors and refined to optimize its feasibility, credibility, and relevance. Fidelity and adherence to both arms have previously been described [<xref rid="R18" ref-type="bibr">18</xref>]. AC was not delivered by a mental health professional; adherence to AC was monitored by a member of the research team.</p>
+      </sec>
+      <sec id="S10">
+        <title>Study measures</title>
+        <p id="P13">HNC-related BID was assessed with the IMAGE-HN [Inventory to Measure and Assess imaGe disturbancE–Head and Neck]), a validated patient-reported outcome measure of HNC-related BID [<xref rid="R2" ref-type="bibr">2</xref>, <xref rid="R28" ref-type="bibr">28</xref>]. The IMAGE-HN score ranges from 0 to 84, with higher scores representing worse HNC-related BID. Cancer-related BID was measured with the Body Image Scale, a validated measure of BID among oncology patients that has been widely used among patients with HNC [<xref rid="R29" ref-type="bibr">29</xref>, <xref rid="R30" ref-type="bibr">30</xref>]. Body Image Scale score ranges from 0 to 30, with higher scores representing worse cancer-related BID.</p>
+        <p id="P14">Body image coping skills, the hypothesized mechanism of change underlying BRIGHT, was measured using the Body Image Coping Skills Inventory (BICSI). The BICSI is a 29-item, validated measure of the cognitive and behavioral responses to manage threats to body image [<xref rid="R10" ref-type="bibr">10</xref>]. The BICSI contains three subscales: (1) Appearance Fixing (altering appearance by covering, camouflaging, or correcting the perceived defect), (2) Avoidance (an attempt to escape or avert stressful body-image situations), and (3) Positive Rational Acceptance (acceptance of the challenging event and positive self-care or rational self-talk about one’s appearance). The score for each subscale is calculated by summing the values for the individual questions and thus ranges as follows: avoidance (0–24), appearance fixing (0–30), and positive rational acceptance (0–33). For each subscale, higher scores indicate greater reliance on that type of body image coping.</p>
+      </sec>
+      <sec id="S11">
+        <title>Sample size calculation</title>
+        <p id="P15">The sample size calculation has been described in detail with the primary analyses [<xref rid="R18" ref-type="bibr">18</xref>] and is based on the targeted difference between arms for the primary endpoint of the RCT, not the mediation analysis. In brief, for the primary endpoint of change from baseline to 1 month postintervention in the Body Image Scale scores, 44 patients were required to detect a standardized effect size of 0.78 based on the two-sample <italic toggle="yes">t</italic> test with two-sided α = 0.1.</p>
+      </sec>
+      <sec id="S12">
+        <title>Statistical analysis</title>
+        <p id="P16">Data collected from the previously described study population were included in all descriptive and causal mediation analyses [<xref rid="R18" ref-type="bibr">18</xref>]. Missing data were minimal. One subject was missing two items on the BICSI-Avoidance Subscale from the baseline assessment; these were imputed as the average of the subject’s other items for that baseline Avoidance assessment. All analyses were conducted using Rstudio (R version 4.2.3). Means and standard deviations were summarized by treatment group for each of the mediator variables of interest at baseline (BICSI-Avoidance score, BICSI-Appearance Fixing score, and BICSI-Positive Rationale Acceptance score) and change in the mediators from baseline to 1 week and baseline to 1 month post-intervention. The timing of the 1-week and 1-month post-intervention mediator assessments was chosen to align analysis of the mediator (cause) temporally prior to the outcome (effects; measured at 1 and 3 months post-intervention). Linear models of change from baseline in BICSI scores at 1 week (1 month) as a function of treatment group were used to provide preliminary evidence the intervention had an effect on its hypothesized target. Causal mediation analyses were likewise conducted using linear regression models to evaluate all direct and indirect pathways. To adjust for the negative correlation between change scores and baseline values [<xref rid="R31" ref-type="bibr">31</xref>], all linear regression models included baseline mediator values as covariates, and all causal mediation models additionally included baseline outcome variable values. Ignoring baseline values for mediators and outcome measurements could lead to possible confounding and unadjusted models would therefore result in biased analyses [<xref rid="R32" ref-type="bibr">32</xref>]. <italic toggle="yes">P</italic>-values are reported for two-sided tests of differences in mediator changes from baseline at 1-week and 1-month assessments between BRIGHT and AC from linear models adjusting for all mediators at baseline. Consistent with the pilot trial design, all tests are conducted at an alpha=0.10 level and 90% confidence intervals (CIs) are reported, as pre-specified in the statistical analysis plan.</p>
+        <p id="P17">Causal mediation analyses were conducted using a simulation approach implemented in the mediation package in R [<xref rid="R33" ref-type="bibr">33</xref>]. Mediator variables were analyzed as changes in the BICSI-Avoidance, BICSI-Appearance Fixing, and BICSI-Positive Rationale Acceptance scores from baseline to 1-week post-intervention and baseline to 1-month post-intervention. Causal models estimating effect of treatment (BRIGHT, AC) on the change in the mediator variable (BICSI subscale score) from baseline were modeled using linear regression, adjusting for all baseline mediators (BICSI subscale scores) and the outcome of interest at baseline (IMAGE-HN and Body Image Scale scores). Similarly causal models estimating effects of treatment group on change in BID from baseline to 1- and 3-month post-intervention were modeled using linear regression, adjusting for baseline BID assessment and all mediators at baseline. A non-parametric bootstrap approach was implemented to construct 90% CIs around estimates of total effect, average direct effect, and average causal mediation effect from the mediation models with number of simulations equal to 500.</p>
+      </sec>
+    </sec>
+    <sec id="S13">
+      <title>Results</title>
+      <p id="P18">Baseline characteristics are shown in <xref rid="SD1" ref-type="supplementary-material">Table S1 in Supplement 1</xref>. Among the 44 HNC survivors with BID, the median age was 63 years (range, 41–80 years) and 61% (27/44) identified as female. The most common head and neck subsite was the oral cavity (50%; 22/44); 61% of patients (27/44) had stage III/IV HNC, and 61% (27/44) received adjuvant (chemo)radiation. Median time since completion of treatment was 3 months (IQR 2–6 months). The baseline mean IMAGE-HN and Body Image Scale scores were 43 (SD 18) and 17 (SD 6), respectively.</p>
+      <sec id="S14">
+        <title>Effect of BRIGHT on body image coping</title>
+        <p id="P19"><xref rid="T1" ref-type="table">Table 1</xref> shows the effect of treatment (BRIGHT, AC) on its hypothesized targets of body image coping (BICSI subscale scores) over time. BRIGHT reduced avoidant body image coping (BICSI-Avoidance scale score) from baseline to 1-week post-intervention (model based change [Δ BICSI] = −2.2; 90% CI −3.8 to −0.5) and baseline to 1-month post-intervention (Δ BICSI = −2.8; 90% CI −4.9 to −0.7) relative to AC as shown by linear regression analyses adjusted for baseline levels of all BISCI subscale scores.</p>
+      </sec>
+      <sec id="S15">
+        <title>Mechanism underlying effect of BRIGHT on HNC-related BID</title>
+        <p id="P20"><xref rid="T2" ref-type="table">Table 2</xref> shows the results of the mediation analysis investigating whether the effect of BRIGHT on change in HNC-related BID (IMAGE-HN scores) is mediated through changes in body image coping (BICSI subscale scores). <xref rid="F1" ref-type="fig">Figure 1A</xref> depicts the relationship between treatment (BRIGHT, AC), mediator variables (BICSI-Avoidance [M<sub>1</sub>], Appearance Fixing [M<sub>2</sub>], and Positive Rational Acceptance [M<sub>3</sub>] scores) at 1 month, and the outcome (IMAGE-HN score[I]) at 3 months. The “b<sub>1</sub>” path corresponding to BICSI-Avoidance scale scores (ΔI<sub>M1</sub> = 1.6; 90% CI 0.6 to 2.7) and the “b<sub>2</sub>” path corresponding to BICSI-Appearance Fixing scale scores (ΔI<sub>M2</sub> = 1.3; 90% CI 0.6 to 2.0) were both statistically significant, indicating that decreases in avoidant and appearance fixing body image coping from baseline to 1-month post-intervention resulted in decreases in IMAGE-HN scores at 3-month post-intervention. Finally, as shown in <xref rid="T2" ref-type="table">Table 2</xref>, the effect of BRIGHT on decreases in mean IMAGE-HN scores at 3-month post-intervention was partially mediated by a decrease in BICSI-Avoidance scores at 1-month post-intervention (ΔI = −4.5; 90% CI −9.7 to −0.6).</p>
+      </sec>
+      <sec id="S16">
+        <title>Mechanism underlying effect of BRIGHT on cancer-related BID</title>
+        <p id="P21"><xref rid="T3" ref-type="table">Table 3</xref> shows the results of the mediation analysis evaluating the relationship of treatment and body image coping on cancer-related BID (Body Image Scale score [B]). <xref rid="F1" ref-type="fig">Figure 1B</xref> illustrates the relationship between treatment (BRIGHT, AC), mediator variables (BICSI-Avoidance [M<sub>1</sub>], Appearance Fixing [M<sub>2</sub>], and Positive Rational Acceptance [M<sub>3</sub>] scores) at 1 month, and the outcome (Body Image Scale score) at 3 months. The “b<sub>1</sub>” path corresponding to BICSI-Avoidance scale scores (ΔB<sub>M1</sub> = 0.8; 90% CI 0.4 to 1.2) and the “b<sub>2</sub>” path corresponding to BICSI-Appearance Fixing scale scores (ΔB<sub>M2</sub> = 0.4; 90% CI 0.1 to 0.7) were both statistically significant, indicating that decreases in avoidant and appearance fixing body image coping from baseline to 1-month post-intervention decreased Body Image Scale scores at 3-month post-intervention. Finally, as shown in <xref rid="T3" ref-type="table">Table 3</xref>, the effect of BRIGHT on decreases in mean Body Image Scale scores at 3-month post-intervention was partially mediated by a decrease in BICSI-Avoidance (ΔB = −2.3; 90% CI −4.8 to −0.5) and BICSI-Appearance Fixing scale scores (ΔB = −1.3; 90% CI −3.3 to 0.0) at 1 month.</p>
+      </sec>
+      <sec id="S17">
+        <title>Explanatory power of hypothesized mechanism</title>
+        <p id="P22">Having shown that the effect of BRIGHT on BID among HNC survivors is partially mediated through improvements in avoidant body image coping, we sought to quantify the explanatory power of the mediation pathway. The change in BICSI-Avoidance scale scores at 1 month explains 26.7% (90% CI: 3.9–67.0%) of the total effect of BRIGHT on change in IMAGE-HN score and 52.8% (90% CI: 13.3–152.0%) of the total effect of BRIGHT on change in Body Image Scale scores at 3 months.</p>
+      </sec>
+    </sec>
+    <sec id="S18">
+      <title>Discussion</title>
+      <p id="P23">This exploratory study aimed to elucidate the mechanism by which a brief, tailored CBT (BRIGHT) improves BID among HNC survivors. We provide preliminary evidence that BRIGHT effectively reduces maladaptive body image coping relative to AC and demonstrate that the reduction of maladaptive body image coping (particularly avoidance and appearance fixing) decreases BID among HNC survivors. Finally, consistent with our hypothesis, causal mediation analysis in this small sample demonstrated that the mechanism by which BRIGHT improves BID is through decreasing avoidant body image coping.</p>
+      <p id="P24">Multiple meta-analyses have demonstrated that CBT produces durable reductions in BID in patients without visible disfigurement (e.g., eating disorders, body dysmorphic disorder) [<xref rid="R34" ref-type="bibr">34</xref>]. However, the theoretical and empirical evidence base supporting CBT for BID in cancer survivors and persons with visible disfigurement is much weaker [<xref rid="R5" ref-type="bibr">5</xref>]. Whereas some studies have suggested that CBT may reduce BID among patients with disfigurement by enhancing body image coping [<xref rid="R23" ref-type="bibr">23</xref>, <xref rid="R35" ref-type="bibr">35</xref>, <xref rid="R36" ref-type="bibr">36</xref>], three recent systematic reviews noted methodologic limitations in these studies including non-randomized allocation, comparison to waitlist control, lack of underlying theory, analyses that do not evaluate the mediator in a temporally-relevant manner to ascertain cause and effect, failure to account for mediator-treatment confounding (which breaks the causal inference), and lack of formal mediation analyses [<xref rid="R37" ref-type="bibr">37</xref>–<xref rid="R39" ref-type="bibr">39</xref>]. Our study improves upon these methodologic limitations through its randomized design, comparison to AC, theory-based intervention, and causal mediation analysis accounting for multiple time points to demonstrate temporality within the cause and effect pathway and adjustment for baseline variables. These rigorous data extend available evidence and add to the growing literature supporting body image coping strategies as an important mechanism underlying CBT for BID among cancer survivors and persons with visible differences.</p>
+      <p id="P25">Because the effect of BRIGHT on BID was only partially mediated through a reduction in maladaptive body image coping, other causal mechanisms may be present. Future studies should therefore explore other potential mechanisms underlying CBT paradigms such as automatic thoughts, meta-cognitions, or common factors (e.g., therapeutic alliance) [<xref rid="R20" ref-type="bibr">20</xref>, <xref rid="R40" ref-type="bibr">40</xref>]. In addition, although the BICSI includes one subscale that measures positive, adaptive coping skills (i.e., Positive Rational Acceptance subscale), BRIGHT did not improve this domain relative to AC, and improvements in positive rational acceptance did not mediate improvements in BID. This finding is potentially explained by the lack of theoretical basis for the BICSI Positive Rational Acceptance subscale, which combines items related to acceptance (which may be targeted by acceptance and commitment-based therapies) with items related to rational thinking and automatic thoughts (which may be targeted by cognitive and behavioral-based approaches). Future research should therefore explore the role of improving adaptive body image coping skills in addition to reducing maladaptive body image coping.</p>
+      <p id="P26">Although CBT-based approaches such as BRIGHT have potential as the first evidence-based approach to manage BID among HNC survivors [<xref rid="R17" ref-type="bibr">17</xref>, <xref rid="R18" ref-type="bibr">18</xref>], there are no large RCTs demonstrating the efficacy of any intervention to improve BID in these patients [<xref rid="R30" ref-type="bibr">30</xref>]. Prior studies evaluating interventions to conceal disfigurement [<xref rid="R41" ref-type="bibr">41</xref>, <xref rid="R42" ref-type="bibr">42</xref>] and improve self-compassion [<xref rid="R43" ref-type="bibr">43</xref>] showed that these approaches did not decrease BID among HNC survivors. Although there are many potential explanations for the lack of efficacy of these non-CBT-based interventions, one important potential consideration is that they did not target a mechanistically relevant pathway for the development of BID among HNC survivors. By contrast, our data from both the single-arm and pilot RCT settings provide preliminary support for BRIGHT as the first evidence-based intervention to manage BID among HNC survivors [<xref rid="R17" ref-type="bibr">17</xref>–<xref rid="R19" ref-type="bibr">19</xref>].</p>
+      <p id="P27">These mechanism data can now be leveraged to enhance the effectiveness and efficiency of BRIGHT for HNC survivors with BID in the future. By refining BRIGHT to focus more of its therapeutic package (amount of content and/or effectiveness of content delivery) on acquiring adaptive (and reducing maladaptive) body image coping skills, future iterations of BRIGHT could have an even greater effect on reducing BID among HNC survivors. In addition, by removing parts of the BRIGHT therapeutic package that are not mechanistically relevant, we could also enhance the efficiency of BRIGHT, thereby improving scalability, cost-effectiveness, patient and clinician burden, and potentially adoption and sustainability within clinical care.</p>
+      <p id="P28">Although this trial contains a number of strengths including its randomized design, manualized intervention, comparison to dose- and delivery-matched AC, use of validated PROs, and focus on clinically relevant endpoints, findings should be interpreted within the context of several limitations. Consistent with its pilot nature, the study had a small sample size, was conducted at a single-site, was powered for the efficacy analysis (not the mediation analysis), did not control for multiple comparisons, and had a short follow-up duration (3 months post-intervention). We are therefore cautious to overinterpret these encouraging but preliminary findings, which should be considered hypothesis-generating and confirmed in a larger, multi-center trial. Potentially important covariates such as educational attainment and employment status were not collected in the trial and thus could not be analyzed [<xref rid="R2" ref-type="bibr">2</xref>]. Although we measured change in the potential mechanism variable immediately post-treatment, we did not measure changes of the hypothesized mechanism variable during treatment. The BICSI was developed for patients without cancer or visible differences [<xref rid="R10" ref-type="bibr">10</xref>] and thus (1) includes items that are not relevant for cancer survivors (e.g., “I eat something to help me deal with the situation”) and (2) fails to assess image coping skills crucial to patients with cancer (e.g., related to bodily function and functional abilities) [<xref rid="R4" ref-type="bibr">4</xref>, <xref rid="R9" ref-type="bibr">9</xref>]. Finally, this study did not analyze potentially important mechanisms underlying BRIGHT such automatic thoughts, meta-cognitions, or common factors (e.g., therapeutic alliance) [<xref rid="R20" ref-type="bibr">20</xref>, <xref rid="R40" ref-type="bibr">40</xref>].</p>
+    </sec>
+    <sec id="S19">
+      <title>Conclusions</title>
+      <p id="P29">This pilot RCT provides preliminary evidence supporting the hypothesis that BRIGHT, a tailored brief tele-CBT intervention, improves BID among HNC survivors through a mechanism of decreasing avoidant body image coping. Further research is necessary to confirm these results, explore other potential mechanisms underlying CBT for BID among patients with cancer, and enhance the development of interventions that target mechanistically relevant pathways to reduce BID among HNC survivors.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="SM1">
+      <title>Supplementary Material</title>
+      <supplementary-material id="SD1" position="float" content-type="local-data">
+        <label>Supplemental Content</label>
+        <media xlink:href="NIHMS1953076-supplement-Supplemental_Content.pdf" id="d64e630" position="anchor"/>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack id="S21">
+      <title>Funding</title>
+      <p id="P31">This work was supported by the National Cancer Institute at the National Institutes of Health (R21CA245941 and R37CA269385 to E.M.G), the Biostatistics Shared Resource, Hollings Cancer Center, Medical University of South Carolina (P30 CA138313) and the National Center for Advancing Translational Sciences (UL1TR000062). The funding organizations had no influence on the design and conduct of the study; collection, management, analysis, and interpretation of the data; preparation, review, or approval of the manuscript; and decision to submit the manuscript for publication.</p>
+    </ack>
+    <fn-group>
+      <fn id="FN2">
+        <p id="P32">Declarations</p>
+        <p id="P33"><bold>Supplementary Information</bold> The online version contains supplementary material available at <ext-link xlink:href="10.1007/s00520-023-08248-7" ext-link-type="doi">https://doi.org/10.1007/s00520-023-08248-7</ext-link>.</p>
+      </fn>
+      <fn id="FN3">
+        <p id="P34"><bold>Ethics approval</bold> This study was performed in line with the principles of the US Federal Policy for the Protection of Human Subjects and in accordance with the ethical standards as laid down in the 1964 Declaration of Helsinki and its later amendments or comparable ethical standards. Approval was granted by the Institutional Review Board of the Medical University of South Carolina IRB (Federal Wide Assurance # 1888) to conduct study # 00085204 on September 26, 2019.</p>
+      </fn>
+      <fn id="FN4">
+        <p id="P35"><bold>Consent to participate</bold> Written informed consent was obtained from all individual participants prior to participation in the study.</p>
+      </fn>
+      <fn id="FN5">
+        <p id="P36"><bold>Trial registration</bold>
+<ext-link xlink:href="http://www.clinicaltrials.gov/" ext-link-type="uri">ClinicalTrials.gov</ext-link> identifier <ext-link xlink:href="https://clinicaltrials.gov/ct2/show/NCT03831100" ext-link-type="uri">NCT03831100</ext-link>.</p>
+      </fn>
+      <fn fn-type="COI-statement" id="FN6">
+        <p id="P37"><bold>Competing interests</bold> Dr. Graboyes reports having received consulting fees and research support from Castle Biosciences. Dr. Dahne is a co-owner of Behavioral Activation Tech LLC, a small business that develops digital interventions for behavioral health treatment.</p>
+      </fn>
+    </fn-group>
+    <sec sec-type="data-availability" id="S20">
+      <title>Data availability</title>
+      <p id="P30">We will make de-identified data available to users under a data-sharing agreement that provides for (1) a commitment to using the data only for research purposes and not to identify any individual participant; (2) a commitment to securing the data using appropriate technology; and (3) a commitment to destroying or returning the data after analyses are completed. All data sharing will comply with privacy and confidentiality protections such as the NIH Certificate of Confidentiality and applicable laws, regulations, and policies governing data derived from human participants. Data requests should be addressed to the corresponding author at <email>graboyes@musc.edu</email></p>
+    </sec>
+    <ref-list>
+      <title>References</title>
+      <ref id="R1">
+        <label>1.</label>
+        <mixed-citation publication-type="journal"><name><surname>Fingeret</surname><given-names>MC</given-names></name>, <name><surname>Nipomnick</surname><given-names>S</given-names></name>, <name><surname>Guindani</surname><given-names>M</given-names></name>, <name><surname>Baumann</surname><given-names>D</given-names></name>, <name><surname>Hanasono</surname><given-names>M</given-names></name>, <name><surname>Crosby</surname><given-names>M</given-names></name> (<year>2014</year>) <article-title>Body image screening for cancer patients undergoing reconstructive surgery.</article-title>
+<source>Psychooncology</source>
+<volume>23</volume>(<issue>8</issue>):<fpage>898</fpage>–<lpage>905</lpage>. <pub-id pub-id-type="doi">10.1002/pon.3491</pub-id><pub-id pub-id-type="pmid">25066586</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R2">
+        <label>2.</label>
+        <mixed-citation publication-type="journal"><name><surname>Macias</surname><given-names>D</given-names></name>, <name><surname>Hand</surname><given-names>BN</given-names></name>, <name><surname>Pipkorn</surname><given-names>P</given-names></name>
+<etal/> (<year>2021</year>) <article-title>Association of inventory to measure and assess image disturbance - head and neck scores with clinically meaningful body image-related distress among head and neck cancer survivors.</article-title>
+<source>Front Psychol</source>
+<volume>12</volume>:<fpage>794038</fpage>. <pub-id pub-id-type="doi">10.3389/fpsyg.2021.794038</pub-id><pub-id pub-id-type="pmid">34956022</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R3">
+        <label>3.</label>
+        <mixed-citation publication-type="journal"><name><surname>Osazuwa-Peters</surname><given-names>N</given-names></name>, <name><surname>Simpson</surname><given-names>MC</given-names></name>, <name><surname>Zhao</surname><given-names>L</given-names></name>
+<etal/> (<year>2018</year>) <article-title>Suicide risk among cancer survivors: head and neck versus other cancers.</article-title>
+<source>Cancer</source>
+<volume>124</volume>(<issue>20</issue>):<fpage>4072</fpage>–<lpage>4079</lpage>. <pub-id pub-id-type="doi">10.1002/cncr.31675</pub-id><pub-id pub-id-type="pmid">30335190</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R4">
+        <label>4.</label>
+        <mixed-citation publication-type="journal"><name><surname>White</surname><given-names>CA</given-names></name> (<year>2000</year>) <article-title>Body image dimensions and cancer: a heuristic cognitive behavioural model.</article-title>
+<source>Psychooncology</source>
+<volume>9</volume>(<issue>3</issue>):<fpage>183</fpage>–<lpage>192</lpage><pub-id pub-id-type="pmid">10871714</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R5">
+        <label>5.</label>
+        <mixed-citation publication-type="journal"><name><surname>Lewis-Smith</surname><given-names>H</given-names></name>, <name><surname>Diedrichs</surname><given-names>PC</given-names></name>, <name><surname>Halliwell</surname><given-names>E</given-names></name> (<year>2019</year>) <article-title>Cognitive-behavioral roots of body image therapy and prevention.</article-title>
+<source>Body Image</source>
+<volume>31</volume>:<fpage>309</fpage>–<lpage>320</lpage>. <pub-id pub-id-type="doi">10.1016/j.bodyim.2019.08.009</pub-id><pub-id pub-id-type="pmid">31519523</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R6">
+        <label>6.</label>
+        <mixed-citation publication-type="book"><name><surname>Cash</surname><given-names>TF</given-names></name>, <name><surname>Smolak</surname><given-names>L</given-names></name> (eds) (<year>2012</year>) <source>Body Image: A Handbook of Science, Practice, and Prevention</source>, <edition>2nd edn</edition>. <publisher-name>Guilford Press</publisher-name></mixed-citation>
+      </ref>
+      <ref id="R7">
+        <label>7.</label>
+        <mixed-citation publication-type="journal"><name><surname>Kent</surname><given-names>G</given-names></name> (<year>2000</year>) <article-title>Understanding the experiences of people with disfigurements: an integration of four models of social and psychological functioning.</article-title>
+<source>Psychol Health Med</source>
+<volume>5</volume>(<issue>2</issue>):<fpage>117</fpage>–<lpage>129</lpage>. <pub-id pub-id-type="doi">10.1080/713690187</pub-id><pub-id pub-id-type="pmid">29156953</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R8">
+        <label>8.</label>
+        <mixed-citation publication-type="journal"><name><surname>Cho</surname><given-names>J</given-names></name>, <name><surname>Fingeret</surname><given-names>MC</given-names></name>, <name><surname>Huang</surname><given-names>SC</given-names></name>, <name><surname>Liu</surname><given-names>J</given-names></name>, <name><surname>Reece</surname><given-names>GP</given-names></name>, <name><surname>Markey</surname><given-names>MK</given-names></name> (<year>2018</year>) <article-title>Observers’ response to facial disfigurement from head and neck cancer.</article-title>
+<source>Psychooncology</source>
+<pub-id pub-id-type="doi">10.1002/pon.4776</pub-id></mixed-citation>
+      </ref>
+      <ref id="R9">
+        <label>9.</label>
+        <mixed-citation publication-type="journal"><name><surname>Ellis</surname><given-names>MA</given-names></name>, <name><surname>Sterba</surname><given-names>KR</given-names></name>, <name><surname>Day</surname><given-names>TA</given-names></name>
+<etal/> (<year>2019</year>) <article-title>Body image disturbance in surgically treated head and neck cancer patients: a patient-centered approach.</article-title>
+<source>Otolaryngol Head Neck Surg</source>
+<volume>161</volume>(<issue>2</issue>):<fpage>278</fpage>–<lpage>287</lpage>. <pub-id pub-id-type="doi">10.1177/0194599819837621</pub-id><pub-id pub-id-type="pmid">30961419</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R10">
+        <label>10.</label>
+        <mixed-citation publication-type="journal"><name><surname>Cash</surname><given-names>TF</given-names></name>, <name><surname>Santos</surname><given-names>MT</given-names></name>, <name><surname>Williams</surname><given-names>EF</given-names></name> (<year>2005</year>) <article-title>Coping with body-image threats and challenges: validation of the Body Image Coping Strategies Inventory.</article-title>
+<source>J Psychosom Res</source>
+<volume>58</volume>(<issue>2</issue>):<fpage>190</fpage>–<lpage>199</lpage>. <pub-id pub-id-type="doi">10.1016/j.jpsychores.2004.07.008</pub-id><pub-id pub-id-type="pmid">15820848</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R11">
+        <label>11.</label>
+        <mixed-citation publication-type="journal"><name><surname>Folkman</surname><given-names>S</given-names></name> (<year>1997</year>) <article-title>Positive psychological states and coping with severe stress.</article-title>
+<source>Soc Sci Med</source>
+<volume>45</volume>(<issue>8</issue>):<fpage>1207</fpage>–<lpage>1221</lpage>. <pub-id pub-id-type="doi">10.1016/s0277-9536(97)00040-3</pub-id><pub-id pub-id-type="pmid">9381234</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R12">
+        <label>12.</label>
+        <mixed-citation publication-type="journal"><name><surname>Macias</surname><given-names>D</given-names></name>, <name><surname>Hand</surname><given-names>BN</given-names></name>, <name><surname>Maurer</surname><given-names>S</given-names></name>
+<etal/> (<year>2021</year>) <article-title>Factors associated with risk of body image-related distress in patients with head and neck cancer.</article-title>
+<source>JAMA Otolaryngol Head Neck Surg</source>
+<volume>147</volume>(<issue>12</issue>):<fpage>1019</fpage>–<lpage>1026</lpage>. <pub-id pub-id-type="doi">10.1001/jamaoto.2021.1378</pub-id><pub-id pub-id-type="pmid">34236423</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R13">
+        <label>13.</label>
+        <mixed-citation publication-type="journal"><name><surname>Macias</surname><given-names>D</given-names></name>, <name><surname>Hand</surname><given-names>BN</given-names></name>, <name><surname>Zenga</surname><given-names>J</given-names></name>
+<etal/> (<year>2022</year>) <article-title>Association between observer-rated disfigurement and body image-related distress among head and neck cancer survivors.</article-title>
+<source>JAMA Otolaryngol Head Neck Surg</source>
+<volume>148</volume>(<issue>7</issue>):<fpage>688</fpage>–<lpage>689</lpage>. <pub-id pub-id-type="doi">10.1001/jamaoto.2022.0822</pub-id><pub-id pub-id-type="pmid">35554492</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R14">
+        <label>14.</label>
+        <mixed-citation publication-type="journal"><name><surname>Newell</surname><given-names>RJ</given-names></name> (<year>1999</year>) <article-title>Altered body image: a fear-avoidance model of psycho-social difficulties following disfigurement.</article-title>
+<source>J Adv Nurs</source>
+<volume>30</volume>(<issue>5</issue>):<fpage>1230</fpage>–<lpage>1238</lpage>. <pub-id pub-id-type="doi">10.1046/j.1365-2648.1999.01185.x</pub-id><pub-id pub-id-type="pmid">10564423</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R15">
+        <label>15.</label>
+        <mixed-citation publication-type="journal"><name><surname>Fingeret</surname><given-names>MC</given-names></name>, <name><surname>Teo</surname><given-names>I</given-names></name>, <name><surname>Epner</surname><given-names>DE</given-names></name> (<year>2014</year>) <article-title>Managing body image difficulties of adult cancer patients: lessons from available research.</article-title>
+<source>Cancer</source>
+<volume>120</volume>(<issue>5</issue>):<fpage>633</fpage>–<lpage>641</lpage>. <pub-id pub-id-type="doi">10.1002/cncr.28469</pub-id></mixed-citation>
+      </ref>
+      <ref id="R16">
+        <label>16.</label>
+        <mixed-citation publication-type="journal"><name><surname>Chopra</surname><given-names>D</given-names></name>, <name><surname>Shinn</surname><given-names>E</given-names></name>, <name><surname>Teo</surname><given-names>I</given-names></name>
+<etal/> (<year>2023</year>) <article-title>A cognitive behavioral therapy-based intervention to address body image in patients with facial cancers: results from a randomized controlled trial.</article-title>
+<source>Palliat Support Care Mar</source>
+<volume>30</volume>:<fpage>1</fpage>–<lpage>8</lpage>. <pub-id pub-id-type="doi">10.1017/S1478951523000305</pub-id></mixed-citation>
+      </ref>
+      <ref id="R17">
+        <label>17.</label>
+        <mixed-citation publication-type="journal"><name><surname>Graboyes</surname><given-names>EM</given-names></name>, <name><surname>Maurer</surname><given-names>S</given-names></name>, <name><surname>Park</surname><given-names>Y</given-names></name>
+<etal/> (<year>2020</year>) <article-title>Evaluation of a novel telemedicine-based intervention to manage body image disturbance in head and neck cancer survivors.</article-title>
+<source>Psychooncology</source>
+<volume>29</volume>(<issue>12</issue>):<fpage>1988</fpage>–<lpage>1994</lpage>. <pub-id pub-id-type="doi">10.1002/pon.5399</pub-id><pub-id pub-id-type="pmid">32350999</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R18">
+        <label>18.</label>
+        <mixed-citation publication-type="journal"><name><surname>Graboyes</surname><given-names>EM</given-names></name>, <name><surname>Maurer</surname><given-names>S</given-names></name>, <name><surname>Balliet</surname><given-names>W</given-names></name>
+<etal/> (<year>2023</year>) <article-title>Efficacy of a brief tele-cognitive behavioral treatment vs attention control for head and neck cancer survivors with body image distress: a pilot randomized clinical trial.</article-title>
+<source>JAMA Otolaryngol Head Neck Surg</source>
+<volume>149</volume>(<issue>1</issue>):<fpage>54</fpage>–<lpage>62</lpage>. <pub-id pub-id-type="doi">10.1001/jamaoto.2022.3700</pub-id><pub-id pub-id-type="pmid">36454561</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R19">
+        <label>19.</label>
+        <mixed-citation publication-type="journal"><name><surname>Graboyes</surname><given-names>EM</given-names></name>, <name><surname>Kistner-Griffin</surname><given-names>E</given-names></name>, <name><surname>Hill</surname><given-names>EG</given-names></name>
+<etal/> (<year>2023</year>) <article-title>Efficacy of a brief cognitive behavioral therapy for head and neck cancer survivors with body image distress: secondary outcomes from the BRIGHT pilot randomized clinical trial.</article-title>
+<source>J Cancer Surviv</source>
+<pub-id pub-id-type="doi">10.1007/s11764-023-01454-6</pub-id></mixed-citation>
+      </ref>
+      <ref id="R20">
+        <label>20.</label>
+        <mixed-citation publication-type="journal"><name><surname>Kazdin</surname><given-names>AE</given-names></name> (<year>2007</year>) <article-title>Mediators and mechanisms of change in psychotherapy research.</article-title>
+<source>Annu Rev Clin Psychol</source>
+<volume>3</volume>:<fpage>1</fpage>–<lpage>27</lpage>. <pub-id pub-id-type="doi">10.1146/annurev.clinpsy.3.022806.091432</pub-id><pub-id pub-id-type="pmid">17716046</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R21">
+        <label>21.</label>
+        <mixed-citation publication-type="journal"><name><surname>David</surname><given-names>D</given-names></name>, <name><surname>Montgomery</surname><given-names>GH</given-names></name> (<year>2011</year>) <article-title>The scientific status of psychotherapies: a new evaluative framework for evidence-based psychosocial interventions.</article-title>
+<source>Clin Psychol Sci Pract</source>
+<volume>18</volume>:<fpage>89</fpage>–<lpage>99</lpage></mixed-citation>
+      </ref>
+      <ref id="R22">
+        <label>22.</label>
+        <mixed-citation publication-type="journal"><name><surname>Murphy</surname><given-names>R</given-names></name>, <name><surname>Cooper</surname><given-names>Z</given-names></name>, <name><surname>Hollon</surname><given-names>SD</given-names></name>, <name><surname>Fairburn</surname><given-names>CG</given-names></name> (<year>2009</year>) <article-title>How do psychological treatments work? Investigating mediators of change.</article-title>
+<source>Behav Res Ther</source>
+<volume>47</volume>(<issue>1</issue>):<fpage>1</fpage>–<lpage>5</lpage>. <pub-id pub-id-type="doi">10.1016/j.brat.2008.10.001</pub-id><pub-id pub-id-type="pmid">19010459</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R23">
+        <label>23.</label>
+        <mixed-citation publication-type="journal"><name><surname>Lamb</surname><given-names>KM</given-names></name>, <name><surname>Nogg</surname><given-names>KA</given-names></name>, <name><surname>Safren</surname><given-names>SA</given-names></name>, <name><surname>Blashill</surname><given-names>AJ</given-names></name> (<year>2018</year>) <article-title>Mechanism of change in cognitive behavioral therapy for body image and self-care on ART adherence among sexual minority men living with HIV.</article-title>
+<source>AIDS Behav</source>
+<volume>22</volume>(<issue>8</issue>):<fpage>2711</fpage>–<lpage>2717</lpage>. <pub-id pub-id-type="doi">10.1007/s10461-018-2143-0</pub-id><pub-id pub-id-type="pmid">29752620</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R24">
+        <label>24.</label>
+        <mixed-citation publication-type="journal"><name><surname>Eldridge</surname><given-names>SM</given-names></name>, <name><surname>Chan</surname><given-names>CL</given-names></name>, <name><surname>Campbell</surname><given-names>MJ</given-names></name>
+<etal/> (<year>2016</year>) <article-title>CONSORT 2010 statement: extension to randomised pilot and feasibility trials.</article-title>
+<source>BMJ</source>
+<volume>355</volume>:<fpage>i5239</fpage>. <pub-id pub-id-type="doi">10.1136/bmj.i5239</pub-id><pub-id pub-id-type="pmid">27777223</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R25">
+        <label>25.</label>
+        <mixed-citation publication-type="journal"><name><surname>Montgomery</surname><given-names>P</given-names></name>, <name><surname>Grant</surname><given-names>S</given-names></name>, <name><surname>Mayo-Wilson</surname><given-names>E</given-names></name>
+<etal/> (<year>2018</year>) <article-title>Reporting randomised trials of social and psychological interventions: the CONSORT-SPI 2018 Extension.</article-title>
+<source>Trials</source>
+<volume>19</volume>(<issue>1</issue>):<fpage>407</fpage>. <pub-id pub-id-type="doi">10.1186/s13063-018-2733-1</pub-id><pub-id pub-id-type="pmid">30060754</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R26">
+        <label>26.</label>
+        <mixed-citation publication-type="journal"><name><surname>Chopra</surname><given-names>D</given-names></name>, <name><surname>De La Garza</surname><given-names>R</given-names></name>, <name><surname>Lacourt</surname><given-names>TE</given-names></name> (<year>2021</year>) <article-title>Clinical relevance of a Body Image Scale cut point of 10 as an indicator of psychological distress in cancer patients: results from a psychiatric oncology clinic.</article-title>
+<source>Support Care Cancer</source>
+<volume>29</volume>(<issue>1</issue>):<fpage>231</fpage>–<lpage>237</lpage>. <pub-id pub-id-type="doi">10.1007/s00520-020-05491-0</pub-id><pub-id pub-id-type="pmid">32342222</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R27">
+        <label>27.</label>
+        <mixed-citation publication-type="journal"><name><surname>Freedland</surname><given-names>KE</given-names></name>, <name><surname>King</surname><given-names>AC</given-names></name>, <name><surname>Ambrosius</surname><given-names>WT</given-names></name>
+<etal/> (<year>2019</year>) <article-title>The selection of comparators for randomized controlled trials of health-related behavioral interventions: recommendations of an NIH expert panel.</article-title>
+<source>J Clin Epidemiol</source>
+<volume>110</volume>:<fpage>74</fpage>–<lpage>81</lpage>. <pub-id pub-id-type="doi">10.1016/j.jclinepi.2019.02.011</pub-id><pub-id pub-id-type="pmid">30826377</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R28">
+        <label>28.</label>
+        <mixed-citation publication-type="journal"><name><surname>Graboyes</surname><given-names>EM</given-names></name>, <name><surname>Hand</surname><given-names>BN</given-names></name>, <name><surname>Ellis</surname><given-names>MA</given-names></name>
+<etal/> (<year>2020</year>) <article-title>Validation of a novel, multidomain head and neck cancer appearance- and function-distress patient-reported outcome measure.</article-title>
+<source>Otolaryngol Head Neck Surg</source>
+<volume>163</volume>(<issue>5</issue>):<fpage>979</fpage>–<lpage>985</lpage>. <pub-id pub-id-type="doi">10.1177/0194599820927364</pub-id><pub-id pub-id-type="pmid">32482151</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R29">
+        <label>29.</label>
+        <mixed-citation publication-type="journal"><name><surname>Hopwood</surname><given-names>P</given-names></name>, <name><surname>Fletcher</surname><given-names>I</given-names></name>, <name><surname>Lee</surname><given-names>A</given-names></name>, <name><surname>Al Ghazal</surname><given-names>S</given-names></name> (<year>2001</year>) <article-title>A body image scale for use with cancer patients.</article-title>
+<source>Eur J Cancer</source>
+<volume>37</volume>(<issue>2</issue>):<fpage>189</fpage>–<lpage>197</lpage><pub-id pub-id-type="pmid">11166145</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R30">
+        <label>30.</label>
+        <mixed-citation publication-type="journal"><name><surname>Ellis</surname><given-names>MA</given-names></name>, <name><surname>Sterba</surname><given-names>KR</given-names></name>, <name><surname>Brennan</surname><given-names>EA</given-names></name>
+<etal/> (<year>2019</year>) <article-title>A systematic review of patient-reported outcome measures assessing body image disturbance in patients with head and neck cancer.</article-title>
+<source>Otolaryngol Head Neck Surg</source>
+<volume>160</volume>(<issue>6</issue>):<fpage>941</fpage>–<lpage>954</lpage>. <pub-id pub-id-type="doi">10.1177/0194599819829018</pub-id><pub-id pub-id-type="pmid">30744514</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R31">
+        <label>31.</label>
+        <mixed-citation publication-type="book"><name><surname>Harrell</surname><given-names>FE</given-names></name>, <name><surname>Slaughter</surname><given-names>JC</given-names></name>. <name><surname>Slaughter</surname><given-names>FHJ</given-names></name>, ed. <source>Biostatistics for Biomedical Research</source>
+<year>2022</year>. <comment>Accessed December 1, 2022.</comment>
+<comment><ext-link xlink:href="http://hbiostat.org/bbr" ext-link-type="uri">hbiostat.org/bbr</ext-link></comment></mixed-citation>
+      </ref>
+      <ref id="R32">
+        <label>32.</label>
+        <mixed-citation publication-type="journal"><name><surname>Judd</surname><given-names>CM</given-names></name>, <name><surname>Kenny</surname><given-names>DA</given-names></name> (<year>1981</year>) <article-title>Process analysis: estimating mediation in treatment evalutions.</article-title>
+<source>Eval Rev</source>
+<volume>5</volume>:<fpage>602</fpage>–<lpage>619</lpage></mixed-citation>
+      </ref>
+      <ref id="R33">
+        <label>33.</label>
+        <mixed-citation publication-type="journal"><name><surname>Tingley</surname><given-names>D</given-names></name>, <name><surname>Yamamoto</surname><given-names>T</given-names></name>, <name><surname>Hirose</surname><given-names>K</given-names></name>, <name><surname>Imai</surname><given-names>K</given-names></name>, <name><surname>Keele</surname><given-names>L</given-names></name> (<year>2014</year>) <article-title>Mediation: R package for Causal Mediation Analysis.</article-title>
+<source>J Stat Softw</source>
+<volume>59</volume>(<issue>5</issue>):<fpage>1</fpage>–<lpage>38</lpage><pub-id pub-id-type="pmid">26917999</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R34">
+        <label>34.</label>
+        <mixed-citation publication-type="journal"><name><surname>Alleva</surname><given-names>JM</given-names></name>, <name><surname>Sheeran</surname><given-names>P</given-names></name>, <name><surname>Webb</surname><given-names>TL</given-names></name>, <name><surname>Martijn</surname><given-names>C</given-names></name>, <name><surname>Miles</surname><given-names>E</given-names></name> (<year>2015</year>) <article-title>A meta-analytic review of stand-alone interventions to improve body image.</article-title>
+<source>PLoS One</source>
+<volume>10</volume>(<issue>9</issue>):<fpage>e0139177</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pone.0139177</pub-id><pub-id pub-id-type="pmid">26418470</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R35">
+        <label>35.</label>
+        <mixed-citation publication-type="journal"><name><surname>Bessell</surname><given-names>A</given-names></name>, <name><surname>Brough</surname><given-names>V</given-names></name>, <name><surname>Clarke</surname><given-names>A</given-names></name>, <name><surname>Harcourt</surname><given-names>D</given-names></name>, <name><surname>Moss</surname><given-names>TP</given-names></name>, <name><surname>Rumsey</surname><given-names>N</given-names></name> (<year>2012</year>) <article-title>Evaluation of the effectiveness of Face IT, a computer-based psychosocial intervention for disfigurement-related distress.</article-title>
+<source>Psychol Health Med</source>
+<volume>17</volume>(<issue>5</issue>):<fpage>565</fpage>–<lpage>577</lpage>. <pub-id pub-id-type="doi">10.1080/13548506.2011.647701</pub-id><pub-id pub-id-type="pmid">22313169</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R36">
+        <label>36.</label>
+        <mixed-citation publication-type="journal"><name><surname>Fadaei</surname><given-names>S</given-names></name>, <name><surname>Janighorban</surname><given-names>M</given-names></name>, <name><surname>Mehrabi</surname><given-names>T</given-names></name>, <name><surname>Ahmadi</surname><given-names>SA</given-names></name>, <name><surname>Mokaryan</surname><given-names>F</given-names></name>, <name><surname>Gukizade</surname><given-names>A</given-names></name> (<year>2011</year>) <article-title>Effects of cognitive behavioral counseling on body Image following mastectomy.</article-title>
+<source>J Res Med Sci</source>
+<volume>16</volume>(<issue>8</issue>):<fpage>1047</fpage>–<lpage>1054</lpage><pub-id pub-id-type="pmid">22279481</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R37">
+        <label>37.</label>
+        <mixed-citation publication-type="journal"><name><surname>Lewis-Smith</surname><given-names>H</given-names></name>, <name><surname>Diedrichs</surname><given-names>PC</given-names></name>, <name><surname>Rumsey</surname><given-names>N</given-names></name>, <name><surname>Harcourt</surname><given-names>D</given-names></name> (<year>2018</year>) <article-title>Efficacy of psychosocial and physical activity-based interventions to improve body image among women treated for breast cancer: a systematic review.</article-title>
+<source>Psychooncology</source>
+<volume>27</volume>(<issue>12</issue>):<fpage>2687</fpage>–<lpage>2699</lpage>. <pub-id pub-id-type="doi">10.1002/pon.4870</pub-id><pub-id pub-id-type="pmid">30161285</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R38">
+        <label>38.</label>
+        <mixed-citation publication-type="journal"><name><surname>Bessell</surname><given-names>A</given-names></name>, <name><surname>Moss</surname><given-names>TP</given-names></name> (<year>2007</year>) <article-title>Evaluating the effectiveness of psychosocial interventions for individuals with visible differences: a systematic review of the empirical literature.</article-title>
+<source>Body Image</source>
+<volume>4</volume>(<issue>3</issue>):<fpage>227</fpage>–<lpage>238</lpage>. <pub-id pub-id-type="doi">10.1016/j.bodyim.2007.04.005</pub-id><pub-id pub-id-type="pmid">18089269</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R39">
+        <label>39.</label>
+        <mixed-citation publication-type="journal"><name><surname>Zhao</surname><given-names>W</given-names></name>, <name><surname>Chong</surname><given-names>YY</given-names></name>, <name><surname>Chien</surname><given-names>WT</given-names></name> (<year>2023</year>) <article-title>Effectiveness of cognitive-based interventions for improving body image of patients having breast cancer: a systematic review and meta-analysis.</article-title>
+<source>Asia Pac J Oncol Nurs</source>
+<volume>10</volume>(<issue>4</issue>):<fpage>100213</fpage>. <pub-id pub-id-type="doi">10.1016/j.apjon.2023.100213</pub-id><pub-id pub-id-type="pmid">37089782</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R40">
+        <label>40.</label>
+        <mixed-citation publication-type="journal"><name><surname>David</surname><given-names>D</given-names></name>, <name><surname>Szentagotai</surname><given-names>A</given-names></name> (<year>2006</year>) <article-title>Cognitions in cognitive-behavioral psychotherapies; toward an integrative model.</article-title>
+<source>Clin Psychol Rev</source>
+<volume>26</volume>(<issue>3</issue>):<fpage>284</fpage>–<lpage>298</lpage>. <pub-id pub-id-type="doi">10.1016/j.cpr.2005.09.003</pub-id><pub-id pub-id-type="pmid">16325974</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R41">
+        <label>41.</label>
+        <mixed-citation publication-type="journal"><name><surname>Huang</surname><given-names>S</given-names></name>, <name><surname>Liu</surname><given-names>HE</given-names></name> (<year>2008</year>) <article-title>Effectiveness of cosmetic rehabilitation on the body image of oral cancer patients in Taiwan.</article-title>
+<source>Support Care Cancer</source>
+<volume>16</volume>(<issue>9</issue>):<fpage>981</fpage>–<lpage>986</lpage>. <pub-id pub-id-type="doi">10.1007/s00520-008-0417-1</pub-id><pub-id pub-id-type="pmid">18297317</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R42">
+        <label>42.</label>
+        <mixed-citation publication-type="journal"><name><surname>Chen</surname><given-names>SC</given-names></name>, <name><surname>Huang</surname><given-names>BS</given-names></name>, <name><surname>Lin</surname><given-names>CY</given-names></name>
+<etal/> (<year>2017</year>) <article-title>Psychosocial effects of a skin camouflage program in female survivors with head and neck cancer: a randomized controlled trial.</article-title>
+<source>Psychooncology</source>
+<volume>26</volume>(<issue>9</issue>):<fpage>1376</fpage>–<lpage>1383</lpage>. <pub-id pub-id-type="doi">10.1002/pon.4308</pub-id><pub-id pub-id-type="pmid">27859893</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R43">
+        <label>43.</label>
+        <mixed-citation publication-type="journal"><name><surname>Melissant</surname><given-names>HC</given-names></name>, <name><surname>Jansen</surname><given-names>F</given-names></name>, <name><surname>Eerenstein</surname><given-names>SEJ</given-names></name>
+<etal/> (<year>2021</year>) <article-title>A structured expressive writing activity targeting body image-related distress among head and neck cancer survivors: who do we reach and what are the effects?</article-title>
+<source>Support Care Cancer</source>
+<pub-id pub-id-type="doi">10.1007/s00520-021-06114-y</pub-id></mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig position="float" id="F1">
+      <label>Fig. 1</label>
+      <caption>
+        <p id="P38">Mediation model for the effect of BRIGHT on BID. Mediation model showing the effect of treatment (BRIGHT, AC) on hypothesized mediators (change in Body Image Coping Skills Inventory scale scores [Avoidance, Appearance Fixing, Rational Acceptance] from baseline to 1-month post-intervention) and outcome (change in mean IMAGE-HN score (<bold>A</bold>) and change in mean Body Image Scale scores (<bold>B</bold>)) from baseline to 3-month post-intervention) adjusted for baseline levels of all mediators and the endpoint. Statistically significant paths are indicated with bold arrows. AC, attention control; BICSI, Body Image Coping Skills Inventory; BRIGHT, Building a Renewed ImaGe after Head &amp; neck cancer Treatment; IMAGE-HN, Inventory to Measure and Assess imaGe disturbancE–Head and Neck</p>
+      </caption>
+      <graphic xlink:href="nihms-1953076-f0001" position="float"/>
+    </fig>
+    <table-wrap position="float" id="T1" orientation="landscape">
+      <label>Table 1</label>
+      <caption>
+        <p id="P39">Effects of treatment on body image coping skills</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <colgroup span="1">
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th rowspan="3" align="left" valign="top" colspan="1">Measure<sup><xref rid="TFN1" ref-type="table-fn">a</xref>,<xref rid="TFN2" ref-type="table-fn">b</xref></sup></th>
+            <th colspan="4" align="left" valign="top" rowspan="1">No (%)<hr/></th>
+          </tr>
+          <tr>
+            <th align="left" valign="top" rowspan="1" colspan="1">BRIGHT<break/>(n=20)</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">Attention control<break/>(n=24)</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">Model based effect size<sup><xref rid="TFN3" ref-type="table-fn">c</xref></sup><break/>90% CI</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">P-value<sup><xref rid="TFN3" ref-type="table-fn">c</xref></sup></th>
+          </tr>
+          <tr>
+            <th align="left" valign="top" rowspan="1" colspan="1">Mean score (SD)</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">Mean score (SD)</th>
+            <th align="left" valign="top" rowspan="1" colspan="1"/>
+            <th align="left" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="5" align="left" valign="top" rowspan="1">BICSI-Avoidance score</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Baseline</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">9.1 (4.4)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">10.2 (4.0)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Δ 1 week</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−2.2 (2.5)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.5 (3.8)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−2.2 (−3.8,−0.5)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.031</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Δ 1 month</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−2.9 (4.3)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.5 (4.0)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−2.8 (−4.9,−0.7)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.029</td>
+          </tr>
+          <tr>
+            <td colspan="5" align="left" valign="top" rowspan="1">BICSI-Appearance Fixing score</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Baseline</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">13.5 (7.1)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">15.3 (6.1)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Δ 1 week</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−1.4 (5.6)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−0.2 (5.5)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−2.1 (−4.9,0.8)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.23</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Δ 1 month</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−1.5 (5.4)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.2 (6.2)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−2.6 (−5.4,0.2)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.13</td>
+          </tr>
+          <tr>
+            <td colspan="5" align="left" valign="top" rowspan="1">BICSI-Positive Rational Acceptance score</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Baseline</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">16.1 (5.0)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">16.8 (4.9)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Δ 1 week</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−0.6 (5.4)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">1.0 (5.5)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−1.8 (−4.5,0.9)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.27</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Δ 1 month</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.9 (5.0)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.0 (6.2)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.9 (−1.9,3.7)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.60</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN1">
+          <label>a</label>
+          <p id="P40">Outcomes are measured post-completion of treatment</p>
+        </fn>
+        <fn id="TFN2">
+          <label>b</label>
+          <p id="P41">For each BICSI subscale score, higher scores indicate greater reliance on that type of skill</p>
+        </fn>
+        <fn id="TFN3">
+          <label>c</label>
+          <p id="P42">Effect sizes and <italic toggle="yes">p</italic>-values from models of differences in change in mediator from baseline between treatment groups, adjusting for all three mediators at baseline</p>
+        </fn>
+        <fn id="TFN4">
+          <p id="P43"><italic toggle="yes">BICSI</italic>, Body Image Coping Skills Inventory; <italic toggle="yes">BRIGHT</italic>, Building a Renewed ImaGe after Head &amp; neck cancer Treatment</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+    <table-wrap position="float" id="T2" orientation="landscape">
+      <label>Table 2</label>
+      <caption>
+        <p id="P44">Mediation analysis demonstrating the relationship of treatment and hypothesized mediators on head and neck cancer-related body image distress (IMAGE-HN Score)</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <colgroup span="1">
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th align="left" valign="top" rowspan="1" colspan="1">Mediator<sup><xref rid="TFN5" ref-type="table-fn">a</xref></sup></th>
+            <th colspan="2" align="left" valign="top" rowspan="1">Effect of BRIGHT on mediating variable<break/>(a path)<hr/></th>
+            <th colspan="2" align="left" valign="top" rowspan="1">Effect of mediating variable on IMAGE-HN score<break/>(b path)<hr/></th>
+            <th colspan="2" align="left" valign="top" rowspan="1">Average direct effect of BRIGHT on IMAGE-HN score<break/>(c’ path)<hr/></th>
+            <th colspan="2" align="left" valign="top" rowspan="1">Total effect of BRIGHT on IMAGE-HN score<break/>(c path)<hr/></th>
+            <th colspan="2" align="left" valign="top" rowspan="1">Average causal mediated effect of BRIGHT on IMAGE-HN score<break/>(a x b)<hr/></th>
+          </tr>
+          <tr>
+            <th align="left" valign="top" rowspan="1" colspan="1"/>
+            <th align="left" valign="top" rowspan="1" colspan="1">Estimate<break/>(90% CI)</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">p</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">Estimate<break/>(90% CI)</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">p</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">Estimate<break/>(90% CI)</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">p</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">Estimate<break/>(90% CI)</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">p</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">Estimate<break/>(90% CI)</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">p</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="11" align="left" valign="top" rowspan="1">Δ BICSI Avoidance score</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Baseline to 1-week</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−2.4 (−4.0,−0.9)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.013</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>1.6 (0.4,2.8)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.034</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−5.4 (−11.3,0.5)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.13</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−9.3 (−15.3,−3.0)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.019</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−3.9 (−8.6,−0.0)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.10</bold>
+</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Baseline to 1-month</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−2.7 (−4.8,−0.6)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.039</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>1.6 (0.6,2.7)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.009</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−12.2 (−20.4, −3.3)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.024</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−16.7 (−24.7,−8.6)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.002</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−4.5 (−9.7,−0.6)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.039</bold>
+</td>
+          </tr>
+          <tr>
+            <td colspan="11" align="left" valign="top" rowspan="1">Δ BICSI Appearance Fixing score</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Baseline to 1-week</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−2.5 (−5.4,0.3)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.14</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>1.0 (0.3,1.6)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.023</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−6.9 (−12.3,−1.9)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.030</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−9.3 (−15.3,−3.0)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.019</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−2.4 (−5.3,0.3)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.14</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Baseline to 1-month</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−2.7 (−5.6,0.2)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.13</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>1.3 (0.6,2.0)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.005</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−13.2 (−20.5,−6.2)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.006</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−16.7 (−24.7,−8.6)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.002</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−3.5 (−8.1,0.3)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.15</td>
+          </tr>
+          <tr>
+            <td colspan="11" align="left" valign="top" rowspan="1">Δ BICSI Positive Rational Acceptance score</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Baseline to 1-week</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−2.0 (−4.8,0.7)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.22</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−0.0 (−0.8,0.7)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.93</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−9.4 (−15.5,−3.0)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.019</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−9.3 (−15.3,−3.0)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.019</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.1 (−2.4,2.5)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">1.0</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Baseline to 1-month</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.5 (−2.3,3.4)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.76</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.2 (−0.7,0.9)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.63</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−16.8 (−24.8,−8.3)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.003</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−16.7 (−24.7,−8.6)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.002</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.1 (−1.6,1.5)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.99</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN5">
+          <label>a</label>
+          <p id="P45">Each analysis was conducted evaluating the mediator at 1-week post intervention and the outcome variable (IMAGE-HN) at 1-month post-intervention (top row for each mediator) and mediator at 1-month post intervention and the outcome variable (IMAGE-HN) at 3-month post-intervention (second row for each mediator)</p>
+        </fn>
+        <fn id="TFN6">
+          <label>b</label>
+          <p id="P46">Each model adjusts for all three mediators at baseline and the IMAGE-HN at baseline</p>
+        </fn>
+        <fn id="TFN7">
+          <p id="P47"><italic toggle="yes">BICSI</italic>, Body Image Coping Skills Inventory; <italic toggle="yes">IMAGE-HN</italic>, Inventory to Measure and Assess imaGe disturbancE–Head and Neck</p>
+        </fn>
+        <fn id="TFN8">
+          <p id="P48">bold indicates statistically significant relationship</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+    <table-wrap position="float" id="T3" orientation="landscape">
+      <label>Table 3</label>
+      <caption>
+        <p id="P49">Mediation analysis demonstrating the relationship of treatment and hypothesized mediators on cancer-related body image distress (Body Image Scale score)</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <colgroup span="1">
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th align="left" valign="top" rowspan="1" colspan="1">Mediator<sup><xref rid="TFN9" ref-type="table-fn">a</xref></sup></th>
+            <th colspan="2" align="left" valign="top" rowspan="1">Effect of BRIGHT on mediating variable<break/>(a path)<hr/></th>
+            <th colspan="2" align="left" valign="top" rowspan="1">Effect of mediating variable on BIS score<break/>(b path)<hr/></th>
+            <th colspan="2" align="left" valign="top" rowspan="1">Average direct effect of BRIGHT on BIS score<break/>(c’ path)<hr/></th>
+            <th colspan="2" align="left" valign="top" rowspan="1">Total effect of BRIGHT on BIS score<break/>(c path)<hr/></th>
+            <th colspan="2" align="left" valign="top" rowspan="1">Average causal mediated effect of BRIGHT on BIS score<break/>(a x b)<hr/></th>
+          </tr>
+          <tr>
+            <th align="left" valign="top" rowspan="1" colspan="1"/>
+            <th align="left" valign="top" rowspan="1" colspan="1">Estimate<break/>(90% CI)</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">p</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">Estimate<break/>(90% CI)</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">p</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">Estimate<break/>(90% CI)</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">p</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">Estimate<break/>(90% CI)</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">p</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">Estimate<break/>(90% CI)</th>
+            <th align="left" valign="top" rowspan="1" colspan="1">p</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="11" align="left" valign="top" rowspan="1">Δ BICSI Avoidance score</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Baseline to 1-week</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−2.4 (−4.0,−0.7)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.021</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.9 (0.4,1.3)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.003</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.4 (−2.6,3.1)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.88</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−1.7 (−5.0,1.1)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.31</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−2.1 (−4.1,−0.5)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.024</bold>
+</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Baseline to 1-month</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−2.9 (−5.1,−0.8)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.026</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.8 (0.4,1.2)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.002</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−2.0 (−5.0,1.1)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.28</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−4.3 (−7.6,−1.2)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.016</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−2.3 (−4.8,−0.5)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.019</bold>
+</td>
+          </tr>
+          <tr>
+            <td colspan="11" align="left" valign="top" rowspan="1">Δ BICSI Appearance Fixing score</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Baseline to 1-week</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−3.3 (−5.8,−0.8)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.035</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.4 (0.1,0.7)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.042</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−0.4 (−3.3,2.3)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.76</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−1.7 (−5.0,1.1)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.31</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−1.3 (−2.9,0.2)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.054</bold>
+</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Baseline to 1-month</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−3.1 (−6.0,−0.3)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.069</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.4 (0.1,0.7)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.027</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−3.0 (−5.7,−0.2)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.078</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−4.3 (−7.6,−1.2)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.016</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−1.3 (−3.3,−0.0)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.086</bold>
+</td>
+          </tr>
+          <tr>
+            <td colspan="11" align="left" valign="top" rowspan="1">Δ BICSI Positive Rational Acceptance score</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Baseline to 1-week</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−2.1 (−4.9,0.6)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.20</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.0 (−0.3,0.4)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.83</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−1.6 (−5.0,1.3)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.36</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−1.7 (−5.0,1.1)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.31</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">−0.1 (−1.2,0.9)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.92</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Baseline to 1-month</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.7 (−2.2,3.6)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.70</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.2 (−0.1,0.5)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.33</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−4.4 (−7.6,−1.2)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.024</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>−4.3 (−7.6,−1.2)</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>0.016</bold>
+</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.1 (−0.8,0.9)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.90</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN9">
+          <label>a</label>
+          <p id="P50">Each analysis was conducted evaluating the mediator at 1-week post intervention and the outcome variable (BIS) at 1-month post-intervention (first row for each mediator); and mediator at 1-month post intervention and the outcome variable (BIS) at 3-month post-intervention (second row for each mediator)</p>
+        </fn>
+        <fn id="TFN10">
+          <label>b</label>
+          <p id="P51">Each model adjusts for all three mediators at baseline and the BIS score at baseline</p>
+        </fn>
+        <fn id="TFN11">
+          <p id="P52"><italic toggle="yes">BICSI</italic>, Body Image Coping Skills Inventory; <italic toggle="yes">BIS</italic>, Body Image Scale</p>
+        </fn>
+        <fn id="TFN12">
+          <p id="P53">bold indicates statistically significant relationship</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+  </floats-group>
+</article>

@@ -1,0 +1,1489 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Archiving and Interchange DTD v2.3 20070202//EN" "archivearticle.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">0376617</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">5462</journal-id>
+      <journal-id journal-id-type="nlm-ta">Lab Invest</journal-id>
+      <journal-title>Laboratory investigation; a journal of technical methods and pathology</journal-title>
+      <issn pub-type="ppub">0023-6837</issn>
+      <issn pub-type="epub">1530-0307</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">20195241</article-id>
+      <article-id pub-id-type="pmc">3078689</article-id>
+      <article-id pub-id-type="doi">10.1038/labinvest.2010.38</article-id>
+      <article-id pub-id-type="manuscript">NIHMS230353</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Oxidative stress mediates nephropathy in type Ia glycogen storage disease</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Yiu</surname>
+            <given-names>Wai Han</given-names>
+          </name>
+          <xref ref-type="author-notes" rid="FN1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Mead</surname>
+            <given-names>Paul A.</given-names>
+          </name>
+          <xref ref-type="author-notes" rid="FN1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Jun</surname>
+            <given-names>Hyun Sik</given-names>
+          </name>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Mansfield</surname>
+            <given-names>Brian C.</given-names>
+          </name>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chou</surname>
+            <given-names>Janice Y.</given-names>
+          </name>
+          <xref ref-type="corresp" rid="CR1">*</xref>
+        </contrib>
+        <aff id="A1">Section on Cellular Differentiation, Program on Developmental Endocrinology and Genetics, National Institute of Child Health and Human Development, National Institutes of Health, Bethesda, MD 20892</aff>
+      </contrib-group>
+      <author-notes>
+        <fn fn-type="equal" id="FN1">
+          <label>1</label>
+          <p id="P1">W.H.Y. and P.A.M. contributed equally to this work</p>
+        </fn>
+        <corresp id="CR1"><label>*</label>To whom proofs should be sent: Janice Y. Chou Building 10, Room 9D42, NIH 10 Center Drive, Bethesda, MD 20892-1830 Tel: 301-496-1094; Fax: 301-402-6035 <email>chouja@mail.nih.gov</email></corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>23</day>
+        <month>8</month>
+        <year>2010</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>1</day>
+        <month>3</month>
+        <year>2010</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>4</month>
+        <year>2010</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>18</day>
+        <month>4</month>
+        <year>2011</year>
+      </pub-date>
+      <volume>90</volume>
+      <issue>4</issue>
+      <fpage>620</fpage>
+      <lpage>629</lpage>
+      <permissions>
+        <license>
+          <p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P2">Glycogen storage disease type Ia (GSD-Ia) patients, deficient in glucose-6-phosphatase-α, manifest disturbed glucose homeostasis with long-term renal disease. We have previously shown that renal fibrosis in GSD-Ia is mediated by the angiotensin/transforming growth factor-β1 (TGF-β1) pathway which also elicits renal damage through oxidative stress. In this study, we further elucidate the mechanism of renal disease by showing that renal expression of Nox-2, p22<sup>phox</sup>, and p47<sup>phox</sup>, components of NADPH oxidase, are up-regulated in GSD-Ia mice compared to controls. Akt/protein kinase B, a downstream mediator of angiotensin II and TGF-β1, is also activated, leading to phosphorylation and inactivation of the Forkhead box O family of transcription factors. This in turn triggers down-regulation of superoxide dismutase and catalase activities that play essential roles in oxidative detoxification in mammals. Renal oxidative stress in GSD-Ia mice is demonstrated by increased oxidation of dihydroethidium and by oxidative damage of DNA. Importantly, renal dysfunction, reflected by elevated serum levels of blood urea nitrogen, reduced renal catalase activity, and increased renal fibrosis, is improved in GSD-Ia mice treated with the antioxidant drug tempol. These data provide the first evidence that oxidative stress is one mechanism that underlies GSD-Ia nephropathy.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>Akt/protein kinase B</kwd>
+        <kwd>Forkhead box O</kwd>
+        <kwd>glycogen storage disease type Ia</kwd>
+        <kwd>NADPH oxidase</kwd>
+        <kwd>renal oxidative stress</kwd>
+        <kwd>catalase</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S1">
+      <title>INTRODUCTION</title>
+      <p id="P3">Glycogen storage disease type Ia (GSD-Ia, MIM232200) is an autosomal recessive disorder caused by a deficiency in the endoplasmic reticulum-bound glucose-6-phosphatase-α (G6Pase-α, also known as G6PC) that catalyzes the hydrolysis of glucose-6-phosphate (G6P) to glucose and phosphate in the terminal step of gluconeogenesis and glycogenolysis.<xref ref-type="bibr" rid="R1">1</xref> GSD-Ia patients manifest a phenotype of disturbed glucose homeostasis characterized by fasting hypoglycemia, hepatomegaly, nephromegaly, hypercholesterolemia, hypertriglyceridemia, hyperuricemia, lactic acidemia, and growth retardation.<xref ref-type="bibr" rid="R1">1</xref> Long-term complications include osteoporosis, gout, pulmonary hypertension, renal disease, and hepatocellular adenomas. Currently, there is no cure for GSD-Ia, but many of the disease symptoms can be managed or improved using dietary therapies<xref ref-type="bibr" rid="R2">2</xref>,<xref ref-type="bibr" rid="R3">3</xref> that maintain normoglycemia. This strategy enables patients to attain near normal growth and pubertal development, with fewer complications as they age. Chronic renal disease was recognized as a major complication of GSD-Ia in the late 1980's. Renal biopsies of GSD-Ia patients revealed tubular atrophy, focal segmental glomerulosclerosis, and interstitial fibrosis.<xref ref-type="bibr" rid="R4">4</xref>-<xref ref-type="bibr" rid="R6">6</xref> While dietary therapies delay the clinical onset of renal disease, the renal insufficiency characterized by glomerular hyperfiltration, hypercalciuria, hypocitraturia and urinary albumin excretion still occur in metabolically compensated GSD-Ia patients.<xref ref-type="bibr" rid="R7">7</xref>,<xref ref-type="bibr" rid="R8">8</xref></p>
+      <p id="P4">In previous studies of the biology and pathophysiology of GSD-Ia, we generated a G6Pase-α-deficient mouse strain that faithfully mimics the human GSD-Ia disorder.<xref ref-type="bibr" rid="R9">9</xref> Using the GSD-Ia mice, we have initiated studies of the role of the angiotensin (Ang) system<xref ref-type="bibr" rid="R10">10</xref>,<xref ref-type="bibr" rid="R11">11</xref> in the development of renal disease.<xref ref-type="bibr" rid="R12">12</xref> We have shown that the components of the Ang system as well as transforming growth factor-β1 (TGF-β1)<xref ref-type="bibr" rid="R11">11</xref>,<xref ref-type="bibr" rid="R13">13</xref>, that mediate most of the profibrogenic effects of Ang II, are up-regulated in GSD-Ia mice relative to their unaffected littermates.<xref ref-type="bibr" rid="R12">12</xref> We have also shown that the resulting renal fibrosis is characterized by a marked increase in the synthesis and deposition of extracellular matrix proteins in the renal cortex, and by the renal pathology of tubular basement membrane thickening, tubular atrophy, tubular dilation, and multifocal interstitial fibrosis.<xref ref-type="bibr" rid="R12">12</xref> These results suggest that one mechanism underlying the nephropathy in GSD-Ia is the Ang/TGF-β1 pathway-mediated renal fibrosis. However, renal damage goes beyond fibrosis, and in this study, we have investigated additional mechanisms that may impact nephropathy in GSD-Ia.</p>
+      <p id="P5">Both Ang II<xref ref-type="bibr" rid="R14">14</xref>,<xref ref-type="bibr" rid="R15">15</xref> and TGF-β1<xref ref-type="bibr" rid="R16">16</xref> can mediate renal damage through oxidative stress<xref ref-type="bibr" rid="R17">17</xref>-<xref ref-type="bibr" rid="R19">19</xref> by promoting increased reactive oxygen species (ROS) production in non-phagocytic cells by activating NADPH oxidases. The NADPH oxidases<xref ref-type="bibr" rid="R20">20</xref>,<xref ref-type="bibr" rid="R21">21</xref> are multi-protein complexes that catalyze the reduction of molecular oxygen to superoxide anion, which in turn can produce damaging ROS. In addition, Ang II<xref ref-type="bibr" rid="R22">22</xref>,<xref ref-type="bibr" rid="R23">23</xref> and TGF-β1<xref ref-type="bibr" rid="R24">24</xref>.<xref ref-type="bibr" rid="R25">25</xref> repress ROS detoxification by activating signaling through Akt/protein kinase B.<xref ref-type="bibr" rid="R26">26</xref> Activated Akt phosphorylates and inactivates the Forkhead box O (FoxO) family of transcription factors<xref ref-type="bibr" rid="R27">27</xref>,<xref ref-type="bibr" rid="R28">28</xref> thereby repressing the expression of the antioxidant enzymes, superoxide dismutases (SODs) <xref ref-type="bibr" rid="R29">29</xref>,<xref ref-type="bibr" rid="R30">30</xref> and catalase (CAT).<xref ref-type="bibr" rid="R31">31</xref> SODs convert superoxide anion to hydrogen peroxide, thereby preventing the formation of highly aggressive compounds such as peroxynitrite and hydroxyl radical.<xref ref-type="bibr" rid="R29">29</xref>,<xref ref-type="bibr" rid="R30">30</xref> CAT reduces hydrogen peroxide to water and oxygen.<xref ref-type="bibr" rid="R31">31</xref> The result is that activation of Ang II and TGF-β1 renders the cells more vulnerable to oxidative stress.</p>
+      <p id="P6">The kidney expresses all of the components of the phagocyte NADPH oxidase (gp91<sup>phox</sup> or Nox-2) and the NADPH oxidase homologues Nox-1 and Nox-4.<xref ref-type="bibr" rid="R21">21</xref> The phagocyte enzyme consists of membrane-associated flavocytochrome catalytic subunits, Nox-2 and p22<sup>phox</sup> that interact with various cytosolic proteins, including the regulatory subunit p47<sup>phox</sup>. Moreover, the Akt/FoxO signaling pathway plays a role in renal oxidative stress via suppression of the antioxidant SOD<xref ref-type="bibr" rid="R25">25</xref> or CAT.<xref ref-type="bibr" rid="R32">32</xref> We propose that oxidative stress is another potential mechanism for renal damage in GSD-Ia. In this study, we show that an enhanced renal oxidative stress occurs in GSD-Ia mice, reflected by the increase in the expression of NADPH oxidase and the activation of the Akt/FoxO pathway-mediated suppression of SOD and CAT.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="S2">
+      <title>MATERIALS AND METHODS</title>
+      <sec id="S3">
+        <title>G6Pase-α-deficient GSD-Ia mice</title>
+        <p id="P7">All animal studies were conducted under an animal protocol approved by the NICHD Animal Care and Use Committee. A glucose therapy, that consists of intraperitoneal injection of 25-100 μl of 15% glucose, every 12 h, was initiated on the first post-natal day for GSD-Ia mice, as described previously.<xref ref-type="bibr" rid="R9">9</xref> Mice that survived weaning were given unrestricted access to Mouse Chow (Zeigler Bros., Inc., Gardners, PA).</p>
+      </sec>
+      <sec id="S4">
+        <title>Quantitative real-time RT-PCR, Western blot, serum, and phenotype analyses</title>
+        <p id="P8">Total RNAs were extracted from the kidneys using the TRIzol Reagent (Invitrogen Life Technologies, Carsbad, CA). The mRNA expression was quantified by real-time RT-PCR, in triplicate, in an Applied Biosystems (Foster City, CA) 7300 Real-Time PCR System using the gene-specific TaqMan® Gene Expression Assays and then normalized to β-actin RNA. The TaqMan® Gene Expression Assays used were: CAT, Mm00437992_m1; SOD1, Mm01344233_g1; SOD2, Mm00449726_m1; SOD3, Mm00448831_s1; and β-actin, Mm00607939_s1. Data were analyzed using the SDS v1.3 software (Applied Biosystems) and expression levels normalized against the level of the appropriate transcript in a wild-type mouse, which was arbitrarily defined as 1.</p>
+        <p id="P9">Kidney tissues were lysed in a sample buffer containing 10 mM Tris-HCl, pH 6.8, 2% SDS, and 10% glycerol and the lysates were resolved by electrophoresis through a 10% polyacrylamide-SDS gel and trans-blotted onto polyvinylpyrrolidene fluoride membranes (Millipore Co., Bedford, MA). The membranes were incubated with a mouse monoclonal antibody against gp91<sup>phox</sup> (BD Pharmingen, San Diego, CA), p-Akt-Ser473 (Cell Signaling, Danvers, MA), or β-actin (Santa Cruz Biotechnology, Santa Cruz, CA), or a rabbit polyclonal antibody against CAT or SOD1 (Abcam Inc., Cambridge, MA), against SOD2 or SOD3 (Stressgen, BC, Canada), against Akt, FoxO1 (H-128), FoxO3a (H-144), p-FoxO1-Ser256/p-FoxO4-Ser193, or p-FoxO1-Thr24/p-FoxO3a-Thr32, all from Cell Signaling, against p47<sup>phox</sup> (H-195), p22<sup>phox</sup> (FL-195), or Nox-4, all from Santa Cruz Biotechnology. The membranes were then incubated with the appropriate horseradish peroxidase-conjugated second antibody (PIERCE, Rockford, IL) and the immunocomplex visualized using the Immobilon™ western chemiluminescent HRP substrate (Millipore Co., Bedford, MA). At least three separate experiments were conducted for each protein in which each mouse was assessed individually.</p>
+        <p id="P10">Blood samples were collected from the tail vein and blood urea nitrogen (BUN) levels were analyzed using the Infinity™ Urea Reagent (Thermo Electron Co., Louisville, CO). For hematoxylin and eosin (H&amp;E), Masson's trichrome, and van Gieson staining, tissues were preserved in 10% neutral buffered formalin, embedded in paraffin, and sectioned at 5 microns thickness. The stained sections were visualized using the Axioskop2 plus microscope and the AxioVision 4.5 software (Carl Zeiss, Thornwood, NY). Quantification of renal fibrosis was performed on the longitudinal sections stained with van Gieson, and the red stained area was converted into pixel density units using the Adobe Photoshop CS3 (Adobe System Incorporated, San Jose, CA). Pictures of the kidneys were stitched together using the Photomerge feature of Adobe Photoshop. After stitching, the pelvic areas were cropped out and renal fibrosis was measured only at the cortical and medullar regions.</p>
+      </sec>
+      <sec id="S5">
+        <title>Immunohistochemical and immunofluorescence analyses</title>
+        <p id="P11">Mouse kidneys were snap frozen, embedded in O.C.T. (Sakura Finetek, Terrance, CA), and sectioned at 5 micron thickness. For immunohistochemical analysis, the tissue sections were prepared by quenching the endogenous tissue peroxidases with 0.3% hydrogen peroxide in 70% methanol for 30 min. The endogenous avidin/biotin was blocked using the Avidin/Biotin Blocking Kit obtained from Vector Laboratories (Burlingame, CA) and the sections were incubated with a rabbit polyclonal antibody against p-FoxO3-Ser253 (Cell Signaling) or a mouse monoclonal antibody against 8-hydroxy-2’-deoxyguanosine (8-OHdG, OXIS International Inc., Foster City, CA). The sections were then incubated with biotinylated anti-rabbit IgG or biotinylated anti-mouse IgG (Vector Laboratories, Burlingame, CA) and the immune complexes detected using an ABC kit and DAB Substrate from Vector Laboratories according to the manufacturer's instructions. The sections were finally counterstained with hematoxylin before mounting.</p>
+        <p id="P12">For immunofluorescence detection of superoxide, the frozen kidney sections were equilibrated for 30 minutes at 37 °C in Krebs’ HEPES buffer (20 mM HEPES, pH 7.4, 128 mM NaCl, 2.5 mM KCl, 2.7 mM CaCl<sub>2</sub>, 1 mM MgCl<sub>2</sub>, and 16 mM glucose). Then, the tissue sections were incubated in a light protected humidified chamber with Krebs’ HEPES buffer containing 2 μM DHE for 30 min at 37 °C, and washed for 5 min with PBS. Dihydroethidium (DHE) is a hydrophobic uncharged compound that is able to cross intracellular membrane and upon oxidation becomes positively charged and accumulates in cells by intercalating into DNA which can be monitored by the appearance of bright red fluorescence.<xref ref-type="bibr" rid="R33">33</xref></p>
+        <p id="P13">For immunofluorescence detection of Nox-2, p22<sup>phox</sup>, and p47<sup>phox</sup>, the kidney sections were fixed for 10 min at 25 °C in 3.75% paraformaldehyde, then permeabilized for 10 min at 25 °C in 0.2% Triton X-100. The permeabilized kidney sections were incubated overnight at 4 °C with a mouse monoclonal antibody against Nox-2 or a rabbit polyclonal antibody against p47<sup>phox</sup> or p22<sup>phox</sup> in PBS supplemented with 3 % goat serum. After washes with PBS, the sections were incubated for 1 h at 25 °C in the dark with a goat anti-mouse or a goat anti-rabbit IgG antibody, conjugated with either Alexa Fluor 555 or 488, and mounted with an anti-fade, water-based mounting medium containing DAPI. The kidney sections were then visualized using the Axioskop2 plus fluorescence microscope.</p>
+      </sec>
+      <sec id="S6">
+        <title>SOD and CAT assays</title>
+        <p id="P14">The animals were anesthetized by intraperitoneal injection of ketamine (150 mg/kg). Then the animals were perfused through the left ventricle of the heart with 20 ml of PBS. The kidneys were removed and homogenized in ice-cold buffer containing 20 mM HEPES, pH 7.2, 1 mM EGTA, 210 mM mannitol and 320 mM sucrose. The SOD activity that dismutates superoxide anion to hydrogen peroxide and oxygen was determined using the BIOXYTECH SOD-525 Kit (OXIS International, Foster City, CA). The CAT activity that converts hydrogen peroxide to water and oxygen was determined using the BIOXYTECH Catalase-520 Kit (OXIS International Inc.).</p>
+      </sec>
+      <sec id="S7">
+        <title>Antioxidant treatment</title>
+        <p id="P15">Six-week-old GSD-Ia mice were divided into two groups. The experimental group (n = 4) received drinking water supplemented with 2 mM of tempol (Sigma, St. Louis, MO) while the control group (n = 4) received only water. Both groups of mice were observed for 6 weeks and blood samples were collected every 2 weeks.</p>
+      </sec>
+      <sec id="S8">
+        <title>Statistical analysis</title>
+        <p id="P16">The unpaired t test was performed using the GraphPad Prism Program, version 4 (GraphPad Software, San Diego, CA). Values were considered statistically significant at p&lt;0.05.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S9">
+      <title>RESULTS</title>
+      <sec id="S10">
+        <title>Increased renal expression of NADPH oxidase in GSD-Ia mice</title>
+        <p id="P17">We have previously shown that the Ang/TGF-β1 pathway is up-regulated in the kidney of GSD-Ia mice.<xref ref-type="bibr" rid="R12">12</xref> Since this pathway can stimulate the production of ROS by activating NADPH oxidases of the Nox family<xref ref-type="bibr" rid="R14">14</xref>-<xref ref-type="bibr" rid="R16">16</xref>, we examined the expression of components of NADPH oxidases, including the membrane-associated Nox-2 (gp91<sup>phox</sup>), Nox-4, and p22<sup>phox</sup>, and the cytosolic regulatory protein, p47<sup>phox</sup>, in the kidneys of GSD-Ia and control mice. To minimize interference from phagocyte NADPH oxidase, blood leukoctyes were removed by perfusion prior to the study. Western blot analysis showed that renal expression of Nox-2 but not Nox-4 was increased significantly in GSD-Ia mice, compared to the control littermates (<xref ref-type="fig" rid="F1">Figure 1a</xref>). In parallel, the renal expression of the p22<sup>phox</sup> and p47<sup>phox</sup> subunits was also up-regulated in GSD-Ia kidneys (<xref ref-type="fig" rid="F1">Figure 1a</xref>).</p>
+        <p id="P18">Immunofluoresence analysis confirmed the increase in the expression of membrane associated Nox-2 and p22<sup>phox</sup> in the GSD-Ia kidneys relative to wild-type kidneys (<xref ref-type="fig" rid="F1">Figure 1b</xref>), consistent with the Western blot results. Immunofluoresence analysis also showed that the expression and membrane association of p47<sup>phox</sup> was markedly increased in the GSD-Ia kidneys (<xref ref-type="fig" rid="F1">Figure 1b</xref>), consistent with the Western blot results and the activation of the NADPH oxidase activity triggered by p47<sup>phox</sup> membrane translocation.<xref ref-type="bibr" rid="R34">34</xref>,<xref ref-type="bibr" rid="R35">35</xref></p>
+      </sec>
+      <sec id="S11">
+        <title>Activation of the Akt/FoxO pathway in GSD-Ia kidneys</title>
+        <p id="P19">Both Ang II<xref ref-type="bibr" rid="R22">22</xref>,<xref ref-type="bibr" rid="R23">23</xref> and TGF-β1<xref ref-type="bibr" rid="R24">24</xref>,<xref ref-type="bibr" rid="R25">25</xref> activate the serine/threonine kinase, Akt/protein kinase B.<xref ref-type="bibr" rid="R26">26</xref> In the kidneys of GSD-Ia mice, Western blot analysis showed that Ser473 in Akt was phosphorylated at much higher levels than the control littermates (<xref ref-type="fig" rid="F2">Figure 2a</xref>). Interestingly, the total amount of Akt was higher in the GSD-Ia kidneys compared to controls (<xref ref-type="fig" rid="F2">Figure 2a</xref>), suggesting that in addition to an increased level of activation there may also be an increased expression level of Akt.</p>
+        <p id="P20">Akt regulates the production of ROS through phosphoryl-inactivation of the FoxO family of transcription factors.<xref ref-type="bibr" rid="R27">27</xref>,<xref ref-type="bibr" rid="R28">28</xref> Western blot analysis showed that while the overall levels of renal FoxO1 and FoxO3 proteins remain unchanged between GSD-Ia and controls (<xref ref-type="fig" rid="F2">Figure 2b</xref>), levels of phosphorylated FoxO proteins are significantly different with p-FoxO1 (Ser256), p-FoxO1 (Thr24), p-FoxO3a (Thr32), p-FoxO3a (Ser253), and p-FoxO4 (Ser193), all up-regulated in GSD-Ia mice compared to littermate controls (<xref ref-type="fig" rid="F2">Figure 2b</xref>).</p>
+        <p id="P21">When the phosphorylated FoxO proteins are bound by the adaptor proteins, it triggers the exclusion of the FoxO proteins from the nucleus and the loss of transcriptional activity.<xref ref-type="bibr" rid="R27">27</xref>,<xref ref-type="bibr" rid="R28">28</xref> Immunohistochemical analysis using an antibody to FoxO3a phosphorylated at Ser253 showed markedly increased staining in the kidney of GSD-Ia mice compared to the control littermates (<xref ref-type="fig" rid="F2">Figure 2c</xref>), with the majority of the stain cytoplasmic, consistent with nuclear exclusion.</p>
+      </sec>
+      <sec id="S12">
+        <title>Reduced expression of SOD and CAT in GSD-Ia kidneys</title>
+        <p id="P22">Inactivation of the FoxO transcription factors can repress expression of SOD and CAT, which scavenge oxygen-free radicals.<xref ref-type="bibr" rid="R29">29</xref>-<xref ref-type="bibr" rid="R31">31</xref> Quantitative real-time RT-PCR analysis showed that renal SOD1, SOD2, and SOD3 mRNA levels in 4- to 6-week-old GSD-Ia mice are on average 60%, 73%, and 59%, respectively, of the levels in their age-matched control littermates (<xref ref-type="fig" rid="F3">Figure 3a</xref>). Western blot analysis confirmed the decrease in renal SOD1 and SOD2 proteins (<xref ref-type="fig" rid="F3">Figure 3b</xref>). In contrast, SOD3 protein expression was unaffected despite a loss of SOD3 mRNA expression in GSD-Ia mice. Activity assays showed that renal SOD activities in 4- and 6-week-old GSD-Ia mice were 41.5% and 54.1%, respectively, of the activities in their age-matched control mice (<xref ref-type="fig" rid="F3">Figure 3c</xref>).</p>
+        <p id="P23">Quantitative real-time RT-PCR analysis showed that renal CAT mRNA levels in 4- to 6-week-old GSD-Ia mice are on average 54% of the levels in their age-matched control littermates (<xref ref-type="fig" rid="F3">Figure 3d</xref>). Western blot analysis confirmed the decrease in CAT proteins in the kidneys of GSD-Ia mice ((<xref ref-type="fig" rid="F3">Figure 3e</xref>). Consistent with this, activity assays demonstrated that renal CAT activities in 4- and 6-week-old GSD-Ia mice were 35.3% and 62.2%, respectively, of the activities in their age-matched control mice ((<xref ref-type="fig" rid="F3">Figure 3f</xref>).</p>
+      </sec>
+      <sec id="S13">
+        <title>Increased oxidative stress in GSD-Ia kidneys</title>
+        <p id="P24">With an increase in the expression of NADPH oxidase and a decrease in the expression of both SOD and CAT in the kidney of GSD-Ia mice there could be an excess production of renal ROS which would alter the renal redox balance, resulting in oxidative damage. We therefore examined ROS production in the kidney using the reporter molecule DHE. Oxidation of DHE results in the production of ethidium, which will bind to DNA to produce a bright red fluorescence.<xref ref-type="bibr" rid="R33">33</xref> Kidney sections from GSD-Ia and control mice were incubated with DHE and its conversion to fluorescent DNA-bound ethidium was examined by immunofluorescence analysis. The GSD-Ia kidney sections exhibited significantly stronger nuclear fluorescent signals, evident by the co-localization of the fluorescent DNA-bound ethidium with DAPI nuclear staining (<xref ref-type="fig" rid="F4">Figure 4a</xref>) as compared to the control kidney sections, consistent with renal oxidative stress in the GSD-Ia mice.</p>
+        <p id="P25">One of the biochemical consequences of elevated ROS is DNA strand breakage<xref ref-type="bibr" rid="R36">36</xref>,<xref ref-type="bibr" rid="R37">37</xref>, that results in the production of 8-OHdG.<xref ref-type="bibr" rid="R38">38</xref> Immunohistochemical analysis showed there was a very low level of 8-OHdG immunostaining in wild-type kidneys (<xref ref-type="fig" rid="F4">Figure 4b</xref>). However, in the GSD-Ia kidneys, we observed intense 8-OHdG staining in the glomeruli and interstitial tissues (<xref ref-type="fig" rid="F4">Figure 4b</xref>).</p>
+      </sec>
+      <sec id="S14">
+        <title>The antioxidant tempol improves renal function in GSD-Ia mice</title>
+        <p id="P26">To evaluate renal function in GSD-Ia mice, we measured the levels of serum BUN in 6-week-old control and GSD-Ia mice. Serum BUN levels in GSD-Ia mice were 40% higher than those in the control littermates (<xref ref-type="fig" rid="F5">Figure 5a</xref>), indicating that renal function in GSD-Ia mice was compromised.</p>
+        <p id="P27">Tempol is a small, cell membrane permeable superoxide dismutase mimetic that attenuates superoxide anion production.<xref ref-type="bibr" rid="R39">39</xref> Therefore, if ROS elevation and damage is contributing to renal damage in GSD-Ia, tempol treatment may improve renal function. To study this we treated 6-week-old GSD-Ia mice for 6-weeks with tempol and monitored renal function by measuring the levels of serum BUN in GSD-Ia mice before and after 4- and 6-week of treatment. To account for individual variations, all data are expressed relative to the measurements made at age 6 weeks prior to initiation of tempol therapy. The vehicle-treated GSD-Ia mice were used as controls.</p>
+        <p id="P28">The serum levels of BUN in wild-type mice were more or less unchanged between age 6 and 12 weeks (data not shown). Following 4- to 6- weeks of vehicle-treatment, the relative BUN levels in GSD-Ia mice increased to 146% of the levels at age 6 weeks (<xref ref-type="fig" rid="F5">Figure 5b</xref>), suggesting continued deterioration in renal function. On the other hand, after 4- to 6-weeks of tempol treatment, the relative BUN levels in GSD-Ia mice were 85% relative to the levels at age 6 weeks (<xref ref-type="fig" rid="F5">Figure 5b</xref>). In support of this, Western blot analysis showed that while renal CAT protein expression was still low following 6-weeks of vehicle treatment of GSD-Ia mice, in tempol-treated GSD-Ia mice CAT expression was comparable to that in the age-matched wild-type mice (<xref ref-type="fig" rid="F5">Figure 5c</xref>).</p>
+        <p id="P29">We have previously shown that the kidneys of 6-week-old GSD-Ia mice exhibit excessive glycogen storage, tubular atrophy, tubular dilation, increased Bowman's capsule spaces, and multifocal interstitial fibrosis.<xref ref-type="bibr" rid="R12">12</xref> Histological examination of the kidneys in 12-week-old vehicle-and tempol-treated GSD-Ia mice again showed similar histological abnormalities (<xref ref-type="fig" rid="F6">Figure 6</xref>). However, the vehicle-treated GSD-Ia mice exhibited increased renal damage, characterized by marked tubular dilation and increased Bowman's capsule spaces (<xref ref-type="fig" rid="F6">Figure 6a</xref>). Moreover, Masson's trichrome staining revealed more pronounced renal fibrosis in vehicle-treated GSD-Ia mice as compared to tempol-treated GSD-Ia mice (<xref ref-type="fig" rid="F6">Figure 6b</xref>). For quantitative histochemical measurement of renal fibrosis, collagen was imaged using von Gieson stain and converted into pixel density units using Adobe Photoshop. Results in <xref ref-type="fig" rid="F6">Figure 6b</xref> showed that the density units in the kidneys of the vehicle-treated GSD-Ia mice were 3.2-fold higher than those in the tempol-treated GSD-Ia mice, confirming the improvement in renal pathology following tempol treatment. Taken together, these results indicate tempol treatment of GSD-Ia mice improved renal function and delayed renal damage and fibrosis.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="S15">
+      <title>DISCUSSION</title>
+      <p id="P30">GSD-Ia patients under intensive dietary therapy continue to suffer from the long-term complications of renal disease<xref ref-type="bibr" rid="R4">4</xref>-<xref ref-type="bibr" rid="R6">6</xref> but the underlying mechanisms remain to be elucidated. We have previously shown that the Ang II/TGF-β1 pathway is up-regulated in the GSD-Ia kidney and mediates renal fibrosis in murine GSD-Ia.<xref ref-type="bibr" rid="R12">12</xref> However, the molecular mechanisms leading to renal dysfunctions in GSD-Ia are almost certain to involve multiple pathways, suggesting that additional consequences of the Ang II/TGF-β1 pathway<xref ref-type="bibr" rid="R14">14</xref>-<xref ref-type="bibr" rid="R16">16</xref>,<xref ref-type="bibr" rid="R22">22</xref>-<xref ref-type="bibr" rid="R25">25</xref> may also be important. The pathway is also a mediator of oxidative stress, having roles in both promoting ROS production and reducing ROS detoxification. In this study, we investigated whether the Ang II/TGF-β1 pathway is causing oxidative stress in the kidney of GSD-Ia mice and, if so, the mechanism behind these processes.</p>
+      <p id="P31">While phagocytes use ROS as part of the innate immunity against pathogens<xref ref-type="bibr" rid="R40">40</xref>, both Ang II<xref ref-type="bibr" rid="R14">14</xref>,<xref ref-type="bibr" rid="R15">15</xref> and TGF-β1<xref ref-type="bibr" rid="R16">16</xref> can stimulate intracellular formation of ROS in non-phagocytic cells by activating NADPH oxidases. We show that renal expression of Nox-2, p22<sup>phox</sup>, and p47<sup>phox</sup> proteins are increased in the kidney of GSD-Ia mice compared to the controls, consistent with a higher level of ROS production in the GSD-Ia kidney. To control intracellular ROS levels, the Nox family is counter-regulated by the anti-oxidant enzymes SOD<xref ref-type="bibr" rid="R29">29</xref>,<xref ref-type="bibr" rid="R30">30</xref> and CAT.<xref ref-type="bibr" rid="R31">31</xref> This control pathway is mediated by the FoxO transcription factors<xref ref-type="bibr" rid="R27">27</xref>,<xref ref-type="bibr" rid="R28">28</xref> that among other activities, up-regulate expression of the SOD and CAT genes, leading to ROS metabolism. In turn, the FoxO proteins are regulated by the serine/threonine kinase Akt.<xref ref-type="bibr" rid="R26">26</xref> When phosphorylated at Ser473<xref ref-type="bibr" rid="R41">41</xref>, Akt can phosphorylate FoxO members.<xref ref-type="bibr" rid="R42">42</xref> This results in FoxO proteins binding to the chaperone molecule 14-3-3 and the translocation of the resulting FoxO complex out of the nucleus<xref ref-type="bibr" rid="R27">27</xref>,<xref ref-type="bibr" rid="R28">28</xref>, where it can no longer exert a regulatory effect on the expression of the SOD and CAT genes, essentially suppressing the production of these antioxidant enzymes. We show that the Akt/FoxO signaling pathway is also activated, with the levels of p-Akt (Ser473) and total Akt increased in GSD-Ia kidneys relative to controls. While the overall levels of FoxO proteins were not elevated, the level of phosphorylated FoxO1 on Thr24 and Ser 256, and FoxO3a and FoxO4 on equivalent sites were all up-regulated in the kidney of GSD-Ia mice compared to the controls. Consistent with this, we show that renal expression of SOD and CAT are down-regulated at both the protein and activity levels in GSD-Ia mice, relative to their control littermates. As expected, this combination of increased NADPH oxidase activity and decreased SOD and CAT activity resulted in an increase in ROS. Oxidative stress was markedly increased in the kidneys of GSD-Ia mice, relative to their controls, as shown by the increase in both the oxidation of DHE and oxidative damage of DNA. Moreover, treatment with the superoxide dismutase mimetic tempol reversed the functional differences seen between the wild-type and GSD-Ia kidneys, consistent with the reversal of the intracellular ROS load and consequent reduction of oxidative damage.</p>
+      <p id="P32">Renal disease in GSD-Ia exhibits a similar clinical course and pathology to diabetic nephropathy.<xref ref-type="bibr" rid="R43">43</xref> Both dysfunctions start with a long period of silent disease during which glomerular hyperfiltration is the only demonstrable renal abnormality. This is followed by the development of microalbuminuria, proteinuria, and ultimately, renal failure. Pathologically, both exhibit interstitial fibrosis, tubular atrophy, and glomerulosclerosis with marked glomerular basement-membrane thickening. In an earlier study, we showed that Ang II/TGF-β1 mediates renal fibrosis in GSD-Ia<xref ref-type="bibr" rid="R12">12</xref> in a manner similar to that seen in diabetes.<xref ref-type="bibr" rid="R44">44</xref>,<xref ref-type="bibr" rid="R45">45</xref> We now extend this observation by demonstrating that similar mechanisms of oxidative stress that mediate diabetic nephropathy<xref ref-type="bibr" rid="R46">46</xref>,<xref ref-type="bibr" rid="R47">47</xref> also mediate nephropathy in GSD-Ia. Prior to our studies, an Ang-converting enzyme (ACE) inhibitor therapy for renal disease had been evaluated in a 10-year retrospective study with a cohort of 95 GSD-Ia patients.<xref ref-type="bibr" rid="R48">48</xref> That study showed that the progression from glomerular hyperfiltration to microalbuminuria was significantly delayed by ACE-inhibitors. However, the progression from microalbuminuria to proteinuria was not improved by the ACE-inhibitors. These findings suggested that while ACE-inhibitor therapy could be beneficial, there was a need for additional therapeutic approaches for the longer term treatment of GSD-Ia. Our demonstration that antioxidant treatment normalizes serum levels of BUN, improves renal CAT expression, and delays renal damage and fibrosis suggests that antioxidant therapy may also be beneficial for the renal dysfunction in GSD-Ia.</p>
+      <p id="P33">In conclusion, we have investigated a murine model of GSD-Ia which accurately reflects the metabolic aspects of the human disease, to elucidate potential mechanisms underlying the renal dysfunction. We have shown that GSD-Ia kidney exhibit enhanced oxidative stress that is mediated by activation of NADPH oxidase and suppression of antioxidant enzymes, SOD and CAT, mediated by the Akt/FoxO pathway. Since the mice have proven to be a faithful model of human GSD-Ia, our findings suggest similar mechanisms might be expected in the human GSD-Ia disorder.</p>
+    </sec>
+  </body>
+  <back>
+    <ack id="S16">
+      <title>ACKNOWLEDGEMENTS</title>
+      <p>This research was supported by the Intramural Research Program of the NICHD, NIH.</p>
+    </ack>
+    <fn-group>
+      <fn id="FN2">
+        <p id="P34">DISCLOSURE/DUALITY OF INTEREST</p>
+        <p id="P35">The authors have declared that no conflict of interest exists.</p>
+      </fn>
+    </fn-group>
+    <glossary>
+      <title>The abbreviations used are</title>
+      <def-list>
+        <def-item>
+          <term>Ang</term>
+          <def>
+            <p>angiotensin</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>CAT</term>
+          <def>
+            <p>catalase</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>G6P</term>
+          <def>
+            <p>glucose-6-phosphate</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>G6Pase-α</term>
+          <def>
+            <p>glucose-6-phosphatase-α</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>GSD-Ia</term>
+          <def>
+            <p>glycogen storage disease type Ia</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>ROS</term>
+          <def>
+            <p>reactive oxygen species</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>SOD</term>
+          <def>
+            <p>superoxide dismutase</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>TGF-β1</term>
+          <def>
+            <p>transforming growth factor-β1</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+    <ref-list>
+      <title>REFERENCES</title>
+      <ref id="R1">
+        <label>1</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chou</surname>
+              <given-names>JY</given-names>
+            </name>
+            <name>
+              <surname>Matern</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Mansfield</surname>
+              <given-names>BC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Type I glycogen storage diseases: disorders of the glucose-6-phosphatase complex.</article-title>
+          <source>Curr Mol Med</source>
+          <year>2002</year>
+          <volume>2</volume>
+          <fpage>121</fpage>
+          <lpage>143</lpage>
+          <pub-id pub-id-type="pmid">11949931</pub-id>
+        </citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Greene</surname>
+              <given-names>HL</given-names>
+            </name>
+            <name>
+              <surname>Slonim</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>O'Neill</surname>
+              <given-names>JA</given-names>
+              <suffix>Jr</suffix>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Continuous nocturnal intragastric feeding for management of type 1 glycogen-storage disease.</article-title>
+          <source>N Engl J Med</source>
+          <year>1976</year>
+          <volume>294</volume>
+          <fpage>423</fpage>
+          <lpage>425</lpage>
+          <pub-id pub-id-type="pmid">813144</pub-id>
+        </citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>YT</given-names>
+            </name>
+            <name>
+              <surname>Cornblath</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Sidbury</surname>
+              <given-names>JB</given-names>
+            </name>
+          </person-group>
+          <article-title>Cornstarch therapy in type I glycogen storage disease.</article-title>
+          <source>N. Engl J Med</source>
+          <year>1984</year>
+          <volume>310</volume>
+          <fpage>171</fpage>
+          <lpage>175</lpage>
+          <pub-id pub-id-type="pmid">6581385</pub-id>
+        </citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>YT</given-names>
+            </name>
+            <name>
+              <surname>Coleman</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Scheinman</surname>
+              <given-names>JI</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Renal disease in type I glycogen storage disease.</article-title>
+          <source>N. Engl J Med</source>
+          <year>1988</year>
+          <volume>318</volume>
+          <fpage>7</fpage>
+          <lpage>11</lpage>
+          <pub-id pub-id-type="pmid">3422104</pub-id>
+        </citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Verani</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Bernstein</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Renal glomerular and tubular abnormalities in glycogen storage disease type I.</article-title>
+          <source>Arch Pathol Lab Med</source>
+          <year>1988</year>
+          <volume>112</volume>
+          <fpage>271</fpage>
+          <lpage>274</lpage>
+          <pub-id pub-id-type="pmid">3422802</pub-id>
+        </citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Baker</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Dahlem</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Goldfarb</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Hyperfiltration and renal disease in glycogen storage disease, type I.</article-title>
+          <source>Kidney Int</source>
+          <year>1989</year>
+          <volume>35</volume>
+          <fpage>1345</fpage>
+          <lpage>1350</lpage>
+          <pub-id pub-id-type="pmid">2671467</pub-id>
+        </citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Weinstein</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Somers</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Wolfsdorf</surname>
+              <given-names>JI</given-names>
+            </name>
+          </person-group>
+          <article-title>Decreased urinary citrate excretion in type 1a glycogen storage disease.</article-title>
+          <source>J Pediatr</source>
+          <year>2001</year>
+          <volume>138</volume>
+          <fpage>378</fpage>
+          <lpage>382</lpage>
+          <pub-id pub-id-type="pmid">11241046</pub-id>
+        </citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rake</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Visser</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Labrune</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Glycogen storage disease type I: diagnosis, management, clinical course and outcome. Results of the European Study on Glycogen Storage Disease Type I (ESGSD I).</article-title>
+          <source>Eur J Pediatr</source>
+          <year>2002</year>
+          <volume>161</volume>
+          <issue>Suppl 1</issue>
+          <fpage>S20</fpage>
+          <lpage>S34</lpage>
+          <pub-id pub-id-type="pmid">12373567</pub-id>
+        </citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lei</surname>
+              <given-names>KJ</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Pan</surname>
+              <given-names>CJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Glucose-6-phosphatase dependent substrate transport in the glycogen storage disease type 1a mouse.</article-title>
+          <source>Nat Genet</source>
+          <year>1996</year>
+          <volume>13</volume>
+          <fpage>203</fpage>
+          <lpage>209</lpage>
+          <pub-id pub-id-type="pmid">8640227</pub-id>
+        </citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ruiz-Ortega</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ruperez</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Esteban</surname>
+              <given-names>V</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Angiotensin II: a key factor in the inflammatory and fibrotic response in kidney diseases.</article-title>
+          <source>Nephrol Dial Transplant</source>
+          <year>2006</year>
+          <volume>21</volume>
+          <fpage>16</fpage>
+          <lpage>20</lpage>
+          <pub-id pub-id-type="pmid">16280370</pub-id>
+        </citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wolf</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Renal injury due to renin-angiotensin-aldosterone system activation of the transforming growth factor-beta pathway.</article-title>
+          <source>Kidney Int</source>
+          <year>2006</year>
+          <volume>70</volume>
+          <fpage>1914</fpage>
+          <lpage>1919</lpage>
+          <pub-id pub-id-type="pmid">16985515</pub-id>
+        </citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yiu</surname>
+              <given-names>WH</given-names>
+            </name>
+            <name>
+              <surname>Pan</surname>
+              <given-names>C-J</given-names>
+            </name>
+            <name>
+              <surname>Ruef</surname>
+              <given-names>RA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Angiotensin mediates renal fibrosis in the nephropathy of glycogen storage disease type Ia.</article-title>
+          <source>Kidney Int</source>
+          <year>2008</year>
+          <volume>73</volume>
+          <fpage>716</fpage>
+          <lpage>723</lpage>
+          <pub-id pub-id-type="pmid">18075499</pub-id>
+        </citation>
+      </ref>
+      <ref id="R13">
+        <label>13</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bottinger</surname>
+              <given-names>EP</given-names>
+            </name>
+            <name>
+              <surname>Bitzer</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>TGF-beta signaling in renal disease.</article-title>
+          <source>J Am Soc Nephrol</source>
+          <year>2002</year>
+          <volume>13</volume>
+          <fpage>2600</fpage>
+          <lpage>2610</lpage>
+          <pub-id pub-id-type="pmid">12239251</pub-id>
+        </citation>
+      </ref>
+      <ref id="R14">
+        <label>14</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sachse</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Wolf</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Angiotensin II-induced reactive oxygen species and the kidney.</article-title>
+          <source>J Am Soc Nephrol</source>
+          <year>2007</year>
+          <volume>18</volume>
+          <fpage>2439</fpage>
+          <lpage>2446</lpage>
+          <pub-id pub-id-type="pmid">17687073</pub-id>
+        </citation>
+      </ref>
+      <ref id="R15">
+        <label>15</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Welch</surname>
+              <given-names>WJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Angiotensin II-dependent superoxide: effects on hypertension and vascular dysfunction.</article-title>
+          <source>Hypertension</source>
+          <year>2008</year>
+          <volume>52</volume>
+          <fpage>51</fpage>
+          <lpage>56</lpage>
+          <pub-id pub-id-type="pmid">18474831</pub-id>
+        </citation>
+      </ref>
+      <ref id="R16">
+        <label>16</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lee</surname>
+              <given-names>HB</given-names>
+            </name>
+            <name>
+              <surname>Yu</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Reactive oxygen species-regulated signaling pathways in diabetic nephropathy.</article-title>
+          <source>J Am Soc Nephrol</source>
+          <year>2003</year>
+          <volume>14</volume>
+          <issue>Suppl 3</issue>
+          <fpage>S241</fpage>
+          <lpage>S245</lpage>
+          <pub-id pub-id-type="pmid">12874439</pub-id>
+        </citation>
+      </ref>
+      <ref id="R17">
+        <label>17</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Abid</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Razzaque</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name>
+              <surname>Taguchi</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Oxidant stress in renal pathophysiology.</article-title>
+          <source>Contrib Nephrol</source>
+          <year>2005</year>
+          <volume>148</volume>
+          <fpage>135</fpage>
+          <lpage>153</lpage>
+          <pub-id pub-id-type="pmid">15912032</pub-id>
+        </citation>
+      </ref>
+      <ref id="R18">
+        <label>18</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Singh</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Kaur</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Chander</surname>
+              <given-names>V</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Antioxidants in the prevention of renal disease.</article-title>
+          <source>J Med Food</source>
+          <year>2006</year>
+          <volume>9</volume>
+          <fpage>443</fpage>
+          <lpage>450</lpage>
+          <pub-id pub-id-type="pmid">17201628</pub-id>
+        </citation>
+      </ref>
+      <ref id="R19">
+        <label>19</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shah</surname>
+              <given-names>SV</given-names>
+            </name>
+            <name>
+              <surname>Baliga</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Rajapurkar</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Oxidants in chronic kidney disease.</article-title>
+          <source>J Am Soc Nephrol</source>
+          <year>2007</year>
+          <volume>18</volume>
+          <fpage>16</fpage>
+          <lpage>28</lpage>
+          <pub-id pub-id-type="pmid">17167116</pub-id>
+        </citation>
+      </ref>
+      <ref id="R20">
+        <label>20</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lambeth</surname>
+              <given-names>JD</given-names>
+            </name>
+          </person-group>
+          <article-title>NOX enzymes and the biology of reactive oxygen.</article-title>
+          <source>Nat Rev Immunol</source>
+          <year>2004</year>
+          <volume>4</volume>
+          <fpage>181</fpage>
+          <lpage>18</lpage>
+          <pub-id pub-id-type="pmid">15039755</pub-id>
+        </citation>
+      </ref>
+      <ref id="R21">
+        <label>21</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gill</surname>
+              <given-names>PS</given-names>
+            </name>
+            <name>
+              <surname>Wilcox</surname>
+              <given-names>CS</given-names>
+            </name>
+          </person-group>
+          <article-title>NADPH oxidases in the kidney.</article-title>
+          <source>Antioxid Redox Signal</source>
+          <year>2006</year>
+          <volume>8</volume>
+          <fpage>1597</fpage>
+          <lpage>1607</lpage>
+          <pub-id pub-id-type="pmid">16987014</pub-id>
+        </citation>
+      </ref>
+      <ref id="R22">
+        <label>22</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gorin</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>NH</given-names>
+            </name>
+            <name>
+              <surname>Feliers</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Angiotensin II activates Akt/protein kinase B by an arachidonic acid/redox-dependent pathway and independent of phosphoinositide 3-kinase.</article-title>
+          <source>FASEB J</source>
+          <year>2001</year>
+          <volume>15</volume>
+          <fpage>1909</fpage>
+          <lpage>1920</lpage>
+          <pub-id pub-id-type="pmid">11532971</pub-id>
+        </citation>
+      </ref>
+      <ref id="R23">
+        <label>23</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Block</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Ricono</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>DY</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Arachidonic acid-dependent activation of a p22(phox)-based NAD(P)H oxidase mediates angiotensin II-induced mesangial cell protein synthesis and fibronectin expression via Akt/PKB.</article-title>
+          <source>Antioxid Redox Signal</source>
+          <year>2006</year>
+          <volume>8</volume>
+          <fpage>1497</fpage>
+          <lpage>1508</lpage>
+          <pub-id pub-id-type="pmid">16987006</pub-id>
+        </citation>
+      </ref>
+      <ref id="R24">
+        <label>24</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Runyan</surname>
+              <given-names>CE</given-names>
+            </name>
+            <name>
+              <surname>Schnaper</surname>
+              <given-names>HW</given-names>
+            </name>
+            <name>
+              <surname>Poncelet</surname>
+              <given-names>AC</given-names>
+            </name>
+          </person-group>
+          <article-title>The phosphatidylinositol 3-kinase/Akt pathway enhances Smad3-stimulated mesangial cell collagen I expression in response to transforming growth factor-beta1.</article-title>
+          <source>J Biol Chem</source>
+          <year>2004</year>
+          <volume>279</volume>
+          <fpage>2632</fpage>
+          <lpage>2639</lpage>
+          <pub-id pub-id-type="pmid">14610066</pub-id>
+        </citation>
+      </ref>
+      <ref id="R25">
+        <label>25</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kato</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Yuan</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>ZG</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Role of the Akt/FoxO3a pathway in TGF-beta1-mediated mesangial cell dysfunction: a novel mechanism related to diabetic kidney disease.</article-title>
+          <source>J Am Soc Nephrol</source>
+          <year>2006</year>
+          <volume>17</volume>
+          <fpage>3325</fpage>
+          <lpage>3335</lpage>
+          <pub-id pub-id-type="pmid">17082237</pub-id>
+        </citation>
+      </ref>
+      <ref id="R26">
+        <label>26</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Manning</surname>
+              <given-names>BD</given-names>
+            </name>
+            <name>
+              <surname>Cantley</surname>
+              <given-names>LC</given-names>
+            </name>
+          </person-group>
+          <article-title>AKT/PKB signaling: navigating downstream.</article-title>
+          <source>Cell</source>
+          <year>2007</year>
+          <volume>129</volume>
+          <fpage>1261</fpage>
+          <lpage>1274</lpage>
+          <pub-id pub-id-type="pmid">17604717</pub-id>
+        </citation>
+      </ref>
+      <ref id="R27">
+        <label>27</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lam</surname>
+              <given-names>EW</given-names>
+            </name>
+            <name>
+              <surname>Francis</surname>
+              <given-names>RE</given-names>
+            </name>
+            <name>
+              <surname>Petkovic</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>FOXO transcription factors: key regulators of cell fate.</article-title>
+          <source>Biochem Soc Trans</source>
+          <year>2006</year>
+          <volume>34</volume>
+          <fpage>722</fpage>
+          <lpage>726</lpage>
+          <pub-id pub-id-type="pmid">17052182</pub-id>
+        </citation>
+      </ref>
+      <ref id="R28">
+        <label>28</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Huang</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Tindall</surname>
+              <given-names>DJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Dynamic FoxO transcription factors.</article-title>
+          <source>J Cell Sci</source>
+          <year>2007</year>
+          <volume>120</volume>
+          <fpage>2479</fpage>
+          <lpage>2487</lpage>
+          <pub-id pub-id-type="pmid">17646672</pub-id>
+        </citation>
+      </ref>
+      <ref id="R29">
+        <label>29</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Johnson</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Giulivi</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Superoxide dismutases and their impact upon human health.</article-title>
+          <source>Mol Aspects Med</source>
+          <year>2005</year>
+          <volume>26</volume>
+          <fpage>340</fpage>
+          <lpage>352</lpage>
+          <pub-id pub-id-type="pmid">16099495</pub-id>
+        </citation>
+      </ref>
+      <ref id="R30">
+        <label>30</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Afonso</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Champy</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Mitrovic</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Reactive oxygen species and superoxide dismutases: role in joint diseases.</article-title>
+          <source>Joint Bone Spine</source>
+          <year>2007</year>
+          <volume>74</volume>
+          <fpage>324</fpage>
+          <lpage>329</lpage>
+          <pub-id pub-id-type="pmid">17590367</pub-id>
+        </citation>
+      </ref>
+      <ref id="R31">
+        <label>31</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kirkman</surname>
+              <given-names>HN</given-names>
+            </name>
+            <name>
+              <surname>Gaetani</surname>
+              <given-names>GF</given-names>
+            </name>
+          </person-group>
+          <article-title>Mammalian catalase: a venerable enzyme with new mysteries.</article-title>
+          <source>Trends Biochem Sci</source>
+          <year>2007</year>
+          <volume>32</volume>
+          <fpage>44</fpage>
+          <lpage>50</lpage>
+          <pub-id pub-id-type="pmid">17158050</pub-id>
+        </citation>
+      </ref>
+      <ref id="R32">
+        <label>32</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Venkatesan</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Mahimainathan</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Das</surname>
+              <given-names>F</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Downregulation of catalase by reactive oxygen species via PI 3 kinase/Akt signaling in mesangial cells.</article-title>
+          <source>J Cell Physiol</source>
+          <year>2007</year>
+          <volume>211</volume>
+          <fpage>457</fpage>
+          <lpage>467</lpage>
+          <pub-id pub-id-type="pmid">17186497</pub-id>
+        </citation>
+      </ref>
+      <ref id="R33">
+        <label>33</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Laurindo</surname>
+              <given-names>FR</given-names>
+            </name>
+            <name>
+              <surname>Fernandes</surname>
+              <given-names>DC</given-names>
+            </name>
+            <name>
+              <surname>Santos</surname>
+              <given-names>CX</given-names>
+            </name>
+          </person-group>
+          <article-title>Assessment of superoxide production and NADPH oxidase activity by HPLC analysis of dihydroethidium oxidation products.</article-title>
+          <source>Methods Enzymol</source>
+          <year>2008</year>
+          <volume>441</volume>
+          <fpage>237</fpage>
+          <lpage>260</lpage>
+          <pub-id pub-id-type="pmid">18554538</pub-id>
+        </citation>
+      </ref>
+      <ref id="R34">
+        <label>34</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kitada</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Koya</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Sugimoto</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Translocation of glomerular p47phox and p67phox by protein kinase C-beta activation is required for oxidative stress in diabetic nephropathy.</article-title>
+          <source>Diabetes</source>
+          <year>2003</year>
+          <volume>52</volume>
+          <fpage>2603</fpage>
+          <lpage>2614</lpage>
+          <pub-id pub-id-type="pmid">14514646</pub-id>
+        </citation>
+      </ref>
+      <ref id="R35">
+        <label>35</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tojo</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Asaba</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Onozato</surname>
+              <given-names>ML</given-names>
+            </name>
+          </person-group>
+          <article-title>Suppressing renal NADPH oxidase to treat diabetic nephropathy.</article-title>
+          <source>Expert Opin Ther Targets</source>
+          <year>2007</year>
+          <volume>11</volume>
+          <fpage>1011</fpage>
+          <lpage>1018</lpage>
+          <pub-id pub-id-type="pmid">17665974</pub-id>
+        </citation>
+      </ref>
+      <ref id="R36">
+        <label>36</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Orrenius</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Gogvadze</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Zhivotovsky</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>Mitochondrial oxidative stress: implications for cell death.</article-title>
+          <source>Annu Rev Pharmacol Toxicol</source>
+          <year>2007</year>
+          <volume>47</volume>
+          <fpage>143</fpage>
+          <lpage>183</lpage>
+          <pub-id pub-id-type="pmid">17029566</pub-id>
+        </citation>
+      </ref>
+      <ref id="R37">
+        <label>37</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dröge</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>Free radicals in the physiological control of cell function.</article-title>
+          <source>Physiol Rev</source>
+          <year>2002</year>
+          <volume>82</volume>
+          <fpage>47</fpage>
+          <lpage>95</lpage>
+          <pub-id pub-id-type="pmid">11773609</pub-id>
+        </citation>
+      </ref>
+      <ref id="R38">
+        <label>38</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pilger</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Rüdiger</surname>
+              <given-names>HW</given-names>
+            </name>
+          </person-group>
+          <article-title>8-Hydroxy-2'-deoxyguanosine as a marker of oxidative DNA damage related to occupational and environmental exposures.</article-title>
+          <source>Int Arch Occup Environ Health</source>
+          <year>2006</year>
+          <volume>80</volume>
+          <fpage>1</fpage>
+          <lpage>15</lpage>
+          <pub-id pub-id-type="pmid">16685565</pub-id>
+        </citation>
+      </ref>
+      <ref id="R39">
+        <label>39</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Augusto</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Trindade</surname>
+              <given-names>DF</given-names>
+            </name>
+            <name>
+              <surname>Linares</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Cyclic nitroxides inhibit the toxicity of nitric oxide-derived oxidants: mechanisms and implications.</article-title>
+          <source>An Acad Bras Cienc</source>
+          <year>2008</year>
+          <volume>80</volume>
+          <fpage>179</fpage>
+          <lpage>189</lpage>
+          <pub-id pub-id-type="pmid">18345386</pub-id>
+        </citation>
+      </ref>
+      <ref id="R40">
+        <label>40</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rada</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Leto</surname>
+              <given-names>TL</given-names>
+            </name>
+          </person-group>
+          <article-title>Oxidative innate immune defenses by Nox/Duox family NADPH oxidases.</article-title>
+          <source>Contrib Microbiol</source>
+          <year>2008</year>
+          <volume>15</volume>
+          <fpage>164</fpage>
+          <lpage>187</lpage>
+          <pub-id pub-id-type="pmid">18511861</pub-id>
+        </citation>
+      </ref>
+      <ref id="R41">
+        <label>41</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jacinto</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Facchinetti</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>SIN1/MIP1 maintains rictor-mTOR complex integrity and regulates Akt phosphorylation and substrate specificity.</article-title>
+          <source>Cell</source>
+          <year>2006</year>
+          <volume>127</volume>
+          <fpage>125</fpage>
+          <lpage>137</lpage>
+          <pub-id pub-id-type="pmid">16962653</pub-id>
+        </citation>
+      </ref>
+      <ref id="R42">
+        <label>42</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tran</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Brunet</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Griffith</surname>
+              <given-names>EC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The many forks in FOXO's road.</article-title>
+          <source>Sci STKE</source>
+          <year>2003</year>
+          <volume>2003</volume>
+          <fpage>RE5</fpage>
+          <pub-id pub-id-type="pmid">12621150</pub-id>
+        </citation>
+      </ref>
+      <ref id="R43">
+        <label>43</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mundy</surname>
+              <given-names>HR</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>PJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Glycogenosis type I and diabetes mellitus: a common mechanism for renal dysfunction?</article-title>
+          <source>Med Hypotheses</source>
+          <year>2002</year>
+          <volume>59</volume>
+          <fpage>110</fpage>
+          <lpage>114</lpage>
+          <pub-id pub-id-type="pmid">12160694</pub-id>
+        </citation>
+      </ref>
+      <ref id="R44">
+        <label>44</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schrijvers</surname>
+              <given-names>BF</given-names>
+            </name>
+            <name>
+              <surname>De Vriese</surname>
+              <given-names>AS</given-names>
+            </name>
+            <name>
+              <surname>Flyvbjerg</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>From hyperglycemia to diabetic kidney disease: the role of metabolic, hemodynamic, intracellular factors and growth factors/cytokines.</article-title>
+          <source>Endocr Rev</source>
+          <year>2004</year>
+          <volume>25</volume>
+          <fpage>971</fpage>
+          <lpage>1010</lpage>
+          <pub-id pub-id-type="pmid">15583025</pub-id>
+        </citation>
+      </ref>
+      <ref id="R45">
+        <label>45</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wolf</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>New insights into the pathophysiology of diabetic nephropathy: from haemodynamics to molecular pathology.</article-title>
+          <source>Eur J Clin Invest</source>
+          <year>2004</year>
+          <volume>34</volume>
+          <fpage>785</fpage>
+          <lpage>796</lpage>
+          <pub-id pub-id-type="pmid">15606719</pub-id>
+        </citation>
+      </ref>
+      <ref id="R46">
+        <label>46</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Maritim</surname>
+              <given-names>AC</given-names>
+            </name>
+            <name>
+              <surname>Sanders</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Watkins</surname>
+              <given-names>JB</given-names>
+              <suffix>3rd</suffix>
+            </name>
+          </person-group>
+          <article-title>Diabetes, oxidative stress, and antioxidants: a review.</article-title>
+          <source>J Biochem Mol Toxicol</source>
+          <year>2003</year>
+          <volume>17</volume>
+          <fpage>24</fpage>
+          <lpage>38</lpage>
+          <pub-id pub-id-type="pmid">12616644</pub-id>
+        </citation>
+      </ref>
+      <ref id="R47">
+        <label>47</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Forbes</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Coughlan</surname>
+              <given-names>MT</given-names>
+            </name>
+            <name>
+              <surname>Cooper</surname>
+              <given-names>ME</given-names>
+            </name>
+          </person-group>
+          <article-title>Oxidative stress as a major culprit in kidney disease in diabetes.</article-title>
+          <source>Diabetes</source>
+          <year>2008</year>
+          <volume>57</volume>
+          <fpage>1446</fpage>
+          <lpage>1454</lpage>
+          <pub-id pub-id-type="pmid">18511445</pub-id>
+        </citation>
+      </ref>
+      <ref id="R48">
+        <label>48</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Melis</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Parenti</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Gatti</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Efficacy of ACE-inhibitor therapy on renal disease in glycogen storage disease type 1: a multicentre retrospective study.</article-title>
+          <source><italic>Clin Endocrinol</italic> (Oxf)</source>
+          <year>2005</year>
+          <volume>63</volume>
+          <fpage>19</fpage>
+          <lpage>25</lpage>
+          <pub-id pub-id-type="pmid">15963056</pub-id>
+        </citation>
+      </ref>
+    </ref-list>
+    <sec id="S17" sec-type="display-objects">
+      <title>Figures</title>
+      <fig id="F1" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <p>Analysis of renal expression of the NADPH oxidase in GSD-Ia mice. (<bold>a</bold>) Western blot analysis of protein extracts of perfused kidneys in 6-week-old wild-type (+/+, n = 4) and GSD-Ia (-/-, n = 4) mice using antibodies against Nox-2, Nox-4, p22<sup>phox</sup>, p47<sup>phox</sup>, or β-actin. Data from 2 pairs of littermates are shown and each lane contains 50 μg protein. (<bold>b</bold>) Representative immunofluorescence analysis of Nox-2 (green fluorescence), p22<sup>phox</sup> (green fluorescence), or p47<sup>phox</sup> (green fluorescence) and DAPI nuclei staining (blue fluorescence) in kidney sections from 6-week-old wild-type (+/+) and GSD-Ia (-/-) mice at magnifications of x1000.</p>
+        </caption>
+        <graphic xlink:href="nihms-230353-f0001"/>
+      </fig>
+      <fig id="F2" position="float">
+        <label>Figure 2</label>
+        <caption>
+          <p>Analysis of renal expression of Akt and FoxO proteins in GSD-Ia mice. (<bold>a</bold>) Western blot analysis of renal extracts from 6-week-old wild-type (+/+, n = 4) and GSD-Ia (-/-, n = 4) mice using antibodies against phospho-Akt (Ser473), total Akt, or β-actin. Data from two pairs of littermates are shown and each lane contains 100 μg protein. (<bold>b</bold>) Western blot analysis of renal extracts in 6-week-old wild-type (+/+, n = 4) and GSD-Ia (-/-, n = 4) mice using antibodies against phospho-FoxO1 (Ser256)/FoxO4 (Ser193), total FoxO1, phospho-FoxO1 (Thr24)/FoxO3a (Thr32), phospho-FoxO3a (Ser253), total FoxO3a, or β-actin. Data from 2 pairs of littermates are shown and each lane contains 200 μg protein. (<bold>c</bold>) Representative immunohistochemical analysis of p-FoxO3a (Ser253). Plates shown are kidneys from 6-week-old wild-type (+/+) and GSD-Ia (-/-) mice at magnifications of x100, x400, x400.</p>
+        </caption>
+        <graphic xlink:href="nihms-230353-f0002"/>
+      </fig>
+      <fig id="F3" position="float">
+        <label>Figure 3</label>
+        <caption>
+          <p>Suppression of renal expression of SOD and CAT in GSD-Ia mice. The renal expression of antioxidant enzymes was examined in 4-week-old (4W) and 6-week-old (6W) wild-type (+/+) and GSD-Ia (-/-) mice. (<bold>a</bold>) Quantification of SOD1, SOD2, SOD3 mRNA in the kidneys of 4- to 6-week-old control and GSD-Ia mice by real-time RT-PCR. Results are the mean ± SEM. Each point represents the average of 12 animals. (<bold>b</bold>) Western blot analysis of renal extracts from 6-week-old control (n = 6) and GSD-Ia (n = 6) mice using antibodies against SOD1, SOD2, SOD3, or β-actin. Data from 2 pairs of littermates are shown and each lane contains 50 μg protein. (<bold>c</bold>) Quantification of SOD enzymatic activity in the kidneys of 4- or 6-week-old control and GSD-Ia mice. Each point represents the average of 8 animals. (<bold>d</bold>) Quantification of CAT mRNA in the kidneys of 4- to 6-week-old control and GSD-Ia mice by real-time RT-PCR. Results are the mean ± SEM. Each point represents the average of 12 animals. (<bold>e</bold>) Western blot analysis of renal extracts from 6-week-old control (n = 6) and GSD-Ia (n = 6) mice using antibodies against CAT or β-actin. Data from 2 pairs of littermates are shown and each lane contains 50 μg protein. (<bold>f</bold>) Quantification of CAT enzymatic activity in the kidneys of 4- or 6-week-old control and GSD-Ia mice. Each point represents the average of 8 animals. *<italic>p</italic> &lt; 0.05; **<italic>p</italic> &lt; 0.005.</p>
+        </caption>
+        <graphic xlink:href="nihms-230353-f0003"/>
+      </fig>
+      <fig id="F4" position="float">
+        <label>Figure 4</label>
+        <caption>
+          <p>Enhanced oxidative stress in the kidneys of GSD-Ia mice. (<bold>a</bold>) Representative immunofluorescence of oxidized DHE staining (red fluorescence) and DAPI nuclei staining (blue fluorescence) in kidney sections from 6-week-old wild-type (+/+, n = 4) and GSD-Ia (-/-, n = 4) mice at magnifications of x400. The nuclear co-localization of DHE with DAPI staining was indicated by purple in the merged image. (<bold>b</bold>) Representative immunohistochemical analysis of 8-OHdG staining in the kidney sections from 6-week-old wild-type (+/+, n = 4) and GSD-Ia (-/-, n = 4) mice at magnifications from left to right, x25, x200, x200, and x200.</p>
+        </caption>
+        <graphic xlink:href="nihms-230353-f0004"/>
+      </fig>
+      <fig id="F5" position="float">
+        <label>Figure 5</label>
+        <caption>
+          <p>Improved renal function in GSD-Ia mice after tempol treatment. (<bold>a</bold>) Serum levels of BUN in 6-week-old (6W) wild-type (+/+; n = 9) and GSD-Ia (-/-; n = 9) mice. *<italic>p</italic> &lt; 0.05. (<bold>b</bold>) Relative serum levels of BUN in 10- and 12-week-old GSD-Ia (-/-) mice after 4- to 6-week tempol (+; n = 8) or vehicle (-; n = 8) treatment. **<italic>p</italic> &lt; 0.005. (<bold>c</bold>) Western blot analysis of protein extracts of perfused kidneys in 12-week-old wild-type (+/+, n = 4) and GSD-Ia (-/-) mice after 6 weeks of treatment with tempol (+, n = 4) or vehicle (-, n = 4), using antibodies against CAT or β-actin. Data from 2 mice are shown for each treatment, and each lane contains 50 μg protein.</p>
+        </caption>
+        <graphic xlink:href="nihms-230353-f0005"/>
+      </fig>
+      <fig id="F6" position="float">
+        <label>Figure 6</label>
+        <caption>
+          <p>Histological analyses of the kidneys in tempol- or vehicle-treated GSD-Ia mice. (<bold>a</bold>) H&amp;E analyses. (<bold>b</bold>) Masson's trichrome staining and quantification of renal fibrosis via von Gieson staining. Plates show kidney sections from 12-week-old wild-type (+/+, n = 4) and GSD-Ia (-/-) mice after 6-week of vehicle (-/-, n = 4) or tempol (-/- Tempol, n = 4) treatment at magnifications from left to right, x50, x200, and x200. Data from two vehicle-treated and two tempol-treated GSD-Ia mice are shown. Interstitial fibrosis is shown by the blue colored Masson's trichrome staining of the collagen fibers and by quantification of von Gieson staining. Each point represents the average of 4 animals. Values represent mean ± SEM. *<italic>p</italic> &lt; 0.05.</p>
+        </caption>
+        <graphic xlink:href="nihms-230353-f0006"/>
+      </fig>
+    </sec>
+  </back>
+</article>

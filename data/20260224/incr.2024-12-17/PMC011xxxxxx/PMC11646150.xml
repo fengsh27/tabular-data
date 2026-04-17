@@ -1,0 +1,1024 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties manuscript?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">0376442</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">6692</journal-id>
+      <journal-id journal-id-type="nlm-ta">Prog Cardiovasc Dis</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Prog Cardiovasc Dis</journal-id>
+      <journal-title-group>
+        <journal-title>Progress in cardiovascular diseases</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0033-0620</issn>
+      <issn pub-type="epub">1873-1740</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">24267431</article-id>
+      <article-id pub-id-type="pmc">11646150</article-id>
+      <article-id pub-id-type="doi">10.1016/j.pcad.2013.10.014</article-id>
+      <article-id pub-id-type="manuscript">NIHMS533191</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Descriptive Epidemiology of Cardiovascular Risk Factors and Diabetes in Sub-Saharan Africa</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Mensah</surname>
+            <given-names>George A.</given-names>
+          </name>
+          <xref rid="CR1" ref-type="corresp">⁎</xref>
+        </contrib>
+        <aff id="A1">Office of the Director, National Heart, Lung, and Blood Institute, National Institutes of Health, Bethesda, MD</aff>
+      </contrib-group>
+      <author-notes>
+        <corresp id="CR1"><label>*</label>Address reprint requests to George A. Mensah, NIH/NHLBI/IOD, 31 Center Drive MSC 2486, Bethesda, MD 20892-2490. <email>george.mensah@nih.gov</email>.</corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>9</day>
+        <month>12</month>
+        <year>2024</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <season>Nov-Dec</season>
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>15</day>
+        <month>12</month>
+        <year>2024</year>
+      </pub-date>
+      <volume>56</volume>
+      <issue>3</issue>
+      <fpage>240</fpage>
+      <lpage>250</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract id="ABS1">
+        <p id="P1">Reliable data on risk factor levels, exposure history, and population distribution can help inform policies and programs for disease prevention and control. With rare exception however, ideal local data on major risk factors and causes of death and disease burden have been scarce in sub-Saharan Africa (SSA). Basic community surveys in some countries and recent systematic analysis of disease burden attributable to 67 risk factors and risk factor clusters in 21 regions of the world provide an opportunity to examine and relate diabetes and cardiovascular risk factors to mortality and burden in SSA. Rising body mass index, especially in women in Southern Africa; and rising systolic blood pressure in East Africa for both sexes, and in West Africa for women are the major cardiometabolic risk factors. Harmful use of alcohol, especially in Southern SSA, tobacco use, and physical inactivity are also important. Improving vital registration and risk factor surveillance remain major challenges.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>Cardiovascular diseases</kwd>
+        <kwd>Sub-Saharan Africa</kwd>
+        <kwd>Cardiovascular risk factors</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <p id="P2">The landmark Framingham Heart Study introduced the concept that current or past exposure to specific factors increases the risk of future cardiovascular disease.<sup><xref rid="R1" ref-type="bibr">1</xref></sup> These “factors of risk” are now well described for coronary heart disease, stroke, other cardiovascular diseases (CVD), and diabetes and are the same in sub-Saharan Africa (SSA) as they are in other parts of the world. These risk factors include high blood pressure (BP); tobacco use, including exposure to second-hand smoke; harmful use of alcohol; high total blood cholesterol; high fasting plasma glucose (FPG); high body mass index (BMI); high intake of dietary sodium; low dietary intake of fruits and vegetables; low physical activity; and household and ambient air pollution.</p>
+    <p id="P3">Together, known risk factors explain the majority of the population burden of total CVD. For example, Yusuf et al. showed that nine potentially modifiable risk factors collectively accounted for 90% and 94% of the population attributable risk for first-time acute myocardial infarction (AMI) in men and women, respectively in 52 countries.<sup><xref rid="R2" ref-type="bibr">2</xref></sup> In the African population of the INTERHEART Study, five risk factors (smoking history, diabetes history, hypertension history, abdominal obesity, and ratio of apolipoprotein B to apolipoprotein A-1) contributed a similar population attributable risk of nearly 90% for AMI.<sup><xref rid="R3" ref-type="bibr">3</xref></sup> In general, the magnitude and duration of exposure to these risk factors determine the level of risk of future disease-related outcomes. Thus, accurate and reliable information on risk factor levels and their population distribution can help inform policies and programs for prevention, treatment, and control. With rare exception however, ideal and reliably enumerated epidemiological data on these major risk factors have not been readily available in SSA.</p>
+    <p id="P4">Recent completion of the systematic analysis of the burden of disease and injury attributable to 67 risk factors and risk factor clusters in 21 regions of the world including four regions in SSA, and other global burden of disease assessments<sup><xref rid="R4" ref-type="bibr">4</xref>–<xref rid="R12" ref-type="bibr">12</xref></sup> provide a unique opportunity to examine and relate these risk factors to mortality and disease burden in SSA using comparable methodology. Progress made in the World Health Organization’s STEPS chronic disease risk factor surveillance in this region is also reviewed together with previously published data from specific risk factor studies in SSA.</p>
+    <p id="P5">Although the focus of this article is CVD and diabetes, it must be emphasized that in most of SSA, the leading threats to health continue to be those associated with poverty and maternal and child mortality as shown in <xref rid="F1" ref-type="fig">Fig 1</xref>.<sup><xref rid="R4" ref-type="bibr">4</xref></sup> However, the ongoing health transitions together with adverse impact of globalization and urbanization<sup><xref rid="R13" ref-type="bibr">13</xref>–<xref rid="R17" ref-type="bibr">17</xref></sup> in SSA make it necessary to promote the development of the capacity to monitor the magnitude and trends in diabetes<sup><xref rid="R18" ref-type="bibr">18</xref>–<xref rid="R20" ref-type="bibr">20</xref></sup> and CVD<sup><xref rid="R4" ref-type="bibr">4</xref>,<xref rid="R21" ref-type="bibr">21</xref></sup> risk factors in order to better inform programs and policies for the prevention and control of diabetes and CVD in SSA.</p>
+    <sec id="S1">
+      <title>CVD risk factors in sub-Saharan Africa – the background</title>
+      <p id="P6">A high prevalence of adverse CHD risk factors in the nineteenth and early twentieth centuries in SSA seems very unlikely given the rarity of CHD in the published historical data from western, eastern, central, and southern Africa from that period.<sup><xref rid="R22" ref-type="bibr">22</xref></sup> For example, extensive review of the Annual Medical and Sanitary Reports sent regularly to the Colonial Secretary in London by the Nigerian and Gold Coast governments showed that coronary heart disease was distinctly rare from 1898 to 1960.<sup><xref rid="R23" ref-type="bibr">23</xref>–<xref rid="R25" ref-type="bibr">25</xref></sup> Since the turn of the twenty-first century however, the weight of the published data suggests that diabetes and CVD risk factors are increasing in prevalence in SSA in men and women, and in children and adults. For example, in a birth cohort study of CVD risk factors in 5-year-old children living in an urban environment in South Africa in 1990, Steyn et al.<sup><xref rid="R26" ref-type="bibr">26</xref></sup> showed that overall, 64% of the children were already exposed to environmental tobacco smoke with the highest exposures observed in colored children; among these colored children, 42% lived in homes with two or more smokers.<sup><xref rid="R26" ref-type="bibr">26</xref></sup> Significant ethnic differences observed included significantly higher blood pressure in black children in whom diastolic blood pressure levels were also the highest.</p>
+      <p id="P7">A similarly high CVD risk factor prevalence was observed in a random population-based sample of 976 people aged 15 years and older in a peri-urban working-class community in South Africa.<sup><xref rid="R27" ref-type="bibr">27</xref></sup> Hypertension prevalence was 22% in men and 16% in women; 62% of men and 44% of women smoked cigarettes; hypercholesterolemia was present in nearly half of the population (47% of men, and 46% of women); while diabetes was prevalent in 6% of men and 5% of women.<sup><xref rid="R27" ref-type="bibr">27</xref></sup> In the predominantly Black African community of Soweto, Tibarzawa et al.<sup><xref rid="R28" ref-type="bibr">28</xref></sup> showed that nearly 78% of subjects had at least one major CVD risk factor. The most prevalent CVD and diabetes risk factor in this middle-aged adult population was obesity (43%) with nearly a 2-fold greater prevalence in women than in men.<sup><xref rid="R28" ref-type="bibr">28</xref></sup> Additionally, 33% of subjects had high systolic or diastolic blood pressures, and 13% had elevated (non-fasting) total blood cholesterol level. Importantly, overweight subjects were three times more likely to have concurrent hypercholesterolemia.<sup><xref rid="R28" ref-type="bibr">28</xref></sup> This relatively high burden of CVD risk factors and diabetes in population sub-groups in South Africa should not be assumed to be representative of the rest of SSA because of the relatively more advanced stage of epidemiologic, socioeconomic, and nutritional transition in South Africa compared to other parts of SSA.<sup><xref rid="R29" ref-type="bibr">29</xref></sup> Nevertheless, the trend of increasing prevalence in CVD risk factors in most countries where studies have been performed is unmistakable.<sup><xref rid="R30" ref-type="bibr">30</xref></sup> An important limitation in making international and inter-regional comparisons is the wide heterogeneity of studies and differences in sample sizes, sampling methodologies, diagnostic approaches and criteria; different age distributions; and different study settings with varying representation of rural and urban populations.</p>
+      <p id="P8">For example, in the recent systematic review of the evidence on the prevalence and pathogenesis of type 2 diabetes published in Africa over the past decade, Kengne et al.<sup><xref rid="R31" ref-type="bibr">31</xref></sup> identified 13 community-based studies from nine SSA countries and Tunisia. They found a ten-fold difference in reported diabetes prevalence ranging from 2.8% in rural Angola to 28.2% in an urban population setting in South Africa.<sup><xref rid="R31" ref-type="bibr">31</xref></sup> Similarly, the reported prevalence of obesity in 20 studies they identified ranged from 5% in rural Uganda to 30% in urban Nigeria.<sup><xref rid="R31" ref-type="bibr">31</xref></sup> Their overall assessment of the quality of these data was that, in general, these data do not provide accurate estimates of the magnitude of the conditions studied. It is in this regard that the WHO stepwise approach to chronic non-communicable disease surveillance (STEPS) and other studies that use comparable methodologies prove quite informative.<sup><xref rid="R32" ref-type="bibr">32</xref></sup></p>
+    </sec>
+    <sec id="S2">
+      <title>The WHO stepwise approach to chronic disease risk factor surveillance (STEPS)</title>
+      <p id="P9">The WHO stepwise approach to chronic disease risk factor surveillance (STEPS) focuses on obtaining core data on the established risk factors that underlie the major chronic disease burden.<sup><xref rid="R32" ref-type="bibr">32</xref></sup> It was intentionally designed with the flexibility to permit each country to obtain the core variables and risk factors, and to expand to include optional modules based on country interest and need.<sup><xref rid="R32" ref-type="bibr">32</xref></sup> Most importantly, the use of the same standardized questions and protocols by all participating countries enables appropriate comparisons across countries.<sup><xref rid="R32" ref-type="bibr">32</xref></sup> The three key steps of the survey tool includes Step 1 for the collection of basic demographic and behavioral and lifestyle factors such as tobacco and alcohol use; Step 2 for physical measurements such as height, weight, and blood pressure measurements; and Step 3 for biochemical assessments including fasting blood glucose and blood cholesterol.<sup><xref rid="R32" ref-type="bibr">32</xref></sup></p>
+      <p id="P10">As shown in <xref rid="T1" ref-type="table">Table 1</xref>, the survey was last conducted as recently as 2012 for Lesotho and Tanzania but it had not been repeated since 2003 in Cameroon. Marked heterogeneity in the prevalence of major risk factors was seen. For example, the prevalence of current smoking was less than 5% in Ethiopia and Niger but greater than 20% in the Seychelles, Lesotho, and Sierra Leone. In all countries that had survey data, the proportion of participants who had none of the 3 major risk factors was less than 13%. In many of these countries, increasing BMI and hypertension are the primary cardiometabolic risk factors. In one recent publication from Malawi that used the STEPwise approach and measured blood pressure in 3,727 participants, the age-standardized prevalence of hypertension (BP ≥140/90 mm Hg) was 33.2%; three-quarters of the participants had never had their BP previously measured; and 94.9% of those with hypertension were unaware of the condition.<sup><xref rid="R33" ref-type="bibr">33</xref></sup></p>
+    </sec>
+    <sec id="S3">
+      <title>The metabolic risk factors of chronic diseases</title>
+      <p id="P11">The Global Burden of Metabolic Risk Factors of Chronic Diseases Collaborating Group recently published prevalence data and trends at the national, regional, and global levels for body mass index<sup><xref rid="R5" ref-type="bibr">5</xref></sup> and adult overweight and obesity;<sup><xref rid="R6" ref-type="bibr">6</xref></sup> fasting plasma glucose and diabetes;<sup><xref rid="R7" ref-type="bibr">7</xref></sup> serum total cholesterol;<sup><xref rid="R8" ref-type="bibr">8</xref></sup> and systolic blood pressure.<sup><xref rid="R9" ref-type="bibr">9</xref></sup> The data represent up to 960 country-years and over 9.1 million men and women over age 20 years who participated in national health examination surveys and epidemiological studies in hypertension, diabetes, and their metabolic risks.</p>
+      <p id="P12">Between 1980 and 2008, the age-standardized BMI increased in all geographic sub-regions of SSA except in central Africa.<sup><xref rid="R5" ref-type="bibr">5</xref></sup> Overall, SSA (excluding South Africa) together with East, South, and Southeast Asia regions saw the smallest rise in BMI for men. However, in women, Southern Africa was among the sub-regions with the highest BMI in 2008.<sup><xref rid="R5" ref-type="bibr">5</xref></sup> In fact, in 2008, the age-standardized prevalence of female obesity was highest in southern African women at 36.4%.<sup><xref rid="R6" ref-type="bibr">6</xref></sup> Countries in SSA, especially east Africa, were among those with the lowest mean FPG in 2008. Importantly, however, none of the countries had a meaningful decline in mean FPG.<sup><xref rid="R7" ref-type="bibr">7</xref></sup> Similarly, at the national level in 2008, most of the countries worldwide that had the lowest mean total cholesterol were in SSA, and the trend over the period of observation in mean TC was flat.<sup><xref rid="R8" ref-type="bibr">8</xref></sup></p>
+      <p id="P13">Although SBP declined at the global level by 1.0 mm Hg per decade in women and 0.8 mm Hg per decade in men between 1980 and 2008, it rose significantly in East Africa for both sexes and in West Africa for women.<sup><xref rid="R9" ref-type="bibr">9</xref></sup> This is particularly important since SBP in women fell by as much as 3.5 mm Hg per decade or greater in Western Europe and Australasia, but it increased by as much as 1.0–2.7 mm Hg per decade in women in south and southeast Asia, and in east and west Africa.<sup><xref rid="R9" ref-type="bibr">9</xref></sup> Consistent with these trends, the highest SBP levels in women were found in some East and West African countries, where the mean SBP of 135 mm Hg or greater exceeded the WHO theoretical minimum SBP by 20 mm Hg. Similarly, SBP in men was highest in some east and West African countries where the mean SBP was at least 138 mm Hg.<sup><xref rid="R9" ref-type="bibr">9</xref></sup> These findings are consistent with the data from Lim et al. in the Global Burden of Diseases, Injuries, and Risk Factor Study discussed in the next section.<sup><xref rid="R4" ref-type="bibr">4</xref></sup></p>
+    </sec>
+    <sec id="S4">
+      <title>The Global Burden of Diseases, Injuries, and Risk Factor (GBD 2010) Study</title>
+      <p id="P14">The GBD 2010 Study estimated deaths and disability-adjusted life years (DALYs) attributable to the independent effects of 67 risk factors and clusters of risk factors for 21 regions in 1990 and 2010.<sup><xref rid="R4" ref-type="bibr">4</xref></sup> At the global level in 2010, the three leading risk factors for disease burden were high blood pressure, tobacco smoking including second-hand smoke, and household air pollution from solid fuels.<sup><xref rid="R4" ref-type="bibr">4</xref></sup> For SSA as a whole, the leading risk factors for disease burden remained those associated with poverty, adverse maternal and child health, and dietary risks (<xref rid="F2" ref-type="fig">Fig 2</xref>).<sup><xref rid="R4" ref-type="bibr">4</xref></sup> As shown in <xref rid="F3" ref-type="fig">Fig 3</xref>, for all but the Southern region of SSA, the four leading risk factors did not include the traditional risk factors for stroke, coronary heart disease, or diabetes but predominantly featured childhood underweight, household air pollution from solid fuels, suboptimal breastfeeding, and iron deficiency. High blood pressure ranked second in Southern Africa and was the fifth or sixth leading risk factor for the rest of SSA. Similarly, high body-mass index ranked third in Southern Africa but ranked fourteenth to eighteenth in the rest of SSA. Although high total cholesterol ranked 15th at the global level, it was relatively less prominent as a major risk factor in SSA where it ranked 27th to 30th except in Southern Africa where it ranked 19th. With the exception of physical inactivity and total cholesterol, all other major risk factors for CVD and diabetes ranked within the top 15 leading risk factors in 2010 and, in general, represented an increase in ranking compared to their status in 1990 (<xref rid="F4" ref-type="fig">Fig 4</xref>). The ranking of DALYs attributable to the 25 leading risk factors for a group of countries in SSA in 2010 is shown in <xref rid="F5" ref-type="fig">Fig 5</xref>.<sup><xref rid="R34" ref-type="bibr">34</xref></sup></p>
+      <p id="P15">One important advantage of the GBD 2010 Study is the use of comparable methodology across all regions and in both time periods in 1990 and 2010. This affords us the opportunity to examine the trends in these risk factors and their relationship to health loss. As shown in <xref rid="F6" ref-type="fig">Fig 6</xref>, the share of disease burden attributable to childhood underweight, household air pollution from solid fuels and suboptimal breastfeeding has declined significantly, although they remain leading causes of health loss. On the other hand, high BMI and high systolic blood pressure increased at rates significantly higher than in other regions of the world as previously discussed.<sup><xref rid="R4" ref-type="bibr">4</xref>,<xref rid="R34" ref-type="bibr">34</xref></sup></p>
+    </sec>
+    <sec id="S5">
+      <title>Implications for clinical and public health action</title>
+      <p id="P16">It is often stated that non-communicable diseases are the leading cause of death worldwide and that nearly 80% of these deaths in both men and women occur in low- and middle-income countries.<sup><xref rid="R35" ref-type="bibr">35</xref></sup> Additionally, more than 80% of global cardiovascular and diabetes related deaths also occur in low- and middle income countries.<sup><xref rid="R35" ref-type="bibr">35</xref></sup> More importantly, the World Health Organization has estimated that the largest increase in non-communicable disease-related mortality over the next decade will also occur in these low- and middle-income countries. Since SSA countries are part of these low- and middle-income countries, it is often assumed that these patterns and associated “tsunami” of cardiovascular diseases, diabetes, and other non-communicable diseases apply equally and therefore of clinical and public health action to address the four main behavioral risk factors: tobacco use, physical inactivity, harmful use of alcohol and unhealthy diet must also be prioritized in SSA.<sup><xref rid="R35" ref-type="bibr">35</xref>,<xref rid="R36" ref-type="bibr">36</xref></sup></p>
+      <p id="P17">The weight of the evidence reviewed however suggests that in SSA, the leading cause of total and premature mortality and disability is not cardiovascular diseases, diabetes, or other non-communicable disease but rather communicable, maternal, neonatal, and nutritional causes and their related risk factors.<sup><xref rid="R4" ref-type="bibr">4</xref>,<xref rid="R11" ref-type="bibr">11</xref>,<xref rid="R34" ref-type="bibr">34</xref>,<xref rid="R37" ref-type="bibr">37</xref></sup> Continued aggressive investments in the prevention, treatment, and control of these communicable, maternal, and nutritional conditions should remain paramount. Nevertheless, three strong, consistent, and ominous trends are evident in the review of the risk factors data. The rise in age-standardized BMI and increasing fasting plasma glucose portend an adverse trend in future diabetes and cardiovascular diseases. Second, the rising systolic BP in men, especially in eastern SSA, and in western SSA for women is ominous for future stroke, hypertensive heart disease, and other cardiovascular diseases. Third, the relatively moderate-to-high proportion of persons with at least one of the combined risk factors of (1) current daily smokers; (2) consumption of less than 5 servings of fruits and/or vegetables on average per day; (3) low level of activity (&lt;600 MET-minutes); (4) overweight (BMI at least 25 kg/m<sup>2</sup>); and (5) raised BP (SBP at least 140 and/or DBP at least 90 mm Hg or currently on medication for raised BP) is also worrisome for future cardiovascular disease, diabetes, and other chronic diseases.<sup><xref rid="R38" ref-type="bibr">38</xref></sup></p>
+      <p id="P18">Taken together, the findings addressed in this review compel a concerted action for the prevention, detection, treatment, and control of these risk factors in the individual and family context but equally importantly, at the population level within a local, national, or regional framework. In addition to the WHO global strategy for addressing these risk factors, specific recommendations have been made with the SSA context in mind.<sup><xref rid="R39" ref-type="bibr">39</xref>–<xref rid="R43" ref-type="bibr">43</xref></sup> Clearly, improvements in health systems and access to affordable quality care are important, so are the population-level policy and legislative interventions that make sustained health promotion and the prevention and control of risk factors feasible. Many of these interventions have been called “best buys”.<sup><xref rid="R43" ref-type="bibr">43</xref>,<xref rid="R44" ref-type="bibr">44</xref></sup></p>
+      <p id="P19">As the Africa Regional Office of the WHO has stated, the very high maternal and child mortality coupled with a high burden of communicable and non-communicable diseases and risk factors in the setting of weak health systems “are too heavy for the public sector to address alone” thus necessitating partnerships with the private sector. In addition, many of the upstream drivers of increased risk for CVD, diabetes, and other chronic diseases fall outside the domain of ministries of health and the healthcare sector making it necessary to adopt a “health in all policies approach” and engage public and private stakeholders from multiple sectors including agriculture, transportation, urban planning, sports, media, and education.<sup><xref rid="R21" ref-type="bibr">21</xref>,<xref rid="R45" ref-type="bibr">45</xref></sup></p>
+    </sec>
+    <sec id="S6">
+      <title>Conclusions</title>
+      <p id="P20">Most communities in sub-Saharan Africa, except for those in South Africa and the island nations of Mauritius and Seychelles, are in the early phase of the epidemiological transition, where communicable diseases and famine are the predominant causes of mortality and disability. Nonetheless, there is mounting evidence that risk factors for CVD, diabetes, and other chronic NCDs are increasing in these communities. These risk factors in general, are not yet major contributors to the leading causes of death and disability in SSA. The unique opportunity for SSA is to address the proximal, “upstream” causes of diabetes, CVD, and the associated disease burden in order to move rapidly to the late phases of the epidemiological transition, in which death and disability due to degenerative diseases are pushed off to increasingly older age groups.</p>
+      <p id="P21">The ability to address these upstream health determinants effectively requires broad population-level policy and environmental strategies coupled with appropriate individual interventions within a context of accessible and affordable primary care. Strengthening clinical and public health systems will be necessary. Increased investments in vital registration and local surveillance to generate ideal data to guide, inform, and help evaluate the impact of clinical and public health interventions will also be crucial. At the same time, opportunities for simple and pragmatic risk factor intervention trials that could be initiated sooner rather than later, enabling region-specific, data-driven policies deserve careful exploration. Broad-based public-private partnerships that engage stakeholders with diverse expertise from multiple sectors and disciplines will be necessary.</p>
+    </sec>
+  </body>
+  <back>
+    <ack id="S7">
+      <title>Acknowledgments</title>
+      <p id="P22">I thank Professor Majid Ezzati for providing me access to the data from the Global Burden of Metabolic Risk Factors of Chronic Diseases Collaborating Group; and Professor Mohsen Naghavi, Dr. Mohammed Faroufanzar, and Brittany Wurz of the Institute for Health Metrics and Evaluation for assistance with figures from the Global Burden of Diseases, Injuries, and Risk Factors (GBD 2010) Study.</p>
+    </ack>
+    <fn-group>
+      <fn id="FN1">
+        <p id="P23">Disclaimer: The views expressed in this article do not necessarily represent the views of the National Heart, Lung, and Blood Institute, National Institutes of Health, Department of Health and Human Services or any other government entity.</p>
+      </fn>
+      <fn fn-type="COI-statement" id="FN2">
+        <p id="P24">Statement of Conflict of Interest</p>
+        <p id="P25">All authors declare that there are no conflict of interest.</p>
+      </fn>
+    </fn-group>
+    <glossary>
+      <title>Abbreviations and Acronyms</title>
+      <def-list>
+        <def-item>
+          <term>BMI</term>
+          <def>
+            <p id="P26">body mass index</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>BP</term>
+          <def>
+            <p id="P27">blood pressure</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>CHD</term>
+          <def>
+            <p id="P28">Coronary heart disease</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>CVD</term>
+          <def>
+            <p id="P29">Cardiovascular disease</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>DALY</term>
+          <def>
+            <p id="P30">disability-adjusted life year</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>FPG</term>
+          <def>
+            <p id="P31">fasting plasma glucose</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>GBD</term>
+          <def>
+            <p id="P32">Global Burden of Diseases</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>SSA</term>
+          <def>
+            <p id="P33">sub-Saharan Africa</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>STEPS</term>
+          <def>
+            <p id="P34">Stepwise approach to chronic non-communicable disease surveillance</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>TC</term>
+          <def>
+            <p id="P35">Total cholesterol</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>WHO</term>
+          <def>
+            <p id="P36">World Health Organization</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+    <ref-list>
+      <title>REFERENCES</title>
+      <ref id="R1">
+        <label>1.</label>
+        <mixed-citation publication-type="journal"><name><surname>Kannel</surname><given-names>WB</given-names></name>, <name><surname>Dawber</surname><given-names>JY</given-names></name>, <name><surname>Kagan</surname><given-names>A</given-names></name>, <etal/>
+<article-title>Factors of risk in the development of coronary heart disease – six year follow-up experience. The Framingham Study</article-title>. <source>Ann Intern Med</source>
+<year>1961</year>;<volume>55</volume>: <fpage>33</fpage>–<lpage>50</lpage>.<pub-id pub-id-type="pmid">13751193</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R2">
+        <label>2.</label>
+        <mixed-citation publication-type="journal"><name><surname>Yusuf</surname><given-names>S</given-names></name>, <name><surname>Hawken</surname><given-names>S</given-names></name>, <name><surname>Ounpuu</surname><given-names>S</given-names></name>, <etal/>
+<article-title>Effect of potentially modifiable risk factors associated with myocardial infarction in 52 countries (the INTERHEART study): case-control study</article-title>. <source>Lancet</source>. <year>2004</year>;<volume>364</volume>:<fpage>937</fpage>–<lpage>952</lpage>.<pub-id pub-id-type="pmid">15364185</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R3">
+        <label>3.</label>
+        <mixed-citation publication-type="journal"><name><surname>Steyn</surname><given-names>K</given-names></name>, <name><surname>Sliwa</surname><given-names>K</given-names></name>, <name><surname>Hawken</surname><given-names>S</given-names></name>, <etal/>
+<article-title>Risk factors associated with myocardial infarction in Africa: the INTERHEART Africa study</article-title>. <source>Circulation</source>. <year>2005</year>;<volume>112</volume>(<issue>23</issue>):<fpage>3554</fpage>–<lpage>3561</lpage>.<pub-id pub-id-type="pmid">16330696</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R4">
+        <label>4.</label>
+        <mixed-citation publication-type="journal"><name><surname>Lim</surname><given-names>SS</given-names></name>, <name><surname>Vos</surname><given-names>T</given-names></name>, <name><surname>Flaxman</surname><given-names>AD</given-names></name>, <etal/>
+<article-title>A comparative risk assessment of burden of disease and injury attributable to 67 risk factors and risk factor clusters in 21 regions, 1990–2010: a systematic analysis for the Global Burden of Disease Study 2010</article-title>. <source>Lancet</source>. <year>2012</year>;<volume>380</volume>(<issue>9859</issue>):<fpage>2224</fpage>–<lpage>2260</lpage>.<pub-id pub-id-type="pmid">23245609</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R5">
+        <label>5.</label>
+        <mixed-citation publication-type="journal"><name><surname>Finucane</surname><given-names>MM</given-names></name>, <name><surname>Stevens</surname><given-names>GA</given-names></name>, <name><surname>Cowan</surname><given-names>MJ</given-names></name>, <etal/>
+<article-title>National, regional, and global trends in body-mass index since 1980: systematic analysis of health examination surveys and epidemiological studies with 960 country-years and 9.1 million participants</article-title>. <source>Lancet</source>. <year>2011</year>;<volume>377</volume>(<issue>9765</issue>):<fpage>557</fpage>–<lpage>567</lpage>.<pub-id pub-id-type="pmid">21295846</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R6">
+        <label>6.</label>
+        <mixed-citation publication-type="journal"><name><surname>Stevens</surname><given-names>GA</given-names></name>, <name><surname>Singh</surname><given-names>GM</given-names></name>, <name><surname>Lu</surname><given-names>Y</given-names></name>, <etal/>
+<article-title>National, regional, and global trends in adult overweight and obesity prevalences</article-title>. <source>Popul Health Metrics</source>. <year>2012</year>;<volume>10</volume>(<issue>1</issue>):<fpage>10</fpage>–<lpage>22</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R7">
+        <label>7.</label>
+        <mixed-citation publication-type="journal"><name><surname>Danaei</surname><given-names>G</given-names></name>, <name><surname>Finucane</surname><given-names>MM</given-names></name>, <name><surname>Lu</surname><given-names>Y</given-names></name>, <etal/>
+<article-title>National, regional, and global trends in fasting plasma glucose and diabetes prevalence since 1980: systematic analysis of health examination surveys and epidemiological studies with 370 country-years and 2.7 million participants</article-title>. <source>Lancet</source>. <year>2011</year>;<volume>378</volume>(<issue>9785</issue>):<fpage>31</fpage>–<lpage>40</lpage>.<pub-id pub-id-type="pmid">21705069</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R8">
+        <label>8.</label>
+        <mixed-citation publication-type="journal"><name><surname>Farzadfar</surname><given-names>F</given-names></name>, <name><surname>Finucane</surname><given-names>MM</given-names></name>, <name><surname>Danaei</surname><given-names>G</given-names></name>, <etal/>
+<article-title>National, regional, and global trends in serum total cholesterol since 1980: systematic analysis of health examination surveys and epidemiological studies with 321 country-years and 3.0 million participants</article-title>. <source>Lancet</source>. <year>2011</year>;<volume>377</volume>(<issue>9765</issue>):<fpage>578</fpage>–<lpage>586</lpage>.<pub-id pub-id-type="pmid">21295847</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R9">
+        <label>9.</label>
+        <mixed-citation publication-type="journal"><name><surname>Danaei</surname><given-names>G</given-names></name>, <name><surname>Finucane</surname><given-names>MM</given-names></name>, <name><surname>Lin</surname><given-names>JK</given-names></name>, <etal/>
+<article-title>National, regional, and global trends in systolic blood pressure since 1980: systematic analysis of health examination surveys and epidemiological studies with 786 country-years and 5.4 million participants</article-title>. <source>Lancet</source>. <year>2011</year>;<volume>377</volume>(<issue>9765</issue>):<fpage>568</fpage>–<lpage>577</lpage>.<pub-id pub-id-type="pmid">21295844</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R10">
+        <label>10.</label>
+        <mixed-citation publication-type="journal"><name><surname>Lozano</surname><given-names>R</given-names></name>, <name><surname>Naghavi</surname><given-names>M</given-names></name>, <name><surname>Foreman</surname><given-names>K</given-names></name>, <etal/>
+<article-title>Global and regional mortality from 235 causes of death for 20 age groups in 1990 and 2010: a systematic analysis for the Global Burden of Disease Study 2010</article-title>. <source>Lancet</source>. <year>2012</year>;<volume>380</volume>(<issue>9859</issue>):<fpage>2095</fpage>–<lpage>2128</lpage>.<pub-id pub-id-type="pmid">23245604</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R11">
+        <label>11.</label>
+        <mixed-citation publication-type="journal"><name><surname>Murray</surname><given-names>CJ</given-names></name>, <name><surname>Vos</surname><given-names>T</given-names></name>, <name><surname>Lozano</surname><given-names>R</given-names></name>, <etal/>
+<article-title>Disability-adjusted life years (DALYs) for 291 diseases and injuries in 21 regions, 1990–2010: a systematic analysis for the Global Burden of Disease Study 2010</article-title>. <source>Lancet</source>. <year>2012</year>;<volume>380</volume>(<issue>9859</issue>):<fpage>2197</fpage>–<lpage>2223</lpage>.<pub-id pub-id-type="pmid">23245608</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R12">
+        <label>12.</label>
+        <mixed-citation publication-type="journal"><name><surname>Vos</surname><given-names>T</given-names></name>, <name><surname>Flaxman</surname><given-names>AD</given-names></name>, <name><surname>Naghavi</surname><given-names>M</given-names></name>, <etal/>
+<article-title>Years lived with disability (YLDs) for 1160 sequelae of 289 diseases and injuries 1990–2010: a systematic analysis for the Global Burden of Disease Study 2010</article-title>. <source>Lancet</source>. <year>2012</year>;<volume>380</volume>(<issue>9859</issue>):<fpage>2163</fpage>–<lpage>2196</lpage>.<pub-id pub-id-type="pmid">23245607</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R13">
+        <label>13.</label>
+        <mixed-citation publication-type="journal"><name><surname>Danaei</surname><given-names>G</given-names></name>, <name><surname>Singh</surname><given-names>GM</given-names></name>, <name><surname>Paciorek</surname><given-names>CJ</given-names></name>, <etal/>
+<article-title>The global cardiovascular risk transition: associations of four metabolic risk factors with national income, urbanization, and Western diet in 1980 and 2008</article-title>. <source>Circulation</source>. <year>2013</year>;<volume>127</volume>(<issue>14</issue>):<fpage>1493</fpage>–<lpage>1502</lpage>.<pub-id pub-id-type="pmid">23481623</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R14">
+        <label>14.</label>
+        <mixed-citation publication-type="journal"><name><surname>Delisle</surname><given-names>H</given-names></name>, <name><surname>Ntandou-Bouzitou</surname><given-names>G</given-names></name>, <name><surname>Agueh</surname><given-names>V</given-names></name>, <name><surname>Sodjinou</surname><given-names>R</given-names></name>, <name><surname>Fayomi</surname><given-names>B</given-names></name>. <article-title>Urbanisation, nutrition transition and cardiometabolic risk: the Benin study</article-title>. <source>Br J Nutr</source>
+<year>2012</year>;<volume>107</volume>(<issue>10</issue>):<fpage>1534</fpage>–<lpage>1544</lpage>.<pub-id pub-id-type="pmid">22115429</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R15">
+        <label>15.</label>
+        <mixed-citation publication-type="journal"><name><surname>Pisa</surname><given-names>PT</given-names></name>, <name><surname>Behanan</surname><given-names>R</given-names></name>, <name><surname>Vorster</surname><given-names>HH</given-names></name>, <name><surname>Kruger</surname><given-names>A</given-names></name>. <article-title>Social drift of cardiovascular disease risk factors in Africans from the North West Province of South Africa: the PURE study</article-title>. <source>Cardiovasc J South Afr</source>
+<year>2012</year>;<volume>23</volume>(<issue>7</issue>):<fpage>371</fpage>–<lpage>388</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R16">
+        <label>16.</label>
+        <mixed-citation publication-type="journal"><name><surname>Mathenge</surname><given-names>W</given-names></name>, <name><surname>Foster</surname><given-names>A</given-names></name>, <name><surname>Kuper</surname><given-names>H</given-names></name>. <article-title>Urbanization, ethnicity and cardiovascular risk in a population in transition in Nakuru, Kenya: a population-based survey</article-title>. <source>BMC Public Health</source>. <year>2010</year>;<volume>10</volume>: <fpage>569</fpage>, <pub-id pub-id-type="doi">10.1186/1471-2458-10-569.:569-10</pub-id>.<pub-id pub-id-type="pmid">20860807</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R17">
+        <label>17.</label>
+        <mixed-citation publication-type="journal"><name><surname>Vorster</surname><given-names>HH</given-names></name>, <name><surname>Kruger</surname><given-names>A</given-names></name>, <name><surname>Venter</surname><given-names>CS</given-names></name>, <name><surname>Margetts</surname><given-names>BM</given-names></name>, <name><surname>Macintyre</surname><given-names>UE</given-names></name>. <article-title>Cardiovascular disease risk factors and socio-economic position of Africans in transition: the THUSA study</article-title>. <source>Cardiovasc J South Afr</source>
+<year>2007</year>;<volume>18</volume>(<issue>5</issue>):<fpage>282</fpage>–<lpage>289</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R18">
+        <label>18.</label>
+        <mixed-citation publication-type="journal"><name><surname>Mbanya</surname><given-names>JC</given-names></name>, <name><surname>Motala</surname><given-names>AA</given-names></name>, <name><surname>Sobngwi</surname><given-names>E</given-names></name>, <name><surname>Assah</surname><given-names>FK</given-names></name>, <name><surname>Enoru</surname><given-names>ST</given-names></name>. <article-title>Diabetes in sub-Saharan Africa</article-title>. <source>Lancet</source>. <year>2010</year>;<volume>375</volume>(<issue>9733</issue>):<fpage>2254</fpage>–<lpage>2266</lpage>.<pub-id pub-id-type="pmid">20609971</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R19">
+        <label>19.</label>
+        <mixed-citation publication-type="journal"><name><surname>Bovet</surname><given-names>P</given-names></name>, <name><surname>Gabriel</surname><given-names>A</given-names></name>, <name><surname>Shamlaye</surname><given-names>C</given-names></name>, <name><surname>Paccaud</surname><given-names>F</given-names></name>. <article-title>Diabetes in Africa: the situation in the Seychelles</article-title>. <source>Heart</source>. <year>2009</year>;<volume>95</volume>(<issue>6</issue>):<fpage>506</fpage>–<lpage>507</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R20">
+        <label>20.</label>
+        <mixed-citation publication-type="journal"><name><surname>Levitt</surname><given-names>N</given-names></name>
+<article-title>Diabetes in Africa: Epidemiology, management and healthcare challenges</article-title>. <source>Heart</source>. <year>2008</year>.</mixed-citation>
+      </ref>
+      <ref id="R21">
+        <label>21.</label>
+        <mixed-citation publication-type="journal"><name><surname>Mensah</surname><given-names>GA</given-names></name>. <article-title>A heart-healthy and “stroke-free” world through policy development, systems change, and environmental supports: a 2020 vision for sub-Saharan Africa</article-title>. <source>Ethn Dis</source>
+<year>2003</year>;<volume>13</volume>(<issue>2 Suppl 2</issue>):<fpage>S4</fpage>–<lpage>S12</lpage>.<pub-id pub-id-type="pmid">13677406</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R22">
+        <label>22.</label>
+        <mixed-citation publication-type="journal"><name><surname>Mensah</surname><given-names>GA</given-names></name>. <article-title>Ischaemic heart disease in Africa</article-title>. <source>Heart</source>. <year>2008</year>;<volume>94</volume>(<issue>7</issue>):<fpage>836</fpage>–<lpage>843</lpage>.<pub-id pub-id-type="pmid">18552223</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R23">
+        <label>23.</label>
+        <mixed-citation publication-type="book"><name><surname>Biritwum</surname><given-names>RB</given-names></name>, <name><surname>Amoah</surname><given-names>AGB</given-names></name>, <name><surname>Pobee</surname><given-names>JOM</given-names></name>. <source>Cardiovascular Diseases in sub-Saharan Africa</source>. <publisher-loc>Accra, Ghana</publisher-loc>: <publisher-name>ASCOM Publishers</publisher-name>. <year>2005</year>.</mixed-citation>
+      </ref>
+      <ref id="R24">
+        <label>24.</label>
+        <mixed-citation publication-type="journal"><name><surname>Pobee</surname><given-names>JO</given-names></name>. <article-title>Cardiovascular research: a luxury in tropical Africa?</article-title>
+<source>East Afr Med J</source>
+<year>1987</year>;<volume>64</volume>(<issue>6</issue>):<fpage>396</fpage>–<lpage>410</lpage>.<pub-id pub-id-type="pmid">3500841</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R25">
+        <label>25.</label>
+        <mixed-citation publication-type="journal"><name><surname>Pobee</surname><given-names>JOM</given-names></name>. <article-title>A view of cardiovascular disease in the African Continent</article-title>. <source>Cardiovasc Epidemiol Newsl</source>
+<year>1979</year>;<volume>26</volume>:<fpage>23</fpage>.</mixed-citation>
+      </ref>
+      <ref id="R26">
+        <label>26.</label>
+        <mixed-citation publication-type="journal"><name><surname>Steyn</surname><given-names>K</given-names></name>, <name><surname>de Wet</surname><given-names>T</given-names></name>, <name><surname>Richter</surname><given-names>L</given-names></name>, <name><surname>Cameron</surname><given-names>N</given-names></name>, <name><surname>Levitt</surname><given-names>NS</given-names></name>, <name><surname>Morrell</surname><given-names>C</given-names></name>. <article-title>Cardiovascular disease risk factors in 5-year-old urban South African children – the Birth to Ten Study</article-title>. <source>S Afr Med J</source>
+<year>2000</year>;<volume>90</volume>(<issue>7</issue>):<fpage>719</fpage>–<lpage>726</lpage>.<pub-id pub-id-type="pmid">10985136</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R27">
+        <label>27.</label>
+        <mixed-citation publication-type="journal"><name><surname>Steyn</surname><given-names>K</given-names></name>, <name><surname>Levitt</surname><given-names>NS</given-names></name>, <name><surname>Hoffman</surname><given-names>M</given-names></name>, <etal/>
+<article-title>The global cardiovascular diseases risk pattern in a peri-urban working-class community in South Africa. The Mamre study</article-title>. <source>Ethn Dis</source>
+<year>2004</year>;<volume>14</volume>(<issue>2</issue>):<fpage>233</fpage>–<lpage>242</lpage>.<pub-id pub-id-type="pmid">15132209</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R28">
+        <label>28.</label>
+        <mixed-citation publication-type="journal"><name><surname>Tibazarwa</surname><given-names>K</given-names></name>, <name><surname>Ntyintyane</surname><given-names>L</given-names></name>, <name><surname>Sliwa</surname><given-names>K</given-names></name>, <etal/>
+<article-title>A time bomb of cardiovascular risk factors in South Africa: Results from the Heart of Soweto Study “Heart Awareness Days”</article-title>. <source>Int J Cardiol</source>
+<year>2008</year>.</mixed-citation>
+      </ref>
+      <ref id="R29">
+        <label>29.</label>
+        <mixed-citation publication-type="journal"><name><surname>Mayosi</surname><given-names>BM</given-names></name>, <name><surname>Flisher</surname><given-names>AJ</given-names></name>, <name><surname>Lalloo</surname><given-names>UG</given-names></name>, <name><surname>Sitas</surname><given-names>F</given-names></name>, <name><surname>Tollman</surname><given-names>SM</given-names></name>, <name><surname>Bradshaw</surname><given-names>D</given-names></name>. <article-title>The burden of non-communicable diseases in South Africa</article-title>. <source>Lancet</source>. <year>2009</year>;<volume>374</volume>(<issue>9693</issue>):<fpage>934</fpage>–<lpage>947</lpage>.<pub-id pub-id-type="pmid">19709736</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R30">
+        <label>30.</label>
+        <mixed-citation publication-type="journal"><name><surname>Akinboboye</surname><given-names>O</given-names></name>, <name><surname>Idris</surname><given-names>O</given-names></name>, <name><surname>Akinboboye</surname><given-names>O</given-names></name>, <name><surname>Akinkugbe</surname><given-names>O</given-names></name>. <article-title>Trends in coronary artery disease and associated risk factors in sub-Saharan Africans</article-title>. <source>J Hum Hypertens</source>
+<year>2003</year>;<volume>17</volume>(<issue>6</issue>):<fpage>381</fpage>–<lpage>387</lpage>.<pub-id pub-id-type="pmid">12764400</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R31">
+        <label>31.</label>
+        <mixed-citation publication-type="journal"><name><surname>Kengne</surname><given-names>AP</given-names></name>, <name><surname>Echouffo-Tcheugui</surname><given-names>JB</given-names></name>, <name><surname>Sobngwi</surname><given-names>E</given-names></name>, <name><surname>Mbanya</surname><given-names>JC</given-names></name>. <article-title>New insights on diabetes mellitus and obesity in Africa-Part 1: prevalence, pathogenesis and comorbidities</article-title>. <source>Heart</source>. <year>2013</year>.</mixed-citation>
+      </ref>
+      <ref id="R32">
+        <label>32.</label>
+        <mixed-citation publication-type="book"><collab>World Health Organization</collab>. <source>STEPwise approach to chronic disease risk factor surveillance (STEPS)</source>. <publisher-name>WHO</publisher-name>. <year>2013</year>
+<comment>Available at: URL: <ext-link xlink:href="http://www.who.int/chp/steps/riskfactor/en/index.html" ext-link-type="uri">http://www.who.int/chp/steps/riskfactor/en/index.html</ext-link>.</comment>
+<comment>Accessed</comment>
+<date-in-citation>May 21, 2013</date-in-citation>.</mixed-citation>
+      </ref>
+      <ref id="R33">
+        <label>33.</label>
+        <mixed-citation publication-type="journal"><name><surname>Msyamboza</surname><given-names>KP</given-names></name>, <name><surname>Kathyola</surname><given-names>D</given-names></name>, <name><surname>Dzowela</surname><given-names>T</given-names></name>, <name><surname>Bowie</surname><given-names>C</given-names></name>. <article-title>The burden of hypertension and its risk factors in Malawi: nationwide population-based STEPS survey</article-title>. <source>Int Health</source>. <year>2012</year>;<volume>4</volume>(<issue>4</issue>):<fpage>246</fpage>–<lpage>252</lpage>.<pub-id pub-id-type="pmid">24029670</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R34">
+        <label>34.</label>
+        <mixed-citation publication-type="book"><collab>Institute for Health Metrics and Evaluation, Human Development Network, The World Bank</collab>. <source>Generating Evidence, Guiding Policy – Sub-Saharan Africa Regional Edition. Institute for Health Metrics and Evaluation 2013</source>. <publisher-loc>Seattle, WA</publisher-loc>: <publisher-name>IHME</publisher-name>. <year>2013</year>. <comment>[Accessed</comment>
+<date-in-citation>September 14, 2013</date-in-citation>].</mixed-citation>
+      </ref>
+      <ref id="R35">
+        <label>35.</label>
+        <mixed-citation publication-type="book"><collab>World Health Organization</collab>. <source>Global status report on noncommunicable diseases 2010</source>. <publisher-loc>Geneva</publisher-loc>: <publisher-name>WHO</publisher-name>. <year>2011</year>.</mixed-citation>
+      </ref>
+      <ref id="R36">
+        <label>36.</label>
+        <mixed-citation publication-type="book"><collab>World Health Organization</collab>. <source>Preventing chronic diseases: a vital investment</source>. <publisher-loc>Geneva</publisher-loc>: <publisher-name>World Health Organization</publisher-name>. <year>2005</year>.</mixed-citation>
+      </ref>
+      <ref id="R37">
+        <label>37.</label>
+        <mixed-citation publication-type="journal"><name><surname>Lozano</surname><given-names>R</given-names></name>, <name><surname>Naghavi</surname><given-names>M</given-names></name>, <name><surname>Foreman</surname><given-names>K</given-names></name>, <etal/>
+<article-title>Global and regional mortality from 235 causes of death for 20 age groups in 1990 and 2010: a systematic analysis for the Global Burden of Disease Study 2010</article-title>. <source>Lancet</source>. <year>2013</year>;<volume>380</volume>(<issue>9859</issue>):<fpage>2095</fpage>–<lpage>2128</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R38">
+        <label>38.</label>
+        <mixed-citation publication-type="book"><collab>World Health Organization</collab>. <source>STEPS Country Reports</source>. <publisher-name>WHO</publisher-name>. <year>2013</year>. <comment>[Available at: URL: <ext-link xlink:href="http://www.who.int/chp/steps/reports/en/" ext-link-type="uri">http://www.who.int/chp/steps/reports/en/</ext-link></comment>].</mixed-citation>
+      </ref>
+      <ref id="R39">
+        <label>39.</label>
+        <mixed-citation publication-type="journal"><collab>World Health Organization</collab>. <source>Prevention and control of noncommunicable diseases: implementation of the global strategy</source>. <year>2008</year>. [<comment><ext-link xlink:href="http://wwwwhoint/nmh/NCD%20Action%20Plan%20Resolutionpdf" ext-link-type="uri">http://wwwwhoint/nmh/NCD%20Action%20Plan%20Resolution pdf</ext-link></comment>].</mixed-citation>
+      </ref>
+      <ref id="R40">
+        <label>40.</label>
+        <mixed-citation publication-type="book"><collab>World Health Organization</collab>. <source>2008–2013 Action Plan for the Global Strategy for the Prevention and Control of Noncommunicable Diseases</source>. <publisher-name>World Health Organization</publisher-name>. <year>2008</year>. [<comment>Available at: URL: <ext-link xlink:href="http://www.who.int/nmh/publications/ncd_action_plan_en.pdf" ext-link-type="uri">http://www.who.int/nmh/publications/ncd_action_plan_en.pdf</ext-link></comment>].</mixed-citation>
+      </ref>
+      <ref id="R41">
+        <label>41.</label>
+        <mixed-citation publication-type="book"><collab>World Health Organization</collab>. <source>Global Strategy on Diet, Physical Activity and Health</source>. <publisher-loc>Geneva</publisher-loc>: <publisher-name>World Health Organization</publisher-name>. <year>2004</year>.</mixed-citation>
+      </ref>
+      <ref id="R42">
+        <label>42.</label>
+        <mixed-citation publication-type="journal"><name><surname>Mensah</surname><given-names>GA</given-names></name>, <name><surname>Mayosi</surname><given-names>BM</given-names></name>. <article-title>The 2011 United Nations high-level meeting on non-communicable diseases: the Africa agenda calls for a 5-by-5 approach</article-title>. <source>S Afr Med J</source>
+<year>2012</year>;<volume>103</volume>(<issue>2</issue>): <fpage>77</fpage>–<lpage>79</lpage>.<pub-id pub-id-type="pmid">23374298</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R43">
+        <label>43.</label>
+        <mixed-citation publication-type="journal"><name><surname>Mayosi</surname><given-names>BM</given-names></name>. <article-title>The 10 ‘Best Buys’ to combat heart disease, diabetes and stroke in Africa</article-title>. <source>Heart</source>. <year>2013</year>;<volume>99</volume>(<issue>14</issue>):<fpage>973</fpage>–<lpage>974</lpage>.<pub-id pub-id-type="pmid">23680892</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R44">
+        <label>44.</label>
+        <mixed-citation publication-type="book"><collab>World Health Organization, World Economic Forum</collab>. <source>From Burden to “Best Buys”: Reducing the Economic Impact of Non-Communicable Diseases in Low- and Middle-Income Countries</source>. <publisher-name>WHO</publisher-name>. <year>2011</year>
+<comment>Available at: URL: <ext-link xlink:href="http://www.who.int/nmh/publications/best_buys_summary.pdf" ext-link-type="uri">http://www.who.int/nmh/publications/best_buys_summary.pdf</ext-link>.</comment></mixed-citation>
+      </ref>
+      <ref id="R45">
+        <label>45.</label>
+        <mixed-citation publication-type="book"><collab>World Health Organization, Government of South Australia</collab>. <source>Adelaide Statement on Health in All Policies</source>. <publisher-loc>Adelaide</publisher-loc>
+<year>2010</year>. <comment>2010. [Available at: URL: <ext-link xlink:href="http://www.who.int/social_determinants/hiap_statement_who_sa_final.pdf" ext-link-type="uri">http://www.who.int/social_determinants/hiap_statement_who_sa_final.pdf</ext-link></comment>].</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig position="float" id="F1">
+      <label>Fig 1 –</label>
+      <caption>
+        <p id="P37">The 10 leading diseases and injuries and 10 leading risk factors based on percentage of deaths and DALYs in sub-Saharan Africa, 2010. Reproduced with permission from The Institute of Health Metrics and Evaluation. Human Development Network, The World Bank. Generating Evidence, Guiding Policy – Sub-Saharan Africa Regional Edition. Seattle, WA: IHME, 2013. <italic toggle="yes">Institute for Health Metrics and Evaluation</italic> 2013. Note: This figure compares the percent of DALYs and deaths attributable to different diseases and injuries (shown in blue) as well as risk factors (shown in red). Certain causes, such as iron deficiency, cause more DALYs than they do deaths. DALYs are an important tool for decision-makers because they capture years of healthy life lost from both premature death and years lived with disability.</p>
+      </caption>
+      <graphic xlink:href="nihms-533191-f0001" position="float"/>
+    </fig>
+    <fig position="float" id="F2">
+      <label>Fig 2 –</label>
+      <caption>
+        <p id="P38">The burden of disease attributable to 20 leading risk factors in sub-Saharan Africa in 2010, expressed as a percentage of disability-adjusted life-years for both sexes in sub-Saharan Africa.</p>
+      </caption>
+      <graphic xlink:href="nihms-533191-f0002" position="float"/>
+    </fig>
+    <fig position="float" id="F3">
+      <label>Fig 3 –</label>
+      <caption>
+        <p id="P39">Leading risk factors ranked by attributable burden of disease at the global level and by region in sub-Saharan Africa in 2010. Regions are ordered by mean life expectancy. Modified from Lim SS, Vos T, Flaxman AD et al. A comparative risk assessment of burden of disease and injury attributable to 67 risk factors and risk factor clusters in 21 regions, 1990–2010: a systematic analysis for the Global Burden of Disease Study 2010. Lancet 2012 December 15;380(9859):2224–60, with permission from Elsevier.</p>
+      </caption>
+      <graphic xlink:href="nihms-533191-f0003" position="float"/>
+    </fig>
+    <fig position="float" id="F4">
+      <label>Fig 4 –</label>
+      <caption>
+        <p id="P40">Global risk factor ranks with 95% UI for all ages and sexes combined in 1990, and 2010, and percentage change in sub-Saharan Africa.</p>
+      </caption>
+      <graphic xlink:href="nihms-533191-f0004" position="float"/>
+    </fig>
+    <fig position="float" id="F5">
+      <label>Fig 5 –</label>
+      <caption>
+        <p id="P41">Rankings of DALYs attributable to leading risk factors across select countries in sub-Saharan Africa, 2010. Reproduced with permission from The Institute for Health Metrics and Evaluation.</p>
+      </caption>
+      <graphic xlink:href="nihms-533191-f0005" position="float"/>
+    </fig>
+    <fig position="float" id="F6">
+      <label>Fig 6 –</label>
+      <caption>
+        <p id="P42">Shifts in rankings of DALYs in sub-Saharan Africa for the top 15 risk factors, 1990–2010. *Reproduced with permission from The Institute for Health Metrics and Evaluation.<sup><xref rid="R1" ref-type="bibr">1</xref></sup> Note: The leading 15 risk factors are ranked from top to bottom in order of the number of DALYs they contributed in 2010. Bars going right show the percentage by which risk factors have increased since 1990. Bars going left show the percentage by which risk factors have decreased. Pointed arrows indicate causes that have increased by a greater amount than shown on the x-axis.</p>
+      </caption>
+      <graphic xlink:href="nihms-533191-f0006" position="float"/>
+    </fig>
+    <table-wrap position="float" id="T1" orientation="landscape">
+      <label>Table 1 –</label>
+      <caption>
+        <p id="P43">Prevalence of selected chronic non-communicable disease risk factors and risk factor clusters in the WHO stepwise approach to chronic disease risk factor surveillance (STEPS) from selected African countries</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <colgroup span="1">
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th align="center" valign="bottom" rowspan="1" colspan="1">Country</th>
+            <th align="left" valign="bottom" rowspan="1" colspan="1">Year<sup><xref rid="TFN2" ref-type="table-fn">1</xref></sup></th>
+            <th align="left" valign="bottom" rowspan="1" colspan="1">% Who Currently Smoke Tobacco</th>
+            <th align="left" valign="bottom" rowspan="1" colspan="1">% Who Ate &lt;5 Servings of F&amp;V Per Day<sup><xref rid="TFN3" ref-type="table-fn">2</xref></sup></th>
+            <th align="left" valign="bottom" rowspan="1" colspan="1">% Not Engaged in Vigorous Physical Activity</th>
+            <th align="left" valign="bottom" rowspan="1" colspan="1">% Who Are Obese<sup><xref rid="TFN4" ref-type="table-fn">3</xref></sup></th>
+            <th align="left" valign="bottom" rowspan="1" colspan="1">% With Raised Blood Pressure<sup><xref rid="TFN4" ref-type="table-fn">3</xref></sup></th>
+            <th align="left" valign="bottom" rowspan="1" colspan="1">% With Raised Blood Glucose<sup><xref rid="TFN5" ref-type="table-fn">4</xref></sup></th>
+            <th align="left" valign="bottom" rowspan="1" colspan="1">% With Raised Total Blood Cholesterol<sup>x</sup></th>
+            <th align="left" valign="bottom" rowspan="1" colspan="1">% With None of the CRFs<sup><xref rid="TFN6" ref-type="table-fn">5</xref></sup></th>
+            <th align="left" valign="bottom" rowspan="1" colspan="1">% With &gt;3 of the CRFs, Ages 25–44 Years Old</th>
+            <th align="left" valign="bottom" rowspan="1" colspan="1">% With &gt;3 of the CRFs, Ages 45–64 Years Old</th>
+            <th align="left" valign="bottom" rowspan="1" colspan="1">% With &gt;3 of the CRFs, Ages 25–64 Years Old</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Benin</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2008</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">8.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">78.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">58.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">9.4</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">28.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">3.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">7.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">11.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">9.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">21.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">14.9</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Botswana</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2007</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">19.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">96.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">72.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">15.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">33.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">1.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">25.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">50.4</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">34.5</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Cameroon</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2003</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">6.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">84.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">15.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">17.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">13.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Cape Verde</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2007</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">9.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">86.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">68.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">10.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">38.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">12.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">13.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">5.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">19.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">41.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">24.8</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">CAR</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2010</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">14.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">66.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">55.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">7.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">34.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">21.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">12.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">12.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">29.4</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">17.7</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Chad</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2008</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">11.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">84.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">74.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">13.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">27.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">0.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">22.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">37.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">27.8</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Comoros</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2011</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">12.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">85.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">61.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">13.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">25.4</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">4.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">25.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">5.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">18.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">32.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">23.0</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Congo, Dem. Rep.</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2005</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">6.4</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">87.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">96.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">5.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">17.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">5.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">19.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">34.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">24.1</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Congo, Brazzaville</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2004</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">11.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">8.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">33.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">20.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Cote d’Ivoire</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2005</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">14.4</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">83.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">93.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">8.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">25.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">4.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">24.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">44.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">30.1</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Eritrea</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2004</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">7.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">98.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">83.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">3.4</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">16.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">0.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">13.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">26.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">19.4</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Ethiopia</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2006</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">4.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">98.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">7.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">30.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">0.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">17.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">34.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Gabon</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2009</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">12.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">93.4</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">65.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">15.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">20.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">1.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">30.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">50.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">36.4</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Gambia, The</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2010</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">15.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">93.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">58.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">12.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">26.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">20.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">39.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">25.8</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Guinea</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2009</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">12.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">79.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">52.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">5.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">28.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">5.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">9.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">7.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">15.4</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">35.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">21.6</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Lesotho</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2012</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">24.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">92.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">44.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">19.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">31.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">6.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">4.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">22.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">41.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">26.7</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Liberia</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2011</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">9.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">96.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">59.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">22.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">30.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">19.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">1.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">28.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">43.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">33.5</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Madagascar</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2005</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">19.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">62.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">75.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">35.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">12.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">12.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">17.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">13.8</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Malawi</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2009</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">14.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">97.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">17.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">4.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">32.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">5.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">8.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">1.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">13.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">23.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">16.5</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Mauritania</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2006</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">18.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">94.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">95.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">20.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">22.4</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">6.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">24.4</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Mozambique</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2005</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">18.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">95.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">31.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">7.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">34.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">3.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2.4</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">14.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">28.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">19.0</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Niger</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2007</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">4.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">96.4</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">56.4</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">3.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">36.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">22.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">0.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">17.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">26.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">21.4</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Sao Tome and Principe</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2008</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">5.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">83.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">51.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">35.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">38.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">6.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">7.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">6.4</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">15.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">36.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">22.1</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Seychelles</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2004</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">22.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">78.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">73.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">25.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">39.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">9.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">59.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">4.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">29.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">52.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">38.8</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Sierra Leone</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2009</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">25.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">90.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">31.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">7.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">34.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">-</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">1.4</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">22.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">37.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">27.0</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Swaziland</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2007</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">7.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">87.4</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">49.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">24.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">36.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">14.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">5.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">1.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">30.4</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">47.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">35.5</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Tanzania</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2012</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">14.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">97.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">32.4</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">8.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">26.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">9.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">26.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">0.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">12.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">28.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">16.6</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Togo</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2010</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">6.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">94.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">45.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">6.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">19.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">14.2</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2.4</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">13.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">23.7</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">16.1</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Zambia</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2008</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">6.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">97.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">76.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">14.4</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">33.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">4.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">23.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">1.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">16.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">46.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">23.7</td>
+          </tr>
+          <tr>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">Zanzibar</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">2011</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">7.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">97.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">52.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">14.3</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">33.0</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">3.8</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">24.5</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">0.6</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">18.9</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">38.1</td>
+            <td align="left" valign="bottom" rowspan="1" colspan="1">24.2</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN1">
+          <p id="P44">Source of Data: The World Health Organization. STEPS Country Reports. <ext-link xlink:href="http://www.who.int/chp/steps/reports/en/" ext-link-type="uri">http://www.who.int/chp/steps/reports/en/</ext-link>. Last accessed on 21 May 2013.</p>
+        </fn>
+        <fn id="TFN2">
+          <label>1</label>
+          <p id="P45">Year of most recent STEPS survey;</p>
+        </fn>
+        <fn id="TFN3">
+          <label>2</label>
+          <p id="P46">Percentage who ate less than 5 combined servings of fruit and/or vegetables on average per day.</p>
+        </fn>
+        <fn id="TFN4">
+          <label>3</label>
+          <p id="P47">Percentage who are obese (BMI at least 30 kg/m<sup>2</sup>).</p>
+        </fn>
+        <fn id="TFN5">
+          <label>4</label>
+          <p id="P48">Percentage with raised BP (SBP at least 140 and/or DBP at least 90 mm Hg or currently on medication for raised BP).</p>
+        </fn>
+        <fn id="TFN6">
+          <label>5</label>
+          <p id="P49">Percentage with raised blood glucose as defined below or currently on medication for raised blood glucose:</p>
+        </fn>
+        <fn id="TFN7">
+          <p id="P50">• plasma venous value _7.0 mmol/L or _126 mg/dl</p>
+        </fn>
+        <fn id="TFN8">
+          <p id="P51">• capillary whole blood value _6.1 mmol/L or _110 mg/dl</p>
+        </fn>
+        <fn id="TFN9">
+          <label>4.</label>
+          <p id="P52">Percentage with raised total blood cholesterol.</p>
+        </fn>
+        <fn id="TFN10">
+          <label>6.</label>
+          <p id="P53">CRFs are the combined risk factors including (a) current daily smokers; (b) consumption of less than 5 servings of fruits and/or vegetables on average per day; (c) low level of activity (&lt; 600 MET-minutes); (d) overweight (BMI at least 25 kg/m<sup>2</sup>); (e) raised BP (SBP at least 140 and/or DBP at least 90 mm Hg or currently on medication for raised BP).</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+  </floats-group>
+</article>

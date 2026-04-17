@@ -1,0 +1,1973 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="en">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">100973416</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">30421</journal-id>
+      <journal-id journal-id-type="nlm-ta">Eur Cell Mater</journal-id>
+      <journal-title-group>
+        <journal-title>European cells &amp; materials</journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">1473-2262</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">19908197</article-id>
+      <article-id pub-id-type="pmc">3092783</article-id>
+      <article-id pub-id-type="manuscript">NIHMS289304</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>MMP2-CLEAVAGE OF DMP1 GENERATES A BIOACTIVE PEPTIDE PROMOTING DIFFERENTIATION OF DENTAL PULP STEM/PROGENITOR CELLS</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chaussain</surname>
+            <given-names>Catherine</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A2" ref-type="aff">2</xref>
+          <xref rid="A3" ref-type="aff">3</xref>
+          <xref rid="FN1" ref-type="author-notes">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Eapen</surname>
+            <given-names>Asha Sarah</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Huet</surname>
+            <given-names>Eric</given-names>
+          </name>
+          <xref rid="A4" ref-type="aff">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Floris</surname>
+            <given-names>Caroline</given-names>
+          </name>
+          <xref rid="A2" ref-type="aff">2</xref>
+          <xref rid="A3" ref-type="aff">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ravindran</surname>
+            <given-names>Sriram</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hao</surname>
+            <given-names>Jianjun</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Menashi</surname>
+            <given-names>Suzanne</given-names>
+          </name>
+          <xref rid="A4" ref-type="aff">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>George</surname>
+            <given-names>Anne</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>1</label> Department of Oral Biology, University of Illinois, Chicago, IL 60612, USA</aff>
+      <aff id="A2"><label>2</label> EA 2496, Université Paris Descartes, Paris, France</aff>
+      <aff id="A3"><label>3</label> Assistance Publique-Hôpitaux de Paris, Hôpital Bretonneau, Odontology Department, Paris, France</aff>
+      <aff id="A4"><label>4</label> Laboratoire CRRET, Université Paris Est, CNRS, Créteil, France</aff>
+      <author-notes>
+        <corresp id="FN1">
+<label>*</label>Address for correspondence Catherine Chaussain, EA 2496, UFR Odontologie, Université Paris Descartes, 1 rue Maurice Arnoux, F-92120 Montrouge, France, Telephone Number: +33-158076807, FAX Number: +33-158076806, <email>catherine.chaussain@parisdescartes.fr</email></corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>15</day>
+        <month>4</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>12</day>
+        <month>11</month>
+        <year>2009</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>11</day>
+        <month>5</month>
+        <year>2011</year>
+      </pub-date>
+      <volume>18</volume>
+      <fpage>84</fpage>
+      <lpage>95</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P1">Dentin Matrix Protein 1 (DMP1) plays a regulatory role in dentin mineralization and can also function as a signaling molecule. MMP-2 (matrix metalloproteinase-2) is a predominant protease in the dentin matrix that plays a prominent role in tooth formation and a potential role during the carious process. The possibility that MMP-2 can cleave DMP1 to release biologically active peptides was investigated in this study. DMP1, both in the recombinant form and in its native state within the dentin matrix, was shown to be a substrate for MMP-2. Proteolytic processing of DMP1 by MMP-2 produced two major peptides, one that contains the C-terminal region of the protein known to carry both the ASARM (aspartic acid and serine rich domain) domain involved in biomineralization and the DNA binding site of DMP1. <italic>In vitro</italic> experiments with recombinant N- and C-terminal polypeptides mimicking the MMP-2 cleavage products of DMP1 demonstrated an effect of the C-polypeptide on the differentiation of dental pulp stem/progenitor cells to a putative odontoblast phenotype. <italic>In vivo</italic> implantation of this peptide in a rat injured pulp model induced a rapid formation of a homogeneous dentin bridge covered by a palisade of orientated cells expressing dentin sialoprotein (DSP) and DMP1, attesting an efficient repair process. These data suggest that a peptide generated through the proteolytic processing of DMP1 by MMP-2 can regulate the differentiation of mesenchymal cells during dentinogenesis and thus sustain reparative dentin formation in pathological situations such as carious decay. In addition, these data open a new therapeutic possibility of using this peptide to regenerate dentin after an injury.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>DMP1</kwd>
+        <kwd>MMP-2</kwd>
+        <kwd>dentin</kwd>
+        <kwd>cleavage product</kwd>
+        <kwd>pulp stem/progenitor cells</kwd>
+        <kwd>bioactivity</kwd>
+        <kwd>differentiation</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source country="United States">National Institute of Dental and Craniofacial Research  : NIDCR</funding-source>
+          <award-id>R01 DE011657-13 || DE</award-id>
+        </award-group>
+      </funding-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S1">
+      <title>Introduction</title>
+      <p id="P2">Dentin Matrix Protein 1 (DMP1) has been shown to play a central role in dentin mineralization (<xref ref-type="bibr" rid="R14">He and George 2004</xref>, <xref ref-type="bibr" rid="R15">He <italic>et al.,</italic> 2003</xref>). Its carboxy-terminal domain rich in aspartic acid and serine (ASARM; residues 408 to 429) may be responsible for the nucleation of hydroxyapatite (<xref ref-type="bibr" rid="R8">Gajjeraman <italic>et al</italic>., 2007</xref>, <xref ref-type="bibr" rid="R32">Rowe <italic>et al.</italic>, 2000</xref>). DMP1 was shown to be transported to the nuclear compartment and was implicated in signaling functions (<xref ref-type="bibr" rid="R25">Narayanan <italic>et al.</italic>, 2003</xref>). It was shown to regulate the transcription of <italic>DSPP</italic> during early odontoblast differentiation by binding to the promoter of this gene through its carboxyl end (residues 420 to 489) (<xref ref-type="bibr" rid="R26">Narayanan <italic>et al.</italic>, 2006</xref>).</p>
+      <p id="P3">Dentin and bone extracellular matrix (ECM) were shown to contain both the full length DMP1 as well as its processed N-terminal (N-ter) (37 kDa) and C-terminal (C-ter) (57 kDa) fragments (<xref ref-type="bibr" rid="R17">Huang <italic>et al.</italic>, 2008</xref>, <xref ref-type="bibr" rid="R30">Qin <italic>et al.</italic>, 2003</xref>). The bone morphogenetic protein-1 (BMP1) and its relative tolloid-like 1 (TLL1) metalloproteinases were proposed to be responsible for the physiological processing of DMP1 (<xref ref-type="bibr" rid="R36">Steiglitz <italic>et al.</italic>, 2004</xref>). However, the role of matrix metalloproteinases (MMPs), in generating active DMP1 peptides in the extracellular matrix has not yet been evoked. Indeed, these proteases were shown to be contained within the dentin matrix and can be activated in pathological conditions (<xref ref-type="bibr" rid="R4">Chaussain-Miller <italic>et al.</italic>, 2006</xref>, <xref ref-type="bibr" rid="R37">Tjaderhane <italic>et al</italic>., 1998</xref>).</p>
+      <p id="P4">It is now widely acknowledged that MMPs convert structural matrix proteins to signaling molecules (<xref ref-type="bibr" rid="R27">Page-McCaw <italic>et al.</italic>, 2007</xref>) and may function in the differentiation program of mesenchymal stem cells (<xref ref-type="bibr" rid="R22">Mannello <italic>et al.</italic>, 2006</xref>). Several MMPs have been identified in dentin and pulp (<xref ref-type="bibr" rid="R2">Boukpessi <italic>et al.</italic>, 2008</xref>, <xref ref-type="bibr" rid="R10">Goldberg <italic>et al.,</italic> 2003</xref>, <xref ref-type="bibr" rid="R28">Palosaari <italic>et al.</italic>, 2003</xref>) and are thought to be implicated in the early stages of dentinogenesis. Among endogenous MMPs, MMP-2 has been proposed to be involved in dental ECM processing taking place at later stages of tooth development, and particularly in dentin sialophosphoprotein (DSPP) processing, possibly in association with MMP-20 (<xref ref-type="bibr" rid="R3">Bourd-Boittin <italic>et al.</italic>, 2005</xref>, <xref ref-type="bibr" rid="R41">Yamakoshi <italic>et al.</italic>, 2006</xref>), or in association with a self-processing mechanism of DSPP (<xref ref-type="bibr" rid="R9">Godovikova and Ritchie, 2007</xref>). MMP-2 was also isolated from mature human mineralized dentin matrix (<xref ref-type="bibr" rid="R23">Martin-De Las Heras <italic>et al</italic>., 2000</xref>) and zymographically identified in demineralized dentin (<xref ref-type="bibr" rid="R24">Mazzoni <italic>et al.</italic>, 2007</xref>, <xref ref-type="bibr" rid="R39">van Strijp <italic>et al.</italic>, 2003</xref>), playing a potential role in dentin matrix destruction during the carious process (<xref ref-type="bibr" rid="R4">Chaussain-Miller <italic>et al.</italic>, 2006</xref>, <xref ref-type="bibr" rid="R37">Tjaderhane <italic>et al</italic>., 1998</xref>).</p>
+      <p id="P5">We therefore investigated the possibility that DMP1 in dentin matrix may be a substrate for MMP-2, as this enzyme was already shown to generate bioactive peptide from several matrix proteins in different models (<xref ref-type="bibr" rid="R6">Dean and Overall 2007</xref>, <xref ref-type="bibr" rid="R7">Dean <italic>et al</italic>., 2007</xref>). We hypothesized that DMP1 cleavage by MMP-2 under physiological conditions such as tooth development, or in pathological situations such as carious decay, may release bioactive peptides that conserve DMP1 biological activities or present specific new activity. Therefore, the purpose of this study was to determine whether DMP1 can be cleaved by MMP-2 and if the cleavage products can act as signaling molecules on the transformation of dental pulp cells into putative odontoblasts. An <italic>in vitro</italic> model using human dental pulp stem/progenitor cells (DPSCs), a heterogeneous pulp cell population and an <italic>in vivo</italic> rat pulp injury model were used to validate this hypothesis.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="S2">
+      <title>Materials and Methods</title>
+      <sec id="S3">
+        <title>Expression and purification of recombinant DMP1 (r-DMP1) and its N- and C-DMP1 polypeptides</title>
+        <p id="P6">The r-DMP1 was expressed in <italic>E. coli</italic> and purified as published earlier (<xref ref-type="bibr" rid="R35">Srinivasan <italic>et al.</italic>, 1999</xref>). The coding region of rat DMP1 cDNA was amplified using a set of sequence-specific sense and antisense primers with BamH1 and NotI recognition sites on the 5′ ends of both the primers.</p>
+        <p id="P7">The sense primer had the sequence: 5′ GCCGCCGGATCCCTCCCTGTCGCCAGATAC 3′ and the antisense primer: 5′ GCCGCCGCGGCCGCACTAGTAGCCATCTTGGCAATC 3′.</p>
+        <p id="P8">The amplified mature DMP1 cDNA was cloned into the BamHI and NotI sites of the prokaryotic expression vector PGEX-4T-3 (Pharmacia, Uppsala, Sweden) and transformed into the <italic>E. coli</italic> host JM 109 strain. Transformed colonies were grown in LB/ampicillin medium and the expression of fusion proteins was induced by adding 0.1mM isopropyl β-D-1-thiogalactopyranoside (IPTG). The fusion protein was purified from bacterial lysates by Sepharose 4B-Glutathione affinity and used for the proteolytic assay in this study. A similar procedure was used to express and purify recombinant N- and C-DMP1 polypeptides (<xref ref-type="bibr" rid="R8">Gajjeraman <italic>et al.</italic>, 2007</xref>). The coding sequence of rat DMP1 was subamplified into two parts by PCR with a set of primers flanking the required sequence region:</p>
+        <list id="L1" list-type="order">
+          <list-item>
+            <p id="P9">N term-S, G GAT CCC ATG AAG ACT GTT ATC CTC CTT ACG;</p>
+          </list-item>
+          <list-item>
+            <p id="P10">N term-AS, GC GGC CGC TTC CTG GGA TCC CTC ACC AGC;</p>
+          </list-item>
+          <list-item>
+            <p id="P11">C-term-S, G GAT CCC AGC AGC AGC GAG TCT CAG GAA;</p>
+          </list-item>
+          <list-item>
+            <p id="P12">C-term-AS, GC GGC CGC GTA GCC ATC TTG GCA ATC ATT.</p>
+          </list-item>
+        </list>
+        <p id="P13">The amplified fragments were sequence-verified and then inserted into the PGEX-4T3 vector and expressed in BL21-DE3 <italic>E. coli</italic> cells (Invitrogen, Carlsbad, CA, USA). The glutathione S-transferase fusion protein induced and purified by the standard procedure was cleaved by thrombin at 4 °C. The corresponding peptides were termed N-DMP1 (residues 1–334) and C-DMP1 (residues 334–489).</p>
+      </sec>
+      <sec id="S4">
+        <title>Total protein extraction from tooth germs</title>
+        <p id="P14">Tooth germs were dissected from 5 days post-natal Swiss mice (Charles River, Lyon, France). The protocol was approved by the Animal Care Committee of French Veterinary Services (DSV). According to the procedure of <xref ref-type="bibr" rid="R3">Bourd-Boittin <italic>et al.</italic> (2005)</xref>, tooth germs were ground to a fine powder in the presence of liquid nitrogen, then homogenized in ice-cold extraction buffer (10 germs in 150 μl buffer: 50 mM Tris-HCl, pH 7.5, containing 5 mM CaCl<sub>2</sub>, 0.9% NaCl and 0.2 % Triton X-100), supplemented with 1/100 Protease Inhibitor Cocktail Set V EDTA free (Calbiochem, La Jolla, CA, USA). The resulting homogenate referred as H<sub>C</sub> was then briefly sonicated on ice (3 times 5 sec) and cleared by centrifugation at 10 000xg for 15 min at 4°C. Other extraction procedures also included, in addition to the Protease Inhibitor Cocktail, 1μM marimastat (British Biotechnology, Oxford, UK), or 0.005 M EDTA and the corresponding homogenates will be referred to as H<sub>MAR</sub> and H<sub>EDTA</sub>, respectively.</p>
+      </sec>
+      <sec id="S5">
+        <title>Proteolysis of native and r-DMP1 by recombinant MMP-2 (r-MMP-2)</title>
+        <p id="P15">r-MMP-2 (a gift from Dr R. Fridman, Wayne State University, Detroit, MI, USA) was first incubated with APMA (p-aminophenylmercuric acetate; 1 mM, Sigma, Saint Louis, MO, USA) for 1 h at room temperature to achieve activation. Activated MMP-2 (1 μg/ml) was added to 100 μg rat r-DMP1 in a final volume of 100 μl of 100 mM Tris buffer pH 7.2, containing 0.15 M NaCl and 5 mM CaCl<sub>2</sub> (all the buffer reagents used are from Fisher Chemicals, Fair Lawn, NJ, USA). r-DMP1 incubated under the same conditions but without MMP-2 was used as a control. Following 0.5 to 6 h incubation periods at 37°C, 20 μg of DMP1 treated with or without MMP-2 were subjected to 12% SDS-PAGE. Gels were stained either with Coomassie blue R-250 (FisherBiotec, Wembley, Australia), or with Stains-All (Sigma). The apparent molecular weights of protein bands were estimated by comparison with Precision plus protein unstained standards for Coomassie and Precision plus protein kaleidoscope standards for Stains-All (Bio-Rad, Richmond, CA, USA). In parallel, the homogenate obtained from tooth germ (H<sub>C</sub>) was incubated with activated MMP-2 (3 μg/ml) for 1 and 3 h respectively, similar to the conditions described above incubated under the same conditions but for r-DMP1. H<sub>C</sub> without MMP-2 was used as a control.</p>
+      </sec>
+      <sec id="S6">
+        <title>Identification of cleaved DMP1 peptides by Western blot analysis</title>
+        <p id="P16">Western blot analysis was performed to identify intact DMP1 and its proteolytic cleavage products using tooth germ homogenates when incubated with MMP-2. 20 μg of homogenates were subjected to electrophoresis on 12% SDS-PAGE and transferred onto a nitrocellulose membrane (Bio-Rad). Membranes were incubated with a polyclonal anti-C-DMP1 antibody (C-857; 1: 2000) (a gift from Dr Chunlin Qin, Baylor College of Dentistry, Dallas, TX, USA) (<xref ref-type="bibr" rid="R30">Qin <italic>et al.</italic>, 2003</xref>).</p>
+      </sec>
+      <sec id="S7">
+        <title>Effect of DMP1 polypeptides on the differentiation of dental pulp stem/progenitor cells (DPSCs)</title>
+        <p id="P17">Dental pulp stem/progenitor cells (DPSCs) were a gift from Dr S. Shi (Univ. of Southern California, Growth and Development, Los Angeles, CA, USA). These cells represent a heterogeneous population obtained from the enzyme treatment of human pulp containing a fraction of progenitor/stem cells displaying phenotypes consistent with different perivascular cell populations, and particularly positive for STRO-1 and CD146 antigens (<xref ref-type="bibr" rid="R33">Shi and Gronthos, 2003</xref>). If seeded onto dentin, some DPSCs convert into putative odontoblast cells with a polarized cell body and a cell process extending into the existing dentinal tubules (<xref ref-type="bibr" rid="R16">Huang <italic>et al</italic>., 2006</xref>). In addition to their dentinogenic potential, subpopulations of DPSCs also possess adipogenic and neurogenic differentiation capacities (<xref ref-type="bibr" rid="R11">Gronthos <italic>et al.,</italic> 2002</xref>; for review see <xref ref-type="bibr" rid="R18">Huang <italic>et al.</italic>, 2009</xref>). More recently, DPSCs were also found to undergo osteogenic, chondrogenic and myogenic differentiation <italic>in vitro</italic> (<xref ref-type="bibr" rid="R5">d’Aquino <italic>et al.</italic>, 2007</xref>, <xref ref-type="bibr" rid="R19">Laino <italic>et al.</italic>, 2005</xref>, <xref ref-type="bibr" rid="R42">Zhang <italic>et al.</italic>, 2006</xref>).</p>
+        <p id="P18">The pulp was obtained at the Dental Clinic of the National Institute of Dental and Craniofacial Research, from normal third molar teeth in healthy young adults (19–29 yrs of age), who gave their informed consent according to approved guidelines set by the National Institutes of Health Office Human Subject Research (<xref ref-type="bibr" rid="R11">Gronthos <italic>et al.</italic>, 2002</xref>). Approximately 10<sup>5</sup> cells were collected from each pulp sample.</p>
+        <p id="P19">The cells at P4 were grown in Dulbecco’s modified Eagle’s (DMEM)/F12 medium containing 10% fetal bovine serum (FBS), 1% penicillin/streptomycin and 1% amphotericin B. Cells were seeded in 6 well plates and grown to 70% confluence. 12–16 h before the beginning of the experiment the cells were cultured in DMEM/F-12 medium supplemented with 1% FBS. N- or C-DMP1 polypeptides were added for varying time periods 4, 24 and 48 h, at 0 and 0.25 μg/ml. Experiments were repeated in triplicates. For each time point and at each concentration, one well of cells were fixed with cold ethanol, stained for 10 min with Giemsa’s stain (Giemsa STAIN Solution; Sigma), rinsed extensively with double-deionized (DDI) water and the cell morphology was observed under an inverted microscope (DM IRB Leica Bannockburn, IL, USA) equipped with an QImaging Retiga Exi Fast 1394 camera and QCapture software (Qimaging, Surrey, BC, Canada).</p>
+        <p id="P20">The differentiation potential of the treated cells was investigated by analyzing the expression of DMP1 and DSP after extraction of total RNA from cultured cells 4, 24 and 48 h after addition of DMP1 polypeptides using RNeasy kit (Qiagen, Hilden, Germany). RT-PCR was performed with DNase I (Qiagen)-treated RNA. 3 μg of total RNA was reverse transcribed for 90 min at 50°C with Superscript III (Gibco, Invitrogen). cDNA was amplified with 0.1 g of specific primers in a reaction mixture (PCR supermix, Invitrogen) containing Taq DNA polymerase, Tris HCl, potassium chloride, magnesium chloride, and deoxynucleoside triphosphates. Quantitative real-time PCR (qPCR) analysis was carried out using ABI step one plus. Expression for DSP, DMP1 and GAPDH transcripts were analyzed by qPCR during its linear phase. The relative gene expression level was estimated by using the 2<sup>−ΔΔC</sup><sub>T</sub> method where C<sub>T</sub> value = log-linear plot of PCR signal versus the cycle number. ΔC<sub>T</sub>= C<sub>T</sub> value of target gene-C<sub>T</sub> value of GAPDH. Results were expressed as mean ± SD of relative mRNA level compare to untreated cells for each time point. Primers were obtained from IDT DNA.</p>
+      </sec>
+      <sec id="S8">
+        <title>Effect of C-DMP1 polypeptide on dentin regeneration in a rat pulp injury model</title>
+        <p id="P21">Affi-gel agarose beads (Bio-Rad) were soaked in a solution of C-DMP1 polypeptide dissolved in phosphate-buffered saline (PBS) solution (1 μg/μl) for 2 h, and dried overnight at 37°C (<xref ref-type="bibr" rid="R34">Six <italic>et al</italic>., 2007</xref>). The beads were implanted in the pulp of the first upper jaw molar of 16 rats (6 weeks, OFA/SD, Charles River). In brief, after gingival electrosurgery, half-moon-shaped Class V 0.5 mm cavities were prepared on the mesial aspect of the first maxillary molars using a 0.2 mm diameter round bur (E0123, Dentsply Maillefer, Ballaigues, Switzerland). Pulp perforation was accomplished by pressure with the tip of a steel probe and 10 C-DMP1 soaked beads were implanted in the injury (<xref ref-type="bibr" rid="R34">Six <italic>et al.</italic>, 2007</xref>). The protocol was approved by the Animal Care Committee of the French Veterinary Services (DSV). Co-lateral molars were implanted with buffer soaked beads as a control. Cavities were filled with glass ionomer cement (GC Fuji II, GC Corporation, Tokyo, Japan). Animals were anesthetized and sacrificed at 7, 15 and 30 days after implantation by an intracardiac perfusion with paraformaldehyde/glutaraldehyde solution buffered with sodium cacodylate 0.1 M at pH 7.2–7.4. Block sections including molars were dissected from the maxilla after a few minutes and immersed in the fixative solution for 24 h at 4°C. Tissue demineralization was performed in 4.13% EDTA for approximately 8 weeks. After tissue embedding in Paraplast, 8 μm thick sections were cut and either prepared for staining with hematoxylin-eosin and trichrome stain, or prepared for immunohistochemical staining. Sections were deparaffined and rehydrated before blocking with 10% normal goat serum for 45 min at room temperature. Sections were incubated overnight at 4°C with primary antibodies against DSP and DMP1 at 1:200 dilution (<xref ref-type="bibr" rid="R12">Hao <italic>et al.</italic>, 2009</xref>). A negative control was included by using an equal concentration of rabbit pre-immune serum as primary antibody. Following incubation with primary antibody, the tissue sections were incubated with an anti-rabbit immunoglobulin (1:500) for 1 h at room temperature. The color reaction was developed using 3,3′-diaminobenzidine tetrahydrochloride (DAB, Vector Laboratories, Burlingame, CA, USA) for 1–5 min at room temperature. The tissue sections were then counterstained with hematoxylin.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S9">
+      <title>Results</title>
+      <sec id="S10">
+        <title>Native and r-DMP1 are substrates for MMP-2</title>
+        <p id="P22">Results in <xref rid="F1" ref-type="fig">Fig. 1</xref> show that recombinant r-DMP1 (96 kDa) can be cleaved by MMP-2. Proteolytic processing of the r-DMP1 at 37°C was visible by both Coomassie and ‘Stains-All’ staining of the SDS PAGE gels. While the cleavage of the 96 kDa band could be seen already at 1 h incubation with MMP-2, the decrease in intensity of this band became more apparent after 2 h incubation with the appearance of 2 main cleavage bands at approximately 50 kDa and 40 kDa, the intensity of which further increased between 3–6 h cleavage times.</p>
+        <p id="P23">In order to verify that native DMP1, when incorporated within a complex extracellular matrix, can also be cleaved by MMP-2, we treated dental tissue with this enzyme. To this end, total proteins were gently extracted from tooth germs obtained from 5-day-old mice using a Triton containing buffer. Since the C-ter was shown to contain domains likely to be biologically active, we have looked more specifically for the release of peptides enclosing the C-ter region with a specific antibody against this region. The Western blot analysis using a C-ter DMP1 antibody confirmed the cleavage of matrix-bound DMP1 by MMP-2 (<xref rid="F2" ref-type="fig">Fig. 2</xref>). In controls, (non treated H<sub>c</sub>, H<sub>MAR</sub>, H<sub>EDTA</sub>), matrix-bound DMP1 was revealed as several bands: the ~150 kDa which probably corresponds to the full-length DMP1, the fragment observed at ~57 kDa may correspond to the previously described 57 kDa C-fragment of DMP1 and a band at ~42 kDa, which was not yet reported in the literature. The ~150 kDa and the ~57 kDa isoforms were more prominent in EDTA and Marimastat extracts (H<sub>EDTA</sub> and H<sub>MAR</sub>). The fact that without MMPs inhibitors, these bands decreased while the 42 kDa band became more intense suggests that during the experimental extraction procedure DMP1 was cleaved by endogenous dental MMPs to generate a 42 kDa cleavage product and supports the idea that DMP1 may be a potential MMP substrate <italic>in vivo</italic>.</p>
+        <p id="P24">When the H<sub>c</sub> extract was treated with exogenously added MMP-2, the intensity of the ~ 150 kDa form further decreased (more obvious at 3 h). At the same time, a cleavage product at ~40 kDa became apparent in the sample treated with MMP-2. It is interesting that after 3 h this cleavage product could also be seen in the control group, albeit very faintly. This may correspond to the cleavage of DMP1 by endogenous MMP-2 already reported to be present in the extracted dentin (<xref ref-type="bibr" rid="R3">Bourd-Boittin <italic>et al.,</italic> 2005</xref>). The 42 kDa fragment was not cleaved by MMP-2 at these incubation periods.</p>
+        <p id="P25">Thus, both recombinant and matrix-bound DMP1 can be cleaved by MMP-2 to release a peptide of approximately 40 kDa in size which would therefore contain the C-ter region known to carry both the ASARM domain (residues 408 to 429) and the DNA binding site of DMP1 (residues 420 to 489). The MMP-2 cleavage products we obtained are in accord with at least two potential MMP-2 cleavage sites (<xref ref-type="bibr" rid="R38">Turk <italic>et al.</italic>, 2001</xref>) that we identified in the rat and mouse DMP1 sequences (<xref rid="T1" ref-type="table">Table 1</xref>). Based on the sequence of the protein, the C-ter peptide should contain at least one glycosylation site and several phosphorylation sites, which may account for the slightly higher molecular weight band present in the extracts from the dentin matrix (<xref rid="F2" ref-type="fig">Fig. 2</xref>) compared to that obtained from the recombinant protein (<xref rid="F1" ref-type="fig">Fig. 1</xref>).</p>
+      </sec>
+      <sec id="S11">
+        <title>C-DMP1 polypeptide promotes differentiation of DPSCs <italic>in-vitro</italic></title>
+        <p id="P26">We next examined the functional role of C- and N-ter recombinant polypeptides of DMP1 closely matching those released by MMP-2 (<xref rid="F3" ref-type="fig">Fig. 3</xref>), in dental pulp stem/progenitor cells (DPSCs) differentiation. DPSCs were cultured for 48 h in the presence of the DMP1 polypeptides and were then examined using light microscopy for changes in cell morphology. At 48 h, cells cultured with the C-DMP1 polypeptide formed cellular clusters whereas in the presence of the N-DMP1 polypeptide they retained their fibroblast-like morphology as observed with control cells (<xref rid="F4" ref-type="fig">Fig. 4</xref>). We then analyzed the mRNA levels of DMP1 and DSPP, the expression of which indicates differentiation towards the odontoblast phenotype. We observed that the C-DMP1 polypeptide regulated the expression of DMP1, as shown by the progressive increased RNA levels observed between 4 and 48 h (<xref rid="F5" ref-type="fig">Fig. 5</xref>). Similarly, C-DMP1 polypeptide also induced higher DSPP expression with time when compared with N-DMP1. Hence, the C-DMP1 polypeptide seems to activate cellular differentiation of DPSCs towards the odontoblast phenotype, inducing an organization of cells in clusters and an increased expression of odontoblast markers.</p>
+      </sec>
+      <sec id="S12">
+        <title>C-DMP1 polypeptide promotes pulp repair in an animal model of pulp injury</title>
+        <p id="P27">In order to explore the <italic>in vivo</italic> potential of C-DMP1 polypeptide to promote pulp cells differentiation, we implanted agarose beads soaked with this peptide in the injured pulp of young rats and followed the rate of healing in comparison to a control group treated with beads soaked in buffer only. In this model a reparative dentin bridge is formed to serve as a protective barrier to the dental pulp. In both control and C-DMP1 treated animals, an important inflammation process with a high cell infiltrate was observed at day 7 in the pulp horn where the pulp injury was performed (<xref rid="F6" ref-type="fig">Fig. 6A</xref>). At day 15, a continuous well-defined reparative dentin bridge was observed in the C-DMP1 treated pulps, isolating the injured cusp from the rest of the pulp. In contrast, a poorly organized reparative structure was observed in the control group at the same location. At one month, the reparative bridges expanded in both groups, but still maintained the same histological differences as those observed at 15 days (<xref rid="F6" ref-type="fig">Fig. 6</xref>).</p>
+        <p id="P28">In <xref rid="F7" ref-type="fig">Fig. 7</xref>, the reparative bridge region observed at day 15 is shown at a higher magnification. In the C-DMP1 treated group, the cells associated with the bridge and located at the opposite side of the injury, presented a polarized morphology and were organized as a palisade, with a basal location of the nucleus. These polarized cells were positively labeled for DSP and DMP1 at their secretory pole boarding the dentin bridge (<xref rid="F7" ref-type="fig">Fig. 7</xref>). The corresponding cells in the control group were not polarized and showed a faint immunostaining for either DSP or DMP1. These results demonstrate that a peptide comprising the C-ter region of DMP1 induces a rapid formation of a homogenous reparative dentin bridge in an injured pulp model and therefore improves pulp healing.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="S13">
+      <title>Discussion</title>
+      <p id="P29">The main function attributed to MMPs is the degradation of the ECM (<xref ref-type="bibr" rid="R40">Visse and Nagase, 2003</xref>). However, it is now widely acknowledged that MMPs play an important role in signaling by generating peptides with specific biological activities (<xref ref-type="bibr" rid="R27">Page-McCaw <italic>et al.,</italic> 2007</xref>). In this study, we have shown that DMP1, an important NCP of bone and dentin ECM, can be cleaved by MMP-2 to release a C-ter peptide, potentially able to promote the differentiation of dental pulp stem cells. MMP-2 was selected since it is a predominant protease in the dentin matrix (<xref ref-type="bibr" rid="R24">Mazzoni <italic>et al.</italic>, 2007</xref>) with a relatively large substrate specificity and has been previously shown to produce active peptides from matrix proteins in other systems (<xref ref-type="bibr" rid="R7">Dean <italic>et al</italic>., 2007</xref>).</p>
+      <p id="P30">We identified several potential MMP-2 cleavage sites in the DMP1 protein sequence, based on the fact that gelatinases present a deep hydrophobic S1′ pocket in their catalytic site and interact favorably with hydrophobic residues in P1′, leucine being the most favorable candidate (<xref ref-type="bibr" rid="R38">Turk <italic>et al.</italic>, 2001</xref>). Considering these potential cleavage sites and the results obtained with SDS-PAGE and Western blot analysis, it is most likely that the initial cleavage of DMP1 by MMP-2 occurs between S<sup>382</sup> and L<sup>383</sup> or E<sup>260</sup> and L<sup>261</sup>. Site-directed mutations in the recombinant protein would allow to definitively identify the cleavage site. As other potential cleavage sites in DMP1 sequence are located at the amino and the carboxyl end of DMP1, it is possible that secondary proteolysis may occur with extended incubation periods with MMP-2.</p>
+      <p id="P31">Published reports have demonstrated the presence of the 37 kDa N- and 57 kDa C-fragments of DMP1 in rat and bovine dentin matrix (<xref ref-type="bibr" rid="R17">Huang <italic>et al</italic>., 2008</xref>, <xref ref-type="bibr" rid="R21">Maciejewska <italic>et al.</italic>, 2009</xref>). These fragments were thought to be the only forms of DMP1 present in the matrix although the full-length protein was recently detected in the matrix, albeit at a low level (<xref ref-type="bibr" rid="R17">Huang <italic>et al.,</italic> 2008</xref>). In our study, we showed a high level of full-length protein in the developing tooth using a gentle extraction buffer containing Triton. It may be that the extraction techniques combining guanidine-HCl with chromatographic separation of a mineralized tissue is too harsh to recover the proteins in their native forms within the matrix, accounting for the low level of the native form of DMP1 detected in previous studies (<xref ref-type="bibr" rid="R17">Huang <italic>et al.,</italic> 2008</xref>, <xref ref-type="bibr" rid="R30">Qin <italic>et al.</italic>, 2003</xref>). The addition of the total metalloproteinase inhibitor EDTA or the more specific MMP inhibitor marimastat during the extraction of dentin appeared to protect the full-length DMP1 and the C-DMP1 57 kDa fragment from further proteolysis, as the bands were more intense in their presence. This suggests that native isoforms of DMP1 can be potentially degraded <italic>in vivo</italic> by endogenous MMPs present in the dentin matrix, generating a 42 kDa peptide which contains the biologically active C-ter region of the protein. In addition, treatment of the extracts with exogenous MMP-2 further released a 40 kda peptide. Taken together these data demonstrate that DMP1 is a substrate for MMP-2 but also for other MMPs, such as MMP-3 shown to be present within the dentin matrix (<xref ref-type="bibr" rid="R2">Boukpessi <italic>et al.</italic>, 2008</xref>).</p>
+      <p id="P32">The biological activity of the N and C fragments of DMP1 were shown to be different, based on their localization patterns (<xref ref-type="bibr" rid="R20">Lu <italic>et al.,</italic> 2009</xref>); the N-DMP1 fragment is believed to be a mineralization inhibitor as it is localized in unmineralized matrices (predentin, proliferation and hypertrophic zones in the growth plate of bone), whereas the C-DMP1 fragment was suggested to be a nucleator as it is localized within mineralized matrices (<xref ref-type="bibr" rid="R21">Maciejewska <italic>et al.</italic>, 2009</xref>). As DMP1 can be cleaved by MMP-2, it was of interest to investigate whether its cleavage products retain functional activity. In a first approach, we demonstrated that the recombinant C-DMP1 polypeptide, mimicking the limited cleavage products obtained by MMP-2, had a profound effect on the differentiation of dental pulp stem/progenitor cells, not observed with the N- polypeptide. Differentiation into putative odontoblast was revealed by the rapid organization of most of the cells into clusters and the increased expression of odontoblast differentiation markers, namely DMP1 and DSPP (<xref ref-type="bibr" rid="R12">Hao <italic>et al.,</italic> 2009</xref>, <xref ref-type="bibr" rid="R13">Hao <italic>et al.</italic>, 2004</xref>, <xref ref-type="bibr" rid="R29">Paula-Silva <italic>et al.</italic>, 2009</xref>). However, as DPSCs are a heterogeneous cell population, further investigations using sorted pulp stem cells will allow us to investigate the mechanism induced by DMP1 derived peptides on pulp cell differentiation.</p>
+      <p id="P33">It is worth noting that the DNA binding region of DMP1 on the <italic>DSPP</italic> promoter which we had previously mapped (<xref ref-type="bibr" rid="R26">Narayanan <italic>et al.,</italic> 2006</xref>) is also located within the C-ter DMP1, between residues 420 and 489. Therefore, the hypothesis that a peptide derived from a cleavage of DMP1 within the matrix, enclosing this region, could induce odontoblast differentiation by binding the <italic>DSPP</italic> promoter require further investigations. We recently demonstrated that DMP1 binding to GRP-78 receptor was an important mechanism by which DMP1 was internalized and transported to the nucleus during bone and tooth development (<xref ref-type="bibr" rid="R31">Ravindran <italic>et al.</italic>, 2008</xref>).</p>
+      <p id="P34">We previously reported that recombinant DMP1 can induce the cytodifferentiation of pulp cells after an insult or trauma of the tooth in a rat model (<xref ref-type="bibr" rid="R1">Almushayt <italic>et al.</italic>, 2006</xref>). In this study, we demonstrated that the C-DMP1 polypeptide also enhanced pulp-healing capacity when implanted in a rat pulp-injury model that mimics an injury/carious process in humans tooth. A dense and continuous reparative dentin bridge was observed within two weeks suggesting accelerated pulp healing. The cells boarding this bridge presented a palisade organization and expressed DSP and DMP1, demonstrating the ability of C-DMP1 polypeptide to promote pulp cell differentiation toward a putative odontoblastic phenotype, and supporting our <italic>in vitro</italic> data obtained with pulp stem/progenitor cells.</p>
+      <p id="P35">BMP1, or its close relative TLL1, were suggested to be responsible for the physiological processing of DMP1 producing active fragments detected in the dentin matrix (<xref ref-type="bibr" rid="R30">Qin <italic>et al.</italic>, 2003</xref>, <xref ref-type="bibr" rid="R36">Steiglitz <italic>et al.</italic>, 2004</xref>). However, the cleavage of DMP1 by exogenous MMP-2 demonstrated in this study and its protection by marimastat against degradation by endogenous MMPs, suggest that MMPs, including MMP-2, can contribute to the release of DMP1 active peptides in the ECM and is likely to play a role in a more pathological situation (<xref ref-type="bibr" rid="R4">Chaussain-Miller <italic>et al.</italic>, 2006</xref>). It is thus tempting to extrapolate that during the carious process, cleavage of DMP1 by MMPs would be activated by the acidic environment leading to the release of active fragments which could promote pulp healing. Future work, including the synthesis of DMP1 polypeptides identical to those produced by MMP-2 cleavage, will be necessary to better define the precise function of the cleaved products.</p>
+    </sec>
+    <sec sec-type="conclusions" id="S14">
+      <title>Conclusions</title>
+      <p id="P36">We demonstrated in this study that DMP1 possesses endogenous biological activity that can be released by proteolytic cleavage. MMPs, which are able to cleave DMP1 into peptides of various molecular sizes, represent good candidates for regulating the function of ECM molecules during dentin development or during pulp repair after an injury such as carious decay. In addition, <italic>in vivo</italic> confirmation of the capacity of the C-ter peptide to promote cell differentiation opens a therapeutic interest of using this peptide to regenerate dentin after an injury. Overall, these data support the current approach that ECM constitutes a tank of healing molecules.</p>
+    </sec>
+  </body>
+  <back>
+    <ack id="S15">
+      <p>We thank Dr. Bao-Shiang Lee (Laboratory of Proteomics, UIC, USA) for his assistance, Mrs Dominique Septier and Pr Jean Louis Saffar (EA 2496) for their assistance with histology and Mr Benoit Letang (EA 2496) for his assistance with animal experiments. This work was supported by National Institutes of Health Grants DE 11657 (AG) and DE 13836 (AG), and by grants from University Paris Descartes and AP-HP, France (CC).</p>
+    </ack>
+    <glossary id="GL">
+      <title>List of Abbreviations</title>
+      <def-list>
+        <def-item>
+          <term id="G1">ASARM</term>
+          <def>
+            <p>aspartic acid and serine rich domain</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G2">C-ter</term>
+          <def>
+            <p>C-terminal</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G3">DDI</term>
+          <def>
+            <p>double deionized</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G4">DMEM</term>
+          <def>
+            <p>Dulbecco’s modified Eagle’s medium</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G5">DMP1</term>
+          <def>
+            <p>dentin matrix protein 1</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G6">DPSCs</term>
+          <def>
+            <p>dental pulp stem cells</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G7">DSP</term>
+          <def>
+            <p>dentin sialoprotein</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G8">DSPP</term>
+          <def>
+            <p>dentin sialoprotein phosphoprotein</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G9">DSV</term>
+          <def>
+            <p>Animal Care Committee of the French Veterinary Services</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G10">DSPP</term>
+          <def>
+            <p>sentin sialophosphoprotein</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G11">ECM</term>
+          <def>
+            <p>extracellular matrix</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G12">FBS</term>
+          <def>
+            <p>fetal bovine serum</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G13">GAPDH</term>
+          <def>
+            <p>glyceraldehyde-3-phosphate dehydrogenase</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G14">IPTG</term>
+          <def>
+            <p>isopropyl b-D-1-thiogalactopyranoside</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G15">MMPs</term>
+          <def>
+            <p>matrix metalloproteinases</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G16">NCPs</term>
+          <def>
+            <p>noncollagenous proteins</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G17">N-ter</term>
+          <def>
+            <p>N-terminal</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G18">PCR</term>
+          <def>
+            <p>polymerase chain reaction</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G19">SDS-PAGE</term>
+          <def>
+            <p>SDS-polyacrylamide gel</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term id="G20">TIMPs</term>
+          <def>
+            <p>tissue inhibitors of metalloproteinases</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+    <ref-list>
+      <ref id="R1">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Almushayt</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Narayanan</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Zaki</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>George</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Dentin matrix protein 1 induces cytodifferentiation of dental pulp stem cells into odontoblasts</article-title>
+          <source>Gene Ther</source>
+          <volume>13</volume>
+          <fpage>611</fpage>
+          <lpage>620</lpage>
+          <pub-id pub-id-type="pmid">16319946</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R2">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boukpessi</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Menashi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Camoin</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Tencate</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Goldberg</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Chaussain-Miller</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>The effect of stromelysin-1 (MMP-3) on non-collagenous extracellular matrix proteins of demineralized dentin and the adhesive properties of restorative resins</article-title>
+          <source>Biomaterials</source>
+          <volume>29</volume>
+          <fpage>4367</fpage>
+          <lpage>4373</lpage>
+          <pub-id pub-id-type="pmid">18760468</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R3">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bourd-Boittin</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Fridman</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Fanchon</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Septier</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Goldberg</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Menashi</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Matrix metalloproteinase inhibition impairs the processing, formation and mineralization of dental tissues during mouse molar development</article-title>
+          <source>Exp Cell Res</source>
+          <volume>304</volume>
+          <fpage>493</fpage>
+          <lpage>505</lpage>
+          <pub-id pub-id-type="pmid">15748894</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R4">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chaussain-Miller</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Fioretti</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Goldberg</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Menashi</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>The role of matrix metalloproteinases (MMPs) in human caries</article-title>
+          <source>J Dent Res</source>
+          <volume>85</volume>
+          <fpage>22</fpage>
+          <lpage>32</lpage>
+          <pub-id pub-id-type="pmid">16373676</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R5">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>d’Aquino</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Graziano</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Sampaolesi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Laino</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Pirozzi</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>De Rosa</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Papaccio</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Human postnatal dental pulp cells co-differentiate into osteoblasts and endotheliocytes: a pivotal synergy leading to adult bone tissue formation</article-title>
+          <source>Cell Death Differ</source>
+          <volume>14</volume>
+          <fpage>1162</fpage>
+          <lpage>1171</lpage>
+          <pub-id pub-id-type="pmid">17347663</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R6">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dean</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Overall</surname>
+              <given-names>CM</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Proteomics discovery of metalloproteinase substrates in the cellular context by iTRAQ labeling reveals a diverse MMP-2 substrate degradome</article-title>
+          <source>Mol Cell Proteomics</source>
+          <volume>6</volume>
+          <fpage>611</fpage>
+          <lpage>623</lpage>
+          <pub-id pub-id-type="pmid">17200105</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R7">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dean</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Butler</surname>
+              <given-names>GS</given-names>
+            </name>
+            <name>
+              <surname>Hamma-Kourbali</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Delbe</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Brigstock</surname>
+              <given-names>DR</given-names>
+            </name>
+            <name>
+              <surname>Courty</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Overall</surname>
+              <given-names>CM</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Identification of candidate angiogenic inhibitors processed by matrix metalloproteinase 2 (MMP-2) in cell-based proteomic screens: disruption of vascular endothelial growth factor (VEGF)/heparin affin regulatory peptide (pleiotrophin) and VEGF/Connective tissue growth factor angiogenic inhibitory complexes by MMP-2 proteolysis</article-title>
+          <source>Mol Cell Biol</source>
+          <volume>27</volume>
+          <fpage>8454</fpage>
+          <lpage>8465</lpage>
+          <pub-id pub-id-type="pmid">17908800</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R8">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gajjeraman</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Narayanan</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Hao</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Qin</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>George</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Matrix macromolecules in hard tissues control the nucleation and hierarchical assembly of hydroxyapatite</article-title>
+          <source>J Biol Chem</source>
+          <volume>282</volume>
+          <fpage>1193</fpage>
+          <lpage>1204</lpage>
+          <pub-id pub-id-type="pmid">17052984</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R9">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Godovikova</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Ritchie</surname>
+              <given-names>HH</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Dynamic processing of recombinant dentin sialoprotein-phosphophoryn protein</article-title>
+          <source>J Biol Chem</source>
+          <volume>282</volume>
+          <fpage>31341</fpage>
+          <lpage>31348</lpage>
+          <pub-id pub-id-type="pmid">17698853</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R10">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Goldberg</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Septier</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Bourd</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Hall</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>George</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Goldberg</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Menashi</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Immunohistochemical localization of MMP-2, MMP-9, TIMP-1, and TIMP-2 in the forming rat incisor</article-title>
+          <source>Connect Tissue Res</source>
+          <volume>44</volume>
+          <fpage>143</fpage>
+          <lpage>153</lpage>
+          <pub-id pub-id-type="pmid">14504034</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R11">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gronthos</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Brahim</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Fisher</surname>
+              <given-names>LW</given-names>
+            </name>
+            <name>
+              <surname>Cherman</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Boyde</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>DenBesten</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Robey</surname>
+              <given-names>PG</given-names>
+            </name>
+            <name>
+              <surname>Shi</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2002</year>
+          <article-title>Stem cell properties of human dental pulp stem cells</article-title>
+          <source>J Dent Res</source>
+          <volume>81</volume>
+          <fpage>531</fpage>
+          <lpage>535</lpage>
+          <pub-id pub-id-type="pmid">12147742</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R12">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hao</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Ramachandran</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>George</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Temporal and spatial localization of the dentin matrix proteins during dentin biomineralization</article-title>
+          <source>J Histochem Cytochem</source>
+          <volume>57</volume>
+          <fpage>227</fpage>
+          <lpage>237</lpage>
+          <pub-id pub-id-type="pmid">19001636</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R13">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hao</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Zou</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Narayanan</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>George</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Differential expression patterns of the dentin matrix proteins during mineralized tissue formation</article-title>
+          <source>Bone</source>
+          <volume>34</volume>
+          <fpage>921</fpage>
+          <lpage>932</lpage>
+          <pub-id pub-id-type="pmid">15193538</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R14">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>He</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>George</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Dentin matrix protein 1 immobilized on type I collagen fibrils facilitates apatite deposition <italic>in vitro</italic></article-title>
+          <source>J Biol Chem</source>
+          <volume>279</volume>
+          <fpage>11649</fpage>
+          <lpage>11656</lpage>
+          <pub-id pub-id-type="pmid">14699165</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R15">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>He</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Dahl</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Veis</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>George</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Dentin matrix protein 1 initiates hydroxyapatite formation <italic>in vitro</italic></article-title>
+          <source>Connect Tissue Res</source>
+          <volume>44</volume>
+          <fpage>240</fpage>
+          <lpage>245</lpage>
+          <pub-id pub-id-type="pmid">12952204</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R16">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Huang</surname>
+              <given-names>GT</given-names>
+            </name>
+            <name>
+              <surname>Shagramanova</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Chan</surname>
+              <given-names>SW</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Formation of odontoblast-like cells from cultured human dental pulp cells on dentin <italic>in vitro</italic></article-title>
+          <source>J Endod</source>
+          <volume>32</volume>
+          <fpage>1066</fpage>
+          <lpage>1073</lpage>
+          <pub-id pub-id-type="pmid">17055908</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R17">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Huang</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Maciejewska</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Sun</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Peng</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Qin</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Lu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Bonewald</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Butler</surname>
+              <given-names>WT</given-names>
+            </name>
+            <name>
+              <surname>Feng</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Qin</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Identification of full-length dentin matrix protein 1 in dentin and bone</article-title>
+          <source>Calcif Tissue Int</source>
+          <volume>82</volume>
+          <fpage>401</fpage>
+          <lpage>410</lpage>
+          <pub-id pub-id-type="pmid">18488132</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R18">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Huang</surname>
+              <given-names>GT</given-names>
+            </name>
+            <name>
+              <surname>Gronthos</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Shi</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Mesenchymal stem cells derived from dental tissues vs. those from other sources: their biology and role in regenerative medicine</article-title>
+          <source>J Dent Res</source>
+          <volume>88</volume>
+          <fpage>792</fpage>
+          <lpage>806</lpage>
+          <pub-id pub-id-type="pmid">19767575</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R19">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Laino</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>d’Aquino</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Graziano</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Lanza</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Carinci</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Naro</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Pirozzi</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Papaccio</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>A new population of human adult dental pulp stem cells: a useful source of living autologous fibrous bone tissue (LAB)</article-title>
+          <source>J Bone Miner Res</source>
+          <volume>20</volume>
+          <fpage>1394</fpage>
+          <lpage>1402</lpage>
+          <pub-id pub-id-type="pmid">16007337</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R20">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Qin</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Xie</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Bonewald</surname>
+              <given-names>LF</given-names>
+            </name>
+            <name>
+              <surname>Feng</surname>
+              <given-names>JQ</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Studies of the DMP1 57-kDa functional domain both in vivo and in vitro</article-title>
+          <source>Cells Tissues Organs</source>
+          <volume>189</volume>
+          <fpage>175</fpage>
+          <lpage>185</lpage>
+          <pub-id pub-id-type="pmid">18728349</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R21">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Maciejewska</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Cowan</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Svoboda</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Butler</surname>
+              <given-names>WT</given-names>
+            </name>
+            <name>
+              <surname>D’Souza</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Qin</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>The NH2-terminal and COOH-terminal fragments of dentin matrix protein 1 (DMP1) localize differently in the compartments of dentin and growth plate of bone</article-title>
+          <source>J Histochem Cytochem</source>
+          <volume>57</volume>
+          <fpage>155</fpage>
+          <lpage>166</lpage>
+          <pub-id pub-id-type="pmid">18854597</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R22">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mannello</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Tonti</surname>
+              <given-names>GA</given-names>
+            </name>
+            <name>
+              <surname>Bagnara</surname>
+              <given-names>GP</given-names>
+            </name>
+            <name>
+              <surname>Papa</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Role and function of matrix metalloproteinases in the differentiation and biological characterization of mesenchymal stem cells</article-title>
+          <source>Stem Cells</source>
+          <volume>24</volume>
+          <fpage>475</fpage>
+          <lpage>481</lpage>
+          <pub-id pub-id-type="pmid">16150919</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R23">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Martin-De Las Heras</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Valenzuela</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Overall</surname>
+              <given-names>CM</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>The matrix metalloproteinase gelatinase A in human dentine</article-title>
+          <source>Arch Oral Biol</source>
+          <volume>45</volume>
+          <fpage>757</fpage>
+          <lpage>765</lpage>
+          <pub-id pub-id-type="pmid">10869489</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R24">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mazzoni</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Mannello</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Tay</surname>
+              <given-names>FR</given-names>
+            </name>
+            <name>
+              <surname>Tonti</surname>
+              <given-names>GA</given-names>
+            </name>
+            <name>
+              <surname>Papa</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Mazzotti</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Di Lenarda</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Pashley</surname>
+              <given-names>DH</given-names>
+            </name>
+            <name>
+              <surname>Breschi</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Zymographic analysis and characterization of MMP-2 and -9 forms in human sound dentin</article-title>
+          <source>J Dent Res</source>
+          <volume>86</volume>
+          <fpage>436</fpage>
+          <lpage>440</lpage>
+          <pub-id pub-id-type="pmid">17452564</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R25">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Narayanan</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Ramachandran</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Hao</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>He</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Park</surname>
+              <given-names>KW</given-names>
+            </name>
+            <name>
+              <surname>Cho</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>George</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Dual functional roles of dentin matrix protein 1. Implications in biomineralization and gene transcription by activation of intracellular Ca2+ store</article-title>
+          <source>J Biol Chem</source>
+          <volume>278</volume>
+          <fpage>17500</fpage>
+          <lpage>17508</lpage>
+          <pub-id pub-id-type="pmid">12615915</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R26">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Narayanan</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Gajjeraman</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ramachandran</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Hao</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>George</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Dentin matrix protein 1 regulates dentin sialophosphoprotein gene transcription during early odontoblast differentiation</article-title>
+          <source>J Biol Chem</source>
+          <volume>281</volume>
+          <fpage>19064</fpage>
+          <lpage>19071</lpage>
+          <pub-id pub-id-type="pmid">16679514</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R27">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Page-McCaw</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Ewald</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Werb</surname>
+              <given-names>Z</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Matrix metalloproteinases and the regulation of tissue remodelling</article-title>
+          <source>Nat Rev Mol Cell Biol</source>
+          <volume>8</volume>
+          <fpage>221</fpage>
+          <lpage>233</lpage>
+          <pub-id pub-id-type="pmid">17318226</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R28">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Palosaari</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Pennington</surname>
+              <given-names>CJ</given-names>
+            </name>
+            <name>
+              <surname>Larmas</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Edwards</surname>
+              <given-names>DR</given-names>
+            </name>
+            <name>
+              <surname>Tjaderhane</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Salo</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Expression profile of matrix metalloproteinases (MMPs) and tissue inhibitors of MMPs in mature human odontoblasts and pulp tissue</article-title>
+          <source>Eur J Oral Sci</source>
+          <volume>111</volume>
+          <fpage>117</fpage>
+          <lpage>127</lpage>
+          <pub-id pub-id-type="pmid">12648263</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R29">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Paula-Silva</surname>
+              <given-names>FW</given-names>
+            </name>
+            <name>
+              <surname>Ghosh</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Silva</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Kapila</surname>
+              <given-names>YL</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>TNF-alpha promotes an odontoblastic phenotype in dental pulp cells</article-title>
+          <source>J Dent Res</source>
+          <volume>88</volume>
+          <fpage>339</fpage>
+          <lpage>344</lpage>
+          <pub-id pub-id-type="pmid">19407154</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R30">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Qin</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Brunn</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Cook</surname>
+              <given-names>RG</given-names>
+            </name>
+            <name>
+              <surname>Orkiszewski</surname>
+              <given-names>RS</given-names>
+            </name>
+            <name>
+              <surname>Malone</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Veis</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Butler</surname>
+              <given-names>WT</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Evidence for the proteolytic processing of dentin matrix protein 1. Identification and characterization of processed fragments and cleavage sites</article-title>
+          <source>J Biol Chem</source>
+          <volume>278</volume>
+          <fpage>34700</fpage>
+          <lpage>34708</lpage>
+          <pub-id pub-id-type="pmid">12813042</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R31">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ravindran</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Narayanan</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Eapen</surname>
+              <given-names>AS</given-names>
+            </name>
+            <name>
+              <surname>Hao</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Ramachandran</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Blond</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>George</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Endoplasmic reticulum chaperone protein GRP-78 mediates endocytosis of dentin matrix protein 1</article-title>
+          <source>J Biol Chem</source>
+          <volume>283</volume>
+          <fpage>29658</fpage>
+          <lpage>29670</lpage>
+          <pub-id pub-id-type="pmid">18757373</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R32">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rowe</surname>
+              <given-names>PS</given-names>
+            </name>
+            <name>
+              <surname>de Zoysa</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Dong</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>HR</given-names>
+            </name>
+            <name>
+              <surname>White</surname>
+              <given-names>KE</given-names>
+            </name>
+            <name>
+              <surname>Econs</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Oudet</surname>
+              <given-names>CL</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>MEPE, a new gene expressed in bone marrow and tumors causing osteomalacia</article-title>
+          <source>Genomics</source>
+          <volume>67</volume>
+          <fpage>54</fpage>
+          <lpage>68</lpage>
+          <pub-id pub-id-type="pmid">10945470</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R33">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Gronthos</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Perivascular niche of postnatal mesenchymal stem cells in human bone marrow and dental pulp</article-title>
+          <source>J Bone Miner Res</source>
+          <volume>18</volume>
+          <fpage>696</fpage>
+          <lpage>704</lpage>
+          <pub-id pub-id-type="pmid">12674330</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R34">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Six</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Septier</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Chaussain-Miller</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Blacher</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>DenBesten</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Goldberg</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Dentonin, a MEPE fragment, initiates pulp-healing response to injury</article-title>
+          <source>J Dent Res</source>
+          <volume>86</volume>
+          <fpage>780</fpage>
+          <lpage>785</lpage>
+          <pub-id pub-id-type="pmid">17652210</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R35">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Srinivasan</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Gorski</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>George</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>1999</year>
+          <article-title>Recombinant expression and characterization of dentin matrix protein 1</article-title>
+          <source>Connect Tissue Res</source>
+          <volume>40</volume>
+          <fpage>251</fpage>
+          <lpage>258</lpage>
+          <pub-id pub-id-type="pmid">10757113</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R36">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Steiglitz</surname>
+              <given-names>BM</given-names>
+            </name>
+            <name>
+              <surname>Ayala</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Narayanan</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>George</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Greenspan</surname>
+              <given-names>DS</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Bone morphogenetic protein-1/Tolloid-like proteinases process dentin matrix protein-1</article-title>
+          <source>J Biol Chem</source>
+          <volume>279</volume>
+          <fpage>980</fpage>
+          <lpage>986</lpage>
+          <pub-id pub-id-type="pmid">14578349</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R37">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tjaderhane</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Larjava</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Sorsa</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Uitto</surname>
+              <given-names>VJ</given-names>
+            </name>
+            <name>
+              <surname>Larmas</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Salo</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <year>1998</year>
+          <article-title>The activation and function of host matrix metalloproteinases in dentin matrix breakdown in caries lesions</article-title>
+          <source>J Dent Res</source>
+          <volume>77</volume>
+          <fpage>1622</fpage>
+          <lpage>1629</lpage>
+          <pub-id pub-id-type="pmid">9719036</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R38">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Turk</surname>
+              <given-names>BE</given-names>
+            </name>
+            <name>
+              <surname>Huang</surname>
+              <given-names>LL</given-names>
+            </name>
+            <name>
+              <surname>Piro</surname>
+              <given-names>ET</given-names>
+            </name>
+            <name>
+              <surname>Cantley</surname>
+              <given-names>LC</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>Determination of protease cleavage site motifs using mixture-based oriented peptide libraries</article-title>
+          <source>Nat Biotechnol</source>
+          <volume>19</volume>
+          <fpage>661</fpage>
+          <lpage>667</lpage>
+          <pub-id pub-id-type="pmid">11433279</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R39">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>van Strijp</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Jansen</surname>
+              <given-names>DC</given-names>
+            </name>
+            <name>
+              <surname>DeGroot</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>ten Cate</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Everts</surname>
+              <given-names>V</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Host-derived proteinases and degradation of dentine collagen <italic>in situ</italic></article-title>
+          <source>Caries Res</source>
+          <volume>37</volume>
+          <fpage>58</fpage>
+          <lpage>65</lpage>
+          <pub-id pub-id-type="pmid">12566641</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R40">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Visse</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Nagase</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Matrix metalloproteinases and tissue inhibitors of metalloproteinases: structure, function, and biochemistry</article-title>
+          <source>Circ Res</source>
+          <volume>92</volume>
+          <fpage>827</fpage>
+          <lpage>839</lpage>
+          <pub-id pub-id-type="pmid">12730128</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R41">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yamakoshi</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Hu</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Iwata</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Kobayashi</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Fukae</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Simmer</surname>
+              <given-names>JP</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Dentin sialophosphoprotein is processed by MMP-2 and MMP-20 <italic>in vitro</italic> and <italic>in vivo</italic></article-title>
+          <source>J Biol Chem</source>
+          <volume>281</volume>
+          <fpage>38235</fpage>
+          <lpage>38243</lpage>
+          <pub-id pub-id-type="pmid">17046814</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R42">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Walboomers</surname>
+              <given-names>XF</given-names>
+            </name>
+            <name>
+              <surname>Shi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Fan</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Jansen</surname>
+              <given-names>JA</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Multilineage differentiation potential of stem cells derived from human dental pulp after cryopreservation</article-title>
+          <source>Tissue Eng</source>
+          <volume>12</volume>
+          <fpage>2813</fpage>
+          <lpage>2823</lpage>
+          <pub-id pub-id-type="pmid">17518650</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig id="F1" position="float" orientation="portrait">
+      <label>Figure 1</label>
+      <caption>
+        <p><italic>In-vitro</italic> cleavage assay A: SDS-PAGE stained with Coomassie blue (A) and Stains-All (B). APMA activated MMP-2 was added to recombinant rat DMP1 (96 kDa). Following 1 to 6 h incubation periods at 37°C, aliquots containing 20 μg were subjected to 12% SDS-PAGE analysis to reveal DMP1 peptides cleaved by MMP-2. The arrows indicate the bands that result from r-DMP1 cleavage (50 kDa and ~40 kDa).</p>
+      </caption>
+      <graphic xlink:href="nihms289304f1"/>
+    </fig>
+    <fig id="F2" position="float" orientation="portrait">
+      <label>Figure 2</label>
+      <caption>
+        <p>Identification of the cleavage products resulting from tooth germ extract incubated with MMP-2 by western blot analysis. In dentin homogenates, C-ter DMP1 antibody recognized a doublet at ~57 kDa, a band at ~42 kDa and a triplet at ~150 kDa. When Hc was treated with MMP-2, the ~150 kDa band progressively decreased between 1 and 3 h. A cleavage-product became apparent at ~40 kDa indicated by a black arrow. This ~40 kDa product was also faintly observed in control H<sub>c</sub> at 3 h. H<sub>c</sub>: dentin homogenate; H<sub>EDTA</sub>: dentin homogenate made in the presence of EDTA; H<sub>MAR:</sub> dentin homogenate made in presence of marimastat.</p>
+      </caption>
+      <graphic xlink:href="nihms289304f2"/>
+    </fig>
+    <fig id="F3" position="float" orientation="portrait">
+      <label>Figure 3</label>
+      <caption>
+        <p>Schematic representation of the recombinant N- and C- DMP1 polypeptides with respect to the possible cleavage sites of DMP1 by MMP-2. Potential cleavage sites for MMP-2 identified in the rat DMP1 sequence (<xref rid="T1" ref-type="table">Table 1</xref>) which agree with our experimental data (see <xref rid="F1" ref-type="fig">Figs. 1</xref> and <xref rid="F2" ref-type="fig">2</xref>) are indicated with arrows (E<sup>260</sup>-L<sup>261,</sup> , S<sup>380</sup>-L<sup>381</sup> , S<sup>382</sup>-L<sup>383</sup>). The recombinant N-polypeptide (residues 1 to 334) and C-polypeptide (residues 334 to 489) are represented below. A = ASARM motif; DNAb = DNA binding region; Rec = recombinant.</p>
+      </caption>
+      <graphic xlink:href="nihms289304f3"/>
+    </fig>
+    <fig id="F4" position="float" orientation="portrait">
+      <label>Figure 4</label>
+      <caption>
+        <p><italic>In-vitro</italic> functions of DMP1 polypeptides on dental pulp stem/progenitor cell (DPSC) morphology. At 4h, DPSCs displayed a fibroblastic morphology in the 3 groups. At 48 h DPSCs cultured with the C-DMP1 polypeptide organized themselves in clusters whereas cells cultured with the N-DMP1 polypeptide presented no particular organization and were similar to the control. A and B: control; C and D: cells cultured with 0.25 μg/ml N-DMP1; E and F: cells cultured with 0.25 μg/ml C-DMP1. Clusters are indicated by stars.</p>
+      </caption>
+      <graphic xlink:href="nihms289304f4"/>
+    </fig>
+    <fig id="F5" position="float" orientation="portrait">
+      <label>Figure 5</label>
+      <caption>
+        <p>Expression of DMP1 and DSPP by dental pulp stem/progenitor cells (DPSCs) treated with N- and C-DMP1 polypeptides. Treatment of DPSCs with C-DMP1 (left panel) increased the expression of DMP1; 10 fold DMP1 expression was observed at 48 h with C-DMP1 peptide, while it is &lt;1 fold at 48 h with N-DMP1. DSPP expression, which is a marker for terminally differentiated odontoblasts, showed a faint expression in control untreated cells and a slightly increased expression in cells cultured with the N-DMP1 polypeptide. In contrast, cells cultured with the C-DMP1 polypeptide strongly expressed DSPP with a signal that increased with time (right panel). GAPDH was used as a control for the cDNA loading. Results were expressed as relative mRNA level for N- and C-DMP1 treated cells compared to untreated cells at each time point.</p>
+      </caption>
+      <graphic xlink:href="nihms289304f5"/>
+    </fig>
+    <fig id="F6" position="float" orientation="portrait">
+      <label>Figure 6</label>
+      <caption>
+        <p>C-DMP1 polypeptide promotes pulp repair in an injured rat pulp model. Beads soaked with the polypeptide (right panel) or with buffer (left panel) were implanted in the injured pulp of young rats. <bold>Day7:</bold> At day 7, the pulp exposure is clearly visualized in the crown of the tooth. In both groups, an important inflammatory process is observed in the pulp horn as visualized by the high tissue cell infiltrate in this area (a, b). <bold>Day 15:</bold> A reparative dentin bridge is present in both groups at a distance from the inflammatory area, poorly organized in the control group (c) and well structured in the C-DMP1 implanted group (d). <bold>Day 30:</bold> The dentin bridges had expanded in both groups, in the control teeth still appearing as non homogenous with cell inclusion (e) but constituting an efficient protective barrier in the C-DMP1 treated pulp (f).</p>
+        <p><bold>Scale bars:</bold> 0.5 mm</p>
+        <p><bold>db</bold>: dentin bridge, *: pulp exposure</p>
+      </caption>
+      <graphic xlink:href="nihms289304f6"/>
+    </fig>
+    <fig id="F7" position="float" orientation="portrait">
+      <label>Figure 7</label>
+      <caption>
+        <p>Characterization of the reparative dentin bridge at day 15. In control teeth (left panel), no particular cell organization is observed related to the dentin bridge (a); a faint DSP (c) or DMP1 (e) labeling could be observed associated to the cells (arrow-heads). In the C-DMP1 treated pulps (right panel), cells presenting a polarized morphology (arrows) were seen organized as a palisade behind the dentin bridge, at the opposite side of the injury (b). Their hematoxylin stained nucleus was located at the basal pole of the cell body whereas the apical pole was highly labelled for DSP (d) and DMP1 (f). Formation of an odontoblast process is observed in the forming matrix as indicated by large arrows.</p>
+        <p><bold>Scale bars</bold> a – b: 100 μm; c–f: 50 μm</p>
+        <p><bold>db</bold>: dentin bridge</p>
+      </caption>
+      <graphic xlink:href="nihms289304f7"/>
+    </fig>
+    <table-wrap id="T1" position="float" orientation="landscape">
+      <label>Table 1</label>
+      <caption>
+        <p>Predicted cleavage site for MMP-2 (<xref ref-type="bibr" rid="R38">Turk <italic>et al.</italic>, 2001</xref>) mediated DMP1 cleavage (P for position in the cleavage-site motif, knowing that the cleavage occurs between P1 and P1′ residues). The number of occurrences of each residue that arise more than once is given for each position. In the protein sequence, the signal peptide appears in italics and the P1 and P1′ positions are underlined. These sites are also present within the mouse sequence (NP_058059).</p>
+      </caption>
+      <table frame="box" rules="all">
+        <thead>
+          <tr>
+            <th valign="bottom" align="left" rowspan="1" colspan="1"/>
+            <th valign="bottom" align="center" rowspan="1" colspan="1">P5</th>
+            <th valign="bottom" align="center" rowspan="1" colspan="1">P4</th>
+            <th valign="bottom" align="center" rowspan="1" colspan="1">P3</th>
+            <th valign="bottom" align="center" rowspan="1" colspan="1">
+              <bold>P2</bold>
+            </th>
+            <th valign="bottom" align="center" rowspan="1" colspan="1">P1</th>
+            <th valign="bottom" align="center" rowspan="1" colspan="1">
+              <bold>P1′</bold>
+            </th>
+            <th valign="bottom" align="center" rowspan="1" colspan="1">P2′</th>
+            <th valign="bottom" align="center" rowspan="1" colspan="1">P3′</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Rat DMP1 sequence (NP_987089)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">E<sup>59</sup>-L<sup>60</sup>GS</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.3</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">4.2</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.2</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">AG<sup>78</sup>-M<sup>79</sup>DA</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.3</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.4</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.8</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.2</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">E<sup>170</sup>-Y<sup>171</sup>R</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.3</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.9</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.5</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">E<sup>188</sup>-F<sup>189</sup></td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.3</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.8</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">G<sup>193</sup>-M<sup>194</sup>QS</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.4</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.8</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.2</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">E<sup>240</sup>-F<sup>241</sup></td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.3</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.8</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">DDRGE<sup>260</sup>-L<sup>261</sup></td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.4</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.3</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">4.2</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">S<sup>380</sup>-L<sup>381</sup></td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.9</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">4.2</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">NESLS<sup>382</sup>-L<sup>383</sup></td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.3</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.9</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">4.2</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">G<sup>401</sup>-L<sup>402</sup>QS</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.4</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">4.2</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.2</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN1">
+          <p>NP_987089.1 dentin matrix protein 1 [<italic>Rattus norvegicus</italic>]</p>
+        </fn>
+        <fn id="TFN2">
+          <p><italic>MKTVILLTFLWGLSCALP</italic>VARYQNTESESSEERTGNLAQSPPPPMANSDHTDSSESGE<underline>EL</underline>GSDRSQYRP AGGLSKSA<underline>GM</underline>DADKEEDEDDSGDDTFGDEDNGPGPEERQWGGPSRLDSDEDSADTTQSSEDSTSQ ENSAQDTPSDSKDHHSDEADSRPEAGDSTQDSESE<underline>EY</underline>RVGGGSEGESSHGDGS<underline>EF</underline>DDEGMQSDDPG STRSDRGHTRMSSAGIRSEESKGDHEPTSTQDSDDSQDVEFSSRKSFRRSRVSEEDDRG<underline>EL</underline>ADSNSR ETQSVSTEDFRSKEESRSETQEDTAETQSQEDSPEGQDPSSESSEEAGEPSQESSSESQEGVASESRGD NPDNTSQTGDQRDSESSEEDRLNTFSSSESQSTEEQGDSESNE<underline>SLSL</underline>SEESQESAQDEDSSSQE<underline>GL</underline>QS QSASRESRSQESQSEQDSRSEENRDSDSQDSSRSKEESNSTGSTSSSEEDNHPKNIEADNRKLIVDAY HNKPIGDQDDNDCQDGY</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+  </floats-group>
+</article>

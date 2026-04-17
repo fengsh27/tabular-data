@@ -1,0 +1,1791 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Archiving and Interchange DTD v2.3 20070202//EN" "archivearticle.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">8900118</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">1461</journal-id>
+      <journal-id journal-id-type="nlm-ta">Curr Opin Immunol</journal-id>
+      <journal-title>Current opinion in immunology</journal-title>
+      <issn pub-type="ppub">0952-7915</issn>
+      <issn pub-type="epub">1879-0372</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">21277760</article-id>
+      <article-id pub-id-type="pmc">3070849</article-id>
+      <article-id pub-id-type="doi">10.1016/j.coi.2011.01.001</article-id>
+      <article-id pub-id-type="manuscript">NIHMS271828</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Emergence of the PI3-kinase pathway as a central modulator of normal and aberrant B cell differentiation</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Baracho</surname>
+            <given-names>G.V.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">a</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Miletic</surname>
+            <given-names>A.V.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">a</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Omori</surname>
+            <given-names>S.A.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">a</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Cato</surname>
+            <given-names>M.H.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">a</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Rickert</surname>
+            <given-names>R.C.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">a</xref>
+          <xref ref-type="corresp" rid="CR1">*</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>a</label>Program on Inflammatory Disease Research, Infectious and Inflammatory Disease Center, Sanford-Burnham Medical Research Institute, La Jolla, California 92037, USA</aff>
+      <author-notes>
+        <corresp id="CR1">
+<label>*</label>CORRESPONDENCE: Program on Inflammatory Disease Research Infectious and Inflammatory Disease Center Sanford-Burnham Medical Research Institute 10901 N. Torrey Pines Rd, 12-2101 La Jolla, California 92037 USA (858) 646-3153 Office (858) 795-5412 <email>robert@sanfordburnham.org</email></corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>10</day>
+        <month>2</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>1</day>
+        <month>2</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>4</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>1</day>
+        <month>4</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>23</volume>
+      <issue>2</issue>
+      <fpage>178</fpage>
+      <lpage>183</lpage>
+      <permissions>
+        <license>
+          <p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P1">Phosphoinositide 3-kinase (PI3K) defines a family of lipid kinases that direct a wide range of cellular processes and cell fate decisions. Since its discovery, and that of its enzymatic antagonist PTEN, much of the focus on PI3K has been on its oncogenic potential. In recent years, studies of PI3K signaling in B lymphocytes have established the importance of this pathway in effecting B cell differentiation and associated molecular events such as V(D)J recombination and class switch recombination. Intriguing new findings also indicate that there is specificity in the PI3K pathway in B cells, including preferential expression or usage of particular PI3K isoforms and counter-regulation by the PTEN and SHIP phosphatases. The role of PI3K adaptor proteins (CD19, BCAP, TC21) has also undergone revision to reflect both shared and unique properties. The emergence of Foxo1 as a critical PI3K regulatory target for B cell differentiation has united membrane proximal regulatory events orchestrated by PI3K/PTEN/SHIP with key transcriptional targets. Insights into the regulation and impact of PI3K signaling has been brought to bear in new treatments for B cell malignancies, and will also be an important topic of consideration for B cell-dependent autoimmune diseases.</p>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S1">
+      <title>Introduction</title>
+      <p id="P2">PI3K is a lipid kinase acting on membrane phosphatidylinositol (PtdIns)(4,5)P<sub>2</sub> to produce PtdIns(3,4,5)P<sub>3</sub>. Members of the class IA PI3K subset are heterodimeric molecules consisting of a 110 kDa catalytic subunit (p110α, p110β or p110δ) encoded by individual genes (<italic>Pik3ca, Pik3cb</italic> or <italic>Pik3cd</italic>) and a smaller regulatory subunit (<xref ref-type="table" rid="T1">Table I</xref>). A single gene (<italic>Pik3r1</italic>) encodes the regulatory isoforms p50α, p55α and p85α, while the <italic>Pik3r2</italic> and <italic>Pik3r3</italic> genes encode p85β and p55γ, respectively (<xref ref-type="table" rid="T1">Table I</xref>). The regulatory subunits prevent degradation of the catalytic subunit while inhibiting its activity. Binding of the tandem SH2 domains in the regulatory subunit to tyrosine-phosphorylated YXXM motifs releases inhibition of the associated catalytic subunit. p110γ is the sole representative of the class IB enzymes and is activated by G-protein-coupled receptors (GPCR) and regulated by the p84/p101 proteins. Of note, p110α and p110β are ubiquitously expressed, while p110δ and p110γ are expressed primarily in hematopoietic cells (<xref ref-type="table" rid="T1">Table I</xref>). B cell-specific regulation of the class IA PI3Ks is also conferred by the YXXM-bearing adaptor proteins, which can be transmembrane (e.g. CD19) or cytosolic (e.g. BCAP and TC21) and show receptor-specific activation properties (<xref ref-type="fig" rid="F1">Fig. 1</xref>).</p>
+      <p id="P3">All of the catalytic subunits are capable of generating PtdIns(3,4,5)P<sub>3</sub>; however, they also possess unique functions, particularly with respect to crosstalk with the Ras pathway. Ras has been noted to bind and activate p110α,β,γ, but this attribute is not shared by p110δ [<xref ref-type="bibr" rid="R1">1</xref>]. Consistently, cells relying on p110δ for oncogenic activity are resistant to inhibitors of the MAP kinase pathway, whereas cells expressing p110α, β and γ lose transforming capacity when treated with MAP kinase inhibitors or when Ras-binding is disabled [<xref ref-type="bibr" rid="R2">2</xref>,<xref ref-type="bibr" rid="R3">3</xref>]. Moreover, loss of function due to impaired Ras-binding can be compensated for by the provision of a myristylation signal, suggesting a role for Ras in p110α,β,γ recruitment to the membrane [<xref ref-type="bibr" rid="R2">2</xref>,<xref ref-type="bibr" rid="R3">3</xref>]. Importantly, p110δ is the only isoform that exhibits some level of constitutive activity, and becomes oncogenic upon overexpression [<xref ref-type="bibr" rid="R3">3</xref>]. The MAP kinase pathway also intersects at points downstream of PtdIns(3,4,5)P<sub>3</sub> generation, as reviewed elsewhere [<xref ref-type="bibr" rid="R4">4</xref>].</p>
+      <p id="P4">Counter-regulation of PI3K activity is achieved by the inositol phosphatases phosphatase and tensin homolog <bold>(</bold>PTEN) and SH2-containing inositol phosphatase (SHIP) (<xref ref-type="fig" rid="F1">Fig. 1</xref>). PtdIns(3,4,5)P<sub>3</sub> and, perhaps, PtdIns(3,4)P<sub>2</sub> are substrates for the phosphoinositide 3-phosphatase PTEN, which has emerged as the key functional antagonist to PI3K [<xref ref-type="bibr" rid="R5">5</xref>]. As such, constitutive PTEN activity counters PI3K activity induced by receptor tyrosine kinases, GPCRs and activated Ras. PTEN functions as a tumor suppressor protein and its loss is likely to activate numerous downstream effector pathways initiated by PtdIns(3,4,5)P<sub>3</sub> binding proteins [<xref ref-type="bibr" rid="R6">6</xref>]. In mature B cells, the Ser/Thr kinases Akt and PDK1 and the tyrosine kinase BTK are likely the most critical downstream effectors for PI3K (<xref ref-type="fig" rid="F1">Fig. 1</xref>). All of these molecules possess a pleckstrin homology (PH) domain specific for PtdIns(3,4,5)P<sub>3</sub>, allowing for re-localization to the plasma membrane. Interestingly, although many proteins possess PH domains specific for PtdIns(3,4,5)P<sub>3</sub>, an additional level of regulation is likely dictated by the relative affinity for PtdIns(3,4,5)P<sub>3</sub> to confer selective recruitment of PH-domain-containing proteins based upon local PtdIns(3,4,5)P<sub>3</sub> abundance. For example, the PH domain of PDK1 has a 20-fold greater affinity for PtdIns(3,4,5)P<sub>3</sub> than the PH domain of Akt [<xref ref-type="bibr" rid="R7">7</xref>]. The inositol phosphatase SHIP appears to act primarily by dephosphorylating PtdIns(3,4,5)P<sub>3</sub> at the 5-position and perhaps to some extent on PtdIns(4,5)P<sub>2</sub>. Although PTEN and SHIP act on the same primary substrate, it is important to note that they generate distinct lipid products. In fact, a significant fraction of PtdIns(3,4)P<sub>2</sub> is thought to be produced by SHIP-mediated dephosphorylation of PtdIns(3,4,5)P<sub>3</sub> rather than PI3K phosphorylation of PtdIns(4)P. There are fewer known targets of PtdIns(3,4)P<sub>2</sub> than PtdIns(3,4,5)P<sub>3</sub>, but they include the adaptor proteins Bam32/DAPP1 and TAPP2.</p>
+    </sec>
+    <sec id="S2">
+      <title>PI3K signaling in early B cell development</title>
+      <p id="P5">PI3K signaling has been implicated in the differentiation and expansion of pro- and pre-B cells through the sequential dependency on IL-7R and pre-BCR signaling (illustrated in <xref ref-type="fig" rid="F1">Figure 1</xref>). Recent evidence indicates that p110δ and p110α are required in a largely redundant manner for the generation and propagation of pre-B cells, whereas p110β is dispensable [<xref ref-type="bibr" rid="R8">8</xref>]. From these and other studies [<xref ref-type="bibr" rid="R8">8</xref>,<xref ref-type="bibr" rid="R9">9</xref>], it is apparent that the class IB PI3K p110γ does not play an important role in early B cell development. This conclusion contrasts with studies in T cells showing a physical and functional association of p110γ with the pre-TCR and TCR [<xref ref-type="bibr" rid="R10">10</xref>,<xref ref-type="bibr" rid="R11">11</xref>]. The α subunit of the IL-7R recruits p85α/β to promote PI3K-dependent proliferation [<xref ref-type="bibr" rid="R12">12</xref>]. Consistently, in the absence of functional p110α/δ, pro-B cells exhibit impaired IL-7-dependent proliferation [<xref ref-type="bibr" rid="R8">8</xref>]. This observation suggests an important autoregulatory loop based upon our recent discovery that the transcription factor Foxo1 drives <italic>Il7ra</italic> expression [<xref ref-type="bibr" rid="R13">13</xref>]. In early pro-B cells, PI3K activity is low, allowing Foxo1 to remain in the nucleus where it functions to inhibit cell cycle progression by inducing expression of the cell cycle inhibitor p27<sup>kip1</sup> and repressing cyclin D expression [<xref ref-type="bibr" rid="R14">14</xref>-<xref ref-type="bibr" rid="R16">16</xref>]. Upon engagement of the IL-7R, PI3K-dependent Akt activation results in the phosphorylation of Foxo1, causing its nuclear exclusion and degradation and allowing cell cycle to proceed. At the same time, Foxo1 inactivation attenuates IL-7R signaling as pre-B cells transit to pre-BCR-dependent growth and proliferation.</p>
+      <p id="P6">In p110α/δ mutant mice, ckit<sup>+</sup>CD25<sup>−</sup> pre-B cells accumulate, but do not progress beyond the pre-BCR checkpoint to become CD25<sup>+</sup> resting pre-B cells [<xref ref-type="bibr" rid="R8">8</xref>]. This block was attributed to a failure of pre-B cells to downregulate <italic>Rag</italic> expression, which may be incompatible with genomic stability and allelic exclusion in this rapidly dividing cell population. However, impaired activation of PI3K by the pre-BCR would also promote Foxo1-dependent cellular quiescence. Interestingly, Foxo1 is also required for <italic>Rag</italic> expression [<xref ref-type="bibr" rid="R8">8</xref>,<xref ref-type="bibr" rid="R17">17</xref>], a process that is negatively regulated by Akt in a BLNK(SLP-65)-dependent manner (<xref ref-type="fig" rid="F1">Fig. 1</xref>) [<xref ref-type="bibr" rid="R18">18</xref>]. It is possible that signaling via the SYK/BLNK axis and CD19 have complementary functions, since CD19 promotes Akt activation and the combined loss of BLNK and CD19 results in a complete block in B cell development at the large pre-B stage [<xref ref-type="bibr" rid="R19">19</xref>]. A similar block was observed in mice lacking both CD19 and BCAP [<xref ref-type="bibr" rid="R20">20</xref>]; the latter of which requires SYK for phosphorylation in chicken DT40 cells [<xref ref-type="bibr" rid="R21">21</xref>]. Further resolution of PI3K signaling downstream of the pre-BCR was provided by recent studies of Sin1 and the Rictor-containing mTOR complex (mTORC2) [<xref ref-type="bibr" rid="R22">22</xref>]. mTORC2 function is closely aligned with cytoskeleton function, as opposed to the Raptor-containing mTORC1 complex that promotes protein synthesis [<xref ref-type="bibr" rid="R23">23</xref>]. Akt activation requires dual phosphorylation by PDK1 at Thr308 and by mTORC2 which is capable of phosphorylating Akt at Ser473 [<xref ref-type="bibr" rid="R24">24</xref>]. Consistently, in <italic>Sin1</italic><sup>−/−</sup> B cells, Akt phosphorylation at Ser473 is ablated, but not at Thr308 (<xref ref-type="fig" rid="F1">Fig. 1</xref>) [<xref ref-type="bibr" rid="R22">22</xref>]. Specifically, phosphorylation of the Akt2 isoform at Ser473 is required for Foxo1-dependent <italic>Il7ra</italic> and <italic>Rag</italic> expression [<xref ref-type="bibr" rid="R22">22</xref>]. Of additional interest, loss of Sin1 does not result in reduced survival, supporting the premise that parsing of signals downstream of PI3K results in distinct cellular outcomes. Thus, while inhibition or downregulation of the pre-BCR allows for Foxo1-mediated <italic>Rag</italic> expression, the pro-proliferation and pro-survival functions of the pre-BCR may also be partially PI3K-dependent. Following successful expression of membrane IgM, subsequent selection of immature B cells is also regulated by the PI3K pathway. PI3K signaling is attenuated via elevated PTEN expression and reduced CD19 signaling in newly formed B cells, conferring increased susceptibility to apoptosis [<xref ref-type="bibr" rid="R25">25</xref>,<xref ref-type="bibr" rid="R26">26</xref>]. In the absence of PTEN, sustained activation of the PI3K pathway results in a breach of tolerance and the generation of autoantibody-producing cells [<xref ref-type="bibr" rid="R26">26</xref>].</p>
+    </sec>
+    <sec id="S3">
+      <title>PI3K signaling in peripheral B cell function and homeostasis</title>
+      <p id="P7">Attenuated PI3K signaling via the loss of p85α/β, p110δ or adaptor proteins (CD19, BCAP and TC21) results in impaired homeostasis (<xref ref-type="fig" rid="F1">Fig. 1</xref>) [<xref ref-type="bibr" rid="R27">27</xref>-<xref ref-type="bibr" rid="R33">33</xref>]. Correspondingly, provision of a constitutively active PI3K molecule is sufficient to rescue B cells from apoptosis upon inducible deletion of the BCR [<xref ref-type="bibr" rid="R34">34</xref>]. These findings indicate that the PI3K pathway is a primary component of tonic signaling that is required for B cell maintenance. In terms of downstream pathways, recent evidence from the study of <italic>Akt1</italic><sup>−/−</sup><italic>Akt2</italic><sup>−/−</sup> mice supports a role for Akt in B cell survival [<xref ref-type="bibr" rid="R35">35</xref>]. Unexpectedly, however, this function is not via Foxo1 inactivation as Foxo1-deficient follicular B cells exhibit normal survival and show <italic>increased</italic> expression of the general Foxo target and pro-apoptotic factor Bim [<xref ref-type="bibr" rid="R13">13</xref>]. Nonetheless, B cell homeostasis is affected by the loss of Foxo1 as it regulates B cell homing to the lymph nodes via <italic>Sell</italic> (CD62L) expression [<xref ref-type="bibr" rid="R13">13</xref>]. While studies of B cell homeostasis generally focus on BCR signaling, the BAFF-R also activates PI3K to promote survival as well as priming the cells for growth and division [<xref ref-type="bibr" rid="R36">36</xref>,<xref ref-type="bibr" rid="R37">37</xref>].</p>
+      <p id="P8">The PI3K pathway also impacts peripheral B cell differentiation. Studies of impaired BTK function in <italic>xid</italic> mice bearing a mutation in the PH domain of BTK provided early evidence of the importance of the PI3K pathway in peripheral B cells [<xref ref-type="bibr" rid="R38">38</xref>,<xref ref-type="bibr" rid="R39">39</xref>]. These mice lack B-1 cells and have reduced follicular B cells and responses to TI-2 antigens. The reduction in B-1 and follicular B cells is also observed in <italic>Akt1</italic><sup>−/−</sup><italic>Akt2</italic><sup>−/−</sup> mice [<xref ref-type="bibr" rid="R35">35</xref>]. However, these animals also lack marginal zone B cells, suggesting that Akt-dependent growth and survival are required for this population, while BTK-dependent Ca<sup>++</sup> responses downstream of the BCR may be dispensable. Correspondingly, loss of PTEN or Foxo1 promotes marginal zone B cell formation and, in the former case, B-1 cell formation [<xref ref-type="bibr" rid="R1">1</xref>,<xref ref-type="bibr" rid="R40">40</xref>,<xref ref-type="bibr" rid="R41">41</xref>]. B-1 and marginal zone B cells are major contributors to antibody responses to multivalent TI-2 antigens. Initiation of these responses is thought to require surface Ig aggregation to confer heightened signaling via transphosphorylation of BCR components and associated molecules, including the adaptor proteins that recruit class IA PI3K heterodimers. By contrast, B cell differentiation induced by protein antigens of low valency require costimulation by T cell-derived factors, leading to the generation of extrafollicular antibody-producing cells or germinal center B cells. Both CD19<sup>−/−</sup> and p110δ<sup>−/−</sup> mice lack germinal centers [<xref ref-type="bibr" rid="R28">28</xref>-<xref ref-type="bibr" rid="R31">31</xref>], suggesting that recruitment of p110δ to CD19 is required for BCR-dependent selection in the germinal center. Interestingly, however, a recent report assigns the p110δ requirement in the germinal center to T<sub>FH</sub> cells and not to B cells [<xref ref-type="bibr" rid="R42">42</xref>]. Thus, the noted ability of p110α (but not p110β) to bind CD19 may compensate for the loss of p110δ [<xref ref-type="bibr" rid="R43">43</xref>]. Moreover, our finding that the PI3K/Foxo1 axis regulates <italic>Aicda</italic> expression supports the view that PI3K signaling may need to be attenuated during germinal center B cell differentiation to allow for AID-dependent <italic>V</italic> gene hypermutation and class switch recombination [<xref ref-type="bibr" rid="R13">13</xref>,<xref ref-type="bibr" rid="R44">44</xref>]. The importance of the PI3K pathway post-germinal center in the propagation of memory B cells remains to be explored.</p>
+      <p id="P9">The PI3K pathway is of primary interest in cancer where a high degree of oncogenic mutations has been noted [<xref ref-type="bibr" rid="R45">45</xref>]. Moreover, inactivation of PTEN is second only to p53 in causal associations with a spectrum of malignancies. Thus, it came as some surprise that PTEN-deficient B cells are not prone to transformation. We recently reported that the absence of B cell tumors in PTEN-deficient mice is due to the coordinate role of SHIP as a tumor suppressor [<xref ref-type="bibr" rid="R46">46</xref>]. Hence, B cells lacking PTEN or SHIP do not undergo transformation, whereas the loss of PTEN and SHIP results in an aggressive B lymphoma at high penetrance. Given that SHIP function appears to be restricted to dampening BCR signaling, these findings support the notion that tonic signaling via BCR-dependent PI3K activation is an important determinant of transformation. Consistent with this notion, an inhibitor of BTK has shown efficacy in a spontaneous canine lymphoma model and is currently in phase I clinical trials in patients with B cell malignancies [<xref ref-type="bibr" rid="R47">47</xref>]. The unique constitutive activity of p110δ combined with its hematopoietically-restricted expression pattern also makes it an attractive therapeutic target. Indeed, <italic>in vitro</italic> studies have revealed broad efficacy of a p110δ-specific inhibitor in promoting the apoptosis of B cell leukemia and lymphoma lines and is currently under clinical evaluation for the treatment of several B cell malignancies [<xref ref-type="bibr" rid="R48">48</xref>]. Some caution may be exerted here, and for other applications of PI3K inhibitors, as it has been documented by us and others that inhibition of PI3K promotes hyper-class switching, which may cause untoward side effects such as hypersensitivity due to aberrant IgE production [<xref ref-type="bibr" rid="R44">44</xref>,<xref ref-type="bibr" rid="R49">49</xref>,<xref ref-type="bibr" rid="R50">50</xref>].</p>
+    </sec>
+    <sec sec-type="conclusions" id="S4">
+      <title>Conclusions</title>
+      <p id="P10">The PI3K pathway has come to the forefront as a critical signaling circuit in B cell differentiation and function. Genetic studies in mice have revealed both common and unique utilization of the PI3K/Akt/Foxo axis. In addition, elucidation of isoform-specific functions of PI3K has provided insight into regulatory aspects of PI3K activity as well as opportunities for therapeutic intervention. While our understanding of PI3K signaling downstream of the BCR is fairly advanced, a challenge for the future is to understand the degree to which other receptor systems utilize this pathway and how these multiple signals are integrated in the physiologic setting.</p>
+    </sec>
+  </body>
+  <back>
+    <ack id="S5">
+      <title>Acknowledgements</title>
+      <p>This work was supported by the National Institutes of Health (AI041649, AI059447 and HL088686 to R.C.R.).</p>
+    </ack>
+    <fn-group>
+      <fn id="FN1">
+        <p content-type="publisher-disclaimer" id="P11">This is a PDF file of an unedited manuscript that has been accepted for publication. As a service to our customers we are providing this early version of the manuscript. The manuscript will undergo copyediting, typesetting, and review of the resulting proof before it is published in its final citable form. Please note that during the production process errors may be discovered which could affect the content, and all legal disclaimers that apply to the journal pertain.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="R1">
+        <label>*1</label>
+        <note>
+<p><citation citation-type="journal" id="N0x206f7f80N0x216a6a00"><person-group person-group-type="author"><name><surname>Chen</surname><given-names>J</given-names></name><name><surname>Limon</surname><given-names>JJ</given-names></name><name><surname>Blanc</surname><given-names>C</given-names></name><name><surname>Peng</surname><given-names>SL</given-names></name><name><surname>Fruman</surname><given-names>DA</given-names></name></person-group><article-title>Foxo1 regulates marginal zone B-cell development</article-title><source>European Journal of Immunology</source><year>2010</year><volume>40</volume><fpage>1890</fpage><lpage>1896</lpage><pub-id pub-id-type="pmid">20449867</pub-id></citation> The authors show that loss of Foxo1 leads to enhanced marginal zone B cell formation and recovery of this population in CD19<sup>−/−</sup> mice, supporting the view that inactivation of Foxo1 is a critical component of CD19-dependent PI3K activation in this B cell subset.</p>
+</note>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Denley</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Kang</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Karst</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Vogt</surname>
+              <given-names>PK</given-names>
+            </name>
+          </person-group>
+          <article-title>Oncogenic signaling of class I PI3K isoforms</article-title>
+          <source>Oncogene</source>
+          <year>2007</year>
+          <volume>27</volume>
+          <fpage>2561</fpage>
+          <lpage>2574</lpage>
+          <pub-id pub-id-type="pmid">17998941</pub-id>
+        </citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kang</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Denley</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Vanhaesebroeck</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Vogt</surname>
+              <given-names>PK</given-names>
+            </name>
+          </person-group>
+          <article-title>Oncogenic transformation induced by the p110beta, -gamma, and -delta isoforms of class I phosphoinositide 3-kinase</article-title>
+          <source>Proceedings of the National Academy of Sciences of the United States of America</source>
+          <year>2006</year>
+          <volume>103</volume>
+          <fpage>1289</fpage>
+          <lpage>1294</lpage>
+          <pub-id pub-id-type="pmid">16432180</pub-id>
+        </citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Carracedo</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Pandolfi</surname>
+              <given-names>PP</given-names>
+            </name>
+          </person-group>
+          <article-title>The PTEN-PI3K pathway: of feedbacks and cross-talks</article-title>
+          <source>Oncogene</source>
+          <year>2008</year>
+          <volume>27</volume>
+          <fpage>5527</fpage>
+          <lpage>5541</lpage>
+          <pub-id pub-id-type="pmid">18794886</pub-id>
+        </citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Leslie</surname>
+              <given-names>NR</given-names>
+            </name>
+            <name>
+              <surname>Downes</surname>
+              <given-names>CP</given-names>
+            </name>
+          </person-group>
+          <article-title>PTEN: The down side of PI 3-kinase signalling</article-title>
+          <source>Cell Signal</source>
+          <year>2002</year>
+          <volume>14</volume>
+          <fpage>285</fpage>
+          <lpage>295</lpage>
+          <pub-id pub-id-type="pmid">11858936</pub-id>
+        </citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Salmena</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Carracedo</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Pandolfi</surname>
+              <given-names>PP</given-names>
+            </name>
+          </person-group>
+          <article-title>Tenets of PTEN Tumor Suppression</article-title>
+          <source>Cell</source>
+          <year>2008</year>
+          <volume>133</volume>
+          <fpage>403</fpage>
+          <lpage>414</lpage>
+          <pub-id pub-id-type="pmid">18455982</pub-id>
+        </citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Currie</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Walker</surname>
+              <given-names>KS</given-names>
+            </name>
+            <name>
+              <surname>Gray</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Deak</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Casamayor</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Downes</surname>
+              <given-names>CP</given-names>
+            </name>
+            <name>
+              <surname>Cohen</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Alessi</surname>
+              <given-names>DR</given-names>
+            </name>
+            <name>
+              <surname>Lucocq</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Role of phosphatidylinositol 3,4,5-trisphosphate in regulating the activity and localization of 3-phosphoinositide-dependent protein kinase-1</article-title>
+          <source>Biochem J</source>
+          <year>1999</year>
+          <volume>337</volume>
+          <issue>Pt 3</issue>
+          <fpage>575</fpage>
+          <lpage>583</lpage>
+          <pub-id pub-id-type="pmid">9895304</pub-id>
+        </citation>
+      </ref>
+      <ref id="R8">
+        <label>**8</label>
+        <note>
+<p><citation citation-type="journal" id="N0x206f7f80N0x216a7cc0"><person-group person-group-type="author"><name><surname>Ramadani</surname><given-names>F</given-names></name><name><surname>Bolland</surname><given-names>DJ</given-names></name><name><surname>Garcon</surname><given-names>F</given-names></name><name><surname>Emery</surname><given-names>JL</given-names></name><name><surname>Vanhaesebroeck</surname><given-names>B</given-names></name><name><surname>Corcoran</surname><given-names>AE</given-names></name><name><surname>Okkenhaug</surname><given-names>K</given-names></name></person-group><article-title>The PI3K Isoforms p110{alpha} and p110{delta} Are Essential for Pre-B Cell Receptor Signaling and B Cell Development</article-title><source>Sci. Signal</source><year>2010</year><volume>3</volume><fpage>ra60</fpage><pub-id pub-id-type="pmid">20699475</pub-id></citation> The authors delineate the importance of p110alpha and p110delta in early B cell development (and the dispensable roles of p110beta and p110gamma), focusing on the role of PI3K in the suppression of Rag expression.</p>
+</note>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Beer-Hammer</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Zebedin</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>von Holleben</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Alferink</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Reis</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Dresing</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Degrandi</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Scheu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Hirsch</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Sexl</surname>
+              <given-names>V</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The catalytic PI3K isoforms p110{gamma} and p110{delta} contribute to B cell development and maintenance, transformation, and proliferation</article-title>
+          <source>J Leukoc Biol</source>
+          <year>2010</year>
+          <volume>87</volume>
+          <fpage>1083</fpage>
+          <lpage>1095</lpage>
+          <pub-id pub-id-type="pmid">20200404</pub-id>
+        </citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Alcazar</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Marques</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kumar</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Hirsch</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Wymann</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Carrera</surname>
+              <given-names>AC</given-names>
+            </name>
+            <name>
+              <surname>Barber</surname>
+              <given-names>DF</given-names>
+            </name>
+          </person-group>
+          <article-title>Phosphoinositide 3 kinase {gamma} participates in T cell receptor induced T cell activation</article-title>
+          <source>The Journal of Experimental Medicine</source>
+          <year>2007</year>
+          <volume>204</volume>
+          <fpage>2977</fpage>
+          <lpage>2987</lpage>
+          <pub-id pub-id-type="pmid">17998387</pub-id>
+        </citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Webb</surname>
+              <given-names>LMC</given-names>
+            </name>
+            <name>
+              <surname>Vigorito</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Wymann</surname>
+              <given-names>MP</given-names>
+            </name>
+            <name>
+              <surname>Hirsch</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Turner</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Cutting Edge: T Cell Development Requires the Combined Activities of the p110{gamma} and p110{delta} Catalytic Isoforms of Phosphatidylinositol 3-Kinase</article-title>
+          <source>J Immunol</source>
+          <year>2005</year>
+          <volume>175</volume>
+          <fpage>2783</fpage>
+          <lpage>2787</lpage>
+          <pub-id pub-id-type="pmid">16116162</pub-id>
+        </citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Corcoran</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Smart</surname>
+              <given-names>FM</given-names>
+            </name>
+            <name>
+              <surname>Cowling</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Crompton</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Owen</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Venkitaraman</surname>
+              <given-names>AR</given-names>
+            </name>
+          </person-group>
+          <article-title>The interleukin-7 receptor alpha chain transmits distinct signals for proliferation and differentiation during B lymphopoiesis</article-title>
+          <source>Embo J</source>
+          <year>1996</year>
+          <volume>15</volume>
+          <fpage>1924</fpage>
+          <lpage>1932</lpage>
+          <pub-id pub-id-type="pmid">8617239</pub-id>
+        </citation>
+      </ref>
+      <ref id="R13">
+        <label>**13</label>
+        <note>
+<p><citation citation-type="journal" id="N0x206f7f80N0x2140dab0"><person-group person-group-type="author"><name><surname>Dengler</surname><given-names>HS</given-names></name><name><surname>Baracho</surname><given-names>GV</given-names></name><name><surname>Omori</surname><given-names>SA</given-names></name><name><surname>Bruckner</surname><given-names>S</given-names></name><name><surname>Arden</surname><given-names>KC</given-names></name><name><surname>Castrillon</surname><given-names>DH</given-names></name><name><surname>DePinho</surname><given-names>RA</given-names></name><name><surname>Rickert</surname><given-names>RC</given-names></name></person-group><article-title>Distinct functions for the transcription factor Foxo1 at various stages of B cell differentiation</article-title><source>Nat Immunol</source><year>2008</year><volume>9</volume><fpage>1388</fpage><lpage>1398</lpage><pub-id pub-id-type="pmid">18978794</pub-id></citation> Authors demonstrate that Foxo1 is required for early B cell development and peripheral B cell homing and differentiation via the regulation of IL-7Ralpha, L-selection and AID expression. Together with references #17 and #18, define a critical role for Foxo1 in promoting Rag expression.</p>
+</note>
+      </ref>
+      <ref id="R14">
+        <label>14</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ramaswamy</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Nakamura</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Sansal</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Bergeron</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Sellers</surname>
+              <given-names>WR</given-names>
+            </name>
+          </person-group>
+          <article-title>A novel mechanism of gene regulation and tumor suppression by the transcription factor FKHR</article-title>
+          <source>Cancer Cell</source>
+          <year>2002</year>
+          <volume>2</volume>
+          <fpage>81</fpage>
+          <lpage>91</lpage>
+          <pub-id pub-id-type="pmid">12150827</pub-id>
+        </citation>
+      </ref>
+      <ref id="R15">
+        <label>15</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schmidt</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>de Mattos</surname>
+              <given-names>S Fernandez</given-names>
+            </name>
+            <name>
+              <surname>van der Horst</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Klompmaker</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Kops</surname>
+              <given-names>GJPL</given-names>
+            </name>
+            <name>
+              <surname>Lam</surname>
+              <given-names>EW-F</given-names>
+            </name>
+            <name>
+              <surname>Burgering</surname>
+              <given-names>BMT</given-names>
+            </name>
+            <name>
+              <surname>Medema</surname>
+              <given-names>RH</given-names>
+            </name>
+          </person-group>
+          <article-title>Cell Cycle Inhibition by FoxO Forkhead Transcription Factors Involves Downregulation of Cyclin D</article-title>
+          <source>Mol. Cell. Biol</source>
+          <year>2002</year>
+          <volume>22</volume>
+          <fpage>7842</fpage>
+          <lpage>7852</lpage>
+          <pub-id pub-id-type="pmid">12391153</pub-id>
+        </citation>
+      </ref>
+      <ref id="R16">
+        <label>16</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Medema</surname>
+              <given-names>RH</given-names>
+            </name>
+            <name>
+              <surname>Kops</surname>
+              <given-names>GJ</given-names>
+            </name>
+            <name>
+              <surname>Bos</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Burgering</surname>
+              <given-names>BM</given-names>
+            </name>
+          </person-group>
+          <article-title>AFX-like Forkhead transcription factors mediate cell-cycle regulation by Ras and PKB through p27kip1</article-title>
+          <source>Nature</source>
+          <year>2000</year>
+          <volume>404</volume>
+          <fpage>782</fpage>
+          <lpage>787</lpage>
+          <pub-id pub-id-type="pmid">10783894</pub-id>
+        </citation>
+      </ref>
+      <ref id="R17">
+        <label>**17</label>
+        <note>
+<p><citation citation-type="journal" id="N0x206f7f80N0x2140e890"><person-group person-group-type="author"><name><surname>Amin</surname><given-names>RH</given-names></name><name><surname>Schlissel</surname><given-names>MS</given-names></name></person-group><article-title>Foxo1 directly regulates the transcription of recombination-activating genes during B cell development</article-title><source>Nat Immunol</source><year>2008</year><volume>9</volume><fpage>613</fpage><lpage>622</lpage><pub-id pub-id-type="pmid">18469817</pub-id></citation> Authors provide the first evidence that Foxo1 exerts a nonredundant role in the regulation of <italic>Rag</italic> transcription (see also #14 and #18).</p>
+</note>
+      </ref>
+      <ref id="R18">
+        <label>**18</label>
+        <note>
+<p><citation citation-type="journal" id="N0x206f7f80N0x2140ea70"><person-group person-group-type="author"><name><surname>Herzog</surname><given-names>S</given-names></name><name><surname>Hug</surname><given-names>E</given-names></name><name><surname>Meixlsperger</surname><given-names>S</given-names></name><name><surname>Paik</surname><given-names>JH</given-names></name><name><surname>DePinho</surname><given-names>RA</given-names></name><name><surname>Reth</surname><given-names>M</given-names></name><name><surname>Jumaa</surname><given-names>H</given-names></name></person-group><article-title>SLP-65 regulates immunoglobulin light chain gene recombination through the PI(3)K-PKB-Foxo pathway</article-title><source>Nat Immunol</source><year>2008</year><volume>9</volume><fpage>623</fpage><lpage>631</lpage><pub-id pub-id-type="pmid">18488031</pub-id></citation> Authors demonstrate that SLP-65 (BLNK) negatively regulates PKB (Akt) to promote Foxo activity and Ig light chain recombination (see also #14 and #17).</p>
+</note>
+      </ref>
+      <ref id="R19">
+        <label>19</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hayashi</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Yamamoto</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Nojima</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Goitsuka</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Kitamura</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Distinct signaling requirements for Dmu selection, IgH allelic exclusion, pre-B cell transition, and tumor suppression in B cell progenitors</article-title>
+          <source>Immunity</source>
+          <year>2003</year>
+          <volume>18</volume>
+          <fpage>825</fpage>
+          <lpage>836</lpage>
+          <pub-id pub-id-type="pmid">12818163</pub-id>
+        </citation>
+      </ref>
+      <ref id="R20">
+        <label>*20</label>
+        <note>
+<p><citation citation-type="journal" id="N0x206f7f80N0x2140f130"><person-group person-group-type="author"><name><surname>Aiba</surname><given-names>Y</given-names></name><name><surname>Kameyama</surname><given-names>M</given-names></name><name><surname>Yamazaki</surname><given-names>T</given-names></name><name><surname>Tedder</surname><given-names>TF</given-names></name><name><surname>Kurosaki</surname><given-names>T</given-names></name></person-group><article-title>Regulation of B-cell development by BCAP and CD19 through their binding to phosphoinositide 3-kinase</article-title><source>Blood</source><year>2008</year><volume>111</volume><fpage>1497</fpage><lpage>1503</lpage><pub-id pub-id-type="pmid">18025150</pub-id></citation> Authors show that CD19 and BCAP act synergistically to promote PI3K activation. Loss of CD19 and BCAP results in a strong block in the maturation and survival of newly formed B cells.</p>
+</note>
+      </ref>
+      <ref id="R21">
+        <label>21</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Okada</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Maeda</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Iwamatsu</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Gotoh</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Kurosaki</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>BCAP: the tyrosine kinase substrate that connects B cell receptor to phosphoinositide 3-kinase activation</article-title>
+          <source>Immunity</source>
+          <year>2000</year>
+          <volume>13</volume>
+          <fpage>817</fpage>
+          <lpage>827</lpage>
+          <pub-id pub-id-type="pmid">11163197</pub-id>
+        </citation>
+      </ref>
+      <ref id="R22">
+        <label>*22</label>
+        <note>
+<p><citation citation-type="journal" id="N0x206f7f80N0x2140f730"><person-group person-group-type="author"><name><surname>Lazorchak</surname><given-names>AS</given-names></name><name><surname>Liu</surname><given-names>D</given-names></name><name><surname>Facchinetti</surname><given-names>V</given-names></name><name><surname>Di Lorenzo</surname><given-names>A</given-names></name><name><surname>Sessa</surname><given-names>WC</given-names></name><name><surname>Schatz</surname><given-names>DG</given-names></name><name><surname>Su</surname><given-names>B</given-names></name></person-group><article-title>Sin1-mTORC2 Suppresses rag and il7r Gene Expression through Akt2 in B Cells</article-title><source>Molecular Cell</source><year>2010</year><volume>39</volume><fpage>433</fpage><lpage>443</lpage><pub-id pub-id-type="pmid">20705244</pub-id></citation> Authors provide the first insight into mTOR regulation of early B cell development via the Rictor/Sin1-containing mTORC2 complex specifically acting on Akt2.</p>
+</note>
+      </ref>
+      <ref id="R23">
+        <label>23</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sparks</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>Guertin</surname>
+              <given-names>DA</given-names>
+            </name>
+          </person-group>
+          <article-title>Targeting mTOR: prospects for mTOR complex 2 inhibitors in cancer therapy</article-title>
+          <source>Oncogene</source>
+          <year>2010</year>
+          <volume>29</volume>
+          <fpage>3733</fpage>
+          <lpage>3744</lpage>
+          <pub-id pub-id-type="pmid">20418915</pub-id>
+        </citation>
+      </ref>
+      <ref id="R24">
+        <label>24</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sarbassov</surname>
+              <given-names>DD</given-names>
+            </name>
+            <name>
+              <surname>Guertin</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Ali</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Sabatini</surname>
+              <given-names>DM</given-names>
+            </name>
+          </person-group>
+          <article-title>Phosphorylation and Regulation of Akt/PKB by the Rictor-mTOR Complex</article-title>
+          <source>Science</source>
+          <year>2005</year>
+          <volume>307</volume>
+          <fpage>1098</fpage>
+          <lpage>1101</lpage>
+          <pub-id pub-id-type="pmid">15718470</pub-id>
+        </citation>
+      </ref>
+      <ref id="R25">
+        <label>*25</label>
+        <note>
+<p><citation citation-type="journal" id="N0x206f7f80N0x215b9f70"><person-group person-group-type="author"><name><surname>Cheng</surname><given-names>S</given-names></name><name><surname>Hsia</surname><given-names>CY</given-names></name><name><surname>Feng</surname><given-names>B</given-names></name><name><surname>Liou</surname><given-names>M-L</given-names></name><name><surname>Fang</surname><given-names>X</given-names></name><name><surname>Pandolfi</surname><given-names>PP</given-names></name><name><surname>Liou</surname><given-names>H-C</given-names></name></person-group><article-title>BCR-mediated apoptosis associated with negative selection of immature B cells is selectively dependent on Pten</article-title><source>Cell Res</source><year>2009</year><volume>19</volume><fpage>196</fpage><lpage>207</lpage><pub-id pub-id-type="pmid">18781138</pub-id></citation> Authors show that PTEN expression is elevated in immature B cells, promoting susceptibility to apoptosis.</p>
+</note>
+      </ref>
+      <ref id="R26">
+        <label>**26</label>
+        <note>
+<p><citation citation-type="journal" id="N0x206f7f80N0x215ba330"><person-group person-group-type="author"><name><surname>Browne</surname><given-names>CD</given-names></name><name><surname>Del Nagro</surname><given-names>CJ</given-names></name><name><surname>Cato</surname><given-names>MH</given-names></name><name><surname>Dengler</surname><given-names>HS</given-names></name><name><surname>Rickert</surname><given-names>RC</given-names></name></person-group><article-title>Suppression of Phosphatidylinositol 3,4,5-Trisphosphate Production Is a Key Determinant of B Cell Anergy</article-title><source>Immunity</source><year>2009</year><volume>31</volume><fpage>749</fpage><lpage>760</lpage><pub-id pub-id-type="pmid">19896393</pub-id></citation> Authors show that PtdIns(3,4,5)P<sub>3</sub> production in anergic B cells is reduced due to attenuated CD19 signalling and elevated PTEN expression. The presence of sustained and elevated PtdIns(3,4,5)P<sub>3</sub> breaks tolerance, resulting in the generation of autoantibody-producing cells.</p>
+</note>
+      </ref>
+      <ref id="R27">
+        <label>27</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Oak</surname>
+              <given-names>JS</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Peralta</surname>
+              <given-names>RQ</given-names>
+            </name>
+            <name>
+              <surname>Deane</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Fruman</surname>
+              <given-names>DA</given-names>
+            </name>
+          </person-group>
+          <article-title>The p85beta regulatory subunit of phosphoinositide 3-kinase has unique and redundant functions in B cells</article-title>
+          <source>Autoimmunity</source>
+          <year>2009</year>
+          <volume>42</volume>
+          <fpage>447</fpage>
+          <lpage>458</lpage>
+          <pub-id pub-id-type="pmid">19811262</pub-id>
+        </citation>
+      </ref>
+      <ref id="R28">
+        <label>28</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rickert</surname>
+              <given-names>RC</given-names>
+            </name>
+            <name>
+              <surname>Rajewsky</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Roes</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Impairment of T-cell-dependent B-cell responses and B-1 cell development in CD19-deficient mice</article-title>
+          <source>Nature</source>
+          <year>1995</year>
+          <volume>376</volume>
+          <fpage>352</fpage>
+          <lpage>355</lpage>
+          <pub-id pub-id-type="pmid">7543183</pub-id>
+        </citation>
+      </ref>
+      <ref id="R29">
+        <label>29</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Engel</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>LJ</given-names>
+            </name>
+            <name>
+              <surname>Ord</surname>
+              <given-names>DC</given-names>
+            </name>
+            <name>
+              <surname>Sato</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Koller</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Tedder</surname>
+              <given-names>TF</given-names>
+            </name>
+          </person-group>
+          <article-title>Abnormal B lymphocyte development, activation, and differentiation in mice that lack or overexpress the CD19 signal transduction molecule</article-title>
+          <source>Immunity</source>
+          <year>1995</year>
+          <volume>3</volume>
+          <fpage>39</fpage>
+          <lpage>50</lpage>
+          <pub-id pub-id-type="pmid">7542548</pub-id>
+        </citation>
+      </ref>
+      <ref id="R30">
+        <label>30</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Okkenhaug</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Bilancio</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Farjot</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Priddle</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Sancho</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Peskett</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Pearce</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Meek</surname>
+              <given-names>SE</given-names>
+            </name>
+            <name>
+              <surname>Salpekar</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Waterfield</surname>
+              <given-names>MD</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Impaired B and T cell antigen receptor signaling in p110delta PI 3-kinase mutant mice</article-title>
+          <source>Science</source>
+          <year>2002</year>
+          <volume>297</volume>
+          <fpage>1031</fpage>
+          <lpage>1034</lpage>
+          <pub-id pub-id-type="pmid">12130661</pub-id>
+        </citation>
+      </ref>
+      <ref id="R31">
+        <label>31</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Clayton</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Bardi</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Bell</surname>
+              <given-names>SE</given-names>
+            </name>
+            <name>
+              <surname>Chantry</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Downes</surname>
+              <given-names>CP</given-names>
+            </name>
+            <name>
+              <surname>Gray</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Humphries</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Rawlings</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Reynolds</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Vigorito</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A Crucial Role for the p110{delta} Subunit of Phosphatidylinositol 3-Kinase in B Cell Development and Activation</article-title>
+          <source>J. Exp. Med</source>
+          <year>2002</year>
+          <volume>196</volume>
+          <fpage>753</fpage>
+          <lpage>763</lpage>
+          <pub-id pub-id-type="pmid">12235209</pub-id>
+        </citation>
+      </ref>
+      <ref id="R32">
+        <label>32</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yamazaki</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Takeda</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Gotoh</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Takeshima</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Akira</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kurosaki</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Essential immunoregulatory role for BCAP in B cell development and function</article-title>
+          <source>J Exp Med</source>
+          <year>2002</year>
+          <volume>195</volume>
+          <fpage>535</fpage>
+          <lpage>545</lpage>
+          <pub-id pub-id-type="pmid">11877477</pub-id>
+        </citation>
+      </ref>
+      <ref id="R33">
+        <label>*33</label>
+        <note>
+<p><citation citation-type="journal" id="N0x206f7f80N0x215bbbf0"><person-group person-group-type="author"><name><surname>Delgado</surname><given-names>P</given-names></name><name><surname>Cubelos</surname><given-names>B</given-names></name><name><surname>Calleja</surname><given-names>E</given-names></name><name><surname>Martinez-Martin</surname><given-names>N</given-names></name><name><surname>Cipres</surname><given-names>A</given-names></name><name><surname>Merida</surname><given-names>I</given-names></name><name><surname>Bellas</surname><given-names>C</given-names></name><name><surname>Bustelo</surname><given-names>XR</given-names></name><name><surname>Alarcon</surname><given-names>B</given-names></name></person-group><article-title>Essential function for the GTPase TC21 in homeostatic antigen receptor signaling</article-title><source>Nat Immunol</source><year>2009</year><volume>10</volume><fpage>880</fpage><lpage>888</lpage><pub-id pub-id-type="pmid">19561613</pub-id></citation> Authors show that TC21 promotes tonic signaling via the recrutment of PI3K p110delta.</p>
+</note>
+      </ref>
+      <ref id="R34">
+        <label>**34</label>
+        <note>
+<p><citation citation-type="journal" id="N0x206f7f80N0x2156b810"><person-group person-group-type="author"><name><surname>Srinivasan</surname><given-names>L</given-names></name><name><surname>Sasaki</surname><given-names>Y</given-names></name><name><surname>Calado</surname><given-names>DP</given-names></name><name><surname>Zhang</surname><given-names>B</given-names></name><name><surname>Paik</surname><given-names>JH</given-names></name><name><surname>DePinho</surname><given-names>RA</given-names></name><name><surname>Kutok</surname><given-names>JL</given-names></name><name><surname>Kearney</surname><given-names>JF</given-names></name><name><surname>Otipoby</surname><given-names>KL</given-names></name><name><surname>Rajewsky</surname><given-names>K</given-names></name></person-group><article-title>PI3 kinase signals BCR-dependent mature B cell survival</article-title><source>Cell</source><year>2009</year><volume>139</volume><fpage>573</fpage><lpage>586</lpage><pub-id pub-id-type="pmid">19879843</pub-id></citation> Authors show that constitutively active PI3K can rescue B cells from apoptosis upon ablation of BCR expression. Interestingly, this property is not shared by constitutive activation of the classical NF-kB pathway.</p>
+</note>
+      </ref>
+      <ref id="R35">
+        <label>*35</label>
+        <note>
+<p><citation citation-type="journal" id="N0x206f7f80N0x2156bcf0"><person-group person-group-type="author"><name><surname>Calamito</surname><given-names>M</given-names></name><name><surname>Juntilla</surname><given-names>MM</given-names></name><name><surname>Thomas</surname><given-names>M</given-names></name><name><surname>Northrup</surname><given-names>DL</given-names></name><name><surname>Rathmell</surname><given-names>J</given-names></name><name><surname>Birnbaum</surname><given-names>MJ</given-names></name><name><surname>Koretzky</surname><given-names>G</given-names></name><name><surname>Allman</surname><given-names>D</given-names></name></person-group><article-title>Akt1 and Akt2 promote peripheral B-cell maturation and survival</article-title><source>Blood</source><year>2010</year><volume>115</volume><fpage>4043</fpage><lpage>4050</lpage><pub-id pub-id-type="pmid">20042722</pub-id></citation> Authors show that mice lacking Akt1 and Akt2 (but retaining Akt3) exhibit normal early B cell development, but lack marginal zone B cells and B-1 cells.</p>
+</note>
+      </ref>
+      <ref id="R36">
+        <label>36</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Patke</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Mecklenbrauker</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Erdjument-Bromage</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Tempst</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Tarakhovsky</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>BAFF controls B cell metabolic fitness through a PKC{beta}- and Akt-dependent mechanism</article-title>
+          <source>The Journal of Experimental Medicine</source>
+          <year>2006</year>
+          <volume>203</volume>
+          <fpage>2551</fpage>
+          <lpage>2562</lpage>
+          <pub-id pub-id-type="pmid">17060474</pub-id>
+        </citation>
+      </ref>
+      <ref id="R37">
+        <label>37</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Woodland</surname>
+              <given-names>RT</given-names>
+            </name>
+            <name>
+              <surname>Fox</surname>
+              <given-names>CJ</given-names>
+            </name>
+            <name>
+              <surname>Schmidt</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Hammerman</surname>
+              <given-names>PS</given-names>
+            </name>
+            <name>
+              <surname>Opferman</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>Korsmeyer</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <name>
+              <surname>Hilbert</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Thompson</surname>
+              <given-names>CB</given-names>
+            </name>
+          </person-group>
+          <article-title>Multiple signaling pathways promote B lymphocyte stimulator dependent B-cell growth and survival</article-title>
+          <source>Blood</source>
+          <year>2008</year>
+          <volume>111</volume>
+          <fpage>750</fpage>
+          <lpage>760</lpage>
+          <pub-id pub-id-type="pmid">17942753</pub-id>
+        </citation>
+      </ref>
+      <ref id="R38">
+        <label>38</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Thomas</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Sideras</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>CI</given-names>
+            </name>
+            <name>
+              <surname>Vorechovsky</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Chapman</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Paul</surname>
+              <given-names>WE</given-names>
+            </name>
+          </person-group>
+          <article-title>Colocalization of X-linked agammaglobulinemia and X-linked immunodeficiency genes</article-title>
+          <source>Science</source>
+          <year>1993</year>
+          <volume>261</volume>
+          <fpage>355</fpage>
+          <lpage>358</lpage>
+          <pub-id pub-id-type="pmid">8332900</pub-id>
+        </citation>
+      </ref>
+      <ref id="R39">
+        <label>39</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rawlings</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Saffran</surname>
+              <given-names>DC</given-names>
+            </name>
+            <name>
+              <surname>Tsukada</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Largaespada</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Grimaldi</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Cohen</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Mohr</surname>
+              <given-names>RN</given-names>
+            </name>
+            <name>
+              <surname>Bazan</surname>
+              <given-names>JF</given-names>
+            </name>
+            <name>
+              <surname>Howard</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Copeland</surname>
+              <given-names>NG</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Mutation of unique region of Bruton’s tyrosine kinase in immunodeficient XID mice</article-title>
+          <source>Science</source>
+          <year>1993</year>
+          <volume>261</volume>
+          <fpage>358</fpage>
+          <lpage>361</lpage>
+          <pub-id pub-id-type="pmid">8332901</pub-id>
+        </citation>
+      </ref>
+      <ref id="R40">
+        <label>40</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Kaisho</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Ohishi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Tsukio-Yamaguchi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Tsubata</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Koni</surname>
+              <given-names>PA</given-names>
+            </name>
+            <name>
+              <surname>Sasaki</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Mak</surname>
+              <given-names>TW</given-names>
+            </name>
+            <name>
+              <surname>Nakano</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Critical roles of Pten in B cell homeostasis and immunoglobulin class switch recombination</article-title>
+          <source>Journal of Experimental Medicine</source>
+          <year>2003</year>
+          <volume>197</volume>
+          <fpage>657</fpage>
+          <lpage>667</lpage>
+          <pub-id pub-id-type="pmid">12615906</pub-id>
+        </citation>
+      </ref>
+      <ref id="R41">
+        <label>41</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Anzelon</surname>
+              <given-names>AN</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Rickert</surname>
+              <given-names>RC</given-names>
+            </name>
+          </person-group>
+          <article-title>Pten inactivation alters peripheral B lymphocyte fate and reconstitutes CD19 function</article-title>
+          <source>Nat Immunol</source>
+          <year>2003</year>
+          <volume>4</volume>
+          <fpage>287</fpage>
+          <lpage>294</lpage>
+          <pub-id pub-id-type="pmid">12563260</pub-id>
+        </citation>
+      </ref>
+      <ref id="R42">
+        <label>**42</label>
+        <note>
+<p><citation citation-type="journal" id="N0x206f7f80N0x2156d730"><person-group person-group-type="author"><name><surname>Rolf</surname><given-names>J</given-names></name><name><surname>Bell</surname><given-names>SE</given-names></name><name><surname>Kovesdi</surname><given-names>D</given-names></name><name><surname>Janas</surname><given-names>ML</given-names></name><name><surname>Soond</surname><given-names>DR</given-names></name><name><surname>Webb</surname><given-names>LMC</given-names></name><name><surname>Santinelli</surname><given-names>S</given-names></name><name><surname>Saunders</surname><given-names>T</given-names></name><name><surname>Hebeis</surname><given-names>B</given-names></name><name><surname>Killeen</surname><given-names>N</given-names></name><etal/></person-group><article-title>Phosphoinositide 3-Kinase Activity in T Cells Regulates the Magnitude of the Germinal Center Reaction</article-title><source>J Immunol</source><year>2010</year><comment>jimmunol.1001730</comment></citation> Authors provide evidence that PI3K p110delta is required in T<sub>FH</sub> cells, but not in B cells, to drive the germinal center reaction.</p>
+</note>
+      </ref>
+      <ref id="R43">
+        <label>43</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vigorito</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Bardi</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Glassford</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Lam</surname>
+              <given-names>EW</given-names>
+            </name>
+            <name>
+              <surname>Clayton</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Turner</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Vav-dependent and vav-independent phosphatidylinositol 3-kinase activation in murine B cells determined by the nature of the stimulus</article-title>
+          <source>J Immunol</source>
+          <year>2004</year>
+          <volume>173</volume>
+          <fpage>3209</fpage>
+          <lpage>3214</lpage>
+          <pub-id pub-id-type="pmid">15322182</pub-id>
+        </citation>
+      </ref>
+      <ref id="R44">
+        <label>44</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Omori</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Cato</surname>
+              <given-names>MH</given-names>
+            </name>
+            <name>
+              <surname>Anzelon-Mills</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Puri</surname>
+              <given-names>KD</given-names>
+            </name>
+            <name>
+              <surname>Shapiro-Shelef</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Calame</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Rickert</surname>
+              <given-names>RC</given-names>
+            </name>
+          </person-group>
+          <article-title>Regulation of class-switch recombination and plasma cell differentiation by phosphatidylinositol 3-kinase signaling</article-title>
+          <source>Immunity</source>
+          <year>2006</year>
+          <volume>25</volume>
+          <fpage>545</fpage>
+          <lpage>557</lpage>
+          <pub-id pub-id-type="pmid">17000121</pub-id>
+        </citation>
+      </ref>
+      <ref id="R45">
+        <label>45</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Samuels</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Bardelli</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Silliman</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Ptak</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Szabo</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Yan</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Gazdar</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Powell</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Riggins</surname>
+              <given-names>GJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>High Frequency of Mutations of the PIK3CA Gene in Human Cancers</article-title>
+          <source>Science</source>
+          <year>2004</year>
+          <volume>304</volume>
+          <fpage>554</fpage>
+          <pub-id pub-id-type="pmid">15016963</pub-id>
+        </citation>
+      </ref>
+      <ref id="R46">
+        <label>**46</label>
+        <note>
+<p><citation citation-type="journal" id="N0x206f7f80N0x2157edc0"><person-group person-group-type="author"><name><surname>Miletic</surname><given-names>AV</given-names></name><name><surname>Anzelon-Mills</surname><given-names>AN</given-names></name><name><surname>Mills</surname><given-names>DM</given-names></name><name><surname>Omori</surname><given-names>SA</given-names></name><name><surname>Pedersen</surname><given-names>IM</given-names></name><name><surname>Shin</surname><given-names>D-M</given-names></name><name><surname>Ravetch</surname><given-names>JV</given-names></name><name><surname>Bolland</surname><given-names>S</given-names></name><name><surname>Morse</surname><given-names>HC</given-names></name><name><surname>Rickert</surname><given-names>RC</given-names></name></person-group><article-title>Coordinate suppression of B cell lymphoma by PTEN and SHIP phosphatases</article-title><source>The Journal of Experimental Medicine</source><year>2010</year><volume>207</volume><fpage>2407</fpage><lpage>2420</lpage><pub-id pub-id-type="pmid">20956547</pub-id></citation> Authors provide first evidence that SHIP is a B cell tumor suppressor, preventing transformation upon <italic>Pten</italic> inactivation. Moreover, B lymphomas that develop in the absence of PTEN and SHIP can be propagated in the absence of BAFF.</p>
+</note>
+      </ref>
+      <ref id="R47">
+        <label>47</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Honigberg</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Sirisawad</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Verner</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Loury</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Chang</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Pan</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Thamm</surname>
+              <given-names>DH</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>RA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The Bruton tyrosine kinase inhibitor PCI-32765 blocks B-cell activation and is efficacious in models of autoimmune disease and B-cell malignancy</article-title>
+          <source>Proceedings of the National Academy of Sciences</source>
+          <year>2010</year>
+          <volume>107</volume>
+          <fpage>13075</fpage>
+          <lpage>13080</lpage>
+        </citation>
+      </ref>
+      <ref id="R48">
+        <label>48</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lannutti</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Meadows</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Herman</surname>
+              <given-names>SEM</given-names>
+            </name>
+            <name>
+              <surname>Kashishian</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Steiner</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Johnson</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Byrd</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Tyner</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name>
+              <surname>Loriaux</surname>
+              <given-names>MM</given-names>
+            </name>
+            <name>
+              <surname>Deininger</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>CAL-101, a p110{delta} selective phosphatidylinositol-3-kinase inhibitor (PI3K) for the treatment of B cell malignancies inhibits PI3K signaling and cellular viability</article-title>
+          <source>Blood</source>
+          <year>2010</year>
+          <comment>blood-2010-2003-275305</comment>
+        </citation>
+      </ref>
+      <ref id="R49">
+        <label>49</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Doi</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Obayashi</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Kadowaki</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Fujii</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Koyasu</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>PI3K is a negative regulator of IgE production</article-title>
+          <source>International Immunology</source>
+          <year>2008</year>
+          <volume>20</volume>
+          <fpage>499</fpage>
+          <lpage>508</lpage>
+          <pub-id pub-id-type="pmid">18303010</pub-id>
+        </citation>
+      </ref>
+      <ref id="R50">
+        <label>50</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>T-t</given-names>
+            </name>
+            <name>
+              <surname>Okkenhaug</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Nashed</surname>
+              <given-names>BF</given-names>
+            </name>
+            <name>
+              <surname>Puri</surname>
+              <given-names>KD</given-names>
+            </name>
+            <name>
+              <surname>Knight</surname>
+              <given-names>ZA</given-names>
+            </name>
+            <name>
+              <surname>Shokat</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Vanhaesebroeck</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Marshall</surname>
+              <given-names>AJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Genetic or pharmaceutical blockade of p110[delta] phosphoinositide 3-kinase enhances IgE production</article-title>
+          <source>Journal of Allergy and Clinical Immunology</source>
+          <year>2008</year>
+          <volume>122</volume>
+          <fpage>811</fpage>
+          <lpage>819</lpage>
+          <fpage>e812</fpage>
+          <pub-id pub-id-type="pmid">19014771</pub-id>
+        </citation>
+      </ref>
+    </ref-list>
+    <sec id="S6" sec-type="display-objects">
+      <title>Figure and Table</title>
+      <fig id="F1" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <title>PI3K signaling pathway in B cell development</title>
+          <p>Pro-B cell development is supported by IL-7 stimulation via the PI3K and STAT5 pathways. Weak PI3K signaling promotes retention of Foxo1 in the nucleus to drive <italic>Il7ra</italic> expression. PI3K signaling via the pre-BCR can be augmented by CD19 and countered by BLNK(SLP-65). Expression of pre-BCR components is repressed in an IRF4/IRF8-dependent manner to permit Foxo1-dependent expression of <italic>Rag</italic> in resting pre-B cells. Peripheral B cells require PI3K signaling to promote survival while Foxo1 activity is crucial for expression of <italic>Sell</italic> and <italic>Aicda</italic>, suggesting a dynamic balance for Foxo1 activity in peripheral B cell homeostasis and differentiation.</p>
+        </caption>
+        <graphic xlink:href="nihms-271828-f0001"/>
+      </fig>
+      <table-wrap id="T1" position="float">
+        <table frame="box" rules="all">
+          <thead>
+            <tr>
+              <th align="left" valign="top" rowspan="1" colspan="1">
+                <graphic xlink:href="nihms-271828-t0002"/>
+              </th>
+              <th colspan="6" align="left" valign="top" rowspan="1">Class IA</th>
+              <th colspan="3" align="left" valign="top" rowspan="1">Class IB</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">Gene</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold><italic>PIK3CA</italic></bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold><italic>PIK3CB</italic></bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold><italic>PIK3CD</italic></bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold><italic>PIK3R1</italic></bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold><italic>PIK3R2</italic></bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold><italic>PIK3R3</italic></bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold><italic>PIK3CG</italic></bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold><italic>PIK3R5</italic></bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold><italic>PIK3R6</italic></bold>
+</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">Protein</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>p110α</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>p110β</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>p110δ</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>p50α,</bold>
+<break/>
+<bold>p55α,</bold>
+<break/>
+<bold>p85α</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>p85β</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>p55γ</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>p110γ</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>p101</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>p84</bold>
+</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">Expression<break/>pattern</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>broad,</bold>
+<break/>
+<bold>elevated</bold>
+<break/>
+<bold>in B</bold>
+<break/>
+<bold>cells</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>broad,</bold>
+<break/>
+<bold>reduced</bold>
+<break/>
+<bold>in B</bold>
+<break/>
+<bold>cells</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>hematopoietic</bold>
+<break/>
+<bold>cells</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>broad</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>broad</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>broad</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>hematopoietic</bold>
+<break/>
+<bold>cells</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>hematopoietic</bold>
+<break/>
+<bold>cells</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>broad,</bold>
+<break/>
+<bold>elevated</bold>
+<break/>
+<bold>in heart</bold>
+</td>
+            </tr>
+            <tr>
+              <td align="left" valign="top" rowspan="1" colspan="1">Regulatory<break/>or catalytic?</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>catalytic</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>catalytic</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>catalytic</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>regulatory</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>regulatory</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>regulatory</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>catalytic</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>regulatory</bold>
+</td>
+              <td align="left" valign="top" rowspan="1" colspan="1">
+<bold>regulatory</bold>
+</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+    </sec>
+  </back>
+</article>

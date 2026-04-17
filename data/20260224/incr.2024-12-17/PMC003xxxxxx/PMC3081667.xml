@@ -1,0 +1,2168 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="en">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">100931761</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">22460</journal-id>
+      <journal-id journal-id-type="nlm-ta">Curr Issues Mol Biol</journal-id>
+      <journal-title-group>
+        <journal-title>Current issues in molecular biology</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1467-3037</issn>
+      <issn pub-type="epub">1467-3045</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">20472940</article-id>
+      <article-id pub-id-type="pmc">3081667</article-id>
+      <article-id pub-id-type="manuscript">NIHMS283702</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>The Ger Receptor Family from Sporulating Bacteria</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ross</surname>
+            <given-names>Christian</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Abel-Santos</surname>
+            <given-names>Ernesto</given-names>
+          </name>
+          <xref ref-type="aff" rid="A2">2</xref>
+          <xref ref-type="corresp" rid="CR1">*</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>1</label>School of Life Science, University of Nevada, Las Vegas, Las Vegas, NV, 89154, USA</aff>
+      <aff id="A2"><label>2</label>Department of Chemistry, University of Nevada, Las Vegas, Las Vegas, NV, 89154, USA</aff>
+      <author-notes>
+        <corresp id="CR1"><label>*</label>Corresponding author: <email>ernesto.abelsantos@unlv.edu</email></corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>5</day>
+        <month>4</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <year>2010</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>25</day>
+        <month>4</month>
+        <year>2011</year>
+      </pub-date>
+      <volume>12</volume>
+      <issue>3</issue>
+      <fpage>147</fpage>
+      <lpage>158</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P1">Bacterial spores are specialized cells that are exceptionally resistant to environmental stress. Spores convert back to actively growing cells, a process called germination, upon nutrient detection. The most common, initial step in the germination process is the recognition of small molecule germinants by germination (Ger) receptors. Ger receptors are inner-membrane heterocomplexes formed by three distinct protein products, the A-, B-, and C-subunits. In this review, we discuss and contrast published reports on representative Ger receptors from different <italic>Bacilli</italic> and <italic>Clostridia</italic>. We also present evidence for unrecognized germination pathways independent of Ger receptors. We further emphasize the function of L-alanine as a universal germinant. We also comment on biochemical aspects of germinant recognition and interaction between Ger receptor proteins. We propose that there are six general strategies used by <italic>Bacilli</italic> and <italic>Clostridia</italic> to integrate multiple germination signals. The use of different germinant recognition strategies results in germination response flexibility. Consequently, sporulating bacterial species that use the same biomolecules as germination signals can have different germination profiles. Finally, we discuss future directions for understanding the function of Ger receptors.</p>
+      </abstract>
+      <funding-group>
+        <award-group>
+          <funding-source country="United States">National Center for Research Resources  : NCRR</funding-source>
+          <award-id>P20 RR016464-10 || RR</award-id>
+        </award-group>
+      </funding-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="S1">
+      <title>The germination (Ger) receptor family</title>
+      <p id="P2">Endospore-forming bacteria produce some of the most potent toxins known and are important pathogens in hospital-borne infections (<italic>Clostridium difficile</italic>) (<xref ref-type="bibr" rid="R61">Surowiec et al., 2006</xref>), food contamination (<italic>Bacillus cereus, Clostridium botulinum</italic>,)(<xref ref-type="bibr" rid="R15">Dembek et al., 2007</xref>; <xref ref-type="bibr" rid="R19">Ehling-Schulz et al., 2004</xref>), wound infestation (<italic>Clostridium perfringens, Clostridium tetani</italic>) (<xref ref-type="bibr" rid="R18">Edlich et al., 2003</xref>; <xref ref-type="bibr" rid="R20">Finsterer and Hess, 2007</xref>), and bioterrorism (<italic>Bacillus anthracis</italic>) (<xref ref-type="bibr" rid="R38">Mock and Fouet, 2001</xref>).</p>
+      <p id="P3"><italic>Bacilli</italic> and <italic>Clostridia</italic> spores form in response to unfavorable environmental conditions and can withstand extremes of heat, radiation, and chemical agents (<xref ref-type="bibr" rid="R46">Piggot and Hilbert, 2004</xref>). The spore's durability is even more remarkable considering that dormant spores revert back to actively growing cells almost immediately after nutrients return to the environment (<xref ref-type="bibr" rid="R39">Moir, 2006</xref>). The intrinsic resistance and the ability to remain dormant for long periods make spores the perfect delivery vehicle for infectious diseases.</p>
+      <p id="P4">Spores transform into replicative bacteria by a complex process called germination. Germination is triggered by environmental stimuli that are then transduced into a series of interrelated degradation events. This ultimately results in the loss of typical dormant spore properties (<xref ref-type="bibr" rid="R40">Moir et al., 2002</xref>). The mechanism of spore germination has been reviewed in detail elsewhere (<xref ref-type="bibr" rid="R39">Moir, 2006</xref>; <xref ref-type="bibr" rid="R40">Moir et al., 2002</xref>; <xref ref-type="bibr" rid="R56">Setlow, 2003</xref>).</p>
+      <p id="P5">In most cases, Ger receptor activation is the first committed step in the germination process (<xref ref-type="bibr" rid="R39">Moir, 2006</xref>; <xref ref-type="bibr" rid="R40">Moir et al., 2002</xref>). Ger receptors are encoded, in general, as tricistronic operons containing three protein-coding genes, the A-, B-, and C-subunits (<xref ref-type="fig" rid="F1">Figure 1</xref>) (<xref ref-type="bibr" rid="R40">Moir et al., 2002</xref>; <xref ref-type="bibr" rid="R56">Setlow, 2003</xref>). However, some Ger receptor subunits are encoded as orphan monocistronic genes (<xref ref-type="bibr" rid="R45">Peck and Robert, 2009</xref>) and yet other <italic>ger</italic> receptor operons encode duplicated subunit genes (<xref ref-type="bibr" rid="R7">Broussolle et al., 2002</xref>; <xref ref-type="bibr" rid="R12">Christie and Lowe, 2007</xref>).</p>
+      <p id="P6">The A-subunit protein of Ger receptors consist of five or six predicted membrane-spanning domains, as well as large <italic>N</italic>- and <italic>C</italic>-terminal hydrophilic domains (<xref ref-type="bibr" rid="R56">Setlow, 2003</xref>). A-subunit proteins share significant homology to SpoVAF, a late-sporulation protein with no known function (<xref ref-type="bibr" rid="R56">Setlow, 2003</xref>). Intriguingly, Ger receptors have been shown to interact with proteins from the <italic>spoVA</italic> operon (<xref ref-type="bibr" rid="R62">Venkata Ramana Vepachedu, 2007</xref>). Whether these interactions are relevant to spore germination remains to be elucidated.</p>
+      <p id="P7">The B-subunit protein is predicted to be an integral membrane protein with 10 to 12 transmembrane helices (<xref ref-type="bibr" rid="R40">Moir et al., 2002</xref>). Genetic evidence suggests that the B-subunit may be involved in germinant recognition (<xref ref-type="bibr" rid="R12">Christie and Lowe, 2007</xref>; <xref ref-type="bibr" rid="R41">Paidhungat and Setlow, 1999</xref>) (<italic>vide infra</italic>). B-subunit proteins share homology with a superfamily of transmembrane amino-acid permeases (<xref ref-type="bibr" rid="R34">Jack et al., 2000</xref>).</p>
+      <p id="P8">The C-subunit protein, a hydrophilic gene product, is predicted to have a pre-lipoprotein signal sequence, suggesting that C-subunit proteins are anchored to the outer surface of the membrane via an N-terminally attached lipid moiety (<xref ref-type="bibr" rid="R29">Igarashi and Setlow, 2005</xref>). Indeed, mutational analysis have shown that lipidation of C-subunits are essential for germination (<xref ref-type="bibr" rid="R29">Igarashi and Setlow, 2005</xref>). C-subunit proteins show no significant homology to other protein families.</p>
+      <p id="P9">The organization of <italic>ger</italic> receptor operons suggests that each receptor is a heterocomplex formed by A-, B- and C-subunit proteins (<xref ref-type="bibr" rid="R29">Igarashi and Setlow, 2005</xref>). Indeed, deletion of any of the three subunits compromises the function of the encoded receptor (<xref ref-type="bibr" rid="R40">Moir et al., 2002</xref>). Genetic evidence has also shown that A-subunits interact with their corresponding B-subunits (<xref ref-type="bibr" rid="R41">Paidhungat and Setlow, 1999</xref>). Similarly, C-subunits seem to interact with the A- and B-subunits encoded in their genetic locus and, in some cases, with the A- and B-subunits of other receptors (<xref ref-type="bibr" rid="R29">Igarashi and Setlow, 2005</xref>). In addition to intra-subunit interactions, different Ger receptor complexes are believed to interact with each other. The cooperative nature of germinant recognition suggests that Ger receptors can form homo- and heterocomplexes, but the exact composition of these complexes remains to be determined (<xref ref-type="bibr" rid="R5">Atluri et al., 2006</xref>). Although genetic methods can be used to infer protein-protein contacts, no biochemical evidence for physical interactions between the subunits has been obtained.</p>
+      <p id="P10">Although activation of <italic>ger</italic> receptor operons occurs early in the sporulation process, their gene products are expressed at low levels. Indeed, it has been estimated that there are only a few dozen molecules of Ger receptors in a spore (<xref ref-type="bibr" rid="R43">Paidhungat and Setlow, 2001</xref>). Interestingly, overexpression of Ger receptors can increase spore germination rates significantly (<xref ref-type="bibr" rid="R8">Cabrera-Martinez et al., 2003</xref>). Hence, Ger receptors expression does not seem to be optimized for maximal spore germination. It is possible that this is an evolutionary strategy to ensure that germination only occurs when sufficient nutrients are present to sustain vegetative cell growth.</p>
+    </sec>
+    <sec id="S2">
+      <title>Representative Ger receptors in <italic>Bacilli</italic> and <italic>Clostridia</italic></title>
+      <p id="P11">Genes for Ger receptor homologues have been found in most <italic>Bacilli</italic> and <italic>Clostridia</italic>. The number of tricistronic <italic>ger</italic> receptor operons vary from one in <italic>C. perfringens</italic> (<xref ref-type="bibr" rid="R44">Paredes-Sabja et al., 2008</xref>) to seven in <italic>B. anthracis</italic> (<xref ref-type="bibr" rid="R21">Fisher and Hanna, 2005</xref>). However, a number of <italic>ger</italic> receptor operons encode truncated subunit proteins and are probably inactive. Ger receptors from different species that detect the same biomolecules are more closely related than Ger receptors from the same species that recognize structurally different compounds.</p>
+      <p id="P12">Each Ger receptor can detect a unique germinant including amino acids, nucleosides, sugars, and cations. Hence, expressing multiple <italic>ger</italic> receptor operons allow spores to respond to structurally diverse compounds. Furthermore, each sporulating species encodes a unique complement of Ger receptors and responds to a different set of germinants. Interestingly, different Ger receptors can cooperate to recognize a single germinant or multiple germinants (<xref ref-type="bibr" rid="R39">Moir, 2006</xref>; <xref ref-type="bibr" rid="R40">Moir et al., 2002</xref>). Below, we discuss the information available for Ger receptors and their cognate germinants in different <italic>Bacilli</italic> and <italic>Clostridia</italic>.</p>
+      <sec id="S3">
+        <title>Bacillus subtilis Ger receptors</title>
+        <p id="P13"><italic>B. subtilis</italic> spores contain three functional Ger receptors encoded by the <italic>gerA, gerB</italic>, and <italic>gerK</italic> operons (<xref ref-type="bibr" rid="R42">Paidhungat and Setlow, 2000</xref>). GerA is the only receptor in <italic>B. subtilis</italic> that is activated by a single germinant, L-alanine. GerA-mediated germination is strongly inhibited by the stereoisomer, D-alanine (<xref ref-type="bibr" rid="R71">Yasuda and Tochikubo, 1984</xref>). GerA is considered as the model Ger receptor since most of what is known about Ger receptor function has been derived from studies in this operon (<xref ref-type="bibr" rid="R37">McCann et al., 1996</xref>).</p>
+        <p id="P14">No single germinant has been identified for the GerB or GerK receptors (<xref ref-type="bibr" rid="R42">Paidhungat and Setlow, 2000</xref>). The GerK receptor seems to recognize glucose, while GerB seem to recognize amino acids and fructose. However, no cogerminant is sufficient to trigger germination alone (<xref ref-type="bibr" rid="R5">Atluri et al., 2006</xref>). GerB and GerK act cooperatively to trigger germination with either L-asparagine supplemented with glucose, fructose, and potassium ions (GFK) or L-alanine supplemented with GFK (<xref ref-type="bibr" rid="R65">Wax and Freese, 1968</xref>; <xref ref-type="bibr" rid="R66">Wax et al., 1967</xref>). It is important to note that glucose-activated GerK receptors also stimulates L-alanine germination mediated by GerA (<xref ref-type="bibr" rid="R5">Atluri et al., 2006</xref>). Furthermore, GerB can interact with GerA to trigger spore germination in response to appropriate nutrients (<xref ref-type="bibr" rid="R5">Atluri et al., 2006</xref>). Hence, all three functional receptors encoded by <italic>B. subtilis</italic> interact to modulate each other's activities.</p>
+      </sec>
+      <sec id="S4">
+        <title>Bacillus anthracis Ger receptors</title>
+        <p id="P15">Genome sequencing revealed six genomic (<italic>gerA, gerH, gerK, gerL, gerS</italic>, and <italic>gerY</italic>) and one plasmidic (<italic>gerX</italic>) <italic>ger</italic> receptor operons in <italic>B. anthracis</italic> (<xref ref-type="bibr" rid="R51">Read et al., 2003</xref>). These receptors interact in response to different germinant combinations to form four distinct amino acid and nucleoside dependent germination pathways (<xref ref-type="bibr" rid="R21">Fisher and Hanna, 2005</xref>).</p>
+        <p id="P16">Functional analysis revealed that the GerH receptor is activated by nucleosides (<xref ref-type="bibr" rid="R68">Weiner et al., 2003</xref>), while the GerS receptor is activated by aromatic amino acids (<xref ref-type="bibr" rid="R30">Ireland and Hanna, 2002a</xref>). The GerK receptor recognizes L-alanine and L-valine, while the GerL receptor recognizes L-alanine and L-methionine. Ligands for GerA and GerY have not been identified, and it is possible that they encode non-functional receptors (<xref ref-type="bibr" rid="R21">Fisher and Hanna, 2005</xref>). The ligand for the GerX receptor is also not known. Germination of <italic>B. anthracis</italic> spores appears to require the coordinated detection of at least two germinants, either a nucleoside and an amino acid, or two different amino acids (<xref ref-type="bibr" rid="R21">Fisher and Hanna, 2005</xref>).</p>
+        <p id="P17">Previous reports had suggested that the GerX, GerH, and to a lesser extent the GerS receptors, are important for the establishment of anthrax infection and disease progression (<xref ref-type="bibr" rid="R25">Guidi-Rontani et al., 1999</xref>; <xref ref-type="bibr" rid="R31">Ireland and Hanna, 2002b</xref>; <xref ref-type="bibr" rid="R35">Kang et al., 2005</xref>; <xref ref-type="bibr" rid="R67">Weiner and Hanna, 2003</xref>). However, recent data shows that as long as one of the genomically encoded receptors (GerH, GerK, GerL, or GerS) is present, <italic>B. anthracis</italic> spores remain fully virulent in an inhalational anthrax murine model (<xref ref-type="bibr" rid="R10">Carr et al., 2010</xref>). This suggests that none of the genomically encoded Ger receptors is absolutely required for infection and that their function is redundant. In contrast, when mice were infected subcutaneously with <italic>B. anthracis</italic> spores, the GerH receptor became the primary determinant for pathogenesis (<xref ref-type="bibr" rid="R10">Carr et al., 2010</xref>). This suggests that distinct germination pathways are activated under different cellular conditions in the host.</p>
+      </sec>
+      <sec id="S5">
+        <title>Bacillus cereus Ger receptors</title>
+        <p id="P18">Analysis of the <italic>B. cereus</italic> ATCC 14579 genome revealed the presence of seven putative Ger receptor operons, termed <italic>gerG, gerI, gerK, gerL, gerQ, gerR</italic>, and <italic>gerS</italic> (<xref ref-type="bibr" rid="R33">Ivanova et al., 2003</xref>). Wild-type <italic>B. cereus</italic> ATCC 14579 spores germinated strongly with L-alanine, L-cysteine, L-threonine, and L-glutamine (<xref ref-type="bibr" rid="R28">Hornstra et al., 2006</xref>). Mutational analysis shows that the GerR receptor influences all germination responses to single amino acids, except L-glutamine (<xref ref-type="bibr" rid="R28">Hornstra et al., 2006</xref>). Instead, the GerG receptor was shown to be required in L-glutamine-mediated germination. This suggests that GerG and GerR activation trigger different germination pathways.</p>
+        <p id="P19">Inosine is a known germinant of <italic>B. cereus</italic> spores (<xref ref-type="bibr" rid="R6">Barlass et al., 2002</xref>; <xref ref-type="bibr" rid="R14">Clements and Moir, 1998</xref>; <xref ref-type="bibr" rid="R28">Hornstra et al., 2006</xref>). Indeed, <italic>B. cereus</italic> ATCC 14579 spores are able to germinate with inosine as sole germinant (<xref ref-type="bibr" rid="R27">Hornstra et al., 2005</xref>). Interestingly, no single Ger receptor seemed to be essential for inosine-mediated germination. However, GerI, GerQ, and GerR mutants germinated at lower rates than wild-type spores when treated with inosine alone (<xref ref-type="bibr" rid="R28">Hornstra et al., 2006</xref>). This suggests that GerI, GerQ, and GerR are able to individually recognize inosine, but that their function is redundant. It is worth noticing that <italic>B. anthracis</italic> spores also use inosine as a germinant, but in <italic>B. anthracis</italic>, inosine must be supplemented with amino acids for germination initiation (<xref ref-type="bibr" rid="R30">Ireland and Hanna, 2002a</xref>).</p>
+        <p id="P20">The addition of inosine as a co-germinant with amino acids enhanced the germination response of <italic>B. cereus</italic> ATCC 14579 (<xref ref-type="bibr" rid="R28">Hornstra et al., 2006</xref>). The germination response to co-germinants was stronger with inosine/L-glutamine and inosine/L-phenylalanine. The combination of L-glutamine and inosine required the GerG and GerI receptors, while L-phenylalanine/inosine combinations required only the GerI receptor (<xref ref-type="bibr" rid="R28">Hornstra et al., 2006</xref>). This indicates that the GerI receptor interacts with L-phenylalanine and inosine and that both molecules contribute to germination.</p>
+        <p id="P21">In contrast to <italic>B. cereus</italic> ATCC 14579, which seems to use the GerR, GerI, or GerQ receptors redundantly to recognize inosine (<xref ref-type="bibr" rid="R28">Hornstra et al., 2006</xref>), <italic>B. cereus</italic> strain 569 strictly requires both the GerI and GerQ receptors to activate inosine-mediated germination (<xref ref-type="bibr" rid="R6">Barlass et al., 2002</xref>; <xref ref-type="bibr" rid="R14">Clements and Moir, 1998</xref>). Thus, while <italic>B. anthracis, B. cereus ATCC 14579</italic> and <italic>B. cereus</italic> 569 spores recognize nucleoside germinants, each strain shows a different response to these compounds.</p>
+        <p id="P22">We recently determined that there are two distinct nucleoside-dependent germination pathways in <italic>B. cereus</italic> 569 (<xref ref-type="bibr" rid="R1">Abel-Santos and Dodatko, 2007</xref>): The nucleoside/alanine germination pathway and the inosine-only germination pathway. These two pathways recognize nucleoside differently. The nucleoside/alanine germination pathway seems to require only one active nucleoside receptor, either GerI or GerQ (<xref ref-type="bibr" rid="R6">Barlass et al., 2002</xref>; <xref ref-type="bibr" rid="R14">Clements and Moir, 1998</xref>). Interestingly, <italic>B. anthracis</italic> lacks the GerQ receptor, but can germinate with nucleosides/alanine by activating a GerI receptor analog (<xref ref-type="bibr" rid="R68">Weiner et al., 2003</xref>).</p>
+        <p id="P23">Analysis of structurally diverse nucleosides used as cogerminants with L-alanine suggested that, in the nucleoside/alanine pathway, germination-inducing activity is governed by the structural properties of the sugar rather than the base moieties of the nucleoside (<xref ref-type="bibr" rid="R58">Shibata et al., 1986</xref>). These results are consistent with previous spore germination experiments in <italic>B. cereus</italic> NCIB 8122 and T strains (<xref ref-type="bibr" rid="R48">Preston and Douthit, 1988</xref>; <xref ref-type="bibr" rid="R55">Senesi et al., 1991</xref>; <xref ref-type="bibr" rid="R58">Shibata et al., 1986</xref>; <xref ref-type="bibr" rid="R72">Yousten, 1975</xref>).</p>
+        <p id="P24">In addition to the nucleoside/alanine germination pathway, <italic>B. cereus</italic> has also developed a mechanism that allows germination in presence of inosine as sole germinant. In contrast to the nucleoside/alanine germination pathway, both GerI and GerQ are absolutely required to activate the inosine-only germination pathway. The inosine-only germination pathway has been previously described in both <italic>B. cereus</italic> 569 and ATCC 14579 strains (<xref ref-type="bibr" rid="R6">Barlass et al., 2002</xref>; <xref ref-type="bibr" rid="R14">Clements and Moir, 1998</xref>; <xref ref-type="bibr" rid="R28">Hornstra et al., 2006</xref>).</p>
+        <p id="P25">Structure activity relationship of nucleoside agonists and antagonists of <italic>B. cereus</italic> spore germination have shown that the GerI receptor is constrained to recognize a single germinant (inosine) and is inhibited in a predictable pattern by structurally related nucleosides. On the other hand, the GerQ receptor is more promiscuous toward nucleoside agonists and is inhibited by nucleosides containing hydrophobic groups at the 6-position (<xref ref-type="bibr" rid="R16">Dodatko et al., 2009a</xref>).</p>
+        <p id="P26">Recent data from our laboratory suggest that when <italic>B. cereus</italic> 569 spores are exposed to inosine as sole germinant, the spores respond by releasing alanine and other amino acids into their environment (<xref ref-type="bibr" rid="R17">Dodatko et al., 2009b</xref>). Amino acid release during germination is dependent of both the GerI and GerQ receptors. Furthermore, the released amino acids are required for the completion of germination in the inosine-only pathway. Thus, the two nucleoside-mediated pathways are not isolated from each other, but are hierarchically organized. Inosine activates the first step in the germination process through the inosine-only pathway and the combined action of the added nucleoside and the released alanine completes the germination program through the nucleoside/alanine germination pathway.</p>
+        <p id="P27">A contrasting picture for the two germination pathways emerges. The GerI and GerQ receptors are differentially activated in <italic>B. cereus</italic> 569. In the presence of inosine only, both GerI and GerQ are necessary for germination activation. Upon inosine binding by the stringent GerI receptor, the spore releases alanine and other amino acids to complete the germination process. On the other hand, when both nucleoside and alanine are present in the medium, amino acid release is by-passed. In this case, the more promiscuous GerQ receptor seems to control the germination process.</p>
+      </sec>
+      <sec id="S6">
+        <title>Bacillus megaterium Ger receptors</title>
+        <p id="P28">Spores of <italic>B. megaterium</italic> QM B1551 germinate in response to glucose, L-proline, L-leucine, and inorganic salts (<xref ref-type="bibr" rid="R12">Christie and Lowe, 2007</xref>). In a recent study, it was shown that <italic>B. megaterium</italic> QM B1551 spore germination is mediated by the plasmid-borne tricistronic <italic>gerU</italic> operon (<xref ref-type="bibr" rid="R12">Christie and Lowe, 2007</xref>). The GerU receptor seems to be activated by L-leucine and glucose. Interestingly, a monocistronic B-subunit protein encoded on the same locus was shown to contribute to germinant specificity. This protein (GerVB) seems to interact with GerUA and GerUC to form a functional receptor for glucose, L-proline, and KBr (<xref ref-type="bibr" rid="R12">Christie and Lowe, 2007</xref>). Interestingly, both GerUB and GerVB are orthologues of the GerKB subunit from <italic>B. subtilis</italic> and all three proteins are involved in glucose-mediated germination (<xref ref-type="bibr" rid="R32">Irie et al., 1982</xref>). This suggests that these three B-subunit proteins recognize glucose even though different organisms encode them.</p>
+      </sec>
+      <sec id="S7">
+        <title>Clostridium botulinum Ger receptors</title>
+        <p id="P29">Spores of proteolytic <italic>C. botulinum</italic> show large variability in their germination response. Different strains germinated in the presence of L-alanine alone, amino acids/L-lactate, inosine, and/or AGFK (L-asparagine, glucose, fructose, and potassium ions) (<xref ref-type="bibr" rid="R3">Alberto, 2003</xref>). In contrast, germination of all non-proteolytic <italic>C. botulinum</italic> spores was triggered by defined by pairs of germinant combinations (L-alanine/L-lactate, L-serine/L-lactate or L-cysteine/L-lactate) (<xref ref-type="bibr" rid="R47">Plowman and Peck, 2002</xref>).</p>
+        <p id="P30">Analysis of three sequenced strains of proteolytic <italic>C. botulinum</italic> (ATCC 3502, ATCC 19397 and NCTC 2012) showed three well-conserved <italic>ger</italic> receptor operons. Interestingly, two additional B-subunit genes flank one of the <italic>ger</italic> receptor operons. Furthermore, ATCC 3502 and ATCC 19397 have an additional orphan B-subunit homolog (<xref ref-type="bibr" rid="R45">Peck and Robert, 2009</xref>). Two more proteolytic <italic>C. botulinum</italic> strains (Okra and Langeland) encode an additional tricistronic <italic>ger</italic> receptor operon. This extra operon is more closely related to Ger receptors from other <italic>Clostridia</italic> than to any <italic>C. botulinum</italic> Ger receptor (<xref ref-type="bibr" rid="R45">Peck and Robert, 2009</xref>). The differential expression of additional, divergent Ger receptor proteins may allow proteolytic <italic>C. botulinum</italic> strains to respond to different germinants and germination conditions (<xref ref-type="bibr" rid="R45">Peck and Robert, 2009</xref>).</p>
+        <p id="P31">Non-proteolytic <italic>C. botulinum</italic> showed a different Ger receptor organization than proteolytic <italic>C. botulinum</italic> strains (<xref ref-type="bibr" rid="R45">Peck and Robert, 2009</xref>). The three <italic>ger</italic> receptor operons present in all five strains of proteolytic <italic>C. botulinum</italic> were absent. Instead, non-proteolytic <italic>C. botulinum</italic> strains possess a single tricistronic <italic>ger</italic> receptor operon. This single <italic>ger</italic> receptor operon is more closely related to the extra Ger receptor found in the proteolytic Okra and Langeland strains (<xref ref-type="bibr" rid="R45">Peck and Robert, 2009</xref>). The presence of a single Ger receptor in non-proteolytic <italic>C. botulinum</italic> is consistent with the narrower range of germinants used b y these strains. However, it is not known if this <italic>ger</italic> receptor operon is actively transcribed during sporulation or if the encoded Ger receptor is active.</p>
+      </sec>
+      <sec id="S8">
+        <title>Clostridium perfringens Ger receptors</title>
+        <p id="P32">All <italic>C. perfringens</italic> spores tested use KCl and L-asparagine as a universal germination mixture (<xref ref-type="bibr" rid="R44">Paredes-Sabja et al., 2008</xref>). Additionally, <italic>C. perfringens</italic> strains carrying a chromosomal enterotoxin (<italic>cpe</italic>) gene can also germinate with KCl alone. In contrast, <italic>C. perfringens</italic> strains carrying a plasmid-borne <italic>cpe</italic> gene can germinate with L-alanine or L-valine, in addition to KCl/L-asparagine (<xref ref-type="bibr" rid="R44">Paredes-Sabja et al., 2008</xref>). These results are intriguing. Firstly, chromosomal enterotoxin (from SM101 strain) and plasmid enterotoxin (from F5603 strain) are 100% identical at the amino acid level. Secondly, Although <italic>cpe</italic> is expressed during sporulation, the enterotoxin remains in the mother cell and not in the spore (<xref ref-type="bibr" rid="R26">Harry et al., 2009</xref>). Thus, the function of the enterotoxin in modulating germination response of <italic>C. perfringens</italic> spores is not clear.</p>
+        <p id="P33">The unorthodox germination behavior of <italic>C. perfringens</italic> spores is further highlighted by the fact that all strains sequenced encode a single, identical GerK receptor. Thus, if strain-specific germination responses are dependent on GerK activation, this receptor must be able to recognize four structurally different molecules (KCl, L-asparagine, L-valine, and L-alanine). Furthermore, each <italic>C. perfringens</italic> strain uses only a subset of available co-germinants. Hence, the GerK receptor must be able to change substrate specificity between strains. Alternatively, some of the germinants could be recognized by unidentified germination receptors.</p>
+      </sec>
+      <sec id="S9">
+        <title>Germination response in Clostridium bifermentans and Clostridium sordellii</title>
+        <p id="P34">It has been previously reported that spores of <italic>C. bifermentans</italic> germinate in the presence of L-alanine, L-arginine, L-phenylalanine, and L-lactate, even though no Ger receptor has been identified in this species (<xref ref-type="bibr" rid="R64">Waites and Wyatt, 1971</xref>). This is similar to our recent findings that showed that <italic>C. sordellii</italic>, a close relative of <italic>C. bifermentans</italic>, needs a combination of a small amino acid, a basic amino acid, an aromatic amino acid, and bicarbonate to germinate (<xref ref-type="bibr" rid="R49">Ramirez and Abel-Santos, 2010</xref>). Even though germination rates are highest when spores are incubated with a mixture of L-alanine, L-phenylalanine, and L-arginine, germination also occurs when each amino acid is substituted with compounds with similar physical and chemical properties. Thus, <italic>C. sordellii</italic> spores seem to be quite promiscuous in the recognition of germinants (<xref ref-type="bibr" rid="R49">Ramirez and Abel-Santos, 2010</xref>).</p>
+        <p id="P35"><italic>C. sordellii</italic> is an opportunistic pathogen that causes toxic shock syndrome after gynecological procedures (<xref ref-type="bibr" rid="R4">Aldape et al., 2006</xref>). In this context, the fact that <italic>C. sordellii</italic> spores requires bicarbonate and prefer slightly acidic pH for germination is intriguing (<xref ref-type="bibr" rid="R49">Ramirez and Abel-Santos, 2010</xref>). Maximal germination is observed at a pH range where both carbonic acid and bicarbonate are present in equilibrium. On the other hand, at more basic pH (where the concentration of carbonic acid is insignificant) or more acidic pH (where the concentration of bicarbonate is insignificant), no germination is detected. Thus, it seems that both the carbonic acid and bicarbonate forms are required germinants. Since bicarbonate is present at high concentrations in the female reproductive tract and healthy females have a vaginal pH below 4.5 (<xref ref-type="bibr" rid="R63">Vishwakarma, 1962</xref>), all bicarbonate forms would be protonated to the carbonic acid form, and <italic>C. sordellii</italic> spores would not be able to germinate under these conditions. Thus, only when the vaginal pH is altered due to vaginosis will the bicarbonate/carbonic acid ratio be optimal for germination.</p>
+      </sec>
+      <sec id="S10">
+        <title>Germination response in Clostridium difficile</title>
+        <p id="P36">Although <italic>C. difficile</italic> encodes every other known spore-specific protein, Ger receptor genes are conspicuously absent (<xref ref-type="bibr" rid="R53">Sebaihia et al., 2006</xref>). However, <italic>C. difficile</italic> spores must be able to germinate in order to complete their life cycle. A recent article showed that <italic>C. difficile</italic> spores recognize glycine (an amino acid) and taurocholate (a bile salt) as germinants (<xref ref-type="bibr" rid="R59">Sorg and Sonenshein, 2008</xref>).</p>
+        <p id="P37">Taurocholate is a bile acid involved in the emulsification of fats (<xref ref-type="bibr" rid="R9">Carey and Small, 1970</xref>). Thus, taurocholate could trigger germination by either permeabilizing the spore membrane or activating a cognate receptor. Different lines of evidence suggest that <italic>C. difficile</italic> spores possess unknown taurocholate and glycine germination receptors. Firstly, glycine is a common amino acid with no known membrane disrupting activity. Hence, the function of glycine as a co-germinant suggests the presence of a glycine-specific germination receptor. The specificity of glycine recognition is further highlighted by the inability of other amino acids to substitute as co-activators of spore germination (<xref ref-type="bibr" rid="R59">Sorg and Sonenshein, 2008</xref>). Secondly, a membrane disruptive mechanism would be nonspecific. Hence, other bile salts should be equally able to activate spore germination. Instead, chenodeoxycholate, another bile salt with potential detergent properties, is a competitive inhibitor of taurocholate-mediated germination (<xref ref-type="bibr" rid="R60">Sorg and Sonenshein, 2009</xref>). In this case, chenodeoxycholate does not activate but hinders spore germination, suggesting that chenodeoxycholate competes with taurocholate for binding at a putative bile salt receptor.</p>
+      </sec>
+    </sec>
+    <sec id="S11">
+      <title>Putative unrecognized germination receptors</title>
+      <p id="P38">The absence of <italic>ger</italic> receptor operons in the genome of <italic>C. difficile</italic> and the complex germination response of <italic>C. perfringens</italic> indicate that either some Ger receptors are too divergent to be recognized by standard bioinformatics tools or that a different set of proteins can also recognize biomolecules to trigger germination (<xref ref-type="bibr" rid="R45">Peck and Robert, 2009</xref>). Indeed, a novel spore germination mechanism has been recently reported in <italic>B. subtilis</italic> (<xref ref-type="bibr" rid="R57">Shah et al., 2008</xref>). In these cases, <italic>B. subtilis</italic> spores germination was triggered by peptidoglycan degradation products, even in the absence of all Ger receptors (<xref ref-type="bibr" rid="R57">Shah et al., 2008</xref>). Peptidoglycan mediated germination seem to be dependent on a well conserved eukaryotic-like serine/threonine protein kinase (PrkC) located in the spore inner membrane (<xref ref-type="bibr" rid="R57">Shah et al., 2008</xref>) . A search of genome sequences reveals the presence of putative <italic>prkC</italic> homologues in a number of different <italic>Bacilli</italic> and <italic>Clostridia</italic> (<xref ref-type="bibr" rid="R45">Peck and Robert, 2009</xref>). Detection of peptidoglycan fragments represents a novel germination mechanism that may allow spores to determine whether other microbes are actively growing in the environment. Whether PrkC-like proteins contribute to the germination of other sporulating bacteria spores has not been determined. It is expected that other Ger receptor independent germination pathways may still be discovered.</p>
+    </sec>
+    <sec id="S12">
+      <title>L-alanine as a germinant</title>
+      <p id="P39">L- Alanine is a universal amino acid that has been shown to be a common germinant for both <italic>Bacilli</italic> and <italic>Clostridia</italic>. L-alanine-mediated germination has been mostly characterized in <italic>B. subtilis</italic> spores (<xref ref-type="bibr" rid="R37">McCann et al., 1996</xref>). However, L-alanine can also induce germination in <italic>B. cereus</italic> (<xref ref-type="bibr" rid="R6">Barlass et al., 2002</xref>), <italic>B. anthracis</italic> (<xref ref-type="bibr" rid="R21">Fisher and Hanna, 2005</xref>), <italic>B. megaterium</italic> (<xref ref-type="bibr" rid="R12">Christie and Lowe, 2007</xref>), <italic> C. botulinum</italic> (<xref ref-type="bibr" rid="R7">Broussolle et al., 2002</xref>), <italic>C. sporogenes</italic> (<xref ref-type="bibr" rid="R7">Broussolle et al., 2002</xref>) <italic>C. perfringens</italic> (<xref ref-type="bibr" rid="R44">Paredes-Sabja et al., 2008</xref>), and <italic>C. sordellii</italic> (<xref ref-type="bibr" rid="R49">Ramirez and Abel-Santos, 2010</xref>). Indeed, L-alanine seems to be the most ubiquitous germinant for bacterial spores.</p>
+      <p id="P40">Although L-alanine is able to induce <italic>B. subtilis</italic> spore germination on its own, spore activation in other <italic>Bacilli</italic> and <italic>Clostridia</italic> requires supplementing L-alanine with other cogerminants. These co-germinants vary from other amino acids, sugars, nucleosides or salts. This suggests that alanine-mediated germination evolved from being a singular germination signal to form part of an integrated response with other germination pathways.</p>
+      <p id="P41">GerA in <italic>B. subtilis</italic> and GerL in <italic>B. anthracis</italic> are close homologues that have been shown to directly influence germination in response to L-alanine (<xref ref-type="bibr" rid="R30">Ireland and Hanna, 2002a</xref>; <xref ref-type="bibr" rid="R37">McCann et al., 1996</xref>). On the other hand, <italic>C. botulinum</italic> and <italic>C. perfringens</italic> spores also responds to L-alanine as germinant (<xref ref-type="bibr" rid="R3">Alberto, 2003</xref>; <xref ref-type="bibr" rid="R7">Broussolle et al., 2002</xref>; <xref ref-type="bibr" rid="R44">Paredes-Sabja et al., 2008</xref>), but their Ger receptors form a phylogenetically divergent clade from the GerA <italic>B. subtilis</italic> receptor (Chris Ross, personal communication).</p>
+      <p id="P42">The divergence between <italic>Bacilli</italic> and <italic>Clostridia</italic> alanine-responsive Ger receptors implies that their alanine-binding sites are dissimilar. Indeed, no consensus motif for alanine binding can be found between the two bacteria classes (Chris Ross, personal communication). Since L-alanine can activate unrelated Ger receptors, it suggest that L-alanine may be the most recent, common ancestral germinant. If this is the case, the ancestral L-alanine Ger receptor genes may have duplicated multiple times in different <italic>Bacilli</italic> and <italic>Clostridia</italic>. After duplication, Ger receptor domains responsible for L-alanine binding would have mutated to create receptors with different specificity. Alternatively, L-alanine sensitivity could have arisen multiple times in the history of this receptor family because of the abundance of L-alanine in different ecological niches.</p>
+    </sec>
+    <sec id="S13">
+      <title>Binding site of germinants</title>
+      <p id="P43">Even though many <italic>Bacilli</italic> and <italic>Clostridia</italic> use similar metabolites as germinants, the mechanism of germinant-receptor recognition and the specific role of inter-subunit interactions remain to be elucidated. A standing question in the field is the location of the binding site for germinants in the Ger receptor complex. Mutation in the primary sequence of the Ger receptor could lead to changes in binding site environment and consequently, changes in germinant selectivity. Gain-of-function mutations that change the specificity of germinant recognition were mapped to either the A- or B-subunit of the corresponding Ger receptor, suggesting that both the A- and B-subunit are involved in germinant recognition (<xref ref-type="bibr" rid="R5">Atluri et al., 2006</xref>; <xref ref-type="bibr" rid="R41">Paidhungat and Setlow, 1999</xref>).</p>
+      <p id="P44">Recently Christie <italic>et al</italic>. has shown that by using alternate B-subunits (GerUB and GerVB) to form the <italic>B. megaterium</italic> Ger receptor, the specificity of germinant recognition can be changed (<xref ref-type="bibr" rid="R12">Christie and Lowe, 2007</xref>). Furthermore, point mutations in the GerVB protein from <italic>B. megaterium</italic> reduced substrate affinity and specificity. These mutations correspond with amino acid changes within transmembrane domains 9 and 10 and the connecting outer loop (<xref ref-type="bibr" rid="R11">Christie et al., 2008</xref>). Since only mutations in the B-subunit were found to affect germinant recognition, it suggests that the C-terminus of the B-subunits may be involved in the formation of a binding pocket, or affect the conformation of nearby functionally important regions (<xref ref-type="bibr" rid="R13">Christie and Lowe, 2008</xref>).</p>
+    </sec>
+    <sec id="S14">
+      <title>Interaction between Ger receptors</title>
+      <p id="P45">Different metabolites are able to act as germinants <italic>in vitro</italic>, individually or in combinations (<xref ref-type="bibr" rid="R21">Fisher and Hanna, 2005</xref>; <xref ref-type="bibr" rid="R28">Hornstra et al., 2006</xref>; <xref ref-type="bibr" rid="R44">Paredes-Sabja et al., 2008</xref>; <xref ref-type="bibr" rid="R69">Wheeldon et al., 2008</xref>). In most cases, multiple Ger receptors appear to work in concert to induce the germination cascade (<xref ref-type="bibr" rid="R12">Christie and Lowe, 2007</xref>). <italic>In vivo</italic>, spores are probably exposed to numerous, simultaneous germination stimuli. Since Ger receptors seem to interact synergistically (<xref ref-type="bibr" rid="R5">Atluri et al., 2006</xref>; <xref ref-type="bibr" rid="R70">Wolgamott and Durham, 1971</xref>), it is possible that multiple interlocking pathways would increase the binding affinity of each cooperating receptor for its cognate ligand. As an example, the GerA receptor in <italic>B. subtilis</italic> functions independently to trigger spore germination in response to L-alanine (<xref ref-type="bibr" rid="R37">McCann et al., 1996</xref>). However, the germination profile of <italic>B. subtilis</italic> spores encoding mutant receptors show that Ger receptors can influence each other's activation (<xref ref-type="bibr" rid="R5">Atluri et al., 2006</xref>).</p>
+      <p id="P46">To understand the molecular determinants of Ger receptor interactions and their effect on germinant recognition, we recently applied kinetic methods to study bacterial spore germination (<xref ref-type="bibr" rid="R1">Abel-Santos and Dodatko, 2007</xref>; <xref ref-type="bibr" rid="R2">Akoachere et al., 2007</xref>; <xref ref-type="bibr" rid="R49">Ramirez and Abel-Santos, 2010</xref>). Spore germination can be analyzed by fitting optical density (OD) decreases to the Michaelis-Menten equation (<xref ref-type="fig" rid="F2">Figure 2a</xref>) (<xref ref-type="bibr" rid="R2">Akoachere et al., 2007</xref>). The kinetic parameters obtained allow calculating apparent binding affinities (<italic>K<sub>m</sub></italic>) of spores for the different co-germinants and maximum rates of spore germination (<italic>V</italic><sub>max</sub>). In these instances, <italic>K<sub>m</sub></italic> refers to the concentration of substrate required to reach half of the maximal germination rate. These parameters can be used, in turn, to propose mechanisms of germination, including potential interactions between germination receptors. Furthermore, by comparing apparent <italic>K<sub>m</sub></italic> values to germinant concentrations <italic>in vivo</italic>, models for spore-germinant complex distribution can be proposed, and rate-limiting steps for the germination process can be inferred. Thus, kinetic analysis can yield information on spore activation even if the identities of the germination receptors are not known (<xref ref-type="bibr" rid="R49">Ramirez and Abel-Santos, 2010</xref>).</p>
+      <p id="P47">Titrations of the germination rates of <italic>B. anthracis</italic> spores with either L-alanine or inosine yielded hyperbolas indicating saturation of germinant binding to specific receptor sites (<xref ref-type="fig" rid="F2">Figure 2b</xref>) (<xref ref-type="bibr" rid="R2">Akoachere et al., 2007</xref>). The fact that the apparent germination <italic>V</italic><sub>max</sub> increased with increasing germinant concentrations indicated that inosine and alanine bind to separate sites. Concomitantly, the affinity of either germinant increased when the complementary germinant is bound at its specific site, revealing remarkable cooperativity between their receptors (<xref ref-type="fig" rid="F2">Figure 2d</xref>). Moreover, the intersection of the curve family at a single point strongly supports the notion that both germinants are present simultaneously on their receptor(s) to achieve the synergy in both velocity and affinity (<xref ref-type="bibr" rid="R2">Akoachere et al., 2007</xref>).</p>
+      <p id="P48">Using this type of analysis, we postulated that <italic>B. anthracis</italic> germination in the presence of L-alanine and inosine is consistent with an ordered bireactant system where inosine is required to bind first to activate spores. The spore-inosine complex then rapidly binds L-alanine to trigger germination (<xref ref-type="bibr" rid="R2">Akoachere et al., 2007</xref>). The proposed mechanistic information was used to design inhibitors that prevented <italic>B. anthracis</italic> spore germination <italic>in vitro</italic> and protected macrophages from anthrax cytotoxicity (<xref ref-type="bibr" rid="R2">Akoachere et al., 2007</xref>).</p>
+      <p id="P49">In contrast to the linear Michaelis-Menten kinetics observed in <italic>B. anthracis</italic>, inosine germination response in <italic>B. cereus</italic> 569 spores shows cooperative behavior (<xref ref-type="bibr" rid="R1">Abel-Santos and Dodatko, 2007</xref>). Double reciprocal and Hill plots of <italic>B. cereus</italic> germination kinetics suggest the presence of two distinct, strongly interacting inosine binding sites. This data is consistent with the existence of two different germination receptors (GerI and GerQ) that are required to respond to inosine as sole germinant (<xref ref-type="bibr" rid="R6">Barlass et al., 2002</xref>; <xref ref-type="bibr" rid="R14">Clements and Moir, 1998</xref>).</p>
+      <p id="P50">We have recently extended germination kinetic analysis to <italic>Clostridia</italic>. Even though germination receptors in <italic>C. sordellii</italic> spores have not been characterized, titrations of germination rates with NaHCO<sub>3</sub> and L-arginine resulted in hyperbolas that could be analyzed using Michaelis-Menten approaches. In contrast, binding of L-phenylalanine and L-alanine by <italic>C. sordellii</italic> spores showed strong cooperative behavior, suggesting that putative L-phenylalanine and L-alanine receptors engage in protein-protein interactions that affect their corresponding binding sites (<xref ref-type="bibr" rid="R49">Ramirez and Abel-Santos, 2010</xref>).</p>
+      <p id="P51">Our recent results in the kinetic analysis of <italic>C. difficile</italic> spore germination suggested the presence of distinct receptors for the co-germinants, taurocholate and glycine (Ramirez et al.). Furthermore, taurocholate, and glycine bind to <italic>C. difficile</italic> spores through a complex mechanism, where both receptor homo- and heterocomplexes seem to be formed. The kinetic data also points to an ordered sequential progression of binding where the putative taurocholate receptor must be activated first, before recognition of glycine can take place (Ramirez et al.).</p>
+    </sec>
+    <sec id="S15">
+      <title>Strategies for spore germination</title>
+      <p id="P52">As seen above, Ger receptors can be differentially activated by environmental stimuli. The differences in responses can be described in terms of Boolean logic, where Ger receptors act as logical gates (<xref ref-type="bibr" rid="R24">Gregg, 1998</xref>). The responses observed so far can be divided into six distinct groups according to the type of signal integration used to trigger spore germination.</p>
+      <p id="P53">The first germination strategy represents the simplest case where a single compound triggers germination by activating its cognate Ger receptor (<xref ref-type="fig" rid="F3">Figure 3a</xref>). This strategy is typified by the GerA receptor of <italic>B. subtilis</italic> that induces germination in the presence of L-alanine alone (<xref ref-type="bibr" rid="R37">McCann et al., 1996</xref>).</p>
+      <p id="P54">The second germination strategy acts as an OR logical gate. This is a parallel process where a single germinant can trigger germination through multiple independent Ger receptors. In this case, activation of any single receptor is sufficient for germination (<xref ref-type="fig" rid="F3">Figure 3b</xref>). This strategy is exemplified by the purine-mediated germination response of <italic>Bacillus cereus</italic> ATCC 14579, where three different receptors (GerI, GerQ, and GerR) redundantly activate germination in the presence of inosine (<xref ref-type="bibr" rid="R28">Hornstra et al., 2006</xref>).</p>
+      <p id="P55">The third germination strategy acts as an AND logical operator where a single germinant activates multiple Ger receptors simultaneously (<xref ref-type="fig" rid="F3">Figure 3c</xref>). Thus, activation of all receptors is necessary before germination starts. This strategy is exemplified by <italic>B. cereus</italic> 569, where both GerI and GerQ must be activated by inosine to trigger germination (<xref ref-type="bibr" rid="R6">Barlass et al., 2002</xref>; <xref ref-type="bibr" rid="R14">Clements and Moir, 1998</xref>).</p>
+      <p id="P56">The fourth strategy acts as an integrator where multiple germinants must interact individually with their cognate receptors. In this case, each receptor recognizes its own cognate germinant, but more than one germinant must be present to activate germination (<xref ref-type="fig" rid="F3">Figure 3d</xref>). This strategy is exemplified by the germination response of <italic>B. anthracis</italic> Sterne, where at least two different germinants must be detected for germination to occur (<xref ref-type="bibr" rid="R21">Fisher and Hanna, 2005</xref>).</p>
+      <p id="P57">In the fifth germination strategy, multiple germinants interact with a single receptor, but any one of the cognate germinants is sufficient to trigger germination (<xref ref-type="fig" rid="F3">Figure 3e</xref>). This strategy is exemplified by <italic>B. megaterium</italic> spores that can germinate with either glucose, L-leucine, or KBr using the GerU receptor (<xref ref-type="bibr" rid="R12">Christie and Lowe, 2007</xref>).</p>
+      <p id="P58">The final strategy represents another AND logical operator where multiple germinants are required to activate a single Ger receptor. However, more than one germinant must be present to trigger germination (<xref ref-type="fig" rid="F3">Figure 3f</xref>). This strategy is exemplified by the alanine/valine germination response of <italic>C. perfringens</italic> where both amino acids are used as germinant, but only a single <italic>gerK</italic> operon is present in the genome (<xref ref-type="bibr" rid="R44">Paredes-Sabja et al., 2008</xref>).</p>
+      <p id="P59">Interestingly, a single species could utilize different germination strategies depending on the combination of germinant and Ger receptors used. For example, in <italic>B. cereus</italic> ATCC 14579, GerI, GerQ, and GerR independently recognize inosine as a germinant. On the other hand, GerI alone is required to recognize both inosine and L-phenylalanine as signals for germination.</p>
+      <p id="P60">It is possible to speculate on the evolutionary history leading to the development of the different germination strategies. The most ancient strategy was probably the activation a single Ger receptor by its cognate germinant (<xref ref-type="fig" rid="F3">Figure 3a</xref>). Alternatively, the most ancient Ger receptor could have been a complex with a promiscuous recognition site (<xref ref-type="fig" rid="F3">Figure 3e</xref>).</p>
+      <p id="P61">A duplication event, followed by genetic drift would have allowed development of the OR logical gate for germination (<xref ref-type="fig" rid="F3">Figure 3b</xref>). Mutations could then have disrupted protein-protein interactions between same complexes in favor of inter-receptor contact. This would have allow the development of the AND gate for germination (<xref ref-type="fig" rid="F3">Figure 3c</xref>). Further mutations in the binding site of one of the duplicated receptors would have allowed changes in germinant selectivity (<xref ref-type="fig" rid="F3">Figure 3d</xref>). Similar binding site mutation would have allowed the development of an AND gate (<xref ref-type="fig" rid="F3">Figure 3f</xref>) from a single receptor that recognize multiple germinants (<xref ref-type="fig" rid="F3">Figure 3e</xref>). Although compelling, more information is needed to understand the development of germination strategies.</p>
+    </sec>
+    <sec id="S16">
+      <title>Future directions</title>
+      <p id="P62">In this article, we have reviewed the current knowledge of the Ger receptor family from <italic>Bacilli</italic> and <italic>Clostridia</italic>. Ger receptor activation represents the first essential step in the establishment of infection by sporulating bacteria and therefore is of great importance for both clinical settings and biodefense. Recent work has made clear that Ger receptors interact to form intricate pathways for germination signal integration. Furthermore, new research has started to unravel the mechanism of germinant recognition. However, many questions remain unanswered. Ger receptor function has been mostly determined by genetic methods. In contrast, biochemical analysis of Ger receptor has been lacking. One of the main barriers for Ger receptor characterization is the difficulties of overexpressing and purifying integral membrane protein complexes (Tarmo Roosild, personal communication). New methods for recombinant membrane protein expression could lead to purification of individual subunits and reconstitution of Ger receptor complexes <italic>in vitro</italic> (<xref ref-type="bibr" rid="R52">Roosild et al., 2006</xref>). Alternatively, <italic>in vitro</italic> transcription/translation systems could allow expressing complete <italic>ger</italic> receptor operons <italic>in vitro</italic> that could then be purified as intact receptor complexes (<xref ref-type="bibr" rid="R36">Liguori et al., 2007</xref>). Once Ger receptors have been reconstituted <italic>in vitro</italic>, biochemical characterization will allow determining receptor stoichiometry, thermodynamics of receptor/ germinant interactions, and the mapping of binding sites and subunit protein-protein contacts.</p>
+      <p id="P63">Recombinant expression of Ger receptors may be complicated by the requirement for most Ger receptor to be formed by complexes of A-, B- and C- subunits. A further hurdle may arise if different Ger receptors organize into higher order arrays in the inner membrane. This type of higher order organization has yet to be confirmed, but may foster cooperation between individual Ger receptors (<xref ref-type="bibr" rid="R5">Atluri et al., 2006</xref>).</p>
+      <p id="P64">Even if Ger receptors prove refractive to protein expression and purification, biochemical characterization could still be achieved. Germination agonists and antagonists have been used to characterize the binding sites of <italic>B. cereus</italic> nucleoside receptors (<xref ref-type="bibr" rid="R16">Dodatko et al., 2009a</xref>). This approach could be extended to map germinant/Ger receptor interactions in other complexes. Furthermore, crosslinking groups could be used to identify Ger receptor domains that contact germinant molecules.</p>
+      <p id="P65">Future work should also focus on determining the molecular determinants underpinning the function of Ger receptors. Currently, it is not known how germinant selectivity is achieved, which other proteins interact with Ger receptors to transduce the initial germinant binding into spore structure germination, what signaling pathways are triggered upon Ger receptor activation, what are the specific functions of the A-, B-, and C- subunits, and how different germination signals are integrated <italic>in vivo</italic>.</p>
+      <p id="P66">Although germination is an all-or-nothing process for each individual spore, subpopulations of spores appear to have different germination thresholds (<xref ref-type="bibr" rid="R22">Ghosh and Setlow, 2009a</xref>). This might reflect a stochastic process due to the low expression levels of Ger receptor proteins. Indeed, spores that can only germinate when multiple Ger receptors are activated simultaneously have been isolated in <italic>B. subtilis</italic>, <italic>B. megaterium</italic> and <italic>B. cereus</italic> (<xref ref-type="bibr" rid="R22">Ghosh and Setlow, 2009a</xref>; <xref ref-type="bibr" rid="R23">Ghosh and Setlow, 2009b</xref>). Future work should elucidate whether differences in Ger receptors levels could account for these superdormant spores.</p>
+      <p id="P67">Ger receptors are naturally occurring small molecule binders. Thus, understanding how Ger receptors detect their cognate germinant, could lead to engineering of novel binding activities. Coupled with the stability of dormant spore and the ease for detecting germination, spores containing modified Ger receptors have the potential to be used as biodetectors of metabolic products or synthetic compounds.</p>
+      <p id="P68">Finally, unknown germination mechanisms may also play an important role in <italic>Bacilli</italic> and <italic>Clostridia</italic> (<xref ref-type="bibr" rid="R57">Shah et al., 2008</xref>). It would be interesting to determine if other Ger-independent germination pathways exist and whether these novel germination mechanisms synergize with Ger receptors to complete <italic>Bacilli</italic> and <italic>Clostridia</italic> life cycle.</p>
+    </sec>
+  </body>
+  <back>
+    <ack id="S17">
+      <title>Acknowledgements</title>
+      <p>The authors want to thank Prof. Eduardo Robleto for helpful discussions. E Abel-Santos was supported by USDA grant number 2010-65119-20603. C Ross was supported by NIH Grant Number P20 RR-016464 from the INBRE Program of the National Center for Research Resources.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="R1">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Abel-Santos</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Dodatko</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Differential nucleoside recognition during <italic>Bacillus cereus</italic> 569 (ATCC 10876) spore germination</article-title>
+          <source>New J Chem</source>
+          <year>2007</year>
+          <volume>31</volume>
+          <fpage>748</fpage>
+          <lpage>755</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R2">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Akoachere</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Squires</surname>
+              <given-names>RC</given-names>
+            </name>
+            <name>
+              <surname>Nour</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Angelov</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Brojatsch</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Abel-Santos</surname>
+              <given-names>EV</given-names>
+            </name>
+          </person-group>
+          <article-title>Identification of an in vivo inhibitor of <italic>Bacillus anthracis</italic> Sterne spore germination</article-title>
+          <source>J Biol Chem</source>
+          <year>2007</year>
+          <volume>282</volume>
+          <fpage>12112</fpage>
+          <lpage>12118</lpage>
+          <pub-id pub-id-type="pmid">17296608</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R3">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Alberto</surname>
+              <given-names>FB</given-names>
+            </name>
+            <name>
+              <surname>Mason</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Carlin</surname>
+              <given-names>DR</given-names>
+            </name>
+            <name>
+              <surname>Peck</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>M.W.</surname>
+            </name>
+          </person-group>
+          <article-title>Variability in spore germination response by strains of proteolytic <italic>Clostridium botulinum</italic> types A, B and F</article-title>
+          <source>Letters in Applied Microbiology</source>
+          <year>2003</year>
+          <volume>36</volume>
+          <fpage>41</fpage>
+          <lpage>45</lpage>
+          <pub-id pub-id-type="pmid">12485340</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R4">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Aldape</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Bryant</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Stevens</surname>
+              <given-names>DL</given-names>
+            </name>
+          </person-group>
+          <article-title><italic>Clostridium sordellii</italic> infection: Epidemiology, clinical findings, and current perspectives on diagnosis and treatment</article-title>
+          <source>Clin Infec Dis</source>
+          <year>2006</year>
+          <volume>43</volume>
+          <fpage>1436</fpage>
+          <lpage>1446</lpage>
+          <pub-id pub-id-type="pmid">17083018</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R5">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Atluri</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ragkousi</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Cortezzo</surname>
+              <given-names>DE</given-names>
+            </name>
+            <name>
+              <surname>Setlow</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Cooperativity between different nutrient receptors in germination of spores of <italic>Bacillus subtilis</italic> and reduction of this cooperativity by alterations in the GerB receptor</article-title>
+          <source>J Bacteriol</source>
+          <year>2006</year>
+          <volume>188</volume>
+          <fpage>28</fpage>
+          <lpage>36</lpage>
+          <pub-id pub-id-type="pmid">16352818</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R6">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Barlass</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Houston</surname>
+              <given-names>CW</given-names>
+            </name>
+            <name>
+              <surname>Clements</surname>
+              <given-names>MO</given-names>
+            </name>
+            <name>
+              <surname>Moir</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Germination of <italic>Bacillus cereus</italic> spores in response to L-alanine and to inosine: the roles of gerL and gerQ operons</article-title>
+          <source>Microbiology</source>
+          <year>2002</year>
+          <volume>148</volume>
+          <fpage>2089</fpage>
+          <lpage>2095</lpage>
+          <pub-id pub-id-type="pmid">12101297</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R7">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Broussolle</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Alberto</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Shearman</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>Mason</surname>
+              <given-names>DR</given-names>
+            </name>
+            <name>
+              <surname>Botella</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Nguyen-The</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Peck</surname>
+              <given-names>MW</given-names>
+            </name>
+            <name>
+              <surname>Carlin</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <article-title>Molecular and physiological characterisation of spore germination in <italic>Clostridium botulinum</italic> and <italic>C. sporogenes</italic></article-title>
+          <source>Anaerobe</source>
+          <year>2002</year>
+          <volume>8</volume>
+          <fpage>89</fpage>
+          <lpage>100</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R8">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cabrera-Martinez</surname>
+              <given-names>R-M</given-names>
+            </name>
+            <name>
+              <surname>Tovar-Rojo</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Vepachedu</surname>
+              <given-names>VR</given-names>
+            </name>
+            <name>
+              <surname>Setlow</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Effects of overexpression of nutrient receptors on germination of spores of <italic>Bacillus subtilis</italic></article-title>
+          <source>J Bacteriol</source>
+          <year>2003</year>
+          <volume>185</volume>
+          <fpage>2457</fpage>
+          <lpage>2464</lpage>
+          <pub-id pub-id-type="pmid">12670969</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R9">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Carey</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>Small</surname>
+              <given-names>DM</given-names>
+            </name>
+          </person-group>
+          <article-title>The characteristics of mixed micellar solutions with particular reference to bile</article-title>
+          <source>American Journal of Medicine</source>
+          <year>1970</year>
+          <volume>49</volume>
+          <fpage>590</fpage>
+          <lpage>608</lpage>
+          <pub-id pub-id-type="pmid">4924587</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R10">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Carr</surname>
+              <given-names>KA</given-names>
+            </name>
+            <name>
+              <surname>Lybarger</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>EC</given-names>
+            </name>
+            <name>
+              <surname>Janes</surname>
+              <given-names>BK</given-names>
+            </name>
+            <name>
+              <surname>Hanna</surname>
+              <given-names>PC</given-names>
+            </name>
+          </person-group>
+          <article-title>The role of <italic>Bacillus anthracis</italic> germinant receptors in germination and virulence</article-title>
+          <source>Molecular Microbiology</source>
+          <year>2010</year>
+          <volume>75</volume>
+          <fpage>365</fpage>
+          <lpage>375</lpage>
+          <pub-id pub-id-type="pmid">19943909</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R11">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Christie</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Lazarevska</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Lowe</surname>
+              <given-names>CR</given-names>
+            </name>
+          </person-group>
+          <article-title>Functional consequences of amino acid substitutions to GerVB, a component of the <italic>Bacillus megaterium</italic> spore germinant receptor</article-title>
+          <source>J Bacteriol</source>
+          <year>2008</year>
+          <volume>190</volume>
+          <fpage>2014</fpage>
+          <lpage>2022</lpage>
+          <pub-id pub-id-type="pmid">18203825</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R12">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Christie</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Lowe</surname>
+              <given-names>CR</given-names>
+            </name>
+          </person-group>
+          <article-title>Role of chromosomal and plasmid-borne receptor homologues in the response of <italic>Bacillus megaterium</italic> QM B1551 spores to germinants</article-title>
+          <source>Journal of Bacteriology</source>
+          <year>2007</year>
+          <volume>189</volume>
+          <fpage>4375</fpage>
+          <lpage>4383</lpage>
+          <pub-id pub-id-type="pmid">17434971</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R13">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Christie</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Lowe</surname>
+              <given-names>CR</given-names>
+            </name>
+          </person-group>
+          <article-title>Amino acid substitutions in transmembrane domains 9 and 10 of GerVB that affect the germination properties of <italic>Bacillus megaterium</italic> spores</article-title>
+          <source>J Bacteriol</source>
+          <year>2008</year>
+          <volume>190</volume>
+          <fpage>8009</fpage>
+          <lpage>8017</lpage>
+          <pub-id pub-id-type="pmid">18931114</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R14">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Clements</surname>
+              <given-names>MO</given-names>
+            </name>
+            <name>
+              <surname>Moir</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Role of the gerI operon of <italic>Bacillus cereus</italic> 569 in the response of spores to germinants</article-title>
+          <source>J Bacteriol</source>
+          <year>1998</year>
+          <volume>180</volume>
+          <fpage>6729</fpage>
+          <lpage>6735</lpage>
+          <pub-id pub-id-type="pmid">9852021</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R15">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dembek</surname>
+              <given-names>ZF</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Rusnak</surname>
+              <given-names>JM</given-names>
+            </name>
+          </person-group>
+          <article-title>Botulism: cause, effects, diagnosis, clinical and laboratory identification, and treatment modalities</article-title>
+          <source>Disaster Med Public Health Prep</source>
+          <year>2007</year>
+          <volume>1</volume>
+          <fpage>122</fpage>
+          <lpage>134</lpage>
+          <pub-id pub-id-type="pmid">18388640</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R16">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dodatko</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Akoachere</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Jimenez</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Alvarez</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Abel-Santos</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>Dissecting interactions between nucleosides and germination receptors in <italic>Bacillus cereus</italic> 569 spores</article-title>
+          <source>Microbiology</source>
+          <year>2009a</year>
+          <volume>156</volume>
+          <fpage>1244</fpage>
+          <lpage>1255</lpage>
+          <pub-id pub-id-type="pmid">20035009</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R17">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dodatko</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Akoachere</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Muehlbauer</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Helfrich</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Howerton</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Ross</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Wysock</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Brojatsch</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Abel-Santos</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title><italic>Bacillus cereus</italic> spores release alanine that synergizes with inosine to promote germination</article-title>
+          <source>PLoS ONE</source>
+          <year>2009b</year>
+          <volume>4</volume>
+          <fpage>e6398</fpage>
+          <pub-id pub-id-type="pmid">19636427</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R18">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Edlich</surname>
+              <given-names>RF</given-names>
+            </name>
+            <name>
+              <surname>Hill</surname>
+              <given-names>LG</given-names>
+            </name>
+            <name>
+              <surname>Mahler</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>Cox</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Becker</surname>
+              <given-names>DG</given-names>
+            </name>
+            <name>
+              <surname>Horowitz</surname>
+              <given-names>JH</given-names>
+            </name>
+            <name>
+              <surname>Nichter</surname>
+              <given-names>LS</given-names>
+            </name>
+            <name>
+              <surname>Martin</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Lineweaver</surname>
+              <given-names>WC</given-names>
+            </name>
+          </person-group>
+          <article-title>Management and prevention of tetanus</article-title>
+          <source>J Long Term Eff Med Implants</source>
+          <year>2003</year>
+          <volume>13</volume>
+          <fpage>139</fpage>
+          <lpage>154</lpage>
+          <pub-id pub-id-type="pmid">14516181</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R19">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ehling-Schulz</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Fricker</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Scherer</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title><italic>Bacillus cereus</italic>, the causative agent of an emetic type of food-borne illness</article-title>
+          <source>Molecular Nutrition &amp; Food Research</source>
+          <year>2004</year>
+          <volume>48</volume>
+          <fpage>479</fpage>
+          <lpage>487</lpage>
+          <pub-id pub-id-type="pmid">15538709</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R20">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Finsterer</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Hess</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>Neuromuscular and central nervous system manifestations of <italic>Clostridium perfringens</italic> infections</article-title>
+          <source>Infection</source>
+          <year>2007</year>
+          <volume>35</volume>
+          <fpage>396</fpage>
+          <lpage>405</lpage>
+          <pub-id pub-id-type="pmid">18034207</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R21">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fisher</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Hanna</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Characterization of <italic>Bacillus anthracis</italic> germinant receptors in vitro</article-title>
+          <source>J Bacteriol</source>
+          <year>2005</year>
+          <volume>187</volume>
+          <fpage>8055</fpage>
+          <lpage>8062</lpage>
+          <pub-id pub-id-type="pmid">16291679</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R22">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ghosh</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Setlow</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Isolation and characterization of superdormant spores of <italic>Bacillus</italic> species</article-title>
+          <source>J Bacteriol</source>
+          <year>2009a</year>
+          <volume>191</volume>
+          <fpage>1787</fpage>
+          <lpage>1797</lpage>
+          <pub-id pub-id-type="pmid">19136594</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R23">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ghosh</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Setlow</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>The preparation, germination properties and stability of superdormant spores of <italic>Bacillus cereus</italic></article-title>
+          <source>Journal of Applied Microbiology</source>
+          <year>2009b</year>
+          <volume>108</volume>
+          <fpage>582</fpage>
+          <lpage>590</lpage>
+          <pub-id pub-id-type="pmid">19674187</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R24">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gregg</surname>
+              <given-names>JR</given-names>
+            </name>
+          </person-group>
+          <source>Ones and Zeros: Understanding Boolean Algebra, Digital Circuits, and the Logic of Sets</source>
+          <year>1998</year>
+          <publisher-name>Wiley-IEEE Press</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="R25">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Guidi-Rontani</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Pereira</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Ruffie</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Sirard</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Weber-Levy</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Mock</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Identification and characterization of a germination operon on the virulence plasmid pXO1 of <italic>Bacillus anthracis</italic></article-title>
+          <source>Mol Microbiol</source>
+          <year>1999</year>
+          <volume>33</volume>
+          <fpage>407</fpage>
+          <lpage>414</lpage>
+          <pub-id pub-id-type="pmid">10411756</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R26">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Harry</surname>
+              <given-names>KH</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Kroos</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Melville</surname>
+              <given-names>SB</given-names>
+            </name>
+          </person-group>
+          <article-title>Sporulation and enterotoxin (CPE) synthesis are controlled by the sporulation-specific sigma factors SigE and SigK in <italic>Clostridium perfringens</italic></article-title>
+          <source>J Bacteriol</source>
+          <year>2009</year>
+          <volume>191</volume>
+          <fpage>2728</fpage>
+          <lpage>2742</lpage>
+          <pub-id pub-id-type="pmid">19201796</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R27">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hornstra</surname>
+              <given-names>LM</given-names>
+            </name>
+            <name>
+              <surname>de Vries</surname>
+              <given-names>YP</given-names>
+            </name>
+            <name>
+              <surname>de Vos</surname>
+              <given-names>WM</given-names>
+            </name>
+            <name>
+              <surname>Abee</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Wells-Bennik</surname>
+              <given-names>MHJ</given-names>
+            </name>
+          </person-group>
+          <article-title>gerR, a novel ger operon involved in L-alanine- and inosine-initiated germination of <italic>Bacillus cereus</italic> ATCC 14579</article-title>
+          <source>Appl Environ Microbiol</source>
+          <year>2005</year>
+          <volume>71</volume>
+          <fpage>774</fpage>
+          <lpage>781</lpage>
+          <pub-id pub-id-type="pmid">15691930</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R28">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hornstra</surname>
+              <given-names>LM</given-names>
+            </name>
+            <name>
+              <surname>de Vries</surname>
+              <given-names>YP</given-names>
+            </name>
+            <name>
+              <surname>Wells-Bennik</surname>
+              <given-names>MH</given-names>
+            </name>
+            <name>
+              <surname>de Vos</surname>
+              <given-names>WM</given-names>
+            </name>
+            <name>
+              <surname>Abee</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Characterization of germination receptors of <italic>Bacillus cereus</italic> ATCC 14579</article-title>
+          <source>Appl Environ Microbiol</source>
+          <year>2006</year>
+          <volume>72</volume>
+          <fpage>44</fpage>
+          <lpage>53</lpage>
+          <pub-id pub-id-type="pmid">16391023</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R29">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Igarashi</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Setlow</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Interaction between individual protein components of the GerA and GerB nutrient receptors that trigger germination of <italic>Bacillus subtilis</italic> spores</article-title>
+          <source>J Bacteriol</source>
+          <year>2005</year>
+          <volume>187</volume>
+          <fpage>2513</fpage>
+          <lpage>2518</lpage>
+          <pub-id pub-id-type="pmid">15774895</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R30">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ireland</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Hanna</surname>
+              <given-names>PC</given-names>
+            </name>
+          </person-group>
+          <article-title>Amino acid- and purine ribonucleoside-induced germination of <italic>Bacillus anthracis</italic> DeltaSterne endospores: gerS mediates responses to aromatic ring structures</article-title>
+          <source>J Bacteriol</source>
+          <year>2002a</year>
+          <volume>184</volume>
+          <fpage>1296</fpage>
+          <lpage>1303</lpage>
+          <pub-id pub-id-type="pmid">11844758</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R31">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ireland</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Hanna</surname>
+              <given-names>PC</given-names>
+            </name>
+          </person-group>
+          <article-title>Macrophage-enhanced germination of <italic>Bacillus anthracis</italic> endospores requires GerS</article-title>
+          <source>Infect Immun</source>
+          <year>2002b</year>
+          <volume>70</volume>
+          <fpage>5870</fpage>
+          <lpage>5872</lpage>
+          <pub-id pub-id-type="pmid">12228320</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R32">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Irie</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Okamoto</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Fujita</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <article-title>A germination mutant of <italic>Bacillus subtilis</italic> deficient in response to glucose</article-title>
+          <source>J Gen Appl Microbiol</source>
+          <year>1982</year>
+          <volume>28</volume>
+          <fpage>345</fpage>
+          <lpage>354</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R33">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ivanova</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Sorokin</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Anderson</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Galleron</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Candelon</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Kapatral</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Bhattacharyya</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Reznik</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Mikhailova</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Lapidus</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genome sequence of <italic>Bacillus cereus</italic> and comparative analysis with <italic>Bacillus anthracis</italic></article-title>
+          <source>Nature</source>
+          <year>2003</year>
+          <volume>423</volume>
+          <fpage>87</fpage>
+          <lpage>91</lpage>
+          <pub-id pub-id-type="pmid">12721630</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R34">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jack</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Paulsen</surname>
+              <given-names>IT</given-names>
+            </name>
+            <name>
+              <surname>Saier</surname>
+              <given-names>MH</given-names>
+            </name>
+          </person-group>
+          <article-title>The amino acid/polyamine/organocation (APC) superfamily of transporters specific for amino acids, polyamines and organocations</article-title>
+          <source>Microbiology</source>
+          <year>2000</year>
+          <volume>146</volume>
+          <fpage>1797</fpage>
+          <lpage>1814</lpage>
+          <pub-id pub-id-type="pmid">10931886</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R35">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kang</surname>
+              <given-names>TJ</given-names>
+            </name>
+            <name>
+              <surname>Fenton</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Weiner</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Hibbs</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Basu</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Baillie</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Cross</surname>
+              <given-names>AS</given-names>
+            </name>
+          </person-group>
+          <article-title>Murine macrophages kill the vegetative form of <italic>Bacillus anthracis</italic></article-title>
+          <source>Infect Immun</source>
+          <year>2005</year>
+          <volume>73</volume>
+          <fpage>7495</fpage>
+          <lpage>7501</lpage>
+          <pub-id pub-id-type="pmid">16239551</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R36">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liguori</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Marques</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Villegas-Mendez</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Rothe</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Lenormand</surname>
+              <given-names>J-L</given-names>
+            </name>
+          </person-group>
+          <article-title>Production of membrane proteins using cell-ree expression systems</article-title>
+          <source>Expert Review of Proteomics</source>
+          <year>2007</year>
+          <volume>4</volume>
+          <fpage>79</fpage>
+          <lpage>90</lpage>
+          <pub-id pub-id-type="pmid">17288517</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R37">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McCann</surname>
+              <given-names>KP</given-names>
+            </name>
+            <name>
+              <surname>Robinson</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Sammons</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Corfe</surname>
+              <given-names>BM</given-names>
+            </name>
+          </person-group>
+          <article-title>Alanine germination receptors of <italic>Bacillus subtilis</italic></article-title>
+          <source>Letters in Applied Microbiology</source>
+          <year>1996</year>
+          <volume>23</volume>
+          <fpage>290</fpage>
+          <lpage>294</lpage>
+          <pub-id pub-id-type="pmid">8987707</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R38">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mock</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Fouet</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Anthrax</article-title>
+          <source>Annual Review of Microbiology</source>
+          <year>2001</year>
+          <volume>55</volume>
+          <fpage>647</fpage>
+          <lpage>671</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R39">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Moir</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>How do spores germinate?</article-title>
+          <source>Journal of Applied Microbiology</source>
+          <year>2006</year>
+          <volume>101</volume>
+          <fpage>526</fpage>
+          <lpage>530</lpage>
+          <pub-id pub-id-type="pmid">16907803</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R40">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Moir</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Corfe</surname>
+              <given-names>BM</given-names>
+            </name>
+            <name>
+              <surname>Behravan</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Spore germination</article-title>
+          <source>Cell Mol Life Sci</source>
+          <year>2002</year>
+          <volume>59</volume>
+          <fpage>403</fpage>
+          <lpage>409</lpage>
+          <pub-id pub-id-type="pmid">11964118</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R41">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Paidhungat</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Setlow</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Isolation and characterization of mutations in <italic>Bacillus subtilis</italic> that allow spore germination in the novel germinant D-alanine</article-title>
+          <source>J Bacteriol</source>
+          <year>1999</year>
+          <volume>181</volume>
+          <fpage>3341</fpage>
+          <lpage>3350</lpage>
+          <pub-id pub-id-type="pmid">10348844</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R42">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Paidhungat</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Setlow</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Role of Ger proteins in nutrient and nonnutrient triggering of spore germination in <italic>Bacillus subtilis</italic></article-title>
+          <source>J Bacteriol</source>
+          <year>2000</year>
+          <volume>182</volume>
+          <fpage>2513</fpage>
+          <lpage>2519</lpage>
+          <pub-id pub-id-type="pmid">10762253</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R43">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Paidhungat</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Setlow</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Localization of a germinant receptor protein (GerBA) to the inner membrane of <italic>Bacillus subtilis</italic> spores</article-title>
+          <source>J Bacteriol</source>
+          <year>2001</year>
+          <volume>183</volume>
+          <fpage>3982</fpage>
+          <lpage>3990</lpage>
+          <pub-id pub-id-type="pmid">11395462</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R44">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Paredes-Sabja</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Torres</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Setlow</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Sarker</surname>
+              <given-names>MR</given-names>
+            </name>
+          </person-group>
+          <article-title><italic>Clostridium perfringens</italic> spore germination: characterization of germinants and their receptors</article-title>
+          <source>J Bacteriol</source>
+          <year>2008</year>
+          <volume>190</volume>
+          <fpage>1190</fpage>
+          <lpage>1201</lpage>
+          <pub-id pub-id-type="pmid">18083820</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R45">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Peck</surname>
+              <given-names>MW</given-names>
+            </name>
+            <name>
+              <surname>Robert</surname>
+              <given-names>KP</given-names>
+            </name>
+          </person-group>
+          <article-title>Biology and genomic analysis of <italic>Clostridium botulinum</italic></article-title>
+          <source>In Advances in Microbial Physiology</source>
+          <year>2009</year>
+          <volume>320</volume>
+          <fpage>183</fpage>
+          <lpage>265</lpage>
+          <publisher-name>Academic Press</publisher-name>
+        </element-citation>
+      </ref>
+      <ref id="R46">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Piggot</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Hilbert</surname>
+              <given-names>DW</given-names>
+            </name>
+          </person-group>
+          <article-title>Sporulation of <italic>Bacillus subtilis</italic></article-title>
+          <source>Current Opinion in Microbiology</source>
+          <year>2004</year>
+          <volume>7</volume>
+          <fpage>579</fpage>
+          <lpage>586</lpage>
+          <pub-id pub-id-type="pmid">15556029</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R47">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Plowman</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Peck</surname>
+              <given-names>MW</given-names>
+            </name>
+          </person-group>
+          <article-title>Use of a novel method to characterize the response of spores of nonproteolytic <italic>Clostridium botulinum</italic> types B, E and F to a wide range of germinants and conditions</article-title>
+          <source>Journal of Applied Microbiology</source>
+          <year>2002</year>
+          <volume>92</volume>
+          <fpage>681</fpage>
+          <lpage>694</lpage>
+          <pub-id pub-id-type="pmid">11966909</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R48">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Preston</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Douthit</surname>
+              <given-names>HA</given-names>
+            </name>
+          </person-group>
+          <article-title>Functional relationships between L- and D-alanine, inosine and NH4Cl during germination of spores of <italic>Bacillus cereus</italic> T</article-title>
+          <source>J Gen Microbiol</source>
+          <year>1988</year>
+          <volume>134</volume>
+          <fpage>3001</fpage>
+          <lpage>3010</lpage>
+          <pub-id pub-id-type="pmid">3151208</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R49">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ramirez</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Abel-Santos</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>Requirements for germination of <italic>Clostridium sordellii</italic> spores in vitro</article-title>
+          <source>J Bacteriol</source>
+          <year>2010</year>
+          <volume>192</volume>
+          <fpage>418</fpage>
+          <lpage>425</lpage>
+          <pub-id pub-id-type="pmid">19915025</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R50">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ramirez</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Liggins</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Abel-Santos</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>Kinetic evidence for the presence of putative germination receptors in <italic>C. difficile</italic> spores</article-title>
+          <source>data not published</source>
+        </element-citation>
+      </ref>
+      <ref id="R51">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Read</surname>
+              <given-names>TD</given-names>
+            </name>
+            <name>
+              <surname>Peterson</surname>
+              <given-names>SN</given-names>
+            </name>
+            <name>
+              <surname>Tourasse</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Baillie</surname>
+              <given-names>LW</given-names>
+            </name>
+            <name>
+              <surname>Paulsen</surname>
+              <given-names>IT</given-names>
+            </name>
+            <name>
+              <surname>Nelson</surname>
+              <given-names>KE</given-names>
+            </name>
+            <name>
+              <surname>Tettelin</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Fouts</surname>
+              <given-names>DE</given-names>
+            </name>
+            <name>
+              <surname>Eisen</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Gill</surname>
+              <given-names>SR</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The genome sequence of <italic>Bacillus anthracis</italic> Ames and comparison to closely related bacteria</article-title>
+          <source>Nature</source>
+          <year>2003</year>
+          <volume>423</volume>
+          <fpage>81</fpage>
+          <lpage>86</lpage>
+          <pub-id pub-id-type="pmid">12721629</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R52">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Roosild</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Vega</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Castronovo</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Choe</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Characterization of the family of Mistic homologues</article-title>
+          <source>BMC Structural Biology</source>
+          <year>2006</year>
+          <volume>6</volume>
+          <fpage>10</fpage>
+          <pub-id pub-id-type="pmid">16704729</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R53">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sebaihia</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Wren</surname>
+              <given-names>BW</given-names>
+            </name>
+            <name>
+              <surname>Mullany</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Fairweather</surname>
+              <given-names>NF</given-names>
+            </name>
+            <name>
+              <surname>Minton</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Stabler</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Thomson</surname>
+              <given-names>NR</given-names>
+            </name>
+            <name>
+              <surname>Roberts</surname>
+              <given-names>AP</given-names>
+            </name>
+            <name>
+              <surname>Cerdeno-Tarraga</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The multidrug-resistant human pathogen <italic>Clostridium difficile</italic> has a highly mobile, mosaic genome</article-title>
+          <source>Nature Genetics</source>
+          <year>2006</year>
+          <volume>38</volume>
+          <fpage>779</fpage>
+          <lpage>786</lpage>
+          <pub-id pub-id-type="pmid">16804543</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R54">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Segel</surname>
+              <given-names>IH</given-names>
+            </name>
+          </person-group>
+          <article-title>Enzyme kinetics</article-title>
+          <source>Behavior and analysis of rapid equilibrium and steady-state enzyme systems</source>
+          <year>1993</year>
+          <publisher-name>Wiley Interscience Publication</publisher-name>
+          <edition>Wiley Classics Library Edition</edition>
+        </element-citation>
+      </ref>
+      <ref id="R55">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Senesi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Cercignani</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Freer</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Batoni</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Barnini</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ota</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <article-title>Structural and stereospecific requirements for the nucleoside-triggered germination of <italic>Bacillus cereus</italic> spores</article-title>
+          <source>J Gen Microbiol</source>
+          <year>1991</year>
+          <volume>137</volume>
+          <fpage>399</fpage>
+          <lpage>404</lpage>
+          <pub-id pub-id-type="pmid">1901905</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R56">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Setlow</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Spore germination</article-title>
+          <source>Curr Opin Microbiol</source>
+          <year>2003</year>
+          <volume>6</volume>
+          <fpage>550</fpage>
+          <lpage>556</lpage>
+          <pub-id pub-id-type="pmid">14662349</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R57">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shah</surname>
+              <given-names>IM</given-names>
+            </name>
+            <name>
+              <surname>Laaberki</surname>
+              <given-names>M-H</given-names>
+            </name>
+            <name>
+              <surname>Popham</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Dworkin</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>A eukaryotic-like Ser/Thr kinase signals bacteria to exit dormancy in response to peptidoglycan fragments</article-title>
+          <source>Cell</source>
+          <year>2008</year>
+          <volume>135</volume>
+          <fpage>486</fpage>
+          <lpage>496</lpage>
+          <pub-id pub-id-type="pmid">18984160</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R58">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shibata</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Ohnishi</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Takeda</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Fukunaga</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Shimamura</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Yasunobu</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Tani</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Hashimoto</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Germination of <italic>Bacillus cereus</italic> spores induced by purine ribosides and their analogs: effects of modification of base and sugar moieties of purine nucleosides on germination-inducing activity</article-title>
+          <source>Can J Microbiol</source>
+          <year>1986</year>
+          <volume>32</volume>
+          <fpage>186</fpage>
+          <lpage>189</lpage>
+          <pub-id pub-id-type="pmid">3084054</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R59">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sorg</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Sonenshein</surname>
+              <given-names>AL</given-names>
+            </name>
+          </person-group>
+          <article-title>Bile salts and glycine as cogerminants for <italic>Clostridium difficile</italic> spores</article-title>
+          <source>J Bacteriol</source>
+          <year>2008</year>
+          <volume>190</volume>
+          <fpage>2505</fpage>
+          <lpage>2512</lpage>
+          <pub-id pub-id-type="pmid">18245298</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R60">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sorg</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Sonenshein</surname>
+              <given-names>AL</given-names>
+            </name>
+          </person-group>
+          <article-title>Chenodeoxycholate is an inhibitor of <italic>Clostridium difficile</italic> spore germination</article-title>
+          <source>J Bacteriol</source>
+          <year>2009</year>
+          <volume>191</volume>
+          <fpage>1115</fpage>
+          <lpage>1117</lpage>
+          <pub-id pub-id-type="pmid">19060152</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R61">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Surowiec</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Kuyumjian</surname>
+              <given-names>AG</given-names>
+            </name>
+            <name>
+              <surname>Wynd</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Cicogna</surname>
+              <given-names>CE</given-names>
+            </name>
+          </person-group>
+          <article-title>Past, present, and future therapies for <italic>Clostridium difficile</italic>-associated disease</article-title>
+          <source>Ann Pharmacother</source>
+          <year>2006</year>
+          <volume>40</volume>
+          <fpage>2155</fpage>
+          <lpage>2163</lpage>
+          <pub-id pub-id-type="pmid">17148650</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R62">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Venkata Ramana Vepachedu</surname>
+              <given-names>PS</given-names>
+            </name>
+          </person-group>
+          <article-title>Analysis of interactions between nutrient germinant receptors and SpoVA proteins of <italic>Bacillus subtilis</italic> spores</article-title>
+          <source>FEMS Microbiology Letters</source>
+          <year>2007</year>
+          <volume>274</volume>
+          <fpage>42</fpage>
+          <lpage>47</lpage>
+          <pub-id pub-id-type="pmid">17573930</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R63">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vishwakarma</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>The pH and bicarbonate-ion content of the oviduct and uterine fluids</article-title>
+          <source>Fertil Steril</source>
+          <year>1962</year>
+          <volume>13</volume>
+          <fpage>481</fpage>
+          <lpage>485</lpage>
+          <pub-id pub-id-type="pmid">13926247</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R64">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Waites</surname>
+              <given-names>WM</given-names>
+            </name>
+            <name>
+              <surname>Wyatt</surname>
+              <given-names>LR</given-names>
+            </name>
+          </person-group>
+          <article-title>Germination of spores of <italic>Clostridium bifermentans</italic> by certain amino acids, lactate and pyruvate in the presence of sodium or potassium Ions</article-title>
+          <source>J Gen Microbiol</source>
+          <year>1971</year>
+          <volume>67</volume>
+          <fpage>215</fpage>
+          <lpage>222</lpage>
+          <pub-id pub-id-type="pmid">5132277</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R65">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wax</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Freese</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>Initiation of the germination of <italic>Bacillus subtilis</italic> spores by a combination of compounds in place of L-alanine</article-title>
+          <source>Journal of Bacteriology</source>
+          <year>1968</year>
+          <volume>95</volume>
+          <fpage>433</fpage>
+          <lpage>438</lpage>
+          <pub-id pub-id-type="pmid">4966545</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R66">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wax</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Freese</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Cashel</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Separation of two functional roles of L-alanine in the initiation of <italic>Bacillus subtilis</italic> spore germination</article-title>
+          <source>J Bacteriol</source>
+          <year>1967</year>
+          <volume>94</volume>
+          <fpage>522</fpage>
+          <lpage>529</lpage>
+          <pub-id pub-id-type="pmid">4962298</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R67">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Weiner</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Hanna</surname>
+              <given-names>PC</given-names>
+            </name>
+          </person-group>
+          <article-title>Macrophage-mediated germination of <italic>Bacillus anthracis</italic> endospores requires the <italic>gerH</italic> operon</article-title>
+          <source>Infect Immun</source>
+          <year>2003</year>
+          <volume>71</volume>
+          <fpage>3954</fpage>
+          <lpage>3959</lpage>
+          <pub-id pub-id-type="pmid">12819082</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R68">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Weiner</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Read</surname>
+              <given-names>TD</given-names>
+            </name>
+            <name>
+              <surname>Hanna</surname>
+              <given-names>PC</given-names>
+            </name>
+          </person-group>
+          <article-title>Identification and characterization of the <italic>gerH</italic> operon of <italic>Bacillus anthracis</italic> endospores: a differential role for purine nucleosides in germination</article-title>
+          <source>J Bacteriol</source>
+          <year>2003</year>
+          <volume>185</volume>
+          <fpage>1462</fpage>
+          <lpage>1464</lpage>
+          <pub-id pub-id-type="pmid">12562819</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R69">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wheeldon</surname>
+              <given-names>LJ</given-names>
+            </name>
+            <name>
+              <surname>Worthington</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Hilton</surname>
+              <given-names>AC</given-names>
+            </name>
+            <name>
+              <surname>Elliott</surname>
+              <given-names>TSJ</given-names>
+            </name>
+            <name>
+              <surname>Lambert</surname>
+              <given-names>PA</given-names>
+            </name>
+          </person-group>
+          <article-title>Physical and chemical factors influencing the germination of <italic>Clostridium difficile</italic> spores</article-title>
+          <source>J Appl Microbiol</source>
+          <year>2008</year>
+          <volume>105</volume>
+          <fpage>2223</fpage>
+          <lpage>2230</lpage>
+          <pub-id pub-id-type="pmid">19120667</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R70">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wolgamott</surname>
+              <given-names>GD</given-names>
+            </name>
+            <name>
+              <surname>Durham</surname>
+              <given-names>NN</given-names>
+            </name>
+          </person-group>
+          <article-title>Initiation of spore germination in <italic>Bacillus cereus</italic>: a proposed allosteric receptor</article-title>
+          <source>Can J Microbiol</source>
+          <year>1971</year>
+          <volume>17</volume>
+          <fpage>1043</fpage>
+          <lpage>1048</lpage>
+          <pub-id pub-id-type="pmid">4999536</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R71">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yasuda</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Tochikubo</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Relation between D-glucose and L- and D-alanine in the initiation of germination of <italic>Bacillus subtilis</italic> spores</article-title>
+          <source>Microbiol Immunol</source>
+          <year>1984</year>
+          <volume>28</volume>
+          <fpage>197</fpage>
+          <lpage>207</lpage>
+          <pub-id pub-id-type="pmid">6427562</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R72">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yousten</surname>
+              <given-names>AA</given-names>
+            </name>
+          </person-group>
+          <article-title>Germination of <italic>Bacillus cereus</italic> endospores: a proposed role for heat shock and nucleosides</article-title>
+          <source>Can J Microbiol</source>
+          <year>1975</year>
+          <volume>21</volume>
+          <fpage>1192</fpage>
+          <lpage>1197</lpage>
+          <pub-id pub-id-type="pmid">809124</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig id="F1" position="float" orientation="portrait">
+      <label>Figure 1</label>
+      <caption>
+        <p>Model of the quintessential germination receptor GerA from <italic>B. subtilis</italic>. Suggested topology and localization of the GerAA, GerAB, and GerAC proteins are shown. All other Ger receptors are believed to fold in a similar fashion (adapted from <xref ref-type="bibr" rid="R40">Moir et al., 2002</xref>).</p>
+      </caption>
+      <graphic xlink:href="nihms-283702-f0001"/>
+    </fig>
+    <fig id="F2" position="float" orientation="portrait">
+      <label>Figure 2</label>
+      <caption>
+        <p>Idealized B. anthracis germination kinetics analysis. (a) <italic>B. anthracis</italic> spores were treated with increasing amounts of inosine at a fixed L-alanine concentration (<xref ref-type="bibr" rid="R2">Akoachere et al., 2007</xref>). Germination rates were calculated from the change in optical density over time (grey bar). <italic>(b)</italic> Plotting germination rate vs. inosine concentration gave a hyperbolic curve indicating saturation of specific receptor sites. <italic>(c)</italic> Double reciprocal plots were used to calculate inosine's apparent binding constant (<italic>K<sub>m</sub></italic>) and the maximal apparent rate (<italic>V<sub>max</sub></italic>). <italic>(d)</italic> This process was repeated at different fix L-alanine concentrations to obtain a family of double reciprocal plots. <italic>V<sub>max</sub></italic> increased with increasing L-alanine concentrations indicating that inosine and alanine bind to separate sites (<xref ref-type="bibr" rid="R54">Segel, 1993</xref>). The spore's affinity for inosine also increased with increasing L-alanine concentration revealing cooperativity between their receptors. The intersection of the curve family at a single point strongly supports the notion that both germinants are present simultaneously on their receptor(s).</p>
+      </caption>
+      <graphic xlink:href="nihms-283702-f0002"/>
+    </fig>
+    <fig id="F3" position="float" orientation="portrait">
+      <label>Figure 3</label>
+      <caption>
+        <p>Strategies for spore germination. Boxed letters represent germinants. White and black hourglasses represent Ger receptors that recognize a single germinant. Grey hourglasses represent Ger receptors that recognize multiple germinants. Arrows represent germination. <italic>(a)</italic> A single germinant triggers germination by activating its cognate Ger receptor. (<italic>b</italic>) A single germinant can trigger germination through multiple independent Ger receptors. <italic>(c)</italic> A single germinant must activate different Ger receptors simultaneously. (<italic>d</italic>) Multiple germinants must interact individually with their cognate receptors. <italic>(e)</italic> A single Ger receptor can be independently activated by different germinants. <italic>(f)</italic> A single Ger receptor must interact with multiple germinants to be activated.</p>
+      </caption>
+      <graphic xlink:href="nihms-283702-f0003"/>
+    </fig>
+  </floats-group>
+</article>

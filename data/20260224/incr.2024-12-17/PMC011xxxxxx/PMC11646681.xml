@@ -1,0 +1,1268 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties manuscript?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">0255562</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">5985</journal-id>
+      <journal-id journal-id-type="nlm-ta">N Engl J Med</journal-id>
+      <journal-id journal-id-type="iso-abbrev">N Engl J Med</journal-id>
+      <journal-title-group>
+        <journal-title>The New England journal of medicine</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0028-4793</issn>
+      <issn pub-type="epub">1533-4406</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">38598574</article-id>
+      <article-id pub-id-type="pmc">11646681</article-id>
+      <article-id pub-id-type="doi">10.1056/NEJMoa2311708</article-id>
+      <article-id pub-id-type="manuscript">NIHMS1991547</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Pragmatic Trial of Hospitalization Rate in Chronic Kidney Disease</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Vazquez</surname>
+            <given-names>Miguel A.</given-names>
+          </name>
+          <degrees>M.D.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Oliver</surname>
+            <given-names>George</given-names>
+          </name>
+          <degrees>M.D., Ph.D.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Amarasingham</surname>
+            <given-names>Ruben</given-names>
+          </name>
+          <degrees>M.D.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Venkatraghavan</surname>
+            <given-names>Sundaram M.</given-names>
+          </name>
+          <degrees>Pharm., Ph.D.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chan</surname>
+            <given-names>Kevin</given-names>
+          </name>
+          <degrees>M.D.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ahn</surname>
+            <given-names>Chul</given-names>
+          </name>
+          <degrees>Ph.D.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhang</surname>
+            <given-names>Song</given-names>
+          </name>
+          <degrees>Ph.D.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bickel</surname>
+            <given-names>Perry</given-names>
+          </name>
+          <degrees>M.D.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Parikh</surname>
+            <given-names>Samir M.</given-names>
+          </name>
+          <degrees>M.D.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wells</surname>
+            <given-names>Barbara</given-names>
+          </name>
+          <degrees>Ph.D.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Miller</surname>
+            <given-names>R. Tyler</given-names>
+          </name>
+          <degrees>M.D.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hedayati</surname>
+            <given-names>Susan</given-names>
+          </name>
+          <degrees>M.D., M.H.S.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hastings</surname>
+            <given-names>Jeffrey</given-names>
+          </name>
+          <degrees>M.D.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Jaiyeola</surname>
+            <given-names>Adeola</given-names>
+          </name>
+          <degrees>M.D.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Nguyen</surname>
+            <given-names>Tuan-Minh</given-names>
+          </name>
+          <degrees>M.S.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Moran</surname>
+            <given-names>Brett</given-names>
+          </name>
+          <degrees>M.D.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Santini</surname>
+            <given-names>Noel</given-names>
+          </name>
+          <degrees>M.D.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Barker</surname>
+            <given-names>Blake</given-names>
+          </name>
+          <degrees>M.D.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Velasco</surname>
+            <given-names>Ferdinand</given-names>
+          </name>
+          <degrees>M.D.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Myers</surname>
+            <given-names>Lynn</given-names>
+          </name>
+          <degrees>M.D.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Meehan</surname>
+            <given-names>Thomas P.</given-names>
+          </name>
+          <degrees>M.D.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Fox</surname>
+            <given-names>Chester</given-names>
+          </name>
+          <degrees>M.D.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Toto</surname>
+            <given-names>Robert D.</given-names>
+          </name>
+          <degrees>M.D.</degrees>
+        </contrib>
+        <contrib contrib-type="author">
+          <collab>ICD-Pieces Study Group</collab>
+          <xref rid="FN1" ref-type="author-notes">*</xref>
+        </contrib>
+        <aff id="A1">Department of Internal Medicine (M.A.V., P.B., S.M.P., R.T.M., S.H., B.B., R.D.T.) and the Peter O’Donnell Jr. School of Public Health (C.A., S.Z.), University of Texas Southwestern Medical Center, the Parkland Center for Clinical Innovation (G.O., V.S., A.J., T.-M.N.), Pieces Technologies (R.A.), Veterans Affairs of North Texas Health Care System (R.T.M., S.H., J.H.), Parkland Health (B.M., N.S.), and Texas Health Resources (F.V., L.M.) — all in Dallas; the National Institute of Diabetes and Digestive and Kidney Diseases (K.C.) and the National Heart, Lung, and Blood Institute (B.W.) — both in Bethesda, MD; ProHealth Physicians, Farmington, CT (T.P.M.); and the State University of New York, Buffalo (C.F.).</aff>
+      </contrib-group>
+      <author-notes>
+        <fn fn-type="other" id="FN1">
+          <label>*</label>
+          <p id="P1">A list of the investigators in the ICD-Pieces Study Group is provided in the <xref rid="SD1" ref-type="supplementary-material">Supplementary Appendix</xref>, available at <ext-link xlink:href="https://NEJM.org" ext-link-type="uri">NEJM.org</ext-link>.</p>
+        </fn>
+        <corresp id="CR1">Dr. Vazquez can be contacted at <email>miguel.vazquez@utsouthwestern.edu</email> or at the Division of Nephrology, Department of Internal Medicine, University of Texas Southwestern Medical Center, 5323 Harry Hines Blvd., Dallas, TX 75390.</corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>8</day>
+        <month>11</month>
+        <year>2024</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <day>04</day>
+        <month>4</month>
+        <year>2024</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>15</day>
+        <month>12</month>
+        <year>2024</year>
+      </pub-date>
+      <volume>390</volume>
+      <issue>13</issue>
+      <fpage>1196</fpage>
+      <lpage>1206</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract id="ABS1">
+        <sec id="S1">
+          <title>BACKGROUND</title>
+          <p id="P2">Despite the availability of effective therapies for patients with chronic kidney disease, type 2 diabetes, and hypertension (the kidney-dysfunction triad), the results of large-scale trials examining the implementation of guideline-directed therapy to reduce the risk of death and complications in this population are lacking.</p>
+        </sec>
+        <sec id="S2">
+          <title>METHODS</title>
+          <p id="P3">In this open-label, cluster-randomized trial, we assigned 11,182 patients with the kidney-dysfunction triad who were being treated at 141 primary care clinics either to receive an intervention that used a personalized algorithm (based on the patient’s electronic health record [EHR]) to identify patients and practice facilitators to assist providers in delivering guideline-based interventions or to receive usual care. The primary outcome was hospitalization for any cause at 1 year. Secondary outcomes included emergency department visits, readmissions, cardiovascular events, dialysis, and death.</p>
+        </sec>
+        <sec id="S3">
+          <title>RESULTS</title>
+          <p id="P4">We assigned 71 practices (enrolling 5690 patients) to the intervention group and 70 practices (enrolling 5492 patients) to the usual-care group. The hospitalization rate at 1 year was 20.7% (95% confidence interval [CI], 19.7 to 21.8) in the intervention group and 21.1% (95% CI, 20.1 to 22.2) in the usual-care group (between-group difference, 0.4 percentage points; P = 0.58). The risks of emergency department visits, readmissions, cardiovascular events, dialysis, or death from any cause were similar in the two groups. The risk of adverse events was also similar in the trial groups, except for acute kidney injury, which was observed in more patients in the intervention group (12.7% vs. 11.3%).</p>
+        </sec>
+        <sec id="S4">
+          <title>CONCLUSIONS</title>
+          <p id="P5">In this pragmatic trial involving patients with the triad of chronic kidney disease, type 2 diabetes, and hypertension, the use of an EHR-based algorithm and practice facilitators embedded in primary care clinics did not translate into reduced hospitalization at 1 year. (Funded by the National Institutes of Health and others; ICD-Pieces <ext-link xlink:href="https://ClinicalTrials.gov" ext-link-type="uri">ClinicalTrials.gov</ext-link> number, <ext-link xlink:href="https://clinicaltrials.gov/ct2/show/NCT02587936" ext-link-type="uri">NCT02587936</ext-link>.)</p>
+        </sec>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <p id="P53">It has become increasingly common for individual patients to have multiple chronic conditions, which has led to an increase in mortality, preventable hospitalizations, and health care costs, as well as more emergency department visits, especially among older persons, those with low income, and underrepresented groups.<sup><xref rid="R1" ref-type="bibr">1</xref>,<xref rid="R2" ref-type="bibr">2</xref></sup> Chronic kidney disease, type 2 diabetes, and hypertension (the kidney-dysfunction triad) represent chronic conditions that often coexist and place patients at high risk for major cardiovascular events and kidney failure.<sup><xref rid="R3" ref-type="bibr">3</xref>–<xref rid="R5" ref-type="bibr">5</xref></sup></p>
+    <p id="P6">Multidisciplinary approaches have improved outcomes for patients in underserved Indian Health Services populations with chronic kidney disease and diabetes.<sup><xref rid="R6" ref-type="bibr">6</xref></sup> Other studies have shown that the use of practice facilitators, defined as trained persons who support the implementation of multiple components and approaches, increases the adoption of evidence-based therapies in primary care practices.<sup><xref rid="R7" ref-type="bibr">7</xref>,<xref rid="R8" ref-type="bibr">8</xref></sup> Despite a growing array of guideline-directed therapies for patients with the kidney-dysfunction triad, the results of large trials to examine the implementation of guideline-directed therapy to reduce morbidity and mortality in this population are lacking.<sup><xref rid="R9" ref-type="bibr">9</xref>–<xref rid="R14" ref-type="bibr">14</xref></sup></p>
+    <p id="P7">We conducted the Improving Chronic Disease Management with Pieces (ICD-Pieces) trial to test the hypothesis that an intervention combining information technology with practice facilitators could reduce the hospitalization rate among patients with the kidney-dysfunction triad.</p>
+    <sec id="S5">
+      <title>METHODS</title>
+      <sec id="S6">
+        <title>TRIAL DESIGN AND OVERSIGHT</title>
+        <p id="P8">The trial was a cluster-randomized, embedded pragmatic clinical trial (i.e., with random treatment assignments embedded in everyday practice), with the intervention delivered as part of the workflow at 141 primary care practices at four large health systems: Parkland Health, Texas Health Resources, and the Veterans Affairs of North Texas Health Care System (VANTX), all in Dallas–Fort Worth; and ProHealth Physicians of Farmington, Connecticut. All four health systems serve diverse ethnic and socioeconomic groups and use different configurations of electronic health records. Details regarding these systems are provided in <xref rid="SD1" ref-type="supplementary-material">Table S1</xref> in the <xref rid="SD1" ref-type="supplementary-material">Supplementary Appendix</xref>, available with the full text of this article at <ext-link xlink:href="https://NEJM.org" ext-link-type="uri">NEJM.org</ext-link>. The trial design is summarized in <xref rid="SD1" ref-type="supplementary-material">Table S2</xref>.</p>
+        <p id="P9">The trial was funded by the National Institutes of Health, which included a grant from the National Institute of Diabetes and Digestive and Kidney Diseases. Data were collected from the electronic health records at each health system and from claims data and were analyzed by the trial statisticians.</p>
+        <p id="P10">The manuscript was written by the first and last authors, who made the decision to submit it for publication. A steering committee consisting of the authors and leadership staff members of the health systems oversaw the conduct of the trial. A data and safety monitoring committee reviewed the performance and safety of the trial. The institutional review board at each health system approved the conduct of the trial, which included a waiver of informed consent. Information about the trial and options for opting out were provided to both patients and providers. The trial protocol is available at <ext-link xlink:href="https://NEJM.org" ext-link-type="uri">NEJM.org</ext-link>.</p>
+      </sec>
+      <sec id="S7">
+        <title>PATIENTS</title>
+        <p id="P11">The trial population included adults (18 to 85 years of age) who had the kidney-dysfunction triad of chronic kidney disease, type 2 diabetes, and hypertension (<xref rid="SD1" ref-type="supplementary-material">Table S3</xref>). Chronic kidney disease was defined as an estimated glomerular filtration rate (eGFR) of less than 60 ml per minute per 1.73 m<sup>2</sup> of body-surface area (according to either the Modification of Diet in Renal Disease or the Chronic Kidney Disease Epidemiology Collaboration equation) or the presence of proteinuria, as defined by the following urinary measures: a random albumin-to-creatinine ratio of more than 30 or a random protein-to-creatinine ratio of more than 200 (with albumin or protein measured in milligrams and creatinine measured in grams) or a 24-hour protein measure of more than 150 mg. The diagnosis of chronic kidney disease was verified by at least two measurements taken at least 3 months apart.<sup><xref rid="R5" ref-type="bibr">5</xref></sup></p>
+        <p id="P12">Type 2 diabetes was defined as any of the following: documentation of type 2 diabetes in the problem list in the electronic health record, fasting hyperglycemia (&gt;126 mg of glucose per deciliter [7 mmol per liter]), a random glucose level of more than 200 mg per deciliter (11.1 mmol per liter), a glycated hemoglobin level of more than 6.5%, or treatment with a glucose-lowering agent.<sup><xref rid="R9" ref-type="bibr">9</xref>–<xref rid="R11" ref-type="bibr">11</xref></sup> Hypertension was defined as any of the following: problem list documentation, blood pressure of more than 140/90 mm Hg recorded on two occasions at least 1 week apart, or the use of medications for hypertension.<sup><xref rid="R15" ref-type="bibr">15</xref></sup></p>
+        <p id="P13">Exclusion criteria were pregnancy, incarceration, acute kidney injury, rapidly progressive glomerulonephritis, chronic kidney disease stage 5, end-stage kidney disease, end-stage organ damage, or life expectancy of less than 2 years. Computable phenotypes (i.e., a definition of a condition that is based solely on data that can be processed by a computer) were used to identify eligible patients from the electronic health records at each health care system. The accuracy of computable phenotypes was validated against manual chart review of a random sample of 10% of all the patients who were enrolled in the trial (<xref rid="SD1" ref-type="supplementary-material">Table S4</xref>).</p>
+      </sec>
+      <sec id="S8">
+        <title>TRIAL PROCEDURES</title>
+        <p id="P14">A practice was defined as a panel of patients under the care of providers and without overlap with other providers. Practices were stratified according to health system and were randomly assigned either to the trial intervention or to usual care. Randomization was conducted with the use of a permuted-block approach with variable block sizes. After randomization, patients were followed at intervals that were scheduled by their primary care provider (<xref rid="SD1" ref-type="supplementary-material">Fig. S1</xref>). At each clinic visit, vital signs were recorded and laboratory tests were performed as prescribed. Population-health nurses and pharmacists acted as practice facilitators and were assigned to each health system to implement the trial protocol (<xref rid="SD1" ref-type="supplementary-material">Table S5</xref>). Implementation included assisting with identification of patients, notifying primary care providers of eligibility, delivery of the evidence-based interventions, monitoring of visit adherence, and informing providers of patients’ individual care goals, performance characteristics, and communications.</p>
+        <p id="P15">Enrollment into the intervention group consisted of a three-step process. First, a practice facilitator confirmed that the trial criteria had been met. Second, clinic personnel were notified of the upcoming visit of the trial candidate. And third, patients had to be seen in clinic and enrolled on the day of the clinic visit. Practice facilitators were provided with updated lists of all follow-up clinic visits to promote the use of evidence-based interventions.</p>
+        <p id="P16">The intervention consisted of two components: first, an algorithm identified patients in the electronic health record in real time, and then practice facilitators assisted primary care providers in implementing evidence-based interventions. A patient registry and system-specific tools (e.g., best practice alerts, smart sets, and protocols) were available only to providers and practice facilitators in the intervention group. Two health systems (Parkland Health and Texas Health Resources) included population health nurses, and two health systems (ProHealth Physicians and VANTX) included pharmacists as practice facilitators. Primary care providers could delegate the use of trial materials to implement the evidence-based interventions for the kidney-dysfunction triad to the practice facilitators (<xref rid="SD1" ref-type="supplementary-material">Fig. S2</xref>). Practice facilitators assisted providers and patients with interventions that included updating the problem list, targeting a clinic blood pressure of less than 140/90 mm Hg, prescribing an angiotensin-converting–enzyme (ACE) inhibitor or angiotensin-receptor blocker (ARB), achieving goals for glycated hemoglobin, treating hyperglycemia and avoiding hypoglycemia, monitoring the use of statins, avoiding the use of nonsteriodal antiinflammatory drugs, recommending immunizations, and providing patient education.<sup><xref rid="R9" ref-type="bibr">9</xref>–<xref rid="R12" ref-type="bibr">12</xref>,<xref rid="R15" ref-type="bibr">15</xref></sup> Patients who were receiving usual care were treated without access to trial registries or practice facilitators. Trial participation was completed by each patient 12 months after the enrollment date.</p>
+      </sec>
+      <sec id="S9">
+        <title>OUTCOMES</title>
+        <p id="P17">The primary outcome was hospitalization for any cause within 1 year. Key secondary outcomes were emergency department visits, 30-day readmissions, cardiovascular events and procedures, dialysis, and death from any cause. Outcomes were captured from claims data and review of electronic health records in the participating health systems. Hospitalization was defined according to Medicare rules as inpatient admission after implementation of the CMS 2014 Two-Midnight Rule.<sup><xref rid="R16" ref-type="bibr">16</xref></sup></p>
+        <p id="P18">Claims data for Parkland Health and Texas Health Resources were obtained from the Dallas Fort Worth Hospital Council, which collects data from all hospitalizations and emergency department visits for every hospital and emergency department in the region.<sup><xref rid="R17" ref-type="bibr">17</xref></sup> Claims data for ProHealth Physicians and VANTX were obtained directly from each health system. All reported adverse events were defined according to codes listed in the <italic toggle="yes">International Classification of Diseases, 10th Revision</italic>. Reporting was required of all adverse events that could have been directly related to the guideline-directed therapies in the protocol and that occurred during any hospitalization while patients were participating in the trial.</p>
+      </sec>
+      <sec id="S10">
+        <title>STATISTICAL ANALYSIS</title>
+        <p id="P19">We calculated the sample size using the method developed by Donner.<sup><xref rid="R18" ref-type="bibr">18</xref>,<xref rid="R19" ref-type="bibr">19</xref></sup> The minimum numbers of practices that were required were determined to be 25, 40, 50, and 9 in Parkland Health, Texas Health Resources, ProHealth Physicians, and VANTX, respectively. From preliminary hospitalization data, we observed a 1-year hospitalization rate of 14% in the usual-care group, with an intracluster correlation coefficient of 0.015. We hypothesized a hospitalization rate in the intervention group that was 3 percentage points lower than the rate in the usual-care group. To detect this difference in hospitalization, we determined that the enrollment of 10,991 patients would be needed to provide the trial with 80% power at a two-sided significance level of 0.05.</p>
+        <p id="P20">The primary efficacy analysis was based on the intention-to-treat principle. The primary outcome of hospitalization at 1 year was compared between the two groups by means of a generalized linear mixed-model approach, which includes random effects to account for within-practice correlation. Kaplan–Meier plots were generated for time-to-event outcomes, including hospitalization, dialysis, and death. Because no provision for correcting for multiplicity was planned for evaluating secondary or other outcomes, results were reported as point estimates and 95% confidence intervals. The widths of the confidence intervals have not been adjusted for multiplicity and should not be used to infer definitive treatment effects for secondary outcomes.</p>
+      </sec>
+    </sec>
+    <sec id="S11">
+      <title>RESULTS</title>
+      <sec id="S12">
+        <title>RECRUITMENT AND RANDOMIZATION</title>
+        <p id="P21">Recruitment of patients began in July 2016 and was completed in June 2019. Patients were enrolled from 141 practices among four health systems (<xref rid="SD1" ref-type="supplementary-material">Fig. S3</xref>). The study enrolled 5690 patients (from 71 practices) in the intervention group and 5492 patients (from 70 practices) in the usual-care group. A total of 182 patients opted out from the intervention group and none from the usual-care group, which resulted in a primary population of 5508 in the intervention group.</p>
+      </sec>
+      <sec id="S13">
+        <title>PATIENT CHARACTERISTICS</title>
+        <p id="P22">At baseline, the median age, sex, ethnic group, and race of the patients were similar in the two groups (<xref rid="T1" ref-type="table">Table 1</xref>). One in five patients was Black, and nearly one in five patients was Hispanic. Characteristics regarding kidney function, presence of proteinuria, blood pressure, glucose control, lipid profiles, and medications were similar in the two groups.</p>
+      </sec>
+      <sec id="S14">
+        <title>PRIMARY OUTCOME</title>
+        <p id="P23">Hospitalization for any cause was reported in 1139 of 5508 patients (20.7%; 95% confidence interval [CI], 19.7 to 21.8) in the intervention group and in 1160 of 5492 patients (21.1%; 95% CI, 20.1 to 22.2) in the usual-care group, for a difference of percentage points (95% CI, −2.0 to 1.1; P = 0.58) (<xref rid="T2" ref-type="table">Table 2</xref>). The cumulative incidence of hospitalizations at 1 year was similar in the two groups (<xref rid="F1" ref-type="fig">Fig. 1</xref>). Results were similar regarding the hospitalization rate and cumulative incidence of hospitalization in the two groups when each health system was analyzed independently (<xref rid="SD1" ref-type="supplementary-material">Table S6</xref>).</p>
+      </sec>
+      <sec id="S15">
+        <title>SECONDARY OUTCOMES</title>
+        <p id="P24">Secondary outcomes were similar in the two groups (<xref rid="T2" ref-type="table">Table 2</xref>). Emergency department visits occurred in 24.3% (95% CI, 23.2 to 25.4) of the patients in the intervention group and in 22.6% (95% CI, 21.5 to 23.7) of those in the usual-care group, for a difference of 1.7% percentage points (95% CI, −0.2 to 3.3). Readmission at 30 days occurred in 37.7% (95% CI, 34.9 to 40.5) of the patients in the intervention group and in 37.3% (95% CI, 34.5 to 40.1) of those in the usual-care group, for a difference of 0.4 percentage points (95% CI, −3.6 to 4.3). Cardiovascular events accounted for most hospitalizations: 18.5% (95% CI, 17.5 to 19.5) in the intervention group and 19.4% (95% CI, 18.4 to 20.4) in the usual-care group, for a difference of 0.9 percentage points (95% CI, −2.3 to 0.5). Cardiovascular procedures were performed in 1.9% (95% CI, 1.5 to 2.2) of the patients in the intervention group and in 1.8% (95% CI, 1.5 to 2.2) of those in the usual-care group, for a difference of 0.1 percentage points (95% CI, −0.4 to 0.6). Dialysis events were rare and were reported in 0.7% (95% CI, 0.5 to 2.9) of the patients in the intervention group and in 0.6% (95% CI, 0.4 to 0.8) of those in the usual-care group, for a difference of 0.1 percentage points (95% CI, −0.2 to 0.4). The risk of death from any cause was similar in the two groups: 2.3% (95% CI, 1.9 to 2.7) in the intervention group and 2.7% (95% CI, 2.3 to 3.1) in the usual-care group, for a difference of 0.4 percentage points (95% CI, −0.9 to 0.2).</p>
+      </sec>
+      <sec id="S16">
+        <title>DELIVERY OF THE INTERVENTION</title>
+        <p id="P25">Reviewers who were unaware of the trial-group assignments conducted a manual chart review from a randomly selected sample of 10% of the patients in the intervention and usual-care groups (<xref rid="T3" ref-type="table">Table 3</xref>). More patients in the intervention group had an updated problem list, had adopted targets for blood pressure and glycated hemoglobin, and had documentation of the receipt of education regarding the kidney-dysfunction triad. In addition, more patients in the intervention group had been prescribed a new ACE inhibitor or ARB (11% vs. 6%). Similar percentages of patients in the two groups had met the blood-pressure and glycated hemoglobin goals, received recommendations for ACE inhibitors or ARBs, and received prescriptions for statins. Practice facilitators had documentation of their communications (or lack thereof) with providers and patients (<xref rid="SD1" ref-type="supplementary-material">Table S7</xref>).</p>
+      </sec>
+      <sec id="S17">
+        <title>ADVERSE EVENTS</title>
+        <p id="P26">Adverse events at the time of hospitalization were similar in the two groups (<xref rid="T4" ref-type="table">Table 4</xref>). Acute kidney injury was the most common adverse event and was reported in 701 of 5508 patients (12.7%) in the intervention group and in 619 of 5492 patients (11.3%) in the usual-care group. Other adverse events were uncommon.</p>
+      </sec>
+    </sec>
+    <sec id="S18">
+      <title>DISCUSSION</title>
+      <p id="P27">Pragmatic clinical trials provide externally valid measures of the effectiveness of clinical interventions that are embedded in real-world practice.<sup><xref rid="R20" ref-type="bibr">20</xref>,<xref rid="R21" ref-type="bibr">21</xref></sup> Our trial included patients with the triad of chronic kidney disease, type 2 diabetes, and hypertension who were being treated in diverse primary care settings in four distinct health care systems. We observed similar hospitalization rates among patients who received an intervention that was based on an electronic health record with assistance from a facilitator at each practice as compared with those who received usual care without such an intervention. The primary outcome of hospitalization for any cause was relevant to multiple stakeholders, including patients, providers, health systems, and investigators. As expected, cardiovascular events were the predominant cause for hospitalization among patients with the kidney-dysfunction triad.<sup><xref rid="R3" ref-type="bibr">3</xref>–<xref rid="R5" ref-type="bibr">5</xref>,<xref rid="R22" ref-type="bibr">22</xref></sup> Adverse events were similar in the two groups, with the exception of acute kidney injury, which was observed in more patients in the intervention group.</p>
+      <p id="P28">Previous studies have examined the effect of various interventions on intermediate outcomes among patients with the kidney-dysfunction triad. A recent pragmatic clinical trial conducted at 43 clinics and involving adult patients with type 2 diabetes and atherosclerotic cardiovascular disease showed that a multifaceted intervention increased the prescription of evidence-based therapies.<sup><xref rid="R23" ref-type="bibr">23</xref></sup> Other trials have described interventions that improved blood-pressure levels and glycemic control, evaluated strategies to screen for chronic kidney disease, and studied the use of checklists, decision-support tools, or both to treat this disorder.<sup><xref rid="R24" ref-type="bibr">24</xref>–<xref rid="R35" ref-type="bibr">35</xref></sup> In contrast, our trial evaluated the effect of outpatient interventions on hospitalization in patients with the kidney-dysfunction triad.</p>
+      <p id="P29">Our trial has several important strengths. First, we used a pragmatic approach with a waiver of informed consent and successfully enrolled 11,182 patients representative of the population with the kidney-dysfunction triad in the United States (<xref rid="SD1" ref-type="supplementary-material">Table S8</xref>). Our trial design enabled the participation of a high fraction of underrepresented groups, thus making our findings generalizable. We used an intention-to-treat approach for the primary analysis, broad inclusion criteria, flexible delivery of the intervention and follow-up in clinical care settings, reliance on electronic health records, use of claims data, and (perhaps most important) outcomes that are relevant to patients, providers, and health care systems. Our ability to enroll patients from groups that had been understudied and yet were representative of the kidney-dysfunction population in the United States was enabled by a combination of a low-touch registry and practice facilitators.</p>
+      <p id="P30">Second, guideline-directed therapies were delivered for processes of care, and the outcomes were robustly captured, which showed the overall validity of this approach. Third, leveraging different types of electronic health records for 141 practices in four health systems that included academic, private, and veterans clinics enabled us to explore the practicality of monitoring guideline-directed therapies in distinct real-world practices and to expand the generalizability of our approach and findings to other health systems. Fourth, we validated the accuracy of diagnosis, data collection methods, and fidelity of implementation of the intervention by a manual chart review of a random sample of the trial population to confirm that interventions were delivered to patients according to their assigned group. In addition, we used registry data from electronic health records coupled with the practice facilitators to identify and enroll patients, assist with the delivery of interventions to them, and track them throughout the trial.</p>
+      <p id="P31">Our trial also has some limitations. The relatively high rate of uptake of process-of-care interventions at baseline in the usual-care group may have limited the effect of the intervention on the primary outcome. More patients opted out of the trial in the intervention group, although information about the trial was made available to practitioners and patients in the two groups. It is possible that we might have seen a beneficial effect of the intervention if we had studied patients with the kidney-dysfunction triad at an earlier time point in their disease. However, earlier intervention would have required substantial changes in the design and duration of the trial because the hospitalization rate would have been lower at earlier time points in the natural history of these diseases. Also, the 1-year follow-up precluded an analysis of the intervention on longitudinal changes in the eGFR and the risk of kidney failure. We tracked the implementation of recommendations for evidence-based care by providers but did not track adherence to treatment by individual patients. We did not track care provided by subspecialists during the trial, so it is possible that differential uptake of subspecialty care could have affected the outcome of the trial.</p>
+      <p id="P32">Our trial provides important lessons for future embedded pragmatic clinical trials that are designed to test the delivery of multicomponent interventions in patients with multiple chronic diseases. First, applying evidence-based guidelines across health care systems to improve outcomes will likely require additional technology, such as clinical-decision support. Second, such tools could be combined with “boots on the ground” practice facilitators to assist clinicians and patients in adhering to guideline-directed therapies. The urgency to explore such models of care has increased with expanding evidence-based options to treat chronic kidney disease, such as the use of sodium–glucose cotransporter 2 inhibitors, glucagon-like peptide-1 receptor agonists, and nonsteroidal mineralocorticoid receptor antagonists.<sup><xref rid="R36" ref-type="bibr">36</xref>–<xref rid="R39" ref-type="bibr">39</xref></sup> Third, we hypothesize that future pragmatic trials could improve the success of facilitated interventions by increasing the engagement of both providers and patients early in the design and conduct of such trials. For example, new technological capabilities for patient self-management through mobile apps may improve health outcomes in patients who are digitally adept.<sup><xref rid="R40" ref-type="bibr">40</xref></sup> Future studies are needed to improve the implementation of evidence-based guidelines and measure their effectiveness in this patient population.</p>
+      <p id="P33">In this pragmatic trial involving patients with the triad of chronic kidney disease, type 2 diabetes, and hypertension, we used an algorithm that was based on electronic health records and practice facilitators embedded in primary care practices as the intervention, as compared with usual care. At 1 year, we did not find better disease control or reduced hospitalization with the intervention than with usual care.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="SM1">
+      <title>Supplementary Material</title>
+      <supplementary-material id="SD1" position="float" content-type="local-data">
+        <label>supplement</label>
+        <media xlink:href="NIHMS1991547-supplement-supplement.pdf" id="d67e486" position="anchor"/>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack id="S19">
+      <p id="P34">Supported by the NIH Pragmatic Trials Collaboratory by cooperative agreement (UH3DK104655) with the National Institute of Diabetes and Digestive and Kidney Diseases. Logistic and technical support from the NIH Pragmatic Trials Collaboratory Coordinating Center was provided through a cooperative agreement (U24AT009676) with the National Center for Complementary and Integrative Health; the National Institute of Allergy and Infectious Diseases; the National Cancer Institute; the National Institute on Aging; the National Heart, Lung, and Blood Institute; the National Institute of Nursing Research; the National Institute of Minority Health and Health Disparities; the National Institute of Arthritis and Musculoskeletal and Skin Diseases; the NIH Office of Behavioral and Social Sciences Research; and the NIH Office of Disease Prevention. Dr. Toto is supported in part by endowments from the Mary M. Conroy Professorship in Kidney Diseases and the Houston J. and Florence A. Doswell Center for the Development of New Approaches for the Treatment of Hypertension.</p>
+    </ack>
+    <fn-group>
+      <fn id="FN2">
+        <p id="P35">The content of this article is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health (NIH).</p>
+      </fn>
+      <fn id="FN3">
+        <p id="P36">Disclosure forms provided by the authors are available with the full text of this article at <ext-link xlink:href="https://NEJM.org" ext-link-type="uri">NEJM.org</ext-link>.</p>
+      </fn>
+      <fn id="FN4">
+        <p id="P37">A data sharing statement provided by the authors is available with the full text of this article at <ext-link xlink:href="https://NEJM.org" ext-link-type="uri">NEJM.org</ext-link>.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>REFERENCES</title>
+      <ref id="R1">
+        <label>1.</label>
+        <mixed-citation publication-type="journal"><name><surname>Skou</surname><given-names>ST</given-names></name>, <name><surname>Mair</surname><given-names>FS</given-names></name>, <name><surname>Fortin</surname><given-names>M</given-names></name>, <etal/>
+<article-title>Multimorbidity</article-title>. <source>Nat Rev Dis Primers</source>
+<year>2022</year>;<volume>8</volume>:<fpage>48</fpage>.<pub-id pub-id-type="pmid">35835758</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R2">
+        <label>2.</label>
+        <mixed-citation publication-type="journal"><name><surname>Forman</surname><given-names>DE</given-names></name>, <name><surname>Maurer</surname><given-names>MS</given-names></name>, <name><surname>Boyd</surname><given-names>C</given-names></name>, <etal/>
+<article-title>Multimorbidity in older adults with cardiovascular disease</article-title>. <source>J Am Coll Cardiol</source>
+<year>2018</year>; <volume>71</volume>:<fpage>2149</fpage>–<lpage>61</lpage>.<pub-id pub-id-type="pmid">29747836</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R3">
+        <label>3.</label>
+        <mixed-citation publication-type="book"><collab>United States Renal Data System</collab>. <source>2022 USRDS annual data report: epidemiology of kidney disease in the United States</source>. <publisher-loc>Bethesda, MD</publisher-loc>: <publisher-name>National Institutes of Health, National Institute of Diabetes and Digestive and Kidney Diseases</publisher-name>, <year>2022</year>.</mixed-citation>
+      </ref>
+      <ref id="R4">
+        <label>4.</label>
+        <mixed-citation publication-type="journal"><name><surname>Go</surname><given-names>AS</given-names></name>, <name><surname>Chertow</surname><given-names>GM</given-names></name>, <name><surname>Fan</surname><given-names>D</given-names></name>, <name><surname>McCulloch</surname><given-names>CE</given-names></name>, <name><surname>Hsu</surname><given-names>C</given-names></name>. <article-title>Chronic kidney disease and the risks of death, cardiovascular events, and hospitalization</article-title>. <source>N Engl J Med</source>
+<year>2004</year>;<volume>351</volume>:<fpage>1296</fpage>–<lpage>305</lpage>.<pub-id pub-id-type="pmid">15385656</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R5">
+        <label>5.</label>
+        <mixed-citation publication-type="journal"><article-title>KDIGO 2012 clinical practice guideline for the evaluation and management of chronic kidney disease</article-title>. <source>Kidney Int Suppl</source>
+<year>2013</year>;<volume>3</volume>:<fpage>1</fpage>–<lpage>150</lpage> (<comment><ext-link xlink:href="http://KDIGO_2012_CKD_GL.pdf" ext-link-type="uri">KDIGO_2012_CKD_GL.pdf</ext-link></comment>).</mixed-citation>
+      </ref>
+      <ref id="R6">
+        <label>6.</label>
+        <mixed-citation publication-type="journal"><name><surname>Bullock</surname><given-names>A</given-names></name>, <name><surname>Burrows</surname><given-names>NR</given-names></name>, <name><surname>Narva</surname><given-names>AS</given-names></name>, <etal/>
+<article-title>Vital signs: decrease in incidence of diabetes-related end-stage renal disease among American Indians/Alaska Natives — United States, 1996–2013</article-title>. <source>MMWR Morb Mortal Wkly Rep</source>
+<year>2017</year>;<volume>66</volume>:<fpage>26</fpage>–<lpage>32</lpage>.<pub-id pub-id-type="pmid">28081061</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R7">
+        <label>7.</label>
+        <mixed-citation publication-type="journal"><name><surname>Baskerville</surname><given-names>NB</given-names></name>, <name><surname>Liddy</surname><given-names>C</given-names></name>, <name><surname>Hogg</surname><given-names>W</given-names></name>. <article-title>Systematic review and meta-analysis of practice facilitation within primary care settings</article-title>. <source>Ann Fam Med</source>
+<year>2012</year>;<volume>10</volume>:<fpage>63</fpage>–<lpage>74</lpage>.<pub-id pub-id-type="pmid">22230833</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R8">
+        <label>8.</label>
+        <mixed-citation publication-type="journal"><name><surname>Parchman</surname><given-names>ML</given-names></name>, <name><surname>Noel</surname><given-names>PH</given-names></name>, <name><surname>Culler</surname><given-names>SD</given-names></name>, <etal/>
+<article-title>A randomized trial of practice facilitation to improve the delivery of chronic illness care in primary care: initial and sustained effects</article-title>. <source>Implement Sci</source>
+<year>2013</year>;<volume>8</volume>:<fpage>93</fpage>.<pub-id pub-id-type="pmid">23965255</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R9">
+        <label>9.</label>
+        <mixed-citation publication-type="journal"><name><surname>Rossing</surname><given-names>P</given-names></name>, <name><surname>Caramori</surname><given-names>ML</given-names></name>, <name><surname>Chan</surname><given-names>JCN</given-names></name>, <etal/>
+<article-title>Executive summary of the KDIGO 2022 Clinical Practice Guideline for Diabetes Management in Chronic Kidney Disease: an update based on rapidly emerging new evidence</article-title>. <source>Kidney Int</source>
+<year>2022</year>;<volume>102</volume>:<fpage>990</fpage>–<lpage>9</lpage>.<pub-id pub-id-type="pmid">36272755</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R10">
+        <label>10.</label>
+        <mixed-citation publication-type="journal"><name><surname>ElSayed</surname><given-names>NA</given-names></name>, <name><surname>Aleppo</surname><given-names>G</given-names></name>, <name><surname>Aroda</surname><given-names>VR</given-names></name>, <etal/>
+<article-title>6. Glycemic targets: standards of care in diabetes — 2023</article-title>. <source>Diabetes Care</source>
+<year>2023</year>; <volume>46</volume>:Suppl <issue>1</issue>:<fpage>S97</fpage>–<lpage>S110</lpage>.<pub-id pub-id-type="pmid">36507646</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R11">
+        <label>11.</label>
+        <mixed-citation publication-type="journal"><name><surname>ElSayed</surname><given-names>NA</given-names></name>, <name><surname>Aleppo</surname><given-names>G</given-names></name>, <name><surname>Aroda</surname><given-names>VR</given-names></name>, <etal/>
+<article-title>10. Cardiovascular disease and risk management: standards of care in diabetes — 2023</article-title>. <source>Diabetes Care</source>
+<year>2023</year>;<volume>46</volume>:Suppl <issue>1</issue>:<fpage>S158</fpage>–<lpage>S190</lpage>.<pub-id pub-id-type="pmid">36507632</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R12">
+        <label>12.</label>
+        <mixed-citation publication-type="journal"><collab>Kidney Disease: Improving Global Outcomes (KDIGO) Blood Pressure Work Group</collab>. <article-title>KDIGO 2021 clinical practice guideline for the management of blood pressure in chronic kidney disease</article-title>. <source>Kidney Int</source>
+<year>2021</year>; <volume>99</volume>(<issue>3</issue>):Suppl:<fpage>S1</fpage>–<lpage>S87</lpage>.<pub-id pub-id-type="pmid">33637192</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R13">
+        <label>13.</label>
+        <mixed-citation publication-type="journal"><name><surname>Jardine</surname><given-names>MJ</given-names></name>, <name><surname>Kasiske</surname><given-names>B</given-names></name>, <name><surname>Adu</surname><given-names>D</given-names></name>, <etal/>
+<article-title>Closing the gap between evidence and practice in chronic kidney disease</article-title>. <source>Kidney Int Suppl (2011)</source>
+<year>2017</year>;<volume>7</volume>:<fpage>114</fpage>–<lpage>21</lpage>.<pub-id pub-id-type="pmid">30675425</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R14">
+        <label>14.</label>
+        <mixed-citation publication-type="journal"><name><surname>Tuttle</surname><given-names>KR</given-names></name>, <name><surname>Wong</surname><given-names>L</given-names></name>, <name><surname>St Peter</surname><given-names>W</given-names></name>, <etal/>
+<article-title>Moving from evidence to implementation of breakthrough therapies for diabetic kidney disease</article-title>. <source>Clin J Am Soc Nephrol</source>
+<year>2022</year>;<volume>17</volume>:<fpage>1092</fpage>–<lpage>103</lpage>.<pub-id pub-id-type="pmid">35649722</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R15">
+        <label>15.</label>
+        <mixed-citation publication-type="journal"><name><surname>James</surname><given-names>PA</given-names></name>, <name><surname>Oparil</surname><given-names>S</given-names></name>, <name><surname>Carter</surname><given-names>BL</given-names></name>, <etal/>
+<article-title>2014 evidence-based guideline for the management of high blood pressure in adults: report from the panel members appointed to the Eighth Joint National Committee (JNC 8)</article-title>. <source>JAMA</source>
+<year>2014</year>;<volume>311</volume>:<fpage>507</fpage>–<lpage>20</lpage>.<pub-id pub-id-type="pmid">24352797</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R16">
+        <label>16.</label>
+        <mixed-citation publication-type="webpage"><collab>Centers for Medicare and Medicaid Services</collab>. <source>Fequently asked questions — 2 midnight inpatient admission guidance and patient status reviews for admissions</source> on or after October 1, <year>2013</year> (<comment><ext-link xlink:href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Monitoring-Programs/Medical-Review/Downloads/QAsforWebsitePosting_110413-v2-CLEAN.pdf" ext-link-type="uri">https://www.cms.gov/Research-Statistics-Data-and-Systems/Monitoring-Programs/Medical-Review/Downloads/QAsforWebsitePosting_110413-v2-CLEAN.pdf</ext-link></comment>).</mixed-citation>
+      </ref>
+      <ref id="R17">
+        <label>17.</label>
+        <mixed-citation publication-type="journal"><name><surname>Makam</surname><given-names>AN</given-names></name>, <name><surname>Nguyen</surname><given-names>OK</given-names></name>, <name><surname>Moore</surname><given-names>B</given-names></name>, <name><surname>Ma</surname><given-names>Y</given-names></name>, <name><surname>Amarasingham</surname><given-names>R</given-names></name>. <article-title>Identifying patients with diabetes and the earliest date of diagnosis in real time: an electronic health record case-finding algorithm</article-title>. <source>BMC Med Inform Decis Mak</source>
+<year>2013</year>;<volume>13</volume>:<fpage>81</fpage>.<pub-id pub-id-type="pmid">23915139</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R18">
+        <label>18.</label>
+        <mixed-citation publication-type="journal"><name><surname>Donner</surname><given-names>A</given-names></name>
+<article-title>Sample size requirements for stratified cluster randomization designs</article-title>. <source>Stat Med</source>
+<year>1992</year>;<volume>11</volume>:<fpage>743</fpage>–<lpage>50</lpage>.<pub-id pub-id-type="pmid">1594813</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R19">
+        <label>19.</label>
+        <mixed-citation publication-type="book"><part-title>Sample size determination for clustered outcomes</part-title>. In: <name><surname>Ahn</surname><given-names>C</given-names></name>, <name><surname>Heo</surname><given-names>M</given-names></name>, <name><surname>Zhang</surname><given-names>S</given-names></name>. <source>Sample size calculations for clustered and longitudinal outcomes in clinical research</source>. <publisher-loc>Boca Raton, FL</publisher-loc>: <publisher-name>CRC Press</publisher-name>, <year>2023</year>:<fpage>23</fpage>–<lpage>60</lpage>.</mixed-citation>
+      </ref>
+      <ref id="R20">
+        <label>20.</label>
+        <mixed-citation publication-type="journal"><name><surname>Ford</surname><given-names>I</given-names></name>, <name><surname>Norrie</surname><given-names>J</given-names></name>. <article-title>Pragmatic trials</article-title>. <source>N Engl J Med</source>
+<year>2016</year>;<volume>375</volume>:<fpage>454</fpage>–<lpage>63</lpage>.<pub-id pub-id-type="pmid">27518663</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R21">
+        <label>21.</label>
+        <mixed-citation publication-type="journal"><name><surname>Loudon</surname><given-names>K</given-names></name>, <name><surname>Treweek</surname><given-names>S</given-names></name>, <name><surname>Sullivan</surname><given-names>F</given-names></name>, <name><surname>Donnan</surname><given-names>P</given-names></name>, <name><surname>Thorpe</surname><given-names>KE</given-names></name>, <name><surname>Zwarenstein</surname><given-names>M</given-names></name>. <article-title>The PRECIS-2 tool: designing trials that are fit for purpose</article-title>. <source>BMJ</source>
+<year>2015</year>;<volume>350</volume>:<fpage>h2147</fpage>.<pub-id pub-id-type="pmid">25956159</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R22">
+        <label>22.</label>
+        <mixed-citation publication-type="journal"><name><surname>Schrauben</surname><given-names>SJ</given-names></name>, <name><surname>Chen</surname><given-names>H-Y</given-names></name>, <name><surname>Lin</surname><given-names>E</given-names></name>, <etal/>
+<article-title>Hospitalizations among adults with chronic kidney disease in the United States: a cohort study</article-title>. <source>PLoS Med</source>
+<year>2020</year>;<volume>17</volume>(<issue>12</issue>):e1003470.</mixed-citation>
+      </ref>
+      <ref id="R23">
+        <label>23.</label>
+        <mixed-citation publication-type="journal"><name><surname>Pagidipati</surname><given-names>NJ</given-names></name>, <name><surname>Nelson</surname><given-names>AJ</given-names></name>, <name><surname>Kaltenbach</surname><given-names>LA</given-names></name>, <etal/>
+<article-title>Coordinated care to optimize cardiovascular preventive therapies in type 2 diabetes: a randomized clinical trial</article-title>. <source>JAMA</source>
+<year>2023</year>;<volume>329</volume>:<fpage>1261</fpage>–<lpage>70</lpage>.<pub-id pub-id-type="pmid">36877177</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R24">
+        <label>24.</label>
+        <mixed-citation publication-type="journal"><name><surname>Heisler</surname><given-names>M</given-names></name>, <name><surname>Hofer</surname><given-names>TP</given-names></name>, <name><surname>Schmittdiel</surname><given-names>JA</given-names></name>, <etal/>
+<article-title>Improving blood pressure control through a clinical pharmacist outreach program in patients with diabetes mellitus in 2 high-performing health systems: the adherence and intensification of medications cluster randomized, controlled pragmatic trial</article-title>. <source>Circulation</source>
+<year>2012</year>;<volume>125</volume>:<fpage>2863</fpage>–<lpage>72</lpage>.<pub-id pub-id-type="pmid">22570370</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R25">
+        <label>25.</label>
+        <mixed-citation publication-type="journal"><name><surname>Ali</surname><given-names>MK</given-names></name>, <name><surname>Singh</surname><given-names>K</given-names></name>, <name><surname>Kondal</surname><given-names>D</given-names></name>, <etal/>
+<article-title>Effectiveness of a multicomponent quality improvement strategy to improve achievement of diabetes care goals: a randomized, controlled trial</article-title>. <source>Ann Intern Med</source>
+<year>2016</year>;<volume>165</volume>:<fpage>399</fpage>–<lpage>408</lpage>.<pub-id pub-id-type="pmid">27398874</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R26">
+        <label>26.</label>
+        <mixed-citation publication-type="journal"><name><surname>Victor</surname><given-names>RG</given-names></name>, <name><surname>Lynch</surname><given-names>K</given-names></name>, <name><surname>Li</surname><given-names>N</given-names></name>, <etal/>
+<article-title>A cluster-randomized trial of blood-pressure reduction in Black barbershops</article-title>. <source>N Engl J Med</source>
+<year>2018</year>;<volume>378</volume>:<fpage>1291</fpage>–<lpage>301</lpage>.<pub-id pub-id-type="pmid">29527973</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R27">
+        <label>27.</label>
+        <mixed-citation publication-type="journal"><name><surname>Carroll</surname><given-names>JK</given-names></name>, <name><surname>Pulver</surname><given-names>G</given-names></name>, <name><surname>Dickinson</surname><given-names>LM</given-names></name>, <etal/>
+<article-title>Effect of 2 clinical decision support strategies on chronic kidney disease outcomes in primary care: a cluster randomized trial</article-title>. <source>JAMA Netw Open</source>
+<year>2018</year>;<volume>1</volume>(<issue>6</issue>):e183377.</mixed-citation>
+      </ref>
+      <ref id="R28">
+        <label>28.</label>
+        <mixed-citation publication-type="journal"><name><surname>Mendu</surname><given-names>ML</given-names></name>, <name><surname>Schneider</surname><given-names>LI</given-names></name>, <name><surname>Aizer</surname><given-names>AA</given-names></name>, <etal/>
+<article-title>Implementation of a CKD checklist for primary care providers</article-title>. <source>Clin J Am Soc Nephrol</source>
+<year>2014</year>;<volume>9</volume>:<fpage>1526</fpage>–<lpage>35</lpage>.<pub-id pub-id-type="pmid">25135764</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R29">
+        <label>29.</label>
+        <mixed-citation publication-type="journal"><name><surname>Peralta</surname><given-names>CA</given-names></name>, <name><surname>Frigaard</surname><given-names>M</given-names></name>, <name><surname>Rolon</surname><given-names>L</given-names></name>, <etal/>
+<article-title>Screening for CKD to improve processes of care among nondiabetic veterans with hypertension: a pragmatic cluster-randomized trial</article-title>. <source>Clin J Am Soc Nephrol</source>
+<year>2020</year>;<volume>15</volume>:<fpage>174</fpage>–<lpage>81</lpage>.<pub-id pub-id-type="pmid">32034070</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R30">
+        <label>30.</label>
+        <mixed-citation publication-type="journal"><name><surname>McBride</surname><given-names>D</given-names></name>, <name><surname>Dohan</surname><given-names>D</given-names></name>, <name><surname>Handley</surname><given-names>MA</given-names></name>, <name><surname>Powe</surname><given-names>NR</given-names></name>, <name><surname>Tuot</surname><given-names>DS</given-names></name>. <article-title>Developing a CKD registry in primary care: provider attitudes and input</article-title>. <source>Am J Kidney Dis</source>
+<year>2014</year>;<volume>63</volume>:<fpage>577</fpage>–<lpage>83</lpage>.<pub-id pub-id-type="pmid">24295612</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R31">
+        <label>31.</label>
+        <mixed-citation publication-type="journal"><name><surname>Donald</surname><given-names>M</given-names></name>, <name><surname>Smekal</surname><given-names>MD</given-names></name>, <name><surname>Elliott</surname><given-names>MJ</given-names></name>, <etal/>
+<article-title>Online clinical pathway for chronic kidney disease management in primary care: a retrospective cohort study</article-title>. <source>BMC Nephrol</source>
+<year>2021</year>;<volume>22</volume>:<fpage>332</fpage>.<pub-id pub-id-type="pmid">34615462</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R32">
+        <label>32.</label>
+        <mixed-citation publication-type="journal"><name><surname>Navaneethan</surname><given-names>SD</given-names></name>, <name><surname>Jolly</surname><given-names>SE</given-names></name>, <name><surname>Schold</surname><given-names>JD</given-names></name>, <etal/>
+<article-title>Pragmatic randomized, controlled trial of patient navigators and enhanced personal health records in CKD</article-title>. <source>Clin J Am Soc Nephrol</source>
+<year>2017</year>;<volume>12</volume>:<fpage>1418</fpage>–<lpage>27</lpage>.<pub-id pub-id-type="pmid">28778854</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R33">
+        <label>33.</label>
+        <mixed-citation publication-type="journal"><name><surname>Tuttle</surname><given-names>KR</given-names></name>, <name><surname>Alicic</surname><given-names>RZ</given-names></name>, <name><surname>Short</surname><given-names>RA</given-names></name>, <etal/>
+<article-title>Medication therapy management after hospitalization in CKD: a randomized clinical trial</article-title>. <source>Clin J Am Soc Nephrol</source>
+<year>2018</year>;<volume>13</volume>:<fpage>231</fpage>–<lpage>41</lpage>.<pub-id pub-id-type="pmid">29295829</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R34">
+        <label>34.</label>
+        <mixed-citation publication-type="journal"><name><surname>Yamagata</surname><given-names>K</given-names></name>, <name><surname>Makino</surname><given-names>H</given-names></name>, <name><surname>Iseki</surname><given-names>K</given-names></name>, <etal/>
+<article-title>Effect of behavior modification on outcome in early- to moderate-stage chronic kidney disease: a cluster-randomized trial</article-title>. <source>PLoS One</source>
+<year>2016</year>;<volume>11</volume>(<issue>3</issue>):e0151422.</mixed-citation>
+      </ref>
+      <ref id="R35">
+        <label>35.</label>
+        <mixed-citation publication-type="journal"><name><surname>McLean</surname><given-names>DL</given-names></name>, <name><surname>McAlister</surname><given-names>FA</given-names></name>, <name><surname>Johnson</surname><given-names>JA</given-names></name>, <etal/>
+<article-title>A randomized trial of the effect of community pharmacist and nurse care on improving blood pressure management in patients with diabetes mellitus: study of cardiovascular risk intervention by pharmacists-hypertension (SCRIP-HTN)</article-title>. <source>Arch Intern Med</source>
+<year>2008</year>;<volume>168</volume>:<fpage>2355</fpage>–<lpage>61</lpage>.<pub-id pub-id-type="pmid">19029501</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R36">
+        <label>36.</label>
+        <mixed-citation publication-type="journal"><name><surname>Heerspink</surname><given-names>HJL</given-names></name>, <name><surname>Stefánsson</surname><given-names>BV</given-names></name>, <name><surname>Correa-Rotter</surname><given-names>R</given-names></name>, <etal/>
+<article-title>Dapagliflozin in patients with chronic kidney disease</article-title>. <source>N Engl J Med</source>
+<year>2020</year>;<volume>383</volume>:<fpage>1436</fpage>–<lpage>46</lpage>.<pub-id pub-id-type="pmid">32970396</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R37">
+        <label>37.</label>
+        <mixed-citation publication-type="journal"><collab>The EMPA-KIDNEY Collaborative Group</collab>. <article-title>Empagliflozin in patients with chronic kidney disease</article-title>. <source>N Engl J Med</source>
+<year>2023</year>;<volume>388</volume>:<fpage>117</fpage>–<lpage>27</lpage>.<pub-id pub-id-type="pmid">36331190</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R38">
+        <label>38.</label>
+        <mixed-citation publication-type="journal"><name><surname>Mann</surname><given-names>JFE</given-names></name>, <name><surname>Ørsted</surname><given-names>DD</given-names></name>, <name><surname>Brown-Frandsen</surname><given-names>K</given-names></name>, <etal/>
+<article-title>Liraglutide and renal outcomes in type 2 diabetes</article-title>. <source>N Engl J Med</source>
+<year>2017</year>;<volume>377</volume>:<fpage>839</fpage>–<lpage>48</lpage>.<pub-id pub-id-type="pmid">28854085</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R39">
+        <label>39.</label>
+        <mixed-citation publication-type="journal"><name><surname>Bakris</surname><given-names>GL</given-names></name>, <name><surname>Agarwal</surname><given-names>R</given-names></name>, <name><surname>Anker</surname><given-names>SD</given-names></name>, <etal/>
+<article-title>Effect of finerenone on chronic kidney disease outcomes in type 2 diabetes</article-title>. <source>N Engl J Med</source>
+<year>2020</year>;<volume>383</volume>:<fpage>2219</fpage>–<lpage>29</lpage>.<pub-id pub-id-type="pmid">33264825</pub-id>
+</mixed-citation>
+      </ref>
+      <ref id="R40">
+        <label>40.</label>
+        <mixed-citation publication-type="webpage"><name><surname>Patel</surname><given-names>K</given-names></name>
+<article-title>Digital health’s role in managing chronic disease</article-title>. <source>Forbes</source>. October 29, 2021 (<comment><ext-link xlink:href="https://www.forbes.com/sites/forbestechcouncil/2021/10/29/digital-healths-role-in-managing-chronic-disease/?sh=33539148735c" ext-link-type="uri">https://www.forbes.com/sites/forbestechcouncil/2021/10/29/digital-healths-role-in-managing-chronic-disease/?sh=33539148735c</ext-link></comment>).</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig position="float" id="F1">
+      <label>Figure 1.</label>
+      <caption>
+        <title>Cumulative Incidence of Hospitalization.</title>
+        <p id="P38">Shown is the cumulative incidence of hospitalization for any cause at 1 year (the primary outcome) in the intervention group and the usual-care group. The inset graph shows the same data on an expanded y axis. Shading indicates the 95% confidence interval.</p>
+      </caption>
+      <graphic xlink:href="nihms-1991547-f0001" position="float"/>
+    </fig>
+    <table-wrap position="float" id="T1" orientation="landscape">
+      <label>Table 1.</label>
+      <caption>
+        <p id="P39">Characteristics of the Patients at Baseline.<xref rid="TFN1" ref-type="table-fn">*</xref></p>
+      </caption>
+      <table frame="box" rules="none">
+        <colgroup span="1">
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th align="left" valign="bottom" rowspan="1" colspan="1">Characteristic</th>
+            <th align="center" valign="bottom" rowspan="1" colspan="1">Intervention (N = 5508)</th>
+            <th align="center" valign="bottom" rowspan="1" colspan="1">Usual Care (N = 5492)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Age — yr</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">68.1±10.4</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">68.9±10.3</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Male sex — no. (%)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2958 (53.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2951 (53.7)</td>
+          </tr>
+          <tr>
+            <td colspan="3" align="left" valign="top" rowspan="1">Ethnic group<xref rid="TFN2" ref-type="table-fn">†</xref></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Not Hispanic or Latino</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3911 (71.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">4041 (73.6)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Hispanic or Latino</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1129 (20.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">944 (17.2)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Unknown</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">468 (8.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">507 (9.2)</td>
+          </tr>
+          <tr>
+            <td colspan="3" align="left" valign="top" rowspan="1">Race<xref rid="TFN2" ref-type="table-fn">†</xref></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> White</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">4003 (72.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">4058 (73.9)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Black</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1159 (21.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1088 (19.8)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Asian</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">101 (1.8)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">137 (2.5)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Other</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">36 (0.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">46 (0.8)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Unknown</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">209 (3.8)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">163 (3.0)</td>
+          </tr>
+          <tr>
+            <td colspan="3" align="left" valign="top" rowspan="1">Blood pressure — mm Hg</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Systolic</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">133.1±18.7</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">132.5±17.9</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Diastolic</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">73.7±11.2</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">73.4±10.8</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Glycated hemoglobin — %</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">7.6±2.1</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">7.5±2.1</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Estimated GFR — ml/min/1.73 m<sup>2</sup><xref rid="TFN3" ref-type="table-fn">‡</xref></td>
+            <td align="center" valign="top" rowspan="1" colspan="1">48.1±16.8</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">49.4±15.6</td>
+          </tr>
+          <tr>
+            <td colspan="3" align="left" valign="top" rowspan="1">Proteinuria — no. (%)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> &lt;30 mg/g</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">930 (16.9)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">840 (15.3)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> 30 to 300 mg/g</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1100 (20.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1195 (21.8)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> &gt;300 mg/g</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">597 (10.8)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">437 (8.0)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Unknown</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2881 (52.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3020 (55.0)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Body-mass index<xref rid="TFN4" ref-type="table-fn">§</xref></td>
+            <td align="center" valign="top" rowspan="1" colspan="1">33.4±7.6</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">33±7.4</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Weight — kg</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">94.3±23.2</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">93.5±23.4</td>
+          </tr>
+          <tr>
+            <td colspan="3" align="left" valign="top" rowspan="1">Cholesterol — mg/dl</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Total</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">161.7±48.5</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">163.1±44.8</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Non-HDL</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">115.5±42.8</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">117.2±41.8</td>
+          </tr>
+          <tr>
+            <td colspan="3" align="left" valign="top" rowspan="1">Prescribed drug — no. (%)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Statin</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3748 (68.0)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3742 (68.1)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> ACE inhibitor or ARB</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3832 (69.6)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3713 (67.6)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Any diuretic</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2137 (38.8)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1993 (36.3)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Any beta-blocker</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2959 (53.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2893 (52.7)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Insulin</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2178 (39.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2002 (36.5)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> SGLT2 inhibitor</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">103 (1.9)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">111 (2.0)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> GLP-1 receptor agonist</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">291 (5.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">303 (5.5)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Other noninsulin agent</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3377 (61.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3299 (60.1)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Age-adjusted Charlson comorbidity index<xref rid="TFN5" ref-type="table-fn">¶</xref></td>
+            <td align="center" valign="top" rowspan="1" colspan="1">4.3±2.5</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3.9±2.2</td>
+          </tr>
+          <tr>
+            <td colspan="3" align="left" valign="top" rowspan="1">Medical condition — no. (%)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Coronary artery disease</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">517 (9.4)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">426 (7.8)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Congestive heart failure</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">450 (8.2)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">547 (10.0)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Peripheral vascular disease</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">283 (5.1)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">392 (7.1)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Cerebrovascular disease</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">240 (4.4)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">318 (5.8)</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN1">
+          <label>*</label>
+          <p id="P40">Plus–minus values are means ±SD. Percentages may not total 100 because of rounding. To convert the values for cholesterol to millimoles per liter, multiply by 0.02586. ACE denotes angiotensin-converting enzyme, ARB angiotensin-receptor blocker, GLP-1 glucagon-like peptide 1, HDL high-density lipoprotein, and SGLT2 sodium–glucose cotransporter 2.</p>
+        </fn>
+        <fn id="TFN2">
+          <label>†</label>
+          <p id="P41">Race and ethnic group were reported from data in the electronic health record.</p>
+        </fn>
+        <fn id="TFN3">
+          <label>‡</label>
+          <p id="P42">The estimated glomerular filtration rate (eGFR) was calculated with the use of either the Modification of Diet in Renal Disease equation or the Chronic Kidney Disease Epidemiology Collaboration equation.</p>
+        </fn>
+        <fn id="TFN4">
+          <label>§</label>
+          <p id="P43">The body-mass index is the weight in kilograms divided by the square of the height in meters.</p>
+        </fn>
+        <fn id="TFN5">
+          <label>¶</label>
+          <p id="P44">The Charlson comorbidity index (CCI) is based on 17 indicators of coexisting conditions, which are weighted and then totaled to provide a single value after elimination of the condition under study. The severity of comorbidity is categorized as follows: CCI of 1 or 2, mild; CCI of 3 to 4, moderate; and CCI of 5 or more, severe.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+    <table-wrap position="float" id="T2" orientation="landscape">
+      <label>Table 2.</label>
+      <caption>
+        <p id="P45">Primary and Key Secondary Outcomes.</p>
+      </caption>
+      <table frame="box" rules="none">
+        <colgroup span="1">
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th align="left" valign="middle" rowspan="1" colspan="1">Outcome</th>
+            <th align="center" valign="middle" rowspan="1" colspan="1">Intervention (N = 5508)</th>
+            <th align="center" valign="middle" rowspan="1" colspan="1">Usual Care (N = 5492)</th>
+            <th align="center" valign="middle" rowspan="1" colspan="1">P Value<xref rid="TFN6" ref-type="table-fn">*</xref></th>
+          </tr>
+          <tr>
+            <th align="left" valign="middle" rowspan="1" colspan="1"/>
+            <th colspan="2" align="center" valign="middle" rowspan="1">
+<italic toggle="yes">no./total no. (%)</italic>
+</th>
+            <th align="left" valign="middle" rowspan="1" colspan="1"/>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="4" align="left" valign="middle" rowspan="1">
+<bold>Primary outcome</bold>
+</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Hospitalization at 1 yr</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1139/5508 (20.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1160/5492 (21.1)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.58</td>
+          </tr>
+          <tr>
+            <td colspan="4" align="left" valign="top" rowspan="1">
+<bold>Secondary outcomes</bold>
+</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Emergency department visit</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1336/5508 (24.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1242/5492 (22.6)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Hospital readmission ≤30 days after first inpatient treatment</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">429/1139 (37.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">433/1160 (37.3)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Cardiovascular events<xref rid="TFN7" ref-type="table-fn">†</xref></td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1020/5508 (18.5)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1065/5492 (19.4)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Cardiovascular procedures<xref rid="TFN8" ref-type="table-fn">‡</xref></td>
+            <td align="center" valign="top" rowspan="1" colspan="1">104/5508 (1.9)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">99/5492 (1.8)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Dialysis</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">37/5508 (0.7)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">32/5492 (0.6)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Death</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">129/5508 (2.3)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">148/5492 (2.7)</td>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN6">
+          <label>*</label>
+          <p id="P46">P values were not reported for secondary outcomes.</p>
+        </fn>
+        <fn id="TFN7">
+          <label>†</label>
+          <p id="P47">Cardiovascular events included acute coronary syndrome, heart failure, and stroke.</p>
+        </fn>
+        <fn id="TFN8">
+          <label>‡</label>
+          <p id="P48">Cardiovascular procedures included cardiac catheterization and revascularization.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+    <table-wrap position="float" id="T3" orientation="landscape">
+      <label>Table 3.</label>
+      <caption>
+        <p id="P49">Implementation of Assigned Treatment in a 10% Random Sample.<xref rid="TFN9" ref-type="table-fn">*</xref></p>
+      </caption>
+      <table frame="box" rules="none">
+        <colgroup span="1">
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th align="left" valign="middle" rowspan="1" colspan="1">Health Condition and Process of Care</th>
+            <th align="center" valign="middle" rowspan="1" colspan="1">Intervention (N = 582)</th>
+            <th align="center" valign="middle" rowspan="1" colspan="1">Usual Care (N = 531)</th>
+            <th align="center" valign="middle" rowspan="1" colspan="1">Total (N = 1113)</th>
+          </tr>
+          <tr>
+            <th align="left" valign="middle" rowspan="1" colspan="1"/>
+            <th colspan="3" align="center" valign="middle" rowspan="1">
+<italic toggle="yes">percent</italic>
+</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="4" align="left" valign="top" rowspan="1">
+<bold>Chronic kidney disease</bold>
+</td>
+          </tr>
+          <tr>
+            <td colspan="4" align="left" valign="top" rowspan="1">Use of problem list</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Existing</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">56</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">48</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">52</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Updated</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">15</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">5</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">10</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Patient education</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">79</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">48</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">64</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Met all criteria: problem list updated and patient education received</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">64</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">39</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">52</td>
+          </tr>
+          <tr>
+            <td colspan="4" align="left" valign="top" rowspan="1">
+<bold>Hypertension</bold>
+</td>
+          </tr>
+          <tr>
+            <td colspan="4" align="left" valign="top" rowspan="1">Use of problem list</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Existing</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">96</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">93</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">95</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Updated</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">1</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">2</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">2</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Goal set for hypertension and blood pressure</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">50</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">29</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">40</td>
+          </tr>
+          <tr>
+            <td colspan="4" align="left" valign="top" rowspan="1">Use of ACE inhibitor or ARB</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Existing</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">74</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">75</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">74</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Added new</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">11</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">6</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">8</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Patient education</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">93</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">88</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">90</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Met all criteria: Problem list updated, goal set, new ACE inhibitor or ARB added, and patient education received</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">40</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">22</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">31</td>
+          </tr>
+          <tr>
+            <td colspan="4" align="left" valign="top" rowspan="1">Met blood-pressure goal of &lt;140/90 mm Hg</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Before enrollment</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">50</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">47</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">48</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Within 1 yr after enrollment</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">73</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">66</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">69</td>
+          </tr>
+          <tr>
+            <td colspan="4" align="left" valign="top" rowspan="1">
+<bold>Diabetes</bold>
+</td>
+          </tr>
+          <tr>
+            <td colspan="4" align="left" valign="top" rowspan="1">Use of problem list</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Existing</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">96</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">96</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">96</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Updated</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">2</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">1</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">2</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Goal set for glycated hemoglobin</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">55</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">33</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">45</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Patient education</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">96</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">93</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">94</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Met all criteria: problem list updated, goal set, and patient education received</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">52</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">32</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">43</td>
+          </tr>
+          <tr>
+            <td colspan="4" align="left" valign="top" rowspan="1">Met glycated hemoglobin goal of &lt;7.5%</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Before enrollment</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">52</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">55</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">53</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Within 1 yr after enrollment</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">55</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">57</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">56</td>
+          </tr>
+          <tr>
+            <td colspan="4" align="left" valign="top" rowspan="1">
+<bold>Cardiovascular risk</bold>
+</td>
+          </tr>
+          <tr>
+            <td colspan="4" align="left" valign="top" rowspan="1">Use of statin</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Existing</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">79</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">79</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">79</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Added new drug</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">7</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">5</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">6</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Patient education</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">86</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">83</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">84</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Met all criteria: new statin added and patient education received</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">77</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">73</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">75</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN9">
+          <label>*</label>
+          <p id="P50">Listed are the results of a manual review of a random sample of 10% of the patients who were enrolled from each participating health system. Reviewers who were unaware of trial-group assignments determined which steps of each process were recorded as having been delivered for each patient.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+    <table-wrap position="float" id="T4">
+      <label>Table 4.</label>
+      <caption>
+        <p id="P51">Adverse Events at 1 Year of Follow-up.<xref rid="TFN10" ref-type="table-fn">*</xref></p>
+      </caption>
+      <table frame="box" rules="none">
+        <colgroup span="1">
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+          <col align="left" valign="middle" span="1"/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th align="left" valign="bottom" rowspan="1" colspan="1">Event</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">Intervention (N = 5508)</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">Usual Care (N = 5492)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Acute kidney injury</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">701 (12.7)</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">619 (11.3)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Cellulitis</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">215 (3.9)</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">185 (3.4)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Drug-related toxic effect</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">7 (0.1)</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">6 (0.1)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Fluid overload</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">50 (0.9)</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">37 (0.7)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Hyperkalemia</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">160 (2.9)</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">149 (2.7)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Hypoglycemia</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">11 (0.2)</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">10 (0.2)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Hyponatremia</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">171 (3.1)</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">162 (2.9)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Hypotension</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">142 (2.6)</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">142 (2.6)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Rhabdomyolysis</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">12 (0.2)</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">12 (0.2)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Septic shock</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">226 (4.1)</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">219 (4.0)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Stroke</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">187 (3.4)</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">155 (2.8)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Syncope</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">86 (1.6)</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">79 (1.4)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Myositis</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">4 (0.1)</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">2 (&lt;0.1)</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN10">
+          <label>*</label>
+          <p id="P52">Adverse events were defined as events that could have been related to the delivery of evidence-based interventions as recommended in the protocol. Adverse events were captured according to codes used in the <italic toggle="yes">International Classification of Diseases, 10th Revision</italic>, during a hospitalization while the patients were participating in the trial.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+  </floats-group>
+</article>

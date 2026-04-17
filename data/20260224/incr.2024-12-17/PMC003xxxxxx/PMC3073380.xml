@@ -1,0 +1,2094 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Archiving and Interchange DTD v2.3 20070202//EN" "archivearticle.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">2985191R</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">5009</journal-id>
+      <journal-id journal-id-type="nlm-ta">J Neurol Neurosurg Psychiatry</journal-id>
+      <journal-title>Journal of neurology, neurosurgery, and psychiatry</journal-title>
+      <issn pub-type="ppub">0022-3050</issn>
+      <issn pub-type="epub">1468-330X</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">19419981</article-id>
+      <article-id pub-id-type="pmc">3073380</article-id>
+      <article-id pub-id-type="doi">10.1136/jnnp.2009.174029</article-id>
+      <article-id pub-id-type="manuscript">NIHMS274622</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Periodontitis is associated with cognitive impairment among older adults: analysis of NHANES-III</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Noble</surname>
+            <given-names>J M</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">1</xref>
+          <xref ref-type="aff" rid="A2">2</xref>
+          <xref ref-type="aff" rid="A3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Borrell</surname>
+            <given-names>L N</given-names>
+          </name>
+          <xref ref-type="aff" rid="A4">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Papapanou</surname>
+            <given-names>P N</given-names>
+          </name>
+          <xref ref-type="aff" rid="A5">5</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Elkind</surname>
+            <given-names>M S V</given-names>
+          </name>
+          <xref ref-type="aff" rid="A3">3</xref>
+          <xref ref-type="aff" rid="A6">6</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Scarmeas</surname>
+            <given-names>N</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">1</xref>
+          <xref ref-type="aff" rid="A3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wright</surname>
+            <given-names>C B</given-names>
+          </name>
+          <xref ref-type="aff" rid="A7">7</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>1</label>Gertrude H Sergievsky Center, Columbia University Medical Center, New York, NY, USA and the Taub Institute on Alzheimer Disease and the Aging Brain, Columbia University Medical Center, New York, New York, USA</aff>
+      <aff id="A2"><label>2</label>Harlem Hospital Center, Columbia University, College of Physicians and Surgeons, New York, New York, USA</aff>
+      <aff id="A3"><label>3</label>Department of Neurology, The Neurological Institute of New York, Columbia University Medical Center, New York, New York, USA</aff>
+      <aff id="A4"><label>4</label>Department of Health Sciences, Lehman College, City University of New York, New York, New York, USA</aff>
+      <aff id="A5"><label>5</label>College of Dental Medicine, Section of Oral and Diagnostic Sciences, Division of Periodontics, Columbia University Medical Center, New York, New York, USA</aff>
+      <aff id="A6"><label>6</label>Stroke Division, Department of Neurology, The Neurological Institute of New York, Columbia University Medical Center, New York, New York, USA</aff>
+      <aff id="A7"><label>7</label>Evelyn F McKnight Center for Age-related Memory Loss, Division of Cognitive Disorders, Department of Neurology, Miller School of Medicine, University of Miami, Miami, Florida, USA</aff>
+      <author-notes>
+        <corresp id="cor1">Correspondence to: Dr J M Noble, Harlem Hospital Center, Columbia College of Physicians and Surgeons, Department of Neurology, 506 Lenox Ave, New York, NY 10037, USA; <email>jn2054@columbia.edu</email></corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>9</day>
+        <month>3</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>5</day>
+        <month>5</month>
+        <year>2009</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>11</month>
+        <year>2009</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>11</day>
+        <month>4</month>
+        <year>2011</year>
+      </pub-date>
+      <volume>80</volume>
+      <issue>11</issue>
+      <fpage>1206</fpage>
+      <lpage>1211</lpage>
+      <permissions>
+        <license>
+          <p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</p>
+        </license>
+      </permissions>
+      <abstract>
+        <sec id="S1">
+          <title>Background</title>
+          <p id="P1">Periodontitis is ubiquitous and associated with serological evidence of exposure to periodontal organisms, systemic inflammation and vascular disease. Dementia is a major public health problem likely related to a complex interaction between genetics and diseases associated with systemic inflammation, including diabetes, smoking and stroke.</p>
+        </sec>
+        <sec sec-type="methods" id="S2">
+          <title>Methods</title>
+          <p id="P2">To assess relationships between systemic exposure to periodontal pathogens and cognitive test outcomes, data were analysed from the Third National Health and Nutrition Examination Survey (NHANES-III), a nationally representative cross sectional observational study among older adults. We included 2355 participants ≥60 years who completed measures of cognition and <italic>Poryphyromonas gingivalis</italic> IgG. Using SUDAAN, logistic regression models examined the association of <italic>P gingivalis</italic> IgG with cognitive test performance.</p>
+        </sec>
+        <sec id="S3">
+          <title>Results</title>
+          <p id="P3">Poor immediate verbal memory (&lt;5/9 points) was prevalent in 5.7% of patients, and 6.5% overall had impaired delayed recall (&lt;4/9); 22.1% had difficulty with serial subtractions (&lt;5/5 trials correct). Individuals with the highest <italic>P gingivalis</italic> IgG (&gt;119 ELISA Units (EU)) were more likely to have poor delayed verbal recall (OR 2.89, 95% CI 1.14 to 7.29) and impaired subtraction (OR 1.95, 95% CI 1.22 to 3.11) than those with the lowest (≤57 EU), with dose–response relationships for both (p trend, delayed memory=0.045, subtraction=0.04). After adjusting for socioeconomic and vascular variables, these relationships remained robust for the highest <italic>P gingivalis</italic> IgG group (delayed verbal memory OR 3.01 (95% CI 1.06 to 8.53); subtraction OR 2.00 (95% CI 1.19 to 3.36)). In contrast, immediate verbal memory was not significantly associated with <italic>P gingivalis</italic>.</p>
+        </sec>
+        <sec id="S4">
+          <title>Conclusion</title>
+          <p id="P4">A serological marker of periodontitis is associated with impaired delayed memory and calculation. Further exploration of relationships between oral health and cognition is warranted.</p>
+        </sec>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <p id="P5">Oral health problems, including periodontal disease, caries, edentulism and infrequent preventative care, become more prevalent with increasing age.<xref ref-type="bibr" rid="R1">1</xref> <xref ref-type="bibr" rid="R2">2</xref> Periodontitis and caries are the two predominant causes of tooth loss and reflect similar risk factors, including inattention to care; periodontitis is more common than caries among adults.<xref ref-type="bibr" rid="R3">3</xref> <xref ref-type="bibr" rid="R4">4</xref> Estimates of adult prevalence of clinical periodontitis vary from 20% to greater than 80%,<xref ref-type="bibr" rid="R5">5</xref> and differences in prevalence estimates likely depend on clinical markers used for disease definition.</p>
+    <p id="P6">Periodontitis is a chronic, potentially transmissible oral biofilm infection.<xref ref-type="bibr" rid="R6">6</xref> <xref ref-type="bibr" rid="R7">7</xref> Exposure to periodontal pathogens is ubiquitous in older adults,<xref ref-type="bibr" rid="R8">8</xref> with a large proportion exposed by adolescence.<xref ref-type="bibr" rid="R9">9</xref> A systemic host response to periodontitis is evidenced by serum antibodies to common periodontal bacteria,<xref ref-type="bibr" rid="R8">8</xref> such as <italic>Porphyromonas gingivalis</italic> (a pathogen causally associated with periodontitis),<xref ref-type="bibr" rid="R6">6</xref> plus elevations in serum inflammatory markers interleukin 6<xref ref-type="bibr" rid="R10">10</xref> and C reactive protein.<xref ref-type="bibr" rid="R11">11</xref> In addition to epidemiological associations, treatment of periodontal disease decreases serum levels of interleukin 6 and C reactive protein.<xref ref-type="bibr" rid="R11">11</xref></p>
+    <p id="P7">Epidemiological evidence supports an association between stroke and serum antibody measures to <italic>P gingivalis</italic>.<xref ref-type="bibr" rid="R12">12</xref> <italic>P gingivalis</italic> is associated with accelerated aortic atherogenesis<xref ref-type="bibr" rid="R13">13</xref> and increased carotid artery intimal–medial thickness.<xref ref-type="bibr" rid="R14">14</xref> Risk factors for stroke and dementia, including diabetes, obesity and smoking, have a similar systemic inflammatory profile to periodontitis<xref ref-type="bibr" rid="R15">15</xref> <xref ref-type="bibr" rid="R16">16</xref> and suggest that they could play similar roles in a final common pathway of atherogenesis related to systemic inflammation.<xref ref-type="bibr" rid="R15">15</xref></p>
+    <p id="P8">Despite the association of periodontitis with stroke and shared risk factors between stroke and dementia,<xref ref-type="bibr" rid="R17">17</xref> to our knowledge, no epidemiological studies have investigated periodontitis relative to cognition. We hypothesised that periodontal disease is a risk factor for poor cognition. Thus we investigated whether periodontitis, as defined by a serological marker, is independently associated with cognitive test performance in older adults in a nationally representative US sample, before and after controlling for potential socioeconomic and vascular confounders.</p>
+    <sec sec-type="methods" id="S5">
+      <title>METHODS</title>
+      <sec id="S6">
+        <title>Source of data</title>
+        <p id="P9">The Third National Health and Nutrition Examination Survey (NHANES-III) was a cross sectional nationwide health survey of the USA, performed between 1988 and 1994 by the National Center for Health Statistics. NHANES-III enrolled 33 994 persons aged 2 months and older using a stratified multistage probability sampling design.</p>
+      </sec>
+      <sec id="S7">
+        <title>Inclusion criteria</title>
+        <p id="P10">During the second phase of enrolment (1991–1994), 9371 persons had serum analysis for immunoglobulin levels of <italic>P gingivalis</italic>,<xref ref-type="bibr" rid="R18">18</xref> with 2531 ≥60 years of age. Of these, persons with both cognitive evaluations and serum analysis for these pathogens (n=2355) were included in this analysis.</p>
+      </sec>
+      <sec id="S8">
+        <title>Study variables</title>
+        <p id="P11">Serum <italic>P gingivalis</italic> IgG was chosen for study to capture evidence of systemic exposure to a common periodontal disease causing pathogenic bacterium with well described pathogenicity<xref ref-type="bibr" rid="R8">8</xref> and associations with systemic disease and stroke. Antibody measurements were reported in ELISA units of IgG (EU). To examine for possible dose–response relationships of <italic>P gingivalis</italic> and cognition, we created four ranges of <italic>P gingivalis</italic> IgG based on the only known report relating periodontitis severity to <italic>P gingivalis</italic> IgG.<xref ref-type="bibr" rid="R8">8</xref> That report from the Atherosclerosis Risk in Communities Study (ARIC, n=1673) had similar demographics to the NHANES-III subjects studied here and reported mean <italic>P gingivalis</italic> IgG for healthy individuals of 53.8 EU (SD 9.1), mild periodontitis 60.9 EU (SD 8.4), moderate periodontitis 69.4 EU (SD 5.5) and severe periodontitis 168.4 (SD 9.5) (p&lt;0.0001, determined by non-parametric rank scores from general linear models for overall significance after having p&lt;0.05 for the Hotelling T<sup>2</sup> statistic for multiple comparisons of 17 periodontal bacteria serum titres).<xref ref-type="bibr" rid="R8">8</xref> To capture the relationship of increasing <italic>P gingivalis</italic> IgG associated with increasing periodontitis severity, we used the midpoint between each of these <italic>P gingivalis</italic> IgG means to create cut-off points for four <italic>P gingivalis</italic> IgG groups: ≤57 EU (referent), 58–65 EU, 66–119 EU and &gt; 119 EU (highest).</p>
+        <p id="P12">Three cognitive tests were measured in NHANES-III: an immediate and delayed logical verbal memory test from the East Boston Memory Test,<xref ref-type="bibr" rid="R19">19</xref> a three word registration/memory task (“apple,” “table” and “ penny”) and five serial subtractions by intervals of three. Consistent with previous NHANES-III reports,<xref ref-type="bibr" rid="R20">20</xref> <xref ref-type="bibr" rid="R21">21</xref> a summary score of less than 4 out of a possible 9 points in total (0–6 points from paragraph/story memory, plus 0–3 points from three word recall) was considered impaired. For immediate memory (registration), again using a summary score of logical memory and three word task, we considered less than 5 out of 9 points (10th percentile) to be impaired. For the test of serial subtractions, any miscalculation during the five trials was considered impaired. We also initially explored a clinical definition of periodontitis<xref ref-type="bibr" rid="R22">22</xref> relative to delayed memory but found no association (data not shown).</p>
+        <p id="P13">A comprehensive history was taken, including medical history, medication use and self-reported sociodemographic factors. Race–ethnicity included data from the three major groups, as collected in the survey: non-Hispanic White, non-Hispanic Black and Mexican–American. Annual individual income was categorised into three groups: ≤$14 999, $15 000–24 999 and &gt;$25 000. Health insurance status was defined by active health insurance within the last month (private company, Medicare, Medicaid or military). Years of education were categorised as &lt;12 years (less than high school education), 12 years (equivalent to completion of high school) and &gt;12 years of (at least some education beyond high school). Smoking status was specified as never, current or former smokers.</p>
+        <p id="P14">Coronary artery disease (CAD) was defined by history of myocardial infarction or anginal symptoms (pain or discomfort in the chest while walking uphill that abates with rest). Congestive heart failure (CHF) was based on a history of a physician informing the patient of CHF. Stroke was defined as a self-reported history of stroke or if the subject had been informed by a physician of stroke. Diabetes mellitus was defined by self-report of diabetes; women with only a history of gestational diabetes were not considered diabetic. Hypertension was defined as present if the participant self-reported hypertension, used anti-hypertensive medications or had measured systolic blood pressure &gt; 130 mm Hg or diastolic blood pressure &gt;85 mm Hg. This more liberal assessment of blood pressure is consistent with that of the metabolic syndrome<xref ref-type="bibr" rid="R23">23</xref> and was used in order to minimise the potential effect of this possible confounder.</p>
+      </sec>
+      <sec id="S9">
+        <title>Statistical methods</title>
+        <p id="P15">Descriptive statistics for selected characteristics and prevalence of the outcomes of interest were estimated. To determine significance of differences, t tests for comparison of means of continuous variables were used. To determine the strength of the association between <italic>P gingivalis</italic> IgG and cognitive test performance before and after controlling for selected covariates, logistic regression models were fitted. All data management was done using SAS v9.1 (SAS/STAT 9.1 User’s Guide, 2004; SAS Institute Inc, Cary, North Carolina, USA). All analyses were performed with SUDAAN (SUDAAN Language Manual, Release 9.0, 2004; Research Triangle Institute, North Carolina, USA), which takes into account the complex sampling design used in NHANES-III yielding unbiased standard error estimates.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S10">
+      <title>RESULTS</title>
+      <p id="P16">Mean age of the study participants was 70.8 years (95% CI 70.0 to 1.6); 57% were women (<xref ref-type="table" rid="T1">table 1</xref>). Overall, the mean <italic>P gingivalis</italic> IgG level was 117.2 EU (95% CI 103.6 to 131.1). Mean <italic>P gingivalis</italic> IgG significantly differed by sex, race, income, smoking history, dental health status, CAD and hypertension (<xref ref-type="table" rid="T2">table 2</xref>).</p>
+      <p id="P17">Poor immediate verbal memory (registration) was prevalent in 5.7% of patients, and overall 6.5% had impaired verbal memory; 22.1% had some difficulty with serial subtractions. Mean <italic>P gingivalis</italic> IgG was higher among those with impaired performance for each of the three cognitive tests (<xref ref-type="table" rid="T3">table 3</xref>). Immediate verbal memory (registration) was not significantly associated with high <italic>P gingivalis</italic> IgG in any model (<xref ref-type="table" rid="T4">table 4</xref>). In unadjusted models, individuals in the highest <italic>P gingivalis</italic> IgG group (&gt; 119 EU) were more likely to have poor delayed verbal memory (OR 2.89, 95% CI 1.14 to 7.29) and impaired subtraction (OR 1.95, 95% CI 1.22 to 3.11) than those in the lowest group (≤57 EU), with apparent dose–response relationships for both (p trend, delayed memory=0.045; p trend, subtraction=0.04) (<xref ref-type="table" rid="T5">tables 5</xref>, <xref ref-type="table" rid="T6">6</xref>).</p>
+      <p id="P18">We then explored potential effects on the relationship between <italic>P gingivalis</italic> IgG and cognitive tests, initially by age, sex and education, which did not appreciably affect the relationship between <italic>P gingivalis</italic> IgG and delayed memory or subtraction (model 1, <xref ref-type="table" rid="T5">tables 5</xref>, <xref ref-type="table" rid="T6">6</xref>). Additionally adjusting for other socioeconomic confounders (insurance status, race and income) led to marked attenuation of the relationship between the highest <italic>P gingivalis</italic> IgG group and delayed memory (OR 1.81, 95% CI 0.56 to 5.85, p trend=0.45) but did not affect the relationship with the subtraction test (model 2, <xref ref-type="table" rid="T5">tables 5</xref>, <xref ref-type="table" rid="T6">6</xref>). Finally, we explored a model additionally including potential vascular confounders hypertension, CAD, CHF, diabetes mellitus, smoking and stroke. Inclusion of vascular variables strengthened the relationship between the highest <italic>P gingivalis</italic> IgG group and delayed verbal memory (OR 3.01, 95% CI 1.06 to 8.53) but had minimal effect on the test of subtraction (OR 2.00, 95% CI 1.19 to 3.36). Taken together, these findings suggest that vascular factors are a negative confounder in the relationship of <italic>P gingivalis</italic> and delayed memory in a model adjusting for socioeconomic factors. Moreover, neither vascular nor socioeconomic factors played an appreciable role in the relationship of <italic>P gingivalis</italic> IgG and subtraction test performance.</p>
+      <p id="P19">We also explored potential effect modification of the relationship between <italic>P gingivalis</italic> IgG and cognitive tests by age (dichotomised at a median age of 72 years), stroke history and race (given its apparent role as a confounder in the relationship with delayed memory). None of these potential effect modifiers were statistically significant in crude or fully adjusted models for any of the cognitive tests (data not shown).</p>
+    </sec>
+    <sec sec-type="discussion" id="S11">
+      <title>DISCUSSION</title>
+      <p id="P20">We identified a cross sectional association between a serological marker of a common periodontitis pathogen and poor cognitive test performance in a large nationally representative sample. Individuals with high levels of <italic>P gingivalis</italic> IgG had significantly greater odds of impaired verbal memory and subtraction test performance and this finding remained robust when adjusting for potential sociodemographic and vascular confounders. Furthermore, we identified a statistically significant dose–response relationship between subtraction test performance and increasing <italic>P gingivalis</italic> IgG and a similar but non-significant trend regarding delayed verbal memory and <italic>P gingivalis</italic> IgG. Given these findings, we performed post hoc analyses of <italic>A actinomycetemcomitans</italic> IgG (the only other periodontal pathogen evaluated in NHANES-III) and clinical periodontitis<xref ref-type="bibr" rid="R22">22</xref> relative to all cognitive test outcomes but found no relationship in any models (data not shown), perhaps related to weak associations of <italic>A actinomycetemcomitans</italic> with systemic disease<xref ref-type="bibr" rid="R12">12</xref> and imprecise clinical periodontal measurements in NHANES-III.<xref ref-type="bibr" rid="R24">24</xref> Notably, an NHANES-III study found that among those aged 20–59 years, markers of periodontitis (gingival bleeding, loss of periodontal attachment and tooth loss) were associated with poor symbol digit substitution test and serial digit learning test performance. However, these same individual clinical measures of periodontitis were not associated with story recall in adjusted models among those aged 70 years and older.<xref ref-type="bibr" rid="R25">25</xref></p>
+      <p id="P21">These cross sectional analyses do not allow inferences regarding the directionality of the association of cognition and dental health. A relatively straightforward argument can be made for cognitive impairment leading to poor dental health: persons with impaired cognition could be inattentive to oral hygiene or oral health maintenance as impairment in cognition progresses.<xref ref-type="bibr" rid="R26">26</xref> Conversely, worth considering is whether poor oral health could contribute to subsequent cognitive impairment.</p>
+      <p id="P22">Although results presented here are preliminary and inconclusive, a growing body of evidence supports exploration of a possible association between poor oral health and incident dementia. Poor dentition, a late-life marker of earlier oral health conditions such as periodontitis, is associated with both prevalent cognitive impairment<xref ref-type="bibr" rid="R25">25</xref> <xref ref-type="bibr" rid="R27">27</xref> <xref ref-type="bibr" rid="R28">28</xref> and incident dementia.<xref ref-type="bibr" rid="R29">29</xref>–<xref ref-type="bibr" rid="R31">31</xref> In addition, at least one randomised trial demonstrated that more intensive dental care was associated to a 1.5 point significantly slower decline in Folstein Mini-Mental Status Examination score after 2 years.<xref ref-type="bibr" rid="R32">32</xref></p>
+      <p id="P23">Despite association of stroke with periodontitis,<xref ref-type="bibr" rid="R17">17</xref> <xref ref-type="bibr" rid="R33">33</xref> stroke did not appear to be a confounder or effect modifier in the relationship between <italic>P gingivalis</italic> IgG and cognitive test performance. This could reflect an imprecise assessment of stroke based on self-report, or that the relationship between stroke, periodontitis and memory is masked within a cross-sectional study. Alternatively, periodontitis could be related to cognition independent of clinical stroke. Similar to diabetes, hypertension and smoking,<xref ref-type="bibr" rid="R34">34</xref> periodontitis is associated with impaired systemic arterial endothelial function,<xref ref-type="bibr" rid="R35">35</xref> and the latter has been associated with cerebral white matter hyperintensities,<xref ref-type="bibr" rid="R36">36</xref> vascular dementia and Alzheimer’s disease.<xref ref-type="bibr" rid="R37">37</xref> <xref ref-type="bibr" rid="R38">38</xref> Alternatively, systemic inflammation has been hypothesised to directly influence expression of neurodegenerative disorders such as Alzheimer’s disease.<xref ref-type="bibr" rid="R39">39</xref></p>
+      <p id="P24">This study has several limitations other than the constraints of cross sectional analysis. Measurable socioeconomic covariates provide a restricted scope of lifelong socioeconomic status and periodontitis could be or lead, at least in part, to residual confounder; indeed, low socioeconomic status is strongly associated with periodontitis in NHANES-III.<xref ref-type="bibr" rid="R22">22</xref> Moreover, persons with low socioeconomic status may have low cognitive reserve,<xref ref-type="bibr" rid="R40">40</xref> or relatively worse memory test performance despite similar brain pathology compared with other groups.</p>
+      <p id="P25">Available NHANES-III cognitive tests are another limitation. The cognitive measurements reported here are crude assessments of cognitive test performance and may reflect individual or group differences in test understanding, rather than a true assessment of cognition. The limited scope of these tests also does not clearly inform a potential neuroanatomical basis for impaired test performance, given likely overlapping cognitive domains involved with each task. Furthermore, the precise aetiology of impaired cognitive test performance cannot be known from these data. Nonetheless, the components of the outcome used here have been validated as rigorous tools for screening memory in epidemiological studies.<xref ref-type="bibr" rid="R19">19</xref></p>
+      <p id="P26">In an attempt to capture a dose–response relationship between <italic>P gingivalis</italic> IgG and cognitive test performance, we created <italic>P gingivalis</italic> IgG groups based on a report from another large multicentre population based American study (ARIC),<xref ref-type="bibr" rid="R8">8</xref> which found a strong association between escalating levels of <italic>P gingivalis</italic> IgG and clinical periodontitis severity. Use of this schema for creating <italic>P gingivalis</italic> IgG groups appears plausible but requires validation in other studies. Serum antibodies to periodontal pathogens are strongly associated with worse states of oral health<xref ref-type="bibr" rid="R8">8</xref> and remain persistently elevated despite clinical treatment.<xref ref-type="bibr" rid="R41">41</xref> Taken together, these findings suggest that serum antibody levels reflect chronic, intermittent exposures of clinical periodontitis, but it is uncertain whether to state that a higher periodontal titre implies higher burden of acute exposures, more recent exposure or more intense response to periodontal pathogens.</p>
+      <p id="P27">Periodontitis is a lifelong, highly prevalent, chronic inflammatory disease associated with stroke, systemic inflammation and endothelial dysfunction. Although our results are preliminary, they suggest that further exploration of relationships between oral health and cognition is warranted.</p>
+    </sec>
+  </body>
+  <back>
+    <sec id="S12" sec-type="display-objects">
+      <title>Tables</title>
+      <table-wrap id="T1" position="float">
+        <label>Table 1</label>
+        <caption>
+          <p id="P28">Distribution and prevalence of selected characteristics in NHANES-III adults included in the analyses (unweighted n=2355)</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <th align="left" rowspan="1" colspan="1">Characteristic</th>
+              <th align="right" rowspan="1" colspan="1">Overall (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Sex</td>
+              <td align="right" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Women</td>
+              <td align="right" rowspan="1" colspan="1">57.3</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Men</td>
+              <td align="right" rowspan="1" colspan="1">42.7</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Race–ethnicity</td>
+              <td align="right" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Non-Hispanic White</td>
+              <td align="right" rowspan="1" colspan="1">89.2</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Non-Hispanic Black</td>
+              <td align="right" rowspan="1" colspan="1">8.3</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Mexican–American</td>
+              <td align="right" rowspan="1" colspan="1">2.5</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Active health insurance</td>
+              <td align="right" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Yes</td>
+              <td align="right" rowspan="1" colspan="1">98.7</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   No</td>
+              <td align="right" rowspan="1" colspan="1">1.3</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Education</td>
+              <td align="right" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   &lt;12 years</td>
+              <td align="right" rowspan="1" colspan="1">38.5</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   12 years</td>
+              <td align="right" rowspan="1" colspan="1">32.5</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   &gt;12 years</td>
+              <td align="right" rowspan="1" colspan="1">28.9</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Annual income</td>
+              <td align="right" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   ≤$14 999</td>
+              <td align="right" rowspan="1" colspan="1">31.4</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   $15 000–24 999</td>
+              <td align="right" rowspan="1" colspan="1">26.2</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   &gt;$25 000</td>
+              <td align="right" rowspan="1" colspan="1">42.4</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Smoking history</td>
+              <td align="right" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Non-smokers</td>
+              <td align="right" rowspan="1" colspan="1">45.8</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Former smokers</td>
+              <td align="right" rowspan="1" colspan="1">40.3</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Active smokers</td>
+              <td align="right" rowspan="1" colspan="1">13.8</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">CAD</td>
+              <td align="right" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Yes</td>
+              <td align="right" rowspan="1" colspan="1">15.4</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   No</td>
+              <td align="right" rowspan="1" colspan="1">84.6</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">CHF</td>
+              <td align="right" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Yes</td>
+              <td align="right" rowspan="1" colspan="1">6.5</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   No</td>
+              <td align="right" rowspan="1" colspan="1">93.5</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Prior stroke</td>
+              <td align="right" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Yes</td>
+              <td align="right" rowspan="1" colspan="1">7.1</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   No</td>
+              <td align="right" rowspan="1" colspan="1">92.9</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Diabetes</td>
+              <td align="right" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Yes</td>
+              <td align="right" rowspan="1" colspan="1">11.9</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   No</td>
+              <td align="right" rowspan="1" colspan="1">88.1</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Hypertension</td>
+              <td align="right" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Yes</td>
+              <td align="right" rowspan="1" colspan="1">74.5</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   No</td>
+              <td align="right" rowspan="1" colspan="1">25.5</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Dentate status</td>
+              <td align="right" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Completely edentulous</td>
+              <td align="right" rowspan="1" colspan="1">29.3</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Edentulous in 1 arch</td>
+              <td align="right" rowspan="1" colspan="1">14.5</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Some natural teeth present</td>
+              <td align="right" rowspan="1" colspan="1">56.2</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1"><italic>P gingivalis</italic> IgG (EU)</td>
+              <td align="right" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   (≤57)</td>
+              <td align="right" rowspan="1" colspan="1">7.9</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   (58–65)</td>
+              <td align="right" rowspan="1" colspan="1">18.9</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   (66–119)</td>
+              <td align="right" rowspan="1" colspan="1">54.1</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   (&gt;119)</td>
+              <td align="right" rowspan="1" colspan="1">19.1</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn id="TFN1">
+            <p id="P29">CAD, coronary artery disease; CHF, congestive heart failure.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <table-wrap id="T2" position="float">
+        <label>Table 2</label>
+        <caption>
+          <p id="P30">Mean <italic>P gingivalis</italic> IgG level for selected population characteristics: NHANES III</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <th align="left" valign="bottom" rowspan="1" colspan="1">Characteristic</th>
+              <th align="left" valign="bottom" rowspan="1" colspan="1">Mean <italic>P gingivalis</italic> IgG<break/>(EU) (95% CI)</th>
+              <th align="center" valign="bottom" rowspan="1" colspan="1">p Value<xref ref-type="table-fn" rid="TFN2">*</xref></th>
+              <th align="center" rowspan="1" colspan="1"/>
+              <th align="left" rowspan="1" colspan="1"/>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Overall</td>
+              <td align="left" rowspan="1" colspan="1">117.2 (103.6–131.1)</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Age</td>
+              <td align="left" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   ≤72 years</td>
+              <td align="left" rowspan="1" colspan="1">117.0 (103.3–130.6)</td>
+              <td align="center" rowspan="1" colspan="1">0.62</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   &gt;72 years</td>
+              <td align="left" rowspan="1" colspan="1">121.3 (102.6–139.9)</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Sex</td>
+              <td align="left" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Men</td>
+              <td align="left" rowspan="1" colspan="1">127.1 (111.2–143.1)</td>
+              <td align="center" rowspan="1" colspan="1">0.03</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Women</td>
+              <td align="left" rowspan="1" colspan="1">112.1 (97.8–126.3)</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Race-ethnicity</td>
+              <td align="left" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1">W vs B</td>
+              <td align="center" rowspan="1" colspan="1">W vs M</td>
+              <td align="left" rowspan="1" colspan="1">B vs M</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Non-Hispanic White (W)</td>
+              <td align="left" rowspan="1" colspan="1">105.7 (96.3–115.0)</td>
+              <td align="center" rowspan="1" colspan="1">&lt;0.01</td>
+              <td align="center" rowspan="1" colspan="1">0.05</td>
+              <td align="left" rowspan="1" colspan="1">0.89</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Non-Hispanic Black (B)</td>
+              <td align="left" rowspan="1" colspan="1">220.8 (152.7–288.9)</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Mexican–American (M)</td>
+              <td align="left" rowspan="1" colspan="1">212.1 (104.9–319.2)</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Active health insurance</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Yes</td>
+              <td align="left" rowspan="1" colspan="1">118.0 (104.6–131.5)</td>
+              <td align="center" rowspan="1" colspan="1">0.15</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   No</td>
+              <td align="left" rowspan="1" colspan="1">150.5 (103.4–197.6)</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Education</td>
+              <td align="left" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1">E vs HS</td>
+              <td align="center" rowspan="1" colspan="1">E vs C</td>
+              <td align="left" rowspan="1" colspan="1">HS vs C</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   &lt;12 years (E)</td>
+              <td align="left" rowspan="1" colspan="1">121.1 (101.0–141.3)</td>
+              <td align="center" rowspan="1" colspan="1">0.49</td>
+              <td align="center" rowspan="1" colspan="1">0.61</td>
+              <td align="left" rowspan="1" colspan="1">0.88</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   12 years (HS)</td>
+              <td align="left" rowspan="1" colspan="1">113.3 (96.7–129.9)</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   &gt;12 years (C)</td>
+              <td align="left" rowspan="1" colspan="1">114.8 (97.7–131.8)</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Annual income</td>
+              <td align="left" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1">L vs M</td>
+              <td align="center" rowspan="1" colspan="1">L vs Hi</td>
+              <td align="left" rowspan="1" colspan="1">M vs Hi</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   ≤$14 999 (L)</td>
+              <td align="left" rowspan="1" colspan="1">138.2 (114.1–162.4)</td>
+              <td align="center" rowspan="1" colspan="1">0.01</td>
+              <td align="center" rowspan="1" colspan="1">0.01</td>
+              <td align="left" rowspan="1" colspan="1">0.56</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   $15 000–24 999 (M)</td>
+              <td align="left" rowspan="1" colspan="1">111.5 (93.6–129.5)</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   &gt;$25 000 (Hi)</td>
+              <td align="left" rowspan="1" colspan="1">106.5 (95.1–117.8)</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Smoking history</td>
+              <td align="left" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1">A vs F</td>
+              <td align="center" rowspan="1" colspan="1">A vs N</td>
+              <td align="left" rowspan="1" colspan="1">F vs N</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Active smokers (A)</td>
+              <td align="left" rowspan="1" colspan="1">  99.1 (87.7–110.5)</td>
+              <td align="center" rowspan="1" colspan="1">0.01</td>
+              <td align="center" rowspan="1" colspan="1">&lt;0.01</td>
+              <td align="left" rowspan="1" colspan="1">0.29</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Former smokers (F)</td>
+              <td align="left" rowspan="1" colspan="1">116.4 (101.1–131.7)</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Non-smokers (N)</td>
+              <td align="left" rowspan="1" colspan="1">126.1 (108.1–144.1)</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">CAD</td>
+              <td align="left" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Yes</td>
+              <td align="left" rowspan="1" colspan="1">104.1 (91.4–116.8)</td>
+              <td align="center" rowspan="1" colspan="1">0.02</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   No</td>
+              <td align="left" rowspan="1" colspan="1">121.0 (106.5–135.6)</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">CHF</td>
+              <td align="left" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Yes</td>
+              <td align="left" rowspan="1" colspan="1">124.3 (98.9–149.7)</td>
+              <td align="center" rowspan="1" colspan="1">0.59</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   No</td>
+              <td align="left" rowspan="1" colspan="1">118.1 (104.8–131.4)</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Prior stroke</td>
+              <td align="left" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Yes</td>
+              <td align="left" rowspan="1" colspan="1">143.0 (98.9–187.2)</td>
+              <td align="center" rowspan="1" colspan="1">0.23</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   No</td>
+              <td align="left" rowspan="1" colspan="1">116.7 (103.6–129.9)</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Diabetes</td>
+              <td align="left" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Yes</td>
+              <td align="left" rowspan="1" colspan="1">139. 4 (101.6–177.3)</td>
+              <td align="center" rowspan="1" colspan="1">0.66</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   No</td>
+              <td align="left" rowspan="1" colspan="1">115.7 (103.0–128.4)</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Hypertension</td>
+              <td align="left" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Yes</td>
+              <td align="left" rowspan="1" colspan="1">125.4 (108.8–142.0)</td>
+              <td align="center" rowspan="1" colspan="1">&lt;0.01</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   No</td>
+              <td align="left" rowspan="1" colspan="1">  99.4 (88.0–110.8)</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Dentate status</td>
+              <td align="left" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1">EA vs E1</td>
+              <td align="center" rowspan="1" colspan="1">EA vs T</td>
+              <td align="left" rowspan="1" colspan="1">E1 vs T</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Edentulous (EA)</td>
+              <td align="left" rowspan="1" colspan="1">  80.7 (73.2–88.2)</td>
+              <td align="center" rowspan="1" colspan="1">0.02</td>
+              <td align="center" rowspan="1" colspan="1">&lt;0.01</td>
+              <td align="left" rowspan="1" colspan="1">0.01</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Edentulous in 1 arch (E1)</td>
+              <td align="left" rowspan="1" colspan="1">105.9 (85.8–125.9)</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   At least some natural teeth present (T)</td>
+              <td align="left" rowspan="1" colspan="1">143.6 (122.3–164.8)</td>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="center" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn id="TFN2">
+            <label>*</label>
+            <p id="P31">p values derived from t test comparison of means of <italic>P gingivalis</italic> IgG by population characteristic.</p>
+          </fn>
+          <fn id="TFN3">
+            <p id="P32">CAD, coronary artery disease; CHF, congestive heart failure; EU, ELISA unit.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <table-wrap id="T3" position="float">
+        <label>Table 3</label>
+        <caption>
+          <p id="P33">Cognitive test performance relative to <italic>P gingivalis</italic> IgG</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <th align="left" valign="bottom" rowspan="1" colspan="1">Test</th>
+              <th align="right" valign="bottom" rowspan="1" colspan="1">Overall<break/>(%)</th>
+              <th align="left" valign="bottom" rowspan="1" colspan="1"><italic>P gingivalis</italic> IgG<break/>(EU) (95% CI)</th>
+              <th align="left" valign="bottom" rowspan="1" colspan="1">p Value<xref ref-type="table-fn" rid="TFN4">*</xref></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Immediate verbal memory/registration (9 possible points)</td>
+              <td align="right" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Low (0–4 points)</td>
+              <td align="right" rowspan="1" colspan="1">5.7</td>
+              <td align="left" rowspan="1" colspan="1">164.3 (78.3–250.3)</td>
+              <td align="left" rowspan="1" colspan="1">0.24</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   High (5–9 points)</td>
+              <td align="left" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1">113.6 (100.7–126.5)</td>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Delayed verbal memory (9 possible points)</td>
+              <td align="right" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Low (0–3 points)</td>
+              <td align="right" rowspan="1" colspan="1">6.9</td>
+              <td align="left" rowspan="1" colspan="1">155.3 (87.4–223.2)</td>
+              <td align="left" rowspan="1" colspan="1">0.23</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   High (4–9 points)</td>
+              <td align="right" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1">114.6 (101.6–127.7)</td>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">Serial 3 subtraction test (5 possible points)</td>
+              <td align="right" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   Low (0–4 points)</td>
+              <td align="right" rowspan="1" colspan="1">22.1</td>
+              <td align="left" rowspan="1" colspan="1">132.3 (114.3–150.4)</td>
+              <td align="left" rowspan="1" colspan="1">0.046</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">   High (5 points)</td>
+              <td align="right" rowspan="1" colspan="1"/>
+              <td align="left" rowspan="1" colspan="1">114.8 (100.6–129.0)</td>
+              <td align="left" rowspan="1" colspan="1"/>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn id="TFN4">
+            <label>*</label>
+            <p id="P34">p values derived from t test comparison of means of <italic>P gingivalis</italic> IgG by population characteristic.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <table-wrap id="T4" position="float">
+        <label>Table 4</label>
+        <caption>
+          <p id="P35">Crude and adjusted odds ratios for <italic>P gingivalis</italic> IgG and memory tests. Immediate verbal memory/registration (impaired &lt;5/9 possible points)</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <th align="left" rowspan="1" colspan="1"/>
+              <th align="left" colspan="4" rowspan="1">Models for immediate verbal memory OR (95% CI)</th>
+            </tr>
+            <tr>
+              <th align="left" rowspan="1" colspan="1"/>
+              <th align="left" colspan="4" valign="bottom" rowspan="1">
+                <hr/>
+              </th>
+            </tr>
+            <tr>
+              <th align="left" rowspan="1" colspan="1"><italic>P gingivalis</italic> IgG (EU)</th>
+              <th align="left" rowspan="1" colspan="1">Crude</th>
+              <th align="left" rowspan="1" colspan="1">Model 1</th>
+              <th align="left" rowspan="1" colspan="1">Model 2</th>
+              <th align="left" rowspan="1" colspan="1">Model 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">(≤57) [reference]</td>
+              <td align="left" rowspan="1" colspan="1">1</td>
+              <td align="left" rowspan="1" colspan="1">1</td>
+              <td align="left" rowspan="1" colspan="1">1</td>
+              <td align="left" rowspan="1" colspan="1">1</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">(58–65)</td>
+              <td align="left" rowspan="1" colspan="1">0.99 (0.34–2.86)</td>
+              <td align="left" rowspan="1" colspan="1">0.90 (0.29–2.80)</td>
+              <td align="left" rowspan="1" colspan="1">0.57 (0.18–1.83)</td>
+              <td align="left" rowspan="1" colspan="1">1.01 (0.38–2.67)</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">(66–119)</td>
+              <td align="left" rowspan="1" colspan="1">1.63 (0.48–5.54)</td>
+              <td align="left" rowspan="1" colspan="1">1.44 (0.38–5.42)</td>
+              <td align="left" rowspan="1" colspan="1">1.17 (0.29–4.73)</td>
+              <td align="left" rowspan="1" colspan="1">1.99 (0.57–6.98)</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">(&gt;119)</td>
+              <td align="left" rowspan="1" colspan="1">2.14 (0.62–7.39)</td>
+              <td align="left" rowspan="1" colspan="1">2.02 (0.54–7.63)</td>
+              <td align="left" rowspan="1" colspan="1">1.62 (0.39–6.80)</td>
+              <td align="left" rowspan="1" colspan="1">2.57 (0.75–8.85)</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">p Trend</td>
+              <td align="left" rowspan="1" colspan="1">0.11</td>
+              <td align="left" rowspan="1" colspan="1">0.21</td>
+              <td align="left" rowspan="1" colspan="1">0.04</td>
+              <td align="left" rowspan="1" colspan="1">0.07</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn id="TFN5">
+            <p id="P36">Crude, association of <italic>P gingivalis</italic> IgG and cognitive test; Model 1, additionally adjusted for age, sex and education; Model 2, additionally adjusted for race, insurance and income; Model 3, additionally adjusted for history of diabetes mellitus, hypertension, smoking, congestive heart failure, coronary artery disease, stroke and C reactive protein.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <table-wrap id="T5" position="float">
+        <label>Table 5</label>
+        <caption>
+          <p id="P37">Crude and adjusted odds ratios for <italic>P gingivalis</italic> IgG and memory tests. Delayed verbal memory (impaired &lt;4/9 possible points)</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <th align="left" rowspan="1" colspan="1"/>
+              <th align="left" colspan="4" rowspan="1">Models for delayed verbal memory OR (95% CI)</th>
+            </tr>
+            <tr>
+              <th align="left" rowspan="1" colspan="1"/>
+              <th align="left" colspan="4" valign="bottom" rowspan="1">
+                <hr/>
+              </th>
+            </tr>
+            <tr>
+              <th align="left" rowspan="1" colspan="1"><italic>P gingivalis</italic> IgG (EU)</th>
+              <th align="left" rowspan="1" colspan="1">Crude</th>
+              <th align="left" rowspan="1" colspan="1">Model 1</th>
+              <th align="left" rowspan="1" colspan="1">Model 2</th>
+              <th align="left" rowspan="1" colspan="1">Model 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">(≤57) [reference]</td>
+              <td align="left" rowspan="1" colspan="1">1</td>
+              <td align="left" rowspan="1" colspan="1">1</td>
+              <td align="left" rowspan="1" colspan="1">1</td>
+              <td align="left" rowspan="1" colspan="1">1</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">(58–65)</td>
+              <td align="left" rowspan="1" colspan="1">1.43 (0.67–3.03)</td>
+              <td align="left" rowspan="1" colspan="1">1.40 (0.64–3.09)</td>
+              <td align="left" rowspan="1" colspan="1">1.04 (0.43–2.50)</td>
+              <td align="left" rowspan="1" colspan="1">1.82 (0.88–3.75)</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">(66–119)</td>
+              <td align="left" rowspan="1" colspan="1">2.03 (0.80–5.18)</td>
+              <td align="left" rowspan="1" colspan="1">1.94 (0.69–5.41)</td>
+              <td align="left" rowspan="1" colspan="1">1.54 (0.49–4.81)</td>
+              <td align="left" rowspan="1" colspan="1">2.60 (0.91–7.46)</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">(&gt;119)</td>
+              <td align="left" rowspan="1" colspan="1">2.89 (1.14–7.29)</td>
+              <td align="left" rowspan="1" colspan="1">3.23 (1.19–8.79)</td>
+              <td align="left" rowspan="1" colspan="1">1.81 (0.56–5.85)</td>
+              <td align="left" rowspan="1" colspan="1">3.01 (1.06–8.53)</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">p Trend</td>
+              <td align="left" rowspan="1" colspan="1">0.045</td>
+              <td align="left" rowspan="1" colspan="1">0.01</td>
+              <td align="left" rowspan="1" colspan="1">0.45</td>
+              <td align="left" rowspan="1" colspan="1">0.22</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn id="TFN6">
+            <p id="P38">Crude, association of <italic>P gingivalis</italic> IgG and cognitive test; Model 1, additionally adjusted for age, sex and education; Model 2, additionally adjusted for race, insurance and income; Model 3, additionally adjusted for history of diabetes mellitus, hypertension, smoking, congestive heart failure, coronary artery disease, stroke and C reactive protein.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <table-wrap id="T6" position="float">
+        <label>Table 6</label>
+        <caption>
+          <p id="P39">Crude and adjusted odds ratios (OR) for <italic>P gingivalis</italic> IgG and memory tests. Serial subtraction (impaired &lt;5/5 possible points)</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <th align="left" rowspan="1" colspan="1"/>
+              <th align="left" colspan="4" rowspan="1">Models for calculation/attention OR (95% CI)</th>
+            </tr>
+            <tr>
+              <th align="left" rowspan="1" colspan="1"/>
+              <th align="left" colspan="4" valign="bottom" rowspan="1">
+                <hr/>
+              </th>
+            </tr>
+            <tr>
+              <th align="left" rowspan="1" colspan="1"><italic>P gingivalis</italic> IgG (EU)</th>
+              <th align="left" rowspan="1" colspan="1">Crude</th>
+              <th align="left" rowspan="1" colspan="1">Model 1</th>
+              <th align="left" rowspan="1" colspan="1">Model 2</th>
+              <th align="left" rowspan="1" colspan="1">Model 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">(≤57) [reference]</td>
+              <td align="left" rowspan="1" colspan="1">1</td>
+              <td align="left" rowspan="1" colspan="1">1</td>
+              <td align="left" rowspan="1" colspan="1">1</td>
+              <td align="left" rowspan="1" colspan="1">1</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">(58–65)</td>
+              <td align="left" rowspan="1" colspan="1">1.49 (0.86–2.59)</td>
+              <td align="left" rowspan="1" colspan="1">1.54 (0.86–2.76)</td>
+              <td align="left" rowspan="1" colspan="1">1.48 (0.69–3.18)</td>
+              <td align="left" rowspan="1" colspan="1">1.57 (0.74–3.31)</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">(66–119)</td>
+              <td align="left" rowspan="1" colspan="1">1.42 (0.97–2.08)</td>
+              <td align="left" rowspan="1" colspan="1">1.37 (0.94–1.98)</td>
+              <td align="left" rowspan="1" colspan="1">1.34 (0.77–2.34)</td>
+              <td align="left" rowspan="1" colspan="1">1.36 (0.80–2.29)</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">(&gt;119)</td>
+              <td align="left" rowspan="1" colspan="1">1.95 (1.22–3.11)</td>
+              <td align="left" rowspan="1" colspan="1">2.02 (1.31–3.10)</td>
+              <td align="left" rowspan="1" colspan="1">1.98 (1.14–3.42)</td>
+              <td align="left" rowspan="1" colspan="1">2.00 (1.19–3.36)</td>
+            </tr>
+            <tr>
+              <td align="left" rowspan="1" colspan="1">p Trend</td>
+              <td align="left" rowspan="1" colspan="1">0.04</td>
+              <td align="left" rowspan="1" colspan="1">0.01</td>
+              <td align="left" rowspan="1" colspan="1">0.06</td>
+              <td align="left" rowspan="1" colspan="1">0.0498</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn id="TFN7">
+            <p id="P40">Crude, association of <italic>P gingivalis</italic> IgG and cognitive test; Model 1, additionally adjusted for age, sex and education; Model 2, additionally adjusted for race, insurance and income; Model 3, additionally adjusted for history of diabetes mellitus, hypertension, smoking, congestive heart failure, coronary artery disease, stroke and C reactive protein.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+    </sec>
+    <ack id="S13">
+      <title>Acknowledgements</title>
+      <p id="P41">NHANES-III is a publicly available data set. JMN had full access to all of the data in the study and takes responsibility for the integrity of the data and the accuracy of the data analysis.</p>
+      <p id="P42"><bold>Funding</bold>: This research was supported by Public Health Service Grant No 5-T32-NS07153-23 and a grant from Charles L and Ann Lee Saunders Brown (for JMN). PNP has received support for research on the relationship of periodontal treatment and peripheral blood mononuclear cell activation from Colgate–Palmolive and on the relationship of periodontal disease and stage 5 kidney disease from Johnson and Johnson. MSVE has received research support from the National Institutes of Health. In addition, MSVE has received support for research on the relationship of inflammatory markers and recurrent stroke risk in lacunar stroke patients from BMS-Sanofi Pharmaceutical Partnership and on the relationship of inflammatory markers and recurrent stroke risk from Diadexus Inc.</p>
+    </ack>
+    <fn-group>
+      <fn id="FN1">
+        <p id="P43"><bold>Competing interests</bold>: None.</p>
+        <p id="P44"><bold>Provenance and peer review</bold>: Not commissioned; externally peer reviewed.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="R1">
+        <label>1</label>
+        <citation citation-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Miller</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Brunelle</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Carlos</surname>
+              <given-names>JP</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <source>Oral health of United States adults</source>
+          <year>1987</year>
+          <publisher-loc>Bethesda, MD</publisher-loc>
+          <publisher-name>US Department of Health and Human Services, Public Health Service, National Institutes of Health</publisher-name>
+        </citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Machtei</surname>
+              <given-names>EE</given-names>
+            </name>
+            <name>
+              <surname>Christersson</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Grossi</surname>
+              <given-names>SG</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Clinical criteria for the definition of “established periodontitis”</article-title>
+          <source>J Periodontol</source>
+          <year>1992</year>
+          <volume>63</volume>
+          <fpage>206</fpage>
+          <lpage>214</lpage>
+          <pub-id pub-id-type="pmid">1593413</pub-id>
+        </citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Machtei</surname>
+              <given-names>EE</given-names>
+            </name>
+            <name>
+              <surname>Hausmann</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Dunford</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Longitudinal study of predictive factors for periodontal disease and tooth loss</article-title>
+          <source>J Clin Periodontol</source>
+          <year>1999</year>
+          <volume>26</volume>
+          <fpage>374</fpage>
+          <lpage>380</lpage>
+          <pub-id pub-id-type="pmid">10382577</pub-id>
+        </citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rosling</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Serino</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Hellstrom</surname>
+              <given-names>MK</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Longitudinal periodontal tissue alterations during supportive therapy. Findings from subjects with normal and high susceptibility to periodontal disease</article-title>
+          <source>J Clin Periodontol</source>
+          <year>2001</year>
+          <month>Mar</month>
+          <volume>28</volume>
+          <fpage>241</fpage>
+          <lpage>249</lpage>
+          <pub-id pub-id-type="pmid">11284537</pub-id>
+        </citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Burt</surname>
+              <given-names>B</given-names>
+            </name>
+          </person-group>
+          <article-title>Position paper: epidemiology of periodontal diseases</article-title>
+          <source>J Periodontol</source>
+          <year>2005</year>
+          <volume>76</volume>
+          <fpage>1406</fpage>
+          <lpage>1419</lpage>
+          <pub-id pub-id-type="pmid">16101377</pub-id>
+        </citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Socransky</surname>
+              <given-names>SS</given-names>
+            </name>
+            <name>
+              <surname>Haffajee</surname>
+              <given-names>AD</given-names>
+            </name>
+            <name>
+              <surname>Cugini</surname>
+              <given-names>MA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Microbial complexes in subgingival plaque</article-title>
+          <source>J Clin Periodontol</source>
+          <year>1998</year>
+          <volume>25</volume>
+          <fpage>134</fpage>
+          <lpage>144</lpage>
+          <pub-id pub-id-type="pmid">9495612</pub-id>
+        </citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Donlan</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Costerton</surname>
+              <given-names>JW</given-names>
+            </name>
+          </person-group>
+          <article-title>Biofilms: survival mechanisms of clinically relevant microorganisms</article-title>
+          <source>Clin Microbiol Rev</source>
+          <year>2002</year>
+          <volume>15</volume>
+          <fpage>167</fpage>
+          <lpage>193</lpage>
+          <pub-id pub-id-type="pmid">11932229</pub-id>
+        </citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Offenbacher</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Barros</surname>
+              <given-names>SP</given-names>
+            </name>
+            <name>
+              <surname>Singer</surname>
+              <given-names>RE</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Periodontal disease at the biofilm-gingival interface</article-title>
+          <source>J Periodontol</source>
+          <year>2007</year>
+          <volume>78</volume>
+          <fpage>1911</fpage>
+          <lpage>1925</lpage>
+          <pub-id pub-id-type="pmid">18062113</pub-id>
+        </citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kulekci</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Leblebicioglub</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Keskina</surname>
+              <given-names>F</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Salivary detection of periodontopathic bacteria in periodontally healthy children</article-title>
+          <source>Anaerobe</source>
+          <year>2008</year>
+          <volume>14</volume>
+          <fpage>49</fpage>
+          <lpage>54</lpage>
+          <pub-id pub-id-type="pmid">17869137</pub-id>
+        </citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bretz</surname>
+              <given-names>WA</given-names>
+            </name>
+            <name>
+              <surname>Weyant</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Corby</surname>
+              <given-names>PM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Systemic inflammatory markers, periodontal diseases, and periodontal infections in an elderly population</article-title>
+          <source>J Am Geriatr Soc</source>
+          <year>2005</year>
+          <volume>53</volume>
+          <fpage>1532</fpage>
+          <lpage>1537</lpage>
+          <pub-id pub-id-type="pmid">16137283</pub-id>
+        </citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>D’Aiuto</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Parkar</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Andreou</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Periodontitis and systemic inflammation: control of the local infection is associated with a reduction in serum inflammatory markers</article-title>
+          <source>J Dent Res</source>
+          <year>2004</year>
+          <volume>83</volume>
+          <fpage>156</fpage>
+          <lpage>160</lpage>
+          <pub-id pub-id-type="pmid">14742655</pub-id>
+        </citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pussinen</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Alfthan</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Jousilahti</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Systemic exposure to Porphyromonas gingivalis predicts incident stroke</article-title>
+          <source>Atherosclerosis</source>
+          <year>2007</year>
+          <volume>193</volume>
+          <fpage>222</fpage>
+          <lpage>228</lpage>
+          <pub-id pub-id-type="pmid">16872615</pub-id>
+        </citation>
+      </ref>
+      <ref id="R13">
+        <label>13</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ford</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Gemmell</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Timms</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Anti-P. gingivalis response correlates with atherosclerosis</article-title>
+          <source>J Dent Res</source>
+          <year>2007</year>
+          <volume>86</volume>
+          <fpage>35</fpage>
+          <lpage>40</lpage>
+          <pub-id pub-id-type="pmid">17189460</pub-id>
+        </citation>
+      </ref>
+      <ref id="R14">
+        <label>14</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Desvarieux</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Demmer</surname>
+              <given-names>RT</given-names>
+            </name>
+            <name>
+              <surname>Rundek</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Periodontal microbiota and carotid intima-media thickness: the Oral Infections and Vascular Disease Epidemiology Study (INVEST)</article-title>
+          <source>Circulation</source>
+          <year>2005</year>
+          <volume>111</volume>
+          <fpage>576</fpage>
+          <lpage>582</lpage>
+          <pub-id pub-id-type="pmid">15699278</pub-id>
+        </citation>
+      </ref>
+      <ref id="R15">
+        <label>15</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Libby</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Ridker</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>Maseri</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Inflammation and atherosclerosis</article-title>
+          <source>Circulation</source>
+          <year>2002</year>
+          <volume>105</volume>
+          <fpage>1135</fpage>
+          <lpage>1143</lpage>
+          <pub-id pub-id-type="pmid">11877368</pub-id>
+        </citation>
+      </ref>
+      <ref id="R16">
+        <label>16</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yanbaeva</surname>
+              <given-names>DG</given-names>
+            </name>
+            <name>
+              <surname>Dentener</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Creutzberg</surname>
+              <given-names>EC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Systemic effects of smoking</article-title>
+          <source>Chest</source>
+          <year>2007</year>
+          <volume>131</volume>
+          <fpage>1557</fpage>
+          <lpage>1566</lpage>
+          <pub-id pub-id-type="pmid">17494805</pub-id>
+        </citation>
+      </ref>
+      <ref id="R17">
+        <label>17</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>van Oijen</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>de Jong</surname>
+              <given-names>FJ</given-names>
+            </name>
+            <name>
+              <surname>Witteman</surname>
+              <given-names>JC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Atherosclerosis and risk for dementia</article-title>
+          <source>Ann Neurol</source>
+          <year>2007</year>
+          <volume>61</volume>
+          <fpage>403</fpage>
+          <lpage>410</lpage>
+          <pub-id pub-id-type="pmid">17328068</pub-id>
+        </citation>
+      </ref>
+      <ref id="R18">
+        <label>18</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dye</surname>
+              <given-names>BA</given-names>
+            </name>
+            <name>
+              <surname>Choudhary</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Shea</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Serum antibodies to periodontal pathogens and markers of systemic inflammation</article-title>
+          <source>J Clin Periodontol</source>
+          <year>2005</year>
+          <volume>32</volume>
+          <fpage>1189</fpage>
+          <lpage>1199</lpage>
+          <pub-id pub-id-type="pmid">16268994</pub-id>
+        </citation>
+      </ref>
+      <ref id="R19">
+        <label>19</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Albert</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Scherr</surname>
+              <given-names>PA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Use of brief cognitive tests to identify individuals in the community with clinically diagnosed Alzheimer’s disease</article-title>
+          <source>Int J Neurosci</source>
+          <year>1991</year>
+          <volume>57</volume>
+          <fpage>167</fpage>
+          <lpage>178</lpage>
+          <pub-id pub-id-type="pmid">1938160</pub-id>
+        </citation>
+      </ref>
+      <ref id="R20">
+        <label>20</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Perkins</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Hendrie</surname>
+              <given-names>HC</given-names>
+            </name>
+            <name>
+              <surname>Callahan</surname>
+              <given-names>CM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Association of antioxidants with memory in a multiethnic elderly sample using the Third National Health and Nutrition Examination Survey</article-title>
+          <source>Am J Epidemiol</source>
+          <year>1999</year>
+          <volume>150</volume>
+          <fpage>37</fpage>
+          <lpage>44</lpage>
+          <pub-id pub-id-type="pmid">10400551</pub-id>
+        </citation>
+      </ref>
+      <ref id="R21">
+        <label>21</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Heeren</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Curtis Ellison</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Education modifies the effect of alcohol on memory impairment: the third national health and nutrition examination survey</article-title>
+          <source>Neuroepidemiology</source>
+          <year>2005</year>
+          <volume>24</volume>
+          <fpage>63</fpage>
+          <lpage>69</lpage>
+          <pub-id pub-id-type="pmid">15459511</pub-id>
+        </citation>
+      </ref>
+      <ref id="R22">
+        <label>22</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Borrell</surname>
+              <given-names>LN</given-names>
+            </name>
+            <name>
+              <surname>Burt</surname>
+              <given-names>BA</given-names>
+            </name>
+            <name>
+              <surname>Neighbors</surname>
+              <given-names>HW</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Social factors and periodontitis in an older population</article-title>
+          <source>Am J Public Health</source>
+          <year>2004</year>
+          <volume>94</volume>
+          <fpage>748</fpage>
+          <lpage>754</lpage>
+          <pub-id pub-id-type="pmid">15117695</pub-id>
+        </citation>
+      </ref>
+      <ref id="R23">
+        <label>23</label>
+        <citation citation-type="journal">
+          <article-title>Executive Summary of the Third Report of The National Cholesterol Education Program (NCEP) Expert Panel on Detection, Evaluation, and Treatment of High Blood Cholesterol in Adults (Adult Treatment Panel III)</article-title>
+          <source>JAMA</source>
+          <year>2001</year>
+          <volume>285</volume>
+          <fpage>2486</fpage>
+          <lpage>2497</lpage>
+          <pub-id pub-id-type="pmid">11368702</pub-id>
+        </citation>
+      </ref>
+      <ref id="R24">
+        <label>24</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Beck</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Caplan</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Preisser</surname>
+              <given-names>JS</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Reducing the bias of probing depth and attachment level estimates using random partial-mouth recording</article-title>
+          <source>Community Dent Oral Epidemiol</source>
+          <year>2006</year>
+          <volume>34</volume>
+          <fpage>1</fpage>
+          <lpage>10</lpage>
+          <pub-id pub-id-type="pmid">16423025</pub-id>
+        </citation>
+      </ref>
+      <ref id="R25">
+        <label>25</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stewart</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Sabbah</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Tsakos</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Oral health and cognitive function in the Third National Health and Nutrition Examination Survey (NHANES III)</article-title>
+          <source>Psychosom Med</source>
+          <year>2008</year>
+          <volume>70</volume>
+          <fpage>936</fpage>
+          <lpage>941</lpage>
+          <pub-id pub-id-type="pmid">18842752</pub-id>
+        </citation>
+      </ref>
+      <ref id="R26">
+        <label>26</label>
+        <citation citation-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Noble</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Scarmeas</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Lamster</surname>
+              <given-names>IB</given-names>
+            </name>
+            <name>
+              <surname>Northridge</surname>
+              <given-names>ME</given-names>
+            </name>
+          </person-group>
+          <article-title>Cognitive Impairment</article-title>
+          <source>Improving Oral Health for the Elderly</source>
+          <year>2008</year>
+          <publisher-loc>New York</publisher-loc>
+          <publisher-name>Springer Science &amp; Business Media</publisher-name>
+        </citation>
+      </ref>
+      <ref id="R27">
+        <label>27</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kim</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Stewart</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Prince</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Dental health, nutritional status and recent-onset dementia in a Korean community population</article-title>
+          <source>Int J Geriatr Psychiatry</source>
+          <year>2007</year>
+          <volume>22</volume>
+          <fpage>850</fpage>
+          <lpage>855</lpage>
+          <pub-id pub-id-type="pmid">17266172</pub-id>
+        </citation>
+      </ref>
+      <ref id="R28">
+        <label>28</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stewart</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Hirani</surname>
+              <given-names>V</given-names>
+            </name>
+          </person-group>
+          <article-title>Dental health and cognitive impairment in an English national survey population</article-title>
+          <source>J Am Geriatr Soc</source>
+          <year>2007</year>
+          <volume>55</volume>
+          <fpage>1410</fpage>
+          <lpage>1414</lpage>
+          <pub-id pub-id-type="pmid">17767683</pub-id>
+        </citation>
+      </ref>
+      <ref id="R29">
+        <label>29</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gatz</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Mortimer</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Fratiglioni</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Potentially modifiable risk factors for dementia in identical twins</article-title>
+          <source>Alzheimers Dement J Alzheimers Assoc</source>
+          <year>2006</year>
+          <volume>2</volume>
+          <fpage>110</fpage>
+          <lpage>117</lpage>
+        </citation>
+      </ref>
+      <ref id="R30">
+        <label>30</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kondo</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Niino</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Shido</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>A case-control study of Alzheimer’s disease in Japan—significance of life-styles</article-title>
+          <source>Dementia</source>
+          <year>1994</year>
+          <volume>5</volume>
+          <fpage>314</fpage>
+          <lpage>326</lpage>
+          <pub-id pub-id-type="pmid">7866485</pub-id>
+        </citation>
+      </ref>
+      <ref id="R31">
+        <label>31</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stein</surname>
+              <given-names>PS</given-names>
+            </name>
+            <name>
+              <surname>Desrosiers</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Donegan</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Tooth loss, dementia and neuropathology in the Nun study</article-title>
+          <source>J Am Dent Assoc Oct</source>
+          <year>2007</year>
+          <volume>138</volume>
+          <fpage>1314</fpage>
+          <lpage>1322</lpage>
+        </citation>
+      </ref>
+      <ref id="R32">
+        <label>32</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yoneyama</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Yoshida</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ohrui</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Oral care reduces pneumonia in older patients in nursing homes</article-title>
+          <source>J Am Geriatr Soc</source>
+          <year>2002</year>
+          <volume>50</volume>
+          <fpage>430</fpage>
+          <lpage>433</lpage>
+          <pub-id pub-id-type="pmid">11943036</pub-id>
+        </citation>
+      </ref>
+      <ref id="R33">
+        <label>33</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Beck</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Offenbacher</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Systemic effects of periodontitis: epidemiology of periodontal disease and cardiovascular disease</article-title>
+          <source>J Periodontol</source>
+          <year>2005</year>
+          <volume>76</volume>
+          <supplement>Suppl</supplement>
+          <fpage>2089</fpage>
+          <lpage>2100</lpage>
+          <pub-id pub-id-type="pmid">16277581</pub-id>
+        </citation>
+      </ref>
+      <ref id="R34">
+        <label>34</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Munzel</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sinning</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Post</surname>
+              <given-names>F</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Pathophysiology, diagnosis and prognostic implications of endothelial dysfunction</article-title>
+          <source>Ann Med</source>
+          <year>2008</year>
+          <volume>40</volume>
+          <fpage>180</fpage>
+          <lpage>196</lpage>
+          <pub-id pub-id-type="pmid">18382884</pub-id>
+        </citation>
+      </ref>
+      <ref id="R35">
+        <label>35</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tonetti</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name>
+              <surname>D’Aiuto</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Nibali</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Treatment of periodontitis and endothelial function</article-title>
+          <source>N Engl J Med</source>
+          <year>2007</year>
+          <volume>356</volume>
+          <fpage>911</fpage>
+          <lpage>920</lpage>
+          <pub-id pub-id-type="pmid">17329698</pub-id>
+        </citation>
+      </ref>
+      <ref id="R36">
+        <label>36</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hoth</surname>
+              <given-names>KF</given-names>
+            </name>
+            <name>
+              <surname>Tate</surname>
+              <given-names>DF</given-names>
+            </name>
+            <name>
+              <surname>Poppas</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Endothelial function and white matter hyperintensities in older adults with cardiovascular disease</article-title>
+          <source>Stroke</source>
+          <year>2007</year>
+          <volume>38</volume>
+          <fpage>308</fpage>
+          <lpage>312</lpage>
+          <pub-id pub-id-type="pmid">17204686</pub-id>
+        </citation>
+      </ref>
+      <ref id="R37">
+        <label>37</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vicenzini</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Ricciardi</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>Altieri</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Cerebrovascular reactivity in degenerative and vascular dementia: a transcranial Doppler study</article-title>
+          <source>Eur Neurol</source>
+          <year>2007</year>
+          <volume>58</volume>
+          <fpage>84</fpage>
+          <lpage>89</lpage>
+          <pub-id pub-id-type="pmid">17565221</pub-id>
+        </citation>
+      </ref>
+      <ref id="R38">
+        <label>38</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Silvestrini</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Pasqualetti</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Baruffaldi</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Cerebrovascular reactivity and cognitive decline in patients with Alzheimer disease</article-title>
+          <source>Stroke</source>
+          <year>2006</year>
+          <volume>37</volume>
+          <fpage>1010</fpage>
+          <lpage>1015</lpage>
+          <pub-id pub-id-type="pmid">16497984</pub-id>
+        </citation>
+      </ref>
+      <ref id="R39">
+        <label>39</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Perry</surname>
+              <given-names>VH</given-names>
+            </name>
+            <name>
+              <surname>Cunningham</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Holmes</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Systemic infections and inflammation affect chronic neurodegeneration</article-title>
+          <source>Nat Rev Immunol</source>
+          <year>2007</year>
+          <volume>7</volume>
+          <fpage>161</fpage>
+          <lpage>167</lpage>
+          <pub-id pub-id-type="pmid">17220915</pub-id>
+        </citation>
+      </ref>
+      <ref id="R40">
+        <label>40</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stern</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Albert</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Tang</surname>
+              <given-names>MX</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Rate of memory decline in AD is related to education and occupation: cognitive reserve?</article-title>
+          <source>Neurology</source>
+          <year>1999</year>
+          <volume>53</volume>
+          <fpage>1942</fpage>
+          <lpage>1947</lpage>
+          <pub-id pub-id-type="pmid">10599762</pub-id>
+        </citation>
+      </ref>
+      <ref id="R41">
+        <label>41</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Papapanou</surname>
+              <given-names>PN</given-names>
+            </name>
+            <name>
+              <surname>Neiderud</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Disick</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Longitudinal stability of serum immunoglobulin G responses to periodontal bacteria</article-title>
+          <source>J Clin Periodontol</source>
+          <year>2004</year>
+          <volume>31</volume>
+          <fpage>985</fpage>
+          <lpage>990</lpage>
+          <pub-id pub-id-type="pmid">15491314</pub-id>
+        </citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

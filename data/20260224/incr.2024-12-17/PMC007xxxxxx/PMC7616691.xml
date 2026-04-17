@@ -1,0 +1,1470 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties manuscript?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">2984705R</journal-id>
+      <journal-id journal-id-type="nlm-ta">Cancer Res</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Cancer Res</journal-id>
+      <journal-title-group>
+        <journal-title>Cancer research</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0008-5472</issn>
+      <issn pub-type="epub">1538-7445</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">39356622</article-id>
+      <article-id pub-id-type="pmc">7616691</article-id>
+      <article-id pub-id-type="manuscript">EMS199202</article-id>
+      <article-id pub-id-type="doi">10.1158/0008-5472.CAN-24-0013</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Induction of the TEAD Co-activator VGLL1 by Estrogen Receptor-Targeted Therapy Drives Resistance in Breast Cancer</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gemma</surname>
+            <given-names>Carolina</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="CR1" ref-type="corresp">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lai</surname>
+            <given-names>Chun-Fui</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Singh</surname>
+            <given-names>Anup K</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Belfiore</surname>
+            <given-names>Antonino</given-names>
+          </name>
+          <xref rid="A2" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Portman</surname>
+            <given-names>Neil</given-names>
+          </name>
+          <xref rid="A3" ref-type="aff">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Milioli</surname>
+            <given-names>Heloisa Z</given-names>
+          </name>
+          <xref rid="A3" ref-type="aff">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Periyasamy</surname>
+            <given-names>Manikandan</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Raafat</surname>
+            <given-names>Sara</given-names>
+          </name>
+          <xref rid="A4" ref-type="aff">4</xref>
+          <xref rid="A5" ref-type="aff">5</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Nicholls</surname>
+            <given-names>Alyssa J.</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Davies</surname>
+            <given-names>Claire M</given-names>
+          </name>
+          <xref rid="A6" ref-type="aff">6</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Patel</surname>
+            <given-names>Naina R.</given-names>
+          </name>
+          <xref rid="A6" ref-type="aff">6</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Simmons</surname>
+            <given-names>Georgia M.</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Fan</surname>
+            <given-names>Hailing</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Nguyen</surname>
+            <given-names>Van T M</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Magnani</surname>
+            <given-names>Luca</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Rakha</surname>
+            <given-names>Emad</given-names>
+          </name>
+          <xref rid="A4" ref-type="aff">4</xref>
+          <xref rid="A5" ref-type="aff">5</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Martin</surname>
+            <given-names>Lesley-Ann</given-names>
+          </name>
+          <xref rid="A7" ref-type="aff">7</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lim</surname>
+            <given-names>Elgene</given-names>
+          </name>
+          <xref rid="A3" ref-type="aff">3</xref>
+          <xref rid="A8" ref-type="aff">8</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Coombes</surname>
+            <given-names>R. Charles</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Pruneri</surname>
+            <given-names>Giancarlo</given-names>
+          </name>
+          <xref rid="A2" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Buluwela</surname>
+            <given-names>Laki</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="CR1" ref-type="corresp">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ali</surname>
+            <given-names>Simak</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="CR1" ref-type="corresp">*</xref>
+        </contrib>
+        <aff id="A1">
+<label>1</label>Department of Surgery and Cancer, <institution-wrap><institution-id institution-id-type="ror">https://ror.org/041kmwe10</institution-id><institution>Imperial College London</institution></institution-wrap>, <addr-line>Hammersmith Campus</addr-line>, <city>London</city>, <postal-code>W12 0NN</postal-code>, <country country="GB">UK</country></aff>
+        <aff id="A2">
+<label>2</label>Pathology Department, <institution-wrap><institution-id institution-id-type="ror">https://ror.org/05dwj7825</institution-id><institution>Fondazione IRCCS Istituto Nazionale Tumori</institution></institution-wrap> and <institution-wrap><institution-id institution-id-type="ror">https://ror.org/00wjc7c48</institution-id><institution>University of Milan</institution></institution-wrap>, School of Medicine</aff>
+        <aff id="A3">
+<label>3</label><institution-wrap><institution-id institution-id-type="ror">https://ror.org/01b3dvp57</institution-id><institution>Garvan Institute of Medical Research</institution></institution-wrap>, <city>Darlinghurst, Sydney</city>, <state>New South Wales</state>, <country country="AU">Australia</country></aff>
+        <aff id="A4">
+<label>4</label>Division of Cancer and Stem Cells, Nottingham Breast Cancer Research Centre, <institution-wrap><institution-id institution-id-type="ror">https://ror.org/01ee9ar58</institution-id><institution>University of Nottingham</institution></institution-wrap> Biodiscovery Institute, <addr-line>University Park</addr-line>, <city>Nottingham</city>, <postal-code>NG7 2RD</postal-code>, <country country="GB">UK</country></aff>
+        <aff id="A5">
+<label>5</label>Department of Histopathology, <institution-wrap><institution-id institution-id-type="ror">https://ror.org/05y3qh794</institution-id><institution>Nottingham University Hospital NHS Trust</institution></institution-wrap>, <addr-line>City Hospital Campus, Hucknall Road</addr-line>, <city>Nottingham</city>, <postal-code>NG5 1PB</postal-code>, <country country="GB">UK</country></aff>
+        <aff id="A6">
+<label>6</label>ECMC Imperial College. Department of Surgery and Cancer, <institution-wrap><institution-id institution-id-type="ror">https://ror.org/041kmwe10</institution-id><institution>Imperial College London</institution></institution-wrap>, <addr-line>Hammersmith Campus</addr-line>, <city>London</city>, <postal-code>W12 0NN</postal-code>, <country country="GB">UK</country></aff>
+        <aff id="A7">
+<label>7</label>Breast Cancer Now Toby Robins Research Centre, <institution-wrap><institution-id institution-id-type="ror">https://ror.org/043jzw605</institution-id><institution>Institute of Cancer Research</institution></institution-wrap>, <city>London</city>, <postal-code>SW7 3RP</postal-code>, <country country="GB">UK</country></aff>
+        <aff id="A8">
+<label>8</label>St. Vincent's Clinical School, Faculty of Medicine, <institution-wrap><institution-id institution-id-type="ror">https://ror.org/03r8z3t63</institution-id><institution>University of New South Wales Sydney</institution></institution-wrap>, <city>Sydney</city>, <state>New South Wales</state>, <country country="AU">Australia</country></aff>
+      </contrib-group>
+      <author-notes>
+        <corresp id="CR1">
+<label>*</label>Corresponding authors: Carolina Gemma, Department of Surgery and Cancer, Imperial College London, Hammersmith Campus, London, W12 0NN, UK. Tel.: +442075942811; <email>c.gemma@imperial.ac.uk</email>; Laki Buluwela, Department of Surgery and Cancer, Imperial College London, Hammersmith Campus, London, W12 0NN, UK. Tel.: +442075942812; <email>l.buluwela@imperial.ac.uk</email>; Simak Ali, Department of Surgery and Cancer, Imperial College London, Hammersmith Campus, London, W12 0NN, UK. Tel.: +442075942811; <email>simak.ali@imperial.ac.uk</email>
+</corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>05</day>
+        <month>10</month>
+        <year>2024</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <day>16</day>
+        <month>12</month>
+        <year>2024</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>14</day>
+        <month>10</month>
+        <year>2024</year>
+      </pub-date>
+      <volume>84</volume>
+      <issue>24</issue>
+      <fpage>4283</fpage>
+      <lpage>4297</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available to download for the purposes of text mining, consistent with the principles of UK copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P1">Resistance to endocrine therapies (ET) is common in estrogen receptor (ER) positive breast cancer, and most relapsed patients die with ET-resistant disease. While genetic mutations provide explanations for some relapses, mechanisms of resistance remain undefined in many cases. Drug-induced epigenetic reprogramming has been shown to provide possible routes to resistance. By analyzing histone H3 lysine 27 acetylation (H3K27ac) profiles and transcriptional reprogramming in models of ET resistance, we discovered that selective ER degraders (SERDs), such as fulvestrant, promote expression of VGLL1, a co-activator for TEAD transcription factors. VGLL1, acting via TEADs, promoted expression of genes that drive growth of fulvestrant-resistant breast cancer cells. Pharmacological disruption of VGLL1/TEAD4 interaction inhibited VGLL1/TEAD-induced transcriptional programs to prevent growth of resistant cells. EGFR was among the VGLL1/TEAD-regulated genes, and VGLL1-directed EGFR upregulation sensitized fulvestrant-resistant breast cancer cells to EGFR inhibitors. Taken together, these findings identify VGLL1 as a transcriptional driver in ET resistance and advance therapeutic possibilities for relapsed ER+ breast cancer patients.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>Selective Estrogen Receptor Downregulators</kwd>
+        <kwd>resistance</kwd>
+        <kwd>breast cancer</kwd>
+        <kwd>VGLL1</kwd>
+        <kwd>TEAD</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S1">
+      <title>Introduction</title>
+      <p id="P2">ER is the key transcriptional driver of tumor growth in three-quarters of breast cancers patients(<xref rid="R1" ref-type="bibr">1</xref>). As such, ER targeting drugs are effective therapies for most ER+ patients. Despite the success of these treatments, many women develop resistance to these drugs(<xref rid="R1" ref-type="bibr">1</xref>–<xref rid="R4" ref-type="bibr">4</xref>), necessitating identification of resistance mechanisms and development of new therapies.</p>
+      <p id="P3">Cell identity is established through epigenetic activation of distal and proximal regulatory elements that direct cell-type-specific gene expression programmes in development and differentiation(<xref rid="R5" ref-type="bibr">5</xref>,<xref rid="R6" ref-type="bibr">6</xref>). Cancer cells are also characterised by transcriptional programmes that are frequently defined by cancer type-specific epigenetic states(<xref rid="R7" ref-type="bibr">7</xref>–<xref rid="R9" ref-type="bibr">9</xref>), while altered epigenetic landscapes are likely to signpost therapy resistance pathways(<xref rid="R10" ref-type="bibr">10</xref>,<xref rid="R11" ref-type="bibr">11</xref>). Indeed, profiling isogenic ER+ breast cancer cell models of resistance to different ETs for the active transcription histone mark H3K27ac, enhancer mapping and DNA methylation profiling has revealed extensive epigenetic reprogramming resulting in sweeping reorganization of enhancer landscapes, findings confirmed with other gene promoter and enhancer mapping approaches(<xref rid="R12" ref-type="bibr">12</xref>–<xref rid="R14" ref-type="bibr">14</xref>).</p>
+      <p id="P4">Different classes of ET drugs inhibit ER signalling through distinct mechanisms. Aromatase inhibitors (AI) block estrogen biosynthesis to prevent ER activation and recruitment to DNA(<xref rid="R4" ref-type="bibr">4</xref>). Selective ER modulators (SERMs) like tamoxifen(<xref rid="R2" ref-type="bibr">2</xref>) bind to ER to inhibit its activity, while allowing its recruitment to DNA. Fulvestrant is the prototype clinical drug for ER degraders(<xref rid="R15" ref-type="bibr">15</xref>) that reduce ER levels. Fulvestrant is approved for advanced ER+ breast cancer treatment following relapse on prior ET, either alone or in combination with drugs targeting other pathways, such as CDK4/6 inhibitors(<xref rid="R16" ref-type="bibr">16</xref>). Establishing the clinical value of fulvestrant has galvanised the development of new SERDs with improved pharmacological profiles, several of which have progressed to advanced clinical trials(<xref rid="R15" ref-type="bibr">15</xref>,<xref rid="R17" ref-type="bibr">17</xref>,<xref rid="R18" ref-type="bibr">18</xref>).</p>
+      <p id="P5">The TEA domain (TEAD) family of transcription factors are implicated in cancer as the DNA binding partners for Yes-associated protein 1 (YAP), and its paralog, transcriptional co-activator with PDZ-binding motif (TAZ)(<xref rid="R19" ref-type="bibr">19</xref>–<xref rid="R22" ref-type="bibr">22</xref>). YAP/TAZ are downstream effectors of the Hippo pathway and are required for organogenesis, tissue homeostasis and are important players in cancer initiation and progression, including resistance to cancer therapies(<xref rid="R23" ref-type="bibr">23</xref>,<xref rid="R24" ref-type="bibr">24</xref>). By contrast, little is known about the vestigial-like (VGLL) TEAD co-factors. <italic toggle="yes">Vestigial</italic> (vg) is a master regulator of wing development in <italic toggle="yes">Drosophila</italic>, regulating gene expression upon dimerization with <italic toggle="yes">scalloped</italic> (sd), the <italic toggle="yes">Drosophila</italic> homologue of mammalian TEAD(<xref rid="R25" ref-type="bibr">25</xref>–<xref rid="R28" ref-type="bibr">28</xref>). Human VGLL1 can substitute for <italic toggle="yes">Drosophila</italic> vg in wing formation(<xref rid="R29" ref-type="bibr">29</xref>), underscoring an evolutionarily conserved role for VGLL1 in TEAD-directed gene expression. Moreover, VGLL1 competes with YAP for binding to TEAD4 <italic toggle="yes">in vitro</italic>, and the VGLL1-TEAD and YAP-TEAD complexes share structural similarities(<xref rid="R30" ref-type="bibr">30</xref>,<xref rid="R31" ref-type="bibr">31</xref>).</p>
+      <p id="P6">As the first-in-class clinical SERD, understanding fulvestrant resistance mechanisms is necessary for continued use and the appropriate clinical introduction of newly developed SERDs. Towards this end, we examined H3K27ac profiles in fulvestrant-resistant breast cancer cells and found loss of ER signalling pathways and reprogramming of TEAD-directed gene expression driven by induction of VGLL1, thereby identifying new approaches for treatment of patients who progress on SERDs.</p>
+    </sec>
+    <sec sec-type="materials | methods" id="S2">
+      <title>Materials and Methods</title>
+      <sec id="S3">
+        <title>Cell lines and treatments</title>
+        <p id="P7">Cells lines were originally purchased from ATCC, were authenticated at the time of the studies by LGC Standards (Bury, UK) and were regularly screened for mycoplasma infection. BT474, ZR-75-1 and T47D cells were cultured in Dulbecco's modified Eagle's medium (DMEM) with 10% of fetal bovine serum (FBS) and 100U penicillin/0.1 mg ml<sup>-1</sup> streptomycin. MCF7 cells were cultured in DMEM with 10% of fetal bovine serum (FBS) and 100U penicillin/0.1 mg ml<sup>-1</sup> streptomycin plus 10nM estradiol (Sigma E8875). MCF7(<xref rid="R2" ref-type="bibr">2</xref>) cells were cultured in RPMI 1640 with 10% of fetal bovine serum (FBS) and 100U penicillin/0.1 mg ml<sup>-1</sup> streptomycin plus 1nM estradiol. All fulvestrant-resistant isogenic derivatives of ER+ breast cancer cell lines have been previously described (<xref rid="R12" ref-type="bibr">12</xref>,<xref rid="R32" ref-type="bibr">32</xref>–<xref rid="R34" ref-type="bibr">34</xref>), and were cultured as the corresponding parental cells with the addition of 100nM fulvestrant. Long-term estrogen-deprived (LTED) and tamoxifen-resistant (TAMR) cells have also been described (<xref rid="R12" ref-type="bibr">12</xref>).</p>
+        <p id="P8">MCF7-ActCas9-VGLL1 cells were generated by transducing MCF7 cells with lentiviral MS2-P65-HSF1_Hygro (Addgene plasmid #61426), lentiviral dCAS-VP64_Blast (Addgene plasmid #61425) and sgRNA(MS2) cloning backbone (Addgene plasmid #61424) using the following VGLL1 sgRNA: ATTCCTGCAGGTGCCCAACCAGG, that was cloned into the sgRNA(MS2) cloning backbone plasmid. The control MCF7-ActCas9-Vector cells were generated simultaneously using the above mentioned plasmids, except that sgRNA(MS2) cloning backbone empty vector was used instead. MCF7-ActCas9-Vector and MCF7-ActCas9-VGLL1 cells were maintained in media containing 0.2 mg/ml hygromycin (Corning 30-240-CR), 10 µg/ml blasticidin (Corning 30-100-RB) and 1µg/ml puromycin (Gibco A1113803). MCF7-ActCas9-VGLL1-FULVR cells were generated by culturing MCF7-ActCas9-VGLL1 cells in the appropriate media with the addition of 100nM or 1000nM fulvestrant.</p>
+        <p id="P9">All drugs were solubilised in DMSO. Verteporfin (Sigma SML0534), was used at a final concentration of 2µM for 24 h, unless otherwise specified. The SERDs fulvestrant, GDC-0810 (Genentech), AZD9496 (Astra Zeneca) and RAD1901(MedChem Express HY-19822A) were used at a final concentration of 100nM for 48 h, unless otherwise specified. Erlotinib (VWR CAYM10483) was used at a final concentration of 3.1 µM for 24 h, unless otherwise specified.</p>
+      </sec>
+      <sec id="S4">
+        <title>siRNA transfections</title>
+        <p id="P10">siRNAs (25nM) were transfected with Lipofectamine RNAi-MAX (Life Technologies) in antibiotics-free medium according to the manufacturer’s instructions. Cells were harvested 72 h after transfection. The following individual ON TARGETplus siRNAs (Horizon Discovery) were used for VGLL1: J-017939-06 (siVGLL1 #1), J-017939-08 (siVGLL1 #2) and J-017939-07 (siVGLL1 #3). For dCAS9 the following siRNAs were used: CCGAAGAGGUCGUGAAGAA (Cas9 siRNA#1) and GGGAAAAGAUCGAGAAGAU (Cas9 siRNA#2). ESR1 siRNA was purchased from Qiagen (SI03114979, FlexiTube siRNA). The negative control siRNA (siControl) was purchased from Horizon Discovery (ON TARGETplus Non-targeting control siRNA #2, D-001810-02).</p>
+      </sec>
+      <sec id="S5">
+        <title>Clinical samples</title>
+        <p id="P11">From the institutional database of the Fondazione IRCCS Istituto Nazionale Tumori of Milan, we retrospectively identified 72 metastatic ER+, HER2 negative breast cancer patients diagnosed between 1997 and 2018, treated with endocrine therapy, including at least one line of fulvestrant, and standard chemotherapy. For the present study, we selected 15 patients for which breast cancer biopsies were available both prior to fulvestrant (including primary tumor samples and metastatic localizations) and post fulvestrant administration. Formalin Fixed and Paraffin Embedded (FFPE) specimens from selected cases were carefully revised by an expert breast pathologist, including the evaluation of ER and PR receptor status, proliferative index and tumor cellularity. All patients included in this study gave their written consent to donate the tissue remaining after their diagnostic procedures to Istituto Nazionale Tumori of Milan.</p>
+      </sec>
+      <sec id="S6">
+        <title>siRNA transfections</title>
+        <p id="P12">siRNAs (25nM) were transfected with Lipofectamine RNAi-MAX (Life Technologies) in antibiotics-free medium according to the manufacturer’s instructions. Cells were harvested 72 h after transfection. siRNAs are detailed in <xref rid="SM" ref-type="sec">Supplementary Information</xref>.</p>
+      </sec>
+      <sec id="S7">
+        <title>RNA in situ hybridization</title>
+        <p id="P13">FFPE breast cancer tissue sections (5 μm) from matched pre- and post-fulvestrant patient biopsies were processed for RNA in situ detection using the RNAscope Multiplex Fluorescent Reagent Kit v2 according to the manufacturer’s instructions (Advanced Cell Diagnostics), using RNAscope probe Hs-VGLL1 446731. Nuclei were stained with DAPI and the RNAscope probe was detected using Cy5 fluorescent dye (PerkinElmer NEL745E001KT TSA Plus Cyanine 5). Data was analysed using Fiji and CellProfiler using custom macros, provided upon request.</p>
+      </sec>
+      <sec id="S8">
+        <title>Immunoblotting</title>
+        <p id="P14">Cells were washed twice in ice-cold PBS and harvested in RIPA Buffer (10 mM Tris-HCl (pH 7.6), 1mM EDTA, 0.1% SDS, 0.1% sodium deoxycholate, 1% Triton X-100 and phosphatase and protease inhibitors) and lysed by sonication. Samples were centrifuged at 4 °C, maximum speed, for 10 min, then the supernatant was transferred to a clean Eppendorf tube. Extracts were quantified using the Pierce BCA Protein Assay Kit, according to the manufacturer’s instructions (ThermoFisher Scientific, 23227). Samples were run on 10% polyacrylamide gels and transferred onto polyvinylidene difluoride (PVDF) membranes by wet electrophoretic transfer. Blots were blocked with either 5% non-fat dry milk (non-phosphoprotein) or 5% BSA (phosphoprotein) and incubated with primary antibodies overnight at 4°C. Secondary antibodies were incubated for 1 h at room temperature and then blots were developed with goat anti-mouse (Biorad, 1706516) and anti-rabbit (Biorad, 1706515) horseradish peroxidase (HRP) conjugated secondary antibodies. SuperSignal West Pico PLUS Chemiluminescent Substrate (ThermoFisher Scientific, 34577) or SuperSignal West Femto Maximum Sensitivity Substrate (ThermoFisher Scientific, 34095) was used for chemiluminescent imaging using a Fusion solo (Vilber) imager. The VGLL1 antibody was purchased from Proteintech (10124-2-AP). The ER antibody was from Leica Biosystem (NCL-L-ER-6F11). VGLL3 (ab68262), VGLL4 (ab140290), YAP1 (ab56701), TEAD4 (ab58310) and GAPDH (ab9484) antibodies were supplied by Abcam. Antibodies for PR (8757S), TEAD3 (13224S), EGFR (2232S), phospho-Tyr1068 EGFR (2234S), phospho-Tyr1148 EGFR (4404S), AKT (9272S), phospho-Ser473-AKT (9271S), p44/42 MAPK (4695S) and phospho-p44/p42 MAPK (Thr202/Tyr204) (9101S) were from Cell Signaling Technology. TEAD1 (sc-376113) and TEAD2 (sc-67115) antibodies were purchased from Santa Cruz Biotechnology and the TAZ antibody was obtained from BD (clone M2-616, 560235).</p>
+      </sec>
+      <sec id="S9">
+        <title>RT-qPCR</title>
+        <p id="P15">Total RNA was extracted from cells using RNeasy Mini Kit (Qiagen 74106). For cDNA synthesis 500 ng of total RNA was reverse transcribed using RevertAid First Strand cDNA Synthesis Kit (ThermoFisher Scientific, K1622). RT-qPCR reactions were carried out using Fast SYBR Green Master Mix (ThermoFisher Scientific, 4385616) in a StepOnePlus Real-Time PCR thermal cycler (ThermoFisher Scientific). Gene expression levels were calculated relative to expression of GAPDH. Primers used had the following sequences. VGLL1 (CCCCTCGAGTCAGAGTGAAG, CAGGGACGGTGAGAACTGAT), VGLL3 (GCTGGTAAGAGCTGGTCCAA, CCATCCAGAATCTGCCATTT), ESR1 (CAGGTGCCCTACTACCTGGA, TCCTTGGCAGATTCCATAGC), PGR (GATGCTTCATCCCCACAGAT, AGGTCTACCCGCCCTATCTC), GREB1 (AAGGAGGGCTGGAAACAAAT, CGTTGGAAATGGAGACAAGG), GAPDH (TGGAAATCCCATCACCATCT, TTCACACCCATGACGAACAT), YAP1 (CAGCAACTGCAGATGGAGAA, TGGATTTTGAGTCCCACCAT), TAZ (TCATCACCGTGTCCAATCAC, GTGGGAGTGTAGCTCCTTGG), TEAD1 (CAAGCCTTTTGTGCAGCAG, AAAATTCCACCAGGCGAAG), TEAD2 (CTTGGACTGGATTTCCCTTG, CCGCTACATCAAGCTGAGAA), TEAD3 (GAGGCAATGGTACGGTCCT, CTTTGCACAGCCAGCCTAC), TEAD4 (TCCACGAAGGTCTGCTCTTT, GTGCTTGAGCTTGTGGATGA), LATS1 (ACCTTTCCAGCTCTGTTTGC, AGATCCTCGACGAGAGCAGA), LATS2: GTGGTAGGACGCAAACGAAT, CCGAGGAATGAGCAGATTGT, BTRC (ACAGGATCATCGGATTCCAC, TTGAAACGCAAGTGCAGAAC), SAV1 (TGGCTGGTATGTGACAGGAG, ACTTCCTCCTGGATGGGAAC), MOB1a (ACAGCTTGCTTCAGTGCAGA, TATGTTGCCTGAGGGAGAGG), EGFR (GAGGGCAAATACAGCTTTGG, GCCCTTCGCACTTCTTACAC), dCAS9 (GAACCGGATCTGCTATCTGC, CGCTCGTGCTTCTTATCCTC), CTGF (TGGAGATTTTGGGAGTACGG, CCTGGTCCAGACCACAGAGT), TGFB2 (ACAAGAGCAGAAGGCGAATG, TGCAGCAGGGACAGTGTAAG), IGFBP5 (AGGTGTGGCACTGAAAGTCC, ATTGTGACCGCAAAGGATTC), IGFBP3 (AGGCTGCCCATACTTATCCA, GGGGTGTACACATTCCCAAC), AMOTL2 (ACCACTGCCACTGCTACCAC, AGCAGGCCTATGTGGAGAAA), APEX1 (CCCCAGATCAGAAAACCTCA, TTTGGTCTCTTGAAGGCACA), ANKRD1 (CCAAATGTCCTTCCAAGCAT, TGAAGGCTGCTCTGGAGAAT).</p>
+      </sec>
+      <sec id="S10">
+        <title>ChIP-qPCR and ChIP-seq</title>
+        <p id="P16">ChIP was performed as previously described(<xref rid="R35" ref-type="bibr">35</xref>). Briefly, cells were crosslinked with 1% formaldehyde in culture medium without antibiotics for 10 min at room temperature. Chromatin extracts were sonicated using a Bioruptor Pico sonication device (Diagenode, B01060001) using 15 cycles (30 s on and 30 s off) at maximum intensity. Chromatin was immunoprecipitated using 10 µg of antibodies. Libraries for ChIP-seq were prepared using the NEBNext Ultra DNA Library Prep Kit for Illumina (New England Biolabs, E7370S) according to the manufacturer’s instructions. Sequencing was performed on an Illumina HiSeq 2500 platform using 50bp single end reads. ChIP-seq analysis pipeline in described in <xref rid="SM" ref-type="sec">Supplementary Information</xref>. PCR primer pairs had the following sequences. ANKRD1 Promoter (GAGGGGAGGACAAGCTAACC, AGCTGTCCCCTGACTCTTGA), TGFβ2 Enhancer (AGCTTTGATCACACTGATTCCA, TGCCTCTTCACATCTGTTCATT), AMOTL2 3’ Enhancer (ACAGCCCTCCAACTATGCTAAG, CCAACAGCACATTTTCAGGATA) CTGF Promoter (GAGCTGAATGGAGTCCTACACA, GGAGGAATGCTGAGTGTCAAG), LSAMP (negative) CTGAAATGAAAGTGGGGACA, GATTTGGTCTTGGCAGGTGT) CTGF -8.3kb (negative) (TTGCTGGTGGTAGGGAAATACT, TCACTGCACCTTTGCTTTTCTA), TUBB Promoter (negative) (TCCTGTACCCCCAAGAACTG, ATTGTTGTCCATGCTGCAAA), EGFR (enh) (CACACCTGAGCATGTCCTTG, GCAATGGGATCGAGTTGTTT), GAPDH (TCGACAGTCAGCCGCATCT, CTAGCCTCCCGGGTTTCTCT).</p>
+      </sec>
+      <sec id="S11">
+        <title>ChIP-seq analysis</title>
+        <p id="P17">Raw reads were aligned to the human reference genome hg19 version using Bowtie(<xref rid="R36" ref-type="bibr">36</xref>). Redundant reads were removed using SAMtools(<xref rid="R37" ref-type="bibr">37</xref>). VGLL1 and TEAD4 peaks were called using MACS2(<xref rid="R38" ref-type="bibr">38</xref>) using the input sample as a control, with default parameters and q value less than 0.01. For each ChIP-seq target, peaks common to all the biological replicates were kept for further analysis. Integrated Genomics Viewer (IGV, Broad Institute) was used to visualize the Z-score normalized coverage tracks generated with R packages Rsamtools (<ext-link xlink:href="http://bioconductor.org/packages/Rsamtools" ext-link-type="uri">http://bioconductor.org/packages/Rsamtools</ext-link>) and rtracklayer(<xref rid="R39" ref-type="bibr">39</xref>). The overlap of peaks from different ChIP–seq experiments was determined using the BEDTools2 suite(<xref rid="R40" ref-type="bibr">40</xref>).</p>
+        <sec id="S12">
+          <title>Ratio of H3K27ac between FULVR vs MCF7 cells</title>
+          <p id="P18">ChIP-seq data for H3K27ac in FULVR and MCF7 cells was obtained from(<xref rid="R12" ref-type="bibr">12</xref>). A list of gene promoters was downloaded from the Table Browser of UCSC genome browser(<xref rid="R41" ref-type="bibr">41</xref>) by selecting 3kb-wide regions centred on each TSS annotated in the human genome version hg19. The BEDTools2 suite was used to calculate the coverage of H3K37ac reads at gene promoters. The H3K27ac coverage at promoters was normalized to the total number of million mapped reads to generate normalized read counts in units of reads per million mapped reads (RPM). For each gene promoter we calculated the ratio of normalized H3K27ac coverage between FULVR and MCF7 cells.</p>
+        </sec>
+        <sec id="S13">
+          <title>ChIP-seq heatmaps and average profiles</title>
+          <p id="P19">Normalized coverage tracks were plotted as heatmaps and average signal profiles with SeqPlots(<xref rid="R42" ref-type="bibr">42</xref>) using a window of 2-3kb centred around the peak centre. Heatmap rows were sorted from high to low signal. Average profiles are presented as the mean of the normalized coverage ± s.e.m. and 95% confidence interval.</p>
+        </sec>
+        <sec id="S14">
+          <title>Peak annotation and Motif analysis</title>
+          <p id="P20">The HOMER suite(<xref rid="R43" ref-type="bibr">43</xref>) was used for <italic toggle="yes">de novo</italic> motif discovery analysis of the VGLL1 and TEAD4 peaks using the findMotifsGenome.pl script with default parameters. The annotatePeaks.pl script in the HOMER suite was used for peak annotation analysis to associate peaks with gene targets, and to annotate the location of peaks to different genomic features.</p>
+        </sec>
+        <sec id="S15">
+          <title>VGLL1-TEAD4 co-binding enrichment analysis</title>
+          <p id="P21">VGLL1/TEAD4 co-bound regions were defined with the bedtools intersect script from the BEDTools2 suite. To calculate VGLL1/TEAD4 co-binding enrichment, the TEAD4 binding regions were randomized in the hg19 version of the human reference genome using the bedtools shuffle script from the BEDTools2 suite. Chi-square test was applied to assess the co-binding enrichment based on the observed co-binding relative to the expected (random) co-binding, after performing ten permutations of the TEAD4 peaks.</p>
+        </sec>
+        <sec id="S16">
+          <title>Functional annotations</title>
+          <p id="P22">Functional annotation of the VGLL1 ChIP-seq peaks was performed using the MSigDB Perturbation annotation from GREAT version 3.0.0 (<xref rid="R44" ref-type="bibr">44</xref>). <xref rid="SD3" ref-type="supplementary-material">Supplementary Table 2</xref> shows the complete annotation. To visualize the top nine most significant terms from the annotation (according to binomial P value), we used ggplot2 (<ext-link xlink:href="https://ggplot2.tidyverse.org" ext-link-type="uri">https://ggplot2.tidyverse.org</ext-link>) with R scripts adapted from REVIGO(<xref rid="R45" ref-type="bibr">45</xref>), scripts provided upon request.</p>
+        </sec>
+      </sec>
+      <sec id="S17">
+        <title>Generation of the signature of VGLL1 activated genes and not VGLL1 targets</title>
+        <p id="P23">To identify the VGLL1 direct targets we performed RNA-seq in FULVR cells transfected with three different VGLL1 siRNAs (siVGLL1#1-3) and control siRNA (siControl) (three biological replicates for each treatment). To generate the signature of VGLL1 activated genes we selected all the genes significantly downregulated (adjusted <italic toggle="yes">p</italic> &lt; 0.05, negative log2(fold change)) by at least two different VGLL1 siRNAs compared to siControl. We further filtered these genes by those associated with at least one VGLL1 binding site to define a more stringent set of direct VGLL1 targets which we called VGLL1 activated genes. To define the set of not VGLL1 targets we selected the genes whose expression was not significantly altered (adjusted <italic toggle="yes">p</italic> &gt; 0.05), by any of the VGLL1 siRNAs, and we further filtered these genes by those without any VGLL1 associated binding site and by those with non-zero read counts among FULVR and MCF7 cells.</p>
+      </sec>
+      <sec id="S18">
+        <title>Kaplan–Meier survival analysis</title>
+        <p id="P24">To evaluate the prognostic value of the VGLL1 activated genes signature we analysed the survival of patients from the METABRIC breast cancer dataset(<xref rid="R46" ref-type="bibr">46</xref>) treated with endocrine therapies. We calculated the median expression of the VGLL1 activated genes signature across all patients and used it as a cut off to select patients with high expression of the VGLL1 activated genes signature as those with median expression of the combined VGLL1 activated genes above the median cut off and patients with low expression of the VGLL1 activated genes signature as those with median expression of the combined VGLL1 activated genes below the median cut off. The Kaplan–Meier plot was generated to compare the survival curves of patients with high and low expression of the VGLL1 activated genes signature. Survival analysis was performed in GraphPad Prism and <italic toggle="yes">p-</italic>values were calculated using the log-rank (Mantel–Cox) test.</p>
+      </sec>
+      <sec id="S19">
+        <title>RNA-seq</title>
+        <p id="P25">Total RNA was extracted from cells using RNeasy Mini Kit (Qiagen 74106). RNA-seq libraries were prepared using NEBNext Ultra II RNA Library Prep Kit for Illumina (New England Biolabs, E7775) and sequencing was performed on an Illumina HiSeq 2500 platform. Raw reads were aligned to the human reference genome hg19 version using TopHat(<xref rid="R47" ref-type="bibr">47</xref>). Redundant reads were removed using SAMtools(<xref rid="R37" ref-type="bibr">37</xref>). HTSeq(<xref rid="R48" ref-type="bibr">48</xref>) was used to count reads at UCSC annotated genes. Normalization and differential expression analysis were carried out using DESeq2 package(<xref rid="R49" ref-type="bibr">49</xref>). Integrated Genomics Viewer (IGV, Broad Institute) was used to visualize the Z-score normalized coverage tracks generated with R packages Rsamtools (<ext-link xlink:href="http://bioconductor.org/packages/Rsamtools" ext-link-type="uri">http://bioconductor.org/packages/Rsamtools</ext-link>) and rtracklayer(<xref rid="R39" ref-type="bibr">39</xref>). Fold changes in gene expression between two cell lines or two conditions were calculated as the ratio of normalized read counts obtained with DESeq2. The 5th percentile, first quartile, median, third quartile and 95<sup>th</sup> percentile are plotted in box-and-whiskers graphs.</p>
+      </sec>
+      <sec id="S20">
+        <title>GO analysis</title>
+        <p id="P26">GO analysis on the VGLL1 activated genes and genes downregulated by VP was performed using g:Profiler (<ext-link xlink:href="https://biit.cs.ut.ee/gprofiler/gost" ext-link-type="uri">https://biit.cs.ut.ee/gprofiler/gost</ext-link>)(<xref rid="R50" ref-type="bibr">50</xref>).</p>
+      </sec>
+      <sec id="S21">
+        <title>Growth assays</title>
+        <p id="P27">Cell growth following siRNAs or drug treatments was assessed using the sulphorhodamine B (SRB) assay(<xref rid="R51" ref-type="bibr">51</xref>). Briefly, 2000-5000 cells were seeded per well in 96-well plates. Cells were allowed to attach overnight before treatment with drugs or transfection with siRNAs. Medium was changed every 3 days and cells were fixed by adding 100 μl of cold 40% (wt/vol) trichloroacetic acid (TCA) to each well for at least 60 min. The plates were washed five times with distilled water, 100 μl of SRB reagent (0.4% wt/vol SRB in 1% w/v acetic acid) was added to each well, and the plates were allowed to incubate for 1h. The plates were then washed five times with 1% (w/v) acetic acid and allowed to dry overnight. SRB solubilization was performed by adding 100 μl of 10 mM Tris HCl per well to the plates, followed by shaking for 10 min. Optical density (OD) was then measured using a Sunrise microplate reader (Tecan) at λ=492 nm. Six wells were analysed for each experimental condition. Data are presented as mean ± standard error of the mean (s.e.m.). Data are presented as growth relative to control cells (treated with vehicle or transfected with control siRNA), using the first day of treatment as baseline. For time-course experiments, multiple plates were seeded and drugged in identical fashion, and at the indicated time points. Each growth experiment was independently confirmed using three biological replicates.</p>
+      </sec>
+      <sec id="S22">
+        <title>Live cell imaging</title>
+        <p id="P28">To follow the growth of cells over the course of three months in the presence of drug containing media, we used the live cell imaging system Incucyte Zoom (EssenBioscience). One million cells were seeded in a T75 flask and after 24h the corresponding media was added to the cells with the addition of fulvestrant at the indicated concentrations. Medium and drugs were replaced twice per week and cells were imaged every 2 days. Analysis was performed using the Incucyte Zoom software with parameters optimized for each cell line and using confluency (µm<sup>2</sup>) as a measure of cell growth. Raw data was extracted and plotted in GraphPad Prism. Each experiment was independently confirmed using three biological replicates.</p>
+      </sec>
+      <sec id="S23">
+        <title>In vivo experiments</title>
+        <p id="P29">Procedures and endpoints involving laboratory animals were approved by the Garvan Institute of Medical Research Animal Ethics Committee (protocols 15/25, 18/20 and 18/26). At surgery, 4-mm<sup>3</sup> sections of tumour tissue were implanted into the 4th inguinal mammary gland of 6–8-week-old female NOD-SCID-IL2γR−/− mice (Australian BioResources Pty Ltd). Tumour growth was supported by implantation of a silastic pellet containing 0.36 mg 17β-estradiol and was assessed by calliper measurement.</p>
+        <sec id="S24">
+          <title>Establishment of fulvestrant-resistant PDX clones</title>
+          <p id="P30">KCC_P_3837 (HREC/13/RPA/187) was derived from an untreated grade 3, ER-positive, PR-positive, HER2-negative primary invasive ductal carcinoma. The parental PDX was responsive to treatment with fulvestrant. Fulvestrant-resistant derivatives of KCC_P_3837 were generated through chronic exposure of KCC_P_3837 tumours to fulvestrant (5mg/body in peanut oil, once weekly via sub-cutaneous injection) over several passages in mice. At each passage tumours were established to a width of 5mm before treatment commenced.</p>
+        </sec>
+        <sec id="S25">
+          <title>Tumour progression assay</title>
+          <p id="P31">Fulvestrant-resistant VGLL1-high (clone 14850) and VGLL1-low (clone 14973R) were identified from analysis of RNA-seq data. These fulvestrant-resistant clones of KCC_P_3837 were implanted into cohorts of NSG mice as above. Tumour growth was monitored by calliper measurement twice weekly with tumour volumes approximated using the formula <italic toggle="yes">width</italic><sup>2</sup> × <italic toggle="yes">length</italic> × 0.5. Once tumours reached a volume of between 150 mm<sup>3</sup> and 225 mm<sup>3</sup> an online tool (<ext-link xlink:href="https://www.graphpad.com/quickcalcs/randomize1.cfm" ext-link-type="uri">https://www.graphpad.com/quickcalcs/randomize1.cfm</ext-link>) was used to randomise mice to treatment arms: vehicle (5% DMSO in saline by daily oral gavage, 100µl peanut oil once weekly by subcutaneous injection), fulvestrant (5mg/body in peanut oil once weekly by subcutaneous injection), verteporfin (100mg/kg in 5% DMSO in saline 5 days per week by oral gavage), or the combination of fulvestrant and verteporfin. Average tumour volumes were calculated at each timepoint after randomisation for each treatment arm to generate tumour growth curves. Changes in tumour volumes at 6 weeks after randomisation were calculated by subtracting the initial tumour volume (time 0) from the 6-week tumour volume and compared by one way ANOVA and Tukey’s multiple two-tailed T test. All data processing and statistical analysis were performed using Prism v.9.1.0 (Graphpad Software, San Diego CA, USA).</p>
+        </sec>
+      </sec>
+      <sec id="S26">
+        <title>Statistical analysis</title>
+        <p id="P32">All statistical analyses were performed in R or GraphPad Prism. To perform pairwise comparisons between two groups we used the Mann-Whitney test, two tailed and the Student’s t-test, two tailed. One-tailed Wilcoxon signed rank test was used to compare gene expression values in the same patients at two different time points. Correlations were performed using the Spearman test. Chi-square test was applied to assess the co-binding enrichment from ChIP-seq over expected co-binding.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S27">
+      <title>Results</title>
+      <sec id="S28">
+        <title>VGLL1 induction and downregulation of ER signalling in fulvestrant resistance</title>
+        <p id="P33">Our previous work profiling global H3K27ac patterns revealed distinct epigenetic landscapes in isogenic breast cancer cells resistant to different ETs(<xref rid="R12" ref-type="bibr">12</xref>). As presence of H3K27ac flags active gene promoters(<xref rid="R52" ref-type="bibr">52</xref>,<xref rid="R53" ref-type="bibr">53</xref>), we ranked genes according to the ratio of H3K27ac signal in MCF7 cells with acquired resistance to fulvestrant (FULVR)(<xref rid="R12" ref-type="bibr">12</xref>) relative to isogenic fulvestrant-sensitive MCF7 cells. H3K27ac was reduced at ER target genes in FULVR cells, as expected from the ER inhibitory action of fulvestrant (<xref rid="F1" ref-type="fig">Fig. 1A, B</xref>). <italic toggle="yes">VGLL1</italic> (rank=3) and <italic toggle="yes">VGLL3</italic> (rank=5) were among the genes with the greatest increase in H3K27ac signal. Functional annotation analysis(<xref rid="R54" ref-type="bibr">54</xref>) showed that the HIPPO pathway is the most enriched signalling pathway (fold enrichment=4.7, FDR=7.9x10<sup>-6</sup>; <xref rid="SD2" ref-type="supplementary-material">Supplementary table 1</xref>) in the H3K27ac-enhanced genes (576 genes with log2 fold change (FC) &gt;2). Consistent with the enhancer/promoter reorganisation implied by H3K27ac mapping, RNA-seq gene expression data revealed substantial increases in VGLL1 and VGLL3 expression in FULVR cells (<xref rid="F1" ref-type="fig">Fig. 1C</xref>). Concordant with the H3K27ac results, gene ontology (GO) analysis of the RNA-seq data demonstrated downregulation of estrogen response pathways in FULVR cells (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 1A</xref>). Immunoblotting and RT-qPCR confirmed that VGLL1 and VGLL3 expression is extremely low in MCF7 cells, indicating that the transcriptional reprograming accompanying development of fulvestrant resistance leads to their induction (<xref rid="F1" ref-type="fig">Fig. 1D</xref>, <xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 1B</xref>). In MCF7-FULVR cells, YAP and TAZ mRNA levels were substantially lower than those of VGLL1 and VGLL3 and their protein levels were not markedly different in FULVR and MCF7 cells. Interestingly, expression of three of the four TEAD genes was also increased in FULVR cells. Elevated expression of VGLL1 was also clear in other fulvestrant-resistant ER+ cell lines (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 1C, D</xref>). However, VGLL3 was not commonly upregulated, as was the case for MCF7-FULVR cells, where YAP and TAZ expression was not increased.</p>
+        <p id="P34">Long-term culturing of ER+ breast cancer cells without estrogen in the growth medium results in progression to estrogen-independence, referred to as long-term estrogen-deprivation (LTED) that is commonly used as a model of AI resistance (<xref rid="R55" ref-type="bibr">55</xref>). RNA-seq data for LTED MCF7 cells and tamoxifen-resistant MCF7 cells (TAMR) (<xref rid="R12" ref-type="bibr">12</xref>) revealed no VGLL1 expression in LTED cells but low-level VGLL1 expression was detected in TAMR cells (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 1E</xref>). However, by far the greatest stimulation of VGLL1 in ER+ breast cancer cell lines was seen in FULVR cells (<xref rid="F1" ref-type="fig">Fig. 1E</xref>, <xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 1F-G</xref>). The new generation SERDs GDC0810 (Brilanestrant), AZD9496 and RAD1901 (Elacestrant) also induced VGLL1 expression (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 1H</xref>). RNAi-mediated <italic toggle="yes">ESR1</italic> knockdown promoted VGLL1 expression in all cell lines (<xref rid="F1" ref-type="fig">Fig. 1F</xref>, <xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 1I, J</xref>), suggesting that degradation of ER protein by SERDs is important for VGLL1 induction in breast cancer cells. By contrast, expression of VGLL3, YAP, TAZ and the different TEADs was reduced by ER knockdown in T47D and ZR-75-1 cells. In BT-474 cells, which are ER+ and HER2-positive, ESR1 knockdown also stimulated VGLL3 (log2FC=1.0). Interestingly, fulvestrant addition to BT474 cells increased VGLL1 levels (log2FC=2.3), but there was little or no change in levels of YAP, TAZ or TEAD. To determine if fulvestrant also promotes VGLL1 expression in tumors, we used RNAscope to measure VGLL1 mRNA in matched breast cancer biopsies taken prior to and after fulvestrant treatment. VGLL1 levels were consistently higher in post-fulvestrant samples than in the matched pre-treatment biopsies (<xref rid="F1" ref-type="fig">Fig. 1G-H</xref>; <xref rid="SD3" ref-type="supplementary-material">Supplementary table 2</xref>). Taken together, these results clearly demonstrate that potent inhibition of ER by SERDs robustly induces VGLL1 in ER+ breast cancer.</p>
+      </sec>
+      <sec id="S29">
+        <title>VGLL1 is recruited to TEAD binding sites at active chromatin in FULVR cells</title>
+        <p id="P35">Towards determining the role of VGLL1 in fulvestrant resistance, we performed chromatin immunoprecipitation sequencing (ChIP-seq) for identifying VGLL1 target genes. As VGLL1 is expected to be recruited via TEADs, we also profiled TEAD4, chosen since it is highly expressed in both MCF7 and FULVR cells and because successful TEAD4 ChIP-seq has been reported(<xref rid="R23" ref-type="bibr">23</xref>,<xref rid="R56" ref-type="bibr">56</xref>). Interestingly, substantially more TEAD4 peaks were identified in FULVR cells than in the isogenic fulvestrant-sensitive MCF7 cells (20,894 vs 6,968 peaks, respectively) (<xref rid="F2" ref-type="fig">Fig. 2A</xref>). Seventy-five percent of the TEAD4 binding events in MCF7 cells were also present in FULVR cells, suggesting that VGLL1 expression (and/or ER downregulation) does not stimulate redistribution of TEAD4 but rather promotes TEAD binding at many new sites. As expected, <italic toggle="yes">de novo</italic> motif analysis of the TEAD4 ChIP-seq identified TEAD binding sites as the predominant enriched motifs in both MCF7 and MCF7-FULVR cells (<xref rid="F2" ref-type="fig">Fig. 2A</xref>, <xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 2A, B</xref>).</p>
+        <p id="P36">Transcription activation by TEADs requires the recruitment of specific co-activators, including YAP, TAZ and VGLLs(<xref rid="R19" ref-type="bibr">19</xref>–<xref rid="R21" ref-type="bibr">21</xref>). However, a role for VGLL1 as a TEAD co-activator has largely been restricted to reporter gene assays and co-crystallisation studies(<xref rid="R30" ref-type="bibr">30</xref>,<xref rid="R31" ref-type="bibr">31</xref>). VGLL1 ChIP-seq of three biological replicates (<xref rid="SD4" ref-type="supplementary-material">Supplementary Table 3</xref>) identified 29,930 peaks common to all replicates in FULVR cells. There was a strong positive correlation between VGLL1 and TEAD4 binding events (<italic toggle="yes">p</italic>&lt;2.2x10<sup>-16</sup>; <xref rid="F2" ref-type="fig">Fig. 2B</xref>). VGLL1 was enriched at TEAD binding sites that were common to MCF7 and FULVR, as well as those TEAD4 binding events that were gained in FULVR cells (<xref rid="F2" ref-type="fig">Fig. 2C</xref>). <italic toggle="yes">De novo</italic> motif enrichment analysis confirmed TEAD4 binding sequences as the most highly enriched sequence motif at VGLL1 binding regions (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 2C</xref>). Binding enrichment calculated as VGLL1 binding at TEAD4 peaks over random permutations of the TEAD4 binding events further confirmed VGLL1 enrichment at TEAD4 binding regions (p&lt;0.0001; <xref rid="F2" ref-type="fig">Fig. 2D</xref>).</p>
+        <p id="P37">The regions co-bound by VGLL1 and TEAD4 were present at active regulatory regions in FULVR cells, as revealed by enrichment of H3K27ac signal at regions co-occupied by VGLL1 and TEAD4 (<xref rid="F2" ref-type="fig">Fig. 2E, F</xref>). Moreover, low H3K27ac signal in MCF7 cells at VGLL1/TEAD4 co-occupied regions (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 2D</xref>) is suggestive of low expression of these genes in MCF7 cells. Exemplifying this, TEAD4 was present at previously described TEAD target genes including CTGF (CCN2), AMOTL2 and ANKRD1(<xref rid="R23" ref-type="bibr">23</xref>) in MCF7 and MCF7-FULVR cells (<xref rid="F2" ref-type="fig">Fig. 2G</xref>), but there was substantially greater H3K27ac and expression of these genes in MCF7-FULVR cells. ChIP-qPCR confirmed that VGLL1 was recruited to these regions in MCF7-FULVR cells, but not in MCF7 cells (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 2E</xref>). YAP and TAZ were mostly absent at these genes in FULVR cells, suggesting that YAP/TAZ are not activated and that VGLL1 drives expression of TEAD-regulated genes in MCF7-FULVR cells.</p>
+      </sec>
+      <sec id="S30">
+        <title>VGLL1 promotes development of fulvestrant resistance</title>
+        <p id="P38">Functional annotation of genes associated with VGLL1 binding regions showed that they are highly enriched for gene sets associated with ET resistance in breast cancer (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 3A</xref> and <xref rid="SD5" ref-type="supplementary-material">Supplementary Table 4</xref>). Moreover, VGLL1 knockdown reduced growth of MCF7-FULVR and T47D-FULVR cells (<xref rid="F3" ref-type="fig">Fig. 3A</xref>; <xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 3B</xref>), demonstrating the functional importance of <italic toggle="yes">VGLL1</italic> in FULVR cells.</p>
+        <p id="P39">To determine if <italic toggle="yes">VGLL1</italic> is sufficient for the development of resistance to fulvestrant, we induced expression of the endogenous <italic toggle="yes">VGLL1</italic> gene using the CRISPR/Cas9 Synergistic Activation Mediator (SAM)(<xref rid="R57" ref-type="bibr">57</xref>) targeted to the <italic toggle="yes">VGLL1</italic> gene promoter (<xref rid="F3" ref-type="fig">Fig. 3B</xref>). Although VGLL1 expression was induced (ActCas9-VGLL1; <xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 3C, D</xref>), this, in of itself was insufficient for an altered response to fulvestrant (see below). Treatment of ER+ breast cancer cells with fulvestrant causes rapid growth arrest and the establishment of resistance requires prolonged culturing with fulvestrant over many months(<xref rid="R32" ref-type="bibr">32</xref>,<xref rid="R58" ref-type="bibr">58</xref>,<xref rid="R59" ref-type="bibr">59</xref>). In agreement with these reports, growth inhibition was maintained in vector control cells (MCF7-ActCas9-Vector) for &gt;100 days in the presence of 100 nM fulvestrant (<xref rid="F3" ref-type="fig">Fig. 3C</xref>, <xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 3E</xref>). By contrast, following an initial period of stasis, growth recovery was observed in fulvestrant-treated cells within just 20 days in VGLL1 expressing cells. Interestingly, development of fulvestrant resistance in these cells was accompanied by further increases in levels of VGLL1, together with reduced ER and PR expression (<xref rid="F3" ref-type="fig">Fig 3D, E</xref>). Similar results were obtained for ActCas9-VGLL1 cells following treatment over 100 days with 1000 nM fulvestrant (MCF7 Act-Cas9-VGLL1-FULVR1000) cells. MCF7-ActCas9-VGLL1-FULVR cells were cross-resistant to next generation SERDs (<xref rid="F3" ref-type="fig">Fig. 3F</xref>, <xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 3F</xref>). Dependence of the ActCas9-VGLL1-FULVR cells on VGLL1 was confirmed with VGLL1 siRNA (<xref rid="F3" ref-type="fig">Fig. 3G</xref>).</p>
+        <p id="P40">Interestingly, induction of VGLL1 (MCF7-ActCas9-VGLL1) was not accompanied by marked changes in gene expression (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 3G</xref>). By contrast, 2,241 and 3,521 genes were substantially altered in the two fulvestrant-resistant ActCas9-VGLL1 cell lines (<xref rid="F3" ref-type="fig">Fig. 3H</xref>). The majority (85%) of differential genes in ActCas9-VGLL1-FULVR100 cells were also significantly altered in ActCas9-VGLL1-FULVR1000 cells. Moreover, of the 360 genes up-regulated with log2FC≥1 in MCF7-FULVR cells, most were also up-regulated (log2FC≥1) in ActCas9-VGLL1-FULVR100 (341/360 (94%) genes) and ActCas9-VGLL1-FULVR1000 cells (338/360 (94%) genes) (<xref rid="SD6" ref-type="supplementary-material">Supplementary Table 5</xref>, <xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 3H</xref>). A similar relationship was observed for the 175 downregulated genes (log2FC≤-1) in MCF7-FULVR, wherein 90% of these genes were also downregulated in the ActCas9-VGLL1-FULVR cells.</p>
+        <p id="P41">Our results show that although expression of VGLL1 alone is insufficient for resistance to fulvestrant, its expression promotes progression to fulvestrant resistance. It is possible that VGLL1 levels above a threshold achieved with ActCas9 targeting are needed for resistance to fulvestrant. Indeed, VGLL1 levels in the resistant cells were considerably higher than those in the MCF7-Act-Cas9-VGLL1 cells. Alternatively, other genes induced or repressed by prolonged fulvestrant treatment may be necessary for VGLL1 activation. One such requirement might be TEAD1, given that its expression is commonly elevated in the different fulvestrant-resistance models (<xref rid="SD6" ref-type="supplementary-material">Supplementary Table 5</xref>). Another possibility is that post-translational modification of VGLL1 controls its activity. Indeed, the levels and activities of the other major TEAD partners, YAP and TAZ, are critically dependent on their phosphorylation by the HIPPO pathway LATS1/2 kinases(<xref rid="R60" ref-type="bibr">60</xref>). However, the lack of a LATS recognition motif in VGLL1 (<xref rid="R30" ref-type="bibr">30</xref>) makes it unlikely that VGLL1 is regulated by the HIPPO pathway. Taken together, downregulation of ER and its transcriptional programmes by fulvestrant appears to be a necessary first step for adaptation of ER+ breast cancer cells away from ER dependence to a requirement for VGLL1.</p>
+      </sec>
+      <sec id="S31">
+        <title>Transcriptional dependency of FULVR cells on VGLL1</title>
+        <p id="P42">For understanding the importance of VGLL1 in directing gene expression in fulvestrant resistant cells, we first stratified genes based on the presence or absence of VGLL1 ChIP-seq peaks. Expression of genes that are bound by VGLL1 (n=3,195) was significantly higher in FULVR than in fulvestrant-sensitive MCF7 cells (<xref rid="F4" ref-type="fig">Fig. 4A</xref>). The genes associated with VGLL1 peaks were also more highly expressed in ActCas9-VGLL1-FULVR cells (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 4A</xref>). To further assess VGLL1-regulated gene expression in MCF7-FULVR cells, we performed RNA-seq following VGLL1 knockdown using 3 VGLL1 siRNAs. Robust VGLL1 knockdown with each VGLL1 siRNA was confirmed in each biological replicate RNA (n=3; <xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 4B</xref>). Expression of 3500-4000 genes was significantly (padj &lt; 0.05) altered by each VGLL1 siRNA (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig 4C</xref>), with around half of these genes being downregulated. To identify direct VGLL1 targets we filtered genes that were downregulated with at least 2 independent siRNAs (1,372 genes, padj &lt; 0.05) for the presence of VGLL1 ChIP-seq peaks within 2.5 kb of transcription start sites (TSS). This defined 762 genes, which we termed VGLL1-activated genes. Not-VGLL1 targets, so-called because they were unaffected by VGLL1 knockdown and did not contain VGLL1 peaks, number 8,932. Comparing the VGLL1-activated genes showed that they were also more highly expressed in MCF7-FULVR cells than in the isogenic fulvestrant-sensitive cells, whereas there was no difference in levels of the not-VGLL1 targets (<xref rid="F4" ref-type="fig">Fig. 4B</xref>). As expected, VGLL1-regulated genes were also enriched for TEAD4 binding regions (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 4D, E</xref>) and were associated with low H3K27ac at TSS in MCF7 cells but high H3K27ac in MCF7-FULVR cells (<xref rid="F4" ref-type="fig">Fig 4C</xref>, <xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 4F, G</xref>). Moreover, VGLL1 target genes were more highly expressed in FULVR cells than those which lacked VGLL1 peaks (<xref rid="F4" ref-type="fig">Fig. 4D</xref>). Functional annotation of the VGLL1-activated genes revealed enrichment for pathways associated with growth factor signalling, including growth factor binding and transmembrane receptor protein kinase activity (<xref rid="F4" ref-type="fig">Fig. 4E</xref>), exemplified by IGFBP3, ITGB6, TGFB2 and EGFR (<xref rid="F4" ref-type="fig">Fig. 4F, G</xref>; <xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 4H</xref>). Taken together, our findings strongly support the premise that VGLL1/TEAD is a key driver of genes whose expression is increased in progression of ER+ breast cancer cells to fulvestrant resistance.</p>
+      </sec>
+      <sec id="S32">
+        <title>VGLL1 induces EGFR expression in breast cancer cells to drive growth of FULVR cells</title>
+        <p id="P43">The above findings link high VGLL1 activity with genes implicated in receptor tyrosine kinase (RTK) signalling, including EGFR. High expression of EGFR and/or its downstream effectors has been linked to reduced efficacy of ET, including tamoxifen and fulvestrant(<xref rid="R61" ref-type="bibr">61</xref>). Furthermore, ectopic expression of EGFR demonstrably promotes fulvestrant resistance in breast cancer cells(<xref rid="R62" ref-type="bibr">62</xref>). Indeed, EGFR expression was elevated in all our FULVR cell lines compared with their isogenic fulvestrant-sensitive counterparts (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 5A</xref>). Analysis of our ChIP-seq data revealed gain of TEAD4 binding at the EGFR gene in MCF7-FULVR cells, particularly at a region ~50 kb upstream of the transcription start site where it was co-localised with VGLL1 (<xref rid="F5" ref-type="fig">Fig. 5A</xref>). Enhanced TEAD4 binding at this region was confirmed by ChIP-qPCR in MCF7-ActCas9-VGLL1-FULVR cells, was accompanied by the presence of VGLL1 in this region and showed induction of H3K27 acetylation (<xref rid="F5" ref-type="fig">Fig. 5B</xref>). VGLL1 and TEAD4 co-binding at this region was consistent with the substantial increases in EGFR levels in MCF7-ActCas9-VGLL1-FULVR cells (<xref rid="F5" ref-type="fig">Fig. 5C</xref>). Immunoblotting confirmed EGFR over-expression in MCF7-ActCas9-VGLL1-FULVR cells, accompanied by greater activation of downstream effectors AKT and ERK1/2 MAPK (<xref rid="F5" ref-type="fig">Fig. 5D</xref>).</p>
+        <p id="P44">Since VGLL1 expression in MCF7-ActCas9-VGLL1-FULVR cells was induced by promoter targeting of ActCas9, we transfected these cells with siRNAs for Cas9, which reduced VGLL1 expression and lowered EGFR expression (<xref rid="F5" ref-type="fig">Fig. 5E</xref>). Similarly, VGLL1 knockdown was sufficient to reduce levels of EGFR in the FULVR cells generated by long-term culturing with fulvestrant (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 5B-D</xref>). Consistent with high EGFR expression and activity, treatment of MCF7-ActCas9-VGLL1-FULVR cells with the EGFR inhibitor erlotinib(<xref rid="R63" ref-type="bibr">63</xref>), inhibited cell growth, accompanied by reductions in AKT and MAPK phosphorylation (<xref rid="F5" ref-type="fig">Fig. 5F, G</xref>). By contrast, the isogenic fulvestrant-sensitive cells were substantially less sensitive to erlotinib. The IC<sub>50</sub> values for MCF7 (EV) and MCF7-VGLL1 cells were 14.1 µM and 33.7 µM, respectively, consistent with previous reports for MCF7 cells (<xref rid="R64" ref-type="bibr">64</xref>). By contrast, VGLL1-FULVR-100 (IC<sub>50</sub>=0.56 µM) and VGLL1-FULVR-1000 (IC<sub>50</sub>=0.09 µM) cells showed considerably greater growth inhibition by erlotinib. The IC<sub>50</sub> values in the FULVR cells are similar to those reported for erlotinib-sensitive lung cancer cell lines and are consistent with the estimated plasma steady-state concentrations of erlotinib of ~2 µM in patients treated with the standard 150 mg daily dose of erlotinib (see ref.(<xref rid="R65" ref-type="bibr">65</xref>)). A similar level of difference in sensitivity to erlotinib was observed for MCF7-FULVR and ZR-75-1-FULVR cells compared with the isogenic fulvestrant-sensitive cells (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 5E-G</xref>).</p>
+        <p id="P45">Our results reveal a mechanism explaining the induction of EGFR in ET-resistant breast cancer, in which epigenomic remodelling due to ER downregulation results in the induction of VGLL1 and consequent VGLL1-TEAD4 co-binding at the <italic toggle="yes">EGFR</italic> enhancer to induce EGFR expression (<xref rid="F5" ref-type="fig">Fig. 5H</xref>). Remarkably, EGFR was the highest-ranked gene co-expressed with VGLL1 at the mRNA level in the METABRIC (<xref rid="R46" ref-type="bibr">46</xref>) series of almost 2,000 breast cancers (<xref rid="F5" ref-type="fig">Fig. 5I</xref>). EGFR was also the highest ranked protein positively correlated with VGLL1 mRNA in breast cancer in the reverse phase protein array (RPPA) data for 892 patients in The Cancer Genome Atlas (TCGA). In both data sets, VGLL1 mRNA expression was negatively associated with ER mRNA (METABRIC; Spearman’s Correlation = -0.532, q-value = 2.20E-132) and protein levels (TCGA RPPA) (Spearman’s Correlation = -0.589, q-value = 4.84E-84). EGFR expression is highest in triple-negative/basal breast cancer (<xref rid="R66" ref-type="bibr">66</xref>,<xref rid="R67" ref-type="bibr">67</xref>) and VGLL1 is also reportedly highly expressed in basal breast cancer (<xref rid="R68" ref-type="bibr">68</xref>). Therefore, we also examined the relationship between VGLL1 and EGFR expression in ER+ breast cancer. Indeed, EGFR expression was also positively correlated with VGLL1 levels in ER+ breast cancer patients in the TCGA and METABRIC cohorts (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 5H</xref>), supporting a role for VGLL1 in regulating EGFR expression. Taken together, these analyses together corroborate our cell line studies in identifying a direct role for VGLL1 in driving EGFR expression in breast cancer.</p>
+      </sec>
+      <sec id="S33">
+        <title>Pharmacological inhibition of VGLL1-TEAD interaction in fulvestrant-resistant breast cancer</title>
+        <p id="P46">The small molecule drug verteporfin (VP) inhibits TEAD-dependent gene expression by blocking its interaction with YAP, resulting in downregulation of YAP/TEAD target genes (<xref rid="R69" ref-type="bibr">69</xref>,<xref rid="R70" ref-type="bibr">70</xref>). Moreover, VP promotes YAP targeting for proteasomal degradation (<xref rid="R71" ref-type="bibr">71</xref>,<xref rid="R72" ref-type="bibr">72</xref>). Given the structural similarities between YAP-TEAD and VGLL1-TEAD complexes (<xref rid="R30" ref-type="bibr">30</xref>,<xref rid="R31" ref-type="bibr">31</xref>), we reasoned that VP would also disrupt VGLL1-TEAD4 interaction and so inhibit expression of VGLL1-regulated genes. Consistent with this model, treating FULVR cells with VP inhibited their growth (<xref rid="F6" ref-type="fig">Fig. 6A</xref>, <xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 6A</xref>). VP reduced VGLL1 levels in a dose-dependent manner (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 6B, C</xref>) and inhibited recruitment of VGLL1 to target genes including EGFR, whereas TEAD4 binding was unaffected or only modestly reduced by VP (<xref rid="F6" ref-type="fig">Fig. 6B</xref>), demonstrating that VP prevents recruitment of VGLL1 to TEAD4 binding regions.</p>
+        <p id="P47">For global assessment of the inhibition of VGLL1 co-transcriptional activity by VP we performed RNA-seq in MCF7-FULVR cells following the addition of VP. VP potently downregulated the expression of VGLL1 activated genes, including EGFR (<xref rid="F6" ref-type="fig">Fig. 6C</xref>), findings that could be confirmed with RT-qPCR (<xref rid="F6" ref-type="fig">Fig. 6D</xref>). These results are consistent with reduced expression of these genes following VGLL1 knockdown (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 6D, E</xref>; see also <xref rid="F5" ref-type="fig">Fig. 5</xref>). Genes downregulated by VP were enriched for VGLL1 peaks (<xref rid="F6" ref-type="fig">Fig. 6E</xref>). Indeed, expression of genes that contained promoter proximal VGLL1 peaks was significantly reduced by VP, compared to lack of change in expression for genes without VGLL1 binding (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 6F</xref>). The selectivity of VP in downregulating VGLL1 target genes was further confirmed by analysing all the high confidence VGLL1 targets and not-VGLL1 targets, revealing that VGLL1 activated genes were significantly downregulated by VP, compared to not-VGLL1 targets (<xref rid="F6" ref-type="fig">Fig. 6F, G</xref>). Indeed, the majority of VGLL1 activated genes were downregulated by VP and displayed preferential sensitivity to VP (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 6G</xref>). In line with this, we also found that genes that were downregulated by VP were expressed at higher levels in FULVR cells, compared to genes not inhibited by VP (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 6H</xref>), consistent with VGLL1 activated genes being more highly expressed than not-VGLL1 targets in FULVR cells (<xref rid="F4" ref-type="fig">Fig. 4D</xref>). Finally, genes downregulated by VP were enriched in functional categories attributed to VGLL1 activated genes including growth factor binding, extracellular matrix binding and transmembrane receptor protein kinase activity (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 6I</xref> and <xref rid="SD7" ref-type="supplementary-material">Supplementary Table 6</xref>).</p>
+        <p id="P48">Interestingly, expression of the 762 genes identified as likely VGLL1 activated genes was positively associated with VGLL1 levels in the METABRIC breast cancer cohort (<xref rid="F6" ref-type="fig">Fig 6H</xref>). Moreover, when we stratified patients according to the combined expression levels of the VGLL1 activated genes, we found that ER+ patients with high expression levels of this gene set had worse prognosis (<xref rid="F6" ref-type="fig">Fig. 6I</xref>), indicating that our signature of VGLL1 activated genes may have prognostic value for breast cancer patients treated with endocrine therapies. Overall, our results show that VGLL1 transcriptional activity is sensitive to VP treatment and suggest that inhibition of VGLL1 recruitment to TEADs could provide an approach to treating VGLL1-dependent, endocrine-resistant breast cancer.</p>
+        <p id="P49">To test the efficacy of VP <italic toggle="yes">in vivo</italic>, we used a patient-derived xenograft (PDX) model, KCC_P_3837, generated from an untreated grade 3, ER-positive, PR-positive, HER2-negative primary invasive ductal carcinoma, in which fulvestrant-resistant derivatives were generated through serial passaging in mice. To directly assess the role of VGLL1 <italic toggle="yes">in vivo</italic>, we treated one fulvestrant-resistant clone having high VGLL1 expression and a second that had low/absent VGLL1 expression (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 6J</xref>), with VP alone or in combination with fulvestrant. Interestingly, while VP treatment did not impact growth of the VGLL1-low PDX, combination of VP with fulvestrant significantly reduced growth of the VGLL1-high PDX (<xref rid="F6" ref-type="fig">Fig. 6J, K</xref>, <xref rid="SD1" ref-type="supplementary-material">Supplementary Fig 6K, L</xref>).</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="S34">
+      <title>Discussion</title>
+      <p id="P50">Our study has revealed that VGLL1 expression is induced by endocrine therapies that cause ER down-regulation. We further show that ER down-regulation by these drugs drives the transcriptional reprogramming that permits the establishment of VGLL1-directed transcriptional programs that support ER-independent cell survival and proliferation. These VGLL1-directed transcriptional programs involve its recruitment to TEAD binding regions. Indeed, reprograming of the epigenetic landscape in breast cancer cells resistant to fulvestrant is associated with increased TEAD4 recruitment to the chromatin and association of VGLL1 and TEAD4 co-binding with active enhancers in the resistant cells.</p>
+      <p id="P51">The well-established oncogenic role of TEADs in different cancers has been closely linked to the activities of YAP and TAZ as TEAD coactivators(<xref rid="R73" ref-type="bibr">73</xref>,<xref rid="R74" ref-type="bibr">74</xref>). However, it is increasingly clear that the canonical functions of TEADs as downstream effectors of YAP and TAZ in the Hippo pathway do not provide the sole mechanism by which TEADs contribute to cancer progression in different cancers(<xref rid="R56" ref-type="bibr">56</xref>,<xref rid="R75" ref-type="bibr">75</xref>,<xref rid="R76" ref-type="bibr">76</xref>). For instance, in ER+ breast cancer, a non-canonical function of YAP and TEAD4, has been reported, wherein they act as ER cofactors, regulating ER target genes rather than canonical TEAD target genes(<xref rid="R56" ref-type="bibr">56</xref>). Our results agree with these findings, as we found that canonical TEAD target genes were expressed only at low levels in ER+ breast cancer cells and we did not observe enrichment of YAP/TAZ binding at these genes. By contrast, many of the established TEAD target genes(<xref rid="R77" ref-type="bibr">77</xref>–<xref rid="R79" ref-type="bibr">79</xref>) are upregulated in fulvestrant-resistant cells, yet YAP/TAZ binding is largely absent at these genes. Instead, VGLL1 was co-bound with TEAD at these genes in FULVR cells and the expression of these genes was dependent on VGLL1.</p>
+      <p id="P52">Demonstration of the importance of VGLL1/TEAD in promoting resistance to ER down-regulators also permits identification of targetable pathways engaged by VGLL1/TEAD, as exemplified herein for EGFR. EGFR expression was greatly elevated in FULVR cells, accompanied by enhanced TEAD4 binding proximal to the EGFR gene. VGLL1 was co-bound with TEAD4 at this region and EGFR expression in fulvestrant-resistant cells was dependent on VGLL1. ERK1/2 MAPK and AKT activities were elevated in FULVR cells, these activities being dependent on EGFR activity as demonstrated by the inhibition observed with erlotinib. Consistent with these results, FULVR cells were substantially more strongly growth inhibited by erlotinib than the fulvestrant-sensitive cells. VGLL1 knockdown reduced EGFR, as well as lowering phospho-AKT levels, indicative of the importance of VGLL1 for EGFR expression and activity in FULVR cells. Supporting our findings is the observation that EGFR is the most highly ranked gene co-expressed with VGLL1 in breast cancer samples. Recent studies show that EGFR and HER2 amplification, as well as mutations of genes in the downstream MAPK pathway are increased in metastatic, endocrine-resistant ER+ breast cancer, together accounting for 10-15% of cases(<xref rid="R62" ref-type="bibr">62</xref>,<xref rid="R80" ref-type="bibr">80</xref>) and demonstrating the importance of elevated EGFR signalling in acquired resistance to endocrine treatments. Our results evidence an alternate mechanism by which EGFR expression can be induced through VGLL1 expression resulting from endocrine therapy, leading to endocrine-resistant breast cancer and thus advance a rationale for an expanded clinical utility for EGFR inhibitors in advanced ER+ breast cancer.</p>
+      <p id="P53">While direct inhibition of VGLL1 would provide the most effective approach for targeting VGLL1-expressing breast cancers, no VGLL1 inhibitors are currently available, whereas several small molecule TEAD inhibitors have been reported(<xref rid="R81" ref-type="bibr">81</xref>–<xref rid="R83" ref-type="bibr">83</xref>). One of these, verteporfin, an FDA approved photodynamic therapy drug for macular degeneration, which serendipitously disrupts YAP/TEAD interactions (<xref rid="R69" ref-type="bibr">69</xref>,<xref rid="R70" ref-type="bibr">70</xref>) and promotes YAP degradation (<xref rid="R71" ref-type="bibr">71</xref>,<xref rid="R72" ref-type="bibr">72</xref>), similarly reduced VGLL1 levels, VGLL1 recruitment to TEAD binding sites and inhibited expression of VGLL1 target genes. Verteporfin re-sensitised a VGLL1-expressing fulvestrant-resistant PDX model to fulvestrant <italic toggle="yes">in vivo</italic>. Thus, our findings show that VGLL1 transcriptional and growth dependencies could be exploited as a therapeutic vulnerability in advanced ER+ breast cancer and so inhibiting VGLL1 interaction with TEAD or inhibition of downstream VGLL1-activated genes such as EGFR, could be viable therapeutic options for patients who progress on ER-downregulating endocrine therapies.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="SM">
+      <title>Supplementary Material</title>
+      <supplementary-material id="SD1" position="float" content-type="local-data">
+        <label>Supplementary Figures</label>
+        <media xlink:href="EMS199202-supplement-Supplementary_Figures.docx" id="d67e1267" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material id="SD2" position="float" content-type="local-data">
+        <label>Supplementary Table 1</label>
+        <media xlink:href="EMS199202-supplement-Supplementary_Table_1.pdf" id="d67e1270" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material id="SD3" position="float" content-type="local-data">
+        <label>Supplementary Table 2</label>
+        <media xlink:href="EMS199202-supplement-Supplementary_Table_2.pdf" id="d67e1273" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material id="SD4" position="float" content-type="local-data">
+        <label>Supplementary Table 3</label>
+        <media xlink:href="EMS199202-supplement-Supplementary_Table_3.pdf" id="d67e1276" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material id="SD5" position="float" content-type="local-data">
+        <label>Supplementary Table 4</label>
+        <media xlink:href="EMS199202-supplement-Supplementary_Table_4.xlsx" id="d67e1279" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material id="SD6" position="float" content-type="local-data">
+        <label>Supplementary Table 5</label>
+        <media xlink:href="EMS199202-supplement-Supplementary_Table_5.pdf" id="d67e1282" position="anchor"/>
+      </supplementary-material>
+      <supplementary-material id="SD7" position="float" content-type="local-data">
+        <label>Supplementary Table 6</label>
+        <media xlink:href="EMS199202-supplement-Supplementary_Table_6.pdf" id="d67e1285" position="anchor"/>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack id="S35">
+      <title>Acknowledgements</title>
+      <p>This work was funded through Cancer Research UK grants C37/A9335, C37/A12011, and C37/A18784, to C.G., C-F. L., M.P., H.F., V.T.M., L.M., R.C.C., L.B. and S.A. Additional support for C. M.D. and N.R.P. was provided by the Imperial College Healthcare NHS Trust Tissue Bank, the Imperial Experimental Cancer Medicine Centre and the Imperial NIHR Biomedical Research Centre. The views expressed are those of the authors and not necessarily those of the NHS, the NIHR or the Department of Health. A.B and G.P. were funded through Fondazione AIRC per la ricerca sul cancro IG26320.</p>
+    </ack>
+    <fn-group>
+      <fn fn-type="COI-statement" id="FN1">
+        <p id="P55">
+<bold>Conflict of interest Disclosure Statement</bold>
+</p>
+        <p id="P56">The authors declare no competing interests relevant to the work herein.</p>
+      </fn>
+    </fn-group>
+    <sec sec-type="data-availability" id="S36">
+      <title>Availability of data and materials</title>
+      <p id="P54">All cell lines generated for this study are available upon request. The authors have analysed publicly available TCGA and METABRIC data downloaded from <ext-link xlink:href="https://www.cbioportal.org" ext-link-type="uri">https://www.cbioportal.org</ext-link>. The RNA-seq and ChIP-seq data sets generated for this study have been made publicly available from the NCBI GEO database under accession GSE216530. All other raw data are available upon request from the corresponding author.</p>
+    </sec>
+    <ref-list>
+      <ref id="R1">
+        <label>1</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ali</surname><given-names>S</given-names></name>
+<name><surname>Coombes</surname><given-names>RC</given-names></name>
+</person-group><article-title>Endocrine-responsive breast cancer and strategies for combating resistance</article-title><source>Nat Rev Cancer</source><year>2002</year><volume>2</volume><fpage>101</fpage><lpage>12</lpage><pub-id pub-id-type="pmid">12635173</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ali</surname><given-names>S</given-names></name>
+<name><surname>Buluwela</surname><given-names>L</given-names></name>
+<name><surname>Coombes</surname><given-names>RC</given-names></name>
+</person-group><article-title>Antiestrogens and their therapeutic applications in breast cancer and other diseases</article-title><source>Annual review of medicine</source><year>2011</year><volume>62</volume><fpage>217</fpage><lpage>32</lpage><pub-id pub-id-type="pmid">21054173</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Johnston</surname><given-names>SR</given-names></name>
+<name><surname>Dowsett</surname><given-names>M</given-names></name>
+</person-group><article-title>Aromatase inhibitors for breast cancer: lessons from the laboratory</article-title><source>Nature reviews Cancer</source><year>2003</year><volume>3</volume><fpage>821</fpage><lpage>31</lpage><pub-id pub-id-type="pmid">14668813</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ma</surname><given-names>CX</given-names></name>
+<name><surname>Reinert</surname><given-names>T</given-names></name>
+<name><surname>Chmielewska</surname><given-names>I</given-names></name>
+<name><surname>Ellis</surname><given-names>MJ</given-names></name>
+</person-group><article-title>Mechanisms of aromatase inhibitor resistance</article-title><source>Nature reviews Cancer</source><year>2015</year><volume>15</volume><fpage>261</fpage><lpage>75</lpage><pub-id pub-id-type="pmid">25907219</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Heintzman</surname><given-names>ND</given-names></name>
+<name><surname>Hon</surname><given-names>GC</given-names></name>
+<name><surname>Hawkins</surname><given-names>RD</given-names></name>
+<name><surname>Kheradpour</surname><given-names>P</given-names></name>
+<name><surname>Stark</surname><given-names>A</given-names></name>
+<name><surname>Harp</surname><given-names>LF</given-names></name>
+<etal/>
+</person-group><article-title>Histone modifications at human enhancers reflect global cell-type-specific gene expression</article-title><source>Nature</source><year>2009</year><volume>459</volume><fpage>108</fpage><lpage>12</lpage><pub-id pub-id-type="doi">10.1038/nature07829</pub-id><pub-id pub-id-type="pmid">19295514</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Whyte</surname><given-names>WA</given-names></name>
+<name><surname>Orlando</surname><given-names>DA</given-names></name>
+<name><surname>Hnisz</surname><given-names>D</given-names></name>
+<name><surname>Abraham</surname><given-names>BJ</given-names></name>
+<name><surname>Lin</surname><given-names>CY</given-names></name>
+<name><surname>Kagey</surname><given-names>MH</given-names></name>
+<etal/>
+</person-group><article-title>Master transcription factors and mediator establish super-enhancers at key cell identity genes</article-title><source>Cell</source><year>2013</year><volume>153</volume><fpage>307</fpage><lpage>19</lpage><pub-id pub-id-type="doi">10.1016/j.cell.2013.03.035</pub-id><pub-id pub-id-type="pmid">23582322</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Hnisz</surname><given-names>D</given-names></name>
+<name><surname>Abraham</surname><given-names>BJ</given-names></name>
+<name><surname>Lee</surname><given-names>TI</given-names></name>
+<name><surname>Lau</surname><given-names>A</given-names></name>
+<name><surname>Saint-Andre</surname><given-names>V</given-names></name>
+<name><surname>Sigova</surname><given-names>AA</given-names></name>
+<etal/>
+</person-group><article-title>Super-enhancers in the control of cell identity and disease</article-title><source>Cell</source><year>2013</year><volume>155</volume><fpage>934</fpage><lpage>47</lpage><pub-id pub-id-type="doi">10.1016/j.cell.2013.09.053</pub-id><pub-id pub-id-type="pmid">24119843</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Hnisz</surname><given-names>D</given-names></name>
+<name><surname>Schuijers</surname><given-names>J</given-names></name>
+<name><surname>Lin</surname><given-names>CY</given-names></name>
+<name><surname>Weintraub</surname><given-names>AS</given-names></name>
+<name><surname>Abraham</surname><given-names>BJ</given-names></name>
+<name><surname>Lee</surname><given-names>TI</given-names></name>
+<etal/>
+</person-group><article-title>Convergence of developmental and oncogenic signaling pathways at transcriptional super-enhancers</article-title><source>Molecular cell</source><year>2015</year><volume>58</volume><fpage>362</fpage><lpage>70</lpage><pub-id pub-id-type="doi">10.1016/j.molcel.2015.02.014</pub-id><pub-id pub-id-type="pmid">25801169</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bradner</surname><given-names>JE</given-names></name>
+<name><surname>Hnisz</surname><given-names>D</given-names></name>
+<name><surname>Young</surname><given-names>RA</given-names></name>
+</person-group><article-title>Transcriptional Addiction in Cancer</article-title><source>Cell</source><year>2017</year><volume>168</volume><fpage>629</fpage><lpage>43</lpage><pub-id pub-id-type="doi">10.1016/j.cell.2016.12.013</pub-id><pub-id pub-id-type="pmid">28187285</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Sharma</surname><given-names>SV</given-names></name>
+<name><surname>Lee</surname><given-names>DY</given-names></name>
+<name><surname>Li</surname><given-names>B</given-names></name>
+<name><surname>Quinlan</surname><given-names>MP</given-names></name>
+<name><surname>Takahashi</surname><given-names>F</given-names></name>
+<name><surname>Maheswaran</surname><given-names>S</given-names></name>
+<etal/>
+</person-group><article-title>A chromatin-mediated reversible drug-tolerant state in cancer cell subpopulations</article-title><source>Cell</source><year>2010</year><volume>141</volume><fpage>69</fpage><lpage>80</lpage><pub-id pub-id-type="doi">10.1016/j.cell.2010.02.027</pub-id><pub-id pub-id-type="pmid">20371346</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Marine</surname><given-names>JC</given-names></name>
+<name><surname>Dawson</surname><given-names>SJ</given-names></name>
+<name><surname>Dawson</surname><given-names>MA</given-names></name>
+</person-group><article-title>Non-genetic mechanisms of therapeutic resistance in cancer</article-title><source>Nature reviews Cancer</source><year>2020</year><volume>20</volume><fpage>743</fpage><lpage>56</lpage><pub-id pub-id-type="pmid">33033407</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Nguyen</surname><given-names>VT</given-names></name>
+<name><surname>Barozzi</surname><given-names>I</given-names></name>
+<name><surname>Faronato</surname><given-names>M</given-names></name>
+<name><surname>Lombardo</surname><given-names>Y</given-names></name>
+<name><surname>Steel</surname><given-names>JH</given-names></name>
+<name><surname>Patel</surname><given-names>N</given-names></name>
+<etal/>
+</person-group><article-title>Differential epigenetic reprogramming in response to specific endocrine therapies promotes cholesterol biosynthesis and cellular invasion</article-title><source>Nature communications</source><year>2015</year><volume>6</volume><elocation-id>10044</elocation-id><pub-id pub-id-type="doi">10.1038/ncomms10044</pub-id><pub-id pub-id-type="pmid">26610607</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R13">
+        <label>13</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bi</surname><given-names>M</given-names></name>
+<name><surname>Zhang</surname><given-names>Z</given-names></name>
+<name><surname>Jiang</surname><given-names>YZ</given-names></name>
+<name><surname>Xue</surname><given-names>P</given-names></name>
+<name><surname>Wang</surname><given-names>H</given-names></name>
+<name><surname>Lai</surname><given-names>Z</given-names></name>
+<etal/>
+</person-group><article-title>Enhancer reprogramming driven by high-order assemblies of transcription factors promotes phenotypic plasticity and breast cancer endocrine resistance</article-title><source>Nat Cell Biol</source><year>2020</year><volume>22</volume><fpage>701</fpage><lpage>15</lpage><pub-id pub-id-type="doi">10.1038/s41556-020-0514-z</pub-id><pub-id pub-id-type="pmid">32424275</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R14">
+        <label>14</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Achinger-Kawecka</surname><given-names>J</given-names></name>
+<name><surname>Valdes-Mora</surname><given-names>F</given-names></name>
+<name><surname>Luu</surname><given-names>PL</given-names></name>
+<name><surname>Giles</surname><given-names>KA</given-names></name>
+<name><surname>Caldon</surname><given-names>CE</given-names></name>
+<name><surname>Qu</surname><given-names>W</given-names></name>
+<etal/>
+</person-group><article-title>Epigenetic reprogramming at estrogen-receptor binding sites alters 3D chromatin landscape in endocrine-resistant breast cancer</article-title><source>Nature communications</source><year>2020</year><volume>11</volume><fpage>320</fpage><pub-id pub-id-type="doi">10.1038/s41467-019-14098-x</pub-id><pub-id pub-id-type="pmid">31949157</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R15">
+        <label>15</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>McDonnell</surname><given-names>DP</given-names></name>
+<name><surname>Wardell</surname><given-names>SE</given-names></name>
+<name><surname>Norris</surname><given-names>JD</given-names></name>
+</person-group><article-title>Oral Selective Estrogen Receptor Downregulators (SERDs), a Breakthrough Endocrine Therapy for Breast Cancer</article-title><source>Journal of medicinal chemistry</source><year>2015</year><volume>58</volume><fpage>4883</fpage><lpage>7</lpage><pub-id pub-id-type="doi">10.1021/acs.jmedchem.5b00760</pub-id><pub-id pub-id-type="pmid">26039356</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R16">
+        <label>16</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Turner</surname><given-names>NC</given-names></name>
+<name><surname>Slamon</surname><given-names>DJ</given-names></name>
+<name><surname>Ro</surname><given-names>J</given-names></name>
+<name><surname>Bondarenko</surname><given-names>I</given-names></name>
+<name><surname>Im</surname><given-names>SA</given-names></name>
+<name><surname>Masuda</surname><given-names>N</given-names></name>
+<etal/>
+</person-group><article-title>Overall Survival with Palbociclib and Fulvestrant in Advanced Breast Cancer</article-title><source>N Engl J Med</source><year>2018</year><volume>379</volume><fpage>1926</fpage><lpage>36</lpage><pub-id pub-id-type="pmid">30345905</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R17">
+        <label>17</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Shao</surname><given-names>P</given-names></name>
+</person-group><article-title>A New Era in ER+ Breast Cancer: Best-in-Class Oral Selective Estrogen Receptor Degrader (SERD) Designed as an Endocrine Backbone Treatment</article-title><source>Journal of medicinal chemistry</source><year>2021</year><volume>64</volume><fpage>11837</fpage><lpage>40</lpage><pub-id pub-id-type="pmid">34339201</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R18">
+        <label>18</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bidard</surname><given-names>FC</given-names></name>
+<name><surname>Kaklamani</surname><given-names>VG</given-names></name>
+<name><surname>Neven</surname><given-names>P</given-names></name>
+<name><surname>Streich</surname><given-names>G</given-names></name>
+<name><surname>Montero</surname><given-names>AJ</given-names></name>
+<name><surname>Forget</surname><given-names>F</given-names></name>
+<etal/>
+</person-group><article-title>Elacestrant (oral selective estrogen receptor degrader) Versus Standard Endocrine Therapy for Estrogen Receptor-Positive, Human Epidermal Growth Factor Receptor 2-Negative Advanced Breast Cancer: Results From the Randomized Phase III EMERALD Trial</article-title><source>Journal of clinical oncology : official journal of the American Society of Clinical Oncology</source><year>2022</year><elocation-id>JCO2200338</elocation-id><pub-id pub-id-type="doi">10.1200/JCO.22.00338</pub-id><pub-id pub-id-type="pmid">35584336</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R19">
+        <label>19</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Stein</surname><given-names>C</given-names></name>
+<name><surname>Bardet</surname><given-names>AF</given-names></name>
+<name><surname>Roma</surname><given-names>G</given-names></name>
+<name><surname>Bergling</surname><given-names>S</given-names></name>
+<name><surname>Clay</surname><given-names>I</given-names></name>
+<name><surname>Ruchti</surname><given-names>A</given-names></name>
+<etal/>
+</person-group><article-title>YAP1 Exerts Its Transcriptional Control via TEAD-Mediated Activation of Enhancers</article-title><source>PLoS Genet</source><year>2015</year><volume>11</volume><elocation-id>e1005465</elocation-id><pub-id pub-id-type="doi">10.1371/journal.pgen.1005465</pub-id><pub-id pub-id-type="pmid">26295846</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R20">
+        <label>20</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>H</given-names></name>
+<name><surname>Liu</surname><given-names>CY</given-names></name>
+<name><surname>Zha</surname><given-names>ZY</given-names></name>
+<name><surname>Zhao</surname><given-names>B</given-names></name>
+<name><surname>Yao</surname><given-names>J</given-names></name>
+<name><surname>Zhao</surname><given-names>S</given-names></name>
+<etal/>
+</person-group><article-title>TEAD transcription factors mediate the function of TAZ in cell growth and epithelial-mesenchymal transition</article-title><source>J Biol Chem</source><year>2009</year><volume>284</volume><fpage>13355</fpage><lpage>62</lpage><pub-id pub-id-type="doi">10.1074/jbc.M900843200</pub-id><pub-id pub-id-type="pmid">19324877</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R21">
+        <label>21</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Lamar</surname><given-names>JM</given-names></name>
+<name><surname>Stern</surname><given-names>P</given-names></name>
+<name><surname>Liu</surname><given-names>H</given-names></name>
+<name><surname>Schindler</surname><given-names>JW</given-names></name>
+<name><surname>Jiang</surname><given-names>ZG</given-names></name>
+<name><surname>Hynes</surname><given-names>RO</given-names></name>
+</person-group><article-title>The Hippo pathway target, YAP, promotes metastasis through its TEAD-interaction domain</article-title><source>Proc Natl Acad Sci U S A</source><year>2012</year><volume>109</volume><fpage>E2441</fpage><lpage>50</lpage><pub-id pub-id-type="doi">10.1073/pnas.1212021109</pub-id><pub-id pub-id-type="pmid">22891335</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R22">
+        <label>22</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ota</surname><given-names>M</given-names></name>
+<name><surname>Sasaki</surname><given-names>H</given-names></name>
+</person-group><article-title>Mammalian Tead proteins regulate cell proliferation and contact inhibition as transcriptional mediators of Hippo signaling</article-title><source>Development</source><year>2008</year><volume>135</volume><fpage>4059</fpage><lpage>69</lpage><pub-id pub-id-type="pmid">19004856</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R23">
+        <label>23</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zanconato</surname><given-names>F</given-names></name>
+<name><surname>Cordenonsi</surname><given-names>M</given-names></name>
+<name><surname>Piccolo</surname><given-names>S</given-names></name>
+</person-group><article-title>YAP/TAZ at the Roots of Cancer</article-title><source>Cancer cell</source><year>2016</year><volume>29</volume><fpage>783</fpage><lpage>803</lpage><pub-id pub-id-type="doi">10.1016/j.ccell.2016.05.005</pub-id><pub-id pub-id-type="pmid">27300434</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R24">
+        <label>24</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Nguyen</surname><given-names>CDK</given-names></name>
+<name><surname>Yi</surname><given-names>C</given-names></name>
+</person-group><article-title>YAP/TAZ Signaling and Resistance to Cancer Therapy</article-title><source>Trends Cancer</source><year>2019</year><volume>5</volume><fpage>283</fpage><lpage>96</lpage><pub-id pub-id-type="doi">10.1016/j.trecan.2019.02.010</pub-id><pub-id pub-id-type="pmid">31174841</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R25">
+        <label>25</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Davidson</surname><given-names>I</given-names></name>
+<name><surname>Xiao</surname><given-names>JH</given-names></name>
+<name><surname>Rosales</surname><given-names>R</given-names></name>
+<name><surname>Staub</surname><given-names>A</given-names></name>
+<name><surname>Chambon</surname><given-names>P</given-names></name>
+</person-group><article-title>The HeLa cell protein TEF-1 binds specifically and cooperatively to two SV40 enhancer motifs of unrelated sequence</article-title><source>Cell</source><year>1988</year><volume>54</volume><fpage>931</fpage><lpage>42</lpage><pub-id pub-id-type="pmid">2843293</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R26">
+        <label>26</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Jacquemin</surname><given-names>P</given-names></name>
+<name><surname>Davidson</surname><given-names>I</given-names></name>
+</person-group><article-title>The Role of the TEF Transcription Factors in Cardiogenesis and Other Developmental Processes</article-title><source>Trends Cardiovasc Med</source><year>1997</year><volume>7</volume><fpage>192</fpage><lpage>7</lpage><pub-id pub-id-type="pmid">21235884</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R27">
+        <label>27</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Halder</surname><given-names>G</given-names></name>
+<name><surname>Polaczyk</surname><given-names>P</given-names></name>
+<name><surname>Kraus</surname><given-names>ME</given-names></name>
+<name><surname>Hudson</surname><given-names>A</given-names></name>
+<name><surname>Kim</surname><given-names>J</given-names></name>
+<name><surname>Laughon</surname><given-names>A</given-names></name>
+<etal/>
+</person-group><article-title>The Vestigial and Scalloped proteins act together to directly regulate wing-specific gene expression in Drosophila</article-title><source>Genes &amp; development</source><year>1998</year><volume>12</volume><fpage>3900</fpage><lpage>9</lpage><pub-id pub-id-type="doi">10.1101/gad.12.24.3900</pub-id><pub-id pub-id-type="pmid">9869643</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R28">
+        <label>28</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Simmonds</surname><given-names>AJ</given-names></name>
+<name><surname>Liu</surname><given-names>X</given-names></name>
+<name><surname>Soanes</surname><given-names>KH</given-names></name>
+<name><surname>Krause</surname><given-names>HM</given-names></name>
+<name><surname>Irvine</surname><given-names>KD</given-names></name>
+<name><surname>Bell</surname><given-names>JB</given-names></name>
+</person-group><article-title>Molecular interactions between Vestigial and Scalloped promote wing formation in Drosophila</article-title><source>Genes &amp; development</source><year>1998</year><volume>12</volume><fpage>3815</fpage><lpage>20</lpage><pub-id pub-id-type="doi">10.1101/gad.12.24.3815</pub-id><pub-id pub-id-type="pmid">9869635</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R29">
+        <label>29</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Vaudin</surname><given-names>P</given-names></name>
+<name><surname>Delanoue</surname><given-names>R</given-names></name>
+<name><surname>Davidson</surname><given-names>I</given-names></name>
+<name><surname>Silber</surname><given-names>J</given-names></name>
+<name><surname>Zider</surname><given-names>A</given-names></name>
+</person-group><article-title>TONDU (TDU), a novel human protein related to the product of vestigial (vg) gene of Drosophila melanogaster interacts with vertebrate TEF factors and substitutes for Vg function in wing formation</article-title><source>Development</source><year>1999</year><volume>126</volume><fpage>4807</fpage><lpage>16</lpage><pub-id pub-id-type="pmid">10518497</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R30">
+        <label>30</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Pobbati</surname><given-names>AV</given-names></name>
+<name><surname>Chan</surname><given-names>SW</given-names></name>
+<name><surname>Lee</surname><given-names>I</given-names></name>
+<name><surname>Song</surname><given-names>H</given-names></name>
+<name><surname>Hong</surname><given-names>W</given-names></name>
+</person-group><article-title>Structural and functional similarity between the Vgll1-TEAD and the YAP-TEAD complexes</article-title><source>Structure</source><year>2012</year><volume>20</volume><fpage>1135</fpage><lpage>40</lpage><pub-id pub-id-type="pmid">22632831</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R31">
+        <label>31</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Mesrouze</surname><given-names>Y</given-names></name>
+<name><surname>Hau</surname><given-names>JC</given-names></name>
+<name><surname>Erdmann</surname><given-names>D</given-names></name>
+<name><surname>Zimmermann</surname><given-names>C</given-names></name>
+<name><surname>Fontana</surname><given-names>P</given-names></name>
+<name><surname>Schmelzle</surname><given-names>T</given-names></name>
+<etal/>
+</person-group><article-title>The surprising features of the TEAD4-Vgll1 protein-protein interaction</article-title><source>Chembiochem</source><year>2014</year><volume>15</volume><fpage>537</fpage><lpage>42</lpage><pub-id pub-id-type="pmid">24504694</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R32">
+        <label>32</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Shaw</surname><given-names>LE</given-names></name>
+<name><surname>Sadler</surname><given-names>AJ</given-names></name>
+<name><surname>Pugazhendhi</surname><given-names>D</given-names></name>
+<name><surname>Darbre</surname><given-names>PD</given-names></name>
+</person-group><article-title>Changes in oestrogen receptor-alpha and -beta during progression to acquired resistance to tamoxifen and fulvestrant (Faslodex, ICI 182,780) in MCF7 human breast cancer cells</article-title><source>The Journal of steroid biochemistry and molecular biology</source><year>2006</year><volume>99</volume><fpage>19</fpage><lpage>32</lpage><pub-id pub-id-type="pmid">16533599</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R33">
+        <label>33</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Martin</surname><given-names>LA</given-names></name>
+<name><surname>Ribas</surname><given-names>R</given-names></name>
+<name><surname>Simigdala</surname><given-names>N</given-names></name>
+<name><surname>Schuster</surname><given-names>E</given-names></name>
+<name><surname>Pancholi</surname><given-names>S</given-names></name>
+<name><surname>Tenev</surname><given-names>T</given-names></name>
+<etal/>
+</person-group><article-title>Discovery of naturally occurring ESR1 mutations in breast cancer cell lines modelling endocrine resistance</article-title><source>Nature communications</source><year>2017</year><volume>8</volume><elocation-id>1865</elocation-id><pub-id pub-id-type="doi">10.1038/s41467-017-01864-y</pub-id><pub-id pub-id-type="pmid">29192207</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R34">
+        <label>34</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Pancholi</surname><given-names>S</given-names></name>
+<name><surname>Leal</surname><given-names>MF</given-names></name>
+<name><surname>Ribas</surname><given-names>R</given-names></name>
+<name><surname>Simigdala</surname><given-names>N</given-names></name>
+<name><surname>Schuster</surname><given-names>E</given-names></name>
+<name><surname>Chateau-Joubert</surname><given-names>S</given-names></name>
+<etal/>
+</person-group><article-title>Combination of mTORC1/2 inhibitor vistusertib plus fulvestrant in vitro and in vivo targets oestrogen receptor-positive endocrine-resistant breast cancer</article-title><source>Breast cancer research : BCR</source><year>2019</year><volume>21</volume><fpage>135</fpage><pub-id pub-id-type="doi">10.1186/s13058-019-1222-0</pub-id><pub-id pub-id-type="pmid">31801615</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R35">
+        <label>35</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Schmidt</surname><given-names>D</given-names></name>
+<name><surname>Wilson</surname><given-names>MD</given-names></name>
+<name><surname>Spyrou</surname><given-names>C</given-names></name>
+<name><surname>Brown</surname><given-names>GD</given-names></name>
+<name><surname>Hadfield</surname><given-names>J</given-names></name>
+<name><surname>Odom</surname><given-names>DT</given-names></name>
+</person-group><article-title>ChIP-seq: using high-throughput sequencing to discover protein-DNA interactions</article-title><source>Methods</source><year>2009</year><volume>48</volume><fpage>240</fpage><lpage>8</lpage><pub-id pub-id-type="doi">10.1016/j.ymeth.2009.03.001</pub-id><pub-id pub-id-type="pmid">19275939</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R36">
+        <label>36</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Langmead</surname><given-names>B</given-names></name>
+<name><surname>Trapnell</surname><given-names>C</given-names></name>
+<name><surname>Pop</surname><given-names>M</given-names></name>
+<name><surname>Salzberg</surname><given-names>SL</given-names></name>
+</person-group><article-title>Ultrafast and memory-efficient alignment of short DNA sequences to the human genome</article-title><source>Genome Biol</source><year>2009</year><volume>10</volume><fpage>R25</fpage><pub-id pub-id-type="doi">10.1186/gb-2009-10-3-r25</pub-id><pub-id pub-id-type="pmid">19261174</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R37">
+        <label>37</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>H</given-names></name>
+<name><surname>Handsaker</surname><given-names>B</given-names></name>
+<name><surname>Wysoker</surname><given-names>A</given-names></name>
+<name><surname>Fennell</surname><given-names>T</given-names></name>
+<name><surname>Ruan</surname><given-names>J</given-names></name>
+<name><surname>Homer</surname><given-names>N</given-names></name>
+<etal/>
+</person-group><article-title>The Sequence Alignment/Map format and SAMtools</article-title><source>Bioinformatics</source><year>2009</year><volume>25</volume><fpage>2078</fpage><lpage>9</lpage><pub-id pub-id-type="doi">10.1093/bioinformatics/btp352</pub-id><pub-id pub-id-type="pmid">19505943</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R38">
+        <label>38</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zhang</surname><given-names>Y</given-names></name>
+<name><surname>Liu</surname><given-names>T</given-names></name>
+<name><surname>Meyer</surname><given-names>CA</given-names></name>
+<name><surname>Eeckhoute</surname><given-names>J</given-names></name>
+<name><surname>Johnson</surname><given-names>DS</given-names></name>
+<name><surname>Bernstein</surname><given-names>BE</given-names></name>
+<etal/>
+</person-group><article-title>Model-based analysis of ChIP-Seq (MACS)</article-title><source>Genome biology</source><year>2008</year><volume>9</volume><elocation-id>R137</elocation-id><pub-id pub-id-type="doi">10.1186/gb-2008-9-9-r137</pub-id><pub-id pub-id-type="pmid">18798982</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R39">
+        <label>39</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Lawrence</surname><given-names>M</given-names></name>
+<name><surname>Gentleman</surname><given-names>R</given-names></name>
+<name><surname>Carey</surname><given-names>V</given-names></name>
+</person-group><article-title>rtracklayer: an R package for interfacing with genome browsers</article-title><source>Bioinformatics</source><year>2009</year><volume>25</volume><fpage>1841</fpage><lpage>2</lpage><pub-id pub-id-type="doi">10.1093/bioinformatics/btp328</pub-id><pub-id pub-id-type="pmid">19468054</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R40">
+        <label>40</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Quinlan</surname><given-names>AR</given-names></name>
+<name><surname>Hall</surname><given-names>IM</given-names></name>
+</person-group><article-title>BEDTools: a flexible suite of utilities for comparing genomic features</article-title><source>Bioinformatics</source><year>2010</year><volume>26</volume><fpage>841</fpage><lpage>2</lpage><pub-id pub-id-type="doi">10.1093/bioinformatics/btq033</pub-id><pub-id pub-id-type="pmid">20110278</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R41">
+        <label>41</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Karolchik</surname><given-names>D</given-names></name>
+<name><surname>Hinrichs</surname><given-names>AS</given-names></name>
+<name><surname>Furey</surname><given-names>TS</given-names></name>
+<name><surname>Roskin</surname><given-names>KM</given-names></name>
+<name><surname>Sugnet</surname><given-names>CW</given-names></name>
+<name><surname>Haussler</surname><given-names>D</given-names></name>
+<etal/>
+</person-group><article-title>The UCSC Table Browser data retrieval tool</article-title><source>Nucleic Acids Res</source><year>2004</year><volume>32</volume><fpage>D493</fpage><lpage>6</lpage><pub-id pub-id-type="doi">10.1093/nar/gkh103</pub-id><pub-id pub-id-type="pmid">14681465</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R42">
+        <label>42</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Stempor</surname><given-names>P</given-names></name>
+<name><surname>Ahringer</surname><given-names>J</given-names></name>
+</person-group><article-title>SeqPlots - Interactive software for exploratory data analyses, pattern discovery and visualization in genomics</article-title><source>Wellcome Open Res</source><year>2016</year><volume>1</volume><fpage>14</fpage><pub-id pub-id-type="doi">10.12688/wellcomeopenres.10004.1</pub-id><pub-id pub-id-type="pmid">27918597</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R43">
+        <label>43</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Heinz</surname><given-names>S</given-names></name>
+<name><surname>Benner</surname><given-names>C</given-names></name>
+<name><surname>Spann</surname><given-names>N</given-names></name>
+<name><surname>Bertolino</surname><given-names>E</given-names></name>
+<name><surname>Lin</surname><given-names>YC</given-names></name>
+<name><surname>Laslo</surname><given-names>P</given-names></name>
+<etal/>
+</person-group><article-title>Simple combinations of lineage-determining transcription factors prime cis-regulatory elements required for macrophage and B cell identities</article-title><source>Molecular cell</source><year>2010</year><volume>38</volume><fpage>576</fpage><lpage>89</lpage><pub-id pub-id-type="doi">10.1016/j.molcel.2010.05.004</pub-id><pub-id pub-id-type="pmid">20513432</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R44">
+        <label>44</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>McLean</surname><given-names>CY</given-names></name>
+<name><surname>Bristor</surname><given-names>D</given-names></name>
+<name><surname>Hiller</surname><given-names>M</given-names></name>
+<name><surname>Clarke</surname><given-names>SL</given-names></name>
+<name><surname>Schaar</surname><given-names>BT</given-names></name>
+<name><surname>Lowe</surname><given-names>CB</given-names></name>
+<etal/>
+</person-group><article-title>GREAT improves functional interpretation of cis-regulatory regions</article-title><source>Nat Biotechnol</source><year>2010</year><volume>28</volume><fpage>495</fpage><lpage>501</lpage><pub-id pub-id-type="doi">10.1038/nbt.1630</pub-id><pub-id pub-id-type="pmid">20436461</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R45">
+        <label>45</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Supek</surname><given-names>F</given-names></name>
+<name><surname>Bosnjak</surname><given-names>M</given-names></name>
+<name><surname>Skunca</surname><given-names>N</given-names></name>
+<name><surname>Smuc</surname><given-names>T</given-names></name>
+</person-group><article-title>REVIGO summarizes and visualizes long lists of gene ontology terms</article-title><source>PLoS One</source><year>2011</year><volume>6</volume><elocation-id>e21800</elocation-id><pub-id pub-id-type="doi">10.1371/journal.pone.0021800</pub-id><pub-id pub-id-type="pmid">21789182</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R46">
+        <label>46</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Curtis</surname><given-names>C</given-names></name>
+<name><surname>Shah</surname><given-names>SP</given-names></name>
+<name><surname>Chin</surname><given-names>SF</given-names></name>
+<name><surname>Turashvili</surname><given-names>G</given-names></name>
+<name><surname>Rueda</surname><given-names>OM</given-names></name>
+<name><surname>Dunning</surname><given-names>MJ</given-names></name>
+<etal/>
+</person-group><article-title>The genomic and transcriptomic architecture of 2,000 breast tumours reveals novel subgroups</article-title><source>Nature</source><year>2012</year><volume>486</volume><fpage>346</fpage><lpage>52</lpage><pub-id pub-id-type="doi">10.1038/nature10983</pub-id><pub-id pub-id-type="pmid">22522925</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R47">
+        <label>47</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Kim</surname><given-names>D</given-names></name>
+<name><surname>Pertea</surname><given-names>G</given-names></name>
+<name><surname>Trapnell</surname><given-names>C</given-names></name>
+<name><surname>Pimentel</surname><given-names>H</given-names></name>
+<name><surname>Kelley</surname><given-names>R</given-names></name>
+<name><surname>Salzberg</surname><given-names>SL</given-names></name>
+</person-group><article-title>TopHat2: accurate alignment of transcriptomes in the presence of insertions, deletions and gene fusions</article-title><source>Genome Biol</source><year>2013</year><volume>14</volume><fpage>R36</fpage><pub-id pub-id-type="doi">10.1186/gb-2013-14-4-r36</pub-id><pub-id pub-id-type="pmid">23618408</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R48">
+        <label>48</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Anders</surname><given-names>S</given-names></name>
+<name><surname>Pyl</surname><given-names>PT</given-names></name>
+<name><surname>Huber</surname><given-names>W</given-names></name>
+</person-group><article-title>HTSeq--a Python framework to work with high-throughput sequencing data</article-title><source>Bioinformatics</source><year>2015</year><volume>31</volume><fpage>166</fpage><lpage>9</lpage><pub-id pub-id-type="doi">10.1093/bioinformatics/btu638</pub-id><pub-id pub-id-type="pmid">25260700</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R49">
+        <label>49</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Anders</surname><given-names>S</given-names></name>
+<name><surname>Huber</surname><given-names>W</given-names></name>
+</person-group><article-title>Differential expression analysis for sequence count data</article-title><source>Genome Biol</source><year>2010</year><volume>11</volume><elocation-id>R106</elocation-id><pub-id pub-id-type="doi">10.1186/gb-2010-11-10-r106</pub-id><pub-id pub-id-type="pmid">20979621</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R50">
+        <label>50</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Raudvere</surname><given-names>U</given-names></name>
+<name><surname>Kolberg</surname><given-names>L</given-names></name>
+<name><surname>Kuzmin</surname><given-names>I</given-names></name>
+<name><surname>Arak</surname><given-names>T</given-names></name>
+<name><surname>Adler</surname><given-names>P</given-names></name>
+<name><surname>Peterson</surname><given-names>H</given-names></name>
+<etal/>
+</person-group><article-title>g:Profiler: a web server for functional enrichment analysis and conversions of gene lists (2019 update)</article-title><source>Nucleic Acids Res</source><year>2019</year><volume>47</volume><fpage>W191</fpage><lpage>W8</lpage><pub-id pub-id-type="doi">10.1093/nar/gkz369</pub-id><pub-id pub-id-type="pmid">31066453</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R51">
+        <label>51</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Skehan</surname><given-names>P</given-names></name>
+<name><surname>Storeng</surname><given-names>R</given-names></name>
+<name><surname>Scudiero</surname><given-names>D</given-names></name>
+<name><surname>Monks</surname><given-names>A</given-names></name>
+<name><surname>McMahon</surname><given-names>J</given-names></name>
+<name><surname>Vistica</surname><given-names>D</given-names></name>
+<etal/>
+</person-group><article-title>New colorimetric cytotoxicity assay for anticancer-drug screening</article-title><source>Journal of the National Cancer Institute</source><year>1990</year><volume>82</volume><fpage>1107</fpage><lpage>12</lpage><pub-id pub-id-type="pmid">2359136</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R52">
+        <label>52</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Heintzman</surname><given-names>ND</given-names></name>
+<name><surname>Stuart</surname><given-names>RK</given-names></name>
+<name><surname>Hon</surname><given-names>G</given-names></name>
+<name><surname>Fu</surname><given-names>Y</given-names></name>
+<name><surname>Ching</surname><given-names>CW</given-names></name>
+<name><surname>Hawkins</surname><given-names>RD</given-names></name>
+<etal/>
+</person-group><article-title>Distinct and predictive chromatin signatures of transcriptional promoters and enhancers in the human genome</article-title><source>Nat Genet</source><year>2007</year><volume>39</volume><fpage>311</fpage><lpage>8</lpage><pub-id pub-id-type="pmid">17277777</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R53">
+        <label>53</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ernst</surname><given-names>J</given-names></name>
+<name><surname>Kheradpour</surname><given-names>P</given-names></name>
+<name><surname>Mikkelsen</surname><given-names>TS</given-names></name>
+<name><surname>Shoresh</surname><given-names>N</given-names></name>
+<name><surname>Ward</surname><given-names>LD</given-names></name>
+<name><surname>Epstein</surname><given-names>CB</given-names></name>
+<etal/>
+</person-group><article-title>Mapping and analysis of chromatin state dynamics in nine human cell types</article-title><source>Nature</source><year>2011</year><volume>473</volume><fpage>43</fpage><lpage>9</lpage><pub-id pub-id-type="doi">10.1038/nature09906</pub-id><pub-id pub-id-type="pmid">21441907</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R54">
+        <label>54</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Sherman</surname><given-names>BT</given-names></name>
+<name><surname>Hao</surname><given-names>M</given-names></name>
+<name><surname>Qiu</surname><given-names>J</given-names></name>
+<name><surname>Jiao</surname><given-names>X</given-names></name>
+<name><surname>Baseler</surname><given-names>MW</given-names></name>
+<name><surname>Lane</surname><given-names>HC</given-names></name>
+<etal/>
+</person-group><article-title>DAVID: a web server for functional enrichment analysis and functional annotation of gene lists (2021 update)</article-title><source>Nucleic acids research</source><year>2022</year><pub-id pub-id-type="doi">10.1093/nar/gkac194</pub-id><pub-id pub-id-type="pmid">35325185</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R55">
+        <label>55</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Martin</surname><given-names>LA</given-names></name>
+<name><surname>Ghazoui</surname><given-names>Z</given-names></name>
+<name><surname>Weigel</surname><given-names>MT</given-names></name>
+<name><surname>Pancholi</surname><given-names>S</given-names></name>
+<name><surname>Dunbier</surname><given-names>A</given-names></name>
+<name><surname>Johnston</surname><given-names>S</given-names></name>
+<etal/>
+</person-group><article-title>An in vitro model showing adaptation to long-term oestrogen deprivation highlights the clinical potential for targeting kinase pathways in combination with aromatase inhibition</article-title><source>Steroids</source><year>2011</year><volume>76</volume><fpage>772</fpage><lpage>6</lpage><pub-id pub-id-type="pmid">21477608</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R56">
+        <label>56</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zhu</surname><given-names>C</given-names></name>
+<name><surname>Li</surname><given-names>L</given-names></name>
+<name><surname>Zhang</surname><given-names>Z</given-names></name>
+<name><surname>Bi</surname><given-names>M</given-names></name>
+<name><surname>Wang</surname><given-names>H</given-names></name>
+<name><surname>Su</surname><given-names>W</given-names></name>
+<etal/>
+</person-group><article-title>A Non-canonical Role of YAP/TEAD Is Required for Activation of Estrogen-Regulated Enhancers in Breast Cancer</article-title><source>Molecular cell</source><year>2019</year><volume>75</volume><fpage>791</fpage><lpage>806</lpage><elocation-id>e8</elocation-id><pub-id pub-id-type="doi">10.1016/j.molcel.2019.06.010</pub-id><pub-id pub-id-type="pmid">31303470</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R57">
+        <label>57</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Konermann</surname><given-names>S</given-names></name>
+<name><surname>Brigham</surname><given-names>MD</given-names></name>
+<name><surname>Trevino</surname><given-names>AE</given-names></name>
+<name><surname>Joung</surname><given-names>J</given-names></name>
+<name><surname>Abudayyeh</surname><given-names>OO</given-names></name>
+<name><surname>Barcena</surname><given-names>C</given-names></name>
+<etal/>
+</person-group><article-title>Genome-scale transcriptional activation by an engineered CRISPR-Cas9 complex</article-title><source>Nature</source><year>2015</year><volume>517</volume><fpage>583</fpage><lpage>8</lpage><pub-id pub-id-type="doi">10.1038/nature14136</pub-id><pub-id pub-id-type="pmid">25494202</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R58">
+        <label>58</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Lykkesfeldt</surname><given-names>AE</given-names></name>
+<name><surname>Larsen</surname><given-names>SS</given-names></name>
+<name><surname>Briand</surname><given-names>P</given-names></name>
+</person-group><article-title>Human breast cancer cell lines resistant to pure anti-estrogens are sensitive to tamoxifen treatment</article-title><source>International journal of cancer Journal international du cancer</source><year>1995</year><volume>61</volume><fpage>529</fpage><lpage>34</lpage><pub-id pub-id-type="pmid">7759159</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R59">
+        <label>59</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Sommer</surname><given-names>A</given-names></name>
+<name><surname>Hoffmann</surname><given-names>J</given-names></name>
+<name><surname>Lichtner</surname><given-names>RB</given-names></name>
+<name><surname>Schneider</surname><given-names>MR</given-names></name>
+<name><surname>Parczyk</surname><given-names>K</given-names></name>
+</person-group><article-title>Studies on the development of resistance to the pure antiestrogen Faslodex in three human breast cancer cell lines</article-title><source>The Journal of steroid biochemistry and molecular biology</source><year>2003</year><volume>85</volume><fpage>33</fpage><lpage>47</lpage><pub-id pub-id-type="pmid">12798355</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R60">
+        <label>60</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Piccolo</surname><given-names>S</given-names></name>
+<name><surname>Dupont</surname><given-names>S</given-names></name>
+<name><surname>Cordenonsi</surname><given-names>M</given-names></name>
+</person-group><article-title>The biology of YAP/TAZ: hippo signaling and beyond</article-title><source>Physiol Rev</source><year>2014</year><volume>94</volume><fpage>1287</fpage><lpage>312</lpage><pub-id pub-id-type="pmid">25287865</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R61">
+        <label>61</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Hanker</surname><given-names>AB</given-names></name>
+<name><surname>Sudhan</surname><given-names>DR</given-names></name>
+<name><surname>Arteaga</surname><given-names>CL</given-names></name>
+</person-group><article-title>Overcoming Endocrine Resistance in Breast Cancer</article-title><source>Cancer cell</source><year>2020</year><volume>37</volume><fpage>496</fpage><lpage>513</lpage><pub-id pub-id-type="doi">10.1016/j.ccell.2020.03.009</pub-id><pub-id pub-id-type="pmid">32289273</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R62">
+        <label>62</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Razavi</surname><given-names>P</given-names></name>
+<name><surname>Chang</surname><given-names>MT</given-names></name>
+<name><surname>Xu</surname><given-names>G</given-names></name>
+<name><surname>Bandlamudi</surname><given-names>C</given-names></name>
+<name><surname>Ross</surname><given-names>DS</given-names></name>
+<name><surname>Vasan</surname><given-names>N</given-names></name>
+<etal/>
+</person-group><article-title>The Genomic Landscape of Endocrine-Resistant Advanced Breast Cancers</article-title><source>Cancer cell</source><year>2018</year><volume>34</volume><fpage>427</fpage><lpage>38</lpage><elocation-id>e6</elocation-id><pub-id pub-id-type="doi">10.1016/j.ccell.2018.08.008</pub-id><pub-id pub-id-type="pmid">30205045</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R63">
+        <label>63</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Dowell</surname><given-names>J</given-names></name>
+<name><surname>Minna</surname><given-names>JD</given-names></name>
+<name><surname>Kirkpatrick</surname><given-names>P</given-names></name>
+</person-group><article-title>Erlotinib hydrochloride</article-title><source>Nat Rev Drug Discov</source><year>2005</year><volume>4</volume><fpage>13</fpage><lpage>4</lpage><pub-id pub-id-type="pmid">15690599</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R64">
+        <label>64</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Yamasaki</surname><given-names>F</given-names></name>
+<name><surname>Zhang</surname><given-names>D</given-names></name>
+<name><surname>Bartholomeusz</surname><given-names>C</given-names></name>
+<name><surname>Sudo</surname><given-names>T</given-names></name>
+<name><surname>Hortobagyi</surname><given-names>GN</given-names></name>
+<name><surname>Kurisu</surname><given-names>K</given-names></name>
+<etal/>
+</person-group><article-title>Sensitivity of breast cancer cells to erlotinib depends on cyclin-dependent kinase 2 activity</article-title><source>Molecular cancer therapeutics</source><year>2007</year><volume>6</volume><fpage>2168</fpage><lpage>77</lpage><pub-id pub-id-type="doi">10.1158/1535-7163.MCT-06-0514</pub-id><pub-id pub-id-type="pmid">17671085</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R65">
+        <label>65</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Li</surname><given-names>T</given-names></name>
+<name><surname>Ling</surname><given-names>YH</given-names></name>
+<name><surname>Goldman</surname><given-names>ID</given-names></name>
+<name><surname>Perez-Soler</surname><given-names>R</given-names></name>
+</person-group><article-title>Schedule-dependent cytotoxic synergism of pemetrexed and erlotinib in human non-small cell lung cancer cells</article-title><source>Clinical cancer research : an official journal of the American Association for Cancer Research</source><year>2007</year><volume>13</volume><fpage>3413</fpage><lpage>22</lpage><pub-id pub-id-type="pmid">17545550</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R66">
+        <label>66</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Rakha</surname><given-names>EA</given-names></name>
+<name><surname>El-Sayed</surname><given-names>ME</given-names></name>
+<name><surname>Green</surname><given-names>AR</given-names></name>
+<name><surname>Lee</surname><given-names>AH</given-names></name>
+<name><surname>Robertson</surname><given-names>JF</given-names></name>
+<name><surname>Ellis</surname><given-names>IO</given-names></name>
+</person-group><article-title>Prognostic markers in triple-negative breast cancer</article-title><source>Cancer</source><year>2007</year><volume>109</volume><fpage>25</fpage><lpage>32</lpage><pub-id pub-id-type="pmid">17146782</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R67">
+        <label>67</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Oshi</surname><given-names>M</given-names></name>
+<name><surname>Gandhi</surname><given-names>S</given-names></name>
+<name><surname>Tokumaru</surname><given-names>Y</given-names></name>
+<name><surname>Yan</surname><given-names>L</given-names></name>
+<name><surname>Yamada</surname><given-names>A</given-names></name>
+<name><surname>Matsuyama</surname><given-names>R</given-names></name>
+<etal/>
+</person-group><article-title>Conflicting roles of EGFR expression by subtypes in breast cancer</article-title><source>Am J Cancer Res</source><year>2021</year><volume>11</volume><fpage>5094</fpage><lpage>110</lpage><pub-id pub-id-type="pmid">34765314</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R68">
+        <label>68</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Castilla</surname><given-names>MA</given-names></name>
+<name><surname>Lopez-Garcia</surname><given-names>MA</given-names></name>
+<name><surname>Atienza</surname><given-names>MR</given-names></name>
+<name><surname>Rosa-Rosa</surname><given-names>JM</given-names></name>
+<name><surname>Diaz-Martin</surname><given-names>J</given-names></name>
+<name><surname>Pecero</surname><given-names>ML</given-names></name>
+<etal/>
+</person-group><article-title>VGLL1 expression is associated with a triple-negative basal-like phenotype in breast cancer</article-title><source>Endocrine-related cancer</source><year>2014</year><volume>21</volume><fpage>587</fpage><lpage>99</lpage><pub-id pub-id-type="pmid">24891455</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R69">
+        <label>69</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Liu-Chittenden</surname><given-names>Y</given-names></name>
+<name><surname>Huang</surname><given-names>B</given-names></name>
+<name><surname>Shim</surname><given-names>JS</given-names></name>
+<name><surname>Chen</surname><given-names>Q</given-names></name>
+<name><surname>Lee</surname><given-names>SJ</given-names></name>
+<name><surname>Anders</surname><given-names>RA</given-names></name>
+<etal/>
+</person-group><article-title>Genetic and pharmacological disruption of the TEAD-YAP complex suppresses the oncogenic activity of YAP</article-title><source>Genes &amp; development</source><year>2012</year><volume>26</volume><fpage>1300</fpage><lpage>5</lpage><pub-id pub-id-type="doi">10.1101/gad.192856.112</pub-id><pub-id pub-id-type="pmid">22677547</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R70">
+        <label>70</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Gibault</surname><given-names>F</given-names></name>
+<name><surname>Sturbaut</surname><given-names>M</given-names></name>
+<name><surname>Bailly</surname><given-names>F</given-names></name>
+<name><surname>Melnyk</surname><given-names>P</given-names></name>
+<name><surname>Cotelle</surname><given-names>P</given-names></name>
+</person-group><article-title>Targeting Transcriptional Enhanced Associate Domains (TEADs)</article-title><source>J Med Chem</source><year>2018</year><volume>61</volume><fpage>5057</fpage><lpage>72</lpage><pub-id pub-id-type="pmid">29251924</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R71">
+        <label>71</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>WS</given-names></name>
+<name><surname>Cao</surname><given-names>Z</given-names></name>
+<name><surname>Krishnan</surname><given-names>C</given-names></name>
+<name><surname>Panjwani</surname><given-names>N</given-names></name>
+</person-group><article-title>Verteporfin without light stimulation inhibits YAP activation in trabecular meshwork cells: Implications for glaucoma treatment</article-title><source>Biochemical and biophysical research communications</source><year>2015</year><volume>466</volume><fpage>221</fpage><lpage>5</lpage><pub-id pub-id-type="pmid">26361148</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R72">
+        <label>72</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Wang</surname><given-names>C</given-names></name>
+<name><surname>Zhu</surname><given-names>X</given-names></name>
+<name><surname>Feng</surname><given-names>W</given-names></name>
+<name><surname>Yu</surname><given-names>Y</given-names></name>
+<name><surname>Jeong</surname><given-names>K</given-names></name>
+<name><surname>Guo</surname><given-names>W</given-names></name>
+<etal/>
+</person-group><article-title>Verteporfin inhibits YAP function through up-regulating 14-3-3sigma sequestering YAP in the cytoplasm</article-title><source>Am J Cancer Res</source><year>2016</year><volume>6</volume><fpage>27</fpage><lpage>37</lpage><pub-id pub-id-type="pmid">27073720</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R73">
+        <label>73</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zhao</surname><given-names>B</given-names></name>
+<name><surname>Ye</surname><given-names>X</given-names></name>
+<name><surname>Yu</surname><given-names>J</given-names></name>
+<name><surname>Li</surname><given-names>L</given-names></name>
+<name><surname>Li</surname><given-names>W</given-names></name>
+<name><surname>Li</surname><given-names>S</given-names></name>
+<etal/>
+</person-group><article-title>TEAD mediates YAP-dependent gene induction and growth control</article-title><source>Genes Dev</source><year>2008</year><volume>22</volume><fpage>1962</fpage><lpage>71</lpage><pub-id pub-id-type="doi">10.1101/gad.1664408</pub-id><pub-id pub-id-type="pmid">18579750</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R74">
+        <label>74</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zanconato</surname><given-names>F</given-names></name>
+<name><surname>Forcato</surname><given-names>M</given-names></name>
+<name><surname>Battilana</surname><given-names>G</given-names></name>
+<name><surname>Azzolin</surname><given-names>L</given-names></name>
+<name><surname>Quaranta</surname><given-names>E</given-names></name>
+<name><surname>Bodega</surname><given-names>B</given-names></name>
+<etal/>
+</person-group><article-title>Genome-wide association between YAP/TAZ/TEAD and AP-1 at enhancers drives oncogenic growth</article-title><source>Nat Cell Biol</source><year>2015</year><volume>17</volume><fpage>1218</fpage><lpage>27</lpage><pub-id pub-id-type="doi">10.1038/ncb3216</pub-id><pub-id pub-id-type="pmid">26258633</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R75">
+        <label>75</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>Y</given-names></name>
+<name><surname>Wang</surname><given-names>G</given-names></name>
+<name><surname>Yang</surname><given-names>Y</given-names></name>
+<name><surname>Mei</surname><given-names>Z</given-names></name>
+<name><surname>Liang</surname><given-names>Z</given-names></name>
+<name><surname>Cui</surname><given-names>A</given-names></name>
+<etal/>
+</person-group><article-title>Increased TEAD4 expression and nuclear localization in colorectal cancer promote epithelial-mesenchymal transition and metastasis in a YAP-independent manner</article-title><source>Oncogene</source><year>2016</year><volume>35</volume><fpage>2789</fpage><lpage>800</lpage><pub-id pub-id-type="pmid">26387538</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R76">
+        <label>76</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Lin</surname><given-names>KC</given-names></name>
+<name><surname>Moroishi</surname><given-names>T</given-names></name>
+<name><surname>Meng</surname><given-names>Z</given-names></name>
+<name><surname>Jeong</surname><given-names>HS</given-names></name>
+<name><surname>Plouffe</surname><given-names>SW</given-names></name>
+<name><surname>Sekido</surname><given-names>Y</given-names></name>
+<etal/>
+</person-group><article-title>Regulation of Hippo pathway transcription factor TEAD by p38 MAPK-induced cytoplasmic translocation</article-title><source>Nat Cell Biol</source><year>2017</year><volume>19</volume><fpage>996</fpage><lpage>1002</lpage><pub-id pub-id-type="doi">10.1038/ncb3581</pub-id><pub-id pub-id-type="pmid">28752853</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R77">
+        <label>77</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Song</surname><given-names>S</given-names></name>
+<name><surname>Honjo</surname><given-names>S</given-names></name>
+<name><surname>Jin</surname><given-names>J</given-names></name>
+<name><surname>Chang</surname><given-names>SS</given-names></name>
+<name><surname>Scott</surname><given-names>AW</given-names></name>
+<name><surname>Chen</surname><given-names>Q</given-names></name>
+<etal/>
+</person-group><article-title>The Hippo Coactivator YAP1 Mediates EGFR Overexpression and Confers Chemoresistance in Esophageal Cancer</article-title><source>Clin Cancer Res</source><year>2015</year><volume>21</volume><fpage>2580</fpage><lpage>90</lpage><pub-id pub-id-type="doi">10.1158/1078-0432.CCR-14-2191</pub-id><pub-id pub-id-type="pmid">25739674</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R78">
+        <label>78</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Galli</surname><given-names>GG</given-names></name>
+<name><surname>Carrara</surname><given-names>M</given-names></name>
+<name><surname>Yuan</surname><given-names>WC</given-names></name>
+<name><surname>Valdes-Quezada</surname><given-names>C</given-names></name>
+<name><surname>Gurung</surname><given-names>B</given-names></name>
+<name><surname>Pepe-Mooney</surname><given-names>B</given-names></name>
+<etal/>
+</person-group><article-title>YAP Drives Growth by Controlling Transcriptional Pause Release from Dynamic Enhancers</article-title><source>Mol Cell</source><year>2015</year><volume>60</volume><fpage>328</fpage><lpage>37</lpage><pub-id pub-id-type="doi">10.1016/j.molcel.2015.09.001</pub-id><pub-id pub-id-type="pmid">26439301</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R79">
+        <label>79</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Lee</surname><given-names>DH</given-names></name>
+<name><surname>Park</surname><given-names>JO</given-names></name>
+<name><surname>Kim</surname><given-names>TS</given-names></name>
+<name><surname>Kim</surname><given-names>SK</given-names></name>
+<name><surname>Kim</surname><given-names>TH</given-names></name>
+<name><surname>Kim</surname><given-names>MC</given-names></name>
+<etal/>
+</person-group><article-title>LATS-YAP/TAZ controls lineage specification by regulating TGFbeta signaling and Hnf4alpha expression during liver development</article-title><source>Nat Commun</source><year>2016</year><volume>7</volume><elocation-id>11961</elocation-id><pub-id pub-id-type="doi">10.1038/ncomms11961</pub-id><pub-id pub-id-type="pmid">27358050</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R80">
+        <label>80</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Nayar</surname><given-names>U</given-names></name>
+<name><surname>Cohen</surname><given-names>O</given-names></name>
+<name><surname>Kapstad</surname><given-names>C</given-names></name>
+<name><surname>Cuoco</surname><given-names>MS</given-names></name>
+<name><surname>Waks</surname><given-names>AG</given-names></name>
+<name><surname>Wander</surname><given-names>SA</given-names></name>
+<etal/>
+</person-group><article-title>Acquired HER2 mutations in ER(+) metastatic breast cancer confer resistance to estrogen receptor-directed therapies</article-title><source>Nat Genet</source><year>2019</year><volume>51</volume><fpage>207</fpage><lpage>16</lpage><pub-id pub-id-type="pmid">30531871</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R81">
+        <label>81</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Fan</surname><given-names>M</given-names></name>
+<name><surname>Lu</surname><given-names>W</given-names></name>
+<name><surname>Che</surname><given-names>J</given-names></name>
+<name><surname>Kwiatkowski</surname><given-names>NP</given-names></name>
+<name><surname>Gao</surname><given-names>Y</given-names></name>
+<name><surname>Seo</surname><given-names>HS</given-names></name>
+<etal/>
+</person-group><article-title>Covalent disruptor of YAP-TEAD association suppresses defective Hippo signaling</article-title><source>Elife</source><year>2022</year><volume>11</volume><pub-id pub-id-type="doi">10.7554/eLife.78810</pub-id><pub-id pub-id-type="pmid">36300789</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R82">
+        <label>82</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Hagenbeek</surname><given-names>TJ</given-names></name>
+<name><surname>Zbieg</surname><given-names>JR</given-names></name>
+<name><surname>Hafner</surname><given-names>M</given-names></name>
+<name><surname>Mroue</surname><given-names>R</given-names></name>
+<name><surname>Lacap</surname><given-names>JA</given-names></name>
+<name><surname>Sodir</surname><given-names>NM</given-names></name>
+<etal/>
+</person-group><article-title>An allosteric pan-TEAD inhibitor blocks oncogenic YAP/TAZ signaling and overcomes KRAS G12C inhibitor resistance</article-title><source>Nat Cancer</source><year>2023</year><volume>4</volume><fpage>812</fpage><lpage>28</lpage><pub-id pub-id-type="doi">10.1038/s43018-023-00577-0</pub-id><pub-id pub-id-type="pmid">37277530</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R83">
+        <label>83</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Pobbati</surname><given-names>AV</given-names></name>
+<name><surname>Han</surname><given-names>X</given-names></name>
+<name><surname>Hung</surname><given-names>AW</given-names></name>
+<name><surname>Weiguang</surname><given-names>S</given-names></name>
+<name><surname>Huda</surname><given-names>N</given-names></name>
+<name><surname>Chen</surname><given-names>GY</given-names></name>
+<etal/>
+</person-group><article-title>Targeting the Central Pocket in Human Transcription Factor TEAD as a Potential Cancer Therapeutic Strategy</article-title><source>Structure</source><year>2015</year><volume>23</volume><fpage>2076</fpage><lpage>86</lpage><pub-id pub-id-type="doi">10.1016/j.str.2015.09.009</pub-id><pub-id pub-id-type="pmid">26592798</pub-id>
+</element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <boxed-text id="BX1" position="float">
+      <caption>
+        <title>Statement of Significance</title>
+      </caption>
+      <p>Transcriptional reprogramming mediated by upregulation of the TEAD coactivator VGLL1 confers resistance to estrogen receptor degraders in breast cancer but provides alternative therapeutic options for this clinically important patient group.</p>
+    </boxed-text>
+    <fig position="float" id="F1">
+      <label>Figure 1</label>
+      <caption>
+        <title>Mapping altered epigenetic landscapes in fulvestrant-resistant breast cancer identifies VGLL1.</title>
+        <p><bold>A</bold>, Ratio of H3K27ac in MCF7-FULVR versus MCF7 cells at gene promoters in a window of ± 1.5 kb centred on the transcriptional start site. <bold>B</bold>, Genome browser view of H3K27ac ChIP-seq signal at the VGLL1, VGLL3 and GREB1 genes. <bold>C</bold>, RNA-seq data showing upregulated genes (red, Padj &lt; 0.01, log2 FC &gt; 2) and downregulated genes (blue, Padj &lt; 0.01, log2 FC &lt; -2) in FULVR relative to MCF7 cells. <bold>D</bold>, Protein lysates prepared from MCF7 and FULVR cells were immunoblotted for the indicated proteins. Protein lysates were prepared from FULVR cells cultured in the presence of 100 nM fulvestrant. <bold>E</bold>, RT-qPCR using RNA prepared from MCF7 and T47D cells following addition of 100 nM fulvestrant for 24 hours (* = p&lt;0.05). <bold>F</bold>, Cells were transfected with ESR1 siRNA or a non-targeting siRNA. RNAs prepared 48 hours after transfection were used for RT-qPCR. *P&lt;0.05 (Student’s t-test, two-tailed). Data are presented as mean + s.e.m. *P&lt;0.05 (Student’s t-test, two-tailed). <bold>G-H</bold>, RNA-scope was performed using a probe for VGLL1 in matched pre- and post-fulvestrant treated patient samples. Representative images show the results for matched samples from one patient. Nuclei were visualised with DAPI, and individual VGLL1 mRNA molecules detected with Cy5-labelled probes. P=0.03 (one-tailed Wilcoxon signed rank test). Scale bar, 10µm.</p>
+      </caption>
+      <graphic xlink:href="EMS199202-f001" position="float"/>
+    </fig>
+    <fig position="float" id="F2">
+      <label>Figure 2</label>
+      <caption>
+        <title>VGLL1 is recruited to TEAD4 binding regions in fulvestrant-resistant MCF7 cells.</title>
+        <p><bold>A</bold>, Venn diagram showing overlap between TEAD4 ChIP-seq peaks in MCF7 and FULVR cells. Top-most enriched transcription factor motifs are shown. <bold>B</bold>, Correlation between VGLL1 and TEAD4 occupancy at TEAD4 peaks in FULVR cells. P-value was calculated using the Spearman test; r<sub>s</sub>, Spearman’s correlation coefficient. <bold>C</bold>, Heatmap showing TEAD4 and VGLL1 binding at TEAD4 peaks common to MCF7 and FULVR (shared) and unique peaks in each cell line, in a window of ± 2kb around the peak centre. <bold>D</bold>, VGLL1 binding is enriched at TEAD4 peaks in FULVR cells. Binding enrichment was calculated as VGLL1-TEAD4 co-binding over the mean expected value after generating random permutations of the TEAD4 peaks (Chi-squared test p-value &lt;0.0001). <bold>E</bold>, Average normalized ChIP-seq signal of TEAD4, VGLL1 and H3K27ac centred at TEAD4 peaks in FULVR cells. <bold>F</bold>, Average ChIP-seq signal of H3K27ac on VGLL1 peaks divided in quartiles based on the peak coverage in FULVR cells. <bold>G</bold>, Genome browser view of VGLL1, TEAD4 and H3K27ac ChIP-seq signal, together with the RNA-seq signal in MCF7 and FULVR cells at TEAD target genes.</p>
+      </caption>
+      <graphic xlink:href="EMS199202-f002" position="float"/>
+    </fig>
+    <fig position="float" id="F3">
+      <label>Figure 3</label>
+      <caption>
+        <title>VGLL1 facilitates development of resistance to fulvestrant.</title>
+        <p><bold>A</bold>, MCF7-FULVR cells were transfected with two independent VGLL1 siRNAs. Growth was determined with the SRB assay five days after transfection. Data are mean ± s.e.m of n=6 independent wells. Results of one representative experiment are shown; similar results were obtained in two additional independent experiments. * P&lt;0.05 (Mann-Whitney test, two tailed). Also shown are expression levels of VGLL1 following siVGLL1 transfection (n=3, *p&lt;0.05 (Student’s t-test, two-tailed)). <bold>B</bold>, The synergistic activation mediator (SAM) uses a modified, catalytically dead Cas9 (dCas9), together with a sgRNA targeting to a specific gene promoter, for transcriptional activation of endogenous genes(<xref rid="R57" ref-type="bibr">57</xref>). A sgRNA targeted to bp -156 to -134 of the VGLL1 gene, was identified from the sgRNA list in ref.(<xref rid="R57" ref-type="bibr">57</xref>). <bold>C</bold>, MCF7-ActCas9-VGLL1 cells and MCF7-ActCas9-Vector cells were cultured with 100 nM fulvestrant and cell confluency was measured using Incucyte live cell imaging. Data show mean ± sem of n=9 representative images. <bold>D</bold>, RNA prepared from the indicated cells was used for RT-qPCR (mean ± sem; n=3). <bold>E</bold>, Immunoblotting of cell lysates prepared from the indicated cell lines. VGLL1-FULVR-100 and VGLL1-FULVR-1000 are fulvestrant resistant cell lines derived from the parental MCF7 ActCas9-VGLL1 cell line after continuous culturing in the presence of either 100 nM or 1000 nM fulvestrant, respectively. <bold>F</bold>, Growth of the indicated cell lines treated with increasing concentrations of fulvestrant to a maximum of 1 µM, for five days. Cell growth was estimated using the SRB assay and is shown as percentage relative to vehicle (n=6). Half maximum inhibitory concentration (IC<sub>50</sub>) is indicated. <bold>G</bold>, MCF7 ActCas9-VGLL1-FULVR cells were transfected with siVGLL1 and growth assessed as in <bold>A</bold>. Data are mean ± s.e.m of n=6. One representative experiment is shown; similar results were obtained in two additional independent experiments. * P&lt;0.05 (Mann-Whitney test, two tailed). RT-qPCR for VGLL1 is also shown (n=3, *p&lt;0.05 (Student’s t-test, two-tailed)). <bold>H</bold>, Venn diagram comparing differentially expressed genes in MCF7-FULVR and MCF7-ActCas9-VGLL1-FULVR cells. 5,749 genes differentially expressed (padj&lt;0.05) between MCF-FULVR and fulvestrant-sensitive MCF7 cells. 2,241 differential genes were identified in MCF7-ActCas9-VGLL1-FULVR-1 versus MCF7-ActCas9-VGLL1. There were 6,923 differential genes in MCF7-ActCas9-VGLL1-FULVR-2 relative to MCF7-ActCas9-VGLL1 cells.</p>
+      </caption>
+      <graphic xlink:href="EMS199202-f003" position="float"/>
+    </fig>
+    <fig position="float" id="F4">
+      <label>Figure 4</label>
+      <caption>
+        <title>Genes upregulated in fulvestrant-resistant breast cancer cells depend on VGLL1 transcriptional activity.</title>
+        <p><bold>A</bold>, Genes predicted as VGLL1 targets in FULVR cells are more highly expressed in FULVR cells than in MCF7 cells. Genes were segregated into those with no VGLL1 peaks, and those with 2-4 and ≥5 VGLL1 peaks. The y-axis shows the log2 fold change in gene expression determined from RNA-seq in FULVR cells versus the parental MCF7 cells. ****P&lt;0.0001 (Mann-Whitney test, two tailed). <bold>B</bold>, Genes activated by VGLL1 (n = 762) are over-expressed in FULVR cells relative to MCF7 cells, compared to not-VGLL1 targets (n = 8,932). VGLL1-activated genes and not-VGLL1 targets were determined by RNA-seq in FULVR cells transfected with VGLL1 siRNAs. The VGLL1-activated genes were defined as genes downregulated by VGLL1 siRNAs (P&lt;0.0001 (Mann-Whitney test, two tailed)). <bold>C</bold>, Normalized average H3K27ac signal on the promoters of VGLL1 activated genes in FULVR cells and MCF7 cells. <bold>D</bold>, VGLL1-activated genes (n = 762) are more highly expressed in FULVR cells than the not-VGLL1 targets (n = 8,932). The y-axis shows normalized gene expression values from RNA-seq. P&lt;0.0001 (Mann-Whitney test, two tailed). <bold>E</bold>, GO molecular function sets enriched in VGLL1-activated genes. <bold>F</bold>, RNA-seq data represented as a volcano plot for the comparison between FULVR vs MCF7 cells. <bold>G</bold>, RT-qPCR was performed using RNA prepared from the indicated cell lines. Gene expression was normalized to GAPDH expression and is shown as log2 fold difference relative to expression in MCF7 ActCas9-Vector cells.</p>
+      </caption>
+      <graphic xlink:href="EMS199202-f004" position="float"/>
+    </fig>
+    <fig position="float" id="F5">
+      <label>Figure 5</label>
+      <caption>
+        <title>VGLL1 induces EGFR expression and sensitivity to EGFR inhibition in FULVR cells.</title>
+        <p><bold>A</bold>, Genome browser view of VGLL1 and TEAD4 ChIP-seq signal at the EGFR gene and EGFR enhancer (highlighted). <bold>B</bold>, ChIP-qPCR for TEAD4, VGLL1 and H3K27ac in MCF7 ActCas9-Vector, MCF7 ActCas9-VGLL1 and MCF7 ActCas9-VGLL1-FULVR cells showing VGLL1 and TEAD4 binding at the EGFR enhancer together with EGFR enhancer activation exclusively in FULVR cells. The CTGF -8.3kb region was used as a negative control for VGLL1/TEAD4 binding. <bold>C</bold>, RT-qPCR for EGFR in the indicated MCF7-ActCas9 cells (n=3, *p&lt;0.05 (Student’s t-test, two-tailed)). <bold>D</bold>, Immunoblotting for EGFR and downstream EGFR signalling proteins showing EGFR up-regulation and activation of the EGFR pathway in MCF7 ActCas9-VGLL1-FULVR cells. <bold>E</bold>, RT-qPCR for dCAS9, VGLL1 and EGFR in MCF7 ActCas9-VGLL1-FULVR cells transfected with two independent dCAS9 siRNAs show reduction in VGLL1 and EGFR expression. <bold>F</bold>, Growth of the indicated MCF7-ActCas9 cells treated with increasing concentrations of the EGFR inhibitor erlotinib (0.05 µM to 12.5 µM) for 5 days. Growth is shown as percentage relative to vehicle treatment. <bold>G</bold>, Western blot of EGFR and the downstream EGFR signalling proteins in the indicated MCF7 ActCas9 cell lines treated with erlotinib at the indicated concentrations (24 h). <bold>H</bold>, Model for a mechanism by which inhibition of ER activity and concomitant VGLL1 induction drive EGFR expression in fulvestrant-resistant breast cancer cells, to promote cell survival and growth. <bold>I</bold>, EGFR ranks as the most significantly co-expressed gene with VGLL1 in breast cancer patients from METABRIC and is also the highest ranked protein correlated with VGLL1 in breast cancer from TCGA Firehose legacy cohort. In each case the top 3 highest ranked genes are shown. The ranking and correlations were generated from cBioportal (accessed 15/12/2022).</p>
+      </caption>
+      <graphic xlink:href="EMS199202-f005" position="float"/>
+    </fig>
+    <fig position="float" id="F6">
+      <label>Figure 6</label>
+      <caption>
+        <title>Verteporfin inhibits VGLL1 transcriptional activity and resensitises breast cancer cells to fulvestrant.</title>
+        <p><bold>A</bold>, VP impairs the growth of FULVR cells. Growth in the indicated FULVR cells treated with increasing concentrations of VP is shown as percentage of growth relative to vehicle. <bold>B</bold>, ChIP-qPCR for VGLL1 and TEAD4 in MCF7-FULVR cells showing reduced VGLL1 binding at the target genes in the presence of VP (2µM, 24 h). The y-axis shows DNA enrichment calculated as the percentage of input. <bold>C</bold>, Volcano plot of RNA-seq data (from n=4 biological replicates) showing upregulated genes (red, adjusted P&lt;0.01, log2 (fold change) &gt; 1) and downregulated genes (blue, adjusted P&lt;0.01, log2 (fold change) &lt; -1) in MCF7-FULVR cells treated with VP, (2µM, 24 h) compared to vehicle (DMSO). <bold>D</bold>, RT-qPCR in MCF7-FULVR cells treated with VP (2µM, 24 h) showing that VP selectively downregulates the expression VGLL1 targets, while the expression of the not-VGLL1 target (APEX1) is not affected by VP. <bold>E</bold>, Genes downregulated by VP are highly enriched in VGLL1 peaks. The y-axis shows the number of VGLL1 peaks over the expected value after generating random permutations of the VGLL1 peaks showing that the top-most downregulated genes after VP treatment in FULVR cells (n = 631) have significantly higher number of VGLL1 peaks compared to the bottom genes not differentially expressed by VP (n = 631). Data are presented as box-and-whiskers plots (whiskers extend from the 5th to the 95th percentile; the box extends from the 25th to the 75th percentile; the line within the box represents the median). **** P&lt;0.0001 (Mann-Whitney test, two tailed). <bold>F</bold>, Genome browser view of VGLL1 and TEAD4 normalized ChIP-seq signal and normalized RNA-seq signal in FULVR cells showing representative examples of VGLL1 activated genes (direct VGLL1 targets) and not-VGLL1 targets. <bold>G</bold>, VGLL1 activated genes (n = 762) are preferentially downregulated by VP compared to not-VGLL1 targets (n = 8,932). The y-axis shows fold change in gene expression from RNA-seq between VP versus DMSO treatment in MCF7-FULVR cells. ****P&lt;0.0001 (Mann-Whitney test, two tailed). <bold>H</bold>, Breast cancer patients with higher VGLL1 expression display increased levels of expression of the VGLL1 activated genes compared to patients with lower VGLL1 expression. Patients from the METABRIC breast cancer dataset were stratified according to high (top quantile, n=495) or low (bottom quantile, n=495) VGLL1 expression levels. Data are presented as in <bold>E</bold>. ****P&lt;0.0001 (Mann-Whitney test, two tailed). <bold>I</bold>, Kaplan–Meier plot representing the percentage of metastasis-free survival in patients with ER+ breast cancer patients treated with endocrine therapies showing that patients with higher expression of the VGLL1 activated genes signature display lower survival rates (log-rank Mantel-Cox test). <bold>J</bold>, Tumor growth curves for mice bearing the KCC_P_3837 FulvR clone 2 (VGLL1 high) PDX model, treated as shown. Simple linear regression shows that slopes in the combination arm is significantly (*** = p &lt;0.0001) different from each of those in vehicle, fulvestrant or verteporfin treatment arms. <bold>K</bold>, Mean tumor volumes at 6 weeks; dots show sizes of the individual tumors. * = two-tailed unpaired T test, P &lt; 0.05; ** = p &lt;0.005.</p>
+      </caption>
+      <graphic xlink:href="EMS199202-f006" position="float"/>
+    </fig>
+  </floats-group>
+</article>

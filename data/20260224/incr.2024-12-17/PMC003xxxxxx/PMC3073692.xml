@@ -1,0 +1,1845 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Archiving and Interchange DTD v2.3 20070202//EN" "archivearticle.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">9500169</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">20475</journal-id>
+      <journal-id journal-id-type="nlm-ta">Neurobiol Dis</journal-id>
+      <journal-title>Neurobiology of disease</journal-title>
+      <issn pub-type="ppub">0969-9961</issn>
+      <issn pub-type="epub">1095-953X</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">21220015</article-id>
+      <article-id pub-id-type="pmc">3073692</article-id>
+      <article-id pub-id-type="doi">10.1016/j.nbd.2011.01.012</article-id>
+      <article-id pub-id-type="manuscript">NIHMS264156</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Update on the Pathology of Dystonia</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Standaert</surname>
+            <given-names>David G.</given-names>
+          </name>
+        </contrib>
+        <aff id="A1">Center for Neurodegeneration and Experimental Therapeutics University of Alabama at Birmingham</aff>
+      </contrib-group>
+      <author-notes>
+        <corresp id="CR1">
+Address Correspondence to: D.G. Standaert Department of Neurology University of Alabama at Birmingham 1719 6<sup>th</sup> Birmingham, AL, 35294, USA Ave. South. Phone +1-205-996-6329 Fax +1-205-996-6329 <email>dstandaert@uab.edu</email>
+</corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>20</day>
+        <month>1</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>8</day>
+        <month>1</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>5</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>1</day>
+        <month>5</month>
+        <year>2012</year>
+      </pub-date>
+      <volume>42</volume>
+      <issue>2</issue>
+      <fpage>148</fpage>
+      <lpage>151</lpage>
+      <permissions>
+        <license>
+          <p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P1">Dystonia is a clinical syndrome with sustained muscle contraction, twisting, and abnormal postures. A number of different genetic forms have been defined, but most cases are sporadic in nature and of uncertain cause. Relatively few cases of dystonia have been studied pathologically. In primary dystonias, where dystonia is the main symptom, most reports describe little or no detectable neuropathology, although changes in brainstem neurons have been described in some cases. Secondary dystonias are associated with degenerative or destructive diseases of the nervous system; the pathology may be located in the basal ganglia, but in some cases the primary pathological changes are found in the cerebellum or cerebellar outflow pathways, suggesting both regions may be involved in the pathogenesis of dystonic symptoms. Overall the number of well-documented pathological cases available for study are few, and there is an urgent need for additional postmortem studies.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>dystonia</kwd>
+        <kwd>dopamine</kwd>
+        <kwd>basal ganglia</kwd>
+        <kwd>brainstem</kwd>
+        <kwd>cerebellum</kwd>
+        <kwd>DYT1</kwd>
+        <kwd>postmortem</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <p id="P2">Dystonia is a clinical syndrome, identified by its characteristic features: sustained muscle contractions, twisting, and abnormal postures . Collectively, the dystonias are relatively common disorders. They produce substantial disability, and from a therapeutic perspective the available treatments are for the most part unsatisfactory. In view of the frequency and burdensome nature of dystonias, the amount of data available on the pathological features of dystonia is surprisingly limited. Even in genetically defined forms of the disorder there are at most a few cases which have been closely studied, and there is much still to be learned about the structural features of dystonia.</p>
+    <sec id="S1">
+      <title>Primary and Secondary Dystonias</title>
+      <p id="P3">From an etiological perspective, the dystonias are often divided into <italic>primary secondary</italic> and forms . The meaning of these terms has evolved in recent years, as concepts of the etiology and pathophysiology of dystonia have changed. In much of the early literature, primary dystonia is used to describe dystonic symptoms where no cause could be identified, and was sometimes used interchangeably with the term “idiopathic” , while the term secondary was used to describe dystonia which was a symptom of another recognizable disorder. With the discovery of the genetic basis of several of the dystonic disorders, this formulation has become more problematic: a disorder with a genetic cause is not idiopathic, even if there are no obvious neuropathological features. More recent efforts at defining primary dystonia have emphasized the lack of apparent neuropathology, rather than lack of identifiable etiology , but even this approach is challenged by technologic advances such as diffusion tensor magnetic resonance imaging, which are expanding the ability to detect structural changes .</p>
+      <p id="P4">The most recent attempts to define the class of “primary” dystonias have placed the emphasis on the clinical features, rather than pathological changes, by defining “primary pure dystonia” as a disorder in which “torsion dystonia is the only clinical sign (apart from tremor), and there is no identifiable exogenous cause,” and allowing for subcategories of “primary-plus” dystonia (with myoclonus or parkinsonism) and paroxysmal dystonias . While this is helpful from a clinical perspective, it doesn’t fully address the issues either; all dystonias have an etiology which is based in altered brain function, it is merely that in many cases our present ability to detect the changes is insufficient. Clearly this is an area which is still in evolution, and as the underlying structural and functional nature of dystonia is elucidated, the nomenclature will be improved. For the purposes of discussion the clinically-based approach will be used where possible, but it is important to keep in mind that the terminology used in older publications may differ.</p>
+    </sec>
+    <sec id="S2">
+      <title>Genetics and the Etiology of Dystonia</title>
+      <p id="P5">In recent years, a great deal has been learned about the genetics of dystonia, and a large number of genes which can give rise to this movement disorder have been identified . Concerted efforts to identify the functions of the dystonia genes (many of which are identified using a “DYT” nomenclature) have yielded substantial insights into the molecular and cellular processes involved . These cover a remarkable spectrum, including proteins which appear to function as chaperones (DYT1), transcription factors (DYT6), structural proteins (DYT11) and enzymes involved in dopamine biosynthesis (DYT5). An important gap in knowledge, however, is how these molecular and cellular changes give rise to the systems-level changes in brain function responsible for abnormal patterns of movements.</p>
+      <p id="P6">One of critical “missing links” in the effort to understand dystonia is the paucity of information regarding the neuropathology of human dystonia. In the case of primary dystonias there are clearly functional abnormalities of the brain and likely corresponding structural abnormalities, at least at the synaptic level, but there is little anatomical evidence for this. In the secondary dystonias there is, by definition, clear evidence of neuropathology but in many cases it is not clear which pathology, and which structures, are responsible for the dystonic features.</p>
+      <p id="P7">These are not novel observations. In 1970 Dr. Edward Tarlov published an article titled “On the problem of the pathology of spasmodic torticolis in man,” in which he noted that the “pathophysiological basis … (of dystonia)… has never been convincingly demonstrated” . A conservative view would be that the same statement is still true today. This lack of information is a substantial barrier to progress, because our limited understanding of the neuropathology of the human disease makes it difficult to develop targeted therapeutic strategies. It also impairs our ability to assess the authenticity of animal models, a point noted by Tarlov .</p>
+    </sec>
+    <sec id="S3">
+      <title>Pathology of Primary Dystonias</title>
+      <p id="P8">The most common forms of primary dystonia are focal, affecting a single body part such as the neck, and come on during adult life. Most of these are sporadic, meaning that there is no clear family history and they are not caused by any of the known dystonia genes. A minority of cases of primary focal dystonia will have a positive family history or early onset suggesting a genetic origin; among the genes presently known, the most frequent to present in this way would be DYT6, caused by mutations in the transcription factor THAP1 . Additional features which may distinguish DYT6 from sporadic focal dystonias are that the dystonia is more likely to begin in brachial, rather than cervical, muscles, to become generalized, and to include speech involvement .</p>
+      <p id="P9">Generalized primary dystonia is less common than primary focal dystonia, and more likely to be genetic in origin. Among patients with young onset of generalized dystonia (before age 28) the most common cause is DYT1 dystonia, the result of a mutation in the TOR1A gene encoding the protein torsinA . This is the prototypical primary dystonia, sometimes called Oppenheim’s dystonia or, in the older literature, dystonia musculorum deformans (DMD, a term which likely was applied to other kinds of generalized dystonia, as well).</p>
+      <sec id="S4">
+        <title>Pathological studies in Sporadic Primary Dystonia</title>
+        <p id="P10">The number of reported autopsy studies of primary dystonia is very limited, numbering no more than a dozen all together, and the evidence for detectable neuropathological changes is mixed and inconsistent. The gene for DYT1 dystonia was not identified until 1998, so reports published prior to this lack information on genetic status and cannot be distinguished from dystonia unrelated to DYT1 except by clinical phenotype. <xref ref-type="bibr" rid="R48">Zweig et al. (1988)</xref> reported postmortem studies in four patients with primary dystonia, and found numerous neurofibrillary tangles and mild neuronal loss within the locus ceruleus in one case (described as DMD) and moderate-to-severe neuronal loss in several brainstem nuclei, including the substantia nigra pars compacta, locus ceruleus, raphe nuclei, and pedunculopontine nucleus in another case described as Meige syndrome; the remaining two cases (another with DMD and one with spasmodic torticollis) appeared normal . <xref ref-type="bibr" rid="R20">Gibb et al. (1988)</xref> reported four cases of “primary” dystonia, three with cranial dystonia (blepharospasm with oromandibular dystonia in two, blepharospasm alone in one), and one patient oromandibular dystonia with retrocollis. They observed an angioma in the dorsal pons in the patient with isolated blepharospasm, while the other cases examined were normal . <xref ref-type="bibr" rid="R25">Kulisevsky et al. (1988)</xref> examined a case of Meige syndrome, and found mild to moderate cell loss in the zona compacta of the substantia nigra, locus ceruleus, midbrain tectum, and dentate nucleus of the cerebellum and frequent Lewy bodies in pigmented nuclei of the brainstem . Similar findings of Lewy pathology in Meige syndrome were reported by <xref ref-type="bibr" rid="R28">Mark et at. (1994)</xref>, but they also observed that there was evidence for decreased dopamine turnover and suggested that the underlying disorder was a form of Lewy Body disease rather than a primary dystonia .</p>
+      </sec>
+      <sec id="S5">
+        <title>Pathology of Genetic Dystonias: DYT1 and DYT6</title>
+        <p id="P11">While studies of genetically-identified dystonia might seem to offer less heterogeneity than studies of sporadic dystonia, there a little data of this kind available. In <xref ref-type="bibr" rid="R44">2002, Walker et al</xref>. reported a study in which they examined the localization of torsinA in a single case of DYT1-related dystonia, as well as several additional cases of non-DYT1 dystonia . They did not find any abnormalities in the brain localization of torsinA, nor were there any other significant pathological abnormalities appreciated. Rostasy et al. subsequently reported pathological studies in five additional cases of genetically confirmed DTY1 dystonia, and noted that there was no evidence of neuronal loss, inflammation, or alteration in the localization of torsinA . They did note some apparent differences in the size and density of dopamine neurons in the substantia nigra in the DYT1 cases, but these observations were based on subjective rating scales and not on rigorous stereological methods, and must be interpreted cautiously. Furakawa et al. described a neuropathological and neurochemical study in a single case of DYT1 dystonia, and found no pathological abnormalities and a normal content of dopamine except for a modest reduction in the rostral putamen . A subsequent neurochemical study in three cases showed a similar lack of alterations in dopamine content in DYT1 dystonia, although there were changes in dopamine metabolites suggestive of altered dopamine turnover .</p>
+        <p id="P12">The most significant pathological abnormalities reported in DYT1 dystonia were described by <xref ref-type="bibr" rid="R31">McNaught et al (2004)</xref> . Studying four cases of genetically-confirmed DYT1 dystonia and using antibodies with high sensitivity for ubiquitin, they observed ubiquitin and torsinA-positive inclusions within neurons in the brainstem, including the pedunculopontine tegmental nucleus, the cuneiform nucleus, and periaqueductal gray matter . They also found tau and ubiquitin-positive inclusions in pigmented neurons in the substantia nigra and locus ceruleus. These observations have not yet been replicated by others, in part because there are few other cases of DYT1 dystonia for which suitable postmortem specimens are available. Interestingly, similar inclusions have been observed in several, but not all, of the DYT1 mouse models produced by transgenic expression of human torsinA , and functional MRI studies have also implicated the region of the pedunculopontine nucleus as part of the dystonia “metabolic network” .</p>
+        <p id="P13">As noted above, DYT6 dystonia has recently been found to be caused by mutations in the transcription factor THAP1 and may be a cause of apparently sporadic dystonia . Despite the interest in this disorder, there are so far no pathological studies of the condition. Similarly, there are no reported pathological studies of myoclonus-dystonia (DYT11) or of the paroxysmal dystonias.</p>
+      </sec>
+      <sec id="S6">
+        <title>Spasmodic dysphonia</title>
+        <p id="P14">Spasmodic dysphonia is a form of focal dystonia affecting the vocal cords. Very few cases of spasmodic dysphonia have been studied pathologically, but a recent report of two cases described small clusters of inflammation in the reticular formation as well as mild degeneration and loss of pigmentation in the substantia nigra and locus ceruleus . These findings differ from an earlier report, which emphasized changes in the parenchyma and vessel walls which included clusters of mineral deposition, in the posterior limb of the internal capsule, putamen, globus pallidus and cerebellum . While the small number of cases available for study limits the strength of conclusions that can be drawn, the commonality of brainstem pathology in both DYT1 and at least some of the cases of spasmodic dysphonia is intriguing.</p>
+      </sec>
+      <sec id="S7">
+        <title>Dopa-Responsive Dystonia</title>
+        <p id="P15">Dopa-responsive dystonia (DRD) is a group of disorders in which there is clinical improvement with dopaminergic therapies. The best described member of this group is “Dopa-responsive dystonia with diurnal fluctuation” (Segawa disease, sometimes termed DYT5) which has distinctive clinical and pathological features . It is classified as a primary dystonia in the subgroup of “primary-plus” dystonias because the dystonia may be accompanied by parkinsonism. The clinical symptoms are early in onset, appearing in children or teenagers. They develop a variable dystonia which is typically mild during the morning, and worsens as the day progresses.</p>
+        <p id="P16">The diagnostic feature of all forms of DRD is a rapid and nearly complete resolution of symptoms with treatment with levodopa. Genetically, the majority of DRD is caused by mutations in the enzyme GTP cyclohydrolase (GTPCH1), required for synthesis of the biopterin cofactors needed for the activity of tyrosine hydroxylase (TH), the rate limiting enzyme for dopamine biosynthesis. A small number of DRD cases have been traced to defects in other enzymes related to biopterin synthesis, or to defects in TH itself . Autopsy studies in DRD have shown a marked depigmentation of neurons in the substantia nigra which is not surprising considering the underlying defect in the synthesis of dopamine, the source of neuromelanin . In one case the presence of Lewy bodies in substantia nigra neurons was described , but in most other reported pathological studies neither inclusions nor neurodegeneration were observed.</p>
+      </sec>
+    </sec>
+    <sec id="S8">
+      <title>Pathological Changes in Secondary and Heredodegenerative Dystonias</title>
+      <sec id="S9">
+        <title>Basal Ganglia lesions</title>
+        <p id="P17">Dystonia is a feature of a wide range of destructive and degenerative disorders of the nervous system, and a correspondingly broad range of brain structures have been implicated in the pathogenesis of these symptoms. In a large series of cases of basal ganglia lesions studied with neuroimaging, dystonia was observed in about a third , but this report did not include pathological assessment. Perhaps the most common secondary or degenerative cause of dystonia is Parkinson disease , in which degeneration of dopaminergic neurons is well known but more recently it has become clear that there are pathological changes in many other structures from brainstem to cerebral cortex . Dystonia has also been found in other cases with obvious basal ganglia pathology, including basal ganglia infarction after cardiac arrest , pallido-luisian atropy , lesions of the globus pallidus and striatal degeneration associated with glutaric acidaemia .</p>
+      </sec>
+      <sec id="S10">
+        <title>Cerebellar and brainstem Lesions</title>
+        <p id="P18">While many examples of dystonia are linked to basal ganglia pathology, there is also a substantial literature supported the ability of cerebellar and brainstem pathology to induce dystonic symptoms. LeDoux and Brady reported a case series and extensive review of the literature of secondary forms of cervical dystonia . They observed that the majority of the cases had lesions in the cerebellum or associated with brainstem afferents to the cerebellum. In contrast, lesions isolated to the basal ganglia were uncommon in this series. Cervical dystonia was also reported to be triggered by tumors of the posterior fossa , and in some the dystonia improved after treatment of the tumor. There have also been a number of reports of dystonia in familial forms of ataxia, where the degeneration appears to be limited to the cerebellum and brainstem . While the number of pathologically studied cases of dystonia associated with cerebellar lesions remains small, there is sufficient data available to call into question the traditional view of dystonia as a basal ganglia disease .</p>
+      </sec>
+    </sec>
+    <sec sec-type="conclusions" id="S11">
+      <title>Conclusions</title>
+      <p id="P19">While dystonia is a relatively common symptom, the number of cases of human dystonia which have been studied neuropathologically remain extremely few. There are several reasons for the paucity of specimens, which include the fact that dystonia is only rarely the immediate cause of death for an individual, along with cultural barriers to autopsy studies in populations such as Ashkenazi and Amish peoples, which have account for the largest numbers of DYT1 and other genetic dystonias.</p>
+      <p id="P20">Nevertheless, several aspects seem clear. In DYT1 dystonia, the archetypal “primary” dystonia, there is no overt neurodeneration or cell loss. The only apparent pathologic change are the brainstem inclusions reported by McNaught et al. ; it will be important to validate this finding in additional examples of the disease, but observation of similar changes in some mouse models of DYT1 dystonia and the potential overlap with the findings in spasmodic dysphonia is intriguing. In dopa-responsive dystonia the pathology is predictable, in that there is a loss of neuromelanin consistent with the genetic defects in dopamine biosynthesis.</p>
+      <p id="P21">Perhaps the most interesting findings from pathological studies of dystonia are those from secondary forms, from which inferences about pathophysiology may be drawn. There is no question that dystonia may be observed after lesions which primarily involve the basal ganglia. There is also, however, a strong case to be made that dystonia can be associated with lesions which primarily affect the cerebellum or cerebellar outflow. Whether this reflects interactions between the basal ganglia and cerebellum which are more extensive than commonly appreciated, or perhaps reflects a diversity of underlying mechanisms which may give rise to similar dystonic symptoms .</p>
+      <p id="P22">The published pathological studies also make it clear that one of the most pressing needs in the field is additional well-characterized post-mortem specimens available for pathological study. While much has been learned through clinical and imaging observations during life, there are critically important questions about the pathogenesis of dystonia which can only be answered by careful pathological study.</p>
+    </sec>
+  </body>
+  <back>
+    <ack id="S12">
+      <title>Acknowledgement</title>
+      <p>This work was support by USPHS grant P50NS037409.</p>
+    </ack>
+    <fn-group>
+      <fn id="FN1">
+        <p content-type="publisher-disclaimer" id="P23">This is a PDF file of an unedited manuscript that has been accepted for publication. As a service to our customers we are providing this early version of the manuscript. The manuscript will undergo copyediting, typesetting, and review of the resulting proof before it is published in its final citable form. Please note that during the production process errors may be discovered which could affect the content, and all legal disclaimers that apply to the journal pertain.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="R1">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Albanese</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Asmus</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Bhatia</surname>
+              <given-names>KP</given-names>
+            </name>
+            <name>
+              <surname>Elia</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Elibol</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Filippini</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Gasser</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Krauss</surname>
+              <given-names>JK</given-names>
+            </name>
+            <name>
+              <surname>Nardocci</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Newton</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Valls-Sole</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>EFNS guidelines on diagnosis and treatment of primary dystonias</article-title>
+          <source>Eur J Neurol</source>
+          <year>2011</year>
+          <volume>18</volume>
+          <fpage>5</fpage>
+          <lpage>18</lpage>
+          <pub-id pub-id-type="pmid">20482602</pub-id>
+        </citation>
+      </ref>
+      <ref id="R2">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Argyelan</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Carbon</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Niethammer</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ulug</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Voss</surname>
+              <given-names>HU</given-names>
+            </name>
+            <name>
+              <surname>Bressman</surname>
+              <given-names>SB</given-names>
+            </name>
+            <name>
+              <surname>Dhawan</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Eidelberg</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Cerebellothalamocortical connectivity regulates penetrance in dystonia</article-title>
+          <source>J Neurosci</source>
+          <year>2009</year>
+          <volume>29</volume>
+          <fpage>9740</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">19657027</pub-id>
+        </citation>
+      </ref>
+      <ref id="R3">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Augood</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <name>
+              <surname>Hollingsworth</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Albers</surname>
+              <given-names>DS</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Leung</surname>
+              <given-names>J-C</given-names>
+            </name>
+            <name>
+              <surname>Muller</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Klein</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Breakefield</surname>
+              <given-names>XO</given-names>
+            </name>
+            <name>
+              <surname>Standaert</surname>
+              <given-names>DG</given-names>
+            </name>
+          </person-group>
+          <article-title>Dopamine transmission in DYT1 dystonia: a biochemical and autoradiographical study</article-title>
+          <source>Neurology</source>
+          <year>2002</year>
+          <volume>Vol. 59</volume>
+          <fpage>445</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">12177384</pub-id>
+        </citation>
+      </ref>
+      <ref id="R4">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bhatia</surname>
+              <given-names>KP</given-names>
+            </name>
+            <name>
+              <surname>Marsden</surname>
+              <given-names>CD</given-names>
+            </name>
+          </person-group>
+          <article-title>The behavioural and motor consequences of focal lesions of the basal ganglia in man</article-title>
+          <source>Brain</source>
+          <year>1994</year>
+          <volume>117</volume>
+          <issue>Pt 4</issue>
+          <fpage>859</fpage>
+          <lpage>76</lpage>
+          <pub-id pub-id-type="pmid">7922471</pub-id>
+        </citation>
+      </ref>
+      <ref id="R5">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boylan</surname>
+              <given-names>KB</given-names>
+            </name>
+            <name>
+              <surname>Chin</surname>
+              <given-names>JH</given-names>
+            </name>
+            <name>
+              <surname>DeArmond</surname>
+              <given-names>SJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Progressive dystonia following resuscitation from cardiac arrest</article-title>
+          <source>Neurology</source>
+          <year>1990</year>
+          <volume>Vol. 40</volume>
+          <fpage>1458</fpage>
+          <lpage>61</lpage>
+          <pub-id pub-id-type="pmid">2392236</pub-id>
+        </citation>
+      </ref>
+      <ref id="R6">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Braak</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Del Tredici</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Invited Article: Nervous system pathology in sporadic Parkinson disease</article-title>
+          <source>Neurology</source>
+          <year>2008</year>
+          <volume>70</volume>
+          <fpage>1916</fpage>
+          <lpage>25</lpage>
+          <pub-id pub-id-type="pmid">18474848</pub-id>
+        </citation>
+      </ref>
+      <ref id="R7">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Breakefield</surname>
+              <given-names>XO</given-names>
+            </name>
+            <name>
+              <surname>Blood</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Hallett</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hanson</surname>
+              <given-names>PI</given-names>
+            </name>
+            <name>
+              <surname>Standaert</surname>
+              <given-names>DG</given-names>
+            </name>
+          </person-group>
+          <article-title>The pathophysiological basis of dystonias</article-title>
+          <source>Nat Rev Neurosci</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>222</fpage>
+          <lpage>34</lpage>
+          <pub-id pub-id-type="pmid">18285800</pub-id>
+        </citation>
+      </ref>
+      <ref id="R8">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bressman</surname>
+              <given-names>SB</given-names>
+            </name>
+            <name>
+              <surname>de Leon</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Brin</surname>
+              <given-names>MF</given-names>
+            </name>
+            <name>
+              <surname>Risch</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Shale</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Burke</surname>
+              <given-names>RE</given-names>
+            </name>
+            <name>
+              <surname>Greene</surname>
+              <given-names>PE</given-names>
+            </name>
+            <name>
+              <surname>Fahn</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Inheritance of idiopathic torsion dystonia among Ashkenazi Jews</article-title>
+          <source>Adv Neurol</source>
+          <year>1988</year>
+          <volume>50</volume>
+          <fpage>45</fpage>
+          <lpage>56</lpage>
+          <pub-id pub-id-type="pmid">3400502</pub-id>
+        </citation>
+      </ref>
+      <ref id="R9">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bressman</surname>
+              <given-names>SB</given-names>
+            </name>
+            <name>
+              <surname>Raymond</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Fuchs</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Heiman</surname>
+              <given-names>GA</given-names>
+            </name>
+            <name>
+              <surname>Ozelius</surname>
+              <given-names>LJ</given-names>
+            </name>
+            <name>
+              <surname>Saunders-Pullman</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Mutations in THAP1 (DYT6) in early-onset dystonia: a genetic screening study</article-title>
+          <source>Lancet Neurol</source>
+          <year>2009</year>
+          <volume>8</volume>
+          <fpage>441</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="pmid">19345147</pub-id>
+        </citation>
+      </ref>
+      <ref id="R10">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Carbon</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Eidelberg</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Abnormal structure-function relationships in hereditary dystonia</article-title>
+          <source>Neuroscience</source>
+          <year>2009</year>
+          <volume>164</volume>
+          <fpage>220</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">19162138</pub-id>
+        </citation>
+      </ref>
+      <ref id="R11">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Carbon</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kingsley</surname>
+              <given-names>PB</given-names>
+            </name>
+            <name>
+              <surname>Tang</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Bressman</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Eidelberg</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Microstructural white matter changes in primary torsion dystonia</article-title>
+          <source>Mov Disord</source>
+          <year>2008</year>
+          <volume>23</volume>
+          <fpage>234</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">17999428</pub-id>
+        </citation>
+      </ref>
+      <ref id="R12">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chow</surname>
+              <given-names>CW</given-names>
+            </name>
+            <name>
+              <surname>Frerman</surname>
+              <given-names>FE</given-names>
+            </name>
+            <name>
+              <surname>Goodman</surname>
+              <given-names>SI</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>GK</given-names>
+            </name>
+            <name>
+              <surname>Pitt</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Danks</surname>
+              <given-names>DM</given-names>
+            </name>
+          </person-group>
+          <article-title>Striatal degeneration in glutaric acidaemia type II</article-title>
+          <source>Acta Neuropathol</source>
+          <year>1989</year>
+          <volume>Vol. 77</volume>
+          <fpage>554</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="pmid">2718749</pub-id>
+        </citation>
+      </ref>
+      <ref id="R13">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cohen</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Fahn</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Frucht</surname>
+              <given-names>SJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Severe cervical dystonia in pathologically proven Parkinson’s disease and dementia</article-title>
+          <source>Mov Disord</source>
+          <year>2003</year>
+          <volume>Vol. 18</volume>
+          <fpage>1381</fpage>
+          <lpage>2</lpage>
+          <pub-id pub-id-type="pmid">14639686</pub-id>
+        </citation>
+      </ref>
+      <ref id="R14">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dickson</surname>
+              <given-names>DW</given-names>
+            </name>
+            <name>
+              <surname>Braak</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Duda</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Duyckaerts</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Gasser</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Halliday</surname>
+              <given-names>GM</given-names>
+            </name>
+            <name>
+              <surname>Hardy</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Leverenz</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Del Tredici</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Wszolek</surname>
+              <given-names>ZK</given-names>
+            </name>
+            <name>
+              <surname>Litvan</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <article-title>Neuropathological assessment of Parkinson’s disease: refining the diagnostic criteria</article-title>
+          <source>Lancet Neurol</source>
+          <year>2009</year>
+          <volume>8</volume>
+          <fpage>1150</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">19909913</pub-id>
+        </citation>
+      </ref>
+      <ref id="R15">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Eidelberg</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Metabolic brain networks in neurodegenerative disorders: a functional imaging approach</article-title>
+          <source>Trends Neurosci</source>
+          <year>2009</year>
+          <volume>32</volume>
+          <fpage>548</fpage>
+          <lpage>57</lpage>
+          <pub-id pub-id-type="pmid">19765835</pub-id>
+        </citation>
+      </ref>
+      <ref id="R16">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fahn</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>The varied clinical expressions of dystonia</article-title>
+          <source>Neurol Clin</source>
+          <year>1984</year>
+          <volume>2</volume>
+          <fpage>541</fpage>
+          <lpage>54</lpage>
+          <pub-id pub-id-type="pmid">6398404</pub-id>
+        </citation>
+      </ref>
+      <ref id="R17">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Friedman</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Standaert</surname>
+              <given-names>DG</given-names>
+            </name>
+          </person-group>
+          <article-title>Dystonia and its disorders</article-title>
+          <source>Neurol Clin</source>
+          <year>2001</year>
+          <volume>19</volume>
+          <fpage>681</fpage>
+          <lpage>705</lpage>
+          <fpage>vii</fpage>
+          <pub-id pub-id-type="pmid">11532649</pub-id>
+        </citation>
+      </ref>
+      <ref id="R18">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fuchs</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Gavarini</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Saunders-Pullman</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Raymond</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Ehrlich</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>Bressman</surname>
+              <given-names>SB</given-names>
+            </name>
+            <name>
+              <surname>Ozelius</surname>
+              <given-names>LJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Mutations in the THAP1 gene are responsible for DYT6 primary torsion dystonia</article-title>
+          <source>Nat Genet</source>
+          <year>2009</year>
+          <volume>41</volume>
+          <fpage>286</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">19182804</pub-id>
+        </citation>
+      </ref>
+      <ref id="R19">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Furukawa</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Hornykiewicz</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Fahn</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kish</surname>
+              <given-names>SJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Striatal dopamine in early-onset primary torsion dystonia with the DYT1 mutation</article-title>
+          <source>Neurology</source>
+          <year>2000</year>
+          <volume>Vol. 54</volume>
+          <fpage>1193</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="pmid">10720299</pub-id>
+        </citation>
+      </ref>
+      <ref id="R20">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gibb</surname>
+              <given-names>WR</given-names>
+            </name>
+            <name>
+              <surname>Lees</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Marsden</surname>
+              <given-names>CD</given-names>
+            </name>
+          </person-group>
+          <article-title>Pathological report of four patients presenting with cranial dystonias</article-title>
+          <source>Mov Disord</source>
+          <year>1988</year>
+          <volume>3</volume>
+          <fpage>211</fpage>
+          <lpage>21</lpage>
+          <pub-id pub-id-type="pmid">3193961</pub-id>
+        </citation>
+      </ref>
+      <ref id="R21">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Granata</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Schiavo</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Warner</surname>
+              <given-names>TT</given-names>
+            </name>
+          </person-group>
+          <article-title>TorsinA and dystonia: from nuclear envelope to synapse</article-title>
+          <source>J Neurochem</source>
+          <year>2009</year>
+          <volume>109</volume>
+          <fpage>1596</fpage>
+          <lpage>609</lpage>
+          <pub-id pub-id-type="pmid">19457118</pub-id>
+        </citation>
+      </ref>
+      <ref id="R22">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Grötzsch</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Pizzolato</surname>
+              <given-names>G-P</given-names>
+            </name>
+            <name>
+              <surname>Ghika</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Schorderet</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Vingerhoets</surname>
+              <given-names>FJ</given-names>
+            </name>
+            <name>
+              <surname>Landis</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Burkhard</surname>
+              <given-names>PR</given-names>
+            </name>
+          </person-group>
+          <article-title>Neuropathology of a case of dopa-responsive dystonia associated with a new genetic locus, DYT14</article-title>
+          <source>Neurology</source>
+          <year>2002</year>
+          <volume>Vol. 58</volume>
+          <fpage>1839</fpage>
+          <lpage>42</lpage>
+        </citation>
+      </ref>
+      <ref id="R23">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jinnah</surname>
+              <given-names>HA</given-names>
+            </name>
+            <name>
+              <surname>Hess</surname>
+              <given-names>EJ</given-names>
+            </name>
+          </person-group>
+          <article-title>A new twist on the anatomy of dystonia: the basal ganglia and the cerebellum?</article-title>
+          <source>Neurology</source>
+          <year>2006</year>
+          <volume>Vol. 67</volume>
+          <fpage>1740</fpage>
+          <lpage>1</lpage>
+          <pub-id pub-id-type="pmid">17130402</pub-id>
+        </citation>
+      </ref>
+      <ref id="R24">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Krauss</surname>
+              <given-names>JK</given-names>
+            </name>
+            <name>
+              <surname>Seeger</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Jankovic</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Cervical dystonia associated with tumors of the posterior fossa</article-title>
+          <source>Mov Disord</source>
+          <year>1997</year>
+          <volume>Vol. 12</volume>
+          <fpage>443</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">9159745</pub-id>
+        </citation>
+      </ref>
+      <ref id="R25">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kulisevsky</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Marti</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Ferrer</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Tolosa</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>Meige syndrome: neuropathology of a case</article-title>
+          <source>Mov Disord</source>
+          <year>1988</year>
+          <volume>Vol. 3</volume>
+          <fpage>170</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="pmid">3221903</pub-id>
+        </citation>
+      </ref>
+      <ref id="R26">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Le Ber</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Clot</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Vercueil</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Camuzat</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Vièmont</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Benamar</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>De Liége</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Ouvrard-Hernandez</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Pollak</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Stevanin</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Brice</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Dürr</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Predominant dystonia with marked cerebellar atrophy: a rare phenotype in familial dystonia</article-title>
+          <source>Neurology</source>
+          <year>2006</year>
+          <volume>Vol. 67</volume>
+          <fpage>1769</fpage>
+          <lpage>73</lpage>
+          <pub-id pub-id-type="pmid">17130408</pub-id>
+        </citation>
+      </ref>
+      <ref id="R27">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>LeDoux</surname>
+              <given-names>MS</given-names>
+            </name>
+            <name>
+              <surname>Brady</surname>
+              <given-names>KA</given-names>
+            </name>
+          </person-group>
+          <article-title>Secondary cervical dystonia associated with structural lesions of the central nervous system</article-title>
+          <source>Mov Disord</source>
+          <year>2003</year>
+          <volume>Vol. 18</volume>
+          <fpage>60</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">12518301</pub-id>
+        </citation>
+      </ref>
+      <ref id="R28">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mark</surname>
+              <given-names>MH</given-names>
+            </name>
+            <name>
+              <surname>Sage</surname>
+              <given-names>JI</given-names>
+            </name>
+            <name>
+              <surname>Dickson</surname>
+              <given-names>DW</given-names>
+            </name>
+            <name>
+              <surname>Heikkila</surname>
+              <given-names>RE</given-names>
+            </name>
+            <name>
+              <surname>Manzino</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Schwarz</surname>
+              <given-names>KO</given-names>
+            </name>
+            <name>
+              <surname>Duvoisin</surname>
+              <given-names>RC</given-names>
+            </name>
+          </person-group>
+          <article-title>Meige syndrome in the spectrum of Lewy body disease</article-title>
+          <source>Neurology</source>
+          <year>1994</year>
+          <volume>Vol. 44</volume>
+          <fpage>1432</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="pmid">8058144</pub-id>
+        </citation>
+      </ref>
+      <ref id="R29">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Marsden</surname>
+              <given-names>CD</given-names>
+            </name>
+            <name>
+              <surname>Quinn</surname>
+              <given-names>NP</given-names>
+            </name>
+          </person-group>
+          <article-title>The dystonias</article-title>
+          <source>BMJ</source>
+          <year>1990</year>
+          <volume>300</volume>
+          <fpage>139</fpage>
+          <lpage>44</lpage>
+          <pub-id pub-id-type="pmid">2105790</pub-id>
+        </citation>
+      </ref>
+      <ref id="R30">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Marsden</surname>
+              <given-names>CD</given-names>
+            </name>
+            <name>
+              <surname>Rothwell</surname>
+              <given-names>JC</given-names>
+            </name>
+          </person-group>
+          <article-title>The physiology of idiopathic dystonia</article-title>
+          <source>Can J Neurol Sci</source>
+          <year>1987</year>
+          <volume>14</volume>
+          <fpage>521</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">3315155</pub-id>
+        </citation>
+      </ref>
+      <ref id="R31">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McNaught</surname>
+              <given-names>KSP</given-names>
+            </name>
+            <name>
+              <surname>Kapustin</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Jackson</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Jengelley</surname>
+              <given-names>T-A</given-names>
+            </name>
+            <name>
+              <surname>Jnobaptiste</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Shashidharan</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Perl</surname>
+              <given-names>DP</given-names>
+            </name>
+            <name>
+              <surname>Pasik</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Olanow</surname>
+              <given-names>CW</given-names>
+            </name>
+          </person-group>
+          <article-title>Brainstem pathology in DYT1 primary torsion dystonia</article-title>
+          <source>Ann Neurol</source>
+          <year>2004</year>
+          <volume>Vol. 56</volume>
+          <fpage>540</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">15455404</pub-id>
+        </citation>
+      </ref>
+      <ref id="R32">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Münchau</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Mathen</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Cox</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Quinn</surname>
+              <given-names>NP</given-names>
+            </name>
+            <name>
+              <surname>Marsden</surname>
+              <given-names>CD</given-names>
+            </name>
+            <name>
+              <surname>Bhatia</surname>
+              <given-names>KP</given-names>
+            </name>
+          </person-group>
+          <article-title>Unilateral lesions of the globus pallidus: report of four patients presenting with focal or segmental dystonia</article-title>
+          <source>J Neurol Neurosurg Psychiatr</source>
+          <year>2000</year>
+          <volume>Vol. 69</volume>
+          <fpage>494</fpage>
+          <lpage>8</lpage>
+        </citation>
+      </ref>
+      <ref id="R33">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Olsson</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Brunk</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Lindvall</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Eeg-Olofsson</surname>
+              <given-names>O</given-names>
+            </name>
+          </person-group>
+          <article-title>Dopa-responsive dystonia with depigmentation of the substantia nigra and formation of Lewy bodies</article-title>
+          <source>Journal of the Neurological Sciences</source>
+          <year>1992</year>
+          <volume>Vol. 112</volume>
+          <fpage>90</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="pmid">1469445</pub-id>
+        </citation>
+      </ref>
+      <ref id="R34">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ozelius</surname>
+              <given-names>LJ</given-names>
+            </name>
+            <name>
+              <surname>Hewett</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name>
+              <surname>Page</surname>
+              <given-names>CE</given-names>
+            </name>
+            <name>
+              <surname>Bressman</surname>
+              <given-names>SB</given-names>
+            </name>
+            <name>
+              <surname>Kramer</surname>
+              <given-names>PL</given-names>
+            </name>
+            <name>
+              <surname>Shalish</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>de Leon</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Brin</surname>
+              <given-names>MF</given-names>
+            </name>
+            <name>
+              <surname>Raymond</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Corey</surname>
+              <given-names>DP</given-names>
+            </name>
+            <name>
+              <surname>Fahn</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Risch</surname>
+              <given-names>NJ</given-names>
+            </name>
+            <name>
+              <surname>Buckler</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Gusella</surname>
+              <given-names>JF</given-names>
+            </name>
+            <name>
+              <surname>Breakefield</surname>
+              <given-names>XO</given-names>
+            </name>
+          </person-group>
+          <article-title>The early-onset torsion dystonia gene (DYT1) encodes an ATP-binding protein</article-title>
+          <source>Nat Genet</source>
+          <year>1997</year>
+          <volume>17</volume>
+          <fpage>40</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">9288096</pub-id>
+        </citation>
+      </ref>
+      <ref id="R35">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rivest</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Quinn</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Marsden</surname>
+              <given-names>CD</given-names>
+            </name>
+          </person-group>
+          <article-title>Dystonia in Parkinson’s disease, multiple system atrophy, and progressive supranuclear palsy</article-title>
+          <source>Neurology</source>
+          <year>1990</year>
+          <volume>Vol. 40</volume>
+          <fpage>1571</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">2215950</pub-id>
+        </citation>
+      </ref>
+      <ref id="R36">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rostasy</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Augood</surname>
+              <given-names>SJ</given-names>
+            </name>
+            <name>
+              <surname>Hewett</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name>
+              <surname>Leung</surname>
+              <given-names>JC-o</given-names>
+            </name>
+            <name>
+              <surname>Sasaki</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Ozelius</surname>
+              <given-names>LJ</given-names>
+            </name>
+            <name>
+              <surname>Ramesh</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Standaert</surname>
+              <given-names>DG</given-names>
+            </name>
+            <name>
+              <surname>Breakefield</surname>
+              <given-names>XO</given-names>
+            </name>
+            <name>
+              <surname>Hedreen</surname>
+              <given-names>JC</given-names>
+            </name>
+          </person-group>
+          <article-title>TorsinA protein and neuropathology in early onset generalized dystonia with GAG deletion</article-title>
+          <source>Neurobiology of Disease</source>
+          <year>2003</year>
+          <volume>Vol. 12</volume>
+          <fpage>11</fpage>
+          <lpage>24</lpage>
+          <pub-id pub-id-type="pmid">12609485</pub-id>
+        </citation>
+      </ref>
+      <ref id="R37">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Segawa</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Nomura</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Nishiyama</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Autosomal dominant guanosine triphosphate cyclohydrolase I deficiency (Segawa disease)</article-title>
+          <source>Ann Neurol</source>
+          <year>2003</year>
+          <volume>54</volume>
+          <issue>Suppl 6</issue>
+          <fpage>S32</fpage>
+          <lpage>45</lpage>
+          <pub-id pub-id-type="pmid">12891652</pub-id>
+        </citation>
+      </ref>
+      <ref id="R38">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shashidharan</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Sandu</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Potla</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Armata</surname>
+              <given-names>IA</given-names>
+            </name>
+            <name>
+              <surname>Walker</surname>
+              <given-names>RH</given-names>
+            </name>
+            <name>
+              <surname>McNaught</surname>
+              <given-names>KS</given-names>
+            </name>
+            <name>
+              <surname>Weisz</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Sreenath</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Brin</surname>
+              <given-names>MF</given-names>
+            </name>
+            <name>
+              <surname>Olanow</surname>
+              <given-names>CW</given-names>
+            </name>
+          </person-group>
+          <article-title>Transgenic mouse model of early-onset DYT1 dystonia</article-title>
+          <source>Hum Mol Genet</source>
+          <year>2005</year>
+          <volume>14</volume>
+          <fpage>125</fpage>
+          <lpage>33</lpage>
+          <pub-id pub-id-type="pmid">15548549</pub-id>
+        </citation>
+      </ref>
+      <ref id="R39">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Simonyan</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Ludlow</surname>
+              <given-names>CL</given-names>
+            </name>
+            <name>
+              <surname>Vortmeyer</surname>
+              <given-names>AO</given-names>
+            </name>
+          </person-group>
+          <article-title>Brainstem pathology in spasmodic dysphonia</article-title>
+          <source>Laryngoscope</source>
+          <year>2010</year>
+          <volume>Vol. 120</volume>
+          <fpage>121</fpage>
+          <lpage>4</lpage>
+          <pub-id pub-id-type="pmid">19795469</pub-id>
+        </citation>
+      </ref>
+      <ref id="R40">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Simonyan</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Tovar-Moll</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Ostuni</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Hallett</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kalasinsky</surname>
+              <given-names>VF</given-names>
+            </name>
+            <name>
+              <surname>Lewin-Smith</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Rushing</surname>
+              <given-names>EJ</given-names>
+            </name>
+            <name>
+              <surname>Vortmeyer</surname>
+              <given-names>AO</given-names>
+            </name>
+            <name>
+              <surname>Ludlow</surname>
+              <given-names>CL</given-names>
+            </name>
+          </person-group>
+          <article-title>Focal white matter changes in spasmodic dysphonia: a combined diffusion tensor imaging and neuropathological study</article-title>
+          <source>Brain</source>
+          <year>2008</year>
+          <volume>131</volume>
+          <fpage>447</fpage>
+          <lpage>59</lpage>
+          <pub-id pub-id-type="pmid">18083751</pub-id>
+        </citation>
+      </ref>
+      <ref id="R41">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Swoboda</surname>
+              <given-names>KJ</given-names>
+            </name>
+            <name>
+              <surname>Hyland</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <article-title>Diagnosis and treatment of neurotransmitter-related disorders</article-title>
+          <source>Neurol Clin</source>
+          <year>2002</year>
+          <volume>20</volume>
+          <fpage>1143</fpage>
+          <lpage>61</lpage>
+          <fpage>viii</fpage>
+          <pub-id pub-id-type="pmid">12616685</pub-id>
+        </citation>
+      </ref>
+      <ref id="R42">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tanabe</surname>
+              <given-names>LM</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>CE</given-names>
+            </name>
+            <name>
+              <surname>Alagem</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Dauer</surname>
+              <given-names>WT</given-names>
+            </name>
+          </person-group>
+          <article-title>Primary dystonia: molecules and mechanisms</article-title>
+          <source>Nature Reviews Neurology</source>
+          <year>2010</year>
+          <volume>Vol. 5</volume>
+          <fpage>598</fpage>
+          <lpage>609</lpage>
+        </citation>
+      </ref>
+      <ref id="R43">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tarlov</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>On the problem of the pathology of spasmodic torticollis in man</article-title>
+          <source>J Neurol Neurosurg Psychiatr</source>
+          <year>1970</year>
+          <volume>Vol. 33</volume>
+          <fpage>457</fpage>
+          <lpage>63</lpage>
+          <pub-id pub-id-type="pmid">5505672</pub-id>
+        </citation>
+      </ref>
+      <ref id="R44">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Walker</surname>
+              <given-names>RH</given-names>
+            </name>
+            <name>
+              <surname>Brin</surname>
+              <given-names>MF</given-names>
+            </name>
+            <name>
+              <surname>Sandu</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Good</surname>
+              <given-names>PF</given-names>
+            </name>
+            <name>
+              <surname>Shashidharan</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>TorsinA immunoreactivity in brains of patients with DYT1 and non-DYT1 dystonia</article-title>
+          <source>Neurology</source>
+          <year>2002</year>
+          <volume>Vol. 58</volume>
+          <fpage>120</fpage>
+          <lpage>4</lpage>
+          <pub-id pub-id-type="pmid">11781416</pub-id>
+        </citation>
+      </ref>
+      <ref id="R45">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wooten</surname>
+              <given-names>GF</given-names>
+            </name>
+            <name>
+              <surname>Lopes</surname>
+              <given-names>MB</given-names>
+            </name>
+            <name>
+              <surname>Harris</surname>
+              <given-names>WO</given-names>
+            </name>
+            <name>
+              <surname>Reagan</surname>
+              <given-names>TJ</given-names>
+            </name>
+            <name>
+              <surname>Vandenberg</surname>
+              <given-names>SR</given-names>
+            </name>
+          </person-group>
+          <article-title>Pallidoluysian atrophy: dystonia and basal ganglia functional anatomy</article-title>
+          <source>Neurology</source>
+          <year>1993</year>
+          <volume>Vol. 43</volume>
+          <fpage>1764</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">8414028</pub-id>
+        </citation>
+      </ref>
+      <ref id="R46">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xiao</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Bastian</surname>
+              <given-names>RW</given-names>
+            </name>
+            <name>
+              <surname>Perlmutter</surname>
+              <given-names>JS</given-names>
+            </name>
+            <name>
+              <surname>Racette</surname>
+              <given-names>BA</given-names>
+            </name>
+            <name>
+              <surname>Tabbal</surname>
+              <given-names>SD</given-names>
+            </name>
+            <name>
+              <surname>Karimi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Paniello</surname>
+              <given-names>RC</given-names>
+            </name>
+            <name>
+              <surname>Wszolek</surname>
+              <given-names>ZK</given-names>
+            </name>
+            <name>
+              <surname>Uitti</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Van Gerpen</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Simon</surname>
+              <given-names>DK</given-names>
+            </name>
+            <name>
+              <surname>Tarsy</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Hedera</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Truong</surname>
+              <given-names>DD</given-names>
+            </name>
+            <name>
+              <surname>Frei</surname>
+              <given-names>KP</given-names>
+            </name>
+            <name>
+              <surname>Dev Batish</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Blitzer</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Pfeiffer</surname>
+              <given-names>RF</given-names>
+            </name>
+            <name>
+              <surname>Gong</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>LeDoux</surname>
+              <given-names>MS</given-names>
+            </name>
+          </person-group>
+          <article-title>Novel THAP1 sequence variants in primary dystonia</article-title>
+          <source>Neurology</source>
+          <year>2010</year>
+          <volume>74</volume>
+          <fpage>229</fpage>
+          <lpage>38</lpage>
+          <pub-id pub-id-type="pmid">20083799</pub-id>
+        </citation>
+      </ref>
+      <ref id="R47">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yamamura</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Kuzuhara</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Kondo</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Yanagi</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Uchida</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Matsumine</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Mizuno</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <article-title>Clinical, pathologic and genetic studies on autosomal recessive early-onset parkinsonism with diurnal fluctuation</article-title>
+          <source>Parkinsonism &amp; Related Disorders</source>
+          <year>1998</year>
+          <volume>Vol. 4</volume>
+          <fpage>65</fpage>
+          <lpage>72</lpage>
+          <pub-id pub-id-type="pmid">18591091</pub-id>
+        </citation>
+      </ref>
+      <ref id="R48">
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zweig</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Hedreen</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Jankel</surname>
+              <given-names>WR</given-names>
+            </name>
+            <name>
+              <surname>Casanova</surname>
+              <given-names>MF</given-names>
+            </name>
+            <name>
+              <surname>Whitehouse</surname>
+              <given-names>PJ</given-names>
+            </name>
+            <name>
+              <surname>Price</surname>
+              <given-names>DL</given-names>
+            </name>
+          </person-group>
+          <article-title>Pathology in brainstem regions of individuals with primary dystonia</article-title>
+          <source>Neurology</source>
+          <year>1988</year>
+          <volume>Vol. 38</volume>
+          <fpage>702</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="pmid">3362365</pub-id>
+        </citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

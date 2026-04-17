@@ -1,0 +1,1609 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">7707242</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">365</journal-id>
+      <journal-id journal-id-type="nlm-ta">Alcohol Clin Exp Res</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Alcohol. Clin. Exp. Res.</journal-id>
+      <journal-title-group>
+        <journal-title>Alcoholism, clinical and experimental research</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0145-6008</issn>
+      <issn pub-type="epub">1530-0277</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">20659065</article-id>
+      <article-id pub-id-type="pmc">3563260</article-id>
+      <article-id pub-id-type="doi">10.1111/j.1530-0277.2010.01291.x</article-id>
+      <article-id pub-id-type="manuscript">NIHMS364558</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Acute Alcohol Intoxication Impairs the Hematopoietic Precursor Cell Response to Pneumococcal Pneumonia</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Raasch</surname>
+            <given-names>Caroline E.</given-names>
+          </name>
+          <degrees>Ph.D.</degrees>
+          <xref ref-type="aff" rid="A1">1</xref>
+          <xref ref-type="aff" rid="A2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhang</surname>
+            <given-names>Ping</given-names>
+          </name>
+          <degrees>M.D., Ph.D.</degrees>
+          <xref ref-type="aff" rid="A1">1</xref>
+          <xref ref-type="aff" rid="A2">2</xref>
+          <xref ref-type="aff" rid="A3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Siggins</surname>
+            <given-names>Robert W.</given-names>
+            <suffix>II</suffix>
+          </name>
+          <degrees>Ph.D.</degrees>
+          <xref ref-type="aff" rid="A1">1</xref>
+          <xref ref-type="aff" rid="A2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>LaMotte</surname>
+            <given-names>Lynn R.</given-names>
+          </name>
+          <degrees>Ph.D.</degrees>
+          <xref ref-type="aff" rid="A4">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Nelson</surname>
+            <given-names>Steve</given-names>
+          </name>
+          <degrees>M.D.</degrees>
+          <xref ref-type="aff" rid="A1">1</xref>
+          <xref ref-type="aff" rid="A2">2</xref>
+          <xref ref-type="aff" rid="A3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bagby</surname>
+            <given-names>Gregory J.</given-names>
+          </name>
+          <degrees>Ph.D.</degrees>
+          <xref ref-type="aff" rid="A1">1</xref>
+          <xref ref-type="aff" rid="A2">2</xref>
+          <xref ref-type="aff" rid="A3">3</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>1</label>Department of Physiology, Louisiana State University Health Sciences Center, New Orleans, LA 70112, USA</aff>
+      <aff id="A2"><label>2</label>Alcohol Research Center, Louisiana State University Health Sciences Center, New Orleans, LA 70112, USA</aff>
+      <aff id="A3"><label>3</label>Department of Medicine, Louisiana State University Health Sciences Center, New Orleans, LA 70112, USA</aff>
+      <aff id="A4"><label>4</label>Section of Pulmonary/Critical Care Medicine, School of Public Health, Louisiana State University Health Sciences Center, New Orleans, LA 70112, USA</aff>
+      <author-notes>
+        <corresp id="cor1"><bold>Address for Correspondence:</bold> Gregory J. Bagby, Department of Physiology, LSU Health Sciences Center, New Orleans, LA 70112-1393, Tel: (504) 568-6188, Fax: (504) 568-7899, <email>GBagby@lsuhsc.edu</email></corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>24</day>
+        <month>1</month>
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>12</month>
+        <year>2010</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>04</day>
+        <month>2</month>
+        <year>2013</year>
+      </pub-date>
+      <volume>34</volume>
+      <issue>12</issue>
+      <fpage>2035</fpage>
+      <lpage>2043</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <sec id="S1">
+          <title>Background</title>
+          <p id="P1">Alcohol abuse is associated with an increased incidence and severity of pneumonia. In both the general population and in individuals consuming excess alcohol, <italic>Streptococcus pneumoniae</italic> is the most frequent lung infection pathogen. Alcoholic patients with pneumonia frequently present with granulocytopenia, which is predictive of increased mortality. The mechanisms underlying this impaired granulopoietic response to pneumococcal pneumonia have yet to be elucidated.</p>
+        </sec>
+        <sec id="S2">
+          <title>Methods</title>
+          <p id="P2">Acute alcohol intoxication was induced in mice 30 minutes before intrapulmonary infection with <italic>Streptococcus pneumoniae</italic>. Bone marrow and blood samples were collected. Bone marrow cells were also isolated from naïve mice and treated <italic>in vitro</italic> with plasma from mice infected with <italic>S.pneumoniae</italic>.</p>
+        </sec>
+        <sec id="S3">
+          <title>Results</title>
+          <p id="P3">Alcohol intoxication impaired the pneumococcal-induced increase in granulocyte recruitment into the alveolar space, decreased bacterial clearance from the lung, and increased mortality. Pneumococcal pneumonia significantly increased bone marrow lineage<sup>−</sup>c-Kit<sup>+</sup>Sca-1<sup>+</sup> (LKS) cell number and colony forming unit – granulocytes and monocyte (CFU-GM) activity of these cells. Both enhanced proliferation of LKS cells and re-expression of Sca-1 surface protein on downstream progenitor cells bearing lineage<sup>−</sup>c-Kit<sup>+</sup>Sca-1<sup>−</sup> surface markers accounted for the expansion of marrow LSK cells during pneumonia. Alcohol intoxication impaired these two mechanisms of LKS cell population expansion and was associated with a relative granulocytopenia during pneumococcal lung infection.</p>
+        </sec>
+        <sec id="S4">
+          <title>Conclusions</title>
+          <p id="P4">Alcohol inhibits the hematopoietic precursor cell response to pneumonia which may serve as a mechanism underlying the granulocytopenia and impaired host defense in alcohol abusers with bacterial pneumonia.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>alcohol intoxication</kwd>
+        <kwd><italic>Streptococcus pneumoniae</italic> infections</kwd>
+        <kwd>hematopoietic progenitor cell</kwd>
+        <kwd>Sca-1 antigen</kwd>
+        <kwd>host-pathogen interactions</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source country="United States">National Institute on Alcohol Abuse and Alcoholism : NIAAA</funding-source>
+          <award-id>T32 AA007577 || AA</award-id>
+        </award-group>
+        <award-group>
+          <funding-source country="United States">National Institute on Alcohol Abuse and Alcoholism : NIAAA</funding-source>
+          <award-id>R21 AA017494 || AA</award-id>
+        </award-group>
+      </funding-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S5">
+      <title>Introduction</title>
+      <p id="P5">Excessive alcohol consumption predisposes the host to bacterial infections, particularly pneumonia, a leading cause of infectious death in the U.S. (<xref ref-type="bibr" rid="R16">Kung et al., 2008</xref>; <xref ref-type="bibr" rid="R18">MacGregor and Louria 1997</xref>; <xref ref-type="bibr" rid="R38">Zhang et al., 2008</xref>). About 35% to 40% of hospitalized patients with pneumonia, are diagnosed with alcohol use disorders (<xref ref-type="bibr" rid="R8">Dorff et al., 1973</xref>, <xref ref-type="bibr" rid="R37">Winterbauer et al., 1969</xref>). <italic>Streptococcus pneumoniae</italic> (<italic>S. pneumoniae</italic>), or pneumococcus, has been shown to be the most common pathogen causing pneumonia in both the general population and in alcohol abusing individuals (<xref ref-type="bibr" rid="R7">de Roux et al., 2006</xref>; <xref ref-type="bibr" rid="R26">Paganin et al., 2004</xref>). Alcoholic patients with pneumonia are characterized by more severe symptoms, frequent complications, and poorer outcomes (<xref ref-type="bibr" rid="R10">Fernandez-Sola et al., 1995</xref>; <xref ref-type="bibr" rid="R23">Musher et al., 2000</xref>; <xref ref-type="bibr" rid="R28">Ruiz et al., 1999</xref>; <xref ref-type="bibr" rid="R29">Saitz et al., 1997</xref>; <xref ref-type="bibr" rid="R30">Schmidt and De Lint, 1972</xref>). A prominent feature in alcoholic patients with pneumonia is granulocytopenia, a predictor of increased mortality (<xref ref-type="bibr" rid="R9">Feldman et al. 1989</xref>; <xref ref-type="bibr" rid="R18">MacGregor and Louria, 1997</xref>). The mechanisms underlying the impaired granulopoietic response to lung infection in alcohol abusers remains elusive.</p>
+      <p id="P6">In response to bacterial pneumonia, granulocytes are rapidly recruited from the circulation and the marginated pool into the lower respiratory tract. These recruited phagocytes are critical for eradication of invading pathogens (<xref ref-type="bibr" rid="R24">Nelson et al., 1995</xref>; <xref ref-type="bibr" rid="R25">Ozaki et al., 1989</xref>; <xref ref-type="bibr" rid="R41">Zhang et al., 2000</xref>). In order to support and reinforce the on-going neutrophil recruitment by the infected tissue, hematopoietic tissues accelerate both the release of mature granulocytes and the production of new granulocytes (<xref ref-type="bibr" rid="R6">Cronkite, 1988</xref>; <xref ref-type="bibr" rid="R19">Marsh et al., 1967</xref>; <xref ref-type="bibr" rid="R34">Terashima et al., 1996</xref>).</p>
+      <p id="P7">Alcohol abuse has been shown to damage hematopoietic tissues (<xref ref-type="bibr" rid="R14">Heermans, 1998</xref>; <xref ref-type="bibr" rid="R17">Liu, 1980</xref>). Disturbances in the granulopoietic activity of alcohol abusers include reduced number of granulocytes in bone marrow, vacuolated granulocytic precursor cells and defective granulocyte maturation (<xref ref-type="bibr" rid="R3">Ballard, 1980</xref>; <xref ref-type="bibr" rid="R15">Heidemann et al., 1981</xref>; <xref ref-type="bibr" rid="R17">Liu, 1980</xref>; <xref ref-type="bibr" rid="R21">McFarland and Libre, 1963</xref>; <xref ref-type="bibr" rid="R31">Seppa et al., 1993</xref>; <xref ref-type="bibr" rid="R36">Waller and Benohr, 1978</xref>). <italic>In vitro</italic> exposure of bone marrow cells to alcohol has been shown to suppress granulocyte colony formation (<xref ref-type="bibr" rid="R22">Meagher et al., 1982</xref>). While these observations suggest that alcohol may adversely affect steady state granulopoiesis, the effects of alcohol on the granulopoietic response to infection remain unclear.</p>
+      <p id="P8">All adult hematopoietic cells are derived from multipotent hematopoietic stem cells (HSCs). HSCs are commonly characterized by their surface antigens as lineage<sup>−</sup>c-Kit<sup>+</sup>Sca-1<sup>+</sup> (LKS) cells in the mouse. These cells lack lineage markers (lineage<sup>−</sup>), while expressing high levels of stem cell factor receptor (c-kit<sup>+</sup>) and stem cell antigen-1 (Sca-1<sup>+</sup>) (<xref ref-type="bibr" rid="R32">Spangrude et al., 1988</xref>). We have previously shown that the number of murine bone marrow LKS cells is rapidly increased in response to <italic>E.coli</italic> bacteremia (<xref ref-type="bibr" rid="R40">Zhang et al., 2008</xref>). While Sca-1 induction appears to be critical for the enhancement of myeloid lineage development during a systemic Gram-negative bacterial infection, it is unknown how the LKS cell population will respond to a Gram-positive pulmonary infection (<xref ref-type="bibr" rid="R32">Spangrude et al., 1988</xref>; <xref ref-type="bibr" rid="R38">Zhang et al., 2008</xref>).</p>
+      <p id="P9">Gram-positive and Gram-negative bacterial pathogens are known to stimulate host defense by different mechanisms (<xref ref-type="bibr" rid="R33">Takeuchi et al., 1999</xref>). Bacterial endotoxin (LPS) of Gram-negative bacteria primarily signals through TLR4 receptors. In contrast, Gram-positive bacterial products, such as peptidoglycan, utilize TLR2 receptors to activate the innate immune system. This study examined the hematopoietic precursor cell response to pneumococcal pneumonia, a Gram-positive infection to which alcohol abusers are more susceptible. Our data indicate that alcohol profoundly suppresses the LKS cell response to pneumococcal lung infection, which is associated with an attenuated circulatory granulocyte response and decreased marrow contribution to lung host defense. Alcohol intoxication also impaired bacterial clearance and increased mortality in mice with pneumococcal pneumonia.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="S6">
+      <title>Materials and Methods</title>
+      <sec id="S7">
+        <title>Animals</title>
+        <p id="P10">Male Balb/c mice (7–10 weeks old; Charles River, Wilmington, MA) weighing 21.8±1.6 g (mean ± SD) were maintained on a standard laboratory diet and housed in a specific pathogen free facility with a 12 h light/dark cycle. The experiments described here were preformed in adherence to the National Institutes of Health guidelines on the use of experimental animals and were approved by the Animal Care and Use Committee of Louisiana State University Health Sciences Center.</p>
+        <p id="P11">Acute alcohol intoxication was induced in mice by intraperitoneal (i.p.) injection of 20% alcohol in saline at a dose of 5 g/kg. Blood alcohol levels were 119.7 ± 1.3 mM, 106.3 ± 1.5 mM, 87.7 ± 3.6 mM, and 48.4 ± 3.5 mM, respectively, at 45 min, 90 min, 3 h, and 6 h post alcohol administration. Control mice were injected i.p. with an equal volume of saline. Thirty minutes later, mice were challenged intratracheally (i.t.) with 3×10<sup>6</sup> colony-forming units (CFUs) of live <italic>S. pneumoniae</italic> (serotype 3, strain 6303 from American Type Culture Collection, Rockville, MD; in 50 µl of saline/mouse) under isoflurane anesthesia. Control mice were injected i.t. with an equal volume of saline. The four experimental groups include: Saline (i.t. and i.p. saline), Alcohol (i.p. alcohol and i.t. saline), <italic>S. pneumoniae</italic> (i.t. saline and i.p. <italic>S. pneumoniae</italic>), and Alcohol/<italic>S.pneumoniae</italic> (i.p. alcohol and i.t. <italic>S.pneumoniae</italic>). The animals were sacrificed after i.t. challenge at time points indicated in each figure legend. Subgroups of mice also received 5-bromo-2-deoxyuridine (BrdU, 1 mg in 100 µl of PBS/mouse, BD PharMingen, San Diego, CA) intravenously via the penile vein either 18h prior to or at the same time as i.t. challenge. Upon sacrifice, heparinized blood was obtained by cardiac puncture. White blood cells (WBCs) were quantified under a light microscope with a hemacytometer. Wright-Giemsa stain was used to perform differential WBC counts on blood smear slides. Plasma was separated and stored at −80°C. Plasma used in cell culture experiments was filtered through a 0.45µM MILLEX® HA Syringe Filter (Millipore, Bedford, MA) prior to use. Peripheral blood mononuclear cells (PBMCs) were isolated using Lympholyte-Mammal density separation medium by the manufacturer’s protocols (Cedarlane, Homby, Ontario, Canada). To obtain bronchoalveolar lavage cells, lungs were surgically removed and lavaged with five 1mL washes of PBS containing 0.1% dextrose. Lung lavage cells were recovered by centrifugation (400g for 5min), washed, and quantified using a light microscope and hemacytometer. Femurs and tibias were collected and bone marrow cells were flushed with 2 ml PBS containing 2% bovine serum albumin (BSA, HyClone Laboratories, Logan, UT). Bone marrow cells were filtered through a 70 micron nylon mesh (Sefar America INC. Kansas City, MO). Erythrocytes were lysed with Purescript® RBC lysis solution (Gentra Systems, Valencia, CA). Remaining nucleated cells were quantified under a light microscope with a hemacytometer.</p>
+      </sec>
+      <sec id="S8">
+        <title>Culture of bacteria</title>
+        <p id="P12">For each experiment, <italic>S. pneumoniae</italic> was prepared as previously described (<xref ref-type="bibr" rid="R5">Boe et al., 2001</xref>). An inoculum of 2.8±0.35×10<sup>6</sup> (mean ± SEM) <italic>S. pneumoniae</italic> was administered intratracheally to mice.</p>
+        <p id="P13">Bacteria were quantified in the blood and lung tissue samples. Lungs were collected and homogenized with PBS (1:10 based on weight) using sterilized glass homogenizers driven by a NSI-12 Fractional Horsepower Motor (Bodine Electric Co., Chicago, IL). Serial 1:10 dilutions of blood or lung homogenates were prepared and cultured (100 µl sample suspension) on blood agar plates in triplicate. Bacterial colonies were quantified following overnight incubation at 37°C in a 5% CO<sub>2</sub> incubator.</p>
+      </sec>
+      <sec id="S9">
+        <title>Flow cytometric analysis</title>
+        <p id="P14">Nucleated bone marrow cells or isolated PBMCs suspended in RPMI-1640 (Invitrogen, Grand Island, NY) containing 2% fetal calf serum were prepared for flow cytometry as previously reported (<xref ref-type="bibr" rid="R40">Zhang et al., 2008</xref>). BrdU incorporation experiments were performed using a BD BrdU Flow Kit (BD PharMingen, San Diego, CA) and manufacturer’s protocols. Two color analyses of cell phenotypes and intracellular BrdU incorporation was performed on a FACSCalibur cytometer. Multiple color analysis of cell phenotypes and intracellular BrdU incorporation was performed on a FACSAria cytometer. For two and multi- color analysis, 20,000 cells and 500,000 cells were acquired, respectively. Sca-1 surface antigen density was quantified by measuring Sca-1 mean channel fluorescence (MCF). The number of LKS and lin<sup>−</sup>c-kit<sup>+</sup>Sca-1<sup>−</sup> cells per mouse was calculated by determining the total number of bone marrow cells harvested from each mouse on a hemocytometer and then multiplying this value by the percentages of LKS and lin<sup>−</sup>c-kit<sup>+</sup>Sca-1<sup>−</sup> cells obtained by flow cytometric analysis in each sample.</p>
+      </sec>
+      <sec id="S10">
+        <title>Sorting of bone marrow lin<sup>−</sup>c-kit<sup>+</sup>Sca-1<sup>−</sup> and LKS cells</title>
+        <p id="P15">Pooled nucleated bone marrow cells (~1 ×10<sup>8</sup> cells) were suspended in StemSpan serum-free medium (StemCell Technologies, Vancouver, BC, Canada). The staining procedure for cell surface makers was reported previously (<xref ref-type="bibr" rid="R38">Zhang et al., 2008</xref>). Sorting of marrow lin<sup>−</sup>c-kit<sup>+</sup>Sca-1<sup>−</sup> and LKS cells was performed on the FACSAria flow cytometer. The purity of sorted cell population was 97–100%.</p>
+      </sec>
+      <sec id="S11">
+        <title>In vitro culture of bone marrow lin<sup>−</sup>c-kit<sup>+</sup>Sca-1<sup>−</sup> cells</title>
+        <p id="P16">Sorted marrow lin<sup>−</sup>c-kit<sup>+</sup>Sca-1<sup>−</sup> cells from naive mice were plated into a 96-well plate at a density of 2.5 × 10<sup>4</sup> cells per well in 50µl StemSpan serum-free medium. Cells were cultured with an additional 50µL of filtered plasma obtained from mice 24h after pneumococcal infection in the absence and presence of alcohol intoxication. The cells were cultured at 37°C in an atmosphere of 5% CO<sub>2</sub> for 24 h. At the end of culture, cells were stained with fluorochrome-conjugated anti-mouse c-kit and Sca-1 antibodies. Flow cytometric analysis of live (propidium iodide negative) cells was conducted on a LSR-II flow cytometer.</p>
+      </sec>
+      <sec id="S12">
+        <title>ELISA measurement of plasma cytokines</title>
+        <p id="P17">Plasma tumor necrosis factor-α (TNF-α) and interferon-γ (IFN-γ) concentrations were measured using the Fluorokine Mouse TNF-α and IFN-γ Immunoassay Kits (R&amp;D Systems Inc., Minneapolis, MN).</p>
+      </sec>
+      <sec id="S13">
+        <title>Colony forming unit (CFU) assay</title>
+        <p id="P18">CFU-GM activity of sorted bone marrow lin<sup>−</sup>c-kit<sup>+</sup>Sca-1<sup>+</sup> and lin<sup>−</sup>c-kit<sup>+</sup>Sca-1<sup>−</sup> cells was determined by culturing cells on Methocult GF M3534 media (StemCell Technologies, Vancouver, Canada). One milliliter of Methocult™ GF M3534 media containing 100 sorted bone marrow LKS or lin<sup>−</sup>c-kit<sup>+</sup>Sca-1<sup>−</sup> cells was plated into a 35 mm Nunclon™ dish (Nunc, Rodkilde, Denmark). Each sample was cultured in quintuplicate for 7 days at 37°C in an atmosphere of 5% CO<sub>2</sub>. Colonies containing 50 or more cells were then enumerated.</p>
+      </sec>
+      <sec id="S14">
+        <title>Statistical analysis</title>
+        <p id="P19">Data are presented as mean ± SEM. Statistical analyses were conducted using Chi-square analysis (survival data) and Proc Mixed (SAS, 2004) one-way analysis of variance accounting for fixed treatment effects, random experiment effects, and random error. Treatment differences were elucidated by Tukey-Kramer range test. Differences were considered statistically significant at <italic>p</italic> &lt; 0.05.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S15">
+      <title>Results</title>
+      <sec id="S16">
+        <title>Animal survival and bacterial clearance in response to pneumonia</title>
+        <p id="P20">Survival at 24h post-infection in Saline, Alcohol, and <italic>S.pneumoniae</italic> mice was 100%. Alcohol / <italic>S. pneumoniae</italic> mice had significantly increased mortality at 24h, with a survival rate of 60%. Death of alcohol treated mice occurred after recovery from the intoxicated state (n=48–73).</p>
+        <p id="P21">Acute alcohol intoxication also impaired bacterial clearance from the lung (n=8–10). At 24 h after i.t. challenge with <italic>S. pneumoniae</italic>, more bacterial colonies were recovered from homogenized whole lung from alcohol intoxicated mice (13.41±3.78 ×10<sup>6</sup> CFU/mouse) than in those without alcohol treatment (2.16 ±0.19×10<sup>6</sup> CFU/mouse). Bacteremia was present in 100% of infected animals; no significant differences were seen between <italic>S.pneumoniae</italic> and Alcohol/<italic>S.pneumoniae</italic> groups.</p>
+      </sec>
+      <sec id="S17">
+        <title>Blood PMN counts during pneumonia</title>
+        <p id="P22">WBC differential analysis at 24h after i.t. pneumococcal challenge showed that infection alone significantly increased granulocyte percentage. Acute alcohol intoxication suppressed this increase (<xref ref-type="fig" rid="F1">Figure 1A</xref>). During pneumococcal pneumonia, absolute blood granulocyte counts in Alcohol/<italic>S.pneumoniae</italic> mice were also decreased compared to counts in <italic>S.pneumoniae</italic> mice (<xref ref-type="fig" rid="F1">Figure 1B</xref>).</p>
+      </sec>
+      <sec id="S18">
+        <title>Bone marrow contribution to lung host defense during pneumonia</title>
+        <p id="P23">To assess bone marrow contribution to lung granulocyte recruitment during infection, mice received BrdU 18 h prior to <italic>S. pneumoniae</italic> lung challenge in order to pre-label granulocytes within bone marrow. At the time of infection, 22.2±0.9% of bone marrow Gr1<sup>+</sup> granulocytes were BrdU<sup>+</sup>, compared to 0.6±0.1% of blood Gr-1<sup>+</sup> granulocytes that were BrdU<sup>+</sup>. Bronchoalveolar lavage samples 6h post-inoculation displayed a dramatic increase in Gr-1<sup>+</sup> cell number compared to uninfected mice, which was attenuated by acute alcohol intoxication. Gr-1<sup>+</sup>BrdU<sup>+</sup> cell numbers were also significantly increased in bronchoalveolar lavage samples 6h post-inoculation, which was also attenuated by acute alcohol intoxication (<xref ref-type="fig" rid="F2">Figure 2</xref>).</p>
+      </sec>
+      <sec id="S19">
+        <title>Changes in LKS cell population in the bone marrow during pneumonia</title>
+        <p id="P24">While the bone marrow LKS cell population in control mice is very small, this cell population was dramatically expanded 24h and 48h after pneumococcal inoculation. Acute alcohol intoxication without infection did not alter bone marrow LKS cell number; however, the increase in LKS cell number 24h post-infection was suppressed by acute alcohol intoxication (<xref ref-type="fig" rid="F3">Figure 3A</xref>).</p>
+        <p id="P25">At 24h and 48h post-infection, Sca-1 expression by bone marrow LKS cells increased 3.82 and 3.95 fold, respectively, as measured by MCF. Alcohol intoxication reduced this infection-induced up-regulation of Sca-1 expression at 24h and 48h (<xref ref-type="fig" rid="F3">Figure 3B</xref>). Earlier time points, 6h and 12h, were also examined, but no significant changes in LKS or lin<sup>−</sup>c-Kit<sup>+</sup>Sca-1<sup>−</sup> cell number or MCF were observed.</p>
+        <p id="P26">Accompanying the infection-induced increases in LKS cell number, lin<sup>−</sup>c-Kit<sup>+</sup>Sca-1<sup>−</sup> cell numbers decreased with infection at 24 and 48h (<xref ref-type="fig" rid="F3">Figure 3C</xref>).</p>
+      </sec>
+      <sec id="S20">
+        <title>LKS proliferation during pneumonia</title>
+        <p id="P27">To assess LKS proliferation as a consequence of lung infection, BrdU was administered i.v. at the time of S. pneumoniae lung challenge. Alcohol attenuated the increase in BrdU<sup>+</sup> LKS cell number in the bone marrow observed in <italic>S.pneumoniae</italic> mice (<xref ref-type="fig" rid="F4">Figure 4</xref>, left panel). Similar to the changes observed in BrdU<sup>+</sup> LKS cell numbers, pneumococcal infection also induced a dramatic increase in the number of BrdU<sup>−</sup> LKS cells in the bone marrow (<xref ref-type="fig" rid="F4">Figure 4</xref>, right panel). This increase in BrdU<sup>−</sup> LKS cell number suggests that induction of Sca-1 occurs in the absence of LKS proliferation during pulmonary infections. Furthermore, this induction of Sca-1 in BrdU<sup>−</sup> LKS cells following pneumonia was also suppressed by alcohol intoxication at 24h (<xref ref-type="fig" rid="F4">Figure 4</xref>).</p>
+      </sec>
+      <sec id="S21">
+        <title>Sca-1 expression by normal lin<sup>−</sup> c-Kit<sup>+</sup> Sca-1<sup>−</sup> cells stimulated with 24 h plasma</title>
+        <p id="P28">In this study, we determined that plasma obtained from uninfected mice and plasma obtained from mice 24 h after <italic>S. pneumoniae</italic> lung challenge with or without intoxication differed in their ability to induce Sca-1 on lin<sup>−</sup>c-Kit<sup>+</sup>Sca-1<sup>−</sup> sorted from naive mice. As shown in <xref ref-type="fig" rid="F5">Figure 5A</xref>, only plasma obtained from infected mice in the absence of alcohol intoxication was capable of significantly inducing Sca-1 expression on the surface of lin<sup>−</sup>c-Kit<sup>+</sup>Sca-1<sup>−</sup> cells <italic>in vitro</italic>.</p>
+        <p id="P29">The concentration of plasma TNF-α was elevated in <italic>S.pneumoniae</italic> mice 24h after intratracheal injection of bacteria. This increase in plasma TNF-α was not observed in Alcohol/<italic>S.pneumoniae</italic> mice (<xref ref-type="fig" rid="F5">Figure 5B</xref>). Plasma IFN-γ was undetectable (&lt; 5.85 pg/ml) 24h after <italic>S. pneumoniae</italic> challenge.</p>
+      </sec>
+      <sec id="S22">
+        <title>CFU activity in bone marrow LKS cells</title>
+        <p id="P30">As shown in <xref ref-type="fig" rid="F6">Figure 6</xref>, LKS cells isolated from mice 24 h post i.t. <italic>S. pneumoniae</italic> exhibited a significant increase in CFU-GM colony formation. CFU-GM colony formation by LKS cells isolated from Saline, Alcohol, and Alcohol/S.pneumoniae mice, as well as by in lin<sup>−</sup>c-Kit<sup>+</sup>Sca-1<sup>−</sup> cells, was similar. <italic>In vivo</italic> alcohol intoxication inhibited the pneumonia-induced increase in CFU activity of LKS cells.</p>
+      </sec>
+      <sec id="S23">
+        <title>LKS cells in the blood</title>
+        <p id="P31">Mobilization of LKS cells into the circulation was significantly increased at 24h and 48h after i.t. challenge with <italic>S. pneumoniae</italic> (<xref ref-type="fig" rid="F7">Figure 7A</xref>). Acute alcohol intoxication inhibited the increased mobilization of LKS cells into the circulation at 24 h following i.t. pneumococcal challenge.</p>
+        <p id="P32">During pneumococcal infection, Sca-1 MCF on blood-borne LKS cells also increased in response to pneumococcal infection. At 24h of infection, MCF significantly increased 21.8-fold compared to control values in saline treated mice. Alcohol intoxication suppressed the infection-induced increase in Sca-1 expression by blood LKS cells at 24h (<xref ref-type="fig" rid="F7">Figure 7B</xref>).</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="S24">
+      <title>Discussion</title>
+      <p id="P33">Alcohol is an immunosuppressive drug that impairs multiple immune defense functions, rendering the alcohol abusing host vulnerable to infections such as pneumococcal pneumonia (<xref ref-type="bibr" rid="R40">Zhang et al., 2008</xref>). In response to bacterial infection, hematopoietic tissue increases granulocyte production; which is critical for enhancing host defense against invading pathogens. Failure to develop an adequate granulopoietic response to infection results in increased morbidity and mortality (<xref ref-type="bibr" rid="R11">Fine et al., 1996</xref>; <xref ref-type="bibr" rid="R27">Perlino and Rimland, 1985</xref>). In our current study, acute alcohol intoxication was associated with a significant increase in mortality 24h after an i.t. challenge with <italic>S. pneumoniae</italic>. While <italic>S. pneumoniae</italic> and Alcohol/<italic>S. pneumoniae</italic> mice exhibited similar bacteremia at 24h, mice with acute alcohol intoxication demonstrated significant increases in bacterial burden in the lung tissue.</p>
+      <p id="P34">Alcoholic patients with pneumonia and sepsis frequently present with granulocytopenia, which predicts a poorer outcome (<xref ref-type="bibr" rid="R2">Austrian and Gold, 1964</xref>; <xref ref-type="bibr" rid="R9">Feldman et al., 1989</xref>; <xref ref-type="bibr" rid="R12">Fruchtman et al., 1983</xref>; <xref ref-type="bibr" rid="R21">McFarland and Libre, 1963</xref>; <xref ref-type="bibr" rid="R18">MacGregor and Louria, 1997</xref>). In our current model, we observed an increase in granulocytes as a percentage of total WBCs 24h post-pneumococcus inoculation, which was inhibited in Alcohol/<italic>S.pneumoniae</italic>. A lower absolute blood granulocyte count was also observed in Alcohol/<italic>S.pneumoniae</italic> when compared to granulocyte numbers in <italic>S.pneumoniae</italic> animals. A reduction in circulating granulocytes could result from an increased migration of these phagocytes from the vascular compartment into the site of infection; however, granulocyte (Gr-1<sup>+</sup> cell) influx into the alveolar space at 6h post-infection was markedly attenuated by alcohol intoxication. This observation suggests that the granulocytopenia most likely resulted from an inadequate bone marrow response to infection, leading to a reduced production and/or release of granulocytes from the bone marrow. In support of this postulation, we observed that alcohol intoxication inhibited the increase in the numbers of recently produced granulocytes (Gr-1<sup>+</sup>BrdU<sup>+</sup> cells) in the alveolar compartment 6h after infection. Since the bone marrow storage pool contains a large number of terminally differentiated granulocytes which have lost the ability to proliferate, the <italic>in vivo</italic> BrdU incorporation technique used in our experiment only labeled about 22% of bone marrow granulocytes during the 18 h incorporation period. While the Gr-1<sup>+</sup>BrdU<sup>+</sup> cell numbers recovered by BAL appear to constitute a relatively small portion of the total Gr-1<sup>+</sup> cell population, we estimate that the bone marrow contribution to be close to 50% of the total Gr-1<sup>+</sup> cells recovered at 6h post-infection. In this model of pneumonia, granulocyte recruitment continues beyond 6h, meaning that the contribution of bone-marrow derived granulocytes to the lung would increase over time.</p>
+      <p id="P35">Because all mature blood cells are derived from bone marrow hematopoietic stem cells, we hypothesized that hematopoietic precursor cell activity is modified during a pneumococcal pulmonary infection to enhance their commitment to granulocyte production, which may be impaired by alcohol intoxication. The marrow LKS cell population, which contains long-term repopulating HSCs, was markedly increased during pneumococcal pneumonia in our model and this increase was abrogated by alcohol intoxication. In our previous studies with Gram-negative pathogens, we observed that Balb/c and C57BL/6 mice intravenously challenged with live or heat-inactivated <italic>E. coli</italic> also show a rapid increase in the bone marrow LKS cell population, a response that was also impaired by alcohol intoxication (<xref ref-type="bibr" rid="R38">Zhang et al., 2008</xref>, <xref ref-type="bibr" rid="R39">Zhang et al., 2009</xref>). Since the LKS response is now known as a common phenomenon to both Gram negative and Gram positive infections, the expansion of this pool is likely a fundamental component of the host defense mechanism against severe bacterial infection.</p>
+      <p id="P36">In our model of pneumococcal pneumonia, Sca-1 expression by LKS cells increased at 24h and 48h after infection; whereas, alcohol intoxication inhibited this infection-induced change at 24h. These changes in surface protein expression agree with the previously reported changes in Sca-1 mRNA expression levels following inflammatory stimuli (<xref ref-type="bibr" rid="R39">Zhang et al., 2009</xref>). Given the alcohol-induced attenuation of LKS cell number and Sca-1 surface expression during pneumococcal pneumonia, we conclude that alcohol intoxication exerts a profound inhibitory action on the hematopoietic precursor cell response to Gram-positive bacterial infection.</p>
+      <p id="P37">To investigate the mechanisms underlying the increase in marrow LKS cells during Gram-positive pulmonary infection, we performed an <italic>in vivo</italic> BrdU incorporation assay in which BrdU was injected at the time of pneumococcal infection. Enumeration of BrdU positive cells in bone marrow samples allowed us to quantify hematopoietic precursor cell proliferation during the pneumococcal infection, and subsequently, identify the impact of alcohol on the self-renewal response. The results showed that marrow BrdU<sup>+</sup>LKS cell number was increased 24 h after i.t. challenge with <italic>S. pneumoniae</italic>. This result demonstrates that cell proliferation contributes to the observed expansion of the marrow LKS cell pool, which is suppressed by acute alcohol intoxication. A major portion of the increase in LKS cells occurred in the absence of cell proliferation, reflected by an increase in the BrdU<sup>−</sup>LKS cell population following pneumococcal pneumonia. Acute alcohol intoxication also suppressed the increase in BrdU<sup>−</sup>LKS cells following <italic>S. pneumoniae</italic> infection. Increased BrdU<sup>−</sup>LKS cell number is most likely accounted for by the expression of Sca-1 on pre-existing lin<sup>−</sup>c-kit<sup>+</sup>Sca-1<sup>−</sup> cells. It is generally believed that the LKS cell population is enriched in hematopoietic stem cells, while the lin<sup>−</sup>c-Kit<sup>+</sup>Sca-1<sup>−</sup> cell is recognized as more committed to the myeloid pathway (<xref ref-type="bibr" rid="R1">Akashi et al., 2000</xref>; <xref ref-type="bibr" rid="R32">Spangrude et al., 1988</xref>). As other studies indicate that lin<sup>−</sup>c-kit<sup>+</sup>Sca-1<sup>−</sup> cells arise from the loss of Sca-1 surface expression on LKS cells, this would represent a re-expression. This study also showed a reduction in lin<sup>−</sup>c-Kit<sup>+</sup>Sca-1<sup>−</sup> cell numbers in association with the increase in LKS cell numbers during lung infection. Our previous publications have also demonstrated that naïve lin<sup>−</sup>c-kit<sup>+</sup>Sca-1<sup>−</sup> cells re-express Sca-1 after exposure to inflammatory stimuli <italic>in vitro</italic> or plasma obtained from mice with <italic>E. coli</italic> bacteremia (<xref ref-type="bibr" rid="R40">Zhang et al. 2008</xref>, <xref ref-type="bibr" rid="R39">Zhang et al. 2009</xref>). In the current study, lin<sup>−</sup>c-kit<sup>+</sup>Sca-1<sup>−</sup> cells isolated from naïve mice re-expressed Sca-1 following exposure to plasma isolated from mice with pneumococcal pneumonia, but not in response to plasma isolated from control mice or mice intoxicated at the time of pneumococcal inoculation. A significant elevation of plasma TNF-α was seen in <italic>S.pneumoniae</italic> mice 24h after intratracheal injection, which was not observed in alcohol treated infected mice. These changes in plasma-borne TNF-α levels may account for the suppressive effects of alcohol during pneumococcal pneumonia, as TNF-α has been shown to be a potent stimulus for Sca-1 expression in isolated lin<sup>−</sup>c-kit<sup>+</sup>Sca-1<sup>−</sup> cells(<xref ref-type="bibr" rid="R40">Zhang et al., 2008</xref>). Whether TNF-α is the sole plasma constituent responsible for the induction of Sca-1 is not known. Other candidates shown to induce Sca-1 expression by isolated lin<sup>−</sup>c-kit<sup>+</sup>Sca-1<sup>−</sup> cells include IFN-γ, bacteria, and bacterial products; however, we did not detect an increase in plasma IFN-γ levels at this time point and bacteremia was equally prevalent in control and alcohol intoxicated mice challenged with pneumococcal pneumonia. Nonetheless, these studies suggest that lung infection, at least in part, mediates its effects in bone marrow by blood-borne mediators such as TNF-α.</p>
+      <p id="P38">During pneumococcal pneumonia and other severe bacterial infections, myeloid lineage differentiation is accelerated and granulocyte production becomes the predominant feature of hematopoiesis (<xref ref-type="bibr" rid="R4">Barthlen et al., 1999</xref>; <xref ref-type="bibr" rid="R13">Hartmann et al., 1981</xref>; <xref ref-type="bibr" rid="R19">Marsh et al., 1967</xref>; <xref ref-type="bibr" rid="R34">Terashima et al. 1996</xref>; <xref ref-type="bibr" rid="R35">Ueda et al., 2005</xref>). LKS cells of mice infected with <italic>S. pneumoniae</italic> displayed a significant increase in CFU-GM activity, as compared to those of control and intoxicated infected mice or lin<sup>−</sup>c-Kit<sup>+</sup>Sca-1<sup>−</sup> cells obtained from either control or infected mice, suggesting that cells in the rapidly expanded marrow LKS pool during pneumococcal pneumonia are functionally activated for granulopoiesis. <italic>In vivo</italic> alcohol intoxication attenuated the increase in CFU activity of sorted marrow LKS cells from mice with pneumococcal pneumonia, despite the absence of alcohol throughout the culture period <italic>in vitro</italic>. Increased surface expression of Sca-1 on LKS cells was also associated with increased myeloid commitment in <italic>S.pneumoniae</italic> mice, both of which were inhibited by alcohol intoxication.</p>
+      <p id="P39">Recent studies have shown that the bone marrow constantly releases precursors into the systemic circulation. These mobilized hematopoietic progenitor cells can differentiate into granulocytes in extra-medullary sites, which may serve as a mechanism for immune surveillance (<xref ref-type="bibr" rid="R20">Massberg et al., 2007</xref>). In our study, bone marrow release of LKS cells into the circulation was significantly enhanced at 24h of pneumococcal infection, a response that was again inhibited by alcohol. Increased Sca-1 expression on these mobilized LKS cells at 24h of infection was also seen. Alcohol intoxication inhibited these infection-induced changes in Sca-1 surface expression. Up-regulation of Sca-1 expression in the peripheral blood LKS cells may facilitate extra-medullary granulocytic differentiation in response to infection, providing another mechanism by which alcohol intoxication can impair the immune system.</p>
+      <p id="P40">We have demonstrated that acute alcohol intoxication impairs the granulopoietic response at the level of the HSCs, which govern the production of all mature blood cells. The impairment of the hematopoietic precursor cell response to infection by alcohol intoxication results in relative granulocytopenia, decreased bone marrow contribution to lung host defense, impaired bacterial clearance, and increased mortality in mice during pneumococcal pneumonia. The impairment of the hematopoietic precursor cell response by alcohol may serve as an upstream mechanism underlying the impaired host defense against bacterial pneumonia in the alcohol abusing host.</p>
+    </sec>
+  </body>
+  <back>
+    <ack id="S25">
+      <title>Acknowledgements</title>
+      <p id="P41">We thank Amy B. Weinberg and Joseph S. Soblosky, PhD for their expert technical assistance, Connie P. Porretta for her expert assistance with flow cytometric analyses and cell sorting, and Howard Blakesly for his help in data analysis and graphic preparation. This research was supported by NIH grants AA09803, AA07577 and R21AA017494.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="R1">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Akashi</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Traver</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Miyamoto</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Weissman</surname>
+              <given-names>IL</given-names>
+            </name>
+          </person-group>
+          <article-title>A clonogenic common myeloid progenitor that gives rise to all myeloid lineages</article-title>
+          <source>Nature</source>
+          <year>2000</year>
+          <volume>404</volume>
+          <fpage>193</fpage>
+          <lpage>197</lpage>
+          <pub-id pub-id-type="pmid">10724173</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R2">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Austrian</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Gold</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Pneumococcal bacteremia with especial reference to bacteremic pneumococcal pneumonia</article-title>
+          <source>Ann Intern Med</source>
+          <year>1964</year>
+          <volume>60</volume>
+          <fpage>759</fpage>
+          <pub-id pub-id-type="pmid">14156606</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R3">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ballard</surname>
+              <given-names>HS</given-names>
+            </name>
+          </person-group>
+          <article-title>Alcohol-associated pancytopenia with hypocellular bone marrow</article-title>
+          <source>Am J Clin Pathol</source>
+          <year>1980</year>
+          <volume>73</volume>
+          <fpage>830</fpage>
+          <lpage>834</lpage>
+          <pub-id pub-id-type="pmid">7395809</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R4">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Barthlen</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Zantl</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Pfeffer</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Heidecke</surname>
+              <given-names>CD</given-names>
+            </name>
+            <name>
+              <surname>Holzmann</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Stadler</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Impact of experimental peritonitis on bone marrow cell function</article-title>
+          <source>Surgery</source>
+          <year>1999</year>
+          <volume>126</volume>
+          <fpage>41</fpage>
+          <lpage>47</lpage>
+          <pub-id pub-id-type="pmid">10418591</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R5">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boe</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Nelson</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Bagby</surname>
+              <given-names>GJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Acute ethanol intoxication suppresses lung chemokine production following infection with <italic>Streptococcus pneumonia</italic></article-title>
+          <source>J Infect Dis</source>
+          <year>2001</year>
+          <volume>184</volume>
+          <fpage>1134</fpage>
+          <lpage>1142</lpage>
+          <pub-id pub-id-type="pmid">11598836</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R6">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cronkite</surname>
+              <given-names>EP</given-names>
+            </name>
+          </person-group>
+          <article-title>Analytical review of structure and regulation of hemopoiesis</article-title>
+          <source>Blood Cells</source>
+          <year>1988</year>
+          <volume>14</volume>
+          <fpage>313</fpage>
+          <lpage>328</lpage>
+          <pub-id pub-id-type="pmid">3067777</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R7">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>de Roux</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Cavalcanti</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Marcos</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Garcia</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Ewig</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Mensa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Torres</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Impact of alcohol abuse in the etiology and severity of community-acquired pneumonia</article-title>
+          <source>Chest</source>
+          <year>2006</year>
+          <volume>129</volume>
+          <fpage>1219</fpage>
+          <lpage>1225</lpage>
+          <pub-id pub-id-type="pmid">16685012</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R8">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dorff</surname>
+              <given-names>GJ</given-names>
+            </name>
+            <name>
+              <surname>Rytel</surname>
+              <given-names>MW</given-names>
+            </name>
+            <name>
+              <surname>Farmer</surname>
+              <given-names>SG</given-names>
+            </name>
+            <name>
+              <surname>Scanlon</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Etiologies and characteristic features of pneumonias in a municipal hospital</article-title>
+          <source>Am J Med Sci</source>
+          <year>1973</year>
+          <volume>266</volume>
+          <fpage>349</fpage>
+          <lpage>358</lpage>
+          <pub-id pub-id-type="pmid">4148638</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R9">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Feldman</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Kallenbach</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Levy</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Reinach</surname>
+              <given-names>SG</given-names>
+            </name>
+            <name>
+              <surname>Hurwitz</surname>
+              <given-names>MD</given-names>
+            </name>
+            <name>
+              <surname>Thorburn</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Koornhof</surname>
+              <given-names>HJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Community-acquired pneumonia of diverse aetiology: prognostic features in patients admitted to an intensive care unit and a "severity of illness" core</article-title>
+          <source>Intensive Care Medicine</source>
+          <year>1989</year>
+          <volume>15</volume>
+          <fpage>302</fpage>
+          <lpage>307</lpage>
+          <pub-id pub-id-type="pmid">2768645</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R10">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fernandez-Sola</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Junque</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Estruch</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Monforte</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Torres</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Urbano-Marquez</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>High alcohol intake as a risk and prognostic factor for community-acquired pneumonia</article-title>
+          <source>Arch Intern Med</source>
+          <year>1995</year>
+          <volume>155</volume>
+          <fpage>1649</fpage>
+          <lpage>1654</lpage>
+          <pub-id pub-id-type="pmid">7618989</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R11">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fine</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Carson</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>Mutha</surname>
+              <given-names>SS</given-names>
+            </name>
+            <name>
+              <surname>Sankey</surname>
+              <given-names>SS</given-names>
+            </name>
+            <name>
+              <surname>Weissfeld</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Kapoor</surname>
+              <given-names>WN</given-names>
+            </name>
+          </person-group>
+          <article-title>Prognosis and outcomes of patients with community-acquired pneumonia. A meta-analysis</article-title>
+          <source>JAMA</source>
+          <year>1996</year>
+          <volume>275</volume>
+          <fpage>134</fpage>
+          <lpage>141</lpage>
+          <pub-id pub-id-type="pmid">8531309</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R12">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fruchtman</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Gombert</surname>
+              <given-names>ME</given-names>
+            </name>
+            <name>
+              <surname>Lyons</surname>
+              <given-names>HA</given-names>
+            </name>
+          </person-group>
+          <article-title>Adult respiratory distress syndrome as a cause of death in pneumococcal pneumonia. Report of ten cases</article-title>
+          <source>Chest</source>
+          <year>1983</year>
+          <volume>83</volume>
+          <fpage>598</fpage>
+          <lpage>601</lpage>
+          <pub-id pub-id-type="pmid">6831945</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R13">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hartmann</surname>
+              <given-names>DW</given-names>
+            </name>
+            <name>
+              <surname>Entringer</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Robinson</surname>
+              <given-names>WA</given-names>
+            </name>
+            <name>
+              <surname>Vasil</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Drebing</surname>
+              <given-names>CJ</given-names>
+            </name>
+            <name>
+              <surname>Morton</surname>
+              <given-names>NJ</given-names>
+            </name>
+            <name>
+              <surname>True</surname>
+              <given-names>L</given-names>
+            </name>
+          </person-group>
+          <article-title>Regulation of granulopoiesis and distribution of granulocytes in early phase of bacterial infection</article-title>
+          <source>J Cell Physiol</source>
+          <year>1981</year>
+          <volume>109</volume>
+          <fpage>17</fpage>
+          <lpage>24</lpage>
+          <pub-id pub-id-type="pmid">7035470</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R14">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Heermans</surname>
+              <given-names>EH</given-names>
+            </name>
+          </person-group>
+          <article-title>Booze and blood: the effects of acute and chronic alcohol abuse on the hematopoietic system</article-title>
+          <source>Clin Lab Sci</source>
+          <year>1998</year>
+          <volume>11</volume>
+          <fpage>229</fpage>
+          <lpage>232</lpage>
+          <pub-id pub-id-type="pmid">10182111</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R15">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Heidemann</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Nerke</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Waller</surname>
+              <given-names>HD</given-names>
+            </name>
+          </person-group>
+          <article-title>Alcohol induced changes in hemopoiesis (author's transl)</article-title>
+          <source>Klin Wochenschr</source>
+          <year>1981</year>
+          <volume>59</volume>
+          <fpage>1303</fpage>
+          <lpage>1312</lpage>
+          <pub-id pub-id-type="pmid">7311398</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R16">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kung</surname>
+              <given-names>HC</given-names>
+            </name>
+            <name>
+              <surname>Hoyert</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Murphy</surname>
+              <given-names>SL</given-names>
+            </name>
+          </person-group>
+          <article-title>Deaths: final data for 2005</article-title>
+          <source>Natl Vital Stat Rep</source>
+          <year>2008</year>
+          <volume>56</volume>
+          <fpage>1</fpage>
+          <lpage>120</lpage>
+          <pub-id pub-id-type="pmid">18512336</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R17">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>YK</given-names>
+            </name>
+          </person-group>
+          <article-title>Effects of alcohol on granulocytes and lymphocytes</article-title>
+          <source>Semin hematol</source>
+          <year>1980</year>
+          <volume>17</volume>
+          <fpage>130</fpage>
+          <lpage>136</lpage>
+          <pub-id pub-id-type="pmid">7375952</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R18">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>MacGregor</surname>
+              <given-names>RR</given-names>
+            </name>
+            <name>
+              <surname>Louria</surname>
+              <given-names>DB</given-names>
+            </name>
+          </person-group>
+          <article-title>Alcohol and infection</article-title>
+          <source>Curr Clin Top Infect Dis</source>
+          <year>1997</year>
+          <volume>17</volume>
+          <fpage>291</fpage>
+          <lpage>315</lpage>
+          <pub-id pub-id-type="pmid">9189671</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R19">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Marsh</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Boggs</surname>
+              <given-names>DR</given-names>
+            </name>
+            <name>
+              <surname>Cartwright</surname>
+              <given-names>GE</given-names>
+            </name>
+            <name>
+              <surname>Wintrobe</surname>
+              <given-names>MM</given-names>
+            </name>
+          </person-group>
+          <article-title>Neutrophil kinetics in acute infection</article-title>
+          <source>Journal Clin Invest</source>
+          <year>1967</year>
+          <volume>46</volume>
+          <fpage>1943</fpage>
+          <lpage>1953</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R20">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Massberg</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Schaerli</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Knezevic-Maramica</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Kollnberger</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Tubo</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Moseman</surname>
+              <given-names>EA</given-names>
+            </name>
+            <name>
+              <surname>Huff</surname>
+              <given-names>IV</given-names>
+            </name>
+            <name>
+              <surname>Junt</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Wagers</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Mazo</surname>
+              <given-names>IB</given-names>
+            </name>
+            <name>
+              <surname>von Andrian</surname>
+              <given-names>UH</given-names>
+            </name>
+          </person-group>
+          <article-title>Immunosurveillance by hematopoietic progenitor cells trafficking through blood, lymph, and peripheral tissues</article-title>
+          <source>Cell</source>
+          <year>2007</year>
+          <volume>131</volume>
+          <fpage>994</fpage>
+          <lpage>1008</lpage>
+          <pub-id pub-id-type="pmid">18045540</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R21">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McFarland</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Libre</surname>
+              <given-names>EP</given-names>
+            </name>
+          </person-group>
+          <article-title>Abnormal leukocyte response in alcoholism</article-title>
+          <source>Ann Intern Med</source>
+          <year>1963</year>
+          <volume>59</volume>
+          <fpage>865</fpage>
+          <lpage>877</lpage>
+          <pub-id pub-id-type="pmid">14082738</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R22">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meagher</surname>
+              <given-names>RC</given-names>
+            </name>
+            <name>
+              <surname>Sieber</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Spivak</surname>
+              <given-names>JL</given-names>
+            </name>
+          </person-group>
+          <article-title>Suppression of hematopoietic-progenitor-cell proliferation by ethanol and acetaldehyde</article-title>
+          <source>N Engl J Med</source>
+          <year>1982</year>
+          <volume>307</volume>
+          <fpage>845</fpage>
+          <lpage>849</lpage>
+          <pub-id pub-id-type="pmid">7110259</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R23">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Musher</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Alexandraki</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Graviss</surname>
+              <given-names>EA</given-names>
+            </name>
+            <name>
+              <surname>Yanbeiy</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Eid</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Inderias</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Phan</surname>
+              <given-names>HM</given-names>
+            </name>
+            <name>
+              <surname>Solomon</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>Bacteremic and nonbacteremic pneumococcal pneumonia. A prospective study</article-title>
+          <source>Medicine</source>
+          <year>2000</year>
+          <volume>79</volume>
+          <fpage>210</fpage>
+          <lpage>221</lpage>
+          <pub-id pub-id-type="pmid">10941350</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R24">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nelson</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Mason</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Kolls</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Summer</surname>
+              <given-names>WR</given-names>
+            </name>
+          </person-group>
+          <article-title>Pathophysiology of pneumonia</article-title>
+          <source>Clin Chest Med</source>
+          <year>1995</year>
+          <volume>16</volume>
+          <fpage>1</fpage>
+          <lpage>12</lpage>
+          <pub-id pub-id-type="pmid">7768083</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R25">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ozaki</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Maeda</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hayashi</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Nakamura</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Moriguchi</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kamei</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Yasuoka</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ogura</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Role of alveolar macrophages in the neutrophil-dependent defense system against <italic>Pseudomonas aeruginosa</italic> infection in the lower respiratory tract. Amplifying effect of muramyl dipeptide analog</article-title>
+          <source>Am Rev Respir Dis</source>
+          <year>1989</year>
+          <volume>140</volume>
+          <fpage>1595</fpage>
+          <lpage>1601</lpage>
+          <pub-id pub-id-type="pmid">2513762</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R26">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Paganin</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Lilienthal</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Bourdin</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Lugagne</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Tixier</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Genin</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Yvin</surname>
+              <given-names>JL</given-names>
+            </name>
+          </person-group>
+          <article-title>Severe community-acquired pneumonia: assessment of microbial aetiology as mortality factor</article-title>
+          <source>Eur Respir J</source>
+          <year>2004</year>
+          <volume>24</volume>
+          <fpage>779</fpage>
+          <lpage>785</lpage>
+          <pub-id pub-id-type="pmid">15516672</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R27">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Perlino</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>Rimland</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Alcoholism, leukopenia, and pneumococcal sepsis</article-title>
+          <source>Am Rev Respir Dis</source>
+          <year>1985</year>
+          <volume>132</volume>
+          <fpage>757</fpage>
+          <lpage>760</lpage>
+          <pub-id pub-id-type="pmid">4051312</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R28">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ruiz</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Ewig</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Torres</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Arancibia</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Marco</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Mensa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Sanchez</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Martinez</surname>
+              <given-names>JA</given-names>
+            </name>
+          </person-group>
+          <article-title>Severe Community-acquired Pneumonia. Risk Factors and Follow-up Epidemiology</article-title>
+          <source>Am J Respir Crit Care Med</source>
+          <year>1999</year>
+          <volume>160</volume>
+          <fpage>923</fpage>
+          <lpage>929</lpage>
+          <pub-id pub-id-type="pmid">10471620</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R29">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Saitz</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Ghali</surname>
+              <given-names>WA</given-names>
+            </name>
+            <name>
+              <surname>Moskowitz</surname>
+              <given-names>MA</given-names>
+            </name>
+          </person-group>
+          <article-title>The impact of alcohol-related diagnoses on pneumonia outcomes</article-title>
+          <source>Arch Intern Med</source>
+          <year>1997</year>
+          <volume>157</volume>
+          <fpage>1446</fpage>
+          <lpage>1452</lpage>
+          <pub-id pub-id-type="pmid">9224223</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R30">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schmidt</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>De Lint</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Causes of death of alcoholics</article-title>
+          <source>Q J Stud Alcohol</source>
+          <year>1972</year>
+          <volume>33</volume>
+          <fpage>171</fpage>
+          <lpage>185</lpage>
+          <pub-id pub-id-type="pmid">4551020</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R31">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Seppa</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Sillanaukee</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Saarni</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Blood count and hematologic morphology in nonanemic macrocytosis: differences between alcohol abuse and pernicious anemia</article-title>
+          <source>Alcohol</source>
+          <year>1993</year>
+          <volume>10</volume>
+          <fpage>343</fpage>
+          <lpage>347</lpage>
+          <pub-id pub-id-type="pmid">8216878</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R32">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Spangrude</surname>
+              <given-names>GJ</given-names>
+            </name>
+            <name>
+              <surname>Heimfeld</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Weissman</surname>
+              <given-names>IL</given-names>
+            </name>
+          </person-group>
+          <article-title>Purification and characterization of mouse hematopoietic stem cells</article-title>
+          <source>Science</source>
+          <year>1988</year>
+          <volume>241</volume>
+          <fpage>58</fpage>
+          <lpage>62</lpage>
+          <pub-id pub-id-type="pmid">2898810</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R33">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Takeuchi</surname>
+              <given-names>O</given-names>
+            </name>
+            <name>
+              <surname>Hoshino</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Kawai</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Sanjo</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Takada</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Ogawa</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Takeda</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Akira</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Differential roles of TLR2 and TLR4 in recognition of gram-negative and gram-positive bacterial cell wall components</article-title>
+          <source>Immunity</source>
+          <year>1999</year>
+          <volume>11</volume>
+          <fpage>443</fpage>
+          <lpage>451</lpage>
+          <pub-id pub-id-type="pmid">10549626</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R34">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Terashima</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Wiggs</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>English</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Hogg</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>van Eeden</surname>
+              <given-names>SF</given-names>
+            </name>
+          </person-group>
+          <article-title>Polymorphonuclear leukocyte transit times in bone marrow during streptococcal pneumonia</article-title>
+          <source>Am J Physiol</source>
+          <year>1996</year>
+          <volume>271</volume>
+          <fpage>L587</fpage>
+          <lpage>L592</lpage>
+          <pub-id pub-id-type="pmid">8897906</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R35">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ueda</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Kondo</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kelsoe</surname>
+              <given-names>G</given-names>
+            </name>
+          </person-group>
+          <article-title>Inflammation and the reciprocal production of granulocytes and lymphocytes in bone marrow</article-title>
+          <source>J Exp Med</source>
+          <year>2005</year>
+          <volume>201</volume>
+          <fpage>1771</fpage>
+          <lpage>1780</lpage>
+          <pub-id pub-id-type="pmid">15939792</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R36">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Waller</surname>
+              <given-names>HD</given-names>
+            </name>
+            <name>
+              <surname>Benohr</surname>
+              <given-names>HC</given-names>
+            </name>
+          </person-group>
+          <article-title>Alcohol-related disturbances in haematopoiesis (author's transl)</article-title>
+          <source>Klin Wochenschr</source>
+          <year>1978</year>
+          <volume>56</volume>
+          <fpage>259</fpage>
+          <lpage>265</lpage>
+          <pub-id pub-id-type="pmid">642397</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R37">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Winterbauer</surname>
+              <given-names>RH</given-names>
+            </name>
+            <name>
+              <surname>Bedon</surname>
+              <given-names>GA</given-names>
+            </name>
+            <name>
+              <surname>Ball</surname>
+              <given-names>WC</given-names>
+              <suffix>Jr</suffix>
+            </name>
+          </person-group>
+          <article-title>Recurrent pneumonia. Predisposing illness and clinical patterns in 158 patients</article-title>
+          <source>Ann Intern Med</source>
+          <year>1969</year>
+          <volume>70</volume>
+          <fpage>689</fpage>
+          <lpage>700</lpage>
+          <pub-id pub-id-type="pmid">4388922</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R38">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Bagby</surname>
+              <given-names>GJ</given-names>
+            </name>
+            <name>
+              <surname>Happel</surname>
+              <given-names>KI</given-names>
+            </name>
+            <name>
+              <surname>Raasch</surname>
+              <given-names>CE</given-names>
+            </name>
+            <name>
+              <surname>Nelson</surname>
+              <given-names>SE</given-names>
+            </name>
+          </person-group>
+          <article-title>Alcohol abuse, immunnosuppression, and pulmonary infection</article-title>
+          <source>Curr Drug Abuse Rev</source>
+          <year>2008</year>
+          <volume>1</volume>
+          <fpage>56</fpage>
+          <lpage>67</lpage>
+          <pub-id pub-id-type="pmid">19630706</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R39">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Welsh</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Siggins RW 2nd, Bagby</surname>
+              <given-names>GJ</given-names>
+            </name>
+            <name>
+              <surname>Raasch</surname>
+              <given-names>CE</given-names>
+            </name>
+            <name>
+              <surname>Happel</surname>
+              <given-names>KI</given-names>
+            </name>
+            <name>
+              <surname>Nelson</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Acute alcohol intoxication inhibits the Lineage-c-<italic>kit</italic>+Sca-1+ cell response to <italic>Escherichia coli</italic> bacteremia</article-title>
+          <source>J Immunol</source>
+          <year>2009</year>
+          <volume>182</volume>
+          <fpage>1568</fpage>
+          <lpage>1576</lpage>
+          <pub-id pub-id-type="pmid">19155505</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R40">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Nelson</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Bagby</surname>
+              <given-names>GJ</given-names>
+            </name>
+            <name>
+              <surname>Siggins</surname>
+              <given-names>R</given-names>
+              <suffix>2nd</suffix>
+            </name>
+            <name>
+              <surname>Shellito</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Welsh</surname>
+              <given-names>DA</given-names>
+            </name>
+          </person-group>
+          <article-title>Lineage-c-kit+Sca-1+ cell response to <italic>Escherichia Coli</italic> bacteremia in Balb/c mice</article-title>
+          <source>Stem Cells</source>
+          <year>2008</year>
+          <volume>26</volume>
+          <fpage>1778</fpage>
+          <lpage>1786</lpage>
+          <pub-id pub-id-type="pmid">18483422</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R41">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Summer</surname>
+              <given-names>WR</given-names>
+            </name>
+            <name>
+              <surname>Bagby</surname>
+              <given-names>GJ</given-names>
+            </name>
+            <name>
+              <surname>Nelson</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>Innate immunity and pulmonary host defense</article-title>
+          <source>Immunol Rev</source>
+          <year>2000</year>
+          <volume>173</volume>
+          <fpage>39</fpage>
+          <lpage>51</lpage>
+          <pub-id pub-id-type="pmid">10719666</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+    <glossary>
+      <title>Abbreviations used in this paper</title>
+      <def-list>
+        <def-item>
+          <term>LKS</term>
+          <def>
+            <p id="P42">lineage<sup>−</sup> c-Kit<sup>+</sup> Sca-1<sup>+</sup></p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>BMCs</term>
+          <def>
+            <p id="P43">bone marrow cells</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>PBMCs</term>
+          <def>
+            <p id="P44">peripheral blood mononuclear cells</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>
+            <italic>E. coli</italic>
+          </term>
+          <def>
+            <p id="P45">Escherichia coli</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>Lin</term>
+          <def>
+            <p id="P46">lineage</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>MCF</term>
+          <def>
+            <p id="P47">mean channel fluorescence</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+  </back>
+  <floats-group>
+    <fig id="F1" orientation="portrait" position="float">
+      <label>Figure 1</label>
+      <caption>
+        <p id="P48">A. Leukocytes as a percentage of total white blood cells in peripheral blood smears. Each treatment represents the mean ± SEM (n=19–35). B. Total PMN leukocyte numbers. Each treatment represents the mean ± SEM (n=12–26). Non-overlapping letters signify statistical significance (p&lt;0.05)</p>
+      </caption>
+      <graphic xlink:href="nihms364558f1"/>
+    </fig>
+    <fig id="F2" orientation="portrait" position="float">
+      <label>Figure 2</label>
+      <caption>
+        <p id="P49">Gr-1<sup>+</sup> bronchoalveolar cells and Gr-1<sup>+</sup>BrdU<sup>+</sup> bronchoalveolar cells recovered 6 h post i.t. challenge. Data are mean ± SEM (n = 5–7). Non-overlapping letters signify statistical significance (<italic>p</italic> &lt; 0.05).</p>
+      </caption>
+      <graphic xlink:href="nihms364558f2"/>
+    </fig>
+    <fig id="F3" orientation="portrait" position="float">
+      <label>Figure 3</label>
+      <caption>
+        <p id="P50"><bold>A.</bold> Changes in LKS cell number in the bone marrow at 24h and 48h. Data are mean ± SEM (n = 7–8). Non-overlapping letters signify statistical significance (<italic>p</italic> &lt; 0.05). <bold>B.</bold> Changes in Sca-1 MCF in LKS cells in the bone marrow at 24h and 48h. Data are mean ± SEM (n = 7–8). Non-overlapping letters signify statistical significance (<italic>p</italic> &lt; 0.05). <bold>A.</bold> Changes in lin<sup>−</sup>c-Kit<sup>+</sup>Sca-1<sup>−</sup> cell number in the bone marrow at 24h and 48h. Data are mean ± SEM (n = 7–8). Non-overlapping letters signify statistical significance (<italic>p</italic> &lt; 0.05).</p>
+      </caption>
+      <graphic xlink:href="nihms364558f3"/>
+    </fig>
+    <fig id="F4" orientation="portrait" position="float">
+      <label>Figure 4</label>
+      <caption>
+        <p id="P51">BrdU incorporation into bone marrow LKS cells at 24h of infection. Data are mean ± SEM (n = 7–8). Asterisks signify statistical significance from control values (<italic>p</italic> &lt; 0.05).</p>
+      </caption>
+      <graphic xlink:href="nihms364558f4"/>
+    </fig>
+    <fig id="F5" orientation="portrait" position="float">
+      <label>Figure 5</label>
+      <caption>
+        <p id="P52"><bold>A.</bold> Plasma-induced Sca-1 surface expression on lin<sup>−</sup>c-Kit<sup>+</sup>Sca-1<sup>−</sup> cells. Each treatment represents the mean ± SEM (n=15–16). Non-overlapping letters signify statistical significance (p&lt;0.05). <bold>B.</bold> 24h post-i.t. treatment plasma levels (pg/mL) of TNF-α. Each treatment represents the mean ± SEM (n=6–10). Non-overlapping letters signify statistical significance (p&lt;0.05).</p>
+      </caption>
+      <graphic xlink:href="nihms364558f5"/>
+    </fig>
+    <fig id="F6" orientation="portrait" position="float">
+      <label>Figure 6</label>
+      <caption>
+        <p id="P53">CFU activity of bone marrow LKS and lin<sup>−</sup>c-Kit<sup>+</sup>Sca-1<sup>−</sup> cells in M3534 media. Each treatment represents the mean ± SEM (n=10–15). Non-overlapping letters signify statistical significance (p&lt;0.05)</p>
+      </caption>
+      <graphic xlink:href="nihms364558f6"/>
+    </fig>
+    <fig id="F7" orientation="portrait" position="float">
+      <label>Figure 7</label>
+      <caption>
+        <p id="P54"><bold>A.</bold> Changes in LKS cell number in the peripheral blood at 24h and 48h after pneumococcal infection with and without alcohol intoxication. Data are mean ± SEM (n = 7–8). Non-overlapping letters signify statistical significance (<italic>p</italic> &lt; 0.05). <bold>B.</bold> Changes in Sca-1 MCF in LKS cells in the peripheral blood at 24h and 48h. Data are mean ± SEM (n = 7–8).</p>
+      </caption>
+      <graphic xlink:href="nihms364558f7"/>
+    </fig>
+  </floats-group>
+</article>

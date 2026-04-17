@@ -1,0 +1,2740 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">7506870</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">852</journal-id>
+      <journal-id journal-id-type="nlm-ta">Arch Virol</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Arch. Virol.</journal-id>
+      <journal-title-group>
+        <journal-title>Archives of virology</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0304-8608</issn>
+      <issn pub-type="epub">1432-8798</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">23392631</article-id>
+      <article-id pub-id-type="pmc">4126520</article-id>
+      <article-id pub-id-type="doi">10.1007/s00705-013-1612-z</article-id>
+      <article-id pub-id-type="manuscript">NIHMS573234</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Immune responses in mice vaccinated with virus-like particles composed of the GP5 and M proteins of porcine reproductive and respiratory syndrome virus</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Nam</surname>
+            <given-names>Hae-Mi</given-names>
+          </name>
+          <aff id="A1">Department of Infectious Diseases, College of Veterinary Medicine, Konkuk University, 1 Hwayang-dong, Gwangjin-gu, Seoul 143-701, Korea</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chae</surname>
+            <given-names>Kyung-Sil</given-names>
+          </name>
+          <aff id="A2">Department of Infectious Diseases, College of Veterinary Medicine, Konkuk University, 1 Hwayang-dong, Gwangjin-gu, Seoul 143-701, Korea</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Song</surname>
+            <given-names>Young-Jo</given-names>
+          </name>
+          <aff id="A3">Department of Infectious Diseases, College of Veterinary Medicine, Konkuk University, 1 Hwayang-dong, Gwangjin-gu, Seoul 143-701, Korea</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lee</surname>
+            <given-names>Nak-Hyung</given-names>
+          </name>
+          <aff id="A4">Department of Infectious Diseases, College of Veterinary Medicine, Konkuk University, 1 Hwayang-dong, Gwangjin-gu, Seoul 143-701, Korea</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lee</surname>
+            <given-names>Joong-Bok</given-names>
+          </name>
+          <aff id="A5">Department of Infectious Diseases, College of Veterinary Medicine, Konkuk University, 1 Hwayang-dong, Gwangjin-gu, Seoul 143-701, Korea</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Park</surname>
+            <given-names>Seung-Yong</given-names>
+          </name>
+          <aff id="A6">Department of Infectious Diseases, College of Veterinary Medicine, Konkuk University, 1 Hwayang-dong, Gwangjin-gu, Seoul 143-701, Korea</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Song</surname>
+            <given-names>Chang-Seon</given-names>
+          </name>
+          <aff id="A7">Department of Infectious Diseases, College of Veterinary Medicine, Konkuk University, 1 Hwayang-dong, Gwangjin-gu, Seoul 143-701, Korea</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Seo</surname>
+            <given-names>Kun-Ho</given-names>
+          </name>
+          <aff id="A8">Department of Public Health, College of Veterinary Medicine, Konkuk University, Seoul 143-701, Korea</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kang</surname>
+            <given-names>Sang-Moo</given-names>
+          </name>
+          <aff id="A9">Department of Biology, Center for Inflammation, Immunity and Infection, Georgia State University, Atlanta, GA 30303, USA</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kim</surname>
+            <given-names>Min-Chul</given-names>
+          </name>
+          <aff id="A10">Department of Microbiology and Immunology, Emory University School of Medicine, Atlanta, GA 30322, USA</aff>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Choi</surname>
+            <given-names>In-Soo</given-names>
+          </name>
+          <email>ischoi@konkuk.ac.kr</email>
+          <aff id="A11">Department of Infectious Diseases, College of Veterinary Medicine, Konkuk University, 1 Hwayang-dong, Gwangjin-gu, Seoul 143-701, Korea; Department of Veterinary Science Research Institute, College of Veterinary Medicine, Konkuk University, Seoul 143-701, Korea</aff>
+        </contrib>
+      </contrib-group>
+      <pub-date pub-type="nihms-submitted">
+        <day>1</day>
+        <month>7</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>08</day>
+        <month>2</month>
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>6</month>
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>08</day>
+        <month>8</month>
+        <year>2014</year>
+      </pub-date>
+      <volume>158</volume>
+      <issue>6</issue>
+      <fpage>1275</fpage>
+      <lpage>1285</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P1">Porcine reproductive and respiratory syndrome virus (PRRSV) induces reproductive failure in sows and respiratory problems in pigs of all ages. Live attenuated and inactivated vaccines are used on swine farms to control PRRSV. However, their protective efficacy against field strains of PRRSV remains questionable. New vaccines have been developed to improve the efficacy of these traditional vaccines. In this study, virus-like particles (VLPs) composed of the GP5 and M proteins of PRRSV were developed, and the capacity of the VLPs to elicit antigen-specific immunity was evaluated. Serum antibody titers and production of cytokines were measured in BALB/C mice immunized intramuscularly three times with different doses (0.5, 1.0, 2.0, and 4.0 μ) of the VLP vaccine. A commercial vaccine consisting of inactivated PRRSV and phosphate-buffered saline (PBS) were used as positive and negative controls, respectively. IgG titers to GP5 were significantly higher in all groups of mice vaccinated with the VLPs than in control mice. Neutralizing antibodies were only detected in mice vaccinated with 2.0 and 4.0 μ of the VLPs. Cytokine levels were determined in cell culture supernatants after <italic>in vitro</italic> stimulation of splenocytes with the VLPs for 3 days. Mice immunized with 4.0 μ of the VLPs produced a significantly higher amount of interferon-gamma (IFN-γ) than mice immunized with the commercial inactivated PRRSV vaccine and PBS. In contrast, immunization with the commercial vaccine induced higher production of IL-4 and IL-10 in mice than mice vaccinated with VLPs. These data together demonstrate the capacity of VLPs to induce both neutralizing antibodies and IFN-γ in immunized mice. The VLP vaccine developed in this study could serve as a platform for the generation of improved VLP vaccines to control PRRSV.</p>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S1">
+      <title>Introduction</title>
+      <p id="P2">PRRS is one of the most important diseases affecting the swine industry, causing serious economic losses [<xref rid="R1" ref-type="bibr">1</xref>]. The causative virus, PRRSV, is an enveloped RNA virus belonging to the family <italic>Arteriviridae</italic>, along with lactate dehydrogenase-elevating virus (LDV), equine arteritis virus (EAV), and simian hemorrhagic fever virus (SHFV) [<xref rid="R2" ref-type="bibr">2</xref>, <xref rid="R3" ref-type="bibr">3</xref>]. PRRSV genotypes 1 and 2 are represented by Lelystad virus (European type) and VR-2332 (North American type), respectively [<xref rid="R4" ref-type="bibr">4</xref>, <xref rid="R5" ref-type="bibr">5</xref>]. North American and European PRRSVs share about 60 % nucleotide sequence identity but induce similar disease syndromes such as abortion, stillbirth, mummification, weak piglet delivery, pyrexia, cyanosis, dyspnea, and encephalitis [<xref rid="R5" ref-type="bibr">5</xref>–<xref rid="R8" ref-type="bibr">8</xref>].</p>
+      <p id="P3">The positive-sense, single-stranded RNA genome of PRRSV contains 10 open reading frames (ORFs) [<xref rid="R9" ref-type="bibr">9</xref>–<xref rid="R11" ref-type="bibr">11</xref>]. ORF1a and ORF1b encode nonstructural proteins, including replicases. ORF2a, ORF3, ORF4, and ORF5 encode the membrane-associated N-glycosylated structural proteins GP2a, GP3, GP4, and GP5, respectively. Recently, an additional ORF designated ORF5a was found in ORF5, encoding an ORF5a protein of unknown function [<xref rid="R11" ref-type="bibr">11</xref>]. ORF2b and ORF6 encode the non-glycosylated membrane proteins E and M, respectively. ORF7 encodes nucleocapsid protein N. The major structural proteins GP5 and M are present as heterodimeric complexes linked by disulfide bonds in PRRSV-infected cells and virions and both are required for the formation of PRRSV particles [<xref rid="R12" ref-type="bibr">12</xref>]. When either GP5 or M protein is absent, the PRRSV particles cannot be formed. Other minor envelope proteins are necessary to make infectious virus particles [<xref rid="R13" ref-type="bibr">13</xref>].</p>
+      <p id="P4">Although epitopes inducing neutralizing antibody have been identified in several structural proteins of the virus, neutralizing antibodies to GP5 play an especially important role in protection against infection [<xref rid="R14" ref-type="bibr">14</xref>–<xref rid="R16" ref-type="bibr">16</xref>]. The GP5 and M proteins are involved in binding of the virus to cellular receptors and its internalization into target cells. The M protein and the GP5-M complex interact with the heparin sulfate receptor on porcine alveolar macrophages (PAMs), the target cells of PRRSV [<xref rid="R17" ref-type="bibr">17</xref>]. The GP5-M protein complex acts as a ligand for the sialoadhesin receptor (CD169) in the presence of sialic acids on GP5 [<xref rid="R18" ref-type="bibr">18</xref>]. Co-expression of the GP5 and M proteins induces an immune response that is superior to that induced by GP5 or M protein alone [<xref rid="R19" ref-type="bibr">19</xref>, <xref rid="R20" ref-type="bibr">20</xref>]. Accordingly, several experimental vaccines have been developed, such as DNA vaccine, recombinant <italic>Mycobacterium bovis</italic> BCG, pseudotyped baculovirus, and adenovirus expressing both the GP5 and M proteins [<xref rid="R21" ref-type="bibr">21</xref>–<xref rid="R24" ref-type="bibr">24</xref>]. Those vaccines have consistently provided promising results in terms of protective efficacy and immunogenicity in pigs and mice, indicating the need for both proteins.</p>
+      <p id="P5">In an attempt to control PRRSV infections, several types of inactivated and modified live attenuated vaccines (MLVs) have been developed. It is now generally accepted that inactivated PRRSV vaccines are ineffective for preventing clinical signs and viremia caused by viral challenge [<xref rid="R25" ref-type="bibr">25</xref>, <xref rid="R26" ref-type="bibr">26</xref>]. In contrast, MLVs induce better protective immunity than inactivated vaccines [<xref rid="R27" ref-type="bibr">27</xref>, <xref rid="R28" ref-type="bibr">28</xref>]. The importance of genetic homology of MLVs to the target virus for generation of a vaccine is still equivocal. Some studies have reported protective efficacy of MLVs only against genetically closely related homologous strains [<xref rid="R29" ref-type="bibr">29</xref>, <xref rid="R30" ref-type="bibr">30</xref>]. In contrast, other studies have demonstrated that MLVs evoke protection even to genetically distant field strains [<xref rid="R31" ref-type="bibr">31</xref>, <xref rid="R32" ref-type="bibr">32</xref>]. Therefore, the protective efficacies of vaccines remain controversial, mainly because of the high genetic diversity and ill-defined pathogenesis of PRRSVs [<xref rid="R33" ref-type="bibr">33</xref>–<xref rid="R35" ref-type="bibr">35</xref>]. In addition, serious problems induced by MLVs include spreading of the vaccine virus to swine farms and reversion of the vaccine strain to a pathogenic virus [<xref rid="R36" ref-type="bibr">36</xref>, <xref rid="R37" ref-type="bibr">37</xref>]. Development of safer and more effective vaccines against PRRSV remains a crucial issue.</p>
+      <p id="P6">VLPs have received much attention as new candidate vaccines that can compensate for the disadvantages of inactivated vaccines and MLVs [<xref rid="R38" ref-type="bibr">38</xref>, <xref rid="R39" ref-type="bibr">39</xref>]. They lack genomes and are basically composed solely of viral structural proteins, rendering them non-infectious and incapable of reversion. Because only selected viral proteins assemble into supramolecular structures, they are highly immunogenic against the target proteins, as has been demonstrated for human hepatitis B virus and papillomavirus vaccines [<xref rid="R40" ref-type="bibr">40</xref>, <xref rid="R41" ref-type="bibr">41</xref>]. They can be used as a “differentiating infected from vaccinated animals” (DIVA) vaccine without inclusion of non-structural viral proteins [<xref rid="R42" ref-type="bibr">42</xref>]. More importantly, they induce a cellular immune response as well as humoral immunity [<xref rid="R43" ref-type="bibr">43</xref>–<xref rid="R45" ref-type="bibr">45</xref>]. Because of these advantages, several VLP vaccines have been developed for prevention of human and animal diseases [<xref rid="R38" ref-type="bibr">38</xref>, <xref rid="R43" ref-type="bibr">43</xref>, <xref rid="R46" ref-type="bibr">46</xref>].</p>
+      <p id="P7">So far, there have been no reports of the development of a VLP vaccine against PRRSV using the baculovirus expression system. The present report is the first to describe the development of a VLP vaccine against PRRSV, which is comprised of PRRSV GP5 and M proteins. We selected these proteins to generate VLPs because both GP5 and M are involved in viral structure formation, induction of neutralizing antibodies, and interaction with cellular receptors. After production of the VLPs, their immunogenicity with respect to humoral and cellular immune responses was evaluated in mice.</p>
+    </sec>
+    <sec sec-type="materials|methods" id="S2">
+      <title>Materials and methods</title>
+      <sec id="S3">
+        <title>Virus and cell lines</title>
+        <p id="P8">The PRRSV LMY strain (GenBank accession number DQ473474), a North American type isolated from Korea, was used in this study. The virus was propagated and titrated in MARC-145 cells grown and maintained in Dulbecco's modified Eagle's medium (DMEM) supplemented with 10 % heated-inactivated fetal bovine serum (FBS), 100 μg/ml streptomycin and 100 IU/ml penicillin at 37 °C in a humidified atmosphere of 5 % CO<sub>2</sub>. <italic>Spodoptera frugiperda</italic> Sf9 cells were maintained in suspension in serum-free SF900II medium (GIBCO, Grand Island, NY) at 27 °C in spinner flasks at a speed of 100-110 rpm.</p>
+      </sec>
+      <sec id="S4">
+        <title>Expression and purification of VLPs</title>
+        <p id="P9">VLPs containing the GP5 and M proteins of PRRSV were produced following the manufacturer's procedures. Briefly, full-length GP5 and M cDNA were obtained from the PRRSV LMY strain to generate recombinant baculoviruses (rBVs) expressing the two proteins. The full GP5 and M genes were amplified by polymerase chain reaction (PCR) by using Ex Taq Polymerase (Takara, Shiga, Japan) and the primers shown in <xref rid="T1" ref-type="table">Table 1</xref>. The PCR for amplification of the GP5 gene was conducted under the following thermal cycling conditions: an initial denaturation at 95 °C for 5 min, followed by 30 cycles of denaturation at 95 °C for 30 s, annealing at 52 °C for 30 s, and extension at 72 °C for 45 s, followed by a final 10-min extension at 72 °C. The amplification of the M gene was carried out under the same PCR conditions as were used for the GP5 gene except for an annealing temperature of 50 °C. The PCR products were cloned into the pGEM-T vector (Promega, Madison, WI). After digestion of the plasmid DNAs with the restriction enzymes indicated in <xref rid="T1" ref-type="table">Table 1</xref>, the GP5 and M genes were subcloned into the pFastBac™ 1 vector (Invitrogen, Carlsbad, CA), which has a mini Tn7. The cloned GP5 and M genes were further identified by DNA sequencing with the following vector-specific primers: forward primer 5′-AAG TGG TTC GCA TCC TCG-3′ and reverse primer 5′-GTA AAA CCT CTA CAA ATG TGG-3′. The pFastBac donor plasmids containing the GP5 or M genes were introduced by transformation into DH10Bac™ <italic>E. coli</italic> (Invitrogen), which contained a bacmid baculovirus shuttle vector with a mini-<italic>att</italic>Tn7 target site and a helper plasmid. Each recombinant bacmid was generated by transposition between the mini-Tn7 element on the pFast-Bac vector and the mini-<italic>att</italic>Tn target site on the Bacmid. After verification of <italic>E. coli</italic> with recombinant bacmids, recombinant bacmid DNA was isolated. The rBVs expressing the GP5 or M proteins were generated by transfecting sf9 insect cells with the recombinant bacmid DNA. Plaque assay was done with culture supernatants of the transfected sf9 insect cells to determine a multiplicity of infection (MOI) of the rBV. To generate the PRRSV GP5-M VLPs, sf9 insect cells (CRL-1711; American Type Culture Collection, Manassas, VA) were co-infected with rBVs expressing GP5 and M at an MOI of 1 and 2, respectively. Culture medium was collected and clarified by low-speed centrifugation (2,000 × g for 30 min at 4 °C) on day 3 postinfection. Further purification was performed by 20-60 % sucrose layer gradient ultracentrifugation at 20,000 × g for 16 h. The collected VLP fractions were concentrated by ultracentrifugation at 20,000 × g at 4 °C for 2 h. The final protein concentration of the VLPs was determined at 660 nm using a Protein Assay Kit (Pierce, Rockford, IL).</p>
+      </sec>
+      <sec id="S5">
+        <title>Electron microscopy</title>
+        <p id="P10">The purified VLPs (1-5 μg) were treated for 24 h at 4 °C in phosphate-buffered saline (PBS, pH 7.2) for negative staining of VLPs, adsorbed on freshly discharged plastic/ carbon-coated grids, and washed with deionized water. Washed VLP samples were stained with 2 % sodium phosphotungstate, pH 6.5. The stained VLPs were observed by transmission electron microscopy (Bio transmission electron microscope, model TECNAI G2; FEI, Hillsboro, OR) at magnifications ranging from 6,000 to 100,000 × (Korea Basic Science Institute, Daejeon, Korea).</p>
+      </sec>
+      <sec id="S6">
+        <title>Mouse immunization</title>
+        <p id="P11">All experiments were performed under the guidelines of the Institutional Animal Care and Use Committee (IACUC), Konkuk University, Korea (permit number KU12057). Female, 5- to 6-week-old BALB/C mice were divided into six groups (n=10 per group). Mice in groups 1, 2, 3, and 4 were immunized with 0.5, 1, 2, and 4 μg of the VLP vaccine, respectively. Mice in group 5 were immunized with a commercial inactivated PRRSV vaccine (CAVAV, Daejeon, Korea) as a positive control, and mice in group 6 received PBS as a negative control. The VLP vaccine and other control materials were administered to mice via the intramuscular (IM) route. Mice were immunized three times at 2-week intervals. Vaccines for the first immunization were mixed with Freund's complete adjuvant (Sigma-Aldrich, St. Louis, MO) prior to administration to the animal. The second and third immunizations were performed with vaccines mixed with Freund's incomplete adjuvant. Blood samples were collected by retro-orbital plexus puncture before and after each vaccination. The sera were collected after incubation of the blood samples at 37 °C for 1 h. The sera were stored at −20 °C prior to antibody titration and neutralization assay. Mice were sacrificed 2 weeks after the third vaccination to collect splenocytes for measurement of cytokines. In the following experiment, three groups of mice (n=10 per group) were additionally used to evaluate the immune response induced by a higher dose of VLP vaccine. Mice in groups 1 and 2 were immunized with 10 μg of the VLP vaccine mixed with Freund's complete adjuvant and alum, respectively. Mice in group 3 were injected with PBS as a negative control. Serum samples and splenocytes were obtained from the mice 3 weeks after vaccination.</p>
+      </sec>
+      <sec id="S7">
+        <title>Evaluation of humoral immune responses</title>
+        <p id="P12">Antibody titers were determined using an indirect enzyme-linked immunosorbent assay (ELISA) with purified recombinant GP5 protein as an antigen [<xref rid="R47" ref-type="bibr">47</xref>]. In brief, plate wells were coated overnight at 4 °C with 2 μg of GP5 per ml, diluted in PBS, pH 7.2. The coating solution was discarded, and the plates were washed three times with PBST washing buffer (PBS, pH 7.2, containing 0.05 % Tween-20). The coated plates were blocked with 100 μl of blocking buffer (5 % skim milk in PBS, pH 7.2) per well for 2 h at 37 °C. The plates were washed three times, and serum samples diluted 40-fold in PBST containing 2.5 % skim milk were added to the respective antigens and incubated for 1 h at 37 °C. After washing five times, 10,000-fold diluted horseradish peroxidase-labeled goat anti-mouse IgG (Serotec, Raleigh, NC) was added to each well, and the plates were incubated at 37 °C for 1 h. After five washes, tetramethylbenzidine (TMB) substrate was added to develop the color for 10 min at room temperature in the dark, and H<sub>2</sub>SO<sub>4</sub> was added to stop the reaction. The optical density (OD) values were determined at 450 nm with a Sunrise automatic ELISA reader (Tecan, Männedorf, Switzerland).</p>
+      </sec>
+      <sec id="S8">
+        <title>Virus neutralization test</title>
+        <p id="P13">The titers of PRRSV-neutralizing antibody in sera were determined by the fluorescence focus neutralization assay. Serum samples were heat inactivated at 56 °C for 30 min and were diluted 10-fold before the neutralization test. Twofold serially diluted sera were mixed with an equal volume of 200 TCID<sub>50</sub> of the PRRSV LMY strain in 96-well culture plates with DMEM containing 5 % FBS and incubated for 1 h at 37 °C in a humidified 5 % CO<sub>2</sub> atmosphere. After incubation, the mixtures were added to 96-well plates containing confluent MARC-145 cells that had been seeded 48 h earlier. The plates were incubated for 48 h at 37 °C in a humidified atmosphere containing 5 % CO<sub>2</sub>. The cells were fixed for 10 min with a solution of 50 % methanol and 50 % acetone. After washing with PBS, expression of the N protein of PRRSV was detected by incubation with monoclonal antibody SDOW17 diluted 1:200 and fluorescein isothiocyanate (FITC)–conjugated goat anti-mouse immunoglobulin G diluted 1:100 (Sigma-Aldrich). Neutralization titers were expressed as the reciprocal of the highest dilution that inhibited 90 % of the foci present in the control wells.</p>
+      </sec>
+      <sec id="S9">
+        <title>Determination of cytokine production</title>
+        <p id="P14">To analyze the cellular immune responses induced by the GP5-M VLP, the splenocytes were stimulated with the purified GP5-M VLP at a final concentration of 10 μg/ml. After 72 h, the cell culture supernatants were collected to examine the amounts of interleukin (IL)-4, IL-10, and interferon-gamma (IFN-γ) using commercially available cytokine quantitative ELISA kits (R&amp;D Systems, Minneapolis, MN), following the manufacturer's instructions. The cell viability was determined by an automatic cell counter (Adam, Digital Bio, Korea), following the manufacturer's instructions.</p>
+      </sec>
+      <sec id="S10">
+        <title>Western blot</title>
+        <p id="P15">Briefly, recombinant GP5 protein and VLPs at a concentration of 10-15 μg were diluted 1:2 with sample buffer and boiled for 5 min. The proteins were separated by 12 % sodium dodecyl sulfate-polyacrylamide gel electrophoresis (SDS-PAGE) and transferred to a nitrocellulose membrane (Whatman, Dassel, Germany). The membrane was blocked with 5 % nonfat dry milk in PBST at 4 °C overnight. It was then incubated with a primary antibody, rabbit anti-GP5 polyclonal antibody or mouse anti-M monoclonal antibody, in PBST containing 2.5 % nonfat dry milk at room temperature for 1 h. Then, the membrane was washed three times with PBST for 10 min each. The membrane was then incubated with secondary antibody, horseradish peroxidase (HRP)–conjugated goat anti-rabbit IgG (Southern Biotech, Birmingham, AL) or HRP-conjugated goat anti-mouse IgG (Serotec, Raleigh, NC), in 2.5 % nonfat dry milk in PBST for 1 h at room temperature. The membrane was washed three times with PBST for 10 min each. The specific antigenic proteins were visualized using the peroxidase-specific precipitating substrate 3,3-diaminobenzidine (DAB; Pierce).</p>
+      </sec>
+      <sec id="S11">
+        <title>Statistical analysis</title>
+        <p id="P16">Antibody titers and cytokine production were measured at least three times in triplicate. The significance of the difference in the experimental data between mice in the vaccinated and control groups was determined by Student's <italic>t</italic>-test with Instat version 3.0 (GraphPad Software, San Diego, CA). Statistical significance was determined at <italic>p</italic>&lt;0.05 and <italic>p</italic>&lt;0.001.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S12">
+      <title>Results</title>
+      <sec id="S13">
+        <title>Construction and characterization of VLPs</title>
+        <p id="P17">To determine the exact protein compositions in the VLPs, two antibodies, specific for the GP5 and M proteins, were employed in western blots. When the VLPs were reacted with a rabbit polyclonal antibody specific for GP5, the GP5 band was clearly recognized at 27.5 kDa (<xref rid="F1" ref-type="fig">Fig. 1a</xref>). The recombinant GP5 protein used as a positive control was also clearly detected by the antibody at 27.5 kDa. On the other hand, a single M protein band was detected at 19 kDa when the VLPs were reacted with a monoclonal antibody specific for the M protein (<xref rid="F1" ref-type="fig">Fig. 1b</xref>). In the next step, the VLPs were identified directly by TEM (<xref rid="F2" ref-type="fig">Fig. 2a</xref>). The spherical shape of VLPs with an approximate diameter of 60 nm was observed. The size and morphology of the VLPs closely resembled those of PRRSV particles in the commercial inactivated vaccine (<xref rid="F2" ref-type="fig">Fig. 2b</xref>). These data collectively demonstrated that VLPs were successfully formed in insect cells by the interaction of the GP5 and M proteins expressed by the two recombinant baculoviruses.</p>
+      </sec>
+      <sec id="S14">
+        <title>IgG response in mice to VLPs</title>
+        <p id="P18">GP5-specific IgG was not detected before vaccination in any of the mice immunized with VLPs or inactivated vaccine. However, GP5-specific antibodies appeared in all of the VLP-vaccinated mice after the first vaccination. Thereafter, their antibody titers were significantly (<italic>p</italic>&lt;0.05) increased by the second and third vaccinations with the VLP vaccine (<xref rid="F3" ref-type="fig">Fig. 3</xref>). Interestingly, mice immunized with the lowest dose (0.5 μg) and the highest dose (4.0 μg) of VLPs produced a similar quantity of antibody (<xref rid="F3" ref-type="fig">Fig. 3</xref>). The results indicated that the low dose of the VLPs was sufficient to induce high titers of antibody. However, the antibody titers determined in mice vaccinated with the inactivated PRRSV vaccine were considerably lower than those in mice vaccinated with the VLPs. In the next experiment, the titers of neutralizing antibody were determined with the same serum samples. Unlike the production profiles of total IgG antibody, neutralizing antibodies to PRRSV were only observed in mice vaccinated with 2.0 and 4.0 μg of the VLPs (<xref rid="T2" ref-type="table">Table 2</xref>). The two groups of mice produced neutralizing antibody titers of 1:20 and 1:40, respectively. Mice vaccinated with 0.5 and 1.0 μg of VLPs and the commercial inactivated PRRSV vaccine did not generate neutralizing antibodies. The two groups of mice immunized only once with 10 μg of VLP mixed with Freund's complete adjuvant and alum produced measurable amounts of IgG (O.D. values of about 0.4) after 3 weeks (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 1</xref>). In addition, their sera demonstrated relatively high titers of neutralizing antibodies (about 1:40, <xref rid="SD1" ref-type="supplementary-material">supplementary Table 1</xref>). These data indicated that the low and high doses of VLP were highly immunogenic in inducing total IgG antibodies and neutralizing antibodies in vaccinated mice.</p>
+      </sec>
+      <sec id="S15">
+        <title>Cytokine response in mice immunized with VLPs</title>
+        <p id="P19">The production of IL-4, IL-10, and IFN-γ increased in a dose-dependent manner in splenocytes of mice vaccinated with the VLP vaccine. The Th1-type cytokine IFN-γ was more prominently expressed than IL-4 and IL-10 in mice vaccinated with VLPs. The maximum amount of IL-4 and IL-10 secreted in the mice vaccinated with 4 μg of the VLP was about 100 and 200 pg/ml, respectively (<xref rid="F4" ref-type="fig">Fig. 4a and b</xref>). In contrast, the maximum amount of IFN-γ secreted in mice vaccinated with the same concentration of the VLP vaccine was about 800 pg/ml (<xref rid="F4" ref-type="fig">Fig. 4c</xref>). In addition, the amount of IFN-γ produced in mice vaccinated with 4.0 μg of VLPs was significantly higher (<italic>p</italic>&lt;0.001) than that in mice immunized with the commercial inactivated PRRSV vaccine or PBS. On the other hand, the amounts of IL-4 and IL-10 produced in mice vaccinated with the inactivated PRRSV vaccine were much higher than those in mice vaccinated with the VLPs. The two groups of mice immunized with 10 μg of VLPs also produced much higher levels of IFN-γ than IL-10 in their splenocytes (<xref rid="SD1" ref-type="supplementary-material">Supplementary Fig. 2</xref>). The amounts of these cytokines increased in a time-dependent manner, reaching a maximum at 72 h. The overall viability of splenocytes was about 86 % at 72 h (<xref rid="SD1" ref-type="supplementary-material">Supplementary Table 2</xref>). These data suggest that the VLP vaccine induces a strong Th1-type immune response.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="S16">
+      <title>Discussion</title>
+      <p id="P20">VLPs are composed of self-assembled, genome-free viral structural proteins. VLP-based vaccines are highly immunogenic and induces an antiviral immune responses because they consist of densely organized viral proteins in spherical form [<xref rid="R46" ref-type="bibr">46</xref>]. The absence of the possibility of generating revertants from live vaccine viruses is an important safety feature of VLPs. Therefore, VLPs are considered one of the most promising new vaccine candidates [<xref rid="R38" ref-type="bibr">38</xref>]. VLP-based vaccines have already been developed for use in humans and are being used clinically for prevention of hepatitis B virus and human papillomavirus infections [<xref rid="R40" ref-type="bibr">40</xref>, <xref rid="R41" ref-type="bibr">41</xref>, <xref rid="R48" ref-type="bibr">48</xref>]. Both vaccines have been shown to be highly protective in experimental and clinical studies [<xref rid="R49" ref-type="bibr">49</xref>, <xref rid="R50" ref-type="bibr">50</xref>]. For animals, several kinds of VLPs have been developed as experimental vaccines [<xref rid="R43" ref-type="bibr">43</xref>]. Since there had been no reports on the development of a VLP vaccine against PRRSV, we decided to generate a new VLP by employing the baculoviruses expression system. PRRSV VLPs were made by expressing the GP5 and M proteins of PRRSV in insect cells that were co-infected with GP5- and M-expressing recombinant baculoviruses.</p>
+      <p id="P21">The GP5 and M proteins of PRRSV are present as heterodimers linked by disulfide bonds in PRRSV particles and protein-expressing cells [<xref rid="R12" ref-type="bibr">12</xref>]. They have also been shown to be required to assemble PRRSV particles with N protein in mammalian cells transfected with cDNA encoding both proteins [<xref rid="R13" ref-type="bibr">13</xref>]. The counterparts to these proteins were identified in EAV as the necessary proteins to form basic virus particles in mammalian cells [<xref rid="R51" ref-type="bibr">51</xref>]. Therefore, the GP5 and M proteins were selected in this study as the most plausible protein candidates to make PRRSV VLPs. As expected, VLPs composed of the GP5 and M proteins were generated successfully in insect cells co-infected with two recombinant baculovirus expressing these proteins individually. The size and morphology of the VLPs composed of GP5 and M proteins were almost the same as those of PRRSV particles when examined by TEM. Therefore, the GP5 and M proteins without N protein were determined to be the basic components necessary to form PRRSV VLPs in insect cells. A recent study reported the presence of ORF5a as an alternative ORF5, which encodes a small protein designated as ORF5a protein, composed of 51 amino acids with an undefined function in PRRSV [<xref rid="R11" ref-type="bibr">11</xref>]. ORF5a contains 156 nucleotides (nt), and its interaction site precedes that of ORF5 by 10 nt. We assume that the ORF5a protein was not incorporated into the VLPs generated in this study, because the ORF5 sequence used to express the GP5 protein did not include the 10 nt preceding the start codon of ORF5. Therefore, the VLPs constructed in this study would be formed solely by the GP5 and M proteins. The process of PRRSV particle formation might have different features at the molecular level in mammalian cells than in insect cells.</p>
+      <p id="P22">Co-expression of the GP5 and M proteins has been shown to produce a better immune response than that induced by GP5 or M protein alone [<xref rid="R19" ref-type="bibr">19</xref>, <xref rid="R20" ref-type="bibr">20</xref>]. Therefore, we generated VLPs composed of both proteins by co-infection of insect cells with two recombinant baculoviruses expressing GP5 and M proteins. The VLPs induced high titers of GP5-specific IgG and PRRSV-specific neutralizing antibodies (1:20-1:40) in mice that were repeatedly vaccinated with 2 and 4 μg of the vaccine. Interestingly, neutralizing antibodies with a titer of about 1:40 could be produced by a single immunization with a much higher dose (10 μg) of the vaccine. In contrast, the commercial inactivated PRRSV vaccine induced very weak antibody production and no neutralizing antibody production in the vaccinated mice. The LMY strain used to generate the VLPs and the CA strain used in the commercial vaccine share 96 % identity in the nucleotide sequences of their GP5 and M genes (data not shown). This indicates that the two strains are closely related. Therefore, the meager antibody response in the mice vaccinated with the commercial vaccine could not be explained by the heterogeneity of the two strains. In contrast, we assume that the VLP vaccine contained approximately 100-fold more protein than the commercial vaccine. This might be one of the plausible reasons why the evident immune responses were only observed in the mice vaccinated with the VLP vaccine. A strong humoral immune responses to structural proteins incorporated into VLPs is commonly detected in many VLPs including influenza virus and human immunodeficiency virus VLPs [<xref rid="R52" ref-type="bibr">52</xref>, <xref rid="R53" ref-type="bibr">53</xref>]. Antibodies, especially to GP5, are mainly correlated with neutralization of PRRSV [<xref rid="R15" ref-type="bibr">15</xref>, <xref rid="R16" ref-type="bibr">16</xref>]. The serum neutralization antibody titer is the best indicator to predict regression of viremia in young pigs [<xref rid="R54" ref-type="bibr">54</xref>]. It has been experimentally proven that passively transferred neutralizing antibody provides protection against viremia at titers higher than 1:8 [<xref rid="R55" ref-type="bibr">55</xref>]. The VLPs developed in this study induced neutralizing antibody specific for GP5 at a titer higher than 20:1 in the vaccinated animals, even though they had been generated in mice. These data imply that the VLPs described in this study are potent in inducing neutralizing antibodies against the GP5 protein. Therefore, it would be interesting to ascertain whether these VLPs can induce high titers of neutralizing antibodies to give protection in pigs. Because of the differences in the immune systems of mice and pigs, it is not certain that the immune responses to the VLPs observed in mice can be exactly reproduced in pigs. Therefore, the protective effects of the VLP vaccine should be comparatively evaluated in pigs with other commercial vaccines.</p>
+      <p id="P23">PRRSV VLPs, but not the inactivated PRRSV vaccine, induced a strong Th1-type immune response in vaccinated mice in a dose-dependent manner. When spleen cells were stimulated with the VLPs <italic>in vitro</italic>, they produced a much higher concentration of IFN-γ when compared to the Th2-type cytokines IL-4 and IL10. Similar immune responses have been shown to be induced by several kinds of VLP vaccines, including those derived from influenza virus, human immunodeficiency virus-1, hepatitis B virus, and human papilloma virus [<xref rid="R52" ref-type="bibr">52</xref>, <xref rid="R56" ref-type="bibr">56</xref>–<xref rid="R58" ref-type="bibr">58</xref>]. Some part of these strong Th1 type-specific immune responses would be attained by interaction of VLPs with DCs, leading to stimulation of CD8<sup>+</sup> T cells [<xref rid="R57" ref-type="bibr">57</xref>, <xref rid="R59" ref-type="bibr">59</xref>, <xref rid="R60" ref-type="bibr">60</xref>]. VLP vaccines have several advantages compared to vector-based vaccines and DNA vaccines. One of the disadvantages of viral or bacterial vectors is the induction of antibodies to the vector's own proteins, which often reduces boosting effects. DNA vaccines induce relatively weak immune responses in large animals. In contrast, VLPs are composed of a few highly ordered viral proteins, which makes it possible to induce very specific humoral and cell-mediated immune responses toward the proteins presented on the VLPs [<xref rid="R46" ref-type="bibr">46</xref>]. Therefore, VLP vaccines are efficient in inducing target-antigen-specific immune responses. However, several critical issues have to be resolved to make commercial VLP vaccines, such as reducing the cost of production.</p>
+      <p id="P24">During the preparation of this manuscript, we did a challenge infection experiment with pigs immunized with the VLP vaccine. The pigs challenged with two different PRRSV strains were partially protected from the challenge. Significant reduction of viral load in the lungs and potent induction of IFN-γ in PBMC were observed in the vaccinated pigs (Chae KS and Choi IS, unpublished data).</p>
+      <p id="P25">In conclusion, we have developed, for the first time, a VLP vaccine composed of the GP5 and M proteins of PRRSV and evaluated its immunogenicity in mice. The VLP vaccine was highly immunogenic, inducing humoral and cellular immune responses over a wide range of doses. This VLP vaccine could serve as a platform to develop more advanced VLP vaccines for controlling PRRSV infection.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="S17">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="SD1">
+        <label>Supplemental</label>
+        <media xlink:href="NIHMS573234-supplement-Supplemental.pdf" orientation="portrait" xlink:type="simple" id="d36e588" position="anchor"/>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack id="S18">
+      <p>We thank Dr. J. H. Sur (Konkuk University, Korea) for providing monoclonal antibody SDOW17. This study was supported by funds provided from Korea Institute of Planning and Evaluation for Technology in Food, Agriculture, Forestry and Fisheries (IPET), Brain Korea 21, KBNP Inc., and Veterinary Science Research Institute, Konkuk University.</p>
+    </ack>
+    <fn-group>
+      <fn id="FN1" fn-type="supplementary-material">
+        <p><xref rid="SD1" ref-type="supplementary-material">Electronic supplementary material</xref> The online version of this article (doi:10.1007/s00705-013-1612-z) contains <xref rid="SD1" ref-type="supplementary-material">supplementary material</xref>, which is available to authorized users.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <ref id="R1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Neumann</surname>
+              <given-names>EJ</given-names>
+            </name>
+            <name>
+              <surname>Kliebenstein</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Johnson</surname>
+              <given-names>CD</given-names>
+            </name>
+            <name>
+              <surname>Mabry</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name>
+              <surname>Bush</surname>
+              <given-names>EJ</given-names>
+            </name>
+            <name>
+              <surname>Seitzinger</surname>
+              <given-names>AH</given-names>
+            </name>
+            <name>
+              <surname>Green</surname>
+              <given-names>AL</given-names>
+            </name>
+            <name>
+              <surname>Zimmerman</surname>
+              <given-names>JJ</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Assessment of the economic impact of porcine reproductive and respiratory syndrome on swine production in the United States</article-title>
+          <source>J Am Vet Med Assoc</source>
+          <volume>227</volume>
+          <fpage>385</fpage>
+          <lpage>392</lpage>
+          <pub-id pub-id-type="pmid">16121604</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Conzelmann</surname>
+              <given-names>KK</given-names>
+            </name>
+            <name>
+              <surname>Visser</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Van Woensel</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Thiel</surname>
+              <given-names>HJ</given-names>
+            </name>
+          </person-group>
+          <year>1993</year>
+          <article-title>Molecular characterization of porcine reproductive and respiratory syndrome virus, a member of the arterivirus group</article-title>
+          <source>Virology</source>
+          <volume>193</volume>
+          <fpage>329</fpage>
+          <lpage>339</lpage>
+          <pub-id pub-id-type="pmid">8438574</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meulenberg</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Hulst</surname>
+              <given-names>MM</given-names>
+            </name>
+            <name>
+              <surname>de Meijer</surname>
+              <given-names>EJ</given-names>
+            </name>
+            <name>
+              <surname>Moonen</surname>
+              <given-names>PL</given-names>
+            </name>
+            <name>
+              <surname>den Besten</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>de Kluyver</surname>
+              <given-names>EP</given-names>
+            </name>
+            <name>
+              <surname>Wensvoort</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Moormann</surname>
+              <given-names>RJ</given-names>
+            </name>
+          </person-group>
+          <year>1993</year>
+          <article-title>Lelystad virus, the causative agent of porcine epidemic abortion and respiratory syndrome (PEARS), is related to LDV and EAV</article-title>
+          <source>Virology</source>
+          <volume>192</volume>
+          <fpage>62</fpage>
+          <lpage>72</lpage>
+          <pub-id pub-id-type="pmid">8517032</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wensvoort</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Terpstra</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Pol</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>ter Laak</surname>
+              <given-names>EA</given-names>
+            </name>
+            <name>
+              <surname>Bloemraad</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>de Kluyver</surname>
+              <given-names>EP</given-names>
+            </name>
+            <name>
+              <surname>Kragten</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>van Buiten</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>den Besten</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Wagenaar</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <year>1991</year>
+          <article-title>Mystery swine disease in The Netherlands: the isolation of Lelystad virus</article-title>
+          <source>Vet Q</source>
+          <volume>13</volume>
+          <fpage>121</fpage>
+          <lpage>130</lpage>
+          <pub-id pub-id-type="pmid">1835211</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Collins</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Benfield</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Christianson</surname>
+              <given-names>WT</given-names>
+            </name>
+            <name>
+              <surname>Harris</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Hennings</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Shaw</surname>
+              <given-names>DP</given-names>
+            </name>
+            <name>
+              <surname>Goyal</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>McCullough</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Morrison</surname>
+              <given-names>RB</given-names>
+            </name>
+            <name>
+              <surname>Joo</surname>
+              <given-names>HS</given-names>
+            </name>
+          </person-group>
+          <year>1992</year>
+          <article-title>Isolation of swine infertility and respiratory syndrome virus (isolate ATCC VR-2332) in North America and experimental reproduction of the disease in gnotobiotic pigs</article-title>
+          <source>J Vet Diagn Invest</source>
+          <volume>4</volume>
+          <fpage>117</fpage>
+          <lpage>126</lpage>
+          <pub-id pub-id-type="pmid">1616975</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Terpstra</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Wensvoort</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Pol</surname>
+              <given-names>JM</given-names>
+            </name>
+          </person-group>
+          <year>1991</year>
+          <article-title>Experimental reproduction of porcine epidemic abortion and respiratory syndrome (mystery swine disease) by infection with Lelystad virus: Koch's postulates fulfilled</article-title>
+          <source>Vet Q</source>
+          <volume>13</volume>
+          <fpage>131</fpage>
+          <lpage>136</lpage>
+          <pub-id pub-id-type="pmid">1949539</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Allende</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Lewis</surname>
+              <given-names>TL</given-names>
+            </name>
+            <name>
+              <surname>Lu</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Rock</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Kutish</surname>
+              <given-names>GF</given-names>
+            </name>
+            <name>
+              <surname>Ali</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Doster</surname>
+              <given-names>AR</given-names>
+            </name>
+            <name>
+              <surname>Osorio</surname>
+              <given-names>FA</given-names>
+            </name>
+          </person-group>
+          <year>1999</year>
+          <article-title>North American and European porcine reproductive and respiratory syndrome viruses differ in non-structural protein coding regions</article-title>
+          <source>J Gen Virol</source>
+          <volume>80</volume>
+          <fpage>307</fpage>
+          <lpage>315</lpage>
+          <pub-id pub-id-type="pmid">10073689</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nelsen</surname>
+              <given-names>CJ</given-names>
+            </name>
+            <name>
+              <surname>Murtaugh</surname>
+              <given-names>MP</given-names>
+            </name>
+            <name>
+              <surname>Faaberg</surname>
+              <given-names>KS</given-names>
+            </name>
+          </person-group>
+          <year>1999</year>
+          <article-title>Porcine reproductive and respiratory syndrome virus comparison: divergent evolution on two continents</article-title>
+          <source>J Virol</source>
+          <volume>73</volume>
+          <fpage>270</fpage>
+          <lpage>280</lpage>
+          <pub-id pub-id-type="pmid">9847330</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meulenberg</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Petersen den Besten</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>de Kluyver</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>van Nieuwstadt</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Wensvoort</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Moormann</surname>
+              <given-names>RJ</given-names>
+            </name>
+          </person-group>
+          <year>1997</year>
+          <article-title>Molecular characterization of Lelystad virus</article-title>
+          <source>Vet Microbiol</source>
+          <volume>55</volume>
+          <fpage>197</fpage>
+          <lpage>202</lpage>
+          <pub-id pub-id-type="pmid">9220614</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wu</surname>
+              <given-names>WH</given-names>
+            </name>
+            <name>
+              <surname>Fang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Farwell</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Steffen-Bien</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Rowland</surname>
+              <given-names>RR</given-names>
+            </name>
+            <name>
+              <surname>Christopher-Hennings</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Nelson</surname>
+              <given-names>EA</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>A 10-kDa structural protein of porcine reproductive and respiratory syndrome virus encoded by ORF2b</article-title>
+          <source>Virology</source>
+          <volume>287</volume>
+          <fpage>183</fpage>
+          <lpage>191</lpage>
+          <pub-id pub-id-type="pmid">11504553</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Johnson</surname>
+              <given-names>CR</given-names>
+            </name>
+            <name>
+              <surname>Griggs</surname>
+              <given-names>TF</given-names>
+            </name>
+            <name>
+              <surname>Gnanandarajah</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Murtaugh</surname>
+              <given-names>MP</given-names>
+            </name>
+          </person-group>
+          <year>2011</year>
+          <article-title>Novel structural protein in porcine reproductive and respiratory syndrome virus encoded by an alternative ORF5 present in all arteriviruses</article-title>
+          <source>J Gen Virol</source>
+          <volume>92</volume>
+          <fpage>1107</fpage>
+          <lpage>1116</lpage>
+          <pub-id pub-id-type="pmid">21307222</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mardassi</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Massie</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Dea</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>1996</year>
+          <article-title>Intracellular synthesis, processing, and transport of proteins encoded by ORFs 5 to 7 of porcine reproductive and respiratory syndrome virus</article-title>
+          <source>Virology</source>
+          <volume>221</volume>
+          <fpage>98</fpage>
+          <lpage>112</lpage>
+          <pub-id pub-id-type="pmid">8661418</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R13">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wissink</surname>
+              <given-names>EH</given-names>
+            </name>
+            <name>
+              <surname>Kroese</surname>
+              <given-names>MV</given-names>
+            </name>
+            <name>
+              <surname>van Wijk</surname>
+              <given-names>HA</given-names>
+            </name>
+            <name>
+              <surname>Rijsewijk</surname>
+              <given-names>FA</given-names>
+            </name>
+            <name>
+              <surname>Meulenberg</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Rottier</surname>
+              <given-names>PJ</given-names>
+            </name>
+          </person-group>
+          <year>2005</year>
+          <article-title>Envelope protein requirements for the assembly of infectious virions of porcine reproductive and respiratory syndrome virus</article-title>
+          <source>J Virol</source>
+          <volume>79</volume>
+          <fpage>12495</fpage>
+          <lpage>12506</lpage>
+          <pub-id pub-id-type="pmid">16160177</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R14">
+        <label>14</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pirzadeh</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Dea</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>1998</year>
+          <article-title>Immune response in pigs vaccinated with plasmid DNA encoding ORF5 of porcine reproductive and respiratory syndrome virus</article-title>
+          <source>J Gen Virol</source>
+          <volume>79</volume>
+          <fpage>989</fpage>
+          <lpage>999</lpage>
+          <pub-id pub-id-type="pmid">9603313</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R15">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gonin</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Pirzadeh</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Gagnon</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>Dea</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>1999</year>
+          <article-title>Seroneutralization of porcine reproductive and respiratory syndrome virus correlates with antibody response to the GP5 major envelope glycoprotein</article-title>
+          <source>J Vet Diagn Invest</source>
+          <volume>11</volume>
+          <fpage>20</fpage>
+          <lpage>26</lpage>
+          <pub-id pub-id-type="pmid">9925207</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R16">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Weiland</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Wieczorek-Krohmer</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kohl</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Conzelmann</surname>
+              <given-names>KK</given-names>
+            </name>
+            <name>
+              <surname>Weiland</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <year>1999</year>
+          <article-title>Monoclonal antibodies to the GP5 of porcine reproductive and respiratory syndrome virus are more effective in virus neutralization than monoclonal antibodies to the GP4</article-title>
+          <source>Vet Microbiol</source>
+          <volume>66</volume>
+          <fpage>171</fpage>
+          <lpage>186</lpage>
+          <pub-id pub-id-type="pmid">10227120</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R17">
+        <label>17</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Delputte</surname>
+              <given-names>PL</given-names>
+            </name>
+            <name>
+              <surname>Vanderheijden</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Nauwynck</surname>
+              <given-names>HJ</given-names>
+            </name>
+            <name>
+              <surname>Pensaert</surname>
+              <given-names>MB</given-names>
+            </name>
+          </person-group>
+          <year>2002</year>
+          <article-title>Involvement of the matrix protein in attachment of porcine reproductive and respiratory syndrome virus to a heparin like receptor on porcine alveolar macrophages</article-title>
+          <source>J Virol</source>
+          <volume>76</volume>
+          <fpage>4312</fpage>
+          <lpage>4320</lpage>
+          <pub-id pub-id-type="pmid">11932397</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R18">
+        <label>18</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Van Breedam</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Van Gorp</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>JQ</given-names>
+            </name>
+            <name>
+              <surname>Crocker</surname>
+              <given-names>PR</given-names>
+            </name>
+            <name>
+              <surname>Delputte</surname>
+              <given-names>PL</given-names>
+            </name>
+            <name>
+              <surname>Nauwynck</surname>
+              <given-names>HJ</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>The M/GP(5) glycoprotein complex of porcine reproductive and respiratory syndrome virus binds the sialoadhesin receptor in a sialic acid-dependent manner</article-title>
+          <source>PLoS Pathog</source>
+          <volume>6</volume>
+          <fpage>e1000730</fpage>
+          <pub-id pub-id-type="pmid">20084110</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R19">
+        <label>19</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jiang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Xiao</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Fang</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Yu</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Song</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Niu</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>DNA vaccines co-expressing GP5 and M proteins of porcine reproductive and respiratory syndrome virus (PRRSV) display enhanced immunogenicity</article-title>
+          <source>Vaccine</source>
+          <volume>24</volume>
+          <fpage>2869</fpage>
+          <lpage>2879</lpage>
+          <pub-id pub-id-type="pmid">16446016</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R20">
+        <label>20</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zheng</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Bi</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Cao</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Co-expressing GP5 and M proteins under different promoters in recombinant modified vaccinia virus ankara (rMVA)-based vaccine vector enhanced the humoral and cellular immune responses of porcine reproductive and respiratory syndrome virus (PRRSV)</article-title>
+          <source>Virus Genes</source>
+          <volume>35</volume>
+          <fpage>585</fpage>
+          <lpage>595</lpage>
+          <pub-id pub-id-type="pmid">17922181</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R21">
+        <label>21</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bastos</surname>
+              <given-names>RG</given-names>
+            </name>
+            <name>
+              <surname>Dellagostin</surname>
+              <given-names>OA</given-names>
+            </name>
+            <name>
+              <surname>Barletta</surname>
+              <given-names>RG</given-names>
+            </name>
+            <name>
+              <surname>Doster</surname>
+              <given-names>AR</given-names>
+            </name>
+            <name>
+              <surname>Nelson</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Osorio</surname>
+              <given-names>FA</given-names>
+            </name>
+          </person-group>
+          <year>2002</year>
+          <article-title>Construction and immunogenicity of recombinant Mycobacterium bovis BCG expressing GP5 and M protein of porcine reproductive respiratory syndrome virus</article-title>
+          <source>Vaccine</source>
+          <volume>21</volume>
+          <fpage>21</fpage>
+          <lpage>29</lpage>
+          <pub-id pub-id-type="pmid">12443659</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R22">
+        <label>22</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jiang</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Jiang</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Tang</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Ma</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2006</year>
+          <article-title>Recombinant adenovirus expressing GP5 and M fusion proteins of porcine reproductive and respiratory syndrome virus induce both humoral and cell-mediated immune responses in mice</article-title>
+          <source>Vet Immunol Immunopathol</source>
+          <volume>113</volume>
+          <fpage>169</fpage>
+          <lpage>180</lpage>
+          <pub-id pub-id-type="pmid">16777236</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R23">
+        <label>23</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Fang</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Fan</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Jiang</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Pan</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Luo</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Xiao</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Construction and immunogenicity of pseudotype baculovirus expressing GP5 and M protein of porcine reproductive and respiratory syndrome virus</article-title>
+          <source>Vaccine</source>
+          <volume>25</volume>
+          <fpage>8220</fpage>
+          <lpage>8227</lpage>
+          <pub-id pub-id-type="pmid">17980465</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R24">
+        <label>24</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chia</surname>
+              <given-names>MY</given-names>
+            </name>
+            <name>
+              <surname>Hsiao</surname>
+              <given-names>SH</given-names>
+            </name>
+            <name>
+              <surname>Chan</surname>
+              <given-names>HT</given-names>
+            </name>
+            <name>
+              <surname>Do</surname>
+              <given-names>YY</given-names>
+            </name>
+            <name>
+              <surname>Huang</surname>
+              <given-names>PL</given-names>
+            </name>
+            <name>
+              <surname>Chang</surname>
+              <given-names>HW</given-names>
+            </name>
+            <name>
+              <surname>Tsai</surname>
+              <given-names>YC</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Pang</surname>
+              <given-names>VF</given-names>
+            </name>
+            <name>
+              <surname>Jeng</surname>
+              <given-names>CR</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>The immunogenicity of DNA constructs co-expressing GP5 and M proteins of porcine reproductive and respiratory syndrome virus conjugated by GPGP linker in pigs</article-title>
+          <source>Vet Microbiol</source>
+          <volume>146</volume>
+          <fpage>189</fpage>
+          <lpage>199</lpage>
+          <pub-id pub-id-type="pmid">20570063</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R25">
+        <label>25</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Scortti</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Prieto</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Alvarez</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Simarro</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Castro</surname>
+              <given-names>JM</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Failure of an inactivated vaccine against porcine reproductive and respiratory syndrome to protect gilts against a heterologous challenge with PRRSV</article-title>
+          <source>Vet Rec</source>
+          <volume>161</volume>
+          <fpage>809</fpage>
+          <lpage>813</lpage>
+          <pub-id pub-id-type="pmid">18083979</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R26">
+        <label>26</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kim</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>HK</given-names>
+            </name>
+            <name>
+              <surname>Jung</surname>
+              <given-names>JH</given-names>
+            </name>
+            <name>
+              <surname>Choi</surname>
+              <given-names>YJ</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Um</surname>
+              <given-names>CG</given-names>
+            </name>
+            <name>
+              <surname>Hyun</surname>
+              <given-names>SB</given-names>
+            </name>
+            <name>
+              <surname>Shin</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Jang</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Kang</surname>
+              <given-names>BK</given-names>
+            </name>
+            <name>
+              <surname>Moon</surname>
+              <given-names>HJ</given-names>
+            </name>
+            <name>
+              <surname>Song</surname>
+              <given-names>DS</given-names>
+            </name>
+          </person-group>
+          <year>2011</year>
+          <article-title>The assessment of efficacy of porcine reproductive respiratory syndrome virus inactivated vaccine based on the viral quantity and inactivation methods</article-title>
+          <source>Virol J</source>
+          <volume>8</volume>
+          <fpage>323</fpage>
+          <pub-id pub-id-type="pmid">21703032</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R27">
+        <label>27</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zuckermann</surname>
+              <given-names>FA</given-names>
+            </name>
+            <name>
+              <surname>Garcia</surname>
+              <given-names>EA</given-names>
+            </name>
+            <name>
+              <surname>Luque</surname>
+              <given-names>ID</given-names>
+            </name>
+            <name>
+              <surname>Christopher-Hennings</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Doster</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Brito</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Osorio</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Assessment of the efficacy of commercial porcine reproductive and respiratory syndrome virus (PRRSV) vaccines based on measurement of serologic response, frequency of gamma-IFN-producing cells and virological parameters of protection upon challenge</article-title>
+          <source>Vet Microbiol</source>
+          <volume>123</volume>
+          <fpage>69</fpage>
+          <lpage>85</lpage>
+          <pub-id pub-id-type="pmid">17376612</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R28">
+        <label>28</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Linhares</surname>
+              <given-names>DC</given-names>
+            </name>
+            <name>
+              <surname>Cano</surname>
+              <given-names>JP</given-names>
+            </name>
+            <name>
+              <surname>Wetzell</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Nerem</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Torremorell</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Dee</surname>
+              <given-names>SA</given-names>
+            </name>
+          </person-group>
+          <year>2012</year>
+          <article-title>Effect of modified-live porcine reproductive and respiratory syndrome virus (PRRSv) vaccine on the shedding of wild-type virus from an infected population of growing pigs</article-title>
+          <source>Vaccine</source>
+          <volume>30</volume>
+          <fpage>407</fpage>
+          <lpage>413</lpage>
+          <pub-id pub-id-type="pmid">22063389</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R29">
+        <label>29</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Labarque</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Reeth</surname>
+              <given-names>KV</given-names>
+            </name>
+            <name>
+              <surname>Nauwynck</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Drexler</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Van Gucht</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Pensaert</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Impact of genetic diversity of European-type porcine reproductive and respiratory syndrome virus strains on vaccine efficacy</article-title>
+          <source>Vaccine</source>
+          <volume>22</volume>
+          <fpage>4183</fpage>
+          <lpage>4190</lpage>
+          <pub-id pub-id-type="pmid">15474708</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R30">
+        <label>30</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Han</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Seo</surname>
+              <given-names>HW</given-names>
+            </name>
+            <name>
+              <surname>Shin</surname>
+              <given-names>JH</given-names>
+            </name>
+            <name>
+              <surname>Oh</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Kang</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Park</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Chae</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <year>2011</year>
+          <article-title>Effect of the modified live porcine reproductive and respiratory syndrome virus (PRRSV) vaccine on European and North American PRRSV shedding in semen from infected boars</article-title>
+          <source>Clin Vaccine Immunol</source>
+          <volume>18</volume>
+          <fpage>1600</fpage>
+          <lpage>1607</lpage>
+          <pub-id pub-id-type="pmid">21832096</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R31">
+        <label>31</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Martelli</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Gozio</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ferrari</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Rosina</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>De Angelis</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Quintavalla</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Bottarelli</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Borghetti</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <article-title>Efficacy of a modified live porcine reproductive and respiratory syndrome virus (PRRSV) vaccine in pigs naturally exposed to a heterologous European (Italian cluster) field strain: clinical protection and cell-mediated immunity</article-title>
+          <source>Vaccine</source>
+          <volume>27</volume>
+          <fpage>3788</fpage>
+          <lpage>3799</lpage>
+          <pub-id pub-id-type="pmid">19442420</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R32">
+        <label>32</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dwivedi</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Manickam</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Patterson</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Dodson</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Murtaugh</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Torrelles</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Schlesinger</surname>
+              <given-names>LS</given-names>
+            </name>
+          </person-group>
+          <year>2011</year>
+          <article-title>Cross-protective immunity to porcine reproductive and respiratory syndrome virus by intranasal delivery of a live virus vaccine with a potent adjuvant</article-title>
+          <source>Vaccine</source>
+          <volume>29</volume>
+          <fpage>4058</fpage>
+          <lpage>4066</lpage>
+          <pub-id pub-id-type="pmid">21419162</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R33">
+        <label>33</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meng</surname>
+              <given-names>XJ</given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <article-title>Heterogeneity of porcine reproductive and respiratory syndrome virus: implications for current vaccine efficacy and future vaccine development</article-title>
+          <source>Vet Microbiol</source>
+          <volume>74</volume>
+          <fpage>309</fpage>
+          <lpage>329</lpage>
+          <pub-id pub-id-type="pmid">10831854</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R34">
+        <label>34</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Prieto</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Alvarez</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Martinez-Lobo</surname>
+              <given-names>FJ</given-names>
+            </name>
+            <name>
+              <surname>Simarro</surname>
+              <given-names>I</given-names>
+            </name>
+            <name>
+              <surname>Castro</surname>
+              <given-names>JM</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Similarity of European porcine reproductive and respiratory syndrome virus strains to vaccine strain is not necessarily predictive of the degree of protective immunity conferred</article-title>
+          <source>Vet J</source>
+          <volume>175</volume>
+          <fpage>356</fpage>
+          <lpage>363</lpage>
+          <pub-id pub-id-type="pmid">17560818</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R35">
+        <label>35</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Murtaugh</surname>
+              <given-names>MP</given-names>
+            </name>
+            <name>
+              <surname>Genzow</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2011</year>
+          <article-title>Immunological solutions for treatment and prevention of porcine reproductive and respiratory syndrome (PRRS)</article-title>
+          <source>Vaccine</source>
+          <volume>29</volume>
+          <fpage>8192</fpage>
+          <lpage>8204</lpage>
+          <pub-id pub-id-type="pmid">21925560</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R36">
+        <label>36</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Madsen</surname>
+              <given-names>KG</given-names>
+            </name>
+            <name>
+              <surname>Hansen</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Madsen</surname>
+              <given-names>ES</given-names>
+            </name>
+            <name>
+              <surname>Strandbygaard</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Botner</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Sorensen</surname>
+              <given-names>KJ</given-names>
+            </name>
+          </person-group>
+          <year>1998</year>
+          <article-title>Sequence analysis of porcine reproductive and respiratory syndrome virus of the American type collected from Danish swine herds</article-title>
+          <source>Arch Virol</source>
+          <volume>143</volume>
+          <fpage>1683</fpage>
+          <lpage>1700</lpage>
+          <pub-id pub-id-type="pmid">9787654</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R37">
+        <label>37</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nielsen</surname>
+              <given-names>HS</given-names>
+            </name>
+            <name>
+              <surname>Oleksiewicz</surname>
+              <given-names>MB</given-names>
+            </name>
+            <name>
+              <surname>Forsberg</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Stadejek</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Botner</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Storgaard</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>Reversion of a live porcine reproductive and respiratory syndrome virus vaccine investigated by parallel mutations</article-title>
+          <source>J Gen Virol</source>
+          <volume>82</volume>
+          <fpage>1263</fpage>
+          <lpage>1272</lpage>
+          <pub-id pub-id-type="pmid">11369869</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R38">
+        <label>38</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ludwig</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Wagner</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Virus-like particles-universal molecular toolboxes</article-title>
+          <source>Curr Opin Biotechnol</source>
+          <volume>18</volume>
+          <fpage>537</fpage>
+          <lpage>545</lpage>
+          <pub-id pub-id-type="pmid">18083549</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R39">
+        <label>39</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Roldao</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Mellado</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>Castilho</surname>
+              <given-names>LR</given-names>
+            </name>
+            <name>
+              <surname>Carrondo</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Alves</surname>
+              <given-names>PM</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>Virus-like particles in vaccine development</article-title>
+          <source>Expert Rev Vaccines</source>
+          <volume>9</volume>
+          <fpage>1149</fpage>
+          <lpage>1176</lpage>
+          <pub-id pub-id-type="pmid">20923267</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R40">
+        <label>40</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McAleer</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>Buynak</surname>
+              <given-names>EB</given-names>
+            </name>
+            <name>
+              <surname>Maigetter</surname>
+              <given-names>RZ</given-names>
+            </name>
+            <name>
+              <surname>Wampler</surname>
+              <given-names>DE</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name>
+              <surname>Hilleman</surname>
+              <given-names>MR</given-names>
+            </name>
+          </person-group>
+          <year>1984</year>
+          <article-title>Human hepatitis B vaccine from recombinant yeast</article-title>
+          <source>Nature</source>
+          <volume>307</volume>
+          <fpage>178</fpage>
+          <lpage>180</lpage>
+          <pub-id pub-id-type="pmid">6318124</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R41">
+        <label>41</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kirnbauer</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Booy</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Cheng</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Lowy</surname>
+              <given-names>DR</given-names>
+            </name>
+            <name>
+              <surname>Schiller</surname>
+              <given-names>JT</given-names>
+            </name>
+          </person-group>
+          <year>1992</year>
+          <article-title>Papillomavirus L1 major capsid protein self-assembles into viruslike particles that are highly immunogenic</article-title>
+          <source>Proc Natl Acad Sci USA</source>
+          <volume>89</volume>
+          <fpage>12180</fpage>
+          <lpage>12184</lpage>
+          <pub-id pub-id-type="pmid">1334560</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R42">
+        <label>42</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lee</surname>
+              <given-names>DH</given-names>
+            </name>
+            <name>
+              <surname>Park</surname>
+              <given-names>JK</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>YN</given-names>
+            </name>
+            <name>
+              <surname>Song</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Kang</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Park</surname>
+              <given-names>SY</given-names>
+            </name>
+            <name>
+              <surname>Choi</surname>
+              <given-names>IS</given-names>
+            </name>
+            <name>
+              <surname>Song</surname>
+              <given-names>CS</given-names>
+            </name>
+          </person-group>
+          <year>2011</year>
+          <article-title>H9N2 avian influenza virus-like particle vaccine provides protective immunity and a strategy for the differentiation of infected from vaccinated animals</article-title>
+          <source>Vaccine</source>
+          <volume>29</volume>
+          <fpage>4003</fpage>
+          <lpage>4007</lpage>
+          <pub-id pub-id-type="pmid">21463681</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R43">
+        <label>43</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brun</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Bárcena</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Blanco</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Borrego</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Dory</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Escribano</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Le Gall-Reculé</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Ortego</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Dixon</surname>
+              <given-names>LK</given-names>
+            </name>
+          </person-group>
+          <year>2011</year>
+          <article-title>Current strategies for subunit and genetic viral veterinary vaccine development</article-title>
+          <source>Virus Res</source>
+          <volume>157</volume>
+          <fpage>1</fpage>
+          <lpage>12</lpage>
+          <pub-id pub-id-type="pmid">21316403</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R44">
+        <label>44</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kirkegaard</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Wheatley</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Melchjorsen</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Bahrami</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Pedersen</surname>
+              <given-names>FS</given-names>
+            </name>
+            <name>
+              <surname>Center</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Purcell</surname>
+              <given-names>DF</given-names>
+            </name>
+            <name>
+              <surname>Ostergaard</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Duch</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Tolstrup</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>2011</year>
+          <article-title>Induction of humoral and cellular immune responses against the HIV-1 envelope protein using gamma-retroviral virus-like particles</article-title>
+          <source>Virol J</source>
+          <volume>8</volume>
+          <fpage>381</fpage>
+          <pub-id pub-id-type="pmid">21806819</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R45">
+        <label>45</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pegu</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Helmus</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Gupta</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Tarwater</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Caruso</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Shen</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Ross</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <year>2011</year>
+          <article-title>Induction of strong anti-HIV cellular immunity by a combination of Clostridium perfringens expressing HIV gag and virus like particles</article-title>
+          <source>Curr HIV Res</source>
+          <volume>9</volume>
+          <fpage>613</fpage>
+          <lpage>622</lpage>
+          <pub-id pub-id-type="pmid">22211658</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R46">
+        <label>46</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vicente</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Roldao</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Peixoto</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Carrondo</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Alves</surname>
+              <given-names>PM</given-names>
+            </name>
+          </person-group>
+          <year>2011</year>
+          <article-title>Large-scale production and purification of VLP-based vaccines</article-title>
+          <source>J Invertebr Pathol</source>
+          <volume>107</volume>
+          <fpage>S42</fpage>
+          <lpage>S48</lpage>
+          <pub-id pub-id-type="pmid">21784230</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R47">
+        <label>47</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kurstak</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Tijssen</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Kurstak</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Morisset</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <year>1986</year>
+          <article-title>Enzyme immunoassays and related procedures in diagnostic medical virology</article-title>
+          <source>Bull World Health Organ</source>
+          <volume>64</volume>
+          <fpage>465</fpage>
+          <lpage>479</lpage>
+          <pub-id pub-id-type="pmid">3533302</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R48">
+        <label>48</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sasagawa</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Pushko</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Steers</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Gschmeissner</surname>
+              <given-names>SE</given-names>
+            </name>
+            <name>
+              <surname>Hajibagheri</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Finch</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Crawford</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Tommasino</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <year>1995</year>
+          <article-title>Synthesis and assembly of virus-like particles of human papillomaviruses type 6 and type 16 in fission yeast Schizosaccharomyces pombe</article-title>
+          <source>Virology</source>
+          <volume>206</volume>
+          <fpage>126</fpage>
+          <lpage>135</lpage>
+          <pub-id pub-id-type="pmid">7831768</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R49">
+        <label>49</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Assad</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Francis</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>1999</year>
+          <article-title>Over a decade of experience with a yeast recombinant hepatitis B vaccine</article-title>
+          <source>Vaccine</source>
+          <volume>18</volume>
+          <fpage>57</fpage>
+          <lpage>67</lpage>
+          <pub-id pub-id-type="pmid">10501235</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R50">
+        <label>50</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Haupt</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Sings</surname>
+              <given-names>HL</given-names>
+            </name>
+          </person-group>
+          <year>2011</year>
+          <article-title>The efficacy and safety of the quadrivalent human papillomavirus 6/11/16/18 vaccine gardasil</article-title>
+          <source>J Adolesc Health</source>
+          <volume>49</volume>
+          <fpage>467</fpage>
+          <lpage>475</lpage>
+          <pub-id pub-id-type="pmid">22018560</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R51">
+        <label>51</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wieringa</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>de Vries</surname>
+              <given-names>AA</given-names>
+            </name>
+            <name>
+              <surname>van der Meulen</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Godeke</surname>
+              <given-names>GJ</given-names>
+            </name>
+            <name>
+              <surname>Onderwater</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>van Tol</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Koerten</surname>
+              <given-names>HK</given-names>
+            </name>
+            <name>
+              <surname>Mommaas</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Snijder</surname>
+              <given-names>EJ</given-names>
+            </name>
+            <name>
+              <surname>Rottier</surname>
+              <given-names>PJ</given-names>
+            </name>
+          </person-group>
+          <year>2004</year>
+          <article-title>Structural protein requirements in equine arteritis virus assembly</article-title>
+          <source>J Virol</source>
+          <volume>78</volume>
+          <fpage>13019</fpage>
+          <lpage>13027</lpage>
+          <pub-id pub-id-type="pmid">15542653</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R52">
+        <label>52</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bright</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Carter</surname>
+              <given-names>DM</given-names>
+            </name>
+            <name>
+              <surname>Daniluk</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Toapanta</surname>
+              <given-names>FR</given-names>
+            </name>
+            <name>
+              <surname>Ahmad</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Gavrilov</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Massare</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Pushko</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Mytle</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Rowe</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Ross</surname>
+              <given-names>TM</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Influenza virus-like particles elicit broader immune responses than whole virion inactivated influenza virus or recombinant hemagglutinin</article-title>
+          <source>Vaccine</source>
+          <volume>25</volume>
+          <fpage>3871</fpage>
+          <lpage>3878</lpage>
+          <pub-id pub-id-type="pmid">17337102</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R53">
+        <label>53</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wagner</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Fliessbach</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Wanner</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Motz</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Niedrig</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Deby</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>von Brunn</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Wolf</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <year>1992</year>
+          <article-title>Studies on processing, particle formation, and immunogenicity of the HIV-1 gag gene product: a possible component of a HIV vaccine</article-title>
+          <source>Arch Virol</source>
+          <volume>127</volume>
+          <fpage>117</fpage>
+          <lpage>137</lpage>
+          <pub-id pub-id-type="pmid">1456888</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R54">
+        <label>54</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Molina</surname>
+              <given-names>RM</given-names>
+            </name>
+            <name>
+              <surname>Cha</surname>
+              <given-names>SH</given-names>
+            </name>
+            <name>
+              <surname>Chittick</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Lawson</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Murtaugh</surname>
+              <given-names>MP</given-names>
+            </name>
+            <name>
+              <surname>Nelson</surname>
+              <given-names>EA</given-names>
+            </name>
+            <name>
+              <surname>Christopher-Hennings</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Yoon</surname>
+              <given-names>KJ</given-names>
+            </name>
+            <name>
+              <surname>Evans</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Rowland</surname>
+              <given-names>RR</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>WH</given-names>
+            </name>
+            <name>
+              <surname>Zimmerman</surname>
+              <given-names>JJ</given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <article-title>Immune response against porcine reproductive and respiratory syndrome virus during acute and chronic infection</article-title>
+          <source>Vet Immunol Immunopathol</source>
+          <volume>126</volume>
+          <fpage>283</fpage>
+          <lpage>292</lpage>
+          <pub-id pub-id-type="pmid">18835044</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R55">
+        <label>55</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lopez</surname>
+              <given-names>OJ</given-names>
+            </name>
+            <name>
+              <surname>Oliveira</surname>
+              <given-names>MF</given-names>
+            </name>
+            <name>
+              <surname>Garcia</surname>
+              <given-names>EA</given-names>
+            </name>
+            <name>
+              <surname>Kwon</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Doster</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Osorio</surname>
+              <given-names>FA</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Protection against porcine reproductive and respiratory syndrome virus (PRRSV) infection through passive transfer of PRRSV-neutralizing antibodies is dose dependent</article-title>
+          <source>Clin Vaccine Immunol</source>
+          <volume>14</volume>
+          <fpage>269</fpage>
+          <lpage>275</lpage>
+          <pub-id pub-id-type="pmid">17215336</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R56">
+        <label>56</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schirmbeck</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Bohm</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Reimann</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <year>1996</year>
+          <article-title>Virus-like particles induce MHC class I-restricted T-cell responses. Lessons learned from the hepatitis B small surface antigen</article-title>
+          <source>Intervirology</source>
+          <volume>39</volume>
+          <fpage>111</fpage>
+          <lpage>119</lpage>
+          <pub-id pub-id-type="pmid">8957677</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R57">
+        <label>57</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tsunetsugu-Yokota</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Morikawa</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Isogai</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kawana-Tachikawa</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Odawara</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Nakamura</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Grassi</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Autran</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Iwamoto</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <year>2003</year>
+          <article-title>Yeast-derived human immunodeficiency virus type 1 p55(gag) virus-like particles activate dendritic cells (DCs) and induce perforin expression in Gag-specific CD8(+) T cells by cross-presentation of DCs</article-title>
+          <source>J Virol</source>
+          <volume>77</volume>
+          <fpage>10250</fpage>
+          <lpage>10259</lpage>
+          <pub-id pub-id-type="pmid">12970409</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R58">
+        <label>58</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>García-Piñeres</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Hildesheim</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Dodd</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Kemp</surname>
+              <given-names>TJ</given-names>
+            </name>
+            <name>
+              <surname>Williams</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Harro</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Lowy</surname>
+              <given-names>DR</given-names>
+            </name>
+            <name>
+              <surname>Schiller</surname>
+              <given-names>JT</given-names>
+            </name>
+            <name>
+              <surname>Pinto</surname>
+              <given-names>LA</given-names>
+            </name>
+          </person-group>
+          <year>2007</year>
+          <article-title>Cytokine and chemokine profiles following vaccination with human papillomavirus type 16 L1 Virus-like particles</article-title>
+          <source>Clin Vaccine Immunol</source>
+          <volume>14</volume>
+          <fpage>984</fpage>
+          <lpage>989</lpage>
+          <pub-id pub-id-type="pmid">17596432</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R59">
+        <label>59</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lenz</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Day</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>Pang</surname>
+              <given-names>YY</given-names>
+            </name>
+            <name>
+              <surname>Frye</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Jensen</surname>
+              <given-names>PN</given-names>
+            </name>
+            <name>
+              <surname>Lowy</surname>
+              <given-names>DR</given-names>
+            </name>
+            <name>
+              <surname>Schiller</surname>
+              <given-names>JT</given-names>
+            </name>
+          </person-group>
+          <year>2001</year>
+          <article-title>Papillomavirus-like particles induce acute activation of dendritic cells</article-title>
+          <source>J Immunol</source>
+          <volume>166</volume>
+          <fpage>5346</fpage>
+          <lpage>5355</lpage>
+          <pub-id pub-id-type="pmid">11313370</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R60">
+        <label>60</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Song</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Wittman</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Byers</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Tapia</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Warren</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Heaton</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Connolly</surname>
+              <given-names>K</given-names>
+            </name>
+          </person-group>
+          <year>2010</year>
+          <article-title>In vitro stimulation of human influenza-specific CD8+ T cells by dendritic cells pulsed with an influenza virus-like particle (VLP) vaccine</article-title>
+          <source>Vaccine</source>
+          <volume>28</volume>
+          <fpage>5524</fpage>
+          <lpage>5532</lpage>
+          <pub-id pub-id-type="pmid">20600506</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig id="F1" orientation="portrait" position="float">
+      <label>Fig. 1</label>
+      <caption>
+        <p>Detection of GP5 and M proteins in PRRSV VLPs. The protein components in the VLPs were determined by western blot. <bold>a</bold> The recombinant GP5 protein and the VLPs were reacted with rabbit anti-GP5 polyclonal antibody. A GP5-specific band was identified at 27.5 kDa. <italic>Lane 1</italic>, standard protein marker; <italic>lane 2</italic>, recombinant GP5 protein; <italic>lane 3</italic>, VLPs composed of the GP5 and M proteins. <bold>b</bold> VLPs were reacted with mouse anti-M monoclonal antibody. An M-protein-specific band was detected at 19 kDa. <italic>Lane 1</italic>, standard protein marker; lane 2, VLPs composed of the GP5 and M proteins</p>
+      </caption>
+      <graphic xlink:href="nihms573234f1"/>
+    </fig>
+    <fig id="F2" orientation="portrait" position="float">
+      <label>Fig. 2</label>
+      <caption>
+        <p>Examination of the morphology of PRRSV VLPs by electron microscopy. The forms of the VLPs (<bold>a</bold>) and PRRSV particles (<bold>b</bold>) in the inactivated vaccine were observed by TEM after negative staining of the samples</p>
+      </caption>
+      <graphic xlink:href="nihms573234f2"/>
+    </fig>
+    <fig id="F3" orientation="portrait" position="float">
+      <label>Fig. 3</label>
+      <caption>
+        <p>Antibody titers in mice immunized with PRRSV VLPs. Mice in four groups were immunized with 0.5, 1.0, 2.0, and 4.0 μg of the VLPs. Mice in two groups were immunized with a commercial inactivated PRRSV vaccine and PBS as positive and negative controls, respectively. All mice were vaccinated three times at 2-week intervals. Blood samples were obtained from mice before the first, second, and third vaccinations and 2 weeks after the third vaccination (0, 2, 4, and 6 weeks as shown in the insert). Total IgG titers were determined by ELISA using GP5 as an antigen. The antibody titers in serum samples collected at 4 and 6 weeks from mice vaccinated with 0.5, 1, 2, and 4 μg of the VLPs were significantly higher at <italic>p</italic>&lt;0.001 (***) than those determined in mice vaccinated with the inactivated PRRSV vaccine and PBS</p>
+      </caption>
+      <graphic xlink:href="nihms573234f3"/>
+    </fig>
+    <fig id="F4" orientation="portrait" position="float">
+      <label>Fig. 4</label>
+      <caption>
+        <p>Cytokine expression profiles in splenocytes. Spleens were taken from VLP-vaccinated and positive and negative control mice at 2 weeks after the third vaccination. Splenocytes were prepared as single cell suspensions. The splenocytes were stimulated with the VLPs for 3 days. Cell culture supernatants were collected, and the amounts of IL-4, IL-10, and IFN-γ were determined by ELISA. <bold>a</bold> The amount of IL-4 produced in mice vaccinated with the commercial PRRSV vaccine was significantly higher at <italic>p</italic>&lt;0.05 (<sup>+</sup>) than that of the PBS group. <bold>b</bold> The amounts of IL-10 produced from mice vaccinated with 2 and 4 μg of the VLP vaccine and the commercial PRRSV vaccine were significantly higher at <italic>p</italic>&lt;0.001 (<sup>+ + +</sup>) than that of the PBS group. <bold>c</bold> The amounts of IFN-c produced from mice vaccinated with 2 and 4 μg of the VLP vaccine were significantly higher at <italic>p</italic>&lt;0.001 (<sup>+ + +</sup>) than that of the PBS group. The amount of IFN-γ produced from mice vaccinated with 4 μg of the VLP vaccine was significantly higher at <italic>p</italic>&lt;0.001 (***) than that of the commercial PRRSV vaccine group</p>
+      </caption>
+      <graphic xlink:href="nihms573234f4"/>
+    </fig>
+    <table-wrap id="T1" position="float" orientation="portrait">
+      <label>Table 1</label>
+      <caption>
+        <title>Primer sequences for PCR and the sizes of PCR products</title>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th valign="top" align="left" rowspan="1" colspan="1">Primer name</th>
+            <th valign="top" align="left" rowspan="1" colspan="1">Sequence</th>
+            <th valign="top" align="left" rowspan="1" colspan="1">Nucleotide position of ORF<xref rid="TFN4" ref-type="table-fn">d</xref></th>
+            <th valign="top" align="left" rowspan="1" colspan="1">PCR product (ORF)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">GP5 forward</td>
+            <td align="left" valign="top" rowspan="1" colspan="1"><italic><underline>CTC GAG</underline></italic><xref rid="TFN1" ref-type="table-fn">a</xref> ATG TTG GGG AAA TGC TTG</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">13,788</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">615 bp (603 bp)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">GP5 reverse</td>
+            <td align="left" valign="top" rowspan="1" colspan="1"><italic><underline>GCA TGC</underline></italic><xref rid="TFN2" ref-type="table-fn">b</xref> CTA AGG ATG ACC CCA TTG TTC CGC</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">14,390</td>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">M forward</td>
+            <td align="left" valign="top" rowspan="1" colspan="1"><italic>GCA TGC</italic><xref rid="TFN2" ref-type="table-fn">b</xref> ATG GGG TCG TCC TTA GAT GAC</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">14,375</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">537 bp (525 bp)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">M reverse</td>
+            <td align="left" valign="top" rowspan="1" colspan="1"><italic><underline>AAG CTT</underline></italic><xref rid="TFN3" ref-type="table-fn">c</xref> TTA TTT GGC ATA TTT GAC AAG CA</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">14,899</td>
+            <td align="left" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN1">
+          <label>a</label>
+          <p>Restriction enzyme site for <italic>Xho</italic>I</p>
+        </fn>
+        <fn id="TFN2">
+          <label>b</label>
+          <p>Restriction enzyme site for <italic>Sph</italic>I</p>
+        </fn>
+        <fn id="TFN3">
+          <label>c</label>
+          <p>Restriction enzyme site for <italic>Hind</italic>III</p>
+        </fn>
+        <fn id="TFN4">
+          <label>d</label>
+          <p>Nucleotide positions of ORF5 and ORF6 in the PRRSV LMY strain</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+    <table-wrap id="T2" position="float" orientation="portrait">
+      <label>Table 2</label>
+      <caption>
+        <title>Determination of neutralizing antibody titers</title>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th valign="top" align="left" rowspan="1" colspan="1">Vaccine</th>
+            <th valign="top" align="left" rowspan="1" colspan="1">NA titer<xref rid="TFN5" ref-type="table-fn">a</xref></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">0.5 μg of VLPs</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">None</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">1.0 μg of VLPs</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">None</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">2.0 μg of VLPs</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">1:20</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">4.0 μg of VLPs</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">1:40</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">PRRSV inactivated vaccine</td>
+            <td align="left" valign="top" rowspan="1" colspan="1">None</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN5">
+          <label>a</label>
+          <p>NA titers were determined by the fluorescence focus neutralization assay with serum samples collected from mice vaccinated with different doses of the VLPs and the PRRSV inactivated vaccine</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+  </floats-group>
+</article>

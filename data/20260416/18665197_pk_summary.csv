@@ -1,0 +1,70 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+Daidzein,Daidzein,Blood,Infants,N/A,N/A,6,Saliva & Blood,Correlation (Kendall’s tau-b),N/A,0.20,N/A,N/A,Range,6,6,N/A,N/A,N/A
+Daidzein,Daidzein,Blood,Infants,N/A,N/A,6,Urine & Blood,Correlation (Kendall’s tau-b),N/A,−0.20,N/A,N/A,Range,6,6,N/A,N/A,N/A
+Daidzein,Daidzein,Saliva,Infants,N/A,N/A,62,Urine & Saliva,Correlation (Kendall’s tau-b),N/A,0.00,N/A,N/A,Range,62,62,N/A,N/A,N/A
+Daidzein,Daidzein,Urine,Infants,N/A,N/A,119,Urine & Saliva,Correlation (Kendall’s tau-b),N/A,0.07,N/A,N/A,Range,N/A,119,N/A,N/A,N/A
+Daidzein,Daidzein,Urine,Infants,N/A,N/A,17,Saliva & Blood,Correlation (Kendall’s tau-b),Mean,0.26,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Daidzein,Daidzein,Urine,Infants,N/A,N/A,21,Urine & Blood,Correlation (Kendall’s tau-b),Mean,-0.04,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Daidzein,Daidzein,Urine,Infants,N/A,N/A,23,Saliva & Blood,Correlation (Kendall’s tau-b),N/A,0.27,N/A,N/A,Range,N/A,23,N/A,N/A,N/A
+Daidzein,Daidzein,Urine,Infants,N/A,N/A,27,Urine & Blood,Correlation (Kendall’s tau-b),N/A,-0.02,N/A,N/A,Range,N/A,27,N/A,N/A,N/A
+Daidzein,Daidzein,Urine,Infants,N/A,N/A,57,Urine & Saliva,Correlation (Kendall’s tau-b),Mean,0.11,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Genistein,Genistein,Blood,Infants,N/A,N/A,21,Urine & Blood,Correlation (Kendall’s tau-b),Mean,0.37,N/A,N/A,N/A,N/A,N/A,<0.05,N/A,N/A
+Genistein,Genistein,Blood,Infants,N/A,N/A,6,Urine & Blood,Correlation (Kendall’s tau-b),Mean,0.20,N/A,N/A,Range,6,N/A,N/A,N/A,N/A
+Genistein,Genistein,Saliva,Infants,N/A,N/A,57,Urine & Saliva,Correlation (Kendall’s tau-b),Mean,0.25,N/A,N/A,N/A,N/A,N/A,<0.05,N/A,N/A
+Genistein,Genistein,Saliva,Infants,N/A,N/A,62,Urine & Saliva,Correlation (Kendall’s tau-b),Mean,0.05,N/A,N/A,Range,62,N/A,N/A,N/A,N/A
+Genistein,Genistein,Urine,Infants,N/A,N/A,119,Urine & Saliva,Correlation (Kendall’s tau-b),Mean,0.15,N/A,N/A,N/A,N/A,N/A,<0.05,N/A,N/A
+Genistein,Genistein,Urine,Infants,N/A,N/A,17,Saliva & Blood,Correlation (Kendall’s tau-b),Mean,0.24,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Genistein,Genistein,Urine,Infants,N/A,N/A,23,Saliva & Blood,Correlation (Kendall’s tau-b),Mean,0.25,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Genistein,Genistein,Urine,Infants,N/A,N/A,27,Urine & Blood,Correlation (Kendall’s tau-b),Mean,0.33,N/A,N/A,N/A,N/A,N/A,<0.05,N/A,N/A
+Genistein,Genistein,Urine,Infants,N/A,N/A,6,Saliva & Blood,Correlation (Kendall’s tau-b),Mean,0.07,N/A,N/A,Range,6,N/A,N/A,N/A,N/A
+Isoflavones,Daidzein,Saliva,Infants,N/A,0-12 mo,119,Daidzein,ng/ml,Geometric Mean,5.2,Geometric SD,5.8,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Daidzein,Saliva,Infants,N/A,0-12 mo,120,Daidzein,ng/ml,Geometric Mean,0.4,Geometric SD,1.4,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Daidzein,Saliva,Infants,N/A,0-12 mo,120,Daidzein,ng/ml,Geometric Mean,0.4,Geometric SD,1.5,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Daidzein,Urine,Infants,N/A,2 mo,8,Daidzein,ng/ml,Mean,25399,SD,8081,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Daidzein,Urine,Infants,N/A,0-12 mo,125,Daidzein,ng/ml,Geometric Mean,5097,Geometric SD,2.5,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Daidzein,Urine,Infants,N/A,0-12 mo,128,Daidzein,ng/ml,Geometric Mean,8.2,Geometric SD,5.0,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Daidzein,Urine,Infants,N/A,0-12 mo,128,Daidzein,ng/ml,Geometric Mean,1.5,Geometric SD,2.9,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Daidzein,Urine,Infants,N/A,2 mo,5,Daidzein,ng/ml,Mean,155,SD,64,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Daidzein,Urine,Infants,N/A,2 mo,5,Daidzein,ng/ml,Mean,697,SD,653,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Daidzein,Urine,Infants,N/A,4 mo,5,Daidzein,ng/ml,Mean,179,SD,80,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Daidzein,Urine,Infants,N/A,4 mo,6,Daidzein,ng/ml,Mean,706,SD,555,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Daidzein,Urine,Infants,N/A,4 mo,7,Daidzein,ng/ml,Mean,17577,SD,5452,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Daidzein,Whole Blood,Infants,N/A,0-12 mo,30,Daidzein,ng/ml,Geometric Mean,5.5,Geometric SD,1.5,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Daidzein,Whole Blood,Infants,N/A,0-12 mo,20,Daidzein,ng/ml,Geometric Mean,5.3,Geometric SD,1.2,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Daidzein,Whole Blood,Infants,N/A,0-12 mo,27,Daidzein,ng/ml,Geometric Mean,256,Geometric SD,2.8,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Equol,Urine,Infants,N/A,2 mo,8,Equol,ng/ml,Mean,6.4,SD,6.4,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Equol,Urine,Infants,N/A,2 mo,125,Equol,ng/ml,Geometric Mean,2.3,Geometric SD,4.6,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Equol,Urine,Infants,N/A,0-12 mo,128,Equol,ng/ml,Geometric Mean,2.4,Geometric SD,2.1,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Equol,Urine,Infants,N/A,0-12 mo,128,Equol,ng/ml,Geometric Mean,1.7,Geometric SD,1.2,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Equol,Urine,Infants,N/A,2 mo,5,Equol,ng/ml,Mean,42.6,SD,2.3,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Equol,Urine,Infants,N/A,2 mo,5,Equol,ng/ml,Mean,2.9,SD,2.9,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Equol,Urine,Infants,N/A,4 mo,5,Equol,ng/ml,Mean,59,SD,42,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Equol,Urine,Infants,N/A,4 mo,6,Equol,ng/ml,Mean,40.5,SD,3.3,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Equol,Urine,Infants,N/A,4 mo,7,Equol,ng/ml,Mean,1.5,SD,1.5,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Genistein,Plasma,Infants,N/A,2-4 wk,11,Genistein,ng/ml,Mean,5.2,SD,3.5,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Daidzein,Plasma,Infants,N/A,2-4 wk,11,Daidzein,ng/ml,Mean,5.2,SD,3.5,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Daidzein,Plasma,Infants,N/A,4 mo,7,Daidzein,ng/ml,Mean,295,SD,59.5,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Daidzein,Plasma,Infants,N/A,4 mo,7,Daidzein,ng/ml,Mean,2.1,SD,0.3,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Daidzein,Plasma,Infants,N/A,4 mo,7,Daidzein,ng/ml,Mean,1.5,SD,0.1,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Equol,Plasma,Infants,N/A,4 mo,7,Equol,ng/ml,N/A,2.0,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Equol,Plasma,Infants,N/A,4 mo,7,Equol,ng/ml,Mean,4.1,SD,0.5,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Equol,Plasma,Infants,N/A,4 mo,7,Equol,ng/ml,N/A,0.5,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Equol,Plasma,Infants,N/A,4 mo,7,Genistein,ng/ml,Mean,684,SD,443,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Genistein,Plasma,Infants,N/A,4 mo,7,Genistein,ng/ml,Mean,3.2,SD,0.7,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Genistein,Plasma,Infants,N/A,4 mo,7,Genistein,ng/ml,Mean,2.8,SD,0.7,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Genistein,Plasma,Infants,N/A,9-24 mo,3,Genistein,ng/ml,Mean,276,SD,106,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Daidzein,Plasma,Infants,N/A,9-24 mo,3,Daidzein,ng/ml,Mean,276,SD,106,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Genistein,Saliva,Infants,N/A,0-12 mo,119,Genistein,ng/ml,Geometric Mean,11.6,Geometric SD,5.1,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Genistein,Saliva,Infants,N/A,0-12 mo,120,Genistein,ng/ml,Geometric Mean,0.7,Geometric SD,1.3,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Genistein,Urine,Infants,N/A,0-12 mo,120,Genistein,ng/ml,Geometric Mean,5891,Geometric SD,3.1,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Genistein,Urine,Infants,N/A,0-12 mo,128,Genistein,ng/ml,Geometric Mean,11.8,Geometric SD,5.7,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Genistein,Urine,Infants,N/A,0-12 mo,128,Genistein,ng/ml,Geometric Mean,1.5,Geometric SD,4.8,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Genistein,Urine,Infants,N/A,2 mo,5,Genistein,ng/ml,Mean,205,SD,52,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Genistein,Urine,Infants,N/A,2 mo,5,Genistein,ng/ml,Mean,1284,SD,1089,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Genistein,Urine,Infants,N/A,2 mo,8,Genistein,ng/ml,Mean,26451,SD,8559,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Genistein,Urine,Infants,N/A,4 mo,5,Genistein,ng/ml,Mean,161,SD,108,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Genistein,Urine,Infants,N/A,4 mo,6,Genistein,ng/ml,Mean,536,SD,393,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Genistein,Urine,Infants,N/A,4 mo,7,Genistein,ng/ml,Mean,8758,SD,3808,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Genistein,Whole Blood,Infants,N/A,0-12 mo,30,Genistein,ng/ml,Geometric Mean,14.2,Geometric SD,1.5,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Genistein,Whole Blood,Infants,N/A,0-12 mo,20,Genistein,ng/ml,Geometric Mean,10.8,Geometric SD,2.7,N/A,N/A,N/A,N/A,N/A,N/A
+Isoflavones,Genistein,Whole Blood,Infants,N/A,0-12 mo,27,Genistein,ng/ml,Geometric Mean,757,Geometric SD,3.0,N/A,N/A,N/A,N/A,N/A,N/A

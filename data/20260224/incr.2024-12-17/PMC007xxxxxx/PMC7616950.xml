@@ -1,0 +1,858 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties manuscript?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">2984705R</journal-id>
+      <journal-id journal-id-type="nlm-ta">Cancer Res</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Cancer Res</journal-id>
+      <journal-title-group>
+        <journal-title>Cancer research</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0008-5472</issn>
+      <issn pub-type="epub">1538-7445</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">33687948</article-id>
+      <article-id pub-id-type="pmc">7616950</article-id>
+      <article-id pub-id-type="manuscript">EMS128783</article-id>
+      <article-id pub-id-type="doi">10.1158/0008-5472.CAN-20-4026</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Patient-derived organoids for precision cancer immunotherapy</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Grönholm</surname>
+            <given-names>Mikaela</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A2" ref-type="aff">2</xref>
+          <xref rid="A3" ref-type="aff">3</xref>
+          <xref rid="A4" ref-type="aff">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Feodoroff</surname>
+            <given-names>Michaela</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A2" ref-type="aff">2</xref>
+          <xref rid="A4" ref-type="aff">4</xref>
+          <xref rid="A5" ref-type="aff">5</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Antignani</surname>
+            <given-names>Gabriella</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A2" ref-type="aff">2</xref>
+          <xref rid="A4" ref-type="aff">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Martins</surname>
+            <given-names>Beatriz</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A2" ref-type="aff">2</xref>
+          <xref rid="A4" ref-type="aff">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hamdan</surname>
+            <given-names>Firas</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A2" ref-type="aff">2</xref>
+          <xref rid="A4" ref-type="aff">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Cerullo</surname>
+            <given-names>Vincenzo</given-names>
+          </name>
+          <xref rid="A1" ref-type="aff">1</xref>
+          <xref rid="A2" ref-type="aff">2</xref>
+          <xref rid="A3" ref-type="aff">3</xref>
+          <xref rid="A4" ref-type="aff">4</xref>
+          <xref rid="A6" ref-type="aff">6</xref>
+          <xref rid="CR1" ref-type="corresp">*</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>1</label>Laboratory of Immunovirotherapy, Faculty of Pharmacy, University of Helsinki, Viikinkaari 5E, 00790 Helsinki, Finland</aff>
+      <aff id="A2"><label>2</label>Drug Research Program, Division of Pharmaceutical Biosciences, Faculty of Pharmacy, University of Helsinki, Finland</aff>
+      <aff id="A3"><label>3</label>iCAN Digital Precision Cancer Medicine Flagship, University of Helsinki, Finland</aff>
+      <aff id="A4"><label>4</label>TRIMM, Translational Immunology Research Program, University of Helsinki, Finland</aff>
+      <aff id="A5"><label>5</label>FIMM, Institute for Molecular Medicine Finland, Helsinki Institute for Life Sciences (HiLIFE), University of Helsinki, Helsinki, Finland</aff>
+      <aff id="A6"><label>6</label>Department of Molecular Medicine and Medical Biotechnology and CEINGE, Naples University Federico II, 80131, Naples, Italy</aff>
+      <author-notes>
+        <corresp id="CR1">
+<label>*</label>Corresponding author: Vincenzo Cerullo, <email>vincenzo.cerullo@helsinki.fi</email>, Phone:+358294159328</corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>25</day>
+        <month>6</month>
+        <year>2021</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <day>15</day>
+        <month>6</month>
+        <year>2021</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>09</day>
+        <month>3</month>
+        <year>2021</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>10</day>
+        <month>12</month>
+        <year>2024</year>
+      </pub-date>
+      <volume>81</volume>
+      <issue>12</issue>
+      <fpage>3149</fpage>
+      <lpage>3155</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available to download for the purposes of text mining, consistent with the principles of UK copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P1">Cancer immunotherapy has revolutionized the way tumors are treated. Nevertheless, efficient and robust testing platforms are still missing, including clinically relevant human ex vivo tumor assays that allow pre-treatment testing of cancer therapies and selection of the most efficient and safe therapy for a specific patient. In the case of immunotherapy, this testing platform would require not only cancer cells but also the tumor microenvironment, including immune cells. Here we discuss the applications of patient-derived tumor organoid cultures and the possibilities in using complex immune-organoid cultures to provide pre-clinical testing platforms for precision cancer immunotherapy.</p>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="S1">
+      <title>Cancer immunotherapy</title>
+      <p id="P2">Cancer immunotherapy exploits the immune system to fight the disease. Our immune system already has a complex series of mechanisms to detect and eradicate cancer cells, but many on them are inactivated during cancer progression (<xref rid="R1" ref-type="bibr">1</xref>). There are several ways immunotherapy can aid the immune system in recognizing the tumor, initiating an immune response or boosting an existing one against the neoplastic cells. Non-specific immunotherapy can strengthen the overall activity of the immune system by introducing adjuvants such as cytokines or other cell signalling molecules. Specific immunotherapy, on the other hand, requires the identification of one or more tumor targets that the immune response can turn against to induce an antigen-specific immune response. This can be achieved using anti-cancer vaccines, dendritic cell (DC) therapy or oncolytic viruses, which engage the host immune system. Immunotherapy can also target cancer cells through the administration of immune system components that either act directly on the tumor to kill it or unleash the effect of pre-existing immunity. These include T cell and antibody-based therapies. For a more extensive review on different cancer immunotherapies, see (<xref rid="R2" ref-type="bibr">2</xref>)(<xref rid="R3" ref-type="bibr">3</xref>). Outstanding results have been observed in some patients treated with cancer immunotherapies, especially using immune checkpoint inhibitors and chimeric antigen receptor (CAR) cells, indicating that it is possible to restore the body’s defense against a tumor (<xref rid="R4" ref-type="bibr">4</xref>)(<xref rid="R5" ref-type="bibr">5</xref>). However, to date, many immunotherapies have demonstrated success in only a selected group of cancers and patients. The lack of efficacy can be due to poor immunogenicity of the tumor, immune suppression mediated by the tumor and the tumor microenvironment (TME) or tumor evasion.</p>
+      <p id="P3">In contrast to chemotherapies, immunotherapies lack a proper model to test their efficacy. Murine models, that are very helpful for studying classic drug efficacy, are not relevant for all forms of immunotherapy as the murine immune system differs too much from the human. Hence, there is a need to find alternative models that recapitulate the human disease while conserving all the peculiarities of the human immune system. Human cell lines and patient derived tumor xenografts (PDTX) have been used as models, but tumor organoids and complex tumor immune-organoids might represent the new frontier.</p>
+    </sec>
+    <sec id="S2">
+      <title>Patient-derived organoids</title>
+      <p id="P4">Patient-derived tumor organoids (PDTOs) have become a favourable model for cancer treatment testing and prediction. Organoids are three-dimensional multicellular structures that can be cultured to resemble the original tissue upon embedment in a 3D matrix (<xref rid="R6" ref-type="bibr">6</xref>)(<xref rid="R7" ref-type="bibr">7</xref>). In 2009, Sato et al. described the generation of organoids from mouse intestinal stem cells (<xref rid="R8" ref-type="bibr">8</xref>), which formed the starting point for other organoid culture protocols of multiple mouse and human epithelia. Organoids contain self-organizing capacities and can be grown from pluripotent embryonic stem cells or induced pluripotent stem cells (iPSCs) to mimic embryonic developmental processes, or from adult stem cells to model tissue homeostasis or disease progression. The development of PDTO cultures presented a novel approach to model human cancers <italic toggle="yes">in vitro</italic>. So far, tumor tissue from several tumor types has successfully been cultured as organoids, the majority of which originate from epithelial cancers (<xref rid="R9" ref-type="bibr">9</xref>). In contrast to organoids, spheroids are clusters of cells which do not self-assemble or regenerate. Cell aggregation is prompted in low-adhesion culture conditions, which does not require a scaffold, and result in sphere-shaped 3D structures.</p>
+      <p id="P5">To culture tumor organoids, cells derived from tumor tissue are dissociate physically or enzymatically, embedded in an extracellular matrix and grown in the presence of culture media containing specific growth factors and/or inhibitors required by that tissue (<xref rid="R10" ref-type="bibr">10</xref>). The choice of biological or synthetic scaffold mimicking the extracellular matrix (ECM) depends on the tissue and can have different porosity, permeability, surface chemistry and mechanical characteristics. Hydrogels such as Matrigel matrix or collagen I have been successfully used in many organoid cultures. Matrigel is a basement-membrane matrix extracted from mouse sarcoma. It is not that well defined, display batch-to-batch variability and cannot be used for organoid expansion in animal-free or GMP-compliant systems. Synthetic scaffolds with precise ECM composition could overcome these limitations providing well-defined, reproducible, xenogenic-free alternatives (<xref rid="R11" ref-type="bibr">11</xref>)(<xref rid="R12" ref-type="bibr">12</xref>). Tumor organoids display variable growth rates and reach different sizes (<xref rid="R13" ref-type="bibr">13</xref>)(<xref rid="R14" ref-type="bibr">14</xref>). This depends on the chosen culture system but is also affected by the viability and amount of necrosis in the original tumor tissue, whether samples were taken pre- or posttreatment and the sample processing time and technique.</p>
+      <p id="P6">Tumor organoids have several advantages over pre-existing tumor models. Although 2D cell lines are cost-efficient and easy to culture, observe and measure, they lack the complexity of tumors. Moreover, PDTOs better maintain key genetic and phenotypic features from their parental tumour (<xref rid="R15" ref-type="bibr">15</xref>). This was shown for lung and breast cancer organoids, which successfully retained the histopathological characteristics and recapitulated the genomic landscape of the cancer subtypes, and their response to different drugs correlated with the genomic alterations in the tumors (<xref rid="R16" ref-type="bibr">16</xref>)(<xref rid="R13" ref-type="bibr">13</xref>). Nevertheless, culture stability may vary between tumor-types and culture conditions. Therefore, characterizing and following the genotype and phenotype of the organoid over time is critical to avoid culturing only one or a few dominant clones from the heterogenous tumor tissue and to ensure that the model is representative of the original tumor.</p>
+      <p id="P7">Human tumors engrafted in mouse hosts, PDTXs, retain therapeutically relevant genomic aberrations found in the original tumor, but in contrast to PDTXs, PDTOs can be expanded with high efficiency, cultured for long term and eventually cryopreserved. These features allow generating tumour organoid biobanks and provide a platform for high-throughput drug screens at a lower cost than animal models and with fewer ethical concerns (<xref rid="R15" ref-type="bibr">15</xref>)(<xref rid="R13" ref-type="bibr">13</xref>). Indeed, PDTOs have been used as preclinical models to predict response to anti-cancer agents (<xref rid="R17" ref-type="bibr">17</xref>)(<xref rid="R18" ref-type="bibr">18</xref>)(<xref rid="R19" ref-type="bibr">19</xref>). Drug screening on specific patient’s tumors permit personalized therapy predictions as PDTOs can be generated and expanded <italic toggle="yes">in vitro</italic> in a timeline compatible with therapeutic decision-making. Screening for compounds that selectively kill tumor cells and do not show toxicity on non-cancerous cells is made possible by testing both tumor and normal tissue -derived organoids. Furthermore, research is underway to create patient-specific <italic toggle="yes">in vitro</italic> organ models using iPSCs for personalized toxicity screening and adverse drug reaction characterization (<xref rid="R20" ref-type="bibr">20</xref>).</p>
+    </sec>
+    <sec id="S3">
+      <title>Complex organoids</title>
+      <p id="P8">Although tumor organoids can help to accurately predict a patient’s response to therapy and choose personalized treatment strategies, tumor organoids do not fully recapitulate the tumor microenvironment. In addition to transformed cells, established neoplasms contain abundant and heterogeneous non-transformed components of stroma, fibroblasts, endothelial and immune cells. The lack of immune components limits the value of organoids as platforms to test immunotherapy. Nevertheless, attempts to grow more complex organoids are underway (<xref rid="F1" ref-type="fig">Figure 1</xref>).</p>
+    </sec>
+    <sec id="S4">
+      <title>Adding immune components</title>
+      <p id="P9">There are two different approaches to organoid-immune cell co-cultures; retaining and expanding endogenous immune cells within tumor organoids or the addition of immune cells to organoids.</p>
+      <p id="P10">One of the first papers describing the expansion and activation of endogenous immune cells within organoid cultures was done with human epithelial breast tissue (<xref rid="R21" ref-type="bibr">21</xref>). The authors cultured ductal epithelial organoids and demonstrate the presence of immune cell populations within the culture, with 90% of the CD45+ immune cell population being CD3+ T cells characteristic of intraepithelial lymphocytes. In another study, murine- and patient-derived organotypic tumor spheroids cultured in a collagen matrix for up to 9 days in a microfluidics device were able to retain autologous lymphoid and myeloid cell populations (<xref rid="R22" ref-type="bibr">22</xref>).</p>
+      <p id="P11">The air-liquid interphase culturing system (ALI) can maintain native stromal and immune components. Tumor organoids are embedded in a collagen gel where one surface is in contact with the liquid culture and one is exposed to air. Using the ALI-culture method with human lung cancer and colorectal cancer (CRC) organoids, endogenous CD45+ immune cell populations survived for more than 10 days, although there was a marked reduction in the number of CD3+ cells (<xref rid="R23" ref-type="bibr">23</xref>). In a more recent large-scale study, the ALI-method was used to culture patient-derived organoids from different surgically resected tumors types (<xref rid="R24" ref-type="bibr">24</xref>). Cultures retained the tumor epithelium and its stromal microenvironment with fibroblasts and immune cells including tumor-associated macrophages, cytotoxic T lymphocytes (CTLs), T-helper cells, B-cells, natural killer (NK) cells and NK T cells for 30 days. In addition, these cultures recapitulated the T cell receptor (TCR) heterogeneity of the T-cells found in the original tumors.</p>
+      <p id="P12">The other approach to immune-organoid cultures encompasses expanding organoids and immune cells separately and then establishing a co-culture with both components. Dijkstra et al cultured CRC and non-small-cell lung carcinoma (NSCLC) human organoids derived from tumor biopsies or surgical resections in Geltrex basement membrane together with expanded autologous peripheral blood mononuclear cells (PBMCs) (<xref rid="R25" ref-type="bibr">25</xref>). PBMCs were stimulated weekly with autologous tumor organoids in the presence of IL-2, and plate bound anti-CD28 and anti-PD-1 antibodies. This co-culture could be used to enrich tumor-reactive CD8+ populations from the peripheral blood of patients. Another co-culture contained pancreatic tumor organoids derived from surgical specimens grown in Matrigel, with patient-matched cancer associated fibroblasts (CAFs) and peripheral blood lymphocytes (<xref rid="R26" ref-type="bibr">26</xref>). T-cells remained viable after 6 days in culture. Tumor-dependent lymphocyte infiltration and activation of myofibroblast-like CAFs were observed in these models. Finally, a patient-derived gastric organoid co-culture grown in Matrigel with dendritic cells (DCs) and CTLs purified from the patient’s blood, was used to model the protective mechanism of increased PD-L1 expression in response to <italic toggle="yes">H</italic>. <italic toggle="yes">pylori</italic> infection (<xref rid="R27" ref-type="bibr">27</xref>). Inhibition of PD-L1/PD-1 interactions induced proliferation of CTLs within the co-culture and organoid killing.</p>
+      <p id="P13">Although there are successful examples of immune-organoids modeling the complex interactions between the tumor and immune cells and their effect on treatment (summarized in the last section of this review), the properties of the original tumor will affect the outcome. In inflamed tumors, immune cells are closely associated with tumor cells, while some tumors only display immune cells embedded in the surrounding stroma or lack immune cells completely. This will affect the immune-cell composition of early organoid cultures and the option to retain and expand these immune cells. If organoids are cultured over time, exogenous immune components need to be added. This provides more control of the specific cell types included, but the complexity of the patient-specific immune cell composition, containing numerous different cell types within the tumor and TME, cannot be easily replicated. The source of exogenous immune cells can be patient-specific PBMCs or allogeneic immune cells. Allogeneic cultures propose a challenge if major histocompatibility complex (MHC) molecules on organoid cells are recognized as non-self by donor T cells. This will result in high background killing compared to autologous systems, which may impair assay specificity. If antigen presentation to T cells are assayed, autologous co-cultures are needed, or alternatively, HLA matched immune cells.</p>
+      <p id="P14">Choosing the appropriate method for immune-organoid co-cultures will depend on the downstream assays. For therapies that exert their effect in hours, short organoid-immune cell co-cultures are fitting. Therapies with an effect over time pose an additional challenge, since longer co-cultures are required that support the viability of both tumor and immune cells, and the timing of the addition of immune components needs to be optimized.</p>
+    </sec>
+    <sec id="S5">
+      <title>Adding vasculature</title>
+      <p id="P15">Organoids in culture reach a limited size beyond which diffusion alone no longer allows exchange of oxygen, nutrient and metabolites, resulting in the formation of a central hypoxic core. This can be seen with organoids or spheroids measuring over 100-200 μm in size, while organoids with a diameter over 500 μm develop necrosis (<xref rid="R28" ref-type="bibr">28</xref>)(<xref rid="R29" ref-type="bibr">29</xref>). To overcome this, organoid vascularization and perfusion are needed, which supports the growth of larger, viable organoids. On the other hand, organoids can be exploited to model hypoxia and necrosis in tumors (<xref rid="R30" ref-type="bibr">30</xref>).</p>
+      <p id="P16">Achieving vascularization of organoids remains a major challenge in the field to maintain organoid complexity and scale. Perfusion flow to the organoid through endothelial cell-lined channels could enable the generation of larger-sized organoids and prevent the formation of a necrotic core, but more complex organoids containing blood vessel-like structures can also be created.</p>
+      <p id="P17">Organoid angiogenesis is achieved by engraftment of organoids in vasculature-rich animal tissue, including chicken chorion allantois membrane (CAM) models, with host vasculature infiltrating the organoids (<xref rid="R31" ref-type="bibr">31</xref>). This was seen when human PSC-derived brain organoids were transplanted into adult mouse brain, which revealed extensive infiltration of host vasculature (<xref rid="R32" ref-type="bibr">32</xref>). Another study incorporated mesodermal progenitor cells into human tumor and neural organoids, which resulted in the formation of vascularized organoids <italic toggle="yes">in vitro</italic> (<xref rid="R31" ref-type="bibr">31</xref>). Vasculature can be added to <italic toggle="yes">in vitro</italic> co-cultures as layer-by-layer deposition of endothelial cells, or by selective removal of material to form tubular voids which are seeded with endothelial cells and connected to perfusion networks (<xref rid="R33" ref-type="bibr">33</xref>). Alternatively, using compartmentalized microfluidic chips, vascularization can be induced and guided by VEGF and hypoxia gradients in organoid-endothelial cell co-cultures (<xref rid="R34" ref-type="bibr">34</xref>)(<xref rid="R33" ref-type="bibr">33</xref>).</p>
+    </sec>
+    <sec id="S6">
+      <title>Organoid on-a-chip</title>
+      <p id="P18">One limitation of organoid cultures is the lack of reproducibility. Without scaffolds of physical constraints organoids show differences in size, shape, cell number and geometry. Organoid-on-a-chip models increase uniformity and control, thus enhancing their use for high-throughput screening and testing.</p>
+      <p id="P19">In 2D cultures or 3D organoid cultures, cells are usually not exposed to normal mechanical cues including fluid shear stress, tension and compression. The culture scaffolds, mimicking the ECM, provide structural and functional support for the cells and can promote survival, proliferation, and differentiation (<xref rid="R11" ref-type="bibr">11</xref>). Microfluidics technology facilitates co-culture of tumor organoids with immune cells and other cell types in continuously perfused chambers and can recapitulate structural features of the environment. Moreover, sensors and actuators can be integrated with the microfluidic devices to enable precise monitoring and control (<xref rid="R35" ref-type="bibr">35</xref>).</p>
+      <p id="P20">A variety of microfluidics devices have been built to couple different tissue systems (<xref rid="R36" ref-type="bibr">36</xref>)(<xref rid="R35" ref-type="bibr">35</xref>). Nevertheless, incorporating multiple organoid types into single microchips introduces the challenge of finding optimized culture medium and physical conditions for the different organoids. Microfluidics systems have also successfully been used to study the migration of immune cells and their cross-talk and interaction with tumor cells (<xref rid="R37" ref-type="bibr">37</xref>).</p>
+    </sec>
+    <sec id="S7">
+      <title>Complex organoids and immunotherapy</title>
+      <p id="P21">An <italic toggle="yes">ex vivo</italic> assay to test immunotherapies requires a cancer-immune cell co-culture that enables the survival of all cell types, that matches the cellular distribution of the original tumor for a reasonable time frame and that captures the therapeutic effects of immune therapies. An advantage is the possibility to establish PDTOs which match the stage and the treatment history of patients in which novel drugs are tested. In a few recent studies, immune-enhanced tumor organoids have shown to be robust, relevant platforms to assess the efficacy of cancer immunotherapy, for the discovery of immune-oncology resistance mechanisms and for the identification of new combination therapy strategies (<xref rid="R38" ref-type="bibr">38</xref>).</p>
+      <sec id="S8">
+        <title>Antibody-based immunotherapy</title>
+        <p id="P22">Antibody-based immunotherapy can specifically and directly target tumor cells to modify survival signals or deliver cytotoxic compounds. Alternatively, they can elicit immune responses by antibody mediated pathways or retarget T cells towards the tumor (<xref rid="R39" ref-type="bibr">39</xref>). Tumor organoids have, so far, mainly been used to study the efficacy and specificity of antibody-based immune checkpoint blockade-therapies. A recent study cultured PDTOs from surgically resected primary and metastatic tumors of several tumor types using the ALI method (<xref rid="R24" ref-type="bibr">24</xref>). Notably, these cultures maintained diverse endogenous immune cell types (T- and B-cells, NK cells and macrophages) and non-immune stromal elements for weeks. Immune checkpoint blockade with anti-PD-1 and/or anti-PD-L1 resulted in the expansion and activation of tumor antigen-specific T cells within the organoid cultures and subsequent tumor killing. This shows that tumor-infiltrating lymphocytes (TILs) can remain functional in PDTOs, and that the PD-1/PD-L1 immune checkpoint can be recapitulated in these cultures.</p>
+        <p id="P23">In another study, Chakrabarti and colleagues established an autologous murine triple co-culture using gastric cancer or healthy organoids with DCs and CTLs (<xref rid="R40" ref-type="bibr">40</xref>). In short, gastric organoids were grown in Matrigel from healthy mice or from a transgenic mouse developing gastric tumors. Conditioned media from both models was used to pulse bone marrow-derived DCs. Subsequently, pulsed DCs and CTLs were co-cultured with either organoids in the presence of anti-PDL1 antibodies. Immune cells migrated to the organoids and prominent apoptosis was present only with tumor organoids treated with anti-PDL1 and co-cultured with DCs and CTLs pulsed with the tumor organoid-conditioned media. Using PDTOs and autologous patient-derived immune cells, this triple co-culture could be used as a pre-clinical model to test immunotherapy for individual patients.</p>
+        <p id="P24">Two other studies used mouse and patient-derived organotypic tumor spheroids in a collagen matrix microfluidics culture system. This culture contained autologous tumor-infiltrating immune cells and stroma. In the first study, the platform was used to profile secreted cytokines and identify novel effectors of immune checkpoint blockade therapy (<xref rid="R22" ref-type="bibr">22</xref>). Moreover, the study identified a combination therapy, PD-1-blockade with a TBK1/IKKε inhibitor, that counteracted resistance and enhanced the response to PD-1-blockade by helping to overcome an immunosuppressive TME. The second study performed a screen for small molecules capable of increasing the activity of T cells suppressed by PD-1 (<xref rid="R41" ref-type="bibr">41</xref>). Treatment of the tumor spheroids with the identified CDK4/6 inhibitor increased the levels of infiltrating T cells and synergized with anti-PD-1 blocking antibodies, resulting in increased anti-tumor activity. Another study instead used exogenous immune cells in a co-culture with CRC spheroids/organoids (<xref rid="R42" ref-type="bibr">42</xref>). In this model, allogeneic T and NK cells rapidly infiltrated tumor spheroids resulting in immune mediated tumor cell apoptosis and spheroid destruction. They identified a pathway involved in tumor killing, NKG2D-MICA/B, that activated cytotoxic responses and further revealed that that anti-MICA/B and NKG2A antibodies were able to elicit immune-mediated destruction of CRC by stimulating the anti-tumor response. These examples show the potential of immune-tumor organoids for testing antibody mediated-therapy, identifying novel therapeutic targets and for the visualization and enhancement of immune cell migration and infiltration into tumors.</p>
+        <p id="P25">Bispecific antibodies can simultaneously bind two different antigens, thereby enhancing recognition or interact with a cytotoxic cell and a target tumor and bring them into close proximity leading to tumor cytotoxicity (<xref rid="R43" ref-type="bibr">43</xref>). Gonzalez-Exposito et al. used bispecific antibody therapy on organoid-immune cell co-cultures (<xref rid="R44" ref-type="bibr">44</xref>). The T cell bispecific antibody cibisatamab was designed to target CD3 on T cells and carcinoembryonic antigen (CEA) glycoprotein, often overexpressed in CRC. CRC organoids were cultured from metastatic chemotherapy resistant CRC patient biopsies in Matrigel. If biopsy samples were very small, they were first allowed to grow by engrafting them subcutaneously or under the kidney capsule of CD1 nude mice after which the CRC tumor was removed, depleted of mouse cells and organoids cultured in Matrigel. Co-cultures of eGFP tagged CRC organoids and CD8+ T cells purified from PBCMs were treated with cibisatamab and the growth of GFP positive CRC cells monitored. This strategy redirected T cells independently of their TCR specificity to CRC cells, mediating cancer cell recognition and killing. Using this model, the group showed that the CRC organoids displayed heterogeneity and plasticity of CEA expression, with CEA antigen loss contributing to resistance. The cells with low CEA expression displayed increased Wnt/ β-catenin pathway activity. Since CEA expression can pharmacologically be enhanced by the inhibition of the WNT/β-catenin pathway, they suggested this as a potential strategy to increase the therapeutic benefit from cibisatamab (<xref rid="R44" ref-type="bibr">44</xref>). This complex organoid model proved beneficial for dissecting mechanisms of immunotherapy resistance and identifying candidate biomarkers and combination therapies.</p>
+      </sec>
+      <sec id="S9">
+        <title>Oncolytic virus-therapy</title>
+        <p id="P26">Viruses that preferentially infect and replicate in tumor tissues while sparing the normal non-neoplastic host cells, offer an exciting immunotherapeutic approach (<xref rid="R45" ref-type="bibr">45</xref>). The anti-tumor effect of oncolytic viruses acts by directly lysing tumor cells and propagating the virus to nearby cells, and by triggering cytokine release and activation of the immune system (<xref rid="R46" ref-type="bibr">46</xref>)(<xref rid="R47" ref-type="bibr">47</xref>).</p>
+        <p id="P27">Two recent studies analyzed oncolytic virus infection and killing in tumor organoids. The first study demonstrated that tumor organoids can be used as predictive tools to screen for the sensitivity to oncolytic adenovirus therapy alone or in combination with chemotherapy (<xref rid="R48" ref-type="bibr">48</xref>). Oncolytic adenovirus displayed selectivity of replication in pancreatic PDTOs, but not normal tissue organoids grown in Matrigel from tissue derived from surgeries. Patient-specific adenoviral sensitivity was also seen, which mirrored the response in xenograph models as well as in primary tumors and metastases in nude mice, indicating that organoids are suitable models to explore pre-clinical responses to oncolytic viruses. Using glioblastoma brain cerebral organoids, Zhu et al. explored the efficacy and mechanism of the Zikavirus as an oncolytic virus in glioblastoma (GBM) (<xref rid="R49" ref-type="bibr">49</xref>). The Zikavirus targeted GBM stem cells rather than neural precursor cells through a SOX2-Integrin αvβ5 pathway, induced changes in the expression of immune-response genes and resulted in tumor cell death. Genetically modified Zikavirus with further optimized safety could potentially be used as oncolytic virus therapy against GBM. Although these studies show the promise of PDTOs for studying oncolytic virus infectivity and cytotoxicity, the oncolytic virus-initiated immune responses have not, to our knowledge, been studied in complex immune-organoids.</p>
+      </sec>
+      <sec id="S10">
+        <title>Adoptive cell transfer-therapy</title>
+        <p id="P28">In adoptive cell transfer therapy, circulating lymphocytes or TILs are collected, selected or modified, expanded and activated <italic toggle="yes">ex vivo</italic> and re-administrated into patients, often in combination with immunostimulatory agents (<xref rid="R3" ref-type="bibr">3</xref>). T cells are either isolated based on their specificity for tumor antigens or are genetically modified. Genetic engineering of cells to produce a synthetic receptor, CAR, can specifically target an antigen on the cells and bypass MHC restriction (<xref rid="R50" ref-type="bibr">50</xref>).</p>
+        <p id="P29">CAR T and NK cell mediated cytotoxicity has been studied in tumor organoid models, which proved to be efficient platforms to evaluate CAR cell efficacy and tumor specificity. In one study, CRC organoids expressing HER2 derived from patient biopsies were cultured in Matrigel and anti-HER2 CAR T cells added (<xref rid="R51" ref-type="bibr">51</xref>). CAR T cells alone elicited only minimal killing, whereas a combination of CAR T cells and the inhibitor of apoptosis (IAP) antagonist birinapant significantly increased organoid death in a TNF-dependent manner. Interestingly, using this organoid model, killing could be demonstrated also in the absence of contact with the CAR T cell by a bystander effect of CAR T-cell-derived TNF, which could trigger apoptosis inside the organoids in the presence of birinapant. This combination therapy could initiate potent killing even with low numbers of CAR T cells reaching the tumor, and low penetration into tumors, thus overcoming one of the challenges for CAR T cell therapy. CRC organoids were also used to follow NK cell CAR-mediated cytotoxicity (<xref rid="R52" ref-type="bibr">52</xref>). Schnalzger et al. demonstrated efficient targeting of NK CAR cells directed toward the ubiquitous epithelial antigen EpCAM in CRC organoid models cultured in the presence of colonic primary fibroblasts. Using luciferase based and live cell imaging assays they further showed that neoantigen EGFRvIII-specific CAR NK cells efficiently killed EGFRvIII-expressing tumor organoids but not normal-tissue organoids. However, CARs against WNT ligand receptor FRIZZLED, upregulated in a subgroup of CRC, did not display tumor specific killing. This indicated that organoids may be used for rapid and individualized assessment of CAR-therapy antigen targeting and tumor cell specificity and allow live cell imaging of cell interactions and tumor toxicity over time. A crucial step for the success of CAR-based therapies is the recruitment of CAR cells to the tumor. Tumor organoids models, especially those containing components of the TME, enable monitoring and enhancing the recruitment and penetration of CAR cells into tumor tissue and subsequent killing.</p>
+        <p id="P30">PDTOs can be used as a source of tumor reactive T cells, a culture platform to enrich them and to induce and assess the efficiency of tumor-specific T cell killing. Co-cultures of CRC and NSCLC organoids and autologous PBMCs were shown to enrich tumor-reactive T cells (<xref rid="R25" ref-type="bibr">25</xref>). After two weeks in co-cultures with successful CTL expansion, tumor killing was observed. This was not seen from the same patients when healthy organoids were generated, suggesting that cancer organoids are able to present cancer associated- or neo-antigens, triggering an effective anti-tumor T-cell response. TILs constitute a cell population actively engaged for destruction of specific tumor cells, since cells have already gained effector functions (<xref rid="R3" ref-type="bibr">3</xref>). TILs can be expanded <italic toggle="yes">ex vivo</italic> and infused back into the patient to generate more effective anti-cancer immune responses (<xref rid="R53" ref-type="bibr">53</xref>). CRC organoids co-cultured with TILs expanded from the same patient was used as an individualized pre-treatment test platform to predict patient response to neoadjuvant chemoradiotherapy (<xref rid="R54" ref-type="bibr">54</xref>). Cytotoxic killing was significantly higher in co-cultures that were generated from patients with a complete response to chemoradiotherapy, compared with co-cultures established from non-responders. This allowed stratification of patients and showed that the functionality of TILs can be used as robust biomarkers. Of great importance was the rapid establishment of tumor organoids and TILs within a clinically relevant timeline, 3 to 4 weeks from the diagnostic biopsy. Moreover, they further tested the platform for <italic toggle="yes">in vitro</italic> screening of the efficacy to rescue TIL function with checkpoint inhibition blockade and showed that the addition of anti-PD-1 antibody partially restored anti-tumor killing activity.</p>
+        <p id="P31">Taking the patient-specific, immune-organoid culture a step forward, a recent study describes a platform incorporating patient-specific, mature lymph node APCs within the organoid to generate adaptive immunity (<xref rid="R55" ref-type="bibr">55</xref>). This was done by a combined lymph node and melanoma organoid culture from the same patient and exposing matched blood T cells from the patient to the co-culture. This brought into contact tumor cells with MHC I and MHC II-proficient nodal cells, allowing cross-presentation of antigens by the patient-specific APCs incorporated into the cultures. It permitted T cells to be activated and develop memory towards tumor neoantigens. These trained T cells showed effective killing of tumor cells in naïve tumor organoids from the same patient. Corresponding immune enhanced and non-enhanced patient derived organoids were then screened with check point inhibitors, showing increased killing in immune enhanced organoids. When the immune enhanced PDTOs response was compared with the clinical response of the patient to immunotherapy, they correlated in 85 % of the cases. Although this study was performed with a modest number of patients it shows the potential of this complex organoid culture system for predicting and elucidating also adaptive immunotherapy responses.</p>
+      </sec>
+    </sec>
+    <sec sec-type="conclusions" id="S11">
+      <title>Conclusions</title>
+      <p id="P32">Immunotherapy research drives the development of novel cancer treatments which, alone or in combination with other therapies, target immunomodulatory pathways and advance the control of cancer cells. There is growing interest in using patient-derived material to understand the dynamic interactions between the tumor and the immune system that influence therapy. <italic toggle="yes">Ex vivo</italic> systems that incorporate features of the TME and model immunotherapy responses could facilitate immunotherapy pre-clinical testing. There is great potential for PDTO-immune cell co-cultures to model mechanisms of immunotherapy efficiency and resistance. This addresses a major need in translational immunotherapy research.</p>
+      <p id="P33">Organoid cultures have shown promise for drug testing and development, studies of organ development, disease modelling and regenerative medicine. The main shortcoming of organoid technology for the use with immunotherapy prediction has been the lack of the stromal compartment. Moreover, the absence of blood vessels and immune cells equals loss of microenvironment influence on cancer behaviour. To circumvent these limitations, novel more complex organoid co-cultures of immune cells, vasculature and CAFs together with neoplastic cells have successfully been developed. Nevertheless, the maintenance of heterogeneity in the tumor culture over time and the long-term preservation of stromal components still needs optimization. Additional work is required to estimate to what extent the different cell populations are maintained in the stroma when compared to the original tumor and to optimize culture media composition to support different cell types without selecting the outgrowth of only some clones.</p>
+      <p id="P34">Exposure of cells to physiological shear flow, mechanical stress, and substrate stiffness can have profound effects on cell and tissue physiology. Control over the size, shape and relative arrangement of different cell types within the organoids are important for reproducible quantitative studies required for robust drug screening and testing. This is being achieved using microfluidic devices.</p>
+      <p id="P35">The success rate of organoid cultures varies depending on tumor type and starting material. PDTOs can be cultured from fresh tumor tissue or biopsies. In some cases, patients receive treatments to shrink tumors prior to surgery, which may preclude organoid generation because of reduced tumor cell number or extended culturing time. For PDTO-cultures to be effective as clinical decision-making tools, it is crucial to keep the time needed to derive and expand the organoids to a minimum.</p>
+      <p id="P36">Numerous clinical trials are currently ongoing to determine the clinical application of PDTOs in personalized cancer therapy. Complex tumor organoid models have the potential to become tools for personalized immunotherapy validation, to test response and toxicity, to select patients for novel targeted therapies, and to support drug and treatment development in the setting of early clinical trials. Promising developments of complex organoids and their future adaptations can support clinical–translational efforts to develop novel combination treatments and ultimately personalized immunotherapy.</p>
+    </sec>
+  </body>
+  <back>
+    <ack id="S12">
+      <title>Acknowledgements</title>
+      <p>This work has been supported by European Research Council under the Horizon 2020 framework (<ext-link xlink:href="https://erc.europa.eu" ext-link-type="uri">https://erc.europa.eu</ext-link>), ERC-consolidator Grant (Agreement no. 681219), Jane and Aatos Erkko Foundation (Project no. 4705796), Academy of Finland and Digital Precision Cancer Medicine Flagship iCAN and the Magnus Ehrnrooth Foundation.</p>
+    </ack>
+    <fn-group>
+      <fn id="FN1" fn-type="COI-statement">
+        <p id="P37"><bold>Conflict of Interest:</bold> Vincenzo Cerullo is a co-founder and shareholder at VALO therapeutics. NO related to this work. The other authors declare no conflict of interest.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <ref id="R1">
+        <label>1</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Vinay</surname><given-names>DS</given-names></name>
+<name><surname>Ryan</surname><given-names>EP</given-names></name>
+<name><surname>Pawelec</surname><given-names>G</given-names></name>
+<name><surname>Talib</surname><given-names>WH</given-names></name>
+<name><surname>Stagg</surname><given-names>J</given-names></name>
+<name><surname>Elkord</surname><given-names>E</given-names></name>
+<etal/>
+</person-group><article-title>Immune evasion in cancer: Mechanistic basis and therapeutic strategies</article-title><source>Seminars in cancer biology</source><year>2015</year><volume>35</volume><fpage>S185</fpage><lpage>98</lpage><pub-id pub-id-type="pmid">25818339</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Galluzzi</surname><given-names>L</given-names></name>
+<name><surname>Vacchelli</surname><given-names>E</given-names></name>
+<name><surname>Bravo-San Pedro</surname><given-names>JM</given-names></name>
+<name><surname>Buque</surname><given-names>A</given-names></name>
+<name><surname>Senovilla</surname><given-names>L</given-names></name>
+<name><surname>Baracco</surname><given-names>EE</given-names></name>
+<etal/>
+</person-group><article-title>Classification of current anticancer immunotherapies</article-title><source>Oncotarget</source><year>2014</year><volume>5</volume><fpage>12472</fpage><lpage>508</lpage><pub-id pub-id-type="doi">10.18632/oncotarget.2998</pub-id><pub-id pub-id-type="pmid">25537519</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Waldman</surname><given-names>AD</given-names></name>
+<name><surname>Fritz</surname><given-names>JM</given-names></name>
+<name><surname>Lenardo</surname><given-names>MJ</given-names></name>
+</person-group><article-title>A guide to cancer immunotherapy: From T cell basic science to clinical practice</article-title><source>Nature reviews Immunology</source><year>2020</year><fpage>1</fpage><lpage>18</lpage><pub-id pub-id-type="doi">10.1038/s41577-020-0306-5</pub-id><pub-id pub-id-type="pmid">32433532</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Taefehshokr</surname><given-names>N</given-names></name>
+<name><surname>Baradaran</surname><given-names>B</given-names></name>
+<name><surname>Baghbanzadeh</surname><given-names>A</given-names></name>
+<name><surname>Taefehshokr</surname><given-names>S</given-names></name>
+</person-group><article-title>Promising approaches in cancer immunotherapy</article-title><source>Immunobiology 1979</source><year>2020</year><volume>225</volume><elocation-id>151875</elocation-id><pub-id pub-id-type="pmid">31812343</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Christofi</surname><given-names>T</given-names></name>
+<name><surname>Baritaki</surname><given-names>S</given-names></name>
+<name><surname>Falzone</surname><given-names>L</given-names></name>
+<name><surname>Libra</surname><given-names>M</given-names></name>
+<name><surname>Zaravinos</surname><given-names>A</given-names></name>
+</person-group><article-title>Current perspectives in cancer immunotherapy</article-title><source>Cancers</source><year>2019</year><volume>11</volume><fpage>1472</fpage><pub-id pub-id-type="doi">10.3390/cancers11101472</pub-id><pub-id pub-id-type="pmid">31575023</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Wan</surname><given-names>ACA</given-names></name>
+</person-group><article-title>Recapitulating Cell–Cell interactions for organoid construction – are biomaterials dispensable?</article-title><source>Trends in Biotechnology</source><year>2016</year><volume>34</volume><fpage>711</fpage><lpage>21</lpage><pub-id pub-id-type="pmid">27012157</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Clevers</surname><given-names>H</given-names></name>
+</person-group><article-title>Modeling development and disease with organoids</article-title><source>Cell</source><year>2016</year><volume>165</volume><fpage>1586</fpage><lpage>97</lpage><pub-id pub-id-type="pmid">27315476</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Sato</surname><given-names>T</given-names></name>
+<name><surname>Vries</surname><given-names>RGJ</given-names></name>
+<name><surname>Snippert</surname><given-names>HJG</given-names></name>
+<name><surname>van de Wetering</surname><given-names>ML</given-names></name>
+<name><surname>Barker</surname><given-names>N</given-names></name>
+<name><surname>Stange</surname><given-names>DE</given-names></name>
+<etal/>
+</person-group><article-title>Single Lgr5 stem cells build crypt-villus structures in vitro without a mesenchymal niche</article-title><source>Nature (London)</source><year>2009</year><volume>459</volume><fpage>262</fpage><lpage>5</lpage><pub-id pub-id-type="pmid">19329995</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bleijs</surname><given-names>M</given-names></name>
+<name><surname>Wetering</surname><given-names>M</given-names></name>
+<name><surname>Clevers</surname><given-names>H</given-names></name>
+<name><surname>Drost</surname><given-names>J</given-names></name>
+</person-group><article-title>Xenograft and organoid model systems in cancer research</article-title><source>The EMBO journal</source><year>2019</year><volume>38</volume><elocation-id>e101654</elocation-id><comment>n/a</comment><pub-id pub-id-type="doi">10.15252/embj.2019101654</pub-id><pub-id pub-id-type="pmid">31282586</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Drost</surname><given-names>J</given-names></name>
+<name><surname>Clevers</surname><given-names>H</given-names></name>
+</person-group><article-title>Organoids in cancer research</article-title><source>Nature reviews Cancer</source><year>2018</year><volume>18</volume><fpage>407</fpage><lpage>18</lpage><pub-id pub-id-type="pmid">29692415</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bray</surname><given-names>LJ</given-names></name>
+<name><surname>Hutmacher</surname><given-names>DW</given-names></name>
+<name><surname>Bock</surname><given-names>N</given-names></name>
+</person-group><article-title>Addressing patient specificity in the engineering of tumor models</article-title><source>Frontiers in Bioengineering and Biotechnology</source><year>2019</year><volume>7</volume><fpage>217</fpage><pub-id pub-id-type="doi">10.3389/fbioe.2019.00217</pub-id><pub-id pub-id-type="pmid">31572718</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Holloway</surname><given-names>EM</given-names></name>
+<name><surname>Capeling</surname><given-names>MM</given-names></name>
+<name><surname>Spence</surname><given-names>JR</given-names></name>
+</person-group><article-title>Biologically inspired approaches to enhance human organoid complexity</article-title><source>Development (Cambridge, England)</source><year>2019</year><volume>146</volume><elocation-id>dev166173</elocation-id><pub-id pub-id-type="doi">10.1242/dev.166173</pub-id><pub-id pub-id-type="pmid">30992275</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R13">
+        <label>13</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Sachs</surname><given-names>N</given-names></name>
+<name><surname>de Ligt</surname><given-names>J</given-names></name>
+<name><surname>Kopper</surname><given-names>O</given-names></name>
+<name><surname>Gogola</surname><given-names>E</given-names></name>
+<name><surname>Bounova</surname><given-names>G</given-names></name>
+<name><surname>Weeber</surname><given-names>F</given-names></name>
+<etal/>
+</person-group><article-title>A living biobank of breast cancer organoids captures disease heterogeneity</article-title><source>Cell</source><year>2018</year><volume>172</volume><fpage>373</fpage><lpage>386</lpage><elocation-id>e10</elocation-id><pub-id pub-id-type="pmid">29224780</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R14">
+        <label>14</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Driehuis</surname><given-names>E</given-names></name>
+<name><surname>Kretzschmar</surname><given-names>K</given-names></name>
+<name><surname>Clevers</surname><given-names>H</given-names></name>
+</person-group><article-title>Establishment of patient-derived cancer organoids for drug-screening applications</article-title><source>Nature Protocols</source><year>2020</year><volume>15</volume><fpage>3380</fpage><lpage>409</lpage><pub-id pub-id-type="pmid">32929210</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R15">
+        <label>15</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>van de Wetering</surname><given-names>M</given-names></name>
+<name><surname>Francies</surname><given-names>H</given-names></name>
+<name><surname>Francis</surname><given-names>J</given-names></name>
+<name><surname>Bounova</surname><given-names>G</given-names></name>
+<name><surname>Iorio</surname><given-names>F</given-names></name>
+<name><surname>Pronk</surname><given-names>A</given-names></name>
+<etal/>
+</person-group><article-title>Prospective derivation of a living organoid biobank of colorectal cancer patients</article-title><source>Cell</source><year>2015</year><volume>161</volume><fpage>933</fpage><lpage>45</lpage><pub-id pub-id-type="doi">10.1016/j.cell.2015.03.053</pub-id><pub-id pub-id-type="pmid">25957691</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R16">
+        <label>16</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Kim</surname><given-names>M</given-names></name>
+<name><surname>Mun</surname><given-names>H</given-names></name>
+<name><surname>Sung</surname><given-names>CO</given-names></name>
+<name><surname>Cho</surname><given-names>EJ</given-names></name>
+<name><surname>Jeon</surname><given-names>H</given-names></name>
+<name><surname>Chun</surname><given-names>S</given-names></name>
+<etal/>
+</person-group><article-title>Patient-derived lung cancer organoids as in vitro cancer models for therapeutic screening</article-title><source>Nature communications</source><year>2019</year><volume>10</volume><fpage>3991</fpage><lpage>15</lpage><pub-id pub-id-type="doi">10.1038/s41467-019-11867-6</pub-id><pub-id pub-id-type="pmid">31488816</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R17">
+        <label>17</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Liu</surname><given-names>F</given-names></name>
+<name><surname>Huang</surname><given-names>J</given-names></name>
+<name><surname>Ning</surname><given-names>B</given-names></name>
+<name><surname>Liu</surname><given-names>Z</given-names></name>
+<name><surname>Chen</surname><given-names>S</given-names></name>
+<name><surname>Zhao</surname><given-names>W</given-names></name>
+</person-group><article-title>Drug discovery via human-derived stem cell organoids</article-title><source>Frontiers in pharmacology</source><year>2016</year><volume>7</volume><fpage>334</fpage><pub-id pub-id-type="doi">10.3389/fphar.2016.00334</pub-id><pub-id pub-id-type="pmid">27713700</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R18">
+        <label>18</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Vlachogiannis</surname><given-names>G</given-names></name>
+<name><surname>Hedayat</surname><given-names>S</given-names></name>
+<name><surname>Vatsiou</surname><given-names>A</given-names></name>
+<name><surname>Jamin</surname><given-names>Y</given-names></name>
+<name><surname>Fernandez-Mateos</surname><given-names>J</given-names></name>
+<name><surname>Khan</surname><given-names>K</given-names></name>
+<etal/>
+</person-group><article-title>Patient-derived organoids model treatment response of metastatic gastrointestinal cancers</article-title><source>Science</source><year>2018</year><volume>359</volume><fpage>920</fpage><lpage>6</lpage><pub-id pub-id-type="doi">10.1126/science.aao2774</pub-id><pub-id pub-id-type="pmid">29472484</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R19">
+        <label>19</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Pauli</surname><given-names>C</given-names></name>
+<name><surname>Hopkins</surname><given-names>BD</given-names></name>
+<name><surname>Prandi</surname><given-names>D</given-names></name>
+<name><surname>Shaw</surname><given-names>R</given-names></name>
+<name><surname>Fedrizzi</surname><given-names>T</given-names></name>
+<name><surname>Sboner</surname><given-names>A</given-names></name>
+<etal/>
+</person-group><article-title>Personalized in vitro and in vivo cancer models to guide precision medicine</article-title><source>Cancer discovery</source><year>2017</year><volume>7</volume><fpage>462</fpage><lpage>77</lpage><pub-id pub-id-type="doi">10.1158/2159-8290.CD-16-1154</pub-id><pub-id pub-id-type="pmid">28331002</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R20">
+        <label>20</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Genova</surname><given-names>E</given-names></name>
+<name><surname>Cavion</surname><given-names>F</given-names></name>
+<name><surname>Lucafo</surname><given-names>M</given-names></name>
+<name><surname>Leo</surname><given-names>L</given-names></name>
+<name><surname>Pelin</surname><given-names>M</given-names></name>
+<name><surname>Stocco</surname><given-names>G</given-names></name>
+<etal/>
+</person-group><article-title>Induced pluripotent stem cells for therapy personalization in pediatric patients: Focus on drug-induced adverse events</article-title><source>World Journal of Stem Cells</source><year>2019</year><volume>11</volume><fpage>1020</fpage><lpage>44</lpage><pub-id pub-id-type="doi">10.4252/wjsc.v11.i12.1020</pub-id><pub-id pub-id-type="pmid">31875867</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R21">
+        <label>21</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zumwalde</surname><given-names>NA</given-names></name>
+<name><surname>Haag</surname><given-names>JD</given-names></name>
+<name><surname>Sharma</surname><given-names>D</given-names></name>
+<name><surname>Mirrielees</surname><given-names>JA</given-names></name>
+<name><surname>Wilke</surname><given-names>LG</given-names></name>
+<name><surname>Gould</surname><given-names>MN</given-names></name>
+<etal/>
+</person-group><article-title>Analysis of immune cells from human mammary ductal epithelial organoids reveals Vδ2 + T cells that efficiently target breast carcinoma cells in the presence of bisphosphonate</article-title><source>Cancer prevention research (Philadelphia, Pa.)</source><year>2016</year><volume>9</volume><fpage>305</fpage><lpage>16</lpage><pub-id pub-id-type="doi">10.1158/1940-6207.CAPR-15-0370-T</pub-id><pub-id pub-id-type="pmid">26811335</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R22">
+        <label>22</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Jenkins</surname><given-names>RW</given-names></name>
+<name><surname>Aref</surname><given-names>AR</given-names></name>
+<name><surname>Lizotte</surname><given-names>PH</given-names></name>
+<name><surname>Ivanova</surname><given-names>E</given-names></name>
+<name><surname>Stinson</surname><given-names>S</given-names></name>
+<name><surname>Zhou</surname><given-names>CW</given-names></name>
+<etal/>
+</person-group><article-title>Ex vivo profiling of PD-1 blockade using organotypic tumor spheroids</article-title><source>Cancer discovery</source><year>2018</year><volume>8</volume><fpage>196</fpage><lpage>215</lpage><pub-id pub-id-type="doi">10.1158/2159-8290.CD-17-0833</pub-id><pub-id pub-id-type="pmid">29101162</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R23">
+        <label>23</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Finnberg</surname><given-names>NK</given-names></name>
+<name><surname>Gokare</surname><given-names>P</given-names></name>
+<name><surname>Lev</surname><given-names>A</given-names></name>
+<name><surname>Grivennikov</surname><given-names>SI</given-names></name>
+<name><surname>MacFarlane</surname><suffix>4</suffix></name>
+<name><surname>Alexander</surname><given-names>W</given-names></name>
+<name><surname>Campbell</surname><given-names>KS</given-names></name>
+<etal/>
+</person-group><article-title>Application of 3D tumoroid systems to define immune and cytotoxic therapeutic responses based on tumoroid and tissue slice culture molecular signatures</article-title><source>Oncotarget</source><year>2017</year><volume>8</volume><fpage>66747</fpage><lpage>57</lpage><pub-id pub-id-type="doi">10.18632/oncotarget.19965</pub-id><pub-id pub-id-type="pmid">28977993</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R24">
+        <label>24</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Neal</surname><given-names>JT</given-names></name>
+<name><surname>Li</surname><given-names>X</given-names></name>
+<name><surname>Zhu</surname><given-names>J</given-names></name>
+<name><surname>Giangarra</surname><given-names>V</given-names></name>
+<name><surname>Grzeskowiak</surname><given-names>CL</given-names></name>
+<name><surname>Ju</surname><given-names>J</given-names></name>
+<etal/>
+</person-group><article-title>Organoid modeling of the tumor immune microenvironment</article-title><source>Cell</source><year>2018</year><volume>175</volume><fpage>1972</fpage><lpage>1988</lpage><elocation-id>e16</elocation-id><pub-id pub-id-type="doi">10.1016/j.cell.2018.11.021</pub-id><pub-id pub-id-type="pmid">30550791</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R25">
+        <label>25</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Dijkstra</surname><given-names>KK</given-names></name>
+<name><surname>Cattaneo</surname><given-names>CM</given-names></name>
+<name><surname>Weeber</surname><given-names>F</given-names></name>
+<name><surname>Chalabi</surname><given-names>M</given-names></name>
+<name><surname>van de Haar</surname><given-names>J</given-names></name>
+<name><surname>Fanchi</surname><given-names>LF</given-names></name>
+<etal/>
+</person-group><article-title>Generation of tumor-reactive T cells by co-culture of peripheral blood lymphocytes and tumor organoids</article-title><source>Cell</source><year>2018</year><volume>174</volume><fpage>1586</fpage><lpage>1598</lpage><elocation-id>e12</elocation-id><pub-id pub-id-type="doi">10.1016/j.cell.2018.07.009</pub-id><pub-id pub-id-type="pmid">30100188</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R26">
+        <label>26</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Tsai</surname><given-names>S</given-names></name>
+<name><surname>McOlash</surname><given-names>L</given-names></name>
+<name><surname>Palen</surname><given-names>K</given-names></name>
+<name><surname>Johnson</surname><given-names>B</given-names></name>
+<name><surname>Duris</surname><given-names>C</given-names></name>
+<name><surname>Yang</surname><given-names>Q</given-names></name>
+<etal/>
+</person-group><article-title>Development of primary human pancreatic cancer organoids, matched stromal and immune cells and 3D tumor microenvironment models</article-title><source>BMC cancer</source><year>2018</year><volume>18</volume><fpage>335</fpage><pub-id pub-id-type="doi">10.1186/s12885-018-4238-4</pub-id><pub-id pub-id-type="pmid">29587663</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R27">
+        <label>27</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Holokai</surname><given-names>L</given-names></name>
+<name><surname>Chakrabarti</surname><given-names>J</given-names></name>
+<name><surname>Broda</surname><given-names>T</given-names></name>
+<name><surname>Chang</surname><given-names>J</given-names></name>
+<name><surname>Hawkins</surname><given-names>JA</given-names></name>
+<name><surname>Sundaram</surname><given-names>N</given-names></name>
+<etal/>
+</person-group><article-title>Increased programmed death-ligand 1 is an early epithelial cell response to helicobacter pylori infection</article-title><source>PLoS pathogens</source><year>2019</year><volume>15</volume><elocation-id>e1007468</elocation-id><pub-id pub-id-type="doi">10.1371/journal.ppat.1007468</pub-id><pub-id pub-id-type="pmid">30703170</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R28">
+        <label>28</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Hirschhaeuser</surname><given-names>F</given-names></name>
+<name><surname>Menne</surname><given-names>H</given-names></name>
+<name><surname>Dittfeld</surname><given-names>C</given-names></name>
+<name><surname>West</surname><given-names>J</given-names></name>
+<name><surname>Mueller-Klieser</surname><given-names>W</given-names></name>
+<name><surname>Kunz-Schughart</surname><given-names>LA</given-names></name>
+</person-group><article-title>Multicellular tumor spheroids: An underestimated tool is catching up again</article-title><source>Journal of Biotechnology</source><year>2010</year><volume>148</volume><fpage>3</fpage><lpage>15</lpage><pub-id pub-id-type="pmid">20097238</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R29">
+        <label>29</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Langan</surname><given-names>LM</given-names></name>
+<name><surname>Dodd</surname><given-names>NJ</given-names></name>
+<name><surname>Owen</surname><given-names>SF</given-names></name>
+<name><surname>Purcell</surname><given-names>WM</given-names></name>
+<name><surname>Jackson</surname><given-names>SK</given-names></name>
+<name><surname>Jha</surname><given-names>AN</given-names></name>
+</person-group><article-title>Direct measurements of oxygen gradients in spheroid culture system using electron parametric resonance oximetry</article-title><source>PLoS One</source><year>2016</year><volume>11</volume><elocation-id>e0149492</elocation-id><pub-id pub-id-type="doi">10.1371/journal.pone.0149492</pub-id><pub-id pub-id-type="pmid">26900704</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R30">
+        <label>30</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bhattacharya</surname><given-names>S</given-names></name>
+<name><surname>Calar</surname><given-names>K</given-names></name>
+<name><surname>de la Puente</surname><given-names>P</given-names></name>
+</person-group><article-title>Mimicking tumor hypoxia and tumor-immune interactions employing three-dimensional in vitro models</article-title><source>J Exp Clin Cancer Res</source><year>2020</year><volume>39</volume><fpage>75</fpage><lpage>1</lpage><pub-id pub-id-type="doi">10.1186/s13046-020-01583-1</pub-id><pub-id pub-id-type="pmid">32357910</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R31">
+        <label>31</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Wörsdörfer</surname><given-names>P</given-names></name>
+<name><surname>Dalda</surname><given-names>N</given-names></name>
+<name><surname>Kern</surname><given-names>A</given-names></name>
+<name><surname>Krüger</surname><given-names>S</given-names></name>
+<name><surname>Wagner</surname><given-names>N</given-names></name>
+<name><surname>Kwok</surname><given-names>CK</given-names></name>
+<etal/>
+</person-group><article-title>Generation of complex human organoid models including vascular networks by incorporation of mesodermal progenitor cells</article-title><source>Scientific reports</source><year>2019</year><volume>9</volume><fpage>15663</fpage><lpage>13</lpage><pub-id pub-id-type="doi">10.1038/s41598-019-52204-7</pub-id><pub-id pub-id-type="pmid">31666641</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R32">
+        <label>32</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Mansour</surname><given-names>AA</given-names></name>
+<name><surname>Gonçalves</surname><given-names>JT</given-names></name>
+<name><surname>Bloyd</surname><given-names>CW</given-names></name>
+<name><surname>Li</surname><given-names>H</given-names></name>
+<name><surname>Fernandes</surname><given-names>S</given-names></name>
+<name><surname>Quang</surname><given-names>D</given-names></name>
+<etal/>
+</person-group><article-title>An in vivo model of functional and vascularized human brain organoids</article-title><source>Nature biotechnology</source><year>2018</year><volume>36</volume><fpage>432</fpage><lpage>41</lpage><pub-id pub-id-type="doi">10.1038/nbt.4127</pub-id><pub-id pub-id-type="pmid">29658944</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R33">
+        <label>33</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Grebenyuk</surname><given-names>S</given-names></name>
+<name><surname>Ranga</surname><given-names>A</given-names></name>
+</person-group><article-title>Engineering organoid vascularization</article-title><source>Frontiers in bioengineering and biotechnology</source><year>2019</year><volume>7</volume><fpage>39</fpage><pub-id pub-id-type="doi">10.3389/fbioe.2019.00039</pub-id><pub-id pub-id-type="pmid">30941347</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R34">
+        <label>34</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Nashimoto</surname><given-names>Y</given-names></name>
+<name><surname>Hayashi</surname><given-names>T</given-names></name>
+<name><surname>Kunita</surname><given-names>I</given-names></name>
+<name><surname>Nakamasu</surname><given-names>A</given-names></name>
+<name><surname>Torisawa</surname><given-names>YS</given-names></name>
+<name><surname>Nakayama</surname><given-names>M</given-names></name>
+<etal/>
+</person-group><article-title>Integrating perfusable vascular networks with a three-dimensional tissue in a microfluidic device</article-title><source>Integrative Biology (Camb)</source><year>2017</year><volume>9</volume><fpage>506</fpage><lpage>18</lpage><pub-id pub-id-type="pmid">28561127</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R35">
+        <label>35</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Yu</surname><given-names>F</given-names></name>
+<name><surname>Hunziker</surname><given-names>W</given-names></name>
+<name><surname>Choudhury</surname><given-names>D</given-names></name>
+</person-group><article-title>Engineering microfluidic organoid-on-a-chip platforms</article-title><source>Micromachines</source><year>2019</year><volume>10</volume><fpage>165</fpage><pub-id pub-id-type="doi">10.3390/mi10030165</pub-id><pub-id pub-id-type="pmid">30818801</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R36">
+        <label>36</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Bhatia</surname><given-names>SN</given-names></name>
+<name><surname>Ingber</surname><given-names>DE</given-names></name>
+</person-group><article-title>Microfluidic organs-on-chips</article-title><source>Nature biotechnology</source><year>2014</year><volume>32</volume><fpage>760</fpage><lpage>72</lpage><pub-id pub-id-type="pmid">25093883</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R37">
+        <label>37</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Businaro</surname><given-names>L</given-names></name>
+<name><surname>De Ninno</surname><given-names>A</given-names></name>
+<name><surname>Schiavoni</surname><given-names>G</given-names></name>
+<name><surname>Lucarini</surname><given-names>V</given-names></name>
+<name><surname>Ciasca</surname><given-names>G</given-names></name>
+<name><surname>Gerardino</surname><given-names>A</given-names></name>
+<etal/>
+</person-group><article-title>Cross talk between cancer and immune cells: Exploring complex dynamics in a microfluidic environment</article-title><source>Lab Chip</source><year>2013</year><volume>13</volume><fpage>229</fpage><lpage>39</lpage><pub-id pub-id-type="pmid">23108434</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R38">
+        <label>38</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Yuki</surname><given-names>K</given-names></name>
+<name><surname>Cheng</surname><given-names>N</given-names></name>
+<name><surname>Nakano</surname><given-names>M</given-names></name>
+<name><surname>Kuo</surname><given-names>CJ</given-names></name>
+</person-group><article-title>Organoid models of tumor immunology</article-title><source>Trends in immunology</source><year>2020</year><volume>41</volume><fpage>652</fpage><lpage>64</lpage><pub-id pub-id-type="doi">10.1016/j.it.2020.06.010</pub-id><pub-id pub-id-type="pmid">32654925</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R39">
+        <label>39</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Lu</surname><given-names>R</given-names></name>
+<name><surname>Hwang</surname><given-names>Y</given-names></name>
+<name><surname>Liu</surname><given-names>I-</given-names></name>
+<name><surname>Lee</surname><given-names>C</given-names></name>
+<name><surname>Tsai</surname><given-names>H</given-names></name>
+<name><surname>Li</surname><given-names>H</given-names></name>
+<etal/>
+</person-group><article-title>Development of therapeutic antibodies for the treatment of diseases</article-title><source>Journal of Biomedical Science</source><year>2020</year><fpage>27</fpage><date-in-citation>cited May 13, 2020</date-in-citation><pub-id pub-id-type="doi">10.1186/s12929-019-0592-z</pub-id><pub-id pub-id-type="pmid">31959174</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R40">
+        <label>40</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Chakrabarti</surname><given-names>J</given-names></name>
+<name><surname>Holokai</surname><given-names>L</given-names></name>
+<name><surname>Syu</surname><given-names>L</given-names></name>
+<name><surname>Steele</surname><given-names>NG</given-names></name>
+<name><surname>Chang</surname><given-names>J</given-names></name>
+<name><surname>Wang</surname><given-names>J</given-names></name>
+<etal/>
+</person-group><article-title>Hedgehog signaling induces PD-L1 expression and tumor cell proliferation in gastric cancer</article-title><source>Oncotarget</source><year>2018</year><volume>9</volume><fpage>37439</fpage><lpage>57</lpage><pub-id pub-id-type="doi">10.18632/oncotarget.26473</pub-id><pub-id pub-id-type="pmid">30647844</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R41">
+        <label>41</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Deng</surname><given-names>J</given-names></name>
+<name><surname>Wang</surname><given-names>ES</given-names></name>
+<name><surname>Jenkins</surname><given-names>RW</given-names></name>
+<name><surname>Li</surname><given-names>S</given-names></name>
+<name><surname>Dries</surname><given-names>R</given-names></name>
+<name><surname>Yates</surname><given-names>K</given-names></name>
+<etal/>
+</person-group><article-title>CDK4/6 inhibition augments antitumor immunity by enhancing T-cell activation</article-title><source>Cancer discovery</source><year>2018</year><volume>8</volume><fpage>216</fpage><lpage>33</lpage><pub-id pub-id-type="doi">10.1158/2159-8290.CD-17-0915</pub-id><pub-id pub-id-type="pmid">29101163</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R42">
+        <label>42</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Courau</surname><given-names>T</given-names></name>
+<name><surname>Bonnereau</surname><given-names>J</given-names></name>
+<name><surname>Chicoteau</surname><given-names>J</given-names></name>
+<name><surname>Bottois</surname><given-names>H</given-names></name>
+<name><surname>Remark</surname><given-names>R</given-names></name>
+<name><surname>Assante Miranda</surname><given-names>L</given-names></name>
+<etal/>
+</person-group><article-title>Cocultures of human colorectal tumor spheroids with immune cells reveal the therapeutic potential of MICA/B and NKG2A targeting for cancer treatment</article-title><source>Journal for immunotherapy of cancer</source><year>2019</year><volume>7</volume><fpage>74</fpage><pub-id pub-id-type="doi">10.1186/s40425-019-0553-9</pub-id><pub-id pub-id-type="pmid">30871626</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R43">
+        <label>43</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Labrijn</surname><given-names>AF</given-names></name>
+<name><surname>Janmaat</surname><given-names>ML</given-names></name>
+<name><surname>Reichert</surname><given-names>JM</given-names></name>
+<name><surname>Parren</surname><given-names>Paul WHI</given-names></name>
+</person-group><article-title>Bispecific antibodies: A mechanistic review of the pipeline</article-title><source>Nature reviews Drug discovery</source><year>2019</year><volume>18</volume><fpage>585</fpage><lpage>608</lpage><pub-id pub-id-type="pmid">31175342</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R44">
+        <label>44</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Gonzalez-Exposito</surname><given-names>R</given-names></name>
+<name><surname>Semiannikova</surname><given-names>M</given-names></name>
+<name><surname>Griffiths</surname><given-names>B</given-names></name>
+<name><surname>Khan</surname><given-names>K</given-names></name>
+<name><surname>Barber</surname><given-names>LJ</given-names></name>
+<name><surname>Woolston</surname><given-names>A</given-names></name>
+<etal/>
+</person-group><article-title>CEA expression heterogeneity and plasticity confer resistance to the CEA-targeting bispecific immunotherapy antibody cibisatamab (CEA-TCB) in patient-derived colorectal cancer organoids</article-title><source>Journal for immunotherapy of cancer</source><year>2019</year><volume>7</volume><fpage>101</fpage><pub-id pub-id-type="doi">10.1186/s40425-019-0575-3</pub-id><pub-id pub-id-type="pmid">30982469</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R45">
+        <label>45</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ylösmäki</surname><given-names>E</given-names></name>
+<name><surname>Cerullo</surname><given-names>V</given-names></name>
+</person-group><article-title>Design and application of oncolytic viruses for cancer immunotherapy</article-title><source>Current opinion in biotechnology</source><year>2019</year><volume>65</volume><fpage>25</fpage><pub-id pub-id-type="pmid">31874424</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R46">
+        <label>46</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Cerullo</surname><given-names>V</given-names></name>
+<name><surname>Vähä-Koskela</surname><given-names>M</given-names></name>
+<name><surname>Hemminki</surname><given-names>A</given-names></name>
+</person-group><article-title>Oncolytic adenoviruses</article-title><source>Oncoimmunology</source><year>2012</year><volume>1</volume><fpage>979</fpage><lpage>81</lpage><pub-id pub-id-type="doi">10.4161/onci.20172</pub-id><pub-id pub-id-type="pmid">23162778</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R47">
+        <label>47</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Cerullo</surname><given-names>V</given-names></name>
+<name><surname>Pesonen</surname><given-names>S</given-names></name>
+<name><surname>Diaconu</surname><given-names>I</given-names></name>
+<name><surname>Escutenaire</surname><given-names>S</given-names></name>
+<name><surname>Arstila</surname><given-names>PT</given-names></name>
+<name><surname>Ugolini</surname><given-names>M</given-names></name>
+<etal/>
+</person-group><article-title>Oncolytic adenovirus coding for granulocyte macrophage colony-stimulating factor induces antitumoral immunity in cancer patients</article-title><source>Cancer research (Chicago, Ill)</source><year>2010</year><volume>70</volume><fpage>4297</fpage><lpage>309</lpage><pub-id pub-id-type="pmid">20484030</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R48">
+        <label>48</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Raimondi</surname><given-names>G</given-names></name>
+<name><surname>Mato-Berciano</surname><given-names>A</given-names></name>
+<name><surname>Pascual-Sabater</surname><given-names>S</given-names></name>
+<name><surname>Rovira-Rigau</surname><given-names>M</given-names></name>
+<name><surname>Cuatrecasas</surname><given-names>M</given-names></name>
+<name><surname>Fondevila</surname><given-names>C</given-names></name>
+<etal/>
+</person-group><article-title>Patient-derived pancreatic tumour organoids identify therapeutic responses to oncolytic adenoviruses</article-title><source>EBioMedicine</source><year>2020</year><volume>56</volume><elocation-id>102786</elocation-id><pub-id pub-id-type="doi">10.1016/j.ebiom.2020.102786</pub-id><pub-id pub-id-type="pmid">32460166</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R49">
+        <label>49</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Zhu</surname><given-names>Z</given-names></name>
+<name><surname>Mesci</surname><given-names>P</given-names></name>
+<name><surname>Bernatchez</surname><given-names>JA</given-names></name>
+<name><surname>Gimple</surname><given-names>RC</given-names></name>
+<name><surname>Wang</surname><given-names>X</given-names></name>
+<name><surname>Schafer</surname><given-names>ST</given-names></name>
+<etal/>
+</person-group><article-title>Zika virus targets glioblastoma stem cells through a SOX2-integrin alphavbeta5 axis</article-title><source>Cell Stem Cell</source><year>2020</year><volume>26</volume><fpage>187</fpage><lpage>204</lpage><elocation-id>e10</elocation-id><pub-id pub-id-type="doi">10.1016/j.stem.2019.11.016</pub-id><pub-id pub-id-type="pmid">31956038</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R50">
+        <label>50</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Majzner</surname><given-names>RG</given-names></name>
+<name><surname>Mackall</surname><given-names>CL</given-names></name>
+</person-group><article-title>Clinical lessons learned from the first leg of the CAR T cell journey</article-title><source>Nature medicine</source><year>2019</year><volume>25</volume><fpage>1341</fpage><lpage>55</lpage><pub-id pub-id-type="pmid">31501612</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R51">
+        <label>51</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Michie</surname><given-names>J</given-names></name>
+<name><surname>Beavis</surname><given-names>PA</given-names></name>
+<name><surname>Freeman</surname><given-names>AJ</given-names></name>
+<name><surname>Vervoort</surname><given-names>SJ</given-names></name>
+<name><surname>Ramsbottom</surname><given-names>KM</given-names></name>
+<name><surname>Narasimhan</surname><given-names>V</given-names></name>
+<etal/>
+</person-group><article-title>Antagonism of IAPs enhances CAR T-cell efficacy</article-title><source>Cancer Immunol Res</source><year>2019</year><volume>7</volume><fpage>183</fpage><lpage>92</lpage><pub-id pub-id-type="pmid">30651288</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R52">
+        <label>52</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Schnalzger</surname><given-names>TE</given-names></name>
+<name><surname>Groot</surname><given-names>MH</given-names></name>
+<name><surname>Zhang</surname><given-names>C</given-names></name>
+<name><surname>Mosa</surname><given-names>MH</given-names></name>
+<name><surname>Michels</surname><given-names>BE</given-names></name>
+<name><surname>Röder</surname><given-names>J</given-names></name>
+<etal/>
+</person-group><article-title>3D model for CAR‐mediated cytotoxicity using patient‐derived colorectal cancer organoids</article-title><source>The EMBO Journal</source><year>2019</year><volume>38</volume><comment>n/a</comment><pub-id pub-id-type="doi">10.15252/embj.2018100928</pub-id><pub-id pub-id-type="pmid">31036555</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R53">
+        <label>53</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Badalamenti</surname><given-names>G</given-names></name>
+<name><surname>Fanale</surname><given-names>D</given-names></name>
+<name><surname>Incorvaia</surname><given-names>L</given-names></name>
+<name><surname>Barraco</surname><given-names>N</given-names></name>
+<name><surname>Listì</surname><given-names>A</given-names></name>
+<name><surname>Maragliano</surname><given-names>R</given-names></name>
+<etal/>
+</person-group><article-title>Role of tumor-infiltrating lymphocytes in patients with solid tumors: Can a drop dig a stone?</article-title><source>Cellular immunology</source><year>2019</year><volume>343</volume><elocation-id>103753</elocation-id><pub-id pub-id-type="pmid">29395859</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R54">
+        <label>54</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Kong</surname><given-names>JCH</given-names></name>
+<name><surname>Guerra</surname><given-names>GR</given-names></name>
+<name><surname>Millen</surname><given-names>RM</given-names></name>
+<name><surname>Roth</surname><given-names>S</given-names></name>
+<name><surname>Xu</surname><given-names>H</given-names></name>
+<name><surname>Neeson</surname><given-names>PJ</given-names></name>
+<etal/>
+</person-group><article-title>Tumor-infiltrating lymphocyte function predicts response to neoadjuvant chemoradiotherapy in locally advanced rectal cancer</article-title><source>JCO Precision Oncology</source><year>2018</year><fpage>1</fpage><lpage>15</lpage><pub-id pub-id-type="pmid">35135158</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R55">
+        <label>55</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Votanopoulos</surname><given-names>KI</given-names></name>
+<name><surname>Skardal</surname><given-names>A</given-names></name>
+</person-group><article-title>ASO author reflections: Co-cultured lymph node and tumor organoids as a platform for the creation of adaptive immunity and predict response to immunotherapy</article-title><source>Annals of surgical oncology</source><year>2020</year><volume>27</volume><fpage>1968</fpage><lpage>9</lpage><pub-id pub-id-type="pmid">32185535</pub-id>
+</element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig position="float" id="F1">
+      <label>Figure 1</label>
+      <caption>
+        <title><bold>A)</bold> Current applications of tumor-derived organoids. <bold>B)</bold> Complex immune organoids can be used as platforms to test immunotherapies and include tumor stroma, immune cells and vasculature in addition to tumor tissue. Organoids cultures in microfluidic devices provide flow and structure and permit the combination of different organoid types. Organoid interactions with the surrounding tissue and vasculature can also be provided by the engraftment of organoids into tissue like the chicken chorioallantoic membrane (CAM).</title>
+      </caption>
+      <graphic xlink:href="EMS128783-f001" position="float"/>
+    </fig>
+  </floats-group>
+</article>

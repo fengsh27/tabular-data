@@ -1,0 +1,1126 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">9815764</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">21672</journal-id>
+      <journal-id journal-id-type="nlm-ta">J Gene Med</journal-id>
+      <journal-id journal-id-type="iso-abbrev">J Gene Med</journal-id>
+      <journal-title-group>
+        <journal-title>The journal of gene medicine</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1099-498X</issn>
+      <issn pub-type="epub">1521-2254</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">21674736</article-id>
+      <article-id pub-id-type="pmc">3984922</article-id>
+      <article-id pub-id-type="doi">10.1002/jgm.1576</article-id>
+      <article-id pub-id-type="manuscript">NIHMS565424</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>A Single Direct Injection into the Left Ventricular Wall of an AAV9 Vector Expressing EcSOD from the Cardiac Troponin-T Promoter Protects Mice Against Myocardial Infarction</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Prasad</surname>
+            <given-names>Konkal-Matt R.</given-names>
+          </name>
+          <degrees>PhD</degrees>
+          <xref ref-type="aff" rid="A1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Smith</surname>
+            <given-names>Robert S.</given-names>
+          </name>
+          <degrees>MD</degrees>
+          <xref ref-type="aff" rid="A1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Xu</surname>
+            <given-names>Yaqin</given-names>
+          </name>
+          <degrees>MD, PhD</degrees>
+          <xref ref-type="aff" rid="A1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>French</surname>
+            <given-names>Brent A</given-names>
+          </name>
+          <degrees>PhD</degrees>
+          <xref ref-type="aff" rid="A1">1</xref>
+          <xref ref-type="aff" rid="A2">2</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>1</label>Department of Biomedical Engineering, University of Virginia, Charlottesville, VA, USA
+</aff>
+      <aff id="A2"><label>2</label>Departments of Radiology and Medicine-Cardiovascular Division, University of Virginia, Charlottesville, VA, USA
+</aff>
+      <author-notes>
+        <corresp id="CR1">Correspondence should be addressed to: Brent A. French, Ph.D., Department of Biomedical Engineering, 415 Lane Road, MR5 Building, Room 1219, University of Virginia, Charlottesville, VA 22903, Phone: (434) 924-5728, Fax: (434) 924-5923, <email>bf4g@virginia.edu</email></corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>24</day>
+        <month>3</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>6</month>
+        <year>2011</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>13</day>
+        <month>4</month>
+        <year>2014</year>
+      </pub-date>
+      <volume>13</volume>
+      <issue>6</issue>
+      <fpage>333</fpage>
+      <lpage>341</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <sec id="S1">
+          <title>Background</title>
+          <p id="P1">Localized administration of a highly efficient gene delivery system in combination with a cardiac-selective promoter may provide an adequate biosafety profile in clinical applications such as coronary artery bypass graft surgery (CABG), where regions of myocardium can be readily injected to protect them against the potential threat of future ischemic events.</p>
+        </sec>
+        <sec id="S2">
+          <title>Methods</title>
+          <p id="P2">AAV vectors expressing firefly luciferase or eGFP packaged into AAV serotypes 1, 2, 6, 8 and 9 were injected into the left ventricular (LV) wall of adult mice to determine the time course, magnitude and distribution of gene expression. An AAV9 vector expressing the extracellular isoform of superoxide dismutase (EcSOD) from the cTnT promoter was then directly injected into the LV wall of adult mice. Acute myocardial infarction (MI) was induced 4 weeks after injection and infarct size was determined by TTC and Phthalo blue staining.</p>
+        </sec>
+        <sec id="S3">
+          <title>Results</title>
+          <p id="P3">Serotypes AAV 9, 8, 1 and 6 provided early onset of gene expression in the heart with minimal extra-cardiac gene expression. AAV9 provided the highest magnitude of gene expression. Immunostaining for eGFP showed expression spanning the anterior to posterior walls from the mid ventricle to the apex. A single direct injection of the AAV9 vector bearing EcSOD (n =5) decreased the mean infarct size by 50% as compared to the eGFP control group (n=8) (44±7% vs 22±5%, p=0.04).</p>
+        </sec>
+        <sec id="S4">
+          <title>Conclusions</title>
+          <p id="P4">AAV serotype 9 is highly efficient for cardiac gene delivery, as evidenced by early onset and high-level gene expression. AAV9 mediated, cardiac selective overexpression of EcSOD from the cTnT promoter significantly reduced infarct size in mice.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <kwd>AAV</kwd>
+        <kwd>gene therapy</kwd>
+        <kwd>cardiac-selective promoter</kwd>
+        <kwd>myocardial infarction</kwd>
+        <kwd>cardioprotection</kwd>
+        <kwd>EcSOD</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="S5">
+      <title>Introduction</title>
+      <p id="P5">Myocardial gene transfer using AAV vectors is an attractive approach to treat the cardiac diseases. AAV vectors have emerged as arguably the single most promising gene delivery system for human gene therapy. AAV vectors are safe and highly efficient for gene delivery to a variety of tissues, providing long term gene expression with minimal immune responses [<xref rid="R1" ref-type="bibr">1</xref>]. Most AAV serotypes display a wide range of tissue tropism with varying degrees of affinity for different organs and cell types. Serotypes AAV6 and AAV9 transduce cardiac myocytes preferentially [<xref rid="R2" ref-type="bibr">2</xref>-<xref rid="R4" ref-type="bibr">4</xref>], however, they also transduce skeletal muscle, liver, lung and pancreas [<xref rid="R5" ref-type="bibr">5</xref>-<xref rid="R7" ref-type="bibr">7</xref>]. Off-target gene delivery and expression becomes liability in specific gene therapy applications where it is important to restrict the expression of therapeutic gene to a particular organ or cell type. Systemic gene delivery may be advantageous for the treatment of genetic diseases where uniform gene delivery throughout the target organ is desirable. However for gene therapy applications in ischemic heart disease where only part of the organ is affected, it may be desirable to transfer genes to precisely defined regions of the myocardium rather than to the entire heart. Direct intra-myocardial injection can provide safe and sufficient gene transfer to specific regions of the heart, and may prove to be a viable mode of administration in patients undergoing clinical procedures such as CABG, where the region of interest is readily accessible. Gene transfer by direct injection minimizes viral load, immunological complications and the potential for systemic exposure.</p>
+      <p id="P6">In the past, a number of studies employed the AAV2 serotype for direct gene transfer to the myocardium of rodents and rabbits. Ironically, the most thoroughly studied serotype (AAV2) provides relatively low transduction rates and suffers from a prolonged lag phase (up to 6 weeks) before full expression is achieved in the heart [<xref rid="R8" ref-type="bibr">8</xref>, <xref rid="R9" ref-type="bibr">9</xref>]. More recently, a number of new AAV serotypes have been isolated, and some of these (e.g., AAV1, AAV6, AAV8 and AAV9) effectively cross the endothelial barrier to efficiently transduce a variety of organs following systemic administration [<xref rid="R2" ref-type="bibr">2</xref>, <xref rid="R3" ref-type="bibr">3</xref>, <xref rid="R5" ref-type="bibr">5</xref>, <xref rid="R6" ref-type="bibr">6</xref>, <xref rid="R10" ref-type="bibr">10</xref>, <xref rid="R11" ref-type="bibr">11</xref>]. These newer AAV serotypes have been tested for their ability to transfer genes after direct injection into the myocardium of rodents [<xref rid="R12" ref-type="bibr">12</xref>-<xref rid="R14" ref-type="bibr">14</xref>] and monkeys [<xref rid="R15" ref-type="bibr">15</xref>]. Historically, the majority of direct gene transfer studies in the heart used the AAV2 serotype to deliver reporter genes under the control of the ubiquitously active CMV promoter [<xref rid="R16" ref-type="bibr">16</xref>-<xref rid="R19" ref-type="bibr">19</xref>]. More recent studies using the newer AAV serotypes have also used the CMV promoter [<xref rid="R12" ref-type="bibr">12</xref>-<xref rid="R15" ref-type="bibr">15</xref>, <xref rid="R20" ref-type="bibr">20</xref>]. Direct gene transfer using AAV vectors in combination with cardiac-selective promoters can minimize off target gene expression due to spill over of the vector into the bloodstream. The therapeutic efficacy of direct gene transfer to the heart using the newer AAV serotypes carrying cardiac-selective promoters has yet to be reported. The objectives of this work were to evaluate: 1) the time course of cardiac gene expression following the direct injection of AAV serotypes 1, 2, 6, 8, and 9 carrying a luciferase reporter gene driven by the cardiac troponin T (cTnT) promoter, and 2) the therapeutic benefit of cardioprotective gene expression by the cTnT promoter following direct injection into the myocardium.</p>
+      <p id="P7">In the present study, a side-by-side comparison of AAV serotypes 1, 2, 6, 8, and 9 was performed following direct injection into murine myocardium of an AAV vector carrying the firefly luciferase reporter gene under the control of the cardiac-selective cTnT promoter. Bioluminescence imaging was used to follow the time course of cardiac gene expression from AAV serotypes 1, 2, 6, 8 and 9, and the results at the end of the study were confirmed by conventional luminometry of tissue homogenates. Based on these results, the AAV9 serotype was selected for additional studies in which the distribution of AAV9-mediated gene transfer after direct intramyocardial injection was characterized using an AAV vector carrying eGFP driven by the cTnT promoter. Finally, we sought to determine whether a single injection of an AAV9 vector carrying EcSOD under the control of the cTnT promoter could protect the heart against subsequent MI.</p>
+    </sec>
+    <sec sec-type="methods" id="S6">
+      <title>Materials and Methods</title>
+      <sec id="S7">
+        <title>AAV vectors</title>
+        <p id="P8">The AAV vectors carrying firefly luciferase (AcTnTLuc) or eGFP (AcTnTeGFP) cDNA driven by the cTnT promoter are described in Prasad et al. [<xref rid="R6" ref-type="bibr">6</xref>]. The AAV vectors were packaged into the desired AAV serotype capsid by the double or triple transfection method in HEK 293 cells [<xref rid="R21" ref-type="bibr">21</xref>]. AAV vectors were packaged into capsids from AAV2, AAV1 and AAV6 using helper plasmids pSH5 [<xref rid="R22" ref-type="bibr">22</xref>] (gift from Dr. James Trempe), pDP1 and pDP6 [<xref rid="R23" ref-type="bibr">23</xref>] (gifts from Dr. Mark Kay), respectively. AAV vectors were packaged into serotype AAV8 and AAV9 capsids using helper plasmids pAdΔF6 (providing the three adenoviral helper genes) and plasmids p5E18-VD2/8 or p5E18-VD2/9 [<xref rid="R24" ref-type="bibr">24</xref>, <xref rid="R25" ref-type="bibr">25</xref>] (kindly provided by Dr. James M. Wilson). The AAV vectors were purified by ammonium sulfate fractionation and Iodixanol gradient centrifugation [<xref rid="R21" ref-type="bibr">21</xref>]. Titers for the AAV vectors (viral genomes/ml; vg/ml) were determined by quantitative real-time PCR as described previously.</p>
+      </sec>
+      <sec id="S8">
+        <title>Vector administration</title>
+        <p id="P9">Male C57BL/6 mice (Jackson Laboratories) were maintained on a 12/12 hour light/dark cycle at 24°C and 60% humidity. Eight- to ten- week-old mice weighing 20–25 g were used in the experiments. Mice were anesthetized with sodium pentobarbital at a dose of 100 mg/kg, intraperitoneally. For studies of reporter gene expression, mice (n = 4 per group) were placed in a supine position under a heating lamp and orally intubated. Artificial respiration was maintained with a rodent ventilator. The heart was exposed upon opening the left pleural cavity by cutting the left third and fourth ribs and intercostal muscles with a cautery pen. The pericardium was removed, and a syringe fitted with a 29-G needle was inserted near the apex of the heart and tunneled intramuscularly to the anterior LV at the mid-ventricular level. After slowly injecting 10 μl of AAV vector (5×10<sup>10</sup> vg) or saline, the chest was closed in layers and a total of 0.1 ml 0.5% bupivacaine was injected subcutaneously near both edges of the skin incision to alleviate postoperative pain. All work was performed under animal protocols approved by the Institutional Animal Care and Use Committee and conformed to the Guide for the Care and Use of Laboratory Animals (NIH Publication 85–23, revised 1985).</p>
+      </sec>
+      <sec id="S9">
+        <title>In vivo and bioluminescence imaging</title>
+        <p id="P10">Luciferase expression in mouse hearts was non-invasively assessed by in vivo bioluminescence imaging using previously reported methods [<xref rid="R9" ref-type="bibr">9</xref>, <xref rid="R26" ref-type="bibr">26</xref>]. Animals were anesthetized and maintained on 1–1.2% isoflurane in oxygen. D-luciferin (150 μg/g body weight, Xenogen, Alameda, CA) was administered to mice by intraperitoneal injection. Eight minutes following D-luciferin administration, all mice were imaged in supine position using a Xenogen IVIS100 imaging system (Caliper Life Sciences, Hopkinton, MA). Photons emitted from the mice were collected and integrated for a period of 1 min. Images were processed using Living Image software (Caliper Life Sciences). Mean luminescence intensities (photons/s·cm<sup>2</sup>·sr) were measured from the regions of interest centered over the mouse hearts.</p>
+      </sec>
+      <sec id="S10">
+        <title>Luciferase activity assay</title>
+        <p id="P11">Hearts and livers were collected from mice after bioluminescence imaging at 6 weeks post vector injection for luminometric assays of luciferase activity using reagents from Promega Corp. (Madison, WI). Protein extracts from the whole organs were prepared as recommended by the manufacturer and protein contents were determined using the DC Protein Assay Kit I (Bio-Rad Laboratories, Hercules, CA). Luciferase activities in the protein samples were determined using a FLUOstar Optima micro-plate reader (BMG Labtech, Durham, NC). Luciferase activities were reported as relative light units per mg of protein (RLUs/mg protein, mean +/− SEM).</p>
+      </sec>
+      <sec id="S11">
+        <title>Fluorescence imaging and immunohistochemistry</title>
+        <p id="P12">eGFP expression in the mouse hearts was documented by fluorescence imaging and immunohistochemical analysis as described previously [<xref rid="R6" ref-type="bibr">6</xref>]. Briefly, hearts were collected six weeks following vector administration and fixed in 3.7% para-formaldehyde for 1 h at 4°C. After washing in PBS (3 times, 5 min each), hearts were equilibrated with 30% sucrose in PBS overnight. Six μm cryosections were prepared and eGFP expression was documented using a BX51 fluorescence microscope with a DP70 digital camera (Olympus America, Inc., Center Valley, PA). The same sections used for fluorescence imaging were subsequently immunostained for eGFP using a rabbit anti-GFP antibody (Abcam Inc, Cambridge, MA).</p>
+      </sec>
+      <sec id="S12">
+        <title>Immunoblotting</title>
+        <p id="P13">Flash-frozen hearts from mice injected with AAV9 vectors carrying AcTnTEcSOD or AcTnTeGFP were homogenized in RIPA buffer. Protein concentrations were determined by using the DC Protein Assay Kit I (Bio-Rad Laboratories). Equal amounts of protein (50 μg) from each sample were electrophoresed under reducing conditions on 4-15 % gradient polyacrylamide gels and then transferred onto PVDF membranes. After blocking, the membranes were incubated overnight at 4°C with rabbit anti-EcSOD antibody (Stressgen Bioreagents, Victoria, BC Canada) followed by 1-h incubation with goat anti-rabbit IgG conjugated with horseradish peroxidase (Bio-Rad Laboratories) at room temperature. After exposure to the chemiluminescent reagent (SuperSignal West Pico, Pierce Biotechnology, Inc. Rockford, IL), images were captured using an AlphaImager (Cell Biosciences, Inc. Santa Clara, CA). Optical densitometry was performed using AlphaEaseFC software (Cell Biosciences).</p>
+      </sec>
+      <sec id="S13">
+        <title>Myocardial infarct induction and measurement</title>
+        <p id="P14">In the study of myocardial infarction (MI), a total of 17 mice were subjected to 30 min of coronary occlusion followed by 2 hr reperfusion and then euthanized to determine infarct size (n = 10 mice previously injected with AcTnTeGFP and n = 7 mice injected with AcTnTEcSOD). Of these 17 mice, 2 mice from each group failed to complete the study due to intraoperative mortality or technical difficulties in the Phthalo blue staining protocol, leaving n = 8 in the AcTnTeGFP group and n = 5 in the AcTnTEcSOD group. A standard myocardial ischemia/reperfusion protocol was employed as detailed previously [<xref rid="R27" ref-type="bibr">27</xref>]. Briefly, mice were anesthetized with pentobarbital sodium (100 mg/kg, ip) and orally intubated. The heart was exposed through a left thoracotomy, and coronary artery was occluded by passing a suture around the LAD and tightening over a piece of polyethylene-60 tubing for a period of 30 min. Reperfusion was induced by removing the tubing. Sham-operated mice underwent similar procedures with a suture placed around the LAD without tightening. Mice were euthanized 2 hr later for infarct size measurement performed by a blinded operator. Hearts were cannulated through the ascending aorta and perfused with 3–4 ml of 1.0% triphenyltetrazolium chloride (TTC). The LAD was then re-occluded using the suture left in the LV, and 10% Phthalo blue was perfused through the ascending aorta to distinguish perfused myocardium from area at risk. The hearts were frozen for 20 min and then cut into five short-axis slices and photographed for digital planimetry. Infarct size as percentage of area at risk was determined as described previously [<xref rid="R27" ref-type="bibr">27</xref>].</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S14">
+      <title>Results</title>
+      <sec id="S15">
+        <title>Time course of pseudotyped AAV vector mediated gene expression in the murine heart after direct injection</title>
+        <p id="P15">Bioluminescence imaging of mice showed that in all groups light output was largely restricted to the left side the chest (<xref ref-type="fig" rid="F1">Fig. 1A</xref>). Light output indicating luciferase expression was evident on day 4 post-injection in all groups except the AAV2 group. In addition to the heart, low-level signals were also observed in the abdominal cavity in the AAV8 and AAV9 groups (<xref ref-type="fig" rid="F1">Fig. 1A</xref>, AAV8 and AAV9). Serial assessment by bioluminescence imaging showed that luciferase expression from AAV2 was characterized by an early lag phase with low levels of gene expression that required 6 weeks to reach full expression (<xref ref-type="fig" rid="F1">Fig. 1B</xref>), whereas gene expression from AAV serotypes 1, 6, 8 and 9 was rapid in its onset and approached steady-state levels within 2 weeks (<xref ref-type="fig" rid="F1">Fig. 1B</xref>). While AAV serotypes 1, 6, 8 and 9 displayed similar patterns of expression kinetics, the magnitude of gene expression from AAV8 and AAV9 was significantly higher than any other serotype. While bioluminescence imaging was used to serially assess relative levels of luciferase activity in mouse hearts, in-vitro luciferase assays were used to rigorously compare luciferase expression between heart and liver protein extracts obtained after the last imaging session (<xref ref-type="fig" rid="F1">Fig. 1C</xref> and <xref ref-type="supplementary-material" rid="SD1">Supporting Information Table S1</xref>). Background luciferase activity was very low in heart and liver protein extracts obtained from control mice injected with saline (<xref ref-type="fig" rid="F1">Fig. 1C</xref>, Ctrl). Similarly, only background levels of luciferase activity were detected in the livers from mice injected with AAV2. In contrast, the levels of luciferase activity in livers from mice injected with the other AAV serotypes were significantly elevated relative to background, albeit extremely low in comparison to the cardiac levels obtained using any serotype (see <xref ref-type="supplementary-material" rid="SD1">Table S1 in Supporting Information</xref> for numerical values). The highest levels of luciferase activity were obtained in hearts from the AAV9 group, followed by the AAV8 group (<xref ref-type="fig" rid="F1">Fig. 1C</xref>). In spite of using a cardiac-selective promoter, extremely low levels of expression (&lt;0.3% of that measured in heart) were nevertheless detectable in livers from the AAV8 and AAV9 groups, reflecting the potency of these two serotypes and their limited ability to gain access to the bloodstream after IM injection. Heart extracts from mice injected with the AAV2 vector showed the lowest levels of luciferase activity. In comparison with hearts from the AAV2 group, luciferase activity was 19- to 21-fold higher in the AAV1 and AAV6 groups (p &lt; 0.01, either comparison), 165-fold higher in the AAV8 group and 232-fold higher in the AAV9 group (p &lt; 0.01, either comparison). These data show that AAV9 is the most efficient serotype currently available for transducing the adult mouse heart by direct injection, and that AAV9-mediated gene expression approaches a steady plateau within 2 weeks of vector administration.</p>
+      </sec>
+      <sec id="S16">
+        <title>Distribution of AAV9 vector after single direct injection into the adult mouse left ventricular (LV) wall</title>
+        <p id="P16">Based on the results presented above, serotype AAV9 was selected to determine the distribution of gene expression in the myocardium following direct injection into the LV wall. For these studies, we used an AAV vector harboring enhanced green fluorescence protein (eGFP) driven by the cTnT promoter. The AcTnTeGFP vector was packaged in AAV9 capsids and injected directly into the anterior LV wall at a dose of 5×10<sup>10</sup> vg per mouse. Four weeks following vector administration, 6 μm short-axis cryosections from the apical, mid-ventricular and basal levels of the heart were prepared to characterize eGFP expression by fluorescence microscopy and immunohistochemistry. Very low levels of eGFP expression were found in sections from the basal level (<xref ref-type="fig" rid="F2">Fig. 2A</xref>) or in the septal region of any section (<xref ref-type="fig" rid="F2">Fig. 2B and C</xref>). Fluorescence imaging of the mid-ventricular and apical sections at higher magnification (<xref ref-type="fig" rid="F2">Fig. 2E and F</xref>, respectively) revealed robust eGFP expression. eGFP was predominantly found in the anterior, lateral, posterior and inferior regions (<xref ref-type="fig" rid="F2">Fig. 2E and F</xref>, regions A, L, P and I) of the heart in both apical and mid-ventricular sections. Following fluorescence microscopy, coverslips were removed in order to perform immunohistochemical analysis to confirm the expression of eGFP (<xref ref-type="fig" rid="F2">Fig. 2G, H and I</xref>).</p>
+      </sec>
+      <sec id="S17">
+        <title>A single direct injection into the anterior LV wall of an AAV9 vector expressing EcSOD from the cTnT promoter protects the heart against MI</title>
+        <p id="P17">To demonstrate the therapeutic potential of direct gene transfer using the AAV9 capsid in combination with a cardiac-selective promoter, an AAV vector encoding mouse EcSOD under the control of the cTnT promoter was packaged into AAV9 capsids. The AAV vectors were directly injected into mouse myocardium (5 × 10<sup>10</sup> vg/mouse) as described in the Methods section. In preliminary studies, cardiac EcSOD expression was confirmed by immunoblot analysis of mouse hearts harvested 4 weeks post vector injection. EcSOD expression was 22-fold higher in mice injected with AcTnTEcSOD compared to control mice injected with AcTnTeGFP (<xref ref-type="fig" rid="F3">Fig. 3A</xref>). In the MI study, MI was induced by a 30 minute occlusion of the proximal left anterior descending coronary artery (LAD) four weeks after vector administration. Twenty-four hours after reperfusion, hearts were subjected to histological analyses by sequential TTC and Phthalo blue staining to quantify infarct area and area at risk, respectively (<xref ref-type="fig" rid="F3">Fig. 3B</xref>). Area at risk was similar in the eGFP and EcSOD groups: 42 +/− 4 and 35 +/− 6% of LV mass, respectively (p = 0.33). However, mean infarct size as percent area at risk in the EcSOD group was 50% lower as compared to the eGFP group (44±7% vs. 22±5%, p=0.023) (<xref ref-type="fig" rid="F3">Fig. 3C</xref>). Mean infarct size as percent of LV mass was 60% lower in the EcSOD group as compared to the eGFP group (7+/−2 vs. 19+/− 4, p=0.024). These results show that direct gene transfer using AAV9 to deliver EcSOD driven by the cardiac-selective cTnT promoter protects the heart against subsequent myocardial infarction.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="S18">
+      <title>Discussion</title>
+      <p id="P18">The time course of AAV-mediated luciferase expression in mouse hearts injected with AAV1, 2, 6, 8 and 9 was determined by non-invasive bioluminescence imaging for up to 42 days following vector administration (<xref ref-type="fig" rid="F1">Fig. 1</xref>). Luciferase expression from the conventional AAV2 serotype increased slowly over the entire period of the experiment. The prolonged lag phase and low level of gene expression from AAV2 shown here is consistent with previous reports. In contrast, the AAV8 and AAV9 serotypes provided robust and early onset gene expression in the heart as compared to the other serotypes tested. The superior magnitude of cardiac gene expression from AAV9 as compared to other AAV serotypes is also consistent with previous reports [<xref rid="R6" ref-type="bibr">6</xref>, <xref rid="R10" ref-type="bibr">10</xref>]. The strength of AAV9 mediated gene expression is particularly evident at early time points, considering that light output from the AAV9 group on day 7 post-injection was equal to or greater than the maximum light output observed from AAV1, 2 or 6 at any time point tested. In vivo bioluminescence imaging of luciferase gene expression was employed here to assess relative signal strengths over time in a given tissue. In order to rigorously compare the levels of luciferase expression between tissues, we performed in vitro luciferase assays on protein extracts from hearts and livers of mice injected with serotypes AAV1, 2, 6, 8 or 9 carrying AcTnTLuc (<xref ref-type="fig" rid="F1">Fig. 1C</xref>). AAV vector transduction entails capsid binding to cell surface receptors, internalization, nuclear entry, viral uncoating and conversion of single-strand (ss) genomes to double-stranded DNA. It has previously been shown that the superior transduction evidenced by AAV6 and AAV8 in liver is due to efficient un-coating of the viral genome that facilitates the rapid annealing of ss AAV genomes to form double-stranded forms. Similar mechanisms may underlie the robust and early onset of gene expression from AAV8 and AAV9 observed in the heart following direct injection into the anterior LV.</p>
+      <p id="P19">The surgical induction of MI in mice as described in the Methods section reproducibly infarcts the apex of the mouse heart as well as the anterior left ventricle. A single direct injection of AAV9 vector into the mid-ventricular region of the LV provided robust gene expression from the apex to the mid-ventricular level of the anterior, lateral and inferior left ventricular walls (<xref ref-type="fig" rid="F2">Fig. 2</xref>). This widespread coverage from a single direct injection is made possible by the small size of the mouse heart, since previous studies have shown that multiple injections are required to cover the anterior LV in larger animal models [<xref rid="R28" ref-type="bibr">28</xref>].</p>
+      <p id="P20">Most gene therapy protocols use strong viral promoters such as the CMV IE promoter, which confers high levels of gene expression in many cell types. Tissue-selective promoters help to restrict gene expression to the target organ of interest, but the absolute level of gene expression is often an order of magnitude lower than the CMV IE promoter. Recently, we demonstrated that expression from the cardiac-selective cTnT promoter is only 2.4 fold lower as compared to the CMV IE promoter in cardiac myocytes [<xref rid="R6" ref-type="bibr">6</xref>]. We therefore hypothesized that the level of gene expression conferred by the cardiac-selective cTnT promoter would be sufficient to achieve therapeutic efficacy following direct injection of an AAV9 vector expressing EcSOD in a mouse model of ischemia / reperfusion injury. We chose to overexpress the antioxidant enzyme EcSOD as a therapeutic gene because overexpression of EcSOD has previously been shown to protect the heart against myocardial infarction [<xref rid="R29" ref-type="bibr">29</xref>, <xref rid="R30" ref-type="bibr">30</xref>]. The results presented here demonstrate that direct injection of AAV9 vectors directing the expression of EcSOD from the cardiac-selective cTnT promoter do indeed confer significant and long-term protection against MI in mice at the relatively low dose of 5 × 10<sup>10</sup> vg/mouse.</p>
+      <p id="P21">The recent PREVENT IV trial documented a 46.3% failure rate of autologous vein grafts within 12-18 months after coronary artery bypass graft surgery (CABG) [<xref rid="R31" ref-type="bibr">31</xref>]. Over half of those failures occurred &gt;3 months after surgery, and the vast majority of those late failures involved luminal narrowing, presumably due to accelerated atherosclerosis, neointimal hyperplasia and thrombosis, resulting in recurrent angina and/or MI. The hypothesis underlying the pre-clinical study reported here was that a cardioprotective gene therapy, delivered by direct vector injection within the region of anticipated ischemia, could protect the heart against the threat of subsequent MI (such as that resulting from the late failure of autologous vein grafts). Direct injection of AAV vectors to precisely defined regions of the heart not only restricts gene delivery and expression to the region of interest, it also minimizes systemic exposure to the vector. The combination of a highly efficient gene delivery system (e.g., AAV9), localized administration (e.g., direct intramuscular injection) and a cardiac-selective promoter (e.g., cTnT) should improve the biosafety profile of gene therapy for potential clinical applications (e.g., CABG) in which regions of myocardium at risk for ischemia can be readily injected to protect the heart against future coronary events.</p>
+      <p id="P22">A second potential application of pre-emptive EcSOD gene therapy delivered by direct injection would involve patients undergoing cardiac catheterization in which interventional coronary revascularization procedures are either inappropriate or incomplete. In such patients, a catheter-based endomyocardial injection system [<xref rid="R32" ref-type="bibr">32</xref>] might be used to inject the pre-emptive gene therapy vector into potentially ischemic regions of the LV wall. Intracoronary infusion of AAV vectors during cardiac catheterization is an alternative route that has also been explored [<xref rid="R16" ref-type="bibr">16</xref>], although such an approach would certainly benefit from the use of cardiac-selective strategies such as the cTnT promoter reported here.</p>
+      <p id="P23">Given the efficacy of pre-emptive AAV9-mediated EcSOD gene therapy in reducing the size of MI (<xref ref-type="fig" rid="F3">Fig. 3</xref>), it is interesting to speculate that EcSOD might also prove effective in protecting the heart against LV remodeling and heart failure resulting from MI. A pre-clinical test of this hypothesis in mice might also require a pre-emptive treatment strategy, particularly considering that LV remodeling is largely complete within 14 days following reperfused MI in mice [<xref rid="R33" ref-type="bibr">33</xref>]. However, the duration of post-MI LV remodeling is much longer in larger mammals; while the rapid onset of AAV9-mediated gene expression should be similar between species. This opens the possibility that AAV9-mediated EcSOD gene therapy administered via intracoronary infusion might prove useful in combating heart failure post-MI, similar to the strategy currently being employed in ongoing clinical trials of AAV1-mediated SERCA2a gene therapy for heart failure [<xref rid="R34" ref-type="bibr">34</xref>]. This notwithstanding, additional animal studies will be needed to more fully explore the potential of AAV9, cardiac-selective promoters and EcSOD for treating the various manifestations of ischemic heart disease.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="SM">
+      <title>Supplementary Material</title>
+      <supplementary-material content-type="local-data" id="SD1">
+        <label>SupMat Table 1</label>
+        <media xlink:href="NIHMS565424-supplement-SupMat_Table_1.doc" orientation="portrait" xlink:type="simple" id="d36e450" position="anchor"/>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack id="S19">
+      <title>Acknowledgments</title>
+      <p>This work was supported in part by NIH R01 HL058582 to BAF.</p>
+    </ack>
+    <fn-group>
+      <fn id="FN1">
+        <p id="P24">
+          <bold>Disclosures Statement</bold>
+        </p>
+        <p id="P25">The authors have no disclosures to report relevant to this manuscript.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="R1">
+        <label>1</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lyon</surname>
+              <given-names>AR</given-names>
+            </name>
+            <name>
+              <surname>Sato</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hajjar</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Gene therapy: targeting the myocardium</article-title>
+          <source>Heart</source>
+          <year>2008</year>
+          <volume>94</volume>
+          <fpage>89</fpage>
+          <lpage>99</lpage>
+          <pub-id pub-id-type="pmid">18083952</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bostick</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Ghosh</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Yue</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Systemic AAV-9 transduction in mice is influenced by animal age but not by the route of administration</article-title>
+          <source>Gene Therapy</source>
+          <year>2007</year>
+          <volume>14</volume>
+          <fpage>1605</fpage>
+          <lpage>1609</lpage>
+          <pub-id pub-id-type="pmid">17898796</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pacak</surname>
+              <given-names>CA</given-names>
+            </name>
+            <name>
+              <surname>Mah</surname>
+              <given-names>CS</given-names>
+            </name>
+            <name>
+              <surname>Thattaliyath</surname>
+              <given-names>BD</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Recombinant adeno-associated virus serotype 9 leads to preferential cardiac transduction in vivo</article-title>
+          <source>Circulation Research</source>
+          <year>2006</year>
+          <volume>99</volume>
+          <fpage>e3</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">16873720</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Townsend</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Blankinship</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Allen</surname>
+              <given-names>JM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Systemic administration of micro-dystrophin restores cardiac geometry and prevents dobutamine-induced cardiac pump failure</article-title>
+          <source>Molecular Therapy</source>
+          <year>2007</year>
+          <volume>15</volume>
+          <fpage>1086</fpage>
+          <lpage>1092</lpage>
+          <pub-id pub-id-type="pmid">17440445</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gregorevic</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Blankinship</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Allen</surname>
+              <given-names>JM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Systemic delivery of genes to striated muscles using adeno-associated viral vectors</article-title>
+          <source>Nature Medicine</source>
+          <year>2004</year>
+          <volume>10</volume>
+          <fpage>828</fpage>
+          <lpage>834</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Prasad</surname>
+              <given-names>KMR</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Robust cardiomyocyte-specific gene expression following systemic injection of AAV: in vivo gene delivery follows a Poisson distribution</article-title>
+          <source>Gene Ther</source>
+          <year>2011</year>
+          <volume>18</volume>
+          <fpage>43</fpage>
+          <lpage>52</lpage>
+          <pub-id pub-id-type="pmid">20703310</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Rehman</surname>
+              <given-names>KK</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Widespread and stable pancreatic gene transfer by adeno-associated virus vectors via different routes</article-title>
+          <source>Diabetes</source>
+          <year>2006</year>
+          <volume>55</volume>
+          <fpage>875</fpage>
+          <lpage>884</lpage>
+          <pub-id pub-id-type="pmid">16567506</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Aikawa</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Huggins</surname>
+              <given-names>GS</given-names>
+            </name>
+            <name>
+              <surname>Snyder</surname>
+              <given-names>RO</given-names>
+            </name>
+          </person-group>
+          <article-title>Cardiomyocyte-specific gene expression following recombinant adeno-associated viral vector transduction</article-title>
+          <source>Journal of Biological Chemistry</source>
+          <year>2002</year>
+          <volume>277</volume>
+          <fpage>18979</fpage>
+          <lpage>18985</lpage>
+          <pub-id pub-id-type="pmid">11889137</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Prasad</surname>
+              <given-names>K-MR</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Topoisomerase inhibition accelerates gene expression after adeno-associated virus-mediated gene transfer to the mammalian heart</article-title>
+          <source>Molecular Therapy</source>
+          <year>2007</year>
+          <volume>15</volume>
+          <fpage>764</fpage>
+          <lpage>771</lpage>
+          <pub-id pub-id-type="pmid">17299410</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Inagaki</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Fuess</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Storm</surname>
+              <given-names>TA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Robust systemic transduction with AAV9 vectors in mice: efficient global cardiac gene transfer superior to that of AAV8</article-title>
+          <source>Molecular Therapy</source>
+          <year>2006</year>
+          <volume>14</volume>
+          <fpage>45</fpage>
+          <lpage>53</lpage>
+          <pub-id pub-id-type="pmid">16713360</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Qiao</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Adeno-associated virus serotype 8 efficiently delivers genes to muscle and heart</article-title>
+          <source>Nature Biotechnology</source>
+          <year>2005</year>
+          <volume>23</volume>
+          <fpage>321</fpage>
+          <lpage>328</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Du</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Kido</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>DV</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Differential myocardial gene delivery by recombinant serotype-specific adeno-associated viral vectors</article-title>
+          <source>Molecular Therapy</source>
+          <year>2004</year>
+          <volume>10</volume>
+          <fpage>604</fpage>
+          <lpage>608</lpage>
+          <pub-id pub-id-type="pmid">15336660</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R13">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kawamoto</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Shi</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Nitta</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Widespread and early myocardial gene expression by adeno-associated virus vector type 6 with a [beta]-actin hybrid promoter</article-title>
+          <source>Molecular Therapy</source>
+          <year>2005</year>
+          <volume>11</volume>
+          <fpage>980</fpage>
+          <lpage>985</lpage>
+          <pub-id pub-id-type="pmid">15922969</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R14">
+        <label>14</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Palomeque</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Chemaly</surname>
+              <given-names>ER</given-names>
+            </name>
+            <name>
+              <surname>Colosi</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Efficiency of eight different AAV serotypes in transducing rat myocardium in vivo</article-title>
+          <source>Gene Therapy</source>
+          <year>2007</year>
+          <volume>14</volume>
+          <fpage>989</fpage>
+          <lpage>997</lpage>
+          <pub-id pub-id-type="pmid">17251988</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R15">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tarantal</surname>
+              <given-names>AF</given-names>
+            </name>
+            <name>
+              <surname>Lee</surname>
+              <given-names>CC</given-names>
+            </name>
+          </person-group>
+          <article-title>Long-Term Luciferase Expression Monitored by Bioluminescence Imaging After Adeno-Associated Virus-Mediated Fetal Gene Delivery in Rhesus Monkeys (Macaca mulatta)</article-title>
+          <source>Human Gene Therapy</source>
+          <year>2010</year>
+          <volume>21</volume>
+          <fpage>143</fpage>
+          <lpage>148</lpage>
+          <comment>DOI: doi:10.1089/hum.2009.126</comment>
+          <pub-id pub-id-type="pmid">19751148</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R16">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kaplitt</surname>
+              <given-names>MG</given-names>
+            </name>
+            <name>
+              <surname>Xiao</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Samulski</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Long-term gene transfer in porcine myocardium after coronary infusion of an adeno-associated virus vector</article-title>
+          <source>Ann Thorac Surg</source>
+          <year>1996</year>
+          <volume>62</volume>
+          <fpage>1669</fpage>
+          <lpage>1676</lpage>
+          <pub-id pub-id-type="pmid">8957370</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R17">
+        <label>17</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kawada</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Nakazawa</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Nakauchi</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Rescue of hereditary form of dilated cardiomyopathy by rAAV-mediated somatic gene therapy: Amelioration of morphological findings, sarcolemmal permeability, cardiac performances, and the prognosis of TO-2 hamsters</article-title>
+          <source>Proceedings of the National Academy of Sciences</source>
+          <year>2002</year>
+          <volume>99</volume>
+          <fpage>901</fpage>
+          <lpage>906</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R18">
+        <label>18</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Melo</surname>
+              <given-names>LG</given-names>
+            </name>
+            <name>
+              <surname>Agrawal</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Gene therapy strategy for long-term myocardial protection using adeno-associated virus-mediated delivery of heme oxygenase gene</article-title>
+          <source>Circulation</source>
+          <year>2002</year>
+          <volume>105</volume>
+          <fpage>602</fpage>
+          <lpage>607</lpage>
+          <pub-id pub-id-type="pmid">11827926</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R19">
+        <label>19</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Svensson</surname>
+              <given-names>EC</given-names>
+            </name>
+            <name>
+              <surname>Marshall</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Woodard</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Efficient and stable transduction of cardiomyocytes after intramyocardial injection or intracoronary perfusion with recombinant adeno-associated virus vectors</article-title>
+          <source>Circulation</source>
+          <year>1999</year>
+          <volume>99</volume>
+          <fpage>201</fpage>
+          <lpage>205</lpage>
+          <pub-id pub-id-type="pmid">9892583</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R20">
+        <label>20</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bish</surname>
+              <given-names>LT</given-names>
+            </name>
+            <name>
+              <surname>Morine</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Sleeper</surname>
+              <given-names>MM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Adeno-associated virus (AAV) serotype 9 provides global cardiac gene transfer superior to AAV1, AAV6, AAV7, and AAV8 in the mouse and rat</article-title>
+          <source>Human Gene Therapy</source>
+          <year>2008</year>
+          <volume>19</volume>
+          <fpage>1359</fpage>
+          <lpage>1368</lpage>
+          <pub-id pub-id-type="pmid">18795839</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R21">
+        <label>21</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ried</surname>
+              <given-names>MU</given-names>
+            </name>
+            <name>
+              <surname>Girod</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Leike</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Adeno-associated virus capsids displaying immunoglobulin-binding domains permit antibody-mediated vector retargeting to specific cell surface receptors</article-title>
+          <source>Journal of Virology</source>
+          <year>2002</year>
+          <volume>76</volume>
+          <fpage>4559</fpage>
+          <lpage>4566</lpage>
+          <pub-id pub-id-type="pmid">11932421</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R22">
+        <label>22</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Collaco</surname>
+              <given-names>RF</given-names>
+            </name>
+            <name>
+              <surname>Cao</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Trempe</surname>
+              <given-names>JP</given-names>
+            </name>
+          </person-group>
+          <article-title>A helper virus-free packaging system for recombinant adeno-associated virus vectors</article-title>
+          <source>Gene</source>
+          <year>1999</year>
+          <volume>238</volume>
+          <fpage>397</fpage>
+          <lpage>405</lpage>
+          <pub-id pub-id-type="pmid">10570967</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R23">
+        <label>23</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Grimm</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Kay</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Kleinschmidt</surname>
+              <given-names>JA</given-names>
+            </name>
+          </person-group>
+          <article-title>Helper virus-free, optically controllable, and two-plasmid-based production of adeno-associated virus vectors of serotypes 1 to 6</article-title>
+          <source>Molecular Therapy</source>
+          <year>2003</year>
+          <volume>7</volume>
+          <fpage>839</fpage>
+          <lpage>850</lpage>
+          <pub-id pub-id-type="pmid">12788658</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R24">
+        <label>24</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gao</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Vandenberghe</surname>
+              <given-names>LH</given-names>
+            </name>
+            <name>
+              <surname>Alvira</surname>
+              <given-names>MR</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Clades of Adeno-associated viruses are widely disseminated in human tissues</article-title>
+          <source>Journal of Virology</source>
+          <year>2004</year>
+          <volume>78</volume>
+          <fpage>6381</fpage>
+          <lpage>6388</lpage>
+          <pub-id pub-id-type="pmid">15163731</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R25">
+        <label>25</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gao</surname>
+              <given-names>G-P</given-names>
+            </name>
+            <name>
+              <surname>Alvira</surname>
+              <given-names>MR</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Novel adeno-associated viruses from rhesus monkeys as vectors for human gene therapy</article-title>
+          <source>Proceedings of the National Academy of Sciences of the United States of America</source>
+          <year>2002</year>
+          <volume>99</volume>
+          <fpage>11854</fpage>
+          <lpage>11859</lpage>
+          <pub-id pub-id-type="pmid">12192090</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R26">
+        <label>26</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wu</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Inubushi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Sundaresan</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Optical imaging of cardiac reporter gene expression in living rats</article-title>
+          <source>Circulation</source>
+          <year>2002</year>
+          <volume>105</volume>
+          <fpage>1631</fpage>
+          <lpage>1634</lpage>
+          <pub-id pub-id-type="pmid">11940538</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R27">
+        <label>27</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Berr</surname>
+              <given-names>SS</given-names>
+            </name>
+            <name>
+              <surname>Gilson</surname>
+              <given-names>WD</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Simultaneous evaluation of infarct size and cardiac function in intact mice by contrast-enhanced cardiac magnetic resonance imaging reveals contractile dysfunction in noninfarcted regions early after myocardial infarction</article-title>
+          <source>Circulation</source>
+          <year>2004</year>
+          <volume>109</volume>
+          <fpage>1161</fpage>
+          <lpage>1167</lpage>
+          <pub-id pub-id-type="pmid">14967719</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R28">
+        <label>28</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>French</surname>
+              <given-names>BA</given-names>
+            </name>
+            <name>
+              <surname>Mazur</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Geske</surname>
+              <given-names>RS</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Direct in vivo gene transfer into porcine myocardium using replication-deficient adenoviral vectors</article-title>
+          <source>Circulation</source>
+          <year>1994</year>
+          <volume>90</volume>
+          <fpage>2414</fpage>
+          <lpage>2424</lpage>
+          <pub-id pub-id-type="pmid">7525108</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R29">
+        <label>29</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Agrawal</surname>
+              <given-names>RS</given-names>
+            </name>
+            <name>
+              <surname>Muangman</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Layne</surname>
+              <given-names>MD</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Pre-emptive gene therapy using recombinant adeno-associated virus delivery of extracellular superoxide dismutase protects heart against ischemic reperfusion injury, improves ventricular function and prolongs survival</article-title>
+          <source>Gene Ther</source>
+          <year>2004</year>
+          <volume>11</volume>
+          <fpage>962</fpage>
+          <lpage>969</lpage>
+          <pub-id pub-id-type="pmid">15029230</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R30">
+        <label>30</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name>
+              <surname>Bolli</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Qiu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Gene therapy with extracellular superoxide dismutase protects conscious rabbits against myocardial infarction</article-title>
+          <source>Circulation</source>
+          <year>2001</year>
+          <volume>103</volume>
+          <fpage>1893</fpage>
+          <lpage>1898</lpage>
+          <pub-id pub-id-type="pmid">11294809</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R31">
+        <label>31</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <collab>PREVENT IV Investigators</collab>
+          </person-group>
+          <article-title>Efficacy and safety of Edifoligide, an E2F transcription factor decoy, for prevention of vein graft failure following coronary artery bypass graft surgery</article-title>
+          <source>JAMA: The Journal of the American Medical Association</source>
+          <year>2005</year>
+          <volume>294</volume>
+          <fpage>2446</fpage>
+          <lpage>2454</lpage>
+          <pub-id pub-id-type="pmid">16287955</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R32">
+        <label>32</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lederman</surname>
+              <given-names>RJ</given-names>
+            </name>
+            <name>
+              <surname>Guttman</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Peters</surname>
+              <given-names>DC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Catheter-based endomyocardial injection with real-time magnetic resonance imaging</article-title>
+          <source>Circulation</source>
+          <year>2002</year>
+          <volume>105</volume>
+          <fpage>1282</fpage>
+          <lpage>1284</lpage>
+          <pub-id pub-id-type="pmid">11901036</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R33">
+        <label>33</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ross</surname>
+              <given-names>AJ</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name>
+              <surname>Berr</surname>
+              <given-names>SS</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Serial MRI evaluation of cardiac structure and function in mice after reperfused myocardial infarction</article-title>
+          <source>Magnetic Resonance in Medicine</source>
+          <year>2002</year>
+          <volume>47</volume>
+          <fpage>1158</fpage>
+          <lpage>1168</lpage>
+          <pub-id pub-id-type="pmid">12111962</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R34">
+        <label>34</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Greenberg</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Jessup</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Zsebo</surname>
+              <given-names>KM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>CUPID 1: MYDICAR® in patients with advanced heart failure continue to demonstrate improvement in clinical outcomes compared to optimal therapy 9 months post-dose</article-title>
+          <source>Journal of Cardiac Failure</source>
+          <year>2010</year>
+          <volume>16</volume>
+          <fpage>911</fpage>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig id="F1" orientation="portrait" position="float">
+      <label>Fig. 1</label>
+      <caption>
+        <p>Bioluminescence images showing time courses of luciferase expression from five AAV serotypes following direct injection into the anterior left ventricular (LV) wall. The AAV vector AcTnTLuc was packaged into the indicated AAV serotype capsids (AAV2, AAV1, AAV6, AAV8 and AAV9). Adult mice (n=4 per group) were anesthetized for open chest surgery so that 10 μl containing 5×10<sup>10</sup> vg could be injected into the anterior LV wall under direct visualization. (<bold>A</bold>) In vivo bioluminescence images of mice in supine position obtained at days 4, 7, 14, 28 and 42 after vector administration. To facilitate interpretation, the anatomical locations of the heart (circle) and liver (oval) are indicated for the left most mouse from the AAV8 group imaged on day 4. (<bold>B</bold>) For each group of mice, the mean values of bioluminescence as average radiance (photons/s·cm<sup>2</sup>·sr) were obtained from the regions of interest and plotted against time. (<bold>C</bold>) Luciferase activity assays comparing the efficiencies of five AAV serotypes for cardiac-selective gene delivery. Luciferase assays were performed on protein extracts prepared from heart and liver of each mouse 42 days following vector administration. Hearts and livers from saline-injected mice served as negative controls. Luciferase activities are reported as relative light units per mg protein (RLUs/mg protein). As the log scale minimizes differences between groups, the numerical values for RLUs/mg protein are reported in <xref ref-type="supplementary-material" rid="SD1">Table S1 in Supporting Information</xref>. Statistical analyses were performed using unpaired student t-test. Results are expressed as mean +/− SEM. * indicates p &lt; 0.01 vs. AAV2.</p>
+      </caption>
+      <graphic xlink:href="nihms-565424-f0001"/>
+    </fig>
+    <fig id="F2" orientation="portrait" position="float">
+      <label>Fig. 2</label>
+      <caption>
+        <p>Fluorescence microscopy and immunohistochemistry of heart cryosections illustrating eGFP expression. Example section from a mouse injected with AcTnTeGFP packaged in AAV9 at the dose of 5×10<sup>10</sup> vg per mouse. 42 days following vector injection, cryosections of the heart at the base (A), mid ventricle (B) and apex (C) were prepared and examined by fluorescence microscopy at 4×. 40× magnifications of the areas indicated as A (Anterior), L (Lateral), P (Posterior), I (Inferior), S (Septal), and (AS) Anterior septal in panels A, B and C are shown in panels D, E and F, respectively. After documenting eGFP expression in the mouse heart by fluorescence microscopy (panels A, B and C), the same sections were processed for eGFP detection by immunohistochemistry (panels G, H and I, respectively) to confirm the authenticity of eGFP fluorescence.</p>
+      </caption>
+      <graphic xlink:href="nihms-565424-f0002"/>
+    </fig>
+    <fig id="F3" orientation="portrait" position="float">
+      <label>Fig 3</label>
+      <caption>
+        <p>Infarct size is reduced in mouse hearts that overexpress EcSOD. (A) Representative Western blot illustrating EcSOD expression in hearts from mice injected with AcTnTeGFP or AcTnTEcSOD. (B) Representative photographs of TTC- and Phthalo blue-stained mouse hearts previously injected with AcTnTeGFP or AcTnTEcSOD. (C) Bar graph showing the area at risk (A@R) as percent LV mass, infarct size (Inf) as percent A@R, and infarct size as percent LV mass. Infarct size as percent A@R in AcTnTEcSOD treated hearts (44±7%, n=5) was reduced by 50% as compared the control hearts treated with AcTnTeGFP (22±5%, n=8). Statistical analyses were performed using unpaired Student t-test. Results are expressed as mean +/− SEM. * indicates p &lt; 0.05 vs. control (AcTnTeGFP).</p>
+      </caption>
+      <graphic xlink:href="nihms-565424-f0003"/>
+    </fig>
+  </floats-group>
+</article>

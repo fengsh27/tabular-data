@@ -1,0 +1,1630 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">7608054</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">7632</journal-id>
+      <journal-id journal-id-type="nlm-ta">Suicide Life Threat Behav</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Suicide Life Threat Behav</journal-id>
+      <journal-title-group>
+        <journal-title>Suicide &amp; life-threatening behavior</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0363-0234</issn>
+      <issn pub-type="epub">1943-278X</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">24446880</article-id>
+      <article-id pub-id-type="pmc">3989504</article-id>
+      <article-id pub-id-type="doi">10.1111/sltb.12072</article-id>
+      <article-id pub-id-type="manuscript">NIHMS545288</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Young Adult Follow-up of Adolescent Girls in Juvenile Justice Using the Columbia Suicide Severity Rating Scale</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kerr</surname>
+            <given-names>David C. R.</given-names>
+          </name>
+          <degrees>PhD</degrees>
+          <aff id="A1">Oregon Social Learning Center Oregon State University</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gibson</surname>
+            <given-names>Brandon</given-names>
+          </name>
+          <degrees>MS</degrees>
+          <aff id="A2">Oregon Social Learning Center</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Leve</surname>
+            <given-names>Leslie D.</given-names>
+          </name>
+          <degrees>PhD</degrees>
+          <aff id="A3">Oregon Social Learning Center</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>DeGarmo</surname>
+            <given-names>David S.</given-names>
+          </name>
+          <degrees>PhD</degrees>
+          <aff id="A4">Oregon Social Learning Center</aff>
+        </contrib>
+      </contrib-group>
+      <author-notes>
+        <corresp id="CR1">
+          <email>David.Kerr@oregonstate.edu</email>
+        </corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>14</day>
+        <month>1</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>22</day>
+        <month>1</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>4</month>
+        <year>2014</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>01</day>
+        <month>4</month>
+        <year>2015</year>
+      </pub-date>
+      <volume>44</volume>
+      <issue>2</issue>
+      <fpage>113</fpage>
+      <lpage>129</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P1">We studied the reliability and validity of the Columbia Suicide Severity Scale (C-SSRS). Severely delinquent adolescent girls (<italic>n</italic> = 166) participated in a treatment trial and repeated assessments over time. Lifetime suicide attempt history was measured using the C-SSRS in early adulthood (<italic>n</italic> = 144; 7–12 years post-baseline). Nonclinician raters showed strong interrater reliability using the C-SSRS. Self-, caseworker-, and caregiver-reports of girls’ suicide attempt histories collected at baseline correlated with adult participants’ recollections of their baseline attempt histories. Suicidal ideation measured prospectively across a 7–12 year period was associated with retrospectively reported suicide attempt across the same period.</p>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <p id="P2">The reliable and valid assessment of suicide attempt history in adolescents and young adults is of critical importance to the study of suicide risk and prevention. To promote progress in this area, experts have emphasized the importance of using a common nomenclature for suicidal behaviors (<xref rid="R22" ref-type="bibr">O'Carroll, Berman, Maris, Moscicki, Tanney, &amp; Silverman, 1996</xref>; <xref rid="R31" ref-type="bibr">Silverman, Berman, Sanddal, O'Carroll, &amp; Joiner, 2007</xref>). Recently there has been clear movement toward the adoption of clear definitions for suicide attempt and the use of standardized assessment instruments (<xref rid="R8" ref-type="bibr">Crosby, Ortega, &amp; Melanson, 2011</xref>; <xref rid="R23" ref-type="bibr">Posner et al., 2008</xref>).</p>
+    <p id="P3">The Columbia Suicide Severity Rating Scale (C-SSRS; <xref rid="R23" ref-type="bibr">Posner et al., 2008</xref>) is one such tool for assessing suicidal thoughts and behaviors. The semi-structured format of the scale directs interviewers toward information needed to determine whether interviewees’ behaviors meet broadly-accepted (e.g., by the Centers for Disease Control and Prevention; <xref rid="R8" ref-type="bibr">Crosby et al, 2011</xref>) criteria for specific forms of suicidal behavior. The C-SSRS also can be adapted to various time frames (e.g., past 6 months; since prior interview) needed for research and risk assessment.</p>
+    <p id="P4">The focus of the present study was to investigate the psychometric properties of the CSSRS for assessing longterm histories of suicidal behavior; specifically the extent to which: (1) interviewers classified suicidal behaviors in the same way (<italic>interrater reliability</italic>), (2) C-SSRS measures were associated with related constructs (<italic>convergent validity</italic>), and (3) C-SSRS measures were less associated with measures of less related constructs (<italic>divergent validity</italic>). We did so using data from a longterm follow-up study of two randomized controlled trials (RCT) of Multidimensional Treatment Foster Care (MTFC), a delinquency-focused intervention for adolescent girls involved in the juvenile justice system. These girls were not recruited based on their depression or suicide risk, but nonetheless showed high rates of such problems initially and over time (<xref rid="R6" ref-type="bibr">Chamberlain &amp; Smith, 2003</xref>; Kerr et al., under review). MTFC has well documented effects on delinquency outcomes relative to group care (GC) community treatment as usual (<xref rid="R5" ref-type="bibr">Chamberlain, Leve, &amp; DeGarmo, 2007</xref>), but was not designed to target depression or suicide risk. Still, girls assigned to MTFC showed greater decreases in depressive symptoms and rates of suicidal ideation than girls assigned to GC in the 7–12 years after baseline; there were no treatment effects on suicide attempt (Kerr et al., under review).</p>
+    <p id="P5">The characteristics and high retention rates of our sample, along with the repeated measures design and unusually long follow-up period positions the present study well to answer questions related to the assessment of suicidal behaviors. In particular, we compare prospective data collected across adolescence with information collected in early adulthood using the CSSRS on participants’ lifetime histories of suicidal behaviors.<sup><xref ref-type="fn" rid="FN1">1</xref></sup></p>
+    <p id="P6">The present study can inform assessment in the field of suicidology in several ways. First, the C-SSRS is promising but relatively new. Several studies support the validity of C-SSRS classifications of suicidal behaviors, including <xref rid="R24" ref-type="bibr">Posner and colleagues’ (2011)</xref> research on three distinct clinical samples of adolescents and adults, some of which were followed for up to 24 weeks. Still, more studies are needed, including research conducted by independent teams, in other settings and populations, with longer timeframes, and in relation to other measurement approaches.</p>
+    <p id="P7">Second, the C-SSRS and other instruments (e.g., standardized diagnostic interviews), including those used to estimate national prevalence figures for suicidal behaviors (<xref rid="R16" ref-type="bibr">Kessler, Borges, &amp; Walters, 1999</xref>), aim to assess the occurrence and timing of lifetime suicide attempt history. Although these instruments rely on the accuracy of long-term retrospection, there is longstanding concern about this approach (e.g., <xref rid="R29" ref-type="bibr">Rogler, Malgady, &amp; Tryon, 1992</xref>), and few studies exist that actually evaluate the validity of such retrospections. Thus, our strong long-term retention rates present a relatively unusual opportunity to test the validity of retrospective reports. Relatedly, statistical power to examine such issues is often limited by the low rates of suicidal behaviors in community samples, or during the relatively short follow-up periods of most studies of clinical samples (e.g., <xref rid="R24" ref-type="bibr">Posner et al., 2011</xref>). The present study avoids these problems by following high risk individuals for 7-12 years, which is much longer than is typical.</p>
+    <p id="P8">Third, research on suicide risk assessment often is conducted with populations recruited on the basis of acute suicide risk or mood disorder (e.g., <xref rid="R13" ref-type="bibr">Huth-Bocks, Kerr, Ivey, Kramer, &amp; King, 2007</xref>; <xref rid="R24" ref-type="bibr">Posner et al., 2011</xref>). Additionally, such research often has occurred in the context of hospitalization, when decisions about admission, discharge, and safety planning are primary concerns both for clinical assessment staff and participants themselves. Thus, validity may be compromised when participants are acutely aware of the consequences that screening high or low suicide risk will have on their confinement and treatment. In this way, the present study may support generalizability of the C-SSRS and related instruments by establishing their reliability and validity when used outside these narrow populations and contexts.</p>
+    <p id="P9">Fourth, using self-report measures as the only criteria for evaluating the validity of other self-report measures of suicidal behavior is a limited approach. The present study design permitted comparisons between self-reports and other informants’ reports of girls’ suicide attempt histories, which is unusual in the field. Finally, in order to inform suicide prevention efforts research must not only focus on individuals who present for help through expected channels (e.g., primary care; outpatient therapy). Such populations critically deserve our attention, but represent just a portion of those at high risk for suicide. For example, <xref rid="R18" ref-type="bibr">Luoma, Martin, and Pearson (2002)</xref> found that only 38% of suicide decedents under the age of 35 years had ever had contact with a mental health care professional. Thus, the present study helps widen the scope and impact of suicide research by focusing on an underserved and understudied clinical population that shows high rates of suicidal behavior: females in the justice system.</p>
+    <sec id="S1">
+      <title>Research Questions</title>
+      <p id="P10">We pursued four primary descriptive and psychometric analyses of the C-SSRS as a measure of lifetime suicidal behavior histories. First, to increase understanding of the initial status and outcomes for adolescent girls with serious histories of delinquency, we considered descriptive lifetime information about the prevalence, number, severity, and timing of their suicidal behaviors through early adulthood.</p>
+      <p id="P11">Second, we tested interrater reliability for the system developed by <xref rid="R23" ref-type="bibr">Posner and colleagues (2008)</xref> for differentiating among suicidal behaviors and rating the lethality and medical damages associated with suicide attempts. Agreement among nonclinician interviewers as well as between interviewers and a clinically trained rater (first author) was evaluated to build on evidence for reliability that has been established in clinically trained teams (e.g., <xref rid="R3" ref-type="bibr">Brent et al., 2009</xref>).</p>
+      <p id="P12">Subsequent analyses focused on testing the convergent validity of the C-SSRS by comparing participants’ retrospective reports during young adulthood with information collected at prior measurement occasions. Specifically, our third set of analyses focused on the reported histories of suicide attempt prior to the baseline RCT assessment, and whether young women's reports of such baseline histories on the C-SSRS corresponded with those reported at baseline by participants, their caseworkers, and their caregivers. Two forms of divergent validity were evaluated by testing the extent to which these associations were stronger for baseline attempt histories than for histories of other (non-attempt) baseline suicidal behaviors or for post-baseline attempt histories.</p>
+      <p id="P13">Fourth and finally, the convergent validity of young women's retrospective reports regarding suicide attempts that occurred during the post-baseline follow-up period was tested by comparing them to depressive symptoms and suicidal ideation collected prospectively across the same period. Using a related approach, <xref rid="R19" ref-type="bibr">Mazza, Catalano, Abbott, and Haggerty (2011)</xref> recently found that suicide attempts recalled by community participants at ages 18–19 years were associated with depressive symptoms measured prospectively across the previous 12 years. More specifically, among participants who had attempted suicide, depressive symptoms were higher during the year of their first attempt than were the symptoms of non-attempting youth, and furthermore, were higher than their own depressive symptoms in the years prior to their attempt. We extend these findings using a different approach and population, and by also comparing participants who did and did not attempt suicide on prospectively measured suicidal ideation.</p>
+    </sec>
+    <sec sec-type="methods" id="S2">
+      <title>Method</title>
+      <sec sec-type="subjects" id="S3">
+        <title>Participants</title>
+        <p id="P14">Adolescent girls (<italic>n</italic> = 166) enrolled in one of two consecutively run RCTs (<italic>n</italic>s <italic>=</italic> 81 and 85 for Cohorts 1 and 2, respectively) conducted in the Northwestern United States between 1997 and 2006 to compare MTFC (<italic>n</italic> = 81) and GC (<italic>n</italic> = 85).<sup><xref ref-type="fn" rid="FN2">2</xref></sup> Participants had been mandated to outof-home care due to chronic delinquency. Investigators attempted to enroll all referred girls who were 13–17 years old, had at least one criminal referral in the past year, and were placed in outof-home care within 12 months following referral. Girls who were pregnant at the time of recruitment were excluded. Girls provided assent and their legal guardian provided consent to participate. Assessment personnel were independent from the clinical staff and were blind to group assignment.</p>
+        <p id="P15">The girls were 13–17 years old at baseline (<italic>M</italic> = 15.30, <italic>SD</italic> = 1.17); 68.1% were Caucasian, 1.8% were African-American, 11.4% were Hispanic, 0.6% were Native American, 0.6% were Asian, 16.9% endorsed “multiracial,” and 0.6% answered “other/unknown.”<sup><xref ref-type="fn" rid="FN3">3</xref></sup> At baseline, 63% lived with single-parent families, and 54% lived in families earning less than $10,000.</p>
+        <p id="P16">Placement in the intervention setting occurred following the baseline assessment. Girls in Cohorts 1 and 2 were assessed regularly for 36 and 24 months post-baseline, respectively, as part of the original RCTs. In 2009 assessments began of all participants from Cohorts 1 and 2 who could be contacted and who consented to enroll in a follow-up study. These assessments occurred up to five times at 6-month intervals; of the 164 original participants still living, 93% (<italic>n</italic> = 152) participated in one or more of these follow-up assessments. The time between the final assessment associated with the original RCT and the longterm follow-up necessarily differed by cohort; specifically, the first follow-up assessment occurred a mean (<italic>SD</italic>) of 9.81 (1.73) and 4.69 (1.16) years post-baseline for girls in Cohorts 1 and 2, respectively. The assessment schedule for each cohort is described below. The two cohorts were combined for all analyses. Differences in assessment timing and missing data are accommodated by person-specific timelines and time weighting used in the growth model. This model also controlled for intervention assignment and cohort.</p>
+        <sec id="S4">
+          <title>Intervention conditions</title>
+          <p id="P17">Both MTFC and GC are described further elsewhere (e.g., <xref rid="R4" ref-type="bibr">Chamberlain, 2003</xref>). In brief, girls in MTFC were placed with state-certified foster parents trained to implement a behavioral reinforcement program. In addition, girls received individual therapy and their aftercare placement family received parent management training. Interventions were coordinated and closely supervised by a program supervisor. GC represented usual community services for girls being referred to out-of-home care by the juvenile justice system. Average treatment duration (approximately 6 months) did not differ significantly by condition.</p>
+        </sec>
+      </sec>
+      <sec id="S5">
+        <title>Measures</title>
+        <sec id="S6">
+          <title>Hierarchical generalized linear model (HGLM) control variables</title>
+          <p id="P18">Control variablesused in the HGLM were: <italic>intervention group assignment,</italic> coded -1 (GC) or 1 (MTFC); <italic>cohort,</italic> coded -1 (Cohort 1) or 1 (Cohort 2); <italic>age at baseline,</italic> calculated based on birth date and baseline assessment date; and <italic>time since baseline</italic>, calculated for each assessment based on baseline and assessment date.</p>
+        </sec>
+        <sec id="S7">
+          <title>Depressive symptoms</title>
+          <p id="P19">Depressive symptoms were measured with the Center for Epidemiologic Studies, Depression Scale (CES-D; <xref rid="R26" ref-type="bibr">Radloff, 1977</xref>). Scores range from 0–60 and are based on a sum of 20 items on the frequency of past week symptoms using a 4-point scale (0–3), ranging from <italic>Rarely or none</italic> (0–1 day) to <italic>Most or all of the time</italic> (5–7 days). The CES-D does not measure suicidal thoughts or behaviors. Cohort 1 girls were assessed at baseline, and 3, 6, 12, 15, 18, 30, and 36 months post-baseline, and then again at the 5 young adult follow-up assessments (at initial follow-up, and again 6, 12, 18, and 24 months later). Cohort 2 girls were assessed at baseline, and 3, 12, and 24 months later, and again at the 5 follow-up assesments. Internal consistencies over time were adequate (α = .84 to .94).</p>
+        </sec>
+        <sec id="S8">
+          <title>Suicidal ideation</title>
+          <p id="P20">Suicidal ideation was measured from adolescence to early adulthood using a face valid item (“During the past week, how much were you bothered by thoughts of ending your life?”) from the Brief Symptom Inventory (BSI; <xref rid="R9" ref-type="bibr">Derogatis &amp; Melisaratos, 1983</xref>). Girls in Cohort 1 completed the BSI at 3, 6, 12, 18, and 24 months post-baseline, and then again at the 5 young adult follow-up assessments. Girls in Cohort 2 completed the BSI at baseline, 6, 12, 18, and 24 months post-baseline, as well as at the 5 young adult follow-up assessments. Given the distributions, responses were recoded to the absence (“not at all” coded 0) or presence (“a little bit” to “very much” coded 1) of suicidal ideation at each time point.</p>
+        </sec>
+      </sec>
+      <sec id="S9">
+        <title>Baseline Suicide Attempt History</title>
+        <p id="P21">Each indicator of suicide attempt history (below) was coded as absent (0) or present (1); unless otherwise indicated, items were identical across cohorts and treatment conditions</p>
+        <sec id="S10">
+          <title>Self-reported suicide attempt history</title>
+          <p id="P22">Self-report was based on participants’ responses on the National Institute of Mental Health Diagnostic Interview Schedule for Children, Version IV (NIMH-DISC-IV; <xref rid="R30" ref-type="bibr">Shaffer, Fisher, Lucas, Dulcan, &amp; Schwab-Stone, 2000</xref>). At baseline, girls in Cohort 1 answered the lifetime suicide attempt history question, “Have you ever, in your whole life, tried to kill yourself?” Participants in Cohort 2 answered only the item regarding a suicide attempt in the past year at baseline (“Have you tried to kill yourself in the last year?”), but answered the past-year and lifetime items at the 12 months follow-up. No Cohort 2 participant who denied a past-year attempt at baseline reported a past-year attempt at the 12-month follow-up. Thus, we considered Cohort 2 girls who had reported either a past year suicide attempt at baseline or a lifetime attempt history at 12 months to have had a positive lifetime suicide attempt history at baseline.</p>
+        </sec>
+        <sec id="S11">
+          <title>Caseworker report of participant's suicide attempt history</title>
+          <p id="P23">Caseworker report was based on a single interview item asked of each participant's caseworker at baseline: “has she [target child] ever attempted suicide?”</p>
+        </sec>
+        <sec id="S12">
+          <title>Caregiver report of participant's suicide attempt history</title>
+          <p id="P24">Caregiver report was based on the same interview item: “has she [target child] ever attempted suicide?”</p>
+        </sec>
+      </sec>
+      <sec id="S13">
+        <title>Early Adult Retrospective Histories of Suicide Attempt and Other Suicidal Behavior</title>
+        <p id="P25">Participants were interviewed using the Columbia Suicide Severity Rating Scale (CSSRS; <xref rid="R23" ref-type="bibr">Posner et al., 2008</xref>), Lifetime Version, beginning 12 months after the first young adult follow-up (or at age 18 years, whichever came later), when funding for this additional assessment began. Participants were interviewed again 6 and 12 months later regarding attempts in the intervening months. Thus, participants in Cohorts 1 and 2 were mean (<italic>SD</italic>) ages 26.93 (.25) and 21.95 (.17), respectively, at the time they completed their final C-SSRS, which occurred at means (<italic>SD</italic>s) of 11.67 (.20) and 6.60 (.13) years, respectively, after baseline. Interviews were audiotaped and transcribed for use in reliability evaluations.</p>
+        <p id="P26">The C-SSRS is a semi-structured interview. We adapted the interview for use by a team of non-clinician interviewers by standardizing the probes already provided on the C-SSRS. Probes were used to elicit reporting of all acts potentially meeting criteria for a suicide attempt, according to <xref rid="R23" ref-type="bibr">Posner and colleagues’ (2008)</xref> definition of “actual attempt.” For each act, interviewers then used further probes provided on the C-SSRS to determine which of the following mutually exclusive codes (1–4 are from the C-SSRS) applied to the act: (1) <italic>actual suicide attempt</italic> was “a potentially self-injurious act committed with at least some wish to die, as a result of act”; (2) <italic>aborted attempt</italic> involved being ready to imminently attempt suicide but stopping oneself from starting a potentially self-injurious suicidal act; (3) <italic>interrupted attempt</italic> involved being interrupted by an outside circumstance, such as another person, from starting a potentially self-injurious suicidal act that otherwise would have occurred; (4) <italic>preparatory act</italic> was a behavior (i.e., not just mental planning) enacted to prepare for suicide, such as gathering pills or writing a suicide note; (5) <italic>non-suicidal self-injury</italic>; (6) <italic>suicidal ideation only</italic>; and (7) <italic>other dangerous acts or lifestyles</italic> were events with potentially lethal consequences (e.g., high speed driving; prostitution) that were not enacted with suicidal intent. Finally, category 8 <italic>other/not applicable</italic> included acts that could not otherwise be coded.</p>
+        <p id="P27">Actual suicide attempts were then rated using C-SSRS actual lethality/medical damage codes, ranging from 0 (<italic>no physical damage or very minor physical damage</italic>) to 4 (<italic>severe physical damage</italic>). We did not utilize code 5 – <italic>death</italic> due to the nature of this study.</p>
+        <p id="P28">For each act, other than those classified as <italic>suicidal ideation only,</italic> or <italic>other dangerous acts</italic>, interviewers queried participants to establish the timing of the acts using anchors regarding age and grade in school, month, or season of the year when possible, and whether acts preceded or followed RCT entry date. Based on retrospective timing estimates provided by participants, and known dates of birth and study entry, we partitioned suicide attempts as having occurred either pre- or post-baseline. Attempts that occurred the year of baseline and lacked specific timepoint information (e.g., month of event) to classify the event in relation to baseline were conservatively attributed to the pre-baseline period. As a further conservative step, validity analyses of post-baseline attempt rate controlled for the number of pre-baseline attempts (log-transformed to reduce skewness) reported on the C-SSRS. Otherwise, pre- and post-baseline attempt history variables each were coded as negative (0) or positive (1). Lifetime suicide attempt history from the C-SSRS was available for 144 participants (87.8% of those living).<sup><xref ref-type="fn" rid="FN4">4</xref></sup></p>
+      </sec>
+      <sec id="S14">
+        <title>Analysis Plan</title>
+        <p id="P29">We used <xref rid="R10" ref-type="bibr">Fleiss (1971)</xref> kappa to test interrater reliabilities among multiple raters using categorical codes (type of act). For ordinal codes (injury/severity) we used intraclass correlation coefficient (ICC) with raters as a random effect and the measure as a fixed effect. Other primary research questions focused on the convergent validity of histories of suicide attempt collected retrospectively in young adulthood using the C-SSRS. For these analyses we used, as validity criteria, previously collected measures of suicide attempt history, suicidal ideation, and depressive symptoms that occurred during relevant time periods. First, we hypothesized there would be a convergence among multiple reporters and data sources regarding the presence of a baseline lifetime suicide attempt history. We evaluated this hypothesis by making pairwise comparisons and then in Mplus version 6.12 (<xref rid="R21" ref-type="bibr">Muthén &amp; Muthén, 1998-2012</xref>) by specifying a latent suicide attempt history variable with multiple binary indicators, and noting the strength with which young adult reports of a baseline attempt history on the C-SSRS loaded on the latent variable [using the maximum likelihood with robust standard errors (MLR) estimator]. We tested the divergent content validity of the retrospective reports of suicide attempt on the C-SSRS by considering whether a history of suicidal behavior <italic>other than attempt</italic> was associated with indicators of baseline suicide attempt history; we tested divergent temporal validity by testing whether recollected history of baseline versus post-baseline suicide attempt history was more strongly associated with indicators of baseline attempt history. We also explored which patterns of multi-method/multi-informant agreement regarding a baseline attempt history were most strongly associated with adult recollection of a baseline attempt history.</p>
+        <p id="P30">In our second set of convergent validity tests, we hypothesized that prospective measures of post-baseline suicidal ideation and depressive symptoms would significantly predict the probability that a suicide attempt would be reported (on C-SSRS) to have occurred across the same time interval. Hypotheses were evaluated with hierarchical linear growth models using the HLM7 program (<xref rid="R27" ref-type="bibr">Raudenbush, Bryk, Cheong, Congdon, &amp; du Toit, 2011</xref>). In general, the growth model framework in the HLM program is a multilevel regression framework also known as mixed modeling. Growth modeling is a form of multilevel modeling where the time-varying suicidal ideation and depressive symptoms are repeated measures at Level 1 nested within individuals at Level 2. The time-varying growth rates of suicidal ideation and depressive symptoms are estimated at Level 1 for each individual. These are also the individual differences or variance in trajectories of these outcomes. These trajectories are then regressed on time-invariant predictors at Level 2, which in the present study were baseline age, baseline suicide attempt history, intervention assignment, cohort, and the intervention × cohort interaction that significantly predicted depressive symptoms in prior reports (e.g., <xref rid="R11" ref-type="bibr">Harold et al., 2013</xref>; Kerr et al., under review).</p>
+        <p id="P31">For the Level 1 repeated measures, the HLM program can provide an advantage of estimating growth rates based on each girl's person-specific assessment timeline. Person-specific models provide more precision in the estimates of change than traditional growth models based on fixed growth weights. Further, because suicidal ideation scores and suicide attempt were binary outcomes, we employed hierarchical generalized linear modeling estimation (HGLM) that adjusts the estimation procedure for continuous variable model assumptions to provide appropriate estimates for logistic probability models also known as Bernoulli estimation.</p>
+        <p id="P32">To predict suicide attempt, we entered “time” to estimate growth rates in depressive symptoms and the probability of suicidal ideation as time-varying Level 1 covariates. The covariates included terms that could be interpreted as average levels of depressive symptoms and suicidal ideation, and time-weighted scores representing the increases or decreases in these problems over time (see <xref rid="R32" ref-type="bibr">Singer &amp; Willett, 2003</xref> for discussion of parameterization of level 1 change scores). More formally, for the binary suicide attempt outcome, the probability or log odds of event occurrence is estimated at Level 1 with the following model: <disp-formula id="FD1"><mml:math display="block" id="M1" overflow="scroll"><mml:mrow><mml:mi>Prob</mml:mi><mml:mspace width="thickmathspace"/><mml:mrow><mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mtext>Suicide Attempt C-SSRS</mml:mtext><mml:mo>)</mml:mo></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mn>0</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mspace width="thickmathspace"/><mml:mrow><mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mtext>Time</mml:mtext><mml:mo>)</mml:mo></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo>+</mml:mo><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mn>2</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mspace width="thickmathspace"/><mml:mrow><mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>DEP</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo>+</mml:mo><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mn>3</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mspace width="thickmathspace"/><mml:mrow><mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mtext>Time</mml:mtext><mml:mo>×</mml:mo><mml:mi>DEP</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo>+</mml:mo><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mn>4</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mspace width="thickmathspace"/><mml:mrow><mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mtext>Ideation</mml:mtext><mml:mo>)</mml:mo></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo>+</mml:mo><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mn>5</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mspace width="thickmathspace"/><mml:mrow><mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mtext>Time</mml:mtext><mml:mo>×</mml:mo><mml:mtext>Ideation</mml:mtext><mml:mo>)</mml:mo></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math></disp-formula> where DEP is CESD depressive symptoms, Ideation is the BSI measure, and the dependent binary attempt variable is retrospectively reported suicide attempt on the C-SSRS for participant <italic>i</italic> repeated over time <italic>t</italic> and is entered in the Level 1 equation. Suicidal attempt is then a function of the baseline intercept <italic>β<sub>0i</sub></italic> for participant <italic>i,</italic> a nonlinear probability growth rate <italic>β<sub>1i</sub></italic> (Time) for participant <italic>i</italic> for the duration of her participation. Time was weighted as years since baseline computed from the participant's age at each assessment. After summarizing the individual intercepts (<italic>β<sub>0i</sub></italic>) and growth rate slopes (<italic>β<sub>1i</sub></italic> and <italic>β<sub>2i</sub></italic>) at Level 1, the Level 2 model then regresses intercepts and slopes on predictors as: <disp-formula id="FD2"><mml:math display="block" id="M2" overflow="scroll"><mml:mtable><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mtext>Suicide Attempt Intercept</mml:mtext><mml:mspace width="thickmathspace"/><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mn>0</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo></mml:mrow></mml:mtd><mml:mtd columnalign="left"><mml:mrow><mml:msub><mml:mi>γ</mml:mi><mml:mn>00</mml:mn></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>γ</mml:mi><mml:mn>01</mml:mn></mml:msub><mml:mrow><mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mtext>age</mml:mtext><mml:mo>)</mml:mo></mml:mrow><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mo>+</mml:mo><mml:msub><mml:mi>u</mml:mi><mml:mrow><mml:mn>0</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mtext>Linear Growth</mml:mtext><mml:mspace width="thickmathspace"/><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo></mml:mrow></mml:mtd><mml:mtd columnalign="left"><mml:mrow><mml:msub><mml:mi>γ</mml:mi><mml:mn>10</mml:mn></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>γ</mml:mi><mml:mn>11</mml:mn></mml:msub><mml:mrow><mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mtext>age</mml:mtext><mml:mo>)</mml:mo></mml:mrow><mml:mi>i</mml:mi></mml:msub></mml:mrow><mml:mo>+</mml:mo><mml:msub><mml:mi>γ</mml:mi><mml:mn>12</mml:mn></mml:msub><mml:mspace width="thickmathspace"/><mml:mrow><mml:mo>(</mml:mo><mml:mtext>group condition</mml:mtext><mml:mo>)</mml:mo></mml:mrow><mml:mo>.</mml:mo><mml:mo>.</mml:mo><mml:mo>.</mml:mo><mml:mo>.</mml:mo><mml:mo>+</mml:mo><mml:msub><mml:mi>u</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>DEP</mml:mi><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mn>2</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo></mml:mrow></mml:mtd><mml:mtd columnalign="left"><mml:mrow><mml:msub><mml:mi>γ</mml:mi><mml:mn>20</mml:mn></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>u</mml:mi><mml:mrow><mml:mn>2</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mtext>Time</mml:mtext><mml:mo>×</mml:mo><mml:mi>DEP</mml:mi><mml:mspace width="thickmathspace"/><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mn>3</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo></mml:mrow></mml:mtd><mml:mtd columnalign="left"><mml:mrow><mml:msub><mml:mi>γ</mml:mi><mml:mn>30</mml:mn></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>u</mml:mi><mml:mrow><mml:mn>3</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mtext>Ideation</mml:mtext><mml:mspace width="thickmathspace"/><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mn>4</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo></mml:mrow></mml:mtd><mml:mtd columnalign="left"><mml:mrow><mml:msub><mml:mi>γ</mml:mi><mml:mn>40</mml:mn></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>u</mml:mi><mml:mrow><mml:mn>4</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mtext>Time</mml:mtext><mml:mo>×</mml:mo><mml:mtext>Ideation</mml:mtext><mml:mspace width="thickmathspace"/><mml:msub><mml:mi>β</mml:mi><mml:mrow><mml:mn>5</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo></mml:mrow></mml:mtd><mml:mtd columnalign="left"><mml:mrow><mml:msub><mml:mi>γ</mml:mi><mml:mn>50</mml:mn></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>u</mml:mi><mml:mrow><mml:mn>5</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></disp-formula> where <italic>γ</italic><sub>00</sub> is the initial status intercept adjusting for participant age, <italic>γ</italic><sub>01</sub> is the effect of her age on initial status intercept, and <italic>u<sub>0i</sub></italic> is the random error variance. <italic>γ</italic><sub>10</sub> represents the growth rate adjusting for covariates, <italic>γ<sub>11</sub></italic> is the effect of participant age on growth in suicidal ideation, and <italic>γ</italic><sub>12</sub> is the MTFC intervention effect (intent to treat) on growth in ideation. <italic>γ<sub>20</sub></italic> is the time-varying average level effect of a unit increase in the depressive symptom scale score and each corresponding wave of ideation occurrence. The <italic>γ<sub>30</sub></italic> Time ×DEP is the time weighted growth in depressive symptoms, or simply the change in these symptoms as a predictor of the probability of suicide attempt, and similarly, for Ideation <italic>γ<sub>40</sub></italic> and change in Ideation <italic>γ<sub>50</sub></italic>.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S15">
+      <title>Results</title>
+      <sec id="S16">
+        <title>Descriptive Statistics</title>
+        <p id="P33">In pursuit of the first aim of this study, we describe the rates of suicidal behaviors reported by adolescent participants and other informants at RCT baseline, and by young adult participants at the longterm follow-up assessment.</p>
+        <sec id="S17">
+          <title>Baseline histories of suicide attempt</title>
+          <p id="P34">Baseline self-reports indicated that 48% (79 of 165 non-missing observations) of girls had a lifetime history of suicide attempt at baseline. According to self-reports collected in young adulthood (C-SSRS) and using <xref rid="R23" ref-type="bibr">Posner and colleagues’ (2008)</xref> definition, 30% (50 of 144) had a history of <italic>actual suicide attempt</italic> at baseline. Baseline caseworker and caregiver reports indicate that 41% (65 of 157) and 43% (63 of 147) of participants, respectively, had a history of suicide attempt.</p>
+        </sec>
+        <sec id="S18">
+          <title>Lifetime histories of suicide attempt and other suicidal behavior (C-SSRS)</title>
+          <p id="P35">The 245 acts participants reported on the C-SSRS were coded as follows: 102 actual, 11 interrupted, and 4 aborted attempts, 16 preparatory acts, 53 acts of non-suicidal self-injury, 10 reports that involved suicidal ideation only, 40 other non-suicidal dangerous acts, and 9 acts judged to be not applicable. Of the 102 actual attempts, lethality/medical damages were coded as follows: 40 <italic>none or very minor</italic>, 26 <italic>minor</italic>, 28 <italic>moderate</italic>, 6 <italic>moderately severe</italic>, and 2 <italic>severe</italic>.</p>
+          <p id="P36">The numbers of participants reporting a lifetime history of each behavior of interest<sup><xref ref-type="fn" rid="FN5">5</xref></sup> on the C-SSRS are presented in <xref ref-type="table" rid="T1">Table 1</xref>. As can be seen, nearly half reported a suicide attempt; 17% reported a multiple attempt history. Other suicidal acts were less commonly reported than actual attempts. We wish to be clear that the relatively low rate of preparatory acts (12%) does not imply that most acts were unplanned, given that actual, interrupted, or aborted attempts that imminently followed preparatory acts were coded as attempts. Non-suicidal self-injury was reported at least once by a quarter of the sample.</p>
+          <p id="P37">For participants who made one or more actual suicide attempts, <xref ref-type="table" rid="T1">Table 1</xref> also indicates the maximum lethality/medical damage rating assigned to any of their attempts. Approximately one third of all participants made an attempt resulting in some injury (rating of minor or higher); approximately one fifth made an attempt resulting in at least a moderate injury (i.e., one that should have received medical attention); and 6% reported a moderately severe or severe attempt (i.e., one that required hospitalization for non-psychiatric medical reasons).</p>
+          <p id="P38"><xref ref-type="fig" rid="F1">Figure 1</xref> shows the timing of first actual suicide attempt as reported on the C-SSRS. Nearly three quarters (<italic>n</italic> = 48) of the 66 who reported a lifetime history of suicide attempt and a third of the total available sample reported first attempting suicide before age 15 years. Nine girls (14% of 66) attempted prior to age 12; few (<italic>n</italic> = 5; 8% of 66) reported a first attempt at age 18 years or older, though the sample was right censored.</p>
+        </sec>
+      </sec>
+      <sec id="S19">
+        <title>Interrater Reliability of Interviewer Ratings on C-SSRS</title>
+        <p id="P39">Next, we report results of interrater reliability analyses on interviewers’ C-SSRS ratings collected in young adulthood. Most participants (<italic>n</italic> = 94) reported at least one act in response to probes meant to elicit reporting of all potential suicide attempts; 245 acts were reported and coded. We originally planned to conduct reliability analyses on a random 20% of acts; however, we expanded the pool of reliability cases because some coding categories were used relatively infrequently (e.g., interrupted attempts). We also continued to assess reliability over time to guard against rater drift, which further increased this pool to 108 (44%) randomly-selected acts.</p>
+        <p id="P40">According to a priori training rules, individual raters were required to reach 85% agreement with the criterion clinical rater's (first author) ratings on practice cases before conducting interviews independently, and to remain at 85% or greater agreement with the clinical rater's ratings on ongoing team-wide reliability checks. Across the 108 acts, individual raters’ absolute agreement with the criterion clinical rater's ratings ranged from 90–97%.</p>
+        <p id="P41">We used <xref rid="R10" ref-type="bibr">Fleiss (1971)</xref> kappa to derive measures of agreement among the 5 raters (4 interviewers and one criterion clinical rater) on the nominal (categorical) act rating. Kappa for raters discerning actual attempt from all other reported acts was .91. We also conducted Fleiss kappas for other key distinctions. Kappa was .90 for discriminating between the suicidal behaviors (actual, interrupted, and aborted attempts and preparatory acts) and all other categories. Kappa was .88 for the 5-category distinction among actual, aborted, interrupted attempts, preparatory acts, or any other type of act. Finally, kappa was .86 for the use of all 8 categories of ratings. Thus, interrater agreement could be considered very good (<xref rid="R2" ref-type="bibr">Altman, 1991</xref>). Next we tested interrater reliability for the ordinal lethality/medical damage code using two-way mixed effects average intraclass correlation coefficient (ICC) to test absolute agreement. Medical injuries are only coded for actual attempts, and the ICC could only be run if all raters contributed a rating. Thus, the ICC was based on the 42 reliability cases that all raters agreed were actual attempts. Average-measures absolute agreement among raters was very good, ICC = .953.</p>
+      </sec>
+      <sec id="S20">
+        <title>Convergent and Divergent Validity of Reports of Baseline Suicide Attempt History</title>
+        <p id="P42">Subsequent analyses concerned the validity of reports of suicidal behavior, and in particular the validity of longterm retrospective self-reports of suicide attempt using the C-SSRS. To this end, we first conducted tests of whether baseline reports of lifetime suicide attempt history would be associated with young adult participants’ recalled histories of suicide attempt across the same time period.</p>
+        <sec id="S21">
+          <title>Convergent validity of baseline reports of suicide attempt history</title>
+          <p id="P43"><xref ref-type="table" rid="T2">Table 2</xref> depicts the correspondence among the four measures of baseline suicide attempt history. Among the measures collected at baseline, caseworker reports showed fair to moderate agreement with those of caregivers and girls, κ (138) = .572 and κ (156) = .352, respectively, <italic>p</italic> &lt; .001. Reports by caretakers and girls showed moderate agreement, κ (146) = .422, <italic>p</italic> &lt; .001.</p>
+        </sec>
+        <sec id="S22">
+          <title>Convergent and divergent validity of C-SSRS reports of lifetime suicide attempt history at baseline</title>
+          <p id="P44">Retrospective reports of lifetime history of baseline suicide attempt collected in early adulthood on the C-SSRS showed fair levels of agreement with the reports that caseworkers, caregivers, and girls made at baseline, κ (135) = .310, κ (130) = .216, and κ (143) = .330, respectively, <italic>p</italic> &lt; .05. In contrast, C-SSRS retrospective reports of lifetime history of baseline suicidal behaviors <italic>other than actual attempt</italic> (i.e., interrupted and aborted attempt, and preparatory act) were weakly related to baseline caseworker, caretaker, and girls’ self-reports of suicide attempt, κ (135) = .030, <italic>p</italic> = .42, κ (130) = .087, <italic>p</italic> = .159, and κ (143) = .177, <italic>p</italic> &lt; .01, respectively. Thus, divergent validity was supported in that recollected attempt history was more strongly related to prior self- and other-reported histories of attempt than was recollected history of non-attempt suicidal behaviors. This interpretation is further strengthened by the associations observed between retrospective reports of baseline actual attempts and retrospective reports of these other suicidal behaviors, <italic>r</italic> (144) = .230, <italic>p</italic> &lt; .01, that would tend to thwart detection of discrimination.</p>
+          <p id="P45">A further, multi-method test of the convergent validity of the C-SSRS was conducted by modeling a latent baseline suicide attempt variable comprised of the four categorical indicators [Model fit Likelihood Ratio χ<sup>2</sup> (<italic>n</italic> = 166, <italic>df</italic> = 7) = 9.455, <italic>p</italic> = .22]. Standardized loadings of the baseline caseworker, caregiver, and self-reports and the young adult retrospective reports (CSSRS) on this factor were β =.850, .862, .649, and .496, respectively, all <italic>p</italic> &lt; .001; the latter factor loading indicates a moderate level of correspondence between the C-SSRS and the latent baseline suicide attempt factor (<xref rid="R2" ref-type="bibr">Altman, 1991</xref>).</p>
+          <p id="P46">Given that the underlying factor is a function of the indicators, we ran exploratory analyses to further probe how the young adult reports (C-SSRS) would load on a factor defined by combinations of two of the three (caseworker, caregiver, and baseline self-reports) other indicators. When caregiver reports were omitted from the model, C-SSRS loaded β = .656 (other loadings = .693 and .731); when caseworker reports were omitted, C-SSRS loaded β = .503 (others = .606 and .962); and when baseline self-reports were omitted, C-SSRS loaded β = .433 (others = .979 and .775). Thus, validity estimates for C-SSRS ranged from .433–.656, <italic>p</italic> &lt; .001.</p>
+          <p id="P47">We probed the divergent temporal validity of young adult retrospections (i.e., the pre- vs. post-baseline distinction) by rerunning the 4-indicator model to include post-baseline suicide attempt recollected in young adulthood as a fifth indicator. Standardized loadings for the first four indicators remained significant (p &lt; .001) and nearly identical in magnitude to those above, whereas post-baseline suicide attempt did not load significantly on the factor, β = .204, <italic>p</italic> = .15. Thus, findings suggested that indicators of suicide attempt history collected at baseline were more strongly associated with long-term recall of baseline than post-baseline suicide attempt history.</p>
+        </sec>
+        <sec id="S23">
+          <title>Patterns of multi-informant/multi-method agreement</title>
+          <p id="P48">To better understand the patterns of agreement and disagreement among informants and methods, we further considered the subsample of 120 participants who had data from all baseline informants (caseworker, caregiver, and self-report) and young adult retrospective C-SSRS reports of pre-baseline attempt history. Participants were classified on the basis of having a positive attempt history according to no informants (<italic>n</italic> = 44; i.e., a negative history), other-report only (<italic>n</italic> = 20), self-report only (<italic>n</italic> = 12), self- and one other-report (<italic>n</italic> = 14), or self- and both other-reports (<italic>n</italic> = 30). Rates of retrospectively reported baseline suicide attempt differed significantly by group, and were as follows: 18% (<italic>n</italic> = 8 of 44), 25% (<italic>n</italic> = 5 of 20), 33% (<italic>n</italic> = 4 of 12), 50% (<italic>n</italic> = 7 of 14), and 60% (<italic>n</italic> = 18 of 30), respectively, χ<sup>2</sup> (<italic>df</italic> = 4) = 15.99, <italic>p</italic> &lt; .001; in broad terms, the pattern suggests a suicide attempt history initially reported by multiple informants was more likely to be identified in young adulthood on the C-SSRS than if reported by a single informant.</p>
+        </sec>
+      </sec>
+      <sec id="S24">
+        <title>Convergent Validity of C-SSRS Reports of Post-Baseline Suicide Attempt</title>
+        <p id="P49">In our fourth and final set of analyses, we tested associations that post-baseline suicide attempt had with prospectively measured (post-baseline) depressive symptoms and suicidal ideation. Results are reported in <xref ref-type="table" rid="T3">Table 3</xref>. Step 1 is reported in Kerr et al. (under review) and is not relevant to convergent validity; intervention, cohort, and intervention by cohort effects were not significant predictors of suicide attempt. Participants who were younger at study entry were at greater risk; older girls were half as likely to attempt suicide after baseline compared to younger girls. Surprisingly, pre-baseline suicide attempts did not predict subsequent attempt.</p>
+        <p id="P50">Steps 2 and 3 were germane to convergent validity. Step 2 of the model revealed that participants who showed higher levels of depressive symptoms across the longterm follow-up period more often reported a suicide attempt during this period. Deviations (e.g., less steeply decreasing) from the overall trend of decreasing trajectories of depressive symptoms were not associated with suicide attempt. Step 3 indicated that participants with higher average levels of suicidal ideation from baseline to young adulthood were more likely to report a suicide attempt across the same period; furthermore, the association was not explained by concurrent trajectories of depression. Of note, the extremely high odds ratio for suicidal ideation appears to be explained by the large proportion and co-occurrence of zeros among the binary predictors and the binary outcome in the logistic regression. The point-biserial correlation between post-baseline suicide attempt and average suicidal ideation rate across the period was significant <italic>r</italic> (146) = .320, <italic>p</italic> &lt; .001, and of a more interpretable magnitude. Finally, relative decreases in suicidal ideation over time did not independently predict suicide attempt.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="S25">
+      <title>Discussion</title>
+      <p id="P51">In this sample of seriously delinquent adolescent girls we found evidence for the validity of longterm retrospective reports of lifetime suicide attempt history on the C-SSRS. Specifically, young women's retrospective reports of whether they had attempted suicide by middle adolescence (i.e., by baseline of the original study) showed fair to moderate agreement with self-and other-reported lifetime histories of suicide attempt collected in middle adolescence (i.e., at baseline). In support of divergent construct validity, recollected histories of suicidal behaviors other than actual attempt (interrupted and aborted attempt and preparatory act) were weakly associated with prior self- and other-reports of participants’ suicide attempt history across the same time period. In support of divergent temporal validity, self- and other-reports of suicide attempt history collected at baseline were more strongly associated with young adults’ retrospective reports of their baseline than of post-baseline suicide attempt history. Thus, the lifetime version of the C-SSRS performed well at elucidating and classifying attempt history.</p>
+      <p id="P52">Several points must be kept in perspective regarding whether this evidence directly pertains to the overall validity of the C-SSRS interviewing and coding system for suicide attempt. First, <xref rid="R23" ref-type="bibr">Posner and colleagues’ (2008)</xref> instrument articulates a narrower operational definition of suicide attempt than may have been used by participants and informants at earlier timepoints. Thus, imperfect agreement between ratings on the C-SSRS and prior self- and other-reports of suicide attempt is to be expected. Second, our approach confounded agreement of <italic>whether</italic> and <italic>when</italic> a suicide attempt occurred, and therefore contributed to decreased agreement.</p>
+      <p id="P53">Correspondence regarding girls’ lifetime histories of attempt was statistically significant for every pair of informants or methods, but was far from perfect for any pair. Correspondence among participating girls, their caregivers, and their caseworkers at baseline regarding girls’ lifetime suicide attempt histories was in the moderate range (κ = .35–.57). Particularly vexing were situations in which caregivers or caseworkers reported attempts that girls themselves did not. We can only speculate that some girls may have been motivated to minimize or conceal their histories from evaluators, or that some caregivers or caseworkers may have mistaken non-suicidal self-injurious acts for suicide attempts.</p>
+      <p id="P54">Agreement between participants’ reports of baseline suicide attempt history when asked at baseline and again in adulthood was only fair (κ = .330), and lower than that reported in other work; for example, <xref rid="R17" ref-type="bibr">Klimes-Dougan and colleagues (2007)</xref> found moderate (κ = .57) agreement between self-reports in adolescence and young adulthood regarding suicidal thoughts and behaviors (an aggregate measure) across comparable time periods. Such findings are consistent with results of a seminal study on the retrospective method in which <xref rid="R12" ref-type="bibr">Henry, Moffitt, Caspi, Langley, and Silva (1994)</xref> found that prospectively measured psychosocial variables and mental health symptoms were uncorrelated or only modestly correlated with retrospective measures covering the same time period. They found that the correspondence was stronger for events and objective states and experiences (e.g., injury, height, residence changes), but still not strong for the number or timing of such phenomena. These findings are pertinent to the assessment of suicide attempt. Attempts are events that sometimes can be externally verified (e.g., if an attempt or its consequences are witnessed or documented). On the other hand, many suicide attempts are unknown to all but one person and thus recollection relies wholly on her/his memory and willingness to disclose it. Additionally, determining that an act was indeed a suicide attempt requires that the psychological state of intent to die be established. While intent can be inferred from some attempt methods (e.g., firearms), intent often can only be determined from the attempters’ recollection of her/his state of mind, which again is prone to error in retrospective report (<xref rid="R12" ref-type="bibr">Henry et al., 1994</xref>). The factors associated with recall accuracy were beyond the scope of the present study, but may include more severe attempts and poorer psychological functioning at the time of recall (<xref rid="R7" ref-type="bibr">Christl, Wittchen, Pfister, Lieb, &amp; Bronisch, 2006</xref>; <xref rid="R17" ref-type="bibr">Klimes-Dougan, Safer, Ronsaville, Tinsley, &amp; Harris, 2007</xref>; <xref rid="R25" ref-type="bibr">Prinstein, Nock, Spirito, &amp; Grapentine, 2001</xref>).</p>
+      <p id="P55">Failing to get the same answer twice is a familiar challenge for suicide researchers who measure suicidal thoughts and behaviors using multiple methods, multiple informants, or at multiple time points (e.g., <xref rid="R7" ref-type="bibr">Christl et al., 2006</xref>; <xref rid="R17" ref-type="bibr">Klimes-Dougan et al., 2007</xref>; <xref rid="R20" ref-type="bibr">Miranda, Scott, Hicks, Wilcox, Munfakh, &amp; Shaffer, 2008</xref>; <xref rid="R25" ref-type="bibr">Prinstein et al., 2001</xref>). Minimizing methodological sources of error (e.g., through consensus in the field regarding operational definitions) is essential, but will not overcome limits to human recall. This perhaps unavoidable multi-method/multi-informant disagreement is troubling to researchers who wish to use suicide attempt history to, for example, identify genetic risk or determine whether inclusion/exclusion are met for a prevention trial. Others will recognize it as evidence that measurement of suicide attempt, like measures of other events, states, and traits in social science, can be enhanced by repeated and multi-method assessment and the use of latent variable modeling strategies. These approaches assume there is error in any single methodology and therefore model uncertainty statistically. In all, we echo the conclusions of <xref rid="R12" ref-type="bibr">Henry et al., (1994)</xref> that the utility and limitations of retrospective methods must be well understood, and we too urge caution in research and clinical contexts that require specificity in timing, number, and accompanying subjective states.</p>
+      <p id="P56">A second set of findings using very different methodology further supported the convergent validity of long-term retrospective reports of suicide attempt on the C-SSRS. Participants who showed higher rates of depressive symptoms and suicidal ideation measured prospectively across the post-baseline period were significantly more likely than others to report on the C-SSRS having made a suicide attempt across that same period. These findings are consistent with those found in a recent study based on a similar method (<xref rid="R19" ref-type="bibr">Mazza et al., 2011</xref>) and extend to an observed association between past suicidal ideation and recollected suicide attempt, as well as to a clinical sample. In this way, our study is one of only a few studies that have considered the validity of retrospective reports of whether individuals have attempted suicide, and of an even smaller number that have considered the validity of reports of <italic>when</italic> attempts occurred. Unfortunately, our analyses could not make more temporally specific conclusions.</p>
+      <p id="P57">A third set of key findings from the present study were those supporting that interrater reliability estimates were strong for our team of nonclinician interviewers trained and supervised by a licensed clinician and suicide researcher. There was strong agreement regarding ratings of types of suicidal behaviors (e.g., aborted attempt) and injury/lethality ratings of actual attempts. These findings complement prior support for the interrater reliability of the C-SSRS (<xref rid="R3" ref-type="bibr">Brent et al., 2009</xref>) and bode well for the adoption of the measure in research contexts that cannot support an entire team of clinically-trained evaluators. We emphasize, however, that studies using the CSSRS will require a clinically-trained team member or clinical consultant for the purposes of monitoring the safety of participants. Further, we note that our reliability data pertain to the <italic>coding</italic> of the C-SSRS from transcripts, and not to the overall administration of the instrument.</p>
+      <p id="P58">Finally, the descriptive information that participants provided on their longterm histories of suicidal behavior was of interest and concern. Some of the findings regarding histories of suicidal behaviors at study entry were consistent with what is known: that juvenile justice involved youth—and girls in particular—are at high risk for suicide attempt (<xref rid="R1" ref-type="bibr">Abram et al., 2008</xref>; <xref rid="R28" ref-type="bibr">Rohde, Seeley, &amp; Mace, 1997</xref>). However, the information on participants’ subsequent (post-baseline) longterm histories of suicidal thoughts and behaviors are unique, to our knowledge. Fortunately, rates of depressive symptoms, suicidal thoughts, and behaviors tended to decline dramatically to early adulthood, but overall were higher across adolescence than what is reported in community studies. Thus, there is clear potential for interventions to further reduce risk among all or an identified subgroup of juvenile justice girls. The appropriate interpretation of these patterns, however, is somewhat obscured by the fact that participants were involved in an intervention trial. Indeed, as reported previously, MTFC was associated with greater decreases in depressive symptoms and suicidal thoughts than GC. MTFC was not found to impact suicide attempt, but prior and present analyses suggest a pattern of effects that are consistent with the possibility; that is, MTFC reduced depressive symptoms and suicidal ideation, and these decreased levels in turn were associated with decreased risk for suicide attempt (<xref rid="R11" ref-type="bibr">Harold et al., 2013</xref>; Kerr et al., under review). Future studies should formally test these patterns.</p>
+      <p id="P59">Based on this and other research we suggest that follow-up studies of interventions—even those that do not target suicide, but that aim to change conditions that share etiological roots with suicide (depression, delinquency, substance abuse, dating violence)—should measure suicidal behavior. Doing so in a manner that permits parsing of pre- and post-intervention behavioral events will help grow the evidence base on the prevention of suicide. Even statistically underpowered studies can contribute to this mission once their findings are aggregated by future meta-analysts.</p>
+      <p id="P60">The present study had many design strengths, but also some important limitations. Foremost, our findings offer no information regarding the incremental utility of the C-SSRS over other brief (i.e., a single, yes/no self-report item) measures of suicide attempt. Second, as suicide attempts across the follow-up periods were not measured in a consistent manner between the two cohorts, and were not measured comprehensively (i.e., with no temporal gaps) within either cohort, we can offer only relatively coarse evidence for validity of the timing of recollected suicide attempts. Third, we cannot assume that findings would generalize to populations with different clinical features or those that are more ethnically diverse or from urban settings.</p>
+      <p id="P61">In conclusion, our findings offer evidence for the interrater reliability and convergent and divergent validity of the C-SSRS as a tool for retrospectively assessing histories of suicidal behaviors. These findings support the utility of uniform definitions of suicidal behavior in research and clinical contexts and the use of the C-SSRS with diverse clinical populations.</p>
+    </sec>
+  </body>
+  <back>
+    <ack id="S26">
+      <p>This project was supported by grants R01 DA024672 and R01 DA015208 from the National Institute on Drug Abuse, and by grants R01 MH054257 and R03 MH091611 from the National Institute of Mental Health, NIH, U.S, PHS (PIs: Patricia Chamberlain, PhD, Leslie Leve, PhD, and David Kerr, PhD). The authors wish to acknowledge the efforts of Priscilla Havlis for project management, Michelle Baumann for editorial assistance, the team of interviewers and data management staff, and the study participants.</p>
+    </ack>
+    <fn-group>
+      <fn id="FN1">
+        <label>1</label>
+        <p id="P62">The C-SSRS also can be used to assess suicidal behavior across shorter timeframes (e.g., past month), and separately assesses suicidal ideation; its validity for these purposes, however, is not addressed here.</p>
+      </fn>
+      <fn id="FN2">
+        <label>2</label>
+        <p id="P63">The identical group <italic>n</italic>s for cohorts and group assignments were coincidental.</p>
+      </fn>
+      <fn id="FN3">
+        <label>3</label>
+        <p id="P64">Percentages are based on participants’ self-reports in early adulthood and thus differ somewhat from those reported in prior 2-year follow-up studies of this sample (<xref rid="R11" ref-type="bibr">Harold et al., 2013</xref>; <xref rid="R15" ref-type="bibr">Kerr et al., 2009</xref>) that in many cases had to rely on caregiver or caseworker reports.</p>
+      </fn>
+      <fn id="FN4">
+        <label>4</label>
+        <p id="P65">One participant (assigned to GC in Cohort 1) is known to have died by suicide. In a separate report of intervention outcomes (author submitted), this participant was coded as having a positive post-baseline suicide attempt history. To maintain comparability across project reports, we did the same here for analyses of whether prospective measures of depressive symptoms and suicidal ideation were associated with post-baseline suicide attempt.</p>
+      </fn>
+      <fn id="FN5">
+        <label>5</label>
+        <p id="P66">We do not report the numbers of participants who, in response to probes regarding suicidal behaviors, reported an incident that we coded as “suicidal ideation only”; this would be a misleading estimate as lifetime history of suicidal ideation was not separately queried.</p>
+      </fn>
+      <fn id="FN6">
+        <p id="P67">Suggested citation:</p>
+        <p id="P68">Kerr, D. C. R., Gibson, B., Leve, L. D., &amp; DeGarmo, D. S. (in press). Young adult follow-up of adolescent girls in juvenile justice using the Columbia Suicide Severity Rating Scale. <italic>Suicide and Life-Threatening Behavior.</italic></p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="R1">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Abram</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Choe</surname>
+              <given-names>JY</given-names>
+            </name>
+            <name>
+              <surname>Washburn</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Teplin</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>King</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Dulcan</surname>
+              <given-names>MK</given-names>
+            </name>
+          </person-group>
+          <article-title>Suicidal ideation and behaviors among youths in juvenile detention.</article-title>
+          <source>Journal of the American Academy of Child and Adolescent Psychiatry</source>
+          <year>2008</year>
+          <volume>47</volume>
+          <fpage>291</fpage>
+          <lpage>300</lpage>
+          <comment>doi: 10.1097/CHI.0b013e318160b3ce</comment>
+          <pub-id pub-id-type="pmid">18216737</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R2">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Altman</surname>
+              <given-names>DG</given-names>
+            </name>
+          </person-group>
+          <source>Practical Statistics for Medical Research</source>
+          <year>1991</year>
+          <publisher-name>Chapman &amp; Hall</publisher-name>
+          <publisher-loc>London</publisher-loc>
+        </element-citation>
+      </ref>
+      <ref id="R3">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brent</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Greenhill</surname>
+              <given-names>LL</given-names>
+            </name>
+            <name>
+              <surname>Compton</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Emslie</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Wells</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Walkup</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Turner</surname>
+              <given-names>JB</given-names>
+            </name>
+          </person-group>
+          <article-title>The Treatment of Adolescent Suicide Attempters Study (TASA): Predictors of suicidal events in an open treatment trial.</article-title>
+          <source>Journal of the American Academy of Child and Adolescent Psychiatry</source>
+          <year>2009</year>
+          <volume>48</volume>
+          <fpage>987</fpage>
+          <lpage>996</lpage>
+          <comment>doi:10.1097/CHI.0b013e3181b5dbe4</comment>
+          <pub-id pub-id-type="pmid">19730274</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R4">
+        <element-citation publication-type="other">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chamberlain</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Schoenwald</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Henggeler</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>The Oregon Multidimensional Treatment Foster Care model: Features, outcomes, and progress in dissemination.</article-title>
+          <source>Moving evidence-based treatments from the laboratory into clinical practice. Cognitive and Behavioral Practice</source>
+          <year>2003</year>
+          <volume>10</volume>
+          <fpage>303</fpage>
+          <lpage>312</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R5">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chamberlain</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Leve</surname>
+              <given-names>LD</given-names>
+            </name>
+            <name>
+              <surname>Degarmo</surname>
+              <given-names>DS</given-names>
+            </name>
+          </person-group>
+          <article-title>Multidimensional Treatment Foster Care for girls in the juvenile justice system: 2-year follow-up of a randomized clinical trial.</article-title>
+          <source>Journal of Consulting and Clinical Psychology</source>
+          <year>2007</year>
+          <volume>75</volume>
+          <fpage>187</fpage>
+          <lpage>193</lpage>
+          <comment>doi:10.1037/0022-006X.75.1.187</comment>
+          <pub-id pub-id-type="pmid">17295579</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R6">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chamberlain</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>DK</given-names>
+            </name>
+          </person-group>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Kazdin</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Weisz</surname>
+              <given-names>JR</given-names>
+            </name>
+          </person-group>
+          <article-title>Antisocial behavior in children and adolescents: The Oregon Multidimensional Treatment Foster Care model.</article-title>
+          <source>Evidence-based psychotherapies for children and adolescents</source>
+          <year>2003</year>
+          <fpage>282</fpage>
+          <lpage>300</lpage>
+          <publisher-name>Guilford Press</publisher-name>
+          <publisher-loc>New York</publisher-loc>
+        </element-citation>
+      </ref>
+      <ref id="R7">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Christl</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Wittchen</surname>
+              <given-names>HU</given-names>
+            </name>
+            <name>
+              <surname>Pfister</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Lieb</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Bronisch</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>The accuracy of prevalence estimations for suicide attempts: How reliably do adolescents and young adults report their suicide attempts?</article-title>
+          <source>Archives of Suicide Research</source>
+          <year>2006</year>
+          <volume>10</volume>
+          <fpage>253</fpage>
+          <lpage>263</lpage>
+          <pub-id pub-id-type="pmid">16717042</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R8">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Crosby</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Ortega</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Melanson</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <source>Self-directed violence surveillance: Uniform definitions and recommended data elements, Version 1.0</source>
+          <year>2011</year>
+          <publisher-name>Centers for Disease Control and Prevention, National Center for Injury Prevention and Control</publisher-name>
+          <publisher-loc>Atlanta, GA</publisher-loc>
+        </element-citation>
+      </ref>
+      <ref id="R9">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Derogatis</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Melisaratos</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>The Brief Symptom Inventory: An introductory report.</article-title>
+          <source>Psychological Medicine</source>
+          <year>1983</year>
+          <volume>13</volume>
+          <fpage>595</fpage>
+          <lpage>605</lpage>
+          <comment>doi:10.1017/S0033291700048017</comment>
+          <pub-id pub-id-type="pmid">6622612</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R10">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fleiss</surname>
+              <given-names>JL</given-names>
+            </name>
+          </person-group>
+          <article-title>Measuring nominal scale agreement among many raters.</article-title>
+          <source>Psychological Bulletin</source>
+          <year>1971</year>
+          <volume>76</volume>
+          <fpage>378</fpage>
+          <lpage>382</lpage>
+          <comment>doi:10.1037/h0031619</comment>
+        </element-citation>
+      </ref>
+      <ref id="R11">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Harold</surname>
+              <given-names>GT</given-names>
+            </name>
+            <name>
+              <surname>Kerr</surname>
+              <given-names>DCR</given-names>
+            </name>
+            <name>
+              <surname>Van Ryzin</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Degarmo</surname>
+              <given-names>DS</given-names>
+            </name>
+            <name>
+              <surname>Rhoades</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Leve</surname>
+              <given-names>LD</given-names>
+            </name>
+          </person-group>
+          <article-title>Depressive symptom trajectories among girls in the juvenile justice system: 24-month outcomes of an RCT of Multidimensional Treatment Foster Care.</article-title>
+          <source>Prevention Science</source>
+          <year>2013</year>
+          <comment>Advance online publication. doi: 10.1007/s11121-012-0317-y</comment>
+        </element-citation>
+      </ref>
+      <ref id="R12">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Henry</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Moffitt</surname>
+              <given-names>TE</given-names>
+            </name>
+            <name>
+              <surname>Caspi</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Langley</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Silva</surname>
+              <given-names>PA</given-names>
+            </name>
+          </person-group>
+          <article-title>On the “Remembrance of things past”: A longitudinal evaluation of the retrospective method.</article-title>
+          <source>Psychological Assessment</source>
+          <year>1994</year>
+          <volume>6</volume>
+          <fpage>92</fpage>
+          <lpage>101</lpage>
+          <comment>doi:10.1037//1040-3590.6.2.92</comment>
+        </element-citation>
+      </ref>
+      <ref id="R13">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Huth-Bocks</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Kerr</surname>
+              <given-names>DC</given-names>
+            </name>
+            <name>
+              <surname>Ivey</surname>
+              <given-names>AZ</given-names>
+            </name>
+            <name>
+              <surname>Kramer</surname>
+              <given-names>AC</given-names>
+            </name>
+            <name>
+              <surname>King</surname>
+              <given-names>CA</given-names>
+            </name>
+          </person-group>
+          <article-title>Assessment of psychiatrically hospitalized suicidal adolescents: Self-report instruments as predictors of suicidal thoughts and behavior.</article-title>
+          <source>Journal of the American Academy of Child &amp; Adolescent Psychiatry</source>
+          <year>2007</year>
+          <volume>46</volume>
+          <fpage>387</fpage>
+          <lpage>395</lpage>
+          <pub-id pub-id-type="pmid">17314725</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R14">
+        <element-citation publication-type="other">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kerr</surname>
+              <given-names>DC</given-names>
+            </name>
+            <name>
+              <surname>Degarmo</surname>
+              <given-names>DS</given-names>
+            </name>
+            <name>
+              <surname>Leve</surname>
+              <given-names>LD</given-names>
+            </name>
+            <name>
+              <surname>Chamberlain</surname>
+              <given-names>PC</given-names>
+            </name>
+          </person-group>
+          <article-title>Juvenile justice girls’ depressive symptoms and suicidal ideation nine years after Multidimensional Treatment Foster Care.</article-title>
+          <year>2012</year>
+          <comment>Manuscript submitted for publication</comment>
+        </element-citation>
+      </ref>
+      <ref id="R15">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kerr</surname>
+              <given-names>DCR</given-names>
+            </name>
+            <name>
+              <surname>Leve</surname>
+              <given-names>LD</given-names>
+            </name>
+            <name>
+              <surname>Chamberlain</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Pregnancy rates among juvenile justice girls in two RCTs of Multidimensional Treatment Foster Care.</article-title>
+          <source>Journal of Consulting and Clinical Psychology</source>
+          <year>2009</year>
+          <volume>77</volume>
+          <fpage>588</fpage>
+          <lpage>593</lpage>
+          <pub-id pub-id-type="pmid">19485598</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R16">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kessler</surname>
+              <given-names>RC</given-names>
+            </name>
+            <name>
+              <surname>Borges</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Walters</surname>
+              <given-names>EE</given-names>
+            </name>
+          </person-group>
+          <article-title>Prevalence of and risk factors for lifetime suicide attempts in the National Comorbidity Survey.</article-title>
+          <source>Archives of General Psychiatry</source>
+          <year>1999</year>
+          <volume>56</volume>
+          <fpage>617</fpage>
+          <lpage>626</lpage>
+          <comment>doi:10.1001/archpsyc.56.7.617</comment>
+          <pub-id pub-id-type="pmid">10401507</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R17">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Klimes-Dougan</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Safer</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Ronsaville</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Tinsley</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Harris</surname>
+              <given-names>SJ</given-names>
+            </name>
+          </person-group>
+          <article-title>The value of forgetting suicidal thoughts and behavior.</article-title>
+          <source>Suicide and Life-Threatening Behavior</source>
+          <year>2007</year>
+          <volume>37</volume>
+          <fpage>431</fpage>
+          <lpage>438</lpage>
+          <comment>doi:10.1521/suli.2007.37.4.431</comment>
+          <pub-id pub-id-type="pmid">17896883</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R18">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Luoma</surname>
+              <given-names>JB</given-names>
+            </name>
+            <name>
+              <surname>Martin</surname>
+              <given-names>CE</given-names>
+            </name>
+            <name>
+              <surname>Pearson</surname>
+              <given-names>JL</given-names>
+            </name>
+          </person-group>
+          <article-title>Contact with mental health and primary care providers before suicide: A review of the evidence.</article-title>
+          <source>The American Journal of Psychiatry</source>
+          <year>2002</year>
+          <volume>159</volume>
+          <fpage>909</fpage>
+          <lpage>916</lpage>
+          <comment>doi:10.1176/appi.ajp.159.6.909</comment>
+          <pub-id pub-id-type="pmid">12042175</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R19">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mazza</surname>
+              <given-names>JJ</given-names>
+            </name>
+            <name>
+              <surname>Catalano</surname>
+              <given-names>RF</given-names>
+            </name>
+            <name>
+              <surname>Abbott</surname>
+              <given-names>RD</given-names>
+            </name>
+            <name>
+              <surname>Haggerty</surname>
+              <given-names>KP</given-names>
+            </name>
+          </person-group>
+          <article-title>An examination of the validity of retrospective measures of suicide attempts in youth.</article-title>
+          <source>Journal of Adolescent Health</source>
+          <year>2011</year>
+          <volume>49</volume>
+          <fpage>532</fpage>
+          <lpage>537</lpage>
+          <comment>doi:10.1016/j.jadohealth.2011.04.009</comment>
+          <pub-id pub-id-type="pmid">22018569</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R20">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Miranda</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Scott</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Hicks</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Wilcox</surname>
+              <given-names>HC</given-names>
+            </name>
+            <name>
+              <surname>Munfakh</surname>
+              <given-names>JLH</given-names>
+            </name>
+            <name>
+              <surname>Shaffer</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Suicide attempt characteristics, diagnoses, and future attempts: Comparing multiple attempters to single attempters and ideators.</article-title>
+          <source>Journal of the American Academy of Child &amp; Adolescent Psychiatry</source>
+          <year>2008</year>
+          <volume>47</volume>
+          <fpage>32</fpage>
+          <lpage>40</lpage>
+          <pub-id pub-id-type="pmid">18174823</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R21">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Muthén</surname>
+              <given-names>LK</given-names>
+            </name>
+            <name>
+              <surname>Muthén</surname>
+              <given-names>BO</given-names>
+            </name>
+          </person-group>
+          <source>Mplus User's Guide</source>
+          <year>1998-2012</year>
+          <publisher-name>Muthén &amp; Muthén</publisher-name>
+          <publisher-loc>Los Angeles, CA</publisher-loc>
+          <edition>Seventh Edition.</edition>
+        </element-citation>
+      </ref>
+      <ref id="R22">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>O'Carroll</surname>
+              <given-names>PW</given-names>
+            </name>
+            <name>
+              <surname>Berman</surname>
+              <given-names>AL</given-names>
+            </name>
+            <name>
+              <surname>Maris</surname>
+              <given-names>RW</given-names>
+            </name>
+            <name>
+              <surname>Moscicki</surname>
+              <given-names>EK</given-names>
+            </name>
+            <name>
+              <surname>Tanney</surname>
+              <given-names>BL</given-names>
+            </name>
+            <name>
+              <surname>Silverman</surname>
+              <given-names>MM</given-names>
+            </name>
+          </person-group>
+          <article-title>Beyond the Tower of Babel: A Nomenclature for Suicidology.</article-title>
+          <source>Suicide and Life-Threatening Behavior</source>
+          <year>1996</year>
+          <volume>26</volume>
+          <fpage>237</fpage>
+          <lpage>252</lpage>
+          <pub-id pub-id-type="pmid">8897663</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R23">
+        <element-citation publication-type="web">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Posner</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Brent</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Lucas</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Gould</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Stanley</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Mann</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <source>Columbia-Suicide Severity Rating Scale (C-SSRS), Lifetime/Recent Version</source>
+          <year>2008</year>
+          <comment>Retrieved from The Research Foundation for Mental Hygiene, Inc., <ext-link ext-link-type="uri" xlink:href="http://www.cssrs.columbia.edu">www.cssrs.columbia.edu</ext-link></comment>
+        </element-citation>
+      </ref>
+      <ref id="R24">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Posner</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Brown</surname>
+              <given-names>GK</given-names>
+            </name>
+            <name>
+              <surname>Stanley</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Brent</surname>
+              <given-names>DA</given-names>
+            </name>
+            <name>
+              <surname>Kseniya</surname>
+              <given-names>VY</given-names>
+            </name>
+            <name>
+              <surname>Oquendo</surname>
+              <given-names>MA</given-names>
+            </name>
+            <name>
+              <surname>Mann</surname>
+              <given-names>JJ</given-names>
+            </name>
+          </person-group>
+          <article-title>The Columbia–Suicide Severity Rating Scale: Initial validity and internal consistency findings from three multisite studies with adolescents and adults.</article-title>
+          <source>The American Journal of Psychiatry</source>
+          <year>2011</year>
+          <volume>168</volume>
+          <fpage>1266</fpage>
+          <lpage>1277</lpage>
+          <comment>doi:10.1176/appi.ajp.2011.10111704</comment>
+          <pub-id pub-id-type="pmid">22193671</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R25">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Prinstein</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <name>
+              <surname>Nock</surname>
+              <given-names>MK</given-names>
+            </name>
+            <name>
+              <surname>Spirito</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Grapentine</surname>
+              <given-names>WL</given-names>
+            </name>
+          </person-group>
+          <article-title>Multimethod Assessment of suicidality in adolescent psychiatric inpatients: Preliminary results.</article-title>
+          <source>Journal of the American Academy of Child &amp; Adolescent Psychiatry</source>
+          <year>2001</year>
+          <volume>40</volume>
+          <fpage>1053</fpage>
+          <lpage>1061</lpage>
+          <pub-id pub-id-type="pmid">11556629</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R26">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Radloff</surname>
+              <given-names>LS</given-names>
+            </name>
+          </person-group>
+          <article-title>The CES-D scale: A self-report depression scale for research in the general population.</article-title>
+          <source>Applied Psychological Measurement</source>
+          <year>1977</year>
+          <volume>1</volume>
+          <fpage>385</fpage>
+          <lpage>401</lpage>
+          <comment>doi:10.1177/014662167700100306</comment>
+        </element-citation>
+      </ref>
+      <ref id="R27">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Raudenbush</surname>
+              <given-names>SW</given-names>
+            </name>
+            <name>
+              <surname>Bryk</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Cheong</surname>
+              <given-names>YF</given-names>
+            </name>
+            <name>
+              <surname>Congdon</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>du Toit</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <source>HLM7: Hierarchial linear and nonlinear modeling</source>
+          <year>2011</year>
+          <publisher-name>Scientific Software International</publisher-name>
+          <publisher-loc>Chicago, Il</publisher-loc>
+        </element-citation>
+      </ref>
+      <ref id="R28">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rohde</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Seeley</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Mace</surname>
+              <given-names>DE</given-names>
+            </name>
+          </person-group>
+          <article-title>Correlates of Suicidal Behavior in a Juvenile Detention Population.</article-title>
+          <source>Suicide and Life-Threatening Behavior</source>
+          <year>1997</year>
+          <volume>27</volume>
+          <fpage>164</fpage>
+          <lpage>175</lpage>
+          <comment>doi: 10.1111/j.1943-278X.1997.tb00288.x</comment>
+          <pub-id pub-id-type="pmid">9260299</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R29">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rogler</surname>
+              <given-names>LH</given-names>
+            </name>
+            <name>
+              <surname>Malgady</surname>
+              <given-names>RG</given-names>
+            </name>
+            <name>
+              <surname>Tryon</surname>
+              <given-names>WW</given-names>
+            </name>
+          </person-group>
+          <article-title>Evaluation of mental health: Issues of memory in the Diagnostic Interview Schedule.</article-title>
+          <source>Journal of Nervous and Mental Disease</source>
+          <year>1992</year>
+          <volume>180</volume>
+          <fpage>215</fpage>
+          <lpage>222</lpage>
+          <pub-id pub-id-type="pmid">1556561</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R30">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shaffer</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Fisher</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Lucas</surname>
+              <given-names>CP</given-names>
+            </name>
+            <name>
+              <surname>Dulcan</surname>
+              <given-names>MK</given-names>
+            </name>
+            <name>
+              <surname>Schwab-Stone</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>NIMH Diagnostic Interview Schedule for Children, Version IV (NIMH DISC-IV): Description, differences from previous versions and reliability of some common diagnoses.</article-title>
+          <source>Journal of the American Academy of Child &amp; Adolescent Psychiatry</source>
+          <year>2000</year>
+          <volume>39</volume>
+          <fpage>28</fpage>
+          <lpage>38</lpage>
+          <comment>doi:10.1097/00004583-200001000-00014</comment>
+          <pub-id pub-id-type="pmid">10638065</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R31">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Silverman</surname>
+              <given-names>MM</given-names>
+            </name>
+            <name>
+              <surname>Berman</surname>
+              <given-names>AL</given-names>
+            </name>
+            <name>
+              <surname>Sanddal</surname>
+              <given-names>ND</given-names>
+            </name>
+            <name>
+              <surname>O'Carroll</surname>
+              <given-names>PW</given-names>
+            </name>
+            <name>
+              <surname>Joiner</surname>
+              <given-names>TW</given-names>
+            </name>
+          </person-group>
+          <article-title>Rebuilding the Tower of Babel: A revised nomenclature for the study of suicide and suicidal behaviors part 2: Suicide-related ideations, communications, and behaviors.</article-title>
+          <source>Suicide and Life-Threatening Behavior</source>
+          <year>2007</year>
+          <volume>37</volume>
+          <fpage>264</fpage>
+          <lpage>277</lpage>
+          <comment>doi:10.1521/suli.2007.37.3.264</comment>
+          <pub-id pub-id-type="pmid">17579539</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R32">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Singer</surname>
+              <given-names>JD</given-names>
+            </name>
+            <name>
+              <surname>Willett</surname>
+              <given-names>JB</given-names>
+            </name>
+          </person-group>
+          <source>Applied longitudinal data analysis: Modeling change and event occurrence</source>
+          <year>2003</year>
+          <publisher-name>Oxford University Press</publisher-name>
+          <publisher-loc>New York</publisher-loc>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig id="F1" orientation="portrait" position="float">
+      <label>Figure 1</label>
+      <caption>
+        <p>Retrospectively reported age of first suicide attempt (<italic>n</italic> = 66) in sample of 144 juvenile justice girls followed to early adulthood.</p>
+      </caption>
+      <graphic xlink:href="nihms-545288-f0001"/>
+    </fig>
+    <table-wrap id="T1" position="float" orientation="portrait">
+      <label>Table 1</label>
+      <caption>
+        <p>Numbers (%) of participants reporting a lifetime history of behaviors of interest on the C-SSRS.</p>
+      </caption>
+      <table frame="below" rules="groups">
+        <thead>
+          <tr>
+            <th align="left" valign="top" rowspan="1" colspan="1"/>
+            <th align="center" valign="top" rowspan="1" colspan="1">
+<italic>n</italic>
+</th>
+            <th align="right" valign="top" rowspan="1" colspan="1">% (of <italic>n</italic> = 144)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Any actual suicide attempts</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">66</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">45.8</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">        1 suicide attempt</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">41</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">28.5</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">        2 suicide attempts</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">20</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">13.9</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">        3 suicide attempts</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">2.1</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">        5+ suicide attempts</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">1.4</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Maximum lethality/medical damage codes for attempts</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="right" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">        very minor or none</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">17</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">11.8</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">        minor</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">18</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">12.5</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">        moderate</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">23</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">16.0</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">        moderately severe</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">6</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">4.2</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">        severe</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">1.4</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Other coded acts of interest</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="right" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">        Any interrupted attempts</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">9</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">6.3</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">        Any aborted attempts</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">4</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">2.8</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">        Any preparatory acts</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">12</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">8.3</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">        Any non-suicidal self-harm acts</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">36</td>
+            <td align="right" valign="top" rowspan="1" colspan="1">25.0</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+    <table-wrap id="T2" position="float" orientation="landscape">
+      <label>Table 2</label>
+      <caption>
+        <p>Observed agreement among methods and informants regarding baseline suicide attempt history</p>
+      </caption>
+      <table frame="box" rules="groups">
+        <thead>
+          <tr>
+            <th align="left" valign="top" rowspan="1" colspan="1"/>
+            <th colspan="3" align="center" valign="top" rowspan="1">Self-report (C-SSRS, adulthood)</th>
+            <th colspan="3" align="center" valign="top" rowspan="1">Caseworker (baseline)</th>
+            <th colspan="3" align="center" valign="top" rowspan="1">Caregiver (baseline)</th>
+          </tr>
+          <tr>
+            <th align="left" valign="top" rowspan="1" colspan="1"/>
+            <th align="center" valign="top" rowspan="1" colspan="1">Yes</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">No</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">Missing</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">Yes</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">No</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">Missing</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">Yes</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">No</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">Missing</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Self-report (baseline)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">    Yes</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">35</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">32</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">12</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">44</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">29</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">6</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">46</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">25</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">8</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">    No</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">15</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">61</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">10</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">21</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">62</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">17</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">58</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">11</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">    Missing</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0</td>
+          </tr>
+          <tr>
+            <td colspan="10" align="center" valign="top" rowspan="1">
+              <hr/>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Self-report (C-SSRS, adulthood)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">    Yes</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">27</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">18</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">5</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">27</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">20</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">3</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">    No</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">25</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">65</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">4</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">29</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">54</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">11</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">    Missing</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">13</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">9</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">7</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">10</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">5</td>
+          </tr>
+          <tr>
+            <td colspan="10" align="center" valign="top" rowspan="1">
+              <hr/>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Caseworker (baseline)</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">    Yes</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">45</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">12</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">8</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">    No</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">17</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">64</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">11</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">    Missing</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">1</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">8</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+    <table-wrap id="T3" position="float" orientation="portrait">
+      <label>Table 3</label>
+      <caption>
+        <p>HGLM unstandardized coefficients for logistic prediction of suicide attempt</p>
+      </caption>
+      <table frame="hsides" rules="none">
+        <thead>
+          <tr>
+            <th align="left" valign="top" rowspan="1" colspan="1"/>
+            <th colspan="2" align="center" valign="top" rowspan="1">
+<underline>Step 1</underline>
+</th>
+            <th colspan="2" align="center" valign="top" rowspan="1">
+<underline>Step 2</underline>
+</th>
+            <th colspan="2" align="center" valign="top" rowspan="1">
+<underline>Step 3</underline>
+</th>
+          </tr>
+          <tr>
+            <th align="left" valign="top" rowspan="1" colspan="1"/>
+            <th align="center" valign="top" rowspan="1" colspan="1">beta</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">OR</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">beta</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">OR</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">beta</th>
+            <th align="center" valign="top" rowspan="1" colspan="1">OR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Pre-Baseline Attempts</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.257</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.294</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.203</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.226</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.332</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.394</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Baseline Age</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">−0.547<xref ref-type="table-fn" rid="TFN1">**</xref></td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.579</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">−0.541<xref ref-type="table-fn" rid="TFN1">**</xref></td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.582</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">−0.679<xref ref-type="table-fn" rid="TFN1">**</xref></td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.507</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">MTFC</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.132</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.141</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.160</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.174</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.066</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.068</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Cohort</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">−0.332</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.717</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">−0.299</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.741</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">−0.385</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.680</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">MTFC × Cohort</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.010</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.010</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.057</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.059</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.334</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.397</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Depressive Symptoms</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.068<xref ref-type="table-fn" rid="TFN2">*</xref></td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.071</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">−0.008</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.992</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Δ Depressive Symptoms</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.013</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.014</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">0.021</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">1.021</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Suicidal Ideation</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">10.873<xref ref-type="table-fn" rid="TFN1">**</xref></td>
+            <td align="center" valign="top" rowspan="1" colspan="1">52749.956</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Δ Suicidal Ideation</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">.960</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">2.612</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">    -2 Log Likelihood</td>
+            <td align="center" valign="top" rowspan="1" colspan="1">130.482</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">125.053</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">110.431</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">    Cox &amp; Snell R<sup>2</sup></td>
+            <td align="center" valign="top" rowspan="1" colspan="1">.078</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">.112</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+            <td align="center" valign="top" rowspan="1" colspan="1">.197</td>
+            <td align="center" valign="top" rowspan="1" colspan="1"/>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <p><italic>Note.</italic> Coefficients are the unstandardized values. HGLM = hierarchical generalized linear model estimation.</p>
+        <p>***<italic>p</italic> &lt; .001.</p>
+        <fn id="TFN1">
+          <label>**</label>
+          <p id="P69"><italic>p</italic> &lt; .01.</p>
+        </fn>
+        <fn id="TFN2">
+          <label>*</label>
+          <p id="P70"><italic>p</italic> &lt; .05.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+  </floats-group>
+</article>

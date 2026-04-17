@@ -1,0 +1,716 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <?properties open_access?>
+  <?properties manuscript?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">101499602</journal-id>
+      <journal-id journal-id-type="nlm-ta">Circ Cardiovasc Interv</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Circ Cardiovasc Interv</journal-id>
+      <journal-title-group>
+        <journal-title>Circulation. Cardiovascular interventions</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1941-7640</issn>
+      <issn pub-type="epub">1941-7632</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">39498563</article-id>
+      <article-id pub-id-type="pmc">7616809</article-id>
+      <article-id pub-id-type="manuscript">EMS199362</article-id>
+      <article-id pub-id-type="doi">10.1161/CIRCINTERVENTIONS.123.013964</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Virtual Reality for Preprocedure Planning of Covered Stent Correction of Superior Sinus Venosus Atrial Septal Defects</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-5278-5271</contrib-id>
+          <name>
+            <surname>Stephenson</surname>
+            <given-names>Natasha</given-names>
+          </name>
+          <degrees>MBChB</degrees>
+          <aff id="A1">School of Biomedical Engineering and Imaging Sciences, <institution-wrap><institution-id institution-id-type="ror">https://ror.org/0220mzb33</institution-id><institution>King’s College London</institution></institution-wrap>, <country country="GB">United Kingdom</country></aff>
+          <aff id="A2">Department of Congenital Heart Disease, <institution-wrap><institution-id institution-id-type="ror">https://ror.org/058pgtg13</institution-id><institution>Evelina London Children’s Hospital</institution></institution-wrap>, <country country="GB">United Kingdom</country></aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0003-3030-9749</contrib-id>
+          <name>
+            <surname>Rosenthal</surname>
+            <given-names>Eric</given-names>
+          </name>
+          <degrees>MD</degrees>
+          <aff id="A3">Department of Congenital Heart Disease, <institution-wrap><institution-id institution-id-type="ror">https://ror.org/058pgtg13</institution-id><institution>Evelina London Children’s Hospital</institution></institution-wrap>, <country country="GB">United Kingdom</country></aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-2006-3429</contrib-id>
+          <name>
+            <surname>Jones</surname>
+            <given-names>Matthew</given-names>
+          </name>
+          <degrees>MBBS</degrees>
+          <aff id="A4">Department of Congenital Heart Disease, <institution-wrap><institution-id institution-id-type="ror">https://ror.org/058pgtg13</institution-id><institution>Evelina London Children’s Hospital</institution></institution-wrap>, <country country="GB">United Kingdom</country></aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Deng</surname>
+            <given-names>Shujie</given-names>
+          </name>
+          <degrees>PhD</degrees>
+          <aff id="A5">School of Biomedical Engineering and Imaging Sciences, <institution-wrap><institution-id institution-id-type="ror">https://ror.org/0220mzb33</institution-id><institution>King’s College London</institution></institution-wrap>, <country country="GB">United Kingdom</country></aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Wheeler</surname>
+            <given-names>Gavin</given-names>
+          </name>
+          <degrees>PhD</degrees>
+          <aff id="A6">School of Biomedical Engineering and Imaging Sciences, <institution-wrap><institution-id institution-id-type="ror">https://ror.org/0220mzb33</institution-id><institution>King’s College London</institution></institution-wrap>, <country country="GB">United Kingdom</country></aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0003-1541-1155</contrib-id>
+          <name>
+            <surname>Pushparajah</surname>
+            <given-names>Kuberan</given-names>
+          </name>
+          <degrees>BMBS, MDRes</degrees>
+          <aff id="A7">School of Biomedical Engineering and Imaging Sciences, <institution-wrap><institution-id institution-id-type="ror">https://ror.org/0220mzb33</institution-id><institution>King’s College London</institution></institution-wrap>, <country country="GB">United Kingdom</country></aff>
+          <aff id="A8">Department of Congenital Heart Disease, <institution-wrap><institution-id institution-id-type="ror">https://ror.org/058pgtg13</institution-id><institution>Evelina London Children’s Hospital</institution></institution-wrap>, <country country="GB">United Kingdom</country></aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0001-3107-3009</contrib-id>
+          <name>
+            <surname>Schnabel</surname>
+            <given-names>Julia A.</given-names>
+          </name>
+          <degrees>PhD</degrees>
+          <aff id="A9">School of Biomedical Engineering and Imaging Sciences, <institution-wrap><institution-id institution-id-type="ror">https://ror.org/0220mzb33</institution-id><institution>King’s College London</institution></institution-wrap>, <country country="GB">United Kingdom</country></aff>
+          <aff id="A10">School of Computation, Information and Technology, <institution-wrap><institution-id institution-id-type="ror">https://ror.org/02kkvpp62</institution-id><institution>Technical University of Munich</institution></institution-wrap>, <country country="DE">Germany</country></aff>
+          <aff id="A11">Institute of Machine Learning in Biomedical Engineering, Helmholtz Munich, Germany</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-9773-7441</contrib-id>
+          <name>
+            <surname>Simpson</surname>
+            <given-names>John M.</given-names>
+          </name>
+          <degrees>MBChB, MDRes</degrees>
+          <aff id="A12">School of Biomedical Engineering and Imaging Sciences, <institution-wrap><institution-id institution-id-type="ror">https://ror.org/0220mzb33</institution-id><institution>King’s College London</institution></institution-wrap>, <country country="GB">United Kingdom</country></aff>
+          <aff id="A13">Department of Congenital Heart Disease, <institution-wrap><institution-id institution-id-type="ror">https://ror.org/058pgtg13</institution-id><institution>Evelina London Children’s Hospital</institution></institution-wrap>, <country country="GB">United Kingdom</country></aff>
+        </contrib>
+      </contrib-group>
+      <author-notes>
+        <corresp id="CR1">Correspondence to: Natasha Stephenson, MBChB, 3rd Floor Lambeth Wing, St Thomas’ Hospital, London, SE1 7EH, United Kingdom. <email>natasha.stephenson@kcl.ac.uk</email></corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>06</day>
+        <month>11</month>
+        <year>2024</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <day>05</day>
+        <month>11</month>
+        <year>2024</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>05</day>
+        <month>11</month>
+        <year>2024</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>15</day>
+        <month>11</month>
+        <year>2024</year>
+      </pub-date>
+      <volume>17</volume>
+      <issue>12</issue>
+      <fpage>e013964</fpage>
+      <lpage>e013964</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available to download for the purposes of text mining, consistent with the principles of UK copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <sec id="S1">
+          <title>Background</title>
+          <p id="P1">Covered stent correction (CSC) of a superior sinus venosus atrial septal defect is an alternative to surgery in selected patients, but anatomic variation means that assessment for CSC requires a 3-dimensional anatomic understanding. Heart VR is a virtual reality (VR) system that rapidly displays and renders multimodality imaging without prior image segmentation. The aim of this study was to evaluate the performance of the Heart VR system to assess patient suitability for CSC.</p>
+        </sec>
+        <sec id="S2">
+          <title>Methods</title>
+          <p id="P2">In a blinded fashion, 2 interventionalists reviewed preprocedural computed tomography scans using Heart VR to assess the feasibility of CSC, including the potential need for pulmonary vein protection. The total review time using VR was recorded.</p>
+        </sec>
+        <sec id="S3">
+          <title>Results</title>
+          <p id="P3">Using conventional imaging, 15 patients were deemed suitable for CSC, but at catheterization, 3 cases were unsuitable. Using VR, when both interventionalists agreed that a case was suitable for CSC (n=12), all proved technically feasible. In the 3 cases that were unsuitable for CSC, the interventionalists using VR were either uncertain (n=1) or did not agree on suitability (n=2). The strategy for pulmonary vein protection was correctly identified by interventionalist 1 and 2 in 9/12 and 8/12 cases, respectively. In cases where pulmonary vein protection was required intraprocedurally (n=5), this was correctly identified using Heart VR. Using VR, in 3 cases it was determined that pulmonary vein protection would be required, but this was not the case on balloon interrogation. VR data loading and review times were 82 seconds and 7 minutes, respectively. Verbal feedback indicated that Heart VR assisted in the assessment of case suitability.</p>
+        </sec>
+        <sec id="S4">
+          <title>Conclusions</title>
+          <p id="P4">Heart VR is a rapid and effective tool for predicting suitability for CSC in patients with a superior sinus venosus atrial septal defect and could be a feasible alternative to segmented virtual or physical 3-dimensional models.</p>
+        </sec>
+      </abstract>
+      <abstract abstract-type="graphical">
+        <p id="P5"><fig position="anchor" id="F6"><label>Graphic Abstract</label><graphic xlink:href="EMS199362-f006" position="float"/></fig>
+</p>
+      </abstract>
+      <kwd-group>
+        <kwd>catheterization</kwd>
+        <kwd>heart septal defects</kwd>
+        <kwd>atrial</kwd>
+        <kwd>pulmonary veins</kwd>
+        <kwd>virtual reality</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <p id="P6">Superior sinus venosus atrial septal defect (SVASD) is characterized by a superior interatrial communication at the superior vena cava (SVC)–right atrial junction associated with anomalous drainage of ≥1 right-sided pulmonary veins (PVs).<sup><xref rid="R1" ref-type="bibr">1</xref></sup> In recent years, covered stent correction (CSC) has emerged as an alternative to surgery in selected cases. The procedure involves the insertion of a covered stent into the SVC, which directs flow through the stent into the right atrium while the anomalous PV flow is directed behind the stent into the left atrium and abolishes the shunt.<sup><xref rid="R2" ref-type="bibr">2</xref>,<xref rid="R3" ref-type="bibr">3</xref></sup> Over 50 patients have now been successfully treated at our center. Diagnosis and suitability for CSC are currently achieved by imaging techniques, including computed tomography (CT) and magnetic resonance imaging.<sup><xref rid="R4" ref-type="bibr">4</xref></sup> These are interrogated on a flat screen either as multiplanar reformatted images or 3-dimensional (3D) volume-rendered or segmented reconstructions. 3D-printed models with physical stents have also been used to guide the optimal approach.<sup><xref rid="R5" ref-type="bibr">5</xref>,<xref rid="R6" ref-type="bibr">6</xref></sup></p>
+    <p id="P7">Key considerations include secure placement of the covered stent in the SVC, flaring of the lower portion of the stent to avoid residual shunt, and avoidance of compression of the PVs redirected to the left atrium. The latter complication can often be avoided by simultaneous noncompliant balloon expansion in affected PVs to mold the SVC stent and increase the size of the new PV pathway (PV protection [PVP]).</p>
+    <p id="P8">The aim of this article is to report the use of a novel prototype virtual reality (VR) system (Heart VR) to investigate the potential use of this approach to assist the patient selection in a cohort of patients who had undergone attempted CSC for SVASD. This included the assessment of the feasibility of CSC and the requirement for PVP during the catheterization procedure.</p>
+    <sec sec-type="methods" id="S5">
+      <title>Methods</title>
+      <p id="P9">The data that support the findings of this study are available from the corresponding author upon reasonable request.</p>
+      <sec id="S6">
+        <title>Patient Selection and Procedural Details</title>
+        <p id="P10">Sixty-five patients underwent assessment for CSC at our center between January 2017 and December 2022. We used CT data for superior spatial resolution. Forty patients underwent CT of sufficient quality (&lt;1 mm slice thickness, good right heart contrast enhancement, no significant motion artifact), 2 underwent suboptimal CT, and 23 underwent magnetic resonance imaging. Of the 40 selected patients, 26 underwent CSC, 5 underwent catheterization and balloon testing but did not proceed to CSC, and 9 were referred directly for surgery. Patients referred directly for surgery were excluded, leaving 31 eligible patients. Fifteen patients were randomly selected from this cohort for the study.</p>
+        <p id="P11">All included cases were deemed suitable for CSC using standard imaging, which included CT review using cross-sectional multiplanar reformatted on Sectra PACS (Sectra AB, Linkoping, Sweden) and as a segmented volume-rendered 3D model on Syngo.via (Siemens Healthineers, Erlangen, Germany), displayed on a 2-dimensional (2D) screen meeting minimum standards for radiology use.<sup><xref rid="R7" ref-type="bibr">7</xref></sup> Patient-specific 3D-printed models were created in 2 cases to clarify anatomy. Preprocedure documentation of the need for PVP using these techniques was not recorded. For the purpose of this study, the views of the interventionalists before the procedure were used, and the standard imaging was not reinterrogated.</p>
+        <p id="P12">Cardiac catheterization and CSC were performed as previously described by Hansen et al.<sup><xref rid="R3" ref-type="bibr">3</xref></sup></p>
+      </sec>
+      <sec id="S7">
+        <title>Imaging Data</title>
+        <p id="P13">Contrast-enhanced CT scans from our center and external referral centers were used. At our center, prospective electrocardiogram-gated contrast-enhanced CT angiography was performed on a Siemens Dual Source Flash multidetector scanner during inspiratory breath hold with 0.6-mm slice thickness. External scans had variable acquisition protocols, but the minimum acceptable spatial resolution for study inclusion was 1 mm, with good right heart contrast opacification and a field of view that included the SVC to the insertion of the innominate vein and the right-sided PVs.</p>
+      </sec>
+      <sec id="S8">
+        <title>VR Visualization</title>
+        <p id="P14">The Heart VR system was created in-house via Unity (a video game development platform; Unity Technologies, San Francisco, CA) with the inclusion of Insight Toolkit (a visualization library specifically designed for scientific imaging), using a plugin system to enable the loading of imaging data.<sup><xref rid="R8" ref-type="bibr">8</xref></sup> For VR visualization, digital imaging and communication in medicine files of CT studies were loaded directly into the VR system and displayed as volume-rendered objects in the virtual scene (<xref rid="SD1" ref-type="supplementary-material">Figure S1</xref>). No presegmentation of data was required: external and internal cardiac and vascular surfaces could be automatically rendered via real-time adjustment of windowing and transfer functions. VR software was displayed and interacted with via an HP Reverb G2 headset and controllers (Hewlett Packard Company, Palo Alto, CA). The CT volume could be moved, rotated, cropped, and measured using an in-built tool panel. Virtual stent models could be placed in the scene, and the size adjusted using the handheld controllers. The time taken to load each data set was recorded.</p>
+      </sec>
+      <sec id="S9">
+        <title>Digital Stent Modeling</title>
+        <p id="P15">Virtual stents placed within the VR visualization were generated using Blender software (version 3.3.1; Blender Foundation, Amsterdam).<sup><xref rid="R9" ref-type="bibr">9</xref></sup> All stents were 80 mm in length with a 40-mm upper cylinder, a 20-mm truncated cone, and a 20-mm lower cylinder (<xref rid="F1" ref-type="fig">Figure 1</xref>). The diameter of the upper cylinder (a) and lower cylinder (b) were adjusted in 2-mm increments (diameter a, 10–22 mm; diameter b, 24–30 mm), producing a total of 28 stent models. The meshes were solidified and exported as Standard Tessellation Language files to enable incorporation into VR.</p>
+      </sec>
+      <sec id="S10">
+        <title>Study Protocol</title>
+        <p id="P16">Ethical approval was obtained from the National Health Service Health Research Authority for the use of pseudoanonymized patient imaging data for retrospective studies (Research Ethics Committee reference: 21/LO/0650). Given the conditions of data use, individual patient consent was not required within the institutional review board. Two interventional cardiologists (interventionalist 1 and interventionalist 2) were selected to participate in the study. Interventionalist 1 has performed/supervised over 50 CSC cases, and interventionalist 2 has performed/supervised 40 CSC cases. Both interventionalists were given a 15-minute orientation to the VR system and analyzed 1 SVASD data set before commencing the study. All 15 cases were anonymized and presented in random order. The interventionalists were asked to determine whether the cases were suitable or unsuitable for CSC using Heart VR (<xref rid="F2" ref-type="fig">Figure 2</xref>). Where an interventionalist could not reach a definitive conclusion regarding suitability based on the VR visualization, it was classified as uncertain. If the case was determined to be suitable, the interventionalist was also asked to assess the need for PVP based on VR review. Results of the VR review were compared with the outcomes from invasive cardiac catheterization. Total VR data load time (to the nearest second) and the total time for data review and decision-making (to the nearest minute) were recorded and expressed as median values±interquartile range.</p>
+        <p id="P17">After completion of all VR cases, both interventionalists completed a questionnaire about the VR system: usability, image quality, ease of stent placement/adjustment, added value, confidence for case selection compared with 2D techniques and 3D prints, and time-saving value (<xref rid="SD1" ref-type="supplementary-material">Supplemental Methods</xref>). Free-text comments could also be recorded.</p>
+      </sec>
+      <sec id="S11">
+        <title>Statistical Analysis</title>
+        <p id="P18">Given the retrospective nature of the study with 15 cases, results are presented descriptively rather than by statistical methods.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results" id="S12">
+      <title>Results</title>
+      <sec id="S13">
+        <title>Study Population</title>
+        <p id="P19">CSC was attempted in all 15 patients (<xref rid="SD1" ref-type="supplementary-material">Table S1</xref>). The median age was 56.6 years (range, 29.6–73.9), and 6/15 (40%) were women. In all cases, a patient-specific volume-rendered 3D model displayed on a 2D screen interface had been used to assist in preprocedure planning. In 2 cases, 3D-printed models were also used to assess suitability. Preprocedure comments regarding PVP using these imaging techniques had not been documented.</p>
+        <p id="P20">CSC was performed in 12 patients (80%), of whom 5 had intraprocedural PVP (<xref rid="SD1" ref-type="supplementary-material">Table S2</xref>). Postprocedure transesophageal echocardiography assessment confirmed no residual shunt in 4 patients, trivial shunts in 2, and a mild residual shunt in 6. No patients had evidence of PV stenosis.</p>
+        <p id="P21">In 3 cases, CSC was not performed following balloon interrogation. In 2 patients, this was due to angiographic evidence of PV compression that did not appear amenable to protection (cases 9 and 10). In the third case (patient 7), at least 2 large right upper PV branches entering high into the SVC were not divertible with stenting, with evidence of compression of the right middle PV branch on balloon testing.</p>
+      </sec>
+      <sec id="S14">
+        <title>Assessment of Suitability Using VR</title>
+        <p id="P22">In all cases where CSC was successful (n=12), both interventionalists correctly assessed them as suitable using VR (<xref rid="SD1" ref-type="supplementary-material">Table S2</xref>). In cases that were determined unsuitable at the time of catheterization (n=3), interventionalists 1 and 2 were each correct in 1 case, uncertain in 1, and incorrect in 1. In all unsuitable cases, at least 1 of the interventionalists either disagreed on feasibility or expressed uncertainty.</p>
+        <p id="P23">In case 9, where balloon testing showed PV occlusion not amenable to PVP at catheterization, both interventionalists were uncertain of suitability based on VR review (<xref rid="F2" ref-type="fig">Figure 2</xref>). In their verbal comments, both expressed concerns regarding the adequacy of the PV pathway around an implanted stent but suggested that they would consider offering cardiac catheterization to determine suitability.</p>
+        <p id="P24">In case 7, there was evidence of obstruction of right middle PV flow during balloon testing, visualizable in VR and correctly identified by interventionalist 1 (<xref rid="F3" ref-type="fig">Figure 3</xref>). Both interventionalists noted the high anomalous PV; however, interventionalist 1 felt it was small and could be left draining to the SVC, whereas interventionalist 2 identified that this was a large nondivertible vein.</p>
+        <p id="P25">In case 10, interventionalist 1 correctly identified that the right upper PV would be subject to obstruction if a stent was placed in the SVC, whereas interventionalist 2 felt CSC might be possible with PVP (<xref rid="F4" ref-type="fig">Figure 4</xref>).</p>
+      </sec>
+      <sec id="S15">
+        <title>Assessment for PVP</title>
+        <p id="P26">Using VR, the PVP strategy used intraprocedurally was correctly identified by interventionalist 1 in 9 of 12 cases and by interventionalist 2 in 8 of 12 cases (<xref rid="SD1" ref-type="supplementary-material">Table S2</xref>). PVP was performed in 5 of 12 cases. For all 5 cases where PVP was performed, this was correctly identified by both interventionalists using VR (<xref rid="F5" ref-type="fig">Figure 5</xref>). In cases where PVP was not performed, the interventionalists could identify this using VR in the majority of cases. Interventionalist 1 had 3 and interventionalist 2 had 4 false-positive assessments where using VR determined that PVP would be required, when this was not the case on diagnostic catheterization. No false-negative assessments regarding PVP were recorded.</p>
+      </sec>
+      <sec id="S16">
+        <title>Review Time</title>
+        <p id="P27">The median review time in VR for interventionalist 1 was 12 (interquartile range, 8) minutes and 5 (interquartile range, 3) minutes for interventionalist 2. The median total review time for both interventionalists was 7 minutes. The median time for data loading in VR was 82 (interquartile range, 32.8) seconds.</p>
+      </sec>
+      <sec id="S17">
+        <title>Questionnaire Results</title>
+        <p id="P28">The Likert scale questionnaire results are summarized in the <xref rid="T1" ref-type="table">Table</xref>, where 1 equates to the most negative response and 5 to the most positive.</p>
+        <p id="P29">In free-text comments, it was noted that VR can give additional clarity about the procedure compared with using multiplanar reformatted images or volume-rendered 3D reconstructions displayed on a flat screen. The ability to place stents within the VR model made it superior. Being able to visualize the whole volume of data in VR was felt to be beneficial and improved confidence in case selection compared with display on a 2D screen. However, they felt that user interaction for stent placement and adjustment could be improved. One interventionalist reported that they found 3D prints easier to use than VR, as holding a 3D print felt less cumbersome than VR; however, the other found VR easy to use following a shallow learning curve.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion" id="S18">
+      <title>Discussion</title>
+      <p id="P30">SVASDs are innately 3D lesions and highly heterogeneous between patients.<sup><xref rid="R4" ref-type="bibr">4</xref></sup> Interrogation of echocardiograms and cross-sectional imaging on a flat screen using multiplanar reformatted slices or 3D-rendered images is currently the standard of care. However, when assessing SVASDs for transcatheter closure, these methods are imperfect. When transesophageal echocardiography was used for patient selection, 40% of selected patients were found to be unsuitable for CSC due to PV obstruction at catheterization.<sup><xref rid="R10" ref-type="bibr">10</xref></sup> Review of CT and magnetic resonance imaging using multiplanar reformatted images on a flat screen has become the dominant imaging approach for case selection in CSC. However, this does not typically permit the insertion of virtual devices to simulate drainage of anomalous PVs following stent placement. Printed 3D models have provided an alternative means of assessment, allowing implantation of real stents to simulate the procedure. However, 3D printing is not universally available, involves additional time and costs to segment images print models, and wastes real devices such as stents within the models.</p>
+      <p id="P31">Our article demonstrates that the use of a VR system for patient selection in SVASD is feasible. All 15 cases were successfully loaded, visualized, and interrogated in the virtual environments directly from digital imaging and communication in medicine images. In addition, virtual adjustable stents were easily placed and manipulated within the VR environment. Both interventionalists were correct in their VR assessment of suitability in 13 of 15 cases, uncertain in 1 of 15, and incorrect in 1 of 15. This compared with the correct assessment being made in 12 of 15 cases using conventional imaging preprocedure. Using VR, where both interventionalists agreed on suitability for CSC, there was procedural success in all cases. Interestingly, where interventionalists disagreed (n=2) or were uncertain (n=1) about suitability, CSC was not feasible at catheterization.</p>
+      <p id="P32">The correct strategy for PVP was identified by interventionalist 1 in 9 of 12 cases (75%) and by interventionalist 2 in 8 of 12 cases (67%) using VR. There were 3 cases in which interventionalist 1 and 4 cases in which interventionalist 2 incorrectly assessed that they would perform PVP using VR when this was not required during catheterization. However, in all 5 cases where PVP was required intraprocedurally, this was always correctly identified in VR. Although there was no documented preprocedural prediction of PVP using standard imaging for comparison with VR, these results suggest that VR assessment may be a beneficial tool for predicting procedure modifications.</p>
+      <p id="P33">Both interventionalists reported that stent placement and adjustment in VR assisted their assessment of the various defects, enabling a rapid and more confident understanding of patient suitability for the procedure, especially in cases where 2D imaging is unclear. VR enables both realistic depth perception and intuitive interaction with virtual objects in 3D space through the use of a stereoscopic headset and hand-held controllers, which may provide a better understanding of the data compared with desktop modalities. Case reports have shown that VR can be used to plan CSC.<sup><xref rid="R11" ref-type="bibr">11</xref>,<xref rid="R12" ref-type="bibr">12</xref></sup> Tandon et al<sup><xref rid="R13" ref-type="bibr">13</xref></sup> incorporated cylindrical stents into VR segmentations from 28 patients with SVASD, determining that 40% of patients would be suitable for CSC and a further 25% would be equivocal due to possible obstruction of a small PV by the stent. They proposed that VR visualization could assist with patient selection in SVASD; however, patient outcomes were not reported and as such this conclusion cannot be validated. In this study, by comparing the review of imaging in Heart VR to catheter outcome data and standard imaging review, we have shown promising initial results for VR to potentially enhance procedure planning in CSC for SVASD.</p>
+      <p id="P34">Comments from study participants have highlighted key benefits of VR in procedure planning. Both interventionalists commented that the rapidity of image loading is a benefit of Heart VR compared with other 3D modalities, the majority of which require image segmentation, which takes 30 to 120 minutes depending on complexity.<sup><xref rid="R14" ref-type="bibr">14</xref></sup> The process of producing 3D prints is particularly time- and labor-intensive, necessitating an additional 35 hours for model printing and post-processing on top of segmentation time.<sup><xref rid="R15" ref-type="bibr">15</xref></sup> Most virtual modeling platforms, including commercially available VR programs, require segmentation either before image loading or within the VR environment. In contrast, Heart VR uses volume-rendering algorithms to load images directly from digital imaging and communication in medicine files and can produce solid or hollow models for interrogation in a median of 82 seconds. VR-embedded tools such as volume cropping also circumvent the need to destroy 3D-printed models to visualize internal structures. However, comments have also highlighted that improvements in the Heart VR system are still required to improve user-friendliness, including making stent placement and adjustment easier.</p>
+      <p id="P35">SVASD was selected as a study group for validation of VR imaging because of the complex and highly variable nature of the lesion and the pivotal nature of preprocedural imaging in appropriate case selection.<sup><xref rid="R9" ref-type="bibr">9</xref></sup> Due to the retrospective nature and size of this study, we did not set out to demonstrate patient benefit or superiority of VR. However, the results suggest that VR is not inferior to conventional imaging for case selection in CSC of SVASD and has the benefit of being a rapid way of visualizing and interacting with complex 3D imaging data. Heart VR and other extended reality platforms have the potential to enable the creation of bespoke devices for patients who might otherwise be unsuitable for CSC, further broadening the reach of this procedure.<sup><xref rid="R16" ref-type="bibr">16</xref></sup> Other groups have also used similar technologies for procedures such as transcatheter valve implantations<sup><xref rid="R17" ref-type="bibr">17</xref></sup> or in more complex structural interventions such as stenting of systemic venous baffle obstruction post-atrial switch procedure.<sup><xref rid="R18" ref-type="bibr">18</xref></sup></p>
+      <sec id="S19">
+        <title>Study Limitations</title>
+        <p id="P36">In 3 cases, following Heart VR review, both interventionalists had concerns regarding PV patency, which were not borne out intraprocedurally. In centers where PVP is not routine this might have led to these patients being incorrectly deemed unsuitable for CSC. Data suggest that in experienced centers, two-thirds of patients with superior SVASD are suitable to undergo CSC;<sup><xref rid="R9" ref-type="bibr">9</xref></sup> however, previous studies using 3D imaging to predict suitability have underestimated this proportion.<sup><xref rid="R4" ref-type="bibr">4</xref>,<xref rid="R13" ref-type="bibr">13</xref></sup> When Heart VR suggests the possibility of PV narrowing, it might improve the preparedness of the interventionalist to adopt a PVP strategy during catheterization, but it would not necessarily rule out successful CSC. A recent article with a larger experience showed that the feasibility of CSC for SVASD improved from 68% to 94% when a PVP strategy was used.<sup><xref rid="R19" ref-type="bibr">19</xref></sup> In addition, most imaging techniques do not take into account factors such as tissue distensibility, which might affect the procedure outcome, and this remains a limitation of these techniques.</p>
+        <p id="P37">This study focused specifically on whether VR could assist with the assessment of PV anatomy; however, interventionalists were not specifically asked about residual shunt at the caudal end of the stent, another major factor determining procedural success in CSC. The VR stent models in this experiment were of standard length, and being unable to adjust this would make the assessment of residual shunt difficult. Future advances in VR stents and devices, including the ability to model for stent shortening and flare, may further improve accuracy.</p>
+        <p id="P38">The retrospective design of this study was selected because performing data collection prospectively was prohibited due to pending ethical and regulatory approvals of Heart VR, potentially leading to selection bias. The small sample size does not allow conclusions to be drawn regarding the superiority or inferiority of VR in this context. A prospective study with a larger patient cohort would be required to definitively determine the superiority or inferiority of VR to conventional imaging. To our knowledge, such a study has not been performed on any extended reality platform for cardiac structural intervention.<sup><xref rid="R20" ref-type="bibr">20</xref></sup></p>
+      </sec>
+    </sec>
+    <sec sec-type="conclusions" id="S20">
+      <title>Conclusions</title>
+      <p id="P39">Detailed preprocedure assessment has been recognized as a key factor in achieving a successful outcome in CSC of SVASD. In this study, we have demonstrated that the Heart VR software enables accurate and reliable preprocedure assessment. In addition, the rapid loading of data directly from digital imaging and communication in medicine files enables imaging review and decision-making in a matter of minutes. From our results, VR could be a valuable imaging tool for stratifying patient suitability for CSC and assessing procedure modifications, with the potential to reduce unnecessary procedures and save time.</p>
+    </sec>
+    <sec sec-type="supplementary-material" id="SM">
+      <title>Supplementary Material</title>
+      <supplementary-material id="SD1" position="float" content-type="local-data">
+        <label>Supplemental Material</label>
+        <media xlink:href="EMS199362-supplement-Supplemental_Material.pdf" id="d67e508" position="anchor"/>
+      </supplementary-material>
+    </sec>
+  </body>
+  <back>
+    <ack id="S24">
+      <title>Sources of Funding</title>
+      <p>This study was supported by the British Heart Foundation (BHF) funded 3D Heart Project (TA/F/20/210021) and the Evelina London Children’s Charity. It was also supported by previous funding from the National Institute for Health Research (NIHR) i4i grant (II-LA-0716–20001). The research was funded/supported by the NIHR Biomedical Research Center based at Guy’s and St Thomas’ NHS Foundation Trust and King’s College London and supported by the NIHR Clinical Research Facility at Guy’s and St Thomas’. The views expressed are those of the authors and do not necessarily reflect those of the National Health Service, BHF, NIHR, or the Department of Health.</p>
+    </ack>
+    <fn-group>
+      <fn id="FN1" fn-type="COI-statement">
+        <p id="P40">
+<bold>Disclosures</bold>
+</p>
+        <p id="P41">J.M. Simpson, Dr Schnabel, and K. Pushparajah are founder directors of XRnostics, a spinout company of King’s College London and Guy’s and St Thomas Hospitals Trust, which focuses on the use of extended reality imaging to assist in planning cardiac procedures. The collection and analysis of the data in this article predates the spin-off of the company. The other authors report no conflicts.</p>
+      </fn>
+    </fn-group>
+    <glossary>
+      <title>Nonstandard Abbreviations and Acronyms</title>
+      <def-list>
+        <def-item>
+          <term>2D</term>
+          <def>
+            <p>2 dimensional</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>3D</term>
+          <def>
+            <p>3 dimensional</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>CSC</term>
+          <def>
+            <p>covered stent correction</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>CT</term>
+          <def>
+            <p>computed tomography</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>PV</term>
+          <def>
+            <p>pulmonary vein</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>PVP</term>
+          <def>
+            <p>pulmonary vein protection</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>SVASD</term>
+          <def>
+            <p>sinus venosus atrial septal defect</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>SVC</term>
+          <def>
+            <p>superior vena cava</p>
+          </def>
+        </def-item>
+        <def-item>
+          <term>VR</term>
+          <def>
+            <p>virtual reality</p>
+          </def>
+        </def-item>
+      </def-list>
+    </glossary>
+    <ref-list>
+      <ref id="R1">
+        <label>1</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Tretter</surname><given-names>JT</given-names></name>
+<name><surname>Chikkabyrappa</surname><given-names>S</given-names></name>
+<name><surname>Spicer</surname><given-names>DE</given-names></name>
+<name><surname>Backer</surname><given-names>CL</given-names></name>
+<name><surname>Mosca</surname><given-names>RS</given-names></name>
+<name><surname>Anderson</surname><given-names>RH</given-names></name>
+<name><surname>Bhatla</surname><given-names>P</given-names></name>
+</person-group><article-title>Understanding the spectrum of sinus venosus interatrial communications</article-title><source>Cardiol Young</source><year>2017</year><volume>27</volume><fpage>418</fpage><lpage>426</lpage><pub-id pub-id-type="pmid">27161562</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Garg</surname><given-names>G</given-names></name>
+<name><surname>Tyagi</surname><given-names>H</given-names></name>
+<name><surname>Radha</surname><given-names>AS</given-names></name>
+</person-group><article-title>Transcatheter closure of sinus venosus atrial septal defect with anomalous drainage of right upper pulmonary vein into superior vena cava–an innovative technique</article-title><source>Catheter Cardiovasc Interv</source><year>2014</year><volume>84</volume><fpage>473</fpage><lpage>477</lpage><pub-id pub-id-type="pmid">24753393</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Hansen Jan</surname><given-names>H</given-names></name>
+<name><surname>Duong</surname><given-names>P</given-names></name>
+<name><surname>Jivanji Salim</surname><given-names>GM</given-names></name>
+<name><surname>Jones</surname><given-names>M</given-names></name>
+<name><surname>Kabir</surname><given-names>S</given-names></name>
+<name><surname>Butera</surname><given-names>G</given-names></name>
+<name><surname>Qureshi Shakeel</surname><given-names>A</given-names></name>
+<name><surname>Rosenthal</surname><given-names>E</given-names></name>
+</person-group><article-title>Transcatheter correction of superior sinus venosus atrial septal defects as an alternative to surgical treatment</article-title><source>J Am Coll Cardiol</source><year>2020</year><volume>75</volume><fpage>1266</fpage><lpage>1278</lpage><pub-id pub-id-type="pmid">32192652</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Relan</surname><given-names>J</given-names></name>
+<name><surname>Gupta</surname><given-names>SK</given-names></name>
+<name><surname>Rajagopal</surname><given-names>R</given-names></name>
+<name><surname>Ramakrishnan</surname><given-names>S</given-names></name>
+<name><surname>Gulati</surname><given-names>GS</given-names></name>
+<name><surname>Kothari</surname><given-names>SS</given-names></name>
+<name><surname>Saxena</surname><given-names>A</given-names></name>
+<name><surname>Sharma</surname><given-names>S</given-names></name>
+<name><surname>Rajashekar</surname><given-names>P</given-names></name>
+<name><surname>Anderson</surname><given-names>RH</given-names></name>
+</person-group><article-title>Clarifying the anatomy of the superior sinus venosus defect</article-title><source>Heart</source><year>2022</year><volume>108</volume><fpage>689</fpage><lpage>694</lpage><pub-id pub-id-type="pmid">34417206</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Thakkar</surname><given-names>AN</given-names></name>
+<name><surname>Chinnadurai</surname><given-names>P</given-names></name>
+<name><surname>Breinholt</surname><given-names>JP</given-names></name>
+<name><surname>Lin</surname><given-names>CH</given-names></name>
+</person-group><article-title>Transcatheter closure of a sinus venosus atrial septal defect using 3D printing and image fusion guidance</article-title><source>Catheter Cardiovasc Interv</source><year>2018</year><volume>92</volume><fpage>353</fpage><lpage>357</lpage><pub-id pub-id-type="doi">10.1002/ccd.27645</pub-id><pub-id pub-id-type="pmid">29897667</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Velasco Forte</surname><given-names>MN</given-names></name>
+<name><surname>Byrne</surname><given-names>N</given-names></name>
+<name><surname>Valverde</surname><given-names>I</given-names></name>
+<name><surname>Gomez Ciriza</surname><given-names>G</given-names></name>
+<name><surname>Hermuzi</surname><given-names>A</given-names></name>
+<name><surname>Prachasilchai</surname><given-names>P</given-names></name>
+<name><surname>Mainzer</surname><given-names>G</given-names></name>
+<name><surname>Pushparajah</surname><given-names>K</given-names></name>
+<name><surname>Henningsson</surname><given-names>M</given-names></name>
+<name><surname>Hussain</surname><given-names>T</given-names></name>
+<etal/>
+</person-group><article-title>Interventional correction of sinus venosus atrial septal defect and partial anomalous pulmonary venous drainage: procedural planning using 3D printed models</article-title><source>JACC Cardiovasc Imaging</source><year>2018</year><volume>11</volume><fpage>275</fpage><lpage>278</lpage><pub-id pub-id-type="pmid">28917677</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <element-citation publication-type="book">
+          <collab>The Royal College of Radiologists</collab>
+          <source>Picture Archiving and Communication Systems (PACS) and Guidelines on Diagnostic Display Devices</source>
+          <edition>3rd ed</edition>
+          <publisher-name>The Royal College of Radiologists</publisher-name>
+          <year>2019</year>
+        </element-citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Deng</surname><given-names>S</given-names></name>
+<name><surname>Wheeler</surname><given-names>G</given-names></name>
+<name><surname>Toussaint</surname><given-names>N</given-names></name>
+<name><surname>Munroe</surname><given-names>L</given-names></name>
+<name><surname>Bhattacharya</surname><given-names>S</given-names></name>
+<name><surname>Sajith</surname><given-names>G</given-names></name>
+<name><surname>Lin</surname><given-names>E</given-names></name>
+<name><surname>Singh</surname><given-names>E</given-names></name>
+<name><surname>Chu</surname><given-names>KYK</given-names></name>
+<name><surname>Kabir</surname><given-names>S</given-names></name>
+<etal/>
+</person-group><article-title>A virtual reality system for improved image-based planning of complex cardiac procedures</article-title><source>J Imaging</source><year>2021</year><volume>7</volume><fpage>151</fpage><pub-id pub-id-type="doi">10.3390/jimaging7080151</pub-id><pub-id pub-id-type="pmid">34460787</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Rosenthal</surname><given-names>E</given-names></name>
+<name><surname>Qureshi</surname><given-names>SA</given-names></name>
+<name><surname>Jones</surname><given-names>M</given-names></name>
+<name><surname>Butera</surname><given-names>G</given-names></name>
+<name><surname>Sivakumar</surname><given-names>K</given-names></name>
+<name><surname>Boudjemline</surname><given-names>Y</given-names></name>
+<name><surname>Hijazi</surname><given-names>ZM</given-names></name>
+<name><surname>Almaskary</surname><given-names>S</given-names></name>
+<name><surname>Ponder</surname><given-names>RD</given-names></name>
+<name><surname>Salem</surname><given-names>MM</given-names></name>
+<etal/>
+</person-group><article-title>Correction of sinus venosus atrial septal defects with the 10 zig covered Cheatham-platinum stent – an international registry</article-title><source>Catheter Cardiovasc Interv</source><year>2021</year><volume>98</volume><fpage>128</fpage><lpage>136</lpage><pub-id pub-id-type="pmid">33909945</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Sivakumar</surname><given-names>K</given-names></name>
+<name><surname>Qureshi</surname><given-names>S</given-names></name>
+<name><surname>Pavithran</surname><given-names>S</given-names></name>
+<name><surname>Vaidyanathan</surname><given-names>S</given-names></name>
+<name><surname>Rajendran</surname><given-names>M</given-names></name>
+</person-group><article-title>Simple diagnostic tools may guide transcatheter closure of superior sinus venosus defects without advanced imaging techniques</article-title><source>Circ Cardiovasc Interv</source><year>2020</year><volume>13</volume><elocation-id>e009833</elocation-id><pub-id pub-id-type="pmid">33233933</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Butera</surname><given-names>G</given-names></name>
+<name><surname>Sturla</surname><given-names>F</given-names></name>
+<name><surname>Pluchinotta</surname><given-names>FR</given-names></name>
+<name><surname>Caimi</surname><given-names>A</given-names></name>
+<name><surname>Carminati</surname><given-names>M</given-names></name>
+</person-group><article-title>Holographic augmented reality and 3D printing for advanced planning of sinus venosus ASD/partial anomalous pulmonary venous return percutaneous management</article-title><source>JACC Cardiovasc Interv</source><year>2019</year><volume>12</volume><fpage>1389</fpage><lpage>1391</lpage><pub-id pub-id-type="pmid">31103542</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Sivakumar</surname><given-names>K</given-names></name>
+<name><surname>Sagar</surname><given-names>P</given-names></name>
+<name><surname>Thejaswi</surname><given-names>P</given-names></name>
+</person-group><article-title>Virtual reality software aids precise transcatheter closure of sinus venosus defect using covered stent without 3D printing</article-title><source>Pediatr Cardiol</source><year>2024</year><volume>45</volume><fpage>939</fpage><lpage>941</lpage><pub-id pub-id-type="pmid">38372779</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R13">
+        <label>13</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Tandon</surname><given-names>A</given-names></name>
+<name><surname>Burkhardt</surname><given-names>BEU</given-names></name>
+<name><surname>Batsis</surname><given-names>M</given-names></name>
+<name><surname>Zellers</surname><given-names>TM</given-names></name>
+<name><surname>Velasco Forte</surname><given-names>MN</given-names></name>
+<name><surname>Valverde</surname><given-names>I</given-names></name>
+<name><surname>McMahan</surname><given-names>RP</given-names></name>
+<name><surname>Guleserian</surname><given-names>KJ</given-names></name>
+<name><surname>Greil</surname><given-names>GF</given-names></name>
+<name><surname>Hussain</surname><given-names>T</given-names></name>
+</person-group><article-title>Sinus venosus defects: anatomic variants and transcatheter closure feasibility using virtual reality planning</article-title><source>JACC Cardiovasc Imaging</source><year>2019</year><volume>12</volume><fpage>921</fpage><lpage>924</lpage><pub-id pub-id-type="pmid">30553676</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R14">
+        <label>14</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Chen</surname><given-names>C</given-names></name>
+<name><surname>Qin</surname><given-names>C</given-names></name>
+<name><surname>Qiu</surname><given-names>H</given-names></name>
+<name><surname>Tarroni</surname><given-names>G</given-names></name>
+<name><surname>Duan</surname><given-names>J</given-names></name>
+<name><surname>Bai</surname><given-names>W</given-names></name>
+<name><surname>Rueckert</surname><given-names>D</given-names></name>
+</person-group><article-title>Deep learning for cardiac image segmentation: a review</article-title><source>Front Cardiovasc Med</source><year>2020</year><volume>7</volume><fpage>25</fpage><pub-id pub-id-type="doi">10.3389/fcvm.2020.00025</pub-id><pub-id pub-id-type="pmid">32195270</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R15">
+        <label>15</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Valverde</surname><given-names>I</given-names></name>
+<name><surname>Gomez-Ciriza</surname><given-names>G</given-names></name>
+<name><surname>Hussain</surname><given-names>T</given-names></name>
+<name><surname>Suarez-Mejias</surname><given-names>C</given-names></name>
+<name><surname>Velasco-Forte</surname><given-names>MN</given-names></name>
+<name><surname>Byrne</surname><given-names>N</given-names></name>
+<name><surname>Ordoñez</surname><given-names>A</given-names></name>
+<name><surname>Gonzalez-Calle</surname><given-names>A</given-names></name>
+<name><surname>Anderson</surname><given-names>D</given-names></name>
+<name><surname>Hazekamp</surname><given-names>MG</given-names></name>
+<etal/>
+</person-group><article-title>Three-dimensional printed models for surgical planning of complex congenital heart defects: an international multicentre study</article-title><source>Eur J Cardiothorac Surg</source><year>2017</year><volume>52</volume><fpage>1139</fpage><lpage>1148</lpage><pub-id pub-id-type="pmid">28977423</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R16">
+        <label>16</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Kim</surname><given-names>B</given-names></name>
+<name><surname>Nguyen</surname><given-names>P</given-names></name>
+<name><surname>Loke</surname><given-names>YH</given-names></name>
+<name><surname>Cleveland</surname><given-names>V</given-names></name>
+<name><surname>Liu</surname><given-names>X</given-names></name>
+<name><surname>Mass</surname><given-names>P</given-names></name>
+<name><surname>Hibino</surname><given-names>N</given-names></name>
+<name><surname>Olivieri</surname><given-names>L</given-names></name>
+<name><surname>Krieger</surname><given-names>A</given-names></name>
+</person-group><article-title>Virtual reality cardiac surgical planning software (CorFix) for designing patient-specific vascular grafts: development and pilot usability study</article-title><source>JMIR Cardio</source><year>2022</year><volume>6</volume><elocation-id>e35488</elocation-id><pub-id pub-id-type="doi">10.2196/35488</pub-id><pub-id pub-id-type="pmid">35713940</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R17">
+        <label>17</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Ruyra</surname><given-names>X</given-names></name>
+<name><surname>Permanyer</surname><given-names>E</given-names></name>
+<name><surname>Huguet</surname><given-names>M</given-names></name>
+<name><surname>Maldonado</surname><given-names>G</given-names></name>
+</person-group><article-title>Use of virtual reality for procedural planning of transcatheter aortic valve replacement</article-title><source>Interact Cardiovasc Thorac Surg</source><year>2022</year><volume>35</volume><elocation-id>ivac248</elocation-id><pub-id pub-id-type="doi">10.1093/icvts/ivac248</pub-id><pub-id pub-id-type="pmid">36205608</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R18">
+        <label>18</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Pasqualin</surname><given-names>G</given-names></name>
+<name><surname>Sturla</surname><given-names>F</given-names></name>
+<name><surname>D’Aiello</surname><given-names>AF</given-names></name>
+<name><surname>Chessa</surname><given-names>M</given-names></name>
+</person-group><article-title>Mixed reality navigation of a systemic venous baffle obstruction: unravelling the percutaneous approach in atrial switch operation</article-title><source>Eur Heart J</source><year>2021</year><volume>42</volume><elocation-id>4284</elocation-id><pub-id pub-id-type="pmid">33246335</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R19">
+        <label>19</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Sagar</surname><given-names>P</given-names></name>
+<name><surname>Sivakumar</surname><given-names>K</given-names></name>
+<name><surname>Thejaswi</surname><given-names>P</given-names></name>
+<name><surname>Rajendran</surname><given-names>M</given-names></name>
+</person-group><article-title>Transcatheter covered stent exclusion of superior sinus venosus defects</article-title><source>J Am Coll Cardiol</source><year>2024</year><volume>83</volume><fpage>2179</fpage><lpage>2192</lpage><pub-id pub-id-type="pmid">38811095</pub-id>
+</element-citation>
+      </ref>
+      <ref id="R20">
+        <label>20</label>
+        <element-citation publication-type="journal"><person-group person-group-type="author">
+<name><surname>Stephenson</surname><given-names>N</given-names></name>
+<name><surname>Pushparajah</surname><given-names>K</given-names></name>
+<name><surname>Wheeler</surname><given-names>G</given-names></name>
+<name><surname>Deng</surname><given-names>S</given-names></name>
+<name><surname>Schnabel</surname><given-names>JA</given-names></name>
+<name><surname>Simpson</surname><given-names>JM</given-names></name>
+</person-group><article-title>Extended reality for procedural planning and guidance in structural heart disease – a review of the state-of-the-art</article-title><source>Int J Cardiovasc Imaging</source><year>2023</year><volume>39</volume><fpage>1405</fpage><lpage>1419</lpage><pub-id pub-id-type="doi">10.1007/s10554-023-02823-z</pub-id><pub-id pub-id-type="pmid">37103667</pub-id>
+</element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <boxed-text id="BX1" position="float">
+      <sec id="S21">
+        <title>What is known</title>
+        <p><list list-type="bullet" id="L1"><list-item><p>Superior sinus venosus atrial septal defects can be successfully treated using covered stent correction instead of surgery.</p></list-item><list-item><p>The wide anatomic variation necessitates preprocedure planning using 3-dimensional imaging to predetermine suitability.</p></list-item><list-item><p>Virtual reality is a technology that can assist with 3-dimensional understanding of complex cardiac lesions.</p></list-item></list>
+</p>
+      </sec>
+      <sec id="S22">
+        <title>What the study adds</title>
+        <p><list list-type="bullet" id="L2"><list-item><p>Virtual reality was an effective and rapid tool for procedural planning of covered stent correction of sinus venosus atrial septal defect</p></list-item><list-item><p>Virtual reality could offer a cheaper and quicker alternative to 3-dimensional printing for procedure planning in this lesion.</p></list-item></list>
+</p>
+      </sec>
+    </boxed-text>
+    <fig position="float" id="F1">
+      <label>Figure 1</label>
+      <caption>
+        <title>Virtual stent with labeled diameters.</title>
+      </caption>
+      <graphic xlink:href="EMS199362-f001" position="float"/>
+    </fig>
+    <fig position="float" id="F2">
+      <label>Figure 2</label>
+      <caption>
+        <title>Case 9.</title>
+        <p><bold>A</bold>, Anterior view of superior vena cava (SVC) and pulmonary vein (PV) anatomy in virtual reality (VR), showing entry of a large right upper PV (RUPV) and right middle PVs (RMPVs) into the SVC. <bold>B</bold>, Superior view: internal view showing the entry point of the RUPV to the right and superior to the interatrial communication. <bold>C</bold>, VR internal view from the left showing the point of potential obstruction of the PV pathway (red arrow) after stent insertion. <bold>D</bold>, Superior view with virtual stent in situ showing a narrow pathway (red arrow) of RUPV through to the left atrium (LA) and potential for obstruction. <bold>E</bold>, Angiogram in anteroposterior (AP) projection with 20-mm AltoSa-XL balloon inflated in the SVC with simultaneous RUPV angiography showing hold-up of contrast in the RUPV, signifying obstruction. <bold>F</bold>, Angiogram from left anterior oblique (LAO) projection showing (L) a partially inflated AltoSa-XL balloon in the SVC and simultaneous Atlas Gold 12×4 mm balloon in the RUPV, and (R) after full inflation of the SVC balloon showing significant posterior displacement of the RUPV balloon, signifying that PV obstruction would likely occur despite balloon protection. Ao indicates aorta; RA, right atrium; and RV, right ventricle.</p>
+      </caption>
+      <graphic xlink:href="EMS199362-f002" position="float"/>
+    </fig>
+    <fig position="float" id="F3">
+      <label>Figure 3</label>
+      <caption>
+        <title>Case 7.</title>
+        <p><bold>A</bold>, Anterior external view in virtual reality (VR) showing analogous pulmonary vein (PV) anatomy demonstrated on angiography in <bold>B</bold>, with a large upper right upper PV (RUPV) entering high in the superior vena cava (SVC) and a separate lower RUPV entering just below, and both veins entering too superior to be diverted to the left atrium (LA) after stenting. <bold>C</bold>, VR view from the right toward the orifice of the right middle PV (RMPV) into the SVC with a virtual SVC stent in situ there is potential for at least partial obstruction of the RMPV, with a small pathway (red arrow) posterior to the stent to the LA. <bold>D</bold>, Angiographic image in the left anterior oblique (LAO) view showing hold-up of contrast in the RMPV after selective angiography with SVC balloon inflation, with the small PV pathway (red arrow) seen. RA indicates right atrium; and RPA, right pulmonary artery.</p>
+      </caption>
+      <graphic xlink:href="EMS199362-f003" position="float"/>
+    </fig>
+    <fig position="float" id="F4">
+      <label>Figure 4</label>
+      <caption>
+        <title>Case 10.</title>
+        <p><bold>A</bold>, Anterior view in virtual reality (VR) showing a separate right upper pulmonary vein (RUPV) entering a larger pulmonary vein (PV) confluence in the superior vena cava–right atrial (SVC-RA) junction. <bold>B</bold>, Internal view in VR from the right showing the PV confluence entering into the SVC-RA junction with a virtual stent in situ, resulting in a narrow PV pathway through to the left atrium (LA; red arrow). <bold>C</bold>, Superior view in VR with the SVC stent in situ, showing a narrow PV pathway through to the LA. <bold>D</bold>, Left anterior oblique and (<bold>E</bold>) anteroposterior (AP) angiographic projections after right PV injection, showing hold-up of contrast in the RUPV and the small PV pathway to the LA (red arrow) after 34 mm balloon inflation in the SVC. <bold>F</bold>, AP projection after right PV injection showing ongoing obstruction despite downsizing the SVC balloon to 26 mm. RA indicates right atrium; RAA, right atrial appendage; and RLPV, right lower pulmonary vein.</p>
+      </caption>
+      <graphic xlink:href="EMS199362-f004" position="float"/>
+    </fig>
+    <fig position="float" id="F5">
+      <label>Figure 5</label>
+      <caption>
+        <title>Case 1.</title>
+        <p><bold>A</bold>, Multiple right upper pulmonary veins (RUPVs) and right middle pulmonary veins (RMPVs) forming a large confluence in the superior vena cava (SVC). <bold>B</bold>, Left sagittal view: internal anatomy of the SVC–right atrial junction, with multiple RUPVs and RMPVs forming the confluence and an additional small RMPV entering at the level of the sinus venosus defect (dashed line) and right lower pulmonary vein (RLPV) connecting normally to the left atrium (LA). <bold>C</bold>, Virtual stent in situ: the pulmonary vein (PV) confluence would need to drain posteriorly around the stent to enter the LA. <bold>D</bold>, Superior view showing the virtual stent in the SVC at the level of the PV confluence, with a relatively narrow pathway (red arrow) for drainage of the multiple anomalous PVs. RA indicates right atrium; and RPA, right pulmonary artery.</p>
+      </caption>
+      <graphic xlink:href="EMS199362-f005" position="float"/>
+    </fig>
+    <table-wrap position="float" id="T1">
+      <label>Table 1</label>
+      <caption>
+        <title>Questionnaire Responses on Use of Virtual Reality for Covered Stent Correction of Sinus Venosus Defects</title>
+      </caption>
+      <table frame="box" rules="all">
+        <thead>
+          <tr>
+            <th valign="top" align="left" style="border-top: 1px solid #231f20;border-bottom: 1px solid #231f20;border-right: 1px solid #231f20;border-left: 1px solid #231f20;background: #adafb2" rowspan="1" colspan="1"/>
+            <th valign="top" align="left" style="border-top: 1px solid #231f20;border-right: 1px solid #231f20;border-bottom: 1px solid #231f20;background: #adafb2" rowspan="1" colspan="1">Interventionalist 1</th>
+            <th valign="top" align="left" style="border-top: 1px solid #231f20;border-right: 1px solid #231f20;border-bottom: 1px solid #231f20;background: #adafb2" rowspan="1" colspan="1">Interventionalist 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td valign="top" align="left" style="border-right: 1px solid #231f20;border-bottom: 1px solid #231f20;border-left: 1px solid #231f20" rowspan="1" colspan="1">Overall ease of use</td>
+            <td valign="top" align="left" style="border-bottom: 1px solid #231f20;border-right: 1px solid #231f20" rowspan="1" colspan="1">3</td>
+            <td valign="top" align="left" style="border-bottom: 1px solid #231f20;border-right: 1px solid #231f20" rowspan="1" colspan="1">4</td>
+          </tr>
+          <tr>
+            <td valign="top" align="left" style="border-right: 1px solid #231f20;border-bottom: 1px solid #231f20;border-left: 1px solid #231f20" rowspan="1" colspan="1">Image quality</td>
+            <td valign="top" align="left" style="border-bottom: 1px solid #231f20;border-right: 1px solid #231f20" rowspan="1" colspan="1">4</td>
+            <td valign="top" align="left" style="border-bottom: 1px solid #231f20;border-right: 1px solid #231f20" rowspan="1" colspan="1">5</td>
+          </tr>
+          <tr>
+            <td valign="top" align="left" style="border-right: 1px solid #231f20;border-bottom: 1px solid #231f20;border-left: 1px solid #231f20" rowspan="1" colspan="1">Ease of stent placement</td>
+            <td valign="top" align="left" style="border-bottom: 1px solid #231f20;border-right: 1px solid #231f20" rowspan="1" colspan="1">4</td>
+            <td valign="top" align="left" style="border-bottom: 1px solid #231f20;border-right: 1px solid #231f20" rowspan="1" colspan="1">4</td>
+          </tr>
+          <tr>
+            <td valign="top" align="left" style="border-right: 1px solid #231f20;border-bottom: 1px solid #231f20;border-left: 1px solid #231f20" rowspan="1" colspan="1">Ease of stent size adjustment</td>
+            <td valign="top" align="left" style="border-bottom: 1px solid #231f20;border-right: 1px solid #231f20" rowspan="1" colspan="1">3</td>
+            <td valign="top" align="left" style="border-bottom: 1px solid #231f20;border-right: 1px solid #231f20" rowspan="1" colspan="1">3</td>
+          </tr>
+          <tr>
+            <td valign="top" align="left" style="border-right: 1px solid #231f20;border-bottom: 1px solid #231f20;border-left: 1px solid #231f20" rowspan="1" colspan="1">Added value in assessing PV routability</td>
+            <td valign="top" align="left" style="border-bottom: 1px solid #231f20;border-right: 1px solid #231f20" rowspan="1" colspan="1">4</td>
+            <td valign="top" align="left" style="border-bottom: 1px solid #231f20;border-right: 1px solid #231f20" rowspan="1" colspan="1">5</td>
+          </tr>
+          <tr>
+            <td valign="top" align="left" style="border-right: 1px solid #231f20;border-bottom: 1px solid #231f20;border-left: 1px solid #231f20" rowspan="1" colspan="1">Improved confidence using Heart VR compared with 2D screen</td>
+            <td valign="top" align="left" style="border-bottom: 1px solid #231f20;border-right: 1px solid #231f20" rowspan="1" colspan="1">4</td>
+            <td valign="top" align="left" style="border-bottom: 1px solid #231f20;border-right: 1px solid #231f20" rowspan="1" colspan="1">4</td>
+          </tr>
+          <tr>
+            <td valign="top" align="left" style="border-right: 1px solid #231f20;border-bottom: 1px solid #231f20;border-left: 1px solid #231f20" rowspan="1" colspan="1">Heart VR is less useful than 3D-printed models</td>
+            <td valign="top" align="left" style="border-bottom: 1px solid #231f20;border-right: 1px solid #231f20" rowspan="1" colspan="1">4</td>
+            <td valign="top" align="left" style="border-bottom: 1px solid #231f20;border-right: 1px solid #231f20" rowspan="1" colspan="1">1</td>
+          </tr>
+          <tr>
+            <td valign="top" align="left" style="border-right: 1px solid #231f20;border-bottom: 1px solid #231f20;border-left: 1px solid #231f20" rowspan="1" colspan="1">Time saving of Heart VR compared with 2D screen review</td>
+            <td valign="top" align="left" style="border-bottom: 1px solid #231f20;border-right: 1px solid #231f20" rowspan="1" colspan="1">3</td>
+            <td valign="top" align="left" style="border-bottom: 1px solid #231f20;border-right: 1px solid #231f20" rowspan="1" colspan="1">4</td>
+          </tr>
+          <tr>
+            <td valign="top" align="left" style="border-right: 1px solid #231f20;border-bottom: 1px solid #231f20;border-left: 1px solid #231f20" rowspan="1" colspan="1">Time saving compared with 3D prints</td>
+            <td valign="top" align="left" style="border-bottom: 1px solid #231f20;border-right: 1px solid #231f20" rowspan="1" colspan="1">4</td>
+            <td valign="top" align="left" style="border-bottom: 1px solid #231f20;border-right: 1px solid #231f20" rowspan="1" colspan="1">4</td>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="TFN1">
+          <p id="P42">2D indicates 2 dimensional; 3D, 3 dimensional; PV, pulmonary vein; and VR, virtual reality.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+  </floats-group>
+</article>

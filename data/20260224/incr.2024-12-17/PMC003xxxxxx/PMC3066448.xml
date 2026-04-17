@@ -1,0 +1,474 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Archiving and Interchange DTD v2.3 20070202//EN" "archivearticle.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" xml:lang="EN">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">9007564</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">38424</journal-id>
+      <journal-id journal-id-type="nlm-ta">Rev Med Microbiol</journal-id>
+      <journal-title>Reviews in medical microbiology : a journal of the Pathological Society of Great Britain and Ireland</journal-title>
+      <issn pub-type="ppub">0954-139X</issn>
+      <issn pub-type="epub">1473-5601</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">21461125</article-id>
+      <article-id pub-id-type="pmc">3066448</article-id>
+      <article-id pub-id-type="doi">10.1097/MRM.0b013e3283393523</article-id>
+      <article-id pub-id-type="manuscript">NIHMS203553</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Recombinant Adenovirus (AdV) Type 3 and Type 14 Isolated From a Fatal Case of Pneumonia</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Halstead</surname>
+            <given-names>Diane C.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gray</surname>
+            <given-names>Gregory C.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Meyer</surname>
+            <given-names>Kenneth S.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Stanciu</surname>
+            <given-names>Sebastian R.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A4">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gorospe</surname>
+            <given-names>William C.</given-names>
+          </name>
+          <xref ref-type="aff" rid="A4">4</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="A1"><label>1</label>Jacksonville Pathology Consultants, P.A./Baptist Health Infectious Disease Laboratories, Jacksonville, Florida</aff>
+      <aff id="A2"><label>2</label>University of Iowa College of Public Health, Coralville, Iowa</aff>
+      <aff id="A3"><label>3</label>Baptist Medical Center, Jacksonville, FL</aff>
+      <aff id="A4"><label>4</label>First Coast Infectious Disease Consultants, Jacksonville, FL</aff>
+      <author-notes>
+        <corresp id="CR1">Corresponding author: Diane C. Halstead, PhD, D(ABMM), F(AAM) Jacksonville Pathology Consultants, P.A./Baptist Health Infectious Disease Laboratories, Main 3 North 800 Prudential Drive Jacksonville, FL 32207 (904) 202.2166 phone (904) 202.2795 fax <email>s65@fdn.com</email></corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>23</day>
+        <month>10</month>
+        <year>2010</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>4</month>
+        <year>2010</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>1</day>
+        <month>4</month>
+        <year>2011</year>
+      </pub-date>
+      <volume>21</volume>
+      <issue>2</issue>
+      <fpage>28</fpage>
+      <lpage>30</lpage>
+      <permissions>
+        <license>
+          <p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P1">We report a fatal case of pneumonia apparently due to adenovirus infection in a 53-year-old male who had recently returned from Iraq. The isolate was identified by sequence analysis as AdV3 and AdV14. Based on restriction analysis (REA), the virus appeared to be a recombinant virus containing properties of both AdV3 and AdV14 rather than a coinfection with these two viruses.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>fatal pneumonia</kwd>
+        <kwd>recombinant adenovirus infection</kwd>
+        <kwd>molecular identification</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="cases" id="S1">
+      <title>CASE REPORT</title>
+      <p id="P2">A 53-year-old married electrical engineer was initially seen by his primary care physician on June 13, 2007, with a five day history of non-productive cough, myalgias, malaise, chills and fever of 102°F. He was prescribed oral ciprofloxacin 500 mg twice a day for pharyngitis and otitis media. The patient failed to improve and sought treatment the following day at a local Urgent Care Center where a temperature of 104.6°F was registered. He was referred to the emergency department of a local hospital with chief complaints of severe shortness of breath, chills, and fever. The patient recently returned from a three week stay in Iraq where he repaired electrical equipment for the U.S. government. He had no sick contacts or toxic exposures while away, but after returning to the U.S., a coworker had flu-like symptoms and a relative had a respiratory illness that resolved without antibiotics.</p>
+      <p id="P3">Upon admission, the patient had a temperature of 102.4°F with a blood pressure of 97/58 mg Hb, respiratory rate of 20 breaths per minute, pulse of 95 beats per minute and an oxygen saturation of 95%. He appeared acutely ill and demonstrated bilateral crackles in the mid and lower lung fields. The remainder of the physical examination was unremarkable.</p>
+      <p id="P4">Pertinent laboratory testing revealed negative results for urine legionella antigen, mononucleosis screen, group A <italic>Streptococcus</italic> (GAS) throat culture, and blood cultures. Sputum revealed a few colonies of an unidentified gram-negative bacillus and <italic>Candida albicans.</italic> His white blood cell count was 3.5 × 10<sup>3</sup>/mm<sup>3</sup> with 87% neutrophils and 10% lymphocytes, and a normal absolute neutrophil count, platelet count of 75,000 × 10<sup>9</sup>/L and a creatinine of 1.5 mg/dL. A disseminated intravascular coagulation profile was negative. The chest x-ray revealed a nodular, wedge-shaped lingular infiltrate with left-sided volume loss.</p>
+      <p id="P5">The initial assessment of severe left-sided pneumonia led to admission to the ICU where intravenous ceftriaxone and azithromycin along with antitussive medication and bronchodilators were prescribed. His white blood cell count decreased to 2.5 × 10<sup>3</sup>/mm<sup>3</sup> with 85% neutrophils, 10% lymphocytes. Platelets were low at 56,000 × 10<sup>9</sup>/L and his hemoglobin and hematocrit were 13 gm/dL and 37.5%, respectively. The persistence of pulmonary infiltrates on day 9 of his illness initiated a change in antimicrobial therapy to piperacillin/tazobactam and vancomycin to cover healthcare-associated pathogens. Respiratory specimens, including a bronchial washing and right upper lobe lung biopsy were submitted for viral culture. By day 13, the patient developed multiorgan system failure. Despite daily hemodialysis, multiple blood transfusions, and mechanical ventilation, he ultimately expired.</p>
+      <p id="P6">On day 12, a bronchial washing was submitted for viral culture and results were negative for influenza virus but, positive for adenovirus (AdV) on day 14. The isolate was referred to University of Iowa, Center for Emerging Infectious Diseases (CEID) for sequencing and restriction enzyme analysis (REA). Amplified DNA sequences from the hyper-variable regions of the hexon [<xref ref-type="bibr" rid="R1">1</xref>] and fiber [<xref ref-type="bibr" rid="R2">2</xref>] genes were compared with sequences from the 51 prototypic human adenoviruses. Based on these studies, the isolate appeared to be a recombinant adenovirus. The sequence typing of the hyper-variable regions 1–6 of the hexon gene was consistent with AdV3, and the fiber gene with AdV14. The isolate was then evaluated using REA with 5 enzymes (BamH I, Bgl II, BstE II, Hinc II, and Sma I). The banding pattern of the isolate recovered from our patient was compared with the banding patterns from prototypic AdV3 and AdV14. REA results did not suggest that the submitted specimen contained a mixture of two adenovirus types but, rather a novel recombinant virus containing properties of both AdV3 and AdV14. The isolate was digested with additional enzymes and the viral subcultures were sequenced to confirm that passing the isolate did not alter its identity.</p>
+      <p id="P7">In contrast to AdV type 4 (subgenus E) and types 3, 7, and 21 (subgenus B1) that are prevalent in military recruits, AdV14 (subgenus B2) has rarely been observed in military or civilian populations until recently. This emerging serotype has caused severe and sometimes fatal acute respiratory illness in patients of all ages, including healthy immunocompetent individuals [<xref ref-type="bibr" rid="R3">3</xref>, <xref ref-type="bibr" rid="R4">4</xref>, <xref ref-type="bibr" rid="R5">5</xref>]. Gray G et al. ]6] using a new and more rapid gene sequencing strategy developed by the Centers for Disease Control and Prevention, compared adenovirus sequences from 2,237 positive specimens contributed by 22 military and civilian medical facilities participating in a national surveillance study over a 25-month period, to the sequences of the 51 recognized adenovirus types that infect humans. As reported by Lebeck et al. [<xref ref-type="bibr" rid="R7">7</xref>], AdV3 was the most prevalent serotype in the civilian population (34.6% of civilian samples). Seventeen AdV14 isolates from seven sites were identified; 60% were from three military bases.</p>
+      <p id="P8">Recombinant adenoviruses are rarely identified perhaps because few laboratories routinely perform viral cultures, serotyping, or molecular studies for adenovirus. However, with the advent of PCR typing, coinfections with two or more AdV types have been reported. For example, in 2007, Metzgar et al. [<xref ref-type="bibr" rid="R4">4</xref>] reported the appearance of coinfections with Ad14 and Ad4 and/or Ad7. Coinfections are important because of the potential for strains to recombine and form a new variant which may be more virulent. In 1976, Hierholzer et al. [<xref ref-type="bibr" rid="R8">8</xref>] reported an apparent Ad11/Ad14 intermediate strain isolated from a large outbreak during a military training exercise in Spain and Adhikary et al. [<xref ref-type="bibr" rid="R9">9</xref>], Robinson et al. [<xref ref-type="bibr" rid="R10">10</xref>] and Metzgar et al. [<xref ref-type="bibr" rid="R4">4</xref>] identified what they described as novel or recombinant strains of adenovirus. In the report by Gray et al. [<xref ref-type="bibr" rid="R6">6</xref>], approximately 5% of a subset of isolates from their surveillance study had evidence of recombination. With the use of sequencing the hexon and fiber genes, human adenovirus (HAdV) coinfections can be readily distinguished from recombinations that occur between the hexon and fiber regions of the AdV genome. McCarthy et al. [<xref ref-type="bibr" rid="R11">11</xref>] has developed a sequence-based typing strategy that not only correlates with HAdV serotypes but, also distinguishes coinfections from novel intermediate or recombinant strains.</p>
+      <p id="P9">We report the first fatal case associated with a recombinant Ad3 + Ad14 virus in an apparently healthy adult who developed a severe, acute respiratory disease leading to multiorgan failure and death. The only positive finding was the isolation and characterization of this recombinant AdV strain. The source of this novel strain is unknown but may have resulted from recombination of AdV3 and AdV14 acquired while in Iraq since both types have recently emerged in military recruits. Given that the patient had recently, just weeks prior to the onset of his symptoms and hospitalization, spent time in Iraq as a lay contractor residing on a military base, strongly supports the possibility that the adenovirus was contracted during his tenure abroad. Little is known about the virulence and epidemiology of these recombinant Ad viruses. Some adenoviruses, particularly those considered as emerging pathogens, appear to be associated with more severe disease and mortality. Since adenoviruses can be transmitted person-to-person, by droplets, fecal-oral, and on fomites, appropriate infection control practices are warranted. Currently there is no standard treatment for these infections but, knowing what type of adenovirus is causing infection may in the future, help to direct appropriate antiviral treatment.</p>
+      <p id="P10">Further work is needed to understand the natural history of recombinant AdV infections, risk factors for developing severe disease, and how transmission can be prevented. This case highlights the importance of 1) considering adenoviruses in the differential diagnosis, 2) rapid identification of adenovirus infections in the laboratory and also reminds us of 3) the importance of practicing good hand hygiene when caring for patients who may be infected with one of these novel adenoviruses.</p>
+    </sec>
+  </body>
+  <back>
+    <ack id="S2">
+      <title>Acknowledgement</title>
+      <p>The adenovirus molecular work was supported by the National Institute of Allergy and Infectious Diseases, grant 5R01A1053034 (G.C.G).</p>
+      <p>The authors wish to thank the Baptist Health Virology staff, Troy McCarthy for his molecular analysis of the adenovirus isolate, and Dr. Mark C. Lebeck for his thoughtful review of the manuscript</p>
+    </ack>
+    <fn-group>
+      <fn id="FN1">
+        <p id="P11">Financial support: None</p>
+      </fn>
+      <fn id="FN2">
+        <p content-type="publisher disclaimer" id="P12">This is a PDF file of an unedited manuscript that has been accepted for publication. As a service to our customers we are providing this early version of the manuscript. The manuscript will undergo copyediting, typesetting, and review of the resulting proof before it is published in its final citable form. Please note that during the production process errors may be discovered which could affect the content, and all legal disclaimers that apply to the journal pertain.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <title>References</title>
+      <ref id="R1">
+        <label>1</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lu</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Erdman</surname>
+              <given-names>DD</given-names>
+            </name>
+          </person-group>
+          <article-title>Molecular typing of human adenoviruses by PCR and sequencing of a partial region of the hexon gene</article-title>
+          <source>Arch Virol</source>
+          <year>2006</year>
+          <volume>151</volume>
+          <fpage>1587</fpage>
+          <lpage>1602</lpage>
+          <pub-id pub-id-type="pmid">16502282</pub-id>
+        </citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Xu</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>McDonough</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>Erdman</surname>
+              <given-names>DD</given-names>
+            </name>
+          </person-group>
+          <article-title>Species-specific identification of human adenoviruses by a multiplex PCR assay</article-title>
+          <source>J Clin Microbiol</source>
+          <year>2000</year>
+          <volume>38</volume>
+          <fpage>4114</fpage>
+          <lpage>4120</lpage>
+          <pub-id pub-id-type="pmid">11060077</pub-id>
+        </citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Binn</surname>
+              <given-names>LN</given-names>
+            </name>
+            <name>
+              <surname>Sanchez</surname>
+              <given-names>JL</given-names>
+            </name>
+            <name>
+              <surname>Gaydos</surname>
+              <given-names>JC</given-names>
+            </name>
+          </person-group>
+          <article-title>Emergence of adenovirus type 14 in US military recruits-a new challenge</article-title>
+          <source>J Infect Dis</source>
+          <year>2007</year>
+          <volume>196</volume>
+          <fpage>1436</fpage>
+          <lpage>1437</lpage>
+          <pub-id pub-id-type="pmid">18008220</pub-id>
+        </citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Metzgar</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Osuna</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kajon</surname>
+              <given-names>AE</given-names>
+            </name>
+            <name>
+              <surname>Hawksworth</surname>
+              <given-names>AW</given-names>
+            </name>
+            <name>
+              <surname>Irvine</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Russell</surname>
+              <given-names>KL</given-names>
+            </name>
+          </person-group>
+          <article-title>Abrupt emergence of diverse species B adenoviruses at US military recruit training centers</article-title>
+          <source>J Infect Dis</source>
+          <year>2007</year>
+          <volume>196</volume>
+          <fpage>1465</fpage>
+          <lpage>1473</lpage>
+          <pub-id pub-id-type="pmid">18008225</pub-id>
+        </citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <collab>CDC</collab>
+          </person-group>
+          <article-title>Acute respiratory disease associated with adenovirus serotype 14---four states, 2006–2007</article-title>
+          <source>MMWR</source>
+          <year>2007</year>
+          <volume>56</volume>
+          <fpage>1181</fpage>
+          <lpage>1184</lpage>
+          <pub-id pub-id-type="pmid">18004235</pub-id>
+        </citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gray</surname>
+              <given-names>GC</given-names>
+            </name>
+            <name>
+              <surname>McCarthy</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Lebeck</surname>
+              <given-names>MG</given-names>
+            </name>
+            <name>
+              <surname>Schnurr</surname>
+              <given-names>DP</given-names>
+            </name>
+            <name>
+              <surname>Russell</surname>
+              <given-names>KL</given-names>
+            </name>
+            <name>
+              <surname>Kajon</surname>
+              <given-names>AE</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Genotype prevalence and risk factors for severe clinical adenovirus infections, Unite States 2004–2006</article-title>
+          <source>Clin Infect Dis</source>
+          <year>2007</year>
+          <volume>45</volume>
+          <fpage>1120</fpage>
+          <lpage>1131</lpage>
+          <pub-id pub-id-type="pmid">17918073</pub-id>
+        </citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lebeck</surname>
+              <given-names>MG</given-names>
+            </name>
+            <name>
+              <surname>McCarthy</surname>
+              <given-names>TA</given-names>
+            </name>
+            <name>
+              <surname>Capuano</surname>
+              <given-names>AW</given-names>
+            </name>
+            <name>
+              <surname>Schnurr</surname>
+              <given-names>DP</given-names>
+            </name>
+            <name>
+              <surname>Landry</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Setterquist</surname>
+              <given-names>SF</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Emergent US adenovirus 3 strains associated with an epidemic and serious disease</article-title>
+          <source>J Clin Virol</source>
+          <year>2009</year>
+          <volume>46</volume>
+          <fpage>331</fpage>
+          <lpage>336</lpage>
+          <pub-id pub-id-type="pmid">19854101</pub-id>
+        </citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hierholzer</surname>
+              <given-names>JC</given-names>
+            </name>
+            <name>
+              <surname>Pumarola</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Antigenic characterization of intermediate adenovirus 14-11 strains associated with upper respiratory illness in a military camp</article-title>
+          <source>Infect Immun</source>
+          <year>1976</year>
+          <volume>13</volume>
+          <fpage>354</fpage>
+          <lpage>359</lpage>
+          <pub-id pub-id-type="pmid">177365</pub-id>
+        </citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Adhikary</surname>
+              <given-names>AK</given-names>
+            </name>
+            <name>
+              <surname>Inada</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Numaga</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Suzuki</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Ushijima</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Banik</surname>
+              <given-names>U</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Characterisation of hexon and fibre genes of a novel strain of adenovirus involved in epidemic keratoconjunctivitis</article-title>
+          <source>J Clin Pathol</source>
+          <year>2004</year>
+          <volume>57</volume>
+          <fpage>95</fpage>
+          <lpage>97</lpage>
+          <pub-id pub-id-type="pmid">14693847</pub-id>
+        </citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Robinson</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Rajaiya</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Walsh</surname>
+              <given-names>MP</given-names>
+            </name>
+            <name>
+              <surname>Seto</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Dyer</surname>
+              <given-names>DW</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>MS</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Computational analysis of human adenovirus type 22 provides evidence for recombination among species D human adenoviruses in the penton base gene</article-title>
+          <source>J of Virol</source>
+          <year>2009</year>
+          <volume>83</volume>
+          <fpage>8980</fpage>
+          <lpage>8983</lpage>
+          <pub-id pub-id-type="pmid">19553309</pub-id>
+        </citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McCarthy</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Lebeck</surname>
+              <given-names>MG</given-names>
+            </name>
+            <name>
+              <surname>Capuano</surname>
+              <given-names>AW</given-names>
+            </name>
+            <name>
+              <surname>Schnurr</surname>
+              <given-names>DP</given-names>
+            </name>
+            <name>
+              <surname>Gray</surname>
+              <given-names>GC</given-names>
+            </name>
+          </person-group>
+          <article-title>Molecular typing of clinical adenovirus specimens by an algorithm which permits detection of adenovirus coinfections and intermediate adenovirus strains</article-title>
+          <source>J Clin Virol</source>
+          <year>2009</year>
+          <volume>46</volume>
+          <fpage>80</fpage>
+          <lpage>84</lpage>
+          <pub-id pub-id-type="pmid">19577957</pub-id>
+        </citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

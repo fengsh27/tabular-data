@@ -1,0 +1,2685 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?properties manuscript?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">100931790</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">27003</journal-id>
+      <journal-id journal-id-type="nlm-ta">Curr Neurol Neurosci Rep</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Curr Neurol Neurosci Rep</journal-id>
+      <journal-title-group>
+        <journal-title>Current neurology and neuroscience reports</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1528-4042</issn>
+      <issn pub-type="epub">1534-6293</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">23335026</article-id>
+      <article-id pub-id-type="pmc">3569710</article-id>
+      <article-id pub-id-type="doi">10.1007/s11910-012-0330-3</article-id>
+      <article-id pub-id-type="manuscript">NIHMS437639</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Electroencephalographic Monitoring in the Pediatric Intensive Care Unit</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Abend</surname>
+            <given-names>Nicholas S.</given-names>
+          </name>
+          <degrees>MD</degrees>
+          <aff id="A1">Division of Neurology, Children’s Hospital of Philadelphia; Departments of Pediatrics and Neurology, Perelman School of Medicine at the University of Pennsylvania, Philadelphia, PA. CHOP Neurology, CTRB 10016, 3501 Civic Center Blvd, Philadelphia PA 19104</aff>
+          <email>abend@email.chop.edu</email>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Chapman</surname>
+            <given-names>Kevin E.</given-names>
+          </name>
+          <degrees>MD</degrees>
+          <aff id="A2">Department of Pediatrics and Neurology, University of Colorado at Denver, Children’s Hospital Colorado, Denver CO</aff>
+          <email>Kevin.Chapman@childrenshospital.org</email>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Gallentine</surname>
+            <given-names>William B.</given-names>
+          </name>
+          <degrees>DO</degrees>
+          <aff id="A3">Division of Pediatric Neurology, Duke University Medical Center. Contact Info: T0913 Children’s Health Center, DUMC Box 3936, Durham, NC 27710</aff>
+          <email>william.gallentine@duke.edu</email>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Goldstein</surname>
+            <given-names>Joshua</given-names>
+          </name>
+          <degrees>MD</degrees>
+          <aff id="A4">Child Neurology, Feinberg School of Medicine, Northwestern University. Contact Info: Anne and Robert H. Lurie Children’s Hospital, Box 51, 225 E. Chicago Ave, Chicago, IL 60611</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hyslop</surname>
+            <given-names>Ann E.</given-names>
+          </name>
+          <degrees>MD</degrees>
+          <aff id="A5">Pediatric Neurology, Miami Children’s Hospital, Miami FL. Contact Info: Pediatric Neurology, MIami Children’s Hospital, 3100 SW 62nd Avenue, Miami, Florida 33155</aff>
+          <email>ann.hyslop@mchdocs.com</email>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Loddenkemper</surname>
+            <given-names>Tobias</given-names>
+          </name>
+          <degrees>MD</degrees>
+          <aff id="A6">Division of Epilepsy and Clincial Neurophysiology, Department of Neurology, Boston Children’s Hospital and Harvard Medical School, 300 Longwood Ave, Boston, MA</aff>
+          <email>tobias.loddenkemper@childrens.harvard.edu</email>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Nash</surname>
+            <given-names>Kendall B</given-names>
+          </name>
+          <degrees>MD</degrees>
+          <aff id="A7">Departments of Neurology and Pediatrics, University of California at San Francisco, San Francisco, CA. Address 350 Parnassus Avenue, Suite 609, San Francisco, CA 94143</aff>
+          <email>nashkh@neuropeds.ucsf.edu</email>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Riviello</surname>
+            <given-names>James J.</given-names>
+            <suffix>Jr</suffix>
+          </name>
+          <degrees>MD</degrees>
+          <aff id="A8">Division of Pediatric Neurology and Comprehensive Epilepsy Center, Department of Neurology, NYU School of Medicine, New York, NY. Contact Info: NYU Comprehensive Epilepsy Center, 223 East 34th Street, New York, NY 10016</aff>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hahn</surname>
+            <given-names>Cecil D.</given-names>
+          </name>
+          <degrees>MD, MPH</degrees>
+          <aff id="A9">Division of Neurology, Department of Paediatrics, The Hospital for Sick Children and University of Toronto. Contact Info: 555 University Avenue, Toronto, Ontario M5G 1X8 Canada</aff>
+        </contrib>
+        <on-behalf-of>On behalf of the Pediatric Critical Care EEG Group (PCCEG)</on-behalf-of>
+      </contrib-group>
+      <pub-date pub-type="nihms-submitted">
+        <day>1</day>
+        <month>2</month>
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>3</month>
+        <year>2013</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>01</day>
+        <month>3</month>
+        <year>2014</year>
+      </pub-date>
+      <volume>13</volume>
+      <issue>3</issue>
+      <fpage>330</fpage>
+      <lpage>330</lpage>
+      <permissions>
+        <license>
+          <license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p id="P1">Continuous EEG monitoring is used with increasing frequency in critically ill children to provide insight into brain function and to identify electrographic seizures. EEG monitoring use often impacts clinical management, most often by identifying electrographic seizures and status epilepticus. Most electrographic seizures have no clinical correlate, and thus would not be identified without EEG monitoring. There is increasing data that electrographic seizures and electrographic status epilepticus are associated with worse outcome. Seizure identification efficiency may be improved by further development of quantitative EEG trends. This review describes the clinical impact of EEG data, the epidemiology of electrographic seizures and status epilepticus, the impact of electrographic seizures on outcome, the utility of quantitative EEG trends for seizure identification, and practical considerations regarding EEG monitoring.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>EEG</kwd>
+        <kwd>EEG monitoring</kwd>
+        <kwd>seizure</kwd>
+        <kwd>status epilepticus</kwd>
+        <kwd>intensive care unit</kwd>
+        <kwd>critical care</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source country="United States">National Institute of Neurological Disorders and Stroke : NINDS</funding-source>
+          <award-id>K23 NS076550 || NS</award-id>
+        </award-group>
+      </funding-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="S1">
+      <title>Introduction</title>
+      <p id="P2">Critically ill children now undergo continuous electroencephalographic (CEEG) monitoring with increasing frequency. CEEG monitoring provides real-time insight into brain function, highlights interval changes in brain function over time, and permits identification of electrographic seizures. Most electrographic seizures in critically ill children have no associated clinical signs and thus cannot be identified without cEEG monitoring. Electrographic seizures, particularly when frequent or prolonged, have been associated with worse outcome. This review summarizes current evidence regarding the utility of cEEG monitoring in critically ill children with a focus on the epidemiology of electrographic seizures and their impact on outcomes.</p>
+    </sec>
+    <sec id="S2">
+      <title>EEG Monitoring – Indications and Impact</title>
+      <p id="P3">Common indications for CEEG monitoring in the PICU are summarized in <xref rid="T1" ref-type="table">Table 1</xref>. A recent survey of CEEG use in the pediatric intensive care units (PICUs) of 61 large pediatric hospitals in the United States and Canada reported that the median number of patients who underwent CEEG per month increased about 30% from 2010 to 2011.[<xref rid="R1" ref-type="bibr">1</xref>] All centers reported using CEEG to help determine whether events of unclear etiology were seizures. About 90% of centers reported using CEEG in patients considered at risk for electrographic seizures, such as patients with altered mental status following a convulsion, altered mental status in a patient with a known acute brain injury, and altered mental status of unknown etiology. About 50% of centers reported using CEEG routinely in patients with specific diagnoses, such as following resuscitation from cardiac arrest or with traumatic brain injury.[<xref rid="R1" ref-type="bibr">1</xref>] Similar data regarding indications were reported by a larger survey of 330 physicians addressing adult and pediatric ICU CEEG.[<xref rid="R2" ref-type="bibr">2</xref>]</p>
+      <p id="P4">A recent study reported that CEEG data led to changes in clinical management in 59% of 100 consecutive critically ill children for the indication of acute encephalopathy. These changes included initiating or escalating anticonvulsants due to seizure identification in 43 patients, determining that a specific event (movement or vital sign change) was not a seizure in 21 patients thereby limiting inappropriate treatment, and obtaining urgent neuroimaging in 3 patients.[<xref rid="R3" ref-type="bibr">3</xref>] While CEEG data often impacts management, further study is needed to determine whether these changes improve neurodevelopmental outcome.</p>
+      <p id="P5">Additional data regarding the impact of CEEG are available in adults. Studies of emergent EEGs in critically ill adults have reported that they are often rated as clinically useful,[<xref rid="R4" ref-type="bibr">4</xref>] contribute to establishing a diagnosis,[<xref rid="R5" ref-type="bibr">5</xref>, <xref rid="R6" ref-type="bibr">6</xref>] identify NCS and NCSE,[<xref rid="R5" ref-type="bibr">5</xref>, <xref rid="R7" ref-type="bibr">7</xref>] identify seizure mimics,[<xref rid="R8" ref-type="bibr">8</xref>] often guide clinical decisions,[<xref rid="R9" ref-type="bibr">9</xref>] and often impact clinical management through initiation, escalation, or discontinuation of anticonvulsant medications.[<xref rid="R5" ref-type="bibr">5</xref>, <xref rid="R10" ref-type="bibr">10</xref>] Although limited cost effectiveness data are available, one study of 300 critically ill adults reported that CEEG costs were less than 1% of the total hospitalization costs and that CEEG implementation, likely in addition to other advancements in neurocritical care, was associated with a reduction in length of stay and hospital costs.[<xref rid="R9" ref-type="bibr">9</xref>]</p>
+    </sec>
+    <sec id="S3">
+      <title>EEG Background and Prognosis</title>
+      <p id="P6">Assessment of the EEG background provides useful prognostic information regarding the extent of brain injury in some critically ill children, and may identify interval changes in the degree of encephalopathy that could guide clinical management.[<xref rid="R11" ref-type="bibr">11</xref>] Although no individual neurodiagnostic modality has perfect prognostic value,[<xref rid="R12" ref-type="bibr">12</xref>] the use of EEG is appealing since it can be acquired at the bedside, either continuously or repeatedly over time, and despite inter-rater agreement limitations, provides objective data. Information regarding the patient’s clinical status and underlying diagnosis is essential to ensure that EEG background abnormalities are not attributable to sedating medications, scalp edema or intracranial fluid collections.</p>
+      <p id="P7">The majority of data regarding EEG background and prognosis focuses on children with acute hypoxic-ischemic brain injury although some studies have focused on cohorts with more heterogeneous etiologies.[<xref rid="R13" ref-type="bibr">13</xref>–<xref rid="R15" ref-type="bibr">15</xref>] Patients with more severely abnormal EEG backgrounds tend to have poorer short-term outcome than patients with mild/moderate background abnormalities. Certain EEG background features are known to have prognostic significance [<xref rid="R13" ref-type="bibr">13</xref>, <xref rid="R16" ref-type="bibr">16</xref>–<xref rid="R22" ref-type="bibr">22</xref>]. Pediatric studies have reported that burst suppression [<xref rid="R15" ref-type="bibr">15</xref>, <xref rid="R16" ref-type="bibr">16</xref>], excessive discontinuity [<xref rid="R20" ref-type="bibr">20</xref>], severe attenuation [<xref rid="R15" ref-type="bibr">15</xref>, <xref rid="R17" ref-type="bibr">17</xref>], lack of reactivity [<xref rid="R19" ref-type="bibr">19</xref>, <xref rid="R20" ref-type="bibr">20</xref>], and periodic or multifocal epileptiform discharges [<xref rid="R15" ref-type="bibr">15</xref>] are associated with unfavorable prognosis. Conversely, rapid EEG improvement over hours [<xref rid="R21" ref-type="bibr">21</xref>], reactivity [<xref rid="R18" ref-type="bibr">18</xref>] and normal sleep patterns [<xref rid="R18" ref-type="bibr">18</xref>, <xref rid="R22" ref-type="bibr">22</xref>] are associated with favorable prognosis. A study of children treated with therapeutic hypothermia after cardiac arrest resuscitation found that EEG backgrounds categorized as unreactive, discontinuous, burst-suppression, or lacking cerebral activity during the hypothermic or normothermic time periods were associated with unfavorable outcome, although not with perfect predictive value.[<xref rid="R14" ref-type="bibr">14</xref>] Thus, while some EEG background features appear to retain their predictive value during hypothermia, they still cannot be used in isolation for prognostication. Recently, a prospective study of 61 adults treated with therapeutic hypothermia following cardiac arrest reported that an unreactive or discontinuous EEG background pattern was associated with elevations in serum neuron specific enolase, suggesting that these early EEG abnormalities may reflect acute neuronal injury.[<xref rid="R23" ref-type="bibr">23</xref>]</p>
+    </sec>
+    <sec id="S4">
+      <title>Electrographic Seizures: Definitions</title>
+      <p id="P8"><italic>Electrographic seizures</italic> are commonly defined as abnormal, paroxysmal electroencephalographic events that differ from the background activity, last longer than ten seconds (unless associated with clinical signs), have a plausible electrographic field, and evolve in frequency, morphology and spatial distribution.[<xref rid="R24" ref-type="bibr">24</xref>, <xref rid="R25" ref-type="bibr">25</xref>] Electrographic seizures may be either <italic>convulsive</italic> or <italic>nonconvulsive. Convulsive</italic> (also termed electroclinical) seizures are electrographic seizures that are coupled with clinical manifestations. <italic>Non-convulsive</italic> (also termed subclinical) seizures are electrographic seizures that occur without clinical manifestations. <italic>Subtle</italic> seizures are electrographic seizures accompanied by clinical changes that are so mild that identification by careful observation in the absence of video-EEG monitoring would be very difficult. While subtle seizures are technically convulsive seizures, since identification generally required EEG monitoring, studies often group them with non-convulsive seizures.</p>
+      <p id="P9"><italic>Electrographic status epilepticus</italic> is commonly defined as uninterrupted electrographic seizures lasting 30 minutes or longer, or repeated electrographic seizures totaling more than 30 minutes in any one-hour period. Electrographic status epilepticus may be either convulsive or nonconvulsive. While this definition allows classification, it is not based on any scientific evidence that those with a greater than 50% seizure burden in an hour fare worse than those with less than a 50% seizure burden in an hour. More broadly, <italic>non-convulsive status epilepticus (NCSE)</italic> has been broadly defined as an enduring epileptic condition with reduced or altered consciousness, behavioral and vegetative abnormalities, or merely subjective symptoms like auras, but without major convulsive movements.[<xref rid="R26" ref-type="bibr">26</xref>]</p>
+      <p id="P10">Agreement among readers in identifying seizures is imperfect,[<xref rid="R27" ref-type="bibr">27</xref>] especially when differentiating seizures from rhythmic or periodic patterns. The border between seizures and rhythmic or periodic patterns is often difficult to distinguish with certainty, and has been termed the “ictal-interictal continuum” [<xref rid="R24" ref-type="bibr">24</xref>]. Prolonged seizures may be particularly difficult to identify when their onset or offset are unclear, or when they blend with periodic or rhythmic discharges. This is a particular problem in children with pre-existing epileptic encephalopathies, whose often highly abnormal EEGs with abundant inter-ictal epileptiform discharges may resemble NCSE.[<xref rid="R28" ref-type="bibr">28</xref>]</p>
+    </sec>
+    <sec id="S5">
+      <title>Epidemiology of Electrographic Seizures and Status Epilepticus</title>
+      <p id="P11">ES have been reported in 10–40% of children who underwent long-term EEG monitoring in PICUs or emergency departments.[<xref rid="R29" ref-type="bibr">29</xref>–<xref rid="R39" ref-type="bibr">39</xref>] The majority of ES are not accompanied by any clinical signs,[<xref rid="R31" ref-type="bibr">31</xref>, <xref rid="R35" ref-type="bibr">35</xref>, <xref rid="R37" ref-type="bibr">37</xref>–<xref rid="R42" ref-type="bibr">42</xref>] even in non-paralyzed patients, [<xref rid="R40" ref-type="bibr">40</xref>, <xref rid="R42" ref-type="bibr">42</xref>] although some patients may exhibit subtle positive signs (ie. automatisms, minor facial twitching or blinking) or negative signs (ie. behavioral and cognitive impairment).[<xref rid="R43" ref-type="bibr">43</xref>] Certain risk factors for ES have been identified. Children with altered mental status and a known acute neurologic disorder appear to be at greater risk for ES than children who are comatose without an acute neurologic disorder.[<xref rid="R29" ref-type="bibr">29</xref>, <xref rid="R35" ref-type="bibr">35</xref>] Children may be at increased risk for ES compared to adults.[<xref rid="R44" ref-type="bibr">44</xref>] Clinical risk factors for ES in children include younger age,[<xref rid="R29" ref-type="bibr">29</xref>, <xref rid="R37" ref-type="bibr">37</xref>] prior convulsive status epilepticus[<xref rid="R37" ref-type="bibr">37</xref>] or acute seizures,[<xref rid="R38" ref-type="bibr">38</xref>, <xref rid="R41" ref-type="bibr">41</xref>] structural brain injury[<xref rid="R38" ref-type="bibr">38</xref>, <xref rid="R41" ref-type="bibr">41</xref>] including traumatic brain injury,[<xref rid="R37" ref-type="bibr">37</xref>] and cardiac arrest.[<xref rid="R36" ref-type="bibr">36</xref>] EEG abnormalities associated with ES in children include epileptiform discharges,[<xref rid="R37" ref-type="bibr">37</xref>, <xref rid="R41" ref-type="bibr">41</xref>] periodic epileptiform discharges,[<xref rid="R31" ref-type="bibr">31</xref>] and lack of background reactivity.[<xref rid="R31" ref-type="bibr">31</xref>] ES have been also reported in children with specific conditions: acute ischemic stroke,[<xref rid="R45" ref-type="bibr">45</xref>] intracerebral hemorrhage,[<xref rid="R46" ref-type="bibr">46</xref>] and those undergoing extracorporeal membrane oxygenation [<xref rid="R47" ref-type="bibr">47</xref>, <xref rid="R48" ref-type="bibr">48</xref>], but these studies did not perform CEEG in consecutive patients.</p>
+      <p id="P12">Children undergoing surgery for congenital heart disease are at risk for post-operative seizures. Clinical seizures have been reported in 6% of 171 infants after D-transposition of the great arteries [<xref rid="R49" ref-type="bibr">49</xref>] and 18% of 164 infants who survived congenital heart disease surgery requiring deep hypothermic circulatory arrest.[<xref rid="R50" ref-type="bibr">50</xref>] Non-convulsive seizures (NCS) are even more common than clinical seizures.[<xref rid="R49" ref-type="bibr">49</xref>, <xref rid="R51" ref-type="bibr">51</xref>–<xref rid="R55" ref-type="bibr">55</xref>]. In the D-transposition study, ES occurred in 20% of 136 infants undergoing 48 hours of CEEG monitoring, most of which had no clinical correlate.[<xref rid="R49" ref-type="bibr">49</xref>] In a second study, NCS occurred in 12% of 183 children who underwent 48 hours of CEEG after cardiac surgery.[<xref rid="R52" ref-type="bibr">52</xref>] A retrospective study of infants with congenital heart disease reported ES in 6% of 93 patients.[<xref rid="R53" ref-type="bibr">53</xref>] A study of children who underwent cardiac surgery with cardiopulmonary bypass and underwent EEG from intubation until 22–96 hours after bypass reported ES in 8% of 36.[<xref rid="R54" ref-type="bibr">54</xref>] Finally, a study of 39 infants undergoing Norwood-type operations and continuous amplitude-integrated EEG identified intraoperative seizures in 23% and postoperative seizures in 18%.[<xref rid="R55" ref-type="bibr">55</xref>] Risk factors for seizures in children with congenital heart disease include co-existing genetic defects, aortic arch obstruction, the presence of a ventricular septal defect, treatment with deep hypothermic circulatory arrest rather than continuous cardiopulmonary bypass and prolonged deep hypothermic circulatory arrest.[<xref rid="R49" ref-type="bibr">49</xref>–<xref rid="R51" ref-type="bibr">51</xref>]</p>
+      <p id="P13">Current management strategies for electrographic seizures occurring among critically ill children are varied. When surveyed, neurologists reported that the most commonly used medications used to manage NCS and NCSE were lorazepam, phenytoin/fosphenytoin, and levetiracetam. The second and third line medications were these same three in varying combinations, and there was substantial variability in practice. Most physicians reported escalating treatment for NCS to include pharmacologic coma induction with intubation if seizures persisted after 2–3 standard anticonvulsants, for which the most commonly used medications were midazolam and pentobarbital.[<xref rid="R2" ref-type="bibr">2</xref>] This finding suggests that physicians are willing to take some medical risk in an attempt to terminate NCS and NCSE. Studies are needed to identify the optimal management regimen and then determine whether seizure identification and management improves outcome.</p>
+    </sec>
+    <sec id="S6">
+      <title>Duration of Continuous EEG Monitoring</title>
+      <p id="P14">A survey of neurologists regarding their current practice of CEEG monitoring in adults and children (excluding neonates) indicated that the majority perform CEEG monitoring for 1–2 days if no seizures occur, although there was substantial variability in practice.[<xref rid="R2" ref-type="bibr">2</xref>] These monitoring duration decisions are likely based on studies of critically ill children undergoing clinically indicated CEEG which report that half of patients with seizures are identified in the first hour of monitoring, and about 90% of patients with seizures are identified within the first 24 hours of monitoring [<xref rid="R29" ref-type="bibr">29</xref>, <xref rid="R31" ref-type="bibr">31</xref>, <xref rid="R32" ref-type="bibr">32</xref>, <xref rid="R35" ref-type="bibr">35</xref>, <xref rid="R37" ref-type="bibr">37</xref>, <xref rid="R38" ref-type="bibr">38</xref>, <xref rid="R41" ref-type="bibr">41</xref>, <xref rid="R42" ref-type="bibr">42</xref>, <xref rid="R56" ref-type="bibr">56</xref>]. However, none of these studies performed CEEG for an extended duration in all patients. Had CEEG monitoring duration continued for longer, seizures beginning later may have been identified in some patients.</p>
+      <p id="P15">Understanding the optimal duration of CEEG monitoring is important since seemingly small changes in monitoring duration have a substantial impact on resource needs [<xref rid="R57" ref-type="bibr">57</xref>]. Studies of children with specific types of acute brain injury and management may provide better focus. In a prospective study of 19 children undergoing therapeutic hypothermia after cardiac arrest, CEEG was initiated urgently and continued throughout the entire clinical protocol including 24 hours of normothermia. No children had ES in the initial six hours of monitoring (early hypothermia), one child had seizures in the next six hours (early hypothermia), four children had seizures during the next 12 hours (late hypothermia), and four children had seizures in the next 24 hours (re-warming) [<xref rid="R36" ref-type="bibr">36</xref>]. Similarly, in neonates and infants who underwent repair of congenital heart disease, studies have reported electrographic seizure at a mean of 21 hours [<xref rid="R51" ref-type="bibr">51</xref>, <xref rid="R52" ref-type="bibr">52</xref>] and that most seizures occurred 13–36 hours after surgery.[<xref rid="R49" ref-type="bibr">49</xref>] These data suggest that with further study, CEEG duration may be tailored based on a patient’s age, clinical status, and cause of acute encephalopathy.</p>
+    </sec>
+    <sec id="S7">
+      <title>Electrographic Seizures and Outcome</title>
+      <p id="P16">Two questions central to assessing the utility of CEEG are (1) does the occurrence of ES worsen outcome, and (2) does identification and management of ES improve outcome. The latter question has not yet been explored, but several recent studies have demonstrated an association between ES and worse neurodevelopmental outcome in critically ill children. In a study of 75 children, NCS were associated with higher mortality (15% versus 8%) and neurologic morbidity (31% versus 4%).[<xref rid="R38" ref-type="bibr">38</xref>] In a second study of 204 critically ill comatose children and neonates, clinically-evident seizures, ES, a higher number and longer duration of ES, and a worse EEG background score were associated with worse outcome. In a multi-variable analysis, ES were associated with worse outcome (OR 15.4; 95% CI 4.7, 49.7). Furthermore, no children had favorable outcome if they had more than 139 seizures, more than 759 minutes of total seizures, or any individual seizure lasting longer than 360 minutes.[<xref rid="R39" ref-type="bibr">39</xref>] A third study evaluated short-term outcome in 200 prospectively enrolled critically ill children who underwent CEEG for altered mental status and an acute neurologic problem. Eighty-four children (42%) had seizures, which were categorized as ES in 41 (21%) and electrographic status epilepticus in 43 (22%). In multivariable analysis, electrographic status epilepticus was associated with an increased risk of mortality (OR 5.1; 95%CI 1.4, 18, p=0.01) and a decline in Pediatric Cerebral Performance Category (PCPC) (OR 17.3; 95%CI 3.7, 80, p&lt;0.001), whereas ES were not associated with an increased risk of mortality (OR 1.3; 95%CI 0.3, 5.1; p=0.74) or decline in PCPC (OR 1.2; 95%CI 0.4, 3.9; p=0.77). This suggests that higher seizure burden is independently associated with worse outcome.[<xref rid="R58" ref-type="bibr">58</xref>] In a study of 154 children with status epilepticus, the presence of NCSE on initial EEG was associated with increased risk of refractory status epilepticus and increased risk of poor long-term outcome. Although children with NCSE were not evaluated independently, more aggressive management was associated with a better treatment response and outcome.[<xref rid="R59" ref-type="bibr">59</xref>]</p>
+      <p id="P17">Additional data on outcomes following seizures are available in the congenital heart disease population. A study of 164 infants with congenital heart disease with follow-up at one year identified abnormal neurological examination results in 11 of 15 (73%) patients with postoperative seizures versus 41 of 99 (41%) patients without seizures. Seizures were not associated with significantly lower scores on Bayley Scales of Infant Development, except for frontal-onset seizures which were associated with significantly lower Mental Development Index scores compared with non–frontal-onset seizures [<xref rid="R60" ref-type="bibr">60</xref>]. In a study of amplitude integrated EEG in infants undergoing Norwood-type procedures, both intraoperative and post-operative seizures were associated with higher mortality, but not associated with neurodevelopmental impairment [<xref rid="R55" ref-type="bibr">55</xref>]. An interesting set of studies have focused on children with D-transposition of the great arteries who underwent an arterial switch operation with successive neurodevelopmental assessments. In the initial study of 155 of 171 infants, early post-operative electrographic seizures were associated with an increased risk of MRI abnormalities and with an 11.2 point reduction in the psychomotor development index of the Bayley Scales of Infant Development at one year follow-up.[<xref rid="R61" ref-type="bibr">61</xref>] In a follow-up study that extended to 2.5 years, children with seizures were also more likely to have lower psychomotor development scores.[<xref rid="R62" ref-type="bibr">62</xref>] By four years, children with seizures had significantly lower mean intelligence quotient scores and increased risk of neurological abnormalities [<xref rid="R63" ref-type="bibr">63</xref>]. Among 139 children evaluated at adolescence, postoperative seizures were the medical variable most consistently associated with worse outcome.[<xref rid="R64" ref-type="bibr">64</xref>]</p>
+      <p id="P18">Further data are available from several adult studies. NCSE of longer duration has been associated with worse outcome.[<xref rid="R25" ref-type="bibr">25</xref>] NCS have been associated with worse discharge outcome in adults with central nervous system infections[<xref rid="R65" ref-type="bibr">65</xref>], intracerebral hemorrhage expansion[<xref rid="R66" ref-type="bibr">66</xref>] and death or severe neurologic disability in adults in the medical ICU.[<xref rid="R67" ref-type="bibr">67</xref>] In adults with traumatic brain injury, NCS have been associated with increases in intracranial pressure and metabolic dysfunction [<xref rid="R68" ref-type="bibr">68</xref>], as well as the development of ipsilateral hippocampal atrophy.[<xref rid="R69" ref-type="bibr">69</xref>]</p>
+      <p id="P19">In summary, although the evidence for an association between seizures and poor outcome is growing, further study is needed to more precisely define the causal link between ES and neurodevelopmental outcome, and establish whether identifying and managing ES improves outcomes.</p>
+    </sec>
+    <sec id="S8">
+      <title>Quantitative EEG for Electrographic Seizure Identification</title>
+      <p id="P20">Identifying seizures in critically ill children requires CEEG since most seizures in this population remain subclinical.[<xref rid="R31" ref-type="bibr">31</xref>, <xref rid="R35" ref-type="bibr">35</xref>, <xref rid="R37" ref-type="bibr">37</xref>–<xref rid="R42" ref-type="bibr">42</xref>, <xref rid="R70" ref-type="bibr">70</xref>] Large numbers of critically ill children are at risk for subclinical seizures and stand to benefit from CEEG, however the availability of CEEG remains limited because of a scarcity of expert neurophysiologists required to interpret raw CEEG data. Furthermore, although CEEG is recorded continuously, real time review is seldom available, [<xref rid="R2" ref-type="bibr">2</xref>] potentially resulting in delays between seizure occurrence, seizure identification, and treatment.[<xref rid="R71" ref-type="bibr">71</xref>] When CEEG is being used to screen for NCS, neurologists report that it is reviewed once per day by 21%, twice per day by 29%, three or four times per day by 17%, and almost continuously by only 18%.[<xref rid="R2" ref-type="bibr">2</xref>]</p>
+      <p id="P21">Quantitative EEG (QEEG) algorithms separate the raw EEG into its component parts and compress several hours of EEG onto a single display. This technique may permit more rapid CEEG analysis by expert neurophysiologists and may facilitate seizure recognition by bedside caregivers without formal EEG training. Various QEEG tools, also referred to as digital trend analysis (DTA) since QEEG trends are displayed over time,[<xref rid="R72" ref-type="bibr">72</xref>] are now commercially available [<xref rid="R73" ref-type="bibr">73</xref>], but surveys indicate they are rarely used in current practice.[<xref rid="R2" ref-type="bibr">2</xref>]</p>
+      <p id="P22">Three commonly used QEEG tools are amplitude integrated EEG (aEEG), color density spectral array (CDSA or CSA), and envelope trend (ET). Because seizures typically contain higher frequency and higher amplitude activity than the background, seizures are apparent on aEEG and ET as arch-shaped elevations in the tracing (reflecting increased amplitude), and on CDSA as bright bands of color (reflecting increased power at higher frequencies) (<xref rid="F1" ref-type="fig">Figure 1</xref>). Limitations of QEEG include missing seizures which are brief, low frequency or amplitude, or cover a small spatial area (particularly when a reduced number of channels are used). Conversely, high-amplitude or high-frequency artifacts may be misinterpreted as seizures on QEEG. Therefore, although QEEG may be used to identify regions of interest, review of the raw CEEG remains important to minimize over-interpretation.[<xref rid="R72" ref-type="bibr">72</xref>]</p>
+      <p id="P23">aEEG is currently used for prognostication and seizure identification in many neonatal ICUs,[<xref rid="R74" ref-type="bibr">74</xref>, <xref rid="R75" ref-type="bibr">75</xref>] particularly among infants with hypoxic-ischemic encephalopathy undergoing therapeutic hypothermia.[<xref rid="R76" ref-type="bibr">76</xref>] While novice aEEG users identify seizures with a specificity of below 50%, experienced users can achieve a sensitivity and specificity of almost 85%.[<xref rid="R77" ref-type="bibr">77</xref>–<xref rid="R80" ref-type="bibr">80</xref>] However the sensitivity of aEEG for identifying individual seizures ranges from 12–96%.[<xref rid="R78" ref-type="bibr">78</xref>, <xref rid="R79" ref-type="bibr">79</xref>, <xref rid="R81" ref-type="bibr">81</xref>] Despite these imperfections, the use of aEEG can improve the precision of neonatal seizure diagnosis [<xref rid="R82" ref-type="bibr">82</xref>] and reduce ES burden.[<xref rid="R83" ref-type="bibr">83</xref>] However, with a false-positive rate using aEEG alone approaching 50%, [<xref rid="R80" ref-type="bibr">80</xref>] treatment decisions based solely on aEEG may result in over-diagnosis of seizures and over-use of anticonvulsants. The American Clinical Neurophysiology Society’s Guidelines on EEG Monitoring in Neonates state that aEEG is a “useful, initial complementary tool” to CEEG, which remains the gold standard.[<xref rid="R84" ref-type="bibr">84</xref>]</p>
+      <p id="P24">Relatively few studies have investigated the utility of QEEG tools among critically ill non-neonatal children. In one study, the median sensitivity for seizure identification was 83% using CDSA and 82% using aEEG, but in individual EEG tracings sensitivity varied from 0–100%. False positive rates for both aEEG and CDSA were quite low. [<xref rid="R85" ref-type="bibr">85</xref>]. Another study applying CSA and ET demonstrated that sensitivity for seizure identification depends on user experience, display size, and inherent seizure characteristics, like seizure duration and spike amplitude [<xref rid="R86" ref-type="bibr">86</xref>]. In both of these studies, only brief training was required.</p>
+      <p id="P25">In summary, QEEG displays require minimal training to use and appear to have acceptable accuracy for seizure identification in some cases; however false-negatives and false-positives remain common enough that QEEG cannot yet replace review of conventional EEG. Further work is required to optimize QEEG display parameters, for example by combining multiple QEEG trends to improve accuracy.[<xref rid="R86" ref-type="bibr">86</xref>, <xref rid="R87" ref-type="bibr">87</xref>] Finally, although QEEG sensitivity remains imperfect, it must be remembered that inter-rater reliability for seizure identification using the “gold standard” conventional EEG is also imperfect [<xref rid="R27" ref-type="bibr">27</xref>, <xref rid="R88" ref-type="bibr">88</xref>].</p>
+    </sec>
+    <sec id="S9">
+      <title>Practical Considerations</title>
+      <p id="P26">Performing CEEG in the PICU requires the collaboration of neurophysiologists, neurologists, EEG technologists, intensivists, nurses, and information technology specialists. Around-the-clock staffing may be required, EEG technologists must collaborate with critical care personnel, physicians may rely on EEG technologists to aid in frequent screening of EEG, and physicians may require more remote access.[<xref rid="R89" ref-type="bibr">89</xref>] A standard for competency from the American Society of Electroneurodiagnostic Technologists addresses both knowledge and procedural issues as they pertain to the EEG technologist. The standard indicates that advanced training and continuing education is required to ensure that the EEG technologist “attained the advanced level of technical knowledge and skills as well as the cognitive ability necessary to interact with the critical care patient and staff to ensure a high quality ICU/cEEG recording that provides reliable information about the continuous electrophysiology of the brain.”[<xref rid="R90" ref-type="bibr">90</xref>] Providing EEG technologists with the opportunity to learn and develop such skills is vital to the success of CEEG in the PICU.</p>
+      <p id="P27">PICUs are often staffed by a large number of nurses, many of whom have very little experience with EEG technology. Providing nursing education via formal lectures and informal bedside training during CEEG hook-up may encourage nurses to become active participants in the CEEG process, in turn improving the data obtained from CEEG. Collaboration between nurses and EEG technologists is critical in positioning patients, performing reactivity testing, and in avoiding and trouble-shooting artifacts. EEG interpretation is much improved when bedside caregivers communicate information regarding patient state, medication administration, and clinical events to EEG readers.</p>
+      <p id="P28">While more types of providers are being asked to assist in various aspects of CEEG data acquisition in the PICU, certain advances in technology have reduced the amount of time required from each provider. CEEG in the PICU is generally performed with disc electrodes applied with collodion adhesive, decreasing the need for frequent reapplication. Although conventional EEG electrodes are not compatible with CT or MRI, newly-available MRI and CT ‘friendly’ electrodes are reported to be safe and generate only minimal imaging artifact. Individual institutions must decide based on their practice and EEG staffing whether it is more time and cost efficient to remove and reapply electrodes when neuroimaging is needed or to employ imaging-friendly electrodes.</p>
+      <p id="P29">Generally, a full array of EEG electrodes is applied according to the international 10–20 system. Reduced electrode montages may reduce workload, but at least in adults can fail to identify some seizures.[<xref rid="R91" ref-type="bibr">91</xref>] Video recording time-locked to the EEG allows readers accurately identify and classify artifacts and permits detailed clinical-electrographic correlation of events, which may help bedside caregivers determine whether future events are epileptic or non-epileptic. The advent and modernization of networked EEG monitoring systems allows data to be conveyed via a hospital network to the main neurophysiology reading system, thereby allowing EEG readers the ability to review EEG data from computers throughout the hospital or remotely.</p>
+      <p id="P30">Since performing CEEG monitoring is resource intensive,[<xref rid="R92" ref-type="bibr">92</xref>] institutions need to adopt clinical pathways to guide appropriate CEEG utilization. Neurophysiologists generally need to review the CEEG data at least twice per day to provide the treatment team with up to date, actionable information. Since no guidelines or consensus statements currently exist regarding CEEG in the PICU, each institution will have to determine the most effective and efficient ways in which they can utilize their own resources.</p>
+    </sec>
+    <sec id="S10">
+      <title>Historical Notes and Future Directions</title>
+      <p id="P31">A routine one-hour EEG captures only about 4% of a day’s encephalographic data and unfortunately, unusual, odd, clinical “spells” and unexplained autonomic attacks rarely seem to occur during the regular daytime schedule of most EEG laboratories. In the not-so-distant era of paper EEG recording, long term EEG monitoring was rarely done since it required continuous, round-the-clock presence of a technologist at the bedside to judge the quality of the tracing and to continuously replenish the paper and refill and realign the ink pens. At the end of a 24 hour recording session, a small mountain of paper had to be laboriously reviewed and then stored on microfilm. The technical innovations of high speed digital electronic data processing, high capacity digital storage media and the ability to seamlessly fuse digital images of the patient simultaneously with the CEEG data stream has transformed the field by allowing continuous video EEG monitoring to be performed on a regular basis and by expediting review.</p>
+      <p id="P32">Now that the technical issues of long term conventional CEEG have largely been solved, a new set of challenging questions arise. Is there agreement among different investigators about the definitions used to characterize the results of CEEG? Which patients require long term EEG monitoring and how long should CEEG be continued? How can we most efficiently and rapidly identify ES? And most importantly, building upon the answers to all these questions, does CEEG alter management a way that improves long-term neurodevelopmental outcome?</p>
+      <p id="P33">Answering such questions will likely require large, prospective, multi-center studies. The Critical Care EEG Monitoring Consortium, which contains a pediatric subgroup, has been laying the groundwork for these studies for nearly a decade. Current work includes refinement of EEG terminology, which will be essential in performing studies across sites or with groups of EEG readers, and development of a centralized database that will lay the foundation for standardized multi-center data collection. Within about a year of initiation, the Pediatric Critical Care EEG Group has already described the current state of EEG monitoring in critically ill children [<xref rid="R1" ref-type="bibr">1</xref>] and performed a retrospective study of about 500 critically ill children who underwent CEEG.</p>
+    </sec>
+    <sec sec-type="conclusions" id="S11">
+      <title>Conclusions</title>
+      <p id="P34">ES are common among critically ill children with acute encephalopathy of diverse causes. The majority of ES would go unnoticed even with careful clinical observation, and therefore require CEEG for their identification. There is growing evidence from animal and human studies that ES may contribute to brain injury and worsen outcome. CEEG monitoring is an essential tool for advancing the care of critically ill children with encephalopathy. CEEG monitoring is required for accurate investigation of seizure epidemiology, seizure risk factors, optimal seizure management, and the impact of seizure identification on outcome.</p>
+    </sec>
+  </body>
+  <back>
+    <ack id="S12">
+      <p>N. S. Abend: NIH K23 Grant NS076550; K. E. Chapman: none; W. B. Gallentine: none; J. Goldstein: none; A. E. Hyslop: none; T. Loddenkemper: Supported by a Career Development Fellowship Award from Harvard Medical School and Boston Children’s Hospital, the Program for Quality and Safety at Boston Children’s Hospital, the Payer Provider Quality Initiative, The Epilepsy Foundation of America (EF-213583 and EF-213882), the Center for Integration of Medicine and Innovative Technology, the Epilepsy Therapy Project, and an investigator initiated research grant from Lundbeck; K. B. Nash: none; J. J. Riviello, Jr.: none; C. D. Hahn: SickKids Foundation, Canadian Institutes of Health Research, PSI Foundation.</p>
+    </ack>
+    <fn-group>
+      <fn id="FN1">
+        <p>
+          <bold>Disclosure</bold>
+        </p>
+        <p>N. S. Abend: none; K. E. Chapman: none; W. B. Gallentine: none; J. Goldstein: none; A. E. Hyslop: none; T. Loddenkemper: Laboratory Accreditation Board for Long Term (Epilepsy and Intensive Care Unit) Monitoring, Council of the American Clinical Neurophysiology Society, American Board of Clinical Neurophysiology, Associate Editor for Seizure, and performs video electroencephalogram long-term monitoring, electroencephalograms, and other electrophysiological studies at Boston Children’s Hospital and bills for these procedures; K. B. Nash: none; J. J. Riviello, Jr.: spouse is a medical editor for Up To Date; C. D. Hahn: none.</p>
+      </fn>
+    </fn-group>
+    <ref-list>
+      <ref id="R1">
+        <label>1•</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sanchez</surname>
+              <given-names>SM</given-names>
+            </name>
+            <name>
+              <surname>Carpenter</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Chapman</surname>
+              <given-names>KE</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Pediatric ICU EEG Monitoring: Current Resources and Practice in the United States and Canada</article-title>
+          <source>Journal of Clinical Neurophysiology</source>
+          <comment>In press A survey of large hospitals in the United States and Canada regarding EEG monitoring in the pediatric ICU. EEG monitoring use is increasing, and the min indication is identification of subclinical seizures</comment>
+        </element-citation>
+      </ref>
+      <ref id="R2">
+        <label>2</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Abend</surname>
+              <given-names>NS</given-names>
+            </name>
+            <name>
+              <surname>Dlugos</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Hahn</surname>
+              <given-names>CD</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Use of EEG monitoring and management of non-convulsive seizures in critically ill patients: a survey of neurologists</article-title>
+          <source>Neurocrit Care</source>
+          <year>2010</year>
+          <volume>12</volume>
+          <fpage>382</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">20198513</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R3">
+        <label>3</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Abend</surname>
+              <given-names>NS</given-names>
+            </name>
+            <name>
+              <surname>Topjian</surname>
+              <given-names>AA</given-names>
+            </name>
+            <name>
+              <surname>Gutierrez-Colina</surname>
+              <given-names>AM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Impact of continuous EEG monitoring on clinical management in critically ill children</article-title>
+          <source>Neurocrit Care</source>
+          <year>2011</year>
+          <volume>15</volume>
+          <fpage>70</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="pmid">20499208</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R4">
+        <label>4</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Firosh Khan</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Ashalatha</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Thomas</surname>
+              <given-names>SV</given-names>
+            </name>
+            <name>
+              <surname>Sarma</surname>
+              <given-names>PS</given-names>
+            </name>
+          </person-group>
+          <article-title>Emergent EEG is helpful in neurology critical care practice</article-title>
+          <source>Clin Neurophysiol</source>
+          <year>2005</year>
+          <volume>116</volume>
+          <fpage>2454</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">16122983</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R5">
+        <label>5</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Praline</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Grujic</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Corcia</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Emergent EEG in clinical practice</article-title>
+          <source>Clin Neurophysiol</source>
+          <year>2007</year>
+          <volume>118</volume>
+          <fpage>2149</fpage>
+          <lpage>55</lpage>
+          <pub-id pub-id-type="pmid">17709288</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R6">
+        <label>6</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bautista</surname>
+              <given-names>RE</given-names>
+            </name>
+            <name>
+              <surname>Godwin</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Caro</surname>
+              <given-names>D</given-names>
+            </name>
+          </person-group>
+          <article-title>Incorporating abbreviated EEGs in the initial workup of patients who present to the emergency room with mental status changes of unknown etiology</article-title>
+          <source>J Clin Neurophysiol</source>
+          <year>2007</year>
+          <volume>24</volume>
+          <fpage>16</fpage>
+          <lpage>21</lpage>
+          <pub-id pub-id-type="pmid">17277572</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R7">
+        <label>7</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Varelas</surname>
+              <given-names>PN</given-names>
+            </name>
+            <name>
+              <surname>Spanaki</surname>
+              <given-names>MV</given-names>
+            </name>
+            <name>
+              <surname>Hacein-Bey</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Emergent EEG: indications and diagnostic yield</article-title>
+          <source>Neurology</source>
+          <year>2003</year>
+          <volume>61</volume>
+          <fpage>702</fpage>
+          <lpage>4</lpage>
+          <pub-id pub-id-type="pmid">12963769</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R8">
+        <label>8</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Benbadis</surname>
+              <given-names>SR</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Melo</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>What’s shaking in the ICU? The differential diagnosis of seizures in the intensive care setting</article-title>
+          <source>Epilepsia</source>
+          <year>2010</year>
+          <volume>51</volume>
+          <fpage>2338</fpage>
+          <lpage>2340</lpage>
+          <pub-id pub-id-type="pmid">20738384</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R9">
+        <label>9</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vespa</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>Nenov</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Nuwer</surname>
+              <given-names>MR</given-names>
+            </name>
+          </person-group>
+          <article-title>Continuous EEG monitoring in the intensive care unit: early findings and clinical efficacy</article-title>
+          <source>J Clin Neurophysiol</source>
+          <year>1999</year>
+          <volume>16</volume>
+          <fpage>1</fpage>
+          <lpage>13</lpage>
+          <pub-id pub-id-type="pmid">10082088</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R10">
+        <label>10</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kilbride</surname>
+              <given-names>RD</given-names>
+            </name>
+            <name>
+              <surname>Costello</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Chiappa</surname>
+              <given-names>KH</given-names>
+            </name>
+          </person-group>
+          <article-title>How seizure detection by continuous electroencephalographic monitoring affects the prescribing of antiepileptic medications</article-title>
+          <source>Arch Neurol</source>
+          <year>2009</year>
+          <volume>66</volume>
+          <fpage>723</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">19506131</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R11">
+        <label>11</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Guerit</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Amantini</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Amodio</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Consensus on the use of neurophysiological tests in the intensive care unit (ICU): electroencephalogram (EEG), evoked potentials (EP), and electroneuromyography (ENMG)</article-title>
+          <source>Neurophysiol Clin</source>
+          <year>2009</year>
+          <volume>39</volume>
+          <fpage>71</fpage>
+          <lpage>83</lpage>
+          <pub-id pub-id-type="pmid">19467437</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R12">
+        <label>12</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Abend</surname>
+              <given-names>NS</given-names>
+            </name>
+            <name>
+              <surname>Licht</surname>
+              <given-names>DJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Predicting outcome in children with hypoxic ischemic encephalopathy</article-title>
+          <source>Pediatr Crit Care Med</source>
+          <year>2008</year>
+          <volume>9</volume>
+          <fpage>32</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">18477911</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R13">
+        <label>13</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nishisaki</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Sullivan</surname>
+              <given-names>J</given-names>
+              <suffix>3rd</suffix>
+            </name>
+            <name>
+              <surname>Steger</surname>
+              <given-names>B</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Retrospective analysis of the prognostic value of electroencephalography patterns obtained in pediatric in-hospital cardiac arrest survivors during three years</article-title>
+          <source>Pediatr Crit Care Med</source>
+          <year>2007</year>
+          <volume>8</volume>
+          <fpage>10</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">17251876</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R14">
+        <label>14</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kessler</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Topjian</surname>
+              <given-names>AA</given-names>
+            </name>
+            <name>
+              <surname>Guterrez-Colina</surname>
+              <given-names>AM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Short-term outcome prediction by electroencephalographic features in children treated with therapeutic hypothermia after cardiac arrest</article-title>
+          <source>Neurocritical Care</source>
+          <year>2011</year>
+          <volume>14</volume>
+          <fpage>37</fpage>
+          <lpage>43</lpage>
+          <pub-id pub-id-type="pmid">20890677</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R15">
+        <label>15</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kravljanac</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Jovic</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Djuric</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Outcome of status epilepticus in children treated in the intensive care unit: a study of 302 cases</article-title>
+          <source>Epilepsia</source>
+          <year>2011</year>
+          <volume>52</volume>
+          <fpage>358</fpage>
+          <lpage>63</lpage>
+          <pub-id pub-id-type="pmid">21269297</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R16">
+        <label>16</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pampiglione</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Harden</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Resuscitation after cardiocirculatory arrest. Prognostic evaluation of early electroencephalographic findings</article-title>
+          <source>Lancet</source>
+          <year>1968</year>
+          <volume>1</volume>
+          <fpage>1261</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="pmid">4172132</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R17">
+        <label>17</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tasker</surname>
+              <given-names>RC</given-names>
+            </name>
+            <name>
+              <surname>Boyd</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Harden</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Matthew</surname>
+              <given-names>DJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Monitoring in non-traumatic coma. Part II: Electroencephalography</article-title>
+          <source>Arch Dis Child</source>
+          <year>1988</year>
+          <volume>63</volume>
+          <fpage>895</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">3415324</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R18">
+        <label>18</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cheliout-Heraut</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Sale-Franque</surname>
+              <given-names>F</given-names>
+            </name>
+            <name>
+              <surname>Hubert</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Bataille</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Cerebral anoxia in near-drowning of children. The prognostic value of EEG</article-title>
+          <source>Neurophysiol Clin</source>
+          <year>1991</year>
+          <volume>21</volume>
+          <fpage>121</fpage>
+          <lpage>32</lpage>
+          <pub-id pub-id-type="pmid">1921939</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R19">
+        <label>19</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ramachandrannair</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Sharma</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Weiss</surname>
+              <given-names>SK</given-names>
+            </name>
+            <name>
+              <surname>Cortez</surname>
+              <given-names>MA</given-names>
+            </name>
+          </person-group>
+          <article-title>Reactive EEG patterns in pediatric coma</article-title>
+          <source>Pediatr Neurol</source>
+          <year>2005</year>
+          <volume>33</volume>
+          <fpage>345</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">16243222</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R20">
+        <label>20</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mandel</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Martinot</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Delepoulle</surname>
+              <given-names>F</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Prediction of outcome after hypoxic-ischemic encephalopathy: a prospective clinical and electrophysiologic study</article-title>
+          <source>J Pediatr</source>
+          <year>2002</year>
+          <volume>141</volume>
+          <fpage>45</fpage>
+          <lpage>50</lpage>
+          <pub-id pub-id-type="pmid">12091850</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R21">
+        <label>21</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Pampiglione</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Chaloner</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Harden</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>O’Brien</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Transitory ischemia/anoxia in young children and the prediction of quality of survival</article-title>
+          <source>Ann N Y Acad Sci</source>
+          <year>1978</year>
+          <volume>315</volume>
+          <fpage>281</fpage>
+          <lpage>92</lpage>
+          <pub-id pub-id-type="pmid">284740</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R22">
+        <label>22</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Evans</surname>
+              <given-names>BM</given-names>
+            </name>
+            <name>
+              <surname>Bartlett</surname>
+              <given-names>JR</given-names>
+            </name>
+          </person-group>
+          <article-title>Prediction of outcome in severe head injury based on recognition of sleep related activity in the polygraphic electroencephalogram</article-title>
+          <source>J Neurol Neurosurg Psychiatry</source>
+          <year>1995</year>
+          <volume>59</volume>
+          <fpage>17</fpage>
+          <lpage>25</lpage>
+          <pub-id pub-id-type="pmid">7608703</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R23">
+        <label>23</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rossetti</surname>
+              <given-names>AO</given-names>
+            </name>
+            <name>
+              <surname>Carrera</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Oddo</surname>
+              <given-names>M</given-names>
+            </name>
+          </person-group>
+          <article-title>Early EEG correlates of neuronal injury after brain anoxia</article-title>
+          <source>Neurology</source>
+          <year>2012</year>
+          <volume>78</volume>
+          <fpage>796</fpage>
+          <lpage>802</lpage>
+          <pub-id pub-id-type="pmid">22323758</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R24">
+        <label>24</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chong</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Hirsch</surname>
+              <given-names>LJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Which EEG patterns warrant treatment in the critically ill? Reviewing the evidence for treatment of periodic epileptiform discharges and related patterns</article-title>
+          <source>J Clin Neurophysiol</source>
+          <year>2005</year>
+          <volume>22</volume>
+          <fpage>79</fpage>
+          <lpage>91</lpage>
+          <pub-id pub-id-type="pmid">15805807</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R25">
+        <label>25</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Young</surname>
+              <given-names>GB</given-names>
+            </name>
+            <name>
+              <surname>Jordan</surname>
+              <given-names>KG</given-names>
+            </name>
+            <name>
+              <surname>Doig</surname>
+              <given-names>GS</given-names>
+            </name>
+          </person-group>
+          <article-title>An assessment of nonconvulsive seizures in the intensive care unit using continuous EEG monitoring: an investigation of variables associated with mortality</article-title>
+          <source>Neurology</source>
+          <year>1996</year>
+          <volume>47</volume>
+          <fpage>83</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">8710130</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R26">
+        <label>26</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Drislane</surname>
+              <given-names>FW</given-names>
+            </name>
+          </person-group>
+          <article-title>Presentation, Evaluation, and Treatment of Nonconvulsive Status Epilepticus</article-title>
+          <source>Epilepsy Behav</source>
+          <year>2000</year>
+          <volume>1</volume>
+          <fpage>301</fpage>
+          <lpage>314</lpage>
+          <pub-id pub-id-type="pmid">12609161</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R27">
+        <label>27</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ronner</surname>
+              <given-names>HE</given-names>
+            </name>
+            <name>
+              <surname>Ponten</surname>
+              <given-names>SC</given-names>
+            </name>
+            <name>
+              <surname>Stam</surname>
+              <given-names>CJ</given-names>
+            </name>
+            <name>
+              <surname>Uitdehaag</surname>
+              <given-names>BM</given-names>
+            </name>
+          </person-group>
+          <article-title>Inter-observer variability of the EEG diagnosis of seizures in comatose patients</article-title>
+          <source>Seizure</source>
+          <year>2009</year>
+          <volume>18</volume>
+          <fpage>257</fpage>
+          <lpage>63</lpage>
+          <pub-id pub-id-type="pmid">19046902</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R28">
+        <label>28</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cross</surname>
+              <given-names>JH</given-names>
+            </name>
+          </person-group>
+          <article-title>When is epileptic encephalopathy nonconvulsive status epilepticus?</article-title>
+          <source>Epilepsia</source>
+          <year>2007</year>
+          <volume>48 </volume>
+          <issue>Suppl 8</issue>
+          <fpage>42</fpage>
+          <lpage>3</lpage>
+          <pub-id pub-id-type="pmid">18329996</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R29">
+        <label>29</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Abend</surname>
+              <given-names>NS</given-names>
+            </name>
+            <name>
+              <surname>Gutierrez-Colina</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Topjian</surname>
+              <given-names>AA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Non-convulsive seizures are common in critically ill children</article-title>
+          <source>Neurology</source>
+          <year>2011</year>
+          <volume>76</volume>
+          <fpage>1071</fpage>
+          <lpage>1077</lpage>
+          <pub-id pub-id-type="pmid">21307352</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R30">
+        <label>30</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hosain</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Solomon</surname>
+              <given-names>GE</given-names>
+            </name>
+            <name>
+              <surname>Kobylarz</surname>
+              <given-names>EJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Electroencephalographic patterns in unresponsive pediatric patients</article-title>
+          <source>Pediatr Neurol</source>
+          <year>2005</year>
+          <volume>32</volume>
+          <fpage>162</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="pmid">15730895</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R31">
+        <label>31</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jette</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Claassen</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Emerson</surname>
+              <given-names>RG</given-names>
+            </name>
+            <name>
+              <surname>Hirsch</surname>
+              <given-names>LJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Frequency and predictors of nonconvulsive seizures during continuous electroencephalographic monitoring in critically ill children</article-title>
+          <source>Arch Neurol</source>
+          <year>2006</year>
+          <volume>63</volume>
+          <fpage>1750</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="pmid">17172615</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R32">
+        <label>32</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Abend</surname>
+              <given-names>NS</given-names>
+            </name>
+            <name>
+              <surname>Dlugos</surname>
+              <given-names>DJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Nonconvulsive status epilepticus in a pediatric intensive care unit</article-title>
+          <source>Pediatr Neurol</source>
+          <year>2007</year>
+          <volume>37</volume>
+          <fpage>165</fpage>
+          <lpage>70</lpage>
+          <pub-id pub-id-type="pmid">17765803</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R33">
+        <label>33</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Alehan</surname>
+              <given-names>FK</given-names>
+            </name>
+            <name>
+              <surname>Morton</surname>
+              <given-names>LD</given-names>
+            </name>
+            <name>
+              <surname>Pellock</surname>
+              <given-names>JM</given-names>
+            </name>
+          </person-group>
+          <article-title>Utility of electroencephalography in the pediatric emergency department</article-title>
+          <source>J Child Neurol</source>
+          <year>2001</year>
+          <volume>16</volume>
+          <fpage>484</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">11453443</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R34">
+        <label>34</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tay</surname>
+              <given-names>SK</given-names>
+            </name>
+            <name>
+              <surname>Hirsch</surname>
+              <given-names>LJ</given-names>
+            </name>
+            <name>
+              <surname>Leary</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Nonconvulsive status epilepticus in children: clinical and EEG characteristics</article-title>
+          <source>Epilepsia</source>
+          <year>2006</year>
+          <volume>47</volume>
+          <fpage>1504</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">16981867</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R35">
+        <label>35</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shahwan</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Bailey</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Shekerdemian</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Harvey</surname>
+              <given-names>AS</given-names>
+            </name>
+          </person-group>
+          <article-title>The prevalence of seizures in comatose children in the pediatric intensive care unit: A prospective video-EEG study</article-title>
+          <source>Epilepsia</source>
+          <year>2010</year>
+          <volume>51</volume>
+          <fpage>1198</fpage>
+          <lpage>1204</lpage>
+          <pub-id pub-id-type="pmid">20163439</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R36">
+        <label>36</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Abend</surname>
+              <given-names>NS</given-names>
+            </name>
+            <name>
+              <surname>Topjian</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Ichord</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Electroencephalographic monitoring during hypothermia after pediatric cardiac arrest</article-title>
+          <source>Neurology</source>
+          <year>2009</year>
+          <volume>72</volume>
+          <fpage>1931</fpage>
+          <lpage>1940</lpage>
+          <pub-id pub-id-type="pmid">19487651</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R37">
+        <label>37</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Williams</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Jarrar</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Buchhalter</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Continuous video-EEG monitoring in pediatric intensive care units</article-title>
+          <source>Epilepsia</source>
+          <year>2011</year>
+          <volume>52</volume>
+          <fpage>1130</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="pmid">21671924</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R38">
+        <label>38</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Greiner</surname>
+              <given-names>HM</given-names>
+            </name>
+            <name>
+              <surname>Holland</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Leach</surname>
+              <given-names>JL</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Nonconvulsive status epilepticus: the encephalopathic pediatric patient</article-title>
+          <source>Pediatrics</source>
+          <year>2012</year>
+          <volume>129</volume>
+          <fpage>e748</fpage>
+          <lpage>55</lpage>
+          <pub-id pub-id-type="pmid">22331332</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R39">
+        <label>39•</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kirkham</surname>
+              <given-names>FJ</given-names>
+            </name>
+            <name>
+              <surname>Wade</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>McElduff</surname>
+              <given-names>F</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Seizures in 204 comatose children: incidence and outcome</article-title>
+          <source>Intensive Care Med</source>
+          <year>2012</year>
+          <volume>38</volume>
+          <fpage>853</fpage>
+          <lpage>62</lpage>
+          <comment>A study of 204critically ill comatose children and neonates who underwent EEG monitoring. Worse outcome was associated with clinically evident seizures, electrographic seizures, higher number and longer duration electrographic seizures, and a worse EEG background score. Multivariate analysis indicated even after accounting for some variables related to encephalopathy etiology and severity, electrographic seizures were associated with worse outcome</comment>
+          <pub-id pub-id-type="pmid">22491938</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R40">
+        <label>40</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Abend</surname>
+              <given-names>NS</given-names>
+            </name>
+            <name>
+              <surname>Gutierrez-Colina</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Topjian</surname>
+              <given-names>AA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Nonconvulsive seizures are common in critically ill children</article-title>
+          <source>Neurology</source>
+          <year>2011</year>
+          <volume>76</volume>
+          <fpage>1071</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">21307352</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R41">
+        <label>41</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>McCoy</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Sharma</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Ochi</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Predictors of nonconvulsive seizures among critically ill children</article-title>
+          <source>Epilepsia</source>
+          <year>2011</year>
+          <volume>52</volume>
+          <fpage>1973</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">22003955</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R42">
+        <label>42</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schreiber</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Zelleke</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Gaillard</surname>
+              <given-names>WD</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Continuous video EEG for patients with acute encephalopathy in a pediatric intensive care unit</article-title>
+          <source>Neurocrit Care</source>
+          <year>2012</year>
+          <volume>17</volume>
+          <fpage>31</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">22565632</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R43">
+        <label>43</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dan</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Boyd</surname>
+              <given-names>SG</given-names>
+            </name>
+          </person-group>
+          <article-title>Nonconvulsive (Dialeptic) Status Epilepticus in Children</article-title>
+          <source>Current Pediatric Reviews</source>
+          <year>2005</year>
+          <volume>1</volume>
+          <fpage>7</fpage>
+          <lpage>16</lpage>
+        </element-citation>
+      </ref>
+      <ref id="R44">
+        <label>44</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Claassen</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Mayer</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Kowalski</surname>
+              <given-names>RG</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Detection of electrographic seizures with continuous EEG monitoring in critically ill patients</article-title>
+          <source>Neurology</source>
+          <year>2004</year>
+          <volume>62</volume>
+          <fpage>1743</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">15159471</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R45">
+        <label>45</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Abend</surname>
+              <given-names>NS</given-names>
+            </name>
+            <name>
+              <surname>Beslow</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Smith</surname>
+              <given-names>SE</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Seizures as a Presenting Symptom of Acute Arterial Ischemic Stroke in Childhood</article-title>
+          <source>J Pediatr</source>
+          <year>2011</year>
+          <volume>159</volume>
+          <fpage>479</fpage>
+          <lpage>483</lpage>
+          <pub-id pub-id-type="pmid">21429519</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R46">
+        <label>46</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Beslow-Kaye</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Abend</surname>
+              <given-names>NS</given-names>
+            </name>
+            <name>
+              <surname>Gindville</surname>
+              <given-names>MC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Pediatric Intracerebral Hemorrhage: Acute Symptomatic Seizures and Epilepsy</article-title>
+          <source>Archives of Neurology</source>
+          <comment>In press</comment>
+        </element-citation>
+      </ref>
+      <ref id="R47">
+        <label>47</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hahn</surname>
+              <given-names>JS</given-names>
+            </name>
+            <name>
+              <surname>Vaucher</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Bejar</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Coen</surname>
+              <given-names>RW</given-names>
+            </name>
+          </person-group>
+          <article-title>Electroencephalographic and neuroimaging findings in neonates undergoing extracorporeal membrane oxygenation</article-title>
+          <source>Neuropediatrics</source>
+          <year>1993</year>
+          <volume>24</volume>
+          <fpage>19</fpage>
+          <lpage>24</lpage>
+          <pub-id pub-id-type="pmid">8474607</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R48">
+        <label>48</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Horan</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Azzopardi</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Edwards</surname>
+              <given-names>AD</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Lack of influence of mild hypothermia on amplitude integrated-electroencephalography in neonates receiving extracorporeal membrane oxygenation</article-title>
+          <source>Early Hum Dev</source>
+          <year>2007</year>
+          <volume>83</volume>
+          <fpage>69</fpage>
+          <lpage>75</lpage>
+          <pub-id pub-id-type="pmid">16814962</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R49">
+        <label>49</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Helmers</surname>
+              <given-names>SL</given-names>
+            </name>
+            <name>
+              <surname>Wypij</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Constantinou</surname>
+              <given-names>JE</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Perioperative electroencephalographic seizures in infants undergoing repair of complex congenital cardiac defects</article-title>
+          <source>Electroencephalogr Clin Neurophysiol</source>
+          <year>1997</year>
+          <volume>102</volume>
+          <fpage>27</fpage>
+          <lpage>36</lpage>
+          <pub-id pub-id-type="pmid">9060852</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R50">
+        <label>50</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Clancy</surname>
+              <given-names>RR</given-names>
+            </name>
+            <name>
+              <surname>McGaurn</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Wernovsky</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Risk of seizures in survivors of newborn heart surgery using deep hypothermic circulatory arrest</article-title>
+          <source>Pediatrics</source>
+          <year>2003</year>
+          <volume>111</volume>
+          <fpage>592</fpage>
+          <lpage>601</lpage>
+          <pub-id pub-id-type="pmid">12612242</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R51">
+        <label>51</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gaynor</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name>
+              <surname>Nicolson</surname>
+              <given-names>SC</given-names>
+            </name>
+            <name>
+              <surname>Jarvik</surname>
+              <given-names>GP</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Increasing duration of deep hypothermic circulatory arrest is associated with an increased incidence of postoperative electroencephalographic seizures</article-title>
+          <source>J Thorac Cardiovasc Surg</source>
+          <year>2005</year>
+          <volume>130</volume>
+          <fpage>1278</fpage>
+          <lpage>86</lpage>
+          <pub-id pub-id-type="pmid">16256779</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R52">
+        <label>52</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Clancy</surname>
+              <given-names>RR</given-names>
+            </name>
+            <name>
+              <surname>Sharif</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Ichord</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Electrographic neonatal seizures after infant heart surgery</article-title>
+          <source>Epilepsia</source>
+          <year>2005</year>
+          <volume>46</volume>
+          <fpage>84</fpage>
+          <lpage>90</lpage>
+          <pub-id pub-id-type="pmid">15660772</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R53">
+        <label>53</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chock</surname>
+              <given-names>VY</given-names>
+            </name>
+            <name>
+              <surname>Reddy</surname>
+              <given-names>VM</given-names>
+            </name>
+            <name>
+              <surname>Bernstein</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Madan</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Neurologic events in neonates treated surgically for congenital heart disease</article-title>
+          <source>J Perinatol</source>
+          <year>2006</year>
+          <volume>26</volume>
+          <fpage>237</fpage>
+          <lpage>42</lpage>
+          <pub-id pub-id-type="pmid">16496014</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R54">
+        <label>54</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Schmitt</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Finckh</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Christen</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Electroencephalographic changes after pediatric cardiac surgery with cardiopulmonary bypass: is slow wave activity unfavorable?</article-title>
+          <source>Pediatr Res</source>
+          <year>2005</year>
+          <volume>58</volume>
+          <fpage>771</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">16189208</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R55">
+        <label>55</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gunn</surname>
+              <given-names>JK</given-names>
+            </name>
+            <name>
+              <surname>Beca</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Penny</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Amplitude-integrated electroencephalography and brain injury in infants undergoing Norwood-type operations</article-title>
+          <source>Ann Thorac Surg</source>
+          <year>2012</year>
+          <volume>93</volume>
+          <fpage>170</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="pmid">22075220</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R56">
+        <label>56</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hyllienmark</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Amark</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Continuous EEG monitoring in a paediatric intensive care unit</article-title>
+          <source>Eur J Paediatr Neurol</source>
+          <year>2007</year>
+          <volume>11</volume>
+          <fpage>70</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="pmid">17188917</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R57">
+        <label>57</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gutierrez-Colina</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Topjian</surname>
+              <given-names>AA</given-names>
+            </name>
+            <name>
+              <surname>Dlugos</surname>
+              <given-names>DJ</given-names>
+            </name>
+            <name>
+              <surname>Abend</surname>
+              <given-names>NS</given-names>
+            </name>
+          </person-group>
+          <article-title>EEG Monitoring in Critically Ill Children: Indications and Strategies</article-title>
+          <source>Pediatric Neurology</source>
+          <year>2012</year>
+          <volume>46</volume>
+          <fpage>158</fpage>
+          <lpage>161</lpage>
+          <pub-id pub-id-type="pmid">22353290</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R58">
+        <label>58•</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Topjian</surname>
+              <given-names>AA</given-names>
+            </name>
+            <name>
+              <surname>Gutierrez-Colina</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Sanchez</surname>
+              <given-names>SM</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Electrographic Status Epilepticus is Associated with Mortality and Worse Short-Term Outcome in Critically Ill Children</article-title>
+          <source>Critical Care Medicine</source>
+          <comment>In press A prospective study of critically ill children who underwent EEG monitoring for altered mental status and an acute neurologic problem. Electrographic seizures occurred in 21% and electrographic status epilepticus occurred in 22%. Multivariate analysis indicated even after accounting for some variables related to encephalopathy etiology and severity, electrographic status epilepticus (but not electrographic seizures) was associated with an increased risk of mortality and neurologic morbidity</comment>
+        </element-citation>
+      </ref>
+      <ref id="R59">
+        <label>59</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lambrechtsen</surname>
+              <given-names>FA</given-names>
+            </name>
+            <name>
+              <surname>Buchhalter</surname>
+              <given-names>JR</given-names>
+            </name>
+          </person-group>
+          <article-title>Aborted and refractory status epilepticus in children: a comparative analysis</article-title>
+          <source>Epilepsia</source>
+          <year>2008</year>
+          <volume>49</volume>
+          <fpage>615</fpage>
+          <lpage>25</lpage>
+          <pub-id pub-id-type="pmid">18093148</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R60">
+        <label>60</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gaynor</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name>
+              <surname>Jarvik</surname>
+              <given-names>GP</given-names>
+            </name>
+            <name>
+              <surname>Bernbaum</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The relationship of postoperative electrographic seizures to neurodevelopmental outcome at 1 year of age after neonatal and infant cardiac surgery</article-title>
+          <source>J Thorac Cardiovasc Surg</source>
+          <year>2006</year>
+          <volume>131</volume>
+          <fpage>181</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">16399310</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R61">
+        <label>61</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bellinger</surname>
+              <given-names>DC</given-names>
+            </name>
+            <name>
+              <surname>Jonas</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Rappaport</surname>
+              <given-names>LA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Developmental and neurologic status of children after heart surgery with hypothermic circulatory arrest or low-flow cardiopulmonary bypass</article-title>
+          <source>N Engl J Med</source>
+          <year>1995</year>
+          <volume>332</volume>
+          <fpage>549</fpage>
+          <lpage>55</lpage>
+          <pub-id pub-id-type="pmid">7838188</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R62">
+        <label>62</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rappaport</surname>
+              <given-names>LA</given-names>
+            </name>
+            <name>
+              <surname>Wypij</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Bellinger</surname>
+              <given-names>DC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Relation of seizures after cardiac surgery in early infancy to neurodevelopmental outcome. Boston Circulatory Arrest Study Group</article-title>
+          <source>Circulation</source>
+          <year>1998</year>
+          <volume>97</volume>
+          <fpage>773</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">9498541</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R63">
+        <label>63</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bellinger</surname>
+              <given-names>DC</given-names>
+            </name>
+            <name>
+              <surname>Wypij</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Kuban</surname>
+              <given-names>KC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Developmental and neurological status of children at 4 years of age after heart surgery with hypothermic circulatory arrest or low-flow cardiopulmonary bypass</article-title>
+          <source>Circulation</source>
+          <year>1999</year>
+          <volume>100</volume>
+          <fpage>526</fpage>
+          <lpage>32</lpage>
+          <pub-id pub-id-type="pmid">10430767</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R64">
+        <label>64•</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bellinger</surname>
+              <given-names>DC</given-names>
+            </name>
+            <name>
+              <surname>Wypij</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Rivkin</surname>
+              <given-names>MJ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Adolescents with d-transposition of the great arteries corrected with the arterial switch procedure: neuropsychological assessment and structural brain imaging</article-title>
+          <source>Circulation</source>
+          <year>2011</year>
+          <volume>124</volume>
+          <fpage>1361</fpage>
+          <lpage>9</lpage>
+          <comment>Long-term follow-up of prospectively enrolled children with D-transposition of the great arteries who underwent an arterial switch operation and postoperative EEG monitoring with successive neurodevelopmental assessments. The presence of postoperative electrographic seizures was the medical variable most consistently associated with worse outcome when evaluated in follow-up as adolescents</comment>
+          <pub-id pub-id-type="pmid">21875911</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R65">
+        <label>65</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Carrera</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Claassen</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Oddo</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Continuous electroencephalographic monitoring in critically ill patients with central nervous system infections</article-title>
+          <source>Arch Neurol</source>
+          <year>2008</year>
+          <volume>65</volume>
+          <fpage>1612</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">19064748</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R66">
+        <label>66</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Claassen</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Jette</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Chum</surname>
+              <given-names>F</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Electrographic seizures and periodic discharges after intracerebral hemorrhage</article-title>
+          <source>Neurology</source>
+          <year>2007</year>
+          <volume>69</volume>
+          <fpage>1356</fpage>
+          <lpage>65</lpage>
+          <pub-id pub-id-type="pmid">17893296</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R67">
+        <label>67</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Oddo</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Carrera</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Claassen</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Continuous electroencephalography in the medical intensive care unit</article-title>
+          <source>Crit Care Med</source>
+          <year>2009</year>
+          <volume>37</volume>
+          <fpage>2051</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="pmid">19384197</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R68">
+        <label>68</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vespa</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>Miller</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>McArthur</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Nonconvulsive electrographic seizures after traumatic brain injury result in a delayed, prolonged increase in intracranial pressure and metabolic crisis</article-title>
+          <source>Crit Care Med</source>
+          <year>2007</year>
+          <volume>35</volume>
+          <fpage>2830</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="pmid">18074483</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R69">
+        <label>69</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vespa</surname>
+              <given-names>PM</given-names>
+            </name>
+            <name>
+              <surname>McArthur</surname>
+              <given-names>DL</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Nonconvulsive seizures after traumatic brain injury are associated with hippocampal atrophy</article-title>
+          <source>Neurology</source>
+          <year>2010</year>
+          <volume>75</volume>
+          <fpage>792</fpage>
+          <lpage>8</lpage>
+          <pub-id pub-id-type="pmid">20805525</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R70">
+        <label>70</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gwer</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Idro</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Fegan</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Continuous EEG monitoring in Kenyan children with non-traumatic coma</article-title>
+          <source>Arch Dis Child</source>
+          <year>2012</year>
+          <volume>97</volume>
+          <fpage>343</fpage>
+          <lpage>9</lpage>
+          <pub-id pub-id-type="pmid">22328741</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R71">
+        <label>71</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Trevathan</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Ellen</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Grass Lecture: Rapid EEG analysis for intensive care decisions in status epilepticus</article-title>
+          <source>Am J Electroneurodiagnostic Technol</source>
+          <year>2006</year>
+          <volume>46</volume>
+          <fpage>4</fpage>
+          <lpage>17</lpage>
+          <pub-id pub-id-type="pmid">16605169</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R72">
+        <label>72</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Riviello</surname>
+              <given-names>JJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Digital trend analysis in the pediatric and neonatal intensive care units (ICU)</article-title>
+          <source>Journal of Clinical Neurophysiology</source>
+          <comment>In press</comment>
+        </element-citation>
+      </ref>
+      <ref id="R73">
+        <label>73</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Scheuer</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Wilson</surname>
+              <given-names>SB</given-names>
+            </name>
+          </person-group>
+          <article-title>Data analysis for continuous EEG monitoring in the ICU: seeing the forest and the trees</article-title>
+          <source>J Clin Neurophysiol</source>
+          <year>2004</year>
+          <volume>21</volume>
+          <fpage>353</fpage>
+          <lpage>78</lpage>
+          <pub-id pub-id-type="pmid">15592009</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R74">
+        <label>74</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Boylan</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Burgoyne</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Moore</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>An international survey of EEG use in the neonatal intensive care unit</article-title>
+          <source>Acta Paediatr</source>
+          <year>2010</year>
+          <volume>99</volume>
+          <fpage>1150</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="pmid">20353503</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R75">
+        <label>75</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ponnusamy</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Nath</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Bissett</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Current availability of cerebral function monitoring and hypothermia therapy in UK neonatal units</article-title>
+          <source>Arch Dis Child Fetal Neonatal Ed</source>
+          <year>2010</year>
+          <volume>95</volume>
+          <fpage>F383</fpage>
+          <lpage>4</lpage>
+          <pub-id pub-id-type="pmid">20530100</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R76">
+        <label>76</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Filippi</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Catarzi</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Gozzini</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Hypothermia for neonatal hypoxic-ischemic encephalopathy: may an early amplitude-integrated EEG improve the selection of candidates for cooling?</article-title>
+          <source>J Matern Fetal Neonatal Med</source>
+          <year>2012</year>
+          <volume>25</volume>
+          <fpage>2171</fpage>
+          <lpage>6</lpage>
+          <pub-id pub-id-type="pmid">22506547</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R77">
+        <label>77</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shellhaas</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Soaita</surname>
+              <given-names>AI</given-names>
+            </name>
+            <name>
+              <surname>Clancy</surname>
+              <given-names>RR</given-names>
+            </name>
+          </person-group>
+          <article-title>Sensitivity of amplitude-integrated electroencephalography for neonatal seizure detection</article-title>
+          <source>Pediatrics</source>
+          <year>2007</year>
+          <volume>120</volume>
+          <fpage>770</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">17908764</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R78">
+        <label>78</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lawrence</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Mathur</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Nguyen The Tich</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A pilot study of continuous limited-channel aEEG in term infants with encephalopathy</article-title>
+          <source>J Pediatr</source>
+          <year>2009</year>
+          <volume>154</volume>
+          <fpage>835</fpage>
+          <lpage>41</lpage>
+          <fpage>e1</fpage>
+          <pub-id pub-id-type="pmid">19230897</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R79">
+        <label>79</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Frenkel</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Friger</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Meledin</surname>
+              <given-names>I</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Neonatal seizure recognition - Comparative study of continuous-amplitude integrated EEG versus short conventional EEG recordings</article-title>
+          <source>Clin Neurophysiol</source>
+          <year>2011</year>
+          <volume>122</volume>
+          <fpage>1091</fpage>
+          <lpage>7</lpage>
+          <pub-id pub-id-type="pmid">21216190</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R80">
+        <label>80</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Evans</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Koh</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Lerner</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Accuracy of amplitude integrated EEG in a neonatal cohort</article-title>
+          <source>Arch Dis Child Fetal Neonatal Ed</source>
+          <year>2010</year>
+          <volume>95</volume>
+          <fpage>F169</fpage>
+          <lpage>73</lpage>
+          <pub-id pub-id-type="pmid">20444809</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R81">
+        <label>81</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shah</surname>
+              <given-names>DK</given-names>
+            </name>
+            <name>
+              <surname>Mackay</surname>
+              <given-names>MT</given-names>
+            </name>
+            <name>
+              <surname>Lavery</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Accuracy of bedside electroencephalographic monitoring in comparison with simultaneous continuous conventional electroencephalography for seizure detection in term infants</article-title>
+          <source>Pediatrics</source>
+          <year>2008</year>
+          <volume>121</volume>
+          <fpage>1146</fpage>
+          <lpage>54</lpage>
+          <pub-id pub-id-type="pmid">18519484</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R82">
+        <label>82</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shellhaas</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Barks</surname>
+              <given-names>AK</given-names>
+            </name>
+          </person-group>
+          <article-title>Impact of amplitude-integrated electroencephalograms on clinical care for neonates with seizures</article-title>
+          <source>Pediatr Neurol</source>
+          <year>2012</year>
+          <volume>46</volume>
+          <fpage>32</fpage>
+          <lpage>5</lpage>
+          <pub-id pub-id-type="pmid">22196488</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R83">
+        <label>83</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>van Rooij</surname>
+              <given-names>LG</given-names>
+            </name>
+            <name>
+              <surname>Toet</surname>
+              <given-names>MC</given-names>
+            </name>
+            <name>
+              <surname>van Huffelen</surname>
+              <given-names>AC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Effect of treatment of subclinical neonatal seizures detected with aEEG: randomized, controlled trial</article-title>
+          <source>Pediatrics</source>
+          <year>2010</year>
+          <volume>125</volume>
+          <fpage>e358</fpage>
+          <lpage>66</lpage>
+          <pub-id pub-id-type="pmid">20100767</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R84">
+        <label>84</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shellhaas</surname>
+              <given-names>RA</given-names>
+            </name>
+            <name>
+              <surname>Chang</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Tsuchida</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The American Clinical Neurophysiology Society’s Guideline on Continuous Electroencephalography Monitoring in Neonates</article-title>
+          <source>J Clin Neurophysiol</source>
+          <year>2011</year>
+        </element-citation>
+      </ref>
+      <ref id="R85">
+        <label>85•</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Stewart</surname>
+              <given-names>CP</given-names>
+            </name>
+            <name>
+              <surname>Otsubo</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Ochi</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Seizure identification in the ICU using quantitative EEG displays</article-title>
+          <source>Neurology</source>
+          <year>2010</year>
+          <volume>75</volume>
+          <fpage>1501</fpage>
+          <lpage>8</lpage>
+          <comment>Study of the diagnostic accuracy of two quantitative EEG display tools for seizure identification in critically ill children by neurophysiologists. The median sensitivity for seizure identification across all recordings was 83% with color density spectral array and 82% with amplitude- integrated EEG, but for individual recordings the sensitivities ranged from 0–100%. False positive rates were low</comment>
+          <pub-id pub-id-type="pmid">20861452</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R86">
+        <label>86</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Akman</surname>
+              <given-names>CI</given-names>
+            </name>
+            <name>
+              <surname>Micic</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Thompson</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Riviello</surname>
+              <given-names>JJ</given-names>
+              <suffix>Jr</suffix>
+            </name>
+          </person-group>
+          <article-title>Seizure detection using digital trend analysis: Factors affecting utility</article-title>
+          <source>Epilepsy Res</source>
+          <year>2011</year>
+          <volume>93</volume>
+          <fpage>66</fpage>
+          <lpage>72</lpage>
+          <pub-id pub-id-type="pmid">21146370</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R87">
+        <label>87</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Glaria</surname>
+              <given-names>AP</given-names>
+            </name>
+            <name>
+              <surname>Murray</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Comparison of EEG monitoring techniques: an evaluation during cardiac surgery</article-title>
+          <source>Electroencephalogr Clin Neurophysiol</source>
+          <year>1985</year>
+          <volume>61</volume>
+          <fpage>323</fpage>
+          <lpage>30</lpage>
+          <pub-id pub-id-type="pmid">2411511</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R88">
+        <label>88</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Abend</surname>
+              <given-names>NS</given-names>
+            </name>
+            <name>
+              <surname>Gutierrez-Colina</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Interobserver reproducibility of electroencephalogram interpretation in critically ill children</article-title>
+          <source>Journal of Clinical Neurophysiology</source>
+          <year>2011</year>
+          <volume>28</volume>
+          <fpage>15</fpage>
+          <lpage>19</lpage>
+          <pub-id pub-id-type="pmid">21221016</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R89">
+        <label>89</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kull</surname>
+              <given-names>LL</given-names>
+            </name>
+            <name>
+              <surname>Emerson</surname>
+              <given-names>RG</given-names>
+            </name>
+          </person-group>
+          <article-title>Continuous EEG monitoring in the intensive care unit: technical and staffing considerations</article-title>
+          <source>J Clin Neurophysiol</source>
+          <year>2005</year>
+          <volume>22</volume>
+          <fpage>107</fpage>
+          <lpage>18</lpage>
+          <pub-id pub-id-type="pmid">15805810</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R90">
+        <label>90</label>
+        <element-citation publication-type="journal">
+          <collab>American-Society-of-Electroneurodiagnostic-Technologists</collab>
+          <article-title>National competency skill standards for ICU/cEEG monitoring</article-title>
+          <source>Am J Electroneurodiagnostic Technol</source>
+          <year>2008</year>
+          <volume>48</volume>
+          <fpage>258</fpage>
+          <lpage>64</lpage>
+          <pub-id pub-id-type="pmid">19203079</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R91">
+        <label>91</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kolls</surname>
+              <given-names>BJ</given-names>
+            </name>
+            <name>
+              <surname>Husain</surname>
+              <given-names>AM</given-names>
+            </name>
+          </person-group>
+          <article-title>Assessment of hairline EEG as a screening tool for nonconvulsive status epilepticus</article-title>
+          <source>Epilepsia</source>
+          <year>2007</year>
+          <volume>48</volume>
+          <fpage>959</fpage>
+          <lpage>65</lpage>
+          <pub-id pub-id-type="pmid">17433054</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="R92">
+        <label>92</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Benbadis</surname>
+              <given-names>SR</given-names>
+            </name>
+          </person-group>
+          <article-title>Use and abuse of stat EEG</article-title>
+          <source>Am J Electroneurodiagnostic Technol</source>
+          <year>2009</year>
+          <volume>49</volume>
+          <fpage>87</fpage>
+          <lpage>93</lpage>
+          <pub-id pub-id-type="pmid">19388550</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+  <floats-group>
+    <fig id="F1" orientation="portrait" position="float">
+      <label>Figure 1</label>
+      <caption>
+        <p>Appearance of seizures on a 4-hour quantitative EEG display. A) Timing of electrographic seizures identified by review of the raw EEG; B) Color Density Spectral Array (CDSA) trend depicts seizures as bright bands of color; C) Amplitude-integrated EEG (aEEG) trend depicts seizures as elevations in the lower and upper margins of the tracing. Note that not all electrographic seizures identified by raw EEG are equally recognizable on the CDSA or aEEG trends.</p>
+      </caption>
+      <graphic xlink:href="nihms437639f1"/>
+    </fig>
+    <table-wrap id="T1" position="float" orientation="portrait">
+      <label>Table 1</label>
+      <caption>
+        <p>Common Indications for CEEG Monitoring in the PICU</p>
+      </caption>
+      <table frame="void" rules="none">
+        <tbody>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Clinical scenarios in which CEEG monitoring should be considered</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Refractory status epilepticus</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Acute encephalopathy</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">  With prior clinical seizures</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">  With acute brain injury</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">  Unexplained</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Neuromuscular blockade, with acute brain injury</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Characterization of clinical events suspected to be seizures</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Intracranial pressure management</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1">Specific diagnoses &amp; treatments where CEEG monitoring should be considered</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Status epilepticus</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Traumatic brain injury (accidental, non-accidental)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Hypoxic-ischemic brain injury (neonatal, cardiac arrest, near drowning)</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Extracorporeal membrane oxygenation (ECMO) therapy</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Acute ischemic or hemorrhagic stroke</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Post-cardiac surgery</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Post-neurosurgery</td>
+          </tr>
+          <tr>
+            <td align="left" valign="top" rowspan="1" colspan="1"> Acute metabolic encephalopathy (sepsis, hepatic, renal)</td>
+          </tr>
+        </tbody>
+      </table>
+    </table-wrap>
+  </floats-group>
+</article>
