@@ -7,6 +7,8 @@ import xml.etree.ElementTree as ET
 
 import requests
 
+from .article_retriever import ArticleRetriever
+
 logger = logging.getLogger(__name__)
 
 
@@ -22,7 +24,17 @@ class FullTextResult:
 
 
 class PubMedFullTextRetriever:
-    """Retrieve PMC full text for PubMed papers (HTML preferred, PDF fallback)."""
+    """Retrieve PMC full text for PubMed papers (HTML preferred, XML fallback)."""
+
+    _CHALLENGE_MARKERS = (
+        "g-recaptcha",
+        "captcha-container",
+        "challenge-platform",
+        "unusual traffic",
+        "please verify you are human",
+        "please verify you're a human",
+        "are you a robot",
+    )
 
     def __init__(
         self,
@@ -35,14 +47,14 @@ class PubMedFullTextRetriever:
     ) -> None:
         self.email = email or os.getenv("NCBI_EMAIL")
         self.tool = tool
-        self.api_key = api_key
+        self.api_key = api_key or os.getenv("NCBI_API_KEY")
         self.base_url = base_url.rstrip("/")
         self.timeout = timeout
         self.session = session or requests.Session()
         self.session.headers.update(self._default_headers())
 
-    def retrieve(self, pmid: str, prefer: str = "html", fallback: bool = True) -> FullTextResult:
-        """Return full text when available. Prefer PMC HTML/PDF, fallback to OA sources."""
+    def retrieve(self, pmid: str, fallback: bool = True) -> FullTextResult:
+        """Return full text when available. Prefer PMC HTML, fall back to XML/OA sources."""
         pmcid = self._find_pmcid(pmid)
         if not pmcid and fallback:
             fallback_result = self._fetch_unpaywall(pmid)
@@ -53,40 +65,17 @@ class PubMedFullTextRetriever:
                 "Provide an email to enable Unpaywall fallback."
             )
 
-        prefer = prefer.lower()
-        if prefer not in {"html", "pdf"}:
-            raise ValueError("prefer must be 'html' or 'pdf'.")
-
-        if prefer == "html":
-            html_result = self._fetch_html(pmid, pmcid)
-            if html_result.code < 400:
-                return html_result
-            logger.warning(
-                "HTML fetch failed for %s (%s): %s",
-                pmid,
-                pmcid,
-                html_result.code,
+        html_result = self._fetch_html(pmid, pmcid)
+        if html_result.code < 400:
+            return html_result
+        logger.warning(
+            "HTML fetch failed for %s (%s): %s", pmid, pmcid, html_result.code
+        )
+        if not fallback:
+            raise ValueError(
+                f"HTML fetch failed for {pmid} ({pmcid}): {html_result.code}. "
+                "Provide an email to enable Unpaywall fallback."
             )
-            if not fallback:
-                raise ValueError(
-                    f"HTML fetch failed for {pmid} ({pmcid}): {html_result.code}. "
-                    "Provide an email to enable Unpaywall fallback."
-                )
-            pdf_result = self._fetch_pdf(pmid, pmcid)
-            if pdf_result.code < 400:
-                return pdf_result
-            logger.warning(
-                "PDF fetch failed for %s (%s): %s",
-                pmid,
-                pmcid,
-                pdf_result.code,
-            )
-            return self._fetch_xml(pmid, pmcid)
-
-        pdf_result = self._fetch_pdf(pmid, pmcid)
-        if pdf_result.code < 400:
-            return pdf_result
-        logger.warning("PDF fetch failed for %s (%s): %s", pmid, pmcid, pdf_result.code)
         return self._fetch_xml(pmid, pmcid)
 
     def _fetch_html(self, pmid: str, pmcid: str) -> FullTextResult:
@@ -104,8 +93,20 @@ class PubMedFullTextRetriever:
                 url=url,
                 code=response.status_code,
             )
+        content = response.content.decode("utf-8", errors="ignore")
+        if self._is_challenge_page(content):
+            logger.warning(
+                "Challenge page detected for %s (%s); falling back", pmid, pmcid
+            )
+            return FullTextResult(
+                pmid=pmid,
+                pmcid=pmcid,
+                content_type="text/html",
+                content=content,
+                url=url,
+                code=403,
+            )
         logger.info("PubMedFullTextRetriever: fetched HTML for %s", pmcid)
-        content = response.content.decode("utf-8")
         return FullTextResult(
             pmid=pmid,
             pmcid=pmcid,
@@ -115,30 +116,12 @@ class PubMedFullTextRetriever:
             code=response.status_code,
         )
 
-    def _fetch_pdf(self, pmid: str, pmcid: str) -> FullTextResult:
-        url = f"https://www.ncbi.nlm.nih.gov/pmc/articles/{pmcid}/pdf/"
-        response = self.session.get(url, timeout=self.timeout)
-        try:
-            response.raise_for_status()
-        except requests.exceptions.HTTPError as exc:
-            logger.warning("PDF fetch failed for %s (%s): %s", pmid, pmcid, exc)
-            return FullTextResult(
-                pmid=pmid,
-                pmcid=pmcid,
-                content_type="application/pdf",
-                content=response.content,
-                url=url,
-                code=response.status_code,
-            )
-        logger.info("PubMedFullTextRetriever: fetched PDF for %s", pmcid)
-        return FullTextResult(
-            pmid=pmid,
-            pmcid=pmcid,
-            content_type="application/pdf",
-            content=response.content,
-            url=url,
-            code=response.status_code,
-        )
+    @classmethod
+    def _is_challenge_page(cls, html: str) -> bool:
+        if not html:
+            return False
+        lowered = html.lower()
+        return any(marker in lowered for marker in cls._CHALLENGE_MARKERS)
 
     def _fetch_xml(self, pmid: str, pmcid: str) -> FullTextResult:
         params: Dict[str, str] = {
@@ -173,7 +156,6 @@ class PubMedFullTextRetriever:
         )
 
     def _fetch_html_with_article_retriever(self, pmid: str) -> FullTextResult:
-        from biomarker_curator.utils.article_retriever import ArticleRetriever
 
         retriever = ArticleRetriever()
         res, html_content, code = retriever.request_article(pmid)

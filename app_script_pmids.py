@@ -39,6 +39,7 @@ from extractor.constants import PipelineTypeEnum
 from extractor.database.pmid_db import PMIDDB
 from extractor.log_utils import initialize_logger
 from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
+from extractor.pmid_extractor.pubmed_fulltext import PubMedFullTextRetriever
 from extractor.utils import (
     convert_html_to_text_no_table,
     convert_sections_to_full_text,
@@ -106,6 +107,7 @@ def prepare_data_by_pmids_csv_file(csv_pmids_fn: str, pmid_db: PMIDDB) -> list[s
     csv_path = Path(csv_pmids_fn)
     base_dir = csv_path.parent
     extractor = HtmlTableExtractor()
+    fulltext_retriever = PubMedFullTextRetriever()
     inserted = skipped = failed = 0
     pmids = []
 
@@ -120,8 +122,8 @@ def prepare_data_by_pmids_csv_file(csv_pmids_fn: str, pmid_db: PMIDDB) -> list[s
 
             if row_idx == 1 and pmid.lower() in {"pmid", "pmcid"}:
                 continue
-            if not pmid or not html_path:
-                logger.warning(f"Row {row_idx}: missing pmid or html file path. Skipping.")
+            if not pmid:
+                logger.warning(f"Row {row_idx}: missing pmid. Skipping.")
                 skipped += 1
                 continue
             if pmid_db.select_pmid_info(pmid) is not None:
@@ -130,16 +132,49 @@ def prepare_data_by_pmids_csv_file(csv_pmids_fn: str, pmid_db: PMIDDB) -> list[s
                 skipped += 1
                 continue
 
-            html_file = Path(html_path)
-            if not html_file.is_absolute():
-                html_file = (base_dir / html_file).resolve()
+            if html_path:
+                html_file = Path(html_path)
+                if not html_file.is_absolute():
+                    html_file = (base_dir / html_file).resolve()
 
-            try:
-                html_content = html_file.read_text(encoding="utf-8", errors="ignore")
-            except OSError as e:
-                logger.error(f"Row {row_idx}: failed to read {html_file}: {e}")
-                failed += 1
-                continue
+                try:
+                    html_content = html_file.read_text(encoding="utf-8", errors="ignore")
+                except OSError as e:
+                    logger.error(f"Row {row_idx}: failed to read {html_file}: {e}")
+                    failed += 1
+                    continue
+            else:
+                try:
+                    result = fulltext_retriever.retrieve(pmid, fallback=True)
+                except Exception as e:
+                    logger.error(
+                        f"Row {row_idx}: failed to retrieve full text for PMID {pmid}: {e}"
+                    )
+                    failed += 1
+                    continue
+
+                if result.code >= 400 or not result.content:
+                    logger.error(
+                        f"Row {row_idx}: full text retrieval for PMID {pmid} "
+                        f"returned code {result.code}"
+                    )
+                    failed += 1
+                    continue
+
+                if (result.content_type or "").split(";")[0].strip() != "text/html" and \
+                    (result.content_type or "").split(";")[0].strip() != "application/xml":
+                    logger.error(
+                        f"Row {row_idx}: unsupported content type "
+                        f"'{result.content_type}' for PMID {pmid}"
+                    )
+                    failed += 1
+                    continue
+
+                html_content = (
+                    result.content
+                    if isinstance(result.content, str)
+                    else result.content.decode("utf-8", errors="ignore")
+                )
 
             try:
                 tables = extractor.extract_tables(html_content) or []
