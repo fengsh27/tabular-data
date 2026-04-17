@@ -6,11 +6,8 @@ BASELINE = "baseline"
 class BenchmarkType(Enum):
     UNKNOWN = "unknown"
     PK_SUMMARY = "pk-summary"
-    PK_SUMMARY_BASELINE = "pk-summary-baseline"
     PK_INDIVIDUAL = "pk-individual"
-    PK_INDIVIDUAL_BASELINE = "pk-individual-baseline"
     PE = "pe"
-    PE_BASELINE = "pe-baseline"
 
 
 class LLModelType(Enum):
@@ -23,7 +20,7 @@ class LLModelType(Enum):
     GEMINI25FLASHLITE = "gemini25flashlite"
     METALLAMA4 = "metallama4"
     BASELINE = "baseline"
-    UNKNOWN = "unkown"
+    UNKNOWN = "unknown"
     GPTOSS="gpt-oss"
     QWEN3="qwen3"
     CODEX="codex"

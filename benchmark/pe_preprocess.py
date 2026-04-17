@@ -1,7 +1,4 @@
-import os
-import os.path as path
 import csv
-import shutil
 import pandas as pd
 
 """
@@ -132,67 +129,3 @@ def preprocess_table(csv_file) -> pd.DataFrame:
         return output_df
 
 
-def preprocess_PK_csv_file(pk_csv_file: str):
-    bn, extname = path.splitext(pk_csv_file)
-    orig_file = f"{bn}-original{extname}"
-    try:
-        if not os.path.exists(orig_file):
-            shutil.copyfile(pk_csv_file, orig_file)
-    except Exception as e:
-        print(str(e))
-        return False
-
-    dst_file = pk_csv_file
-    output_df = preprocess_table(orig_file)
-    output_df.to_csv(dst_file, sep=",")
-
-
-def preprocess_PK_csv_files(pk_csv_files: list[str]):
-    for f in pk_csv_files:
-        res = preprocess_PK_csv_file(f)
-        if not res:
-            print(f"Failed to pre-process file: {f}")
-
-
-def process_triple_files():
-    PK_PMIDs = [
-        "15930210",
-        "18782787",
-        "30308427",
-        "33864754",
-        "34024233",
-        "34083820",
-        "34741059",
-        "35296792",
-        "35997979",
-        "36396314",
-    ]
-    pe_files = []
-    for pe_id in PK_PMIDs:
-        baseline = f"./benchmark/pe/{pe_id}_baseline.csv"
-        if path.exists(baseline):
-            pe_files.append(baseline)
-        gpt4o = f"./benchmark/pe/{pe_id}_gpt4o.csv"
-        if path.exists(gpt4o):
-            pe_files.append(gpt4o)
-        gemini = f"./benchmark/pe/{pe_id}_gemini15.csv"
-        if path.exists(gemini):
-            pe_files.append(gemini)
-    preprocess_PK_csv_files(pe_files)
-
-
-def process_single_files():
-    PE_FILES = [
-        "30308427_gemini15.csv",
-        "34741059_gemini15.csv",
-        "35296792_gemini15.csv",
-    ]
-    pe_files = []
-    for f in PE_FILES:
-        fn = f"./benchmark/pe/{f}"
-        pe_files.append(fn)
-    preprocess_PK_csv_files(pe_files)
-
-
-if __name__ == "__main__":
-    process_triple_files()

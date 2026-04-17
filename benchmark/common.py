@@ -7,7 +7,6 @@ import logging
 from enum import Enum
 
 from .constant import (
-    BASELINE,
     BenchmarkType,
     LLModelType,
 )
@@ -19,32 +18,6 @@ logger = logging.getLogger(__name__)
 def output_msg(msg: str):
     with open("./benchmark-result.log", "a+") as fobj:
         fobj.write(f"{datetime.now().isoformat()}: \n{msg}\n")
-
-
-class ResponderWithRetries:
-    """
-    Raise request to LLM with 3 retries
-    """
-
-    def __init__(self, runnable_func: Callable, retry: int = 3):
-        """
-        Args:
-        runnable_func: function to be executed, if failed, we will retry
-        """
-        self.runnable = runnable_func
-        self.retry = retry
-
-    def respond(self, args: Optional[List[Any]] = None):
-        """ """
-        response = []
-        for attempt in range(self.retry):
-            try:
-                response = self.runnable() if args == None else self.runnable(args)
-                return response
-            except Exception as e:
-                print(str(e))
-        return response
-
 
 class LLMClient(ABC):
     def __init__(self):
@@ -86,153 +59,60 @@ def _get_pmid_and_llmodel(fn: str) -> tuple[str, LLModelType | None] | None:
         return pmid, LLModelType.UNKNOWN
 
 
-def _get_benchmark_type(dir_path: str) -> BenchmarkType | None:
-    """
-    This function is to identify benchmark type from directory path, which must adhere to the following naming convention:
-    ./benchmark/data/{benchmark_type}/{target}
-
-    Examples of valid directory path:
-    - ./benchmark/data/pk-summary/2025-02-20
-    - ./benchmark/data/pk-summary/baseline
-
-    Args:
-    dir_path str: directory path
-
-    Returns:
-    benchmark type
-    """
-    if len(dir_path) == 0:
-        return None
-    dir_path = dir_path.replace("\\", "/")
-    if dir_path[-1] != "/":
-        dir_path += "/"
-    pk_summary_str = "/" + BenchmarkType.PK_SUMMARY.value + "/"
-    pe_str = "/" + BenchmarkType.PE.value + "/"
-    pk_individual_str = "/" + BenchmarkType.PK_INDIVIDUAL.value + "/"
-    if pk_summary_str in dir_path:
-        ix = dir_path.find(pk_summary_str)
-        baseline_path = dir_path[ix + len(pk_summary_str) :]
-        if baseline_path.startswith(BASELINE + "/"):
-            return BenchmarkType.PK_SUMMARY_BASELINE
-        else:
-            return BenchmarkType.PK_SUMMARY
-    if pe_str in dir_path:
-        ix = dir_path.find(pe_str)
-        baseline_path = dir_path[ix + len(pe_str) :]
-        if baseline_path.startswith(BASELINE + "/"):
-            return BenchmarkType.PE_BASELINE
-        else:
-            return BenchmarkType.PE
-    if pk_individual_str in dir_path:
-        ix = dir_path.find(pk_individual_str)
-        baseline_path = dir_path[ix + len(pk_individual_str) :]
-        if baseline_path.startswith(BASELINE + "/"):
-            return BenchmarkType.PK_INDIVIDUAL_BASELINE
-        else:
-            return BenchmarkType.PK_INDIVIDUAL
-    return BenchmarkType.UNKNOWN
-
-
 def walk_benchmark_data_directory(
     dir_path: str,
-) -> tuple[BenchmarkType, list[str, str, LLModelType]]:
+) -> list[tuple[str, str, LLModelType]]:
     """
-    Walks through the directory `dir_path` to identify all PMID table files (.csv) and their associated benchmark type.
-
-    The benchmark type is determined by {dir_path}, which must adhere to the following naming convention:
-    ./benchmark/data/{benchmark_type}/{target}
-    such as:
-    ./benchmark/data/pk-summary/baseline
-    ./benchmark/data/pk-summary/2025-02-20
-
-    The pmid and llm model are determined based on the file name, which must adhere to the following naming convention:
-    {pmid}_{model}.csv
-
-    Examples of valid file names:
-    - 16143486_gpt40.csv
-    - 16143486_baseline.csv
-
-    Supported benchmark types:
-    - pk-summary
-    - pe
-    - pk-summary-baseline
-    - pe-baseline
-    - unknown (if the benchmark type cannot be determined)
-
-    Args:
-    dir_path str: folder path
-
-    Returns:
-    A list of tuples, where each tuple contains:
-        - benchmark type
-        - a list of (PMID, file_path, model)
-
-    Raises:
-    ValueError: If the directory `dir_path` does not exist or is inaccessible.
+    Walk `dir_path` and return (pmid, file_path, model) tuples for each
+    CSV whose filename matches `{pmid}_{model}.csv`. Files with an
+    unknown model suffix are skipped.
     """
-    benchmark_type = _get_benchmark_type(dir_path)
-    try:
-        pmids = []
-        for r, _, files in os.walk(dir_path):
-            if len(files) == 0:
-                return benchmark_type
-            for f in files:
-                pmid, model = _get_pmid_and_llmodel(f)
-                if model == LLModelType.UNKNOWN:
-                    # unknown model type, ignore it
-                    continue
-                pmids.append((pmid, path.join(r, f), model))
-
-        return benchmark_type, pmids
-    except Exception as e:
-        print(e)
-        raise e
+    pmids: list[tuple[str, str, LLModelType]] = []
+    for r, _, files in os.walk(dir_path):
+        for f in files:
+            parsed = _get_pmid_and_llmodel(f)
+            if parsed is None:
+                continue
+            pmid, model = parsed
+            if model == LLModelType.UNKNOWN:
+                continue
+            pmids.append((pmid, path.join(r, f), model))
+    return pmids
 
 
 def prepare_dataset_for_benchmark(
     baseline_dir: str,
     target_dir: str,
     benchmark_type: Union[
-        BenchmarkType.PK_SUMMARY, 
-        BenchmarkType.PE, 
-        BenchmarkType.PK_INDIVIDUAL
+        BenchmarkType.PK_SUMMARY,
+        BenchmarkType.PE,
+        BenchmarkType.PK_INDIVIDUAL,
     ],
 ):
     """
-    This function is to prepare dataset for benchmark. It will walk through
-    `{baseline_dir}` and `{target_dir}` to populate returned {dataset}:
-    {
-        `{pmid}`: {
-            "baseline": `{pmid_baseline_path}`,
-            "gpt4o": `{pmid_gpt4o_path}`,
-            "gemini15": `{pmid_gemini15_path}`,
-        },
-        ...
-    }
+    Walk `baseline_dir` and `target_dir` and build::
 
-    Args:
-    baseline_dir str: baseline directory path
-    target_dir str: target directory path
-    benchmark_type BenchmarkType: benchmark type (pk-summary or pe)
+        {
+            "{pmid}": {
+                "baseline": "{pmid_baseline_path}",
+                "{model}": "{pmid_model_path}",
+                ...
+            },
+            ...
+        }
+
+    `benchmark_type` is kept for API symmetry with callers; the function
+    no longer verifies it against the directory path.
     """
-    benchmark_type = benchmark_type or BenchmarkType.PK_SUMMARY
-    dataset = {}
-    baseline_type, baseline_pmids = walk_benchmark_data_directory(baseline_dir)
-    assert baseline_type.value == benchmark_type.value + "-" + BASELINE
-    target_type, target_pmids = walk_benchmark_data_directory(target_dir)
-    assert target_type == benchmark_type
-
-    for pmid in baseline_pmids:
-        id, fn, _ = pmid
-        dataset[id] = {"baseline": fn}
-    for pmid in target_pmids:
-        id, fn, model = pmid
-        if model == LLModelType.UNKNOWN:
+    del benchmark_type  # retained for call-site symmetry
+    dataset: dict = {}
+    for pmid, fn, _ in walk_benchmark_data_directory(baseline_dir):
+        dataset[pmid] = {"baseline": fn}
+    for pmid, fn, model in walk_benchmark_data_directory(target_dir):
+        if pmid not in dataset:
+            logger.error(f"no baseline for pmid {pmid}")
             continue
-        if id not in dataset:
-            logger.error(f"no baseline for pmid {id}")
-            continue
-        dataset[id][model.value] = fn
+        dataset[pmid][model.value] = fn
 
     return dataset
 

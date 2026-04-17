@@ -1,7 +1,3 @@
-import os
-import shutil
-import os.path as path
-import csv
 from typing import Any
 import pandas as pd
 
@@ -157,32 +153,3 @@ def preprocess_pk_individual_table(csv_file: str) -> pd.DataFrame:
     df_table = normalize_dataframe_string_values(df_table)
     return df_table
 
-def preprocess_pk_summary_csv_file(pk_csv_file: str):
-    bn, extname = path.splitext(pk_csv_file)
-    orig_file = f"{bn}-original{extname}"
-    try:
-        if not os.path.exists(orig_file):
-            shutil.copyfile(pk_csv_file, orig_file)
-    except Exception as e:
-        print(str(e))
-        return False
-
-    dst_file = pk_csv_file
-    output_df = preprocess_pk_summary_table(orig_file)
-
-    # before write to csv file, remove the first column,
-    output_df = output_df.iloc[:, 1:]
-    output_df.to_csv(dst_file, sep=",")
-    return True
-
-def preprocess_pk_individual_csv_file(pk_csv_file: str):
-    df_table = pd.read_csv(pk_csv_file)
-    df_table = ensure_columns(df_table)
-    df_table = ensure_NO_column(df_table)
-    return df_table
-
-
-if __name__ == "__main__":
-    # process_single_file()
-    df = preprocess_pk_individual_table("benchmark/data/pk-individual/2025-10-25-mas/10971311_gpt4o.csv")
-    print(df)

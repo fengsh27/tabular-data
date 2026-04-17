@@ -303,45 +303,43 @@ class TablesEvaluator:
 
 
 class TablesSeparateEvaluator(TablesEvaluator):
-    """ 
-    This class is to evaluate the similarities of two tables by text and numerical value respectively.
-
-    TableSeparateEvaluator.compare(table1, table2) will return text similarity and numerical similarities.
     """
-    def __init__(self, rating_cols, anchor_cols, columns_type = None):
-        super().__init__(rating_cols, anchor_cols, columns_type)
-        self.sum_text_rating_cols = functools.reduce(
-            lambda sum, col: sum + (1 if self.columns_type[col] == ColumnType.Text else 0),
-            self.rating_cols,
-            0
-        )
-        self.sum_num_rating_cols = functools.reduce(
-            lambda sum, col: sum + (1 if self.columns_type[col] == ColumnType.Numeric else 0),
-            self.rating_cols,
-            0
-        )
+    Variant that returns (text_similarity, numeric_similarity) tuples.
+    Supports weighted rating columns via `(col, weight)` entries.
+    """
 
-    def rate_row(self, row1, row2):        
-        sum_text = 0
-        sum_numeric = 0
+    def rate_row(self, row1, row2) -> Tuple[float, float]:
+        text_sum = 0.0
+        numeric_sum = 0.0
+        text_weight_total = 0.0
+        numeric_weight_total = 0.0
         for c in self.rating_cols:
+            if isinstance(c, tuple):
+                c, weight = c
+            else:
+                weight = 1.0
             v1 = row1[c]
             v2 = row2[c]
             if self.columns_type[c] == ColumnType.Text:
-                sum_text += (1 if self._is_equal_text(v1, v2) else 0)
+                if self._is_equal_text(v1, v2):
+                    text_sum += weight
+                text_weight_total += weight
             else:
-                sum_numeric += (1 if self._is_equal_numeric(v1, v2) else 0)
+                if self._is_equal_numeric(v1, v2):
+                    numeric_sum += weight
+                numeric_weight_total += weight
         return (
-            10.0 * sum_text / float(self.sum_text_rating_cols),
-            10.0 * sum_numeric / float(self.sum_num_rating_cols)
+            10.0 * text_sum / text_weight_total if text_weight_total > 0 else 0.0,
+            10.0 * numeric_sum / numeric_weight_total if numeric_weight_total > 0 else 0.0,
         )
-    
-    def sum_scores(self, scores: list[Tuple[int, int]], less_row_num, more_row_num) -> Tuple[int, int]:
-        text_sum = functools.reduce(lambda s, i: s + i[0], scores, 0)
-        numeric_sum = functools.reduce(lambda s, i: s + i[1], scores, 0)
+
+    def sum_scores(self, scores: list[Tuple[float, float]], less_row_num, more_row_num) -> Tuple[int, int]:
+        text_sum = functools.reduce(lambda s, i: s + i[0], scores, 0.0)
+        numeric_sum = functools.reduce(lambda s, i: s + i[1], scores, 0.0)
+        denom = 10.0 * less_row_num + (more_row_num - less_row_num)
         return (
-            (int)(100.0 * (text_sum / (10.0 * less_row_num + 1 * (more_row_num - less_row_num)))),
-            (int)(100.0 * (numeric_sum / (10.0 * less_row_num + 1 * (more_row_num - less_row_num))))
+            int(100.0 * text_sum / denom),
+            int(100.0 * numeric_sum / denom),
         )
         
         

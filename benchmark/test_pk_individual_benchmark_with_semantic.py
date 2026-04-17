@@ -5,7 +5,7 @@ import logging
 
 from benchmark.comm_semantic import run_semantic_benchmark
 from benchmark.common import (
-    ensure_target_result_directory_existed, 
+    ensure_target_result_directory_existed,
     prepare_dataset_for_benchmark,
 )
 from benchmark.constant import (
@@ -22,6 +22,18 @@ baseline = os.environ.get("BASELINE", BASELINE)
 target = os.environ.get("TARGET", "2025-10-25-mas")
 baseline_dir = os.path.join("./benchmark/data/pk-individual", baseline)
 target_dir = os.path.join("./benchmark/data/pk-individual", target)
+score_mode = os.environ.get("SCORE_MODE", "combined")
+
+MODELS = [
+    LLModelType.GPT4O,
+    LLModelType.GPTOSS,
+    LLModelType.QWEN3,
+    LLModelType.CODEX,
+    LLModelType.GPT54,
+    LLModelType.GEMMA4,
+    LLModelType.QWEN35,
+]
+
 
 @pytest.fixture(scope="module")
 def prepared_dataset():
@@ -31,104 +43,23 @@ def prepared_dataset():
         benchmark_type=BenchmarkType.PK_INDIVIDUAL,
     )
 
-def test_gpt_benchmark(prepared_dataset):
+
+@pytest.fixture(scope="module")
+def result_path():
     result_dir = ensure_target_result_directory_existed(
         baseline=baseline,
         target=target,
         benchmark_type=BenchmarkType.PK_INDIVIDUAL,
     )
-    result_path = os.path.join(result_dir, "result.log")
+    return os.path.join(result_dir, "result.log")
+
+
+@pytest.mark.parametrize("model", MODELS, ids=lambda m: m.value)
+def test_semantic_benchmark(prepared_dataset, result_path, model):
     run_semantic_benchmark(
         dataset=prepared_dataset,
         benchmark_type=BenchmarkType.PK_INDIVIDUAL,
-        model=LLModelType.GPT4O,
+        model=model,
         result_file=result_path,
+        score_mode=score_mode,
     )
-
-def test_gpt_oss_benchmark(prepared_dataset):
-    result_dir = ensure_target_result_directory_existed(
-        baseline=baseline,
-        target=target,
-        benchmark_type=BenchmarkType.PK_INDIVIDUAL,
-    )
-    result_path = os.path.join(result_dir, "result.log")
-    run_semantic_benchmark(
-        dataset=prepared_dataset,
-        benchmark_type=BenchmarkType.PK_INDIVIDUAL,
-        model=LLModelType.GPTOSS,
-        result_file=result_path,
-    )
-
-def test_qwen3_benchmark(prepared_dataset):
-    result_dir = ensure_target_result_directory_existed(
-        baseline=baseline,
-        target=target,
-        benchmark_type=BenchmarkType.PK_INDIVIDUAL,
-    )
-    result_path = os.path.join(result_dir, "result.log")
-    run_semantic_benchmark(
-        dataset=prepared_dataset,
-        benchmark_type=BenchmarkType.PK_INDIVIDUAL,
-        model=LLModelType.QWEN3,
-        result_file=result_path,
-    )
-
-def test_codex_benchmark(prepared_dataset):
-    result_dir = ensure_target_result_directory_existed(
-        baseline=baseline,
-        target=target,
-        benchmark_type=BenchmarkType.PK_INDIVIDUAL,
-    )
-    result_path = os.path.join(result_dir, "result.log")
-    run_semantic_benchmark(
-        dataset=prepared_dataset,
-        benchmark_type=BenchmarkType.PK_INDIVIDUAL,
-        model=LLModelType.CODEX,
-        result_file=result_path,
-    )
-
-def test_gpt54_benchmark(prepared_dataset):
-    result_dir = ensure_target_result_directory_existed(
-        baseline=baseline,
-        target=target,
-        benchmark_type=BenchmarkType.PK_INDIVIDUAL,
-    )
-    result_path = os.path.join(result_dir, "result.log")
-    run_semantic_benchmark(
-        dataset=prepared_dataset,
-        benchmark_type=BenchmarkType.PK_INDIVIDUAL,
-        model=LLModelType.GPT54,
-        result_file=result_path,
-    )
-
-def test_gemma4_benchmark(prepared_dataset):
-    result_dir = ensure_target_result_directory_existed(
-        baseline=baseline,
-        target=target,
-        benchmark_type=BenchmarkType.PK_INDIVIDUAL,
-    )
-    result_path = os.path.join(result_dir, "result.log")
-    run_semantic_benchmark(
-        dataset=prepared_dataset,
-        benchmark_type=BenchmarkType.PK_INDIVIDUAL,
-        model=LLModelType.GEMMA4,
-        result_file=result_path,
-    )
-
-def test_qwen35_benchmark(prepared_dataset):
-    result_dir = ensure_target_result_directory_existed(
-        baseline=baseline,
-        target=target,
-        benchmark_type=BenchmarkType.PK_INDIVIDUAL,
-    )
-    result_path = os.path.join(result_dir, "result.log")
-    run_semantic_benchmark(
-        dataset=prepared_dataset,
-        benchmark_type=BenchmarkType.PK_INDIVIDUAL,
-        model=LLModelType.QWEN35,
-        result_file=result_path,
-    )
-
-
-
-
