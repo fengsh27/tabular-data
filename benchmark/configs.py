@@ -9,6 +9,12 @@ from .pe_preprocess import preprocess_table as preprocess_pe_table
 from .pk_preprocess import (
     preprocess_pk_individual_table,
     preprocess_pk_summary_table,
+    preprocess_pk_drug_summary_table,
+    preprocess_pk_specimen_summary_table,
+    preprocess_pk_population_summary_table,
+    preprocess_pk_drug_individual_table,
+    preprocess_pk_specimen_individual_table,
+    preprocess_pk_population_individual_table,
 )
 
 # ── shared column names ────────────────────────────────────────────────────────
@@ -16,6 +22,7 @@ DRUG_NAME = "Drug name"
 ANALYTE = "Analyte"
 SPECIMEN = "Specimen"
 POPULATION = "Population"
+PEDIATRIC_GESTATIONAL_AGE = "Pediatric/Gestational age"
 PREGNANCY_STAGE = "Pregnancy stage"
 PARAMETER_TYPE = "Parameter type"
 VALUE = "Value"
@@ -23,10 +30,16 @@ UNIT = "Unit"
 P_VALUE = "P value"
 LOWER_LIMIT = "Lower limit"
 HIGH_LIMIT = "High limit"
+TIME_VALUE = "Time value"
+TIME_UNIT = "Time unit"
+PATIENT_ID = "Patient ID"
+NOTE = "Note"
+PARAMETER_UNIT = "Parameter unit"
+PARAMETER_VALUE = "Parameter value"
+SUBJECT_N = "Subject N"
 
 # ── PK summary ────────────────────────────────────────────────────────────────
 SUMMARY_STATISTICS = "Summary statistics"
-SUBJECT_N = "Subject N"
 VARIATION_VALUE = "Variation value"
 VARIATION_TYPE = "Variation type"
 INTERVAL_TYPE = "Interval type"
@@ -68,14 +81,130 @@ PK_SUMMARY_ANCHOR_COLUMNS: list = [
     P_VALUE,
 ]
 
-# ── PK individual ─────────────────────────────────────────────────────────────
-PATIENT_ID = "Patient ID"
-PEDIATRIC_GESTATIONAL_AGE = "Pediatric/Gestational age"
-PARAMETER_UNIT = "Parameter unit"
-PARAMETER_VALUE = "Parameter value"
-TIME_VALUE = "Time value"
-TIME_UNIT = "Time unit"
+# ── PK drug summary ─────────────────────────────────────────────────────────────
+DRUG_METABOLITE_NAME = "Drug/Metabolite name"
+DOSE_AMOUNT = "Dose amount"
+DOSE_UNIT = "Dose unit"
+DOSE_FREQUENCY = "Dose frequency"
+DOSE_SCHEDULE = "Dose schedule"
+DOSE_ROUTE = "Dose route"
 
+PK_DRUG_SUMMARY_COLUMNS_TYPE: dict[str, ColumnType] = {
+    DRUG_METABOLITE_NAME: ColumnType.Text,
+    DOSE_AMOUNT: ColumnType.Text,
+    DOSE_UNIT: ColumnType.Text,
+    DOSE_FREQUENCY: ColumnType.Text,
+    DOSE_SCHEDULE: ColumnType.Text,
+    DOSE_ROUTE: ColumnType.Text,
+    POPULATION: ColumnType.Text,
+    PREGNANCY_STAGE: ColumnType.Text,
+    PEDIATRIC_GESTATIONAL_AGE: ColumnType.Text,
+    SUBJECT_N: ColumnType.Numeric,
+    NOTE: ColumnType.Text,
+}
+
+PK_DRUG_SUMMARY_RATING_COLUMNS: list = [
+    DRUG_METABOLITE_NAME,
+    DOSE_AMOUNT,
+    DOSE_UNIT,
+    DOSE_FREQUENCY,
+    DOSE_SCHEDULE,
+    DOSE_ROUTE,
+    POPULATION,
+    PREGNANCY_STAGE,
+    PEDIATRIC_GESTATIONAL_AGE,
+    SUBJECT_N,
+]
+PK_DRUG_SUMMARY_ANCHOR_COLUMNS: list = [
+    DRUG_METABOLITE_NAME,
+    DOSE_AMOUNT,
+    DOSE_UNIT,
+    DOSE_FREQUENCY,
+    SUBJECT_N,
+    DOSE_SCHEDULE,
+    DOSE_ROUTE,
+    POPULATION,
+    PREGNANCY_STAGE,
+    PEDIATRIC_GESTATIONAL_AGE,    
+]
+
+# ── PK specimen summary ─────────────────────────────────────────────────────────────
+SAMPLE_N = "Sample N"
+SAMPLE_TIME = "Sample time"
+
+PK_SPECIMEN_SUMMARY_COLUMNS_TYPE: dict[str, ColumnType] = {
+    SPECIMEN: ColumnType.Text,
+    SAMPLE_N: ColumnType.Numeric,
+    POPULATION: ColumnType.Text,
+    PREGNANCY_STAGE: ColumnType.Text,
+    PEDIATRIC_GESTATIONAL_AGE: ColumnType.Text,
+    SUBJECT_N: ColumnType.Numeric,
+    SAMPLE_TIME: ColumnType.Text,
+    TIME_UNIT: ColumnType.Text,
+    NOTE: ColumnType.Text,
+}
+
+PK_SPECIMEN_SUMMARY_RATING_COLUMNS: list = [
+    SPECIMEN,
+    SAMPLE_N,
+    POPULATION,
+    PREGNANCY_STAGE,
+    PEDIATRIC_GESTATIONAL_AGE,
+    SUBJECT_N,
+    SAMPLE_TIME,
+    TIME_UNIT,
+]
+PK_SPECIMEN_SUMMARY_ANCHOR_COLUMNS: list = [
+    SPECIMEN,
+    SAMPLE_N,
+    SUBJECT_N,
+    POPULATION,
+    PREGNANCY_STAGE,
+    PEDIATRIC_GESTATIONAL_AGE,
+    SAMPLE_TIME,
+    TIME_UNIT,
+]
+
+# ── PK population summary ─────────────────────────────────────────────────────────────
+CHARACTERISTIC = "Characteristic"
+CHARACTERISTIC_SUBCATEGORY = "Characteristic subcategory"
+CHARACTERISTIC_UNIT = "Characteristic unit"
+CHARACTERISTIC_VALUE = "Characteristic value"
+
+PK_POPULATION_SUMMARY_COLUMNS_TYPE: dict[str, ColumnType] = {
+    PATIENT_ID: ColumnType.Text,
+    CHARACTERISTIC: ColumnType.Text,
+    CHARACTERISTIC_SUBCATEGORY: ColumnType.Text,
+    CHARACTERISTIC_UNIT: ColumnType.Text,
+    CHARACTERISTIC_VALUE: ColumnType.Numeric,
+    POPULATION: ColumnType.Text,
+    PREGNANCY_STAGE: ColumnType.Text,
+    PEDIATRIC_GESTATIONAL_AGE: ColumnType.Text,
+    NOTE: ColumnType.Text,
+}
+
+PK_POPULATION_SUMMARY_RATING_COLUMNS: list = [
+    PATIENT_ID,
+    CHARACTERISTIC_VALUE,
+    CHARACTERISTIC,
+    CHARACTERISTIC_SUBCATEGORY,
+    CHARACTERISTIC_UNIT,
+    POPULATION,
+    PREGNANCY_STAGE,
+    PEDIATRIC_GESTATIONAL_AGE,
+]
+PK_POPULATION_SUMMARY_ANCHOR_COLUMNS: list = [
+    PATIENT_ID,
+    CHARACTERISTIC,
+    CHARACTERISTIC_SUBCATEGORY,
+    CHARACTERISTIC_UNIT,
+    CHARACTERISTIC_VALUE,
+    POPULATION,
+    PREGNANCY_STAGE,
+    PEDIATRIC_GESTATIONAL_AGE,
+]
+
+# ── PK individual ─────────────────────────────────────────────────────────────
 PK_INDIVIDUAL_COLUMNS_TYPE: dict[str, ColumnType] = {
     DRUG_NAME: ColumnType.Text,
     ANALYTE: ColumnType.Text,
@@ -109,28 +238,90 @@ PK_INDIVIDUAL_ANCHOR_COLUMNS: list = [
     TIME_VALUE,
 ]
 
-# ── PE ────────────────────────────────────────────────────────────────────────
+# ── PE study info ─────────────────────────────────────────────────────────────
+# Study type,Population,Study design,Pregnancy stage,Drug name,Data source,Inclusion criteria,Exclusion criteria,Outcomes,Subject N
+STUDY_TYPE = "Study type"
+STUDY_DESIGN = "Study design"
+DATA_SOURCE = "Data source"
+INCLUSION_CRITERIA = "Inclusion criteria"
+EXCLUSION_CRITERIA = "Exclusion criteria"
+OUTCOMES = "Outcomes"
+
+PE_STUDY_INFO_COLUMNS_TYPE: dict[str, ColumnType] = {
+    STUDY_TYPE: ColumnType.Text,
+    POPULATION: ColumnType.Text,
+    STUDY_DESIGN: ColumnType.Text,
+    PREGNANCY_STAGE: ColumnType.Text,
+    DRUG_NAME: ColumnType.Text,
+    DATA_SOURCE: ColumnType.Text,
+    INCLUSION_CRITERIA: ColumnType.Text,
+    EXCLUSION_CRITERIA: ColumnType.Text,
+    OUTCOMES: ColumnType.Text,
+    SUBJECT_N: ColumnType.Numeric,
+}
+
+PE_STUDY_INFO_RATING_COLUMNS: list = [
+    STUDY_TYPE,
+    STUDY_DESIGN,
+    DATA_SOURCE,
+    INCLUSION_CRITERIA,
+    EXCLUSION_CRITERIA,
+    OUTCOMES,
+    SUBJECT_N,
+]
+PE_STUDY_INFO_ANCHOR_COLUMNS: list = [
+    SUBJECT_N,
+    STUDY_TYPE,
+    STUDY_DESIGN,
+    DATA_SOURCE,
+    INCLUSION_CRITERIA,
+    EXCLUSION_CRITERIA,
+    OUTCOMES,
+]
+
+# ── PE study outcome ────────────────────────────────────────────────────────────────────────
 EXPOSURE = "Exposure"
 OUTCOMES = "Outcomes"
-STATISTIC = "Statistic"
-VARIABILITY_VALUE = "Variability value"
+PARAMETER_STATISTIC = "Parameter statistic"
+# VARIABILITY_VALUE = "Variability value"
 
-PE_RATING_COLUMNS: list = [
+PE_STUDY_OUTCOME_COLUMNS_TYPE: dict[str, ColumnType] = {
+    CHARACTERISTIC: ColumnType.Text,
+    EXPOSURE: ColumnType.Text,
+    OUTCOMES: ColumnType.Text,
+    PARAMETER_STATISTIC: ColumnType.Text,
+    PARAMETER_VALUE: ColumnType.Numeric,
+    PARAMETER_UNIT: ColumnType.Text,
+    # VARIABILITY_VALUE: ColumnType.Numeric,
+    VARIATION_TYPE: ColumnType.Text,
+    VARIATION_VALUE: ColumnType.Numeric,
+    LOWER_LIMIT: ColumnType.Numeric,
+    HIGH_LIMIT: ColumnType.Numeric,
+}
+
+PE_STUDY_OUTCOME_RATING_COLUMNS: list = [
     EXPOSURE,
     OUTCOMES,
-    STATISTIC,
-    VALUE,
-    UNIT,
-    VARIABILITY_VALUE,
+    PARAMETER_STATISTIC,
+    PARAMETER_VALUE,
+    PARAMETER_UNIT,
+    VARIATION_TYPE,
+    VARIATION_VALUE,
     LOWER_LIMIT,
     HIGH_LIMIT,
 ]
-PE_ANCHOR_COLUMNS: list = [
-    VALUE,
+PE_STUDY_OUTCOME_ANCHOR_COLUMNS: list = [
+    PARAMETER_VALUE,
     LOWER_LIMIT,
     HIGH_LIMIT,
     P_VALUE,
-    VARIABILITY_VALUE,
+    VARIATION_VALUE,
+    EXPOSURE,
+    OUTCOMES,
+    CHARACTERISTIC,
+    PARAMETER_STATISTIC,
+    PARAMETER_UNIT,
+    VARIATION_TYPE,
 ]
 
 
@@ -158,13 +349,61 @@ BENCHMARK_CONFIGS: dict[BenchmarkType, BenchmarkConfig] = {
         anchor_cols=PK_INDIVIDUAL_ANCHOR_COLUMNS,
         columns_type=PK_INDIVIDUAL_COLUMNS_TYPE,
     ),
-    BenchmarkType.PE: BenchmarkConfig(
-        benchmark_type=BenchmarkType.PE,
+    BenchmarkType.PE_STUDY_OUTCOME: BenchmarkConfig(
+        benchmark_type=BenchmarkType.PE_STUDY_OUTCOME,
         preprocess=preprocess_pe_table,
-        rating_cols=PE_RATING_COLUMNS,
-        anchor_cols=PE_ANCHOR_COLUMNS,
-        # columns_type intentionally omitted — preserves legacy PE behavior
-        # (see refactor item 8).
+        rating_cols=PE_STUDY_OUTCOME_RATING_COLUMNS,
+        anchor_cols=PE_STUDY_OUTCOME_ANCHOR_COLUMNS,
+        columns_type=PE_STUDY_OUTCOME_COLUMNS_TYPE,
+    ),
+    BenchmarkType.PE_STUDY_INFO: BenchmarkConfig(
+        benchmark_type=BenchmarkType.PE_STUDY_INFO,
+        preprocess=preprocess_pe_table,
+        rating_cols=PE_STUDY_INFO_RATING_COLUMNS,
+        anchor_cols=PE_STUDY_INFO_ANCHOR_COLUMNS,
+        columns_type=PE_STUDY_INFO_COLUMNS_TYPE,
+    ),
+    BenchmarkType.PK_POPULATION_SUMMARY: BenchmarkConfig(
+        benchmark_type=BenchmarkType.PK_POPULATION_SUMMARY,
+        preprocess=preprocess_pk_population_summary_table,
+        rating_cols=PK_POPULATION_SUMMARY_RATING_COLUMNS,
+        anchor_cols=PK_POPULATION_SUMMARY_ANCHOR_COLUMNS,
+        columns_type=PK_POPULATION_SUMMARY_COLUMNS_TYPE,
+    ),
+    BenchmarkType.PK_POPULATION_INDIVIDUAL: BenchmarkConfig(
+        benchmark_type=BenchmarkType.PK_POPULATION_INDIVIDUAL,
+        preprocess=preprocess_pk_population_individual_table,
+        rating_cols=PK_POPULATION_INDIVIDUAL_RATING_COLUMNS,
+        anchor_cols=PK_POPULATION_INDIVIDUAL_ANCHOR_COLUMNS,
+        columns_type=PK_POPULATION_INDIVIDUAL_COLUMNS_TYPE,
+    ),
+    BenchmarkType.PK_SPECIMEN_INDIVIDUAL: BenchmarkConfig(
+        benchmark_type=BenchmarkType.PK_SPECIMEN_INDIVIDUAL,
+        preprocess=preprocess_pk_specimen_individual_table,
+        rating_cols=PK_SPECIMEN_INDIVIDUAL_RATING_COLUMNS,
+        anchor_cols=PK_SPECIMEN_INDIVIDUAL_ANCHOR_COLUMNS,
+        columns_type=PK_SPECIMEN_INDIVIDUAL_COLUMNS_TYPE,
+    ),
+    BenchmarkType.PK_SPECIMEN_SUMMARY: BenchmarkConfig(
+        benchmark_type=BenchmarkType.PK_SPECIMEN_SUMMARY,
+        preprocess=preprocess_pk_specimen_summary_table,
+        rating_cols=PK_SPECIMEN_SUMMARY_RATING_COLUMNS,
+        anchor_cols=PK_SPECIMEN_SUMMARY_ANCHOR_COLUMNS,
+        columns_type=PK_SPECIMEN_SUMMARY_COLUMNS_TYPE,
+    ),
+    BenchmarkType.PK_DRUG_INDIVIDUAL: BenchmarkConfig(
+        benchmark_type=BenchmarkType.PK_DRUG_INDIVIDUAL,
+        preprocess=preprocess_pk_drug_individual_table,
+        rating_cols=PK_DRUG_INDIVIDUAL_RATING_COLUMNS,
+        anchor_cols=PK_DRUG_INDIVIDUAL_ANCHOR_COLUMNS,
+        columns_type=PK_DRUG_INDIVIDUAL_COLUMNS_TYPE,
+    ),
+    BenchmarkType.PK_DRUG_SUMMARY: BenchmarkConfig(
+        benchmark_type=BenchmarkType.PK_DRUG_SUMMARY,
+        preprocess=preprocess_pk_drug_summary_table,
+        rating_cols=PK_DRUG_SUMMARY_RATING_COLUMNS,
+        anchor_cols=PK_DRUG_SUMMARY_ANCHOR_COLUMNS,
+        columns_type=PK_DRUG_SUMMARY_COLUMNS_TYPE,
     ),
 }
 

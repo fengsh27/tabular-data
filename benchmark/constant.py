@@ -7,7 +7,15 @@ class BenchmarkType(Enum):
     UNKNOWN = "unknown"
     PK_SUMMARY = "pk-summary"
     PK_INDIVIDUAL = "pk-individual"
-    PE = "pe"
+    PE_STUDY_OUTCOME = "pe-study-outcome"
+    PE_STUDY_INFO = "pe-study-info"
+    PK_DRUG_SUMMARY = "pk-drug-summary"
+    PK_DRUG_INDIVIDUAL = "pk-drug-individual"
+    PK_SPECIMEN_INDIVIDUAL = "pk-specimen-individual"
+    PK_SPECIMEN_SUMMARY = "pk-specimen-summary"
+    PK_POPULATION_SUMMARY = "pk-population-summary"
+    PK_POPULATION_INDIVIDUAL = "pk-population-individual"
+
 
 
 class LLModelType(Enum):
