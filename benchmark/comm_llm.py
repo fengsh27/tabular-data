@@ -60,7 +60,7 @@ def write_LLM_score(
 
 def run_llm_benchmark(
     dataset: dict,
-    benchmark_type: Union[BenchmarkType.PE, BenchmarkType.PK_SUMMARY],
+    benchmark_type: Union[BenchmarkType.PE_STUDY_OUTCOME, BenchmarkType.PK_SUMMARY],
     model: Union[LLModelType.GEMINI15, LLModelType.GPT4O],
     result_file: str,
     client: LLMClient,

@@ -15,6 +15,7 @@ class BenchmarkType(Enum):
     PK_SPECIMEN_SUMMARY = "pk-specimen-summary"
     PK_POPULATION_SUMMARY = "pk-population-summary"
     PK_POPULATION_INDIVIDUAL = "pk-population-individual"
+    PK_PE = "pk-pe"
 
 
 

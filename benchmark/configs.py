@@ -37,6 +37,10 @@ NOTE = "Note"
 PARAMETER_UNIT = "Parameter unit"
 PARAMETER_VALUE = "Parameter value"
 SUBJECT_N = "Subject N"
+PATIENT_CHARACTERISTIC = "Patient characteristic"
+CHARACTERISTIC_SUB_CATEGORY = "Characteristic sub-category"
+MAIN_VALUE = "Main value"
+SOURCE_TEXT = "Source text"
 
 # ── PK summary ────────────────────────────────────────────────────────────────
 SUMMARY_STATISTICS = "Summary statistics"
@@ -76,9 +80,15 @@ PK_SUMMARY_RATING_COLUMNS: list = [
 PK_SUMMARY_ANCHOR_COLUMNS: list = [
     VALUE,
     VARIATION_VALUE,
+    SUBJECT_N,
     LOWER_LIMIT,
     HIGH_LIMIT,
     P_VALUE,
+    DRUG_NAME,
+    ANALYTE,
+    SPECIMEN,
+    POPULATION,
+    PREGNANCY_STAGE,
 ]
 
 # ── PK drug summary ─────────────────────────────────────────────────────────────
@@ -236,6 +246,108 @@ PK_INDIVIDUAL_ANCHOR_COLUMNS: list = [
     DRUG_NAME,
     ANALYTE,
     TIME_VALUE,
+]
+
+# ── PK drug individual ────────────────────────────────────────────────────────
+# Columns: Patient ID, Drug/Metabolite name, Dose amount, Dose unit, Dose frequency,
+#          Dose schedule, Dose route, Population, Pregnancy stage, Pediatric/Gestational age, Note
+
+PK_DRUG_INDIVIDUAL_COLUMNS_TYPE: dict[str, ColumnType] = {
+    PATIENT_ID: ColumnType.Text,
+    DRUG_METABOLITE_NAME: ColumnType.Text,
+    DOSE_AMOUNT: ColumnType.Numeric,
+    DOSE_UNIT: ColumnType.Text,
+    DOSE_FREQUENCY: ColumnType.Text,
+    DOSE_SCHEDULE: ColumnType.Text,
+    DOSE_ROUTE: ColumnType.Text,
+    POPULATION: ColumnType.Text,
+    PREGNANCY_STAGE: ColumnType.Text,
+    PEDIATRIC_GESTATIONAL_AGE: ColumnType.Text,
+    NOTE: ColumnType.Text,
+}
+
+PK_DRUG_INDIVIDUAL_RATING_COLUMNS: list = [
+    DRUG_METABOLITE_NAME,
+    DOSE_AMOUNT,
+    DOSE_UNIT,
+    DOSE_FREQUENCY,
+    DOSE_SCHEDULE,
+    DOSE_ROUTE,
+    POPULATION,
+    PREGNANCY_STAGE,
+    PEDIATRIC_GESTATIONAL_AGE,
+]
+PK_DRUG_INDIVIDUAL_ANCHOR_COLUMNS: list = [
+    PATIENT_ID,
+    DRUG_METABOLITE_NAME,
+    DOSE_AMOUNT,
+    DOSE_FREQUENCY,
+    DOSE_SCHEDULE,
+    DOSE_ROUTE,
+]
+
+# ── PK specimen individual ────────────────────────────────────────────────────
+# Columns: Patient ID, Specimen, Sample N, Population, Pregnancy stage,
+#          Pediatric/Gestational age, Sample time, Time unit, Note
+
+PK_SPECIMEN_INDIVIDUAL_COLUMNS_TYPE: dict[str, ColumnType] = {
+    PATIENT_ID: ColumnType.Text,
+    SPECIMEN: ColumnType.Text,
+    SAMPLE_N: ColumnType.Numeric,
+    POPULATION: ColumnType.Text,
+    PREGNANCY_STAGE: ColumnType.Text,
+    PEDIATRIC_GESTATIONAL_AGE: ColumnType.Text,
+    SAMPLE_TIME: ColumnType.Text,
+    TIME_UNIT: ColumnType.Text,
+    NOTE: ColumnType.Text,
+}
+
+PK_SPECIMEN_INDIVIDUAL_RATING_COLUMNS: list = [
+    SPECIMEN,
+    SAMPLE_N,
+    POPULATION,
+    PREGNANCY_STAGE,
+    PEDIATRIC_GESTATIONAL_AGE,
+    SAMPLE_TIME,
+    TIME_UNIT,
+]
+PK_SPECIMEN_INDIVIDUAL_ANCHOR_COLUMNS: list = [
+    PATIENT_ID,
+    SPECIMEN,
+    SAMPLE_N,
+    POPULATION,
+]
+
+# ── PK population individual ──────────────────────────────────────────────────
+# Columns: Patient ID, Patient characteristic, Characteristic sub-category,
+#          Unit, Main value, Population, Pregnancy stage, Pediatric/Gestational age, Source text
+
+PK_POPULATION_INDIVIDUAL_COLUMNS_TYPE: dict[str, ColumnType] = {
+    PATIENT_ID: ColumnType.Text,
+    PATIENT_CHARACTERISTIC: ColumnType.Text,
+    CHARACTERISTIC_SUB_CATEGORY: ColumnType.Text,
+    UNIT: ColumnType.Text,
+    MAIN_VALUE: ColumnType.Numeric,
+    POPULATION: ColumnType.Text,
+    PREGNANCY_STAGE: ColumnType.Text,
+    PEDIATRIC_GESTATIONAL_AGE: ColumnType.Text,
+    SOURCE_TEXT: ColumnType.Text,
+}
+
+PK_POPULATION_INDIVIDUAL_RATING_COLUMNS: list = [
+    PATIENT_CHARACTERISTIC,
+    CHARACTERISTIC_SUB_CATEGORY,
+    UNIT,
+    MAIN_VALUE,
+    POPULATION,
+    PREGNANCY_STAGE,
+    PEDIATRIC_GESTATIONAL_AGE,
+]
+PK_POPULATION_INDIVIDUAL_ANCHOR_COLUMNS: list = [
+    PATIENT_ID,
+    PATIENT_CHARACTERISTIC,
+    CHARACTERISTIC_SUB_CATEGORY,
+    MAIN_VALUE,
 ]
 
 # ── PE study info ─────────────────────────────────────────────────────────────

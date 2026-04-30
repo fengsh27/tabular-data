@@ -6,7 +6,7 @@ import logging
 from benchmark.comm_semantic import run_semantic_benchmark
 from benchmark.common import (
     ensure_target_result_directory_existed, 
-    prepare_dataset_for_benchmark,
+    prepare_single_pipeline_dataset_for_benchmark,
 )
 from benchmark.constant import (
     BASELINE,
@@ -35,7 +35,7 @@ specified_pmids = [
 
 @pytest.fixture(scope="module")
 def prepared_dataset():
-    dataset = prepare_dataset_for_benchmark(
+    dataset = prepare_single_pipeline_dataset_for_benchmark(
         baseline_dir=baseline_dir,
         target_dir=target_dir,
         benchmark_type=BenchmarkType.PK_INDIVIDUAL,
