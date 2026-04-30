@@ -1,12 +1,15 @@
 from langchain_core.prompts import ChatPromptTemplate
 from pydantic import Field
 import pandas as pd
+import logging
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown
 from extractor.agents.common_agent.common_agent import RetryException
 from extractor.agents.pk_population_summary.pk_popu_sum_common_agent import (
     PKPopuSumCommonAgentResult,
 )
+
+logger = logging.getLogger(__name__)
 
 CHARACTERISTIC_INFO_PROMPT = ChatPromptTemplate.from_template("""
 {title}
@@ -67,7 +70,9 @@ def post_process_characteristic_info(
     res: CharacteristicInfoResult,
 ):
     if res.characteristic_combinations is None:
+        logger.error("Empty characteristic combinations")
         raise ValueError("Empty characteristic combinations")
+    logger.info(f"result length: len(res.characteristic_combinations), result: {str(res.characteristic_combinations)}")
 
     if type(res.characteristic_combinations) != list or len(res.characteristic_combinations) == 0:
         raise RetryException(f"""
