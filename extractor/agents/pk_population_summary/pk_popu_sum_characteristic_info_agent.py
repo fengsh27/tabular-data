@@ -14,6 +14,7 @@ CHARACTERISTIC_INFO_PROMPT = ChatPromptTemplate.from_template("""
 Read the article and answer the following:
 
 (1) Determine how many unique combinations of [Population characteristic, Characteristic sub-category, Characteristic values, Population, Population N, Source text] appear in the table.  
+    Please make sure to have the following **6 values** for each combination, if not available, please use "N/A":                                                               
     - **Population characteristic**: Population-focused characteristics. Not PK parameter!!!
             · “Age," “Sex," "Weight," “Gender," “Race," “Ethnicity"
             · “Socioeconomic status," “Education," “Marital status"
