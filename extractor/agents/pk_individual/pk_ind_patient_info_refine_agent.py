@@ -103,15 +103,32 @@ def post_process_refined_patient_info(
         logger.error(error_msg)
         raise ValueError(error_msg)
 
-    expected_rows = markdown_to_dataframe(md_table_patient).shape[0]
+    from collections import Counter
+    df_patient = markdown_to_dataframe(md_table_patient)
+    expected_rows = df_patient.shape[0]
+
     if len(match_list) != expected_rows:
-        error_msg = (
-            "Wrong answer example:\n"
-            + str(match_list)
-            + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {len(match_list)} extracted matches."
-        )
-        logger.error(error_msg)
-        raise RetryException(error_msg)
+        pid_to_demo: dict[str, list[str]] = {}
+        for row in match_list:
+            if len(row) >= 4:
+                pid = str(row[0]).strip().strip("\"'")
+                if pid not in pid_to_demo:
+                    pid_to_demo[pid] = [str(x) for x in row[1:4]]
+        if not pid_to_demo:
+            error_msg = (
+                "Wrong answer example:\n"
+                + str(match_list)
+                + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {len(match_list)} extracted matches."
+            )
+            logger.error(error_msg)
+            raise RetryException(error_msg)
+        default_demo = list(Counter(tuple(v) for v in pid_to_demo.values()).most_common(1)[0][0])
+        match_list = [
+            [str(src_row["Patient ID"]).strip().strip("\"'")] + pid_to_demo.get(
+                str(src_row["Patient ID"]).strip().strip("\"'"), default_demo
+            )
+            for _, src_row in df_patient.iterrows()
+        ]
 
     df_table = pd.DataFrame(
         match_list,

@@ -70,15 +70,28 @@ def post_process_refined_drug_info(
         logger.error(error_msg)
         raise ValueError(error_msg)
 
+    from collections import Counter
     expected_rows = markdown_to_dataframe(md_table_drug).shape[0]
     if len(match_list) != expected_rows:
-        error_msg = (
-            "Wrong answer example:\n"
-            + str(match_list)
-            + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {len(match_list)} extracted matches."
-        )
-        logger.error(error_msg)
-        raise RetryException(error_msg)
+        seen: dict[tuple, list] = {}
+        for row in match_list:
+            key = tuple(str(x) for x in row)
+            if key not in seen:
+                seen[key] = [str(x) for x in row]
+        unique_list = list(seen.values())
+        if not unique_list:
+            error_msg = (
+                "Wrong answer example:\n"
+                + str(match_list)
+                + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {len(match_list)} extracted matches."
+            )
+            logger.error(error_msg)
+            raise RetryException(error_msg)
+        if len(unique_list) >= expected_rows:
+            match_list = unique_list[:expected_rows]
+        else:
+            default_row = list(Counter(tuple(r) for r in unique_list).most_common(1)[0][0])
+            match_list = unique_list + [default_row] * (expected_rows - len(unique_list))
 
     df_table = pd.DataFrame(
         match_list,

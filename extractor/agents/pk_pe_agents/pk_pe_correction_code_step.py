@@ -122,6 +122,24 @@ Correction Task:
 class PKPECorrectionPlanResult(BaseModel):
     tasks: list[str] = Field(description="A list of correction task descriptions, each describing one logical group of edits.")
 
+
+def _fix_correction_plan_parser(content: str) -> Optional[PKPECorrectionPlanResult]:
+    """Recover when the model echoes the JSON schema wrapper instead of an instance.
+
+    The model sometimes returns {"properties": {"tasks": [...]}, "required": [...]}
+    instead of the expected {"tasks": [...]}. Extract the tasks list from properties.
+    """
+    import json
+    try:
+        data = json.loads(content)
+        if isinstance(data, dict) and "properties" in data:
+            tasks = data["properties"].get("tasks")
+            if isinstance(tasks, list) and all(isinstance(t, str) for t in tasks):
+                return PKPECorrectionPlanResult(tasks=tasks)
+    except Exception:
+        pass
+    return None
+
 class PKPECorrectionStepResult(BaseModel):
     code: str = Field(description="Python code that corrects the curated table. The code must produce a pandas DataFrame named `df_corrected`.")
 
@@ -216,6 +234,7 @@ class PKPECuratedTablesCorrectionCodeStep(PKPECommonStep):
                 system_prompt=system_prompt,
                 instruction_prompt="Decompose the corrections into small tasks.",
                 schema=PKPECorrectionPlanResult,
+                agent_fix_parser=_fix_correction_plan_parser,
             )
             if reasoning is None:
                 reasoning = "N/A"

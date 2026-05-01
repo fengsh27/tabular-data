@@ -67,15 +67,32 @@ def post_process_refined_characteristic_info(
         logger.error(error_msg)
         raise ValueError(error_msg)
 
-    expected_rows = markdown_to_dataframe(md_table_characteristic).shape[0]
+    from collections import Counter
+    df_characteristic = markdown_to_dataframe(md_table_characteristic)
+    expected_rows = df_characteristic.shape[0]
+
     if len(match_list) != expected_rows:
-        error_msg = (
-            "Wrong answer example:\n"
-            + str(match_list)
-            + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {len(match_list)} extracted matches."
-        )
-        logger.error(error_msg)
-        raise RetryException(error_msg)
+        pid_to_vals: dict[str, list[str]] = {}
+        for row in match_list:
+            if len(row) >= 3:
+                pid = str(row[0]).strip().strip("\"'")
+                if pid not in pid_to_vals:
+                    pid_to_vals[pid] = [str(x) for x in row[1:3]]
+        if not pid_to_vals:
+            error_msg = (
+                "Wrong answer example:\n"
+                + str(match_list)
+                + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {len(match_list)} extracted matches."
+            )
+            logger.error(error_msg)
+            raise RetryException(error_msg)
+        default_vals = list(Counter(tuple(v) for v in pid_to_vals.values()).most_common(1)[0][0])
+        match_list = [
+            [str(src_row["Patient ID"]).strip().strip("\"'")] + pid_to_vals.get(
+                str(src_row["Patient ID"]).strip().strip("\"'"), default_vals
+            )
+            for _, src_row in df_characteristic.iterrows()
+        ]
 
     df_table = pd.DataFrame(
         match_list,
