@@ -1,0 +1,66 @@
+Characteristic,Exposure,Outcome,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value
+CD4 count at HAART initiation or study enrollment,HAART exposure,Median CD4 count,cells/mm3,Median,132,N/A,N/A,Range,90,187,0.80
+CD4 count at HAART initiation or study enrollment,HAART unexposed,Median CD4 count,cells/mm3,Median,146,N/A,N/A,Range,105,174,0.80
+Log10 viral load at HAART initiation or study enrollment,HAART exposure,Median Log10 viral load,log10copies/ml,Median,4.93,N/A,N/A,Range,4.44,5.41,0.61
+Log10 viral load at HAART initiation or study enrollment,HAART unexposed,Median Log10 viral load,log10copies/ml,Median,4.98,N/A,N/A,Range,4.60,5.39,0.61
+Birth weight,HAART exposure,Median weight at birth,kg,Median,2.9,N/A,N/A,Range,2.6,3.1,0.07
+Birth weight,HAART unexposed,Median weight at birth,kg,Median,3,N/A,N/A,Range,2.7,3.3,0.07
+Gestational period,HAART unexposed,Median gestational period at birth,weeks,Median,39,N/A,N/A,Range,38,40,0.04
+Premature birth rate,HAART exposure,Number of premature births,Count,Sum,5,%,7.2,N/A,N/A,N/A,0.32
+Premature birth rate,HAART unexposed,Number of premature births,Count,Sum,14,%,12.8,N/A,N/A,N/A,0.32
+Male infant rate,HAART exposure,Number of male infants,Count,Sum,34,%,49,N/A,N/A,N/A,0.44
+Male infant rate,HAART unexposed,Number of male infants,Count,Sum,60,%,55,N/A,N/A,N/A,0.44
+HIV-1 infection rate at birth,HAART exposure,Number of infants infected with HIV-1 at birth,Count,Sum,1,%,1.4,N/A,N/A,N/A,0.09
+HIV-1 infection rate at birth,HAART unexposed,Number of infants infected with HIV-1 at birth,Count,Sum,9,%,8.3,N/A,N/A,N/A,0.09
+HIV-1 infection rate at 1 month,HAART exposure,Number of infants infected with HIV-1 at 1 month,Count,Sum,1,%,1.4,N/A,N/A,N/A,0.41
+HIV-1 infection rate at 1 month,HAART unexposed,Number of infants infected with HIV-1 at 1 month,Count,Sum,5,%,4.6,N/A,N/A,N/A,0.41
+Infants infected with HIV-1,HAART-unexposed,Percentage of infections between 2 and 7 months,Count,Sum,7,%,6.4,N/A,N/A,N/A,0.04
+Infants infected with HIV-1,HAART-exposed,Cumulative infections by 7 months,Count,Sum,2,%,2.9,N/A,N/A,N/A,0.001
+Infants infected with HIV-1,HAART-unexposed,Cumulative infections by 7 months,Count,Sum,21,%,19.3,N/A,N/A,N/A,0.001
+All Infants (178),HAART-unexposed,Count of infants with HB at birth,Count,Sum,2,N/A,N/A,N/A,N/A,N/A,0.52
+All Infants (178),HAART-unexposed,Percentage of infants with HB at birth,Count,Sum,2,%,1.8,N/A,N/A,N/A,0.52
+All Infants (178),HAART-exposed,Count of infants with HB between birth and 1 month,Count,Sum,3,%,4.3,N/A,N/A,N/A,0.68
+All Infants (178),HAART-unexposed,Percentage of infants with HB between birth and 1 month,Count,Sum,3,%,2.8,N/A,N/A,N/A,0.68
+All Infants (178),HAART-exposed,Count of infants with HB between 2 to 7 months,Count,Sum,1,%,1.4,N/A,N/A,N/A,0.39
+All Infants (178),HAART-unexposed,Percentage of infants with HB between 2 to 7 months,Count,Sum,0,N/A,N/A,N/A,N/A,N/A,0.39
+All Infants (178),HAART-unexposed,Instances of PLT at birth,Count,Sum,1,%,0.9,N/A,N/A,N/A,1.00
+All Infants (178),HAART-unexposed,Instances of PLT between birth and 1 month,Count,Sum,1,%,0.9,N/A,N/A,N/A,1.00
+All Infants (178),HAART-exposed,Instances of ANC abnormalities,Count,Sum,4,%,5.8,N/A,N/A,N/A,0.21
+All Infants (178),HAART-unexposed,Instances of ANC abnormalities,Count,Sum,2,%,1.8,N/A,N/A,N/A,0.21
+All Infants (178),HAART-exposed,Instances of ANC abnormalities between birth and 1 month,Count,Sum,11,%,15.9,N/A,N/A,N/A,0.006
+All Infants (178),HAART-unexposed,Instances of ANC abnormalities between birth and 1 month,Count,Sum,4,%,3.7,N/A,N/A,N/A,0.006
+All Infants (178),HAART-exposed,Instances of ANC abnormalities between 2 to 7 months,Count,Sum,2,%,2.9,N/A,N/A,N/A,1.00
+All Infants (178),HAART-unexposed,Instances of ANC abnormalities between 2 to 7 months,Count,Sum,4,%,8.0,N/A,N/A,N/A,1.00
+BF Infants Only (84),HAART-unexposed,HB at birth,Count,Sum,1,%,2.0,N/A,N/A,N/A,1.00
+BF Infants Only (84),HAART-exposed,HB between 2 to 7 months,Count,Sum,1,%,2.9,N/A,N/A,N/A,0.41
+BF Infants Only (84),HAART-exposed,ANC at birth,Count,Sum,2,%,5.9,N/A,N/A,N/A,0.56
+BF Infants Only (84),HAART-unexposed,ANC at birth,Count,Sum,1,%,2.0,N/A,N/A,N/A,0.56
+BF Infants Only (84),HAART-exposed,ANC between birth and 1 month,Count,Sum,8,%,23.5,N/A,N/A,N/A,0.044
+BF Infants Only (84),HAART-unexposed,ANC between birth and 1 month,Count,Sum,3,%,6.0,N/A,N/A,N/A,0.044
+BF Infants Only (84),HAART-exposed,ANC between 2 to 7 months,Count,Sum,2,%,5.9,N/A,N/A,N/A,1.00
+BF Infants Only (84),HAART-unexposed,ANC between 2 to 7 months,Count,Sum,4,%,8.0,N/A,N/A,N/A,1.00
+All Infants (178),HAART-exposed,Count of HB abnormalities at birth,Count,Sum,0,N/A,N/A,N/A,N/A,N/A,0.52
+FF Infants Only (94),HAART-exposed,Count of HB abnormalities between birth and 1 month,Count,Sum,3,%,8.6,N/A,N/A,N/A,0.36
+FF Infants Only (94),HAART-unexposed,Percentage of HB abnormalities between birth and 1 month,Count,Sum,2,%,3.4,N/A,N/A,N/A,0.36
+FF Infants Only (94),HAART-unexposed,Percentage of PLT abnormalities between birth and 1 month,Count,Sum,1,%,1.7,N/A,N/A,N/A,1.00
+FF Infants Only (94),HAART-exposed,ANC at birth,Count,Sum,2,%,5.7,N/A,N/A,N/A,0.55
+FF Infants Only (94),HAART-unexposed,ANC at birth,Count,Sum,1,%,1.7,N/A,N/A,N/A,0.55
+FF Infants Only (94),HAART-exposed,ANC between birth and 1 month,Count,Sum,3,%,8.6,N/A,N/A,N/A,0.14
+FF Infants Only (94),HAART-unexposed,ANC between birth and 1 month,Count,Sum,1,%,1.7,N/A,N/A,N/A,0.14
+Gestational period,HAART exposure,Median gestational period at birth,weeks,Median,40,N/A,N/A,Range,38,40,0.04
+Infants infected with HIV-1,HAART-exposed,Percentage of infections between 2 and 7 months,Count,Sum,0,%,0,N/A,N/A,N/A,0.04
+All Infants (178),HAART-exposed,PLT at birth,Count,Sum,0,N/A,N/A,N/A,N/A,N/A,1.00
+All Infants (178),HAART-exposed,PLT between birth and 1 month,Count,Sum,0,N/A,N/A,N/A,N/A,N/A,1.00
+All Infants (178),HAART-exposed,PLT between 2 to 7 months,Count,Sum,1,%,1.4,N/A,N/A,N/A,0.39
+All Infants (178),HAART-unexposed,PLT between 2 to 7 months,Count,Sum,0,N/A,N/A,N/A,N/A,N/A,0.39
+BF Infants Only (84),HAART-exposed,HB at birth,Count,Sum,0,N/A,N/A,N/A,N/A,N/A,1.00
+BF Infants Only (84),HAART-exposed,HB between birth and 1 month,Count,Sum,0,N/A,N/A,N/A,N/A,N/A,1.00
+BF Infants Only (84),HAART-unexposed,HB between birth and 1 month,Count,Sum,1,%,2.0,N/A,N/A,N/A,1.00
+BF Infants Only (84),HAART-unexposed,HB between 2 to 7 months,Count,Sum,0,N/A,N/A,N/A,N/A,N/A,0.41
+BF Infants Only (84),HAART-exposed,PLT between 2 to 7 months,Count,Sum,1,%,2.9,N/A,N/A,N/A,0.41
+BF Infants Only (84),HAART-unexposed,PLT between 2 to 7 months,Count,Sum,0,N/A,N/A,N/A,N/A,N/A,0.41
+FF Infants Only (94),HAART-exposed,HB at birth,Count,Sum,0,N/A,N/A,N/A,N/A,N/A,1.00
+FF Infants Only (94),HAART-unexposed,HB at birth,Count,Sum,1,%,1.7,N/A,N/A,N/A,1.00
+FF Infants Only (94),HAART-exposed,PLT at birth,Count,Sum,0,N/A,N/A,N/A,N/A,N/A,1.00
+FF Infants Only (94),HAART-unexposed,PLT at birth,Count,Sum,1,%,1.7,N/A,N/A,N/A,1.00
+FF Infants Only (94),HAART-exposed,PLT between birth and 1 month,Count,Sum,0,N/A,N/A,N/A,N/A,N/A,1.00

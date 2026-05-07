@@ -1,0 +1,17 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+Buprenorphine,Free Buprenorphine,Meconium,Infants,N/A,N/A,10,Median,N/A,Median,59.6,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Buprenorphine,Total Buprenorphine,Meconium,Infants,N/A,N/A,10,Median,N/A,Median,109.9,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Buprenorphine,% Free Buprenorphine,Meconium,Infants,N/A,N/A,10,Median,N/A,Median,67.3,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Buprenorphine,Free Norbuprenorphine,Meconium,Infants,N/A,N/A,10,Median,N/A,Median,501.5,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Buprenorphine,% Free Norbuprenorphine,Meconium,Infants,N/A,N/A,10,Median,N/A,Median,87.2,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Buprenorphine,Free Buprenorphine,Meconium,Infants,N/A,N/A,10,Range,N/A,N/A,N/A,N/A,N/A,Range,23.9,240.5,N/A,N/A,N/A
+Buprenorphine,Total Buprenorphine,Meconium,Infants,N/A,N/A,10,Range,N/A,N/A,N/A,N/A,N/A,Range,24.3,296.8,N/A,N/A,N/A
+Buprenorphine,% Free Buprenorphine,Meconium,Infants,N/A,N/A,10,Range,N/A,N/A,N/A,N/A,N/A,Range,35.1,82.0,N/A,N/A,N/A
+Buprenorphine,Free Norbuprenorphine,Meconium,Infants,N/A,N/A,10,Range,N/A,N/A,N/A,N/A,N/A,Range,331.1,1228.5,N/A,N/A,N/A
+Buprenorphine,% Free Norbuprenorphine,Meconium,Infants,N/A,N/A,10,Range,N/A,N/A,N/A,N/A,N/A,Range,52.9,116.5,N/A,N/A,N/A
+Buprenorphine,Total Norbuprenorphine,Meconium,Infants,N/A,N/A,10,Median,N/A,Median,659.5,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Buprenorphine,Free Buprenorphine/Free Norbuprenorphine,Meconium,Infants,N/A,N/A,10,Median,N/A,Median,0.14,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Buprenorphine,Total Buprenorphine/Total Norbuprenorphine,Meconium,Infants,N/A,N/A,10,Median,N/A,Median,0.17,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Buprenorphine,Total Norbuprenorphine,Meconium,Infants,N/A,N/A,10,Range,N/A,N/A,N/A,N/A,N/A,Range,323.9,1880.2,N/A,N/A,N/A
+Buprenorphine,Free Buprenorphine/Free Norbuprenorphine,Meconium,Infants,N/A,N/A,10,Range,N/A,N/A,N/A,N/A,N/A,Range,0.03,0.25,N/A,N/A,N/A
+Buprenorphine,Total Buprenorphine/Total Norbuprenorphine,Meconium,Infants,N/A,N/A,10,Range,N/A,N/A,N/A,N/A,N/A,Range,0.05,0.33,N/A,N/A,N/A

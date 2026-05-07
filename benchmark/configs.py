@@ -30,6 +30,8 @@ UNIT = "Unit"
 P_VALUE = "P value"
 LOWER_LIMIT = "Lower limit"
 HIGH_LIMIT = "High limit"
+LOWER_BOUND = "Lower bound"
+UPPER_BOUND = "Upper bound"
 TIME_VALUE = "Time value"
 TIME_UNIT = "Time unit"
 PATIENT_ID = "Patient ID"
@@ -407,8 +409,8 @@ PE_STUDY_OUTCOME_COLUMNS_TYPE: dict[str, ColumnType] = {
     # VARIABILITY_VALUE: ColumnType.Numeric,
     VARIATION_TYPE: ColumnType.Text,
     VARIATION_VALUE: ColumnType.Numeric,
-    LOWER_LIMIT: ColumnType.Numeric,
-    HIGH_LIMIT: ColumnType.Numeric,
+    LOWER_BOUND: ColumnType.Numeric,
+    UPPER_BOUND: ColumnType.Numeric,
 }
 
 PE_STUDY_OUTCOME_RATING_COLUMNS: list = [
@@ -419,13 +421,13 @@ PE_STUDY_OUTCOME_RATING_COLUMNS: list = [
     PARAMETER_UNIT,
     VARIATION_TYPE,
     VARIATION_VALUE,
-    LOWER_LIMIT,
-    HIGH_LIMIT,
+    LOWER_BOUND,
+    UPPER_BOUND,
 ]
 PE_STUDY_OUTCOME_ANCHOR_COLUMNS: list = [
     PARAMETER_VALUE,
-    LOWER_LIMIT,
-    HIGH_LIMIT,
+    LOWER_BOUND,
+    UPPER_BOUND,
     P_VALUE,
     VARIATION_VALUE,
     EXPOSURE,

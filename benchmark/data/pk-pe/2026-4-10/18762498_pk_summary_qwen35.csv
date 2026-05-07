@@ -1,0 +1,27 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+Nicotine,3-hydroxycotinine,Plasma,Adolescents,N/A,N/A,15,Baseline 3-hydroxycotinine,ng/ml,Mean,21.1,SD,20.2,N/A,N/A,N/A,0.24,N/A,N/A
+Nicotine,3-hydroxycotinine,Plasma,Adolescents,N/A,N/A,5,Baseline 3-hydroxycotinine,ng/ml,Mean,31.3,SD,20.9,N/A,N/A,N/A,0.24,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,15,% Female,%,N/A,47,N/A,N/A,N/A,N/A,N/A,0.323,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,15,% Hispanic,%,N/A,13,N/A,N/A,N/A,N/A,N/A,1.003,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,15,% Mixed Race,%,N/A,47,N/A,N/A,N/A,N/A,N/A,0.603,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,15,% White,%,N/A,40,N/A,N/A,N/A,N/A,N/A,0.603,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,15,Age,years,Mean,16.5,SD,1.2,N/A,N/A,N/A,0.48,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,15,Baseline cigarettes smoked per day,cigarettes/day,Mean,3.6,SD,1.5,N/A,N/A,N/A,0.63,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,15,Baseline cotinine,ng/ml,Mean,73.9,SD,71.8,N/A,N/A,N/A,0.9,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,15,Baseline withdrawal (total score),score,Mean,12.7,SD,5.2,N/A,N/A,N/A,0.22,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,15,HONC score,score,Mean,6.3,SD,2.9,N/A,N/A,N/A,0.09,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,15,Self-described level of addiction,score,Mean,60.8,SD,22.8,N/A,N/A,N/A,0.16,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,15,Smoking duration,years,Mean,2.5,SD,1.3,N/A,N/A,N/A,0.96,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,15,mFTQ score,score,Mean,3.4,SD,1.4,N/A,N/A,N/A,0.43,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,5,% Female,%,N/A,80,N/A,N/A,N/A,N/A,N/A,0.323,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,5,% Hispanic,%,N/A,20,N/A,N/A,N/A,N/A,N/A,1.003,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,5,% Mixed Race,%,N/A,20,N/A,N/A,N/A,N/A,N/A,0.603,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,5,% White,%,N/A,60,N/A,N/A,N/A,N/A,N/A,0.603,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,5,Age,years,Mean,16.9,SD,.74,N/A,N/A,N/A,0.48,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,5,Baseline cigarettes smoked per day,cigarettes/day,Mean,4.0,SD,.98,N/A,N/A,N/A,0.63,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,5,Baseline cotinine,ng/ml,Mean,57.4,SD,49.7,N/A,N/A,N/A,0.9,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,5,Baseline withdrawal (total score),score,Mean,15.8,SD,3.8,N/A,N/A,N/A,0.22,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,5,HONC score,score,Mean,8.8,SD,1.3,N/A,N/A,N/A,0.09,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,5,Self-described level of addiction,score,Mean,72.8,SD,26.9,N/A,N/A,N/A,0.16,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,5,Smoking duration,years,Mean,2.5,SD,1.2,N/A,N/A,N/A,0.96,N/A,N/A
+Nicotine,Cotinine,Plasma,Adolescents,N/A,N/A,5,mFTQ score,score,Mean,3.9,SD,1.3,N/A,N/A,N/A,0.43,N/A,N/A

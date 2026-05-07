@@ -143,7 +143,7 @@ def _run_semantic_benchmark_for_multiple_pipeline(
                 )
                 continue
             
-        return score_dict
+    return score_dict
 
 def run_semantic_benchmark(
     dataset: dict,

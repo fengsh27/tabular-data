@@ -1,0 +1,3 @@
+Drug/Metabolite name,Dose amount,Dose unit,Dose frequency,Dose schedule,Dose route,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Note
+Galactose,"16 (median, 7-34)",mL/kg,Intermittent,"20 (median, 10-50)",Enteral,Term newborns,N/A,36-41.5 weeks,26,Postprandial rise observed for Glucose and Galactose; Galactose decreases 18% per day PNA
+Glucose,"16 (median, 7-34)",mL/kg,Intermittent,"20 (median, 10-50)",Enteral,Term newborns,N/A,36-41.5 weeks,26,Postprandial rise observed; 60-fold higher than Galactose

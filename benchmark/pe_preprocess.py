@@ -13,7 +13,7 @@ PE_STUDY_COLUMNS = [
     "Parameter statistic",
     "Parameter value",
     "Parameter unit",
-    "Variantion type",
+    "Variation type",
     "Variation value",
     "Interval type",
     "Lower bound",
@@ -37,6 +37,7 @@ PE_STUDY_COLUMNS_MAP = [
     ("Interval High Bound", "Upper bound"),
     ("Intervale High Bound", "Upper bound"),
     ("Interval High", "Upper bound"),
+    ("Outcome", "Outcomes"),
 ]
 
 
@@ -50,7 +51,7 @@ def get_lower_column_name():
 def process_1st_column(rows: list[list[str]]):
     lower_cols = get_lower_column_name()
     headers = rows[0]
-    if headers[0].lower() in lower_cols[0]:
+    if headers[0].lower() in lower_cols:
         # no NO. column in table, let's insert it
         prc_rows = []
         for ix, row in enumerate(rows):

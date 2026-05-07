@@ -1,0 +1,6 @@
+Patient ID,Characteristic,Characteristic subcategory,Characteristic unit,Characteristic value,Population,Pregnancy stage,Pediatric/Gestational age,Note
+1,Age,Scheduled age,hour,<48,Pediatric,N/A,<48 hour (<2 d),Scheduled age interval for infants is <48 hour (<2 d).
+2,Age,Scheduled age,week,1,Pediatric,N/A,1 wk (7 d),Scheduled age interval for infants is 1 wk (7 d).
+3,Age,Scheduled age,week,2,Pediatric,N/A,2 wk (14 d),Scheduled age interval for infants is 2 wk (14 d).
+4,Age,Scheduled age,week,3,Pediatric,N/A,3 wk (21 d),Scheduled age interval for infants is 3 wk (21 d).
+5,Age,Scheduled age,week,4,Pediatric,N/A,"4 wk (28 d, 1 mo)","Scheduled age interval for infants is 4 wk (28 d, 1 mo)."

@@ -128,9 +128,9 @@ class TablesEvaluator:
                 c, weight = c
             else:
                 weight = 1.0
-            v1 = row1[c]
-            v2 = row2[c]
-            
+            v1 = row1[c] if c in row1 else float('nan')
+            v2 = row2[c] if c in row2 else float('nan')
+
             if self.columns_type[c] == ColumnType.Text:
                 sum += 1*weight if self._is_equal_text(v1, v2) else 0
             else:
@@ -207,6 +207,8 @@ class TablesEvaluator:
         if (not isinstance(v1, str) and math.isnan(v1)) or\
             (not isinstance(v2, str) and math.isnan(v2)):
             s_val = v1 if not isinstance(v2, str) and math.isnan(v2) else v2
+            if not isinstance(s_val, str):
+                return False
             return len(s_val.strip().strip("\"'")) == 0
         if (not isinstance(v1, str)) or (not isinstance(v2, str)):
             # if one or two of the values is nemeric values, return False
@@ -318,8 +320,8 @@ class TablesSeparateEvaluator(TablesEvaluator):
                 c, weight = c
             else:
                 weight = 1.0
-            v1 = row1[c]
-            v2 = row2[c]
+            v1 = row1[c] if c in row1 else float('nan')
+            v2 = row2[c] if c in row2 else float('nan')
             if self.columns_type[c] == ColumnType.Text:
                 if self._is_equal_text(v1, v2):
                     text_sum += weight
