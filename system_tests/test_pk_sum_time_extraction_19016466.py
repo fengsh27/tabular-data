@@ -90,6 +90,44 @@ def _log_input_state(test_name, df_combined, md_table_aligned, caption):
     logger.info(SEP)
 
 
+def _log_exception_origin(underlying):
+    """Walk the traceback and log file/line/func of every frame, plus a
+    bold pointer to the innermost (deepest) frame where the exception was
+    actually raised. This is the line of code that caused the failure."""
+    tb = underlying.__traceback__
+    if tb is None:
+        logger.info("No traceback attached to exception — cannot locate origin.")
+        return
+
+    frames = traceback.extract_tb(tb)
+    if not frames:
+        logger.info("Traceback contained zero frames.")
+        return
+
+    logger.info("Call chain leading to %s (outermost → innermost):",
+                type(underlying).__name__)
+    for idx, fs in enumerate(frames):
+        logger.info(
+            "  [%d] %s:%d  in %s()    %s",
+            idx,
+            fs.filename,
+            fs.lineno,
+            fs.name,
+            (fs.line or "").strip(),
+        )
+
+    origin = frames[-1]
+    logger.info(SEP)
+    logger.info(">>> ERROR ORIGIN <<<")
+    logger.info("  file:     %s", origin.filename)
+    logger.info("  line:     %d", origin.lineno)
+    logger.info("  function: %s", origin.name)
+    logger.info("  source:   %s", (origin.line or "").strip())
+    logger.info(
+        "  raised:   %s: %s", type(underlying).__name__, underlying
+    )
+
+
 def _log_retry_error_outcome(test_name, retry_error, elapsed_s):
     logger.info(BANNER)
     logger.info(
@@ -106,12 +144,14 @@ def _log_retry_error_outcome(test_name, retry_error, elapsed_s):
     logger.info("last_attempt.exception() str:  %s", underlying)
     logger.info(SEP)
     if underlying is not None:
+        _log_exception_origin(underlying)
+        logger.info(SEP)
         tb_text = "".join(
             traceback.format_exception(
                 type(underlying), underlying, underlying.__traceback__
             )
         )
-        logger.info("Traceback of underlying exception:\n%s", tb_text)
+        logger.info("Full traceback of underlying exception:\n%s", tb_text)
     logger.info(SEP)
 
 
@@ -160,7 +200,9 @@ def _log_unexpected_exception(test_name, exc, elapsed_s):
     logger.error("Exception type: %s", type(exc).__name__)
     logger.error("Exception repr: %r", exc)
     logger.error(SEP)
-    logger.error("Traceback:", exc_info=exc)
+    _log_exception_origin(exc)
+    logger.error(SEP)
+    logger.error("Full traceback:", exc_info=exc)
     logger.error(SEP)
 
 
