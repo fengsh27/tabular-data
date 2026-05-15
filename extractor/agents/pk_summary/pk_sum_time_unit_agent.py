@@ -80,6 +80,69 @@ def post_process_time_and_unit(
 ) -> str:
     match_list = res.times_and_units
     expected_rows = markdown_to_dataframe(md_table_post_processed).shape[0]
+
+    # The pydantic schema `list[list[str]]` constrains the element type but
+    # NOT the inner-list length, so a malformed entry like ["N/A"] or
+    # [None, "N/A"] is accepted by the parser. The most common cause is
+    # Ollama's grammar-constrained generation hitting the output token cap
+    # mid-entry — typically truncating only the LAST row. Recover when the
+    # model's intent is unambiguous (valid rows all identical), else raise
+    # RetryException so the LLM gets a chance to self-correct.
+    def _is_valid_pair(row):
+        return (
+            isinstance(row, list)
+            and len(row) == 2
+            and all(isinstance(c, str) for c in row)
+        )
+
+    valid_match_list = [row for row in match_list if _is_valid_pair(row)]
+    malformed_count = len(match_list) - len(valid_match_list)
+    malformed_examples = [
+        (i, row) for i, row in enumerate(match_list) if not _is_valid_pair(row)
+    ][:5]
+
+    if not valid_match_list:
+        error_msg = (
+            f"Malformed `times_and_units` output: all {len(match_list)} "
+            f"inner lists are not [Time value, Time unit] pairs of two "
+            f"strings.\n"
+            f"Examples (up to 5): {malformed_examples}\n"
+            f"Every inner list MUST be exactly two strings — no nulls, no "
+            f"shorter or longer lists. Use [\"N/A\", \"N/A\"] when no time "
+            f"is available for a row."
+        )
+        logger.error(error_msg)
+        raise RetryException(error_msg)
+
+    all_valid_identical = all(x == valid_match_list[0] for x in valid_match_list)
+
+    if malformed_count > 0 and not all_valid_identical:
+        # Mixed valid + malformed — we can't infer the intent of the
+        # malformed rows from the valid ones. Surface the issue.
+        error_msg = (
+            f"Malformed `times_and_units` output: {malformed_count} of "
+            f"{len(match_list)} inner lists are not [Time value, Time unit] "
+            f"pairs of two strings, and the valid rows are not all "
+            f"identical (so the malformed rows' intent can't be inferred).\n"
+            f"Examples (up to 5): {malformed_examples}\n"
+            f"Every inner list MUST be exactly two strings — no nulls, no "
+            f"shorter or longer lists. Use [\"N/A\", \"N/A\"] when no time "
+            f"is available for a row."
+        )
+        logger.error(error_msg)
+        raise RetryException(error_msg)
+
+    if malformed_count > 0:
+        logger.warning(
+            "Dropped %d malformed row(s) from `times_and_units` output; "
+            "remaining %d valid rows are all identical (%r). Expanding to "
+            "%d rows to match the input table.",
+            malformed_count, len(valid_match_list),
+            valid_match_list[0], expected_rows,
+        )
+
+    match_list = valid_match_list
+
     if all(x == match_list[0] for x in match_list):
         # expand to expect_rows
         match_list = [match_list[0]] * expected_rows
@@ -103,7 +166,7 @@ def post_process_time_and_unit(
             # Append ["N/A", "N/A"] rows to match expected_rows
             additional_rows = [["N/A", "N/A"]] * (expected_rows - df_table.shape[0])
             df_table_fixed = pd.concat([df_table, pd.DataFrame(additional_rows, columns=["Time value", "Time unit"])], ignore_index=True)
-            
+
         if df_table_fixed is None:
             error_msg = (
                 "Wrong answer example:\n"
