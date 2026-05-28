@@ -74,6 +74,29 @@ poetry run pytest benchmark/test_pe_benchmark_with_llm.py
 ```
 After benchmark completed, we can find the results in `./benchmark/result/pe/{target}/result.log`
 
+5. Run PK individual benchmark with **Semantic** assessment
+ - Prepare baseline in `./benchmark/data/pk-individual/baseline` and target in `./benchmark/data/pk-individual/{target}`
+ - `export TARGET={target}` then:
+```
+poetry run pytest benchmark/test_pk_individual_benchmark_with_semantic.py
+```
+Results land in `./benchmark/result/pk-individual/{target}/result.log`.
+
+6. Run the **combined PK-PE benchmark** (drives every PK/PE pipeline in one run)
+ - Place per-version curation outputs under `./benchmark/data/pk-pe/{version1}` and `./benchmark/data/pk-pe/{version2}`. Each file is named `{pmid}_{pipeline}.csv` (or `{pmid}_{pipeline}_{llm}.csv`) and is scored against its matching counterpart by `BenchmarkType` derived from the filename.
+ - Columns, anchor keys, and numeric/text types per pipeline are defined in `benchmark/configs.py`; PE column aliases (e.g. `Outcome` → `Outcomes`, `Interval Low` → `Lower bound`) are normalized in `benchmark/pe_preprocess.py`.
+ - Configure versions and scoring mode:
+```
+export VERSION1=2026-4-10        # "target" curation version (defaults: 2026-4-10)
+export VERSION2=2026-4-16        # "baseline" curation version (defaults: 2026-4-16)
+export SCORE_MODE=combined       # or row, column, etc. (defaults: combined)
+```
+ - Run:
+```
+poetry run pytest benchmark/test_pk_pe_benchmark_with_semantic.py
+```
+Results land in `./benchmark/result/pk-pe/{version1}/result.log`. The supported `BenchmarkType` values are: `pk-summary`, `pk-individual`, `pk-population-summary`, `pk-population-individual`, `pk-specimen-summary`, `pk-specimen-individual`, `pk-drug-summary`, `pk-drug-individual`, `pe-study-info`, `pe-study-outcome`.
+
 ## Streamlit UI
 The Streamlit app provides an interactive workflow to retrieve papers, extract tables, and curate PK/PE/CT outputs.
 
@@ -125,6 +148,29 @@ poetry run python app_script_pmids.py -i 29943508 -o ./out
 | `PipelineError` | Unhandled exception during pipeline tool execution |
 | `CorrectionError` | Correction step exhausted all retries without producing a valid fix |
 | `VerificationError` | Exception raised inside the verification agent |
+
+## Helper scripts
+
+Stand-alone utilities under `scripts/` support data prep and result management; run them from the repo root with `poetry run python scripts/<name>.py ...`.
+
+- `prepare_htmls_by_pmids.py` — fetch paper full-text HTML for a list of PMIDs.
+```
+poetry run python scripts/prepare_htmls_by_pmids.py -i ./data/pmids.csv -o ./out/html -n 50 -s 0
+```
+  Flags: `-i/--input` CSV (PMID column or PMID in first column), `-o/--output` output folder, `-n/--number` max papers, `-s/--offset` start index.
+
+- `add_llm_suffix.py` — append a `_{llm}` suffix to curated files so they can be scored side-by-side in `benchmark/data/pk-pe/{version}/`.
+```
+poetry run python scripts/add_llm_suffix.py ./benchmark/data/pk-pe/2026-4-16 qwen35 --pattern '*.csv' --recursive --dry-run
+```
+
+- `convert_md_table_to_csv.py` — convert Markdown tables in a file into CSV.
+
+## Pipeline orchestration
+
+The top-level orchestration (identification → design → execution → verification → correction loop) is implemented by `PKPEManager` in `extractor/agents_manager/pk_pe_manager.py`. Per-pipeline subgraphs live in `extractor/agents_manager/*_task.py` and reuse the shared `pk_pe_agenttool_task.py` graph
+`START → execution_step → verification_step → (correction_step → verification_step)* → END`.
+Use `PKPEManager.run(pmid)` / `runAsync(pmid)` programmatically, or `app_script_pmids.py` for batch runs over a PMID CSV.
 
 ## bump version
 This package employs bump2version to bump version

@@ -2,20 +2,27 @@
 
 ## Project Structure & Module Organization
 - `app.py` and `components/` host the Streamlit UI; `images/` assets are referenced by the app.
-- Core extraction logic lives in `extractor/` (agents, request clients, utils, database helpers).
-- Benchmarks live in `benchmark/` with input data under `benchmark/data/` and results in `benchmark/result/`.
-- Tests are split between `tests/` (unit/integration) and `system_tests/` (end-to-end flows with fixtures in `system_tests/data/`).
+- Core extraction logic lives in `extractor/`:
+  - `extractor/agents/` — per-pipeline LangGraph workflows (`pk_summary`, `pk_individual`, `pk_population_*`, `pk_specimen_*`, `pk_drug_*`, `pe_study_info`, `pe_study_outcome*`).
+  - `extractor/agents/pk_pe_agents/` — high-level orchestration steps (identification, design, execution, verification, correction, correction-code).
+  - `extractor/agents_manager/` — top-level `PKPEManager` plus per-pipeline `AgentToolTask` graphs (`pk_summary_task.py`, `pk_individual_task.py`, `pk_populattion_task.py`, `pk_fulltext_tool_task.py`, `pe_study_task.py`, etc.); the shared `pk_pe_agenttool_task.py` builds the `execution → verification → (correction → verification)*` loop.
+  - `extractor/request_*`, `extractor/utils*`, and `extractor/database/` provide LLM clients, helpers, and DB access.
+- Batch CLIs: `app_script.py` (single-model multi-pipeline) and `app_script_pmids.py` (full PKPEManager orchestration over a PMID CSV).
+- Benchmarks live in `benchmark/` with input data under `benchmark/data/<pipeline>/<version>/`, the column/anchor config in `benchmark/configs.py`, shared helpers in `benchmark/common.py` and `benchmark/comm_semantic.py`, PE normalization in `benchmark/pe_preprocess.py`, and results in `benchmark/result/`.
+- Tests are split between `tests/` (unit/integration) and `system_tests/` (end-to-end flows with fixtures in `system_tests/data/` and per-PMID `conftest_data_*.py`).
+- `scripts/` contains stand-alone utilities (e.g. `prepare_htmls_by_pmids.py`, `add_llm_suffix.py`, `convert_md_table_to_csv.py`).
 - Example/fixture data also appears in `data/` and `tests/data/`.
 
 ## Build, Test, and Development Commands
 - `poetry install -E semantic -E claude` installs dependencies with optional LLM extras.
 - `poetry shell` or `poetry run <command>` activates the environment.
 - `poetry run streamlit run app.py` launches the UI.
+- `poetry run python app_script_pmids.py -f ./data/pmids.csv -o ./out` runs the full PKPEManager pipeline over a PMID list (see README for the summary CSV format).
 - `poetry run pytest tests` runs the main test suite.
 - `poetry run pytest system_tests` runs system tests (slower, uses larger fixtures).
 - Benchmark runs (see `README.md` for required env vars):
-  - `poetry run pytest benchmark/test_pk_summary_benchmark_with_semantic.py`
-  - `poetry run pytest benchmark/test_pk_summary_benchmark_with_llm.py`
+  - Per-pipeline (legacy): `poetry run pytest benchmark/test_pk_summary_benchmark_with_semantic.py` (or `_with_llm.py`, `test_pk_individual_benchmark_with_semantic.py`, `test_pe_benchmark_with_semantic.py`).
+  - Combined multi-pipeline: `poetry run pytest benchmark/test_pk_pe_benchmark_with_semantic.py` — drives all PK/PE pipelines from `benchmark/data/pk-pe/<version>/`, scored via `benchmark/configs.py`.
 
 ## Coding Style & Naming Conventions
 - Python-only codebase; follow PEP 8 with 4-space indentation.
