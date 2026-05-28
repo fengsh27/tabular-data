@@ -1,0 +1,23 @@
+Curated table for 18701886 pk_drug_individual is not correct
+Explanation: idx 40, Col "Patient ID": change "I" to "H"
+idx 41, Col "Patient ID": change "I" to "H"
+idx 42, Col "Patient ID": change "I" to "H"
+idx 43, Col "Patient ID": change "I" to "H"
+idx 44, Col "Patient ID": change "I" to "H"
+idx 45, Col "Patient ID": change "nan" to "I"
+idx 46, Col "Patient ID": change "nan" to "I"
+idx 47, Col "Patient ID": change "nan" to "I"
+idx 48, Col "Patient ID": change "nan" to "I"
+idx 49, Col "Patient ID": change "nan" to "I"
+Extra idx 50: should be removed
+Suggested fix: idx 40, Col "Patient ID": change "I" to "H"
+idx 41, Col "Patient ID": change "I" to "H"
+idx 42, Col "Patient ID": change "I" to "H"
+idx 43, Col "Patient ID": change "I" to "H"
+idx 44, Col "Patient ID": change "I" to "H"
+idx 45, Col "Patient ID": change "nan" to "I"
+idx 46, Col "Patient ID": change "nan" to "I"
+idx 47, Col "Patient ID": change "nan" to "I"
+idx 48, Col "Patient ID": change "nan" to "I"
+idx 49, Col "Patient ID": change "nan" to "I"
+Extra idx 50: should be removed

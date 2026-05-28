@@ -1,0 +1,5 @@
+Drug/Metabolite name,Dose amount,Dose unit,Dose frequency,Dose schedule,Dose route,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Note
+Nicotine,10,μM,N/A,N/A,In vitro,Rabbit liver microsomes,Non-pregnant/Pregnant,N/A,3-10,N/A
+Nicotine,10,μM,N/A,N/A,In vitro,Rabbit placental microsomes,N/A,N/A,N/A,N/A
+Nicotine,10,μM,N/A,N/A,In vitro,Rabbit fetal liver microsomes,N/A,N/A,N/A,N/A
+Cotinine,500,μM,N/A,N/A,In vitro,Rabbit liver microsomes,Non-pregnant/Pregnant,N/A,3-10,N/A

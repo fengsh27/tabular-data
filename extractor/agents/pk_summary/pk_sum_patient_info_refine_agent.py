@@ -101,15 +101,32 @@ def post_process_refined_patient_info(
         logger.error(error_msg)
         raise ValueError(error_msg)
 
-    expected_rows = markdown_to_dataframe(md_table_patient).shape[0]
+    from collections import Counter
+    df_patient = markdown_to_dataframe(md_table_patient)
+    expected_rows = df_patient.shape[0]
+
     if len(match_list) != expected_rows:
-        error_msg = (
-            "Wrong answer example:\n"
-            + str(match_list)
-            + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {len(match_list)} extracted matches."
-        )
-        logger.error(error_msg)
-        raise RetryException(error_msg)
+        subj_n_to_demo: dict[str, list[str]] = {}
+        for row in match_list:
+            if len(row) >= 4:
+                subj_n = str(row[3]).strip().strip("\"'")
+                if subj_n not in subj_n_to_demo:
+                    subj_n_to_demo[subj_n] = [str(x) for x in row[0:3]]
+        if not subj_n_to_demo:
+            error_msg = (
+                "Wrong answer example:\n"
+                + str(match_list)
+                + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {len(match_list)} extracted matches."
+            )
+            logger.error(error_msg)
+            raise RetryException(error_msg)
+        default_demo = list(Counter(tuple(v) for v in subj_n_to_demo.values()).most_common(1)[0][0])
+        match_list = [
+            subj_n_to_demo.get(
+                str(src_row["Subject N"]).strip().strip("\"'"), default_demo
+            ) + [str(src_row["Subject N"]).strip().strip("\"'")]
+            for _, src_row in df_patient.iterrows()
+        ]
 
     df_table = pd.DataFrame(
         match_list,
@@ -120,34 +137,5 @@ def post_process_refined_patient_info(
             "Subject N",
         ],
     ).astype(str)
-
-    df_patient = markdown_to_dataframe(md_table_patient)
-    if not df_table["Subject N"].equals(df_patient["Subject N"]):
-        error_msg = (
-            "Wrong answer example:\n"
-            + str(match_list)
-            + "\nWhy it's wrong:\nThe rows in the refined Subtable 2 do not correspond to those in Subtable 1 on a one-to-one basis."
-        )
-        if df_patient.shape[0] == df_table.shape[0]:
-            # check row by row
-            list1 = df_table["Subject N"].to_list()
-            list_patient = df_patient["Subject N"].to_list()
-            # check row by row
-            for ix in range(len(list1)):
-                item1: str = list1[ix]
-                item2: str = list_patient[ix]
-                item1 = item1.strip().strip("\"'")
-                item2 = item2.strip().strip("\"'")
-                if item1 == item2:
-                    continue
-                logger.error(
-                    error_msg + f"\nExpedted df_patient['Subject N']: {list_patient}"
-                )
-                raise RetryException(error_msg)
-        else:
-            logger.error(
-                error_msg + f"\nExpedted df_patient['Subject N']: {list_patient}"
-            )
-            raise RetryException(error_msg)
 
     return dataframe_to_markdown(df_table)

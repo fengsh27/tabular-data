@@ -6,9 +6,9 @@ from .constant import BenchmarkType
 
 
 def generate_columns_definition(
-    pk_or_pe: Union[BenchmarkType.PE, BenchmarkType.PK_SUMMARY],
+    pk_or_pe: Union[BenchmarkType.PE_STUDY_OUTCOME, BenchmarkType.PK_SUMMARY],
 ) -> str:
-    assert pk_or_pe == BenchmarkType.PE or pk_or_pe == BenchmarkType.PK_SUMMARY
+    assert pk_or_pe == BenchmarkType.PE_STUDY_OUTCOME or pk_or_pe == BenchmarkType.PK_SUMMARY
     k = "pk" if pk_or_pe == BenchmarkType.PK_SUMMARY else "pe"
     fn = f"./prompts/{k}_prompts.json"
     with open(fn, "r") as fobj:

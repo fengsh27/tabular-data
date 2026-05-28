@@ -53,7 +53,7 @@ def post_process_characteristic_info(
 
     if type(res.characteristic_combinations) != list or len(res.characteristic_combinations) == 0:
         raise RetryException(f"""
-Wrong answer: {res.characteristic_combinations}, if the table does not explicitly mention any [Population characteristic, Characteristic sub-category, Characteristic values, Population, Population N, Source text], please leave it with [["N/A", "N/A", "N/A", "N/A", "N/A", "N/A"]].
+Wrong answer: {res.characteristic_combinations}, if the table does not explicitly mention any [Patient ID, Patient characteristic, Characteristic sub-category, Characteristic values, Source text], please leave it with [["N/A", "N/A", "N/A", "N/A", "N/A"]].
 """)
 
     df_table = pd.DataFrame(

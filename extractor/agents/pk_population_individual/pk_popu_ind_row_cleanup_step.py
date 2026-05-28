@@ -20,8 +20,8 @@ class RowCleanupStep(PKPopuIndCommonStep):
         df_combined = state["df_combined"]
         df_combined["__original_order"] = range(len(df_combined))
 
-        # delete if no num value
-        df_combined = df_combined[df_combined['Main value'].str.contains(r'\d', na=False)]
+        mv = df_combined['Main value'].str.strip().str.replace(r'\s*/\s*', '/', regex=True).str.upper()
+        df_combined = df_combined[(mv.str.len() > 0) & (~mv.isin(['N/A', 'NA']))]
         # def remove_sum_row(df):
         #     df = df.copy()
         #     try:

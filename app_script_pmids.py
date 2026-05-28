@@ -136,6 +136,7 @@ def prepare_data_by_pmids_csv_file(csv_pmids_fn: str, pmid_db: PMIDDB) -> list[s
                 html_file = Path(html_path)
                 if not html_file.is_absolute():
                     html_file = (base_dir / html_file).resolve()
+                    logger.info(f"paper path: {html_file}")
 
                 try:
                     html_content = html_file.read_text(encoding="utf-8", errors="ignore")

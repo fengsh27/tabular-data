@@ -1,6 +1,7 @@
 from langchain_core.prompts import ChatPromptTemplate
 from pydantic import Field
 import pandas as pd
+import logging
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown
 from extractor.agents.common_agent.common_agent import RetryException
@@ -8,12 +9,15 @@ from extractor.agents.pk_population_summary.pk_popu_sum_common_agent import (
     PKPopuSumCommonAgentResult,
 )
 
+logger = logging.getLogger(__name__)
+
 CHARACTERISTIC_INFO_PROMPT = ChatPromptTemplate.from_template("""
 {title}
 {full_text}
 Read the article and answer the following:
 
 (1) Determine how many unique combinations of [Population characteristic, Characteristic sub-category, Characteristic values, Population, Population N, Source text] appear in the table.  
+    Please make sure to have the following **6 values** for each combination, if not available, please use "N/A":                                                               
     - **Population characteristic**: Population-focused characteristics. Not PK parameter!!!
             · “Age," “Sex," "Weight," “Gender," “Race," “Ethnicity"
             · “Socioeconomic status," “Education," “Marital status"
@@ -66,6 +70,7 @@ def post_process_characteristic_info(
     res: CharacteristicInfoResult,
 ):
     if res.characteristic_combinations is None:
+        logger.error("Empty characteristic combinations")
         raise ValueError("Empty characteristic combinations")
 
     if type(res.characteristic_combinations) != list or len(res.characteristic_combinations) == 0:

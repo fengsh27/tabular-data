@@ -5,7 +5,7 @@ from benchmark.comm_llm import run_llm_benchmark
 
 from .common import (
     ensure_target_result_directory_existed,
-    prepare_dataset_for_benchmark,
+    prepare_single_pipeline_dataset_for_benchmark,
 )
 from .constant import BASELINE, BenchmarkType, LLModelType
 
@@ -29,7 +29,7 @@ target_dir = os.path.join("./benchmark/data/pe", target)
 
 @pytest.fixture(scope="module")
 def prepared_dataset():
-    return prepare_dataset_for_benchmark(
+    return prepare_single_pipeline_dataset_for_benchmark(
         baseline_dir=baseline_dir,
         target_dir=target_dir,
         benchmark_type=BenchmarkType.PE,

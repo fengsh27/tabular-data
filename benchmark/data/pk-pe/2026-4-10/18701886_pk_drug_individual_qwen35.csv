@@ -1,0 +1,52 @@
+Patient ID,Drug/Metabolite name,Dose amount,Dose unit,Dose frequency,Dose schedule,Dose route,Population,Pregnancy stage,Pediatric/Gestational age,Note
+A,Buprenorphine,20,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Dose at delivery (mg/day) for subject/A is 20
+A,Buprenorphine,15.6,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Mean daily dose (mg/day) for subject/A is 15.6
+A,Buprenorphine,16.2,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Average third trimester daily dose (mg/day) for subject/A is 16.2
+A,Buprenorphine,1354,mg,Cumulative,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Cumulative dose (mg) for subject/A is 1354
+A,Buprenorphine,1150,mg,Cumulative,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Cumulative third trimester dose (mg) for subject/A is 1150
+B,Buprenorphine,16,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Dose at delivery (mg/day) for subject/B is 16
+B,Buprenorphine,14.4,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Mean daily dose (mg/day) for subject/B is 14.4
+B,Buprenorphine,14.8,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Average third trimester daily dose (mg/day) for subject/B is 14.8
+B,Buprenorphine,1526,mg,Cumulative,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Cumulative dose (mg) for subject/B is 1526
+B,Buprenorphine,1364,mg,Cumulative,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Cumulative third trimester dose (mg) for subject/B is 1364
+C,Buprenorphine,24,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Dose at delivery (mg/day) for subject/C is 24
+C,Buprenorphine,18.3,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Mean daily dose (mg/day) for subject/C is 18.3
+C,Buprenorphine,21.0,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Average third trimester daily dose (mg/day) for subject/C is 21.0
+C,Buprenorphine,2196,mg,Cumulative,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Cumulative dose (mg) for subject/C is 2196
+C,Buprenorphine,1344,mg,Cumulative,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Cumulative third trimester dose (mg) for subject/C is 1344
+D (Baby 1),Buprenorphine,18,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Dose at delivery (mg/day) for subject/D is 18
+D (Baby 1),Buprenorphine,15.9,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Mean daily dose (mg/day) for subject/D is 15.9
+D (Baby 1),Buprenorphine,16.9,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Average third trimester daily dose (mg/day) for subject/D is 16.9
+D (Baby 1),Buprenorphine,1464,mg,Cumulative,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Cumulative dose (mg) for subject/D is 1464
+D (Baby 1),Buprenorphine,1084,mg,Cumulative,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Cumulative third trimester dose (mg) for subject/D is 1084
+D (Baby 2),Buprenorphine,18,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Dose at delivery (mg/day) for subject/D.1 is 18
+D (Baby 2),Buprenorphine,15.9,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Mean daily dose (mg/day) for subject/D.1 is 15.9
+D (Baby 2),Buprenorphine,16.9,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Average third trimester daily dose (mg/day) for subject/D.1 is 16.9
+D (Baby 2),Buprenorphine,1464,mg,Cumulative,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Cumulative dose (mg) for subject/D.1 is 1464
+D (Baby 2),Buprenorphine,1084,mg,Cumulative,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Cumulative third trimester dose (mg) for subject/D.1 is 1084
+E,Buprenorphine,24,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Dose at delivery (mg/day) for subject/E is 24
+E,Buprenorphine,18.3,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Mean daily dose (mg/day) for subject/E is 18.3
+E,Buprenorphine,21.8,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Average third trimester daily dose (mg/day) for subject/E is 21.8
+E,Buprenorphine,2160,mg,Cumulative,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Cumulative dose (mg) for subject/E is 2160
+E,Buprenorphine,1396,mg,Cumulative,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Cumulative third trimester dose (mg) for subject/E is 1396
+F,Buprenorphine,16,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Dose at delivery (mg/day) for subject/F is 16
+F,Buprenorphine,11,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Mean daily dose (mg/day) for subject/F is 11
+F,Buprenorphine,10.4,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Average third trimester daily dose (mg/day) for subject/F is 10.4
+F,Buprenorphine,1674,mg,Cumulative,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Cumulative dose (mg) for subject/F is 1674
+F,Buprenorphine,888,mg,Cumulative,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Cumulative third trimester dose (mg) for subject/F is 888
+G,Buprenorphine,18,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Dose at delivery (mg/day) for subject/G is 18
+G,Buprenorphine,15.9,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Mean daily dose (mg/day) for subject/G is 15.9
+G,Buprenorphine,17.1,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Average third trimester daily dose (mg/day) for subject/G is 17.1
+G,Buprenorphine,1760,mg,Cumulative,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Cumulative dose (mg) for subject/G is 1760
+G,Buprenorphine,1330,mg,Cumulative,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Cumulative third trimester dose (mg) for subject/G is 1330
+I,Buprenorphine,18,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Dose at delivery (mg/day) for subject/H is 18
+I,Buprenorphine,12.3,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Mean daily dose (mg/day) for subject/H is 12.3
+I,Buprenorphine,13.3,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Average third trimester daily dose (mg/day) for subject/H is 13.3
+I,Buprenorphine,1850,mg,Cumulative,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Cumulative dose (mg) for subject/H is 1850
+I,Buprenorphine,1132,mg,Cumulative,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Cumulative third trimester dose (mg) for subject/H is 1132
+nan,Buprenorphine,14,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Dose at delivery (mg/day) for subject/I is 14
+nan,Buprenorphine,13.6,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Mean daily dose (mg/day) for subject/I is 13.6
+nan,Buprenorphine,13.7,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Average third trimester daily dose (mg/day) for subject/I is 13.7
+nan,Buprenorphine,1330,mg,Cumulative,N/A,N/A,Maternal,Trimester 3,N/A,Cumulative dose (mg) for subject/I is 1330
+nan,Buprenorphine,1162,mg,Cumulative,N/A,N/A,Maternal,Trimester 3,N/A,Cumulative third trimester dose (mg) for subject/I is 1162
+I,Buprenorphine,14,mg/day,Daily,N/A,N/A,Maternal,Trimester 3,N/A,Table 1: Dose at delivery (mg/day) for subject/I is 14

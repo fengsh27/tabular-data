@@ -277,7 +277,7 @@ class PKPopulationSummaryCurationTool(AgentTool):
             return result_df, article_text
         else:
             logger.info("Detected PK demographic table. Use the table as the input.")
-            workflow = PKPopuIndWorkflow(llm=self.llm)
+            workflow = PKPopuSumWorkflow(llm=self.llm)
             workflow.build()
             dfs: list[pd.DataFrame] = []
             source_tables = []

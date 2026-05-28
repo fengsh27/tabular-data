@@ -74,13 +74,26 @@ class CommonAgentOllama(CommonAgent):
     def handle_qwen_thinking(content: str) -> str:
         """
         Strip Qwen3 thinking/reasoning content from the response.
-        
+
         Args:
             content: Raw content from the model that may contain thinking/reasoning text
-            
+
         Returns:
             Cleaned content with thinking/reasoning text removed
         """
+        # FIXME: temporary log — diagnosing PMID 19016466 NoneType.strip() bug
+        logger.info(
+            f"handle_qwen_thinking: incoming content type={type(content).__name__}, "
+            f"is_none={content is None}, "
+            f"len={(len(content) if isinstance(content, str) else 'N/A')}"
+        )
+        if content is None:
+            logger.error(
+                "handle_qwen_thinking: content is None — Ollama returned a "
+                "response with no text. Returning empty string to surface a "
+                "parser error instead of an AttributeError."
+            )
+            return ""
         # Remove everything before and including </think> tag
         if "</think>" in content:
             content = content.split("</think>", 1)[-1].strip()
@@ -125,10 +138,32 @@ class CommonAgentOllama(CommonAgent):
                 else "json"
             )
             raw = llm.bind(format=json_format).invoke(msg)
+            # FIXME: temporary log — diagnosing PMID 19016466 NoneType.strip() bug
+            logger.info(
+                f"runnable_agent: raw.content type={type(raw.content).__name__}, "
+                f"is_none={raw.content is None}"
+            )
+            if raw.content is None:
+                logger.error(
+                    "runnable_agent: raw.content is None! Ollama returned an "
+                    "empty message — usage_metadata=%s, raw.response_metadata=%s",
+                    getattr(raw, "usage_metadata", None),
+                    getattr(raw, "response_metadata", None),
+                )
+            else:
+                preview = raw.content[:500] if isinstance(raw.content, str) else repr(raw.content)[:500]
+                logger.info(f"runnable_agent: raw.content preview (first 500 chars): {preview!r}")
             token_usage = CommonAgentOllama.normalize_token_usage(raw.usage_metadata)
             try:
                 # Strip Qwen3 thinking/reasoning content if present
                 content = CommonAgentOllama.handle_qwen_thinking(raw.content)
+                # FIXME: temporary log — show post-thinking content
+                logger.info(
+                    f"runnable_agent: post-handle_qwen_thinking content "
+                    f"type={type(content).__name__}, "
+                    f"len={(len(content) if isinstance(content, str) else 'N/A')}, "
+                    f"preview={(content[:300] if isinstance(content, str) else repr(content)[:300])!r}"
+                )
                 res = parser.parse(content)
                 return res, token_usage
             except Exception as e:
@@ -136,7 +171,9 @@ class CommonAgentOllama(CommonAgent):
                     res = agent_fix_parser(content)
                     if res is not None:
                         return res, token_usage
-                logger.error(e)
+                # FIXME: temporary log — include stack trace so the offending
+                # line is visible in the log file (default logger.error drops it).
+                logger.error("runnable_agent: parser/handler failed: %r", e, exc_info=True)
                 raise e
         return RunnableLambda(runnable_agent)
         
@@ -179,14 +216,16 @@ class CommonAgentOllama(CommonAgent):
             )
             self._incre_token_usage(token_usage)
         except Exception as e:
-            logger.error(f"Error executing chain: {e}")
+            # FIXME: temporary log — include stack trace so the offending file:line is visible.
+            logger.error("Error executing chain: %r", e, exc_info=True)
             raise e
         processed_res = res
         if post_process is not None:
             try:
                 processed_res = post_process(res, **kwargs)
             except RetryException as e:
-                logger.error(str(e))
+                # FIXME: temporary log — surface where the RetryException originated.
+                logger.error("post_process RetryException: %s", e, exc_info=True)
                 if self.try_fix_error is not None and self.exceptions is not None and len(self.exceptions) == 4:
                     logger.info(f"Try to fix the error: {e}")
                     fixed_res = self.try_fix_error(res, **kwargs)
@@ -198,7 +237,8 @@ class CommonAgentOllama(CommonAgent):
                     self.exceptions.append(e)
                 raise e
             except Exception as e:
-                logger.error(str(e))
+                # FIXME: temporary log — surface where post_process exception originated.
+                logger.error("post_process exception: %s", e, exc_info=True)
                 raise e
         return res, processed_res, self.token_usage, None
 

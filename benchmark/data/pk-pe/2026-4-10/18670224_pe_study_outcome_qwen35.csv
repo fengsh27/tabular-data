@@ -1,0 +1,93 @@
+Characteristic,Exposure,Outcome,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value
+Median CD4 at HAART initiation or study enrollment,HAART-exposed,Median CD4 count,cells/mm3,Median,132,N/A,N/A,Range,90,187,0.80†
+Median CD4 at HAART initiation or study enrollment,HAART-unexposed,Median CD4 count,cells/mm3,Median,146,N/A,N/A,Range,105,174,0.80†
+Median Log10VL at HAART initiation or study enrollment,HAART-exposed,Median viral load,log10copies/ml,Median,4.93,N/A,N/A,Range,4.44,5.41,0.61†
+Median Log10VL at HAART initiation or study enrollment,HAART-unexposed,Median viral load,log10copies/ml,Median,4.98,N/A,N/A,Range,4.60,5.39,0.61†
+Median Weight at Birth,HAART-exposed,Median birth weight,kg,Median,2.9,N/A,N/A,Range,2.6,3.1,0.07†
+Median Weight at Birth,HAART-unexposed,Median birth weight,kg,Median,3,N/A,N/A,Range,2.7,3.3,0.07†
+Median Gestational Period at Birth,HAART-exposed,Median gestational period,weeks,Median,40,N/A,N/A,Range,38,40,0.04†
+Median Gestational Period at Birth,HAART-unexposed,Median gestational period,weeks,Median,39,N/A,N/A,Range,38,40,0.04†
+Number of premature births,HAART-exposed,Number of premature births,Count,Sum,5,%,7.2%,N/A,N/A,N/A,0.32
+Number of premature births,HAART-unexposed,Number of premature births,Count,Sum,14,%,12.8%,N/A,N/A,N/A,0.32
+Number of male infants,HAART-exposed,Number of male infants,Count,Sum,34,%,49%,N/A,N/A,N/A,0.44
+Number of male infants,HAART-unexposed,Number of male infants,Count,Sum,60,%,55%,N/A,N/A,N/A,0.44
+Infants infected with HIV-1 at birth,HAART-exposed,Infants infected with HIV-1 at birth,Count,Sum,1,%,1.4,N/A,N/A,N/A,0.09
+Infants infected with HIV-1 at birth,HAART-unexposed,Infants infected with HIV-1 at birth,Count,Sum,9,%,8.3,N/A,N/A,N/A,0.09
+Infants infected with HIV-1 at 1 month,HAART-exposed,Infants infected with HIV-1 at 1 month,Count,Sum,1,%,1.4,N/A,N/A,N/A,0.41
+Infants infected with HIV-1 at 1 month,HAART-unexposed,Infants infected with HIV-1 at 1 month,Count,Sum,5,%,4.6,N/A,N/A,N/A,0.41
+Infants infected with HIV-1 between 2 and 7 months,HAART-exposed,Infants infected with HIV-1 between 2 and 7 months,Count,Sum,0,N/A,N/A,N/A,N/A,N/A,0.04
+Infants infected with HIV-1 between 2 and 7 months,HAART-unexposed,Infants infected with HIV-1 between 2 and 7 months,Count,Sum,7,%,6.4,N/A,N/A,N/A,0.04
+Infants infected with HIV-1 between 2 and 7 months,HAART-exposed,Infants infected with HIV-1 between 2 and 7 months,N/A,N/A,0.04,N/A,N/A,N/A,N/A,N/A,0.04
+Cumulative infants infected with HIV-1 by 7 months,HAART-exposed,Cumulative infants infected with HIV-1 by 7 months,Count,Sum,2,%,2.9,N/A,N/A,N/A,0.001
+cumulative HIV-1 infection by 7 months,HAART-unexposed,number of infected infants,Count,Sum,21,%,19.3,N/A,N/A,N/A,0.001
+cumulative HIV-1 infection by 7 months,HAART-unexposed,p-value for comparison,N/A,N/A,0.001,N/A,N/A,N/A,N/A,N/A,0.001
+All Infants,HAART-exposed,Grade 3 or 4 Hematologic Abnormalities (HB) at Birth,Count,Sum,0,N/A,N/A,N/A,N/A,N/A,0.52
+All Infants,HAART-unexposed,Grade 3 or 4 Hematologic Abnormalities (HB) at Birth,Count,Sum,2,%,1.8,N/A,N/A,N/A,0.52
+All Infants,HAART-exposed vs HAART-unexposed,P-value for Grade 3 or 4 Hematologic Abnormalities (HB) at Birth,N/A,N/A,0.52,N/A,N/A,N/A,N/A,N/A,0.52
+All Infants,HAART-exposed,Grade 3 or 4 Hematologic Abnormalities (HB) Between Birth and 1 Month,Count,Sum,3,%,4.3,N/A,N/A,N/A,0.68
+All Infants,HAART-unexposed,Grade 3 or 4 Hematologic Abnormalities (HB) Between Birth and 1 Month,Count,Sum,3,%,2.8,N/A,N/A,N/A,0.68
+All Infants,HAART-exposed vs HAART-unexposed,P-value for Grade 3 or 4 Hematologic Abnormalities (HB) Between Birth and 1 Month,N/A,N/A,0.68,N/A,N/A,N/A,N/A,N/A,0.68
+All Infants,HAART-exposed,Grade 3 or 4 Hematologic Abnormalities (HB) Between 2 to 7 Months,Count,Sum,1,%,1.4,N/A,N/A,N/A,0.39
+All Infants,HAART-unexposed,Grade 3 or 4 Hematologic Abnormalities (HB) Between 2 to 7 Months,Count,Sum,0,N/A,N/A,N/A,N/A,N/A,0.39
+All Infants,HAART-exposed vs HAART-unexposed,P-value for Grade 3 or 4 Hematologic Abnormalities (HB) Between 2 to 7 Months,N/A,N/A,0.39,N/A,N/A,N/A,N/A,N/A,0.39
+All Infants,HAART-exposed,Grade 3 or 4 Hematologic Abnormalities (HB) at Birth,Count,Sum,0,N/A,N/A,N/A,N/A,N/A,0.52
+All Infants,HAART-exposed,Grade 3 or 4 Hematologic Abnormalities (HB),Count,Sum,1,%,0.9,N/A,N/A,N/A,0.52
+All Infants,HAART-exposed,Grade 3 or 4 Hematologic Abnormalities (HB),N/A,N/A,1.00,N/A,N/A,N/A,N/A,N/A,0.52
+All Infants,HAART-exposed,Grade 3 or 4 Hematologic Abnormalities (PLT),Count,Sum,0,N/A,N/A,N/A,N/A,N/A,1.00
+All Infants,HAART-exposed,Grade 3 or 4 Hematologic Abnormalities (PLT),Count,Sum,1,%,0.9,N/A,N/A,N/A,1.00
+All Infants,HAART-exposed,Grade 3 or 4 Hematologic Abnormalities (PLT),N/A,N/A,1.00,N/A,N/A,N/A,N/A,N/A,1.00
+All Infants,HAART-exposed,Grade 3 or 4 Hematologic Abnormalities (PLT),Count,Sum,1,%,1.4,N/A,N/A,N/A,0.39
+All Infants,HAART-exposed,Grade 3 or 4 Hematologic Abnormalities (PLT),Count,Sum,0,N/A,N/A,N/A,N/A,N/A,0.39
+All Infants,HAART-exposed,Grade 3 or 4 Hematologic Abnormalities (ANC),N/A,N/A,0.39,N/A,N/A,N/A,N/A,N/A,0.39
+All Infants,HAART-unexposed,Grade 3 or 4 Hematologic Abnormalities (ANC),Count,Sum,4,%,5.8%,N/A,N/A,N/A,0.21
+All Infants,HAART-unexposed,Grade 3 or 4 Hematologic Abnormalities (ANC),Count,Sum,2,%,1.8%,N/A,N/A,N/A,0.21
+All Infants,HAART-exposed,ANC Grade 3 or 4 Hematologic Abnormalities at Birth,N/A,N/A,0.21,N/A,N/A,N/A,N/A,N/A,0.21
+All Infants,HAART-unexposed,ANC Grade 3 or 4 Hematologic Abnormalities at Birth,Count,Sum,11,%,15.9%,N/A,N/A,N/A,0.006
+All Infants,HAART-exposed,ANC Grade 3 or 4 Hematologic Abnormalities Between Birth and 1 Month,Count,Sum,4,%,3.7%,N/A,N/A,N/A,0.006
+All Infants,HAART-unexposed,ANC Grade 3 or 4 Hematologic Abnormalities Between Birth and 1 Month,N/A,N/A,0.006,N/A,N/A,N/A,N/A,N/A,0.006
+All Infants,HAART-exposed,ANC Grade 3 or 4 Hematologic Abnormalities Between 2 to 7 Months,Count,Sum,2,%,2.9%,N/A,N/A,N/A,1.00
+All Infants,HAART-unexposed,ANC Grade 3 or 4 Hematologic Abnormalities Between 2 to 7 Months,Count,Sum,4,%,8.0%,N/A,N/A,N/A,1.00
+BF Infants Only,HAART-exposed,ANC Grade 3 or 4 Hematologic Abnormalities Between 2 to 7 Months,N/A,N/A,1.00,N/A,N/A,N/A,N/A,N/A,1.00
+BF Infants Only,HAART-unexposed,ANC Grade 3 or 4 Hematologic Abnormalities Between 2 to 7 Months,Count,Sum,0,N/A,N/A,N/A,N/A,N/A,1.00
+BF Infants Only,HAART-exposed,ANC Grade 3 or 4 Hematologic Abnormalities at Birth,Count,Sum,1,%,2.0,N/A,N/A,N/A,1.00
+BF Infants Only,HAART-unexposed,ANC Grade 3 or 4 Hematologic Abnormalities at Birth,N/A,N/A,1.00,N/A,N/A,N/A,N/A,N/A,1.00
+All Infants,HAART-exposed,Grade 3 or 4 Hematologic Abnormalities (HB),Count,Sum,0,N/A,N/A,N/A,N/A,N/A,1.00
+All Infants,HAART-unexposed,Grade 3 or 4 Hematologic Abnormalities (HB),Count,Sum,1,%,2.0,N/A,N/A,N/A,1.00
+All Infants,HAART-exposed vs HAART-unexposed,P-value for Grade 3 or 4 Hematologic Abnormalities (HB),N/A,N/A,1.00,N/A,N/A,N/A,N/A,N/A,1.00
+BF Infants Only,HAART-exposed,Grade 3 or 4 Hematologic Abnormalities (HB),Count,Sum,1,%,2.9,N/A,N/A,N/A,0.41
+BF Infants Only,HAART-unexposed,Grade 3 or 4 Hematologic Abnormalities (HB),Count,Sum,0,N/A,N/A,N/A,N/A,N/A,0.41
+BF Infants Only,HAART-exposed vs HAART-unexposed,P-value for Grade 3 or 4 Hematologic Abnormalities (HB),N/A,N/A,0.41,N/A,N/A,N/A,N/A,N/A,0.41
+FF Infants Only,HAART-exposed,Grade 3 or 4 Hematologic Abnormalities (HB),Count,Sum,0,N/A,N/A,N/A,N/A,N/A,N/A
+FF Infants Only,HAART-unexposed,Grade 3 or 4 Hematologic Abnormalities (HB),Count,Sum,0,N/A,N/A,N/A,N/A,N/A,N/A
+FF Infants Only,HAART-exposed vs HAART-unexposed,P-value for Grade 3 or 4 Hematologic Abnormalities (HB),Count,Sum,0,N/A,N/A,N/A,N/A,N/A,N/A
+FF Infants Only,HAART-exposed vs HAART-unexposed,P-value for Grade 3 or 4 Hematologic Abnormalities (HB),Count,Sum,0,N/A,N/A,N/A,N/A,N/A,N/A
+BF Infants Only,HAART-exposed,ANC Grade 3 or 4 abnormalities,Count,Sum,1,%,2.9,N/A,N/A,N/A,N/A
+BF Infants Only,HAART-unexposed,ANC Grade 3 or 4 abnormalities,Count,Sum,0,N/A,N/A,N/A,N/A,N/A,N/A
+BF Infants Only,HAART-exposed,ANC Grade 3 or 4 abnormalities,Count,Sum,2,%,5.9,N/A,N/A,N/A,N/A
+BF Infants Only,HAART-exposed,ANC Grade 3 or 4 abnormalities,Count,Sum,1,%,2.0,N/A,N/A,N/A,0.56
+BF Infants Only,HAART-exposed,ANC Grade 3 or 4 abnormalities,Count,Sum,8,%,23.5,N/A,N/A,N/A,0.044
+BF Infants Only,HAART-unexposed,ANC Grade 3 or 4 abnormalities,Count,Sum,3,%,6.0,N/A,N/A,N/A,0.044
+BF Infants Only,HAART-exposed,ANC Grade 3 or 4 abnormalities,Count,Sum,2,%,5.9,N/A,N/A,N/A,1.00
+BF Infants Only,HAART-unexposed,ANC Grade 3 or 4 abnormalities,Count,Sum,4,%,8.0,N/A,N/A,N/A,1.00
+FF Infants Only,HAART-exposed,HB Grade 3 or 4 abnormalities,Count,Sum,0,N/A,N/A,N/A,N/A,N/A,N/A
+FF Infants Only,HAART-exposed,HB Grade 3 or 4 abnormalities,Count,Sum,1,%,1.7,N/A,N/A,N/A,0.36
+FF Infants Only,HAART-exposed,Grade 3 or 4 Hematologic Abnormalities (HB),Count,Sum,3,%,8.6,N/A,N/A,N/A,0.36
+FF Infants Only,HAART-unexposed,Grade 3 or 4 Hematologic Abnormalities (HB),Count,Sum,2,%,3.4,N/A,N/A,N/A,0.36
+FF Infants Only,HAART-exposed,Grade 3 or 4 Hematologic Abnormalities (PLT),Count,Sum,0,N/A,N/A,N/A,N/A,N/A,0.36
+FF Infants Only,HAART-unexposed,Grade 3 or 4 Hematologic Abnormalities (PLT),Count,Sum,0,N/A,N/A,N/A,N/A,N/A,0.36
+FF Infants Only,HAART-exposed,Grade 3 or 4 Hematologic Abnormalities (ANC),Count,Sum,0,N/A,N/A,N/A,N/A,N/A,0.36
+FF Infants Only,HAART-unexposed,Grade 3 or 4 Hematologic Abnormalities (ANC),Count,Sum,1,%,1.7,N/A,N/A,N/A,0.36
+FF Infants Only,HAART-exposed,P-value for Grade 3 or 4 Hematologic Abnormalities (HB),N/A,P value,1.00,N/A,N/A,N/A,N/A,N/A,1.00
+FF Infants Only,HAART-unexposed,P-value for Grade 3 or 4 Hematologic Abnormalities (PLT),Count,Sum,0,N/A,N/A,N/A,N/A,N/A,1.00
+FF Infants Only,HAART-exposed,P-value for Grade 3 or 4 Hematologic Abnormalities (PLT),Count,Sum,1,%,1.7,N/A,N/A,N/A,1.00
+FF Infants Only,HAART-unexposed,P-value for Grade 3 or 4 Hematologic Abnormalities (PLT),N/A,P value,1.00,N/A,N/A,N/A,N/A,N/A,1.00
+FF Infants Only,HAART-exposed,Grade 3 or 4 Hematologic Abnormalities (ANC),Count,Sum,0,N/A,N/A,N/A,N/A,N/A,1.00
+FF Infants Only,HAART-unexposed,Grade 3 or 4 Hematologic Abnormalities (ANC),Count,Sum,0,N/A,N/A,N/A,N/A,N/A,1.00
+FF Infants Only,HAART-exposed vs HAART-unexposed,P-value for Grade 3 or 4 Hematologic Abnormalities (ANC),Count,Sum,2,%,5.7,N/A,N/A,N/A,0.55
+FF Infants Only,HAART-exposed,Grade 3 or 4 Hematologic Abnormalities (HB),Count,Sum,1,%,1.7,N/A,N/A,N/A,0.55
+FF Infants Only,HAART-unexposed,Grade 3 or 4 Hematologic Abnormalities (HB),N/A,P value,0.55,N/A,N/A,N/A,N/A,N/A,0.55
+FF Infants Only,HAART-exposed vs HAART-unexposed,P-value for Grade 3 or 4 Hematologic Abnormalities (HB),Count,Sum,3,%,8.6,N/A,N/A,N/A,0.14
+FF Infants Only,HAART-exposed,Grade 3 or 4 Hematologic Abnormalities (PLT),Count,Sum,1,%,1.7,N/A,N/A,N/A,0.14
+FF Infants Only,HAART-unexposed,Grade 3 or 4 Hematologic Abnormalities (PLT),N/A,N/A,0.14,N/A,N/A,N/A,N/A,N/A,0.14
+FF Infants Only,HAART-exposed vs HAART-unexposed,P-value for Grade 3 or 4 Hematologic Abnormalities (PLT),Count,Sum,0,N/A,N/A,N/A,N/A,N/A,0.14
+FF Infants Only,HAART-exposed vs HAART-unexposed,P-value for Grade 3 or 4 Hematologic Abnormalities (PLT),Count,Sum,0,N/A,N/A,N/A,N/A,N/A,0.14

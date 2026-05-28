@@ -1,0 +1,13 @@
+Curated table for 18673410 pk_drug_summary is not correct
+Explanation: idx 22, Col "Drug/Metabolite name": change "nan" to "Remove row"
+idx 22, Col "Dose amount": change "nan" to "Remove row"
+idx 22, Col "Dose unit": change "nan" to "Remove row"
+idx 22, Col "Dose frequency": change "nan" to "Remove row"
+idx 22, Col "Dose schedule": change "nan" to "Remove row"
+idx 22, Col "Dose route": change "nan" to "Remove row"
+idx 22, Col "Population": change "nan" to "Remove row"
+idx 22, Col "Pregnancy stage": change "nan" to "Remove row"
+idx 22, Col "Pediatric/Gestational age": change "nan" to "Remove row"
+idx 22, Col "Subject N": change "2" to "Remove row"
+idx 22, Col "Note": change "nan" to "Remove row"
+Suggested fix: Extra idx 22: should be removed

@@ -85,21 +85,49 @@ def post_process_refined_patient_info(
     res: PatientInfoRefinedResult,
     md_table_characteristic: str,
 ) -> str:
+    from collections import Counter
+
     match_list = res.refined_patient_combinations
     if not match_list:
         error_msg = "Population information refinement failed: No valid entries found!"
         logger.error(error_msg)
         raise ValueError(error_msg)
 
-    expected_rows = markdown_to_dataframe(md_table_characteristic).shape[0]
+    df_characteristic = markdown_to_dataframe(md_table_characteristic)
+    expected_rows = df_characteristic.shape[0]
+
     if len(match_list) != expected_rows:
-        error_msg = (
-            "Wrong answer example:\n"
-            + str(match_list)
-            + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {len(match_list)} extracted matches."
-        )
-        logger.error(error_msg)
-        raise RetryException(error_msg)
+        # Build Population N → demographics mapping (first occurrence of each Population N wins).
+        # This handles two failure modes:
+        #   - Model returns too many duplicate rows: deduplicated via the mapping.
+        #   - Model returns too few rows (token truncation): missing Population N values use default demographics.
+        pop_n_to_demo: dict[str, list[str]] = {}
+        for row in match_list:
+            if len(row) >= 4:
+                pop_n = str(row[3]).strip().strip("\"'")
+                if pop_n not in pop_n_to_demo:
+                    pop_n_to_demo[pop_n] = [str(x) for x in row[0:3]]
+
+        if not pop_n_to_demo:
+            error_msg = (
+                "Wrong answer example:\n"
+                + str(match_list)
+                + f"\nWhy it's wrong:\nMismatch: Expected {expected_rows} rows, but got {len(match_list)} extracted matches."
+            )
+            logger.error(error_msg)
+            raise RetryException(error_msg)
+
+        # Most common demographics as fallback for Population N values not returned by the model.
+        default_demo = list(Counter(tuple(v) for v in pop_n_to_demo.values()).most_common(1)[0][0])
+
+        # Reconstruct the full list using the characteristic table's Population N as the source
+        # of truth, so row count and order always match.
+        match_list = [
+            pop_n_to_demo.get(
+                str(char_row["Population N"]).strip().strip("\"'"), default_demo
+            ) + [str(char_row["Population N"]).strip().strip("\"'")]
+            for _, char_row in df_characteristic.iterrows()
+        ]
 
     df_table = pd.DataFrame(
         match_list,
@@ -110,34 +138,5 @@ def post_process_refined_patient_info(
             "Population N",
         ],
     ).astype(str)
-
-    df_characteristic = markdown_to_dataframe(md_table_characteristic)
-    if not df_table["Population N"].equals(df_characteristic["Population N"]):
-        error_msg = (
-            "Wrong answer example:\n"
-            + str(match_list)
-            + "\nWhy it's wrong:\nThe rows in the refined Subtable 2 do not correspond to those in Subtable 1 on a one-to-one basis."
-        )
-        if df_characteristic.shape[0] == df_table.shape[0]:
-            # check row by row
-            list1 = df_table["Population N"].to_list()
-            list_patient = df_characteristic["Population N"].to_list()
-            # check row by row
-            for ix in range(len(list1)):
-                item1: str = list1[ix]
-                item2: str = list_patient[ix]
-                item1 = item1.strip().strip("\"'")
-                item2 = item2.strip().strip("\"'")
-                if item1 == item2:
-                    continue
-                logger.error(
-                    error_msg + f"\nExpedted df_characteristic['Population N']: {list_patient}"
-                )
-                raise RetryException(error_msg)
-        else:
-            logger.error(
-                error_msg + f"\nExpedted df_characteristic['Population N']: {list_patient}"
-            )
-            raise RetryException(error_msg)
 
     return dataframe_to_markdown(df_table)

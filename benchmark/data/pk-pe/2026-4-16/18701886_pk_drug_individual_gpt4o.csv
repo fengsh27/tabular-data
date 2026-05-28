@@ -1,0 +1,4 @@
+Patient ID,Drug/Metabolite name,Dose amount,Dose unit,Dose frequency,Dose schedule,Dose route,Population,Pregnancy stage,Pediatric/Gestational age,Note
+Patient F,Buprenorphine,888,mg,Multiple,N/A,Sublingual,Maternal,Trimester 3,N/A,"...despite the mother having received a total of 1,674 mg of buprenorphine during her pregnancy, of which 888 mg were received in the third trimester..."
+Patient E,Oxazepam,69,ng/g,Multiple,N/A,N/A,Neonatal,Trimester 3,N/A,"...Her infant had a positive meconium specimen, with 69 ng/g oxazepam..."
+Patient F,Nicotine,Identified,N/A,Multiple,N/A,N/A,Neonatal,Trimester 3,N/A,"...Participant F did not admit to having smoked tobacco, but hospital staff observed that she did; nicotine and all metabolites were identified in her infant’s meconium..."
