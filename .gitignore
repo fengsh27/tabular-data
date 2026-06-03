@@ -170,3 +170,6 @@ data/databases/
 system_tests/data/*.db
 system_tests/data/*.csv
 system_tests/data/*.md
+
+# PK curation skill scratch state (per-run intermediate tables)
+.pk_curation_scratch/

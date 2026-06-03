@@ -1,0 +1,34 @@
+{
+  "pmid": "16143486",
+  "table_id": "table_4",
+  "title_file": "title.txt",
+  "caption_file": "caption.txt",
+  "source_table_html": "source_table.html",
+  "skill": "pk-summary-curation",
+  "drug": "lorazepam",
+  "population": "parturients (maternal) at delivery",
+  "notes": "Transplacental distribution table (cord blood + maternal blood). Two specimens, single maternal cohort, n=8. Source HTML, caption, and the expected stage 01/02/03 tables are lifted verbatim from tests/conftest.py (fixtures *_16143486_table_4), which the legacy pk_summary system tests treat as ground truth.",
+  "oracles": {
+    "stage_00_markdown": "expected_00_markdown_table.md",
+    "stage_01_drug_table": "expected_01_drug_table.md",
+    "stage_02_patient_table": "expected_02_patient_table.md",
+    "stage_03_patient_refined": "expected_03_patient_refined.md",
+    "stage_04_summary_only": "expected_04_summary_only.md",
+    "stage_05_param_aligned": "expected_05_param_aligned.md",
+    "stage_06_header_categories": "expected_06_header_categories.md",
+    "stage_07_subtables": "expected_07_subtables.md",
+    "stage_08_type_unit": "expected_08_type_unit.md"
+  },
+  "oracle_kind": {
+    "stage_00_markdown": "deterministic (byte-exact; enforced by test_stage0_conversion.py)",
+    "stage_01_drug_table": "semantic (LLM output; set-equality of [Drug,Analyte,Specimen] rows)",
+    "stage_02_patient_table": "semantic-soft (LLM may emit >= rows; expected set must be covered)",
+    "stage_03_patient_refined": "semantic (row-preserving; normalization of Population/Pregnancy stage)",
+    "stage_04_summary_only": "semantic (row-subset of source; individual rows removed, summary rows kept)",
+    "stage_05_param_aligned": "semantic (orientation: first column is 'Parameter type'; Case B transpose here)",
+    "stage_06_header_categories": "semantic (JSON header->category map; exact for this case)",
+    "stage_07_subtables": "semantic (sub-table count + column grouping; single sub-table here)",
+    "stage_08_type_unit": "semantic (refined parameter type + unit per row; names are model-paraphrasable)",
+    "stage_09_to_13": "NO fixture oracle available (chained LLM stages); evaluate by inspection per README"
+  }
+}
