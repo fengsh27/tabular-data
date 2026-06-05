@@ -18,8 +18,8 @@ row of the sub-table, by matching each row to the best entry in the drug table.
 Read these files now.
 
 ## Procedure (per sub-table)
-1. Process **every row** of the sub-table, in order — the output must have
-   exactly as many entries as the sub-table has rows.
+1. Process **every row** of the sub-table, keeping each row's `Row` join-key
+   value — the output must have exactly the same `Row` values as the sub-table.
 2. For each row, find the **single best-matching** row in `01_drug_table.md`:
    - First locate the corresponding row in the main table by **row index**
      (sub-table row *i* ↔ main-table row *i*); that row gives more context.
@@ -35,19 +35,21 @@ For each row, state which drug-table combination you matched and why, then
 produce the result.
 
 ## Output of this stage
-For each sub-table, a three-column markdown table — one row per sub-table row,
-in order:
+For each sub-table, a four-column markdown table — the `Row` join key (copied
+verbatim from the sub-table) plus the matched combination, one row per
+sub-table row:
 
 ```
-| Drug name | Analyte | Specimen |
-| --- | --- | --- |
-| <matched drug> | <matched analyte> | <matched specimen> |
+| Row | Drug name | Analyte | Specimen |
+| --- | --- | --- | --- |
+| <row> | <matched drug> | <matched analyte> | <matched specimen> |
 ```
 
 Use the same `## Sub-table N` headings as `07_subtables.md`.
 
 Before continuing, sanity-check:
-- each output table has the **same number of rows** as its sub-table, in order,
+- each output table has the **same `Row` values** as its sub-table (same set,
+  same order),
 - every `[Drug name, Analyte, Specimen]` row appears in `01_drug_table.md`
   (or is `N/A`).
 

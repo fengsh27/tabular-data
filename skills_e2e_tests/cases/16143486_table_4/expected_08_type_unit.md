@@ -1,8 +1,8 @@
 ## Sub-table 1
 
-| Parameter type | Parameter unit |
-| --- | --- |
-| Cord blood concentration | ng/ml |
-| Maternal blood concentration | ng/ml |
-| Sample collection time | minutes |
-| Cord blood to maternal blood ratio | unitless |
+| Row | Parameter type | Parameter unit |
+| --- | --- | --- |
+| 1 | Cord blood concentration | ng/ml |
+| 2 | Maternal blood concentration | ng/ml |
+| 3 | Sample collection time | minutes |
+| 4 | Cord blood to maternal blood ratio | unitless |

@@ -2,7 +2,7 @@
 
 Stage 0 (HTML -> Markdown) is the only fully deterministic stage, so it is the
 only one we can assert byte-exactly in CI. It guards against regressions in the
-skill's bundled converter (skills/pk-summary-curation/scripts/html_to_markdown_table.py).
+shared bundled converter (skills/curation-common/scripts/html_to_markdown_table.py).
 
 The later, LLM-driven stages (01-03) are evaluated separately against the
 semantic oracles in each case directory -- see README.md. They are not asserted
@@ -17,7 +17,7 @@ SKILL_CONVERTER = os.path.join(
     os.path.dirname(__file__),
     "..",
     "skills",
-    "pk-summary-curation",
+    "curation-common",
     "scripts",
     "html_to_markdown_table.py",
 )

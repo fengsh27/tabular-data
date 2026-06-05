@@ -19,8 +19,8 @@ row of the sub-table.
 Read these files now.
 
 ## Procedure (per sub-table)
-1. Process **every row** of the sub-table, in order — output exactly as many
-   entries as the sub-table has rows.
+1. Process **every row** of the sub-table, keeping each row's `Row` join-key
+   value — output exactly the same `Row` values as the sub-table.
 2. For each row, find the **best-matching** cohort in `03_patient_refined.md`:
    - First find the corresponding main-table row (by Parameter value / P value).
    - Use its **Subject N** to pick the matching cohort row.
@@ -35,19 +35,20 @@ For each row, state which cohort you matched and the Subject N you used, then
 produce the result.
 
 ## Output of this stage
-For each sub-table, a four-column markdown table — one row per sub-table row,
-in order:
+For each sub-table, a five-column markdown table — the `Row` join key (copied
+verbatim from the sub-table) plus the matched cohort, one row per sub-table row:
 
 ```
-| Population | Pregnancy stage | Pediatric/Gestational age | Subject N |
-| --- | --- | --- | --- |
-| <matched cohort row> | … | … | … |
+| Row | Population | Pregnancy stage | Pediatric/Gestational age | Subject N |
+| --- | --- | --- | --- | --- |
+| <row> | <matched cohort row> | … | … | … |
 ```
 
 Use the same `## Sub-table N` headings as `07_subtables.md`.
 
 Before continuing, sanity-check:
-- each output table has the **same number of rows** as its sub-table, in order,
+- each output table has the **same `Row` values** as its sub-table (same set,
+  same order),
 - every cohort row appears in `03_patient_refined.md` (or is `N/A`).
 
 If that check fails, redo this stage once.

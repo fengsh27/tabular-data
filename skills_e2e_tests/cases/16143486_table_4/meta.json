@@ -27,8 +27,8 @@
     "stage_04_summary_only": "semantic (row-subset of source; individual rows removed, summary rows kept)",
     "stage_05_param_aligned": "semantic (orientation: first column is 'Parameter type'; Case B transpose here)",
     "stage_06_header_categories": "semantic (JSON header->category map; exact for this case)",
-    "stage_07_subtables": "semantic (sub-table count + column grouping; single sub-table here)",
-    "stage_08_type_unit": "semantic (refined parameter type + unit per row; names are model-paraphrasable)",
+    "stage_07_subtables": "semantic (sub-table count + column grouping; single sub-table here). Each sub-table carries a leading `Row` join key (1..k) that stages 08-12 preserve and stage 13 joins on.",
+    "stage_08_type_unit": "semantic (refined parameter type + unit per row; names are model-paraphrasable). Carries the `Row` join key as its first column.",
     "stage_09_to_13": "NO fixture oracle available (chained LLM stages); evaluate by inspection per README"
   }
 }

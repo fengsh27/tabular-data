@@ -31,12 +31,20 @@ groups.
 State how many sub-tables result and which columns go into each, then produce
 them.
 
+## Add the `Row` join key
+Give every sub-table a leading **`Row`** column: an integer that is **unique
+within that sub-table**, numbered `1, 2, 3, …` top to bottom. This index is the
+join key that stages 08–12 carry through and stage 13 uses to re-align the
+stages — so it must be stable. (Numbering restarts at 1 in each sub-table; the
+key is `(Sub-table N, Row)`.)
+
 ## Output of this stage
-Write each sub-table as a markdown table, separated by a heading line
-`## Sub-table N` (N starting at 1). For the common single-sub-table case, emit
-just `## Sub-table 1` followed by the whole table.
+Write each sub-table as a markdown table whose **first column is `Row`**,
+separated by a heading line `## Sub-table N` (N starting at 1). For the common
+single-sub-table case, emit just `## Sub-table 1` followed by the whole table.
 
 Before continuing, sanity-check:
+- each sub-table's first column is `Row`, numbered 1..k with no gaps or repeats,
 - each sub-table has exactly one `Parameter type` column,
 - each sub-table has at most one `P value` column,
 - no `Parameter value` column was dropped or duplicated across sub-tables.
@@ -49,17 +57,17 @@ Stages 8–12 read that file.
 ## Worked example (single sub-table — no split needed)
 
 **`05_param_aligned.md`** has one `Parameter type` column and one
-`Parameter value` column (`Mean CI 95%`) → no split.
+`Parameter value` column (`Mean CI 95%`) → no split. Add the `Row` key:
 
 **Result** (`07_subtables.md`):
 
 ```
 ## Sub-table 1
 
-| Parameter type | Mean CI 95% |
-| --- | --- |
-| Cord blood (ng/ml) | 6.78 (5.39–8.17) |
-| Maternal blood (ng/ml) | 9.91 (7.68–12.14) |
-| Collection time(min) | 293.4 (163.2–423) |
-| Cord blood/maternal blood | 0.73 (0.52–0.94) |
+| Row | Parameter type | Mean CI 95% |
+| --- | --- | --- |
+| 1 | Cord blood (ng/ml) | 6.78 (5.39–8.17) |
+| 2 | Maternal blood (ng/ml) | 9.91 (7.68–12.14) |
+| 3 | Collection time(min) | 293.4 (163.2–423) |
+| 4 | Cord blood/maternal blood | 0.73 (0.52–0.94) |
 ```

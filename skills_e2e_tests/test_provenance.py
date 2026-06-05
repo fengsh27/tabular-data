@@ -18,7 +18,7 @@ SCRIPT = os.path.join(
     os.path.dirname(__file__),
     "..",
     "skills",
-    "pk-summary-curation",
+    "curation-common",
     "scripts",
     "verify_provenance.py",
 )
@@ -123,3 +123,100 @@ def test_main_exit_codes(tmp_path):
     bad = write(tmp_path, "bad.csv", GOOD_CSV.replace("6.78", "6.99"))
     assert vp.main(["prog", good, src]) == 0
     assert vp.main(["prog", bad, src]) == 1
+
+
+# --- Attribution check (the misattribution gap existence cannot close) -------
+#
+# A column-oriented source table (the original, pre-transpose shape) whose
+# discriminator lives in the COLUMN HEADERS (Cord blood vs Maternal blood), and
+# a curated (transposed) output where each row claims a specimen. The deliberate
+# swap below moves the maternal values onto the cord-blood row and vice versa —
+# every number still EXISTS in the source, so the existence check passes; only
+# the attribution check can catch it.
+
+ATTR_SOURCE = """
+Table 4. Transplacental distribution of lorazepam at delivery (n = 8); mean (CI 95%).
+| Parturient | Cord blood (ng/ml) | Maternal blood (ng/ml) | Collection time(min) | Cord blood/maternal blood |
+| --- | --- | --- | --- | --- |
+| Mean CI 95% | 6.78 (5.39-8.17) | 9.91 (7.68-12.14) | 293.4 (163.2-423) | 0.73 (0.52-0.94) |
+"""
+
+ATTR_GOOD = (
+    "Parameter type,Specimen,Parameter value,Lower bound,Upper bound\n"
+    "Cord blood concentration,Cord blood,6.78,5.39,8.17\n"
+    "Maternal blood concentration,Maternal blood,9.91,7.68,12.14\n"
+)
+
+# cord row gets maternal's numbers and vice versa
+ATTR_SWAPPED = (
+    "Parameter type,Specimen,Parameter value,Lower bound,Upper bound\n"
+    "Cord blood concentration,Cord blood,9.91,7.68,12.14\n"
+    "Maternal blood concentration,Maternal blood,6.78,5.39,8.17\n"
+)
+
+ATTR_LABELS = ["Parameter type", "Specimen"]
+ATTR_VALUES = ["Parameter value", "Lower bound", "Upper bound"]
+
+
+def _groups():
+    return vp.build_groups(vp.parse_markdown_tables(ATTR_SOURCE))
+
+
+def test_parse_markdown_tables_reads_headers_and_rows():
+    tables = vp.parse_markdown_tables(ATTR_SOURCE)
+    assert len(tables) == 1
+    assert tables[0]["headers"][1] == "Cord blood (ng/ml)"
+    assert tables[0]["rows"][0][0] == "Mean CI 95%"
+
+
+def test_build_groups_indexes_columns_by_header():
+    groups = dict((lbl, nums) for lbl, nums in _groups())
+    assert groups["Cord blood (ng/ml)"] == {6.78, 5.39, 8.17}
+    assert groups["Maternal blood (ng/ml)"] == {9.91, 7.68, 12.14}
+
+
+def test_attribution_passes_correct_rows(tmp_path):
+    csv_path = write(tmp_path, "good.csv", ATTR_GOOD)
+    findings, checked = vp.check_attribution(
+        csv_path, _groups(), label_columns=ATTR_LABELS, value_columns=ATTR_VALUES
+    )
+    assert findings == []
+    assert checked == 6  # 3 values x 2 rows
+
+
+def test_attribution_catches_value_swap(tmp_path):
+    swapped = write(tmp_path, "swapped.csv", ATTR_SWAPPED)
+
+    # Existence check is BLIND to the swap — every number is still in the source.
+    src_nums, _ = vp.load_source_numbers([write(tmp_path, "src.md", ATTR_SOURCE)])
+    existence, _ = vp.check_csv(swapped, src_nums, value_columns=ATTR_VALUES)
+    assert existence == [], "existence check should not catch a pure swap"
+
+    # Attribution check DOES catch it, on both rows.
+    findings, _ = vp.check_attribution(
+        swapped, _groups(), label_columns=ATTR_LABELS, value_columns=ATTR_VALUES
+    )
+    assert {f["row"] for f in findings} == {0, 1}
+    assert len(findings) == 6  # all three swapped values flagged on each row
+
+
+def test_attribution_skips_rows_without_label_tokens(tmp_path):
+    # No label columns named -> nothing to attribute -> no findings.
+    swapped = write(tmp_path, "swapped.csv", ATTR_SWAPPED)
+    findings, checked = vp.check_attribution(
+        swapped, _groups(), label_columns=[], value_columns=ATTR_VALUES
+    )
+    assert findings == []
+    assert checked == 0
+
+
+def test_attribution_main_exit_codes(tmp_path):
+    src = write(tmp_path, "src.md", ATTR_SOURCE)
+    good = write(tmp_path, "good.csv", ATTR_GOOD)
+    swapped = write(tmp_path, "swapped.csv", ATTR_SWAPPED)
+    args = ["--attribution", "--label-columns", "Parameter type,Specimen",
+            "--value-columns", "Parameter value,Lower bound,Upper bound"]
+    assert vp.main(["prog", good, src] + args) == 0
+    assert vp.main(["prog", swapped, src] + args) == 1
+    # --attribution without --label-columns is a usage error
+    assert vp.main(["prog", good, src, "--attribution"]) == 2

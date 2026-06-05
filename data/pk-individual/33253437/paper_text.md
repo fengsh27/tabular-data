@@ -1,0 +1,129 @@
+# Correlation between pharmacokinetics and pharmacogenetics of Selective Serotonin Reuptake Inhibitors and Selective Serotonin and Noradrenaline Reuptake Inhibitors and maternal and neonatal outcomes: Results from a naturalistic study in patients with affective disorders
+
+## Abstract
+
+### Objective
+
+Some studies have linked the use of selective serotonin reuptake inhibitors and selective serotonin and noradrenaline reuptake inhibitors (SSRIs/SNRIs) to the risk of perinatal complications. This study explored the relationship between pharmacokinetics and pharmacogenetics, SSRIs/SNRIs tolerability and effectiveness and maternal and newborn outcomes.
+
+### Methods
+
+Fifty-five pregnant women with Diagnostic and Statistical Manual of Mental Disorders, 5th Edition (DSM-5) diagnoses of affective disorders, treated with SSRIs/SNRIs, were recruited and, during the third trimester, their blood samples were collected for pharmacokinetic and pharmacogenetic analyses. Plasma levels and metabolic phenotypes were then related to different obstetrical and maternal outcomes.
+
+### Results
+
+The pharmacokinetic data were more stable for Sertraline, Citalopram, and Escitalopram compared to other molecules (p = 0.009). The occurrence of postnatal adaptation syndrome onset was associated with higher plasma levels for Sertraline (median at delivery: 16.7 vs. 10.5 ng/ml), but not for fluoxetine and venlafaxine. Finally, the subgroup within range plasma concentrations had less blood loss than the below range subgroup (p = 0.030).
+
+### Conclusions
+
+Plasma levels of Sertraline, Citalopram and Escitalopram were more frequently in range in late pregnancy when compared to other drugs. Drug plasma concentrations do not strictly correlate with worse perinatal outcomes, but with possible differences between the different drugs.
+
+## 1 INTRODUCTION
+
+Antenatal depression is estimated to affect about 15% of all pregnant women (Okagbue et al., [2019](#hup2772-bib-0037)). Period prevalence estimates show that almost 20% of women have depressive symptoms during the first 3 months postpartum, with approximately 7.1% having a major depressive episode during this period (Gavin et al., [2005](#hup2772-bib-0011)). The pooled prevalence of anxiety disorders during pregnancy is 3%, and up to 6% for specific phobia, while the prevalence of obsessive compulsive disorder is around 3%. In addition, up to 14.4% of women may develop specific anxiety symptoms related to pregnancy, birth and maternity (Poikkeus et al., [2006](#hup2772-bib-0041)).
+
+Most studies and meta-analyses consider the risk of major malformations linked to the use of selective serotonin reuptake inhibitors and selective serotonin and noradrenaline reuptake inhibitors (SSRIs/SNRIs) to be not significant (Gao et al., [2018](#hup2772-bib-0010)). However, for SNRIs, significantly fewer data are available (Lassen, Ennis, & Damkier, [2016](#hup2772-bib-0029)). In particular, cardiac malformations are those more frequently reported (Biffi et al., [2020](#hup2772-bib-0004); Grigoriadis et al., [2013](#hup2772-bib-0015)). Some studies linked the SSRIs/SNRIs use to an increased risk of spontaneous abortion (Steinberg et al., [2018](#hup2772-bib-0047)), preeclampsia (PE) (Palmsten, Chambers, Wells, & Bandoli, [2020](#hup2772-bib-0038)), postpartum hemorrhages (PPH) (Palmsten et al., [2020](#hup2772-bib-0038)), postnatal adaptation syndrome (PNAS) (Grigoriadis et al., [2013](#hup2772-bib-0014)), low birth weight, (LBW) lower Apgar scores (Biffi et al., [2020](#hup2772-bib-0004)) and persistent pulmonary hypertension (PPHN; Ng et al., [2019](#hup2772-bib-0035)). These complications are similar to those reported by patients with depressive and anxiety disorders during pregnancy (Khanghah, Khalesi, & Hassanzadeh, [2020](#hup2772-bib-0026); Vivenzio, Nardi, & Bellantuono, [2018](#hup2772-bib-0049)), except for PPHN (Ng et al., [2019](#hup2772-bib-0035)) and PNAS (Grigoriadis et al., [2013](#hup2772-bib-0014)) which are more specifically related to antidepressant exposure in late pregnancy.
+
+Physiological changes, such as increased volume of distribution, reduced albumin concentration, modulation of metabolic enzymes by pregnancy hormones and increased renal drug clearance, influence the plasma level of antidepressants in mothers and the amount transferred to the fetus (Abduljalil, Furness, Johnson, Rostami-Hodjegan, & Soltani, [2012](#hup2772-bib-0001); Isoherranen & Thummel, [2013](#hup2772-bib-0024)). Therefore, therapeutic drug monitoring (TDM) has been recommended to guide therapy (Deligiannidis, Byatt, & Freeman, [2014](#hup2772-bib-0009)).
+
+Based on the above, the aim of our study was to evaluate the possible correlation between pharmacokinetic and pharmacogenetic analyses and perinatal outcomes, and use of SSRI/SNRIs during pregnancy, in order to promote individualized treatment of affective and anxiety disorders in pregnant women.
+
+## 2 MATERIALS AND METHODS
+
+### 2.1 Enrolled patients
+
+Fifty-five women, enrolled between 2011 and 2018 at the Depressive Disorders Treatment Centre of the Department of Psychiatry and at the Department of Gynecology and Obstetrics of the ASST Fatebenefratelli–Sacco University Hospital (Milano, Italy), received treatment with sertraline, paroxetine, citalopram, escitalopram, fluoxetine, or venlafaxine ER by their own prescribing physician. All women were taking antidepressants before pregnancy, were followed in our clinic and carried out monthly psychiatric visits during pregnancy. Any dose changes were based on clinical evaluation. All women underwent second level obstetrical-gynecological visits. Gynecological maternal outcomes were obtained through periodic medical reports and discharge letters. Also, the outcomes of newborns exposed to SSRIs and SNRIs in utero were obtained through newborns discharge letters and by periodic medical reports.
+
+The local Ethics Committee had previously approved the study protocol. All patients provided written informed consent before undergoing any study procedure.
+
+Inclusion criteria comprised diagnosis of depressive and/or anxiety disorder according to Diagnostic and statistical manual of mental disorders, 5th edition criteria and an ongoing treatment with SSRIs/SNRIs during pregnancy.
+
+Exclusion criteria were represented by any of other concomitant psychopharmacological therapy with the exception of benzodiazepines up to an equivalent dose of 0.5/day mg of alprazolam.
+
+### 2.2 Pharmacokinetic analyses
+
+Maternal blood samples were obtained from venous samples, collected by the mother in the third trimester of pregnancy from the 26th week of gestation onwards. Blood samples for plasma dosages were taken approximately 12 h after the last SSRI/SNRI administration. Plasma was separated by centrifugation and stored at −20°C until analysis. Plasma concentrations of paroxetine, fluoxetine, sertraline, citalopram, escitalopram, and venlafaxine were quantified using liquid chromatography/tandem mass spectrometry methods developed and validated in the centralized pharmacokinetics laboratory of the pharmacology unit (Pogliani et al., [2017](#hup2772-bib-0003)). The lower limit of quantification of the method was 5 ng/ml for all analytes. The performance of these methods was tested during each analytical run using internal quality controls, and blinded samples were sent monthly as part of the Laboratory of the Government Chemist (LGC) Standard Proficiency Testing Schemes for Psychoactive Drugs (<http://www.lgcpt.com/default.aspx>). According to the Arbeitsgemeinschaft für Neuropsychopharmakologie und Pharmakopsychiatrie (AGNP) guidelines (Hiemke et al., [2018](#hup2772-bib-0021)), we considered the following ranges of drug concentrations as therapeutic ranges: paroxetine, 20–120 ng/ml; fluoxetine, 120–500 ng/ml; sertraline, 10–150 ng/ml; citalopram, 50–110 ng/ml; escitalopram, 15–80 ng/ml; and venlafaxine (plus the active metabolite), 100–400 ng/ml.
+
+### 2.3 Genotyping
+
+Peripheral blood samples were collected from pregnant women who underwent pharmacokinetic analysis. Maternal DNA was isolated using an automatic DNA extraction system (Maxwell 16 System, Promega) according to the manufacturer's instructions. The presence of polymorphisms was determined by Real-Time PCR, using LightSNiP (TIB-MolBiol) or TaqMan assay (Thermo Fisher Scientific) according to the manufacturer's instructions. We evaluated the functional variant mapping in CYP2D6 (\*3, \*4, \*5, \*6, rs1080985 promoter variant, gene duplication) for paroxetine, venlafaxine, and fluoxetine, and in CYP2C19 (\*2, \*3, \*17) for sertraline, escitalopram, and citalopram.
+
+### 2.4 Statistical analysis
+
+First, we conducted a descriptive analysis of the sociodemographic features of the sample. In particular, median for continuous variables and frequencies and percentage for qualitative variables were performed. Then, Mann–Whitney test and Chi-square test were used to compare qualitative and quantitative variables respectively. The significance threshold was considered p < 0.05. Statistical analyses were conducted using Statistical Package for the Social Sciences (SPSS), version 24.
+
+## 3 RESULTS
+
+Table [1](#hup2772-tbl-0001 "Link to table") summarizes the sociodemographic characteristics of the total sample, psychiatric diagnosis, and treatment.
+
+[Table 1]
+
+### 3.1 Pharmacokinetics
+
+Table [2](#hup2772-tbl-0002 "Link to table") for each woman, summarize pharmacokinetic, pharmacogenetic data, and maternal/neonatal outcomes.
+
+[Table 2]
+
+The administered antidepressants were the following: sertraline in 24 patients (43.6%), daily dose between 50 and 150 mg; paroxetine in 11 patients (20%), daily dose between 10 and 40 mg; fluoxetine in 4 patients (7.3%), daily dose between 20 and 30 mg; escitalopram in 7 patients (12.7%), daily dose between 5 and 10 mg; citalopram in 2 patients (3.6%), daily dose of 20 mg; and venlafaxine ER in 7 patients (12.7%), daily dose between 37.5 and 150 mg.
+
+The medians of the daily drug doses for each antidepressant at third trimester were the following: 75 mg for sertraline; 20 mg for paroxetine; 25 mg for luoxetine; 20 mg for citalopram; 10 mg for escitalopram; 75 mg for venlafaxine ER. The medians of the plasma levels at third trimester of each drug were the following: 15.5 ng/ml for sertraline; 6.4 ng/ml for paroxetine; 346.8 ng/ml for fluoxetine (or which only one value was available); 52.5 ng/ml for citalopram; 12.1 ng/ml for escitalopram; 86.1 ng/ml for venlafaxine ER.
+
+Considering plasma levels available at third trimester for each drug, the following patients had plasma drug concentrations in range: 11 (91.7%) on sertraline; 2 (33.3%) on venlafaxine ER; 1 (25%) on paroxetine; 1 (50%) on citalopram; and 2 (50%) on escitalopram; for fluoxetine, only one measure was available and it was in the therapeutic range. Plasma concentrations of the following women were undetectable (<5 ng/ml): 1 for sertraline, 2 for paroxetine and 2 for escitalopram.
+
+In our sample, the plasma levels of sertraline, citalopram, and escitalopram, mainly metabolised by CYP2C19 (Hicks et al., [2015](#hup2772-bib-0020)), were more frequently in the therapeutic range (p = 0.046) compared with paroxetine, venlafaxine ER, and fluoxetine, mainly metabolized by CYP2D6 (Blazquez, Mas, Plana, Lafuente, & Lázaro, [2012](#hup2772-bib-0005); Hicks et al., [2015](#hup2772-bib-0020); Sangkuhl, Stingl, Turpeinen, Altman, & Klein, [2014](#hup2772-bib-0045)). This result was more consistent considering the extensive metabolizers (EM) and untrarapid-rapid metabolizers (U-RM) alone (p = 0.009).
+
+For 30 mother–child couples, the umbilical/maternal ratio was available. This percentage value of umbilical plasma concentrations relative to those of the mother (Table [2](#hup2772-tbl-0002 "Link to table")). The median umbilical/maternal ratio was 21.2% for paroxetine, 39.9% for sertraline, 59.1% (for citalopram for which one data was available), 67.8% for escitalopram, 76.8% for fluoxetine and 130.5% for venlafaxine ER.
+
+### 3.2 Pharmacogenetics
+
+It was possible to perform pharmacogenetic analysis for 42 patients (76.4 % of the total sample).
+
+To make the data comparable, we divided the plasma concentration (in ng/ml) by the oral dose (in mg/day), resulting in a concentration-by-dose ratio (C/D) (Reis et al., [2004](#hup2772-bib-0042)). For each drug, we calculated the C/D median and comparing the medians of the poor metabolizers (PM) and intermediate metabolizers (IM) versus EM and U-RM, observing the following values: sertraline 0.31 (IM + PM) versus 0.26 (U-RM + EM); paroxetine: 2.56 (IM + PM) versus 0.37 (EM); escitalopram: 3.63 (IM) versus 0.63 (EM); venlafaxine ER: only one I/EM with the C/D value of 2.06, the median C/D of EM was 1.15; Of the 2 patients on citalopram, 1 EM with the C/D value of 4.51 and 1 IM with the C/D value of 0.74. Considering drug plasma levels at third trimester, eight patients (61.5%) in the U-RM and EM subgroup had below-range plasma levels, while only 2 (20%) patients in the PM and IM subgroup had below-range plasma levels. The different drug plasma concentrations based on the metabolic phenotype were shown in Figure [1](#hup2772-fig-0001).
+
+**FIGURE 1**
+
+[Open in figure viewer](#)[PowerPoint](/action/downloadFigures?id=hup2772-fig-0001&partId=&doi=10.1002%2Fhup.2772)
+
+Plasma level versus daily dose of sertraline, escitalopram, venlafaxine ER, and paroxetine (\*\*poor metabolizers; \*intermediate metabolizers)
+
+Considering drug interactions, we observed the following cases, we considered the drugs most involved in the possible interactions: ID13 taking sertraline 75 mg/day (plasma concentration: 26 ng/ml) and phenobarbital, ID18 taking sertraline 100 mg/day (plasma concentration: 12,1 ng/ml) and antiretrovirals. Drug plasma concentrations of all patients were in therapeutic range, despite the metabolic phenotype and type of polytherapy.
+
+### 3.3 Neonatal and maternal outcomes
+
+In terms of neonatal outcomes, 10 (18.2%) newborns were small for gestational age; 5 (9.1%) newborns were born preterm; 8 (14.5%) newborns had a 1-min low Apgar score <7; 1 (1.8%) newborn had a 5-min low Apgar score <7 and was born to a woman who took sertraline and antiretrovirals; 14 (25.4%) newborns showed signs or symptoms belonging to PNAS. Considering PNAS, the mothers of these newborns were taking the following drugs: 7 on sertraline, 3 on paroxetine, 2 on escitalopram, 1 on citalopram, 1 on venlafaxine ER, and no infants whose mothers took fluoxetine developed signs of PNAS. Considering the largest subsample of women on sertraline, it was found that median plasma concentrations at third trimester and delivery were higher in patients whose newborns developed symptoms of PNAS, though not statistically significant (median plasma level at third trimester: 19.5 ng/ml vs. 14.1 ng/ml; median plasma level at delivery: 16.7 ng/ml vs. 10.5 ng/ml). Indeed, PNAS was not associated with serious long-term complications and spontaneously resolved within 24 h after adequate monitoring or transient oxygen supplementation. One newborn needed to be transferred to neonatal intensive care unit: the mother was taking sertraline (daily dose 100 mg, plasma concentration: 12.1 ng/ml) and antiretrovirals.
+
+Malformations were reported in 4 newborns: 2 (3.6%) cases of congenital clubfoot, 1 (1.8%) case of bicuspid aortic valve, and 1 (1.8%) case of toe polydactyly. No case of major malformations was reported.
+
+Pregnancy complications were the following: 11 (20%) patients reported premature rupture of membranes (PROM), 3 (5.4%) patients suffered from gestational diabetes mellitus (GDM), 9 (16.4%) patients reported PPH (defined as blood loss > 500 cc in vaginal delivery and >1000 cc in caesarean section, according to the definition of the ICD 10), 1 (1.8%) patient had PE. Considering the 53 women with blood loss values available, it was found that the subgroup with drug plasma concentrations in therapeutic range at delivery (or third trimester when dosage at delivery was not available) had a significantly lower mean blood loss than the subgroup with concentrations plasma levels below therapeutic range (p = 0.030). The difference in blood loss between the two subgroups was confirmed in case of vaginal delivery (p = 0.020), while no significant difference was observed in case of caesarean section (p = 0.257). This result confirms a previous result from a sample of 43 women whose plasma concentration was available at delivery (Perrotta et al., [2019](#hup2772-bib-0040)).
+
+## 4 DISCUSSION
+
+In our study, the slower genotypes (PM and IM) showed higher plasma concentrations (Figure [1](#hup2772-fig-0001)). On the other hand, EM and U-RM treated with paroxetine, fluoxetine, and venlafaxine ER, metabolised primarily by CYP2D6 (Blazquez et al., [2012](#hup2772-bib-0005); Hicks et al., [2015](#hup2772-bib-0020); Sangkuhl et al., [2014](#hup2772-bib-0045)), showed lower plasma concentrations and, not infrequently, below the therapeutic range. These results might be explained by pregnancy induced increase in CYP2D6 metabolism and related effects on specific genotypes, suggesting that U-RM and EM exhibit lower plasma concentrations than slower genotypes (Koren & Ornoy, [2018](#hup2772-bib-0028)). Therefore, some drugs may necessitate a dose increase during the third trimester of pregnancy in order to maintain the therapeutic efficacy (Westin, Brekke, Molden, Skogvoll, & Spigset, [2017](#hup2772-bib-0050)).
+
+The plasma concentrations of sertraline, citalopram, and escitalopram as a whole were significantly more frequently in range than other drugs (p = 0.046). Though limited studies have been conducted in this regard, the effect of pregnancy on CYP2C19 inhibition might play a crucial role (Westin et al., [2017](#hup2772-bib-0050)). In this perspective, the greater stability of therapeutic plasma concentrations may require fewer dose adjustments in order to maintain therapeutic efficacy. Our results were also more confirmed by considering EM and U-RM alone (p = 0.009). Indeed, IM and PM have been associated with higher plasma concentrations, as shown by general population data (not pregnant population; Hicks et al., [2015](#hup2772-bib-0020)). The identification of PM could have clinical implications including to avoid the risk of overdose (Hicks et al., [2015](#hup2772-bib-0020)). Ultimately, these findings need confirmation on larger samples. Furthermore, though not certainly, it is not possible to exclude a drug interruption for those patients with plasma concentrations <5 ng/ml.
+
+Malformations occurred in 4 cases (less than 4% of the total sample). The teratogenicity risk is primarily related to first trimester exposure (not investigated in our study), but data about placental passage in the first trimester are lacking (Lusskin et al., [2018](#hup2772-bib-0032)) and it is difficult to demonstrate a direct cause-effect correlation between drugs and malformations. The plasma level at early pregnancy could be considered in future studies.
+
+Our data suggest a possible correlation between plasma levels in late pregnancy and the occurrence of PNAS. Higher plasma concentrations of sertraline in both mothers and infants at delivery for infants with PNAS symptoms seem to suggest withdrawal etiology. Indeed, the small size of the subgroups did not allow evaluations for other drugs. However, considering the umbilical ratios, the values were higher for venlafaxine ER and fluoxetine when compared with sertraline. Unexpectedly, no newborns whose mothers were taking fluoxetine and only one preterm infant whose mother was taking Venlafaxine ER (Hogue et al., [2017](#hup2772-bib-0022)), developed PNAS. Apparently, this is in contradiction with the previous data for Sertraline, but it could be explained as follows: the long half-life of fluoxetine and its metabolite can, at least theoretically, decrease the risk of PNAS as the plasma concentration is reduced more gradually (McLean, Murphy, Dalfen, & Shea, [2019](#hup2772-bib-0033)). The slow-release formulation venlafaxine might partially promote the same effect, reducing the peak plasma concentration, but the small size of our sample does not allow definitive conclusions. Some studies have reported neonatal venlafaxine discontinuation syndrome, but the results are insufficient and further studies are needed in this field (Holland & Brown, [2017](#hup2772-bib-0023)).
+
+The clinical indication of a temporary drug dose decrease about 2 weeks before delivery (Goracci, Valdagno, Maltinti, Sillari, & Fagiolini, [2015](#hup2772-bib-0013)) must be balanced with an assessment of the clinical status and the risks of relapse in postpartum. Moreover, further studies are needed to better evaluate possible differences between each drug and aetiology (withdrawal or toxicity) of the multiple syndromic symptoms (Nordeng & Spigset, [2005](#hup2772-bib-0036)).
+
+Our results showed significantly lower blood values in women within range versus below range plasma concentrations. The small size of the total sample and sub-group in relation to drugs, as well as the possible presence of confounding factors, do not allow definitive conclusions. Literature regarding the correlation between the use of SSRIs and postpartum hemorrhage shows conflicting data (Bruning et al., [2015](#hup2772-bib-0006); Heller et al., [2017](#hup2772-bib-0019); Kim et al., [2016](#hup2772-bib-0027); Skalkidou et al., [2020](#hup2772-bib-0046)). These drugs, reducing the concentration of serotonin in platelets, through the SERT blockade operated by the SSRIs and SNRIs, increase serotonin plasma level (Andrade, Sandarsh, Chethan, & Nagesh, [2010](#hup2772-bib-0002); Saldanha, Kumar, Ryali, Srivastava, & Pawar, [2009](#hup2772-bib-0043)) and this could increase the tonicity of the uterus and, therefore, its ability to limit blood loss (Cordeaux, Pasupathy, Bacon, Charnock-Jones, & Smith, [2009](#hup2772-bib-0008)). Some studies on histological samples of myometrium obtained at the time of birth revealed that the activation of the 5HT2A serotonergic receptors, expressed by muscle cells, causes its sustained contraction (Cordeaux et al., [2009](#hup2772-bib-0008); Grzeskowiak, McBain, Dekker, & Clifton, [2016](#hup2772-bib-0016); Hanley, Smolina, Mintzes, Oberlander, & Morgan, [2016](#hup2772-bib-0017); Joseph et al., [2015](#hup2772-bib-0025); Kim et al., [2016](#hup2772-bib-0027); Lindqvist, Nasiell, Gustafsson, & Nordstrom, [2014](#hup2772-bib-0030); Lupattelli, Spigset, Koren, & Nordeng, [2014](#hup2772-bib-0031); Palmsten et al., [2013](#hup2772-bib-0039); Salkeld, Ferris, & Juurlink, [2008](#hup2772-bib-0044)). In this regard, our finding does not seem to totally exclude a possible protective role, described in the literature, though this deserves additional investigation.
+
+Of note, one patient (ID 6) taking venlafaxine ER (daily dose 37.5 mg, plasma concentration 37,6 ng/ml) and presented Gestational Hypertension and PE in addition to GDM, PTB and a malformation in her newborn. Venlafaxine is known to be associated with a risk of dose-dependent increases in blood pressure (Thase, [1998](#hup2772-bib-0048)), but few studies conducted in pregnant women are available in this respect (Newport et al., [2016](#hup2772-bib-0034); Zakiyah et al., [2018](#hup2772-bib-0051)). Given the potentially dangerous consequences of hypertension related to pregnancy further studies were needed in this field.
+
+Finally, the patients taking polytherapy had the plasma concentrations in the therapeutic range.
+
+This could be related to the treatment with sertraline and escitalopram administered to them. Indeed, sertraline and escitalopram showed lower risk of drug-drug interaction than some other antidepressants (Caballero & Nahata, [2005](#hup2772-bib-0007)). Moreover, some women were treated with antiretrovirals, inhibitor of CYP3A4 and CYP2D6 (Gong et al., [2019](#hup2772-bib-0012)), phenobarbital, inducer of CYP3A4 and low inhibitor of CYP2D6 (He, Chen, Zhou, & Zhou, [2015](#hup2772-bib-0018)). Those drugs could be involved in drug-drug interactions. The administration of other drugs in polytherapy could be considered when an antidepressant must be introduced during pregnancy, choosing the compounds with a lower risk of interactions and consequently possible changes in related plasma concentrations and efficacy. If patients need to continue antidepressants with increased risk of interactions, TDM represents an important tool for both antidepressants and other drugs, especially antiretrovirals and antiepileptics (Gong et al., [2019](#hup2772-bib-0012)).
+
+Given the complexity of physiological changes induced by pregnancy, individual genotype and potential intra SSRIs/SNRIs class pharmacokinetic differences, although preliminary, our data show the importance of pharmacogenetic and pharmacokinetic analyzes to support evaluation and interpretation of the perinatal outcomes and their validity to orient clinical practice, in order to improve the safety of the perinatal treatment of affective disorders, and to increase a precision medicine approach.
+
+## CONFLICTS OF INTEREST
+
+Prof. Bernardo Dell'Osso has received Grant/Research Support from LivaNova, Inc., Angelini and Lundbeck and Lecture Honoraria from Angelini, Neuraxpharm, Jassen and Lundbeck. Dr. Anna Colombo, Dr. Francesca Giordano, Dr. Federica Giorgetti, Dr. Ilaria Di Bernardo, Dr. Monica F. Bosi, Dr. Alberto Varinelli, Dr, Rita Cafaro, Dr. Paola Pileri, Prof. Irene Cetin, Prof. Emilio Clementi and Dr. Caterina A. Viganò no financial relationships with commercial interests.
+
+## DATA AVAILABILITY STATEMENT
+
+The data that support the findings of this study are available from the corresponding author upon reasonable request.
+
+## Citing Literature

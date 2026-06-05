@@ -28,7 +28,8 @@ Read these files now.
 - elimination-rate-constant values.
 
 ## Rules
-- Process **exactly the rows of the sub-table**, in order — same count.
+- Process **exactly the rows of the sub-table**, keeping each row's `Row`
+  join-key value — same `Row` values as the sub-table.
 - **No calculations** — copy times verbatim from the table/caption.
 - If a sub-table yields no valid times at all, every row is `[N/A, N/A]`.
 
@@ -37,18 +38,22 @@ For each row, state whether a recorded time applies and its source, then
 produce the table.
 
 ## Output of this stage
-For each sub-table, a two-column markdown table — one row per sub-table row,
-in order. Use the same `## Sub-table N` headings as `07_subtables.md`:
+For each sub-table, a three-column markdown table — the `Row` join key (copied
+verbatim from the sub-table) plus the time pair, one row per sub-table row. Use
+the same `## Sub-table N` headings as `07_subtables.md`:
 
 ```
-| Time value | Time unit |
-| --- | --- |
-| 293.4 | minutes |
-| N/A | N/A |
+| Row | Time value | Time unit |
+| --- | --- | --- |
+| 1 | N/A | N/A |
+| 3 | 293.4 | minutes |
 ```
+
+(Keep the sub-table's `Row` order; only the values change per row.)
 
 Before continuing, sanity-check:
-- each output table has the **same number of rows** as its sub-table, in order,
+- each output table has the **same `Row` values** as its sub-table (same set,
+  same order),
 - no PK parameter (Tmax, t½, …) was mistaken for a recorded time.
 
 If that check fails, redo this stage once.
