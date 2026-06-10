@@ -18,7 +18,7 @@ SCRIPT = os.path.join(
     os.path.dirname(__file__),
     "..",
     "skills",
-    "curation-common",
+    "pk-pe-curation", "curation-common",
     "scripts",
     "verify_provenance.py",
 )

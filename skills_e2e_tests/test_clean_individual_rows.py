@@ -14,7 +14,7 @@ SCRIPT = os.path.join(
     os.path.dirname(__file__),
     "..",
     "skills",
-    "pk-individual-curation",
+    "pk-pe-curation", "pipelines", "pk-individual-curation",
     "scripts",
     "clean_individual_rows.py",
 )

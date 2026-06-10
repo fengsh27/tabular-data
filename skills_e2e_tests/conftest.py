@@ -23,7 +23,7 @@ _CONVERTER_PATH = os.path.join(
     os.path.dirname(__file__),
     "..",
     "skills",
-    "curation-common",
+    "pk-pe-curation", "curation-common",
     "scripts",
     "html_to_markdown_table.py",
 )

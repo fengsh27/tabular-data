@@ -1,18 +1,32 @@
 # skills_e2e_tests
 
-Regression fixtures and tests for the Claude curation **skills**:
-`skills/pk-summary-curation/`, `skills/pk-individual-curation/`, and the shared
-tooling in `skills/curation-common/` (the bundled scripts + the generic
-verify/correct prompt both pipelines reuse). Each *case* bundles a real paper's
-source table plus the expected output of the early curation stages, so we can
-detect drift as the skill prompts and scripts evolve — and compare the skills
-across the models we run them on (Claude, and the open LLMs served via Ollama on
-OSC).
+Regression fixtures and tests for the bundled Claude curation skill
+`skills/pk-pe-curation/`. The ten curation pipelines live under
+`skills/pk-pe-curation/pipelines/` — the table pipelines `pk-summary-curation` and
+`pk-individual-curation`, the full-text pipelines `pk-drug-summary`,
+`pk-drug-individual`, `pk-specimen-summary`, `pk-specimen-individual`,
+`pk-population-summary`, `pk-population-individual`, `pe-study-info`, the table
+pipeline `pe-study-outcome`, plus the `prepare-paper` and `route` procedures — and
+the shared tooling sits in `skills/pk-pe-curation/curation-common/` (the bundled
+scripts + the generic verify/correct and population-refine prompts the pipelines
+reuse). Each *case* bundles a real paper's source table plus the expected output of
+the early curation stages, so we can detect drift as the prompts and scripts evolve
+— and compare behavior across the models we run them on (Claude, and the open LLMs
+served via Ollama on OSC).
 
-The deterministic pieces (HTML→Markdown conversion, the provenance checker, the
-individual row-cleanup script, and selection-case structure) are asserted
-byte-exactly in CI. The model-driven stages can't be — they are evaluated
-against semantic oracles, by hand or in an eval harness.
+The deterministic pieces (HTML→Markdown conversion, the prepare-paper converter,
+the provenance checker, the row-cleanup scripts, the route label→procedure map,
+selection-case structure, and the bundle structure/schema) are asserted
+byte-exactly in CI. The model-driven stages can't be — they are evaluated against
+semantic oracles, by hand or in an eval harness.
+
+**Table vs full-text pipelines.** The table pipelines have a fixture `case` (source
+HTML + per-stage oracles) and run the Stage-0 conversion test. The full-text
+pipelines take the paper's prose, not a table, and their legacy row-cleanup is a
+no-op, so their automatable surface is the **structural/schema test**
+(`test_skill_structure.py`) plus the shared `verify_provenance.py` existence check;
+their model-driven stages are evaluated by the same hand/eval method as the table
+pipelines.
 
 ## Layout
 
@@ -20,10 +34,21 @@ against semantic oracles, by hand or in an eval harness.
 skills_e2e_tests/
 ├── README.md
 ├── conftest.py                    # discovers cases/ + selection_cases/; `case` / `selection_case` fixtures
+├── test_prepare_paper.py          # deterministic: prepare-paper HTML→input-layout converter (CI-safe)
 ├── test_stage0_conversion.py      # deterministic: shared HTML→Markdown converter (CI-safe)
 ├── test_provenance.py             # deterministic: curation-common/verify_provenance.py (CI-safe)
 ├── test_clean_individual_rows.py  # deterministic: pk-individual cleanup script (CI-safe)
+├── test_clean_specimen_rows.py    # deterministic: shared specimen cleanup script (CI-safe)
+├── test_clean_population_rows.py   # deterministic: population-individual cleanup script (CI-safe)
+├── test_clean_pe_outcome_rows.py   # deterministic: pe-study-outcome cleanup script (CI-safe)
 ├── test_table_selection.py        # deterministic: Stage 0b selection-case structure (CI-safe)
+├── test_skill_structure.py        # deterministic: per-skill front-matter / refs / schema (CI-safe)
+├── test_pipeline_skill_map.py     # deterministic: pk-pe-route label→skill map (CI-safe)
+├── prepare_cases/
+│   ├── sample_paper.html          # synthetic PMC-style paper  ── INPUT
+│   ├── expected_paper_text.md     # golden: title H1 + body, refs stripped, [Table N] markers
+│   ├── expected_abstract.md       # golden: abstract
+│   └── expected_table_1.md … _2.md# golden: per-table caption + footnotes
 ├── cases/
 │   └── 16143486_table_4/          # pk-summary single-table case (source HTML + per-stage oracles)
 │       ├── meta.json                     # pmid, table id, oracle map, provenance
@@ -68,28 +93,59 @@ All of these are deterministic (no model) and safe for CI:
 
 ```bash
 poetry run pytest skills_e2e_tests            # everything
+poetry run pytest skills_e2e_tests/test_prepare_paper.py -v           # prepare-paper HTML→input layout
 poetry run pytest skills_e2e_tests/test_stage0_conversion.py -v       # HTML→Markdown
 poetry run pytest skills_e2e_tests/test_provenance.py -v              # provenance + attribution
 poetry run pytest skills_e2e_tests/test_clean_individual_rows.py -v   # pk-individual cleanup
+poetry run pytest skills_e2e_tests/test_clean_specimen_rows.py -v     # specimen cleanup
+poetry run pytest skills_e2e_tests/test_clean_population_rows.py -v   # population-individual cleanup
+poetry run pytest skills_e2e_tests/test_clean_pe_outcome_rows.py -v   # pe-study-outcome cleanup
 poetry run pytest skills_e2e_tests/test_table_selection.py -v         # Stage 0b selection structure
+poetry run pytest skills_e2e_tests/test_skill_structure.py -v         # bundle front-matter / refs / schema
+poetry run pytest skills_e2e_tests/test_pipeline_skill_map.py -v      # route label→procedure map
 ```
 
 `test_stage0_conversion.py` parametrizes over every case under `cases/` and
-asserts the **shared** converter (`skills/curation-common/scripts/`) still
-reproduces each `expected_00_markdown_table.md`.
+asserts the **shared** converter
+(`skills/pk-pe-curation/curation-common/scripts/`) still reproduces each
+`expected_00_markdown_table.md`.
 
 ## Deterministic script tests (no fixtures needed)
 
-Two of the skills' moving parts are pure scripts, shared or pipeline-specific,
+Several of the skills' moving parts are pure scripts, shared or pipeline-specific,
 and are tested directly with inline inputs:
 
 | Test | Script under test | What it guards |
 |------|-------------------|----------------|
-| `test_provenance.py` | `curation-common/scripts/verify_provenance.py` | existence + attribution checks; ranges split; NA/text ignored; `--value/skip/label-columns`; the cord↔maternal **swap** is caught by attribution though existence passes |
-| `test_clean_individual_rows.py` | `pk-individual-curation/scripts/clean_individual_rows.py` | drop-ERROR / drop-N/A-value rows, long-time-unit blanking + time coupling, Cmax/Tmax/Cavg time-blank, sentinel normalization, dedupe, Patient-ID-first column order |
+| `test_prepare_paper.py` | `pk-pe-curation/curation-common/scripts/prepare_paper.py` | title→H1 + reference stripping + `[Table N]` marker substitution in `paper_text.md`; abstract extraction; per-table caption+footnotes markdown; table grids stay in `table_<n>.html` (not inlined); `manifest.json` marker↔file index; `--dry-run` writes nothing |
+| `test_provenance.py` | `pk-pe-curation/curation-common/scripts/verify_provenance.py` | existence + attribution checks; ranges split; NA/text ignored; `--value/skip/label-columns`; the cord↔maternal **swap** is caught by attribution though existence passes |
+| `test_clean_individual_rows.py` | `pk-pe-curation/pipelines/pk-individual-curation/scripts/clean_individual_rows.py` | drop-ERROR / drop-N/A-value rows, long-time-unit blanking + time coupling, Cmax/Tmax/Cavg time-blank, sentinel normalization, dedupe, Patient-ID-first column order |
+| `test_clean_specimen_rows.py` | `pk-pe-curation/curation-common/scripts/clean_specimen_rows.py` | remove-half-total row (with the `v!=0` guard), keep-max-`Sample N` dedupe, `Population N`/`Note` excluded from the comparison, distinct specimens/patients kept apart, original order preserved, non-integer `Sample N` → no-op |
+| `test_clean_population_rows.py` | `pk-pe-curation/curation-common/scripts/clean_population_individual_rows.py` | drop blank/`N/A` `Characteristic value` rows (incl. slash-normalized `N / A`), keep real values verbatim, preserve order, tolerant when the value column is absent |
+| `test_clean_pe_outcome_rows.py` | `pk-pe-curation/curation-common/scripts/clean_pe_outcome_rows.py` | interval/statistic business rules (Main==bound blanking, both-bounds→`Range`, value-contains-bounds blanking, N/A propagation), sentinel normalization (`Standard Deviation (SD)`→`SD`), drop non-numeric rows, working→final rename + reorder, order preserved |
+| `test_pipeline_skill_map.py` | `pk-pe-curation/pipelines/route/scripts/pipeline_skill_map.py` | map covers every `PipelineTypeEnum` value (parsed from `extractor/constants.py`), every target `procedure.md` exists, `resolve()` preserves order / de-dupes / ignores blanks / rejects unknown labels, the irregular `pk_summary`→`pipelines/pk-summary-curation` cases, `build_selection` artifact shape |
 
 Because these scripts are model-independent, the assertions are true byte-level
 checks — unlike the LLM curation stages.
+
+## Bundle structure / schema test
+
+`test_skill_structure.py` asserts the deterministic, file-level invariants of the
+bundled `pk-pe-curation` skill that rot silently as prompts are edited. For the
+full-text pipelines, whose row-cleanup is a no-op, this is the main automatable
+guard.
+
+| Check | What it guards |
+|-------|----------------|
+| top front-matter | `pk-pe-curation/SKILL.md` has `---` front-matter with `name: pk-pe-curation` and a non-empty `description:` |
+| referenced prompts exist | every `prompts/<file>.md` named in a pipeline's `procedure.md` is present under that pipeline |
+| bundle paths resolve | every `curation-common/…` / `pipelines/…` path referenced anywhere in the bundle exists (resolved against the skill root) |
+| no stale `skills/…` refs | no `skills/<old-name>/` reference survives bundling (would break once installed under `.claude/skills/pk-pe-curation/`) |
+| output schema | the schema table in each pipeline's `procedure.md` matches a known-expected column list (`EXPECTED_SCHEMAS`) — 19-col pk-summary, 12-col pk-individual, 11-col pk-drug-*, … |
+
+When you intentionally change a pipeline's output schema, update `EXPECTED_SCHEMAS`
+in `test_skill_structure.py` in the same commit — the diff is the record that the
+change was deliberate.
 
 ## Evaluating the LLM stages (01–03)
 
@@ -98,7 +154,7 @@ than as a pass/fail unit test:
 
 1. Set up a scratch dir as the skill specifies, e.g.
    `.pk_curation_scratch/16143486_table_4/`.
-2. Stage 0: `python skills/curation-common/scripts/html_to_markdown_table.py \
+2. Stage 0: `python skills/pk-pe-curation/curation-common/scripts/html_to_markdown_table.py \
    skills_e2e_tests/cases/16143486_table_4/source_table.html` → `00_markdown_table.md`;
    copy `title.txt` + `caption.txt` into `inputs.md`.
 3. Drive the skill (under Claude, or under Claude Code pointed at the OSC Ollama
