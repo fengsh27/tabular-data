@@ -1,0 +1,45 @@
+{
+  "pmid": "16143486",
+  "kind": "table-selection",
+  "skill": "pk-summary-curation",
+  "stage": "0b",
+  "title_file": "title.txt",
+  "tables": [
+    {
+      "label": "table_1",
+      "html_file": "table_1.html",
+      "caption": "Table 1. Individual characteristics of the parturients investigated (n = 10)",
+      "footnote": ""
+    },
+    {
+      "label": "table_2",
+      "html_file": "table_2.html",
+      "caption": "Table 2. Kinetic disposition of lorazepam and its metabolite glucuronide in parturients treated with a single oral dose of 2 mg rac-lorazepam; mean (CI 95%)",
+      "footnote": "–, Not determined."
+    },
+    {
+      "label": "table_3",
+      "html_file": "table_3.html",
+      "caption": "Table 3. Urinary excretion of lorazepam and its metabolite glucuronide in parturients treated with a single oral dose of 2 mg rac-lorazepam; mean (CI 95%)",
+      "footnote": ""
+    },
+    {
+      "label": "table_4",
+      "html_file": "table_4.html",
+      "caption": "Table 4. Transplacental distribution of lorazepam as an enantiomeric mixture at delivery (n = 8)",
+      "footnote": "Parturients were treated with a single oral dose of 2 mg rac-lorazepam; mean (CI 95%)."
+    }
+  ],
+  "expected": {
+    "selected": ["table_2", "table_3", "table_4"],
+    "excluded": ["table_1"]
+  },
+  "rationale": {
+    "table_1": "Individual characteristics of parturients (gestational age, age, weight, height, associated drugs) — patient demographics / baseline characteristics. EXCLUDED.",
+    "table_2": "Kinetic disposition: Cmax, tmax, t1/2, Ka, beta, AUC0-inf, ClT/F, Vd/F — PK parameters with units. INCLUDED.",
+    "table_3": "Urinary excretion: Ae total, Fel, ClR, t1/2, Kel — ADME excretion data / PK parameters. INCLUDED.",
+    "table_4": "Transplacental distribution: lorazepam concentrations in cord blood and maternal blood, with a concentration ratio — drug concentrations in biological matrices. INCLUDED."
+  },
+  "oracle_kind": "semantic (LLM selection judgment). The CI test asserts the oracle is internally consistent (selected/excluded partition every table, disjoint, all labels real) and that the bundled converter renders every table into the Stage-0a `00_all_tables.md` input. The actual select-vs-exclude decision is a model eval, run per the README.",
+  "provenance": "Lifted verbatim from system_tests/test_select_pk_tables.py (the 4 raw_tag HTML blocks), the same lorazepam-in-parturients paper whose Table 4 is the single-table case cases/16143486_table_4."
+}

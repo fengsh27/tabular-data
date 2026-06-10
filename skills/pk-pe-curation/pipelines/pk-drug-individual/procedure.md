@@ -1,0 +1,128 @@
+# PK Drug Individual Curation
+
+Extracts the **dosing regimen per individual patient** from a paper's running
+text: for each patient/case, which drug, how much, how often, by what route. This
+is a **full-text** skill — it reads prose, not a table. Its sibling
+`pk-drug-summary` aggregates dosing by population group instead. The two share the
+demographic-refinement and verify/correct procedures in
+`curation-common/`.
+
+## Inputs you need
+1. **Full text** — the paper's body text (the case descriptions / dosing
+   paragraphs). This is the primary source.
+2. **Paper title** — recommended.
+
+There is **no input table**. If the user only supplies a PMID or URL, ask them to
+paste the full text — this skill does not fetch papers.
+
+## Output schema
+A CSV (or markdown table) with exactly these 11 columns, in order:
+
+| # | Column | Notes |
+|---|--------|-------|
+| 1 | Patient ID | the individual patient/case identifier |
+| 2 | Drug/Metabolite name | the drug or metabolite administered |
+| 3 | Dose amount | numeric value, list, or range (e.g. `5`, `1,2,3,4`, `0.01 - 0.05`) |
+| 4 | Dose unit | unit of the dose amount (e.g. `mg`, `mg/kg`) |
+| 5 | Dose frequency | how many times taken (e.g. `Single`, `Multiple`, `3`) |
+| 6 | Dose schedule | timing/interval (e.g. `once a day`, `every 8 hours`) |
+| 7 | Dose route | `Oral`, `IV`, `IM`, `SC`, `Epidural`, `Infusion`, … |
+| 8 | Population | canonical group: `Nonpregnant`, `Maternal`, `Pediatric`, `Adults`, … |
+| 9 | Pregnancy stage | `N/A` unless obstetric |
+| 10 | Pediatric/Gestational age | age/age-range or pregnancy weeks, **only if explicitly stated** |
+| 11 | Source text | the source sentence/excerpt the row was extracted from (traceability) |
+
+Use `"N/A"` (string) for cells that cannot be filled. Note the last column is
+**`Source text`** (kept as-is), not `Note` — this differs from pk-drug-summary.
+
+## Scratch directory (state between stages)
+Persist each stage's output to a file and read it back when the next stage needs
+it — do not rely on the conversation alone (a long run can be summarized, which
+would corrupt the exact table text later stages depend on).
+
+**Create the scratch directory in the user's current project/working directory —
+NOT inside this skill's folder.** Concretely, the path is
+`./.pk_drug_individual_scratch/<pmid>/` relative to where the user is working, so
+outputs live alongside the user's data. Never write scratch files under
+`pipelines/pk-drug-individual/`. If you are unsure of the working directory, run
+`pwd` and create the scratch folder there.
+
+This is a **full-text** skill: no input table, so **no Stage-0 conversion, no
+table selection, no `table_<n>/` nesting** — the run is flat:
+
+```
+.pk_drug_individual_scratch/<pmid>/
+├── inputs.md            # the paper title + full text, verbatim (the source for every stage)
+├── 01_drug_info.md      # Stage 1: [Patient ID, Drug/Metabolite name, Dose frequency, Dose amount, Source text]
+├── 02_patient_refined.md # Stage 2: [Patient ID, Population, Pregnancy stage, Pediatric/Gestational age]
+├── 03_drug_refined.md   # Stage 3: [Drug/Metabolite name, Dose amount, Dose unit, Dose frequency, Dose schedule, Dose route]
+├── 04_final.csv         # Stage 4: the assembled 11-column result (corrected in place by stage 5)
+└── 05_verification_report.md # Stage 5 output
+```
+
+Write the title + full text to `inputs.md` once, up front.
+
+## Procedure
+Run the stages **in order**. For each stage: read its input file(s) and its
+prompt file, reason explicitly, produce the output, sanity-check it (redo **once**
+if a check fails, then carry forward noting any residual issue), and **write** the
+output to its scratch file before moving on. Stages 1–3 carry the **same row set
+in the same order** — column-wise refinements of the stage-1 table — so all three
+have an identical row count, which stage 4 relies on.
+
+1. **Drug info** — `prompts/01_drug_info.md`
+   Reads `inputs.md` → writes `01_drug_info.md`. Extract every unique
+   `[Patient ID, Drug/Metabolite name, Dose frequency, Dose amount, Source text]`
+   combination described in the full text.
+
+2. **Patient refine** — `prompts/02_patient_refine.md`
+   Reads `01_drug_info.md` + `inputs.md` → writes `02_patient_refined.md`.
+   A thin wrapper over `curation-common/refine_population.md` with
+   `<KEY-COLUMN>` = `Patient ID`, producing `[Patient ID, Population, Pregnancy
+   stage, Pediatric/Gestational age]` row-for-row (demographics inferred from the
+   full text for each patient).
+
+3. **Drug refine** — `prompts/03_drug_refine.md`
+   Reads `01_drug_info.md` + `inputs.md` → writes `03_drug_refined.md`. Split the
+   dose into `[Drug/Metabolite name, Dose amount, Dose unit, Dose frequency, Dose
+   schedule, Dose route]` row-for-row.
+
+4. **Assembly** — `prompts/04_assembly.md`
+   Reads `01_drug_info.md`, `02_patient_refined.md`, `03_drug_refined.md` →
+   writes `04_final.csv`. Join the three row-aligned tables into the 11-column
+   schema with `Patient ID` **first** and `Source text` kept as the last column.
+
+5. **Verification + correction** — `prompts/05_verify_and_correct.md`
+   Reads `04_final.csv` + `inputs.md` → corrects `04_final.csv` in place and
+   writes `05_verification_report.md`. The quality gate; see below.
+
+## Validation
+After assembly (stage 4), check the table, row by row, before verification:
+- 11 columns, `Patient ID` first, in the schema order.
+- `Dose amount` is a number, comma list, or range — `Dose unit` holds the unit.
+- `Dose route` is one of the recognized routes or `"N/A"`.
+- one row per patient per distinct dose (no duplicate `Patient ID` + dose rows).
+
+If any row fails, fix it inline (do not silently drop it) and re-check.
+
+## Verification + correction
+Stage 5 follows `curation-common/verify_and_correct.md`. Because the source
+is **prose, not a table**, run the provenance script in **existence-only** mode
+(no `--attribution`). The stage prompt fills in the exact parameters.
+
+## Error handling rules
+- **No drug/dosing information found** at stage 1: record a single all-`N/A` row
+  `["N/A", "N/A", "N/A", "N/A", "N/A"]` instead of failing, and say so.
+- **No Patient ID in the text**: if the paper is a single-patient case report,
+  assign `1` to every row. If multiple cases, use the text's own case numbers. If
+  individual subjects genuinely cannot be told apart, this may be population-level
+  data — say so and suggest `pk-drug-summary`.
+- **A refine stage returns a different row count than stage 1**: redo it once,
+  insisting on one output row per stage-1 row, same order; if it still disagrees,
+  align by the carried `Patient ID` and note the discrepancy.
+
+## What this skill deliberately does NOT do
+- It does not fetch papers from PubMed or any URL.
+- It does not extract PK parameter values (AUC/Cmax/CL).
+- Its verify → correct loop (stage 5) is **bounded** (≤2 rounds).
+- It does not score itself against a gold standard — that's `benchmark/`.

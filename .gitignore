@@ -166,7 +166,23 @@ tmp/
 temp.py
 # data/
 # data/*.csv
+data/*.png
+slides/
 data/databases/
 system_tests/data/*.db
 system_tests/data/*.csv
 system_tests/data/*.md
+
+# PK curation skill scratch state (per-run intermediate tables)
+.paper_assets/
+.pk_pe_route_scratch/
+.pk_curation_scratch/
+.pk_individual_scratch/
+.pk_drug_summary_scratch/
+.pk_drug_individual_scratch/
+.pk_specimen_summary_scratch/
+.pk_specimen_individual_scratch/
+.pk_population_summary_scratch/
+.pk_population_individual_scratch/
+.pe_study_info_scratch/
+.pe_study_outcome_scratch/
