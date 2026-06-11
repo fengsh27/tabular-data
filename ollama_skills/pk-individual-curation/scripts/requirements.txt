@@ -1,0 +1,5 @@
+# Dependencies for the pk-summary-curation skill scripts.
+# Install with:  pip install -r scripts/requirements.txt
+#
+# html_to_markdown_table.py is otherwise standalone (Python 3 stdlib only).
+beautifulsoup4>=4.12
