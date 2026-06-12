@@ -14,13 +14,14 @@ stages: **prepare** the paper, **route** (decide which pipelines apply), then
 > **Self-contained skill.** Every `scripts/…` path and every resource file (`verify_and_correct.md`, `refine_population.md`, …) named below lives in **this skill's own directory**. This skill shares nothing with other skills — when run as an installed skill, resolve these paths under this skill's folder.
 
 ## Inputs
-- A paper — ideally publisher **HTML** (PMC / Wiley / Elsevier), or pasted full
-  text + tables. The title (and PMID) help with naming.
+- A paper — publisher **HTML** (PMC / Wiley / Elsevier) **or JATS/PMC XML**, or
+  pasted full text + tables. The title (and PMID) help with naming.
 
 ## Stage A — Prepare the paper
 ```bash
-python scripts/prepare_paper.py <paper.html> --out ./.paper_assets
+python scripts/prepare_paper.py <paper.html|paper.xml> --out ./.paper_assets
 ```
+(Or trigger the standalone **pk-pe-prepare** skill, which wraps the same script.)
 Produces `./.paper_assets/<pmid>/` with `paper_text.md` (references stripped,
 tables → `[Table N]` markers), `abstract.md`, `table_<n>.md` / `table_<n>.html`,
 and `manifest.json`. (HTML only; if the user pasted raw text, place it into the

@@ -34,6 +34,9 @@ SRC = os.path.join(REPO, "skills", "pk-pe-curation")
 DST = os.path.join(REPO, "ollama_skills")
 CC_SCRIPTS = os.path.join(SRC, "curation-common", "scripts")
 CC_ROOT = os.path.join(SRC, "curation-common")
+# generator-owned assets that are NOT in skills/ (kept out so skills/ stays the
+# unchanged Claude bundle). The XML-capable prepare_paper.py lives here.
+ASSETS = os.path.join(REPO, "scripts", "assets")
 
 # --- Per-pipeline manifest -------------------------------------------------
 # `extra_scripts` are pulled from curation-common/scripts/ into the skill's own
@@ -180,8 +183,8 @@ def build_router() -> None:
     os.makedirs(os.path.join(dst, "scripts"), exist_ok=True)
     os.makedirs(os.path.join(dst, "prompts"), exist_ok=True)
 
-    # router-owned scripts
-    shutil.copy2(os.path.join(CC_SCRIPTS, "prepare_paper.py"), os.path.join(dst, "scripts", "prepare_paper.py"))
+    # router-owned scripts (XML-capable prepare_paper.py from generator assets)
+    shutil.copy2(os.path.join(ASSETS, "prepare_paper.py"), os.path.join(dst, "scripts", "prepare_paper.py"))
     shutil.copy2(os.path.join(CC_SCRIPTS, "requirements.txt"), os.path.join(dst, "scripts", "requirements.txt"))
     shutil.copy2(
         os.path.join(SRC, "pipelines", "route", "scripts", "pipeline_skill_map.py"),
@@ -206,13 +209,14 @@ stages: **prepare** the paper, **route** (decide which pipelines apply), then
 
 {PATH_NOTE}
 ## Inputs
-- A paper — ideally publisher **HTML** (PMC / Wiley / Elsevier), or pasted full
-  text + tables. The title (and PMID) help with naming.
+- A paper — publisher **HTML** (PMC / Wiley / Elsevier) **or JATS/PMC XML**, or
+  pasted full text + tables. The title (and PMID) help with naming.
 
 ## Stage A — Prepare the paper
 ```bash
-python scripts/prepare_paper.py <paper.html> --out ./.paper_assets
+python scripts/prepare_paper.py <paper.html|paper.xml> --out ./.paper_assets
 ```
+(Or trigger the standalone **pk-pe-prepare** skill, which wraps the same script.)
 Produces `./.paper_assets/<pmid>/` with `paper_text.md` (references stripped,
 tables → `[Table N]` markers), `abstract.md`, `table_<n>.md` / `table_<n>.html`,
 and `manifest.json`. (HTML only; if the user pasted raw text, place it into the
@@ -269,6 +273,73 @@ stages yourself from this router.
         fh.write(fm + body)
 
 
+def build_prepare_skill() -> None:
+    """Standalone front-door skill: prepare a paper (HTML or JATS/PMC XML)."""
+    name = "pk-pe-prepare"
+    dst = os.path.join(DST, name)
+    os.makedirs(os.path.join(dst, "scripts"), exist_ok=True)
+    shutil.copy2(os.path.join(ASSETS, "prepare_paper.py"), os.path.join(dst, "scripts", "prepare_paper.py"))
+    shutil.copy2(os.path.join(CC_SCRIPTS, "requirements.txt"), os.path.join(dst, "scripts", "requirements.txt"))
+
+    desc = (
+        "Prepare a PK/PE paper for curation: convert a publisher HTML file or a "
+        "JATS/PMC XML file into the canonical input layout (paper_text.md with "
+        "references stripped and tables replaced by [Table N] markers, abstract.md, "
+        "per-table table_<n>.md / table_<n>.html, and manifest.json). Use this first, "
+        "before the curation skills, when the user has a raw paper file (.html or .xml). "
+        "Runs standalone or as Stage A of the pk-pe-curation router."
+    )
+    body = f"""# PK/PE Prepare
+
+The deterministic **front door** of the curation suite. It turns one raw paper
+file — **HTML** (PMC / Wiley / Elsevier) or **JATS/PMC XML** — into the canonical
+input layout every curation skill expects. Format is auto-detected from the file
+extension and root element.
+
+{PATH_NOTE}
+## Run
+```bash
+python scripts/prepare_paper.py <paper.html|paper.xml> --out ./.paper_assets
+# a directory of .html/.xml files works too:
+python scripts/prepare_paper.py <dir> --out ./.paper_assets
+python scripts/prepare_paper.py <paper> --dry-run     # report only, write nothing
+```
+Needs `beautifulsoup4` **only for HTML** input (`pip install -r scripts/requirements.txt`);
+the XML path is Python-3 standard library only.
+
+## Output — `./.paper_assets/<pmid>/`
+| File | Contents |
+|---|---|
+| `paper_text.md` | title (H1) + body as Markdown; references stripped; each data table → a `[Table N]` marker |
+| `abstract.md` | the abstract as Markdown |
+| `table_<n>.md` | table *n*'s caption + footnotes |
+| `table_<n>.html` | table *n* as a `<section>` (caption + table + footnotes) |
+| `manifest.json` | title, table count, and the `[Table N]` ↔ file mapping |
+
+Tables are numbered by order of appearance. `<pmid>` is the input file's base name.
+
+## Hand off
+Point the curation skills (or the `pk-pe-curation` router) at the produced
+`<pmid>/` directory:
+- **table** skills (`pk-summary-curation`, `pk-individual-curation`,
+  `pe-study-outcome`) → `table_<n>.html`;
+- **full-text** skills (`pk-drug-*`, `pk-specimen-*`, `pk-population-*`,
+  `pe-study-info`) → `paper_text.md` (+ `abstract.md`).
+
+## Scope & notes
+- **HTML** uses best-effort PMC / Wiley / Elsevier selectors. **XML** uses the
+  NLM/JATS `<article>` schema (`<front>` metadata, `<body>` sections,
+  `<table-wrap>` tables, `<ref-list>` references).
+- Output is written to a git-ignored scratch dir in the user's project root
+  (`./.paper_assets/`), never inside this skill folder.
+- If the user pasted raw text instead of a file, place it into the equivalent
+  `paper_text.md` / `table_<n>.html` files by hand.
+"""
+    fm = f"---\nname: {name}\ndescription: {desc}\n---\n\n"
+    with open(os.path.join(dst, "SKILL.md"), "w", encoding="utf-8") as fh:
+        fh.write(fm + body)
+
+
 def write_install() -> None:
     txt = """# Installing the Ollama PK/PE curation skills
 
@@ -284,10 +355,13 @@ Copy every folder in here into your project's `.claude/skills/`:
 cp -R ollama_skills/* <your-project>/.claude/skills/
 ```
 
-You then have 11 skills: the `pk-pe-curation` router plus 10 standalone
-curation skills.
+You then have 12 skills: the `pk-pe-curation` router, the `pk-pe-prepare` front
+door, plus 10 standalone curation skills.
 
 ## Use
+- **Prepare first (any path):** trigger `pk-pe-prepare` (or run its
+  `scripts/prepare_paper.py`) on a raw `.html` **or** `.xml` paper to produce
+  `./.paper_assets/<pmid>/`. The router runs this automatically as Stage A.
 - **Guided (router):** ask to "curate PK/PE data from paper <pmid>" — the
   `pk-pe-curation` router prepares + routes, then triggers the matching pipeline
   skills one at a time.
@@ -328,6 +402,8 @@ def main() -> int:
         print(f"      docs:    {info['docs']}    prompts: {info['prompts']}")
     build_router()
     print("  pk-pe-curation (router)")
+    build_prepare_skill()
+    print("  pk-pe-prepare (front door, HTML + XML)")
     write_install()
     print("\nDone.")
     return 0

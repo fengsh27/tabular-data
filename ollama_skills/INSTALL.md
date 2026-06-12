@@ -12,10 +12,13 @@ Copy every folder in here into your project's `.claude/skills/`:
 cp -R ollama_skills/* <your-project>/.claude/skills/
 ```
 
-You then have 11 skills: the `pk-pe-curation` router plus 10 standalone
-curation skills.
+You then have 12 skills: the `pk-pe-curation` router, the `pk-pe-prepare` front
+door, plus 10 standalone curation skills.
 
 ## Use
+- **Prepare first (any path):** trigger `pk-pe-prepare` (or run its
+  `scripts/prepare_paper.py`) on a raw `.html` **or** `.xml` paper to produce
+  `./.paper_assets/<pmid>/`. The router runs this automatically as Stage A.
 - **Guided (router):** ask to "curate PK/PE data from paper <pmid>" — the
   `pk-pe-curation` router prepares + routes, then triggers the matching pipeline
   skills one at a time.
