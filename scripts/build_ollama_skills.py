@@ -15,10 +15,11 @@ This script emits an alternative `ollama_skills/` bundle where:
   * each pipeline is FULLY SELF-CONTAINED -- it carries its own copies of every
     script and resource it needs; there is NO shared `curation-common/`;
   * a standalone `pk-pe-prepare` front-door skill converts a raw paper into the
-    canonical input layout. There is NO `pk-pe-curation` router skill: routing /
-    orchestration (identify + design + dispatch) is the Claude bundle's job and is
-    too much for small open models, which are driven instead by triggering one
-    self-contained pipeline skill at a time.
+    canonical input layout, and a standalone `pk-pe-identify-pipelines` selector
+    classifies the paper and picks the applicable pipelines. There is NO
+    `pk-pe-curation` router skill: full orchestration (prepare + route + dispatch
+    in one) is the Claude bundle's job and is too much for small open models, which
+    are driven instead by triggering one self-contained skill at a time.
 
 `./skills/` is never modified. Re-run this script to regenerate `ollama_skills/`
 after editing `./skills/`.
@@ -172,6 +173,205 @@ def copy_pipeline(name: str, spec: dict) -> dict:
     }
 
 
+IDENTIFY_DESC = (
+    "Decide which PK/PE curation pipelines apply to a paper. First classifies the "
+    "paper as PK / PE / Both / Neither from its title + abstract, then selects the "
+    "matching pipelines — pk_* for a PK paper, pe_* for a PE paper, both for Both, "
+    "and none for Neither — and writes the selected pipeline skills to trigger next. "
+    "Use after pk-pe-prepare, when the user asks which pipelines to run on a paper. "
+    "Does NOT curate; returns an empty selection for non-PK/PE papers."
+)
+
+# Flat-layout dispatch map: a pipeline label (PipelineTypeEnum value) -> the
+# ollama skill NAME to trigger. Distinct from the Claude bundle's map (which emits
+# `pipelines/<dir>` paths); here the targets are first-class top-level skills.
+IDENTIFY_MAP_SCRIPT = '''#!/usr/bin/env python3
+"""Deterministic map from a pipeline label to the ollama curation skill to trigger.
+
+The identify-pipelines skill's design stage emits a list of pipeline labels (the
+values of `extractor.constants.PipelineTypeEnum`). Turning those into the skills to
+trigger must NOT be left to the model: the naming is irregular (`pk_summary` ->
+`pk-summary-curation`, but `pk_drug_summary` -> `pk-drug-summary`), so a string
+transform would silently misroute. This table is the single source of truth.
+
+CLI: turn a selection into the `selected_pipelines.json` artifact.
+
+    python pipeline_skill_map.py --pmid 12345678 --paper-type Both \\
+        pk_summary pe_study_outcome > selected_pipelines.json
+"""
+import argparse
+import json
+import sys
+
+# label (PipelineTypeEnum value) -> ollama skill name to trigger next.
+PIPELINE_TO_SKILL = {
+    "pk_summary": "pk-summary-curation",
+    "pk_individual": "pk-individual-curation",
+    "pk_specimen_summary": "pk-specimen-summary",
+    "pk_specimen_individual": "pk-specimen-individual",
+    "pk_drug_summary": "pk-drug-summary",
+    "pk_drug_individual": "pk-drug-individual",
+    "pk_population_summary": "pk-population-summary",
+    "pk_population_individual": "pk-population-individual",
+    "pe_study_info": "pe-study-info",
+    "pe_study_outcome": "pe-study-outcome",
+}
+
+# domain of each label, for the paper-type gate.
+PK_LABELS = {k for k in PIPELINE_TO_SKILL if k.startswith("pk_")}
+PE_LABELS = {k for k in PIPELINE_TO_SKILL if k.startswith("pe_")}
+
+
+def resolve(labels):
+    """Map pipeline labels -> [{pipeline, skill}], preserving order, de-duped.
+
+    Raises KeyError on an unknown label (a misspelled / hallucinated pipeline).
+    """
+    seen = set()
+    out = []
+    for label in labels:
+        label = label.strip()
+        if not label or label in seen:
+            continue
+        if label not in PIPELINE_TO_SKILL:
+            raise KeyError(
+                f"unknown pipeline label {label!r}; valid: {sorted(PIPELINE_TO_SKILL)}"
+            )
+        seen.add(label)
+        out.append({"pipeline": label, "skill": PIPELINE_TO_SKILL[label]})
+    return out
+
+
+def build_selection(pmid, paper_type, labels):
+    return {
+        "pmid": pmid,
+        "paper_type": paper_type,
+        "selected": resolve(labels),
+    }
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.add_argument("labels", nargs="*", help="selected pipeline labels (PipelineTypeEnum values)")
+    ap.add_argument("--pmid", default=None)
+    ap.add_argument("--paper-type", default=None, help="PK / PE / Both / Neither")
+    ap.add_argument("--out", default=None, help="write JSON here (default: stdout)")
+    args = ap.parse_args(argv)
+
+    try:
+        selection = build_selection(args.pmid, args.paper_type, args.labels)
+    except KeyError as e:
+        sys.exit(str(e))
+
+    text = json.dumps(selection, indent=2, ensure_ascii=False) + "\\n"
+    if args.out:
+        with open(args.out, "w", encoding="utf-8") as f:
+            f.write(text)
+    else:
+        sys.stdout.write(text)
+
+
+if __name__ == "__main__":
+    main()
+'''
+
+
+def build_identify_skill() -> None:
+    """Standalone selector skill: identify paper type, then pick the pipelines.
+
+    Ports the Claude bundle's route stage (pipelines/route/) — PKPEIdentificationStep
+    + PKPEDesignStep — as a first-class triggerable skill that writes the selection
+    but does NOT curate or dispatch.
+    """
+    name = "pk-pe-identify-pipelines"
+    dst = os.path.join(DST, name)
+    os.makedirs(os.path.join(dst, "scripts"), exist_ok=True)
+    os.makedirs(os.path.join(dst, "prompts"), exist_ok=True)
+
+    # flat-name dispatch map (generated, not the Claude bundle's path-based one)
+    with open(os.path.join(dst, "scripts", "pipeline_skill_map.py"), "w", encoding="utf-8") as fh:
+        fh.write(IDENTIFY_MAP_SCRIPT)
+
+    # route prompts (identify + design), with the map-script path rewritten to local
+    for fn in ("01_identify.md", "02_design.md"):
+        src = os.path.join(SRC, "pipelines", "route", "prompts", fn)
+        with open(src, encoding="utf-8") as fh:
+            t = fh.read()
+        t = rewrite_paths(t)
+        t = t.replace("pipelines/route/scripts/pipeline_skill_map.py", "scripts/pipeline_skill_map.py")
+        with open(os.path.join(dst, "prompts", fn), "w", encoding="utf-8") as fh:
+            fh.write(t)
+
+    body = f"""# PK/PE Identify Pipelines
+
+The **selector** of the curation suite. It ports two legacy steps —
+`PKPEIdentificationStep` (PK / PE / Both / Neither) and `PKPEDesignStep`
+(multi-label pipeline selection) — and writes the list of curation skills that
+apply to the paper. It **does not curate**: hand the selection to the matching
+pipeline skills (or trigger them yourself), one at a time.
+
+{PATH_NOTE}
+## Prerequisite
+Run **pk-pe-prepare** first to produce `./.paper_assets/<pmid>/` (`paper_text.md`,
+`abstract.md`, `table_<n>.md` / `table_<n>.html`, `manifest.json`). If the user
+pasted raw title / abstract / full text, you can work from that directly.
+
+## Scratch directory
+Write intermediates to `./.pk_pe_identify_scratch/<pmid>/` in the user's project /
+working dir (never inside the skill folder; it is git-ignored): `identify.json`,
+`design.json`, and the final `selected_pipelines.json`.
+
+## Workflow
+1. **Stage 1 — Identify** (`prompts/01_identify.md`): from the title + `abstract.md`,
+   classify the paper as **PK / PE / Both / Neither** → `identify.json`.
+2. **Paper-type gate** — the classification fixes the candidate set:
+   - **PK** → choose only from the **PK** pipelines (`pk_*`).
+   - **PE** → choose only from the **PE** pipelines (`pe_*`).
+   - **Both** → choose from **both** `pk_*` and `pe_*`.
+   - **Neither** → select **nothing**: write an empty `selected_pipelines.json`
+     (`{{"pmid": "<pmid>", "paper_type": "Neither", "selected": []}}`), tell the user
+     the paper is out of scope, and **stop** (do not run Stage 2).
+3. **Stage 2 — Design** (`prompts/02_design.md`): within the gated candidate set,
+   reconstruct the full text with tables visible (splice each `table_<n>.md` at its
+   `[Table N]` marker) and select the **union** of all applicable pipelines
+   (multi-label, non-exclusive) → `design.json`.
+4. **Deterministic dispatch map** — never hand-write the skill names; run the
+   byte-stable table:
+   ```bash
+   python scripts/pipeline_skill_map.py \\
+       --pmid <pmid> --paper-type <PK|PE|Both> <pipeline_tools from design.json> \\
+       > ./.pk_pe_identify_scratch/<pmid>/selected_pipelines.json
+   ```
+
+## Candidate pipelines
+- **PK** (`pk_*`): `pk_summary`, `pk_individual`, `pk_specimen_summary`,
+  `pk_specimen_individual`, `pk_drug_summary`, `pk_drug_individual`,
+  `pk_population_summary`, `pk_population_individual`.
+- **PE** (`pe_*`): `pe_study_info`, `pe_study_outcome`.
+
+## Output — `selected_pipelines.json`
+```json
+{{ "pmid": "12345678", "paper_type": "Both",
+  "selected": [
+    {{"pipeline": "pk_summary", "skill": "pk-summary-curation"}},
+    {{"pipeline": "pe_study_outcome", "skill": "pe-study-outcome"}} ] }}
+```
+Each `skill` is the name of the standalone curation skill to trigger next. For a
+`Neither` paper, `selected` is `[]`.
+
+## Notes
+- **Tables are visible to the design stage by design.** The legacy step saw table
+  data inline in the full text; Stage 2 reconstructs that by splicing the
+  `table_<n>.md` files back at their `[Table N]` markers. Do not run the design
+  stage on the bare `paper_text.md` (markers only).
+- The **label→skill map is deterministic** (`scripts/pipeline_skill_map.py`); only
+  the identify + design judgements are model-driven.
+"""
+    fm = f"---\nname: {name}\ndescription: {IDENTIFY_DESC}\n---\n\n"
+    with open(os.path.join(dst, "SKILL.md"), "w", encoding="utf-8") as fh:
+        fh.write(fm + body)
+
+
 def build_prepare_skill() -> None:
     """Standalone front-door skill: prepare a paper (HTML or JATS/PMC XML)."""
     name = "pk-pe-prepare"
@@ -252,20 +452,23 @@ Copy every folder in here into your project's `.claude/skills/`:
 cp -R ollama_skills/* <your-project>/.claude/skills/
 ```
 
-You then have 11 skills: the `pk-pe-prepare` front door, plus 10 standalone
-curation skills. There is no router skill — routing/orchestration is the Claude
-bundle's job and is too much for small open models; here you prepare the paper,
-then trigger the right pipeline skill yourself.
+You then have 12 skills: the `pk-pe-prepare` front door, the
+`pk-pe-identify-pipelines` selector, plus 10 standalone curation skills. There is
+no router skill — full orchestration is the Claude bundle's job and is too much for
+small open models; here you prepare the paper, optionally ask which pipelines
+apply, then trigger each pipeline skill yourself.
 
 ## Use
 - **Prepare first (any path):** trigger `pk-pe-prepare` (or run its
   `scripts/prepare_paper.py`) on a raw `.html` **or** `.xml` paper to produce
   `./.paper_assets/<pmid>/`.
-- **Then curate (one pipeline at a time):** once you know which data the paper
-  has, trigger the matching pipeline skill, e.g. "use pk-individual-curation to
-  curate paper <pmid>", pointing it at the prepared `./.paper_assets/<pmid>/`
-  files. Triggering a single skill keeps its full procedure in front of the
-  model — the reliable path for the smallest models.
+- **Pick pipelines (optional):** trigger `pk-pe-identify-pipelines` to classify the
+  paper (PK / PE / Both / Neither) and get the list of applicable pipeline skills in
+  `selected_pipelines.json`. Returns an empty list for non-PK/PE papers.
+- **Then curate (one pipeline at a time):** trigger each selected pipeline skill,
+  e.g. "use pk-individual-curation to curate paper <pmid>", pointing it at the
+  prepared `./.paper_assets/<pmid>/` files. Triggering a single skill keeps its full
+  procedure in front of the model — the reliable path for the smallest models.
 
 ## Dependencies
 Pipelines that convert HTML tables or prepare papers need BeautifulSoup:
@@ -300,6 +503,8 @@ def main() -> int:
         print(f"      docs:    {info['docs']}    prompts: {info['prompts']}")
     build_prepare_skill()
     print("  pk-pe-prepare (front door, HTML + XML)")
+    build_identify_skill()
+    print("  pk-pe-identify-pipelines (selector)")
     write_install()
     print("\nDone.")
     return 0
