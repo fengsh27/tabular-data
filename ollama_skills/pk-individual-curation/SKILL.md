@@ -262,3 +262,14 @@ After cleanup (stage 13), before verification, check the table:
   reported, not endlessly retried.
 - It does not aggregate or compute statistics — that is pk-summary-curation.
 - It does not score itself against a gold standard — that's `benchmark/`.
+
+## Write out the result (do this last)
+When the procedure above finishes, copy its **final deliverable CSV** (the `combined_final.csv` / `NN_final.csv` written by the last stage) to the output location, leaving the scratch copy in place:
+
+```bash
+# output base: $SKILL_OUTPUT_FOLDER if set, else the current directory
+OUT="${SKILL_OUTPUT_FOLDER:-.}"; mkdir -p "$OUT/<pmid>"
+cp <final-csv-in-scratch> "$OUT/<pmid>/pk-individual-curation.csv"
+```
+
+If `SKILL_OUTPUT_FOLDER` is unset this writes `./<pmid>/pk-individual-curation.csv` in the user's current working directory. Then tell the user the exact path you wrote.

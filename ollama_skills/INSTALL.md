@@ -30,18 +30,24 @@ apply, then trigger each pipeline skill yourself.
   prepared `./.paper_assets/<pmid>/` files. Triggering a single skill keeps its full
   procedure in front of the model — the reliable path for the smallest models.
 
-## Where intermediate files go
-By default each skill writes its working files — the prepared `./.paper_assets/`
-and the per-skill `./.<name>_scratch/` dirs — into the user's current working
-directory (they are git-ignored). To collect them all under one place instead, set
-the **`SKILL_SCRATCH_FOLDER`** environment variable; every skill roots its
-`.paper_assets/` and `.<name>_scratch/` folders under that path:
+## Where files go (two env vars)
+Each skill writes two kinds of files; both default to the user's current working
+directory and can be redirected with an environment variable:
+
+- **Intermediate / working files** — the prepared `.paper_assets/` and the
+  per-skill `.<name>_scratch/` dirs (git-ignored). Set **`SKILL_SCRATCH_FOLDER`**
+  to root them elsewhere.
+- **Final results** — each curation skill copies its deliverable CSV to
+  `<pmid>/<skill>.csv` as its last step. Set **`SKILL_OUTPUT_FOLDER`** to root those
+  elsewhere (e.g. one clean results dir, separate from the noisy scratch dirs).
 
 ```bash
-export SKILL_SCRATCH_FOLDER=/tmp/pkpe-work   # all skills write under here
+export SKILL_SCRATCH_FOLDER=/tmp/pkpe-work       # intermediates
+export SKILL_OUTPUT_FOLDER=/data/pkpe-results    # final CSVs
 ```
 
-Unset (the default), the folders are created in the current directory as before.
+Unset (the default), both go in the current directory. The two are independent —
+set either, both, or neither.
 
 ## Dependencies
 Pipelines that convert HTML tables or prepare papers need BeautifulSoup:

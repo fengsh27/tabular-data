@@ -135,3 +135,14 @@ is **prose, not a table**, run the provenance script in **existence-only** mode
 - It does not extract PK parameter values (AUC/Cmax/CL).
 - Its verify → correct loop (stage 5) is **bounded** (≤2 rounds).
 - It does not score itself against a gold standard — that's `benchmark/`.
+
+## Write out the result (do this last)
+When the procedure above finishes, copy its **final deliverable CSV** (the `combined_final.csv` / `NN_final.csv` written by the last stage) to the output location, leaving the scratch copy in place:
+
+```bash
+# output base: $SKILL_OUTPUT_FOLDER if set, else the current directory
+OUT="${SKILL_OUTPUT_FOLDER:-.}"; mkdir -p "$OUT/<pmid>"
+cp <final-csv-in-scratch> "$OUT/<pmid>/pk-drug-individual.csv"
+```
+
+If `SKILL_OUTPUT_FOLDER` is unset this writes `./<pmid>/pk-drug-individual.csv` in the user's current working directory. Then tell the user the exact path you wrote.

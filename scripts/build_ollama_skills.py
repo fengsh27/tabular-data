@@ -141,10 +141,31 @@ def rewrite_paths(text: str) -> str:
     return text
 
 
+def output_note(name: str) -> str:
+    """Final section appended to each curation skill: write the deliverable CSV to
+    SKILL_OUTPUT_FOLDER. Destination filename is the skill's own name, so multiple
+    pipelines on one paper collect as `<pmid>/<skill>.csv`. Plain-concatenated (not
+    an f-string) to keep the `${...}` shell expansion literal."""
+    return (
+        "## Write out the result (do this last)\n"
+        "When the procedure above finishes, copy its **final deliverable CSV** (the "
+        "`combined_final.csv` / `NN_final.csv` written by the last stage) to the "
+        "output location, leaving the scratch copy in place:\n\n"
+        "```bash\n"
+        '# output base: $SKILL_OUTPUT_FOLDER if set, else the current directory\n'
+        'OUT="${SKILL_OUTPUT_FOLDER:-.}"; mkdir -p "$OUT/<pmid>"\n'
+        'cp <final-csv-in-scratch> "$OUT/<pmid>/' + name + '.csv"\n'
+        "```\n\n"
+        "If `SKILL_OUTPUT_FOLDER` is unset this writes `./<pmid>/" + name + ".csv` in "
+        "the user's current working directory. Then tell the user the exact path you "
+        "wrote.\n"
+    )
+
+
 def make_skill_md(name: str, desc: str, body: str) -> str:
     body = rewrite_paths(body)
     fm = f"---\nname: {name}\ndescription: {desc}\n---\n\n"
-    return fm + PATH_NOTE + "\n" + SCRATCH_NOTE + "\n" + body
+    return fm + PATH_NOTE + "\n" + SCRATCH_NOTE + "\n" + body + "\n" + output_note(name)
 
 
 def copy_pipeline(name: str, spec: dict) -> dict:
@@ -493,18 +514,24 @@ apply, then trigger each pipeline skill yourself.
   prepared `./.paper_assets/<pmid>/` files. Triggering a single skill keeps its full
   procedure in front of the model — the reliable path for the smallest models.
 
-## Where intermediate files go
-By default each skill writes its working files — the prepared `./.paper_assets/`
-and the per-skill `./.<name>_scratch/` dirs — into the user's current working
-directory (they are git-ignored). To collect them all under one place instead, set
-the **`SKILL_SCRATCH_FOLDER`** environment variable; every skill roots its
-`.paper_assets/` and `.<name>_scratch/` folders under that path:
+## Where files go (two env vars)
+Each skill writes two kinds of files; both default to the user's current working
+directory and can be redirected with an environment variable:
+
+- **Intermediate / working files** — the prepared `.paper_assets/` and the
+  per-skill `.<name>_scratch/` dirs (git-ignored). Set **`SKILL_SCRATCH_FOLDER`**
+  to root them elsewhere.
+- **Final results** — each curation skill copies its deliverable CSV to
+  `<pmid>/<skill>.csv` as its last step. Set **`SKILL_OUTPUT_FOLDER`** to root those
+  elsewhere (e.g. one clean results dir, separate from the noisy scratch dirs).
 
 ```bash
-export SKILL_SCRATCH_FOLDER=/tmp/pkpe-work   # all skills write under here
+export SKILL_SCRATCH_FOLDER=/tmp/pkpe-work       # intermediates
+export SKILL_OUTPUT_FOLDER=/data/pkpe-results    # final CSVs
 ```
 
-Unset (the default), the folders are created in the current directory as before.
+Unset (the default), both go in the current directory. The two are independent —
+set either, both, or neither.
 
 ## Dependencies
 Pipelines that convert HTML tables or prepare papers need BeautifulSoup:
