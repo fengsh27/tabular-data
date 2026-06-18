@@ -1,0 +1,16 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+Case 1,Ustekinumab,Ustekinumab,Peripheral blood,Maternal,Parturition/Labor/Delivery,34,Mother's plasma concentration,ng/ml,Not measured,N/A,N/A
+Case 2,Ustekinumab,Ustekinumab,Peripheral blood,Maternal,Parturition/Labor/Delivery,31,Mother's plasma concentration,ng/ml,Not measured,N/A,N/A
+Case 3,Ustekinumab,Ustekinumab,Peripheral blood,Maternal,Parturition/Labor/Delivery,35,Mother's plasma concentration,ng/ml,Not measured,N/A,N/A
+Case 4,Ustekinumab,Ustekinumab,Peripheral blood,Maternal,Parturition/Labor/Delivery,32,Mother's plasma concentration,ng/ml,Not measured,N/A,N/A
+Case 5,Ustekinumab,Ustekinumab,Peripheral blood,Maternal,Parturition/Labor/Delivery,35,Mother's plasma concentration,ng/ml,267.7,N/A,N/A
+Case 1,Infliximab,Infliximab,Cord blood,Maternal,Parturition/Labor/Delivery,34,Cord blood concentration,μg/ml,36.89,N/A,N/A
+Case 2,Infliximab,Infliximab,Cord blood,Maternal,Parturition/Labor/Delivery,31,Cord blood concentration,μg/ml,Not measured,N/A,N/A
+Case 3,Infliximab,Infliximab,Cord blood,Maternal,Parturition/Labor/Delivery,35,Cord blood concentration,μg/ml,Not measured,N/A,N/A
+Case 4,Infliximab,Infliximab,Cord blood,Maternal,Parturition/Labor/Delivery,32,Cord blood concentration,μg/ml,Not measured,N/A,N/A
+Case 5,Ustekinumab,Ustekinumab,Cord blood,Maternal,Parturition/Labor/Delivery,35,Cord blood concentration,ng/ml,756.5,N/A,N/A
+Case 1,Infliximab,Infliximab,Peripheral blood,Maternal,Parturition/Labor/Delivery,34,6-month drug concentration,pg/ml,0.94,N/A,N/A
+Case 2,Infliximab,Infliximab,Peripheral blood,Maternal,Parturition/Labor/Delivery,31,6-month drug concentration,pg/ml,Not detected,N/A,N/A
+Case 3,Infliximab,Infliximab,Peripheral blood,Maternal,Parturition/Labor/Delivery,35,6-month drug concentration,pg/ml,0.24,N/A,N/A
+Case 4,Infliximab,Infliximab,Peripheral blood,Maternal,Parturition/Labor/Delivery,32,6-month drug concentration,pg/ml,Not detected,N/A,N/A
+Case 5,Ustekinumab,Ustekinumab,Peripheral blood,Maternal,Parturition/Labor/Delivery,35,6-month drug concentration,pg/ml,Not detected,N/A,N/A

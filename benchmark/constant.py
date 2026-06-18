@@ -36,3 +36,4 @@ class LLModelType(Enum):
     GPT54="gpt54"
     GEMMA4="gemma4"
     QWEN35="qwen35"
+    QWEN36SKILL="qwen36-skill"

@@ -1,0 +1,92 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+1,citalopram,S-citalopram,Plasma,Maternal,Trimester 3,N/A,S-citalopram concentration,ng/mL,32,N/A,N/A
+1,citalopram,S-citalopram,Plasma,Maternal,Trimester 3,N/A,S-citalopram concentration,ng/mL,40,N/A,N/A
+1,citalopram,S-citalopram,Plasma,Maternal,Trimester 3,N/A,S-citalopram concentration,ng/mL,50,N/A,N/A
+1,citalopram,S-citalopram,Plasma,Maternal,Parturition/Labor/Delivery,N/A,S-citalopram concentration,ng/mL,15,N/A,N/A
+1,citalopram,S-citalopram,Plasma,Maternal,Postpartum,N/A,S-citalopram concentration,ng/mL,18,N/A,N/A
+1,citalopram,R-citalopram,Plasma,Maternal,Trimester 3,N/A,R-citalopram concentration,ng/mL,62,N/A,N/A
+1,citalopram,R-citalopram,Plasma,Maternal,Trimester 3,N/A,R-citalopram concentration,ng/mL,64,N/A,N/A
+1,citalopram,R-citalopram,Plasma,Maternal,Trimester 3,N/A,R-citalopram concentration,ng/mL,41,N/A,N/A
+1,citalopram,R-citalopram,Plasma,Maternal,Parturition/Labor/Delivery,N/A,R-citalopram concentration,ng/mL,24,N/A,N/A
+1,citalopram,R-citalopram,Plasma,Maternal,Postpartum,N/A,R-citalopram concentration,ng/mL,36,N/A,N/A
+2,citalopram,S-citalopram,Plasma,Maternal,Trimester 3,N/A,S-citalopram concentration,ng/mL,14,N/A,N/A
+2,citalopram,S-citalopram,Plasma,Maternal,Trimester 3,N/A,S-citalopram concentration,ng/mL,18,N/A,N/A
+2,citalopram,S-citalopram,Plasma,Maternal,Postpartum,N/A,S-citalopram concentration,ng/mL,54,N/A,N/A
+2,citalopram,S-citalopram,Plasma,Maternal,Postpartum,N/A,S-citalopram concentration,ng/mL,27,N/A,N/A
+2,citalopram,R-citalopram,Plasma,Maternal,Trimester 3,N/A,R-citalopram concentration,ng/mL,24,N/A,N/A
+2,citalopram,R-citalopram,Plasma,Maternal,Trimester 3,N/A,R-citalopram concentration,ng/mL,36,N/A,N/A
+2,citalopram,R-citalopram,Plasma,Maternal,Postpartum,N/A,R-citalopram concentration,ng/mL,101,N/A,N/A
+2,citalopram,R-citalopram,Plasma,Maternal,Postpartum,N/A,R-citalopram concentration,ng/mL,75,N/A,N/A
+3,citalopram,S-citalopram,Plasma,Maternal,Trimester 3,N/A,S-citalopram concentration,ng/mL,19,N/A,N/A
+3,citalopram,S-citalopram,Plasma,Maternal,Trimester 3,N/A,S-citalopram concentration,ng/mL,9,N/A,N/A
+3,citalopram,S-citalopram,Plasma,Maternal,Trimester 3,N/A,S-citalopram concentration,ng/mL,5,N/A,N/A
+3,citalopram,R-citalopram,Plasma,Maternal,Trimester 3,N/A,R-citalopram concentration,ng/mL,41,N/A,N/A
+3,citalopram,R-citalopram,Plasma,Maternal,Trimester 3,N/A,R-citalopram concentration,ng/mL,22,N/A,N/A
+3,citalopram,R-citalopram,Plasma,Maternal,Trimester 3,N/A,R-citalopram concentration,ng/mL,14,N/A,N/A
+4,escitalopram,S-citalopram,Plasma,Maternal,Trimester 3,N/A,S-citalopram concentration,ng/mL,17,N/A,N/A
+4,escitalopram,S-citalopram,Plasma,Maternal,Trimester 3,N/A,S-citalopram concentration,ng/mL,10,N/A,N/A
+4,escitalopram,S-citalopram,Plasma,Maternal,Trimester 3,N/A,S-citalopram concentration,ng/mL,13,N/A,N/A
+4,escitalopram,S-citalopram,Plasma,Maternal,Parturition/Labor/Delivery,N/A,S-citalopram concentration,ng/mL,14,N/A,N/A
+4,escitalopram,S-citalopram,Plasma,Maternal,Postpartum,N/A,S-citalopram concentration,ng/mL,24,N/A,N/A
+5,escitalopram,S-citalopram,Plasma,Maternal,Trimester 3,N/A,S-citalopram concentration,ng/mL,58,N/A,N/A
+5,escitalopram,S-citalopram,Plasma,Maternal,Trimester 3,N/A,S-citalopram concentration,ng/mL,70,N/A,N/A
+5,escitalopram,S-citalopram,Plasma,Maternal,Trimester 3,N/A,S-citalopram concentration,ng/mL,67,N/A,N/A
+5,escitalopram,S-citalopram,Plasma,Maternal,Postpartum,N/A,S-citalopram concentration,ng/mL,95,N/A,N/A
+5,escitalopram,S-citalopram,Plasma,Maternal,Postpartum,N/A,S-citalopram concentration,ng/mL,63,N/A,N/A
+6,sertraline,S-sertraline,Plasma,Maternal,Trimester 3,N/A,S-sertraline concentration,ng/mL,27,N/A,N/A
+6,sertraline,S-sertraline,Plasma,Maternal,Parturition/Labor/Delivery,N/A,S-sertraline concentration,ng/mL,11,N/A,N/A
+6,sertraline,S-sertraline,Plasma,Maternal,Postpartum,N/A,S-sertraline concentration,ng/mL,27,N/A,N/A
+6,sertraline,S-sertraline,Plasma,Maternal,Postpartum,N/A,S-sertraline concentration,ng/mL,21,N/A,N/A
+6,sertraline,N-desmethylsertraline,Plasma,Maternal,Trimester 3,N/A,N-desmethylsertraline concentration,ng/mL,44,N/A,N/A
+6,sertraline,N-desmethylsertraline,Plasma,Maternal,Parturition/Labor/Delivery,N/A,N-desmethylsertraline concentration,ng/mL,26,N/A,N/A
+6,sertraline,N-desmethylsertraline,Plasma,Maternal,Postpartum,N/A,N-desmethylsertraline concentration,ng/mL,52,N/A,N/A
+6,sertraline,N-desmethylsertraline,Plasma,Maternal,Postpartum,N/A,N-desmethylsertraline concentration,ng/mL,50,N/A,N/A
+7,sertraline,S-sertraline,Plasma,Maternal,Trimester 3,N/A,S-sertraline concentration,ng/mL,10,N/A,N/A
+7,sertraline,S-sertraline,Plasma,Maternal,Trimester 3,N/A,S-sertraline concentration,ng/mL,20,N/A,N/A
+7,sertraline,S-sertraline,Plasma,Maternal,Trimester 3,N/A,S-sertraline concentration,ng/mL,16,N/A,N/A
+7,sertraline,S-sertraline,Plasma,Maternal,Parturition/Labor/Delivery,N/A,S-sertraline concentration,ng/mL,7,N/A,N/A
+7,sertraline,S-sertraline,Plasma,Maternal,Postpartum,N/A,S-sertraline concentration,ng/mL,22,N/A,N/A
+7,sertraline,S-sertraline,Plasma,Maternal,Postpartum,N/A,S-sertraline concentration,ng/mL,15,N/A,N/A
+7,sertraline,N-desmethylsertraline,Plasma,Maternal,Trimester 3,N/A,N-desmethylsertraline concentration,ng/mL,18,N/A,N/A
+7,sertraline,N-desmethylsertraline,Plasma,Maternal,Trimester 3,N/A,N-desmethylsertraline concentration,ng/mL,40,N/A,N/A
+7,sertraline,N-desmethylsertraline,Plasma,Maternal,Trimester 3,N/A,N-desmethylsertraline concentration,ng/mL,66,N/A,N/A
+7,sertraline,N-desmethylsertraline,Plasma,Maternal,Parturition/Labor/Delivery,N/A,N-desmethylsertraline concentration,ng/mL,32,N/A,N/A
+7,sertraline,N-desmethylsertraline,Plasma,Maternal,Postpartum,N/A,N-desmethylsertraline concentration,ng/mL,41,N/A,N/A
+7,sertraline,N-desmethylsertraline,Plasma,Maternal,Postpartum,N/A,N-desmethylsertraline concentration,ng/mL,29,N/A,N/A
+8,sertraline,S-sertraline,Plasma,Maternal,Trimester 3,N/A,S-sertraline concentration,ng/mL,4,N/A,N/A
+8,sertraline,S-sertraline,Plasma,Maternal,Trimester 3,N/A,S-sertraline concentration,ng/mL,10,N/A,N/A
+8,sertraline,S-sertraline,Plasma,Maternal,Trimester 3,N/A,S-sertraline concentration,ng/mL,39,N/A,N/A
+8,sertraline,S-sertraline,Plasma,Maternal,Postpartum,N/A,S-sertraline concentration,ng/mL,21,N/A,N/A
+8,sertraline,N-desmethylsertraline,Plasma,Maternal,Trimester 3,N/A,N-desmethylsertraline concentration,ng/mL,16,N/A,N/A
+8,sertraline,N-desmethylsertraline,Plasma,Maternal,Trimester 3,N/A,N-desmethylsertraline concentration,ng/mL,17,N/A,N/A
+8,sertraline,N-desmethylsertraline,Plasma,Maternal,Trimester 3,N/A,N-desmethylsertraline concentration,ng/mL,74,N/A,N/A
+8,sertraline,N-desmethylsertraline,Plasma,Maternal,Postpartum,N/A,N-desmethylsertraline concentration,ng/mL,59,N/A,N/A
+8,sertraline,N-desmethylsertraline,Plasma,Maternal,Postpartum,N/A,N-desmethylsertraline concentration,ng/mL,29,N/A,N/A
+9,sertraline,S-sertraline,Plasma,Maternal,Trimester 3,N/A,S-sertraline concentration,ng/mL,17,N/A,N/A
+9,sertraline,S-sertraline,Plasma,Maternal,Trimester 3,N/A,S-sertraline concentration,ng/mL,43,N/A,N/A
+9,sertraline,S-sertraline,Plasma,Maternal,Parturition/Labor/Delivery,N/A,S-sertraline concentration,ng/mL,32,N/A,N/A
+9,sertraline,S-sertraline,Plasma,Maternal,Postpartum,N/A,S-sertraline concentration,ng/mL,39,N/A,N/A
+9,sertraline,N-desmethylsertraline,Plasma,Maternal,Trimester 3,N/A,N-desmethylsertraline concentration,ng/mL,141,N/A,N/A
+9,sertraline,N-desmethylsertraline,Plasma,Maternal,Trimester 3,N/A,N-desmethylsertraline concentration,ng/mL,147,N/A,N/A
+9,sertraline,N-desmethylsertraline,Plasma,Maternal,Parturition/Labor/Delivery,N/A,N-desmethylsertraline concentration,ng/mL,120,N/A,N/A
+9,sertraline,N-desmethylsertraline,Plasma,Maternal,Postpartum,N/A,N-desmethylsertraline concentration,ng/mL,149,N/A,N/A
+10,sertraline,S-sertraline,Plasma,Maternal,Trimester 3,N/A,S-sertraline concentration,ng/mL,93,N/A,N/A
+10,sertraline,S-sertraline,Plasma,Maternal,Trimester 3,N/A,S-sertraline concentration,ng/mL,45,N/A,N/A
+10,sertraline,S-sertraline,Plasma,Maternal,Parturition/Labor/Delivery,N/A,S-sertraline concentration,ng/mL,28,N/A,N/A
+10,sertraline,S-sertraline,Plasma,Maternal,Postpartum,N/A,S-sertraline concentration,ng/mL,62,N/A,N/A
+10,sertraline,N-desmethylsertraline,Plasma,Maternal,Trimester 3,N/A,N-desmethylsertraline concentration,ng/mL,72,N/A,N/A
+10,sertraline,N-desmethylsertraline,Plasma,Maternal,Trimester 3,N/A,N-desmethylsertraline concentration,ng/mL,92,N/A,N/A
+10,sertraline,N-desmethylsertraline,Plasma,Maternal,Parturition/Labor/Delivery,N/A,N-desmethylsertraline concentration,ng/mL,59,N/A,N/A
+10,sertraline,N-desmethylsertraline,Plasma,Maternal,Postpartum,N/A,N-desmethylsertraline concentration,ng/mL,74,N/A,N/A
+11,sertraline,S-sertraline,Plasma,Maternal,Trimester 3,N/A,S-sertraline concentration,ng/mL,32,N/A,N/A
+11,sertraline,S-sertraline,Plasma,Maternal,Trimester 3,N/A,S-sertraline concentration,ng/mL,18,N/A,N/A
+11,sertraline,S-sertraline,Plasma,Maternal,Trimester 3,N/A,S-sertraline concentration,ng/mL,23,N/A,N/A
+11,sertraline,S-sertraline,Plasma,Maternal,Parturition/Labor/Delivery,N/A,S-sertraline concentration,ng/mL,32,N/A,N/A
+11,sertraline,S-sertraline,Plasma,Maternal,Postpartum,N/A,S-sertraline concentration,ng/mL,83,N/A,N/A
+11,sertraline,S-sertraline,Plasma,Maternal,Postpartum,N/A,S-sertraline concentration,ng/mL,99,N/A,N/A
+11,sertraline,N-desmethylsertraline,Plasma,Maternal,Trimester 3,N/A,N-desmethylsertraline concentration,ng/mL,52,N/A,N/A
+11,sertraline,N-desmethylsertraline,Plasma,Maternal,Trimester 3,N/A,N-desmethylsertraline concentration,ng/mL,77,N/A,N/A
+11,sertraline,N-desmethylsertraline,Plasma,Maternal,Trimester 3,N/A,N-desmethylsertraline concentration,ng/mL,73,N/A,N/A
+11,sertraline,N-desmethylsertraline,Plasma,Maternal,Parturition/Labor/Delivery,N/A,N-desmethylsertraline concentration,ng/mL,97,N/A,N/A
+11,sertraline,N-desmethylsertraline,Plasma,Maternal,Postpartum,N/A,N-desmethylsertraline concentration,ng/mL,128,N/A,N/A
+11,sertraline,N-desmethylsertraline,Plasma,Maternal,Postpartum,N/A,N-desmethylsertraline concentration,ng/mL,183,N/A,N/A

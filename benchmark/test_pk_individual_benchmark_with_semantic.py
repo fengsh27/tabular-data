@@ -19,7 +19,7 @@ load_dotenv()
 logger = logging.getLogger(__name__)
 
 baseline = os.environ.get("BASELINE", BASELINE)
-target = os.environ.get("TARGET", "2025-10-25-mas")
+target = os.environ.get("TARGET", "2026-6-12")
 baseline_dir = os.path.join("./benchmark/data/pk-individual", baseline)
 target_dir = os.path.join("./benchmark/data/pk-individual", target)
 score_mode = os.environ.get("SCORE_MODE", "combined")
@@ -32,6 +32,7 @@ MODELS = [
     LLModelType.GPT54,
     LLModelType.GEMMA4,
     LLModelType.QWEN35,
+    LLModelType.QWEN36SKILL,
 ]
 
 

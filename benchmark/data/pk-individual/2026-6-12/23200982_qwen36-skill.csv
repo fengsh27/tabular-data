@@ -1,0 +1,106 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+1,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Mom),μg/ml,40 (6 wks),14,Day
+1,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Cord),μg/ml,--,14,Day
+1,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Infant),μg/ml,39.5(6 wks),14,Day
+2,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Mom),μg/ml,15.1,30,Day
+2,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Cord),μg/ml,--,30,Day
+2,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Infant),μg/ml,25.3,30,Day
+3,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Mom),μg/ml,1.4,2,Day
+3,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Cord),μg/ml,2.0,2,Day
+3,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Infant),μg/ml,2.9(2 wks),2,Day
+4,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Mom),μg/ml,19.2,14,Day
+4,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Cord),μg/ml,26.5,14,Day
+4,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Infant),μg/ml,23.6,14,Day
+5,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Mom),μg/ml,3.8,91,Day
+5,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Cord),μg/ml,3.3,91,Day
+5,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Infant),μg/ml,4.2,91,Day
+6,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Mom),μg/ml,4.8,15,Day
+6,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Cord),μg/ml,8.8,15,Day
+6,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Infant),μg/ml,8.7,15,Day
+7,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Mom),μg/ml,14.5,55,Day
+7,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Cord),μg/ml,20.5,55,Day
+7,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Infant),μg/ml,28.2,55,Day
+8,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Mom),μg/ml,16.5,46,Day
+8,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Cord),μg/ml,26.5,46,Day
+8,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Infant),μg/ml,27.5,46,Day
+9,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Mom),μg/ml,2.2,35,Day
+9,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Cord),μg/ml,8.4,35,Day
+9,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Infant),μg/ml,10.6,35,Day
+10,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Mom),μg/ml,4.1,77,Day
+10,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Cord),μg/ml,13.6,77,Day
+10,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Infant),μg/ml,4.7(4 wks),77,Day
+11,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Mom),μg/ml,5.1,74,Day
+11,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Cord),μg/ml,20.4,74,Day
+11,Infliximab,Infliximab,Serum,Maternal,Delivery,N/A,Infliximab serum concentration (Infant),μg/ml,8.4(4 wks),74,Day
+1,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Mom),μg/ml,6.05,7,Day
+1,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Cord),μg/ml,9.29,7,Day
+1,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Infant),μg/ml,6.17,7,Day
+2,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Mom),μg/ml,1.84,56,Day
+2,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Cord),μg/ml,5.39,56,Day
+2,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Infant),μg/ml,6.01,56,Day
+3,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Mom),μg/ml,3.84,7,Day
+3,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Cord),μg/ml,4.57,7,Day
+3,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Infant),μg/ml,--,7,Day
+4,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Mom),μg/ml,0,42,Day
+4,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Cord),μg/ml,0.16,42,Day
+4,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Infant),μg/ml,--,42,Day
+5,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Mom),μg/ml,2.2,35,Day
+5,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Cord),μg/ml,4.18,35,Day
+5,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Infant),μg/ml,4.28,35,Day
+6,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Mom),μg/ml,3.21,42,Day
+6,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Cord),μg/ml,4.74,42,Day
+6,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Infant),μg/ml,4.87,42,Day
+7,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Mom),μg/ml,3.36,42,Day
+7,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Cord),μg/ml,8.94,42,Day
+7,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Infant),μg/ml,8.09,42,Day
+8,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Mom),μg/ml,16.1,1,Day
+8,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Cord),μg/ml,19.7,1,Day
+8,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Infant),μg/ml,17.7,1,Day
+9,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Mom),μg/ml,2.24,49,Day
+9,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Cord),μg/ml,4.95,49,Day
+9,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Infant),μg/ml,4.64,49,Day
+10,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Mom),μg/ml,8.48,7,Day
+10,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Cord),μg/ml,8.29,7,Day
+10,Adalimumab,Adalimumab,Serum,Maternal,Delivery,N/A,Adalimumab serum concentration (Infant),μg/ml,9.17,7,Day
+01,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Mom),μg/ml,18.83,14,Day
+01,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Cord),μg/ml,1.65,14,Day
+01,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Infant),μg/ml,-,14,Day
+01,Certolizumab pegol,PEG,Serum,Maternal,Delivery,N/A,PEG serum concentration (Mom),μg/ml,33.4,14,Day
+02,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Mom),μg/ml,59.57,7,Day
+02,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Cord),μg/ml,0.94,7,Day
+02,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Infant),μg/ml,1.02,7,Day
+02,Certolizumab pegol,PEG,Serum,Maternal,Delivery,N/A,PEG serum concentration (Mom),μg/ml,51.3,7,Day
+03,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Mom),μg/ml,4.87,28,Day
+03,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Cord),μg/ml,1.19,28,Day
+03,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Infant),μg/ml,1.22,28,Day
+04,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Mom),μg/ml,20.13,17,Day
+04,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Cord),μg/ml,0.57,17,Day
+04,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Infant),μg/ml,0.44,17,Day
+04,Certolizumab pegol,PEG,Serum,Maternal,Delivery,N/A,PEG serum concentration (Mom),μg/ml,34.7,17,Day
+05,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Mom),μg/ml,16.49,21,Day
+05,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Cord),μg/ml,<0.41,21,Day
+05,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Infant),μg/ml,<0.41,21,Day
+05,Certolizumab pegol,PEG,Serum,Maternal,Delivery,N/A,PEG serum concentration (Mom),μg/ml,27.7,21,Day
+06,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Mom),μg/ml,34.65,24,Day
+06,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Cord),μg/ml,1.66,24,Day
+06,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Infant),μg/ml,1.58,24,Day
+06,Certolizumab pegol,PEG,Serum,Maternal,Delivery,N/A,PEG serum concentration (Mom),μg/ml,34.4,24,Day
+07,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Mom),μg/ml,1.87,28,Day
+07,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Cord),μg/ml,<0.41,28,Day
+07,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Infant),μg/ml,<0.41,28,Day
+08-A,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Mom),μg/ml,6.32,42,Day
+08-A,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Cord),μg/ml,<0.41,42,Day
+08-A,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Infant),μg/ml,0.58,42,Day
+08-A,Certolizumab pegol,PEG,Serum,Maternal,Delivery,N/A,PEG serum concentration (Mom),μg/ml,11.1,42,Day
+08-B,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Cord),μg/ml,<0.41,N/A,N/A
+08-B,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Infant),μg/ml,<0.41,N/A,N/A
+09-A,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Mom),μg/ml,42.7,6,Day
+09-A,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Cord),μg/ml,1.28,6,Day
+09-A,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Infant),μg/ml,1.34,6,Day
+09-A,Certolizumab pegol,PEG,Serum,Maternal,Delivery,N/A,PEG serum concentration (Mom),μg/ml,62.1,6,Day
+09-B,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Cord),μg/ml,1.16,N/A,N/A
+09-B,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Infant),μg/ml,1.18,N/A,N/A
+10,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Mom),μg/ml,37.83,5,Day
+10,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Cord),μg/ml,0.55,5,Day
+10,Certolizumab pegol,Certolizumab pegol,Serum,Maternal,Delivery,N/A,Certolizumab pegol serum concentration (Infant),μg/ml,0.6,5,Day
+10,Certolizumab pegol,PEG,Serum,Maternal,Delivery,N/A,PEG serum concentration (Mom),μg/ml,74.9,5,Day
