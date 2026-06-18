@@ -30,6 +30,19 @@ apply, then trigger each pipeline skill yourself.
   prepared `./.paper_assets/<pmid>/` files. Triggering a single skill keeps its full
   procedure in front of the model — the reliable path for the smallest models.
 
+## Where intermediate files go
+By default each skill writes its working files — the prepared `./.paper_assets/`
+and the per-skill `./.<name>_scratch/` dirs — into the user's current working
+directory (they are git-ignored). To collect them all under one place instead, set
+the **`SKILL_SCRATCH_FOLDER`** environment variable; every skill roots its
+`.paper_assets/` and `.<name>_scratch/` folders under that path:
+
+```bash
+export SKILL_SCRATCH_FOLDER=/tmp/pkpe-work   # all skills write under here
+```
+
+Unset (the default), the folders are created in the current directory as before.
+
 ## Dependencies
 Pipelines that convert HTML tables or prepare papers need BeautifulSoup:
 `pip install -r <skill>/scripts/requirements.txt` (provides `beautifulsoup4`).

@@ -108,6 +108,24 @@ PATH_NOTE = (
     "an installed skill, resolve these paths under this skill's folder.\n"
 )
 
+# Injected into every generated skill. Lets the user redirect all of a skill's
+# working files (prepared inputs + per-run scratch) under one configurable base via
+# the SKILL_SCRATCH_FOLDER env var, instead of scattering dot-dirs in the project
+# root. Phrased generically (folder-agnostic) so it applies to all 12 skills.
+SCRATCH_NOTE = (
+    "> **Working-directory base (read this first).** Every `./.…` path this skill "
+    "uses below — the prepared inputs in `./.paper_assets/<pmid>/` and any "
+    "`./.…_scratch/<pmid>/` intermediates this skill writes — is relative to one "
+    "base directory. Resolve it **once, before any file operation**: if the "
+    "environment variable `SKILL_SCRATCH_FOLDER` is set (run "
+    "`echo \"$SKILL_SCRATCH_FOLDER\"` to check), that is the base — e.g. write to "
+    "`\"$SKILL_SCRATCH_FOLDER\"/.<name>_scratch/<pmid>/` and read from "
+    "`\"$SKILL_SCRATCH_FOLDER\"/.paper_assets/<pmid>/`. Otherwise the base is the "
+    "user's current working directory (use the paths exactly as written below). "
+    "Create directories with `mkdir -p` and keep the same base for every read and "
+    "write.\n"
+)
+
 
 def rewrite_paths(text: str) -> str:
     """Rewrite shared curation-common/ references to this skill's local paths."""
@@ -126,7 +144,7 @@ def rewrite_paths(text: str) -> str:
 def make_skill_md(name: str, desc: str, body: str) -> str:
     body = rewrite_paths(body)
     fm = f"---\nname: {name}\ndescription: {desc}\n---\n\n"
-    return fm + PATH_NOTE + "\n" + body
+    return fm + PATH_NOTE + "\n" + SCRATCH_NOTE + "\n" + body
 
 
 def copy_pipeline(name: str, spec: dict) -> dict:
@@ -311,6 +329,7 @@ apply to the paper. It **does not curate**: hand the selection to the matching
 pipeline skills (or trigger them yourself), one at a time.
 
 {PATH_NOTE}
+{SCRATCH_NOTE}
 ## Prerequisite
 Run **pk-pe-prepare** first to produce `./.paper_assets/<pmid>/` (`paper_text.md`,
 `abstract.md`, `table_<n>.md` / `table_<n>.html`, `manifest.json`). If the user
@@ -338,9 +357,10 @@ working dir (never inside the skill folder; it is git-ignored): `identify.json`,
 4. **Deterministic dispatch map** — never hand-write the skill names; run the
    byte-stable table:
    ```bash
+   OUT="${{SKILL_SCRATCH_FOLDER:-.}}"; mkdir -p "$OUT/.pk_pe_route_scratch/<pmid>"
    python scripts/pipeline_skill_map.py \\
        --pmid <pmid> --paper-type <PK|PE|Both> <pipeline_tools from design.json> \\
-       > ./.pk_pe_route_scratch/<pmid>/selected_pipelines.json
+       > "$OUT/.pk_pe_route_scratch/<pmid>/selected_pipelines.json"
    ```
 
 ## Candidate pipelines
@@ -395,11 +415,14 @@ input layout every curation skill expects. Format is auto-detected from the file
 extension and root element.
 
 {PATH_NOTE}
+{SCRATCH_NOTE}
 ## Run
 ```bash
-python scripts/prepare_paper.py <paper.html|paper.xml> --out ./.paper_assets
+# output base: $SKILL_SCRATCH_FOLDER if set, else the current directory
+OUT="${{SKILL_SCRATCH_FOLDER:-.}}"
+python scripts/prepare_paper.py <paper.html|paper.xml> --out "$OUT/.paper_assets"
 # a directory of .html/.xml files works too:
-python scripts/prepare_paper.py <dir> --out ./.paper_assets
+python scripts/prepare_paper.py <dir> --out "$OUT/.paper_assets"
 python scripts/prepare_paper.py <paper> --dry-run     # report only, write nothing
 ```
 Needs `beautifulsoup4` **only for HTML** input (`pip install -r scripts/requirements.txt`);
@@ -469,6 +492,19 @@ apply, then trigger each pipeline skill yourself.
   e.g. "use pk-individual-curation to curate paper <pmid>", pointing it at the
   prepared `./.paper_assets/<pmid>/` files. Triggering a single skill keeps its full
   procedure in front of the model — the reliable path for the smallest models.
+
+## Where intermediate files go
+By default each skill writes its working files — the prepared `./.paper_assets/`
+and the per-skill `./.<name>_scratch/` dirs — into the user's current working
+directory (they are git-ignored). To collect them all under one place instead, set
+the **`SKILL_SCRATCH_FOLDER`** environment variable; every skill roots its
+`.paper_assets/` and `.<name>_scratch/` folders under that path:
+
+```bash
+export SKILL_SCRATCH_FOLDER=/tmp/pkpe-work   # all skills write under here
+```
+
+Unset (the default), the folders are created in the current directory as before.
 
 ## Dependencies
 Pipelines that convert HTML tables or prepare papers need BeautifulSoup:

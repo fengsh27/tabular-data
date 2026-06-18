@@ -13,6 +13,8 @@ pipeline skills (or trigger them yourself), one at a time.
 
 > **Self-contained skill.** Every `scripts/…` path and every resource file (`verify_and_correct.md`, `refine_population.md`, …) named below lives in **this skill's own directory**. This skill shares nothing with other skills — when run as an installed skill, resolve these paths under this skill's folder.
 
+> **Working-directory base (read this first).** Every `./.…` path this skill uses below — the prepared inputs in `./.paper_assets/<pmid>/` and any `./.…_scratch/<pmid>/` intermediates this skill writes — is relative to one base directory. Resolve it **once, before any file operation**: if the environment variable `SKILL_SCRATCH_FOLDER` is set (run `echo "$SKILL_SCRATCH_FOLDER"` to check), that is the base — e.g. write to `"$SKILL_SCRATCH_FOLDER"/.<name>_scratch/<pmid>/` and read from `"$SKILL_SCRATCH_FOLDER"/.paper_assets/<pmid>/`. Otherwise the base is the user's current working directory (use the paths exactly as written below). Create directories with `mkdir -p` and keep the same base for every read and write.
+
 ## Prerequisite
 Run **pk-pe-prepare** first to produce `./.paper_assets/<pmid>/` (`paper_text.md`,
 `abstract.md`, `table_<n>.md` / `table_<n>.html`, `manifest.json`). If the user
@@ -40,9 +42,10 @@ working dir (never inside the skill folder; it is git-ignored): `identify.json`,
 4. **Deterministic dispatch map** — never hand-write the skill names; run the
    byte-stable table:
    ```bash
+   OUT="${SKILL_SCRATCH_FOLDER:-.}"; mkdir -p "$OUT/.pk_pe_route_scratch/<pmid>"
    python scripts/pipeline_skill_map.py \
        --pmid <pmid> --paper-type <PK|PE|Both> <pipeline_tools from design.json> \
-       > ./.pk_pe_route_scratch/<pmid>/selected_pipelines.json
+       > "$OUT/.pk_pe_route_scratch/<pmid>/selected_pipelines.json"
    ```
 
 ## Candidate pipelines

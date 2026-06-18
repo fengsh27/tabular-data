@@ -12,11 +12,15 @@ extension and root element.
 
 > **Self-contained skill.** Every `scripts/…` path and every resource file (`verify_and_correct.md`, `refine_population.md`, …) named below lives in **this skill's own directory**. This skill shares nothing with other skills — when run as an installed skill, resolve these paths under this skill's folder.
 
+> **Working-directory base (read this first).** Every `./.…` path this skill uses below — the prepared inputs in `./.paper_assets/<pmid>/` and any `./.…_scratch/<pmid>/` intermediates this skill writes — is relative to one base directory. Resolve it **once, before any file operation**: if the environment variable `SKILL_SCRATCH_FOLDER` is set (run `echo "$SKILL_SCRATCH_FOLDER"` to check), that is the base — e.g. write to `"$SKILL_SCRATCH_FOLDER"/.<name>_scratch/<pmid>/` and read from `"$SKILL_SCRATCH_FOLDER"/.paper_assets/<pmid>/`. Otherwise the base is the user's current working directory (use the paths exactly as written below). Create directories with `mkdir -p` and keep the same base for every read and write.
+
 ## Run
 ```bash
-python scripts/prepare_paper.py <paper.html|paper.xml> --out ./.paper_assets
+# output base: $SKILL_SCRATCH_FOLDER if set, else the current directory
+OUT="${SKILL_SCRATCH_FOLDER:-.}"
+python scripts/prepare_paper.py <paper.html|paper.xml> --out "$OUT/.paper_assets"
 # a directory of .html/.xml files works too:
-python scripts/prepare_paper.py <dir> --out ./.paper_assets
+python scripts/prepare_paper.py <dir> --out "$OUT/.paper_assets"
 python scripts/prepare_paper.py <paper> --dry-run     # report only, write nothing
 ```
 Needs `beautifulsoup4` **only for HTML** input (`pip install -r scripts/requirements.txt`);
