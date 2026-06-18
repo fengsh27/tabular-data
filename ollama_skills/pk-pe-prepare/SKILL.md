@@ -1,6 +1,6 @@
 ---
 name: pk-pe-prepare
-description: Prepare a PK/PE paper for curation: convert a publisher HTML file or a JATS/PMC XML file into the canonical input layout (paper_text.md with references stripped and tables replaced by [Table N] markers, abstract.md, per-table table_<n>.md / table_<n>.html, and manifest.json). Use this first, before the curation skills, when the user has a raw paper file (.html or .xml). Runs standalone or as Stage A of the pk-pe-curation router.
+description: Prepare a PK/PE paper for curation: convert a publisher HTML file or a JATS/PMC XML file into the canonical input layout (paper_text.md with references stripped and tables replaced by [Table N] markers, abstract.md, per-table table_<n>.md / table_<n>.html, and manifest.json). Use this first, before the curation skills, when the user has a raw paper file (.html or .xml).
 ---
 
 # PK/PE Prepare
@@ -34,8 +34,7 @@ the XML path is Python-3 standard library only.
 Tables are numbered by order of appearance. `<pmid>` is the input file's base name.
 
 ## Hand off
-Point the curation skills (or the `pk-pe-curation` router) at the produced
-`<pmid>/` directory:
+Point the curation skills at the produced `<pmid>/` directory:
 - **table** skills (`pk-summary-curation`, `pk-individual-curation`,
   `pe-study-outcome`) → `table_<n>.html`;
 - **full-text** skills (`pk-drug-*`, `pk-specimen-*`, `pk-population-*`,

@@ -12,19 +12,20 @@ Copy every folder in here into your project's `.claude/skills/`:
 cp -R ollama_skills/* <your-project>/.claude/skills/
 ```
 
-You then have 12 skills: the `pk-pe-curation` router, the `pk-pe-prepare` front
-door, plus 10 standalone curation skills.
+You then have 11 skills: the `pk-pe-prepare` front door, plus 10 standalone
+curation skills. There is no router skill — routing/orchestration is the Claude
+bundle's job and is too much for small open models; here you prepare the paper,
+then trigger the right pipeline skill yourself.
 
 ## Use
 - **Prepare first (any path):** trigger `pk-pe-prepare` (or run its
   `scripts/prepare_paper.py`) on a raw `.html` **or** `.xml` paper to produce
-  `./.paper_assets/<pmid>/`. The router runs this automatically as Stage A.
-- **Guided (router):** ask to "curate PK/PE data from paper <pmid>" — the
-  `pk-pe-curation` router prepares + routes, then triggers the matching pipeline
-  skills one at a time.
-- **Direct (recommended for the smallest models):** trigger a single pipeline
-  skill, e.g. "use pk-individual-curation to curate paper <pmid>", once you know
-  which table type you have. This keeps the full procedure in front of the model.
+  `./.paper_assets/<pmid>/`.
+- **Then curate (one pipeline at a time):** once you know which data the paper
+  has, trigger the matching pipeline skill, e.g. "use pk-individual-curation to
+  curate paper <pmid>", pointing it at the prepared `./.paper_assets/<pmid>/`
+  files. Triggering a single skill keeps its full procedure in front of the
+  model — the reliable path for the smallest models.
 
 ## Dependencies
 Pipelines that convert HTML tables or prepare papers need BeautifulSoup:

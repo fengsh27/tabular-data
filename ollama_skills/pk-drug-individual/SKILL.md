@@ -1,6 +1,6 @@
 ---
 name: pk-drug-individual
-description: Extract per-patient drug dosing regimens from a PK paper's full text into an 11-column dataset. For cohort-level dosing use pk-drug-summary. Runs standalone or dispatched by the pk-pe-curation router.
+description: Extract per-patient drug dosing regimens from a PK paper's full text into an 11-column dataset. For cohort-level dosing use pk-drug-summary.
 ---
 
 > **Self-contained skill.** Every `scripts/…` path and every resource file (`verify_and_correct.md`, `refine_population.md`, …) named below lives in **this skill's own directory**. This skill shares nothing with other skills — when run as an installed skill, resolve these paths under this skill's folder.
