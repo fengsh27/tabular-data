@@ -237,9 +237,9 @@ def prepare_single_pipeline_dataset_for_benchmark(
     """
     del benchmark_type  # retained for call-site symmetry
     dataset: dict = {}
-    for pmid, fn, _ in walk_benchmark_data_directory(baseline_dir):
+    for pmid, fn, _, _ in walk_benchmark_data_directory(baseline_dir):
         dataset[pmid] = {"baseline": fn}
-    for pmid, fn, model in walk_benchmark_data_directory(target_dir):
+    for pmid, fn, model, _ in walk_benchmark_data_directory(target_dir):
         if pmid not in dataset:
             logger.error(f"no baseline for pmid {pmid}")
             continue
