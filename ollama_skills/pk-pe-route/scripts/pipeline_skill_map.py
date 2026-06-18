@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Deterministic map from a pipeline label to the ollama curation skill to trigger.
 
-The identify-pipelines skill's design stage emits a list of pipeline labels (the
+The pk-pe-route skill's design stage emits a list of pipeline labels (the
 values of `extractor.constants.PipelineTypeEnum`). Turning those into the skills to
 trigger must NOT be left to the model: the naming is irregular (`pk_summary` ->
 `pk-summary-curation`, but `pk_drug_summary` -> `pk-drug-summary`), so a string

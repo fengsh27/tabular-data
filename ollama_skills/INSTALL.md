@@ -13,7 +13,7 @@ cp -R ollama_skills/* <your-project>/.claude/skills/
 ```
 
 You then have 12 skills: the `pk-pe-prepare` front door, the
-`pk-pe-identify-pipelines` selector, plus 10 standalone curation skills. There is
+`pk-pe-route` selector, plus 10 standalone curation skills. There is
 no router skill — full orchestration is the Claude bundle's job and is too much for
 small open models; here you prepare the paper, optionally ask which pipelines
 apply, then trigger each pipeline skill yourself.
@@ -22,7 +22,7 @@ apply, then trigger each pipeline skill yourself.
 - **Prepare first (any path):** trigger `pk-pe-prepare` (or run its
   `scripts/prepare_paper.py`) on a raw `.html` **or** `.xml` paper to produce
   `./.paper_assets/<pmid>/`.
-- **Pick pipelines (optional):** trigger `pk-pe-identify-pipelines` to classify the
+- **Pick pipelines (optional):** trigger `pk-pe-route` to classify the
   paper (PK / PE / Both / Neither) and get the list of applicable pipeline skills in
   `selected_pipelines.json`. Returns an empty list for non-PK/PE papers.
 - **Then curate (one pipeline at a time):** trigger each selected pipeline skill,

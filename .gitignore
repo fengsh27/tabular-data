@@ -176,7 +176,6 @@ system_tests/data/*.md
 # PK curation skill scratch state (per-run intermediate tables)
 .paper_assets/
 .pk_pe_route_scratch/
-.pk_pe_identify_scratch/
 .pk_curation_scratch/
 .pk_individual_scratch/
 .pk_drug_summary_scratch/

@@ -1,9 +1,9 @@
 ---
-name: pk-pe-identify-pipelines
+name: pk-pe-route
 description: Decide which PK/PE curation pipelines apply to a paper. First classifies the paper as PK / PE / Both / Neither from its title + abstract, then selects the matching pipelines — pk_* for a PK paper, pe_* for a PE paper, both for Both, and none for Neither — and writes the selected pipeline skills to trigger next. Use after pk-pe-prepare, when the user asks which pipelines to run on a paper. Does NOT curate; returns an empty selection for non-PK/PE papers.
 ---
 
-# PK/PE Identify Pipelines
+# PK/PE Route
 
 The **selector** of the curation suite. It ports two legacy steps —
 `PKPEIdentificationStep` (PK / PE / Both / Neither) and `PKPEDesignStep`
@@ -19,7 +19,7 @@ Run **pk-pe-prepare** first to produce `./.paper_assets/<pmid>/` (`paper_text.md
 pasted raw title / abstract / full text, you can work from that directly.
 
 ## Scratch directory
-Write intermediates to `./.pk_pe_identify_scratch/<pmid>/` in the user's project /
+Write intermediates to `./.pk_pe_route_scratch/<pmid>/` in the user's project /
 working dir (never inside the skill folder; it is git-ignored): `identify.json`,
 `design.json`, and the final `selected_pipelines.json`.
 
@@ -42,7 +42,7 @@ working dir (never inside the skill folder; it is git-ignored): `identify.json`,
    ```bash
    python scripts/pipeline_skill_map.py \
        --pmid <pmid> --paper-type <PK|PE|Both> <pipeline_tools from design.json> \
-       > ./.pk_pe_identify_scratch/<pmid>/selected_pipelines.json
+       > ./.pk_pe_route_scratch/<pmid>/selected_pipelines.json
    ```
 
 ## Candidate pipelines
