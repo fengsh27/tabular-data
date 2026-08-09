@@ -118,6 +118,27 @@ def table_to_markdown(html):
 HEADINGS = {"h1": 1, "h2": 2, "h3": 3, "h4": 4, "h5": 5, "h6": 6}
 
 
+COVERAGE_MIN = 0.6
+
+
+def _warn_low_coverage(path, body_md, raw_text):
+    """Warn when the extracted Markdown holds much less prose than the source.
+
+    Both serializers only emit text for tags they recognise, so an unfamiliar
+    markup pattern silently yields a short paper_text.md while every other
+    signal still reports success. Comparing against the container's own text
+    turns that into a visible failure.
+    """
+    raw = len(_ws(raw_text or ""))
+    got = len(body_md or "")
+    if raw >= 1000 and got < COVERAGE_MIN * raw:
+        sys.stderr.write(
+            "warning: %s: extracted %d of ~%d body characters (%.0f%%); "
+            "paper_text.md is probably missing prose\n"
+            % (os.path.basename(path), got, raw, 100.0 * got / raw)
+        )
+
+
 def _collapse(text):
     return re.sub(r"\n{3,}", "\n\n", text).strip()
 
@@ -129,11 +150,28 @@ def _ws(s):
 # ===========================================================================
 # HTML path (BeautifulSoup) -- unchanged behaviour from the original script
 # ===========================================================================
+# Most specific first: a precise template match always beats a general one, and
+# the generic `section.body` is the last selector before the heuristic fallback.
 BODY_SELECTORS = [
-    "section.body.main-article-body",   # PMC
-    "div.article__body",                # Wiley
-    "div.Body",                         # Elsevier (ScienceDirect)
+    "section.body.main-article-body",       # PMC
+    "div.article__body",                    # Wiley
+    "section.article-section__content",     # Wiley (alt)
+    "div.Body",                             # Elsevier (ScienceDirect, older)
+    "div.xocs-content__article-container",  # Elsevier (ScienceDirect, current)
+    "article.xocs-content__article",        # Elsevier (ScienceDirect, current)
+    "div.article-body",                     # Atypon / Literatum
+    "section#bodymatter",                   # Atypon / Literatum
+    "div.c-article-body",                   # Springer Nature
     "section.body",
+]
+# containers that are page furniture, never the article body
+CHROME_RE = re.compile(
+    r"(nav|header|footer|aside|sidebar|masthead|banner|cookie|advert|menu|toolbar)", re.I
+)
+# tags that mark structured content; a container holding none of them is a leaf
+# whose own text is a paragraph in its own right
+BLOCK_TAGS = list(HEADINGS) + [
+    "p", "blockquote", "ul", "ol", "table", "div", "section", "article", "figure",
 ]
 ABSTRACT_SELECTORS = [
     "section.abstract", "div.abstract", "section#abstract1",
@@ -145,6 +183,51 @@ CAPTION_SELECTORS = (
 )
 FOOTNOTE_RE = re.compile(r"(foot|tw-foot|tblwrap-foot|table-footnotes|\bfn\b|legend)", re.I)
 REF_RE = re.compile(r"(ref-list|references|reference-list|bibliograph|bibl)", re.I)
+
+
+def _html_guess_body(soup):
+    """Last resort when no BODY_SELECTOR matches: find the article body by shape.
+
+    Publisher templates change and new ones appear; failing to find a body means
+    no paper_text.md at all, which silently starves every full-text pipeline. So
+    when the selector list misses, pick the **deepest** container that still
+    holds essentially all of the page's prose -- that drills past the stack of
+    layout wrappers (which all carry the same text) to the innermost element
+    that actually contains the article.
+
+    Returns (element, identifier) or (None, None).
+    """
+    cands = []
+    for el in soup.find_all(["article", "main", "section", "div"]):
+        ident = " ".join(
+            filter(None, [el.get("id") or "", " ".join(el.get("class") or [])])
+        )
+        if CHROME_RE.search(ident):
+            continue
+        if el.find_parent(["nav", "header", "footer", "aside"]) is not None:
+            continue
+        n = len(el.get_text(" ", strip=True))
+        if n >= 1000:
+            cands.append((n, len(list(el.parents)), ident, el))
+    if not cands:
+        return None, None
+    top = max(n for n, _, _, _ in cands)
+    keep = [c for c in cands if c[0] >= 0.6 * top]
+    keep.sort(key=lambda c: c[1])  # by depth
+    _, _, ident, el = keep[-1]
+    return el, ("<%s %s>" % (el.name, ident)).strip()
+
+
+def _html_find_body(soup):
+    """Return (body_element, how_it_was_found). how is None when nothing matched."""
+    for sel in BODY_SELECTORS:
+        el = soup.select_one(sel)
+        if el:
+            return el, sel
+    el, ident = _html_guess_body(soup)
+    if el is not None:
+        return el, "heuristic %s" % ident
+    return None, None
 
 
 def _html_find_title(soup):
@@ -238,6 +321,15 @@ def _html_block_to_md(root):
             return
         if name == "table":
             return
+        # A container with no structured children is itself a paragraph. Many
+        # publishers mark paragraphs up as <div>/<span> with only inline
+        # children (sup, em, a); recursing past those drops the text entirely,
+        # since bare text nodes are skipped above.
+        if node.find(BLOCK_TAGS) is None:
+            txt = _ws(node.get_text(" ", strip=True))
+            if txt:
+                out.append(txt)
+            return
         for child in node.children:
             if getattr(child, "name", None):
                 emit(child)
@@ -256,7 +348,7 @@ def parse_html(path):
 
     title = _html_find_title(soup)
     abstract_el = _html_find(soup, ABSTRACT_SELECTORS)
-    body_el = _html_find(soup, BODY_SELECTORS)
+    body_el, body_src = _html_find_body(soup)
 
     wraps = []
     for t in soup.find_all("table"):
@@ -298,6 +390,7 @@ def parse_html(path):
             extra = [f"[Table {n}]" for n in range(len(placed) + 1, len(wraps) + 1)]
             if extra:
                 body_md = body_md.rstrip() + "\n\n## Tables\n\n" + "\n\n".join(extra)
+        _warn_low_coverage(path, body_md, body_copy.get_text(" ", strip=True))
 
     tables = []
     for n, wrap in enumerate(wraps, 1):
@@ -316,6 +409,7 @@ def parse_html(path):
         "abstract_md": abstract_md,
         "body_md": body_md,
         "has_body": body_el is not None,
+        "body_src": body_src,
         "tables": tables,
     }
 
@@ -442,6 +536,16 @@ def parse_xml(path):
         if orphans:
             body_md = body_md.rstrip() + "\n\n## Tables\n\n" + "\n\n".join(orphans)
 
+    if body_md is not None:
+        # same guard as the HTML path: compare against the body's own text, with
+        # tables and references excluded since those are deliberately dropped
+        raw = ET.fromstring(ET.tostring(body_el, encoding="unicode"))
+        for parent in raw.iter():
+            for child in list(parent):
+                if _localname(child.tag) in ("table-wrap", "ref-list", "fn-group"):
+                    parent.remove(child)
+        _warn_low_coverage(path, body_md, "".join(raw.itertext()))
+
     tables = []
     for tw in table_wraps:
         label = _xml_text(tw.find("label"))
@@ -538,6 +642,7 @@ def process_paper(path, out_root, dry_run=False):
         "title": parsed["title"],
         "abstract": bool(parsed["abstract_md"]),
         "body": parsed["has_body"],
+        "body_src": parsed.get("body_src"),
         "n_tables": len(parsed["tables"]),
     }
     if not dry_run:
@@ -571,11 +676,15 @@ def main(argv=None):
     for p in iter_inputs(args.input):
         r = process_paper(p, args.out, dry_run=args.dry_run)
         flag = "" if (r["title"] and r["abstract"] and r["body"]) else "  <-- CHECK"
+        # surface HOW the body was found: a heuristic hit means this publisher
+        # has no selector yet, which is worth adding before the template drifts
+        src = r.get("body_src") or ""
+        via = f" via {src}" if src.startswith("heuristic") else ""
         print(
             f"{r['pmid']} [{r['format']}]: tables={r['n_tables']} "
             f"title={'Y' if r['title'] else 'N'} "
             f"abstract={'Y' if r['abstract'] else 'N'} "
-            f"body={'Y' if r['body'] else 'N'}{flag}"
+            f"body={'Y' if r['body'] else 'N'}{via}{flag}"
         )
 
 
