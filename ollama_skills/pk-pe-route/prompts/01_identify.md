@@ -114,9 +114,12 @@ not which label it gets.
 - [ ] No **drug, supplement, hormone, nutrient, or tracer** is administered,
       dosed, or measured.
 - [ ] No analysis relates an **exposure to an outcome** in a population.
-- [ ] The paper is plausibly outside both definitions even after reading its
-      tables (e.g. a pure imaging, surgical-technique, genetics, or methods paper
-      with no analyte measurement).
+
+All three are deliberately broad, so **clearing this gate is rare** — that is the
+design, not a failure on your part. A paper that does clear it looks like a
+surgical-technique or device study, an imaging study reporting only anatomy
+(volumes, lesion counts), or a methods / questionnaire-validation paper — none of
+which administer or measure an analyte.
 
 **If the gate blocks `Neither` but neither step 1 nor step 2 held** — e.g. a
 descriptive paper that reports analyte levels but studies no kinetics and no
@@ -132,7 +135,7 @@ signal, and the `pk_*` pipelines are the ones that can use them.
 | **Supplement RCT** where the biomarker is just the **endpoint** — one post-treatment level per subject (e.g. zinc supplementation, final RBC metallothionein) | **PE** | the level classifies the result; no kinetics are reported, so it is an exposure→outcome trial |
 | **Nutrient-status → outcome** observational study (e.g. vitamin-D status vs. gestational diabetes) | **PE** | the level classifies the exposure; the study question is exposure→outcome |
 | Drug concentrations **and** clinical outcomes compared across a real-world cohort (e.g. vancomycin Cavg before/after a dosing protocol, with clinical parameters) | **Both** | dose-tied concentrations = PK; retrospective exposure→outcome comparison = PE |
-| Pure MR-spectroscopy / imaging predicting outcome, **no analyte concentration** | **Neither** | clears every gate item |
+| **Surgical-technique or device** study predicting outcome, no analyte administered or measured (e.g. a comparison of two catheter placements) | **Neither** | clears every gate item |
 
 ## Output
 Write `identify.json` to the scratch directory:
