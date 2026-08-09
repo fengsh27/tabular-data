@@ -47,10 +47,16 @@ costly error here, so **when in doubt, prefer `PK`/`PE`/`Both` over `Neither`.**
 Read these from the prepared-paper directory; do not rely on the conversation.
 
 ## Definitions (read carefully — broader than "drugs only")
-- **Pharmacokinetics (PK)** — the time-course and disposition of **any analyte**
-  in the body: its concentration, clearance, half-life, AUC, Cmax, Tmax, volume
-  of distribution, bioavailability, or turnover / metabolic flux. The analyte may
-  be:
+- **Pharmacokinetics (PK)** — the **time-course or disposition** of **any
+  analyte** in the body. The paper is PK if it reports **any one** of:
+  - a **derived PK parameter** — clearance, half-life, AUC, Cmax, Tmax, volume of
+    distribution, bioavailability, turnover / metabolic flux; **or**
+  - concentrations sampled **over time**, or tied to a **dose** or to a **time
+    after dose**; **or**
+  - concentrations compared **across compartments** — cord vs. maternal blood,
+    milk vs. plasma, tissue vs. serum (i.e. transfer / distribution).
+
+  The analyte may be:
   - an **administered drug or xenobiotic**, **or**
   - an **endogenous compound** — a hormone (e.g. LH, insulin), metabolite, or
     other native substance whose concentration or kinetics are measured, **or**
@@ -61,6 +67,11 @@ Read these from the prepared-paper directory; do not rely on the conversation.
 
   Measured in plasma, serum, urine, tissue, or any specimen, in **humans or
   animals** (preclinical/animal PK counts).
+
+  **Not PK on its own:** a **single concentration measured only to describe or
+  classify subjects** — a nutrient status, a baseline biomarker, a routine lab
+  value. Measuring an analyte is not the same as studying its kinetics. Such a
+  level becomes PK only if one of the three bullets above also holds.
 - **Pharmacoepidemiology (PE)** — the use and effects of drugs, supplements, or
   other modifiable agents in **populations**: observational / real-world data
   (cohort, case-control, claims, EHR) or trials that relate an **exposure** to
@@ -72,17 +83,28 @@ Read these from the prepared-paper directory; do not rely on the conversation.
 Classify the paper as exactly one of `PK`, `PE`, `Both`, or `Neither`.
 
 Work in this order:
-1. **Look for PK signal** (title + abstract + table digest): is *any* analyte's
-   concentration, kinetics, or turnover measured/reported? If yes → the paper is
-   `PK` (or `Both`).
+1. **Look for PK signal** (title + abstract + table digest): does the paper
+   report an analyte's **kinetics** — a PK parameter, concentrations over time or
+   against dose, or a compartment-to-compartment comparison? If yes → `PK`.
 2. **Look for PE signal**: is an administered/modifiable exposure related to
-   outcomes in a population? If yes → `PE` (or `Both`).
-3. **Only if both are clearly absent**, consider `Neither` — and first pass the
-   gate below.
+   outcomes in a population? If yes → `PE`.
+3. **A measured level alone does not settle it.** If an analyte's level is
+   measured only to **describe or classify subjects**, and the paper's question
+   is exposure→outcome, that is `PE`, **not** `PK` (see the vitamin-D row below).
+4. **If both 1 and 2 hold, answer `Both`** — do not pick whichever seems
+   stronger. `Both` is the right answer for a paper that reports kinetics *and*
+   relates an exposure to outcomes.
+5. **Only if 1 and 2 are both clearly absent**, consider `Neither` — and first
+   pass the gate below.
 
 ## Neither gate (must clear ALL before answering `Neither`)
 You may answer `Neither` only if **every** statement below is true. If any is
 false (or you are unsure), pick `PK`, `PE`, or `Both` instead.
+
+The first item below is deliberately **broader** than the PK definition above: a
+bare concentration is not enough to call a paper `PK`, but it *is* enough to stop
+you dropping the paper entirely. This gate decides whether the paper is discarded,
+not which label it gets.
 - [ ] No table or section reports a **concentration, level, or PK parameter**
       (clearance, half-life, AUC, Cmax, Tmax, Vd, turnover/flux) for any analyte.
 - [ ] No **drug, supplement, hormone, nutrient, or tracer** is administered,
@@ -92,13 +114,20 @@ false (or you are unsure), pick `PK`, `PE`, or `Both` instead.
       tables (e.g. a pure imaging, surgical-technique, genetics, or methods paper
       with no analyte measurement).
 
+**If the gate blocks `Neither` but neither step 1 nor step 2 held** — e.g. a
+descriptive paper that reports analyte levels but studies no kinetics and no
+exposure→outcome — answer **`PK`**. The measured levels are the only curatable
+signal, and the `pk_*` pipelines are the ones that can use them.
+
 ## Edge cases (decided for this corpus)
 | Paper | Label | Why |
 |-------|-------|-----|
 | Endogenous hormone kinetics in animals (e.g. **LH half-life/clearance in monkeys**) | **PK** | half-life/clearance of an analyte = PK; endogenous & animal both count |
 | **Isotope-tracer** turnover (e.g. [13C]methionine flux in neonates) | **PK** | tracer kinetics quantify metabolic rates = PK |
-| **Supplement RCT** measuring a biomarker concentration (e.g. zinc supplementation, RBC metallothionein) | **PK** (or **Both** if it also tests exposure→outcome) | nutrient = administered agent; measured concentration = PK |
-| **Nutrient-status → outcome** observational study (e.g. vitamin-D status vs. gestational diabetes) | **PE** | modifiable exposure related to outcomes in a population |
+| **Supplement RCT** that samples the analyte **over time** or derives a PK parameter (e.g. zinc supplementation with a concentration–time profile) | **PK** | nutrient = administered agent, and the kinetics are reported |
+| **Supplement RCT** where the biomarker is just the **endpoint** — one post-treatment level per subject (e.g. zinc supplementation, final RBC metallothionein) | **PE** | the level classifies the result; no kinetics are reported, so it is an exposure→outcome trial |
+| **Nutrient-status → outcome** observational study (e.g. vitamin-D status vs. gestational diabetes) | **PE** | the level classifies the exposure; the study question is exposure→outcome |
+| Drug concentrations **and** clinical outcomes compared across a real-world cohort (e.g. vancomycin Cavg before/after a dosing protocol, with clinical parameters) | **Both** | dose-tied concentrations = PK; retrospective exposure→outcome comparison = PE |
 | Pure MR-spectroscopy / imaging predicting outcome, **no analyte concentration** | **Neither** | clears every gate item |
 
 ## Output
