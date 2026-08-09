@@ -15,7 +15,11 @@ costly error here, so **when in doubt, prefer `PK`/`PE`/`Both` over `Neither`.**
 ## Inputs
 - **Title** — the H1 on the first line of `paper_text.md` (or the `title` field in
   `manifest.json`).
-- **Abstract** — `abstract.md`.
+- **Abstract** — `abstract.md`. It is **not always present**: `manifest.json`
+  reports `"has_abstract": false` when the paper had none (or none could be
+  extracted). In that case do not stop — fall back to the title plus the opening
+  paragraphs of `paper_text.md`, and note in `reasoning` that you classified
+  without an abstract.
 - **Table digest** — run this once, from the skill folder, on **every** paper:
 
   ```bash

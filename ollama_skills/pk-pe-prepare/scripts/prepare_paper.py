@@ -175,14 +175,55 @@ BLOCK_TAGS = list(HEADINGS) + [
 ]
 ABSTRACT_SELECTORS = [
     "section.abstract", "div.abstract", "section#abstract1",
+    "section.article-section__abstract",    # Wiley
+    "div.abstract-group",                   # Wiley
     "[class*=abstract]", "[id*=abstract]", "[id*=Abs]",
 ]
+# blocks that sit beside the abstract and match the same loose selectors:
+# Elsevier gives its Highlights list class="abstract" too, immediately before
+# the real abstract, and decorative <i class="icon-abstract"> elements match
+# `[class*=abstract]` while holding no text at all.
+NOT_ABSTRACT_RE = re.compile(r"(highlight|graphical|teaser|keyword|toc|icon)", re.I)
+ABSTRACT_MIN_CHARS = 100
+ABSTRACT_MAX_CHARS = 6000
 CAPTION_SELECTORS = (
     "[class*=caption]", "header.article-table-caption",
     "h2.obj_head", "h3.obj_head", ".label", ".captions",
 )
 FOOTNOTE_RE = re.compile(r"(foot|tw-foot|tblwrap-foot|table-footnotes|\bfn\b|legend)", re.I)
 REF_RE = re.compile(r"(ref-list|references|reference-list|bibliograph|bibl)", re.I)
+
+
+def _html_find_abstract(soup):
+    """Pick the abstract, rejecting the neighbours that match the same selectors.
+
+    Taking the first selector hit is not safe here. On one Elsevier template the
+    Highlights list and the abstract are both <section class="abstract">, with
+    Highlights first; on a Wiley one an empty <i class="icon-abstract"> matches
+    the wildcard and shadows an 1851-character abstract, which then reads as
+    "this paper has no abstract". So gather every candidate and score it.
+    """
+    best = None
+    seen = set()
+    for sel in ABSTRACT_SELECTORS:
+        for el in soup.select(sel):
+            if id(el) in seen:
+                continue
+            seen.add(id(el))
+            ident = " ".join(
+                filter(None, [el.get("id") or "", " ".join(el.get("class") or [])])
+            )
+            if NOT_ABSTRACT_RE.search(ident):
+                continue
+            head = el.find(["h1", "h2", "h3", "h4"])
+            if head is not None and NOT_ABSTRACT_RE.search(head.get_text(" ", strip=True)):
+                continue                        # "Highlights", "Graphical abstract"
+            n = len(_ws(el.get_text(" ", strip=True)))
+            if not ABSTRACT_MIN_CHARS <= n <= ABSTRACT_MAX_CHARS:
+                continue                        # icon / jump-link, or a whole article
+            if best is None or n > best[0]:
+                best = (n, el)
+    return best[1] if best else None
 
 
 def _html_guess_body(soup):
@@ -347,7 +388,7 @@ def parse_html(path):
         soup = BeautifulSoup(fh.read(), "html.parser")
 
     title = _html_find_title(soup)
-    abstract_el = _html_find(soup, ABSTRACT_SELECTORS)
+    abstract_el = _html_find_abstract(soup)
     body_el, body_src = _html_find_body(soup)
 
     wraps = []
@@ -513,7 +554,17 @@ def parse_xml(path):
     title_el = root.find(".//front//article-title")
     title = _xml_text(title_el) or None
 
-    abstract_el = root.find(".//front//abstract")
+    # JATS allows several <abstract>s; abstract-type="graphical"/"teaser" is the
+    # XML spelling of the Highlights block that derails the HTML path, so prefer
+    # a plain one and fall back only if that is all there is.
+    abstract_el = None
+    for a in root.findall(".//front//abstract"):
+        if (a.get("abstract-type") or "").lower() in ("graphical", "teaser", "precis"):
+            if abstract_el is None:
+                abstract_el = a          # remember, but keep looking for a plain one
+            continue
+        abstract_el = a
+        break
     abstract_md = _xml_block_to_md(abstract_el, 0, {}) if abstract_el is not None else None
 
     body_el = root.find(".//body")
@@ -636,6 +687,13 @@ def process_paper(path, out_root, dry_run=False):
     pmid = os.path.splitext(os.path.basename(path))[0]
     fmt = detect_format(path)
     parsed = parse_xml(path) if fmt == "xml" else parse_html(path)
+    if not parsed["abstract_md"]:
+        # stage 1 of the routing skill treats the abstract as a primary input,
+        # so a missing one changes how the paper gets classified
+        sys.stderr.write(
+            "warning: %s: no abstract found; abstract.md will not be written\n"
+            % os.path.basename(path)
+        )
     report = {
         "pmid": pmid,
         "format": fmt,
