@@ -26,8 +26,15 @@ working dir (never inside the skill folder; it is git-ignored): `identify.json`,
 `design.json`, and the final `selected_pipelines.json`.
 
 ## Workflow
-1. **Stage 1 — Identify** (`prompts/01_identify.md`): from the title + `abstract.md`,
-   classify the paper as **PK / PE / Both / Neither** → `identify.json`.
+1. **Stage 1 — Identify** (`prompts/01_identify.md`): from the title, `abstract.md`,
+   and the table digest, classify the paper as **PK / PE / Both / Neither** →
+   `identify.json`. Run the digest on **every** paper — a paper's PK content often
+   appears only in its tables:
+   ```bash
+   python scripts/table_digest.py "$OUT"/.paper_assets/<pmid>
+   ```
+   It prints each table's caption, footnotes, and first rows. Do not substitute
+   `table_<n>.md` for it — that file holds no table rows (see the prompt file).
 2. **Paper-type gate** — the classification fixes the candidate set:
    - **PK** → choose only from the **PK** pipelines (`pk_*`).
    - **PE** → choose only from the **PE** pipelines (`pe_*`).
@@ -65,9 +72,11 @@ Each `skill` is the name of the standalone curation skill to trigger next. For a
 `Neither` paper, `selected` is `[]`.
 
 ## Notes
-- **Tables are visible to the design stage by design.** The legacy step saw table
-  data inline in the full text; Stage 2 reconstructs that by splicing the
-  `table_<n>.md` files back at their `[Table N]` markers. Do not run the design
-  stage on the bare `paper_text.md` (markers only).
+- **Both stages see the tables, at different depths.** Stage 1 gets the cheap
+  digest (caption + footnotes + first rows per table). Stage 2 needs the tables
+  in context: the legacy step saw table data inline in the full text, so Stage 2
+  reconstructs that by splicing the `table_<n>.md` files back at their
+  `[Table N]` markers. Do not run the design stage on the bare `paper_text.md`
+  (markers only).
 - The **label→skill map is deterministic** (`scripts/pipeline_skill_map.py`); only
   the identify + design judgements are model-driven.

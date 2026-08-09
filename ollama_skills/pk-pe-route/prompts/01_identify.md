@@ -16,13 +16,27 @@ costly error here, so **when in doubt, prefer `PK`/`PE`/`Both` over `Neither`.**
 - **Title** — the H1 on the first line of `paper_text.md` (or the `title` field in
   `manifest.json`).
 - **Abstract** — `abstract.md`.
-- **Table headers + captions** — the first row / header cells and the caption of
-  each `table_<n>.md` / `table_<n>.html`. Read these on **every** paper, not just
-  borderline ones: a paper's PK content frequently lives only in its tables, and a
-  header like `Cmax | AUC | t½ | CL` or a caption "Pharmacokinetic parameters of…"
-  is the single highest-signal PK tell in the paper, at almost no token cost. You
-  do **not** need the table bodies here — headers and captions are enough for the
-  gate.
+- **Table digest** — run this once, from the skill folder, on **every** paper:
+
+  ```bash
+  python scripts/table_digest.py <prepared-paper-dir>
+  ```
+
+  It prints, per table, the caption + footnotes and the first 3 rows. Read it on
+  every paper, not just borderline ones: a paper's PK content frequently lives
+  only in its tables, and the tell may be
+  - a **caption** — "Pharmacokinetic parameters of…",
+  - a **column header** — `Cmax | AUC | t½ | CL`, **or**
+  - a **row label** — "Mean serum fentanyl concentration (nmol/L)".
+
+  The digest covers all three. In this corpus parameter names are often row
+  labels rather than column headers, so do not look only at the header row.
+
+  Do **not** try to get this from the prepared files by hand: `table_<n>.md`
+  holds only the caption and footnotes (**no table rows at all**), and
+  `table_<n>.html` holds the entire table and runs 7–18× larger than the digest.
+  Open `table_<n>.html` directly only when the digest is genuinely not enough.
+  If `manifest.json` reports no tables, the digest says so — skip this input.
 - **Full results text** — read `paper_text.md` **only when you are about to answer
   `Neither`** (the gate below), to confirm no analyte measurement was missed. Do
   not pull the whole prose in for routine PK/PE/Both calls; it slows the gate and
@@ -56,7 +70,7 @@ Read these from the prepared-paper directory; do not rely on the conversation.
 Classify the paper as exactly one of `PK`, `PE`, `Both`, or `Neither`.
 
 Work in this order:
-1. **Look for PK signal** (title + abstract + table headers): is *any* analyte's
+1. **Look for PK signal** (title + abstract + table digest): is *any* analyte's
    concentration, kinetics, or turnover measured/reported? If yes → the paper is
    `PK` (or `Both`).
 2. **Look for PE signal**: is an administered/modifiable exposure related to
