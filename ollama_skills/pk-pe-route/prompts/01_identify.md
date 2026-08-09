@@ -22,7 +22,9 @@ costly error here, so **when in doubt, prefer `PK`/`PE`/`Both` over `Neither`.**
   python scripts/table_digest.py <prepared-paper-dir>
   ```
 
-  It prints, per table, the caption + footnotes and the first 3 rows. Read it on
+  It prints, per table, the caption + footnotes and the table's header plus its
+  first couple of rows (raise `--max-rows` if you need more, `0` for the whole
+  table). Read it on
   every paper, not just borderline ones: a paper's PK content frequently lives
   only in its tables, and the tell may be
   - a **caption** — "Pharmacokinetic parameters of…",
@@ -32,10 +34,10 @@ costly error here, so **when in doubt, prefer `PK`/`PE`/`Both` over `Neither`.**
   The digest covers all three. In this corpus parameter names are often row
   labels rather than column headers, so do not look only at the header row.
 
-  Do **not** try to get this from the prepared files by hand: `table_<n>.md`
-  holds only the caption and footnotes (**no table rows at all**), and
-  `table_<n>.html` holds the entire table and runs 7–18× larger than the digest.
-  Open `table_<n>.html` directly only when the digest is genuinely not enough.
+  The digest truncates long tables and says so. If a table looks relevant but
+  was cut off, read that table's `table_<n>.md` — it holds the caption,
+  footnotes, and the **full** table as Markdown. You should not need
+  `table_<n>.html` at this stage; it is the same table in a much larger form.
   If `manifest.json` reports no tables, the digest says so — skip this input.
 - **Full results text** — read `paper_text.md` **only when you are about to answer
   `Neither`** (the gate below), to confirm no analyte measurement was missed. Do

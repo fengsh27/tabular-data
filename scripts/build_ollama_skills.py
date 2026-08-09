@@ -419,6 +419,9 @@ def build_prepare_skill() -> None:
     dst = os.path.join(DST, name)
     os.makedirs(os.path.join(dst, "scripts"), exist_ok=True)
     shutil.copy2(os.path.join(ASSETS, "prepare_paper.py"), os.path.join(dst, "scripts", "prepare_paper.py"))
+    # prepare_paper.py imports this sibling to build table_<n>.md's markdown table
+    shutil.copy2(os.path.join(ASSETS, "html_to_markdown_table.py"),
+                 os.path.join(dst, "scripts", "html_to_markdown_table.py"))
     shutil.copy2(os.path.join(CC_SCRIPTS, "requirements.txt"), os.path.join(dst, "scripts", "requirements.txt"))
 
     desc = (
@@ -446,26 +449,34 @@ python scripts/prepare_paper.py <paper.html|paper.xml> --out "$OUT/.paper_assets
 python scripts/prepare_paper.py <dir> --out "$OUT/.paper_assets"
 python scripts/prepare_paper.py <paper> --dry-run     # report only, write nothing
 ```
-Needs `beautifulsoup4` **only for HTML** input (`pip install -r scripts/requirements.txt`);
-the XML path is Python-3 standard library only.
+Needs `beautifulsoup4` (`pip install -r scripts/requirements.txt`) for HTML input
+and for the Markdown table conversion on both paths. XML parsing itself is
+Python-3 standard library only; without bs4 an XML paper still yields every
+output except the `**Table:**` block.
 
 ## Output — `./.paper_assets/<pmid>/`
 | File | Contents |
 |---|---|
 | `paper_text.md` | title (H1) + body as Markdown; references stripped; each data table → a `[Table N]` marker |
 | `abstract.md` | the abstract as Markdown |
-| `table_<n>.md` | table *n*'s caption + footnotes |
+| `table_<n>.md` | table *n*'s caption, footnotes, **and the table itself** as a Markdown table (under `**Table:**`) |
 | `table_<n>.html` | table *n* as a `<section>` (caption + table + footnotes) |
-| `manifest.json` | title, table count, and the `[Table N]` ↔ file mapping |
+| `manifest.json` | title, table count, per-table `n_rows` / `n_cols`, and the `[Table N]` ↔ file mapping |
 
 Tables are numbered by order of appearance. `<pmid>` is the input file's base name.
+
+`table_<n>.md` is the **readable** form — plain text, and 4–40× smaller than the
+same table's `.html`. Use it to read or reason about a table. `table_<n>.html`
+stays the source of truth for the curation skills, which re-convert it with the
+same converter (`scripts/html_to_markdown_table.py`), so the two agree.
 
 ## Hand off
 Point the curation skills at the produced `<pmid>/` directory:
 - **table** skills (`pk-summary-curation`, `pk-individual-curation`,
   `pe-study-outcome`) → `table_<n>.html`;
 - **full-text** skills (`pk-drug-*`, `pk-specimen-*`, `pk-population-*`,
-  `pe-study-info`) → `paper_text.md` (+ `abstract.md`).
+  `pe-study-info`) → `paper_text.md` (+ `abstract.md`);
+- **routing** (`pk-pe-route`) → `table_<n>.md`.
 
 ## Scope & notes
 - **HTML** uses best-effort PMC / Wiley / Elsevier selectors. **XML** uses the
