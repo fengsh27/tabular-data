@@ -19,6 +19,14 @@ description: Curate aggregate/summary pharmacokinetics (PK) tables (mean / media
 3. **Paper title** — optional but strongly recommended; used as a fallback to
    infer drug / analyte when a table is ambiguous, and shared across all tables.
 
+**If the paper was already prepared** by `pk-pe-prepare`, do not ask for a paste:
+read the inputs from `./.paper_assets/<pmid>/` (rooted at `$SKILL_SCRATCH_FOLDER`
+when that variable is set). Each `table_<n>.md` holds that table's caption,
+footnotes, **and the full table as Markdown**; `table_<n>.html` is the same table
+as HTML. `manifest.json` lists the tables with their row/column
+counts, and the paper title is its `title` field (also the H1 of
+`paper_text.md`).
+
 If the user only supplies a PMID or a URL, ask them to paste the table HTML and
 captions — this skill does not fetch papers.
 
