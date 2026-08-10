@@ -57,8 +57,15 @@ Read these from the prepared-paper directory; do not rely on the conversation.
     distribution, bioavailability, turnover / metabolic flux; **or**
   - concentrations sampled **over time**, or tied to a **dose** or to a **time
     after dose**; **or**
-  - concentrations compared **across compartments** — cord vs. maternal blood,
-    milk vs. plasma, tissue vs. serum (i.e. transfer / distribution).
+  - concentrations compared across compartments **to quantify transfer or
+    distribution** — cord vs. maternal blood, milk vs. plasma, tissue vs. serum.
+    The transfer has to be the point: the paper is asking how much of the analyte
+    crosses between compartments, or where in the body it ends up.
+
+    **Not a compartment comparison:** two anatomical sub-regions of one organ
+    (e.g. two brain regions on MRS), or several tissues each sampled once to
+    describe status. Measuring an analyte in more than one place is not the same
+    as studying its movement between those places.
 
   The analyte may be:
   - an **administered drug or xenobiotic**, **or**
@@ -72,10 +79,20 @@ Read these from the prepared-paper directory; do not rely on the conversation.
   Measured in plasma, serum, urine, tissue, or any specimen, in **humans or
   animals** (preclinical/animal PK counts).
 
-  **Not PK on its own:** a **single concentration measured only to describe or
-  classify subjects** — a nutrient status, a baseline biomarker, a routine lab
-  value. Measuring an analyte is not the same as studying its kinetics. Such a
-  level becomes PK only if one of the three bullets above also holds.
+  **Not PK on its own:** a **concentration measured only to describe or classify
+  subjects** — a nutrient status, a baseline biomarker, a routine lab value.
+  Measuring an analyte is not the same as studying its kinetics.
+
+  **What the measurements are for decides it.** Repeating a measurement — at
+  several visits, in several tissues, in several people — does not by itself make
+  a paper PK. Ask what the measurements exist to do. If they characterize the
+  analyte's behaviour in the body (how fast it falls, how much reaches the fetus,
+  what its AUC is), that is PK. If they exist **only** to sort subjects into
+  groups whose outcomes are then compared, that is the exposure side of an
+  exposure→outcome study — step 3 of the Task governs, and the answer is `PE`.
+  A paper can do **both** — report real kinetics *and* compare outcomes across
+  groups; that is `Both`, and step 4 governs. The test rules out PK only when
+  classifying subjects is the sole reason the analyte was measured.
 - **Pharmacoepidemiology (PE)** — the use and effects of drugs, supplements, or
   other modifiable agents in **populations**: observational / real-world data
   (cohort, case-control, claims, EHR) or trials that relate an **exposure** to
