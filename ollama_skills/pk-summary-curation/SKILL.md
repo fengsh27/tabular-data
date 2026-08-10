@@ -144,8 +144,16 @@ a dedicated prompt file in `prompts/`. For each stage:
    complete, exact table, not a summary.
 
 ### Stage 0a — Convert all input tables (not a prompt file)
-For each input table that is HTML, convert it to a markdown table with the
-bundled script — **do not** parse the HTML by hand:
+**If the paper was prepared, the conversion is already done.** Each
+`./.paper_assets/<pmid>/table_<n>.md` holds the caption, the footnotes, and the
+table as Markdown under a `**Table:**` heading. Take that Markdown block as the
+table, and the caption/footnotes above it for `inputs.md`. Do **not** re-convert
+`table_<n>.html`: `prepare_paper.py` produced that block by running the very
+script below on that very HTML, so re-running it can only reproduce the same
+bytes or introduce a discrepancy. This path needs no `beautifulsoup4`.
+
+Otherwise — the user pasted raw HTML — convert each input table with the bundled
+script; **do not** parse the HTML by hand:
 
 ```
 python scripts/html_to_markdown_table.py <path-to-html>   # or pipe HTML via stdin
