@@ -80,14 +80,23 @@ for parent drug + metabolite → MUST include:
 pk_drug_summary, pk_drug_individual`.
 
 ## Output
-Write `design.json` to the scratch directory:
+Write `design.json` to the scratch directory, with **exactly these three keys and
+no others**:
 
 ```json
 { "pmid": "<pmid>", "pipeline_tools": ["pk_summary", "pe_study_outcome", ...],
   "reasoning": "<which dimensions/granularities you matched>" }
 ```
 
-Every entry MUST be one of the 10 labels in the table above (exact spelling).
+- `pipeline_tools` — a **flat array of label strings**, not objects. Every entry
+  MUST be one of the 10 labels in the table above (exact spelling).
+- `reasoning` — a **single string**, not an object keyed by pipeline.
+
+The key is `pipeline_tools`. Do **not** name it `selected_pipelines` — that name
+belongs to the *next* artifact, `selected_pipelines.json`, which the dispatch
+script writes for you and which has a different shape. Do not add
+`paper_type`, `rationale`, `excluded_pipelines`, or `candidate_set`; anything
+you want to say about what you rejected goes in the `reasoning` string.
 
 ## Deterministic dispatch
 Do not hand-write the procedure paths. Run the bundled map to produce the dispatch
