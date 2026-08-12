@@ -20,6 +20,12 @@ For the numeric outcome tables of a PE study, use the sibling `pe-study-outcome`
    sections). The primary source.
 2. **Paper title** — recommended.
 
+**If the paper was already prepared** by `pk-pe-prepare`, do not ask for a paste:
+read the inputs from `./.paper_assets/<pmid>/` (rooted at `$SKILL_SCRATCH_FOLDER`
+when that variable is set) — `paper_text.md` for the full text, `abstract.md` if
+you want the abstract, and the paper title from that file's H1 or from
+`manifest.json`.
+
 There is **no input table**. If the user only supplies a PMID or URL, ask them to
 paste the full text — this skill does not fetch papers.
 

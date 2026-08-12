@@ -209,11 +209,18 @@ def build_claude_cmd(args: argparse.Namespace, prompt: str,
 
 
 def run_claude(args: argparse.Namespace, prompt: str, cwd: Path, env: Dict[str, str],
-               extra_dirs: List[Path], log_path: Path) -> bool:
+               extra_dirs: List[Path], log_path: Path) -> str:
+    """Run one `claude -p` call. Returns a status STRING, not a bool.
+
+    The caller needs to tell a timeout apart from a non-zero exit apart from a
+    clean run that simply produced no file: those are three different problems
+    and only the timeout is worth re-running as-is. Collapsing them to a bool is
+    what made a whole batch report "partial" with no recoverable reason.
+    """
     cmd = build_claude_cmd(args, prompt, extra_dirs)
     if args.dry_run:
         logger.info("[dry-run] claude (cwd=%s): %s", cwd, prompt.splitlines()[0])
-        return True
+        return "dry-run"
     logger.info("claude: %s", prompt.splitlines()[0])
     try:
         proc = subprocess.run(
@@ -223,15 +230,15 @@ def run_claude(args: argparse.Namespace, prompt: str, cwd: Path, env: Dict[str, 
     except subprocess.TimeoutExpired:
         logger.error("claude timed out after %ss", args.timeout)
         log_path.write_text(f"TIMEOUT after {args.timeout}s\nPROMPT:\n{prompt}\n", encoding="utf-8")
-        return False
+        return "timeout"
     log_path.write_text(
         f"PROMPT:\n{prompt}\n\n--- STDOUT ---\n{proc.stdout}\n--- STDERR ---\n{proc.stderr}\n",
         encoding="utf-8",
     )
     if proc.returncode != 0:
         logger.error("claude exited %s (see %s)", proc.returncode, log_path)
-        return False
-    return True
+        return f"exit:{proc.returncode}"
+    return "ok"
 
 
 def run_route(args: argparse.Namespace, pmid: str, scratch: Path, env: Dict[str, str],
@@ -243,12 +250,12 @@ def run_route(args: argparse.Namespace, pmid: str, scratch: Path, env: Dict[str,
         f"table_*.md / table_*.html, manifest.json). Run the skill's identify and design stages "
         f"and its deterministic dispatch map, writing selected_pipelines.json. Do NOT curate any data."
     )
-    ok = run_claude(args, prompt, scratch, env, extra_dirs, logdir / f"{pmid}_route.log")
+    status = run_claude(args, prompt, scratch, env, extra_dirs, logdir / f"{pmid}_route.log")
     sel_path = scratch / ".pk_pe_route_scratch" / pmid / "selected_pipelines.json"
     if args.dry_run:
         logger.info("[dry-run] would read %s", sel_path)
         return "DRYRUN", []
-    if not ok or not sel_path.is_file():
+    if status != "ok" or not sel_path.is_file():
         logger.error("route produced no %s", sel_path)
         return None, []
     data = json.loads(sel_path.read_text(encoding="utf-8"))
@@ -256,28 +263,90 @@ def run_route(args: argparse.Namespace, pmid: str, scratch: Path, env: Dict[str,
     return data.get("paper_type"), skills
 
 
+def stray_csv_candidates(scratch: Path, output: Path, pmid: str, skill: str) -> List[Path]:
+    """Places a skill has been observed to write its CSV other than the real one.
+
+    The skills end with `OUT="${SKILL_OUTPUT_FOLDER:-.}"; mkdir -p "$OUT/<pmid>"`.
+    When the model writes the file with its editor tool instead of running that
+    snippet, the variable never expands, the `:-.` fallback wins, and the CSV
+    lands under the CWD -- which is the scratch dir. The run looks like a
+    failure while the curated rows sit on disk one directory away.
+
+    Every candidate MUST carry the pmid. The scratch dir is reused by every paper
+    in the job, so a pmid-less `<skill>.csv` at the scratch root belongs to
+    whichever paper wrote it last -- picking it up here would attach one paper's
+    curated rows to another. Such files are handled by the mtime-guarded case
+    below, never by path alone.
+    """
+    return [
+        scratch / pmid / f"{skill}.csv",   # ./<pmid>/<skill>.csv -- by far the most common
+        output / pmid / f"{skill}.csv",    # already correct, re-checked defensively
+    ]
+
+
+def fresh_unattributable_csv(scratch: Path, skill: str, started: float) -> Optional[Path]:
+    """A pmid-less `<skill>.csv` written DURING this run, so it is this paper's.
+
+    Path alone cannot attribute it (the scratch dir is shared across the job's
+    papers), but a modification time after this skill invocation started can:
+    no other paper was running.
+    """
+    cand = scratch / f"{skill}.csv"
+    try:
+        if cand.is_file() and cand.stat().st_mtime >= started:
+            return cand
+    except OSError:
+        pass
+    return None
+
+
 def run_curation(args: argparse.Namespace, skill: str, pmid: str, scratch: Path,
                  output: Path, env: Dict[str, str], extra_dirs: List[Path],
-                 logdir: Path) -> Optional[Path]:
-    """Run one curation skill; return the produced result CSV path or None."""
+                 logdir: Path) -> Tuple[Optional[Path], str]:
+    """Run one curation skill; return (result CSV path or None, reason).
+
+    `reason` is recorded per skill in the summary CSV so a batch that comes back
+    incomplete says WHY -- ok / resumed / recovered / timeout / exit:N / absent.
+    """
     result = output / pmid / f"{skill}.csv"
     if args.resume and result.is_file():
         logger.info("resume: %s already exists, skipping", result)
-        return result
+        return result, "resumed"
+    # Pin the ABSOLUTE destination. Naming only the basename left the directory
+    # to a shell variable the model does not always expand.
     prompt = (
         f"Use the {skill} skill to curate paper {pmid}. Its prepared assets are in "
         f".paper_assets/{pmid}/ (use paper_text.md and abstract.md for full-text skills, or the "
         f"relevant table_*.html for table skills). Follow the skill's ENTIRE procedure end to end "
-        f"-- every stage, the verify/correct step, and the final 'Write out the result' step that "
-        f"writes {result.name}. Do not stop early or skip stages."
+        f"-- every stage, the verify/correct step, and the final 'Write out the result' step.\n\n"
+        f"Write the result to exactly this absolute path:\n    {result}\n"
+        f"Create the parent directory if it does not exist. Do not write it anywhere else, do not "
+        f"write it relative to the current directory, and do not rely on $SKILL_OUTPUT_FOLDER being "
+        f"expanded. Do not stop early or skip stages."
     )
-    ok = run_claude(args, prompt, scratch, env, extra_dirs, logdir / f"{pmid}_{skill}.log")
+    started = time.time()
+    status = run_claude(args, prompt, scratch, env, extra_dirs, logdir / f"{pmid}_{skill}.log")
     if args.dry_run:
-        return result
-    if ok and result.is_file():
-        return result
-    logger.error("curation %s for %s produced no %s", skill, pmid, result)
-    return None
+        return result, "dry-run"
+    if result.is_file():
+        return result, "ok"
+
+    # Not at the expected path. Before calling it a failure, look where the
+    # model actually writes -- this accounted for 61% of one batch's "failures".
+    candidates = list(stray_csv_candidates(scratch, output, pmid, skill))
+    fresh = fresh_unattributable_csv(scratch, skill, started)
+    if fresh is not None:
+        candidates.append(fresh)
+    for cand in candidates:
+        if cand.is_file() and cand.resolve() != result.resolve():
+            result.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(cand, result)
+            logger.warning("recovered %s for %s from %s", skill, pmid, cand)
+            return result, "recovered"
+
+    reason = status if status != "ok" else "absent"
+    logger.error("curation %s for %s produced no CSV (%s)", skill, pmid, reason)
+    return None, reason
 
 
 # --------------------------------------------------------------------------- #
@@ -309,8 +378,12 @@ def main(argv=None) -> int:
 
     job = args.job_id or str(os.getpid())
     summary_path = output / f"summary_{job}.csv"
+    # skills_failed carries `skill:reason` per skill that produced nothing, and
+    # skills_recovered names those whose CSV had to be rescued from the scratch
+    # dir. Without them an incomplete batch reports only THAT it is incomplete.
     summary_fields = ["pmid", "html_path", "paper_type", "skills_selected",
-                      "skills_succeeded", "status", "error"]
+                      "skills_succeeded", "skills_recovered", "skills_failed",
+                      "status", "error"]
     summary_fh = open(summary_path, "w", newline="", encoding="utf-8")
     summary = csv.DictWriter(summary_fh, fieldnames=summary_fields)
     summary.writeheader()
@@ -323,7 +396,8 @@ def main(argv=None) -> int:
     for idx, (pmid, html) in enumerate(rows, 1):
         logger.info("=== [%d/%d] pmid=%s ===", idx, len(rows), pmid)
         rec = {"pmid": pmid, "html_path": html, "paper_type": "", "skills_selected": "",
-               "skills_succeeded": "", "status": "", "error": ""}
+               "skills_succeeded": "", "skills_recovered": "", "skills_failed": "",
+               "status": "", "error": ""}
         try:
             html_path = Path(html)
             if not html_path.is_absolute():
@@ -347,12 +421,19 @@ def main(argv=None) -> int:
                 logger.info("pmid=%s: no pipelines selected (%s)", pmid, paper_type)
                 continue
 
-            succeeded = []
+            succeeded, recovered, failed = [], [], []
             for skill in skills:
-                csv_path = run_curation(args, skill, pmid, scratch, output, env, extra_dirs, logdir)
+                csv_path, reason = run_curation(args, skill, pmid, scratch, output,
+                                                env, extra_dirs, logdir)
                 if csv_path is not None:
                     succeeded.append(skill)
+                    if reason == "recovered":
+                        recovered.append(skill)
+                else:
+                    failed.append(f"{skill}:{reason}")
             rec["skills_succeeded"] = " ".join(succeeded)
+            rec["skills_recovered"] = " ".join(recovered)
+            rec["skills_failed"] = " ".join(failed)
             rec["status"] = "ok" if len(succeeded) == len(skills) else "partial"
         except Exception as e:  # noqa: BLE001 - per-paper isolation
             rec["status"] = "error"

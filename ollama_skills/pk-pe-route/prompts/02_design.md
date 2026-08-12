@@ -11,11 +11,16 @@ The legacy design step saw the tables inline in the full text. Reproduce that:
 
 1. Start from `paper_text.md`.
 2. For each `[Table N]` marker, splice in the contents of the matching
-   `table_<n>.md` (caption + footnotes) at the marker's position — use
-   `manifest.json` for the `[Table N]` ↔ `table_<n>.md` mapping.
-3. When a table's column/row structure matters to the decision (e.g. rows labeled
-   by subject ID → individual-level data), also consult the corresponding
-   `table_<n>.html` grid.
+   `table_<n>.md` at the marker's position — use `manifest.json` for the
+   `[Table N]` ↔ `table_<n>.md` mapping. Each `table_<n>.md` holds that table's
+   caption, footnotes, **and the full table as Markdown**, so this really does
+   put the table data in front of you — that is what the decisions below need.
+3. Very large tables: `manifest.json` gives each table's `n_rows`. For a table
+   with more than ~40 rows, its header plus the first ~15 rows is enough to
+   decide granularity and dimensions — you do not need every row.
+
+Do **not** use `table_<n>.html` here. It is the same table in a much larger form
+and adds nothing to this decision.
 
 You also have the **title** and the **`paper_type`** from Stage 1 (`identify.json`).
 
@@ -48,6 +53,12 @@ You also have the **title** and the **`paper_type`** from Stage 1 (`identify.jso
    pipelines; both → both.
 2. **Granularity** — subject-labeled rows → **individual** pipelines; aggregated
    statistics → **summary** pipelines; if both exist → BOTH.
+   Read this off the table's **first column**, not the caption. If that column
+   holds subject identifiers — `Patient`, `Subject`, `Volunteer`, `Case`,
+   `Parturient`, an `ID`, or bare `1, 2, 3, …` — the table is individual-level,
+   **whatever the caption says**. Captions routinely omit it: "Milk
+   concentrations and M/P ratios for citalopram" sits above a table whose first
+   column is `Volunteer | 1 | 2 | …`, and that table is individual-level.
 3. **Dimension** — for each dimension present, add its pipelines: specimen →
    `pk_specimen_*`; drug/analyte → `pk_drug_*`; population/demographics →
    `pk_population_*`.
@@ -69,14 +80,23 @@ for parent drug + metabolite → MUST include:
 pk_drug_summary, pk_drug_individual`.
 
 ## Output
-Write `design.json` to the scratch directory:
+Write `design.json` to the scratch directory, with **exactly these three keys and
+no others**:
 
 ```json
 { "pmid": "<pmid>", "pipeline_tools": ["pk_summary", "pe_study_outcome", ...],
   "reasoning": "<which dimensions/granularities you matched>" }
 ```
 
-Every entry MUST be one of the 10 labels in the table above (exact spelling).
+- `pipeline_tools` — a **flat array of label strings**, not objects. Every entry
+  MUST be one of the 10 labels in the table above (exact spelling).
+- `reasoning` — a **single string**, not an object keyed by pipeline.
+
+The key is `pipeline_tools`. Do **not** name it `selected_pipelines` — that name
+belongs to the *next* artifact, `selected_pipelines.json`, which the dispatch
+script writes for you and which has a different shape. Do not add
+`paper_type`, `rationale`, `excluded_pipelines`, or `candidate_set`; anything
+you want to say about what you rejected goes in the `reasoning` string.
 
 ## Deterministic dispatch
 Do not hand-write the procedure paths. Run the bundled map to produce the dispatch

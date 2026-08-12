@@ -11,8 +11,10 @@ Patient ID column and would be discarded at stage 2.
 - `00_markdown_table.md` — this table's source in markdown (Stage 0a output).
 - `inputs.md` — caption + footnotes + paper title.
 - `full_text.md` — the paper's full text, at the **run root**
-  (`../full_text.md` relative to a `table_<n>/` directory), if the user supplied
-  it. May be absent.
+  (`../full_text.md` relative to a `table_<n>/` directory). Step 0 of the
+  procedure copies it there from `./.paper_assets/<pmid>/paper_text.md` (the
+  prepared file's name differs) or from the user's pasted text. May be absent if
+  neither was available.
 
 Read these now.
 

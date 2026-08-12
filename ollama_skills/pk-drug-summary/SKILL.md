@@ -21,6 +21,12 @@ demographic-refinement and verify/correct procedures in
    minimum). This is the primary source; everything is read from it.
 2. **Paper title** — recommended; helps disambiguate the drug/population.
 
+**If the paper was already prepared** by `pk-pe-prepare`, do not ask for a paste:
+read the inputs from `./.paper_assets/<pmid>/` (rooted at `$SKILL_SCRATCH_FOLDER`
+when that variable is set) — `paper_text.md` for the full text, `abstract.md` if
+you want the abstract, and the paper title from that file's H1 or from
+`manifest.json`.
+
 There is **no input table**. If the user only supplies a PMID or URL, ask them to
 paste the full text — this skill does not fetch papers.
 

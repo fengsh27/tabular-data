@@ -29,6 +29,13 @@ procedure in `this skill`.
    `Patient ID`; without it, such a table has no Patient ID and is discarded at
    stage 2. Ask for it when the table lacks an obvious per-row subject id.
 
+**If the paper was already prepared** by `pk-pe-prepare`, do not ask for a paste:
+read the inputs from `./.paper_assets/<pmid>/` (rooted at `$SKILL_SCRATCH_FOLDER`
+when that variable is set). Each `table_<n>.md` holds that table's caption,
+footnotes, **and the full table as Markdown**; `table_<n>.html` is the same table
+as HTML. `paper_text.md` is the full text this skill needs for
+Stage 0c, and `manifest.json` lists the tables and the paper title.
+
 If the user only supplies a PMID or a URL, ask them to paste the table HTML,
 captions, and the full text — this skill does not fetch papers.
 
@@ -107,8 +114,11 @@ table's `13_final.csv`.
 ## Procedure
 The top level is a loop over tables:
 
-0. **Up front** — if the user supplied the paper's full text, write it verbatim
-   to `full_text.md` at the run root (Stage 0c reads it to infer Patient IDs).
+0. **Up front** — put the paper's full text at the run root as `full_text.md`
+   (Stage 0c reads it to infer Patient IDs). Copy it verbatim from
+   `./.paper_assets/<pmid>/paper_text.md` when the paper was prepared — the
+   prepared file has a different name, and Stage 0c will not find it otherwise —
+   or from the user's pasted text. Only skip this if neither exists.
 1. **Stage 0a** — convert every input table to markdown → `00_all_tables.md`.
 2. **Stage 0b** — if more than one table, select the PK tables → `00_selection.md`.
    With a single table, skip the selection judgment (still nest it in `table_1/`).
@@ -123,8 +133,16 @@ fails, then carry forward noting any residual issue), and **write** the output t
 its scratch file before moving on.
 
 ### Stage 0a — Convert all input tables (not a prompt file)
-For each HTML table, convert it with the shared script (one `<table>` per
-invocation) — do **not** parse HTML by hand:
+**If the paper was prepared, the conversion is already done.** Each
+`./.paper_assets/<pmid>/table_<n>.md` holds the caption, the footnotes, and the
+table as Markdown under a `**Table:**` heading. Take that Markdown block as the
+table, and the caption/footnotes above it for `inputs.md`. Do **not** re-convert
+`table_<n>.html`: `prepare_paper.py` produced that block by running the very
+script below on that very HTML, so re-running it can only reproduce the same
+bytes or introduce a discrepancy. This path needs no `beautifulsoup4`.
+
+Otherwise — the user pasted raw HTML — convert each table with the shared script
+(one `<table>` per invocation); do **not** parse HTML by hand:
 
 ```
 python scripts/html_to_markdown_table.py <path-to-html>
@@ -247,8 +265,12 @@ After cleanup (stage 13), before verification, check the table:
   the criteria, list what was provided, and stop.
 - **No Patient ID in the table**: this is expected for single-patient case
   reports — Stage 0c should infer and inject one from the full text (single
-  patient → all `1`). If `full_text.md` was **not** provided, ask the user for
-  it and re-run Stage 0c. Only if, even with the full text, no per-row subject
+  patient → all `1`). If `full_text.md` is missing, get it from
+  `./.paper_assets/<pmid>/paper_text.md` and re-run Stage 0c; if there are no
+  prepared assets either, follow the Stage 0c fallback (record `needs_full_text`
+  and carry on) and ask the user for the full text — do **not** stall waiting
+  for it, since an unattended run has nobody to ask. Only if, even with the full
+  text, no per-row subject
   can be established (and the caption/title don't imply a single patient) is the
   table not individual data — then say so and stop (consider pk-summary-curation
   instead).

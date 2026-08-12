@@ -51,51 +51,61 @@ ASSETS = os.path.join(REPO, "scripts", "assets")
 PIPELINES = {
     "pk-summary-curation": {
         "desc": "Curate aggregate/summary pharmacokinetics (PK) tables (mean / median / SD / range across a cohort) from a biomedical paper into a normalized 19-column dataset. Use for summary PK tables; for per-subject tables use pk-individual-curation.",
+        "kind": "table",
         "extra_scripts": ["verify_provenance.py", "html_to_markdown_table.py", "requirements.txt"],
         "docs": ["verify_and_correct.md"],
     },
     "pk-individual-curation": {
         "desc": "Curate individual-subject pharmacokinetics (PK) tables (one row per subject per parameter) from a biomedical paper into a normalized 12-column dataset. Use when tables report per-individual PK values; do NOT use for summary/aggregate tables (use pk-summary-curation).",
+        "kind": "both",
         "extra_scripts": ["verify_provenance.py", "html_to_markdown_table.py", "requirements.txt"],
         "docs": ["verify_and_correct.md"],
     },
     "pe-study-outcome": {
         "desc": "Curate pharmacoepidemiology (PE) study-outcome tables from a paper into a normalized 12-column dataset (effect estimates, confidence intervals, p-values per outcome).",
+        "kind": "table",
         "extra_scripts": ["verify_provenance.py", "html_to_markdown_table.py", "clean_pe_outcome_rows.py", "requirements.txt"],
         "docs": ["verify_and_correct.md"],
     },
     "pe-study-info": {
         "desc": "Extract pharmacoepidemiology (PE) study metadata (design, population, exposure, outcome definitions) from a paper's full text into a 10-column single-row dataset.",
+        "kind": "fulltext",
         "extra_scripts": ["verify_provenance.py"],
         "docs": ["verify_and_correct.md"],
     },
     "pk-drug-summary": {
         "desc": "Extract summary (cohort-level) drug dosing regimens (dose amount / unit / frequency / route) from a PK paper's full text into an 11-column dataset. For per-patient dosing use pk-drug-individual.",
+        "kind": "fulltext",
         "extra_scripts": ["verify_provenance.py"],
         "docs": ["verify_and_correct.md", "refine_population.md"],
     },
     "pk-drug-individual": {
         "desc": "Extract per-patient drug dosing regimens from a PK paper's full text into an 11-column dataset. For cohort-level dosing use pk-drug-summary.",
+        "kind": "fulltext",
         "extra_scripts": ["verify_provenance.py"],
         "docs": ["verify_and_correct.md", "refine_population.md"],
     },
     "pk-population-summary": {
         "desc": "Extract summary population/demographic characteristics with statistics from a PK paper's full text into a 15-column dataset. For per-patient characteristics use pk-population-individual.",
+        "kind": "fulltext",
         "extra_scripts": ["verify_provenance.py"],
         "docs": ["verify_and_correct.md", "refine_population.md"],
     },
     "pk-population-individual": {
         "desc": "Extract per-patient population/demographic characteristics from a PK paper's full text into a 9-column dataset. For cohort-level stats use pk-population-summary.",
+        "kind": "fulltext",
         "extra_scripts": ["verify_provenance.py", "clean_population_individual_rows.py"],
         "docs": ["verify_and_correct.md", "refine_population.md"],
     },
     "pk-specimen-summary": {
         "desc": "Extract summary (cohort-level) specimen-sampling information (specimen type, sampling times) from a PK paper's full text into a 9-column dataset. For per-patient sampling use pk-specimen-individual.",
+        "kind": "fulltext",
         "extra_scripts": ["verify_provenance.py", "clean_specimen_rows.py"],
         "docs": ["verify_and_correct.md", "refine_population.md"],
     },
     "pk-specimen-individual": {
         "desc": "Extract per-patient specimen-sampling information from a PK paper's full text into a 9-column dataset. For cohort-level sampling use pk-specimen-summary.",
+        "kind": "fulltext",
         "extra_scripts": ["verify_provenance.py", "clean_specimen_rows.py"],
         "docs": ["verify_and_correct.md", "refine_population.md"],
     },
@@ -162,8 +172,44 @@ def output_note(name: str) -> str:
     )
 
 
-def make_skill_md(name: str, desc: str, body: str) -> str:
-    body = rewrite_paths(body)
+# Injected into each curation skill's "Inputs you need" section, immediately
+# BEFORE its "ask the user to paste" sentence, so pasting reads as the fallback.
+# Without this the skills never mention .paper_assets/, and the only thing
+# connecting prepare to curation is prompt text in
+# scripts/extract_by_ollama_skills_with_pmids.py -- so a skill triggered any
+# other way asks for a paste of a paper that has already been prepared.
+_PREPARED = ("**If the paper was already prepared** by `pk-pe-prepare`, do not ask for a paste:\n"
+             "read the inputs from `./.paper_assets/<pmid>/` (rooted at `$SKILL_SCRATCH_FOLDER`\n"
+             "when that variable is set)")
+_TABLES = (". Each `table_<n>.md` holds that table's caption,\n"
+           "footnotes, **and the full table as Markdown**; `table_<n>.html` is the same table\n"
+           "as HTML.")
+INPUT_NOTES = {
+    "fulltext": _PREPARED + (" — `paper_text.md` for the full text, `abstract.md` if\n"
+                             "you want the abstract, and the paper title from that file's H1 or from\n"
+                             "`manifest.json`.\n\n"),
+    "table": _PREPARED + _TABLES + (" `manifest.json` lists the tables with their row/column\n"
+                                    "counts, and the paper title is its `title` field (also the H1 of\n"
+                                    "`paper_text.md`).\n\n"),
+    "both": _PREPARED + _TABLES + (" `paper_text.md` is the full text this skill needs for\n"
+                                   "Stage 0c, and `manifest.json` lists the tables and the paper title.\n\n"),
+}
+PASTE_RE = re.compile(r"^(?:There is \*\*no input table\*\*\. )?If the user only supplies a PMID", re.M)
+
+
+def insert_input_note(body: str, kind: str) -> str:
+    """Put the prepared-assets note ahead of the skill's paste instruction."""
+    note = INPUT_NOTES.get(kind)
+    if not note:
+        return body
+    m = PASTE_RE.search(body)
+    if not m:
+        raise RuntimeError("no 'ask the user to paste' sentence to anchor the input note")
+    return body[:m.start()] + note + body[m.start():]
+
+
+def make_skill_md(name: str, desc: str, body: str, kind: str = "") -> str:
+    body = insert_input_note(rewrite_paths(body), kind)
     fm = f"---\nname: {name}\ndescription: {desc}\n---\n\n"
     return fm + PATH_NOTE + "\n" + SCRATCH_NOTE + "\n" + body + "\n" + output_note(name)
 
@@ -179,7 +225,7 @@ def copy_pipeline(name: str, spec: dict) -> dict:
         body = fh.read()
     os.remove(proc)
     with open(os.path.join(dst, "SKILL.md"), "w", encoding="utf-8") as fh:
-        fh.write(make_skill_md(name, spec["desc"], body))
+        fh.write(make_skill_md(name, spec["desc"], body, spec.get("kind", "")))
 
     # rewrite paths inside every prompt file too
     pdir = os.path.join(dst, "prompts")
@@ -419,6 +465,9 @@ def build_prepare_skill() -> None:
     dst = os.path.join(DST, name)
     os.makedirs(os.path.join(dst, "scripts"), exist_ok=True)
     shutil.copy2(os.path.join(ASSETS, "prepare_paper.py"), os.path.join(dst, "scripts", "prepare_paper.py"))
+    # prepare_paper.py imports this sibling to build table_<n>.md's markdown table
+    shutil.copy2(os.path.join(ASSETS, "html_to_markdown_table.py"),
+                 os.path.join(dst, "scripts", "html_to_markdown_table.py"))
     shutil.copy2(os.path.join(CC_SCRIPTS, "requirements.txt"), os.path.join(dst, "scripts", "requirements.txt"))
 
     desc = (
@@ -446,26 +495,34 @@ python scripts/prepare_paper.py <paper.html|paper.xml> --out "$OUT/.paper_assets
 python scripts/prepare_paper.py <dir> --out "$OUT/.paper_assets"
 python scripts/prepare_paper.py <paper> --dry-run     # report only, write nothing
 ```
-Needs `beautifulsoup4` **only for HTML** input (`pip install -r scripts/requirements.txt`);
-the XML path is Python-3 standard library only.
+Needs `beautifulsoup4` (`pip install -r scripts/requirements.txt`) for HTML input
+and for the Markdown table conversion on both paths. XML parsing itself is
+Python-3 standard library only; without bs4 an XML paper still yields every
+output except the `**Table:**` block.
 
 ## Output — `./.paper_assets/<pmid>/`
 | File | Contents |
 |---|---|
 | `paper_text.md` | title (H1) + body as Markdown; references stripped; each data table → a `[Table N]` marker |
 | `abstract.md` | the abstract as Markdown |
-| `table_<n>.md` | table *n*'s caption + footnotes |
+| `table_<n>.md` | table *n*'s caption, footnotes, **and the table itself** as a Markdown table (under `**Table:**`) |
 | `table_<n>.html` | table *n* as a `<section>` (caption + table + footnotes) |
-| `manifest.json` | title, table count, and the `[Table N]` ↔ file mapping |
+| `manifest.json` | title, table count, per-table `n_rows` / `n_cols`, and the `[Table N]` ↔ file mapping |
 
 Tables are numbered by order of appearance. `<pmid>` is the input file's base name.
+
+`table_<n>.md` is the **readable** form — plain text, and 4–40× smaller than the
+same table's `.html`. Use it to read or reason about a table. `table_<n>.html`
+stays the source of truth for the curation skills, which re-convert it with the
+same converter (`scripts/html_to_markdown_table.py`), so the two agree.
 
 ## Hand off
 Point the curation skills at the produced `<pmid>/` directory:
 - **table** skills (`pk-summary-curation`, `pk-individual-curation`,
   `pe-study-outcome`) → `table_<n>.html`;
 - **full-text** skills (`pk-drug-*`, `pk-specimen-*`, `pk-population-*`,
-  `pe-study-info`) → `paper_text.md` (+ `abstract.md`).
+  `pe-study-info`) → `paper_text.md` (+ `abstract.md`);
+- **routing** (`pk-pe-route`) → `table_<n>.md`.
 
 ## Scope & notes
 - **HTML** uses best-effort PMC / Wiley / Elsevier selectors. **XML** uses the

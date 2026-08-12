@@ -26,8 +26,16 @@ working dir (never inside the skill folder; it is git-ignored): `identify.json`,
 `design.json`, and the final `selected_pipelines.json`.
 
 ## Workflow
-1. **Stage 1 — Identify** (`prompts/01_identify.md`): from the title + `abstract.md`,
-   classify the paper as **PK / PE / Both / Neither** → `identify.json`.
+1. **Stage 1 — Identify** (`prompts/01_identify.md`): from the title, `abstract.md`,
+   and the table digest, classify the paper as **PK / PE / Both / Neither** →
+   `identify.json`. Run the digest on **every** paper — a paper's PK content often
+   appears only in its tables:
+   ```bash
+   python scripts/table_digest.py "$OUT"/.paper_assets/<pmid>
+   ```
+   It prints each table's caption, footnotes, and first rows, trimmed from the
+   full `table_<n>.md`. Read a `table_<n>.md` in full only if the digest cut off
+   a table that looks relevant.
 2. **Paper-type gate** — the classification fixes the candidate set:
    - **PK** → choose only from the **PK** pipelines (`pk_*`).
    - **PE** → choose only from the **PE** pipelines (`pe_*`).
@@ -65,9 +73,16 @@ Each `skill` is the name of the standalone curation skill to trigger next. For a
 `Neither` paper, `selected` is `[]`.
 
 ## Notes
-- **Tables are visible to the design stage by design.** The legacy step saw table
-  data inline in the full text; Stage 2 reconstructs that by splicing the
-  `table_<n>.md` files back at their `[Table N]` markers. Do not run the design
-  stage on the bare `paper_text.md` (markers only).
+- **Both stages see the tables, at different depths.** `table_<n>.md` carries the
+  caption, footnotes, and the full table as Markdown. Stage 1 reads a trimmed
+  digest of it; Stage 2 needs the tables in context — the legacy step saw table
+  data inline in the full text, so Stage 2 reconstructs that by splicing the
+  whole `table_<n>.md` files back at their `[Table N]` markers. Do not run the
+  design stage on the bare `paper_text.md` (markers only). Neither stage needs
+  `table_<n>.html`.
+- **Granularity comes from the rows.** Whether a table is individual- or
+  summary-level is visible in its first column (`Patient`, `Volunteer`, bare
+  `1, 2, 3`), and captions routinely omit it — which is why Stage 2 splices real
+  tables rather than captions.
 - The **label→skill map is deterministic** (`scripts/pipeline_skill_map.py`); only
   the identify + design judgements are model-driven.
