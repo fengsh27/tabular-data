@@ -108,30 +108,48 @@ expands, the `:-.` fallback wins, and the file lands under the CWD — the scrat
 dir. `run_curation()` saw nothing at the expected path and recorded a failure
 while the rows sat one directory away.
 
+Both recovery tiers have now been applied to
+`.../tabular-data-skills-osc-job/output_qwen36_0710`:
+
 | | pipelines | rows |
 |---|---|---|
-| reported succeeded | 671 / 816 (82%) | |
-| recovered from scratch (`e3f9af6`, applied) | +78 → 749 (92%) | 1,995 |
-| still recoverable from each skill's stage finals | +40 → ~97% | 4,004 |
-| genuine failures | 15 timeouts + ~24 absent | |
+| reported succeeded | 671 / 816 (82.2%) | |
+| tier 1 — finished `<skill>.csv` found in scratch | +78 → 749 (91.8%) | 1,995 |
+| tier 2 — reassembled from each skill's stage finals | +40 → **789 (96.7%)** | 4,004 |
+| **recovered in total** | **118** | **5,999** |
+| genuine failures remaining | 27 (3.3%) | |
 
-Fixed in `e3f9af6`: absolute destination pinned in the prompt, stray locations
-searched before declaring failure, `run_claude` returns a status string instead
-of a bool, and `skills_recovered` / `skills_failed` record per-skill reasons.
+Papers: `ok` 96 → **173**, `partial` 103 → 26. Originals kept as
+`summary_*.csv.bak`; provenance for every recovered file (pmid, skill, kind, row
+count, source paths) is in `output_qwen36_0710/recovery_manifest.csv`.
+Reassembled results are marked `<skill>:stage` in `skills_recovered` — a
+reconstruction is not a delivered result and downstream should be able to tell.
 
-- [ ] **Extend `recover_stray_curation_csvs.py` to the stage finals.** Each skill
-      keeps its own scratch (`.pk_curation_scratch`, `.pe_study_outcome_scratch`,
-      …) with a numbered final (`13_final.csv`, `05_final.csv`, …) plus a
-      `combined_final.csv` when several tables were curated. Prefer the combined
-      file; otherwise concatenate the per-table finals **only when every part's
-      header is byte-identical** — 3 cases in this batch fail that check and must
-      be refused, not glued. Verified for `pk-summary-curation` that
-      `13_final.csv` carries the same header as a delivered CSV; **the other nine
-      are unverified.** Mark these `recovered:stage`, since the skill's final step
-      may do more than concatenate.
+**The 27 that genuinely failed:** 15 one-hour timeouts, 3 unattributable
+(pmid-less file, see below), ~9 with nothing on disk. Plus 13 zero-row results
+skipped as ambiguous.
+
+Fixes, in order:
+- `e3f9af6` — absolute destination pinned in the prompt, stray locations searched
+  before declaring failure, `run_claude` returns a status string instead of a
+  bool, `skills_recovered` / `skills_failed` record per-skill reasons.
+- `e01bcdd` — **misattribution bug in the above.** `scratch/<skill>.csv` carries
+  no pmid and the scratch dir is shared by every paper in the job, so that file
+  belongs to whichever paper wrote it last; the original candidate list would
+  have handed one paper's rows to another (it matched one job-level file for 22
+  different papers). Candidates must now contain the pmid; the pmid-less case is
+  still recovered but gated on `mtime >= invocation start`.
+- `da2c5fe` — tier 2. Per-skill scratch/final mapping read off each `SKILL.md`
+  (a wildcard picks up other skills' output and inflated an early count 3×);
+  parts concatenate only on byte-identical headers; the assembled header must
+  match that skill's natively delivered header. **All 10 skills had a delivered
+  example in this batch, so no schema went unverified.** `csv.writer` also needed
+  `lineterminator="\n"` — its `\r\n` default made every reconstruction differ
+  from a delivered file by line endings alone.
+
 - [ ] **15 timeouts at the 3600 s cap**, concentrated in `pe-study-outcome` — the
-      pipeline handling the largest tables. Genuine failures; needs a longer cap
-      or table-level chunking.
+      pipeline handling the largest tables. The only genuinely lost work; needs a
+      longer cap or table-level chunking.
 - [ ] **Zero-row CSVs are ambiguous.** A skill signals "nothing to extract" by
       writing a header-only CSV, but so does one that gave up. 43 of 678
       delivered CSVs are header-only.
