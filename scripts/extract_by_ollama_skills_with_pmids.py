@@ -271,12 +271,33 @@ def stray_csv_candidates(scratch: Path, output: Path, pmid: str, skill: str) -> 
     snippet, the variable never expands, the `:-.` fallback wins, and the CSV
     lands under the CWD -- which is the scratch dir. The run looks like a
     failure while the curated rows sit on disk one directory away.
+
+    Every candidate MUST carry the pmid. The scratch dir is reused by every paper
+    in the job, so a pmid-less `<skill>.csv` at the scratch root belongs to
+    whichever paper wrote it last -- picking it up here would attach one paper's
+    curated rows to another. Such files are handled by the mtime-guarded case
+    below, never by path alone.
     """
     return [
-        scratch / pmid / f"{skill}.csv",   # ./<pmid>/<skill>.csv  -- by far the most common
-        scratch / f"{skill}.csv",          # ./<skill>.csv
-        output / f"{skill}.csv",           # output/<skill>.csv, pmid level dropped
+        scratch / pmid / f"{skill}.csv",   # ./<pmid>/<skill>.csv -- by far the most common
+        output / pmid / f"{skill}.csv",    # already correct, re-checked defensively
     ]
+
+
+def fresh_unattributable_csv(scratch: Path, skill: str, started: float) -> Optional[Path]:
+    """A pmid-less `<skill>.csv` written DURING this run, so it is this paper's.
+
+    Path alone cannot attribute it (the scratch dir is shared across the job's
+    papers), but a modification time after this skill invocation started can:
+    no other paper was running.
+    """
+    cand = scratch / f"{skill}.csv"
+    try:
+        if cand.is_file() and cand.stat().st_mtime >= started:
+            return cand
+    except OSError:
+        pass
+    return None
 
 
 def run_curation(args: argparse.Namespace, skill: str, pmid: str, scratch: Path,
@@ -303,6 +324,7 @@ def run_curation(args: argparse.Namespace, skill: str, pmid: str, scratch: Path,
         f"write it relative to the current directory, and do not rely on $SKILL_OUTPUT_FOLDER being "
         f"expanded. Do not stop early or skip stages."
     )
+    started = time.time()
     status = run_claude(args, prompt, scratch, env, extra_dirs, logdir / f"{pmid}_{skill}.log")
     if args.dry_run:
         return result, "dry-run"
@@ -311,7 +333,11 @@ def run_curation(args: argparse.Namespace, skill: str, pmid: str, scratch: Path,
 
     # Not at the expected path. Before calling it a failure, look where the
     # model actually writes -- this accounted for 61% of one batch's "failures".
-    for cand in stray_csv_candidates(scratch, output, pmid, skill):
+    candidates = list(stray_csv_candidates(scratch, output, pmid, skill))
+    fresh = fresh_unattributable_csv(scratch, skill, started)
+    if fresh is not None:
+        candidates.append(fresh)
+    for cand in candidates:
         if cand.is_file() and cand.resolve() != result.resolve():
             result.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(cand, result)
