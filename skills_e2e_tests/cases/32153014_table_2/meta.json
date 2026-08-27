@@ -1,0 +1,17 @@
+{
+  "pmid": "32153014",
+  "table_id": "table_2",
+  "title_file": "title.txt",
+  "caption_file": "caption.txt",
+  "source_table_html": "source_table.html",
+  "skill": "pk-individual-curation",
+  "drug": "infliximab, etanercept",
+  "population": "pregnant women with autoimmune disease (6 patients)",
+  "notes": "Rowspan regression case. The source table has a 3-row header (rowspan=3 leaf columns beside a colspan=3 group) and pairs of physical rows per patient: the first carries every measurement with rowspan=2, the second supplies ONLY the second line of the non-spanning 'Dosing regimen' column. That interleaving broke the converter two ways -- carried cells were emitted only as a contiguous prefix, so everything after the first non-carried column was dropped from the continuation row; and the ragged-row padding read rowspan_tracker AFTER the whole table was parsed, filling those gaps with leftovers from unrelated rows. The result gave patients 1 and 2 patient 3's concentrations, and folded data values into two column NAMES ('Cord-to-maternal ratio.1.71.1.71'). Both curation runs over this paper (qwen3.8:27b and qwen3.6:35b) burned their whole context trying to reconcile the contradiction and produced no output at all. Only the deterministic stage-00 oracle is bundled; no LLM stages were captured for this case.",
+  "oracles": {
+    "stage_00_markdown": "expected_00_markdown_table.md"
+  },
+  "oracle_kind": {
+    "stage_00_markdown": "deterministic (byte-exact; enforced by test_stage0_conversion.py). Verified by hand against the source markup: each patient's continuation row must repeat that patient's own measurements, and the two ratio columns must be plain names carrying no numbers."
+  }
+}

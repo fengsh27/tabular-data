@@ -31,13 +31,31 @@ except ImportError:  # pragma: no cover
     sys.exit(2)
 
 
+def _place_carried_cells(rowspan_tracker, row_data, col_idx):
+    """Emit cells carried down from earlier rows' rowspans, starting at col_idx.
+
+    Returns the next free column index. This must run before *every* real cell,
+    not only at the start of the row: a carried cell can sit between two real
+    cells -- e.g. a row that supplies only the second line of one non-spanning
+    column, while every other column spans down from the row above.
+    """
+    while col_idx in rowspan_tracker:
+        text, remaining = rowspan_tracker[col_idx]
+        row_data.append(text)
+        if remaining > 1:
+            rowspan_tracker[col_idx] = (text, remaining - 1)
+        else:
+            del rowspan_tracker[col_idx]
+        col_idx += 1
+    return col_idx
+
+
 def html_table_to_markdown(html):
     """Convert an HTML table into a Markdown table, handling colspan and rowspan."""
     soup = BeautifulSoup(html, "html.parser")
     table = soup.find("table")
     if not table:
         return ""
-
     rows = table.find_all("tr")
 
     table_matrix = []
@@ -49,26 +67,22 @@ def html_table_to_markdown(html):
         row_data = []
         col_idx = 0
 
-        # Fill in cells carried down from a previous row's rowspan
-        while col_idx in rowspan_tracker and rowspan_tracker[col_idx][1] > 0:
-            row_data.append(rowspan_tracker[col_idx][0])
-            rowspan_tracker[col_idx] = (
-                rowspan_tracker[col_idx][0],
-                rowspan_tracker[col_idx][1] - 1,
-            )
-            if rowspan_tracker[col_idx][1] == 0:
-                del rowspan_tracker[col_idx]
-            col_idx += 1
-
-        is_header = all(col.name == "th" for col in cols)
+        # A row with no cells of its own is not a header row -- it is a
+        # continuation row made up entirely of cells spanning down from above.
+        is_header = bool(cols) and all(col.name == "th" for col in cols)
 
         for col in cols:
+            col_idx = _place_carried_cells(rowspan_tracker, row_data, col_idx)
+
             for sup in col.find_all("sup"):  # Drop superscripts (footnote markers)
                 sup.decompose()
 
-            text = "".join(col.stripped_strings)
-            colspan = int(col.get("colspan", 1))
-            rowspan = int(col.get("rowspan", 1))
+            # Collapse internal whitespace: a cell whose text is split over
+            # several source lines otherwise carries a newline into the row,
+            # which splits one Markdown row across several physical lines.
+            text = re.sub(r"\s+", " ", "".join(col.stripped_strings)).strip()
+            colspan = int(col.get("colspan", 1) or 1)
+            rowspan = int(col.get("rowspan", 1) or 1)
 
             row_data.extend([text] * colspan)  # Expand colspan cells
 
@@ -78,17 +92,18 @@ def html_table_to_markdown(html):
 
             col_idx += colspan
 
+        # Carried cells trailing after this row's last real cell.
+        col_idx = _place_carried_cells(rowspan_tracker, row_data, col_idx)
+
         max_cols = max(max_cols, len(row_data))
         table_matrix.append((row_data, is_header))
 
-    # Normalize all rows to the maximum column count, keeping rowspan values
+    # Pad genuinely ragged rows (malformed HTML) with blanks. Padding from
+    # rowspan_tracker here read its state *after* the whole table was parsed,
+    # so short rows were filled with values left over from unrelated rows.
     for row, _ in table_matrix:
         while len(row) < max_cols:
-            missing_col_idx = len(row)
-            if missing_col_idx in rowspan_tracker:
-                row.append(rowspan_tracker[missing_col_idx][0])
-            else:
-                row.append("")
+            row.append("")
 
     # Identify the contiguous header rows at the top
     header_end_idx = 0
