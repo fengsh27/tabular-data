@@ -39,7 +39,15 @@ Read it now.
   **population-PK (PopPK) modeling results**, **statistical modeling**, or
   **correlations between PK parameters and other variables**;
 - focuses only on **patient demographics / baseline characteristics**,
-  **treatment groups or study-arm information**, or **non-PK safety outcomes**.
+  **treatment groups or study-arm information**, or **non-PK safety outcomes**;
+- **summarises cases reported in OTHER publications** — a literature-review
+  table. The tell is a per-row citation, author name, or bracketed reference
+  number (e.g. `Klenske et al. 2019 [12]`), often sitting in a column whose
+  header is empty and therefore rendered `Unnamed_0`. Those subjects belong to
+  the cited papers, not to this one, so none of their values may be curated.
+  **A citation is not a subject identifier**: exclude a table whose only
+  per-row identifier is a citation, however much its caption ("Cases of …")
+  and its concentration columns look like per-individual PK data.
 
 When a table is borderline, judge by its main content: if its primary purpose
 is reporting measured PK concentrations or parameters, include it; if its
