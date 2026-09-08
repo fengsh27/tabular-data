@@ -184,7 +184,7 @@ instruction_prompt = """Before you jump to conclusions, please think step by ste
 Now, let's start.
 """
 
-# @pytest.mark.skip()
+@pytest.mark.skip()
 def test_gpt_oss_1_message():
     llm = get_gpt_oss()
     # res = llm.invoke("You are a biomedical data verification assistant with expertise in pharmacokinetic population and individual and data accuracy validation. Here is my scenario: " + msg) # ("Hello, how are you?")
@@ -196,6 +196,7 @@ def test_gpt_oss_1_message():
     logger.info(res)
     assert res is not None
 
+@pytest.mark.skip()
 def test_gpt_oss_2_with_direct_invoke():
     llm = get_gpt_oss()
     res = llm.invoke(msg + "\n\n" + instruction_prompt)
@@ -203,7 +204,7 @@ def test_gpt_oss_2_with_direct_invoke():
     assert res is not None
     assert res.content != "", f"content is empty, additional_kwargs={res.additional_kwargs}"
 
-# @pytest.mark.skip()
+@pytest.mark.skip()
 def test_gpt_oss_1_with_direct_invoke():
     import requests, json
     base_url = os.environ.get("OLLAMA_BASE_URL", "").rstrip("/")
@@ -225,7 +226,7 @@ def test_gpt_oss_1_with_direct_invoke():
     logger.info("message keys: %s", list(message.keys()))
     assert resp.status_code == 200
 
-# @pytest.mark.skip()
+@pytest.mark.skip()
 def test_gpt_oss_1():
     
     llm = get_gpt_oss()
@@ -242,7 +243,7 @@ def test_gpt_oss_1():
     logger.info(res)
     assert res is not None
 
-# @pytest.mark.skip()
+@pytest.mark.skip()
 def test_gpt_oss_1_with_long_answer():
     msgs = [
     ("system", msg),
