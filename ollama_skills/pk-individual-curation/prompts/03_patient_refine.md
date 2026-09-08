@@ -34,14 +34,29 @@ Read these files now.
     "Nursing/Breastfeeding/Lactation"
 - **Pediatric/Gestational age** — the subject's age (or age range), or pregnancy
   weeks, **only if the source explicitly states an age**. Keep the original
-  wording. Do **not** infer age from a sampling time or dosing day (e.g.
-  "Concentrations on Day 7" is a time point, not an age). Use `"N/A"` otherwise.
+  wording.
+  - **Look before you write `N/A`.** Scan the row labels and column headers of
+    `00_markdown_table.md`, then `inputs.md`, for a stated age. Qualifying
+    labels include "Age", "Gestational age", "Gestational age at birth", "GA",
+    "Postmenstrual age", "Postnatal age", "Age at delivery". Under such a label,
+    values may look like `38w0d`, "38 + 3", "at 32 weeks gestation", or
+    "6 months" — a bare duration with no age label is a time point, not an age.
+  - **Gestational age qualifies, and it is not the mother's age in years.** For
+    a maternal subject measured at or around delivery, the pregnancy's
+    gestational age *is* that subject's value for this column. Do not reject it
+    because the mother's chronological age is absent or sits in another table.
+  - Do **not** infer age from a sampling time or dosing day (e.g.
+    "Concentrations on Day 7" is a time point, not an age).
+  - Use `"N/A"` only after that scan finds nothing.
 
 Use `"N/A"` where information cannot be reasonably inferred.
 
 ## Reasoning then answer
 For each row, note any Population / Pregnancy-stage normalization and where a
-Pediatric/Gestational age (if any) came from, then produce the table.
+Pediatric/Gestational age came from. If you are writing `N/A` for the age, name
+the row labels and headers you checked — "the table does not state an age" is a
+valid reason only once you have quoted what the table's labels actually are.
+Then produce the table.
 
 ## Output of this stage
 A markdown table, columns exactly
@@ -57,7 +72,9 @@ A markdown table, columns exactly
 Before continuing, sanity-check:
 - **same Patient IDs, same count, same order** as `02_patient_table.md`,
 - columns are exactly the four above,
-- no age was invented from a time point.
+- no age was invented from a time point,
+- **no stated age was missed** — if `00_markdown_table.md` has a row or column
+  naming an age or a gestational age, this column is not all `N/A`.
 
 If that check fails, redo this stage once.
 

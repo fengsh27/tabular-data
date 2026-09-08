@@ -23,6 +23,15 @@ volunteer number, mother–infant pair, etc.), then **no injection is needed** �
 leave `00_markdown_table.md` unchanged and skip to Output, recording
 `already_present`.
 
+A **citation, author name, or bracketed reference number** (e.g.
+`Klenske et al. 2019 [12]`) is **never** a Patient ID — not even when it is
+unique per row, and not even when its column is header-less and therefore
+rendered `Unnamed_0`. It identifies a *paper*, and the subjects behind it
+belong to that paper rather than this one. If the table's only per-row
+identifier is a citation, it is a literature-review table that stage 0b should
+have excluded: record `not_this_paper`, inject nothing, and curate nothing from
+it.
+
 ## Step 2 — Infer a Patient ID per row (only if Step 1 found none)
 Using the **full text and caption**, infer the Patient ID for **each row**, in
 table-row order:
@@ -53,8 +62,9 @@ which rows map to which), then produce the result.
 - If ids were injected: the rewritten `00_markdown_table.md` (with `Patient ID`
   as the first column).
 - A short note `00c_patient_id.md` recording one of: `already_present`,
-  `inferred` (with the id list and the single-vs-multiple-patient reasoning), or
-  `needs_full_text` (no id, none injected).
+  `inferred` (with the id list and the single-vs-multiple-patient reasoning),
+  `needs_full_text` (no id, none injected), or `not_this_paper` (the only
+  per-row identifier is a citation — a literature-review table; curate nothing).
 
 Before continuing, sanity-check:
 - if injected, the number of `Patient ID` values equals the table's row count,

@@ -47,10 +47,22 @@ it; otherwise keep the original wording:
 
 **Pediatric/Gestational age** — the child's age (or age range) at a specific
 point in the study, or the pregnancy week count. Retain the original wording
-where possible. Only fill this if an age is **explicitly stated** — do not
-infer age from the timing of data recording or drug administration. For
-example, "Concentrations on Day 7" is a measurement time point, not an age,
-and must not be placed here.
+where possible. Only fill this if an age is **explicitly stated**.
+
+- **Look before you write `N/A`.** Scan the row labels and column headers of
+  `00_markdown_table.md`, then `inputs.md`, for a stated age. Qualifying labels
+  include "Age", "Gestational age", "Gestational age at birth", "GA",
+  "Postmenstrual age", "Postnatal age", "Age at delivery". Under such a label,
+  values may look like `38w0d`, "38 + 3", "at 32 weeks gestation", "38–40 wk",
+  or "6 months" — a bare duration with no age label is a time point, not an age.
+- **Gestational age qualifies, and it is not the mothers' age in years.** For a
+  maternal cohort measured at or around delivery, the pregnancy's gestational
+  age *is* that cohort's value for this column. Do not reject it because the
+  mothers' chronological age is absent or sits in another table.
+- Do **not** infer age from the timing of data recording or drug
+  administration. For example, "Concentrations on Day 7" is a measurement time
+  point, not an age, and must not be placed here.
+- Use `"N/A"` only after that scan finds nothing.
 
 **Subject N** — carry through unchanged from `02_patient_table.md`.
 
@@ -65,8 +77,11 @@ Use `"N/A"` for any element that cannot be reasonably inferred.
 
 ## Reasoning then answer
 For each input row, state how you mapped its Population and Pregnancy stage to
-standard categories (or why you kept the original), and what — if anything —
-explicitly justifies a Pediatric/Gestational age. Then produce the table.
+standard categories (or why you kept the original), and what explicitly
+justifies a Pediatric/Gestational age. If you are writing `N/A` for the age,
+name the row labels and headers you checked — "the source states no age" is a
+valid reason only once you have quoted what the table's labels actually are.
+Then produce the table.
 
 ## Output of this stage
 Produce a markdown table with exactly these columns:
@@ -80,7 +95,9 @@ Produce a markdown table with exactly these columns:
 Before continuing, sanity-check:
 - the output has the **same number of rows** as `02_patient_table.md`,
 - the Subject N column matches `02_patient_table.md` row-for-row, in order,
-- every cell is filled (a literal `N/A` counts as filled).
+- every cell is filled (a literal `N/A` counts as filled),
+- **no stated age was missed** — if `00_markdown_table.md` has a row or column
+  naming an age or a gestational age, this column is not all `N/A`.
 
 If the row count or Subject N ordering does not match the input, redo this
 stage once — re-anchor on the input rows one at a time rather than
@@ -99,13 +116,21 @@ complete, exact table.
 |------------|-----------------|-----------|
 | Pregnant women, 3rd trimester | N/A | 20 |
 | Newborns at birth | N/A | 18 |
+| Pregnant women at delivery | N/A | 15 |
 ```
 
+with `00_markdown_table.md` carrying a row labelled
+`Gestational age at delivery | ... | 38-40 wk`.
+
 **Reasoning**: "Pregnant women, 3rd trimester" → Population "Maternal",
-Pregnancy stage "Trimester 3"; no explicit age, so Pediatric/Gestational age
-is N/A. "Newborns at birth" → Population "Neonates"; not pregnancy-related, so
-Pregnancy stage N/A; "at birth" is a stage descriptor, not a stated age → N/A.
-Both Subject Ns carried through unchanged; 2 rows in, 2 rows out.
+Pregnancy stage "Trimester 3"; the source states no age under any age label, so
+Pediatric/Gestational age is N/A. "Newborns at birth" → Population "Neonates";
+not pregnancy-related, so Pregnancy stage N/A; "at birth" is a stage
+descriptor, not a stated age → N/A. "Pregnant women at delivery" → Population
+"Maternal", Pregnancy stage "Delivery"; the source table has
+a `Gestational age at delivery` row reading "38-40 wk", which is an explicitly
+stated gestational age → Pediatric/Gestational age "38-40 wk". All Subject Ns
+carried through unchanged; 3 rows in, 3 rows out.
 
 **Result**:
 
@@ -114,4 +139,5 @@ Both Subject Ns carried through unchanged; 2 rows in, 2 rows out.
 |------------|-----------------|---------------------------|-----------|
 | Maternal | Trimester 3 | N/A | 20 |
 | Neonates | N/A | N/A | 18 |
+| Maternal | Delivery | 38-40 wk | 15 |
 ```

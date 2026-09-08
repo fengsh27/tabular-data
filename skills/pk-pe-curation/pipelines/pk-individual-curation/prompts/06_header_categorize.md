@@ -24,7 +24,10 @@ Assign each column header exactly one of:
 - **`Patient ID`** — a column that identifies the individual subject (an
   explicit patient/subject/case id, or an inferred unique unit). **At least one
   column must be `Patient ID`.** A column that is *only* a generic subject
-  number with no identifying role is `Uncategorized`.
+  number with no identifying role is `Uncategorized`. A column of citations,
+  author names, or bracketed reference numbers (e.g. `Klenske et al. 2019 [12]`
+  — often header-less, rendered `Unnamed_0`) is **never** `Patient ID`: it
+  identifies a paper, not a subject. Categorize it `Uncategorized`.
 - **`Parameter value`** — a column holding an individual subject's measured PK
   value for some parameter (the header names the parameter, e.g.
   `Cmax (ng/mL)`, `Infant's plasma (ng/ml)`; the cells are that subject's value).
