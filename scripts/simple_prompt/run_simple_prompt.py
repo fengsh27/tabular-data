@@ -17,6 +17,7 @@ Add --dry-run to render the prompts without contacting the model.
 from __future__ import annotations
 
 import argparse
+import importlib
 import json
 import os
 import re
@@ -26,7 +27,12 @@ import urllib.error
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import _common as common  # noqa: E402
+
+# --schema picks the column set / parser: pk_individual (default, _common.py)
+# or pk_summary (_common_summary.py). Both expose the same parse_csv/write_csv/
+# COLS surface, so the rest of this script does not need to know which one it
+# got.
+SCHEMA_MODULES = {"pk_individual": "_common", "pk_summary": "_common_summary"}
 
 TABLE_FILES = ("00_markdown_table.md", "inputs.md")
 
@@ -52,13 +58,23 @@ def resolve_base_url(explicit: str | None) -> str:
     return raw.rstrip("/")
 
 
-def call_ollama(base_url, model, prompt, temperature, num_ctx, timeout, retries=2):
+def call_ollama(base_url, model, prompt, temperature, num_ctx, timeout, retries=2,
+                 think=None):
+    """Return the parsed /api/generate body (not just "response").
+
+    A thinking model can spend its whole generation budget inside <think>...
+    and never reach an answer; when that happens Ollama's "response" comes
+    back empty while "thinking" holds everything the model actually wrote.
+    Callers need both fields to tell that apart from a real empty answer.
+    """
     payload = {
         "model": model,
         "prompt": prompt,
         "stream": False,
         "options": {"temperature": temperature, "num_ctx": num_ctx},
     }
+    if think is not None:
+        payload["think"] = think
     data = json.dumps(payload).encode()
     last = None
     for attempt in range(retries + 1):
@@ -69,7 +85,7 @@ def call_ollama(base_url, model, prompt, temperature, num_ctx, timeout, retries=
                 headers={"Content-Type": "application/json"},
             )
             with urllib.request.urlopen(req, timeout=timeout) as resp:
-                return json.loads(resp.read().decode()).get("response", "")
+                return json.loads(resp.read().decode())
         except Exception as exc:  # noqa: BLE001 - report and retry
             last = exc
             if attempt < retries:
@@ -100,6 +116,8 @@ def main() -> int:
     ap.add_argument("--prompt", required=True)
     ap.add_argument("--scratch", required=True, help="a .pk_individual_scratch tree")
     ap.add_argument("--out", required=True)
+    ap.add_argument("--schema", choices=sorted(SCHEMA_MODULES), default="pk_individual",
+                    help="column set / parser to use (default: pk_individual)")
     ap.add_argument("--model", default=os.environ.get("SIMPLE_PROMPT_MODEL", "qwen3.8:27b"))
     ap.add_argument("--base-url", default=None)
     ap.add_argument("--pmids", default=None, help="comma list, or a file of PMIDs")
@@ -110,6 +128,7 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
+    common = importlib.import_module(SCHEMA_MODULES[args.schema])
     base_url = resolve_base_url(args.base_url)
     template = load_prompt(args.prompt)
     if "{TABLE}" not in template:
@@ -152,17 +171,38 @@ def main() -> int:
             if args.resume and os.path.exists(raw_path):
                 raw = open(raw_path, encoding="utf-8").read()
                 note = "cached"
+                retried = False
             else:
                 t0 = time.time()
                 try:
-                    raw = call_ollama(base_url, args.model, prompt,
-                                      args.temperature, args.num_ctx, args.timeout)
+                    body = call_ollama(base_url, args.model, prompt,
+                                       args.temperature, args.num_ctx, args.timeout)
                 except Exception as exc:  # noqa: BLE001
                     print(f"  [error] {tname}: {exc}")
                     manifest.append({"pmid": pmid, "table": tname, "error": str(exc)})
                     continue
+                raw = body.get("response", "")
+                retried = False
+                if not raw.strip():
+                    # A thinking model can burn its whole budget inside
+                    # <think>...</think> and never reach an answer; "response"
+                    # comes back empty while "thinking" holds what it wrote.
+                    # think=False skips the reasoning trace so the model
+                    # writes the CSV directly instead of running out first.
+                    thinking_len = len(body.get("thinking", "") or "")
+                    reason = body.get("done_reason", "?")
+                    print(f"  [empty] {tname}: response empty after {time.time()-t0:.0f}s "
+                          f"(done_reason={reason}, {thinking_len} thinking chars) "
+                          f"-> retrying with think=false")
+                    retry_body = call_ollama(base_url, args.model, prompt,
+                                             args.temperature, args.num_ctx, args.timeout,
+                                             think=False)
+                    raw = retry_body.get("response", "")
+                    retried = True
                 open(raw_path, "w", encoding="utf-8").write(raw)
                 note = f"{time.time() - t0:.0f}s"
+                if retried:
+                    note += ", think=false retry"
 
             dropped = []
             parsed = common.parse_csv(raw, pmid=pmid, dropped=dropped)
@@ -172,7 +212,8 @@ def main() -> int:
             for bad in dropped:
                 print(f"    [dropped] {len(bad)} fields: {','.join(bad)[:110]}")
             manifest.append({"pmid": pmid, "table": tname, "source": source,
-                             "rows": len(parsed), "dropped": len(dropped)})
+                             "rows": len(parsed), "dropped": len(dropped),
+                             "retried_no_think": retried})
 
         if not args.dry_run:
             common.write_csv(os.path.join(pdir, "combined.csv"), rows)
