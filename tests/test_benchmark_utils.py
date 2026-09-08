@@ -42,6 +42,6 @@ def test_generate_pk():
 
 
 def test_generate_pe():
-    res = generate_columns_definition(BenchmarkType.PE)
+    res = generate_columns_definition(BenchmarkType.PE_STUDY_OUTCOME)
     assert res == pe_cols_definition
 
