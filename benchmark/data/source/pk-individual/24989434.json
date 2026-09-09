@@ -1,0 +1,15 @@
+{
+  "pmid": "24989434",
+  "source_html": "benchmark/data/source/pk-individual/24989434.html",
+  "baseline_csv": "benchmark/data/pk-individual/baseline/24989434_baseline.csv",
+  "tables": [
+    {
+      "index": 0,
+      "id": "",
+      "label": "Table 1",
+      "caption": "Per-patient venlafaxine (V) and O-desmethylvenlafaxine (ODV) plasma concentrations and ODV/V ratio by trimester and postpartum.",
+      "included_in_baseline": true,
+      "note": "Baseline rows (Drug name=Venlafaxine, Analyte=Venlafaxine/O-desmethylvenlafaxine/ODV-V, Parameter type 'concentration'/'the ratio ODV/V') match this table directly."
+    }
+  ]
+}

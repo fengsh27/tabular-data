@@ -1,0 +1,6 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+Case 1,IFX/UST,IFX/UST,cord blood,maternal/pediatric,delivery,,concentration,μg/ml,36.89,,
+Case 1,IFX/UST,IFX/UST,,pediatric,,6 months,concentration,pg/ml,0.94,,
+Case 3,IFX/UST,IFX/UST,,pediatric,,6 months,concentration,pg/ml,0.24,,
+Case 5,IFX/UST,IFX/UST,maternal blood,maternal,delivery,,concentration,ng/ml,267.7,,
+Case 5,IFX/UST,IFX/UST,cord blood,maternal/pediatric,delivery,,concentration,ng/ml,756.5,,

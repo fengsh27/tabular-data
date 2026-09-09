@@ -1,0 +1,23 @@
+{
+  "pmid": "11849190",
+  "source_html": "benchmark/data/source/pk-individual/11849190.html",
+  "baseline_csv": "benchmark/data/pk-individual/baseline/11849190_baseline.csv",
+  "tables": [
+    {
+      "index": 0,
+      "id": "tbl1",
+      "label": "Table 1",
+      "caption": "Milk concentrations and M/P ratios for V and ODV.",
+      "included_in_baseline": true,
+      "note": "tmax, Cmax, Caverage and M/P AUC rows for venlafaxine and O-desmethylvenlafaxine match this table."
+    },
+    {
+      "index": 1,
+      "id": "tbl2",
+      "label": "Table 2",
+      "caption": "Estimated infant dose for V and ODV (as V equivalents), and infant plasma concentrations of V and ODV.",
+      "included_in_baseline": true,
+      "note": "Infant dose-as-percentage-of-maternal-dose and infant plasma concentration rows match this table."
+    }
+  ]
+}

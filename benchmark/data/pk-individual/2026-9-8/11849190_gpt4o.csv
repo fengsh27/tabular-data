@@ -1,0 +1,65 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+1,venlafaxine,venlafaxine,plasma,maternal,,,Cmax,µg/l,2020,1.75,h
+1,venlafaxine,venlafaxine,plasma,maternal,,,Caverage,µg/l,1187,,
+1,venlafaxine,venlafaxine,,maternal/pediatric,,,M/PAUC,,2.40,,
+1,venlafaxine,O-desmethylvenlafixine,plasma,maternal,,,Cmax,µg/l,335,1.75,h
+1,venlafaxine,O-desmethylvenlafixine,plasma,maternal,,,Caverage,µg/l,277,,
+1,venlafaxine,O-desmethylvenlafixine,,maternal/pediatric,,,M/PAUC,,2.61,,
+2,venlafaxine,venlafaxine,plasma,maternal,,,Cmax,µg/l,1096,1.67,h
+2,venlafaxine,venlafaxine,plasma,maternal,,,Caverage,µg/l,704,,
+2,venlafaxine,venlafaxine,,maternal/pediatric,,,M/PAUC,,2.05,,
+2,venlafaxine,O-desmethylvenlafixine,plasma,maternal,,,Cmax,µg/l,561,3.67,h
+2,venlafaxine,O-desmethylvenlafixine,plasma,maternal,,,Caverage,µg/l,477,,
+2,venlafaxine,O-desmethylvenlafixine,,maternal/pediatric,,,M/PAUC,,2.26,,
+3,venlafaxine,venlafaxine,plasma,maternal,,,Cmax,µg/l,712,2.25,h
+3,venlafaxine,venlafaxine,plasma,maternal,,,Caverage,µg/l,388,,
+3,venlafaxine,venlafaxine,,maternal/pediatric,,,M/PAUC,,2.34,,
+3,venlafaxine,O-desmethylvenlafixine,plasma,maternal,,,Cmax,µg/l,1120,2.25,h
+3,venlafaxine,O-desmethylvenlafixine,plasma,maternal,,,Caverage,µg/l,925,,
+3,venlafaxine,O-desmethylvenlafixine,,maternal/pediatric,,,M/PAUC,,2.75,,
+4,venlafaxine,venlafaxine,plasma,maternal,,,Cmax,µg/l,1230,2.25,h
+4,venlafaxine,venlafaxine,plasma,maternal,,,Caverage,µg/l,597,,
+4,venlafaxine,venlafaxine,,maternal/pediatric,,,M/PAUC,,2.04,,
+4,venlafaxine,O-desmethylvenlafixine,plasma,maternal,,,Cmax,µg/l,1010,2.25,h
+4,venlafaxine,O-desmethylvenlafixine,plasma,maternal,,,Caverage,µg/l,651,,
+4,venlafaxine,O-desmethylvenlafixine,,maternal/pediatric,,,M/PAUC,,2.5,,
+5,venlafaxine,venlafaxine,plasma,maternal,,,Cmax,µg/l,1429,2.28,h
+5,venlafaxine,venlafaxine,plasma,maternal,,,Caverage,µg/l,597,,
+5,venlafaxine,venlafaxine,,maternal/pediatric,,,M/PAUC,,2.95,,
+5,venlafaxine,O-desmethylvenlafixine,plasma,maternal,,,Cmax,µg/l,1336,4.20,h
+5,venlafaxine,O-desmethylvenlafixine,plasma,maternal,,,Caverage,µg/l,815,,
+5,venlafaxine,O-desmethylvenlafixine,,maternal/pediatric,,,M/PAUC,,3.08,,
+6,venlafaxine,venlafaxine,plasma,maternal,,,Cmax,µg/l,477,5.67,h
+6,venlafaxine,venlafaxine,plasma,maternal,,,Caverage,µg/l,354,,
+6,venlafaxine,venlafaxine,,maternal/pediatric,,,M/PAUC,,3.22,,
+6,venlafaxine,O-desmethylvenlafixine,plasma,maternal,,,Cmax,µg/l,413,7.67,h
+6,venlafaxine,O-desmethylvenlafixine,plasma,maternal,,,Caverage,µg/l,502,,
+6,venlafaxine,O-desmethylvenlafixine,,maternal/pediatric,,,M/PAUC,,3.24,,
+1,venlafaxine,venlafaxine,,maternal/pediatric,,,infant/maternal dose ratio,%,5.9,,
+1,venlafaxine,venlafaxine,plasma,maternal/pediatric,,,concentration,µg/l,5,,
+1,venlafaxine,O-desmethylvenlafaxine,,maternal/pediatric,,,infant/maternal dose ratio,%,1.5,,
+1,venlafaxine,O-desmethylvenlafaxine,plasma,maternal/pediatric,,,concentration,µg/l,< 2.5,,
+2a,venlafaxine,venlafaxine,,maternal/pediatric,,,infant/maternal dose ratio,%,3.8,,
+2a,venlafaxine,venlafaxine,plasma,maternal/pediatric,,,concentration,µg/l,< 4,,
+2a,venlafaxine,O-desmethylvenlafaxine,,maternal/pediatric,,,infant/maternal dose ratio,%,2.7,,
+2a,venlafaxine,O-desmethylvenlafaxine,plasma,maternal/pediatric,,,concentration,µg/l,< 3,,
+2b,venlafaxine,venlafaxine,,maternal/pediatric,,,infant/maternal dose ratio,%,3.8,,
+2b,venlafaxine,venlafaxine,plasma,maternal/pediatric,,,concentration,µg/l,< 4,,
+2b,venlafaxine,O-desmethylvenlafaxine,,maternal/pediatric,,,infant/maternal dose ratio,%,2.7,,
+2b,venlafaxine,O-desmethylvenlafaxine,plasma,maternal/pediatric,,,concentration,µg/l,< 3,,
+3,venlafaxine,venlafaxine,,maternal/pediatric,,,infant/maternal dose ratio,%,2.1,,
+3,venlafaxine,venlafaxine,plasma,maternal/pediatric,,,concentration,µg/l,< 3,,
+3,venlafaxine,O-desmethylvenlafaxine,,maternal/pediatric,,,infant/maternal dose ratio,%,5.2,,
+3,venlafaxine,O-desmethylvenlafaxine,plasma,maternal/pediatric,,,concentration,µg/l,6.0,,
+4,venlafaxine,venlafaxine,,maternal/pediatric,,,infant/maternal dose ratio,%,2.7,,
+4,venlafaxine,venlafaxine,plasma,maternal/pediatric,,,concentration,µg/l,< 2,,
+4,venlafaxine,O-desmethylvenlafaxine,,maternal/pediatric,,,infant/maternal dose ratio,%,3.1,,
+4,venlafaxine,O-desmethylvenlafaxine,plasma,maternal/pediatric,,,concentration,µg/l,38.0,,
+5,venlafaxine,venlafaxine,,maternal/pediatric,,,infant/maternal dose ratio,%,2.5,,
+5,venlafaxine,venlafaxine,plasma,maternal/pediatric,,,concentration,µg/l,ND,,
+5,venlafaxine,O-desmethylvenlafaxine,,maternal/pediatric,,,infant/maternal dose ratio,%,3.5,,
+5,venlafaxine,O-desmethylvenlafaxine,plasma,maternal/pediatric,,,concentration,µg/l,20.0,,
+6,venlafaxine,venlafaxine,,maternal/pediatric,,,infant/maternal dose ratio,%,2.1,,
+6,venlafaxine,venlafaxine,plasma,maternal/pediatric,,,concentration,µg/l,ND,,
+6,venlafaxine,O-desmethylvenlafaxine,,maternal/pediatric,,,infant/maternal dose ratio,%,3.1,,
+6,venlafaxine,O-desmethylvenlafaxine,plasma,maternal/pediatric,,,concentration,µg/l,3.0,,

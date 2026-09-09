@@ -1,0 +1,31 @@
+{
+  "pmid": "32056930",
+  "source_html": "benchmark/data/source/pk-individual/32056930.html",
+  "baseline_csv": "benchmark/data/pk-individual/baseline/32056930_baseline.csv",
+  "tables": [
+    {
+      "index": 0,
+      "id": "tbl0001",
+      "label": "Table 1",
+      "caption": "Patients' demographic characteristics (age, BMI, gestational age, mode of delivery, birth weight, APGAR, venlafaxine dose, sampling time, co-medication, outcome).",
+      "included_in_baseline": false,
+      "note": "Demographic/dosing-context fields (age, BMI, delivery mode, APGAR, co-medication) do not appear in the baseline CSV; only the concentration tables (2 and 3) were curated."
+    },
+    {
+      "index": 1,
+      "id": "tbl0002",
+      "label": "Table 2",
+      "caption": "Patients' concentration of VEN, ODVEN and AM in maternal serum, amniotic fluid and cord blood.",
+      "included_in_baseline": true,
+      "note": "Baseline Parameter types 'Maternal serum - VEN/ODVEN/AM (ng/mL)', 'Amniotic fluid - ...', 'Cord blood - ...' and C/D ratios match this table."
+    },
+    {
+      "index": 2,
+      "id": "tbl0003",
+      "label": "Table 3",
+      "caption": "Patients' penetration ratio of VEN, ODVEN and AM in amniotic fluid and cord blood.",
+      "included_in_baseline": true,
+      "note": "Baseline Parameter types 'Ratio VEN/ODVEN/AM AF/MS' and 'Ratio VEN/ODVEN/AM CB/MS' match this table."
+    }
+  ]
+}

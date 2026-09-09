@@ -1,0 +1,31 @@
+{
+  "pmid": "34746508",
+  "source_html": "benchmark/data/source/pk-individual/34746508.html",
+  "baseline_csv": "benchmark/data/pk-individual/baseline/34746508_baseline.csv",
+  "tables": [
+    {
+      "index": 0,
+      "id": "",
+      "label": "Table 1",
+      "caption": "Per-case biologic, age, and dosing regimen (dose of biologic, intervals of biologic) for cases 1-5.",
+      "included_in_baseline": false,
+      "note": "Dose/interval/age fields for the 5 cases do not appear in the baseline CSV; only the blood-concentration table (table 2) was curated."
+    },
+    {
+      "index": 1,
+      "id": "",
+      "label": "Table 2",
+      "caption": "Per-case discontinuation timing, gestational age at birth, and IFX/UST concentration in mother's blood, cord blood, and infant blood at 6 months.",
+      "included_in_baseline": true,
+      "note": "Baseline Parameter types 'IFX/UST in mother’s blood', 'Cord-Blood-Concentration' and 'IFX/UST-6 months-Concentration' for Cases 1-5 match this table exactly."
+    },
+    {
+      "index": 2,
+      "id": "",
+      "label": "Table 3",
+      "caption": "Literature review of other previously-reported cases (diagnosis, age, treatment duration, pregnancy outcome, postpartum/cord drug levels, references) from other studies, not this paper's own cohort.",
+      "included_in_baseline": false,
+      "note": "This is a summary of externally-cited cases (with citation references per row), not this paper's own patient PK data; none of it appears in the baseline CSV."
+    }
+  ]
+}

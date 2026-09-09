@@ -1,0 +1,23 @@
+{
+  "pmid": "10971311",
+  "source_html": "benchmark/data/source/pk-individual/10971311.html",
+  "baseline_csv": "benchmark/data/pk-individual/baseline/10971311_baseline.csv",
+  "tables": [
+    {
+      "index": 0,
+      "id": "tbl1",
+      "label": "Table 1",
+      "caption": "Milk concentrations and M/P ratios for citalopram and demethylcitalopram.",
+      "included_in_baseline": true,
+      "note": "tmax, Cmax, average milk concentration and M/P AUC rows for citalopram and demethylcitalopram (patients 1-7) match this table."
+    },
+    {
+      "index": 1,
+      "id": "tbl2",
+      "label": "Table 2",
+      "caption": "Estimated infant dose for citalopram and demethylcitalopram (as citalopram equivalents), and infant plasma concentrations of citalopram and demethylcitalopram.",
+      "included_in_baseline": true,
+      "note": "Infant dose-as-%-of-maternal-dose and infant plasma concentration rows match this table."
+    }
+  ]
+}

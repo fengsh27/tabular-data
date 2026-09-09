@@ -1,0 +1,80 @@
+Extract individual-subject pharmacokinetic data from the table below.
+
+Output CSV with exactly these 12 columns, in this order:
+
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+
+Write one row per single reported value. If a patient has 3 measurements, write 3 rows.
+
+Column rules:
+
+- Patient ID: the subject identifier from the table (a number or code), e.g. "Case 1", "Patient 3", "A". Never a citation, an author name, or a reference number. **This field is required.** If the table gives no identifier for the subject of a value, do not output that row at all - a blank Patient ID is never acceptable.
+- Drug name: the drug given to the patient.
+- Analyte: the substance actually measured. It is often a metabolite, so it may differ from Drug name (e.g. drug venlafaxine, analyte O-desmethylvenlafaxine).
+- Specimen: plasma, serum, breast milk, umbilical cord blood, amniotic fluid, etc. This is almost never blank: if the row does not name the specimen, take it from the table caption or the column header. For a ratio between two specimens write "A/B" (e.g. "umbilical cord/maternal plasma"). When the value is not a measurement in a matrix at all - a dose ratio, for instance - leave it blank, but still write its comma.
+- Population: who the subject is - maternal, pediatric, or maternal/pediatric. Use the compound "maternal/pediatric" only when one row genuinely covers both subjects, such as a cord-to-maternal ratio; otherwise choose one. Blank if the table does not say.
+- Pregnancy stage: when the sample was taken - delivery, lactation, pregnancy, postpartum, 1st trimester, 2nd trimester, 3rd trimester. Blank if not stated.
+- Pediatric/Gestational age: this is NOT a number. It says which body the value belongs to: maternal, fetus, infant, pediatric, or maternal/pediatric. Leave it BLANK unless the table itself distinguishes the subjects - for example separate maternal and cord-blood columns, or an infant row. Most rows leave this blank. Never join two values with a comma. Write an actual age (e.g. "6 months", "38w0d") only if the table gives one for that individual.
+- Parameter type: what was measured. Use "concentration" for a plain measured concentration. Use Cmax, tmax, or AUC when the table names them. For a ratio, name the ratio (e.g. "umbilical maternal ratio", "M/P AUC", "concentration-dose ratio"). Do not put the specimen or the subject in this field - they have their own columns.
+- Parameter unit: ng/ml, ug/l, ug/ml, %, h, etc.
+- Parameter value: the number as printed. If the cell is "value (range)", put the main value here.
+- Time value / Time unit: only when the table gives an explicit sampling time (e.g. 12, h). Usually blank - leave both blank rather than guessing.
+
+Rules:
+
+- Individual-subject data only. Every row must trace to one person identified in the table. Skip means, medians, and group summaries.
+- Skip rows that report cases published in OTHER papers. The tell is a per-row
+  citation, author name, or bracketed reference number (e.g.
+  "Klenske et al. 2019 [12]"), often sitting in a column whose header is empty
+  and therefore rendered as `Unnamed_0`. A table of such rows is a literature
+  review, not this paper's own subjects - take nothing from it, however much
+  the caption ("Cases of ...") and the units columns look like patient data.
+- Use only the table below. Do not add data from anywhere else.
+- If no row in the table qualifies, output the header row and nothing else.
+- Leave a cell empty when the table does not report it. Never write N/A, NA, or "not reported".
+- Output the header row, then the data rows.
+- **Every row must have exactly 11 commas.** An empty field is still a field:
+  write its comma. A dose-ratio row for patient 1 with no specimen and no
+  timing is
+  `1,venlafaxine,venlafaxine,,maternal/pediatric,,,infant/maternal dose ratio,%,5.9,,`
+  - the empty Specimen, Pregnancy stage, Pediatric/Gestational age, Time value
+  and Time unit each still get their comma. Leave one out and every later
+  column shifts by one, which makes the whole row wrong. Count the commas
+  before you write the row.
+- Output only the CSV. No commentary, no code fences.
+
+TABLE:
+
+| Subject | 20 Weeks.Dose,mg/d | 20 Weeks.PlasmaLevel,ng/mL | 30 Weeks.Dose,mg/d | 30 Weeks.PlasmaLevel,ng/mL | 36 Weeks.Dose,mg/d | 36 Weeks.PlasmaLevel,ng/mL | Delivery.Dose,mg/d | Delivery.PlasmaLevel,ng/mL | Postpartum2 Weeks.Dose,mg/d | Postpartum2 Weeks.PlasmaLevel,ng/mL | Postpartum4 to 6 Weeks.Dose,mg/d | Postpartum4 to 6 Weeks.PlasmaLevel,ng/mL | Postpartum12 Weeks.Dose,mg/d | Postpartum12 Weeks .PlasmaLevel,ng/mL |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| S-citalopram | 40 | 32 | 40 | 40 | 50 | 25 | 50 | 15 | NA | NA | NA | NA | 50 | 18 |
+| R-citalopram |  | 62 |  | 64 |  | 41 |  | 24 | NA | NA | NA | NA |  | 36 |
+| 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 |
+| S-citalopram | 20 | 14 | 20 | 14 | 40 | 18 | NA | NA | 40 | 54 | NA | NA | 40 | 27 |
+| R-citalopram |  | 24 |  | 24 |  | 36 | NA | NA |  | 101 | NA | NA |  | 75 |
+| 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 | 3 |
+| S-citalopram | 30 | 19 | 30 | 9 | 20 | 5 | … | … | … | … | … | … | … | … |
+| R-citalopram |  | 41 |  | 22 |  | 14 | … | … | … | … | … | … | … | … |
+| 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 |
+| S-citalopram | 10 | 17 | 10 | 10 | 10 | 13 | 10 | 14 | 10 | 24 | NA | NA | NA | NA |
+| 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 | 5 |
+| S-citalopram | 20 | 58 | 20 | 70 | 20 | 67 | NA | NA | 20 | 95 | NA | NA | 20 | 63 |
+| 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 | 6 |
+| S-sertraline | NA | NA | 50 | 27 | NA | NA | 50 | 11 | NA | NA | 50 | 27 | 50 | 21 |
+| N-desmethylsertraline |  | NA |  | 44 |  | NA |  | 26 |  | NA |  | 52 |  | 50 |
+| 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 | 7 |
+| S-sertraline | 50 | 10 | 50 | 20 | 100 | 16 | 50 | 7 | 50 | 22 | 50 | 15 | NA | NA |
+| N-desmethylsertraline |  | 18 |  | 40 |  | 66 |  | 32 |  | 41 |  | 29 |  | NA |
+| 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 |
+| S-sertraline | 50 | 4 | 75 | 10 | 100 | 39 | NA | NA | 200 | 21 | NA | NA | 200 | 21 |
+| N-desmethylsertraline |  | 16 |  | 17 |  | 74 |  | NA |  | 59 |  | NA |  | 29 |
+| 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 | 9 |
+| S-sertraline | NA | NA | 150 | 17 | 200 | 43 | 200 | 32 | 200 | 39 | NA | NA | NA | NA |
+| N-desmethylsertraline |  | NA |  | 141 |  | 147 |  | 120 |  | 149 |  | NA |  | NA |
+| 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 |
+| S-sertraline | 100 | 93 | 100 | 45 | NA | NA | 100 | 28 | NA | NA | 100 | 62 | NA | NA |
+| N-desmethylsertraline |  | 72 |  | 92 |  | NA |  | 59 |  | NA |  | 74 |  | NA |
+| 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 | 11 |
+| S-sertraline | 50 | 32 | 75 | 18 | 75 | 23 | 100 | 32 | NA | NA | 100 | 83 | 125 | 99 |
+| N-desmethylsertraline |  | 52 |  | 77 |  | 73 |  | 97 |  | NA |  | 128 |  | 183 |

@@ -1,0 +1,31 @@
+{
+  "pmid": "32153014",
+  "source_html": "benchmark/data/source/pk-individual/32153014.html",
+  "baseline_csv": "benchmark/data/pk-individual/baseline/32153014_baseline.csv",
+  "tables": [
+    {
+      "index": 0,
+      "id": "cpt1827-disp-0001",
+      "label": "N/A (not a data table)",
+      "caption": "Not a real content table: an inline rendered math/formula element (class=\"disp-formula\") with a single empty cell, not a table of values.",
+      "included_in_baseline": false,
+      "note": "Not a data table at all -- there is nothing to curate from it."
+    },
+    {
+      "index": 1,
+      "id": "",
+      "label": "Table 1",
+      "caption": "Patient demographics: age, pre-pregnancy BMI, autoimmune disease, comorbidity, pregnancy complications, medication during pregnancy, gestational age at delivery, birth weight, neonatal complications.",
+      "included_in_baseline": false,
+      "note": "None of these demographic/clinical fields appear in the baseline CSV; only the drug-concentration table (table 2) was curated."
+    },
+    {
+      "index": 2,
+      "id": "",
+      "label": "Table 2",
+      "caption": "Per-patient TNF inhibitor dosing regimen, time from last dose to delivery, maternal/cord/placenta concentrations, and cord-to-maternal and placenta-to-maternal ratios.",
+      "included_in_baseline": true,
+      "note": "Baseline Parameter types 'TNF inhibitor - µg/mL serum - Maternal/Cord', 'TNF inhibitor - Mean ± SD (µg/g tissue) - Placenta', 'Cord-to-maternal ratio' and 'Placenta-to-maternal ratio' match this table."
+    }
+  ]
+}

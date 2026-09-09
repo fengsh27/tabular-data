@@ -1,0 +1,23 @@
+{
+  "pmid": "18426260",
+  "source_html": "benchmark/data/source/pk-individual/18426260.html",
+  "baseline_csv": "benchmark/data/pk-individual/baseline/18426260_baseline.csv",
+  "tables": [
+    {
+      "index": 0,
+      "id": "",
+      "label": "Table (unlabeled 1)",
+      "caption": "Maternal dose and plasma drug level by subject across pregnancy trimesters, delivery, and postpartum timepoints (citalopram, sertraline and metabolites).",
+      "included_in_baseline": true,
+      "note": "Baseline rows use Parameter type 'Plasma Level, ng/mL' with the same subjects/timepoints/drugs (citalopram, sertraline) as this table."
+    },
+    {
+      "index": 1,
+      "id": "",
+      "label": "Table (unlabeled 2)",
+      "caption": "Milk/plasma (M/P) ratio by drug across pregnancy trimesters, delivery, and postpartum timepoints.",
+      "included_in_baseline": false,
+      "note": "No M/P ratio parameter type or values appear anywhere in the baseline CSV; only the plasma-level table's data was curated."
+    }
+  ]
+}

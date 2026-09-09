@@ -1,0 +1,39 @@
+{
+  "pmid": "23200982",
+  "source_html": "benchmark/data/source/pk-individual/23200982.html",
+  "baseline_csv": "benchmark/data/pk-individual/baseline/23200982_baseline.csv",
+  "tables": [
+    {
+      "index": 0,
+      "id": "",
+      "label": "Table 1",
+      "caption": "Study-level summary/characteristics per drug group (IFX, ADA, CZP): N, dose ranges, median number of doses in pregnancy.",
+      "included_in_baseline": false,
+      "note": "This is an aggregate/summary table (counts, medians, ranges), not per-patient data; none of its aggregate values appear in the baseline CSV of individual patient rows."
+    },
+    {
+      "index": 1,
+      "id": "",
+      "label": "Table 2 (IFX)",
+      "caption": "Per-patient infliximab (IFX) dose, dosing interval, time from dose to birth, IFX concentration in mother/cord/infant at birth, cord/mother ratio, and month IFX became undetectable.",
+      "included_in_baseline": true,
+      "note": "Baseline rows with Drug name=Infliximab and Parameter type 'Concentration'/'Ratio cord/Mother (%)' match this table's per-patient values."
+    },
+    {
+      "index": 2,
+      "id": "",
+      "label": "Table 3 (ADA)",
+      "caption": "Per-patient adalimumab (ADA) dose, dosing interval, time from dose to birth, ADA concentration in mother/cord/infant at birth, cord/mother ratio, and follow-up ADA levels.",
+      "included_in_baseline": true,
+      "note": "Baseline rows with Drug name=Adalimumab and Parameter type 'ADA(μg/ml) at Birth - ...'/'Ratio Cord/Mother' match this table's per-patient values."
+    },
+    {
+      "index": 3,
+      "id": "",
+      "label": "Table 4 (CZP)",
+      "caption": "Per-patient certolizumab pegol (CZP) and PEG concentrations in mother/cord/infant at day of birth, and cord/mother ratio.",
+      "included_in_baseline": true,
+      "note": "Baseline rows with Drug name=Certolizumab pegol / Analyte=PEG and Parameter type 'Day of Birth CZP/PEG concentrations ...' match this table's per-patient values."
+    }
+  ]
+}

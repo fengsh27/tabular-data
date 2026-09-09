@@ -1,0 +1,23 @@
+{
+  "pmid": "33253437",
+  "source_html": "benchmark/data/source/pk-individual/33253437.html",
+  "baseline_csv": "benchmark/data/pk-individual/baseline/33253437_baseline.csv",
+  "tables": [
+    {
+      "index": 0,
+      "id": "",
+      "label": "Table 1",
+      "caption": "Study population characteristics (age, smoking, alcohol use, psychiatric diagnoses/comorbidities) -- aggregate counts and percentages, not per-patient PK data.",
+      "included_in_baseline": false,
+      "note": "Aggregate demographic/diagnosis counts; none of it appears in the baseline CSV of per-patient drug-level rows."
+    },
+    {
+      "index": 1,
+      "id": "",
+      "label": "Table 2",
+      "caption": "Per-patient ID, drug dose, mother's plasma level (3rd trimester and at delivery), infant's plasma level, umbilical/maternal ratio, other drugs, expected CYP2D6 phenotype, maternal/neonatal outcomes.",
+      "included_in_baseline": true,
+      "note": "Baseline Parameter types \"Mother's Plasma Level-III trimester\", \"Mother's PL (ng/ml) delivery\", 'Infant-Plasma-Concentration' and 'Umbilical maternal ratio' match this table's per-patient values."
+    }
+  ]
+}

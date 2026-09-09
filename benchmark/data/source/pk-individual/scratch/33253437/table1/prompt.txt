@@ -1,0 +1,105 @@
+Extract individual-subject pharmacokinetic data from the table below.
+
+Output CSV with exactly these 12 columns, in this order:
+
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+
+Write one row per single reported value. If a patient has 3 measurements, write 3 rows.
+
+Column rules:
+
+- Patient ID: the subject identifier from the table (a number or code), e.g. "Case 1", "Patient 3", "A". Never a citation, an author name, or a reference number. **This field is required.** If the table gives no identifier for the subject of a value, do not output that row at all - a blank Patient ID is never acceptable.
+- Drug name: the drug given to the patient.
+- Analyte: the substance actually measured. It is often a metabolite, so it may differ from Drug name (e.g. drug venlafaxine, analyte O-desmethylvenlafaxine).
+- Specimen: plasma, serum, breast milk, umbilical cord blood, amniotic fluid, etc. This is almost never blank: if the row does not name the specimen, take it from the table caption or the column header. For a ratio between two specimens write "A/B" (e.g. "umbilical cord/maternal plasma"). When the value is not a measurement in a matrix at all - a dose ratio, for instance - leave it blank, but still write its comma.
+- Population: who the subject is - maternal, pediatric, or maternal/pediatric. Use the compound "maternal/pediatric" only when one row genuinely covers both subjects, such as a cord-to-maternal ratio; otherwise choose one. Blank if the table does not say.
+- Pregnancy stage: when the sample was taken - delivery, lactation, pregnancy, postpartum, 1st trimester, 2nd trimester, 3rd trimester. Blank if not stated.
+- Pediatric/Gestational age: this is NOT a number. It says which body the value belongs to: maternal, fetus, infant, pediatric, or maternal/pediatric. Leave it BLANK unless the table itself distinguishes the subjects - for example separate maternal and cord-blood columns, or an infant row. Most rows leave this blank. Never join two values with a comma. Write an actual age (e.g. "6 months", "38w0d") only if the table gives one for that individual.
+- Parameter type: what was measured. Use "concentration" for a plain measured concentration. Use Cmax, tmax, or AUC when the table names them. For a ratio, name the ratio (e.g. "umbilical maternal ratio", "M/P AUC", "concentration-dose ratio"). Do not put the specimen or the subject in this field - they have their own columns.
+- Parameter unit: ng/ml, ug/l, ug/ml, %, h, etc.
+- Parameter value: the number as printed. If the cell is "value (range)", put the main value here.
+- Time value / Time unit: only when the table gives an explicit sampling time (e.g. 12, h). Usually blank - leave both blank rather than guessing.
+
+Rules:
+
+- Individual-subject data only. Every row must trace to one person identified in the table. Skip means, medians, and group summaries.
+- Skip rows that report cases published in OTHER papers. The tell is a per-row
+  citation, author name, or bracketed reference number (e.g.
+  "Klenske et al. 2019 [12]"), often sitting in a column whose header is empty
+  and therefore rendered as `Unnamed_0`. A table of such rows is a literature
+  review, not this paper's own subjects - take nothing from it, however much
+  the caption ("Cases of ...") and the units columns look like patient data.
+- Use only the table below. Do not add data from anywhere else.
+- If no row in the table qualifies, output the header row and nothing else.
+- Leave a cell empty when the table does not report it. Never write N/A, NA, or "not reported".
+- Output the header row, then the data rows.
+- **Every row must have exactly 11 commas.** An empty field is still a field:
+  write its comma. A dose-ratio row for patient 1 with no specimen and no
+  timing is
+  `1,venlafaxine,venlafaxine,,maternal/pediatric,,,infant/maternal dose ratio,%,5.9,,`
+  - the empty Specimen, Pregnancy stage, Pediatric/Gestational age, Time value
+  and Time unit each still get their comma. Leave one out and every later
+  column shifts by one, which makes the whole row wrong. Count the commas
+  before you write the row.
+- Output only the CSV. No commentary, no code fences.
+
+TABLE:
+
+| Unnamed_0 | ID | Dose (mg/d) | Mother's PL III trimester (ng/ml) | Mother's PL (ng/ml) delivery | Infant's PL (ng/ml) | Umbilical maternal ratio (%) | Other drugs | Expected phenotype (CYP2D6: major CYP metabolizer) | Maternal outcomes | Bleeding (ml) | Neonatal outcomes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Sertraline | 1 | 75 | 19.5 | NA | NA | NA | - | UM | - | 250 | Apnea with desaturation and mild bradycardia, superficial breathing, polypnea at 48 h of life up to 5 day |
+| Sertraline | 3 | 75 | 14.4 | 6.1 | <5 | 40.1 | - | IM | PROM | 400 | - |
+| Sertraline | 4 | 150 | 25.7 | NA | 9 | NA | - | NA | - | 300 | Transient respiratory difficulty, mild irritability up to 48 h of life |
+| Sertraline | 5 | 100 | 42.7 | 16.7 | 9.7 | 58.1 | - | PM | - | 100 | Tachypnea up to 48 h of life, SGA |
+| Sertraline | 12 | 150 | 16.7 | 14.1 | <5 | 17.7 | - | EM | - | 400 | - |
+| Sertraline | 13 | 75 | 26 | 12 | <5 | 20.8 | Phenobarbital | RM | - | 300 | SGA |
+| Sertraline | 14 | 50 | 14.1 | 11.6 | <5 | 21.5 | - | IM | - | 500 | Left clubfoot |
+| Sertraline | 15 | 100 | 27.4 | 42.6 | 19 | 44.6 | - | EM | - | 100 | Low apgar score 1′, RDS, hypotonus, SGA |
+| Sertraline | 18 | 100 | 12.1 | NA | NA | NA | Elvitegravir, Cobicistat, Emtricitabine, Tenofovir, Alafenamide; Zidovudine chemoprophylaxis during labour | UM | - | 500 | Low apgar score 1′, RDS (CPAP, transfer in NICU), SGA |
+| Sertraline | 22 | 50 | NA | 24.5 | 11.1 | 45.3 | - | PM | - | 100 | RDS, neurologic symptom |
+| Sertraline | 23 | 100 | NA | 9.2 | 6.5 | 70.6 | - | EM | - | 150 | - |
+| Sertraline | 25 | 125 | NA | 89 | 35.5 | 39.9 | - | EM | - | 200 | - |
+| Sertraline | 26 | 100 | NA | 32.7 | 7.8 | 23.8 | - | IM | PPH | 500 | - |
+| Sertraline | 32 | 50 | NA | 12.7 | 13 | 102.4 | - | EM | - | 300 | - |
+| Sertraline | 33 | 25 | NA | 9.5 | <5 | 26.3 | - | EM | - | 300 | - |
+| Sertraline | 34 | 50 | NA | 7.4 | <5 | 33.8 | - | EM | - | 100 | - |
+| Sertraline | 35 | 50 | NA | 7.8 | <5 | 32.0 | - | NA | - | 200 | - |
+|  | 37 | 50 | NA | 16.9 | 8.2 | 48.5 | Levothyroxine | IM | - | 100 | - |
+|  | 38 | 50 | NA | 9.5 | <5 | 26.6 | - | UM | - | 300 | - |
+|  | 43 | 50 | 13.2 | 7.7 | 12.3 | 159.7 | - | NA | - | 100 | - |
+|  | 46 | 50 | NA | 20 | 6 | 30.0 | Nifedipine | NA | GH | 800 | - |
+|  | 48 | 50 | NA | 8.7 | 5 | 57.5 | - | NA | PPH | 1600 | - |
+|  | 52 | 25 | <5 | <5 | <5 | NA | - | EM | PPH | 1500 | - |
+|  | 53 | 50 | 13.1 | <5 | NA | NA | - | EM | PROM | 250 | Low apgar score 1′ and 5’; cyanosis, no spontaneous breathing (ventilation up to 24 h of life) |
+| Citalopram | 36 | 20 | 90.2 | NA | NA | NA | - | EM | PROM, PPH | 1500 | - |
+| Citalopram | 42 | 20 | 14.9 | 9.3 | 5.5 | 59.1 | Ursodeoxycholic acid | IM | Intrahepatic cholestasis | 250 | Neurologic symptom |
+| Escitalopram | 9 | 5 | <5 | NA | NA | NA | - | IM | - | 250 | - |
+| Escitalopram | 10 | 10 | 21.8 | 32.4 | 15.9 | 49.1 | - | NA | - | 600 | - |
+| Escitalopram | 28 | 10 | NA | 10.1 | NA | NA | - | EM | - | 600 | - |
+| Escitalopram | 29 | 10 | NA | <5 | NA | NA | - | IM | - | 900 | Neurologic symptom |
+| Escitalopram | 30 | 10 | 68.8 | 36.5 | NA | NA | Ranitidine | IM | - | 100 | Low apgar score 1′, RDS, hypotonus SGA |
+| Escitalopram | 47 | 5 | NA | 8.9 | 7.7 | 86.5 | - | NA | PROM | 500 | Bilateral hydronephrosis |
+| Escitalopram | 56 | 10 | <5 | <5 | <5 | NA | - | EM | PROM | 150 | - |
+| Escitalopram |  |  |  |  |  |  |  | Expected phenotype (CYP2D6: major CYP metabolizer) |  |  |  |
+| Venlafaxine | 2 | 75 | 245 | 76.8 | 184.8 | 240.6 | - | NA | - | 400 | SGA |
+| Venlafaxine | 6 | 37,5 | 37.6 | NA | NA | NA | Levothyroxine, Insulin | EM | GDM, PE, GH | 500 | Prematurity, left thumb bifid, low apgar score 1′ |
+| Venlafaxine | 7 | 150 | NA | 179.9 | 234.7 | 13.5 | - | EM | PROM | 100 | - |
+| Venlafaxine | 16 | 75 | 86.1 | NA | NA | NA | Levothyroxine | EM | PPH | 700 | Prematurity, macroglossia, transient hypoglycemia |
+| Venlafaxine | 17 | 75 | 71.5 | NA | NA | NA | Insulin | EM | GDM | NA | - |
+|  | 20 | 150 | NA | 199.8 | 78.9 | 39.5 | - | EM | - | 100 | Prematurity, low apgar score 1′ |
+|  | 24 | 75 | 154.6 | NA | NA | NA | - | I/EM | PPH | 1100 | - |
+| Paroxetine | 8 | 20 | 10.3 | NA | NA | NA | - | EM | PROM | 200 | SGA |
+| Paroxetine | 19 | 20 | NA | 10 | NA | NA | Levothyroxine | EM | PROM | 600 | Risk of fetal distress (deep bradycardia), postpartum anemia, low apgar score 1′ |
+| Paroxetine | 21 | 25 | NA | 23.4 | 9.1 | 38.9 | - | IM | - | 100 | Acrocyanosis at 8 h of life |
+| Paroxetine | 31 | 20 | NA | 48.6 | 10.3 | 21.2 | - | I/EM | - | 300 | SGA, prematurity, low apgar score 1′, RDS, neurologic symptoms |
+| Paroxetine | 45 | 20 | NA | <5 | <5 | NA | Levothroxine | NA | PPH | 1100 | BIlateral hydronephrosis |
+| Paroxetine | 49 | 20 | <5 | <5 | NA | NA | - | EM | - | 300 | - |
+| Paroxetine | 50 | 10 | 41.9 | 12.9 | 2.5 | 19.4 | - | PM | - | 100 | - |
+| Paroxetine | 51 | 20 | <5 | <5 | <5 | NA | Levothiroxine | EM | PPH | 900 | - |
+| Paroxetine | 54 | 10 | NA | <5 | <5 | NA | - | EM | - | 150 | - |
+| Paroxetine | 55 | 20 | NA | <5 | <5 | NA | - | NA | - | 350 | SGA, Bicuspid aorta, hyper-excitability, bradycardia, desaturation, hypertonus, afinalistic sucking. Spontaneous resolution at 24 h of life |
+| Paroxetine | 57 | 20 | NA | <5 | <5 | NA | - | NA | GDM, PROM, PPH | 1000 | - |
+| Fluoxetine | 39 | 30 | 346.8 | NA | NA | NA | - | IM | PROM | NA | - |
+| Fluoxetine | 40 | NA | NA | 147 | 152 | 103.4 | - | NA | Anhydramnios | 200 | - |
+| Fluoxetine | 41 | NA | NA | <5 | <5 | NA | Insuline | NA | PROM | NA | Prematurity |
+| Fluoxetine | 44 | 20 | NA | 216.8 | 108.6 | 50.1 | - | UM | - | 100 | SGA, Neonatal infection |
