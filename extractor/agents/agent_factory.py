@@ -11,9 +11,10 @@ from extractor.agents.common_agent.common_agent_ollama import (
 )
 
 from extractor.request_gpt_oss import (
-    get_gpt_oss, 
+    get_gpt_oss,
     get_gpt_qwen_30b,
     get_gpt_qwen35_27b,
+    get_gpt_qwen36_35b,
     get_gemma4_31b,
 )
 from extractor.request_openai import get_openai, get_5_openai
@@ -38,6 +39,11 @@ def get_pipeline_llm():
             max_content_num=MAX_PIPELINE_AGENT_CONTENT_NUM,
             max_predict_num=MAX_PIPELINE_AGENT_PREDICT_NUM,
         )
+    elif llm == "QWEN3.6-35B":
+        return get_gpt_qwen36_35b(
+            max_content_num=MAX_PIPELINE_AGENT_CONTENT_NUM,
+            max_predict_num=MAX_PIPELINE_AGENT_PREDICT_NUM,
+        )
     elif llm == "OPENAI":
         return get_openai()
     elif llm == "OPENAI-5":
@@ -58,6 +64,8 @@ def get_agent_llm():
         return get_gpt_qwen_30b()
     elif llm == "QWEN3.5-27B":
         return get_gpt_qwen35_27b()
+    elif llm == "QWEN3.6-35B":
+        return get_gpt_qwen36_35b()
     elif llm == "OPENAI":
         return get_openai()
     elif llm == "OPENAI-5":
