@@ -34,12 +34,16 @@ class PKPEAgentToolTask(ABC):
         agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
+        enable_verification: bool = True,
     ):
         self.pipeline_llm = pipeline_llm
         self.agent_llm = agent_llm
         self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
         self.output_callback = output_callback
         self.task_name = "Agent Tool Task"
+        # "pipeline mode": when False, the graph stops after execution_step -
+        # no verification_step, no correction_step, no retry loop at all.
+        self.enable_verification = enable_verification
 
     def print_step(
         self,
@@ -72,6 +76,22 @@ class PKPEAgentToolTask(ABC):
         pass
 
     def _build_workflow(self, pmid: str):
+        execution_step = PKPEExecutionStep(
+            llm=self.agent_llm,
+            tool=self._create_tool(pmid),
+        )
+        graph = StateGraph(PKPECurationWorkflowState)
+        graph.add_node("execution_step", execution_step.execute)
+        graph.add_edge(START, "execution_step")
+
+        if not self.enable_verification:
+            # Pipeline mode: take execution_step's output as-is. No
+            # verification_step, no correction_step - neither node is even
+            # constructed, so this mode makes zero extra LLM calls beyond
+            # execution_step's own.
+            graph.add_edge("execution_step", END)
+            return graph.compile()
+
         def check_verification_step(state: PKPECurationWorkflowState):
             answer = state["final_answer"]
             if answer is not None and answer.is_terminal:
@@ -86,10 +106,6 @@ class PKPEAgentToolTask(ABC):
                 self.print_step(step_name="No Curated Table")
                 return END
             return "correction_step"
-        execution_step = PKPEExecutionStep(
-            llm=self.agent_llm,
-            tool=self._create_tool(pmid),
-        )
         verification_step = PKPECuratedTablesVerificationStep(
             llm=self.agent_llm, # FIXME: use agent_llm
             pmid=pmid,
@@ -100,11 +116,8 @@ class PKPEAgentToolTask(ABC):
             pmid=pmid,
             domain=self._get_domain(),
         )
-        graph = StateGraph(PKPECurationWorkflowState)
-        graph.add_node("execution_step", execution_step.execute)
         graph.add_node("verification_step", verification_step.execute)
         graph.add_node("correction_step", correction_step.execute)
-        graph.add_edge(START, "execution_step")
         graph.add_edge("execution_step", "verification_step")
         graph.add_conditional_edges(
             "verification_step",
@@ -136,10 +149,19 @@ class PKPEAgentToolTask(ABC):
     def run(self, pmid: str) -> tuple[bool, str | None, str | None, str | None]:
         self.print_step(step_name=f"Running {self.task_name} for pmid-{pmid}")
         state = self._run_workflow(pmid)
-        correct = state["final_answer"] if state["final_answer"] is not None else FinalAnswerEnum.PipelineError
-        curated_table = state["curated_table"] if "curated_table" in state else None
-        explanation = state["explanation"] if "explanation" in state else None
-        suggested_fix = state["suggested_fix"] if "suggested_fix" in state else None
+        final_answer = state.get("final_answer")
+        curated_table = state.get("curated_table")
+        if final_answer is not None:
+            correct = final_answer
+        elif not self.enable_verification and curated_table:
+            # Pipeline mode with no early exit from execution_step (e.g. NoTable):
+            # a table was curated but never checked - that's the expected,
+            # intentional outcome here, not an error.
+            correct = FinalAnswerEnum.Unverified
+        else:
+            correct = FinalAnswerEnum.PipelineError
+        explanation = state.get("explanation")
+        suggested_fix = state.get("suggested_fix")
         return correct, curated_table, explanation, suggested_fix
 
         

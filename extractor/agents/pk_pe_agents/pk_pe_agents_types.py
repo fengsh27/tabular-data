@@ -20,6 +20,9 @@ class FinalAnswerEnum(Enum):
     PipelineError = "PipelineError"
     CorrectionError = "CorrectionError"
     VerificationError = "VerificationError"
+    # A curated table was produced but the verification/correction loop was
+    # intentionally skipped (pipeline mode) - not a judgment of correctness.
+    Unverified = "Unverified"
 
     @property
     def is_terminal(self) -> bool:

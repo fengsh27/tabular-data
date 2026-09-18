@@ -22,8 +22,9 @@ class PEStudyOutcomeTask(PKPEAgentToolTask):
         agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
+        enable_verification: bool = True,
     ):
-        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback)
+        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback, enable_verification)
         self.task_name = "PE Study Outcome Task"
 
     def _create_tool(self, pmid: str):
@@ -47,8 +48,9 @@ class PEStudyInfoTask(PKPEAgentToolTask):
         agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
+        enable_verification: bool = True,
     ):
-        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback)
+        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback, enable_verification)
         self.task_name = "PE Study Info Task"
         
     def _create_tool(self, pmid: str):

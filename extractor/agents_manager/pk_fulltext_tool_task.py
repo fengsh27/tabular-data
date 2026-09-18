@@ -24,8 +24,9 @@ class PKSpecimenSummaryTask(PKPEAgentToolTask):
         agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
+        enable_verification: bool = True,
     ):
-        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback)
+        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback, enable_verification)
         self.task_name = "PK Specimen Summary Task"
 
     def _create_tool(self, pmid: str):
@@ -52,8 +53,9 @@ class PKDrugSummaryTask(PKPEAgentToolTask):
         agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
+        enable_verification: bool = True,
     ):
-        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback)
+        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback, enable_verification)
         self.task_name = "PK Drug Summary Task"
         
     def _create_tool(self, pmid: str):
@@ -80,8 +82,9 @@ class PKSpecimenIndividualTask(PKPEAgentToolTask):
         agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
+        enable_verification: bool = True,
     ):
-        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback)
+        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback, enable_verification)
         self.task_name = "PK Specimen Individual Task"
         
     def _create_tool(self, pmid: str):
@@ -108,8 +111,9 @@ class PKDrugIndividualTask(PKPEAgentToolTask):
         agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
+        enable_verification: bool = True,
     ):
-        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback)
+        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback, enable_verification)
         self.task_name = "PK Drug Individual Task"
         
     def _create_tool(self, pmid: str):

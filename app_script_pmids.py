@@ -19,6 +19,10 @@ Input:
                pk_specimen_summary, pk_specimen_individual, pk_drug_summary,
                pk_drug_individual, pk_population_summary, pk_population_individual,
                pe_study_info, pe_study_outcome
+- optional --no-verify-correct  "pipeline mode": skip the verification/correction
+               loop entirely and take each pipeline's execution_step output as-is.
+               final_answer is reported as "Unverified" instead of Correct/Incorrect
+               for any table that was actually curated.
 """
 
 import argparse
@@ -275,7 +279,7 @@ def _curate_pmid(
 
         df.to_csv(out_dir / f"{pmid}_{pipeline_type.value}.csv", index=False)
 
-        if value["correct"] != FinalAnswerEnum.Correct:
+        if value["correct"] not in (FinalAnswerEnum.Correct, FinalAnswerEnum.Unverified):
             msg = f"Curated table for {pmid} {pipeline_type.value} is not correct"
             logger.error(msg)
             errors.append((pmid, msg))
@@ -312,6 +316,16 @@ def extract_by_csv_file(interval_time: float = 0.0):
             "design step. E.g.: -p pk_summary pk_individual"
         ),
     )
+    parser.add_argument(
+        "--no-verify-correct",
+        action="store_true",
+        help=(
+            "Pipeline mode: skip the verification/correction loop entirely and "
+            "take each pipeline's execution_step output as-is (no extra LLM "
+            "calls beyond execution). final_answer is reported as 'Unverified' "
+            "for any table that was actually curated."
+        ),
+    )
     args = vars(parser.parse_args())
 
     pmids_fn: str | None = args.get("pmids_fn")
@@ -322,6 +336,7 @@ def extract_by_csv_file(interval_time: float = 0.0):
     pipeline_types: list[PipelineTypeEnum] | None = (
         _parse_pipelines(pipeline_names) if pipeline_names else None
     )
+    enable_verification: bool = not args.get("no_verify_correct")
 
     if pmids_fn is None and pmid is None:
         parser.print_help()
@@ -355,6 +370,7 @@ def extract_by_csv_file(interval_time: float = 0.0):
         pipeline_llm=get_pipeline_llm(),
         agent_llm=get_agent_llm(),
         pmid_db=pmid_db,
+        enable_verification=enable_verification,
     )
 
     error_report = []

@@ -35,15 +35,19 @@ logger = logging.getLogger(__name__)
 
 class PKPEManager:
     def __init__(
-        self, 
+        self,
         pipeline_llm: BaseChatOpenAI,
         agent_llm: BaseChatOpenAI,
-        pmid_db: PMIDDB | None = None
+        pmid_db: PMIDDB | None = None,
+        enable_verification: bool = True,
     ):
         self.pipeline_llm = pipeline_llm
         self.agent_llm = agent_llm
         self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
         self.total_token_usage = {**DEFAULT_TOKEN_USAGE}
+        # "pipeline mode" when False: every task skips verification/correction
+        # entirely, taking execution_step's output as-is.
+        self.enable_verification = enable_verification
     
     def print_step(
         self,
@@ -139,70 +143,80 @@ class PKPEManager:
                 pipeline_llm=self.pipeline_llm, 
                 agent_llm=self.agent_llm,
                 output_callback=self.print_step, 
-                pmid_db=self.pmid_db
+                pmid_db=self.pmid_db,
+                enable_verification=self.enable_verification,
             )
         elif pipeline_type == PipelineTypeEnum.PK_INDIVIDUAL:
             return PKIndividualTask(
                 pipeline_llm=self.pipeline_llm, 
                 agent_llm=self.agent_llm, 
                 output_callback=self.print_step, 
-                pmid_db=self.pmid_db
+                pmid_db=self.pmid_db,
+                enable_verification=self.enable_verification,
             )
         elif pipeline_type == PipelineTypeEnum.PK_SPEC_SUMMARY:
             return PKSpecimenSummaryTask(
                 pipeline_llm=self.pipeline_llm, 
                 agent_llm=self.agent_llm, 
                 output_callback=self.print_step, 
-                pmid_db=self.pmid_db
+                pmid_db=self.pmid_db,
+                enable_verification=self.enable_verification,
             )
         elif pipeline_type == PipelineTypeEnum.PK_DRUG_SUMMARY:
             return PKDrugSummaryTask(
                 pipeline_llm=self.pipeline_llm, 
                 agent_llm=self.agent_llm, 
                 output_callback=self.print_step, 
-                pmid_db=self.pmid_db
+                pmid_db=self.pmid_db,
+                enable_verification=self.enable_verification,
             )
         elif pipeline_type == PipelineTypeEnum.PK_POPU_SUMMARY:
             return PKPopulationSummaryTask(
                 pipeline_llm=self.pipeline_llm, 
                 agent_llm=self.agent_llm, 
                 output_callback=self.print_step, 
-                pmid_db=self.pmid_db
+                pmid_db=self.pmid_db,
+                enable_verification=self.enable_verification,
             )
         elif pipeline_type == PipelineTypeEnum.PK_SPEC_INDIVIDUAL:
             return PKSpecimenIndividualTask(
                 pipeline_llm=self.pipeline_llm, 
                 agent_llm=self.agent_llm, 
                 output_callback=self.print_step, 
-                pmid_db=self.pmid_db
+                pmid_db=self.pmid_db,
+                enable_verification=self.enable_verification,
             )
         elif pipeline_type == PipelineTypeEnum.PK_DRUG_INDIVIDUAL:
             return PKDrugIndividualTask(
                 pipeline_llm=self.pipeline_llm, 
                 agent_llm=self.agent_llm, 
                 output_callback=self.print_step, 
-                pmid_db=self.pmid_db
+                pmid_db=self.pmid_db,
+                enable_verification=self.enable_verification,
             )
         elif pipeline_type == PipelineTypeEnum.PK_POPU_INDIVIDUAL:
             return PKPopulationIndividualTask(
                 pipeline_llm=self.pipeline_llm, 
                 agent_llm=self.agent_llm, 
                 output_callback=self.print_step, 
-                pmid_db=self.pmid_db
+                pmid_db=self.pmid_db,
+                enable_verification=self.enable_verification,
             )
         elif pipeline_type == PipelineTypeEnum.PE_STUDY_INFO:
             return PEStudyInfoTask(
                 pipeline_llm=self.pipeline_llm, 
                 agent_llm=self.agent_llm, 
                 output_callback=self.print_step, 
-                pmid_db=self.pmid_db
+                pmid_db=self.pmid_db,
+                enable_verification=self.enable_verification,
             )
         elif pipeline_type == PipelineTypeEnum.PE_STUDY_OUTCOME:
             return PEStudyOutcomeTask(
                 pipeline_llm=self.pipeline_llm, 
                 agent_llm=self.agent_llm, 
                 output_callback=self.print_step, 
-                pmid_db=self.pmid_db
+                pmid_db=self.pmid_db,
+                enable_verification=self.enable_verification,
             )
         else:
             raise ValueError(f"Invalid pipeline type: {pipeline_type}")
