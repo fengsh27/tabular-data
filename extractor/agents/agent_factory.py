@@ -19,7 +19,10 @@ from extractor.request_gpt_oss import (
 )
 from extractor.request_openai import get_openai, get_5_openai
 
-MAX_PIPELINE_AGENT_CONTENT_NUM = 16384
+# Ollama `num_ctx` sent with every pipeline-agent request. A per-request num_ctx
+# overrides the server's OLLAMA_CONTEXT_LENGTH, so raising only the server has no
+# effect on the pipeline; default 48k (49152); set PIPELINE_AGENT_NUM_CTX (e.g. 131072) to change it.
+MAX_PIPELINE_AGENT_CONTENT_NUM = int(os.getenv("PIPELINE_AGENT_NUM_CTX", str(48 * 1024)))
 MAX_PIPELINE_AGENT_PREDICT_NUM = 8192
 
 def get_pipeline_llm():
