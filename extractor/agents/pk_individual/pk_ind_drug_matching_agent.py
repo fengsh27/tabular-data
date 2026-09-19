@@ -34,9 +34,9 @@ SUBTABLE 2 (Drug-Analyte-Specimen Combinations):
 
 2. Processing Rules:
    - Only process rows 0-{max_md_table_aligned_with_1_param_type_and_value_row_index} from Subtable 1 (exactly {md_table_aligned_with_1_param_type_and_value_row_num} rows total)
-   - Return indices of matching Subtable 2 rows as a Python list of integers
+   - Return indices of matching Subtable 2 rows as a JSON object with a single key "matched_row_indices", whose value is a list of integers
    - If no clear best match is identified for a given row, default to using -1. Important: This default should only be applied when no legitimate match exists after thorough evaluation of all available data.
-   - Example output format: [0, 1, 2, 3, 4, 5, 6, ...]
+   - Example output format: {{"matched_row_indices": [0, 1, 2, 3, 4, 5, 6, ...]}}
 
 ### ** Important Instructions:**
    - You **must follow** the following steps to match the row in Subtable 1 to the row in Subtable 2:

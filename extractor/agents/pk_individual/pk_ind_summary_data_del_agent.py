@@ -54,7 +54,7 @@ The input is a markdown table.
 ---
 
 ### **Output**
-Please return the result with the following format:
+Please return the result as a JSON object with the keys "processed", "row_list" and "col_list":
 processed: boolean value, False represents the table have already meets the requirement, don't need to be processed. Otherwise, it will be True.
 row_list: an array of row indices that satisfy the requirement, that is the rows have no summary-level results or personally identifiable data.
 col_list: an array of column names that satisfy the requirement, that is the columns in the above rows have no summary-level results or personally identifiable data.
@@ -63,9 +63,7 @@ col_list: an array of column names that satisfy the requirement, that is the col
 
 ### **Example**
 If the input is the above table, the output should be:
-processed: False
-row_list: [0, 1, 2, 3, 4, 5, 6, 7, 8]
-col_list: ["Subject", "Parameter Type and Value", "Parameter Type and Value"]
+{{"processed": false, "row_list": [0, 1, 2, 3, 4, 5, 6, 7, 8], "col_list": ["Subject", "Parameter Type and Value", "Parameter Type and Value"]}}
 """)
 
 

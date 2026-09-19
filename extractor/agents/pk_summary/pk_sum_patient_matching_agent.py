@@ -45,10 +45,10 @@ Carefully analyze the tables and follow these instructions step by step:
    - Match each row using the correct "Subject N" from the context of the main table. For example, if the group has a total N of 10 but a specific parameter only applies to 9, then 9 is the correct "Subject N" to use for matching.
 
 4. **Output Format:**
-   - Return a Python-style list containing the row indices (integers) of Subtable 2 that best match each row in Subtable 1.
+   - Return a JSON object with a single key "matched_row_indices", whose value is a list containing the row indices (integers) of Subtable 2 that best match each row in Subtable 1.
    - Do not sort or deduplicate the list. The output should follow the order of Subtable 1:
      ```
-     [matched_index_row_0, matched_index_row_1, ..., matched_index_row_N]
+     {{"matched_row_indices": [matched_index_row_0, matched_index_row_1, ..., matched_index_row_N]}}
      ```
 
 5. **If No Match Found:**

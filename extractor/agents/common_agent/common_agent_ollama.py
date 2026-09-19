@@ -1,3 +1,4 @@
+import json
 from typing import Any, Callable, Optional
 
 from langchain_core.output_parsers import PydanticOutputParser
@@ -5,7 +6,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnableLambda
 from langchain_ollama.chat_models import ChatOllama
 from langchain_community.callbacks.openai_info import OpenAICallbackHandler
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ValidationError
 from tenacity import retry, stop_after_attempt, wait_incrementing
 import logging
 import tiktoken
@@ -29,6 +30,56 @@ IMPORTANT_INSTRUCTIONS = """
 1. Please exactly follow the output format instructions. **Do not** add any other text or comments.
 
 """
+
+
+def _load_json_reply(content: str) -> Any:
+    """json.loads a model reply, tolerating a surrounding ```json fence."""
+    text = content.strip()
+    if text.startswith("```"):
+        text = text.strip("`").strip()
+        if text.lower().startswith("json"):
+            text = text[4:]
+    return json.loads(text)
+
+
+def fix_reply_shape_for_single_field_schema(
+    content: str, schema: Any
+) -> Optional[BaseModel]:
+    """Recover a reply whose JSON has the right payload but the wrong envelope.
+
+    Ollama only enforces `format=<schema>` in some think modes, so a model can
+    ignore the envelope and copy an example from the prompt instead. For a schema
+    with exactly one field (`{"<field>": <payload>}`) this repairs:
+      - a bare payload:            `[["a", "b"], ...]`             -> `{"<field>": [...]}`
+      - a payload under a wrong key: `{"matching_row_indices": [...]}` -> `{"<field>": [...]}`
+      - a nested-model payload with its wrapper key dropped, e.g. the
+        `{"parameter_types": [...], ...}` for a `extracted_param_units` field.
+    Candidates are validated against the schema; None is returned for anything
+    that still does not validate (and for multi-field schemas), so genuine
+    errors keep going through the normal parse-error / retry path.
+    """
+    if not (isinstance(schema, type) and issubclass(schema, BaseModel)):
+        return None
+    fields = schema.model_fields
+    if len(fields) != 1:
+        return None
+    (field_name,) = fields
+    try:
+        data = _load_json_reply(content)
+    except Exception:  # noqa: BLE001 - not JSON at all: nothing to repair
+        return None
+    if isinstance(data, dict) and field_name in data:
+        return None  # right envelope: the failure is something else, don't mask it
+    candidates = [data]
+    if isinstance(data, dict) and len(data) == 1:
+        candidates.append(next(iter(data.values())))
+    for candidate in candidates:
+        try:
+            return schema.model_validate({field_name: candidate})
+        except ValidationError:
+            continue
+    return None
+
 
 def count_tokens(text: str, model: str = "text-embedding-3-small") -> int:
     """
@@ -154,6 +205,7 @@ class CommonAgentOllama(CommonAgent):
                 preview = raw.content[:500] if isinstance(raw.content, str) else repr(raw.content)[:500]
                 logger.info(f"runnable_agent: raw.content preview (first 500 chars): {preview!r}")
             token_usage = CommonAgentOllama.normalize_token_usage(raw.usage_metadata)
+            content = ""
             try:
                 # Strip Qwen3 thinking/reasoning content if present
                 content = CommonAgentOllama.handle_qwen_thinking(raw.content)
@@ -167,10 +219,19 @@ class CommonAgentOllama(CommonAgent):
                 res = parser.parse(content)
                 return res, token_usage
             except Exception as e:
+                res = None
                 if agent_fix_parser is not None:
                     res = agent_fix_parser(content)
+                if res is None:
+                    res = fix_reply_shape_for_single_field_schema(content, active_schema)
                     if res is not None:
-                        return res, token_usage
+                        logger.warning(
+                            "runnable_agent: repaired reply envelope for %s (parse error was: %.200s)",
+                            getattr(active_schema, "__name__", active_schema),
+                            e,
+                        )
+                if res is not None:
+                    return res, token_usage
                 # FIXME: temporary log — include stack trace so the offending
                 # line is visible in the log file (default logger.error drops it).
                 logger.error("runnable_agent: parser/handler failed: %r", e, exc_info=True)

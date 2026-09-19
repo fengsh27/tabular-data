@@ -25,14 +25,14 @@ Carefully analyze the table and follow these steps:
 - **Time Value:** A specific moment (numerical or time range) when the row of data is recorded, or a drug dose is administered.  
   - Examples: Sampling times, dosing times, or reported observation times.  
 - **Time Unit:** The unit corresponding to the recorded time point (e.g., "Hour", "Min", "Day").  
-(2) List each unique combination in the format of a list of lists, using Python string syntax. Your answer should be like this:  
-`[["0-1", "Hour"], ["10", "Min"], ["N/A", "N/A"]]` (example)
+(2) List each unique combination in the format of a list of lists, using Python string syntax. Return them as a JSON object with a single key "times_and_units", like this:  
+`{{"times_and_units": [["0-1", "Hour"], ["10", "Min"], ["N/A", "N/A"]]}}` (example)
 (3) Strictly ensure that you process only rows 0 to {md_data_post_processed_max_row_index} from the Subtable 1 (which has {md_data_lines_after_post_process_row_num} rows in total). 
     - The number of processed rows must **exactly match** the number of rows in the Subtable 1—no more, no less.  
 (4) Verify the source of each [Time value, Time unit] combination before including it in your answer.  
 (5) **Absolutely no calculations are allowed—every value must be taken directly from the table without any modifications.** 
 (6) **If no valid [Time value, Time unit] combinations are found, return the default output:**  
-`[["N/A", "N/A"]]`
+`{{"times_and_units": [["N/A", "N/A"]]}}`
 
 **Examples:**
 Include:  

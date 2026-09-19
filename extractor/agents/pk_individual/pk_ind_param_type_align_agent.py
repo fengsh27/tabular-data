@@ -21,8 +21,8 @@ The extracted table headers are as follows:
 {md_table_individual_header}
 Carefully examine the pharmacokinetics (PK) table and follow these steps to determine how the PK parameter type is represented:
 (1) Identify how the PK parameter type (e.g., Cmax, tmax, t1/2, etc.) is structured in the table:
-Please answer in the following format:
-col_name: column name, it represents the PK parameter type serves as the row header or is listed under the specific column. If the PK parameter type is represented as column headers, return None.
+Please answer with a JSON object with the single key "col_name", like this: {{"col_name": "column_name"}}, where
+col_name is the column name, it represents the PK parameter type serves as the row header or is listed under the specific column. If the PK parameter type is represented as column headers, use null.
 (2) Ensure a thorough analysis of the table structure before selecting your answer.
 """)
 
