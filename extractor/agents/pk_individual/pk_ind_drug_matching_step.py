@@ -10,6 +10,7 @@ from extractor.agents.pk_individual.pk_ind_drug_matching_agent import (
     get_matching_drug_prompt,
     MatchedDrugResult,
     post_process_validate_matched_rows,
+    try_fix_error_matched_drugs,
 )
 
 
@@ -73,6 +74,7 @@ class DrugMatchingAgentStep(PKIndCommonStep):
                 system_prompt=system_prompt,
                 instruction_prompt=INSTRUCTION_PROMPT,
                 schema=MatchedDrugResult,
+                try_fix_error=try_fix_error_matched_drugs,
                 post_process=post_process_validate_matched_rows,
                 md_table1=md,
                 md_table2=md_table_drug,

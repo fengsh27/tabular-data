@@ -180,3 +180,29 @@ Please ensure future responses:
             logger.error(error_msg)
             raise RetryException(error_msg)
     return match_list
+
+
+def try_fix_error_matched_drugs(
+    res: MatchedDrugResult,
+    md_table1: str,
+    md_table2: str,
+):
+    """Last-attempt fallback for a wrong-length answer (after retries are exhausted).
+
+    Without the row-by-row working, qwen3.6 can lose count on long tables (e.g. 56
+    indices for 55 rows) and the retries, fed only "wrong length", keep repeating
+    it. Trim the tail / pad with -1 to the expected length. The returned list is
+    used as-is (post_process is not run on it), so it also applies the same
+    normalisation as `post_process_validate_matched_rows`: the model's own -1
+    ("no match") becomes 0, and an out-of-range index becomes -1. -1 selects the
+    "ERROR" sentinel row of Subtable 2, which the row cleanup step deletes, so a
+    padded or invalid position drops that data row instead of mislabelling it.
+    """
+    expected_rows = markdown_to_dataframe(md_table1).shape[0]
+    max_index = markdown_to_dataframe(md_table2).shape[0] - 1
+    match_list = [0 if ix == -1 else ix for ix in res.matched_row_indices]
+    if len(match_list) > expected_rows:
+        match_list = match_list[:expected_rows]
+    else:
+        match_list = match_list + [-1] * (expected_rows - len(match_list))
+    return [ix if ix == -1 or 0 <= ix <= max_index else -1 for ix in match_list]
