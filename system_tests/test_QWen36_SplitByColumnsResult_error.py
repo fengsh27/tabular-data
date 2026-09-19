@@ -25,14 +25,15 @@ Hypotheses this file lets you separate (run it in an interactive GPU session):
       model "Return the results as a list of lists ... [[...],[...]]" (a bare-list
       example) while the schema wants an object. With no grammar to force the
       wrapper, the model follows the concrete example.
-      => test_prompt_variants_matrix (object_example variants)
+      => test_prompt_variants_matrix (legacy bare_list variants: the prompt is now fixed, so these rows should be the only ones that fail)
   H3. Something about the request shape: streaming (ChatOllama always streams),
       `think` handling, or the pipeline sending a *system-only* message list
       (no user turn). => test_prompt_variants_matrix (stream / think / user-turn)
 
 Tests:
   test_classify_output_helper                     offline sanity of the classifier
-  test_prompt_contains_conflicting_bare_list_example   offline evidence for H2
+  test_prompt_matches_object_schema               offline regression guard for H2 (fixed)
+  test_agent_fix_parser_wraps_bare_list           offline check of the bare-list fallback
   test_format_schema_is_enforced_minimal          HARD assert; fails => H1
   test_split_by_columns_step_pipeline_path        HARD assert; the real repro
   test_prompt_variants_matrix                     diagnostic table, no conformance assert
@@ -129,8 +130,9 @@ COL_MAPPING = {
     "('Unnamed: 8_level_0', 'M/PAUC')": "Parameter value",
 }
 
-# The bare-list instruction inside SPLIT_BY_COLUMNS_PROMPT (H2), and an
-# object-shaped replacement used by the "object_example" variants.
+# The legacy bare-list instruction that SPLIT_BY_COLUMNS_PROMPT used to contain
+# (H2; now fixed to the object form below). The "bare_list" variants re-inject it
+# so the matrix can still show the difference.
 BARE_LIST_BLOCK = (
     "Return the results as a list of lists, where each inner list represents a "
     "sub-table with its included columns.\n"
@@ -153,12 +155,12 @@ def build_task_prompt(variant: str = "pipeline") -> str:
     """The step-level prompt (SplitByColumnsStep.get_system_prompt)."""
     task = get_split_by_columns_prompt(MD_TABLE_ALIGNED, COL_MAPPING)
     task += generate_previous_errors_prompt("N/A")
-    if variant == "object_example":
-        assert BARE_LIST_BLOCK in task, (
-            "SPLIT_BY_COLUMNS_PROMPT changed - update BARE_LIST_BLOCK in this test, "
-            "otherwise the 'object_example' variant silently equals the baseline"
+    if variant == "bare_list":
+        assert OBJECT_BLOCK in task, (
+            "SPLIT_BY_COLUMNS_PROMPT changed - update OBJECT_BLOCK in this test, "
+            "otherwise the 'bare_list' variant silently equals the baseline"
         )
-        task = task.replace(BARE_LIST_BLOCK, OBJECT_BLOCK)
+        task = task.replace(OBJECT_BLOCK, BARE_LIST_BLOCK)
     elif variant != "pipeline":
         raise ValueError(variant)
     return task
@@ -364,21 +366,35 @@ def test_classify_output_helper():
     assert classify_output("not json at all")["json_type"] == "invalid-json"
 
 
-def test_prompt_contains_conflicting_bare_list_example():
-    """H2 evidence, no model needed: the prompt asks for a bare list, the schema for an object."""
+def test_prompt_matches_object_schema():
+    """Regression guard for H2: the prompt example must be the object the schema wants."""
     schema = SplitByColumnsResult.model_json_schema()
     assert schema["type"] == "object"
     assert "sub_tables_columns" in schema["properties"]
 
     prompt = build_system_prompt("pipeline")
     _maybe_dump("prompt_pipeline.txt", prompt)
-    assert BARE_LIST_BLOCK in prompt, "the task section no longer contains the bare-list example"
-    assert "sub_tables_columns" in prompt, "format instructions missing from the system prompt"
+    assert BARE_LIST_BLOCK not in prompt, "the prompt again shows a bare-list example"
+    assert '{"sub_tables_columns"' in prompt, "prompt lacks the object example"
 
-    patched = build_system_prompt("object_example")
-    _maybe_dump("prompt_object_example.txt", patched)
-    assert BARE_LIST_BLOCK not in patched
-    assert '{"sub_tables_columns"' in patched
+    legacy = build_system_prompt("bare_list")
+    _maybe_dump("prompt_bare_list.txt", legacy)
+    assert BARE_LIST_BLOCK in legacy and OBJECT_BLOCK not in legacy
+
+
+def test_agent_fix_parser_wraps_bare_list():
+    """The fallback recovers a bare list of lists, and only that."""
+    from extractor.agents.pk_individual.pk_ind_split_by_col_agent import (
+        agent_fix_parser_split_by_columns as fix,
+    )
+
+    res = fix('[["a", "b"], ["a", "c"]]')
+    assert res is not None and res.sub_tables_columns == [["a", "b"], ["a", "c"]]
+    res = fix('```json\n[["a", "b"]]\n```')
+    assert res is not None and res.sub_tables_columns == [["a", "b"]]
+    assert fix('{"other": 1}') is None
+    assert fix('[1, 2]') is None
+    assert fix("not json") is None
 
 
 # --------------------------------------------------------------------------- #
@@ -474,9 +490,9 @@ CONFIGS = [
     ('format="json"',                  "pipeline",       "json",   False, False, True),
     ("think unset",                    "pipeline",       "schema", None,  False, True),
     ("+ user turn",                    "pipeline",       "schema", False, True,  True),
-    ("object-example prompt",          "object_example", "schema", False, False, True),
-    ("object-example, no format",      "object_example", None,     False, False, True),
-    ("object-example + user turn",     "object_example", "schema", False, True,  True),
+    ("legacy bare-list prompt",        "bare_list",      "schema", False, False, True),
+    ("legacy bare-list, no format",    "bare_list",      None,     False, False, True),
+    ("legacy bare-list + user turn",   "bare_list",      "schema", False, True,  True),
 ]
 
 
@@ -500,7 +516,7 @@ def _print_table(model: str, rows: list[dict]) -> None:
         "\nHow to read it:\n"
         "  valid=False + json_type=list        -> the bare-list failure being debugged\n"
         "  fenced=True on 'schema' rows        -> `format` grammar not enforced (H1)\n"
-        "  'object-example' rows valid, baseline not -> prompt contradiction is the cause (H2)\n"
+        "  'legacy bare-list' rows invalid, baseline valid -> the prompt contradiction was the cause (H2)\n"
         "  '+ user turn' / non-streaming differ -> request shape matters (H3)\n"
     )
 
@@ -508,7 +524,7 @@ def _print_table(model: str, rows: list[dict]) -> None:
 @pytest.mark.parametrize("model_key", ["qwen36", "control"])
 def test_prompt_variants_matrix(model_key, ollama_models, capsys):
     model = _resolve_model(model_key, ollama_models)
-    prompts = {v: build_system_prompt(v) for v in ("pipeline", "object_example")}
+    prompts = {v: build_system_prompt(v) for v in ("pipeline", "bare_list")}
 
     rows: list[dict] = []
     raw_records: list[dict] = []
