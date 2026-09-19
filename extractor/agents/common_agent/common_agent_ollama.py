@@ -81,6 +81,42 @@ def fix_reply_shape_for_single_field_schema(
     return None
 
 
+def recover_answer_from_prose(content: str, schema: Any) -> Optional[BaseModel]:
+    """Recover the answer from a reply that narrates first and ends with the JSON.
+
+    With `format=<schema>` not enforced, a model may write step-by-step reasoning
+    and only then the answer object. Neither the parser (which needs the whole
+    text to be JSON) nor `handle_qwen_thinking` (which trims to the first bracket,
+    often one quoted from the prompt's example) can find it. Scan every `{` for
+    valid JSON and return the LAST object that fits the schema exactly. Only if none
+    does, fall back to the last one that fits after
+    `fix_reply_shape_for_single_field_schema` (e.g. a wrong key), so a stray
+    wrong-key object after the real answer cannot override it. Placeholder
+    examples such as `[index_0, ...]` are not valid JSON and are skipped.
+    Returns None when nothing fits, so real errors still retry.
+    """
+    if not (isinstance(schema, type) and issubclass(schema, BaseModel)):
+        return None
+    if not isinstance(content, str):
+        return None
+    decoder = json.JSONDecoder()
+    exact, repaired, i = None, None, 0
+    while (j := content.find("{", i)) != -1:
+        try:
+            obj, end = decoder.raw_decode(content, j)
+        except ValueError:
+            i = j + 1  # a brace inside prose or a placeholder: keep scanning
+            continue
+        i = end  # skip objects nested inside the one just decoded
+        try:
+            exact = schema.model_validate(obj)
+        except ValidationError:
+            fixed = fix_reply_shape_for_single_field_schema(json.dumps(obj), schema)
+            if fixed is not None:
+                repaired = fixed
+    return exact if exact is not None else repaired
+
+
 def count_tokens(text: str, model: str = "text-embedding-3-small") -> int:
     """
     Count the number of tokens in a text string using tiktoken.
@@ -228,6 +264,16 @@ class CommonAgentOllama(CommonAgent):
                         logger.warning(
                             "runnable_agent: repaired reply envelope for %s (parse error was: %.200s)",
                             getattr(active_schema, "__name__", active_schema),
+                            e,
+                        )
+                if res is None:
+                    res = recover_answer_from_prose(content, active_schema)
+                    if res is not None:
+                        logger.warning(
+                            "runnable_agent: recovered %s from the JSON object at the end of a "
+                            "%d-char prose reply (parse error was: %.200s)",
+                            getattr(active_schema, "__name__", active_schema),
+                            len(content),
                             e,
                         )
                 if res is not None:
