@@ -4,6 +4,7 @@ import logging
 
 from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
+from extractor.agents.common_agent.common_agent import RetryException
 from extractor.agents.pk_individual.pk_ind_common_agent import PKIndCommonAgentResult
 
 logger = logging.getLogger(__name__)
@@ -123,8 +124,11 @@ Before producing the final answer, verify that:
 def get_header_categorize_prompt(md_table_aligned: str):
     df_table = markdown_to_dataframe(md_table_aligned)
     processed_md_table_aligned = display_md_table(md_table_aligned)
-    column_headers_str = "These are all its column headers: " + ", ".join(
-        f'"{col}"' for col in df_table.columns
+    column_headers_str = (
+        "These are all its column headers: "
+        + ", ".join(f'"{col}"' for col in df_table.columns)
+        + " (the double quotes only delimit each name; do NOT include them in the"
+        " keys of your answer)"
     )
     return HEADER_CATEGORIZE_PROMPT.format(
         processed_md_table_aligned=processed_md_table_aligned,
@@ -159,6 +163,61 @@ HeaderCategorizeJsonSchema = {
 }
 
 
+_WRAPPING_QUOTES = "\"'`"
+
+
+def _strip_wrapping_quotes(name: str) -> str:
+    """`'"ID"'` -> `ID`. Only quotes wrapping the whole name are removed, so an
+    apostrophe inside a name (Mother's PL) is left alone."""
+    s = name.strip()
+    while len(s) >= 2 and s[0] == s[-1] and s[0] in _WRAPPING_QUOTES:
+        s = s[1:-1].strip()
+    return s
+
+
+def normalize_header_keys(
+    categorized: dict[str, str], md_table_aligned: str
+) -> dict[str, str]:
+    """Map the model's keys onto the table's real column names.
+
+    The prompt lists the headers in double quotes and gpt-4o copies those quotes into the
+    keys about half the time (`{'"ID"': 'Patient ID'}`). The count check below cannot see
+    that, and SplitByColumnsStep then looks up the real names (`ID`) in this dict, finds no
+    "Parameter value" column, and returns an empty sub-table list without any error, so the
+    whole paper is silently lost. Keys are matched exactly, then with wrapping quotes
+    stripped, then case-insensitively; a key that still matches nothing raises a
+    RetryException so the model is told which names were wrong.
+    """
+    df_columns = list(markdown_to_dataframe(md_table_aligned).columns)
+    by_name = {str(c).strip(): c for c in df_columns}
+    by_lower = {str(c).strip().lower(): c for c in df_columns}
+    fixed: dict[str, str] = {}
+    unmatched: list[str] = []
+    for key, category in categorized.items():
+        real = None
+        for cand in (str(key).strip(), _strip_wrapping_quotes(str(key))):
+            if cand in by_name:
+                real = by_name[cand]
+            elif cand.lower() in by_lower:
+                real = by_lower[cand.lower()]
+            if real is not None:
+                break
+        if real is None:
+            unmatched.append(key)
+        else:
+            fixed.setdefault(real, category)
+    if unmatched:
+        error_msg = (
+            f"These keys do not match any column of the table: {unmatched}. "
+            "Use each column name EXACTLY as it appears in the table header, WITHOUT any "
+            "surrounding quotes (the double quotes in the list of headers only delimit "
+            f"the names). The column names are: {[str(c).strip() for c in df_columns]}."
+        )
+        logger.error(error_msg)
+        raise RetryException(error_msg)
+    return fixed
+
+
 def post_process_validate_categorized_result(
     result: HeaderCategorizeResult | dict,
     md_table_aligned: str,
@@ -171,9 +230,11 @@ def post_process_validate_categorized_result(
             raise e
     else:
         res = result
+    # Keys must be the table's real column names (quotes stripped, typos rejected)
+    match_dict = normalize_header_keys(res.categorized_headers, md_table_aligned)
+    res = HeaderCategorizeResult(categorized_headers=match_dict)
     # Ensure column count matches the table
     expected_columns = markdown_to_dataframe(md_table_aligned).shape[1]
-    match_dict = res.categorized_headers
     if len(match_dict.keys()) != expected_columns:
         error_msg = f"Mismatch: Expected {expected_columns} columns, but got {len(match_dict.keys())} in match_dict."
         logger.error(error_msg)
