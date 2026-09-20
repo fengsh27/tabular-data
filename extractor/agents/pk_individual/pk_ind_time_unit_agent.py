@@ -25,7 +25,7 @@ Carefully analyze the table and follow these steps:
 - **Time Value:** A specific moment (numerical or time range) when the row of data is recorded, or a drug dose is administered.  
   - Examples: Sampling times, dosing times, or reported observation times.  
 - **Time Unit:** The unit corresponding to the recorded time point (e.g., "Hour", "Min", "Day").  
-(2) List each unique combination in the format of a list of lists, using Python string syntax. Return them as a JSON object with a single key "times_and_units", like this:  
+(2) List one combination per row of Subtable 1, in row order - exactly one entry for EVERY row, so rows that have identical values must be repeated, NOT merged or deduplicated - in the format of a list of lists, using Python string syntax. Return them as a JSON object with a single key "times_and_units", like this:  
 `{{"times_and_units": [["0-1", "Hour"], ["10", "Min"], ["N/A", "N/A"]]}}` (example)
 (3) Strictly ensure that you process only rows 0 to {md_data_post_processed_max_row_index} from the Subtable 1 (which has {md_data_lines_after_post_process_row_num} rows in total). 
     - The number of processed rows must **exactly match** the number of rows in the Subtable 1—no more, no less.  
@@ -90,3 +90,24 @@ def post_process_time_and_unit(
         raise RetryException(error_msg)
 
     return dataframe_to_markdown(df_table)
+
+
+def try_fix_error_time_and_unit(
+    res: TimeAndUnitResult,
+    md_table_post_processed: str,
+):
+    """Last-attempt fallback for a wrong-length answer (retries exhausted).
+
+    The prompt now asks for one entry per row, which fixed the model that used to
+    deduplicate identical rows (6 distinct pairs for 9 rows). This is only a safety
+    net for any other miscount, so the table is not lost: trim the tail or pad with
+    ["N/A", "N/A"] (a legitimate value here - many rows have no time) to the expected
+    length, and force every entry to two cells. Alignment is positional, so a padded
+    tail is a best effort. The result is used as-is (post_process is not run on it), so
+    it returns the same markdown post_process_time_and_unit does.
+    """
+    expected_rows = markdown_to_dataframe(md_table_post_processed).shape[0]
+    rows = [(list(r) + ["N/A", "N/A"])[:2] for r in res.times_and_units]
+    rows = rows[:expected_rows] + [["N/A", "N/A"] for _ in range(expected_rows - len(rows))]
+    return dataframe_to_markdown(pd.DataFrame(rows, columns=["Time value", "Time unit"]))
+

@@ -6,6 +6,7 @@ from extractor.agents.pk_individual.pk_ind_time_unit_agent import (
     get_time_and_unit_prompt,
     TimeAndUnitResult,
     post_process_time_and_unit,
+    try_fix_error_time_and_unit,
 )
 
 from extractor.agents.agent_prompt_utils import INSTRUCTION_PROMPT
@@ -41,6 +42,7 @@ class TimeExtractionStep(PKIndCommonStep):
                 system_prompt=system_prompt,
                 instruction_prompt=instruction_prompt,
                 schema=TimeAndUnitResult,
+                try_fix_error=try_fix_error_time_and_unit,
                 post_process=post_process_time_and_unit,
                 md_table_post_processed=md,
             )

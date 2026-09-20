@@ -25,7 +25,7 @@ Carefully analyze the table and follow these steps:
 - **Time Value:** A specific moment (numerical or time range) when the row of data is recorded, or a drug dose is administered.  
   - Examples: Sampling times, dosing times, or reported observation times.  
 - **Time Unit:** The unit corresponding to the recorded time point (e.g., "Hour", "Min", "Day").  
-(2) List each unique combination in the format of a list of lists, using Python string syntax. Return them as a JSON object with a single key "times_and_units", like this:  
+(2) List one combination per row of Subtable 1, in row order - exactly one entry for EVERY row, so rows that have identical values must be repeated, NOT merged or deduplicated - in the format of a list of lists, using Python string syntax. Return them as a JSON object with a single key "times_and_units", like this:  
 `{{"times_and_units": [["0-1", "Hour"], ["10", "Min"], ["N/A", "N/A"]]}}` (example)
 (3) Strictly ensure that you process only rows 0 to {md_data_post_processed_max_row_index} from the Subtable 1 (which has {md_data_lines_after_post_process_row_num} rows in total). 
     - The number of processed rows must **exactly match** the number of rows in the Subtable 1—no more, no less.  
