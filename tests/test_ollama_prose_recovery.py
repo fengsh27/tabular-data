@@ -9,6 +9,7 @@ reply that fits the schema.
 `tests/data/qwen36_drug_matching_prose_reply_32153014.txt` is a real reply
 (6585 chars, PMID 32153014, drug matching) that killed the paper's only table.
 """
+import logging
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -120,9 +121,11 @@ class _StubLLM:
         )
 
 
-def _run(content, schema=MatchedDrugResult):
+def _run(content, schema=MatchedDrugResult, agent_fix_parser=None):
     prompt = ChatPromptTemplate.from_messages([("system", "{input}")])
-    agent = CommonAgentOllama.get_runnable_agent(prompt, _StubLLM(content), schema)
+    agent = CommonAgentOllama.get_runnable_agent(
+        prompt, _StubLLM(content), schema, None, agent_fix_parser
+    )
     return agent.invoke({"input": "x"})
 
 
@@ -140,3 +143,93 @@ def test_runnable_agent_still_raises_when_nothing_is_recoverable():
 def test_runnable_agent_plain_json_reply_is_unchanged():
     res, _ = _run('{"matched_row_indices": [2, 2]}')
     assert res.matched_row_indices == [2, 2]
+
+
+# --------------------------------------------------------------------------
+# audit logging: one LLM_CALL line and the full raw reply for every call
+# --------------------------------------------------------------------------
+
+LOGGER = "extractor.agents.common_agent.common_agent_ollama"
+
+
+def _messages(caplog):
+    return [r.getMessage() for r in caplog.records if r.name == LOGGER]
+
+
+def _call_line(caplog):
+    lines = [m for m in _messages(caplog) if m.startswith("LLM_CALL")]
+    assert len(lines) == 1, lines
+    return lines[0]
+
+
+def test_log_direct_parse_has_summary_line_and_full_reply(caplog, monkeypatch):
+    monkeypatch.setenv("LOG_LLM_CALLS", "1")
+    caplog.set_level(logging.INFO, logger=LOGGER)
+    reply = '{"matched_row_indices": [1]}'
+    _run(reply)
+    assert _call_line(caplog) == (
+        f"LLM_CALL schema=MatchedDrugResult path=direct reply_chars={len(reply)} starts_with=json"
+    )
+    full = [r for r in caplog.records if r.name == LOGGER and r.getMessage().startswith("LLM_REPLY_FULL")]
+    assert len(full) == 1 and reply in full[0].getMessage()
+    assert full[0].levelno == logging.INFO  # a clean call is not a warning
+
+
+def test_log_envelope_repair(caplog, monkeypatch):
+    monkeypatch.setenv("LOG_LLM_CALLS", "1")
+    caplog.set_level(logging.INFO, logger=LOGGER)
+    _run("[1, 2]")
+    assert "path=envelope" in _call_line(caplog)
+    assert any(m.startswith("LLM_REPLY_FULL") and "[1, 2]" in m for m in _messages(caplog))
+
+
+def test_log_fix_parser(caplog, monkeypatch):
+    monkeypatch.setenv("LOG_LLM_CALLS", "1")
+    caplog.set_level(logging.INFO, logger=LOGGER)
+    _run("nonsense", agent_fix_parser=lambda _c: MatchedDrugResult(matched_row_indices=[5]))
+    assert "path=fix_parser" in _call_line(caplog)
+
+
+def test_log_prose_recovery_keeps_full_reply_and_recovered_value(caplog, monkeypatch):
+    monkeypatch.setenv("LOG_LLM_CALLS", "1")
+    caplog.set_level(logging.INFO, logger=LOGGER)
+    _run(REAL_REPLY)
+    line = _call_line(caplog)
+    assert "path=prose_recovery" in line and "starts_with=prose" in line
+    assert f"reply_chars={len(REAL_REPLY)}" in line
+    full = [m for m in _messages(caplog) if m.startswith("LLM_REPLY_FULL")]
+    assert len(full) == 1 and "3, 3, 3]}" in full[0]  # the tail, where the answer is
+    assert any(
+        m.startswith("LLM_RECOVERED") and "matched_row_indices=[0, 0, 0, 0, 0, 0, 3, 3, 3]" in m
+        for m in _messages(caplog)
+    )
+
+
+def test_log_failure_keeps_full_reply(caplog, monkeypatch):
+    monkeypatch.setenv("LOG_LLM_CALLS", "1")
+    caplog.set_level(logging.INFO, logger=LOGGER)
+    with pytest.raises(Exception):
+        _run("I could not determine the matching.")
+    assert "path=failed" in _call_line(caplog)
+    assert any(
+        m.startswith("LLM_REPLY_FULL") and "could not determine" in m for m in _messages(caplog)
+    )
+
+
+def test_audit_logging_is_off_by_default(caplog, monkeypatch):
+    monkeypatch.delenv("LOG_LLM_CALLS", raising=False)
+    caplog.set_level(logging.INFO, logger=LOGGER)
+    _run('{"matched_row_indices": [1]}')
+    _run(REAL_REPLY)  # a recovery still works, and its own warning is not audit logging
+    msgs = _messages(caplog)
+    assert not any(m.startswith(("LLM_CALL", "LLM_REPLY_FULL", "LLM_RECOVERED")) for m in msgs)
+    assert any("recovered MatchedDrugResult" in m for m in msgs)
+
+
+@pytest.mark.parametrize("value, enabled", [("1", True), ("true", True), ("YES", True), ("0", False), ("", False)])
+def test_audit_logging_switch(monkeypatch, value, enabled):
+    from extractor.agents.common_agent.common_agent_ollama import _llm_call_logging_enabled
+
+    monkeypatch.setenv("LOG_LLM_CALLS", value)
+    assert _llm_call_logging_enabled() is enabled
+

@@ -1,4 +1,5 @@
 import json
+import os
 from typing import Any, Callable, Optional
 
 from langchain_core.output_parsers import PydanticOutputParser
@@ -115,6 +116,46 @@ def recover_answer_from_prose(content: str, schema: Any) -> Optional[BaseModel]:
             if fixed is not None:
                 repaired = fixed
     return exact if exact is not None else repaired
+
+
+def _llm_call_logging_enabled() -> bool:
+    """Per-call audit logging is a debugging aid, off unless LOG_LLM_CALLS is 1/true/yes/on."""
+    return os.getenv("LOG_LLM_CALLS", "").strip().lower() in ("1", "true", "yes", "on")
+
+
+def _log_llm_call(schema: Any, path: str, raw_content: Any, res: Any = None) -> None:
+    """One greppable summary line per model call, for auditing runs.
+
+    Debug aid, OFF by default (set LOG_LLM_CALLS=1 to enable): it logs every full reply.
+
+    `path` is how the reply became a result: direct (plain parse), fix_parser
+    (the step's own fixer), envelope (wrong wrapper/key repaired), prose_recovery
+    (answer taken from the end of a narrated reply) or failed. The full raw reply
+    is logged for every call (a whole 9-paper run is ~0.3 MB of replies); it is a
+    WARNING, together with the recovered value, when the call was not a clean
+    direct parse.
+    """
+    if not _llm_call_logging_enabled():
+        return
+    name = getattr(schema, "__name__", str(schema))
+    text = raw_content if isinstance(raw_content, str) else ""
+    stripped = text.lstrip()
+    if not stripped:
+        starts_with = "empty"
+    elif stripped[0] in "{[" or stripped.startswith("```"):
+        starts_with = "json"
+    else:
+        starts_with = "prose"
+    logger.info(
+        "LLM_CALL schema=%s path=%s reply_chars=%d starts_with=%s",
+        name, path, len(text), starts_with,
+    )
+    if path == "direct":
+        logger.info("LLM_REPLY_FULL schema=%s path=%s reply=%r", name, path, text)
+        return
+    logger.warning("LLM_REPLY_FULL schema=%s path=%s reply=%r", name, path, text)
+    if res is not None:
+        logger.warning("LLM_RECOVERED schema=%s value=%.300r", name, res)
 
 
 def count_tokens(text: str, model: str = "text-embedding-3-small") -> int:
@@ -253,14 +294,19 @@ class CommonAgentOllama(CommonAgent):
                     f"preview={(content[:300] if isinstance(content, str) else repr(content)[:300])!r}"
                 )
                 res = parser.parse(content)
+                _log_llm_call(active_schema, "direct", raw.content)
                 return res, token_usage
             except Exception as e:
                 res = None
+                path = "failed"
                 if agent_fix_parser is not None:
                     res = agent_fix_parser(content)
+                    if res is not None:
+                        path = "fix_parser"
                 if res is None:
                     res = fix_reply_shape_for_single_field_schema(content, active_schema)
                     if res is not None:
+                        path = "envelope"
                         logger.warning(
                             "runnable_agent: repaired reply envelope for %s (parse error was: %.200s)",
                             getattr(active_schema, "__name__", active_schema),
@@ -269,6 +315,7 @@ class CommonAgentOllama(CommonAgent):
                 if res is None:
                     res = recover_answer_from_prose(content, active_schema)
                     if res is not None:
+                        path = "prose_recovery"
                         logger.warning(
                             "runnable_agent: recovered %s from the JSON object at the end of a "
                             "%d-char prose reply (parse error was: %.200s)",
@@ -276,6 +323,7 @@ class CommonAgentOllama(CommonAgent):
                             len(content),
                             e,
                         )
+                _log_llm_call(active_schema, path, raw.content, res)
                 if res is not None:
                     return res, token_usage
                 # FIXME: temporary log — include stack trace so the offending
