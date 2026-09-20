@@ -33,6 +33,8 @@ MODELS = [
     LLModelType.GEMMA4,
     LLModelType.QWEN35,
     LLModelType.QWEN36SKILL,
+    LLModelType.QWEN36,
+    LLModelType.QWEN38SKILL,
 ]
 
 

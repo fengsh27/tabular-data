@@ -37,3 +37,5 @@ class LLModelType(Enum):
     GEMMA4="gemma4"
     QWEN35="qwen35"
     QWEN36SKILL="qwen36-skill"
+    QWEN38SKILL="qwen38-skill"  # qwen3.8 (27B dense) through Claude Code + skills
+    QWEN36="qwen36"  # qwen3.6 through the multi-agent pipeline (not the skills)
