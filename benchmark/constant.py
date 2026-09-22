@@ -37,5 +37,8 @@ class LLModelType(Enum):
     GEMMA4="gemma4"
     QWEN35="qwen35"
     QWEN36SKILL="qwen36-skill"
+    MAS_GPT4O_GPT54="mas-gpt4o-gpt54"  # multi-agent: pipeline llm gpt-4o, agent llm gpt-5.4
+    MAS_GPT54="mas-gpt54"  # multi-agent: pipeline llm and agent llm gpt-5.4
+    MAS_QWEN36="mas-qwen36"  # multi-agent: pipeline llm and agent llm qwen3.6
     QWEN38SKILL="qwen38-skill"  # qwen3.8 (27B dense) through Claude Code + skills
     QWEN36="qwen36"  # qwen3.6 through the multi-agent pipeline (not the skills)
