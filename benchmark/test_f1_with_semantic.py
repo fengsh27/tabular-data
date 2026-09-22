@@ -9,11 +9,29 @@ number, so it cannot say whether a run misses rows or invents them.
 This module turns the same machinery into an F1, with the baseline as the gold set and
 the curated output as the prediction:
 
-* **Matching** - every baseline row is matched to at most one target row through the
-  evaluator's own ``anchor_row_from_rows`` (semantic text similarity via BioLORD for the
-  text anchors, numeric tolerance for the numeric ones). Matching is one-to-one: a
-  target row that has been claimed is removed, so two identical baseline rows cannot
-  both be credited to a single target row.
+* **Matching** - every baseline row is matched to at most one target row, one-to-one.
+  Two strategies are available (``MATCH_STRATEGY``, default ``optimal``):
+
+  ``optimal``  solves the whole table at once (``scipy.optimize.linear_sum_assignment``)
+               to maximise the number of strict hits, tie-broken by total rating. A pair
+               is only offered to the solver when the rows share the same identity (the
+               first anchor column - Patient ID for pk-individual - matches, or is
+               missing/blank on either side); `rate_row` itself does not score Patient ID
+               or Time value, so an ungated solver could otherwise swap rows between two
+               different patients whenever that raised the total score.
+  ``greedy``   the original behaviour: baseline rows are visited in file order and each
+               takes the first still-unclaimed target row that `anchor_row_from_rows`
+               accepts (Patient ID -> Parameter value -> Drug -> Analyte -> Time value; a
+               column that matches nothing is skipped rather than rejected). A pick is
+               final - once a target row is claimed it is never reconsidered, even if a
+               later baseline row would have been a better fit for it. When a baseline
+               row's identity column fails to find a match by text (e.g. baseline "3b" vs
+               output "3"), the fallback searches the *whole* remaining pool by content,
+               so it can grab a row that belongs to a different subject and starve a
+               later baseline row of its real match. Confirmed on real data: skills
+               qwen3.6 scored strict F1 0.35 (10971311) and 0.44 (18426260) under greedy,
+               vs 0.87 and 0.97 under optimal, with no change to the underlying tables.
+
 * **Row rating** - a matched pair is rated with the evaluator's own ``rate_row`` (0-10:
   the weighted share of rating columns that agree, floored).
 * **TP** - two flavours are reported for every paper:
@@ -35,7 +53,8 @@ Run it like the other benchmark tests::
 
 Environment variables: ``BASELINE`` (default ``baseline``), ``TARGET`` (default
 ``2026-6-12``), ``BENCHMARK_TYPE`` (default ``pk-individual``), ``ROW_THRESHOLD``
-(default ``8``). Results are written to ``benchmark/result/<type>/<target>-<baseline>/
+(default ``8``), ``MATCH_STRATEGY`` (``optimal`` or ``greedy``, default ``optimal``).
+Results are written to ``benchmark/result/<type>/<target>-<baseline>/
 result_f1.log`` as CSV lines::
 
     model, pmid, mode, precision, recall, f1, tp, fp, fn
@@ -44,14 +63,17 @@ plus one ``MICRO`` (counts pooled over papers) and one ``MACRO`` (mean of the pe
 scores) line per model and mode. The offline tests at the bottom need no model download.
 """
 import logging
+import math
 import os
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
+import numpy as np
 import pandas as pd
 import pytest
 from dotenv import load_dotenv
+from scipy.optimize import linear_sum_assignment
 
 from benchmark.common import (
     ensure_target_result_directory_existed,
@@ -74,6 +96,7 @@ baseline = os.environ.get("BASELINE", BASELINE)
 target = os.environ.get("TARGET", "2026-6-12")
 benchmark_type = BenchmarkType(os.environ.get("BENCHMARK_TYPE", "pk-individual"))
 ROW_THRESHOLD = int(os.environ.get("ROW_THRESHOLD", "8"))
+MATCH_STRATEGY = os.environ.get("MATCH_STRATEGY", "optimal")
 
 baseline_dir = os.path.join("./benchmark/data", benchmark_type.value, baseline)
 target_dir = os.path.join("./benchmark/data", benchmark_type.value, target)
@@ -163,6 +186,7 @@ class TablesF1Evaluator(TablesEvaluator):
         columns_type,
         text_cmpr: Any | None = None,
         row_threshold: int = ROW_THRESHOLD,
+        match_strategy: str = MATCH_STRATEGY,
     ):
         # The parent constructor always loads the BioLORD model; set the same attributes
         # here so a stub comparer can be injected (offline tests) and the cached one used
@@ -172,15 +196,28 @@ class TablesF1Evaluator(TablesEvaluator):
         self.columns_type = columns_type
         self.text_cmpr = text_cmpr if text_cmpr is not None else CachedTextComparer()
         self.row_threshold = row_threshold
+        if match_strategy not in ("optimal", "greedy"):
+            raise ValueError(f"Unknown MATCH_STRATEGY: {match_strategy!r}")
+        self.match_strategy = match_strategy
 
     def match_rows(
         self, gold: pd.DataFrame, pred: pd.DataFrame
     ) -> list[tuple[int, int, int]]:
-        """One-to-one matches as ``(gold position, pred position, row rating 0-10)``.
+        """One-to-one matches as ``(gold position, pred position, row rating 0-10)``."""
+        if self.match_strategy == "greedy":
+            return self.match_rows_greedy(gold, pred)
+        return self.match_rows_optimal(gold, pred)
+
+    def match_rows_greedy(
+        self, gold: pd.DataFrame, pred: pd.DataFrame
+    ) -> list[tuple[int, int, int]]:
+        """The original strategy, kept for comparison/debugging (``MATCH_STRATEGY=greedy``).
 
         Gold rows are visited in order and each takes the first still-unclaimed prediction
         row that `anchor_row_from_rows` selects, so the result depends on row order when
         several predictions are equally good anchors (the same rule the blended score has).
+        A pick is final: once a prediction row is claimed it is never reconsidered, even if
+        a later gold row would have been a better fit for it. See the module docstring.
         """
         remaining = list(enumerate(pred.to_dict("records")))
         pairs: list[tuple[int, int, int]] = []
@@ -193,6 +230,74 @@ class TablesF1Evaluator(TablesEvaluator):
             idx = next(i for i, (_, row) in enumerate(remaining) if row is hit)
             p_pos, p_row = remaining.pop(idx)
             pairs.append((g_pos, p_pos, self.rate_row(g_row, p_row)))
+        return pairs
+
+    def _same_identity(self, g_row: dict, p_row: dict) -> bool:
+        """Gate for `match_rows_optimal`: the first anchor column (Patient ID for
+        pk-individual) must agree, or be missing/blank on either side. Without this,
+        `rate_row` alone (which never scores Patient ID or Time value) would let the
+        solver pair rows across different subjects whenever that raised the total score.
+        """
+        if not self.anchor_cols:
+            return True
+        col = self.anchor_cols[0]
+        gv, pv = g_row.get(col), p_row.get(col)
+        gv = gv.strip() if isinstance(gv, str) else gv
+        pv = pv.strip() if isinstance(pv, str) else pv
+
+        def _blank(v) -> bool:
+            if v is None:
+                return True
+            if isinstance(v, str):
+                return len(v) == 0
+            try:
+                return bool(math.isnan(v))
+            except TypeError:
+                return False
+
+        if _blank(gv) or _blank(pv):
+            return True
+        return self._is_equal(gv, pv)
+
+    def match_rows_optimal(
+        self, gold: pd.DataFrame, pred: pd.DataFrame
+    ) -> list[tuple[int, int, int]]:
+        """One-to-one matches that maximise the number of strict hits (ties broken by
+        total rating), solving the whole table's assignment at once instead of committing
+        to each gold row's first acceptable candidate in turn (`match_rows_greedy`).
+
+        Rows are only offered to the solver when `_same_identity` allows it. The matrix is
+        padded with zero-reward "leave unmatched" rows/columns so the solver can skip a row
+        instead of being forced into its least-bad option (`linear_sum_assignment` always
+        returns a full matching on a square matrix otherwise).
+        """
+        n_gold, n_pred = len(gold), len(pred)
+        if n_gold == 0 or n_pred == 0:
+            return []
+
+        gold_rows = gold.to_dict("records")
+        pred_rows = pred.to_dict("records")
+        STRICT_BONUS = 1000.0  # far above any rating sum, so the strict-hit count is optimised first
+
+        rating = np.zeros((n_gold, n_pred), dtype=float)
+        reward = np.zeros((n_gold, n_pred), dtype=float)
+        for i, g in enumerate(gold_rows):
+            for j, p in enumerate(pred_rows):
+                if not self._same_identity(g, p):
+                    continue
+                r = self.rate_row(g, p)
+                rating[i, j] = r
+                reward[i, j] = r + (STRICT_BONUS if r >= self.row_threshold else 0.0)
+
+        size = n_gold + n_pred
+        padded = np.zeros((size, size), dtype=float)
+        padded[:n_gold, :n_pred] = reward
+        row_ind, col_ind = linear_sum_assignment(-padded)  # minimises, so negate
+
+        pairs: list[tuple[int, int, int]] = []
+        for i, j in zip(row_ind, col_ind):
+            if i < n_gold and j < n_pred and reward[i, j] > 0:
+                pairs.append((int(i), int(j), int(rating[i, j])))
         return pairs
 
     def evaluate(self, gold: pd.DataFrame, pred: pd.DataFrame) -> dict[str, F1Result]:
@@ -355,7 +460,7 @@ class _ExactText:
         return 1.0 if str(a).strip().lower() == str(b).strip().lower() else 0.0
 
 
-def _stub_evaluator(row_threshold: int = 8) -> TablesF1Evaluator:
+def _stub_evaluator(row_threshold: int = 8, match_strategy: str = "optimal") -> TablesF1Evaluator:
     config = get_benchmark_config(BenchmarkType.PK_INDIVIDUAL)
     return TablesF1Evaluator(
         rating_cols=config.rating_cols,
@@ -363,20 +468,22 @@ def _stub_evaluator(row_threshold: int = 8) -> TablesF1Evaluator:
         columns_type=config.columns_type,
         text_cmpr=_ExactText(),
         row_threshold=row_threshold,
+        match_strategy=match_strategy,
     )
 
 
-def _row(pid, value, drug="DrugA", analyte="DrugA", specimen="Plasma", ptype="Cmax"):
+def _row(pid, value, drug="DrugA", analyte="DrugA", specimen="Plasma", ptype="Cmax",
+         population="Maternal", unit="ng/ml"):
     return {
         "Patient ID": str(pid),
         "Drug name": drug,
         "Analyte": analyte,
         "Specimen": specimen,
-        "Population": "Maternal",
+        "Population": population,
         "Pregnancy stage": "Trimester 3",
         "Pediatric/Gestational age": "N/A",
         "Parameter type": ptype,
-        "Parameter unit": "ng/ml",
+        "Parameter unit": unit,
         "Parameter value": float(value),
         "Time value": float("nan"),
         "Time unit": "N/A",
@@ -438,6 +545,60 @@ def test_minor_text_mismatch_still_counts_as_strict_hit():
     pred = _df(_row(1, 10, specimen="Serum"))
     res = _stub_evaluator().evaluate(gold, pred)
     assert res["strict"].tp == 1.0 and res["soft"].tp == pytest.approx(0.9)
+
+
+def test_greedy_lets_an_early_row_steal_a_tie_that_a_later_row_needed():
+    # p0 and p1 tie on every anchor column (blank Patient ID, same value/drug/analyte/time),
+    # so anchor_row_from_rows can never tell them apart and falls back to "first remaining" -
+    # which happens to be g0's WORSE match, leaving g1 with the other WORSE match too, even
+    # though the perfect pairing (g0-p1, g1-p0) was available.
+    g0 = _row("N/A", 100, specimen="Serum", ptype="AUC", population="Pediatric", unit="ug/ml")
+    g1 = _row("N/A", 100, specimen="Plasma", ptype="Cmax", population="Maternal", unit="ng/ml")
+    p0 = _row("N/A", 100, specimen="Plasma", ptype="Cmax", population="Maternal", unit="ng/ml")  # perfect for g1
+    p1 = _row("N/A", 100, specimen="Serum", ptype="AUC", population="Pediatric", unit="ug/ml")  # perfect for g0
+    gold, pred = _df(g0, g1), _df(p0, p1)
+
+    greedy = _stub_evaluator(match_strategy="greedy")
+    pairs = greedy.match_rows(gold, pred)
+    assert pairs == [(0, 0, 7), (1, 1, 7)]  # g0 grabs p0 first (arbitrary tie-break), both end up mismatched
+    res = greedy.evaluate(gold, pred)["strict"]
+    assert res.tp == 0.0  # a strict hit was available for BOTH rows, greedy finds neither
+
+
+def test_optimal_recovers_the_row_greedy_steals():
+    g0 = _row("N/A", 100, specimen="Serum", ptype="AUC", population="Pediatric", unit="ug/ml")
+    g1 = _row("N/A", 100, specimen="Plasma", ptype="Cmax", population="Maternal", unit="ng/ml")
+    p0 = _row("N/A", 100, specimen="Plasma", ptype="Cmax", population="Maternal", unit="ng/ml")
+    p1 = _row("N/A", 100, specimen="Serum", ptype="AUC", population="Pediatric", unit="ug/ml")
+    gold, pred = _df(g0, g1), _df(p0, p1)
+
+    optimal = _stub_evaluator()  # default strategy
+    assert optimal.match_strategy == "optimal"
+    pairs = optimal.match_rows(gold, pred)
+    assert sorted(pairs) == [(0, 1, 10), (1, 0, 10)]  # the cross-pairing greedy never considered
+    res = optimal.evaluate(gold, pred)["strict"]
+    assert res.tp == 2.0 and res.f1 == 1.0
+
+
+def test_optimal_never_crosses_patient_identity_even_when_it_would_score_higher():
+    # p0 (patient "1") is content-perfect for g1's wants, and p1 (patient "2") is
+    # content-perfect for g0's wants (rating 10 each, vs rating 3 for the patient-correct
+    # pairing) - but the identity gate must keep those cross pairs from ever reaching the
+    # solver, so it settles for the patient-correct, lower-scoring assignment instead.
+    g0 = _row(1, 100, specimen="Plasma", ptype="Cmax", population="Maternal", unit="ng/ml")
+    g1 = _row(2, 100, specimen="Serum", ptype="AUC", population="Pediatric", unit="ug/ml")
+    p0 = _row(1, 100, specimen="Serum", ptype="AUC", population="Pediatric", unit="ug/ml")  # patient 1, content matches g1
+    p1 = _row(2, 100, specimen="Plasma", ptype="Cmax", population="Maternal", unit="ng/ml")  # patient 2, content matches g0
+    gold, pred = _df(g0, g1), _df(p0, p1)
+
+    pairs = _stub_evaluator().match_rows(gold, pred)
+    paired = {g: p for g, p, _ in pairs}
+    assert paired.get(0) == 0 and paired.get(1) == 1  # patient-matched, never the higher-scoring cross
+
+
+def test_match_strategy_rejects_unknown_value():
+    with pytest.raises(ValueError):
+        _stub_evaluator(match_strategy="best-effort")
 
 
 def test_threshold_is_configurable():
