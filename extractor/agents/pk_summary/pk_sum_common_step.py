@@ -112,6 +112,12 @@ class PKSumCommonAgentStep(PKSumCommonStep):
         """get agent fix parser"""
         return None
 
+    def get_try_fix_error(self) -> Optional[Callable[..., Any]]:
+        """get the last-attempt fixer: called as fixer(res, **post_process kwargs) when the
+        fifth attempt's post_process still raises a RetryException; returning a value
+        uses it as the step's result instead of failing (None keeps the failure)"""
+        return None
+
     @abstractmethod
     def get_post_processor_and_kwargs(
         self, state: PKSumWorkflowState
@@ -142,6 +148,7 @@ class PKSumCommonAgentStep(PKSumCommonStep):
                 schema=schema,
                 schema_basemodel=self.get_schema_basemodel(),
                 post_process=post_process,
+                try_fix_error=self.get_try_fix_error(),
                 agent_fix_parser=self.get_agent_fix_parser(),
                 **kwargs,
             )
@@ -151,6 +158,7 @@ class PKSumCommonAgentStep(PKSumCommonStep):
                 instruction_prompt=instruction_prompt,
                 schema=schema,
                 post_process=post_process,
+                try_fix_error=self.get_try_fix_error(),
                 agent_fix_parser=self.get_agent_fix_parser(),
             )
         reasoning_process = reasoning_process if reasoning_process is not None else None

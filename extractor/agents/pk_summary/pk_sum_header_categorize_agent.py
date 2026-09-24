@@ -1,4 +1,5 @@
 import json
+import re
 from langchain_core.prompts import ChatPromptTemplate
 from pydantic import Field, ValidationError
 import logging
@@ -80,25 +81,55 @@ HeaderCategorizeJsonSchema = {
 }
 
 
+def _coerce_result(result: HeaderCategorizeResult | dict) -> HeaderCategorizeResult:
+    if not isinstance(result, dict):
+        return result
+    try:
+        # try parse the result
+        if result.get("categorized_headers") is not None and isinstance(result.get("categorized_headers"), str):
+            result["categorized_headers"] = json.loads(result["categorized_headers"])
+
+        return HeaderCategorizeResult(**result)
+    except json.JSONDecodeError as e:
+        logger.error(e)
+        raise RetryException(f"Invalid categorized headers: {result.get('categorized_headers')}")
+    except ValidationError as e:
+        logger.error(e)
+        raise e
+
+
+# A cell that reads as a number, a range, "mean (SD)", "x +/- y" or a percentage: digits
+# and numeric punctuation only, no words. An equation such as "t1/2 = 0.693/k" or a unit
+# does not match, so a table of abbreviations or formulas is not taken for data.
+_NUMERIC_CELL = re.compile(r"^[\s<>≤≥~≈±+\-–−]*\d[\d\s.,()\[\]±/%–−\-+<>≤≥~≈:;]*$")
+# rule (2) of the prompt: a column that is only about the subject number stays Uncategorized
+_COUNT_HEADER = re.compile(
+    r"^\W*(n|no|number(\s+of\s+\w+)*|subjects?|patients?|participants?|count)\W*$", re.IGNORECASE
+)
+_NO_VALUE_CELLS = ("", "N/A", "nan", "None")
+
+
+def find_unlabeled_value_columns(match_dict: dict[str, str], md_table_aligned: str) -> list[str]:
+    """Columns categorized "Uncategorized" whose cells are mostly numeric.
+
+    A subject-count column (header "N", "Number of patients", ...) is not one of them.
+    """
+    df = markdown_to_dataframe(md_table_aligned)
+    found = []
+    for idx, col in enumerate(df.columns):
+        if match_dict.get(col) != "Uncategorized" or _COUNT_HEADER.match(str(col).strip()):
+            continue
+        cells = [str(v).strip() for v in df.iloc[:, idx] if str(v).strip() not in _NO_VALUE_CELLS]
+        if cells and sum(1 for c in cells if _NUMERIC_CELL.match(c)) / len(cells) >= 0.5:
+            found.append(col)
+    return found
+
+
 def post_process_validate_categorized_result(
     result: HeaderCategorizeResult | dict,
     md_table_aligned: str,
 ) -> HeaderCategorizeResult:
-    if isinstance(result, dict):
-        try:
-            # try parse the result
-            if result.get("categorized_headers") is not None and isinstance(result.get("categorized_headers"), str):
-                result["categorized_headers"] = json.loads(result["categorized_headers"])
-
-            res = HeaderCategorizeResult(**result)
-        except json.JSONDecodeError as e:
-            logger.error(e)
-            raise RetryException(f"Invalid categorized headers: {result.get('categorized_headers')}")
-        except ValidationError as e:
-            logger.error(e)
-            raise e
-    else:
-        res = result
+    res = _coerce_result(result)
     # Ensure column count matches the table
     expected_columns = markdown_to_dataframe(md_table_aligned).shape[1]
     match_dict = res.categorized_headers
@@ -114,4 +145,40 @@ def post_process_validate_categorized_result(
         logger.error(error_msg)
         raise ValueError(error_msg)
 
+    # SplitByColumnsStep builds one sub-table per "Parameter value" column, so a mapping
+    # with none makes it return an empty list with no error and the table is silently lost
+    # (6 whole papers in the pk-summary benchmark: gpt-4o and qwen3.6 labelled the numeric
+    # data columns "Uncategorized"). Only ask again when the table does hold numeric
+    # columns - a table of abbreviations or equations legitimately has no value column.
+    if "Parameter value" not in match_dict.values():
+        unlabeled = find_unlabeled_value_columns(match_dict, md_table_aligned)
+        if unlabeled:
+            error_msg = (
+                f"No column was categorized as \"Parameter value\", but these columns hold "
+                f"numerical values: {unlabeled}. A column of numerical results (means, medians, "
+                "ranges, SD or CI, percentages) is \"Parameter value\" even when its header "
+                "names a group, a dose or a time point; only a column that is just the subject "
+                "number, or has no numbers, is \"Uncategorized\". Categorize the headers again."
+            )
+            logger.error(error_msg)
+            raise RetryException(error_msg)
+
     return res
+
+
+def try_fix_error_header_categories(
+    res: HeaderCategorizeResult | dict,
+    md_table_aligned: str,
+) -> HeaderCategorizeResult | None:
+    """Last-attempt fallback (retries exhausted) for a mapping with no "Parameter value".
+
+    Label the numeric "Uncategorized" columns "Parameter value" - the same detection the
+    validator asks the model to act on - so the table is not lost. Returns None when
+    there is no such column, so any other failure still fails.
+    """
+    res = _coerce_result(res)
+    unlabeled = find_unlabeled_value_columns(res.categorized_headers, md_table_aligned)
+    if not unlabeled:
+        return None
+    fixed = {**res.categorized_headers, **{col: "Parameter value" for col in unlabeled}}
+    return HeaderCategorizeResult(categorized_headers=fixed)
