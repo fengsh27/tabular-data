@@ -28,7 +28,7 @@ from extractor.pmid_extractor.article_retriever import ArticleRetriever
 from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
 from extractor.utils import convert_html_to_text_no_table, convert_sections_to_full_text, remove_references
 from extractor.agents.pk_pe_agents.pk_pe_identification_step import PKPEIdentificationStep
-from extractor.agents.pk_pe_agents.pk_pe_agents_types import FinalAnswerEnum, PKPECuratedTables, PKPECurationWorkflowState, PaperTypeEnum
+from extractor.agents.pk_pe_agents.pk_pe_agents_types import FinalAnswerEnum, PKPECuratedTables, PKPECurationWorkflowState, PaperTypeEnum, VerifyScopeEnum
 from extractor.pmid_extractor.table_utils import format_source_tables
 
 logger = logging.getLogger(__name__)
@@ -40,6 +40,7 @@ class PKPEManager:
         agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         enable_verification: bool = True,
+        verify_scope: VerifyScopeEnum | str = VerifyScopeEnum.PerTable,
     ):
         self.pipeline_llm = pipeline_llm
         self.agent_llm = agent_llm
@@ -48,6 +49,10 @@ class PKPEManager:
         # "pipeline mode" when False: every task skips verification/correction
         # entirely, taking execution_step's output as-is.
         self.enable_verification = enable_verification
+        # Default PerTable; only PKIndividualTask honours it today, every other task falls
+        # back to Combined at runtime (see PKPEAgentToolTask._build_workflow). Passed to
+        # every task uniformly so callers don't need to know which pipelines support it.
+        self.verify_scope = verify_scope
     
     def print_step(
         self,
@@ -145,6 +150,7 @@ class PKPEManager:
                 output_callback=self.print_step, 
                 pmid_db=self.pmid_db,
                 enable_verification=self.enable_verification,
+                verify_scope=self.verify_scope,
             )
         elif pipeline_type == PipelineTypeEnum.PK_INDIVIDUAL:
             return PKIndividualTask(
@@ -153,6 +159,7 @@ class PKPEManager:
                 output_callback=self.print_step, 
                 pmid_db=self.pmid_db,
                 enable_verification=self.enable_verification,
+                verify_scope=self.verify_scope,
             )
         elif pipeline_type == PipelineTypeEnum.PK_SPEC_SUMMARY:
             return PKSpecimenSummaryTask(
@@ -161,6 +168,7 @@ class PKPEManager:
                 output_callback=self.print_step, 
                 pmid_db=self.pmid_db,
                 enable_verification=self.enable_verification,
+                verify_scope=self.verify_scope,
             )
         elif pipeline_type == PipelineTypeEnum.PK_DRUG_SUMMARY:
             return PKDrugSummaryTask(
@@ -169,6 +177,7 @@ class PKPEManager:
                 output_callback=self.print_step, 
                 pmid_db=self.pmid_db,
                 enable_verification=self.enable_verification,
+                verify_scope=self.verify_scope,
             )
         elif pipeline_type == PipelineTypeEnum.PK_POPU_SUMMARY:
             return PKPopulationSummaryTask(
@@ -177,6 +186,7 @@ class PKPEManager:
                 output_callback=self.print_step, 
                 pmid_db=self.pmid_db,
                 enable_verification=self.enable_verification,
+                verify_scope=self.verify_scope,
             )
         elif pipeline_type == PipelineTypeEnum.PK_SPEC_INDIVIDUAL:
             return PKSpecimenIndividualTask(
@@ -185,6 +195,7 @@ class PKPEManager:
                 output_callback=self.print_step, 
                 pmid_db=self.pmid_db,
                 enable_verification=self.enable_verification,
+                verify_scope=self.verify_scope,
             )
         elif pipeline_type == PipelineTypeEnum.PK_DRUG_INDIVIDUAL:
             return PKDrugIndividualTask(
@@ -193,6 +204,7 @@ class PKPEManager:
                 output_callback=self.print_step, 
                 pmid_db=self.pmid_db,
                 enable_verification=self.enable_verification,
+                verify_scope=self.verify_scope,
             )
         elif pipeline_type == PipelineTypeEnum.PK_POPU_INDIVIDUAL:
             return PKPopulationIndividualTask(
@@ -201,6 +213,7 @@ class PKPEManager:
                 output_callback=self.print_step, 
                 pmid_db=self.pmid_db,
                 enable_verification=self.enable_verification,
+                verify_scope=self.verify_scope,
             )
         elif pipeline_type == PipelineTypeEnum.PE_STUDY_INFO:
             return PEStudyInfoTask(
@@ -209,6 +222,7 @@ class PKPEManager:
                 output_callback=self.print_step, 
                 pmid_db=self.pmid_db,
                 enable_verification=self.enable_verification,
+                verify_scope=self.verify_scope,
             )
         elif pipeline_type == PipelineTypeEnum.PE_STUDY_OUTCOME:
             return PEStudyOutcomeTask(
@@ -217,6 +231,7 @@ class PKPEManager:
                 output_callback=self.print_step, 
                 pmid_db=self.pmid_db,
                 enable_verification=self.enable_verification,
+                verify_scope=self.verify_scope,
             )
         else:
             raise ValueError(f"Invalid pipeline type: {pipeline_type}")

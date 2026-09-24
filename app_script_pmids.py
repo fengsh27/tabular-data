@@ -23,6 +23,13 @@ Input:
                loop entirely and take each pipeline's execution_step output as-is.
                final_answer is reported as "Unverified" instead of Correct/Incorrect
                for any table that was actually curated.
+- optional --verify-scope {combined,per_table}  where the verify/correct loop looks.
+               per_table (default) verifies/corrects each source table on its own before
+               combining - cheaper, and every pipeline supports it. A pipeline whose tool
+               produced only one input unit (no table found, so the whole article text was
+               used instead) verifies that one unit either way. combined verifies the whole
+               paper at once, as every pipeline did before per_table existed - kept
+               selectable for comparison. Ignored with --no-verify-correct.
 """
 
 import argparse
@@ -37,7 +44,7 @@ from dotenv import load_dotenv
 
 from extractor.agents.agent_factory import get_agent_llm, get_pipeline_llm
 from extractor.agents.agent_utils import extract_pmid_info_to_db
-from extractor.agents.pk_pe_agents.pk_pe_agents_types import FinalAnswerEnum, PKPECuratedTables
+from extractor.agents.pk_pe_agents.pk_pe_agents_types import FinalAnswerEnum, PKPECuratedTables, VerifyScopeEnum
 from extractor.agents_manager.pk_pe_manager import PKPEManager
 from extractor.constants import PipelineTypeEnum
 from extractor.database.pmid_db import PMIDDB
@@ -326,6 +333,16 @@ def extract_by_csv_file(interval_time: float = 0.0):
             "for any table that was actually curated."
         ),
     )
+    parser.add_argument(
+        "--verify-scope",
+        choices=[s.value for s in VerifyScopeEnum],
+        default=VerifyScopeEnum.PerTable.value,
+        help=(
+            "Where the verify/correct loop looks (default per_table: each source table on "
+            "its own, before combining). combined verifies the whole paper at once instead. "
+            "Ignored with --no-verify-correct."
+        ),
+    )
     args = vars(parser.parse_args())
 
     pmids_fn: str | None = args.get("pmids_fn")
@@ -337,6 +354,7 @@ def extract_by_csv_file(interval_time: float = 0.0):
         _parse_pipelines(pipeline_names) if pipeline_names else None
     )
     enable_verification: bool = not args.get("no_verify_correct")
+    verify_scope = VerifyScopeEnum(args.get("verify_scope"))
 
     if pmids_fn is None and pmid is None:
         parser.print_help()
@@ -371,6 +389,7 @@ def extract_by_csv_file(interval_time: float = 0.0):
         agent_llm=get_agent_llm(),
         pmid_db=pmid_db,
         enable_verification=enable_verification,
+        verify_scope=verify_scope,
     )
 
     error_report = []

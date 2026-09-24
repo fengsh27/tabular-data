@@ -11,6 +11,26 @@ class PaperTypeEnum(Enum):
     Unknown = "Unknown"
 
 
+class VerifyScopeEnum(Enum):
+    """Where the verify -> correct loop looks at the curated data.
+
+    Combined: the tool's per-table results are concatenated first, then verified/corrected
+              as one table against all source tables at once. Was the only behaviour before
+              PerTable existed; still used automatically as PerTable's fallback (below).
+    PerTable: (default) each table is verified/corrected on its own (scoped to just that
+              table and its own source), before being combined - cheaper, and mistakes in
+              one table can't corrupt another's row indices, but a check that only makes
+              sense across tables (duplicate rows between tables, Patient ID numbering
+              consistency, a row-scope rule such as "dose rows don't belong in the
+              individual-concentration table") is out of view for it. Falls back to Combined
+              when the tool doesn't populate state["curated_tables"] (only
+              PKIndividualTablesCurationTool does, initially - every other pipeline gets
+              Combined regardless of this setting, until it's upgraded too).
+    """
+    Combined = "combined"
+    PerTable = "per_table"
+
+
 class FinalAnswerEnum(Enum):
     Correct = "Correct"
     Incorrect = "Incorrect"
@@ -36,8 +56,16 @@ class PKPECurationWorkflowState(TypedDict):
     paper_title: str
     paper_abstract: str
     full_text: Optional[str] = None
-    source_tables: Optional[str] = None
+    # Every tool now returns a list[str] here (a single-input tool returns a 1-element
+    # list); format_source_tables() still accepts a bare str too, for the rare early-exit
+    # path (pmid_info missing) where a tool returns (None, None).
+    source_tables: Optional[list[str] | str] = None
     curated_table: Optional[str] = None
+    # Per-table markdown, same order/length as source_tables. Every tool populates this now
+    # (see pk_pe_agent_tools.py); None stays possible only as the unsupported-tool signal
+    # PKPEExecutionStep falls back to Combined on, which is currently unreachable but kept
+    # as a safety net (see tool_supports_per_table in pk_pe_agenttool_task.py).
+    curated_tables: Optional[list[str]] = None
     final_answer: Optional[FinalAnswerEnum] = None
     suggested_fix: Optional[str] = None
     explanation: Optional[str] = None

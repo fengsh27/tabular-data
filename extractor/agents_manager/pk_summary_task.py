@@ -15,7 +15,7 @@ from extractor.pmid_extractor.article_retriever import ArticleRetriever
 from extractor.pmid_extractor.html_table_extractor import HtmlTableExtractor
 from extractor.utils import convert_html_to_text_no_table, remove_references
 from extractor.agents.pk_pe_agents.pk_pe_identification_step import PKPEIdentificationStep
-from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState, PaperTypeEnum
+from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState, PaperTypeEnum, VerifyScopeEnum
 from extractor.agents.pk_pe_agents.pk_pe_agent_tools import (
     PKSummaryTablesCurationTool,
 )
@@ -31,8 +31,9 @@ class PKSummaryTask(PKPEAgentToolTask):
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
         enable_verification: bool = True,
+        verify_scope: VerifyScopeEnum | str = VerifyScopeEnum.PerTable,
     ):
-        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback, enable_verification)
+        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback, enable_verification, verify_scope)
         self.task_name = "PK Summary Task"
 
     def _create_tool(self, pmid: str):

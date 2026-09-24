@@ -61,22 +61,36 @@ class AgentTool(ABC):
 
     
     @abstractmethod
-    def _run(self, previous_errors: str | None = None) -> tuple[pd.DataFrame | None, list[str] | str | None]:
-        pass
+    def _run(self, previous_errors: str | None = None) -> (
+        tuple[pd.DataFrame | None, list[str] | str | None]
+        | tuple[pd.DataFrame | None, list[str] | str | None, list[pd.DataFrame] | None]
+    ):
+        """Return (df_combined, source_tables) for the rare early-exit (no pmid_info: both
+        None), or (df_combined, source_tables, per_table_dfs) - every tool's normal path -
+        to support VerifyScopeEnum.PerTable. per_table_dfs is the list of each source
+        table's own curated df, same order/length as source_tables, BEFORE they were
+        concatenated into df_combined; None marks a table that failed to curate (skipped in
+        df_combined too). A single-input tool (no table loop - the whole article text is
+        one unit) still returns a 3-tuple, with 1-element lists."""
 
-    def run(self, previous_errors: str | None = None) -> tuple[pd.DataFrame | None, list | str | None, FinalAnswerEnum | None]:
-        """Run the tool. Returns (df, source_tables, final_answer) where final_answer is
-        None on success (proceed to verification), or a terminal FinalAnswerEnum value
-        when the tool can already determine the outcome without verification."""
+    def run(self, previous_errors: str | None = None) -> tuple[
+        pd.DataFrame | None, list | str | None, FinalAnswerEnum | None, list[pd.DataFrame] | None
+    ]:
+        """Run the tool. Returns (df, source_tables, final_answer, per_table_dfs) where
+        final_answer is None on success (proceed to verification), or a terminal
+        FinalAnswerEnum value when the tool can already determine the outcome without
+        verification; per_table_dfs is None unless the tool supports per-table scoping."""
         self._print_tool_name()
         try:
-            df, source_tables = self._run(previous_errors)
-            return df, source_tables, None
+            result = self._run(previous_errors)
+            df, source_tables = result[0], result[1]
+            per_table_dfs = result[2] if len(result) > 2 else None
+            return df, source_tables, None, per_table_dfs
         except tuple(_TOOL_EXCEPTION_MAP.keys()) as e:
-            return None, None, _TOOL_EXCEPTION_MAP[type(e)]
+            return None, None, _TOOL_EXCEPTION_MAP[type(e)], None
         except Exception as e:
             logger.error(f"Error running {self.__class__.__name__}: \n{e}")
-            return pd.DataFrame(), "N/A", FinalAnswerEnum.PipelineError
+            return pd.DataFrame(), "N/A", FinalAnswerEnum.PipelineError, None
 
 class PKSummaryTablesCurationTool(AgentTool):
     def __init__(
@@ -126,12 +140,11 @@ class PKSummaryTablesCurationTool(AgentTool):
                 )
                 source_tables.append(f"caption: \n{caption}\n\n table: \n{source_table}")
             except Exception as e:
-                logger.error(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
-                logger.error(str(e))
+                logger.exception(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
                 print(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
                 print(str(e))
                 continue
-            
+
             dfs.append(df)
 
         # combine dfs
@@ -140,7 +153,9 @@ class PKSummaryTablesCurationTool(AgentTool):
             if len(dfs) > 0
             else pd.DataFrame()
         )
-        return df_combined, source_tables
+        # dfs is already parallel to source_tables (both appended only on a successful
+        # table, in the same order), so it doubles as per_table_dfs unchanged.
+        return df_combined, source_tables, dfs
 
 class PKIndividualTablesCurationTool(AgentTool):
     def __init__(
@@ -181,6 +196,10 @@ class PKIndividualTablesCurationTool(AgentTool):
         workflow.build()
         dfs: list[pd.DataFrame] = []
         source_tables = []
+        # Parallel to source_tables (same index, same length) so VerifyScopeEnum.PerTable can
+        # zip() them directly; None marks a table that produced nothing (skipped below, same
+        # as it already is in df_combined) rather than shifting later tables out of alignment.
+        per_table_dfs: list[pd.DataFrame | None] = []
         no_individual_data_count = 0
         other_error_count = 0
         for table in selected_tables:
@@ -203,13 +222,16 @@ class PKIndividualTablesCurationTool(AgentTool):
                     other_error_count += 1
                 logger.error(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
                 logger.error(str(e))
+                per_table_dfs.append(None)
                 continue
             except Exception as e:
                 other_error_count += 1
                 logger.error(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
                 logger.error(str(e))
+                per_table_dfs.append(None)
                 continue
             dfs.append(df)
+            per_table_dfs.append(df)
         if not dfs:
             if no_individual_data_count > 0 and other_error_count == 0:
                 raise NoIndividualDataError(
@@ -220,7 +242,7 @@ class PKIndividualTablesCurationTool(AgentTool):
             if len(dfs) > 0
             else pd.DataFrame()
         )
-        return df_combined, source_tables
+        return df_combined, source_tables, per_table_dfs
 
 class PKPopulationSummaryCurationTool(AgentTool):
     def __init__(
@@ -274,13 +296,19 @@ class PKPopulationSummaryCurationTool(AgentTool):
                 step_callback=self.output_callback,
                 previous_errors=previous_errors,
             )
-            return result_df, article_text
+            # No table loop here - the whole article is the one input unit - so
+            # per_table_dfs/source_tables are 1-element lists (per-table degenerates to
+            # combined for a single unit, which is correct: nothing else to scope to).
+            return result_df, [article_text], [result_df]
         else:
             logger.info("Detected PK demographic table. Use the table as the input.")
             workflow = PKPopuSumWorkflow(llm=self.llm)
             workflow.build()
             dfs: list[pd.DataFrame] = []
             source_tables = []
+            # Parallel to source_tables (same index/length): None marks a table that
+            # failed to curate, so VerifyScopeEnum.PerTable can zip() them directly.
+            per_table_dfs: list[pd.DataFrame | None] = []
             for table in selected_tables:
                 caption = "\n".join([table["caption"], table["footnote"]])
                 source_table = dataframe_to_markdown(table["table"])+"\n\n"+caption
@@ -296,10 +324,12 @@ class PKPopulationSummaryCurationTool(AgentTool):
                     logger.error(str(e))
                     print(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
                     print(str(e))
+                    per_table_dfs.append(None)
                     continue
                 dfs.append(df)
+                per_table_dfs.append(df)
             result_df = pd.concat(dfs, ignore_index=True)
-        return result_df, source_tables
+        return result_df, source_tables, per_table_dfs
 
 
 class PKPopulationIndividualCurationTool(AgentTool):
@@ -353,13 +383,19 @@ class PKPopulationIndividualCurationTool(AgentTool):
                 step_callback=self.output_callback,
                 previous_errors=previous_errors,
             )
-            return result_df, article_text
+            # No table loop here - the whole article is the one input unit - so
+            # per_table_dfs/source_tables are 1-element lists (per-table degenerates to
+            # combined for a single unit, which is correct: nothing else to scope to).
+            return result_df, [article_text], [result_df]
         else:
             logger.info("Detected PK demographic table. Use the table as the input.")
             workflow = PKPopuIndWorkflow(llm=self.llm)
             workflow.build()
             dfs: list[pd.DataFrame] = []
             source_tables = []
+            # Parallel to source_tables (same index/length): None marks a table that
+            # failed to curate, so VerifyScopeEnum.PerTable can zip() them directly.
+            per_table_dfs: list[pd.DataFrame | None] = []
             for table in selected_tables:
                 caption = "\n".join([table["caption"], table["footnote"]])
                 source_table = dataframe_to_markdown(table["table"])+"\n\n"+caption
@@ -376,10 +412,12 @@ class PKPopulationIndividualCurationTool(AgentTool):
                     logger.error(str(e))
                     print(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
                     print(str(e))
+                    per_table_dfs.append(None)
                     continue
                 dfs.append(df)
+                per_table_dfs.append(df)
             result_df = pd.concat(dfs, ignore_index=True)
-            return result_df, source_tables
+            return result_df, source_tables, per_table_dfs
 
 class PEStudyOutcomeCurationTool(AgentTool):
     def __init__(
@@ -419,6 +457,9 @@ class PEStudyOutcomeCurationTool(AgentTool):
         workflow.build()
         dfs: list[pd.DataFrame] = []
         source_tables = []
+        # Parallel to source_tables (same index/length): None marks a table that failed
+        # to curate, so VerifyScopeEnum.PerTable can zip() them directly.
+        per_table_dfs: list[pd.DataFrame | None] = []
         for table in selected_tables:
             caption = "\n".join([table["caption"], table["footnote"]])
             source_table = dataframe_to_markdown(table["table"])
@@ -436,14 +477,16 @@ class PEStudyOutcomeCurationTool(AgentTool):
                 logger.error(str(e))
                 print(f"Error occurred in curating table {table['caption']} in paper {self.pmid}")
                 print(str(e))
+                per_table_dfs.append(None)
                 continue
             dfs.append(df)
+            per_table_dfs.append(df)
         df_combined = (
             pd.concat(dfs, axis=0).reset_index(drop=True)
             if len(dfs) > 0
             else pd.DataFrame()
         )
-        return df_combined, source_tables
+        return df_combined, source_tables, per_table_dfs
 
 class FullTextCurationTool(AgentTool):
     def __init__(
@@ -495,9 +538,13 @@ class FullTextCurationTool(AgentTool):
             article_text = f"{title}\n{abstract}"
         article_text = convert_html_to_text_no_table(article_text)
         article_text = remove_references(article_text)
-        return wf.go_full_text(
+        result_df = wf.go_full_text(
             title=title,
             full_text=article_text,
             step_callback=self.output_callback,
             previous_errors=previous_errors,
-        ), article_text
+        )
+        # No table loop here - the whole article is the one input unit - so
+        # per_table_dfs/source_tables are 1-element lists (per-table degenerates to
+        # combined for a single unit, which is correct: nothing else to scope to).
+        return result_df, [article_text], [result_df]
