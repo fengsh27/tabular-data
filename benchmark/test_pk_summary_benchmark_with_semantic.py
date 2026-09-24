@@ -44,6 +44,14 @@ MODELS = [
     LLModelType.METALLAMA4,
     LLModelType.CODEX,
     LLModelType.GPT54,
+    LLModelType.QWEN36,
+    LLModelType.GEMMA4,
+    LLModelType.QWEN36SKILL,
+    LLModelType.QWEN38SKILL,
+    LLModelType.MAS_GPT54,
+    LLModelType.MAS_GPT4O_GPT54,
+    LLModelType.MAS_QWEN36,
+    LLModelType.MAS_GEMMA4,
 ]
 
 

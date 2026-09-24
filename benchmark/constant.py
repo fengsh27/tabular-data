@@ -39,6 +39,8 @@ class LLModelType(Enum):
     QWEN36SKILL="qwen36-skill"
     MAS_GPT4O_GPT54="mas-gpt4o-gpt54"  # multi-agent: pipeline llm gpt-4o, agent llm gpt-5.4
     MAS_GPT54="mas-gpt54"  # multi-agent: pipeline llm and agent llm gpt-5.4
-    MAS_QWEN36="mas-qwen36"  # multi-agent: pipeline llm and agent llm qwen3.6
+    MAS_QWEN36="mas-qwen36"  # multi-agent: pipeline llm and agent llm qwen3.6, verify_scope=combined
+    MAS_QWEN36_PT="mas-qwen36-pt"  # same as MAS_QWEN36 but verify_scope=per_table (default since ab29b0b's follow-up)
+    MAS_GEMMA4="mas-gemma4"  # multi-agent: pipeline llm and agent llm gemma4:31b (verify_scope=per_table default)
     QWEN38SKILL="qwen38-skill"  # qwen3.8 (27B dense) through Claude Code + skills
     QWEN36="qwen36"  # qwen3.6 through the multi-agent pipeline (not the skills)

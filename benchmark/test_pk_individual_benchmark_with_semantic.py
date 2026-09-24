@@ -38,6 +38,8 @@ MODELS = [
     LLModelType.MAS_GPT4O_GPT54,
     LLModelType.MAS_GPT54,
     LLModelType.MAS_QWEN36,
+    LLModelType.MAS_QWEN36_PT,
+    LLModelType.MAS_GEMMA4,
 ]
 
 
