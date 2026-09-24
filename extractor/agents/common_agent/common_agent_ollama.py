@@ -82,6 +82,50 @@ def fix_reply_shape_for_single_field_schema(
     return None
 
 
+_PYTHON_LITERALS = {"True": "true", "False": "false", "None": "null"}
+
+
+def normalize_python_literals(text: str) -> str:
+    """Rewrite Python-cased `True` / `False` / `None` to JSON `true` / `false` / `null`.
+
+    A model copies the casing of a prompt's output example, and one prompt had
+    `{"processed": True, ...}` in its example; qwen3.6 then answered
+    `{"processed": False, "row_list": null, ...}`, which is neither JSON nor Python
+    and failed identically on all five temperature-0 attempts. Only bare words outside
+    double-quoted strings are rewritten, so a string value such as "None of the rows"
+    is left alone. Every replacement has the same length as the word it replaces, so
+    offsets into the original text stay valid.
+    """
+    out: list[str] = []
+    i, n, in_string = 0, len(text), False
+    while i < n:
+        c = text[i]
+        if in_string:
+            out.append(c)
+            if c == "\\" and i + 1 < n:
+                out.append(text[i + 1])
+                i += 2
+                continue
+            if c == '"':
+                in_string = False
+            i += 1
+        elif c == '"':
+            in_string = True
+            out.append(c)
+            i += 1
+        elif c.isalpha() or c == "_":
+            j = i
+            while j < n and (text[j].isalnum() or text[j] == "_"):
+                j += 1
+            word = text[i:j]
+            out.append(_PYTHON_LITERALS.get(word, word))
+            i = j
+        else:
+            out.append(c)
+            i += 1
+    return "".join(out)
+
+
 def recover_answer_from_prose(content: str, schema: Any) -> Optional[BaseModel]:
     """Recover the answer from a reply that narrates first and ends with the JSON.
 
@@ -93,7 +137,10 @@ def recover_answer_from_prose(content: str, schema: Any) -> Optional[BaseModel]:
     does, fall back to the last one that fits after
     `fix_reply_shape_for_single_field_schema` (e.g. a wrong key), so a stray
     wrong-key object after the real answer cannot override it. Placeholder
-    examples such as `[index_0, ...]` are not valid JSON and are skipped.
+    examples such as `[index_0, ...]` are not valid JSON and are skipped. An
+    object whose only defect is Python-cased literals (`False`, `None`) is read
+    after `normalize_python_literals`, which also covers a reply that is nothing
+    but such an object.
     Returns None when nothing fits, so real errors still retry.
     """
     if not (isinstance(schema, type) and issubclass(schema, BaseModel)):
@@ -106,8 +153,19 @@ def recover_answer_from_prose(content: str, schema: Any) -> Optional[BaseModel]:
         try:
             obj, end = decoder.raw_decode(content, j)
         except ValueError:
-            i = j + 1  # a brace inside prose or a placeholder: keep scanning
-            continue
+            # Not JSON as written. Normalizing from this brace on starts the string
+            # tracking clean here, and keeps `end` valid (same-length rewrites).
+            tail = content[j:]
+            normalized = normalize_python_literals(tail)
+            try:
+                if normalized == tail:
+                    raise ValueError("nothing to normalize")
+                obj, end = decoder.raw_decode(normalized)
+            except ValueError:
+                i = j + 1  # a brace inside prose or a placeholder: keep scanning
+                continue
+            end += j
+            logger.info("recover_answer_from_prose: read Python-cased literals as JSON")
         i = end  # skip objects nested inside the one just decoded
         try:
             exact = schema.model_validate(obj)

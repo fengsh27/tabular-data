@@ -16,15 +16,19 @@ There is now a table related to pharmacokinetics (PK).
 Carefully examine the table and follow these steps:
 (1) Remove any information that pertains to **specific individuals**, such as individual-level results or personally identifiable data.
 (2) **Do not remove** summary statistics, aggregated values, or group-level information such as 'N=' values, as these are not individual-specific.
-Please return the result with the following format:
-processed: boolean value, False represents the table have already meets the requirement, don't need to be processed. Otherwise, it will be True
+Please return the result as a JSON object with the keys "processed", "row_list" and "col_list":
+processed: boolean value, false represents the table have already meets the requirement, don't need to be processed. Otherwise, it will be true
 row_list: an array of row indices that satisfy the requirement, that is the rows have no individual-level results or personally identifiable data.
 col_list: an array of column names that satisfy the requirement, that is the columns in the above rows have no individual-level results or personally identifiable data.
 
 ### **Output Format**
-The output **must** exactly follow the format of the following example:
+Reply with ONLY the JSON object. It is JSON, not Python: write the booleans in lowercase (`true` / `false`) and use `null` (never `None`) when there is no list.
 
-{{"processed": True, "row_list": [index_0, index_1, ..., index_n], "col_list": ["col_0", "col_1", ..., "col_n"]}}
+Example 1 - some rows are individual-level and must be removed (keep rows 0, 1 and 2, and the columns "Parameter" and "Mean"):
+{{"processed": true, "row_list": [0, 1, 2], "col_list": ["Parameter", "Mean"]}}
+
+Example 2 - the table already meets the requirement:
+{{"processed": false, "row_list": null, "col_list": null}}
 
 """)
 

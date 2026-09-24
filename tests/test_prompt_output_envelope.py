@@ -196,3 +196,20 @@ def test_multi_field_and_non_model_schemas_are_left_alone():
 
     assert fix_reply_shape_for_single_field_schema("[1, 2]", SummaryDataDelResult) is None
     assert fix_reply_shape_for_single_field_schema("[1, 2]", {"type": "object"}) is None
+
+
+# A JSON example written with Python-cased literals (`"processed": True`) is copied by the
+# model as-is, and `{"processed": False, ...}` is neither JSON nor Python: qwen3.6 failed
+# on all five temperature-0 attempts (pk_summary's individual-data-deletion prompt).
+_PYTHON_LITERAL_IN_EXAMPLE = re.compile(r'"\w+"\s*:\s*(True|False|None)\b')
+
+
+@pytest.mark.parametrize("path", AGENT_FILES, ids=lambda p: p.name)
+def test_prompt_json_examples_use_json_literals(path):
+    for text in _prompt_texts(path):
+        for line in text.splitlines():
+            m = _PYTHON_LITERAL_IN_EXAMPLE.search(line)
+            assert m is None, (
+                f"{path.name}: Python-cased literal {m.group(1)!r} in a JSON example "
+                f"{line.strip()[:90]!r}; write true / false / null"
+            )

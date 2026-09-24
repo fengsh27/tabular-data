@@ -1,10 +1,14 @@
-from extractor.agents.agent_utils import display_md_table
+import logging
+
+from extractor.agents.agent_utils import DEFAULT_TOKEN_USAGE, display_md_table
 from extractor.agents.pk_summary.pk_sum_common_step import PKSumCommonAgentStep
 from extractor.agents.pk_summary.pk_sum_individual_data_del_agent import (
     INDIVIDUAL_DATA_DEL_PROMPT,
     IndividualDataDelResult,
     post_process_individual_del_result,
 )
+
+logger = logging.getLogger(__name__)
 
 
 class IndividualDataDelStep(PKSumCommonAgentStep):
@@ -14,6 +18,26 @@ class IndividualDataDelStep(PKSumCommonAgentStep):
         super().__init__()
         self.start_title = "Deleting Individual Data"
         self.end_title = "Completed to Deleting Individual Data"
+
+    def execute_directly(self, state):
+        # This step only trims individual-level rows out of a summary table, so when the
+        # model cannot answer it (retries exhausted on an unparsable reply - qwen3.6 lost 6
+        # of 63 pk-summary runs this way, the whole paper each time) the right failure is to
+        # keep the table as it is, not to drop it. try_fix_error cannot do this: it only
+        # runs for a RetryException from post_process, not for a parse failure. The tokens
+        # spent on the failed attempts are not accounted for (the agent is local to
+        # the base implementation); the same was true when the paper was lost.
+        try:
+            return super().execute_directly(state)
+        except Exception as e:  # noqa: BLE001 - tenacity.RetryError, parse or post_process errors
+            logger.warning(
+                "Deleting Individual Data failed (%r); keeping the table unchanged.", e, exc_info=True
+            )
+            return (
+                IndividualDataDelResult(processed=False, row_list=None, col_list=None),
+                state["md_table"],
+                {**DEFAULT_TOKEN_USAGE},
+            )
 
     def get_system_prompt(self, state):
         md_table = state["md_table"]
