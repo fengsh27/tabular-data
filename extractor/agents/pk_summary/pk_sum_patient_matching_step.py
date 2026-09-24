@@ -101,6 +101,20 @@ class PatientMatchingAgentStep(PKSumCommonStep):
                 ],
                 ignore_index=True,
             )
+            # post_process_validate_matched_patients only checks the LIST LENGTH against
+            # the data table's row count - it never checks that each VALUE is in range for
+            # df_table_patient (whose length is the patient table's row count + 1 for the
+            # ERROR sentinel row just appended above, a different number). An out-of-range
+            # value reaches .iloc[] unchecked and raises "positional indexers are out-of-
+            # bounds", which escapes the agent's retry machinery entirely (it happens after
+            # agent.go() returns) and drops the whole table's curation. Same bug class as
+            # pk_individual/pk_ind_patient_matching_step.py (fixed in 3f7c80a) - clamp
+            # every value to the ERROR sentinel row instead of trusting it blindly.
+            expected_rows = df_table_patient.shape[0]
+            patient_match_list = [
+                ix if 0 <= ix < expected_rows else expected_rows - 1
+                for ix in patient_match_list
+            ]
             df_table_patient_reordered = df_table_patient.iloc[
                 patient_match_list
             ].reset_index(drop=True)
