@@ -44,3 +44,5 @@ class LLModelType(Enum):
     MAS_GEMMA4="mas-gemma4"  # multi-agent: pipeline llm and agent llm gemma4:31b (verify_scope=per_table default)
     QWEN38SKILL="qwen38-skill"  # qwen3.8 (27B dense) through Claude Code + skills
     QWEN36="qwen36"  # qwen3.6 through the multi-agent pipeline (not the skills)
+    QWEN38="qwen38"  # qwen3.8 (27B dense) through simple-prompt/pipeline (not the skills)
+    MAS_QWEN38="mas-qwen38"  # multi-agent: pipeline llm and agent llm qwen3.8:27b, verify_scope=per_table (default)

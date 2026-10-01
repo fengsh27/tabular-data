@@ -35,11 +35,13 @@ MODELS = [
     LLModelType.QWEN36SKILL,
     LLModelType.QWEN36,
     LLModelType.QWEN38SKILL,
+    LLModelType.QWEN38,
     LLModelType.MAS_GPT4O_GPT54,
     LLModelType.MAS_GPT54,
     LLModelType.MAS_QWEN36,
     LLModelType.MAS_QWEN36_PT,
     LLModelType.MAS_GEMMA4,
+    LLModelType.MAS_QWEN38,
 ]
 
 

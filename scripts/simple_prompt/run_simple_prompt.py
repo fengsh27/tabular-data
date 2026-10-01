@@ -12,10 +12,11 @@ skill run so both arms read exactly the same tables.
         --model qwen3.8:27b
 
 --backend selects the model backend: "ollama" (default, a local Ollama server
-via --base-url/--model) or "gpt4o" (Azure gpt-4o via
-extractor.request_openai.get_openai(), reading .env - --model is ignored in
-this mode). Both backends read the exact same prepared table set and write
-the exact same manifest.json shape (rows, input_tokens, output_tokens,
+via --base-url/--model), "gpt4o" (Azure gpt-4o via
+extractor.request_openai.get_openai()), or "gpt54" (Azure gpt-5.4 via
+extractor.request_openai.get_5_openai()) - the two Azure backends read .env
+and ignore --model. All backends read the exact same prepared table set and
+write the exact same manifest.json shape (rows, input_tokens, output_tokens,
 elapsed_seconds per table), so results are directly comparable.
 
 Add --dry-run to render the prompts without contacting the model.
@@ -44,6 +45,12 @@ sys.path.insert(0, REPO_ROOT)
 SCHEMA_MODULES = {"pk_individual": "_common", "pk_summary": "_common_summary"}
 
 TABLE_FILES = ("00_markdown_table.md", "inputs.md")
+
+# backend name -> (display label, extractor.request_openai factory function name)
+AZURE_BACKENDS = {
+    "gpt4o": ("gpt-4o (Azure)", "get_openai"),
+    "gpt54": ("gpt-5.4 (Azure)", "get_5_openai"),
+}
 
 
 def load_prompt(path: str) -> str:
@@ -102,11 +109,11 @@ def call_ollama(base_url, model, prompt, temperature, num_ctx, timeout, retries=
     raise RuntimeError(f"ollama call failed after {retries + 1} tries: {last}")
 
 
-def call_gpt4o(client, prompt, retries=2):
-    """Call gpt-4o, returning a body dict shaped like call_ollama's (same
-    "response"/"thinking"/"done_reason" keys, plus prompt_eval_count/eval_count
-    for token counts) so the rest of main() does not need to know which
-    backend it is talking to."""
+def call_azure_chat(client, prompt, label, retries=2):
+    """Call an Azure chat client (gpt-4o, gpt-5.4, ...), returning a body dict
+    shaped like call_ollama's (same "response"/"thinking"/"done_reason" keys,
+    plus prompt_eval_count/eval_count for token counts) so the rest of main()
+    does not need to know which backend it is talking to."""
     from langchain_core.messages import HumanMessage
 
     last = None
@@ -125,7 +132,7 @@ def call_gpt4o(client, prompt, retries=2):
             last = exc
             if attempt < retries:
                 time.sleep(5 * (attempt + 1))
-    raise RuntimeError(f"gpt-4o call failed after {retries + 1} tries: {last}")
+    raise RuntimeError(f"{label} call failed after {retries + 1} tries: {last}")
 
 
 def find_tables(scratch: str, pmid: str):
@@ -153,11 +160,11 @@ def main() -> int:
     ap.add_argument("--out", required=True)
     ap.add_argument("--schema", choices=sorted(SCHEMA_MODULES), default="pk_individual",
                     help="column set / parser to use (default: pk_individual)")
-    ap.add_argument("--backend", choices=["ollama", "gpt4o"], default="ollama",
-                    help="model backend: local Ollama server (default) or Azure "
-                         "gpt-4o via extractor.request_openai.get_openai()")
+    ap.add_argument("--backend", choices=["ollama", *AZURE_BACKENDS], default="ollama",
+                    help="model backend: local Ollama server (default), or an "
+                         "Azure chat deployment (gpt4o, gpt54) via extractor.request_openai")
     ap.add_argument("--model", default=os.environ.get("SIMPLE_PROMPT_MODEL", "qwen3.8:27b"),
-                    help="Ollama model tag; ignored when --backend gpt4o")
+                    help="Ollama model tag; ignored for an Azure backend")
     ap.add_argument("--base-url", default=None)
     ap.add_argument("--pmids", default=None, help="comma list, or a file of PMIDs")
     ap.add_argument("--temperature", type=float, default=0.0)
@@ -175,11 +182,12 @@ def main() -> int:
         return 2
 
     client = None
-    if args.backend == "gpt4o" and not args.dry_run:
+    if args.backend in AZURE_BACKENDS and not args.dry_run:
         from dotenv import load_dotenv
         load_dotenv(os.path.join(REPO_ROOT, ".env"))
-        from extractor.request_openai import get_openai
-        client = get_openai()
+        import extractor.request_openai as request_openai
+        _, factory_name = AZURE_BACKENDS[args.backend]
+        client = getattr(request_openai, factory_name)()
 
     if args.pmids and os.path.exists(args.pmids):
         pmids = [l.strip() for l in open(args.pmids) if l.strip()]
@@ -192,7 +200,8 @@ def main() -> int:
         )
 
     os.makedirs(args.out, exist_ok=True)
-    model_desc = "gpt-4o (Azure)" if args.backend == "gpt4o" else f"{args.model} base_url={base_url}"
+    model_desc = (AZURE_BACKENDS[args.backend][0] if args.backend in AZURE_BACKENDS
+                  else f"{args.model} base_url={base_url}")
     print(f"backend={args.backend} model={model_desc} papers={len(pmids)} "
           f"temp={args.temperature}{' [dry-run]' if args.dry_run else ''}")
 
@@ -224,8 +233,8 @@ def main() -> int:
             else:
                 t0 = time.time()
                 try:
-                    if args.backend == "gpt4o":
-                        body = call_gpt4o(client, prompt)
+                    if args.backend in AZURE_BACKENDS:
+                        body = call_azure_chat(client, prompt, AZURE_BACKENDS[args.backend][0])
                     else:
                         body = call_ollama(base_url, args.model, prompt,
                                            args.temperature, args.num_ctx, args.timeout)
