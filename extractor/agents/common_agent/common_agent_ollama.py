@@ -412,8 +412,22 @@ class CommonAgentOllama(CommonAgent):
         # Add /no_think to disable Qwen3's thinking mode
         system_prompt = system_prompt + "\n\n/no_think"
         instruction_prompt = escape_braces_for_format(instruction_prompt)
+        # The human turn below actually carries instruction_prompt (via the
+        # {input} placeholder, filled by agent.invoke({"input": ...}) just
+        # below) - without it the request was system-message-only. Every
+        # other Ollama-served model tolerates that (llama.cpp templates
+        # generally render fine with no user turn), but qwen3.8's bundled
+        # chat template does not: it 500s with "no user query found in
+        # messages" the instant a request has zero "user"-role messages
+        # (confirmed by direct /api/chat probing - a lone system message
+        # fails, adding any human message, even an empty one, succeeds).
+        # Restoring this turn is a correctness fix for every Ollama model,
+        # not a qwen3.8-only patch: instruction_prompt was computed and
+        # escaped above but, before this, was never actually placed in a
+        # message, so its content never reached the model.
         prompt = ChatPromptTemplate.from_messages([
             ("system", system_prompt),
+            ("human", "{input}"),
         ])
         # Initialize the callback handler
         callback_handler = OpenAICallbackHandler()
@@ -423,7 +437,6 @@ class CommonAgentOllama(CommonAgent):
         # agent = updated_prompt | self.llm.with_structured_output(schema)
 
         try:
-            # res = agent.invoke({"input": instruction_prompt})
             res, token_usage = agent.invoke(
                 {"input": instruction_prompt},
             )
