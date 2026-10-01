@@ -39,3 +39,15 @@ def test_real_baseline_no_longer_raises_in_anchor_lookup():
     target_row = pd.Series({c: "zzz-no-match" for c in PK_SUMMARY_ANCHOR_COLUMNS})
     ev.anchor_row_from_rows(target_row, base.to_dict("records"))
     ev.anchor_row_from_rows(row, base.to_dict("records"))
+
+
+def test_weighted_rating_cols_tuples_do_not_crash():
+    # pk-individual's PK_INDIVIDUAL_RATING_COLUMNS is a list of (name, weight) tuples, not
+    # plain strings (unlike pk-summary's) - align_column_case must unwrap them before calling
+    # .strip() on each, or every pk-individual semantic-benchmark run fails with
+    # AttributeError: 'tuple' object has no attribute 'strip'.
+    cfg = get_benchmark_config(BenchmarkType.PK_INDIVIDUAL)
+    assert any(isinstance(c, tuple) for c in cfg.rating_cols)  # otherwise this test proves nothing
+    df = pd.DataFrame(columns=["Patient ID", "Drug Name", "Pregnancy Stage"])
+    out = align_column_case(df, cfg)
+    assert "Drug name" in out.columns and "Pregnancy stage" in out.columns

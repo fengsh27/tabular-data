@@ -38,8 +38,12 @@ def align_column_case(df: pd.DataFrame, config: BenchmarkConfig) -> pd.DataFrame
     so a baseline header such as "Pregnancy Stage" made `anchor_row_from_rows` raise
     KeyError("Pregnancy stage") whenever the target had fewer rows and the match reached
     that anchor column (pk-summary PMID 16143486).
+
+    rating_cols entries are either a plain column name or a (name, weight) tuple (e.g.
+    pk-individual's PK_INDIVIDUAL_RATING_COLUMNS) - unwrap the tuple form before matching.
     """
-    known = list(config.rating_cols) + list(config.anchor_cols) + list(config.columns_type or {})
+    known = [c[0] if isinstance(c, tuple) else c for c in config.rating_cols] \
+        + list(config.anchor_cols) + list(config.columns_type or {})
     by_lower = {c.strip().lower(): c for c in known}
     rename = {
         c: by_lower[c.strip().lower()]
