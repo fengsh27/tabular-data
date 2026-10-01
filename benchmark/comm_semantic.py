@@ -31,6 +31,24 @@ def write_semantic_score_for_multiple_pipeline(
         fobj.write(f"{pmid}, {pipeline}, {model1}, {model2}, {str(score)}\n")
         
 
+def align_column_case(df: pd.DataFrame, config: BenchmarkConfig) -> pd.DataFrame:
+    """Rename columns that differ from a configured column only in case/surrounding spaces.
+
+    The baseline CSV is read raw (targets go through `config.preprocess`, which does this),
+    so a baseline header such as "Pregnancy Stage" made `anchor_row_from_rows` raise
+    KeyError("Pregnancy stage") whenever the target had fewer rows and the match reached
+    that anchor column (pk-summary PMID 16143486).
+    """
+    known = list(config.rating_cols) + list(config.anchor_cols) + list(config.columns_type or {})
+    by_lower = {c.strip().lower(): c for c in known}
+    rename = {
+        c: by_lower[c.strip().lower()]
+        for c in df.columns
+        if isinstance(c, str) and c not in known and c.strip().lower() in by_lower
+    }
+    return df.rename(columns=rename) if rename else df
+
+
 def _build_evaluator(
     config: BenchmarkConfig,
     score_mode: Literal["combined", "separate"] | None,
@@ -71,7 +89,7 @@ def _run_semantic_benchmark_for_single_pipeline(
             )
             continue
         
-        df_baseline = pd.read_csv(baseline)
+        df_baseline = align_column_case(pd.read_csv(baseline), config)
         df_target = config.preprocess(target)
         score = evaluator.compare_tables(df_baseline, df_target)
         write_semantic_score(
