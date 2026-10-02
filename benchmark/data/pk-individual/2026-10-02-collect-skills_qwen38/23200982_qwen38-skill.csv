@@ -1,0 +1,128 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+1,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal IFX concentration at birth,μg/ml,40,N/A,N/A
+2,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal IFX concentration at birth,μg/ml,15.1,N/A,N/A
+3,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal IFX concentration at birth,μg/ml,1.4,N/A,N/A
+4,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal IFX concentration at birth,μg/ml,19.2,N/A,N/A
+5,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal IFX concentration at birth,μg/ml,3.8,N/A,N/A
+6,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal IFX concentration at birth,μg/ml,4.8,N/A,N/A
+7,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal IFX concentration at birth,μg/ml,14.5,N/A,N/A
+8,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal IFX concentration at birth,μg/ml,16.5,N/A,N/A
+9,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal IFX concentration at birth,μg/ml,2.2,N/A,N/A
+10,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal IFX concentration at birth,μg/ml,4.1,N/A,N/A
+11,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal IFX concentration at birth,μg/ml,5.1,N/A,N/A
+3,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord IFX concentration at birth,μg/ml,2.0,N/A,N/A
+4,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord IFX concentration at birth,μg/ml,26.5,N/A,N/A
+5,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord IFX concentration at birth,μg/ml,3.3,N/A,N/A
+6,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord IFX concentration at birth,μg/ml,8.8,N/A,N/A
+7,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord IFX concentration at birth,μg/ml,20.5,N/A,N/A
+8,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord IFX concentration at birth,μg/ml,26.5,N/A,N/A
+9,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord IFX concentration at birth,μg/ml,8.4,N/A,N/A
+10,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord IFX concentration at birth,μg/ml,13.6,N/A,N/A
+11,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord IFX concentration at birth,μg/ml,20.4,N/A,N/A
+1,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant IFX concentration at birth,μg/ml,39.5,N/A,N/A
+2,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant IFX concentration at birth,μg/ml,25.3,N/A,N/A
+3,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant IFX concentration at birth,μg/ml,2.9,N/A,N/A
+4,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant IFX concentration at birth,μg/ml,23.6,N/A,N/A
+5,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant IFX concentration at birth,μg/ml,4.2,N/A,N/A
+6,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant IFX concentration at birth,μg/ml,8.7,N/A,N/A
+7,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant IFX concentration at birth,μg/ml,28.2,N/A,N/A
+8,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant IFX concentration at birth,μg/ml,27.5,N/A,N/A
+9,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant IFX concentration at birth,μg/ml,10.6,N/A,N/A
+10,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant IFX concentration at birth,μg/ml,4.7,N/A,N/A
+11,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant IFX concentration at birth,μg/ml,8.4,N/A,N/A
+3,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio cord/Mother,%,143,N/A,N/A
+4,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio cord/Mother,%,138,N/A,N/A
+5,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio cord/Mother,%,87,N/A,N/A
+6,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio cord/Mother,%,183,N/A,N/A
+7,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio cord/Mother,%,141,N/A,N/A
+8,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio cord/Mother,%,160,N/A,N/A
+9,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio cord/Mother,%,381,N/A,N/A
+10,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio cord/Mother,%,332,N/A,N/A
+11,Infliximab,Infliximab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio cord/Mother,%,400,N/A,N/A
+1,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal ADA concentration at birth,μg/ml,6.05,N/A,N/A
+2,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal ADA concentration at birth,μg/ml,1.84,N/A,N/A
+3,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal ADA concentration at birth,μg/ml,3.84,N/A,N/A
+4,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal ADA concentration at birth,μg/ml,0,N/A,N/A
+5,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal ADA concentration at birth,μg/ml,2.2,N/A,N/A
+6,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal ADA concentration at birth,μg/ml,3.21,N/A,N/A
+7,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal ADA concentration at birth,μg/ml,3.36,N/A,N/A
+8,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal ADA concentration at birth,μg/ml,16.1,N/A,N/A
+9,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal ADA concentration at birth,μg/ml,2.24,N/A,N/A
+10,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal ADA concentration at birth,μg/ml,8.48,N/A,N/A
+1,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord ADA concentration at birth,μg/ml,9.29,N/A,N/A
+2,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord ADA concentration at birth,μg/ml,5.39,N/A,N/A
+3,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord ADA concentration at birth,μg/ml,4.57,N/A,N/A
+4,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord ADA concentration at birth,μg/ml,0.16,N/A,N/A
+5,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord ADA concentration at birth,μg/ml,4.18,N/A,N/A
+6,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord ADA concentration at birth,μg/ml,4.74,N/A,N/A
+7,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord ADA concentration at birth,μg/ml,8.94,N/A,N/A
+8,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord ADA concentration at birth,μg/ml,19.7,N/A,N/A
+9,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord ADA concentration at birth,μg/ml,4.95,N/A,N/A
+10,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord ADA concentration at birth,μg/ml,8.29,N/A,N/A
+1,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant ADA concentration at birth,μg/ml,6.17,N/A,N/A
+2,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant ADA concentration at birth,μg/ml,6.01,N/A,N/A
+5,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant ADA concentration at birth,μg/ml,4.28,N/A,N/A
+6,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant ADA concentration at birth,μg/ml,4.87,N/A,N/A
+7,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant ADA concentration at birth,μg/ml,8.09,N/A,N/A
+8,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant ADA concentration at birth,μg/ml,17.7,N/A,N/A
+9,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant ADA concentration at birth,μg/ml,4.64,N/A,N/A
+10,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant ADA concentration at birth,μg/ml,9.17,N/A,N/A
+1,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio Cord/Mother,%,153,N/A,N/A
+2,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio Cord/Mother,%,293,N/A,N/A
+3,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio Cord/Mother,%,119,N/A,N/A
+5,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio Cord/Mother,%,190,N/A,N/A
+6,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio Cord/Mother,%,148,N/A,N/A
+7,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio Cord/Mother,%,266,N/A,N/A
+8,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio Cord/Mother,%,122,N/A,N/A
+9,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio Cord/Mother,%,220,N/A,N/A
+10,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio Cord/Mother,%,98,N/A,N/A
+2,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Follow-up ADA concentration,μg/ml,1.94,N/A,N/A
+5,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Follow-up ADA concentration,μg/ml,0.934,N/A,N/A
+6,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Follow-up ADA concentration,μg/ml,1.31,N/A,N/A
+7,Adalimumab,Adalimumab,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Follow-up ADA concentration,μg/ml,0.529,N/A,N/A
+01,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal CZP concentration at birth,μg/ml,18.83,N/A,N/A
+02,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal CZP concentration at birth,μg/ml,59.57,N/A,N/A
+03,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal CZP concentration at birth,μg/ml,4.87,N/A,N/A
+04,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal CZP concentration at birth,μg/ml,20.13,N/A,N/A
+05,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal CZP concentration at birth,μg/ml,16.49,N/A,N/A
+06,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal CZP concentration at birth,μg/ml,34.65,N/A,N/A
+07,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal CZP concentration at birth,μg/ml,1.87,N/A,N/A
+08-A,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal CZP concentration at birth,μg/ml,6.32,N/A,N/A
+09-A,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal CZP concentration at birth,μg/ml,42.7,N/A,N/A
+10,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal CZP concentration at birth,μg/ml,37.83,N/A,N/A
+01,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord CZP concentration at birth,μg/ml,1.65,N/A,N/A
+02,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord CZP concentration at birth,μg/ml,0.94,N/A,N/A
+03,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord CZP concentration at birth,μg/ml,1.19,N/A,N/A
+04,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord CZP concentration at birth,μg/ml,0.57,N/A,N/A
+06,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord CZP concentration at birth,μg/ml,1.66,N/A,N/A
+09-A,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord CZP concentration at birth,μg/ml,1.28,N/A,N/A
+09-B,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord CZP concentration at birth,μg/ml,1.16,N/A,N/A
+10,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Cord CZP concentration at birth,μg/ml,0.55,N/A,N/A
+02,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant CZP concentration at birth,μg/ml,1.02,N/A,N/A
+03,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant CZP concentration at birth,μg/ml,1.22,N/A,N/A
+04,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant CZP concentration at birth,μg/ml,0.44,N/A,N/A
+06,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant CZP concentration at birth,μg/ml,1.58,N/A,N/A
+08-A,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant CZP concentration at birth,μg/ml,0.58,N/A,N/A
+09-A,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant CZP concentration at birth,μg/ml,1.34,N/A,N/A
+09-B,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant CZP concentration at birth,μg/ml,1.18,N/A,N/A
+10,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Infant CZP concentration at birth,μg/ml,0.6,N/A,N/A
+01,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio Cord/Mother,%,8.8,N/A,N/A
+02,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio Cord/Mother,%,1.6,N/A,N/A
+03,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio Cord/Mother,%,24,N/A,N/A
+04,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio Cord/Mother,%,2.8,N/A,N/A
+05,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio Cord/Mother,%,2.5,N/A,N/A
+06,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio Cord/Mother,%,4.8,N/A,N/A
+07,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio Cord/Mother,%,22,N/A,N/A
+08-A,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio Cord/Mother,%,6.4,N/A,N/A
+08-B,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio Cord/Mother,%,6.4,N/A,N/A
+09-A,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio Cord/Mother,%,3.0,N/A,N/A
+09-B,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio Cord/Mother,%,2.7,N/A,N/A
+10,Certolizumab pegol,Certolizumab pegol,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Ratio Cord/Mother,%,1.5,N/A,N/A
+01,Certolizumab pegol,PEG,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal PEG concentration at birth,μg/ml,33.4,N/A,N/A
+02,Certolizumab pegol,PEG,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal PEG concentration at birth,μg/ml,51.3,N/A,N/A
+04,Certolizumab pegol,PEG,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal PEG concentration at birth,μg/ml,34.7,N/A,N/A
+05,Certolizumab pegol,PEG,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal PEG concentration at birth,μg/ml,27.7,N/A,N/A
+06,Certolizumab pegol,PEG,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal PEG concentration at birth,μg/ml,34.4,N/A,N/A
+08-A,Certolizumab pegol,PEG,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal PEG concentration at birth,μg/ml,11.1,N/A,N/A
+09-A,Certolizumab pegol,PEG,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal PEG concentration at birth,μg/ml,62.1,N/A,N/A
+10,Certolizumab pegol,PEG,Plasma,Maternal,Parturition/Labor/Delivery,N/A,Maternal PEG concentration at birth,μg/ml,74.9,N/A,N/A
