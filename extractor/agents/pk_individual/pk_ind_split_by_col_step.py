@@ -4,6 +4,7 @@ from extractor.agents.pk_individual.pk_ind_common_step import PKIndCommonAgentSt
 from extractor.agents.pk_individual.pk_ind_split_by_col_agent import (
     get_split_by_columns_prompt,
     SplitByColumnsResult,
+    agent_fix_parser_split_by_columns,
     post_process_split_by_columns,
 )
 
@@ -23,6 +24,9 @@ class SplitByColumnsStep(PKIndCommonAgentStep):
 
     def get_schema(self):
         return SplitByColumnsResult
+
+    def get_agent_fix_parser(self):
+        return agent_fix_parser_split_by_columns
 
     def get_post_processor_and_kwargs(self, state):
         md_table_aligned = state["md_table_aligned"]

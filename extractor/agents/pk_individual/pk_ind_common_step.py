@@ -115,6 +115,10 @@ class PKIndCommonAgentStep(PKIndCommonStep):
         """get result schema (pydantic BaseModel)"""
         return None
 
+    def get_agent_fix_parser(self) -> Optional[Callable[[str], object | None]]:
+        """get agent fix parser (recovers from an unparsable llm reply)"""
+        return None
+
     @abstractmethod
     def get_post_processor_and_kwargs(
         self, state: PKIndWorkflowState
@@ -146,6 +150,7 @@ class PKIndCommonAgentStep(PKIndCommonStep):
                 schema=schema,
                 schema_basemodel=schema_basemodel,
                 post_process=post_process,
+                agent_fix_parser=self.get_agent_fix_parser(),
                 **kwargs,
             )
             res: PKIndCommonAgentResult = result[0]
@@ -159,6 +164,7 @@ class PKIndCommonAgentStep(PKIndCommonStep):
                 schema=schema,
                 schema_basemodel=schema_basemodel,
                 post_process=post_process,
+                agent_fix_parser=self.get_agent_fix_parser(),
             )
             res: PKIndCommonAgentResult = result[0]
             processed_res = result[1]

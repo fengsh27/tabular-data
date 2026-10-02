@@ -51,11 +51,23 @@ class PatientMatchingAgentStep(PKIndCommonStep):
         self.end_title = "Completed Patient Matching"
 
     def _validate_matched_patients(self, matched_row_indices: list[int], df_table_patient: pd.DataFrame):
+        # Clamp every value, not just when the list itself is too long: the
+        # length here is only guaranteed to match the DATA table's row count
+        # (validated separately, upstream, against a different expected_rows
+        # in post_process_validate_matched_patients / try_fix_error_matched_
+        # patients). A single hallucinated or off-by-one index - in range on
+        # length but out of range on value - used to reach df.iloc[] unchecked
+        # and raise "positional indexers are out-of-bounds", killing the whole
+        # table's curation with no retry. Map any out-of-range index to the
+        # same ERROR sentinel row already appended as this frame's last row,
+        # rather than dropping it (dropping would misalign this list against
+        # the other same-length lists - drug_list, type_unit_list - zipped
+        # together downstream).
         expected_rows = df_table_patient.shape[0]
-        if len(matched_row_indices) <= expected_rows:
-            return matched_row_indices
-        
-        return [ix for ix in matched_row_indices if ix < expected_rows]
+        return [
+            ix if 0 <= ix < expected_rows else expected_rows - 1
+            for ix in matched_row_indices
+        ]
 
     def execute_directly(self, state):
         patient_list = []

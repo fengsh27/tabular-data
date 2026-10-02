@@ -24,12 +24,12 @@ Carefully analyze the table and follow these steps:
     - The number of processed rows must **exactly match** the number of rows in the Subtable 1—no more, no less. 
 (4) For rows in Subtable 1 that can not be extracted, enter "N/A" for the entire row. 
 (5) The returned list should be like this:  
-    {{"parameter_types": ["Parameter type 1", "Parameter type 2", ...], "parameter_units": ["Unit 1", "Unit 2", ...]}}
+    {{"extracted_param_units": {{"parameter_types": ["Parameter type 1", "Parameter type 2", ...], "parameter_units": ["Unit 1", "Unit 2", ...]}}}}
 
 ### **Output Format**
 The output **must** exactly follow the format of the following example:
 
-{{"parameter_types": ["Parameter type 1", "Parameter type 2", ...], "parameter_units": ["Unit 1", "Unit 2", ...]}}
+{{"extracted_param_units": {{"parameter_types": ["Parameter type 1", "Parameter type 2", ...], "parameter_units": ["Unit 1", "Unit 2", ...]}}}}
 
 """)
 

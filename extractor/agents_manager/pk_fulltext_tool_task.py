@@ -5,7 +5,7 @@ import logging
 
 from extractor.database.pmid_db import PMIDDB
 
-from extractor.agents.pk_pe_agents.pk_pe_agents_types import PaperTypeEnum
+from extractor.agents.pk_pe_agents.pk_pe_agents_types import PaperTypeEnum, VerifyScopeEnum
 from extractor.agents.pk_drug_summary.pk_drug_sum_workflow import PKDrugSumWorkflow
 from extractor.agents.pk_specimen_summary.pk_spec_sum_workflow import PKSpecSumWorkflow
 from extractor.agents.pk_specimen_individual.pk_spec_ind_workflow import PKSpecIndWorkflow
@@ -24,8 +24,10 @@ class PKSpecimenSummaryTask(PKPEAgentToolTask):
         agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
+        enable_verification: bool = True,
+        verify_scope: VerifyScopeEnum | str = VerifyScopeEnum.PerTable,
     ):
-        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback)
+        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback, enable_verification, verify_scope)
         self.task_name = "PK Specimen Summary Task"
 
     def _create_tool(self, pmid: str):
@@ -52,8 +54,10 @@ class PKDrugSummaryTask(PKPEAgentToolTask):
         agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
+        enable_verification: bool = True,
+        verify_scope: VerifyScopeEnum | str = VerifyScopeEnum.PerTable,
     ):
-        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback)
+        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback, enable_verification, verify_scope)
         self.task_name = "PK Drug Summary Task"
         
     def _create_tool(self, pmid: str):
@@ -80,8 +84,10 @@ class PKSpecimenIndividualTask(PKPEAgentToolTask):
         agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
+        enable_verification: bool = True,
+        verify_scope: VerifyScopeEnum | str = VerifyScopeEnum.PerTable,
     ):
-        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback)
+        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback, enable_verification, verify_scope)
         self.task_name = "PK Specimen Individual Task"
         
     def _create_tool(self, pmid: str):
@@ -108,8 +114,10 @@ class PKDrugIndividualTask(PKPEAgentToolTask):
         agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
+        enable_verification: bool = True,
+        verify_scope: VerifyScopeEnum | str = VerifyScopeEnum.PerTable,
     ):
-        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback)
+        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback, enable_verification, verify_scope)
         self.task_name = "PK Drug Individual Task"
         
     def _create_tool(self, pmid: str):

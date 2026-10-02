@@ -11,6 +11,14 @@ skill run so both arms read exactly the same tables.
         --out results/simple_v2 \
         --model qwen3.8:27b
 
+--backend selects the model backend: "ollama" (default, a local Ollama server
+via --base-url/--model), "gpt4o" (Azure gpt-4o via
+extractor.request_openai.get_openai()), or "gpt54" (Azure gpt-5.4 via
+extractor.request_openai.get_5_openai()) - the two Azure backends read .env
+and ignore --model. All backends read the exact same prepared table set and
+write the exact same manifest.json shape (rows, input_tokens, output_tokens,
+elapsed_seconds per table), so results are directly comparable.
+
 Add --dry-run to render the prompts without contacting the model.
 """
 
@@ -27,6 +35,8 @@ import urllib.error
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.insert(0, REPO_ROOT)
 
 # --schema picks the column set / parser: pk_individual (default, _common.py)
 # or pk_summary (_common_summary.py). Both expose the same parse_csv/write_csv/
@@ -35,6 +45,12 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 SCHEMA_MODULES = {"pk_individual": "_common", "pk_summary": "_common_summary"}
 
 TABLE_FILES = ("00_markdown_table.md", "inputs.md")
+
+# backend name -> (display label, extractor.request_openai factory function name)
+AZURE_BACKENDS = {
+    "gpt4o": ("gpt-4o (Azure)", "get_openai"),
+    "gpt54": ("gpt-5.4 (Azure)", "get_5_openai"),
+}
 
 
 def load_prompt(path: str) -> str:
@@ -93,6 +109,32 @@ def call_ollama(base_url, model, prompt, temperature, num_ctx, timeout, retries=
     raise RuntimeError(f"ollama call failed after {retries + 1} tries: {last}")
 
 
+def call_azure_chat(client, prompt, label, retries=2):
+    """Call an Azure chat client (gpt-4o, gpt-5.4, ...), returning a body dict
+    shaped like call_ollama's (same "response"/"thinking"/"done_reason" keys,
+    plus prompt_eval_count/eval_count for token counts) so the rest of main()
+    does not need to know which backend it is talking to."""
+    from langchain_core.messages import HumanMessage
+
+    last = None
+    for attempt in range(retries + 1):
+        try:
+            resp = client.invoke([HumanMessage(content=prompt)])
+            usage = resp.usage_metadata or {}
+            return {
+                "response": resp.content or "",
+                "prompt_eval_count": usage.get("input_tokens"),
+                "eval_count": usage.get("output_tokens"),
+                "thinking": "",
+                "done_reason": "stop",
+            }
+        except Exception as exc:  # noqa: BLE001 - report and retry
+            last = exc
+            if attempt < retries:
+                time.sleep(5 * (attempt + 1))
+    raise RuntimeError(f"{label} call failed after {retries + 1} tries: {last}")
+
+
 def find_tables(scratch: str, pmid: str):
     """The table directories the skill selected, with the file to feed the model."""
     root = os.path.join(scratch, pmid)
@@ -118,7 +160,11 @@ def main() -> int:
     ap.add_argument("--out", required=True)
     ap.add_argument("--schema", choices=sorted(SCHEMA_MODULES), default="pk_individual",
                     help="column set / parser to use (default: pk_individual)")
-    ap.add_argument("--model", default=os.environ.get("SIMPLE_PROMPT_MODEL", "qwen3.8:27b"))
+    ap.add_argument("--backend", choices=["ollama", *AZURE_BACKENDS], default="ollama",
+                    help="model backend: local Ollama server (default), or an "
+                         "Azure chat deployment (gpt4o, gpt54) via extractor.request_openai")
+    ap.add_argument("--model", default=os.environ.get("SIMPLE_PROMPT_MODEL", "qwen3.8:27b"),
+                    help="Ollama model tag; ignored for an Azure backend")
     ap.add_argument("--base-url", default=None)
     ap.add_argument("--pmids", default=None, help="comma list, or a file of PMIDs")
     ap.add_argument("--temperature", type=float, default=0.0)
@@ -129,11 +175,19 @@ def main() -> int:
     args = ap.parse_args()
 
     common = importlib.import_module(SCHEMA_MODULES[args.schema])
-    base_url = resolve_base_url(args.base_url)
+    base_url = resolve_base_url(args.base_url) if args.backend == "ollama" else None
     template = load_prompt(args.prompt)
     if "{TABLE}" not in template:
         print(f"[error] {args.prompt} has no {{TABLE}} placeholder", file=sys.stderr)
         return 2
+
+    client = None
+    if args.backend in AZURE_BACKENDS and not args.dry_run:
+        from dotenv import load_dotenv
+        load_dotenv(os.path.join(REPO_ROOT, ".env"))
+        import extractor.request_openai as request_openai
+        _, factory_name = AZURE_BACKENDS[args.backend]
+        client = getattr(request_openai, factory_name)()
 
     if args.pmids and os.path.exists(args.pmids):
         pmids = [l.strip() for l in open(args.pmids) if l.strip()]
@@ -146,7 +200,9 @@ def main() -> int:
         )
 
     os.makedirs(args.out, exist_ok=True)
-    print(f"model={args.model} base_url={base_url} papers={len(pmids)} "
+    model_desc = (AZURE_BACKENDS[args.backend][0] if args.backend in AZURE_BACKENDS
+                  else f"{args.model} base_url={base_url}")
+    print(f"backend={args.backend} model={model_desc} papers={len(pmids)} "
           f"temp={args.temperature}{' [dry-run]' if args.dry_run else ''}")
 
     all_rows, manifest = [], []
@@ -168,6 +224,8 @@ def main() -> int:
                      encoding="utf-8").write(prompt)
                 continue
 
+            body = {}
+            elapsed_seconds = None
             if args.resume and os.path.exists(raw_path):
                 raw = open(raw_path, encoding="utf-8").read()
                 note = "cached"
@@ -175,32 +233,38 @@ def main() -> int:
             else:
                 t0 = time.time()
                 try:
-                    body = call_ollama(base_url, args.model, prompt,
-                                       args.temperature, args.num_ctx, args.timeout)
+                    if args.backend in AZURE_BACKENDS:
+                        body = call_azure_chat(client, prompt, AZURE_BACKENDS[args.backend][0])
+                    else:
+                        body = call_ollama(base_url, args.model, prompt,
+                                           args.temperature, args.num_ctx, args.timeout)
                 except Exception as exc:  # noqa: BLE001
                     print(f"  [error] {tname}: {exc}")
                     manifest.append({"pmid": pmid, "table": tname, "error": str(exc)})
                     continue
                 raw = body.get("response", "")
                 retried = False
-                if not raw.strip():
+                if not raw.strip() and args.backend == "ollama":
                     # A thinking model can burn its whole budget inside
                     # <think>...</think> and never reach an answer; "response"
                     # comes back empty while "thinking" holds what it wrote.
                     # think=False skips the reasoning trace so the model
                     # writes the CSV directly instead of running out first.
+                    # (gpt-4o is not a thinking model in this setup - no
+                    # equivalent retry needed there.)
                     thinking_len = len(body.get("thinking", "") or "")
                     reason = body.get("done_reason", "?")
                     print(f"  [empty] {tname}: response empty after {time.time()-t0:.0f}s "
                           f"(done_reason={reason}, {thinking_len} thinking chars) "
                           f"-> retrying with think=false")
-                    retry_body = call_ollama(base_url, args.model, prompt,
-                                             args.temperature, args.num_ctx, args.timeout,
-                                             think=False)
-                    raw = retry_body.get("response", "")
+                    body = call_ollama(base_url, args.model, prompt,
+                                       args.temperature, args.num_ctx, args.timeout,
+                                       think=False)
+                    raw = body.get("response", "")
                     retried = True
+                elapsed_seconds = time.time() - t0
                 open(raw_path, "w", encoding="utf-8").write(raw)
-                note = f"{time.time() - t0:.0f}s"
+                note = f"{elapsed_seconds:.0f}s"
                 if retried:
                     note += ", think=false retry"
 
@@ -213,7 +277,12 @@ def main() -> int:
                 print(f"    [dropped] {len(bad)} fields: {','.join(bad)[:110]}")
             manifest.append({"pmid": pmid, "table": tname, "source": source,
                              "rows": len(parsed), "dropped": len(dropped),
-                             "retried_no_think": retried})
+                             "retried_no_think": retried,
+                             "input_tokens": body.get("prompt_eval_count"),
+                             "output_tokens": body.get("eval_count"),
+                             "elapsed_seconds": (
+                                 round(elapsed_seconds, 3) if elapsed_seconds is not None else None
+                             )})
 
         if not args.dry_run:
             common.write_csv(os.path.join(pdir, "combined.csv"), rows)

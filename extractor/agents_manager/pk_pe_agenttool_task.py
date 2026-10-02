@@ -20,12 +20,23 @@ from extractor.agents.pk_pe_agents.pk_pe_agents_types import (
     PKPECurationWorkflowState,
     PaperTypeEnum,
     FinalAnswerEnum,
+    VerifyScopeEnum,
 )
 # from extractor.agents.pk_pe_agents.pk_pe_correction_step import PKPECuratedTablesCorrectionStep
 from extractor.agents.pk_pe_agents.pk_pe_correction_code_step import PKPECuratedTablesCorrectionCodeStep
 from extractor.agents.pk_pe_agents.pk_pe_agents_types import PKPECurationWorkflowState, FinalAnswerEnum
+from extractor.agents.pk_pe_agents.pk_pe_per_table_verify_step import PKPEPerTableVerifyCorrectStep
 
 logger = logging.getLogger(__name__)
+
+
+def tool_supports_per_table(state: PKPECurationWorkflowState) -> bool:
+    """The runtime half of the PerTable fallback (see PKPEAgentToolTask._build_workflow):
+    True only when execution_step actually populated state["curated_tables"] with at least
+    one real table (as opposed to it being unset, empty, or every entry None)."""
+    tables = state.get("curated_tables")
+    return bool(tables) and any(t is not None for t in tables)
+
 
 class PKPEAgentToolTask(ABC):
     def __init__(
@@ -34,12 +45,21 @@ class PKPEAgentToolTask(ABC):
         agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
+        enable_verification: bool = True,
+        verify_scope: VerifyScopeEnum | str = VerifyScopeEnum.PerTable,
     ):
         self.pipeline_llm = pipeline_llm
         self.agent_llm = agent_llm
         self.pmid_db = pmid_db if pmid_db is not None else PMIDDB()
         self.output_callback = output_callback
         self.task_name = "Agent Tool Task"
+        # "pipeline mode": when False, the graph stops after execution_step -
+        # no verification_step, no correction_step, no retry loop at all.
+        self.enable_verification = enable_verification
+        # Ignored when enable_verification is False. See VerifyScopeEnum for what each value
+        # means; PerTable falls back to Combined at runtime for a tool that doesn't populate
+        # state["curated_tables"] (only PKIndividualTablesCurationTool does today).
+        self.verify_scope = VerifyScopeEnum(verify_scope) if isinstance(verify_scope, str) else verify_scope
 
     def print_step(
         self,
@@ -72,6 +92,20 @@ class PKPEAgentToolTask(ABC):
         pass
 
     def _build_workflow(self, pmid: str):
+        tool = self._create_tool(pmid)
+        execution_step = PKPEExecutionStep(llm=self.agent_llm, tool=tool)
+        graph = StateGraph(PKPECurationWorkflowState)
+        graph.add_node("execution_step", execution_step.execute)
+        graph.add_edge(START, "execution_step")
+
+        if not self.enable_verification:
+            # Pipeline mode: take execution_step's output as-is. No
+            # verification_step, no correction_step - neither node is even
+            # constructed, so this mode makes zero extra LLM calls beyond
+            # execution_step's own.
+            graph.add_edge("execution_step", END)
+            return graph.compile()
+
         def check_verification_step(state: PKPECurationWorkflowState):
             answer = state["final_answer"]
             if answer is not None and answer.is_terminal:
@@ -86,10 +120,6 @@ class PKPEAgentToolTask(ABC):
                 self.print_step(step_name="No Curated Table")
                 return END
             return "correction_step"
-        execution_step = PKPEExecutionStep(
-            llm=self.agent_llm,
-            tool=self._create_tool(pmid),
-        )
         verification_step = PKPECuratedTablesVerificationStep(
             llm=self.agent_llm, # FIXME: use agent_llm
             pmid=pmid,
@@ -100,18 +130,48 @@ class PKPEAgentToolTask(ABC):
             pmid=pmid,
             domain=self._get_domain(),
         )
-        graph = StateGraph(PKPECurationWorkflowState)
-        graph.add_node("execution_step", execution_step.execute)
         graph.add_node("verification_step", verification_step.execute)
         graph.add_node("correction_step", correction_step.execute)
-        graph.add_edge(START, "execution_step")
-        graph.add_edge("execution_step", "verification_step")
         graph.add_conditional_edges(
             "verification_step",
             check_verification_step,
             {"correction_step", END},
         )
         graph.add_edge("correction_step", "verification_step")
+
+        if self.verify_scope != VerifyScopeEnum.PerTable:
+            # Combined (explicitly requested): verify/correct the whole paper at once.
+            graph.add_edge("execution_step", "verification_step")
+            return graph.compile()
+
+        # PerTable (default): one node scoped to each table in turn, combined only
+        # afterwards. Whether it can actually run depends on execution_step having
+        # populated state["curated_tables"] - only known once execution_step has run - so
+        # that's a runtime routing decision, not a graph-build-time one; a tool that doesn't
+        # support it (every tool but PKIndividualTablesCurationTool today) falls back to the
+        # exact same verification_step/correction_step loop Combined mode uses, built above.
+        per_table_step = PKPEPerTableVerifyCorrectStep(
+            llm=self.agent_llm,
+            pmid=pmid,
+            domain=self._get_domain(),
+        )
+        graph.add_node("per_table_verify_correct_step", per_table_step.execute)
+        graph.add_edge("per_table_verify_correct_step", END)
+
+        def route_after_execution(state: PKPECurationWorkflowState):
+            if tool_supports_per_table(state):
+                return "per_table_verify_correct_step"
+            logger.warning(
+                f"[{pmid}] verify_scope=per_table requested but {tool.__class__.__name__} "
+                "did not populate curated_tables; falling back to combined verification."
+            )
+            return "verification_step"
+
+        graph.add_conditional_edges(
+            "execution_step",
+            route_after_execution,
+            {"per_table_verify_correct_step", "verification_step"},
+        )
         return graph.compile()
 
     def _run_workflow(self, pmid: str):
@@ -136,10 +196,19 @@ class PKPEAgentToolTask(ABC):
     def run(self, pmid: str) -> tuple[bool, str | None, str | None, str | None]:
         self.print_step(step_name=f"Running {self.task_name} for pmid-{pmid}")
         state = self._run_workflow(pmid)
-        correct = state["final_answer"] if state["final_answer"] is not None else FinalAnswerEnum.PipelineError
-        curated_table = state["curated_table"] if "curated_table" in state else None
-        explanation = state["explanation"] if "explanation" in state else None
-        suggested_fix = state["suggested_fix"] if "suggested_fix" in state else None
+        final_answer = state.get("final_answer")
+        curated_table = state.get("curated_table")
+        if final_answer is not None:
+            correct = final_answer
+        elif not self.enable_verification and curated_table:
+            # Pipeline mode with no early exit from execution_step (e.g. NoTable):
+            # a table was curated but never checked - that's the expected,
+            # intentional outcome here, not an error.
+            correct = FinalAnswerEnum.Unverified
+        else:
+            correct = FinalAnswerEnum.PipelineError
+        explanation = state.get("explanation")
+        suggested_fix = state.get("suggested_fix")
         return correct, curated_table, explanation, suggested_fix
 
         

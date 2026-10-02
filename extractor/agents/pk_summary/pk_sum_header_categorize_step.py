@@ -4,6 +4,7 @@ from extractor.agents.pk_summary.pk_sum_header_categorize_agent import (
     get_header_categorize_prompt,
     HeaderCategorizeJsonSchema,
     post_process_validate_categorized_result,
+    try_fix_error_header_categories,
 )
 
 
@@ -31,6 +32,9 @@ class HeaderCategorizeStep(PKSumCommonAgentStep):
         return post_process_validate_categorized_result, {
             "md_table_aligned": md_table_aligned
         }
+
+    def get_try_fix_error(self):
+        return try_fix_error_header_categories
 
     def leave_step(self, state, res, processed_res=None, token_usage=None):
         result: HeaderCategorizeResult = processed_res

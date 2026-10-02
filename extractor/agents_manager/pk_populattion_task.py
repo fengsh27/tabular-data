@@ -5,7 +5,7 @@ import logging
 
 from extractor.database.pmid_db import PMIDDB
 
-from extractor.agents.pk_pe_agents.pk_pe_agents_types import PaperTypeEnum
+from extractor.agents.pk_pe_agents.pk_pe_agents_types import PaperTypeEnum, VerifyScopeEnum
 from extractor.agents.pk_pe_agents.pk_pe_agent_tools import (
     PKPopulationIndividualCurationTool,
     PKPopulationSummaryCurationTool,
@@ -21,8 +21,10 @@ class PKPopulationSummaryTask(PKPEAgentToolTask):
         agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
+        enable_verification: bool = True,
+        verify_scope: VerifyScopeEnum | str = VerifyScopeEnum.PerTable,
     ):
-        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback)
+        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback, enable_verification, verify_scope)
         self.task_name = "PK Population Summary Task"
 
     def _create_tool(self, pmid: str):
@@ -46,8 +48,10 @@ class PKPopulationIndividualTask(PKPEAgentToolTask):
         agent_llm: BaseChatOpenAI,
         pmid_db: PMIDDB | None = None,
         output_callback: Callable | None = None,
+        enable_verification: bool = True,
+        verify_scope: VerifyScopeEnum | str = VerifyScopeEnum.PerTable,
     ):
-        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback)
+        super().__init__(pipeline_llm, agent_llm, pmid_db, output_callback, enable_verification, verify_scope)
         self.task_name = "PK Population Individual Task"
         
     def _create_tool(self, pmid: str):

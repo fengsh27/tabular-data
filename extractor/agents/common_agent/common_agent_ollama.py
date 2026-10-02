@@ -1,3 +1,5 @@
+import json
+import os
 from typing import Any, Callable, Optional
 
 from langchain_core.output_parsers import PydanticOutputParser
@@ -5,7 +7,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnableLambda
 from langchain_ollama.chat_models import ChatOllama
 from langchain_community.callbacks.openai_info import OpenAICallbackHandler
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ValidationError
 from tenacity import retry, stop_after_attempt, wait_incrementing
 import logging
 import tiktoken
@@ -29,6 +31,190 @@ IMPORTANT_INSTRUCTIONS = """
 1. Please exactly follow the output format instructions. **Do not** add any other text or comments.
 
 """
+
+
+def _load_json_reply(content: str) -> Any:
+    """json.loads a model reply, tolerating a surrounding ```json fence."""
+    text = content.strip()
+    if text.startswith("```"):
+        text = text.strip("`").strip()
+        if text.lower().startswith("json"):
+            text = text[4:]
+    return json.loads(text)
+
+
+def fix_reply_shape_for_single_field_schema(
+    content: str, schema: Any
+) -> Optional[BaseModel]:
+    """Recover a reply whose JSON has the right payload but the wrong envelope.
+
+    Ollama only enforces `format=<schema>` in some think modes, so a model can
+    ignore the envelope and copy an example from the prompt instead. For a schema
+    with exactly one field (`{"<field>": <payload>}`) this repairs:
+      - a bare payload:            `[["a", "b"], ...]`             -> `{"<field>": [...]}`
+      - a payload under a wrong key: `{"matching_row_indices": [...]}` -> `{"<field>": [...]}`
+      - a nested-model payload with its wrapper key dropped, e.g. the
+        `{"parameter_types": [...], ...}` for a `extracted_param_units` field.
+    Candidates are validated against the schema; None is returned for anything
+    that still does not validate (and for multi-field schemas), so genuine
+    errors keep going through the normal parse-error / retry path.
+    """
+    if not (isinstance(schema, type) and issubclass(schema, BaseModel)):
+        return None
+    fields = schema.model_fields
+    if len(fields) != 1:
+        return None
+    (field_name,) = fields
+    try:
+        data = _load_json_reply(content)
+    except Exception:  # noqa: BLE001 - not JSON at all: nothing to repair
+        return None
+    if isinstance(data, dict) and field_name in data:
+        return None  # right envelope: the failure is something else, don't mask it
+    candidates = [data]
+    if isinstance(data, dict) and len(data) == 1:
+        candidates.append(next(iter(data.values())))
+    for candidate in candidates:
+        try:
+            return schema.model_validate({field_name: candidate})
+        except ValidationError:
+            continue
+    return None
+
+
+_PYTHON_LITERALS = {"True": "true", "False": "false", "None": "null"}
+
+
+def normalize_python_literals(text: str) -> str:
+    """Rewrite Python-cased `True` / `False` / `None` to JSON `true` / `false` / `null`.
+
+    A model copies the casing of a prompt's output example, and one prompt had
+    `{"processed": True, ...}` in its example; qwen3.6 then answered
+    `{"processed": False, "row_list": null, ...}`, which is neither JSON nor Python
+    and failed identically on all five temperature-0 attempts. Only bare words outside
+    double-quoted strings are rewritten, so a string value such as "None of the rows"
+    is left alone. Every replacement has the same length as the word it replaces, so
+    offsets into the original text stay valid.
+    """
+    out: list[str] = []
+    i, n, in_string = 0, len(text), False
+    while i < n:
+        c = text[i]
+        if in_string:
+            out.append(c)
+            if c == "\\" and i + 1 < n:
+                out.append(text[i + 1])
+                i += 2
+                continue
+            if c == '"':
+                in_string = False
+            i += 1
+        elif c == '"':
+            in_string = True
+            out.append(c)
+            i += 1
+        elif c.isalpha() or c == "_":
+            j = i
+            while j < n and (text[j].isalnum() or text[j] == "_"):
+                j += 1
+            word = text[i:j]
+            out.append(_PYTHON_LITERALS.get(word, word))
+            i = j
+        else:
+            out.append(c)
+            i += 1
+    return "".join(out)
+
+
+def recover_answer_from_prose(content: str, schema: Any) -> Optional[BaseModel]:
+    """Recover the answer from a reply that narrates first and ends with the JSON.
+
+    With `format=<schema>` not enforced, a model may write step-by-step reasoning
+    and only then the answer object. Neither the parser (which needs the whole
+    text to be JSON) nor `handle_qwen_thinking` (which trims to the first bracket,
+    often one quoted from the prompt's example) can find it. Scan every `{` for
+    valid JSON and return the LAST object that fits the schema exactly. Only if none
+    does, fall back to the last one that fits after
+    `fix_reply_shape_for_single_field_schema` (e.g. a wrong key), so a stray
+    wrong-key object after the real answer cannot override it. Placeholder
+    examples such as `[index_0, ...]` are not valid JSON and are skipped. An
+    object whose only defect is Python-cased literals (`False`, `None`) is read
+    after `normalize_python_literals`, which also covers a reply that is nothing
+    but such an object.
+    Returns None when nothing fits, so real errors still retry.
+    """
+    if not (isinstance(schema, type) and issubclass(schema, BaseModel)):
+        return None
+    if not isinstance(content, str):
+        return None
+    decoder = json.JSONDecoder()
+    exact, repaired, i = None, None, 0
+    while (j := content.find("{", i)) != -1:
+        try:
+            obj, end = decoder.raw_decode(content, j)
+        except ValueError:
+            # Not JSON as written. Normalizing from this brace on starts the string
+            # tracking clean here, and keeps `end` valid (same-length rewrites).
+            tail = content[j:]
+            normalized = normalize_python_literals(tail)
+            try:
+                if normalized == tail:
+                    raise ValueError("nothing to normalize")
+                obj, end = decoder.raw_decode(normalized)
+            except ValueError:
+                i = j + 1  # a brace inside prose or a placeholder: keep scanning
+                continue
+            end += j
+            logger.info("recover_answer_from_prose: read Python-cased literals as JSON")
+        i = end  # skip objects nested inside the one just decoded
+        try:
+            exact = schema.model_validate(obj)
+        except ValidationError:
+            fixed = fix_reply_shape_for_single_field_schema(json.dumps(obj), schema)
+            if fixed is not None:
+                repaired = fixed
+    return exact if exact is not None else repaired
+
+
+def _llm_call_logging_enabled() -> bool:
+    """Per-call audit logging is a debugging aid, off unless LOG_LLM_CALLS is 1/true/yes/on."""
+    return os.getenv("LOG_LLM_CALLS", "").strip().lower() in ("1", "true", "yes", "on")
+
+
+def _log_llm_call(schema: Any, path: str, raw_content: Any, res: Any = None) -> None:
+    """One greppable summary line per model call, for auditing runs.
+
+    Debug aid, OFF by default (set LOG_LLM_CALLS=1 to enable): it logs every full reply.
+
+    `path` is how the reply became a result: direct (plain parse), fix_parser
+    (the step's own fixer), envelope (wrong wrapper/key repaired), prose_recovery
+    (answer taken from the end of a narrated reply) or failed. The full raw reply
+    is logged for every call (a whole 9-paper run is ~0.3 MB of replies); it is a
+    WARNING, together with the recovered value, when the call was not a clean
+    direct parse.
+    """
+    if not _llm_call_logging_enabled():
+        return
+    name = getattr(schema, "__name__", str(schema))
+    text = raw_content if isinstance(raw_content, str) else ""
+    stripped = text.lstrip()
+    if not stripped:
+        starts_with = "empty"
+    elif stripped[0] in "{[" or stripped.startswith("```"):
+        starts_with = "json"
+    else:
+        starts_with = "prose"
+    logger.info(
+        "LLM_CALL schema=%s path=%s reply_chars=%d starts_with=%s",
+        name, path, len(text), starts_with,
+    )
+    if path == "direct":
+        logger.info("LLM_REPLY_FULL schema=%s path=%s reply=%r", name, path, text)
+        return
+    logger.warning("LLM_REPLY_FULL schema=%s path=%s reply=%r", name, path, text)
+    if res is not None:
+        logger.warning("LLM_RECOVERED schema=%s value=%.300r", name, res)
+
 
 def count_tokens(text: str, model: str = "text-embedding-3-small") -> int:
     """
@@ -154,6 +340,7 @@ class CommonAgentOllama(CommonAgent):
                 preview = raw.content[:500] if isinstance(raw.content, str) else repr(raw.content)[:500]
                 logger.info(f"runnable_agent: raw.content preview (first 500 chars): {preview!r}")
             token_usage = CommonAgentOllama.normalize_token_usage(raw.usage_metadata)
+            content = ""
             try:
                 # Strip Qwen3 thinking/reasoning content if present
                 content = CommonAgentOllama.handle_qwen_thinking(raw.content)
@@ -165,12 +352,38 @@ class CommonAgentOllama(CommonAgent):
                     f"preview={(content[:300] if isinstance(content, str) else repr(content)[:300])!r}"
                 )
                 res = parser.parse(content)
+                _log_llm_call(active_schema, "direct", raw.content)
                 return res, token_usage
             except Exception as e:
+                res = None
+                path = "failed"
                 if agent_fix_parser is not None:
                     res = agent_fix_parser(content)
                     if res is not None:
-                        return res, token_usage
+                        path = "fix_parser"
+                if res is None:
+                    res = fix_reply_shape_for_single_field_schema(content, active_schema)
+                    if res is not None:
+                        path = "envelope"
+                        logger.warning(
+                            "runnable_agent: repaired reply envelope for %s (parse error was: %.200s)",
+                            getattr(active_schema, "__name__", active_schema),
+                            e,
+                        )
+                if res is None:
+                    res = recover_answer_from_prose(content, active_schema)
+                    if res is not None:
+                        path = "prose_recovery"
+                        logger.warning(
+                            "runnable_agent: recovered %s from the JSON object at the end of a "
+                            "%d-char prose reply (parse error was: %.200s)",
+                            getattr(active_schema, "__name__", active_schema),
+                            len(content),
+                            e,
+                        )
+                _log_llm_call(active_schema, path, raw.content, res)
+                if res is not None:
+                    return res, token_usage
                 # FIXME: temporary log — include stack trace so the offending
                 # line is visible in the log file (default logger.error drops it).
                 logger.error("runnable_agent: parser/handler failed: %r", e, exc_info=True)
@@ -199,8 +412,22 @@ class CommonAgentOllama(CommonAgent):
         # Add /no_think to disable Qwen3's thinking mode
         system_prompt = system_prompt + "\n\n/no_think"
         instruction_prompt = escape_braces_for_format(instruction_prompt)
+        # The human turn below actually carries instruction_prompt (via the
+        # {input} placeholder, filled by agent.invoke({"input": ...}) just
+        # below) - without it the request was system-message-only. Every
+        # other Ollama-served model tolerates that (llama.cpp templates
+        # generally render fine with no user turn), but qwen3.8's bundled
+        # chat template does not: it 500s with "no user query found in
+        # messages" the instant a request has zero "user"-role messages
+        # (confirmed by direct /api/chat probing - a lone system message
+        # fails, adding any human message, even an empty one, succeeds).
+        # Restoring this turn is a correctness fix for every Ollama model,
+        # not a qwen3.8-only patch: instruction_prompt was computed and
+        # escaped above but, before this, was never actually placed in a
+        # message, so its content never reached the model.
         prompt = ChatPromptTemplate.from_messages([
             ("system", system_prompt),
+            ("human", "{input}"),
         ])
         # Initialize the callback handler
         callback_handler = OpenAICallbackHandler()
@@ -210,7 +437,6 @@ class CommonAgentOllama(CommonAgent):
         # agent = updated_prompt | self.llm.with_structured_output(schema)
 
         try:
-            # res = agent.invoke({"input": instruction_prompt})
             res, token_usage = agent.invoke(
                 {"input": instruction_prompt},
             )

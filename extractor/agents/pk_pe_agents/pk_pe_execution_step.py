@@ -28,7 +28,7 @@ class PKPEExecutionStep(CommonStep):
         state: PKPECurationWorkflowState = state
         previous_errors = state["previous_errors"] if "previous_errors" in state else None
         previous_errors = previous_errors if previous_errors is not None else "N/A"
-        df, source_tables, final_answer = self.tool.run(previous_errors)
+        df, source_tables, final_answer, per_table_dfs = self.tool.run(previous_errors)
         if final_answer is not None:
             state["final_answer"] = final_answer
             return state, {**DEFAULT_TOKEN_USAGE}
@@ -38,6 +38,12 @@ class PKPEExecutionStep(CommonStep):
         logger.info(f"Curated table: \n{md_curated_table}")
         state["curated_table"] = md_curated_table
         state["source_tables"] = source_tables
+        # None (unsupported tool) leaves state["curated_tables"] unset, which is the signal
+        # for VerifyScopeEnum.PerTable to fall back to Combined - see pk_pe_agenttool_task.py.
+        if per_table_dfs is not None:
+            state["curated_tables"] = [
+                dataframe_to_markdown(t) if t is not None else None for t in per_table_dfs
+            ]
         return state, {**DEFAULT_TOKEN_USAGE}
 
 

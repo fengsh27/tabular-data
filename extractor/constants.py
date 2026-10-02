@@ -123,6 +123,14 @@ MAX_STEP_COUNT = 3 * 5 # 3 agent and max 5 loops
 
 MAX_AGENTTOOL_TASK_STEP_COUNT = 2 * 5 - 1 # 2 agent and max 5 loops
 
+# Per-table cap in "per_table" verify_scope (VerifyScopeEnum.PerTable): each table gets its
+# own verify -> correct loop, scoped to just that table, so it converges faster and cheaper
+# than the whole-paper loop above - the spike that motivated this (session
+# 012C68HxDt9bJzFSfHvSU4AD) converged within 1-5 rounds on every table tried. Unlike
+# MAX_AGENTTOOL_TASK_STEP_COUNT (a step count consumed by a graph conditional edge), this is
+# a plain round count (one verify + one correct = one round) consumed by a Python for-loop.
+MAX_PER_TABLE_STEP_COUNT = 5
+
 class PipelineTypeEnum(Enum):
     PK_SUMMARY = "pk_summary"
     PK_INDIVIDUAL = "pk_individual"

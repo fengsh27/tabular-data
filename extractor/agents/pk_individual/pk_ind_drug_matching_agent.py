@@ -34,15 +34,13 @@ SUBTABLE 2 (Drug-Analyte-Specimen Combinations):
 
 2. Processing Rules:
    - Only process rows 0-{max_md_table_aligned_with_1_param_type_and_value_row_index} from Subtable 1 (exactly {md_table_aligned_with_1_param_type_and_value_row_num} rows total)
-   - Return indices of matching Subtable 2 rows as a Python list of integers
+   - Return indices of matching Subtable 2 rows as a JSON object with a single key "matched_row_indices", whose value is a list of integers
    - If no clear best match is identified for a given row, default to using -1. Important: This default should only be applied when no legitimate match exists after thorough evaluation of all available data.
-   - Example output format: [0, 1, 2, 3, 4, 5, 6, ...]
+   - Example output format: {{"matched_row_indices": [0, 1, 2, 3, 4, 5, 6, ...]}}
 
 ### ** Important Instructions:**
-   - You **must follow** the following steps to match the row in Subtable 1 to the row in Subtable 2:
-     For each row in Subtable 1, 
-      * First find the corresponding row in **main table** for the row in Subtable 1 according to row index (row index in main table is the same as the row index in Subtable 1), 
-      * The row in main table provide more context,then find the best matching row in **Subtable 2** according to the row in main table.
+   - Work out the matching yourself, but do NOT write out your reasoning. Reply with the JSON object only.
+   - For each row in Subtable 1, the corresponding row in the **main table** has the same row index. Use that main table row (its drug name) to find the best matching row in **Subtable 2**.
    - As SUBTABLE 1 is extracted from MAIN TABLE in row order, if you cannot determine the best matching row in Subtable 2 for a given row in Subtable 1, 
      you can infer the best matching by referring to the row before it or after it.
      For example, main table is like this:
@@ -76,20 +74,18 @@ SUBTABLE 2 (Drug-Analyte-Specimen Combinations):
      | B2             | B2              | urine           |
      | B3             | B3              | urine           |
      
-     1. For the row 0, 1 and 2 in Subtable 1, the best matching row in Subtable 2 is 0 (index).
-     As Subtable 1 is extracted from main table in row order, the corresponding rows in main table for row 0, 1 and 2 in Subtable 1 are 0, 1 and 2 (index).
-     Then, we can determin their drug name from main table are B1, so the best matching rows in Subtable 2 for row 0, 1 and 2 in main table are [0, 0, 0] (index)
-     Thus, the best matching rows in Subtable 2 for the row 0, 1 and 2 in Subtable 1 are [0, 0, 0] (index).
-     2. For the row 3, 4 and 5 in Subtable 1, the best matching row in Subtable 2 is 1 (index).
-     Likewise, as the Subtable 1 is extracted from main table in row order, the corresponding rows in main table for the row 3, 4 and 5 are 3, 4 and 5 (index).
-     Thus, we can determine their drug name from main table are B2, so the best matching rows in Subtable 2 for the row 3, 4 and 5 in main table are [1, 1, 1] (index).
-     3. For the row 6, 7 and 8 in Subtable 1, the best matching row in Subtable 2 is 2 (index).
-     Likewise, as Subtable 1 is extracted from main table in row order, we can determine the best matching rows in main table for the row 6, 7 and 8 in Subtable 1 are 6, 7 and 8 (index).
-     Thus, we can determine their drug name from main table are B3, so the best matching rows in Subtable 2 for the row 6, 7 and 8 in main table are [2, 2, 2] (index).
+     Explanation: main table rows 0-2 are drug B1, rows 3-5 are B2 and rows 6-8 are B3, and Subtable 2 lists B1, B2, B3 in that order (indices 0, 1, 2).
+     So Subtable 1 rows 0-2 match index 0, rows 3-5 match index 1 and rows 6-8 match index 2.
 
-     So, we get the best matching rows in Subtable 2 for the row 0, 1, 2, 3, 4, 5, 6, 7 and 8 in Subtable 1 are [0, 0, 0, 1, 1, 1, 2, 2, 2] (index).
+     Correct reply:
+     {{"matched_row_indices": [0, 0, 0, 1, 1, 1, 2, 2, 2]}}
 
+---
 
+### **Output Format**
+Reply with ONLY the JSON object, with no explanation before or after it:
+
+{{"matched_row_indices": [index_0, index_1, ..., index_n]}}
 
 """)
 
@@ -184,3 +180,29 @@ Please ensure future responses:
             logger.error(error_msg)
             raise RetryException(error_msg)
     return match_list
+
+
+def try_fix_error_matched_drugs(
+    res: MatchedDrugResult,
+    md_table1: str,
+    md_table2: str,
+):
+    """Last-attempt fallback for a wrong-length answer (after retries are exhausted).
+
+    Without the row-by-row working, qwen3.6 can lose count on long tables (e.g. 56
+    indices for 55 rows) and the retries, fed only "wrong length", keep repeating
+    it. Trim the tail / pad with -1 to the expected length. The returned list is
+    used as-is (post_process is not run on it), so it also applies the same
+    normalisation as `post_process_validate_matched_rows`: the model's own -1
+    ("no match") becomes 0, and an out-of-range index becomes -1. -1 selects the
+    "ERROR" sentinel row of Subtable 2, which the row cleanup step deletes, so a
+    padded or invalid position drops that data row instead of mislabelling it.
+    """
+    expected_rows = markdown_to_dataframe(md_table1).shape[0]
+    max_index = markdown_to_dataframe(md_table2).shape[0] - 1
+    match_list = [0 if ix == -1 else ix for ix in res.matched_row_indices]
+    if len(match_list) > expected_rows:
+        match_list = match_list[:expected_rows]
+    else:
+        match_list = match_list + [-1] * (expected_rows - len(match_list))
+    return [ix if ix == -1 or 0 <= ix <= max_index else -1 for ix in match_list]

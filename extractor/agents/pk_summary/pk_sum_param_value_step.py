@@ -46,7 +46,7 @@ class ParameterValueExtractionStep(PKSumCommonStep):
                 step_reasoning_process=reasoning_process if reasoning_process is not None else "",
             )
             value_list.append(processed_res)
-            total_token_usage = increase_token_usage(token_usage)
+            total_token_usage = increase_token_usage(total_token_usage, token_usage)
 
         return (
             ParameterValueResult(extracted_param_values=[[]]),

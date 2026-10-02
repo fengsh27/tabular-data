@@ -49,7 +49,7 @@ Carefully analyze the tables and follow these steps to refine Subtable 1 into a 
         For example: "Concentrations on Days 7" refers to a measurement time point, not an age, and should not be treated as such.
 
 (2) Compile each unique combination in the format of a **list of lists**, using **Python string syntax**.  
-   - Your response should be enclosed in **double angle brackets** `<< >>` and formatted as a **single line**.
+   - Your response should be formatted as a **single line**.
 
 (3) For each Population, determine whether it can be classified under one or more of the common categories listed above. If it matches one or more standard categories, replace it with the corresponding standard category (or categories). If it does not fit any common category, retain the original wording.
 

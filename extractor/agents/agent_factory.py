@@ -11,14 +11,19 @@ from extractor.agents.common_agent.common_agent_ollama import (
 )
 
 from extractor.request_gpt_oss import (
-    get_gpt_oss, 
+    get_gpt_oss,
     get_gpt_qwen_30b,
     get_gpt_qwen35_27b,
+    get_gpt_qwen36_35b,
+    get_gpt_qwen38_27b,
     get_gemma4_31b,
 )
 from extractor.request_openai import get_openai, get_5_openai
 
-MAX_PIPELINE_AGENT_CONTENT_NUM = 16384
+# Ollama `num_ctx` sent with every pipeline-agent request. A per-request num_ctx
+# overrides the server's OLLAMA_CONTEXT_LENGTH, so raising only the server has no
+# effect on the pipeline; default 48k (49152); set PIPELINE_AGENT_NUM_CTX (e.g. 131072) to change it.
+MAX_PIPELINE_AGENT_CONTENT_NUM = int(os.getenv("PIPELINE_AGENT_NUM_CTX", str(48 * 1024)))
 MAX_PIPELINE_AGENT_PREDICT_NUM = 8192
 
 def get_pipeline_llm():
@@ -35,6 +40,16 @@ def get_pipeline_llm():
         )
     elif llm == "QWEN3.5-27B":
         return get_gpt_qwen35_27b(
+            max_content_num=MAX_PIPELINE_AGENT_CONTENT_NUM,
+            max_predict_num=MAX_PIPELINE_AGENT_PREDICT_NUM,
+        )
+    elif llm == "QWEN3.6-35B":
+        return get_gpt_qwen36_35b(
+            max_content_num=MAX_PIPELINE_AGENT_CONTENT_NUM,
+            max_predict_num=MAX_PIPELINE_AGENT_PREDICT_NUM,
+        )
+    elif llm == "QWEN3.8-27B":
+        return get_gpt_qwen38_27b(
             max_content_num=MAX_PIPELINE_AGENT_CONTENT_NUM,
             max_predict_num=MAX_PIPELINE_AGENT_PREDICT_NUM,
         )
@@ -58,6 +73,10 @@ def get_agent_llm():
         return get_gpt_qwen_30b()
     elif llm == "QWEN3.5-27B":
         return get_gpt_qwen35_27b()
+    elif llm == "QWEN3.6-35B":
+        return get_gpt_qwen36_35b()
+    elif llm == "QWEN3.8-27B":
+        return get_gpt_qwen38_27b()
     elif llm == "OPENAI":
         return get_openai()
     elif llm == "OPENAI-5":

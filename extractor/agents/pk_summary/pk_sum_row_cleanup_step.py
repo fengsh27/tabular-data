@@ -56,8 +56,43 @@ class RowCleanupStep(PKSumCommonStep):
 
         df_combined = rename_columns(df_combined, expected_columns)
 
+        # rename_columns only renames a column when its name fuzzy-matches one of
+        # expected_columns (cutoff=0.8); a table whose columns don't resemble the PK
+        # schema at all (e.g. a mis-selected non-PK table - a website analytics widget
+        # was seen going through this exact path) comes out still missing one or more of
+        # them. Every line below indexes df_combined by those names unconditionally, which
+        # raised a hard KeyError and dropped the whole table's curation (not just this
+        # table - the caller's per-table try/except in pk_pe_agent_tools.py catches it,
+        # but confirmed via a live PMID 34114632 repro that the false-positive table
+        # selection is the root cause; this guard makes the failure mode match the
+        # already-handled "empty table" case above instead of crashing).
+        missing = [c for c in expected_columns if c not in df_combined.columns]
+        if missing:
+            self._step_output(
+                state,
+                step_output=f"Row Cleanup: table is missing expected column(s) {missing} "
+                f"after fuzzy rename (columns present: {list(df_combined.columns)}) - "
+                "treating as an empty/unusable table.",
+            )
+            return None, pd.DataFrame(), {**DEFAULT_TOKEN_USAGE}
+
         """Delete ERROR rows"""
         df_combined = df_combined[df_combined.ne("ERROR").all(axis=1)]
+        # Confirmed via a live PMID 34114632 repro (server-side diagnostic logging,
+        # since re-checked and removed): every row of a mis-selected non-PK table can be
+        # all-"ERROR" (the sentinel value injected wherever drug/patient matching found no
+        # real match), so this filter can legitimately empty df_combined to 0 rows. The
+        # rest of this function calls df_combined.apply(..., axis=1) more than once, which
+        # has a well-known pandas quirk on a 0-row frame: with no real row to run the
+        # function against, apply's dtype-inference path can return a shape that loses the
+        # columns entirely (0 rows AND 0 columns) instead of just 0 rows. Every later line
+        # indexes by column name unconditionally, so that reached df.groupby(group_columns)
+        # with group_columns not in df.columns and raised "KeyError: 'Drug name'" -
+        # dropping the whole table's curation. Bail out here, before any .apply(axis=1)
+        # call sees a 0-row frame, exactly like the empty-table guard at the top of this
+        # method.
+        if df_combined.shape[0] == 0:
+            return None, pd.DataFrame(), {**DEFAULT_TOKEN_USAGE}
         """if Statistics type == Interval type or N/A, and (Main value == Lower bound or Main value == Upper bound), set Main value and Statistics type = N/A"""
         condition = (
             (df_combined["Statistics type"] == df_combined["Interval type"])

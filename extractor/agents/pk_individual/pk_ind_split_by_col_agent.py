@@ -1,3 +1,6 @@
+import json
+import logging
+
 from langchain_core.prompts import ChatPromptTemplate
 from pydantic import Field
 
@@ -9,6 +12,8 @@ from TabFuncFlow.utils.table_utils import (
 )
 from extractor.agents.agent_utils import display_md_table
 from extractor.agents.pk_individual.pk_ind_common_agent import PKIndCommonAgentResult
+
+logger = logging.getLogger(__name__)
 
 SPLIT_BY_COLUMNS_PROMPT = ChatPromptTemplate.from_template("""
 ### **Task**
@@ -24,8 +29,8 @@ Please follow these steps:
   **(2) Ensure that each group contains exactly one 'Patient ID'.**
   (3) **Do not** omit any columns even if they are categorized as "Uncategorized".
 
-Return the results as a list of lists, where each inner list represents a sub-table with its included columns.
-[["ColumnA", "ColumnB", "ColumnC", "ColumnG"], ["ColumnA", "ColumnD", "ColumnE", "ColumnF", "ColumnG"]]
+Return the results as a JSON object with a single key "sub_tables_columns" whose value is a list of lists, where each inner list represents a sub-table with its included columns.
+{{"sub_tables_columns": [["ColumnA", "ColumnB", "ColumnC", "ColumnG"], ["ColumnA", "ColumnD", "ColumnE", "ColumnF", "ColumnG"]]}}
 
 ---
 
@@ -72,6 +77,30 @@ class SplitByColumnsResult(PKIndCommonAgentResult):
         description="""a list of lists, where each inner list represents a sub-table with its included columns, like this:
 [["ColumnA", "ColumnB", "ColumnC", "ColumnG"], ["ColumnA", "ColumnD", "ColumnE", "ColumnF", "ColumnG"]]"""
     )
+
+
+def agent_fix_parser_split_by_columns(content: str) -> SplitByColumnsResult | None:
+    """Recover a reply that is a bare list of lists instead of the schema's object.
+
+    Some models (qwen3.6 via Ollama, where `format=<schema>` is not enforced under
+    `think=false`) answer with `[["ColA", ...], [...]]` rather than
+    `{"sub_tables_columns": [[...]]}`. Wrap it; return None for anything else so the
+    normal parse error / retry path still applies.
+    """
+    try:
+        text = content.strip()
+        if text.startswith("```"):
+            text = text.strip("`").strip()
+            if text.lower().startswith("json"):
+                text = text[4:]
+        data = json.loads(text)
+        if isinstance(data, list) and all(
+            isinstance(g, list) and all(isinstance(c, str) for c in g) for g in data
+        ):
+            return SplitByColumnsResult(sub_tables_columns=data)
+    except Exception as e:  # noqa: BLE001
+        logger.error(f"agent_fix_parser_split_by_columns failed: {e}")
+    return None
 
 
 def post_process_split_by_columns(
