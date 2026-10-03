@@ -271,9 +271,11 @@ implementing any of the above has not been scheduled.
 
 # Skills mode + qwen3.8: per-paper time blows up because context never resets (TODO, not fixed)
 
-Status: **root-caused, and a one-line fix (`"totalTokensReminder": "off"`) confirmed working
-via A/B smoke test - not yet applied to the production job script or measured on a full
-paper.** Written up on request
+Status: **root-caused, fixed, and validated in production (~3.4x faster, comparable quality).**
+See `docs/SKILLS_QWEN38_TIME_CONSUMING_ISSUE.md` for the full standalone write-up (root cause,
+fix, production results, and the one open question - two papers needing a retry on the first
+production attempt for a separate, not-fully-understood reason). This section remains as the
+original diagnosis trail; written up on request
 ("So, this is skill issue we need to fix. How could we fix it by asking narrow questions
 similar to pipeline mode or ma mode?") during the 2026-10-02 re-run of `skills_qwen38` on
 pk-individual, prompted by the user not believing the originally-reported 81.8 min total for
