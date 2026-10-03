@@ -271,7 +271,9 @@ implementing any of the above has not been scheduled.
 
 # Skills mode + qwen3.8: per-paper time blows up because context never resets (TODO, not fixed)
 
-Status: **diagnosed, not implemented.** Written up on request
+Status: **root-caused, and a one-line fix (`"totalTokensReminder": "off"`) confirmed working
+via A/B smoke test - not yet applied to the production job script or measured on a full
+paper.** Written up on request
 ("So, this is skill issue we need to fix. How could we fix it by asking narrow questions
 similar to pipeline mode or ma mode?") during the 2026-10-02 re-run of `skills_qwen38` on
 pk-individual, prompted by the user not believing the originally-reported 81.8 min total for
@@ -387,18 +389,106 @@ self-correct across all 17 steps, not just within one) — after the split, each
 self-corrects within its own narrow window, moving its failure profile closer to pipeline
 mode's for anything that genuinely needs cross-step context to catch.
 
-**Cheaper alternative worth ruling out first:** if Ollama's KV-cache prefix reuse could be
-made to actually engage across calls within one session (investigate
-`OLLAMA_FLASH_ATTENTION`, `OLLAMA_NUM_PARALLEL`, `OLLAMA_KEEP_ALIVE`, and whether anything in
-the conversation breaks exact-prefix stability between calls, e.g. timestamps or token counts
-embedded in earlier turns), the existing single-conversation skill could keep its
-self-correction advantage while only paying prefill cost for the newly-added suffix each
-turn, not the whole accumulated history. This is a smaller, lower-risk change to try before
-committing to the full per-step-driver rewrite.
+**Cheaper alternative, investigated 2026-10-02 - ruled out at the config level; root cause
+found.** The hope was that Ollama's KV-cache prefix reuse could be made to engage across calls
+within one session, letting the existing single-conversation skill keep its self-correction
+advantage while only paying prefill cost for the newly-added suffix each turn. A smoke test
+(`jobs/job_skills_qwen38_smoke_debug.sh`, `RUN_NAME=skills_qwen38_smoke_debug`, PMID 34746508,
+`OLLAMA_DEBUG_LOG_REQUESTS=true`, raw request bodies mirrored off node-local `/tmp` to
+`logs/skills_qwen38_smoke_debug/request_logs_34746508/` every 3s since that directory - and
+SSH access to the node - disappears the instant the job ends) confirmed the mechanism exists
+and is already enabled (`load_model: context checkpoints enabled, max = 32, min spacing =
+8192`), but found exactly why it never helps past the first call:
+
+Diffing the first two raw request bodies (`system` 6,240 bytes, `tools` 47,305 bytes,
+`metadata`, `model` all byte-identical), the only divergent part of the shared prefix is
+`messages[1]`, the "Environment" system-reminder block - same human-readable text both times,
+different JSON shape:
+
+```json
+// request 1
+{"role": "system", "content": [
+  {"type": "text", "text": "# Environment\n...", "cache_control": {"type": "ephemeral"}}
+]}
+// request 2 (identical text)
+{"role": "system", "content": "# Environment\n..."}
+```
+
+Claude Code attaches an Anthropic-API prompt-cache breakpoint (`cache_control:
+{"type":"ephemeral"}`) to the end of the stable prefix on each call and moves that breakpoint
+forward as the conversation grows (standard Anthropic SDK behavior, useful against the *real*
+Anthropic API); a message that stops being the active breakpoint has its content collapsed
+from an array-with-metadata back to a plain string. Against Ollama this bookkeeping is
+invisible and meaningless, but it still changes the literal request bytes on every single
+call. llama.cpp's context-checkpoint cache does exact-byte prefix matching on the rendered
+prompt with no semantic awareness that `[{"type":"text","text":"X","cache_control":{...}}]`
+and `"X"` mean the same thing - so the cached prefix is invalidated at this message's position
+on literally every call, for the entire length of every conversation. This matches the full
+34746508 run exactly: the restored checkpoint was stuck at position 14,624 for all 33 calls
+after the first, regardless of how large the conversation grew (confirmed up to 103,792
+tokens), forcing a full re-prefill of everything past that point every time.
+
+**This cannot be fixed by tuning Ollama's config** (`OLLAMA_FLASH_ATTENTION`,
+`OLLAMA_NUM_PARALLEL`, `OLLAMA_KEEP_ALIVE` are all irrelevant to this) - the server-side cache
+is already working correctly by its own logic; it is being fed a prefix that genuinely is not
+byte-stable, through no fault of Ollama's. Checked whether a newer Ollama version fixes it at
+the server side: there is an exact upstream report of this same mechanism,
+[ollama/ollama#18431](https://github.com/ollama/ollama/issues/18431) ("system-role messages
+inside `messages` are hoisted into the system block, defeating the prefix cache (Claude
+Code)"), with a candidate fix,
+[PR #18465](https://github.com/ollama/ollama/pull/18465) - but as of 2026-10-02 both are still
+open and unmerged (filed 2026-09-13/15; checked live), and no released version (stable ~0.35.0,
+nor the 0.35.1-rc0/0.40.0-rc0 prereleases) includes it. Upgrading `ollama.sif` would not have
+helped today.
+
+**Fix found and confirmed: `{"totalTokensReminder": "off"}` in Claude Code's
+`settings.json`.** The message we caught changing shape (array-with-`cache_control` vs plain
+string) is Claude Code's own "N tokens left" system-reminder block, re-injected near the start
+of every request. This is independently documented as the same class of bug on the Claude Code
+side - [anthropics/claude-code#90018](https://github.com/anthropics/claude-code/issues/90018),
+"totalTokensReminder causes repeatable prompt-cache floor in tool loops; off restores
+incremental hits" - with another user's before/after metrics showing the identical signature
+(cache reads frozen at a fixed floor regardless of growing input tokens, until the setting is
+turned off). **Confirmed directly against this project's own setup, not just by analogy:**
+`jobs/job_skills_qwen38_smoke_noreminder.sh` (same smoke-test harness as
+`job_skills_qwen38_smoke_debug.sh`, `OLLAMA_DEBUG_LOG_REQUESTS=true` still on, plus
+`echo '{"totalTokensReminder": "off"}' > "$CLAUDE_CONFIG_DIR/settings.json"` before launching
+Claude Code) ran the same paper (34746508) and produced zero `erased invalidated context
+checkpoint` events across 7 captured calls (vs. 2 on literally every call in the broken run),
+with each call's cache now starting near the *end* of the previous call instead of resetting
+to a fixed early position:
+
+| call | total tokens | cache starts at | tokens actually reprocessed |
+|---|---|---|---|
+| 2 | 20,176 | 15,376 | 4,800 |
+| 3 | 21,166 | 20,642 | 524 |
+| 4 | 22,723 | 21,904 | 819 |
+| 5 | 24,478 | 23,194 | 1,284 |
+| 6 | 29,682 | 24,587 | 5,095 |
+| 7 | 35,500 | 30,947 | 4,553 |
+
+Reprocessing cost now tracks the size of what's actually new since the last call (hundreds to
+a few thousand tokens), not the entire accumulated conversation - exactly the flat, incremental
+cost pipeline/multi-agent mode already has, achieved here with a one-line client-side setting
+change and zero changes to Ollama, the skill, or the job script's core logic.
+
+**Not yet done:** apply `{"totalTokensReminder": "off"}` to the production
+`jobs/job_skills_qwen38.sh` (and the other skills-mode job scripts, `job_skills_qwen36.sh` /
+`job_skills_gemma4.sh`, which likely have the same bug) and re-run a full paper to measure the
+actual wall-clock/token savings end to end - the smoke test above only confirms the caching
+mechanism now works, not the final per-paper time this yields. Given this fix is this cheap and
+this well-confirmed, it should be tried in production before investing in the external
+per-step-driver rewrite, which remains the fallback if this doesn't fully resolve it (e.g. if
+some other message later in a long conversation turns out to have the same instability).
 
 ## Not done in this pass
 
-No code was changed. The 2026-10-02 `skills_qwen38` re-run (9 parallel jobs) was left running
-to get clean per-paper time/token data for the cost figures; this write-up is the fix plan
-for the separate, underlying architectural problem it exposed, not a fix for the re-run
-itself.
+The production job scripts have not been updated with the `totalTokensReminder: off` setting
+yet, and no full-paper run has been re-measured with it. The 2026-10-02 `skills_qwen38` re-run
+(9 parallel jobs, without this fix) completed and was scored (see
+`benchmark_results/20260919/README.md`) before this fix was found. The smoke-test artifacts
+(`logs/skills_qwen38_smoke_debug/`, `logs/skills_qwen38_smoke_noreminder/`,
+`output/skills_qwen38_smoke_debug/`, `output/skills_qwen38_smoke_noreminder/`,
+`.claude_home/skills_qwen38_smoke_debug/`, `.claude_home/skills_qwen38_smoke_noreminder/`,
+`skills_work/skills_qwen38_smoke_debug/`, `skills_work/skills_qwen38_smoke_noreminder/`) are
+left on scratch for reference and are not part of the scored benchmark data.
