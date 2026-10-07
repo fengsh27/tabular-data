@@ -49,7 +49,7 @@ def post_process_characteristic_info(
     res: CharacteristicInfoResult,
 ):
     if res.characteristic_combinations is None:
-        raise ValueError("Empty characteristic combinations")
+        raise RetryException("Empty characteristic combinations")
 
     if type(res.characteristic_combinations) != list or len(res.characteristic_combinations) == 0:
         raise RetryException(f"""

@@ -98,7 +98,7 @@ def post_process_matched_list(
     # validation
     if not matched_values:
         logger.error("Parameter value extraction failed: No valid values found.")
-        raise ValueError("Parameter value extraction failed: No valid values found.")
+        raise RetryException("Parameter value extraction failed: No valid values found.")
 
     for item in matched_values:
         if len(item) != COLUMN_NUMBER:

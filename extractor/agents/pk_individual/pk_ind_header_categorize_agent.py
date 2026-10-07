@@ -238,13 +238,13 @@ def post_process_validate_categorized_result(
     if len(match_dict.keys()) != expected_columns:
         error_msg = f"Mismatch: Expected {expected_columns} columns, but got {len(match_dict.keys())} in match_dict."
         logger.error(error_msg)
-        raise ValueError(error_msg)
+        raise RetryException(error_msg)
 
     # Ensure "Patient ID" column exists
     parameter_type_count = list(match_dict.values()).count("Patient ID")
     if parameter_type_count == 0:
         error_msg = f"**There must be at least one column that serves as the patient ID. Make sure you find it**"
         logger.error(error_msg)
-        raise ValueError(error_msg)
+        raise RetryException(error_msg)
 
     return res

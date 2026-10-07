@@ -4,6 +4,7 @@ import logging
 
 from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
+from extractor.agents.common_agent.common_agent import RetryException
 from extractor.agents.pe_study_outcome.pe_study_out_common_agent import PEStudyOutCommonAgentResult
 
 logger = logging.getLogger(__name__)
@@ -45,7 +46,7 @@ def get_row_categorize_prompt(md_table: str, row_header_name: str):
     processed_md_table = display_md_table(md_table)
 
     if row_header_name not in df_table.columns:
-        raise ValueError(f'"{row_header_name}" not found in table columns.')
+        raise RetryException(f'"{row_header_name}" not found in table columns.')
 
     row_headers_str = "These are all its row headers: " + ", ".join(
         f'row {i}: "{val}"' for i, val in enumerate(df_table[row_header_name])

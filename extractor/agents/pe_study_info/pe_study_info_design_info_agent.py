@@ -3,6 +3,7 @@ from pydantic import Field
 import pandas as pd
 
 from TabFuncFlow.utils.table_utils import dataframe_to_markdown
+from extractor.agents.common_agent.common_agent import RetryException
 from extractor.agents.pe_study_info.pe_study_info_common_agent import (
     PEStudyInfoCommonAgentResult,
 )
@@ -51,7 +52,7 @@ def post_process_study_design_info(
     res: DesignInfoResult,
 ):
     if res.study_design_combinations is None:
-        raise ValueError("Empty study design combinations")
+        raise RetryException("Empty study design combinations")
 
     df_table = pd.DataFrame(
         res.study_design_combinations, columns=["Study type", "Study design", "Data source"]

@@ -53,7 +53,7 @@ def post_process_specimen_info(
     res: SpecimenInfoResult,
 ):
     if res.specimen_combinations is None:
-        raise ValueError("Empty specimen combinations")
+        raise RetryException("Empty specimen combinations")
 
     if type(res.specimen_combinations) != list or len(res.specimen_combinations) == 0:
         raise RetryException(f"""

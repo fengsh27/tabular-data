@@ -86,7 +86,7 @@ def post_process_matched_list(
     # validation
     if not matched_values:
         logger.error("Study info extraction failed: No valid values found.")
-        raise ValueError("Study info extraction failed: No valid values found.")
+        raise RetryException("Study info extraction failed: No valid values found.")
 
     for item in matched_values:
         if len(item) != COLUMN_NUMBER:

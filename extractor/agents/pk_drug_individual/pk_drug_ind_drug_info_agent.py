@@ -43,7 +43,7 @@ def post_process_population_info(
     res: DrugInfoResult,
 ):
     if res.population_combinations is None:
-        raise ValueError("Empty population combinations")
+        raise RetryException("Empty population combinations")
 
     if type(res.population_combinations) != list or len(res.population_combinations) == 0:
         raise RetryException(f"""
