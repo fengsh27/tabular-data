@@ -1,11 +1,31 @@
 ,Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation type,Variation value,Interval type,Lower limit,High limit,P value
-0,isoniazid ,isoniazid ,blood,children and adolescents ,,20,AUC0-24,18.5,mg h/L,median,,,IQR,5.1,47.4,0.888
-1,isoniazid ,isoniazid ,blood,children and adolescents ,,12,AUC0-24,14.5,mg h/L,median,,,IQR,5.9,44.2,0.888
-2,isoniazid ,isoniazid ,blood,children and adolescents ,,20,Cmax,4.6,mg/L,median,,,IQR,1,10,0.366
-3,isoniazid ,isoniazid ,blood,children and adolescents ,,12,Cmax,4.7,mg/L,median,,,IQR,2.5,13.6,0.366
-4,isoniazid ,isoniazid ,CSF,children and adolescents ,,20,CCSF0-2,1.4,mg/L,median,,,IQR,0.5,6.1,n/a
-5,isoniazid ,isoniazid ,CSF,children and adolescents ,,12,CCSF0-2,1.6,mg/L,median,,,IQR,1.2,2.5,n/a
-6,isoniazid ,isoniazid ,CSF,children and adolescents ,,20,CCSF3-5,1.6,mg/L,median,,,IQR,0.3,5,n/a
-7,isoniazid ,isoniazid ,CSF,children and adolescents ,,12,CCSF3-5,1.7,mg/L,median,,,IQR,0.6,5,n/a
-8,isoniazid ,isoniazid ,CSF,children and adolescents ,,20,CCSF6-8,1.3,mg/L,median,,,IQR,1.2,4.3,n/a
-9,isoniazid ,isoniazid ,CSF,children and adolescents ,,12,CCSF6-8,2.3,mg/L,median,,,IQR,1.9,2.8,n/a
+0,isoniazid ,isoniazid ,blood,children and adolescents ,,20,AUC0-24,18.5,mg h/L,geometric mean,,,range,5.1,47.4,0.888
+1,isoniazid ,isoniazid ,blood,children and adolescents ,,12,AUC0-24,14.5,mg h/L,geometric mean,,,range,5.9,44.2,0.888
+2,isoniazid ,isoniazid ,blood,children and adolescents ,,20,Cmax,4.6,mg/L,geometric mean,,,range,1.0,10.0,0.366
+3,isoniazid ,isoniazid ,blood,children and adolescents ,,12,Cmax,4.7,mg/L,geometric mean,,,range,2.5,13.6,0.366
+4,isoniazid ,isoniazid ,CSF,children and adolescents ,,6,CCSF0-2,1.4,mg/L,geometric mean,,,range,0.5,6.1,n/a
+5,isoniazid ,isoniazid ,CSF,children and adolescents ,,4,CCSF0-2,1.6,mg/L,geometric mean,,,range,1.2,2.5,n/a
+6,isoniazid ,isoniazid ,CSF,children and adolescents ,,7,CCSF3-5,1.6,mg/L,geometric mean,,,range,0.3,5.0,n/a
+7,isoniazid ,isoniazid ,CSF,children and adolescents ,,4,CCSF3-5,1.7,mg/L,geometric mean,,,range,0.6,5.0,n/a
+8,isoniazid ,isoniazid ,CSF,children and adolescents ,,7,CCSF6-8,1.3,mg/L,geometric mean,,,range,1.2,4.3,n/a
+9,isoniazid ,isoniazid ,CSF,children and adolescents ,,3,CCSF6-8,2.3,mg/L,geometric mean,,,range,1.9,2.8,n/a
+10,rifampicin ,rifampicin ,blood,children and adolescents ,,20,AUC0-24,66.9,mg h/L,geometric mean,,,range,21.7,118.6,0.442
+11,rifampicin ,rifampicin ,blood,children and adolescents ,,12,AUC0-24,71.8,mg h/L,geometric mean,,,range,36.1,116.5,0.442
+12,rifampicin ,rifampicin ,blood,children and adolescents ,,20,Cmax,9.4,mg/L,geometric mean,,,range,2.9,23.7,0.499
+13,rifampicin ,rifampicin ,blood,children and adolescents ,,12,Cmax,10.4,mg/L,geometric mean,,,range,5.7,23.3,0.499
+14,rifampicin ,rifampicin ,CSF,children and adolescents ,,6,CCSF0-2,0.2,mg/L,geometric mean,,,range,0.1,0.4,n/a
+15,rifampicin ,rifampicin ,CSF,children and adolescents ,,4,CCSF0-2,0.1,mg/L,geometric mean,,,range,0.1,0.1,n/a
+16,rifampicin ,rifampicin ,CSF,children and adolescents ,,7,CCSF3-5,0.3,mg/L,geometric mean,,,range,0.1,0.8,n/a
+17,rifampicin ,rifampicin ,CSF,children and adolescents ,,4,CCSF3-5,0.1,mg/L,geometric mean,,,range,0.1,0.3,n/a
+18,rifampicin ,rifampicin ,CSF,children and adolescents ,,7,CCSF6-8,0.4,mg/L,geometric mean,,,range,0.1,1.4,n/a
+19,rifampicin ,rifampicin ,CSF,children and adolescents ,,3,CCSF6-8,0.2,mg/L,geometric mean,,,range,0.1,0.7,n/a
+20,pyrazinamide ,pyrazinamide ,blood,children and adolescents ,,20,AUC0-24,315.5,mg h/L,geometric mean,,,range,100.6,599.0,0.482
+21,pyrazinamide ,pyrazinamide ,blood,children and adolescents ,,12,AUC0-24,328.4,mg h/L,geometric mean,,,range,143.3,1477.7,0.482
+22,pyrazinamide ,pyrazinamide ,blood,children and adolescents ,,20,Cmax,37.7,mg/L,geometric mean,,,range,15.9,61.7,0.350
+23,pyrazinamide ,pyrazinamide ,blood,children and adolescents ,,12,Cmax,40.5,mg/L,geometric mean,,,range,22.7,88.4,0.350
+24,pyrazinamide ,pyrazinamide ,CSF,children and adolescents ,,6,CCSF0-2,24.4,mg/L,geometric mean,,,range,11.1,54.9,n/a
+25,pyrazinamide ,pyrazinamide ,CSF,children and adolescents ,,4,CCSF0-2,25.6,mg/L,geometric mean,,,range,21.3,37.1,n/a
+26,pyrazinamide ,pyrazinamide ,CSF,children and adolescents ,,7,CCSF3-5,30.0,mg/L,geometric mean,,,range,19.2,43.3,n/a
+27,pyrazinamide ,pyrazinamide ,CSF,children and adolescents ,,4,CCSF3-5,24.7,mg/L,geometric mean,,,range,15.9,38.1,n/a
+28,pyrazinamide ,pyrazinamide ,CSF,children and adolescents ,,7,CCSF6-8,19.6,mg/L,geometric mean,,,range,7.2,37.7,n/a
+29,pyrazinamide ,pyrazinamide ,CSF,children and adolescents ,,3,CCSF6-8,39.4,mg/L,geometric mean,,,range,23.1,70.8,n/a
