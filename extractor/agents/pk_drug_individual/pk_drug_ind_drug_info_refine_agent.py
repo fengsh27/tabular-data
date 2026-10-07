@@ -56,6 +56,7 @@ class DrugInfoRefinedResult(PKDrugIndCommonAgentResult):
     """Refined Patient Info Result"""
 
     refined_drug_combinations: list[list[str]] = Field(
+        default_factory=list,
         description="a list of lists of unique combinations [Drug/Metabolite name, Dose amount, Dose unit, Dose frequency, Dose schedule, Dose route]"
     )
 
@@ -68,7 +69,7 @@ def post_process_refined_drug_info(
     if not match_list:
         error_msg = "Drug information refinement failed: No valid entries found!"
         logger.error(error_msg)
-        raise ValueError(error_msg)
+        raise RetryException(error_msg)
 
     from collections import Counter
     expected_rows = markdown_to_dataframe(md_table_drug).shape[0]

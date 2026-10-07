@@ -77,6 +77,7 @@ class PatientInfoRefinedResult(PKDrugSumCommonAgentResult):
     """Refined Patient Info Result"""
 
     refined_patient_combinations: list[list[str]] = Field(
+        default_factory=list,
         description="a list of lists of unique combinations [Population, Pregnancy stage, Pediatric/Gestational age, Population N]"
     )
 
@@ -89,7 +90,7 @@ def post_process_refined_patient_info(
     if not match_list:
         error_msg = "Population information refinement failed: No valid entries found!"
         logger.error(error_msg)
-        raise ValueError(error_msg)
+        raise RetryException(error_msg)
 
     from collections import Counter
     df_drug = markdown_to_dataframe(md_table_drug)

@@ -4,6 +4,7 @@ import logging
 
 from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
+from extractor.agents.common_agent.common_agent import RetryException
 from extractor.agents.pe_study_outcome.pe_study_out_common_agent import PEStudyOutCommonAgentResult
 
 logger = logging.getLogger(__name__)
@@ -83,6 +84,6 @@ def post_process_validate_categorized_result(
     if len(match_dict.keys()) != expected_columns:
         error_msg = f"Mismatch: Expected {expected_columns} columns, but got {len(match_dict.keys())} in match_dict."
         logger.error(error_msg)
-        raise ValueError(error_msg)
+        raise RetryException(error_msg)
 
     return res

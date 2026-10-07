@@ -80,11 +80,14 @@ def test_post_process_returns_real_names_for_quoted_output():
 
 
 def test_post_process_still_enforces_count_and_patient_id():
+    # these two guards used to raise a bare ValueError (5 blind identical
+    # retries, no feedback); they now raise RetryException like the
+    # quote-stripping guard above, so a bad reply gets corrective feedback.
     no_id = {k: ("Uncategorized" if v == "Patient ID" else v) for k, v in CATEGORY.items()}
-    with pytest.raises(ValueError, match="patient ID"):
+    with pytest.raises(RetryException, match="patient ID"):
         post_process_validate_categorized_result(HeaderCategorizeResult(categorized_headers=no_id), MD)
     missing_one = {k: v for k, v in CATEGORY.items() if k != "Bleeding (ml)"}
-    with pytest.raises(ValueError, match="Expected 12 columns"):
+    with pytest.raises(RetryException, match="Expected 12 columns"):
         post_process_validate_categorized_result(HeaderCategorizeResult(categorized_headers=missing_one), MD)
 
 

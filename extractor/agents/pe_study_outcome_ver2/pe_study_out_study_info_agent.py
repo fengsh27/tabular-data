@@ -71,7 +71,8 @@ class StudyInfoResult(PEStudyOutCommonAgentResult):
     """Study Info Extraction Result"""
 
     extracted_study_info: list[list[str]] = Field(
-        description="""a list of lists containing parameter values, like 
+        default_factory=list,
+        description="""a list of lists containing parameter values, like
 [["infants of substance abuse mothers", "cocaine unexposed", "total sleep time"], ["infants of substance abuse mothers", "cocaine exposed", "total sleep time"]]"""
     )
 
@@ -85,7 +86,7 @@ def post_process_matched_list(
     # validation
     if not matched_values:
         logger.error("Study info extraction failed: No valid values found.")
-        raise ValueError("Study info extraction failed: No valid values found.")
+        raise RetryException("Study info extraction failed: No valid values found.")
 
     for item in matched_values:
         if len(item) != COLUMN_NUMBER:

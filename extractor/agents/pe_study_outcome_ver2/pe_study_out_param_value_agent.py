@@ -83,7 +83,8 @@ class ParameterValueResult(PEStudyOutCommonAgentResult):
     """Parameter Value Extraction Result"""
 
     extracted_param_values: list[list[str]] = Field(
-        description="""a list of lists containing parameter values, like 
+        default_factory=list,
+        description="""a list of lists containing parameter values, like
 [["10", "Count", "Sum", "%", "1", "N/A", "N/A", "N/A", "N/A"], ["50", "N/A", "%", "N/A", "N/A", "N/A", "N/A", "N/A", "N/A"]]"""
     )
 
@@ -97,7 +98,7 @@ def post_process_matched_list(
     # validation
     if not matched_values:
         logger.error("Parameter value extraction failed: No valid values found.")
-        raise ValueError("Parameter value extraction failed: No valid values found.")
+        raise RetryException("Parameter value extraction failed: No valid values found.")
 
     for item in matched_values:
         if len(item) != COLUMN_NUMBER:

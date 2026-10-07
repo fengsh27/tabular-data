@@ -33,6 +33,7 @@ class DrugInfoResult(PKDrugSumCommonAgentResult):
     """Drug Information Result"""
 
     population_combinations: list[list[str]] = Field(
+        default_factory=list,
         description="a list of lists of unique combinations [Drug/Metabolite name, Dose frequency, Dose amount, Population, Population N, Source text]"
     )
 
@@ -41,7 +42,7 @@ def post_process_population_info(
     res: DrugInfoResult,
 ):
     if res.population_combinations is None:
-        raise ValueError("Empty population combinations")
+        raise RetryException("Empty population combinations")
 
     if type(res.population_combinations) != list or len(res.population_combinations) == 0:
         raise RetryException(f"""

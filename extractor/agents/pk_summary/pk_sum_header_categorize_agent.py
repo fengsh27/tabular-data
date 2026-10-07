@@ -136,14 +136,14 @@ def post_process_validate_categorized_result(
     if len(match_dict.keys()) != expected_columns:
         error_msg = f"Mismatch: Expected {expected_columns} columns, but got {len(match_dict.keys())} in match_dict."
         logger.error(error_msg)
-        raise ValueError(error_msg)
+        raise RetryException(error_msg)
 
     # Ensure exactly one "Parameter type" column exists
     parameter_type_count = list(match_dict.values()).count("Parameter type")
     if parameter_type_count != 1:
         error_msg = f"Invalid mapping: Expected 1 'Parameter type' column, but found {parameter_type_count}."
         logger.error(error_msg)
-        raise ValueError(error_msg)
+        raise RetryException(error_msg)
 
     # SplitByColumnsStep builds one sub-table per "Parameter value" column, so a mapping
     # with none makes it return an empty list with no error and the table is silently lost

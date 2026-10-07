@@ -41,22 +41,28 @@ class RowCategorizeStep(PEStudyOutCommonAgentStep):
         total_token_usage = {**DEFAULT_TOKEN_USAGE}
         return_dict = {}
         for key in row_headers_keys:
-            agent = self.get_agent(llm)
-            md_table = state["md_table"]
-            schema = self.get_schema()
-            system_prompt = get_row_categorize_prompt(
-                md_table,
-                key
-            )
-            instruction_prompt = self.get_instruction_prompt(state)
+            try:
+                agent = self.get_agent(llm)
+                md_table = state["md_table"]
+                schema = self.get_schema()
+                system_prompt = get_row_categorize_prompt(
+                    md_table,
+                    key
+                )
+                instruction_prompt = self.get_instruction_prompt(state)
 
-            res, processed_res, token_usage, _ = agent.go(
-                system_prompt=system_prompt,
-                instruction_prompt=instruction_prompt,
-                schema=schema,
-                post_process=post_process_validate_categorized_result,
-                md_table=md_table,
-            )
+                res, processed_res, token_usage, _ = agent.go(
+                    system_prompt=system_prompt,
+                    instruction_prompt=instruction_prompt,
+                    schema=schema,
+                    post_process=post_process_validate_categorized_result,
+                    md_table=md_table,
+                )
+            except Exception as e:
+                logger.warning(
+                    f"Skipping row-header key {key!r}: row categorization failed ({e})."
+                )
+                continue
 
             self._step_output(
                 state,
