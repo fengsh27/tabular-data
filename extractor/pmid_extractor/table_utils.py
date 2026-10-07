@@ -316,9 +316,12 @@ def format_source_tables(source_tables: list[dict]) -> str:
         caption = table['caption'] if "caption" in table and table['caption'] is not None else ""
         footnote = table['footnote'] if "footnote" in table and table['footnote'] is not None else ""
         md_table = dataframe_to_markdown(table['table'])
+        # caption/footnote joined outside the f-string: a backslash (the "\n" literal) inside
+        # an f-string expression is a SyntaxError before Python 3.12 (PEP 701); CI runs 3.11.
+        caption_and_footnote = caption + "\n" + footnote
         formatted_tables += f"""
  - **Table {idx + 1}:**
-Caption: {caption+"\n"+footnote}
+Caption: {caption_and_footnote}
 {md_table}
 """
     return formatted_tables

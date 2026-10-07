@@ -1,0 +1,26 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+1,Infliximab,Infliximab,Serum,Maternal,Parturition/Labor/Delivery,N/A,Maternal serum concentration,µg/mL,25.3,23,days
+2,Infliximab,Infliximab,Serum,Maternal,Parturition/Labor/Delivery,N/A,Maternal serum concentration,µg/mL,12.0,57,days
+3,Infliximab,Infliximab,Serum,Maternal,Parturition/Labor/Delivery,N/A,Maternal serum concentration,µg/mL,17.0,31,days
+4,Etanercept,Etanercept,Serum,Maternal,Parturition/Labor/Delivery,N/A,Maternal serum concentration,µg/mL,3.0,4,days
+5,Etanercept,Etanercept,Serum,Maternal,Parturition/Labor/Delivery,N/A,Maternal serum concentration,µg/mL,<0.1,29,days
+6,Etanercept,Etanercept,Serum,Maternal,Parturition/Labor/Delivery,N/A,Maternal serum concentration,µg/mL,0.2,16,days
+1,Infliximab,Infliximab,Serum,Maternal,Parturition/Labor/Delivery,N/A,Cord serum concentration,µg/mL,29.8,23,days
+2,Infliximab,Infliximab,Serum,Maternal,Parturition/Labor/Delivery,N/A,Cord serum concentration,µg/mL,24.0,57,days
+3,Infliximab,Infliximab,Serum,Maternal,Parturition/Labor/Delivery,N/A,Cord serum concentration,µg/mL,29.0,31,days
+4,Etanercept,Etanercept,Serum,Maternal,Parturition/Labor/Delivery,N/A,Cord serum concentration,µg/mL,0.1,4,days
+5,Etanercept,Etanercept,Serum,Maternal,Parturition/Labor/Delivery,N/A,Cord serum concentration,µg/mL,<0.1,29,days
+1,Infliximab,Infliximab,Placenta,Maternal,Parturition/Labor/Delivery,N/A,Placenta tissue concentration,µg/g,5.8,23,days
+2,Infliximab,Infliximab,Placenta,Maternal,Parturition/Labor/Delivery,N/A,Placenta tissue concentration,µg/g,1.8,57,days
+3,Infliximab,Infliximab,Placenta,Maternal,Parturition/Labor/Delivery,N/A,Placenta tissue concentration,µg/g,4.8,31,days
+4,Etanercept,Etanercept,Placenta,Maternal,Parturition/Labor/Delivery,N/A,Placenta tissue concentration,µg/g,0.1,4,days
+5,Etanercept,Etanercept,Placenta,Maternal,Parturition/Labor/Delivery,N/A,Placenta tissue concentration,µg/g,<0.1,29,days
+6,Etanercept,Etanercept,Placenta,Maternal,Parturition/Labor/Delivery,N/A,Placenta tissue concentration,µg/g,<0.1,16,days
+1,Infliximab,Infliximab,N/A,Maternal,Parturition/Labor/Delivery,N/A,Cord-to-maternal ratio,unitless,1.18,23,days
+2,Infliximab,Infliximab,N/A,Maternal,Parturition/Labor/Delivery,N/A,Cord-to-maternal ratio,unitless,2.00,57,days
+3,Infliximab,Infliximab,N/A,Maternal,Parturition/Labor/Delivery,N/A,Cord-to-maternal ratio,unitless,1.71,31,days
+4,Etanercept,Etanercept,N/A,Maternal,Parturition/Labor/Delivery,N/A,Cord-to-maternal ratio,unitless,0.04,4,days
+1,Infliximab,Infliximab,N/A,Maternal,Parturition/Labor/Delivery,N/A,Placenta-to-maternal ratio,unitless,0.35,23,days
+2,Infliximab,Infliximab,N/A,Maternal,Parturition/Labor/Delivery,N/A,Placenta-to-maternal ratio,unitless,0.23,57,days
+3,Infliximab,Infliximab,N/A,Maternal,Parturition/Labor/Delivery,N/A,Placenta-to-maternal ratio,unitless,0.44,31,days
+4,Etanercept,Etanercept,N/A,Maternal,Parturition/Labor/Delivery,N/A,Placenta-to-maternal ratio,unitless,0.03,4,days

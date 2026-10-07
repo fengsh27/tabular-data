@@ -17,3 +17,15 @@
 15,Levetiracetam,Levetiracetam,blood,neonate,,5,Cmax,26.4,ug/mL,median,,,IQR,19.3,34.2,0.84
 16,Levetiracetam,Levetiracetam,blood,neonate,,14,Tmax,1.5,h,median,,,IQR,1.5,2.5,
 17,Levetiracetam,Levetiracetam,blood,neonate,,5,Tmax,2.5,h,median,,,IQR,1.5,2.9,0.46
+18,Levetiracetam,Levetiracetam,blood,children 4-12 years (historical; Fountain et al.),,,Cmax,24.8,ug/mL,mean,SD,8.3,,,,
+19,Levetiracetam,Levetiracetam,blood,children 4-12 years (historical; Fountain et al.),,,Cmax,57.1,ug/mL,mean,SD,14.9,,,,
+20,Levetiracetam,Levetiracetam,blood,children 4-12 years (historical; Fountain et al.),,,Cmax,73.2,ug/mL,mean,SD,19.2,,,,
+21,Levetiracetam,Levetiracetam,blood,children 4-12 years (historical; Fountain et al.),,,AUC0-12,145,h ug/ml,mean,SD,44,,,,
+22,Levetiracetam,Levetiracetam,blood,children 4-12 years (historical; Fountain et al.),,,AUC0-12,322,h ug/ml,mean,SD,71,,,,
+23,Levetiracetam,Levetiracetam,blood,children 4-12 years (historical; Fountain et al.),,,AUC0-12,433,h ug/ml,mean,SD,94,,,,
+24,Levetiracetam,Levetiracetam,blood,children 4-12 years (historical; Fountain et al.),,,Ctrough,8.4,ug/mL,mean,SD,3.8,,,,
+25,Levetiracetam,Levetiracetam,blood,children 4-12 years (historical; Fountain et al.),,,Ctrough,15.6,ug/mL,mean,SD,5.3,,,,
+26,Levetiracetam,Levetiracetam,blood,children 4-12 years (historical; Fountain et al.),,,Ctrough,20.6,ug/mL,mean,SD,5.8,,,,
+27,Levetiracetam,Levetiracetam,blood,children 4-12 years (historical; Fountain et al.),,,Tmax,0.5,h,median,,,minmax,0.25,3.0,
+28,Levetiracetam,Levetiracetam,blood,children 4-12 years (historical; Fountain et al.),,,Tmax,0.5,h,median,,,minmax,0.5,3.0,
+29,Levetiracetam,Levetiracetam,blood,children 4-12 years (historical; Fountain et al.),,,Tmax,0.5,h,median,,,minmax,0.5,3,
