@@ -119,6 +119,10 @@ class PKIndCommonAgentStep(PKIndCommonStep):
         """get agent fix parser (recovers from an unparsable llm reply)"""
         return None
 
+    def get_try_fix_error(self) -> Optional[Callable[[Any, Any], Any]]:
+        """get last-attempt fallback, used once the retries are exhausted"""
+        return None
+
     @abstractmethod
     def get_post_processor_and_kwargs(
         self, state: PKIndWorkflowState
@@ -151,6 +155,7 @@ class PKIndCommonAgentStep(PKIndCommonStep):
                 schema_basemodel=schema_basemodel,
                 post_process=post_process,
                 agent_fix_parser=self.get_agent_fix_parser(),
+                try_fix_error=self.get_try_fix_error(),
                 **kwargs,
             )
             res: PKIndCommonAgentResult = result[0]
