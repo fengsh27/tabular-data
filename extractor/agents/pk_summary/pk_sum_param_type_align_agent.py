@@ -12,6 +12,7 @@ from TabFuncFlow.utils.table_utils import (
     fill_empty_headers,
     remove_empty_col_row,
 )
+from extractor.agents.common_agent.common_agent import RetryException
 from extractor.agents.pk_summary.pk_sum_common_agent import PKSumCommonAgentResult
 
 PARAMETER_TYPE_ALIGN_PROMPT = ChatPromptTemplate.from_template("""
@@ -60,5 +61,11 @@ def post_process_parameter_type_align(
         )
     else:
         col_name = fix_col_name(res.col_name, md_table_summary)
+        if col_name is False:
+            raise RetryException(
+                f"Column \"{res.col_name}\" does not match any column in the table "
+                f"(columns: {list(df_table.columns)}). Use the exact column name as "
+                "it appears in the table header."
+            )
         df_table = df_table.rename(columns={f"{col_name}": "Parameter type"})
         return dataframe_to_markdown(df_table)
