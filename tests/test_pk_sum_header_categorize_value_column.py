@@ -99,10 +99,13 @@ def test_cells_of_all_the_usual_numeric_shapes_count():
     assert find_unlabeled_value_columns(mapping, md) == ["c1", "c2", "c3", "c4", "c5"]
 
 
-def test_existing_checks_are_unchanged():
-    with pytest.raises(ValueError, match="Expected 4 columns"):
+def test_existing_checks_now_retry_with_feedback_too():
+    # these two guards used to raise a bare ValueError (5 blind identical
+    # retries, no feedback); they now raise RetryException like the
+    # "Parameter value" guard above, so a bad reply gets corrective feedback.
+    with pytest.raises(RetryException, match="Expected 4 columns"):
         _validate({"Parameter": "Parameter type"}, DATA_MD)
-    with pytest.raises(ValueError, match="Expected 1 'Parameter type'"):
+    with pytest.raises(RetryException, match="Expected 1 'Parameter type'"):
         _validate({**CORRECT, "Parameter": "Uncategorized"}, DATA_MD)
 
 
