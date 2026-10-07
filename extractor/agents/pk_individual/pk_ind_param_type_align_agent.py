@@ -1,3 +1,6 @@
+import logging
+import re
+
 from langchain_core.prompts import ChatPromptTemplate
 from pydantic import Field
 
@@ -13,6 +16,8 @@ from TabFuncFlow.utils.table_utils import (
     remove_empty_col_row,
 )
 from extractor.agents.pk_individual.pk_ind_common_agent import PKIndCommonAgentResult
+
+logger = logging.getLogger(__name__)
 
 PARAMETER_TYPE_ALIGN_PROMPT = ChatPromptTemplate.from_template("""
 There is now a table related to pharmacokinetics (PK). 
@@ -42,11 +47,27 @@ def get_parameter_type_align_prompt(md_table_individual: str):
         md_table_individual_header=headers,
     )
 
+# A column that identifies the subject (the same vocabulary the header-categorize step uses
+# for "Patient ID"). It can never hold the parameter-type labels, so a transpose on it only
+# destroys the table: PMID 33253437 answered "Unnamed: 0" and 12 columns collapsed to 2.
+_IDENTIFIER_COL = re.compile(
+    r"(?<![a-z])(unnamed:\s*\d+|id|patient\s*id|subject|no\.?)(?![a-z])", re.IGNORECASE
+)
+
+
+def _is_identifier_column(col_name: str) -> bool:
+    return _IDENTIFIER_COL.search(col_name) is not None
+
+
 def post_process_parameter_type_align(
     res: ParameterTypeAlignResult, md_table_individual: str
 ):
     """Please note: the condition for transposing is the opposite of that for PK summary"""
     df_table = markdown_to_dataframe(md_table_individual)
+    if res.col_name is not None and _is_identifier_column(res.col_name):
+        # a known-bad transpose is worse than leaving the table as it is
+        logger.warning(f"Ignoring identifier column {res.col_name!r} as the parameter type column")
+        return dataframe_to_markdown(df_table)
     # if res.col_name is None:
     #     df_table = f_transpose(df_table)
     #     df_table.columns = ["Parameter type"] + list(df_table.columns[1:])
