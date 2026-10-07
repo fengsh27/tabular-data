@@ -76,6 +76,7 @@ class PatientInfoRefinedResult(PKDrugIndCommonAgentResult):
     """Refined Patient Info Result"""
 
     refined_patient_combinations: list[list[str]] = Field(
+        default_factory=list,
         description="a list of lists of unique combinations [Patient ID, Population, Pregnancy stage, Pediatric/Gestational age]"
     )
 

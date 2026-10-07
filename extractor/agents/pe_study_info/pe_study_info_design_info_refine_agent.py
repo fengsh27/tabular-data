@@ -65,6 +65,7 @@ class DesignInfoRefinedResult(PEStudyInfoCommonAgentResult):
     """Refined Patient Info Result"""
 
     refined_design_combinations: list[list[str]] = Field(
+        default_factory=list,
         description="a list of lists, but only has one combination of [Population, Inclusion criteria, Exclusion criteria, Pregnancy stage, Subject N, Drug name, Outcomes]"
     )
 

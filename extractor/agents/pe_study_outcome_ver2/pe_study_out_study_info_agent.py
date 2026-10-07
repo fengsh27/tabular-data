@@ -71,7 +71,8 @@ class StudyInfoResult(PEStudyOutCommonAgentResult):
     """Study Info Extraction Result"""
 
     extracted_study_info: list[list[str]] = Field(
-        description="""a list of lists containing parameter values, like 
+        default_factory=list,
+        description="""a list of lists containing parameter values, like
 [["infants of substance abuse mothers", "cocaine unexposed", "total sleep time"], ["infants of substance abuse mothers", "cocaine exposed", "total sleep time"]]"""
     )
 

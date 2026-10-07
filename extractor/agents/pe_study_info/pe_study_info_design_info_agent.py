@@ -42,6 +42,7 @@ class DesignInfoResult(PEStudyInfoCommonAgentResult):
     """Design Information Result"""
 
     study_design_combinations: list[list[str]] = Field(
+        default_factory=list,
         description="a list of lists, but only has one combination of [Study type, Study design, Data source]"
     )
 

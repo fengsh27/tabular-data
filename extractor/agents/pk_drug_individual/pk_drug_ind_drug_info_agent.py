@@ -34,6 +34,7 @@ class DrugInfoResult(PKDrugIndCommonAgentResult):
     """Drug Information Result"""
 
     population_combinations: list[list[str]] = Field(
+        default_factory=list,
         description="a list of lists of unique combinations [Patient ID, Drug/Metabolite name, Dose frequency, Dose amount, Source text]"
     )
 

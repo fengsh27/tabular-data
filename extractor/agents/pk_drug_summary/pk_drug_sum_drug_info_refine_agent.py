@@ -56,6 +56,7 @@ class DrugInfoRefinedResult(PKDrugSumCommonAgentResult):
     """Refined Patient Info Result"""
 
     refined_drug_combinations: list[list[str]] = Field(
+        default_factory=list,
         description="a list of lists of unique combinations [Drug/Metabolite name, Dose amount, Dose unit, Dose frequency, Dose schedule, Dose route]"
     )
 

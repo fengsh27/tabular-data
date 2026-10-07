@@ -77,7 +77,8 @@ class ParameterValueResult(PEStudyOutCommonAgentResult):
     """Parameter Value Extraction Result"""
 
     extracted_param_values: list[list[str]] = Field(
-        description="""a list of lists containing parameter values, like 
+        default_factory=list,
+        description="""a list of lists containing parameter values, like
 [["10", "Count", "Sum", "%", "1", "N/A", "N/A", "N/A"], ["50", "N/A", "%", "N/A", "N/A", "N/A", "N/A", "N/A"]]"""
     )
 
