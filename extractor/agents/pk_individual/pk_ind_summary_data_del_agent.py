@@ -1,3 +1,5 @@
+import logging
+
 from pydantic import Field
 from langchain_core.prompts import ChatPromptTemplate
 
@@ -7,7 +9,15 @@ from TabFuncFlow.utils.table_utils import (
     fix_col_name,
     markdown_to_dataframe,
 )
+from extractor.agents.common_agent.common_agent import RetryException
 from extractor.agents.pk_individual.pk_ind_common_agent import PKIndCommonAgentResult
+
+logger = logging.getLogger(__name__)
+
+# Keeping fewer than this share of rows is treated as a wrong answer, not a cleaned table.
+# PMID 33253437: the model kept row 33 of 57, so the paper's whole individual table was lost
+# and every later step ran on one row of N/A. A real table is mostly individual rows.
+MIN_KEPT_ROW_FRACTION = 0.2
 
 
 SUMMARY_DATA_DEL_PROMPT = ChatPromptTemplate.from_template("""
@@ -97,5 +107,26 @@ def post_process_summary_del_result(
     if col_list is not None:
         col_list = [fix_col_name(item, md_table) for item in col_list]
 
-    df_table = f_select_row_col(row_list, col_list, markdown_to_dataframe(md_table))
+    df_table = markdown_to_dataframe(md_table)
+    if row_list is not None and df_table.shape[0] > 0:
+        kept = len({ix for ix in row_list if 0 <= ix < df_table.shape[0]})
+        if kept < MIN_KEPT_ROW_FRACTION * df_table.shape[0]:
+            error_msg = (
+                f"You kept only {kept} of {df_table.shape[0]} rows. Each row describes one "
+                "individual's result, so most rows should be kept; delete only the rows that are "
+                "summary statistics (means, medians, totals, 'N=' lines). Return the row indices "
+                "of all individual rows."
+            )
+            logger.error(error_msg)
+            raise RetryException(error_msg)
+
+    df_table = f_select_row_col(row_list, col_list, df_table)
     return dataframe_to_markdown(df_table)
+
+
+def try_fix_error_summary_del_result(res: SummaryDataDelResult, md_table: str):
+    """Last-attempt fallback (retries exhausted): keep the table unchanged.
+
+    Summary rows left in the table are recoverable downstream; a table cut to a row or two is not.
+    """
+    return md_table

@@ -6,6 +6,7 @@ from TabFuncFlow.utils.table_utils import markdown_to_dataframe
 from extractor.agents.agent_utils import display_md_table
 from extractor.agents.common_agent.common_agent import RetryException
 from extractor.agents.pk_individual.pk_ind_common_agent import PKIndCommonAgentResult
+from extractor.agents.pk_summary.pk_sum_header_categorize_agent import find_unlabeled_value_columns
 
 logger = logging.getLogger(__name__)
 
@@ -246,5 +247,21 @@ def post_process_validate_categorized_result(
         error_msg = f"**There must be at least one column that serves as the patient ID. Make sure you find it**"
         logger.error(error_msg)
         raise RetryException(error_msg)
+
+    # With no "Parameter value" column SplitByColumnsStep returns [] and the paper is lost
+    # without an error. Same guard as pk-summary: ask again only when the table holds numeric
+    # columns left "Uncategorized" (see pk_sum_header_categorize_agent.py).
+    if "Parameter value" not in match_dict.values():
+        unlabeled = find_unlabeled_value_columns(match_dict, md_table_aligned)
+        if unlabeled:
+            error_msg = (
+                f"No column was categorized as \"Parameter value\", but these columns hold "
+                f"numerical values: {unlabeled}. A column of numerical results (means, medians, "
+                "ranges, SD or CI, percentages) is \"Parameter value\" even when its header "
+                "names a group, a dose or a time point; only a column that is just the subject "
+                "number, or has no numbers, is \"Uncategorized\". Categorize the headers again."
+            )
+            logger.error(error_msg)
+            raise RetryException(error_msg)
 
     return res

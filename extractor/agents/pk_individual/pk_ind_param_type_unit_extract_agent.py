@@ -1,3 +1,4 @@
+import re
 from typing import List, Tuple
 from langchain_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel, Field
@@ -162,12 +163,22 @@ Constraints:
 
 
 class ExtractedParamTypeUnits(BaseModel):
-    parameter_types: List[str] = Field(description="Extracted 'Parameter type' values.")
+    # Defaulting to [] rather than requiring the key: a reply that omits
+    # "parameter_units"/"parameter_values" entirely (33253437: 629 repeated
+    # "parameter_types" entries and nothing else) used to fail Pydantic
+    # validation before a result object even existed, so post_process and
+    # try_fix_error never ran and the table was dropped with no retry at all.
+    # An empty list still fails post_process_validate_matched_tuple's length
+    # check (0 != expected_rows), so it is sent through the normal
+    # retry-then-fallback path instead of skipping it.
+    parameter_types: List[str] = Field(
+        default_factory=list, description="Extracted 'Parameter type' values."
+    )
     parameter_units: List[str] = Field(
-        description="Corresponding 'Parameter unit' values."
+        default_factory=list, description="Corresponding 'Parameter unit' values."
     )
     parameter_values: List[str] = Field(
-        description="Corresponding 'Parameter value' values."
+        default_factory=list, description="Corresponding 'Parameter value' values."
     )
 
 
@@ -227,26 +238,43 @@ def post_process_validate_matched_tuple(
 
     return matched_tuple
 
+# A "Name (unit)" parameter-type string, e.g. "Mother's PL III trimester (ng/ml)"
+# -> unit "ng/ml". Matched against the end of the string so a type that is itself
+# a parenthesised tuple repr (an unresolved multi-level header) still yields
+# something rather than crashing; it just won't look like a real unit.
+_TRAILING_UNIT = re.compile(r"\(([^()]*)\)\s*$")
+
+
+def _unit_from_type(type_str: str) -> str:
+    match = _TRAILING_UNIT.search(str(type_str))
+    return match.group(1).strip() if match else "N/A"
+
+
 def try_fix_error_param_type_unit(
     res: ParamTypeUnitExtractionResult,
     md_table: str,
     col_mapping: dict,
 ) -> Tuple[List[str], List[str], List[str]]:
-    matched_tuple = (
-        res.extracted_param_units.parameter_types,
-        res.extracted_param_units.parameter_units,
-        res.extracted_param_units.parameter_values,
-    )
-    expected_rows = markdown_to_dataframe(md_table).shape[0]
-    fixed_matched_list = []
-    for ix in range(len(matched_tuple)):
-        if len(matched_tuple[ix]) != expected_rows:
-            if len(matched_tuple[ix]) > expected_rows:
-                fixed_matched_list.append(matched_tuple[ix][:expected_rows])
-            elif len(matched_tuple[ix]) < expected_rows:
-                fixed_matched_list.append(matched_tuple[ix] + ["N/A"] * (expected_rows - len(matched_tuple[ix])))
-            else:
-                fixed_matched_list.append(matched_tuple[ix])
-        else:
-            fixed_matched_list.append(matched_tuple[ix])
-    return (fixed_matched_list[0], fixed_matched_list[1], fixed_matched_list[2])
+    """Last-attempt fallback (retries exhausted): read the three lists from the
+    sub-table itself, not from the model's reply.
+
+    33253437: the sub-table's "Parameter type" column holds the same string on
+    every one of its 55 rows (the split step put the original column name
+    there - see pk_ind_split_by_col_step.py), and the model got stuck
+    repeating that string ~630 times while never writing "Parameter unit" or
+    "Parameter value" at all, identically on every retry (temperature 0).
+    There is nothing in a reply like that worth trimming or padding.
+
+    Every value needed is already in the sub-table: "Parameter type" and
+    "Parameter value" are its own columns (always present and in that order -
+    the split step's contract), and the unit is the trailing "(...)" in the
+    type text, the same thing the model is asked to extract. This loses
+    whatever normalization the model would otherwise do (e.g. flattening a
+    tuple-style type into "A-B-C") - a deliberate last resort, not a
+    substitute for the model doing that job when it can.
+    """
+    df = markdown_to_dataframe(md_table)
+    types = df["Parameter type"].astype(str).tolist()
+    values = df["Parameter value"].astype(str).tolist()
+    units = [_unit_from_type(t) for t in types]
+    return (types, units, values)

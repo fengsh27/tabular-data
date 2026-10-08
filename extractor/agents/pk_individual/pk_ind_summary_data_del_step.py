@@ -5,6 +5,7 @@ from extractor.agents.pk_individual.pk_ind_summary_data_del_agent import (
     SUMMARY_DATA_DEL_PROMPT,
     SummaryDataDelResult,
     post_process_summary_del_result,
+    try_fix_error_summary_del_result,
 )
 
 
@@ -29,6 +30,9 @@ class SummaryDataDelStep(PKIndCommonAgentStep):
 
     # def get_agent(self, state):
     #     return CommonAgentTwoSteps(llm=state["llm"])
+
+    def get_try_fix_error(self):
+        return try_fix_error_summary_del_result
 
     def get_post_processor_and_kwargs(self, state):
         md_table = state["md_table"]
