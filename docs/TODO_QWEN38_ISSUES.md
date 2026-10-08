@@ -1,9 +1,18 @@
-# qwen3.8 pipeline/multi-agent: PMID 33253437 silently lost (TODO, not fixed)
+# qwen3.8 pipeline/multi-agent: PMID 33253437 silently lost (RESOLVED)
 
-Status: **diagnosed, not implemented.** Written up on request after a user question
-("why did qwen3.8 fail to find a table for 33253437") during the 2026-10-01 pk-individual
-benchmark addition; see `benchmark_results/20260919/README.md` caveat 17 for the one-line
-summary and the score impact. This file is the full root-cause trace and the fix plan.
+Status: **RESOLVED.** Layers 1 and 3 of the proposed fix below were implemented and validated
+end to end (re-running PMID 33253437 through `pipeline_qwen38`/`multiagent_qwen38` now succeeds,
+after also fixing 2 further bugs the re-run surfaced along the way — a row-deletion step with no
+survivor-count sanity check, and required-but-sometimes-omitted Pydantic fields crashing
+validation before any retry could run). Code lives on branch
+`wip/fengsh/fix-qwen38-align-parameter-type-issue` (commits `6e8669a`, `b3e2e08`, `630547f`) —
+**not yet merged into `develop/ollama`**. Layer 2 (an additional structural sanity check
+immediately after the transpose decision, as a backstop in case Layer 1's heuristic ever misses a
+case) was **not** implemented — optional hardening, not required since Layers 1+3 already resolve
+the reported symptom. Originally written up on request ("why did qwen3.8 fail to find a table for
+33253437") during the 2026-10-01 pk-individual benchmark addition; see
+`benchmark_results/20260919/README.md` caveat 17 for the one-line summary and the score impact.
+This file is the full root-cause trace and the fix plan Layers 1 and 3 were implemented from.
 
 ## Symptom
 
@@ -261,15 +270,39 @@ mis-answered question; layer 3 is a backstop regardless of cause.
    — so this specific paper's failure mode can't silently return even if the heuristics in
    layers 1–3 are later refactored.
 
-## Not done in this pass
+## Resolution
 
-No code was changed for this issue. `pipeline_qwen38` and `multiagent_qwen38` remain 8/9 in
-`benchmark_results/20260919/` (see caveats 14 and 17 there). Re-running those two arms after
-implementing any of the above has not been scheduled.
+Layers 1 and 3 were implemented on `wip/fengsh/fix-qwen38-align-parameter-type-issue`:
+
+- **Layer 1** — `pk_ind_param_type_align_agent.py`'s `post_process_parameter_type_align` now
+  rejects an identifier-like `col_name` (an `_IDENTIFIER_COL` regex matching
+  `unnamed:\d+|id|patient id|subject|no\.`, case-insensitive) and falls through to the
+  no-transpose branch instead of blindly transposing on it.
+- **Layer 3** — ported the pk-summary backstop (`find_unlabeled_value_columns`-style guard) into
+  `pk_ind_header_categorize_agent.py`, and separately converted that file's own pre-existing bare
+  `ValueError` structural checks (column-count mismatch, missing Patient ID column) to
+  `RetryException`, so a bad reply gets retry-with-feedback instead of 5 blind identical retries.
+- Re-running PMID 33253437 through `pipeline_qwen38`/`multiagent_qwen38` after these fixes
+  surfaced 2 further bugs on the same paper (not originally described in this file): a
+  summary-data-deletion step with no sanity check on how many rows survive (fixed with a
+  `MIN_KEPT_ROW_FRACTION` guard + `RetryException`), and required Pydantic list fields in the
+  param-type/unit extraction step that crashed validation entirely on a partial reply instead of
+  retrying (fixed with `default_factory=list`). Both are pk-individual-specific; the second bug
+  class (required fields with no default) was later found and fixed across 6 other pipelines too
+  — see `docs/SIMPLE_MODE_QWEN38_ISSUES.md`'s related-files section and the
+  `wip/fengsh/fix-cross-pipeline-retry-and-defaults` branch (merged into `develop/ollama`).
+- With all of the above, PMID 33253437 now produces a correct, non-empty curated table for both
+  `pipeline_qwen38` and `multiagent_qwen38`.
+- Layer 2 was not implemented — not required, since Layers 1+3 already fix the reported symptom;
+  left as optional future hardening if Layer 1's heuristic is ever found to miss a case.
+- **Not yet done:** merge `wip/fengsh/fix-qwen38-align-parameter-type-issue` into
+  `develop/ollama`, and re-run the full `pipeline_qwen38`/`multiagent_qwen38` pk-individual
+  benchmark (not just PMID 33253437) to refresh `benchmark_results/20260919/` from 8/9 to 9/9 and
+  pick up any score change from the fix.
 
 ---
 
-# Skills mode + qwen3.8: per-paper time blows up because context never resets (TODO, not fixed)
+# Skills mode + qwen3.8: per-paper time blows up because context never resets (RESOLVED)
 
 Status: **root-caused, fixed, and validated in production (~3.4x faster, comparable quality).**
 See `docs/SKILLS_QWEN38_TIME_CONSUMING_ISSUE.md` for the full standalone write-up (root cause,
@@ -483,14 +516,30 @@ this well-confirmed, it should be tried in production before investing in the ex
 per-step-driver rewrite, which remains the fallback if this doesn't fully resolve it (e.g. if
 some other message later in a long conversation turns out to have the same instability).
 
-## Not done in this pass
+## Resolution
 
-The production job scripts have not been updated with the `totalTokensReminder: off` setting
-yet, and no full-paper run has been re-measured with it. The 2026-10-02 `skills_qwen38` re-run
-(9 parallel jobs, without this fix) completed and was scored (see
-`benchmark_results/20260919/README.md`) before this fix was found. The smoke-test artifacts
-(`logs/skills_qwen38_smoke_debug/`, `logs/skills_qwen38_smoke_noreminder/`,
+Applied to production and re-measured end to end — see `docs/SKILLS_QWEN38_TIME_CONSUMING_ISSUE.md`
+for the full write-up. `{"totalTokensReminder": "off"}` was added to
+`jobs/job_skills_qwen38.sh`'s `CLAUDE_CONFIG_DIR/settings.json`, and all 9 pk-individual papers
+were re-run:
+
+| | before | after | change |
+|---|---|---|---|
+| Total time (9 papers) | 16h47m | 4h56m | **~3.4x faster** |
+| Total tokens | 48.3M | 31.9M | ~1.5x fewer |
+| Mean semantic score | 89.1 | 86.0 | -3.1 |
+| F1 strict macro | 0.900 | 0.910 | +0.010 |
+
+Quality held (one metric down slightly, the other up slightly) — this remains the best-F1 arm in
+the pk-individual benchmark. The same fix was separately confirmed missing from, and then applied
+to, pk-summary's `job_skills_qwen38.sh` on 2026-10-07 (see `docs/SIMPLE_MODE_QWEN38_ISSUES.md`'s
+related work) — the two projects' job scripts had drifted and pk-summary's had never received
+this fix until that pass. Two papers (23200982, 34746508) failed on the first production attempt
+with a different, likely-unrelated symptom (an extremely long unproductive "thinking" block) and
+both succeeded on a plain retry — see "Open question" above; not further investigated.
+
+The smoke-test artifacts (`logs/skills_qwen38_smoke_debug/`, `logs/skills_qwen38_smoke_noreminder/`,
 `output/skills_qwen38_smoke_debug/`, `output/skills_qwen38_smoke_noreminder/`,
 `.claude_home/skills_qwen38_smoke_debug/`, `.claude_home/skills_qwen38_smoke_noreminder/`,
-`skills_work/skills_qwen38_smoke_debug/`, `skills_work/skills_qwen38_smoke_noreminder/`) are
-left on scratch for reference and are not part of the scored benchmark data.
+`skills_work/skills_qwen38_smoke_debug/`, `skills_work/skills_qwen38_smoke_noreminder/`) remain on
+scratch for reference and are not part of the scored benchmark data.
