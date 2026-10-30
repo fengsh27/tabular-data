@@ -14,6 +14,8 @@ from extractor.curate_agent.comparison_judge import (
 REPORT = {
     "tier1": {"total_rows": 5, "dropped_rows": 0, "avg_fit_score": 10.0},
     "tier2": {"checked_numbers": 8, "unsupported": 0, "findings": []},
+    "tier3": {"correct": True, "error_row_count": 0, "missed_row_count": 0,
+              "explanation": "All values match."},
     "error_rate": 0.0,
     "escalate": False,
 }

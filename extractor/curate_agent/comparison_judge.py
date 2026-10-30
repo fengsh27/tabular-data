@@ -159,25 +159,24 @@ class ComparisonFullResult(BaseModel):
 def _format_report(report: dict) -> str:
     """Human-readable summary of a ValidityReport, for the prompt."""
     tier1 = report.get("tier1") or {}
-    tier2 = report.get("tier2")
     lines = [
         f"- total_rows: {tier1.get('total_rows')}",
         f"- dropped/implausible rows: {tier1.get('dropped_rows')}",
         f"- avg per-row fit score: {tier1.get('avg_fit_score'):.2f}"
         if tier1.get("avg_fit_score") is not None else "- avg per-row fit score: N/A",
     ]
-    if tier2 is None:
-        lines.append("- provenance check: skipped (zero-row table)")
-    else:
+    tier2 = report.get("tier2")
+    if tier2:
         lines.append(
-            f"- provenance check: {tier2.get('unsupported')} misattributed "
+            f"- existence check: {tier2.get('unsupported')} unsupported "
             f"out of {tier2.get('checked_numbers')} numbers checked"
         )
     tier3 = report.get("tier3")
     if tier3:
         lines.append(
-            f"- plausibility check: {tier3.get('flagged')} implausible "
-            f"out of {tier3.get('checked_rows')} rows checked"
+            f"- LLM verification: correct={tier3.get('correct')}, "
+            f"{tier3.get('error_row_count')} error row(s), "
+            f"{tier3.get('missed_row_count')} missed row(s)"
         )
     lines.append(f"- error_rate: {report.get('error_rate'):.3f}")
     return "\n".join(lines)

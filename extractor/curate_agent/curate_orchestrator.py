@@ -4,7 +4,8 @@ Glues two previously-separate code paths together with a validity gate in
 between, instead of building a third execution engine:
 
     Arm A (cheap): scripts/simple_prompt/run_simple_prompt.py, one call/table
-    ValidityChecker (Tier 1 + Tier 2)
+    ValidityChecker (Tier 1 structural + Tier 2 existence + Tier 3 LLM
+    verification - see validity_checker.py's module docstring)
     escalate? -> Arm B (expensive): PKPEManager multi-agent mode
     ValidityChecker on Arm B too
     pick the lower error_rate; on a tie, ComparisonJudge (Tier 4, an LLM
@@ -44,11 +45,8 @@ if _SIMPLE_PROMPT_DIR not in sys.path:
     sys.path.insert(0, _SIMPLE_PROMPT_DIR)
 import validity as _validity  # scripts/simple_prompt/validity.py
 
-# v1 scope per the design doc's open questions: pk_summary only - label columns
-# for pk_individual need confirming before that pipeline is wired in too.
-DEFAULT_LABEL_COLUMNS = {
-    "pk_summary": ["Analyte", "Specimen", "Population", "Parameter type"],
-}
+# v1 scope per the design doc's open questions: pk_summary only.
+SUPPORTED_SCHEMAS = {"pk_summary"}
 
 DEFAULT_PROMPT_PATHS = {
     "pk_summary": os.path.join(REPO_ROOT, "prompts", "simple_prompts", "pk_summary.md"),
@@ -62,10 +60,8 @@ _SCHEMA_TO_PIPELINE = {
 def write_table_markdown(tables, dest_dir) -> list[str]:
     """One markdown file per source table: `<dest_dir>/table_{i}/00_markdown_table.md`.
 
-    This is both the scratch layout `run_simple_prompt.py`'s `find_tables()`
-    expects (a `table*` subdirectory per table holding `00_markdown_table.md`)
-    and the Tier-2 source file list `verify_provenance`'s `--attribution` mode
-    parses - so both arms, and the checker, read the exact same source text.
+    This is the scratch layout `run_simple_prompt.py`'s `find_tables()`
+    expects: a `table*` subdirectory per table holding `00_markdown_table.md`.
     """
     paths = []
     for i, table in enumerate(tables or [], start=1):
@@ -150,16 +146,16 @@ def run_expensive_arm(pmid, schema, out_dir, pmid_db):
 
 
 def curate(pmid, schema="pk_summary", html_content=None, pmid_db=None,
-           work_dir=None, label_columns=None, threshold=vc.DEFAULT_THRESHOLD,
+           work_dir=None, threshold=vc.DEFAULT_THRESHOLD,
            cheap_model="qwen3.8:27b",
            run_cheap_arm_fn=run_cheap_arm, run_expensive_arm_fn=run_expensive_arm,
-           compare_fn=comparison_judge.compare):
+           verify_fn=vc.llm_verification.verify, compare_fn=comparison_judge.compare):
     """Run the cascade for one paper/pipeline: cheap pass, gate, maybe expensive pass, pick.
 
-    `run_cheap_arm_fn`/`run_expensive_arm_fn`/`compare_fn` default to the real
-    subprocess/PKPEManager/LLM implementations above; tests substitute fakes
-    so the cascade's own logic (gate, escalation, pick-rule) can be exercised
-    without a live Ollama server, multi-agent run, or LLM call.
+    `run_cheap_arm_fn`/`run_expensive_arm_fn`/`verify_fn`/`compare_fn` default
+    to the real subprocess/PKPEManager/LLM implementations; tests substitute
+    fakes so the cascade's own logic (gate, escalation, pick-rule) can be
+    exercised without a live Ollama server, multi-agent run, or LLM call.
 
     Returns:
         {"winner": "A" | "B", "csv_path": str, "escalated": bool,
@@ -167,13 +163,12 @@ def curate(pmid, schema="pk_summary", html_content=None, pmid_db=None,
          "candidate_b": {"csv_path": str, "report": ValidityReport} | None,
          "judge": {"winner": str, "explanation": str, "used_full_tables": bool} | None}
     """
-    if schema not in DEFAULT_LABEL_COLUMNS:
+    if schema not in SUPPORTED_SCHEMAS:
         raise ValueError(
             f"schema {schema!r} is not wired for the v1 cascade "
-            f"(scoped to {sorted(DEFAULT_LABEL_COLUMNS)} per "
+            f"(scoped to {sorted(SUPPORTED_SCHEMAS)} per "
             f"docs/VERIFICATION_AGENT_DESIGN.md)"
         )
-    label_columns = label_columns or DEFAULT_LABEL_COLUMNS[schema]
     pmid_db = pmid_db or PMIDDB()
     work_dir = work_dir or os.path.join(REPO_ROOT, ".curate_agent_work", pmid)
     os.makedirs(work_dir, exist_ok=True)
@@ -187,8 +182,9 @@ def curate(pmid, schema="pk_summary", html_content=None, pmid_db=None,
 
     armA_out = os.path.join(work_dir, "arm_a")
     csv_a, dropped_a = run_cheap_arm_fn(pmid, schema, scratch_root, armA_out, model=cheap_model)
-    report_a = vc.check_validity(csv_a, schema, source_paths, label_columns,
-                                  extra_dropped_rows=dropped_a, threshold=threshold)
+    report_a = vc.check_validity(csv_a, schema, source_paths, paper_title, paper_abstract,
+                                  extra_dropped_rows=dropped_a, threshold=threshold,
+                                  verify_fn=verify_fn)
 
     if not report_a["escalate"]:
         return {
@@ -199,8 +195,13 @@ def curate(pmid, schema="pk_summary", html_content=None, pmid_db=None,
 
     armB_out = os.path.join(work_dir, "arm_b")
     csv_b = run_expensive_arm_fn(pmid, schema, armB_out, pmid_db)
-    report_b = vc.check_validity(csv_b, schema, source_paths, label_columns,
-                                  threshold=threshold)
+    # Tier 1 is excluded from Arm B's error_rate: it was built around Arm A's
+    # own output conventions and was never validated against Arm B's - see
+    # check_validity()'s docstring for the real-data case (PMID 16143486)
+    # where scoring Arm B with it flipped the pick away from the better arm.
+    report_b = vc.check_validity(csv_b, schema, source_paths, paper_title, paper_abstract,
+                                  threshold=threshold, verify_fn=verify_fn,
+                                  include_tier1_rate=False)
 
     judge = None
     if report_a["error_rate"] < report_b["error_rate"]:

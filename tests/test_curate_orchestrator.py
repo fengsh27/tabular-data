@@ -21,6 +21,7 @@ SOURCE_TABLE = pd.DataFrame({
     "N": [19],
     "Value": [91],
     "Unit": ["Mg/min/L"],
+    "SD": [30],
 })
 
 PK_SUMMARY_HEADER = [
@@ -58,6 +59,14 @@ def _pmid_db(tmp_path):
     return db
 
 
+def _clean_verify(**kwargs):
+    """Fake Tier 3 (an LLM call in real life) - always reports clean, so
+    these tests exercise the cascade's gate/escalation/pick logic driven by
+    Tier 1/2 alone, with no live LLM call."""
+    return {"correct": True, "error_row_count": 0, "missed_row_count": 0,
+            "explanation": "All values match."}
+
+
 def test_clean_arm_a_never_escalates(tmp_path):
     calls = {"a": 0, "b": 0}
 
@@ -77,6 +86,7 @@ def test_clean_arm_a_never_escalates(tmp_path):
         PMID, schema="pk_summary", pmid_db=_pmid_db(tmp_path),
         work_dir=str(tmp_path / "work"),
         run_cheap_arm_fn=fake_cheap, run_expensive_arm_fn=fake_expensive,
+        verify_fn=_clean_verify,
     )
 
     assert calls == {"a": 1, "b": 0}
@@ -105,6 +115,7 @@ def test_bad_arm_a_escalates_and_clean_arm_b_wins(tmp_path):
         PMID, schema="pk_summary", pmid_db=_pmid_db(tmp_path),
         work_dir=str(tmp_path / "work"),
         run_cheap_arm_fn=fake_cheap, run_expensive_arm_fn=fake_expensive,
+        verify_fn=_clean_verify,
     )
 
     assert result["escalated"] is True
@@ -114,10 +125,14 @@ def test_bad_arm_a_escalates_and_clean_arm_b_wins(tmp_path):
 
 
 def test_tie_calls_comparison_judge(tmp_path):
-    # Both arms produce the same shifted row - error_rate ties, so the gate
-    # must hand the pick to Tier 4 (ComparisonJudge) rather than defaulting
-    # to either side. The judge itself is faked here; see
-    # test_curate_comparison_judge.py for the judge's own logic.
+    # Both arms produce the same shifted row, but that no longer guarantees
+    # a tie by itself: Tier 1 counts toward Arm A's error_rate but is
+    # excluded from Arm B's (check_validity's include_tier1_rate - see
+    # curate_orchestrator.py's own Arm B call). So this fakes Tier 3 to land
+    # Arm B's error_rate at the same value Arm A's Tier 1 + Tier 3 produce,
+    # rather than relying on identical input rows producing an identical
+    # score. The actual tie-breaking (ComparisonJudge) is faked separately;
+    # see test_curate_comparison_judge.py for the judge's own logic.
     def fake_cheap(pmid, schema, scratch_root, out_root, **kw):
         import os
         os.makedirs(out_root, exist_ok=True)
@@ -132,6 +147,20 @@ def test_tie_calls_comparison_judge(tmp_path):
         _write_csv(csv_path, [SHIFTED_ROW])
         return csv_path
 
+    verify_calls = {"n": 0}
+
+    def tied_verify(**kwargs):
+        verify_calls["n"] += 1
+        if verify_calls["n"] == 1:
+            # Arm A: Tier 3 clean - Arm A's error_rate comes entirely from
+            # Tier 1 catching the shifted row.
+            return {"correct": True, "error_row_count": 0, "missed_row_count": 0,
+                     "explanation": "All values match."}
+        # Arm B: Tier 1 doesn't count here, so Tier 3 alone has to reach the
+        # same error_rate Arm A got from Tier 1.
+        return {"correct": False, "error_row_count": 0, "missed_row_count": 2,
+                "explanation": "Missing row: ...\nMissing row: ..."}
+
     calls = []
 
     def fake_compare(**kwargs):
@@ -142,7 +171,7 @@ def test_tie_calls_comparison_judge(tmp_path):
         PMID, schema="pk_summary", pmid_db=_pmid_db(tmp_path),
         work_dir=str(tmp_path / "work"),
         run_cheap_arm_fn=fake_cheap, run_expensive_arm_fn=fake_expensive,
-        compare_fn=fake_compare,
+        verify_fn=tied_verify, compare_fn=fake_compare,
     )
 
     assert result["escalated"] is True
@@ -174,7 +203,7 @@ def test_no_tie_never_calls_comparison_judge(tmp_path):
         PMID, schema="pk_summary", pmid_db=_pmid_db(tmp_path),
         work_dir=str(tmp_path / "work"),
         run_cheap_arm_fn=fake_cheap, run_expensive_arm_fn=fake_expensive,
-        compare_fn=fake_compare,
+        verify_fn=_clean_verify, compare_fn=fake_compare,
     )
 
     assert result["winner"] == "B"
