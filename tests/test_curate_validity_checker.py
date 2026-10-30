@@ -92,5 +92,78 @@ def test_clean_table_does_not_escalate(tmp_path):
     assert report["tier1"]["total_rows"] == 1
     assert report["tier1"]["dropped_rows"] == 0
     assert report["tier2"]["unsupported"] == 0
+    assert report["tier3"]["flagged"] == 0  # "Total area under curve" isn't in the Tier 3 rule table
     assert report["error_rate"] == 0.0
     assert report["escalate"] is False
+
+
+def test_implausible_unit_is_flagged_by_tier3(tmp_path):
+    # Cmax (a concentration, e.g. ng/mL) tagged with a time unit - the kind of
+    # unit/parameter-type mismatch Tier 1 (shape) and Tier 2 (provenance)
+    # cannot catch, since the value and shape are otherwise fine.
+    csv_path = tmp_path / "bad_unit_combined.csv"
+    csv_path.write_text(
+        PK_SUMMARY_HEADER + "\n"
+        "Ketamine,Ketamine,Plasma,children,,19,Cmax,91,"
+        "hr,mean,SD,30,,,,\n",
+        encoding="utf-8",
+    )
+    source_path = tmp_path / "00_markdown_table.md"
+    source_path.write_text(
+        "| Drug | Parameter | N | Value | Unit |\n"
+        "| --- | --- | --- | --- | --- |\n"
+        "| Ketamine | Cmax | 19 | 91 | hr |\n",
+        encoding="utf-8",
+    )
+
+    report = vc.check_validity(
+        str(csv_path), "pk_summary", [str(source_path)],
+        label_columns=["Analyte", "Specimen", "Population", "Parameter type"],
+    )
+
+    assert report["tier3"]["flagged"] == 1
+    assert "unit" in report["tier3"]["findings"][0]["issues"][0]
+    assert report["error_rate"] > 0.0
+    assert report["escalate"] is True
+
+
+def test_implausible_magnitude_is_flagged_by_tier3(tmp_path):
+    # A half-life of 9000 hours (a year) is a magnitude sanity failure, even
+    # though the unit itself ("h") is exactly right for the parameter type.
+    csv_path = tmp_path / "bad_magnitude_combined.csv"
+    csv_path.write_text(
+        PK_SUMMARY_HEADER + "\n"
+        "Ketamine,Ketamine,Plasma,children,,19,Half-life,9000,"
+        "h,mean,SD,30,,,,\n",
+        encoding="utf-8",
+    )
+    source_path = tmp_path / "00_markdown_table.md"
+    source_path.write_text(
+        "| Drug | Parameter | N | Value | Unit |\n"
+        "| --- | --- | --- | --- | --- |\n"
+        "| Ketamine | Half-life | 19 | 9000 | h |\n",
+        encoding="utf-8",
+    )
+
+    report = vc.check_validity(
+        str(csv_path), "pk_summary", [str(source_path)],
+        label_columns=["Analyte", "Specimen", "Population", "Parameter type"],
+    )
+
+    assert report["tier3"]["flagged"] == 1
+    assert "range" in report["tier3"]["findings"][0]["issues"][0]
+    assert report["escalate"] is True
+
+
+def test_tier3_skips_zero_row_table(tmp_path):
+    csv_path = tmp_path / "empty_combined.csv"
+    csv_path.write_text(PK_SUMMARY_HEADER + "\n", encoding="utf-8")
+    source_path = tmp_path / "00_markdown_table.md"
+    source_path.write_text(SOURCE_MD, encoding="utf-8")
+
+    report = vc.check_validity(
+        str(csv_path), "pk_summary", [str(source_path)],
+        label_columns=["Analyte", "Specimen", "Population", "Parameter type"],
+    )
+
+    assert report["tier3"] is None

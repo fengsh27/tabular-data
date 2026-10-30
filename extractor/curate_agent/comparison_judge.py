@@ -173,6 +173,12 @@ def _format_report(report: dict) -> str:
             f"- provenance check: {tier2.get('unsupported')} misattributed "
             f"out of {tier2.get('checked_numbers')} numbers checked"
         )
+    tier3 = report.get("tier3")
+    if tier3:
+        lines.append(
+            f"- plausibility check: {tier3.get('flagged')} implausible "
+            f"out of {tier3.get('checked_rows')} rows checked"
+        )
     lines.append(f"- error_rate: {report.get('error_rate'):.3f}")
     return "\n".join(lines)
 
