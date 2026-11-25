@@ -543,3 +543,24 @@ The smoke-test artifacts (`logs/skills_qwen38_smoke_debug/`, `logs/skills_qwen38
 `.claude_home/skills_qwen38_smoke_debug/`, `.claude_home/skills_qwen38_smoke_noreminder/`,
 `skills_work/skills_qwen38_smoke_debug/`, `skills_work/skills_qwen38_smoke_noreminder/`) remain on
 scratch for reference and are not part of the scored benchmark data.
+
+
+## Addendum 2026-10-31 - the Layer 1 name guard broke PMID 34746508; replaced
+
+The identifier-name guard (`_IDENTIFIER_COL`, commit 6e8669a) blocked the transpose on
+34746508 table 2, a per-case table whose blank-headed first column ("Unnamed: 0") holds the
+nine parameter labels and whose columns are Case 1-5. qwen3.8 and gemma4 both answered
+`col_name="Unnamed: 0"`, correctly; the guard refused, header categorization then saw five
+Patient ID columns and no Parameter value column, SplitByColumnsStep dropped the only
+Uncategorized column (the labels) and returned `[]`, and the workflow produced 0 rows with no
+error (cascade rounds 2-4, docs/cascade_mode_results.md). The pipeline_qwen38 collection of
+2026-10-01, before the guard, had all 15 rows.
+
+Replaced by the Layer 2 check this file proposed and the commit left undone, on values instead
+of names: `post_process_parameter_type_align` now transposes whenever the model names a column,
+then `check_transpose_result` raises `RetryException` when the named column's values are not
+(mostly) distinct labels (33253437: 6 drug names over 47 rows -> ratio 0.13 < 0.5) or the
+result has fewer than 3 columns; the step's `get_try_fix_error` keeps the table untransposed
+after the retries. Tests on both papers' real tables:
+`tests/test_pk_ind_param_type_align_transpose_check.py` (fixtures
+`tests/data/pk_individual_tables/`). `tests/test_pk_ind_param_type_align_identifier.py` removed.

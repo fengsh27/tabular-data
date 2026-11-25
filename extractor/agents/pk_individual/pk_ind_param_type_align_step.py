@@ -3,6 +3,7 @@ from extractor.agents.pk_individual.pk_ind_param_type_align_agent import (
     ParameterTypeAlignResult,
     get_parameter_type_align_prompt,
     post_process_parameter_type_align,
+    try_fix_parameter_type_align,
 )
 
 
@@ -24,6 +25,10 @@ class ParametertypeAlignStep(PKIndCommonAgentStep):
     def get_post_processor_and_kwargs(self, state):
         md_table_individual = state["md_table_individual"]
         return post_process_parameter_type_align, {"md_table_individual": md_table_individual}
+
+    def get_try_fix_error(self):
+        # after 5 rejected answers keep the table untransposed instead of failing the paper
+        return try_fix_parameter_type_align
 
     def leave_step(self, state, res, processed_res=None, token_usage=None):
         if processed_res is not None:
