@@ -15,9 +15,16 @@ Three tiers, cheapest first:
   Catches misattribution and unit/magnitude implausibility without a
   maintained matching heuristic or rule table.
 
-Both Tier 2 and Tier 3 are skipped - not merely zero - on a zero-row table:
-there is nothing to check, and the table is already invalid regardless, so
-no LLM call is spent on it either.
+A zero-row table takes a different path: Tier 2 is skipped (nothing to
+check) and Tier 3's place is taken by one LLM call,
+`llm_verification.assess_empty_table`, which asks whether the source table
+even holds data of this schema's kind. If it does not, the empty table is
+the correct output (error_rate 0, no escalation); if it does, the table is
+a failure as before (error_rate 1.0, escalate) and the rows that should have
+been curated are recorded for the judge. Before this (v2 first live round)
+every empty table was scored as a failure, and the cascade lost twice out of
+three such cases to an arm that filled a non-curatable table with rows -
+see docs/cascade_mode_results.md, Tier 4 audit.
 
 Earlier versions of this checker had a Tier 2 based on Jaccard label-matching
 and a Tier 3 based on a hand-maintained unit/magnitude rule table; both were
@@ -73,7 +80,9 @@ DEFAULT_THRESHOLD = 0.2
 # should count. pk_individual's own `_fits()` is unchanged, so its default
 # stays where it was.
 DEFAULT_LOW_FIT_THRESHOLD = 0
-_LOW_FIT_THRESHOLD_BY_SCHEMA = {"pk_summary": -1}
+# The eight generic schemas use the same no-vocabulary-reward scorer as
+# pk_summary (validity._structural_fits), so a clean row can net to 0 there too.
+_LOW_FIT_THRESHOLD_BY_SCHEMA = {"pk_summary": -1, **{s: -1 for s in _validity.SPECS}}
 
 
 def tier1_structural(csv_path, schema, extra_dropped_rows=0, low_fit_threshold=None):
@@ -134,18 +143,37 @@ def check_validity(csv_path, schema, source_paths, paper_title, paper_abstract,
                     threshold=DEFAULT_THRESHOLD,
                     value_columns=None, skip_columns=None,
                     verify_fn=llm_verification.verify, llm=None,
-                    domain="pharmacokinetics", include_tier1_rate=True):
+                    domain="pharmacokinetics", include_tier1_rate=True,
+                    empty_fn=llm_verification.assess_empty_table):
     """Full Tier 1 + Tier 2 + Tier 3 ValidityReport for one candidate's CSV.
 
     Shape: {"tier1": {...}, "tier2": {...}, "tier3": {...}, "error_rate":
-    float, "escalate": bool}. `tier2`/`tier3` are both None when Tier 1
-    already found a zero-row table - no LLM call is made on an empty table.
+    float, "escalate": bool}.
+
+    Zero-row table: `tier2` is None and `tier3` comes from `empty_fn`
+    (`llm_verification.assess_empty_table`, one LLM call) instead of
+    `verify_fn`. If the source table holds no data of this schema's kind the
+    empty table is correct - `tier3["empty_table_justified"] = True`,
+    `error_rate = 0.0`, `escalate = False`. Otherwise `error_rate = 1.0`,
+    `escalate = True`, and `tier3["expected_rows"]` lists what should have
+    been curated (`missed_row_count` = its length, at least 1). Pass
+    `empty_fn=None` to skip the call and treat every empty table as a failure
+    (`tier3` None), the pre-audit behaviour.
 
     `verify_fn` defaults to the real `llm_verification.verify` (a live LLM
     call); tests substitute a fake so this can be exercised without one.
 
-    `error_rate` averages each tier's own 0-1 failure fraction (not a sum of
-    raw counts over `total_rows` - see git history for why that broke).
+    `error_rate` is the WORST (maximum) of the tiers' own 0-1 failure
+    fractions - not their mean, and not a sum of raw counts over `total_rows`
+    (see git history for why that broke). Each tier catches a different
+    failure: Tier 1 malformed rows, Tier 2 numbers not in the source, Tier 3
+    wrong or missing rows; a table that fails any one of them is a table to
+    escalate. The mean was tried first (rounds 1-5) and hid exactly the
+    failure Tier 3 is there for: PMID 32153014 table 2 had 15 clean rows and
+    13 missing ones, Tier 3 rate 0.46, but Tier 1 and 2 (which cannot see a
+    missing row) were 0.00 and the mean came out 0.155, under the 0.2 gate.
+    Over every table of the latest pk_individual and pk_summary rounds, the
+    maximum adds exactly the two tables Tier 3 had flagged and no others.
     Tier 1's rate is dropped_rows/total_rows, included only when
     `include_tier1_rate` is true (see below). Tier 2's rate is
     unsupported/checked_numbers, left out of the average (not counted as 0)
@@ -177,20 +205,50 @@ def check_validity(csv_path, schema, source_paths, paper_title, paper_abstract,
     tier1 = tier1_structural(csv_path, schema, extra_dropped_rows=extra_dropped_rows,
                               low_fit_threshold=low_fit_threshold)
 
-    if tier1["total_rows"] == 0:
-        return {"tier1": tier1, "tier2": None, "tier3": None, "error_rate": 1.0, "escalate": True}
-
-    tier2 = tier2_existence(csv_path, source_paths, value_columns=value_columns,
-                             skip_columns=skip_columns)
-
     source_tables_text = "\n\n".join(
         open(p, encoding="utf-8").read() for p in source_paths
     )
+
+    if tier1["total_rows"] == 0:
+        if empty_fn is None:
+            return {"tier1": tier1, "tier2": None, "tier3": None, "error_rate": 1.0, "escalate": True}
+        assessment = empty_fn(
+            paper_title=paper_title, paper_abstract=paper_abstract,
+            source_tables=source_tables_text, schema=schema, llm=llm, domain=domain,
+        )
+        expected_rows = list(assessment.get("expected_rows") or [])
+        if not assessment["has_curatable_data"]:
+            tier3 = {
+                "correct": True, "error_row_count": 0, "missed_row_count": 0,
+                "explanation": assessment["explanation"],
+                "empty_table_justified": True, "expected_rows": [],
+            }
+            return {"tier1": tier1, "tier2": None, "tier3": tier3, "error_rate": 0.0, "escalate": False}
+        tier3 = {
+            "correct": False, "error_row_count": 0,
+            "missed_row_count": max(1, len(expected_rows)),
+            "explanation": "\n".join([assessment["explanation"]]
+                                     + [f"Missing row: {m}" for m in expected_rows]),
+            "empty_table_justified": False, "expected_rows": expected_rows,
+        }
+        return {"tier1": tier1, "tier2": None, "tier3": tier3, "error_rate": 1.0, "escalate": True}
+
+    if value_columns is None and schema in _validity.SPECS:
+        # The generic schemas carry numbers in label cells that are categories,
+        # not source values ("Trimester 3", "Grade 3-4", "95% CI") and verbatim
+        # excerpts in Note; Tier 2 asks only whether the schema's numeric cells
+        # (plus a sampling-time list) exist in the source. pk_summary /
+        # pk_individual keep the all-columns check they were calibrated with.
+        spec = _validity.SPECS[schema]
+        value_columns = sorted(set(spec.numeric_cols) | ({"Sample time"} & set(spec.cols)))
+    tier2 = tier2_existence(csv_path, source_paths, value_columns=value_columns,
+                             skip_columns=skip_columns)
+
     curated_table_md = dataframe_to_markdown(pd.read_csv(csv_path))
     tier3_result = verify_fn(
         paper_title=paper_title, paper_abstract=paper_abstract,
         source_tables=source_tables_text, curated_table=curated_table_md,
-        llm=llm, domain=domain,
+        llm=llm, domain=domain, schema=schema,
     )
     tier3 = {
         "correct": tier3_result["correct"],
@@ -206,7 +264,7 @@ def check_validity(csv_path, schema, source_paths, paper_title, paper_abstract,
         rates.append(tier2["unsupported"] / tier2["checked_numbers"])
     tier3_total = tier1["total_rows"] + tier3["missed_row_count"]
     rates.append((tier3["error_row_count"] + tier3["missed_row_count"]) / tier3_total)
-    error_rate = sum(rates) / len(rates)
+    error_rate = max(rates)  # the worst tier decides; see the docstring
 
     return {
         "tier1": tier1,

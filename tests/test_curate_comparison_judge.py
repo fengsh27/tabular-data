@@ -8,6 +8,7 @@ from extractor.curate_agent.comparison_judge import (
     ComparisonFullResult,
     ComparisonJudgeStep,
     ComparisonReportsOnlyResult,
+    _format_report,
     compare,
 )
 
@@ -100,6 +101,70 @@ def test_confident_winner_none_also_escalates(monkeypatch):
     assert state["winner"] == "A"
 
 
+EMPTY_JUSTIFIED_REPORT = {
+    "tier1": {"total_rows": 0, "dropped_rows": 0, "avg_fit_score": 0.0},
+    "tier2": None,
+    "tier3": {"correct": True, "error_row_count": 0, "missed_row_count": 0,
+              "explanation": "rows are group means with no patient identifiers",
+              "empty_table_justified": True, "expected_rows": []},
+    "error_rate": 0.0,
+    "escalate": False,
+}
+
+EMPTY_FAILED_REPORT = {
+    "tier1": {"total_rows": 0, "dropped_rows": 0, "avg_fit_score": 0.0},
+    "tier2": None,
+    "tier3": {"correct": False, "error_row_count": 0, "missed_row_count": 2,
+              "explanation": "one column per case",
+              "empty_table_justified": False,
+              "expected_rows": ["Case 1 cord blood 36.89", "Case 5 cord blood 756.5"]},
+    "error_rate": 1.0,
+    "escalate": True,
+}
+
+
+def test_format_report_describes_a_justified_empty_table_and_hides_error_rate():
+    text = _format_report(EMPTY_JUSTIFIED_REPORT)
+    assert "total_rows: 0" in text
+    assert "NO curatable data" in text
+    assert "group means with no patient identifiers" in text
+    assert "error_rate" not in text
+    assert "fit score" not in text
+
+
+def test_format_report_lists_expected_rows_for_a_failed_empty_table():
+    text = _format_report(EMPTY_FAILED_REPORT)
+    assert "DOES have curatable data" in text
+    assert "Case 1 cord blood 36.89" in text and "Case 5 cord blood 756.5" in text
+
+
+def test_format_report_for_a_table_with_rows_has_tiers_but_no_error_rate():
+    text = _format_report(REPORT)
+    assert "total_rows: 5" in text
+    assert "existence check: 0 unsupported out of 8" in text
+    assert "LLM verification: correct=True" in text
+    assert "error_rate" not in text
+
+
+def test_prompts_carry_the_empty_table_rule_and_no_tie_claim(monkeypatch):
+    stub_agent = _StubAgent([
+        ComparisonReportsOnlyResult(confident=False, winner=None, explanation="unsure"),
+        ComparisonFullResult(winner="A", explanation="A's empty table is right"),
+    ])
+    step = ComparisonJudgeStep(llm=None)
+    monkeypatch.setattr(step, "get_agent", lambda llm: stub_agent)
+
+    state = _base_state()
+    state["report_a"] = EMPTY_JUSTIFIED_REPORT
+    step.execute(state)
+
+    for call in stub_agent.calls:
+        prompt = call["system_prompt"]
+        assert "tied" not in prompt
+        assert "zero rows is CORRECT" in prompt.replace("Zero rows", "zero rows") or "zero rows is CORRECT" in prompt
+        assert "NO curatable data" in prompt
+
+
 def test_compare_wrapper_returns_plain_dict(monkeypatch):
     stub_agent = _StubAgent([
         ComparisonReportsOnlyResult(confident=True, winner="B", explanation="B wins"),
@@ -115,3 +180,19 @@ def test_compare_wrapper_returns_plain_dict(monkeypatch):
     )
 
     assert result == {"winner": "B", "explanation": "B wins", "used_full_tables": False}
+
+
+def test_force_full_tables_skips_the_reports_only_pass(monkeypatch):
+    stub_agent = _StubAgent([ComparisonFullResult(winner="A", explanation="A's rows are real")])
+    monkeypatch.setattr(ComparisonJudgeStep, "get_agent", lambda self, llm: stub_agent)
+
+    result = compare(
+        paper_title="A PK study", paper_abstract="An abstract.", source_tables="Table 1: ...",
+        report_a=REPORT, table_a="| x |\n| --- |\n| 1 |",
+        report_b=EMPTY_JUSTIFIED_REPORT, table_b="| x |\n| --- |",
+        llm="unused", force_full_tables=True,
+    )
+
+    assert result == {"winner": "A", "explanation": "A's rows are real", "used_full_tables": True}
+    assert len(stub_agent.calls) == 1
+    assert "| 1 |" in stub_agent.calls[0]["system_prompt"]
