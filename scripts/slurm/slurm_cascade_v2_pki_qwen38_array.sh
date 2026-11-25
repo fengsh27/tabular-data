@@ -13,8 +13,8 @@
 # v2 per-table cascade, LIVE, one pk_individual paper per array task - ROUND 4.
 # Arm A = qwen3.8:27b (simple prompt); Arm B / Tier 3 / judge = QWEN3.8-27B, one model
 # for everything. Arm B mode is selectable:
-#   ARM_B_MODE=pipeline   sbatch slurm_cascade_v2_pki_qwen38_array.sh   (execution only, default)
-#   ARM_B_MODE=multiagent sbatch slurm_cascade_v2_pki_qwen38_array.sh   (+ per-table verify/correct loop)
+#   ARM_B_MODE=pipeline   sbatch scripts/slurm/slurm_cascade_v2_pki_qwen38_array.sh   (execution only, default)
+#   ARM_B_MODE=multiagent sbatch scripts/slurm/slurm_cascade_v2_pki_qwen38_array.sh   (+ per-table verify/correct loop)
 # F1_A / F1_B are scored from this run's own Arm A / Arm B outputs. Set REFERENCE_F1=1 to also
 # print the stored pipeline_qwen38 / multiagent_qwen38 collection numbers (F1_*_ref) for comparison.
 # All 9 gold papers run.
@@ -45,7 +45,7 @@ echo "========================================="
 nvidia-smi
 
 # One Ollama per job on its OWN port - two tasks on one node must not share
-# 11434 (see slurm_cascade_v2_pk_summary_array.sh for the 2026-10-31 collision).
+# 11434 (see scripts/slurm/slurm_cascade_v2_pk_summary_array.sh for the 2026-10-31 collision).
 OLLAMA_PORT=$((20000 + (SLURM_JOB_ID * 7 + ${SLURM_ARRAY_TASK_ID:-0} * 131) % 20000))
 export OLLAMA_HOST="127.0.0.1:${OLLAMA_PORT}"
 echo "[INFO] Launching Ollama server on ${OLLAMA_HOST}..."

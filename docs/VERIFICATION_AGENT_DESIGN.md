@@ -492,5 +492,5 @@ therefore defines `pkpe_<schema>_qwen38` datasets (papers = those with that pipe
 version; sources = the PMC XML under `tabular-data-skills-route/.staging`, which
 `HtmlTableExtractor` parses) with a `reference` (the gpt-4o files) instead of a `gold_dir`.
 `run_cascade_benchmark.py` scores against the reference when there is no gold and labels every
-F1 column with what it was scored against. The live run is `slurm_cascade_v2_pkpe_qwen38_array.sh`
+F1 column with what it was scored against. The live run is `scripts/slurm/slurm_cascade_v2_pkpe_qwen38_array.sh`
 (one schema per array task). Results: docs/cascade_mode_results.md, "pk-pe pipelines".

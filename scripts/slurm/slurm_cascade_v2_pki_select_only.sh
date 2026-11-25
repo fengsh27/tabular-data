@@ -29,7 +29,7 @@ echo "========================================="
 nvidia-smi
 
 # One Ollama per job on its OWN port - two jobs on one node must not share
-# 11434 (see slurm_cascade_v2_pk_summary_array.sh for the 2026-10-31 collision).
+# 11434 (see scripts/slurm/slurm_cascade_v2_pk_summary_array.sh for the 2026-10-31 collision).
 OLLAMA_PORT=$((20000 + (SLURM_JOB_ID * 7) % 20000))
 export OLLAMA_HOST="127.0.0.1:${OLLAMA_PORT}"
 echo "[INFO] Launching Ollama server on ${OLLAMA_HOST}..."

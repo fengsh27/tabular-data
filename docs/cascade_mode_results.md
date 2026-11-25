@@ -126,7 +126,7 @@ current gold standard.
 
 ## v2 per-table cascade — first live round (2026-10-30)
 
-`scripts/run_cascade_benchmark.py`, one Slurm task per paper (`slurm_cascade_v2_*_array.sh`),
+`scripts/run_cascade_benchmark.py`, one Slurm task per paper (`scripts/slurm/slurm_cascade_v2_*_array.sh`),
 route skipped (`schemas=` fixed), Arm A = simple prompt on the dataset's own model, Arm B =
 execution-only multi-agent workflow, Tier 3 + judge on `AGENT_LLM`; one model per dataset
 (pk_summary: qwen3.6:35b / QWEN3.6-35B, so F1_B below is the **multiagent_qwen36** collection;
@@ -463,7 +463,7 @@ time; the gate's one Tier 3 call per table is the next. Each stage boundary also
 ## v2 per-table cascade — fourth live round, pk_individual, Arm B mode "pipeline" (2026-10-31)
 
 Arm B now has an explicit mode switch (`arms.ARM_B_MODES`, `--arm-b-mode`,
-`ARM_B_MODE=` in `slurm_cascade_v2_pki_qwen38_array.sh`): "pipeline" = the workflow's execution step
+`ARM_B_MODE=` in `scripts/slurm/slurm_cascade_v2_pki_qwen38_array.sh`): "pipeline" = the workflow's execution step
 only (what every earlier round ran), "multiagent" = execution + the production per-table
 verify/correct loop (`PKPEPerTableVerifyCorrectStep`, never run inside the cascade yet). This round:
 Arm A `qwen3.8:27b`, Arm B / Tier 3 / judge `QWEN3.8-27B`, mode pipeline, all 9 gold papers
@@ -586,7 +586,7 @@ simple_qwen38: 151 k, 37 min).
 
 First pk_summary run with Arm A = `qwen3.8:27b` simple prompt and Arm B (pipeline mode) / Tier 3 /
 judge = `QWEN3.8-27B` (rounds 1-2 used qwen3.6 for both). Dataset `pk_summary_qwen38` (the 9 gold papers
-with source HTML; 30950674 has none), script `slurm_cascade_v2_pks_qwen38_array.sh`, job 8241591, work dir
+with source HTML; 30950674 has none), script `scripts/slurm/slurm_cascade_v2_pks_qwen38_array.sh`, job 8241591, work dir
 `.curate_agent_calibration/pk_summary_qwen38_pipeline_r6/`, scratch `cascade_v2r6_pks_pipeline_r6-8241591_*`.
 Every F1 is from this run (F1_B = the paper with Arm B's table on each escalated table).
 
@@ -704,7 +704,7 @@ multiagent_gpt54 0.855, simple_qwen38 0.853), micro P/R 0.923/0.877; 361,085 tok
 ## pk-pe pipelines - first live round of the eight other schemas (2026-11-02)
 
 The cascade now covers all ten pipelines (docs/VERIFICATION_AGENT_DESIGN.md, "All ten pipelines").
-First live run: `slurm_cascade_v2_pkpe_qwen38_array.sh`, job 8271896, one schema per array task,
+First live run: `scripts/slurm/slurm_cascade_v2_pkpe_qwen38_array.sh`, job 8271896, one schema per array task,
 Arm A = `qwen3.8:27b` on the new `prompts/simple_prompts/<schema>.md`, Arm B (pipeline mode) /
 Tier 3 / judge = `QWEN3.8-27B`, worst-tier gate at 0.2. Papers = the pk-pe benchmark set (PMC XML
 under `tabular-data-skills-route/.staging`), each schema on the papers that have that pipeline in

@@ -22,7 +22,7 @@ F1_A and F1_B come from THIS run, never from a stored collection:
 (F1_A_ref / F1_B_ref) as extra columns, for comparison only when asked.
 
 Writes <work_dir>/cascade_summary[_<pmid>].json. Needs OLLAMA_BASE_URL,
-AGENT_LLM, PIPELINE_LLM in the environment (see slurm_cascade_v2_*_array.sh).
+AGENT_LLM, PIPELINE_LLM in the environment (see scripts/slurm/slurm_cascade_v2_*_array.sh).
 Logging goes through extractor/log_utils.py (LOGS_FOLDER) via the
 calibration module's initialize_logger().
 """
