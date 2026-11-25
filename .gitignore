@@ -186,3 +186,7 @@ system_tests/data/*.md
 .pk_population_individual_scratch/
 .pe_study_info_scratch/
 .pe_study_outcome_scratch/
+
+# Slurm job stdout/stderr (job outputs are rsynced to /fs/scratch instead)
+*.out
+*.err
