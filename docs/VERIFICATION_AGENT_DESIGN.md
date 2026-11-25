@@ -250,6 +250,127 @@ skills/pk-pe-curation/curation-common/scripts/
   cost-adjusted basis (not just raw F1 — factor in how often it actually
   escalates).
 
+## v2 — per-table cascade (implemented)
+
+The v1 orchestrator above was **paper-level**: Arm A on every table, one Tier
+1–3 check on the whole `combined.csv` against all source tables at once, one
+bad table re-curating the entire paper with multi-agent mode, and the judge
+only on an exact `error_rate` tie. Live calibration (`docs/cascade_mode_results.md`)
+showed the cost of that shape on PMID 16143486: the whole-paper Tier 3 prompt
+took 3m51s and mis-reported Table 4's 32 individual measurements as "missing"
+from a pk_summary table, and the lower `error_rate` picked the worse arm
+(F1 0.76 vs 0.98) while the judge never ran.
+
+`extractor/curate_agent/curate_orchestrator.py` now runs:
+
+```
+route    PKPEIdentificationStep -> PKPEDesignStep        2 LLM calls (skipped when schemas= is given)
+select   select_pk_summary_tables()                      1 call per schema (same selector multi-agent uses)
+per table
+  Arm A  arms.run_cheap_arm_table   (run_simple_prompt.curate_table, in-process)   1 call
+  Tier 1+2+3 against THIS table's source only
+  escalate? -> Arm B  arms.run_expensive_arm_table   PKSumWorkflow/PKIndWorkflow.go_md_table
+                      execution only, no internal verify/correct loop          10-14 calls
+               Tier 1+2+3 on Arm B (Tier 1 rate excluded)
+               ComparisonJudge (Tier 4) - ALWAYS when Arm B ran               1-2 calls
+combine  per-table winners in source order -> <work_dir>/<schema>/combined.csv (+ cascade_report.json)
+```
+
+Decisions and their evidence:
+
+- **Arm B is execution-only.** Multi-agent's internal verify/correct loop,
+  measured as `multiagent` vs `pipeline` collections (same workflow, with vs
+  without the loop), moves strict macro F1 by +0.005 on pk-summary and
+  −0.002 on pk-individual, at 1–25 extra LLM calls per table. The cascade's
+  own Tier 3 + judge take over that role.
+- **Judge runs whenever Arm B ran**, not only on a tie (16143486 above).
+- **Tier 3's completeness rules are schema-aware**
+  (`llm_verification.completeness_rules_for`): per-subject rules for
+  `pk_individual` (PMID 34746508 needed them), summary-level rules for
+  `pk_summary` (16143486's gold has only Table 4's 4 mean rows).
+- **Arm B's pk_summary columns are normalized to the canonical schema**
+  (`arms.PK_SUMMARY_MULTIAGENT_TO_CANONICAL`, the same pairs
+  `benchmark/pk_preprocess.py` applies), so Tier 1's by-name lookups see real
+  values and winners from either arm concatenate.
+- **Scope**: `arms.SUPPORTED_SCHEMAS` = pk_summary, pk_individual (the two
+  with a simple prompt). Other pipelines the route step selects are returned
+  under `not_handled`.
+
+Nominal LLM calls per paper (T tables, S selected, m failing):
+not escalated `3 + 2S` (v1: `T + 1`); escalated `3 + 2S + m × [(10–14) + 1 + (1–2)]`
+(v1: `T + 2 + [1 + S×(10–14) + loop 1…25]`). 16143486 (T=S=4): v1 ≈ 48–75,
+v2 ≈ 25–30 with one failing table.
+
+Tools: `scripts/calibrate_validity_threshold.py --live --per-table` prints
+the per-table gate values (Arm A re-run per selected table) so `THRESHOLD`
+can be re-picked for per-table denominators; `scripts/run_cascade_benchmark.py`
+runs the cascade live on a dataset and scores `combined.csv` against gold.
+
+### Fixes from the first live round's Tier 4 audit (2026-10-31)
+
+Scoring the six live judge verdicts against gold (swap the escalated table's
+winner, re-score the paper) found 3 of 6 wrong, each for a reason one level
+below the judge. Three fixes, in dependency order:
+
+1. **Count-correct column shifts are repaired at parse time**
+   (`scripts/simple_prompt/_common_summary.py` / `_common.py`, `_reshift`).
+   `_realign` only ran on a field-count mismatch. On PMID 35465728 table 2 the
+   model dropped the empty `Pregnancy stage` cell and added an empty after
+   `median`, so 16 fields matched the 16 columns while `60 / Initial Cavg /
+   12.9 / mg/L / median` sat one column left of home; F1 0.000, and Tier 3
+   reported no error. `_reshift` tries every "move one empty cell" edit (up to
+   two moves), scores candidates with `_fits_strict` - `_fits` with two
+   changes that only matter inside the search: a cell that starts with a
+   digit but goes on in words ("95% CI", "3 Month to < 3 Years") is text, and
+   a label outside a column's vocabulary ("parturients" for Population) votes
+   0 rather than -1, so the search cannot "earn" a move by parking a label in
+   a free-text column - plus a row rule (`Lower limit` and `High limit` are
+   filled together or not at all). It accepts only a candidate that beats the
+   original, leaves no hard misfit, and wins outright on (score, fewer moves,
+   fewer cells displaced). Anything else leaves the row as written for Tier 1
+   to flag. In the same pass, `_realign`'s tie rule (two insert positions
+   with equal fit → drop the row) gained a tie-break toward extending an
+   existing run of empties - the slip it repairs - after a fresh reply lost 4
+   of 8 rows to a tie between "Vancomycin,,Vancomycin" and "Vancomycin,
+   Vancomycin,,". Re-parsing all 85 saved Arm A replies changed 7 tables;
+   every change was checked row by row against gold (see
+   cascade_mode_results.md).
+   A deterministic Tier 4 rule sits in front of the judge
+   (`curate_orchestrator._rule_verdict`): an empty candidate whose assessment
+   says the source has curatable data loses to a candidate with rows, no LLM
+   call; a justified empty Arm B against an Arm A with rows skips the
+   reports-only pass and goes straight to the full-table judge
+   (`compare(..., force_full_tables=True)`).
+2. **An empty table can be the correct answer**
+   (`llm_verification.assess_empty_table`, `validity_checker.check_validity`,
+   `comparison_judge`). Every zero-row table used to score `error_rate 1.0`
+   with no LLM call, and the judge read that as "complete failure". On
+   18426260 table 2 (a "Mean ± SD (Range)" table, no patient identifiers) and
+   34746508 table 3 (cases from other published studies) Arm A's empty table
+   was right and Arm B's filled table was all false positives. The gate now
+   spends one call on an empty table asking whether the source table holds
+   data of this schema's kind at all, with per-schema applicability rules
+   (group statistics and literature-review tables are not pk_individual data;
+   the latter is annotation policy and is stated in the prompt). "No" →
+   `error_rate 0`, not escalated, `tier3.empty_table_justified`; "yes" →
+   failure as before, with the rows that should have been curated recorded.
+   The judge prompts no longer claim the rates are "tied" (false since v2),
+   state that zero rows is correct when the source has no curatable data, and
+   `_format_report` prints per-tier findings plus the empty-table assessment
+   but not the composite `error_rate` - in all six live verdicts the judge did
+   nothing but compare that number, whose two sides are not even on one scale
+   (A's includes Tier 1, B's excludes it).
+3. **pk_individual gets its own table selector**
+   (`table_utils.select_pk_individual_tables`, dispatched by
+   `curate_orchestrator.select_tables`). Both schemas used the summary
+   selector ("any PK data"), which is why the two tables above were curated
+   at all. The new prompt asks for per-individual values measured in this
+   study and excludes group-statistics tables and tables of other papers'
+   cases. The production multi-agent `PKIndividualTablesCurationTool` still
+   uses the summary selector; switching it moves that benchmark's baselines
+   and is a separate decision. `run_cascade_benchmark.py --select-only` checks
+   a selector on a dataset for one call per paper.
+
 ## Open questions
 
 - **Scope for v1**: `pk_summary` only (most mature/benchmarked pipeline,
@@ -276,3 +397,100 @@ skills/pk-pe-curation/curation-common/scripts/
 - `benchmark_results/20261007-baseline-fix/` (scratch) — existing
   `simple_qwen38`/`multiagent_gemma4` pk_summary results to calibrate against
   in Phase 5.
+
+
+### Gate rule: worst tier, not the mean (2026-10-31)
+
+`check_validity`'s `error_rate` is now the maximum of the tiers' failure fractions instead of their
+mean. Reason, from pk_individual rounds 4-5: on PMID 32153014 table 2 Arm A returned 15 correct rows
+and omitted 13 (the placenta and placenta-to-maternal columns); Tier 3 reported all 13 missing rows
+(rate 13/28 = 0.46) but Tier 1 and Tier 2, which can only judge rows that exist, were 0.00, so the
+mean was 0.155 and the table was never escalated. Each tier catches a different failure (malformed
+rows, numbers not in the source, wrong or missing rows), so a failure on any one is a reason to run
+Arm B. Recomputed over every table of the latest pk_individual and pk_summary rounds, the maximum
+adds exactly two escalations (32153014 t2 and pk_summary 22050870 t3, both Tier 3 flags of 0.38-0.46)
+and no spurious ones; no other table has any tier above 0.15. The 0.2 threshold is unchanged.
+
+## All ten pipelines: per-unit cascade and the generic simple prompts (2026-11-02)
+
+Until this change the cascade ran only `pk_summary` and `pk_individual`, the two pipelines that
+had a simple prompt and a hand-written parser. The other eight now run through the same code
+path; what changed is below. Nothing in the two existing paths moved: `_common.py`,
+`_common_summary.py`, their prompts, Tier 1 rules and thresholds are untouched, and the
+pk_individual / pk_summary tests pass unchanged.
+
+### Unit of work: table or text
+
+The production tools do not all curate tables. `SKILLS_INTRO.md`'s split holds for the LangGraph
+workflows too (`extractor/agents/pk_pe_agents/pk_pe_agent_tools.py`):
+
+| pipelines | production input | cascade unit (`schema_specs.UNIT_KINDS`) |
+|---|---|---|
+| pk_summary, pk_individual, pe_study_outcome | one selected table per `go_md_table` call | `table` - one unit per selected table |
+| pk_drug_summary/individual, pk_specimen_summary/individual, pe_study_info | the article text, one `go_full_text` call (`FullTextCurationTool`) | `text` - one unit per paper |
+| pk_population_summary/individual | each selected demographic table as "markdown + caption" through `go_full_text`, or the article text when the selector finds none | `table_or_text` |
+
+`curate_orchestrator.build_units()` produces the units; `_curate_table()` (name kept) runs the
+unchanged Arm A -> Tier 1/2/3 -> Arm B -> Tier 3 -> Tier 4 sequence on each. A text unit's source
+file is `<work_dir>/source_text/full_text.md`, built by `article_text_of()` exactly as the
+production tools build theirs (sections joined, HTML and tables stripped, references cut).
+Records keep the per-table keys; a text unit has `table_index` 0 and `unit_kind` "text".
+Selectors: `select_pe_tables` for pe_study_outcome, `select_pk_demographic_tables` for the
+population pipelines (both are what the production tools call).
+
+### Schemas as data
+
+`scripts/simple_prompt/schema_specs.py` describes the eight schemas (columns in the production
+workflows' post-rename order, header aliases, numeric / text / required columns, vocabulary
+tie-breakers, unit kind). `_common_generic.SchemaParser` is `_common_summary.py`'s parser with
+those roles as parameters (realign, reshift, headerless block, dropped reporting - the same
+algorithms). `schema_registry.load_schema_module()` returns the hand-written module for the two
+legacy schemas and a `SchemaParser` otherwise; `run_simple_prompt.py`, `validity.py` and
+`arms.schema_common()` all go through it. Tier 1 scores the generic schemas with the pk_summary
+rule (numeric cells must start with a number, required identifiers must be present and not a bare
+number, no vocabulary reward; `Patient ID` is scored like pk_individual's: short is plausible),
+with the low-fit threshold at -1 like pk_summary.
+
+Two deliberate departures from the benchmark configs: `pk_population_summary` uses the
+workflow's 15 columns (benchmark/configs.py still lists a 9-column set with a Patient ID), and
+`pe_study_outcome` spells its third column `Outcome` as the ver2 workflow does (the benchmark's
+preprocess maps it onto the gold's `Outcomes`).
+
+### Prompts
+
+`prompts/simple_prompts/<schema>.md` for the eight schemas, each: header + `---` + body with the
+`{TABLE}` slot (the markdown table for a table unit, the article text for a text unit). Column
+rules are taken from the production agents' prompts (`*_info_agent.py`, `*_refine_agent.py`):
+the population / pregnancy-stage categories, "age only when explicitly stated", dose amount
+with the unit split off, sample times numeric with a separate unit, count + percentage as value
++ variation for the population and PE outcome tables, one row for pe_study_info. All write an
+empty cell (never N/A) for what the source does not state, so the parsed tables match the two
+legacy schemas and the benchmark scorers.
+
+### Tier 2, Tier 3 and the judge per schema
+
+- Tier 2 (existence) on a generic schema checks only the schema's numeric columns (plus
+  `Sample time`): label categories ("Trimester 3", "95% CI") and verbatim `Note` excerpts carry
+  digits that are not source values. pk_summary / pk_individual keep the all-columns check they
+  were calibrated with.
+- Tier 3 gets a per-schema domain string (`arms.domain_for`), per-schema completeness rules
+  (`llm_verification.TEXT_COMPLETENESS_RULES`: one row per dosing regimen / sampling scheme /
+  characteristic statistic / outcome number; exactly one row for pe_study_info) and per-schema
+  empty-table applicability rules (`TEXT_APPLICABILITY_RULES`). The empty-table prompt and the
+  judge prompts say "source table or text".
+- Arm B: `arms.get_expensive_workflow` builds the schema's production workflow;
+  `run_expensive_arm_table` calls `go_md_table` or `go_full_text` per `arms.WORKFLOW_INPUT`,
+  passing a table unit of a full-text workflow as "markdown + caption" like the population tool.
+  `normalize_to_schema` maps pre-rename workflow spellings to the canonical columns.
+
+### Evaluation data
+
+There is no manual gold for the eight pipelines. The pk-pe benchmark
+(`benchmark/test_pk_pe_benchmark_with_semantic.py`) compares two model runs
+(`benchmark/data/pk-pe/2026-4-10` qwen3.5 vs `2026-4-16` gpt-4o). `scripts/calibrate_validity_threshold.py`
+therefore defines `pkpe_<schema>_qwen38` datasets (papers = those with that pipeline in either
+version; sources = the PMC XML under `tabular-data-skills-route/.staging`, which
+`HtmlTableExtractor` parses) with a `reference` (the gpt-4o files) instead of a `gold_dir`.
+`run_cascade_benchmark.py` scores against the reference when there is no gold and labels every
+F1 column with what it was scored against. The live run is `slurm_cascade_v2_pkpe_qwen38_array.sh`
+(one schema per array task). Results: docs/cascade_mode_results.md, "pk-pe pipelines".
