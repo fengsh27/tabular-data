@@ -134,6 +134,14 @@ def _realign(row, header_names):
     gap = len(row) - len(header_names)
     if gap == 0 or abs(gap) > _MAX_GAP:
         return None
+    # candidate -> (fit total, edits that touch an existing run of empties).
+    # The second key breaks fit ties: the slip this repairs is a miscounted run
+    # of commas, so an empty inserted next to an existing empty (or an empty
+    # field dropped) is the likely truth, while an empty inserted between two
+    # non-empty cells is not. Without it, a row whose two candidates differ
+    # only in free-text (0-voting) columns - "Vancomycin,,Vancomycin" vs
+    # "Vancomycin,Vancomycin,," - ties and is dropped (4 of 8 rows on PMID
+    # 35465728, second live round).
     seen = {}
     if gap < 0:
         missing = -gap
@@ -142,19 +150,149 @@ def _realign(row, header_names):
             for pos in reversed(combo):
                 cand.insert(pos, "")
             cand = tuple(cand)
-            if cand not in seen:
-                seen[cand] = sum(_fits(n, c) for n, c in zip(header_names, cand))
+            run_edits = sum(
+                1 for pos in combo
+                if (pos > 0 and not (row[pos - 1] or "").strip())
+                or (pos < len(row) and not (row[pos] or "").strip())
+            )
+            if cand not in seen or seen[cand][1] < run_edits:
+                seen[cand] = (sum(_fits(n, c) for n, c in zip(header_names, cand)), run_edits)
     else:
         extra = gap
         for combo in itertools.combinations(range(len(row)), extra):
             drop = set(combo)
             cand = tuple(c for i, c in enumerate(row) if i not in drop)
-            if cand not in seen:
-                seen[cand] = sum(_fits(n, c) for n, c in zip(header_names, cand))
+            run_edits = sum(1 for i in combo if not (row[i] or "").strip())
+            if cand not in seen or seen[cand][1] < run_edits:
+                seen[cand] = (sum(_fits(n, c) for n, c in zip(header_names, cand)), run_edits)
     ranked = sorted(seen.items(), key=lambda kv: kv[1], reverse=True)
     if len(ranked) > 1 and ranked[0][1] == ranked[1][1]:
         return None
     return list(ranked[0][0])
+
+
+# A cell scoring this low under its column is in the wrong column (text in a
+# numeric column, a bare number as a drug or parameter name), not merely
+# unusual. Only such a row is a candidate for _reshift, and only a repair that
+# leaves no such cell behind is accepted.
+_HARD_MISFIT = -2
+
+_WORDS_RE = re.compile(r"[A-Za-z]{2,}")
+
+
+def _fits_strict(name: str, cell: str) -> int:
+    """`_fits`, except that a cell which merely *starts* with a digit and goes
+    on in words - "95% CI", "25th-75th percentiles", "3 Month to < 3 Years" -
+    is text, not a number. `_VALUE_RE` only anchors the front, so `_fits`
+    rewards "95% CI" sitting in `Lower limit` (+2) and penalises an age group
+    in `Specimen` (-2). Inside `_reshift` both are wrong: the first let a
+    half-repaired row (PMID 16143486 table 2, two segments shifted, one move
+    fixes one) pass as clean, the second triggered a needless move. Used only
+    by `_reshift`; `_fits` itself, and `_realign`/Tier 1 with it, are unchanged.
+    """
+    c = (cell or "").strip()
+    if _VALUE_RE.match(c) and _WORDS_RE.search(c):
+        if name in NUMERIC_COLS:
+            return -3
+        if name in _TEXT_COLS or name in ("Drug name", "Parameter type"):
+            return 0
+    if name in _VOCAB and c and c.lower() not in _VOCAB[name]:
+        # A label outside the whitelist ("parturients" for Population) is
+        # unusual, not structural evidence. Left at _fits' -1, the search
+        # spends a second move parking the label in a free-text column just to
+        # dodge the penalty (seen on PMID 16143486) - so it votes 0 here.
+        return 0
+    return _fits(name, cell)
+
+
+def _row_consistency(cells, names) -> int:
+    """Row-level vote `_reshift` adds to the per-cell `_fits_strict` total.
+
+    An interval has two ends: `Lower limit` filled with `High limit` empty (or
+    the reverse) is a shifted tail, not data. Per-cell scoring cannot see it -
+    "Lower='' / High=9.42 / P=16.49" and "Lower=9.42 / High=16.49 / P=''" are
+    both three plausible numeric cells - and on PMID 16143486 table 2 that
+    tie let a half repair win over the full one.
+    """
+    rec = dict(zip(names, cells))
+    lo = (rec.get("Lower limit") or "").strip()
+    hi = (rec.get("High limit") or "").strip()
+    return -2 if bool(lo) != bool(hi) else 0
+
+
+_MAX_MOVES = 2
+
+
+def _moves(cells):
+    """Every "take one existing empty cell out at e, put an empty back at p"
+    move on `cells` - i.e. shift the segment between e and p by one column.
+    Yields (candidate, cells displaced)."""
+    original = tuple(cells)
+    for e, cell in enumerate(cells):
+        if (cell or "").strip():
+            continue
+        rest = list(cells[:e]) + list(cells[e + 1:])
+        for p in range(len(rest) + 1):
+            cand = tuple(rest[:p] + [""] + rest[p:])
+            if cand != original:
+                yield cand, abs(p - e)
+
+
+def _reshift(row, names):
+    """Repair a row with the right field count whose cells are shifted.
+
+    `_realign` handles a row that is short or long. A third shape slipped past
+    it on PMID 35465728 (pk_summary, table 2): the model dropped the empty
+    `Pregnancy stage` cell and wrote an extra empty after `median`, so the
+    count matched the header while `60 / Initial Cavg / 12.9 / mg/L / median`
+    all sat one column left of home - a whole table of confidently wrong rows
+    that scored 0 against gold, with Tier 3 reporting no error.
+
+    Candidates are up to `_MAX_MOVES` such moves (PMID 16143486 table 2 has
+    two shifted segments per row, one dropped comma in each). Each candidate
+    is scored by `_fits_strict` per cell plus `_row_consistency`. Accept the
+    best candidate only when it (a) beats the original row, (b) leaves no cell
+    at or below `_HARD_MISFIT`, and (c) wins outright on (score, fewer moves,
+    fewer cells displaced) - candidates that differ only in where an empty
+    lands among free-text (0-voting) columns tie on score, and the one that
+    disturbs the row least is the one the model's slip actually produced. On
+    anything else return None and the caller keeps the row as written, so
+    Tier 1 flags it exactly as before.
+    """
+    if len(row) != len(names):
+        return None
+
+    def score(cells):
+        per_cell = [_fits_strict(n, c) for n, c in zip(names, cells)]
+        return sum(per_cell) + _row_consistency(cells, names), min(per_cell)
+
+    base_total, base_min = score(row)
+    if base_min > _HARD_MISFIT:
+        return None
+    original = tuple(row)
+    seen = {}  # candidate -> (total, min cell fit, moves, cells displaced)
+    frontier = [(original, 0, 0)]
+    for depth in range(1, _MAX_MOVES + 1):
+        next_frontier = []
+        for cells, _, displaced in frontier:
+            for cand, moved in _moves(cells):
+                key = (depth, displaced + moved)
+                if cand == original or (cand in seen and seen[cand][2:] <= key):
+                    continue
+                total, lowest = score(cand)
+                seen[cand] = (total, lowest, depth, displaced + moved)
+                next_frontier.append((cand, depth, displaced + moved))
+        frontier = next_frontier
+    if not seen:
+        return None
+    ranked = sorted(seen.items(), key=lambda kv: (-kv[1][0], kv[1][2], kv[1][3]))
+    best, (best_total, best_min, best_moves, best_displaced) = ranked[0]
+    if best_total <= base_total or best_min <= _HARD_MISFIT:
+        return None
+    if len(ranked) > 1 and ranked[1][1][0] == best_total \
+            and ranked[1][1][2:] == (best_moves, best_displaced):
+        return None
+    return list(best)
 
 
 def parse_csv(text: str, pmid: str = "", dropped=None):
@@ -162,6 +300,10 @@ def parse_csv(text: str, pmid: str = "", dropped=None):
 
     `pmid` is accepted-but-unused so this has the same call signature as
     _common.parse_csv (the schema has no PMID column to strip).
+
+    A row whose field count mismatches the header goes through `_realign`; a
+    row with the right count but a cell clearly in the wrong column goes
+    through `_reshift`. Neither invents data - both only move empties.
     """
     text = strip_fences(strip_reasoning(text or ""))
     lines = [ln for ln in text.splitlines() if ln.strip()]
@@ -183,11 +325,15 @@ def parse_csv(text: str, pmid: str = "", dropped=None):
     if header is None:
         return _parse_headerless(lines, dropped=dropped)
 
-    body_rows = [r for r in csv.reader(io.StringIO("\n".join(lines[start:])))
+    body_rows = [_pop_trailing_empties(r) for r in csv.reader(io.StringIO("\n".join(lines[start:])))
                  if r and any(c.strip() for c in r)]
 
     if len(header) != len(COLS):
-        full = sum(1 for r in body_rows if len(r) == len(COLS))
+        # The model dropped a name from the header but wrote full-width rows
+        # (34183327: a 15-name header over 16/17-field rows): the rows are
+        # positional on the canonical schema, so read them as such. A row one
+        # field too long is a stray empty that _realign removes.
+        full = sum(1 for r in body_rows if len(r) in (len(COLS), len(COLS) + 1))
         if full >= max(2, len(body_rows) // 2):
             header = list(COLS)
 
@@ -195,8 +341,7 @@ def parse_csv(text: str, pmid: str = "", dropped=None):
     for row in body_rows:
         if _map_headers(row):  # a repeated header block
             continue
-        while len(row) > len(header) and not row[-1].strip():
-            row.pop()
+        row = _pop_trailing_empties(row, len(header))
         if len(row) != len(header):
             fixed = _realign(row, header)
             if fixed is None:
@@ -204,6 +349,10 @@ def parse_csv(text: str, pmid: str = "", dropped=None):
                     dropped.append(row)
                 continue
             row = fixed
+        else:
+            fixed = _reshift(row, header)
+            if fixed is not None:
+                row = fixed
 
         rec = {c: "" for c in COLS}
         for name, cell in zip(header, row):
@@ -214,7 +363,25 @@ def parse_csv(text: str, pmid: str = "", dropped=None):
     return out
 
 
+def _pop_trailing_empties(row, width=None):
+    """Drop empty fields past the schema width (a trailing comma per row is
+    the commonest way a model ends up one field too wide)."""
+    width = len(COLS) if width is None else width
+    row = list(row)
+    while len(row) > width and not row[-1].strip():
+        row.pop()
+    return row
+
+
 def _parse_headerless(lines, dropped=None):
+    """Bare data rows with no header line, read by column position.
+
+    At least two rows must be exactly schema-width (after trailing empties are
+    dropped) to count as a CSV block; otherwise nothing is parsed and every
+    comma-bearing line is reported in `dropped`, so a lost table is visible to
+    Tier 1 instead of silently becoming an empty one (30825333 table 3: eight
+    17-field rows parsed to nothing and nothing dropped).
+    """
     parsed = []
     for line in lines:
         if "," not in line:
@@ -223,20 +390,27 @@ def _parse_headerless(lines, dropped=None):
             row = next(csv.reader([line]))
         except Exception:
             continue
-        parsed.append(row)
+        parsed.append(_pop_trailing_empties(row))
 
     exact = sum(1 for r in parsed if len(r) == len(COLS))
     if exact < 2:
+        if dropped is not None:
+            dropped.extend(parsed)
         return []
 
     rows = []
     for row in parsed:
         if len(row) != len(COLS):
-            row = _realign(row, COLS)
-            if row is None:
+            fixed = _realign(row, COLS)
+            if fixed is None:
                 if dropped is not None:
                     dropped.append(row)
                 continue
+            row = fixed
+        else:
+            fixed = _reshift(row, COLS)
+            if fixed is not None:
+                row = fixed
         rec = {c: clean(cell) for c, cell in zip(COLS, row)}
         if any(rec.values()):
             rows.append(rec)

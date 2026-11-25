@@ -1,16 +1,18 @@
 """Post-hoc Tier-1 structural/plausibility scoring for a finished curated CSV.
 
 `_common.py`/`_common_summary.py` already score per-cell plausibility via
-`_fits()`, but only as a private helper `_realign()` uses at parse time, to
-pick the least-bad gap-insertion when a model's output row is short a field.
-This module re-exposes a scoring rule as a standalone, importable check
-runnable against *any* finished CSV on the pk_individual or pk_summary
-schema - including one that never went through this project's own
-parse_csv() at all, e.g. the multi-agent pipeline's output - not just the
-simple-prompt arm's own output.
+`_fits()`, but only as a private helper their parse-time repairs use:
+`_realign()` picks the least-bad gap-insertion when a model's output row is
+short (or long) a field, and `_reshift()` moves one empty cell when the count
+is right but a cell is clearly in the wrong column (PMID 35465728). This
+module re-exposes a scoring rule as a standalone, importable check runnable
+against *any* finished CSV on the pk_individual or pk_summary schema -
+including one that never went through this project's own parse_csv() at
+all, e.g. the multi-agent pipeline's output - not just the simple-prompt
+arm's own output.
 
-Parsing itself is unchanged: `_common.py`/`_common_summary.py` keep using
-their own private `_fits`/`_realign` exactly as before. Nothing here rewrites,
+Parsing itself lives in `_common.py`/`_common_summary.py`, which keep using
+their own private `_fits`/`_realign`/`_reshift`. Nothing here rewrites,
 drops, or realigns a row - it only scores what is already on disk.
 
 For pk_summary, this module's own score deliberately diverges from
@@ -50,15 +52,20 @@ and `_structural_fits()` below fixes both:
   writing "N/A" for "not applicable" is not a sign of a structural error.
 
 pk_individual is NOT changed here - this hasn't been investigated against
-real pk_individual data the way pk_summary was, and pk_individual isn't
-wired into the live cascade (`curate_orchestrator.SUPPORTED_SCHEMAS`) at all
-yet, so there's no decision this would currently affect either way.
+real pk_individual data the way pk_summary was.
+
+The eight generic schemas (schema_specs.SPECS: pk_drug_*, pk_specimen_*,
+pk_population_*, pe_study_info, pe_study_outcome) take the pk_summary rule:
+numeric columns must start with a number (an "N/A"-style placeholder is
+blank), the schema's required identifier columns must not be blank or a bare
+number, its text columns must not be a bare number, and vocabulary columns
+are not scored. The column roles come from the spec, so a new schema needs
+no code here.
 """
 
 from __future__ import annotations
 
 import csv
-import importlib
 import os
 import sys
 
@@ -66,7 +73,9 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 # Same schema -> module mapping run_simple_prompt.py uses, so --schema picks
 # the same column set / _fits() rule here as it does during parsing.
-SCHEMA_MODULES = {"pk_individual": "_common", "pk_summary": "_common_summary"}
+from schema_registry import ALL_SCHEMAS, SPECS, load_schema_module  # noqa: E402
+
+SCHEMA_MODULES = {schema: schema for schema in ALL_SCHEMAS}
 
 # A model writing "not applicable" this way is not reporting garbage - treat
 # it the same as a blank cell. See module docstring.
@@ -74,13 +83,11 @@ _NA_LIKE = {"n/a", "na", "n / a", "none", "not applicable"}
 
 
 def _schema_module(schema: str):
-    try:
-        mod_name = SCHEMA_MODULES[schema]
-    except KeyError:
+    if schema not in SCHEMA_MODULES:
         raise ValueError(
             f"unknown schema {schema!r}; expected one of {sorted(SCHEMA_MODULES)}"
         )
-    return importlib.import_module(mod_name)
+    return load_schema_module(schema)
 
 
 def schema_columns(schema: str) -> list[str]:
@@ -92,8 +99,9 @@ def _structural_fits(schema: str, name: str, cell: str) -> int:
     """Tier 1's own per-cell score - see module docstring for why this isn't
     just `mod._fits()` for pk_summary. pk_individual is unchanged."""
     mod = _schema_module(schema)
-    if schema != "pk_summary":
+    if schema == "pk_individual":
         return mod._fits(name, cell)
+    required = ("Drug name", "Parameter type") if schema == "pk_summary" else SPECS[schema].required_cols
 
     c = (cell or "").strip()
     if c.lower() in _NA_LIKE:
@@ -103,7 +111,11 @@ def _structural_fits(schema: str, name: str, cell: str) -> int:
         if not c:
             return 0
         return 2 if mod._VALUE_RE.match(c) else -3
-    if name in ("Drug name", "Parameter type"):
+    if name == "Patient ID":  # an identifier is usually a number: short is plausible, long is not
+        if not c:
+            return -1 if name in required else 0
+        return -2 if len(c.split()) > 2 else 1
+    if name in required:
         if not c:
             return -1
         return -2 if mod._VALUE_RE.match(c) else 0

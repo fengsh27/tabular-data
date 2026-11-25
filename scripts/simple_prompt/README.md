@@ -1,15 +1,20 @@
-# simple-prompt experiment (pk-individual)
+# simple-prompt experiment (pk-individual, pk-summary, and the eight other pipelines)
 
-Measures the fast path of the two-tier strategy: **one model call per table**,
-no decomposition, no verification — against `ollama_skills`' 15-stage pipeline.
-Both arms read the same tables, so the only variable is the prompt.
+Measures the fast path of the two-tier strategy: **one model call per unit**
+(a table, or the paper's full text for the full-text pipelines), no
+decomposition, no verification — against the multi-stage pipelines. Both arms
+read the same input, so the only variable is the prompt.
 
 ## Files
 
 | file | role |
 |---|---|
-| `_common.py` | parses model output into the canonical 13-column schema. Strips `<think>` blocks and code fences, maps every spelling of *missing* to `""`, and melts wide `parameter1/value1/...` output to long. |
-| `run_simple_prompt.py` | renders the prompt per table and calls Ollama. |
+| `_common.py` | parses model output into the canonical pk-individual schema. Strips `<think>` blocks and code fences, maps every spelling of *missing* to `""`, and melts wide `parameter1/value1/...` output to long. |
+| `_common_summary.py` | the same for the 16-column pk-summary schema (realign / reshift repairs, headerless blocks). |
+| `schema_specs.py` | the eight other schemas (pk_drug_*, pk_specimen_*, pk_population_*, pe_study_info, pe_study_outcome) as data: columns, header aliases, numeric / text / required columns, unit kind (table or full text). |
+| `_common_generic.py` | `SchemaParser`: `_common_summary.py`'s parser parametrised by a spec. |
+| `schema_registry.py` | `load_schema_module(schema)`: the hand-written module for the two legacy schemas, a `SchemaParser` otherwise. Used by the runner, `validity.py` and the cascade's arms. |
+| `run_simple_prompt.py` | renders the prompt per unit and calls Ollama. `--schema` picks the schema; a full-text schema reads `<scratch>/<pmid>/full_text.md` instead of `table_*/`. |
 | `score_pk_individual.py` | scores predictions against the manual gold. No LLM, no network. |
 | `aliases.py` | vocabulary equivalences, used only with `--aliases`. |
 
