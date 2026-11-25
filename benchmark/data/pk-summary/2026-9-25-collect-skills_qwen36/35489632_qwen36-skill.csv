@@ -1,0 +1,9 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter value,Parameter statistic,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+Meropenem,Meropenem,Plasma,Critically ill pediatric patients without ARC,N/A,N/A,28,Cmid (unbound plasma meropenem concentration at mid-dosing interval),mg/L,19.9,Geometric mean,N/A,N/A,95% CI,13.5,29.5,N/A,N/A,N/A
+Meropenem,Meropenem,Plasma,Critically ill pediatric patients with ARC,N/A,N/A,26,Cmid (unbound plasma meropenem concentration at mid-dosing interval),mg/L,14.8,Geometric mean,N/A,N/A,95% CI,11.4,19.1,N/A,N/A,N/A
+Meropenem,Meropenem,Plasma,Critically ill pediatric patients without ARC,N/A,N/A,28,Ctrough (unbound plasma meropenem concentration at end-dosing interval),mg/L,3.5,Geometric mean,N/A,N/A,95% CI,2.0,6.1,N/A,N/A,N/A
+Meropenem,Meropenem,Plasma,Critically ill pediatric patients with ARC,N/A,N/A,26,Ctrough (unbound plasma meropenem concentration at end-dosing interval),mg/L,1.6,Geometric mean,N/A,N/A,95% CI,1.0,2.6,N/A,N/A,N/A
+Meropenem,Meropenem,Plasma,Critically ill pediatric patients without ARC,N/A,N/A,11,Cmid (unbound plasma meropenem concentration at mid-dosing interval),mg/L,4.9,Geometric mean,N/A,N/A,95% CI,2.6,9.2,N/A,N/A,N/A
+Meropenem,Meropenem,Plasma,Critically ill pediatric patients with ARC,N/A,N/A,7,Cmid (unbound plasma meropenem concentration at mid-dosing interval),mg/L,1.9,Geometric mean,N/A,N/A,95% CI,0.4,9.6,N/A,N/A,N/A
+Meropenem,Meropenem,Plasma,Critically ill pediatric patients without ARC,N/A,N/A,11,Ctrough (unbound plasma meropenem concentration at end-dosing interval),mg/L,0.8,Geometric mean,N/A,N/A,95% CI,0.4,1.6,N/A,N/A,N/A
+Meropenem,Meropenem,Plasma,Critically ill pediatric patients with ARC,N/A,N/A,7,Ctrough (unbound plasma meropenem concentration at end-dosing interval),mg/L,0.9,Geometric mean,N/A,N/A,95% CI,0.2,4.2,N/A,N/A,N/A

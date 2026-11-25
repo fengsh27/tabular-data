@@ -1,0 +1,16 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+Case 1,Infliximab (IFX),Infliximab,Maternal peripheral blood,Maternal,Parturition/Labor/Delivery,38w0d,Maternal blood concentration,ng/ml,Not measured,N/A,N/A
+Case 2,Infliximab (IFX),Infliximab,Maternal peripheral blood,Maternal,Parturition/Labor/Delivery,38w3d,Maternal blood concentration,ng/ml,Not measured,N/A,N/A
+Case 3,Infliximab (IFX),Infliximab,Maternal peripheral blood,Maternal,Parturition/Labor/Delivery,38w5d,Maternal blood concentration,ng/ml,Not measured,N/A,N/A
+Case 4,Infliximab (IFX),Infliximab,Maternal peripheral blood,Maternal,Parturition/Labor/Delivery,38w3d,Maternal blood concentration,ng/ml,Not measured,N/A,N/A
+Case 5,Ustekinumab (UST),Ustekinumab,Maternal peripheral blood,Maternal,Parturition/Labor/Delivery,38w0d,Maternal blood concentration,ng/ml,267.7 ng/ml,N/A,N/A
+Case 1,Infliximab (IFX),Infliximab,Cord blood,Maternal,Parturition/Labor/Delivery,38w0d,Cord blood concentration,μg/ml,36.89 μg/ml,N/A,N/A
+Case 2,Infliximab (IFX),Infliximab,Cord blood,Maternal,Parturition/Labor/Delivery,38w3d,Cord blood concentration,ng/ml,Not measured,N/A,N/A
+Case 3,Infliximab (IFX),Infliximab,Cord blood,Maternal,Parturition/Labor/Delivery,38w5d,Cord blood concentration,ng/ml,Not measured,N/A,N/A
+Case 4,Infliximab (IFX),Infliximab,Cord blood,Maternal,Parturition/Labor/Delivery,38w3d,Cord blood concentration,ng/ml,Not measured,N/A,N/A
+Case 5,Ustekinumab (UST),Ustekinumab,Cord blood,Maternal,Parturition/Labor/Delivery,38w0d,Cord blood concentration,ng/ml,756.5 ng/ml,N/A,N/A
+Case 1,Infliximab (IFX),Infliximab,Infant peripheral blood,Maternal,Parturition/Labor/Delivery,38w0d,Infant blood concentration at 6 months,pg/ml,0.94 pg/ml,N/A,N/A
+Case 2,Infliximab (IFX),Infliximab,Infant peripheral blood,Maternal,Parturition/Labor/Delivery,38w3d,Infant blood concentration at 6 months,pg/ml,Not detected,N/A,N/A
+Case 3,Infliximab (IFX),Infliximab,Infant peripheral blood,Maternal,Parturition/Labor/Delivery,38w5d,Infant blood concentration at 6 months,pg/ml,0.24 pg/ml,N/A,N/A
+Case 4,Infliximab (IFX),Infliximab,Infant peripheral blood,Maternal,Parturition/Labor/Delivery,38w3d,Infant blood concentration at 6 months,pg/ml,Not detected,N/A,N/A
+Case 5,Ustekinumab (UST),Ustekinumab,Infant peripheral blood,Maternal,Parturition/Labor/Delivery,38w0d,Infant blood concentration at 6 months,pg/ml,Not detected,N/A,N/A

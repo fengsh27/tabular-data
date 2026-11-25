@@ -1,0 +1,7 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter value,Parameter statistic,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+Lorazepam,Lorazepam,Serum,Elective Cohort,N/A,N/A,15,Cmax,ng/mL,56.1,Mean,SD,44.9,Range,29.3,209.6,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Elective Cohort,N/A,N/A,15,AUC0-∞,ng·h/mL,822.5,Mean,SD,706.1,Range,253.3,3202.5,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Elective Cohort,N/A,N/A,15,CL,mL/min/kg,49.33,Mean,SD,30.83,Range,3.33,131.50,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Elective Cohort,N/A,N/A,15,CL,mL/min/m,31.95,Mean,SD,13.99,Range,5.5,67.5,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Elective Cohort,N/A,N/A,15,Vdz,L/kg,1.92,Mean,SD,0.84,Range,0.33,4.05,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Elective Cohort,N/A,N/A,15,T1/2,hr,20.5,Mean,SD,10.2,Range,9.5,47.0,N/A,N/A,N/A

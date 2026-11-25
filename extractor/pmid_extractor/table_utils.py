@@ -157,6 +157,98 @@ def select_pk_summary_tables(html_tables: list[dict[str, str | DataFrame]], llm)
     return tables, res.selected_table_indexes, reasoning_process, token_usage
 
 
+SELECT_PK_INDIVIDUAL_TABLES_PROMPT = ChatPromptTemplate.from_template("""
+You are a biomedical data assistant specializing in pharmacokinetics (PK).
+Your task is to carefully analyze the provided content and **identify all tables that report pharmacokinetic data for INDIVIDUAL subjects** - values measured in this study and reported per patient, per subject, per case, or per mother-infant pair, as opposed to group summary statistics.
+
+---
+
+### **Inclusion Criteria**
+
+Select a table only if it reports, **for individual subjects of this study**, any of the following:
+
+* **Drug concentration measurements** in biological matrices (plasma, serum, urine, cord blood, breast milk, amniotic fluid, CSF, tissues), one value per individual - including per-individual null findings such as "Not measured", "Not detected", "ND", "BLQ" or "-".
+* **PK parameters** (AUC, Cmax, Tmax, half-life, clearance, volume of distribution, elimination rate, ...) with one value per individual.
+* **Ratios of concentrations** (milk-to-plasma, cord-to-maternal, mother-to-infant, metabolite-to-parent, level-to-dose) with one value per individual.
+
+Typical shapes: one row per individual ("Patient 1 ... Patient 11", "Case 1 ... Case 5", "Subject A ..."); one column per individual; or individuals x time points. The identifier may be a number, a case label, or a mother-infant pair.
+
+---
+
+### **Exclusion Criteria**
+
+Do **not** include tables that:
+
+* Report only **group summary statistics** - mean ± SD, median [IQR], range, geometric mean, CI, n (%) - with no per-individual values. A table titled "Mean ... of ..." with no subject identifiers is NOT individual data.
+* Summarise **cases or results from other published studies** (a citation or author-year column such as "Author et al. 2016", "ref. [12]"). Those are not this paper's own measurements.
+* Focus only on **patient demographics and baseline characteristics**, **dosing schedules without measured values**, **treatment groups or study arm information**, or **non-PK safety outcomes**.
+* Primarily present **regression models**, **covariate analyses**, **population PK (PopPK) modeling results**, **statistical modeling**, or **correlational analyses**.
+
+---
+
+### **Input**
+
+The content includes one or more tables in markdown format. Each table is preceded by a unique identifier like `"table_1"`, `"table_2"`, etc.
+{table_content}
+---
+
+### **Your Output Format**
+
+You output **must be** in json compact format, it **must exactly match** the following schema:
+{{
+    "reasoning_process": <string, a concise explanation of the thought process or reasoning steps taken to reach a conclusion (no more than 200 words)>,
+    "selected_table_indexes": <list[str], a python list of selected table indexes without fences (like '```python' or '```')>
+}}
+
+Do not include any explanations or extra output.
+
+---
+
+### **Output Example**
+
+```json
+{{
+    "reasoning_process": "Table 1 lists plasma levels per patient (Patient 1-11); Table 2 reports only mean ± SD level-to-dose ratios with no patient identifiers, so it is excluded.",
+    "selected_table_indexes": ["1"]
+}}
+```
+
+---
+
+""")
+
+
+def select_pk_individual_tables(html_tables: list[dict[str, str | DataFrame]], llm):
+    """Tables with per-individual PK data (one value per subject / case /
+    mother-infant pair measured in this study). Same machinery as
+    `select_pk_summary_tables`, different inclusion rules: group-statistics
+    tables and literature-review tables are excluded. Added after the
+    CurateAgent cascade's Tier 4 audit (docs/cascade_mode_results.md), where
+    the summary selector kept a "Mean ± SD (Range)" table (PMID 18426260) and
+    a table of cases from other publications (PMID 34746508) for pk_individual
+    curation and both arms then disagreed over tables that should never have
+    been curated."""
+    table_content = generate_tables_prompts(html_tables, True)
+    system_prompt = SELECT_PK_INDIVIDUAL_TABLES_PROMPT.format(table_content=table_content)
+
+    agent = get_common_agent(llm=llm)
+    result = agent.go(
+        system_prompt=system_prompt,
+        instruction_prompt=INSTRUCTION_PROMPT,
+        schema=TablesSelectionResult,
+        post_process=post_process_selected_table_ids,
+        html_tables=html_tables,
+    )
+    res: TablesSelectionResult = result[0]
+    tables = result[1]
+    token_usage = result[2]
+    reasoning_process = get_reasoning_process(result)
+    logger.info(f"Selected pk_individual tables (indices): {res.selected_table_indexes}")
+    logger.info(f"Reason: {reasoning_process}")
+
+    return tables, res.selected_table_indexes, reasoning_process, token_usage
+
+
 SELECT_DEMOGRAPHIC_TABLES_PROMPT = ChatPromptTemplate.from_template("""
 Analyze the provided content and identify all tables related to patient demographic data or baseline clinical characteristics. The goal is to capture the initial profile of the study population, not the results or outcomes of the study. These tables are often the first ones a publication and typically labeled with titles such as:
  · Patient Demographics

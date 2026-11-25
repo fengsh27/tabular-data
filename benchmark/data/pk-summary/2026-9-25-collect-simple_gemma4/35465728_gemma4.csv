@@ -1,0 +1,9 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation type,Variation value,Interval type,Lower limit,High limit,P value
+Vancomycin,Vancomycin,,neonates,,60,Cavg,12.9,mg/L,median,,,25th-75th percentiles,11.3,17.0,<0.001
+Vancomycin,Vancomycin,,neonates,,59,Cavg,20.3,mg/L,median,,,25th-75th percentiles,17.0,22.2,<0.001
+Vancomycin,Vancomycin,,neonates,,116,Cavg,13.1,mg/L,median,,,25th-75th percentiles,11.3,16.2,<0.001
+Vancomycin,Vancomycin,,neonates,,103,Cavg,19.8,mg/L,median,,,25th-75th percentiles,16.8,22.1,<0.001
+Vancomycin,Vancomycin,,neonates,,22,Cavg/MIC ratio,8.8,,median,,,25th-75th percentiles,6.2,11.5,0.004
+Vancomycin,Vancomycin,,neonates,,17,Cavg/MIC ratio,12.8,,median,,,25th-75th percentiles,10.9,20.9,0.004
+Vancomycin,Vancomycin,,neonates,,22,AUC/MIC ratio,211,,median,,,25th-75th percentiles,149,275,0.006
+Vancomycin,Vancomycin,,neonates,,17,AUC/MIC ratio,307,,median,,,25th-75th percentiles,262,502,0.006

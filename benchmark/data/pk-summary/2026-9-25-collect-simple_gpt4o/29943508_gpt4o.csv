@@ -1,0 +1,7 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation type,Variation value,Interval type,Lower limit,High limit,P value
+Fentanyl,Fentanyl,umbilical vein,maternal,delivery,16,serum concentration,0.162,nmol/L,mean,SD,0.090,range,-0.042,0.065,0.67
+Fentanyl,Fentanyl,umbilical vein,maternal,delivery,20,serum concentration,0.151,nmol/L,mean,SD,0.070,range,-0.042,0.065,0.67
+Fentanyl,Fentanyl,maternal serum,maternal,delivery,16,serum concentration,0.268,nmol/L,median,,,25th-75th percentiles,0.193,0.493,0.66
+Fentanyl,Fentanyl,maternal serum,maternal,delivery,19,serum concentration,0.291,nmol/L,median,,,25th-75th percentiles,0.212,0.502,0.66
+Fentanyl,Fentanyl,maternal serum,maternal,delivery,18,AUC 0‐120 min,0.428,nmol h/L,mean,SD,0.162,range,-0.289,-0.034,0.015
+Fentanyl,Fentanyl,maternal serum,maternal,delivery,15,AUC 0‐120 min,0.590,nmol h/L,mean,SD,0.197,range,-0.289,-0.034,0.015

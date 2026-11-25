@@ -25,7 +25,6 @@ Add --dry-run to render the prompts without contacting the model.
 from __future__ import annotations
 
 import argparse
-import importlib
 import json
 import os
 import re
@@ -38,13 +37,18 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 sys.path.insert(0, REPO_ROOT)
 
-# --schema picks the column set / parser: pk_individual (default, _common.py)
-# or pk_summary (_common_summary.py). Both expose the same parse_csv/write_csv/
-# COLS surface, so the rest of this script does not need to know which one it
-# got.
-SCHEMA_MODULES = {"pk_individual": "_common", "pk_summary": "_common_summary"}
+# --schema picks the column set / parser: pk_individual (default, _common.py),
+# pk_summary (_common_summary.py), or one of the eight schemas described in
+# schema_specs.py and parsed by _common_generic.SchemaParser. All expose the
+# same parse_csv/write_csv/COLS surface (schema_registry.load_schema_module),
+# so the rest of this script does not need to know which one it got.
+from schema_registry import ALL_SCHEMAS, UNIT_KINDS, load_schema_module  # noqa: E402
+
+SCHEMA_MODULES = {schema: schema for schema in ALL_SCHEMAS}  # kept for callers that list schemas
 
 TABLE_FILES = ("00_markdown_table.md", "inputs.md")
+# A full-text schema's one unit per paper: the prepared article text.
+FULL_TEXT_FILES = ("full_text.md", "paper_text.md", "inputs.md")
 
 # backend name -> (display label, extractor.request_openai factory function name)
 AZURE_BACKENDS = {
@@ -135,10 +139,78 @@ def call_azure_chat(client, prompt, label, retries=2):
     raise RuntimeError(f"{label} call failed after {retries + 1} tries: {last}")
 
 
-def find_tables(scratch: str, pmid: str):
-    """The table directories the skill selected, with the file to feed the model."""
+def render_prompt(template: str, pmid: str, table_text: str) -> str:
+    return template.replace("{PMID}", pmid).replace("{TABLE}", table_text)
+
+
+def curate_table(template, pmid, table_text, common, *, base_url=None, model=None,
+                 temperature=0.0, num_ctx=32768, timeout=900,
+                 call_fn=None, retry_without_think=True) -> dict:
+    """One simple-mode pass on one table: render the prompt, call the model,
+    parse the CSV. This is the unit the CurateAgent cascade runs per table
+    (extractor/curate_agent/arms.py); main() runs it in a loop.
+
+    `call_fn(prompt, **kw) -> body` overrides the model call (Azure backends,
+    tests); the default is call_ollama with the given connection settings.
+    A thinking model can burn its whole budget inside <think>...</think> and
+    never reach an answer - "response" comes back empty while "thinking"
+    holds what it wrote - so an empty response is retried once with
+    think=False, unless `retry_without_think` is off (non-thinking backends).
+    The same retry fires when the response parses to no rows at all (a
+    header line and nothing else: qwen3.8 did this on pk_summary tables after
+    thousands of thinking tokens, 2026-10-31), since that is indistinguishable
+    from the empty case for the caller.
+
+    Returns {"rows", "dropped", "raw", "thinking", "prompt", "elapsed_seconds",
+    "retried_no_think", "input_tokens", "output_tokens"}; "thinking" is the
+    model's reasoning text when the backend returns it (kept for diagnosis).
+    """
+    prompt = render_prompt(template, pmid, table_text)
+    if call_fn is None:
+        def call_fn(p, **kw):
+            return call_ollama(base_url, model, p, temperature, num_ctx, timeout, **kw)
+
+    t0 = time.time()
+    body = call_fn(prompt)
+    raw = body.get("response", "")
+    thinking = body.get("thinking", "") or ""
+    dropped = []
+    rows = common.parse_csv(raw, pmid=pmid, dropped=dropped)
+    retried = False
+    if not rows and not dropped and retry_without_think:
+        body = call_fn(prompt, think=False)
+        raw = body.get("response", "")
+        thinking = thinking or (body.get("thinking", "") or "")
+        dropped = []
+        rows = common.parse_csv(raw, pmid=pmid, dropped=dropped)
+        retried = True
+    elapsed = time.time() - t0
+
+    return {
+        "rows": rows, "dropped": dropped, "raw": raw, "thinking": thinking, "prompt": prompt,
+        "elapsed_seconds": elapsed, "retried_no_think": retried,
+        "input_tokens": body.get("prompt_eval_count"),
+        "output_tokens": body.get("eval_count"),
+    }
+
+
+def find_tables(scratch: str, pmid: str, schema: str = "pk_individual"):
+    """The table directories the skill selected, with the file to feed the model.
+
+    For a full-text schema (`UNIT_KINDS[schema] == "text"`) the paper's one
+    unit is `<scratch>/<pmid>/full_text.md` (or paper_text.md / inputs.md),
+    reported under the name "full_text" so the output files line up with the
+    cascade's (`arms.run_cheap_arm_table` writes the same shape).
+    """
     root = os.path.join(scratch, pmid)
     found = []
+    if UNIT_KINDS.get(schema) == "text":
+        for candidate in FULL_TEXT_FILES:
+            path = os.path.join(root, candidate)
+            if os.path.exists(path) and os.path.getsize(path) > 0:
+                return [("full_text", path, candidate)]
+        print(f"  [warn] {pmid}: no full-text file ({', '.join(FULL_TEXT_FILES)}), skipped")
+        return []
     for name in sorted(os.listdir(root)):
         tdir = os.path.join(root, name)
         if not os.path.isdir(tdir) or not name.startswith("table"):
@@ -158,8 +230,10 @@ def main() -> int:
     ap.add_argument("--prompt", required=True)
     ap.add_argument("--scratch", required=True, help="a .pk_individual_scratch tree")
     ap.add_argument("--out", required=True)
-    ap.add_argument("--schema", choices=sorted(SCHEMA_MODULES), default="pk_individual",
-                    help="column set / parser to use (default: pk_individual)")
+    ap.add_argument("--schema", choices=sorted(ALL_SCHEMAS), default="pk_individual",
+                    help="column set / parser to use (default: pk_individual). Full-text schemas "
+                         "(pk_drug_*, pk_specimen_*, pe_study_info) read <scratch>/<pmid>/full_text.md "
+                         "as their one 'table'")
     ap.add_argument("--backend", choices=["ollama", *AZURE_BACKENDS], default="ollama",
                     help="model backend: local Ollama server (default), or an "
                          "Azure chat deployment (gpt4o, gpt54) via extractor.request_openai")
@@ -174,7 +248,7 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
-    common = importlib.import_module(SCHEMA_MODULES[args.schema])
+    common = load_schema_module(args.schema)
     base_url = resolve_base_url(args.base_url) if args.backend == "ollama" else None
     template = load_prompt(args.prompt)
     if "{TABLE}" not in template:
@@ -209,77 +283,62 @@ def main() -> int:
     for pmid in pmids:
         pdir = os.path.join(args.out, pmid)
         os.makedirs(pdir, exist_ok=True)
-        tables = find_tables(args.scratch, pmid)
+        tables = find_tables(args.scratch, pmid, args.schema)
         print(f"[{pmid}] {len(tables)} table(s): {', '.join(t[0] for t in tables)}")
 
         rows = []
         for tname, tpath, source in tables:
             raw_path = os.path.join(pdir, f"{tname}.raw.txt")
-            prompt = template.replace("{PMID}", pmid).replace(
-                "{TABLE}", open(tpath, encoding="utf-8").read()
-            )
+            table_text = open(tpath, encoding="utf-8").read()
 
             if args.dry_run:
                 open(os.path.join(pdir, f"{tname}.prompt.txt"), "w",
-                     encoding="utf-8").write(prompt)
+                     encoding="utf-8").write(render_prompt(template, pmid, table_text))
                 continue
 
-            body = {}
-            elapsed_seconds = None
             if args.resume and os.path.exists(raw_path):
                 raw = open(raw_path, encoding="utf-8").read()
+                dropped = []
+                result = {"rows": common.parse_csv(raw, pmid=pmid, dropped=dropped),
+                          "dropped": dropped, "retried_no_think": False,
+                          "input_tokens": None, "output_tokens": None, "elapsed_seconds": None}
                 note = "cached"
-                retried = False
             else:
-                t0 = time.time()
                 try:
                     if args.backend in AZURE_BACKENDS:
-                        body = call_azure_chat(client, prompt, AZURE_BACKENDS[args.backend][0])
+                        label = AZURE_BACKENDS[args.backend][0]
+                        result = curate_table(
+                            template, pmid, table_text, common,
+                            call_fn=lambda p, **kw: call_azure_chat(client, p, label),
+                            retry_without_think=False,  # not a thinking model
+                        )
                     else:
-                        body = call_ollama(base_url, args.model, prompt,
-                                           args.temperature, args.num_ctx, args.timeout)
+                        result = curate_table(
+                            template, pmid, table_text, common,
+                            base_url=base_url, model=args.model, temperature=args.temperature,
+                            num_ctx=args.num_ctx, timeout=args.timeout,
+                        )
                 except Exception as exc:  # noqa: BLE001
                     print(f"  [error] {tname}: {exc}")
                     manifest.append({"pmid": pmid, "table": tname, "error": str(exc)})
                     continue
-                raw = body.get("response", "")
-                retried = False
-                if not raw.strip() and args.backend == "ollama":
-                    # A thinking model can burn its whole budget inside
-                    # <think>...</think> and never reach an answer; "response"
-                    # comes back empty while "thinking" holds what it wrote.
-                    # think=False skips the reasoning trace so the model
-                    # writes the CSV directly instead of running out first.
-                    # (gpt-4o is not a thinking model in this setup - no
-                    # equivalent retry needed there.)
-                    thinking_len = len(body.get("thinking", "") or "")
-                    reason = body.get("done_reason", "?")
-                    print(f"  [empty] {tname}: response empty after {time.time()-t0:.0f}s "
-                          f"(done_reason={reason}, {thinking_len} thinking chars) "
-                          f"-> retrying with think=false")
-                    body = call_ollama(base_url, args.model, prompt,
-                                       args.temperature, args.num_ctx, args.timeout,
-                                       think=False)
-                    raw = body.get("response", "")
-                    retried = True
-                elapsed_seconds = time.time() - t0
-                open(raw_path, "w", encoding="utf-8").write(raw)
-                note = f"{elapsed_seconds:.0f}s"
-                if retried:
+                open(raw_path, "w", encoding="utf-8").write(result["raw"])
+                note = f"{result['elapsed_seconds']:.0f}s"
+                if result["retried_no_think"]:
                     note += ", think=false retry"
 
-            dropped = []
-            parsed = common.parse_csv(raw, pmid=pmid, dropped=dropped)
+            parsed, dropped = result["rows"], result["dropped"]
             rows.extend(parsed)
             lost = f", {len(dropped)} unparsable" if dropped else ""
             print(f"  {tname}: {len(parsed)} rows ({note}, from {source}){lost}")
             for bad in dropped:
                 print(f"    [dropped] {len(bad)} fields: {','.join(bad)[:110]}")
+            elapsed_seconds = result["elapsed_seconds"]
             manifest.append({"pmid": pmid, "table": tname, "source": source,
                              "rows": len(parsed), "dropped": len(dropped),
-                             "retried_no_think": retried,
-                             "input_tokens": body.get("prompt_eval_count"),
-                             "output_tokens": body.get("eval_count"),
+                             "retried_no_think": result["retried_no_think"],
+                             "input_tokens": result["input_tokens"],
+                             "output_tokens": result["output_tokens"],
                              "elapsed_seconds": (
                                  round(elapsed_seconds, 3) if elapsed_seconds is not None else None
                              )})

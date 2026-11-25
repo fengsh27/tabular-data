@@ -1,0 +1,73 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter value,Parameter statistic,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+Lorazepam,Lorazepam,Serum,Elective Cohort (pediatric patients with a history of seizures),N/A,N/A,15,Cmax,ng/mL,N/A,N/A,N/A,N/A,Range,29.3,209.6,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Elective Cohort (pediatric patients with a history of seizures),N/A,N/A,15,AUC0-∞,ng·h/mL,N/A,N/A,N/A,N/A,Range,253.3,3202.5,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Elective Cohort (pediatric patients with a history of seizures),N/A,N/A,15,CL,mL/min/kg,N/A,N/A,N/A,N/A,Range,3.33,131.50,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Elective Cohort (pediatric patients with a history of seizures),N/A,N/A,15,CL,mL/min/m,N/A,N/A,N/A,N/A,Range,5.5,67.5,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Elective Cohort (pediatric patients with a history of seizures),N/A,N/A,15,Vdz,L/kg,N/A,N/A,N/A,N/A,Range,0.33,4.05,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Elective Cohort (pediatric patients with a history of seizures),N/A,N/A,15,t½,hr,N/A,N/A,N/A,N/A,Range,9.5,47.0,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Elective Cohort (pediatric patients with a history of seizures),N/A,N/A,15,Cmax,ng/mL,56.1,Mean,SD,44.9,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Elective Cohort (pediatric patients with a history of seizures),N/A,N/A,15,AUC0-∞,ng·h/mL,822.5,Mean,SD,706.1,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Elective Cohort (pediatric patients with a history of seizures),N/A,N/A,15,CL,mL/min/kg,49.33,Mean,SD,30.83,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Elective Cohort (pediatric patients with a history of seizures),N/A,N/A,15,CL,mL/min/m,31.95,Mean,SD,13.99,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Elective Cohort (pediatric patients with a history of seizures),N/A,N/A,15,Vdz,L/kg,1.92,Mean,SD,0.84,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Elective Cohort (pediatric patients with a history of seizures),N/A,N/A,15,t½,hr,20.5,Mean,SD,10.2,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Elective Cohort (pediatric patients with a history of seizures),N/A,N/A,15,Cmax,ng/mL,42.2,Median,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Elective Cohort (pediatric patients with a history of seizures),N/A,N/A,15,AUC0-∞,ng·h/mL,601.5,Median,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Elective Cohort (pediatric patients with a history of seizures),N/A,N/A,15,CL,mL/min/kg,41.50,Median,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Elective Cohort (pediatric patients with a history of seizures),N/A,N/A,15,CL,mL/min/m,32.34,Median,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Elective Cohort (pediatric patients with a history of seizures),N/A,N/A,15,Vdz,L/kg,1.94,Median,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Elective Cohort (pediatric patients with a history of seizures),N/A,N/A,15,t½,hr,18.1,Median,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,All subjects (Status and Elective cohorts),N/A,N/A,61,Free Fraction,unitless,N/A,N/A,N/A,N/A,Range,0.07,0.48,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,All subjects (Status and Elective cohorts),N/A,N/A,61,Free Fraction,unitless,0.10,Mean,SD,0.05,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,All subjects (Status and Elective cohorts),N/A,N/A,61,Free Fraction,unitless,0.09,Median,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,All subjects (Status and Elective cohorts),N/A,N/A,63,CL,mL/min/kg,N/A,N/A,N/A,N/A,Range,0.3,7.75,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,All subjects (Status and Elective cohorts),N/A,N/A,63,CL,mL/min/kg,1.2,Mean,SD,0.93,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,All subjects (Status and Elective cohorts),N/A,N/A,63,CL,mL/min/kg,1.08,Median,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,All subjects (Status and Elective cohorts),N/A,N/A,63,CL,mL/min/m,N/A,N/A,N/A,N/A,Range,6.50,147.17,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,All subjects (Status and Elective cohorts),N/A,N/A,63,CL,mL/min/m,33.33,Mean,SD,19.33,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,All subjects (Status and Elective cohorts),N/A,N/A,63,CL,mL/min/m,29.00,Median,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,All subjects (Status and Elective cohorts),N/A,N/A,63,Vdss,L/kg,N/A,N/A,N/A,N/A,Range,0.49,3.40,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,All subjects (Status and Elective cohorts),N/A,N/A,63,Vdss,L/kg,1.48,Mean,SD,0.54,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,All subjects (Status and Elective cohorts),N/A,N/A,63,Vdss,L/kg,1.37,Median,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,All subjects (Status and Elective cohorts),N/A,N/A,63,Beta,1/hr,N/A,N/A,N/A,N/A,Range,0.017,0.118,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,All subjects (Status and Elective cohorts),N/A,N/A,63,Beta,1/hr,0.048,Mean,SD,0.020,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,All subjects (Status and Elective cohorts),N/A,N/A,63,Beta,1/hr,0.046,Median,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,All subjects (Status and Elective cohorts),N/A,N/A,63,t½,hr,N/A,N/A,N/A,N/A,Range,5.9,42.0,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,All subjects (Status and Elective cohorts),N/A,N/A,63,t½,hr,16.8,Mean,SD,7.1,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,All subjects (Status and Elective cohorts),N/A,N/A,63,t½,hr,15.1,Median,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Infants and young children,N/A,3 months to <3 years,17,Free Fraction,unitless,N/A,N/A,N/A,N/A,Range,0.07,0.48,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Infants and young children,N/A,3 months to <3 years,17,Free Fraction,unitless,0.11,Mean,SD,0.10,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Infants and young children,N/A,3 months to <3 years,18,CL,mL/min/kg,N/A,N/A,N/A,N/A,Range,0.63,7.75,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Infants and young children,N/A,3 months to <3 years,18,CL,mL/min/kg,1.57,Mean,SD,1.62,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Infants and young children,N/A,3 months to <3 years,18,CL,mL/min/m,N/A,N/A,N/A,N/A,Range,12.83,147.17,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Infants and young children,N/A,3 months to <3 years,18,CL,mL/min/m,32.83,Mean,SD,30.17,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Infants and young children,N/A,3 months to <3 years,18,Vdss,L/kg,N/A,N/A,N/A,N/A,Range,0.67,3.40,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Infants and young children,N/A,3 months to <3 years,18,Vdss,L/kg,1.62,Mean,SD,0.59,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Infants and young children,N/A,3 months to <3 years,18,Beta,1/hr,N/A,N/A,N/A,N/A,Range,0.024,0.118,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Infants and young children,N/A,3 months to <3 years,18,Beta,1/hr,0.053,Mean,SD,0.027,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Infants and young children,N/A,3 months to <3 years,18,t½,hr,N/A,N/A,N/A,N/A,Range,5.9,28.4,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Infants and young children,N/A,3 months to <3 years,18,t½,hr,15.8,Mean,SD,6.5,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Children,N/A,3 to <13 years,28,Free Fraction,unitless,N/A,N/A,N/A,N/A,Range,0.07,0.17,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Children,N/A,3 to <13 years,28,Free Fraction,unitless,0.10,Mean,SD,0.02,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Children,N/A,3 to <13 years,29,CL,mL/min/kg,N/A,N/A,N/A,N/A,Range,0.30,1.82,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Children,N/A,3 to <13 years,29,CL,mL/min/kg,1.12,Mean,SD,0.40,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Children,N/A,3 to <13 years,29,CL,mL/min/m,N/A,N/A,N/A,N/A,Range,6.50,69.17,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Children,N/A,3 to <13 years,29,CL,mL/min/m,31.83,Mean,SD,13.83,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Children,N/A,3 to <13 years,29,Vdss,L/kg,N/A,N/A,N/A,N/A,Range,0.49,3.00,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Children,N/A,3 to <13 years,29,Vdss,L/kg,1.50,Mean,SD,0.61,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Children,N/A,3 to <13 years,29,Beta,1/hr,N/A,N/A,N/A,N/A,Range,0.017,0.092,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Children,N/A,3 to <13 years,29,Beta,1/hr,0.048,Mean,SD,0.017,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Children,N/A,3 to <13 years,29,t½,hr,N/A,N/A,N/A,N/A,Range,7.5,40.6,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Children,N/A,3 to <13 years,29,t½,hr,16.9,Mean,SD,7.4,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Adolescents,N/A,13 to <18 years,16,Free Fraction,unitless,N/A,N/A,N/A,N/A,Range,0.07,0.15,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Adolescents,N/A,13 to <18 years,16,Free Fraction,unitless,0.09,Mean,SD,0.02,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Adolescents,N/A,13 to <18 years,16,CL,mL/min/kg,N/A,N/A,N/A,N/A,Range,0.43,1.58,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Adolescents,N/A,13 to <18 years,16,CL,mL/min/kg,0.95,Mean,SD,0.32,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Adolescents,N/A,13 to <18 years,16,CL,mL/min/m,N/A,N/A,N/A,N/A,Range,16.33,60.00,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Adolescents,N/A,13 to <18 years,16,CL,mL/min/m,36.67,Mean,SD,12.00,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Adolescents,N/A,13 to <18 years,16,Vdss,L/kg,N/A,N/A,N/A,N/A,Range,1.00,1.54,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Adolescents,N/A,13 to <18 years,16,Vdss,L/kg,1.27,Mean,SD,0.17,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Adolescents,N/A,13 to <18 years,16,Beta,1/hr,N/A,N/A,N/A,N/A,Range,0.017,0.084,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Adolescents,N/A,13 to <18 years,16,Beta,1/hr,0.044,Mean,SD,0.016,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Adolescents,N/A,13 to <18 years,16,t½,hr,N/A,N/A,N/A,N/A,Range,8.2,42.0,N/A,N/A,N/A
+Lorazepam,Lorazepam,Serum,Adolescents,N/A,13 to <18 years,16,t½,hr,17.8,Mean,SD,7.7,N/A,N/A,N/A,N/A,N/A,N/A

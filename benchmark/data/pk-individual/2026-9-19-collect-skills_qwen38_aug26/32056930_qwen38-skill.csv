@@ -1,0 +1,171 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+1,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 5,Maternal serum VEN concentration,ng/mL,5,4.5,Hour
+2,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 4,Maternal serum VEN concentration,ng/mL,15.8,16,Hour
+3,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 1,Maternal serum VEN concentration,ng/mL,18.2,10,Hour
+4,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Maternal serum VEN concentration,ng/mL,2*,4,Hour
+5,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Maternal serum VEN concentration,ng/mL,86.3,2.5,Hour
+6,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 2,Maternal serum VEN concentration,ng/mL,21,3,Hour
+7,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 2,Maternal serum VEN concentration,ng/mL,18.5,22,Hour
+8,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 0,Maternal serum VEN concentration,ng/mL,2*,5,Hour
+9,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 3,Maternal serum VEN concentration,ng/mL,201,9.5,Hour
+1,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 5,Maternal serum ODVEN concentration,ng/mL,85,4.5,Hour
+2,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 4,Maternal serum ODVEN concentration,ng/mL,208,16,Hour
+3,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 1,Maternal serum ODVEN concentration,ng/mL,197,10,Hour
+4,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Maternal serum ODVEN concentration,ng/mL,31.9,4,Hour
+5,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Maternal serum ODVEN concentration,ng/mL,190,2.5,Hour
+6,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 2,Maternal serum ODVEN concentration,ng/mL,281,3,Hour
+7,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 2,Maternal serum ODVEN concentration,ng/mL,271,22,Hour
+8,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 0,Maternal serum ODVEN concentration,ng/mL,45.3,5,Hour
+9,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 3,Maternal serum ODVEN concentration,ng/mL,137,9.5,Hour
+1,Venlafaxine,Active moiety (AM = VEN+ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 5,Maternal serum AM concentration,ng/mL,90,4.5,Hour
+2,Venlafaxine,Active moiety (AM = VEN+ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 4,Maternal serum AM concentration,ng/mL,223.8,16,Hour
+3,Venlafaxine,Active moiety (AM = VEN+ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 1,Maternal serum AM concentration,ng/mL,215.2,10,Hour
+4,Venlafaxine,Active moiety (AM = VEN+ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Maternal serum AM concentration,ng/mL,33.9,4,Hour
+5,Venlafaxine,Active moiety (AM = VEN+ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Maternal serum AM concentration,ng/mL,276.3,2.5,Hour
+6,Venlafaxine,Active moiety (AM = VEN+ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 2,Maternal serum AM concentration,ng/mL,302,3,Hour
+7,Venlafaxine,Active moiety (AM = VEN+ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 2,Maternal serum AM concentration,ng/mL,289.5,22,Hour
+8,Venlafaxine,Active moiety (AM = VEN+ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 0,Maternal serum AM concentration,ng/mL,47.3,5,Hour
+9,Venlafaxine,Active moiety (AM = VEN+ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 3,Maternal serum AM concentration,ng/mL,338,9.5,Hour
+1,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 5,Maternal serum C/D VEN,(ng/mL)/(mg/day),0.13,4.5,Hour
+2,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 4,Maternal serum C/D VEN,(ng/mL)/(mg/day),0.11,16,Hour
+3,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 1,Maternal serum C/D VEN,(ng/mL)/(mg/day),0.12,10,Hour
+4,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Maternal serum C/D VEN,(ng/mL)/(mg/day),0.05,4,Hour
+5,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Maternal serum C/D VEN,(ng/mL)/(mg/day),0.77,2.5,Hour
+6,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 2,Maternal serum C/D VEN,(ng/mL)/(mg/day),0.28,3,Hour
+7,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 2,Maternal serum C/D VEN,(ng/mL)/(mg/day),0.25,22,Hour
+8,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 0,Maternal serum C/D VEN,(ng/mL)/(mg/day),0.03,5,Hour
+9,Venlafaxine,Venlafaxine (VEN),Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 3,Maternal serum C/D VEN,(ng/mL)/(mg/day),0.89,9.5,Hour
+1,Venlafaxine,O-desmethylvenlafaxine (ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 5,Maternal serum C/D ODVEN,(ng/mL)/(mg/day),2.27,4.5,Hour
+2,Venlafaxine,O-desmethylvenlafaxine (ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 4,Maternal serum C/D ODVEN,(ng/mL)/(mg/day),1.39,16,Hour
+3,Venlafaxine,O-desmethylvenlafaxine (ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 1,Maternal serum C/D ODVEN,(ng/mL)/(mg/day),1.31,10,Hour
+4,Venlafaxine,O-desmethylvenlafaxine (ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Maternal serum C/D ODVEN,(ng/mL)/(mg/day),0.85,4,Hour
+5,Venlafaxine,O-desmethylvenlafaxine (ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Maternal serum C/D ODVEN,(ng/mL)/(mg/day),1.69,2.5,Hour
+6,Venlafaxine,O-desmethylvenlafaxine (ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 2,Maternal serum C/D ODVEN,(ng/mL)/(mg/day),3.75,3,Hour
+7,Venlafaxine,O-desmethylvenlafaxine (ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 2,Maternal serum C/D ODVEN,(ng/mL)/(mg/day),3.61,22,Hour
+8,Venlafaxine,O-desmethylvenlafaxine (ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 0,Maternal serum C/D ODVEN,(ng/mL)/(mg/day),0.6,5,Hour
+9,Venlafaxine,O-desmethylvenlafaxine (ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 3,Maternal serum C/D ODVEN,(ng/mL)/(mg/day),0.61,9.5,Hour
+1,Venlafaxine,Active moiety (AM = VEN+ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 5,Maternal serum C/D AM,(ng/mL)/(mg/day),2.4,4.5,Hour
+2,Venlafaxine,Active moiety (AM = VEN+ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 4,Maternal serum C/D AM,(ng/mL)/(mg/day),1.49,16,Hour
+3,Venlafaxine,Active moiety (AM = VEN+ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 1,Maternal serum C/D AM,(ng/mL)/(mg/day),1.43,10,Hour
+4,Venlafaxine,Active moiety (AM = VEN+ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Maternal serum C/D AM,(ng/mL)/(mg/day),0.9,4,Hour
+5,Venlafaxine,Active moiety (AM = VEN+ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Maternal serum C/D AM,(ng/mL)/(mg/day),2.46,2.5,Hour
+6,Venlafaxine,Active moiety (AM = VEN+ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 2,Maternal serum C/D AM,(ng/mL)/(mg/day),4.03,3,Hour
+7,Venlafaxine,Active moiety (AM = VEN+ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 2,Maternal serum C/D AM,(ng/mL)/(mg/day),3.86,22,Hour
+8,Venlafaxine,Active moiety (AM = VEN+ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 0,Maternal serum C/D AM,(ng/mL)/(mg/day),0.63,5,Hour
+9,Venlafaxine,Active moiety (AM = VEN+ODVEN),Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 3,Maternal serum C/D AM,(ng/mL)/(mg/day),1.5,9.5,Hour
+2,Venlafaxine,Venlafaxine (VEN),Amniotic fluid,Maternal,Parturition/Labor/Delivery,38 + 4,Amniotic fluid VEN concentration,ng/mL,50.5,16,Hour
+5,Venlafaxine,Venlafaxine (VEN),Amniotic fluid,Maternal,Parturition/Labor/Delivery,39 + 4,Amniotic fluid VEN concentration,ng/mL,68.5,2.5,Hour
+6,Venlafaxine,Venlafaxine (VEN),Amniotic fluid,Maternal,Parturition/Labor/Delivery,38 + 2,Amniotic fluid VEN concentration,ng/mL,40.3,3,Hour
+7,Venlafaxine,Venlafaxine (VEN),Amniotic fluid,Maternal,Parturition/Labor/Delivery,37 + 2,Amniotic fluid VEN concentration,ng/mL,45.6,22,Hour
+9,Venlafaxine,Venlafaxine (VEN),Amniotic fluid,Maternal,Parturition/Labor/Delivery,37 + 3,Amniotic fluid VEN concentration,ng/mL,404,9.5,Hour
+2,Venlafaxine,Venlafaxine (VEN),Amniotic fluid,Maternal,Parturition/Labor/Delivery,38 + 4,Amniotic fluid ODVEN concentration,ng/mL,1002,16,Hour
+5,Venlafaxine,Venlafaxine (VEN),Amniotic fluid,Maternal,Parturition/Labor/Delivery,39 + 4,Amniotic fluid ODVEN concentration,ng/mL,241,2.5,Hour
+6,Venlafaxine,Venlafaxine (VEN),Amniotic fluid,Maternal,Parturition/Labor/Delivery,38 + 2,Amniotic fluid ODVEN concentration,ng/mL,922,3,Hour
+7,Venlafaxine,Venlafaxine (VEN),Amniotic fluid,Maternal,Parturition/Labor/Delivery,37 + 2,Amniotic fluid ODVEN concentration,ng/mL,677,22,Hour
+9,Venlafaxine,Venlafaxine (VEN),Amniotic fluid,Maternal,Parturition/Labor/Delivery,37 + 3,Amniotic fluid ODVEN concentration,ng/mL,385,9.5,Hour
+2,Venlafaxine,Active moiety (AM = VEN+ODVEN),Amniotic fluid,Maternal,Parturition/Labor/Delivery,38 + 4,Amniotic fluid AM concentration,ng/mL,1052.5,16,Hour
+5,Venlafaxine,Active moiety (AM = VEN+ODVEN),Amniotic fluid,Maternal,Parturition/Labor/Delivery,39 + 4,Amniotic fluid AM concentration,ng/mL,309.5,2.5,Hour
+6,Venlafaxine,Active moiety (AM = VEN+ODVEN),Amniotic fluid,Maternal,Parturition/Labor/Delivery,38 + 2,Amniotic fluid AM concentration,ng/mL,962.3,3,Hour
+7,Venlafaxine,Active moiety (AM = VEN+ODVEN),Amniotic fluid,Maternal,Parturition/Labor/Delivery,37 + 2,Amniotic fluid AM concentration,ng/mL,722.6,22,Hour
+9,Venlafaxine,Active moiety (AM = VEN+ODVEN),Amniotic fluid,Maternal,Parturition/Labor/Delivery,37 + 3,Amniotic fluid AM concentration,ng/mL,789,9.5,Hour
+1,Venlafaxine,Venlafaxine (VEN),Cord blood,Maternal,Parturition/Labor/Delivery,38 + 5,Cord blood VEN concentration,ng/mL,5,4.5,Hour
+2,Venlafaxine,Venlafaxine (VEN),Cord blood,Maternal,Parturition/Labor/Delivery,38 + 4,Cord blood VEN concentration,ng/mL,28,16,Hour
+3,Venlafaxine,Venlafaxine (VEN),Cord blood,Maternal,Parturition/Labor/Delivery,39 + 1,Cord blood VEN concentration,ng/mL,23.4,10,Hour
+4,Venlafaxine,Venlafaxine (VEN),Cord blood,Maternal,Parturition/Labor/Delivery,39 + 4,Cord blood VEN concentration,ng/mL,2*,4,Hour
+5,Venlafaxine,Venlafaxine (VEN),Cord blood,Maternal,Parturition/Labor/Delivery,39 + 4,Cord blood VEN concentration,ng/mL,84.4,2.5,Hour
+6,Venlafaxine,Venlafaxine (VEN),Cord blood,Maternal,Parturition/Labor/Delivery,38 + 2,Cord blood VEN concentration,ng/mL,26.9,3,Hour
+7,Venlafaxine,Venlafaxine (VEN),Cord blood,Maternal,Parturition/Labor/Delivery,37 + 2,Cord blood VEN concentration,ng/mL,19,22,Hour
+8,Venlafaxine,Venlafaxine (VEN),Cord blood,Maternal,Parturition/Labor/Delivery,39 + 0,Cord blood VEN concentration,ng/mL,2*,5,Hour
+9,Venlafaxine,Venlafaxine (VEN),Cord blood,Maternal,Parturition/Labor/Delivery,37 + 3,Cord blood VEN concentration,ng/mL,157,9.5,Hour
+1,Venlafaxine,Venlafaxine (VEN),Cord blood,Maternal,Parturition/Labor/Delivery,38 + 5,Cord blood ODVEN concentration,ng/mL,84,4.5,Hour
+2,Venlafaxine,Venlafaxine (VEN),Cord blood,Maternal,Parturition/Labor/Delivery,38 + 4,Cord blood ODVEN concentration,ng/mL,315,16,Hour
+3,Venlafaxine,Venlafaxine (VEN),Cord blood,Maternal,Parturition/Labor/Delivery,39 + 1,Cord blood ODVEN concentration,ng/mL,425,10,Hour
+4,Venlafaxine,Venlafaxine (VEN),Cord blood,Maternal,Parturition/Labor/Delivery,39 + 4,Cord blood ODVEN concentration,ng/mL,19.1,4,Hour
+5,Venlafaxine,Venlafaxine (VEN),Cord blood,Maternal,Parturition/Labor/Delivery,39 + 4,Cord blood ODVEN concentration,ng/mL,204,2.5,Hour
+6,Venlafaxine,Venlafaxine (VEN),Cord blood,Maternal,Parturition/Labor/Delivery,38 + 2,Cord blood ODVEN concentration,ng/mL,290,3,Hour
+7,Venlafaxine,Venlafaxine (VEN),Cord blood,Maternal,Parturition/Labor/Delivery,37 + 2,Cord blood ODVEN concentration,ng/mL,317,22,Hour
+8,Venlafaxine,Venlafaxine (VEN),Cord blood,Maternal,Parturition/Labor/Delivery,39 + 0,Cord blood ODVEN concentration,ng/mL,52.5,5,Hour
+9,Venlafaxine,Venlafaxine (VEN),Cord blood,Maternal,Parturition/Labor/Delivery,37 + 3,Cord blood ODVEN concentration,ng/mL,134,9.5,Hour
+1,Venlafaxine,Active moiety (AM = VEN+ODVEN),Cord blood,Maternal,Parturition/Labor/Delivery,38 + 5,Cord blood AM concentration,ng/mL,89,4.5,Hour
+2,Venlafaxine,Active moiety (AM = VEN+ODVEN),Cord blood,Maternal,Parturition/Labor/Delivery,38 + 4,Cord blood AM concentration,ng/mL,343,16,Hour
+3,Venlafaxine,Active moiety (AM = VEN+ODVEN),Cord blood,Maternal,Parturition/Labor/Delivery,39 + 1,Cord blood AM concentration,ng/mL,448.4,10,Hour
+4,Venlafaxine,Active moiety (AM = VEN+ODVEN),Cord blood,Maternal,Parturition/Labor/Delivery,39 + 4,Cord blood AM concentration,ng/mL,21.1,4,Hour
+5,Venlafaxine,Active moiety (AM = VEN+ODVEN),Cord blood,Maternal,Parturition/Labor/Delivery,39 + 4,Cord blood AM concentration,ng/mL,288.4,2.5,Hour
+6,Venlafaxine,Active moiety (AM = VEN+ODVEN),Cord blood,Maternal,Parturition/Labor/Delivery,38 + 2,Cord blood AM concentration,ng/mL,316.9,3,Hour
+7,Venlafaxine,Active moiety (AM = VEN+ODVEN),Cord blood,Maternal,Parturition/Labor/Delivery,37 + 2,Cord blood AM concentration,ng/mL,336,22,Hour
+8,Venlafaxine,Active moiety (AM = VEN+ODVEN),Cord blood,Maternal,Parturition/Labor/Delivery,39 + 0,Cord blood AM concentration,ng/mL,54.5,5,Hour
+9,Venlafaxine,Active moiety (AM = VEN+ODVEN),Cord blood,Maternal,Parturition/Labor/Delivery,37 + 3,Cord blood AM concentration,ng/mL,291,9.5,Hour
+1,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 5,Penetration ratio VEN CB/MS,unitless,1.0,4.5,Hour
+2,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 4,Penetration ratio VEN CB/MS,unitless,1.77,16,Hour
+3,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 1,Penetration ratio VEN CB/MS,unitless,1.29,10,Hour
+4,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Penetration ratio VEN CB/MS,unitless,1.0,4,Hour
+5,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Penetration ratio VEN CB/MS,unitless,0.98,2.5,Hour
+6,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 2,Penetration ratio VEN CB/MS,unitless,1.28,3,Hour
+7,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 2,Penetration ratio VEN CB/MS,unitless,1.03,22,Hour
+8,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 0,Penetration ratio VEN CB/MS,unitless,1.0,5,Hour
+9,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 3,Penetration ratio VEN CB/MS,unitless,0.78,9.5,Hour
+1,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 5,Penetration ratio ODVEN CB/MS,unitless,0.99,4.5,Hour
+2,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 4,Penetration ratio ODVEN CB/MS,unitless,1.51,16,Hour
+3,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 1,Penetration ratio ODVEN CB/MS,unitless,2.16,10,Hour
+4,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Penetration ratio ODVEN CB/MS,unitless,0.6,4,Hour
+5,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Penetration ratio ODVEN CB/MS,unitless,1.07,2.5,Hour
+6,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 2,Penetration ratio ODVEN CB/MS,unitless,1.03,3,Hour
+7,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 2,Penetration ratio ODVEN CB/MS,unitless,1.17,22,Hour
+8,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 0,Penetration ratio ODVEN CB/MS,unitless,1.16,5,Hour
+9,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 3,Penetration ratio ODVEN CB/MS,unitless,0.98,9.5,Hour
+1,Venlafaxine,Active moiety (AM = VEN+ODVEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 5,Penetration ratio AM CB/MS,unitless,0.99,4.5,Hour
+2,Venlafaxine,Active moiety (AM = VEN+ODVEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 4,Penetration ratio AM CB/MS,unitless,1.53,16,Hour
+3,Venlafaxine,Active moiety (AM = VEN+ODVEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 1,Penetration ratio AM CB/MS,unitless,2.08,10,Hour
+4,Venlafaxine,Active moiety (AM = VEN+ODVEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Penetration ratio AM CB/MS,unitless,0.62,4,Hour
+5,Venlafaxine,Active moiety (AM = VEN+ODVEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Penetration ratio AM CB/MS,unitless,1.04,2.5,Hour
+6,Venlafaxine,Active moiety (AM = VEN+ODVEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 2,Penetration ratio AM CB/MS,unitless,1.05,3,Hour
+7,Venlafaxine,Active moiety (AM = VEN+ODVEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 2,Penetration ratio AM CB/MS,unitless,1.16,22,Hour
+8,Venlafaxine,Active moiety (AM = VEN+ODVEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 0,Penetration ratio AM CB/MS,unitless,1.15,5,Hour
+9,Venlafaxine,Active moiety (AM = VEN+ODVEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 3,Penetration ratio AM CB/MS,unitless,0.86,9.5,Hour
+2,Venlafaxine,Active moiety (AM = VEN+ODVEN),Amniotic fluid / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 4,Penetration ratio AM AF/MS,unitless,4.7,16,Hour
+5,Venlafaxine,Active moiety (AM = VEN+ODVEN),Amniotic fluid / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Penetration ratio AM AF/MS,unitless,1.12,2.5,Hour
+6,Venlafaxine,Active moiety (AM = VEN+ODVEN),Amniotic fluid / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 2,Penetration ratio AM AF/MS,unitless,3.19,3,Hour
+7,Venlafaxine,Active moiety (AM = VEN+ODVEN),Amniotic fluid / Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 2,Penetration ratio AM AF/MS,unitless,2.5,22,Hour
+9,Venlafaxine,Active moiety (AM = VEN+ODVEN),Amniotic fluid / Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 3,Penetration ratio AM AF/MS,unitless,2.33,9.5,Hour
+2,Venlafaxine,Venlafaxine (VEN),Amniotic fluid / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 4,Penetration ratio VEN AF/MS,unitless,3.2,N/A,N/A
+5,Venlafaxine,Venlafaxine (VEN),Amniotic fluid / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Penetration ratio VEN AF/MS,unitless,0.79,N/A,N/A
+6,Venlafaxine,Venlafaxine (VEN),Amniotic fluid / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 2,Penetration ratio VEN AF/MS,unitless,1.92,N/A,N/A
+7,Venlafaxine,Venlafaxine (VEN),Amniotic fluid / Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 2,Penetration ratio VEN AF/MS,unitless,2.46,N/A,N/A
+9,Venlafaxine,Venlafaxine (VEN),Amniotic fluid / Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 3,Penetration ratio VEN AF/MS,unitless,2.01,N/A,N/A
+2,Venlafaxine,Venlafaxine (VEN),Amniotic fluid / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 4,Penetration ratio ODVEN AF/MS,unitless,4.82,N/A,N/A
+5,Venlafaxine,Venlafaxine (VEN),Amniotic fluid / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Penetration ratio ODVEN AF/MS,unitless,1.27,N/A,N/A
+6,Venlafaxine,Venlafaxine (VEN),Amniotic fluid / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 2,Penetration ratio ODVEN AF/MS,unitless,3.28,N/A,N/A
+7,Venlafaxine,Venlafaxine (VEN),Amniotic fluid / Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 2,Penetration ratio ODVEN AF/MS,unitless,2.5,N/A,N/A
+9,Venlafaxine,Venlafaxine (VEN),Amniotic fluid / Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 3,Penetration ratio ODVEN AF/MS,unitless,2.81,N/A,N/A
+2,Venlafaxine,Venlafaxine (VEN),Amniotic fluid / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 4,Penetration ratio VEN+ODVEN AF/MS,unitless,4.7,N/A,N/A
+5,Venlafaxine,Venlafaxine (VEN),Amniotic fluid / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Penetration ratio VEN+ODVEN AF/MS,unitless,1.12,N/A,N/A
+6,Venlafaxine,Venlafaxine (VEN),Amniotic fluid / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 2,Penetration ratio VEN+ODVEN AF/MS,unitless,3.19,N/A,N/A
+7,Venlafaxine,Venlafaxine (VEN),Amniotic fluid / Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 2,Penetration ratio VEN+ODVEN AF/MS,unitless,2.5,N/A,N/A
+9,Venlafaxine,Venlafaxine (VEN),Amniotic fluid / Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 3,Penetration ratio VEN+ODVEN AF/MS,unitless,2.33,N/A,N/A
+1,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 5,Penetration ratio VEN CB/MS,unitless,1.0,N/A,N/A
+2,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 4,Penetration ratio VEN CB/MS,unitless,1.77,N/A,N/A
+3,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 1,Penetration ratio VEN CB/MS,unitless,1.29,N/A,N/A
+4,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Penetration ratio VEN CB/MS,unitless,1.0,N/A,N/A
+5,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Penetration ratio VEN CB/MS,unitless,0.98,N/A,N/A
+6,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 2,Penetration ratio VEN CB/MS,unitless,1.28,N/A,N/A
+7,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 2,Penetration ratio VEN CB/MS,unitless,1.03,N/A,N/A
+8,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 0,Penetration ratio VEN CB/MS,unitless,1.0,N/A,N/A
+9,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 3,Penetration ratio VEN CB/MS,unitless,0.78,N/A,N/A
+1,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 5,Penetration ratio ODVEN CB/MS,unitless,0.99,N/A,N/A
+2,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 4,Penetration ratio ODVEN CB/MS,unitless,1.51,N/A,N/A
+3,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 1,Penetration ratio ODVEN CB/MS,unitless,2.16,N/A,N/A
+4,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Penetration ratio ODVEN CB/MS,unitless,0.6,N/A,N/A
+5,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Penetration ratio ODVEN CB/MS,unitless,1.07,N/A,N/A
+6,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 2,Penetration ratio ODVEN CB/MS,unitless,1.03,N/A,N/A
+7,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 2,Penetration ratio ODVEN CB/MS,unitless,1.17,N/A,N/A
+8,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 0,Penetration ratio ODVEN CB/MS,unitless,1.16,N/A,N/A
+9,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 3,Penetration ratio ODVEN CB/MS,unitless,0.98,N/A,N/A
+1,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 5,Penetration ratio VEN+ODVEN CB/MS,unitless,0.99,N/A,N/A
+2,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 4,Penetration ratio VEN+ODVEN CB/MS,unitless,1.53,N/A,N/A
+3,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 1,Penetration ratio VEN+ODVEN CB/MS,unitless,2.08,N/A,N/A
+4,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Penetration ratio VEN+ODVEN CB/MS,unitless,0.62,N/A,N/A
+5,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 4,Penetration ratio VEN+ODVEN CB/MS,unitless,1.04,N/A,N/A
+6,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,38 + 2,Penetration ratio VEN+ODVEN CB/MS,unitless,1.05,N/A,N/A
+7,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 2,Penetration ratio VEN+ODVEN CB/MS,unitless,1.16,N/A,N/A
+8,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,39 + 0,Penetration ratio VEN+ODVEN CB/MS,unitless,1.15,N/A,N/A
+9,Venlafaxine,Venlafaxine (VEN),Cord blood / Maternal serum,Maternal,Parturition/Labor/Delivery,37 + 3,Penetration ratio VEN+ODVEN CB/MS,unitless,0.86,N/A,N/A

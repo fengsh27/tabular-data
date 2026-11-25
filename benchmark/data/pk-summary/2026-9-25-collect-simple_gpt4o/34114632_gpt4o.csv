@@ -1,0 +1,22 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation type,Variation value,Interval type,Lower limit,High limit,P value
+Levetiracetam,Levetiracetam,plasma,neonates,,,Cmax,36.11,µg/mL,median,,,range,27.58,44.64,
+Levetiracetam,Levetiracetam,plasma,neonates,,,AUC0–12,290.9,h*µg/mL,median,,,range,176.14,405.59,
+Levetiracetam,Levetiracetam,plasma,neonates,,,Ctrough,13.03,µg/mL,median,,,range,2.98,23.07,
+Levetiracetam,Levetiracetam,plasma,neonates,,,Tmax,1.5,h,median,,,range,1.5,2.5,
+Levetiracetam,Levetiracetam,plasma,neonates,,,Tmax,2.5,h,median,,,range,2.0,3.3,
+Levetiracetam,Levetiracetam,plasma,neonates,,,Tmax,1.5,h,median,,,range,1.5,1.5,
+Levetiracetam,Levetiracetam,plasma,neonates,,,Cmax,19.19,µg/mL,mean,SD,4.12,,,,0.07
+Levetiracetam,Levetiracetam,plasma,neonates,,,Cmax,36.11,µg/mL,median,,,range,27.58,44.64,
+Levetiracetam,Levetiracetam,plasma,neonates,,,AUC0–12,167.0,h*µg/mL,mean,SD,45.6,,,,0.26
+Levetiracetam,Levetiracetam,plasma,neonates,,,AUC0–12,290.9,h*µg/mL,median,,,range,176.14,405.59,
+Levetiracetam,Levetiracetam,plasma,neonates,,,Ctrough,9.99,µg/mL,mean,SD,3.86,,,,0.34
+Levetiracetam,Levetiracetam,plasma,neonates,,,Ctrough,13.03,µg/mL,median,,,range,2.98,23.07,
+Levetiracetam,Levetiracetam,plasma,neonates,,,Tmax,1.5,h,median,,,range,1.5,2.5,
+Levetiracetam,Levetiracetam,plasma,neonates,,,Tmax,2.5,h,median,,,range,2.0,3.3,
+Levetiracetam,Levetiracetam,plasma,neonates,,,Tmax,1.5,h,median,,,range,1.5,1.5,
+Levetiracetam,Levetiracetam,plasma,neonates,,14,AUC0–12,220,h*μg/mL,median,,,25th-75th percentiles,157.5,355.4,0.90
+Levetiracetam,Levetiracetam,plasma,neonates,,5,AUC0–12,213.8,h*μg/mL,median,,,25th-75th percentiles,154.0,348.8,0.90
+Levetiracetam,Levetiracetam,plasma,neonates,,14,Cmax,23.8,μg/mL,median,,,25th-75th percentiles,18.8,41.3,0.84
+Levetiracetam,Levetiracetam,plasma,neonates,,5,Cmax,26.4,μg/mL,median,,,25th-75th percentiles,19.3,34.2,0.84
+Levetiracetam,Levetiracetam,plasma,neonates,,14,Tmax,1.5,h,median,,,25th-75th percentiles,1.5,2.5,0.46
+Levetiracetam,Levetiracetam,plasma,neonates,,5,Tmax,2.5,h,median,,,25th-75th percentiles,1.5,2.9,0.46

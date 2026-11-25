@@ -1,0 +1,51 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+N/A,Citalopram,S-citalopram,Plasma,N/A,N/A,N/A,20 weeks,N/A,0.7 ±  0.1 (0.6–0.8),N/A,N/A
+N/A,Citalopram,R-citalopram,Plasma,N/A,N/A,N/A,20 weeks,N/A,1.4 ±  0.2 (1.2–1.5),N/A,N/A
+N/A,Citalopram,S-desmethylcitalopram,Plasma,N/A,N/A,N/A,20 weeks,N/A,0.3 ±  0.1 (0.3–0.4),N/A,N/A
+N/A,Citalopram,R-desmethylcitalopram,Plasma,N/A,N/A,N/A,20 weeks,N/A,0.4 ±  0.1 (0.3–0.5),N/A,N/A
+N/A,Escitlopram,S-citalopram,Plasma,N/A,N/A,N/A,20 weeks,N/A,2.3 ±  0.8,N/A,N/A
+N/A,Escitlopram,S-desmethylcitalopram,Plasma,N/A,N/A,N/A,20 weeks,N/A,0.5 ±  0.2,N/A,N/A
+N/A,Sertaline,S-Sertaline,Plasma,N/A,N/A,N/A,20 weeks,N/A,0.5 ±  0.4 (0.07–0.9),N/A,N/A
+N/A,Sertaline,N-demethylsertaline,Plasma,N/A,N/A,N/A,20 weeks,N/A,0.6 ±  0.3 (0.3–1.1),N/A,N/A
+N/A,Citalopram,S-citalopram,Plasma,N/A,N/A,N/A,S-citalopram-30 weeks,ng/mL per mg/kg,0.7 ±  0.4 (0.3–1.0),N/A,N/A
+N/A,Citalopram,R-citalopram,Plasma,N/A,N/A,N/A,R-citalopram-30 weeks,ng/mL per mg/kg,1.2 ±  0.4 (0.7–1.6),N/A,N/A
+N/A,Citalopram,S-desmethylcitalopram,Plasma,N/A,N/A,N/A,S-desmethylcitalopram-30 weeks,ng/mL per mg/kg,0.4 ±  0.2 (0.2–0.5),N/A,N/A
+N/A,Citalopram,R-desmethylcitalopram,Plasma,N/A,N/A,N/A,R-desmethylcitalopram-30 weeks,ng/mL per mg/kg,0.4 ±  0.1 (0.2–0.5),N/A,N/A
+N/A,Escitlopram,S-citalopram,Plasma,N/A,N/A,N/A,S-citalopram-30 weeks,ng/mL per mg/kg,2.2 ±  1.8,N/A,N/A
+N/A,Escitlopram,S-desmethylcitalopram,Plasma,N/A,N/A,N/A,S-desmethylcitalopram-30 weeks,ng/mL per mg/kg,0.2 ±  0.1,N/A,N/A
+N/A,Sertaline,S-Sertaline,Plasma,N/A,N/A,N/A,S-Sertaline-30 weeks,ng/mL per mg/kg,0.3 ±  0.2 (0.1–0.5),N/A,N/A
+N/A,Sertaline,N-demethylsertaline,Plasma,N/A,N/A,N/A,N-demethylsertaline-30 weeks,ng/mL per mg/kg,0.8 ±  0.3 (0.2–1.0),N/A,N/A
+N/A,Citalopram,S-citalopram,Plasma,N/A,N/A,N/A,S-citalopram-36 weeks,N/A,0.4 ±  0.1 (0.3–0.5),N/A,N/A
+N/A,Citalopram,R-citalopram,Plasma,N/A,N/A,N/A,R-citalopram-36 weeks,N/A,0.8 ±  0.1 (0.7–0.9),N/A,N/A
+N/A,Citalopram,S-desmethylcitalopram,Plasma,N/A,N/A,N/A,S-desmethylcitalopram-36 weeks,N/A,0.2 ±  0.02 (0.21–0.24),N/A,N/A
+N/A,Citalopram,R-desmethylcitalopram,Plasma,N/A,N/A,N/A,R-desmethylcitalopram-36 weeks,N/A,0.3 ±  0.03 (0.2–0.3),N/A,N/A
+N/A,Escitlopram,S-citalopram,Plasma,N/A,N/A,N/A,S-citalopram-36 weeks,N/A,2.3 ±  1.5,N/A,N/A
+N/A,Escitlopram,S-desmethylcitalopram,Plasma,N/A,N/A,N/A,S-desmethylcitalopram-36 weeks,N/A,0.5 ±  0.01,N/A,N/A
+N/A,Sertaline,S-Sertaline,Plasma,N/A,N/A,N/A,S-Sertaline-36 weeks,N/A,0.3 ±  0.1 (0.2–0.4),N/A,N/A
+N/A,Sertaline,N-demethylsertaline,Plasma,N/A,N/A,N/A,N-demethylsertaline-36 weeks,N/A,0.8 ±  0.1 (0.7–1.0),N/A,N/A
+N/A,Citalopram,S-citalopram,Plasma,N/A,N/A,N/A,Delivery,N/A,0.3,N/A,N/A
+N/A,Citalopram,R-citalopram,Plasma,N/A,N/A,N/A,Delivery,N/A,0.5,N/A,N/A
+N/A,Citalopram,S-desmethylcitalopram,Plasma,N/A,N/A,N/A,Delivery,N/A,0.1,N/A,N/A
+N/A,Citalopram,R-desmethylcitalopram,Plasma,N/A,N/A,N/A,Delivery,N/A,0.1,N/A,N/A
+N/A,Escitlopram,S-citalopram,Plasma,N/A,N/A,N/A,Delivery,N/A,1.4,N/A,N/A
+N/A,Escitlopram,S-desmethylcitalopram,Plasma,N/A,N/A,N/A,Delivery,N/A,0.3,N/A,N/A
+N/A,Sertaline,S-Sertaline,Plasma,N/A,N/A,N/A,Delivery,N/A,0.2 ±  0.1 (0.1–0.3),N/A,N/A
+N/A,Sertaline,N-demethylsertaline,Plasma,N/A,N/A,N/A,Delivery,N/A,0.7 ±  0.2 (0.5–1.0),N/A,N/A
+N/A,Citalopram,S-citalopram,Plasma,N/A,N/A,N/A,Postpartum 2 weeks,N/A,1.4,N/A,N/A
+N/A,Citalopram,R-citalopram,Plasma,N/A,N/A,N/A,Postpartum 2 weeks,N/A,2.5,N/A,N/A
+N/A,Citalopram,S-desmethylcitalopram,Plasma,N/A,N/A,N/A,Postpartum 2 weeks,N/A,0.4,N/A,N/A
+N/A,Citalopram,R-desmethylcitalopram,Plasma,N/A,N/A,N/A,Postpartum 2 weeks,N/A,0.5,N/A,N/A
+N/A,Escitlopram,S-citalopram,Plasma,N/A,N/A,N/A,Postpartum 2 weeks,N/A,3.6 ±  1.6,N/A,N/A
+N/A,Escitlopram,S-desmethylcitalopram,Plasma,N/A,N/A,N/A,Postpartum 2 weeks,N/A,0.4 ±  0.1,N/A,N/A
+N/A,Sertaline,S-Sertaline,Plasma,N/A,N/A,N/A,Postpartum 2 weeks,N/A,0.2 ±  0.2 (0.1–0.4),N/A,N/A
+N/A,Sertaline,N-demethylsertaline,Plasma,N/A,N/A,N/A,Postpartum 2 weeks,N/A,0.6 ±  0.3 (0.3–0.8),N/A,N/A
+N/A,Sertaline,S-Sertaline,Plasma,N/A,N/A,N/A,Postpartum 4 to 6 weeks,N/A,0.6 ±  0.2 (0.3–0.8),N/A,N/A
+N/A,Sertaline,N-demethylsertaline,Plasma,N/A,N/A,N/A,Postpartum 4 to 6 weeks,N/A,0.9 ±  0.3 (0.6–1.3),N/A,N/A
+N/A,Citalopram,S-citalopram,Plasma,N/A,N/A,N/A,Postpartum 12 weeks,N/A,0.5 ±  0.2 (0.4–0.7),N/A,N/A
+N/A,Citalopram,R-citalopram,Plasma,N/A,N/A,N/A,Postpartum 12 weeks,N/A,1.3 ±  0.8 (0.7–1.8),N/A,N/A
+N/A,Citalopram,S-desmethylcitalopram,Plasma,N/A,N/A,N/A,Postpartum 12 weeks,N/A,0.3 ±  0.1 (0.2–0.3),N/A,N/A
+N/A,Citalopram,R-desmethylcitalopram,Plasma,N/A,N/A,N/A,Postpartum 12 weeks,N/A,0.4 ±  0.2 (0.2–0.5),N/A,N/A
+N/A,Escitlopram,S-citalopram,Plasma,N/A,N/A,N/A,Postpartum 12 weeks,N/A,3.2,N/A,N/A
+N/A,Escitlopram,S-desmethylcitalopram,Plasma,N/A,N/A,N/A,Postpartum 12 weeks,N/A,0.3,N/A,N/A
+N/A,Sertaline,S-Sertaline,Plasma,N/A,N/A,N/A,Postpartum 12 weeks,N/A,0.4 ±  0.3 (0.1–0.8),N/A,N/A
+N/A,Sertaline,N-demethylsertaline,Plasma,N/A,N/A,N/A,Postpartum 12 weeks,N/A,0.9 ±  0.7 (0.1–1.5),N/A,N/A

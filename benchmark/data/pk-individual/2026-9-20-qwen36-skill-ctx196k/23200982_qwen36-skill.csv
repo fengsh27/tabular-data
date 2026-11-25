@@ -1,0 +1,207 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+1,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (maternal serum at birth),μg/ml,40,0,days
+2,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (maternal serum at birth),μg/ml,15.1,0,days
+3,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (maternal serum at birth),μg/ml,1.4,0,days
+4,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (maternal serum at birth),μg/ml,19.2,0,days
+5,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (maternal serum at birth),μg/ml,3.8,0,days
+6,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (maternal serum at birth),μg/ml,4.8,0,days
+7,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (maternal serum at birth),μg/ml,14.5,0,days
+8,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (maternal serum at birth),μg/ml,16.5,0,days
+9,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (maternal serum at birth),μg/ml,2.2,0,days
+10,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (maternal serum at birth),μg/ml,4.1,0,days
+11,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (maternal serum at birth),μg/ml,5.1,0,days
+3,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (cord blood at birth),μg/ml,2.0,0,days
+4,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (cord blood at birth),μg/ml,26.5,0,days
+5,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (cord blood at birth),μg/ml,3.3,0,days
+6,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (cord blood at birth),μg/ml,8.8,0,days
+7,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (cord blood at birth),μg/ml,20.5,0,days
+8,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (cord blood at birth),μg/ml,26.5,0,days
+9,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (cord blood at birth),μg/ml,8.4,0,days
+10,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (cord blood at birth),μg/ml,13.6,0,days
+11,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (cord blood at birth),μg/ml,20.4,0,days
+1,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (infant serum at birth),μg/ml,39.5,0,days
+2,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (infant serum at birth),μg/ml,25.3,0,days
+3,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (infant serum at birth),μg/ml,2.9,0,days
+4,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (infant serum at birth),μg/ml,23.6,0,days
+5,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (infant serum at birth),μg/ml,4.2,0,days
+6,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (infant serum at birth),μg/ml,8.7,0,days
+7,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (infant serum at birth),μg/ml,28.2,0,days
+8,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (infant serum at birth),μg/ml,27.5,0,days
+9,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (infant serum at birth),μg/ml,10.6,0,days
+10,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (infant serum at birth),μg/ml,4.7,0,days
+11,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX concentration (infant serum at birth),μg/ml,8.4,0,days
+3,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,143,0,days
+4,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,138,0,days
+5,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,87,0,days
+6,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,183,0,days
+7,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,141,0,days
+8,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,160,0,days
+9,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,381,0,days
+10,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,332,0,days
+11,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,400,0,days
+1,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Time to undetectable,months,7,7,months
+2,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Time to undetectable,months,5,5,months
+3,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Time to undetectable,months,2,2,months
+4,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Time to undetectable,months,7,7,months
+5,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Time to undetectable,months,2,2,months
+6,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Time to undetectable,months,3,3,months
+7,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Time to undetectable,months,4,4,months
+8,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Time to undetectable,months,5,5,months
+9,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Time to undetectable,months,4,4,months
+11,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Time to undetectable,months,4,4,months
+1,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX dose,mg/kg,10,N/A,N/A
+2,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX dose,mg/kg,5,N/A,N/A
+3,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX dose,mg/kg,5,N/A,N/A
+4,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX dose,mg/kg,5,N/A,N/A
+5,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX dose,mg/kg,5,N/A,N/A
+6,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX dose,mg/kg,5,N/A,N/A
+7,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX dose,mg/kg,5,N/A,N/A
+8,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX dose,mg/kg,5,N/A,N/A
+9,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX dose,mg/kg,5,N/A,N/A
+10,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX dose,mg/kg,5,N/A,N/A
+11,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX dose,mg/kg,10,N/A,N/A
+1,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX dosing interval,weeks,6,N/A,N/A
+2,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX dosing interval,weeks,6,N/A,N/A
+3,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX dosing interval,weeks,6,N/A,N/A
+4,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX dosing interval,weeks,6,N/A,N/A
+5,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX dosing interval,weeks,8,N/A,N/A
+6,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX dosing interval,weeks,8,N/A,N/A
+7,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX dosing interval,weeks,8,N/A,N/A
+8,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX dosing interval,weeks,6,N/A,N/A
+9,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX dosing interval,weeks,8,N/A,N/A
+10,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX dosing interval,weeks,6,N/A,N/A
+11,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,IFX dosing interval,weeks,8,N/A,N/A
+1,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,14,14,days
+2,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,30,30,days
+3,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,2,2,days
+4,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,14,14,days
+5,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,91,91,days
+6,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,15,15,days
+7,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,55,55,days
+8,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,46,46,days
+9,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,35,35,days
+10,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,77,77,days
+11,infliximab,infliximab,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,74,74,days
+1,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (maternal serum at birth),μg/ml,6.05,0,days
+2,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (maternal serum at birth),μg/ml,1.84,0,days
+3,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (maternal serum at birth),μg/ml,3.84,0,days
+4,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (maternal serum at birth),μg/ml,0,0,days
+5,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (maternal serum at birth),μg/ml,2.2,0,days
+6,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (maternal serum at birth),μg/ml,3.21,0,days
+7,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (maternal serum at birth),μg/ml,3.36,0,days
+8,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (maternal serum at birth),μg/ml,16.1,0,days
+9,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (maternal serum at birth),μg/ml,2.24,0,days
+10,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (maternal serum at birth),μg/ml,8.48,0,days
+1,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (cord blood at birth),μg/ml,9.29,0,days
+2,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (cord blood at birth),μg/ml,5.39,0,days
+3,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (cord blood at birth),μg/ml,4.57,0,days
+4,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (cord blood at birth),μg/ml,0.16,0,days
+5,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (cord blood at birth),μg/ml,4.18,0,days
+6,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (cord blood at birth),μg/ml,4.74,0,days
+7,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (cord blood at birth),μg/ml,8.94,0,days
+8,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (cord blood at birth),μg/ml,19.7,0,days
+9,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (cord blood at birth),μg/ml,4.95,0,days
+10,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (cord blood at birth),μg/ml,8.29,0,days
+1,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (infant serum at birth),μg/ml,6.17,0,days
+2,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (infant serum at birth),μg/ml,6.01,0,days
+5,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (infant serum at birth),μg/ml,4.28,0,days
+6,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (infant serum at birth),μg/ml,4.87,0,days
+7,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (infant serum at birth),μg/ml,8.09,0,days
+8,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (infant serum at birth),μg/ml,17.7,0,days
+9,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (infant serum at birth),μg/ml,4.64,0,days
+10,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA concentration (infant serum at birth),μg/ml,9.17,0,days
+1,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,153,0,days
+2,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,293,0,days
+3,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,119,0,days
+5,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,190,0,days
+6,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,148,0,days
+7,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,266,0,days
+8,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,122,0,days
+9,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,220,0,days
+10,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,98,0,days
+2,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Follow-up ADA level,μg/ml,1.94,6,weeks
+5,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Follow-up ADA level,μg/ml,0.934,8,weeks
+6,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Follow-up ADA level,μg/ml,1.31,7,weeks
+7,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Follow-up ADA level,μg/ml,0.529,11,weeks
+1,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA dose,mg,40,N/A,N/A
+2,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA dose,mg,40,N/A,N/A
+3,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA dose,mg,40,N/A,N/A
+4,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA dose,mg,40,N/A,N/A
+5,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA dose,mg,40,N/A,N/A
+6,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA dose,mg,40,N/A,N/A
+7,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA dose,mg,40,N/A,N/A
+8,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA dose,mg,40,N/A,N/A
+9,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA dose,mg,40,N/A,N/A
+10,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA dose,mg,40,N/A,N/A
+1,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA dosing interval,N/A,EOW,N/A,N/A
+2,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA dosing interval,N/A,EOW,N/A,N/A
+3,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA dosing interval,N/A,EOW,N/A,N/A
+4,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA dosing interval,N/A,EOW,N/A,N/A
+5,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA dosing interval,N/A,EOW,N/A,N/A
+6,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA dosing interval,N/A,EOW,N/A,N/A
+7,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA dosing interval,N/A,EOW,N/A,N/A
+8,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA dosing interval,N/A,Weekly,N/A,N/A
+9,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA dosing interval,N/A,EOW,N/A,N/A
+10,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,ADA dosing interval,N/A,EOW,N/A,N/A
+1,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,7,7,days
+2,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,56,56,days
+3,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,7,7,days
+4,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,42,42,days
+5,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,35,35,days
+6,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,42,42,days
+7,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,42,42,days
+8,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,1,1,days
+9,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,49,49,days
+10,adalimumab,adalimumab,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,7,7,days
+01,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (maternal serum at birth),μg/ml,18.83,0,days
+02,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (maternal serum at birth),μg/ml,59.57,0,days
+03,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (maternal serum at birth),μg/ml,4.87,0,days
+04,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (maternal serum at birth),μg/ml,20.13,0,days
+05,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (maternal serum at birth),μg/ml,16.49,0,days
+06,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (maternal serum at birth),μg/ml,34.65,0,days
+07,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (maternal serum at birth),μg/ml,1.87,0,days
+08-A,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (maternal serum at birth),μg/ml,6.32,0,days
+08-B,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (maternal serum at birth),μg/ml,6.32,0,days
+09-A,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (maternal serum at birth),μg/ml,42.7,0,days
+09-B,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (maternal serum at birth),μg/ml,42.7,0,days
+10,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (maternal serum at birth),μg/ml,37.83,0,days
+01,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (cord blood at birth),μg/ml,1.65,0,days
+02,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (cord blood at birth),μg/ml,0.94,0,days
+03,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (cord blood at birth),μg/ml,1.19,0,days
+04,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (cord blood at birth),μg/ml,0.57,0,days
+06,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (cord blood at birth),μg/ml,1.66,0,days
+09-A,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (cord blood at birth),μg/ml,1.28,0,days
+09-B,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (cord blood at birth),μg/ml,1.16,0,days
+10,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (cord blood at birth),μg/ml,0.55,0,days
+02,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (infant serum at birth),μg/ml,1.02,0,days
+03,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (infant serum at birth),μg/ml,1.22,0,days
+04,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (infant serum at birth),μg/ml,0.44,0,days
+06,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (infant serum at birth),μg/ml,1.58,0,days
+08-A,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (infant serum at birth),μg/ml,0.58,0,days
+09-A,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (infant serum at birth),μg/ml,1.34,0,days
+09-B,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (infant serum at birth),μg/ml,1.18,0,days
+10,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,CZP concentration (infant serum at birth),μg/ml,0.6,0,days
+01,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,8.8,0,days
+02,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,1.6,0,days
+03,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,24,0,days
+04,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,2.8,0,days
+05,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,2.5,0,days
+06,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,4.8,0,days
+07,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,22,0,days
+08-A,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,6.4,0,days
+08-B,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,6.4,0,days
+09-A,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,3.0,0,days
+09-B,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,2.7,0,days
+10,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Cord-to-mother ratio,%,1.5,0,days
+01,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,14,14,days
+02,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,7,7,days
+03,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,28,28,days
+04,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,17,17,days
+05,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,21,21,days
+06,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,24,24,days
+07,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,28,28,days
+08-A,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,42,42,days
+08-B,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,42,42,days
+09-A,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,6,6,days
+09-B,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,6,6,days
+10,certolizumab pegol,certolizumab pegol,serum,Maternal,Pregnancy,N/A,Time from last dose to delivery,days,5,5,days

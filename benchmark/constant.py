@@ -46,3 +46,4 @@ class LLModelType(Enum):
     QWEN36="qwen36"  # qwen3.6 through the multi-agent pipeline (not the skills)
     QWEN38="qwen38"  # qwen3.8 (27B dense) through simple-prompt/pipeline (not the skills)
     MAS_QWEN38="mas-qwen38"  # multi-agent: pipeline llm and agent llm qwen3.8:27b, verify_scope=per_table (default)
+    CASCADE_QWEN38="cascade-qwen38"  # CurateAgent v2 per-table cascade: Arm A simple prompt + Arm B pipeline, both qwen3.8:27b

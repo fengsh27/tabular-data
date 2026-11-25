@@ -1,0 +1,13 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+Lorazepam,Lorazepam,Plasma,Adults,N/A,N/A,15,AUC0−∞,ng·hr/mL,Mean,822.5,SD,706.1,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Plasma,Adults,N/A,N/A,15,AUC0−∞,ng·hr/mL,Median,601.5,N/A,N/A,Range,253.3,3202.5,N/A,N/A,N/A
+Lorazepam,Lorazepam,Plasma,Adults,N/A,N/A,15,CL (mL/min/kg),mL/min/kg,Mean,49.33,SD,30.83,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Plasma,Adults,N/A,N/A,15,CL (mL/min/kg),mL/min/kg,Median,41.50,N/A,N/A,Range,3.33,131.50,N/A,N/A,N/A
+Lorazepam,Lorazepam,Plasma,Adults,N/A,N/A,15,CL (mL/min/m2),mL/min/m2,Mean,31.95,SD,13.99,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Plasma,Adults,N/A,N/A,15,CL (mL/min/m2),mL/min/m2,Median,32.34,N/A,N/A,Range,5.5,67.5,N/A,N/A,N/A
+Lorazepam,Lorazepam,Plasma,Adults,N/A,N/A,15,Cmax,ng/mL,Mean,56.1,SD,44.9,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Plasma,Adults,N/A,N/A,15,Cmax,ng/mL,Median,42.2,N/A,N/A,Range,29.3,209.6,N/A,N/A,N/A
+Lorazepam,Lorazepam,Plasma,Adults,N/A,N/A,15,T1/2,hr,Mean,20.5,SD,10.2,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Plasma,Adults,N/A,N/A,15,T1/2,hr,Median,18.1,N/A,N/A,Range,9.5,47.0,N/A,N/A,N/A
+Lorazepam,Lorazepam,Plasma,Adults,N/A,N/A,15,Vdz,L/kg,Mean,1.92,SD,0.84,N/A,N/A,N/A,N/A,N/A,N/A
+Lorazepam,Lorazepam,Plasma,Adults,N/A,N/A,15,Vdz,L/kg,Median,1.94,N/A,N/A,Range,0.33,4.05,N/A,N/A,N/A

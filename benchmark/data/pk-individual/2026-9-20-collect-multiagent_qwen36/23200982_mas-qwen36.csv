@@ -1,0 +1,150 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+1,Infliximab,Infliximab,Maternal Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Mom,μg/ml,40,14,days
+2,Infliximab,Infliximab,Maternal Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Mom,μg/ml,15.1,30,days
+3,Infliximab,Infliximab,Maternal Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Mom,μg/ml,1.4,2,days
+4,Infliximab,Infliximab,Maternal Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Mom,μg/ml,19.2,14,days
+5,Infliximab,Infliximab,Maternal Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Mom,μg/ml,3.8,91,days
+6,Infliximab,Infliximab,Maternal Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Mom,μg/ml,4.8,15,days
+7,Infliximab,Infliximab,Maternal Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Mom,μg/ml,14.5,55,days
+8,Infliximab,Infliximab,Maternal Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Mom,μg/ml,16.5,46,days
+9,Infliximab,Infliximab,Maternal Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Mom,μg/ml,2.2,35,days
+10,Infliximab,Infliximab,Maternal Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Mom,μg/ml,4.1,77,days
+11,Infliximab,Infliximab,Maternal Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Mom,μg/ml,5.1,74,days
+1,Infliximab,Infliximab,Cord Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Cord,μg/ml,--,14,Days
+2,Infliximab,Infliximab,Cord Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Cord,μg/ml,--,30,Days
+3,Infliximab,Infliximab,Cord Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Cord,μg/ml,2.0,2,Days
+4,Infliximab,Infliximab,Cord Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Cord,μg/ml,26.5,14,Days
+5,Infliximab,Infliximab,Cord Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Cord,μg/ml,3.3,91,Days
+6,Infliximab,Infliximab,Cord Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Cord,μg/ml,8.8,15,Days
+7,Infliximab,Infliximab,Cord Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Cord,μg/ml,20.5,55,Days
+8,Infliximab,Infliximab,Cord Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Cord,μg/ml,26.5,46,Days
+9,Infliximab,Infliximab,Cord Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Cord,μg/ml,8.4,35,Days
+10,Infliximab,Infliximab,Cord Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Cord,μg/ml,13.6,77,Days
+11,Infliximab,Infliximab,Cord Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Cord,μg/ml,20.4,74,Days
+1,Infliximab,Infliximab,Infant Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Infant,μg/ml,39.5* (6 wks),N/A,N/A
+2,Infliximab,Infliximab,Infant Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Infant,μg/ml,25.3,N/A,N/A
+3,Infliximab,Infliximab,Infant Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Infant,μg/ml,2.9* (2 wks),N/A,N/A
+4,Infliximab,Infliximab,Infant Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Infant,μg/ml,23.6,N/A,N/A
+5,Infliximab,Infliximab,Infant Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Infant,μg/ml,4.2,N/A,N/A
+6,Infliximab,Infliximab,Infant Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Infant,μg/ml,8.7,N/A,N/A
+7,Infliximab,Infliximab,Infant Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Infant,μg/ml,28.2,N/A,N/A
+8,Infliximab,Infliximab,Infant Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Infant,μg/ml,27.5,N/A,N/A
+9,Infliximab,Infliximab,Infant Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Infant,μg/ml,10.6,N/A,N/A
+10,Infliximab,Infliximab,Infant Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Infant,μg/ml,4.7* (4 wks),N/A,N/A
+11,Infliximab,Infliximab,Infant Serum,Maternal,Delivery,N/A,IFX-μg/ml-at-Birth-Infant,μg/ml,8.4* (4 wks),N/A,N/A
+3,Infliximab,Infliximab,Infant Serum,Maternal,Delivery,N/A,Ratio cord/Mother,%,143%,N/A,N/A
+4,Infliximab,Infliximab,Infant Serum,Maternal,Delivery,N/A,Ratio cord/Mother,%,138%,N/A,N/A
+5,Infliximab,Infliximab,Infant Serum,Maternal,Delivery,N/A,Ratio cord/Mother,%,87%,N/A,N/A
+6,Infliximab,Infliximab,Infant Serum,Maternal,Delivery,N/A,Ratio cord/Mother,%,183%,N/A,N/A
+7,Infliximab,Infliximab,Infant Serum,Maternal,Delivery,N/A,Ratio cord/Mother,%,141%,N/A,N/A
+8,Infliximab,Infliximab,Infant Serum,Maternal,Delivery,N/A,Ratio cord/Mother,%,160%,N/A,N/A
+9,Infliximab,Infliximab,Infant Serum,Maternal,Delivery,N/A,Ratio cord/Mother,%,381%,N/A,N/A
+10,Infliximab,Infliximab,Infant Serum,Maternal,Delivery,N/A,Ratio cord/Mother,%,332%,N/A,N/A
+11,Infliximab,Infliximab,Infant Serum,Maternal,Delivery,N/A,Ratio cord/Mother,%,400%,N/A,N/A
+1#,Adalimumab,Adalimumab,Maternal Serum,Maternal,Delivery,N/A,ADA-μg/ml at Birth-Mom,μg/ml,6.05,7,Day
+2,Adalimumab,Adalimumab,Maternal Serum,Maternal,Delivery,N/A,ADA-μg/ml at Birth-Mom,μg/ml,1.84,56,Day
+3#,Adalimumab,Adalimumab,Maternal Serum,Maternal,Delivery,N/A,ADA-μg/ml at Birth-Mom,μg/ml,3.84,7,Day
+4#,Adalimumab,Adalimumab,Maternal Serum,Maternal,Delivery,N/A,ADA-μg/ml at Birth-Mom,μg/ml,0.0,42,Day
+5,Adalimumab,Adalimumab,Maternal Serum,Maternal,Delivery,N/A,ADA-μg/ml at Birth-Mom,μg/ml,2.2,35,Day
+6,Adalimumab,Adalimumab,Maternal Serum,Maternal,Delivery,N/A,ADA-μg/ml at Birth-Mom,μg/ml,3.21,42,Day
+7^,Adalimumab,Adalimumab,Maternal Serum,Maternal,Delivery,N/A,ADA-μg/ml at Birth-Mom,μg/ml,3.36,42,Day
+8,Adalimumab,Adalimumab,Maternal Serum,Maternal,Delivery,N/A,ADA-μg/ml at Birth-Mom,μg/ml,16.1,1,Day
+9,Adalimumab,Adalimumab,Maternal Serum,Maternal,Delivery,N/A,ADA-μg/ml at Birth-Mom,μg/ml,2.24,49,Day
+10,Adalimumab,Adalimumab,Maternal Serum,Maternal,Delivery,N/A,ADA-μg/ml at Birth-Mom,μg/ml,8.48,7,Day
+1#,Adalimumab,Adalimumab,Cord Serum,Maternal,Delivery,N/A,ADA(μg/ml) at Birth-Cord,μg/ml,9.29,7,Day
+2,Adalimumab,Adalimumab,Cord Serum,Maternal,Delivery,N/A,ADA(μg/ml) at Birth-Cord,μg/ml,5.39,56,Day
+3#,Adalimumab,Adalimumab,Cord Serum,Maternal,Delivery,N/A,ADA(μg/ml) at Birth-Cord,μg/ml,4.57,7,Day
+4#,Adalimumab,Adalimumab,Cord Serum,Maternal,Delivery,N/A,ADA(μg/ml) at Birth-Cord,μg/ml,0.16,42,Day
+5,Adalimumab,Adalimumab,Cord Serum,Maternal,Delivery,N/A,ADA(μg/ml) at Birth-Cord,μg/ml,4.18,35,Day
+6,Adalimumab,Adalimumab,Cord Serum,Maternal,Delivery,N/A,ADA(μg/ml) at Birth-Cord,μg/ml,4.74,42,Day
+7^,Adalimumab,Adalimumab,Cord Serum,Maternal,Delivery,N/A,ADA(μg/ml) at Birth-Cord,μg/ml,8.94,42,Day
+8,Adalimumab,Adalimumab,Cord Serum,Maternal,Delivery,N/A,ADA(μg/ml) at Birth-Cord,μg/ml,19.7,1,Day
+9,Adalimumab,Adalimumab,Cord Serum,Maternal,Delivery,N/A,ADA(μg/ml) at Birth-Cord,μg/ml,4.95,49,Day
+10,Adalimumab,Adalimumab,Cord Serum,Maternal,Delivery,N/A,ADA(μg/ml) at Birth-Cord,μg/ml,8.29,7,Day
+1#,Adalimumab,Adalimumab,Infant Serum,Maternal,Delivery,N/A,ADA-μg/ml at Birth-Infant,μg/ml,6.17,7,Day
+2,Adalimumab,Adalimumab,Infant Serum,Maternal,Delivery,N/A,ADA-μg/ml at Birth-Infant,μg/ml,6.01,56,Day
+5,Adalimumab,Adalimumab,Infant Serum,Maternal,Delivery,N/A,ADA-μg/ml at Birth-Infant,μg/ml,4.28,35,Day
+6,Adalimumab,Adalimumab,Infant Serum,Maternal,Delivery,N/A,ADA-μg/ml at Birth-Infant,μg/ml,4.87,42,Day
+7^,Adalimumab,Adalimumab,Infant Serum,Maternal,Delivery,N/A,ADA-μg/ml at Birth-Infant,μg/ml,8.09,42,Day
+8,Adalimumab,Adalimumab,Infant Serum,Maternal,Delivery,N/A,ADA-μg/ml at Birth-Infant,μg/ml,17.7,1,Day
+9,Adalimumab,Adalimumab,Infant Serum,Maternal,Delivery,N/A,ADA-μg/ml at Birth-Infant,μg/ml,4.64,49,Day
+10,Adalimumab,Adalimumab,Infant Serum,Maternal,Delivery,N/A,ADA-μg/ml at Birth-Infant,μg/ml,9.17,7,Day
+1#,Adalimumab,Adalimumab,Maternal Serum,Maternal,Delivery,N/A,Ratio Cord/Mother,%,153%,7,Day
+2,Adalimumab,Adalimumab,Cord Serum,Maternal,Delivery,N/A,Ratio Cord/Mother,%,293%,56,Day
+3#,Adalimumab,Adalimumab,Infant Serum,Maternal,Delivery,N/A,Ratio Cord/Mother,%,119%,7,Day
+5,Adalimumab,Adalimumab,Cord Serum,Maternal,Delivery,N/A,Ratio Cord/Mother,%,190%,35,Day
+6,Adalimumab,Adalimumab,Infant Serum,Maternal,Delivery,N/A,Ratio Cord/Mother,%,148%,42,Day
+7^,Adalimumab,Adalimumab,Maternal Serum,Maternal,Delivery,N/A,Ratio Cord/Mother,%,266%,42,Day
+8,Adalimumab,Adalimumab,Cord Serum,Maternal,Delivery,N/A,Ratio Cord/Mother,%,122%,1,Day
+9,Adalimumab,Adalimumab,Infant Serum,Maternal,Delivery,N/A,Ratio Cord/Mother,%,220%,49,Day
+10,Adalimumab,Adalimumab,Maternal Serum,Maternal,Delivery,N/A,Ratio Cord/Mother,%,98%,7,Day
+01,Certolizumab pegol,Certolizumab pegol,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Mother,μg/ml,18.83,14,days
+02,Certolizumab pegol,Certolizumab pegol,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Mother,μg/ml,59.57,7,days
+03,Certolizumab pegol,Certolizumab pegol,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Mother,μg/ml,4.87,28,days
+04,Certolizumab pegol,Certolizumab pegol,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Mother,μg/ml,20.13,17,days
+05,Certolizumab pegol,Certolizumab pegol,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Mother,μg/ml,16.49,21,days
+06,Certolizumab pegol,Certolizumab pegol,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Mother,μg/ml,34.65,24,days
+07,Certolizumab pegol,Certolizumab pegol,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Mother,μg/ml,1.87,28,days
+08-A,Certolizumab pegol,Certolizumab pegol,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Mother,μg/ml,6.32,42,days
+09-A,Certolizumab pegol,Certolizumab pegol,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Mother,μg/ml,42.7,6,days
+10,Certolizumab pegol,Certolizumab pegol,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Mother,μg/ml,37.83,5,days
+01,Certolizumab pegol,Certolizumab pegol,Cord,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Cord,μg/ml,1.65,14,days
+02,Certolizumab pegol,Certolizumab pegol,Cord,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Cord,μg/ml,0.94,7,days
+03,Certolizumab pegol,Certolizumab pegol,Cord,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Cord,μg/ml,1.19,28,days
+04,Certolizumab pegol,Certolizumab pegol,Cord,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Cord,μg/ml,0.57,17,days
+05,Certolizumab pegol,Certolizumab pegol,Cord,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Cord,μg/ml,<0.41,21,days
+06,Certolizumab pegol,Certolizumab pegol,Cord,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Cord,μg/ml,1.66,24,days
+07,Certolizumab pegol,Certolizumab pegol,Cord,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Cord,μg/ml,<0.41,28,days
+08-A,Certolizumab pegol,Certolizumab pegol,Cord,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Cord,μg/ml,<0.41,42,days
+09-A,Certolizumab pegol,Certolizumab pegol,Cord,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Cord,μg/ml,1.28,6,days
+10,Certolizumab pegol,Certolizumab pegol,Cord,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Cord,μg/ml,0.55,5,days
+01,Certolizumab pegol,Certolizumab pegol,Infant,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Infant,μg/ml,-,N/A,N/A
+02,Certolizumab pegol,Certolizumab pegol,Infant,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Infant,μg/ml,1.02,N/A,N/A
+03,Certolizumab pegol,Certolizumab pegol,Infant,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Infant,μg/ml,1.22,N/A,N/A
+04,Certolizumab pegol,Certolizumab pegol,Infant,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Infant,μg/ml,0.44,N/A,N/A
+05,Certolizumab pegol,Certolizumab pegol,Infant,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Infant,μg/ml,6.4%,N/A,N/A
+10,Certolizumab pegol,Certolizumab pegol,Infant,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Infant,μg/ml,1.58,N/A,N/A
+07,Certolizumab pegol,Certolizumab pegol,Infant,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Infant,μg/ml,<0.41,N/A,N/A
+08-A,Certolizumab pegol,Certolizumab pegol,Infant,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Infant,μg/ml,0.58,N/A,N/A
+09-A,Certolizumab pegol,Certolizumab pegol,Infant,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Infant,μg/ml,1.34,N/A,N/A
+10,Certolizumab pegol,Certolizumab pegol,Infant,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth CZP concentrations (μg/ml)-Lower limit of Quantification <0.41-Infant,μg/ml,0.6,N/A,N/A
+01,Certolizumab pegol,Certolizumab pegol,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Ratio Cord/Mother,%,8.8%,14,days
+02,Certolizumab pegol,Certolizumab pegol,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Ratio Cord/Mother,%,6.4%,7,days
+03,Certolizumab pegol,Certolizumab pegol,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Ratio Cord/Mother,%,24%,28,days
+04,Certolizumab pegol,Certolizumab pegol,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Ratio Cord/Mother,%,2.8%,17,days
+05,Certolizumab pegol,Certolizumab pegol,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Ratio Cord/Mother,%,2.5%,21,days
+06,Certolizumab pegol,Certolizumab pegol,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Ratio Cord/Mother,%,4.8%,24,days
+07,Certolizumab pegol,Certolizumab pegol,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Ratio Cord/Mother,%,22%,28,days
+08-A,Certolizumab pegol,Certolizumab pegol,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Ratio Cord/Mother,%,6.4%,42,days
+08-B,Certolizumab pegol,Certolizumab pegol,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Ratio Cord/Mother,%,3.0%,6,days
+09-B,Certolizumab pegol,Certolizumab pegol,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Ratio Cord/Mother,%,2.7%,5,days
+01,Certolizumab pegol,PEG,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Mother,μg/ml,33.4,14,days
+02,Certolizumab pegol,PEG,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Mother,μg/ml,51.3,7,days
+03,Certolizumab pegol,PEG,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Mother,μg/ml,*,28,days
+04,Certolizumab pegol,PEG,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Mother,μg/ml,34.7,17,days
+05,Certolizumab pegol,PEG,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Mother,μg/ml,27.7,21,days
+06,Certolizumab pegol,PEG,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Mother,μg/ml,34.4,24,days
+07,Certolizumab pegol,PEG,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Mother,μg/ml,*,28,days
+08-A,Certolizumab pegol,PEG,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Mother,μg/ml,11.1,42,days
+08-B,Certolizumab pegol,PEG,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Mother,μg/ml,62.1,6,days
+10,Certolizumab pegol,PEG,Mother,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Mother,μg/ml,74.9,5,days
+01,Certolizumab pegol,PEG,Cord,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Cord,μg/ml,*,14,days
+02,Certolizumab pegol,PEG,Cord,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Cord,μg/ml,*,7,days
+03,Certolizumab pegol,PEG,Cord,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Cord,μg/ml,*,28,days
+04,Certolizumab pegol,PEG,Cord,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Cord,μg/ml,*,17,days
+05,Certolizumab pegol,PEG,Cord,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Cord,μg/ml,*,21,days
+06,Certolizumab pegol,PEG,Cord,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Cord,μg/ml,*,24,days
+07,Certolizumab pegol,PEG,Cord,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Cord,μg/ml,*,28,days
+08-A,Certolizumab pegol,PEG,Cord,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Cord,μg/ml,*,42,days
+09-A,Certolizumab pegol,PEG,Cord,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Cord,μg/ml,*,6,days
+10,Certolizumab pegol,PEG,Cord,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Cord,μg/ml,*,5,days
+01,Certolizumab pegol,PEG,Infant,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Infant,μg/ml,*,14,days
+02,Certolizumab pegol,PEG,Infant,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Infant,μg/ml,*,7,days
+03,Certolizumab pegol,PEG,Infant,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Infant,μg/ml,*,28,days
+04,Certolizumab pegol,PEG,Infant,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Infant,μg/ml,*,17,days
+05,Certolizumab pegol,PEG,Infant,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Infant,μg/ml,No sample,21,days
+06,Certolizumab pegol,PEG,Infant,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Infant,μg/ml,*,24,days
+07,Certolizumab pegol,PEG,Infant,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Infant,μg/ml,*,28,days
+08-A,Certolizumab pegol,PEG,Infant,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Infant,μg/ml,*,42,days
+08-B,Certolizumab pegol,PEG,Infant,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Infant,μg/ml,*,6,days
+10,Certolizumab pegol,PEG,Infant,"Maternal, Cord, Infant",Day of Birth,N/A,Day of Birth PEG concentrations (μg/ml)-Lower limit of Quantification <9-Infant,μg/ml,*,5,days

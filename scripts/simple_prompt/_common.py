@@ -210,18 +210,145 @@ def _realign(row, header):
     if any(idx is not None for _, idx in header):
         return None  # wide layout: positions are not the canonical schema
     names = [n for n, _ in header]
+    # candidate -> (fit total, inserts that touch an existing run of empties).
+    # The second key breaks fit ties: the slip this repairs is a miscounted run
+    # of commas, so an empty inserted next to an existing empty is the likely
+    # truth, one inserted between two non-empty cells is not (see
+    # _common_summary._realign for the real-data case).
     seen = {}
     for combo in itertools.combinations_with_replacement(range(len(row) + 1), missing):
         cand = list(row)
         for pos in reversed(combo):  # descending, so earlier indices stay valid
             cand.insert(pos, "")
         cand = tuple(cand)
-        if cand not in seen:  # inserting into a run of empties repeats a row
-            seen[cand] = sum(_fits(n, c) for n, c in zip(names, cand))
+        run_edits = sum(
+            1 for pos in combo
+            if (pos > 0 and not (row[pos - 1] or "").strip())
+            or (pos < len(row) and not (row[pos] or "").strip())
+        )
+        if cand not in seen or seen[cand][1] < run_edits:
+            seen[cand] = (sum(_fits(n, c) for n, c in zip(names, cand)), run_edits)
     ranked = sorted(seen.items(), key=lambda kv: kv[1], reverse=True)
     if len(ranked) > 1 and ranked[0][1] == ranked[1][1]:
         return None
     return list(ranked[0][0])
+
+
+# A cell scoring this low under its column is in the wrong column (text in a
+# numeric column, a bare number as a drug or parameter name), not merely
+# unusual. Only such a row is a candidate for _reshift, and only a repair that
+# leaves no such cell behind is accepted.
+_HARD_MISFIT = -2
+
+_WORDS_RE = re.compile(r"[A-Za-z]{2,}")
+
+
+def _fits_strict(name: str, cell: str) -> int:
+    """`_fits`, except that a cell which merely *starts* with a digit and goes
+    on in words ("95% CI", "6 months", "3 Month to < 3 Years") is text, not a
+    number - `_VALUE_RE` only anchors the front. See _common_summary._fits_strict
+    for the real-data cases. Used only by `_reshift`; `_fits` itself, and
+    `_realign`/Tier 1 with it, are unchanged.
+    """
+    c = (cell or "").strip()
+    if _VALUE_RE.match(c) and _WORDS_RE.search(c):
+        if name == "Parameter value":
+            return -3
+        if name == "Time value":
+            return -2
+        if name == "Parameter unit":
+            return 0
+        if name in _TEXT_COLS or name in ("Drug name", "Analyte"):
+            return 0
+    if name in _VOCAB and c and c.lower() not in _VOCAB[name]:
+        # A label outside the whitelist is unusual, not structural evidence;
+        # at _fits' -1 the search would spend a move parking it in a free-text
+        # column just to dodge the penalty (see _common_summary._fits_strict).
+        return 0
+    if name == "Parameter unit" and c and not _VALUE_RE.match(c):
+        # _fits rewards ANY text here (+2). As a search reward that pulls the
+        # parameter name into the unit column ("M/PAUC" on PMID 11849190):
+        # neutral instead; a number in the unit column still scores -2 via _fits.
+        return 0
+    if name == "Parameter type" and not c:
+        # Every row needs a parameter name, as Drug name/Analyte already do in
+        # _fits; without this, "name in Parameter type, unit empty" and "name in
+        # Parameter unit, type empty" tie and the row is left unrepaired.
+        return -1
+    return _fits(name, cell)
+
+
+_MAX_MOVES = 2
+
+
+def _moves(cells):
+    """Every "take one existing empty cell out at e, put an empty back at p"
+    move on `cells` - i.e. shift the segment between e and p by one column.
+    Yields (candidate, cells displaced)."""
+    original = tuple(cells)
+    for e, cell in enumerate(cells):
+        if (cell or "").strip():
+            continue
+        rest = list(cells[:e]) + list(cells[e + 1:])
+        for p in range(len(rest) + 1):
+            cand = tuple(rest[:p] + [""] + rest[p:])
+            if cand != original:
+                yield cand, abs(p - e)
+
+
+def _reshift(row, names):
+    """Repair a row with the right field count whose cells are shifted.
+
+    `_realign` handles a row that is short. A third shape slipped past it on
+    PMID 35465728 (the pk_summary parser, same mechanics) and PMID 11849190
+    (this parser, 12 rows): the model dropped an interior empty cell and wrote
+    an extra empty a few columns later, so the count matched the header while
+    every cell in between sat one column left of home - rows that scored 0
+    against gold.
+
+    Candidates are up to `_MAX_MOVES` such moves, scored per cell by
+    `_fits_strict`. Accept the best candidate only when it (a) beats the
+    original row, (b) leaves no cell at or below `_HARD_MISFIT`, and (c) wins
+    outright on (score, fewer moves, fewer cells displaced). On anything else
+    return None and the caller keeps the row as written, so Tier 1 flags it
+    exactly as before. See _common_summary._reshift for the full rationale.
+    `names` are canonical column names (None for an unmapped header, which
+    never votes).
+    """
+    if len(row) != len(names):
+        return None
+
+    def score(cells):
+        per_cell = [_fits_strict(n, c) for n, c in zip(names, cells)]
+        return sum(per_cell), min(per_cell)
+
+    base_total, base_min = score(row)
+    if base_min > _HARD_MISFIT:
+        return None
+    original = tuple(row)
+    seen = {}  # candidate -> (total, min cell fit, moves, cells displaced)
+    frontier = [(original, 0, 0)]
+    for depth in range(1, _MAX_MOVES + 1):
+        next_frontier = []
+        for cells, _, displaced in frontier:
+            for cand, moved in _moves(cells):
+                key = (depth, displaced + moved)
+                if cand == original or (cand in seen and seen[cand][2:] <= key):
+                    continue
+                total, lowest = score(cand)
+                seen[cand] = (total, lowest, depth, displaced + moved)
+                next_frontier.append((cand, depth, displaced + moved))
+        frontier = next_frontier
+    if not seen:
+        return None
+    ranked = sorted(seen.items(), key=lambda kv: (-kv[1][0], kv[1][2], kv[1][3]))
+    best, (best_total, best_min, best_moves, best_displaced) = ranked[0]
+    if best_total <= base_total or best_min <= _HARD_MISFIT:
+        return None
+    if len(ranked) > 1 and ranked[1][1][0] == best_total \
+            and ranked[1][1][2:] == (best_moves, best_displaced):
+        return None
+    return list(best)
 
 
 def parse_csv(text: str, pmid: str = "", dropped=None):
@@ -231,9 +358,11 @@ def parse_csv(text: str, pmid: str = "", dropped=None):
     and the wide `parameter1/value1/...` layout (which is melted to long).
 
     A row whose field count does not match the header is realigned if it is
-    short by exactly one field, and otherwise discarded - appended to `dropped`
-    when the caller passes a list. It is never padded or truncated into shape:
-    that silently shifts the columns.
+    short by up to `_MAX_GAP` fields, and otherwise discarded - appended to
+    `dropped` when the caller passes a list. It is never padded or truncated
+    into shape: that silently shifts the columns. A row with the right count
+    but a cell clearly in the wrong column goes through `_reshift` (long
+    layout only), which likewise only moves an empty cell.
     """
     text = strip_fences(strip_reasoning(text or ""))
     lines = [ln for ln in text.splitlines() if ln.strip()]
@@ -283,6 +412,10 @@ def parse_csv(text: str, pmid: str = "", dropped=None):
                     dropped.append(row)
                 continue
             row = fixed
+        elif not wide:
+            fixed = _reshift(row, [n for n, _ in header])
+            if fixed is not None:
+                row = fixed
 
         base = {c: "" for c in COLS}
         groups = {}
@@ -331,22 +464,32 @@ def _parse_headerless(lines, pmid: str = "", dropped=None):
         # rather than reject the row - but only when it really is this paper's.
         if pmid and len(row) == len(COLS) + 1 and row[0].strip() == str(pmid):
             row = row[1:]
+        while len(row) > len(COLS) and not row[-1].strip():  # a trailing comma per row
+            row.pop()
         parsed.append(row)
 
     exact = sum(1 for r in parsed if len(r) == len(COLS))
-    # One stray comma-bearing line is not a table; require a real block.
+    # One stray comma-bearing line is not a table; require a real block. When
+    # there is none, report the lines as dropped rather than lose them silently.
     if exact < 2:
+        if dropped is not None:
+            dropped.extend(parsed)
         return []
 
     header = [(c, None) for c in COLS]
     rows = []
     for row in parsed:
         if len(row) != len(COLS):
-            row = _realign(row, header)
-            if row is None:
+            fixed = _realign(row, header)
+            if fixed is None:
                 if dropped is not None:
                     dropped.append(row)
                 continue
+            row = fixed
+        else:
+            fixed = _reshift(row, COLS)
+            if fixed is not None:
+                row = fixed
         rec = {c: clean(cell) for c, cell in zip(COLS, row)}
         if any(rec.values()):
             rows.append(rec)
