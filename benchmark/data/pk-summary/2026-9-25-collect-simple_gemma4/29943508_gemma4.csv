@@ -1,0 +1,3 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation type,Variation value,Interval type,Lower limit,High limit,P value
+Fentanyl,Fentanyl,maternal serum,maternal,delivery,16,concentration,0.268,nmol/L,median,,,IQR,0.193,0.493,0.66
+Fentanyl,Fentanyl,maternal serum,maternal,delivery,19,concentration,0.291,nmol/L,median,,,IQR,0.212,0.502,0.66

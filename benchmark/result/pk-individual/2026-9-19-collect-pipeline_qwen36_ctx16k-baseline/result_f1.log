@@ -1,0 +1,7 @@
+model, pmid, mode, precision, recall, f1, tp, fp, fn
+qwen36, 11849190, strict, 1.0000, 0.7470, 0.8552, 62, 0, 21
+qwen36, MICRO, strict, 1.0000, 0.7470, 0.8552, 62, 0, 21
+qwen36, MACRO, strict, 1.0000, 0.7470, 0.8552, , , 
+qwen36, 11849190, soft, 0.8613, 0.6434, 0.7366, 53.4, 8.6, 29.6
+qwen36, MICRO, soft, 0.8613, 0.6434, 0.7366, 53.4, 8.6, 29.6
+qwen36, MACRO, soft, 0.8613, 0.6434, 0.7366, , , 

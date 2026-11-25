@@ -1,0 +1,19 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter value,Parameter statistic,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+Levetiracetam,Levetiracetam,Plasma,Neonates,N/A,38 (37–41) wk,8,Cmax,µg/mL,19.19,Mean,SD,4.12,N/A,N/A,N/A,0.07,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,Neonates,N/A,38 (37–41) wk,8,AUC0–12,h·µg/mL,167.0,Mean,SD,45.6,N/A,N/A,N/A,0.26,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,Neonates,N/A,38 (37–41) wk,8,Ctrough,µg/mL,9.99,Mean,SD,3.86,N/A,N/A,N/A,0.34,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,Neonates,N/A,38 (37–41) wk,8,Tmax,h,1.5,Median,N/A,N/A,Range,1.5,2.5,–,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,Neonates,N/A,38 (37–41) wk,9,Cmax,µg/mL,35.12,Mean,SD,10.54,N/A,N/A,N/A,0.001,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,Neonates,N/A,38 (37–41) wk,9,AUC0–12,h·µg/mL,316.5,Mean,SD,108.4,N/A,N/A,N/A,0.88,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,Neonates,N/A,38 (37–41) wk,9,Ctrough,µg/mL,19.25,Mean,SD,8.48,N/A,N/A,N/A,0.22,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,Neonates,N/A,38 (37–41) wk,9,Tmax,h,2.5,Median,N/A,N/A,Range,2.0,3.3,–,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,Neonates,N/A,38 (37–41) wk,2,Cmax,µg/mL,36.11,Median,N/A,N/A,Range,27.58,44.64,–,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,Neonates,N/A,38 (37–41) wk,2,AUC0–12,h·µg/mL,290.9,Median,N/A,N/A,Range,176.14,405.59,–,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,Neonates,N/A,38 (37–41) wk,2,Ctrough,µg/mL,13.03,Median,N/A,N/A,Range,2.98,23.07,–,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,Neonates,N/A,38 (37–41) wk,2,Tmax,h,1.5,Median,N/A,N/A,Range,1.5,1.5,–,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,Neonates,N/A,38 (37–41) wk,14,AUC0–12,h·µg/mL,220,Median,N/A,N/A,IQR,157.5,355.4,0.90,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,Neonates,N/A,38 (37–41) wk,14,Cmax,µg/mL,23.8,Median,N/A,N/A,IQR,18.8,41.3,0.84,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,Neonates,N/A,38 (37–41) wk,14,Tmax,h,1.5,Median,N/A,N/A,IQR,1.5,2.5,0.46,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,Neonates,N/A,38 (37–41) wk,5,AUC0–12,h·µg/mL,213.8,Median,N/A,N/A,IQR,154.0,348.8,0.90,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,Neonates,N/A,38 (37–41) wk,5,Cmax,µg/mL,26.4,Median,N/A,N/A,IQR,19.3,34.2,0.84,N/A,N/A
+Levetiracetam,Levetiracetam,Plasma,Neonates,N/A,38 (37–41) wk,5,Tmax,h,2.5,Median,N/A,N/A,IQR,1.5,2.9,0.46,N/A,N/A

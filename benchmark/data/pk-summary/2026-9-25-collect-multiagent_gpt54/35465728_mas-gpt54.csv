@@ -1,0 +1,29 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter statistic,Parameter value,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,103,All Cavg concentration,mg/L,Median,19.8,N/A,N/A,Range,16.8,22.1,< 0.001,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,103,All Cavg subtherapeutic repartition,%,%,12.6,N/A,N/A,N/A,N/A,N/A,<0.001,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,103,All Cavg supra-therapeutic repartition,%,%,12.6,N/A,N/A,N/A,N/A,N/A,0.025,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,103,All Cavg therapeutic repartition,%,%,74.8,N/A,N/A,N/A,N/A,N/A,<0.001,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,116,All Cavg concentration,mg/L,Median,13.1,N/A,N/A,Range,11.3,16.2,< 0.001,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,116,All Cavg subtherapeutic repartition,%,%,67.2,N/A,N/A,N/A,N/A,N/A,<0.001,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,116,All Cavg supra-therapeutic repartition,%,%,1.7,N/A,N/A,N/A,N/A,N/A,0.025,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,116,All Cavg therapeutic repartition,%,%,31.0,N/A,N/A,N/A,N/A,N/A,<0.001,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,17,Initial AUC/MIC ratio,ratio,Median,307,N/A,N/A,Range,262,502,0.006,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,17,Initial AUC/MIC ratio <400 repartition,%,%,58.8,N/A,N/A,N/A,N/A,N/A,0.02,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,17,Initial AUC/MIC ratio ≥400 repartition,%,%,41.2,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,17,Initial Cavg/MIC ratio,ratio,Median,12.8,N/A,N/A,Range,10.9,20.9,0.004,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,17,Initial Cavg/MIC ratio <8 repartition,%,%,11.8,N/A,N/A,N/A,N/A,N/A,0.02,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,17,Initial Cavg/MIC ratio ≥8 repartition,%,%,88.2,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,22,Initial AUC/MIC ratio,ratio,Median,211,N/A,N/A,Range,149,275,0.006,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,22,Initial AUC/MIC ratio <400 repartition,%,%,90.9,N/A,N/A,N/A,N/A,N/A,0.02,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,22,Initial AUC/MIC ratio ≥400 repartition,%,%,9.1,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,22,Initial Cavg/MIC ratio,ratio,Median,8.8,N/A,N/A,Range,6.2,11.5,0.004,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,22,Initial Cavg/MIC ratio <8 repartition,%,%,45.5,N/A,N/A,N/A,N/A,N/A,0.02,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,22,Initial Cavg/MIC ratio ≥8 repartition,%,%,54.5,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,59,Initial Cavg concentration,mg/L,Median,20.3,N/A,N/A,Range,17.0,22.2,<0.001,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,59,Initial Cavg subtherapeutic repartition,%,%,10.2,N/A,N/A,N/A,N/A,N/A,<0.001,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,59,Initial Cavg supra-therapeutic repartition,%,%,15.3,N/A,N/A,N/A,N/A,N/A,0.001,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,59,Initial Cavg therapeutic repartition,%,%,74.6,N/A,N/A,N/A,N/A,N/A,<0.001,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,60,Initial Cavg concentration,mg/L,Median,12.9,N/A,N/A,Range,11.3,17.0,<0.001,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,60,Initial Cavg subtherapeutic repartition,%,%,68.3,N/A,N/A,N/A,N/A,N/A,<0.001,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,60,Initial Cavg supra-therapeutic repartition,%,%,3.3,N/A,N/A,N/A,N/A,N/A,0.001,N/A,N/A
+Vancomycin,Vancomycin,Blood,N/A,N/A,N/A,60,Initial Cavg therapeutic repartition,%,%,28.3,N/A,N/A,N/A,N/A,N/A,<0.001,N/A,N/A

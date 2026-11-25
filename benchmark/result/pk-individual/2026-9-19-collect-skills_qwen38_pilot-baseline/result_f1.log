@@ -1,0 +1,9 @@
+model, pmid, mode, precision, recall, f1, tp, fp, fn
+qwen38-skill, 10971311, strict, 1.0000, 0.9082, 0.9519, 89, 0, 9
+qwen38-skill, 23200982, strict, 0.8978, 0.7834, 0.8367, 123, 14, 34
+qwen38-skill, MICRO, strict, 0.9381, 0.8314, 0.8815, 212, 14, 43
+qwen38-skill, MACRO, strict, 0.9489, 0.8458, 0.8943, , , 
+qwen38-skill, 10971311, soft, 0.8685, 0.7888, 0.8267, 77.3, 11.7, 20.7
+qwen38-skill, 23200982, soft, 0.8022, 0.7000, 0.7476, 109.9, 27.1, 47.1
+qwen38-skill, MICRO, soft, 0.8283, 0.7341, 0.7784, 187.2, 38.8, 67.8
+qwen38-skill, MACRO, soft, 0.8354, 0.7444, 0.7872, , , 

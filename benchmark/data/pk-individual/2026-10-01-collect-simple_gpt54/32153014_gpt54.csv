@@ -1,0 +1,26 @@
+Patient ID,Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Parameter type,Parameter unit,Parameter value,Time value,Time unit
+1,Infliximab,Infliximab,serum,maternal,delivery,maternal,concentration,µg/mL,25.3,23,days
+1,Infliximab,Infliximab,cord serum,pediatric,delivery,fetus,concentration,µg/mL,29.8,23,days
+1,Infliximab,Infliximab,placenta,maternal/pediatric,delivery,maternal/pediatric,concentration,µg/g tissue,5.8,23,days
+1,Infliximab,Infliximab,cord/maternal serum,maternal/pediatric,delivery,maternal/pediatric,cord-to-maternal ratio,,1.18,23,days
+1,Infliximab,Infliximab,placenta/maternal,maternal/pediatric,delivery,maternal/pediatric,placenta-to-maternal ratio,,0.35,23,days
+2,Infliximab,Infliximab,serum,maternal,delivery,maternal,concentration,µg/mL,12.0,57,days
+2,Infliximab,Infliximab,cord serum,pediatric,delivery,fetus,concentration,µg/mL,24.0,57,days
+2,Infliximab,Infliximab,placenta,maternal/pediatric,delivery,maternal/pediatric,concentration,µg/g tissue,1.8,57,days
+2,Infliximab,Infliximab,cord/maternal serum,maternal/pediatric,delivery,maternal/pediatric,cord-to-maternal ratio,,2.00,57,days
+2,Infliximab,Infliximab,placenta/maternal,maternal/pediatric,delivery,maternal/pediatric,placenta-to-maternal ratio,,0.23,57,days
+3,Infliximab,Infliximab,serum,maternal,delivery,maternal,concentration,µg/mL,17.0,31,days
+3,Infliximab,Infliximab,cord serum,pediatric,delivery,fetus,concentration,µg/mL,29.0,31,days
+3,Infliximab,Infliximab,placenta,maternal/pediatric,delivery,maternal/pediatric,concentration,µg/g tissue,4.8,31,days
+3,Infliximab,Infliximab,cord/maternal serum,maternal/pediatric,delivery,maternal/pediatric,cord-to-maternal ratio,,1.71,31,days
+3,Infliximab,Infliximab,placenta/maternal,maternal/pediatric,delivery,maternal/pediatric,placenta-to-maternal ratio,,0.44,31,days
+4,Etanercept,Etanercept,serum,maternal,delivery,maternal,concentration,µg/mL,3.0,4,days
+4,Etanercept,Etanercept,cord serum,pediatric,delivery,fetus,concentration,µg/mL,0.1,4,days
+4,Etanercept,Etanercept,placenta,maternal/pediatric,delivery,maternal/pediatric,concentration,µg/g tissue,0.1,4,days
+4,Etanercept,Etanercept,cord/maternal serum,maternal/pediatric,delivery,maternal/pediatric,cord-to-maternal ratio,,0.04,4,days
+4,Etanercept,Etanercept,placenta/maternal,maternal/pediatric,delivery,maternal/pediatric,placenta-to-maternal ratio,,0.03,4,days
+5,Etanercept,Etanercept,serum,maternal,delivery,maternal,concentration,µg/mL,<0.1,29,days
+5,Etanercept,Etanercept,cord serum,pediatric,delivery,fetus,concentration,µg/mL,<0.1,29,days
+5,Etanercept,Etanercept,placenta,maternal/pediatric,delivery,maternal/pediatric,concentration,µg/g tissue,<0.1,29,days
+6,Etanercept,Etanercept,serum,maternal,delivery,maternal,concentration,µg/mL,0.2,16,days
+6,Etanercept,Etanercept,placenta,maternal/pediatric,delivery,maternal/pediatric,concentration,µg/g tissue,<0.1,16,days

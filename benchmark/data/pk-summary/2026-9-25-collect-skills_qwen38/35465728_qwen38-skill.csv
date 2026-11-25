@@ -1,0 +1,9 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Pediatric/Gestational age,Subject N,Parameter type,Parameter unit,Parameter value,Parameter statistic,Variation type,Variation value,Interval type,Lower bound,Upper bound,P value,Time value,Time unit
+Vancomycin,Vancomycin,Plasma,Neonates (before protocol implementation),N/A,N/A,60,Initial Cavg,mg/L,12.9,Median,N/A,N/A,IQR,11.3,17.0,<0.001,N/A,N/A
+Vancomycin,Vancomycin,Plasma,Neonates (before protocol implementation),N/A,N/A,116,All Cavg,mg/L,13.1,Median,N/A,N/A,IQR,11.3,16.2,< 0.001,N/A,N/A
+Vancomycin,Vancomycin,Plasma,Neonates (before protocol implementation),N/A,N/A,22,Cavg/MIC ratio,unitless,8.8,Median,N/A,N/A,IQR,6.2,11.5,0.004,N/A,N/A
+Vancomycin,Vancomycin,Plasma,Neonates (before protocol implementation),N/A,N/A,22,AUC/MIC ratio,unitless,211,Median,N/A,N/A,IQR,149,275,0.006,N/A,N/A
+Vancomycin,Vancomycin,Plasma,Neonates (after protocol implementation),N/A,N/A,59,Initial Cavg,mg/L,20.3,Median,N/A,N/A,IQR,17.0,22.2,<0.001,N/A,N/A
+Vancomycin,Vancomycin,Plasma,Neonates (after protocol implementation),N/A,N/A,103,All Cavg,mg/L,19.8,Median,N/A,N/A,IQR,16.8,22.1,< 0.001,N/A,N/A
+Vancomycin,Vancomycin,Plasma,Neonates (after protocol implementation),N/A,N/A,17,Cavg/MIC ratio,unitless,12.8,Median,N/A,N/A,IQR,10.9,20.9,0.004,N/A,N/A
+Vancomycin,Vancomycin,Plasma,Neonates (after protocol implementation),N/A,N/A,17,AUC/MIC ratio,unitless,307,Median,N/A,N/A,IQR,262,502,0.006,N/A,N/A

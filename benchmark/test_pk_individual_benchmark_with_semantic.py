@@ -42,6 +42,7 @@ MODELS = [
     LLModelType.MAS_QWEN36_PT,
     LLModelType.MAS_GEMMA4,
     LLModelType.MAS_QWEN38,
+    LLModelType.CASCADE_QWEN38,
 ]
 
 

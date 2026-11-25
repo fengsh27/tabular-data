@@ -1,0 +1,21 @@
+Drug name,Analyte,Specimen,Population,Pregnancy stage,Subject N,Parameter type,Value,Unit,Summary statistics,Variation type,Variation value,Interval type,Lower limit,High limit,P value
+Vancomycin,Vancomycin,blood,neonates,,60,initial concentration,12.9,mg/L,median,,,25th-75th percentiles,11.3,17.0,<0.001
+Vancomycin,Vancomycin,blood,neonates,,59,initial concentration,20.3,mg/L,median,,,25th-75th percentiles,17.0,22.2,<0.001
+Vancomycin,Vancomycin,blood,neonates,,116,average concentration,13.1,mg/L,median,,,25th-75th percentiles,11.3,16.2,<0.001
+Vancomycin,Vancomycin,blood,neonates,,103,average concentration,19.8,mg/L,median,,,25th-75th percentiles,16.8,22.1,<0.001
+Vancomycin,Vancomycin,blood,neonates,,22,Cavg/MIC ratio,8.8,,median,,,25th-75th percentiles,6.2,11.5,0.004
+Vancomycin,Vancomycin,blood,neonates,,17,Cavg/MIC ratio,12.8,,median,,,25th-75th percentiles,10.9,20.9,0.004
+Vancomycin,Vancomycin,blood,neonates,,22,AUC/MIC ratio,211,,median,,,25th-75th percentiles,149,275,0.006
+Vancomycin,Vancomycin,blood,neonates,,17,AUC/MIC ratio,307,,median,,,25th-75th percentiles,262,502,0.006
+Vancomycin,Vancomycin,,neonates,,60,Duration of vancomycin therapy,6,days,median,,,range,3,10,0.089
+Vancomycin,Vancomycin,,neonates,,58,Duration of vancomycin therapy,5,days,median,,,range,2,9,0.089
+Vancomycin,Vancomycin,,neonates,,31,Time to blood culture negativation,54.6,h,median,,,range,48.9,107,<0.001
+Vancomycin,Vancomycin,,neonates,,22,Time to blood culture negativation,37.5,h,median,,,range,28.1,53.6,<0.001
+Vancomycin,Vancomycin,,neonates,,18,Duration of vasoactive drugs use,3.5,days,median,,,range,1.0,9.0,0.18
+Vancomycin,Vancomycin,,neonates,,10,Duration of vasoactive drugs use,1.5,days,median,,,range,1.0,5.0,0.18
+Vancomycin,Vancomycin,,neonates,,53,Duration of parenteral nutrition,16,days,median,,,range,9,25,0.87
+Vancomycin,Vancomycin,,neonates,,49,Duration of parenteral nutrition,17,days,median,,,range,9,29,0.87
+Vancomycin,Vancomycin,,neonates,,9,Duration of insulin therapy,5,days,median,,,range,3,7,0.81
+Vancomycin,Vancomycin,,neonates,,15,Duration of insulin therapy,4,days,median,,,range,2,7.5,0.81
+Vancomycin,Vancomycin,,neonates,,36,Total duration of hospitalization,86.5,days,median,,,range,46.3,107,0.75
+Vancomycin,Vancomycin,,neonates,,46,Total duration of hospitalization,86.5,days,median,,,range,55.0,123,0.75
